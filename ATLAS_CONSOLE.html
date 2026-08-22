@@ -237,7 +237,6 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;
       <div class="diffwrap" id="diffwrap"></div>
       <div id="canvas"></div>
       <div class="block"><div class="bh">Cross-Sector Themes · 수요 원천</div><div class="themes" id="themes"></div></div>
-      <div class="block"><div class="bh">Edge Types · 전파 통로</div><div class="edges" id="edgetypes"></div></div>
     </div>
   </div>
   <div class="status">
@@ -473,14 +472,6 @@ DATA.themes.forEach(t=>{
   d.innerHTML=`<div class="tn"><b>${esc(t.name)}</b><span class="lk">⇒ ${t.n} 산업</span></div><div class="tt">${esc(t.thesis)}</div>`;
   d.onclick=()=>openTheme(t);
   th.appendChild(d);
-});
-
-/* edge types */
-const et=$('edgetypes');
-DATA.edgetypes.forEach(e=>{
-  const d=document.createElement('div'); d.className='edge';
-  d.innerHTML=`<span class="sym">${e.sym}</span><div><div class="en">${e.name}</div><div class="ed">${esc(e.desc)}</div></div>`;
-  et.appendChild(d);
 });
 
 /* diff: candidates + peak watch */
