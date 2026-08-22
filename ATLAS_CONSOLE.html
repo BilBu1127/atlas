@@ -179,11 +179,26 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;
 .co .tk{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--ink)}
 .co .nm{font-size:12px;color:var(--dim);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .co .rz{font-size:11px;color:var(--faint);line-height:1.45;margin-top:3px}
-.erow{display:flex;gap:8px;align-items:baseline;padding:6px 0;border-bottom:1px solid var(--bg2);cursor:pointer;font-size:12px}
-.erow:hover{color:var(--ink)}
-.erow .et{font-family:var(--mono);font-size:9px;padding:2px 5px;border-radius:2px;background:var(--bg3);color:var(--dim);flex:none}
-.erow .eo{color:var(--dim);flex:1}.erow .eo b{color:var(--ink)}
-.erow .em{font-size:10.5px;color:var(--faint);line-height:1.45;margin-top:2px}
+.egroup{margin-bottom:12px}
+.egroup:last-child{margin-bottom:0}
+.egcap{display:flex;align-items:center;gap:7px;font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--faint);margin:0 0 7px}
+.egcap .ar{font-size:12px;color:var(--teal)}
+.egcap .cnt{margin-left:auto;color:var(--line2)}
+.erow{position:relative;display:block;padding:8px 10px 8px 14px;margin-bottom:4px;border-radius:5px;
+  background:var(--bg2);border:1px solid transparent;cursor:default;transition:.12s;overflow:hidden}
+.erow::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--ec,var(--line2))}
+.erow.clk{cursor:pointer}
+.erow.clk:hover{border-color:var(--line2);background:var(--bg3);transform:translateX(1px)}
+.erow .etop{display:flex;align-items:baseline;gap:8px}
+.erow .eo{font-size:12.5px;font-weight:600;color:var(--ink);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.erow .et{font-family:var(--mono);font-size:8.5px;letter-spacing:.04em;padding:2px 6px;border-radius:3px;
+  flex:none;color:var(--ec,var(--dim));background:color-mix(in srgb,var(--ec,#888) 14%,transparent);
+  border:1px solid color-mix(in srgb,var(--ec,#888) 30%,transparent)}
+.erow .es{font-family:var(--mono);font-size:8.5px;color:var(--faint);flex:none}
+.erow .em{font-size:11px;color:var(--dim);line-height:1.5;margin-top:4px}
+.erow .ego{font-family:var(--mono);font-size:9px;color:var(--teal);opacity:0;transition:.12s;flex:none}
+.erow.clk:hover .ego{opacity:1}
 .ddisc{margin-top:20px;padding-top:12px;border-top:1px solid var(--line);font-size:10.5px;line-height:1.6;color:var(--faint)}
 .action{display:flex;gap:8px;margin-top:14px}
 .action .btn{flex:1;font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;padding:9px;border-radius:4px;
@@ -539,13 +554,21 @@ function openDrawer(id){
   if(anyRole)
     h+=`<div class="sec2"><div class="h">주목 기업 · role 계층 <span style="color:var(--faint);text-transform:none">이 트리거 기준</span></div>`+
        roleBlock('REGIME_LEADER','lead','lead')+roleBlock('HIGH_BETA','beta','beta')+roleBlock('ANCHOR','anchor','anchor')+`</div>`;
-  if(o.edges&&o.edges.length)
-    h+=`<div class="sec2"><div class="h">엣지 · 전파 통로 <span style="color:var(--faint)">${o.edges.length}</span></div>`+
-       o.edges.map(e=>{const tgt=IND_BY_ID[e.other_id];
-         return `<div class="erow" ${tgt?`onclick="openDrawer('${e.other_id}')"`:''}>`+
-           `<span class="et">${EDGE_KO[e.type]||e.type}</span>`+
-           `<div class="eo">${e.dir} <b>${esc(e.other)}</b> <span style="color:var(--faint);font-family:var(--mono);font-size:9px">${e.strength}</span>`+
-           `<div class="em">${esc(e.mechanism)}</div></div></div>`;}).join('')+`</div>`;
+  if(o.edges&&o.edges.length){
+    const EC={SUPPLIES_TO:'#46B3AC',DEMAND_COMOVES:'#7FB37A',SUBSTITUTES:'#E2A63F',
+      INVERSE:'#EE6A43',CAPACITY_COMPETES:'#8A9BD0',THEME_DRIVES:'#C9B88A',CUSTOMER_OF:'#5FA6B8'};
+    const out=o.edges.filter(e=>e.dir==='→'), inc=o.edges.filter(e=>e.dir==='←');
+    const row=e=>{const tgt=IND_BY_ID[e.other_id]; const col=EC[e.type]||'#7E93A2';
+      return `<div class="erow${tgt?' clk':''}" style="--ec:${col}" ${tgt?`onclick="openDrawer('${e.other_id}')"`:''}>`+
+        `<div class="etop"><span class="eo">${esc(e.other)}</span>`+
+        `<span class="et">${EDGE_KO[e.type]||e.type}</span>`+
+        `<span class="es">${e.strength}</span>${tgt?'<span class="ego">→ 열기</span>':''}</div>`+
+        (e.mechanism?`<div class="em">${esc(e.mechanism)}</div>`:'')+`</div>`;};
+    h+=`<div class="sec2"><div class="h">엣지 · 전파 통로 <span style="color:var(--faint)">${o.edges.length}</span></div>`;
+    if(out.length) h+=`<div class="egroup"><div class="egcap"><span class="ar">→</span>이 산업이 영향을 준다<span class="cnt">${out.length}</span></div>${out.map(row).join('')}</div>`;
+    if(inc.length) h+=`<div class="egroup"><div class="egcap"><span class="ar">←</span>이 산업이 영향을 받는다<span class="cnt">${inc.length}</span></div>${inc.map(row).join('')}</div>`;
+    h+=`</div>`;
+  }
   if(o.tier==='HEAT')
     h+=`<div class="action"><div class="btn" onclick="copyScreen('${esc(o.name)}')">⎘ 스크리닝 명령 복사</div></div>`;
   h+=`<div class="ddisc">role 계층은 <b style="color:var(--dim)">이 산업을 데운 트리거 기준</b>의 조사 후보 분류입니다. verification=SHALLOW — 해자·재무·경영진의 진위는 딥다이브에서 가립니다. 매수 신호가 아닙니다.</div>`;
