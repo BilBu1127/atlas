@@ -144,7 +144,7 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;
 /* drill-down drawer */
 .scrim{position:fixed;inset:0;background:rgba(6,9,12,.55);opacity:0;pointer-events:none;transition:.18s;z-index:60}
 .scrim.show{opacity:1;pointer-events:auto}
-.drawer{position:fixed;top:0;right:0;height:100vh;width:436px;max-width:92vw;background:var(--bg1);
+.drawer{position:fixed;top:0;right:0;height:100vh;width:clamp(440px,42vw,640px);max-width:94vw;background:var(--bg1);
   border-left:1px solid var(--line2);z-index:61;transform:translateX(100%);transition:transform .22s cubic-bezier(.4,0,.2,1);
   display:flex;flex-direction:column;box-shadow:-20px 0 50px -20px rgba(0,0,0,.7)}
 .drawer.show{transform:translateX(0)}
