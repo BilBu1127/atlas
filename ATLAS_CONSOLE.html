@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ATLAS · Sector Console</title>
+<style>
+:root{
+  --bg0:#0B1015; --bg1:#111922; --bg2:#161F29; --bg3:#1D2833;
+  --line:#22303B; --line2:#2E404C;
+  --ink:#CDD7DF; --dim:#8A98A4; --faint:#5B6A75;
+  --teal:#46B3AC;
+  --heat:#EE6A43; --warm:#E2A63F; --neutral:#7E93A2; --cold:#4C8FBE; --frozen:#4E5E6A;
+  --skeleton:#2C3A45;
+  --mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR","Pretendard",sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg0);color:var(--ink);font-family:var(--sans);font-size:13.5px;line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:44px 44px;background-position:-1px -1px}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;
+  background:radial-gradient(120% 90% at 15% -10%,rgba(70,179,172,.06),transparent 55%)}
+.app{max-width:1240px;margin:0 auto;min-height:100vh;background:rgba(11,16,21,.72);
+  backdrop-filter:blur(2px);border-left:1px solid var(--line);border-right:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:16px;padding:12px 20px;border-bottom:1px solid var(--line2);
+  background:linear-gradient(var(--bg1),var(--bg0));position:sticky;top:0;z-index:20}
+.word{display:flex;flex-direction:column;line-height:1.15}
+.word .t1{font-family:var(--mono);font-size:12.5px;letter-spacing:.22em;color:var(--ink);text-transform:uppercase}
+.word .t2{font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;color:var(--faint);text-transform:uppercase;margin-top:2px}
+.xnav{display:flex;gap:2px;margin-left:8px}
+.xnav a{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;color:var(--faint);text-decoration:none;
+  padding:5px 11px;border-radius:3px;border:1px solid transparent;text-transform:uppercase}
+.xnav a:hover{color:var(--ink);background:var(--bg2)}
+.xnav a.cur{color:var(--teal);border-color:var(--line2);background:var(--bg1)}
+.chips{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
+.chip{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;color:var(--dim);
+  border:1px solid var(--line2);border-radius:3px;padding:4px 9px;background:var(--bg1);white-space:nowrap}
+.chip b{color:var(--ink);font-weight:600}
+.chip.live{border-color:#3a5b52;color:#8fd6cd}
+.chip.live b{color:var(--teal)}
+.strip{display:flex;align-items:center;gap:10px;padding:8px 20px;border-bottom:1px solid var(--line);
+  font-size:11.5px;color:var(--dim);background:var(--bg0)}
+.strip .warn{font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:#e0b25a;
+  border:1px solid #4a3d1c;background:#1c1708;padding:2px 7px;border-radius:3px;text-transform:uppercase}
+.strip b{color:var(--ink)}
+.main{display:grid;grid-template-columns:214px 1fr;align-items:start}
+.rail{position:sticky;top:53px;align-self:start;border-right:1px solid var(--line);
+  padding:16px 12px;height:calc(100vh - 53px);overflow-y:auto}
+.rail::-webkit-scrollbar{width:7px}.rail::-webkit-scrollbar-thumb{background:var(--line2);border-radius:4px}
+.rail .lbl{font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;color:var(--faint);
+  text-transform:uppercase;margin:2px 4px 8px}
+.navlist{display:flex;flex-direction:column;gap:1px}
+.nav{display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:4px;cursor:pointer;
+  color:var(--dim);border:1px solid transparent;text-align:left;background:none;font:inherit;width:100%}
+.nav:hover{background:var(--bg2);color:var(--ink)}
+.nav:focus-visible{outline:2px solid var(--teal);outline-offset:1px}
+.nav .code{font-family:var(--mono);font-size:9.5px;color:var(--faint);width:30px}
+.nav .nm{flex:1;font-size:12.5px}
+.nav .cnt{font-family:var(--mono);font-size:10px;color:var(--faint)}
+.nav.active{background:var(--bg3);color:var(--ink);border-color:var(--line2)}
+.nav.active .code{color:var(--teal)}
+.rail .lbl.mt{margin-top:20px}
+.filters{display:flex;flex-direction:column;gap:3px}
+.flt{display:flex;align-items:center;gap:8px;padding:5px 8px;border-radius:4px;cursor:pointer;
+  border:1px solid transparent;background:none;font:inherit;width:100%;text-align:left;color:var(--dim)}
+.flt:hover{background:var(--bg2)}
+.flt:focus-visible{outline:2px solid var(--teal);outline-offset:1px}
+.flt .sw{width:9px;height:9px;border-radius:2px;flex:0 0 auto}
+.flt .fk{font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;color:var(--ink)}
+.flt .fc{font-family:var(--mono);font-size:10px;color:var(--faint);margin-left:auto}
+.flt.off{opacity:.32}
+.canvas{padding:16px 20px 40px;min-width:0}
+.sector{scroll-margin-top:64px;margin-bottom:22px}
+.shead{display:flex;align-items:baseline;gap:10px;margin:0 0 10px;padding-bottom:7px;border-bottom:1px solid var(--line)}
+.shead .sc{font-family:var(--mono);font-size:10px;letter-spacing:.14em;color:var(--teal)}
+.shead h2{font-size:14.5px;margin:0;font-weight:600;letter-spacing:-.01em}
+.shead .sn{font-family:var(--mono);font-size:10px;color:var(--faint);margin-left:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(166px,1fr));gap:5px}
+.obj{position:relative;background:var(--bg1);border:1px solid var(--line);border-radius:5px;
+  padding:8px 10px 9px 13px;cursor:pointer;overflow:hidden;transition:background .12s,border-color .12s}
+.obj::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--skeleton)}
+.obj[data-tier=HEAT]::before{background:var(--heat)}
+.obj[data-tier=WARM]::before{background:var(--warm)}
+.obj[data-tier=NEUTRAL]::before{background:var(--neutral)}
+.obj[data-tier=COLD]::before{background:var(--cold)}
+.obj[data-tier=FROZEN]::before{background:var(--frozen)}
+.obj:hover{background:var(--bg3);border-color:var(--line2)}
+.obj:focus-visible{outline:2px solid var(--teal);outline-offset:1px}
+.obj.sel{border-color:var(--teal);background:var(--bg3)}
+.obj .oid{font-family:var(--mono);font-size:9.5px;color:var(--faint);letter-spacing:.04em}
+.obj .onm{font-size:12.5px;font-weight:500;margin-top:2px;line-height:1.25;color:var(--ink)}
+.obj .orole{display:flex;gap:3px;margin-top:5px}
+.obj .rg{width:14px;height:5px;border-radius:2px}
+.obj .rg.lead{background:var(--heat)} .obj .rg.beta{background:var(--warm)} .obj .rg.anchor{background:var(--neutral)}
+.obj.dim{opacity:.16;filter:saturate(.4)}
+.block{padding:0 20px 34px}
+.bh{font-family:var(--mono);font-size:10px;letter-spacing:.16em;color:var(--faint);text-transform:uppercase;
+  margin:10px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.themes{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:6px}
+.thm{border:1px solid var(--line);border-radius:5px;padding:11px 13px;background:var(--bg1);cursor:pointer;transition:.12s}
+.thm:hover{border-color:var(--line2);background:var(--bg2)}
+.thm .tn{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.thm .tn b{font-size:13px;font-weight:600}
+.thm .tn .lk{font-family:var(--mono);font-size:9.5px;color:var(--teal);white-space:nowrap}
+.thm .tt{font-size:11.5px;color:var(--dim);margin-top:5px;line-height:1.45}
+.edges{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:5px}
+.edge{display:flex;align-items:center;gap:11px;border:1px solid var(--line);border-radius:5px;padding:9px 12px;background:var(--bg1)}
+.edge .sym{font-family:var(--mono);font-size:17px;color:var(--teal);width:20px;text-align:center;line-height:1}
+.edge .en{font-family:var(--mono);font-size:11px;letter-spacing:.05em;color:var(--ink)}
+.edge .ed{font-size:10.5px;color:var(--faint);margin-top:1px}
+.status{position:sticky;bottom:0;display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+  padding:8px 20px;border-top:1px solid var(--line2);background:linear-gradient(var(--bg0),var(--bg1));
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;color:var(--dim);z-index:15}
+.status .s{display:flex;align-items:center;gap:6px}
+.status .dot{width:6px;height:6px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 3px rgba(70,179,172,.15)}
+.status b{color:var(--ink)}
+.status .r{margin-left:auto;color:var(--faint)}
+.diffwrap{padding:16px 20px 0}
+.diffgrid{display:grid;grid-template-columns:2fr 1fr;gap:12px}
+.dcard{border:1px solid var(--line);border-radius:7px;background:var(--bg1);padding:12px 14px}
+.dcard h4{margin:0 0 9px;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--faint);font-weight:400;display:flex;align-items:center;gap:7px}
+.dcard h4 .dot{width:6px;height:6px;border-radius:50%}
+.cand{border-left:2px solid var(--line2);padding:7px 0 7px 11px;margin-bottom:9px;cursor:pointer}
+.cand:hover{border-left-color:var(--teal)}
+.cand .ch{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.cand .bk{font-family:var(--mono);font-size:9px;letter-spacing:.06em;padding:1px 6px;border-radius:3px;border:1px solid var(--line2);color:var(--teal);white-space:nowrap}
+.cand .rl{font-family:var(--mono);font-size:9px;padding:1px 6px;border-radius:3px;border:1px solid var(--line2);white-space:nowrap}
+.cand .rl.lead{color:var(--heat);border-color:#5a3226}.cand .rl.beta{color:var(--warm);border-color:#5a4a22}
+.cand .cn{font-size:13px;font-weight:600;color:var(--ink)}
+.cand .ct{font-family:var(--mono);font-size:9px;padding:1px 5px;border-radius:3px}
+.cand .why{font-size:11.5px;color:var(--dim);margin-top:4px;line-height:1.45}
+.cand .kv{font-size:10.5px;color:var(--faint);margin-top:4px;line-height:1.5}
+.cand .kv .k{font-family:var(--mono);color:var(--teal);letter-spacing:.03em}
+.pk{border-left:2px solid var(--warm);padding:7px 0 7px 11px;margin-bottom:9px}
+.pk .pn{font-size:12.5px;font-weight:600;color:var(--warm)}
+.pk .pr{font-size:11px;color:var(--dim);margin-top:3px;line-height:1.45}
+.pk .pt{font-size:10px;color:var(--faint);margin-top:3px}
+.ct.t-heat{background:rgba(238,106,67,.15);color:var(--heat)}
+.ct.t-warm{background:rgba(226,166,63,.15);color:var(--warm)}
+.ct.t-cold{background:rgba(76,143,190,.15);color:var(--cold)}
+.ct.t-neutral{background:rgba(126,147,162,.15);color:var(--neutral)}
+/* drill-down drawer */
+.scrim{position:fixed;inset:0;background:rgba(6,9,12,.55);opacity:0;pointer-events:none;transition:.18s;z-index:60}
+.scrim.show{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;height:100vh;width:436px;max-width:92vw;background:var(--bg1);
+  border-left:1px solid var(--line2);z-index:61;transform:translateX(100%);transition:transform .22s cubic-bezier(.4,0,.2,1);
+  display:flex;flex-direction:column;box-shadow:-20px 0 50px -20px rgba(0,0,0,.7)}
+.drawer.show{transform:translateX(0)}
+.dh{padding:16px 20px 13px;border-bottom:1px solid var(--line);background:linear-gradient(var(--bg2),var(--bg1))}
+.dh .deyebrow{display:flex;align-items:center;gap:9px;font-family:var(--mono);font-size:10px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--faint)}
+.dh .did{color:var(--teal)}
+.dh .dtier{padding:2px 8px;border-radius:3px;font-size:9px;font-weight:600}
+.dh .dttl{font-size:19px;font-weight:700;margin-top:8px;letter-spacing:-.02em;line-height:1.22}
+.dh .ddef{font-size:12px;color:var(--dim);margin-top:6px;line-height:1.5}
+.dh .dclose{position:absolute;top:14px;right:16px;width:26px;height:26px;border-radius:4px;border:1px solid var(--line2);
+  background:var(--bg1);color:var(--dim);font-size:15px;cursor:pointer;line-height:1}
+.dh .dclose:hover{color:var(--ink);border-color:var(--faint)}
+.db{flex:1;overflow-y:auto;padding:4px 20px 30px}
+.db::-webkit-scrollbar{width:9px}.db::-webkit-scrollbar-thumb{background:var(--line2);border-radius:5px;border:2px solid var(--bg1)}
+.sec2{margin-top:18px}
+.sec2 .h{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);
+  padding-bottom:6px;margin-bottom:9px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between}
+.krow{font-size:12.5px;line-height:1.6;color:var(--dim)}
+.krow b{color:var(--ink);font-weight:600}
+.krow .m{font-family:var(--mono);font-size:11.5px}
+.txt{font-size:12.5px;line-height:1.62;color:var(--dim)}.txt+.txt{margin-top:7px}
+.roleg{margin-bottom:12px}
+.rolecap{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:10px;letter-spacing:.06em;
+  text-transform:uppercase;margin-bottom:6px;font-weight:500}
+.rolecap .mk{width:13px;height:13px;flex:none;border-radius:50%}
+.rolecap.lead{color:var(--heat)} .rolecap.beta{color:var(--warm)} .rolecap.anchor{color:var(--neutral)}
+.mk.lead{border:2px solid var(--heat);box-shadow:0 0 0 2px rgba(238,106,67,.22)}
+.mk.beta{border:1.5px dashed var(--warm)} .mk.anchor{background:var(--neutral)}
+.co{padding:7px 10px;border-radius:4px;background:var(--bg2);margin-bottom:4px;border:1px solid transparent}
+.co .ct2{display:flex;align-items:baseline;gap:8px}
+.co .tk{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--ink)}
+.co .nm{font-size:12px;color:var(--dim);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.co .rz{font-size:11px;color:var(--faint);line-height:1.45;margin-top:3px}
+.erow{display:flex;gap:8px;align-items:baseline;padding:6px 0;border-bottom:1px solid var(--bg2);cursor:pointer;font-size:12px}
+.erow:hover{color:var(--ink)}
+.erow .et{font-family:var(--mono);font-size:9px;padding:2px 5px;border-radius:2px;background:var(--bg3);color:var(--dim);flex:none}
+.erow .eo{color:var(--dim);flex:1}.erow .eo b{color:var(--ink)}
+.erow .em{font-size:10.5px;color:var(--faint);line-height:1.45;margin-top:2px}
+.ddisc{margin-top:20px;padding-top:12px;border-top:1px solid var(--line);font-size:10.5px;line-height:1.6;color:var(--faint)}
+.action{display:flex;gap:8px;margin-top:14px}
+.action .btn{flex:1;font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;padding:9px;border-radius:4px;
+  border:1px solid var(--line2);background:var(--bg2);color:var(--dim);cursor:pointer;text-align:center}
+.action .btn:hover{color:var(--teal);border-color:var(--teal)}
+@media(max-width:820px){
+  .diffgrid{grid-template-columns:1fr}.main{grid-template-columns:1fr}
+  .rail{position:static;height:auto;flex-direction:row;flex-wrap:wrap;border-right:none;border-bottom:1px solid var(--line);display:flex;gap:14px}
+  .navlist{flex-direction:row;flex-wrap:wrap;flex:1 1 100%}.nav{width:auto}
+  .filters{flex-direction:row;flex-wrap:wrap}.drawer{width:100vw}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head>
+<body>
+<div class="app">
+  <div class="bar">
+    <svg width="46" height="34" viewBox="0 0 46 34" fill="none" aria-hidden="true">
+      <line x1="9" y1="9" x2="24" y2="6" stroke="#46B3AC" stroke-width="1.1"/>
+      <line x1="24" y1="6" x2="37" y2="15" stroke="#3a4a54" stroke-width="1.1"/>
+      <line x1="9" y1="9" x2="14" y2="26" stroke="#3a4a54" stroke-width="1.1"/>
+      <line x1="37" y1="15" x2="14" y2="26" stroke="#3a4a54" stroke-width="1.1"/>
+      <circle cx="9" cy="9" r="2.6" fill="#46B3AC"/><circle cx="24" cy="6" r="2.2" fill="#CDD7DF"/>
+      <circle cx="37" cy="15" r="2.2" fill="#CDD7DF"/><circle cx="14" cy="26" r="2.2" fill="#CDD7DF"/>
+    </svg>
+    <div class="word"><span class="t1">ATLAS</span><span class="t2">Sector Console</span></div>
+    <nav class="xnav">
+      <a href="./ATLAS_CONSOLE.html" class="cur">콘솔</a>
+      <a href="./ATLAS_GRAPH.html">관계망</a>
+      <a href="./ATLAS_MAP.html">히트맵</a>
+      <a href="./ATLAS_GUIDE.html">가이드</a>
+    </nav>
+    <div class="chips">
+      <span class="chip live"><b>●</b> LIVE</span>
+      <span class="chip">AS-OF <b id="c-asof"></b></span>
+      <span class="chip">OBJECTS <b id="c-obj"></b></span>
+      <span class="chip" id="c-osver"></span>
+    </div>
+  </div>
+  <div class="strip">
+    <span class="warn">Advisory</span>
+    <span>티어·role = <b>조사 우선순위</b>이며 매매 신호가 아님. 기업은 <b>미검증(SHALLOW)</b> 후보 분류 — 진위는 딥다이브에서 검증.</span>
+  </div>
+  <div class="main">
+    <aside class="rail">
+      <div class="lbl">Sectors</div>
+      <div class="navlist" id="nav"></div>
+      <div class="lbl mt">Tier Filter</div>
+      <div class="filters" id="filters"></div>
+    </aside>
+    <div class="canvas" id="canvasWrap">
+      <div class="diffwrap" id="diffwrap"></div>
+      <div id="canvas"></div>
+      <div class="block"><div class="bh">Cross-Sector Themes · 수요 원천</div><div class="themes" id="themes"></div></div>
+      <div class="block"><div class="bh">Edge Types · 전파 통로</div><div class="edges" id="edgetypes"></div></div>
+    </div>
+  </div>
+  <div class="status">
+    <span class="s"><span class="dot"></span>ATLAS ONTOLOGY</span>
+    <span class="s">SECTORS <b id="s-sec"></b></span>
+    <span class="s">INDUSTRIES <b id="s-obj"></b></span>
+    <span class="s">THEMES <b id="s-thm"></b></span>
+    <span class="s">EDGES <b id="s-edges"></b></span>
+    <span class="s">HEAT <b id="s-heat"></b></span>
+    <span class="r" id="s-ver"></span>
+  </div>
+</div>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <div class="dh" id="drawerHead"></div>
+  <div class="db" id="drawerBody"></div>
+</aside>
+<script>/* ATLAS derive.js — PACK(원본) 하나로 graph/console 파생 데이터를 만든다.
+   파이썬 extract_graph.py + extract_console.py의 1:1 포팅.
+   브라우저(fetch 후)와 Node(검증) 양쪽에서 동작. */
+(function(root){
+  const SEC_CODE={'에너지':'ENE','소재':'MAT','산업재':'IND','유틸리티':'UTL','IT':'ITC',
+    '커뮤니케이션':'COM','헬스케어':'HLT','금융':'FIN','부동산':'RLE','필수소비재':'STP','임의소비재':'DIS'};
+
+  function deriveGraph(d){
+    const nodes=[]; const node_ids=new Set();
+    // verification map from company_nodes ledger
+    const VER={};
+    for(const c of (d.company_nodes||[])){
+      VER[c.ticker]=[c.verification||'SHALLOW', c.deep_dive_ref||null];
+    }
+    // theme nodes
+    for(const t of d.themes){
+      nodes.push({id:t.id, kind:'theme', label:t.name,
+        thesis:t.demand_thesis||'', linked:t.linked_industries||[]});
+      node_ids.add(t.id);
+    }
+    // industry nodes (all)
+    for(const ind of d.industries){
+      const comps=(ind.companies||[]).map(c=>{
+        const v=VER[c.ticker]||['SHALLOW',null];
+        return {ticker:c.ticker, name:c.name, chain:c.chain_position||'',
+          role:(c.role!==undefined?c.role:null), role_reason:c.role_reason||'', note:c.note||'',
+          verification:v[0]};
+      });
+      const li=ind.leading_indicators||[];
+      nodes.push({
+        id:ind.id, kind:'industry', label:ind.name, sector:ind.sector, tier:ind.tier,
+        definition:ind.definition||'', balance:ind.balance||'', balance_dir:ind.balance_direction||'',
+        cycle:ind.cycle_stage||'', demand:ind.demand||{}, supply:ind.supply||{},
+        leading:li.map(x=>({name:x.name, reading:x.last_reading, as_of:x.as_of})),
+        triggers:ind.triggers_watchlist||[], tier_rationale:ind.tier_rationale||'',
+        market_read:ind.market_read||{}, companies:comps});
+      node_ids.add(ind.id);
+    }
+    // company_role map (ticker -> {...}); last write wins, same as python dict
+    const cand_ids=new Set((d.monthly_diff&&d.monthly_diff.deep_dive_candidates||[]).map(c=>c.id));
+    const company_role=new Map();
+    for(const ind of d.industries){
+      for(const c of (ind.companies||[])){
+        if(c.role){ company_role.set(c.ticker,{role:c.role,reason:c.role_reason||'',indid:ind.id,name:c.name,tier:ind.tier}); }
+      }
+    }
+    const comp_edges=[];
+    for(const [tk,v] of company_role){
+      const cid='C::'+tk;
+      if(node_ids.has(cid)) continue;
+      const vr=VER[tk]||['SHALLOW',null];
+      nodes.push({id:cid, kind:'company', label:v.name||tk, ticker:tk,
+        role:v.role, role_reason:v.reason, industry:v.indid, tier:v.tier, is_candidate:cand_ids.has(tk),
+        verification:vr[0], deep_dive_ref:vr[1]});
+      node_ids.add(cid);
+      comp_edges.push({type:'OPERATES_IN',from:cid,to:v.indid,direction:'+',strength:'H',
+        mechanism:'이 기업의 주 사업이 해당 산업에 속함',lag:'즉시',role:v.role});
+    }
+    // industry/theme edges where both ends exist
+    const edges=[];
+    const EK=['type','from','to','direction','strength','mechanism','lag'];
+    for(const e of d.edges){
+      if(node_ids.has(e.from)&&node_ids.has(e.to)){
+        const o={}; for(const k of EK) o[k]=(e[k]!==undefined?e[k]:null); edges.push(o);
+      }
+    }
+    for(const e of comp_edges) edges.push(e);
+    // sectors ordered
+    const sectors=[]; for(const ind of d.industries){ if(!sectors.includes(ind.sector)) sectors.push(ind.sector); }
+    return {
+      meta:{as_of:d.meta.as_of, version:d.meta.version, os_version:d.meta.os_version,
+        n_industries:d.industries.length, n_edges:d.edges.length},
+      sectors, nodes, edges};
+  }
+
+  function deriveConsole(d, g){
+    const sectors=g.sectors.map(s=>({name:s, code:SEC_CODE[s]||s.slice(0,3)}));
+    const edges_by_node={};
+    for(const e of g.edges){
+      (edges_by_node[e.from]=edges_by_node[e.from]||[]).push(e);
+      (edges_by_node[e.to]=edges_by_node[e.to]||[]).push(e);
+    }
+    const id2label={}; for(const n of g.nodes) id2label[n.id]=(n.label!==undefined?n.label:n.id);
+    const inds=[];
+    for(const n of g.nodes){
+      if(n.kind!=='industry') continue;
+      const nb=[];
+      for(const e of (edges_by_node[n.id]||[])){
+        if(e.type==='OPERATES_IN') continue;
+        const other = e.from===n.id ? e.to : e.from;
+        nb.push({type:e.type, dir: e.from===n.id?'→':'←', other:(id2label[other]!==undefined?id2label[other]:other),
+          other_id:other, strength:e.strength||'', mechanism:e.mechanism||''});
+      }
+      inds.push({id:n.id, sector:n.sector, name:n.label, definition:n.definition||'',
+        tier:n.tier, status:'BUILT', balance:n.balance||'', balance_dir:n.balance_dir||'', cycle:n.cycle||'',
+        demand:n.demand||{}, supply:n.supply||{}, leading:n.leading||[], triggers:n.triggers||[],
+        rationale:n.tier_rationale||'', market_read:n.market_read||{},
+        companies:(n.companies||[]).map(c=>({ticker:c.ticker,name:c.name,chain:c.chain||'',
+          role:(c.role!==undefined?c.role:null),role_reason:c.role_reason||'',
+          verification:c.verification||'SHALLOW'})),
+        edges:nb});
+    }
+    const themes=d.themes.map(t=>({name:t.name, thesis:t.demand_thesis||'',
+      n:(t.linked_industries||[]).length, linked:t.linked_industries||[]}));
+    const diff=d.monthly_diff||{};
+    const cands=(diff.deep_dive_candidates||[]).map(c=>({id:c.id,name:c.name,bucket:c.bucket,tier:c.tier,
+      role:(c.role!==undefined?c.role:undefined),why:c.why,falsifier:c.falsifier,horizon:c.horizon}));
+    const peak=(diff.peak_watch||[]).map(p=>({id:p.id,name:p.name,tier:p.tier,reason:p.reason,tripwire:p.tripwire}));
+    const tiers=[{k:'HEAT',label:'HEAT',desc:'수급 균형 붕괴 · 즉시 스크리닝'},
+      {k:'WARM',label:'WARM',desc:'트리거 조짐 · 월간 관찰'},
+      {k:'NEUTRAL',label:'NEUTRAL',desc:'균형 · 분기 확인'},
+      {k:'COLD',label:'COLD',desc:'침체 · 바닥 반전 감시'},
+      {k:'FROZEN',label:'FROZEN',desc:'구조적 쇠퇴 · 생존 확인'}];
+    const edgetypes=[{sym:'→',name:'SUPPLIES_TO',desc:'산출물이 상대의 투입물'},
+      {sym:'⇄',name:'SUBSTITUTES',desc:'수요를 대체'},
+      {sym:'⋈',name:'CAPACITY_COMPETES',desc:'같은 생산능력 경쟁'},
+      {sym:'≈',name:'DEMAND_COMOVES',desc:'같은 최종수요 노출'},
+      {sym:'⊣',name:'INVERSE',desc:'호황이 상대엔 비용/압력'},
+      {sym:'⇒',name:'THEME_DRIVES',desc:'테마가 수요 창출'}];
+    const tc={}; for(const i of inds) tc[i.tier]=(tc[i.tier]||0)+1;
+    return {meta:{as_of:d.meta.as_of,version:d.meta.version,os_version:d.meta.os_version,
+        counts:{sectors:sectors.length,industries:inds.length,themes:themes.length,
+          edges:d.edges.length,heat:tc.HEAT||0,warm:tc.WARM||0}},
+      sectors,industries:inds,themes,tiers,edgetypes,diff:{candidates:cands,peak_watch:peak}};
+  }
+
+  const api={deriveGraph, deriveConsole,
+    deriveAll(d){ const g=deriveGraph(d); return {graph:g, console:deriveConsole(d,g)}; }};
+  if(typeof module!=='undefined'&&module.exports) module.exports=api;
+  root.ATLAS_DERIVE=api;
+})(typeof window!=='undefined'?window:globalThis);
+</script>
+<script id="appcode" type="text/plain">/* ===== ATLAS Sector Console ===== */
+const $=id=>document.getElementById(id);
+const SEC_BY_NAME={}; DATA.sectors.forEach(s=>SEC_BY_NAME[s.name]=s);
+const IND_BY_ID={}; DATA.industries.forEach(o=>IND_BY_ID[o.id]=o);
+const TIER_KO={HEAT:'과열',WARM:'온기',NEUTRAL:'중립',COLD:'냉각',FROZEN:'동결'};
+const TIER_COLOR={HEAT:'var(--heat)',WARM:'var(--warm)',NEUTRAL:'var(--neutral)',COLD:'var(--cold)',FROZEN:'var(--frozen)'};
+const ROLE_KO={ANCHOR:'대장',REGIME_LEADER:'국면 주도주',HIGH_BETA:'고베타 유망주'};
+const EDGE_KO={SUPPLIES_TO:'공급',CUSTOMER_OF:'고객',SUBSTITUTES:'대체',CAPACITY_COMPETES:'capa경쟁',
+ DEMAND_COMOVES:'수요동행',INVERSE:'역상관',THEME_DRIVES:'수요구동'};
+const esc=s=>(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const balKo=b=>({SHORTAGE:'공급부족',BALANCED:'균형',GLUT:'공급과잉'}[b]||b||'—');
+const cycKo=c=>({RECOVERY:'회복초입',EXPANSION:'확장',PEAK:'피크권',DOWNTURN:'하강',TROUGH:'바닥권'}[c]||c||'—');
+
+/* chips + status */
+$('c-asof').textContent=DATA.meta.as_of;
+$('c-obj').textContent=DATA.industries.length;
+$('c-osver').textContent=DATA.meta.os_version;
+$('s-sec').textContent=DATA.sectors.length;
+$('s-obj').textContent=DATA.industries.length;
+$('s-thm').textContent=DATA.themes.length;
+$('s-edges').textContent=DATA.meta.counts.edges;
+$('s-heat').textContent=DATA.meta.counts.heat;
+$('s-ver').textContent=DATA.meta.version;
+
+const bySector={}; DATA.sectors.forEach(s=>bySector[s.name]=[]);
+DATA.industries.forEach(o=>bySector[o.sector].push(o));
+
+/* nav rail */
+const nav=$('nav');
+DATA.sectors.forEach(s=>{
+  const b=document.createElement('button'); b.className='nav'; b.dataset.sec=s.name;
+  b.innerHTML=`<span class="code">${s.code}</span><span class="nm">${s.name}</span><span class="cnt">${bySector[s.name].length}</span>`;
+  b.onclick=()=>{$('sec-'+s.code).scrollIntoView({behavior:'smooth',block:'start'});};
+  nav.appendChild(b);
+});
+
+/* tier filters (COLD/FROZEN default OFF = 역발상 접힘) */
+const active=new Set(['HEAT','WARM','NEUTRAL']);
+const flt=$('filters');
+DATA.tiers.forEach(t=>{
+  const cnt=DATA.industries.filter(o=>o.tier===t.k).length;
+  const b=document.createElement('button'); b.className='flt'+(active.has(t.k)?'':' off'); b.dataset.k=t.k;
+  b.innerHTML=`<span class="sw" style="background:${TIER_COLOR[t.k]}"></span><span class="fk">${TIER_KO[t.k]}</span><span class="fc">${cnt}</span>`;
+  b.title=t.desc;
+  b.onclick=()=>{ if(active.has(t.k)){active.delete(t.k);b.classList.add('off');}else{active.add(t.k);b.classList.remove('off');} applyFilter(); };
+  flt.appendChild(b);
+});
+function applyFilter(){
+  document.querySelectorAll('.obj').forEach(el=>el.classList.toggle('dim',!active.has(el.dataset.tier)));
+  document.querySelectorAll('.sector').forEach(sec=>{
+    const vis=[...sec.querySelectorAll('.obj')].some(o=>active.has(o.dataset.tier));
+    sec.style.display=vis?'':'none';
+  });
+}
+
+/* canvas: sector object grids */
+const canvas=$('canvas');
+DATA.sectors.forEach(s=>{
+  const sec=document.createElement('section'); sec.className='sector'; sec.id='sec-'+s.code;
+  const items=bySector[s.name];
+  sec.innerHTML=`<div class="shead"><span class="sc">${s.code}</span><h2>${s.name}</h2><span class="sn">${items.length} objects</span></div>`;
+  const g=document.createElement('div'); g.className='grid';
+  items.forEach(o=>{
+    const roles=new Set((o.companies||[]).map(c=>c.role).filter(Boolean));
+    const glyphs=[roles.has('REGIME_LEADER')?'<span class="rg lead"></span>':'',
+                  roles.has('HIGH_BETA')?'<span class="rg beta"></span>':'',
+                  roles.has('ANCHOR')?'<span class="rg anchor"></span>':''].join('');
+    const d=document.createElement('div'); d.className='obj'; d.tabIndex=0;
+    d.dataset.tier=o.tier; d.dataset.id=o.id;
+    d.innerHTML=`<div class="oid">${o.id}</div><div class="onm">${esc(o.name)}</div>`+
+                (glyphs?`<div class="orole">${glyphs}</div>`:'');
+    d.onclick=()=>openDrawer(o.id);
+    d.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openDrawer(o.id);}};
+    g.appendChild(d);
+  });
+  sec.appendChild(g); canvas.appendChild(sec);
+});
+applyFilter();
+
+/* themes */
+const th=$('themes');
+DATA.themes.forEach(t=>{
+  const d=document.createElement('div'); d.className='thm';
+  d.innerHTML=`<div class="tn"><b>${esc(t.name)}</b><span class="lk">⇒ ${t.n} 산업</span></div><div class="tt">${esc(t.thesis)}</div>`;
+  d.onclick=()=>openTheme(t);
+  th.appendChild(d);
+});
+
+/* edge types */
+const et=$('edgetypes');
+DATA.edgetypes.forEach(e=>{
+  const d=document.createElement('div'); d.className='edge';
+  d.innerHTML=`<span class="sym">${e.sym}</span><div><div class="en">${e.name}</div><div class="ed">${esc(e.desc)}</div></div>`;
+  et.appendChild(d);
+});
+
+/* diff: candidates + peak watch */
+(function(){
+  const d=DATA.diff||{}; const cands=d.candidates||[]; const pw=d.peak_watch||[];
+  if(!cands.length&&!pw.length) return;
+  const candHtml=cands.map(c=>{
+    const tl=(c.tier||'').toLowerCase();
+    const rl=c.role==='REGIME_LEADER'?'lead':c.role==='HIGH_BETA'?'beta':'';
+    const rlab=c.role?`<span class="rl ${rl}">${ROLE_KO[c.role]}</span>`:'';
+    return `<div class="cand" onclick="openDrawer('${c.id}')"><div class="ch"><span class="bk">버킷 ${c.bucket}</span>`+
+      `<span class="cn">${esc(c.name)}</span><span class="ct t-${tl}">${c.tier}</span>${rlab}</div>`+
+      `<div class="why">${esc(c.why)}</div>`+
+      `<div class="kv"><span class="k">반증</span> ${esc(c.falsifier)}</div>`+
+      `<div class="kv"><span class="k">지평</span> ${esc(c.horizon)}</div></div>`;
+  }).join('');
+  const pwHtml=pw.map(p=>`<div class="pk"><div class="pn">${esc(p.name)} · ${p.tier}</div>`+
+      `<div class="pr">${esc(p.reason)}</div><div class="pt">tripwire: ${esc(p.tripwire)}</div></div>`).join('');
+  $('diffwrap').innerHTML=`<div class="diffgrid">`+
+    `<div class="dcard"><h4><span class="dot" style="background:var(--teal)"></span>딥다이브 후보 · 3축 · SHALLOW만</h4>${candHtml}</div>`+
+    `<div class="dcard"><h4><span class="dot" style="background:var(--warm)"></span>피크아웃 감시 · 후보 아님</h4>${pwHtml||'<div class="pr" style="color:var(--faint)">해당 없음</div>'}</div></div>`;
+})();
+
+/* ===== drill-down drawer ===== */
+const drawer=$('drawer'), scrim=$('scrim');
+function openDrawer(id){
+  const o=IND_BY_ID[id]; if(!o) return;
+  document.querySelectorAll('.obj').forEach(e=>e.classList.toggle('sel',e.dataset.id===id));
+  const mr=o.market_read||{};
+  $('drawerHead').innerHTML=`<button class="dclose" onclick="closeDrawer()" aria-label="닫기">✕</button>`+
+    `<div class="deyebrow"><span class="did">${o.id}</span><span>${esc(o.sector)}</span>`+
+    `<span class="dtier" style="background:${TIER_COLOR[o.tier]};color:#0b1015">${o.tier} · ${TIER_KO[o.tier]}</span></div>`+
+    `<div class="dttl">${esc(o.name)}</div><div class="ddef">${esc(o.definition)}</div>`;
+
+  const roles={REGIME_LEADER:[],HIGH_BETA:[],ANCHOR:[],_:[]};
+  (o.companies||[]).forEach(c=>(roles[c.role]||roles._).push(c));
+  const roleBlock=(key,cls,mk)=>{const arr=roles[key];if(!arr||!arr.length)return'';
+    return `<div class="roleg"><div class="rolecap ${cls}"><span class="mk ${mk}"></span>${ROLE_KO[key]} <span style="color:var(--faint)">· ${arr.length}</span></div>`+
+      arr.map(c=>{const dd=c.verification==='DEEP_DIVED';
+        return `<div class="co"${dd?' style="border-color:#3a5b52"':''}><div class="ct2"><span class="tk">${esc(c.ticker)}</span><span class="nm">${esc(c.name)}</span>${dd?'<span style="font-family:var(--mono);font-size:9px;color:var(--teal);border:1px solid #3a5b52;border-radius:3px;padding:1px 5px;white-space:nowrap">✓ 검증</span>':''}</div>`+
+        (c.role_reason?`<div class="rz">${esc(c.role_reason)}</div>`:(c.chain?`<div class="rz">${esc(c.chain)}</div>`:''))+`</div>`;}).join('')+`</div>`;};
+
+  let h='';
+  h+=`<div class="sec2"><div class="h">수급 · 사이클</div>`+
+     `<div class="krow"><b>${balKo(o.balance)}</b> ${esc(o.balance_dir||'')} · 사이클 <b>${cycKo(o.cycle)}</b></div>`+
+     `<div class="krow" style="margin-top:4px">시장인지 <span class="m">${esc(mr.consensus||'—')}</span> · 모멘텀 <span class="m">${esc(mr.momentum||'—')}</span></div>`+
+     (mr.note?`<div class="txt" style="margin-top:6px">${esc(mr.note)}</div>`:'')+`</div>`;
+  if(o.demand&&(o.demand.drivers||o.demand.momentum))
+    h+=`<div class="sec2"><div class="h">수요 구조</div>`+
+       (o.demand.drivers?`<div class="txt">${esc(o.demand.drivers)}</div>`:'')+
+       (o.demand.secular_vs_cyclical?`<div class="txt">${esc(o.demand.secular_vs_cyclical)}</div>`:'')+
+       (o.demand.momentum?`<div class="txt"><b>모멘텀:</b> ${esc(o.demand.momentum)}</div>`:'')+`</div>`;
+  if(o.supply&&(o.supply.structure||o.supply.lead_time))
+    h+=`<div class="sec2"><div class="h">공급 구조</div>`+
+       (o.supply.structure?`<div class="txt">${esc(o.supply.structure)}</div>`:'')+
+       (o.supply.lead_time?`<div class="txt"><b>리드타임:</b> ${esc(o.supply.lead_time)}</div>`:'')+
+       (o.supply.barriers?`<div class="txt"><b>진입장벽:</b> ${esc(o.supply.barriers)}</div>`:'')+`</div>`;
+  if(o.rationale) h+=`<div class="sec2"><div class="h">티어 근거</div><div class="txt">${esc(o.rationale)}</div></div>`;
+  if(o.leading&&o.leading.length)
+    h+=`<div class="sec2"><div class="h">선행지표</div>`+
+       o.leading.map(l=>`<div class="krow"><b>${esc(l.name)}</b> — <span class="m">${esc(l.reading||'—')}</span> ${l.as_of?`<span style="color:var(--faint)">(${esc(l.as_of)})</span>`:''}</div>`).join('')+`</div>`;
+  if(o.triggers&&o.triggers.length)
+    h+=`<div class="sec2"><div class="h">잠재 트리거</div>`+o.triggers.map(t=>`<div class="txt">· ${esc(t)}</div>`).join('')+`</div>`;
+  const anyRole=roles.REGIME_LEADER.length||roles.HIGH_BETA.length||roles.ANCHOR.length;
+  if(anyRole)
+    h+=`<div class="sec2"><div class="h">주목 기업 · role 계층 <span style="color:var(--faint);text-transform:none">이 트리거 기준</span></div>`+
+       roleBlock('REGIME_LEADER','lead','lead')+roleBlock('HIGH_BETA','beta','beta')+roleBlock('ANCHOR','anchor','anchor')+`</div>`;
+  if(o.edges&&o.edges.length)
+    h+=`<div class="sec2"><div class="h">엣지 · 전파 통로 <span style="color:var(--faint)">${o.edges.length}</span></div>`+
+       o.edges.map(e=>{const tgt=IND_BY_ID[e.other_id];
+         return `<div class="erow" ${tgt?`onclick="openDrawer('${e.other_id}')"`:''}>`+
+           `<span class="et">${EDGE_KO[e.type]||e.type}</span>`+
+           `<div class="eo">${e.dir} <b>${esc(e.other)}</b> <span style="color:var(--faint);font-family:var(--mono);font-size:9px">${e.strength}</span>`+
+           `<div class="em">${esc(e.mechanism)}</div></div></div>`;}).join('')+`</div>`;
+  if(o.tier==='HEAT')
+    h+=`<div class="action"><div class="btn" onclick="copyScreen('${esc(o.name)}')">⎘ 스크리닝 명령 복사</div></div>`;
+  h+=`<div class="ddisc">role 계층은 <b style="color:var(--dim)">이 산업을 데운 트리거 기준</b>의 조사 후보 분류입니다. verification=SHALLOW — 해자·재무·경영진의 진위는 딥다이브에서 가립니다. 매수 신호가 아닙니다.</div>`;
+  $('drawerBody').innerHTML=h;
+  $('drawerBody').scrollTop=0;
+  drawer.classList.add('show'); scrim.classList.add('show'); drawer.setAttribute('aria-hidden','false');
+}
+function openTheme(t){
+  $('drawerHead').innerHTML=`<button class="dclose" onclick="closeDrawer()">✕</button>`+
+    `<div class="deyebrow"><span class="did">THEME</span><span>수요 원천</span></div>`+
+    `<div class="dttl">${esc(t.name)}</div>`;
+  const driven=(t.linked||[]).map(id=>IND_BY_ID[id]).filter(Boolean);
+  let h=`<div class="sec2"><div class="h">수요 논지</div><div class="txt">${esc(t.thesis)}</div></div>`;
+  if(driven.length) h+=`<div class="sec2"><div class="h">구동하는 산업 <span style="color:var(--faint)">${driven.length}</span></div>`+
+    driven.map(d=>`<div class="erow" onclick="openDrawer('${d.id}')"><span class="et" style="color:${TIER_COLOR[d.tier]}">${d.tier}</span><div class="eo"><b>${esc(d.name)}</b></div></div>`).join('')+`</div>`;
+  h+=`<div class="ddisc">테마는 산업 카드를 대체하지 않고 수요 드라이버로서 THEME_DRIVES 엣지로 연결됩니다.</div>`;
+  $('drawerBody').innerHTML=h; $('drawerBody').scrollTop=0;
+  drawer.classList.add('show'); scrim.classList.add('show');
+}
+function closeDrawer(){ drawer.classList.remove('show'); scrim.classList.remove('show'); drawer.setAttribute('aria-hidden','true');
+  document.querySelectorAll('.obj.sel').forEach(e=>e.classList.remove('sel')); }
+function copyScreen(name){ const cmd='스크리닝 시작 — '+name;
+  navigator.clipboard?.writeText(cmd).then(()=>toast('복사됨: '+cmd),()=>toast(cmd)); }
+function toast(msg){ let t=document.createElement('div'); t.textContent=msg;
+  t.style.cssText='position:fixed;bottom:54px;left:50%;transform:translateX(-50%);background:var(--bg3);border:1px solid var(--teal);color:var(--ink);font-family:var(--mono);font-size:11px;padding:8px 14px;border-radius:5px;z-index:80;opacity:0;transition:.2s';
+  document.body.appendChild(t); requestAnimationFrame(()=>t.style.opacity='1');
+  setTimeout(()=>{t.style.opacity='0';setTimeout(()=>t.remove(),250);},1800); }
+scrim.onclick=closeDrawer;
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer();});
+
+/* scroll-spy */
+const obs=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting){
+  const code=en.target.id.replace('sec-','');
+  const nm=(DATA.sectors.find(s=>s.code===code)||{}).name;
+  document.querySelectorAll('.nav').forEach(n=>n.classList.toggle('active',n.dataset.sec===nm));
+}});},{rootMargin:'-8% 0px -82% 0px'});
+document.querySelectorAll('.sector').forEach(s=>obs.observe(s));
+</script>
+<script>
+(function(){
+  function fail(msg){
+    document.querySelector('.app').innerHTML='<div style="padding:60px 30px;font-family:var(--mono);color:var(--dim);line-height:1.7">'+
+      '<div style="color:var(--teal);letter-spacing:.1em;margin-bottom:12px">ATLAS · 데이터 로드 실패</div>'+
+      msg+'</div>';
+  }
+  fetch('./data/ATLAS_PACK.json').then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
+    .then(function(pack){
+      window.DATA = ATLAS_DERIVE.deriveConsole(pack, ATLAS_DERIVE.deriveGraph(pack));
+      (0,eval)(document.getElementById('appcode').textContent);
+    })
+    .catch(function(e){
+      fail('data/ATLAS_PACK.json 을 읽지 못했습니다 ('+e.message+').<br><br>'+
+        '· GitHub Pages(https)에서는 정상 작동합니다.<br>'+
+        '· 로컬에서 열 때는 file:// 이 아니라 로컬 서버가 필요합니다 (브라우저 보안 정책).<br>'+
+        '&nbsp;&nbsp;예: 폴더에서 <b style="color:var(--ink)">python3 -m http.server</b> 실행 후 localhost 접속.');
+    });
+})();
+</script>
+</body></html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ATLAS OS · 사용 가이드</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<style>
+@font-face{font-family:'Pretendard';font-weight:400;font-display:swap;
+ src:url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-Regular.woff2') format('woff2');}
+@font-face{font-family:'Pretendard';font-weight:600;font-display:swap;
+ src:url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-SemiBold.woff2') format('woff2');}
+@font-face{font-family:'Pretendard';font-weight:700;font-display:swap;
+ src:url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-Bold.woff2') format('woff2');}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+:root{
+ --paper:#EBEAE4; --paper2:#F4F3EE; --card:#FFFFFF; --ink:#20242A; --ink2:#4A525B; --ink3:#828A93;
+ --line:#DAD8CF; --line2:#C8C6BC;
+ --heat:#A6331A; --warm:#B0771A; --neutral:#7A8894; --cold:#3C6C8C; --frozen:#8A929A;
+ --theme:#9A7B2E;
+ --mono:'IBM Plex Mono',ui-monospace,monospace; --sans:'Pretendard',-apple-system,system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.62;
+ -webkit-font-smoothing:antialiased;letter-spacing:-.01em}
+.wrap{max-width:860px;margin:0 auto;padding:0 24px 100px}
+
+/* masthead */
+.top{padding:52px 0 30px;border-bottom:2px solid var(--ink)}
+.xnav{display:flex;gap:3px;margin-bottom:26px}
+.xnav a{font-family:var(--mono);font-size:11px;letter-spacing:.05em;color:var(--ink3);
+ text-decoration:none;padding:6px 13px;border-radius:4px;border:1px solid transparent;transition:.14s}
+.xnav a:hover{color:var(--ink);background:var(--paper2)}
+.xnav a.cur{color:var(--ink);background:var(--card);border-color:var(--line2)}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink3);margin-bottom:16px}
+h1{font-size:38px;font-weight:700;letter-spacing:-.03em;line-height:1.08}
+h1 .dim{color:var(--ink3);font-weight:400}
+.lede{font-size:16px;color:var(--ink2);margin-top:16px;max-width:640px}
+
+/* section */
+section{padding:40px 0;border-bottom:1px solid var(--line)}
+.snum{font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--heat);font-weight:600}
+h2{font-size:24px;font-weight:700;letter-spacing:-.02em;margin:8px 0 18px}
+h3{font-size:15px;font-weight:600;margin:24px 0 8px;letter-spacing:-.01em}
+p{font-size:14.5px;color:var(--ink2);margin:10px 0}
+p b,li b{color:var(--ink);font-weight:600}
+.mono{font-family:var(--mono);font-size:.92em}
+code{font-family:var(--mono);font-size:12.5px;background:var(--paper2);border:1px solid var(--line);
+ border-radius:3px;padding:2px 6px;color:var(--heat)}
+
+/* funnel */
+.funnel{display:flex;flex-direction:column;gap:2px;margin:20px 0}
+.fstage{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--line);
+ border-left:3px solid var(--stage);border-radius:4px;padding:13px 16px}
+.fstage .fn{font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:var(--ink3);min-width:74px}
+.fstage .ft{font-weight:600;font-size:14px}
+.fstage .fd{font-size:13px;color:var(--ink2);margin-left:auto;text-align:right}
+.farrow{text-align:center;color:var(--ink3);font-size:13px;line-height:1}
+
+/* file map */
+.files{display:grid;gap:10px;margin-top:16px}
+.file{background:var(--card);border:1px solid var(--line);border-radius:5px;padding:15px 17px;
+ display:grid;grid-template-columns:auto 1fr;gap:4px 14px;align-items:baseline}
+.file .fname{font-family:var(--mono);font-size:13px;font-weight:600;color:var(--ink);grid-column:1}
+.file .fwhen{font-size:12px;color:var(--heat);grid-column:2;font-weight:600}
+.file .fdesc{font-size:13px;color:var(--ink2);grid-column:1/3;margin-top:3px}
+.star{display:inline-block;font-size:10px;color:var(--warm);vertical-align:middle;margin-left:6px;
+ font-family:var(--mono);letter-spacing:.06em}
+
+/* role cards */
+.roles{display:grid;gap:11px;margin-top:16px}
+.role{background:var(--card);border:1px solid var(--line);border-radius:5px;padding:15px 17px;
+ border-left:4px solid var(--rc)}
+.role .rt{display:flex;align-items:center;gap:9px;font-weight:700;font-size:15px}
+.role .glyph{width:15px;height:15px;flex:none;border-radius:50%}
+.g-lead{border:2.5px solid var(--heat);box-shadow:0 0 0 2px rgba(166,51,26,.2)}
+.g-beta{border:2px dashed var(--warm)}
+.g-anchor{background:var(--neutral)}
+.role .rd{font-size:13.5px;color:var(--ink2);margin-top:7px}
+.role .rex{font-size:12.5px;color:var(--ink3);margin-top:6px;font-family:var(--mono)}
+
+/* workflow */
+.flow{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:6px 20px;margin-top:14px}
+.step{display:flex;gap:16px;padding:15px 0;border-bottom:1px solid var(--line)}
+.step:last-child{border-bottom:none}
+.step .si{font-family:var(--mono);font-size:20px;font-weight:600;color:var(--line2);min-width:30px;line-height:1.1}
+.step .sb{flex:1}
+.step .sh{font-weight:600;font-size:14.5px;margin-bottom:3px}
+.step .sp{font-size:13px;color:var(--ink2)}
+.step .sp code{font-size:11.5px}
+
+/* callout */
+.rules{background:#FBF1EE;border:1px solid #E4C4BB;border-radius:6px;padding:18px 20px;margin-top:8px}
+.rules h3{margin-top:0;color:var(--heat);display:flex;align-items:center;gap:8px}
+.rules ul{list-style:none;margin-top:10px}
+.rules li{font-size:13.5px;color:var(--ink2);padding:5px 0 5px 22px;position:relative}
+.rules li::before{content:"—";position:absolute;left:0;color:var(--heat)}
+.tip{background:var(--paper2);border-left:3px solid var(--cold);border-radius:0 5px 5px 0;
+ padding:13px 16px;margin:14px 0;font-size:13.5px;color:var(--ink2)}
+.tip b{color:var(--cold)}
+
+footer{padding:30px 0 0;font-size:12px;color:var(--ink3);font-family:var(--mono);line-height:1.7}
+@media(max-width:640px){h1{font-size:28px}.fstage .fd{display:none}.wrap{padding:0 16px 60px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="top">
+ <nav class="xnav">
+  <a href="./ATLAS_CONSOLE.html">콘솔</a>
+  <a href="./ATLAS_GRAPH.html">관계망</a>
+  <a href="./ATLAS_MAP.html">히트맵</a>
+  <a href="./ATLAS_GUIDE.html" class="cur">가이드</a>
+ </nav>
+ <div class="kicker">Global Sector Atlas OS · 사용 가이드</div>
+ <h1>데워지는 곳을 먼저 보고,<br><span class="dim">거기서 봐야 할 기업까지 내려간다.</span></h1>
+ <p class="lede">이 OS는 투자 파이프라인의 <b>최상류 공정</b>입니다. 전 산업을 얕지만 빠짐없이 덮는 지도에서 수요·공급 균형이 깨지는 곳을 잡아내고, 그 산업에서 지금 쳐다봐야 할 기업을 계층으로 좁혀 하류(스크리닝→딥다이브)로 넘깁니다. 아래는 그걸 실제로 굴리는 법입니다.</p>
+</div>
+
+<section>
+ <div class="snum">01</div>
+ <h2>30초 개념 — 깔때기</h2>
+ <p>이 지도는 종목을 추천하지 않습니다. <b>"어디를 더 조사할까"의 우선순위</b>를 매깁니다. 흐름은 위에서 아래로 좁아집니다.</p>
+ <div class="funnel">
+  <div class="fstage" style="--stage:var(--heat)"><span class="fn">ATLAS</span><span class="ft">전 산업 지도 (월간)</span><span class="fd">지금 여기 — 얕고 넓게, 온도 추적</span></div>
+  <div class="farrow">↓</div>
+  <div class="fstage" style="--stage:var(--warm)"><span class="fn">SCREENING</span><span class="ft">뜨거운 산업 내 후보 발굴</span><span class="fd">HEAT 산업 → 종목 유니버스</span></div>
+  <div class="farrow">↓</div>
+  <div class="fstage" style="--stage:var(--neutral)"><span class="fn">DEEP DIVE</span><span class="ft">종목 검증·판단</span><span class="fd">해자·재무·경영진 진위</span></div>
+  <div class="farrow">↓</div>
+  <div class="fstage" style="--stage:var(--cold)"><span class="fn">QUARTERLY</span><span class="ft">보유 관리</span><span class="fd">스탠스 갱신</span></div>
+ </div>
+ <p>ATLAS는 첫 칸입니다. 여기서 <b>"이 산업이 데워졌다"</b>와 <b>"그럼 이 기업들을 보라"</b>까지만 하고, "진짜 살 만한가"는 다음 칸(딥다이브)의 몫입니다. 이 경계가 OS의 안전장치입니다 — 얕은 근거로 종목을 지르지 않게.</p>
+</section>
+
+<section>
+ <div class="snum">02</div>
+ <h2>어떤 파일을 언제 보나</h2>
+ <p>산출물이 여러 개라 헷갈릴 수 있어 진입점을 정리합니다. <b>평소엔 콘솔 하나만</b> 보면 됩니다.</p>
+ <div class="files">
+  <div class="file">
+   <span class="fname">ATLAS_CONSOLE.html</span><span class="fwhen">평소 · 매일 여는 것 <span class="star">★ 메인</span></span>
+   <span class="fdesc">파운드리식 섹터 콘솔. 좌측 레일로 섹터를 넘나들고 티어로 필터하며 56개 산업을 훑습니다. 오브젝트를 클릭하면 우측에서 수요·공급·트리거·선행지표 + 대장/국면주/고베타 기업 계층이 드릴다운으로 열립니다. 전체 조망과 파고들기를 한 화면에서.</span>
+  </div>
+  <div class="file">
+   <span class="fname">ATLAS_GRAPH.html</span><span class="fwhen">관계를 추적할 때</span>
+   <span class="fdesc">노드-엣지 관계망 탐색기. 산업을 클릭하면 연결된 이웃으로 엣지가 뻗고, 엣지를 따라 "이 산업이 데워지면 어디로 번지나"를 꼬리에 꼬리를 물고 따라갑니다. 콘솔이 "훑기"라면 이건 "관계 추적".</span>
+  </div>
+  <div class="file">
+   <span class="fname">ATLAS_MAP.html</span><span class="fwhen">인쇄·공유용 (보조)</span>
+   <span class="fdesc">밝은 톤의 히트맵 대시보드. 콘솔이 하던 조망을 밝은 화면·인쇄물로 옮긴 정적 버전입니다. 남에게 프린트해 보여주거나 밝은 화면에 띄울 때. 갱신 시점의 스냅샷을 공유하는 용도.</span>
+  </div>
+  <div class="file">
+   <span class="fname">ATLAS_PACK.json</span><span class="fwhen">월간 갱신 때 · 원본 데이터</span>
+   <span class="fdesc">지도의 유일한 원본. 사람이 읽는 파일이 아니라 <b>보관하고 첨부하는</b> 파일입니다. 매달 갱신 시 이걸 첨부하면 "직전 + 새 조사 → 새 버전" diff가 돕니다. 프로젝트 지식에 올려두고 매달 교체 권장.</span>
+  </div>
+ </div>
+ <div class="tip"><b>요약:</b> 매일은 <span class="mono">콘솔</span>, 관계 추적은 <span class="mono">관계망</span>, 인쇄·공유는 <span class="mono">히트맵</span>, 매달은 <span class="mono">PACK</span> 첨부.</div>
+</section>
+
+<section>
+ <div class="snum">03</div>
+ <h2>기업 3계층 읽는 법</h2>
+ <p>산업을 클릭하면 그 산업을 <b>데운 바로 그 트리거 기준</b>으로 기업이 세 계층으로 나뉩니다. 계층 순서 자체가 "덜 알려진 것부터 보라"는 힌트입니다.</p>
+ <div class="roles">
+  <div class="role" style="--rc:var(--heat)">
+   <div class="rt"><span class="glyph g-lead"></span>국면 주도주 <span class="mono" style="color:var(--ink3);font-weight:400;font-size:12px">REGIME_LEADER</span></div>
+   <div class="rd">그 시점·그 트리거에 <b>가장 크게 순노출</b>됐고 그걸 지킬 해자가 있는 기업. 지금 국면의 진짜 주도력. <b>제일 먼저 보는 층.</b></div>
+   <div class="rex">예 · 전력기기가 변압기 병목으로 뜨면 → GE Vernova</div>
+  </div>
+  <div class="role" style="--rc:var(--warm)">
+   <div class="rt"><span class="glyph g-beta"></span>고베타 유망주 <span class="mono" style="color:var(--ink3);font-weight:400;font-size:12px">HIGH_BETA</span></div>
+   <div class="rd">순노출이지만 대장은 아닌 <b>저인지·소형·병목인접</b> 기업. 국면이 맞으면 탄력이 크지만 함정 위험도 큰 층. <b>남들이 덜 보는 곳.</b></div>
+   <div class="rex">예 · 같은 전력기기의 Vertiv · nVent (냉각·연결 세그먼트)</div>
+  </div>
+  <div class="role" style="--rc:var(--neutral)">
+   <div class="rt"><span class="glyph g-anchor"></span>대장 <span class="mono" style="color:var(--ink3);font-weight:400;font-size:12px">ANCHOR</span></div>
+   <div class="rd">널리 알려진 대표주. 봐야 하지만 <b>남들도 다 보는</b>, 재평가가 상당히 진행된 층. 안정적이나 서프라이즈 여지는 작음.</div>
+   <div class="rex">예 · 같은 전력기기의 Eaton</div>
+  </div>
+ </div>
+ <div class="tip"><b>왜 이 순서인가:</b> 큰 수익은 "펀더멘털이 바닥에서 도는데 시장이 이제 막 돈을 붓기 시작하는" 구간에서 나옵니다. 그래서 대장보다 <b>국면주·고베타</b>를 먼저 봅니다. 단, 계층은 <b>미검증(SHALLOW) 후보 분류</b>일 뿐 — "진짜냐 함정이냐"는 딥다이브가 가립니다.</div>
+</section>
+
+<section>
+ <div class="snum">04</div>
+ <h2>실전 워크플로우</h2>
+
+ <h3>평소 (5분) — 어디가 데워졌나</h3>
+ <div class="flow">
+  <div class="step"><div class="si">1</div><div class="sb"><div class="sh">콘솔을 연다</div><div class="sp">좌측 티어 필터로 과열·온기만 켜면 데워지는 산업이 섹터별로 모인다. 냉각·동결은 기본 접힘.</div></div></div>
+  <div class="step"><div class="si">2</div><div class="sb"><div class="sh">데워진 산업을 클릭</div><div class="sp">수요·공급·트리거 카드가 열리고, 국면주·고베타·대장이 계층으로 펼쳐진다.</div></div></div>
+  <div class="step"><div class="si">3</div><div class="sb"><div class="sh">엣지를 따라 이웃으로</div><div class="sp">"이 산업이 데워지면 옆·아래 어디로 번지나"를 엣지(공급·수요동행 등)를 클릭하며 따라간다.</div></div></div>
+ </div>
+
+ <h3>역발상 사냥 (필요할 때) — 바닥에서 도는 곳</h3>
+ <div class="flow">
+  <div class="step"><div class="si">1</div><div class="sb"><div class="sh">하단 <span class="mono" style="color:var(--cold)">역발상 감시</span> 버튼을 켠다</div><div class="sp">평소 접혀 있던 COLD 산업이 청색으로 나타난다. 다음 HEAT는 대개 오늘의 COLD에서 나온다.</div></div></div>
+  <div class="step"><div class="si">2</div><div class="sb"><div class="sh">"바닥 반전 신호"가 켜진 COLD를 본다</div><div class="sp">COLD라고 다 후보가 아니다. 공급 퇴출·재고 바닥·수요 반등이 <b>실제로 켜진</b> 것만. 국면주가 채워진 COLD가 그 신호다(빈 COLD는 아직 살 이유 미확인).</div></div></div>
+ </div>
+
+ <h3>매달 (갱신) — 지도를 살아있게</h3>
+ <div class="flow">
+  <div class="step"><div class="si">1</div><div class="sb"><div class="sh">최신 PACK을 첨부하고 트리거</div><div class="sp"><code>아틀라스 업데이트</code> + <code>ATLAS_PACK.json</code> 첨부. 전면 재조사가 아니라 변화 신호 있는 곳만 판다.</div></div></div>
+  <div class="step"><div class="si">2</div><div class="sb"><div class="sh">diff 리포트가 진짜 산출물</div><div class="sp">"이번 달 뭐가 바뀌었나" — 티어 상승/하락, 새 트리거, 스크리닝 권고, 딥다이브 후보·피크아웃 감시.</div></div></div>
+ </div>
+
+ <h3>뜨거울 때 (하류로) — 좁혀 들어가기</h3>
+ <div class="flow">
+  <div class="step"><div class="si">1</div><div class="sb"><div class="sh">HEAT 산업을 스크리닝으로</div><div class="sp"><code>스크리닝 시작 — &lt;산업명&gt;</code> + 그 산업 카드 첨부. 카드의 기업 계층이 유니버스 출발점.</div></div></div>
+  <div class="step"><div class="si">2</div><div class="sb"><div class="sh">후보를 딥다이브로</div><div class="sp">계층에서 고른 종목을 개별 검증. 끝나면 결과를 다음 갱신에 역반영해 노드를 "검증된 진한 노드"로 승격.</div></div></div>
+ </div>
+</section>
+
+<section>
+ <div class="snum">05</div>
+ <h2>절대 규칙 — 이것만은</h2>
+ <div class="rules">
+  <h3>⚠ 지도를 오독하지 않기</h3>
+  <ul>
+   <li><b>티어 = 조사 우선순위, 매매 신호 아님.</b> HEAT는 "여기를 더 파라"지 "여기를 사라"가 아니다.</li>
+   <li><b>role 계층 = 미검증 후보 분류.</b> 고베타 유망주가 진짜 유망주인지 부실주인지는 딥다이브 전엔 모른다.</li>
+   <li><b>COLD를 무시하지 않기.</b> 위험조정수익 최고 구간은 바닥 반전에서 나온다. 접어둘 뿐 지우지 않는다.</li>
+   <li><b>"요즘 핫함"은 증거가 아니다.</b> 티어 변경엔 트리거 증거 2개 이상이 필요하다.</li>
+   <li><b>PACK을 원본으로 보관.</b> 갱신은 항상 직전 PACK 기반. 없이 갱신하면 정확도가 떨어진다.</li>
+  </ul>
+ </div>
+</section>
+
+<footer>
+ Global Sector Atlas OS v1.3 · 2026-08<br>
+ 티어와 role은 조사 우선순위이며 투자 판단·매매 신호가 아닙니다. 종목의 진위 검증은 딥다이브 공정에서 이루어집니다.
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>ATLAS · 온톨로지 탐색기</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<style>
+@font-face{font-family:'Pretendard';font-weight:400;font-display:swap;
+ src:url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-Regular.woff2') format('woff2');}
+@font-face{font-family:'Pretendard';font-weight:600;font-display:swap;
+ src:url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-SemiBold.woff2') format('woff2');}
+@font-face{font-family:'Pretendard';font-weight:700;font-display:swap;
+ src:url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-Bold.woff2') format('woff2');}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root{
+ --bg:#14171A; --bg2:#191D21; --panel:#1C2126; --panel2:#22282E;
+ --ink:#EBEAE4; --ink-dim:#9BA3AB; --ink-faint:#6B747C;
+ --line:#2C333A; --line2:#39424A;
+ --heat:#E0552F; --warm:#D89A3A; --neutral:#7A8894; --cold:#4A8DB8; --frozen:#4F5860;
+ --theme:#C9B88A; --company:#B8C0C8;
+ --mono:'IBM Plex Mono',ui-monospace,monospace;
+ --sans:'Pretendard',-apple-system,system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);
+ overflow:hidden;-webkit-font-smoothing:antialiased;letter-spacing:-.01em}
+button{font-family:inherit;cursor:pointer}
+
+/* ---- shell ---- */
+.shell{display:grid;grid-template-columns:1fr 384px;grid-template-rows:auto 1fr auto;
+ height:100vh;width:100vw}
+.masthead{grid-column:1/2;grid-row:1;display:flex;align-items:baseline;gap:20px;
+ padding:14px 22px 12px;border-bottom:1px solid var(--line);background:var(--bg);z-index:5}
+.masthead .wordmark{font-family:var(--mono);font-weight:600;font-size:15px;letter-spacing:.14em;
+ color:var(--ink)}
+.masthead .wordmark b{color:var(--heat)}
+.masthead .xnav{display:flex;gap:2px;margin-left:6px}
+.masthead .xnav a{font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:var(--ink-faint);
+ text-decoration:none;padding:4px 10px;border-radius:3px;transition:.14s}
+.masthead .xnav a:hover{color:var(--ink);background:var(--panel)}
+.masthead .xnav a.cur{color:var(--ink);background:var(--panel2);border:1px solid var(--line2)}
+.masthead .meta{font-family:var(--mono);font-size:11px;color:var(--ink-faint);letter-spacing:.04em}
+.masthead .notice{margin-left:auto;font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;
+ color:var(--ink-faint);border:1px solid var(--line2);border-radius:2px;padding:4px 9px;white-space:nowrap}
+.masthead .notice b{color:var(--warm);font-weight:500}
+
+#stage{grid-column:1/2;grid-row:2;position:relative;overflow:hidden;background:
+ radial-gradient(1200px 800px at 60% 40%, #191E23 0%, #14171A 62%, #101316 100%)}
+#net{position:absolute;inset:0;width:100%;height:100%;cursor:grab}
+#net.grabbing{cursor:grabbing}
+
+.dock{grid-column:1/2;grid-row:3;display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+ padding:10px 18px;border-top:1px solid var(--line);background:var(--bg);z-index:5}
+.dock .grp{display:flex;align-items:center;gap:6px}
+.dock .lbl{font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:var(--ink-faint);
+ text-transform:uppercase;margin-right:2px}
+.chip{font-family:var(--mono);font-size:11px;letter-spacing:.03em;color:var(--ink-dim);
+ background:var(--panel);border:1px solid var(--line2);border-radius:2px;padding:5px 9px;
+ transition:.15s;display:inline-flex;align-items:center;gap:6px}
+.chip:hover{border-color:var(--ink-faint);color:var(--ink)}
+.chip.off{opacity:.34}
+.chip .dot{width:8px;height:8px;border-radius:50%}
+.chip.tog{cursor:pointer}
+.chip.cwatch{cursor:pointer}
+.chip.cwatch.on{border-color:var(--cold);color:var(--cold);background:rgba(74,141,184,.12)}
+.dock .sep{width:1px;height:20px;background:var(--line2);margin:0 4px}
+.dock .hint{margin-left:auto;font-family:var(--mono);font-size:10px;color:var(--ink-faint);letter-spacing:.03em}
+
+/* ---- inspector ---- */
+.inspector{grid-column:2;grid-row:1/4;background:var(--panel);border-left:1px solid var(--line);
+ display:flex;flex-direction:column;overflow:hidden}
+.insp-head{padding:16px 20px 13px;border-bottom:1px solid var(--line)}
+.insp-eyebrow{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+ color:var(--ink-faint);display:flex;align-items:center;gap:8px}
+.insp-title{font-size:19px;font-weight:700;margin-top:8px;line-height:1.24;letter-spacing:-.02em}
+.insp-sub{font-family:var(--mono);font-size:11px;color:var(--ink-dim);margin-top:6px;letter-spacing:.02em}
+.insp-body{flex:1;overflow-y:auto;padding:4px 20px 28px}
+.insp-body::-webkit-scrollbar{width:9px}
+.insp-body::-webkit-scrollbar-thumb{background:var(--line2);border-radius:5px;border:2px solid var(--panel)}
+
+.empty{display:flex;flex-direction:column;align-items:center;justify-content:center;
+ height:100%;text-align:center;padding:0 34px;color:var(--ink-faint)}
+.empty svg{opacity:.5;margin-bottom:18px}
+.empty h3{font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--ink-dim);
+ font-weight:500;margin-bottom:10px}
+.empty p{font-size:12.5px;line-height:1.7;color:var(--ink-faint)}
+
+.badge{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10px;
+ letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:2px;font-weight:500}
+.tierpill{color:#12100e}
+.sec{margin-top:20px}
+.sec-h{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+ color:var(--ink-faint);padding-bottom:7px;margin-bottom:10px;border-bottom:1px solid var(--line);
+ display:flex;justify-content:space-between;align-items:center}
+.kv{font-size:13px;line-height:1.66;color:var(--ink-dim)}
+.kv b{color:var(--ink);font-weight:600}
+.kv .metric{font-family:var(--mono);font-size:12px}
+.txt{font-size:13px;line-height:1.72;color:var(--ink-dim)}
+.txt+.txt{margin-top:8px}
+
+.ind-list{display:flex;flex-direction:column;gap:2px}
+.li{display:flex;gap:9px;align-items:baseline;font-size:12.5px;line-height:1.5;padding:5px 0;
+ border-bottom:1px solid var(--bg2);cursor:pointer;transition:.12s}
+.li:hover{color:var(--ink);padding-left:4px}
+.li .tk{font-family:var(--mono);font-size:11px;color:var(--ink-faint);min-width:66px}
+
+/* role tiers */
+.role-grp{margin-bottom:14px}
+.role-cap{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:10.5px;
+ letter-spacing:.06em;text-transform:uppercase;margin-bottom:7px;font-weight:500}
+.role-cap .mk{width:14px;height:14px;flex:none;position:relative}
+.role-glyph-anchor{background:var(--company);border-radius:50%}
+.role-glyph-leader{border-radius:50%;border:2px solid var(--heat);
+ box-shadow:0 0 0 2px rgba(224,85,47,.28)}
+.role-glyph-beta{border-radius:50%;border:1.5px dashed var(--warm)}
+.role-cap.anchor{color:var(--company)} .role-cap.leader{color:var(--heat)} .role-cap.beta{color:var(--warm)}
+.comp{padding:8px 10px;border-radius:3px;background:var(--bg2);margin-bottom:5px;
+ border:1px solid transparent;transition:.13s;cursor:pointer}
+.comp:hover{border-color:var(--line2);background:var(--panel2)}
+.comp.cand{border-left:2px solid var(--heat)}
+.comp-top{display:flex;align-items:baseline;gap:8px}
+.comp-tk{font-family:var(--mono);font-size:11.5px;font-weight:600;color:var(--ink)}
+.comp-nm{font-size:12.5px;color:var(--ink-dim);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.comp-flag{font-family:var(--mono);font-size:9px;letter-spacing:.06em;color:var(--heat);
+ border:1px solid var(--heat);border-radius:2px;padding:1px 4px}
+.comp-rz{font-size:11.5px;line-height:1.55;color:var(--ink-faint);margin-top:4px}
+
+.edge-row{display:flex;gap:8px;align-items:baseline;padding:7px 0;border-bottom:1px solid var(--bg2);
+ cursor:pointer;font-size:12px;transition:.12s}
+.edge-row:hover{padding-left:4px;color:var(--ink)}
+.edge-type{font-family:var(--mono);font-size:9.5px;letter-spacing:.04em;padding:2px 5px;border-radius:2px;
+ background:var(--panel2);color:var(--ink-dim);flex:none;text-transform:none}
+.edge-to{color:var(--ink-dim);flex:1}
+.edge-to b{color:var(--ink)}
+.edge-mech{font-size:11px;color:var(--ink-faint);line-height:1.5;margin-top:3px}
+.edge-str{font-family:var(--mono);font-size:9px;color:var(--ink-faint)}
+
+.disc{margin-top:22px;padding-top:14px;border-top:1px solid var(--line);
+ font-size:11px;line-height:1.65;color:var(--ink-faint)}
+
+/* floating edge tooltip */
+#tip{position:fixed;pointer-events:none;z-index:50;background:var(--panel2);
+ border:1px solid var(--line2);border-radius:3px;padding:8px 11px;max-width:280px;
+ font-size:11.5px;line-height:1.55;color:var(--ink-dim);opacity:0;transition:opacity .12s;
+ box-shadow:0 8px 30px rgba(0,0,0,.5)}
+#tip .tt-type{font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;color:var(--theme);margin-bottom:3px}
+#tip b{color:var(--ink)}
+
+/* legend inside stage */
+.legend{position:absolute;top:14px;left:16px;z-index:4;background:rgba(24,29,33,.72);
+ backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:4px;padding:11px 13px;
+ font-family:var(--mono);font-size:10px;letter-spacing:.03em;color:var(--ink-faint);pointer-events:none}
+.legend .row{display:flex;align-items:center;gap:8px;margin:4px 0}
+.legend .g{width:13px;height:13px;flex:none}
+.g.node-theme{background:var(--theme);transform:rotate(45deg);width:10px;height:10px;margin:1.5px}
+.g.node-ind{border-radius:50%;background:var(--heat)}
+.g.node-co{border-radius:50%;background:var(--company);width:8px;height:8px;margin:2.5px}
+.legend .ttl{color:var(--ink-dim);letter-spacing:.1em;margin-bottom:6px;font-size:9.5px}
+
+.zoomctl{position:absolute;bottom:14px;left:16px;z-index:4;display:flex;flex-direction:column;gap:1px}
+.zoomctl button{width:30px;height:30px;background:rgba(24,29,33,.85);border:1px solid var(--line2);
+ color:var(--ink-dim);font-size:16px;font-family:var(--mono);line-height:1}
+.zoomctl button:hover{color:var(--ink);border-color:var(--ink-faint)}
+.zoomctl button:first-child{border-radius:3px 3px 0 0}
+.zoomctl button:last-child{border-radius:0 0 3px 3px;font-size:10px}
+
+@media (max-width:900px){
+ .shell{grid-template-columns:1fr;grid-template-rows:auto 46vh auto 1fr}
+ .inspector{grid-column:1;grid-row:4;border-left:none;border-top:1px solid var(--line)}
+ .masthead .notice{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+<div class="shell">
+ <div class="masthead">
+  <div class="wordmark">ATLAS<b>·</b>ONTOLOGY</div>
+  <nav class="xnav">
+   <a href="./ATLAS_CONSOLE.html">콘솔</a>
+   <a href="./ATLAS_GRAPH.html" class="cur">관계망</a>
+   <a href="./ATLAS_MAP.html">히트맵</a>
+   <a href="./ATLAS_GUIDE.html">가이드</a>
+  </nav>
+  <div class="meta" id="mmeta"></div>
+  <div class="notice">티어 = <b>조사 우선순위</b> · 매매 신호 아님</div>
+ </div>
+
+ <div id="stage">
+  <div class="legend">
+   <div class="ttl">노드</div>
+   <div class="row"><span class="g node-theme"></span>테마 (수요 원천)</div>
+   <div class="row"><span class="g node-ind"></span>산업 (티어 온도색)</div>
+   <div class="row"><span class="g node-co"></span>기업 (role 계층)</div>
+  </div>
+  <svg id="net"></svg>
+  <div class="zoomctl">
+   <button id="zin" title="확대">+</button>
+   <button id="zout" title="축소">−</button>
+   <button id="zfit" title="전체 보기">⤢</button>
+  </div>
+ </div>
+
+ <div class="dock">
+  <span class="lbl">티어</span>
+  <div class="grp" id="tierChips"></div>
+  <span class="sep"></span>
+  <button class="chip cwatch" id="coldWatch"><span class="dot" style="background:var(--cold)"></span>역발상 감시</button>
+  <button class="chip tog" id="toggleCo"><span class="dot" style="background:var(--company)"></span>기업 노드</button>
+  <button class="chip tog" id="toggleTheme"><span class="dot" style="background:var(--theme)"></span>테마 노드</button>
+  <span class="sep"></span>
+  <button class="chip" id="resetBtn">↺ 리셋</button>
+  <span class="hint">산업 클릭 → 기업 계층 펼침 · 드래그 → 이동 · 휠 → 줌</span>
+ </div>
+
+ <aside class="inspector">
+  <div class="insp-head">
+   <div class="insp-eyebrow" id="ieyebrow">탐색기</div>
+   <div class="insp-title" id="ititle">관계망을 클릭해 파고드세요</div>
+   <div class="insp-sub" id="isub"></div>
+  </div>
+  <div class="insp-body" id="ibody">
+   <div class="empty">
+    <svg width="54" height="54" viewBox="0 0 54 54" fill="none" stroke="currentColor" stroke-width="1.3">
+     <circle cx="27" cy="14" r="6"/><circle cx="12" cy="40" r="5"/><circle cx="42" cy="40" r="5"/>
+     <circle cx="27" cy="30" r="3.4"/>
+     <path d="M27 20v7M24.5 32l-9 5.5M29.5 32l9 5.5" opacity=".6"/>
+    </svg>
+    <h3>ATLAS 온톨로지 탐색기</h3>
+    <p>지금 데워지는 산업(과열·온기)과 테마만 먼저 보입니다. <b style="color:var(--ink-dim)">산업을 클릭하면</b> 수요·공급·트리거 카드가 열리고, 그 산업을 데운 트리거에 노출된 기업들이 <b style="color:var(--heat)">국면 주도주</b> · <b style="color:var(--warm)">고베타 유망주</b> · <b style="color:var(--company)">대장</b> 세 계층으로 펼쳐집니다. 엣지를 따라 이웃 노드로 꼬리를 물고 내려가세요.<br><br>바닥에서 반전하는 역발상 사냥은 하단 <b style="color:var(--cold)">역발상 감시</b>로 COLD를 펼치면 됩니다.</p>
+   </div>
+  </div>
+ </aside>
+</div>
+<div id="tip"></div>
+
+<script>/* ATLAS derive.js — PACK(원본) 하나로 graph/console 파생 데이터를 만든다.
+   파이썬 extract_graph.py + extract_console.py의 1:1 포팅.
+   브라우저(fetch 후)와 Node(검증) 양쪽에서 동작. */
+(function(root){
+  const SEC_CODE={'에너지':'ENE','소재':'MAT','산업재':'IND','유틸리티':'UTL','IT':'ITC',
+    '커뮤니케이션':'COM','헬스케어':'HLT','금융':'FIN','부동산':'RLE','필수소비재':'STP','임의소비재':'DIS'};
+
+  function deriveGraph(d){
+    const nodes=[]; const node_ids=new Set();
+    // verification map from company_nodes ledger
+    const VER={};
+    for(const c of (d.company_nodes||[])){
+      VER[c.ticker]=[c.verification||'SHALLOW', c.deep_dive_ref||null];
+    }
+    // theme nodes
+    for(const t of d.themes){
+      nodes.push({id:t.id, kind:'theme', label:t.name,
+        thesis:t.demand_thesis||'', linked:t.linked_industries||[]});
+      node_ids.add(t.id);
+    }
+    // industry nodes (all)
+    for(const ind of d.industries){
+      const comps=(ind.companies||[]).map(c=>{
+        const v=VER[c.ticker]||['SHALLOW',null];
+        return {ticker:c.ticker, name:c.name, chain:c.chain_position||'',
+          role:(c.role!==undefined?c.role:null), role_reason:c.role_reason||'', note:c.note||'',
+          verification:v[0]};
+      });
+      const li=ind.leading_indicators||[];
+      nodes.push({
+        id:ind.id, kind:'industry', label:ind.name, sector:ind.sector, tier:ind.tier,
+        definition:ind.definition||'', balance:ind.balance||'', balance_dir:ind.balance_direction||'',
+        cycle:ind.cycle_stage||'', demand:ind.demand||{}, supply:ind.supply||{},
+        leading:li.map(x=>({name:x.name, reading:x.last_reading, as_of:x.as_of})),
+        triggers:ind.triggers_watchlist||[], tier_rationale:ind.tier_rationale||'',
+        market_read:ind.market_read||{}, companies:comps});
+      node_ids.add(ind.id);
+    }
+    // company_role map (ticker -> {...}); last write wins, same as python dict
+    const cand_ids=new Set((d.monthly_diff&&d.monthly_diff.deep_dive_candidates||[]).map(c=>c.id));
+    const company_role=new Map();
+    for(const ind of d.industries){
+      for(const c of (ind.companies||[])){
+        if(c.role){ company_role.set(c.ticker,{role:c.role,reason:c.role_reason||'',indid:ind.id,name:c.name,tier:ind.tier}); }
+      }
+    }
+    const comp_edges=[];
+    for(const [tk,v] of company_role){
+      const cid='C::'+tk;
+      if(node_ids.has(cid)) continue;
+      const vr=VER[tk]||['SHALLOW',null];
+      nodes.push({id:cid, kind:'company', label:v.name||tk, ticker:tk,
+        role:v.role, role_reason:v.reason, industry:v.indid, tier:v.tier, is_candidate:cand_ids.has(tk),
+        verification:vr[0], deep_dive_ref:vr[1]});
+      node_ids.add(cid);
+      comp_edges.push({type:'OPERATES_IN',from:cid,to:v.indid,direction:'+',strength:'H',
+        mechanism:'이 기업의 주 사업이 해당 산업에 속함',lag:'즉시',role:v.role});
+    }
+    // industry/theme edges where both ends exist
+    const edges=[];
+    const EK=['type','from','to','direction','strength','mechanism','lag'];
+    for(const e of d.edges){
+      if(node_ids.has(e.from)&&node_ids.has(e.to)){
+        const o={}; for(const k of EK) o[k]=(e[k]!==undefined?e[k]:null); edges.push(o);
+      }
+    }
+    for(const e of comp_edges) edges.push(e);
+    // sectors ordered
+    const sectors=[]; for(const ind of d.industries){ if(!sectors.includes(ind.sector)) sectors.push(ind.sector); }
+    return {
+      meta:{as_of:d.meta.as_of, version:d.meta.version, os_version:d.meta.os_version,
+        n_industries:d.industries.length, n_edges:d.edges.length},
+      sectors, nodes, edges};
+  }
+
+  function deriveConsole(d, g){
+    const sectors=g.sectors.map(s=>({name:s, code:SEC_CODE[s]||s.slice(0,3)}));
+    const edges_by_node={};
+    for(const e of g.edges){
+      (edges_by_node[e.from]=edges_by_node[e.from]||[]).push(e);
+      (edges_by_node[e.to]=edges_by_node[e.to]||[]).push(e);
+    }
+    const id2label={}; for(const n of g.nodes) id2label[n.id]=(n.label!==undefined?n.label:n.id);
+    const inds=[];
+    for(const n of g.nodes){
+      if(n.kind!=='industry') continue;
+      const nb=[];
+      for(const e of (edges_by_node[n.id]||[])){
+        if(e.type==='OPERATES_IN') continue;
+        const other = e.from===n.id ? e.to : e.from;
+        nb.push({type:e.type, dir: e.from===n.id?'→':'←', other:(id2label[other]!==undefined?id2label[other]:other),
+          other_id:other, strength:e.strength||'', mechanism:e.mechanism||''});
+      }
+      inds.push({id:n.id, sector:n.sector, name:n.label, definition:n.definition||'',
+        tier:n.tier, status:'BUILT', balance:n.balance||'', balance_dir:n.balance_dir||'', cycle:n.cycle||'',
+        demand:n.demand||{}, supply:n.supply||{}, leading:n.leading||[], triggers:n.triggers||[],
+        rationale:n.tier_rationale||'', market_read:n.market_read||{},
+        companies:(n.companies||[]).map(c=>({ticker:c.ticker,name:c.name,chain:c.chain||'',
+          role:(c.role!==undefined?c.role:null),role_reason:c.role_reason||'',
+          verification:c.verification||'SHALLOW'})),
+        edges:nb});
+    }
+    const themes=d.themes.map(t=>({name:t.name, thesis:t.demand_thesis||'',
+      n:(t.linked_industries||[]).length, linked:t.linked_industries||[]}));
+    const diff=d.monthly_diff||{};
+    const cands=(diff.deep_dive_candidates||[]).map(c=>({id:c.id,name:c.name,bucket:c.bucket,tier:c.tier,
+      role:(c.role!==undefined?c.role:undefined),why:c.why,falsifier:c.falsifier,horizon:c.horizon}));
+    const peak=(diff.peak_watch||[]).map(p=>({id:p.id,name:p.name,tier:p.tier,reason:p.reason,tripwire:p.tripwire}));
+    const tiers=[{k:'HEAT',label:'HEAT',desc:'수급 균형 붕괴 · 즉시 스크리닝'},
+      {k:'WARM',label:'WARM',desc:'트리거 조짐 · 월간 관찰'},
+      {k:'NEUTRAL',label:'NEUTRAL',desc:'균형 · 분기 확인'},
+      {k:'COLD',label:'COLD',desc:'침체 · 바닥 반전 감시'},
+      {k:'FROZEN',label:'FROZEN',desc:'구조적 쇠퇴 · 생존 확인'}];
+    const edgetypes=[{sym:'→',name:'SUPPLIES_TO',desc:'산출물이 상대의 투입물'},
+      {sym:'⇄',name:'SUBSTITUTES',desc:'수요를 대체'},
+      {sym:'⋈',name:'CAPACITY_COMPETES',desc:'같은 생산능력 경쟁'},
+      {sym:'≈',name:'DEMAND_COMOVES',desc:'같은 최종수요 노출'},
+      {sym:'⊣',name:'INVERSE',desc:'호황이 상대엔 비용/압력'},
+      {sym:'⇒',name:'THEME_DRIVES',desc:'테마가 수요 창출'}];
+    const tc={}; for(const i of inds) tc[i.tier]=(tc[i.tier]||0)+1;
+    return {meta:{as_of:d.meta.as_of,version:d.meta.version,os_version:d.meta.os_version,
+        counts:{sectors:sectors.length,industries:inds.length,themes:themes.length,
+          edges:d.edges.length,heat:tc.HEAT||0,warm:tc.WARM||0}},
+      sectors,industries:inds,themes,tiers,edgetypes,diff:{candidates:cands,peak_watch:peak}};
+  }
+
+  const api={deriveGraph, deriveConsole,
+    deriveAll(d){ const g=deriveGraph(d); return {graph:g, console:deriveConsole(d,g)}; }};
+  if(typeof module!=='undefined'&&module.exports) module.exports=api;
+  root.ATLAS_DERIVE=api;
+})(typeof window!=='undefined'?window:globalThis);
+</script>
+<script id="appcode" type="text/plain">
+/* ============ ATLAS Ontology Explorer ============ */
+const NS='http://www.w3.org/2000/svg';
+const svg=document.getElementById('net');
+const tip=document.getElementById('tip');
+
+const TIER_COLOR={HEAT:'#E0552F',WARM:'#D89A3A',NEUTRAL:'#7A8894',COLD:'#4A8DB8',FROZEN:'#4F5860'};
+const TIER_KO={HEAT:'과열',WARM:'온기',NEUTRAL:'중립',COLD:'냉각',FROZEN:'동결'};
+const THEME_COLOR='#C9B88A', COMPANY_COLOR='#B8C0C8';
+const ROLE_KO={ANCHOR:'대장',REGIME_LEADER:'국면 주도주',HIGH_BETA:'고베타 유망주'};
+const EDGE_KO={SUPPLIES_TO:'공급',CUSTOMER_OF:'고객',SUBSTITUTES:'대체',CAPACITY_COMPETES:'capa경쟁',
+ DEMAND_COMOVES:'수요동행',INVERSE:'역상관',THEME_DRIVES:'수요구동',OPERATES_IN:'속함'};
+
+/* ---------- build node/edge model ---------- */
+let NODES=[], EDGES=[], NBYID={};
+const showState={company:false, theme:true, tiers:{HEAT:1,WARM:1,NEUTRAL:1,COLD:0,FROZEN:0}};
+
+function initModel(){
+  NODES = GRAPH.nodes.map(n=>({...n, x:0,y:0,vx:0,vy:0, active:true, expanded:false}));
+  NBYID={}; NODES.forEach(n=>NBYID[n.id]=n);
+  EDGES = GRAPH.edges.map(e=>({...e}));
+  // seed positions: themes ring outer, industries clustered by sector, companies near their industry
+  const W=svg.clientWidth||1000, H=svg.clientHeight||700, cx=W/2, cy=H/2;
+  const sectors=GRAPH.sectors;
+  const secAng={}; sectors.forEach((s,i)=>secAng[s]=(i/sectors.length)*Math.PI*2);
+  NODES.forEach(n=>{
+    if(n.kind==='theme'){ const i=GRAPH.nodes.filter(x=>x.kind==='theme').indexOf(GRAPH.nodes.find(x=>x.id===n.id));
+      const a=(i/10)*Math.PI*2; n.x=cx+Math.cos(a)*Math.min(W,H)*0.42; n.y=cy+Math.sin(a)*Math.min(W,H)*0.42; }
+    else if(n.kind==='industry'){ const a=secAng[n.sector]+(Math.random()-.5)*0.5;
+      const r=Math.min(W,H)*(0.14+Math.random()*0.16); n.x=cx+Math.cos(a)*r; n.y=cy+Math.sin(a)*r; }
+    else { const ind=NBYID[n.industry]; n.x=(ind?ind.x:cx)+(Math.random()-.5)*40; n.y=(ind?ind.y:cy)+(Math.random()-.5)*40;
+      n.active=showState.company; }
+  });
+}
+
+function nodeVisible(n){
+  if(n.kind==='theme') return showState.theme;
+  if(n.kind==='company') return showState.company && n.active && (NBYID[n.industry]? showState.tiers[NBYID[n.industry].tier]:1);
+  if(n.kind==='industry') return showState.tiers[n.tier];
+  return true;
+}
+function edgeVisible(e){
+  const a=NBYID[e.from], b=NBYID[e.to]; if(!a||!b) return false;
+  return nodeVisible(a)&&nodeVisible(b);
+}
+
+/* ---------- radius / style ---------- */
+function radius(n){
+  if(n.kind==='theme') return 9;
+  if(n.kind==='company') return n.is_candidate?6.5:5.2;
+  // industry: size by tier heat + degree
+  const base={HEAT:15,WARM:12,NEUTRAL:9,COLD:9,FROZEN:8}[n.tier]||9;
+  return base;
+}
+function nodeColor(n){
+  if(n.kind==='theme') return THEME_COLOR;
+  if(n.kind==='company') return COMPANY_COLOR;
+  return TIER_COLOR[n.tier]||'#888';
+}
+
+/* ---------- force simulation ---------- */
+let alpha=1, running=true;
+const CHARGE=-4200, LINK_K=0.035, CENTER_K=0.014, DAMP=0.86;
+function tick(){
+  const W=svg.clientWidth,H=svg.clientHeight,cx=W/2,cy=H/2;
+  const vis=NODES.filter(nodeVisible);
+  // repulsion (Barnes-Hut-lite: O(n^2) but n<=~130 fine)
+  for(let i=0;i<vis.length;i++){ const a=vis[i];
+    for(let j=i+1;j<vis.length;j++){ const b=vis[j];
+      let dx=a.x-b.x, dy=a.y-b.y, d2=dx*dx+dy*dy+0.01;
+      if(d2>90000) continue;
+      const d=Math.sqrt(d2); const f=(CHARGE*alpha)/d2;
+      const fx=(dx/d)*f, fy=(dy/d)*f;
+      a.vx-=fx; a.vy-=fy; b.vx+=fx; b.vy+=fy;
+    }}
+  // links (spring)
+  for(const e of EDGES){ if(!edgeVisible(e)) continue;
+    const a=NBYID[e.from], b=NBYID[e.to];
+    let dx=b.x-a.x, dy=b.y-a.y, d=Math.hypot(dx,dy)||1;
+    const rest = (a.kind==='company'||b.kind==='company')?46:
+                 (a.kind==='theme'||b.kind==='theme')?190:135;
+    const f=LINK_K*alpha*(d-rest);
+    const fx=(dx/d)*f, fy=(dy/d)*f;
+    a.vx+=fx; a.vy+=fy; b.vx-=fx; b.vy-=fy;
+  }
+  // center gravity + integrate
+  for(const n of vis){
+    n.vx+=(cx-n.x)*CENTER_K*alpha; n.vy+=(cy-n.y)*CENTER_K*alpha;
+    if(n===dragging) continue;
+    n.vx*=DAMP; n.vy*=DAMP;
+    n.x+=n.vx; n.y+=n.vy;
+  }
+  alpha*=0.9955; if(alpha<0.02) alpha=0.02;
+}
+
+/* ---------- view transform (zoom/pan) ---------- */
+let view={x:0,y:0,k:1};
+function applyView(){ gRoot.setAttribute('transform',`translate(${view.x},${view.y}) scale(${view.k})`);}
+
+/* ---------- SVG layers ---------- */
+let gRoot,gEdges,gNodes,gLabels;
+function buildLayers(){
+  svg.innerHTML='';
+  const defs=document.createElementNS(NS,'defs');
+  defs.innerHTML=`
+   <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+     <feGaussianBlur stdDeviation="3.2" result="b"/>
+     <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+   </filter>
+   <filter id="glowStrong" x="-90%" y="-90%" width="280%" height="280%">
+     <feGaussianBlur stdDeviation="5.5" result="b"/>
+     <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+   </filter>`;
+  svg.appendChild(defs);
+  gRoot=document.createElementNS(NS,'g'); svg.appendChild(gRoot);
+  gEdges=document.createElementNS(NS,'g'); gRoot.appendChild(gEdges);
+  gNodes=document.createElementNS(NS,'g'); gRoot.appendChild(gNodes);
+  gLabels=document.createElementNS(NS,'g'); gRoot.appendChild(gLabels);
+}
+
+/* edge dash by type */
+function edgeDash(t){ return (t==='SUBSTITUTES'||t==='INVERSE')?'4 4':(t==='THEME_DRIVES'?'1 5':null);}
+function edgeBaseColor(e){
+  if(e.type==='THEME_DRIVES') return 'rgba(201,184,138,.34)';
+  if(e.type==='OPERATES_IN')  return 'rgba(120,130,140,.22)';
+  if(e.type==='SUBSTITUTES'||e.type==='INVERSE') return 'rgba(120,141,184,.30)';
+  return 'rgba(120,132,144,.26)';
+}
+
+let selId=null, hoverId=null;
+let edgeEls=[], nodeEls={}, labelEls={};
+
+function renderStatic(){
+  gEdges.innerHTML=''; gNodes.innerHTML=''; gLabels.innerHTML='';
+  edgeEls=[]; nodeEls={}; labelEls={};
+  // edges
+  EDGES.forEach((e,i)=>{
+    const ln=document.createElementNS(NS,'line');
+    ln.setAttribute('stroke',edgeBaseColor(e));
+    ln.setAttribute('stroke-width', e.strength==='H'?1.5:e.strength==='M'?1:0.7);
+    const d=edgeDash(e.type); if(d) ln.setAttribute('stroke-dasharray',d);
+    ln.dataset.i=i; ln.style.transition='stroke .15s,opacity .15s';
+    ln.addEventListener('mousemove',ev=>showEdgeTip(ev,e));
+    ln.addEventListener('mouseleave',hideTip);
+    gEdges.appendChild(ln); edgeEls.push(ln);
+  });
+  // nodes + labels
+  NODES.forEach(n=>{
+    const g=document.createElementNS(NS,'g'); g.style.cursor='pointer';
+    const r=radius(n);
+    // role rings for companies
+    if(n.kind==='company'){
+      if(n.role==='REGIME_LEADER'){ const ring=document.createElementNS(NS,'circle');
+        ring.setAttribute('r',r+3.2); ring.setAttribute('fill','none');
+        ring.setAttribute('stroke',TIER_COLOR.HEAT); ring.setAttribute('stroke-width',1.4);
+        ring.setAttribute('opacity',.85); g.appendChild(ring);}
+      else if(n.role==='HIGH_BETA'){ const ring=document.createElementNS(NS,'circle');
+        ring.setAttribute('r',r+2.8); ring.setAttribute('fill','none');
+        ring.setAttribute('stroke',TIER_COLOR.WARM); ring.setAttribute('stroke-width',1.2);
+        ring.setAttribute('stroke-dasharray','2.5 2.5'); ring.setAttribute('opacity',.8); g.appendChild(ring);}
+    }
+    let shape;
+    if(n.kind==='theme'){ shape=document.createElementNS(NS,'rect');
+      const s=r*1.4; shape.setAttribute('width',s); shape.setAttribute('height',s);
+      shape.setAttribute('x',-s/2); shape.setAttribute('y',-s/2);
+      shape.setAttribute('transform','rotate(45)'); shape.setAttribute('rx',1.5);
+    } else { shape=document.createElementNS(NS,'circle'); shape.setAttribute('r',r); }
+    shape.setAttribute('fill',nodeColor(n));
+    shape.setAttribute('stroke','rgba(20,23,26,.9)'); shape.setAttribute('stroke-width',1.2);
+    if(n.kind==='industry'&&n.tier==='HEAT') shape.setAttribute('filter','url(#glow)');
+    g.appendChild(shape);
+    // deep-dived company mark
+    if(n.kind==='company'&&n.verification==='DEEP_DIVED'){ const dot=document.createElementNS(NS,'circle');
+      dot.setAttribute('r',1.6); dot.setAttribute('fill','#14171A'); g.appendChild(dot);}
+    g.addEventListener('mousedown',ev=>startDrag(ev,n));
+    g.addEventListener('mouseenter',()=>setHover(n.id));
+    g.addEventListener('mouseleave',()=>setHover(null));
+    g.addEventListener('click',ev=>{ if(!draggedMoved){ selectNode(n.id);} });
+    gNodes.appendChild(g); nodeEls[n.id]={g,shape};
+    // label
+    const t=document.createElementNS(NS,'text');
+    t.textContent=n.kind==='company'?(n.ticker||n.label):n.label;
+    t.setAttribute('font-family',n.kind==='company'?"'IBM Plex Mono',monospace":"'Pretendard',sans-serif");
+    t.setAttribute('font-size',n.kind==='theme'?11:n.kind==='industry'?(n.tier==='HEAT'||n.tier==='WARM'?11:9.5):9);
+    t.setAttribute('font-weight',n.kind==='industry'&&n.tier==='HEAT'?700:500);
+    t.setAttribute('fill',n.kind==='theme'?THEME_COLOR:n.kind==='company'?'#8A929A':'#C4CBD1');
+    t.setAttribute('text-anchor','middle'); t.setAttribute('pointer-events','none');
+    t.setAttribute('paint-order','stroke'); t.setAttribute('stroke','#14171A'); t.setAttribute('stroke-width',2.4);
+    gLabels.appendChild(t); labelEls[n.id]=t;
+  });
+  updateVisibility();
+}
+
+function shortLabel(n){
+  let s=n.label; if(n.kind==='industry'){ s=s.replace(/·.*$/,''); if(s.length>10)s=s.slice(0,9)+'…';}
+  return s;
+}
+
+/* ---------- per-frame position sync ---------- */
+function syncPositions(){
+  for(const e of edgeEls){ const ed=EDGES[+e.dataset.i]; const a=NBYID[ed.from],b=NBYID[ed.to];
+    e.setAttribute('x1',a.x);e.setAttribute('y1',a.y);e.setAttribute('x2',b.x);e.setAttribute('y2',b.y);}
+  for(const id in nodeEls){ const n=NBYID[id]; nodeEls[id].g.setAttribute('transform',`translate(${n.x},${n.y})`);
+    const t=labelEls[id]; const off=radius(n)+ (n.kind==='theme'?15:11);
+    t.setAttribute('x',n.x); t.setAttribute('y',n.y+off);}
+}
+
+/* ---------- visibility & neighbor highlight ---------- */
+function neighborsOf(id){ const s=new Set([id]); const es=[];
+  EDGES.forEach((e,i)=>{ if(e.from===id||e.to===id){ if(!edgeVisible(e))return; s.add(e.from);s.add(e.to);es.push(i);} });
+  return {nodes:s,edges:es};
+}
+function updateVisibility(){
+  const focus = hoverId||selId;
+  let hi=null; if(focus) hi=neighborsOf(focus);
+  for(const id in nodeEls){ const n=NBYID[id]; const vis=nodeVisible(n);
+    nodeEls[id].g.style.display=vis?'':'none';
+    labelEls[id].style.display=vis?'':'none';
+    let op=1, lop=1;
+    if(hi){ if(hi.nodes.has(id)){op=1;lop=1;} else {op=.13;lop=.06;} }
+    else { // no focus: labels for small nodes fade unless zoomed
+      lop = (n.kind==='company')? (view.k>1.15?.9:0) : (n.kind==='industry'&&(n.tier==='NEUTRAL'||n.tier==='COLD'||n.tier==='FROZEN')? (view.k>0.9?.85:0.0):1);
+    }
+    nodeEls[id].g.style.opacity=op;
+    labelEls[id].style.opacity=lop;
+    if(id===selId){ nodeEls[id].shape.setAttribute('filter','url(#glowStrong)'); }
+    else if(n.kind==='industry'&&n.tier==='HEAT'){ nodeEls[id].shape.setAttribute('filter','url(#glow)'); }
+    else nodeEls[id].shape.removeAttribute('filter');
+  }
+  edgeEls.forEach((el,i)=>{ const e=EDGES[i]; const vis=edgeVisible(e);
+    el.style.display=vis?'':'none';
+    if(hi){ if(hi.edges.includes(i)){ el.style.opacity=1; el.setAttribute('stroke',hlEdgeColor(e)); el.setAttribute('stroke-width',(e.strength==='H'?2.4:1.7)); }
+      else { el.style.opacity=.07; el.setAttribute('stroke',edgeBaseColor(e)); } }
+    else { el.style.opacity=1; el.setAttribute('stroke',edgeBaseColor(e)); el.setAttribute('stroke-width',e.strength==='H'?1.5:e.strength==='M'?1:0.7);} });
+}
+function hlEdgeColor(e){
+  if(e.type==='THEME_DRIVES') return '#C9B88A';
+  if(e.type==='SUBSTITUTES'||e.type==='INVERSE') return '#6FA8CE';
+  if(e.type==='OPERATES_IN') return 'rgba(184,192,200,.8)';
+  if(e.direction==='+'||e.direction==='both') return '#E0552F';
+  return '#8A929A';
+}
+
+function setHover(id){ hoverId=id; updateVisibility(); }
+
+/* ---------- selection & drill-down ---------- */
+function selectNode(id){
+  selId=id; const n=NBYID[id];
+  if(n.kind==='industry') expandIndustry(n);
+  updateVisibility(); renderInspector(n); centerOn(n);
+}
+function expandIndustry(ind){
+  // activate this industry's company nodes; for non-HEAT, synthesize on the fly
+  const existing=NODES.filter(n=>n.kind==='company'&&n.industry===ind.id);
+  if(existing.length){ existing.forEach(c=>c.active=true); }
+  else if(ind.companies&&ind.companies.length){
+    ind.companies.forEach(c=>{ if(!c.ticker)return; const cid='C::'+c.ticker+'::'+ind.id;
+      if(NBYID[cid])return;
+      const nn={id:cid,kind:'company',label:c.name||c.ticker,ticker:c.ticker,role:c.role||null,
+        role_reason:c.role_reason||'',industry:ind.id,tier:ind.tier,is_candidate:false,
+        x:ind.x+(Math.random()-.5)*30,y:ind.y+(Math.random()-.5)*30,vx:0,vy:0,active:true};
+      NODES.push(nn); NBYID[cid]=nn;
+      EDGES.push({type:'OPERATES_IN',from:cid,to:ind.id,direction:'+',strength:'M',
+        mechanism:'이 기업의 주 사업이 해당 산업에 속함',lag:'즉시'});
+    });
+    showState.company=true; document.getElementById('toggleCo').classList.remove('off');
+    renderStatic();
+  }
+  alpha=Math.max(alpha,0.5);
+}
+function centerOn(n){ const W=svg.clientWidth,H=svg.clientHeight;
+  view.k=Math.max(view.k,1.1);
+  view.x=W/2-n.x*view.k; view.y=H/2-n.y*view.k; animateView();}
+
+/* ---------- inspector rendering ---------- */
+const $=id=>document.getElementById(id);
+function tierPill(t){ return `<span class="badge tierpill" style="background:${TIER_COLOR[t]}">${t} · ${TIER_KO[t]}</span>`;}
+function renderInspector(n){
+  if(n.kind==='industry') return renderIndustry(n);
+  if(n.kind==='theme')    return renderTheme(n);
+  if(n.kind==='company')  return renderCompany(n);
+}
+function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+function renderIndustry(n){
+  $('ieyebrow').innerHTML=`<span>산업 · ${esc(n.sector)}</span>`;
+  $('ititle').textContent=n.label;
+  $('isub').innerHTML=`${n.id} · ${tierPill(n.tier)}`;
+  const mr=n.market_read||{};
+  const roles={ANCHOR:[],REGIME_LEADER:[],HIGH_BETA:[],null:[]};
+  (n.companies||[]).forEach(c=>{ (roles[c.role]||roles['null']).push(c); });
+  const roleBlock=(key,cls,glyph)=>{ const arr=roles[key]; if(!arr||!arr.length)return'';
+    return `<div class="role-grp"><div class="role-cap ${cls}"><span class="mk ${glyph}"></span>${ROLE_KO[key]} <span style="color:var(--ink-faint);font-weight:400">· ${arr.length}</span></div>`+
+    arr.map(c=>`<div class="comp ${c.note&&/주목|후보/.test(c.note)?'cand':''}" onclick="focusCompany('${esc(c.ticker)}','${n.id}')">
+       <div class="comp-top"><span class="comp-tk">${esc(c.ticker)}</span><span class="comp-nm">${esc(c.name)}</span>${c.note&&/주목/.test(c.note)?'<span class="comp-flag">주목</span>':''}</div>
+       ${c.role_reason?`<div class="comp-rz">${esc(c.role_reason)}</div>`:(c.chain?`<div class="comp-rz">${esc(c.chain)}</div>`:'')}</div>`).join('')+`</div>`;};
+  const others=roles['null'];
+  const edgesOut=EDGES.filter(e=>(e.from===n.id||e.to===n.id)&&e.type!=='OPERATES_IN');
+  let html='';
+  // balance / cycle
+  html+=`<div class="sec"><div class="sec-h">수급 · 사이클</div>
+    <div class="kv"><b>${balKo(n.balance)}</b> ${esc(n.balance_dir||'')} · 사이클 <b>${cycKo(n.cycle)}</b></div>
+    <div class="kv" style="margin-top:5px">시장인지 <span class="metric">${esc(mr.consensus||'—')}</span> · 모멘텀 <span class="metric">${esc(mr.momentum||'—')}</span></div>
+    ${mr.note?`<div class="txt" style="margin-top:6px">${esc(mr.note)}</div>`:''}</div>`;
+  // demand/supply
+  if(n.demand){ html+=`<div class="sec"><div class="sec-h">수요 구조</div>
+    <div class="txt">${esc(n.demand.drivers||'')}</div>
+    ${n.demand.secular_vs_cyclical?`<div class="txt">${esc(n.demand.secular_vs_cyclical)}</div>`:''}
+    ${n.demand.momentum?`<div class="txt"><b style="color:var(--ink)">모멘텀:</b> ${esc(n.demand.momentum)}</div>`:''}</div>`;}
+  if(n.supply){ html+=`<div class="sec"><div class="sec-h">공급 구조</div>
+    <div class="txt">${esc(n.supply.structure||'')}</div>
+    ${n.supply.lead_time?`<div class="txt"><b style="color:var(--ink)">리드타임:</b> ${esc(n.supply.lead_time)}</div>`:''}
+    ${n.supply.barriers?`<div class="txt"><b style="color:var(--ink)">진입장벽:</b> ${esc(n.supply.barriers)}</div>`:''}</div>`;}
+  // tier rationale
+  if(n.tier_rationale){ html+=`<div class="sec"><div class="sec-h">티어 근거</div><div class="txt">${esc(n.tier_rationale)}</div></div>`;}
+  // leading indicators
+  if(n.leading&&n.leading.length){ html+=`<div class="sec"><div class="sec-h">선행지표</div>`+
+    n.leading.map(l=>`<div class="kv"><b>${esc(l.name)}</b> — <span class="metric">${esc(l.reading||'—')}</span> ${l.as_of?`<span style="color:var(--ink-faint)">(${esc(l.as_of)})</span>`:''}</div>`).join('')+`</div>`;}
+  // triggers
+  if(n.triggers&&n.triggers.length){ html+=`<div class="sec"><div class="sec-h">잠재 트리거</div>`+
+    n.triggers.map(t=>`<div class="txt">· ${esc(t)}</div>`).join('')+`</div>`;}
+  // role-tiered companies
+  const anyRole=roles.ANCHOR.length||roles.REGIME_LEADER.length||roles.HIGH_BETA.length;
+  if(anyRole){ html+=`<div class="sec"><div class="sec-h">주목 기업 · role 계층 <span style="color:var(--ink-faint);text-transform:none;letter-spacing:0">이 트리거 기준</span></div>`+
+    roleBlock('REGIME_LEADER','leader','role-glyph-leader')+
+    roleBlock('HIGH_BETA','beta','role-glyph-beta')+
+    roleBlock('ANCHOR','anchor','role-glyph-anchor')+`</div>`;}
+  if(others&&others.length){ html+=`<div class="sec"><div class="sec-h">밸류체인 · 기타</div><div class="ind-list">`+
+    others.map(c=>`<div class="li" onclick="focusCompany('${esc(c.ticker)}','${n.id}')"><span class="tk">${esc(c.ticker)}</span><span>${esc(c.name)} <span style="color:var(--ink-faint)">${esc(c.chain||'')}</span></span></div>`).join('')+`</div></div>`;}
+  // edges
+  if(edgesOut.length){ html+=`<div class="sec"><div class="sec-h">엣지 · 전파 통로 <span style="color:var(--ink-faint)">${edgesOut.length}</span></div>`+
+    edgesOut.map(e=>{ const other=e.from===n.id?e.to:e.from; const on=NBYID[other]||{label:other};
+      const dir=e.from===n.id?'→':'←';
+      return `<div class="edge-row" onclick="selectNode('${other}')">
+        <span class="edge-type">${EDGE_KO[e.type]||e.type}</span>
+        <div class="edge-to">${dir} <b>${esc(on.label||other)}</b> <span class="edge-str">${e.strength}·${dirGlyph(e.direction)}</span>
+          <div class="edge-mech">${esc(e.mechanism||'')}</div></div></div>`;}).join('')+`</div>`;}
+  html+=`<div class="disc">역할(role) 계층은 <b style="color:var(--ink-dim)">이 산업을 데운 트리거 기준</b>의 조사 후보 분류입니다. verification=SHALLOW(미검증) — 해자·재무·경영진의 진위는 딥다이브에서 가립니다. 매수 신호가 아닙니다.</div>`;
+  $('ibody').innerHTML=html;
+}
+function renderTheme(n){
+  $('ieyebrow').innerHTML='<span>테마 · 수요 원천</span>';
+  $('ititle').textContent=n.label;
+  $('isub').textContent=n.id;
+  const driven=EDGES.filter(e=>e.type==='THEME_DRIVES'&&e.from===n.id).map(e=>NBYID[e.to]).filter(Boolean);
+  let html=`<div class="sec"><div class="sec-h">수요 논지</div><div class="txt">${esc(n.thesis)}</div></div>`;
+  if(driven.length){ html+=`<div class="sec"><div class="sec-h">구동하는 산업 <span style="color:var(--ink-faint)">${driven.length}</span></div><div class="ind-list">`+
+    driven.map(d=>`<div class="li" onclick="selectNode('${d.id}')"><span class="tk" style="color:${TIER_COLOR[d.tier]}">${d.tier}</span><span>${esc(d.label)}</span></div>`).join('')+`</div></div>`;}
+  html+=`<div class="disc">테마는 산업 카드를 대체하지 않고 <b style="color:var(--ink-dim)">수요 드라이버</b>로서 THEME_DRIVES 엣지로 연결됩니다. 테마의 수요 변화는 엣지를 타고 산업으로 전파됩니다(최대 2홉).</div>`;
+  $('ibody').innerHTML=html;
+}
+function renderCompany(n){
+  const ind=NBYID[n.industry]||{};
+  $('ieyebrow').innerHTML=`<span>기업 · ${n.role?ROLE_KO[n.role]:'밸류체인'}</span>`;
+  $('ititle').textContent=n.label;
+  $('isub').innerHTML=`<span class="metric">${esc(n.ticker)}</span> · ${esc(ind.label||n.industry)} ${ind.tier?tierPill(ind.tier):''}`;
+  let html='';
+  if(n.role){ const cls=n.role==='REGIME_LEADER'?'leader':n.role==='HIGH_BETA'?'beta':'anchor';
+    const glyph=n.role==='REGIME_LEADER'?'role-glyph-leader':n.role==='HIGH_BETA'?'role-glyph-beta':'role-glyph-anchor';
+    html+=`<div class="sec"><div class="role-cap ${cls}" style="font-size:12px"><span class="mk ${glyph}"></span>${ROLE_KO[n.role]}</div>
+      ${n.role_reason?`<div class="txt" style="margin-top:8px">${esc(n.role_reason)}</div>`:''}</div>`;}
+  if(n.verification==='DEEP_DIVED'&&n.deep_dive_ref){ const r=n.deep_dive_ref;
+    html+=`<div class="sec"><div class="sec-h" style="color:var(--theme)">딥다이브 검증 완료 <span style="color:var(--ink-faint)">${esc(r.as_of||'')}</span></div>
+      ${r.stance_zone?`<div class="kv"><b>스탠스:</b> <span class="metric">${esc(r.stance_zone)}</span></div>`:''}
+      ${r.thesis_oneline?`<div class="txt" style="margin-top:6px"><b style="color:var(--ink)">Thesis:</b> ${esc(r.thesis_oneline)}</div>`:''}
+      ${r.moat_verdict?`<div class="txt"><b style="color:var(--ink)">해자:</b> ${esc(r.moat_verdict)}</div>`:''}
+      ${r.mgmt_verdict?`<div class="txt"><b style="color:var(--ink)">경영진:</b> ${esc(r.mgmt_verdict)}</div>`:''}
+      ${(r.kpi_tripwires&&r.kpi_tripwires.length)?`<div class="txt" style="margin-top:6px"><b style="color:var(--ink)">KPI tripwires:</b></div>`+r.kpi_tripwires.map(t=>`<div class="txt">· ${esc(t)}</div>`).join(''):''}
+    </div>`;}
+  if(n.is_candidate){ html+=`<div class="sec"><div class="sec-h">딥다이브 후보</div>
+    <div class="txt">이 종목은 이번 정산에서 딥다이브 후보로 선별됐습니다. 상세 논거·반증조건·시간지평은 PACK의 <span class="metric">deep_dive_candidates</span>를 참조하세요.</div></div>`;}
+  html+=`<div class="sec"><div class="sec-h">소속 산업</div>
+    <div class="li" onclick="selectNode('${n.industry}')"><span class="tk" style="color:${TIER_COLOR[ind.tier]||'#888'}">${ind.tier||''}</span><span>${esc(ind.label||n.industry)} — 산업 카드로 →</span></div></div>`;
+  html+=n.verification==='DEEP_DIVED'
+    ?`<div class="disc">이 노드는 딥다이브로 <b style="color:var(--theme)">검증 완료</b>된 진한 노드입니다. 표시된 스탠스는 딥다이브 산출의 인용이며, 분기 업데이트에서 갱신됩니다. 여전히 매수 신호가 아닙니다.</div>`
+    :`<div class="disc">verification=<b style="color:var(--ink-dim)">SHALLOW</b>. 아틀라스는 "이 트리거에 노출된, 아직 안 판 기업"까지 좁혀줄 뿐, 해자·재무·경영진 검증은 딥다이브의 몫입니다. 고베타일수록 변동성·함정 위험도 큽니다.</div>`;
+  $('ibody').innerHTML=html;
+}
+function focusCompany(tk,indid){
+  let cid='C::'+tk; if(!NBYID[cid]) cid='C::'+tk+'::'+indid;
+  if(NBYID[cid]) selectNode(cid); else { const ind=NBYID[indid]; if(ind) selectNode(indid); }
+}
+function balKo(b){return {SHORTAGE:'공급부족',BALANCED:'균형',GLUT:'공급과잉'}[b]||b||'—';}
+function cycKo(c){return {RECOVERY:'회복초입',EXPANSION:'확장',PEAK:'피크권',DOWNTURN:'하강',TROUGH:'바닥권'}[c]||c||'—';}
+function dirGlyph(d){return d==='+'?'+':d==='-'?'−':d==='both'?'±':'';}
+
+/* ---------- edge tooltip ---------- */
+function showEdgeTip(ev,e){
+  const a=NBYID[e.from],b=NBYID[e.to];
+  tip.innerHTML=`<div class="tt-type">${EDGE_KO[e.type]||e.type} · ${e.strength} · ${dirGlyph(e.direction)} · ${esc(e.lag||'')}</div>
+    <b>${esc(a.label)}</b> → <b>${esc(b.label)}</b><br>${esc(e.mechanism||'')}`;
+  tip.style.opacity=1;
+  tip.style.left=Math.min(ev.clientX+14,innerWidth-300)+'px';
+  tip.style.top=(ev.clientY+14)+'px';
+}
+function hideTip(){tip.style.opacity=0;}
+
+/* ---------- drag / pan / zoom ---------- */
+let dragging=null, draggedMoved=false, dragOff={x:0,y:0};
+let panning=false, panStart={x:0,y:0,vx:0,vy:0};
+function svgPt(ev){ const r=svg.getBoundingClientRect();
+  return {x:(ev.clientX-r.left-view.x)/view.k, y:(ev.clientY-r.top-view.y)/view.k};}
+function startDrag(ev,n){ ev.stopPropagation(); dragging=n; draggedMoved=false;
+  const p=svgPt(ev); dragOff={x:n.x-p.x,y:n.y-p.y}; alpha=Math.max(alpha,0.4);}
+svg.addEventListener('mousedown',ev=>{ if(dragging)return; panning=true; svg.classList.add('grabbing');
+  panStart={x:ev.clientX,y:ev.clientY,vx:view.x,vy:view.y}; });
+window.addEventListener('mousemove',ev=>{
+  if(dragging){ const p=svgPt(ev); dragging.x=p.x+dragOff.x; dragging.y=p.y+dragOff.y; dragging.vx=0;dragging.vy=0; draggedMoved=true; }
+  else if(panning){ view.x=panStart.vx+(ev.clientX-panStart.x); view.y=panStart.vy+(ev.clientY-panStart.y); applyView(); }
+});
+window.addEventListener('mouseup',()=>{ dragging=null; panning=false; svg.classList.remove('grabbing'); });
+svg.addEventListener('wheel',ev=>{ ev.preventDefault(); const r=svg.getBoundingClientRect();
+  const mx=ev.clientX-r.left, my=ev.clientY-r.top;
+  const f=ev.deltaY<0?1.12:0.89; const nk=Math.min(4,Math.max(0.28,view.k*f));
+  view.x=mx-(mx-view.x)*(nk/view.k); view.y=my-(my-view.y)*(nk/view.k); view.k=nk; applyView(); updateVisibility();
+},{passive:false});
+function animateView(){ applyView(); }
+$('zin').onclick=()=>{view.k=Math.min(4,view.k*1.2);applyView();updateVisibility();};
+$('zout').onclick=()=>{view.k=Math.max(0.28,view.k*0.83);applyView();updateVisibility();};
+$('zfit').onclick=fitView;
+function fitView(){ const vis=NODES.filter(nodeVisible); if(!vis.length)return;
+  let minx=1e9,miny=1e9,maxx=-1e9,maxy=-1e9;
+  vis.forEach(n=>{minx=Math.min(minx,n.x);miny=Math.min(miny,n.y);maxx=Math.max(maxx,n.x);maxy=Math.max(maxy,n.y);});
+  const W=svg.clientWidth,H=svg.clientHeight,pad=80;
+  const k=Math.min((W-pad)/(maxx-minx+1),(H-pad)/(maxy-miny+1),2);
+  view.k=Math.max(0.28,k); view.x=W/2-((minx+maxx)/2)*view.k; view.y=H/2-((miny+maxy)/2)*view.k;
+  applyView(); updateVisibility();}
+
+/* ---------- controls ---------- */
+function buildTierChips(){ const box=$('tierChips');
+  ['HEAT','WARM','NEUTRAL','COLD','FROZEN'].forEach(t=>{ const b=document.createElement('button');
+    b.className='chip tog'; b.innerHTML=`<span class="dot" style="background:${TIER_COLOR[t]}"></span>${TIER_KO[t]}`;
+    if(!showState.tiers[t]) b.classList.add('off');
+    b.onclick=()=>{ showState.tiers[t]=showState.tiers[t]?0:1; b.classList.toggle('off',!showState.tiers[t]);
+      alpha=Math.max(alpha,0.3); updateVisibility(); };
+    box.appendChild(b); });
+}
+$('toggleCo').onclick=function(){ showState.company=!showState.company; this.classList.toggle('off',!showState.company);
+  NODES.forEach(n=>{if(n.kind==='company')n.active=showState.company;}); alpha=Math.max(alpha,0.3); updateVisibility();};
+$('toggleTheme').onclick=function(){ showState.theme=!showState.theme; this.classList.toggle('off',!showState.theme);
+  alpha=Math.max(alpha,0.3); updateVisibility();};
+$('resetBtn').onclick=()=>{ selId=null;hoverId=null;
+  NODES=NODES.filter(n=>!(n.kind==='company'&&n.id.split('::').length>2)); NBYID={};NODES.forEach(n=>NBYID[n.id]=n);
+  EDGES=EDGES.filter(e=>NBYID[e.from]&&NBYID[e.to]);
+  location.reload();
+};
+
+/* ---------- main loop ---------- */
+function loop(){ if(running){ for(let i=0;i<2;i++) tick(); syncPositions(); } requestAnimationFrame(loop);}
+
+/* ---------- boot ---------- */
+function boot(){
+  $('mmeta').textContent=`${GRAPH.meta.as_of} · 산업 ${GRAPH.meta.n_industries} · 엣지 ${GRAPH.meta.n_edges} · ${GRAPH.meta.os_version}`;
+  initModel(); buildLayers(); buildTierChips(); renderStatic();
+  if(!showState.company) $('toggleCo').classList.add('off');
+  // contrarian watch toggle: flips COLD+FROZEN together
+  const cw=$('coldWatch');
+  if(cw){ cw.onclick=function(){ const on=!(showState.tiers.COLD||showState.tiers.FROZEN);
+    showState.tiers.COLD=on?1:0; showState.tiers.FROZEN=on?1:0;
+    this.classList.toggle('on',on);
+    // sync the individual tier chips
+    document.querySelectorAll('#tierChips .chip').forEach(c=>{
+      const t=c.textContent.trim();
+      if(t.includes('냉각')) c.classList.toggle('off',!on);
+      if(t.includes('동결')) c.classList.toggle('off',!on);
+    });
+    alpha=Math.max(alpha,0.3); updateVisibility(); }; }
+  // settle then fit
+  let s=0; const warm=()=>{ for(let i=0;i<6;i++)tick(); s++; if(s<40){syncPositions();requestAnimationFrame(warm);} else {syncPositions();fitView();loop();} };
+  warm();
+}
+window.addEventListener('resize',()=>{ /* keep */ });
+boot();
+
+</script>
+<script>
+(function(){
+  function fail(msg){ document.body.innerHTML='<div style="padding:60px 34px;font-family:var(--mono);color:#9BA3AB;line-height:1.7;max-width:640px;margin:0 auto">'+
+    '<div style="color:#A6331A;letter-spacing:.1em;margin-bottom:12px">ATLAS · 데이터 로드 실패</div>'+msg+'</div>'; }
+  fetch('./data/ATLAS_PACK.json').then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
+    .then(function(pack){
+      window.GRAPH = ATLAS_DERIVE.deriveGraph(pack);
+      (0,eval)(document.getElementById('appcode').textContent);
+    })
+    .catch(function(e){
+      fail('data/ATLAS_PACK.json 을 읽지 못했습니다 ('+e.message+').<br><br>'+
+        '· GitHub Pages(https)에서는 정상 작동합니다.<br>'+
+        '· 로컬에서 열 때는 file:// 이 아니라 로컬 서버가 필요합니다.<br>'+
+        '&nbsp;&nbsp;예: 폴더에서 <b style="color:#EBEAE4">python3 -m http.server</b> 실행 후 localhost 접속.');
+    });
+})();
+</script>
+</body>
+</html>
