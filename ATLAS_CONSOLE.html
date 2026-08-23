@@ -181,6 +181,18 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;
 .co .rz{font-size:11px;color:var(--faint);line-height:1.45;margin-top:3px}
 .rolecap.cover{color:var(--teal)} .mk.cover{border:1.5px solid var(--teal);opacity:.7}
 .co.dd{border-color:#3a5b52;background:rgba(70,179,172,.05)}
+details.co.dd{padding:0}
+details.co.dd>summary{list-style:none;cursor:pointer;padding:7px 10px;display:block}
+details.co.dd>summary::-webkit-details-marker{display:none}
+details.co.dd>summary:hover{background:rgba(70,179,172,.09)}
+.ddcaret{color:var(--teal);font-size:10px;transition:transform .15s;flex:none;margin-left:2px}
+details.co.dd[open] .ddcaret{transform:rotate(90deg)}
+.ddbody{padding:0 10px 9px}
+.ddref-as{font-family:var(--mono);font-size:9.5px;color:var(--teal);letter-spacing:.04em;margin:2px 0 6px;padding-top:6px;border-top:1px dashed #2b3b39}
+.ddrow{font-size:11.5px;color:var(--dim);line-height:1.52;margin:4px 0}
+.ddrow b{color:var(--teal);font-weight:600;margin-right:3px}
+.ddk{margin-top:6px}.ddk>b{color:var(--teal);font-size:11px}
+.ddki{font-size:11px;color:var(--faint);line-height:1.45;margin-top:2px}
 .ddbadge{font-family:var(--mono);font-size:9px;color:var(--teal);border:1px solid #3a5b52;border-radius:3px;padding:1px 5px;white-space:nowrap}
 .co .ddv{margin-top:5px;padding-top:5px;border-top:1px dashed #2b3b39}
 .co .ddvs{font-family:var(--mono);font-size:10px;color:var(--teal);letter-spacing:.02em}
@@ -537,9 +549,20 @@ function openDrawer(id){
     arr.sort((a,b)=>(b.verification==='DEEP_DIVED')-(a.verification==='DEEP_DIVED'));
     return `<div class="roleg"><div class="rolecap ${cls}"><span class="mk ${mk}"></span>${ROLE_KO[key]||key} <span style="color:var(--faint)">· ${arr.length}</span></div>`+
       arr.map(c=>{const dd=c.verification==='DEEP_DIVED';const r=dd?c.deep_dive_ref:null;
-        const verdict=r?`<div class="ddv">${r.stance_zone?`<div class="ddvs">${esc(r.stance_zone)}</div>`:''}${r.thesis_oneline?`<div class="ddvt">${esc(r.thesis_oneline)}</div>`:''}</div>`:'';
-        return `<div class="co${dd?' dd':''}"><div class="ct2"><span class="tk">${esc(c.ticker)}</span><span class="nm">${esc(c.name)}</span>${dd?'<span class="ddbadge">✓ 검증</span>':''}</div>`+
-        (c.role_reason?`<div class="rz">${esc(c.role_reason)}</div>`:(c.chain?`<div class="rz">${esc(c.chain)}</div>`:''))+verdict+`</div>`;}).join('')+`</div>`;};
+        const sub=(c.role_reason?`<div class="rz">${esc(c.role_reason)}</div>`:(c.chain?`<div class="rz">${esc(c.chain)}</div>`:''));
+        if(dd&&r){
+          const kpi=(r.kpi_tripwires&&r.kpi_tripwires.length)?`<div class="ddk"><b>KPI tripwires</b>${r.kpi_tripwires.map(t=>`<div class="ddki">· ${esc(t)}</div>`).join('')}</div>`:'';
+          return `<details class="co dd"><summary>`+
+            `<div class="ct2"><span class="tk">${esc(c.ticker)}</span><span class="nm">${esc(c.name)}</span><span class="ddbadge">✓ 검증</span><span class="ddcaret">▸</span></div>`+
+            (r.stance_zone?`<div class="ddvs">${esc(r.stance_zone)}</div>`:'')+
+            `</summary><div class="ddbody">`+
+            (r.as_of?`<div class="ddref-as">딥다이브 검증 · ${esc(r.as_of)}</div>`:'')+
+            (r.thesis_oneline?`<div class="ddrow"><b>Thesis</b> ${esc(r.thesis_oneline)}</div>`:'')+
+            (r.moat_verdict?`<div class="ddrow"><b>해자</b> ${esc(r.moat_verdict)}</div>`:'')+
+            (r.mgmt_verdict?`<div class="ddrow"><b>경영진</b> ${esc(r.mgmt_verdict)}</div>`:'')+
+            kpi+`</div></details>`;
+        }
+        return `<div class="co"><div class="ct2"><span class="tk">${esc(c.ticker)}</span><span class="nm">${esc(c.name)}</span></div>`+sub+`</div>`;}).join('')+`</div>`;};
 
   let h='';
   h+=`<div class="sec2"><div class="h">수급 · 사이클</div>`+
