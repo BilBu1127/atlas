@@ -1,0 +1,1727 @@
+{
+  "meta": {
+    "ticker": "CRCL",
+    "company": "Circle Internet Group, Inc.",
+    "version": "2.0",
+    "T0": "2026-08-20",
+    "price_asof": "2026-08-20 NYSE close/reference",
+    "filing_asof": "2026-08-05 Form 10-Q for 2026-06-30",
+    "transcript_asof": "2026-08-05",
+    "consensus_asof": "2026-08-18",
+    "current_price": 83.66,
+    "currency": "USD",
+    "current_basic_shares_m": 252.7,
+    "current_market_cap_b": 21.140881999999998,
+    "corporate_liquidity_b": 2.619437,
+    "current_enterprise_value_b": 18.521444999999996,
+    "valuation_horizon": "2030-12-31",
+    "valuation_years": 4.3641341546885695
+  },
+  "research": {
+    "research_complete": true,
+    "research_complete_state": "COMPLETE_WITH_PRIMARY_SOURCE_CEILINGS",
+    "decision_evidence_sufficiency": "MEDIUM",
+    "critical_ceiling_count": 3,
+    "high_sensitivity_unknown_count": 4,
+    "latest_filing_check": "PASS — Q2 2026 10-Q dated 2026-08-05 is latest quarterly filing used; post-quarter trust/patent items checked for material thesis impact",
+    "primary_source_ceiling_items": [
+      "partner-specific distribution economics",
+      "Arc recurring post-presale monetization",
+      "CPN take rate / contract economics",
+      "customer contract values where undisclosed"
+    ]
+  },
+  "industry": {
+    "snapshot": {
+      "overall_attractiveness": "MIXED",
+      "lifecycle": "Growth / early institutionalization",
+      "current_total_stablecoin_b": 302.147,
+      "current_usdt_b": 183.014,
+      "current_usdc_b": 72.908,
+      "usdt_dominance": 0.6057,
+      "usdc_share_of_broad_market": 0.24129976468407763,
+      "profit_pool": "Reserve yield accrues first to issuers, then leaks substantially to distributors/platforms; product/application layers are the prospective higher-quality pool.",
+      "capital_cycle": "Issuance itself is capital-light; scarce inputs are regulatory status, trusted reserves, liquidity, bank rails and distribution. GENIUS may lower regulatory uncertainty while increasing compliant supply."
+    },
+    "dimensions": {
+      "demand_durability": {
+        "rating": "FAVORABLE",
+        "confidence": "MEDIUM",
+        "support": "Stablecoin market is ~$302B and USDC ~$72.9B; institutional payment/tokenization use cases are broadening.",
+        "counter": "Recent 30-day market growth is flat and crypto activity remains cyclical."
+      },
+      "capital_cycle": {
+        "rating": "MIXED",
+        "confidence": "MEDIUM",
+        "support": "Trust, liquidity, reserve operations, licensing and integrations take years to build.",
+        "counter": "Once licensed, stablecoin supply is software-like and capital-light; regulatory standardization can invite new issuers."
+      },
+      "pricing_structure": {
+        "rating": "UNFAVORABLE",
+        "confidence": "HIGH",
+        "support": "End users receive a $1 redeemable token, while distribution partners capture large reserve economics; Coinbase alone cost $1.4B in 2025.",
+        "counter": "Scale and liquidity may allow Circle to retain attractive economics despite sharing."
+      },
+      "profit_pool_direction": {
+        "rating": "MIXED",
+        "confidence": "HIGH",
+        "support": "USDC supply and reserve income expanded strongly since 2024.",
+        "counter": "RLDC margin fell from ~49.8% in 2023 to ~39.4% in 2025 as distribution costs rose."
+      },
+      "competitive_intensity": {
+        "rating": "UNFAVORABLE",
+        "confidence": "HIGH",
+        "support": "USDT remains ~60.6% of total stablecoins; GENIUS creates explicit paths for compliant bank/nonbank issuers.",
+        "counter": "USDC has differentiated regulatory depth and institutional integrations."
+      },
+      "cyclicality_regulation": {
+        "rating": "MIXED",
+        "confidence": "HIGH",
+        "support": "GENIUS/MiCA/trust charters increase legitimacy and distribution eligibility.",
+        "counter": "Reserve income is rate-sensitive and digital-asset activity is cyclical; final rules may alter economics."
+      },
+      "substitution": {
+        "rating": "MIXED",
+        "confidence": "MEDIUM",
+        "support": "USDC is liquid, interoperable and globally distributed.",
+        "counter": "Yield-bearing tokenized MMFs/deposits, USDT and new regulated stablecoins can substitute for idle USDC balances."
+      },
+      "company_transmission": {
+        "rating": "FAVORABLE",
+        "confidence": "HIGH",
+        "support": "USDC balance growth transmits directly to reserve assets and reserve income; Circle owns the issuer economics.",
+        "counter": "Transmission leaks materially through distribution and transaction costs."
+      }
+    },
+    "leading_indicators": [
+      "total stablecoin market cap",
+      "USDC ending and average circulation",
+      "USDC market share",
+      "NRM / RLDC margin",
+      "meaningful wallets / onchain volume",
+      "CPN TPV and monetization",
+      "Arc recurring economic activity"
+    ]
+  },
+  "business_quality": {
+    "strongest_positives": [
+      "strong corporate liquidity / no material debt",
+      "regulatory trust + institutional integration density + #2 stablecoin liquidity"
+    ],
+    "strongest_weaknesses": [
+      "reserve/rate dependence and distributor value leakage",
+      "meaningful dilution inventory and unproven recurring Arc/CPN economics"
+    ],
+    "dimensions": {
+      "profitability": {
+        "rating": "ADEQUATE",
+        "confidence": "HIGH",
+        "support": "LTM adjusted EBITDA ~$641M and RLDC ~$1.18B.",
+        "counter": "GAAP profitability and reported margin are distorted by large SBC and rate/mix sensitivity."
+      },
+      "incremental_roic": {
+        "rating": "UNKNOWN",
+        "confidence": "LOW",
+        "support": "Physical capital intensity is low and software/network products can scale.",
+        "counter": "Distributor spend is economically massive and platform-development ROI is not separately disclosed."
+      },
+      "reinvestment_runway": {
+        "rating": "STRONG",
+        "confidence": "MEDIUM",
+        "support": "Arc, CPN, StableFX, agent infrastructure, new markets and trust capabilities widen the addressable platform.",
+        "counter": "Most new monetization is early-stage and not yet evidenced at recurring scale."
+      },
+      "cash_conversion": {
+        "rating": "ADEQUATE",
+        "confidence": "MEDIUM",
+        "support": "2025 operating cash flow was ~$542M; analytical owner-FCF proxy ~$473M.",
+        "counter": "Working-capital/settlement timing and SBC make simple cash conversion ratios noisy."
+      },
+      "balance_sheet_resilience": {
+        "rating": "STRONG",
+        "confidence": "HIGH",
+        "support": "~$2.62B corporate liquidity at 2026-06-30 and no material debt; stablecoin-holder reserves are segregated and excluded from corporate cash.",
+        "counter": "Strategic investment and product build could consume cash; reserve assets are not corporate surplus."
+      },
+      "revenue_durability": {
+        "rating": "WEAK",
+        "confidence": "HIGH",
+        "support": "Reserve income is recurring while USDC remains in circulation.",
+        "counter": "~95% of Q2 2026 revenue/reserve income came from reserve income; level depends on rates and USDC balances."
+      },
+      "concentration_switching": {
+        "rating": "WEAK",
+        "confidence": "HIGH",
+        "support": "Broad 150+ distribution relationships reduce single-channel dependence at the network level.",
+        "counter": "Coinbase received $1.4B distribution costs in 2025 and retains strong bargaining power; precise partner mix is not disclosed."
+      },
+      "pricing_power": {
+        "rating": "WEAK",
+        "confidence": "MEDIUM",
+        "support": "Trust/liquidity can support economic retention.",
+        "counter": "Stablecoin par value is fixed and distribution economics are negotiated; product take rates remain undisclosed."
+      },
+      "capital_allocation": {
+        "rating": "ADEQUATE",
+        "confidence": "LOW",
+        "support": "Capital is being deployed into infrastructure, regulatory licenses and product expansion; no material financial debt.",
+        "counter": "Short public-market history and large equity compensation limit a robust per-share track record."
+      },
+      "dilution_discipline": {
+        "rating": "WEAK",
+        "confidence": "HIGH",
+        "support": "IPO-related 2025 SBC was partly one-off.",
+        "counter": "2026-06-30 filing shows 21.8M awards outstanding plus 37.5M plan shares and 8.1M ESPP shares available, before up to 4.5M warrant shares."
+      },
+      "per_share_compounding": {
+        "rating": "UNKNOWN",
+        "confidence": "LOW",
+        "support": "Underlying core economics are profitable and balance sheet is strong.",
+        "counter": "Public history is only since June 2025 and future dilution remains material."
+      }
+    }
+  },
+  "management": {
+    "ceo": "Jeremy Allaire, co-founder, Chairman & CEO since 2013",
+    "forecast_calibration": "INSUFFICIENT_HISTORY",
+    "calibration_comment": "Only ~one year of public-company guidance cycles. FY25 other revenue/RLDC guidance ultimately came in above or within revised ranges; 2026 guidance was raised largely because of a $242M Arc token presale with ~75% expected 2026 milestone recognition, so it is not evidence that recurring platform monetization has already matured.",
+    "governance": {
+      "class_b_votes_per_share": 5,
+      "aggregate_class_b_vote_cap": 0.3,
+      "allaire_voting_power_mar_2026": 0.239,
+      "all_directors_execs_voting_power_mar_2026": 0.314,
+      "class_b_sunset": "earliest of ownership/role conditions or 2030-06-05"
+    },
+    "capital_allocation_comment": "Balance sheet is strong and management is investing aggressively in Arc/CPN/regulatory infrastructure. Public per-share capital-allocation record remains too short for high confidence."
+  },
+  "accounting_quality": {
+    "rating": "MIXED",
+    "flags": [
+      "2025 GAAP results heavily affected by IPO-related SBC",
+      "Q1 2026 adjusted EBITDA definition changed to also exclude payroll taxes related to SBC; company restated comparable periods from Q2 2025",
+      "FY26 other-revenue guide includes ~ $180M expected Arc token presale milestone recognition, which should not be capitalized like recurring revenue",
+      "operating cash flow can be affected by settlement/working-capital timing"
+    ],
+    "positive": [
+      "reserve income is backed by short-duration reserve assets and is economically cash-like before distribution costs",
+      "company discloses RLDC/NRM and non-GAAP reconciliations"
+    ]
+  },
+  "financials": {
+    "annual_3y_b": [
+      {
+        "year": 2023,
+        "reserve_income": 1.430606,
+        "other_revenue": 0.01986,
+        "total_revenue_reserve": 1.450466,
+        "distribution_transaction_other_costs": 0.727724,
+        "rldc": 0.722742,
+        "rldc_margin": 0.4983,
+        "operating_expenses": 0.453214,
+        "operating_income": 0.269528,
+        "net_income_cont_ops": 0.271549,
+        "ocf": 0.139568,
+        "capitalized_software": 0.032862,
+        "long_lived_assets": 0.000654,
+        "owner_fcf_proxy": 0.106052,
+        "sbc": 0.107999
+      },
+      {
+        "year": 2024,
+        "reserve_income": 1.661084,
+        "other_revenue": 0.015169,
+        "total_revenue_reserve": 1.676253,
+        "distribution_transaction_other_costs": 1.017364,
+        "rldc": 0.658889,
+        "rldc_margin": 0.3931,
+        "operating_expenses": 0.491731,
+        "operating_income": 0.167158,
+        "net_income_cont_ops": 0.156991,
+        "ocf": 0.344576,
+        "capitalized_software": 0.039098,
+        "long_lived_assets": 0.018128,
+        "owner_fcf_proxy": 0.28735,
+        "sbc": 0.050134
+      },
+      {
+        "year": 2025,
+        "reserve_income": 2.636822,
+        "other_revenue": 0.10982,
+        "total_revenue_reserve": 2.746642,
+        "distribution_transaction_other_costs": 1.663651,
+        "rldc": 1.082991,
+        "rldc_margin": 0.3943,
+        "operating_expenses": 1.179426,
+        "operating_income": -0.096435,
+        "net_income_cont_ops": -0.069518,
+        "ocf": 0.542129,
+        "capitalized_software": 0.0562,
+        "long_lived_assets": 0.012432,
+        "owner_fcf_proxy": 0.473497,
+        "sbc": 0.566177
+      }
+    ],
+    "quarterly_8q_b": [
+      {
+        "q": "Q3 2024",
+        "reserve_income": 0.445,
+        "other_revenue": 0.001,
+        "total": 0.446,
+        "distribution_transaction_other_costs": 0.258,
+        "rldc": 0.188,
+        "rldc_margin": 0.42,
+        "nrm": null,
+        "adj_ebitda": null,
+        "adj_opex": null
+      },
+      {
+        "q": "Q4 2024",
+        "reserve_income": 0.433,
+        "other_revenue": 0.002,
+        "total": 0.435,
+        "distribution_transaction_other_costs": 0.305,
+        "rldc": 0.131,
+        "rldc_margin": 0.3,
+        "nrm": null,
+        "adj_ebitda": null,
+        "adj_opex": null
+      },
+      {
+        "q": "Q1 2025",
+        "reserve_income": 0.558,
+        "other_revenue": 0.021,
+        "total": 0.579,
+        "distribution_transaction_other_costs": 0.348,
+        "rldc": 0.231,
+        "rldc_margin": 0.4,
+        "nrm": null,
+        "adj_ebitda": null,
+        "adj_opex": null
+      },
+      {
+        "q": "Q2 2025",
+        "reserve_income": 0.634,
+        "other_revenue": 0.024,
+        "total": 0.658,
+        "distribution_transaction_other_costs": 0.407,
+        "rldc": 0.251,
+        "rldc_margin": 0.38,
+        "nrm": 0.359,
+        "adj_ebitda": 0.133,
+        "adj_opex": 0.119
+      },
+      {
+        "q": "Q3 2025",
+        "reserve_income": 0.711,
+        "other_revenue": 0.029,
+        "total": 0.74,
+        "distribution_transaction_other_costs": 0.448,
+        "rldc": 0.292,
+        "rldc_margin": 0.39,
+        "nrm": 0.371,
+        "adj_ebitda": 0.171,
+        "adj_opex": 0.123
+      },
+      {
+        "q": "Q4 2025",
+        "reserve_income": 0.733,
+        "other_revenue": 0.037,
+        "total": 0.77,
+        "distribution_transaction_other_costs": 0.461,
+        "rldc": 0.309,
+        "rldc_margin": 0.4,
+        "nrm": 0.372,
+        "adj_ebitda": 0.176,
+        "adj_opex": 0.133
+      },
+      {
+        "q": "Q1 2026",
+        "reserve_income": 0.653,
+        "other_revenue": 0.042,
+        "total": 0.694,
+        "distribution_transaction_other_costs": 0.407,
+        "rldc": 0.287,
+        "rldc_margin": 0.41,
+        "nrm": 0.379,
+        "adj_ebitda": 0.151,
+        "adj_opex": 0.136
+      },
+      {
+        "q": "Q2 2026",
+        "reserve_income": 0.668,
+        "other_revenue": 0.034,
+        "total": 0.701,
+        "distribution_transaction_other_costs": 0.412,
+        "rldc": 0.289,
+        "rldc_margin": 0.41,
+        "nrm": 0.385,
+        "adj_ebitda": 0.143,
+        "adj_opex": 0.146
+      }
+    ],
+    "ltm_b": {
+      "revenue_reserve": 2.905,
+      "rldc": 1.177,
+      "adj_ebitda": 0.641,
+      "current_ev_to_revenue": 6.375712564543889,
+      "current_ev_to_rldc": 15.73614698385726,
+      "current_ev_to_adj_ebitda": 28.89460998439937
+    },
+    "q2_2026": {
+      "usdc_eop_b": 73.3,
+      "usdc_eop_yoy": 0.19,
+      "average_usdc_yoy": 0.25,
+      "reserve_return_rate_yoy_change_bps": -66,
+      "onchain_tx_volume_t": 14.8,
+      "onchain_tx_yoy": 1.51,
+      "cprn_annualized_tpv_b": 14.7,
+      "cpn_institutions": 175,
+      "adjusted_ebitda_b": 0.143,
+      "adjusted_opex_b": 0.146
+    },
+    "balance_sheet_2026_06_30": {
+      "corporate_cash_b": 1.730126,
+      "corporate_held_stablecoin_segregated_cash_b": 0.889311,
+      "corporate_liquidity_b": 2.619437,
+      "stablecoin_holder_reserve_cash_b": 73.161172,
+      "shares_outstanding_m": 252.7,
+      "class_a_m": 233.5,
+      "class_b_m": 19.2,
+      "stock_awards_outstanding_m": 21.8,
+      "future_omnibus_plan_available_m": 37.5,
+      "espp_available_m": 8.1,
+      "counterparty_warrant_up_to_m": 4.5
+    },
+    "rate_sensitivity_10k": {
+      "base_avg_yield_2025_reference": 0.0364,
+      "hypothetical_rate_move_bps": 100,
+      "reserve_income_change_b": 0.756,
+      "distribution_transaction_cost_change_b": 0.369,
+      "net_pre_opex_change_b": 0.387
+    },
+    "guidance_fy26": {
+      "usdc_through_cycle_cagr_target": 0.4,
+      "other_revenue_b": [
+        0.31,
+        0.33
+      ],
+      "arc_token_recognition_in_other_revenue_approx_b": 0.18,
+      "recurring_product_other_revenue_baseline_b": [
+        0.13,
+        0.15
+      ],
+      "rldc_margin": [
+        0.417,
+        0.437
+      ],
+      "adjusted_opex_b": [
+        0.57,
+        0.585
+      ]
+    }
+  },
+  "market_expectations": {
+    "price": 83.66,
+    "analyst_revenue_consensus": {
+      "FY2026_b": 3.01,
+      "FY2027_b": 3.72,
+      "FY2027_growth": 0.2367
+    },
+    "analyst_price_targets": {
+      "average_approx": 101.07,
+      "low": 37,
+      "high": 243,
+      "interpretation": "extreme dispersion; useful as disagreement/positioning evidence, not valuation truth"
+    },
+    "current_market_valuation": {
+      "market_cap_b": 21.140881999999998,
+      "enterprise_value_b": 18.521444999999996,
+      "ev_ltm_revenue": 6.375712564543889,
+      "ev_ltm_rldc": 15.73614698385726,
+      "ev_ltm_adjusted_ebitda": 28.89460998439937
+    }
+  },
+  "variant_perceptions": [
+    {
+      "driver": "USDC growth",
+      "consensus": "Stablecoin adoption continues structurally; many investors anchor to management 40% through-cycle USDC growth.",
+      "our_view": "40% maps close to the favorable scenario, not the central scenario, because latest EOP growth is 19% YoY and current broad-market USDC is roughly flat versus Q2 end.",
+      "difference": "We require proof of reacceleration before treating 40% as central.",
+      "trigger": "two quarters >30% growth with stable/gaining share",
+      "wrong_signal": "market itself stagnates while USDC holds share — company-specific inference would be too harsh"
+    },
+    {
+      "driver": "Value capture",
+      "consensus": "USDC scale should create operating leverage.",
+      "our_view": "Scale only creates shareholder value if NRM survives partner bargaining; Coinbase’s 2025 distribution cost was $1.4B and exact partner economics remain opaque.",
+      "difference": "We underwrite NRM separately from USDC growth.",
+      "trigger": "NRM >=37% while USDC grows",
+      "wrong_signal": "lower NRM caused by deliberate, high-ROIC distribution that later raises recurring application economics"
+    },
+    {
+      "driver": "Arc/CPN optionality",
+      "consensus": "Arc/CPN can turn Circle into a higher-multiple platform.",
+      "our_view": "Usage and partner traction are real, but 2026 Arc revenue is dominated by a token presale milestone; recurring take rate is not proven.",
+      "difference": "We keep most Arc/CPN value in execution/option scenarios until recurring economics appear.",
+      "trigger": "post-launch fees/recurring revenue + CPN monetization disclosure",
+      "wrong_signal": "temporary low monetization during a rational land-grab that later produces defensible network economics"
+    }
+  ],
+  "mispricing_three_test": {
+    "status": "PARTIAL",
+    "why_mispriced": "The stock compresses several difficult variables — rates, USDC growth, distributor sharing and Arc optionality — into one multiple. Analysts disagree dramatically, suggesting expectations are not settled.",
+    "why_persistent": "Partner economics and post-launch Arc/CPN take rates are not fully disclosed; rate and regulatory paths remain exogenous.",
+    "why_converge": "Arc mainnet, 2026-2027 NRM/USDC data, CPN monetization and GENIUS implementation should reveal the economics.",
+    "confidence": "LOW-MEDIUM",
+    "caveat": "Wide disagreement is evidence of uncertainty, not proof of mispricing or direction."
+  },
+  "decision_critical_unknowns": [
+    {
+      "unknown_id": "U1",
+      "title": "Partner distribution economics and mix",
+      "decision_critical": true,
+      "valuation_sensitivity": "HIGH",
+      "evidence_strength": "LOW",
+      "current_plausible_range": "NRM modeled 27%-40% by scenario; exact partner take rates are not public",
+      "resolution_catalyst": "quarterly NRM/RLDC, platform mix disclosures, material contract amendments",
+      "expected_resolution_window": "2026-2027",
+      "can_wait_for_evidence": false,
+      "linked_rc": [
+        "RC-005"
+      ],
+      "linked_scenarios": [
+        "all"
+      ]
+    },
+    {
+      "unknown_id": "U2",
+      "title": "Arc recurring monetization after token presale",
+      "decision_critical": true,
+      "valuation_sensitivity": "HIGH",
+      "evidence_strength": "LOW",
+      "current_plausible_range": "2030 recurring other revenue modeled $0.3B-$2.8B across scenarios; Arc-specific fee split undisclosed",
+      "resolution_catalyst": "Sep-2026 mainnet, post-launch fees/usage, recurring revenue disclosure",
+      "expected_resolution_window": "Q4 2026-2027",
+      "can_wait_for_evidence": false,
+      "linked_rc": [
+        "RC-008"
+      ],
+      "linked_scenarios": [
+        "all"
+      ]
+    },
+    {
+      "unknown_id": "U3",
+      "title": "CPN take rate and monetized volume",
+      "decision_critical": true,
+      "valuation_sensitivity": "HIGH",
+      "evidence_strength": "LOW",
+      "current_plausible_range": "CPN TPV/enrollment disclosed; take rate not disclosed",
+      "resolution_catalyst": "product revenue segmentation or fee/take-rate disclosure",
+      "expected_resolution_window": "2027",
+      "can_wait_for_evidence": true,
+      "linked_rc": [
+        "RC-009"
+      ],
+      "linked_scenarios": [
+        "all"
+      ]
+    },
+    {
+      "unknown_id": "U4",
+      "title": "Sustainable USDC growth and market share",
+      "decision_critical": true,
+      "valuation_sensitivity": "HIGH",
+      "evidence_strength": "MEDIUM",
+      "current_plausible_range": "2030 average USDC modeled $115B-$500B; management long-run target maps near favorable scenario",
+      "resolution_catalyst": "2027-2028 USDC growth, market-share and meaningful-wallet data",
+      "expected_resolution_window": "2027-2028",
+      "can_wait_for_evidence": false,
+      "linked_rc": [
+        "RC-003"
+      ],
+      "linked_scenarios": [
+        "all"
+      ]
+    },
+    {
+      "unknown_id": "U5",
+      "title": "Future dilution from awards/ESPP/warrants",
+      "decision_critical": true,
+      "valuation_sensitivity": "MEDIUM",
+      "evidence_strength": "MEDIUM",
+      "current_plausible_range": "2030 diluted shares modeled 292M-305M versus 252.7M latest filed outstanding",
+      "resolution_catalyst": "quarterly share count, SBC, award grants/vesting",
+      "expected_resolution_window": "quarterly",
+      "can_wait_for_evidence": true,
+      "linked_rc": [
+        "RC-012"
+      ],
+      "linked_scenarios": [
+        "all"
+      ]
+    },
+    {
+      "unknown_id": "U6",
+      "title": "GENIUS final-rule competitive response",
+      "decision_critical": true,
+      "valuation_sensitivity": "MEDIUM",
+      "evidence_strength": "MEDIUM",
+      "current_plausible_range": "directionally favorable for legitimacy but potentially unfavorable for commoditization",
+      "resolution_catalyst": "final rules, qualified-issuer approvals, bank launches",
+      "expected_resolution_window": "2026-2027",
+      "can_wait_for_evidence": true,
+      "linked_rc": [
+        "RC-002",
+        "RC-010"
+      ],
+      "linked_scenarios": [
+        "all"
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Adverse / Rent Compression",
+      "reference_class": "PRIMARY_SOURCE_CEILING: no reliable public base-rate set for a first-of-kind listed regulated stablecoin issuer/platform",
+      "prior_range": [
+        0.2,
+        0.4
+      ],
+      "positive_updates": [
+        "federal and New York trust approvals deepen regulatory credibility",
+        "USDC remains the #2 stablecoin by supply with broad institutional distribution",
+        "CPN and Arc show real pre-monetization usage/partner traction"
+      ],
+      "negative_updates": [
+        "Q2 USDC ending circulation growth slowed to 19% YoY versus 40% long-run management target",
+        "reserve income is highly rate-sensitive and distributor economics absorb a large share of gross reserve income",
+        "Arc recurring economics and CPN take rate remain undisclosed/unproven"
+      ],
+      "posterior_range": [
+        0.2,
+        0.35
+      ],
+      "point_probability": 0.25,
+      "probability_confidence": "LOW",
+      "operating_path": {
+        "forecast": [
+          {
+            "year": 2026,
+            "avg_usdc_b": 75,
+            "reserve_yield": 0.0355,
+            "nrm": 0.42,
+            "recurring_other_revenue_b": 0.14,
+            "reserve_income_b": 2.6625,
+            "normalized_rldc_b": 1.22325,
+            "adjusted_opex_b": 0.58,
+            "normalized_adj_ebitda_b": 0.64325
+          },
+          {
+            "year": 2027,
+            "avg_usdc_b": 80,
+            "reserve_yield": 0.03,
+            "nrm": 0.35,
+            "recurring_other_revenue_b": 0.17,
+            "reserve_income_b": 2.4,
+            "normalized_rldc_b": 0.9675,
+            "adjusted_opex_b": 0.65,
+            "normalized_adj_ebitda_b": 0.3175
+          },
+          {
+            "year": 2028,
+            "avg_usdc_b": 90,
+            "reserve_yield": 0.025,
+            "nrm": 0.31,
+            "recurring_other_revenue_b": 0.2,
+            "reserve_income_b": 2.25,
+            "normalized_rldc_b": 0.8475,
+            "adjusted_opex_b": 0.7,
+            "normalized_adj_ebitda_b": 0.1475
+          },
+          {
+            "year": 2029,
+            "avg_usdc_b": 100,
+            "reserve_yield": 0.0225,
+            "nrm": 0.29,
+            "recurring_other_revenue_b": 0.25,
+            "reserve_income_b": 2.25,
+            "normalized_rldc_b": 0.84,
+            "adjusted_opex_b": 0.75,
+            "normalized_adj_ebitda_b": 0.09
+          },
+          {
+            "year": 2030,
+            "avg_usdc_b": 115,
+            "reserve_yield": 0.0225,
+            "nrm": 0.27,
+            "recurring_other_revenue_b": 0.3,
+            "reserve_income_b": 2.5875,
+            "normalized_rldc_b": 0.923625,
+            "adjusted_opex_b": 0.8,
+            "normalized_adj_ebitda_b": 0.123625
+          }
+        ],
+        "terminal_usdc_cagr_from_q2_2026": 0.10871131934195022,
+        "other_contribution_margin": 0.75,
+        "terminal_ev_rldc_multiple": 6.0,
+        "terminal_diluted_shares_m": 300,
+        "funding_execution_drag_b": 0.8,
+        "formation_conditions": [
+          "USDC grows only ~11% CAGR to 2030",
+          "short rates normalize lower",
+          "distribution partners capture more reserve economics",
+          "Arc/CPN add little recurring contribution"
+        ],
+        "break_conditions": [
+          "USDC reaccelerates >25% with stable NRM",
+          "Arc/CPN recurring monetization becomes material"
+        ]
+      },
+      "terminal_enterprise_value_b": 5.54175,
+      "terminal_equity_value_b": 7.361187,
+      "per_share_value": 24.53729,
+      "annualized_irr": -0.24501409643375116
+    },
+    {
+      "name": "Central / Regulated Core Scales",
+      "reference_class": "PRIMARY_SOURCE_CEILING: no reliable public base-rate set for a first-of-kind listed regulated stablecoin issuer/platform",
+      "prior_range": [
+        0.3,
+        0.5
+      ],
+      "positive_updates": [
+        "federal and New York trust approvals deepen regulatory credibility",
+        "USDC remains the #2 stablecoin by supply with broad institutional distribution",
+        "CPN and Arc show real pre-monetization usage/partner traction"
+      ],
+      "negative_updates": [
+        "Q2 USDC ending circulation growth slowed to 19% YoY versus 40% long-run management target",
+        "reserve income is highly rate-sensitive and distributor economics absorb a large share of gross reserve income",
+        "Arc recurring economics and CPN take rate remain undisclosed/unproven"
+      ],
+      "posterior_range": [
+        0.35,
+        0.55
+      ],
+      "point_probability": 0.45,
+      "probability_confidence": "LOW",
+      "operating_path": {
+        "forecast": [
+          {
+            "year": 2026,
+            "avg_usdc_b": 75,
+            "reserve_yield": 0.0355,
+            "nrm": 0.42,
+            "recurring_other_revenue_b": 0.14,
+            "reserve_income_b": 2.6625,
+            "normalized_rldc_b": 1.23305,
+            "adjusted_opex_b": 0.58,
+            "normalized_adj_ebitda_b": 0.65305
+          },
+          {
+            "year": 2027,
+            "avg_usdc_b": 95,
+            "reserve_yield": 0.0325,
+            "nrm": 0.39,
+            "recurring_other_revenue_b": 0.25,
+            "reserve_income_b": 3.0875,
+            "normalized_rldc_b": 1.409125,
+            "adjusted_opex_b": 0.68,
+            "normalized_adj_ebitda_b": 0.729125
+          },
+          {
+            "year": 2028,
+            "avg_usdc_b": 125,
+            "reserve_yield": 0.03,
+            "nrm": 0.37,
+            "recurring_other_revenue_b": 0.38,
+            "reserve_income_b": 3.75,
+            "normalized_rldc_b": 1.6991,
+            "adjusted_opex_b": 0.78,
+            "normalized_adj_ebitda_b": 0.9191
+          },
+          {
+            "year": 2029,
+            "avg_usdc_b": 155,
+            "reserve_yield": 0.0275,
+            "nrm": 0.35,
+            "recurring_other_revenue_b": 0.55,
+            "reserve_income_b": 4.2625,
+            "normalized_rldc_b": 1.942875,
+            "adjusted_opex_b": 0.9,
+            "normalized_adj_ebitda_b": 1.042875
+          },
+          {
+            "year": 2030,
+            "avg_usdc_b": 195,
+            "reserve_yield": 0.0275,
+            "nrm": 0.34,
+            "recurring_other_revenue_b": 0.75,
+            "reserve_income_b": 5.3625,
+            "normalized_rldc_b": 2.43825,
+            "adjusted_opex_b": 1.05,
+            "normalized_adj_ebitda_b": 1.38825
+          }
+        ],
+        "terminal_usdc_cagr_from_q2_2026": 0.2513212793542503,
+        "other_contribution_margin": 0.82,
+        "terminal_ev_rldc_multiple": 9.5,
+        "terminal_diluted_shares_m": 292,
+        "funding_execution_drag_b": 0.3,
+        "formation_conditions": [
+          "USDC grows ~25% CAGR to 2030",
+          "reserve yield settles near 2.75%",
+          "NRM compresses moderately but remains mid-30s",
+          "CPN/Arc become real but not dominant revenue streams"
+        ],
+        "break_conditions": [
+          "two-year USDC growth remains <15%",
+          "NRM trends below 30%",
+          "non-reserve recurring monetization fails to emerge"
+        ]
+      },
+      "terminal_enterprise_value_b": 23.163375000000002,
+      "terminal_equity_value_b": 25.482812000000003,
+      "per_share_value": 87.26990410958905,
+      "annualized_irr": 0.009726974458214244
+    },
+    {
+      "name": "Favorable / Network Expansion",
+      "reference_class": "PRIMARY_SOURCE_CEILING: no reliable public base-rate set for a first-of-kind listed regulated stablecoin issuer/platform",
+      "prior_range": [
+        0.15,
+        0.3
+      ],
+      "positive_updates": [
+        "federal and New York trust approvals deepen regulatory credibility",
+        "USDC remains the #2 stablecoin by supply with broad institutional distribution",
+        "CPN and Arc show real pre-monetization usage/partner traction"
+      ],
+      "negative_updates": [
+        "Q2 USDC ending circulation growth slowed to 19% YoY versus 40% long-run management target",
+        "reserve income is highly rate-sensitive and distributor economics absorb a large share of gross reserve income",
+        "Arc recurring economics and CPN take rate remain undisclosed/unproven"
+      ],
+      "posterior_range": [
+        0.18,
+        0.32
+      ],
+      "point_probability": 0.25,
+      "probability_confidence": "LOW",
+      "operating_path": {
+        "forecast": [
+          {
+            "year": 2026,
+            "avg_usdc_b": 75,
+            "reserve_yield": 0.0355,
+            "nrm": 0.42,
+            "recurring_other_revenue_b": 0.14,
+            "reserve_income_b": 2.6625,
+            "normalized_rldc_b": 1.23725,
+            "adjusted_opex_b": 0.58,
+            "normalized_adj_ebitda_b": 0.65725
+          },
+          {
+            "year": 2027,
+            "avg_usdc_b": 110,
+            "reserve_yield": 0.0325,
+            "nrm": 0.4,
+            "recurring_other_revenue_b": 0.35,
+            "reserve_income_b": 3.575,
+            "normalized_rldc_b": 1.7275,
+            "adjusted_opex_b": 0.78,
+            "normalized_adj_ebitda_b": 0.9475
+          },
+          {
+            "year": 2028,
+            "avg_usdc_b": 160,
+            "reserve_yield": 0.03,
+            "nrm": 0.39,
+            "recurring_other_revenue_b": 0.65,
+            "reserve_income_b": 4.8,
+            "normalized_rldc_b": 2.4245,
+            "adjusted_opex_b": 1.0,
+            "normalized_adj_ebitda_b": 1.4245
+          },
+          {
+            "year": 2029,
+            "avg_usdc_b": 230,
+            "reserve_yield": 0.03,
+            "nrm": 0.38,
+            "recurring_other_revenue_b": 1.0,
+            "reserve_income_b": 6.9,
+            "normalized_rldc_b": 3.472,
+            "adjusted_opex_b": 1.2,
+            "normalized_adj_ebitda_b": 2.272
+          },
+          {
+            "year": 2030,
+            "avg_usdc_b": 325,
+            "reserve_yield": 0.03,
+            "nrm": 0.37,
+            "recurring_other_revenue_b": 1.5,
+            "reserve_income_b": 9.75,
+            "normalized_rldc_b": 4.8825,
+            "adjusted_opex_b": 1.45,
+            "normalized_adj_ebitda_b": 3.4325
+          }
+        ],
+        "terminal_usdc_cagr_from_q2_2026": 0.40670609578278993,
+        "other_contribution_margin": 0.85,
+        "terminal_ev_rldc_multiple": 12.0,
+        "terminal_diluted_shares_m": 296,
+        "funding_execution_drag_b": 0.0,
+        "formation_conditions": [
+          "USDC roughly achieves management 40% through-cycle CAGR",
+          "NRM stays high-30s despite distributor bargaining",
+          "Arc/CPN create meaningful recurring contribution",
+          "regulatory trust compounds into institutional adoption"
+        ],
+        "break_conditions": [
+          "market share erosion offsets industry growth",
+          "partner economics deteriorate",
+          "Arc usage does not convert to recurring economics"
+        ]
+      },
+      "terminal_enterprise_value_b": 58.59,
+      "terminal_equity_value_b": 61.209437,
+      "per_share_value": 206.78863851351352,
+      "annualized_irr": 0.230422450256486
+    },
+    {
+      "name": "Breakout / Platform Optionality",
+      "reference_class": "PRIMARY_SOURCE_CEILING: no reliable public base-rate set for a first-of-kind listed regulated stablecoin issuer/platform",
+      "prior_range": [
+        0.03,
+        0.12
+      ],
+      "positive_updates": [
+        "federal and New York trust approvals deepen regulatory credibility",
+        "USDC remains the #2 stablecoin by supply with broad institutional distribution",
+        "CPN and Arc show real pre-monetization usage/partner traction"
+      ],
+      "negative_updates": [
+        "Q2 USDC ending circulation growth slowed to 19% YoY versus 40% long-run management target",
+        "reserve income is highly rate-sensitive and distributor economics absorb a large share of gross reserve income",
+        "Arc recurring economics and CPN take rate remain undisclosed/unproven"
+      ],
+      "posterior_range": [
+        0.03,
+        0.08
+      ],
+      "point_probability": 0.05,
+      "probability_confidence": "LOW",
+      "operating_path": {
+        "forecast": [
+          {
+            "year": 2026,
+            "avg_usdc_b": 75,
+            "reserve_yield": 0.0355,
+            "nrm": 0.42,
+            "recurring_other_revenue_b": 0.14,
+            "reserve_income_b": 2.6625,
+            "normalized_rldc_b": 1.24145,
+            "adjusted_opex_b": 0.58,
+            "normalized_adj_ebitda_b": 0.66145
+          },
+          {
+            "year": 2027,
+            "avg_usdc_b": 125,
+            "reserve_yield": 0.035,
+            "nrm": 0.41,
+            "recurring_other_revenue_b": 0.5,
+            "reserve_income_b": 4.375,
+            "normalized_rldc_b": 2.23375,
+            "adjusted_opex_b": 0.9,
+            "normalized_adj_ebitda_b": 1.33375
+          },
+          {
+            "year": 2028,
+            "avg_usdc_b": 200,
+            "reserve_yield": 0.0325,
+            "nrm": 0.41,
+            "recurring_other_revenue_b": 1.0,
+            "reserve_income_b": 6.5,
+            "normalized_rldc_b": 3.545,
+            "adjusted_opex_b": 1.25,
+            "normalized_adj_ebitda_b": 2.295
+          },
+          {
+            "year": 2029,
+            "avg_usdc_b": 320,
+            "reserve_yield": 0.0325,
+            "nrm": 0.4,
+            "recurring_other_revenue_b": 1.7,
+            "reserve_income_b": 10.4,
+            "normalized_rldc_b": 5.656,
+            "adjusted_opex_b": 1.6,
+            "normalized_adj_ebitda_b": 4.056
+          },
+          {
+            "year": 2030,
+            "avg_usdc_b": 500,
+            "reserve_yield": 0.0325,
+            "nrm": 0.4,
+            "recurring_other_revenue_b": 2.8,
+            "reserve_income_b": 16.25,
+            "normalized_rldc_b": 8.964,
+            "adjusted_opex_b": 2.0,
+            "normalized_adj_ebitda_b": 6.964
+          }
+        ],
+        "terminal_usdc_cagr_from_q2_2026": 0.5526461883332869,
+        "other_contribution_margin": 0.88,
+        "terminal_ev_rldc_multiple": 14.0,
+        "terminal_diluted_shares_m": 305,
+        "funding_execution_drag_b": 0.0,
+        "formation_conditions": [
+          "Circle becomes a default institutional stablecoin/settlement layer",
+          "USDC grows >55% CAGR",
+          "Arc and CPN monetize at platform scale",
+          "profit-pool leakage stays contained"
+        ],
+        "break_conditions": [
+          "Arc is just another chain",
+          "CPN take rate remains economically trivial",
+          "USDC growth or NRM fails to support platform premium"
+        ]
+      },
+      "terminal_enterprise_value_b": 125.49600000000001,
+      "terminal_equity_value_b": 128.11543700000001,
+      "per_share_value": 420.0506131147542,
+      "annualized_irr": 0.4473646478049349
+    }
+  ],
+  "valuation": {
+    "mode": "B — Hybrid",
+    "engine": "RLDC-based expectation-driven terminal valuation with explicit USDC/rate/NRM/other-revenue/opex paths; current corporate liquidity added; dilution explicit in terminal shares; scenario terminal EV/RLDC multiples are disclosed assumptions, not peer-derived preset weights.",
+    "current_price": 83.66,
+    "current_ev_b": 18.521444999999996,
+    "current_ev_ltm_rldc": 15.73614698385726,
+    "base_fair_value_range": [
+      75,
+      105
+    ],
+    "base_point_value": 87.26990410958905,
+    "scenario_value_range": [
+      24.53729,
+      420.0506131147542
+    ],
+    "modeling_boundaries": [
+      "No cumulative future FCF is credited to terminal cash; current corporate liquidity is held constant except scenario funding drag.",
+      "Stablecoin-holder reserves are excluded from corporate cash.",
+      "Future dilution is embedded in scenario terminal share counts.",
+      "One-time Arc token recognition is excluded from recurring-other-revenue terminal assumptions.",
+      "Terminal multiples are judgmental assumptions tied to terminal growth/quality, not preset peer weights."
+    ]
+  },
+  "return_distribution": {
+    "expected_irr": 0.023097459352126867,
+    "expected_irr_label": "LOW-CONFIDENCE EXPECTED IRR (probability-weighted scenario IRRs)",
+    "probability_weighted_future_value": 118.10546963343117,
+    "irr_of_probability_weighted_future_value": 0.0822168379005983,
+    "median_irr_or_proxy": 0.009726974458214244,
+    "probability_negative_return": 0.25,
+    "permanent_loss_definition": "2030 per-share value <= 60% of current price, or durable structural loss of reserve/distribution economics. In the discrete model only the Adverse path qualifies.",
+    "probability_permanent_loss": 0.25,
+    "tail_loss_irr": -0.24501409643375116,
+    "benchmark_expected_return": null,
+    "benchmark_reason": "No project-configured benchmark/hurdle was supplied; 8%-12% reverse grids are analytical references only.",
+    "expected_excess_irr": null,
+    "time_to_value_years": 4.3641341546885695,
+    "probability_sensitivity": "FRAGILE",
+    "sensitivity_stress": {
+      "original_probabilities": [
+        0.25,
+        0.45,
+        0.25,
+        0.05
+      ],
+      "stress_probabilities": [
+        0.35,
+        0.45,
+        0.15,
+        0.05
+      ],
+      "stressed_expected_irr": -0.024446195316896843,
+      "stressed_probability_weighted_future_value": 99.88033478207981,
+      "stressed_irr_of_probability_weighted_future_value": 0.04144213093052329,
+      "favorable_to_adverse_shift_to_zero_expected_irr": 0.04858158152317145
+    },
+    "hurdle_break_probability_mix": {
+      "nominal_expected_irr_zero": "Move ~4.9 percentage points from Favorable to Adverse from the base probability set."
+    }
+  },
+  "reverse_expectations": {
+    "central_assumption_stack": {
+      "terminal_ev_rldc": 9.5,
+      "terminal_diluted_shares_m": 292,
+      "reserve_yield": 0.0275,
+      "nrm": 0.34,
+      "recurring_other_revenue_b": 0.75,
+      "other_contribution_margin": 0.82,
+      "corporate_liquidity_b": 2.619437,
+      "funding_execution_drag_b": 0.3
+    },
+    "required_2030_grid": [
+      {
+        "required_annualized_return": 0.0,
+        "2030_price_required": 83.66,
+        "required_2030_equity_b": 24.42872,
+        "required_2030_ev_b": 22.109282999999998,
+        "required_2030_rldc_b": 2.327292947368421,
+        "required_2030_avg_usdc_b": 183.1329355474247
+      },
+      {
+        "required_annualized_return": 0.08,
+        "2030_price_required": 117.05328684288668,
+        "required_2030_equity_b": 34.179559758122906,
+        "required_2030_ev_b": 31.860122758122905,
+        "required_2030_rldc_b": 3.35369713243399,
+        "required_2030_avg_usdc_b": 292.90878421753905
+      },
+      {
+        "required_annualized_return": 0.1,
+        "2030_price_required": 126.81221586443144,
+        "required_2030_equity_b": 37.02916703241398,
+        "required_2030_ev_b": 34.70973003241398,
+        "required_2030_rldc_b": 3.653655792885682,
+        "required_2030_avg_usdc_b": 324.9899243728002
+      },
+      {
+        "required_annualized_return": 0.12,
+        "2030_price_required": 137.18666988078544,
+        "required_2030_equity_b": 40.05850760518935,
+        "required_2030_ev_b": 37.73907060518935,
+        "required_2030_rldc_b": 3.9725337479146683,
+        "required_2030_avg_usdc_b": 359.09451849354735
+      }
+    ],
+    "interpretation": "Under the central margin/multiple stack, merely preserving today’s price requires ~183B average USDC in 2030. A 10% annualized price return requires ~325B, very close to the Favorable scenario and roughly the economics implied by management’s 40% through-cycle USDC ambition."
+  },
+  "catalysts": [
+    {
+      "when": "2026-09-16",
+      "event": "Arc public mainnet launch",
+      "bull": "mainnet launches on time with validator/institution usage converting into repeat activity",
+      "bear": "launch slips or activity remains testnet/presale-driven",
+      "sensitivity": "HIGH"
+    },
+    {
+      "when": "Q3 2026 earnings",
+      "event": "USDC growth / NRM / Arc revenue quality",
+      "bull": "USDC reaccelerates while NRM remains ~high-30s+ and ex-token other revenue grows",
+      "bear": "USDC remains sub-20% and NRM compresses despite one-time Arc recognition",
+      "sensitivity": "HIGH"
+    },
+    {
+      "when": "Q4 2026-Q1 2027",
+      "event": "Post-launch Arc recurring monetization evidence",
+      "bull": "fees, applications, StableFX/agent activity create recurring revenue outside token presale",
+      "bear": "usage metrics rise but recurring economics remain immaterial",
+      "sensitivity": "HIGH"
+    },
+    {
+      "when": "2026-2027",
+      "event": "GENIUS final implementation milestones / new issuer approvals",
+      "bull": "regulated institutional demand expands faster than new competition",
+      "bear": "rules standardize issuance and banks/platforms internalize economics",
+      "sensitivity": "HIGH"
+    },
+    {
+      "when": "2027",
+      "event": "CPN monetization disclosure",
+      "bull": "TPV growth is paired with measurable revenue/take rate",
+      "bear": "large TPV has negligible economics or requires heavy incentives",
+      "sensitivity": "MEDIUM"
+    },
+    {
+      "when": "quarterly",
+      "event": "Dilution / SBC / award grants",
+      "bull": "share growth stays contained while FCF grows faster",
+      "bear": "double-digit annualized share growth offsets enterprise-value creation",
+      "sensitivity": "MEDIUM"
+    }
+  ],
+  "kpi_tripwires": [
+    {
+      "kpi": "USDC YoY growth / market share",
+      "current": "Q2 EOP +19% YoY; broad-market USDC ~$72.9B",
+      "green": ">30% growth with stable/gaining share for 2 quarters",
+      "yellow": "15%-30% or share drifts lower",
+      "red": "<10% for 2 quarters or material persistent share loss",
+      "frequency": "quarterly/monthly",
+      "source_ids": [
+        "S01",
+        "S12"
+      ]
+    },
+    {
+      "kpi": "NRM / RLDC margin",
+      "current": "Q2 NRM ~38.5%; RLDC margin ~41%",
+      "green": "NRM >=37% while USDC grows",
+      "yellow": "NRM 30%-37%",
+      "red": "NRM <30% without offsetting high-quality recurring revenue",
+      "frequency": "quarterly",
+      "source_ids": [
+        "S02"
+      ]
+    },
+    {
+      "kpi": "Recurring other revenue ex-token",
+      "current": "FY26 product baseline ~ $130-$150M ex ~$180M expected Arc-token recognition",
+      "green": "recurring base compounds >40% and mix broadens",
+      "yellow": "20%-40% growth / unclear recurring split",
+      "red": "post-launch revenue remains token/milestone dominated into 2027",
+      "frequency": "quarterly",
+      "source_ids": [
+        "S03"
+      ]
+    },
+    {
+      "kpi": "CPN usage-to-economics",
+      "current": "$14.7B annualized TPV; 175 institutions enrolled",
+      "green": "TPV >2x with disclosed/visible recurring monetization",
+      "yellow": "usage grows but economics remain opaque",
+      "red": "TPV/enrollment stalls or monetization is economically trivial",
+      "frequency": "quarterly",
+      "source_ids": [
+        "S01"
+      ]
+    },
+    {
+      "kpi": "Arc post-launch adoption",
+      "current": "100+ builders/validators; testnet 502M transactions / 2.8M wallets",
+      "green": "mainnet institutions transact repeatedly and apps generate fees",
+      "yellow": "headline partners but limited economic usage",
+      "red": "launch delay / weak activity / no recurring economics",
+      "frequency": "monthly/quarterly",
+      "source_ids": [
+        "S01",
+        "S04"
+      ]
+    },
+    {
+      "kpi": "Diluted share trajectory",
+      "current": "252.7M filed shares at Q2; large equity pools remain",
+      "green": "annualized growth <5% with FCF/share rising",
+      "yellow": "5%-10% annualized",
+      "red": ">10% annualized without clear per-share FCF step-up",
+      "frequency": "quarterly",
+      "source_ids": [
+        "S04",
+        "S06"
+      ]
+    }
+  ],
+  "falsifiers": [
+    {
+      "thesis": "Scale and regulatory trust can protect issuer economics",
+      "statement": "If USDC grows materially but NRM falls below ~30% for multiple quarters without higher-quality recurring revenue offset, the value-capture thesis is wrong."
+    },
+    {
+      "thesis": "Arc can diversify Circle beyond reserve income",
+      "statement": "If post-mainnet recurring other revenue remains immaterial and Arc economics are still dominated by one-time token/milestone recognition through 2027, diversification is not proven."
+    },
+    {
+      "thesis": "Regulation is a net structural advantage",
+      "statement": "If newly regulated issuers materially gain share while Circle distribution costs rise faster than reserve income, regulatory clarity is commoditizing issuance faster than Circle monetizes trust."
+    },
+    {
+      "thesis": "40% through-cycle USDC growth is attainable",
+      "statement": "If 2027-2028 USDC growth remains below ~20% despite a healthy stablecoin market, the 40% through-cycle growth assumption should be abandoned."
+    },
+    {
+      "thesis": "Enterprise value can compound faster than dilution",
+      "statement": "If diluted shares compound >10% annually without faster FCF/share growth, per-share compounding is falsified even if platform metrics improve."
+    }
+  ],
+  "red_team": {
+    "premortems": [
+      {
+        "path": "Rate normalization + slow USDC growth",
+        "early_sign": "Fed easing while USDC remains sub-20% growth",
+        "kpi": "reserve yield, USDC average balance, NRM"
+      },
+      {
+        "path": "Distributor captures economics",
+        "early_sign": "USDC grows but NRM/RLDC margin falls",
+        "kpi": "NRM, Coinbase/other distribution cost, platform mix"
+      },
+      {
+        "path": "Arc excitement does not become recurring economics",
+        "early_sign": "high activity/partners but other revenue stays token/milestone driven",
+        "kpi": "ex-token other revenue, Arc fees/usage"
+      },
+      {
+        "path": "Dilution offsets enterprise-value creation",
+        "early_sign": "share count grows >10% annualized without faster FCF/share",
+        "kpi": "diluted shares, SBC, FCF/share"
+      }
+    ],
+    "base_rate_comparison": {
+      "status": "PRIMARY_SOURCE_CEILING",
+      "reason": "No reliable public reference class combines a newly listed regulated stablecoin issuer, large reserve float economics, distributor-sharing contracts and proprietary L1/application optionality. Probability confidence is therefore LOW."
+    },
+    "false_conservatism_checks": [
+      "Arc/CPN could monetize much faster than current recurring evidence suggests, making the 5% breakout probability too low.",
+      "Regulatory trust and bank charters may create stronger-than-modeled winner-take-most institutional liquidity effects, protecting NRM despite new issuers."
+    ]
+  },
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "h1_promise": "Define Circle economic model and shareholder transmission",
+      "module": "A/D",
+      "materiality": 5,
+      "decision_critical": true,
+      "valuation_sensitivity": "HIGH",
+      "h2_status": "COMPLETE",
+      "primary_evidence": "10-K/Q2 filings",
+      "counter_evidence": "See manuscript counter-evidence and unknowns where applicable",
+      "material_unknown": null,
+      "evidence_strength": "HIGH",
+      "ceiling_impact": "NONE",
+      "canonical_chapter": "0,3,4",
+      "h3_treatment": "Main if decision-relevant; audit detail in Appendix",
+      "h3_locator": "0,3,4"
+    },
+    {
+      "rc_id": "RC-002",
+      "h1_promise": "Underwrite industry structure, lifecycle and capital cycle B1-B6",
+      "module": "B",
+      "materiality": 5,
+      "decision_critical": true,
+      "valuation_sensitivity": "HIGH",
+      "h2_status": "COMPLETE",
+      "primary_evidence": "OCC/Fed/DefiLlama/Circle",
+      "counter_evidence": "See manuscript counter-evidence and unknowns where applicable",
+      "material_unknown": null,
+      "evidence_strength": "MEDIUM",
+      "ceiling_impact": "NONE",
+      "canonical_chapter": "1",
+      "h3_treatment": "Main if decision-relevant; audit detail in Appendix",
+      "h3_locator": "1"
+    },
+    {
+      "rc_id": "RC-003",
+      "h1_promise": "Test USDC demand growth, share and leading indicators",
+      "module": "B/K",
+      "materiality": 5,
+      "decision_critical": true,
+      "valuation_sensitivity": "HIGH",
+      "h2_status": "COMPLETE",
+      "primary_evidence": "Q2 results/DefiLlama",
+      "counter_evidence": "See manuscript counter-evidence and unknowns where applicable",
+      "material_unknown": null,
+      "evidence_strength": "MEDIUM",
+      "ceiling_impact": "NONE",
+      "canonical_chapter": "1,4,5",
+      "h3_treatment": "Main if decision-relevant; audit detail in Appendix",
+      "h3_locator": "1,4,5"
+    },
+    {
+      "rc_id": "RC-004",
+      "h1_promise": "Quantify reserve-return rate sensitivity",
+      "module": "H",
+      "materiality": 5,
+      "decision_critical": true,
+      "valuation_sensitivity": "HIGH",
+      "h2_status": "COMPLETE",
+      "primary_evidence": "2025 10-K/Fed",
+      "counter_evidence": "See manuscript counter-evidence and unknowns where applicable",
+      "material_unknown": null,
+      "evidence_strength": "HIGH",
+      "ceiling_impact": "NONE",
+      "canonical_chapter": "4,5",
+      "h3_treatment": "Main if decision-relevant; audit detail in Appendix",
+      "h3_locator": "4,5"
+    },
+    {
+      "rc_id": "RC-005",
+      "h1_promise": "Quantify partner/distributor economics and value leakage",
+      "module": "F/G",
+      "materiality": 5,
+      "decision_critical": true,
+      "valuation_sensitivity": "HIGH",
+      "h2_status": "PRIMARY_SOURCE_CEILING",
+      "primary_evidence": "2025 10-K/Q2 transcript",
+      "counter_evidence": "See manuscript counter-evidence and unknowns where applicable",
+      "material_unknown": "Coinbase costs disclosed and contract mechanics described, but precise current partner-by-partner take rates/mix remain private.",
+      "evidence_strength": "LOW",
+      "ceiling_impact": "HIGH",
+      "canonical_chapter": "3,5,6",
+      "h3_treatment": "Main if decision-relevant; audit detail in Appendix",
+      "h3_locator": "3,5,6"
+    },
+    {
+      "rc_id": "RC-006",
+      "h1_promise": "Assess management Promise→Delivery and forecast calibration",
+      "module": "C",
+      "materiality": 4,
+      "decision_critical": false,
+      "valuation_sensitivity": "MEDIUM",
+      "h2_status": "COMPLETE",
+      "primary_evidence": "earnings history/proxy",
+      "counter_evidence": "See manuscript counter-evidence and unknowns where applicable",
+      "material_unknown": null,
+      "evidence_strength": "MEDIUM",
+      "ceiling_impact": "NONE",
+      "canonical_chapter": "2",
+      "h3_treatment": "Main if decision-relevant; audit detail in Appendix",
+      "h3_locator": "2"
+    },
+    {
+      "rc_id": "RC-007",
+      "h1_promise": "Assess governance, ownership and minority alignment",
+      "module": "C/I",
+      "materiality": 4,
+      "decision_critical": true,
+      "valuation_sensitivity": "MEDIUM",
+      "h2_status": "COMPLETE",
+      "primary_evidence": "2026 proxy",
+      "counter_evidence": "See manuscript counter-evidence and unknowns where applicable",
+      "material_unknown": null,
+      "evidence_strength": "HIGH",
+      "ceiling_impact": "NONE",
+      "canonical_chapter": "2,4",
+      "h3_treatment": "Main if decision-relevant; audit detail in Appendix",
+      "h3_locator": "2,4"
+    },
+    {
+      "rc_id": "RC-008",
+      "h1_promise": "Underwrite Arc product economics, adoption and recurring monetization",
+      "module": "E/F",
+      "materiality": 5,
+      "decision_critical": true,
+      "valuation_sensitivity": "HIGH",
+      "h2_status": "PRIMARY_SOURCE_CEILING",
+      "primary_evidence": "Q2 filing/results/transcript",
+      "counter_evidence": "See manuscript counter-evidence and unknowns where applicable",
+      "material_unknown": "Launch/validator/testnet traction is evidenced; recurring fee/token economics after presale are not yet evidenced.",
+      "evidence_strength": "LOW",
+      "ceiling_impact": "HIGH",
+      "canonical_chapter": "3,5,6",
+      "h3_treatment": "Main if decision-relevant; audit detail in Appendix",
+      "h3_locator": "3,5,6"
+    },
+    {
+      "rc_id": "RC-009",
+      "h1_promise": "Underwrite CPN customer ladder, usage and monetization",
+      "module": "E/F",
+      "materiality": 5,
+      "decision_critical": true,
+      "valuation_sensitivity": "HIGH",
+      "h2_status": "PRIMARY_SOURCE_CEILING",
+      "primary_evidence": "Q2 results",
+      "counter_evidence": "See manuscript counter-evidence and unknowns where applicable",
+      "material_unknown": "CPN $14.7B annualized TPV and 175 enrolled institutions show adoption; take rate/revenue not disclosed.",
+      "evidence_strength": "LOW",
+      "ceiling_impact": "HIGH",
+      "canonical_chapter": "3,5,6",
+      "h3_treatment": "Main if decision-relevant; audit detail in Appendix",
+      "h3_locator": "3,5,6"
+    },
+    {
+      "rc_id": "RC-010",
+      "h1_promise": "Map competition by customer job and moat durability",
+      "module": "G",
+      "materiality": 5,
+      "decision_critical": true,
+      "valuation_sensitivity": "HIGH",
+      "h2_status": "COMPLETE",
+      "primary_evidence": "DefiLlama/OCC/Circle filings",
+      "counter_evidence": "See manuscript counter-evidence and unknowns where applicable",
+      "material_unknown": null,
+      "evidence_strength": "MEDIUM",
+      "ceiling_impact": "NONE",
+      "canonical_chapter": "1,3",
+      "h3_treatment": "Main if decision-relevant; audit detail in Appendix",
+      "h3_locator": "1,3"
+    },
+    {
+      "rc_id": "RC-011",
+      "h1_promise": "Build 3Y and latest 8Q financial record",
+      "module": "H",
+      "materiality": 5,
+      "decision_critical": true,
+      "valuation_sensitivity": "HIGH",
+      "h2_status": "COMPLETE",
+      "primary_evidence": "10-K/Q2 materials",
+      "counter_evidence": "See manuscript counter-evidence and unknowns where applicable",
+      "material_unknown": null,
+      "evidence_strength": "HIGH",
+      "ceiling_impact": "NONE",
+      "canonical_chapter": "4,Appendix",
+      "h3_treatment": "Main if decision-relevant; audit detail in Appendix",
+      "h3_locator": "4,Appendix"
+    },
+    {
+      "rc_id": "RC-012",
+      "h1_promise": "Audit balance sheet, SBC, shares, warrants and dilution",
+      "module": "I",
+      "materiality": 5,
+      "decision_critical": true,
+      "valuation_sensitivity": "HIGH",
+      "h2_status": "COMPLETE",
+      "primary_evidence": "Q2 10-Q/proxy",
+      "counter_evidence": "See manuscript counter-evidence and unknowns where applicable",
+      "material_unknown": null,
+      "evidence_strength": "HIGH",
+      "ceiling_impact": "NONE",
+      "canonical_chapter": "4,5",
+      "h3_treatment": "Main if decision-relevant; audit detail in Appendix",
+      "h3_locator": "4,5"
+    },
+    {
+      "rc_id": "RC-013",
+      "h1_promise": "Run earnings-quality screen",
+      "module": "H",
+      "materiality": 4,
+      "decision_critical": true,
+      "valuation_sensitivity": "MEDIUM",
+      "h2_status": "COMPLETE",
+      "primary_evidence": "10-K/Q2 results",
+      "counter_evidence": "See manuscript counter-evidence and unknowns where applicable",
+      "material_unknown": null,
+      "evidence_strength": "HIGH",
+      "ceiling_impact": "NONE",
+      "canonical_chapter": "4",
+      "h3_treatment": "Main if decision-relevant; audit detail in Appendix",
+      "h3_locator": "4"
+    },
+    {
+      "rc_id": "RC-014",
+      "h1_promise": "Map market expectations/consensus/positioning",
+      "module": "M",
+      "materiality": 4,
+      "decision_critical": true,
+      "valuation_sensitivity": "HIGH",
+      "h2_status": "COMPLETE",
+      "primary_evidence": "StockAnalysis/Investing",
+      "counter_evidence": "See manuscript counter-evidence and unknowns where applicable",
+      "material_unknown": null,
+      "evidence_strength": "MEDIUM",
+      "ceiling_impact": "NONE",
+      "canonical_chapter": "0,5",
+      "h3_treatment": "Main if decision-relevant; audit detail in Appendix",
+      "h3_locator": "0,5"
+    },
+    {
+      "rc_id": "RC-015",
+      "h1_promise": "Build scenario valuation, return distribution and reverse expectations",
+      "module": "Valuation",
+      "materiality": 5,
+      "decision_critical": true,
+      "valuation_sensitivity": "HIGH",
+      "h2_status": "COMPLETE",
+      "primary_evidence": "model from S01-S17",
+      "counter_evidence": "See manuscript counter-evidence and unknowns where applicable",
+      "material_unknown": null,
+      "evidence_strength": "MEDIUM",
+      "ceiling_impact": "NONE",
+      "canonical_chapter": "5",
+      "h3_treatment": "Main if decision-relevant; audit detail in Appendix",
+      "h3_locator": "5"
+    },
+    {
+      "rc_id": "RC-016",
+      "h1_promise": "Build catalysts, KPI tripwires, red-team and falsifiers",
+      "module": "L",
+      "materiality": 5,
+      "decision_critical": true,
+      "valuation_sensitivity": "HIGH",
+      "h2_status": "COMPLETE",
+      "primary_evidence": "research synthesis",
+      "counter_evidence": "See manuscript counter-evidence and unknowns where applicable",
+      "material_unknown": null,
+      "evidence_strength": "MEDIUM",
+      "ceiling_impact": "NONE",
+      "canonical_chapter": "6",
+      "h3_treatment": "Main if decision-relevant; audit detail in Appendix",
+      "h3_locator": "6"
+    },
+    {
+      "rc_id": "RC-017",
+      "h1_promise": "Map customer/contract adoption ladder",
+      "module": "F",
+      "materiality": 4,
+      "decision_critical": false,
+      "valuation_sensitivity": "MEDIUM",
+      "h2_status": "PRIMARY_SOURCE_CEILING",
+      "primary_evidence": "Q2 results/transcript",
+      "counter_evidence": "See manuscript counter-evidence and unknowns where applicable",
+      "material_unknown": "Named integrations/validators and CPN enrollment are visible; contract values/commitments are usually undisclosed.",
+      "evidence_strength": "LOW",
+      "ceiling_impact": "MODERATE",
+      "canonical_chapter": "3,Appendix",
+      "h3_treatment": "Main if decision-relevant; audit detail in Appendix",
+      "h3_locator": "3,Appendix"
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "id": "S01",
+        "type": "primary",
+        "date": "2026-08-05",
+        "title": "Circle Q2 2026 Results",
+        "url": "https://www.circle.com/pressroom/circle-reports-second-quarter-2026-results",
+        "coverage": "Q2 operating metrics, Arc/CPN, guidance, financial highlights"
+      },
+      {
+        "id": "S02",
+        "type": "primary",
+        "date": "2026-08-05",
+        "title": "Circle Q2 2026 Earnings Presentation",
+        "url": "https://s206.q4cdn.com/265218871/files/doc_presentations/2026/Aug/05/Q2-2026-Earnings-Presentation.pdf",
+        "coverage": "RLDC/NRM quarterly series, guidance, adjusted EBITDA/opex"
+      },
+      {
+        "id": "S03",
+        "type": "primary",
+        "date": "2026-08-05",
+        "title": "Circle Q2 2026 Earnings Transcript",
+        "url": "https://s206.q4cdn.com/265218871/files/doc_earnings/2026/q2/transcript/Q226-Earnings-Transcript.pdf",
+        "coverage": "Arc token presale recognition, CPN/Arc commentary, Coinbase renewal, Hyperliquid economics"
+      },
+      {
+        "id": "S04",
+        "type": "primary",
+        "date": "2026-08-05",
+        "title": "Circle Form 10-Q for quarter ended 2026-06-30",
+        "url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000248/crcl-20260630.htm",
+        "coverage": "balance sheet, share count, stock plans, reserve structure, product detail"
+      },
+      {
+        "id": "S05",
+        "type": "primary",
+        "date": "2026-03-09",
+        "title": "Circle 2025 Form 10-K",
+        "url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000062/crcl-20251231.htm",
+        "coverage": "3Y financials, Coinbase distribution costs, rate sensitivity, reserve composition, risks"
+      },
+      {
+        "id": "S06",
+        "type": "primary",
+        "date": "2026-04-01",
+        "title": "Circle 2026 Definitive Proxy",
+        "url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000112/crcl-20260401.htm",
+        "coverage": "ownership, voting control, compensation, equity plans, governance"
+      },
+      {
+        "id": "S07",
+        "type": "primary",
+        "date": "2026-07-29",
+        "title": "Federal Reserve FOMC Statement",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+        "coverage": "federal funds target 3.50%-3.75%"
+      },
+      {
+        "id": "S08",
+        "type": "primary",
+        "date": "2026-02-25",
+        "title": "OCC GENIUS Act Notice of Proposed Rulemaking",
+        "url": "https://occ.treas.gov/news-issuances/bulletins/2026/bulletin-2026-3.html",
+        "coverage": "stablecoin regulatory framework, issuer eligibility, effective-date mechanics"
+      },
+      {
+        "id": "S09",
+        "type": "primary",
+        "date": "2026-07-10",
+        "title": "Circle Final OCC Approval for National Trust Bank",
+        "url": "https://www.circle.com/pressroom/circle-receives-final-occ-approval-to-establish-national-trust-bank",
+        "coverage": "trust bank approval, future reserve-management capability"
+      },
+      {
+        "id": "S10",
+        "type": "primary",
+        "date": "2024-07-01",
+        "title": "Circle MiCA Compliance Announcement",
+        "url": "https://www.circle.com/pressroom/circle-is-first-global-stablecoin-issuer-to-comply-with-mica-eus-landmark-crypto-law",
+        "coverage": "EU regulatory positioning"
+      },
+      {
+        "id": "S11",
+        "type": "primary",
+        "date": "2026-08-17",
+        "title": "Circle Transparency & Stability",
+        "url": "https://www.circle.com/transparency",
+        "coverage": "reserve assets, 1:1 redemption, assurance cadence"
+      },
+      {
+        "id": "S12",
+        "type": "independent",
+        "date": "2026-08-21",
+        "title": "DefiLlama Stablecoin Market",
+        "url": "https://defillama.com/stablecoins",
+        "coverage": "current total stablecoin, USDT and USDC supply snapshots"
+      },
+      {
+        "id": "S13",
+        "type": "secondary",
+        "date": "2026-08-18",
+        "title": "StockAnalysis CRCL Forecast",
+        "url": "https://stockanalysis.com/stocks/crcl/forecast/",
+        "coverage": "FY26/FY27 revenue consensus, analyst target dispersion"
+      },
+      {
+        "id": "S14",
+        "type": "secondary",
+        "date": "2026-08-21",
+        "title": "Investing.com CRCL Consensus Estimates",
+        "url": "https://www.investing.com/equities/circle-internet-group-inc-consensus-estimates",
+        "coverage": "analyst target range and ratings dispersion"
+      },
+      {
+        "id": "S15",
+        "type": "primary",
+        "date": "2026-07-27",
+        "title": "Circle Acquires IBM Blockchain Patent Portfolio",
+        "url": "https://investor.circle.com/news/news-details/2026/Circle-Acquires-IBM-Blockchain-Patent-Portfolio/default.aspx",
+        "coverage": "IP portfolio acquisition; non-core strategic context"
+      },
+      {
+        "id": "S16",
+        "type": "primary",
+        "date": "2026-07-31",
+        "title": "Circle Granted NYDFS Trust Charter",
+        "url": "https://investor.circle.com/news/news-details/2026/Circle-Granted-Trust-Charter-by-the-New-York-Department-of-Financial-Services/default.aspx",
+        "coverage": "New York limited purpose trust charter"
+      },
+      {
+        "id": "S17",
+        "type": "market",
+        "date": "2026-08-20",
+        "title": "Circle Investor Relations stock quote",
+        "url": "https://investor.circle.com/news/default.aspx",
+        "coverage": "CRCL closing/reference quote $83.66, 22.19M volume"
+      }
+    ],
+    "evidence_state_policy": [
+      "실제",
+      "회사주장",
+      "독립검증",
+      "추정",
+      "가정",
+      "미확인"
+    ],
+    "numeric_source_of_truth": "DECISION_INPUT_PACK.json",
+    "notes": [
+      "All monetary amounts are USD unless stated. B = billion, M = million.",
+      "Scenario probabilities are judgmental posterior point estimates after explicit evidence updates; base-rate evidence is ceilinged and confidence is LOW.",
+      "Source S12 is independent market data; S13-S14 are secondary consensus data and never override primary filings."
+    ]
+  },
+  "integrity": {
+    "DECISION_INPUT_PACK_SCHEMA": "PASS (required v2.0 object families and required top-level fields present)",
+    "NUMERIC_PROVENANCE": "PASS",
+    "SCENARIO_PROBABILITIES_SUM_1": "PASS",
+    "RETURN_ARITHMETIC": "PASS",
+    "AS_OF_DISCIPLINE": "PASS",
+    "RC_UNRESOLVED": 0,
+    "DECISION_CRITICAL_UNKNOWN_DISCLOSURE": "PASS",
+    "PACK_MANUSCRIPT_PARITY": "PENDING_RENDER_BIND"
+  }
+}

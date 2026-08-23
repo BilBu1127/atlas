@@ -1,0 +1,1015 @@
+{
+  "meta": {
+    "ticker": "DLR",
+    "company": "Digital Realty Trust, Inc.",
+    "T0": "2026-08-23",
+    "price_asof": "2026-08-21",
+    "current_price": 190.62,
+    "filing_asof": "2026-08-19",
+    "consensus_asof": "2026-08-18",
+    "version": "v1.6.2.2_TEST",
+    "currency": "USD"
+  },
+  "economic_mechanism": {
+    "valuation_mode": "Mode F — Asset / NAV",
+    "routers": [
+      "R16 Real Estate / Data-center Infrastructure REIT",
+      "R7 Installed Base / Aftermarket",
+      "R15 Asset Manager"
+    ],
+    "chain": [
+      "Compute demand",
+      "Power / land / permits",
+      "Contracted MW",
+      "Energization / commencement",
+      "Occupancy & rent + interconnection",
+      "NOI / normalized FFO",
+      "Debt / JV / equity funding",
+      "Per-share NAV / value"
+    ]
+  },
+  "company_profile": {
+    "data_centers": 310,
+    "white_space_it_load_mw": 2515,
+    "occupancy_pct": 89.8,
+    "cross_connects_min": 235500,
+    "customers_min": 6000,
+    "metros_min": 55
+  },
+  "development": {
+    "under_construction_mw": 1402,
+    "preleased_pct": 54,
+    "estimated_stabilized_cash_yield_pct": 11.5,
+    "active_plus_future_buildable_capacity_gw": 8.5,
+    "signed_not_commenced_backlog_dlr_bn": 1.4,
+    "q2_bookings_dlr_m": 208,
+    "july_hyperscale_bookings_dlr_m": 205,
+    "northern_virginia_mw": 288,
+    "northern_virginia_initial_stabilized_cap_rate_min_pct": 6.5,
+    "northern_virginia_lease_term_years": 15,
+    "northern_virginia_escalator_pct": 3.6
+  },
+  "financials": {
+    "annual_3y": {
+      "2023": {
+        "revenue_bn": 5.477,
+        "noi_bn": 2.832,
+        "cash_noi_bn": 2.784,
+        "net_income_common_bn": 0.908,
+        "ffo_bn": 1.916,
+        "ffo_per_share": 6.2,
+        "avg_diluted_shares_units_m": 315.1,
+        "normalized_core_ffo_per_share": 6.57
+      },
+      "2024": {
+        "revenue_bn": 5.555,
+        "noi_bn": 2.963,
+        "cash_noi_bn": 2.917,
+        "net_income_common_bn": 0.562,
+        "ffo_bn": 2.027,
+        "ffo_per_share": 6.14,
+        "avg_diluted_shares_units_m": 337.7,
+        "normalized_core_ffo_per_share": 6.71
+      },
+      "2025": {
+        "revenue_bn": 6.113,
+        "noi_bn": 3.242,
+        "cash_noi_bn": 3.137,
+        "net_income_common_bn": 1.268,
+        "ffo_bn": 2.399,
+        "ffo_per_share": 6.96,
+        "avg_diluted_shares_units_m": 353.7,
+        "normalized_core_ffo_per_share": 7.29
+      }
+    },
+    "quarterly_8q": [
+      {
+        "q": "3Q24",
+        "revenue_bn": 1.4,
+        "adj_ebitda_m": 758,
+        "ffo_per_share": 1.55,
+        "normalized_core_ffo_per_share": 1.67,
+        "renewal_cash_spread_pct": 15.2,
+        "bookings_dlr_m": 521,
+        "backlog_dlr_m": 859,
+        "lag_months": 15
+      },
+      {
+        "q": "4Q24",
+        "revenue_bn": 1.436,
+        "adj_ebitda_m": 751,
+        "ffo_per_share": 1.61,
+        "normalized_core_ffo_per_share": 1.73,
+        "renewal_cash_spread_pct": 4.7,
+        "bookings_dlr_m": 100,
+        "backlog_dlr_m": 797,
+        "lag_months": 6
+      },
+      {
+        "q": "1Q25",
+        "revenue_bn": 1.408,
+        "adj_ebitda_m": 791,
+        "ffo_per_share": 1.67,
+        "normalized_core_ffo_per_share": 1.77,
+        "renewal_cash_spread_pct": 5.6,
+        "bookings_dlr_m": 242,
+        "backlog_dlr_m": 919,
+        "lag_months": 10
+      },
+      {
+        "q": "2Q25",
+        "revenue_bn": 1.493,
+        "adj_ebitda_m": 823,
+        "ffo_per_share": 1.75,
+        "normalized_core_ffo_per_share": 1.87,
+        "renewal_cash_spread_pct": 7.3,
+        "bookings_dlr_m": 135,
+        "backlog_dlr_m": 826,
+        "lag_months": 4
+      },
+      {
+        "q": "3Q25",
+        "revenue_bn": 1.577,
+        "adj_ebitda_m": 868,
+        "ffo_per_share": 1.65,
+        "normalized_core_ffo_per_share": 1.89,
+        "renewal_cash_spread_pct": 8.0,
+        "bookings_dlr_m": 162,
+        "backlog_dlr_m": 852,
+        "lag_months": 8
+      },
+      {
+        "q": "4Q25",
+        "revenue_bn": 1.635,
+        "adj_ebitda_m": 857,
+        "ffo_per_share": 1.89,
+        "normalized_core_ffo_per_share": 1.86,
+        "renewal_cash_spread_pct": 6.1,
+        "bookings_dlr_m": 175,
+        "backlog_dlr_m": 817,
+        "lag_months": 8
+      },
+      {
+        "q": "1Q26",
+        "revenue_bn": 1.635,
+        "adj_ebitda_m": 920,
+        "ffo_per_share": 1.99,
+        "normalized_core_ffo_per_share": 2.04,
+        "renewal_cash_spread_pct": 5.0,
+        "bookings_dlr_m": 423,
+        "backlog_dlr_m": 1000,
+        "lag_months": 19
+      },
+      {
+        "q": "2Q26",
+        "revenue_bn": 1.924,
+        "adj_ebitda_m": 978,
+        "ffo_per_share": 2.73,
+        "reported_core_ffo_per_share": 2.65,
+        "normalized_core_ffo_per_share": 2.13,
+        "renewal_cash_spread_pct": 25.4,
+        "bookings_dlr_m": 208,
+        "backlog_dlr_m": 1400,
+        "lag_months": 9
+      }
+    ],
+    "fy26_normalized_core_ffo_guidance": {
+      "low": 8.15,
+      "high": 8.2,
+      "midpoint": 8.175
+    },
+    "q2_2026": {
+      "reported_core_ffo_per_share": 2.65,
+      "core_ffo_per_share_ex_promote": 2.13,
+      "net_promote_income_m": 188,
+      "insurance_recovery_core_ffo_m": 27,
+      "reported_affo_m": 889.056,
+      "reported_affo_per_share": 2.47,
+      "analytical_affo_ex_promote_m": 701.185,
+      "analytical_affo_ex_promote_per_share": 1.94,
+      "quarterly_dividend": 1.22
+    }
+  },
+  "capital_structure": {
+    "debt_bn": 18.6,
+    "net_debt_to_adj_ebitda": 4.7,
+    "fixed_charge_coverage_x": 5.2,
+    "fixed_rate_debt_pct": 90,
+    "unsecured_debt_pct": 92,
+    "ratings": {
+      "SP": "BBB+ Stable",
+      "Moodys": "Baa2 Positive",
+      "Fitch": "BBB Stable"
+    }
+  },
+  "ownership_denominator": {
+    "actual_common_plus_op_units_m": {
+      "2025-12-31": 349.746,
+      "2026-03-31": 355.217,
+      "2026-06-30": 376.675
+    },
+    "h1_2026_atm_shares_m": 13.5,
+    "h1_2026_atm_net_proceeds_bn": 2.5,
+    "northern_virginia_consideration_shares_m": 12.3,
+    "columbia_closed": "2026-08-18",
+    "teraco_contractual_shares_m": 3.425,
+    "forecast_assumptions": {
+      "Down": "3-4%/yr denominator growth",
+      "Base": "1.5-2%/yr after announced transactions",
+      "Up": "~1%/yr"
+    }
+  },
+  "kpis": {
+    "renewal_cash_spread_history": {
+      "periods": [
+        "4Q21",
+        "4Q22",
+        "4Q23",
+        "4Q24",
+        "4Q25",
+        "2Q26"
+      ],
+      "values_pct": [
+        -3.9,
+        0.8,
+        8.2,
+        4.7,
+        6.1,
+        25.4
+      ]
+    },
+    "tripwires": [
+      {
+        "name": "Normalized Core FFO/share",
+        "current": "FY26 guide midpoint $8.175",
+        "green": ">= high-single-digit growth",
+        "yellow": "5-8% growth",
+        "red": "<5% while shares grow >3%"
+      },
+      {
+        "name": "Net debt / Adjusted EBITDA",
+        "current": "4.7x",
+        "green": "<=5.0x",
+        "yellow": "5.0-5.5x",
+        "red": ">5.5x for two quarters"
+      },
+      {
+        "name": "Development prelease",
+        "current": "54%",
+        "green": ">=55% with pipeline growth",
+        "yellow": "45-55%",
+        "red": "<45% while capex/MW rise"
+      },
+      {
+        "name": "Renewal cash spread",
+        "current": "25.4% in 2Q26",
+        "green": ">5% normalized",
+        "yellow": "0-5%",
+        "red": "<=0% for two quarters"
+      },
+      {
+        "name": "Occupancy",
+        "current": "89.8%",
+        "green": ">=91% trajectory",
+        "yellow": "89-91%",
+        "red": "<89% with new supply"
+      },
+      {
+        "name": "Share/unit growth",
+        "current": "376.7m at 2Q26",
+        "green": "<=2%/yr after announced deals",
+        "yellow": "2-3%",
+        "red": ">3% without proportional FFO/share growth"
+      }
+    ]
+  },
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.2,
+      "occupancy_2029": "89-90%",
+      "renewal_cash_spread": "0-5%",
+      "development_monetized": "45-55%",
+      "denominator_growth": "3-4%/yr",
+      "core_ffo_per_share_2029": 9.0,
+      "exit_multiple": 17.0,
+      "per_share_value": 153.0
+    },
+    {
+      "name": "Base",
+      "probability": 0.55,
+      "occupancy_2029": "91-92%",
+      "renewal_cash_spread": "5-8%",
+      "development_monetized": "60-70%",
+      "denominator_growth": "1.5-2%/yr",
+      "core_ffo_per_share_2029": 11.3,
+      "exit_multiple": 22.0,
+      "per_share_value": 248.6
+    },
+    {
+      "name": "Up",
+      "probability": 0.25,
+      "occupancy_2029": "92-93%",
+      "renewal_cash_spread": "8-12%",
+      "development_monetized": "75-85%",
+      "denominator_growth": "~1%/yr",
+      "core_ffo_per_share_2029": 13.0,
+      "exit_multiple": 25.0,
+      "per_share_value": 325.0
+    }
+  ],
+  "valuation": {
+    "mode": "Mode F — Asset / NAV",
+    "current_forward_normalized_core_ffo_multiple": 23.31743119266055,
+    "weighted_terminal_price": 248.58,
+    "cumulative_dividend_assumption": 17.08,
+    "expected_total_future_value": 265.66,
+    "expected_irr": 0.10383479133767692,
+    "hurdle": 0.105,
+    "base_current_fair_value": 191.9833873600026,
+    "up_value": 325.0,
+    "down_value": 153.0,
+    "up_downside_ratio": 3.572036150983519,
+    "historical_p_ffo_snapshots": {
+      "2021": 23.78,
+      "2022": 14.8,
+      "2023": 20.15,
+      "2024": 27.64,
+      "2025": 22.0
+    }
+  },
+  "reverse_expectations": {
+    "required_2029_terminal_price_at_hurdle": 246.69315006003492,
+    "required_2029_normalized_core_ffo_per_share_at_22x": 11.21332500272886,
+    "required_core_ffo_per_share_cagr": 0.09861928120763053,
+    "operating_kpi_hurdles": [
+      "occupancy ~91%+",
+      "same-cap cash NOI ~4-5% vicinity",
+      "positive renewal spread",
+      "visible backlog commencement each quarter",
+      "development prelease not materially below ~54%",
+      "net debt/EBITDA ~<=5x",
+      "share/unit growth materially slows after 2026"
+    ]
+  },
+  "consensus": {
+    "analysts": 33,
+    "rating": "Strong Buy",
+    "avg_target": 223.32,
+    "median_target": 224,
+    "low_target": 190,
+    "high_target": 250,
+    "short_interest_shares_m": 8.421,
+    "short_float_pct": 2.28,
+    "days_to_cover": 2.56,
+    "mispricing_rationale": "NOT_IDENTIFIED"
+  },
+  "stance": {
+    "zone": "관망 / 가격 조건부 관심",
+    "price_bands": {
+      "strong_interest": "<=175",
+      "conditional_interest": "175-185",
+      "watch": "185-200",
+      "low_attraction": ">210 without evidence upgrade"
+    },
+    "horizon": "2029-12-31",
+    "matrix_reference": "Expected IRR approximately equals hurdle → watch + attractive entry band",
+    "override_rationale": "NOT_REQUIRED"
+  },
+  "catalysts": [
+    {
+      "when": "~Oct 2026",
+      "event": "3Q26 earnings / leasing / backlog update",
+      "sensitivity": "H"
+    },
+    {
+      "when": "~Feb 2027",
+      "event": "FY26 results and initial FY27 outlook",
+      "sensitivity": "H"
+    },
+    {
+      "when": "H2 2026-H1 2027",
+      "event": "Columbia integration / Strategic Private Capital disclosure",
+      "sensitivity": "M"
+    },
+    {
+      "when": "H2 2026-H1 2027",
+      "event": "Teraco ownership settlement / funding",
+      "sensitivity": "M"
+    },
+    {
+      "when": "H1 2027",
+      "event": "first two Northern Virginia acquired assets expected to stabilize",
+      "sensitivity": "H"
+    },
+    {
+      "when": "Quarterly",
+      "event": "signed backlog commencement into rent/NOI",
+      "sensitivity": "H"
+    },
+    {
+      "when": "Next 12m",
+      "event": "utility / PJM / ERCOT power policy and rating actions",
+      "sensitivity": "H"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "see H3 checkpoint / final report relevant chapter"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "see H3 checkpoint / final report relevant chapter"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "see H3 checkpoint / final report relevant chapter"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "see H3 checkpoint / final report relevant chapter"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "see H3 checkpoint / final report relevant chapter"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "see H3 checkpoint / final report relevant chapter"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "see H3 checkpoint / final report relevant chapter"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "see H3 checkpoint / final report relevant chapter"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "see H3 checkpoint / final report relevant chapter"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "see H3 checkpoint / final report relevant chapter"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "see H3 checkpoint / final report relevant chapter"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "see H3 checkpoint / final report relevant chapter"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "see H3 checkpoint / final report relevant chapter"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "see H3 checkpoint / final report relevant chapter"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "see H3 checkpoint / final report relevant chapter"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "see H3 checkpoint / final report relevant chapter"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "see H3 checkpoint / final report relevant chapter"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "see H3 checkpoint / final report relevant chapter"
+    }
+  ],
+  "source_registry": [
+    {
+      "source_id": "S01",
+      "source_name": "Digital Realty 2Q26 Form 10-Q",
+      "locator": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926089296/dlr-20260630x10q.htm",
+      "as_of": "2026-06-30",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S02",
+      "source_name": "Digital Realty 2Q26 Earnings Release",
+      "locator": "https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-reports-second-quarter-2026-results",
+      "as_of": "2026-07-23",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S03",
+      "source_name": "Digital Realty 2Q26 Financial Supplemental",
+      "locator": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926086270/dlr-20260723xex99d1.htm",
+      "as_of": "2026-06-30",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S04",
+      "source_name": "Digital Realty 1Q26 Earnings Release",
+      "locator": "https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-reports-first-quarter-2026-results",
+      "as_of": "2026-04-23",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S05",
+      "source_name": "Digital Realty 4Q25 Earnings Release",
+      "locator": "https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-reports-fourth-quarter-2025-results",
+      "as_of": "2026-02-05",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S06",
+      "source_name": "Digital Realty 3Q25 Earnings Release",
+      "locator": "https://investor.digitalrealty.com/node/18826/pdf",
+      "as_of": "2025-10-23",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S07",
+      "source_name": "Digital Realty 2Q25 Earnings Release",
+      "locator": "https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-reports-second-quarter-2025-results",
+      "as_of": "2025-07-24",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S08",
+      "source_name": "Digital Realty 4Q24 Earnings Release",
+      "locator": "https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-reports-fourth-quarter-2024-results",
+      "as_of": "2025-02-13",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S09",
+      "source_name": "Digital Realty 3Q24 Earnings Release",
+      "locator": "https://investor.digitalrealty.com/static-files/97583064-4ce7-4d36-9760-d04f7b9d8ea7",
+      "as_of": "2024-10-24",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S10",
+      "source_name": "Digital Realty 2026 Proxy Statement",
+      "locator": "https://www.sec.gov/Archives/edgar/data/1297996/000130817926000296/dlr015307-def14a.htm",
+      "as_of": "2026-03-30",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S11",
+      "source_name": "Northern Virginia / Blackstone transaction",
+      "locator": "https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-announces-purchase-blackstone-interest-three",
+      "as_of": "2026-06-29",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S12",
+      "source_name": "Platform growth transactions — Kansas City / Teraco / Columbia",
+      "locator": "https://www.sec.gov/Archives/edgar/data/1297996/000119312526276844/d50837dex991.htm",
+      "as_of": "2026-06-22",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S13",
+      "source_name": "Digital Realty SEC Filing Index — Columbia 8-K / 424B7",
+      "locator": "https://investor.digitalrealty.com/financials/sec-filings",
+      "as_of": "2026-08-19",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S14",
+      "source_name": "Digital Realty Q3 2026 dividend declaration",
+      "locator": "https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-declares-quarterly-cash-dividends-common-and-16",
+      "as_of": "2026-08-11",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S15",
+      "source_name": "Digital Realty Texas data-center policy statement",
+      "locator": "https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-welcomes-governor-abbotts-initiative-responsible",
+      "as_of": "2026-08-07",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S16",
+      "source_name": "Digital Realty Investor Relations operating profile",
+      "locator": "https://investor.digitalrealty.com/",
+      "as_of": "2026-08-23",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S17",
+      "source_name": "Digital Realty High-Density Colocation",
+      "locator": "https://www.digitalrealty.com/platform-digital/colocation/high-density-colocation",
+      "as_of": "2026-08-23",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S18",
+      "source_name": "Digital Realty Credit Ratings",
+      "locator": "https://investor.digitalrealty.com/financials/credit-ratings",
+      "as_of": "2026-08-23",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S19",
+      "source_name": "Digital Realty 2025 Form 10-K",
+      "locator": "https://investor.digitalrealty.com/static-files/a444db72-d0c1-45e2-b082-ed6363542a9e",
+      "as_of": "2025-12-31",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S20",
+      "source_name": "Microsoft FY26 Q1 Earnings Call",
+      "locator": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+      "as_of": "2025-10-29",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S21",
+      "source_name": "Microsoft FY26 Q3 Earnings Call",
+      "locator": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3",
+      "as_of": "2026-04-29",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S22",
+      "source_name": "Alphabet 2025 Q4 Earnings Call",
+      "locator": "https://abc.xyz/investor/events/event-details/2026/2025-Q4-Earnings-Call-2026-Dr_C033hS6/default.aspx",
+      "as_of": "2026-02-04",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S23",
+      "source_name": "Meta 2Q26 Results",
+      "locator": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx",
+      "as_of": "2026-07-29",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S24",
+      "source_name": "PJM May 7 2026 FERC filing on large-load growth",
+      "locator": "https://www.pjm.com/-/media/DotCom/documents/ferc/filings/2026/20260507-el26-63-000.pdf",
+      "as_of": "2026-05-07",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S25",
+      "source_name": "ERCOT June 2026 CEO Update / Large Load Forecast",
+      "locator": "https://www.ercot.com/files/docs/2026/05/28/11-CEO-Update.pdf",
+      "as_of": "2026-06-01",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S26",
+      "source_name": "Equinix 2Q26 Results",
+      "locator": "https://investor.equinix.com/news-events/press-releases/detail/1114/equinix-reports-second-quarter-results-raises-2026",
+      "as_of": "2026-07-29",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S27",
+      "source_name": "Equinix — 500,000+ interconnections operating milestone",
+      "locator": "https://blog.equinix.com/blog/2026/02/17/what-500000-interconnections-reveal-about-the-future-of-enterprise-connectivity/",
+      "as_of": "2026-02-17",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S28",
+      "source_name": "CyrusOne / Constellation Freestone data-center agreement",
+      "locator": "https://www.cyrusone.com/resources/press-releases/constellation-and-cyrusone-announce-agreement-to-support-new-data-center-facility-at-freestone-energy-center-in-texas?hs_amp=true",
+      "as_of": "2026-08-23",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S29",
+      "source_name": "Vantage Shackelford County Texas campus",
+      "locator": "https://vantage-dc.com/data-center-locations/north-america/shackelford-county-tx/",
+      "as_of": "2026-08-23",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S30",
+      "source_name": "QTS Data Center portfolio",
+      "locator": "https://qtsdatacenters.com/data-centers/",
+      "as_of": "2026-08-23",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S31",
+      "source_name": "Iron Mountain 2Q26 Results",
+      "locator": "https://investors.ironmountain.com/news/news-details/2026/Iron-Mountain-Reports-Second-Quarter-2026-Results/default.aspx",
+      "as_of": "2026-08-05",
+      "evidence_class": "primary"
+    },
+    {
+      "source_id": "S32",
+      "source_name": "S&P Global analyst consensus via StockAnalysis",
+      "locator": "https://stockanalysis.com/stocks/dlr/forecast/",
+      "as_of": "2026-08-18",
+      "evidence_class": "secondary"
+    },
+    {
+      "source_id": "S33",
+      "source_name": "FINRA short-interest aggregation via MarketBeat",
+      "locator": "https://www.marketbeat.com/stocks/NYSE/DLR/short-interest/",
+      "as_of": "2026-07-31",
+      "evidence_class": "secondary"
+    },
+    {
+      "source_id": "S34",
+      "source_name": "Historical P/FFO snapshot via StockAnalysis",
+      "locator": "https://stockanalysis.com/stocks/dlr/financials/ratios/",
+      "as_of": "2026-08-20",
+      "evidence_class": "secondary"
+    },
+    {
+      "source_id": "S35",
+      "source_name": "DLR historical price cross-check",
+      "locator": "https://stockinvest.us/stock-price/DLR",
+      "as_of": "2026-08-21",
+      "evidence_class": "secondary"
+    },
+    {
+      "source_id": "S36",
+      "source_name": "Digital Realty historical quarterly earnings / renewal disclosures",
+      "locator": "https://investor.digitalrealty.com/news-events/news-releases",
+      "as_of": "2026-08-23",
+      "evidence_class": "primary"
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "VIS_ID": "VIS-001",
+      "FIGURE_TITLE": "Renewal pricing cycle: scarcity is cyclical, not permanent",
+      "AUTHORITATIVE_SOURCE_BLOCK": "kpis.renewal_cash_spread_history",
+      "SOURCE_VALUES": {
+        "periods": [
+          "4Q21",
+          "4Q22",
+          "4Q23",
+          "4Q24",
+          "4Q25",
+          "2Q26"
+        ],
+        "values_pct": [
+          -3.9,
+          0.8,
+          8.2,
+          4.7,
+          6.1,
+          25.4
+        ]
+      },
+      "NARRATIVE_LOCATOR": "#industry-cycle",
+      "TABLE_LOCATOR": "#kpi-tripwire",
+      "CAPTION_LOCATOR": "#vis-001-caption",
+      "RENDERED_ASSET_LOCATOR": "#vis-001",
+      "SOURCE_VERSION_OR_HASH": "307e1762fc7c1626f1a45069f21c47b8545310b3cc1a0ff3d4cbe0690e0552c7",
+      "DISPLAY_VALUES": {
+        "periods": [
+          "4Q21",
+          "4Q22",
+          "4Q23",
+          "4Q24",
+          "4Q25",
+          "2Q26"
+        ],
+        "values_pct": [
+          -3.9,
+          0.8,
+          8.2,
+          4.7,
+          6.1,
+          25.4
+        ]
+      },
+      "STATUS": "PASS",
+      "PDF_PAGE": 5
+    },
+    {
+      "VIS_ID": "VIS-002",
+      "FIGURE_TITLE": "Normalized Core FFO/share: operating growth is outrunning dilution — so far",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.quarterly_8q.normalized_core_ffo_per_share",
+      "SOURCE_VALUES": {
+        "periods": [
+          "3Q24",
+          "4Q24",
+          "1Q25",
+          "2Q25",
+          "3Q25",
+          "4Q25",
+          "1Q26",
+          "2Q26"
+        ],
+        "values": [
+          1.67,
+          1.73,
+          1.77,
+          1.87,
+          1.89,
+          1.86,
+          2.04,
+          2.13
+        ]
+      },
+      "NARRATIVE_LOCATOR": "#financial-8q",
+      "TABLE_LOCATOR": "#table-8q",
+      "CAPTION_LOCATOR": "#vis-002-caption",
+      "RENDERED_ASSET_LOCATOR": "#vis-002",
+      "SOURCE_VERSION_OR_HASH": "b8942707fe73fb549194e1141a8af8fa62eb79b4a2c35e5e0800493518a78338",
+      "DISPLAY_VALUES": {
+        "periods": [
+          "3Q24",
+          "4Q24",
+          "1Q25",
+          "2Q25",
+          "3Q25",
+          "4Q25",
+          "1Q26",
+          "2Q26"
+        ],
+        "values": [
+          1.67,
+          1.73,
+          1.77,
+          1.87,
+          1.89,
+          1.86,
+          2.04,
+          2.13
+        ]
+      },
+      "STATUS": "PASS",
+      "PDF_PAGE": 11
+    },
+    {
+      "VIS_ID": "VIS-003",
+      "FIGURE_TITLE": "Ownership denominator: 2026 has been a heavy issuance year",
+      "AUTHORITATIVE_SOURCE_BLOCK": "ownership_denominator.actual_common_plus_op_units",
+      "SOURCE_VALUES": {
+        "periods": [
+          "Dec-25",
+          "Mar-26",
+          "Jun-26"
+        ],
+        "values_m": [
+          349.746,
+          355.217,
+          376.675
+        ]
+      },
+      "NARRATIVE_LOCATOR": "#ownership-denominator",
+      "TABLE_LOCATOR": "#ownership-table",
+      "CAPTION_LOCATOR": "#vis-003-caption",
+      "RENDERED_ASSET_LOCATOR": "#vis-003",
+      "SOURCE_VERSION_OR_HASH": "f54aa5bc81e17921dc717969c36c69b63fd0ac46d049fcb7259ca832bdd2ce8f",
+      "DISPLAY_VALUES": {
+        "periods": [
+          "Dec-25",
+          "Mar-26",
+          "Jun-26"
+        ],
+        "values_m": [
+          349.746,
+          355.217,
+          376.675
+        ]
+      },
+      "STATUS": "PASS",
+      "PDF_PAGE": 12
+    },
+    {
+      "VIS_ID": "VIS-004",
+      "FIGURE_TITLE": "2029 scenario targets vs current price",
+      "AUTHORITATIVE_SOURCE_BLOCK": "scenarios",
+      "SOURCE_VALUES": {
+        "current_price": 190.62,
+        "scenario_values": {
+          "Down": 153.0,
+          "Base": 248.6,
+          "Up": 325.0
+        }
+      },
+      "NARRATIVE_LOCATOR": "#valuation-scenarios",
+      "TABLE_LOCATOR": "#scenario-table",
+      "CAPTION_LOCATOR": "#vis-004-caption",
+      "RENDERED_ASSET_LOCATOR": "#vis-004",
+      "SOURCE_VERSION_OR_HASH": "728e5a2eec404d8ae293222274209bcc1d814ce5b3a5d04039a6dd5b9831fdcc",
+      "DISPLAY_VALUES": {
+        "current_price": 190.62,
+        "scenario_values": {
+          "Down": 153.0,
+          "Base": 248.6,
+          "Up": 325.0
+        }
+      },
+      "STATUS": "PASS",
+      "PDF_PAGE": 14
+    },
+    {
+      "VIS_ID": "VIS-005",
+      "FIGURE_TITLE": "DLR economic transmission chain",
+      "AUTHORITATIVE_SOURCE_BLOCK": "economic_mechanism",
+      "SOURCE_VALUES": {
+        "chain": [
+          "Compute demand",
+          "Power / land / permits",
+          "Contracted MW",
+          "Energization / commencement",
+          "Occupancy & rent + interconnection",
+          "NOI / normalized FFO",
+          "Debt / JV / equity funding",
+          "Per-share NAV / value"
+        ]
+      },
+      "NARRATIVE_LOCATOR": "#economic-chain",
+      "TABLE_LOCATOR": "not_applicable",
+      "CAPTION_LOCATOR": "#vis-005-caption",
+      "RENDERED_ASSET_LOCATOR": "#vis-005",
+      "SOURCE_VERSION_OR_HASH": "6db084207874f1970e726b29dbeea198f9c80ce6ac3fd0c0232a8c053e810ec2",
+      "DISPLAY_VALUES": {
+        "chain": [
+          "Compute demand",
+          "Power / land / permits",
+          "Contracted MW",
+          "Energization / commencement",
+          "Occupancy & rent + interconnection",
+          "NOI / normalized FFO",
+          "Debt / JV / equity funding",
+          "Per-share NAV / value"
+        ]
+      },
+      "STATUS": "PASS",
+      "PDF_PAGE": 3
+    }
+  ],
+  "ceilings": [
+    "Industry-wide standardized long-run rent/downcycle series",
+    "Project-level utility COD/vendor schedule across all developments",
+    "Private QTS like-for-like current KPI depth",
+    "Strategic Private Capital normalized recurring fee/promote schedule",
+    "Continuous primary long-run valuation percentile",
+    "Full FY1-FY3 FFO consensus and aggregate 13F flow",
+    "Site-level water/permitting/COD across every project"
+  ],
+  "validation": {
+    "DATA_PACK_SOURCE_REGISTRY_COMPLETENESS": "PASS",
+    "VISUAL_DATA_SOURCE_REGISTRY": "EMITTED",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "HTML_TEMPLATE_RESOLUTION": "PASS",
+    "HTML_STRUCTURE_VALIDATION": "PASS",
+    "CONTENT_MEANING_LOCK_PRESERVED": "PASS",
+    "PUBLISHED_TOP_LEVEL_SCHEMA_MATCH": "PASS",
+    "EXPLANATORY_DEPTH_PRESERVED": "PASS",
+    "CORE_LANDSCAPE_PAGES": 0,
+    "PRINTED_TOC_PAGES": 1,
+    "TOC_CLICKABLE": "PASS",
+    "PDF_BOOKMARKS": "PASS",
+    "HTML_SIDEBAR": "PASS",
+    "SEARCHABLE_TEXT": "PASS",
+    "KOREAN_READABILITY": "PASS",
+    "SMART_CHAPTER_TRANSITIONS": "PASS",
+    "ARGUMENT_BLOCK_PAGINATION": "PASS",
+    "ACCIDENTAL_SPARSE_PAGES": 0,
+    "DENSITY_CONTROL": "PASS",
+    "VISUAL_SUBSTITUTION": "PASS",
+    "VISUAL_GRAMMAR_VARIETY": "PASS",
+    "CHART_READABILITY": "PASS",
+    "TABLE_QUALITY": "PASS",
+    "CONTACT_SHEET_COMPOSITION_QA": "PASS",
+    "SEMANTIC_GOLDEN_QA": "PASS",
+    "VISUAL_GOLDEN_QA": "PASS",
+    "GOLDEN_PARITY": "PASS",
+    "DECISION_VISUALS_TOTAL": 5,
+    "DECISION_VISUALS_PARITY_PASS": 5,
+    "STALE_VISUAL_ASSETS": 0,
+    "FIGURE_NUMERICAL_PARITY": "PASS",
+    "VISUAL_DATA_LINEAGE": "PASS",
+    "VISUAL_SEMANTIC_PARITY": "PASS",
+    "RENDERED_VISUAL_PARITY_QA": "PASS",
+    "PDF_METADATA_FIREWALL": "PASS",
+    "PUBLISHING_ACCEPTANCE": "PASS"
+  }
+}

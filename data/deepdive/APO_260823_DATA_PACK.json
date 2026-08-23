@@ -1,0 +1,832 @@
+{
+  "meta": {
+    "ticker": "APO",
+    "company": "Apollo Global Management, Inc.",
+    "T0": "2026-08-23",
+    "price_asof": "2026-08-21",
+    "price": 132.69,
+    "filing_asof": "2026-08-23 filing-feed check; latest issuer 8-K 2026-08-11; later ownership filings did not add new operating results",
+    "consensus_asof": "2026-08-21",
+    "version": "Clean DDOS v1.6.2.1 TEST"
+  },
+  "economic_engines": [
+    {
+      "engine": "Asset Management / FRE",
+      "role": "CORE_CASH_ENGINE",
+      "router": "R15 Asset Manager/Exchange",
+      "native_unit": "FGAUM",
+      "native_output": "FRE",
+      "capital_constraint": "HoldCo opex, strategic capital, diluted shares"
+    },
+    {
+      "engine": "Origination / Capital Solutions",
+      "role": "GROWTH_ENGINE",
+      "router": "R15 + custom origination overlay",
+      "native_unit": "closed origination/deployment",
+      "native_output": "ACS fees + FGAUM + SRE contribution",
+      "capital_constraint": "warehousing/syndication/credit absorption"
+    },
+    {
+      "engine": "Athene Retirement Services",
+      "role": "CORE_CASH_ENGINE + GROWTH_ENGINE",
+      "router": "R15 Insurance",
+      "native_unit": "net invested assets / liabilities",
+      "native_output": "net spread -> SRE",
+      "capital_constraint": "RBC, ratings, liquidity, ALM"
+    },
+    {
+      "engine": "Global Wealth / DC",
+      "role": "GROWTH_ENGINE",
+      "router": "R15 Asset Manager",
+      "native_unit": "net funded flows",
+      "native_output": "management fees -> FRE",
+      "capital_constraint": "liquidity/redemption structure"
+    },
+    {
+      "engine": "Private-market infrastructure",
+      "role": "OPTION_ENGINE",
+      "router": "R15 + R12 Platform overlay",
+      "native_unit": "daily-valued assets/IDs/trading volume",
+      "native_output": "incremental FGAUM/FRE",
+      "capital_constraint": "funded adoption and regulation"
+    }
+  ],
+  "financials": {
+    "annual_3y": [
+      {
+        "fy": 2023,
+        "aum_b": 651,
+        "fgaum_b": 493,
+        "inflows_b": 157,
+        "origination_b": 97,
+        "origination_definition": "debt_only",
+        "deployment_b": 148,
+        "fre_b": 1.768,
+        "sre_b": 3.108,
+        "pii_b": 0.083,
+        "ani_b": 4.082,
+        "ani_per_share": 6.74
+      },
+      {
+        "fy": 2024,
+        "aum_b": 751,
+        "fgaum_b": 569,
+        "inflows_b": 152,
+        "origination_b": 222,
+        "origination_definition": "debt_plus_equity",
+        "deployment_b": 266,
+        "fre_b": 2.063,
+        "sre_b": 3.224,
+        "pii_b": 0.271,
+        "ani_b": 4.565,
+        "ani_per_share": 7.43
+      },
+      {
+        "fy": 2025,
+        "aum_b": 938,
+        "fgaum_b": 709,
+        "inflows_b": 228,
+        "origination_b": 309,
+        "origination_definition": "debt_plus_equity",
+        "deployment_b": 386,
+        "fre_b": 2.528,
+        "sre_b": 3.361,
+        "pii_b": 0.338,
+        "ani_b": 5.195,
+        "ani_per_share": 8.38
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "3Q24",
+        "fre_m": 531,
+        "sre_m": 856,
+        "ani_m": 1132,
+        "ani_per_share": 1.85,
+        "aum_b": 733,
+        "fgaum_b": 551,
+        "inflows_b": 42,
+        "origination_b": 62,
+        "deployment_b": 76
+      },
+      {
+        "quarter": "4Q24",
+        "fre_m": 554,
+        "sre_m": 841,
+        "ani_m": 1360,
+        "ani_per_share": 2.22,
+        "aum_b": 751,
+        "fgaum_b": 569,
+        "inflows_b": 33,
+        "origination_b": 61,
+        "deployment_b": 63
+      },
+      {
+        "quarter": "1Q25",
+        "fre_m": 559,
+        "sre_m": 804,
+        "ani_m": 1119,
+        "ani_per_share": 1.82,
+        "aum_b": 785,
+        "fgaum_b": 595,
+        "inflows_b": 43,
+        "origination_b": 56,
+        "deployment_b": 84
+      },
+      {
+        "quarter": "2Q25",
+        "fre_m": 627,
+        "sre_m": 821,
+        "ani_m": 1179,
+        "ani_per_share": 1.92,
+        "aum_b": 840,
+        "fgaum_b": 638,
+        "inflows_b": 61,
+        "origination_b": 81,
+        "deployment_b": 90
+      },
+      {
+        "quarter": "3Q25",
+        "fre_m": 652,
+        "sre_m": 871,
+        "ani_m": 1357,
+        "ani_per_share": 2.17,
+        "aum_b": 908,
+        "fgaum_b": 685,
+        "inflows_b": 82,
+        "origination_b": 75,
+        "deployment_b": 99
+      },
+      {
+        "quarter": "4Q25",
+        "fre_m": 690,
+        "sre_m": 865,
+        "ani_m": 1540,
+        "ani_per_share": 2.47,
+        "aum_b": 938,
+        "fgaum_b": 709,
+        "inflows_b": 42,
+        "origination_b": 97,
+        "deployment_b": 113
+      },
+      {
+        "quarter": "1Q26",
+        "fre_m": 728,
+        "sre_m": 719,
+        "ani_m": 1208,
+        "ani_per_share": 1.94,
+        "aum_b": 1026,
+        "fgaum_b": 836,
+        "inflows_b": 115,
+        "origination_b": 71,
+        "deployment_b": 103
+      },
+      {
+        "quarter": "2Q26",
+        "fre_m": 785,
+        "sre_m": 877,
+        "ani_m": 1314,
+        "ani_per_share": 2.11,
+        "aum_b": 1047,
+        "fgaum_b": 858,
+        "inflows_b": 60,
+        "origination_b": 74,
+        "deployment_b": 111
+      }
+    ],
+    "ltm_2q26": {
+      "fre_b": 2.855,
+      "sre_b": 3.332,
+      "pii_b": 0.368,
+      "ani_b": 5.419,
+      "ani_per_share": 8.69,
+      "p_ani": 15.27
+    },
+    "base_forecast": [
+      {
+        "fy": 2026,
+        "fre_b": 3.0,
+        "sre_b": 3.35,
+        "pii_b": 0.35,
+        "holdco_b": 0.15,
+        "tax_rate": 0.19,
+        "diluted_shares_m": 620,
+        "ani_per_share": 8.56
+      },
+      {
+        "fy": 2027,
+        "fre_b": 3.45,
+        "sre_b": 3.65,
+        "pii_b": 0.38,
+        "holdco_b": 0.18,
+        "tax_rate": 0.19,
+        "diluted_shares_m": 612,
+        "ani_per_share": 9.66
+      },
+      {
+        "fy": 2028,
+        "fre_b": 4.05,
+        "sre_b": 4.1,
+        "pii_b": 0.42,
+        "holdco_b": 0.22,
+        "tax_rate": 0.19,
+        "diluted_shares_m": 606,
+        "ani_per_share": 11.16
+      },
+      {
+        "fy": 2029,
+        "fre_b": 4.8,
+        "sre_b": 4.65,
+        "pii_b": 0.45,
+        "holdco_b": 0.27,
+        "tax_rate": 0.19,
+        "diluted_shares_m": 600,
+        "ani_per_share": 13.0
+      }
+    ],
+    "ceilings": [
+      "FY23 origination definition differs (debt only)",
+      "organic/inorganic AUM decomposition incomplete in every period"
+    ]
+  },
+  "retirement_services": {
+    "q2_2026": {
+      "average_net_invested_assets_b": 307.19,
+      "fixed_income_assets_b": 291.771,
+      "alternative_assets_b": 15.419,
+      "fixed_income_earned_rate": 0.0505,
+      "alternative_return": 0.0904,
+      "net_investment_earned_rate": 0.0525,
+      "cost_of_funds": 0.0383,
+      "investment_spread": 0.0147,
+      "net_investment_spread": 0.0114,
+      "sre_m": 877
+    },
+    "capital": {
+      "consolidated_rbc_ye2025": 4.41,
+      "consolidated_rbc_ye2024": 4.3,
+      "deployable_capital_ye2025_b": 8.6
+    }
+  },
+  "kpis": [
+    {
+      "name": "FRE growth / margin",
+      "current": "2Q26 FRE $785M; margin 58.5%",
+      "thresholds": {
+        "green": "LTM growth >=15% and margin >=58%",
+        "yellow": "growth 8-15% or margin 55-58%",
+        "red": "growth <8% for 2 quarters or margin <55%"
+      }
+    },
+    {
+      "name": "Organic FGAUM",
+      "current": "FGAUM $858B; 2026 includes inorganic lift",
+      "thresholds": {
+        "green": "ex-M&A high-single/low-double-digit growth",
+        "yellow": "low-single-digit; acquisition dependence rising",
+        "red": "flat/negative organic for 2 quarters"
+      }
+    },
+    {
+      "name": "Origination conversion",
+      "current": "LTM origination $317B; 2Q ACS fees $277M",
+      "thresholds": {
+        "green": "origination >=$275B and ACS/FGAUM grow",
+        "yellow": "volume strong but conversion weak",
+        "red": "LTM ~$225-250B or repeated conversion deterioration"
+      }
+    },
+    {
+      "name": "Athene net spread",
+      "current": "1.14%",
+      "thresholds": {
+        "green": ">=~1.15% with stable credit",
+        "yellow": "1.00-1.15%",
+        "red": "<1.00% for 2 quarters or material credit loss"
+      }
+    },
+    {
+      "name": "Consolidated RBC",
+      "current": "441% YE2025",
+      "thresholds": {
+        "green": ">=400%",
+        "yellow": "350-400%",
+        "red": "<350% or rating downgrade"
+      }
+    },
+    {
+      "name": "ANI diluted shares",
+      "current": "624M 2Q26",
+      "thresholds": {
+        "green": "trajectory toward ~600M by 2029",
+        "yellow": "605-625M",
+        "red": ">625-630M sustained with weak ANI/share"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Downside",
+      "probability": 0.25,
+      "fre_2029_b": 3.7,
+      "sre_2029_b": 3.3,
+      "pii_2029_b": 0.2,
+      "holdco_2029_b": 0.3,
+      "tax_rate": 0.2,
+      "diluted_shares_m": 630,
+      "ani_per_share": 8.7619,
+      "terminal_multiple": 12.0,
+      "per_share_value": 105.14,
+      "total_irr": -0.049
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "fre_2029_b": 4.8,
+      "sre_2029_b": 4.65,
+      "pii_2029_b": 0.45,
+      "holdco_2029_b": 0.27,
+      "tax_rate": 0.19,
+      "diluted_shares_m": 600,
+      "ani_per_share": 13.0005,
+      "terminal_multiple": 16.0,
+      "per_share_value": 208.01,
+      "total_irr": 0.164
+    },
+    {
+      "name": "Upside",
+      "probability": 0.25,
+      "fre_2029_b": 5.2,
+      "sre_2029_b": 5.2,
+      "pii_2029_b": 0.75,
+      "holdco_2029_b": 0.25,
+      "tax_rate": 0.18,
+      "diluted_shares_m": 590,
+      "ani_per_share": 15.1492,
+      "terminal_multiple": 18.0,
+      "per_share_value": 272.68,
+      "total_irr": 0.263
+    }
+  ],
+  "valuation": {
+    "mode": "Mode E Financial Institution with segment SOTP overlay",
+    "current_price": 132.69,
+    "current_ltm_ani_per_share": 8.69,
+    "current_p_ani": 15.27,
+    "probability_weighted_2029_value": 198.46,
+    "expected_total_irr": 0.148,
+    "base_value": 208.01,
+    "sotp_crosscheck_per_share": 210.72,
+    "historical_adjusted_ttm_pe_average": 16.8,
+    "current_hist_context": "below short-history average",
+    "starting_dividend_per_share": 2.25,
+    "starting_dividend_yield": 0.017
+  },
+  "reverse_expectations": {
+    "total_return_hurdle": 0.13,
+    "assumed_starting_dividend_yield": 0.017,
+    "required_2029_price": 189.93,
+    "terminal_multiple": 15.0,
+    "required_ani_per_share": 12.66,
+    "required_ani_b_at_600m_shares": 7.6,
+    "required_fre_plus_sre_b": 9.25,
+    "illustrative_required_fgaum_b_range": [
+      1150,
+      1250
+    ],
+    "illustrative_required_net_invested_assets_b_range": [
+      375,
+      410
+    ],
+    "operating_kpis": [
+      "FGAUM",
+      "ACS fee conversion",
+      "Athene net spread",
+      "net invested assets",
+      "ANI diluted shares"
+    ]
+  },
+  "consensus": {
+    "fy2026_ani_like_eps_range": [
+      8.8,
+      9.2
+    ],
+    "fy2027_ani_like_eps_range": [
+      10.3,
+      11.2
+    ],
+    "target_price_average": 152.84,
+    "target_price_low": 130,
+    "target_price_high": 173,
+    "short_interest_2026_07_31_m": 23.43,
+    "short_percent_float": 0.0443,
+    "days_to_cover": 5.8,
+    "revision_trend": "post-2Q targets modestly positive; exact adjusted EPS normalization varies by vendor",
+    "ceiling": "vendor GAAP/adjusted definitions and timely 13F/Form4 positioning cannot be fully normalized"
+  },
+  "stance": {
+    "zone": "조건부 관심",
+    "price_bands": {
+      "active_interest_max": 120,
+      "attractive_entry_low": 120,
+      "attractive_entry_high": 132,
+      "conditional_low": 132,
+      "conditional_high": 140,
+      "hold_watch_low": 140,
+      "hold_watch_high": 150,
+      "avoid_chasing_above": 150
+    },
+    "horizon": "through 2029",
+    "thesis": "FRE quality and Athene spread stability can support 14-15% expected total IRR without full $15 management target"
+  },
+  "catalysts": [
+    {
+      "when": "2026-09 to 2026-10",
+      "event": "daily-pricing coverage milestone",
+      "sensitivity": "M"
+    },
+    {
+      "when": "2026-10 to 2026-11",
+      "event": "3Q26 earnings",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2H26",
+      "event": "cyber investigation/regulatory/client outcomes",
+      "sensitivity": "M-H"
+    },
+    {
+      "when": "2H26-2027",
+      "event": "DOL alternatives/DC rule progress",
+      "sensitivity": "M"
+    },
+    {
+      "when": "~2027-02",
+      "event": "FY26 earnings",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027 H1",
+      "event": "Athora/Bridge integration evidence",
+      "sensitivity": "M"
+    }
+  ],
+  "ceilings": [
+    {
+      "topic": "Origination demand / funnel",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "impact": "scenario ranges widened; no direct TAM-to-revenue formula"
+    },
+    {
+      "topic": "Athora/PIC exact fee economics",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "impact": "no separate optionality value"
+    },
+    {
+      "topic": "Market-structure monetization",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "impact": "Base option value approximately zero"
+    },
+    {
+      "topic": "Consensus/positioning",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "impact": "use ranges; no single precise consensus"
+    },
+    {
+      "topic": "Integrated alt-manager/insurer base rate",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "impact": "scenario probabilities are analytical, not empirical frequencies"
+    },
+    {
+      "topic": "Cyber final cost",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "impact": "event tripwire; no quantified liability in Base"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1/Ch3/App C"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch1/App E1"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3.2/App E2"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1.4/Ch3.3"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1.5/Ch3.6"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1/Ch6"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "Ch2.1"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "Ch2/App C"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4/App D"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3.1/Ch4.3"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3.2/App E2"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3.4/App E3"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3.3/Ch4.4"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3.3/Ch4.4"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3.4/Ch6.2"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3.4/Ch4.6"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3.5/App E4"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3.6-3.7/App E5"
+    },
+    {
+      "rc_id": "RC-020",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3.8"
+    },
+    {
+      "rc_id": "RC-021",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4/App D"
+    },
+    {
+      "rc_id": "RC-022",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4.5/App B"
+    },
+    {
+      "rc_id": "RC-023",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4.6/App I"
+    },
+    {
+      "rc_id": "RC-024",
+      "status": "COMPLETE",
+      "h3_locator": "Ch2.4/Ch4.6"
+    },
+    {
+      "rc_id": "RC-025",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3.7/App E5"
+    },
+    {
+      "rc_id": "RC-026",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1/Ch4/Ch6"
+    },
+    {
+      "rc_id": "RC-027",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch0/Ch5/App E6-7"
+    },
+    {
+      "rc_id": "RC-028",
+      "status": "COMPLETE",
+      "h3_locator": "Ch5.2-5.3/App G"
+    },
+    {
+      "rc_id": "RC-029",
+      "status": "COMPLETE",
+      "h3_locator": "Ch5.5-5.6/App H"
+    },
+    {
+      "rc_id": "RC-030",
+      "status": "COMPLETE",
+      "h3_locator": "Ch5.7/App G"
+    },
+    {
+      "rc_id": "RC-031",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch5.4/Ch6.2/App E8"
+    },
+    {
+      "rc_id": "RC-032",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch0/Ch6/App A/E9"
+    }
+  ],
+  "source_registry": [
+    {
+      "id": "S1",
+      "name": "Apollo 2Q26 Earnings",
+      "url": "https://www.sec.gov/Archives/edgar/data/1858681/000185868126000036/agmearningsrelease2q2026.htm"
+    },
+    {
+      "id": "S2",
+      "name": "Apollo 2Q26 Form 10-Q",
+      "url": "https://ir.apollo.com/sec-filings/content/0001858681-26-000040/apo-20260630.htm"
+    },
+    {
+      "id": "S3",
+      "name": "Apollo 2025 Form 10-K",
+      "url": "https://ir.apollo.com/sec-filings/content/0001858681-26-000013/apo-20251231.htm"
+    },
+    {
+      "id": "S4",
+      "name": "Apollo 2026 DEF 14A",
+      "url": "https://www.sec.gov/Archives/edgar/data/1858681/000119312526177321/d948913ddef14a.htm"
+    },
+    {
+      "id": "S10",
+      "name": "Federal Reserve Financial Stability Report May 2026",
+      "url": "https://www.federalreserve.gov/publications/2026-may-financial-stability-report.htm"
+    },
+    {
+      "id": "S11",
+      "name": "LIMRA 2Q26 U.S. annuity sales",
+      "url": "https://www.limra.com/en/newsroom/news-releases/2026/limra-u.s.-annuity-sales-set-new-quarterly-record-totaling-%24123.9-billion-in-the-second-quarter-of-2026/"
+    },
+    {
+      "id": "S13",
+      "name": "Reuters private-credit redemptions 2026-08-07",
+      "url": "https://www.reuters.com/legal/transactional/private-credit-roundup-weaker-results-redemption-pressures-ease-2026-08-07/"
+    },
+    {
+      "id": "S14",
+      "name": "Reuters Apollo data breach 2026-08-21",
+      "url": "https://www.reuters.com/technology/apollo-global-confirms-data-breach-after-hackers-target-financial-firms-2026-08-21/"
+    },
+    {
+      "id": "S20",
+      "name": "Yahoo Finance APO snapshot 2026-08-21",
+      "url": "https://finance.yahoo.com/quote/APO/"
+    },
+    {
+      "id": "S21",
+      "name": "HistoricalPEratio APO",
+      "url": "https://www.historicalperatio.com/apo-pe-ratio-history.html"
+    }
+  ],
+  "publishing": {
+    "report_data_pack_emitted": true,
+    "data_pack_report_parity_target": "PASS",
+    "visual_data_source_registry": "this JSON is authoritative for decision-relevant visuals",
+    "rc_terminal_counts": {
+      "complete": 22,
+      "primary_source_ceiling": 10,
+      "not_material": 0,
+      "contradicted": 0,
+      "unresolved": 0
+    }
+  },
+  "valuation_history": [
+    {
+      "period": "1Q23",
+      "date": "2023-05-09",
+      "price": 62.26,
+      "ttm_ani_eps": 5.11,
+      "p_ani": 12.2
+    },
+    {
+      "period": "2Q23",
+      "date": "2023-08-03",
+      "price": 85.93,
+      "ttm_ani_eps": 5.87,
+      "p_ani": 14.6
+    },
+    {
+      "period": "3Q23",
+      "date": "2023-11-01",
+      "price": 83.65,
+      "ttm_ani_eps": 6.25,
+      "p_ani": 13.4
+    },
+    {
+      "period": "4Q23",
+      "date": "2024-02-08",
+      "price": 107.41,
+      "ttm_ani_eps": 6.74,
+      "p_ani": 15.9
+    },
+    {
+      "period": "1Q24",
+      "date": "2024-05-02",
+      "price": 112.07,
+      "ttm_ani_eps": 7.04,
+      "p_ani": 15.9
+    },
+    {
+      "period": "2Q24",
+      "date": "2024-08-01",
+      "price": 115.97,
+      "ttm_ani_eps": 6.98,
+      "p_ani": 16.6
+    },
+    {
+      "period": "3Q24",
+      "date": "2024-11-06",
+      "price": 149.27,
+      "ttm_ani_eps": 7.12,
+      "p_ani": 21.0
+    },
+    {
+      "period": "4Q24",
+      "date": "2025-02-04",
+      "price": 162.59,
+      "ttm_ani_eps": 7.43,
+      "p_ani": 21.9
+    },
+    {
+      "period": "1Q25",
+      "date": "2025-05-02",
+      "price": 135.37,
+      "ttm_ani_eps": 7.53,
+      "p_ani": 18.0
+    },
+    {
+      "period": "2Q25",
+      "date": "2025-08-05",
+      "price": 145.54,
+      "ttm_ani_eps": 7.81,
+      "p_ani": 18.6
+    },
+    {
+      "period": "3Q25",
+      "date": "2025-11-04",
+      "price": 130.51,
+      "ttm_ani_eps": 8.13,
+      "p_ani": 16.1
+    },
+    {
+      "period": "4Q25",
+      "date": "2026-02-09",
+      "price": 133.95,
+      "ttm_ani_eps": 8.38,
+      "p_ani": 16.0
+    },
+    {
+      "period": "1Q26",
+      "date": "2026-05-06",
+      "price": 129.53,
+      "ttm_ani_eps": 8.5,
+      "p_ani": 15.2
+    },
+    {
+      "period": "Current",
+      "date": "2026-08-21",
+      "price": 132.69,
+      "ttm_ani_eps": 8.69,
+      "p_ani": 15.27
+    }
+  ]
+}

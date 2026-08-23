@@ -1,0 +1,1557 @@
+{
+  "meta": {
+    "ticker": "RKLB",
+    "company": "Rocket Lab Corporation",
+    "version": "2.0",
+    "T0": "2026-08-21 KST",
+    "price_asof": "2026-08-20 U.S. close",
+    "filing_asof": "2026-08-13",
+    "consensus_asof": "2026-08-21 nearest public datasets",
+    "current_price": 72.95,
+    "currency": "USD",
+    "valuation_horizon": "2031-12-31",
+    "economic_equivalent_current_shares_m": 639.3,
+    "economic_equivalent_equity_value_usd_b": 46.64
+  },
+  "research": {
+    "research_complete": true,
+    "decision_evidence_sufficiency": "MEDIUM",
+    "critical_ceiling_count": 9,
+    "high_sensitivity_unknown_count": 7,
+    "latest_filing_check": "PASS",
+    "rc_unresolved": 0,
+    "rc_h3_coverage_rate": 1.0,
+    "base_rate": "PRIMARY_SOURCE_CEILING",
+    "note": "Research completeness and decision-evidence sufficiency are intentionally separate."
+  },
+  "industry": {
+    "overall_attractiveness": "MIXED",
+    "dimensions": [
+      {
+        "dimension": "demand durability",
+        "rating": "FAVORABLE",
+        "confidence": "HIGH",
+        "evidence": "Defense proliferation, commercial constellation deployment, responsive missions and mission-critical communications support multi-year demand."
+      },
+      {
+        "dimension": "supply response / capital cycle",
+        "rating": "MIXED",
+        "confidence": "MEDIUM",
+        "evidence": "Dedicated small launch is supply-disciplined by failures, while medium lift and D2D/NTN are supply-rich / capital-intensive."
+      },
+      {
+        "dimension": "pricing power structure",
+        "rating": "MIXED",
+        "confidence": "MEDIUM",
+        "evidence": "Mission-specific dedicated launch and assurance can command premiums, but rideshare and multi-vendor procurement cap universal pricing power."
+      },
+      {
+        "dimension": "profit-pool direction",
+        "rating": "FAVORABLE",
+        "confidence": "MEDIUM",
+        "evidence": "Rocket Lab is moving from components toward spacecraft prime/mission integration and, if Iridium closes, recurring network services."
+      },
+      {
+        "dimension": "competitive intensity",
+        "rating": "UNFAVORABLE",
+        "confidence": "HIGH",
+        "evidence": "Falcon 9 is a powerful incumbent in medium lift and D2D/NTN is attracting large amounts of capital."
+      },
+      {
+        "dimension": "cyclicality / regulatory dependence",
+        "rating": "MIXED",
+        "confidence": "MEDIUM",
+        "evidence": "Government demand is durable but procurement is multi-vendor and transaction/network economics depend on regulatory and contract outcomes."
+      },
+      {
+        "dimension": "technology substitution risk",
+        "rating": "MIXED",
+        "confidence": "MEDIUM",
+        "evidence": "Iridium’s differentiated mission-critical L-band use cases are durable, but D2D/NTN can change parts of the connectivity market."
+      },
+      {
+        "dimension": "company-specific transmission",
+        "rating": "MIXED",
+        "confidence": "HIGH",
+        "evidence": "Demand, backlog and revenue growth are visible; cash conversion, financing and dilution determine how much reaches per-share value."
+      }
+    ],
+    "capital_cycle_ledger": [
+      {
+        "arena": "Dedicated small / responsive launch",
+        "position": "MATURE NICHE / SUPPLY DISCIPLINED BY FAILURES",
+        "direction": "stable-to-favorable",
+        "lead_lag": "flight heritage and cadence",
+        "company_transmission": "Electron/HASTE heritage supports repeat awards; rideshare caps price ceiling",
+        "confidence": "HIGH"
+      },
+      {
+        "arena": "Medium lift",
+        "position": "LATE EXPANSION / SUPPLY-RICH",
+        "direction": "competitive",
+        "lead_lag": "qualification and launch cadence",
+        "company_transmission": "Neutron must prove more than orbital reach; economics and repeat cadence matter",
+        "confidence": "HIGH"
+      },
+      {
+        "arena": "Defense proliferated spacecraft",
+        "position": "EARLY EXPANSION",
+        "direction": "favorable demand / execution-heavy",
+        "lead_lag": "tranche awards to delivery cash conversion",
+        "company_transmission": "Prime status expands profit pool but fixed-price risk can absorb margin/cash",
+        "confidence": "HIGH"
+      },
+      {
+        "arena": "Space components / spacecraft",
+        "position": "EARLY-TO-MID EXPANSION",
+        "direction": "expanding",
+        "lead_lag": "qualification, supply chain, program ramps",
+        "company_transmission": "Vertical integration expands addressable profit but increases capital burden",
+        "confidence": "MEDIUM"
+      },
+      {
+        "arena": "MSS / L-band network",
+        "position": "MATURE INSTALLED NETWORK",
+        "direction": "stable recurring",
+        "lead_lag": "subscriber/service growth and refresh cycle",
+        "company_transmission": "Iridium adds recurring OCF but next-gen capital cycle matters after 2030",
+        "confidence": "HIGH"
+      },
+      {
+        "arena": "D2D / NTN",
+        "position": "EARLY RE-EXPANSION",
+        "direction": "capital inflow / competition rising",
+        "lead_lag": "network deployment and commercial adoption",
+        "company_transmission": "Expands connectivity demand but increases substitution/competitive risk",
+        "confidence": "MEDIUM"
+      }
+    ],
+    "leading_indicators": [
+      "Backlog delivery/revenue/cash conversion",
+      "Electron/HASTE cadence and repeat booking",
+      "Neutron qualification → first flight → repeat cadence",
+      "SDA/MDA/Space Force milestone delivery and program margin",
+      "Iridium subscriber/service growth, EMSS economics and next-gen capital plan",
+      "Combined diluted share count and net debt"
+    ]
+  },
+  "business_quality": {
+    "ledger": [
+      {
+        "dimension": "Profitability",
+        "rating": "ADEQUATE",
+        "confidence": "HIGH",
+        "facts": [
+          "Gross margin rose from 21.0% in 2023 to 34.4% in 2025; Q2 2026 Launch Services GM was about 42.9%."
+        ],
+        "counter_evidence": [
+          "Operating income and FCF remain negative."
+        ],
+        "ceiling": null
+      },
+      {
+        "dimension": "Incremental Return On Capital",
+        "rating": "UNKNOWN",
+        "confidence": "LOW",
+        "facts": [
+          "Revenue and gross profit scale rapidly across acquired capabilities."
+        ],
+        "counter_evidence": [
+          "Acquisition-level organic/incremental ROIC is not disclosed and recent assets are early/loss-making."
+        ],
+        "ceiling": "Decision-relevant return/ROIC evidence remains incomplete."
+      },
+      {
+        "dimension": "Reinvestment Runway",
+        "rating": "STRONG",
+        "confidence": "MEDIUM",
+        "facts": [
+          "Defense spacecraft, responsive launch, Neutron and satellite services provide multiple funded/qualified growth lanes."
+        ],
+        "counter_evidence": [
+          "Runway is capital intensive and execution bottlenecks are substantial."
+        ],
+        "ceiling": null
+      },
+      {
+        "dimension": "Cash Conversion",
+        "rating": "WEAK",
+        "confidence": "HIGH",
+        "facts": [
+          "Backlog is contractually defined and gross margin has improved."
+        ],
+        "counter_evidence": [
+          "1H26 CFO -$134.4M; receivables, contract assets and inventory rose sharply."
+        ],
+        "ceiling": null
+      },
+      {
+        "dimension": "Balance Sheet Resilience",
+        "rating": "ADEQUATE",
+        "confidence": "HIGH",
+        "facts": [
+          "June 2026 cash plus marketable securities were about $2.39B after large ATM raises."
+        ],
+        "counter_evidence": [
+          "Iridium acquisition can add substantial debt and/or equity dilution."
+        ],
+        "ceiling": null
+      },
+      {
+        "dimension": "Revenue Durability",
+        "rating": "ADEQUATE",
+        "confidence": "MEDIUM",
+        "facts": [
+          "$2.356B backlog, government programs, repeat launch customers and prospective recurring Iridium services."
+        ],
+        "counter_evidence": [
+          "Space Systems FFP execution and launch demand remain milestone/lumpy; acquisition has not closed."
+        ],
+        "ceiling": null
+      },
+      {
+        "dimension": "Customer Concentration Switching",
+        "rating": "ADEQUATE",
+        "confidence": "HIGH",
+        "facts": [
+          "Qualification, mission integration and repeat dedicated launches create switching frictions."
+        ],
+        "counter_evidence": [
+          "Government concentration is high and multi-vendor procurement is deliberate."
+        ],
+        "ceiling": null
+      },
+      {
+        "dimension": "Pricing Power",
+        "rating": "ADEQUATE",
+        "confidence": "MEDIUM",
+        "facts": [
+          "Dedicated launch and mission assurance can command premiums vs rideshare for specific jobs."
+        ],
+        "counter_evidence": [
+          "Rideshare, procurement competition and mature satcom alternatives cap universal pricing power."
+        ],
+        "ceiling": null
+      },
+      {
+        "dimension": "Capital Allocation",
+        "rating": "UNKNOWN",
+        "confidence": "MEDIUM",
+        "facts": [
+          "Acquisitions have assembled an increasingly integrated capability stack."
+        ],
+        "counter_evidence": [
+          "Deal-level returns are not yet separable; Iridium is transformative and expensive relative to standalone reference values."
+        ],
+        "ceiling": "Decision-relevant return/ROIC evidence remains incomplete."
+      },
+      {
+        "dimension": "Dilution Discipline",
+        "rating": "WEAK",
+        "confidence": "HIGH",
+        "facts": [
+          "Equity capital was raised at elevated prices, improving liquidity."
+        ],
+        "counter_evidence": [
+          "1H26 ATM gross proceeds $1.53B, note conversions, remaining ATM capacity about $1.944B, preferred and transaction shares expand the denominator."
+        ],
+        "ceiling": null
+      },
+      {
+        "dimension": "Per Share Compounding",
+        "rating": "UNKNOWN",
+        "confidence": "MEDIUM",
+        "facts": [
+          "Enterprise revenue/gross profit growth is strong."
+        ],
+        "counter_evidence": [
+          "Weighted-average shares grew and FCF/share remains negative; acquisition financing outcome is unresolved."
+        ],
+        "ceiling": "Decision-relevant return/ROIC evidence remains incomplete."
+      }
+    ],
+    "summary": "Strong reinvestment runway coexists with weak cash conversion and dilution discipline; no composite score is used."
+  },
+  "management": {
+    "forecast_calibration": [
+      {
+        "domain": "Quarterly revenue guidance",
+        "classification": "WELL_CALIBRATED",
+        "reason": "8Q pattern largely at upper end / above."
+      },
+      {
+        "domain": "Quarterly gross-margin guidance",
+        "classification": "WELL_CALIBRATED",
+        "reason": "Repeated outcomes in/above range."
+      },
+      {
+        "domain": "Neutron first-flight / major development timing",
+        "classification": "PROMOTIONAL",
+        "reason": "Multi-step schedule slips."
+      },
+      {
+        "domain": "Consistent quarterly capex guidance",
+        "classification": "INSUFFICIENT_HISTORY",
+        "reason": "Source format insufficient for 8–12Q calibration."
+      }
+    ],
+    "overall_composite_score": null,
+    "principle": "Different forecast domains retain separate calibration labels."
+  },
+  "accounting_quality": {
+    "screen": "FLAGS_NOTED",
+    "flags": [
+      "Negative operating cash flow despite revenue/gross-margin growth",
+      "Receivables, contract assets and inventory increased materially in 1H26",
+      "SBC and acquisition accounting remain material",
+      "Large financing activity changes the per-share denominator"
+    ],
+    "material_concern": false
+  },
+  "financials": {
+    "rocket_lab_annual": [
+      {
+        "fy": 2023,
+        "revenue_usd_m": 244.6,
+        "gross_profit_usd_m": 51.4,
+        "gross_margin": 0.21,
+        "operating_income_usd_m": -177.9,
+        "net_income_usd_m": -182.6,
+        "ocf_usd_m": -98.9,
+        "capex_usd_m": 54.7,
+        "simple_fcf_usd_m": -153.6,
+        "sbc_usd_m": 53.5,
+        "weighted_avg_shares_m": 481.8
+      },
+      {
+        "fy": 2024,
+        "revenue_usd_m": 436.2,
+        "gross_profit_usd_m": 116.1,
+        "gross_margin": 0.266,
+        "operating_income_usd_m": -189.8,
+        "net_income_usd_m": -190.2,
+        "ocf_usd_m": -48.9,
+        "capex_usd_m": 67.1,
+        "simple_fcf_usd_m": -116.0,
+        "sbc_usd_m": 56.8,
+        "weighted_avg_shares_m": 495.9
+      },
+      {
+        "fy": 2025,
+        "revenue_usd_m": 601.8,
+        "gross_profit_usd_m": 207.2,
+        "gross_margin": 0.344,
+        "operating_income_usd_m": -228.8,
+        "net_income_usd_m": -198.2,
+        "ocf_usd_m": -165.5,
+        "capex_usd_m": 156.3,
+        "simple_fcf_usd_m": -321.8,
+        "sbc_usd_m": 71.1,
+        "weighted_avg_shares_m": 530.7
+      }
+    ],
+    "rocket_lab_latest_8q": [
+      {
+        "quarter": "Q3 2024",
+        "revenue_usd_m": 104.8,
+        "gross_margin": 0.267
+      },
+      {
+        "quarter": "Q4 2024",
+        "revenue_usd_m": 132.4,
+        "gross_margin": 0.278
+      },
+      {
+        "quarter": "Q1 2025",
+        "revenue_usd_m": 122.6,
+        "gross_margin": 0.288
+      },
+      {
+        "quarter": "Q2 2025",
+        "revenue_usd_m": 144.5,
+        "gross_margin": 0.321
+      },
+      {
+        "quarter": "Q3 2025",
+        "revenue_usd_m": 155.1,
+        "gross_margin": 0.37
+      },
+      {
+        "quarter": "Q4 2025",
+        "revenue_usd_m": 179.7,
+        "gross_margin": 0.38
+      },
+      {
+        "quarter": "Q1 2026",
+        "revenue_usd_m": 200.3,
+        "gross_margin": 0.382
+      },
+      {
+        "quarter": "Q2 2026",
+        "revenue_usd_m": 234.1,
+        "gross_margin": 0.361
+      }
+    ],
+    "q2_2026": {
+      "revenue_usd_m": 234.1,
+      "backlog_usd_b": 2.356,
+      "backlog_recognition_next_12m_pct": 0.45,
+      "space_systems_revenue_usd_m": 189.5,
+      "space_systems_gross_profit_usd_m": 65.5,
+      "space_systems_backlog_usd_b": 1.416,
+      "h1_2026_ocf_usd_m": -134.4,
+      "h1_2026_simple_fcf_usd_m": -187.5,
+      "cash_and_marketable_securities_usd_b": 2.39
+    },
+    "iridium": {
+      "fy2025_revenue_usd_m": 871.7,
+      "fy2025_service_revenue_usd_m": 634.0,
+      "fy2025_oebitda_usd_m": 495.3,
+      "fy2025_ocf_usd_m": 400.1,
+      "fy2025_capex_usd_m": 100.3,
+      "fy2025_subscribers_m": 2.537,
+      "q2_2026_revenue_usd_m": 225.2,
+      "q2_2026_oebitda_usd_m": 119.1,
+      "q2_2026_subscribers_m": 2.627,
+      "q2_2026_service_mix": 0.72,
+      "2031_extended_forecast_unlevered_fcf_usd_m": -21
+    }
+  },
+  "market_expectations": {
+    "standalone_revenue_consensus_usd_b": {
+      "2026": [
+        0.919,
+        0.953
+      ],
+      "2027": [
+        1.281,
+        1.354
+      ],
+      "2028": [
+        1.634,
+        1.76
+      ]
+    },
+    "h3_standalone_base_usd_b": {
+      "2026": 0.94,
+      "2027": 1.3,
+      "2028": 1.8
+    },
+    "analyst_target_snapshot": {
+      "analysts": 18,
+      "average": 112.76,
+      "median": 120.0,
+      "low": 64.0,
+      "high": 150.0
+    },
+    "transaction_market_anchor": {
+      "evercore_2027e_ev_revenue_x": 42,
+      "evercore_2028e_ev_revenue_x": 33,
+      "evercore_2031_multiple_range": [
+        20,
+        40
+      ],
+      "evercore_present_value_range": [
+        46.23,
+        102.45
+      ]
+    },
+    "ceilings": [
+      "Institutional flows incomplete",
+      "Exact historical valuation percentile incomplete"
+    ]
+  },
+  "variant_perceptions": [
+    {
+      "driver": "Cash conversion vs headline growth",
+      "market_consensus_view": "Backlog and revenue growth can support a premium growth valuation.",
+      "our_view": "Revenue/GP growth is real but per-share value depends on working capital, FCF and dilution.",
+      "why_mispriced": "Growth headlines are easier to observe than program-level cash economics.",
+      "why_persistent": "Program-level Space Systems cash margin is not disclosed.",
+      "why_converge": "2026–2028 delivery, margin and working-capital data will reveal conversion quality.",
+      "wrong_signal": "Revenue/GP scales and OCF/FCF still fail to improve through 2028."
+    },
+    {
+      "driver": "Neutron",
+      "market_consensus_view": "First-flight progress can unlock major medium-lift optionality.",
+      "our_view": "First flight is necessary but mature reuse/cadence/cost/ASP/GM drives execution value.",
+      "why_mispriced": "Technical milestones are more salient than mature unit economics.",
+      "why_persistent": "No flight history or mature cost disclosure exists yet.",
+      "why_converge": "First and repeat flights plus cadence evidence in 2026–2029.",
+      "wrong_signal": "Repeated redesign/failure or no credible repeat-flight path by end-2027."
+    },
+    {
+      "driver": "Iridium acquisition",
+      "market_consensus_view": "Recurring Iridium cash flow diversifies Rocket Lab and vertical integration can create synergy.",
+      "our_view": "Standalone cash flow does not automatically become RKLB per-share cash flow after purchase price, financing, dilution and refresh capex.",
+      "why_mispriced": "Strategic fit is visible before retained per-share economics are measurable.",
+      "why_persistent": "Permanent financing and synergy retention are primary-source ceilings.",
+      "why_converge": "Financing disclosure, closing and post-close FCF/share evidence in 2027–2030.",
+      "wrong_signal": "Diluted FCF/share deteriorates despite acquired cash generation."
+    },
+    {
+      "driver": "Terminal multiple regime",
+      "market_consensus_view": "Rocket Lab may retain a high-growth scarcity multiple.",
+      "our_view": "Iridium adds a mature/capital-intensive mix that may normalize the blended multiple.",
+      "why_mispriced": "Capital-market identity can remain anchored to high-growth space/tech peers.",
+      "why_persistent": "2031 business mix and growth durability are unresolved.",
+      "why_converge": "Growth duration, combined margins, FCF and capital intensity become observable into 2028–2031.",
+      "wrong_signal": "Combined growth/margins remain high enough to justify scarcity multiples for longer."
+    }
+  ],
+  "decision_critical_unknowns": [
+    {
+      "unknown_id": "U-001",
+      "unknown": "Iridium permanent debt/equity mix, rates, covenants and ATM use",
+      "decision_critical": true,
+      "valuation_sensitivity": "HIGH",
+      "resolution_catalyst": "Permanent financing disclosure / closing financing",
+      "expected_resolution_date_or_window": "Before or at expected mid-2027 close",
+      "can_wait_for_evidence": false
+    },
+    {
+      "unknown_id": "U-002",
+      "unknown": "Neutron Stage 1 qualification and first orbital flight success/timing",
+      "decision_critical": true,
+      "valuation_sensitivity": "HIGH",
+      "resolution_catalyst": "Qualification completion and orbital launch",
+      "expected_resolution_date_or_window": "Q4 2026–2027",
+      "can_wait_for_evidence": true
+    },
+    {
+      "unknown_id": "U-003",
+      "unknown": "Neutron mature cost, reuse, cadence, ASP and gross-margin economics",
+      "decision_critical": true,
+      "valuation_sensitivity": "HIGH",
+      "resolution_catalyst": "Repeated flights and disclosed/observable operating economics",
+      "expected_resolution_date_or_window": "2027–2029",
+      "can_wait_for_evidence": true
+    },
+    {
+      "unknown_id": "U-004",
+      "unknown": "Space Systems program-level gross profit and cash conversion",
+      "decision_critical": true,
+      "valuation_sensitivity": "HIGH",
+      "resolution_catalyst": "Program deliveries, segment margin and working-capital normalization",
+      "expected_resolution_date_or_window": "2026–2028",
+      "can_wait_for_evidence": true
+    },
+    {
+      "unknown_id": "U-005",
+      "unknown": "Iridium EMSS successor contract economics",
+      "decision_critical": true,
+      "valuation_sensitivity": "MEDIUM",
+      "resolution_catalyst": "EMSS renewal/successor terms",
+      "expected_resolution_date_or_window": "By around March 2027",
+      "can_wait_for_evidence": true
+    },
+    {
+      "unknown_id": "U-006",
+      "unknown": "Iridium post-2031 next-generation constellation architecture, capex and funding",
+      "decision_critical": true,
+      "valuation_sensitivity": "HIGH",
+      "resolution_catalyst": "Next-generation constellation capital plan",
+      "expected_resolution_date_or_window": "Before 2031; exact timing unknown",
+      "can_wait_for_evidence": true
+    },
+    {
+      "unknown_id": "U-007",
+      "unknown": "Iridium acquisition regulatory approval and closing timing",
+      "decision_critical": true,
+      "valuation_sensitivity": "HIGH",
+      "resolution_catalyst": "Regulatory approvals and transaction closing",
+      "expected_resolution_date_or_window": "2026–2027; contractual end date June 28 2027 with extensions to Dec 28 2027",
+      "can_wait_for_evidence": true
+    },
+    {
+      "unknown_id": "U-008",
+      "unknown": "Acquisition-by-acquisition incremental ROIC",
+      "decision_critical": true,
+      "valuation_sensitivity": "MEDIUM",
+      "resolution_catalyst": "Segment/disclosure evidence that separates acquired returns",
+      "expected_resolution_date_or_window": "2027–2029",
+      "can_wait_for_evidence": true
+    },
+    {
+      "unknown_id": "U-009",
+      "unknown": "Commercial backlog cancellation/repeat-order and customer concentration economics",
+      "decision_critical": true,
+      "valuation_sensitivity": "MEDIUM",
+      "resolution_catalyst": "Repeat bookings, cancellation data and customer disclosures",
+      "expected_resolution_date_or_window": "Continuous",
+      "can_wait_for_evidence": true
+    },
+    {
+      "unknown_id": "U-010",
+      "unknown": "Economically retained Iridium integration synergies after costs, interest and dilution",
+      "decision_critical": true,
+      "valuation_sensitivity": "HIGH",
+      "resolution_catalyst": "Post-close combined FCF/share and synergy evidence",
+      "expected_resolution_date_or_window": "2027–2030",
+      "can_wait_for_evidence": false
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Execution Break / Deal Friction",
+      "prior_range": [
+        0.25,
+        0.4
+      ],
+      "reference_class": null,
+      "positive_updates": [
+        "Electron/current core exists and is flight-proven",
+        "Backlog is enforceable under disclosed accounting definition",
+        "Iridium transaction antitrust process advanced"
+      ],
+      "negative_updates": [
+        "Neutron schedule has slipped repeatedly",
+        "Permanent Iridium financing remains a primary-source ceiling",
+        "Working-capital and fixed-price-program cash conversion remain weak/uncertain"
+      ],
+      "posterior_range": [
+        0.2,
+        0.3
+      ],
+      "point_probability": 0.25,
+      "probability_confidence": "LOW",
+      "operating_path": {
+        "2031_revenue_usd_b": 2.4,
+        "2031_fcf_usd_b": 0.05,
+        "2031_diluted_shares_m": 690,
+        "terminal_ev_revenue": 7.5,
+        "2031_net_debt_usd_b": -0.6
+      },
+      "per_share_value": 26.96,
+      "annualized_irr": -0.169
+    },
+    {
+      "name": "Core Executes + Conservative Integration",
+      "prior_range": [
+        0.3,
+        0.45
+      ],
+      "reference_class": null,
+      "positive_updates": [
+        "Quarterly revenue and gross-margin guidance have been well calibrated",
+        "Backlog supports visible delivery volume",
+        "Iridium adds recurring service cash flow if transaction closes"
+      ],
+      "negative_updates": [
+        "Permanent financing mix and cost remain unresolved",
+        "Space Systems program-level cash margins are not disclosed",
+        "Iridium replacement cycle becomes material around 2031"
+      ],
+      "posterior_range": [
+        0.4,
+        0.5
+      ],
+      "point_probability": 0.45,
+      "probability_confidence": "MEDIUM",
+      "operating_path": {
+        "2031_revenue_usd_b": 4.8,
+        "2031_fcf_usd_b": 0.45,
+        "2031_diluted_shares_m": 730,
+        "terminal_ev_revenue": 12.0,
+        "2031_net_debt_usd_b": 2.5
+      },
+      "per_share_value": 75.48,
+      "annualized_irr": 0.0064
+    },
+    {
+      "name": "Integrated Scale",
+      "prior_range": [
+        0.15,
+        0.3
+      ],
+      "reference_class": null,
+      "positive_updates": [
+        "Defense customer validation and spacecraft-prime position are strengthening",
+        "Electron repeat-launch evidence remains strong",
+        "Launch + spacecraft + service vertical fit is economically plausible"
+      ],
+      "negative_updates": [
+        "Neutron has no orbital heritage yet",
+        "Acquisition-level ROIC and retained synergy are not proven",
+        "Financing and dilution remain material"
+      ],
+      "posterior_range": [
+        0.18,
+        0.28
+      ],
+      "point_probability": 0.22,
+      "probability_confidence": "LOW",
+      "operating_path": {
+        "2031_revenue_usd_b": 6.5,
+        "2031_fcf_usd_b": 1.1,
+        "2031_diluted_shares_m": 750,
+        "terminal_ev_revenue": 15.0,
+        "2031_net_debt_usd_b": 1.5
+      },
+      "per_share_value": 128.0,
+      "annualized_irr": 0.111
+    },
+    {
+      "name": "Platform Upside",
+      "prior_range": [
+        0.05,
+        0.15
+      ],
+      "reference_class": null,
+      "positive_updates": [
+        "Multiple growth engines could reinforce one another if execution succeeds",
+        "High Rocket Lab share price can be valuable acquisition currency"
+      ],
+      "negative_updates": [
+        "Requires simultaneous success across launch, spacecraft, network and financing",
+        "Dilution and capital intensity must remain constrained despite rapid scale"
+      ],
+      "posterior_range": [
+        0.05,
+        0.12
+      ],
+      "point_probability": 0.08,
+      "probability_confidence": "LOW",
+      "operating_path": {
+        "2031_revenue_usd_b": 8.5,
+        "2031_fcf_usd_b": 1.8,
+        "2031_diluted_shares_m": 770,
+        "terminal_ev_revenue": 20.0,
+        "2031_net_debt_usd_b": 0.5
+      },
+      "per_share_value": 220.13,
+      "annualized_irr": 0.229
+    }
+  ],
+  "valuation": {
+    "router": "Mode B Hybrid + Transaction-State Overlay",
+    "horizon": "2031-12-31",
+    "framework": "Core + Execution + Ecosystem - Funding/Dilution Drag, with transaction-state overlay for Iridium",
+    "base_fair_value_present_value_range": [
+      35.67,
+      55.42
+    ],
+    "base_operating_path": {
+      "2031_revenue_usd_b": 4.8,
+      "2031_fcf_usd_b": 0.45,
+      "2031_net_debt_usd_b": 2.5,
+      "2031_diluted_shares_m": 730,
+      "terminal_ev_revenue_range": [
+        12,
+        16
+      ],
+      "discount_rate_range": [
+        0.12,
+        0.15
+      ]
+    },
+    "probability_weighted_2031_value": 86.48,
+    "peer_relevance_ledger": [
+      {
+        "peer_anchor": "S-4 Rocket Lab selected high-growth companies",
+        "use": "capital-market identity / multiple regime context",
+        "weight_rule": "No preset weight; not directly comparable."
+      },
+      {
+        "peer_anchor": "Iridium satcom peers",
+        "use": "recurring service/OEBITDA monetization context",
+        "weight_rule": "Higher operating relevance."
+      },
+      {
+        "peer_anchor": "Iridium DCF / selected transactions",
+        "use": "acquisition premium cross-check",
+        "weight_rule": "Strategic-premium hurdle."
+      },
+      {
+        "peer_anchor": "Rocket Lab historical trading range",
+        "use": "sentiment/multiple volatility context",
+        "weight_rule": "Not an intrinsic-value anchor."
+      }
+    ],
+    "financing_dilution": {
+      "h1_2026_atm_gross_proceeds_usd_b": 1.53,
+      "replacement_atm_remaining_capacity_usd_b": 1.944,
+      "iridium_cash_consideration_per_share": 27.0,
+      "s4_example_transaction_shares_m": 41.259,
+      "collar_transaction_shares_range_m": [
+        25.43,
+        42.383
+      ],
+      "committed_bridge_usd_b": 3.6,
+      "bridge_term_days": 364,
+      "permanent_financing": "PRIMARY_SOURCE_CEILING"
+    }
+  },
+  "reverse_expectations": {
+    "assumptions": {
+      "2031_diluted_shares_m": 730,
+      "2031_net_debt_usd_b": 2.5,
+      "current_price": 72.95
+    },
+    "grid": [
+      {
+        "required_annual_return": 0.1,
+        "required_2031_price": 121.63,
+        "required_equity_usd_b": 88.79,
+        "required_ev_usd_b": 91.29,
+        "revenue_at_12x_usd_b": 7.61,
+        "revenue_at_15x_usd_b": 6.09,
+        "revenue_at_20x_usd_b": 4.56
+      },
+      {
+        "required_annual_return": 0.12,
+        "required_2031_price": 133.97,
+        "required_equity_usd_b": 97.8,
+        "required_ev_usd_b": 100.3,
+        "revenue_at_12x_usd_b": 8.36,
+        "revenue_at_15x_usd_b": 6.69,
+        "revenue_at_20x_usd_b": 5.01
+      },
+      {
+        "required_annual_return": 0.15,
+        "required_2031_price": 154.37,
+        "required_equity_usd_b": 112.69,
+        "required_ev_usd_b": 115.19,
+        "revenue_at_12x_usd_b": null,
+        "revenue_at_15x_usd_b": 7.68,
+        "revenue_at_20x_usd_b": 5.76
+      },
+      {
+        "required_annual_return": 0.18,
+        "required_2031_price": 177.24,
+        "required_equity_usd_b": 129.38,
+        "required_ev_usd_b": 131.88,
+        "revenue_at_12x_usd_b": null,
+        "revenue_at_15x_usd_b": 8.79,
+        "revenue_at_20x_usd_b": 6.59
+      }
+    ],
+    "illustrative_12pct_case": {
+      "required_ev_usd_b": 100.3,
+      "revenue_at_15x_usd_b": 6.69,
+      "revenue_at_20x_usd_b": 5.01,
+      "equity_fcf_at_40x_usd_b": 2.44
+    },
+    "interpretation": "Current-price hurdle depends on growth duration, terminal multiple, capital structure and FCF normalization, not merely near-term revenue beats."
+  },
+  "return_distribution": {
+    "expected_irr": 0.0322,
+    "median_irr_or_proxy": 0.0064,
+    "probability_negative_return": 0.25,
+    "permanent_loss_definition": "Execution Break / Deal Friction path in which value creation fails and/or financing/dilution causes persistent capital loss relative to T0.",
+    "probability_permanent_loss": 0.25,
+    "tail_loss_irr": -0.169,
+    "benchmark_expected_return": null,
+    "expected_excess_irr": null,
+    "probability_sensitivity": "FRAGILE",
+    "probability_weighted_2031_value": 86.48,
+    "arithmetic_probability_weighted_scenario_irr": 0.0031,
+    "hurdle_break_probability_mix": null,
+    "sensitivity_stress": {
+      "probabilities": {
+        "Execution Break / Deal Friction": 0.35,
+        "Core Executes + Conservative Integration": 0.45,
+        "Integrated Scale": 0.2,
+        "Platform Upside": 0.0
+      },
+      "probability_weighted_2031_value": 69.0,
+      "expected_value_cagr": -0.0103,
+      "arithmetic_probability_weighted_scenario_irr": -0.0343,
+      "approx_platform_to_adverse_pp_to_reach_t0": 7.0
+    }
+  },
+  "catalysts": [
+    {
+      "window": "Q3–Q4 2026",
+      "event": "Neutron Stage 1 qualification / integrated propulsion tests and launch-readiness milestones",
+      "sensitivity": "HIGH"
+    },
+    {
+      "window": "Q4 2026–2027",
+      "event": "Neutron first orbital flight and evidence of second-vehicle / repeat cadence",
+      "sensitivity": "HIGH"
+    },
+    {
+      "window": "Q3 2026–Q2 2027",
+      "event": "Iridium shareholder/regulatory approvals, FCC/Team Telecom/DCSA/foreign reviews",
+      "sensitivity": "HIGH"
+    },
+    {
+      "window": "Before / at expected mid-2027 close",
+      "event": "Permanent Iridium debt/equity financing terms and final transaction share count",
+      "sensitivity": "HIGH"
+    },
+    {
+      "window": "By around Mar. 2027",
+      "event": "Iridium EMSS extension/successor economics",
+      "sensitivity": "MEDIUM"
+    },
+    {
+      "window": "Through Jul. 2027 and beyond",
+      "event": "SDA/MDA/other major Space Systems delivery milestones and cash conversion",
+      "sensitivity": "HIGH"
+    },
+    {
+      "window": "Quarterly",
+      "event": "Electron/HASTE cadence, reliability and repeat customer bookings",
+      "sensitivity": "MEDIUM"
+    },
+    {
+      "window": "Q3 2026 onward",
+      "event": "Working-capital normalization vs continued receivable/contract-asset/inventory build",
+      "sensitivity": "HIGH"
+    }
+  ],
+  "kpi_tripwires": [
+    {
+      "kpi": "Electron/HASTE cadence and mission success",
+      "current": "93rd Electron mission; 14 launches in 2026 through Aug. 21",
+      "green": "Cadence stays at/above recent record pace with reliability intact and repeat bookings convert to launches.",
+      "yellow": "Multi-month schedule slippage or cadence falls below prior-year pattern without demand explanation.",
+      "red": "Repeated mission failures or a sustained multi-quarter cadence decline.",
+      "frequency": "Quarterly / mission-by-mission",
+      "source_ids": [
+        "S26",
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "kpi": "Neutron qualification → first flight → repeat cadence",
+      "current": "Stage 1 qualification remains the gating milestone; first-flight target has moved repeatedly.",
+      "green": "Qualification closes, first orbital flight succeeds, and a second vehicle/cadence path becomes visible.",
+      "yellow": "Slip into 2027 with a specific, bounded technical fix and intact customer demand.",
+      "red": "Repeated redesign/failure with no credible repeat-flight path by end-2027.",
+      "frequency": "Milestone-based",
+      "source_ids": [
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "kpi": "Space Systems backlog conversion / margin / cash",
+      "current": "Q2 segment revenue $189.5M; GP $65.5M; backlog $1.416B; working capital elevated.",
+      "green": "Backlog converts while segment margin stays resilient and working capital normalizes.",
+      "yellow": "Revenue converts but margin compresses or working capital remains structurally elevated.",
+      "red": "Repeated FFP charges/delivery failures plus worsening cash conversion.",
+      "frequency": "Quarterly",
+      "source_ids": [
+        "S03",
+        "S04",
+        "S27"
+      ]
+    },
+    {
+      "kpi": "Company cash conversion",
+      "current": "1H26 OCF -$134.4M; simple FCF proxy -$187.5M.",
+      "green": "Revenue/GP growth begins producing sustained OCF improvement and working-capital reversal.",
+      "yellow": "Operating growth continues to consume similar cash intensity.",
+      "red": "Revenue/GP scale materially but FCF remains deeply negative through 2028 without a temporary program explanation.",
+      "frequency": "Quarterly",
+      "source_ids": [
+        "S03"
+      ]
+    },
+    {
+      "kpi": "Diluted share denominator / financing",
+      "current": "~639.3M economic-equivalent current denominator before transaction shares; 1H26 ATM and note conversions were material.",
+      "green": "Iridium permanent financing limits incremental equity and produces a credible deleveraging path.",
+      "yellow": "Material ATM/equity issuance but at favorable pricing with clear cash-return rationale.",
+      "red": "Share count grows materially faster than gross profit/FCF per share or financing is expensive enough to crowd out core investment.",
+      "frequency": "Filing/financing event",
+      "source_ids": [
+        "S03",
+        "S07",
+        "S08",
+        "S09",
+        "S10"
+      ]
+    },
+    {
+      "kpi": "Iridium service/subscriber and EMSS economics",
+      "current": "Q2 revenue $225.2M; 2.627M billable subscribers; service 72% of revenue.",
+      "green": "Service/subscriber growth remains positive and EMSS successor preserves attractive economics.",
+      "yellow": "Subscriber/service growth flattens or government economics soften moderately.",
+      "red": "Sustained service contraction or materially adverse EMSS renewal.",
+      "frequency": "Quarterly / contract event",
+      "source_ids": [
+        "S15"
+      ]
+    },
+    {
+      "kpi": "Iridium replacement-capex plan",
+      "current": "Low-capex period expected through at least 2031; extended forecast U-FCF drops to -$21M in 2031.",
+      "green": "Next-gen plan is staged within combined cash generation and internal launch/manufacturing creates measurable savings.",
+      "yellow": "Capex rises earlier or larger than expected but remains financeable.",
+      "red": "Major capex pull-forward or architecture cost causes liquidity/financing strain.",
+      "frequency": "Annual / capital-plan disclosure",
+      "source_ids": [
+        "S13",
+        "S07"
+      ]
+    }
+  ],
+  "falsifiers": [
+    {
+      "thesis": "Current-core thesis",
+      "statement": "If Space Systems/Electron revenue and gross profit keep growing but cash conversion does not improve by 2028, current-core quality is falsified."
+    },
+    {
+      "thesis": "Neutron economic thesis",
+      "statement": "If credible repeat cadence and unit-economics evidence is still absent by 2028–2029 after first flight, remove a large portion of Neutron execution value."
+    },
+    {
+      "thesis": "Iridium per-share thesis",
+      "statement": "If permanent financing plus transaction shares cause diluted FCF/share to deteriorate despite standalone Iridium cash generation, acquisition value creation is falsified."
+    },
+    {
+      "thesis": "Vertical-integration synergy",
+      "statement": "If observable cost, schedule or revenue advantage is not visible by 2029–2030, keep ecosystem value near zero."
+    },
+    {
+      "thesis": "Replacement-capex thesis",
+      "statement": "If Iridium next-gen spending is materially pulled forward or exceeds combined cash-generation capacity, reset terminal leverage and multiple assumptions."
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "h1_promise": "Reconstruct the space value chain and profit-pool map across launch, spacecraft manufacturing and applications",
+      "h2_status": "COMPLETE",
+      "rc_materiality": 5,
+      "decision_critical": true,
+      "evidence_strength": "MEDIUM",
+      "valuation_sensitivity": "HIGH",
+      "ceiling_impact": "NONE",
+      "h3_treatment": "MAIN",
+      "h3_locator": "Ch.1 §1.1–1.2 / Appendix A.1"
+    },
+    {
+      "rc_id": "RC-002",
+      "h1_promise": "Build launch-industry demand/supply/capital-cycle history for small and medium lift",
+      "h2_status": "COMPLETE",
+      "rc_materiality": 5,
+      "decision_critical": true,
+      "evidence_strength": "MEDIUM",
+      "valuation_sensitivity": "HIGH",
+      "ceiling_impact": "NONE",
+      "h3_treatment": "MAIN + APPENDIX",
+      "h3_locator": "Ch.1 §1.3–1.5 / Appendix A.1"
+    },
+    {
+      "rc_id": "RC-003",
+      "h1_promise": "Build Space Systems / defense spacecraft demand and capital-cycle ledger",
+      "h2_status": "COMPLETE",
+      "rc_materiality": 5,
+      "decision_critical": true,
+      "evidence_strength": "HIGH",
+      "valuation_sensitivity": "HIGH",
+      "ceiling_impact": "NONE",
+      "h3_treatment": "MAIN",
+      "h3_locator": "Ch.1 §1.3–1.5 / Appendix A.1"
+    },
+    {
+      "rc_id": "RC-004",
+      "h1_promise": "Build satellite communications / MSS / D2D / PNT industry structure and spectrum economics for Iridium",
+      "h2_status": "COMPLETE",
+      "rc_materiality": 5,
+      "decision_critical": true,
+      "evidence_strength": "HIGH",
+      "valuation_sensitivity": "HIGH",
+      "ceiling_impact": "NONE",
+      "h3_treatment": "MAIN",
+      "h3_locator": "Ch.1 §1.1–1.5 / Appendix A.1"
+    },
+    {
+      "rc_id": "RC-005",
+      "h1_promise": "Reconstruct Electron/HASTE cadence, reliability, pricing, backlog and launch gross-profit economics",
+      "h2_status": "COMPLETE",
+      "rc_materiality": 4,
+      "decision_critical": true,
+      "evidence_strength": "HIGH",
+      "valuation_sensitivity": "MEDIUM",
+      "ceiling_impact": "NONE",
+      "h3_treatment": "MAIN",
+      "h3_locator": "Ch.3 §3.2 / Ch.4 §4.2"
+    },
+    {
+      "rc_id": "RC-006",
+      "h1_promise": "Quantitatively map Neutron architecture, qualification gates, schedule and competitive customer fit",
+      "h2_status": "COMPLETE",
+      "rc_materiality": 5,
+      "decision_critical": true,
+      "evidence_strength": "HIGH",
+      "valuation_sensitivity": "HIGH",
+      "ceiling_impact": "NONE",
+      "h3_treatment": "MAIN",
+      "h3_locator": "Ch.3 §3.3"
+    },
+    {
+      "rc_id": "RC-007",
+      "h1_promise": "Reconstruct Neutron production capacity, cost/cadence path, capex and unit-economics bridge",
+      "h2_status": "PRIMARY_SOURCE_CEILING",
+      "rc_materiality": 5,
+      "decision_critical": true,
+      "evidence_strength": "LOW",
+      "valuation_sensitivity": "HIGH",
+      "ceiling_impact": "HIGH",
+      "h3_treatment": "EXPLICIT_CEILING",
+      "h3_locator": "Ch.3 §3.3 / Ch.5 §5.3–5.4 / Appendix A.3"
+    },
+    {
+      "rc_id": "RC-008",
+      "h1_promise": "Decompose Space Systems backlog, revenue, GP and conversion by major program/product where available",
+      "h2_status": "PRIMARY_SOURCE_CEILING",
+      "rc_materiality": 5,
+      "decision_critical": true,
+      "evidence_strength": "MEDIUM",
+      "valuation_sensitivity": "HIGH",
+      "ceiling_impact": "HIGH",
+      "h3_treatment": "EXPLICIT_CEILING",
+      "h3_locator": "Ch.3 §3.4 / Ch.4 §4.3 / Appendix A.3"
+    },
+    {
+      "rc_id": "RC-009",
+      "h1_promise": "Build major government contract-stage ledger from award through funded value, delivery and revenue recognition",
+      "h2_status": "COMPLETE",
+      "rc_materiality": 5,
+      "decision_critical": true,
+      "evidence_strength": "HIGH",
+      "valuation_sensitivity": "HIGH",
+      "ceiling_impact": "NONE",
+      "h3_treatment": "MAIN + APPENDIX",
+      "h3_locator": "Ch.3 §3.5 / Appendix A.4"
+    },
+    {
+      "rc_id": "RC-010",
+      "h1_promise": "Reconstruct commercial customer concentration, repeat orders and adoption ladder",
+      "h2_status": "PRIMARY_SOURCE_CEILING",
+      "rc_materiality": 4,
+      "decision_critical": true,
+      "evidence_strength": "LOW",
+      "valuation_sensitivity": "MEDIUM",
+      "ceiling_impact": "MODERATE",
+      "h3_treatment": "EXPLICIT_CEILING",
+      "h3_locator": "Ch.3 §3.5 / Appendix A.3"
+    },
+    {
+      "rc_id": "RC-011",
+      "h1_promise": "Build acquisition integration ledger for Sinclair/PSC/SolAero/ASI/GEOST/Mynaric/Motiv including purchase price and economic contribution",
+      "h2_status": "PRIMARY_SOURCE_CEILING",
+      "rc_materiality": 4,
+      "decision_critical": true,
+      "evidence_strength": "MEDIUM",
+      "valuation_sensitivity": "HIGH",
+      "ceiling_impact": "MODERATE",
+      "h3_treatment": "EXPLICIT_CEILING",
+      "h3_locator": "Ch.2 §2.4 / Ch.3 §3.6 / Appendix A.5"
+    },
+    {
+      "rc_id": "RC-012",
+      "h1_promise": "Reconstruct Iridium transaction legal/regulatory closing path, conditions and deal-break scenarios",
+      "h2_status": "COMPLETE",
+      "rc_materiality": 5,
+      "decision_critical": true,
+      "evidence_strength": "HIGH",
+      "valuation_sensitivity": "HIGH",
+      "ceiling_impact": "NONE",
+      "h3_treatment": "MAIN",
+      "h3_locator": "Ch.3 §3.7 / Ch.5 §5.2"
+    },
+    {
+      "rc_id": "RC-013",
+      "h1_promise": "Reconstruct Iridium standalone 3Y/8Q revenue, subscribers, OEBITDA/EBIT, FCF, capex, debt and churn economics",
+      "h2_status": "PRIMARY_SOURCE_CEILING",
+      "rc_materiality": 5,
+      "decision_critical": true,
+      "evidence_strength": "MEDIUM",
+      "valuation_sensitivity": "HIGH",
+      "ceiling_impact": "MODERATE",
+      "h3_treatment": "MAIN + APPENDIX",
+      "h3_locator": "Ch.4 §4.5 / Ch.5 §5.2 / Appendix A.7"
+    },
+    {
+      "rc_id": "RC-014",
+      "h1_promise": "Build security-by-security Iridium consideration and financing/dilution model including collar, ATM and permanent financing",
+      "h2_status": "PRIMARY_SOURCE_CEILING",
+      "rc_materiality": 5,
+      "decision_critical": true,
+      "evidence_strength": "MEDIUM",
+      "valuation_sensitivity": "HIGH",
+      "ceiling_impact": "HIGH",
+      "h3_treatment": "EXPLICIT_CEILING",
+      "h3_locator": "Ch.4 §4.6 / Ch.5 §5.2–5.4 / Appendix A.3"
+    },
+    {
+      "rc_id": "RC-015",
+      "h1_promise": "Underwrite Iridium next-generation constellation replacement capex, timing, launch plan and attributable synergies",
+      "h2_status": "CONTRADICTED",
+      "rc_materiality": 5,
+      "decision_critical": true,
+      "evidence_strength": "HIGH",
+      "valuation_sensitivity": "HIGH",
+      "ceiling_impact": "MODERATE",
+      "h3_treatment": "MAIN + APPENDIX",
+      "h3_locator": "Ch.3 §3.7 / Ch.4 §4.5 / Ch.5 §5.4"
+    },
+    {
+      "rc_id": "RC-016",
+      "h1_promise": "Reconstruct Peter Beck and senior leadership measurable prior/current operating track record",
+      "h2_status": "COMPLETE",
+      "rc_materiality": 4,
+      "decision_critical": true,
+      "evidence_strength": "HIGH",
+      "valuation_sensitivity": "MEDIUM",
+      "ceiling_impact": "NONE",
+      "h3_treatment": "MAIN",
+      "h3_locator": "Ch.2 §2.1"
+    },
+    {
+      "rc_id": "RC-017",
+      "h1_promise": "Build 8–12Q management forecast calibration ledger including Neutron timelines, revenue/GM/capex and program timing",
+      "h2_status": "PRIMARY_SOURCE_CEILING",
+      "rc_materiality": 5,
+      "decision_critical": true,
+      "evidence_strength": "MEDIUM",
+      "valuation_sensitivity": "HIGH",
+      "ceiling_impact": "MODERATE",
+      "h3_treatment": "MAIN + APPENDIX",
+      "h3_locator": "Ch.2 §2.2 / Appendix A.6"
+    },
+    {
+      "rc_id": "RC-018",
+      "h1_promise": "Underwrite compensation, ownership/control, Series A preferred, board independence, SBC and insider behavior",
+      "h2_status": "COMPLETE",
+      "rc_materiality": 4,
+      "decision_critical": true,
+      "evidence_strength": "HIGH",
+      "valuation_sensitivity": "HIGH",
+      "ceiling_impact": "NONE",
+      "h3_treatment": "MAIN + APPENDIX",
+      "h3_locator": "Ch.2 §2.3 / Ch.4 §4.6"
+    },
+    {
+      "rc_id": "RC-019",
+      "h1_promise": "Build complete Rocket Lab 3Y annual and latest continuous 8Q financial history including segment/KPI bridge",
+      "h2_status": "COMPLETE",
+      "rc_materiality": 5,
+      "decision_critical": true,
+      "evidence_strength": "HIGH",
+      "valuation_sensitivity": "HIGH",
+      "ceiling_impact": "NONE",
+      "h3_treatment": "MAIN + APPENDIX",
+      "h3_locator": "Ch.4 §4.1–4.4 / Appendix A.7"
+    },
+    {
+      "rc_id": "RC-020",
+      "h1_promise": "Run earnings-quality and accounting red-flag screen including receivables, inventory, SBC, acquisition accounting and non-GAAP",
+      "h2_status": "COMPLETE",
+      "rc_materiality": 4,
+      "decision_critical": true,
+      "evidence_strength": "HIGH",
+      "valuation_sensitivity": "HIGH",
+      "ceiling_impact": "NONE",
+      "h3_treatment": "MAIN",
+      "h3_locator": "Ch.4 §4.4"
+    },
+    {
+      "rc_id": "RC-021",
+      "h1_promise": "Build capital structure and funding ledger: cash, marketable securities, debt, ATM, preferred, options, SBC and future obligations",
+      "h2_status": "COMPLETE",
+      "rc_materiality": 5,
+      "decision_critical": true,
+      "evidence_strength": "HIGH",
+      "valuation_sensitivity": "HIGH",
+      "ceiling_impact": "NONE",
+      "h3_treatment": "MAIN + APPENDIX",
+      "h3_locator": "Ch.4 §4.6 / Ch.5 §5.2"
+    },
+    {
+      "rc_id": "RC-022",
+      "h1_promise": "Reconstruct consensus, revisions, target-price distribution, short interest, institutional/insider positioning and valuation-band history",
+      "h2_status": "PRIMARY_SOURCE_CEILING",
+      "rc_materiality": 4,
+      "decision_critical": true,
+      "evidence_strength": "MEDIUM",
+      "valuation_sensitivity": "MEDIUM",
+      "ceiling_impact": "MODERATE",
+      "h3_treatment": "EXPLICIT_CEILING",
+      "h3_locator": "Ch.0 §0.5 / Ch.5 §5.6 / Appendix A.8"
+    },
+    {
+      "rc_id": "RC-023",
+      "h1_promise": "Build competition-by-customer-job matrices for launch, spacecraft systems and satellite communications",
+      "h2_status": "COMPLETE",
+      "rc_materiality": 5,
+      "decision_critical": true,
+      "evidence_strength": "MEDIUM",
+      "valuation_sensitivity": "HIGH",
+      "ceiling_impact": "NONE",
+      "h3_treatment": "MAIN",
+      "h3_locator": "Ch.3 §3.8"
+    },
+    {
+      "rc_id": "RC-024",
+      "h1_promise": "Build standalone Rocket Lab operating scenario bridge from demand/KPIs to FCF and diluted shares",
+      "h2_status": "COMPLETE",
+      "rc_materiality": 5,
+      "decision_critical": true,
+      "evidence_strength": "MEDIUM",
+      "valuation_sensitivity": "HIGH",
+      "ceiling_impact": "NONE",
+      "h3_treatment": "MAIN",
+      "h3_locator": "Ch.5 §5.3"
+    },
+    {
+      "rc_id": "RC-025",
+      "h1_promise": "Build combined-company post-Iridium operating and financing scenario bridge",
+      "h2_status": "PRIMARY_SOURCE_CEILING",
+      "rc_materiality": 5,
+      "decision_critical": true,
+      "evidence_strength": "LOW",
+      "valuation_sensitivity": "HIGH",
+      "ceiling_impact": "HIGH",
+      "h3_treatment": "EXPLICIT_CEILING",
+      "h3_locator": "Ch.5 §5.3–5.5 / Appendix A.3"
+    },
+    {
+      "rc_id": "RC-026",
+      "h1_promise": "Build Variant Perception Ledger and complete WHY MISPRICED / WHY PERSISTENT / WHY CONVERGE tests",
+      "h2_status": "COMPLETE",
+      "rc_materiality": 5,
+      "decision_critical": true,
+      "evidence_strength": "MEDIUM",
+      "valuation_sensitivity": "HIGH",
+      "ceiling_impact": "NONE",
+      "h3_treatment": "MAIN",
+      "h3_locator": "Ch.0 §0.5 / Ch.6 §6.2"
+    },
+    {
+      "rc_id": "RC-027",
+      "h1_promise": "Build Business Quality Evidence Ledger including incremental ROIC proxy, cash conversion, durability, concentration, pricing power and dilution discipline",
+      "h2_status": "COMPLETE",
+      "rc_materiality": 5,
+      "decision_critical": true,
+      "evidence_strength": "HIGH",
+      "valuation_sensitivity": "HIGH",
+      "ceiling_impact": "NONE",
+      "h3_treatment": "MAIN + APPENDIX",
+      "h3_locator": "Ch.0 §0.2 / Ch.6 §6.1 / Appendix A.9"
+    },
+    {
+      "rc_id": "RC-028",
+      "h1_promise": "Build 3–7 causal KPI histories, tripwires, 12-month catalyst calendar and falsifiers",
+      "h2_status": "COMPLETE",
+      "rc_materiality": 5,
+      "decision_critical": true,
+      "evidence_strength": "HIGH",
+      "valuation_sensitivity": "HIGH",
+      "ceiling_impact": "NONE",
+      "h3_treatment": "MAIN",
+      "h3_locator": "Ch.6 §6.3–6.5"
+    }
+  ],
+  "provenance": {
+    "source_precedence": [
+      "DECISION_INPUT_PACK.json",
+      "H3_RESEARCH_MANUSCRIPT.md",
+      "SOURCE_AND_RC_LEDGER.md",
+      "DEEP_DIVE_REPORT.html / DEEP_DIVE_REPORT.pdf"
+    ],
+    "source_register": [
+      {
+        "source_id": "S01",
+        "quality": "PRIMARY",
+        "source": "Rocket Lab 2025 Form 10-K",
+        "locator": "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000013/rklb-20251231.htm"
+      },
+      {
+        "source_id": "S02",
+        "quality": "PRIMARY",
+        "source": "Rocket Lab Q1 2026 Form 10-Q",
+        "locator": "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000028/rklb-20260331.htm"
+      },
+      {
+        "source_id": "S03",
+        "quality": "PRIMARY",
+        "source": "Rocket Lab Q2 2026 Form 10-Q",
+        "locator": "https://investors.rocketlabcorp.com/node/13041/html"
+      },
+      {
+        "source_id": "S04",
+        "quality": "PRIMARY",
+        "source": "Rocket Lab Q2 2026 results / IR",
+        "locator": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-second-quarter-2026-financial-results-posts"
+      },
+      {
+        "source_id": "S05",
+        "quality": "PRIMARY",
+        "source": "Rocket Lab 2026 Proxy",
+        "locator": "https://www.sec.gov/Archives/edgar/data/1819994/000162828026021744/rklb-20260327.htm"
+      },
+      {
+        "source_id": "S06",
+        "quality": "PRIMARY",
+        "source": "Beck compensation amendment / RSU cancellation 8-K",
+        "locator": "https://www.sec.gov/Archives/edgar/data/1819994/000175392626000568/g085462_8k-rocket.htm"
+      },
+      {
+        "source_id": "S07",
+        "quality": "PRIMARY",
+        "source": "Rocket Lab / Iridium Form S-4, filed Aug. 13, 2026",
+        "locator": "https://investors.rocketlabcorp.com/static-files/4ba10e5a-58ed-4281-b3c3-bd016b62c220"
+      },
+      {
+        "source_id": "S08",
+        "quality": "PRIMARY",
+        "source": "Iridium acquisition progress / capital strategy, Aug. 13, 2026",
+        "locator": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-corporation-announces-progress-iridium-acquisition"
+      },
+      {
+        "source_id": "S09",
+        "quality": "PRIMARY",
+        "source": "Replacement ATM program, Aug. 13, 2026",
+        "locator": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-corporation-announces-dollar-dollar-replacement"
+      },
+      {
+        "source_id": "S10",
+        "quality": "PRIMARY",
+        "source": "Iridium transaction materials / Form 425",
+        "locator": "https://investors.rocketlabcorp.com/static-files/152e8979-3eaa-47a1-9d84-7c3469aea9f5"
+      },
+      {
+        "source_id": "S11",
+        "quality": "PRIMARY",
+        "source": "Neutron technical page",
+        "locator": "https://rocketlabcorp.com/launch/neutron/"
+      },
+      {
+        "source_id": "S12",
+        "quality": "PRIMARY",
+        "source": "HASTE $190M / 20-flight award",
+        "locator": "https://investors.rocketlabcorp.com/node/12196/pdf"
+      },
+      {
+        "source_id": "S13",
+        "quality": "PRIMARY",
+        "source": "Iridium 2025 Form 10-K",
+        "locator": "https://www.sec.gov/Archives/edgar/data/1418819/000141881926000009/irdm-20251231.htm"
+      },
+      {
+        "source_id": "S14",
+        "quality": "PRIMARY",
+        "source": "Iridium Q1 2026 Form 10-Q",
+        "locator": "https://www.sec.gov/Archives/edgar/data/1418819/0001418819-26-000026-index.htm"
+      },
+      {
+        "source_id": "S15",
+        "quality": "PRIMARY",
+        "source": "Iridium Q2 2026 Form 10-Q",
+        "locator": "https://www.sec.gov/Archives/edgar/data/1418819/000141881926000045/irdm-20260630.htm"
+      },
+      {
+        "source_id": "S16",
+        "quality": "PRIMARY",
+        "source": "Iridium merger 8-K / Merger Agreement",
+        "locator": "https://www.sec.gov/Archives/edgar/data/1418819/000110465926078482/tm2619278d1_8k.htm"
+      },
+      {
+        "source_id": "S17",
+        "quality": "PRIMARY",
+        "source": "SDA Tranche 2 Transport Layer Beta award",
+        "locator": "https://www.sda.mil/space-development-agency-makes-third-award-to-build-18-additional-beta-variant-satellites-for-tranche-2-transport-layer/"
+      },
+      {
+        "source_id": "S18",
+        "quality": "PRIMARY",
+        "source": "SDA Tranche 3 Tracking Layer awards",
+        "locator": "https://www.sda.mil/space-development-agency-makes-awards-to-build-72-tracking-layer-satellites-for-tranche-3/"
+      },
+      {
+        "source_id": "S19",
+        "quality": "PRIMARY",
+        "source": "SpaceX Falcon 9 capability",
+        "locator": "https://www.spacex.com/vehicles/falcon-9/"
+      },
+      {
+        "source_id": "S20",
+        "quality": "PRIMARY",
+        "source": "SpaceX Rideshare pricing",
+        "locator": "https://rideshare.spacex.com/"
+      },
+      {
+        "source_id": "S21",
+        "quality": "PRIMARY",
+        "source": "Firefly/Northrop Eclipse disclosure",
+        "locator": "https://investors.fireflyspace.com/node/6741/pdf"
+      },
+      {
+        "source_id": "S22",
+        "quality": "SECONDARY",
+        "source": "RKLB historical price, Investing.com",
+        "locator": "https://kr.investing.com/equities/vector-acquisition-historical-data"
+      },
+      {
+        "source_id": "S23",
+        "quality": "SECONDARY",
+        "source": "RKLB analyst consensus, StockAnalysis / S&P Global & TipRanks",
+        "locator": "https://stockanalysis.com/stocks/rklb/forecast/"
+      },
+      {
+        "source_id": "S24",
+        "quality": "SECONDARY",
+        "source": "RKLB estimate aggregation, MarketScreener",
+        "locator": "https://www.marketscreener.com/quote/stock/ROCKET-LAB-CORPORATION-126208072/finances/"
+      },
+      {
+        "source_id": "S25",
+        "quality": "SECONDARY",
+        "source": "H2 short-interest vendor snapshots",
+        "locator": null
+      },
+      {
+        "source_id": "S26",
+        "quality": "PRIMARY",
+        "source": "Rocket Lab 93rd Electron mission / 14th launch of 2026, Aug. 21 NZ",
+        "locator": "https://rocketlabcorp.com/updates/mission-success-rocket-lab-launches-93rd-electron-mission/"
+      },
+      {
+        "source_id": "S27",
+        "quality": "PRIMARY",
+        "source": "MDA Space first eight Rocket Lab-built satellite platforms reach orbit, Aug. 16, 2026",
+        "locator": "https://rocketlabcorp.com/updates/rocket-lab-satellite-platforms-built-for-mda-space-successfully-reach-orbit-supporting-globalstar-direct-to-device-communications-services/"
+      },
+      {
+        "source_id": "S28",
+        "quality": "PRIMARY",
+        "source": "Space Force NITE-STAR IDIQ onboarding, Aug. 17, 2026",
+        "locator": "https://rocketlabcorp.com/updates/new-blog-posrocket-lab-onboarded-to-u-s-space-forces-981m-nite-star-program-to-advance-space-test-and-training-infrastructure-program/"
+      },
+      {
+        "source_id": "S29",
+        "quality": "PRIMARY",
+        "source": "Space Force SDN consortium and $12M delivery orders, Aug. 18, 2026",
+        "locator": "https://rocketlabcorp.com/updates/u-s-space-force-selects-rocket-lab-for-space-data-network-consortium-awarded-12m-in-contracts-to-support-global-military-communications-network/"
+      },
+      {
+        "source_id": "S30",
+        "quality": "PRIMARY",
+        "source": "Rocket Lab SEC filings page — latest filing check",
+        "locator": "https://investors.rocketlabcorp.com/financial-information/sec-filings"
+      }
+    ],
+    "manuscript_sha256": "815475c33781c92b0a215eee6fdd7c6e4bfc58bf306700eac3ef6886a5ff8c3b",
+    "source_ledger_sha256": "5bd2c3de72d19efa9a9ddb47db1d0b088695947809b96c42c7f74d4004a036a9",
+    "numeric_provenance": "H3 approved manuscript and its source ledger; no post-H3 research or assumption changes in publishing."
+  },
+  "integrity_checks": {
+    "DECISION_INPUT_PACK_SCHEMA": "PASS",
+    "NUMERIC_PROVENANCE": "PASS",
+    "SCENARIO_PROBABILITIES_SUM_1": "PASS",
+    "RETURN_ARITHMETIC": "PASS",
+    "AS_OF_DISCIPLINE": "PASS",
+    "RC_UNRESOLVED": 0,
+    "DECISION_CRITICAL_UNKNOWN_DISCLOSURE": "PASS",
+    "PACK_MANUSCRIPT_PARITY": "PASS"
+  }
+}
