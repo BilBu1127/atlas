@@ -128,15 +128,25 @@ button{font-family:inherit;cursor:pointer}
  border:1px solid var(--heat);border-radius:2px;padding:1px 4px}
 .comp-rz{font-size:11.5px;line-height:1.55;color:var(--ink-faint);margin-top:4px}
 
-.edge-row{display:flex;gap:8px;align-items:baseline;padding:7px 0;border-bottom:1px solid var(--bg2);
- cursor:pointer;font-size:12px;transition:.12s}
-.edge-row:hover{padding-left:4px;color:var(--ink)}
-.edge-type{font-family:var(--mono);font-size:9.5px;letter-spacing:.04em;padding:2px 5px;border-radius:2px;
- background:var(--panel2);color:var(--ink-dim);flex:none;text-transform:none}
-.edge-to{color:var(--ink-dim);flex:1}
-.edge-to b{color:var(--ink)}
-.edge-mech{font-size:11px;color:var(--ink-faint);line-height:1.5;margin-top:3px}
-.edge-str{font-family:var(--mono);font-size:9px;color:var(--ink-faint)}
+.egroup{margin-bottom:12px}
+.egroup:last-child{margin-bottom:0}
+.egcap{display:flex;align-items:center;gap:7px;font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;
+ text-transform:uppercase;color:var(--ink-faint);margin:0 0 7px}
+.egcap .ar{font-size:12px;color:var(--ink-dim)}
+.egcap .cnt{margin-left:auto;color:var(--line2)}
+.edge-row{position:relative;display:block;padding:8px 10px 8px 14px;margin-bottom:4px;border-radius:5px;
+ background:var(--panel2);border:1px solid transparent;cursor:pointer;transition:.12s;overflow:hidden}
+.edge-row::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--ec,var(--line2))}
+.edge-row:hover{border-color:var(--line2);background:var(--panel);transform:translateX(1px)}
+.edge-top{display:flex;align-items:baseline;gap:8px}
+.edge-to{font-size:12.5px;font-weight:600;color:var(--ink);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.edge-type{font-family:var(--mono);font-size:8.5px;letter-spacing:.04em;padding:2px 6px;border-radius:3px;flex:none;
+ color:var(--ec,var(--ink-dim));background:color-mix(in srgb,var(--ec,#888) 15%,transparent);
+ border:1px solid color-mix(in srgb,var(--ec,#888) 32%,transparent)}
+.edge-str{font-family:var(--mono);font-size:8.5px;color:var(--ink-faint);flex:none}
+.edge-mech{font-size:11px;color:var(--ink-dim);line-height:1.5;margin-top:4px}
+.edge-go{font-family:var(--mono);font-size:9px;color:var(--ink-dim);opacity:0;transition:.12s;flex:none}
+.edge-row:hover .edge-go{opacity:1}
 
 .disc{margin-top:22px;padding-top:14px;border-top:1px solid var(--line);
  font-size:11px;line-height:1.65;color:var(--ink-faint)}
@@ -699,13 +709,23 @@ function renderIndustry(n){
   if(others&&others.length){ html+=`<div class="sec"><div class="sec-h">밸류체인 · 기타</div><div class="ind-list">`+
     others.map(c=>`<div class="li" onclick="focusCompany('${esc(c.ticker)}','${n.id}')"><span class="tk">${esc(c.ticker)}</span><span>${esc(c.name)} <span style="color:var(--ink-faint)">${esc(c.chain||'')}</span></span></div>`).join('')+`</div></div>`;}
   // edges
-  if(edgesOut.length){ html+=`<div class="sec"><div class="sec-h">엣지 · 전파 통로 <span style="color:var(--ink-faint)">${edgesOut.length}</span></div>`+
-    edgesOut.map(e=>{ const other=e.from===n.id?e.to:e.from; const on=NBYID[other]||{label:other};
-      const dir=e.from===n.id?'→':'←';
-      return `<div class="edge-row" onclick="selectNode('${other}')">
-        <span class="edge-type">${EDGE_KO[e.type]||e.type}</span>
-        <div class="edge-to">${dir} <b>${esc(on.label||other)}</b> <span class="edge-str">${e.strength}·${dirGlyph(e.direction)}</span>
-          <div class="edge-mech">${esc(e.mechanism||'')}</div></div></div>`;}).join('')+`</div>`;}
+  if(edgesOut.length){
+    const EC={SUPPLIES_TO:'#6FA8CE',DEMAND_COMOVES:'#8FB08A',SUBSTITUTES:'#D89A3A',
+      INVERSE:'#E0552F',CAPACITY_COMPETES:'#9B8FB0',THEME_DRIVES:'#C9B88A',CUSTOMER_OF:'#6FA8CE'};
+    const out=edgesOut.filter(e=>e.from===n.id), inc=edgesOut.filter(e=>e.to===n.id);
+    const row=e=>{ const other=e.from===n.id?e.to:e.from; const on=NBYID[other]||{label:other};
+      const col=EC[e.type]||'#8A929A';
+      return `<div class="edge-row" style="--ec:${col}" onclick="selectNode('${other}')">`+
+        `<div class="edge-top"><span class="edge-to">${esc(on.label||other)}</span>`+
+        `<span class="edge-type">${EDGE_KO[e.type]||e.type}</span>`+
+        `<span class="edge-str">${e.strength}${dirGlyph(e.direction)?'·'+dirGlyph(e.direction):''}</span>`+
+        `<span class="edge-go">→ 열기</span></div>`+
+        (e.mechanism?`<div class="edge-mech">${esc(e.mechanism)}</div>`:'')+`</div>`;};
+    html+=`<div class="sec"><div class="sec-h">엣지 · 전파 통로 <span style="color:var(--ink-faint)">${edgesOut.length}</span></div>`;
+    if(out.length) html+=`<div class="egroup"><div class="egcap"><span class="ar">→</span>이 산업이 영향을 준다<span class="cnt">${out.length}</span></div>${out.map(row).join('')}</div>`;
+    if(inc.length) html+=`<div class="egroup"><div class="egcap"><span class="ar">←</span>이 산업이 영향을 받는다<span class="cnt">${inc.length}</span></div>${inc.map(row).join('')}</div>`;
+    html+=`</div>`;
+  }
   html+=`<div class="disc">역할(role) 계층은 <b style="color:var(--ink-dim)">이 산업을 데운 트리거 기준</b>의 조사 후보 분류입니다. verification=SHALLOW(미검증) — 해자·재무·경영진의 진위는 딥다이브에서 가립니다. 매수 신호가 아닙니다.</div>`;
   $('ibody').innerHTML=html;
 }
