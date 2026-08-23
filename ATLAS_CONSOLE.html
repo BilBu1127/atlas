@@ -179,6 +179,13 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;
 .co .tk{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--ink)}
 .co .nm{font-size:12px;color:var(--dim);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .co .rz{font-size:11px;color:var(--faint);line-height:1.45;margin-top:3px}
+.rolecap.cover{color:var(--teal)} .mk.cover{border:1.5px solid var(--teal);opacity:.7}
+.co.dd{border-color:#3a5b52;background:rgba(70,179,172,.05)}
+.ddbadge{font-family:var(--mono);font-size:9px;color:var(--teal);border:1px solid #3a5b52;border-radius:3px;padding:1px 5px;white-space:nowrap}
+.co .ddv{margin-top:5px;padding-top:5px;border-top:1px dashed #2b3b39}
+.co .ddvs{font-family:var(--mono);font-size:10px;color:var(--teal);letter-spacing:.02em}
+.co .ddvt{font-size:11px;color:var(--dim);line-height:1.5;margin-top:2px}
+.obj .ddflag{position:absolute;top:6px;right:7px;font-size:10px;color:var(--teal);font-weight:700}
 .egroup{margin-bottom:12px}
 .egroup:last-child{margin-bottom:0}
 .egcap{display:flex;align-items:center;gap:7px;font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;
@@ -295,7 +302,7 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;
         const v=VER[c.ticker]||['SHALLOW',null];
         return {ticker:c.ticker, name:c.name, chain:c.chain_position||'',
           role:(c.role!==undefined?c.role:null), role_reason:c.role_reason||'', note:c.note||'',
-          verification:v[0]};
+          verification:v[0], deep_dive_ref:v[1]};
       });
       const li=ind.leading_indicators||[];
       nodes.push({
@@ -312,7 +319,8 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;
     const company_role=new Map();
     for(const ind of d.industries){
       for(const c of (ind.companies||[])){
-        if(c.role){ company_role.set(c.ticker,{role:c.role,reason:c.role_reason||'',indid:ind.id,name:c.name,tier:ind.tier}); }
+        const _dd=(VER[c.ticker]&&VER[c.ticker][0]==='DEEP_DIVED');
+        if(c.role||_dd){ company_role.set(c.ticker,{role:c.role||null,reason:c.role_reason||'',indid:ind.id,name:c.name,tier:ind.tier}); }
       }
     }
     const comp_edges=[];
@@ -368,7 +376,7 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;
         rationale:n.tier_rationale||'', market_read:n.market_read||{},
         companies:(n.companies||[]).map(c=>({ticker:c.ticker,name:c.name,chain:c.chain||'',
           role:(c.role!==undefined?c.role:null),role_reason:c.role_reason||'',
-          verification:c.verification||'SHALLOW'})),
+          verification:c.verification||'SHALLOW',deep_dive_ref:c.deep_dive_ref||null})),
         edges:nb});
     }
     const themes=d.themes.map(t=>({name:t.name, thesis:t.demand_thesis||'',
@@ -407,7 +415,7 @@ const SEC_BY_NAME={}; DATA.sectors.forEach(s=>SEC_BY_NAME[s.name]=s);
 const IND_BY_ID={}; DATA.industries.forEach(o=>IND_BY_ID[o.id]=o);
 const TIER_KO={HEAT:'과열',WARM:'온기',NEUTRAL:'중립',COLD:'냉각',FROZEN:'동결'};
 const TIER_COLOR={HEAT:'var(--heat)',WARM:'var(--warm)',NEUTRAL:'var(--neutral)',COLD:'var(--cold)',FROZEN:'var(--frozen)'};
-const ROLE_KO={ANCHOR:'대장',REGIME_LEADER:'국면 주도주',HIGH_BETA:'고베타 유망주'};
+const ROLE_KO={ANCHOR:'대장',REGIME_LEADER:'국면 주도주',HIGH_BETA:'고베타 유망주',_:'커버리지'};
 const EDGE_KO={SUPPLIES_TO:'공급',CUSTOMER_OF:'고객',SUBSTITUTES:'대체',CAPACITY_COMPETES:'capa경쟁',
  DEMAND_COMOVES:'수요동행',INVERSE:'역상관',THEME_DRIVES:'수요구동'};
 const esc=s=>(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
@@ -468,9 +476,11 @@ DATA.sectors.forEach(s=>{
     const glyphs=[roles.has('REGIME_LEADER')?'<span class="rg lead"></span>':'',
                   roles.has('HIGH_BETA')?'<span class="rg beta"></span>':'',
                   roles.has('ANCHOR')?'<span class="rg anchor"></span>':''].join('');
+    const hasDD=(o.companies||[]).some(c=>c.verification==='DEEP_DIVED');
     const d=document.createElement('div'); d.className='obj'; d.tabIndex=0;
     d.dataset.tier=o.tier; d.dataset.id=o.id;
-    d.innerHTML=`<div class="oid">${o.id}</div><div class="onm">${esc(o.name)}</div>`+
+    d.innerHTML=(hasDD?`<span class="ddflag" title="딥다이브 검증 노드 보유">✓</span>`:'')+
+                `<div class="oid">${o.id}</div><div class="onm">${esc(o.name)}</div>`+
                 (glyphs?`<div class="orole">${glyphs}</div>`:'');
     d.onclick=()=>openDrawer(o.id);
     d.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openDrawer(o.id);}};
@@ -523,11 +533,13 @@ function openDrawer(id){
 
   const roles={REGIME_LEADER:[],HIGH_BETA:[],ANCHOR:[],_:[]};
   (o.companies||[]).forEach(c=>(roles[c.role]||roles._).push(c));
-  const roleBlock=(key,cls,mk)=>{const arr=roles[key];if(!arr||!arr.length)return'';
-    return `<div class="roleg"><div class="rolecap ${cls}"><span class="mk ${mk}"></span>${ROLE_KO[key]} <span style="color:var(--faint)">· ${arr.length}</span></div>`+
-      arr.map(c=>{const dd=c.verification==='DEEP_DIVED';
-        return `<div class="co"${dd?' style="border-color:#3a5b52"':''}><div class="ct2"><span class="tk">${esc(c.ticker)}</span><span class="nm">${esc(c.name)}</span>${dd?'<span style="font-family:var(--mono);font-size:9px;color:var(--teal);border:1px solid #3a5b52;border-radius:3px;padding:1px 5px;white-space:nowrap">✓ 검증</span>':''}</div>`+
-        (c.role_reason?`<div class="rz">${esc(c.role_reason)}</div>`:(c.chain?`<div class="rz">${esc(c.chain)}</div>`:''))+`</div>`;}).join('')+`</div>`;};
+  const roleBlock=(key,cls,mk)=>{const arr=(roles[key]||[]).slice();if(!arr.length)return'';
+    arr.sort((a,b)=>(b.verification==='DEEP_DIVED')-(a.verification==='DEEP_DIVED'));
+    return `<div class="roleg"><div class="rolecap ${cls}"><span class="mk ${mk}"></span>${ROLE_KO[key]||key} <span style="color:var(--faint)">· ${arr.length}</span></div>`+
+      arr.map(c=>{const dd=c.verification==='DEEP_DIVED';const r=dd?c.deep_dive_ref:null;
+        const verdict=r?`<div class="ddv">${r.stance_zone?`<div class="ddvs">${esc(r.stance_zone)}</div>`:''}${r.thesis_oneline?`<div class="ddvt">${esc(r.thesis_oneline)}</div>`:''}</div>`:'';
+        return `<div class="co${dd?' dd':''}"><div class="ct2"><span class="tk">${esc(c.ticker)}</span><span class="nm">${esc(c.name)}</span>${dd?'<span class="ddbadge">✓ 검증</span>':''}</div>`+
+        (c.role_reason?`<div class="rz">${esc(c.role_reason)}</div>`:(c.chain?`<div class="rz">${esc(c.chain)}</div>`:''))+verdict+`</div>`;}).join('')+`</div>`;};
 
   let h='';
   h+=`<div class="sec2"><div class="h">수급 · 사이클</div>`+
@@ -554,6 +566,11 @@ function openDrawer(id){
   if(anyRole)
     h+=`<div class="sec2"><div class="h">주목 기업 · role 계층 <span style="color:var(--faint);text-transform:none">이 트리거 기준</span></div>`+
        roleBlock('REGIME_LEADER','lead','lead')+roleBlock('HIGH_BETA','beta','beta')+roleBlock('ANCHOR','anchor','anchor')+`</div>`;
+  if(roles._.length){
+    const ddN=roles._.filter(c=>c.verification==='DEEP_DIVED').length;
+    h+=`<div class="sec2"><div class="h">밸류체인 편입 기업 <span style="color:var(--faint);text-transform:none">역할 태그 외 커버리지${ddN?` · ✓ 검증 ${ddN}`:''}</span></div>`+
+       roleBlock('_','cover','cover')+`</div>`;
+  }
   if(o.edges&&o.edges.length){
     const EC={SUPPLIES_TO:'#46B3AC',DEMAND_COMOVES:'#7FB37A',SUBSTITUTES:'#E2A63F',
       INVERSE:'#EE6A43',CAPACITY_COMPETES:'#8A9BD0',THEME_DRIVES:'#C9B88A',CUSTOMER_OF:'#5FA6B8'};

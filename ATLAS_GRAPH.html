@@ -19,7 +19,7 @@
  --ink:#EBEAE4; --ink-dim:#9BA3AB; --ink-faint:#6B747C;
  --line:#2C333A; --line2:#39424A;
  --heat:#E0552F; --warm:#D89A3A; --neutral:#7A8894; --cold:#4A8DB8; --frozen:#4F5860;
- --theme:#C9B88A; --company:#B8C0C8;
+ --theme:#C9B88A; --company:#B8C0C8; --teal:#46B3AC;
  --mono:'IBM Plex Mono',ui-monospace,monospace;
  --sans:'Pretendard',-apple-system,system-ui,sans-serif;
 }
@@ -106,6 +106,9 @@ button{font-family:inherit;cursor:pointer}
  border-bottom:1px solid var(--bg2);cursor:pointer;transition:.12s}
 .li:hover{color:var(--ink);padding-left:4px}
 .li .tk{font-family:var(--mono);font-size:11px;color:var(--ink-faint);min-width:66px}
+.li.dd{background:rgba(70,179,172,.06);border-radius:4px;padding:5px 7px}
+.li.dd .tk{color:var(--teal)}
+.ddbadge{font-family:var(--mono);font-size:9px;color:var(--teal);border:1px solid #3a5b52;border-radius:3px;padding:1px 5px;white-space:nowrap;margin-left:auto;flex:none}
 
 /* role tiers */
 .role-grp{margin-bottom:14px}
@@ -290,7 +293,8 @@ button{font-family:inherit;cursor:pointer}
     const company_role=new Map();
     for(const ind of d.industries){
       for(const c of (ind.companies||[])){
-        if(c.role){ company_role.set(c.ticker,{role:c.role,reason:c.role_reason||'',indid:ind.id,name:c.name,tier:ind.tier}); }
+        const _dd=(VER[c.ticker]&&VER[c.ticker][0]==='DEEP_DIVED');
+        if(c.role||_dd){ company_role.set(c.ticker,{role:c.role||null,reason:c.role_reason||'',indid:ind.id,name:c.name,tier:ind.tier}); }
       }
     }
     const comp_edges=[];
@@ -539,6 +543,10 @@ function renderStatic(){
         ring.setAttribute('r',r+2.8); ring.setAttribute('fill','none');
         ring.setAttribute('stroke',TIER_COLOR.WARM); ring.setAttribute('stroke-width',1.2);
         ring.setAttribute('stroke-dasharray','2.5 2.5'); ring.setAttribute('opacity',.8); g.appendChild(ring);}
+      else if(n.verification==='DEEP_DIVED'){ const ring=document.createElementNS(NS,'circle');
+        ring.setAttribute('r',r+2.6); ring.setAttribute('fill','none');
+        ring.setAttribute('stroke','#46B3AC'); ring.setAttribute('stroke-width',1.3);
+        ring.setAttribute('opacity',.9); g.appendChild(ring);}
     }
     let shape;
     if(n.kind==='theme'){ shape=document.createElementNS(NS,'rect');
@@ -552,7 +560,7 @@ function renderStatic(){
     g.appendChild(shape);
     // deep-dived company mark
     if(n.kind==='company'&&n.verification==='DEEP_DIVED'){ const dot=document.createElementNS(NS,'circle');
-      dot.setAttribute('r',1.6); dot.setAttribute('fill','#14171A'); g.appendChild(dot);}
+      dot.setAttribute('r',1.8); dot.setAttribute('fill','#46B3AC'); dot.setAttribute('stroke','#14171A'); dot.setAttribute('stroke-width',.6); g.appendChild(dot);}
     g.addEventListener('mousedown',ev=>startDrag(ev,n));
     g.addEventListener('mouseenter',()=>setHover(n.id));
     g.addEventListener('mouseleave',()=>setHover(null));
@@ -706,8 +714,11 @@ function renderIndustry(n){
     roleBlock('REGIME_LEADER','leader','role-glyph-leader')+
     roleBlock('HIGH_BETA','beta','role-glyph-beta')+
     roleBlock('ANCHOR','anchor','role-glyph-anchor')+`</div>`;}
-  if(others&&others.length){ html+=`<div class="sec"><div class="sec-h">밸류체인 · 기타</div><div class="ind-list">`+
-    others.map(c=>`<div class="li" onclick="focusCompany('${esc(c.ticker)}','${n.id}')"><span class="tk">${esc(c.ticker)}</span><span>${esc(c.name)} <span style="color:var(--ink-faint)">${esc(c.chain||'')}</span></span></div>`).join('')+`</div></div>`;}
+  if(others&&others.length){ const oth=others.slice().sort((a,b)=>(b.verification==='DEEP_DIVED')-(a.verification==='DEEP_DIVED'));
+    const ddN=oth.filter(c=>c.verification==='DEEP_DIVED').length;
+    html+=`<div class="sec"><div class="sec-h">밸류체인 · 기타 ${ddN?`<span style="color:var(--teal);text-transform:none;letter-spacing:0">✓ 검증 ${ddN}</span>`:''}</div><div class="ind-list">`+
+    oth.map(c=>{const dd=c.verification==='DEEP_DIVED';
+      return `<div class="li${dd?' dd':''}" onclick="focusCompany('${esc(c.ticker)}','${n.id}')"><span class="tk">${esc(c.ticker)}</span><span>${esc(c.name)} <span style="color:var(--ink-faint)">${esc(c.chain||'')}</span></span>${dd?'<span class="ddbadge">✓ 검증</span>':''}</div>`;}).join('')+`</div></div>`;}
   // edges
   if(edgesOut.length){
     const EC={SUPPLIES_TO:'#6FA8CE',DEMAND_COMOVES:'#8FB08A',SUBSTITUTES:'#D89A3A',
