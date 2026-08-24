@@ -1,0 +1,866 @@
+{
+  "schema_version": "DDOS_v1.7_REPORT_DATA_PACK_1.0",
+  "ticker": "DNA",
+  "company": "Ginkgo Bioworks Holdings, Inc.",
+  "exchange": "NYSE",
+  "analysis_language": "ko-KR",
+  "as_of_registry": {
+    "analysis_asof": "2026-08-24T18:46:00+09:00",
+    "price_asof": "2026-08-21",
+    "price_close_usd": 7.4,
+    "latest_10k": "2026-02-26",
+    "latest_10q_located": "2026-05-07 (quarter ended 2026-03-31)",
+    "latest_q2_financial_update": "2026-08-05 Form 8-K Exhibit 99.1 (quarter ended 2026-06-30)",
+    "q2_2026_10q_status": "NOT_LOCATED_AFTER_SEC_SOURCE_EXHAUSTION",
+    "latest_filing_check": "PASS_WITH_PRIMARY_SOURCE_CEILING"
+  },
+  "economic_definition": "Autonomous-Lab Infrastructure + Tech-enabled CRO / R&D Services Hybrid",
+  "valuation_router": "Mode A — Option-led",
+  "stance": {
+    "label": "회피 / 관찰 유지",
+    "current_price_usd": 7.4,
+    "expected_terminal_value_2030_usd": 10.56,
+    "probability_weighted_present_value_usd": 6.32,
+    "expected_annualized_return": 0.0849,
+    "hurdle_rate": 0.125,
+    "upside_downside_ratio_bull_execution_vs_bear": 2.74,
+    "attractive_entry_usd_lte": 5.5,
+    "watch_band_usd": [
+      5.5,
+      6.8
+    ],
+    "current_price_zone": "above_probability_weighted_fair_value",
+    "reason": "기술·산업수요는 유효하나 반복사용·utilization·offering-level margin이 미검증이고, 현 가격의 기대수익률이 hurdle에 미달"
+  },
+  "annual_financials_usd_m": [
+    {
+      "year": 2023,
+      "revenue": 251.455,
+      "cell_engineering_revenue": 143.531,
+      "net_loss": -892.869,
+      "operating_cash_flow": -295.5,
+      "capex": -40.801,
+      "simple_fcf": -336.301,
+      "stock_based_comp": 229.884,
+      "sources": [
+        "S01"
+      ]
+    },
+    {
+      "year": 2024,
+      "revenue": 227.043,
+      "cell_engineering_revenue": 173.972,
+      "net_loss": -547.029,
+      "operating_cash_flow": -319.585,
+      "capex": -62.541,
+      "simple_fcf": -382.126,
+      "stock_based_comp": 112.344,
+      "sources": [
+        "S01"
+      ]
+    },
+    {
+      "year": 2025,
+      "revenue": 170.155,
+      "cell_engineering_revenue": 132.746,
+      "net_loss": -312.763,
+      "operating_cash_flow": -171.059,
+      "capex": -7.665,
+      "simple_fcf": -178.724,
+      "stock_based_comp": 81.546,
+      "sources": [
+        "S01"
+      ]
+    }
+  ],
+  "quarterly_observation_usd_m": [
+    {
+      "quarter": "2024Q3",
+      "revenue": 89.0,
+      "basis": "reported_total",
+      "comparability": "contains ~45M contract-termination non-cash revenue",
+      "sources": [
+        "S08"
+      ]
+    },
+    {
+      "quarter": "2024Q4",
+      "revenue": 44.0,
+      "basis": "reported_total",
+      "comparability": "includes Biosecurity",
+      "sources": [
+        "S08"
+      ]
+    },
+    {
+      "quarter": "2025Q1",
+      "revenue": 48.318,
+      "basis": "reported_total",
+      "comparability": "includes Biosecurity; Cell Engineering includes 7.5M termination release",
+      "sources": [
+        "S07"
+      ]
+    },
+    {
+      "quarter": "2025Q2",
+      "revenue": 49.604,
+      "basis": "reported_total",
+      "comparability": "includes Biosecurity",
+      "sources": [
+        "S07"
+      ]
+    },
+    {
+      "quarter": "2025Q3",
+      "revenue": 39.0,
+      "basis": "reported_total_rounded",
+      "comparability": "includes Biosecurity",
+      "sources": [
+        "S06"
+      ]
+    },
+    {
+      "quarter": "2025Q4",
+      "revenue": 33.0,
+      "basis": "reported_total_rounded",
+      "comparability": "includes Biosecurity",
+      "sources": [
+        "S09"
+      ]
+    },
+    {
+      "quarter": "2026Q1",
+      "revenue": 19.474,
+      "basis": "continuing_operations",
+      "net_loss_continuing": -76.059,
+      "ocf_continuing": -46.433,
+      "adjusted_ebitda": -42.255,
+      "capex": -1.933,
+      "sources": [
+        "S02"
+      ]
+    },
+    {
+      "quarter": "2026Q2",
+      "revenue": 20.156,
+      "basis": "continuing_operations",
+      "net_loss_continuing": -57.321,
+      "adjusted_ebitda": -36.281,
+      "sources": [
+        "S03"
+      ]
+    }
+  ],
+  "h1_2026_cashflow_usd_m": {
+    "revenue": 39.63,
+    "ocf_continuing": -88.606,
+    "capex": -4.552,
+    "atm_proceeds_gross": 17.049,
+    "stock_based_comp": 23.448,
+    "sources": [
+      "S03"
+    ]
+  },
+  "balance_sheet_2026q2_usd_m": {
+    "cash": 84.535,
+    "marketable_securities": 217.628,
+    "cash_plus_securities": 302.163,
+    "restricted_cash_total_approx": 87.48,
+    "restricted_cash_noncurrent": 84.565,
+    "pp_and_e": 157.185,
+    "operating_lease_rou_assets": 347.661,
+    "operating_lease_liability_noncurrent": 404.113,
+    "total_liabilities": 569.762,
+    "equity_method_investments": 7.615,
+    "sources": [
+      "S03"
+    ]
+  },
+  "revenue_quality": {
+    "2024_cell_engineering_termination_release_m": 45.4,
+    "2025_cell_engineering_termination_release_m": 7.5,
+    "2025_cell_engineering_ex_termination_company_stated_m": 125.0,
+    "2024_cell_engineering_ex_termination_company_stated_m": 129.0,
+    "sources": [
+      "S01",
+      "S09"
+    ]
+  },
+  "technology_kpis": [
+    {
+      "metric": "Nebula robots",
+      "value": ">100",
+      "evidence": "company claim; can run around the clock",
+      "status": "COMPANY_PRIMARY",
+      "sources": [
+        "S03"
+      ]
+    },
+    {
+      "metric": "Cloud Lab integrated instruments",
+      "value": ">70",
+      "status": "COMPANY_PRIMARY",
+      "sources": [
+        "S11"
+      ]
+    },
+    {
+      "metric": "Cloud Lab protocols",
+      "value": 18,
+      "detail": "15 Certified + 3 Beta",
+      "status": "COMPANY_PRIMARY",
+      "sources": [
+        "S11"
+      ]
+    },
+    {
+      "metric": "HiBiT workflow sample scale",
+      "value": "~10,000 samples",
+      "detail": "~80% lower hands-on time vs standalone automation in company-authored app note",
+      "status": "COMPANY_TECHNICAL",
+      "sources": [
+        "S11"
+      ]
+    },
+    {
+      "metric": "ADME-One early customers",
+      "value": 17,
+      "detail": "first six weeks; 10x-cheaper-vs-WuXi claim unverified independently",
+      "status": "COMPANY_CLAIM",
+      "sources": [
+        "S03"
+      ]
+    }
+  ],
+  "cloud_lab_pricing_examples": [
+    {
+      "protocol": "Echo-MS detection",
+      "price_usd_per_unit": 44,
+      "unit": "sample",
+      "turnaround": "up to 13 business days",
+      "sources": [
+        "S11"
+      ]
+    },
+    {
+      "protocol": "IVT RNA qPCR",
+      "price_usd_per_unit": 99,
+      "unit": "sample",
+      "turnaround": "up to 12 business days",
+      "sources": [
+        "S11"
+      ]
+    },
+    {
+      "protocol": "Cell-free Strep A280",
+      "price_usd_per_unit": 149,
+      "unit": "sample",
+      "turnaround": "up to 11 business days",
+      "sources": [
+        "S11"
+      ]
+    },
+    {
+      "protocol": "E. coli His A280",
+      "price_usd_per_unit": 199,
+      "unit": "sample",
+      "turnaround": "up to 3 weeks",
+      "sources": [
+        "S11"
+      ]
+    },
+    {
+      "protocol": "E. coli His A280 + LabChip",
+      "price_usd_per_unit": 209,
+      "unit": "sample",
+      "turnaround": "up to 3 weeks",
+      "sources": [
+        "S11"
+      ]
+    },
+    {
+      "protocol": "Thermal shift",
+      "price_usd_per_unit": 159,
+      "unit": "sample",
+      "turnaround": "up to 12 business days",
+      "sources": [
+        "S11"
+      ]
+    },
+    {
+      "protocol": "SPR target onboarding",
+      "price_usd_per_unit": 1399,
+      "unit": "target",
+      "turnaround": "up to 4 weeks",
+      "sources": [
+        "S11"
+      ]
+    }
+  ],
+  "customer_contract_ledger": [
+    {
+      "customer": "PNNL / EMSL",
+      "stage": "DEPLOYMENT / EXPANSION",
+      "evidence": "AMP2 ~4.6M competitive award; company reports new 47M 97-instrument lab",
+      "economic_readthrough": "strongest independent build validation; margin/backlog cadence undisclosed",
+      "sources": [
+        "S03",
+        "S18"
+      ]
+    },
+    {
+      "customer": "Caltech / Northwestern / University of Maryland",
+      "stage": "COMMISSIONED",
+      "evidence": "Ginkgo says labs commissioned under NSF programmable-cloud-lab investment",
+      "economic_readthrough": "market formation strong; DNA contract values not disclosed",
+      "sources": [
+        "S03",
+        "S16"
+      ]
+    },
+    {
+      "customer": "ProQR",
+      "stage": "COMMERCIAL SCIENTIFIC USE",
+      "evidence": "uses Nebula 50+ instrument lab for RNA-editing datasets; Ginkgo made strategic equity investment",
+      "economic_readthrough": "valid use case, but not clean arm's-length cash economics",
+      "sources": [
+        "S20"
+      ]
+    },
+    {
+      "customer": "AWS Bio Discovery",
+      "stage": "CHANNEL INTEGRATION",
+      "evidence": "Ginkgo listed among lab partners; antibody campaigns 20 to 5,000+ antibodies, up to 14 assays",
+      "economic_readthrough": "independent channel proof and lower discovery friction; also increases provider substitutability",
+      "sources": [
+        "S19"
+      ]
+    },
+    {
+      "customer": "Octant",
+      "stage": "RELATED_PARTY CUSTOMER",
+      "evidence": "2025 revenue ~0.336M; app note shows throughput/hands-on benefits",
+      "economic_readthrough": "technical evidence only; do not use as independent commercial validation",
+      "sources": [
+        "S04"
+      ]
+    }
+  ],
+  "competition": [
+    {
+      "competitor": "Emerald Cloud Lab",
+      "job": "broad remote lab",
+      "pricing": "startup basic around 30K/month in current public quote flow",
+      "strength": "mature cloud-lab subscription + command software/database",
+      "sources": [
+        "S13"
+      ]
+    },
+    {
+      "competitor": "Culture Biosciences",
+      "job": "bioprocess development",
+      "strength": "cloud-connected bioreactors + real-time process software",
+      "sources": [
+        "S14"
+      ]
+    },
+    {
+      "competitor": "WuXi AppTec",
+      "job": "ADME/DMPK and CRO breadth",
+      "strength": "100+ assay types, <5 business-day screening turnaround, 1,000+ professionals",
+      "sources": [
+        "S15"
+      ]
+    }
+  ],
+  "management_promise_delivery": {
+    "2021_spac_projection_2025_foundry_billable_revenue_m": 1099.0,
+    "2021_spac_projection_2025_adjusted_ebitda_m": 166.0,
+    "2025_actual_cell_engineering_revenue_m": 132.746,
+    "2025_actual_total_revenue_m": 170.155,
+    "2025_actual_adjusted_ebitda_approx_m": -167.0,
+    "actual_cell_engineering_as_pct_of_spac_foundry_projection": 0.1208,
+    "sources": [
+      "S10",
+      "S01",
+      "S09"
+    ]
+  },
+  "governance": {
+    "class_a_votes_per_share": 1,
+    "class_b_votes_per_share": 10,
+    "jason_kelly_voting_power_pct": 14.5,
+    "reshma_shetty_voting_power_pct": 29.2,
+    "directors_exec_officers_group_voting_power_pct": 44.2,
+    "jason_kelly_2025_total_comp_m": 5.709,
+    "jason_kelly_apr_2026_sell_to_cover_shares": 206782,
+    "sell_to_cover_is_discretionary_trade": false,
+    "sources": [
+      "S04",
+      "S05"
+    ]
+  },
+  "market_expectations": {
+    "2026_revenue_consensus_m": 82.6,
+    "2027_revenue_consensus_m": 87.1,
+    "analyst_target_low_usd": 5.0,
+    "analyst_target_avg_usd": 7.0,
+    "analyst_target_high_usd": 9.0,
+    "short_interest_shares_m_2026_07_31": 5.32,
+    "short_float_pct": 10.89,
+    "fy3_consensus_status": "PRIMARY_SOURCE_CEILING",
+    "clean_13f_delta_status": "PRIMARY_SOURCE_CEILING",
+    "sources": [
+      "S21",
+      "S22"
+    ]
+  },
+  "reverse_expectations": {
+    "horizon_years": 4.36,
+    "hurdle_rate": 0.125,
+    "required_2030_per_share_value": 12.37,
+    "assumed_2030_diluted_shares_m": 80.0,
+    "cases": [
+      {
+        "terminal_ev_revenue": 3.0,
+        "required_2030_revenue_m": 329.8,
+        "required_2027_to_2030_revenue_cagr": 0.5586
+      },
+      {
+        "terminal_ev_revenue": 4.0,
+        "required_2030_revenue_m": 247.3,
+        "required_2027_to_2030_revenue_cagr": 0.4161
+      },
+      {
+        "terminal_ev_revenue": 5.0,
+        "required_2030_revenue_m": 197.9,
+        "required_2027_to_2030_revenue_cagr": 0.3146
+      }
+    ]
+  },
+  "valuation_scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.35,
+      "revenue_2030_m": 120.0,
+      "terminal_ev_revenue": 1.0,
+      "terminal_net_cash_m": 0.0,
+      "diluted_shares_2030_m": 100.0,
+      "operating_case": "정부·상업 build 수주 둔화, Cloud/Datapoints 반복사용 부진, 2030년에도 구조적 현금소진과 추가 희석",
+      "enterprise_value_2030_m": 120.0,
+      "equity_value_2030_m": 120.0,
+      "per_share_2030": 1.2,
+      "present_value_per_share_at_hurdle": 0.72
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "revenue_2030_m": 240.0,
+      "terminal_ev_revenue": 2.5,
+      "terminal_net_cash_m": 30.0,
+      "diluted_shares_2030_m": 85.0,
+      "operating_case": "공공 autonomous-lab build와 제한적 상업 adoption, protocol 확장, 2030년 near-breakeven",
+      "enterprise_value_2030_m": 600.0,
+      "equity_value_2030_m": 630.0,
+      "per_share_2030": 7.41,
+      "present_value_per_share_at_hurdle": 4.43
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.2,
+      "revenue_2030_m": 450.0,
+      "terminal_ev_revenue": 4.0,
+      "terminal_net_cash_m": 100.0,
+      "diluted_shares_2030_m": 78.0,
+      "operating_case": "RAC build + Cloud Lab/Datapoints 반복사용이 함께 확장되고 utilization/operating leverage가 검증",
+      "enterprise_value_2030_m": 1800.0,
+      "equity_value_2030_m": 1900.0,
+      "per_share_2030": 24.36,
+      "present_value_per_share_at_hurdle": 14.58
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.05,
+      "revenue_2030_m": 650.0,
+      "terminal_ev_revenue": 5.0,
+      "terminal_net_cash_m": 200.0,
+      "diluted_shares_2030_m": 75.0,
+      "operating_case": "AI-loop가 lab demand를 크게 확대하고 protocol/orchestration network effects가 현실화; customer-data ownership 제약에도 ecosystem value 일부 발생",
+      "enterprise_value_2030_m": 3250.0,
+      "equity_value_2030_m": 3450.0,
+      "per_share_2030": 46.0,
+      "present_value_per_share_at_hurdle": 27.53
+    }
+  ],
+  "valuation_summary": {
+    "probability_weighted_terminal_value_2030_usd": 10.56,
+    "probability_weighted_present_value_usd": 6.32,
+    "expected_annualized_return_from_current": 0.0849,
+    "upside_downside_ratio": 2.74
+  },
+  "kpi_traffic_light": [
+    {
+      "kpi": "Commercial repeat usage / cohort spend",
+      "status": "RED",
+      "trigger_green": "repeat/cohort/spend disclosure showing multi-quarter expansion"
+    },
+    {
+      "kpi": "Nebula protocol breadth",
+      "status": "YELLOW",
+      "current": "18 protocols; weekly onboarding claim",
+      "trigger_green": ">30 certified protocols with material external usage"
+    },
+    {
+      "kpi": "Utilization / uptime",
+      "status": "RED",
+      "current": "not disclosed",
+      "trigger_green": "auditable utilization/uptime and queue metrics"
+    },
+    {
+      "kpi": "Government autonomous-lab awards",
+      "status": "GREEN",
+      "current": "PNNL + NSF nodes",
+      "trigger_red": "project delays/cancellations or no follow-on deployments"
+    },
+    {
+      "kpi": "Continuing revenue growth",
+      "status": "RED",
+      "current": "Q1 19.5M, Q2 20.2M",
+      "trigger_green": "two consecutive quarters >25% YoY/seq-normalized growth without termination effects"
+    },
+    {
+      "kpi": "Cash burn",
+      "status": "YELLOW",
+      "current": "2026 guide -150M to -125M",
+      "trigger_green": "annualized burn <75M with revenue growth"
+    },
+    {
+      "kpi": "Dilution",
+      "status": "YELLOW",
+      "current": "ATM active; Q2 weighted shares +13% YoY",
+      "trigger_red": "share count growth >15% YoY without clear revenue inflection"
+    },
+    {
+      "kpi": "Offering-level gross profit",
+      "status": "RED",
+      "current": "not disclosed",
+      "trigger_green": "Cloud/Datapoints/Solutions contribution margin disclosure or credible proxy"
+    }
+  ],
+  "catalyst_calendar": [
+    {
+      "window": "2026 Q3 earnings (expected next quarterly cycle)",
+      "watch": "Nebula device/protocol additions, ADME-One repeat customers, revenue inflection, cash burn"
+    },
+    {
+      "window": "2026 H2–2027",
+      "watch": "NSF node implementation milestones and Ginkgo contract values / revenue recognition"
+    },
+    {
+      "window": "2026 H2–2027",
+      "watch": "PNNL/EMSL $47M lab deployment milestones and follow-on orders"
+    },
+    {
+      "window": "2027",
+      "watch": "Cloud Lab protocol breadth and commercial repeat-use evidence"
+    },
+    {
+      "window": "2027",
+      "watch": "whether continuing revenue can move materially above ~20M quarterly base while burn falls"
+    }
+  ],
+  "falsification_conditions": [
+    "공공 autonomous-lab build가 실험실 구축 매출로만 끝나고 Cloud/Datapoints 반복 사용으로 이어지지 않음",
+    "Nebula utilization/uptime/repeat customer KPI가 계속 비공개이거나 공개 후 낮은 수준",
+    "2027 revenue가 consensus ~87M 주변에 머무르며 cash burn이 100M+ 지속",
+    "ATM/SBC 등으로 annual share count가 15% 이상 증가해 운영개선이 주당가치로 전달되지 않음",
+    "ADME-One의 가격 우위가 QC/turnaround/assay breadth를 포함한 고객 재구매로 이어지지 않음",
+    "AI/data moat가 customer-owned-data 구조 때문에 protocol/orchestration advantage 이상으로 확장되지 못함"
+  ],
+  "rc_ledger": [
+    {
+      "id": "RC-001",
+      "status": "COMPLETE"
+    },
+    {
+      "id": "RC-002",
+      "status": "COMPLETE"
+    },
+    {
+      "id": "RC-003",
+      "status": "PRIMARY_SOURCE_CEILING"
+    },
+    {
+      "id": "RC-004",
+      "status": "PRIMARY_SOURCE_CEILING"
+    },
+    {
+      "id": "RC-005",
+      "status": "PRIMARY_SOURCE_CEILING"
+    },
+    {
+      "id": "RC-006",
+      "status": "COMPLETE"
+    },
+    {
+      "id": "RC-007",
+      "status": "PRIMARY_SOURCE_CEILING"
+    },
+    {
+      "id": "RC-008",
+      "status": "PRIMARY_SOURCE_CEILING"
+    },
+    {
+      "id": "RC-009",
+      "status": "COMPLETE"
+    },
+    {
+      "id": "RC-010",
+      "status": "CONTRADICTED"
+    },
+    {
+      "id": "RC-011",
+      "status": "COMPLETE"
+    },
+    {
+      "id": "RC-012",
+      "status": "COMPLETE"
+    },
+    {
+      "id": "RC-013",
+      "status": "PRIMARY_SOURCE_CEILING"
+    },
+    {
+      "id": "RC-014",
+      "status": "COMPLETE"
+    },
+    {
+      "id": "RC-015",
+      "status": "PRIMARY_SOURCE_CEILING"
+    },
+    {
+      "id": "RC-016",
+      "status": "COMPLETE"
+    },
+    {
+      "id": "RC-017",
+      "status": "PRIMARY_SOURCE_CEILING"
+    }
+  ],
+  "rc_counts": {
+    "COMPLETE": 8,
+    "PRIMARY_SOURCE_CEILING": 8,
+    "CONTRADICTED": 1,
+    "NOT_MATERIAL": 0,
+    "UNRESOLVED": 0
+  },
+  "industry_to_company_transmission": {
+    "status": "PARTIAL",
+    "reason": "external demand + DNA technical qualification are evidenced; repeat usage, utilization and offering-level economics are not"
+  },
+  "reader_quality_gates": {
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "EXPLANATORY_SPACE_ALLOCATION": "PASS"
+  },
+  "source_registry": {
+    "S01": {
+      "title": "Ginkgo Bioworks 2025 Form 10-K",
+      "publisher": "SEC",
+      "date": "2026-02-26",
+      "url": "https://www.sec.gov/Archives/edgar/data/1830214/000162828026012346/dna-20251231.htm",
+      "tier": 1
+    },
+    "S02": {
+      "title": "Ginkgo Bioworks Q1 2026 Form 10-Q",
+      "publisher": "SEC",
+      "date": "2026-05-07",
+      "url": "https://www.sec.gov/Archives/edgar/data/1830214/000162828026032116/dna-20260331.htm",
+      "tier": 1
+    },
+    "S03": {
+      "title": "Ginkgo Bioworks Q2 2026 Results, Exhibit 99.1",
+      "publisher": "SEC / Company",
+      "date": "2026-08-05",
+      "url": "https://www.sec.gov/Archives/edgar/data/1830214/000162828026053319/ex991earningspr.htm",
+      "tier": 1
+    },
+    "S04": {
+      "title": "Ginkgo Bioworks 2026 DEF 14A",
+      "publisher": "SEC",
+      "date": "2026-04-29",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=1830214&owner=exclude&action=getcompany",
+      "tier": 1
+    },
+    "S05": {
+      "title": "Jason Kelly Form 4",
+      "publisher": "SEC",
+      "date": "2026-04-10",
+      "url": "https://www.sec.gov/Archives/edgar/data/1830214/000162828026024743/0001628280-26-024743-index.htm",
+      "tier": 1
+    },
+    "S06": {
+      "title": "Ginkgo Q3 2025 Results",
+      "publisher": "SEC / Company",
+      "date": "2025-11-06",
+      "url": "https://www.sec.gov/Archives/edgar/data/1830214/000183021425000013/ex991earningspr.htm",
+      "tier": 1
+    },
+    "S07": {
+      "title": "Ginkgo Q2 2025 Results",
+      "publisher": "SEC / Company",
+      "date": "2025-08-07",
+      "url": "https://www.sec.gov/Archives/edgar/data/1830214/000162828025038981/ex991earningspr.htm",
+      "tier": 1
+    },
+    "S08": {
+      "title": "Ginkgo FY2024 Results",
+      "publisher": "SEC / Company",
+      "date": "2025-02-25",
+      "url": "https://www.sec.gov/Archives/edgar/data/1830214/000162828025007816/ex991earningspr.htm",
+      "tier": 1
+    },
+    "S09": {
+      "title": "Ginkgo FY2025 Results",
+      "publisher": "SEC / Company",
+      "date": "2026-02-26",
+      "url": "https://www.sec.gov/Archives/edgar/data/1830214/000162828026012339/ex991earningspr.htm",
+      "tier": 1
+    },
+    "S10": {
+      "title": "Ginkgo 2021 Investor Presentation / SPAC projections",
+      "publisher": "SEC / Company",
+      "date": "2021-05",
+      "url": "https://www.sec.gov/Archives/edgar/data/1830214/000119312521156847/d66969dex992.htm",
+      "tier": 1
+    },
+    "S11": {
+      "title": "Ginkgo Cloud Lab",
+      "publisher": "Ginkgo Bioworks",
+      "date": "2026-08",
+      "url": "https://www.ginkgo.bio/cloud-lab",
+      "tier": 2
+    },
+    "S12": {
+      "title": "Ginkgo Datapoints",
+      "publisher": "Ginkgo Bioworks",
+      "date": "2026-08",
+      "url": "https://www.ginkgo.bio/datapoints",
+      "tier": 2
+    },
+    "S13": {
+      "title": "Emerald Cloud Lab pricing",
+      "publisher": "Emerald Cloud Lab",
+      "date": "2026-08",
+      "url": "https://www.emeraldcloudlab.com/get-started/pricing/",
+      "tier": 3
+    },
+    "S14": {
+      "title": "Culture Biosciences platform",
+      "publisher": "Culture Biosciences",
+      "date": "2026-08",
+      "url": "https://www.culturebiosciences.com/",
+      "tier": 3
+    },
+    "S15": {
+      "title": "WuXi AppTec in vitro ADME",
+      "publisher": "WuXi AppTec",
+      "date": "2026-08",
+      "url": "https://labtesting.wuxiapptec.com/dmpk-services/invitro-adme/",
+      "tier": 3
+    },
+    "S16": {
+      "title": "NSF AI-ready test beds / programmable cloud labs awards",
+      "publisher": "National Science Foundation",
+      "date": "2026-07-22",
+      "url": "https://www.nsf.gov/news",
+      "tier": 1
+    },
+    "S17": {
+      "title": "Genesis Mission / Autonomous Laboratories",
+      "publisher": "The White House",
+      "date": "2026-07",
+      "url": "https://www.whitehouse.gov/",
+      "tier": 1
+    },
+    "S18": {
+      "title": "PNNL automated phenotyping / M2PC materials",
+      "publisher": "Pacific Northwest National Laboratory",
+      "date": "2026",
+      "url": "https://www.pnnl.gov/",
+      "tier": 1
+    },
+    "S19": {
+      "title": "AWS Bio Discovery",
+      "publisher": "Amazon Web Services",
+      "date": "2026",
+      "url": "https://aws.amazon.com/",
+      "tier": 3
+    },
+    "S20": {
+      "title": "ProQR / Ginkgo partnership",
+      "publisher": "ProQR",
+      "date": "2026-04-08",
+      "url": "https://www.proqr.com/",
+      "tier": 3
+    },
+    "S21": {
+      "title": "DNA price history / analyst aggregation",
+      "publisher": "StockAnalysis",
+      "date": "2026-08-21",
+      "url": "https://stockanalysis.com/stocks/dna/history/",
+      "tier": 4
+    },
+    "S22": {
+      "title": "DNA short interest snapshot",
+      "publisher": "Finviz aggregation",
+      "date": "2026-07-31",
+      "url": "https://finviz.com/quote.ashx?t=DNA",
+      "tier": 4
+    }
+  },
+  "visual_data_lineage": [
+    {
+      "visual_id": "V01",
+      "title": "3개년 매출·OCF·FCF",
+      "data_path": "annual_financials_usd_m",
+      "sources": [
+        "S01"
+      ]
+    },
+    {
+      "visual_id": "V02",
+      "title": "2026 Q2 유동성 vs 제한현금·lease liability",
+      "data_path": "balance_sheet_2026q2_usd_m",
+      "sources": [
+        "S03"
+      ]
+    },
+    {
+      "visual_id": "V03",
+      "title": "SPAC 2025 Promise vs Delivery",
+      "data_path": "management_promise_delivery",
+      "sources": [
+        "S10",
+        "S01",
+        "S09"
+      ]
+    },
+    {
+      "visual_id": "V04",
+      "title": "Valuation scenarios",
+      "data_path": "valuation_scenarios",
+      "sources": [
+        "model assumptions; S01-S03,S21"
+      ]
+    },
+    {
+      "visual_id": "V05",
+      "title": "Reverse expectations",
+      "data_path": "reverse_expectations",
+      "sources": [
+        "model assumptions; S21"
+      ]
+    }
+  ]
+}

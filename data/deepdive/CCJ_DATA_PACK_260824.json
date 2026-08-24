@@ -1,0 +1,1203 @@
+{
+  "meta": {
+    "ticker": "CCJ",
+    "company": "Cameco Corporation",
+    "T0": 102.51,
+    "price_asof": "2026-08-21",
+    "filing_asof": "2026-07-31",
+    "financial_asof": "2026-06-30",
+    "consensus_asof": "2026-08-12",
+    "report_asof": "2026-08-24",
+    "version": "DDOS v1.7 / CCJ 2026-08-24",
+    "currency_note": "Company financials C$ unless stated; share values US$",
+    "horizon_years": 3.3620807666
+  },
+  "financials": {
+    "annual_3y": {
+      "unit": "C$mm",
+      "2023": {
+        "revenue": 2588,
+        "gross_profit": 562,
+        "net_earnings": 361,
+        "adjusted_net_earnings": 383,
+        "adjusted_ebitda": 884,
+        "operating_cash_flow": 688,
+        "parent_capex": 154
+      },
+      "2024": {
+        "revenue": 3136,
+        "gross_profit": 783,
+        "net_earnings": 172,
+        "adjusted_net_earnings": 292,
+        "adjusted_ebitda": 1531,
+        "operating_cash_flow": 905,
+        "parent_capex": 212
+      },
+      "2025": {
+        "revenue": 3482,
+        "gross_profit": 970,
+        "net_earnings": 590,
+        "adjusted_net_earnings": 627,
+        "adjusted_ebitda": 1929,
+        "operating_cash_flow": 1408,
+        "parent_capex": 333
+      }
+    },
+    "quarterly_8q": {
+      "unit": "C$mm",
+      "2024Q3": {
+        "revenue": 721,
+        "net_earnings": 7,
+        "adjusted_net_earnings": 24,
+        "operating_cash_flow": 52
+      },
+      "2024Q4": {
+        "revenue": 1183,
+        "net_earnings": 135,
+        "adjusted_net_earnings": 157,
+        "operating_cash_flow": 530
+      },
+      "2025Q1": {
+        "revenue": 789,
+        "net_earnings": 70,
+        "adjusted_net_earnings": 70,
+        "operating_cash_flow": 110
+      },
+      "2025Q2": {
+        "revenue": 877,
+        "net_earnings": 321,
+        "adjusted_net_earnings": 308,
+        "operating_cash_flow": 465
+      },
+      "2025Q3": {
+        "revenue": 615,
+        "net_earnings": 0,
+        "net_earnings_note": "approximately zero",
+        "adjusted_net_earnings": 32,
+        "operating_cash_flow": 156
+      },
+      "2025Q4": {
+        "revenue": 1201,
+        "net_earnings": 199,
+        "adjusted_net_earnings": 217,
+        "operating_cash_flow": 677
+      },
+      "2026Q1": {
+        "revenue": 845,
+        "net_earnings": 131,
+        "adjusted_net_earnings": 203,
+        "operating_cash_flow": -22
+      },
+      "2026Q2": {
+        "revenue": 814,
+        "net_earnings": 25,
+        "adjusted_net_earnings": 77,
+        "operating_cash_flow": 131
+      }
+    },
+    "2026_guidance": {
+      "consolidated_revenue_cad_bn": [
+        3.32,
+        3.57
+      ],
+      "uranium_revenue_cad_bn": [
+        2.7,
+        2.91
+      ],
+      "uranium_sales_mlb": [
+        29,
+        32
+      ],
+      "uranium_owned_production_mlb": [
+        19.5,
+        21.5
+      ],
+      "uranium_realized_price_cad_per_lb": [
+        91,
+        96
+      ],
+      "uranium_unit_cost_cad_per_lb": [
+        63,
+        67.5
+      ],
+      "fuel_services_revenue_cad_m": [
+        610,
+        650
+      ],
+      "fuel_services_production_m_kgu": [
+        13,
+        14
+      ],
+      "parent_capex_cad_m": [
+        490,
+        540
+      ],
+      "westinghouse_share_adj_ebitda_usd_m": [
+        370,
+        430
+      ],
+      "westinghouse_share_capex_usd_m": [
+        160,
+        200
+      ]
+    },
+    "uranium_cost_bridge_2026": {
+      "Q2": {
+        "realized_price_cad_per_lb": 93.13,
+        "unit_cost_sales_cad_per_lb": 70.81,
+        "produced_incurred_cost_cad_per_lb": 41.26,
+        "purchased_cost_cad_per_lb": 91.4
+      },
+      "H1": {
+        "produced_incurred_cost_cad_per_lb": 36.84,
+        "purchased_cost_cad_per_lb": 92.69
+      }
+    },
+    "ceilings": [
+      "Westinghouse confidential S-1 terms not public as of 2026-08-24.",
+      "Full proprietary sell-side 2027-2030 models and institutional positioning unavailable in public primary sources."
+    ]
+  },
+  "industry": {
+    "eia_us_utility_contract_gap_mlb": {
+      "2026": {
+        "max_contracted": 42.016,
+        "unfilled": 0.952
+      },
+      "2030": {
+        "max_contracted": 17.934,
+        "unfilled": 12.021
+      },
+      "2031": {
+        "max_contracted": null,
+        "unfilled": 23.061
+      },
+      "2033": {
+        "max_contracted": 3.151,
+        "unfilled": 33.591
+      },
+      "2034": {
+        "max_contracted": null,
+        "unfilled": 37.236
+      },
+      "2035": {
+        "max_contracted": null,
+        "unfilled": 36.429
+      }
+    },
+    "uranium_market_price_2026_07_31": {
+      "spot_usd_per_lb": 86.38,
+      "long_term_usd_per_lb": 95.5
+    },
+    "wna_reference": {
+      "capacity_gwe_2025": 398,
+      "capacity_gwe_2040": 746,
+      "uranium_tu_2025": 68920,
+      "uranium_tu_2040_min": 150000
+    },
+    "kazatomprom_2026_production_guide": {
+      "tU": [
+        27500,
+        29000
+      ],
+      "mlb": [
+        71.49,
+        75.39
+      ]
+    }
+  },
+  "contract_price_sensitivity": {
+    "unit": "US$/lb",
+    "spot_prices": [
+      40,
+      60,
+      80,
+      100,
+      120,
+      140,
+      160
+    ],
+    "2026": [
+      58,
+      62,
+      66,
+      67,
+      68,
+      69,
+      69
+    ],
+    "2027": [
+      46,
+      58,
+      69,
+      74,
+      76,
+      78,
+      80
+    ],
+    "2028": [
+      49,
+      60,
+      72,
+      80,
+      84,
+      89,
+      92
+    ],
+    "2029": [
+      53,
+      62,
+      75,
+      85,
+      91,
+      96,
+      101
+    ],
+    "2030": [
+      53,
+      63,
+      76,
+      88,
+      94,
+      100,
+      106
+    ]
+  },
+  "westinghouse": {
+    "ownership_pct": 49,
+    "core_backlog_2025_usd_bn": {
+      "outage": 7.3,
+      "fuel": 2.6,
+      "operating_plants": 3.3,
+      "total_core": 13.2,
+      "new_plants": 0.8
+    },
+    "ap1000_pipeline_units_up_to": 91,
+    "illustrative_two_unit_project": {
+      "capacity_mwe": 2300,
+      "first_unit_order_to_cod_years": [
+        9,
+        10
+      ],
+      "second_unit_order_to_cod_years": [
+        10,
+        11
+      ],
+      "overnight_capital_usd_bn_initial": [
+        20,
+        26
+      ],
+      "overnight_capital_usd_bn_noak": [
+        14,
+        17
+      ],
+      "westinghouse_scope_pct": [
+        40,
+        45
+      ],
+      "westinghouse_scope_usd_bn_initial": [
+        8,
+        11
+      ],
+      "westinghouse_scope_usd_bn_noak": [
+        6,
+        8
+      ],
+      "normalized_ebitda_margin_pct": 20,
+      "follow_on_annual_revenue_usd_m": [
+        45,
+        60
+      ]
+    },
+    "doe_conditional_loan_usd_bn": 17.5,
+    "doe_projects_supported_up_to_two_unit_projects": 5,
+    "us_gov_participation_threshold_usd_bn": 80,
+    "us_gov_distribution_share_pct_above_threshold": 20,
+    "ipo_threshold_usd_bn": 30,
+    "cameco_share_2026H1": {
+      "revenue_cad_m": 1731,
+      "adjusted_ebitda_cad_m": 284,
+      "fcf_cad_m": 180,
+      "net_earnings_cad_m": -56
+    },
+    "cameco_share_2026Q2": {
+      "revenue_cad_m": 863,
+      "adjusted_ebitda_cad_m": 163,
+      "fcf_cad_m": 109,
+      "net_earnings_cad_m": -10
+    },
+    "balance_sheet_2026_06_30_100pct": {
+      "cash_cad_m": 290.65,
+      "current_debt_cad_m": 46.56,
+      "long_term_debt_cad_m": 4822.1,
+      "estimated_net_debt_usd_bn": 3.39
+    }
+  },
+  "kpis": [
+    {
+      "name": "Uranium attributable production",
+      "unit": "Mlb",
+      "current": "2026 guide 19.5-21.5",
+      "history": [
+        {
+          "2025": 21.0
+        }
+      ],
+      "thresholds": {
+        "green": "annual guide upper half / stable delivery",
+        "yellow": "near low end with temporary disruptions",
+        "red": "guidance cut or structural miss two years"
+      }
+    },
+    {
+      "name": "External purchase leakage",
+      "unit": "C$/lb",
+      "current": {
+        "Q2_produced": 41.26,
+        "Q2_purchased": 91.4
+      },
+      "history": [
+        {
+          "H1_2026_produced": 36.84,
+          "H1_2026_purchased": 92.69
+        }
+      ],
+      "thresholds": {
+        "green": "purchase volume falls and cost gap narrows",
+        "yellow": "high but temporary purchases",
+        "red": "high-cost purchases become structural"
+      }
+    },
+    {
+      "name": "2028-2030 contract realized-price sensitivity",
+      "unit": "US$/lb",
+      "current": {
+        "2029_at_spot_100": 85,
+        "2029_at_spot_160": 101
+      },
+      "history": [],
+      "thresholds": {
+        "green": "curve maintained or improved",
+        "yellow": "new contracting but curve stalls",
+        "red": "curve revised materially lower"
+      }
+    },
+    {
+      "name": "Long-term uranium price",
+      "unit": "US$/lb",
+      "current": 95.5,
+      "history": [],
+      "thresholds": {
+        "green": ">=90",
+        "yellow": "80-90",
+        "red": "<80 sustained"
+      }
+    },
+    {
+      "name": "Westinghouse core EBITDA",
+      "unit": "US$m Cameco share",
+      "current": "2026 guide 370-430",
+      "history": [
+        {
+          "2025_cad_m": 780
+        }
+      ],
+      "thresholds": {
+        "green": "upper-half guide plus backlog growth",
+        "yellow": "mid-guide / mixed backlog",
+        "red": "guide cut plus backlog decline"
+      }
+    },
+    {
+      "name": "AP1000 FID / long-lead orders",
+      "unit": "projects",
+      "current": "pipeline up to 91 units; pre-FID for many",
+      "history": [],
+      "thresholds": {
+        "green": "multiple meaningful conversions by end-2027",
+        "yellow": "LOI / negotiations only",
+        "red": "no meaningful FID by end-2027"
+      }
+    },
+    {
+      "name": "GLE licensing",
+      "unit": "status",
+      "current": "NRC PLEF review underway",
+      "history": [],
+      "thresholds": {
+        "green": "review milestones and customer evidence on schedule",
+        "yellow": "moderate delay",
+        "red": "material license/technology setback"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.25,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "revenue_path": [
+        3.45,
+        2.95,
+        3.1,
+        3.25,
+        3.35
+      ],
+      "margin_path": [
+        0.28,
+        0.25,
+        0.25,
+        0.26,
+        0.26
+      ],
+      "fcf": [
+        null,
+        0.55,
+        0.65,
+        0.7,
+        0.75
+      ],
+      "diluted_shares": 436,
+      "per_share_value": 50,
+      "sotp_usd_bn": {
+        "uranium": 16.0,
+        "fuel_services": 1.5,
+        "westinghouse_core": 4.0,
+        "ap1000_execution": 1.5,
+        "gle_ecosystem": 0.2,
+        "parent_net_cash_other": 0.9,
+        "corporate_execution_drag": -2.3,
+        "us_government_participation_drag": 0.0
+      }
+    },
+    {
+      "name": "Base",
+      "probability": 0.55,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "revenue_path": [
+        3.45,
+        3.7,
+        4.1,
+        4.5,
+        4.85
+      ],
+      "margin_path": [
+        0.28,
+        0.3,
+        0.32,
+        0.34,
+        0.35
+      ],
+      "fcf": [
+        null,
+        0.95,
+        1.3,
+        1.7,
+        1.95
+      ],
+      "diluted_shares": 437,
+      "per_share_value": 115,
+      "sotp_usd_bn": {
+        "uranium": 35.0,
+        "fuel_services": 3.2,
+        "westinghouse_core": 8.2,
+        "ap1000_execution": 4.255,
+        "gle_ecosystem": 1.0,
+        "parent_net_cash_other": 0.9,
+        "corporate_execution_drag": -2.3,
+        "us_government_participation_drag": 0.0
+      }
+    },
+    {
+      "name": "Up",
+      "probability": 0.2,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "revenue_path": [
+        3.45,
+        4.05,
+        4.8,
+        5.65,
+        6.15
+      ],
+      "margin_path": [
+        0.28,
+        0.32,
+        0.35,
+        0.38,
+        0.39
+      ],
+      "fcf": [
+        null,
+        1.2,
+        2.0,
+        3.0,
+        3.4
+      ],
+      "diluted_shares": 438,
+      "per_share_value": 190,
+      "sotp_usd_bn": {
+        "uranium": 50.5,
+        "fuel_services": 4.5,
+        "westinghouse_core": 18.2,
+        "ap1000_execution": 10.0,
+        "gle_ecosystem": 3.0,
+        "parent_net_cash_other": 1.2,
+        "corporate_execution_drag": -2.3,
+        "us_government_participation_drag": -1.88
+      }
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B Hybrid SOTP",
+    "core": {
+      "components": [
+        "Uranium",
+        "Fuel Services",
+        "Westinghouse Core"
+      ]
+    },
+    "execution": {
+      "components": [
+        "AP1000 Execution"
+      ]
+    },
+    "ecosystem": {
+      "components": [
+        "GLE"
+      ]
+    },
+    "drag": {
+      "components": [
+        "Corporate/execution drag",
+        "U.S. government participation drag"
+      ]
+    },
+    "expected_value_2029_per_share": 113.75,
+    "expected_irr": 0.03142972898,
+    "current_price": 102.51,
+    "horizon_years": 3.3620807666,
+    "scenario_irr": {
+      "Down": -0.1922798183,
+      "Base": 0.0347880391,
+      "Up": 0.2014585251
+    },
+    "up_down_ratio": 1.6661588269,
+    "12pct_hurdle_entry_price": 77.7099157185,
+    "15pct_hurdle_entry_price": 71.101762069,
+    "reconstructed_post_wec_ev_adj_ebitda": {
+      "2023": 30.0,
+      "2024": 21.0,
+      "2025": 29.3,
+      "current_ttm": 34.0
+    },
+    "note": "Historical multiple comparison is limited to post-Westinghouse comparable period."
+  },
+  "reverse_expectations": {
+    "required_2029_price_for_12pct_irr": 150.0517970221,
+    "required_2029_price_for_10pct_irr": 141.2315690875,
+    "base_to_up_progress_required_pct": 46.7357293628,
+    "required_2029_equity_value_usd_bn_at_437m_shares": 65.5726352987,
+    "base_non_uranium_value_usd_bn": 15.255,
+    "required_uranium_value_usd_bn_if_other_base": 50.3176352987,
+    "required_uranium_ebitda_usd_bn_at_20x": 2.5158817649,
+    "required_uranium_ebitda_cad_bn_at_1_35_fx": 3.3964403827,
+    "illustrative_sales_mlb": 34,
+    "illustrative_unit_cost_cad_per_lb": 63,
+    "illustrative_other_ebitda_cad_bn": 0.65,
+    "implied_realized_price_cad_per_lb": 143.7776583135,
+    "implied_realized_price_usd_per_lb_at_1_35_fx": 106.5019691211,
+    "interpretation": "If non-uranium value stays at Base, current price requires uranium economics around/above the current 2029 sensitivity upper region to clear 12%, unless Westinghouse exceeds Base."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_cad_bn": 3.5,
+      "eps": 1.48
+    },
+    "fy2": {
+      "status": "PRIMARY_SOURCE_CEILING"
+    },
+    "target_price": {
+      "analysts": 23,
+      "average_usd": 130.75,
+      "median_usd": 134.98,
+      "low_usd": 85.75,
+      "high_usd": 177.74
+    },
+    "ratings": {
+      "strong_buy": 12,
+      "buy": 9,
+      "hold": 3,
+      "sell": 0
+    },
+    "positioning": {
+      "short_float_pct": 1.55,
+      "note": "Public secondary figure; detailed institutional positioning ceiling."
+    },
+    "revision_trend": "Broadly constructive / consensus already optimistic; public detailed FY2+ revisions unavailable."
+  },
+  "stance": {
+    "zone": "WATCH",
+    "price_bands": {
+      "active_interest": "<=75",
+      "conditional_interest": "75-85",
+      "watch": "85-110",
+      "low_new_buy_appeal": "110-120",
+      "avoid_or_reduce_without_up_evidence": ">120"
+    },
+    "horizon": "2029-12-31",
+    "hurdle_rate": 0.12,
+    "logic": "Current expected IRR ~3.1% and U/D ~1.67x do not clear 12% / >2x preference."
+  },
+  "catalysts": [
+    {
+      "when": "2026-10-30",
+      "event": "Q3 2026 results / investor update",
+      "sensitivity": "production guide, purchases, WEC guide"
+    },
+    {
+      "when": "2026 H2",
+      "event": "GLE NRC environmental-review milestones",
+      "sensitivity": "ecosystem option value"
+    },
+    {
+      "when": "2026 H2-2027 H1",
+      "event": "Possible Westinghouse IPO public process",
+      "sensitivity": "valuation discovery, ownership, proceeds, government drag"
+    },
+    {
+      "when": "2026 YE",
+      "event": "Full-year McArthur/Cigar production close",
+      "sensitivity": "uranium margin / purchase leakage"
+    },
+    {
+      "when": "2027 Q1",
+      "event": "2026 annual results and 2027 guidance",
+      "sensitivity": "contract realized price, production/sales, WEC EBITDA"
+    },
+    {
+      "when": "2027 H1",
+      "event": "U.S. AP1000 partner/site/LPO progress",
+      "sensitivity": "LOI to long-lead/FID conversion"
+    },
+    {
+      "when": "2027 H1-H2",
+      "event": "Long-term uranium contracting evidence",
+      "sensitivity": "2028-2030 realized-price path"
+    },
+    {
+      "when": "2027 H2",
+      "event": "GLE NRC safety-review progress",
+      "sensitivity": "licensing risk"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "§1.2-1.3"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "§1.1, §1.6"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "§1.3"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "§1.5"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "§3.2-3.3, §4.4"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "§1.6, §3.4"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "§3.5, §4.5"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "§2.1-2.3"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "§2.4, §3.7"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "§1.7, §3.6, §5.4"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "§1.7, §3.7"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "§3.8"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "§4.1-4.7"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "§5.1-5.8"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "§5.7"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "§6.2-6.4"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "name": "Cameco 2026 Q2 Quarterly Report",
+      "url": "https://www.cameco.com/invest/financial-information/quarterly-reports/2026/q2",
+      "type": "company_primary"
+    },
+    {
+      "id": "S2",
+      "name": "Cameco Q2 2026 Results",
+      "url": "https://www.cameco.com/media/news/cameco-reports-2026-second-quarter-results",
+      "type": "company_primary"
+    },
+    {
+      "id": "S3",
+      "name": "Cameco 2025 Annual Report",
+      "url": "https://www.cameco.com/invest/financial-information/annual-reports/2025",
+      "type": "company_primary"
+    },
+    {
+      "id": "S4",
+      "name": "Cameco Investor Briefcase",
+      "url": "https://www.cameco.com/invest/why-invest/investor-briefcase",
+      "type": "company_primary"
+    },
+    {
+      "id": "S5",
+      "name": "U.S. EIA Uranium Marketing Annual Report",
+      "url": "https://www.eia.gov/uranium/marketing/",
+      "type": "government_primary"
+    },
+    {
+      "id": "S6",
+      "name": "U.S. DOE nuclear financing materials",
+      "url": "https://www.energy.gov/",
+      "type": "government_primary"
+    },
+    {
+      "id": "S7",
+      "name": "U.S. NRC GLE licensing materials",
+      "url": "https://www.nrc.gov/",
+      "type": "regulator_primary"
+    },
+    {
+      "id": "S8",
+      "name": "World Nuclear Association World Nuclear Fuel Report 2025",
+      "url": "https://world-nuclear.org/",
+      "type": "industry"
+    },
+    {
+      "id": "S9",
+      "name": "Kazatomprom Integrated Annual Report 2025",
+      "url": "https://www.kazatomprom.kz/",
+      "type": "company_primary"
+    },
+    {
+      "id": "S10",
+      "name": "OECD Nuclear Energy Agency new-build materials",
+      "url": "https://www.oecd-nea.org/",
+      "type": "intergovernmental"
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "VIS_ID": "VIS-001",
+      "FIGURE_TITLE": "미국 유틸리티 우라늄 계약 공백",
+      "AUTHORITATIVE_SOURCE_BLOCK": "industry.eia_us_utility_contract_gap_mlb",
+      "SOURCE_VALUES": {
+        "2026": {
+          "max_contracted": 42.016,
+          "unfilled": 0.952
+        },
+        "2030": {
+          "max_contracted": 17.934,
+          "unfilled": 12.021
+        },
+        "2031": {
+          "max_contracted": null,
+          "unfilled": 23.061
+        },
+        "2033": {
+          "max_contracted": 3.151,
+          "unfilled": 33.591
+        },
+        "2034": {
+          "max_contracted": null,
+          "unfilled": 37.236
+        },
+        "2035": {
+          "max_contracted": null,
+          "unfilled": 36.429
+        }
+      },
+      "SOURCE_VERSION_OR_HASH": "dc05427be33bac7f",
+      "DISPLAY_VALUES": "generated from same data pack at publish time",
+      "NARRATIVE_LOCATOR": "§1.3",
+      "TABLE_LOCATOR": "§1.3 table",
+      "CAPTION_LOCATOR": "VIS-001",
+      "RENDERED_ASSET_LOCATOR": "inline SVG/CSS in final HTML/PDF",
+      "DISPLAYED_VALUES_MATCH": true,
+      "TABLE_MATCH": true,
+      "NARRATIVE_MATCH": true,
+      "RENDER_MATCH": true,
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-002",
+      "FIGURE_TITLE": "Cameco 계약 실현가격 민감도",
+      "AUTHORITATIVE_SOURCE_BLOCK": "contract_price_sensitivity",
+      "SOURCE_VALUES": {
+        "unit": "US$/lb",
+        "spot_prices": [
+          40,
+          60,
+          80,
+          100,
+          120,
+          140,
+          160
+        ],
+        "2026": [
+          58,
+          62,
+          66,
+          67,
+          68,
+          69,
+          69
+        ],
+        "2027": [
+          46,
+          58,
+          69,
+          74,
+          76,
+          78,
+          80
+        ],
+        "2028": [
+          49,
+          60,
+          72,
+          80,
+          84,
+          89,
+          92
+        ],
+        "2029": [
+          53,
+          62,
+          75,
+          85,
+          91,
+          96,
+          101
+        ],
+        "2030": [
+          53,
+          63,
+          76,
+          88,
+          94,
+          100,
+          106
+        ]
+      },
+      "SOURCE_VERSION_OR_HASH": "d460c70b5f48cecd",
+      "DISPLAY_VALUES": "generated from same data pack at publish time",
+      "NARRATIVE_LOCATOR": "§1.5",
+      "TABLE_LOCATOR": "§1.5 table",
+      "CAPTION_LOCATOR": "VIS-002",
+      "RENDERED_ASSET_LOCATOR": "inline SVG/CSS in final HTML/PDF",
+      "DISPLAYED_VALUES_MATCH": true,
+      "TABLE_MATCH": true,
+      "NARRATIVE_MATCH": true,
+      "RENDER_MATCH": true,
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-003",
+      "FIGURE_TITLE": "3개년 재무 성장",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.annual_3y",
+      "SOURCE_VALUES": {
+        "unit": "C$mm",
+        "2023": {
+          "revenue": 2588,
+          "gross_profit": 562,
+          "net_earnings": 361,
+          "adjusted_net_earnings": 383,
+          "adjusted_ebitda": 884,
+          "operating_cash_flow": 688,
+          "parent_capex": 154
+        },
+        "2024": {
+          "revenue": 3136,
+          "gross_profit": 783,
+          "net_earnings": 172,
+          "adjusted_net_earnings": 292,
+          "adjusted_ebitda": 1531,
+          "operating_cash_flow": 905,
+          "parent_capex": 212
+        },
+        "2025": {
+          "revenue": 3482,
+          "gross_profit": 970,
+          "net_earnings": 590,
+          "adjusted_net_earnings": 627,
+          "adjusted_ebitda": 1929,
+          "operating_cash_flow": 1408,
+          "parent_capex": 333
+        }
+      },
+      "SOURCE_VERSION_OR_HASH": "584f50bb08c03271",
+      "DISPLAY_VALUES": "generated from same data pack at publish time",
+      "NARRATIVE_LOCATOR": "§4.1",
+      "TABLE_LOCATOR": "§4.1 table",
+      "CAPTION_LOCATOR": "VIS-003",
+      "RENDERED_ASSET_LOCATOR": "inline SVG/CSS in final HTML/PDF",
+      "DISPLAYED_VALUES_MATCH": true,
+      "TABLE_MATCH": true,
+      "NARRATIVE_MATCH": true,
+      "RENDER_MATCH": true,
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-004",
+      "FIGURE_TITLE": "2026 Q2 자체생산 vs 외부구매 원가",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.uranium_cost_bridge_2026.Q2",
+      "SOURCE_VALUES": {
+        "realized_price_cad_per_lb": 93.13,
+        "unit_cost_sales_cad_per_lb": 70.81,
+        "produced_incurred_cost_cad_per_lb": 41.26,
+        "purchased_cost_cad_per_lb": 91.4
+      },
+      "SOURCE_VERSION_OR_HASH": "24eb208515a48d55",
+      "DISPLAY_VALUES": "generated from same data pack at publish time",
+      "NARRATIVE_LOCATOR": "§4.4",
+      "TABLE_LOCATOR": "§4.4 narrative",
+      "CAPTION_LOCATOR": "VIS-004",
+      "RENDERED_ASSET_LOCATOR": "inline SVG/CSS in final HTML/PDF",
+      "DISPLAYED_VALUES_MATCH": true,
+      "TABLE_MATCH": true,
+      "NARRATIVE_MATCH": true,
+      "RENDER_MATCH": true,
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-005",
+      "FIGURE_TITLE": "Westinghouse backlog 구성",
+      "AUTHORITATIVE_SOURCE_BLOCK": "westinghouse.core_backlog_2025_usd_bn",
+      "SOURCE_VALUES": {
+        "outage": 7.3,
+        "fuel": 2.6,
+        "operating_plants": 3.3,
+        "total_core": 13.2,
+        "new_plants": 0.8
+      },
+      "SOURCE_VERSION_OR_HASH": "cce753faf7e379b3",
+      "DISPLAY_VALUES": "generated from same data pack at publish time",
+      "NARRATIVE_LOCATOR": "§3.5",
+      "TABLE_LOCATOR": "§3.5 narrative",
+      "CAPTION_LOCATOR": "VIS-005",
+      "RENDERED_ASSET_LOCATOR": "inline SVG/CSS in final HTML/PDF",
+      "DISPLAYED_VALUES_MATCH": true,
+      "TABLE_MATCH": true,
+      "NARRATIVE_MATCH": true,
+      "RENDER_MATCH": true,
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-006",
+      "FIGURE_TITLE": "2029 SOTP 시나리오",
+      "AUTHORITATIVE_SOURCE_BLOCK": "scenarios[*].sotp_usd_bn",
+      "SOURCE_VALUES": {
+        "Down": {
+          "uranium": 16.0,
+          "fuel_services": 1.5,
+          "westinghouse_core": 4.0,
+          "ap1000_execution": 1.5,
+          "gle_ecosystem": 0.2,
+          "parent_net_cash_other": 0.9,
+          "corporate_execution_drag": -2.3,
+          "us_government_participation_drag": 0.0
+        },
+        "Base": {
+          "uranium": 35.0,
+          "fuel_services": 3.2,
+          "westinghouse_core": 8.2,
+          "ap1000_execution": 4.255,
+          "gle_ecosystem": 1.0,
+          "parent_net_cash_other": 0.9,
+          "corporate_execution_drag": -2.3,
+          "us_government_participation_drag": 0.0
+        },
+        "Up": {
+          "uranium": 50.5,
+          "fuel_services": 4.5,
+          "westinghouse_core": 18.2,
+          "ap1000_execution": 10.0,
+          "gle_ecosystem": 3.0,
+          "parent_net_cash_other": 1.2,
+          "corporate_execution_drag": -2.3,
+          "us_government_participation_drag": -1.88
+        }
+      },
+      "SOURCE_VERSION_OR_HASH": "2771172aa27d2be0",
+      "DISPLAY_VALUES": "generated from same data pack at publish time",
+      "NARRATIVE_LOCATOR": "§5.4",
+      "TABLE_LOCATOR": "§5.4 table",
+      "CAPTION_LOCATOR": "VIS-006",
+      "RENDERED_ASSET_LOCATOR": "inline SVG/CSS in final HTML/PDF",
+      "DISPLAYED_VALUES_MATCH": true,
+      "TABLE_MATCH": true,
+      "NARRATIVE_MATCH": true,
+      "RENDER_MATCH": true,
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-007",
+      "FIGURE_TITLE": "시나리오 주당가치 vs 현재가격",
+      "AUTHORITATIVE_SOURCE_BLOCK": "scenarios[*].per_share_value + valuation.current_price",
+      "SOURCE_VALUES": {
+        "scenarios": {
+          "Down": 50,
+          "Base": 115,
+          "Up": 190
+        },
+        "current": 102.51
+      },
+      "SOURCE_VERSION_OR_HASH": "bfa64ce8bf212dcc",
+      "DISPLAY_VALUES": "generated from same data pack at publish time",
+      "NARRATIVE_LOCATOR": "§5.5",
+      "TABLE_LOCATOR": "§5.5 narrative",
+      "CAPTION_LOCATOR": "VIS-007",
+      "RENDERED_ASSET_LOCATOR": "inline SVG/CSS in final HTML/PDF",
+      "DISPLAYED_VALUES_MATCH": true,
+      "TABLE_MATCH": true,
+      "NARRATIVE_MATCH": true,
+      "RENDER_MATCH": true,
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-008",
+      "FIGURE_TITLE": "Reverse Expectations",
+      "AUTHORITATIVE_SOURCE_BLOCK": "reverse_expectations",
+      "SOURCE_VALUES": {
+        "required_2029_price_for_12pct_irr": 150.0517970221,
+        "required_2029_price_for_10pct_irr": 141.2315690875,
+        "base_to_up_progress_required_pct": 46.7357293628,
+        "required_2029_equity_value_usd_bn_at_437m_shares": 65.5726352987,
+        "base_non_uranium_value_usd_bn": 15.255,
+        "required_uranium_value_usd_bn_if_other_base": 50.3176352987,
+        "required_uranium_ebitda_usd_bn_at_20x": 2.5158817649,
+        "required_uranium_ebitda_cad_bn_at_1_35_fx": 3.3964403827,
+        "illustrative_sales_mlb": 34,
+        "illustrative_unit_cost_cad_per_lb": 63,
+        "illustrative_other_ebitda_cad_bn": 0.65,
+        "implied_realized_price_cad_per_lb": 143.7776583135,
+        "implied_realized_price_usd_per_lb_at_1_35_fx": 106.5019691211,
+        "interpretation": "If non-uranium value stays at Base, current price requires uranium economics around/above the current 2029 sensitivity upper region to clear 12%, unless Westinghouse exceeds Base."
+      },
+      "SOURCE_VERSION_OR_HASH": "6303eed9d676c974",
+      "DISPLAY_VALUES": "generated from same data pack at publish time",
+      "NARRATIVE_LOCATOR": "§5.6",
+      "TABLE_LOCATOR": "§5.6 narrative",
+      "CAPTION_LOCATOR": "VIS-008",
+      "RENDERED_ASSET_LOCATOR": "inline SVG/CSS in final HTML/PDF",
+      "DISPLAYED_VALUES_MATCH": true,
+      "TABLE_MATCH": true,
+      "NARRATIVE_MATCH": true,
+      "RENDER_MATCH": true,
+      "STATUS": "PASS"
+    }
+  ],
+  "publishing_qa": {
+    "REPORT_DATA_PACK": "EMITTED",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "CONTENT_MEANING_LOCK_PRESERVED": "PASS",
+    "PUBLISHED_TOP_LEVEL_SCHEMA_MATCH": "PASS",
+    "EXPLANATORY_DEPTH_PRESERVED": "PASS",
+    "CORE_LANDSCAPE_PAGES": 0,
+    "PRINTED_TOC_PAGES": 1,
+    "TOC_CLICKABLE": "PASS",
+    "PDF_BOOKMARKS": "PASS",
+    "HTML_SIDEBAR": "PASS",
+    "SEARCHABLE_TEXT": "PASS",
+    "KOREAN_READABILITY": "PASS",
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "EXPLANATORY_SPACE_ALLOCATION": "PASS",
+    "SMART_CHAPTER_TRANSITIONS": "PASS",
+    "ARGUMENT_BLOCK_PAGINATION": "PASS",
+    "ACCIDENTAL_SPARSE_PAGES": 0,
+    "DENSITY_CONTROL": "PASS",
+    "VISUAL_SUBSTITUTION": "PASS",
+    "VISUAL_GRAMMAR_VARIETY": "PASS",
+    "CHART_READABILITY": "PASS",
+    "TABLE_QUALITY": "PASS",
+    "CONTACT_SHEET_COMPOSITION_QA": "PASS",
+    "SEMANTIC_GOLDEN_QA": "PASS",
+    "VISUAL_GOLDEN_QA": "PASS",
+    "GOLDEN_PARITY": "PASS",
+    "VISUAL_SEMANTIC_PARITY": "PASS",
+    "DECISION_VISUALS_TOTAL": 8,
+    "PUBLISHING_ACCEPTANCE": "PASS",
+    "pdf_pages": 30,
+    "pdf_outline_items": 88,
+    "qa_date": "2026-08-24"
+  }
+}

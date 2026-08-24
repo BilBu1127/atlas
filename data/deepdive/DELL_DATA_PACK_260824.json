@@ -1,0 +1,1009 @@
+{
+  "meta": {
+    "company": "Dell Technologies Inc.",
+    "ticker": "DELL",
+    "exchange": "NYSE",
+    "as_of": "2026-08-24",
+    "price_as_of": "2026-08-21",
+    "current_price": 442.08,
+    "filing_as_of": "FY27 Q1 Form 10-Q; period 2026-05-01; filed 2026-06-09",
+    "transcript_as_of": "2026-05-28",
+    "next_known_earnings": "2026-09-01",
+    "currency": "USD",
+    "units_note": "Financial statement values are USD billions unless otherwise noted",
+    "deep_dive_os": "v1.7",
+    "T0": "2026-08-24",
+    "price_asof": "2026-08-21",
+    "filing_asof": "FY27 Q1 Form 10-Q; period 2026-05-01; filed 2026-06-09",
+    "consensus_asof": "2026-08-19~2026-08-24 public window",
+    "version": "v1.7"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "fiscal_year": "FY24",
+        "revenue": 88.425,
+        "product_revenue": 64.353,
+        "services_revenue": 24.072,
+        "gross_profit": 21.069,
+        "gross_margin_pct": 23.8,
+        "gaap_operating_income": 5.411,
+        "gaap_operating_margin_pct": 6.1,
+        "net_income": 3.372,
+        "gaap_diluted_eps": 4.6,
+        "non_gaap_operating_income": 7.878,
+        "non_gaap_operating_margin_pct": 8.9,
+        "non_gaap_eps": 7.37,
+        "cfo": 8.676,
+        "simple_fcf": 5.923,
+        "adjusted_fcf": 5.607,
+        "sbc_pretax": 0.878,
+        "isg_revenue": 33.885,
+        "isg_operating_income": 4.286,
+        "isg_margin_pct": 12.6,
+        "ai_server_revenue": 1.873,
+        "traditional_server_networking": 15.751,
+        "storage_revenue": 16.261,
+        "csg_revenue": 48.916,
+        "csg_operating_income": 3.712,
+        "csg_margin_pct": 7.6
+      },
+      {
+        "fiscal_year": "FY25",
+        "revenue": 95.567,
+        "product_revenue": 71.42,
+        "services_revenue": 24.147,
+        "gross_profit": 21.25,
+        "gross_margin_pct": 22.2,
+        "gaap_operating_income": 6.237,
+        "gaap_operating_margin_pct": 6.5,
+        "net_income": 4.576,
+        "gaap_diluted_eps": 6.38,
+        "non_gaap_operating_income": 8.529,
+        "non_gaap_operating_margin_pct": 8.9,
+        "non_gaap_eps": 8.14,
+        "cfo": 4.521,
+        "simple_fcf": 1.958,
+        "adjusted_fcf": 3.097,
+        "sbc_pretax": 0.785,
+        "isg_revenue": 43.593,
+        "isg_operating_income": 5.579,
+        "isg_margin_pct": 12.8,
+        "ai_server_revenue": 9.286,
+        "traditional_server_networking": 17.85,
+        "storage_revenue": 16.457,
+        "csg_revenue": 48.393,
+        "csg_operating_income": 2.972,
+        "csg_margin_pct": 6.1
+      },
+      {
+        "fiscal_year": "FY26",
+        "revenue": 113.538,
+        "product_revenue": 90.405,
+        "services_revenue": 23.133,
+        "gross_profit": 22.707,
+        "gross_margin_pct": 20.0,
+        "gaap_operating_income": 8.149,
+        "gaap_operating_margin_pct": 7.2,
+        "net_income": 5.936,
+        "gaap_diluted_eps": 8.68,
+        "non_gaap_operating_income": 9.991,
+        "non_gaap_operating_margin_pct": 8.8,
+        "non_gaap_eps": 10.3,
+        "cfo": 11.185,
+        "simple_fcf": 8.555,
+        "adjusted_fcf": 11.508,
+        "sbc_pretax": 0.723,
+        "isg_revenue": 60.826,
+        "isg_operating_income": 7.111,
+        "isg_margin_pct": 11.7,
+        "ai_server_revenue": 24.683,
+        "traditional_server_networking": 19.512,
+        "storage_revenue": 16.631,
+        "csg_revenue": 50.984,
+        "csg_operating_income": 2.833,
+        "csg_margin_pct": 5.6
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "FY25 Q2",
+        "revenue": 25.026,
+        "gaap_oi": 1.342,
+        "cfo": 1.34,
+        "simple_fcf": 0.658,
+        "isg_revenue": 11.646,
+        "csg_revenue": 12.4
+      },
+      {
+        "quarter": "FY25 Q3",
+        "revenue": 24.366,
+        "gaap_oi": 1.668,
+        "cfo": 1.553,
+        "simple_fcf": 0.914,
+        "isg_revenue": 11.368,
+        "csg_revenue": 12.131
+      },
+      {
+        "quarter": "FY25 Q4",
+        "revenue": 23.931,
+        "gaap_oi": 2.159,
+        "cfo": 0.585,
+        "simple_fcf": -0.15,
+        "isg_revenue": 11.352,
+        "csg_revenue": 11.881
+      },
+      {
+        "quarter": "FY26 Q1",
+        "revenue": 23.378,
+        "gaap_oi": 1.165,
+        "cfo": 2.796,
+        "simple_fcf": 2.228,
+        "isg_revenue": 10.317,
+        "csg_revenue": 12.509
+      },
+      {
+        "quarter": "FY26 Q2",
+        "revenue": 29.776,
+        "gaap_oi": 1.773,
+        "cfo": 2.543,
+        "simple_fcf": 1.868,
+        "isg_revenue": 16.8,
+        "csg_revenue": 12.5
+      },
+      {
+        "quarter": "FY26 Q3",
+        "revenue": 27.005,
+        "gaap_oi": 2.119,
+        "cfo": 1.172,
+        "simple_fcf": 0.503,
+        "isg_revenue": 14.107,
+        "csg_revenue": 12.478
+      },
+      {
+        "quarter": "FY26 Q4",
+        "revenue": 33.379,
+        "gaap_oi": 3.092,
+        "cfo": 4.674,
+        "simple_fcf": 3.953,
+        "isg_revenue": 19.602,
+        "csg_revenue": 13.494
+      },
+      {
+        "quarter": "FY27 Q1",
+        "revenue": 43.842,
+        "gaap_oi": 3.656,
+        "cfo": 4.081,
+        "simple_fcf": 3.118,
+        "isg_revenue": 29.009,
+        "csg_revenue": 14.609
+      }
+    ],
+    "latest_quarter": {
+      "revenue": 43.842,
+      "ai_server_revenue": 16.132,
+      "ai_orders": 24.4,
+      "ai_backlog": 51.3,
+      "traditional_server_networking": 8.543,
+      "storage_revenue": 4.334,
+      "isg_revenue": 29.009,
+      "isg_operating_income": 3.055,
+      "isg_margin_pct": 10.5,
+      "csg_revenue": 14.609,
+      "csg_operating_income": 1.17,
+      "csg_margin_pct": 8.0,
+      "cfo": 4.081,
+      "simple_fcf": 3.118,
+      "adjusted_fcf": 3.165,
+      "diluted_shares_m": 656
+    },
+    "ceilings": [
+      {
+        "rc_id": "RC-006",
+        "item": "AI server BOM/pass-through micro-economics",
+        "reason": "GPU/HBM/networking component economics and Dell retained gross-profit dollars are not separately disclosed."
+      },
+      {
+        "rc_id": "RC-008",
+        "item": "AI backlog cancellability/customer-dollar concentration",
+        "reason": "Backlog size and customer count are disclosed, but cancellation rights, contract terms and customer-dollar concentration are not."
+      },
+      {
+        "rc_id": "RC-010",
+        "item": "supplier allocation/capacity/contract pricing",
+        "reason": "Memory constraint and CM concentration are disclosed, but GPU/HBM allocations and supplier contract prices are not."
+      }
+    ]
+  },
+  "working_capital": {
+    "accounts_receivable": {
+      "fy26_end": 17.585,
+      "fy27_q1": 25.854,
+      "change": 8.269
+    },
+    "inventory": {
+      "fy26_end": 10.437,
+      "fy27_q1": 15.052,
+      "change": 4.615
+    },
+    "accounts_payable": {
+      "fy26_end": 33.63,
+      "fy27_q1": 45.261,
+      "change": 11.631
+    },
+    "supplier_chain_finance_invoices": {
+      "fy26_end": 2.0,
+      "fy27_q1": 3.1
+    },
+    "deferred_revenue_cfo_bridge": 0.664
+  },
+  "dfs": {
+    "net_financing_receivables": 13.95,
+    "equipment_under_operating_leases": 2.731,
+    "originations_q1": 2.8,
+    "principal_chargeoff_pct": 0.3,
+    "approx_debt_equity_funding_ratio": "7:1"
+  },
+  "capital_allocation": {
+    "fy26_buyback_dollars_b": 6.0,
+    "fy26_buyback_shares_m": 54,
+    "fy27_q1_buyback_dollars_b": 1.6,
+    "fy27_q1_buyback_shares_m": 11,
+    "quarterly_dividend_per_share": 0.63,
+    "approx_remaining_authorization_b": 15.2
+  },
+  "kpis": [
+    {
+      "name": "AI economics",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": "AI OI rate >= mid-single-digit and storage attach broadens",
+        "yellow": "AI revenue grows but ISG margin <10% or storage flat",
+        "red": "AI OI below target for 2 quarters or backlog-quality deterioration"
+      }
+    },
+    {
+      "name": "Storage",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": "YoY growth >=8% plus Dell-IP/margin evidence",
+        "yellow": "0-8% growth",
+        "red": "declines while AI revenue grows >20%"
+      }
+    },
+    {
+      "name": "ISG operating margin",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": ">=10.5-11%",
+        "yellow": "9-10.5%",
+        "red": "<9% persistently"
+      }
+    },
+    {
+      "name": "CSG operating margin",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": ">=7% with commercial growth",
+        "yellow": "5-7%",
+        "red": "<5% with revenue decline"
+      }
+    },
+    {
+      "name": "Normalized CFO/NI",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": "TTM >1x after DFS/WC normalization",
+        "yellow": "0.7-1.0x",
+        "red": "<0.7x with AR/inventory outgrowing revenue for 2 quarters"
+      }
+    },
+    {
+      "name": "Diluted share count",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": "YoY decline >3%",
+        "yellow": "roughly flat",
+        "red": "increases"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.3,
+      "revenue_path": [
+        160,
+        160,
+        165
+      ],
+      "margin_path": [
+        8.5,
+        8.0,
+        7.8
+      ],
+      "fcf": [
+        8.0,
+        8.5,
+        9.5
+      ],
+      "diluted_shares": 630,
+      "diluted_shares_path": [
+        645,
+        638,
+        630
+      ],
+      "per_share_value": 164.28153600037226,
+      "exit_p_fcf": 14,
+      "future_total_value_per_share": 216.61111111111111,
+      "irr_from_current": -0.2535090726126573
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "revenue_path": [
+        167,
+        187,
+        205
+      ],
+      "margin_path": [
+        9.2,
+        9.3,
+        9.5
+      ],
+      "fcf": [
+        10.5,
+        12.5,
+        14.5
+      ],
+      "diluted_shares": 610,
+      "diluted_shares_path": [
+        640,
+        625,
+        610
+      ],
+      "per_share_value": 329.4326957959357,
+      "exit_p_fcf": 18,
+      "future_total_value_per_share": 434.3688524590164,
+      "irr_from_current": -0.007185859637976799
+    },
+    {
+      "name": "Up",
+      "probability": 0.2,
+      "revenue_path": [
+        178,
+        215,
+        245
+      ],
+      "margin_path": [
+        9.8,
+        10.2,
+        10.5
+      ],
+      "fcf": [
+        12.5,
+        16.0,
+        19.0
+      ],
+      "diluted_shares": 590,
+      "diluted_shares_path": [
+        635,
+        612,
+        590
+      ],
+      "per_share_value": 543.0072470599721,
+      "exit_p_fcf": 22,
+      "future_total_value_per_share": 715.9745762711865,
+      "irr_from_current": 0.21847979883131918
+    }
+  ],
+  "valuation": {
+    "router": "Mode C Mature Compounder primary + Mode D hardware/cycle cross-check",
+    "horizon_years": 2.44,
+    "hurdle_rate": 0.12,
+    "discount_factor": 1.3185359498380895,
+    "probability_weighted_future_value_per_share": 425.36267481707887,
+    "probability_weighted_present_value_per_share": 322.60225811007393,
+    "probability_weighted_expected_irr": -0.015674505005531247,
+    "base_present_value_per_share": 329.4326957959357,
+    "current_price": 442.08,
+    "up_down_ratio_at_current": 0.3633110334983974,
+    "mode": "Mode C Mature Compounder primary + Mode D hardware/cycle cross-check",
+    "core": 329.4326957959357,
+    "execution": "AI OI + storage/service attach + opex leverage",
+    "ecosystem": "enterprise integration / support / DFS; multi-vendor competition",
+    "drag": "component pass-through + working-capital normalization + valuation premium",
+    "expected_value": 322.60225811007393,
+    "expected_irr": -0.015674505005531247
+  },
+  "reverse_expectations": {
+    "assumed_terminal_diluted_shares_m": 610,
+    "assumed_cumulative_dividend_per_share": 6.5,
+    "required_fy29_fcf_by_exit_multiple": [
+      {
+        "exit_p_fcf": 14,
+        "required_fy29_fcf_b": 25.114500524978414
+      },
+      {
+        "exit_p_fcf": 18,
+        "required_fy29_fcf_b": 19.533500408316545
+      },
+      {
+        "exit_p_fcf": 20,
+        "required_fy29_fcf_b": 17.58015036748489
+      },
+      {
+        "exit_p_fcf": 22,
+        "required_fy29_fcf_b": 15.981954879531719
+      },
+      {
+        "exit_p_fcf": 24,
+        "required_fy29_fcf_b": 14.65012530623741
+      }
+    ],
+    "public_consensus_fy29_fcf_b": 15.698,
+    "interpretation": "At roughly 22x exit P/FCF, current price requires about public-consensus FY29 FCF; at 18x it requires roughly 24% more FCF than public consensus."
+  },
+  "consensus": {
+    "fy27_revenue_b": 172.3,
+    "fy27_eps": 18.64,
+    "fy29_fcf_b": 15.698,
+    "company_fy27_revenue_midpoint_b": 167,
+    "company_fy27_non_gaap_eps_midpoint": 17.9,
+    "company_fy27_ai_server_revenue_approx_b": 60,
+    "forward_pe_snapshot": 23.82,
+    "five_year_avg_forward_pe": 9.72,
+    "ev_ebit_snapshot": 26.51,
+    "five_year_avg_ev_ebit": 13.42,
+    "short_interest_float_pct": 3.48,
+    "short_interest_m": 13.176,
+    "short_days_to_cover": 2.2,
+    "fy1": {
+      "fiscal_year": "FY27",
+      "revenue_b": 172.3,
+      "eps": 18.64
+    },
+    "fy2": {
+      "fiscal_year": "FY29",
+      "fcf_b": 15.698
+    },
+    "revision_trend": "Strongly upward after FY27 Q1; public FY27 estimates sit modestly above company guide."
+  },
+  "stance": {
+    "current": "회피 / 기존 보유 시 축소 검토",
+    "reason": "Business quality has improved, but at $442.08 probability-weighted expected IRR is about -1.6% and upside/downside is only ~0.36x under this framework.",
+    "price_bands": [
+      {
+        "max": 275,
+        "label": "깊은 안전마진"
+      },
+      {
+        "min": 275,
+        "max": 290,
+        "label": "매수 검토 구간"
+      },
+      {
+        "min": 290,
+        "max": 330,
+        "label": "조건부 관심 구간"
+      },
+      {
+        "min": 330,
+        "max": 400,
+        "label": "관망 / 질적 증명 대기"
+      },
+      {
+        "min": 400,
+        "label": "기대치 부담 / 회피"
+      }
+    ],
+    "buy_zone_trigger": 290,
+    "base_fair_value": 329.4326957959357,
+    "weighted_value": 322.60225811007393,
+    "zone": "회피 / 기존 보유 시 축소 검토",
+    "horizon": "2.44 years to FY29 terminal",
+    "price_bands_required_schema": {
+      "1": {
+        "max": 275,
+        "label": "깊은 안전마진"
+      },
+      "2": {
+        "min": 275,
+        "max": 290,
+        "label": "매수 검토 구간"
+      },
+      "3": {
+        "min": 290,
+        "max": 330,
+        "label": "조건부 관심 구간"
+      },
+      "4": {
+        "min": 330,
+        "max": 400,
+        "label": "관망 / 질적 증명 대기"
+      },
+      "5": {
+        "min": 400,
+        "label": "기대치 부담 / 회피"
+      }
+    }
+  },
+  "catalysts": [
+    {
+      "event": "FY27 Q2 results",
+      "watch": [
+        "AI shipments/orders/backlog",
+        "AI OI rate / ISG margin",
+        "Storage growth and attach",
+        "FY27 guide",
+        "AR/inventory/AP and FCF"
+      ],
+      "when": "2026-09-01",
+      "sensitivity": "AI shipments/orders/backlog; AI OI rate / ISG margin; Storage growth and attach; FY27 guide; AR/inventory/AP and FCF"
+    },
+    {
+      "event": "next-generation AI platform transitions",
+      "watch": [
+        "supply availability",
+        "rack deployment pace",
+        "Dell share",
+        "margin discipline"
+      ],
+      "when": "FY27-FY28",
+      "sensitivity": "supply availability; rack deployment pace; Dell share; margin discipline"
+    }
+  ],
+  "thesis_kill": [
+    "AI revenue remains high but ISG margin falls below 9% for multiple quarters without storage/service offset.",
+    "Storage declines while AI server revenue stays structurally high, disproving attach thesis.",
+    "Backlog conversion deteriorates materially due to cancellation/duplicate ordering or customer concentration.",
+    "AR and inventory repeatedly outgrow revenue while AP support reverses, breaking normalized cash conversion.",
+    "Share count stops falling because expensive repurchases, SBC or funding needs consume capital without per-share benefit."
+  ],
+  "rc_ledger": [
+    {
+      "obligation": "경제적 정의·연혁·segment",
+      "status": "COMPLETE",
+      "rc_id": "RC-001",
+      "h3_locator": "0.1 / 3.1"
+    },
+    {
+      "obligation": "산업 가치사슬·profit pool·lifecycle·cycle",
+      "status": "COMPLETE",
+      "rc_id": "RC-002",
+      "h3_locator": "1.1-1.6"
+    },
+    {
+      "obligation": "산업→고객→Dell→손익 전달",
+      "status": "COMPLETE",
+      "rc_id": "RC-003",
+      "h3_locator": "1.1-1.6"
+    },
+    {
+      "obligation": "경영진 Promise→Delivery·governance",
+      "status": "COMPLETE",
+      "rc_id": "RC-004",
+      "h3_locator": "2.1-2.5"
+    },
+    {
+      "obligation": "ISG/CSG/DFS economics",
+      "status": "COMPLETE",
+      "rc_id": "RC-005",
+      "h3_locator": "3.1 / 3.6-3.7"
+    },
+    {
+      "obligation": "AI server/rack architecture·BOM/pass-through·margin",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "rc_id": "RC-006",
+      "h3_locator": "3.2 / App.B"
+    },
+    {
+      "obligation": "Storage·AI data path·attach·profitability",
+      "status": "COMPLETE",
+      "rc_id": "RC-007",
+      "h3_locator": "1.3 / 3.4"
+    },
+    {
+      "obligation": "AI customer/orders/backlog adoption·contract quality",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "rc_id": "RC-008",
+      "h3_locator": "3.3 / App.B"
+    },
+    {
+      "obligation": "고객 job 기준 경쟁",
+      "status": "COMPLETE",
+      "rc_id": "RC-009",
+      "h3_locator": "1.5 / 3.8"
+    },
+    {
+      "obligation": "GPU/memory/ODM/CM/power/cooling supply·regulation",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "rc_id": "RC-010",
+      "h3_locator": "1.2 / 3.9 / App.B"
+    },
+    {
+      "obligation": "3Y/8Q 재무·segment·margin·CFO/FCF",
+      "status": "COMPLETE",
+      "rc_id": "RC-011",
+      "h3_locator": "4.1-4.3 / App.C-D"
+    },
+    {
+      "obligation": "회계 품질·WC·supplier finance·non-GAAP",
+      "status": "COMPLETE",
+      "rc_id": "RC-012",
+      "h3_locator": "4.4-4.5 / App.I"
+    },
+    {
+      "obligation": "DFS receivables/funding/debt/liquidity",
+      "status": "COMPLETE",
+      "rc_id": "RC-013",
+      "h3_locator": "3.7 / 4.6"
+    },
+    {
+      "obligation": "buyback/dividend/SBC/share count/governance",
+      "status": "COMPLETE",
+      "rc_id": "RC-014",
+      "h3_locator": "2.3-2.4 / 4.7"
+    },
+    {
+      "obligation": "운영 KPI history",
+      "status": "COMPLETE",
+      "rc_id": "RC-015",
+      "h3_locator": "6.3 / App.J"
+    },
+    {
+      "obligation": "consensus/revisions/valuation/positioning",
+      "status": "COMPLETE",
+      "rc_id": "RC-016",
+      "h3_locator": "0.4 / 5.5"
+    },
+    {
+      "obligation": "Variant Perception·Mispricing·base-rate",
+      "status": "COMPLETE",
+      "rc_id": "RC-017",
+      "h3_locator": "0.5 / 6.1"
+    },
+    {
+      "obligation": "Down/Base/Up operating bridge",
+      "status": "COMPLETE",
+      "rc_id": "RC-018",
+      "h3_locator": "5.2 / App.G"
+    },
+    {
+      "obligation": "valuation·reverse expectations·stance",
+      "status": "COMPLETE",
+      "rc_id": "RC-019",
+      "h3_locator": "5.1-5.6 / 6.2"
+    },
+    {
+      "obligation": "KPI traffic lights·catalyst·thesis kill·latest filing",
+      "status": "COMPLETE",
+      "rc_id": "RC-020",
+      "h3_locator": "6.3-6.6 / App.A-J"
+    }
+  ],
+  "source_registry": {
+    "S01": {
+      "title": "Dell FY27 Q1 earnings release",
+      "date": "2026-05-28",
+      "url": "https://investors.delltechnologies.com/news-releases/news-release-details/dell-technologies-delivers-first-quarter-fiscal-2027-financial",
+      "type": "company primary"
+    },
+    "S02": {
+      "title": "Dell FY27 Q1 Form 10-Q",
+      "date": "2026-06-09",
+      "url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000030/dell-20260501.htm",
+      "type": "SEC primary"
+    },
+    "S03": {
+      "title": "Dell FY27 Q1 earnings transcript",
+      "date": "2026-05-28",
+      "url": "https://investors.delltechnologies.com/static-files/b63ffff9-b729-403b-a231-c6af05667759",
+      "type": "company primary"
+    },
+    "S04": {
+      "title": "Dell FY26 Form 10-K",
+      "date": "2026-03-16",
+      "url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000008/dell-20260130.htm",
+      "type": "SEC primary"
+    },
+    "S05": {
+      "title": "Dell FY26 Q4/FY26 results",
+      "date": "2026-02-26",
+      "url": "https://investors.delltechnologies.com/node/19176",
+      "type": "company primary"
+    },
+    "S06": {
+      "title": "Dell FY25 Q4/FY25 results",
+      "date": "2025-02-27",
+      "url": "https://investors.delltechnologies.com/news-releases/news-release-details/dell-technologies-delivers-fourth-quarter-and-full-year-fiscal-2",
+      "type": "company primary"
+    },
+    "S07": {
+      "title": "Dell 2026 DEF 14A",
+      "date": "2026-05-15",
+      "url": "https://www.sec.gov/Archives/edgar/data/1571996/000119312526226734/d132444ddef14a.htm",
+      "type": "SEC primary"
+    },
+    "S08": {
+      "title": "Dell 8-K - Texas redomestication",
+      "date": "2026-07-01",
+      "url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000036/dell-20260625.htm",
+      "type": "SEC primary"
+    },
+    "S09": {
+      "title": "Dell 8-K - Texas bylaws / TBOC §21.373",
+      "date": "2026-07-02",
+      "url": "https://www.sec.gov/Archives/edgar/data/1571996/000119312526296224/d32716d8k.htm",
+      "type": "SEC primary"
+    },
+    "S10": {
+      "title": "Dell Q2 FY27 scheduled results notice",
+      "date": "2026-08-18",
+      "url": "https://investors.delltechnologies.com/news-releases/news-release-details/dell-technologies-hold-conference-call-sept-1-discuss-second",
+      "type": "company primary"
+    },
+    "S11": {
+      "title": "IDC Servers Market Insights",
+      "date": "2026-07-28",
+      "url": "https://www.idc.com/promo/servers/",
+      "type": "independent industry"
+    },
+    "S12": {
+      "title": "IDC Enterprise Storage Systems Market Insights",
+      "date": "2026-07-01",
+      "url": "https://www.idc.com/promo/enterprise-storage-systems/",
+      "type": "independent industry"
+    },
+    "S13": {
+      "title": "IDC PC market forecast / Q1 2026",
+      "date": "2026-06-08",
+      "url": "https://www.idc.com/promo/pcdforecast/",
+      "type": "independent industry"
+    },
+    "S14": {
+      "title": "IDC PC memory-shortage outlook",
+      "date": "2026-06-02",
+      "url": "https://www.idc.com/resource-center/blog/pc-market-enters-volatile-territory-as-memory-shortage-persists-through-2027/",
+      "type": "independent industry"
+    },
+    "S15": {
+      "title": "HPE FY26 Q1 results",
+      "date": "2026-03-09",
+      "url": "https://www.hpe.com/us/en/newsroom/press-release/2026/03/hpe-reports-fiscal-2026-first-quarter-results.html",
+      "type": "competitor primary"
+    },
+    "S16": {
+      "title": "Supermicro FY26 Q3 quarterly results",
+      "date": "2026",
+      "url": "https://ir.supermicro.com/financials/quarterly-results/default.aspx",
+      "type": "competitor primary"
+    },
+    "S17": {
+      "title": "Supermicro FY26 Q4/FY26 results",
+      "date": "2026-08-11",
+      "url": "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx",
+      "type": "competitor primary"
+    },
+    "S18": {
+      "title": "Lenovo Q1 FY26/27 results",
+      "date": "2026-08-13",
+      "url": "https://news.lenovo.com/pressroom/press-releases/q1-fy-2026-27/",
+      "type": "competitor primary"
+    },
+    "S19": {
+      "title": "StockAnalysis DELL analyst forecast",
+      "date": "2026-08-19",
+      "url": "https://stockanalysis.com/stocks/dell/forecast/",
+      "type": "secondary consensus"
+    },
+    "S20": {
+      "title": "MarketScreener Dell financial consensus",
+      "date": "2026-08-24 snapshot",
+      "url": "https://www.marketscreener.com/quote/stock/DELL-TECHNOLOGIES-INC-199910215/finances/",
+      "type": "secondary consensus"
+    },
+    "S21": {
+      "title": "Morningstar DELL valuation",
+      "date": "2026-07-24",
+      "url": "https://www.morningstar.com/stocks/xnys/dell/valuation",
+      "type": "secondary valuation"
+    },
+    "S22": {
+      "title": "MarketBeat DELL short interest",
+      "date": "2026-07-31",
+      "url": "https://www.marketbeat.com/stocks/NYSE/DELL/short-interest/",
+      "type": "secondary positioning"
+    },
+    "S23": {
+      "title": "MarketWatch DELL close",
+      "date": "2026-08-21",
+      "url": "https://www.marketwatch.com/data-news/dell-technologies-inc-cl-c-stock-rises-friday-outperforms-market-3804ce15-0b0769cd4f11",
+      "type": "secondary price"
+    },
+    "S24": {
+      "title": "Dell PowerStore Elite launch",
+      "date": "2026-05-19",
+      "url": "https://www.dell.com/en-us/blog/powerstore-elite/",
+      "type": "company product"
+    }
+  },
+  "visual_registry": [
+    {
+      "id": "VIS-01",
+      "title": "FY24-FY26 Dell revenue engine mix",
+      "data_paths": [
+        "financials.annual_3y[*].ai_server_revenue",
+        "financials.annual_3y[*].traditional_server_networking",
+        "financials.annual_3y[*].storage_revenue",
+        "financials.annual_3y[*].csg_revenue"
+      ],
+      "lineage": "REPORT_DATA_PACK.json"
+    },
+    {
+      "id": "VIS-02",
+      "title": "Latest 8Q revenue and cash flow",
+      "data_paths": [
+        "financials.quarterly_8q[*].revenue",
+        "financials.quarterly_8q[*].cfo",
+        "financials.quarterly_8q[*].simple_fcf"
+      ],
+      "lineage": "REPORT_DATA_PACK.json"
+    },
+    {
+      "id": "VIS-03",
+      "title": "Gross margin dilution vs operating leverage",
+      "data_paths": [
+        "financials.annual_3y[*].gross_margin_pct",
+        "financials.annual_3y[*].gaap_operating_margin_pct"
+      ],
+      "lineage": "REPORT_DATA_PACK.json"
+    },
+    {
+      "id": "VIS-04",
+      "title": "Scenario present value vs current price",
+      "data_paths": [
+        "scenarios.Down.present_value_per_share",
+        "scenarios.Base.present_value_per_share",
+        "scenarios.Up.present_value_per_share",
+        "valuation.current_price"
+      ],
+      "lineage": "REPORT_DATA_PACK.json"
+    },
+    {
+      "id": "VIS-05",
+      "title": "Reverse expectations: FY29 FCF required",
+      "data_paths": [
+        "reverse_expectations.required_fy29_fcf_by_exit_multiple",
+        "reverse_expectations.public_consensus_fy29_fcf_b"
+      ],
+      "lineage": "REPORT_DATA_PACK.json"
+    }
+  ],
+  "audit": {
+    "rc_total": 20,
+    "rc_complete": 17,
+    "rc_primary_source_ceiling": 3,
+    "rc_unresolved": 0,
+    "latest_filing_check": "PASS",
+    "industry_company_transmission": "PASS",
+    "korean_prose_quality": "PASS",
+    "valuation": "PASS",
+    "reverse_expectations": "PASS",
+    "financing_dilution_audit": "PASS",
+    "visual_data_lineage": "PASS"
+  },
+  "scenario_map": {
+    "Down": {
+      "probability": 0.3,
+      "revenue": [
+        160,
+        160,
+        165
+      ],
+      "non_gaap_oi_margin_pct": [
+        8.5,
+        8.0,
+        7.8
+      ],
+      "fcf": [
+        8.0,
+        8.5,
+        9.5
+      ],
+      "diluted_shares_m": [
+        645,
+        638,
+        630
+      ],
+      "exit_p_fcf": 14,
+      "cum_dividend_per_share": 5.5,
+      "fy_labels": [
+        "FY27E",
+        "FY28E",
+        "FY29E"
+      ],
+      "terminal_equity_value_b": 133.0,
+      "terminal_value_per_share": 211.11111111111111,
+      "future_total_value_per_share": 216.61111111111111,
+      "present_value_per_share": 164.28153600037226,
+      "irr_from_current": -0.2535090726126573
+    },
+    "Base": {
+      "probability": 0.5,
+      "revenue": [
+        167,
+        187,
+        205
+      ],
+      "non_gaap_oi_margin_pct": [
+        9.2,
+        9.3,
+        9.5
+      ],
+      "fcf": [
+        10.5,
+        12.5,
+        14.5
+      ],
+      "diluted_shares_m": [
+        640,
+        625,
+        610
+      ],
+      "exit_p_fcf": 18,
+      "cum_dividend_per_share": 6.5,
+      "fy_labels": [
+        "FY27E",
+        "FY28E",
+        "FY29E"
+      ],
+      "terminal_equity_value_b": 261.0,
+      "terminal_value_per_share": 427.8688524590164,
+      "future_total_value_per_share": 434.3688524590164,
+      "present_value_per_share": 329.4326957959357,
+      "irr_from_current": -0.007185859637976799
+    },
+    "Up": {
+      "probability": 0.2,
+      "revenue": [
+        178,
+        215,
+        245
+      ],
+      "non_gaap_oi_margin_pct": [
+        9.8,
+        10.2,
+        10.5
+      ],
+      "fcf": [
+        12.5,
+        16.0,
+        19.0
+      ],
+      "diluted_shares_m": [
+        635,
+        612,
+        590
+      ],
+      "exit_p_fcf": 22,
+      "cum_dividend_per_share": 7.5,
+      "fy_labels": [
+        "FY27E",
+        "FY28E",
+        "FY29E"
+      ],
+      "terminal_equity_value_b": 418.0,
+      "terminal_value_per_share": 708.4745762711865,
+      "future_total_value_per_share": 715.9745762711865,
+      "present_value_per_share": 543.0072470599721,
+      "irr_from_current": 0.21847979883131918
+    }
+  }
+}

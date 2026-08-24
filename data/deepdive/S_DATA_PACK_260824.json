@@ -1,0 +1,1043 @@
+{
+  "meta": {
+    "ticker": "S",
+    "company": "SentinelOne, Inc.",
+    "T0": "2026-08-24",
+    "price_asof": "2026-08-21",
+    "price": 21.19,
+    "filing_asof": "2026-05-28 Q1 FY2027 10-Q",
+    "consensus_asof": "2026-08-21",
+    "version": "Clean DDOS Production OS v1.7",
+    "latest_filing_check": "PASS",
+    "latest_financial_filing": "10-Q 2026-05-28",
+    "next_material_catalyst": "Q2 FY2027 earnings 2026-08-27 after close"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "fy": "FY2024",
+        "revenue_m": 621.154,
+        "growth_pct": 47.13,
+        "gross_profit_m": 441.873,
+        "gross_margin_pct": 71.1,
+        "gaap_op_margin_pct": -61.0,
+        "ocf_margin_pct": -11.0,
+        "fcf_margin_pct": -13.0,
+        "sbc_m": 216.87,
+        "sbc_rev_pct": 34.9
+      },
+      {
+        "fy": "FY2025",
+        "revenue_m": 821.461,
+        "growth_pct": 32.25,
+        "gross_profit_m": 610.355,
+        "gross_margin_pct": 74.3,
+        "gaap_op_margin_pct": -40.0,
+        "ocf_margin_pct": 4.0,
+        "fcf_margin_pct": 1.0,
+        "sbc_m": 267.531,
+        "sbc_rev_pct": 32.6
+      },
+      {
+        "fy": "FY2026",
+        "revenue_m": 1001.278,
+        "growth_pct": 21.89,
+        "gross_profit_m": 742.101,
+        "gross_margin_pct": 74.1,
+        "gaap_op_margin_pct": -32.0,
+        "ocf_margin_pct": 8.0,
+        "fcf_margin_pct": 5.0,
+        "sbc_m": 297.587,
+        "sbc_rev_pct": 29.7
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "q": "Q2 FY25",
+        "revenue_m": 198.9,
+        "arr_m": 806.0,
+        "arr_growth_pct": 32.0,
+        "customers_100k": 1233,
+        "gm_pct": 75.0,
+        "ng_op_margin_pct": -3.0,
+        "ocf_margin_pct": 1.0,
+        "fcf_margin_pct": -3.0
+      },
+      {
+        "q": "Q3 FY25",
+        "revenue_m": 210.6,
+        "arr_m": 859.7,
+        "arr_growth_pct": 29.0,
+        "customers_100k": 1310,
+        "gm_pct": 75.0,
+        "ng_op_margin_pct": -5.0,
+        "ocf_margin_pct": -3.0,
+        "fcf_margin_pct": -6.0
+      },
+      {
+        "q": "Q4 FY25",
+        "revenue_m": 225.5,
+        "arr_m": 920.1,
+        "arr_growth_pct": 24.0,
+        "customers_100k": 1411,
+        "gm_pct": 75.0,
+        "ng_op_margin_pct": 1.0,
+        "ocf_margin_pct": -2.0,
+        "fcf_margin_pct": -4.0
+      },
+      {
+        "q": "Q1 FY26",
+        "revenue_m": 229.0,
+        "arr_m": 948.1,
+        "arr_growth_pct": 24.0,
+        "customers_100k": 1459,
+        "gm_pct": 75.0,
+        "ng_op_margin_pct": -2.0,
+        "ocf_margin_pct": 23.0,
+        "fcf_margin_pct": 20.0
+      },
+      {
+        "q": "Q2 FY26",
+        "revenue_m": 242.2,
+        "arr_m": 1000.0,
+        "arr_growth_pct": 24.0,
+        "customers_100k": 1513,
+        "gm_pct": 75.0,
+        "ng_op_margin_pct": 2.0,
+        "ocf_margin_pct": 0.0,
+        "fcf_margin_pct": -3.0
+      },
+      {
+        "q": "Q3 FY26",
+        "revenue_m": 258.9,
+        "arr_m": 1055.3,
+        "arr_growth_pct": 23.0,
+        "customers_100k": 1572,
+        "gm_pct": 74.0,
+        "ng_op_margin_pct": 7.0,
+        "ocf_margin_pct": 8.0,
+        "fcf_margin_pct": 6.0
+      },
+      {
+        "q": "Q4 FY26",
+        "revenue_m": 271.2,
+        "arr_m": 1119.1,
+        "arr_growth_pct": 22.0,
+        "customers_100k": 1667,
+        "gm_pct": 73.0,
+        "ng_op_margin_pct": 6.0,
+        "ocf_margin_pct": 2.0,
+        "fcf_margin_pct": -1.0
+      },
+      {
+        "q": "Q1 FY27",
+        "revenue_m": 276.657,
+        "arr_m": 1162.6,
+        "arr_growth_pct": 23.0,
+        "customers_100k": 1702,
+        "gm_pct": 72.0,
+        "ng_op_margin_pct": 4.0,
+        "ocf_margin_pct": 14.0,
+        "fcf_margin_pct": 11.1,
+        "adjusted_fcf_margin_pct": 22.2
+      }
+    ],
+    "ceilings": [
+      "single reportable segment; product-level revenue/ARR/gross margin unavailable",
+      "exact latest NRR and product attach rates unavailable"
+    ]
+  },
+  "kpis": [
+    {
+      "name": "ARR YoY growth",
+      "current": "23%",
+      "history": [
+        {
+          "period": "Q2 FY25",
+          "value": 32.0
+        },
+        {
+          "period": "Q3 FY25",
+          "value": 29.0
+        },
+        {
+          "period": "Q4 FY25",
+          "value": 24.0
+        },
+        {
+          "period": "Q1 FY26",
+          "value": 24.0
+        },
+        {
+          "period": "Q2 FY26",
+          "value": 24.0
+        },
+        {
+          "period": "Q3 FY26",
+          "value": 23.0
+        },
+        {
+          "period": "Q4 FY26",
+          "value": 22.0
+        },
+        {
+          "period": "Q1 FY27",
+          "value": 23.0
+        }
+      ],
+      "thresholds": {
+        "green": "≥23%를 유지하거나 재가속",
+        "yellow": "18~23%",
+        "red": "<18%가 2개 분기 지속"
+      }
+    },
+    {
+      "name": "GAAP gross margin",
+      "current": "72%",
+      "history": [
+        {
+          "period": "Q2 FY25",
+          "value": 75.0
+        },
+        {
+          "period": "Q3 FY25",
+          "value": 75.0
+        },
+        {
+          "period": "Q4 FY25",
+          "value": 75.0
+        },
+        {
+          "period": "Q1 FY26",
+          "value": 75.0
+        },
+        {
+          "period": "Q2 FY26",
+          "value": 75.0
+        },
+        {
+          "period": "Q3 FY26",
+          "value": 74.0
+        },
+        {
+          "period": "Q4 FY26",
+          "value": 73.0
+        },
+        {
+          "period": "Q1 FY27",
+          "value": 72.0
+        }
+      ],
+      "thresholds": {
+        "green": "≥73.5%이며 상승 추세",
+        "yellow": "71.5~73.5%",
+        "red": "<71.5% 또는 데이터 성장과 함께 추가 하락"
+      }
+    },
+    {
+      "name": "$100K+ ARR 고객 성장",
+      "current": "1,702명 / YoY +17%",
+      "history": [
+        {
+          "period": "Q2 FY25",
+          "value": 1233
+        },
+        {
+          "period": "Q3 FY25",
+          "value": 1310
+        },
+        {
+          "period": "Q4 FY25",
+          "value": 1411
+        },
+        {
+          "period": "Q1 FY26",
+          "value": 1459
+        },
+        {
+          "period": "Q2 FY26",
+          "value": 1513
+        },
+        {
+          "period": "Q3 FY26",
+          "value": 1572
+        },
+        {
+          "period": "Q4 FY26",
+          "value": 1667
+        },
+        {
+          "period": "Q1 FY27",
+          "value": 1702
+        }
+      ],
+      "thresholds": {
+        "green": "YoY ≥17% 또는 재가속",
+        "yellow": "12~17%",
+        "red": "<12%"
+      }
+    },
+    {
+      "name": "Non-GAAP operating margin",
+      "current": "Q1 FY27 4%; FY27 guide 약 10%",
+      "history": [
+        {
+          "period": "Q2 FY25",
+          "value": -3.0
+        },
+        {
+          "period": "Q3 FY25",
+          "value": -5.0
+        },
+        {
+          "period": "Q4 FY25",
+          "value": 1.0
+        },
+        {
+          "period": "Q1 FY26",
+          "value": -2.0
+        },
+        {
+          "period": "Q2 FY26",
+          "value": 2.0
+        },
+        {
+          "period": "Q3 FY26",
+          "value": 7.0
+        },
+        {
+          "period": "Q4 FY26",
+          "value": 6.0
+        },
+        {
+          "period": "Q1 FY27",
+          "value": 4.0
+        }
+      ],
+      "thresholds": {
+        "green": "FY27 ≥10% 및 분기별 확장",
+        "yellow": "6~10%",
+        "red": "<6% 또는 restructuring 후 악화"
+      }
+    },
+    {
+      "name": "표준 FCF margin",
+      "current": "Q1 FY27 11.1%; FY26 5%",
+      "history": [
+        {
+          "period": "Q2 FY25",
+          "value": -3.0
+        },
+        {
+          "period": "Q3 FY25",
+          "value": -6.0
+        },
+        {
+          "period": "Q4 FY25",
+          "value": -4.0
+        },
+        {
+          "period": "Q1 FY26",
+          "value": 20.0
+        },
+        {
+          "period": "Q2 FY26",
+          "value": -3.0
+        },
+        {
+          "period": "Q3 FY26",
+          "value": 6.0
+        },
+        {
+          "period": "Q4 FY26",
+          "value": -1.0
+        },
+        {
+          "period": "Q1 FY27",
+          "value": 11.1
+        }
+      ],
+      "thresholds": {
+        "green": "TTM ≥10%",
+        "yellow": "5~10%",
+        "red": "<5%"
+      }
+    },
+    {
+      "name": "SBC / revenue",
+      "current": "Q1 FY27 27.1%",
+      "history": [
+        {
+          "period": "FY2024",
+          "value": 34.9
+        },
+        {
+          "period": "FY2025",
+          "value": 32.6
+        },
+        {
+          "period": "FY2026",
+          "value": 29.7
+        },
+        {
+          "period": "Q1 FY27",
+          "value": 27.1
+        }
+      ],
+      "thresholds": {
+        "green": "<24%",
+        "yellow": "24~28%",
+        "red": ">28% 또는 희석 재가속"
+      }
+    },
+    {
+      "name": "희석주식수 증가율",
+      "current": "342.8M 현재; FY27 non-GAAP guide 350M",
+      "history": [],
+      "thresholds": {
+        "green": "YoY <2%",
+        "yellow": "2~4%",
+        "red": ">4%"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.25,
+      "revenue_path_b": [
+        1.19,
+        1.3,
+        1.4,
+        1.47
+      ],
+      "gross_margin_path_pct": [
+        71.5,
+        70.5,
+        69.5,
+        70.0
+      ],
+      "ng_op_margin_path_pct": [
+        9.5,
+        9.0,
+        10.0,
+        11.0
+      ],
+      "fcf_margin_path_pct": [
+        6.0,
+        7.0,
+        9.0,
+        11.0
+      ],
+      "shares_path_m": [
+        350,
+        358,
+        366,
+        374
+      ],
+      "terminal_ev_sales": 3.2,
+      "terminal_net_cash_b": 0.75,
+      "terminal_ev_b": 4.704,
+      "terminal_equity_b": 5.454,
+      "terminal_per_share": 14.58,
+      "present_value_per_share": 10.33,
+      "scenario_irr_pct": -10.3
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "revenue_path_b": [
+        1.2,
+        1.41,
+        1.64,
+        1.87
+      ],
+      "gross_margin_path_pct": [
+        72.5,
+        73.0,
+        74.0,
+        74.5
+      ],
+      "ng_op_margin_path_pct": [
+        10.0,
+        13.0,
+        16.0,
+        19.0
+      ],
+      "fcf_margin_path_pct": [
+        9.0,
+        12.0,
+        15.0,
+        18.0
+      ],
+      "shares_path_m": [
+        350,
+        356,
+        361,
+        365
+      ],
+      "terminal_ev_sales": 5.25,
+      "terminal_net_cash_b": 1.0,
+      "terminal_ev_b": 9.8175,
+      "terminal_equity_b": 10.8175,
+      "terminal_per_share": 29.64,
+      "present_value_per_share": 21.0,
+      "scenario_irr_pct": 10.2
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.25,
+      "revenue_path_b": [
+        1.205,
+        1.48,
+        1.8,
+        2.16
+      ],
+      "gross_margin_path_pct": [
+        73.0,
+        74.5,
+        75.5,
+        76.0
+      ],
+      "ng_op_margin_path_pct": [
+        10.5,
+        15.0,
+        19.0,
+        23.0
+      ],
+      "fcf_margin_path_pct": [
+        10.0,
+        14.0,
+        18.0,
+        22.0
+      ],
+      "shares_path_m": [
+        350,
+        354,
+        357,
+        359
+      ],
+      "terminal_ev_sales": 7.0,
+      "terminal_net_cash_b": 1.25,
+      "terminal_ev_b": 15.12,
+      "terminal_equity_b": 16.37,
+      "terminal_per_share": 45.6,
+      "present_value_per_share": 32.31,
+      "scenario_irr_pct": 24.9
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.1,
+      "revenue_path_b": [
+        1.21,
+        1.52,
+        1.9,
+        2.35
+      ],
+      "gross_margin_path_pct": [
+        73.0,
+        75.0,
+        76.0,
+        77.0
+      ],
+      "ng_op_margin_path_pct": [
+        10.5,
+        16.0,
+        21.0,
+        25.0
+      ],
+      "fcf_margin_path_pct": [
+        10.0,
+        15.0,
+        20.0,
+        24.0
+      ],
+      "shares_path_m": [
+        350,
+        353,
+        355,
+        357
+      ],
+      "terminal_ev_sales": 8.0,
+      "terminal_net_cash_b": 1.4,
+      "terminal_ev_b": 18.8,
+      "terminal_equity_b": 20.2,
+      "terminal_per_share": 56.58,
+      "present_value_per_share": 40.09,
+      "scenario_irr_pct": 32.9
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B Hybrid / EV-Sales + per-share scenario engine",
+    "core": 14.15,
+    "execution": 8.21,
+    "ecosystem": 0.0,
+    "drag": -1.36,
+    "bridge_note": "Base additive bridge: conservative current-monetization continuation anchor + execution uplift + ecosystem 0 - dilution drag; core is consolidated current platform, not endpoint-only.",
+    "expected_value": 23.07,
+    "expected_terminal_value": 32.56,
+    "expected_irr_pct": 13.3,
+    "current_price": 21.19,
+    "base_value": 21.0,
+    "bear_value": 10.33,
+    "bull_execution_value": 32.31,
+    "bull_ecosystem_value": 40.09,
+    "upside_downside_ratio": 1.02,
+    "discount_rate_pct": 10.5,
+    "horizon_years": 3.45
+  },
+  "reverse_expectations": {
+    "required_fy30_revenue_b": 1.889,
+    "required_revenue_cagr_from_fy27_pct": 16.3,
+    "required_revenue_cagr_from_fy26_pct": 17.2,
+    "required_fy30_gross_profit_b_at_74_5pct": 1.407,
+    "required_fy30_fcf_b_at_17pct": 0.321,
+    "assumed_terminal_ev_sales": 5.25,
+    "assumed_fy30_diluted_shares_m": 365,
+    "assumed_terminal_net_cash_b": 1.0,
+    "required_operating_kpis": [
+      "ARR growth must remain roughly mid-to-high teens through FY30",
+      "GAAP gross margin must recover toward ~74-75%",
+      "standard FCF margin must reach high-teens",
+      "annual diluted share growth must fall below ~2% by the terminal period"
+    ]
+  },
+  "consensus": {
+    "fy1": {
+      "fiscal_year": "FY2027",
+      "revenue_b": 1.2,
+      "eps_non_gaap": 0.35
+    },
+    "fy2": {
+      "fiscal_year": "FY2028",
+      "revenue_b": 1.41,
+      "eps_non_gaap": 0.49
+    },
+    "fy3": {
+      "fiscal_year": "FY2029",
+      "revenue_b": 1.641
+    },
+    "revision_trend": "FY27 revenue remains clustered around company guide; recent price-target increases accompanied by at least one valuation-driven downgrade.",
+    "base_comparison": [
+      {
+        "fy": "FY2027",
+        "consensus_revenue_b": 1.2,
+        "our_base_b": 1.2
+      },
+      {
+        "fy": "FY2028",
+        "consensus_revenue_b": 1.412,
+        "our_base_b": 1.41
+      },
+      {
+        "fy": "FY2029",
+        "consensus_revenue_b": 1.641,
+        "our_base_b": 1.64
+      }
+    ]
+  },
+  "stance": {
+    "zone": "관망 / 조건부 관심",
+    "price_bands": {
+      "attractive_entry": "$16.5-$17.7",
+      "conditional_interest": "$17.7-$20.0",
+      "rough_fair_value": "$20-$24",
+      "execution_proof_required": "$24-$28",
+      "demanding_above": "$28+"
+    },
+    "trigger_price_for_ud_gt_2": 17.66,
+    "horizon": "FY2030 terminal, ~3.45 years",
+    "framework_note": "At $21.19 Base value is about flat; probability-weighted value is $23.07, but Bull Execution/Bear U/D is only ~1.0x. Below ~$17.7 U/D improves to ~2x."
+  },
+  "catalysts": [
+    {
+      "when": "2026-08-26",
+      "event": "CrowdStrike Q2 FY2027 results - read-through for endpoint/platform demand",
+      "sensitivity": "M"
+    },
+    {
+      "when": "2026-08-27",
+      "event": "SentinelOne Q2 FY2027 earnings",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2026-09-01",
+      "event": "Palo Alto Networks earnings - platformization read-through",
+      "sensitivity": "M"
+    },
+    {
+      "when": "2026-09-03",
+      "event": "Zscaler earnings - cloud security demand/margin read-through",
+      "sensitivity": "M"
+    },
+    {
+      "when": "2026-09-10",
+      "event": "Goldman Sachs Communacopia & Technology Conference",
+      "sensitivity": "M"
+    },
+    {
+      "when": "2026-11/12",
+      "event": "SentinelOne Q3 FY2027 earnings (expected window)",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027-03",
+      "event": "SentinelOne Q4/FY2027 earnings (expected window)",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027-05",
+      "event": "SentinelOne Q1 FY2028 earnings (expected window)",
+      "sensitivity": "H"
+    }
+  ],
+  "valuation_history": {
+    "metric": "P/S TTM quarterly sample",
+    "sample_start": "2022-07-31",
+    "sample_end": "2026-08-05",
+    "low": 4.49,
+    "median": 9.14,
+    "high": 19.88,
+    "current_sample": 6.66,
+    "current_percentile_approx": 29.4,
+    "history": [
+      {
+        "date": "2022-07-31",
+        "price": 24.85,
+        "ps": 19.88
+      },
+      {
+        "date": "2022-10-31",
+        "price": 22.84,
+        "ps": 15.78
+      },
+      {
+        "date": "2023-01-31",
+        "price": 15.09,
+        "ps": 9.9
+      },
+      {
+        "date": "2023-04-30",
+        "price": 16.07,
+        "ps": 9.47
+      },
+      {
+        "date": "2023-07-31",
+        "price": 16.67,
+        "ps": 9.07
+      },
+      {
+        "date": "2023-10-31",
+        "price": 15.63,
+        "ps": 7.9
+      },
+      {
+        "date": "2024-01-31",
+        "price": 26.8,
+        "ps": 12.66
+      },
+      {
+        "date": "2024-04-30",
+        "price": 21.13,
+        "ps": 9.37
+      },
+      {
+        "date": "2024-07-31",
+        "price": 22.9,
+        "ps": 9.61
+      },
+      {
+        "date": "2024-10-31",
+        "price": 25.79,
+        "ps": 10.34
+      },
+      {
+        "date": "2025-01-31",
+        "price": 23.95,
+        "ps": 9.14
+      },
+      {
+        "date": "2025-04-30",
+        "price": 18.5,
+        "ps": 6.81
+      },
+      {
+        "date": "2025-07-31",
+        "price": 18.34,
+        "ps": 6.52
+      },
+      {
+        "date": "2025-10-31",
+        "price": 17.85,
+        "ps": 6.1
+      },
+      {
+        "date": "2026-01-31",
+        "price": 13.98,
+        "ps": 4.61
+      },
+      {
+        "date": "2026-04-30",
+        "price": 14.16,
+        "ps": 4.49
+      },
+      {
+        "date": "2026-08-05",
+        "price": 21.0,
+        "ps": 6.66
+      }
+    ],
+    "note": "Quarter-end/selected-date sample from Macrotrends; not a daily percentile. IPO-era 2021 extreme excluded from the percentile discussion."
+  },
+  "market_positioning": {
+    "short_interest_2026_07_31_m": 18.878,
+    "short_pct_float": 5.75,
+    "days_to_cover": 3.1,
+    "institutional_ownership_secondary_pct": 83.49,
+    "shares_outstanding_secondary_m": 342.8
+  },
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.0/3"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1/6"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1/3"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2/6"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.3 + Appendix ceiling"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.3/4 + Appendix ceiling"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.3/4 + Appendix ceiling"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4/6"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4/5"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1/3/6"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5/6"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5"
+    },
+    {
+      "rc_id": "RC-020",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.6"
+    }
+  ],
+  "source_registry": [
+    {
+      "id": "S01",
+      "label": "SentinelOne Q1 FY2027 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1583708/000158370826000041/s-20260430.htm",
+      "type": "Primary"
+    },
+    {
+      "id": "S02",
+      "label": "SentinelOne FY2026 10-K / Annual Report",
+      "url": "https://www.sec.gov/Archives/edgar/data/1583708/000158370826000035/sentineloneincfy2026annuala.pdf",
+      "type": "Primary"
+    },
+    {
+      "id": "S03",
+      "label": "SentinelOne Q1 FY2027 earnings release",
+      "url": "https://investors.sentinelone.com/press-releases/news-details/2026/SentinelOne-Announces-First-Quarter-Fiscal-Year-2027-Financial-Results/default.aspx",
+      "type": "Primary"
+    },
+    {
+      "id": "S05",
+      "label": "SentinelOne 2026 Proxy",
+      "url": "https://www.sec.gov/Archives/edgar/data/1583708/000158370826000031/s-20260513.htm",
+      "type": "Primary"
+    },
+    {
+      "id": "S06",
+      "label": "SentinelOne Q1 FY2024 ARR methodology adjustment",
+      "url": "https://investors.sentinelone.com/files/doc_financials/2024/q1/SentinelOne-Form-10-Q-Q1-FY24-FINAL.pdf",
+      "type": "Primary"
+    },
+    {
+      "id": "S07",
+      "label": "SentinelOne pricing",
+      "url": "https://www.sentinelone.com/platform-packages/",
+      "type": "Issuer"
+    },
+    {
+      "id": "S08",
+      "label": "SentinelOne AI SIEM",
+      "url": "https://www.sentinelone.com/platform/ai-siem/",
+      "type": "Issuer"
+    },
+    {
+      "id": "S09",
+      "label": "SentinelOne Data Lake",
+      "url": "https://www.sentinelone.com/platform/data-lake/",
+      "type": "Issuer"
+    },
+    {
+      "id": "S10",
+      "label": "SentinelOne AI Data Pipelines",
+      "url": "https://www.sentinelone.com/platform/data-pipelines/",
+      "type": "Issuer"
+    },
+    {
+      "id": "S11",
+      "label": "SentinelOne Prompt Security",
+      "url": "https://www.sentinelone.com/platform/securing-ai-prompt/",
+      "type": "Issuer"
+    },
+    {
+      "id": "S13",
+      "label": "MITRE ATT&CK 2024 Enterprise evaluation",
+      "url": "https://attackevals.mitre.org/results/enterprise?evaluation=er6&scenario=4&vendor=sentinelone&view=individualParticipant",
+      "type": "Independent"
+    },
+    {
+      "id": "S14",
+      "label": "MITRE evaluation non-ranking explanation",
+      "url": "https://www.mitre.org/news-insights/news-release/mitre-posts-latest-findings-attack-evaluations-cybersecurity-solutions",
+      "type": "Independent"
+    },
+    {
+      "id": "S16",
+      "label": "CrowdStrike FY2026 10-K",
+      "url": "https://ir.crowdstrike.com/static-files/07cdeecf-efb9-4958-a4bc-9bf14da2127a",
+      "type": "Primary peer"
+    },
+    {
+      "id": "S17",
+      "label": "Palo Alto Networks Q2 FY2026 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000005/panw-20260131.htm",
+      "type": "Primary peer"
+    },
+    {
+      "id": "S18",
+      "label": "SentinelOne CFO appointment",
+      "url": "https://investors.sentinelone.com/press-releases/news-details/2026/SentinelOne-Appoints-Sonalee-Parekh-as-Chief-Financial-Officer/default.aspx",
+      "type": "Primary"
+    },
+    {
+      "id": "S21",
+      "label": "SentinelOne SEC filings archive checked 2026-08-24",
+      "url": "https://investors.sentinelone.com/financial-info/sec-filings/default.aspx",
+      "type": "Primary"
+    },
+    {
+      "id": "S22",
+      "label": "SentinelOne Q2 FY2027 earnings date release",
+      "url": "https://investors.sentinelone.com/press-releases/news-details/2026/SentinelOne-Announces-Date-of-Fiscal-Second-Quarter-2027-Financial-Results-Conference-Call-and-Participation-in-Upcoming-Investor-Conference/default.aspx",
+      "type": "Primary"
+    },
+    {
+      "id": "M04",
+      "label": "StockAnalysis consensus / valuation, sourced from S&P Global MI",
+      "url": "https://stockanalysis.com/stocks/s/forecast/",
+      "type": "Secondary"
+    },
+    {
+      "id": "M05",
+      "label": "StockAnalysis SentinelOne statistics",
+      "url": "https://stockanalysis.com/stocks/s/statistics/",
+      "type": "Secondary"
+    },
+    {
+      "id": "M06",
+      "label": "Macrotrends SentinelOne P/S history",
+      "url": "https://www.macrotrends.net/stocks/charts/S/sentinelone/price-sales",
+      "type": "Secondary"
+    },
+    {
+      "id": "M07",
+      "label": "StockAnalysis Zscaler statistics",
+      "url": "https://stockanalysis.com/stocks/zs/statistics/",
+      "type": "Secondary peer"
+    },
+    {
+      "id": "M08",
+      "label": "StockAnalysis CrowdStrike statistics",
+      "url": "https://stockanalysis.com/stocks/crwd/statistics/",
+      "type": "Secondary peer"
+    }
+  ],
+  "qa": {
+    "RC_H3_COVERAGE_RATE": "100%",
+    "RC_UNRESOLVED": 0,
+    "BASE_RATE": "PRIMARY_SOURCE_CEILING",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "LATEST_FILING_CHECK": "PASS"
+  }
+}

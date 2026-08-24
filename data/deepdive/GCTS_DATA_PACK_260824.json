@@ -1,0 +1,983 @@
+{
+  "meta": {
+    "ticker": "GCTS",
+    "company": "GCT Semiconductor Holding, Inc.",
+    "T0": "2026-08-24",
+    "price_asof": "2026-08-21 close",
+    "current_price": 2.04,
+    "filing_asof": "2026-08-10 Form 10-Q for quarter ended 2026-06-30",
+    "consensus_asof": "2026-08-24",
+    "version": "DDOS v1.7",
+    "valuation_horizon_years": 2.36,
+    "hurdle_rate": 0.15
+  },
+  "market": {
+    "shares_outstanding_m": 91.969726,
+    "market_cap_m": 187.61824104,
+    "cash_m": 30.228,
+    "funded_debt_and_converts_m": 55.26499999999999,
+    "enterprise_value_m": 212.65524103999996,
+    "ttm_revenue_m": 4.079,
+    "ev_to_ttm_revenue": 52.1341605883795,
+    "fifty_two_week_low": 0.96,
+    "fifty_two_week_high": 3.93
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": "2023",
+        "revenue": 16.028,
+        "product_revenue": 10.968,
+        "service_revenue": 5.06,
+        "gross_profit": 6.734,
+        "gross_margin_pct": 42.0,
+        "operating_loss": -14.558,
+        "normalized_operating_loss": -14.558,
+        "net_loss": -22.469,
+        "ocf": -8.827
+      },
+      {
+        "year": "2024",
+        "revenue": 9.128,
+        "product_revenue": 4.771,
+        "service_revenue": 4.357,
+        "gross_profit": 5.076,
+        "gross_margin_pct": 55.6,
+        "operating_loss": -13.122,
+        "normalized_operating_loss": -27.758,
+        "net_loss": -12.379,
+        "ocf": -30.957,
+        "normalization_note": "reported operating loss includes $14.636m liability-extinguishment gain"
+      },
+      {
+        "year": "2025",
+        "revenue": 2.866,
+        "product_revenue": 1.131,
+        "service_revenue": 1.735,
+        "gross_profit": -1.817,
+        "gross_margin_pct": -63.4,
+        "operating_loss": -36.54,
+        "normalized_operating_loss": -36.54,
+        "net_loss": -43.372,
+        "ocf": -30.675
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "2024 Q3",
+        "revenue": 2.61,
+        "gross_profit": 1.626,
+        "gross_margin_pct": 62.3,
+        "operating_loss": -5.912,
+        "derived": false
+      },
+      {
+        "quarter": "2024 Q4",
+        "revenue": 1.785,
+        "gross_profit": 0.576,
+        "gross_margin_pct": 32.3,
+        "operating_loss": -7.367,
+        "derived": true
+      },
+      {
+        "quarter": "2025 Q1",
+        "revenue": 0.496,
+        "gross_profit": 0.088,
+        "gross_margin_pct": 17.7,
+        "operating_loss": -7.74,
+        "derived": true
+      },
+      {
+        "quarter": "2025 Q2",
+        "revenue": 1.182,
+        "gross_profit": 0.378,
+        "gross_margin_pct": 32.0,
+        "operating_loss": -7.592,
+        "derived": false
+      },
+      {
+        "quarter": "2025 Q3",
+        "revenue": 0.43,
+        "gross_profit": -1.05,
+        "gross_margin_pct": -244.2,
+        "operating_loss": -9.254,
+        "derived": false
+      },
+      {
+        "quarter": "2025 Q4",
+        "revenue": 0.758,
+        "gross_profit": -1.233,
+        "gross_margin_pct": -162.7,
+        "operating_loss": -11.954,
+        "derived": true
+      },
+      {
+        "quarter": "2026 Q1",
+        "revenue": 1.92,
+        "gross_profit": 0.947,
+        "gross_margin_pct": 49.3,
+        "operating_loss": -6.132,
+        "derived": true
+      },
+      {
+        "quarter": "2026 Q2",
+        "revenue": 0.971,
+        "gross_profit": -0.226,
+        "gross_margin_pct": -23.3,
+        "operating_loss": -7.415,
+        "derived": false
+      }
+    ],
+    "q2_2026": {
+      "product_revenue_m": 0.402,
+      "service_revenue_m": 0.569,
+      "total_revenue_m": 0.971,
+      "product_cost_m": 1.041,
+      "service_cost_m": 0.156,
+      "gross_profit_m": -0.226,
+      "gross_margin_pct": -23.3,
+      "net_loss_m": -20.378,
+      "warrant_fair_value_loss_m": 12.32
+    },
+    "h1_2026": {
+      "revenue_m": 2.891,
+      "ocf_m": -23.985,
+      "net_loss_m": -30.242,
+      "warrant_fair_value_loss_m": 15.445
+    },
+    "ceilings": [
+      "Q4 2024, Q1 2025, Q4 2025 and Q1 2026 quarter values include annual/half-year arithmetic derivations where noted."
+    ]
+  },
+  "kpis": [
+    {
+      "name": "5G shipments",
+      "history": [
+        {
+          "quarter": "2025 Q4",
+          "units": 1900,
+          "qualifier": "more_than",
+          "product_revenue": 0.33,
+          "product_revenue_note": "derived approximate total product revenue, includes 4G; not 5G ASP"
+        },
+        {
+          "quarter": "2026 Q1",
+          "units": 3000,
+          "qualifier": "approximately",
+          "product_revenue": 0.472,
+          "product_revenue_per_reported_5g_unit_upper_bound": 157.33
+        },
+        {
+          "quarter": "2026 Q2",
+          "units": 5100,
+          "qualifier": "more_than",
+          "product_revenue": 0.402,
+          "product_revenue_per_reported_5g_unit_upper_bound": 78.82
+        }
+      ],
+      "current": ">5,100 units in 2026 Q2",
+      "thresholds": {
+        "green": "shipment growth plus product revenue and gross profit improve together",
+        "yellow": "shipments rise but product revenue/GM remains flat or volatile",
+        "red": "shipments plateau/decline or two quarters of no monetization conversion"
+      }
+    },
+    {
+      "name": "product gross margin",
+      "history": [
+        {
+          "period": "2026 Q2",
+          "product_revenue_m": 0.402,
+          "product_cost_m": 1.041
+        }
+      ],
+      "current": "deeply negative product gross profit in Q2",
+      "thresholds": {
+        "green": "total GM >30% with rising product mix and product economics visibly improving",
+        "yellow": "GM positive but <30% / service mix does most of the work",
+        "red": "negative GM persists as shipments rise"
+      }
+    },
+    {
+      "name": "quarterly cash burn",
+      "current": "H1 2026 OCF -$24.0m; management normalized burn ~$8.0–8.5m/q",
+      "thresholds": {
+        "green": "OCF burn < $5m/q and falling",
+        "yellow": "$5–9m/q",
+        "red": ">$9m/q or new large prepayment/funding need"
+      }
+    },
+    {
+      "name": "basic share count",
+      "history": [
+        {
+          "period": "2025-12-31",
+          "shares_m": 58.137
+        },
+        {
+          "period": "2026-06-30",
+          "shares_m": 91.964
+        },
+        {
+          "period": "2026-08-06",
+          "shares_m": 91.97
+        }
+      ],
+      "current": "~91.97m",
+      "thresholds": {
+        "green": "share count broadly stable while revenue scales",
+        "yellow": "<15% annualized dilution",
+        "red": ">20% annualized dilution without proportional revenue/GM proof"
+      }
+    }
+  ],
+  "capital_structure": {
+    "cash_m": 30.228,
+    "current_borrowings_m": 39.053,
+    "long_term_borrowings_m": 11.028,
+    "convertible_notes_m": 5.184,
+    "warrant_liability_m": 18.315,
+    "total_liabilities_m": 101.848,
+    "stockholders_deficit_m": -52.016,
+    "atm_h1_2026_gross_proceeds_m": 55.7,
+    "atm_q2_2026_gross_proceeds_m": 42.9,
+    "atm_h1_issuance_cost_m": 1.8,
+    "remaining_atm_shares_at_2026_06_30_m": 19.4,
+    "anti_dilutive_common_equivalents_m": {
+      "warrants": 41.918,
+      "legacy_earnout": 20.0,
+      "rsu": 1.43,
+      "sponsor_earnout": 0.571,
+      "convertible": 0.5,
+      "options": 0.331,
+      "total": 64.75
+    },
+    "note": "Do not add all potential shares mechanically; scenario-by-scenario security conditions apply."
+  },
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.35,
+      "revenue_path": [
+        20,
+        35
+      ],
+      "gross_margin_pct": [
+        10,
+        25
+      ],
+      "opex": [
+        30,
+        30
+      ],
+      "operating_income": [
+        -28,
+        -21.25
+      ],
+      "fcf": [
+        -28,
+        -20
+      ],
+      "terminal_ev_sales": 1.2,
+      "terminal_net_debt": 20,
+      "terminal_diluted_shares_m": 145,
+      "driver": "customer delays persist; shipment-to-paid-revenue conversion remains weak; more equity funding",
+      "terminal_enterprise_value_m": 42.0,
+      "terminal_equity_value_m": 22.0,
+      "future_value_per_share": 0.15172413793103448,
+      "present_value_per_share": 0.10909573569987449,
+      "irr_from_current": -0.667501226915253
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "revenue_path": [
+        65,
+        120
+      ],
+      "gross_margin_pct": [
+        30,
+        40
+      ],
+      "opex": [
+        32,
+        35
+      ],
+      "operating_income": [
+        -12.5,
+        13
+      ],
+      "fcf": [
+        -15,
+        7
+      ],
+      "terminal_ev_sales": 2.5,
+      "terminal_net_debt": 0,
+      "terminal_diluted_shares_m": 120,
+      "driver": "Gogo/FWA repeat orders plus partial satellite launch; gross margin normalizes; one more funding round",
+      "terminal_enterprise_value_m": 300.0,
+      "terminal_equity_value_m": 300.0,
+      "future_value_per_share": 2.5,
+      "present_value_per_share": 1.7976001905092955,
+      "irr_from_current": 0.08998224648745135
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.17,
+      "revenue_path": [
+        95,
+        180
+      ],
+      "gross_margin_pct": [
+        38,
+        44
+      ],
+      "opex": [
+        34,
+        39
+      ],
+      "operating_income": [
+        2.1,
+        40.2
+      ],
+      "fcf": [
+        -2,
+        27
+      ],
+      "terminal_ev_sales": 3.25,
+      "terminal_net_debt": -20,
+      "terminal_diluted_shares_m": 110,
+      "driver": "aviation and terrestrial FWA scale rapidly; operating breakeven in 2027; limited dilution",
+      "terminal_enterprise_value_m": 585.0,
+      "terminal_equity_value_m": 605.0,
+      "future_value_per_share": 5.5,
+      "present_value_per_share": 3.9547204191204504,
+      "irr_from_current": 0.5223474375075594
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.08,
+      "revenue_path": [
+        115,
+        250
+      ],
+      "gross_margin_pct": [
+        40,
+        46
+      ],
+      "opex": [
+        36,
+        44
+      ],
+      "operating_income": [
+        10,
+        71
+      ],
+      "fcf": [
+        6,
+        55
+      ],
+      "terminal_ev_sales": 4.0,
+      "terminal_net_debt": -35,
+      "terminal_diluted_shares_m": 104,
+      "driver": "execution succeeds and NTN/satellite/industrial IoT becomes a second growth engine",
+      "terminal_enterprise_value_m": 1000.0,
+      "terminal_equity_value_m": 1035.0,
+      "future_value_per_share": 9.951923076923077,
+      "present_value_per_share": 7.155831527604311,
+      "irr_from_current": 0.9572339037086013
+    }
+  ],
+  "valuation": {
+    "mode": "Mode A — Option-led",
+    "discount_factor": 0.7190400762037182,
+    "current_price": 2.04,
+    "probability_weighted_future_value_per_share": 2.7842572944297084,
+    "expected_value_present_per_share": 2.001992577157496,
+    "expected_irr": 0.14087207111866173,
+    "base_present_value_per_share": 1.7976001905092955,
+    "primary_bull_present_value_per_share": 3.9547204191204504,
+    "bear_present_value_per_share": 0.10909573569987449,
+    "up_down_ratio": 0.9916185149730656,
+    "boundary_attribution_per_share": {
+      "core": 0.2,
+      "execution": 1.55,
+      "ecosystem": 0.55,
+      "funding_dilution_drag": -0.3,
+      "total": 2.0
+    },
+    "peer_anchor_note": "Qualcomm mature profitable connectivity platform traded around ~4x EV/Sales in Aug 2026; GCTS base uses 2.5x only after assumed 2028 scale. Sequans shows subscale cellular IoT can have positive GM while still loss-making."
+  },
+  "reverse_expectations": {
+    "hurdle_rate": 0.15,
+    "horizon_years": 2.36,
+    "required_future_price": 2.837115854196182,
+    "required_2028_revenue_by_multiple_and_shares": [
+      {
+        "terminal_diluted_shares_m": 110,
+        "terminal_ev_sales": 2.0,
+        "required_future_price": 2.837115854196182,
+        "required_terminal_equity_value_m": 312.08274396158004,
+        "required_2028_revenue_m_zero_net_debt": 156.04137198079002
+      },
+      {
+        "terminal_diluted_shares_m": 110,
+        "terminal_ev_sales": 2.5,
+        "required_future_price": 2.837115854196182,
+        "required_terminal_equity_value_m": 312.08274396158004,
+        "required_2028_revenue_m_zero_net_debt": 124.83309758463201
+      },
+      {
+        "terminal_diluted_shares_m": 110,
+        "terminal_ev_sales": 3.0,
+        "required_future_price": 2.837115854196182,
+        "required_terminal_equity_value_m": 312.08274396158004,
+        "required_2028_revenue_m_zero_net_debt": 104.02758132052668
+      },
+      {
+        "terminal_diluted_shares_m": 110,
+        "terminal_ev_sales": 3.5,
+        "required_future_price": 2.837115854196182,
+        "required_terminal_equity_value_m": 312.08274396158004,
+        "required_2028_revenue_m_zero_net_debt": 89.16649827473715
+      },
+      {
+        "terminal_diluted_shares_m": 110,
+        "terminal_ev_sales": 4.0,
+        "required_future_price": 2.837115854196182,
+        "required_terminal_equity_value_m": 312.08274396158004,
+        "required_2028_revenue_m_zero_net_debt": 78.02068599039501
+      },
+      {
+        "terminal_diluted_shares_m": 120,
+        "terminal_ev_sales": 2.0,
+        "required_future_price": 2.837115854196182,
+        "required_terminal_equity_value_m": 340.4539025035418,
+        "required_2028_revenue_m_zero_net_debt": 170.2269512517709
+      },
+      {
+        "terminal_diluted_shares_m": 120,
+        "terminal_ev_sales": 2.5,
+        "required_future_price": 2.837115854196182,
+        "required_terminal_equity_value_m": 340.4539025035418,
+        "required_2028_revenue_m_zero_net_debt": 136.18156100141672
+      },
+      {
+        "terminal_diluted_shares_m": 120,
+        "terminal_ev_sales": 3.0,
+        "required_future_price": 2.837115854196182,
+        "required_terminal_equity_value_m": 340.4539025035418,
+        "required_2028_revenue_m_zero_net_debt": 113.48463416784728
+      },
+      {
+        "terminal_diluted_shares_m": 120,
+        "terminal_ev_sales": 3.5,
+        "required_future_price": 2.837115854196182,
+        "required_terminal_equity_value_m": 340.4539025035418,
+        "required_2028_revenue_m_zero_net_debt": 97.27254357244053
+      },
+      {
+        "terminal_diluted_shares_m": 120,
+        "terminal_ev_sales": 4.0,
+        "required_future_price": 2.837115854196182,
+        "required_terminal_equity_value_m": 340.4539025035418,
+        "required_2028_revenue_m_zero_net_debt": 85.11347562588546
+      },
+      {
+        "terminal_diluted_shares_m": 130,
+        "terminal_ev_sales": 2.0,
+        "required_future_price": 2.837115854196182,
+        "required_terminal_equity_value_m": 368.8250610455037,
+        "required_2028_revenue_m_zero_net_debt": 184.41253052275184
+      },
+      {
+        "terminal_diluted_shares_m": 130,
+        "terminal_ev_sales": 2.5,
+        "required_future_price": 2.837115854196182,
+        "required_terminal_equity_value_m": 368.8250610455037,
+        "required_2028_revenue_m_zero_net_debt": 147.53002441820146
+      },
+      {
+        "terminal_diluted_shares_m": 130,
+        "terminal_ev_sales": 3.0,
+        "required_future_price": 2.837115854196182,
+        "required_terminal_equity_value_m": 368.8250610455037,
+        "required_2028_revenue_m_zero_net_debt": 122.94168701516789
+      },
+      {
+        "terminal_diluted_shares_m": 130,
+        "terminal_ev_sales": 3.5,
+        "required_future_price": 2.837115854196182,
+        "required_terminal_equity_value_m": 368.8250610455037,
+        "required_2028_revenue_m_zero_net_debt": 105.3785888701439
+      },
+      {
+        "terminal_diluted_shares_m": 130,
+        "terminal_ev_sales": 4.0,
+        "required_future_price": 2.837115854196182,
+        "required_terminal_equity_value_m": 368.8250610455037,
+        "required_2028_revenue_m_zero_net_debt": 92.20626526137592
+      }
+    ],
+    "headline": "At $2.04, a 15% hurdle implies roughly $100m–$150m of 2028 revenue across plausible 2.5–3.5x terminal EV/Sales and 110–130m diluted shares, before net-debt adjustments.",
+    "unit_translation_ceiling": "Cannot responsibly translate required revenue into 5G units because disclosed shipment-to-paid-revenue mapping and 5G ASP are unavailable."
+  },
+  "consensus": {
+    "formal_consensus": "PRIMARY_SOURCE_CEILING",
+    "published_q2_2026_revenue_expectation_m": 3.3,
+    "q2_2026_actual_revenue_m": 0.971,
+    "single_bullish_model": {
+      "provider": "Zacks Small-Cap Research",
+      "2027_revenue_m": 95,
+      "target_price": 4.4
+    },
+    "revision_trend": "Sparse coverage; Q2 miss shows timing expectations were too aggressive. Do not treat single-provider estimates as Street consensus."
+  },
+  "stance": {
+    "zone": "관망 / 신규매수 보류; 보유자는 포지션 크기 보수적으로 관리",
+    "reason": "Expected IRR ~14.1% is near but below a 15% high-risk hurdle, while primary Bull Execution/Bear U/D is ~0.99x.",
+    "price_bands": [
+      {
+        "min": null,
+        "max": 1.4,
+        "label": "적극 관심 검토",
+        "logic": "primary Bull Execution/Bear U/D ≈2x 이상; expected IRR >30%"
+      },
+      {
+        "min": 1.4,
+        "max": 1.65,
+        "label": "조건부 관심",
+        "logic": "U/D 약 1.5~2x; expected IRR mid-20% 이상"
+      },
+      {
+        "min": 1.65,
+        "max": 2.0,
+        "label": "관심/증거 확인",
+        "logic": "expected IRR >15%, but execution evidence still required"
+      },
+      {
+        "min": 2.0,
+        "max": 2.5,
+        "label": "관망 / 신규매수 보류",
+        "logic": "expected IRR near/below 15% and U/D around/below 1x"
+      },
+      {
+        "min": 2.5,
+        "max": null,
+        "label": "실행 프리미엄 부담",
+        "logic": "current proof is insufficient for implied acceleration"
+      }
+    ],
+    "attractive_trigger_1_65": "At $1.65, expected IRR ~24.8% and primary U/D ~1.50x.",
+    "strong_trigger_1_40": "At $1.40, expected IRR ~33.8% and primary U/D ~1.98x.",
+    "base_fair_value": 1.7976001905092955,
+    "weighted_value": 2.001992577157496,
+    "horizon": "to YE2028 (~2.36 years)"
+  },
+  "catalysts": [
+    {
+      "when": "2026 Q3 results (expected Nov 2026 window)",
+      "event": "H2 shipment/revenue conversion check",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2026 H2",
+      "event": "Unnamed satellite-provider initial shipment pathway",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2026 Q4 / 2027 Q1",
+      "event": "Gogo aircraft activations and repeat chipset demand",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2026 Q4 / 2027 Q1",
+      "event": "FWA device/carrier certifications and production orders",
+      "sensitivity": "High"
+    },
+    {
+      "when": "by 2027 Q1",
+      "event": "Use of secured wafer capacity and gross-margin absorption",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2026–2027",
+      "event": "ATM usage / debt extensions / related-party financing",
+      "sensitivity": "High"
+    }
+  ],
+  "price_history_events": [
+    {
+      "date": "2026-03-25",
+      "close": 1.3,
+      "event": "2025 Form 10-K / going-concern context"
+    },
+    {
+      "date": "2026-05-07",
+      "close": 1.5,
+      "event": "Satellite reference-platform contract"
+    },
+    {
+      "date": "2026-05-12",
+      "close": 1.63,
+      "event": "Q1 2026 results"
+    },
+    {
+      "date": "2026-05-27",
+      "close": 3.24,
+      "event": "MaxLinear FWA partnership"
+    },
+    {
+      "date": "2026-05-28",
+      "close": 3.73,
+      "event": "52-week high area / post-partnership momentum"
+    },
+    {
+      "date": "2026-06-18",
+      "close": 3.18,
+      "event": "ATM expansion period / market volatility"
+    },
+    {
+      "date": "2026-08-10",
+      "close": 2.45,
+      "event": "Q2 2026 results"
+    },
+    {
+      "date": "2026-08-11",
+      "close": 2.04,
+      "event": "post-Q2 repricing -16.7%"
+    },
+    {
+      "date": "2026-08-21",
+      "close": 2.04,
+      "event": "valuation as-of"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "1.1–1.3"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "1.4–1.7"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.3 / Appendix C"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "3.2–3.4"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "3.5 / Appendix D"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "4.3"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "4.4 / 5.3"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "3.6"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "2.1–2.3 / Appendix E"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "2.4–2.5 / 4.8"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "4.1–4.2 / Appendix A"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "4.6"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "4.7–4.8 / Appendix F"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.7 / Appendix G"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "0.6 / 5.7 / Appendix H"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "5.1–5.9"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "6.4–6.7"
+    }
+  ],
+  "ceilings": [
+    {
+      "topic": "5G quantitative competitive benchmark",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "reason": "GCT does not disclose sufficient peak throughput, process node, power curve and full certification detail for a like-for-like current-generation comparison."
+    },
+    {
+      "topic": "wafer capacity economics",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "reason": "Management states capacity is secured through Q1 2027, but wafer quantity, price, yield and allocation are undisclosed."
+    },
+    {
+      "topic": "formal Street consensus",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "reason": "coverage is sparse and a single published model is not a robust consensus."
+    },
+    {
+      "topic": "commercialization base rate",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "reason": "no defensible primary-source cohort exactly matches a legacy-LTE modem vendor re-commercializing 5G at micro-cap scale."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "GCT Semiconductor 2026 Q2 Form 10-Q",
+      "date": "2026-08-10",
+      "url": "https://www.sec.gov/Archives/edgar/data/1851961/000119312526342564/gcts-20260630.htm",
+      "type": "SEC filing"
+    },
+    {
+      "id": "S02",
+      "title": "GCT Semiconductor 2025 Form 10-K",
+      "date": "2026-03-25",
+      "url": "https://www.sec.gov/Archives/edgar/data/1851961/000119312526124183/gcts-20251231.htm",
+      "type": "SEC filing"
+    },
+    {
+      "id": "S03",
+      "title": "GCT Semiconductor 2024 Form 10-K",
+      "date": "2025-03-25",
+      "url": "https://www.sec.gov/Archives/edgar/data/1851961/000095017025044438/gcts-20241231.htm",
+      "type": "SEC filing"
+    },
+    {
+      "id": "S04",
+      "title": "GCT first commercial 5G shipments",
+      "date": "2026-01-06",
+      "url": "https://www.gctsemi.com/1-6-26-5g-commercial-shipments",
+      "type": "company operating"
+    },
+    {
+      "id": "S05",
+      "title": "GCT product portfolio",
+      "date": null,
+      "url": "https://www.gctsemi.com/products",
+      "type": "company product"
+    },
+    {
+      "id": "S06",
+      "title": "GCT 4G LTE portfolio",
+      "date": null,
+      "url": "https://www.gctsemi.com/4g-lte",
+      "type": "company product"
+    },
+    {
+      "id": "S07",
+      "title": "GCT–Globalstar partnership",
+      "date": "2025-03-04",
+      "url": "https://www.gctsemi.com/3-4-25-globalstar-mwc",
+      "type": "company/counterparty"
+    },
+    {
+      "id": "S08",
+      "title": "GCT–Iridium MOU",
+      "date": "2025-06-04",
+      "url": "https://www.gctsemi.com/6-4-25-iridium-gct",
+      "type": "company/counterparty"
+    },
+    {
+      "id": "S09",
+      "title": "GCT–MaxLinear FWA partnership",
+      "date": "2026-05-27",
+      "url": "https://www.gctsemi.com/5-27-26-maxlinear-computex",
+      "type": "company/counterparty"
+    },
+    {
+      "id": "S10",
+      "title": "Gogo GCT-chipset first 5G end-to-end call",
+      "date": "2025-06-18",
+      "url": "https://www.gogoair.com/resources/news/gogo-successfully-completes-first-5g-end-to-end-call",
+      "type": "counterparty"
+    },
+    {
+      "id": "S11",
+      "title": "Gogo 5G network launch",
+      "date": "2025-12-29",
+      "url": "https://ir.gogoair.com/news-releases/news-release-details/gogo-confirms-next-generation-air-ground-5g-now-launched",
+      "type": "counterparty"
+    },
+    {
+      "id": "S12",
+      "title": "Globalstar Q3 2025 results / RM200M commercialization",
+      "date": "2025-11",
+      "url": "https://investors.globalstar.com/news-releases/news-release-details/globalstar-announces-third-quarter-2025-financial-results",
+      "type": "counterparty"
+    },
+    {
+      "id": "S13",
+      "title": "Qualcomm Dragonwing FWA Gen 5 Elite Product Brief",
+      "date": "2026",
+      "url": "https://docs.qualcomm.com/doc/87-97363-1/87-97363-1_REV_AA_Qualcomm_Dragonwing_FWA_GEN_5_Elite_Platform_Product_Brief.pdf",
+      "type": "competitor product"
+    },
+    {
+      "id": "S14",
+      "title": "MediaTek T930 5G FWA Platform",
+      "date": "2026",
+      "url": "https://www.mediatek.com/products/5g-broadband/mediatek-t930",
+      "type": "competitor product"
+    },
+    {
+      "id": "S15",
+      "title": "Sequans Taurus 5G NR",
+      "date": null,
+      "url": "https://sequans.com/sequans-introduces-taurus-5g-nr-the-worlds-first-chipset-specifically-optimized-for-5g-broadband-iot-devices/",
+      "type": "competitor product"
+    },
+    {
+      "id": "S16",
+      "title": "GCT 2011 S-1",
+      "date": "2011",
+      "url": "https://www.sec.gov/Archives/edgar/data/1421365/000119312511248333/d211280ds1.htm",
+      "type": "SEC historical"
+    },
+    {
+      "id": "S17",
+      "title": "Qualcomm EV/Sales history",
+      "date": "2026-08-20",
+      "url": "https://www.financecharts.com/compare/VZ%2CQCOM/value/ev-to-sales",
+      "type": "market valuation"
+    },
+    {
+      "id": "S18",
+      "title": "Sequans Q2 2026 preliminary results",
+      "date": "2026-08-04",
+      "url": "https://sequans.com/sequans-communications-unaudited-second-quarter-2026-preliminary-financial-results/",
+      "type": "peer operating"
+    },
+    {
+      "id": "S19",
+      "title": "GCTS historical prices",
+      "date": "2026-08-21",
+      "url": "https://chartexchange.com/symbol/nyse-gcts/historical/",
+      "type": "market price"
+    },
+    {
+      "id": "S20",
+      "title": "GCTS current/historical price cross-check",
+      "date": "2026-08-21",
+      "url": "https://www.investing.com/equities/concord-acquisition-iii-historical-data",
+      "type": "market price"
+    }
+  ],
+  "visual_registry": [
+    {
+      "id": "VIS-01",
+      "title": "3년 매출 축소와 현금소진",
+      "data_paths": [
+        "financials.annual_3y[*].revenue",
+        "financials.annual_3y[*].ocf"
+      ],
+      "lineage": "REPORT_DATA_PACK.json"
+    },
+    {
+      "id": "VIS-02",
+      "title": "최근 8분기 매출과 총마진",
+      "data_paths": [
+        "financials.quarterly_8q[*].revenue",
+        "financials.quarterly_8q[*].gross_margin_pct"
+      ],
+      "lineage": "REPORT_DATA_PACK.json"
+    },
+    {
+      "id": "VIS-03",
+      "title": "5G 출하 증가와 제품매출의 비동조",
+      "data_paths": [
+        "kpis[0].history[*].units",
+        "kpis[0].history[*].product_revenue"
+      ],
+      "lineage": "REPORT_DATA_PACK.json"
+    },
+    {
+      "id": "VIS-04",
+      "title": "주식수 증가와 ATM 희석",
+      "data_paths": [
+        "kpis[3].history[*].shares_m",
+        "capital_structure.remaining_atm_shares_at_2026_06_30_m"
+      ],
+      "lineage": "REPORT_DATA_PACK.json"
+    },
+    {
+      "id": "VIS-05",
+      "title": "시나리오 현재가치",
+      "data_paths": [
+        "scenarios[*].present_value_per_share",
+        "valuation.current_price"
+      ],
+      "lineage": "REPORT_DATA_PACK.json"
+    },
+    {
+      "id": "VIS-06",
+      "title": "현재가가 요구하는 2028 매출",
+      "data_paths": [
+        "reverse_expectations.required_2028_revenue_by_multiple_and_shares"
+      ],
+      "lineage": "REPORT_DATA_PACK.json"
+    },
+    {
+      "id": "VIS-07",
+      "title": "주요 이벤트와 주가",
+      "data_paths": [
+        "price_history_events"
+      ],
+      "lineage": "REPORT_DATA_PACK.json"
+    }
+  ],
+  "audit": {
+    "rc_total": 17,
+    "rc_complete": 14,
+    "rc_primary_source_ceiling": 3,
+    "rc_unresolved": 0,
+    "latest_filing_check": "PASS",
+    "industry_company_transmission": "PASS",
+    "korean_prose_quality": "PENDING_PUBLISHING_RENDER",
+    "valuation": "PASS",
+    "reverse_expectations": "PASS",
+    "financing_dilution_audit": "PASS",
+    "visual_data_lineage": "PASS"
+  }
+}

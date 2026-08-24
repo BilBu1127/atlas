@@ -1,0 +1,1547 @@
+{
+  "meta": {
+    "ticker": "ALB",
+    "company": "Albemarle Corporation",
+    "T0": "2026-08-23",
+    "price_asof": "2026-08-21",
+    "filing_asof": "2026-08-05 / Q2 2026 10-Q",
+    "consensus_asof": "2026-08-22",
+    "version": "DDOS Production v1.6.2.2",
+    "currency": "USD"
+  },
+  "industry": {
+    "usgs_2025_lithium_production_li_kt": 290,
+    "usgs_2025_lithium_consumption_li_kt": 263,
+    "production_growth_pct": 31,
+    "consumption_growth_pct": 20,
+    "interpretation": "Secular demand is strong, but 2025 supply grew faster than consumption; sustainable lithium pricing depends on effective supply response, not demand alone."
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "fy": "2023",
+        "revenue_bn": 9.617203,
+        "energy_storage_sales_bn": 7.078998,
+        "specialties_sales_bn": 1.482425,
+        "ketjen_sales_bn": 1.05578,
+        "energy_storage_adj_ebitda_bn": 3.181593,
+        "specialties_adj_ebitda_bn": 0.298506,
+        "ketjen_adj_ebitda_bn": 0.103872,
+        "ocf_bn": 1.326583,
+        "capex_bn": 2.154542,
+        "fcf_bn": -0.827959
+      },
+      {
+        "fy": "2024",
+        "revenue_bn": 5.377526,
+        "energy_storage_sales_bn": 3.015121,
+        "specialties_sales_bn": 1.325983,
+        "ketjen_sales_bn": 1.036422,
+        "energy_storage_adj_ebitda_bn": 0.75754,
+        "specialties_adj_ebitda_bn": 0.228504,
+        "ketjen_adj_ebitda_bn": 0.131066,
+        "ocf_bn": 0.687876,
+        "capex_bn": 1.680529,
+        "fcf_bn": -0.992653
+      },
+      {
+        "fy": "2025",
+        "revenue_bn": 5.142733,
+        "energy_storage_sales_bn": 2.710035,
+        "specialties_sales_bn": 1.366435,
+        "ketjen_sales_bn": 1.066263,
+        "energy_storage_adj_ebitda_bn": 0.697215,
+        "specialties_adj_ebitda_bn": 0.275739,
+        "ketjen_adj_ebitda_bn": 0.150398,
+        "ocf_bn": 1.282267,
+        "capex_bn": 0.589801,
+        "fcf_bn": 0.692466
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "q": "Q3 2024",
+        "revenue_bn": 1.3547,
+        "adj_ebitda_bn": 0.2115,
+        "es_sales_bn": 0.7673,
+        "es_ebitda_bn": 0.1429,
+        "specialties_sales_bn": 0.3424,
+        "specialties_ebitda_bn": 0.0563
+      },
+      {
+        "q": "Q4 2024",
+        "revenue_bn": 1.2317,
+        "adj_ebitda_bn": 0.2507,
+        "es_sales_bn": 0.6168,
+        "es_ebitda_bn": 0.1337,
+        "specialties_sales_bn": 0.3329,
+        "specialties_ebitda_bn": 0.0729
+      },
+      {
+        "q": "Q1 2025",
+        "revenue_bn": 1.0769,
+        "adj_ebitda_bn": 0.2671,
+        "es_sales_bn": 0.5246,
+        "es_ebitda_bn": 0.1864,
+        "specialties_sales_bn": 0.321,
+        "specialties_ebitda_bn": 0.0587
+      },
+      {
+        "q": "Q2 2025",
+        "revenue_bn": 1.33,
+        "adj_ebitda_bn": 0.3365,
+        "es_sales_bn": 0.7177,
+        "es_ebitda_bn": 0.2197,
+        "specialties_sales_bn": 0.3516,
+        "specialties_ebitda_bn": 0.073
+      },
+      {
+        "q": "Q3 2025",
+        "revenue_bn": 1.3078,
+        "adj_ebitda_bn": 0.2256,
+        "es_sales_bn": 0.7088,
+        "es_ebitda_bn": 0.1241,
+        "specialties_sales_bn": 0.345,
+        "specialties_ebitda_bn": 0.0755
+      },
+      {
+        "q": "Q4 2025",
+        "revenue_bn": 1.428,
+        "adj_ebitda_bn": 0.2687,
+        "es_sales_bn": 0.7591,
+        "es_ebitda_bn": 0.1671,
+        "specialties_sales_bn": 0.3489,
+        "specialties_ebitda_bn": 0.0686
+      },
+      {
+        "q": "Q1 2026",
+        "revenue_bn": 1.4287,
+        "adj_ebitda_bn": 0.6638,
+        "es_sales_bn": 0.8912,
+        "es_ebitda_bn": 0.5514,
+        "specialties_sales_bn": 0.3584,
+        "specialties_ebitda_bn": 0.0761
+      },
+      {
+        "q": "Q2 2026",
+        "revenue_bn": 1.7433,
+        "adj_ebitda_bn": 0.8581,
+        "es_sales_bn": 1.2767,
+        "es_ebitda_bn": 0.7235,
+        "specialties_sales_bn": 0.4235,
+        "specialties_ebitda_bn": 0.1177,
+        "es_volume_kt": 65,
+        "realized_price_per_kg": 19.53
+      }
+    ],
+    "ceilings": [
+      "Exact quarterly OCF/CAPEX series not consistently decision-useful across divestiture/timing effects; annual audited + current-quarter cash-quality evidence used.",
+      "Exact sustaining vs growth capex split by site is not publicly disclosed."
+    ]
+  },
+  "company_sensitivity": [
+    {
+      "lithium_price_per_kg": 10,
+      "sales_low_bn": 4.1,
+      "sales_high_bn": 4.3,
+      "ebitda_low_bn": 0.9,
+      "ebitda_high_bn": 1.0
+    },
+    {
+      "lithium_price_per_kg": 20,
+      "sales_low_bn": 5.7,
+      "sales_high_bn": 6.0,
+      "ebitda_low_bn": 2.4,
+      "ebitda_high_bn": 2.6
+    },
+    {
+      "lithium_price_per_kg": 30,
+      "sales_low_bn": 7.5,
+      "sales_high_bn": 7.8,
+      "ebitda_low_bn": 4.2,
+      "ebitda_high_bn": 4.4
+    }
+  ],
+  "production_history": [
+    {
+      "year": 2023,
+      "greenbushes_li_kt": 21,
+      "wodgina_li_kt": 7,
+      "chile_li_kt": 10,
+      "silver_peak_li_kt": 1,
+      "total_li_kt": 39,
+      "bromine_kt": 123
+    },
+    {
+      "year": 2024,
+      "greenbushes_li_kt": 19,
+      "wodgina_li_kt": 6,
+      "chile_li_kt": 13,
+      "silver_peak_li_kt": 1,
+      "total_li_kt": 39,
+      "bromine_kt": 121
+    },
+    {
+      "year": 2025,
+      "greenbushes_li_kt": 19,
+      "wodgina_li_kt": 8,
+      "chile_li_kt": 14,
+      "silver_peak_li_kt": 1,
+      "total_li_kt": 42,
+      "bromine_kt": 126
+    }
+  ],
+  "ownership_denominator": {
+    "q2_2026_basic_weighted_avg_m": 117.961,
+    "mandatory_convert_incremental_q2_m": 17.521,
+    "stock_comp_incremental_q2_m": 0.73,
+    "q2_2026_diluted_weighted_avg_m": 136.212,
+    "mandatory_preferred_shares_m": 2.299826,
+    "conversion_ratio_min": 7.618,
+    "conversion_ratio_max": 9.14,
+    "contractual_common_min_m": 17.514,
+    "contractual_common_max_m": 21.02,
+    "conversion_expected_date": "2027-03-01",
+    "forecast_denominator_range_m": [
+      137,
+      140
+    ],
+    "buyback_assumption": "None assumed; no unsupported share-count reduction"
+  },
+  "kpis": [
+    {
+      "name": "Lithium market / ALB realized price",
+      "current": "Q2 ALB realized US$19.53/kg LCE",
+      "history": [
+        "FY25 company sensitivity ~US$10/kg base case",
+        "Q2'26 realized US$19.53/kg"
+      ],
+      "thresholds": {
+        "green": ">US$22/kg sustained for 2 quarters with supply discipline",
+        "yellow": "US$15-22/kg or sharp spot/realized divergence",
+        "red": "<US$15/kg sustained for 2 quarters"
+      },
+      "source_ids": [
+        "S01",
+        "S04",
+        "S06"
+      ]
+    },
+    {
+      "name": "Energy Storage saleable volume",
+      "current": "65kt Q2; FY26 guide 225-235kt",
+      "history": [
+        "2025 volume +9% YoY",
+        "Q2'26 65kt"
+      ],
+      "thresholds": {
+        "green": ">=240kt annualized with normal conversion availability",
+        "yellow": "225-240kt or ramp pushed right",
+        "red": "<225kt absent deliberate inventory optimization"
+      },
+      "source_ids": [
+        "S01",
+        "S03"
+      ]
+    },
+    {
+      "name": "Energy Storage EBITDA",
+      "current": "US$723.5m Q2'26",
+      "history": [
+        "US$3.182bn FY23",
+        "US$0.758bn FY24",
+        "US$0.697bn FY25",
+        "US$0.724bn Q2'26"
+      ],
+      "thresholds": {
+        "green": "annualized >US$2.5bn with cash conversion",
+        "yellow": "US$1.2-2.5bn annualized / price-driven only",
+        "red": "<US$1.2bn annualized for 2 quarters"
+      },
+      "source_ids": [
+        "S01",
+        "S03"
+      ]
+    },
+    {
+      "name": "Specialties EBITDA",
+      "current": "US$117.7m Q2; FY26 guide US$275-325m",
+      "history": [
+        "US$299m FY23",
+        "US$229m FY24",
+        "US$276m FY25"
+      ],
+      "thresholds": {
+        "green": ">US$325m annualized",
+        "yellow": "US$275-325m",
+        "red": "<US$275m sustained excluding clearly temporary outage"
+      },
+      "source_ids": [
+        "S01",
+        "S03"
+      ]
+    },
+    {
+      "name": "Normalized cash conversion",
+      "current": "Q2 OCF US$710m / FCF US$638m but materially helped by Talison dividend timing + non-recurring WC",
+      "history": [
+        "FY23 FCF -US$0.83bn",
+        "FY24 -US$0.99bn",
+        "FY25 +US$0.69bn including US$350m customer prepayment effects in annual cash generation"
+      ],
+      "thresholds": {
+        "green": "positive FCF after removing material prepayment/JV timing benefits",
+        "yellow": "headline FCF positive but >25% from timing/non-recurring items",
+        "red": "negative normalized FCF at lithium >=US$20/kg"
+      },
+      "source_ids": [
+        "S01",
+        "S03",
+        "S16"
+      ]
+    },
+    {
+      "name": "Net debt / ownership denominator",
+      "current": "Q2 net debt ~US$0.245bn; Q2 diluted WA shares 136.212m; mandatory conversion Mar-2027",
+      "history": [
+        "Q1'26 debt reduction ~US$1.3bn"
+      ],
+      "thresholds": {
+        "green": "net debt <=US$0.3bn and post-conversion shares <=138m",
+        "yellow": "net debt US$0.3-1.0bn or shares 138-140m",
+        "red": "net debt >US$1.0bn or shares >140m without value-accretive use"
+      },
+      "source_ids": [
+        "S02",
+        "S14",
+        "S15",
+        "S16"
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.25,
+      "horizon_months": 24,
+      "lithium_price_per_kg": 12,
+      "es_volume_kt": 225,
+      "es_adj_ebitda_bn": 1.0,
+      "es_multiple": 8.0,
+      "specialties_adj_ebitda_bn": 0.28,
+      "specialties_multiple": 7.0,
+      "residual_value_bn": 0.25,
+      "net_debt_bn": 0.5,
+      "diluted_shares_m": 139,
+      "es_value_bn": 8.0,
+      "specialties_value_bn": 1.96,
+      "equity_value_bn": 9.71,
+      "per_share_value": 69.86,
+      "scenario_irr_annual": -0.3017
+    },
+    {
+      "name": "Base",
+      "probability": 0.55,
+      "horizon_months": 24,
+      "lithium_price_per_kg": 20,
+      "es_volume_kt": 245,
+      "es_adj_ebitda_bn": 2.3,
+      "es_multiple": 7.25,
+      "specialties_adj_ebitda_bn": 0.31,
+      "specialties_multiple": 8.0,
+      "residual_value_bn": 0.35,
+      "net_debt_bn": 0.0,
+      "diluted_shares_m": 138,
+      "es_value_bn": 16.675,
+      "specialties_value_bn": 2.48,
+      "equity_value_bn": 19.505,
+      "per_share_value": 141.34,
+      "scenario_irr_annual": -0.0067
+    },
+    {
+      "name": "Up",
+      "probability": 0.2,
+      "horizon_months": 24,
+      "lithium_price_per_kg": 25,
+      "es_volume_kt": 260,
+      "es_adj_ebitda_bn": 3.5,
+      "es_multiple": 6.5,
+      "specialties_adj_ebitda_bn": 0.34,
+      "specialties_multiple": 9.0,
+      "residual_value_bn": 0.4,
+      "net_debt_bn": -0.5,
+      "diluted_shares_m": 137,
+      "es_value_bn": 22.75,
+      "specialties_value_bn": 3.06,
+      "equity_value_bn": 26.71,
+      "per_share_value": 194.96,
+      "scenario_irr_annual": 0.1666
+    }
+  ],
+  "valuation": {
+    "mode": "Mode D — Cyclical / Commodity; SOTP + normalized-cycle economics",
+    "expected_value_24m": 134.19,
+    "expected_irr": -0.0321,
+    "current_price": 143.25,
+    "up_down_ratio": 0.7,
+    "hurdle": 0.12,
+    "mechanism_valuation_parity": "PASS",
+    "material_valuation_input_lineage": "PASS — range-based; upstream cost-curve ceilings propagated"
+  },
+  "reverse_expectations": {
+    "current_price": 143.25,
+    "central_diluted_shares_m": 138,
+    "current_diluted_market_cap_bn": 19.77,
+    "q2_net_debt_bn": 0.245,
+    "economic_ev_bn": 20.01,
+    "specialties_base_value_bn": 2.48,
+    "residual_base_value_bn": 0.35,
+    "implied_energy_storage_ev_bn": 17.18,
+    "implied_energy_storage_ebitda_bn_at_7_25x": 2.37,
+    "operating_translation": "Current price is broadly consistent with a durable ~US$20-23/kg lithium-equivalent environment, roughly 230-245kt saleable annual volume, Specialties EBITDA near US$0.3bn, and no renewed balance-sheet deterioration. This is an evidence-based range, not a point estimate.",
+    "status": "PASS — translated to lithium price / saleable LCE volume / capital constraint"
+  },
+  "consensus": {
+    "as_of": "2026-08-22",
+    "rating": "Buy",
+    "buy": 13,
+    "hold": 9,
+    "sell": 0,
+    "mean_target": 173.56,
+    "low_target": 83.28,
+    "high_target": 225.0,
+    "recent_target_changes": [
+      {
+        "firm": "Morgan Stanley",
+        "from": 189,
+        "to": 161
+      },
+      {
+        "firm": "Scotiabank",
+        "from": 200,
+        "to": 190
+      },
+      {
+        "firm": "RBC",
+        "from": 166,
+        "to": 157
+      },
+      {
+        "firm": "UBS",
+        "from": 205,
+        "to": 175
+      },
+      {
+        "firm": "BMO",
+        "from": 250,
+        "to": 200
+      }
+    ],
+    "financials": {
+      "2026_revenue_bn": 6.1,
+      "2026_eps": 11.52,
+      "2027_revenue": "PRIMARY_SOURCE_CEILING in free normalized source",
+      "fy3": "PRIMARY_SOURCE_CEILING"
+    },
+    "short_interest": {
+      "as_of": "2026-07-31",
+      "shares_m": 11.190342,
+      "pct_float": 9.52,
+      "days_to_cover": 4.7
+    },
+    "institutional_changes": "PRIMARY_SOURCE_CEILING — complete normalized 13F change set not used"
+  },
+  "stance": {
+    "horizon": "24 months",
+    "current_price": 143.25,
+    "weighted_future_value": 134.19,
+    "expected_irr": -0.0321,
+    "hurdle": 0.12,
+    "up_value": 194.96,
+    "down_value": 69.86,
+    "up_down_ratio": 0.7,
+    "reference_matrix": "Avoid / wait; current price does not clear expected-return hurdle and U/D < 1.0",
+    "final": "WATCH / WAIT FOR MARGIN OF SAFETY",
+    "price_bands": {
+      "attractive": "US$105-110 or below",
+      "conditional": "US$110-120",
+      "watch": "US$120-145",
+      "rich_without_new_evidence": ">US$145"
+    },
+    "trigger_prices": {
+      "12pct_expected_irr": 106.98,
+      "ud_2x": 111.56,
+      "ud_1_5x": 119.9
+    },
+    "override_rationale": "NOT_REQUIRED"
+  },
+  "catalysts": [
+    {
+      "when": "2026-11 (expected)",
+      "event": "Q3 2026 results / lithium price pass-through / CGP3-Wodgina update",
+      "bull": "realized price holds near/above current levels while volume remains on plan and normalized cash conversion improves",
+      "bear": "spot strength fails to pass through or volume/ramp slips",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2026 Q4",
+      "event": "Greenbushes CGP3 recovery and Wodgina operating update",
+      "bull": "saleable feedstock increases without offsetting cost/working-capital deterioration",
+      "bear": "fire/ramp effects persist or external conversion bottleneck appears",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2027-02 (expected)",
+      "event": "FY2026 results / 2027 capital plan",
+      "bull": "capex discipline persists and 2027 guidance validates normalized FCF at mid-cycle price",
+      "bear": "growth capex re-accelerates before durable pricing or liquidity deteriorates",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2027-03-01",
+      "event": "Series A mandatory convertible expected conversion",
+      "bull": "share issuance lands near low end of contractual range and balance sheet remains clean",
+      "bear": "denominator approaches high end and per-share upside is diluted",
+      "sensitivity": "Medium"
+    },
+    {
+      "when": "2027 H1",
+      "event": "Chile new-technology/DLE quota progress, if any",
+      "bull": "permitting/consultation/technology efficiency de-risk 240kt LME option",
+      "bear": "option remains distant; no base-case value should be recognized",
+      "sensitivity": "Medium"
+    },
+    {
+      "when": "Ongoing",
+      "event": "China/Australia/Africa supply restarts, curtailments and ESS demand",
+      "bull": "effective supply discipline keeps lithium >US$20-22/kg despite demand growth",
+      "bear": "high-price response rapidly rebuilds surplus",
+      "sensitivity": "High"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3 / App.A",
+      "note": "Economic definition, portfolio transition and retained non-core effects reconstructed."
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.1 / App.B",
+      "note": "Value chain/cycle/effective supply complete; globally comparable all-in cost curve and exact reinvestment-price distribution are proprietary/inconsistent across producers."
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1 / Ch.6",
+      "note": "EV/ESS/other demand and 3-5Y direction established from IEA/USGS; leading indicators defined."
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.3 / App.C",
+      "note": "Ownership/production/site roles reconstructed; mine/site cash costs and conversion utilization by facility are not fully disclosed."
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.3-5 / App.C",
+      "note": "Contract share and scenario transmission known; exact floor/ceiling/index-lag/customer/product realized-price bridge remains proprietary."
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.1,3,4 / App.C",
+      "note": "Bromine resource/production and segment economics known; realized bromine and lithium-specialty unit economics are not fully disclosed."
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.3 / App.D",
+      "note": "Concentration/contract stage and qualification logic known; customer identities, renewal economics and floor/volume terms are incomplete."
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3 / App.D",
+      "note": "Competition matrix closed by customer job with field-level ceilings for non-public costs/contracts."
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2 / App.E",
+      "note": "Prior record and ALB Promise→Delivery reconstructed; biography not used as substitute for measurable record."
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2 / App.E",
+      "note": "Compensation, ownership, board, incentives and per-share alignment assessed."
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4 / App.F",
+      "note": "3Y + continuous latest 8Q + segment/KPI history + earnings-quality screen completed."
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.4-5 / App.F",
+      "note": "Cash normalization completed; exact sustaining-vs-growth capex by asset remains undisclosed."
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4-5 / App.G",
+      "note": "Debt/liquidity/security-by-security mandatory convert/SBC/capital return and forecast denominator reconciled."
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1,3,6 / App.H",
+      "note": "Chile/Australia/US/China/Jordan policy and operational exposure translated to economics."
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.0,5 / App.I",
+      "note": "Current ratings/targets/short/insider evidence collected; standardized FY3 consensus, complete 13F change set and long-run valuation percentile are incomplete in public normalized form."
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4-6 / App.J",
+      "note": "Operating KPI set and range-based driver→forecast bridge completed; ceilings propagated into scenario width."
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5 / App.K",
+      "note": "Mode D SOTP, scenarios, reverse expectations, expected return and stance audit completed."
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.6 / App.L",
+      "note": "Pre-mortem/catalysts/falsification complete; exact statistical base rate for this integrated lithium-producer profile not available."
+    }
+  ],
+  "rc_sub_obligation_ledger": [
+    {
+      "sub_id": "RC-002.a",
+      "promised_dimension": "lithium value chain / profit pool",
+      "status": "COMPLETE",
+      "evidence_or_ceiling": "USGS + ALB/competitor primary sources"
+    },
+    {
+      "sub_id": "RC-002.b",
+      "promised_dimension": "global cost curve / reinvestment economics",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "evidence_or_ceiling": "Comparable all-in producer cost curve and hurdle economics not fully public"
+    },
+    {
+      "sub_id": "RC-002.c",
+      "promised_dimension": "announced vs effective supply / curtailment / ramp",
+      "status": "COMPLETE",
+      "evidence_or_ceiling": "USGS 2026 + IEA project pipeline; capacity treated as effective only after ramp evidence"
+    },
+    {
+      "sub_id": "RC-002.d",
+      "promised_dimension": "prior downcycle and current cycle position",
+      "status": "COMPLETE",
+      "evidence_or_ceiling": "2023-25 ALB financials + USGS pricing/supply data"
+    },
+    {
+      "sub_id": "RC-004.a",
+      "promised_dimension": "Greenbushes/Talison ownership, production, cost/economics",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "evidence_or_ceiling": "49% ownership/production known; mine cash-cost detail insufficient"
+    },
+    {
+      "sub_id": "RC-004.b",
+      "promised_dimension": "Wodgina ownership, production, cost/economics",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "evidence_or_ceiling": "50% ownership/production known; cash-cost/utilization detail insufficient"
+    },
+    {
+      "sub_id": "RC-004.c",
+      "promised_dimension": "Chile/Silver Peak brine/resource economics",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "evidence_or_ceiling": "Chile quota/commission/community economics known; site-level full cash costs incl. Silver Peak incomplete"
+    },
+    {
+      "sub_id": "RC-004.d",
+      "promised_dimension": "conversion network capacity/utilization/ramp/idle assets",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "evidence_or_ceiling": "Network/nameplate/idle status known; facility utilization and cost curves incomplete"
+    },
+    {
+      "sub_id": "RC-005.a",
+      "promised_dimension": "salts contract book/index/lag/fixed mechanics",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "evidence_or_ceiling": "~40% salts long-term disclosed; exact floors/caps/index terms proprietary"
+    },
+    {
+      "sub_id": "RC-005.b",
+      "promised_dimension": "spodumene mix/pricing",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "evidence_or_ceiling": "company scenario uses 10% LCE price; exact mix/counterparty terms incomplete"
+    },
+    {
+      "sub_id": "RC-005.c",
+      "promised_dimension": "realized-price bridge",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "evidence_or_ceiling": "Q2 realized price disclosed; full bridge by product/geography not public"
+    },
+    {
+      "sub_id": "RC-005.d",
+      "promised_dimension": "CORFO/JV/inventory leakage",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "evidence_or_ceiling": "mechanics known; exact quarter-by-quarter all-variable bridge unavailable"
+    },
+    {
+      "sub_id": "RC-006.a",
+      "promised_dimension": "bromine market/end-demand/pricing",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "evidence_or_ceiling": "production/end markets known; company realized unit price not fully disclosed"
+    },
+    {
+      "sub_id": "RC-006.b",
+      "promised_dimension": "lithium specialties economics",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "evidence_or_ceiling": "segment-level economics known; product-level margins/price not public"
+    },
+    {
+      "sub_id": "RC-006.c",
+      "promised_dimension": "JBC / Arkansas supply and geopolitical continuity",
+      "status": "COMPLETE",
+      "evidence_or_ceiling": "production/resource role and Jordan/Arkansas exposure assessed"
+    },
+    {
+      "sub_id": "RC-009.a",
+      "promised_dimension": "prior measurable operating record",
+      "status": "COMPLETE",
+      "evidence_or_ceiling": "Foster Wheeler filings/transaction record reconstructed"
+    },
+    {
+      "sub_id": "RC-009.b",
+      "promised_dimension": "guidance / Promise→Delivery",
+      "status": "COMPLETE",
+      "evidence_or_ceiling": "2024-26 targets vs actual actions reconciled"
+    },
+    {
+      "sub_id": "RC-009.c",
+      "promised_dimension": "cost/productivity delivery",
+      "status": "COMPLETE",
+      "evidence_or_ceiling": "~US$450m 2025 vs initial US$300-400m target; 2026 YTD progress"
+    },
+    {
+      "sub_id": "RC-009.d",
+      "promised_dimension": "capex/portfolio decisions under stress",
+      "status": "COMPLETE",
+      "evidence_or_ceiling": "capex cuts, Kemerton idle, Ketjen/Eurecat disposal, debt repayment"
+    },
+    {
+      "sub_id": "RC-011.a",
+      "promised_dimension": "annual 3Y financial record",
+      "status": "COMPLETE",
+      "evidence_or_ceiling": "2023-25 audited statements"
+    },
+    {
+      "sub_id": "RC-011.b",
+      "promised_dimension": "continuous latest 8Q record",
+      "status": "COMPLETE",
+      "evidence_or_ceiling": "Q3'24-Q2'26 company releases/filings"
+    },
+    {
+      "sub_id": "RC-011.c",
+      "promised_dimension": "segment/KPI history",
+      "status": "COMPLETE",
+      "evidence_or_ceiling": "Energy Storage + Specialties series and production history"
+    },
+    {
+      "sub_id": "RC-011.d",
+      "promised_dimension": "Earnings Quality Screen",
+      "status": "COMPLETE",
+      "evidence_or_ceiling": "FLAGS_NOTED: prepayment, JV dividend/WC timing, immaterial cash-flow reclassifications"
+    },
+    {
+      "sub_id": "RC-013.a",
+      "promised_dimension": "debt/liquidity/refinancing",
+      "status": "COMPLETE",
+      "evidence_or_ceiling": "Q2'26 cash US$1.632bn, debt US$1.877bn; maturities and 2026 repurchases"
+    },
+    {
+      "sub_id": "RC-013.b",
+      "promised_dimension": "mandatory convertible economics",
+      "status": "COMPLETE",
+      "evidence_or_ceiling": "2.3m preferred; 7.618-9.140 ratio; Mar-2027 conversion"
+    },
+    {
+      "sub_id": "RC-013.c",
+      "promised_dimension": "SBC / employee issuance",
+      "status": "COMPLETE",
+      "evidence_or_ceiling": "Q2 diluted EPS bridge includes ~0.73m stock-comp shares"
+    },
+    {
+      "sub_id": "RC-013.d",
+      "promised_dimension": "buyback/dividend/other capital actions",
+      "status": "COMPLETE",
+      "evidence_or_ceiling": "No unsupported buyback; common/preferred dividends and debt reduction treated explicitly"
+    },
+    {
+      "sub_id": "RC-013.e",
+      "promised_dimension": "current → forecast diluted denominator",
+      "status": "COMPLETE",
+      "evidence_or_ceiling": "Q2 diluted 136.212m → 137-140m scenario range"
+    },
+    {
+      "sub_id": "RC-015.a",
+      "promised_dimension": "sell-side consensus and revisions",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "evidence_or_ceiling": "FY1/FY2 and recent target revisions available; standardized FY3/revision history incomplete"
+    },
+    {
+      "sub_id": "RC-015.b",
+      "promised_dimension": "target-price/opinion distribution",
+      "status": "COMPLETE",
+      "evidence_or_ceiling": "13 Buy / 9 Hold / 0 Sell; mean target US$173.56"
+    },
+    {
+      "sub_id": "RC-015.c",
+      "promised_dimension": "short interest / days-to-cover",
+      "status": "COMPLETE",
+      "evidence_or_ceiling": "11.19m / 9.52% float / 4.7 days at Jul-31-2026"
+    },
+    {
+      "sub_id": "RC-015.d",
+      "promised_dimension": "13F / institutional ownership changes",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "evidence_or_ceiling": "Complete normalized change set not obtained from primary filings within public aggregation constraints"
+    },
+    {
+      "sub_id": "RC-015.e",
+      "promised_dimension": "insider activity",
+      "status": "COMPLETE",
+      "evidence_or_ceiling": "Recent Form 4 activity checked; no thesis built from isolated trades"
+    },
+    {
+      "sub_id": "RC-015.f",
+      "promised_dimension": "valuation-band history / price-event context",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "evidence_or_ceiling": "Price-event context available; clean long-cycle forward multiple percentile inconsistent because earnings regime changed"
+    },
+    {
+      "sub_id": "RC-017.a",
+      "promised_dimension": "normalized Energy Storage value",
+      "status": "COMPLETE",
+      "evidence_or_ceiling": "Lithium-price/volume/EBITDA scenario SOTP"
+    },
+    {
+      "sub_id": "RC-017.b",
+      "promised_dimension": "normalized Specialties value",
+      "status": "COMPLETE",
+      "evidence_or_ceiling": "US$0.28-0.34bn normalized EBITDA x scenario multiples"
+    },
+    {
+      "sub_id": "RC-017.c",
+      "promised_dimension": "capital-structure / denominator reconciliation",
+      "status": "COMPLETE",
+      "evidence_or_ceiling": "post-conversion denominator and net debt treated consistently"
+    },
+    {
+      "sub_id": "RC-017.d",
+      "promised_dimension": "reverse expectations to lithium price/volume/cost KPI",
+      "status": "COMPLETE",
+      "evidence_or_ceiling": "~US$20-23/kg durable price + ~230-245kt volume range"
+    },
+    {
+      "sub_id": "RC-017.e",
+      "promised_dimension": "expected IRR / U-D ratio / stance matrix",
+      "status": "COMPLETE",
+      "evidence_or_ceiling": "weighted 24m value US$134.2; expected IRR -3.2%; U/D 0.70x"
+    }
+  ],
+  "source_registry": [
+    {
+      "id": "S01",
+      "name": "Albemarle Q2 2026 earnings release",
+      "type": "company primary",
+      "as_of": "2026-08-05",
+      "url": "https://investors.albemarle.com/news-and-events/news/news-details/2026/Albemarle-Reports-Second-Quarter-2026-Results/default.aspx",
+      "use": "Q2 operating results, volume, realized price, FY26 sensitivity, Specialties and capex outlook"
+    },
+    {
+      "id": "S02",
+      "name": "Albemarle Q2 2026 Form 10-Q",
+      "type": "SEC filing",
+      "as_of": "2026-06-30",
+      "url": "https://www.sec.gov/Archives/edgar/data/915913/000091591326000102/alb-20260630.htm",
+      "use": "cash, debt, diluted shares, preferred conversion inclusion, receivables sale, cash flow"
+    },
+    {
+      "id": "S03",
+      "name": "Albemarle 2025 Form 10-K",
+      "type": "SEC filing",
+      "as_of": "2025-12-31",
+      "url": "https://www.sec.gov/Archives/edgar/data/915913/000091591326000018/alb-20251231.htm",
+      "use": "3Y financials, segments, asset ownership, production, customers, competition, cash-flow revisions"
+    },
+    {
+      "id": "S04",
+      "name": "Albemarle FY2025 results / FY2026 price sensitivity",
+      "type": "company primary",
+      "as_of": "2026-02-11",
+      "url": "https://investors.albemarle.com/news-and-events/news/news-details/2026/Albemarle-Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx",
+      "use": "US$10/20/30 per kg FY26 sensitivity and contract-book assumptions"
+    },
+    {
+      "id": "S05",
+      "name": "Albemarle Modeling Deep Dive index",
+      "type": "company primary",
+      "as_of": "2026-05-21",
+      "url": "https://investors.albemarle.com/news-and-events/default.aspx?page=1",
+      "use": "resource/conversion network and modeling framework; detailed utilization/cost fields subject to disclosure ceiling"
+    },
+    {
+      "id": "S06",
+      "name": "USGS Mineral Commodity Summaries 2026 — Lithium",
+      "type": "government primary",
+      "as_of": "2026-02",
+      "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026.pdf",
+      "use": "2025 world production/consumption and near-term oversupply evidence"
+    },
+    {
+      "id": "S07",
+      "name": "IEA Global Critical Minerals Outlook 2026 — lithium supply charts",
+      "type": "intergovernmental primary analysis",
+      "as_of": "2026-07-09",
+      "url": "https://www.iea.org/data-and-statistics/charts/expected-mine-supply-from-existing-and-announced-projects-and-primary-supply-requirements-for-lithium-by-scenario-2035",
+      "use": "long-term lithium supply-demand balance and announced-project pipeline"
+    },
+    {
+      "id": "S08",
+      "name": "IEA Lithium demand profile",
+      "type": "intergovernmental primary analysis",
+      "as_of": "2024-05-17",
+      "url": "https://www.iea.org/reports/lithium",
+      "use": "demand composition / longer-run clean-energy demand framework"
+    },
+    {
+      "id": "S09",
+      "name": "CORFO-Albemarle 2024 settlement",
+      "type": "government/regulator primary",
+      "as_of": "2024-05-15",
+      "url": "https://www.corfo.cl/sites/cpp/sala_de_prensa/nacional/15_05_2024_corfo_albemarle",
+      "use": "2043 term unchanged, DLE/new-tech 240kt LME option conditions"
+    },
+    {
+      "id": "S10",
+      "name": "Albemarle Salar de Atacama SEC Technical Report Summary",
+      "type": "SEC technical primary",
+      "as_of": "2025-02",
+      "url": "https://www.sec.gov/Archives/edgar/data/915913/000091591325000024/exhibit963salardeatacama.htm",
+      "use": "remaining quota, 2044 expiration, 3.5% community payment, resource constraints"
+    },
+    {
+      "id": "S11",
+      "name": "2017 Albemarle-CORFO commission structure",
+      "type": "SEC/company primary",
+      "as_of": "2017-01",
+      "url": "https://www.sec.gov/Archives/edgar/data/915913/000091591317000002/albcorfoagreement8ksuppl.htm",
+      "use": "progressive marginal commission tiers and effective-rate examples"
+    },
+    {
+      "id": "S12",
+      "name": "IRS critical mineral percentage guidance",
+      "type": "US government primary",
+      "as_of": "2023-04",
+      "url": "https://www.irs.gov/pub/irs-irbs/irb23-16.pdf",
+      "use": "70% 2026 / 80% 2027+ critical-mineral percentage framework"
+    },
+    {
+      "id": "S13",
+      "name": "Albemarle 2026 proxy statement",
+      "type": "SEC filing",
+      "as_of": "2026-03-11",
+      "url": "https://www.sec.gov/Archives/edgar/data/915913/000091591326000036/alb-20260311.htm",
+      "use": "CEO compensation, ownership, incentive outcomes, tenure/succession"
+    },
+    {
+      "id": "S14",
+      "name": "Albemarle mandatory convertible offering terms",
+      "type": "SEC filing",
+      "as_of": "2024-03-08",
+      "url": "https://www.sec.gov/Archives/edgar/data/915913/000091591324000078/exhibit991030820248-k.htm",
+      "use": "7.618-9.140 conversion ratio and March 2027 conversion"
+    },
+    {
+      "id": "S15",
+      "name": "Albemarle debt tender/redemption release",
+      "type": "SEC/company primary",
+      "as_of": "2026-03-02",
+      "url": "https://www.sec.gov/Archives/edgar/data/915913/000091591326000032/a03-06x20268xkexhibit992.htm",
+      "use": "2026 debt reduction actions"
+    },
+    {
+      "id": "S16",
+      "name": "Albemarle Q1 2026 earnings release",
+      "type": "company/SEC primary",
+      "as_of": "2026-05-06",
+      "url": "https://www.sec.gov/Archives/edgar/data/915913/000091591326000070/a1q26earningsreleaseex991.htm",
+      "use": "Q1 results, prepayment comparison, debt reduction, liquidity"
+    },
+    {
+      "id": "S17",
+      "name": "Investing.com ALB consensus",
+      "type": "secondary market data",
+      "as_of": "2026-08-22",
+      "url": "https://www.investing.com/equities/albemarle-consensus-estimates",
+      "use": "13 Buy / 9 Hold / 0 Sell, mean target US$173.56, recent target revisions"
+    },
+    {
+      "id": "S18",
+      "name": "StockAnalysis ALB forecast",
+      "type": "secondary market data based on S&P Global/TipRanks",
+      "as_of": "2026-08-11",
+      "url": "https://stockanalysis.com/stocks/alb/forecast/",
+      "use": "2026 revenue/EPS consensus cross-check; FY3 public normalization ceiling"
+    },
+    {
+      "id": "S19",
+      "name": "MarketBeat ALB short interest",
+      "type": "secondary market data citing FINRA",
+      "as_of": "2026-07-31",
+      "url": "https://www.marketbeat.com/stocks/NYSE/ALB/short-interest/",
+      "use": "short interest 11.19m / 9.52% float / 4.7 days"
+    },
+    {
+      "id": "S20",
+      "name": "StockAnalysis ALB price history",
+      "type": "secondary market data",
+      "as_of": "2026-08-21",
+      "url": "https://stockanalysis.com/stocks/alb/history/",
+      "use": "selected price-event context"
+    },
+    {
+      "id": "S21",
+      "name": "Investing.com ALB market page",
+      "type": "secondary market data",
+      "as_of": "2026-08-21",
+      "url": "https://www.investing.com/equities/albemarle",
+      "use": "T0 price and 52-week range cross-check"
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "VIS_ID": "VIS-001",
+      "FIGURE_TITLE": "8Q revenue and adjusted EBITDA",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.quarterly_8q",
+      "SOURCE_VALUES": [
+        {
+          "q": "Q3 2024",
+          "revenue_bn": 1.3547,
+          "adj_ebitda_bn": 0.2115,
+          "es_sales_bn": 0.7673,
+          "es_ebitda_bn": 0.1429,
+          "specialties_sales_bn": 0.3424,
+          "specialties_ebitda_bn": 0.0563
+        },
+        {
+          "q": "Q4 2024",
+          "revenue_bn": 1.2317,
+          "adj_ebitda_bn": 0.2507,
+          "es_sales_bn": 0.6168,
+          "es_ebitda_bn": 0.1337,
+          "specialties_sales_bn": 0.3329,
+          "specialties_ebitda_bn": 0.0729
+        },
+        {
+          "q": "Q1 2025",
+          "revenue_bn": 1.0769,
+          "adj_ebitda_bn": 0.2671,
+          "es_sales_bn": 0.5246,
+          "es_ebitda_bn": 0.1864,
+          "specialties_sales_bn": 0.321,
+          "specialties_ebitda_bn": 0.0587
+        },
+        {
+          "q": "Q2 2025",
+          "revenue_bn": 1.33,
+          "adj_ebitda_bn": 0.3365,
+          "es_sales_bn": 0.7177,
+          "es_ebitda_bn": 0.2197,
+          "specialties_sales_bn": 0.3516,
+          "specialties_ebitda_bn": 0.073
+        },
+        {
+          "q": "Q3 2025",
+          "revenue_bn": 1.3078,
+          "adj_ebitda_bn": 0.2256,
+          "es_sales_bn": 0.7088,
+          "es_ebitda_bn": 0.1241,
+          "specialties_sales_bn": 0.345,
+          "specialties_ebitda_bn": 0.0755
+        },
+        {
+          "q": "Q4 2025",
+          "revenue_bn": 1.428,
+          "adj_ebitda_bn": 0.2687,
+          "es_sales_bn": 0.7591,
+          "es_ebitda_bn": 0.1671,
+          "specialties_sales_bn": 0.3489,
+          "specialties_ebitda_bn": 0.0686
+        },
+        {
+          "q": "Q1 2026",
+          "revenue_bn": 1.4287,
+          "adj_ebitda_bn": 0.6638,
+          "es_sales_bn": 0.8912,
+          "es_ebitda_bn": 0.5514,
+          "specialties_sales_bn": 0.3584,
+          "specialties_ebitda_bn": 0.0761
+        },
+        {
+          "q": "Q2 2026",
+          "revenue_bn": 1.7433,
+          "adj_ebitda_bn": 0.8581,
+          "es_sales_bn": 1.2767,
+          "es_ebitda_bn": 0.7235,
+          "specialties_sales_bn": 0.4235,
+          "specialties_ebitda_bn": 0.1177,
+          "es_volume_kt": 65,
+          "realized_price_per_kg": 19.53
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "705967276951a811",
+      "DISPLAY_VALUES": [
+        {
+          "q": "Q3 2024",
+          "revenue_bn": 1.3547,
+          "adj_ebitda_bn": 0.2115,
+          "es_sales_bn": 0.7673,
+          "es_ebitda_bn": 0.1429,
+          "specialties_sales_bn": 0.3424,
+          "specialties_ebitda_bn": 0.0563
+        },
+        {
+          "q": "Q4 2024",
+          "revenue_bn": 1.2317,
+          "adj_ebitda_bn": 0.2507,
+          "es_sales_bn": 0.6168,
+          "es_ebitda_bn": 0.1337,
+          "specialties_sales_bn": 0.3329,
+          "specialties_ebitda_bn": 0.0729
+        },
+        {
+          "q": "Q1 2025",
+          "revenue_bn": 1.0769,
+          "adj_ebitda_bn": 0.2671,
+          "es_sales_bn": 0.5246,
+          "es_ebitda_bn": 0.1864,
+          "specialties_sales_bn": 0.321,
+          "specialties_ebitda_bn": 0.0587
+        },
+        {
+          "q": "Q2 2025",
+          "revenue_bn": 1.33,
+          "adj_ebitda_bn": 0.3365,
+          "es_sales_bn": 0.7177,
+          "es_ebitda_bn": 0.2197,
+          "specialties_sales_bn": 0.3516,
+          "specialties_ebitda_bn": 0.073
+        },
+        {
+          "q": "Q3 2025",
+          "revenue_bn": 1.3078,
+          "adj_ebitda_bn": 0.2256,
+          "es_sales_bn": 0.7088,
+          "es_ebitda_bn": 0.1241,
+          "specialties_sales_bn": 0.345,
+          "specialties_ebitda_bn": 0.0755
+        },
+        {
+          "q": "Q4 2025",
+          "revenue_bn": 1.428,
+          "adj_ebitda_bn": 0.2687,
+          "es_sales_bn": 0.7591,
+          "es_ebitda_bn": 0.1671,
+          "specialties_sales_bn": 0.3489,
+          "specialties_ebitda_bn": 0.0686
+        },
+        {
+          "q": "Q1 2026",
+          "revenue_bn": 1.4287,
+          "adj_ebitda_bn": 0.6638,
+          "es_sales_bn": 0.8912,
+          "es_ebitda_bn": 0.5514,
+          "specialties_sales_bn": 0.3584,
+          "specialties_ebitda_bn": 0.0761
+        },
+        {
+          "q": "Q2 2026",
+          "revenue_bn": 1.7433,
+          "adj_ebitda_bn": 0.8581,
+          "es_sales_bn": 1.2767,
+          "es_ebitda_bn": 0.7235,
+          "specialties_sales_bn": 0.4235,
+          "specialties_ebitda_bn": 0.1177,
+          "es_volume_kt": 65,
+          "realized_price_per_kg": 19.53
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Ch.4 §4.1",
+      "TABLE_LOCATOR": "App.F",
+      "CAPTION_LOCATOR": "Ch.4 §4.1",
+      "RENDERED_ASSET_LOCATOR": "assets/vis001_8q.png",
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-002",
+      "FIGURE_TITLE": "Company 2026 lithium-price sensitivity",
+      "AUTHORITATIVE_SOURCE_BLOCK": "company_sensitivity",
+      "SOURCE_VALUES": [
+        {
+          "lithium_price_per_kg": 10,
+          "sales_low_bn": 4.1,
+          "sales_high_bn": 4.3,
+          "ebitda_low_bn": 0.9,
+          "ebitda_high_bn": 1.0
+        },
+        {
+          "lithium_price_per_kg": 20,
+          "sales_low_bn": 5.7,
+          "sales_high_bn": 6.0,
+          "ebitda_low_bn": 2.4,
+          "ebitda_high_bn": 2.6
+        },
+        {
+          "lithium_price_per_kg": 30,
+          "sales_low_bn": 7.5,
+          "sales_high_bn": 7.8,
+          "ebitda_low_bn": 4.2,
+          "ebitda_high_bn": 4.4
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "63c4c563f5cd8d36",
+      "DISPLAY_VALUES": [
+        {
+          "lithium_price_per_kg": 10,
+          "sales_low_bn": 4.1,
+          "sales_high_bn": 4.3,
+          "ebitda_low_bn": 0.9,
+          "ebitda_high_bn": 1.0
+        },
+        {
+          "lithium_price_per_kg": 20,
+          "sales_low_bn": 5.7,
+          "sales_high_bn": 6.0,
+          "ebitda_low_bn": 2.4,
+          "ebitda_high_bn": 2.6
+        },
+        {
+          "lithium_price_per_kg": 30,
+          "sales_low_bn": 7.5,
+          "sales_high_bn": 7.8,
+          "ebitda_low_bn": 4.2,
+          "ebitda_high_bn": 4.4
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Ch.1 §1.4 / Ch.5 §5.2",
+      "TABLE_LOCATOR": "App.J",
+      "CAPTION_LOCATOR": "Ch.1 §1.4 / Ch.5 §5.2",
+      "RENDERED_ASSET_LOCATOR": "assets/vis002_sensitivity.png",
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-003",
+      "FIGURE_TITLE": "Attributable resource production history",
+      "AUTHORITATIVE_SOURCE_BLOCK": "production_history",
+      "SOURCE_VALUES": [
+        {
+          "year": 2023,
+          "greenbushes_li_kt": 21,
+          "wodgina_li_kt": 7,
+          "chile_li_kt": 10,
+          "silver_peak_li_kt": 1,
+          "total_li_kt": 39,
+          "bromine_kt": 123
+        },
+        {
+          "year": 2024,
+          "greenbushes_li_kt": 19,
+          "wodgina_li_kt": 6,
+          "chile_li_kt": 13,
+          "silver_peak_li_kt": 1,
+          "total_li_kt": 39,
+          "bromine_kt": 121
+        },
+        {
+          "year": 2025,
+          "greenbushes_li_kt": 19,
+          "wodgina_li_kt": 8,
+          "chile_li_kt": 14,
+          "silver_peak_li_kt": 1,
+          "total_li_kt": 42,
+          "bromine_kt": 126
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "9f2ca521df05a2ab",
+      "DISPLAY_VALUES": [
+        {
+          "year": 2023,
+          "greenbushes_li_kt": 21,
+          "wodgina_li_kt": 7,
+          "chile_li_kt": 10,
+          "silver_peak_li_kt": 1,
+          "total_li_kt": 39,
+          "bromine_kt": 123
+        },
+        {
+          "year": 2024,
+          "greenbushes_li_kt": 19,
+          "wodgina_li_kt": 6,
+          "chile_li_kt": 13,
+          "silver_peak_li_kt": 1,
+          "total_li_kt": 39,
+          "bromine_kt": 121
+        },
+        {
+          "year": 2025,
+          "greenbushes_li_kt": 19,
+          "wodgina_li_kt": 8,
+          "chile_li_kt": 14,
+          "silver_peak_li_kt": 1,
+          "total_li_kt": 42,
+          "bromine_kt": 126
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Ch.3 §3.3",
+      "TABLE_LOCATOR": "App.C",
+      "CAPTION_LOCATOR": "Ch.3 §3.3",
+      "RENDERED_ASSET_LOCATOR": "assets/vis003_production.png",
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-004",
+      "FIGURE_TITLE": "Ownership denominator bridge",
+      "AUTHORITATIVE_SOURCE_BLOCK": "ownership_denominator",
+      "SOURCE_VALUES": {
+        "q2_2026_basic_weighted_avg_m": 117.961,
+        "mandatory_convert_incremental_q2_m": 17.521,
+        "stock_comp_incremental_q2_m": 0.73,
+        "q2_2026_diluted_weighted_avg_m": 136.212,
+        "mandatory_preferred_shares_m": 2.299826,
+        "conversion_ratio_min": 7.618,
+        "conversion_ratio_max": 9.14,
+        "contractual_common_min_m": 17.514,
+        "contractual_common_max_m": 21.02,
+        "conversion_expected_date": "2027-03-01",
+        "forecast_denominator_range_m": [
+          137,
+          140
+        ],
+        "buyback_assumption": "None assumed; no unsupported share-count reduction"
+      },
+      "SOURCE_VERSION_OR_HASH": "a1948a6364daa6d4",
+      "DISPLAY_VALUES": {
+        "q2_2026_basic_weighted_avg_m": 117.961,
+        "mandatory_convert_incremental_q2_m": 17.521,
+        "stock_comp_incremental_q2_m": 0.73,
+        "q2_2026_diluted_weighted_avg_m": 136.212,
+        "mandatory_preferred_shares_m": 2.299826,
+        "conversion_ratio_min": 7.618,
+        "conversion_ratio_max": 9.14,
+        "contractual_common_min_m": 17.514,
+        "contractual_common_max_m": 21.02,
+        "conversion_expected_date": "2027-03-01",
+        "forecast_denominator_range_m": [
+          137,
+          140
+        ],
+        "buyback_assumption": "None assumed; no unsupported share-count reduction"
+      },
+      "NARRATIVE_LOCATOR": "Ch.4 §4.4 / Ch.5 §5.3",
+      "TABLE_LOCATOR": "App.G",
+      "CAPTION_LOCATOR": "Ch.4 §4.4 / Ch.5 §5.3",
+      "RENDERED_ASSET_LOCATOR": "assets/vis004_denominator.png",
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-005",
+      "FIGURE_TITLE": "24-month scenario values vs current price",
+      "AUTHORITATIVE_SOURCE_BLOCK": "scenarios",
+      "SOURCE_VALUES": [
+        {
+          "name": "Down",
+          "probability": 0.25,
+          "horizon_months": 24,
+          "lithium_price_per_kg": 12,
+          "es_volume_kt": 225,
+          "es_adj_ebitda_bn": 1.0,
+          "es_multiple": 8.0,
+          "specialties_adj_ebitda_bn": 0.28,
+          "specialties_multiple": 7.0,
+          "residual_value_bn": 0.25,
+          "net_debt_bn": 0.5,
+          "diluted_shares_m": 139,
+          "es_value_bn": 8.0,
+          "specialties_value_bn": 1.96,
+          "equity_value_bn": 9.71,
+          "per_share_value": 69.86,
+          "scenario_irr_annual": -0.3017
+        },
+        {
+          "name": "Base",
+          "probability": 0.55,
+          "horizon_months": 24,
+          "lithium_price_per_kg": 20,
+          "es_volume_kt": 245,
+          "es_adj_ebitda_bn": 2.3,
+          "es_multiple": 7.25,
+          "specialties_adj_ebitda_bn": 0.31,
+          "specialties_multiple": 8.0,
+          "residual_value_bn": 0.35,
+          "net_debt_bn": 0.0,
+          "diluted_shares_m": 138,
+          "es_value_bn": 16.675,
+          "specialties_value_bn": 2.48,
+          "equity_value_bn": 19.505,
+          "per_share_value": 141.34,
+          "scenario_irr_annual": -0.0067
+        },
+        {
+          "name": "Up",
+          "probability": 0.2,
+          "horizon_months": 24,
+          "lithium_price_per_kg": 25,
+          "es_volume_kt": 260,
+          "es_adj_ebitda_bn": 3.5,
+          "es_multiple": 6.5,
+          "specialties_adj_ebitda_bn": 0.34,
+          "specialties_multiple": 9.0,
+          "residual_value_bn": 0.4,
+          "net_debt_bn": -0.5,
+          "diluted_shares_m": 137,
+          "es_value_bn": 22.75,
+          "specialties_value_bn": 3.06,
+          "equity_value_bn": 26.71,
+          "per_share_value": 194.96,
+          "scenario_irr_annual": 0.1666
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "15c058e308ac26be",
+      "DISPLAY_VALUES": [
+        {
+          "name": "Down",
+          "probability": 0.25,
+          "horizon_months": 24,
+          "lithium_price_per_kg": 12,
+          "es_volume_kt": 225,
+          "es_adj_ebitda_bn": 1.0,
+          "es_multiple": 8.0,
+          "specialties_adj_ebitda_bn": 0.28,
+          "specialties_multiple": 7.0,
+          "residual_value_bn": 0.25,
+          "net_debt_bn": 0.5,
+          "diluted_shares_m": 139,
+          "es_value_bn": 8.0,
+          "specialties_value_bn": 1.96,
+          "equity_value_bn": 9.71,
+          "per_share_value": 69.86,
+          "scenario_irr_annual": -0.3017
+        },
+        {
+          "name": "Base",
+          "probability": 0.55,
+          "horizon_months": 24,
+          "lithium_price_per_kg": 20,
+          "es_volume_kt": 245,
+          "es_adj_ebitda_bn": 2.3,
+          "es_multiple": 7.25,
+          "specialties_adj_ebitda_bn": 0.31,
+          "specialties_multiple": 8.0,
+          "residual_value_bn": 0.35,
+          "net_debt_bn": 0.0,
+          "diluted_shares_m": 138,
+          "es_value_bn": 16.675,
+          "specialties_value_bn": 2.48,
+          "equity_value_bn": 19.505,
+          "per_share_value": 141.34,
+          "scenario_irr_annual": -0.0067
+        },
+        {
+          "name": "Up",
+          "probability": 0.2,
+          "horizon_months": 24,
+          "lithium_price_per_kg": 25,
+          "es_volume_kt": 260,
+          "es_adj_ebitda_bn": 3.5,
+          "es_multiple": 6.5,
+          "specialties_adj_ebitda_bn": 0.34,
+          "specialties_multiple": 9.0,
+          "residual_value_bn": 0.4,
+          "net_debt_bn": -0.5,
+          "diluted_shares_m": 137,
+          "es_value_bn": 22.75,
+          "specialties_value_bn": 3.06,
+          "equity_value_bn": 26.71,
+          "per_share_value": 194.96,
+          "scenario_irr_annual": 0.1666
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Ch.5 §5.4",
+      "TABLE_LOCATOR": "App.K",
+      "CAPTION_LOCATOR": "Ch.5 §5.4",
+      "RENDERED_ASSET_LOCATOR": "assets/vis005_scenarios.png",
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-006",
+      "FIGURE_TITLE": "Reverse expectations bridge",
+      "AUTHORITATIVE_SOURCE_BLOCK": "reverse_expectations",
+      "SOURCE_VALUES": {
+        "current_price": 143.25,
+        "central_diluted_shares_m": 138,
+        "current_diluted_market_cap_bn": 19.77,
+        "q2_net_debt_bn": 0.245,
+        "economic_ev_bn": 20.01,
+        "specialties_base_value_bn": 2.48,
+        "residual_base_value_bn": 0.35,
+        "implied_energy_storage_ev_bn": 17.18,
+        "implied_energy_storage_ebitda_bn_at_7_25x": 2.37,
+        "operating_translation": "Current price is broadly consistent with a durable ~US$20-23/kg lithium-equivalent environment, roughly 230-245kt saleable annual volume, Specialties EBITDA near US$0.3bn, and no renewed balance-sheet deterioration. This is an evidence-based range, not a point estimate.",
+        "status": "PASS — translated to lithium price / saleable LCE volume / capital constraint"
+      },
+      "SOURCE_VERSION_OR_HASH": "b36c4d949843dfe9",
+      "DISPLAY_VALUES": {
+        "current_price": 143.25,
+        "central_diluted_shares_m": 138,
+        "current_diluted_market_cap_bn": 19.77,
+        "q2_net_debt_bn": 0.245,
+        "economic_ev_bn": 20.01,
+        "specialties_base_value_bn": 2.48,
+        "residual_base_value_bn": 0.35,
+        "implied_energy_storage_ev_bn": 17.18,
+        "implied_energy_storage_ebitda_bn_at_7_25x": 2.37,
+        "operating_translation": "Current price is broadly consistent with a durable ~US$20-23/kg lithium-equivalent environment, roughly 230-245kt saleable annual volume, Specialties EBITDA near US$0.3bn, and no renewed balance-sheet deterioration. This is an evidence-based range, not a point estimate.",
+        "status": "PASS — translated to lithium price / saleable LCE volume / capital constraint"
+      },
+      "NARRATIVE_LOCATOR": "Ch.5 §5.5",
+      "TABLE_LOCATOR": "App.K",
+      "CAPTION_LOCATOR": "Ch.5 §5.5",
+      "RENDERED_ASSET_LOCATOR": "assets/vis006_reverse.png",
+      "STATUS": "PASS"
+    }
+  ],
+  "audits": {
+    "DATA_PACK_SOURCE_REGISTRY_COMPLETENESS": "PASS",
+    "VISUAL_DATA_SOURCE_REGISTRY": "EMITTED",
+    "OWNERSHIP_DENOMINATOR_LINEAGE": "PASS",
+    "RC_SUB_OBLIGATION_CLOSURE": "PASS",
+    "RC_UNRESOLVED": 0
+  }
+}

@@ -1,0 +1,807 @@
+{
+  "meta": {
+    "ticker": "ABCL",
+    "company": "AbCellera Biologics Inc.",
+    "T0": "2026-08-24",
+    "price_asof": "2026-08-21",
+    "price": 11.32,
+    "filing_asof": "2026-08-05 Form 10-Q (quarter ended 2026-06-30)",
+    "material_event_asof": "2026-08-10 ABCL635 Phase 2 topline",
+    "consensus_asof": "~2026-08-21 public aggregate",
+    "version": "CLEAN DDOS Production v1.7"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "fy": 2023,
+        "revenue": 38.025,
+        "rd": 175.658,
+        "total_opex": 275.232,
+        "operating_loss": -237.207,
+        "net_loss": -146.398
+      },
+      {
+        "fy": 2024,
+        "revenue": 28.833,
+        "rd": 167.259,
+        "total_opex": 343.599,
+        "operating_loss": -314.766,
+        "net_loss": -162.857
+      },
+      {
+        "fy": 2025,
+        "revenue": 75.128,
+        "rd": 186.829,
+        "total_opex": 292.231,
+        "operating_loss": -217.103,
+        "net_loss": -146.412
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "q": "2024 Q3",
+        "revenue": 6.507,
+        "rd": 40.969,
+        "total_opex": 100.17,
+        "net_loss": -51.1
+      },
+      {
+        "q": "2024 Q4",
+        "revenue": 5.1,
+        "rd": 46.076,
+        "total_opex": 77.8,
+        "net_loss": -34.2,
+        "derived": [
+          "rd"
+        ]
+      },
+      {
+        "q": "2025 Q1",
+        "revenue": 4.235,
+        "rd": 42.496,
+        "total_opex": 66.895,
+        "net_loss": -45.621
+      },
+      {
+        "q": "2025 Q2",
+        "revenue": 17.084,
+        "rd": 39.213,
+        "total_opex": 66.669,
+        "net_loss": -34.727
+      },
+      {
+        "q": "2025 Q3",
+        "revenue": 8.955,
+        "rd": 55.028,
+        "total_opex": 85.233,
+        "net_loss": -57.1
+      },
+      {
+        "q": "2025 Q4",
+        "revenue": 44.854,
+        "rd": 50.092,
+        "total_opex": 73.434,
+        "net_loss": -8.964,
+        "derived": [
+          "rd"
+        ]
+      },
+      {
+        "q": "2026 Q1",
+        "revenue": 8.315,
+        "rd": 46.662,
+        "total_opex": 65.834,
+        "net_loss": -43.165
+      },
+      {
+        "q": "2026 Q2",
+        "revenue": 4.05,
+        "rd": 45.987,
+        "total_opex": 66.827,
+        "net_loss": -55.427
+      }
+    ],
+    "cash_2026_06_30_m": 120.065,
+    "marketable_securities_2026_06_30_m": 420.039,
+    "cash_plus_marketables_m": 540.104,
+    "total_cash_balances_plus_marketables_approx_m": 565.0,
+    "government_future_eligible_funding_m": 110.0,
+    "operating_cash_flow_1h_2026_m": -7.6,
+    "property_equipment_purchases_1h_2026_m": 5.963,
+    "ceilings": [
+      "Full same-definition quarterly cash-flow reconstruction across all 8 quarters was not available from uniform primary disclosures."
+    ]
+  },
+  "capital_structure": {
+    "basic_shares_2026_06_30_m": 306.469632,
+    "pre_ipo_options_m": 21.22683,
+    "pre_ipo_weighted_strike": 1.18,
+    "2020_plan_options_m": 45.106287,
+    "2020_plan_weighted_strike": 6.53,
+    "rsus_m": 9.84134,
+    "economic_fd_shares_at_11_32_m": 354.411605,
+    "economic_fd_equity_value_at_11_32_bn": 4.011939
+  },
+  "kpis": [
+    {
+      "name": "ABCL635 Phase 3 placebo-adjusted VMS frequency effect",
+      "history": [
+        {
+          "date": "2026-08-10 Phase2 week4",
+          "value": 5.3,
+          "unit": "events/day"
+        }
+      ],
+      "current": 5.3,
+      "thresholds": {
+        "green": ">=3/day replicated with durable effect",
+        "yellow": "2-3/day or meaningful waning",
+        "red": "<2/day or primary endpoint failure"
+      }
+    },
+    {
+      "name": "Partner-led progressing programs with downstreams",
+      "history": [
+        {
+          "date": "2025-12-31",
+          "value": 44
+        },
+        {
+          "date": "2026-03-31",
+          "value": 40
+        },
+        {
+          "date": "2026-06-30",
+          "value": 35
+        }
+      ],
+      "current": 35,
+      "thresholds": {
+        "green": ">=35 stable/increasing",
+        "yellow": "30-34",
+        "red": "<30"
+      }
+    },
+    {
+      "name": "Clinical partner molecules understood progressing",
+      "history": [
+        {
+          "date": "2026-03-31",
+          "value": 14
+        },
+        {
+          "date": "2026-06-30",
+          "value": 12
+        }
+      ],
+      "current": 12,
+      "thresholds": {
+        "green": ">=12 stable/increasing",
+        "yellow": "10-11",
+        "red": "<10"
+      }
+    },
+    {
+      "name": "Liquidity",
+      "history": [
+        {
+          "date": "2026-06-30",
+          "value": 565,
+          "unit": "USDm approx total cash balances + marketables"
+        }
+      ],
+      "current": 565,
+      "thresholds": {
+        "green": ">$450m and >=36-month runway",
+        "yellow": "$300-450m or accelerating burn",
+        "red": "<$300m with financing before major de-risking"
+      }
+    },
+    {
+      "name": "Economic diluted share growth",
+      "history": [
+        {
+          "date": "2026-06-30",
+          "value": 354.41,
+          "unit": "million at $11.32 treasury-stock method"
+        }
+      ],
+      "current": 354.41,
+      "thresholds": {
+        "green": "<5%/yr",
+        "yellow": "5-8%/yr",
+        "red": ">8%/yr"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.25,
+      "fair_value": 2.62,
+      "equity_value_bn": 0.905,
+      "diluted_shares_m": 345,
+      "revenue_path": [
+        {
+          "year": 2026,
+          "range_m": [
+            20,
+            30
+          ]
+        },
+        {
+          "year": 2027,
+          "range_m": [
+            20,
+            35
+          ]
+        },
+        {
+          "year": 2028,
+          "range_m": [
+            20,
+            40
+          ]
+        },
+        {
+          "year": 2029,
+          "range_m": [
+            20,
+            40
+          ]
+        }
+      ],
+      "margin_path": [
+        {
+          "metric": "gross_margin",
+          "range": [
+            0.65,
+            0.85
+          ],
+          "note": "collaboration mix; decision-useful metric is operating burn"
+        }
+      ],
+      "fcf": [
+        {
+          "year": 2027,
+          "range_m": [
+            -200,
+            -140
+          ]
+        },
+        {
+          "year": 2028,
+          "range_m": [
+            -200,
+            -140
+          ]
+        },
+        {
+          "year": 2029,
+          "range_m": [
+            -200,
+            -140
+          ]
+        }
+      ],
+      "formation_conditions": [
+        "ABCL635 follow-up efficacy/durability weakens",
+        "partner progressing programs <30",
+        "ABCL575 PK differentiation fails"
+      ],
+      "break_conditions": [
+        "ABCL635 durability and Phase 3 path clarify",
+        "partner program count stabilizes"
+      ]
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "fair_value": 8.42,
+      "equity_value_bn": 2.948,
+      "diluted_shares_m": 350,
+      "revenue_path": [
+        {
+          "year": 2026,
+          "range_m": [
+            25,
+            35
+          ]
+        },
+        {
+          "year": 2027,
+          "range_m": [
+            35,
+            55
+          ]
+        },
+        {
+          "year": 2028,
+          "range_m": [
+            40,
+            70
+          ]
+        },
+        {
+          "year": 2029,
+          "range_m": [
+            45,
+            90
+          ]
+        }
+      ],
+      "margin_path": [
+        {
+          "metric": "gross_margin",
+          "range": [
+            0.7,
+            0.9
+          ],
+          "note": "not a primary valuation anchor due lumpy collaboration revenue"
+        }
+      ],
+      "fcf": [
+        {
+          "year": 2027,
+          "range_m": [
+            -190,
+            -130
+          ]
+        },
+        {
+          "year": 2028,
+          "range_m": [
+            -190,
+            -130
+          ]
+        },
+        {
+          "year": 2029,
+          "range_m": [
+            -190,
+            -130
+          ]
+        }
+      ],
+      "formation_conditions": [
+        "ABCL635 Phase 3 path advances with monthly dosing",
+        "35 partner programs broadly stable",
+        "ABCL575 Phase 1 supports long-half-life thesis"
+      ],
+      "break_conditions": [
+        "ABCL635 efficacy/safety falls below threshold",
+        "underlying burn > plan",
+        "partner attrition accelerates"
+      ]
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.25,
+      "fair_value": 17.73,
+      "equity_value_bn": 6.382,
+      "diluted_shares_m": 360,
+      "revenue_path": [
+        {
+          "year": 2026,
+          "range_m": [
+            30,
+            45
+          ]
+        },
+        {
+          "year": 2027,
+          "range_m": [
+            50,
+            80
+          ]
+        },
+        {
+          "year": 2028,
+          "range_m": [
+            70,
+            120
+          ]
+        },
+        {
+          "year": 2029,
+          "range_m": [
+            100,
+            200
+          ]
+        }
+      ],
+      "margin_path": [
+        {
+          "metric": "long_run_owned_drug_gross_margin",
+          "range": [
+            0.7,
+            0.85
+          ],
+          "note": "subject to 600mg biologic COGS validation"
+        }
+      ],
+      "fcf": [
+        {
+          "year": 2027,
+          "range_m": [
+            -190,
+            -120
+          ]
+        },
+        {
+          "year": 2028,
+          "range_m": [
+            -180,
+            -100
+          ]
+        },
+        {
+          "year": 2029,
+          "range_m": [
+            -150,
+            -50
+          ]
+        }
+      ],
+      "formation_conditions": [
+        "ABCL635 Phase 3 confirms strong effect",
+        "ABCL575 human PK strongly differentiated",
+        "Jazz/Vertex options or new top-tier deals convert"
+      ],
+      "break_conditions": [
+        "payer friction offsets efficacy",
+        "long-term safety requires burdensome monitoring"
+      ]
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.1,
+      "fair_value": 31.66,
+      "equity_value_bn": 11.872,
+      "diluted_shares_m": 375,
+      "revenue_path": [
+        {
+          "year": 2026,
+          "range_m": [
+            35,
+            50
+          ]
+        },
+        {
+          "year": 2027,
+          "range_m": [
+            70,
+            120
+          ]
+        },
+        {
+          "year": 2028,
+          "range_m": [
+            120,
+            250
+          ]
+        },
+        {
+          "year": 2029,
+          "range_m": [
+            250,
+            500
+          ]
+        }
+      ],
+      "margin_path": [
+        {
+          "metric": "long_run_operating_leverage",
+          "range": [
+            0.2,
+            0.35
+          ],
+          "note": "requires owned-product commercialization and repeated platform monetization"
+        }
+      ],
+      "fcf": [
+        {
+          "year": 2027,
+          "range_m": [
+            -180,
+            -100
+          ]
+        },
+        {
+          "year": 2028,
+          "range_m": [
+            -140,
+            -50
+          ]
+        },
+        {
+          "year": 2029,
+          "range_m": [
+            -50,
+            50
+          ]
+        }
+      ],
+      "formation_conditions": [
+        "ABCL635 becomes multi-billion-dollar franchise",
+        "at least one second owned asset de-risks",
+        "platform deal engine repeats across TCE/complex membrane targets"
+      ],
+      "break_conditions": [
+        "two of three value pillars fail to validate"
+      ]
+    }
+  ],
+  "valuation": {
+    "mode": "Mode A/B Hybrid - Expectation-Driven v3.3 + SOTP/rNPV + Reverse Expectations",
+    "discount_rate": 0.12,
+    "current_price": 11.32,
+    "core": {
+      "base_platform_bn": 0.5,
+      "base_net_resources_credit_bn": 0.6
+    },
+    "execution": {
+      "base_abcl635_rnpv_bn": 1.4109,
+      "base_abcl575_rnpv_bn": 0.1875,
+      "base_other_owned_bn": 0.1,
+      "base_partnered_bn": 0.45
+    },
+    "ecosystem": {
+      "base_bn": 0.0,
+      "bull_execution_bn": 0.2,
+      "bull_ecosystem_bn": 0.9
+    },
+    "drag": {
+      "base_bn": -0.3
+    },
+    "expected_value": 11.6233,
+    "expected_irr_3y_rollforward": 0.1299,
+    "base_fair_value": 8.42,
+    "bear_fair_value": 2.62,
+    "bull_execution_fair_value": 17.73,
+    "bull_ecosystem_fair_value": 31.66,
+    "upside_downside_ratio_current": 0.7368,
+    "reference_hurdle_range": [
+      0.1,
+      0.15
+    ]
+  },
+  "reverse_expectations": {
+    "current_economic_fd_equity_value_bn": 4.0119,
+    "base_non_abcl635_value_bn": 1.5375,
+    "implied_abcl635_value_bn": 2.4745,
+    "required_peak_sales_bn_by_pos": {
+      "0.35": 7.89,
+      "0.45": 6.14,
+      "0.55": 5.02,
+      "0.65": 4.25
+    },
+    "required_pos_if_peak_sales_4bn": 0.691,
+    "required_pos_if_peak_sales_5bn": 0.552,
+    "interpretation": "At current price, ABCL635 must be both materially de-risked and commercially very large unless non-635 value is materially higher than Base."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_m": 25.25,
+      "eps": -0.66
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_m": 25.01,
+      "note": "public aggregate; limited detail"
+    },
+    "revision_trend": "ABCL635 Phase 2 prompted large post-readout price-target increases; public avg target ~17.13, median 15, range 9-30."
+  },
+  "positioning": {
+    "short_interest_2026_07_31_m": 48.3185,
+    "short_percent_float": 22.01,
+    "days_to_cover": 9.66,
+    "founder_beneficial_ownership_pct_proxy_2026": 20.9,
+    "baker_bros_ownership_pct_proxy_2026": 9.1
+  },
+  "stance": {
+    "zone": "WATCH / AVOID CHASING at current price",
+    "price_bands": {
+      "active_interest": "<=7.6",
+      "conditional_interest": "7.6-8.7",
+      "watch": "8.7-10.0",
+      "avoid_chasing": "10.0-13.0",
+      "success_priced": ">13.0"
+    },
+    "horizon": "3 years for expected-return framework; clinical/commercial value extends longer",
+    "current_price": 11.32,
+    "rationale": "Probability-weighted fair value is near current, but Base fair value is below current and Bull Execution/Bear U/D is <1."
+  },
+  "catalysts": [
+    {
+      "when": "Q4 2026",
+      "event": "ABCL575 Phase 1 topline",
+      "sensitivity": "Very high - second owned-asset repeatability test"
+    },
+    {
+      "when": "Date TBD / next material update",
+      "event": "ABCL635 regulatory path and Phase 3 design",
+      "sensitivity": "Very high"
+    },
+    {
+      "when": "1H 2027 around contractual window",
+      "event": "Jazz third-program progress / additional $28m structure",
+      "sensitivity": "Medium"
+    },
+    {
+      "when": "2027",
+      "event": "ABCL688 Phase 1/2 initiation target",
+      "sensitivity": "Medium"
+    },
+    {
+      "when": "2027",
+      "event": "ABCL386 Phase 1/2 initiation target",
+      "sensitivity": "Medium"
+    },
+    {
+      "when": "Quarterly",
+      "event": "Partner program count, clinical molecule count, cash/R&D/SBC",
+      "sensitivity": "Medium to high"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "0,2"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "1"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "1.4,3.4"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "3.2-3.4,5.2"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.5-3.6,5.3"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.7,5.4"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "1.3,3.7"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1.2-1.3,3.8"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "1,3.4"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "2"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE_WITH_CF_CEILING",
+      "h3_locator": "4"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "4.4-4.5,5"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.8"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "5.9,6"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "5"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "6"
+    }
+  ],
+  "visual_lineage": [
+    {
+      "visual_id": "V01",
+      "title": "Scenario fair value vs current price",
+      "source_fields": [
+        "scenarios[].fair_value",
+        "valuation.current_price"
+      ]
+    },
+    {
+      "visual_id": "V02",
+      "title": "Partner program attrition",
+      "source_fields": [
+        "kpis[1].history",
+        "kpis[2].history"
+      ]
+    },
+    {
+      "visual_id": "V03",
+      "title": "Latest 8Q revenue and R&D",
+      "source_fields": [
+        "financials.quarterly_8q"
+      ]
+    },
+    {
+      "visual_id": "V04",
+      "title": "Reverse expectations required peak sales",
+      "source_fields": [
+        "reverse_expectations.required_peak_sales_bn_by_pos"
+      ]
+    }
+  ],
+  "source_register": [
+    {
+      "tier": "primary",
+      "name": "AbCellera 2025 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1703057/000170305726000012/abcl-20251231.htm"
+    },
+    {
+      "tier": "primary",
+      "name": "AbCellera Q2 2026 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1703057/000170305726000046/abcl-20260630.htm"
+    },
+    {
+      "tier": "primary",
+      "name": "AbCellera Q2 2026 earnings 8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1703057/000170305726000044/abcl-20260805.htm"
+    },
+    {
+      "tier": "primary",
+      "name": "ABCL635 Phase 2 topline",
+      "url": "https://investors.abcellera.com/news/news-releases/2026/AbCellera-Announces-Positive-Top-Line-Phase-2-Clinical-Trial-Results-for-ABCL635-Demonstrating-Significant-Reduction-in-Frequency-and-Severity-of-Vasomotor-Symptoms-and-a-Favorable-Tolerability-Profile/default.aspx"
+    },
+    {
+      "tier": "primary",
+      "name": "AbCellera platform",
+      "url": "https://www.abcellera.com/platform"
+    },
+    {
+      "tier": "base-rate",
+      "name": "BIO/Informa/QLS Clinical Development Success Rates 2011-2020",
+      "url": "https://go.bio.org/rs/490-EHZ-999/images/ClinicalDevelopmentSuccessRates2011_2020.pdf"
+    },
+    {
+      "tier": "primary",
+      "name": "FDA VEOZAH / LYNKUET / 2026 menopausal hormone therapy materials",
+      "url": "https://www.fda.gov/"
+    }
+  ],
+  "quality_gates": {
+    "RC_UNRESOLVED": 0,
+    "H1_H2_RESEARCH_CONTRACT_COMPLETENESS": "PASS",
+    "H2_H3_COVERAGE_LINEAGE": "PASS",
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "REPORT_DATA_PACK": "EMITTED"
+  }
+}

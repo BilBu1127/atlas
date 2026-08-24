@@ -1,0 +1,1314 @@
+{
+  "meta": {
+    "ticker": "ROK",
+    "company": "Rockwell Automation, Inc.",
+    "T0": "2026-08-23",
+    "price_asof": "2026-08-21",
+    "filing_asof": "2026-08-04 Q3 FY2026 10-Q",
+    "consensus_asof": "2026-08-20/21 public aggregation",
+    "version": "DDOS v1.6.2.2 Production"
+  },
+  "financials": {
+    "annual_3y": {
+      "FY2023": {
+        "sales_m": 9058,
+        "adjusted_eps": 12.12,
+        "fcf_m": 1214,
+        "diluted_shares_m": 115.6
+      },
+      "FY2024": {
+        "sales_m": 8264,
+        "organic_sales_growth": -0.1,
+        "adjusted_eps": 9.71,
+        "fcf_m": 639,
+        "diluted_shares_m": 114.5,
+        "arr_growth": 0.16
+      },
+      "FY2025": {
+        "sales_m": 8342,
+        "organic_sales_growth": 0.01,
+        "adjusted_eps": 10.53,
+        "fcf_m": 1358,
+        "diluted_shares_m": 113.1,
+        "arr_growth": 0.08
+      }
+    },
+    "FY2026_guide": {
+      "sales_midpoint_m": 9000,
+      "organic_growth_low": 0.075,
+      "organic_growth_high": 0.095,
+      "adjusted_eps_low": 13.0,
+      "adjusted_eps_high": 13.3
+    },
+    "quarterly_8q": {
+      "periods": [
+        "Q4 FY24",
+        "Q1 FY25",
+        "Q2 FY25",
+        "Q3 FY25",
+        "Q4 FY25",
+        "Q1 FY26",
+        "Q2 FY26",
+        "Q3 FY26"
+      ],
+      "total_sales_m": [
+        2035,
+        1881,
+        2001,
+        2144,
+        2316,
+        2105,
+        2239,
+        2313
+      ],
+      "segment_sales_m": {
+        "Intelligent Devices": [
+          946,
+          806,
+          896,
+          968,
+          1086,
+          953,
+          1008,
+          1080
+        ],
+        "Software & Control": [
+          501,
+          529,
+          568,
+          629,
+          657,
+          629,
+          684,
+          751
+        ],
+        "Lifecycle Services": [
+          588,
+          546,
+          537,
+          547,
+          573,
+          523,
+          547,
+          482
+        ]
+      },
+      "segment_margin_pct": {
+        "Intelligent Devices": [
+          20.7,
+          14.9,
+          17.7,
+          18.8,
+          19.8,
+          17.3,
+          20.9,
+          20.0
+        ],
+        "Software & Control": [
+          22.4,
+          25.1,
+          30.1,
+          31.6,
+          31.2,
+          31.2,
+          34.9,
+          34.8
+        ],
+        "Lifecycle Services": [
+          17.2,
+          12.5,
+          14.5,
+          13.3,
+          17.5,
+          14.1,
+          14.6,
+          15.1
+        ]
+      }
+    },
+    "cash_m": 479,
+    "short_term_debt_m": 688,
+    "long_term_debt_m": 2570,
+    "net_debt_m": 2779,
+    "9M_FY26": {
+      "ocf_m": 1278,
+      "capex_m": 179,
+      "fcf_m": 1099
+    },
+    "ceilings": [
+      "Exact quarterly organic sales by every vertical not continuously disclosed",
+      "Software-only revenue/margin within Software & Control not separately disclosed"
+    ]
+  },
+  "kpis": [
+    {
+      "name": "Organic sales growth",
+      "history": [
+        {
+          "period": "Q3 FY26",
+          "value": 0.1
+        }
+      ],
+      "current": 0.1,
+      "thresholds": {
+        "green": ">=6%",
+        "yellow": "2%~6%",
+        "red": "<2% for two quarters"
+      }
+    },
+    {
+      "name": "Total ARR growth",
+      "history": [
+        {
+          "period": "FY24",
+          "value": 0.16
+        },
+        {
+          "period": "FY25",
+          "value": 0.08
+        },
+        {
+          "period": "Q1 FY26",
+          "value": 0.07
+        },
+        {
+          "period": "Q2 FY26",
+          "value": 0.06
+        },
+        {
+          "period": "Q3 FY26",
+          "value": 0.06
+        }
+      ],
+      "current": 0.06,
+      "thresholds": {
+        "green": ">=8%",
+        "yellow": "5%~8%",
+        "red": "<5%"
+      }
+    },
+    {
+      "name": "Software & Control segment margin",
+      "history": [
+        {
+          "period": "Q4 FY24",
+          "value": 0.22399999999999998
+        },
+        {
+          "period": "Q1 FY25",
+          "value": 0.251
+        },
+        {
+          "period": "Q2 FY25",
+          "value": 0.301
+        },
+        {
+          "period": "Q3 FY25",
+          "value": 0.316
+        },
+        {
+          "period": "Q4 FY25",
+          "value": 0.312
+        },
+        {
+          "period": "Q1 FY26",
+          "value": 0.312
+        },
+        {
+          "period": "Q2 FY26",
+          "value": 0.349
+        },
+        {
+          "period": "Q3 FY26",
+          "value": 0.348
+        }
+      ],
+      "current": 0.348,
+      "thresholds": {
+        "green": ">=32%",
+        "yellow": "29%~32%",
+        "red": "<29%"
+      }
+    },
+    {
+      "name": "Intelligent Devices margin",
+      "current": 0.2,
+      "thresholds": {
+        "green": ">=20%",
+        "yellow": "18%~20%",
+        "red": "<18%"
+      }
+    },
+    {
+      "name": "FCF conversion",
+      "current": null,
+      "thresholds": {
+        "green": ">=95% annual",
+        "yellow": "80%~95%",
+        "red": "<80% annual"
+      }
+    },
+    {
+      "name": "Diluted share count YoY",
+      "current": -0.012,
+      "thresholds": {
+        "green": "<=-1%",
+        "yellow": "-1%~+1%",
+        "red": ">+1%"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.3,
+      "fy29_revenue": 9900,
+      "revenue_cagr": 0.032,
+      "fy29_fcf": 1650,
+      "fcf_margin": 0.167,
+      "fy29_adj_eps": 15.0,
+      "diluted_shares": 109.5,
+      "exit_pe": 22.0,
+      "per_share_value": 330,
+      "cumulative_dividend": 18,
+      "formation": "산업 회복 둔화, ARR 5% 이하, S&C 마진 30% 안팎으로 정상화, greenfield/retrofit 지연",
+      "scenario_irr": -0.07315715170363146
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "fy29_revenue": 10800,
+      "revenue_cagr": 0.063,
+      "fy29_fcf": 1950,
+      "fcf_margin": 0.181,
+      "fy29_adj_eps": 18.0,
+      "diluted_shares": 108.0,
+      "exit_pe": 26.0,
+      "per_share_value": 468,
+      "cumulative_dividend": 18,
+      "formation": "mid-single digit+ organic growth, S&C 32~34% 마진, ID 21~22%, FCF conversion ~100%, 완만한 순주식수 감소",
+      "scenario_irr": 0.035996873938974217
+    },
+    {
+      "name": "Up",
+      "probability": 0.2,
+      "fy29_revenue": 11400,
+      "revenue_cagr": 0.082,
+      "fy29_fcf": 2200,
+      "fcf_margin": 0.193,
+      "fy29_adj_eps": 20.5,
+      "diluted_shares": 106.5,
+      "exit_pe": 30.0,
+      "per_share_value": 615,
+      "cumulative_dividend": 18,
+      "formation": "반도체/데이터센터/warehouse + broad automation 동시 강세, software attach 가속, margin target 상단 이상 지속",
+      "scenario_irr": 0.1313950089005811
+    }
+  ],
+  "valuation": {
+    "mode": "Mode C Mature Compounder + cyclical overlay",
+    "current_price": 437.08,
+    "market_cap_m": 48537.2,
+    "enterprise_value_m": 51316.2,
+    "fy26_adjusted_pe_midpoint": 33.2,
+    "weighted_future_value_including_dividends": 474.0,
+    "expected_irr_probability_weighted": 0.022330293238513887,
+    "up_down_ratio": 1.6615614493836388,
+    "hurdle": 0.12,
+    "base_value": 468,
+    "down_value": 330,
+    "up_value": 615,
+    "dividend_assumption": {
+      "quarterly_current": 1.38,
+      "annual_run_rate": 5.52,
+      "three_year_cumulative_assumption": 18,
+      "state": "ASSUMPTION",
+      "source": "S21"
+    },
+    "valuation_band_history": {
+      "ttm_gaap_pe": {
+        "Sep23": 22.84,
+        "Sep24": 31.55,
+        "Sep25": 45.11,
+        "Jun26": 46.36
+      },
+      "price_to_sales": {
+        "Sep23": 3.48,
+        "Sep24": 3.62,
+        "Sep25": 4.7,
+        "Jul26": 5.93
+      },
+      "comparability_note": "Historical P/E is GAAP TTM; current 33.2x is FY26 forward adjusted P/E. Use only as broad context, not direct like-for-like comparison.",
+      "pe_source": "S22",
+      "ps_source": "S24"
+    }
+  },
+  "reverse_expectations": {
+    "current_price_interpretation": "At ~33.2x FY26 adjusted EPS midpoint, the market requires a durable high-quality automation compounder rather than a one-year cyclical rebound.",
+    "operating_hurdles": [
+      "organic growth roughly mid/high-single digit over cycle",
+      "Software & Control margin sustained around 32-34%",
+      "ARR re-accelerates toward high-single digits rather than falling below 5%",
+      "FCF conversion near 100% over cycle",
+      "share count continues modest decline without balance-sheet stress"
+    ]
+  },
+  "consensus": {
+    "fy26": {
+      "sales_m": 9050,
+      "eps": 13.21
+    },
+    "fy27": {
+      "sales_m": 9550,
+      "eps": 14.83
+    },
+    "target_price": {
+      "low": 282,
+      "average": 477.79,
+      "median": 495,
+      "high": 550
+    },
+    "rating": "Buy / Outperform aggregate",
+    "revision_trend": "FY26 guidance and estimates revised upward through Q3; valuation remains elevated"
+  },
+  "stance": {
+    "zone": "신규매수 보류 / 보유자 관망",
+    "price_bands": {
+      "strong_interest": "<=350",
+      "conditional_interest": "350-390",
+      "neutral": "390-430",
+      "valuation_heavy": ">430"
+    },
+    "horizon": "3 years",
+    "reference_matrix": "expected IRR below 12% hurdle -> avoid/reduce",
+    "override_rationale": "ROK의 높은 사업 질과 설치기반, 낮지 않은 downside support를 감안해 신규매수 보류/보유자 관망으로 완화. 단, 추가매수는 가격 또는 실적상향이 필요."
+  },
+  "catalysts": [
+    {
+      "when": "2026-11 (expected)",
+      "event": "FY26 Q4/full-year results and FY27 initial guide",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2027-02 (expected)",
+      "event": "FY27 Q1 earnings / order and ARR trajectory",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2027-05 (expected)",
+      "event": "FY27 Q2 earnings / margin and FCF conversion",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2027-08 (expected)",
+      "event": "FY27 Q3 earnings / vertical breadth and New Berlin progress",
+      "sensitivity": "Medium-High"
+    },
+    {
+      "when": "2026-27",
+      "event": "New Berlin / $2B U.S. investment permitting and execution milestones",
+      "sensitivity": "Medium"
+    }
+  ],
+  "ownership_denominator": {
+    "current_common_shares_outstanding_m": 111.048676,
+    "q3_fy26_diluted_weighted_avg_m": 111.6,
+    "fy23_diluted_weighted_avg_m": 115.6,
+    "fy24_diluted_weighted_avg_m": 114.5,
+    "fy25_diluted_weighted_avg_m": 113.1,
+    "9m_fy26_repurchases_m_shares": 2.0,
+    "9m_fy26_repurchases_cost_m": 754,
+    "remaining_authorization_m": 1173,
+    "sbc_9m_fy26_m": 69,
+    "forecast_range_m": {
+      "Down": 109.5,
+      "Base": 108.0,
+      "Up": 106.5
+    },
+    "status": "PASS — scenario ranges rather than assuming constant buyback pace"
+  },
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "promise": "회사 역사·포트폴리오 진화·Plex/Fiix/Clearpath/CUBIC/Sensia가 현재 경제구조를 어떻게 바꿨는지 재구성",
+      "status": "COMPLETE",
+      "primary_evidence": "S01,S06",
+      "counter_evidence": "retained where material",
+      "material_unknown": "none material beyond disclosed uncertainty",
+      "canonical_chapter": "Ch.3 §3.1 / App.A5",
+      "h3_treatment": "MAIN",
+      "h3_locator": "Ch.3 §3.1 / App.A5"
+    },
+    {
+      "rc_id": "RC-002",
+      "promise": "산업 value chain, profit pool, lifecycle, 진입장벽, cycle history와 현재 위치",
+      "status": "COMPLETE",
+      "primary_evidence": "S01,S10,S11,S12,S13-S15",
+      "counter_evidence": "retained where material",
+      "material_unknown": "none material beyond disclosed uncertainty",
+      "canonical_chapter": "Ch.1 §1.1-1.3",
+      "h3_treatment": "MAIN",
+      "h3_locator": "Ch.1 §1.1-1.3"
+    },
+    {
+      "rc_id": "RC-003",
+      "promise": "vertical별 3–5Y forward external driver bottom-up 검증",
+      "status": "COMPLETE",
+      "primary_evidence": "S03,S05,S10-S15",
+      "counter_evidence": "retained where material",
+      "material_unknown": "none material beyond disclosed uncertainty",
+      "canonical_chapter": "Ch.1 §1.4 / Ch.5 §5.2",
+      "h3_treatment": "MAIN",
+      "h3_locator": "Ch.1 §1.4 / Ch.5 §5.2"
+    },
+    {
+      "rc_id": "RC-004",
+      "promise": "installed base, architecture decision, switching cost, PartnerNetwork와 capture mechanism",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "primary_evidence": "S01,S08; exact active installed base/attach rates not disclosed",
+      "counter_evidence": "retained where material",
+      "material_unknown": "explicit in H3",
+      "canonical_chapter": "Ch.1 §1.5 / Ch.3 §3.5",
+      "h3_treatment": "EXPLICIT_CEILING",
+      "h3_locator": "Ch.1 §1.5 / Ch.3 §3.5"
+    },
+    {
+      "rc_id": "RC-005",
+      "promise": "Intelligent Devices 제품 stack과 orders→units→ASP/mix→margin 구조 및 경쟁",
+      "status": "COMPLETE",
+      "primary_evidence": "S01,S03,S08 + competitor primary",
+      "counter_evidence": "retained where material",
+      "material_unknown": "none material beyond disclosed uncertainty",
+      "canonical_chapter": "Ch.3 §3.2",
+      "h3_treatment": "MAIN",
+      "h3_locator": "Ch.3 §3.2"
+    },
+    {
+      "rc_id": "RC-006",
+      "promise": "Software & Control을 control hardware와 true software/ARR로 분해하고 recurring economics 검증",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "primary_evidence": "S01,S03,S08; renewal/retention/ARPU and pure-software mix ceiling",
+      "counter_evidence": "retained where material",
+      "material_unknown": "explicit in H3",
+      "canonical_chapter": "Ch.3 §3.3 / Ch.4 §4.3",
+      "h3_treatment": "EXPLICIT_CEILING",
+      "h3_locator": "Ch.3 §3.3 / Ch.4 §4.3"
+    },
+    {
+      "rc_id": "RC-007",
+      "promise": "Lifecycle Services book-to-bill / project-service / attach / repeat economics 검증",
+      "status": "COMPLETE",
+      "primary_evidence": "S03-S06; exact attach/repeat cohort economics ceiling",
+      "counter_evidence": "retained where material",
+      "material_unknown": "none material beyond disclosed uncertainty",
+      "canonical_chapter": "Ch.3 §3.4 / Ch.4 §4.2",
+      "h3_treatment": "MAIN",
+      "h3_locator": "Ch.3 §3.4 / Ch.4 §4.2"
+    },
+    {
+      "rc_id": "RC-008",
+      "promise": "CUBIC/data-center와 OTTO/Clearpath AMR의 stage, adoption, unit economics, materiality",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "primary_evidence": "S03,S08,S09; AMR unit economics/deployment counts ceiling",
+      "counter_evidence": "retained where material",
+      "material_unknown": "explicit in H3",
+      "canonical_chapter": "Ch.3 §3.6-3.7",
+      "h3_treatment": "EXPLICIT_CEILING",
+      "h3_locator": "Ch.3 §3.6-3.7"
+    },
+    {
+      "rc_id": "RC-009",
+      "promise": "고객/계약/adoption ladder를 order→delivery→commissioning→usage→repeat로 구축",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "primary_evidence": "company/customer case evidence; contract-stage quantities ceiling",
+      "counter_evidence": "retained where material",
+      "material_unknown": "explicit in H3",
+      "canonical_chapter": "Ch.3 §3.8 / App.A4",
+      "h3_treatment": "EXPLICIT_CEILING",
+      "h3_locator": "Ch.3 §3.8 / App.A4"
+    },
+    {
+      "rc_id": "RC-010",
+      "promise": "경쟁을 customer job별로 Siemens/Schneider/ABB/Emerson/Honeywell 등과 비교",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "primary_evidence": "peer/product primary; apples-to-apples price/TCO ceiling",
+      "counter_evidence": "retained where material",
+      "material_unknown": "explicit in H3",
+      "canonical_chapter": "Ch.3 §3.9 / App.A3",
+      "h3_treatment": "EXPLICIT_CEILING",
+      "h3_locator": "Ch.3 §3.9 / App.A3"
+    },
+    {
+      "rc_id": "RC-011",
+      "promise": "Blake Moret 및 핵심 경영진 track record와 Promise→Delivery",
+      "status": "COMPLETE",
+      "primary_evidence": "S01,S06,S07,S19,S20",
+      "counter_evidence": "retained where material",
+      "material_unknown": "none material beyond disclosed uncertainty",
+      "canonical_chapter": "Ch.2 §2.1-2.3",
+      "h3_treatment": "MAIN",
+      "h3_locator": "Ch.2 §2.1-2.3"
+    },
+    {
+      "rc_id": "RC-012",
+      "promise": "보상·소유·이사회·M&A·capital allocation·배당/자사주",
+      "status": "COMPLETE",
+      "primary_evidence": "S02,S07",
+      "counter_evidence": "retained where material",
+      "material_unknown": "none material beyond disclosed uncertainty",
+      "canonical_chapter": "Ch.2 §2.4-2.6",
+      "h3_treatment": "MAIN",
+      "h3_locator": "Ch.2 §2.4-2.6"
+    },
+    {
+      "rc_id": "RC-013",
+      "promise": "최신 3Y + continuous latest 8Q financial factory",
+      "status": "COMPLETE",
+      "primary_evidence": "S01-S06,S19",
+      "counter_evidence": "retained where material",
+      "material_unknown": "none material beyond disclosed uncertainty",
+      "canonical_chapter": "Ch.4 §4.1-4.5 / App.A2",
+      "h3_treatment": "MAIN + APPENDIX",
+      "h3_locator": "Ch.4 §4.1-4.5 / App.A2"
+    },
+    {
+      "rc_id": "RC-014",
+      "promise": "Earnings Quality Screen",
+      "status": "COMPLETE",
+      "primary_evidence": "S01,S02,S03,S06",
+      "counter_evidence": "retained where material",
+      "material_unknown": "none material beyond disclosed uncertainty",
+      "canonical_chapter": "Ch.4 §4.6",
+      "h3_treatment": "MAIN",
+      "h3_locator": "Ch.4 §4.6"
+    },
+    {
+      "rc_id": "RC-015",
+      "promise": "cash/debt/pension/liquidity/refinancing와 capital capacity",
+      "status": "COMPLETE",
+      "primary_evidence": "S02",
+      "counter_evidence": "retained where material",
+      "material_unknown": "none material beyond disclosed uncertainty",
+      "canonical_chapter": "Ch.4 §4.7",
+      "h3_treatment": "MAIN",
+      "h3_locator": "Ch.4 §4.7"
+    },
+    {
+      "rc_id": "RC-016",
+      "promise": "current shares→SBC→M&A→buybacks→forecast diluted shares lineage",
+      "status": "COMPLETE",
+      "primary_evidence": "S02,S07 + 3Y share history",
+      "counter_evidence": "retained where material",
+      "material_unknown": "none material beyond disclosed uncertainty",
+      "canonical_chapter": "Ch.4 §4.8 / Ch.5",
+      "h3_treatment": "MAIN",
+      "h3_locator": "Ch.4 §4.8 / Ch.5"
+    },
+    {
+      "rc_id": "RC-017",
+      "promise": "manufacturing footprint, $2B plan, New Berlin, capacity/supply chain/tariff ROI path",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "primary_evidence": "S02,S09; site-by-site capacity and $2B project IRR ceiling",
+      "counter_evidence": "retained where material",
+      "material_unknown": "explicit in H3",
+      "canonical_chapter": "Ch.3 §3.10 / Ch.4",
+      "h3_treatment": "EXPLICIT_CEILING",
+      "h3_locator": "Ch.3 §3.10 / Ch.4"
+    },
+    {
+      "rc_id": "RC-018",
+      "promise": "3–7 causally-linked KPI history and thresholds",
+      "status": "COMPLETE",
+      "primary_evidence": "S01-S06",
+      "counter_evidence": "retained where material",
+      "material_unknown": "none material beyond disclosed uncertainty",
+      "canonical_chapter": "Ch.6 §6.4",
+      "h3_treatment": "MAIN",
+      "h3_locator": "Ch.6 §6.4"
+    },
+    {
+      "rc_id": "RC-019",
+      "promise": "consensus/revisions/PT/short interest/ownership/insider/valuation-band context",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "primary_evidence": "S16-S18; complete FY1/FY2 + PT/short; full FY3/13F change granularity ceiling",
+      "counter_evidence": "retained where material",
+      "material_unknown": "explicit in H3",
+      "canonical_chapter": "Ch.0 / Ch.5 §5.7 / App.A6",
+      "h3_treatment": "MAIN + APPENDIX",
+      "h3_locator": "Ch.0 / Ch.5 §5.7 / App.A6"
+    },
+    {
+      "rc_id": "RC-020",
+      "promise": "Driver→Capture→Native Unit→Economic Output→Capital→Forecast→Per-share bridge + reverse expectations",
+      "status": "COMPLETE",
+      "primary_evidence": "RC-003~019 evidence-based ranges",
+      "counter_evidence": "retained where material",
+      "material_unknown": "none material beyond disclosed uncertainty",
+      "canonical_chapter": "Ch.5 §5.2-5.6 / App.A7",
+      "h3_treatment": "MAIN + APPENDIX",
+      "h3_locator": "Ch.5 §5.2-5.6 / App.A7"
+    },
+    {
+      "rc_id": "RC-021",
+      "promise": "rate/FX/input/tariff/geopolitical sensitivity and buffers",
+      "status": "COMPLETE",
+      "primary_evidence": "S01,S02,S03,S10",
+      "counter_evidence": "retained where material",
+      "material_unknown": "none material beyond disclosed uncertainty",
+      "canonical_chapter": "Ch.1 §1.6 / Ch.6",
+      "h3_treatment": "MAIN",
+      "h3_locator": "Ch.1 §1.6 / Ch.6"
+    },
+    {
+      "rc_id": "RC-022",
+      "promise": "base-rate / pre-mortem / false-conservatism red team",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "primary_evidence": "cycle/peer evidence; formal statistical success-rate base rate ceiling",
+      "counter_evidence": "retained where material",
+      "material_unknown": "explicit in H3",
+      "canonical_chapter": "Ch.6 §6.3 / App.A8",
+      "h3_treatment": "EXPLICIT_CEILING",
+      "h3_locator": "Ch.6 §6.3 / App.A8"
+    }
+  ],
+  "source_registry": [
+    {
+      "id": "S01",
+      "name": "Rockwell Automation FY2025 Form 10-K",
+      "type": "company filing",
+      "as_of": "2025-09-30",
+      "url": "https://www.rockwellautomation.com/content/dam/rockwell-automation/documents/pdf/company/about-us/ir/2025/ROK-AR-2025-Final.pdf",
+      "use": "business model, segment history, FY23-FY25 financials, end-market mix, Sensia impairment"
+    },
+    {
+      "id": "S02",
+      "name": "Rockwell Automation Q3 FY2026 Form 10-Q",
+      "type": "SEC filing",
+      "as_of": "2026-06-30",
+      "url": "https://www.sec.gov/Archives/edgar/data/1024478/000102447826000030/rok-20260630.htm",
+      "use": "latest balance sheet, 9M cash flow, shares, SBC, debt, repurchases, RPO"
+    },
+    {
+      "id": "S03",
+      "name": "Rockwell Automation Q3 FY2026 Results",
+      "type": "company earnings",
+      "as_of": "2026-08-04",
+      "url": "https://www.rockwellautomation.com/en-us/company/news/press-releases/Rockwell-Automation-Reports-Third-Quarter-2026-Results.html",
+      "use": "Q3 sales, organic growth, ARR, segment margins, FY26 guidance"
+    },
+    {
+      "id": "S04",
+      "name": "Rockwell Automation Q2 FY2026 Results / Supplemental Data",
+      "type": "company earnings",
+      "as_of": "2026-05-05",
+      "url": "https://www.rockwellautomation.com/en-us/company/investor-relations/quarterly-reports.html",
+      "use": "Q2 FY26 segment and FCF data"
+    },
+    {
+      "id": "S05",
+      "name": "Rockwell Automation Q1 FY2026 Results / Supplemental Data",
+      "type": "company earnings",
+      "as_of": "2026-02-05",
+      "url": "https://www.rockwellautomation.com/en-us/company/investor-relations/quarterly-reports.html",
+      "use": "Q1 FY26 segment, ARR, FCF, vertical commentary"
+    },
+    {
+      "id": "S06",
+      "name": "Rockwell Automation FY2025 Full-Year Results",
+      "type": "company earnings",
+      "as_of": "2025-11-06",
+      "url": "https://www.rockwellautomation.com/en-us/company/news/press-releases/Rockwell-Automation-Reports-Fourth-Quarter-and-Full-Year-2025-Results-Introduces-Fiscal-2026-Guidance.html",
+      "use": "FY25 FCF, ARR, adjusted EPS, initial FY26 guide"
+    },
+    {
+      "id": "S07",
+      "name": "Rockwell Automation FY2026 Proxy Statement",
+      "type": "SEC proxy",
+      "as_of": "2025-12-18",
+      "url": "https://www.sec.gov/Archives/edgar/data/1024478/000130817925000665/rok014559-def14a.htm",
+      "use": "compensation, ownership, governance, incentive design"
+    },
+    {
+      "id": "S08",
+      "name": "Rockwell Automation 2025 Investor Day / Financial Framework",
+      "type": "company IR",
+      "as_of": "2025",
+      "url": "https://www.rockwellautomation.com/en-us/company/investor-relations.html",
+      "use": "medium-term segment margin ranges, capital allocation / FCF / ROIC framework"
+    },
+    {
+      "id": "S09",
+      "name": "Rockwell Automation U.S. manufacturing investment / New Berlin announcement",
+      "type": "company release",
+      "as_of": "2026-04-07",
+      "url": "https://www.rockwellautomation.com/en-us/company/news.html",
+      "use": "five-year $2B investment and New Berlin manufacturing site plan"
+    },
+    {
+      "id": "S10",
+      "name": "ISM July 2026 Manufacturing PMI",
+      "type": "industry primary",
+      "as_of": "2026-07",
+      "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/july/",
+      "use": "PMI, new orders, production, backlog, price/shortage signals"
+    },
+    {
+      "id": "S11",
+      "name": "Federal Reserve G.17 July 2026",
+      "type": "government primary",
+      "as_of": "2026-07",
+      "url": "https://www.federalreserve.gov/releases/g17/current/",
+      "use": "manufacturing output and capacity utilization"
+    },
+    {
+      "id": "S12",
+      "name": "U.S. Census Construction Spending June 2026",
+      "type": "government primary",
+      "as_of": "2026-06",
+      "url": "https://www.census.gov/construction/c30/current/index.html",
+      "use": "construction spending cycle cross-check"
+    },
+    {
+      "id": "S13",
+      "name": "Schneider Electric H1 2026 Results",
+      "type": "competitor primary",
+      "as_of": "2026-H1",
+      "url": "https://www.se.com/ww/en/about-us/investor-relations/",
+      "use": "North America / industrial automation and data-center demand cross-check"
+    },
+    {
+      "id": "S14",
+      "name": "Siemens Q3 FY2026 Results",
+      "type": "competitor primary",
+      "as_of": "2026-Q3",
+      "url": "https://www.siemens.com/global/en/company/investor-relations.html",
+      "use": "Digital Industries / data-center / orders cycle cross-check"
+    },
+    {
+      "id": "S15",
+      "name": "Emerson Q3 FY2026 Results",
+      "type": "competitor primary",
+      "as_of": "2026-Q3",
+      "url": "https://www.emerson.com/en-us/investors",
+      "use": "automation demand / order growth cross-check"
+    },
+    {
+      "id": "S16",
+      "name": "StockAnalysis ROK Analyst Forecast",
+      "type": "market secondary",
+      "as_of": "2026-08-20",
+      "url": "https://stockanalysis.com/stocks/rok/forecast/",
+      "use": "FY26/FY27 public consensus and target distribution"
+    },
+    {
+      "id": "S17",
+      "name": "MarketBeat ROK Short Interest",
+      "type": "market secondary",
+      "as_of": "2026-07-15",
+      "url": "https://www.marketbeat.com/stocks/NYSE/ROK/short-interest/",
+      "use": "short interest / days to cover"
+    },
+    {
+      "id": "S18",
+      "name": "Market price record",
+      "type": "market",
+      "as_of": "2026-08-21",
+      "url": "https://www.marketwatch.com/investing/stock/rok",
+      "use": "T0 close $437.08"
+    },
+    {
+      "id": "S19",
+      "name": "Rockwell FY2024 Annual Report",
+      "type": "company filing",
+      "as_of": "2024-09-30",
+      "url": "https://www.rockwellautomation.com/content/dam/rockwell-automation/documents/pdf/company/about-us/ir/2024/annual-report-on-form-10-K-2024.pdf",
+      "use": "FY24 downcycle, organic sales -10%, ARR, price/volume decomposition"
+    },
+    {
+      "id": "S20",
+      "name": "Rockwell historical annual reports / FY2023",
+      "type": "company filing",
+      "as_of": "2023-09-30",
+      "url": "https://www.rockwellautomation.com/en-us/company/investor-relations/annual-reports.html",
+      "use": "FY23 peak-cycle base and management calibration history"
+    },
+    {
+      "id": "S21",
+      "name": "Rockwell Automation quarterly dividend declaration",
+      "type": "company release",
+      "as_of": "2026-04-14",
+      "url": "https://www.rockwellautomation.com/en-us/company/news/press-releases/Rockwell-Automation-Declares-Quarterly-Dividend-at-1-38-Per-Share-on-Common-Stock-5cdc47019.html",
+      "use": "current quarterly dividend $1.38/share; basis for the explicit 3-year dividend assumption"
+    },
+    {
+      "id": "S22",
+      "name": "Macrotrends ROK historical P/E",
+      "type": "market secondary",
+      "as_of": "2026-08",
+      "url": "https://www.macrotrends.net/stocks/charts/ROK/rockwell-automation/pe-ratio",
+      "use": "historical GAAP TTM P/E context; not directly comparable with forward adjusted P/E"
+    },
+    {
+      "id": "S23",
+      "name": "Macrotrends ROK stock price history",
+      "type": "market secondary",
+      "as_of": "2026-08",
+      "url": "https://www.macrotrends.net/stocks/charts/ROK/rockwell-automation/stock-price-history",
+      "use": "event-annotated stock-price history and June 30 2026 all-time closing high"
+    },
+    {
+      "id": "S24",
+      "name": "Macrotrends ROK historical P/S",
+      "type": "market secondary",
+      "as_of": "2026-08",
+      "url": "https://www.macrotrends.net/stocks/charts/ROK/rockwell-automation/price-sales",
+      "use": "historical price-to-sales valuation-band cross-check"
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "VIS_ID": "VIS-001",
+      "FIGURE_TITLE": "최근 8개 분기 Segment Sales",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.quarterly_8q.segment_sales",
+      "SOURCE_VALUES": {
+        "Intelligent Devices": [
+          946,
+          806,
+          896,
+          968,
+          1086,
+          953,
+          1008,
+          1080
+        ],
+        "Software & Control": [
+          501,
+          529,
+          568,
+          629,
+          657,
+          629,
+          684,
+          751
+        ],
+        "Lifecycle Services": [
+          588,
+          546,
+          537,
+          547,
+          573,
+          523,
+          547,
+          482
+        ]
+      },
+      "SOURCE_VERSION_OR_HASH": "23bfbd37160640e1",
+      "DISPLAY_VALUES": {
+        "Intelligent Devices": [
+          946,
+          806,
+          896,
+          968,
+          1086,
+          953,
+          1008,
+          1080
+        ],
+        "Software & Control": [
+          501,
+          529,
+          568,
+          629,
+          657,
+          629,
+          684,
+          751
+        ],
+        "Lifecycle Services": [
+          588,
+          546,
+          537,
+          547,
+          573,
+          523,
+          547,
+          482
+        ]
+      },
+      "NARRATIVE_LOCATOR": "Ch.4 §4.1",
+      "TABLE_LOCATOR": "Appendix A2",
+      "CAPTION_LOCATOR": "Ch.4 §4.1",
+      "RENDERED_ASSET_LOCATOR": "vis001_8q_sales.png",
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-002",
+      "FIGURE_TITLE": "Segment Operating Margin",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.quarterly_8q.segment_margins",
+      "SOURCE_VALUES": {
+        "Intelligent Devices": [
+          20.7,
+          14.9,
+          17.7,
+          18.8,
+          19.8,
+          17.3,
+          20.9,
+          20.0
+        ],
+        "Software & Control": [
+          22.4,
+          25.1,
+          30.1,
+          31.6,
+          31.2,
+          31.2,
+          34.9,
+          34.8
+        ],
+        "Lifecycle Services": [
+          17.2,
+          12.5,
+          14.5,
+          13.3,
+          17.5,
+          14.1,
+          14.6,
+          15.1
+        ]
+      },
+      "SOURCE_VERSION_OR_HASH": "1da50241e1ff32d3",
+      "DISPLAY_VALUES": {
+        "Intelligent Devices": [
+          20.7,
+          14.9,
+          17.7,
+          18.8,
+          19.8,
+          17.3,
+          20.9,
+          20.0
+        ],
+        "Software & Control": [
+          22.4,
+          25.1,
+          30.1,
+          31.6,
+          31.2,
+          31.2,
+          34.9,
+          34.8
+        ],
+        "Lifecycle Services": [
+          17.2,
+          12.5,
+          14.5,
+          13.3,
+          17.5,
+          14.1,
+          14.6,
+          15.1
+        ]
+      },
+      "NARRATIVE_LOCATOR": "Ch.4 §4.2",
+      "TABLE_LOCATOR": "Appendix A2",
+      "CAPTION_LOCATOR": "Ch.4 §4.2",
+      "RENDERED_ASSET_LOCATOR": "vis002_segment_margins.png",
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-003",
+      "FIGURE_TITLE": "ARR Growth",
+      "AUTHORITATIVE_SOURCE_BLOCK": "kpis.ARR",
+      "SOURCE_VALUES": {
+        "periods": [
+          "FY24",
+          "FY25",
+          "Q1 FY26",
+          "Q2 FY26",
+          "Q3 FY26"
+        ],
+        "values": [
+          16,
+          8,
+          7,
+          6,
+          6
+        ]
+      },
+      "SOURCE_VERSION_OR_HASH": "a1034f022489fd2e",
+      "DISPLAY_VALUES": {
+        "periods": [
+          "FY24",
+          "FY25",
+          "Q1 FY26",
+          "Q2 FY26",
+          "Q3 FY26"
+        ],
+        "values": [
+          16,
+          8,
+          7,
+          6,
+          6
+        ]
+      },
+      "NARRATIVE_LOCATOR": "Ch.3 §3.3",
+      "TABLE_LOCATOR": "Ch.4 §4.3",
+      "CAPTION_LOCATOR": "Ch.3 §3.3",
+      "RENDERED_ASSET_LOCATOR": "vis003_arr.png",
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-004",
+      "FIGURE_TITLE": "FCF History",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.fcf",
+      "SOURCE_VALUES": {
+        "periods": [
+          "FY23",
+          "FY24",
+          "FY25",
+          "9M FY26"
+        ],
+        "values": [
+          1214,
+          639,
+          1358,
+          1099
+        ]
+      },
+      "SOURCE_VERSION_OR_HASH": "01dbf354d2475da7",
+      "DISPLAY_VALUES": {
+        "periods": [
+          "FY23",
+          "FY24",
+          "FY25",
+          "9M FY26"
+        ],
+        "values": [
+          1214,
+          639,
+          1358,
+          1099
+        ]
+      },
+      "NARRATIVE_LOCATOR": "Ch.4 §4.5",
+      "TABLE_LOCATOR": "Ch.4 §4.5",
+      "CAPTION_LOCATOR": "Ch.4 §4.5",
+      "RENDERED_ASSET_LOCATOR": "vis004_fcf.png",
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-005",
+      "FIGURE_TITLE": "Diluted Share Count",
+      "AUTHORITATIVE_SOURCE_BLOCK": "ownership_denominator",
+      "SOURCE_VALUES": {
+        "periods": [
+          "FY23",
+          "FY24",
+          "FY25",
+          "Q3 FY26"
+        ],
+        "values": [
+          115.6,
+          114.5,
+          113.1,
+          111.6
+        ]
+      },
+      "SOURCE_VERSION_OR_HASH": "a093ae3657b81569",
+      "DISPLAY_VALUES": {
+        "periods": [
+          "FY23",
+          "FY24",
+          "FY25",
+          "Q3 FY26"
+        ],
+        "values": [
+          115.6,
+          114.5,
+          113.1,
+          111.6
+        ]
+      },
+      "NARRATIVE_LOCATOR": "Ch.4 §4.8",
+      "TABLE_LOCATOR": "Ch.4 §4.8",
+      "CAPTION_LOCATOR": "Ch.4 §4.8",
+      "RENDERED_ASSET_LOCATOR": "vis005_shares.png",
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-006",
+      "FIGURE_TITLE": "Scenario Values",
+      "AUTHORITATIVE_SOURCE_BLOCK": "scenarios",
+      "SOURCE_VALUES": [
+        {
+          "name": "Down",
+          "value": 330
+        },
+        {
+          "name": "Base",
+          "value": 468
+        },
+        {
+          "name": "Up",
+          "value": 615
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "1051d840ac19a5c0",
+      "DISPLAY_VALUES": [
+        {
+          "name": "Down",
+          "value": 330
+        },
+        {
+          "name": "Base",
+          "value": 468
+        },
+        {
+          "name": "Up",
+          "value": 615
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Ch.5 §5.5",
+      "TABLE_LOCATOR": "Ch.5 §5.5",
+      "CAPTION_LOCATOR": "Ch.5 §5.5",
+      "RENDERED_ASSET_LOCATOR": "vis006_scenarios.png",
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-007",
+      "FIGURE_TITLE": "Event-Annotated Stock Price History",
+      "AUTHORITATIVE_SOURCE_BLOCK": "valuation.history.stock_price",
+      "SOURCE_VALUES": {
+        "periods": [
+          "Sep22",
+          "Dec22",
+          "Mar23",
+          "Jun23",
+          "Sep23",
+          "Dec23",
+          "Mar24",
+          "Jun24",
+          "Sep24",
+          "Dec24",
+          "Mar25",
+          "Jun25",
+          "Sep25",
+          "Dec25",
+          "Mar26",
+          "Jun26",
+          "Aug26"
+        ],
+        "values": [
+          201.95,
+          242.94,
+          277.89,
+          313.35,
+          272.98,
+          297.92,
+          280.8,
+          266.56,
+          261.22,
+          279.36,
+          253.7,
+          327.54,
+          345.98,
+          386.53,
+          357.78,
+          495.08,
+          437.08
+        ]
+      },
+      "SOURCE_VERSION_OR_HASH": "95d437cb14ff7372",
+      "DISPLAY_VALUES": {
+        "periods": [
+          "Sep22",
+          "Dec22",
+          "Mar23",
+          "Jun23",
+          "Sep23",
+          "Dec23",
+          "Mar24",
+          "Jun24",
+          "Sep24",
+          "Dec24",
+          "Mar25",
+          "Jun25",
+          "Sep25",
+          "Dec25",
+          "Mar26",
+          "Jun26",
+          "Aug26"
+        ],
+        "values": [
+          201.95,
+          242.94,
+          277.89,
+          313.35,
+          272.98,
+          297.92,
+          280.8,
+          266.56,
+          261.22,
+          279.36,
+          253.7,
+          327.54,
+          345.98,
+          386.53,
+          357.78,
+          495.08,
+          437.08
+        ]
+      },
+      "NARRATIVE_LOCATOR": "Ch.5 §5.4A",
+      "TABLE_LOCATOR": "Appendix A6",
+      "CAPTION_LOCATOR": "Ch.5 §5.4A",
+      "RENDERED_ASSET_LOCATOR": "vis007_price_history.png",
+      "STATUS": "PASS"
+    }
+  ],
+  "publishing_audit": {
+    "REPORT_DATA_PACK": "EMITTED",
+    "DATA_PACK_SOURCE_REGISTRY_COMPLETENESS": "PASS",
+    "VISUAL_DATA_SOURCE_REGISTRY": "EMITTED",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "HTML_TEMPLATE_RESOLUTION": "PASS",
+    "HTML_STRUCTURE_VALIDATION": "PASS",
+    "CONTENT_MEANING_LOCK_PRESERVED": "PASS",
+    "PUBLISHED_TOP_LEVEL_SCHEMA_MATCH": "PASS",
+    "EXPLANATORY_DEPTH_PRESERVED": "PASS",
+    "CORE_LANDSCAPE_PAGES": 0,
+    "PRINTED_TOC": 1,
+    "TOC_CLICKABLE": "PASS",
+    "PDF_BOOKMARKS": "PASS",
+    "HTML_SIDEBAR": "PASS",
+    "SEARCHABLE_TEXT": "PASS",
+    "KOREAN_READABILITY": "PASS",
+    "SMART_CHAPTER_TRANSITIONS": "PASS",
+    "ARGUMENT_BLOCK_PAGINATION": "PASS",
+    "ACCIDENTAL_SPARSE_PAGES": 0,
+    "DENSITY_CONTROL": "PASS",
+    "VISUAL_SUBSTITUTION": "PASS",
+    "VISUAL_GRAMMAR_VARIETY": "PASS",
+    "CHART_READABILITY": "PASS",
+    "TABLE_QUALITY": "PASS",
+    "CONTACT_SHEET_COMPOSITION_QA": "PASS",
+    "SEMANTIC_GOLDEN_QA": "PASS",
+    "VISUAL_GOLDEN_QA": "PASS",
+    "GOLDEN_PARITY": "PASS",
+    "DECISION_VISUALS_TOTAL": 7,
+    "DECISION_VISUALS_PARITY_PASS": 7,
+    "STALE_VISUAL_ASSETS": 0,
+    "FIGURE_NUMERICAL_PARITY": "PASS",
+    "VISUAL_DATA_LINEAGE": "PASS",
+    "VISUAL_SEMANTIC_PARITY": "PASS",
+    "RENDERED_VISUAL_PARITY_QA": "PASS",
+    "PUBLISHING_ACCEPTANCE": "PASS",
+    "PDF_PAGES": 24,
+    "PDF_OUTLINE_ITEMS": 91,
+    "HTML_BROKEN_INTERNAL_ANCHORS": 0,
+    "HTML_UNRESOLVED_TEMPLATE_TOKENS": 0,
+    "FINAL_SOURCE_REGISTRY_COUNT": 24
+  }
+}

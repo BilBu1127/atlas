@@ -1,0 +1,1154 @@
+{
+  "meta": {
+    "company": "Lumentum Holdings Inc.",
+    "ticker": "LITE",
+    "exchange": "NASDAQ",
+    "report_as_of": "2026-08-24",
+    "price_as_of": "2026-08-21 close",
+    "current_price": 866.71,
+    "latest_filing": "FY2026 Form 10-K filed 2026-08-17",
+    "latest_filing_accession": "0001628280-26-057358",
+    "currency": "USD",
+    "valuation_horizon": "FY2030 / approximately 4 years",
+    "research_mode": "Expectation-Driven hybrid; current business proven, price materially optionality-led",
+    "T0": "2026-08-24",
+    "price_asof": "2026-08-21 close",
+    "filing_asof": "FY2026 Form 10-K filed 2026-08-17",
+    "consensus_asof": "2026-08-19 to 2026-08-24 checks",
+    "version": "Clean DDOS Production OS v1.7"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "period": "FY2024",
+        "revenue_m": 1359.0,
+        "non_gaap_gm_pct": 30.2,
+        "non_gaap_om_pct": -0.6,
+        "ocf_m": 24.7,
+        "capex_m": 133.0,
+        "ocf_less_capex_m": -108.3,
+        "sbc_m": 128.8
+      },
+      {
+        "period": "FY2025",
+        "revenue_m": 1645.0,
+        "non_gaap_gm_pct": 34.7,
+        "non_gaap_om_pct": 9.7,
+        "ocf_m": 126.3,
+        "capex_m": 231.0,
+        "ocf_less_capex_m": -104.7,
+        "sbc_m": 177.2
+      },
+      {
+        "period": "FY2026",
+        "revenue_m": 3014.0,
+        "non_gaap_gm_pct": 46.0,
+        "non_gaap_om_pct": 29.8,
+        "ocf_m": 751.4,
+        "capex_m": 451.3,
+        "ocf_less_capex_m": 300.1,
+        "sbc_m": 170.2
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "period": "FY25 Q1",
+        "revenue_m": 336.9,
+        "non_gaap_gm_pct": 32.8,
+        "non_gaap_om_pct": 3.0,
+        "non_gaap_eps": 0.18
+      },
+      {
+        "period": "FY25 Q2",
+        "revenue_m": 402.2,
+        "non_gaap_gm_pct": 32.3,
+        "non_gaap_om_pct": 7.9,
+        "non_gaap_eps": 0.42
+      },
+      {
+        "period": "FY25 Q3",
+        "revenue_m": 425.2,
+        "non_gaap_gm_pct": 35.2,
+        "non_gaap_om_pct": 10.8,
+        "non_gaap_eps": 0.57
+      },
+      {
+        "period": "FY25 Q4",
+        "revenue_m": 480.7,
+        "non_gaap_gm_pct": 37.8,
+        "non_gaap_om_pct": 15.0,
+        "non_gaap_eps": 0.88
+      },
+      {
+        "period": "FY26 Q1",
+        "revenue_m": 533.8,
+        "non_gaap_gm_pct": 39.4,
+        "non_gaap_om_pct": 18.7,
+        "non_gaap_eps": 1.1
+      },
+      {
+        "period": "FY26 Q2",
+        "revenue_m": 665.5,
+        "non_gaap_gm_pct": 42.5,
+        "non_gaap_om_pct": 25.2,
+        "non_gaap_eps": 1.67
+      },
+      {
+        "period": "FY26 Q3",
+        "revenue_m": 808.4,
+        "non_gaap_gm_pct": 47.9,
+        "non_gaap_om_pct": 32.2,
+        "non_gaap_eps": 2.37
+      },
+      {
+        "period": "FY26 Q4",
+        "revenue_m": 1006.3,
+        "non_gaap_gm_pct": 50.4,
+        "non_gaap_om_pct": 36.6,
+        "non_gaap_eps": 3.23
+      }
+    ],
+    "balance_sheet_fy2026": {
+      "cash_and_equivalents_m": 2043.5,
+      "short_term_investments_m": 694.9,
+      "accounts_receivable_m": 520.3,
+      "inventory_m": 691.6,
+      "pp_and_e_m": 1159.1,
+      "convertible_principal_m": 1554.3
+    },
+    "ceilings": [
+      "FY2026부터 단일 reportable segment로 재편되어 product-level gross margin은 공개자료로 정확 분해 불가",
+      "OCS 고객별 계약금액·firm/cancellable 구성·repeat order economics는 공개되지 않음",
+      "Customer A/B의 실명 및 제품별 매출 mapping은 회사 공시로 확인 불가"
+    ]
+  },
+  "kpis": [
+    {
+      "kpi": "Quarterly revenue",
+      "current": "$1.006B FY26 Q4",
+      "green": ">= FY27 guidance trajectory",
+      "red": "2 consecutive material guide/consensus cuts"
+    },
+    {
+      "kpi": "Non-GAAP gross margin",
+      "current": "50.4%",
+      "green": ">=50%",
+      "yellow": "45-50%",
+      "red": "<45% with slowing growth"
+    },
+    {
+      "kpi": "Non-GAAP operating margin",
+      "current": "36.6%; Q1 FY27 guide midpoint 40%",
+      "green": ">=40%",
+      "yellow": "30-40%",
+      "red": "<30%"
+    },
+    {
+      "kpi": "OCS",
+      "current": ">$90M FY26; $400M+ backlog; >$1B 2027 run-rate target",
+      "green": "backlog conversion + repeat/multi-customer evidence",
+      "red": "run-rate timing slips materially"
+    },
+    {
+      "kpi": "1.6T transceiver",
+      "current": "volume ramp started",
+      "green": "yield + vertical integration improve margin",
+      "red": "qualification/yield delay or ASP overwhelms cost-down"
+    },
+    {
+      "kpi": "CPO UHP/ELS",
+      "current": "scale-out demand, initial ELS order; scale-up target late CY27",
+      "green": "multiple hyperscaler design wins",
+      "red": "architecture share shifts away / ramp delay"
+    },
+    {
+      "kpi": "Inventory",
+      "current": "$691.6M, +47% YoY",
+      "green": "growth below revenue growth",
+      "red": "inventory growth while customer orders slow"
+    },
+    {
+      "kpi": "Economic diluted shares",
+      "current": "101.1M Q4 FY26 non-GAAP denominator",
+      "green": "growth stabilizes",
+      "red": ">115M rapidly without offsetting value creation"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.25,
+      "fy2030_revenue_b": 8.5,
+      "fy2030_fcf_margin_pct": 20.0,
+      "exit_p_fcf": 24,
+      "fy2030_diluted_shares_m": 104,
+      "fy2030_fcf_b": 1.7,
+      "terminal_value_per_share": 392.31,
+      "pv_per_share": 249.32,
+      "formation_logic": "AI optical 수요는 성장하지만 OCS/CPO ramp가 지연되고 transceiver ASP 하락과 고객 정상화가 동시에 발생",
+      "confirmation_or_break": "OCS run-rate 지연, GM 40%대 초반 이하, inventory/revenue 악화",
+      "periods": [
+        "FY2027",
+        "FY2028",
+        "FY2029",
+        "FY2030"
+      ],
+      "revenue_path_b": [
+        5.6,
+        6.5,
+        7.4,
+        8.5
+      ],
+      "fcf_margin_path_pct": [
+        15,
+        18,
+        19,
+        20
+      ],
+      "fcf_path_b": [
+        0.84,
+        1.17,
+        1.406,
+        1.7
+      ],
+      "diluted_shares_path_m": [
+        101.8,
+        102.5,
+        103.3,
+        104.0
+      ]
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "fy2030_revenue_b": 13.0,
+      "fy2030_fcf_margin_pct": 27.0,
+      "exit_p_fcf": 30,
+      "fy2030_diluted_shares_m": 106,
+      "fy2030_fcf_b": 3.51,
+      "terminal_value_per_share": 993.4,
+      "pv_per_share": 631.32,
+      "formation_logic": "FY27~28 고성장 후 정상화. OCS는 $1B+ 사업으로 안착하고 1.6T/CPO가 단계적으로 기여하되 vendor share는 분산",
+      "confirmation_or_break": "OCS 반복주문·1.6T 수익성·UHP 복수고객이 확인되면 상향, 고객집중/마진 훼손 시 하향",
+      "periods": [
+        "FY2027",
+        "FY2028",
+        "FY2029",
+        "FY2030"
+      ],
+      "revenue_path_b": [
+        6.3,
+        8.4,
+        10.8,
+        13.0
+      ],
+      "fcf_margin_path_pct": [
+        17,
+        21,
+        24,
+        27
+      ],
+      "fcf_path_b": [
+        1.071,
+        1.764,
+        2.592,
+        3.51
+      ],
+      "diluted_shares_path_m": [
+        102.3,
+        103.5,
+        104.8,
+        106.0
+      ]
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.25,
+      "fy2030_revenue_b": 17.5,
+      "fy2030_fcf_margin_pct": 30.0,
+      "exit_p_fcf": 34,
+      "fy2030_diluted_shares_m": 108,
+      "fy2030_fcf_b": 5.25,
+      "terminal_value_per_share": 1652.78,
+      "pv_per_share": 1050.37,
+      "formation_logic": "OCS, 1.6T, UHP/ELS 세 축이 동시에 점유율을 확대하고 신규 fab이 높은 yield로 가동",
+      "confirmation_or_break": "복수 hyperscaler 채택, 50%+ GM 지속, FCF conversion 30% 부근",
+      "periods": [
+        "FY2027",
+        "FY2028",
+        "FY2029",
+        "FY2030"
+      ],
+      "revenue_path_b": [
+        6.8,
+        9.8,
+        13.6,
+        17.5
+      ],
+      "fcf_margin_path_pct": [
+        18,
+        23,
+        27,
+        30
+      ],
+      "fcf_path_b": [
+        1.224,
+        2.254,
+        3.672,
+        5.25
+      ],
+      "diluted_shares_path_m": [
+        102.8,
+        104.5,
+        106.3,
+        108.0
+      ]
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.1,
+      "fy2030_revenue_b": 22.5,
+      "fy2030_fcf_margin_pct": 32.0,
+      "exit_p_fcf": 36,
+      "fy2030_diluted_shares_m": 112,
+      "fy2030_fcf_b": 7.2,
+      "terminal_value_per_share": 2314.29,
+      "pv_per_share": 1470.77,
+      "formation_logic": "Scale-up CPO까지 구조적 표준으로 확산되고 Lumentum이 광원·ELS에서 주요 공급자 지위를 확보",
+      "confirmation_or_break": "late-CY27 scale-up shipment가 대량 양산으로 연결되고 경쟁사 대비 share 우위가 확인",
+      "periods": [
+        "FY2027",
+        "FY2028",
+        "FY2029",
+        "FY2030"
+      ],
+      "revenue_path_b": [
+        7.0,
+        10.6,
+        15.6,
+        22.5
+      ],
+      "fcf_margin_path_pct": [
+        19,
+        25,
+        29,
+        32
+      ],
+      "fcf_path_b": [
+        1.33,
+        2.65,
+        4.524,
+        7.2
+      ],
+      "diluted_shares_path_m": [
+        103.8,
+        106.5,
+        109.3,
+        112.0
+      ]
+    }
+  ],
+  "valuation": {
+    "core": {
+      "per_share": 390.0,
+      "definition": "현재 1.6T/laser/cloud networking에서 이미 monetization이 확인된 현금흐름의 정상화 가치"
+    },
+    "execution": {
+      "per_share": 190.0,
+      "definition": "OCS 확대, 1.6T mix/yield 개선, scale-out UHP/ELS의 확률가중 증분 가치"
+    },
+    "ecosystem": {
+      "per_share": 51.32,
+      "definition": "scale-up CPO 등 아직 고객·양산 귀속이 완전히 검증되지 않은 옵션 가치; Base calibration residual"
+    },
+    "drag": {
+      "per_share": 0.0,
+      "treatment": "희석은 시나리오별 fully diluted denominator에 직접 반영. 별도 drag 차감은 이중계산 방지를 위해 0으로 둠."
+    },
+    "base_value_per_share": 631.32,
+    "expected_value_per_share": 724.53,
+    "expected_irr_pct": 7.09,
+    "hurdle_pct": 12.0,
+    "current_price": 866.71,
+    "current_price_to_expected_value_premium_pct": 19.6,
+    "mode": "Expectation-Driven Hybrid (Core / Execution / Ecosystem with dilution in denominator)"
+  },
+  "reverse_expectations": {
+    "required_terminal_share_price_for_12pct_irr": 1363.78,
+    "assumed_future_diluted_shares_m": 108,
+    "required_terminal_equity_value_b": 147.3,
+    "revenue_requirements_b": [
+      {
+        "exit_p_fcf": 30,
+        "fcf_margin_pct": 30,
+        "required_fy2030_revenue_b": 16.4
+      },
+      {
+        "exit_p_fcf": 35,
+        "fcf_margin_pct": 30,
+        "required_fy2030_revenue_b": 14.0
+      },
+      {
+        "exit_p_fcf": 30,
+        "fcf_margin_pct": 25,
+        "required_fy2030_revenue_b": 19.6
+      },
+      {
+        "exit_p_fcf": 40,
+        "fcf_margin_pct": 30,
+        "required_fy2030_revenue_b": 12.3
+      }
+    ],
+    "interpretation": "현재 가격은 FY2030 매출 약 $12-20B, FCF margin 25-30%, terminal P/FCF 30-40x 중 상당히 강한 조합을 요구"
+  },
+  "consensus": {
+    "as_of": "2026-08-19 to 2026-08-24 checks",
+    "fy2027_revenue_avg_b": 6.3,
+    "fy2027_revenue_low_b": 5.6,
+    "fy2027_revenue_high_b": 7.0,
+    "fy2027_eps_avg": 21.62,
+    "fy2027_eps_low": 19.05,
+    "fy2027_eps_high": 25.27,
+    "fy2028_eps_alt_consensus": 32.4,
+    "analyst_target_avg": 1148.3,
+    "analyst_target_low": 820,
+    "analyst_target_high": 1400,
+    "short_interest_2026_07_31_shares_m": 8.55,
+    "short_float_pct": 11.0
+  },
+  "stance": {
+    "label": "회피 / 추격 금지; 기존 보유 시 비중 축소 검토",
+    "reason": "Expected IRR 약 7.1% < 12% hurdle이며 Bear 대비 Bull Execution U/D가 낮음",
+    "price_bands": [
+      {
+        "range": ">$725",
+        "stance": "기대수익률 부족 / 추격 금지"
+      },
+      {
+        "range": "$650-$725",
+        "stance": "관망"
+      },
+      {
+        "range": "$515-$650",
+        "stance": "조건부 관심"
+      },
+      {
+        "range": "<$515",
+        "stance": "U/D 개선된 적극 관심 구간"
+      }
+    ],
+    "re_rating_up": [
+      "OCS multi-customer repeat order 공개",
+      "1.6T/CPO mix로 50%+ GM 지속",
+      "UHP/ELS 복수 hyperscaler design wins",
+      "fully diluted share growth 안정"
+    ],
+    "re_rating_down": [
+      "OCS 2027 run-rate 지연",
+      "inventory 증가와 고객 주문 둔화 동시 발생",
+      "GM <45%로 하락",
+      "scale-up CPO 일정/점유율 실패"
+    ],
+    "zone": "회피 / 추격 금지",
+    "horizon": "FY2030 / approximately 4 years"
+  },
+  "catalysts": [
+    {
+      "timing": "FY27 Q1 results (Nov 2026, exact date TBD)",
+      "event": "$1.225-1.275B revenue guide와 40% OM 실행 확인"
+    },
+    {
+      "timing": "2H CY2026",
+      "event": "$400M+ OCS backlog conversion 속도"
+    },
+    {
+      "timing": "CY2027",
+      "event": "OCS >$1B run-rate 및 scale-out CPO/UHP multi-hundred-million ramp"
+    },
+    {
+      "timing": "late summer 2027",
+      "event": "UK fab incremental UHP shipments 계획"
+    },
+    {
+      "timing": "late CY2027",
+      "event": "scale-up CPO first shipment 목표"
+    },
+    {
+      "timing": "early 2028",
+      "event": "Greensboro UHP production ramp 목표"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2 / Ch.3"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1 / Ch.6"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1.5 / Ch.4"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2.1"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2.2"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.1 / Ch.4"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.2-3.5"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.3.4 / Appendix D"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.3"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.5 / Ch.5.2"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.7"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.3.6 / Appendix D"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1.4 / Ch.3.8"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4.4 / Ch.5"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5.6 / Ch.6"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.6"
+    }
+  ],
+  "visual_lineage": [
+    {
+      "visual_id": "V1",
+      "title": "8분기 매출과 영업 레버리지",
+      "source_fields": [
+        "financials.quarterly_8q"
+      ]
+    },
+    {
+      "visual_id": "V2",
+      "title": "3개년 현금흐름과 설비투자",
+      "source_fields": [
+        "financials.annual_3y"
+      ]
+    },
+    {
+      "visual_id": "V3",
+      "title": "희석 기준점",
+      "source_fields": [
+        "financials.balance_sheet_fy2026",
+        "kpis[economic diluted shares]"
+      ]
+    },
+    {
+      "visual_id": "V4",
+      "title": "시나리오 현재가치",
+      "source_fields": [
+        "scenarios",
+        "valuation.current_price"
+      ]
+    },
+    {
+      "visual_id": "V5",
+      "title": "현재가 역산 매출 요구치",
+      "source_fields": [
+        "reverse_expectations.revenue_requirements_b"
+      ]
+    },
+    {
+      "visual_id": "V6",
+      "title": "시나리오 연간 운영 브리지",
+      "source_fields": [
+        "scenarios.revenue_path_b",
+        "scenarios.fcf_margin_path_pct"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "name": "Lumentum FY2026 Form 10-K",
+      "date": "2026-08-17",
+      "url": "https://www.sec.gov/Archives/edgar/data/1633978/000162828026057358/lite-20260627.htm"
+    },
+    {
+      "id": "S2",
+      "name": "Lumentum Q4/FY2026 earnings release",
+      "date": "2026-08-11",
+      "url": "https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Results/default.aspx"
+    },
+    {
+      "id": "S3",
+      "name": "Lumentum OFC 2026 investor briefing",
+      "date": "2026-03-17",
+      "url": "https://s21.q4cdn.com/377324469/files/doc_presentations/2026/2026-Lumentum-at-OFC_final.pdf"
+    },
+    {
+      "id": "S4",
+      "name": "NVIDIA-Lumentum strategic partnership",
+      "date": "2026-03-02",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-strategic-partnership-with-lumentum-to-develop-state-of-the-art-optics-technology"
+    },
+    {
+      "id": "S5",
+      "name": "NVIDIA Vera Rubin / Spectrum-X Ethernet Photonics",
+      "date": "2026-05-31",
+      "url": "https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory"
+    },
+    {
+      "id": "S6",
+      "name": "Google Research - Jupiter Evolving",
+      "date": "2022",
+      "url": "https://research.google/pubs/jupiter-evolving-transforming-googles-datacenter-network-via-optical-circuit-switches-and-software-defined-networking/"
+    },
+    {
+      "id": "S7",
+      "name": "StockAnalysis consensus aggregation",
+      "date": "2026-08-19 update",
+      "url": "https://stockanalysis.com/stocks/lite/forecast/"
+    },
+    {
+      "id": "S8",
+      "name": "Investing.com analyst target aggregation",
+      "date": "2026-08-24 check",
+      "url": "https://www.investing.com/equities/lumentum-holdings-inc-consensus-estimates"
+    },
+    {
+      "id": "S9",
+      "name": "NVIDIA-Coherent strategic partnership",
+      "date": "2026-03-02",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-and-coherent-announce-strategic-partnership-to-develop-optics-technology-to-scale-next-generation-data-center-architecture"
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "VIS_ID": "VIS-001",
+      "FIGURE_TITLE": "8분기 매출과 영업 레버리지",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.quarterly_8q",
+      "SOURCE_VALUES": [
+        {
+          "period": "FY25 Q1",
+          "revenue_m": 336.9,
+          "non_gaap_gm_pct": 32.8,
+          "non_gaap_om_pct": 3.0,
+          "non_gaap_eps": 0.18
+        },
+        {
+          "period": "FY25 Q2",
+          "revenue_m": 402.2,
+          "non_gaap_gm_pct": 32.3,
+          "non_gaap_om_pct": 7.9,
+          "non_gaap_eps": 0.42
+        },
+        {
+          "period": "FY25 Q3",
+          "revenue_m": 425.2,
+          "non_gaap_gm_pct": 35.2,
+          "non_gaap_om_pct": 10.8,
+          "non_gaap_eps": 0.57
+        },
+        {
+          "period": "FY25 Q4",
+          "revenue_m": 480.7,
+          "non_gaap_gm_pct": 37.8,
+          "non_gaap_om_pct": 15.0,
+          "non_gaap_eps": 0.88
+        },
+        {
+          "period": "FY26 Q1",
+          "revenue_m": 533.8,
+          "non_gaap_gm_pct": 39.4,
+          "non_gaap_om_pct": 18.7,
+          "non_gaap_eps": 1.1
+        },
+        {
+          "period": "FY26 Q2",
+          "revenue_m": 665.5,
+          "non_gaap_gm_pct": 42.5,
+          "non_gaap_om_pct": 25.2,
+          "non_gaap_eps": 1.67
+        },
+        {
+          "period": "FY26 Q3",
+          "revenue_m": 808.4,
+          "non_gaap_gm_pct": 47.9,
+          "non_gaap_om_pct": 32.2,
+          "non_gaap_eps": 2.37
+        },
+        {
+          "period": "FY26 Q4",
+          "revenue_m": 1006.3,
+          "non_gaap_gm_pct": 50.4,
+          "non_gaap_om_pct": 36.6,
+          "non_gaap_eps": 3.23
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "ebdbf5d3618efc38",
+      "DISPLAY_VALUES": [
+        {
+          "period": "FY25 Q1",
+          "revenue_m_display": 337,
+          "non_gaap_om_pct_display": 3.0
+        },
+        {
+          "period": "FY25 Q2",
+          "revenue_m_display": 402,
+          "non_gaap_om_pct_display": 7.9
+        },
+        {
+          "period": "FY25 Q3",
+          "revenue_m_display": 425,
+          "non_gaap_om_pct_display": 10.8
+        },
+        {
+          "period": "FY25 Q4",
+          "revenue_m_display": 481,
+          "non_gaap_om_pct_display": 15.0
+        },
+        {
+          "period": "FY26 Q1",
+          "revenue_m_display": 534,
+          "non_gaap_om_pct_display": 18.7
+        },
+        {
+          "period": "FY26 Q2",
+          "revenue_m_display": 666,
+          "non_gaap_om_pct_display": 25.2
+        },
+        {
+          "period": "FY26 Q3",
+          "revenue_m_display": 808,
+          "non_gaap_om_pct_display": 32.2
+        },
+        {
+          "period": "FY26 Q4",
+          "revenue_m_display": 1006,
+          "non_gaap_om_pct_display": 36.6
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Final report relevant chapter",
+      "TABLE_LOCATOR": "Final report / REPORT_DATA_PACK",
+      "CAPTION_LOCATOR": "Final report figure caption",
+      "RENDERED_ASSET_LOCATOR": "Inline SVG in final HTML/PDF"
+    },
+    {
+      "VIS_ID": "VIS-002",
+      "FIGURE_TITLE": "3개년 현금흐름과 설비투자",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.annual_3y",
+      "SOURCE_VALUES": [
+        {
+          "period": "FY2024",
+          "revenue_m": 1359.0,
+          "non_gaap_gm_pct": 30.2,
+          "non_gaap_om_pct": -0.6,
+          "ocf_m": 24.7,
+          "capex_m": 133.0,
+          "ocf_less_capex_m": -108.3,
+          "sbc_m": 128.8
+        },
+        {
+          "period": "FY2025",
+          "revenue_m": 1645.0,
+          "non_gaap_gm_pct": 34.7,
+          "non_gaap_om_pct": 9.7,
+          "ocf_m": 126.3,
+          "capex_m": 231.0,
+          "ocf_less_capex_m": -104.7,
+          "sbc_m": 177.2
+        },
+        {
+          "period": "FY2026",
+          "revenue_m": 3014.0,
+          "non_gaap_gm_pct": 46.0,
+          "non_gaap_om_pct": 29.8,
+          "ocf_m": 751.4,
+          "capex_m": 451.3,
+          "ocf_less_capex_m": 300.1,
+          "sbc_m": 170.2
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "90d5c5ed34299542",
+      "DISPLAY_VALUES": [
+        {
+          "period": "FY2024",
+          "ocf_m_display": 25,
+          "capex_m_display": 133,
+          "ocf_less_capex_m_display": -108
+        },
+        {
+          "period": "FY2025",
+          "ocf_m_display": 126,
+          "capex_m_display": 231,
+          "ocf_less_capex_m_display": -105
+        },
+        {
+          "period": "FY2026",
+          "ocf_m_display": 751,
+          "capex_m_display": 451,
+          "ocf_less_capex_m_display": 300
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Final report relevant chapter",
+      "TABLE_LOCATOR": "Final report / REPORT_DATA_PACK",
+      "CAPTION_LOCATOR": "Final report figure caption",
+      "RENDERED_ASSET_LOCATOR": "Inline SVG in final HTML/PDF"
+    },
+    {
+      "VIS_ID": "VIS-003",
+      "FIGURE_TITLE": "희석 기준점",
+      "AUTHORITATIVE_SOURCE_BLOCK": "capital_structure.denominator_anchors",
+      "SOURCE_VALUES": {
+        "fy25_basic": 69.8,
+        "aug14_basic": 89.7,
+        "q4_economic_diluted": 101.1,
+        "nvidia_preferred_common_equiv": 2.876
+      },
+      "SOURCE_VERSION_OR_HASH": "f0f597e17175782c",
+      "DISPLAY_VALUES": {
+        "fy2025_basic_shares_m": 69.8,
+        "2026_08_14_basic_shares_m": 89.7,
+        "fy2026_q4_economic_diluted_shares_m": 101.1,
+        "nvidia_series_a_common_equivalent_m": 2.876
+      },
+      "NARRATIVE_LOCATOR": "Final report relevant chapter",
+      "TABLE_LOCATOR": "Final report / REPORT_DATA_PACK",
+      "CAPTION_LOCATOR": "Final report figure caption",
+      "RENDERED_ASSET_LOCATOR": "Inline SVG in final HTML/PDF"
+    },
+    {
+      "VIS_ID": "VIS-004",
+      "FIGURE_TITLE": "시나리오 현재가치",
+      "AUTHORITATIVE_SOURCE_BLOCK": "scenarios + valuation.current_price",
+      "SOURCE_VALUES": {
+        "scenarios": [
+          {
+            "name": "Bear",
+            "pv_per_share": 249.32,
+            "probability": 0.25
+          },
+          {
+            "name": "Base",
+            "pv_per_share": 631.32,
+            "probability": 0.4
+          },
+          {
+            "name": "Bull Execution",
+            "pv_per_share": 1050.37,
+            "probability": 0.25
+          },
+          {
+            "name": "Bull Ecosystem",
+            "pv_per_share": 1470.77,
+            "probability": 0.1
+          }
+        ],
+        "current_price": 866.71
+      },
+      "SOURCE_VERSION_OR_HASH": "44d073f12730e6a4",
+      "DISPLAY_VALUES": {
+        "scenario_pv_per_share_rounded": [
+          {
+            "name": "Bear",
+            "probability_pct": 25,
+            "pv_per_share_display": 249
+          },
+          {
+            "name": "Base",
+            "probability_pct": 40,
+            "pv_per_share_display": 631
+          },
+          {
+            "name": "Bull Execution",
+            "probability_pct": 25,
+            "pv_per_share_display": 1050
+          },
+          {
+            "name": "Bull Ecosystem",
+            "probability_pct": 10,
+            "pv_per_share_display": 1471
+          }
+        ],
+        "current_price": 866.71,
+        "expected_value_display": 725
+      },
+      "NARRATIVE_LOCATOR": "Final report relevant chapter",
+      "TABLE_LOCATOR": "Final report / REPORT_DATA_PACK",
+      "CAPTION_LOCATOR": "Final report figure caption",
+      "RENDERED_ASSET_LOCATOR": "Inline SVG in final HTML/PDF"
+    },
+    {
+      "VIS_ID": "VIS-005",
+      "FIGURE_TITLE": "현재가 역산 매출 요구치",
+      "AUTHORITATIVE_SOURCE_BLOCK": "reverse_expectations.revenue_requirements_b",
+      "SOURCE_VALUES": [
+        {
+          "exit_p_fcf": 30,
+          "fcf_margin_pct": 30,
+          "required_fy2030_revenue_b": 16.4
+        },
+        {
+          "exit_p_fcf": 35,
+          "fcf_margin_pct": 30,
+          "required_fy2030_revenue_b": 14.0
+        },
+        {
+          "exit_p_fcf": 30,
+          "fcf_margin_pct": 25,
+          "required_fy2030_revenue_b": 19.6
+        },
+        {
+          "exit_p_fcf": 40,
+          "fcf_margin_pct": 30,
+          "required_fy2030_revenue_b": 12.3
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "53c189f8d896ea36",
+      "DISPLAY_VALUES": [
+        {
+          "exit_p_fcf": 30,
+          "fcf_margin_pct": 30,
+          "required_fy2030_revenue_b_display": 16.4
+        },
+        {
+          "exit_p_fcf": 35,
+          "fcf_margin_pct": 30,
+          "required_fy2030_revenue_b_display": 14.0
+        },
+        {
+          "exit_p_fcf": 30,
+          "fcf_margin_pct": 25,
+          "required_fy2030_revenue_b_display": 19.6
+        },
+        {
+          "exit_p_fcf": 40,
+          "fcf_margin_pct": 30,
+          "required_fy2030_revenue_b_display": 12.3
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Final report relevant chapter",
+      "TABLE_LOCATOR": "Final report / REPORT_DATA_PACK",
+      "CAPTION_LOCATOR": "Final report figure caption",
+      "RENDERED_ASSET_LOCATOR": "Inline SVG in final HTML/PDF"
+    },
+    {
+      "VIS_ID": "VIS-006",
+      "FIGURE_TITLE": "시나리오 연간 운영 브리지",
+      "AUTHORITATIVE_SOURCE_BLOCK": "scenarios.revenue_path_b + fcf_margin_path_pct",
+      "SOURCE_VALUES": [
+        {
+          "name": "Bear",
+          "periods": [
+            "FY2027",
+            "FY2028",
+            "FY2029",
+            "FY2030"
+          ],
+          "revenue_path_b": [
+            5.6,
+            6.5,
+            7.4,
+            8.5
+          ],
+          "fcf_margin_path_pct": [
+            15,
+            18,
+            19,
+            20
+          ]
+        },
+        {
+          "name": "Base",
+          "periods": [
+            "FY2027",
+            "FY2028",
+            "FY2029",
+            "FY2030"
+          ],
+          "revenue_path_b": [
+            6.3,
+            8.4,
+            10.8,
+            13.0
+          ],
+          "fcf_margin_path_pct": [
+            17,
+            21,
+            24,
+            27
+          ]
+        },
+        {
+          "name": "Bull Execution",
+          "periods": [
+            "FY2027",
+            "FY2028",
+            "FY2029",
+            "FY2030"
+          ],
+          "revenue_path_b": [
+            6.8,
+            9.8,
+            13.6,
+            17.5
+          ],
+          "fcf_margin_path_pct": [
+            18,
+            23,
+            27,
+            30
+          ]
+        },
+        {
+          "name": "Bull Ecosystem",
+          "periods": [
+            "FY2027",
+            "FY2028",
+            "FY2029",
+            "FY2030"
+          ],
+          "revenue_path_b": [
+            7.0,
+            10.6,
+            15.6,
+            22.5
+          ],
+          "fcf_margin_path_pct": [
+            19,
+            25,
+            29,
+            32
+          ]
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "0a8e9d710102d754",
+      "DISPLAY_VALUES": [
+        {
+          "name": "Bear",
+          "periods": [
+            "FY2027",
+            "FY2028",
+            "FY2029",
+            "FY2030"
+          ],
+          "revenue_path_b_display": [
+            5.6,
+            6.5,
+            7.4,
+            8.5
+          ],
+          "terminal_fcf_margin_pct_display": 20
+        },
+        {
+          "name": "Base",
+          "periods": [
+            "FY2027",
+            "FY2028",
+            "FY2029",
+            "FY2030"
+          ],
+          "revenue_path_b_display": [
+            6.3,
+            8.4,
+            10.8,
+            13.0
+          ],
+          "terminal_fcf_margin_pct_display": 27
+        },
+        {
+          "name": "Bull Execution",
+          "periods": [
+            "FY2027",
+            "FY2028",
+            "FY2029",
+            "FY2030"
+          ],
+          "revenue_path_b_display": [
+            6.8,
+            9.8,
+            13.6,
+            17.5
+          ],
+          "terminal_fcf_margin_pct_display": 30
+        },
+        {
+          "name": "Bull Ecosystem",
+          "periods": [
+            "FY2027",
+            "FY2028",
+            "FY2029",
+            "FY2030"
+          ],
+          "revenue_path_b_display": [
+            7.0,
+            10.6,
+            15.6,
+            22.5
+          ],
+          "terminal_fcf_margin_pct_display": 32
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Final report relevant chapter",
+      "TABLE_LOCATOR": "Final report / REPORT_DATA_PACK",
+      "CAPTION_LOCATOR": "Final report figure caption",
+      "RENDERED_ASSET_LOCATOR": "Inline SVG in final HTML/PDF"
+    }
+  ]
+}

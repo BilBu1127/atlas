@@ -1,0 +1,904 @@
+{
+  "meta": {
+    "ticker": "NVEC",
+    "company": "NVE Corporation",
+    "T0": "2026-08-24",
+    "price_asof": "2026-08-21",
+    "filing_asof": "2026-08-19 (latest located filing: Form 4); financial filing FY27 Q1 filed 2026-07-22",
+    "consensus_asof": "2026-08-24",
+    "version": "DDOS v1.7 / NVEC 2026-08-24"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "fiscal_year": "FY2024",
+        "revenue": 29.804179,
+        "gross_profit": 23.031646,
+        "gross_margin": 0.77276,
+        "operating_income": 18.518865,
+        "operating_margin": 0.62135,
+        "net_income": 17.124699,
+        "eps": 3.54,
+        "operating_cash_flow": 18.247411,
+        "capex": 0.016731,
+        "fcf": 18.23068
+      },
+      {
+        "fiscal_year": "FY2025",
+        "revenue": 25.874694,
+        "gross_profit": 21.638914,
+        "gross_margin": 0.83628,
+        "operating_income": 15.994149,
+        "operating_margin": 0.61815,
+        "net_income": 15.064516,
+        "eps": 3.11,
+        "operating_cash_flow": 14.310418,
+        "capex": 1.257109,
+        "fcf": 13.053309
+      },
+      {
+        "fiscal_year": "FY2026",
+        "revenue": 26.331218,
+        "gross_profit": 20.731764,
+        "gross_margin": 0.78735,
+        "operating_income": 15.920491,
+        "operating_margin": 0.60462,
+        "net_income": 15.199195,
+        "eps": 3.14,
+        "operating_cash_flow": 16.657997,
+        "capex": 2.189138,
+        "fcf": 14.468859
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "period": "FY25 Q2",
+        "end": "2024-09-30",
+        "revenue": 6.75869,
+        "gross_profit": 5.811436,
+        "operating_income": 4.395592,
+        "net_income": 4.026145,
+        "eps": 0.83,
+        "gross_margin": 0.8598465087169259,
+        "operating_margin": 0.6503615345577324
+      },
+      {
+        "period": "FY25 Q3",
+        "end": "2024-12-31",
+        "revenue": 5.063045,
+        "gross_profit": 4.265423,
+        "operating_income": 2.960963,
+        "net_income": 3.04841,
+        "eps": 0.63,
+        "gross_margin": 0.8424619966838138,
+        "operating_margin": 0.5848186219952618
+      },
+      {
+        "period": "FY25 Q4",
+        "end": "2025-03-31",
+        "revenue": 7.269715,
+        "gross_profit": 5.754305,
+        "operating_income": 4.248776,
+        "net_income": 3.892374,
+        "eps": 0.8,
+        "gross_margin": 0.791544785455826,
+        "operating_margin": 0.5844487713754941
+      },
+      {
+        "period": "FY26 Q1",
+        "end": "2025-06-30",
+        "revenue": 6.104644,
+        "gross_profit": 4.922121,
+        "operating_income": 3.78325,
+        "net_income": 3.575818,
+        "eps": 0.74,
+        "gross_margin": 0.806291243191249,
+        "operating_margin": 0.6197331081058944
+      },
+      {
+        "period": "FY26 Q2",
+        "end": "2025-09-30",
+        "revenue": 6.346992,
+        "gross_profit": 4.968498,
+        "operating_income": 3.658109,
+        "net_income": 3.310838,
+        "eps": 0.68,
+        "gross_margin": 0.7828114483207164,
+        "operating_margin": 0.576353176433813
+      },
+      {
+        "period": "FY26 Q3",
+        "end": "2025-12-31",
+        "revenue": 6.224776,
+        "gross_profit": 4.892097,
+        "operating_income": 3.744376,
+        "net_income": 3.384642,
+        "eps": 0.7,
+        "gross_margin": 0.7859073161829437,
+        "operating_margin": 0.6015278300777409
+      },
+      {
+        "period": "FY26 Q4",
+        "end": "2026-03-31",
+        "revenue": 7.654806,
+        "gross_profit": 5.949048,
+        "operating_income": 4.734756,
+        "net_income": 4.927897,
+        "eps": 1.02,
+        "gross_margin": 0.7771650907939405,
+        "operating_margin": 0.6185337681973913
+      },
+      {
+        "period": "FY27 Q1",
+        "end": "2026-06-30",
+        "revenue": 11.034057,
+        "gross_profit": 8.968012,
+        "operating_income": 7.265836,
+        "net_income": 6.394191,
+        "eps": 1.32,
+        "gross_margin": 0.8127574472381283,
+        "operating_margin": 0.6584917949943525
+      }
+    ],
+    "ceilings": [
+      "제품/SKU별 매출·백로그 비공개",
+      "37% 고객의 정체 및 물량 비공개",
+      "distributor sell-through/재고 비공개",
+      "방산 프로그램별 backlog 비공개",
+      "fab capacity/yield/utilization 단위 비공개"
+    ]
+  },
+  "balance_sheet": {
+    "cash_and_marketable_securities": 43.908507,
+    "lease_liabilities": 0.905825,
+    "net_cash": 43.002682,
+    "shares_outstanding": 4.837166,
+    "q1_accounts_receivable": 6.545713,
+    "q1_inventory": 6.673227
+  },
+  "ttm": {
+    "revenue": 31.260631,
+    "operating_income": 19.403077,
+    "net_income": 18.017568,
+    "fcf": 15.586208,
+    "ev": 488.55348974,
+    "market_cap": 531.55617174,
+    "ev_ebit": 25.179175949257946,
+    "price_fcf": 34.1042652414237,
+    "ttm_eps": 3.7182245454517315
+  },
+  "kpis": [
+    {
+      "name": "Quarterly revenue run-rate",
+      "history": [
+        6.75869,
+        5.063045,
+        7.269715,
+        6.104644,
+        6.346992,
+        6.224776,
+        7.654806,
+        11.034057
+      ],
+      "current": 11.034057,
+      "thresholds": {
+        "green": "향후 2개 분기 모두 >= $8.5M",
+        "yellow": "$7.5M-$8.5M",
+        "red": "< $7.5M 또는 급증 후 2개 분기 연속 후퇴"
+      }
+    },
+    {
+      "name": "Gross margin",
+      "history": [
+        0.8598465087169259,
+        0.8424619966838138,
+        0.791544785455826,
+        0.806291243191249,
+        0.7828114483207164,
+        0.7859073161829437,
+        0.7771650907939405,
+        0.8127574472381283
+      ],
+      "current": 0.8127574472381283,
+      "thresholds": {
+        "green": ">= 80%",
+        "yellow": "77.5%-80%",
+        "red": "< 77.5%가 2개 분기 지속"
+      }
+    },
+    {
+      "name": "New-product adoption",
+      "history": [],
+      "current": "기존 고객의 신형 부품 design-in 확인",
+      "thresholds": {
+        "green": "반복 주문·신규 고객 확장 언급 동시 확인",
+        "yellow": "기존 고객 중심의 정성적 design-in만 확인",
+        "red": "launch 언급만 남고 repeat/design-in 근거 약화"
+      }
+    },
+    {
+      "name": "Customer concentration",
+      "history": [
+        0.35,
+        0.37
+      ],
+      "current": 0.37,
+      "thresholds": {
+        "green": "< 35%",
+        "yellow": "35%-40%",
+        "red": "> 40% 또는 핵심 계약 갱신 조건 악화"
+      }
+    },
+    {
+      "name": "Dividend FCF coverage",
+      "history": [
+        0.9436169772256728,
+        0.674241167355372,
+        0.7473584194214876,
+        0.8055444034792273
+      ],
+      "current": 0.8055444034792273,
+      "thresholds": {
+        "green": ">= 1.1x",
+        "yellow": "0.8x-1.1x",
+        "red": "< 0.8x와 순현금 감소가 동반"
+      }
+    },
+    {
+      "name": "Net cash + securities",
+      "history": [
+        52.63,
+        47.11,
+        42.61,
+        43.0
+      ],
+      "current": 43.002682,
+      "thresholds": {
+        "green": ">= $40M while dividend maintained",
+        "yellow": "$30M-$40M",
+        "red": "< $30M without reinvestment payoff"
+      }
+    },
+    {
+      "name": "Inventory / collection quality",
+      "history": [],
+      "current": {
+        "accounts_receivable": 6.545713,
+        "inventory": 6.673227,
+        "q1_revenue": 11.034057
+      },
+      "thresholds": {
+        "green": "DSO < 60일 수준 + 재고 flat/down while revenue >$8M",
+        "yellow": "DSO 60-75일 또는 성장과 함께 재고 증가",
+        "red": "DSO >75일/재고 >15% QoQ 증가와 매출 하락 동반"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.3,
+      "revenue_path": [
+        31.0,
+        30.0,
+        31.5,
+        33.0
+      ],
+      "gross_margin_path": [
+        0.78,
+        0.78,
+        0.79,
+        0.79
+      ],
+      "margin_path": [
+        0.59,
+        0.58,
+        0.59,
+        0.6
+      ],
+      "fcf": [
+        14.115344,
+        14.296,
+        14.58215,
+        15.442
+      ],
+      "diluted_shares": 4.837166,
+      "wacc": 0.115,
+      "terminal_growth": 0.02,
+      "terminal_ev_ebit": 17.0,
+      "terminal_price": 78.71,
+      "dividend_path": [
+        4.0,
+        3.5,
+        3.0,
+        2.5
+      ],
+      "per_share_value": 61.11,
+      "scenario_irr": -0.049
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "revenue_path": [
+        35.0,
+        38.0,
+        41.5,
+        45.0
+      ],
+      "gross_margin_path": [
+        0.8,
+        0.8,
+        0.81,
+        0.81
+      ],
+      "margin_path": [
+        0.62,
+        0.62,
+        0.63,
+        0.63
+      ],
+      "fcf": [
+        15.909244,
+        18.2124,
+        20.15455,
+        21.7965
+      ],
+      "diluted_shares": 4.837166,
+      "wacc": 0.105,
+      "terminal_growth": 0.025,
+      "terminal_ev_ebit": 20.0,
+      "terminal_price": 127.06,
+      "dividend_path": [
+        4.0,
+        4.0,
+        4.0,
+        4.0
+      ],
+      "per_share_value": 97.77,
+      "scenario_irr": 0.076
+    },
+    {
+      "name": "Up",
+      "probability": 0.2,
+      "revenue_path": [
+        39.0,
+        45.0,
+        52.0,
+        59.0
+      ],
+      "gross_margin_path": [
+        0.81,
+        0.82,
+        0.82,
+        0.825
+      ],
+      "margin_path": [
+        0.64,
+        0.65,
+        0.66,
+        0.66
+      ],
+      "fcf": [
+        17.584644,
+        22.2075,
+        25.9128,
+        29.4626
+      ],
+      "diluted_shares": 4.837166,
+      "wacc": 0.095,
+      "terminal_growth": 0.03,
+      "terminal_ev_ebit": 23.0,
+      "terminal_price": 197.56,
+      "dividend_path": [
+        4.0,
+        4.0,
+        4.5,
+        5.0
+      ],
+      "per_share_value": 151.31,
+      "scenario_irr": 0.205
+    }
+  ],
+  "valuation": {
+    "mode": "Mode C - Mature Compounder",
+    "core": 97.77,
+    "execution": 0.0,
+    "ecosystem": 0.0,
+    "drag": 0.0,
+    "expected_value": 97.47999999999999,
+    "expected_irr": 0.07373920018696856,
+    "current_price": 109.89,
+    "hurdle": 0.12,
+    "up_down_ratio": 0.8491184911849119,
+    "buy_trigger_for_up_down_gt_2": 91.18,
+    "hurdle_consistent_price_approx": 94.4,
+    "gordon_dcf_cross_check": {
+      "Down": 40.3,
+      "Base": 59.78,
+      "Up": 91.49
+    }
+  },
+  "reverse_expectations": {
+    "ev_current": 488.55348974,
+    "ttm_ebit": 19.403077,
+    "ev_ebit": 25.179175949257946,
+    "at_20x_implied_ebit": 24.427674486999997,
+    "at_20x_implied_revenue_at_62pct_margin": 39.399474979032256,
+    "at_17x_implied_ebit": 28.738440572941176,
+    "at_17x_implied_revenue_at_62pct_margin": 46.35232350474383,
+    "at_23x_implied_ebit": 21.241456075652174,
+    "at_23x_implied_revenue_at_62pct_margin": 34.26041302524544,
+    "four_year_terminal_20x_required_fy30_revenue": 51.94,
+    "four_year_terminal_20x_required_revenue_cagr": 0.1851,
+    "gordon_dcf_stress_required_fy30_revenue": 105.78,
+    "gordon_dcf_stress_required_cagr": 0.4157,
+    "interpretation": "시장형 20x terminal multiple 접근에서는 FY30 매출 약 $51.9M, FY26 대비 약 18.5% CAGR가 현재 가격을 정당화하는 핵심 허들이다. Gordon DCF 스트레스 테스트는 훨씬 더 높은 성장률을 요구하므로 중앙값이 아니라 하방 경계로만 사용한다."
+  },
+  "consensus": {
+    "fy1": {
+      "status": "PRIMARY_SOURCE_CEILING",
+      "value": null
+    },
+    "fy2": {
+      "status": "PRIMARY_SOURCE_CEILING",
+      "value": null
+    },
+    "revision_trend": "신뢰할 만한 다수 sell-side 수치 컨센서스가 사실상 부재. 가격 내재 기대를 주된 시장 기대 프록시로 사용."
+  },
+  "stance": {
+    "zone": "관망 / 신규 진입 대기; 기존 보유는 비중 확대보다 증거 확인 우선",
+    "price_bands": {
+      "<82": "적극 관심 - Down과 Base 사이에 큰 안전마진",
+      "82-90": "매력적 진입 후보 - U/D >2에 근접/충족",
+      "90-98": "조건부 관심 - Q2/Q3 반복 성장 확인 필요",
+      "98-115": "관망 - 현재 품질 프리미엄이 상당 부분 반영",
+      ">115": "Up 시나리오 수준의 지속 성장 증거 필요"
+    },
+    "horizon": "FY2030까지 약 3.6년",
+    "falsification": "RED KPI 2개 이상 동시 점등 또는 매출 정상화가 $7.5M 아래로 후퇴하면 성장 재가속 thesis 강제 재검토"
+  },
+  "catalysts": [
+    {
+      "when": "2026-08-31",
+      "event": "분기배당 $1 지급",
+      "sensitivity": "Low - 배당 유지 자체보다 FCF coverage가 중요"
+    },
+    {
+      "when": "2026-10 하순(예상)",
+      "event": "FY27 Q2 실적/콜",
+      "sensitivity": "Very High - Q1 run-rate 지속성 첫 검증"
+    },
+    {
+      "when": "2027-01 하순(예상)",
+      "event": "FY27 Q3 실적/콜",
+      "sensitivity": "Very High - design-in 반복성과 채널 정상화 구분"
+    },
+    {
+      "when": "2027-05 초(예상)",
+      "event": "FY27 10-K/Q4",
+      "sensitivity": "Very High - 연간 고객집중도·FCF·capex·배당 커버리지"
+    },
+    {
+      "when": "2027-06~08",
+      "event": "Proxy/annual meeting·CEO 첫 1년 평가",
+      "sensitivity": "Medium"
+    },
+    {
+      "when": "2027년 중",
+      "event": "Abbott/Pacesetter 계약 갱신 관련 신호",
+      "sensitivity": "High - 계약은 2027-12-31 만료"
+    }
+  ],
+  "module_m": {
+    "formal_consensus": "PRIMARY_SOURCE_CEILING",
+    "current_multiples": {
+      "pe": 29.54,
+      "ev_ebit": 25.23,
+      "p_fcf": 34.1
+    },
+    "historical_multiples": [
+      {
+        "period": "FY2022",
+        "pe": 18.15,
+        "ev_ebit": 12.57,
+        "p_fcf": 21.91
+      },
+      {
+        "period": "FY2023",
+        "pe": 17.67,
+        "ev_ebit": 13.57,
+        "p_fcf": 22.08
+      },
+      {
+        "period": "FY2024",
+        "pe": 25.45,
+        "ev_ebit": 20.61,
+        "p_fcf": 23.91
+      },
+      {
+        "period": "FY2025",
+        "pe": 20.47,
+        "ev_ebit": 16.2,
+        "p_fcf": 23.62
+      },
+      {
+        "period": "FY2026",
+        "pe": 20.85,
+        "ev_ebit": 17.2,
+        "p_fcf": 21.9
+      },
+      {
+        "period": "Current",
+        "pe": 29.54,
+        "ev_ebit": 25.23,
+        "p_fcf": 34.1
+      }
+    ],
+    "short_interest": {
+      "asof": "2026-07-31",
+      "shares": 504563,
+      "pct_float": 0.1066
+    },
+    "positioning_note": "가격은 7/23 Q1 발표 다음 거래일 +54.8% 급등. short interest도 7월 말 약 10.7%로 높아 기대 재설정과 포지셔닝이 동시에 주가 변동성을 키울 수 있음."
+  },
+  "variant_perception": {
+    "market_may_be_right": "Q1은 capacity-enabled new-product cycle의 시작이며 기존 고객의 신형 SKU 채택이 반복 주문으로 확장된다.",
+    "market_may_be_wrong": "Q1에는 반도체 업사이클·채널 재고 정상화·고객/방산 주문 타이밍이 섞였고 시장은 이를 영구적 성장 체제로 과도하게 외삽한다.",
+    "our_view": "사업 품질에 대한 확신은 높지만 현재 가격의 기대수익률에는 보수적. 좋은 회사와 좋은 가격을 분리한다.",
+    "mispricing_rationale": "희소한 고마진 spintronics 순수 노출, 빈약한 sell-side coverage, 한 분기 급증 및 short positioning이 결합해 가격이 실적 증거보다 빠르게 움직이기 쉬움."
+  },
+  "accounting_quality": {
+    "status": "PASS_WITH_NORMALIZATION",
+    "adjustments": [
+      "FY26 advanced manufacturing investment tax credit 약 $1.068M; FY27에는 크게 감소 예상",
+      "FY26 R&D/SG&A 감소 일부는 제조·신제품 활동으로 resource reassignment",
+      "FY27 Q1 AR 증가를 매출 급증/collection timing과 함께 추적",
+      "FY26 expansion capex 종료 후 maintenance capex 정상화 필요"
+    ]
+  },
+  "price_events": [
+    {
+      "date": "2026-06-22",
+      "close": 110.7,
+      "event": "CEO transition announced"
+    },
+    {
+      "date": "2026-06-23",
+      "close": 96.52,
+      "event": "post-announcement trading"
+    },
+    {
+      "date": "2026-06-30",
+      "close": 104.55,
+      "event": "FY27 Q1 quarter end"
+    },
+    {
+      "date": "2026-07-15",
+      "close": 88.52,
+      "event": "pre-earnings period"
+    },
+    {
+      "date": "2026-07-22",
+      "close": 86.68,
+      "event": "Q1 results released after close"
+    },
+    {
+      "date": "2026-07-23",
+      "close": 134.21,
+      "event": "first session after Q1; +54.8%"
+    },
+    {
+      "date": "2026-07-24",
+      "close": 117.55,
+      "event": "post-spike normalization"
+    },
+    {
+      "date": "2026-07-31",
+      "close": 116.27,
+      "event": "short-interest reference date"
+    },
+    {
+      "date": "2026-08-06",
+      "close": 129.43,
+      "event": "Eames CEO effective / annual meeting"
+    },
+    {
+      "date": "2026-08-11",
+      "close": 116.87,
+      "event": "post-transition"
+    },
+    {
+      "date": "2026-08-21",
+      "close": 109.89,
+      "event": "canonical price as-of"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "tier": "Primary",
+      "title": "NVE FY2026 Form 10-K",
+      "asof": "2026-05-06",
+      "url": "https://www.sec.gov/Archives/edgar/data/724910/000137647426000348/nvec-20260331_10k.htm"
+    },
+    {
+      "id": "S2",
+      "tier": "Primary",
+      "title": "NVE FY2027 Q1 Form 10-Q",
+      "asof": "2026-07-22",
+      "url": "https://www.sec.gov/Archives/edgar/data/724910/000137647426000514/nvec-20260630_10q.htm"
+    },
+    {
+      "id": "S3",
+      "tier": "Primary",
+      "title": "NVE FY2025 Form 10-K",
+      "asof": "2025-05-07",
+      "url": "https://www.sec.gov/Archives/edgar/data/724910/000137647425000437/nvec-20250331.htm"
+    },
+    {
+      "id": "S4",
+      "tier": "Primary",
+      "title": "NVE 2026 Proxy Statement",
+      "asof": "2026-06-22",
+      "url": "https://www.sec.gov/Archives/edgar/data/724910/000137647426000455/nvec-20260331_def14a.htm"
+    },
+    {
+      "id": "S5",
+      "tier": "Primary",
+      "title": "NVE CEO Transition 8-K",
+      "asof": "2026-06-22",
+      "url": "https://www.sec.gov/Archives/edgar/data/724910/000137647426000456/nvec-20260622_8k.htm"
+    },
+    {
+      "id": "S6",
+      "tier": "Primary",
+      "title": "Abbott/Pacesetter Supplier Partnering Amendment 12",
+      "asof": "2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/724910/000072491025000978/nve_ex10.6.htm"
+    },
+    {
+      "id": "S7",
+      "tier": "Primary",
+      "title": "NVE BDxx-20E Medical WLCSP release",
+      "asof": "2026-07-22",
+      "url": "https://www.nve.com/2026prs/BD-WLCSP"
+    },
+    {
+      "id": "S8",
+      "tier": "Primary",
+      "title": "NVE ADT501 TMR sensor release",
+      "asof": "2025",
+      "url": "https://www.nve.com/2025prs/ADT501"
+    },
+    {
+      "id": "S9",
+      "tier": "Primary",
+      "title": "NVE IL600/IL610CMTI product page",
+      "asof": "2026",
+      "url": "https://www.nve.com/il600.php/il700"
+    },
+    {
+      "id": "S10",
+      "tier": "Primary",
+      "title": "Texas Instruments DRV5032 product data",
+      "asof": "2026",
+      "url": "https://www.ti.com/product/DRV5032"
+    },
+    {
+      "id": "S11",
+      "tier": "Primary",
+      "title": "Texas Instruments ISO7721 product data",
+      "asof": "2026",
+      "url": "https://www.ti.com/product/ISO7721"
+    },
+    {
+      "id": "S12",
+      "tier": "Industry",
+      "title": "SIA 2025 global semiconductor sales",
+      "asof": "2026",
+      "url": "https://www.semiconductors.org/global-annual-semiconductor-sales-increase-25-6-to-791-7-billion-in-2025/"
+    },
+    {
+      "id": "S13",
+      "tier": "Industry",
+      "title": "IFR World Robotics 2025",
+      "asof": "2025",
+      "url": "https://ifr.org/worldrobotics/report-2025"
+    },
+    {
+      "id": "S14",
+      "tier": "Industry",
+      "title": "IFR U.S. robot industry growth",
+      "asof": "2026",
+      "url": "https://ifr.org/ifr-press-releases/us-robot-industry-returns-to-double-digit-growth"
+    },
+    {
+      "id": "S15",
+      "tier": "Secondary/Data",
+      "title": "StockAnalysis NVEC price history",
+      "asof": "2026-08-21",
+      "url": "https://stockanalysis.com/stocks/nvec/history/"
+    },
+    {
+      "id": "S16",
+      "tier": "Secondary/Data",
+      "title": "StockAnalysis NVEC valuation ratios",
+      "asof": "2026-08",
+      "url": "https://stockanalysis.com/stocks/nvec/financials/ratios/"
+    },
+    {
+      "id": "S17",
+      "tier": "Secondary",
+      "title": "FY2027 Q1 earnings-call transcript (MarketBeat)",
+      "asof": "2026-07-22",
+      "url": "https://www.marketbeat.com/earnings/reports/2026-7-22-nve-co-stock/"
+    },
+    {
+      "id": "S18",
+      "tier": "Secondary/Data",
+      "title": "NVEC short interest (MarketBeat)",
+      "asof": "2026-07-31",
+      "url": "https://www.marketbeat.com/stocks/NASDAQ/NVEC/short-interest/"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "promise": "경제적 정의와 역사",
+      "h3_locator": "Ch0/Ch3"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "promise": "B1-B5 산업 구조/전달",
+      "h3_locator": "Ch1"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "promise": "고객 job 및 선행지표",
+      "h3_locator": "Ch1/Ch6"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "promise": "Baker/Eames 실행 이력",
+      "h3_locator": "Ch2"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "promise": "보상·소유·거버넌스",
+      "h3_locator": "Ch2"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "promise": "사업모델·채널 경제성",
+      "h3_locator": "Ch3/Ch4"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "promise": "센서 정량 경쟁",
+      "h3_locator": "Ch3"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "promise": "아이솔레이터 정량 경쟁",
+      "h3_locator": "Ch3"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "promise": "SKU별 매출/백로그 비공개",
+      "h3_locator": "Ch3 + Appendix"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "promise": "37% 고객 정체/물량 비공개",
+      "h3_locator": "Ch3/Ch6 + Appendix"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "promise": "distributor sell-through 비공개",
+      "h3_locator": "Ch3/Ch4 + Appendix"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "promise": "방산 프로그램별 백로그 비공개",
+      "h3_locator": "Ch1/Ch3/Ch6 + Appendix"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "promise": "capacity/yield/utilization 단위 비공개",
+      "h3_locator": "Ch3/Ch4 + Appendix"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "promise": "moat 및 IP",
+      "h3_locator": "Ch3"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "promise": "3Y/8Q/FCF",
+      "h3_locator": "Ch4 + Appendix"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "promise": "세액공제·비용재분류·운전자본",
+      "h3_locator": "Ch4 + Appendix"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "promise": "현금·배당·희석",
+      "h3_locator": "Ch2/Ch4/Ch5"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "promise": "정량 sell-side consensus 부재",
+      "h3_locator": "Ch0/Ch5 + Appendix"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "COMPLETE",
+      "promise": "운영 시나리오와 밸류에이션",
+      "h3_locator": "Ch5"
+    },
+    {
+      "rc_id": "RC-020",
+      "status": "COMPLETE",
+      "promise": "KPI·촉매·반증조건",
+      "h3_locator": "Ch6"
+    }
+  ],
+  "visual_registry": [
+    {
+      "visual_id": "VIS-001",
+      "title": "3Y Revenue / Operating Income / FCF",
+      "source_path": "financials.annual_3y",
+      "transform": "direct $M series"
+    },
+    {
+      "visual_id": "VIS-002",
+      "title": "Latest 8Q Revenue & Operating Margin",
+      "source_path": "financials.quarterly_8q",
+      "transform": "revenue direct; margin = operating_income/revenue"
+    },
+    {
+      "visual_id": "VIS-003",
+      "title": "FY27-FY30 Scenario Revenue Paths",
+      "source_path": "scenarios[].revenue_path",
+      "transform": "direct"
+    },
+    {
+      "visual_id": "VIS-004",
+      "title": "Scenario Fair Value vs Current Price",
+      "source_path": "scenarios[].per_share_value + valuation.current_price",
+      "transform": "direct"
+    },
+    {
+      "visual_id": "VIS-005",
+      "title": "EV/EBIT History",
+      "source_path": "module_m.historical_multiples[].ev_ebit",
+      "transform": "direct"
+    },
+    {
+      "visual_id": "VIS-006",
+      "title": "Event-Annotated Price Path",
+      "source_path": "price_events",
+      "transform": "direct close series"
+    }
+  ]
+}

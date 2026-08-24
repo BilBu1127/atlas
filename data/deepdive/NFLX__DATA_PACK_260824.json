@@ -1,0 +1,537 @@
+{
+  "report_meta": {
+    "company": "Netflix, Inc.",
+    "ticker": "NFLX",
+    "exchange": "NASDAQ",
+    "framework": "Deep Dive OS v1.7",
+    "t0": "2026-08-24T22:30:00+09:00",
+    "currency": "USD",
+    "valuation_router": "Mode C — Mature Compounder",
+    "human_gate": "H1 approved; H2/H3 auto-released"
+  },
+  "as_of_registry": {
+    "PRICE_ASOF": {
+      "date": "2026-08-21",
+      "close": 79.59,
+      "basis": "regular-session close, split-adjusted"
+    },
+    "FILING_ASOF": {
+      "period": "2026-Q2",
+      "form": "10-Q",
+      "filed": "2026-07-17"
+    },
+    "EARNINGS_ASOF": {
+      "period": "2026-Q2",
+      "date": "2026-07-16"
+    },
+    "CONSENSUS_ASOF": {
+      "date": "2026-08-21",
+      "provider_context": "S&P Global aggregation via StockAnalysis"
+    },
+    "SHORT_INTEREST_ASOF": "2026-07-31",
+    "NIELSEN_ASOF": "2026-06 data, released 2026-08-18",
+    "LATEST_FILING_CHECK": {
+      "status": "PASS",
+      "through": "2026-08-24",
+      "notes": "Post-Q2 debt issuance, board resignation and Form 4 filings checked; no newer quarterly result."
+    }
+  },
+  "thesis": {
+    "core": "Netflix is a mature global entertainment platform monetizing the same viewing relationship through subscription pricing, advertising, live events and content efficiency.",
+    "variant_perception": "Business quality is high, but current price requires mid-teens FCF growth for several years; current mispricing is weak rather than clearly favorable.",
+    "stance": "WATCH",
+    "industry_to_company_strength": "STRONG",
+    "mispricing_rationale": "NOT_YET_ACTIONABLE",
+    "biggest_unknowns": [
+      "Exact advertising CPM/fill rate/incremental margin",
+      "Recommendation/Open Connect unit economics",
+      "Complete proprietary consensus revision and 13F flow history"
+    ]
+  },
+  "annual_financials": [
+    {
+      "fy": 2023,
+      "revenue_b": 33.723,
+      "operating_income_b": 6.954,
+      "operating_margin": 0.206,
+      "ocf_b": 7.274,
+      "capex_b": 0.349,
+      "fcf_b": 6.926,
+      "content_additions_b": 12.555,
+      "content_amortization_b": 14.197,
+      "diluted_shares_b": 4.495
+    },
+    {
+      "fy": 2024,
+      "revenue_b": 39.001,
+      "operating_income_b": 10.418,
+      "operating_margin": 0.267,
+      "ocf_b": 7.361,
+      "capex_b": 0.44,
+      "fcf_b": 6.922,
+      "content_additions_b": 16.224,
+      "content_amortization_b": 15.302,
+      "diluted_shares_b": 4.393
+    },
+    {
+      "fy": 2025,
+      "revenue_b": 45.183,
+      "operating_income_b": 13.327,
+      "operating_margin": 0.295,
+      "ocf_b": 10.149,
+      "capex_b": 0.688,
+      "fcf_b": 9.461,
+      "content_additions_b": 17.097,
+      "content_amortization_b": 16.422,
+      "diluted_shares_b": 4.344
+    },
+    {
+      "fy": 2026,
+      "revenue_b": 51.2,
+      "operating_margin": 0.315,
+      "reported_fcf_b": 12.5,
+      "normalized_core_fcf_b": 11.0,
+      "basis": "company FY26 guidance midpoint / normalized for WBD termination fee"
+    }
+  ],
+  "latest_8q": [
+    {
+      "quarter": "Q3'24",
+      "revenue_b": 9.825,
+      "yoy": 0.15,
+      "operating_margin": 0.296,
+      "net_income_b": 2.364,
+      "ocf_b": 2.321,
+      "fcf_b": 2.194,
+      "diluted_shares_b": 4.379
+    },
+    {
+      "quarter": "Q4'24",
+      "revenue_b": 10.247,
+      "yoy": 0.16,
+      "operating_margin": 0.222,
+      "net_income_b": 1.869,
+      "ocf_b": 1.537,
+      "fcf_b": 1.378,
+      "diluted_shares_b": 4.378
+    },
+    {
+      "quarter": "Q1'25",
+      "revenue_b": 10.543,
+      "yoy": 0.125,
+      "operating_margin": 0.317,
+      "net_income_b": 2.89,
+      "ocf_b": 2.789,
+      "fcf_b": 2.661,
+      "diluted_shares_b": 4.37
+    },
+    {
+      "quarter": "Q2'25",
+      "revenue_b": 11.079,
+      "yoy": 0.159,
+      "operating_margin": 0.341,
+      "net_income_b": 3.125,
+      "ocf_b": 2.423,
+      "fcf_b": 2.267,
+      "diluted_shares_b": 4.349
+    },
+    {
+      "quarter": "Q3'25",
+      "revenue_b": 11.51,
+      "yoy": 0.172,
+      "operating_margin": 0.282,
+      "net_income_b": 2.547,
+      "ocf_b": 2.825,
+      "fcf_b": 2.66,
+      "diluted_shares_b": 4.34
+    },
+    {
+      "quarter": "Q4'25",
+      "revenue_b": 12.051,
+      "yoy": 0.176,
+      "operating_margin": 0.245,
+      "net_income_b": 2.419,
+      "ocf_b": 2.112,
+      "fcf_b": 1.872,
+      "diluted_shares_b": 4.317
+    },
+    {
+      "quarter": "Q1'26",
+      "revenue_b": 12.25,
+      "yoy": 0.162,
+      "operating_margin": 0.323,
+      "net_income_b": 5.283,
+      "ocf_b": 5.29,
+      "fcf_b": 5.094,
+      "diluted_shares_b": 4.298,
+      "note": "Includes $2.8B WBD termination fee effect"
+    },
+    {
+      "quarter": "Q2'26",
+      "revenue_b": 12.56,
+      "yoy": 0.134,
+      "operating_margin": 0.334,
+      "net_income_b": 3.401,
+      "ocf_b": 1.744,
+      "fcf_b": 1.525,
+      "diluted_shares_b": 4.261
+    }
+  ],
+  "q2_2026_regions": [
+    {
+      "region": "UCAN",
+      "revenue_b": 5.432,
+      "reported_yoy": 0.1,
+      "fx_neutral_yoy": 0.1
+    },
+    {
+      "region": "EMEA",
+      "revenue_b": 4.034,
+      "reported_yoy": 0.14,
+      "fx_neutral_yoy": 0.11
+    },
+    {
+      "region": "LATAM",
+      "revenue_b": 1.584,
+      "reported_yoy": 0.21,
+      "fx_neutral_yoy": 0.16
+    },
+    {
+      "region": "APAC",
+      "revenue_b": 1.51,
+      "reported_yoy": 0.16,
+      "fx_neutral_yoy": 0.18
+    }
+  ],
+  "balance_sheet_q2_2026": {
+    "cash_short_term_investments_b": 9.131,
+    "debt_b": 14.309,
+    "gross_debt_approx_b": 14.4,
+    "net_debt_proxy_b": 5.178,
+    "shares_outstanding_b": 4.163939676,
+    "q2_buyback_b": 4.7,
+    "h1_buyback_b": 6.0,
+    "remaining_buyback_authorization_b": 27.1,
+    "h1_sbc_b": 0.272
+  },
+  "operating_kpis": {
+    "h1_2026_view_hours_b": 97.0,
+    "h1_2026_view_hours_yoy_approx": 0.02,
+    "ads_2025_revenue_floor_b": 1.5,
+    "ads_2025_growth_multiple_gt": 2.5,
+    "ads_2026_guidance_b": 3.0,
+    "ads_mav_2026_05_m": 250,
+    "live_share_content_spend_gt": 0.05,
+    "live_share_view_hours_approx": 0.01,
+    "live_top10_signup_days_of_last5y": 6,
+    "open_connect_isp_partners_gt": 1000,
+    "open_connect_data_centers_gt": 60,
+    "youtube_us_tv_share_2026_06": 0.138,
+    "youtube_ads_q2_2026_b": 11.055
+  },
+  "consensus": {
+    "analysts": 51,
+    "rating": "Buy",
+    "average_target": 93.42,
+    "median_target": 92.0,
+    "low_target": 70.0,
+    "high_target": 135.0,
+    "fy2026_revenue_b": 51.22,
+    "fy2027_revenue_b": 57.01,
+    "fy2026_eps": 3.59,
+    "fy2027_eps": 3.82,
+    "short_interest_shares_m": 92.2,
+    "short_interest_float_pct": 2.24,
+    "days_to_cover": 1.6
+  },
+  "valuation": {
+    "current_price": 79.59,
+    "market_cap_b": 331.408,
+    "normalized_core_fcf_b": 11.0,
+    "reported_fcf_guidance_b": 12.5,
+    "normalized_p_fcf": 30.1,
+    "normalized_fcf_yield": 0.0332,
+    "reverse_expectations": {
+      "cost_of_equity": 0.09,
+      "terminal_growth": 0.03,
+      "five_year_fcf_cagr_implied": 0.1654
+    },
+    "current_fair_value_cross_check": {
+      "low": 78,
+      "high": 82
+    },
+    "reference_hurdle": 0.12,
+    "probability_weighted_2029_value": 96.2,
+    "expected_3y_irr": 0.0652,
+    "entry_price_for_12pct_expected_irr": 68.47,
+    "attractive_band": {
+      "low": 65,
+      "high": 70
+    },
+    "strong_asymmetry_below": 65,
+    "scenarios": [
+      {
+        "name": "Down",
+        "probability": 0.3,
+        "revenue_2029_b": 61,
+        "revenue_cagr_2026_29": 0.06,
+        "op_margin_2029": 0.3,
+        "fcf_2029_b": 12.0,
+        "economic_shares_2029_b": 4.0,
+        "exit_fcf_yield": 0.055,
+        "price_2029": 52
+      },
+      {
+        "name": "Base",
+        "probability": 0.5,
+        "revenue_2029_b": 67,
+        "revenue_cagr_2026_29": 0.09,
+        "op_margin_2029": 0.35,
+        "fcf_2029_b": 15.5,
+        "economic_shares_2029_b": 3.8,
+        "exit_fcf_yield": 0.04,
+        "price_2029": 102
+      },
+      {
+        "name": "Up",
+        "probability": 0.2,
+        "revenue_2029_b": 71,
+        "revenue_cagr_2026_29": 0.12,
+        "op_margin_2029": 0.37,
+        "fcf_2029_b": 18.0,
+        "economic_shares_2029_b": 3.65,
+        "exit_fcf_yield": 0.033,
+        "price_2029": 148
+      }
+    ],
+    "dcf_current_value_sensitivity": {
+      "Down": 39,
+      "Base": 63,
+      "Up": 97,
+      "note": "Equity FCF DCF cross-check; terminal-value sensitive and not used alone."
+    }
+  },
+  "kpi_traffic_light": [
+    {
+      "kpi": "Revenue growth",
+      "green": ">=11%",
+      "yellow": "8–11%",
+      "red": "<8%"
+    },
+    {
+      "kpi": "Operating margin",
+      "green": ">=31.5% FY26 / rising",
+      "yellow": "30–31.5%",
+      "red": "<30% sustained"
+    },
+    {
+      "kpi": "View-hours growth",
+      "green": ">=5%",
+      "yellow": "0–5%",
+      "red": "<=0% for two half-years"
+    },
+    {
+      "kpi": "Ads revenue",
+      "green": "~$3B FY26 and >20% thereafter",
+      "yellow": "near target",
+      "red": "miss/structural slowdown"
+    },
+    {
+      "kpi": "Ads operating leverage",
+      "green": "S&M+Tech growth far below ads",
+      "yellow": "similar",
+      "red": "costs grow faster"
+    },
+    {
+      "kpi": "Cash content / amortization",
+      "green": "~1.0–1.1x",
+      "yellow": "1.1–1.2x",
+      "red": ">1.2x sustained"
+    }
+  ],
+  "catalysts": [
+    {
+      "timing": "2026-10 expected",
+      "event": "Q3 2026 results",
+      "watch": "~11.7% revenue growth guide, margin, ads commentary"
+    },
+    {
+      "timing": "2026 Q4",
+      "event": "Holiday/live slate",
+      "watch": "signup/engagement and premium ad demand"
+    },
+    {
+      "timing": "2027-01 expected",
+      "event": "FY26 results",
+      "watch": "$3B ads, 31.5% margin, 2027 guide, normalized FCF"
+    },
+    {
+      "timing": "2027 Q1",
+      "event": "Annual view-hours report",
+      "watch": "Engagement vs monetization"
+    },
+    {
+      "timing": "2027 Upfront",
+      "event": "Advertising maturation",
+      "watch": "pricing/measurement/programmatic depth"
+    }
+  ],
+  "rc_ledger": {
+    "total": 19,
+    "complete": 16,
+    "primary_source_ceiling": 3,
+    "not_material": 0,
+    "contradicted": 0,
+    "unresolved": 0,
+    "h3_coverage_rate": 1.0,
+    "ceiling_rcs": [
+      "RC-004",
+      "RC-008",
+      "RC-016"
+    ]
+  },
+  "visual_lineage": [
+    {
+      "visual_id": "V01",
+      "title": "Revenue & Operating Margin",
+      "fields": [
+        "annual_financials[*].revenue_b",
+        "annual_financials[*].operating_margin"
+      ]
+    },
+    {
+      "visual_id": "V02",
+      "title": "Latest 8Q Revenue & Margin",
+      "fields": [
+        "latest_8q[*].revenue_b",
+        "latest_8q[*].operating_margin"
+      ]
+    },
+    {
+      "visual_id": "V03",
+      "title": "Content Additions vs Amortization",
+      "fields": [
+        "annual_financials[0:3].content_additions_b",
+        "annual_financials[0:3].content_amortization_b"
+      ]
+    },
+    {
+      "visual_id": "V04",
+      "title": "Advertising Scale-up",
+      "fields": [
+        "operating_kpis.ads_2025_revenue_floor_b",
+        "operating_kpis.ads_2026_guidance_b"
+      ]
+    },
+    {
+      "visual_id": "V05",
+      "title": "2029 Scenario Price Distribution",
+      "fields": [
+        "valuation.current_price",
+        "valuation.scenarios[*].price_2029",
+        "valuation.scenarios[*].probability"
+      ]
+    },
+    {
+      "visual_id": "V06",
+      "title": "Reverse Expectations",
+      "fields": [
+        "valuation.normalized_core_fcf_b",
+        "valuation.reverse_expectations.five_year_fcf_cagr_implied",
+        "valuation.reference_hurdle"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "name": "Netflix Q2 2026 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/nflx-20260630.htm",
+      "type": "primary"
+    },
+    {
+      "id": "S02",
+      "name": "Netflix Q2 2026 Shareholder Letter",
+      "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000211/ex991_q226.htm",
+      "type": "primary"
+    },
+    {
+      "id": "S03",
+      "name": "Netflix Q1 2026 Shareholder Letter",
+      "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000137/ex991_q126.htm",
+      "type": "primary"
+    },
+    {
+      "id": "S04",
+      "name": "Netflix 2025 Form 10-K",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=1065280&owner=exclude",
+      "type": "primary"
+    },
+    {
+      "id": "S05",
+      "name": "Netflix 2026 Proxy Statement",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=1065280&owner=exclude",
+      "type": "primary"
+    },
+    {
+      "id": "S06",
+      "name": "Netflix WBD withdrawal release",
+      "url": "https://ir.netflix.net/investor-news-and-events/financial-releases/press-release-details/2026/Netflix-Declines-to-Raise-Offer-for-Warner-Bros-/",
+      "type": "primary"
+    },
+    {
+      "id": "S07",
+      "name": "Netflix Ads Upfront 2026",
+      "url": "https://about.netflix.com/en/news/netflix-upfront-2026-get-closer",
+      "type": "primary"
+    },
+    {
+      "id": "S08",
+      "name": "Netflix 2026 US Upfront close",
+      "url": "https://about.netflix.com/en/news/netflix-gets-closer-closes-2026-us-upfront",
+      "type": "primary"
+    },
+    {
+      "id": "S09",
+      "name": "Netflix Ads Suite update",
+      "url": "https://about.netflix.com/en/news/netflix-ads-suite-expands-capabilities",
+      "type": "primary"
+    },
+    {
+      "id": "S10",
+      "name": "Netflix Open Connect",
+      "url": "https://openconnect.netflix.com/en/",
+      "type": "primary"
+    },
+    {
+      "id": "S11",
+      "name": "Nielsen June 2026 Gauge",
+      "url": "https://www.nielsen.com/news-center/2026/fox-and-nbcuniversal-score-with-fifa-world-cup-2026-success-in-nielsens-june-gauge-reports/",
+      "type": "industry"
+    },
+    {
+      "id": "S12",
+      "name": "Alphabet Q2 2026 results",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm",
+      "type": "primary_peer"
+    },
+    {
+      "id": "S13",
+      "name": "StockAnalysis NFLX consensus",
+      "url": "https://stockanalysis.com/stocks/nflx/forecast/",
+      "type": "secondary_market"
+    },
+    {
+      "id": "S14",
+      "name": "Macrotrends NFLX split-adjusted price history",
+      "url": "https://www.macrotrends.net/stocks/charts/NFLX/netflix/stock-price-history",
+      "type": "secondary_market"
+    },
+    {
+      "id": "S15",
+      "name": "MarketBeat short interest",
+      "url": "https://www.marketbeat.com/stocks/NASDAQ/NFLX/short-interest/",
+      "type": "secondary_market"
+    }
+  ]
+}

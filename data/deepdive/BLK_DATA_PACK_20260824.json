@@ -1,0 +1,830 @@
+{
+  "meta": {
+    "ticker": "BLK",
+    "company": "BlackRock, Inc.",
+    "T0": "2026-08-24",
+    "timezone": "Asia/Seoul",
+    "price_asof": "2026-08-21",
+    "price": 1156.55,
+    "filing_asof": "2026-08-06 Form 10-Q (2026-06-30)",
+    "consensus_asof": "2026-08-24",
+    "version": "DDOS v1.7",
+    "stance": "WATCH",
+    "rc_unresolved": 0
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "aum_tn": 10.009,
+        "revenue_bn": 17.859,
+        "gaap_operating_income_bn": 6.275,
+        "adjusted_operating_income_bn": 6.593,
+        "gaap_operating_margin": 0.351,
+        "adjusted_operating_margin": 0.417,
+        "gaap_net_income_bn": 5.502,
+        "adjusted_net_income_bn": 5.692,
+        "diluted_shares_m": 150.7,
+        "gaap_eps": 36.51,
+        "adjusted_eps": 37.77,
+        "ocf_bn": 4.165,
+        "capex_bn": 0.344,
+        "fcf_bn": 3.821,
+        "dividend_per_share": 20.0
+      },
+      {
+        "year": 2024,
+        "aum_tn": 11.551,
+        "revenue_bn": 20.407,
+        "gaap_operating_income_bn": 7.574,
+        "adjusted_operating_income_bn": 8.11,
+        "gaap_operating_margin": 0.371,
+        "adjusted_operating_margin": 0.445,
+        "gaap_net_income_bn": 6.369,
+        "adjusted_net_income_bn": 6.612,
+        "diluted_shares_m": 151.6,
+        "gaap_eps": 42.01,
+        "adjusted_eps": 43.61,
+        "ocf_bn": 4.956,
+        "capex_bn": 0.255,
+        "fcf_bn": 4.701,
+        "dividend_per_share": 20.4
+      },
+      {
+        "year": 2025,
+        "aum_tn": 14.042,
+        "revenue_bn": 24.216,
+        "gaap_operating_income_bn": 7.045,
+        "adjusted_operating_income_bn": 9.6,
+        "gaap_operating_margin": 0.291,
+        "adjusted_operating_margin": 0.441,
+        "gaap_net_income_bn": 5.553,
+        "adjusted_net_income_bn": 7.736,
+        "diluted_shares_m": 160.9,
+        "gaap_eps": 35.31,
+        "adjusted_eps": 48.09,
+        "ocf_bn": 3.927,
+        "capex_bn": 0.375,
+        "fcf_bn": 3.552,
+        "dividend_per_share": 20.84
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "3Q24",
+        "aum_tn": 11.475,
+        "net_flows_bn": 221.2,
+        "revenue_bn": 5.197,
+        "adjusted_operating_margin": 0.458,
+        "adjusted_eps": 11.46,
+        "diluted_shares_m": 149.6
+      },
+      {
+        "quarter": "4Q24",
+        "aum_tn": 11.551,
+        "net_flows_bn": 281.4,
+        "revenue_bn": 5.677,
+        "adjusted_operating_margin": 0.455,
+        "adjusted_eps": 11.93,
+        "diluted_shares_m": 157.0
+      },
+      {
+        "quarter": "1Q25",
+        "aum_tn": 11.584,
+        "net_flows_bn": 84.2,
+        "revenue_bn": 5.276,
+        "adjusted_operating_margin": 0.432,
+        "adjusted_eps": 11.3,
+        "diluted_shares_m": 156.6
+      },
+      {
+        "quarter": "2Q25",
+        "aum_tn": 12.528,
+        "net_flows_bn": 67.7,
+        "revenue_bn": 5.423,
+        "adjusted_operating_margin": 0.433,
+        "adjusted_eps": 12.05,
+        "diluted_shares_m": 156.3
+      },
+      {
+        "quarter": "3Q25",
+        "aum_tn": 13.464,
+        "net_flows_bn": 205.0,
+        "revenue_bn": 6.509,
+        "adjusted_operating_margin": 0.446,
+        "adjusted_eps": 11.55,
+        "diluted_shares_m": 165.2
+      },
+      {
+        "quarter": "4Q25",
+        "aum_tn": 14.042,
+        "net_flows_bn": 341.7,
+        "revenue_bn": 7.008,
+        "adjusted_operating_margin": 0.45,
+        "adjusted_eps": 13.16,
+        "diluted_shares_m": 165.4
+      },
+      {
+        "quarter": "1Q26",
+        "aum_tn": 13.895,
+        "net_flows_bn": 129.7,
+        "revenue_bn": 6.698,
+        "adjusted_operating_margin": 0.445,
+        "adjusted_eps": 12.53,
+        "diluted_shares_m": 165.0
+      },
+      {
+        "quarter": "2Q26",
+        "aum_tn": 15.345,
+        "net_flows_bn": 191.7,
+        "revenue_bn": 7.084,
+        "adjusted_operating_margin": 0.459,
+        "adjusted_eps": 13.91,
+        "diluted_shares_m": 164.6
+      }
+    ],
+    "revenue_mix_annual": [
+      {
+        "year": 2023,
+        "base_fees_seclending_bn": 14.399,
+        "performance_fees_bn": 0.554,
+        "technology_bn": 1.485,
+        "distribution_bn": 1.262,
+        "advisory_other_bn": 0.159
+      },
+      {
+        "year": 2024,
+        "base_fees_seclending_bn": 16.1,
+        "performance_fees_bn": 1.207,
+        "technology_bn": 1.603,
+        "distribution_bn": 1.273,
+        "advisory_other_bn": 0.224
+      },
+      {
+        "year": 2025,
+        "base_fees_seclending_bn": 19.179,
+        "performance_fees_bn": 1.424,
+        "technology_bn": 1.981,
+        "distribution_bn": 1.355,
+        "advisory_other_bn": 0.277
+      }
+    ],
+    "h1_2026_cashflow": {
+      "ocf_ex_cip_bn": 3.106,
+      "capex_bn": 0.215,
+      "derived_fcf_bn": 2.891,
+      "adjusted_net_income_bn": 4.359,
+      "fcf_to_adjusted_ni": 0.663
+    },
+    "balance_sheet_2026q2": {
+      "cash_bn": 10.492,
+      "borrowings_bn": 12.744,
+      "goodwill_bn": 35.203,
+      "intangibles_bn": 27.415,
+      "liquidity_resources_ex_cip_bn": 16.457
+    },
+    "ceilings": [
+      "Quarterly OCF is seasonally distorted; annual/LTM cash conversion preferred.",
+      "SOTP segment operating profit/FCF not separately disclosed."
+    ]
+  },
+  "business_mix": {
+    "q2_2026": [
+      {
+        "category": "ETFs",
+        "aum_share": 0.41,
+        "base_fee_share": 0.45
+      },
+      {
+        "category": "Institutional index",
+        "aum_share": 0.26,
+        "base_fee_share": 0.05
+      },
+      {
+        "category": "Institutional active",
+        "aum_share": 0.17,
+        "base_fee_share": 0.21
+      },
+      {
+        "category": "Retail",
+        "aum_share": 0.09,
+        "base_fee_share": 0.23
+      },
+      {
+        "category": "Cash",
+        "aum_share": 0.07,
+        "base_fee_share": 0.06
+      },
+      {
+        "category": "Private markets",
+        "aum_share": 0.02,
+        "base_fee_share": 0.11
+      }
+    ],
+    "flows_q2_2026": {
+      "long_term_net_inflow_bn": 199.134,
+      "etf_bn": 177.934,
+      "retail_bn": 18.862,
+      "institutional_active_bn": 43.792,
+      "institutional_index_bn": -41.454,
+      "cash_bn": -7.434,
+      "total_net_flows_bn": 191.7
+    },
+    "private_markets": {
+      "aum_bn": 329.083,
+      "q2_net_inflow_bn": 15.432,
+      "h1_net_inflow_bn": 24.509,
+      "ltm_net_inflow_bn": 50.379,
+      "q2_base_fee_bn": 0.639,
+      "non_fee_paying_commitments_y2025_bn": 91.0
+    }
+  },
+  "management": {
+    "targets_2030": {
+      "revenue_bn_gt": 35,
+      "private_plus_technology_revenue_share_gte": 0.3,
+      "organic_base_fee_growth_gte": 0.05,
+      "technology_acv_growth": "low-mid-teens",
+      "adjusted_operating_margin_gte": 0.45
+    },
+    "current_delivery": {
+      "ltm_organic_base_fee_growth": 0.1,
+      "q2_organic_base_fee_growth": 0.08,
+      "technology_acv_growth": 0.15,
+      "q2_adjusted_operating_margin": 0.459
+    },
+    "assessment": {
+      "operating_targets": "ON_TRACK",
+      "per_share_compounding": "NOT_YET_PROVEN"
+    }
+  },
+  "capital_structure": {
+    "common_shares_m": 155.0,
+    "hps_subco_units_m": 7.6,
+    "economic_period_end_units_m": 162.6,
+    "q2_adjusted_diluted_weighted_avg_m": 164.6,
+    "hps_deferred_units_m_range": [
+      2.8,
+      4.4
+    ],
+    "cash_bn": 10.492,
+    "borrowings_bn": 12.744,
+    "2026_buyback_plan_bn": 2.0,
+    "quarterly_dividend": 5.73
+  },
+  "kpis": [
+    {
+      "name": "LTM organic base-fee growth",
+      "current": 0.1,
+      "current_label": "10%",
+      "thresholds": {
+        "green": ">=5%",
+        "yellow": "3-5%",
+        "red": "<3%"
+      },
+      "status": "GREEN",
+      "frequency": "quarterly",
+      "source": "S02"
+    },
+    {
+      "name": "Technology organic ACV growth",
+      "current": 0.15,
+      "current_label": "15%",
+      "thresholds": {
+        "green": ">=12%",
+        "yellow": "8-12%",
+        "red": "<8%"
+      },
+      "status": "GREEN",
+      "frequency": "quarterly",
+      "source": "S02"
+    },
+    {
+      "name": "Private-market net inflow",
+      "current": 50.379,
+      "current_label": "LTM $50.4bn",
+      "thresholds": {
+        "green": "annualized >=$25bn and deployment healthy",
+        "yellow": "$0-25bn",
+        "red": "sustained net outflow / realizations dominate"
+      },
+      "status": "GREEN",
+      "frequency": "quarterly",
+      "source": "S01"
+    },
+    {
+      "name": "Adjusted operating margin",
+      "current": 0.459,
+      "current_label": "45.9%",
+      "thresholds": {
+        "green": ">=45%",
+        "yellow": "42-45%",
+        "red": "<42%"
+      },
+      "status": "GREEN",
+      "frequency": "quarterly/LTM",
+      "source": "S02"
+    },
+    {
+      "name": "Economic diluted shares YoY",
+      "current": 0.053,
+      "current_label": "~+5% YoY",
+      "thresholds": {
+        "green": "<=1%",
+        "yellow": "1-3%",
+        "red": ">3%"
+      },
+      "status": "RED",
+      "frequency": "quarterly",
+      "source": "S01"
+    },
+    {
+      "name": "FCF / adjusted net income",
+      "current": 0.663,
+      "current_label": "1H26 ~66%",
+      "thresholds": {
+        "green": ">=75%",
+        "yellow": "55-75%",
+        "red": "<55%"
+      },
+      "status": "YELLOW",
+      "frequency": "half-year/LTM",
+      "source": "S01"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.25,
+      "revenue_path": {
+        "2026E": 28.8,
+        "2027E": 27.8,
+        "2028E": 28.6,
+        "2029E": 30.0,
+        "2030E": 31.5
+      },
+      "margin_path": {
+        "2027E": 0.42,
+        "2028E": 0.425,
+        "2029E": 0.43,
+        "2030E": 0.44
+      },
+      "fcf": {
+        "2029E": 6.7
+      },
+      "diluted_shares": {
+        "2029E": 173.0
+      },
+      "eps_2029": 53.2,
+      "exit_pe": 16.0,
+      "cumulative_dividend": 70.0,
+      "terminal_wealth": 921.2,
+      "per_share_value": 639.71,
+      "irr": -0.065661
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "revenue_path": {
+        "2026E": 28.8,
+        "2027E": 32.4,
+        "2028E": 35.7,
+        "2029E": 39.0,
+        "2030E": 42.3
+      },
+      "margin_path": {
+        "2027E": 0.455,
+        "2028E": 0.46,
+        "2029E": 0.465,
+        "2030E": 0.465
+      },
+      "fcf": {
+        "2029E": 11.2
+      },
+      "diluted_shares": {
+        "2029E": 168.0
+      },
+      "eps_2029": 79.4,
+      "exit_pe": 19.5,
+      "cumulative_dividend": 78.0,
+      "terminal_wealth": 1626.3,
+      "per_share_value": 1129.35,
+      "irr": 0.107108
+    },
+    {
+      "name": "Up",
+      "probability": 0.25,
+      "revenue_path": {
+        "2026E": 28.8,
+        "2027E": 33.5,
+        "2028E": 37.3,
+        "2029E": 41.7,
+        "2030E": 46.3
+      },
+      "margin_path": {
+        "2027E": 0.465,
+        "2028E": 0.47,
+        "2029E": 0.475,
+        "2030E": 0.48
+      },
+      "fcf": {
+        "2029E": 13.5
+      },
+      "diluted_shares": {
+        "2029E": 164.0
+      },
+      "eps_2029": 90.5,
+      "exit_pe": 22.5,
+      "cumulative_dividend": 84.0,
+      "terminal_wealth": 2120.25,
+      "per_share_value": 1472.37,
+      "irr": 0.198323
+    }
+  ],
+  "valuation": {
+    "mode": "Mode C Mature Compounder",
+    "core": "normalized adjusted EPS x through-cycle P/E; probability-weighted terminal wealth",
+    "execution": "owner-earnings DCF and FCF yield cross-check",
+    "ecosystem": "whole-portfolio platform mix premium",
+    "drag": "acquisition dilution, cash conversion, market beta",
+    "hurdle_rate": 0.115,
+    "risk_free_10y": 0.0469,
+    "horizon_years": 3.35,
+    "expected_terminal_wealth": 1573.51,
+    "expected_value": 1092.69,
+    "expected_irr": 0.096256,
+    "current_price": 1156.55,
+    "premium_to_expected_value": 0.058438,
+    "base_pv": 1129.35,
+    "owner_earnings_dcf": {
+      "start_owner_earnings_bn": 8.0,
+      "growth_years_1_5": 0.1,
+      "growth_years_6_10": 0.06,
+      "terminal_growth": 0.035,
+      "discount_rate": 0.115,
+      "equity_value_bn": 145.72,
+      "per_share_value": 896.2,
+      "per_share_value_at_10pct_discount": 1117.4
+    },
+    "price_bands": {
+      "strong_attractive": "<=950",
+      "attractive": "950-1090",
+      "watch_fair": "1090-1200",
+      "expensive": "1200-1350",
+      "very_expensive": ">1350"
+    },
+    "price_band_curve": [
+      {
+        "price": 900,
+        "expected_irr": 0.181479
+      },
+      {
+        "price": 950,
+        "expected_irr": 0.162564
+      },
+      {
+        "price": 1000,
+        "expected_irr": 0.144899
+      },
+      {
+        "price": 1050,
+        "expected_irr": 0.128345
+      },
+      {
+        "price": 1090,
+        "expected_irr": 0.115823
+      },
+      {
+        "price": 1100,
+        "expected_irr": 0.112785
+      },
+      {
+        "price": 1156.55,
+        "expected_irr": 0.096256
+      },
+      {
+        "price": 1200,
+        "expected_irr": 0.084254
+      },
+      {
+        "price": 1250,
+        "expected_irr": 0.071122
+      },
+      {
+        "price": 1300,
+        "expected_irr": 0.058655
+      },
+      {
+        "price": 1350,
+        "expected_irr": 0.046795
+      },
+      {
+        "price": 1400,
+        "expected_irr": 0.035492
+      }
+    ],
+    "sotp_status": "PRIMARY_SOURCE_CEILING"
+  },
+  "reverse_expectations": {
+    "required_terminal_wealth_at_11_5pct": 1665.46,
+    "assumed_cumulative_dividend": 78.0,
+    "required_2029_eps_by_exit_pe": {
+      "18.0": 88.19,
+      "19.5": 81.41,
+      "21.0": 75.59,
+      "22.5": 70.55
+    },
+    "base_2029_eps": 79.4,
+    "required_2029_eps_at_19_5x": 81.41,
+    "required_revenue_2029_bn_approx": 40.0,
+    "required_revenue_cagr_2026_2029_approx": 0.115
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_bn": 28.8,
+      "eps": 55.86
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_bn": 32.47,
+      "eps": 64.55
+    },
+    "revision_trend": {
+      "fy2026_eps_60d_ago": 52.97,
+      "fy2026_eps_current": 55.86,
+      "fy2027_eps_60d_ago": 61.04,
+      "fy2027_eps_current": 64.55,
+      "direction": "UP"
+    }
+  },
+  "stance": {
+    "zone": "WATCH",
+    "price_bands": {
+      "strong_attractive": "<=950",
+      "attractive": "950-1090",
+      "watch_fair": "1090-1200",
+      "expensive": "1200-1350",
+      "very_expensive": ">1350"
+    },
+    "horizon": "end-2029",
+    "statement": "운영 프랜차이즈는 강하지만 현재 가격은 Base 성공을 상당 부분 반영. 신규 매수는 11.5% hurdle을 확보하는 가격 규율이 유리."
+  },
+  "catalysts": [
+    {
+      "date": "2026-09-08",
+      "event": "expected dividend ex-date",
+      "confidence": "market-data scheduled"
+    },
+    {
+      "date": "2026-10-14",
+      "event": "expected 3Q26 earnings",
+      "confidence": "market-data scheduled; recheck company date"
+    },
+    {
+      "date": "2027-01",
+      "event": "4Q/FY26 earnings",
+      "confidence": "window"
+    },
+    {
+      "date": "2026Q4-2027Q2",
+      "event": "GIP/HPS fundraising and deployment updates",
+      "confidence": "window"
+    },
+    {
+      "date": "2026Q4-2027Q2",
+      "event": "Aladdin/Preqin cross-sell / ACV updates",
+      "confidence": "window"
+    },
+    {
+      "date": "next_12m",
+      "event": "U.S. DOL alternative-asset rule progression",
+      "confidence": "timing uncertain"
+    }
+  ],
+  "falsification": [
+    "LTM organic base-fee growth <3% for 2+ quarters",
+    "Technology organic ACV <10% for 2 consecutive quarters",
+    "Private-market fundraising/deployment stalls and realizations dominate",
+    "Economic diluted shares >3% YoY after 2027",
+    "Adjusted operating margin <43% without major market crisis",
+    "Annual/LTM FCF conversion <60% of adjusted NI through FY27",
+    "Material private-credit loss/liquidity event damages HPS fundraising"
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "PRIMARY_SOURCE_CEILING"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "COMPLETE"
+    }
+  ],
+  "source_registry": [
+    {
+      "id": "S01",
+      "name": "BlackRock 2Q26 Form 10-Q",
+      "date": "2026-08-06",
+      "url": "https://www.sec.gov/Archives/edgar/data/2012383/000119312526337177/blk-20260630.htm",
+      "tier": 1
+    },
+    {
+      "id": "S02",
+      "name": "BlackRock 2Q26 Earnings Release & Supplement",
+      "date": "2026-07-15",
+      "url": "https://www.sec.gov/Archives/edgar/data/2012383/000119312526304013/blk-ex99_1.htm",
+      "tier": 1
+    },
+    {
+      "id": "S03",
+      "name": "BlackRock 2025 Form 10-K",
+      "date": "2026-02-25",
+      "url": "https://www.sec.gov/Archives/edgar/data/2012383/000119312526071966/blk-20251231.htm",
+      "tier": 1
+    },
+    {
+      "id": "S04",
+      "name": "BlackRock 2025 Investor Day",
+      "date": "2025-06-12",
+      "url": "https://www.blackrock.com/corporate/newsroom/announcement/blackrock-host-investor-day",
+      "tier": 1
+    },
+    {
+      "id": "S05",
+      "name": "BlackRock 2026 Definitive Proxy Statement",
+      "date": "2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/2012383/000119312526119938/d76123ddefa14a.htm",
+      "tier": 1
+    },
+    {
+      "id": "S06",
+      "name": "McKinsey Asset management 2025: The great convergence",
+      "date": "2025-09-18",
+      "url": "https://www.mckinsey.com/industries/financial-services/our-insights/asset-management-2025-the-great-convergence",
+      "tier": 2
+    },
+    {
+      "id": "S07",
+      "name": "McKinsey Private credit market enters a new phase",
+      "date": "2026",
+      "url": "https://www.mckinsey.com/industries/private-capital/our-insights/global-private-markets-report/private-credit",
+      "tier": 2
+    },
+    {
+      "id": "S08",
+      "name": "McKinsey Infrastructure: Investing to support global growth",
+      "date": "2026-03-23",
+      "url": "https://www.mckinsey.com/industries/private-capital/our-insights/global-private-markets-report/infrastructure",
+      "tier": 2
+    },
+    {
+      "id": "S09",
+      "name": "U.S. DOL Proposed Rule Fact Sheet - Designated Investment Alternatives",
+      "date": "2026-03",
+      "url": "https://beta.dol.gov/system/files/research-data/2026-03/fiduciary-duties-selecting-designated-investment-alternatives-proposed-rule.pdf",
+      "tier": 1
+    },
+    {
+      "id": "S11",
+      "name": "Zacks BLK Detailed Earnings Estimates",
+      "date": "2026-08-24 access",
+      "url": "https://stage.zacks.com/stock/quote/BLK/detailed-earning-estimates",
+      "tier": 3
+    },
+    {
+      "id": "S12",
+      "name": "Yahoo Finance BLK market data",
+      "date": "2026-08-24 access",
+      "url": "https://finance.yahoo.com/quote/BLK/",
+      "tier": 3
+    },
+    {
+      "id": "S13",
+      "name": "Federal Reserve H.15 Selected Interest Rates",
+      "date": "2026-08-21",
+      "url": "https://www.federalreserve.gov/releases/h15/",
+      "tier": 1
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "title": "8Q AUM / Revenue progression",
+      "source_block": "financials.quarterly_8q",
+      "source_hash_sha256": "02126982e848bf31fa5a4e968714a177c2b9035c1cdeb94138320dc4f9677f9b"
+    },
+    {
+      "vis_id": "VIS-002",
+      "title": "AUM share vs Base-fee share",
+      "source_block": "business_mix.q2_2026",
+      "source_hash_sha256": "b2a54c5a99b83274d815f533af00a13a20e31ed2ccc795d21b07f4e0bd5f0b5c"
+    },
+    {
+      "vis_id": "VIS-003",
+      "title": "2023-2025 Revenue mix",
+      "source_block": "financials.revenue_mix_annual",
+      "source_hash_sha256": "bdf1c79b861fbe9e5ceb6f63f3da67de76247caa2170c27ecde74f220b8d80d5"
+    },
+    {
+      "vis_id": "VIS-004",
+      "title": "8Q Adjusted margin / Diluted shares",
+      "source_block": "financials.quarterly_8q",
+      "source_hash_sha256": "02126982e848bf31fa5a4e968714a177c2b9035c1cdeb94138320dc4f9677f9b"
+    },
+    {
+      "vis_id": "VIS-005",
+      "title": "Scenario PV / IRR",
+      "source_block": "scenarios",
+      "source_hash_sha256": "c141aaa3eaec3cd31185a9d0960221c20c715b356e46f641fa90f4a95068c50d"
+    },
+    {
+      "vis_id": "VIS-006",
+      "title": "Entry price vs Expected IRR",
+      "source_block": "valuation.price_band_curve",
+      "source_hash_sha256": "15454b4f8c87096ba91c7f6da6ab3d65fa0376c4dbcde286eb986f4fda22be9f"
+    },
+    {
+      "vis_id": "VIS-007",
+      "title": "KPI traffic lights",
+      "source_block": "kpis",
+      "source_hash_sha256": "f0a3d2118ffb332374048f609a01ec6531f4bc79f3ca131db89ff178cd22f5d8"
+    }
+  ],
+  "publishing_qa": {
+    "industry_company_narrative": "PASS",
+    "korean_prose_quality": "PASS",
+    "semantic_golden_qa": "PENDING_RENDER",
+    "visual_data_lineage": "EMITTED",
+    "visual_semantic_parity": "PENDING_RENDER",
+    "stale_visual_assets": 0
+  }
+}

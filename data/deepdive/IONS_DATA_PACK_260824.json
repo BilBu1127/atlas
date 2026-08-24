@@ -1,0 +1,857 @@
+{
+  "meta": {
+    "ticker": "IONS",
+    "company": "Ionis Pharmaceuticals, Inc.",
+    "T0": "2026-08-24",
+    "price_asof": "2026-08-21",
+    "price": 59.74,
+    "filing_asof": "2026-07-29",
+    "transcript_asof": "2026-07-29",
+    "consensus_asof": "2026-08-24",
+    "version": "DDOS v1.7",
+    "currency": "USD",
+    "units": "USD millions unless noted"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue": 787.647,
+        "commercial_revenue": 308.591,
+        "rd_revenue": 479.056,
+        "rd_expense": 899.625,
+        "sga": 232.619,
+        "operating_income": -353.73,
+        "operating_cash_flow": -307.513,
+        "capex": 23.805,
+        "fcf_proxy": -331.318
+      },
+      {
+        "year": 2024,
+        "revenue": 705.138,
+        "commercial_revenue": 293.076,
+        "rd_revenue": 412.062,
+        "rd_expense": 901.53,
+        "sga": 267.474,
+        "operating_income": -475.081,
+        "operating_cash_flow": -500.947,
+        "capex": 45.28,
+        "fcf_proxy": -546.227
+      },
+      {
+        "year": 2025,
+        "revenue": 943.711,
+        "commercial_revenue": 435.848,
+        "rd_revenue": 507.863,
+        "rd_expense": 915.619,
+        "sga": 393.867,
+        "operating_income": -381.684,
+        "operating_cash_flow": -268.583,
+        "capex": 51.444,
+        "fcf_proxy": -320.027
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "Q3 2024",
+        "revenue": 133.814,
+        "commercial_revenue": 75.731,
+        "rd_revenue": 58.083,
+        "rd_expense": 219.761,
+        "sga": 61.638,
+        "operating_income": -148.656,
+        "derived": false
+      },
+      {
+        "quarter": "Q4 2024",
+        "revenue": 226.577,
+        "commercial_revenue": 85.716,
+        "rd_revenue": 140.861,
+        "rd_expense": 245.49,
+        "sga": 88.079,
+        "operating_income": -110.821,
+        "derived": true
+      },
+      {
+        "quarter": "Q1 2025",
+        "revenue": 131.611,
+        "commercial_revenue": 76.168,
+        "rd_revenue": 55.443,
+        "rd_expense": 200.759,
+        "sga": 76.25,
+        "operating_income": -146.861,
+        "derived": true
+      },
+      {
+        "quarter": "Q2 2025",
+        "revenue": 452.049,
+        "commercial_revenue": 102.756,
+        "rd_revenue": 349.293,
+        "rd_expense": 217.46,
+        "sga": 90.622,
+        "operating_income": 139.816,
+        "derived": false,
+        "note": "Includes $280M sapablursen upfront payment."
+      },
+      {
+        "quarter": "Q3 2025",
+        "revenue": 156.719,
+        "commercial_revenue": 115.598,
+        "rd_revenue": 41.121,
+        "rd_expense": 217.754,
+        "sga": 96.809,
+        "operating_income": -160.182,
+        "derived": false
+      },
+      {
+        "quarter": "Q4 2025",
+        "revenue": 203.332,
+        "commercial_revenue": 141.326,
+        "rd_revenue": 62.005,
+        "rd_expense": 279.646,
+        "sga": 130.186,
+        "operating_income": -214.457,
+        "derived": true
+      },
+      {
+        "quarter": "Q1 2026",
+        "revenue": 246.093,
+        "commercial_revenue": 107.811,
+        "rd_revenue": 138.282,
+        "rd_expense": 210.173,
+        "sga": 150.359,
+        "operating_income": -117.421,
+        "derived": true
+      },
+      {
+        "quarter": "Q2 2026",
+        "revenue": 267.949,
+        "commercial_revenue": 118.623,
+        "rd_revenue": 149.326,
+        "rd_expense": 217.107,
+        "sga": 150.396,
+        "operating_income": -102.293,
+        "derived": false
+      }
+    ],
+    "h1_2026": {
+      "revenue": 514.042,
+      "commercial_revenue": 226.434,
+      "product_revenue": 74.094,
+      "royalty_revenue": 134.282,
+      "rd_revenue": 287.608,
+      "rd_expense": 427.28,
+      "sga": 300.755,
+      "operating_income": -219.714,
+      "operating_cash_flow": -227.288,
+      "capex": 37.843,
+      "fcf_proxy": -265.131,
+      "stock_comp": 88.888
+    },
+    "q2_2026_products": {
+      "TRYNGOLZA": 4.574,
+      "DAWNZERA": 26.565
+    },
+    "h1_2026_products": {
+      "TRYNGOLZA": 31.674,
+      "DAWNZERA": 42.42
+    },
+    "q1_2026_products": {
+      "TRYNGOLZA": 27.1,
+      "DAWNZERA": 15.855
+    },
+    "balance_sheet_2026_06_30": {
+      "cash": 350.065,
+      "short_term_investments": 1704.52,
+      "cash_and_short_term_investments": 2054.585,
+      "future_royalty_liability": 575.498,
+      "convert_2030_principal": 770.0,
+      "convert_2030_conversion_price": 98.1,
+      "convert_2030_shares": 7.8,
+      "convert_2028_principal": 575.0,
+      "convert_2028_conversion_price": 53.73,
+      "convert_2028_shares": 10.7
+    },
+    "ceilings": [
+      "Commercial paid starts, payer approval rates, gross-to-net and persistence are not disclosed.",
+      "Early product gross margin is not mature unit economics because some pre-commercial inventory costs were expensed in R&D.",
+      "Several quarterly values are reconstructed from annual/half-year filing arithmetic and are flagged as derived."
+    ]
+  },
+  "guidance": {
+    "fy2026_total_revenue": [
+      875,
+      900
+    ],
+    "TRYNGOLZA_sales": [
+      100,
+      110
+    ],
+    "DAWNZERA_sales": [
+      110,
+      120
+    ],
+    "year_end_cash_min": 1600,
+    "cashflow_breakeven_target": 2028
+  },
+  "kpis": [
+    {
+      "name": "TRYNGOLZA FY2026 net sales / Q4 exit",
+      "history": [
+        {
+          "period": "H1 2026",
+          "value": 31.674
+        }
+      ],
+      "current": 31.674,
+      "thresholds": {
+        "green": "FY26 >= $105M and Q4 run-rate >= $40M",
+        "yellow": "FY26 $95-105M or slower-than-needed sHTG sequential ramp",
+        "red": "FY26 < $95M or no post-launch sequential ramp"
+      }
+    },
+    {
+      "name": "DAWNZERA FY2026 net sales / Q4 exit",
+      "history": [
+        {
+          "period": "Q1 2026",
+          "value": 15.855
+        },
+        {
+          "period": "Q2 2026",
+          "value": 26.565
+        }
+      ],
+      "current": 26.565,
+      "thresholds": {
+        "green": "FY26 >= $115M and Q4 >= $40M",
+        "yellow": "FY26 $105-115M with positive sequential growth",
+        "red": "FY26 < $105M or sequential sales stall"
+      }
+    },
+    {
+      "name": "Cash-flow breakeven path",
+      "history": [
+        {
+          "period": "FY2025 FCF proxy",
+          "value": -320.027
+        },
+        {
+          "period": "H1 2026 FCF proxy",
+          "value": -265.131
+        }
+      ],
+      "current": -265.131,
+      "thresholds": {
+        "green": "2028 breakeven remains credible and YE26 cash >$1.6B",
+        "yellow": "Burn worse than plan but >2 years liquidity remains",
+        "red": "Equity funding needed before operational breakeven"
+      }
+    },
+    {
+      "name": "Zilganersen regulatory outcome",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": "Approval by/around 2026-09-22 without economically restrictive label",
+        "yellow": "Delay or narrower-than-modeled label",
+        "red": "CRL / major safety-access limitation"
+      }
+    },
+    {
+      "name": "Plozasiran competitive pressure",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": "sHTG filing delayed or differentiation weaker than expected",
+        "yellow": "Year-end 2026 filing proceeds with broadly competitive profile",
+        "red": "Detailed Phase 3 confirms strong efficacy/safety plus q3m convenience and accelerated review"
+      }
+    },
+    {
+      "name": "Commercial leverage",
+      "history": [
+        {
+          "period": "FY2025 commercial revenue",
+          "value": 435.848
+        },
+        {
+          "period": "H1 2026 commercial revenue annualized",
+          "value": 452.868
+        }
+      ],
+      "current": 452.868,
+      "thresholds": {
+        "green": "Owned-product/commercial gross profit growth outpaces SG&A by 2027",
+        "yellow": "Commercial revenue grows but SG&A remains similar pace",
+        "red": "Commercial infrastructure expands without adequate owned-product scaling"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.25,
+      "revenue_path": [
+        0.89,
+        1.05,
+        1.3,
+        1.55
+      ],
+      "margin_path": [
+        -0.51,
+        -0.29,
+        -0.12,
+        0.03
+      ],
+      "fcf": [
+        -0.45,
+        -0.3,
+        -0.15,
+        0.05
+      ],
+      "diluted_shares": 174.0,
+      "per_share_value": 36.0,
+      "industry_path": "Plozasiran enters rapidly and compresses TRYNGOLZA share; HAE switching slows.",
+      "customer_adoption": "Slow sHTG paid conversion; DAWNZERA switches plateau.",
+      "price_take_rate": "Gross-to-net pressure increases; no material pricing upside.",
+      "opex": "Commercial and R&D base remains heavy.",
+      "capital_treatment": "2028 notes assumed repaid rather than converted; cash outflow reflected in value."
+    },
+    {
+      "name": "Base",
+      "probability": 0.35,
+      "revenue_path": [
+        0.89,
+        1.35,
+        1.85,
+        2.55
+      ],
+      "margin_path": [
+        -0.51,
+        -0.15,
+        0.03,
+        0.14
+      ],
+      "fcf": [
+        -0.45,
+        -0.2,
+        0.05,
+        0.35
+      ],
+      "diluted_shares": 178.0,
+      "per_share_value": 78.0,
+      "industry_path": "TRYNGOLZA captures a useful first-mover sHTG cohort before a two-player market forms; HAE remains competitive.",
+      "customer_adoption": "Healthy but not heroic sHTG paid adoption; DAWNZERA gains share with durable switching.",
+      "price_take_rate": "Payer access expands with normal specialty gross-to-net leakage.",
+      "opex": "SG&A growth slows relative to owned-product revenue; 2028 cash-flow breakeven roughly achieved.",
+      "capital_treatment": "2028 notes assumed economically converted; shares enter denominator, principal is not double-subtracted."
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.25,
+      "revenue_path": [
+        0.9,
+        1.55,
+        2.35,
+        3.4
+      ],
+      "margin_path": [
+        -0.44,
+        -0.06,
+        0.11,
+        0.22
+      ],
+      "fcf": [
+        -0.4,
+        -0.1,
+        0.25,
+        0.75
+      ],
+      "diluted_shares": 185.0,
+      "per_share_value": 112.0,
+      "industry_path": "First-mover execution and strong access make TRYNGOLZA durable even after plozasiran; DAWNZERA becomes a leading HAE option.",
+      "customer_adoption": "Fast paid conversion, good persistence and strong neurology launch execution.",
+      "price_take_rate": "Net pricing holds better than Bear/Base and volume absorbs rebates.",
+      "opex": "Commercial infrastructure scales efficiently; R&D remains productive without proportional expense growth.",
+      "capital_treatment": "2028 notes converted; higher share price increases dilution probability from remaining convertibles/SBC."
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.15,
+      "revenue_path": [
+        0.9,
+        1.65,
+        2.6,
+        4.05
+      ],
+      "margin_path": [
+        -0.44,
+        -0.03,
+        0.15,
+        0.25
+      ],
+      "fcf": [
+        -0.4,
+        -0.05,
+        0.38,
+        1.02
+      ],
+      "diluted_shares": 190.0,
+      "per_share_value": 150.0,
+      "industry_path": "Owned cardiometabolic franchises scale while neurology and partnered late-stage programs deliver multiple wins.",
+      "customer_adoption": "Strong commercial execution plus successful new disease launches.",
+      "price_take_rate": "Broad access and category growth offset competitive leakage.",
+      "opex": "Shared scientific/commercial infrastructure produces visible operating leverage.",
+      "capital_treatment": "Both convertibles are economically treated as equity/dilution when appropriate; no debt/share double count."
+    }
+  ],
+  "valuation": {
+    "mode": "B — Hybrid",
+    "horizon": "3 years to 2029",
+    "current_price": 59.74,
+    "current_shares_m": 166.184322,
+    "market_cap_b": 9.928,
+    "economic_net_claims_b": 0.134,
+    "economic_ev_b": 9.794,
+    "core": 7.5,
+    "execution": 6.2,
+    "ecosystem": 1.8,
+    "drag": 1.6,
+    "component_bridge_context": "Base 2029 equity bridge; core includes established commercial/royalty value plus remaining financial assets; drag includes structural claims and dilution/funding effects without debt/share double count.",
+    "base_equity_value_b": 13.9,
+    "base_diluted_shares_m": 178.0,
+    "base_per_share_value": 78.0,
+    "expected_value": 86.8,
+    "expected_irr": 0.132621589368501,
+    "hurdle": 0.13,
+    "upside_downside_ratio": 2.201347935973041,
+    "probability_base_rate": "PRIMARY_SOURCE_CEILING — no sufficiently comparable public historical base-rate set for this exact hybrid rare-disease/RNA portfolio."
+  },
+  "reverse_expectations": {
+    "current_market_cap_b": 9.927851396280001,
+    "economic_ev_b": 9.793764396280002,
+    "discount_rate": 0.12,
+    "years_to_2030": 4.35,
+    "required_2030_ev_b": 16.034227853280168,
+    "required_2030_normalized_fcf_b_range": [
+      0.7288285387854622,
+      0.8017113926640084
+    ],
+    "implied_mature_ev_fcf_multiple_range": [
+      20,
+      22
+    ],
+    "required_2030_revenue_b_range": [
+      2.9153141551418487,
+      4.008556963320042
+    ],
+    "assumed_fcf_margin_range": [
+      0.2,
+      0.25
+    ],
+    "required_revenue_mid_b": 3.4619355592309455,
+    "required_2026_2030_revenue_cagr": 0.4053602141702206,
+    "interpretation": "Ignoring residual pipeline option value, the current price roughly requires a $3-4B 2030 revenue business with ~$0.73-0.80B normalized FCF. Residual pipeline value can lower the commercial requirement, while competitive/funding drag raises it."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_consensus_m": 919.4,
+      "company_guidance_m": [
+        875,
+        900
+      ],
+      "eps_consensus": -2.59
+    },
+    "fy2": {
+      "status": "PRIMARY_SOURCE_CEILING"
+    },
+    "fy3": {
+      "status": "PRIMARY_SOURCE_CEILING"
+    },
+    "price_targets": {
+      "average": 88.0,
+      "high": 115.0,
+      "low": 60.0,
+      "buy": 19,
+      "hold": 5,
+      "sell": 0
+    },
+    "short_interest": {
+      "date": "2026-07-31",
+      "shares_m": 21.466,
+      "percent_float": 13.16,
+      "days_to_cover": 6.35,
+      "change_vs_prior_percent": 7.1
+    },
+    "revision_trend": "Broad target cuts followed the July 2026 CARDIO-TTRansform failure, while consensus remained Buy-skewed."
+  },
+  "stance": {
+    "zone": "조건부 관심 / 실행확인형 매수 후보",
+    "horizon": "3 years",
+    "hurdle": 0.13,
+    "current_expected_irr": 0.132621589368501,
+    "current_ud_ratio": 2.201347935973041,
+    "price_bands": {
+      "strong_interest": "< $55",
+      "conditional_interest": "$55-$65",
+      "watch_hold": "$65-$80",
+      "requires_upward_evidence_reset": "> $80"
+    },
+    "ud_above_2_trigger_price": 61.333333333333336,
+    "falsification": "If sHTG paid ramp is weak while plozasiran confirms strong q3m efficacy/safety, DAWNZERA misses its ramp, and 2028 cash-flow breakeven slips, Base must move toward Bear."
+  },
+  "catalysts": [
+    {
+      "when": "2026-08-30",
+      "event": "Arrowhead detailed SHASTA-3/4 plozasiran data at ESC",
+      "sensitivity": "High negative/competitive",
+      "status": "Future at T0"
+    },
+    {
+      "when": "2026-09-22",
+      "event": "Zilganersen FDA PDUFA action date",
+      "sensitivity": "High two-sided",
+      "status": "Future at T0"
+    },
+    {
+      "when": "Q3-Q4 2026",
+      "event": "TRYNGOLZA sHTG paid launch ramp and DAWNZERA guide delivery",
+      "sensitivity": "Very high operating",
+      "status": "Future at T0"
+    },
+    {
+      "when": "H2 2026",
+      "event": "Pelacarsen Lp(a) HORIZON data / related regulatory path under partner timing",
+      "sensitivity": "High partnered option",
+      "status": "Future at T0"
+    },
+    {
+      "when": "2026",
+      "event": "Ulefnersen FUSION and other stated Phase 3 readouts",
+      "sensitivity": "Medium-high pipeline",
+      "status": "Future at T0"
+    },
+    {
+      "when": "H2 2027",
+      "event": "Obudanersen REVEAL pivotal data",
+      "sensitivity": "Very high pipeline",
+      "status": "Future at T0"
+    },
+    {
+      "when": "2027-02",
+      "event": "Frank Bennett retirement / research leadership transition",
+      "sensitivity": "Medium organizational",
+      "status": "Future at T0"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "2.1"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "1.1-1.5"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1.2 / 3.2 / 6.2"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "1.4 / 3.2"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1.3 / 3.3 / 6.2"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "1.4 / 3.3"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.4 / 5.3 / 6.3"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "3.5 / 6.3"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "3.1 / 4.1 / 5.2"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "3.6 / 5.1"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.1 / 3.7"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "2.1-2.4"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "4.1-4.4"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "4.5 / 5.4"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1.4 / 3.8 / 6.4"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "0.3 / 5.1 / 6.1"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "5.1-5.6"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE",
+      "h3_locator": "6.1-6.5"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Ionis 2025 Form 10-K",
+      "date": "2026-02-26",
+      "url": "https://www.sec.gov/Archives/edgar/data/874015/000087401526000115/form10k.htm",
+      "type": "SEC filing",
+      "primary": true
+    },
+    {
+      "id": "S2",
+      "title": "Ionis Q2 2026 Form 10-Q",
+      "date": "2026-07-29",
+      "url": "https://www.sec.gov/Archives/edgar/data/874015/000087401526000251/form10q.htm",
+      "type": "SEC filing",
+      "primary": true
+    },
+    {
+      "id": "S3",
+      "title": "Ionis Q2 2026 financial results",
+      "date": "2026-07-29",
+      "url": "https://ir.ionis.com/news-releases/news-release-details/ionis-reports-second-quarter-2026-financial-results-and",
+      "type": "Company release",
+      "primary": true
+    },
+    {
+      "id": "S4",
+      "title": "TRYNGOLZA sHTG FDA approval release",
+      "date": "2026-06-24",
+      "url": "https://ir.ionis.com/news-releases/news-release-details/tryngolzar-olezarsen-approved-fda-first-and-only-treatment",
+      "type": "Company/FDA approval release",
+      "primary": true
+    },
+    {
+      "id": "S5",
+      "title": "CARDIO-TTRansform Phase 3 update",
+      "date": "2026-07-09",
+      "url": "https://ir.ionis.com/news-releases/news-release-details/update-cardio-ttransform-phase-3-trial-eplontersen-adults",
+      "type": "Company clinical release",
+      "primary": true
+    },
+    {
+      "id": "S6",
+      "title": "Zilganersen ex-U.S. Recordati license",
+      "date": "2026-06-25",
+      "url": "https://ir.ionis.com/news-releases/news-release-details/ionis-announces-license-agreement-recordati-zilganersen",
+      "type": "Company release",
+      "primary": true
+    },
+    {
+      "id": "S7",
+      "title": "Frank Bennett retirement / succession",
+      "date": "2026-07-29",
+      "url": "https://ir.ionis.com/news-releases/news-release-details/ionis-announces-dr-frank-bennett-chief-scientific-officer-retire",
+      "type": "Company release",
+      "primary": true
+    },
+    {
+      "id": "S8",
+      "title": "Ionis 2026 Proxy Statement",
+      "date": "2026-04-23",
+      "url": "https://www.sec.gov/Archives/edgar/data/874015/000114036126016388/ny20063671x1_def14a.htm",
+      "type": "SEC proxy",
+      "primary": true
+    },
+    {
+      "id": "S9",
+      "title": "Ionis 2020 Investor Day commercial strategy",
+      "date": "2020-12-08",
+      "url": "https://ir.ionis.com/news-releases/news-release-details/ionis-highlights-achievements-commercial-strategy-and-technology",
+      "type": "Company release",
+      "primary": true
+    },
+    {
+      "id": "S10",
+      "title": "Arrowhead SHASTA-3/4 topline results",
+      "date": "2026-07-22",
+      "url": "https://arrowheadpharma.com/en-us/newsroom/arrowhead-pharmaceuticals-reports-topline-results-phase-3-shasta",
+      "type": "Competitor release",
+      "primary": true
+    },
+    {
+      "id": "S11",
+      "title": "Arrowhead plozasiran Priority Review Voucher",
+      "date": "2026-08-04",
+      "url": "https://arrowheadpharma.com/en-us/newsroom/arrowhead-pharmaceuticals-acquires-fda-priority-review-voucher",
+      "type": "Competitor release",
+      "primary": true
+    },
+    {
+      "id": "S12",
+      "title": "BioCryst FY2025 results / ORLADEYO",
+      "date": "2026-02-26",
+      "url": "https://ir.biocryst.com/node/27811",
+      "type": "Competitor release",
+      "primary": true
+    },
+    {
+      "id": "S13",
+      "title": "IONS historical price",
+      "date": "2026-08-24",
+      "url": "https://kr.investing.com/equities/isis-pharma-historical-data",
+      "type": "Market data",
+      "primary": false
+    },
+    {
+      "id": "S14",
+      "title": "IONS analyst consensus",
+      "date": "2026-08-24",
+      "url": "https://www.investing.com/equities/isis-pharma-consensus-estimates",
+      "type": "Market data aggregator",
+      "primary": false
+    },
+    {
+      "id": "S15",
+      "title": "IONS short interest",
+      "date": "2026-08-24",
+      "url": "https://www.marketbeat.com/stocks/NASDAQ/IONS/short-interest/",
+      "type": "Market data aggregator",
+      "primary": false
+    },
+    {
+      "id": "S16",
+      "title": "IONS analyst target revisions",
+      "date": "2026-08-24",
+      "url": "https://www.benzinga.com/quote/IONS/price-targets",
+      "type": "Market data aggregator",
+      "primary": false
+    },
+    {
+      "id": "S17",
+      "title": "Olezarsen for Managing Severe Hypertriglyceridemia and Pancreatitis Risk (CORE/CORE2)",
+      "date": "2025-11-08 / 2026 issue",
+      "url": "https://www.nejm.org/doi/10.1056/NEJMoa2512761",
+      "type": "Peer-reviewed Phase 3 publication",
+      "primary": true
+    },
+    {
+      "id": "S18",
+      "title": "Efficacy and Safety of Donidalorsen for Hereditary Angioedema (OASIS-HAE)",
+      "date": "2024-05-31",
+      "url": "https://www.nejm.org/doi/10.1056/NEJMoa2402478",
+      "type": "Peer-reviewed Phase 3 publication",
+      "primary": true
+    },
+    {
+      "id": "S19",
+      "title": "Switching Long-Term Prophylaxis to Donidalorsen: 1-Year OASISplus Results",
+      "date": "2026-03-14",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41830315/",
+      "type": "Peer-reviewed extension study",
+      "primary": true
+    },
+    {
+      "id": "S20",
+      "title": "OASISplus switch cohort interim analysis",
+      "date": "2025",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40673861/",
+      "type": "Peer-reviewed switch study",
+      "primary": true
+    }
+  ],
+  "audit": {
+    "rc_total": 18,
+    "rc_complete": 12,
+    "rc_primary_source_ceiling": 6,
+    "rc_not_material": 0,
+    "rc_contradicted": 0,
+    "rc_unresolved": 0,
+    "latest_filing_check": "PASS through 2026-08-24; latest material financial filing remains Q2 2026 Form 10-Q filed 2026-07-29.",
+    "data_lineage": "All report tables/visuals should render from this pack or identical embedded values."
+  },
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "3-year revenue / commercial mix",
+      "source_hash": "586bef4526a855d4",
+      "authoritative_source_block": "REPORT_DATA_PACK.json",
+      "status": "SOURCE_REGISTERED"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "Latest 8-quarter revenue and operating income",
+      "source_hash": "2b0788593fa9d079",
+      "authoritative_source_block": "REPORT_DATA_PACK.json",
+      "status": "SOURCE_REGISTERED"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "Q1-Q2 2026 owned-product sales",
+      "source_hash": "e7459a4fea433736",
+      "authoritative_source_block": "REPORT_DATA_PACK.json",
+      "status": "SOURCE_REGISTERED"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "2029 scenario values",
+      "source_hash": "828f49a50fdcef6e",
+      "authoritative_source_block": "REPORT_DATA_PACK.json",
+      "status": "SOURCE_REGISTERED"
+    },
+    {
+      "vis_id": "VIS-005",
+      "figure_title": "Price bands / current price",
+      "source_hash": "38b1a278dc05cebd",
+      "authoritative_source_block": "REPORT_DATA_PACK.json",
+      "status": "SOURCE_REGISTERED"
+    },
+    {
+      "vis_id": "VIS-006",
+      "figure_title": "Catalyst calendar",
+      "source_hash": "e6eea6a7b50a6c1f",
+      "authoritative_source_block": "REPORT_DATA_PACK.json",
+      "status": "SOURCE_REGISTERED"
+    }
+  ]
+}

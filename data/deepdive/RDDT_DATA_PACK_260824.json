@@ -1,0 +1,1142 @@
+{
+  "meta": {
+    "ticker": "RDDT",
+    "company": "Reddit, Inc.",
+    "T0": "2026-08-24",
+    "price_asof": {
+      "date": "2026-08-21",
+      "regular_close_usd": 153.29,
+      "extended_hours_observation": {
+        "date": "2026-08-24",
+        "session": "pre-market",
+        "price_usd": 151.52,
+        "source_quality": "secondary"
+      }
+    },
+    "filing_asof": "Q2 2026 Form 10-Q; period ended 2026-06-30; filed 2026-07-31",
+    "consensus_asof": "2026-08-21/24 secondary aggregate",
+    "version": "Clean DDOS v1.7 / RDDT 2026-08-24",
+    "valuation_horizon": "2030-12-31",
+    "discount_rate_pct": 11.5,
+    "hurdle_rate_pct": 12.0
+  },
+  "financials": {
+    "annual_3y": {
+      "2023": {
+        "revenue_m": 804.0,
+        "ad_revenue_m": 788.8,
+        "other_revenue_m": 15.2,
+        "gross_margin_pct": 86.2,
+        "adj_ebitda_m": -69.3,
+        "net_income_m": -90.8,
+        "operating_cash_flow_m": -75.1,
+        "free_cash_flow_m": -84.8
+      },
+      "2024": {
+        "revenue_m": 1300.2,
+        "ad_revenue_m": 1185.5,
+        "other_revenue_m": 114.7,
+        "gross_margin_pct": 90.5,
+        "adj_ebitda_m": 298.0,
+        "net_income_m": -484.3,
+        "operating_cash_flow_m": 222.1,
+        "free_cash_flow_m": 215.8
+      },
+      "2025": {
+        "revenue_m": 2203.0,
+        "ad_revenue_m": 2062.0,
+        "other_revenue_m": 140.0,
+        "gross_margin_pct": 91.2,
+        "adj_ebitda_m": 845.1,
+        "net_income_m": 529.7,
+        "operating_cash_flow_m": 690.9,
+        "free_cash_flow_m": 684.2
+      }
+    },
+    "quarterly_8q": {
+      "Q3'24": {
+        "revenue_m": 348.35,
+        "revenue_yoy_pct": 67.9,
+        "gross_margin_pct": 90.1,
+        "operating_margin_pct": 2.0,
+        "net_income_m": 29.9,
+        "free_cash_flow_m": 70.3,
+        "free_cash_flow_margin_pct": 20.2,
+        "dauq_m": 97.2,
+        "wauq_m": 365.4,
+        "arpu_usd": 3.58
+      },
+      "Q4'24": {
+        "revenue_m": 427.71,
+        "revenue_yoy_pct": 71.3,
+        "gross_margin_pct": 92.6,
+        "operating_margin_pct": 12.4,
+        "net_income_m": 71.0,
+        "free_cash_flow_m": 89.2,
+        "free_cash_flow_margin_pct": 20.8,
+        "dauq_m": 101.7,
+        "wauq_m": 379.4,
+        "arpu_usd": 4.21
+      },
+      "Q1'25": {
+        "revenue_m": 392.36,
+        "revenue_yoy_pct": 61.5,
+        "gross_margin_pct": 90.6,
+        "operating_margin_pct": 1.0,
+        "net_income_m": 26.2,
+        "free_cash_flow_m": 126.6,
+        "free_cash_flow_margin_pct": 32.3,
+        "dauq_m": 108.1,
+        "wauq_m": 401.3,
+        "arpu_usd": 3.63
+      },
+      "Q2'25": {
+        "revenue_m": 499.63,
+        "revenue_yoy_pct": 77.7,
+        "gross_margin_pct": 90.8,
+        "operating_margin_pct": 13.6,
+        "net_income_m": 89.3,
+        "free_cash_flow_m": 110.8,
+        "free_cash_flow_margin_pct": 22.2,
+        "dauq_m": 110.4,
+        "wauq_m": 416.4,
+        "arpu_usd": 4.53
+      },
+      "Q3'25": {
+        "revenue_m": 584.91,
+        "revenue_yoy_pct": 67.9,
+        "gross_margin_pct": 91.0,
+        "operating_margin_pct": 23.7,
+        "net_income_m": 162.7,
+        "free_cash_flow_m": 183.1,
+        "free_cash_flow_margin_pct": 31.3,
+        "dauq_m": 116.0,
+        "wauq_m": 443.8,
+        "arpu_usd": 5.04
+      },
+      "Q4'25": {
+        "revenue_m": 725.61,
+        "revenue_yoy_pct": 69.7,
+        "gross_margin_pct": 91.9,
+        "operating_margin_pct": 32.0,
+        "net_income_m": 251.6,
+        "free_cash_flow_m": 263.6,
+        "free_cash_flow_margin_pct": 36.3,
+        "dauq_m": 121.4,
+        "wauq_m": 471.6,
+        "arpu_usd": 5.98
+      },
+      "Q1'26": {
+        "revenue_m": 663.41,
+        "revenue_yoy_pct": 69.1,
+        "gross_margin_pct": 91.5,
+        "operating_margin_pct": 27.6,
+        "net_income_m": 204.0,
+        "free_cash_flow_m": 311.2,
+        "free_cash_flow_margin_pct": 46.9,
+        "dauq_m": 126.8,
+        "wauq_m": 493.1,
+        "arpu_usd": 5.23
+      },
+      "Q2'26": {
+        "revenue_m": 804.91,
+        "revenue_yoy_pct": 61.1,
+        "gross_margin_pct": 91.3,
+        "operating_margin_pct": 28.8,
+        "net_income_m": 252.8,
+        "free_cash_flow_m": 260.7,
+        "free_cash_flow_margin_pct": 32.4,
+        "dauq_m": 130.3,
+        "wauq_m": 514.6,
+        "arpu_usd": 6.18
+      }
+    },
+    "ceilings": [
+      "FY2024 GAAP net loss materially distorted by IPO-related SBC; interpret with FCF and dilution.",
+      "Base-rate statistical cohort unavailable from clean primary-source dataset."
+    ]
+  },
+  "latest_q2_2026": {
+    "revenue_m": 804.91,
+    "revenue_yoy_pct": 61.1,
+    "ad_revenue_m": 762.0,
+    "ad_revenue_yoy_pct": 64.0,
+    "other_revenue_m": 43.0,
+    "other_revenue_yoy_pct": 24.0,
+    "gross_margin_pct": 91.3,
+    "adj_ebitda_m": 343.0,
+    "adj_ebitda_margin_pct": 42.6,
+    "operating_cash_flow_m": 262.0,
+    "free_cash_flow_m": 260.7,
+    "cash_and_marketable_securities_m": 2786.0,
+    "fully_diluted_shares_m": 207.0,
+    "repurchased_shares_m": 1.5,
+    "repurchase_spend_m": 235.0,
+    "repurchase_avg_price": 157.57,
+    "global_dauq_m": 130.3,
+    "global_dauq_yoy_pct": 18.0,
+    "global_wauq_m": 514.6,
+    "global_wauq_yoy_pct": 24.0,
+    "global_arpu_usd": 6.18,
+    "global_arpu_yoy_pct": 36.0,
+    "us_dauq_m": 53.2,
+    "us_dauq_yoy_pct": 6.0,
+    "international_dauq_m": 77.1,
+    "international_dauq_yoy_pct": 28.0,
+    "logged_in_dauq_m": 52.6,
+    "logged_in_dauq_yoy_pct": 7.0,
+    "logged_out_dauq_m": 77.7,
+    "logged_out_dauq_yoy_pct": 27.0,
+    "us_revenue_m": 638.1,
+    "us_revenue_yoy_pct": 56.0,
+    "international_revenue_m": 166.8,
+    "international_revenue_yoy_pct": 84.0,
+    "us_arpu_usd": 11.85,
+    "us_arpu_yoy_pct": 51.0,
+    "international_arpu_usd": 2.26,
+    "international_arpu_yoy_pct": 31.0,
+    "ad_price_yoy_approx_pct": 40.0,
+    "ad_impressions_yoy_approx_pct": 17.0,
+    "content_licensing_remaining_performance_obligations_m": 92.1,
+    "sbc_and_related_taxes_m": 106.8,
+    "sbc_and_related_taxes_pct_revenue": 13.3,
+    "q3_2026_guidance": {
+      "revenue_low_m": 860,
+      "revenue_high_m": 870,
+      "adj_ebitda_low_m": 385,
+      "adj_ebitda_high_m": 395
+    }
+  },
+  "kpis": [
+    {
+      "name": "Global DAUq YoY",
+      "current": 18.0,
+      "unit": "%",
+      "history": [
+        [
+          "Q3'24",
+          97.2
+        ],
+        [
+          "Q4'24",
+          101.7
+        ],
+        [
+          "Q1'25",
+          108.1
+        ],
+        [
+          "Q2'25",
+          110.4
+        ],
+        [
+          "Q3'25",
+          116.0
+        ],
+        [
+          "Q4'25",
+          121.4
+        ],
+        [
+          "Q1'26",
+          126.8
+        ],
+        [
+          "Q2'26",
+          130.3
+        ]
+      ],
+      "thresholds": {
+        "green": ">=15%",
+        "yellow": "8-15%",
+        "red": "<8%"
+      }
+    },
+    {
+      "name": "U.S. DAUq YoY",
+      "current": 6.0,
+      "unit": "%",
+      "history": [],
+      "thresholds": {
+        "green": ">=5%",
+        "yellow": "0-5%",
+        "red": "<0%"
+      }
+    },
+    {
+      "name": "Global ARPU YoY",
+      "current": 36.0,
+      "unit": "%",
+      "history": [
+        [
+          "Q3'24",
+          3.58
+        ],
+        [
+          "Q4'24",
+          4.21
+        ],
+        [
+          "Q1'25",
+          3.63
+        ],
+        [
+          "Q2'25",
+          4.53
+        ],
+        [
+          "Q3'25",
+          5.04
+        ],
+        [
+          "Q4'25",
+          5.98
+        ],
+        [
+          "Q1'26",
+          5.23
+        ],
+        [
+          "Q2'26",
+          6.18
+        ]
+      ],
+      "thresholds": {
+        "green": ">=20%",
+        "yellow": "10-20%",
+        "red": "<10%"
+      }
+    },
+    {
+      "name": "International ARPU YoY",
+      "current": 31.0,
+      "unit": "%",
+      "history": [],
+      "thresholds": {
+        "green": ">=20%",
+        "yellow": "10-20%",
+        "red": "<10%"
+      }
+    },
+    {
+      "name": "Ad Revenue YoY",
+      "current": 64.0,
+      "unit": "%",
+      "history": [],
+      "thresholds": {
+        "green": ">=30%",
+        "yellow": "15-30%",
+        "red": "<15%"
+      }
+    },
+    {
+      "name": "Adj. EBITDA Margin",
+      "current": 42.6,
+      "unit": "%",
+      "history": [],
+      "thresholds": {
+        "green": ">=35%",
+        "yellow": "28-35%",
+        "red": "<28%"
+      }
+    },
+    {
+      "name": "FDSO YoY",
+      "current": 0.2,
+      "unit": "%",
+      "history": [],
+      "thresholds": {
+        "green": "<=1%",
+        "yellow": "1-3%",
+        "red": ">3%"
+      }
+    },
+    {
+      "name": "Search/App Bridge",
+      "current": null,
+      "unit": "qualitative",
+      "history": [],
+      "thresholds": {
+        "green": "direct/app offsets referral weakness",
+        "yellow": "unclear",
+        "red": "high-value users decline"
+      },
+      "ceiling": "Company does not disclose a quantified referral-to-direct/app bridge."
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.25,
+      "revenue_path_b": {
+        "2026E": 3.3,
+        "2027E": 3.9,
+        "2028E": 4.45,
+        "2029E": 4.85,
+        "2030E": 5.3
+      },
+      "fcf_margin_path_pct": {
+        "2026E": 30,
+        "2027E": 28,
+        "2028E": 26,
+        "2029E": 25,
+        "2030E": 24
+      },
+      "fcf_path_b": {
+        "2026E": 0.99,
+        "2027E": 1.092,
+        "2028E": 1.157,
+        "2029E": 1.212,
+        "2030E": 1.272
+      },
+      "terminal_ev_fcf_x": 20,
+      "terminal_net_cash_b": 3.5,
+      "diluted_shares_m": 216,
+      "terminal_fcf_b": 1.272,
+      "terminal_ev_b": 25.44,
+      "terminal_equity_value_b": 28.94,
+      "future_per_share_value": 133.98,
+      "present_per_share_value": 83.42,
+      "scenario_irr_pct": -3.0
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "revenue_path_b": {
+        "2026E": 3.39,
+        "2027E": 4.5,
+        "2028E": 5.55,
+        "2029E": 6.6,
+        "2030E": 7.7
+      },
+      "fcf_margin_path_pct": {
+        "2026E": 34,
+        "2027E": 33,
+        "2028E": 33,
+        "2029E": 32,
+        "2030E": 32
+      },
+      "fcf_path_b": {
+        "2026E": 1.153,
+        "2027E": 1.485,
+        "2028E": 1.832,
+        "2029E": 2.112,
+        "2030E": 2.464
+      },
+      "terminal_ev_fcf_x": 26,
+      "terminal_net_cash_b": 5.0,
+      "diluted_shares_m": 215,
+      "terminal_fcf_b": 2.464,
+      "terminal_ev_b": 64.064,
+      "terminal_equity_value_b": 69.064,
+      "future_per_share_value": 321.23,
+      "present_per_share_value": 199.99,
+      "scenario_irr_pct": 18.5
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.25,
+      "revenue_path_b": {
+        "2026E": 3.45,
+        "2027E": 4.75,
+        "2028E": 6.1,
+        "2029E": 7.8,
+        "2030E": 9.5
+      },
+      "fcf_margin_path_pct": {
+        "2026E": 35,
+        "2027E": 35,
+        "2028E": 36,
+        "2029E": 36,
+        "2030E": 36
+      },
+      "fcf_path_b": {
+        "2026E": 1.208,
+        "2027E": 1.663,
+        "2028E": 2.196,
+        "2029E": 2.808,
+        "2030E": 3.42
+      },
+      "terminal_ev_fcf_x": 28,
+      "terminal_net_cash_b": 6.0,
+      "diluted_shares_m": 212,
+      "terminal_fcf_b": 3.42,
+      "terminal_ev_b": 95.76,
+      "terminal_equity_value_b": 101.76,
+      "future_per_share_value": 480.0,
+      "present_per_share_value": 298.84,
+      "scenario_irr_pct": 30.0
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.1,
+      "revenue_path_b": {
+        "2026E": 3.5,
+        "2027E": 5.0,
+        "2028E": 6.7,
+        "2029E": 8.8,
+        "2030E": 11.0
+      },
+      "fcf_margin_path_pct": {
+        "2026E": 35,
+        "2027E": 36,
+        "2028E": 38,
+        "2029E": 39,
+        "2030E": 39
+      },
+      "fcf_path_b": {
+        "2026E": 1.225,
+        "2027E": 1.8,
+        "2028E": 2.546,
+        "2029E": 3.432,
+        "2030E": 4.29
+      },
+      "terminal_ev_fcf_x": 30,
+      "terminal_net_cash_b": 7.0,
+      "diluted_shares_m": 210,
+      "terminal_fcf_b": 4.29,
+      "terminal_ev_b": 128.7,
+      "terminal_equity_value_b": 135.7,
+      "future_per_share_value": 646.19,
+      "present_per_share_value": 402.31,
+      "scenario_irr_pct": 39.2
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B - Hybrid",
+    "core_per_share": 120.0,
+    "execution_per_share": 101.0,
+    "ecosystem_per_share": 6.0,
+    "drag_per_share": -11.0,
+    "expected_value_per_share": 215.79,
+    "probability_weighted_2030_price": 346.61,
+    "expected_irr_pct": 20.6,
+    "current_price": 153.29,
+    "upside_downside_ratio": 2.08,
+    "stance_hurdle_pct": 12.0,
+    "stance_at_price": "Active interest; $153.29 is near the upper edge of the active-interest zone."
+  },
+  "reverse_expectations": {
+    "current_price": 153.29,
+    "required_2030_price_for_12pct_irr": 251.05,
+    "assumed_2030_diluted_shares_m": 215,
+    "assumed_2030_net_cash_b": 4.5,
+    "required_terminal_ev_b": 49.477,
+    "sensitivity": [
+      {
+        "terminal_ev_fcf_x": 20,
+        "fcf_margin_pct": 28,
+        "required_2030_fcf_b": 2.474,
+        "required_2030_revenue_b": 8.835,
+        "required_2026_2030_revenue_cagr_pct": 27.1
+      },
+      {
+        "terminal_ev_fcf_x": 22,
+        "fcf_margin_pct": 30,
+        "required_2030_fcf_b": 2.249,
+        "required_2030_revenue_b": 7.496,
+        "required_2026_2030_revenue_cagr_pct": 22.0
+      },
+      {
+        "terminal_ev_fcf_x": 25,
+        "fcf_margin_pct": 30,
+        "required_2030_fcf_b": 1.979,
+        "required_2030_revenue_b": 6.597,
+        "required_2026_2030_revenue_cagr_pct": 18.2
+      },
+      {
+        "terminal_ev_fcf_x": 25,
+        "fcf_margin_pct": 32,
+        "required_2030_fcf_b": 1.979,
+        "required_2030_revenue_b": 6.185,
+        "required_2026_2030_revenue_cagr_pct": 16.3
+      },
+      {
+        "terminal_ev_fcf_x": 28,
+        "fcf_margin_pct": 32,
+        "required_2030_fcf_b": 1.767,
+        "required_2030_revenue_b": 5.522,
+        "required_2026_2030_revenue_cagr_pct": 13.0
+      }
+    ],
+    "kpi_translation": {
+      "q2_2026_dauq_m": 130.3,
+      "illustrative_2030_dauq_m_at_12pct_cagr": 205.0,
+      "annualized_q2_revenue_per_dau_usd": 24.7,
+      "revenue_per_dau_required_for_7_5b_usd": 36.6
+    }
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_b": 3.385,
+      "growth_pct": 53.7,
+      "ebitda_b": 1.51
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_b": 4.451,
+      "growth_pct": 31.5,
+      "ebitda_b": 2.069
+    },
+    "fy3": {
+      "year": 2028,
+      "revenue_b": 5.527,
+      "growth_pct": 24.2,
+      "ebitda_b": 2.677
+    },
+    "revision_trend": "Market narrative turned more cautious on Google referral volatility after Q2 despite strong operating results.",
+    "source_quality": "secondary aggregate"
+  },
+  "positioning": {
+    "short_interest_date": "2026-07-31",
+    "short_interest_m": 19.21,
+    "short_pct_float": 13.96,
+    "days_to_cover": 2.8,
+    "sp500_effective": "2026-08-18",
+    "notes": [
+      "13F is backward-looking.",
+      "Index inclusion is a flow catalyst, not intrinsic value."
+    ]
+  },
+  "stance": {
+    "zone": "Active interest at $153.29; active-interest threshold approximately $155 from U/D >= 2x.",
+    "price_bands": {
+      "active_interest": "<=155",
+      "conditional_interest": "155-191",
+      "avoid_reduce_asymmetry": "191-212",
+      "avoid_reduce_irr_and_asymmetry": ">212"
+    },
+    "horizon": "2030-12-31",
+    "falsification": [
+      "U.S. DAUq and logged-in DAU decline YoY for two consecutive quarters.",
+      "Global ARPU growth <10% and ad revenue growth <15% for two consecutive quarters.",
+      "Adj. EBITDA margin <28% because of structural monetization weakness."
+    ],
+    "band_math": {
+      "ud_2x_boundary_usd": 155.23,
+      "ud_1x_boundary_usd": 191.13,
+      "expected_irr_12pct_boundary_usd": 211.63
+    }
+  },
+  "catalysts": [
+    {
+      "when": "2026 Q3 earnings",
+      "event": "Revenue/EBITDA + user/ARPU update",
+      "sensitivity": "Q3 revenue guide $860-870M; U.S. DAU/ARPU divergence"
+    },
+    {
+      "when": "2026 H2",
+      "event": "Reddit Max / app / shopping rollout",
+      "sensitivity": "Ad pricing and impressions persistence"
+    },
+    {
+      "when": "2026 H2-2027",
+      "event": "Search / Reddit Answers",
+      "sensitivity": "Direct/app offsets search referral volatility"
+    },
+    {
+      "when": "2026-2027",
+      "event": "Google/OpenAI/data rights",
+      "sensitivity": "Renewal/expansion and usage-linked economics"
+    },
+    {
+      "when": "2026-2027",
+      "event": "Anthropic / Perplexity litigation",
+      "sensitivity": "Scraping/data-right enforceability"
+    },
+    {
+      "when": "Quarterly",
+      "event": "Buyback / SBC",
+      "sensitivity": "FDSO stability"
+    },
+    {
+      "when": "2027",
+      "event": "International monetization",
+      "sensitivity": "International ARPU growth vs DAU growth"
+    }
+  ],
+  "management_promise_delivery": [
+    {
+      "guide_period": "Q3'25 -> Q4'25",
+      "revenue_mid_m": 660,
+      "actual_revenue_m": 725.6,
+      "revenue_beat_pct": 9.9,
+      "ebitda_mid_m": 280,
+      "actual_ebitda_m": 327,
+      "ebitda_beat_pct": 16.8
+    },
+    {
+      "guide_period": "Q4'25 -> Q1'26",
+      "revenue_mid_m": 600,
+      "actual_revenue_m": 663.4,
+      "revenue_beat_pct": 10.6,
+      "ebitda_mid_m": 215,
+      "actual_ebitda_m": 266,
+      "ebitda_beat_pct": 23.7
+    },
+    {
+      "guide_period": "Q1'26 -> Q2'26",
+      "revenue_mid_m": 720,
+      "actual_revenue_m": 804.9,
+      "revenue_beat_pct": 11.8,
+      "ebitda_mid_m": 290,
+      "actual_ebitda_m": 342.8,
+      "ebitda_beat_pct": 18.2
+    }
+  ],
+  "ceilings": [
+    {
+      "topic": "AI/search traffic bridge",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "detail": "No quantified bridge from Google/LLM referral changes to app/direct/logged-in users."
+    },
+    {
+      "topic": "Anthropic litigation",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "detail": "Final public disposition of Anthropic demurrer not located as of 2026-08-24."
+    },
+    {
+      "topic": "Advertiser retention",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "detail": "Company does not publish a complete advertiser retention/cohort series."
+    },
+    {
+      "topic": "Statistical peer base rate",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "detail": "No clean primary-source cohort sufficient for statistical success/failure rates."
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "PASS",
+      "h3_locator": "0, 3.1"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "PASS",
+      "h3_locator": "1.1-1.5"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "PASS",
+      "h3_locator": "1.1-1.5"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "PASS",
+      "h3_locator": "3.2, 4.3"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "PASS",
+      "h3_locator": "1.3, 3.3, 4"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "PASS",
+      "h3_locator": "1.4, 4.3"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "PASS_WITH_CEILING",
+      "h3_locator": "1.1-1.2, 3.5"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "PASS",
+      "h3_locator": "3.3-3.4"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "PASS",
+      "h3_locator": "3.6"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "PASS",
+      "h3_locator": "3.7"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "PASS",
+      "h3_locator": "1.5, 3.5, 6.3"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "PASS",
+      "h3_locator": "2"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "PASS",
+      "h3_locator": "4"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "PASS",
+      "h3_locator": "2.2, 4.4, 5"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "PASS",
+      "h3_locator": "0, 5.5"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "PASS",
+      "h3_locator": "5"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "PASS",
+      "h3_locator": "3.7, 6"
+    }
+  ],
+  "source_register": [
+    {
+      "id": "S1",
+      "name": "Reddit Q2 2026 Earnings Release",
+      "date": "2026-07-30",
+      "tier": "Primary",
+      "url": "https://investor.redditinc.com/news-events/news-releases/news-details/2026/Reddit-Reports-Second-Quarter-2026-Results/default.aspx"
+    },
+    {
+      "id": "S2",
+      "name": "Reddit Q2 2026 Form 10-Q",
+      "date": "2026-07-31",
+      "tier": "Primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000100/rddt-20260630.htm"
+    },
+    {
+      "id": "S3",
+      "name": "Reddit Q2 2026 Shareholder Letter",
+      "date": "2026-07-30",
+      "tier": "Primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000098/exhibit992q226.htm"
+    },
+    {
+      "id": "S4",
+      "name": "Reddit FY2025 Form 10-K / FY2024 filings",
+      "date": "2026/2025",
+      "tier": "Primary",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=1713445&owner=exclude"
+    },
+    {
+      "id": "S5",
+      "name": "OpenAI and Reddit Partnership",
+      "date": "2024-05-16",
+      "tier": "Primary",
+      "url": "https://openai.com/index/openai-and-reddit-partnership/"
+    },
+    {
+      "id": "S6",
+      "name": "Google and Reddit Expanded Partnership",
+      "date": "2024-02-22",
+      "tier": "Primary",
+      "url": "https://blog.google/inside-google/company-announcements/expanded-reddit-partnership/"
+    },
+    {
+      "id": "S7",
+      "name": "Reddit Max / Community Intelligence product materials",
+      "date": "2025-2026",
+      "tier": "Primary-company-test",
+      "url": "https://www.redditinc.com/"
+    },
+    {
+      "id": "S8",
+      "name": "Reddit App Ads / Shopping / Shopify product materials",
+      "date": "2026",
+      "tier": "Primary-company/partner-study",
+      "url": "https://www.redditinc.com/"
+    },
+    {
+      "id": "S9",
+      "name": "Reddit Safety / Spam / Moderation updates",
+      "date": "2026-07/08",
+      "tier": "Primary-company-metrics",
+      "url": "https://www.redditinc.com/"
+    },
+    {
+      "id": "S10",
+      "name": "Reddit 2026 DEF 14A and Q2 2026 10-Q",
+      "date": "2026",
+      "tier": "Primary",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=1713445&owner=exclude"
+    },
+    {
+      "id": "S11",
+      "name": "Reddit Search / Reddit Answers integration",
+      "date": "2026-05",
+      "tier": "Primary",
+      "url": "https://www.redditinc.com/"
+    },
+    {
+      "id": "S12",
+      "name": "Reddit v. Anthropic / Reddit v. Perplexity proceedings",
+      "date": "through 2026-08-24",
+      "tier": "Primary legal + docket reporting",
+      "url": "https://www.courtlistener.com/"
+    },
+    {
+      "id": "S13",
+      "name": "Pinterest, Snap, Meta FY2025 filings",
+      "date": "2025/2026",
+      "tier": "Primary-peer",
+      "url": "https://www.sec.gov/edgar/search/"
+    },
+    {
+      "id": "S14",
+      "name": "Market consensus / short interest / price aggregators",
+      "date": "2026-08-21/24",
+      "tier": "Secondary-market-derived",
+      "url": null
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "VIS_ID": "VIS-001",
+      "FIGURE_TITLE": "최근 8개 분기 매출·FCF",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.quarterly_8q",
+      "SOURCE_VALUES": {
+        "revenue_m": [
+          348.35,
+          427.71,
+          392.36,
+          499.63,
+          584.91,
+          725.61,
+          663.41,
+          804.91
+        ],
+        "free_cash_flow_m": [
+          70.3,
+          89.2,
+          126.6,
+          110.8,
+          183.1,
+          263.6,
+          311.2,
+          260.7
+        ]
+      },
+      "SOURCE_VERSION_OR_HASH": "5e685ab87948",
+      "DISPLAY_VALUES": {
+        "revenue_m": [
+          348.35,
+          427.71,
+          392.36,
+          499.63,
+          584.91,
+          725.61,
+          663.41,
+          804.91
+        ],
+        "free_cash_flow_m": [
+          70.3,
+          89.2,
+          126.6,
+          110.8,
+          183.1,
+          263.6,
+          311.2,
+          260.7
+        ]
+      },
+      "NARRATIVE_LOCATOR": "4.2",
+      "TABLE_LOCATOR": "4.2",
+      "CAPTION_LOCATOR": "VIS-001",
+      "RENDERED_ASSET_LOCATOR": "inline_svg"
+    },
+    {
+      "VIS_ID": "VIS-002",
+      "FIGURE_TITLE": "DAUq와 ARPU의 동행",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.quarterly_8q",
+      "SOURCE_VALUES": {
+        "dauq_m": [
+          97.2,
+          101.7,
+          108.1,
+          110.4,
+          116.0,
+          121.4,
+          126.8,
+          130.3
+        ],
+        "arpu_usd": [
+          3.58,
+          4.21,
+          3.63,
+          4.53,
+          5.04,
+          5.98,
+          5.23,
+          6.18
+        ]
+      },
+      "SOURCE_VERSION_OR_HASH": "34a2c7b78355",
+      "DISPLAY_VALUES": {
+        "dauq_m": [
+          97.2,
+          101.7,
+          108.1,
+          110.4,
+          116.0,
+          121.4,
+          126.8,
+          130.3
+        ],
+        "arpu_usd": [
+          3.58,
+          4.21,
+          3.63,
+          4.53,
+          5.04,
+          5.98,
+          5.23,
+          6.18
+        ]
+      },
+      "NARRATIVE_LOCATOR": "3.2 / 4.2",
+      "TABLE_LOCATOR": "4.2",
+      "CAPTION_LOCATOR": "VIS-002",
+      "RENDERED_ASSET_LOCATOR": "inline_svg"
+    },
+    {
+      "VIS_ID": "VIS-003",
+      "FIGURE_TITLE": "Q2 2026 미국 vs 해외 경제성",
+      "AUTHORITATIVE_SOURCE_BLOCK": "latest_q2_2026",
+      "SOURCE_VALUES": {
+        "us_dauq_m": 53.2,
+        "international_dauq_m": 77.1,
+        "us_arpu_usd": 11.85,
+        "international_arpu_usd": 2.26,
+        "us_revenue_m": 638.1,
+        "international_revenue_m": 166.8
+      },
+      "SOURCE_VERSION_OR_HASH": "8a938800d9d7",
+      "DISPLAY_VALUES": {
+        "us_dauq_m": 53.2,
+        "international_dauq_m": 77.1,
+        "us_arpu_usd": 11.85,
+        "international_arpu_usd": 2.26,
+        "us_revenue_m": 638.1,
+        "international_revenue_m": 166.8
+      },
+      "NARRATIVE_LOCATOR": "1.4 / 4.3",
+      "TABLE_LOCATOR": "4.3",
+      "CAPTION_LOCATOR": "VIS-003",
+      "RENDERED_ASSET_LOCATOR": "inline_svg"
+    },
+    {
+      "VIS_ID": "VIS-004",
+      "FIGURE_TITLE": "시나리오 현재가치와 현재가",
+      "AUTHORITATIVE_SOURCE_BLOCK": "scenarios + valuation",
+      "SOURCE_VALUES": {
+        "scenario_pv": [
+          83.42,
+          199.99,
+          298.84,
+          402.31
+        ],
+        "current_price": 153.29,
+        "expected_value": 215.79
+      },
+      "SOURCE_VERSION_OR_HASH": "9641cf614f4e",
+      "DISPLAY_VALUES": {
+        "scenario_pv": [
+          83.42,
+          199.99,
+          298.84,
+          402.31
+        ],
+        "current_price": 153.29,
+        "expected_value": 215.79
+      },
+      "NARRATIVE_LOCATOR": "5.2",
+      "TABLE_LOCATOR": "5.2",
+      "CAPTION_LOCATOR": "VIS-004",
+      "RENDERED_ASSET_LOCATOR": "inline_svg"
+    },
+    {
+      "VIS_ID": "VIS-005",
+      "FIGURE_TITLE": "Reverse Expectations 매출 요구치",
+      "AUTHORITATIVE_SOURCE_BLOCK": "reverse_expectations",
+      "SOURCE_VALUES": {
+        "required_revenue_b": [
+          8.835,
+          7.496,
+          6.597,
+          6.185,
+          5.522
+        ],
+        "multiple_margin": [
+          [
+            20,
+            28
+          ],
+          [
+            22,
+            30
+          ],
+          [
+            25,
+            30
+          ],
+          [
+            25,
+            32
+          ],
+          [
+            28,
+            32
+          ]
+        ]
+      },
+      "SOURCE_VERSION_OR_HASH": "3231193bacd5",
+      "DISPLAY_VALUES": {
+        "required_revenue_b": [
+          8.835,
+          7.496,
+          6.597,
+          6.185,
+          5.522
+        ],
+        "multiple_margin": [
+          [
+            20,
+            28
+          ],
+          [
+            22,
+            30
+          ],
+          [
+            25,
+            30
+          ],
+          [
+            25,
+            32
+          ],
+          [
+            28,
+            32
+          ]
+        ]
+      },
+      "NARRATIVE_LOCATOR": "5.4",
+      "TABLE_LOCATOR": "5.4",
+      "CAPTION_LOCATOR": "VIS-005",
+      "RENDERED_ASSET_LOCATOR": "inline_svg"
+    }
+  ],
+  "gates": {
+    "REPORT_DATA_PACK": "EMITTED",
+    "DATA_PACK_REPORT_PARITY": "PENDING_PUBLISHING",
+    "LATEST_FILING_CHECK": "PASS",
+    "RC_UNRESOLVED": 0,
+    "H3_READY": true
+  }
+}

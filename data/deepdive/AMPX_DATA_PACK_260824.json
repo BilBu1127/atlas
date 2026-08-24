@@ -1,0 +1,838 @@
+{
+  "meta": {
+    "ticker": "AMPX",
+    "company": "Amprius Technologies, Inc.",
+    "T0": "2026-08-24",
+    "price_asof": "2026-08-21 close",
+    "filing_asof": "2026-08-13 latest 8-K; 2026-08-06 latest 10-Q",
+    "consensus_asof": "2026-08-18 to 2026-08-21",
+    "version": "Clean DDOS Production OS v1.7"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "fy": 2023,
+        "revenue": 9.053,
+        "cogs": 23.729,
+        "gross_profit": -14.676,
+        "gross_margin": -1.621,
+        "r_and_d": 3.677,
+        "sg_and_a": 20.356,
+        "net_loss": -36.776
+      },
+      {
+        "fy": 2024,
+        "revenue": 24.167,
+        "cogs": 42.497,
+        "gross_profit": -18.33,
+        "gross_margin": -0.758,
+        "r_and_d": 7.344,
+        "sg_and_a": 18.726,
+        "net_loss": -44.671
+      },
+      {
+        "fy": 2025,
+        "revenue": 73.011,
+        "cogs": 64.747,
+        "gross_profit": 8.264,
+        "gross_margin": 0.113,
+        "r_and_d": 9.43,
+        "sg_and_a": 22.956,
+        "net_loss": -44.024,
+        "adj_ebitda": -5.3
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "Q3 2024",
+        "revenue": 7.855,
+        "gross_profit": -5.101,
+        "gross_margin": -0.65,
+        "operating_loss": -11.253,
+        "net_loss": -10.85,
+        "adj_ebitda": -8.669,
+        "quality": "reported"
+      },
+      {
+        "quarter": "Q4 2024",
+        "revenue": 10.631,
+        "gross_profit": -2.253,
+        "gross_margin": -0.21,
+        "operating_loss": -11.758,
+        "net_loss": -11.418,
+        "adj_ebitda": -4.7,
+        "quality": "approx/derived"
+      },
+      {
+        "quarter": "Q1 2025",
+        "revenue": 11.284,
+        "gross_profit": -2.361,
+        "gross_margin": -0.21,
+        "operating_loss": -9.7,
+        "net_loss": -9.371,
+        "adj_ebitda": -6.9,
+        "quality": "approx/derived for op loss/EBITDA"
+      },
+      {
+        "quarter": "Q2 2025",
+        "revenue": 15.067,
+        "gross_profit": 1.34,
+        "gross_margin": 0.09,
+        "operating_loss": -6.813,
+        "net_loss": -6.37,
+        "adj_ebitda": -3.835,
+        "quality": "reported"
+      },
+      {
+        "quarter": "Q3 2025",
+        "revenue": 21.426,
+        "gross_profit": 3.318,
+        "gross_margin": 0.15,
+        "operating_loss": -4.692,
+        "net_loss": -3.892,
+        "adj_ebitda": -1.398,
+        "quality": "reported"
+      },
+      {
+        "quarter": "Q4 2025",
+        "revenue": 25.234,
+        "gross_profit": 5.967,
+        "gross_margin": 0.24,
+        "operating_loss": -25.47,
+        "net_loss": -24.391,
+        "adj_ebitda": 1.8,
+        "quality": "reported/annual-derived; GAAP includes Brighton charges"
+      },
+      {
+        "quarter": "Q1 2026",
+        "revenue": 28.536,
+        "gross_profit": 5.74,
+        "gross_margin": 0.2,
+        "operating_loss": -5.6,
+        "net_loss": -5.046,
+        "adj_ebitda": -1.8,
+        "quality": "reported; op loss approx"
+      },
+      {
+        "quarter": "Q2 2026",
+        "revenue": 34.032,
+        "gross_profit": 9.28,
+        "gross_margin": 0.27,
+        "operating_loss": -4.298,
+        "net_loss": -5.075,
+        "adj_ebitda": -1.0,
+        "quality": "reported; common-stockholder net loss"
+      }
+    ],
+    "ceilings": [
+      "Q4 2024 and Q1 2025 adjusted EBITDA / certain operating figures use approximate or derived values and are not decision-critical inputs."
+    ],
+    "balance_sheet": {
+      "cash": 74.517,
+      "accounts_receivable": 40.65,
+      "inventory": 11.51,
+      "shares_outstanding": 146.080618,
+      "debt": "immaterial/no meaningful funded debt"
+    },
+    "working_capital": {
+      "ar_2024ye": 5.6,
+      "ar_2025ye": 23.7,
+      "ar_2026q2": 40.65,
+      "rpo_2026q2": 36.5,
+      "bill_and_hold_h1_2026": 5.8,
+      "undelivered_bill_and_hold_2026q2": 3.0,
+      "ukraine_revenue_q2_2026": 10.4,
+      "ukraine_revenue_h1_2026": 20.5,
+      "ocf_h1_2026": -40.126,
+      "capex_h1_2026": -2.799
+    }
+  },
+  "kpis": [
+    {
+      "name": "H2 2026 revenue",
+      "history": [
+        {
+          "period": "H1 2026",
+          "value": 62.568
+        }
+      ],
+      "current": 62.568,
+      "thresholds": {
+        "green": ">=77m for H2",
+        "yellow": "70-77m",
+        "red": "<70m or guide cut"
+      }
+    },
+    {
+      "name": "H2 2026 gross margin",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": 0.27
+        }
+      ],
+      "current": 0.27,
+      "thresholds": {
+        "green": ">=31% H2 average",
+        "yellow": "27-31%",
+        "red": "<27%"
+      }
+    },
+    {
+      "name": "H2 2026 adjusted EBITDA",
+      "history": [
+        {
+          "period": "H1 2026",
+          "value": -2.8
+        }
+      ],
+      "current": -2.8,
+      "thresholds": {
+        "green": ">=+6.8m H2",
+        "yellow": "0 to +6.8m",
+        "red": "<0 H2"
+      }
+    },
+    {
+      "name": "RPO / repeat orders",
+      "history": [
+        {
+          "period": "2026 Q2",
+          "value": 36.5
+        }
+      ],
+      "current": 36.5,
+      "thresholds": {
+        "green": ">45m plus repeat orders",
+        "yellow": "30-45m",
+        "red": "<30m or cancellations"
+      }
+    },
+    {
+      "name": "CM economics proof",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": "utilization/yield/cost improvement disclosed",
+        "yellow": "capacity access only",
+        "red": "delivery/quality disruption"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.3,
+      "revenue_path": [
+        140,
+        180,
+        205,
+        220
+      ],
+      "margin_path": [
+        0.28,
+        0.27,
+        0.27,
+        0.275
+      ],
+      "ebit_margin_path": [
+        -0.05,
+        0.0,
+        0.02,
+        0.04
+      ],
+      "fcf": [
+        -35,
+        -15,
+        -8,
+        -4.4
+      ],
+      "capex": [
+        8,
+        10,
+        10,
+        10
+      ],
+      "diluted_shares": 190,
+      "terminal_ev_sales": 2.5,
+      "net_cash": 20,
+      "formation": "growth normalizes, CM value leakage, price pressure, more equity funding",
+      "break_condition": "2027 revenue >$220m with 30%+ GM and positive FCF",
+      "per_share_value": 3.0,
+      "present_value": 2.0219029435409923,
+      "irr": -0.3088340999571092,
+      "gross_profit_2029": 60.50000000000001
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "revenue_path": [
+        140,
+        213,
+        315,
+        450
+      ],
+      "margin_path": [
+        0.28,
+        0.31,
+        0.33,
+        0.35
+      ],
+      "ebit_margin_path": [
+        -0.05,
+        0.04,
+        0.1,
+        0.14
+      ],
+      "fcf": [
+        -30,
+        5,
+        22,
+        45
+      ],
+      "capex": [
+        8,
+        10,
+        14,
+        18
+      ],
+      "diluted_shares": 170,
+      "terminal_ev_sales": 4.5,
+      "net_cash": 70,
+      "formation": "FY26 guide met, FY27 near consensus, repeat UAS + Stark ramp, manageable CM economics",
+      "break_condition": "revenue/GM/FCF path materially exceeds or misses this bridge",
+      "per_share_value": 12.323529411764707,
+      "present_value": 8.305660130820351,
+      "irr": 0.05378161442338847,
+      "gross_profit_2029": 157.5
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.2,
+      "revenue_path": [
+        142,
+        240,
+        430,
+        700
+      ],
+      "margin_path": [
+        0.29,
+        0.34,
+        0.37,
+        0.39
+      ],
+      "ebit_margin_path": [
+        -0.04,
+        0.08,
+        0.15,
+        0.18
+      ],
+      "fcf": [
+        -25,
+        12,
+        55,
+        98
+      ],
+      "capex": [
+        8,
+        12,
+        18,
+        25
+      ],
+      "diluted_shares": 168,
+      "terminal_ev_sales": 6.0,
+      "net_cash": 150,
+      "formation": "multiple repeat programs, CM utilization proof, high-30s GM, limited new equity",
+      "break_condition": "H2'26 GM <31%, 2027 visibility near/below consensus, OCF fails to improve",
+      "per_share_value": 25.892857142857142,
+      "present_value": 17.450948024609755,
+      "irr": 0.31523336283769976,
+      "gross_profit_2029": 273.0
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.1,
+      "revenue_path": [
+        142,
+        260,
+        520,
+        950
+      ],
+      "margin_path": [
+        0.29,
+        0.35,
+        0.39,
+        0.42
+      ],
+      "ebit_margin_path": [
+        -0.04,
+        0.1,
+        0.18,
+        0.22
+      ],
+      "fcf": [
+        -25,
+        20,
+        90,
+        161.5
+      ],
+      "capex": [
+        8,
+        15,
+        25,
+        35
+      ],
+      "diluted_shares": 168,
+      "terminal_ev_sales": 7.5,
+      "net_cash": 250,
+      "formation": "preferred architecture across several platforms + SiMaxx/new vertical success",
+      "break_condition": "no standardized platform position or no attributable economics",
+      "per_share_value": 43.898809523809526,
+      "present_value": 29.586377398045276,
+      "irr": 0.539722474578674,
+      "gross_profit_2029": 399.0
+    }
+  ],
+  "valuation": {
+    "mode": "Mode A Option-led primary / Mode B Hybrid cross-check",
+    "core": 4.34,
+    "execution": 7.73,
+    "ecosystem": 0.0,
+    "drag": 1.69,
+    "expected_value": 10.38,
+    "expected_future_value_2029": 15.4,
+    "expected_irr": 0.1262,
+    "current_price": 10.34,
+    "hurdle": 0.125,
+    "ud_ratio_present_value": 0.85,
+    "base_present_value": 8.31,
+    "entry_price_for_15pct_expected_irr": 9.64,
+    "attractive_entry_band": "$8.3-$8.5 or below if KPIs intact"
+  },
+  "reverse_expectations": {
+    "base_terminal_multiple": 4.5,
+    "future_price_required_at_12_5pct_hurdle": 15.34,
+    "diluted_shares_2029": 170,
+    "net_cash_2029": 70,
+    "required_revenue_2029": 564.0,
+    "required_revenue_cagr_2026_2029": 0.591,
+    "required_gross_margin": 0.35,
+    "required_gross_profit": 197.4,
+    "required_fcf_margin": 0.1,
+    "required_fcf": 56.4,
+    "multiple_sensitivity": [
+      {
+        "ev_sales": 4.0,
+        "revenue": 635,
+        "cagr": 0.655
+      },
+      {
+        "ev_sales": 4.5,
+        "revenue": 564,
+        "cagr": 0.591
+      },
+      {
+        "ev_sales": 5.0,
+        "revenue": 508,
+        "cagr": 0.536
+      },
+      {
+        "ev_sales": 6.0,
+        "revenue": 423,
+        "cagr": 0.446
+      }
+    ],
+    "industry_kpi_translation": [
+      "H2 2026 GM >=31%",
+      "2027 revenue visibility above $230m",
+      "repeat PO/RPO expansion",
+      "AR growth <= revenue growth and OCF improvement",
+      "share count growth materially below GP growth",
+      "CM access converts to utilization/yield proof"
+    ],
+    "ceiling": "ASP, MWh shipment volume and CM utilization are not sufficiently disclosed to translate $564m into exact MWh or customer count."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue": 140.65,
+      "eps": -0.07
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue": 212.11,
+      "eps": 0.1
+    },
+    "fy3": {
+      "year": 2028,
+      "status": "PRIMARY_SOURCE_CEILING in reproducible public access"
+    },
+    "revision_trend": "Company FY26 revenue guidance raised from >=$125m (March) to >=$130m (May) to >=$140m (August). Public FY28 full consensus/revision series incomplete.",
+    "price_target_average": 23.0,
+    "short_interest": {
+      "asof": "2026-07-31",
+      "shares_m": 23.928,
+      "float_pct": 0.178,
+      "days_to_cover": 4.16
+    }
+  },
+  "capital_structure": {
+    "basic_shares_m": 146.080618,
+    "cash_m": 74.517,
+    "market_cap_m": 1510.47,
+    "enterprise_value_m": 1435.96,
+    "warrants_m": 10.474559,
+    "options_m": 6.5369,
+    "rsus_m": 4.876581,
+    "potential_instruments_m": 21.88804,
+    "public_warrant_strike": 11.5,
+    "public_warrant_expiry": "2027-09-14",
+    "share_growth_2023ye_to_2026q2": 0.6438
+  },
+  "stance": {
+    "zone": "WATCH / avoid chasing at current price",
+    "price_bands": {
+      "current": "$10.34",
+      "base_present_value": "$8.31",
+      "probability_weighted_present_value": "$10.38",
+      "conditional_interest": "<=~$9.6 if KPIs intact",
+      "attractive": "<=~$8.3-$8.5 if thesis intact",
+      "chase_risk": ">~$12 without higher evidence"
+    },
+    "horizon": "to FY2029 (~3.35 years from T0)"
+  },
+  "catalysts": [
+    {
+      "when": "2026 Q3 earnings / early Nov expected",
+      "event": "Q3 revenue, GM, EBITDA",
+      "sensitivity": "very high - GM trajectory matters more than headline revenue"
+    },
+    {
+      "when": "2026 Q4 / FY close",
+      "event": "FY26 guidance closure",
+      "sensitivity": "very high - H2 revenue >=$77.4m, GM ~31.2%, Adj EBITDA >=+$6.8m bridge"
+    },
+    {
+      "when": "late 2026",
+      "event": "Fremont 10MWh pilot ramp",
+      "sensitivity": "medium"
+    },
+    {
+      "when": "2026 H2",
+      "event": "$24m European drone order conversion",
+      "sensitivity": "high"
+    },
+    {
+      "when": "2027",
+      "event": "Stark Future supply start",
+      "sensitivity": "high"
+    },
+    {
+      "when": "ongoing",
+      "event": "CM utilization/yield disclosure and large repeat POs",
+      "sensitivity": "very high"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1/App.A"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1.2-1.5"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3.2-3.4/App.B"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch1.3/Ch3.2"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3.5/App.C"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3.5/App.C"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3.6/Ch4"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3.4"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4.1-4.2/App.D"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4.3"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4.4-4.5"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch2.1-2.5"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "Ch2.3-2.4/App.E"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4.6/Ch5"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1.6/Ch6.2"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch5.1/Ch6.1"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "Ch5/App.F"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE",
+      "h3_locator": "Ch6"
+    }
+  ],
+  "industry_company_lineage": {
+    "blocks_total": 6,
+    "landed": 6,
+    "evidence_boundary_stated": 6,
+    "status": "PASS"
+  },
+  "visual_lineage": [
+    {
+      "visual_id": "V1",
+      "title": "최근 8개 분기 매출 및 Gross Margin",
+      "data_path": "financials.quarterly_8q",
+      "transform": "revenue bars + gross_margin line",
+      "status": "PASS"
+    },
+    {
+      "visual_id": "V2",
+      "title": "시나리오별 현재가치",
+      "data_path": "scenarios[].present_value + valuation.current_price",
+      "transform": "bar chart",
+      "status": "PASS"
+    },
+    {
+      "visual_id": "V3",
+      "title": "Shares outstanding history",
+      "data_path": "capital_structure + financial filings",
+      "transform": "line chart",
+      "status": "PASS"
+    },
+    {
+      "visual_id": "V4",
+      "title": "AMPX annual/current price history with event context",
+      "data_path": "valuation-band history / StockAnalysis year-end close points",
+      "transform": "line chart with event annotations",
+      "status": "PASS",
+      "note": "Not a daily price chart; year-end/current points only."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Amprius Q2 2026 Form 10-Q",
+      "date": "2026-08-06",
+      "url": "https://ir.amprius.com/sec-filings/all-sec-filings/content/0001899287-26-000059/ampx-20260630.htm",
+      "tier": "Primary - SEC"
+    },
+    {
+      "id": "S2",
+      "title": "Amprius Q2 2026 results / Investor Relations",
+      "date": "2026-08",
+      "url": "https://ir.amprius.com/news-events/press-releases/",
+      "tier": "Primary - issuer"
+    },
+    {
+      "id": "S3",
+      "title": "Amprius FY2025 Form 10-K",
+      "date": "2026-03-06",
+      "url": "https://ir.amprius.com/sec-filings/all-sec-filings/content/0001899287-26-000015/ampx-20251231.htm",
+      "tier": "Primary - SEC"
+    },
+    {
+      "id": "S4",
+      "title": "Amprius Q3 2025 shareholder letter / 8-K exhibit",
+      "date": "2025-11-06",
+      "url": "https://ir.amprius.com/sec-filings/all-sec-filings/content/0001628280-25-050172/exhibit991q32025letterto.htm",
+      "tier": "Primary - issuer/SEC"
+    },
+    {
+      "id": "S5",
+      "title": "Amprius FY2025 financial results",
+      "date": "2026-03-04",
+      "url": "https://ir.amprius.com/news-events/press-releases/detail/160/amprius-technologies-reports-fourth-quarter-and-fiscal-year-2025-financial-results-and-recent-business-highlights",
+      "tier": "Primary - issuer"
+    },
+    {
+      "id": "S6",
+      "title": "Amprius 2026 DEF 14A / Proxy",
+      "date": "2026-04-29",
+      "url": "https://www.sec.gov/Archives/edgar/data/1899287/000189928726000026/ampx-20260428.htm",
+      "tier": "Primary - SEC"
+    },
+    {
+      "id": "S7",
+      "title": "Amprius product materials",
+      "date": "2026",
+      "url": "https://amprius.com/products/",
+      "tier": "Primary - issuer"
+    },
+    {
+      "id": "S8",
+      "title": "Matternet and Amprius partnership / mission economics",
+      "date": "2026-05-19",
+      "url": "https://www.matternet.com/newsroom/matternet-and-amprius-partner-to-advance-drone-delivery",
+      "tier": "Primary - customer"
+    },
+    {
+      "id": "S9",
+      "title": "Matternet product and certification materials",
+      "date": "2026",
+      "url": "https://www.matternet.com/",
+      "tier": "Primary - customer"
+    },
+    {
+      "id": "S10",
+      "title": "U.S. Department of War - Drone Dominance",
+      "date": "2026",
+      "url": "https://www.war.gov/",
+      "tier": "Primary - government"
+    },
+    {
+      "id": "S11",
+      "title": "FAA - Package Delivery by Drone / Part 135",
+      "date": "2026",
+      "url": "https://www.faa.gov/uas/advanced_operations/package_delivery_drone",
+      "tier": "Primary - regulator"
+    },
+    {
+      "id": "S12",
+      "title": "Molicel product information",
+      "date": "2026",
+      "url": "https://www.molicel.com/",
+      "tier": "Primary - competitor"
+    },
+    {
+      "id": "S13",
+      "title": "Enovix product and investor materials",
+      "date": "2026",
+      "url": "https://www.enovix.com/",
+      "tier": "Primary - competitor"
+    },
+    {
+      "id": "S14",
+      "title": "SES AI battery portfolio",
+      "date": "2026",
+      "url": "https://www.ses.ai/",
+      "tier": "Primary - competitor"
+    },
+    {
+      "id": "S15",
+      "title": "Sion Power Licerion materials",
+      "date": "2026",
+      "url": "https://sionpower.com/",
+      "tier": "Primary - competitor"
+    },
+    {
+      "id": "S16",
+      "title": "AALTO Zephyr corporate materials",
+      "date": "2026",
+      "url": "https://www.aaltohaps.com/",
+      "tier": "Primary - customer/platform"
+    },
+    {
+      "id": "S17",
+      "title": "SEC AMPX filings / ownership",
+      "date": "2026",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=1899287",
+      "tier": "Primary - SEC"
+    },
+    {
+      "id": "S18",
+      "title": "StockAnalysis AMPX statistics and forecast (S&P Global/TipRanks derived)",
+      "date": "2026-08-21",
+      "url": "https://stockanalysis.com/stocks/ampx/statistics/",
+      "tier": "Secondary market data"
+    },
+    {
+      "id": "S19",
+      "title": "Zacks AMPX detailed estimates",
+      "date": "2026-08",
+      "url": "https://www.zacks.com/stock/quote/AMPX/detailed-earning-estimates",
+      "tier": "Secondary consensus"
+    },
+    {
+      "id": "S20",
+      "title": "MarketBeat AMPX short interest",
+      "date": "2026-08",
+      "url": "https://www.marketbeat.com/stocks/NYSE/AMPX/short-interest/",
+      "tier": "Secondary market data"
+    },
+    {
+      "id": "S21",
+      "title": "2023 Amprius company presentation hosted by NASA",
+      "date": "2023",
+      "url": "https://www.nasa.gov/wp-content/uploads/2024/01/amprius-technologies-for-nasa-2023.pdf",
+      "tier": "Issuer material hosted externally"
+    },
+    {
+      "id": "S22",
+      "title": "Original Brighton 500MWh 2025 announcement",
+      "date": "2023",
+      "url": "https://ir.amprius.com/news-events/press-releases/detail/39/amprius-technologies-selects-colorado-for-gigawatt-hour-scale-factory-site",
+      "tier": "Primary - issuer"
+    },
+    {
+      "id": "S23",
+      "title": "Amprius 2026-08-13 Form 8-K - Fremont lease extension",
+      "date": "2026-08-13",
+      "url": "https://ir.amprius.com/sec-filings/all-sec-filings/content/0001899287-26-000062/ampx-20260807.htm",
+      "tier": "Primary - SEC"
+    }
+  ],
+  "audit": {
+    "RC_UNRESOLVED": 0,
+    "H1_H2_RESEARCH_CONTRACT_COMPLETENESS": "PASS",
+    "H2_H3_COVERAGE_LINEAGE": "PASS",
+    "LATEST_FILING_CHECK": "PASS",
+    "RC_H3_COVERAGE_RATE": "100%",
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "DATA_PACK_REPORT_PARITY": "PASS"
+  }
+}

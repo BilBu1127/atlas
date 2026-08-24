@@ -1,0 +1,1271 @@
+{
+  "meta": {
+    "ticker": "SAIL",
+    "company": "SailPoint, Inc.",
+    "T0": "2026-08-24",
+    "price_asof": "2026-08-21",
+    "filing_asof": "FY27 Q1 Form 10-Q / period ended 2026-04-30",
+    "consensus_asof": "2026-08-24 public-access layer",
+    "version": "DDOS v1.7",
+    "currency": "USD",
+    "current_price": 18.64,
+    "ipo_price": 23.0
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "fy": "FY24",
+        "revenue_m": 699.6,
+        "arr_m": 681.8,
+        "saas_arr_m": 388.3,
+        "saas_mix_pct": 57.0,
+        "nrr_pct": 114.0,
+        "gaap_gross_margin_pct": 60.5,
+        "adjusted_operating_margin_pct": 7.8,
+        "gaap_net_income_m": -395.4,
+        "cfo_m": -250.4,
+        "fcf_m": -252.9
+      },
+      {
+        "fy": "FY25",
+        "revenue_m": 861.6,
+        "arr_m": 876.7,
+        "saas_arr_m": 540.3,
+        "saas_mix_pct": 61.6,
+        "nrr_pct": 114.0,
+        "gaap_gross_margin_pct": 64.5,
+        "adjusted_operating_margin_pct": 15.4,
+        "gaap_net_income_m": -315.8,
+        "cfo_m": -106.4,
+        "fcf_m": -120.0
+      },
+      {
+        "fy": "FY26",
+        "revenue_m": 1071.4,
+        "arr_m": 1124.8,
+        "saas_arr_m": 746.2,
+        "saas_mix_pct": 66.3,
+        "nrr_pct": 113.0,
+        "gaap_gross_margin_pct": 64.5,
+        "adjusted_operating_margin_pct": 18.1,
+        "gaap_net_income_m": -270.1,
+        "cfo_m": 70.6,
+        "fcf_m": 51.8
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter_end": "2024-07-31",
+        "revenue_m": 198.6,
+        "arr_m": 766.7,
+        "saas_arr_m": 455.0,
+        "saas_mix_pct": 59.0,
+        "nrr_pct": 114.0,
+        "adjusted_operating_margin_pct": 11.0
+      },
+      {
+        "quarter_end": "2024-10-31",
+        "revenue_m": 235.3,
+        "arr_m": 813.2,
+        "saas_arr_m": 485.7,
+        "saas_mix_pct": 60.0,
+        "nrr_pct": 114.0,
+        "adjusted_operating_margin_pct": 20.0
+      },
+      {
+        "quarter_end": "2025-01-31",
+        "revenue_m": 239.7,
+        "arr_m": 876.7,
+        "saas_arr_m": 540.3,
+        "saas_mix_pct": 62.0,
+        "nrr_pct": 114.0,
+        "adjusted_operating_margin_pct": 19.0
+      },
+      {
+        "quarter_end": "2025-04-30",
+        "revenue_m": 230.5,
+        "arr_m": 924.7,
+        "saas_arr_m": 573.5,
+        "saas_mix_pct": 62.0,
+        "nrr_pct": 115.0,
+        "adjusted_operating_margin_pct": 10.0
+      },
+      {
+        "quarter_end": "2025-07-31",
+        "revenue_m": 264.4,
+        "arr_m": 982.0,
+        "saas_arr_m": 622.7,
+        "saas_mix_pct": 63.0,
+        "nrr_pct": 114.0,
+        "adjusted_operating_margin_pct": 20.0
+      },
+      {
+        "quarter_end": "2025-10-31",
+        "revenue_m": 281.9,
+        "arr_m": 1039.7,
+        "saas_arr_m": 668.6,
+        "saas_mix_pct": 64.0,
+        "nrr_pct": 114.0,
+        "adjusted_operating_margin_pct": 20.0
+      },
+      {
+        "quarter_end": "2026-01-31",
+        "revenue_m": 294.7,
+        "arr_m": 1124.8,
+        "saas_arr_m": 746.2,
+        "saas_mix_pct": 66.0,
+        "nrr_pct": 113.0,
+        "adjusted_operating_margin_pct": 20.6
+      },
+      {
+        "quarter_end": "2026-04-30",
+        "revenue_m": 280.1,
+        "arr_m": 1162.7,
+        "saas_arr_m": 781.1,
+        "saas_mix_pct": 67.0,
+        "nrr_pct": 113.0,
+        "adjusted_operating_margin_pct": 13.5
+      }
+    ],
+    "ceilings": [
+      "AI/NHI identity growth → incremental security budget conversion rate",
+      "Entro acquisition purchase price",
+      "Full FY29 sell-side consensus and normalized 13F denominator",
+      "Agentic ARR incremental-vs-reclassified transaction mix",
+      "Exact competitor win-rate"
+    ]
+  },
+  "kpis": [
+    {
+      "name": "Total ARR growth",
+      "current": "26% FY27 Q1 / 21–22% FY27 guide",
+      "history": [
+        {
+          "period": "FY27 Q1",
+          "value_pct": 26.0
+        }
+      ],
+      "thresholds": {
+        "green": "23%+",
+        "yellow": "19–23%",
+        "red": "<19%"
+      },
+      "signal": "YELLOW_GREEN"
+    },
+    {
+      "name": "SaaS ARR growth",
+      "current": "36% FY27 Q1",
+      "history": [
+        {
+          "period": "FY27 Q1",
+          "value_pct": 36.0
+        }
+      ],
+      "thresholds": {
+        "green": "30%+",
+        "yellow": "24–30%",
+        "red": "<24%"
+      },
+      "signal": "GREEN"
+    },
+    {
+      "name": "NRR",
+      "current": "113%",
+      "history": [
+        {
+          "period": "FY25 Q1",
+          "value_pct": 115.0
+        },
+        {
+          "period": "FY27 Q1",
+          "value_pct": 113.0
+        }
+      ],
+      "thresholds": {
+        "green": "114%+",
+        "yellow": "111–113%",
+        "red": "<111%"
+      },
+      "signal": "YELLOW"
+    },
+    {
+      "name": "$1M+ ARR customers",
+      "current": "225 / +32% YoY",
+      "history": [
+        {
+          "period": "2025-04-30",
+          "count": 170
+        },
+        {
+          "period": "2026-04-30",
+          "count": 225
+        }
+      ],
+      "thresholds": {
+        "green": "25%+ growth",
+        "yellow": "15–25%",
+        "red": "<15%"
+      },
+      "signal": "GREEN"
+    },
+    {
+      "name": "AI ARR quality",
+      "current": "FY26 ~$20M; FY27 target $100M+",
+      "history": [
+        {
+          "period": "FY26",
+          "value_m": 20.0
+        }
+      ],
+      "thresholds": {
+        "green": "AI ARR + total ARR/NRR 동반 가속",
+        "yellow": "AI ARR만 증가",
+        "red": "AI ARR 증가 + total ARR 둔화"
+      },
+      "signal": "YELLOW"
+    },
+    {
+      "name": "Adjusted operating margin",
+      "current": "13.5% Q1; FY27 guide 18.7–19.3%",
+      "history": [
+        {
+          "period": "FY26",
+          "value_pct": 18.1
+        },
+        {
+          "period": "FY27 Q1",
+          "value_pct": 13.5
+        }
+      ],
+      "thresholds": {
+        "green": "guide beat + SBC 안정",
+        "yellow": "guide 수준",
+        "red": "margin miss / SBC↑"
+      },
+      "signal": "GREEN_WITH_SBC_FLAG"
+    },
+    {
+      "name": "FCF margin",
+      "current": "11.6% FY27 Q1",
+      "history": [
+        {
+          "period": "FY27 Q1",
+          "value_pct": 11.6
+        }
+      ],
+      "thresholds": {
+        "green": "20%대 경로 확인",
+        "yellow": "10%대 중반",
+        "red": "지속 하락 / 재적자"
+      },
+      "signal": "YELLOW"
+    },
+    {
+      "name": "Economic dilution",
+      "current": "FY29 model 615–640M vs current ~567M shares",
+      "history": [],
+      "thresholds": {
+        "green": "연 3% 이하",
+        "yellow": "3–5%",
+        "red": ">5% 지속"
+      },
+      "signal": "YELLOW_RED_WATCH"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.25,
+      "fy29_arr_b": 1.65,
+      "fy29_ai_arr_b": 0.25,
+      "revenue_path": [
+        {
+          "fy": "FY29",
+          "revenue_b": 1.58
+        }
+      ],
+      "margin_path": [
+        {
+          "fy": "FY29",
+          "adjusted_operating_margin_pct": 16.0,
+          "fcf_margin_pct": 13.0
+        }
+      ],
+      "fcf": [
+        {
+          "fy": "FY29",
+          "fcf_m": 205.0
+        }
+      ],
+      "diluted_shares_m": 640.0,
+      "net_cash_b": 0.45,
+      "exit_ev_arr": 5.5,
+      "terminal_per_share_value": 14.8828,
+      "per_share_value": 11.2776,
+      "scenario_irr": -0.0879
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "fy29_arr_b": 2.05,
+      "fy29_ai_arr_b": 0.5,
+      "revenue_path": [
+        {
+          "fy": "FY29",
+          "revenue_b": 1.92
+        }
+      ],
+      "margin_path": [
+        {
+          "fy": "FY29",
+          "adjusted_operating_margin_pct": 21.0,
+          "fcf_margin_pct": 20.0
+        }
+      ],
+      "fcf": [
+        {
+          "fy": "FY29",
+          "fcf_m": 384.0
+        }
+      ],
+      "diluted_shares_m": 630.0,
+      "net_cash_b": 0.65,
+      "exit_ev_arr": 7.0,
+      "terminal_per_share_value": 23.8095,
+      "per_share_value": 18.0419,
+      "scenario_irr": 0.1052
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.25,
+      "fy29_arr_b": 2.25,
+      "fy29_ai_arr_b": 0.8,
+      "revenue_path": [
+        {
+          "fy": "FY29",
+          "revenue_b": 2.05
+        }
+      ],
+      "margin_path": [
+        {
+          "fy": "FY29",
+          "adjusted_operating_margin_pct": 23.0,
+          "fcf_margin_pct": 22.0
+        }
+      ],
+      "fcf": [
+        {
+          "fy": "FY29",
+          "fcf_m": 451.0
+        }
+      ],
+      "diluted_shares_m": 620.0,
+      "net_cash_b": 0.75,
+      "exit_ev_arr": 8.5,
+      "terminal_per_share_value": 32.0565,
+      "per_share_value": 24.2911,
+      "scenario_irr": 0.248
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.1,
+      "fy29_arr_b": 2.45,
+      "fy29_ai_arr_b": 1.0,
+      "revenue_path": [
+        {
+          "fy": "FY29",
+          "revenue_b": 2.2
+        }
+      ],
+      "margin_path": [
+        {
+          "fy": "FY29",
+          "adjusted_operating_margin_pct": 25.0,
+          "fcf_margin_pct": 25.0
+        }
+      ],
+      "fcf": [
+        {
+          "fy": "FY29",
+          "fcf_m": 550.0
+        }
+      ],
+      "diluted_shares_m": 615.0,
+      "net_cash_b": 0.85,
+      "exit_ev_arr": 10.5,
+      "terminal_per_share_value": 43.2114,
+      "per_share_value": 32.7439,
+      "scenario_irr": 0.4099
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B — Hybrid",
+    "core_per_share": 12.99,
+    "execution_per_share": 3.37,
+    "ecosystem_per_share": 3.63,
+    "drag_per_share": 0.6,
+    "component_note": "구성요소는 attribution용이며 총 기대가치가 authoritative. AI ARR 이중계산 방지를 위해 scenario total ARR가 governing model.",
+    "expected_value": 19.38,
+    "expected_irr": 0.138,
+    "current_price": 18.64,
+    "hurdle_rate": 0.12,
+    "base_irr": 0.105,
+    "bear_value": 11.28,
+    "bull_execution_value": 24.29,
+    "bull_ecosystem_value": 32.74,
+    "upside_downside_execution": 0.77,
+    "reported_cash_market_cap_b": 10.57,
+    "reported_cash_ev_b": 10.18,
+    "reported_cash_ev_current_arr": 8.76,
+    "reported_cash_ev_fy27_arr_mid": 7.44,
+    "reported_cash_ev_ltm_revenue": 9.08,
+    "reported_cash_ev_fy27_revenue_mid": 8.02,
+    "discount_rate": 0.12,
+    "valuation_horizon_years": 2.45
+  },
+  "reverse_expectations": {
+    "required_terminal_per_share_for_12pct": 24.6,
+    "base_diluted_shares_m": 630.0,
+    "assumed_fy29_net_cash_b": 0.65,
+    "required_fy29_ev_b": 14.85,
+    "required_arr_b_by_exit_ev_arr": {
+      "6.5x": 2.28,
+      "7.0x": 2.12,
+      "7.5x": 1.98,
+      "8.0x": 1.86
+    },
+    "required_fcf_m_by_exit_ev_fcf": {
+      "25x": 594,
+      "30x": 495,
+      "35x": 424,
+      "40x": 371
+    },
+    "management_fy29_targets": {
+      "total_arr_b": 2.1,
+      "ai_arr_b": 0.8,
+      "fcf_m": 400,
+      "adjusted_operating_margin_pct": 22,
+      "fcf_margin_pct": 22
+    },
+    "interpretation": "7.0x terminal EV/ARR에서 12% 수익률을 얻으려면 FY29 ARR 약 $2.12B가 필요해 management $2.1B+ 목표를 사실상 요구."
+  },
+  "consensus": {
+    "fy1": {
+      "period": "FY27",
+      "revenue_b": 1.27,
+      "revenue_growth_pct": 18.6,
+      "note": "public-access aggregate; company guide midpoint와 거의 일치"
+    },
+    "fy2": {
+      "period": "FY28",
+      "revenue_b": 1.5,
+      "revenue_growth_pct": 18.5,
+      "note": "public-access aggregate"
+    },
+    "revision_trend": "2026년 8월 일부 목표가 상향이 있었으나 Neutral 의견도 존재. broad coverage로 정보공백형 mispricing은 약함.",
+    "coverage_note": "~25 analysts; full FY29 consensus = PRIMARY_SOURCE_CEILING",
+    "short_interest": {
+      "as_of": "2026-07-31",
+      "shares_m": 19.3,
+      "public_source_short_float_pct_approx": 3.5
+    }
+  },
+  "stance": {
+    "zone": "WATCH / NO NEW ENTRY",
+    "korean": "회피에 가까운 관망 / 신규 진입 보류",
+    "price_bands": {
+      "active_interest": "$14.0–15.5",
+      "conditional_interest": "$15.5–17.5",
+      "watch": "$17.5–20.5",
+      "valuation_pressure": "$20.5+",
+      "low_attractiveness": "$24+"
+    },
+    "horizon": "FY29 terminal / ~2.45 years from price AS_OF",
+    "reason": "Expected IRR 13.8% > 12% hurdle지만 Base IRR 10.5%, execution U/D 0.77x로 tail upside 의존도가 높음."
+  },
+  "catalysts": [
+    {
+      "when": "2026-09-09",
+      "event": "FY27 Q2 earnings before U.S. market open",
+      "sensitivity": "ARR Q2 $1.218–1.222B, FY27 guide raise, NRR, large-customer cohorts, Agentic/Entro attach, SBC"
+    },
+    {
+      "when": "FY27 year-end",
+      "event": "FY27 AI ARR $100M+ target check",
+      "sensitivity": "AI ARR와 total ARR/NRR의 동행 여부"
+    },
+    {
+      "when": "FY27–FY29",
+      "event": "Customer-hosted → SaaS migration",
+      "sensitivity": "on-prem base 10%+/yr migration, cumulative ~50% FY29 target"
+    },
+    {
+      "when": "ongoing",
+      "event": "Thoma Bravo secondary / insider filings",
+      "sensitivity": "free-float 공급과 주당 valuation overhang"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.1.4 / Appendix D"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.2–3.3"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1.2 / Ch.3.4"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.5"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1.3 / Ch.4.4"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2.1"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4.1–4.2"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2.4 / Ch.4.3"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.2.3–2.4 / Appendix D"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2.2 / Ch.4.4 / Ch.5.4"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.6.2 / Appendix D"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.6.4–6.8"
+    }
+  ],
+  "governance": {
+    "thoma_bravo_ownership_pct": 84.6,
+    "thoma_bravo_shares_m": 479.843,
+    "shares_outstanding_2026_04_10_m": 567.223,
+    "cash_2026_04_30_m": 390.806,
+    "revolver_capacity_m": 250.0,
+    "revolver_drawn_m": 0.0,
+    "fy27_q1_sbc_m": 69.1,
+    "unrecognized_rsu_comp_m": 452.3,
+    "fy27_q1_new_rsu_awards_m": 21.4,
+    "entro_purchase_price": "PRIMARY_SOURCE_CEILING"
+  },
+  "management_targets": {
+    "fy29_total_arr_b": 2.1,
+    "fy29_ai_arr_b": 0.8,
+    "fy29_adjusted_operating_margin_pct": 22,
+    "fy29_fcf_m": 400,
+    "fy29_fcf_margin_pct": 22,
+    "fy29_cumulative_onprem_migration_pct_approx": 50,
+    "fy27_onward_migration_per_year_pct_min": 10
+  },
+  "as_of_registry": {
+    "T0": "2026-08-24 KST",
+    "price_asof": "2026-08-21 close",
+    "financial_filing_asof": "FY27 Q1 10-Q",
+    "investor_day_asof": "2026-06-16",
+    "product_news_asof": "2026-08-04",
+    "ownership_check": "through 2026-08-14 SEC filing activity",
+    "next_earnings": "2026-09-09"
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "SailPoint FY27 Q1 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/2030781/000203078126000011/sail-20260430.htm",
+      "tier": "Primary"
+    },
+    {
+      "id": "S2",
+      "title": "SailPoint FY27 Q1 earnings release",
+      "url": "https://www.sec.gov/Archives/edgar/data/2030781/000203078126000008/sailpointinc-20260430x991x.htm",
+      "tier": "Primary"
+    },
+    {
+      "id": "S3",
+      "title": "SailPoint FY26 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/2030781/000203078126000003/sail-20260131.htm",
+      "tier": "Primary"
+    },
+    {
+      "id": "S4",
+      "title": "SailPoint Investor Day Presentation — 2026-06-16",
+      "url": "https://investor.sailpoint.com/static-files/46c1ddcc-5107-4e7e-9efb-6fbf5884cea9",
+      "tier": "Primary"
+    },
+    {
+      "id": "S5",
+      "title": "SailPoint 2026 Proxy",
+      "url": "https://www.sec.gov/Archives/edgar/data/2030781/000119312526177300/d108297ddef14a.htm",
+      "tier": "Primary"
+    },
+    {
+      "id": "S6",
+      "title": "SailPoint 2025 IPO Prospectus",
+      "url": "https://www.sec.gov/Archives/edgar/data/2030781/000119312525026566/d906470d424b4.htm",
+      "tier": "Primary"
+    },
+    {
+      "id": "S7",
+      "title": "Microsoft Entra Agent ID",
+      "url": "https://learn.microsoft.com/en-us/entra/agent-id/",
+      "tier": "Competitor primary"
+    },
+    {
+      "id": "S8",
+      "title": "Microsoft Entra ID Governance",
+      "url": "https://learn.microsoft.com/en-us/entra/id-governance/",
+      "tier": "Competitor primary"
+    },
+    {
+      "id": "S10",
+      "title": "Okta for AI Agents",
+      "url": "https://www.okta.com/products/govern-ai-agent-identity/",
+      "tier": "Competitor primary"
+    },
+    {
+      "id": "S11",
+      "title": "One Identity Identity Manager",
+      "url": "https://www.oneidentity.com/products/identity-manager/",
+      "tier": "Competitor primary"
+    },
+    {
+      "id": "S12",
+      "title": "EU AI Act Service Desk",
+      "url": "https://ai-act-service-desk.ec.europa.eu/",
+      "tier": "Regulatory primary"
+    },
+    {
+      "id": "S15",
+      "title": "SailPoint Agentic Fabric / Human Fabric GA — 2026-08-04",
+      "url": "https://investor.sailpoint.com/news-releases/news-release-details/sailpoint-eliminates-blind-spots-unified-protection-across-human",
+      "tier": "Primary"
+    },
+    {
+      "id": "S16",
+      "title": "SailPoint completes Entro acquisition — 2026-06-29",
+      "url": "https://investor.sailpoint.com/news-releases/news-release-details/sailpoint-completes-acquisition-entro-security-secure-agentic",
+      "tier": "Primary"
+    },
+    {
+      "id": "S17",
+      "title": "SailPoint FY27 Q2 earnings date — 2026-09-09",
+      "url": "https://investor.sailpoint.com/news-releases/news-release-details/sailpoint-announces-date-fiscal-second-quarter-2027-earnings",
+      "tier": "Primary"
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "Investment Snapshot",
+      "authoritative_source_block": "valuation + stance",
+      "source_values": {
+        "current_price": 18.64,
+        "expected_value": 19.38,
+        "expected_irr": 0.138,
+        "ud": 0.77
+      },
+      "narrative_locator": "Ch.0",
+      "table_locator": "Ch.6.3",
+      "caption_locator": "Executive Summary visual plate",
+      "rendered_asset_locator": "HTML/PDF summary plate",
+      "source_version_or_hash": "b6bb4b9aa6acb8fb",
+      "display_values": {
+        "current_price": 18.64,
+        "expected_value": 19.38,
+        "expected_irr": 0.138,
+        "ud": 0.77
+      },
+      "displayed_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "3Y Recurring Economics",
+      "authoritative_source_block": "financials.annual_3y",
+      "source_values": [
+        {
+          "fy": "FY24",
+          "revenue_m": 699.6,
+          "arr_m": 681.8,
+          "saas_arr_m": 388.3,
+          "saas_mix_pct": 57.0,
+          "nrr_pct": 114.0,
+          "gaap_gross_margin_pct": 60.5,
+          "adjusted_operating_margin_pct": 7.8,
+          "gaap_net_income_m": -395.4,
+          "cfo_m": -250.4,
+          "fcf_m": -252.9
+        },
+        {
+          "fy": "FY25",
+          "revenue_m": 861.6,
+          "arr_m": 876.7,
+          "saas_arr_m": 540.3,
+          "saas_mix_pct": 61.6,
+          "nrr_pct": 114.0,
+          "gaap_gross_margin_pct": 64.5,
+          "adjusted_operating_margin_pct": 15.4,
+          "gaap_net_income_m": -315.8,
+          "cfo_m": -106.4,
+          "fcf_m": -120.0
+        },
+        {
+          "fy": "FY26",
+          "revenue_m": 1071.4,
+          "arr_m": 1124.8,
+          "saas_arr_m": 746.2,
+          "saas_mix_pct": 66.3,
+          "nrr_pct": 113.0,
+          "gaap_gross_margin_pct": 64.5,
+          "adjusted_operating_margin_pct": 18.1,
+          "gaap_net_income_m": -270.1,
+          "cfo_m": 70.6,
+          "fcf_m": 51.8
+        }
+      ],
+      "narrative_locator": "Ch.4.1",
+      "table_locator": "Ch.4.1",
+      "caption_locator": "Financial visual plate",
+      "rendered_asset_locator": "HTML/PDF Ch.4",
+      "source_version_or_hash": "eaea1e6f7add99f4",
+      "display_values": [
+        {
+          "fy": "FY24",
+          "revenue_m": 699.6,
+          "arr_m": 681.8,
+          "saas_arr_m": 388.3,
+          "saas_mix_pct": 57.0,
+          "nrr_pct": 114.0,
+          "gaap_gross_margin_pct": 60.5,
+          "adjusted_operating_margin_pct": 7.8,
+          "gaap_net_income_m": -395.4,
+          "cfo_m": -250.4,
+          "fcf_m": -252.9
+        },
+        {
+          "fy": "FY25",
+          "revenue_m": 861.6,
+          "arr_m": 876.7,
+          "saas_arr_m": 540.3,
+          "saas_mix_pct": 61.6,
+          "nrr_pct": 114.0,
+          "gaap_gross_margin_pct": 64.5,
+          "adjusted_operating_margin_pct": 15.4,
+          "gaap_net_income_m": -315.8,
+          "cfo_m": -106.4,
+          "fcf_m": -120.0
+        },
+        {
+          "fy": "FY26",
+          "revenue_m": 1071.4,
+          "arr_m": 1124.8,
+          "saas_arr_m": 746.2,
+          "saas_mix_pct": 66.3,
+          "nrr_pct": 113.0,
+          "gaap_gross_margin_pct": 64.5,
+          "adjusted_operating_margin_pct": 18.1,
+          "gaap_net_income_m": -270.1,
+          "cfo_m": 70.6,
+          "fcf_m": 51.8
+        }
+      ],
+      "displayed_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "Scenario Value vs Current Price",
+      "authoritative_source_block": "scenarios",
+      "source_values": [
+        {
+          "name": "Bear",
+          "probability": 0.25,
+          "per_share_value": 11.2776
+        },
+        {
+          "name": "Base",
+          "probability": 0.4,
+          "per_share_value": 18.0419
+        },
+        {
+          "name": "Bull Execution",
+          "probability": 0.25,
+          "per_share_value": 24.2911
+        },
+        {
+          "name": "Bull Ecosystem",
+          "probability": 0.1,
+          "per_share_value": 32.7439
+        }
+      ],
+      "narrative_locator": "Ch.5.4",
+      "table_locator": "Ch.0.3 / Ch.5.4",
+      "caption_locator": "Valuation visual plate",
+      "rendered_asset_locator": "HTML/PDF Ch.5",
+      "source_version_or_hash": "a21972ddd6071ec1",
+      "display_values": [
+        {
+          "name": "Bear",
+          "probability": 0.25,
+          "per_share_value": 11.2776
+        },
+        {
+          "name": "Base",
+          "probability": 0.4,
+          "per_share_value": 18.0419
+        },
+        {
+          "name": "Bull Execution",
+          "probability": 0.25,
+          "per_share_value": 24.2911
+        },
+        {
+          "name": "Bull Ecosystem",
+          "probability": 0.1,
+          "per_share_value": 32.7439
+        }
+      ],
+      "displayed_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "Reverse Expectations",
+      "authoritative_source_block": "reverse_expectations",
+      "source_values": {
+        "required_terminal_per_share_for_12pct": 24.6,
+        "base_diluted_shares_m": 630.0,
+        "assumed_fy29_net_cash_b": 0.65,
+        "required_fy29_ev_b": 14.85,
+        "required_arr_b_by_exit_ev_arr": {
+          "6.5x": 2.28,
+          "7.0x": 2.12,
+          "7.5x": 1.98,
+          "8.0x": 1.86
+        },
+        "required_fcf_m_by_exit_ev_fcf": {
+          "25x": 594,
+          "30x": 495,
+          "35x": 424,
+          "40x": 371
+        },
+        "management_fy29_targets": {
+          "total_arr_b": 2.1,
+          "ai_arr_b": 0.8,
+          "fcf_m": 400,
+          "adjusted_operating_margin_pct": 22,
+          "fcf_margin_pct": 22
+        },
+        "interpretation": "7.0x terminal EV/ARR에서 12% 수익률을 얻으려면 FY29 ARR 약 $2.12B가 필요해 management $2.1B+ 목표를 사실상 요구."
+      },
+      "narrative_locator": "Ch.5.5",
+      "table_locator": "Ch.5.5",
+      "caption_locator": "Reverse expectations plate",
+      "rendered_asset_locator": "HTML/PDF Ch.5",
+      "source_version_or_hash": "375f4fe5967ae744",
+      "display_values": {
+        "required_terminal_per_share_for_12pct": 24.6,
+        "base_diluted_shares_m": 630.0,
+        "assumed_fy29_net_cash_b": 0.65,
+        "required_fy29_ev_b": 14.85,
+        "required_arr_b_by_exit_ev_arr": {
+          "6.5x": 2.28,
+          "7.0x": 2.12,
+          "7.5x": 1.98,
+          "8.0x": 1.86
+        },
+        "required_fcf_m_by_exit_ev_fcf": {
+          "25x": 594,
+          "30x": 495,
+          "35x": 424,
+          "40x": 371
+        },
+        "management_fy29_targets": {
+          "total_arr_b": 2.1,
+          "ai_arr_b": 0.8,
+          "fcf_m": 400,
+          "adjusted_operating_margin_pct": 22,
+          "fcf_margin_pct": 22
+        },
+        "interpretation": "7.0x terminal EV/ARR에서 12% 수익률을 얻으려면 FY29 ARR 약 $2.12B가 필요해 management $2.1B+ 목표를 사실상 요구."
+      },
+      "displayed_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-005",
+      "figure_title": "KPI Signal Board",
+      "authoritative_source_block": "kpis",
+      "source_values": [
+        {
+          "name": "Total ARR growth",
+          "current": "26% FY27 Q1 / 21–22% FY27 guide",
+          "history": [
+            {
+              "period": "FY27 Q1",
+              "value_pct": 26.0
+            }
+          ],
+          "thresholds": {
+            "green": "23%+",
+            "yellow": "19–23%",
+            "red": "<19%"
+          },
+          "signal": "YELLOW_GREEN"
+        },
+        {
+          "name": "SaaS ARR growth",
+          "current": "36% FY27 Q1",
+          "history": [
+            {
+              "period": "FY27 Q1",
+              "value_pct": 36.0
+            }
+          ],
+          "thresholds": {
+            "green": "30%+",
+            "yellow": "24–30%",
+            "red": "<24%"
+          },
+          "signal": "GREEN"
+        },
+        {
+          "name": "NRR",
+          "current": "113%",
+          "history": [
+            {
+              "period": "FY25 Q1",
+              "value_pct": 115.0
+            },
+            {
+              "period": "FY27 Q1",
+              "value_pct": 113.0
+            }
+          ],
+          "thresholds": {
+            "green": "114%+",
+            "yellow": "111–113%",
+            "red": "<111%"
+          },
+          "signal": "YELLOW"
+        },
+        {
+          "name": "$1M+ ARR customers",
+          "current": "225 / +32% YoY",
+          "history": [
+            {
+              "period": "2025-04-30",
+              "count": 170
+            },
+            {
+              "period": "2026-04-30",
+              "count": 225
+            }
+          ],
+          "thresholds": {
+            "green": "25%+ growth",
+            "yellow": "15–25%",
+            "red": "<15%"
+          },
+          "signal": "GREEN"
+        },
+        {
+          "name": "AI ARR quality",
+          "current": "FY26 ~$20M; FY27 target $100M+",
+          "history": [
+            {
+              "period": "FY26",
+              "value_m": 20.0
+            }
+          ],
+          "thresholds": {
+            "green": "AI ARR + total ARR/NRR 동반 가속",
+            "yellow": "AI ARR만 증가",
+            "red": "AI ARR 증가 + total ARR 둔화"
+          },
+          "signal": "YELLOW"
+        },
+        {
+          "name": "Adjusted operating margin",
+          "current": "13.5% Q1; FY27 guide 18.7–19.3%",
+          "history": [
+            {
+              "period": "FY26",
+              "value_pct": 18.1
+            },
+            {
+              "period": "FY27 Q1",
+              "value_pct": 13.5
+            }
+          ],
+          "thresholds": {
+            "green": "guide beat + SBC 안정",
+            "yellow": "guide 수준",
+            "red": "margin miss / SBC↑"
+          },
+          "signal": "GREEN_WITH_SBC_FLAG"
+        },
+        {
+          "name": "FCF margin",
+          "current": "11.6% FY27 Q1",
+          "history": [
+            {
+              "period": "FY27 Q1",
+              "value_pct": 11.6
+            }
+          ],
+          "thresholds": {
+            "green": "20%대 경로 확인",
+            "yellow": "10%대 중반",
+            "red": "지속 하락 / 재적자"
+          },
+          "signal": "YELLOW"
+        },
+        {
+          "name": "Economic dilution",
+          "current": "FY29 model 615–640M vs current ~567M shares",
+          "history": [],
+          "thresholds": {
+            "green": "연 3% 이하",
+            "yellow": "3–5%",
+            "red": ">5% 지속"
+          },
+          "signal": "YELLOW_RED_WATCH"
+        }
+      ],
+      "narrative_locator": "Ch.6.4",
+      "table_locator": "Ch.6.4",
+      "caption_locator": "Monitoring plate",
+      "rendered_asset_locator": "HTML/PDF Ch.6",
+      "source_version_or_hash": "0a086d14b2034edf",
+      "display_values": [
+        {
+          "name": "Total ARR growth",
+          "current": "26% FY27 Q1 / 21–22% FY27 guide",
+          "history": [
+            {
+              "period": "FY27 Q1",
+              "value_pct": 26.0
+            }
+          ],
+          "thresholds": {
+            "green": "23%+",
+            "yellow": "19–23%",
+            "red": "<19%"
+          },
+          "signal": "YELLOW_GREEN"
+        },
+        {
+          "name": "SaaS ARR growth",
+          "current": "36% FY27 Q1",
+          "history": [
+            {
+              "period": "FY27 Q1",
+              "value_pct": 36.0
+            }
+          ],
+          "thresholds": {
+            "green": "30%+",
+            "yellow": "24–30%",
+            "red": "<24%"
+          },
+          "signal": "GREEN"
+        },
+        {
+          "name": "NRR",
+          "current": "113%",
+          "history": [
+            {
+              "period": "FY25 Q1",
+              "value_pct": 115.0
+            },
+            {
+              "period": "FY27 Q1",
+              "value_pct": 113.0
+            }
+          ],
+          "thresholds": {
+            "green": "114%+",
+            "yellow": "111–113%",
+            "red": "<111%"
+          },
+          "signal": "YELLOW"
+        },
+        {
+          "name": "$1M+ ARR customers",
+          "current": "225 / +32% YoY",
+          "history": [
+            {
+              "period": "2025-04-30",
+              "count": 170
+            },
+            {
+              "period": "2026-04-30",
+              "count": 225
+            }
+          ],
+          "thresholds": {
+            "green": "25%+ growth",
+            "yellow": "15–25%",
+            "red": "<15%"
+          },
+          "signal": "GREEN"
+        },
+        {
+          "name": "AI ARR quality",
+          "current": "FY26 ~$20M; FY27 target $100M+",
+          "history": [
+            {
+              "period": "FY26",
+              "value_m": 20.0
+            }
+          ],
+          "thresholds": {
+            "green": "AI ARR + total ARR/NRR 동반 가속",
+            "yellow": "AI ARR만 증가",
+            "red": "AI ARR 증가 + total ARR 둔화"
+          },
+          "signal": "YELLOW"
+        },
+        {
+          "name": "Adjusted operating margin",
+          "current": "13.5% Q1; FY27 guide 18.7–19.3%",
+          "history": [
+            {
+              "period": "FY26",
+              "value_pct": 18.1
+            },
+            {
+              "period": "FY27 Q1",
+              "value_pct": 13.5
+            }
+          ],
+          "thresholds": {
+            "green": "guide beat + SBC 안정",
+            "yellow": "guide 수준",
+            "red": "margin miss / SBC↑"
+          },
+          "signal": "GREEN_WITH_SBC_FLAG"
+        },
+        {
+          "name": "FCF margin",
+          "current": "11.6% FY27 Q1",
+          "history": [
+            {
+              "period": "FY27 Q1",
+              "value_pct": 11.6
+            }
+          ],
+          "thresholds": {
+            "green": "20%대 경로 확인",
+            "yellow": "10%대 중반",
+            "red": "지속 하락 / 재적자"
+          },
+          "signal": "YELLOW"
+        },
+        {
+          "name": "Economic dilution",
+          "current": "FY29 model 615–640M vs current ~567M shares",
+          "history": [],
+          "thresholds": {
+            "green": "연 3% 이하",
+            "yellow": "3–5%",
+            "red": ">5% 지속"
+          },
+          "signal": "YELLOW_RED_WATCH"
+        }
+      ],
+      "displayed_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    }
+  ],
+  "publishing_audit": {
+    "REPORT_DATA_PACK": "EMITTED",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "DECISION_VISUALS_TOTAL": 5,
+    "DECISION_VISUALS_PARITY_PASS": 5,
+    "STALE_VISUAL_ASSETS": 0,
+    "FIGURE_NUMERICAL_PARITY": "PASS",
+    "VISUAL_DATA_LINEAGE": "PASS",
+    "VISUAL_SEMANTIC_PARITY": "PASS",
+    "PUBLISHED_TOP_LEVEL_SCHEMA_MATCH": "PASS",
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "CONTENT_MEANING_LOCK_PRESERVED": "PASS",
+    "EXPLANATORY_DEPTH_PRESERVED": "PASS",
+    "CORE_LANDSCAPE_PAGES": 0,
+    "PRINTED_TOC_PAGES": 1,
+    "TOC_CLICKABLE": "PASS",
+    "PDF_BOOKMARKS": "PASS",
+    "HTML_SIDEBAR": "PASS",
+    "SEARCHABLE_TEXT": "PASS",
+    "KOREAN_READABILITY": "PASS",
+    "EXPLANATORY_SPACE_ALLOCATION": "PASS",
+    "SMART_CHAPTER_TRANSITIONS": "PASS",
+    "ARGUMENT_BLOCK_PAGINATION": "PASS",
+    "ACCIDENTAL_SPARSE_PAGES": 0,
+    "INTENTIONAL_FINAL_AUDIT_PAGE": 23,
+    "DENSITY_CONTROL": "PASS",
+    "VISUAL_SUBSTITUTION": "PASS",
+    "VISUAL_GRAMMAR_VARIETY": "PASS",
+    "CHART_READABILITY": "PASS",
+    "TABLE_QUALITY": "PASS",
+    "PDF_PAGES": 23,
+    "PLACEHOLDER_SCAN": "PASS"
+  }
+}

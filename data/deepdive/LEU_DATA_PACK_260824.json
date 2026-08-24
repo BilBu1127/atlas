@@ -1,0 +1,587 @@
+{
+  "meta": {
+    "ticker": "LEU",
+    "company": "Centrus Energy Corp.",
+    "report_date": "2026-08-24",
+    "market_price_as_of": "2026-08-21",
+    "market_price_usd": 186.26,
+    "currency": "USD",
+    "deep_dive_os": "v1.7",
+    "valuation_mode": "Mode B Hybrid",
+    "latest_filing_check": {
+      "latest_10q": "2026-08-06 for 2026-06-30",
+      "latest_8k": "2026-08-06 X-energy contract"
+    },
+    "rc_unresolved": 0
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue": 320.2,
+        "leu_revenue": 269.0,
+        "technical_solutions_revenue": 51.2,
+        "gross_profit": 112.1,
+        "net_income": 84.4,
+        "cfo": 9.1,
+        "capex": 1.6,
+        "fcf_derived": 7.5
+      },
+      {
+        "year": 2024,
+        "revenue": 442.0,
+        "leu_revenue": 349.9,
+        "technical_solutions_revenue": 92.1,
+        "gross_profit": 111.5,
+        "net_income": 73.2,
+        "cfo": 37.0,
+        "capex": 4.1,
+        "fcf_derived": 32.9
+      },
+      {
+        "year": 2025,
+        "revenue": 448.7,
+        "leu_revenue": 346.2,
+        "technical_solutions_revenue": 102.5,
+        "gross_profit": 117.5,
+        "net_income": 77.8,
+        "cfo": 51.0,
+        "capex": 19.7,
+        "fcf_derived": 31.3
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "3Q24",
+        "revenue": 57.7,
+        "gross_profit": 8.9,
+        "net_income": -5.0
+      },
+      {
+        "quarter": "4Q24",
+        "revenue": 151.6,
+        "gross_profit": 61.8,
+        "net_income": 53.7,
+        "derived": true
+      },
+      {
+        "quarter": "1Q25",
+        "revenue": 73.1,
+        "gross_profit": 32.9,
+        "net_income": 27.2
+      },
+      {
+        "quarter": "2Q25",
+        "revenue": 154.5,
+        "gross_profit": 53.9,
+        "net_income": 28.9
+      },
+      {
+        "quarter": "3Q25",
+        "revenue": 74.9,
+        "gross_profit": -4.3,
+        "net_income": 3.9
+      },
+      {
+        "quarter": "4Q25",
+        "revenue": 146.2,
+        "gross_profit": 35.0,
+        "net_income": 17.8,
+        "derived": true
+      },
+      {
+        "quarter": "1Q26",
+        "revenue": 76.7,
+        "gross_profit": 31.5,
+        "net_income": 10.0
+      },
+      {
+        "quarter": "2Q26",
+        "revenue": 176.1,
+        "gross_profit": 49.9,
+        "net_income": 16.8
+      }
+    ],
+    "h1_2026": {
+      "net_income": 26.8,
+      "cfo": -16.7,
+      "capex": 94.8,
+      "fcf_derived": -111.5,
+      "inventory_cash_effect": -92.5,
+      "cash": 1868.5,
+      "inventory": 377.1,
+      "pp_and_e": 142.5,
+      "long_term_debt": 1177.5
+    },
+    "2026_guidance": {
+      "revenue_range": [
+        450,
+        500
+      ],
+      "total_capital_deployment_range": [
+        350,
+        500
+      ]
+    },
+    "ceilings": [
+      "exact current AC100M unit economics not disclosed",
+      "full all-in commercial expansion capex not disclosed"
+    ]
+  },
+  "kpis": {
+    "us_swu_2025_m": 12.71,
+    "us_origin_share_pct": 23,
+    "russia_origin_share_pct": 26,
+    "eia_avg_swu_price_2025": 108.7,
+    "urenco_usa_capacity_m_swu": 4.3,
+    "urenco_current_increment_m_swu": 0.7,
+    "urenco_future_increment_m_swu": 2.1,
+    "centrus_licensed_design_m_swu": 3.8,
+    "centrus_licensed_machine_count_approx": 11500,
+    "haleu_demo_machine_count": 16,
+    "haleu_cumulative_production_gt_mtu": 1.9,
+    "doe_firm_contract_usd_m": 900,
+    "doe_firm_delivery_mtu": 1,
+    "doe_option_mtu_each": 5,
+    "doe_option_price_usd_m_per_mtu": 17,
+    "backlog_total_usd_b": 4.5,
+    "leu_backlog_usd_b": 3.7,
+    "contingent_leu_haleu_commitments_usd_b": 3.0,
+    "definitive_component_usd_b": 2.4
+  },
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.2,
+      "revenue_2032_usd_m_range": [
+        800,
+        900
+      ],
+      "normalized_fcf_2032_usd_m": 180,
+      "diluted_shares_2032_m": 23.2,
+      "terminal_price_2032": 100,
+      "irr_6y": -0.09847024145553818,
+      "pv_at_12pct": 50.66311211773206,
+      "formation": "제조·건설 1~2년 지연, legacy/TENEX bridge 약화, 제한적 commercial capacity, 추가 희석",
+      "break": "공정 정상화 및 definitive prepaid offtake 확대로 Base로 이동"
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "revenue_2032_usd_m_range": [
+        1300,
+        1400
+      ],
+      "normalized_fcf_2032_usd_m": 350,
+      "diluted_shares_2032_m": 22.7,
+      "terminal_price_2032": 280,
+      "irr_6y": 0.07030216879150553,
+      "pv_at_12pct": 141.85671392964977,
+      "formation": "2029~30 commercial deliveries, 초기 LEU + 부분 HALEU utilization, 일정과 비용 대체로 계획 범위",
+      "break": "licensed design 접근·margin 검증 시 Bull Execution, 2030+ 지연 시 Down"
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.3,
+      "revenue_2032_usd_m_range": [
+        1750,
+        1850
+      ],
+      "normalized_fcf_2032_usd_m": 550,
+      "diluted_shares_2032_m": 23.0,
+      "terminal_price_2032": 500,
+      "irr_6y": 0.17889484221237906,
+      "pv_at_12pct": 253.3155605886603,
+      "formation": "3.8m SWU licensed design에 상당히 접근, HALEU 판매 확대, 원가·일정 통제",
+      "break": "capacity 또는 margin이 Base 수준에 머물면 Base"
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.1,
+      "revenue_2032_usd_m_range": [
+        2400,
+        2600
+      ],
+      "normalized_fcf_2032_usd_m": 820,
+      "diluted_shares_2032_m": 23.2,
+      "terminal_price_2032": 800,
+      "irr_6y": 0.2749556114165195,
+      "pv_at_12pct": 405.3048969418565,
+      "formation": "initial design 이상 modular expansion + HALEU/deconversion/national-security monetization",
+      "break": "ecosystem contracts가 definitive로 전환되지 않으면 Bull Execution"
+    }
+  ],
+  "valuation": {
+    "market_cap_approx_usd_b": 3.716,
+    "simple_net_cash_usd_b": 0.691,
+    "simple_ev_usd_b": 3.025,
+    "probability_weighted_2032_price": 362.0,
+    "probability_weighted_pv_12pct": 183.40046586619005,
+    "expected_irr_6y": 0.1171157168072281,
+    "hurdle": 0.12,
+    "bull_execution_ud_ratio": 0.4945213834618486,
+    "ud_1_trigger_price": 151.9893363531962,
+    "ud_2_trigger_price": 118.21392827470815,
+    "core_value_range_per_share": [
+      60,
+      70
+    ],
+    "price_bands": [
+      {
+        "range": "<118",
+        "stance": "적극 관심",
+        "condition": "thesis intact; Bull Execution U/D ≳2x"
+      },
+      {
+        "range": "120-150",
+        "stance": "조건부 관심",
+        "condition": "manufacturing/construction milestones on track"
+      },
+      {
+        "range": "150-200",
+        "stance": "관망",
+        "condition": "current strategic value and execution risk both capitalized"
+      },
+      {
+        "range": "200-250",
+        "stance": "낮은 안전마진",
+        "condition": "requires Base→Bull evidence"
+      },
+      {
+        "range": ">250",
+        "stance": "Bull/Ecosystem 증거 필요",
+        "condition": "licensed design approach or additional ecosystem monetization"
+      }
+    ]
+  },
+  "reverse_expectations": {
+    "required_2032_price_for_12pct": 367.64421334237204,
+    "assumed_2032_diluted_shares_m": 22.7,
+    "required_equity_value_usd_b": 8.345523642871845,
+    "assumed_net_cash_2032_usd_b": 0.4,
+    "required_ev_usd_b": 7.945523642871845,
+    "assumed_fcf_multiple": 17,
+    "required_normalized_fcf_usd_m": 467.38374369834384,
+    "assumed_fcf_margin": 0.27,
+    "required_revenue_usd_m": 1731.0509025864585,
+    "interpretation": "현재가는 Base보다 강한 commercial execution, 제한된 dilution, 높은 utilization 또는 추가 HALEU/국가안보 가치가 필요"
+  },
+  "consensus": {
+    "2026_revenue_avg_usd_m": 466.8,
+    "2026_revenue_range_usd_m": [
+      422.8,
+      489.1
+    ],
+    "2026_eps_avg": 3.49,
+    "analyst_target_avg": 255.13,
+    "rating_counts": {
+      "buy": 12,
+      "hold": 6,
+      "sell": 0
+    },
+    "short_interest_2026_07_31_shares": 5094877,
+    "short_float_pct": 26.09,
+    "days_to_cover": 6.84,
+    "note": "secondary aggregators; provider dispersion retained"
+  },
+  "stance": {
+    "label": "관망",
+    "new_position": "공격적 신규매수 보류",
+    "reason": "expected IRR ~ hurdle but Bull Execution U/D <1x at current price",
+    "upgrade_conditions": [
+      "first new centrifuge completed and validated by YE26",
+      "repeatable manufacturing throughput/yield evidence",
+      "Piketon construction and cascade schedule on plan",
+      "additional definitive prepaid offtakes",
+      "all-in project cost/unit economics disclosed at competitive level"
+    ],
+    "downgrade_conditions": [
+      "material delivery schedule slip",
+      "fundamental manufacturing yield/design issue",
+      "capex exceeds funding bridge and forces large dilution",
+      "definitive backlog/prepayment deterioration",
+      "DOE milestone dispute or termination"
+    ]
+  },
+  "catalysts": [
+    {
+      "window": "4Q26",
+      "event": "first new centrifuge completion; CFC/supplier progress; 2026 capital deployment"
+    },
+    {
+      "window": "1Q27",
+      "event": "manufacturing run-rate; FY26 10-K backlog/funding update; DOE milestone receipts"
+    },
+    {
+      "window": "1H27",
+      "event": "Urenco +700k SWU completion; new Centrus definitive customers; Oklo LOI conversion"
+    },
+    {
+      "window": "2H27",
+      "event": "repeated machine production and cascade-installation visibility; 2028 Russia-waiver transition procurement"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "id": "RC-001",
+      "obligation": "USEC restructuring / Centrus evolution",
+      "status": "COMPLETE",
+      "h3_covered": true
+    },
+    {
+      "id": "RC-002",
+      "obligation": "enrichment value chain / profit pool",
+      "status": "COMPLETE",
+      "h3_covered": true
+    },
+    {
+      "id": "RC-003",
+      "obligation": "U.S./global SWU demand-supply",
+      "status": "COMPLETE",
+      "h3_covered": true
+    },
+    {
+      "id": "RC-004",
+      "obligation": "SWU/uranium/conversion price cycle",
+      "status": "COMPLETE",
+      "h3_covered": true
+    },
+    {
+      "id": "RC-005",
+      "obligation": "TENEX/import ban/waivers",
+      "status": "COMPLETE",
+      "h3_covered": true
+    },
+    {
+      "id": "RC-006",
+      "obligation": "competitor capacity/timing",
+      "status": "COMPLETE",
+      "h3_covered": true
+    },
+    {
+      "id": "RC-007",
+      "obligation": "AC100M quantitative specs",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_covered": true
+    },
+    {
+      "id": "RC-008",
+      "obligation": "16-machine HALEU operating history",
+      "status": "COMPLETE",
+      "h3_covered": true
+    },
+    {
+      "id": "RC-009",
+      "obligation": "NRC license vs deployed capacity",
+      "status": "COMPLETE",
+      "h3_covered": true
+    },
+    {
+      "id": "RC-010",
+      "obligation": "Oak Ridge manufacturing",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_covered": true
+    },
+    {
+      "id": "RC-011",
+      "obligation": "Piketon EPC/schedule/cost",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_covered": true
+    },
+    {
+      "id": "RC-012",
+      "obligation": "contract-stage ledger",
+      "status": "COMPLETE",
+      "h3_covered": true
+    },
+    {
+      "id": "RC-013",
+      "obligation": "X-energy/Oklo economics",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_covered": true
+    },
+    {
+      "id": "RC-014",
+      "obligation": "DOE contracts/task orders",
+      "status": "COMPLETE",
+      "h3_covered": true
+    },
+    {
+      "id": "RC-015",
+      "obligation": "legacy LEU sourcing economics",
+      "status": "COMPLETE",
+      "h3_covered": true
+    },
+    {
+      "id": "RC-016",
+      "obligation": "Technical Solutions normalization",
+      "status": "COMPLETE",
+      "h3_covered": true
+    },
+    {
+      "id": "RC-017",
+      "obligation": "3Y + 8Q financials",
+      "status": "COMPLETE",
+      "h3_covered": true
+    },
+    {
+      "id": "RC-018",
+      "obligation": "backlog quality",
+      "status": "COMPLETE",
+      "h3_covered": true
+    },
+    {
+      "id": "RC-019",
+      "obligation": "cash/debt/convertibles/ATM/NOL",
+      "status": "COMPLETE",
+      "h3_covered": true
+    },
+    {
+      "id": "RC-020",
+      "obligation": "funding bridge",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_covered": true
+    },
+    {
+      "id": "RC-021",
+      "obligation": "management measurable record",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_covered": true
+    },
+    {
+      "id": "RC-022",
+      "obligation": "compensation/ownership/governance",
+      "status": "COMPLETE",
+      "h3_covered": true
+    },
+    {
+      "id": "RC-023",
+      "obligation": "deconversion/fabrication/transport",
+      "status": "COMPLETE",
+      "h3_covered": true
+    },
+    {
+      "id": "RC-024",
+      "obligation": "customer-job competition",
+      "status": "COMPLETE",
+      "h3_covered": true
+    },
+    {
+      "id": "RC-025",
+      "obligation": "historical project base rate",
+      "status": "COMPLETE",
+      "h3_covered": true
+    },
+    {
+      "id": "RC-026",
+      "obligation": "market expectations/positioning/valuation history",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_covered": true
+    },
+    {
+      "id": "RC-027",
+      "obligation": "scenario/reverse expectations",
+      "status": "COMPLETE",
+      "h3_covered": true
+    },
+    {
+      "id": "RC-028",
+      "obligation": "KPI/catalyst/thesis break",
+      "status": "COMPLETE",
+      "h3_covered": true
+    }
+  ],
+  "visual_lineage": [
+    {
+      "visual_id": "V1",
+      "title": "U.S. SWU origin mix 2025",
+      "data": [
+        {
+          "label": "U.S.",
+          "value": 23
+        },
+        {
+          "label": "Russia",
+          "value": 26
+        },
+        {
+          "label": "France",
+          "value": 18
+        },
+        {
+          "label": "U.K.",
+          "value": 14
+        },
+        {
+          "label": "Netherlands",
+          "value": 8
+        },
+        {
+          "label": "Other",
+          "value": 11
+        }
+      ],
+      "source": "EIA Uranium Marketing Annual Report 2025"
+    },
+    {
+      "visual_id": "V2",
+      "title": "U.S. enrichment capacity race",
+      "data": [
+        {
+          "label": "Urenco current",
+          "value": 4.3
+        },
+        {
+          "label": "Urenco current expansion",
+          "value": 0.7
+        },
+        {
+          "label": "Urenco 2032+ expansion",
+          "value": 2.1
+        },
+        {
+          "label": "Centrus licensed design (not installed)",
+          "value": 3.8
+        },
+        {
+          "label": "Orano IKE initial planned",
+          "value": 4.0
+        }
+      ],
+      "source": "NRC/Urenco/Orano; status semantics retained"
+    },
+    {
+      "visual_id": "V3",
+      "title": "Annual financial bridge",
+      "data_source": "financials.annual_3y",
+      "source": "Centrus 2025 10-K"
+    },
+    {
+      "visual_id": "V4",
+      "title": "Scenario valuation",
+      "data_source": "scenarios",
+      "source": "DDOS model using cited evidence and explicit assumptions"
+    }
+  ],
+  "sources": {
+    "S1": "SEC 2Q26 10-Q",
+    "S2": "SEC 2025 10-K",
+    "S3": "SEC DOE $900m 8-K",
+    "S4": "SEC X-energy 8-K",
+    "S5": "DOE HALEU Enrichment Services",
+    "S6": "DOE $2.7bn enrichment awards",
+    "S7": "EIA 2025 Uranium Marketing Annual Report",
+    "S8": "NRC American Centrifuge Plant",
+    "S9": "Urenco USA capacity releases",
+    "S10": "Orano Project IKE/NRC",
+    "S11": "DOE General Matter Paducah",
+    "S12": "Congress/DOE Russian Uranium Imports Act",
+    "S13": "DOE OIG American Centrifuge history",
+    "S14": "SEC USEC/Centrus restructuring",
+    "S15": "Centrus 2026 proxy",
+    "S16": "SEC Oklo LOI 8-K",
+    "S21": "StockAnalysis/S&P Global consensus",
+    "S22": "Investing analyst consensus",
+    "S23": "MarketBeat short interest"
+  }
+}

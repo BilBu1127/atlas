@@ -1,0 +1,934 @@
+{
+  "meta": {
+    "ticker": "FCX",
+    "company": "Freeport-McMoRan Inc.",
+    "T0": "2026-08-24",
+    "price_asof": "2026-08-21 close",
+    "price": 76.66,
+    "filing_asof": "2026-08-06 (2Q26 Form 10-Q)",
+    "consensus_asof": "2026-07-28 source update / Aug-2026 check",
+    "version": "DDOS-v1.7-FCX-2026-08-24",
+    "currency": "USD",
+    "shares_bn": 1.44,
+    "valuation_router": "Mode D - Cyclical / Commodity; Mode F - Asset/NAV cross-check"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue_bn": 22.855,
+        "operating_income_bn": 6.225,
+        "net_income_common_bn": 1.848,
+        "eps": 1.28,
+        "ocf_bn": 5.279,
+        "capex_bn": 4.824,
+        "simple_fcf_bn": 0.455
+      },
+      {
+        "year": 2024,
+        "revenue_bn": 25.455,
+        "operating_income_bn": 6.864,
+        "net_income_common_bn": 1.889,
+        "eps": 1.3,
+        "ocf_bn": 7.16,
+        "capex_bn": 4.808,
+        "simple_fcf_bn": 2.352,
+        "nci_distribution_bn": 1.8
+      },
+      {
+        "year": 2025,
+        "revenue_bn": 25.915,
+        "operating_income_bn": 6.518,
+        "net_income_common_bn": 2.204,
+        "eps": 1.52,
+        "ocf_bn": 5.61,
+        "capex_bn": 4.494,
+        "simple_fcf_bn": 1.116,
+        "nci_distribution_bn": 1.3
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "Q3'24",
+        "revenue_bn": 6.79,
+        "operating_income_bn": 1.938,
+        "net_income_common_bn": 0.526,
+        "eps": 0.36,
+        "ocf_bn": 1.9,
+        "capex_bn": 1.2,
+        "cu_sales_mlbs": 1035,
+        "cu_realized": 4.3,
+        "net_cash_cost": 1.39
+      },
+      {
+        "quarter": "Q4'24",
+        "revenue_bn": 5.72,
+        "operating_income_bn": 1.243,
+        "net_income_common_bn": 0.274,
+        "eps": 0.19,
+        "ocf_bn": 1.4,
+        "capex_bn": 1.2,
+        "cu_sales_mlbs": 992,
+        "cu_realized": 4.15,
+        "net_cash_cost": 1.66
+      },
+      {
+        "quarter": "Q1'25",
+        "revenue_bn": 5.728,
+        "operating_income_bn": 1.303,
+        "net_income_common_bn": 0.352,
+        "eps": 0.24,
+        "ocf_bn": 1.1,
+        "capex_bn": 1.2,
+        "cu_sales_mlbs": 872,
+        "cu_realized": 4.44,
+        "net_cash_cost": 2.07
+      },
+      {
+        "quarter": "Q2'25",
+        "revenue_bn": 7.582,
+        "operating_income_bn": 2.432,
+        "net_income_common_bn": 0.772,
+        "eps": 0.53,
+        "ocf_bn": 2.2,
+        "capex_bn": 1.261,
+        "cu_sales_mlbs": 1016,
+        "cu_realized": 4.54,
+        "net_cash_cost": 1.13
+      },
+      {
+        "quarter": "Q3'25",
+        "revenue_bn": 6.972,
+        "operating_income_bn": 1.972,
+        "net_income_common_bn": 0.674,
+        "eps": 0.46,
+        "ocf_bn": 1.7,
+        "capex_bn": 1.1,
+        "cu_sales_mlbs": 977,
+        "cu_realized": 4.68,
+        "net_cash_cost": 1.4
+      },
+      {
+        "quarter": "Q4'25",
+        "revenue_bn": 5.633,
+        "operating_income_bn": 0.811,
+        "net_income_common_bn": 0.406,
+        "eps": 0.28,
+        "ocf_bn": 0.7,
+        "capex_bn": 1.0,
+        "cu_sales_mlbs": 709,
+        "cu_realized": 5.33,
+        "net_cash_cost": 2.22
+      },
+      {
+        "quarter": "Q1'26",
+        "revenue_bn": 6.234,
+        "operating_income_bn": 2.137,
+        "net_income_common_bn": 0.881,
+        "eps": 0.61,
+        "ocf_bn": 1.495,
+        "capex_bn": 0.973,
+        "cu_sales_mlbs": 657,
+        "cu_realized": 5.78,
+        "net_cash_cost": 1.91
+      },
+      {
+        "quarter": "Q2'26",
+        "revenue_bn": 7.029,
+        "operating_income_bn": 2.003,
+        "net_income_common_bn": 0.984,
+        "eps": 0.68,
+        "ocf_bn": 2.048,
+        "capex_bn": 1.104,
+        "cu_sales_mlbs": 710,
+        "cu_realized": 6.17,
+        "net_cash_cost": 1.97
+      }
+    ],
+    "balance_sheet_2q26": {
+      "debt_bn": 9.386,
+      "cash_bn": 4.08,
+      "ptfi_downstream_debt_bn": 3.237,
+      "net_debt_ex_downstream_bn": 2.1
+    },
+    "fy26_guidance": {
+      "cu_sales_bn_lbs": 3.1,
+      "gold_sales_koz": 650,
+      "moly_sales_mlbs": 93,
+      "net_cash_cost": 1.9,
+      "ocf_bn": 8.3,
+      "capex_bn": 4.3,
+      "ocf_price_assumption_cu": 6.0,
+      "ocf_price_assumption_au": 4000,
+      "ocf_price_assumption_mo": 30
+    },
+    "ceilings": [
+      "Uniform mine-by-mine LOM grade/recovery/unit-cost table unavailable in consistent primary format.",
+      "Leach additive/heat/analytics exact incremental capex and unit cost are not disclosed."
+    ]
+  },
+  "industry": {
+    "iea": {
+      "demand_increment_to_2040_mt": 7.0,
+      "2035_primary_supply_gap_pct": 25
+    },
+    "icsg": {
+      "mine_growth_2026_pct": 1.6,
+      "mine_growth_2027_pct": 2.3,
+      "refined_balance_2026_kt": 96,
+      "refined_balance_2027_kt": 377
+    }
+  },
+  "operating": {
+    "grasberg": {
+      "capacity_target_2h26_pct": 65,
+      "capacity_target_mid27_pct": 80,
+      "capacity_target_end27": "near-full",
+      "fy26_idle_restoration_cost_bn": 1.2,
+      "fcx_interest_through_2041_pct": 48.76,
+      "fcx_interest_post_2041_pct": 37
+    },
+    "leach": [
+      {
+        "period": "2022",
+        "value_mlbs": 50,
+        "kind": "incremental output"
+      },
+      {
+        "period": "2023",
+        "value_mlbs": 144,
+        "kind": "incremental output"
+      },
+      {
+        "period": "2024",
+        "value_mlbs": 214,
+        "kind": "incremental output"
+      },
+      {
+        "period": "YE2025 run-rate",
+        "value_mlbs": 240,
+        "kind": "annual run-rate"
+      },
+      {
+        "period": "YE2026 target",
+        "value_mlbs": 300,
+        "kind": "annual run-rate"
+      },
+      {
+        "period": "2030 potential",
+        "value_mlbs": 800,
+        "kind": "potential annual run-rate"
+      }
+    ],
+    "leach_1h26_incremental_mlbs": 101,
+    "bagdad": {
+      "incremental_cu_mlbs_low": 200,
+      "incremental_cu_mlbs_high": 250,
+      "incremental_mo_mlbs_low": 10,
+      "incremental_mo_mlbs_high": 12,
+      "prior_capex_bn": 3.5,
+      "current_capex_increase_pct": 30,
+      "estimated_current_capex_bn": 4.55,
+      "incentive_cu_price": 4.0,
+      "decision_timing": "2H26",
+      "build_years": "3-4"
+    },
+    "ownership": {
+      "morenci_pct": 72,
+      "cerro_verde_pct": 55.66,
+      "el_abra_pct": 51,
+      "ptfi_pct_through_2041": 48.76,
+      "ptfi_pct_post_2041": 37
+    }
+  },
+  "kpis": [
+    {
+      "name": "Grasberg capacity",
+      "history": [
+        {
+          "period": "2H26 target",
+          "value": "65%"
+        },
+        {
+          "period": "mid-2027 target",
+          "value": "80%"
+        },
+        {
+          "period": "end-2027 target",
+          "value": "near-full"
+        }
+      ],
+      "current": "ramp on schedule as of 2Q26",
+      "thresholds": {
+        "green": "2H26 >=65% and mid-2027 >=80%",
+        "yellow": "minor 1-2 quarter delay",
+        "red": "YE26 <65% or new major geotechnical interruption"
+      }
+    },
+    {
+      "name": "Americas leach run-rate",
+      "history": [
+        {
+          "period": "YE2025",
+          "value_mlbs": 240
+        },
+        {
+          "period": "YE2026 target",
+          "value_mlbs": 300
+        }
+      ],
+      "current": "~240m lbs YE2025 run-rate; 101m lbs incremental in 1H26",
+      "thresholds": {
+        "green": ">=300m lbs by YE2026",
+        "yellow": "250-300m lbs",
+        "red": "<250m lbs or target slips again"
+      }
+    },
+    {
+      "name": "Consolidated unit net cash cost",
+      "history": [
+        {
+          "period": "Q2'26",
+          "value": 1.97
+        },
+        {
+          "period": "FY26 guide",
+          "value": 1.9
+        }
+      ],
+      "current": 1.97,
+      "thresholds": {
+        "green": "<~$1.80 after Grasberg recovery",
+        "yellow": "$1.80-$2.10",
+        "red": ">$2.10 sustained in normalization phase"
+      }
+    },
+    {
+      "name": "Copper price",
+      "history": [
+        {
+          "period": "Q2'26 realized",
+          "value": 6.17
+        }
+      ],
+      "current": "spot/realized $6+",
+      "thresholds": {
+        "green": "3m average >$4.75",
+        "yellow": "$4.25-$4.75",
+        "red": "<$4.25 sustained"
+      }
+    },
+    {
+      "name": "Valuation price",
+      "history": [
+        {
+          "period": "2026-08-21",
+          "value": 76.66
+        }
+      ],
+      "current": 76.66,
+      "thresholds": {
+        "green": "<$56 with operating KPIs intact",
+        "yellow": "$56-$65",
+        "red": ">$72 without estimate upgrades"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.3,
+      "cu_price": 4.25,
+      "au_price": 3250,
+      "mo_price": 22,
+      "cu_sales_bn_lbs": 3.9,
+      "unit_net_cash_cost": 1.95,
+      "capex_bn": 4.1,
+      "nci_cash_leakage_bn": 0.8,
+      "cu_cash_margin_bn": 8.97,
+      "pre_wc_ocf_bn": 5.417,
+      "parent_cash_ocf_bn": 4.617,
+      "p_ocf_multiple": 9.0,
+      "gross_core_per_share": 33.9,
+      "nci_drag_per_share": 5.0,
+      "common_core_per_share": 28.9,
+      "execution_value_per_share": 9.0,
+      "ecosystem_value_per_share": 0,
+      "per_share_value": 38.0
+    },
+    {
+      "name": "Base",
+      "probability": 0.45,
+      "cu_price": 4.75,
+      "au_price": 3600,
+      "mo_price": 25,
+      "cu_sales_bn_lbs": 4.25,
+      "unit_net_cash_cost": 1.65,
+      "capex_bn": 4.6,
+      "nci_cash_leakage_bn": 1.5,
+      "cu_cash_margin_bn": 13.175,
+      "pre_wc_ocf_bn": 8.613,
+      "parent_cash_ocf_bn": 7.113,
+      "p_ocf_multiple": 10.0,
+      "gross_core_per_share": 59.8,
+      "nci_drag_per_share": 10.4,
+      "common_core_per_share": 49.4,
+      "execution_value_per_share": 12.0,
+      "ecosystem_value_per_share": 0,
+      "per_share_value": 61.0
+    },
+    {
+      "name": "Up",
+      "probability": 0.25,
+      "cu_price": 5.5,
+      "au_price": 4100,
+      "mo_price": 28,
+      "cu_sales_bn_lbs": 4.55,
+      "unit_net_cash_cost": 1.5,
+      "capex_bn": 5.1,
+      "nci_cash_leakage_bn": 1.9,
+      "cu_cash_margin_bn": 18.2,
+      "pre_wc_ocf_bn": 12.432,
+      "parent_cash_ocf_bn": 10.532,
+      "p_ocf_multiple": 10.5,
+      "gross_core_per_share": 90.7,
+      "nci_drag_per_share": 13.9,
+      "common_core_per_share": 76.8,
+      "execution_value_per_share": 14.0,
+      "ecosystem_value_per_share": 0,
+      "per_share_value": 91.0
+    }
+  ],
+  "valuation": {
+    "mode": "Mode D - Cyclical / Commodity",
+    "cross_check": "Mode F - Asset/NAV",
+    "core_definition": "normalized pre-WC OCF capitalized at historical P/OCF, less capitalized NCI cash leakage",
+    "execution_definition": "probability-weighted leach/Grasberg recovery/growth project option net of capex and ownership leakage",
+    "ecosystem": 0,
+    "expected_value": 61.6,
+    "current_price": 76.66,
+    "expected_value_gap_pct": -19.64,
+    "bull_value": 91,
+    "bear_value": 38,
+    "upside_downside_ratio": 0.371,
+    "hurdle_rate": 0.12,
+    "stance": "AVOID / TRIM",
+    "normalized_p_ocf_history": {
+      "2021": 7.94,
+      "2022": 10.57,
+      "2023": 11.56,
+      "2024": 7.64,
+      "2025": 13.0,
+      "2026-08": 18.66
+    },
+    "ev_ebitda_history": {
+      "2021": 6.84,
+      "2022": 7.08,
+      "2023": 8.82,
+      "2024": 7.4,
+      "2025": 9.85,
+      "2026-08": 12.18
+    },
+    "probabilities": {
+      "Down": 0.3,
+      "Base": 0.45,
+      "Up": 0.25
+    }
+  },
+  "reverse_expectations": {
+    "base_execution_value_per_share": 12.0,
+    "base_p_ocf_multiple": 10.0,
+    "required_parent_cash_ocf_bn": 9.31,
+    "base_nci_cash_leakage_bn": 1.5,
+    "required_consolidated_pre_wc_ocf_bn": 10.81,
+    "required_cu_cash_margin_bn": 16.07,
+    "required_normalized_cu_price": 5.43,
+    "required_cu_price_range": {
+      "execution_value_8": 5.62,
+      "execution_value_16": 5.25
+    },
+    "interpretation": "Current price requires roughly $5.25-$5.62/lb normalized copper depending on execution option value, plus Grasberg/leach delivery."
+  },
+  "consensus": {
+    "analysts": 23,
+    "rating": "Buy",
+    "avg_target": 71.73,
+    "median_target": 75,
+    "high_target": 82,
+    "low_target": 30,
+    "fy1": {
+      "year": 2026,
+      "revenue_bn": 29.52,
+      "net_income_bn": 4.14,
+      "non_gaap_eps": 3.0,
+      "fcf_bn": 3.98
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_bn": 35.54,
+      "eps": 4.12
+    },
+    "short_interest_mshares": 27.79,
+    "short_float_pct": 1.95,
+    "revision_trend": "Strong copper price/ramp expectations are already embedded; current price exceeds average target."
+  },
+  "stance": {
+    "zone": "AVOID / TRIM",
+    "price_bands": {
+      "strong_interest": "<=45",
+      "watch_accumulate": "45-56",
+      "watch": "56-64.5",
+      "trim": "64.5-72",
+      "avoid": ">72"
+    },
+    "ud_2_trigger": 55.67,
+    "ud_1_trigger": 64.5,
+    "horizon": "multi-year; key Grasberg normalization through end-2027"
+  },
+  "catalysts": [
+    {
+      "when": "2026-10",
+      "event": "Q3'26 earnings / Grasberg update",
+      "bull": "65% ramp on-track, cost improves",
+      "bear": "ramp delay, idle cost rises",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2026-10",
+      "event": "ICSG autumn market update",
+      "bull": "surplus shrinks",
+      "bear": "2027 surplus expands",
+      "sensitivity": "M/H"
+    },
+    {
+      "when": "2H26",
+      "event": "Potential Bagdad 2X investment decision",
+      "bull": "capex controlled, ~$4 incentive price holds",
+      "bear": "delay/cost escalation",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2026-12",
+      "event": "Americas leach YE run-rate",
+      "bull": ">=300m lbs",
+      "bear": "target slips again",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027-01",
+      "event": "Potential U.S. refined copper policy reassessment",
+      "bull": "domestic premium strengthens",
+      "bear": "limited benefit/adverse scope",
+      "sensitivity": "M"
+    },
+    {
+      "when": "2027-01",
+      "event": "FY26/Q4 results",
+      "bull": "strong 2027 ramp/cost guide",
+      "bear": "recovery estimates cut",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027-H1",
+      "event": "PTFI IUPK extension progress",
+      "bull": "long-term rights clarified",
+      "bear": "terms worsen/delay",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027-mid",
+      "event": "Grasberg 80% capacity milestone",
+      "bull": "achieved",
+      "bear": "delayed",
+      "sensitivity": "H"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "promise": "economic/ownership/asset map",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3/4 + App A"
+    },
+    {
+      "rc_id": "RC-002",
+      "promise": "copper B1-B5",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1 + App B"
+    },
+    {
+      "rc_id": "RC-003",
+      "promise": "demand/end-use secular vs cyclical",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1 + App B"
+    },
+    {
+      "rc_id": "RC-004",
+      "promise": "mine/refined/scrap/inventory/supply",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1 + App B"
+    },
+    {
+      "rc_id": "RC-005",
+      "promise": "mine-by-mine asset ledger",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3 + App C"
+    },
+    {
+      "rc_id": "RC-006",
+      "promise": "Grasberg incident/remediation/ramp",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1/3/6"
+    },
+    {
+      "rc_id": "RC-007",
+      "promise": "IUPK/downstream/post-2041 ownership",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1/3 + App A"
+    },
+    {
+      "rc_id": "RC-008",
+      "promise": "leach architecture/history/economics",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch1/3/5 + App D"
+    },
+    {
+      "rc_id": "RC-009",
+      "promise": "growth projects",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3/5"
+    },
+    {
+      "rc_id": "RC-010",
+      "promise": "management Promise-to-Delivery/governance",
+      "status": "COMPLETE",
+      "h3_locator": "Ch2 + App E"
+    },
+    {
+      "rc_id": "RC-011",
+      "promise": "customer/marketing/trade",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1/3"
+    },
+    {
+      "rc_id": "RC-012",
+      "promise": "competition by customer job",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3 + App F"
+    },
+    {
+      "rc_id": "RC-013",
+      "promise": "3Y/latest 8Q/accounting",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4 + App G/L"
+    },
+    {
+      "rc_id": "RC-014",
+      "promise": "capital/NCI/shares/returns",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4/5 + App H"
+    },
+    {
+      "rc_id": "RC-015",
+      "promise": "macro sensitivities",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1/5"
+    },
+    {
+      "rc_id": "RC-016",
+      "promise": "consensus/positioning",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch0/5 + App I"
+    },
+    {
+      "rc_id": "RC-017",
+      "promise": "Down/Base/Up",
+      "status": "COMPLETE",
+      "h3_locator": "Ch5 + App J"
+    },
+    {
+      "rc_id": "RC-018",
+      "promise": "valuation/reverse/bands",
+      "status": "COMPLETE",
+      "h3_locator": "Ch5 + App J/K"
+    },
+    {
+      "rc_id": "RC-019",
+      "promise": "risk/catalyst/KPI",
+      "status": "COMPLETE",
+      "h3_locator": "Ch6"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "tier": "Primary",
+      "title": "FCX 2Q26 Results / Exhibit 99.1",
+      "url": "https://www.sec.gov/Archives/edgar/data/831259/000083125926000033/a2q2026exhibit991.htm"
+    },
+    {
+      "id": "S2",
+      "tier": "Primary",
+      "title": "FCX 2Q26 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/831259/000083125926000036/fcx-20260630.htm"
+    },
+    {
+      "id": "S3",
+      "tier": "Primary",
+      "title": "FCX 2025 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/831259/000083125926000012/fcx-20251231.htm"
+    },
+    {
+      "id": "S4",
+      "tier": "Primary",
+      "title": "FCX 4Q25/FY25 Results",
+      "url": "https://www.sec.gov/Archives/edgar/data/831259/000083125926000006/a4q2025exhibit991.htm"
+    },
+    {
+      "id": "S5",
+      "tier": "Primary",
+      "title": "FCX Investor Stock Quote",
+      "url": "https://investors.fcx.com/investors/stock-and-dividend-information/stock-quote/default.aspx?LanguageId=1"
+    },
+    {
+      "id": "S6",
+      "tier": "Primary/Institutional",
+      "title": "IEA Global Critical Minerals Outlook 2026",
+      "url": "https://www.iea.org/reports/global-critical-minerals-outlook-2026/outlook"
+    },
+    {
+      "id": "S7",
+      "tier": "Primary/Institutional",
+      "title": "ICSG Copper Market Forecast 2026/2027",
+      "url": "https://icsg.org/download/2026-04-23-press-release-icsg-copper-market-forecast-2026-2027/?filename=2026-04-23-ICSG-Forecast-Press-Release.pdf"
+    },
+    {
+      "id": "S8",
+      "tier": "Secondary",
+      "title": "S&P Global consensus via StockAnalysis",
+      "url": "https://stockanalysis.com/stocks/fcx/forecast/"
+    },
+    {
+      "id": "S9",
+      "tier": "Secondary",
+      "title": "StockAnalysis FCX Ratios",
+      "url": "https://stockanalysis.com/stocks/fcx/financials/ratios/"
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "Scenario fair value vs current price",
+      "authoritative_source_block": "REPORT_DATA_PACK.json",
+      "source_values": {
+        "current": 76.66,
+        "Down": 38,
+        "Base": 61,
+        "Up": 91,
+        "expected": 61.6
+      },
+      "source_hash": "99b9d4abeb68bbc1",
+      "display_values": {
+        "current": 76.66,
+        "Down": 38,
+        "Base": 61,
+        "Up": 91,
+        "expected": 61.6
+      },
+      "narrative_locator": "Ch0/5",
+      "table_locator": "Scenario valuation table",
+      "caption_locator": "Scenario fair value vs current price",
+      "rendered_asset_locator": "inline SVG in final HTML/PDF"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "Copper sales and realized price - latest 8Q",
+      "authoritative_source_block": "REPORT_DATA_PACK.json",
+      "source_values": {
+        "quarters": [
+          "Q3'24",
+          "Q4'24",
+          "Q1'25",
+          "Q2'25",
+          "Q3'25",
+          "Q4'25",
+          "Q1'26",
+          "Q2'26"
+        ],
+        "sales": [
+          1035,
+          992,
+          872,
+          1016,
+          977,
+          709,
+          657,
+          710
+        ],
+        "price": [
+          4.3,
+          4.15,
+          4.44,
+          4.54,
+          4.68,
+          5.33,
+          5.78,
+          6.17
+        ]
+      },
+      "source_hash": "bba82aaaaf5655f6",
+      "display_values": {
+        "quarters": [
+          "Q3'24",
+          "Q4'24",
+          "Q1'25",
+          "Q2'25",
+          "Q3'25",
+          "Q4'25",
+          "Q1'26",
+          "Q2'26"
+        ],
+        "sales": [
+          1035,
+          992,
+          872,
+          1016,
+          977,
+          709,
+          657,
+          710
+        ],
+        "price": [
+          4.3,
+          4.15,
+          4.44,
+          4.54,
+          4.68,
+          5.33,
+          5.78,
+          6.17
+        ]
+      },
+      "narrative_locator": "Ch4",
+      "table_locator": "8Q financial table",
+      "caption_locator": "Copper sales and realized price - latest 8Q",
+      "rendered_asset_locator": "inline SVG in final HTML/PDF"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "OCF vs CAPEX - 2023-2025",
+      "authoritative_source_block": "REPORT_DATA_PACK.json",
+      "source_values": {
+        "years": [
+          2023,
+          2024,
+          2025
+        ],
+        "ocf": [
+          5.279,
+          7.16,
+          5.61
+        ],
+        "capex": [
+          4.824,
+          4.808,
+          4.494
+        ]
+      },
+      "source_hash": "0ce6b18fd4530b0c",
+      "display_values": {
+        "years": [
+          2023,
+          2024,
+          2025
+        ],
+        "ocf": [
+          5.279,
+          7.16,
+          5.61
+        ],
+        "capex": [
+          4.824,
+          4.808,
+          4.494
+        ]
+      },
+      "narrative_locator": "Ch4",
+      "table_locator": "3Y financial table",
+      "caption_locator": "OCF vs CAPEX - 2023-2025",
+      "rendered_asset_locator": "inline SVG in final HTML/PDF"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "P/OCF valuation history",
+      "authoritative_source_block": "REPORT_DATA_PACK.json",
+      "source_values": {
+        "2021": 7.94,
+        "2022": 10.57,
+        "2023": 11.56,
+        "2024": 7.64,
+        "2025": 13.0,
+        "2026-08": 18.66
+      },
+      "source_hash": "aea7d2951a947b48",
+      "display_values": {
+        "2021": 7.94,
+        "2022": 10.57,
+        "2023": 11.56,
+        "2024": 7.64,
+        "2025": 13.0,
+        "2026-08": 18.66
+      },
+      "narrative_locator": "Ch5",
+      "table_locator": "Historical valuation band",
+      "caption_locator": "P/OCF valuation history",
+      "rendered_asset_locator": "inline SVG in final HTML/PDF"
+    },
+    {
+      "vis_id": "VIS-005",
+      "figure_title": "Americas leach progression",
+      "authoritative_source_block": "REPORT_DATA_PACK.json",
+      "source_values": {
+        "labels": [
+          "2022",
+          "2023",
+          "2024",
+          "YE2025 run-rate",
+          "YE2026 target",
+          "2030 potential"
+        ],
+        "values": [
+          50,
+          144,
+          214,
+          240,
+          300,
+          800
+        ]
+      },
+      "source_hash": "95a0fedba159d86b",
+      "display_values": {
+        "labels": [
+          "2022",
+          "2023",
+          "2024",
+          "YE2025 run-rate",
+          "YE2026 target",
+          "2030 potential"
+        ],
+        "values": [
+          50,
+          144,
+          214,
+          240,
+          300,
+          800
+        ]
+      },
+      "narrative_locator": "Ch1/3/6",
+      "table_locator": "Leach KPI table",
+      "caption_locator": "Americas leach progression",
+      "rendered_asset_locator": "inline SVG in final HTML/PDF"
+    }
+  ]
+}

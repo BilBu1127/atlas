@@ -1,0 +1,1488 @@
+{
+  "meta": {
+    "ticker": "ETN",
+    "company": "Eaton Corporation plc",
+    "T0": "2026-08-24",
+    "price_asof": "2026-08-21 close",
+    "filing_asof": "Q2 2026 Form 10-Q filed 2026-07-31",
+    "consensus_asof": "2026-08-21",
+    "version": "DDOS v1.7",
+    "currency": "USD",
+    "current_price": 419.2,
+    "horizon_years": 3,
+    "hurdle_rate": 0.125
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue_usd_bn": 23.196,
+        "adjusted_eps": 9.12,
+        "segment_margin_pct": 22.0,
+        "ocf_usd_bn": 3.624,
+        "capex_usd_bn": 0.757,
+        "fcf_usd_bn": 2.867
+      },
+      {
+        "year": 2024,
+        "revenue_usd_bn": 24.878,
+        "adjusted_eps": 10.8,
+        "segment_margin_pct": 24.0,
+        "ocf_usd_bn": 4.327,
+        "capex_usd_bn": 0.808,
+        "fcf_usd_bn": 3.519
+      },
+      {
+        "year": 2025,
+        "revenue_usd_bn": 27.448,
+        "adjusted_eps": 12.07,
+        "segment_margin_pct": 24.5,
+        "ocf_usd_bn": 4.472,
+        "capex_usd_bn": 0.919,
+        "fcf_usd_bn": 3.553
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "Q3 2024",
+        "sales_usd_bn": 6.3,
+        "organic_growth_pct": 8.0,
+        "adjusted_eps": 2.84,
+        "segment_margin_pct": 24.3,
+        "ea_orders_pct": 16.0,
+        "ea_backlog_pct": 26.0,
+        "ea_margin_pct": 30.1
+      },
+      {
+        "quarter": "Q4 2024",
+        "sales_usd_bn": 6.2,
+        "organic_growth_pct": 6.0,
+        "adjusted_eps": 2.83,
+        "segment_margin_pct": 24.7,
+        "ea_orders_pct": 16.0,
+        "ea_backlog_pct": 29.0,
+        "ea_margin_pct": 31.6
+      },
+      {
+        "quarter": "Q1 2025",
+        "sales_usd_bn": 6.4,
+        "organic_growth_pct": 9.0,
+        "adjusted_eps": 2.72,
+        "segment_margin_pct": 23.9,
+        "ea_orders_pct": -4.0,
+        "ea_orders_ex_large_order_pct": 4.0,
+        "ea_backlog_pct": 6.0,
+        "ea_margin_pct": 30.0
+      },
+      {
+        "quarter": "Q2 2025",
+        "sales_usd_bn": 7.0,
+        "organic_growth_pct": 8.0,
+        "adjusted_eps": 2.95,
+        "segment_margin_pct": 23.9,
+        "ea_orders_pct": 2.0,
+        "ea_backlog_pct": 17.0,
+        "ea_margin_pct": 29.5
+      },
+      {
+        "quarter": "Q3 2025",
+        "sales_usd_bn": 7.0,
+        "organic_growth_pct": 7.0,
+        "adjusted_eps": 3.07,
+        "segment_margin_pct": 25.0,
+        "ea_orders_pct": 7.0,
+        "ea_backlog_pct": 20.0,
+        "ea_margin_pct": 30.3
+      },
+      {
+        "quarter": "Q4 2025",
+        "sales_usd_bn": 7.1,
+        "organic_growth_pct": 9.0,
+        "adjusted_eps": 3.33,
+        "segment_margin_pct": 24.9,
+        "ea_orders_pct": 16.0,
+        "ea_backlog_pct": 31.0,
+        "ea_margin_pct": 29.8
+      },
+      {
+        "quarter": "Q1 2026",
+        "sales_usd_bn": 7.5,
+        "organic_growth_pct": 10.0,
+        "adjusted_eps": 2.81,
+        "segment_margin_pct": 22.7,
+        "ea_orders_pct": 42.0,
+        "ea_backlog_pct": 44.0,
+        "ea_margin_pct": 25.6
+      },
+      {
+        "quarter": "Q2 2026",
+        "sales_usd_bn": 8.531,
+        "organic_growth_pct": 14.0,
+        "adjusted_eps": 3.15,
+        "segment_margin_pct": 23.1,
+        "ea_orders_pct": 41.0,
+        "ea_backlog_pct": 33.0,
+        "ea_margin_pct": 27.5
+      }
+    ],
+    "q2_2026_segments": [
+      {
+        "segment": "Electrical Americas",
+        "sales_usd_bn": 3.951,
+        "organic_growth_pct": 18.0,
+        "margin_pct": 27.5,
+        "orders_pct": 41.0,
+        "backlog_pct": 33.0,
+        "book_to_bill": 1.3
+      },
+      {
+        "segment": "Electrical Global",
+        "sales_usd_bn": 2.517,
+        "organic_growth_pct": 18.0,
+        "margin_pct": 19.8,
+        "orders_pct": 33.0,
+        "backlog_pct": 103.0,
+        "book_to_bill": 1.2
+      },
+      {
+        "segment": "Aerospace",
+        "sales_usd_bn": 1.222,
+        "organic_growth_pct": 7.0,
+        "margin_pct": 22.8,
+        "orders_pct": 17.0,
+        "backlog_pct": 28.0,
+        "book_to_bill": 1.2
+      },
+      {
+        "segment": "Mobility",
+        "sales_usd_bn": 0.841,
+        "organic_growth_pct": -2.0,
+        "margin_pct": 13.0,
+        "orders_pct": null,
+        "backlog_pct": null,
+        "book_to_bill": null
+      }
+    ],
+    "firm_backlog_usd_bn": 24.1,
+    "firm_backlog_next_12m_pct": 71.0,
+    "ceilings": [
+      "customer-level backlog concentration",
+      "product-level capacity and lead time",
+      "Aerospace OEM/aftermarket/defense split"
+    ]
+  },
+  "acquisitions": {
+    "boyd": {
+      "purchase_price_usd_bn": 9.549,
+      "announced_2026e_adj_ebitda_multiple": 22.5,
+      "other_intangibles_usd_bn": 7.19,
+      "goodwill_usd_bn": 3.733,
+      "post_close_sales_usd_bn": 0.524,
+      "post_close_segment_profit_usd_bn": 0.121,
+      "post_close_margin_pct": 23.1,
+      "ceiling": "customer-level cross-sell, synergy and normalized cash ROIC unavailable"
+    }
+  },
+  "capital_structure": {
+    "asof": "2026-06-30",
+    "short_term_debt_usd_bn": 2.091,
+    "current_lt_debt_usd_bn": 0.011,
+    "long_term_debt_usd_bn": 18.509,
+    "gross_debt_usd_bn": 20.611,
+    "cash_plus_st_investments_usd_bn": 0.695,
+    "net_debt_usd_bn": 19.916,
+    "h1_2026_net_interest_usd_bn": 0.307,
+    "h1_2025_net_interest_usd_bn": 0.103,
+    "q2_diluted_shares_m": 389.5,
+    "shares_outstanding_m": 388.4,
+    "quarterly_dividend_per_share": 1.1,
+    "h1_2026_buyback_usd_bn": 0.0
+  },
+  "mobility": {
+    "transaction_value_usd_bn": 5.1,
+    "eaton_holder_ownership_min_pct": 50.1,
+    "cash_distribution_usd_bn": 1.1,
+    "pre_synergy_multiple": 8.3,
+    "fully_synergized_multiple": 5.9,
+    "run_rate_synergies_usd_m": 250,
+    "expected_close": "Q1 2027"
+  },
+  "industry": {
+    "epri_us_dc_share_current_pct_range": [
+      4,
+      5
+    ],
+    "epri_us_dc_share_2030_pct_range": [
+      9,
+      17
+    ],
+    "epri_peak_load_2024_gw_range": [
+      21,
+      22
+    ],
+    "epri_peak_load_2030_gw": {
+      "low": 45,
+      "medium": 71,
+      "high": 94
+    },
+    "iea_global_dc_2030_twh": 945,
+    "narrative": "Demand is structural but nominal MW is not converted 1:1 to Eaton revenue."
+  },
+  "management_targets_2030": {
+    "organic_revenue_cagr_pct_range": [
+      6,
+      9
+    ],
+    "segment_margin_pct": 28,
+    "fcf_to_adjusted_earnings_pct_range": [
+      95,
+      100
+    ],
+    "adjusted_eps_cagr_min_pct": 12
+  },
+  "kpis": [
+    {
+      "name": "EA rolling orders",
+      "history": [
+        {
+          "period": "Q3 2024",
+          "value": 16.0
+        },
+        {
+          "period": "Q4 2024",
+          "value": 16.0
+        },
+        {
+          "period": "Q1 2025",
+          "value": -4.0
+        },
+        {
+          "period": "Q2 2025",
+          "value": 2.0
+        },
+        {
+          "period": "Q3 2025",
+          "value": 7.0
+        },
+        {
+          "period": "Q4 2025",
+          "value": 16.0
+        },
+        {
+          "period": "Q1 2026",
+          "value": 42.0
+        },
+        {
+          "period": "Q2 2026",
+          "value": 41.0
+        }
+      ],
+      "current": 41.0,
+      "thresholds": {
+        "green": ">15%",
+        "yellow": "5-15%",
+        "red": "<5% for 2 quarters"
+      }
+    },
+    {
+      "name": "EA backlog YoY",
+      "history": [
+        {
+          "period": "Q3 2024",
+          "value": 26.0
+        },
+        {
+          "period": "Q4 2024",
+          "value": 29.0
+        },
+        {
+          "period": "Q1 2025",
+          "value": 6.0
+        },
+        {
+          "period": "Q2 2025",
+          "value": 17.0
+        },
+        {
+          "period": "Q3 2025",
+          "value": 20.0
+        },
+        {
+          "period": "Q4 2025",
+          "value": 31.0
+        },
+        {
+          "period": "Q1 2026",
+          "value": 44.0
+        },
+        {
+          "period": "Q2 2026",
+          "value": 33.0
+        }
+      ],
+      "current": 33.0,
+      "thresholds": {
+        "green": ">20%",
+        "yellow": "5-20%",
+        "red": "<5% or decline"
+      }
+    },
+    {
+      "name": "EA segment margin",
+      "history": [
+        {
+          "period": "Q3 2024",
+          "value": 30.1
+        },
+        {
+          "period": "Q4 2024",
+          "value": 31.6
+        },
+        {
+          "period": "Q1 2025",
+          "value": 30.0
+        },
+        {
+          "period": "Q2 2025",
+          "value": 29.5
+        },
+        {
+          "period": "Q3 2025",
+          "value": 30.3
+        },
+        {
+          "period": "Q4 2025",
+          "value": 29.8
+        },
+        {
+          "period": "Q1 2026",
+          "value": 25.6
+        },
+        {
+          "period": "Q2 2026",
+          "value": 27.5
+        }
+      ],
+      "current": 27.5,
+      "thresholds": {
+        "green": ">=28%",
+        "yellow": "26-28%",
+        "red": "<26% for 2 quarters"
+      }
+    },
+    {
+      "name": "FCF / adjusted earnings",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": ">=90%",
+        "yellow": "80-90%",
+        "red": "<80%"
+      }
+    },
+    {
+      "name": "Net debt",
+      "history": [
+        {
+          "period": "2026-06-30",
+          "value": 19.916
+        }
+      ],
+      "current": 19.916,
+      "thresholds": {
+        "green": "declining each half",
+        "yellow": "flat",
+        "red": "rising after Boyd close"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.25,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029
+      ],
+      "revenue_path": [
+        32.75,
+        34.5,
+        36.0,
+        37.5
+      ],
+      "margin_path": [
+        24.3,
+        24.8,
+        24.7,
+        24.8
+      ],
+      "eps_path": [
+        13.52,
+        14.5,
+        15.1,
+        15.8
+      ],
+      "fcf": [
+        4.8,
+        4.9,
+        5.0,
+        5.2
+      ],
+      "diluted_shares_m": 389.0,
+      "exit_pe": 20.0,
+      "per_share_value": 316.0,
+      "total_proceeds": 330.5,
+      "irr": -0.0761884311
+    },
+    {
+      "name": "Base",
+      "probability": 0.55,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029
+      ],
+      "revenue_path": [
+        32.75,
+        36.3,
+        39.2,
+        41.5
+      ],
+      "margin_path": [
+        24.3,
+        25.5,
+        26.4,
+        27.0
+      ],
+      "eps_path": [
+        13.52,
+        16.0,
+        18.2,
+        20.5
+      ],
+      "fcf": [
+        4.8,
+        5.7,
+        6.6,
+        7.3
+      ],
+      "diluted_shares_m": 387.0,
+      "exit_pe": 25.0,
+      "per_share_value": 512.5,
+      "total_proceeds": 527.0,
+      "irr": 0.0792691925
+    },
+    {
+      "name": "Up",
+      "probability": 0.2,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029
+      ],
+      "revenue_path": [
+        32.75,
+        37.0,
+        41.0,
+        45.5
+      ],
+      "margin_path": [
+        24.3,
+        26.0,
+        27.4,
+        28.5
+      ],
+      "eps_path": [
+        13.52,
+        17.0,
+        20.5,
+        24.0
+      ],
+      "fcf": [
+        4.8,
+        6.1,
+        7.5,
+        8.8
+      ],
+      "diluted_shares_m": 385.0,
+      "exit_pe": 30.0,
+      "per_share_value": 720.0,
+      "total_proceeds": 734.5,
+      "irr": 0.2055637351
+    }
+  ],
+  "valuation": {
+    "mode": "Mode C — Mature Compounder",
+    "core": {
+      "probability_weighted_present_value": 364.77
+    },
+    "execution": {
+      "embedded_in": "scenario revenue/margin/EPS paths"
+    },
+    "ecosystem": null,
+    "drag": {
+      "net_debt_usd_bn": 19.916,
+      "boyd_entry_multiple": 22.5
+    },
+    "expected_value": 364.77,
+    "expected_terminal_value": 504.875,
+    "expected_total_proceeds": 519.375,
+    "expected_irr": 0.07403868057127627,
+    "current_price": 419.2,
+    "base_case_hurdle_pv": 370.13,
+    "upside_downside_ratio": 2.914728682170543,
+    "hurdle_rate": 0.125,
+    "cumulative_dividend_assumption": 14.5
+  },
+  "reverse_expectations": {
+    "required_terminal_price_for_hurdle": 582.36875,
+    "required_eps_by_exit_pe": [
+      {
+        "exit_pe": 25,
+        "required_2029_eps": 23.29475,
+        "required_eps_cagr": 0.19883787200829506
+      },
+      {
+        "exit_pe": 28,
+        "required_2029_eps": 20.79888,
+        "required_eps_cagr": 0.15439502529325355
+      },
+      {
+        "exit_pe": 30,
+        "required_2029_eps": 19.41229,
+        "required_eps_cagr": 0.12814963034686855
+      }
+    ],
+    "interpretation": "Current price requires either very fast EPS compounding or sustained 28-30x premium multiple."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_usd_bn": 32.75,
+      "eps": 13.52
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_usd_bn": 36.38,
+      "eps": 16.01
+    },
+    "average_target": 477.37,
+    "low_target": 333.0,
+    "high_target": 534.0,
+    "recommendation": "Buy-skewed",
+    "revision_trend": "positive/strong demand; proprietary positioning ceiling"
+  },
+  "stance": {
+    "zone": "회피 / 기존 보유 시 비중 축소 검토",
+    "price_bands": {
+      "avoid_above": 400,
+      "watch_range": [
+        385,
+        400
+      ],
+      "conditional_interest": [
+        365,
+        385
+      ],
+      "active_interest": [
+        340,
+        365
+      ],
+      "stronger_margin_of_safety_below": 340
+    },
+    "horizon": "3 years to 2029",
+    "reason": "Expected IRR ~7.4% is below 12.5% hurdle despite strong business evidence.",
+    "price_irr": [
+      {
+        "price": 420,
+        "expected_irr": 0.07335631782052832
+      },
+      {
+        "price": 400,
+        "expected_irr": 0.09095545099699076
+      },
+      {
+        "price": 385,
+        "expected_irr": 0.10494358250233127
+      },
+      {
+        "price": 375,
+        "expected_irr": 0.11467926989354238
+      },
+      {
+        "price": 365,
+        "expected_irr": 0.12476741344298259
+      },
+      {
+        "price": 350,
+        "expected_irr": 0.14061128891827845
+      }
+    ]
+  },
+  "catalysts": [
+    {
+      "when": "Q3 2026 results",
+      "event": "EA orders/backlog, margin, Boyd full-quarter, FCF",
+      "sensitivity": "HIGH"
+    },
+    {
+      "when": "Q4/FY26 results",
+      "event": "FY27 guide, cash conversion, debt reduction",
+      "sensitivity": "VERY HIGH"
+    },
+    {
+      "when": "H2 2026-H1 2027",
+      "event": "Nebraska switchgear ramp milestones",
+      "sensitivity": "HIGH"
+    },
+    {
+      "when": "Q1 2027 target",
+      "event": "Mobility/Dana RMT close and cash distribution",
+      "sensitivity": "VERY HIGH"
+    },
+    {
+      "when": "H1 2027",
+      "event": "First cleaner post-separation mix and Boyd integration evidence",
+      "sensitivity": "VERY HIGH"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "Ch0; Ch3.8; App E"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1; App B"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch1.2; Ch3.4; App B/C"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1.4; Ch4.2"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch1.3; Ch3.6; Ch4.3; App B"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3.2; Ch3.5; App C"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3.3; Ch4.5; Ch5.3; App E"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3.1; Ch4; App D"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch1.6; Ch3.7; App C/D"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3.8; Ch5; App E"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch2.1; App F"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "Ch2.2-2.5; App F"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4; App D"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4.6-4.7; Ch5; App E"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3.5; App C"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3.4; Ch4.3; App C"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch0; Ch5.2; Ch6.2; App G"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE",
+      "h3_locator": "Ch5; App H"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "COMPLETE",
+      "h3_locator": "Ch6; App I"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Eaton Q2 2026 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1551182/000155118226000030/etn-20260630.htm",
+      "tier": 1
+    },
+    {
+      "id": "S02",
+      "title": "Eaton Q2 2026 earnings release / 8-K Exhibit 99",
+      "url": "https://www.sec.gov/Archives/edgar/data/1551182/000155118226000027/etn06302026exhibit99.htm",
+      "tier": 1
+    },
+    {
+      "id": "S03",
+      "title": "Eaton Q1 2026 results",
+      "url": "https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-reports-record-first-quarter-2026-results.html",
+      "tier": 1
+    },
+    {
+      "id": "S04",
+      "title": "Eaton FY2025 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1551182/000155118226000007/etn-20251231.htm",
+      "tier": 1
+    },
+    {
+      "id": "S05",
+      "title": "Eaton Q4/FY2025 results",
+      "url": "https://www.eaton.com/sg/en-us/company/news-insights/news-releases/2026/eaton-reports-record-fourth-quarter-2025-results.html",
+      "tier": 1
+    },
+    {
+      "id": "S06",
+      "title": "Eaton Q3 2025 results",
+      "url": "https://www.eaton.com/us/en-us/company/news-insights/news-releases/2025/eaton-reports-record-third-quarter-2025-results-with-accelerating-orders.html",
+      "tier": 1
+    },
+    {
+      "id": "S07",
+      "title": "Eaton Q2 2025 results",
+      "url": "https://www.eaton.com/in/en-us/company/news-insights/news-releases/2025/eaton-reports-record-second-quarter-2025-results.html",
+      "tier": 1
+    },
+    {
+      "id": "S08",
+      "title": "Eaton Q1 2025 results",
+      "url": "https://www.eaton.com/gb/en-gb/company/news-insights/news-releases/2025/eaton-reports-record-first-quarter-2025-results.html",
+      "tier": 1
+    },
+    {
+      "id": "S09",
+      "title": "Eaton Q4 2024 results",
+      "url": "https://www.eaton.com/sg/en-us/company/news-insights/news-releases/2024/eaton-reports-record-fourth-quarter-2024-results.html",
+      "tier": 1
+    },
+    {
+      "id": "S10",
+      "title": "Eaton Q3 2024 results",
+      "url": "https://www.eaton.com/us/en-us/company/news-insights/news-releases/2024/eaton-reports-record-third-quarter-2024-results-with-accelerating-orders.html",
+      "tier": 1
+    },
+    {
+      "id": "S11",
+      "title": "Eaton Boyd Thermal acquisition announcement",
+      "url": "https://www.eaton.com/us/en-us/company/news-insights/news-releases/2025/eaton-signs-agreement-to-acquire-boyd-thermal--expanding-solutio.html",
+      "tier": 1
+    },
+    {
+      "id": "S12",
+      "title": "Eaton Boyd Thermal completion",
+      "url": "https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-completes-acquisition-of-leading-liquid-cooling-solutions-provider-boyd-thermal.html",
+      "tier": 1
+    },
+    {
+      "id": "S13",
+      "title": "Eaton Nebraska MV switchgear expansion",
+      "url": "https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-expands-operations-in-nebraska-with-new-manufacturing-facility.html",
+      "tier": 1
+    },
+    {
+      "id": "S14",
+      "title": "Eaton / NVIDIA Beam Rubin DSX",
+      "url": "https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-collaborates-with-nvidia-to-unveil-its-beam-rubin-dsx-platform.html",
+      "tier": 1
+    },
+    {
+      "id": "S15",
+      "title": "Eaton 2030 targets",
+      "url": "https://www.eaton.com/gb/en-gb/company/investor-relations/why-invest-in-eaton.html",
+      "tier": 1
+    },
+    {
+      "id": "S18",
+      "title": "EPRI Powering Intelligence 2026",
+      "url": "https://powering-intelligence.epri.com/executive-summary.html",
+      "tier": 1
+    },
+    {
+      "id": "S19",
+      "title": "IEA Energy and AI — Executive Summary",
+      "url": "https://www.iea.org/reports/energy-and-ai/executive-summary",
+      "tier": 1
+    },
+    {
+      "id": "S24",
+      "title": "S&P Global public consensus aggregation via StockAnalysis",
+      "url": "https://stockanalysis.com/stocks/etn/forecast/",
+      "tier": 3
+    }
+  ],
+  "audits": {
+    "rc_total": 19,
+    "rc_complete": 11,
+    "rc_ceiling": 8,
+    "rc_not_material": 0,
+    "rc_contradicted": 0,
+    "rc_unresolved": 0,
+    "industry_company_link": "STRONG",
+    "latest_filing_check": "PASS",
+    "korean_prose_quality": "PASS",
+    "industry_company_narrative": "PASS",
+    "h2_h3_coverage_lineage": "PASS",
+    "rc_h3_coverage_rate_pct": 100,
+    "report_data_pack": "EMITTED",
+    "data_pack_report_parity": "PASS",
+    "content_meaning_lock_preserved": "PASS",
+    "published_top_level_schema_match": "PASS",
+    "explanatory_depth_preserved": "PASS",
+    "core_landscape_pages": 0,
+    "printed_toc_pages": 1,
+    "toc_clickable": "PASS",
+    "pdf_bookmarks": "PASS",
+    "html_sidebar": "PASS",
+    "searchable_text": "PASS",
+    "korean_readability": "PASS",
+    "explanatory_space_allocation": "PASS",
+    "smart_chapter_transitions": "PASS",
+    "argument_block_pagination": "PASS",
+    "accidental_sparse_pages": 0,
+    "density_control": "PASS",
+    "visual_substitution": "PASS",
+    "visual_grammar_variety": "PASS",
+    "chart_readability": "PASS",
+    "table_quality": "PASS",
+    "contact_sheet_composition_qa": "PASS",
+    "semantic_golden_qa": "PASS",
+    "visual_golden_qa": "PASS",
+    "golden_parity": "PASS",
+    "publishing_acceptance": "PASS"
+  },
+  "visual_data_source_registry": [
+    {
+      "VIS_ID": "VIS-001",
+      "FIGURE_TITLE": "3년 재무 추세",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.annual_3y",
+      "SOURCE_VALUES": [
+        {
+          "year": 2023,
+          "revenue_usd_bn": 23.196,
+          "adjusted_eps": 9.12,
+          "segment_margin_pct": 22.0,
+          "ocf_usd_bn": 3.624,
+          "capex_usd_bn": 0.757,
+          "fcf_usd_bn": 2.867
+        },
+        {
+          "year": 2024,
+          "revenue_usd_bn": 24.878,
+          "adjusted_eps": 10.8,
+          "segment_margin_pct": 24.0,
+          "ocf_usd_bn": 4.327,
+          "capex_usd_bn": 0.808,
+          "fcf_usd_bn": 3.519
+        },
+        {
+          "year": 2025,
+          "revenue_usd_bn": 27.448,
+          "adjusted_eps": 12.07,
+          "segment_margin_pct": 24.5,
+          "ocf_usd_bn": 4.472,
+          "capex_usd_bn": 0.919,
+          "fcf_usd_bn": 3.553
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "ef36db328bba4124",
+      "DISPLAY_VALUES": "generated_from_source_block",
+      "NARRATIVE_LOCATOR": "Ch4.1",
+      "TABLE_LOCATOR": "App D1",
+      "CAPTION_LOCATOR": "VIS-001 caption",
+      "RENDERED_ASSET_LOCATOR": "inline SVG / HTML"
+    },
+    {
+      "VIS_ID": "VIS-002",
+      "FIGURE_TITLE": "Electrical Americas 주문·백로그·마진 8Q",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.quarterly_8q",
+      "SOURCE_VALUES": [
+        {
+          "quarter": "Q3 2024",
+          "sales_usd_bn": 6.3,
+          "organic_growth_pct": 8.0,
+          "adjusted_eps": 2.84,
+          "segment_margin_pct": 24.3,
+          "ea_orders_pct": 16.0,
+          "ea_backlog_pct": 26.0,
+          "ea_margin_pct": 30.1
+        },
+        {
+          "quarter": "Q4 2024",
+          "sales_usd_bn": 6.2,
+          "organic_growth_pct": 6.0,
+          "adjusted_eps": 2.83,
+          "segment_margin_pct": 24.7,
+          "ea_orders_pct": 16.0,
+          "ea_backlog_pct": 29.0,
+          "ea_margin_pct": 31.6
+        },
+        {
+          "quarter": "Q1 2025",
+          "sales_usd_bn": 6.4,
+          "organic_growth_pct": 9.0,
+          "adjusted_eps": 2.72,
+          "segment_margin_pct": 23.9,
+          "ea_orders_pct": -4.0,
+          "ea_orders_ex_large_order_pct": 4.0,
+          "ea_backlog_pct": 6.0,
+          "ea_margin_pct": 30.0
+        },
+        {
+          "quarter": "Q2 2025",
+          "sales_usd_bn": 7.0,
+          "organic_growth_pct": 8.0,
+          "adjusted_eps": 2.95,
+          "segment_margin_pct": 23.9,
+          "ea_orders_pct": 2.0,
+          "ea_backlog_pct": 17.0,
+          "ea_margin_pct": 29.5
+        },
+        {
+          "quarter": "Q3 2025",
+          "sales_usd_bn": 7.0,
+          "organic_growth_pct": 7.0,
+          "adjusted_eps": 3.07,
+          "segment_margin_pct": 25.0,
+          "ea_orders_pct": 7.0,
+          "ea_backlog_pct": 20.0,
+          "ea_margin_pct": 30.3
+        },
+        {
+          "quarter": "Q4 2025",
+          "sales_usd_bn": 7.1,
+          "organic_growth_pct": 9.0,
+          "adjusted_eps": 3.33,
+          "segment_margin_pct": 24.9,
+          "ea_orders_pct": 16.0,
+          "ea_backlog_pct": 31.0,
+          "ea_margin_pct": 29.8
+        },
+        {
+          "quarter": "Q1 2026",
+          "sales_usd_bn": 7.5,
+          "organic_growth_pct": 10.0,
+          "adjusted_eps": 2.81,
+          "segment_margin_pct": 22.7,
+          "ea_orders_pct": 42.0,
+          "ea_backlog_pct": 44.0,
+          "ea_margin_pct": 25.6
+        },
+        {
+          "quarter": "Q2 2026",
+          "sales_usd_bn": 8.531,
+          "organic_growth_pct": 14.0,
+          "adjusted_eps": 3.15,
+          "segment_margin_pct": 23.1,
+          "ea_orders_pct": 41.0,
+          "ea_backlog_pct": 33.0,
+          "ea_margin_pct": 27.5
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "92690ac2b88e4e13",
+      "DISPLAY_VALUES": "generated_from_source_block",
+      "NARRATIVE_LOCATOR": "Ch4.2",
+      "TABLE_LOCATOR": "App D3",
+      "CAPTION_LOCATOR": "VIS-002 caption",
+      "RENDERED_ASSET_LOCATOR": "inline SVG / HTML"
+    },
+    {
+      "VIS_ID": "VIS-003",
+      "FIGURE_TITLE": "Q2 2026 세그먼트 질 비교",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.q2_2026_segments",
+      "SOURCE_VALUES": [
+        {
+          "segment": "Electrical Americas",
+          "sales_usd_bn": 3.951,
+          "organic_growth_pct": 18.0,
+          "margin_pct": 27.5,
+          "orders_pct": 41.0,
+          "backlog_pct": 33.0,
+          "book_to_bill": 1.3
+        },
+        {
+          "segment": "Electrical Global",
+          "sales_usd_bn": 2.517,
+          "organic_growth_pct": 18.0,
+          "margin_pct": 19.8,
+          "orders_pct": 33.0,
+          "backlog_pct": 103.0,
+          "book_to_bill": 1.2
+        },
+        {
+          "segment": "Aerospace",
+          "sales_usd_bn": 1.222,
+          "organic_growth_pct": 7.0,
+          "margin_pct": 22.8,
+          "orders_pct": 17.0,
+          "backlog_pct": 28.0,
+          "book_to_bill": 1.2
+        },
+        {
+          "segment": "Mobility",
+          "sales_usd_bn": 0.841,
+          "organic_growth_pct": -2.0,
+          "margin_pct": 13.0,
+          "orders_pct": null,
+          "backlog_pct": null,
+          "book_to_bill": null
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "7c450e256b693201",
+      "DISPLAY_VALUES": "generated_from_source_block",
+      "NARRATIVE_LOCATOR": "Ch4.4",
+      "TABLE_LOCATOR": "Ch4.4",
+      "CAPTION_LOCATOR": "VIS-003 caption",
+      "RENDERED_ASSET_LOCATOR": "inline SVG / HTML"
+    },
+    {
+      "VIS_ID": "VIS-004",
+      "FIGURE_TITLE": "Boyd 인수가격과 자본부담",
+      "AUTHORITATIVE_SOURCE_BLOCK": "acquisitions.boyd",
+      "SOURCE_VALUES": {
+        "purchase_price_usd_bn": 9.549,
+        "announced_2026e_adj_ebitda_multiple": 22.5,
+        "other_intangibles_usd_bn": 7.19,
+        "goodwill_usd_bn": 3.733,
+        "post_close_sales_usd_bn": 0.524,
+        "post_close_segment_profit_usd_bn": 0.121,
+        "post_close_margin_pct": 23.1,
+        "ceiling": "customer-level cross-sell, synergy and normalized cash ROIC unavailable"
+      },
+      "SOURCE_VERSION_OR_HASH": "b355359d207c0128",
+      "DISPLAY_VALUES": "generated_from_source_block",
+      "NARRATIVE_LOCATOR": "Ch3.3/Ch4.5",
+      "TABLE_LOCATOR": "App E1",
+      "CAPTION_LOCATOR": "VIS-004 caption",
+      "RENDERED_ASSET_LOCATOR": "inline SVG / HTML"
+    },
+    {
+      "VIS_ID": "VIS-005",
+      "FIGURE_TITLE": "미국 데이터센터 전력 수요 시나리오",
+      "AUTHORITATIVE_SOURCE_BLOCK": "industry",
+      "SOURCE_VALUES": {
+        "epri_us_dc_share_current_pct_range": [
+          4,
+          5
+        ],
+        "epri_us_dc_share_2030_pct_range": [
+          9,
+          17
+        ],
+        "epri_peak_load_2024_gw_range": [
+          21,
+          22
+        ],
+        "epri_peak_load_2030_gw": {
+          "low": 45,
+          "medium": 71,
+          "high": 94
+        },
+        "iea_global_dc_2030_twh": 945,
+        "narrative": "Demand is structural but nominal MW is not converted 1:1 to Eaton revenue."
+      },
+      "SOURCE_VERSION_OR_HASH": "d6001fb076725e5d",
+      "DISPLAY_VALUES": "generated_from_source_block",
+      "NARRATIVE_LOCATOR": "Ch1.1",
+      "TABLE_LOCATOR": "App B",
+      "CAPTION_LOCATOR": "VIS-005 caption",
+      "RENDERED_ASSET_LOCATOR": "inline SVG / HTML"
+    },
+    {
+      "VIS_ID": "VIS-006",
+      "FIGURE_TITLE": "2029 Down/Base/Up 가치",
+      "AUTHORITATIVE_SOURCE_BLOCK": "scenarios",
+      "SOURCE_VALUES": [
+        {
+          "name": "Down",
+          "probability": 0.25,
+          "years": [
+            2026,
+            2027,
+            2028,
+            2029
+          ],
+          "revenue_path": [
+            32.75,
+            34.5,
+            36.0,
+            37.5
+          ],
+          "margin_path": [
+            24.3,
+            24.8,
+            24.7,
+            24.8
+          ],
+          "eps_path": [
+            13.52,
+            14.5,
+            15.1,
+            15.8
+          ],
+          "fcf": [
+            4.8,
+            4.9,
+            5.0,
+            5.2
+          ],
+          "diluted_shares_m": 389.0,
+          "exit_pe": 20.0,
+          "per_share_value": 316.0,
+          "total_proceeds": 330.5,
+          "irr": -0.0761884311
+        },
+        {
+          "name": "Base",
+          "probability": 0.55,
+          "years": [
+            2026,
+            2027,
+            2028,
+            2029
+          ],
+          "revenue_path": [
+            32.75,
+            36.3,
+            39.2,
+            41.5
+          ],
+          "margin_path": [
+            24.3,
+            25.5,
+            26.4,
+            27.0
+          ],
+          "eps_path": [
+            13.52,
+            16.0,
+            18.2,
+            20.5
+          ],
+          "fcf": [
+            4.8,
+            5.7,
+            6.6,
+            7.3
+          ],
+          "diluted_shares_m": 387.0,
+          "exit_pe": 25.0,
+          "per_share_value": 512.5,
+          "total_proceeds": 527.0,
+          "irr": 0.0792691925
+        },
+        {
+          "name": "Up",
+          "probability": 0.2,
+          "years": [
+            2026,
+            2027,
+            2028,
+            2029
+          ],
+          "revenue_path": [
+            32.75,
+            37.0,
+            41.0,
+            45.5
+          ],
+          "margin_path": [
+            24.3,
+            26.0,
+            27.4,
+            28.5
+          ],
+          "eps_path": [
+            13.52,
+            17.0,
+            20.5,
+            24.0
+          ],
+          "fcf": [
+            4.8,
+            6.1,
+            7.5,
+            8.8
+          ],
+          "diluted_shares_m": 385.0,
+          "exit_pe": 30.0,
+          "per_share_value": 720.0,
+          "total_proceeds": 734.5,
+          "irr": 0.2055637351
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "163412d3d73c04f9",
+      "DISPLAY_VALUES": "generated_from_source_block",
+      "NARRATIVE_LOCATOR": "Ch5.3-5.4",
+      "TABLE_LOCATOR": "App H1",
+      "CAPTION_LOCATOR": "VIS-006 caption",
+      "RENDERED_ASSET_LOCATOR": "inline SVG / HTML"
+    },
+    {
+      "VIS_ID": "VIS-007",
+      "FIGURE_TITLE": "Reverse Expectations",
+      "AUTHORITATIVE_SOURCE_BLOCK": "reverse_expectations",
+      "SOURCE_VALUES": {
+        "required_terminal_price_for_hurdle": 582.36875,
+        "required_eps_by_exit_pe": [
+          {
+            "exit_pe": 25,
+            "required_2029_eps": 23.29475,
+            "required_eps_cagr": 0.19883787200829506
+          },
+          {
+            "exit_pe": 28,
+            "required_2029_eps": 20.79888,
+            "required_eps_cagr": 0.15439502529325355
+          },
+          {
+            "exit_pe": 30,
+            "required_2029_eps": 19.41229,
+            "required_eps_cagr": 0.12814963034686855
+          }
+        ],
+        "interpretation": "Current price requires either very fast EPS compounding or sustained 28-30x premium multiple."
+      },
+      "SOURCE_VERSION_OR_HASH": "2585663e0cf4a8a8",
+      "DISPLAY_VALUES": "generated_from_source_block",
+      "NARRATIVE_LOCATOR": "Ch5.5",
+      "TABLE_LOCATOR": "App H3",
+      "CAPTION_LOCATOR": "VIS-007 caption",
+      "RENDERED_ASSET_LOCATOR": "inline SVG / HTML"
+    },
+    {
+      "VIS_ID": "VIS-008",
+      "FIGURE_TITLE": "가격별 기대 IRR",
+      "AUTHORITATIVE_SOURCE_BLOCK": "stance.price_irr",
+      "SOURCE_VALUES": [
+        {
+          "price": 420,
+          "expected_irr": 0.07335631782052832
+        },
+        {
+          "price": 400,
+          "expected_irr": 0.09095545099699076
+        },
+        {
+          "price": 385,
+          "expected_irr": 0.10494358250233127
+        },
+        {
+          "price": 375,
+          "expected_irr": 0.11467926989354238
+        },
+        {
+          "price": 365,
+          "expected_irr": 0.12476741344298259
+        },
+        {
+          "price": 350,
+          "expected_irr": 0.14061128891827845
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "acf407f63466084b",
+      "DISPLAY_VALUES": "generated_from_source_block",
+      "NARRATIVE_LOCATOR": "Ch5.7",
+      "TABLE_LOCATOR": "App H4",
+      "CAPTION_LOCATOR": "VIS-008 caption",
+      "RENDERED_ASSET_LOCATOR": "inline SVG / HTML"
+    },
+    {
+      "VIS_ID": "VIS-009",
+      "FIGURE_TITLE": "부채·이자 부담",
+      "AUTHORITATIVE_SOURCE_BLOCK": "capital_structure",
+      "SOURCE_VALUES": {
+        "asof": "2026-06-30",
+        "short_term_debt_usd_bn": 2.091,
+        "current_lt_debt_usd_bn": 0.011,
+        "long_term_debt_usd_bn": 18.509,
+        "gross_debt_usd_bn": 20.611,
+        "cash_plus_st_investments_usd_bn": 0.695,
+        "net_debt_usd_bn": 19.916,
+        "h1_2026_net_interest_usd_bn": 0.307,
+        "h1_2025_net_interest_usd_bn": 0.103,
+        "q2_diluted_shares_m": 389.5,
+        "shares_outstanding_m": 388.4,
+        "quarterly_dividend_per_share": 1.1,
+        "h1_2026_buyback_usd_bn": 0.0
+      },
+      "SOURCE_VERSION_OR_HASH": "3a5bff37da31b7a9",
+      "DISPLAY_VALUES": "generated_from_source_block",
+      "NARRATIVE_LOCATOR": "Ch4.6",
+      "TABLE_LOCATOR": "App E2",
+      "CAPTION_LOCATOR": "VIS-009 caption",
+      "RENDERED_ASSET_LOCATOR": "inline SVG / HTML"
+    },
+    {
+      "VIS_ID": "VIS-010",
+      "FIGURE_TITLE": "2030 목표와 현재 실행 포인트",
+      "AUTHORITATIVE_SOURCE_BLOCK": "management_targets_2030",
+      "SOURCE_VALUES": {
+        "organic_revenue_cagr_pct_range": [
+          6,
+          9
+        ],
+        "segment_margin_pct": 28,
+        "fcf_to_adjusted_earnings_pct_range": [
+          95,
+          100
+        ],
+        "adjusted_eps_cagr_min_pct": 12
+      },
+      "SOURCE_VERSION_OR_HASH": "b505e0999e4753fe",
+      "DISPLAY_VALUES": "generated_from_source_block",
+      "NARRATIVE_LOCATOR": "Ch2.3",
+      "TABLE_LOCATOR": "Ch2.3",
+      "CAPTION_LOCATOR": "VIS-010 caption",
+      "RENDERED_ASSET_LOCATOR": "inline SVG / HTML"
+    }
+  ],
+  "visual_lineage_manifest": [
+    {
+      "VIS_ID": "VIS-001",
+      "Source_Block": "financials.annual_3y",
+      "Source_Hash": "ef36db328bba4124",
+      "Displayed_Values_Match": true,
+      "Table_Match": true,
+      "Narrative_Match": true,
+      "Render_Match": true,
+      "Status": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-002",
+      "Source_Block": "financials.quarterly_8q",
+      "Source_Hash": "92690ac2b88e4e13",
+      "Displayed_Values_Match": true,
+      "Table_Match": true,
+      "Narrative_Match": true,
+      "Render_Match": true,
+      "Status": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-003",
+      "Source_Block": "financials.q2_2026_segments",
+      "Source_Hash": "7c450e256b693201",
+      "Displayed_Values_Match": true,
+      "Table_Match": true,
+      "Narrative_Match": true,
+      "Render_Match": true,
+      "Status": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-004",
+      "Source_Block": "acquisitions.boyd",
+      "Source_Hash": "b355359d207c0128",
+      "Displayed_Values_Match": true,
+      "Table_Match": true,
+      "Narrative_Match": true,
+      "Render_Match": true,
+      "Status": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-005",
+      "Source_Block": "industry",
+      "Source_Hash": "d6001fb076725e5d",
+      "Displayed_Values_Match": true,
+      "Table_Match": true,
+      "Narrative_Match": true,
+      "Render_Match": true,
+      "Status": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-006",
+      "Source_Block": "scenarios",
+      "Source_Hash": "163412d3d73c04f9",
+      "Displayed_Values_Match": true,
+      "Table_Match": true,
+      "Narrative_Match": true,
+      "Render_Match": true,
+      "Status": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-007",
+      "Source_Block": "reverse_expectations",
+      "Source_Hash": "2585663e0cf4a8a8",
+      "Displayed_Values_Match": true,
+      "Table_Match": true,
+      "Narrative_Match": true,
+      "Render_Match": true,
+      "Status": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-008",
+      "Source_Block": "stance.price_irr",
+      "Source_Hash": "acf407f63466084b",
+      "Displayed_Values_Match": true,
+      "Table_Match": true,
+      "Narrative_Match": true,
+      "Render_Match": true,
+      "Status": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-009",
+      "Source_Block": "capital_structure",
+      "Source_Hash": "3a5bff37da31b7a9",
+      "Displayed_Values_Match": true,
+      "Table_Match": true,
+      "Narrative_Match": true,
+      "Render_Match": true,
+      "Status": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-010",
+      "Source_Block": "management_targets_2030",
+      "Source_Hash": "b505e0999e4753fe",
+      "Displayed_Values_Match": true,
+      "Table_Match": true,
+      "Narrative_Match": true,
+      "Render_Match": true,
+      "Status": "PASS"
+    }
+  ]
+}
