@@ -94,8 +94,7 @@
   "known_debt": [
    "선존 결함(BUILD1 유래): ENE-05·MAT-03 COLD 카드에 cold_reversal_signal 필드 누락. 블록 무결성 락(02 §4)상 BUILD5에서 임의 수정 불가 → BUILD 7 정산 또는 별도 UPDATE에서 보강. BUILD5 신규 COLD 카드(RLE-01·RLE-03)는 필드 완비.",
    "BUILD7 최종 정산 잔여: (1) HEAT 정산(§2)으로 provisional HEAT 9→≤8 강등 1건, (2) 블록간 섬 해소 최종 확인(모든 노드 '다른 섹터' 엣지 ≥1 — STP-03은 HLT-01→STP-03 L 엣지로 충족), (3) ENE-05·MAT-03 cold_reversal_signal 필드 보강, (4) 전 카드 tier_provisional=false 확정.",
-   "§3A 아웃바운드 2홉 전파 워크 미실행(UPDATE-2·3 공통) — IND-03→UTL-01(H)/ITC-06→RLE-02/HLT-02→HLT-01(H) 등. 다음 정식 전면스캔에서 일괄.",
-   "후보 엣지: ITC-06(AI서버)→ITC-05(HBM 수요) 배선 누락 — taxonomy_locked 대상, 승인 후 추가."
+   "§3A 아웃바운드 2홉 전파 워크 미실행(UPDATE-2·3 공통) — IND-03→UTL-01(H)/ITC-06→RLE-02/HLT-02→HLT-01(H) 등. 다음 정식 전면스캔에서 일괄."
   ]
  },
  "themes": [
@@ -11028,7 +11027,6 @@
    "full_scan_pending": "51종 전면스캔 미실행 — 다음 정식 '아틀라스 업데이트'에서 전 산업 재채점",
    "propagation_debt": "§3A 아웃바운드 2홉 워크 미실행(IND-03→UTL-01(H)/ITC-06→RLE-02/HLT-02→HLT-01(H) 등)",
    "utl02_rotation": "UTL-02 HEAT 승격 전제=전면 재채점에서 최약 HEAT 강등. ITC-05 최유력이나 역신호 2개 확정 필요(현재 1개).",
-   "edge_approval_pending": "ITC-06→ITC-05(AI서버→HBM) 엣지 추가 승인 대기(taxonomy_locked)",
    "riot_mapping": "RIOT 이중귀속=대표 ITC-08(BTC채굴)+연결 RLE-02(호스팅). 트리거: AMD Phase3/4 인도+191MW permanent finance 확정 시 대표를 RLE-02로 승계 판정.",
    "multi_attribution_note": "다중귀속 노드(RIOT/UUUU/HOOD)의 대표 산업은 매출 무게중심이 이동하면 재지정. 유기적 이동은 다음 갱신에서 각 트립와이어로 점검."
   }
