@@ -1,0 +1,1670 @@
+{
+  "meta": {
+    "ticker": "OII",
+    "company": "Oceaneering International, Inc.",
+    "T0": "2026-08-24",
+    "price_asof": 50.46,
+    "filing_asof": "2026-07-23 (Q2 2026 10-Q)",
+    "consensus_asof": "2026-08 mid-month snapshot",
+    "version": "2026-08-25 final"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "fy": "2023",
+        "revenue": 2424.7,
+        "operating_income": 181.3,
+        "net_income": 97.4,
+        "adj_ebitda": 289.0,
+        "ocf": 210.0,
+        "capex": 100.7,
+        "fcf": 109.2,
+        "diluted_shares": 102.2
+      },
+      {
+        "fy": "2024",
+        "revenue": 2661.2,
+        "operating_income": 246.3,
+        "net_income": 147.5,
+        "adj_ebitda": 347.2,
+        "ocf": 203.2,
+        "capex": 107.1,
+        "fcf": 96.1,
+        "diluted_shares": 102.4
+      },
+      {
+        "fy": "2025",
+        "revenue": 2784.2,
+        "operating_income": 304.6,
+        "net_income": 353.8,
+        "adj_ebitda": 401.5,
+        "ocf": 318.9,
+        "capex": 111.0,
+        "fcf": 207.8,
+        "diluted_shares": 101.3
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "Q3 2024",
+        "revenue": 679.8,
+        "adj_ebitda": 98.1,
+        "fcf": 67.0,
+        "rov_util": 69,
+        "rov_rev_day": 10576
+      },
+      {
+        "quarter": "Q4 2024",
+        "revenue": 713.5,
+        "adj_ebitda": 101.5,
+        "fcf": 94.5,
+        "rov_util": 66,
+        "rov_rev_day": 10786
+      },
+      {
+        "quarter": "Q1 2025",
+        "revenue": 674.5,
+        "adj_ebitda": 96.7,
+        "fcf": -106.8,
+        "rov_util": 67,
+        "rov_rev_day": 10788
+      },
+      {
+        "quarter": "Q2 2025",
+        "revenue": 698.2,
+        "adj_ebitda": 103.3,
+        "fcf": 46.9,
+        "rov_util": 67,
+        "rov_rev_day": 11265
+      },
+      {
+        "quarter": "Q3 2025",
+        "revenue": 742.9,
+        "adj_ebitda": 111.1,
+        "fcf": 77.0,
+        "rov_util": 65,
+        "rov_rev_day": 11254
+      },
+      {
+        "quarter": "Q4 2025",
+        "revenue": 668.6,
+        "adj_ebitda": 90.5,
+        "fcf": 190.7,
+        "rov_util": 62,
+        "rov_rev_day": 11550
+      },
+      {
+        "quarter": "Q1 2026",
+        "revenue": 692.0,
+        "adj_ebitda": 83.7,
+        "fcf": -76.5,
+        "rov_util": 61,
+        "rov_rev_day": 12401
+      },
+      {
+        "quarter": "Q2 2026",
+        "revenue": 768.0,
+        "adj_ebitda": 114.5,
+        "fcf": 32.0,
+        "rov_util": 66,
+        "rov_rev_day": 11894
+      }
+    ],
+    "segment_revenue_3y": [
+      {
+        "segment": "SSR",
+        "2023": 752.521,
+        "2024": 829.822,
+        "2025": 855.216
+      },
+      {
+        "segment": "MP",
+        "2023": 493.692,
+        "2024": 555.5,
+        "2025": 568.971
+      },
+      {
+        "segment": "OPG",
+        "2023": 546.366,
+        "2024": 591.037,
+        "2025": 616.045
+      },
+      {
+        "segment": "IMDS",
+        "2023": 255.282,
+        "2024": 291.866,
+        "2025": 284.02
+      },
+      {
+        "segment": "ADTech",
+        "2023": 376.845,
+        "2024": 392.936,
+        "2025": 459.904
+      }
+    ],
+    "mp_backlog_history": [
+      {
+        "period": "Q3 2024",
+        "backlog": 671,
+        "book_to_bill": 1.21
+      },
+      {
+        "period": "Q4 2024",
+        "backlog": 604,
+        "book_to_bill": 0.97
+      },
+      {
+        "period": "Q2 2025",
+        "backlog": 516,
+        "book_to_bill": 0.65
+      },
+      {
+        "period": "Q3 2025",
+        "backlog": 568,
+        "book_to_bill": 0.82
+      },
+      {
+        "period": "Q4 2025",
+        "backlog": 511,
+        "book_to_bill": null
+      },
+      {
+        "period": "Q1 2026",
+        "backlog": 492,
+        "book_to_bill": 0.91
+      },
+      {
+        "period": "Q2 2026",
+        "backlog": 445,
+        "book_to_bill": 0.88
+      }
+    ],
+    "balance_sheet_q2_2026": {
+      "cash": 629.5,
+      "accounts_receivable": 414.36,
+      "contract_assets": 230.873,
+      "inventory": 197.726
+    },
+    "h1_2026": {
+      "ocf": -3.912,
+      "fcf": -44.497
+    },
+    "fy26_guidance": {
+      "adj_ebitda_low": 400,
+      "adj_ebitda_high": 440,
+      "fcf_low": 100,
+      "fcf_high": 120
+    },
+    "ceilings": [
+      "ROV fleet age distribution not disclosed",
+      "MP rated capacity/utilization not disclosed",
+      "customer-level ROI not standardized/disclosed"
+    ]
+  },
+  "kpis": [
+    {
+      "name": "ROV revenue/day",
+      "current": "$11,894 (Q2 26)",
+      "thresholds": {
+        "green": "≥$11.7k",
+        "yellow": "$11.2–11.7k",
+        "red": "<$11.2k"
+      },
+      "frequency": "quarterly"
+    },
+    {
+      "name": "ROV utilization",
+      "current": "66% (Q2 26)",
+      "thresholds": {
+        "green": "≥66%",
+        "yellow": "62–65%",
+        "red": "<62%"
+      },
+      "frequency": "quarterly"
+    },
+    {
+      "name": "MP book-to-bill",
+      "current": "0.88x TTM (Q2 26)",
+      "thresholds": {
+        "green": "≥1.0x",
+        "yellow": "0.90–0.99x",
+        "red": "<0.90x for 2 qtrs"
+      },
+      "frequency": "quarterly"
+    },
+    {
+      "name": "MP backlog",
+      "current": "$445m (Q2 26)",
+      "thresholds": {
+        "green": "stable/up",
+        "yellow": "$400–445m",
+        "red": "<$400m"
+      },
+      "frequency": "quarterly"
+    },
+    {
+      "name": "OPG operating margin",
+      "current": "16% (Q2 26)",
+      "thresholds": {
+        "green": "≥14%",
+        "yellow": "10–13%",
+        "red": "<10%"
+      },
+      "frequency": "quarterly"
+    },
+    {
+      "name": "ADTech growth / margin",
+      "current": "+22% / 12% (Q2 26)",
+      "thresholds": {
+        "green": ">15% growth & ≥12% margin",
+        "yellow": ">10% growth, 8–11% margin",
+        "red": "margin <8% or dispute reserve"
+      },
+      "frequency": "quarterly"
+    },
+    {
+      "name": "FY26 FCF",
+      "current": "Guide $100–120m; H1 -$44.5m",
+      "thresholds": {
+        "green": "≥$120m",
+        "yellow": "$100–119m",
+        "red": "<$100m"
+      },
+      "frequency": "quarterly/FY"
+    },
+    {
+      "name": "AR + contract assets",
+      "current": "$645.2m (Q2 26)",
+      "thresholds": {
+        "green": "declines with growth",
+        "yellow": "flat",
+        "red": ">$700m without revenue acceleration"
+      },
+      "frequency": "quarterly"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.25,
+      "revenue_path": [
+        {
+          "fy": "2027E",
+          "value": 2900
+        }
+      ],
+      "margin_path": [
+        {
+          "fy": "2027E",
+          "ebitda_margin": 0.13448275862068965
+        }
+      ],
+      "fcf": [
+        {
+          "fy": "2027E",
+          "value": 90
+        }
+      ],
+      "diluted_shares": 100.0,
+      "ev_ebitda": 8.5,
+      "enterprise_value": 3315.0,
+      "net_cash": 150,
+      "per_share_value": 34.65
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "revenue_path": [
+        {
+          "fy": "2027E",
+          "value": 3150
+        }
+      ],
+      "margin_path": [
+        {
+          "fy": "2027E",
+          "ebitda_margin": 0.1523809523809524
+        }
+      ],
+      "fcf": [
+        {
+          "fy": "2027E",
+          "value": 175
+        }
+      ],
+      "diluted_shares": 99.5,
+      "ev_ebitda": 9.5,
+      "enterprise_value": 4560.0,
+      "net_cash": 200,
+      "per_share_value": 47.8391959798995
+    },
+    {
+      "name": "Up",
+      "probability": 0.25,
+      "revenue_path": [
+        {
+          "fy": "2027E",
+          "value": 3400
+        }
+      ],
+      "margin_path": [
+        {
+          "fy": "2027E",
+          "ebitda_margin": 0.16176470588235295
+        }
+      ],
+      "fcf": [
+        {
+          "fy": "2027E",
+          "value": 230
+        }
+      ],
+      "diluted_shares": 99.0,
+      "ev_ebitda": 10.5,
+      "enterprise_value": 5775.0,
+      "net_cash": 250,
+      "per_share_value": 60.85858585858586
+    }
+  ],
+  "valuation": {
+    "mode": "D — Cyclical; Mode C/SOTP cross-check",
+    "core": 47.8391959798995,
+    "execution": 49.824120603015075,
+    "ecosystem": null,
+    "drag": "Current price already capitalizes much of 2027 improvement",
+    "expected_value": 47.796744454596215,
+    "expected_irr_18m_annualized": -0.03550337170917417,
+    "current_price": 50.46,
+    "current_equity_value_m": 5020.77,
+    "debt_only_ev_m": 4891.27,
+    "current_ev_ebitda_2026_mid": 11.645880952380953,
+    "sotp_crosscheck": {
+      "segments": [
+        {
+          "name": "SSR",
+          "ebitda": 340,
+          "multiple": 10.0,
+          "ev": 3400.0
+        },
+        {
+          "name": "MP",
+          "ebitda": 100,
+          "multiple": 8.0,
+          "ev": 800.0
+        },
+        {
+          "name": "OPG",
+          "ebitda": 115,
+          "multiple": 7.5,
+          "ev": 862.5
+        },
+        {
+          "name": "IMDS",
+          "ebitda": 20,
+          "multiple": 7.0,
+          "ev": 140.0
+        },
+        {
+          "name": "ADTech",
+          "ebitda": 105,
+          "multiple": 11.0,
+          "ev": 1155.0
+        }
+      ],
+      "corporate_drag_ebitda": -200,
+      "corporate_drag_multiple": 8.0,
+      "net_cash": 200,
+      "shares": 99.5,
+      "gross_segment_ev": 6357.5,
+      "corporate_drag_ev": -1600.0,
+      "net_ev": 4757.5,
+      "equity_value": 4957.5,
+      "per_share": 49.824120603015075
+    },
+    "fcf_crosscheck": {
+      "2028_normalized_fcf_base": 220,
+      "multiple_range": [
+        20,
+        22
+      ],
+      "per_share_range": [
+        44.44444444444444,
+        48.888888888888886
+      ]
+    }
+  },
+  "reverse_expectations": {
+    "current_ev_m": 4891.27,
+    "required_ebitda_by_multiple": [
+      {
+        "multiple": 9.0,
+        "required_ebitda": 543.4744444444445
+      },
+      {
+        "multiple": 9.5,
+        "required_ebitda": 514.8705263157896
+      },
+      {
+        "multiple": 10.0,
+        "required_ebitda": 489.12700000000007
+      },
+      {
+        "multiple": 11.0,
+        "required_ebitda": 444.6609090909091
+      }
+    ],
+    "interpretation": "At 9.5–10.0x, current EV requires roughly $489–515m normalized EBITDA."
+  },
+  "consensus": {
+    "fy1": {
+      "fy": "2026E",
+      "revenue": 2951,
+      "ebitda": 420,
+      "margin": 14.2
+    },
+    "fy2": {
+      "fy": "2027E",
+      "revenue": 3057,
+      "ebitda": 456,
+      "margin": 14.9
+    },
+    "fy3": {
+      "fy": "2028E",
+      "revenue": 3361,
+      "ebitda": 521,
+      "margin": 15.5
+    },
+    "revision_trend": "2026 EBITDA consensus near management midpoint; debate shifts to 2027–28 durability.",
+    "analyst_actions": [
+      "TD Cowen Hold $47 (2026-08-12)",
+      "Citi Hold $52 (2026-08-11)",
+      "Barclays Hold $47 (2026-07-27)"
+    ]
+  },
+  "stance": {
+    "zone": "NEUTRAL / HOLD at $50.46",
+    "price_bands": {
+      "accumulate": "< $40",
+      "selective_interest": "$40–46",
+      "neutral_hold": "$46–53",
+      "trim_or_require_upgrade": "$53–60",
+      "reduce_upside_priced": "> $60"
+    },
+    "horizon": "12–18 months"
+  },
+  "catalysts": [
+    {
+      "when": "~2026-10 (estimated)",
+      "event": "Q3 2026 results",
+      "sensitivity": "Q3 EBITDA $115–125m guide, ROV pricing/utilization, H2 cash conversion"
+    },
+    {
+      "when": "~2027-02 (estimated)",
+      "event": "FY2026 results / 2027 outlook",
+      "sensitivity": "FY26 FCF $100–120m guide proof and 2027 earnings power"
+    },
+    {
+      "when": "2027",
+      "event": "Petrobras ROV contract commencements",
+      "sensitivity": "multi-year SSR deployment and utilized days"
+    },
+    {
+      "when": "H2 2026–2027",
+      "event": "MP order awards",
+      "sensitivity": "book-to-bill toward 1.0x and backlog stabilization"
+    },
+    {
+      "when": "ongoing",
+      "event": "ADTech funded award conversion",
+      "sensitivity": "growth plus margin quality"
+    },
+    {
+      "when": "2026–2027",
+      "event": "OI2 follow-on options",
+      "sensitivity": "repeatability of survey/new-technology revenue"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "promise": "history/economic definition/segment mix",
+      "status": "COMPLETE",
+      "h3_locator": "Main 0,3",
+      "appendix_locator": "Appendix A1"
+    },
+    {
+      "rc_id": "RC-002",
+      "promise": "value chain/profit pool/customer buying B1–B5",
+      "status": "COMPLETE",
+      "h3_locator": "Main 1",
+      "appendix_locator": "Appendix A2"
+    },
+    {
+      "rc_id": "RC-003",
+      "promise": "downcycle/current cycle/leading indicators",
+      "status": "COMPLETE",
+      "h3_locator": "Main 1,6",
+      "appendix_locator": "Appendix A2"
+    },
+    {
+      "rc_id": "RC-004",
+      "promise": "SSR 8Q ROV economics",
+      "status": "COMPLETE",
+      "h3_locator": "Main 3,4",
+      "appendix_locator": "Appendix A4"
+    },
+    {
+      "rc_id": "RC-005",
+      "promise": "fleet composition/age/upgrade + autonomous differentiation",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Main 3",
+      "appendix_locator": "Appendix A3 — fleet age/customer ROI ceiling"
+    },
+    {
+      "rc_id": "RC-006",
+      "promise": "SSR customer/contracts/region/renewal",
+      "status": "COMPLETE",
+      "h3_locator": "Main 3",
+      "appendix_locator": "Appendix A3"
+    },
+    {
+      "rc_id": "RC-007",
+      "promise": "MP backlog/B-B/order cadence/margin",
+      "status": "COMPLETE",
+      "h3_locator": "Main 3,4",
+      "appendix_locator": "Appendix A4"
+    },
+    {
+      "rc_id": "RC-008",
+      "promise": "OPG vessel/project/OI2 economics",
+      "status": "COMPLETE",
+      "h3_locator": "Main 3,4",
+      "appendix_locator": "Appendix A3"
+    },
+    {
+      "rc_id": "RC-009",
+      "promise": "IMDS role/margin",
+      "status": "COMPLETE",
+      "h3_locator": "Main 3,4",
+      "appendix_locator": "Appendix A3"
+    },
+    {
+      "rc_id": "RC-010",
+      "promise": "ADTech programs/contracts/adoption/backlog/margin/risk",
+      "status": "COMPLETE",
+      "h3_locator": "Main 3,4",
+      "appendix_locator": "Appendix A3"
+    },
+    {
+      "rc_id": "RC-011",
+      "promise": "job-based competition/moat/leakage",
+      "status": "COMPLETE",
+      "h3_locator": "Main 3",
+      "appendix_locator": "Appendix A3"
+    },
+    {
+      "rc_id": "RC-012",
+      "promise": "management measurable track record",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Main 2",
+      "appendix_locator": "Appendix A5 — pre-OII metrics ceiling"
+    },
+    {
+      "rc_id": "RC-013",
+      "promise": "comp/ownership/governance/capital allocation",
+      "status": "COMPLETE",
+      "h3_locator": "Main 2,4",
+      "appendix_locator": "Appendix A5"
+    },
+    {
+      "rc_id": "RC-014",
+      "promise": "3Y + latest 8Q financial ledger",
+      "status": "COMPLETE",
+      "h3_locator": "Main 4",
+      "appendix_locator": "Appendix A4"
+    },
+    {
+      "rc_id": "RC-015",
+      "promise": "OCF→FCF/WC/accounting quality",
+      "status": "COMPLETE",
+      "h3_locator": "Main 4",
+      "appendix_locator": "Appendix A6"
+    },
+    {
+      "rc_id": "RC-016",
+      "promise": "cash/debt/refi/leases/buyback/SBC/dilution",
+      "status": "COMPLETE",
+      "h3_locator": "Main 4,5",
+      "appendix_locator": "Appendix A6"
+    },
+    {
+      "rc_id": "RC-017",
+      "promise": "capacity/supply chain/regulation",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Main 1,3",
+      "appendix_locator": "Appendix A3 — rated capacity ceiling"
+    },
+    {
+      "rc_id": "RC-018",
+      "promise": "consensus/revisions/targets/positioning/valuation history",
+      "status": "COMPLETE WITH CEILING",
+      "h3_locator": "Main 0,5,6",
+      "appendix_locator": "Appendix A7 — fund-flow positioning ceiling"
+    },
+    {
+      "rc_id": "RC-019",
+      "promise": "scenario/reverse/SOTP/financing-dilution",
+      "status": "COMPLETE",
+      "h3_locator": "Main 5",
+      "appendix_locator": "Appendix A8"
+    },
+    {
+      "rc_id": "RC-020",
+      "promise": "risk/catalyst/KPI/tripwire/thesis break",
+      "status": "COMPLETE",
+      "h3_locator": "Main 6",
+      "appendix_locator": "Appendix A9"
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "VIS_ID": "VIS-001",
+      "FIGURE_TITLE": "매출 성장보다 빠른 EBITDA 회복",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.annual_3y + consensus.2026E",
+      "SOURCE_VERSION_OR_HASH": "6ac1d638cf4dd436",
+      "NARRATIVE_LOCATOR": "Ch4",
+      "TABLE_LOCATOR": "Table 4-1",
+      "CAPTION_LOCATOR": "Fig 4-1",
+      "RENDERED_ASSET_LOCATOR": "embedded:VIS-001",
+      "SOURCE_VALUES": {
+        "annual_3y": [
+          {
+            "fy": "2023",
+            "revenue": 2424.7,
+            "operating_income": 181.3,
+            "net_income": 97.4,
+            "adj_ebitda": 289.0,
+            "ocf": 210.0,
+            "capex": 100.7,
+            "fcf": 109.2,
+            "diluted_shares": 102.2
+          },
+          {
+            "fy": "2024",
+            "revenue": 2661.2,
+            "operating_income": 246.3,
+            "net_income": 147.5,
+            "adj_ebitda": 347.2,
+            "ocf": 203.2,
+            "capex": 107.1,
+            "fcf": 96.1,
+            "diluted_shares": 102.4
+          },
+          {
+            "fy": "2025",
+            "revenue": 2784.2,
+            "operating_income": 304.6,
+            "net_income": 353.8,
+            "adj_ebitda": 401.5,
+            "ocf": 318.9,
+            "capex": 111.0,
+            "fcf": 207.8,
+            "diluted_shares": 101.3
+          }
+        ],
+        "consensus_2026E": {
+          "fy": "2026E",
+          "revenue": 2951,
+          "ebitda": 420,
+          "margin": 14.2
+        }
+      },
+      "DISPLAY_VALUES": {
+        "annual_3y": [
+          {
+            "fy": "2023",
+            "revenue": 2424.7,
+            "operating_income": 181.3,
+            "net_income": 97.4,
+            "adj_ebitda": 289.0,
+            "ocf": 210.0,
+            "capex": 100.7,
+            "fcf": 109.2,
+            "diluted_shares": 102.2
+          },
+          {
+            "fy": "2024",
+            "revenue": 2661.2,
+            "operating_income": 246.3,
+            "net_income": 147.5,
+            "adj_ebitda": 347.2,
+            "ocf": 203.2,
+            "capex": 107.1,
+            "fcf": 96.1,
+            "diluted_shares": 102.4
+          },
+          {
+            "fy": "2025",
+            "revenue": 2784.2,
+            "operating_income": 304.6,
+            "net_income": 353.8,
+            "adj_ebitda": 401.5,
+            "ocf": 318.9,
+            "capex": 111.0,
+            "fcf": 207.8,
+            "diluted_shares": 101.3
+          }
+        ],
+        "consensus_2026E": {
+          "fy": "2026E",
+          "revenue": 2951,
+          "ebitda": 420,
+          "margin": 14.2
+        }
+      }
+    },
+    {
+      "VIS_ID": "VIS-002",
+      "FIGURE_TITLE": "최근 8개 분기: 외형보다 마진과 현금흐름의 변동성이 핵심",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.quarterly_8q",
+      "SOURCE_VERSION_OR_HASH": "31c44f52ea3149f9",
+      "NARRATIVE_LOCATOR": "Ch4",
+      "TABLE_LOCATOR": "Table 4-2",
+      "CAPTION_LOCATOR": "Fig 4-2",
+      "RENDERED_ASSET_LOCATOR": "embedded:VIS-002",
+      "SOURCE_VALUES": [
+        {
+          "quarter": "Q3 2024",
+          "revenue": 679.8,
+          "adj_ebitda": 98.1
+        },
+        {
+          "quarter": "Q4 2024",
+          "revenue": 713.5,
+          "adj_ebitda": 101.5
+        },
+        {
+          "quarter": "Q1 2025",
+          "revenue": 674.5,
+          "adj_ebitda": 96.7
+        },
+        {
+          "quarter": "Q2 2025",
+          "revenue": 698.2,
+          "adj_ebitda": 103.3
+        },
+        {
+          "quarter": "Q3 2025",
+          "revenue": 742.9,
+          "adj_ebitda": 111.1
+        },
+        {
+          "quarter": "Q4 2025",
+          "revenue": 668.6,
+          "adj_ebitda": 90.5
+        },
+        {
+          "quarter": "Q1 2026",
+          "revenue": 692.0,
+          "adj_ebitda": 83.7
+        },
+        {
+          "quarter": "Q2 2026",
+          "revenue": 768.0,
+          "adj_ebitda": 114.5
+        }
+      ],
+      "DISPLAY_VALUES": [
+        {
+          "quarter": "Q3 2024",
+          "revenue": 679.8,
+          "adj_ebitda": 98.1
+        },
+        {
+          "quarter": "Q4 2024",
+          "revenue": 713.5,
+          "adj_ebitda": 101.5
+        },
+        {
+          "quarter": "Q1 2025",
+          "revenue": 674.5,
+          "adj_ebitda": 96.7
+        },
+        {
+          "quarter": "Q2 2025",
+          "revenue": 698.2,
+          "adj_ebitda": 103.3
+        },
+        {
+          "quarter": "Q3 2025",
+          "revenue": 742.9,
+          "adj_ebitda": 111.1
+        },
+        {
+          "quarter": "Q4 2025",
+          "revenue": 668.6,
+          "adj_ebitda": 90.5
+        },
+        {
+          "quarter": "Q1 2026",
+          "revenue": 692.0,
+          "adj_ebitda": 83.7
+        },
+        {
+          "quarter": "Q2 2026",
+          "revenue": 768.0,
+          "adj_ebitda": 114.5
+        }
+      ]
+    },
+    {
+      "VIS_ID": "VIS-003",
+      "FIGURE_TITLE": "SSR의 핵심: 이용률보다 가격·믹스가 먼저 개선",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.quarterly_8q.rov",
+      "SOURCE_VERSION_OR_HASH": "1ef9d0d61e72e526",
+      "NARRATIVE_LOCATOR": "Ch1,Ch3",
+      "TABLE_LOCATOR": "Table A4",
+      "CAPTION_LOCATOR": "Fig 3-1",
+      "RENDERED_ASSET_LOCATOR": "embedded:VIS-003",
+      "SOURCE_VALUES": [
+        {
+          "quarter": "Q3 2024",
+          "rov_util": 69,
+          "rov_rev_day": 10576
+        },
+        {
+          "quarter": "Q4 2024",
+          "rov_util": 66,
+          "rov_rev_day": 10786
+        },
+        {
+          "quarter": "Q1 2025",
+          "rov_util": 67,
+          "rov_rev_day": 10788
+        },
+        {
+          "quarter": "Q2 2025",
+          "rov_util": 67,
+          "rov_rev_day": 11265
+        },
+        {
+          "quarter": "Q3 2025",
+          "rov_util": 65,
+          "rov_rev_day": 11254
+        },
+        {
+          "quarter": "Q4 2025",
+          "rov_util": 62,
+          "rov_rev_day": 11550
+        },
+        {
+          "quarter": "Q1 2026",
+          "rov_util": 61,
+          "rov_rev_day": 12401
+        },
+        {
+          "quarter": "Q2 2026",
+          "rov_util": 66,
+          "rov_rev_day": 11894
+        }
+      ],
+      "DISPLAY_VALUES": [
+        {
+          "quarter": "Q3 2024",
+          "rov_util": 69,
+          "rov_rev_day": 10576
+        },
+        {
+          "quarter": "Q4 2024",
+          "rov_util": 66,
+          "rov_rev_day": 10786
+        },
+        {
+          "quarter": "Q1 2025",
+          "rov_util": 67,
+          "rov_rev_day": 10788
+        },
+        {
+          "quarter": "Q2 2025",
+          "rov_util": 67,
+          "rov_rev_day": 11265
+        },
+        {
+          "quarter": "Q3 2025",
+          "rov_util": 65,
+          "rov_rev_day": 11254
+        },
+        {
+          "quarter": "Q4 2025",
+          "rov_util": 62,
+          "rov_rev_day": 11550
+        },
+        {
+          "quarter": "Q1 2026",
+          "rov_util": 61,
+          "rov_rev_day": 12401
+        },
+        {
+          "quarter": "Q2 2026",
+          "rov_util": 66,
+          "rov_rev_day": 11894
+        }
+      ]
+    },
+    {
+      "VIS_ID": "VIS-004",
+      "FIGURE_TITLE": "MP: 마진은 좋아졌지만 수주잔고는 줄고 있다",
+      "AUTHORITATIVE_SOURCE_BLOCK": "mp_history",
+      "SOURCE_VERSION_OR_HASH": "71ab8f3a0a694918",
+      "NARRATIVE_LOCATOR": "Ch3,Ch4",
+      "TABLE_LOCATOR": "Table A4",
+      "CAPTION_LOCATOR": "Fig 3-2",
+      "RENDERED_ASSET_LOCATOR": "embedded:VIS-004",
+      "SOURCE_VALUES": [
+        {
+          "period": "Q3 2024",
+          "backlog": 671,
+          "book_to_bill": 1.21
+        },
+        {
+          "period": "Q4 2024",
+          "backlog": 604,
+          "book_to_bill": 0.97
+        },
+        {
+          "period": "Q2 2025",
+          "backlog": 516,
+          "book_to_bill": 0.65
+        },
+        {
+          "period": "Q3 2025",
+          "backlog": 568,
+          "book_to_bill": 0.82
+        },
+        {
+          "period": "Q4 2025",
+          "backlog": 511,
+          "book_to_bill": null
+        },
+        {
+          "period": "Q1 2026",
+          "backlog": 492,
+          "book_to_bill": 0.91
+        },
+        {
+          "period": "Q2 2026",
+          "backlog": 445,
+          "book_to_bill": 0.88
+        }
+      ],
+      "DISPLAY_VALUES": [
+        {
+          "period": "Q3 2024",
+          "backlog": 671,
+          "book_to_bill": 1.21
+        },
+        {
+          "period": "Q4 2024",
+          "backlog": 604,
+          "book_to_bill": 0.97
+        },
+        {
+          "period": "Q2 2025",
+          "backlog": 516,
+          "book_to_bill": 0.65
+        },
+        {
+          "period": "Q3 2025",
+          "backlog": 568,
+          "book_to_bill": 0.82
+        },
+        {
+          "period": "Q4 2025",
+          "backlog": 511,
+          "book_to_bill": null
+        },
+        {
+          "period": "Q1 2026",
+          "backlog": 492,
+          "book_to_bill": 0.91
+        },
+        {
+          "period": "Q2 2026",
+          "backlog": 445,
+          "book_to_bill": 0.88
+        }
+      ]
+    },
+    {
+      "VIS_ID": "VIS-005",
+      "FIGURE_TITLE": "현금전환: 2026년은 하반기 회수가 필요하다",
+      "AUTHORITATIVE_SOURCE_BLOCK": "annual cash flow + H1 2026",
+      "SOURCE_VERSION_OR_HASH": "08932d5a84356387",
+      "NARRATIVE_LOCATOR": "Ch4",
+      "TABLE_LOCATOR": "Table 4-3",
+      "CAPTION_LOCATOR": "Fig 4-3",
+      "RENDERED_ASSET_LOCATOR": "embedded:VIS-005",
+      "SOURCE_VALUES": {
+        "annual": [
+          {
+            "fy": "2023",
+            "ocf": 210.0,
+            "fcf": 109.2
+          },
+          {
+            "fy": "2024",
+            "ocf": 203.2,
+            "fcf": 96.1
+          },
+          {
+            "fy": "2025",
+            "ocf": 318.9,
+            "fcf": 207.8
+          }
+        ],
+        "h1_2026": {
+          "ocf": -3.912,
+          "fcf": -44.497
+        }
+      },
+      "DISPLAY_VALUES": {
+        "annual": [
+          {
+            "fy": "2023",
+            "ocf": 210.0,
+            "fcf": 109.2
+          },
+          {
+            "fy": "2024",
+            "ocf": 203.2,
+            "fcf": 96.1
+          },
+          {
+            "fy": "2025",
+            "ocf": 318.9,
+            "fcf": 207.8
+          }
+        ],
+        "h1_2026": {
+          "ocf": -3.912,
+          "fcf": -44.497
+        }
+      }
+    },
+    {
+      "VIS_ID": "VIS-006",
+      "FIGURE_TITLE": "현재가가 요구하는 EBITDA",
+      "AUTHORITATIVE_SOURCE_BLOCK": "reverse_expectations",
+      "SOURCE_VERSION_OR_HASH": "f3c734c171574df1",
+      "NARRATIVE_LOCATOR": "Ch5",
+      "TABLE_LOCATOR": "Table 5-2",
+      "CAPTION_LOCATOR": "Fig 5-1",
+      "RENDERED_ASSET_LOCATOR": "embedded:VIS-006",
+      "SOURCE_VALUES": {
+        "current_ev_m": 4891.27,
+        "required_ebitda_by_multiple": [
+          {
+            "multiple": 9.0,
+            "required_ebitda": 543.4744444444445
+          },
+          {
+            "multiple": 9.5,
+            "required_ebitda": 514.8705263157896
+          },
+          {
+            "multiple": 10.0,
+            "required_ebitda": 489.12700000000007
+          },
+          {
+            "multiple": 11.0,
+            "required_ebitda": 444.6609090909091
+          }
+        ],
+        "references": {
+          "2026_mid": 420,
+          "2027_consensus": 456
+        }
+      },
+      "DISPLAY_VALUES": {
+        "current_ev_m": 4891.27,
+        "required_ebitda_by_multiple": [
+          {
+            "multiple": 9.0,
+            "required_ebitda": 543.4744444444445
+          },
+          {
+            "multiple": 9.5,
+            "required_ebitda": 514.8705263157896
+          },
+          {
+            "multiple": 10.0,
+            "required_ebitda": 489.12700000000007
+          },
+          {
+            "multiple": 11.0,
+            "required_ebitda": 444.6609090909091
+          }
+        ],
+        "references": {
+          "2026_mid": 420,
+          "2027_consensus": 456
+        }
+      }
+    },
+    {
+      "VIS_ID": "VIS-007",
+      "FIGURE_TITLE": "시나리오 가치와 현재가",
+      "AUTHORITATIVE_SOURCE_BLOCK": "scenarios",
+      "SOURCE_VERSION_OR_HASH": "fa0c859e18861dd8",
+      "NARRATIVE_LOCATOR": "Ch5,Ch6",
+      "TABLE_LOCATOR": "Table 5-1",
+      "CAPTION_LOCATOR": "Fig 5-2",
+      "RENDERED_ASSET_LOCATOR": "embedded:VIS-007",
+      "SOURCE_VALUES": {
+        "scenarios": [
+          {
+            "name": "Down",
+            "per_share_value": 34.65,
+            "probability": 0.25
+          },
+          {
+            "name": "Base",
+            "per_share_value": 47.8391959798995,
+            "probability": 0.5
+          },
+          {
+            "name": "Up",
+            "per_share_value": 60.85858585858586,
+            "probability": 0.25
+          }
+        ],
+        "current_price": 50.46,
+        "expected_value": 47.796744454596215
+      },
+      "DISPLAY_VALUES": {
+        "scenarios": [
+          {
+            "name": "Down",
+            "per_share_value": 34.65,
+            "probability": 0.25
+          },
+          {
+            "name": "Base",
+            "per_share_value": 47.8391959798995,
+            "probability": 0.5
+          },
+          {
+            "name": "Up",
+            "per_share_value": 60.85858585858586,
+            "probability": 0.25
+          }
+        ],
+        "current_price": 50.46,
+        "expected_value": 47.796744454596215
+      }
+    },
+    {
+      "VIS_ID": "VIS-008",
+      "FIGURE_TITLE": "Q2 실적 이후 재평가된 주가",
+      "AUTHORITATIVE_SOURCE_BLOCK": "price_history",
+      "SOURCE_VERSION_OR_HASH": "93c23c4e310ac799",
+      "NARRATIVE_LOCATOR": "Appendix A7",
+      "TABLE_LOCATOR": "Table A7",
+      "CAPTION_LOCATOR": "Fig A7-1",
+      "RENDERED_ASSET_LOCATOR": "embedded:VIS-008",
+      "SOURCE_VALUES": [
+        [
+          "2026-07-23",
+          48.02
+        ],
+        [
+          "2026-07-24",
+          52.73
+        ],
+        [
+          "2026-07-27",
+          52.17
+        ],
+        [
+          "2026-07-28",
+          47.99
+        ],
+        [
+          "2026-07-29",
+          46.58
+        ],
+        [
+          "2026-07-30",
+          47.64
+        ],
+        [
+          "2026-07-31",
+          48.78
+        ],
+        [
+          "2026-08-03",
+          48.72
+        ],
+        [
+          "2026-08-04",
+          50.43
+        ],
+        [
+          "2026-08-05",
+          48.07
+        ],
+        [
+          "2026-08-06",
+          49.25
+        ],
+        [
+          "2026-08-07",
+          47.97
+        ],
+        [
+          "2026-08-10",
+          51.12
+        ],
+        [
+          "2026-08-11",
+          50.76
+        ],
+        [
+          "2026-08-12",
+          51.02
+        ],
+        [
+          "2026-08-13",
+          51.35
+        ],
+        [
+          "2026-08-14",
+          52.2
+        ],
+        [
+          "2026-08-17",
+          54.11
+        ],
+        [
+          "2026-08-18",
+          53.1
+        ],
+        [
+          "2026-08-19",
+          52.69
+        ],
+        [
+          "2026-08-20",
+          52.49
+        ],
+        [
+          "2026-08-21",
+          53.0
+        ],
+        [
+          "2026-08-24",
+          50.46
+        ]
+      ],
+      "DISPLAY_VALUES": [
+        [
+          "2026-07-23",
+          48.02
+        ],
+        [
+          "2026-07-24",
+          52.73
+        ],
+        [
+          "2026-07-27",
+          52.17
+        ],
+        [
+          "2026-07-28",
+          47.99
+        ],
+        [
+          "2026-07-29",
+          46.58
+        ],
+        [
+          "2026-07-30",
+          47.64
+        ],
+        [
+          "2026-07-31",
+          48.78
+        ],
+        [
+          "2026-08-03",
+          48.72
+        ],
+        [
+          "2026-08-04",
+          50.43
+        ],
+        [
+          "2026-08-05",
+          48.07
+        ],
+        [
+          "2026-08-06",
+          49.25
+        ],
+        [
+          "2026-08-07",
+          47.97
+        ],
+        [
+          "2026-08-10",
+          51.12
+        ],
+        [
+          "2026-08-11",
+          50.76
+        ],
+        [
+          "2026-08-12",
+          51.02
+        ],
+        [
+          "2026-08-13",
+          51.35
+        ],
+        [
+          "2026-08-14",
+          52.2
+        ],
+        [
+          "2026-08-17",
+          54.11
+        ],
+        [
+          "2026-08-18",
+          53.1
+        ],
+        [
+          "2026-08-19",
+          52.69
+        ],
+        [
+          "2026-08-20",
+          52.49
+        ],
+        [
+          "2026-08-21",
+          53.0
+        ],
+        [
+          "2026-08-24",
+          50.46
+        ]
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "type": "Primary",
+      "title": "OII 2025 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/73756/000007375626000016/oii-20251231.htm"
+    },
+    {
+      "id": "S2",
+      "type": "Primary",
+      "title": "OII Q2 2026 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/73756/000007375626000136/oii-20260630.htm"
+    },
+    {
+      "id": "S3",
+      "type": "Primary",
+      "title": "OII 2026 Proxy Statement",
+      "url": "https://www.sec.gov/Archives/edgar/data/73756/000007375626000073/oii-20260331.htm"
+    },
+    {
+      "id": "S4",
+      "type": "Primary",
+      "title": "OII Q2 2026 Results",
+      "url": "https://investors.oceaneering.com/news/news-details/2026/Oceaneering-Reports-Second-Quarter-2026-Results/default.aspx"
+    },
+    {
+      "id": "S5",
+      "type": "Primary",
+      "title": "OII Q1 2026 Results",
+      "url": "https://investors.oceaneering.com/news/news-details/2026/Oceaneering-Reports-First-Quarter-2026-Results/default.aspx"
+    },
+    {
+      "id": "S6",
+      "type": "Primary",
+      "title": "OII FY2025 Results",
+      "url": "https://investors.oceaneering.com/news/news-details/2026/Oceaneering-Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx"
+    },
+    {
+      "id": "S7",
+      "type": "Primary",
+      "title": "OII Q3 2025 Results",
+      "url": "https://investors.oceaneering.com/news/news-details/2025/Oceaneering-Reports-Third-Quarter-2025-Results/default.aspx"
+    },
+    {
+      "id": "S8",
+      "type": "Primary",
+      "title": "OII Q2 2025 Results",
+      "url": "https://investors.oceaneering.com/news/news-details/2025/Oceaneering-Reports-Second-Quarter-2025-Results/default.aspx"
+    },
+    {
+      "id": "S9",
+      "type": "Primary",
+      "title": "OII Q1 2025 Results",
+      "url": "https://investors.oceaneering.com/news/news-details/2025/Oceaneering-Reports-First-Quarter-2025-Results/default.aspx"
+    },
+    {
+      "id": "S10",
+      "type": "Primary",
+      "title": "OII FY2024 Results",
+      "url": "https://investors.oceaneering.com/news/news-details/2025/Oceaneering-Reports-Fourth-Quarter-2024-and-Full-Year-2024-Results/default.aspx"
+    },
+    {
+      "id": "S11",
+      "type": "Primary",
+      "title": "OII Q3 2024 Results",
+      "url": "https://investors.oceaneering.com/news/news-details/2024/Oceaneering-Reports-Third-Quarter-2024-Results/default.aspx"
+    },
+    {
+      "id": "S12",
+      "type": "Primary",
+      "title": "Petrobras ROV contract (2026)",
+      "url": "https://www.oceaneering.com/oceaneering-secures-petrobras-contract-for-rov-services-offshore-brazil/"
+    },
+    {
+      "id": "S13",
+      "type": "Primary",
+      "title": "Petrobras $180m ROV contracts (2025)",
+      "url": "https://investors.oceaneering.com/news/news-details/2025/Oceaneering-Announces-180-Million-of-Subsea-Robotics-Contracts-with-Petrobras/default.aspx"
+    },
+    {
+      "id": "S14",
+      "type": "Primary",
+      "title": "Esso Angola ROV award",
+      "url": "https://investors.oceaneering.com/news/news-details/2025/Oceaneering-Awarded-Contract-by-Esso-Exploration-Angola-Block-15-Limited-for-ROV-Services-and-Integrated-Solutions/default.aspx"
+    },
+    {
+      "id": "S15",
+      "type": "Primary",
+      "title": "Offshore Egypt integrated installation award",
+      "url": "https://investors.oceaneering.com/news/news-details/2026/Oceaneering-Awarded-Integrated-Installation-Contract-for-Offshore-Egypt-Project/default.aspx"
+    },
+    {
+      "id": "S16",
+      "type": "Primary",
+      "title": "Ocean Intervention II survey award",
+      "url": "https://www.oceaneering.com/oceaneering-secures-multi-discipline-cross-regional-offshore-survey-contracts-for-ocean-intervention-ii/"
+    },
+    {
+      "id": "S17",
+      "type": "Primary",
+      "title": "Ocean Intervention II product page",
+      "url": "https://www.oceaneering.com/products/ocean-intervention-2/"
+    },
+    {
+      "id": "S18",
+      "type": "Primary",
+      "title": "DoD maritime mobility award",
+      "url": "https://investors.oceaneering.com/news/news-details/2025/Oceaneering-Announces-Department-of-Defense-Contract-Award/default.aspx"
+    },
+    {
+      "id": "S19",
+      "type": "Primary",
+      "title": "U.S. Navy support-equipment award",
+      "url": "https://investors.oceaneering.com/news/news-details/2025/Oceaneering-Announces-U-S--Navy-Contract-Award/default.aspx"
+    },
+    {
+      "id": "S20",
+      "type": "Industry primary",
+      "title": "TechnipFMC Q2 2026 Results",
+      "url": "https://www.technipfmc.com/en/investors/financial-news-releases/press-release/technipfmc-announces-second-quarter-2026-results/"
+    },
+    {
+      "id": "S21",
+      "type": "Industry primary",
+      "title": "Transocean Q2 2026 Results",
+      "url": "https://investor.deepwater.com/news-releases/news-release-details/transocean-ltd-reports-second-quarter-2026-results"
+    },
+    {
+      "id": "S22",
+      "type": "Industry primary",
+      "title": "Transocean Aug 2026 Fleet Status",
+      "url": "https://investor.deepwater.com/news-releases/news-release-details/transocean-ltd-provides-quarterly-fleet-status-report-40/"
+    },
+    {
+      "id": "S23",
+      "type": "Customer primary",
+      "title": "Petrobras 2026–30 Plan",
+      "url": "https://petrobras.com.br/documents/2677942/12513210/PN%2B2026-30_27nov_final_ing.pdf"
+    },
+    {
+      "id": "S24",
+      "type": "Secondary market",
+      "title": "OII historical price, Aug 24 2026 close",
+      "url": "https://www.investing.com/equities/oceanerring-international-historical-data"
+    },
+    {
+      "id": "S25",
+      "type": "Secondary consensus",
+      "title": "MarketScreener OII forward estimates",
+      "url": "https://www.marketscreener.com/quote/stock/OCEANEERING-INTERNATIONAL-13897/financials/"
+    },
+    {
+      "id": "S26",
+      "type": "Secondary consensus",
+      "title": "TipRanks OII analyst forecast/actions",
+      "url": "https://www.tipranks.com/stocks/oii/forecast"
+    }
+  ],
+  "price_history": [
+    [
+      "2026-07-23",
+      48.02
+    ],
+    [
+      "2026-07-24",
+      52.73
+    ],
+    [
+      "2026-07-27",
+      52.17
+    ],
+    [
+      "2026-07-28",
+      47.99
+    ],
+    [
+      "2026-07-29",
+      46.58
+    ],
+    [
+      "2026-07-30",
+      47.64
+    ],
+    [
+      "2026-07-31",
+      48.78
+    ],
+    [
+      "2026-08-03",
+      48.72
+    ],
+    [
+      "2026-08-04",
+      50.43
+    ],
+    [
+      "2026-08-05",
+      48.07
+    ],
+    [
+      "2026-08-06",
+      49.25
+    ],
+    [
+      "2026-08-07",
+      47.97
+    ],
+    [
+      "2026-08-10",
+      51.12
+    ],
+    [
+      "2026-08-11",
+      50.76
+    ],
+    [
+      "2026-08-12",
+      51.02
+    ],
+    [
+      "2026-08-13",
+      51.35
+    ],
+    [
+      "2026-08-14",
+      52.2
+    ],
+    [
+      "2026-08-17",
+      54.11
+    ],
+    [
+      "2026-08-18",
+      53.1
+    ],
+    [
+      "2026-08-19",
+      52.69
+    ],
+    [
+      "2026-08-20",
+      52.49
+    ],
+    [
+      "2026-08-21",
+      53.0
+    ],
+    [
+      "2026-08-24",
+      50.46
+    ]
+  ],
+  "qa": {
+    "RC_UNRESOLVED": 0,
+    "RC_H3_COVERAGE_RATE": 1.0,
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "VISUAL_SEMANTIC_PARITY": "PASS",
+    "VISUAL_RENDER_INSPECTION": "PASS",
+    "PDF_BOOKMARKS": "PASS",
+    "TOC_CLICKABLE": "PASS",
+    "HTML_SIDEBAR": "PASS",
+    "SEARCHABLE_TEXT": "PASS",
+    "ACCIDENTAL_SPARSE_PAGES": 0,
+    "PUBLISHING_ACCEPTANCE": "PASS"
+  }
+}

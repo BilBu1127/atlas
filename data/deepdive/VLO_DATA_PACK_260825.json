@@ -1,0 +1,996 @@
+{
+  "meta": {
+    "ticker": "VLO",
+    "company": "Valero Energy Corporation",
+    "exchange": "NYSE",
+    "T0": "2026-08-25T08:09:00+09:00",
+    "price_asof": "2026-08-24 close",
+    "filing_asof": "2026-07-30",
+    "consensus_asof": "2026-08-25 public snapshots",
+    "version": "DDOS v1.7",
+    "currency": "USD",
+    "current_price": 346.17,
+    "market_cap_usd_b": 99.67
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue_usd_m": 144766,
+        "net_income_attr_usd_m": 8835,
+        "diluted_eps": 24.93,
+        "adjusted_eps": 24.9,
+        "operating_cash_flow_usd_m": 9229,
+        "attributable_capital_investment_usd_m": null,
+        "shareholder_cash_returns_usd_m": null
+      },
+      {
+        "year": 2024,
+        "revenue_usd_m": 129881,
+        "net_income_attr_usd_m": 2770,
+        "diluted_eps": 8.58,
+        "adjusted_eps": 8.48,
+        "operating_cash_flow_usd_m": 6683,
+        "attributable_capital_investment_usd_m": 1888,
+        "shareholder_cash_returns_usd_m": 4259
+      },
+      {
+        "year": 2025,
+        "revenue_usd_m": 122687,
+        "net_income_attr_usd_m": 2348,
+        "diluted_eps": 7.57,
+        "adjusted_eps": 10.61,
+        "operating_cash_flow_usd_m": 5826,
+        "attributable_capital_investment_usd_m": 1797,
+        "shareholder_cash_returns_usd_m": 4003
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "Q3 2024",
+        "eps": 1.14,
+        "eps_basis": "GAAP",
+        "refining_op_income_usd_b": 0.57,
+        "refining_basis": "reported",
+        "rd_op_income_usd_b": 0.04,
+        "ethanol_op_income_usd_b": 0.15,
+        "throughput_mbd": 2.88
+      },
+      {
+        "quarter": "Q4 2024",
+        "eps": 0.64,
+        "eps_basis": "adjusted",
+        "refining_op_income_usd_b": 0.44,
+        "refining_basis": "reported",
+        "rd_op_income_usd_b": 0.17,
+        "ethanol_op_income_usd_b": 0.02,
+        "throughput_mbd": 3.0
+      },
+      {
+        "quarter": "Q1 2025",
+        "eps": 0.89,
+        "eps_basis": "adjusted",
+        "refining_op_income_usd_b": 0.61,
+        "refining_basis": "adjusted",
+        "rd_op_income_usd_b": -0.14,
+        "ethanol_op_income_usd_b": 0.02,
+        "throughput_mbd": 2.8
+      },
+      {
+        "quarter": "Q2 2025",
+        "eps": 2.28,
+        "eps_basis": "GAAP",
+        "refining_op_income_usd_b": 1.27,
+        "refining_basis": "reported",
+        "rd_op_income_usd_b": -0.08,
+        "ethanol_op_income_usd_b": 0.05,
+        "throughput_mbd": 2.9
+      },
+      {
+        "quarter": "Q3 2025",
+        "eps": 3.66,
+        "eps_basis": "adjusted",
+        "refining_op_income_usd_b": 1.67,
+        "refining_basis": "adjusted",
+        "rd_op_income_usd_b": -0.03,
+        "ethanol_op_income_usd_b": 0.18,
+        "throughput_mbd": 3.09
+      },
+      {
+        "quarter": "Q4 2025",
+        "eps": 3.82,
+        "eps_basis": "adjusted",
+        "refining_op_income_usd_b": 1.7,
+        "refining_basis": "adjusted_approx",
+        "rd_op_income_usd_b": 0.09,
+        "ethanol_op_income_usd_b": 0.12,
+        "throughput_mbd": 3.1
+      },
+      {
+        "quarter": "Q1 2026",
+        "eps": 4.22,
+        "eps_basis": "GAAP",
+        "refining_op_income_usd_b": 1.8,
+        "refining_basis": "reported_approx",
+        "rd_op_income_usd_b": 0.14,
+        "ethanol_op_income_usd_b": 0.09,
+        "throughput_mbd": 2.9
+      },
+      {
+        "quarter": "Q2 2026",
+        "eps": 12.54,
+        "eps_basis": "adjusted",
+        "refining_op_income_usd_b": 4.47,
+        "refining_basis": "reported",
+        "rd_op_income_usd_b": 0.72,
+        "ethanol_op_income_usd_b": 0.32,
+        "throughput_mbd": 3.0
+      }
+    ],
+    "h1_2026": {
+      "operating_cash_flow_usd_b": 6.97,
+      "buybacks_usd_b": 2.836,
+      "dividends_usd_b": 0.714,
+      "shareholder_returns_usd_b": 3.55,
+      "repurchased_shares_m": 11.34,
+      "attributable_capital_investment_guidance_usd_b": 1.7,
+      "sustaining_capex_guidance_usd_b": 1.4,
+      "growth_capex_guidance_usd_b": 0.3
+    },
+    "q2_2026": {
+      "adjusted_eps": 12.54,
+      "refining_op_income_usd_b": 4.47,
+      "rd_op_income_usd_b": 0.717,
+      "ethanol_op_income_usd_b": 0.318,
+      "cash_usd_b": 7.874,
+      "noncurrent_debt_and_finance_lease_usd_b": 10.422
+    },
+    "ceilings": [
+      "2023 attributable capital investments not carried in the latest 3Y comparison table",
+      "Some quarterly figures are approximate or adjusted where explicitly marked",
+      "Working-capital volatility prevents H1 OCF annualization"
+    ]
+  },
+  "industry": {
+    "us_operable_refining_capacity_2026_01_01_mbd": 18.2,
+    "us_capacity_yoy_change_kbd": "< -250",
+    "global_refined_product_demand_peak_year_iea": 2027,
+    "global_refined_product_demand_peak_mbd_iea": 86.3,
+    "new_refining_capacity_to_2030_mbd_iea": 4.2,
+    "closures_to_2030_mbd_iea": 1.6,
+    "benicia_status": "fully idled by end-April 2026",
+    "wilmingon_refinery_capacity_kbd": 85
+  },
+  "kpis": [
+    {
+      "name": "USGC diesel-Brent reference crack",
+      "unit": "USD/bbl",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": 43.52
+        }
+      ],
+      "current": 43.52,
+      "thresholds": {
+        "green": ">25",
+        "yellow": "18-25",
+        "red": "<18"
+      }
+    },
+    {
+      "name": "USGC gasoline-Brent reference crack",
+      "unit": "USD/bbl",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": ">13",
+        "yellow": "8-13",
+        "red": "<8"
+      }
+    },
+    {
+      "name": "VLO total refining throughput",
+      "unit": "mb/d",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": 3.0
+        }
+      ],
+      "current": 3.0,
+      "thresholds": {
+        "green": ">=3.0",
+        "yellow": "2.85-3.0",
+        "red": "<2.85"
+      }
+    },
+    {
+      "name": "Gulf Coast adjusted operating income per barrel",
+      "unit": "USD/bbl",
+      "history": [
+        {
+          "period": "Q1 2026",
+          "value": 8.7
+        },
+        {
+          "period": "Q2 2026",
+          "value": 17.38
+        }
+      ],
+      "current": 17.38,
+      "thresholds": {
+        "green": ">7",
+        "yellow": "4-7",
+        "red": "<4"
+      }
+    },
+    {
+      "name": "DGD operating income per gallon",
+      "unit": "USD/gal",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": ">0.30",
+        "yellow": "0-0.30",
+        "red": "<0"
+      }
+    },
+    {
+      "name": "Ethanol operating income per gallon",
+      "unit": "USD/gal",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": ">0.20",
+        "yellow": "0.05-0.20",
+        "red": "<0.05"
+      }
+    },
+    {
+      "name": "Share count YoY",
+      "unit": "%",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": "<-3",
+        "yellow": "-1 to -3",
+        "red": ">-1"
+      }
+    },
+    {
+      "name": "2027 EPS consensus",
+      "unit": "USD/share",
+      "history": [
+        {
+          "period": "2026-08-25 snapshot",
+          "value": 29.17
+        }
+      ],
+      "current": 29.17,
+      "thresholds": {
+        "green": ">=30",
+        "yellow": "24-30",
+        "red": "<24"
+      }
+    },
+    {
+      "name": "Wilmington status",
+      "unit": "qualitative",
+      "history": [],
+      "current": "unresolved",
+      "thresholds": {
+        "green": "clear value-accretive path",
+        "yellow": "unresolved",
+        "red": "material closure/cash-cost escalation"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.25,
+      "normalized_eps": 14.0,
+      "revenue_path": [
+        "product cracks normalize sharply",
+        "demand softens"
+      ],
+      "margin_path": [
+        "2024-2025-like crack regime",
+        "DGD profitability weakens"
+      ],
+      "fcf": [
+        3.5
+      ],
+      "normalized_attributable_fcf_usd_b": 3.5,
+      "diluted_shares": 284.0,
+      "normalized_pe": 9.5,
+      "per_share_value": 133.0
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "normalized_eps": 26.0,
+      "revenue_path": [
+        "record cracks normalize",
+        "U.S. rationalization supports a higher floor"
+      ],
+      "margin_path": [
+        "above 2024-2025 mid-cycle",
+        "DGD remains positive"
+      ],
+      "fcf": [
+        5.5
+      ],
+      "normalized_attributable_fcf_usd_b": 5.5,
+      "diluted_shares": 277.0,
+      "normalized_pe": 11.8,
+      "per_share_value": 307.0
+    },
+    {
+      "name": "Up",
+      "probability": 0.25,
+      "normalized_eps": 38.0,
+      "revenue_path": [
+        "product disruption persists",
+        "Gulf Coast export economics stay tight"
+      ],
+      "margin_path": [
+        "elevated mid-cycle",
+        "strong DGD economics"
+      ],
+      "fcf": [
+        8.0
+      ],
+      "normalized_attributable_fcf_usd_b": 8.0,
+      "diluted_shares": 270.0,
+      "normalized_pe": 11.2,
+      "per_share_value": 426.0
+    }
+  ],
+  "valuation": {
+    "mode": "Mode D - Cyclical / Commodity",
+    "core": 307.0,
+    "execution": null,
+    "ecosystem": null,
+    "drag": null,
+    "expected_value": 293.25,
+    "expected_irr": -0.139,
+    "expected_1y_total_return": -0.139,
+    "current_price": 346.17,
+    "annualized_dividend_assumption": 4.8,
+    "down_value": 133.0,
+    "base_value": 307.0,
+    "up_value": 426.0
+  },
+  "reverse_expectations": {
+    "spot_price": 346.17,
+    "required_eps_by_pe": [
+      {
+        "pe": 10.5,
+        "eps": 32.97
+      },
+      {
+        "pe": 11.5,
+        "eps": 30.1
+      },
+      {
+        "pe": 12.5,
+        "eps": 27.69
+      }
+    ],
+    "interpretation": "Spot price requires normalized EPS in the high-$20s to low-$30s depending on the normalized P/E."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "eps_public_range_context": "public snapshots",
+      "eps_public_avg_range": [
+        40.62,
+        43.42
+      ]
+    },
+    "fy2": {
+      "year": 2027,
+      "eps": 29.17,
+      "public_range": [
+        22.94,
+        39.35
+      ]
+    },
+    "revision_trend": "2026 estimates have risen with record product cracks; 2027 is the key normalization anchor.",
+    "ceiling": "public/free snapshots only; no full paid revision tape"
+  },
+  "stance": {
+    "zone": "Conditional interest / wait for a better entry price",
+    "current_action": "신규 매수보다 관망 우위",
+    "price_bands": {
+      "<230": "적극 관심",
+      "230-270": "관심 / 분할매수 검토",
+      "270-310": "관찰 / 보유 우위",
+      "310-340": "신규매수 비선호",
+      ">340": "경계 / 비중확대 자제"
+    },
+    "horizon": "12-24 months with 2027 normalized earnings as the key anchor"
+  },
+  "catalysts": [
+    {
+      "when": "Q3 2026",
+      "event": "St. Charles FCC optimization startup",
+      "sensitivity": "medium"
+    },
+    {
+      "when": "around 2026-10",
+      "event": "Q3 2026 earnings",
+      "sensitivity": "very high"
+    },
+    {
+      "when": "Q4 2026",
+      "event": "Middle East/Russia product-flow changes",
+      "sensitivity": "very high"
+    },
+    {
+      "when": "Q4 2026-Q1 2027",
+      "event": "Potential Wilmington strategic update",
+      "sensitivity": "medium"
+    },
+    {
+      "when": "2027-01",
+      "event": "2027 RFS/45Z operating year",
+      "sensitivity": "high"
+    },
+    {
+      "when": "Q1 2027",
+      "event": "Turnaround season / refining utilization",
+      "sensitivity": "high"
+    },
+    {
+      "when": "Q2 2027",
+      "event": "Summer driving season + 2027 consensus reset",
+      "sensitivity": "very high"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "§1.2, §1.4, §5"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "CEILING",
+      "h3_locator": "§1.4, §3.2"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "§1.1, §4.3"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "§1.5, §4.8, §6"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "CEILING",
+      "h3_locator": "§1.6, §4.4"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "§1.7, §4.5"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "§2"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "§1.3"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "§3.3"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "§4.1-4.2"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "§4.8"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "§2.2, §4.6-4.7"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "§2.1, §6.4"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "CEILING",
+      "h3_locator": "§5.4, §6.5"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "§1.2, §6.3"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "§5, §6"
+    }
+  ],
+  "primary_source_ceilings": [
+    {
+      "item": "Exact current portfolio Nelson Complexity Index",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "detail": "Latest primary filings do not disclose a company-wide current figure; asset-level process/logistics evidence used."
+    },
+    {
+      "item": "DGD real-time RIN/LCFS/45Z decomposition",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "detail": "Company discloses aggregate clean-fuel credit impacts but not complete product/facility-level split."
+    },
+    {
+      "item": "Full sell-side revision tape / denominator-normalized 13F flow history",
+      "status": "SECONDARY_CEILING",
+      "detail": "Paywalled/incomplete public data; only public consensus and positioning snapshots used."
+    }
+  ],
+  "sources": [
+    {
+      "id": "SRC-001",
+      "class": "primary",
+      "name": "Valero 2026 Q2 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1035002/000162828026050937/vlo-20260630.htm"
+    },
+    {
+      "id": "SRC-002",
+      "class": "primary",
+      "name": "Valero 2025 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1035002/000162828026011499/vlo-20251231.htm"
+    },
+    {
+      "id": "SRC-003",
+      "class": "primary",
+      "name": "Valero Q2 2026 earnings 8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1035002/000162828026050822/vlo-20260730.htm"
+    },
+    {
+      "id": "SRC-004",
+      "class": "primary",
+      "name": "Valero 2026 proxy",
+      "url": "https://www.sec.gov/Archives/edgar/data/1035002/000162828026019806/vlo-20260318.htm"
+    },
+    {
+      "id": "SRC-005",
+      "class": "primary",
+      "name": "Valero 2026-07-16 buyback authorization 8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1035002/000162828026048495/vlo-20260716.htm"
+    },
+    {
+      "id": "SRC-006",
+      "class": "primary",
+      "name": "EIA U.S. refining capacity decreased during 2025",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67807"
+    },
+    {
+      "id": "SRC-007",
+      "class": "primary_official",
+      "name": "IEA Oil Market Report - August 2026",
+      "url": "https://www.iea.org/reports/oil-market-report-august-2026"
+    },
+    {
+      "id": "SRC-008",
+      "class": "primary_official",
+      "name": "IEA Oil 2025 Executive Summary",
+      "url": "https://www.iea.org/reports/oil-2025/executive-summary"
+    },
+    {
+      "id": "SRC-009",
+      "class": "primary_official",
+      "name": "California Energy Commission - California Oil Refineries",
+      "url": "https://www.energy.ca.gov/data-reports/energy-almanac/californias-petroleum-market/californias-oil-refineries"
+    },
+    {
+      "id": "SRC-010",
+      "class": "primary_official",
+      "name": "EPA Final Renewable Fuel Standards for 2026 and 2027",
+      "url": "https://www.epa.gov/renewable-fuel-standard/final-renewable-fuel-standards-2026-and-2027"
+    },
+    {
+      "id": "SRC-011",
+      "class": "primary_official",
+      "name": "IRS Clean Fuel Production Credit",
+      "url": "https://www.irs.gov/credits-deductions/clean-fuel-production-credit"
+    },
+    {
+      "id": "SRC-012",
+      "class": "secondary",
+      "name": "StockAnalysis - VLO market/forecast snapshot",
+      "url": "https://stockanalysis.com/stocks/vlo/"
+    },
+    {
+      "id": "SRC-013",
+      "class": "secondary",
+      "name": "Public Barchart/Zacks consensus snapshots",
+      "url": null
+    },
+    {
+      "id": "SRC-014",
+      "class": "secondary",
+      "name": "Finviz public analyst target distribution",
+      "url": "https://finviz.com/quote.ashx?t=VLO"
+    },
+    {
+      "id": "SRC-015",
+      "class": "secondary",
+      "name": "MarketBeat short interest / ownership aggregation",
+      "url": "https://www.marketbeat.com/stocks/NYSE/VLO/"
+    }
+  ],
+  "as_of_registry": [
+    {
+      "item": "Price",
+      "as_of": "2026-08-24 close",
+      "value": "$346.17",
+      "source_class": "secondary market feed"
+    },
+    {
+      "item": "Latest 10-Q",
+      "as_of": "period 2026-06-30 / filed 2026-07-30",
+      "value": "Form 10-Q",
+      "source_class": "SEC primary"
+    },
+    {
+      "item": "Latest earnings 8-K",
+      "as_of": "2026-07-30",
+      "value": "Q2 2026",
+      "source_class": "SEC primary"
+    },
+    {
+      "item": "Consensus",
+      "as_of": "through mid/late Aug 2026",
+      "value": "public snapshots",
+      "source_class": "secondary ceiling"
+    },
+    {
+      "item": "Short interest",
+      "as_of": "2026-07-31",
+      "value": "9.10M / ~3.2% float",
+      "source_class": "public aggregation"
+    },
+    {
+      "item": "Industry current",
+      "as_of": "Aug 2026",
+      "value": "IEA/EIA/CEC/EPA/IRS",
+      "source_class": "official"
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "VIS_ID": "VIS-001",
+      "FIGURE_TITLE": "8개 분기 EPS: peak annualization을 경계해야 하는 이유",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.quarterly_8q",
+      "SOURCE_VALUES": [
+        {
+          "quarter": "Q3 2024",
+          "eps": 1.14
+        },
+        {
+          "quarter": "Q4 2024",
+          "eps": 0.64
+        },
+        {
+          "quarter": "Q1 2025",
+          "eps": 0.89
+        },
+        {
+          "quarter": "Q2 2025",
+          "eps": 2.28
+        },
+        {
+          "quarter": "Q3 2025",
+          "eps": 3.66
+        },
+        {
+          "quarter": "Q4 2025",
+          "eps": 3.82
+        },
+        {
+          "quarter": "Q1 2026",
+          "eps": 4.22
+        },
+        {
+          "quarter": "Q2 2026",
+          "eps": 12.54
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "54b63ddad3f4047c",
+      "DISPLAY_VALUES": [
+        {
+          "quarter": "Q3 2024",
+          "eps": 1.14
+        },
+        {
+          "quarter": "Q4 2024",
+          "eps": 0.64
+        },
+        {
+          "quarter": "Q1 2025",
+          "eps": 0.89
+        },
+        {
+          "quarter": "Q2 2025",
+          "eps": 2.28
+        },
+        {
+          "quarter": "Q3 2025",
+          "eps": 3.66
+        },
+        {
+          "quarter": "Q4 2025",
+          "eps": 3.82
+        },
+        {
+          "quarter": "Q1 2026",
+          "eps": 4.22
+        },
+        {
+          "quarter": "Q2 2026",
+          "eps": 12.54
+        }
+      ],
+      "NARRATIVE_LOCATOR": "§4.2",
+      "TABLE_LOCATOR": "§4.2 quarterly table",
+      "CAPTION_LOCATOR": "VIS-001 caption",
+      "RENDERED_ASSET_LOCATOR": "#vis-001",
+      "displayed_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-002",
+      "FIGURE_TITLE": "정유 영업이익의 분기별 변동성",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.quarterly_8q",
+      "SOURCE_VALUES": [
+        {
+          "quarter": "Q3 2024",
+          "value": 0.57
+        },
+        {
+          "quarter": "Q4 2024",
+          "value": 0.44
+        },
+        {
+          "quarter": "Q1 2025",
+          "value": 0.61
+        },
+        {
+          "quarter": "Q2 2025",
+          "value": 1.27
+        },
+        {
+          "quarter": "Q3 2025",
+          "value": 1.67
+        },
+        {
+          "quarter": "Q4 2025",
+          "value": 1.7
+        },
+        {
+          "quarter": "Q1 2026",
+          "value": 1.8
+        },
+        {
+          "quarter": "Q2 2026",
+          "value": 4.47
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "0958a5f918645e18",
+      "DISPLAY_VALUES": [
+        {
+          "quarter": "Q3 2024",
+          "value": 0.57
+        },
+        {
+          "quarter": "Q4 2024",
+          "value": 0.44
+        },
+        {
+          "quarter": "Q1 2025",
+          "value": 0.61
+        },
+        {
+          "quarter": "Q2 2025",
+          "value": 1.27
+        },
+        {
+          "quarter": "Q3 2025",
+          "value": 1.67
+        },
+        {
+          "quarter": "Q4 2025",
+          "value": 1.7
+        },
+        {
+          "quarter": "Q1 2026",
+          "value": 1.8
+        },
+        {
+          "quarter": "Q2 2026",
+          "value": 4.47
+        }
+      ],
+      "NARRATIVE_LOCATOR": "§4.2-4.3",
+      "TABLE_LOCATOR": "§4.2 quarterly table",
+      "CAPTION_LOCATOR": "VIS-002 caption",
+      "RENDERED_ASSET_LOCATOR": "#vis-002",
+      "displayed_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-003",
+      "FIGURE_TITLE": "Mode D 시나리오 가치 vs 현재 주가",
+      "AUTHORITATIVE_SOURCE_BLOCK": "scenarios + valuation.current_price",
+      "SOURCE_VALUES": {
+        "scenarios": [
+          {
+            "name": "Down",
+            "value": 133.0,
+            "probability": 0.25
+          },
+          {
+            "name": "Base",
+            "value": 307.0,
+            "probability": 0.5
+          },
+          {
+            "name": "Up",
+            "value": 426.0,
+            "probability": 0.25
+          }
+        ],
+        "current_price": 346.17,
+        "expected_value": 293.25
+      },
+      "SOURCE_VERSION_OR_HASH": "f5fa2a8ef507d5d1",
+      "DISPLAY_VALUES": {
+        "Down": 133,
+        "Base": 307,
+        "Expected": 293.25,
+        "Spot": 346.17,
+        "Up": 426
+      },
+      "NARRATIVE_LOCATOR": "§5.2-5.3",
+      "TABLE_LOCATOR": "§5.3 scenario table",
+      "CAPTION_LOCATOR": "VIS-003 caption",
+      "RENDERED_ASSET_LOCATOR": "#vis-003",
+      "displayed_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-004",
+      "FIGURE_TITLE": "현재 가격이 요구하는 정상화 EPS",
+      "AUTHORITATIVE_SOURCE_BLOCK": "reverse_expectations.required_eps_by_pe",
+      "SOURCE_VALUES": [
+        {
+          "pe": 10.5,
+          "eps": 32.97
+        },
+        {
+          "pe": 11.5,
+          "eps": 30.1
+        },
+        {
+          "pe": 12.5,
+          "eps": 27.69
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "2a1fff5cbeaaca4d",
+      "DISPLAY_VALUES": [
+        {
+          "pe": 10.5,
+          "eps": 32.97
+        },
+        {
+          "pe": 11.5,
+          "eps": 30.1
+        },
+        {
+          "pe": 12.5,
+          "eps": 27.69
+        }
+      ],
+      "NARRATIVE_LOCATOR": "§5.4",
+      "TABLE_LOCATOR": "§5.4 reverse-expectations list",
+      "CAPTION_LOCATOR": "VIS-004 caption",
+      "RENDERED_ASSET_LOCATOR": "#vis-004",
+      "displayed_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-005",
+      "FIGURE_TITLE": "3개년 cycle: 순이익과 영업현금흐름",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.annual_3y",
+      "SOURCE_VALUES": [
+        {
+          "year": 2023,
+          "net_income": 8835,
+          "ocf": 9229
+        },
+        {
+          "year": 2024,
+          "net_income": 2770,
+          "ocf": 6683
+        },
+        {
+          "year": 2025,
+          "net_income": 2348,
+          "ocf": 5826
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "d99978513f314f87",
+      "DISPLAY_VALUES": [
+        {
+          "year": 2023,
+          "net_income": 8835,
+          "ocf": 9229
+        },
+        {
+          "year": 2024,
+          "net_income": 2770,
+          "ocf": 6683
+        },
+        {
+          "year": 2025,
+          "net_income": 2348,
+          "ocf": 5826
+        }
+      ],
+      "NARRATIVE_LOCATOR": "§4.1",
+      "TABLE_LOCATOR": "§4.1 3Y table",
+      "CAPTION_LOCATOR": "VIS-005 caption",
+      "RENDERED_ASSET_LOCATOR": "#vis-005",
+      "displayed_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    }
+  ],
+  "parity": {
+    "REPORT_DATA_PACK": "EMITTED",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "FIGURE_NUMERICAL_PARITY": "PASS",
+    "VISUAL_DATA_LINEAGE": "PASS",
+    "VISUAL_SEMANTIC_PARITY": "PASS",
+    "STALE_VISUAL_ASSETS": 0,
+    "DECISION_VISUALS_TOTAL": 5,
+    "DECISION_VISUALS_PARITY_PASS": 5,
+    "RENDERED_VISUAL_PARITY_QA": "PASS"
+  }
+}

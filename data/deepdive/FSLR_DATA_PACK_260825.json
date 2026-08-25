@@ -1,0 +1,754 @@
+{
+  "meta": {
+    "ticker": "FSLR",
+    "company": "First Solar, Inc.",
+    "mode": "COMPANY_DEEP_DIVE",
+    "T0": "2026-08-25",
+    "timezone": "Asia/Seoul",
+    "version": "v1.7",
+    "price_asof": {
+      "date": "2026-08-24",
+      "close_usd": 208.31
+    },
+    "filing_asof": {
+      "date": "2026-07-30",
+      "form": "10-Q",
+      "period_end": "2026-06-30"
+    },
+    "transcript_asof": "2026-07-30",
+    "consensus_asof": "2026-08-18/2026-08-24",
+    "policy_asof": "2026-08-25",
+    "shares_outstanding": {
+      "date": "2026-07-24",
+      "shares": 107469788
+    },
+    "latest_filing_check": "PASS",
+    "rc_unresolved": 0
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue_b": 3.318602,
+        "cost_of_sales_b": 2.017923,
+        "gross_profit_b": 1.300679,
+        "gross_margin": 0.3919,
+        "opex_b": 0.450296,
+        "ocf_b": 0.602,
+        "capex_b": 1.387,
+        "simple_ocf_minus_capex_b": -0.785
+      },
+      {
+        "year": 2024,
+        "revenue_b": 4.206289,
+        "cost_of_sales_b": 2.348425,
+        "gross_profit_b": 1.857864,
+        "gross_margin": 0.4417,
+        "opex_b": 0.464559,
+        "ocf_b": 1.218,
+        "capex_b": 1.526,
+        "simple_ocf_minus_capex_b": -0.308,
+        "sold_gw": 14.1
+      },
+      {
+        "year": 2025,
+        "revenue_b": 5.219376,
+        "cost_of_sales_b": 3.099037,
+        "gross_profit_b": 2.120339,
+        "gross_margin": 0.4062,
+        "opex_b": 0.523475,
+        "ocf_b": 2.057105,
+        "capex_b": 0.869875,
+        "simple_ocf_minus_capex_b": 1.18723,
+        "sold_gw": 17.5
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "2024Q3",
+        "revenue_b": 0.887668,
+        "gross_profit_b": 0.445311,
+        "gross_margin": 0.5017,
+        "eps": 2.91
+      },
+      {
+        "quarter": "2024Q4",
+        "revenue_b": 1.514031,
+        "gross_profit_b": 0.567661,
+        "gross_margin": 0.3749,
+        "eps": 3.65,
+        "derived": true
+      },
+      {
+        "quarter": "2025Q1",
+        "revenue_b": 0.844568,
+        "gross_profit_b": 0.344403,
+        "gross_margin": 0.4078,
+        "eps": 1.95
+      },
+      {
+        "quarter": "2025Q2",
+        "revenue_b": 1.09717,
+        "gross_profit_b": 0.49985,
+        "gross_margin": 0.4556,
+        "eps": 3.18
+      },
+      {
+        "quarter": "2025Q3",
+        "revenue_b": 1.594856,
+        "gross_profit_b": 0.610745,
+        "gross_margin": 0.3829,
+        "eps": 4.24
+      },
+      {
+        "quarter": "2025Q4",
+        "revenue_b": 1.682782,
+        "gross_profit_b": 0.665341,
+        "gross_margin": 0.3954,
+        "eps": 4.84,
+        "derived": true
+      },
+      {
+        "quarter": "2026Q1",
+        "revenue_b": 1.04424,
+        "gross_profit_b": 0.486131,
+        "gross_margin": 0.4655,
+        "eps": 3.22
+      },
+      {
+        "quarter": "2026Q2",
+        "revenue_b": 1.056193,
+        "gross_profit_b": 0.605004,
+        "gross_margin": 0.5728,
+        "eps": 3.92
+      }
+    ],
+    "2026_guidance": {
+      "sold_gw_low": 17.0,
+      "sold_gw_high": 18.2,
+      "revenue_b_low": 4.9,
+      "revenue_b_high": 5.2,
+      "gross_profit_b_low": 2.4,
+      "gross_profit_b_high": 2.6,
+      "adjusted_ebitda_b_low": 2.6,
+      "adjusted_ebitda_b_high": 2.8,
+      "capex_b_low": 0.8,
+      "capex_b_high": 1.0,
+      "year_end_net_cash_b_low": 1.7,
+      "year_end_net_cash_b_high": 2.3,
+      "section45x_b_low": 2.1,
+      "section45x_b_high": 2.19
+    },
+    "unit_economics_2026_mid": {
+      "sold_gw": 17.6,
+      "revenue_b": 5.05,
+      "implied_asp_per_w": 0.28693,
+      "gross_profit_b": 2.5,
+      "gross_profit_per_w": 0.14205,
+      "section45x_b": 2.145,
+      "section45x_per_total_sold_w_equivalent": 0.12188,
+      "gross_profit_ex_45x_b": 0.355,
+      "gross_margin_ex_45x_simple": 0.0703,
+      "secondary_pre_45x_cost_per_w": 0.267,
+      "secondary_implied_pre_45x_spread_per_w": 0.02
+    },
+    "cash_quality": {
+      "h1_2026_ocf_b": -0.359767,
+      "q2_2026_net_cash_b": 1.7,
+      "earnings_quality_screen": "FLAGS_NOTED",
+      "flags": [
+        "45X concentration",
+        "working-capital timing",
+        "tariff refund/termination items",
+        "variable backlog consideration"
+      ]
+    },
+    "ceilings": [
+      "Some quarterly Q4 rows derived from annual minus 9M",
+      "Detailed quarterly pre-credit cost/W not consistently disclosed in primary filings"
+    ]
+  },
+  "backlog": [
+    {
+      "date": "2023-12-31",
+      "gw": 78.3
+    },
+    {
+      "date": "2024-12-31",
+      "gw": 68.5
+    },
+    {
+      "date": "2025-12-31",
+      "gw": 50.1,
+      "approximate": true
+    },
+    {
+      "date": "2026-06-30",
+      "gw": 45.1,
+      "aggregate_transaction_price_b": 13.6,
+      "implied_base_price_per_w": 0.30155
+    }
+  ],
+  "technology": {
+    "fslr_series7": {
+      "max_power_w": 550,
+      "max_module_efficiency": 0.197,
+      "pmax_temperature_coefficient_per_c": -0.0032,
+      "warranted_annual_degradation": 0.003,
+      "warranty_years": 30
+    },
+    "jinko_tiger_neo_3": {
+      "max_power_w": 670,
+      "max_module_efficiency": 0.248,
+      "pmax_temperature_coefficient_per_c": -0.0026,
+      "bifaciality_mid": 0.85,
+      "annual_degradation_after_year1": 0.0035
+    },
+    "longi_himo9": {
+      "max_power_w": 670,
+      "max_module_efficiency": 0.248,
+      "annual_degradation_year2_30": 0.0035
+    },
+    "ceiling": "No independent matched-site 2026 LCOE study comparing exact current products"
+  },
+  "kpis": [
+    {
+      "name": "U.S. new-booking ASP",
+      "unit": "$/W",
+      "current": null,
+      "thresholds": {
+        "green": ">=0.34 repeated",
+        "yellow": "0.30-0.34",
+        "red": "<0.30 repeated"
+      },
+      "frequency": "quarterly"
+    },
+    {
+      "name": "Backlog",
+      "unit": "GW",
+      "current": 45.1,
+      "history": [
+        78.3,
+        68.5,
+        50.1,
+        45.1
+      ],
+      "thresholds": {
+        "green": ">=45 and net bookings >= shipments",
+        "yellow": "35-45",
+        "red": "<35 or material debooking"
+      },
+      "frequency": "quarterly"
+    },
+    {
+      "name": "Book-to-ship",
+      "current": null,
+      "thresholds": {
+        "green": ">=1.0",
+        "yellow": "0.7-1.0",
+        "red": "<0.7 sustained"
+      },
+      "frequency": "quarterly"
+    },
+    {
+      "name": "Pre-45X gross spread",
+      "unit": "$/W",
+      "current": 0.02,
+      "basis": "2026 guide midpoint + secondary cost/W triangulation",
+      "thresholds": {
+        "green": ">=0.06",
+        "yellow": "0.02-0.06",
+        "red": "<=0.00"
+      },
+      "frequency": "semiannual/annual"
+    },
+    {
+      "name": "U.S. production 2027",
+      "unit": "GW",
+      "current": null,
+      "thresholds": {
+        "green": ">=14.9",
+        "yellow": "14.0-14.9",
+        "red": "<14.0"
+      },
+      "frequency": "quarterly/annual"
+    },
+    {
+      "name": "Series 7 warranty liability",
+      "unit": "USD million",
+      "current": 47,
+      "range": [
+        35,
+        70
+      ],
+      "thresholds": {
+        "green": "<=50 and falling",
+        "yellow": "50-70",
+        "red": ">70 or new systemic defect"
+      },
+      "frequency": "quarterly"
+    },
+    {
+      "name": "Working-capital conversion",
+      "current": "H1 2026 OCF -$0.36B",
+      "thresholds": {
+        "green": "meaningful 2H26/2027 unwind",
+        "yellow": "partial improvement",
+        "red": "receivables/inventory keep rising rapidly"
+      },
+      "frequency": "quarterly"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.25,
+      "sold_gw_2029": 19.0,
+      "asp_per_w_2029": 0.275,
+      "pre_45x_cost_per_w_2029": 0.255,
+      "pre_credit_spread_per_w_2029": 0.02,
+      "credit_capture_2029_b": 2.0,
+      "opex_2029_b": 0.8,
+      "eps_2029": 13.0,
+      "exit_pe": 7.75,
+      "per_share_value": 100.75,
+      "revenue_2029_b": 5.225,
+      "scenario_irr_3y": -0.215045,
+      "revenue_path": [
+        {
+          "year": 2026,
+          "value_b": 5.05,
+          "basis": "company_guidance_midpoint"
+        },
+        {
+          "year": 2029,
+          "value_b": 5.225,
+          "basis": "scenario_endpoint"
+        }
+      ],
+      "margin_path": [
+        {
+          "year": 2029,
+          "pre_credit_gross_spread_per_w": 0.02
+        }
+      ],
+      "fcf": [
+        {
+          "year": 2029,
+          "value_b": null,
+          "ceiling": "Mode D endpoint is EPS/per-share value; standalone FCF not separately forecast to avoid false precision"
+        }
+      ],
+      "diluted_shares_m": 108.0
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "sold_gw_2029": 23.0,
+      "asp_per_w_2029": 0.315,
+      "pre_45x_cost_per_w_2029": 0.245,
+      "pre_credit_spread_per_w_2029": 0.07,
+      "credit_capture_2029_b": 2.75,
+      "opex_2029_b": 0.82,
+      "eps_2029": 30.0,
+      "exit_pe": 10.0,
+      "per_share_value": 300.0,
+      "revenue_2029_b": 7.245,
+      "scenario_irr_3y": 0.129285,
+      "revenue_path": [
+        {
+          "year": 2026,
+          "value_b": 5.05,
+          "basis": "company_guidance_midpoint"
+        },
+        {
+          "year": 2029,
+          "value_b": 7.245,
+          "basis": "scenario_endpoint"
+        }
+      ],
+      "margin_path": [
+        {
+          "year": 2029,
+          "pre_credit_gross_spread_per_w": 0.07
+        }
+      ],
+      "fcf": [
+        {
+          "year": 2029,
+          "value_b": null,
+          "ceiling": "Mode D endpoint is EPS/per-share value; standalone FCF not separately forecast to avoid false precision"
+        }
+      ],
+      "diluted_shares_m": 108.0
+    },
+    {
+      "name": "Up",
+      "probability": 0.25,
+      "sold_gw_2029": 26.0,
+      "asp_per_w_2029": 0.34,
+      "pre_45x_cost_per_w_2029": 0.235,
+      "pre_credit_spread_per_w_2029": 0.105,
+      "credit_capture_2029_b": 2.9,
+      "opex_2029_b": 0.9,
+      "eps_2029": 40.0,
+      "exit_pe": 11.5,
+      "per_share_value": 460.0,
+      "revenue_2029_b": 8.84,
+      "scenario_irr_3y": 0.302215,
+      "revenue_path": [
+        {
+          "year": 2026,
+          "value_b": 5.05,
+          "basis": "company_guidance_midpoint"
+        },
+        {
+          "year": 2029,
+          "value_b": 8.84,
+          "basis": "scenario_endpoint"
+        }
+      ],
+      "margin_path": [
+        {
+          "year": 2029,
+          "pre_credit_gross_spread_per_w": 0.105
+        }
+      ],
+      "fcf": [
+        {
+          "year": 2029,
+          "value_b": null,
+          "ceiling": "Mode D endpoint is EPS/per-share value; standalone FCF not separately forecast to avoid false precision"
+        }
+      ],
+      "diluted_shares_m": 108.0
+    }
+  ],
+  "valuation": {
+    "mode": "Mode D — Cyclical / Commodity with differentiated-policy overlay",
+    "core": "Current contracted module business + U.S. capacity + statutory 45X through phase-down schedule",
+    "execution": "Capacity ramp, cost-down, booking ASP refill",
+    "ecosystem": 0,
+    "drag": "45X sunset, c-Si deflation, backlog runoff, policy/legal scope, WC/ramp risk",
+    "current_price": 208.31,
+    "expected_2029_value": 290.19,
+    "expected_irr_3y": 0.116836,
+    "pv_at_10pct": 218.02,
+    "pv_at_12pct": 206.55,
+    "bear_value": 100.75,
+    "base_value": 300.0,
+    "bull_value": 460.0,
+    "bull_bear_upside_downside_ratio": 2.34,
+    "hurdle_rate_reference": 0.12,
+    "stance_consistency": "PASS"
+  },
+  "reverse_expectations": {
+    "required_2029_price_for_10pct_irr": 277.26,
+    "assumed_exit_pe": 9.5,
+    "required_2029_eps": 29.19,
+    "operating_translation": {
+      "sold_gw": "~22-23+",
+      "new_booking_asp_per_w": "~0.31-0.32+",
+      "pre_45x_cost_per_w": "~0.24-0.25",
+      "credit_capture_2029": "mid-$2B+",
+      "dilution": "no major dilution"
+    },
+    "terminal_hinge": "Post-45X ASP-cost spread; roughly 6c/W vs 11c/W produces radically different 2033 earnings power"
+  },
+  "consensus": {
+    "rating": "Buy",
+    "analyst_count": 36,
+    "average_target_price": 273.54,
+    "fy1": {
+      "year": 2026,
+      "revenue_b": 5.04,
+      "eps": 17.62,
+      "eps_alt": 18.64
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_b": 5.92,
+      "eps": 23.11,
+      "eps_alt": 22.79
+    },
+    "revision_trend": "More constructive after Aug-2026 Section 232; policy upside increasingly in sell-side targets",
+    "short_interest": {
+      "date": "2026-07-31",
+      "shares_m": 10.237,
+      "percent_float": 9.56,
+      "days_to_cover": 5.3
+    }
+  },
+  "historical_valuation": {
+    "current_ttm_eps_proxy": 16.22,
+    "current_ttm_pe_at_price_asof": 12.8428,
+    "late_2023_to_mid_2026_positive_pe_range": [
+      10.74,
+      22.26
+    ],
+    "sample_median": 16.92,
+    "approx_percentile": 0.18,
+    "caveat": "Regime-specific sample; 45X/policy changes make percentile non-comparable across periods"
+  },
+  "stance": {
+    "zone": "WATCH / 조건부 관심",
+    "horizon": "3 years to 2029 valuation point",
+    "price_bands": {
+      "buy_zone": "<180",
+      "attractive_entry": "180-195",
+      "conditional_interest": "195-210",
+      "watch": "210-230",
+      "unattractive_without_new_evidence": "230-245",
+      "avoid_new_buy_or_trim": ">245"
+    },
+    "red_rule": "2 or more KPI RED signals trigger mandatory re-underwrite"
+  },
+  "catalysts": [
+    {
+      "when": "2026-10 (expected Q3 season; unconfirmed exact date)",
+      "event": "Q3 2026 results: bookings, sold GW, OCF",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2026-12-04",
+      "event": "Section 232 MIP/additional tariff effective",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2026-H2",
+      "event": "South Carolina phase 1 / finishing ramp",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027-Q1",
+      "event": "FY2026 results and FY2027 guide",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027-H1",
+      "event": "CuRe rollout evidence",
+      "sensitivity": "M"
+    },
+    {
+      "when": "2027-midyear",
+      "event": "South Carolina phase 2/ramp progress",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027-H1/H2",
+      "event": "OBBBA/FEOC/project qualification implementation evidence",
+      "sensitivity": "H"
+    }
+  ],
+  "falsification": [
+    "Post-Section-232 U.S. booking ASP repeatedly below $0.30/W",
+    "2027 U.S. production below 14GW with persistent underutilization/startup drag",
+    "Backlog below 35GW with sustained book-to-ship below 0.7",
+    "Working-capital/government receivable does not meaningfully unwind through 2027",
+    "Series 7 warranty exposure above $70M or a new systemic defect cohort",
+    "Pre-45X gross spread still near ~2c/W in 2028-29"
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "1.1,1.7"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "1.2-1.3,6.6"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1.4-1.6,5,A12-1"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.3,A7,A12-2"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "3.4-3.5"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "3.1-3.2,A5"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.6,A12-3"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "2.2,3.8,A8"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "3.8,A8"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "3.7,A7"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "2,A6"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "4.1-4.2,A3-A4"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "4.3,5.2,A10"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "4.3-4.5"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "4.6,5"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "1.1,4.1,5"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "0.5,5.7,A9"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE",
+      "h3_locator": "5,A10"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "COMPLETE",
+      "h3_locator": "6.6-6.9"
+    }
+  ],
+  "source_registry": {
+    "primary": [
+      {
+        "id": "P1",
+        "name": "First Solar Q2 2026 10-Q",
+        "url": "https://www.sec.gov/Archives/edgar/data/1274494/000127449426000170/fslr-20260630.htm"
+      },
+      {
+        "id": "P2",
+        "name": "First Solar Q2 2026 earnings release",
+        "url": "https://www.sec.gov/Archives/edgar/data/1274494/000127449426000169/ex991pressreleaseq2-2026.htm"
+      },
+      {
+        "id": "P3",
+        "name": "First Solar 2025 10-K",
+        "url": "https://www.sec.gov/Archives/edgar/data/1274494/000127449426000021/fslr-20251231.htm"
+      },
+      {
+        "id": "P5",
+        "name": "First Solar Series 7",
+        "url": "https://www.firstsolar.com/en/Products/Series-7"
+      },
+      {
+        "id": "P6",
+        "name": "EIA 2026 capacity additions",
+        "url": "https://www.eia.gov/todayinEnergy/detail.php?id=67205"
+      },
+      {
+        "id": "P7",
+        "name": "White House Aug 6 2026 Section 232 proclamation",
+        "url": "https://www.whitehouse.gov/presidential-actions/2026/08/adjusting-imports-of-polysilicon-and-its-derivatives-into-the-united-states/"
+      },
+      {
+        "id": "P8",
+        "name": "IRS 45X guidance",
+        "url": "https://www.eitc.irs.gov/pub/irs-irbs/irb24-03.pdf"
+      },
+      {
+        "id": "P9",
+        "name": "Jinko Tiger Neo 3.0",
+        "url": "https://www.jinkosolar.com/site/tigerneo_3"
+      },
+      {
+        "id": "P10",
+        "name": "LONGi Hi-MO 9 datasheet",
+        "url": "https://static.longi.com/GGS_LR_8_66_HYD_022_LR_8_66_HYD_630_670_M_V2_30_30_and_15_V4_1_pdf_EN_526da7cf78.pdf"
+      }
+    ],
+    "secondary": [
+      {
+        "id": "S1",
+        "name": "StockAnalysis consensus",
+        "url": "https://stockanalysis.com/stocks/fslr/forecast/"
+      },
+      {
+        "id": "S2",
+        "name": "MarketBeat short interest",
+        "url": "https://www.marketbeat.com/stocks/NASDAQ/FSLR/short-interest/"
+      },
+      {
+        "id": "S3",
+        "name": "BusinessQuant estimates",
+        "url": "https://businessquant.com/stocks/fslr/estimates"
+      },
+      {
+        "id": "S4",
+        "name": "Macrotrends P/E history",
+        "url": "https://www.macrotrends.net/stocks/charts/FSLR/first-solar/pe-ratio"
+      }
+    ]
+  },
+  "visual_data_source_registry": [
+    {
+      "visual": "Backlog trend",
+      "source_path": "backlog"
+    },
+    {
+      "visual": "3Y financials",
+      "source_path": "financials.annual_3y"
+    },
+    {
+      "visual": "8Q gross margin",
+      "source_path": "financials.quarterly_8q"
+    },
+    {
+      "visual": "Technology comparison",
+      "source_path": "technology"
+    },
+    {
+      "visual": "2029 scenarios",
+      "source_path": "scenarios"
+    },
+    {
+      "visual": "Price bands",
+      "source_path": "stance.price_bands"
+    },
+    {
+      "visual": "KPI tripwires",
+      "source_path": "kpis"
+    }
+  ],
+  "qa": {
+    "report_data_pack": "EMITTED",
+    "rc_h3_coverage_rate": 1.0,
+    "data_pack_report_parity": "PENDING_RENDER_QA"
+  }
+}

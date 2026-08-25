@@ -1,0 +1,939 @@
+{
+  "meta": {
+    "ticker": "TDW",
+    "company": "Tidewater Inc.",
+    "T0": "2026-08-24",
+    "price_asof": "2026-08-24 close",
+    "filing_asof": "2026-08-03 Form 10-Q for 2026-06-30",
+    "consensus_asof": "2026-08-24",
+    "version": "CLEAN DDOS Production v1.7",
+    "currency": "USD"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue_m": 1009.985,
+        "adj_ebitda_m": 386.7,
+        "avg_day_rate": 16802,
+        "gaap_ocf_m": 104.194,
+        "cash_ppe_m": 45.852,
+        "owner_cash_proxy_m": 58.342,
+        "company_fcf_m": 111.4
+      },
+      {
+        "year": 2024,
+        "revenue_m": 1345.835,
+        "adj_ebitda_m": 559.6,
+        "avg_day_rate": 21273,
+        "gaap_ocf_m": 282.472,
+        "cash_ppe_m": 27.58,
+        "owner_cash_proxy_m": 254.892,
+        "company_fcf_m": 331.0
+      },
+      {
+        "year": 2025,
+        "revenue_m": 1352.786,
+        "adj_ebitda_m": 598.1,
+        "avg_day_rate": 22573,
+        "gaap_ocf_m": 379.108,
+        "cash_ppe_m": 25.761,
+        "owner_cash_proxy_m": 353.347,
+        "company_fcf_m": 426.0
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "Q3 2024",
+        "revenue_m": 340.4,
+        "adj_ebitda_m": 142.561,
+        "company_fcf_m": 66.99,
+        "avg_day_rate": 22275,
+        "active_utilization": 0.762
+      },
+      {
+        "quarter": "Q4 2024",
+        "revenue_m": 345.1,
+        "adj_ebitda_m": 138.392,
+        "company_fcf_m": 107.025,
+        "avg_day_rate": 22236,
+        "active_utilization": 0.777
+      },
+      {
+        "quarter": "Q1 2025",
+        "revenue_m": 333.444,
+        "adj_ebitda_m": 154.179,
+        "company_fcf_m": 94.664,
+        "avg_day_rate": 22303,
+        "active_utilization": 0.784
+      },
+      {
+        "quarter": "Q2 2025",
+        "revenue_m": 341.431,
+        "adj_ebitda_m": 162.98,
+        "company_fcf_m": 97.541,
+        "avg_day_rate": 23166,
+        "active_utilization": 0.764
+      },
+      {
+        "quarter": "Q3 2025",
+        "revenue_m": 341.113,
+        "adj_ebitda_m": 137.926,
+        "company_fcf_m": 82.659,
+        "avg_day_rate": 22798,
+        "active_utilization": 0.785
+      },
+      {
+        "quarter": "Q4 2025",
+        "revenue_m": 336.798,
+        "adj_ebitda_m": 143.052,
+        "company_fcf_m": 151.175,
+        "avg_day_rate": 22044,
+        "active_utilization": 0.817
+      },
+      {
+        "quarter": "Q1 2026",
+        "revenue_m": 326.222,
+        "adj_ebitda_m": 129.323,
+        "company_fcf_m": 34.425,
+        "avg_day_rate": 22283,
+        "active_utilization": 0.806
+      },
+      {
+        "quarter": "Q2 2026",
+        "revenue_m": 342.287,
+        "adj_ebitda_m": 133.831,
+        "company_fcf_m": 64.364,
+        "avg_day_rate": 22938,
+        "active_utilization": 0.814
+      }
+    ],
+    "h1_2026": {
+      "gaap_ocf_m": 86.2,
+      "working_capital_use_m": 41.5,
+      "drydock_survey_cash_m": 59.7,
+      "cash_ppe_m": 29.8,
+      "owner_cash_proxy_m": 56.4
+    },
+    "ceilings": [
+      "Independent shipyard quote set insufficient to reproduce management's exact newbuild break-even economics.",
+      "2025 GAAP net income includes a large deferred tax benefit and is not used as normalized earnings."
+    ]
+  },
+  "kpis": [
+    {
+      "name": "Realized day rate",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": 22938
+        }
+      ],
+      "current": 22938,
+      "thresholds": {
+        "green": ">25500 by H1 2027",
+        "yellow": "23500-25500",
+        "red": "<23500"
+      }
+    },
+    {
+      "name": "Leading-edge term rate",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": 24341
+        }
+      ],
+      "current": 24341,
+      "thresholds": {
+        "green": ">27000",
+        "yellow": "24000-27000",
+        "red": "below realized rate"
+      }
+    },
+    {
+      "name": "Active utilization",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": 0.814
+        }
+      ],
+      "current": 0.814,
+      "thresholds": {
+        "green": ">=0.82 after drydock normalization",
+        "yellow": "0.78-0.82",
+        "red": "<0.78"
+      }
+    },
+    {
+      "name": "Vessel operating margin",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": 0.469
+        }
+      ],
+      "current": 0.469,
+      "thresholds": {
+        "green": ">=0.50 normalized",
+        "yellow": "0.46-0.50",
+        "red": "<0.46"
+      }
+    },
+    {
+      "name": "Owner-cash annual run-rate",
+      "history": [
+        {
+          "period": "H1 2026 proxy",
+          "value_m": 56.4
+        }
+      ],
+      "current": 56.4,
+      "thresholds": {
+        "green": ">350m annual run-rate",
+        "yellow": "200-350m",
+        "red": "<200m"
+      }
+    },
+    {
+      "name": "Wilson closing/integration",
+      "history": [],
+      "current": "expected around 2026-09-01",
+      "thresholds": {
+        "green": "close and on-plan integration",
+        "yellow": "<1 quarter delay",
+        "red": ">1 quarter delay/material issue"
+      }
+    },
+    {
+      "name": "Net leverage post-Wilson",
+      "history": [],
+      "current": "management expectation ~0.8x",
+      "thresholds": {
+        "green": "<1.0x",
+        "yellow": "1.0-1.5x",
+        "red": ">1.5x"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.25,
+      "active_vessels": [
+        216,
+        214,
+        210
+      ],
+      "utilization": [
+        0.78,
+        0.76,
+        0.75
+      ],
+      "avg_day_rate": [
+        24500,
+        23500,
+        22500
+      ],
+      "revenue_path_m": [
+        1506.6,
+        1395.0,
+        1293.5
+      ],
+      "margin_path": [
+        0.465,
+        0.44,
+        0.42
+      ],
+      "ebitda_path_m": [
+        555.6,
+        468.8,
+        398.3
+      ],
+      "fcf": [
+        175.6,
+        103.8,
+        38.3
+      ],
+      "diluted_shares": 50.0,
+      "exit_multiple": 5.0,
+      "exit_net_debt_m": 250.0,
+      "per_share_value": 41.88
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "active_vessels": [
+        221,
+        221,
+        220
+      ],
+      "utilization": [
+        0.81,
+        0.82,
+        0.81
+      ],
+      "avg_day_rate": [
+        26500,
+        29250,
+        30000
+      ],
+      "revenue_path_m": [
+        1731.5,
+        1934.8,
+        1951.3
+      ],
+      "margin_path": [
+        0.52,
+        0.54,
+        0.54
+      ],
+      "ebitda_path_m": [
+        755.4,
+        894.8,
+        898.7
+      ],
+      "fcf": [
+        375.4,
+        484.8,
+        473.7
+      ],
+      "diluted_shares": 49.0,
+      "exit_multiple": 6.0,
+      "exit_net_debt_m": 0.0,
+      "per_share_value": 109.56
+    },
+    {
+      "name": "Bull",
+      "probability": 0.25,
+      "active_vessels": [
+        223,
+        223,
+        223
+      ],
+      "utilization": [
+        0.83,
+        0.84,
+        0.84
+      ],
+      "avg_day_rate": [
+        28000,
+        32500,
+        33500
+      ],
+      "revenue_path_m": [
+        1891.6,
+        2222.1,
+        2290.5
+      ],
+      "margin_path": [
+        0.545,
+        0.57,
+        0.57
+      ],
+      "ebitda_path_m": [
+        885.9,
+        1116.6,
+        1150.6
+      ],
+      "fcf": [
+        495.9,
+        681.6,
+        690.6
+      ],
+      "diluted_shares": 47.5,
+      "exit_multiple": 7.0,
+      "exit_net_debt_m": -100.0,
+      "per_share_value": 166.66
+    }
+  ],
+  "valuation": {
+    "mode": "Mode D Cyclical with Mode F Asset/NAV cross-check",
+    "core": 109.56,
+    "execution": 0.0,
+    "ecosystem": 0.0,
+    "drag": null,
+    "expected_value": 106.915,
+    "expected_irr": 0.056436,
+    "current_price": 94.06,
+    "horizon_months": 28,
+    "bear_value": 41.88,
+    "base_value": 109.56,
+    "bull_value": 166.66,
+    "upside_downside_ratio": 1.3913,
+    "pro_forma_equity_value_m": 4686.7,
+    "pro_forma_ev_m": 5239.9,
+    "pro_forma_net_debt_m": 553.1,
+    "nav_cross_check_per_share_range": [
+      72,
+      100
+    ]
+  },
+  "reverse_expectations": {
+    "assumptions": {
+      "pro_forma_ev_m": 5239.9,
+      "active_vessels": 221,
+      "utilization": 0.81,
+      "gross_margin": 0.52,
+      "g_and_a_m": 145
+    },
+    "table": [
+      {
+        "normalized_ev_ebitda": 5.5,
+        "required_ebitda_m": 952.7,
+        "required_revenue_m": 2111.0,
+        "implied_avg_day_rate": 32310
+      },
+      {
+        "normalized_ev_ebitda": 6.0,
+        "required_ebitda_m": 873.3,
+        "required_revenue_m": 1958.3,
+        "implied_avg_day_rate": 29970
+      },
+      {
+        "normalized_ev_ebitda": 6.5,
+        "required_ebitda_m": 806.1,
+        "required_revenue_m": 1829.1,
+        "implied_avg_day_rate": 27990
+      },
+      {
+        "normalized_ev_ebitda": 7.0,
+        "required_ebitda_m": 748.6,
+        "required_revenue_m": 1718.4,
+        "implied_avg_day_rate": 26300
+      },
+      {
+        "normalized_ev_ebitda": 7.5,
+        "required_ebitda_m": 698.65,
+        "required_revenue_m": 1622.4,
+        "implied_avg_day_rate": 24830
+      }
+    ],
+    "interpretation": "At 6.5x normalized EV/EBITDA, current price requires roughly $28.0k/day average rate, about $5.1k/day above Q2 2026 realized rate."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_m": 1443,
+      "ebitda_m": 581,
+      "eps": 2.86
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_m": 1688,
+      "ebitda_m": 737,
+      "eps": 5.97
+    },
+    "revision_trend": "Post-Q2 market expectations already embed a material 2027 earnings step-up; average public price target is roughly $91 with median near $94."
+  },
+  "positioning": {
+    "short_interest_date": "2026-07-31",
+    "short_shares_m": 6.463672,
+    "short_float_pct": 0.1381,
+    "days_to_cover": 12.1,
+    "price_target_mean": 90.86,
+    "price_target_median": 94,
+    "price_target_low": 68,
+    "price_target_high": 117
+  },
+  "stance": {
+    "zone": "WATCH / price-sensitive conditional interest",
+    "price_bands": {
+      "<=80": "적극 관심",
+      "80-85": "조건부 관심",
+      "85-100": "관찰",
+      " >100": "신규매수 회피 unless Bull KPI confirmation"
+    },
+    "horizon": "through 2028 year-end",
+    "entry_return_table": [
+      {
+        "price": 80,
+        "expected_irr": 0.132343,
+        "bull_bear_upside_downside": 2.2733
+      },
+      {
+        "price": 82,
+        "expected_irr": 0.120423,
+        "bull_bear_upside_downside": 2.1102
+      },
+      {
+        "price": 85,
+        "expected_irr": 0.103301,
+        "bull_bear_upside_downside": 1.8938
+      },
+      {
+        "price": 90,
+        "expected_irr": 0.076603,
+        "bull_bear_upside_downside": 1.5931
+      },
+      {
+        "price": 94.06,
+        "expected_irr": 0.056436,
+        "bull_bear_upside_downside": 1.3913
+      },
+      {
+        "price": 100,
+        "expected_irr": 0.029071,
+        "bull_bear_upside_downside": 1.1469
+      }
+    ],
+    "red_rule": "2 or more RED KPIs => mandatory re-underwrite"
+  },
+  "catalysts": [
+    {
+      "when": "around 2026-09-01",
+      "event": "Wilson closing",
+      "sensitivity": "high"
+    },
+    {
+      "when": "2026 Q3 earnings",
+      "event": "Drydock-heavy quarter: utilization and margin normalization",
+      "sensitivity": "high"
+    },
+    {
+      "when": "2026 Q4 / year-end",
+      "event": "2027 contract rollover and leading-edge pricing",
+      "sensitivity": "very high"
+    },
+    {
+      "when": "2027 H1",
+      "event": "Wilson low-rate contract rollover / Brazil EBITDA uplift",
+      "sensitivity": "very high"
+    },
+    {
+      "when": "2027 H1",
+      "event": "Capital allocation after acquisition",
+      "sensitivity": "medium"
+    },
+    {
+      "when": "2027",
+      "event": "Petrobras/FPSO project progression and OSV tender conversion",
+      "sensitivity": "high"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2.1"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1.1~1.5"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2.2"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.1~3.2"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.1.3~1.4"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.2~3.3"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1.4, Ch.3.4"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2.3, Ch.4.5"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1.3, Ch.1.5, Ch.3.3"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.1~3.2, Ch.4.2"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.6"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.0.3, Ch.6.1"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5"
+    }
+  ],
+  "source_registry": [
+    {
+      "source_id": "S1",
+      "name": "Tidewater Q2 2026 Form 10-Q",
+      "as_of": "2026-06-30",
+      "url": "https://www.sec.gov/Archives/edgar/data/98222/000143774926025450/tdw20260630_10q.htm",
+      "class": "primary"
+    },
+    {
+      "source_id": "S2",
+      "name": "Tidewater Q2 2026 Earnings Release",
+      "as_of": "2026-08-03",
+      "url": "https://www.sec.gov/Archives/edgar/data/98222/000143774926025451/ex_956944.htm",
+      "class": "primary"
+    },
+    {
+      "source_id": "S3",
+      "name": "Wilson Sons transaction presentation / 8-K exhibit",
+      "as_of": "2026-03-09",
+      "url": "https://www.sec.gov/Archives/edgar/data/98222/000110465926018759/tm266868d1_ex99-2.htm",
+      "class": "primary"
+    },
+    {
+      "source_id": "S4",
+      "name": "Tidewater Wilson acquisition release",
+      "as_of": "2026-03-09",
+      "url": "https://investor.tdw.com/news/news-details/2026/Tidewater-Announces-the-All-Cash-Acquisition-of-Wilson-Sons-Ultratug-Offshore/default.aspx",
+      "class": "primary"
+    },
+    {
+      "source_id": "S5",
+      "name": "ANTAQ Afretamento FAQ / Circularização",
+      "as_of": "retrieved 2026-08-25",
+      "url": "https://www.gov.br/antaq/pt-br/assuntos/navegacao/afretamento/perguntas-frequentes-afretamento",
+      "class": "primary regulator"
+    },
+    {
+      "source_id": "S6",
+      "name": "ANTAQ Resolução 129/2025",
+      "as_of": "2025-06-10",
+      "url": "https://juris.antaq.gov.br/index.php/2025/06/10/129-2025/",
+      "class": "primary regulator"
+    },
+    {
+      "source_id": "S7",
+      "name": "Petrobras Business Plan 2026-2030",
+      "as_of": "2025-11-27",
+      "url": "https://agencia.petrobras.com.br/en/w/negocio/petrobras-aprova-plano-de-neg%C3%B3cios-2026-2030",
+      "class": "primary customer"
+    },
+    {
+      "source_id": "S8",
+      "name": "Tidewater quarterly results archive",
+      "as_of": "2026-08-03",
+      "url": "https://investor.tdw.com/financial-information/quarterly-results/default.aspx",
+      "class": "primary"
+    },
+    {
+      "source_id": "S9",
+      "name": "Tidewater SEC filings archive",
+      "as_of": "2026-08-03",
+      "url": "https://investor.tdw.com/financial-information/sec-filings/default.aspx",
+      "class": "primary"
+    },
+    {
+      "source_id": "S10",
+      "name": "StockAnalysis TDW forecast / ratios",
+      "as_of": "2026-08-24 retrieval",
+      "url": "https://stockanalysis.com/stocks/tdw/",
+      "class": "secondary market data"
+    },
+    {
+      "source_id": "S11",
+      "name": "Boursorama / FactSet consensus",
+      "as_of": "2026-08-24",
+      "url": "https://www.boursorama.com/cours/consensus/TDW/",
+      "class": "secondary consensus"
+    },
+    {
+      "source_id": "S12",
+      "name": "MarketBeat TDW short interest",
+      "as_of": "2026-07-31",
+      "url": "https://www.marketbeat.com/stocks/NYSE/TDW/short-interest/",
+      "class": "secondary market data"
+    },
+    {
+      "source_id": "S13",
+      "name": "SEACOR Marine Q2 2026 public filing/release",
+      "as_of": "2026 Q2",
+      "url": null,
+      "class": "competitor primary cross-check"
+    },
+    {
+      "source_id": "S14",
+      "name": "TDW historical price",
+      "as_of": "2026-08-24",
+      "url": "https://ca.investing.com/equities/tidewater-inc.-historical-data",
+      "class": "secondary market data"
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "VIS_ID": "VIS-001",
+      "FIGURE_TITLE": "3개년 Revenue / EBITDA / Owner-cash proxy",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.annual_3y",
+      "SOURCE_VALUES": [
+        {
+          "year": 2023,
+          "revenue_m": 1009.985,
+          "adj_ebitda_m": 386.7,
+          "avg_day_rate": 16802,
+          "gaap_ocf_m": 104.194,
+          "cash_ppe_m": 45.852,
+          "owner_cash_proxy_m": 58.342,
+          "company_fcf_m": 111.4
+        },
+        {
+          "year": 2024,
+          "revenue_m": 1345.835,
+          "adj_ebitda_m": 559.6,
+          "avg_day_rate": 21273,
+          "gaap_ocf_m": 282.472,
+          "cash_ppe_m": 27.58,
+          "owner_cash_proxy_m": 254.892,
+          "company_fcf_m": 331.0
+        },
+        {
+          "year": 2025,
+          "revenue_m": 1352.786,
+          "adj_ebitda_m": 598.1,
+          "avg_day_rate": 22573,
+          "gaap_ocf_m": 379.108,
+          "cash_ppe_m": 25.761,
+          "owner_cash_proxy_m": 353.347,
+          "company_fcf_m": 426.0
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "d7322d655e3c1cac",
+      "DISPLAY_VALUES": "generated from authoritative block",
+      "NARRATIVE_LOCATOR": "Ch.4.1",
+      "TABLE_LOCATOR": "Ch.4.1",
+      "CAPTION_LOCATOR": "VIS-001",
+      "RENDERED_ASSET_LOCATOR": "HTML inline SVG / PDF rendered page"
+    },
+    {
+      "VIS_ID": "VIS-002",
+      "FIGURE_TITLE": "최근 8분기 Day Rate와 Active Utilization",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.quarterly_8q",
+      "SOURCE_VALUES": [
+        {
+          "q": "Q3 2024",
+          "rate": 22275,
+          "util": 0.762
+        },
+        {
+          "q": "Q4 2024",
+          "rate": 22236,
+          "util": 0.777
+        },
+        {
+          "q": "Q1 2025",
+          "rate": 22303,
+          "util": 0.784
+        },
+        {
+          "q": "Q2 2025",
+          "rate": 23166,
+          "util": 0.764
+        },
+        {
+          "q": "Q3 2025",
+          "rate": 22798,
+          "util": 0.785
+        },
+        {
+          "q": "Q4 2025",
+          "rate": 22044,
+          "util": 0.817
+        },
+        {
+          "q": "Q1 2026",
+          "rate": 22283,
+          "util": 0.806
+        },
+        {
+          "q": "Q2 2026",
+          "rate": 22938,
+          "util": 0.814
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "f96961bbba78977d",
+      "DISPLAY_VALUES": "generated from authoritative block",
+      "NARRATIVE_LOCATOR": "Ch.4.2",
+      "TABLE_LOCATOR": "Ch.4.2",
+      "CAPTION_LOCATOR": "VIS-002",
+      "RENDERED_ASSET_LOCATOR": "HTML inline SVG / PDF rendered page"
+    },
+    {
+      "VIS_ID": "VIS-003",
+      "FIGURE_TITLE": "2028 시나리오 가치와 현재가",
+      "AUTHORITATIVE_SOURCE_BLOCK": "scenarios + valuation.current_price",
+      "SOURCE_VALUES": {
+        "current": 94.06,
+        "scenarios": [
+          {
+            "name": "Bear",
+            "prob": 0.25,
+            "value": 41.88
+          },
+          {
+            "name": "Base",
+            "prob": 0.5,
+            "value": 109.56
+          },
+          {
+            "name": "Bull",
+            "prob": 0.25,
+            "value": 166.66
+          }
+        ]
+      },
+      "SOURCE_VERSION_OR_HASH": "6ef9636c9c54face",
+      "DISPLAY_VALUES": "generated from authoritative block",
+      "NARRATIVE_LOCATOR": "Ch.5.3",
+      "TABLE_LOCATOR": "Ch.0.4 / Ch.5.3",
+      "CAPTION_LOCATOR": "VIS-003",
+      "RENDERED_ASSET_LOCATOR": "HTML inline SVG / PDF rendered page"
+    },
+    {
+      "VIS_ID": "VIS-004",
+      "FIGURE_TITLE": "현재가가 요구하는 평균 Day Rate",
+      "AUTHORITATIVE_SOURCE_BLOCK": "reverse_expectations.table",
+      "SOURCE_VALUES": [
+        {
+          "normalized_ev_ebitda": 5.5,
+          "required_ebitda_m": 952.7,
+          "required_revenue_m": 2111.0,
+          "implied_avg_day_rate": 32310
+        },
+        {
+          "normalized_ev_ebitda": 6.0,
+          "required_ebitda_m": 873.3,
+          "required_revenue_m": 1958.3,
+          "implied_avg_day_rate": 29970
+        },
+        {
+          "normalized_ev_ebitda": 6.5,
+          "required_ebitda_m": 806.1,
+          "required_revenue_m": 1829.1,
+          "implied_avg_day_rate": 27990
+        },
+        {
+          "normalized_ev_ebitda": 7.0,
+          "required_ebitda_m": 748.6,
+          "required_revenue_m": 1718.4,
+          "implied_avg_day_rate": 26300
+        },
+        {
+          "normalized_ev_ebitda": 7.5,
+          "required_ebitda_m": 698.65,
+          "required_revenue_m": 1622.4,
+          "implied_avg_day_rate": 24830
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "8342a271274343d9",
+      "DISPLAY_VALUES": "generated from authoritative block",
+      "NARRATIVE_LOCATOR": "Ch.5.4",
+      "TABLE_LOCATOR": "Ch.5.4",
+      "CAPTION_LOCATOR": "VIS-004",
+      "RENDERED_ASSET_LOCATOR": "HTML inline SVG / PDF rendered page"
+    },
+    {
+      "VIS_ID": "VIS-005",
+      "FIGURE_TITLE": "진입가격별 기대 IRR",
+      "AUTHORITATIVE_SOURCE_BLOCK": "stance.entry_return_table",
+      "SOURCE_VALUES": [
+        {
+          "price": 80,
+          "expected_irr": 0.132343,
+          "bull_bear_upside_downside": 2.2733
+        },
+        {
+          "price": 82,
+          "expected_irr": 0.120423,
+          "bull_bear_upside_downside": 2.1102
+        },
+        {
+          "price": 85,
+          "expected_irr": 0.103301,
+          "bull_bear_upside_downside": 1.8938
+        },
+        {
+          "price": 90,
+          "expected_irr": 0.076603,
+          "bull_bear_upside_downside": 1.5931
+        },
+        {
+          "price": 94.06,
+          "expected_irr": 0.056436,
+          "bull_bear_upside_downside": 1.3913
+        },
+        {
+          "price": 100,
+          "expected_irr": 0.029071,
+          "bull_bear_upside_downside": 1.1469
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "52e1ca74cebf610c",
+      "DISPLAY_VALUES": "generated from authoritative block",
+      "NARRATIVE_LOCATOR": "Ch.5.6",
+      "TABLE_LOCATOR": "Ch.5.6",
+      "CAPTION_LOCATOR": "VIS-005",
+      "RENDERED_ASSET_LOCATOR": "HTML inline SVG / PDF rendered page"
+    },
+    {
+      "VIS_ID": "VIS-006",
+      "FIGURE_TITLE": "2027-2029 Owner-FCF 시나리오",
+      "AUTHORITATIVE_SOURCE_BLOCK": "scenarios.fcf",
+      "SOURCE_VALUES": [
+        {
+          "name": "Bear",
+          "fcf": [
+            175.6,
+            103.8,
+            38.3
+          ]
+        },
+        {
+          "name": "Base",
+          "fcf": [
+            375.4,
+            484.8,
+            473.7
+          ]
+        },
+        {
+          "name": "Bull",
+          "fcf": [
+            495.9,
+            681.6,
+            690.6
+          ]
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "8d09a04668f6673e",
+      "DISPLAY_VALUES": "generated from authoritative block",
+      "NARRATIVE_LOCATOR": "Ch.5.2 / Appendix B",
+      "TABLE_LOCATOR": "Appendix B",
+      "CAPTION_LOCATOR": "VIS-006",
+      "RENDERED_ASSET_LOCATOR": "HTML inline SVG / PDF rendered page"
+    }
+  ]
+}

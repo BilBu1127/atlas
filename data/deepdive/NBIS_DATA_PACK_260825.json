@@ -1,0 +1,867 @@
+{
+  "meta": {
+    "ticker": "NBIS",
+    "company": "Nebius Group N.V.",
+    "exchange": "NASDAQ",
+    "deep_dive_os_version": "v1.7 Production",
+    "research_cutoff": "2026-08-25T08:10:00+09:00",
+    "financial_cutoff": "2026-06-30",
+    "price_date": "2026-08-24",
+    "currency": "USD",
+    "current_price": 212.85,
+    "valuation_router": "Mode B - Hybrid / Expectation-Driven",
+    "human_gate": "H1 approved",
+    "h2_release": "PASS",
+    "h3_release": "PASS",
+    "latest_filing_check": "PASS",
+    "rc_summary": {
+      "complete": 18,
+      "primary_source_ceiling": 8,
+      "not_material": 0,
+      "contradicted": 0,
+      "unresolved": 0
+    },
+    "source_hierarchy": "Primary issuer/SEC first; industry primary sources; peers; market aggregators only for Module M"
+  },
+  "thesis": {
+    "one_sentence": "Demand is proven; per-share value depends on converting contracted GW into active billable MW while preserving $/MW economics and funding most growth through customer/project capital rather than repeated corporate dilution.",
+    "variant_perception": "The market debate is not AI demand yes/no but conversion efficiency from GW/TCV to per-share cash economics.",
+    "stance": "NEUTRAL / WATCH",
+    "current_zone": "$180-$225"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue_usd_m": 9.8,
+        "adjusted_ebitda_usd_m": null,
+        "net_income_continuing_usd_m": null,
+        "capex_usd_m": null,
+        "basis": "continuing/recast where available"
+      },
+      {
+        "year": 2024,
+        "revenue_usd_m": 91.5,
+        "adjusted_ebitda_usd_m": -226.3,
+        "net_income_continuing_usd_m": -352.0,
+        "capex_usd_m": 808.1,
+        "basis": "recast revenue/EBITDA; capex reported group cash-purchase basis"
+      },
+      {
+        "year": 2025,
+        "revenue_usd_m": 529.8,
+        "adjusted_ebitda_usd_m": -64.9,
+        "net_income_continuing_usd_m": 29.0,
+        "capex_usd_m": 4066.0,
+        "basis": "continuing/recast"
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "Q3 2024",
+        "revenue_usd_m": 32.1,
+        "adjusted_ebitda_usd_m": -45.9
+      },
+      {
+        "quarter": "Q4 2024",
+        "revenue_usd_m": 35.2,
+        "adjusted_ebitda_usd_m": -63.9
+      },
+      {
+        "quarter": "Q1 2025",
+        "revenue_usd_m": 50.9,
+        "adjusted_ebitda_usd_m": -53.7
+      },
+      {
+        "quarter": "Q2 2025",
+        "revenue_usd_m": 105.1,
+        "adjusted_ebitda_usd_m": -21.0
+      },
+      {
+        "quarter": "Q3 2025",
+        "revenue_usd_m": 146.1,
+        "adjusted_ebitda_usd_m": -5.2
+      },
+      {
+        "quarter": "Q4 2025",
+        "revenue_usd_m": 227.7,
+        "adjusted_ebitda_usd_m": 15.0
+      },
+      {
+        "quarter": "Q1 2026",
+        "revenue_usd_m": 399.0,
+        "adjusted_ebitda_usd_m": 129.5
+      },
+      {
+        "quarter": "Q2 2026",
+        "revenue_usd_m": 582.3,
+        "adjusted_ebitda_usd_m": 236.2
+      }
+    ],
+    "q2_2026": {
+      "revenue_usd_m": 582.3,
+      "ai_cloud_revenue_usd_m": 574.9,
+      "group_adjusted_ebitda_usd_m": 236.2,
+      "ai_cloud_adjusted_ebitda_usd_m": 285.7,
+      "q2_da_usd_m": 259.7,
+      "q2_interest_expense_usd_m": 119.1,
+      "q2_capex_usd_b": 5.657,
+      "h1_capex_usd_b": 8.13,
+      "h1_ocf_continuing_usd_b": 4.5,
+      "cash_usd_b": 8.042,
+      "debt_usd_b": 8.546,
+      "deferred_revenue_usd_b": 5.975
+    },
+    "fy2026_guidance": {
+      "revenue_usd_b": [
+        3.0,
+        3.4
+      ],
+      "exit_arr_usd_b": [
+        7.0,
+        9.0
+      ],
+      "group_adjusted_ebitda_margin": 0.4,
+      "capex_usd_b": [
+        20,
+        25
+      ],
+      "year_end_connected_power_gw": [
+        0.8,
+        1.0
+      ],
+      "year_end_contracted_power_gw": 5.0
+    },
+    "ceilings": [
+      "2024 capex basis differs from later recast perimeter",
+      "Prepayments make OCF non-comparable to mature FCF",
+      "Server/network useful life changed from four to five years prospectively in Q1 2026"
+    ]
+  },
+  "kpis": [
+    {
+      "name": "ARR",
+      "q2_2026": 3.0,
+      "unit": "USD B",
+      "fy2026_exit_guide": [
+        7,
+        9
+      ]
+    },
+    {
+      "name": "Active power",
+      "ye2025": 0.17,
+      "unit": "GW"
+    },
+    {
+      "name": "Connected power",
+      "fy2026_exit_guide": [
+        0.8,
+        1.0
+      ],
+      "unit": "GW"
+    },
+    {
+      "name": "Contracted power",
+      "fy2026_exit_target": 5.0,
+      "unit": "GW"
+    },
+    {
+      "name": "Long-term contract annualized revenue density",
+      "range": [
+        20,
+        25
+      ],
+      "unit": "USD M/MW"
+    },
+    {
+      "name": "Short scarce-capacity annualized revenue density",
+      "range": [
+        40,
+        50
+      ],
+      "unit": "USD M/MW",
+      "note": "transient, not Base"
+    },
+    {
+      "name": "Customer prepayment capex coverage",
+      "range": [
+        0.5,
+        0.6
+      ],
+      "unit": "share of associated capex"
+    }
+  ],
+  "customers": [
+    {
+      "customer": "Microsoft",
+      "committed_fees_usd_b": 17.4,
+      "potential_with_services_usd_b": 19.4,
+      "term": "through 2031 / five-year Vineland structure",
+      "upfront_usd_b": 6.958,
+      "stage": "partially delivered / expansion",
+      "risk": "delivery and availability can trigger service credits or tranche termination/refund"
+    },
+    {
+      "customer": "Meta",
+      "dedicated_usd_b": 12.0,
+      "additional_capacity_up_to_usd_b": 15.0,
+      "term": "five years",
+      "stage": "new major deployment targeted early 2027",
+      "risk": "additional $15B is third-party-first/backstop structure; not equivalent to guaranteed dedicated TCV"
+    },
+    {
+      "customer": "Reflection AI",
+      "tcv": "greater than $1B",
+      "stage": "deployment"
+    },
+    {
+      "customer": "Q2 four major contracts",
+      "avg_tcv": "greater than $1B each",
+      "stage": "mostly late-Q4 commissioning",
+      "revenue_density_usd_m_per_mw": [
+        20,
+        25
+      ],
+      "prepayment_capex_coverage": [
+        0.5,
+        0.6
+      ]
+    }
+  ],
+  "capacity": {
+    "definitions": {
+      "contracted": "power under contract/arrangement; not yet necessarily connected",
+      "connected": "data-center power connected; not identical to active IT load",
+      "active": "IT equipment consuming power"
+    },
+    "ye2025_active_gw": 0.17,
+    "fy2026_connected_guide_gw": [
+      0.8,
+      1.0
+    ],
+    "fy2026_contracted_target_gw": 5.0,
+    "sites": [
+      {
+        "site": "Independence, Missouri",
+        "design_or_announced_gw": 1.2,
+        "status": "approved/groundbreaking; not current active capacity"
+      },
+      {
+        "site": "Pennsylvania",
+        "design_or_announced_gw": 1.2,
+        "status": "phased starting 2027"
+      },
+      {
+        "site": "Lappeenranta",
+        "design_or_announced_gw": 0.31,
+        "status": "first capacity 2027"
+      },
+      {
+        "site": "Lille",
+        "design_or_announced_gw": 0.24,
+        "status": "announced"
+      },
+      {
+        "site": "Vineland",
+        "design_or_announced_gw": 0.3,
+        "status": "designed up to 300MW with expansion potential >400MW"
+      },
+      {
+        "site": "Kansas City",
+        "initial_gw": 0.005,
+        "expandable_gw": 0.04,
+        "status": "existing/expansion"
+      }
+    ],
+    "ceiling": "Site-level current connected/active MW is not fully disclosed; design capacities must not be summed as current capacity."
+  },
+  "capital_structure": {
+    "basic_shares_2026_06_30_m": 271.855218,
+    "nvidia_prefunded_warrant_m": 21.065936,
+    "aug_2026_old_note_exchange_shares_m": 15.8,
+    "current_economic_shares_pro_forma_m": 308.72,
+    "convert_potential_shares_m": {
+      "remaining_jun_2025": 3.89,
+      "sep_2025": 22.79,
+      "mar_2026": 23.83,
+      "aug_2026_new_base": 15.73
+    },
+    "high_price_potential_subtotal_before_employee_and_options_m": 374.96,
+    "aug_2026_new_convert": {
+      "base_principal_usd_b": 5.0,
+      "net_proceeds_usd_b": 4.94,
+      "conversion_prices_usd": [
+        313.46,
+        324.65
+      ],
+      "potential_full_offer_with_options_usd_b": 5.75
+    },
+    "secured_financing": {
+      "amount_usd_m": 775,
+      "pricing": "SOFR + 2.50%",
+      "maturity": "2030-10-31",
+      "note": "customer prepayment + facility covers >100% of underlying deployment capex per company"
+    }
+  },
+  "accounting_quality": {
+    "rating": "FLAGS_NOTED",
+    "flags": [
+      "Customer advances/deferred revenue inflate operating cash flow relative to mature FCF",
+      "Server/network useful life extended from four to five years",
+      "ClickHouse/investment revaluation distorts GAAP net income",
+      "Adjusted EBITDA excludes financing, depreciation/obsolescence and SBC that matter for per-share economics"
+    ]
+  },
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.3,
+      "revenue_2029_usd_b": 12,
+      "adjusted_ebitda_margin_2029": 0.3,
+      "adjusted_ebitda_2029_usd_b": 3.6,
+      "terminal_ev_ebitda": 10,
+      "other_value_usd_b": 2,
+      "net_debt_usd_b": 8,
+      "diluted_shares_m": 330,
+      "discount_rate": 0.14,
+      "terminal_value_per_share": 90.91,
+      "present_value_per_share": 61.36
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "revenue_2029_usd_b": 22,
+      "adjusted_ebitda_margin_2029": 0.4,
+      "adjusted_ebitda_2029_usd_b": 8.8,
+      "terminal_ev_ebitda": 12,
+      "other_value_usd_b": 5,
+      "net_debt_usd_b": 5,
+      "diluted_shares_m": 365,
+      "discount_rate": 0.12,
+      "terminal_value_per_share": 289.32,
+      "present_value_per_share": 205.93
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.2,
+      "revenue_2029_usd_b": 30,
+      "adjusted_ebitda_margin_2029": 0.43,
+      "adjusted_ebitda_2029_usd_b": 12.9,
+      "terminal_ev_ebitda": 14,
+      "other_value_usd_b": 6,
+      "net_debt_usd_b": 3,
+      "diluted_shares_m": 380,
+      "discount_rate": 0.12,
+      "terminal_value_per_share": 483.16,
+      "present_value_per_share": 343.9
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.1,
+      "revenue_2029_usd_b": 34,
+      "adjusted_ebitda_margin_2029": 0.45,
+      "adjusted_ebitda_2029_usd_b": 15.3,
+      "terminal_ev_ebitda": 15,
+      "other_value_usd_b": 15,
+      "net_debt_usd_b": 2,
+      "diluted_shares_m": 390,
+      "discount_rate": 0.13,
+      "terminal_value_per_share": 621.79,
+      "present_value_per_share": 430.94
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B - Hybrid / Expectation-Driven",
+    "core": 212.65,
+    "execution": 343.9,
+    "ecosystem": 430.94,
+    "drag": 61.36,
+    "expected_value": 212.65,
+    "expected_terminal_value": 301.81,
+    "expected_irr": 0.1235,
+    "current_price": 212.85,
+    "interpretation": "Risk-adjusted value is essentially equal to current price; no material margin of safety at cutoff."
+  },
+  "reverse_expectations": {
+    "assumptions": {
+      "current_price": 212.85,
+      "future_diluted_shares_m": 365,
+      "discount_rate": 0.12,
+      "ebitda_margin": 0.4,
+      "other_assets_usd_b": 5,
+      "net_debt_usd_b": 5,
+      "horizon_years": 3
+    },
+    "terminal_equity_value_required_usd_b": 109.15,
+    "required_2029_ebitda_at_12x_usd_b": 9.1,
+    "required_2029_revenue_at_12x_usd_b": 22.74,
+    "required_2029_revenue_by_terminal_multiple_usd_b": {
+      "10": 27.29,
+      "12": 22.74,
+      "14": 19.49,
+      "16": 17.05
+    },
+    "interpretation": "Current price already requires roughly $22-$23B of 2029 revenue at ~40% adjusted EBITDA margin with dilution and funding under control."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "public_revenue_consensus_usd_b": 3.48,
+      "company_guidance_usd_b": [
+        3.0,
+        3.4
+      ],
+      "note": "public-source consensus reference; proprietary full matrix unavailable"
+    },
+    "fy2": {
+      "year": 2027,
+      "public_revision_history": "Public March 2026 aggregation showed revision from ~7.78B to ~9.53B; post-Q2 full proprietary consensus unavailable."
+    },
+    "revision_trend": "Upward but high dispersion; Q2 post-earnings target prices publicly spanned roughly $175-$410.",
+    "positioning": {
+      "short_interest_2026_07_31_shares_m": 60.2,
+      "public_float_pct_approx": 23.79,
+      "note": "provider denominator can vary"
+    }
+  },
+  "stance": {
+    "zone": "WATCH / NEUTRAL",
+    "price_bands": {
+      "aggressive_interest_max": 155,
+      "positive_interest": [
+        155,
+        180
+      ],
+      "watch_neutral": [
+        180,
+        225
+      ],
+      "bull_evidence_required": [
+        225,
+        275
+      ],
+      "bull_dependent_min": 275
+    },
+    "horizon": "3 years, re-underwritten quarterly"
+  },
+  "kpi_traffic_lights": {
+    "green": [
+      "YE26 connected power within 0.8-1.0GW",
+      "H1 2027 rapid active conversion",
+      "Exit ARR $7-9B or better revenue conversion",
+      "Long-term $/MW >=20M with prepayment >=50%",
+      "AI Cloud adjusted EBITDA margin >=40%",
+      "Asset-backed/partner financing share rises",
+      "Aether/Token Factory attach or monetization KPI disclosure"
+    ],
+    "yellow": [
+      "Connected achieved but active/acceptance delayed 1-2 quarters",
+      "Long-term $/MW falls into $15-20M but utilization/financing offsets",
+      "Capex above guide or additional large converts/ATM",
+      "Customer concentration increases further"
+    ],
+    "red": [
+      "Major Microsoft/Meta tranche cancellation/refund",
+      "Commissioning structurally delayed >=2 quarters",
+      "Sharp $/MW decline plus lower prepayment",
+      "AI Cloud adjusted EBITDA margin persistently <30%",
+      "Large recurring equity financing due to prepayment-adjusted cash burn",
+      "Accelerated GPU impairment/refresh evidence"
+    ]
+  },
+  "catalysts": [
+    {
+      "window": "Q3 2026 results",
+      "event": "FY26 run-rate, capex, connected-power progress and late-Q4 readiness"
+    },
+    {
+      "window": "Q4 2026",
+      "event": "Commissioning/acceptance of four major Q2 contracts"
+    },
+    {
+      "window": "YE 2026",
+      "event": "Connected power 0.8-1.0GW, contracted power 5GW, exit ARR 7-9B"
+    },
+    {
+      "window": "Early 2027",
+      "event": "New Meta $12B deployment / Vera Rubin delivery"
+    },
+    {
+      "window": "2027 guidance",
+      "event": "Capacity deployment and funding mix; project-level vs corporate capital"
+    },
+    {
+      "window": "Any quarter",
+      "event": "Aether/Token Factory revenue, attach, token-volume or gross-margin disclosure"
+    }
+  ],
+  "red_team": [
+    "Q2 50% AI Cloud adjusted EBITDA margin may be scarcity rent; Base uses 40%, Bear 30%.",
+    "Customer advances are favorable financing but not mature FCF.",
+    "Large TCV is conditional on delivery/acceptance and availability.",
+    "Meta additional $15B should not be treated as equal to $12B dedicated guarantee.",
+    "NVIDIA investment is not evidence of guaranteed exclusive GPU allocation.",
+    "5GW contracted power is not 5GW active capacity.",
+    "Convert economics create dilution in upside and debt burden in downside.",
+    "Software architecture is credible but independent monetization remains unproven.",
+    "Customer concentration is material but exact quarterly ratio is not disclosed.",
+    "Terminal multiple is a major valuation variable because the business may converge toward infrastructure economics if software attach remains limited."
+  ],
+  "rc_ledger": [
+    {
+      "rc": "RC-001",
+      "obligation": "history/Yandex separation/current assets",
+      "status": "COMPLETE",
+      "h3_coverage": true
+    },
+    {
+      "rc": "RC-002",
+      "obligation": "AI compute value chain/profit pool/lifecycle",
+      "status": "COMPLETE",
+      "h3_coverage": true
+    },
+    {
+      "rc": "RC-003",
+      "obligation": "bottom-up demand/customer spend/lead indicators",
+      "status": "COMPLETE",
+      "h3_coverage": true
+    },
+    {
+      "rc": "RC-004",
+      "obligation": "industry supply/capacity pipeline/entry barriers",
+      "status": "COMPLETE",
+      "h3_coverage": true
+    },
+    {
+      "rc": "RC-005",
+      "obligation": "prior cycle/price compression base rate",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_coverage": true
+    },
+    {
+      "rc": "RC-006",
+      "obligation": "industry-to-company transmission",
+      "status": "COMPLETE",
+      "h3_coverage": true
+    },
+    {
+      "rc": "RC-007",
+      "obligation": "site-level contracted/connected/active MW ledger",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_coverage": true
+    },
+    {
+      "rc": "RC-008",
+      "obligation": "GPU generations/systems architecture quantitative",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_coverage": true
+    },
+    {
+      "rc": "RC-009",
+      "obligation": "Aether enterprise/software architecture",
+      "status": "COMPLETE",
+      "h3_coverage": true
+    },
+    {
+      "rc": "RC-010",
+      "obligation": "Token Factory economics/attach",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_coverage": true
+    },
+    {
+      "rc": "RC-011",
+      "obligation": "customer/contract/adoption ledger",
+      "status": "COMPLETE",
+      "h3_coverage": true
+    },
+    {
+      "rc": "RC-012",
+      "obligation": "Microsoft/Meta contract terms",
+      "status": "COMPLETE",
+      "h3_coverage": true
+    },
+    {
+      "rc": "RC-013",
+      "obligation": "customer concentration/strategic vs core mix",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_coverage": true
+    },
+    {
+      "rc": "RC-014",
+      "obligation": "competition by customer job",
+      "status": "COMPLETE",
+      "h3_coverage": true
+    },
+    {
+      "rc": "RC-015",
+      "obligation": "CEO/management measurable track record",
+      "status": "COMPLETE",
+      "h3_coverage": true
+    },
+    {
+      "rc": "RC-016",
+      "obligation": "2024-26 Promise-to-Delivery",
+      "status": "COMPLETE",
+      "h3_coverage": true
+    },
+    {
+      "rc": "RC-017",
+      "obligation": "governance/ownership/alignment",
+      "status": "COMPLETE",
+      "h3_coverage": true
+    },
+    {
+      "rc": "RC-018",
+      "obligation": "3Y + latest 8Q/accounting",
+      "status": "COMPLETE",
+      "h3_coverage": true
+    },
+    {
+      "rc": "RC-019",
+      "obligation": "MW/GPU to revenue/EBITDA/cash payback",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_coverage": true
+    },
+    {
+      "rc": "RC-020",
+      "obligation": "OCF/prepayments/deferred revenue/WC",
+      "status": "COMPLETE",
+      "h3_coverage": true
+    },
+    {
+      "rc": "RC-021",
+      "obligation": "debt/converts/warrants/dilution",
+      "status": "COMPLETE",
+      "h3_coverage": true
+    },
+    {
+      "rc": "RC-022",
+      "obligation": "non-core assets/investments SOTP",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_coverage": true
+    },
+    {
+      "rc": "RC-023",
+      "obligation": "power/permitting/regulatory/supply chain",
+      "status": "COMPLETE",
+      "h3_coverage": true
+    },
+    {
+      "rc": "RC-024",
+      "obligation": "market expectations/consensus/short/ownership",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_coverage": true
+    },
+    {
+      "rc": "RC-025",
+      "obligation": "operating scenarios/reverse expectations",
+      "status": "COMPLETE",
+      "h3_coverage": true
+    },
+    {
+      "rc": "RC-026",
+      "obligation": "KPI tripwires/catalysts/falsification",
+      "status": "COMPLETE",
+      "h3_coverage": true
+    }
+  ],
+  "as_of_registry": {
+    "research_cutoff": "2026-08-25T08:10:00+09:00",
+    "price": "2026-08-24 close 212.85",
+    "financials": "Q2 2026 / 2026-06-30",
+    "latest_material_financing_filing": "2026-08-20 $5B convert pricing",
+    "q2_results": "2026-08-12",
+    "short_interest": "2026-07-31",
+    "agm": "2026-08-25 Amsterdam local, after fixed research cutoff"
+  },
+  "visual_lineage": [
+    {
+      "visual_id": "V1",
+      "title": "Quarterly revenue and adjusted EBITDA",
+      "source_fields": [
+        "financials.quarterly_8q"
+      ]
+    },
+    {
+      "visual_id": "V2",
+      "title": "Power funnel / status distinction",
+      "source_fields": [
+        "capacity.ye2025_active_gw",
+        "capacity.fy2026_connected_guide_gw",
+        "capacity.fy2026_contracted_target_gw"
+      ]
+    },
+    {
+      "visual_id": "V3",
+      "title": "Economic dilution stack",
+      "source_fields": [
+        "capital_structure.basic_shares_2026_06_30_m",
+        "capital_structure.nvidia_prefunded_warrant_m",
+        "capital_structure.aug_2026_old_note_exchange_shares_m",
+        "capital_structure.convert_potential_shares_m"
+      ]
+    },
+    {
+      "visual_id": "V4",
+      "title": "Scenario present value per share",
+      "source_fields": [
+        "scenarios"
+      ]
+    },
+    {
+      "visual_id": "V5",
+      "title": "Reverse-expectations sensitivity",
+      "source_fields": [
+        "reverse_expectations.required_2029_revenue_by_terminal_multiple_usd_b"
+      ]
+    },
+    {
+      "visual_id": "V6",
+      "title": "Selected July-August price events",
+      "source_fields": [
+        "market_price_history_selected"
+      ]
+    }
+  ],
+  "market_price_history_selected": [
+    {
+      "date": "2026-07-24",
+      "close": 187.77
+    },
+    {
+      "date": "2026-07-27",
+      "close": 187.88
+    },
+    {
+      "date": "2026-07-28",
+      "close": 169.69
+    },
+    {
+      "date": "2026-07-29",
+      "close": 148.22
+    },
+    {
+      "date": "2026-07-30",
+      "close": 188.43
+    },
+    {
+      "date": "2026-07-31",
+      "close": 190.41
+    },
+    {
+      "date": "2026-08-03",
+      "close": 212.58
+    },
+    {
+      "date": "2026-08-04",
+      "close": 225.74
+    },
+    {
+      "date": "2026-08-05",
+      "close": 218.99
+    },
+    {
+      "date": "2026-08-06",
+      "close": 189.88
+    },
+    {
+      "date": "2026-08-07",
+      "close": 187.97
+    },
+    {
+      "date": "2026-08-10",
+      "close": 184.11
+    },
+    {
+      "date": "2026-08-11",
+      "close": 193.23
+    },
+    {
+      "date": "2026-08-12",
+      "close": 259.2,
+      "event": "Q2 results"
+    },
+    {
+      "date": "2026-08-13",
+      "close": 255.04
+    },
+    {
+      "date": "2026-08-14",
+      "close": 277.68
+    },
+    {
+      "date": "2026-08-17",
+      "close": 268.85
+    },
+    {
+      "date": "2026-08-18",
+      "close": 248.43
+    },
+    {
+      "date": "2026-08-19",
+      "close": 223.9,
+      "event": "new convert proposed"
+    },
+    {
+      "date": "2026-08-20",
+      "close": 220.11,
+      "event": "$5B convert priced"
+    },
+    {
+      "date": "2026-08-21",
+      "close": 219.13
+    },
+    {
+      "date": "2026-08-24",
+      "close": 212.85
+    }
+  ],
+  "source_register": [
+    {
+      "tier": "primary",
+      "title": "Nebius 2025 Form 20-F",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+    },
+    {
+      "tier": "primary",
+      "title": "Nebius FY2025 results",
+      "url": "https://nebius.com/newsroom/nebius-reports-fourth-quarter-and-full-year-2025-financial-results"
+    },
+    {
+      "tier": "primary",
+      "title": "Nebius Q1 2026 results",
+      "url": "https://nebius.com/newsroom/nebius-reports-first-quarter-2026-financial-results"
+    },
+    {
+      "tier": "primary",
+      "title": "Nebius Q2 2026 results",
+      "url": "https://www.eqs-news.com/news/corporate/nebius-reports-second-quarter-2026-financial-results/16ee02af-2a07-42b5-9937-026f1767ff4c_en"
+    },
+    {
+      "tier": "primary",
+      "title": "Nebius Q3 2025 6-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925109806/tm2530882d1_ex99-1.htm"
+    },
+    {
+      "tier": "primary",
+      "title": "March 2026 convert closing",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926032735/tm268409d4_ex99-1.htm"
+    },
+    {
+      "tier": "industry_primary",
+      "title": "IEA Energy and AI / Electricity 2026",
+      "url": "https://www.iea.org/"
+    },
+    {
+      "tier": "peer_primary",
+      "title": "CoreWeave 2025 10-K and 2026 quarterly disclosures",
+      "url": "https://investors.coreweave.com/"
+    },
+    {
+      "tier": "market_context",
+      "title": "Investing historical prices",
+      "url": "https://www.investing.com/equities/yandex-nv-historical-data"
+    }
+  ]
+}

@@ -1,0 +1,932 @@
+{
+  "meta": {
+    "ticker": "ET",
+    "company": "Energy Transfer LP",
+    "T0": "2026-08-24",
+    "price_asof": "2026-08-24 close",
+    "filing_asof": "2026-08-06 Form 10-Q; latest ET filing check 2026-08-20 Form 4",
+    "consensus_asof": "2026-08-25",
+    "version": "DDOS v1.7",
+    "currency": "USD",
+    "current_price": 21.13,
+    "research_cutoff": "2026-08-25"
+  },
+  "financials": {
+    "annual_3y": {
+      "2023": {
+        "revenue": 78.586,
+        "adjusted_ebitda": 13.698,
+        "dcf_attributable_adjusted": 7.578,
+        "interest_expense": 2.578,
+        "partner_distributions": 3.987,
+        "growth_capex_et_ex_affiliates": 1.59,
+        "long_term_debt_consolidated": 51.38
+      },
+      "2024": {
+        "revenue": 82.671,
+        "adjusted_ebitda": 15.483,
+        "dcf_attributable_adjusted": 8.363,
+        "interest_expense": 3.125,
+        "partner_distributions": 4.388,
+        "growth_capex_et_ex_affiliates": 3.0,
+        "long_term_debt_consolidated": 59.752
+      },
+      "2025": {
+        "revenue": 85.536,
+        "adjusted_ebitda": 15.984,
+        "dcf_attributable_adjusted": 8.202,
+        "interest_expense": 3.474,
+        "partner_distributions": 4.555,
+        "growth_capex_headline_quarter_sum": 4.535,
+        "long_term_debt_consolidated": 68.308
+      }
+    },
+    "quarterly_8q": [
+      {
+        "quarter": "3Q24",
+        "ebitda": 3.959,
+        "dcf_attributable": 1.99,
+        "growth_capex": 0.724,
+        "maintenance_capex_headline": 0.359,
+        "segments": {
+          "intrastate": 329,
+          "interstate": 460,
+          "midstream": 816,
+          "ngl_refined": 1012,
+          "crude": 768,
+          "sun": 456,
+          "usac": 146,
+          "other": -28
+        }
+      },
+      {
+        "quarter": "4Q24",
+        "ebitda": 3.884,
+        "dcf_attributable": 1.978,
+        "growth_capex": 1.22,
+        "maintenance_capex_headline": 0.309,
+        "segments": {
+          "intrastate": 263,
+          "interstate": 493,
+          "midstream": 705,
+          "ngl_refined": 1108,
+          "crude": 760,
+          "sun": 439,
+          "usac": 155,
+          "other": -39
+        }
+      },
+      {
+        "quarter": "1Q25",
+        "ebitda": 4.098,
+        "dcf_attributable": 2.31,
+        "growth_capex": 0.955,
+        "maintenance_capex_headline": 0.165,
+        "segments": {
+          "intrastate": 344,
+          "interstate": 512,
+          "midstream": 925,
+          "ngl_refined": 978,
+          "crude": 742,
+          "sun": 458,
+          "usac": 150,
+          "other": -11
+        }
+      },
+      {
+        "quarter": "2Q25",
+        "ebitda": 3.866,
+        "dcf_attributable": 1.959,
+        "growth_capex": 1.04,
+        "maintenance_capex_headline": 0.253,
+        "segments": {
+          "intrastate": 284,
+          "interstate": 470,
+          "midstream": 768,
+          "ngl_refined": 1033,
+          "crude": 732,
+          "sun": 454,
+          "usac": 149,
+          "other": -24
+        }
+      },
+      {
+        "quarter": "3Q25",
+        "ebitda": 3.838,
+        "dcf_attributable": 1.895,
+        "growth_capex": 1.14,
+        "maintenance_capex_headline": 0.293,
+        "segments": {
+          "intrastate": 230,
+          "interstate": 431,
+          "midstream": 751,
+          "ngl_refined": 1054,
+          "crude": 746,
+          "sun": 489,
+          "usac": 160,
+          "other": -23
+        }
+      },
+      {
+        "quarter": "4Q25",
+        "ebitda": 4.182,
+        "dcf_attributable": 2.041,
+        "growth_capex": 1.4,
+        "maintenance_capex_headline": 0.355,
+        "segments": {
+          "intrastate": 355,
+          "interstate": 523,
+          "midstream": 720,
+          "ngl_refined": 1078,
+          "crude": 722,
+          "sun": 646,
+          "usac": 154,
+          "other": -16
+        }
+      },
+      {
+        "quarter": "1Q26",
+        "ebitda": 4.937,
+        "dcf_attributable": 2.704,
+        "growth_capex": 1.53,
+        "maintenance_capex_headline": 0.175,
+        "segments": {
+          "intrastate": 437,
+          "interstate": 519,
+          "midstream": 887,
+          "ngl_refined": 1163,
+          "crude": 869,
+          "sun": 858,
+          "usac": 188,
+          "other": 16
+        }
+      },
+      {
+        "quarter": "2Q26",
+        "ebitda": 5.066,
+        "dcf_attributable": 2.587,
+        "growth_capex": 1.1,
+        "maintenance_capex_headline": 0.307,
+        "maintenance_capex_dcf_reconciliation": 0.401,
+        "segments": {
+          "intrastate": 377,
+          "interstate": 481,
+          "midstream": 884,
+          "ngl_refined": 1308,
+          "crude": 834,
+          "sun": 982,
+          "usac": 194,
+          "other": 6
+        }
+      }
+    ],
+    "2026_guidance": {
+      "adjusted_ebitda_low": 18.8,
+      "adjusted_ebitda_high": 19.1,
+      "growth_capex_low": 5.6,
+      "growth_capex_high": 5.9,
+      "annualized_distribution_per_unit": 1.36
+    },
+    "2026_normalization": {
+      "dcf_attributable_estimate": 10.169,
+      "dcf_per_unit": 2.953,
+      "method": "H1 2026 actual DCF multiplied by 2025 H2/H1 seasonality ratio; not company guidance",
+      "distribution_coverage": 2.172
+    },
+    "ceilings": [
+      "Project-level EBITDA/capex/contract tariffs unavailable for multiple gas laterals and Nederland expansion",
+      "Exact rating-agency adjusted debt/EBITDA denominator not fully reconstructable from public disclosure",
+      "Headline maintenance capex differs from consolidated DCF reconciliation where affiliates are included"
+    ]
+  },
+  "kpis": [
+    {
+      "name": "ET-attributable DCF per unit",
+      "history": [
+        {
+          "period": "2025",
+          "value": 2.389
+        },
+        {
+          "period": "2026 normalized",
+          "value": 2.953
+        }
+      ],
+      "current": 2.953,
+      "thresholds": {
+        "green": ">=3.00 by 2027 with leverage target intact",
+        "yellow": "2.75-2.99 or project delays",
+        "red": "<2.75 with growth capex still elevated"
+      }
+    },
+    {
+      "name": "Distribution coverage",
+      "history": [
+        {
+          "period": "2026 normalized",
+          "value": 2.17
+        }
+      ],
+      "current": 2.17,
+      "thresholds": {
+        "green": ">=1.8x",
+        "yellow": "1.5-1.8x",
+        "red": "<1.5x"
+      }
+    },
+    {
+      "name": "FY26 growth capex",
+      "history": [
+        {
+          "period": "2024",
+          "value": 3.0
+        },
+        {
+          "period": "2025 headline sum",
+          "value": 4.535
+        },
+        {
+          "period": "2026 guide midpoint",
+          "value": 5.75
+        }
+      ],
+      "current": 5.75,
+      "thresholds": {
+        "green": "project ramp keeps DCF/unit growing >= mid-single digits",
+        "yellow": "capex rises without DCF/unit growth",
+        "red": "capex overrun + leverage above target"
+      }
+    },
+    {
+      "name": "NGL export/transport growth",
+      "history": [
+        {
+          "period": "2Q26 NGL exports YoY %",
+          "value": 25
+        },
+        {
+          "period": "2Q26 NGL transport YoY %",
+          "value": 13
+        }
+      ],
+      "current": 25,
+      "thresholds": {
+        "green": "double-digit volume growth with stable contracted margins",
+        "yellow": "volume growth but premium/fee compression",
+        "red": "volume decline or contract loss"
+      }
+    },
+    {
+      "name": "Rating-agency leverage",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": "within management 4.0-4.5x target",
+        "yellow": "temporarily >4.5x with visible de-leveraging",
+        "red": "sustained >4.5x / equity funding risk"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.25,
+      "dcf_per_unit_2028": 2.55,
+      "terminal_dcf_multiple": 6.5,
+      "per_share_value": 16.575,
+      "cumulative_distributions": 2.9,
+      "total_value_including_distributions": 19.475,
+      "scenario_irr": -0.034112,
+      "revenue_path": [],
+      "margin_path": [],
+      "fcf": [],
+      "diluted_shares": 3.53,
+      "dcf_per_unit_path": {
+        "2026_normalized": 2.953,
+        "2027": 2.68,
+        "2028": 2.55
+      }
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "dcf_per_unit_2028": 3.1,
+      "terminal_dcf_multiple": 7.75,
+      "per_share_value": 24.025,
+      "cumulative_distributions": 3.3,
+      "total_value_including_distributions": 27.325,
+      "scenario_irr": 0.115617,
+      "revenue_path": [],
+      "margin_path": [],
+      "fcf": [],
+      "diluted_shares": 3.48,
+      "dcf_per_unit_path": {
+        "2026_normalized": 2.953,
+        "2027": 3.02,
+        "2028": 3.1
+      }
+    },
+    {
+      "name": "Up",
+      "probability": 0.25,
+      "dcf_per_unit_2028": 3.55,
+      "terminal_dcf_multiple": 8.5,
+      "per_share_value": 30.175,
+      "cumulative_distributions": 3.6,
+      "total_value_including_distributions": 33.775,
+      "scenario_irr": 0.220897,
+      "revenue_path": [],
+      "margin_path": [],
+      "fcf": [],
+      "diluted_shares": 3.46,
+      "dcf_per_unit_path": {
+        "2026_normalized": 2.953,
+        "2027": 3.25,
+        "2028": 3.55
+      }
+    }
+  ],
+  "valuation": {
+    "mode": "Mode C — Mature Compounder; attributable DCF/unit + terminal DCF multiple + distributions",
+    "core": 20.94,
+    "execution": null,
+    "ecosystem": 0,
+    "drag": "Capex/funding and volatile optimization margins embedded in scenarios rather than separate subtraction",
+    "expected_value": 23.7,
+    "expected_total_value_including_distributions": 26.975,
+    "expected_irr": 0.109514,
+    "current_price": 21.13,
+    "horizon_years": 2.35,
+    "probability_weighted_terminal_price": 23.7,
+    "probability_weighted_distributions": 3.275,
+    "upside_downside_ratio": 1.986,
+    "base_future_value": 24.025,
+    "base_present_value_at_12pct": 20.936,
+    "probability_weighted_present_value_at_12pct": 20.668
+  },
+  "reverse_expectations": {
+    "method": "Solve 2028 DCF/unit needed for 12% annual total return from $21.13, assuming $3.30 cumulative distributions and varying terminal DCF multiple",
+    "normalized_2026_dcf_per_unit": 2.953,
+    "sensitivity": {
+      "7.00x": {
+        "required_2028_dcf_per_unit": 3.468,
+        "required_cagr_from_2026_normalized": 0.0708
+      },
+      "7.50x": {
+        "required_2028_dcf_per_unit": 3.237,
+        "required_cagr_from_2026_normalized": 0.0398
+      },
+      "7.75x": {
+        "required_2028_dcf_per_unit": 3.133,
+        "required_cagr_from_2026_normalized": 0.0254
+      },
+      "8.00x": {
+        "required_2028_dcf_per_unit": 3.035,
+        "required_cagr_from_2026_normalized": 0.0116
+      },
+      "8.50x": {
+        "required_2028_dcf_per_unit": 2.856,
+        "required_cagr_from_2026_normalized": -0.0141
+      }
+    },
+    "interpretation": "At unchanged ~7.0-7.5x DCF multiple the market requires moderate DCF/unit growth; an 8x re-rating requires little growth. Multiple discipline therefore matters as much as operating delivery."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_consensus": 122.0,
+      "eps_consensus": 1.73,
+      "note": "secondary market-consensus source; revenue is not preferred ET valuation metric due pass-through/consolidation"
+    },
+    "fy2": {
+      "status": "PRIMARY_SOURCE_CEILING",
+      "note": "full primary FY2/FY3 sell-side line-item history not reconstructed"
+    },
+    "revision_trend": "Company FY26 EBITDA guidance raised from $17.3-17.7B in Jan to $18.8-19.1B in Aug; analyst target revisions broadly upward/positive",
+    "ratings": {
+      "buy": 19,
+      "hold": 2,
+      "sell": 0,
+      "average_target": 24.53,
+      "low_target": 22,
+      "high_target": 28
+    }
+  },
+  "stance": {
+    "zone": "조건부 관심 / Accumulate on weakness",
+    "price_bands": {
+      "strong_interest": "<=19.0",
+      "attractive": "19.0-20.0",
+      "conditional_interest": "20.0-22.0",
+      "fair_hold": "22.0-24.5",
+      "requires_execution_premium": ">24.5"
+    },
+    "horizon": "through end-2028 (~2.35 years)",
+    "hurdle": "10-15%; 12% central",
+    "trigger_price_for_15pct_expected_irr": 19.42
+  },
+  "catalysts": [
+    {
+      "when": "Sep-2026",
+      "event": "Hugh Brinson Phase I reaches 1.5 Bcf/d capability",
+      "sensitivity": "positive if utilization/transport revenue appears without basis-dependent quality deterioration"
+    },
+    {
+      "when": "4Q26",
+      "event": "Mustang Draw II target in-service and additional self-generation facilities",
+      "sensitivity": "supports Permian processing/operating resilience"
+    },
+    {
+      "when": "2027-2028",
+      "event": "Oracle/data-center and power laterals ramp",
+      "sensitivity": "positive only when conditional commitments convert to actual flow"
+    },
+    {
+      "when": "late 2028",
+      "event": "Entergy/Bethel/FGT milestones",
+      "sensitivity": "supports contracted gas growth into valuation horizon"
+    },
+    {
+      "when": "2026-2029",
+      "event": "Desert Southwest FERC / cost / construction milestones",
+      "sensitivity": "largest capital-execution swing factor"
+    },
+    {
+      "when": "quarterly",
+      "event": "Distribution growth and DCF coverage",
+      "sensitivity": "green if 3-5% growth with >=1.8x coverage"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "0,3,4"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "1"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "1,3"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1,3,Appendix"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "1,3"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "3,4"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "4,Appendix"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "4"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "4,5"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "2"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "2,4"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "3"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "1,3"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "1,3,6"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "4"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "4,6"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "0,5,6"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "COMPLETE",
+      "h3_locator": "5"
+    },
+    {
+      "rc_id": "RC-020",
+      "status": "COMPLETE",
+      "h3_locator": "5"
+    },
+    {
+      "rc_id": "RC-021",
+      "status": "COMPLETE",
+      "h3_locator": "6"
+    }
+  ],
+  "decision_bridges": {
+    "q2_2026_dcf_bridge": {
+      "consolidated_dcf": 3.473,
+      "less_sun_sunc_dcf": -0.594,
+      "plus_sun_distributions": 0.102,
+      "less_usac_dcf": -0.125,
+      "plus_usac_distributions": 0.024,
+      "less_other_nci_dcf": -0.293,
+      "et_attributable_adjusted_dcf": 2.587
+    },
+    "q2_2026_quality": {
+      "ngl_ebitda_increase": 0.275,
+      "ngl_marketing_margin_increase": 0.212,
+      "ngl_export_domestic_premium_component": 0.14,
+      "intrastate_realized_gas_basis_increase": 0.113
+    }
+  },
+  "source_registry": [
+    {
+      "id": "S1",
+      "source": "Energy Transfer Q2 2026 results",
+      "date": "2026-08-04",
+      "url": "https://ir.energytransfer.com/news-releases/news-release-details/energy-transfer-reports-second-quarter-2026-results-and-updates/"
+    },
+    {
+      "id": "S2",
+      "source": "Energy Transfer 2026 Outlook",
+      "date": "2026-01-06",
+      "url": "https://ir.energytransfer.com/news-releases/news-release-details/energy-transfer-announces-2026-outlook"
+    },
+    {
+      "id": "S3",
+      "source": "Energy Transfer SEC filings index",
+      "date": "2026-08-25 checked",
+      "url": "https://ir.energytransfer.com/sec-filings-et"
+    },
+    {
+      "id": "S4",
+      "source": "EIA U.S. natural gas exports forecast",
+      "date": "2026-04-16",
+      "url": "https://www.eia.gov/TODAYINENERGY/detail.php?id=67484"
+    },
+    {
+      "id": "S5",
+      "source": "EIA August 2026 STEO",
+      "date": "2026-08-11",
+      "url": "https://www.eia.gov/outlooks/steo/report/"
+    },
+    {
+      "id": "S6",
+      "source": "EIA NGPL/ethane exports",
+      "date": "2026-04",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67387"
+    },
+    {
+      "id": "S7",
+      "source": "ONEOK Q2 2026",
+      "date": "2026-08-03",
+      "url": "https://www.oneok.com/Newsroom/earnings/Q2-2026-earnings-summary"
+    },
+    {
+      "id": "S8",
+      "source": "Investing.com ET consensus/historical price",
+      "date": "2026-08-25 checked",
+      "url": "https://www.investing.com/equities/energy-transfer-consensus-estimates"
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "VIS_ID": "VIS-005",
+      "FIGURE_TITLE": "2028 시나리오 가치와 현재가",
+      "AUTHORITATIVE_SOURCE_BLOCK": "scenarios",
+      "SOURCE_VALUES": [
+        {
+          "name": "Down",
+          "probability": 0.25,
+          "dcf_per_unit_2028": 2.55,
+          "terminal_dcf_multiple": 6.5,
+          "per_share_value": 16.575,
+          "cumulative_distributions": 2.9,
+          "scenario_irr": -0.034112
+        },
+        {
+          "name": "Base",
+          "probability": 0.5,
+          "dcf_per_unit_2028": 3.1,
+          "terminal_dcf_multiple": 7.75,
+          "per_share_value": 24.025,
+          "cumulative_distributions": 3.3,
+          "scenario_irr": 0.115617
+        },
+        {
+          "name": "Up",
+          "probability": 0.25,
+          "dcf_per_unit_2028": 3.55,
+          "terminal_dcf_multiple": 8.5,
+          "per_share_value": 30.175,
+          "cumulative_distributions": 3.6,
+          "scenario_irr": 0.220897
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "10799347de7bdb56",
+      "DISPLAY_VALUES": [
+        {
+          "name": "Down",
+          "probability": 0.25,
+          "dcf_per_unit_2028": 2.55,
+          "terminal_dcf_multiple": 6.5,
+          "per_share_value": 16.575,
+          "cumulative_distributions": 2.9,
+          "scenario_irr": -0.034112
+        },
+        {
+          "name": "Base",
+          "probability": 0.5,
+          "dcf_per_unit_2028": 3.1,
+          "terminal_dcf_multiple": 7.75,
+          "per_share_value": 24.025,
+          "cumulative_distributions": 3.3,
+          "scenario_irr": 0.115617
+        },
+        {
+          "name": "Up",
+          "probability": 0.25,
+          "dcf_per_unit_2028": 3.55,
+          "terminal_dcf_multiple": 8.5,
+          "per_share_value": 30.175,
+          "cumulative_distributions": 3.6,
+          "scenario_irr": 0.220897
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Ch5 §5.3-5.4",
+      "TABLE_LOCATOR": "Ch5 §5.3-5.4",
+      "CAPTION_LOCATOR": "Ch5 §5.3-5.4",
+      "RENDERED_ASSET_LOCATOR": "inline-svg:VIS-005",
+      "status": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-001",
+      "FIGURE_TITLE": "EBITDA와 ET 귀속 DCF의 성장 속도",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.annual_3y + 2026_normalization",
+      "SOURCE_VALUES": {
+        "years": [
+          "2023",
+          "2024",
+          "2025",
+          "2026N"
+        ],
+        "ebitda": [
+          13.698,
+          15.483,
+          15.984,
+          18.950000000000003
+        ],
+        "dcf": [
+          7.578,
+          8.363,
+          8.202,
+          10.169
+        ]
+      },
+      "SOURCE_VERSION_OR_HASH": "4e52540d0b774b83",
+      "DISPLAY_VALUES": {
+        "years": [
+          "2023",
+          "2024",
+          "2025",
+          "2026N"
+        ],
+        "ebitda": [
+          13.698,
+          15.483,
+          15.984,
+          18.950000000000003
+        ],
+        "dcf": [
+          7.578,
+          8.363,
+          8.202,
+          10.169
+        ]
+      },
+      "NARRATIVE_LOCATOR": "Ch4 §4.1",
+      "TABLE_LOCATOR": "Ch4 §4.1",
+      "CAPTION_LOCATOR": "Ch4 §4.1",
+      "RENDERED_ASSET_LOCATOR": "inline-svg:VIS-001",
+      "status": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-002",
+      "FIGURE_TITLE": "최근 8분기: 2026년에 현금흐름 레벨이 상승",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.quarterly_8q",
+      "SOURCE_VALUES": {
+        "quarters": [
+          "3Q24",
+          "4Q24",
+          "1Q25",
+          "2Q25",
+          "3Q25",
+          "4Q25",
+          "1Q26",
+          "2Q26"
+        ],
+        "ebitda": [
+          3.959,
+          3.884,
+          4.098,
+          3.866,
+          3.838,
+          4.182,
+          4.937,
+          5.066
+        ],
+        "dcf": [
+          1.99,
+          1.978,
+          2.31,
+          1.959,
+          1.895,
+          2.041,
+          2.704,
+          2.587
+        ]
+      },
+      "SOURCE_VERSION_OR_HASH": "7232516943bbeaca",
+      "DISPLAY_VALUES": {
+        "quarters": [
+          "3Q24",
+          "4Q24",
+          "1Q25",
+          "2Q25",
+          "3Q25",
+          "4Q25",
+          "1Q26",
+          "2Q26"
+        ],
+        "ebitda": [
+          3.959,
+          3.884,
+          4.098,
+          3.866,
+          3.838,
+          4.182,
+          4.937,
+          5.066
+        ],
+        "dcf": [
+          1.99,
+          1.978,
+          2.31,
+          1.959,
+          1.895,
+          2.041,
+          2.704,
+          2.587
+        ]
+      },
+      "NARRATIVE_LOCATOR": "Ch4 §4.2",
+      "TABLE_LOCATOR": "Ch4 §4.2",
+      "CAPTION_LOCATOR": "Ch4 §4.2",
+      "RENDERED_ASSET_LOCATOR": "inline-svg:VIS-002",
+      "status": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-003",
+      "FIGURE_TITLE": "Growth Capex 상승",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.annual_3y + 2026_guidance",
+      "SOURCE_VALUES": {
+        "2024": 3.0,
+        "2025": 4.535,
+        "2026_guidance_midpoint": 5.75
+      },
+      "SOURCE_VERSION_OR_HASH": "3a38454d0f78466b",
+      "DISPLAY_VALUES": {
+        "2024": 3.0,
+        "2025": 4.535,
+        "2026_guidance_midpoint": 5.75
+      },
+      "NARRATIVE_LOCATOR": "Ch4 §4.5",
+      "TABLE_LOCATOR": "Ch4 §4.5",
+      "CAPTION_LOCATOR": "Ch4 §4.5",
+      "RENDERED_ASSET_LOCATOR": "inline-svg:VIS-003",
+      "status": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-006",
+      "FIGURE_TITLE": "Current-price reverse expectations",
+      "AUTHORITATIVE_SOURCE_BLOCK": "reverse_expectations.sensitivity",
+      "SOURCE_VALUES": {
+        "multiple": [
+          7.0,
+          7.5,
+          7.75,
+          8.0,
+          8.5
+        ],
+        "required_dcf_per_unit": [
+          3.468,
+          3.237,
+          3.133,
+          3.035,
+          2.856
+        ]
+      },
+      "SOURCE_VERSION_OR_HASH": "2cd0ac7bed196ffd",
+      "DISPLAY_VALUES": {
+        "multiple": [
+          7.0,
+          7.5,
+          7.75,
+          8.0,
+          8.5
+        ],
+        "required_dcf_per_unit": [
+          3.468,
+          3.237,
+          3.133,
+          3.035,
+          2.856
+        ]
+      },
+      "NARRATIVE_LOCATOR": "Ch5 §5.5",
+      "TABLE_LOCATOR": "Ch5 §5.5",
+      "CAPTION_LOCATOR": "Ch5 §5.5",
+      "RENDERED_ASSET_LOCATOR": "inline-svg:VIS-006",
+      "status": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-004",
+      "FIGURE_TITLE": "Q2 2026 DCF: 연결 수치에서 ET common economics로",
+      "AUTHORITATIVE_SOURCE_BLOCK": "decision_bridges.q2_2026_dcf_bridge",
+      "SOURCE_VALUES": {
+        "consolidated_dcf": 3.473,
+        "less_sun_sunc_dcf": -0.594,
+        "plus_sun_distributions": 0.102,
+        "less_usac_dcf": -0.125,
+        "plus_usac_distributions": 0.024,
+        "less_other_nci_dcf": -0.293,
+        "et_attributable_adjusted_dcf": 2.587
+      },
+      "SOURCE_VERSION_OR_HASH": "1248a17527c4271a",
+      "DISPLAY_VALUES": {
+        "consolidated_dcf": 3.473,
+        "less_sun_sunc_dcf": -0.594,
+        "plus_sun_distributions": 0.102,
+        "less_usac_dcf": -0.125,
+        "plus_usac_distributions": 0.024,
+        "less_other_nci_dcf": -0.293,
+        "et_attributable_adjusted_dcf": 2.587
+      },
+      "NARRATIVE_LOCATOR": "Appendix A / Ch0 §0.4",
+      "TABLE_LOCATOR": "Appendix A / Ch0 §0.4",
+      "CAPTION_LOCATOR": "Appendix A / Ch0 §0.4",
+      "RENDERED_ASSET_LOCATOR": "inline-svg:VIS-004",
+      "status": "PASS"
+    }
+  ],
+  "visual_lineage_manifest": {
+    "decision_visuals_total": 6,
+    "decision_visuals_parity_pass": 6,
+    "stale_visual_assets": 0,
+    "figure_numerical_parity": "PASS",
+    "visual_data_lineage": "PASS",
+    "visual_semantic_parity": "PASS"
+  }
+}

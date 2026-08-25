@@ -1,0 +1,882 @@
+{
+  "meta": {
+    "ticker": "CEG",
+    "company": "Constellation Energy Corporation",
+    "T0": "2026-08-25",
+    "price_asof": "2026-08-24",
+    "filing_asof": "2026-08-06",
+    "consensus_asof": "2026-08-21",
+    "version": "DDOS v1.7 CEG"
+  },
+  "financials": {
+    "annual_3y": {
+      "2023": {
+        "revenue_bn": 24.918,
+        "gaap_net_income_bn": 1.577,
+        "gaap_ocf_bn": -5.301,
+        "capex_bn": 2.422,
+        "adjusted_operating_eps": 6.28
+      },
+      "2024": {
+        "revenue_bn": 23.568,
+        "gaap_net_income_bn": 3.738,
+        "gaap_ocf_bn": -2.464,
+        "capex_bn": 2.565,
+        "adjusted_operating_eps": 8.67
+      },
+      "2025": {
+        "revenue_bn": 25.533,
+        "gaap_net_income_bn": 2.323,
+        "gaap_ocf_bn": 4.237,
+        "capex_bn": 2.949,
+        "adjusted_operating_eps": 9.39
+      }
+    },
+    "quarterly_8q": {
+      "2024Q3": {
+        "revenue_bn": 6.55,
+        "adjusted_operating_eps": 2.74
+      },
+      "2024Q4": {
+        "revenue_bn": 5.382,
+        "adjusted_operating_eps": 2.44
+      },
+      "2025Q1": {
+        "revenue_bn": 6.788,
+        "adjusted_operating_eps": 2.14
+      },
+      "2025Q2": {
+        "revenue_bn": 6.101,
+        "adjusted_operating_eps": 1.91
+      },
+      "2025Q3": {
+        "revenue_bn": 6.57,
+        "adjusted_operating_eps": 3.04
+      },
+      "2025Q4": {
+        "revenue_bn": 6.074,
+        "adjusted_operating_eps": 2.3
+      },
+      "2026Q1": {
+        "revenue_bn": 11.122,
+        "adjusted_operating_eps": 2.74
+      },
+      "2026Q2": {
+        "revenue_bn": 7.504,
+        "adjusted_operating_eps": 2.55
+      }
+    },
+    "latest_balance_sheet": {
+      "long_term_debt_bn": 19.606,
+      "shares_outstanding_m_2026_07_31": 354.307,
+      "q2_diluted_avg_shares_m": 360,
+      "fy2026_guidance_avg_shares_m": 357
+    },
+    "latest_half": {
+      "h1_2026_gaap_ocf_bn": 1.553,
+      "h1_2026_capex_bn": 2.521,
+      "h1_2026_buybacks_bn": 1.971,
+      "h1_2026_nuclear_generation_gwh": 88827,
+      "h1_2026_nuclear_capacity_factor_pct": 92.7
+    },
+    "ceilings": [
+      "Calpine post-close standalone synergy and normalized segment FCF are not separately disclosed with enough precision.",
+      "Most economics for the newly signed 920 MW nuclear PPAs are undisclosed.",
+      "Purchase accounting and acquired commodity contract amortization remain provisional through 2026.",
+      "Historical valuation base rate is structurally limited by only ~4 years of independent history and the 2026 Calpine regime break."
+    ]
+  },
+  "industry": {
+    "pjm_10y_summer_peak_cagr": 0.036,
+    "pjm_2036_summer_peak_mw": 222106,
+    "pjm_10y_energy_cagr": 0.053,
+    "pjm_2036_energy_gwh": 1437629,
+    "capacity_prices_usd_mw_day": {
+      "2024_25": 28.92,
+      "2025_26": 269.92,
+      "2026_27": 329.17,
+      "2027_28": 333.44
+    },
+    "2027_28_capacity_shortfall_ucap_mw": 6516.6,
+    "2027_28_reserve_margin_pct": 14.4,
+    "target_reserve_margin_pct": 20.0,
+    "evidence_boundary": "PJM forecasts are forecasts, not contracted load; PJM is actively reviewing large-load and data-center forecast methodology/accuracy in 2026."
+  },
+  "operations": {
+    "nuclear": {
+      "q2_2026_generation_gwh": 44160,
+      "q2_2025_generation_gwh": 45170,
+      "q2_2026_capacity_factor_pct": 93.0,
+      "q2_2025_capacity_factor_pct": 94.8,
+      "q2_2026_refueling_days": 86,
+      "q2_2025_refueling_days": 41,
+      "q2_2026_non_refueling_outage_days": 20,
+      "q2_2025_non_refueling_outage_days": 22
+    },
+    "other_generation": {
+      "q2_2026_gas_oil_renew_generation_gwh": 30649,
+      "q2_2026_calpine_generation_gwh": 24914,
+      "q2_2026_gas_oil_pumped_hydro_efof_pct": 6.2,
+      "h1_2026_gas_oil_pumped_hydro_efof_pct": 5.2
+    },
+    "market": {
+      "pjm_west_q2_2026_usd_mwh": 51.4,
+      "pjm_west_q2_2025_usd_mwh": 42.43,
+      "pjm_emaac_capacity_q2_2026_usd_mw_day": 289.67,
+      "pjm_emaac_capacity_q2_2025_usd_mw_day": 125.71
+    },
+    "capital_allocation": {
+      "buybacks_ytd_q2_bn": 2.2,
+      "buybacks_since_separation_bn": 4.6,
+      "shares_repur_since_separation_m": 25.5,
+      "remaining_authorization_bn": 2.8,
+      "required_divestiture_gross_proceeds_bn": 5.9
+    }
+  },
+  "contracts": [
+    {
+      "asset": "Crane",
+      "customer": "Microsoft",
+      "mw": 835,
+      "term_years": 20,
+      "start": "target 2027 restart; subject to approvals",
+      "stage": "regulatory / restart",
+      "price": "undisclosed"
+    },
+    {
+      "asset": "Clinton",
+      "customer": "Meta",
+      "mw": 1121,
+      "term_years": 20,
+      "start": "2027-06",
+      "stage": "contracted",
+      "price": "undisclosed",
+      "notes": "includes 30 MW uprate"
+    },
+    {
+      "asset": "Dresden",
+      "customer": "Walmart",
+      "mw": 176,
+      "term_years": 15,
+      "start": "2029/2030",
+      "stage": "contracted",
+      "price": "undisclosed",
+      "notes": "two 15-year agreements; 30 MW expansion enabled"
+    },
+    {
+      "asset": "Nuclear portfolio",
+      "customer": "diverse investment-grade customers",
+      "mw": 920,
+      "term_years": 18.5,
+      "start": "2029-2031; full ramp 2032",
+      "stage": "contracted",
+      "price": "undisclosed",
+      "notes": "890 MW existing generation + 30 MW Dresden uprate; includes 176 MW announced Jun 23"
+    }
+  ],
+  "management": {
+    "promise_delivery": [
+      {
+        "year": 2022,
+        "guide": "Adjusted EBITDA initial $2.35–2.75B; revised",
+        "actual": "$2.667B",
+        "assessment": "meet/beat revised range"
+      },
+      {
+        "year": 2023,
+        "guide": "Adjusted EBITDA initial $2.9–3.3B; raised to $3.8–4.0B",
+        "actual": "$4.025B",
+        "assessment": "beat"
+      },
+      {
+        "year": 2024,
+        "guide": "Adjusted OE EPS initial $7.23–8.03",
+        "actual": "$8.67",
+        "assessment": "beat"
+      },
+      {
+        "year": 2025,
+        "guide": "$8.90–9.60; later $9.05–9.45",
+        "actual": "$9.39",
+        "assessment": "meet upper range"
+      },
+      {
+        "year": 2026,
+        "guide": "initial $11–12; Q2 revised $11.50–12.50",
+        "actual": "in progress",
+        "assessment": "raised"
+      }
+    ],
+    "ceo_target_comp_performance_linked_pct": 91,
+    "ceo_beneficial_shares": 157074,
+    "ceo_is_board_chair_since": "2026-08-04",
+    "lead_independent_director": "Charles L. Harrington"
+  },
+  "kpis": [
+    {
+      "name": "Nuclear capacity factor",
+      "history": [
+        {
+          "period": "2025Q2",
+          "value": 94.8
+        },
+        {
+          "period": "2026H1",
+          "value": 92.7
+        },
+        {
+          "period": "2026Q2",
+          "value": 93.0
+        }
+      ],
+      "current": 93.0,
+      "thresholds": {
+        "green": ">=94% normalized",
+        "yellow": "92% to <94%",
+        "red": "<92% or repeated unplanned outage deterioration"
+      }
+    },
+    {
+      "name": "Gas/oil/pumped hydro EFOF",
+      "history": [
+        {
+          "period": "2026H1",
+          "value": 5.2
+        },
+        {
+          "period": "2026Q2",
+          "value": 6.2
+        }
+      ],
+      "current": 6.2,
+      "thresholds": {
+        "green": "<=5%",
+        "yellow": ">5% to 7%",
+        "red": ">7%"
+      }
+    },
+    {
+      "name": "Adjusted Operating EPS guidance",
+      "history": [
+        {
+          "period": "2026 initial midpoint",
+          "value": 11.5
+        },
+        {
+          "period": "2026 revised midpoint",
+          "value": 12.0
+        }
+      ],
+      "current": 12.0,
+      "thresholds": {
+        "green": "tracking >=$12.0 or raised",
+        "yellow": "$11.50-$12.00 without cut",
+        "red": "guide cut or < $11.50"
+      }
+    },
+    {
+      "name": "Crane restart stage",
+      "history": [
+        {
+          "period": "2026-07-01",
+          "value": "fuel possession amendment approved"
+        },
+        {
+          "period": "2026-08-11",
+          "value": "NRC still lists SAFSTOR; restart reviews ongoing"
+        }
+      ],
+      "current": "regulatory execution",
+      "thresholds": {
+        "green": "major NRC safety/environment milestones support 2027/28 restart",
+        "yellow": "schedule slips but license path intact",
+        "red": "restart permission fails, capex materially overruns or schedule slips beyond 2028"
+      }
+    },
+    {
+      "name": "Long-term clean contracting",
+      "history": [
+        {
+          "period": "2026Q2",
+          "value": "+920 MW; avg 18.5 years"
+        },
+        {
+          "period": "2032 target framing",
+          "value": "~30% of expected baseload clean MWh under long-term agreement"
+        }
+      ],
+      "current": "920 MW newly signed",
+      "thresholds": {
+        "green": "additional contracts with attractive economics and on-time start",
+        "yellow": "MW grows but economics remain opaque",
+        "red": "cancellations, start delays or disclosed premium below underwriting"
+      }
+    },
+    {
+      "name": "Leverage / per-share capital discipline",
+      "history": [
+        {
+          "period": "2025YE debt",
+          "value": 7.403
+        },
+        {
+          "period": "2026Q2 debt",
+          "value": 19.606
+        }
+      ],
+      "current": 19.606,
+      "thresholds": {
+        "green": "investment-grade ratings stable, debt falls while buybacks remain FCF-funded",
+        "yellow": "debt roughly flat near $20B with FCF improvement",
+        "red": "debt rises materially above $20B without cash-flow step-up or dilution resumes"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.25,
+      "revenue_path": [
+        35.1,
+        34.5,
+        35.0,
+        35.5,
+        36.0
+      ],
+      "eps_path": [
+        12.0,
+        12.0,
+        12.5,
+        13.0,
+        14.0
+      ],
+      "fcf": [
+        3.8,
+        4.0,
+        4.5,
+        4.8,
+        5.0
+      ],
+      "shares_path": [
+        357,
+        355,
+        355,
+        355,
+        355
+      ],
+      "terminal_pe": 16.0,
+      "summary": "대형부하 지연과 용량가격 정상화, 원전 CF 91~92%, Crane 지연, Calpine commodity beta/이자부담이 시너지를 압도",
+      "margin_path": [
+        12.21,
+        12.35,
+        12.68,
+        13.0,
+        13.81
+      ],
+      "terminal_value": 224.0,
+      "per_share_value": 142.36,
+      "scenario_irr": -0.0486,
+      "diluted_shares": 355
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "revenue_path": [
+        35.1,
+        36.0,
+        38.0,
+        40.5,
+        43.0
+      ],
+      "eps_path": [
+        12.0,
+        13.8,
+        15.5,
+        17.0,
+        18.5
+      ],
+      "fcf": [
+        4.1,
+        4.3,
+        5.6,
+        6.3,
+        6.5
+      ],
+      "shares_path": [
+        357,
+        350,
+        346,
+        343,
+        340
+      ],
+      "terminal_pe": 20.0,
+      "summary": "PJM scarcity 일부 지속, nuclear CF 93~94%, Calpine 통합 점진 실현, Crane/공개 PPA 계획대로 진행, buyback이 dilution을 서서히 상쇄",
+      "margin_path": [
+        12.21,
+        13.42,
+        14.11,
+        14.4,
+        14.63
+      ],
+      "terminal_value": 370.0,
+      "per_share_value": 235.14,
+      "scenario_irr": 0.0785,
+      "diluted_shares": 340
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.25,
+      "revenue_path": [
+        35.1,
+        37.0,
+        40.0,
+        43.0,
+        46.0
+      ],
+      "eps_path": [
+        12.0,
+        14.5,
+        17.0,
+        19.5,
+        22.0
+      ],
+      "fcf": [
+        4.2,
+        4.5,
+        6.0,
+        7.0,
+        7.5
+      ],
+      "shares_path": [
+        357,
+        348,
+        342,
+        338,
+        335
+      ],
+      "terminal_pe": 22.0,
+      "summary": "높은 capacity/power price, gas utilization·commercial margin 개선, 추가 premium PPA, Crane 일정 준수, 공격적이지만 재무규율 있는 buyback",
+      "margin_path": [
+        12.21,
+        13.64,
+        14.54,
+        15.33,
+        16.02
+      ],
+      "terminal_value": 484.0,
+      "per_share_value": 307.59,
+      "scenario_irr": 0.1535,
+      "diluted_shares": 335
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.1,
+      "revenue_path": [
+        35.1,
+        38.0,
+        42.0,
+        46.0,
+        50.0
+      ],
+      "eps_path": [
+        12.0,
+        15.0,
+        18.0,
+        21.5,
+        25.0
+      ],
+      "fcf": [
+        4.3,
+        4.7,
+        6.5,
+        7.5,
+        8.3
+      ],
+      "shares_path": [
+        357,
+        347,
+        340,
+        335,
+        330
+      ],
+      "terminal_pe": 24.0,
+      "summary": "구조적 scarcity 장기화, powered-land/추가 uprate/장기계약 확대, Calpine cross-sell과 포트폴리오 optionality까지 가치화",
+      "margin_path": [
+        12.21,
+        13.7,
+        14.57,
+        15.66,
+        16.5
+      ],
+      "terminal_value": 600.0,
+      "per_share_value": 381.31,
+      "scenario_irr": 0.2171,
+      "diluted_shares": 330
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B Hybrid; Mode D normalized commodity/cycle cross-check",
+    "hurdle_rate": 0.12,
+    "horizon_years": 4,
+    "core": 210.0,
+    "execution": 57.0,
+    "ecosystem": 8.0,
+    "drag": 30.0,
+    "decomposition_cross_check": 245.0,
+    "expected_value": 244.67,
+    "expected_terminal_value": 385.0,
+    "expected_irr": 0.0893,
+    "current_price": 273.43,
+    "current_price_to_fy2026_consensus_pe": 22.54,
+    "current_price_premium_to_expected_value": 0.1175,
+    "method_note": "Expected value is probability-weighted present value of 2030 scenario terminal values discounted at 12%. Core/Execution/Ecosystem/Drag is a separate Mode-B decomposition cross-check, not an additional sum on top of scenario PVs."
+  },
+  "reverse_expectations": {
+    "required_2030_terminal_price_for_12pct_irr": 430.25,
+    "required_by_terminal_pe": {
+      "18x": {
+        "required_2030_eps": 23.9,
+        "required_eps_cagr_from_2026_midpoint": 0.188
+      },
+      "20x": {
+        "required_2030_eps": 21.51,
+        "required_eps_cagr_from_2026_midpoint": 0.1571
+      },
+      "22x": {
+        "required_2030_eps": 19.56,
+        "required_eps_cagr_from_2026_midpoint": 0.1299
+      },
+      "24x": {
+        "required_2030_eps": 17.93,
+        "required_eps_cagr_from_2026_midpoint": 0.1056
+      }
+    },
+    "interpretation": "At a 20x terminal multiple, the current price requires about $21.5 of 2030 EPS, roughly 15.7% CAGR from the $12.0 2026 guidance midpoint; a lower 18x multiple raises required EPS to about $23.9."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "adjusted_eps": 12.13,
+      "revenue_bn": 35.08,
+      "source_quality": "secondary public aggregation"
+    },
+    "fy2": {
+      "year": 2027,
+      "adjusted_eps": 13.29,
+      "source_quality": "secondary public aggregation"
+    },
+    "target_price": {
+      "asof": "2026-08-10 approximate",
+      "mean": 349.96,
+      "median": 342.0,
+      "low": 290.0,
+      "high": 441.0,
+      "source_quality": "secondary public aggregation"
+    },
+    "short_interest": {
+      "asof": "2026-07-31",
+      "shares_m": 10.429,
+      "float_pct": 2.95,
+      "days_to_cover": 3.9
+    },
+    "revision_trend": "2026 company guidance was raised at Q2; public FY2026 EPS consensus sits near the revised midpoint, while price targets remain materially above the current price."
+  },
+  "stance": {
+    "zone": "관망 / 조건부 매수",
+    "price_bands": {
+      "<=220": "매력적 — 오류 여유가 커지는 구간",
+      "220-240": "조건부 매수 — 12% hurdle에 가까운 진입",
+      "240-285": "관망 — Base 가치와 Bull 실행가치가 혼재",
+      "285-320": "실행 선반영 — 추가 계약/Crane/Calpine 성과 필요",
+      ">320": "Bull Execution·Ecosystem 의존"
+    },
+    "horizon": "2030 terminal / 4-year underwriting",
+    "required_return": 0.12,
+    "reason": "Probability-weighted expected IRR is ~8.9%, below the 12% hurdle at $273.43. Asset quality is high, but the equity already prices substantial execution."
+  },
+  "catalysts": [
+    {
+      "when": "2H 2026",
+      "event": "Brazos Valley divestiture close / DOJ divestiture completion",
+      "sensitivity": "deleveraging and transaction cleanup"
+    },
+    {
+      "when": "2H 2026–2027",
+      "event": "Crane NRC/FERC/PJM restart milestones",
+      "sensitivity": "largest near-term execution de-risking catalyst"
+    },
+    {
+      "when": "2027-06",
+      "event": "Meta–Clinton 20-year PPA start",
+      "sensitivity": "visible long-duration nuclear contract economics"
+    },
+    {
+      "when": "2027/28 delivery year",
+      "event": "PJM capacity price $333.44/MW-day applies",
+      "sensitivity": "capacity revenue support, partly offset by policy/hedge effects"
+    },
+    {
+      "when": "2029–2032",
+      "event": "920 MW new long-term nuclear PPAs begin and ramp",
+      "sensitivity": "duration premium and cash-flow visibility"
+    },
+    {
+      "when": "ongoing",
+      "event": "additional nuclear uprates / powered-land / gas contracts",
+      "sensitivity": "moves value from Execution to Ecosystem if customer-supported and return-accretive"
+    }
+  ],
+  "thesis_breaks": [
+    "PJM large-load forecast is revised down materially and capacity scarcity normalizes faster than expected.",
+    "Nuclear capacity factor remains below ~92% through repeated operating problems rather than planned outage timing.",
+    "Crane slips beyond 2028 or cost rises materially without contractual compensation/return protection.",
+    "Calpine adds leverage and commodity beta but fails to generate durable commercial/retail portfolio benefits.",
+    "Adjusted earnings growth increasingly relies on exclusions while underlying cash conversion fails to improve.",
+    "Debt and interest expense remain elevated enough that buybacks cannot offset the acquisition share issuance on a per-share basis."
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "1.1–1.5"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "1.2"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "1.3–1.4"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "1.6–1.7"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "3.1"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "2.1–2.2"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "2.3"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "3.2–3.4"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "3.2 / Appendix A"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "CEILING",
+      "h3_locator": "3.5 / 4.4"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "CEILING",
+      "h3_locator": "3.6 / Appendix B"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "3.7"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "3.9"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "4.1 / Appendix C"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "CEILING",
+      "h3_locator": "4.3"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "4.4 / 5.4"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "4.2 / 6.4"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE",
+      "h3_locator": "0.4 / 5.5 / Appendix D"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "COMPLETE",
+      "h3_locator": "5.2"
+    },
+    {
+      "rc_id": "RC-020",
+      "status": "COMPLETE",
+      "h3_locator": "5.1–5.4"
+    },
+    {
+      "rc_id": "RC-021",
+      "status": "COMPLETE",
+      "h3_locator": "5.5"
+    },
+    {
+      "rc_id": "RC-022",
+      "status": "CEILING",
+      "h3_locator": "5.6 / Appendix E"
+    },
+    {
+      "rc_id": "RC-023",
+      "status": "COMPLETE",
+      "h3_locator": "6.2–6.5"
+    }
+  ],
+  "source_registry": [
+    {
+      "id": "S01",
+      "title": "CEG 2026 Q2 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000104/ceg-20260630.htm",
+      "tier": 1
+    },
+    {
+      "id": "S02",
+      "title": "CEG 2026 Q2 Earnings Release",
+      "url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000097/ceg-20260806991.htm",
+      "tier": 1
+    },
+    {
+      "id": "S03",
+      "title": "CEG 2026 Q2 Earnings Presentation",
+      "url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000097/ceg-20260806992.htm",
+      "tier": 1
+    },
+    {
+      "id": "S04",
+      "title": "CEG 2025 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000032/ceg-20251231.htm",
+      "tier": 1
+    },
+    {
+      "id": "S05",
+      "title": "CEG 2026 Proxy Statement",
+      "url": "https://www.sec.gov/Archives/edgar/data/1868275/000155278126000140/e26004_ceg-def14a.htm",
+      "tier": 1
+    },
+    {
+      "id": "S06",
+      "title": "CEG Aug. 5 2026 Board Leadership 8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000089/ceg-20260804.htm",
+      "tier": 1
+    },
+    {
+      "id": "S07",
+      "title": "PJM Load Forecast Development / 2026 Long-Term Forecast",
+      "url": "https://www.pjm.com/planning/resource-adequacy-planning/load-forecast-dev-process",
+      "tier": 2
+    },
+    {
+      "id": "S08",
+      "title": "PJM 2027/28 Base Residual Auction Report",
+      "url": "https://www.pjm.com/-/media/DotCom/markets-ops/rpm/rpm-auction-info/2027-2028/2027-2028-bra-report.pdf",
+      "tier": 2
+    },
+    {
+      "id": "S09",
+      "title": "PJM Capacity Market RPM",
+      "url": "https://www.pjm.com/markets-and-operations/rpm.aspx",
+      "tier": 2
+    },
+    {
+      "id": "S10",
+      "title": "PJM Load Analysis Subcommittee",
+      "url": "https://www.pjm.com/committees-and-groups/subcommittees/las",
+      "tier": 2
+    },
+    {
+      "id": "S11",
+      "title": "EIA: data-center-driven U.S. electricity demand growth",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67344",
+      "tier": 2
+    },
+    {
+      "id": "S12",
+      "title": "EIA AEO2026 data center server use outlook",
+      "url": "https://www.eia.gov/TODAYINENERGY/detail.php?id=67704",
+      "tier": 2
+    },
+    {
+      "id": "S13",
+      "title": "NRC Crane Clean Energy Center status",
+      "url": "https://www.nrc.gov/info-finder/reactors/ccec",
+      "tier": 2
+    },
+    {
+      "id": "S14",
+      "title": "DOE Crane Restart financing",
+      "url": "https://www.energy.gov/edf/crane-restart",
+      "tier": 2
+    },
+    {
+      "id": "S15",
+      "title": "Vistra Q2 2026 Results",
+      "url": "https://investor.vistracorp.com/2026-08-07-Vistra-Reports-Second-Quarter-2026-Results",
+      "tier": 4
+    },
+    {
+      "id": "S16",
+      "title": "Talen Q2 2026 Results",
+      "url": "https://ir.talenenergy.com/news-releases/news-release-details/talen-energy-reports-second-quarter-2026-results-raises-2026",
+      "tier": 4
+    },
+    {
+      "id": "S17",
+      "title": "Talen 2025 Form 10-K / AWS PPA",
+      "url": "https://ir.talenenergy.com/static-files/7815f553-8765-4877-a509-4552cc64c7b6",
+      "tier": 4
+    },
+    {
+      "id": "S18",
+      "title": "NextEra 2026 Proxy / Duane Arnold-Google strategy",
+      "url": "https://www.investor.nexteraenergy.com/~/media/Files/N/NEE-IR/2026%20Proxy.pdf",
+      "tier": 4
+    },
+    {
+      "id": "S19",
+      "title": "StockAnalysis CEG consensus forecast",
+      "url": "https://stockanalysis.com/stocks/ceg/forecast/",
+      "tier": 5
+    },
+    {
+      "id": "S20",
+      "title": "MarketBeat CEG short interest",
+      "url": "https://www.marketbeat.com/stocks/NASDAQ/CEG/short-interest/",
+      "tier": 5
+    },
+    {
+      "id": "S21",
+      "title": "CEG historical price cross-check",
+      "url": "https://mtrustcompany.marketminute.com/quote/NQ%3ACEG/historical",
+      "tier": 5
+    }
+  ]
+}

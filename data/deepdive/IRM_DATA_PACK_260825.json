@@ -1,0 +1,731 @@
+{
+  "meta": {
+    "ticker": "IRM",
+    "company": "Iron Mountain Incorporated",
+    "T0": "2026-08-24",
+    "price_asof": 121.19,
+    "research_asof": "2026-08-25",
+    "filing_asof": "2026-08-05 Q2 2026 Form 10-Q",
+    "consensus_asof": "2026-08-25 public-source check",
+    "version": "DDOS v1.7",
+    "currency": "USD",
+    "pdf_skipped_by_user": true,
+    "price_correction": {
+      "h1_value": 119.51,
+      "final_value": 121.19,
+      "reason": "two independent 2026-08-24 close sources reconciled; localized page inconsistent"
+    }
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "period": "FY2023",
+        "revenue_m": 5480.3,
+        "adjusted_ebitda_m": 1962.0,
+        "affo_m": 1211.2,
+        "affo_per_share": 4.12,
+        "ocf_m": 1113.6,
+        "cash_capex_m": 1339.2,
+        "adjusted_ebitda_approximate": true
+      },
+      {
+        "period": "FY2024",
+        "revenue_m": 6149.9,
+        "adjusted_ebitda_m": 2236.4,
+        "affo_m": 1344.5,
+        "affo_per_share": 4.54,
+        "ocf_m": 1196.7,
+        "cash_capex_m": 1791.6
+      },
+      {
+        "period": "FY2025",
+        "revenue_m": 6901.7,
+        "adjusted_ebitda_m": 2574.0,
+        "affo_m": 1541.0,
+        "affo_per_share": 5.17,
+        "ocf_m": 1340.0,
+        "cash_capex_m": 2271.6,
+        "affo_approximate": true
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "period": "Q3 2024",
+        "revenue_m": 1557.0,
+        "adjusted_ebitda_m": 568.1,
+        "affo_m": 332.0,
+        "affo_per_share": 1.13
+      },
+      {
+        "period": "Q4 2024",
+        "revenue_m": 1581.0,
+        "adjusted_ebitda_m": 605.1,
+        "affo_m": 368.0,
+        "affo_per_share": 1.24
+      },
+      {
+        "period": "Q1 2025",
+        "revenue_m": 1593.0,
+        "adjusted_ebitda_m": 579.9,
+        "affo_m": 348.4,
+        "affo_per_share": 1.17
+      },
+      {
+        "period": "Q2 2025",
+        "revenue_m": 1712.0,
+        "adjusted_ebitda_m": 628.4,
+        "affo_m": 369.7,
+        "affo_per_share": 1.24
+      },
+      {
+        "period": "Q3 2025",
+        "revenue_m": 1754.0,
+        "adjusted_ebitda_m": 660.4,
+        "affo_m": 393.3,
+        "affo_per_share": 1.32
+      },
+      {
+        "period": "Q4 2025",
+        "revenue_m": 1843.0,
+        "adjusted_ebitda_m": 705.3,
+        "affo_m": 429.7,
+        "affo_per_share": 1.44
+      },
+      {
+        "period": "Q1 2026",
+        "revenue_m": 1936.149,
+        "adjusted_ebitda_m": 707.939,
+        "affo_m": 426.106,
+        "affo_per_share": 1.43
+      },
+      {
+        "period": "Q2 2026",
+        "revenue_m": 2029.062,
+        "adjusted_ebitda_m": 727.018,
+        "affo_m": 432.742,
+        "affo_per_share": 1.44
+      }
+    ],
+    "q2_2026_segments": [
+      {
+        "segment": "Global RIM",
+        "revenue_m": 1433.562,
+        "organic_growth_pct": 6.8,
+        "adjusted_ebitda_m": 620.751,
+        "ebitda_margin_pct": 43.3
+      },
+      {
+        "segment": "Data Center",
+        "revenue_m": 262.871,
+        "reported_growth_pct": 38.8,
+        "organic_growth_pct": 38.7,
+        "adjusted_ebitda_m": 137.343,
+        "ebitda_margin_pct": 52.2
+      },
+      {
+        "segment": "Corporate & Other",
+        "revenue_m": 332.629,
+        "reported_growth_pct": 67.4,
+        "adjusted_ebitda_m": -31.076,
+        "ebitda_margin_pct": null
+      }
+    ],
+    "h1_2026_cash_bridge": {
+      "ocf_m": 887.813,
+      "cash_dividends_m": 532.742,
+      "recurring_capex_m": 73.268,
+      "post_dividend_recurring_capex_ocf_m": 281.803,
+      "growth_capex_m": 1044.854,
+      "data_center_growth_capex_m": 880.086,
+      "internal_coverage_of_growth_capex_pct": 26.97,
+      "cash_interest_paid_m": 461.459,
+      "interest_expense_m": 447.267
+    },
+    "capital_structure_q2_2026": {
+      "cash_m": 204.793,
+      "current_debt_m": 220.809,
+      "long_term_debt_net_m": 17128.84,
+      "long_term_operating_lease_liabilities_m": 2265.294,
+      "shares_outstanding_2026_07_24_m": 297.702812,
+      "q2_weighted_diluted_shares_m": 299.849
+    },
+    "2026_guidance_midpoint": {
+      "revenue_m": 7975.0,
+      "adjusted_ebitda_m": 2960.0,
+      "affo_m": 1770.0,
+      "affo_per_share": 5.9,
+      "total_capex_m": 2200.0,
+      "growth_capex_m": 2050.0,
+      "recurring_capex_m": 150.0
+    },
+    "ceilings": [
+      "project-level data-center capex/MW and ROIC not publicly disclosed",
+      "Digital standalone ARR/gross margin/retention/ROI not publicly disclosed",
+      "ALM standalone EBITDA margin/working-capital economics not publicly disclosed",
+      "property-by-property NAV inputs not publicly disclosed"
+    ]
+  },
+  "kpis": [
+    {
+      "name": "RIM storage organic growth",
+      "unit": "%",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": 5.4
+        }
+      ],
+      "current": 5.4,
+      "thresholds": {
+        "green": ">=4.5%",
+        "yellow": "3.0% to <4.5%",
+        "red": "<3.0%"
+      }
+    },
+    {
+      "name": "RIM adjusted EBITDA margin",
+      "unit": "%",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": 43.3
+        }
+      ],
+      "current": 43.3,
+      "thresholds": {
+        "green": ">=43%",
+        "yellow": "41% to <43%",
+        "red": "<41%"
+      }
+    },
+    {
+      "name": "Data Center organic revenue growth",
+      "unit": "%",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": 38.7
+        }
+      ],
+      "current": 38.7,
+      "thresholds": {
+        "green": ">=30%",
+        "yellow": "20% to <30%",
+        "red": "<20%"
+      }
+    },
+    {
+      "name": "Data Center adjusted EBITDA margin",
+      "unit": "%",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": 52.2
+        }
+      ],
+      "current": 52.2,
+      "thresholds": {
+        "green": ">=50%",
+        "yellow": "47% to <50%",
+        "red": "<47%"
+      }
+    },
+    {
+      "name": "AFFO/share YoY growth",
+      "unit": "%",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": 16.1
+        }
+      ],
+      "current": 16.1,
+      "thresholds": {
+        "green": ">=10%",
+        "yellow": "5% to <10%",
+        "red": "<5%"
+      }
+    },
+    {
+      "name": "Diluted share growth YoY",
+      "unit": "%",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": 1.52
+        }
+      ],
+      "current": 1.52,
+      "thresholds": {
+        "green": "<=1.5%",
+        "yellow": ">1.5% to 2.5%",
+        "red": ">2.5%"
+      }
+    },
+    {
+      "name": "DC signed-to-energized conversion",
+      "unit": "qualitative",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": "on schedule",
+        "yellow": "1-2 quarter slippage",
+        "red": "repeated >2 quarter slippage"
+      },
+      "ceiling": "project-level milestone disclosure incomplete"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.25,
+      "revenue_path_b": [
+        7.975,
+        8.2
+      ],
+      "margin_path_pct": [
+        37.12,
+        36.59
+      ],
+      "affo_m": [
+        1770,
+        1857
+      ],
+      "fcf": [
+        null,
+        null
+      ],
+      "diluted_shares_m": 302.0,
+      "affo_per_share": 6.15,
+      "exit_p_affo": 16.5,
+      "affo_lens_value": 101.48,
+      "sotp_value": 89.0,
+      "per_share_value": 95.0,
+      "funding_condition": "higher leverage and some dilution; slower energization"
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "revenue_path_b": [
+        7.975,
+        8.7
+      ],
+      "margin_path_pct": [
+        37.12,
+        37.36
+      ],
+      "affo_m": [
+        1770,
+        1956.5
+      ],
+      "fcf": [
+        null,
+        null
+      ],
+      "diluted_shares_m": 301.0,
+      "affo_per_share": 6.5,
+      "exit_p_affo": 20.0,
+      "affo_lens_value": 130.0,
+      "sotp_value": 129.7,
+      "per_share_value": 130.0,
+      "funding_condition": "project debt/JV managed; dilution contained"
+    },
+    {
+      "name": "Up",
+      "probability": 0.25,
+      "revenue_path_b": [
+        7.975,
+        9.1
+      ],
+      "margin_path_pct": [
+        37.12,
+        37.91
+      ],
+      "affo_m": [
+        1770,
+        2055
+      ],
+      "fcf": [
+        null,
+        null
+      ],
+      "diluted_shares_m": 300.0,
+      "affo_per_share": 6.85,
+      "exit_p_affo": 23.0,
+      "affo_lens_value": 157.55,
+      "sotp_value": 158.4,
+      "per_share_value": 158.0,
+      "funding_condition": "fast EBITDA ramp and limited dilution"
+    }
+  ],
+  "valuation": {
+    "mode": "Mode F — Hybrid Asset/NAV (SOTP + AFFO/share + Reverse Expectations)",
+    "core": 129.7,
+    "execution": 0.0,
+    "ecosystem": 0.0,
+    "drag": null,
+    "expected_value": 128.25,
+    "expected_cash_distribution_12m": 3.456,
+    "expected_total_value_12m": 131.706,
+    "expected_irr": 0.0868,
+    "current_price": 121.19,
+    "base_value": 130.0,
+    "down_value": 95.0,
+    "up_value": 158.0,
+    "upside_downside_ratio": 1.41,
+    "hurdle_reference": 0.12,
+    "current_p_affo_2026e": 20.54,
+    "approx_current_ev_2026e_ebitda_ex_operating_leases": 18.03,
+    "annualized_dividend_per_share": 3.456,
+    "dividend_yield": 0.02852,
+    "affo_payout_ratio": 0.5858,
+    "property_level_nav_status": "PRIMARY_SOURCE_CEILING"
+  },
+  "reverse_expectations": {
+    "target_total_return_12m": 0.1,
+    "assumed_12m_dividend": 3.456,
+    "required_end_price": 129.853,
+    "required_affo_per_share_by_exit_multiple": {
+      "18x": 7.214,
+      "20x": 6.493,
+      "22x": 5.902
+    },
+    "interpretation": "20x premium persistence makes ~10% AFFO/share growth sufficient; 18x normalization requires ~22% growth"
+  },
+  "consensus": {
+    "fy1": {
+      "period": "2026",
+      "company_guidance_revenue_mid_b": 7.975,
+      "company_guidance_ebitda_mid_b": 2.96,
+      "company_guidance_affo_per_share_mid": 5.9,
+      "public_consensus_revenue_b": 8.01,
+      "public_consensus_adjusted_eps": 2.48
+    },
+    "fy2": {
+      "period": "2027",
+      "public_consensus_revenue_b": 8.7,
+      "public_consensus_adjusted_eps": 2.73,
+      "public_consensus_ebitda_b": 3.239
+    },
+    "fy3": {
+      "period": "2028",
+      "public_consensus_revenue_b": 9.27,
+      "public_consensus_ebitda_b": 3.549,
+      "public_consensus_adjusted_eps": null
+    },
+    "revision_trend": "positive; company raised 2026 guidance at Q1 and again at Q2",
+    "analyst_rating": {
+      "buy": 10,
+      "hold": 0,
+      "sell": 1,
+      "provider": "Investing.com, past 3 months"
+    },
+    "target_price_provider_dispersion": {
+      "low_average": 135.36,
+      "high_average": 144.6,
+      "note": "localized/provider aggregation differs; exact average treated as ceiling"
+    },
+    "short_interest": {
+      "report_date": "2026-07-31",
+      "shares_m": 8.378595,
+      "float_pct": 2.86,
+      "days_to_cover": 4.47
+    },
+    "positioning_conclusion": "broadly bullish consensus; not a crowded short; no contrarian-long setup",
+    "ceiling": "timestamp-harmonized full FY1-FY3 consensus, target distribution and 13F flow not fully available from public free sources"
+  },
+  "stance": {
+    "zone": "관망 + 매력 가격 밴드 대기",
+    "current_price": 121.19,
+    "price_bands": {
+      "strong_interest_if_thesis_intact": "<=105",
+      "attractive_entry": "108-116",
+      "conditional_or_watch": "116-130",
+      "fair_value_watch": "130-135",
+      "avoid_new_or_review_existing": ">=135"
+    },
+    "u_d_above_2_trigger_price": 116.0,
+    "horizon": "12 months",
+    "mispricing_rationale": "NOT_PROVEN_AT_T0",
+    "variant_perception": "growth is real, but per-share return is governed by capital intensity, financing leakage and premium-multiple duration more than headline growth"
+  },
+  "catalysts": [
+    {
+      "when": "2026-11 estimated window",
+      "event": "Q3 2026 earnings",
+      "sensitivity": "high",
+      "official_date_announced": false,
+      "watch": "revenue ~1.98B, EBITDA ~745M, AFFO/share ~1.47 guide"
+    },
+    {
+      "when": "2026 H2",
+      "event": "Data Center leasing / energization updates",
+      "sensitivity": "very high",
+      "watch": "110MW YTD signed capacity conversion to commencement"
+    },
+    {
+      "when": "2026 H2-2027",
+      "event": "project financing / JV updates",
+      "sensitivity": "high",
+      "watch": "asset-level funding cost, parent leverage, NCI"
+    },
+    {
+      "when": "2027-02 estimated window",
+      "event": "FY2026 results and 2027 guidance",
+      "sensitivity": "very high",
+      "official_date_announced": false,
+      "watch": "path to base AFFO/share 6.50"
+    },
+    {
+      "when": "ongoing",
+      "event": "Digital / ALM disclosures and customer wins",
+      "sensitivity": "medium",
+      "watch": "multi-business penetration and standalone economics"
+    }
+  ],
+  "falsification_conditions": [
+    "RIM storage organic growth below 3% for two consecutive quarters",
+    "RIM EBITDA margin below 41% for two consecutive quarters",
+    "Data Center organic revenue growth below 20% or repeated >2-quarter major project slippage",
+    "Data Center EBITDA margin below 47% while capex intensity remains high",
+    "AFFO/share growth below 5% while EBITDA remains double-digit growth",
+    "diluted share count growth >2.5% annualized or leverage persistently exceeds management target range",
+    "Corporate & Other EBITDA losses re-expand despite high revenue growth"
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "0, 3"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "1"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "2"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "3.1-3.2, 4.3"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1.5, 3.3-3.4, 6.3"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1.5, 3.3-3.5, 4.4-4.6, 5.6"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1.3, 3.6"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1.4, 3.7, 4.3"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1.7, 3.8"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "1.6, 3.9"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "4.1-4.4"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "4.5"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "4.6-4.8, 5.6"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "5.8, Appendix A"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "5, Appendix B-C"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "6"
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "visual_id": "VIS-001",
+      "title": "3개년 성장과 자본집약도",
+      "type": "grouped_bar",
+      "source_paths": [
+        "financials.annual_3y[*].revenue_m",
+        "financials.annual_3y[*].adjusted_ebitda_m",
+        "financials.annual_3y[*].cash_capex_m"
+      ]
+    },
+    {
+      "visual_id": "VIS-002",
+      "title": "최근 8분기 매출·AFFO/share",
+      "type": "dual_line",
+      "source_paths": [
+        "financials.quarterly_8q[*].revenue_m",
+        "financials.quarterly_8q[*].affo_per_share"
+      ]
+    },
+    {
+      "visual_id": "VIS-003",
+      "title": "Q2 2026 세그먼트 마진",
+      "type": "horizontal_bar",
+      "source_paths": [
+        "financials.q2_2026_segments[*].ebitda_margin_pct"
+      ]
+    },
+    {
+      "visual_id": "VIS-004",
+      "title": "H1 2026 내부현금과 성장 CAPEX",
+      "type": "funding_bridge",
+      "source_paths": [
+        "financials.h1_2026_cash_bridge"
+      ]
+    },
+    {
+      "visual_id": "VIS-005",
+      "title": "12개월 시나리오 가치",
+      "type": "valuation_range",
+      "source_paths": [
+        "scenarios[*].per_share_value",
+        "valuation.current_price",
+        "valuation.expected_value"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Iron Mountain Q2 2026 Earnings Release",
+      "date": "2026-08-05",
+      "url": "https://investors.ironmountain.com/news/news-details/2026/Iron-Mountain-Reports-Second-Quarter-2026-Results/default.aspx",
+      "tier": "primary"
+    },
+    {
+      "id": "S2",
+      "title": "Iron Mountain Q2 2026 Form 10-Q",
+      "date": "2026-08-05",
+      "url": "https://www.sec.gov/Archives/edgar/data/1020569/000102056926000071/irm-20260630.htm",
+      "tier": "primary"
+    },
+    {
+      "id": "S3",
+      "title": "Iron Mountain Q2 2026 Earnings Presentation",
+      "date": "2026-08-05",
+      "url": "https://www.sec.gov/Archives/edgar/data/1020569/000102056926000068/ironmountainq22026earnin.htm",
+      "tier": "primary"
+    },
+    {
+      "id": "S4",
+      "title": "Iron Mountain 2025 Form 10-K",
+      "date": "2026-02-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/1020569/000102056926000013/irm-20251231.htm",
+      "tier": "primary"
+    },
+    {
+      "id": "S5",
+      "title": "Iron Mountain 2026 Proxy Statement",
+      "date": "2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1020569/000102056926000026/irm-20260323.htm",
+      "tier": "primary"
+    },
+    {
+      "id": "S6",
+      "title": "Iron Mountain Q4/FY2025 Results",
+      "date": "2026-02-12",
+      "url": "https://investors.ironmountain.com/news/news-details/2026/Iron-Mountain-Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx",
+      "tier": "primary"
+    },
+    {
+      "id": "S7",
+      "title": "Iron Mountain 2024 Form 10-K",
+      "date": "2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/1020569/000102056925000040/irm-20241231.htm",
+      "tier": "primary"
+    },
+    {
+      "id": "S8",
+      "title": "Equinix 2025 Form 10-K",
+      "date": "2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "tier": "primary_peer"
+    },
+    {
+      "id": "S9",
+      "title": "Digital Realty 2025 Form 10-K",
+      "date": "2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926015365/dlr-20251231x10k.htm",
+      "tier": "primary_peer"
+    },
+    {
+      "id": "S10",
+      "title": "Digital Realty valuation consensus",
+      "date": "2026-08",
+      "url": "https://www.marketscreener.com/quote/stock/DIGITAL-REALTY-TRUST-INC-12320/valuation/",
+      "tier": "secondary_market"
+    },
+    {
+      "id": "S11",
+      "title": "Equinix valuation consensus",
+      "date": "2026-08",
+      "url": "https://www.marketscreener.com/quote/stock/EQUINIX-INC-20565916/valuation/",
+      "tier": "secondary_market"
+    },
+    {
+      "id": "S12",
+      "title": "IRM historical price cross-check",
+      "date": "2026-08-24",
+      "url": "https://www.investing.com/equities/iron-mountain-inc-historical-data",
+      "tier": "secondary_market"
+    },
+    {
+      "id": "S13",
+      "title": "IRM analyst consensus",
+      "date": "2026-08-25",
+      "url": "https://www.investing.com/equities/iron-mountain-inc-consensus-estimates",
+      "tier": "secondary_market"
+    },
+    {
+      "id": "S14",
+      "title": "IRM short interest",
+      "date": "2026-07-31",
+      "url": "https://www.marketbeat.com/stocks/NYSE/IRM/short-interest/",
+      "tier": "secondary_market"
+    },
+    {
+      "id": "S15",
+      "title": "SEC Form 144 / insider filing; Q2 10-Q 10b5-1 disclosure",
+      "date": "2026-08-06",
+      "tier": "Primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769841/000195917326005703/0001959173-26-005703-index.htm"
+    }
+  ]
+}

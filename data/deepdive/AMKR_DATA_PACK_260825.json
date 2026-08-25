@@ -1,0 +1,864 @@
+{
+  "meta": {
+    "ticker": "AMKR",
+    "company": "Amkor Technology, Inc.",
+    "T0": "2026-08-25",
+    "price_asof": "2026-08-24",
+    "price": 47.9,
+    "filing_asof": "2026-07-28 Q2 2026 Form 10-Q",
+    "transcript_asof": "2026-07-27 Q2 earnings materials",
+    "consensus_asof": "2026-08-24",
+    "version": "Clean DDOS Production OS v1.7",
+    "pdf_omitted_by_user": true
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue_b": 6.503,
+        "gross_margin_pct": 14.5,
+        "operating_income_m": 470,
+        "net_income_m": 360,
+        "eps": 1.46,
+        "ebitda_m": 1135,
+        "cfo_m": 1270,
+        "capex_m": 749,
+        "fcf_m": 534
+      },
+      {
+        "year": 2024,
+        "revenue_b": 6.318,
+        "gross_margin_pct": 14.8,
+        "operating_income_m": 438,
+        "net_income_m": 354,
+        "eps": 1.43,
+        "ebitda_m": 1091,
+        "cfo_m": 1089,
+        "capex_m": 744,
+        "fcf_m": 359
+      },
+      {
+        "year": 2025,
+        "revenue_b": 6.708,
+        "gross_margin_pct": 14.0,
+        "operating_income_m": 467,
+        "net_income_m": 374,
+        "eps": 1.5,
+        "ebitda_m": 1162,
+        "cfo_m": 1096,
+        "capex_m": 905,
+        "fcf_m": 308
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "2024 Q3",
+        "revenue_m": 1862,
+        "gross_margin_pct": 14.6,
+        "operating_income_m": 149,
+        "net_income_m": 123,
+        "eps": 0.49,
+        "ebitda_m": 309
+      },
+      {
+        "quarter": "2024 Q4",
+        "revenue_m": 1629,
+        "gross_margin_pct": 15.1,
+        "operating_income_m": 134,
+        "net_income_m": 106,
+        "eps": 0.43,
+        "ebitda_m": 302
+      },
+      {
+        "quarter": "2025 Q1",
+        "revenue_m": 1322,
+        "gross_margin_pct": 11.9,
+        "operating_income_m": 32,
+        "net_income_m": 21,
+        "eps": 0.09,
+        "ebitda_m": 197
+      },
+      {
+        "quarter": "2025 Q2",
+        "revenue_m": 1511,
+        "gross_margin_pct": 12.0,
+        "operating_income_m": 92,
+        "net_income_m": 54,
+        "eps": 0.22,
+        "ebitda_m": 259
+      },
+      {
+        "quarter": "2025 Q3",
+        "revenue_m": 1987,
+        "gross_margin_pct": 14.3,
+        "operating_income_m": 159,
+        "net_income_m": 127,
+        "eps": 0.51,
+        "ebitda_m": 340
+      },
+      {
+        "quarter": "2025 Q4",
+        "revenue_m": 1888,
+        "gross_margin_pct": 16.7,
+        "operating_income_m": 185,
+        "net_income_m": 172,
+        "eps": 0.69,
+        "ebitda_m": 369
+      },
+      {
+        "quarter": "2026 Q1",
+        "revenue_m": 1685,
+        "gross_margin_pct": 14.2,
+        "operating_income_m": 100,
+        "net_income_m": 83,
+        "eps": 0.33,
+        "ebitda_m": 285
+      },
+      {
+        "quarter": "2026 Q2",
+        "revenue_m": 1898,
+        "gross_margin_pct": 16.8,
+        "operating_income_m": 200,
+        "net_income_m": 174,
+        "eps": 0.7,
+        "ebitda_m": 400
+      }
+    ],
+    "h1_2026_cashflow_m": {
+      "cfo": 381.6,
+      "pp&e_payments": 688.4,
+      "pp&e_sale_and_grants": 37.0,
+      "company_defined_fcf": -269.9
+    },
+    "2026_capex_guidance_b": [
+      2.5,
+      3.0
+    ],
+    "ceilings": [
+      "exact utilization % not disclosed",
+      "program-level ASP/volume/yield/margin not disclosed"
+    ]
+  },
+  "operating": {
+    "q2_2026": {
+      "advanced_products_revenue_m": 1557,
+      "advanced_mix_pct": 82.0,
+      "packaging_mix_pct": 88,
+      "test_mix_pct": 12,
+      "top10_customer_pct": 66,
+      "end_market_mix_pct": {
+        "Communications": 42,
+        "Computing": 22,
+        "Automotive_Industrial_Other": 22,
+        "Consumer": 14
+      }
+    },
+    "arizona": {
+      "total_investment_b": 7.0,
+      "phases": 2,
+      "cleanroom_sqft": ">750,000",
+      "phase1_full_scale_revenue_b": "~1.0",
+      "phase1_full_scale_gm": ">30%",
+      "qualification": "2027 target",
+      "production_start": "early 2028 target",
+      "break_even": "2029 estimate",
+      "full_utilization": "2030 estimate"
+    },
+    "contracts": {
+      "NVIDIA": "$1.5B multi-year advanced packaging/development agreement + prepayment",
+      "TSMC": "10-year Arizona advanced packaging/test procurement and capacity framework"
+    }
+  },
+  "kpis": [
+    {
+      "name": "Computing revenue mix",
+      "current": "22% (Q2 2026)",
+      "history": [
+        "19% FY2025 est.",
+        "21% Q1 2026",
+        "22% Q2 2026"
+      ],
+      "thresholds": {
+        "green": ">=25% with growth from production programs",
+        "yellow": "20–25%",
+        "red": "<20% for 2 consecutive quarters or growth reversal"
+      }
+    },
+    {
+      "name": "Advanced Products mix",
+      "current": "82% (Q2 2026)",
+      "history": [
+        "~82% Q2 2026"
+      ],
+      "thresholds": {
+        "green": ">=80% AND GM rising",
+        "yellow": "75–80% or mix rises without GM",
+        "red": "<75% or mix high but GM <=15%"
+      }
+    },
+    {
+      "name": "Gross margin",
+      "current": "16.8% Q2; Q3 guide 18.5–19.5%",
+      "history": [
+        "11.9% Q1 2025",
+        "16.7% Q4 2025",
+        "14.2% Q1 2026",
+        "16.8% Q2 2026"
+      ],
+      "thresholds": {
+        "green": ">=18.5% near term; >=16.5% 2028 floor",
+        "yellow": "17–18.5% near term",
+        "red": "<17% after Q3 2026 or <16.5% in 2028"
+      }
+    },
+    {
+      "name": "Advanced packaging production engagements",
+      "current": "2.5D 4 production; HDFO RDL 4 production (Investor Day)",
+      "history": [
+        "2.5D: 10 active / 4 production",
+        "HDFO RDL: 18 active / 4 production"
+      ],
+      "thresholds": {
+        "green": "production count rises through 2027",
+        "yellow": "active rises but production flat",
+        "red": "production conversion stalls/reverses"
+      }
+    },
+    {
+      "name": "Arizona schedule",
+      "current": "Phase 1 build; qualification planned 2027, production early 2028",
+      "history": [
+        "groundbreaking 2025",
+        "construction 2026"
+      ],
+      "thresholds": {
+        "green": "qualification in 2027, production early 2028",
+        "yellow": "delay <=2 quarters",
+        "red": "delay >2 quarters or material scope/cost reset"
+      }
+    },
+    {
+      "name": "Arizona economics",
+      "current": "company target ~2029 break-even / 2030 full utilization",
+      "history": [
+        "Phase 1 target ~$1B revenue, >30% GM at full scale"
+      ],
+      "thresholds": {
+        "green": "2029 break-even visible and GM accretive",
+        "yellow": "break-even slips to 2030",
+        "red": "no break-even path by 2030 or >30% GM thesis withdrawn"
+      }
+    },
+    {
+      "name": "FCF / funding",
+      "current": "H1 2026 FCF -$270M; FY capex guide $2.5–3.0B",
+      "history": [
+        "2023 $534M",
+        "2024 $359M",
+        "2025 $308M",
+        "H1 2026 -$270M"
+      ],
+      "thresholds": {
+        "green": "no unplanned equity raise; FCF improves toward breakeven by 2028",
+        "yellow": "extra debt/prepayment needed but within liquidity plan",
+        "red": "material equity raise, capex overrun, or liquidity stress"
+      }
+    },
+    {
+      "name": "Top-10 customer concentration",
+      "current": "66% Q2 2026",
+      "history": [
+        "72% Q2 2025",
+        "68% Q1 2026",
+        "66% Q2 2026"
+      ],
+      "thresholds": {
+        "green": "<=68% with AI diversification",
+        "yellow": "68–72%",
+        "red": ">72% with single-program volatility"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.25,
+      "revenue_path_b": [
+        7.63,
+        7.7,
+        8.0,
+        8.4,
+        8.8
+      ],
+      "margin_path_pct": [
+        17.2,
+        14.8,
+        15.0,
+        15.5,
+        16.0
+      ],
+      "eps_path": [
+        2.54,
+        1.6,
+        1.8,
+        2.1,
+        2.4
+      ],
+      "fcf_path_b": [
+        -1.2,
+        -1.4,
+        -0.6,
+        0.1,
+        0.4
+      ],
+      "diluted_shares_m": 250,
+      "terminal_pe": 13.0,
+      "formation": "통신/모바일 변동성 지속, AI program 전환 지연, Arizona qualification 또는 loading 지연, 2027–28 startup 비용이 예상보다 큼",
+      "break": "Computing mix와 production engagement가 빠르게 증가하고 Arizona가 일정대로 2028 양산/2029 손익분기 달성",
+      "terminal_value": 31.2,
+      "present_value": 18.69,
+      "irr": -0.0939
+    },
+    {
+      "name": "Base",
+      "probability": 0.35,
+      "revenue_path_b": [
+        7.63,
+        8.55,
+        8.95,
+        9.65,
+        10.5
+      ],
+      "margin_path_pct": [
+        17.2,
+        16.5,
+        17.5,
+        19.0,
+        20.5
+      ],
+      "eps_path": [
+        2.54,
+        2.7,
+        2.55,
+        3.3,
+        4.3
+      ],
+      "fcf_path_b": [
+        -1.15,
+        -1.0,
+        -0.2,
+        0.5,
+        0.9
+      ],
+      "diluted_shares_m": 250,
+      "terminal_pe": 16.0,
+      "formation": "2026–27 AI/HPC 성장과 모바일 변동성이 공존하고 2028 Arizona가 계획대로 시작하되 utilization은 2030까지 점진 상승",
+      "break": "2028 revenue/GM이 management range 하단을 크게 하회하거나 반대로 Arizona/HDFO가 계획보다 1년 이상 빠르게 확장",
+      "terminal_value": 68.8,
+      "present_value": 41.22,
+      "irr": 0.0868
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.25,
+      "revenue_path_b": [
+        7.63,
+        8.7,
+        9.2,
+        10.2,
+        11.3
+      ],
+      "margin_path_pct": [
+        17.2,
+        16.8,
+        18.0,
+        20.5,
+        22.5
+      ],
+      "eps_path": [
+        2.54,
+        2.9,
+        2.8,
+        4.2,
+        5.3
+      ],
+      "fcf_path_b": [
+        -1.1,
+        -0.9,
+        0.0,
+        0.8,
+        1.2
+      ],
+      "diluted_shares_m": 251,
+      "terminal_pe": 18.0,
+      "formation": "NVIDIA/TSMC 프로그램이 계획대로 양산 전환, Korea/Vietnam utilization 개선, Arizona 2029 break-even과 2030 full-utilization 달성",
+      "break": "production engagement 전환 정체, 고객 commitment 축소, consolidated GM이 2028 이후 18%를 넘지 못함",
+      "terminal_value": 95.4,
+      "present_value": 57.15,
+      "irr": 0.1716
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.15,
+      "revenue_path_b": [
+        7.63,
+        8.8,
+        9.5,
+        11.0,
+        12.5
+      ],
+      "margin_path_pct": [
+        17.2,
+        17.0,
+        18.8,
+        22.0,
+        24.0
+      ],
+      "eps_path": [
+        2.54,
+        3.1,
+        3.1,
+        5.1,
+        6.5
+      ],
+      "fcf_path_b": [
+        -1.0,
+        -0.8,
+        0.1,
+        1.0,
+        1.5
+      ],
+      "diluted_shares_m": 252,
+      "terminal_pe": 20.0,
+      "formation": "미국 AI 공급망이 전략적 프리미엄을 형성하고 Phase 1이 >30% GM에 근접하며 후속 customer commitments가 Phase 2를 경제적으로 정당화",
+      "break": "미국 cost premium이 가격에 전가되지 않거나 foundry in-house packaging이 외주 opportunity를 흡수",
+      "terminal_value": 130.0,
+      "present_value": 77.88,
+      "irr": 0.258
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B — Hybrid (cyclical OSAT core + advanced-packaging execution optionality)",
+    "hurdle_rate": 0.125,
+    "horizon_years": 4.35,
+    "core_per_share": 33.5,
+    "execution_per_share": 13.0,
+    "ecosystem_per_share": 5.5,
+    "funding_ramp_drag_per_share": -6.9,
+    "expected_present_value": 45.07,
+    "expected_terminal_value": 75.23,
+    "expected_irr": 0.1094,
+    "current_price": 47.9,
+    "terminal_ud_ratio_bull_execution_vs_bear": 2.84,
+    "discounted_ud_ratio_bull_execution_vs_bear": 0.32,
+    "base_present_value": 41.22
+  },
+  "reverse_expectations": {
+    "required_terminal_price_2030_at_12_5pct_hurdle": 79.96,
+    "required_eps_at_16x": 5.0,
+    "required_eps_at_18x": 4.44,
+    "required_eps_at_16x_10pct_hurdle": 4.53,
+    "interpretation": "$47.90에서 12.5% IRR을 요구하고 2030 terminal P/E 16x를 적용하면 약 $5.00 EPS가 필요하다. 이는 회사의 2030 목표와 거의 동일하다.",
+    "operating_translation": [
+      "2030 revenue ~11B 수준",
+      "consolidated GM 약 22%에 근접",
+      "Arizona가 2029 break-even 이후 2030 high utilization",
+      "Computing mix가 2030 company target ~35% 방향으로 상승",
+      "HDFO/2.5D production engagement의 지속적 양산 전환",
+      "unplanned equity dilution 없이 capex funding"
+    ]
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_b": 7.63,
+      "eps": 2.54
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_b": 8.625,
+      "eps": 2.7
+    },
+    "revision_trend": "Q2 beat but Q3 revenue guide disappointment caused sharp reset; long-term analyst targets remain bullish",
+    "price_target_note": "Boursorama showed 3-month target ~$79.40 as of 2026-08-18; use as sentiment context, not intrinsic value."
+  },
+  "stance": {
+    "zone": "WATCH / 조건부 관심 — 현재가는 12.5% hurdle을 충분히 넘기지 못함",
+    "price_bands": {
+      "strong_attractive": "<= $42",
+      "attractive_conditional": "$42–45",
+      "watch_fair": "$45–52",
+      "evidence_required_above": " > $52"
+    },
+    "horizon": "through 2030 Arizona utilization",
+    "trigger": "$45 이하에서 expected IRR이 약 12.5% 이상, $42에서는 약 14.3%로 개선. 단, Arizona/Computing KPI가 훼손되면 가격만으로 매수 논리 성립하지 않음."
+  },
+  "catalysts": [
+    {
+      "date": "2026 Q3",
+      "event": "Q3 revenue $1.95–2.05B / GM 18.5–19.5% guide verification",
+      "why": "utilization-driven margin recovery가 실제인지 첫 단기 확인"
+    },
+    {
+      "date": "2H 2026",
+      "event": "Korea data-center CPU HDFO high-volume ramp / new test building completion",
+      "why": "Computing mix와 test attach 성장의 실물 증거"
+    },
+    {
+      "date": "2027",
+      "event": "Arizona Phase 1 construction completion and customer qualification",
+      "why": "가장 큰 execution gate; startup cost가 본격화되는 동시에 future revenue visibility 결정"
+    },
+    {
+      "date": "2027",
+      "event": "Large customer prepayment funding inflow expected under July agreement [timing per 10-Q; customer mapping is inference]",
+      "why": "near-term liquidity 보완, 그러나 future service obligation과 함께 봐야 함"
+    },
+    {
+      "date": "Early 2028",
+      "event": "Arizona production start target",
+      "why": "capex story가 revenue story로 전환되는 시점"
+    },
+    {
+      "date": "2029",
+      "event": "Arizona estimated break-even",
+      "why": "미국 greenfield economics의 핵심 검증"
+    },
+    {
+      "date": "2030",
+      "event": "Arizona full utilization / company ~$11B+ revenue, ~22%+ GM, ~$5 EPS target",
+      "why": "현재 valuation이 요구하는 장기 실적과 거의 일치"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "promise": "OSAT value chain / profit pool / lifecycle",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch1 §1.1–1.4",
+      "h3_treatment": "Main + Appendix"
+    },
+    {
+      "rc_id": "RC-002",
+      "promise": "AI/HPC demand → package content",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch1 §1.2–1.5",
+      "h3_treatment": "Main + Appendix"
+    },
+    {
+      "rc_id": "RC-003",
+      "promise": "Advanced vs Mainstream mix/economics",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch3 §3.1; Ch4 §4.2",
+      "h3_treatment": "Main"
+    },
+    {
+      "rc_id": "RC-004",
+      "promise": "HDFO/flip-chip/WLP/SiP/test technology",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch3 §3.2–3.4",
+      "h3_treatment": "Main + Appendix"
+    },
+    {
+      "rc_id": "RC-005",
+      "promise": "NVIDIA partnership adoption/economics",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch3 §3.5; Ch4 §4.5",
+      "h3_treatment": "Main + explicit ceiling"
+    },
+    {
+      "rc_id": "RC-006",
+      "promise": "TSMC 10-year partnership/economics",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch1 §1.4; Ch3 §3.5",
+      "h3_treatment": "Main + explicit ceiling"
+    },
+    {
+      "rc_id": "RC-007",
+      "promise": "Customer concentration/end-market diversification",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch3 §3.5; Ch4 §4.2",
+      "h3_treatment": "Main"
+    },
+    {
+      "rc_id": "RC-008",
+      "promise": "Competition by customer job",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch3 §3.6",
+      "h3_treatment": "Main + Appendix"
+    },
+    {
+      "rc_id": "RC-009",
+      "promise": "Facility/capacity ledger",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch3 §3.7",
+      "h3_treatment": "Main + Appendix"
+    },
+    {
+      "rc_id": "RC-010",
+      "promise": "Arizona phase economics",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch3 §3.7; Ch4 §4.5",
+      "h3_treatment": "Main"
+    },
+    {
+      "rc_id": "RC-011",
+      "promise": "3Y + latest 8Q financial reconstruction",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch4 §4.1–4.2",
+      "h3_treatment": "Main + Appendix"
+    },
+    {
+      "rc_id": "RC-012",
+      "promise": "Gross-margin bridge",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch4 §4.3",
+      "h3_treatment": "Main"
+    },
+    {
+      "rc_id": "RC-013",
+      "promise": "2025→2028→2030 operating bridge",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch4 §4.6; Ch5 §5.2",
+      "h3_treatment": "Main"
+    },
+    {
+      "rc_id": "RC-014",
+      "promise": "Kevin Engel measurable track record",
+      "h2_status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch2 §2.1",
+      "h3_treatment": "Explicit ceiling"
+    },
+    {
+      "rc_id": "RC-015",
+      "promise": "Kim family governance/secondary sale",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch2 §2.3",
+      "h3_treatment": "Main"
+    },
+    {
+      "rc_id": "RC-016",
+      "promise": "Debt/convert/capped call/dividend/dilution",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch4 §4.5; Ch5 §5.4",
+      "h3_treatment": "Main + Appendix"
+    },
+    {
+      "rc_id": "RC-017",
+      "promise": "Capex-CFO-FCF funding bridge",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch4 §4.4–4.5",
+      "h3_treatment": "Main"
+    },
+    {
+      "rc_id": "RC-018",
+      "promise": "Downcycle/base-rate discipline",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch1 §1.6; Ch5 §5.2",
+      "h3_treatment": "Main"
+    },
+    {
+      "rc_id": "RC-019",
+      "promise": "Accounting quality screen",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch4 §4.7",
+      "h3_treatment": "Main + Appendix"
+    },
+    {
+      "rc_id": "RC-020",
+      "promise": "Consensus/reaction/positioning",
+      "h2_status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch0 §0.4; Ch5 §5.5",
+      "h3_treatment": "Main + explicit ceiling"
+    },
+    {
+      "rc_id": "RC-021",
+      "promise": "Current-price reverse expectations",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch5 §5.6",
+      "h3_treatment": "Main"
+    },
+    {
+      "rc_id": "RC-022",
+      "promise": "Catalyst/KPI/falsification",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch6 §6.2–6.5",
+      "h3_treatment": "Main"
+    }
+  ],
+  "rc_summary": {
+    "RC_TOTAL": 22,
+    "RC_COMPLETE": 20,
+    "RC_PRIMARY_SOURCE_CEILING": 2,
+    "RC_NOT_MATERIAL": 0,
+    "RC_CONTRADICTED": 0,
+    "RC_UNRESOLVED": 0,
+    "RC_H3_COVERAGE_RATE": "100%"
+  },
+  "audits": {
+    "H1_H2_RESEARCH_CONTRACT_COMPLETENESS": "PASS",
+    "H2_H3_COVERAGE_LINEAGE": "PASS",
+    "LATEST_FILING_CHECK": "PASS — 2026-08-12 dividend checked; no later quarterly filing found as of 2026-08-25",
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "EXPLANATORY_SPACE_ALLOCATION": "PASS",
+    "BASE_RATE": "PRIMARY_SOURCE_CEILING for exact sector success/failure frequency; company 2022–25 cycle used as internal base-rate anchor",
+    "PUBLISHING_HTML": "PASS",
+    "PUBLISHING_PDF": "OMITTED_BY_USER",
+    "REPORT_DATA_PACK_JSON": "PASS",
+    "VISUAL_DATA_LINEAGE": "PASS",
+    "RC_UNRESOLVED": 0
+  },
+  "visual_lineage": [
+    {
+      "visual_id": "V1",
+      "title": "최근 8분기 매출과 gross margin",
+      "source_block": "financials.quarterly_8q",
+      "transform": "direct plot; revenue bars + GM line",
+      "no_manual_override": true
+    },
+    {
+      "visual_id": "V2",
+      "title": "2030 시나리오 terminal value",
+      "source_block": "scenarios[].terminal_value",
+      "transform": "direct bar plot",
+      "no_manual_override": true
+    },
+    {
+      "visual_id": "V3",
+      "title": "Arizona execution timeline",
+      "source_block": "operating.arizona + catalysts",
+      "transform": "milestone layout",
+      "no_manual_override": true
+    },
+    {
+      "visual_id": "V4",
+      "title": "Reverse Expectations",
+      "source_block": "reverse_expectations",
+      "transform": "required terminal price / EPS cards",
+      "no_manual_override": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Amkor Q2 2026 Results",
+      "url": "https://ir.amkor.com/news-releases/news-release-details/amkor-technology-reports-financial-results-second-quarter-2026",
+      "type": "Primary"
+    },
+    {
+      "id": "S2",
+      "title": "Amkor Q2 2026 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1047127/000104712726000046/amkr-20260630.htm",
+      "type": "Primary"
+    },
+    {
+      "id": "S3",
+      "title": "Amkor 2026 Investor Day — SEC Exhibit 99.1",
+      "url": "https://www.sec.gov/Archives/edgar/data/1047127/000104712726000036/ex-991amkorinvestorprese.htm",
+      "type": "Primary / company targets"
+    },
+    {
+      "id": "S4",
+      "title": "NVIDIA–Amkor $1.5B Multi-Year Partnership",
+      "url": "https://ir.amkor.com/news-releases/news-release-details/amkor-technology-announces-strategic-partnership-nvidia-expand",
+      "type": "Primary"
+    },
+    {
+      "id": "S5",
+      "title": "TSMC–Amkor 10-Year Arizona Partnership",
+      "url": "https://ir.amkor.com/news-releases/news-release-details/tsmc-and-amkor-technology-announce-long-term-partnership",
+      "type": "Primary"
+    },
+    {
+      "id": "S6",
+      "title": "Amkor 2025 Form 10-K",
+      "url": "https://ir.amkor.com/static-files/ab60f0aa-e0e8-433f-9a27-191c6ff48b5b",
+      "type": "Primary"
+    },
+    {
+      "id": "S7",
+      "title": "Amkor 2023 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1047127/000104712724000019/amkr-20231231.htm",
+      "type": "Primary"
+    },
+    {
+      "id": "S8",
+      "title": "Amkor Q4/FY2025 Results",
+      "url": "https://ir.amkor.com/news-releases/news-release-details/amkor-technology-reports-financial-results-fourth-quarter-and-11",
+      "type": "Primary"
+    },
+    {
+      "id": "S9",
+      "title": "Amkor Q1 2026 Results",
+      "url": "https://ir.amkor.com/news-releases/news-release-details/amkor-technology-reports-financial-results-first-quarter-2026",
+      "type": "Primary"
+    },
+    {
+      "id": "S10",
+      "title": "Amkor Q1 2026 Earnings Call Transcript",
+      "url": "https://ir.amkor.com/static-files/3073d0f0-b6c9-45fb-9a7a-66eeee20ee1a",
+      "type": "Primary transcript"
+    },
+    {
+      "id": "S11",
+      "title": "Amkor 2026 Proxy Statement",
+      "url": "https://www.sec.gov/Archives/edgar/data/1047127/000119312526140275/d943236ddef14a.htm",
+      "type": "Primary"
+    },
+    {
+      "id": "S12",
+      "title": "Kevin Engel Employment Agreement / 8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1047127/000104712725000187/amkr-20251021.htm",
+      "type": "Primary"
+    },
+    {
+      "id": "S13",
+      "title": "ASE VIPack Official",
+      "url": "https://www.aseglobal.com/press-room/vipack/",
+      "type": "Competitor primary"
+    },
+    {
+      "id": "S14",
+      "title": "JCET XDFOI Official",
+      "url": "https://www.jcetglobal.com/en/site/detailscon/860",
+      "type": "Competitor primary"
+    },
+    {
+      "id": "S15",
+      "title": "TSMC CoWoS Official",
+      "url": "https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm",
+      "type": "Industry primary"
+    },
+    {
+      "id": "S16",
+      "title": "Intel Foundry Advanced Packaging",
+      "url": "https://www.intel.com/content/www/us/en/foundry/packaging.html",
+      "type": "Competitor primary"
+    },
+    {
+      "id": "S17",
+      "title": "AMKR Market Statistics / 2026-08-24 close",
+      "url": "https://stockanalysis.com/stocks/amkr/statistics/",
+      "type": "Market data"
+    },
+    {
+      "id": "S18",
+      "title": "Boursorama / FactSet AMKR Consensus 2026-08-24",
+      "url": "https://www.boursorama.com/cours/consensus/AMKR/",
+      "type": "Consensus secondary"
+    },
+    {
+      "id": "S19",
+      "title": "Amkor 2026-08-12 Dividend Declaration",
+      "url": "https://ir.amkor.com/news-releases/news-release-details/amkor-technology-declares-quarterly-dividend-12",
+      "type": "Primary"
+    },
+    {
+      "id": "S20",
+      "title": "Amkor Arizona $7B Groundbreaking Announcement",
+      "url": "https://ir.amkor.com/news-releases/news-release-details/amkor-technology-breaks-ground-new-semiconductor-advanced",
+      "type": "Primary"
+    }
+  ]
+}

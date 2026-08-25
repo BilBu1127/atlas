@@ -1,0 +1,660 @@
+{
+  "meta": {
+    "company": "Almonty Industries Inc.",
+    "ticker": "ALM",
+    "listing": "NASDAQ",
+    "as_of": "2026-08-25",
+    "timezone": "Asia/Seoul",
+    "ddos_version": "v1.7",
+    "valuation_router": [
+      "Mode D — Cyclical / Commodity",
+      "Mode F — Asset / NAV cross-check"
+    ],
+    "currency_note": "Financial statements in CAD unless stated; valuation in USD.",
+    "pdf_omitted_by_user_request": true,
+    "latest_filing_check": "Q2 2026 filed/released 2026-08-11; subsequent material update: buyback authorization 2026-08-17; no later operating result used."
+  },
+  "market_anchor": {
+    "price_usd": 18.28,
+    "price_date": "2026-08-24 close",
+    "basic_shares_m": 288.48,
+    "market_cap_usd_m": 5273.4,
+    "fd_model_shares_m": 293.3,
+    "fd_equity_at_spot_usd_m": 5361.5,
+    "52w_range_usd": [
+      3.97,
+      24.41
+    ]
+  },
+  "thesis": {
+    "one_sentence": "비중국 텅스텐 희소성과 Sangdong 자산의 질은 진짜지만, 현재 가격은 그 희소성뿐 아니라 2026년의 극단적 APT 가격이 장기간 지속되고 Sangdong/Phase II 실행이 거의 성공하는 경로까지 요구한다.",
+    "variant_perception": "시장과의 차이는 산업 방향이 아니라 지속기간과 주당가치다. 구조적 premium은 인정하지만 2026 spot을 정상가격으로 자본화하지 않는다.",
+    "stance": "회피 / 기존 보유는 가격보다 운영증거가 먼저 쌓이는지 재평가"
+  },
+  "industry": {
+    "world_mine_supply_2024_t_w": 81000,
+    "china_mine_supply_2024_t_w": 67000,
+    "china_share_pct": 82.7,
+    "china_export_control_effective": "2025-02",
+    "us_defense_procurement_step_up": "2027-01-01",
+    "transmission_chain": [
+      "중국 공급집중·수출허가 통제",
+      "서방 고객의 non-China·traceable feedstock 선호",
+      "장기 offtake/실현가격 premium",
+      "ALM 판매 MTU × received price",
+      "mining margin·OCF·FCF"
+    ],
+    "apt_anchors_usd_per_mtu": {
+      "2016_low": 175,
+      "2023_2024_range": [
+        330,
+        360
+      ],
+      "technical_report_reserve_case": 450,
+      "technical_report_2034_forecast": 521,
+      "2026_aug_market_range": [
+        2780,
+        3100
+      ]
+    }
+  },
+  "sangdong": {
+    "probable_reserve_mt": 8.579,
+    "reserve_grade_wo3_pct": 0.42,
+    "contained_wo3_t": 36140,
+    "phase1_throughput_ktpa": 640,
+    "lom_avg_throughput_ktpa": 645.2,
+    "design_recovery_pct": 85,
+    "lom_recovered_mtu_m": 3.072,
+    "avg_recovered_mtu_kpa": 231.2,
+    "concentrate_grade_pct_approx": 67,
+    "mine_life_years": 14,
+    "study_received_price_factor_pct": 78,
+    "study_apt_usd_mtu": 450,
+    "study_cash_cost_usd_mtu": 126.8,
+    "study_aisc_usd_mtu": 136.3,
+    "study_after_tax_npv5_usd_m": 343.7,
+    "study_after_tax_npv8_usd_m": 282.7,
+    "processing_start": "2026-06",
+    "initial_stockpile_t": 139700,
+    "initial_blended_grade_pct": 0.25,
+    "key_unknowns": [
+      "commercial-scale steady throughput",
+      "commercial recovery history",
+      "steady-state head grade",
+      "first sustained GTP shipment cadence"
+    ]
+  },
+  "offtake": {
+    "gtp": {
+      "term_years": 21,
+      "contracted_mtu_m": 4.41,
+      "annual_minimum_mtu_k_after_ramp": 210,
+      "phase1_coverage_pct_approx": 90,
+      "pricing_improvement_pct": 6.3,
+      "phase2_included": false,
+      "ceiling": "Exact revised pricing/payability/floor-cap/penalty/termination terms are not public."
+    },
+    "oxide": "Commercial production prerequisite; not valued as current revenue.",
+    "moly": "Future offtake announced; reserve/economic study incomplete."
+  },
+  "financials": {
+    "annual_cad_m": [
+      {
+        "fy": 2023,
+        "revenue": 22.5,
+        "net_income": -8.8,
+        "adj_ebitda": -4.39
+      },
+      {
+        "fy": 2024,
+        "revenue": 28.8,
+        "net_income": -16.3,
+        "adj_ebitda": -3.06
+      },
+      {
+        "fy": 2025,
+        "revenue": 32.5,
+        "net_income": -161.9,
+        "adj_ebitda": -17.1
+      }
+    ],
+    "quarters_cad_m": [
+      {
+        "q": "2024Q3",
+        "revenue": 6.8,
+        "adj_ebitda": -0.6
+      },
+      {
+        "q": "2024Q4",
+        "revenue": 6.3,
+        "adj_ebitda": -2.0
+      },
+      {
+        "q": "2025Q1",
+        "revenue": 7.9,
+        "adj_ebitda": -3.5
+      },
+      {
+        "q": "2025Q2",
+        "revenue": 7.2,
+        "adj_ebitda": -4.8
+      },
+      {
+        "q": "2025Q3",
+        "revenue": 8.7,
+        "adj_ebitda": -2.2
+      },
+      {
+        "q": "2025Q4",
+        "revenue": 8.7,
+        "adj_ebitda": -6.2
+      },
+      {
+        "q": "2026Q1",
+        "revenue": 25.4,
+        "adj_ebitda": 6.1
+      },
+      {
+        "q": "2026Q2",
+        "revenue": 43.0,
+        "adj_ebitda": 17.6
+      }
+    ],
+    "q2_2026_cad_m": {
+      "revenue": 42.989,
+      "mining_income": 26.103,
+      "adj_ebitda": 17.564,
+      "net_income": 181.797,
+      "noncash_derivative_warrant_gain_approx": 173.1
+    },
+    "h1_2026_ocf_cad_m": 31.606,
+    "cash_june_30_2026_cad_m": 1227.242,
+    "earnings_quality": "MATERIAL_CONCERN — reported EPS materially distorted by derivative/warrant fair-value remeasurement."
+  },
+  "capital_structure": {
+    "convert": {
+      "principal_usd_m": 800,
+      "coupon_pct": 2.25,
+      "maturity": "2031-07-01",
+      "initial_conversion_price_usd": 27.4,
+      "gross_underlying_shares_m": 29.2,
+      "capped_call_cap_usd": 41.36
+    },
+    "cash_usd_m_at_1_38_fx": 889.3,
+    "other_debt_usd_m_proxy": 126.8,
+    "economic_net_financial_position_usd_m_proxy": -40.0,
+    "accounting_note": "Accounting carrying amount of the convertible is lower because the embedded derivative is separately measured. Main valuation uses the US$800m principal claim while spot is below conversion price.",
+    "equity_plan_registered_incremental_shares_m": 4.823,
+    "buyback": {
+      "authorized_usd_m": 300,
+      "max_shares_m": 14.4,
+      "window_start": "2026-08-24",
+      "window_end": "2029-08-24",
+      "executed_as_of_t0": "not observable"
+    },
+    "ceiling": "Capped-call time value and future convert settlement are security-price dependent; main scenarios below conversion price treat the note as debt."
+  },
+  "management": {
+    "ceo": "Lewis Black",
+    "ceo_beneficial_shares_m_2026_03": 19.465,
+    "ceo_beneficial_pct_2026_03": 6.9,
+    "promise_delivery": [
+      {
+        "promise": "2024 commissioning",
+        "source_period": "2023-04",
+        "actual": "not achieved"
+      },
+      {
+        "promise": "stable production during 2025",
+        "source_period": "2024-09",
+        "actual": "not achieved"
+      },
+      {
+        "promise": "initial production H2 2025",
+        "source_period": "2025-Q2",
+        "actual": "first ROM ore 2025-12; processing throughput 2026-06"
+      },
+      {
+        "promise": "processing operations commenced",
+        "source_period": "2026-07",
+        "actual": "confirmed"
+      }
+    ],
+    "assessment": "Project completion capability is demonstrated, but schedule credibility deserves an execution haircut."
+  },
+  "module_m": {
+    "analyst_count": 8,
+    "consensus_rating": "Strong Buy",
+    "avg_target_usd": 25.96,
+    "target_range_usd": [
+      20.11,
+      33.31
+    ],
+    "fy2026_revenue_consensus_cad_m": 368.4,
+    "fy2026_revenue_range_cad_m": [
+      252.9,
+      505.7
+    ],
+    "other_vendor_fy2026_revenue_cad_m_approx": 222,
+    "other_vendor_fy2027_revenue_cad_m_approx": 544,
+    "short_interest_shares_m": {
+      "2026-06-15": 8.89,
+      "2026-06-30": 13.68,
+      "2026-07-15": 19.02,
+      "2026-07-31": 27.45
+    },
+    "ceiling": "Unified FY1–FY3 revenue/EBIT/EPS revision history and complete institutional/insider transaction series were not consistently available in public free sources."
+  },
+  "valuation": {
+    "router": "Mode D normalized commodity economics + Mode F risk-adjusted SOTP/NAV",
+    "model_shares_m": 293.3,
+    "economic_net_financial_position_usd_m": -40.0,
+    "scenario_years": [
+      "2026E",
+      "2027E",
+      "2028E",
+      "2029E"
+    ],
+    "scenarios": {
+      "Down": {
+        "probability": 0.3,
+        "apt": 550,
+        "received_factor": 0.75,
+        "phase1_nav": 249.0,
+        "phase2_nav": 22.0,
+        "panasqueira_nav": 75.0,
+        "options_nav": 0.0,
+        "net_financial": -40.0,
+        "revenue_cad_m": [
+          195,
+          95,
+          139,
+          190
+        ],
+        "fcf_usd_m": [
+          null,
+          -15,
+          -1,
+          35
+        ],
+        "ramp": "Phase I 정상화 지연, Phase II 20%만 반영",
+        "discount_rate": 0.12,
+        "equity_value_usd_m": 306.0,
+        "per_share": 1.04,
+        "three_year_irr": -0.6154
+      },
+      "Base": {
+        "probability": 0.45,
+        "apt": 1200,
+        "received_factor": 0.78,
+        "phase1_nav": 967.0,
+        "phase2_nav": 329.0,
+        "panasqueira_nav": 233.0,
+        "options_nav": 100.0,
+        "net_financial": -40.0,
+        "revenue_cad_m": [
+          325,
+          302,
+          538,
+          675
+        ],
+        "fcf_usd_m": [
+          null,
+          55,
+          184,
+          287
+        ],
+        "ramp": "Phase I 2027 정상화, Phase II 50% 위험조정",
+        "discount_rate": 0.1,
+        "equity_value_usd_m": 1589.0,
+        "per_share": 5.42,
+        "three_year_irr": -0.3332
+      },
+      "Up": {
+        "probability": 0.25,
+        "apt": 2800,
+        "received_factor": 0.82,
+        "phase1_nav": 2918.24,
+        "phase2_nav": 1486.27,
+        "panasqueira_nav": 350.0,
+        "options_nav": 500.0,
+        "net_financial": -40.0,
+        "revenue_cad_m": [
+          480,
+          903,
+          1680,
+          1860
+        ],
+        "fcf_usd_m": [
+          null,
+          365,
+          811,
+          942
+        ],
+        "ramp": "Phase I 빠른 정상화, Phase II 75% 위험조정, 옵션자산 큰 기여",
+        "discount_rate": 0.09,
+        "equity_value_usd_m": 5214.51,
+        "per_share": 17.78,
+        "three_year_irr": -0.0092
+      }
+    },
+    "probability_weighted_value_per_share_usd": 7.2,
+    "probability_weighted_3y_irr": -0.267,
+    "current_price_up_down_ratio": -0.03,
+    "reverse_expectations": {
+      "base_execution_required_long_run_apt_usd_mtu_approx": 3680,
+      "favorable_execution_required_long_run_apt_usd_mtu_approx": 3000,
+      "interpretation": "현재 가격은 2026년 spot에 가까운 APT가 장기간 유지되는 경로를 요구한다."
+    },
+    "price_bands_usd": {
+      "active_interest": "<=5",
+      "conditional_interest": "5–8",
+      "watch": "8–12",
+      "avoid_or_reduce": ">12"
+    },
+    "hurdle_annual_return_pct_range": [
+      10,
+      15
+    ],
+    "valuation_note": "Scenario NAVs are analytical estimates, not company guidance. Phase II and option assets are explicitly risk-adjusted; buyback execution is excluded until observable."
+  },
+  "kpi_tripwires": [
+    {
+      "kpi": "Sangdong annualized throughput",
+      "green": ">512ktpa by mid-2027 (>80% design)",
+      "yellow": "320–512ktpa",
+      "red": "<320ktpa or disclosure absent after ramp window"
+    },
+    {
+      "kpi": "Head grade",
+      "green": ">=0.35% and moving toward 0.42% reserve grade",
+      "yellow": "0.25–0.35%",
+      "red": "<0.25% after commissioning period"
+    },
+    {
+      "kpi": "Commercial recovery",
+      "green": ">=80%",
+      "yellow": "70–80%",
+      "red": "<70% or no stable commercial disclosure"
+    },
+    {
+      "kpi": "GTP shipment cadence",
+      "green": "credible path to >=210k MTU/year after ramp",
+      "yellow": "partial / irregular shipment",
+      "red": "material delay, rejection or contract reset"
+    },
+    {
+      "kpi": "APT ex-China",
+      "green": ">=2500 supports current-price regime",
+      "yellow": "1000–2500",
+      "red": "<1000 for current valuation"
+    },
+    {
+      "kpi": "Sangdong AISC",
+      "green": "<=$180/MTU after normalization",
+      "yellow": "$180–250",
+      "red": ">$250 or no disclosure"
+    },
+    {
+      "kpi": "Capital allocation",
+      "green": "buyback/M&A only at demonstrable positive per-share NPV",
+      "yellow": "economics unclear",
+      "red": "large repurchase/acquisition above modeled intrinsic value without return bridge"
+    }
+  ],
+  "catalysts_12m": [
+    {
+      "date_or_window": "2026-08-24 onward",
+      "event": "Buyback execution becomes observable",
+      "what_matters": "price paid, shares retired, cash used"
+    },
+    {
+      "date_or_window": "2026 Q3 results (expected Nov 2026)",
+      "event": "First fuller quarter of Sangdong ramp",
+      "what_matters": "throughput, grade, recovery, shipments, realized price"
+    },
+    {
+      "date_or_window": "2026 Q4 / FY2026",
+      "event": "First evidence of sustained commercial cadence",
+      "what_matters": "GTP delivery, unit cost, OCF/FCF conversion"
+    },
+    {
+      "date_or_window": "2027-01-01",
+      "event": "Expanded U.S. defense tungsten sourcing restriction",
+      "what_matters": "observable buyer behavior / non-China premium"
+    },
+    {
+      "date_or_window": "2027 H1",
+      "event": "Phase II capital and construction update",
+      "what_matters": "final capex, funding, schedule, demand coverage"
+    },
+    {
+      "date_or_window": "2027 H1–H2",
+      "event": "Phase I steady-state proof window",
+      "what_matters": "640ktpa run-rate / ~0.42% grade / ~85% recovery convergence"
+    }
+  ],
+  "falsification_conditions": [
+    "APT가 장기간 US$2,500–3,000+/MTU를 유지하면서 Sangdong Phase I이 빠르게 설계치에 수렴하면 현재의 회피 결론은 지나치게 보수적일 수 있다.",
+    "Phase II가 낮은 증분 CAPEX로 2027년에 가시화되고 별도 장기 판매처까지 확보되면 옵션 가치의 위험조정률을 크게 높여야 한다.",
+    "반대로 APT가 US$1,000 아래로 정상화되거나 2027년 중반에도 처리량·품위·회수율이 설계치에서 크게 벗어나면 Base 가치도 하향해야 한다."
+  ],
+  "rc_status": {
+    "total": 21,
+    "complete": 14,
+    "primary_source_ceiling": 7,
+    "not_material": 0,
+    "contradicted": 0,
+    "unresolved": 0
+  },
+  "ceilings": [
+    "Revised GTP exact price/payability/floor-cap/penalty/termination formula is not public.",
+    "Consistent Panasqueira 8-quarter physical production/grade/recovery series is not public.",
+    "Gentung, molybdenum and oxide projects lack complete current reserve/capex/cash-cost economics.",
+    "Unified FY1–FY3 sell-side consensus/revision history is incomplete in public free sources.",
+    "Capped-call future value and buyback execution are not observable at T0."
+  ],
+  "visual_lineage": {
+    "V01_supply_concentration": [
+      "industry.world_mine_supply_2024_t_w",
+      "industry.china_mine_supply_2024_t_w",
+      "S09"
+    ],
+    "V02_apt_anchors": [
+      "industry.apt_anchors_usd_per_mtu",
+      "S01"
+    ],
+    "V03_8q_financials": [
+      "financials.quarters_cad_m",
+      "S05",
+      "S10",
+      "S11"
+    ],
+    "V04_valuation_scenarios": [
+      "valuation.scenarios",
+      "capital_structure",
+      "S01",
+      "S04",
+      "S06"
+    ],
+    "V05_reverse_expectations": [
+      "valuation.reverse_expectations",
+      "market_anchor",
+      "S12"
+    ],
+    "V06_promise_delivery": [
+      "management.promise_delivery",
+      "S02"
+    ]
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "type": "Primary",
+      "title": "Sangdong NI 43-101 / JORC Technical Report (2025)",
+      "url": "https://almonty.com/wp-content/uploads/2025/09/Sangdong_NI43_JORC_Tech_Rep_March25_v3.pdf",
+      "used_for": [
+        "reserve",
+        "grade",
+        "recovery",
+        "throughput",
+        "AISC",
+        "mine life",
+        "technical NPV",
+        "APT history"
+      ]
+    },
+    {
+      "id": "S02",
+      "type": "Primary",
+      "title": "SEC-filed Sangdong processing commencement, 2026-07-01",
+      "url": "https://www.sec.gov/Archives/edgar/data/1670061/000149315226031435/ex99-1.htm",
+      "used_for": [
+        "processing start",
+        "139.7kt stockpile",
+        "0.25% blended grade"
+      ]
+    },
+    {
+      "id": "S03",
+      "type": "Primary",
+      "title": "SEC-filed GTP offtake amendment, 2026-07-14",
+      "url": "https://www.sec.gov/Archives/edgar/data/1670061/000149315226033123/ex99-1.htm",
+      "used_for": [
+        "21-year term",
+        "4.41m MTU",
+        "210k annual minimum",
+        "90% Phase I",
+        "6.3% pricing improvement"
+      ]
+    },
+    {
+      "id": "S04",
+      "type": "Primary",
+      "title": "Q2 2026 Financial Statements / MD&A",
+      "url": "https://financialfilings.com/filings/almonty-industries-inc/interim-quarterly-report/2026/55914094/",
+      "used_for": [
+        "cash",
+        "debt",
+        "OCF",
+        "derivative accounting",
+        "financial statements"
+      ]
+    },
+    {
+      "id": "S05",
+      "type": "Primary",
+      "title": "Q2 2026 results release, 2026-08-11",
+      "url": "https://cdn.yahoofinance.com/prod/sec-filings/0001670061/000149315226037264/ex99-1.htm",
+      "used_for": [
+        "Q2 revenue",
+        "mining income",
+        "Adj EBITDA",
+        "net income"
+      ]
+    },
+    {
+      "id": "S06",
+      "type": "Primary",
+      "title": "SEC Form 6-K — US$800m 2.25% Convertible Senior Notes",
+      "url": "https://www.sec.gov/Archives/edgar/data/1670061/000149315226028532/form6-k.htm",
+      "used_for": [
+        "convert principal",
+        "coupon",
+        "maturity",
+        "conversion mechanics",
+        "capped call"
+      ]
+    },
+    {
+      "id": "S07",
+      "type": "Primary",
+      "title": "SEC — Lewis Black Schedule 13G",
+      "url": "https://www.sec.gov/Archives/edgar/data/1670061/000149315226014401/xslSCHEDULE_13G_X02/primary_doc.xml",
+      "used_for": [
+        "CEO beneficial ownership"
+      ]
+    },
+    {
+      "id": "S08",
+      "type": "Primary",
+      "title": "SEC — Almonty S-8 / reoffer prospectus, 2026-08",
+      "url": "https://www.sec.gov/Archives/edgar/data/1670061/000149315226036068/forms-8.htm",
+      "used_for": [
+        "equity incentive overhang"
+      ]
+    },
+    {
+      "id": "S09",
+      "type": "Primary/Government",
+      "title": "USGS Mineral Commodity Summaries 2025 — Tungsten",
+      "url": "https://pubs.usgs.gov/periodicals/mcs2025/mcs2025_ver.1.1.pdf",
+      "used_for": [
+        "2024 global mine supply",
+        "China share"
+      ]
+    },
+    {
+      "id": "S10",
+      "type": "Company",
+      "title": "Almonty FY2025 results",
+      "url": "https://almonty.com/fourth-quarter-and-full-year-2025-financial-results/",
+      "used_for": [
+        "annual financial history"
+      ]
+    },
+    {
+      "id": "S11",
+      "type": "Company",
+      "title": "Almonty Q1 2026 results",
+      "url": "https://almonty.com/reports-first-quarter-2026-financial-results/",
+      "used_for": [
+        "Q1 revenue",
+        "Adj EBITDA",
+        "OCF"
+      ]
+    },
+    {
+      "id": "S12",
+      "type": "Market data",
+      "title": "StockAnalysis / S&P Global — ALM statistics, 2026-08-24",
+      "url": "https://stockanalysis.com/stocks/alm/statistics/",
+      "used_for": [
+        "price",
+        "market cap",
+        "shares",
+        "analyst target"
+      ]
+    },
+    {
+      "id": "S13",
+      "type": "Market data",
+      "title": "StockAnalysis — ALM market cap history",
+      "url": "https://stockanalysis.com/stocks/alm/market-cap/",
+      "used_for": [
+        "market-cap repricing history"
+      ]
+    },
+    {
+      "id": "S14",
+      "type": "Company/Nasdaq",
+      "title": "2026 Share Repurchase Program, 2026-08-17",
+      "url": "https://www.nasdaq.com/press-release/almonty-announces-new-share-repurchase-program-us-300000000-2026-08-17",
+      "used_for": [
+        "US$300m authorization",
+        "14.4m shares",
+        "36 months"
+      ]
+    },
+    {
+      "id": "S15",
+      "type": "Industry research",
+      "title": "McKinsey — The capex crystal ball, 2024-11",
+      "url": "https://www.mckinsey.com/industries/metals-and-mining/our-insights/the-capex-crystal-ball-beating-the-odds-in-mining-project-delivery",
+      "used_for": [
+        "mining project base rate"
+      ]
+    }
+  ]
+}

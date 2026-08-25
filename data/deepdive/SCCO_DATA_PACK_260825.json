@@ -1,0 +1,612 @@
+{
+  "meta": {
+    "ticker": "SCCO",
+    "company": "Southern Copper Corporation",
+    "T0": "2026-08-25",
+    "price_asof": "2026-08-24",
+    "filing_asof": "2026-07-31",
+    "consensus_asof": "2026-08 latest accessible vendor snapshot",
+    "version": "DDOS v1.7",
+    "pdf_status": "NOT_APPLICABLE_USER_WAIVER"
+  },
+  "financials": {
+    "annual_3y": {
+      "2023": {
+        "sales_usd_m": 9895.8,
+        "operating_income_usd_m": 4192.3,
+        "net_income_usd_m": 2425.2,
+        "adjusted_ebitda_usd_m": 5029.5,
+        "ebitda_margin_pct": 50.8,
+        "cfo_usd_m": 3573.1,
+        "capex_usd_m": 1008.6,
+        "simple_fcf_usd_m": 2564.5,
+        "pre_byproduct_cash_cost_usd_lb": 2.18,
+        "net_cash_cost_usd_lb": 1.02
+      },
+      "2024": {
+        "sales_usd_m": 11433.4,
+        "operating_income_usd_m": 5554.7,
+        "net_income_usd_m": 3376.8,
+        "adjusted_ebitda_usd_m": 6406.1,
+        "ebitda_margin_pct": 56.0,
+        "cfo_usd_m": 4421.7,
+        "capex_usd_m": 1027.3,
+        "simple_fcf_usd_m": 3394.4,
+        "pre_byproduct_cash_cost_usd_lb": 2.13,
+        "net_cash_cost_usd_lb": 0.89
+      },
+      "2025": {
+        "sales_usd_m": 13420.0,
+        "operating_income_usd_m": 7001.7,
+        "net_income_usd_m": 4334.9,
+        "adjusted_ebitda_usd_m": 7822.4,
+        "ebitda_margin_pct": 58.3,
+        "cfo_usd_m": 4752.1,
+        "capex_usd_m": 1325.3,
+        "simple_fcf_usd_m": 3426.8,
+        "pre_byproduct_cash_cost_usd_lb": 2.17,
+        "net_cash_cost_usd_lb": 0.58
+      }
+    },
+    "quarterly_8q": [
+      {
+        "quarter": "3Q24",
+        "sales_usd_m": 2930.9,
+        "net_income_usd_m": 896.7,
+        "adjusted_ebitda_usd_m": 1684.6,
+        "mined_copper_kt": 252.219,
+        "net_cash_cost_usd_lb": 0.76,
+        "capex_usd_m": 246.4,
+        "lineage": "company_primary"
+      },
+      {
+        "quarter": "4Q24",
+        "sales_usd_m": 2784.3,
+        "net_income_usd_m": 793.9,
+        "adjusted_ebitda_usd_m": 1506.7,
+        "mined_copper_kt": 238.888,
+        "net_cash_cost_usd_lb": 0.96,
+        "capex_usd_m": 235.3,
+        "lineage": "company_primary"
+      },
+      {
+        "quarter": "1Q25",
+        "sales_usd_m": 3121.9,
+        "net_income_usd_m": 946.0,
+        "adjusted_ebitda_usd_m": 1745.6,
+        "mined_copper_kt": 240.226,
+        "net_cash_cost_usd_lb": 0.77,
+        "capex_usd_m": 317.8,
+        "lineage": "company_primary"
+      },
+      {
+        "quarter": "2Q25",
+        "sales_usd_m": 3051.0,
+        "net_income_usd_m": 973.4,
+        "adjusted_ebitda_usd_m": 1790.9,
+        "mined_copper_kt": 238.98,
+        "net_cash_cost_usd_lb": 0.63,
+        "capex_usd_m": 235.7,
+        "lineage": "company_primary"
+      },
+      {
+        "quarter": "3Q25",
+        "sales_usd_m": 3377.3,
+        "net_income_usd_m": 1107.6,
+        "adjusted_ebitda_usd_m": 1975.4,
+        "mined_copper_kt": 234.892,
+        "net_cash_cost_usd_lb": 0.42,
+        "capex_usd_m": 349.2,
+        "lineage": "company_primary"
+      },
+      {
+        "quarter": "4Q25",
+        "sales_usd_m": 3869.8,
+        "net_income_usd_m": 1307.9,
+        "adjusted_ebitda_usd_m": 2310.5,
+        "mined_copper_kt": 242.172,
+        "net_cash_cost_usd_lb": 0.52,
+        "capex_usd_m": 422.6,
+        "lineage": "company_primary"
+      },
+      {
+        "quarter": "1Q26",
+        "sales_usd_m": 4251.4,
+        "net_income_usd_m": 1576.8,
+        "adjusted_ebitda_usd_m": 2712.8,
+        "mined_copper_kt": 230.544,
+        "net_cash_cost_usd_lb": -0.11,
+        "capex_usd_m": 441.9,
+        "lineage": "derived_primary_ytd"
+      },
+      {
+        "quarter": "2Q26",
+        "sales_usd_m": 4289.0,
+        "net_income_usd_m": 1670.0,
+        "adjusted_ebitda_usd_m": 2856.0,
+        "mined_copper_kt": 230.662,
+        "net_cash_cost_usd_lb": 0.05,
+        "capex_usd_m": 422.8,
+        "lineage": "company_primary"
+      }
+    ],
+    "half_year_2026": {
+      "sales_usd_m": 8540.4,
+      "net_income_usd_m": 3246.8,
+      "adjusted_ebitda_usd_m": 5568.8,
+      "cfo_usd_m": 3683.0,
+      "capex_usd_m": 864.7,
+      "simple_fcf_usd_m": 2818.3,
+      "cash_dividends_paid_usd_m": 1645.4,
+      "simple_fcf_cash_dividend_coverage_x": 1.71,
+      "mined_copper_kt": 461.206,
+      "mined_copper_yoy_pct": -3.8,
+      "pre_byproduct_cash_cost_usd_lb": 2.297,
+      "net_cash_cost_usd_lb": -0.031
+    },
+    "ceilings": [
+      "1Q26 일부 분기 수치는 회사 YTD 1H26에서 2Q26을 차감해 산출한 derived_primary_ytd lineage를 사용.",
+      "Non-GAAP cash cost 정의는 peer 간 완전히 동일하지 않음."
+    ]
+  },
+  "kpis": [
+    {
+      "name": "Quarterly mined copper",
+      "unit": "kt",
+      "history": [
+        {
+          "quarter": "3Q24",
+          "value": 252.219
+        },
+        {
+          "quarter": "4Q24",
+          "value": 238.888
+        },
+        {
+          "quarter": "1Q25",
+          "value": 240.226
+        },
+        {
+          "quarter": "2Q25",
+          "value": 238.98
+        },
+        {
+          "quarter": "3Q25",
+          "value": 234.892
+        },
+        {
+          "quarter": "4Q25",
+          "value": 242.172
+        },
+        {
+          "quarter": "1Q26",
+          "value": 230.544
+        },
+        {
+          "quarter": "2Q26",
+          "value": 230.662
+        }
+      ],
+      "current": 230.662,
+      "thresholds": {
+        "green": ">=240kt and Peru grade/recovery stable",
+        "yellow": "225–240kt",
+        "red": "<225kt or annual guide cut"
+      },
+      "signal": "YELLOW"
+    },
+    {
+      "name": "Pre-byproduct cash cost",
+      "unit": "USD/lb",
+      "history": [
+        {
+          "period": "1H26",
+          "value": 2.297
+        }
+      ],
+      "current": 2.297,
+      "thresholds": {
+        "green": "<=2.20",
+        "yellow": "2.20–2.40",
+        "red": ">2.40"
+      },
+      "signal": "YELLOW"
+    },
+    {
+      "name": "Tía María schedule",
+      "current": "2H27 initial production target; 42% complete at 2026-06-30",
+      "thresholds": {
+        "green": "2H27 maintained and physical/capex progress aligned",
+        "yellow": "1–2 quarter slip or material capex revision",
+        "red": ">=2 quarter delay, permit reversal, or prolonged social disruption"
+      },
+      "signal": "GREEN/YELLOW"
+    },
+    {
+      "name": "Cash dividend coverage",
+      "unit": "x",
+      "history": [
+        {
+          "period": "1H26",
+          "value": 1.71
+        }
+      ],
+      "current": 1.71,
+      "thresholds": {
+        "green": ">1.5",
+        "yellow": "1.0–1.5",
+        "red": "<1.0"
+      },
+      "signal": "GREEN"
+    },
+    {
+      "name": "Post-Tía pipeline",
+      "current": "El Pilar timing/capex drift + Los Chancas illegal-mining blockage",
+      "thresholds": {
+        "green": "El Pilar on schedule + Los Chancas site control restored",
+        "yellow": "one material delay",
+        "red": "multiple material delays"
+      },
+      "signal": "YELLOW/RED"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Tía María",
+      "capacity": "120ktpa Cu cathode",
+      "capex": "$1.101bn committed; $0.693bn invested at 2026-06-30",
+      "timing": "2H27 initial production",
+      "stage": "construction; 42% complete",
+      "valuation_treatment": "Base core"
+    },
+    {
+      "name": "El Pilar",
+      "capacity": "36ktpa Cu cathode",
+      "capex": "$551m",
+      "timing": "2H29",
+      "stage": "site prep Sep26; construction Q1 2027 planned",
+      "valuation_treatment": "Partial Base"
+    },
+    {
+      "name": "Los Chancas",
+      "capacity": "130ktpa Cu + 7.5ktpa Mo",
+      "capex": "$2.6bn",
+      "timing": "2031 target",
+      "stage": "site-control issue from illegal mining",
+      "valuation_treatment": "Probability-weighted option"
+    },
+    {
+      "name": "Michiquillay",
+      "capacity": "225ktpa Cu",
+      "capex": "~$2.5bn",
+      "timing": "2032 target",
+      "stage": "long-dated development",
+      "valuation_treatment": "Probability-weighted option"
+    },
+    {
+      "name": "El Arco",
+      "capacity": "large Cu/Au resource",
+      "capex": "prior public estimate ~$2.9bn",
+      "timing": "uncertain",
+      "stage": "infrastructure/government dependencies remain",
+      "valuation_treatment": "Excluded from Base near-term"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.25,
+      "normalized_copper_usd_lb": 4.25,
+      "normalized_ebitda_usd_bn": 7.0,
+      "ev_ebitda": 12.0,
+      "net_debt_usd_bn": 1.0,
+      "per_share_value": 99.48,
+      "revenue_path": [],
+      "margin_path": [],
+      "fcf": [],
+      "diluted_shares": null,
+      "operating_bridge": "Peru grade pressure 지속, Tía María 2028+ 지연, El Pilar 2030 이후, 부산물 정상화"
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "normalized_copper_usd_lb": 5.0,
+      "normalized_ebitda_usd_bn": 9.2,
+      "ev_ebitda": 14.5,
+      "net_debt_usd_bn": 0.7,
+      "per_share_value": 159.05,
+      "revenue_path": [],
+      "margin_path": [],
+      "fcf": [],
+      "diluted_shares": null,
+      "operating_bridge": "2026 생산 trough 후 안정, Tía María 2H27 시작/2028 ramp, El Pilar 2H29 근접"
+    },
+    {
+      "name": "Up",
+      "probability": 0.25,
+      "normalized_copper_usd_lb": 6.0,
+      "normalized_ebitda_usd_bn": 12.5,
+      "ev_ebitda": 16.5,
+      "net_debt_usd_bn": 0.3,
+      "per_share_value": 246.84,
+      "revenue_path": [],
+      "margin_path": [],
+      "fcf": [],
+      "diluted_shares": null,
+      "operating_bridge": "구리 $6 장기 유지, Tía María·El Pilar 실행 우수, Los Chancas de-risk, 부산물 지지"
+    }
+  ],
+  "valuation": {
+    "mode": "Mode D — Cyclical / Commodity; Mode F — Asset / NAV cross-check",
+    "core": 159.05,
+    "execution": null,
+    "ecosystem": null,
+    "drag": null,
+    "component_ceiling": "Execution/ecosystem/drag are not separately monetized to avoid double-counting project value already embedded in scenarios.",
+    "expected_value": 166.105,
+    "expected_irr": -0.041,
+    "expected_irr_horizon_years": 3,
+    "current_price": 216.86,
+    "equity_value_usd_bn": 180.93,
+    "simple_net_debt_usd_bn": 0.6645,
+    "enterprise_value_usd_bn": 181.6,
+    "ev_ebitda_2026_consensus_x": 16.44,
+    "ev_ebitda_2027_consensus_x": 17.67,
+    "current_to_expected_value_pct": -23.4,
+    "current_to_upside_pct": 13.8,
+    "current_to_downside_pct": -54.1
+  },
+  "reverse_expectations": {
+    "current_ev_usd_bn": 181.6,
+    "required_normalized_ebitda_usd_bn": {
+      "16.5x": 11.0,
+      "14.5x": 12.5,
+      "12.0x": 15.1
+    },
+    "interpretation": "현재가를 정당화하려면 2026 peak-like EBITDA의 상당한 지속, 빠른 project volume 증가, 높은 premium multiple의 지속 중 하나 이상—대체로 복수 조건—이 필요.",
+    "company_copper_sensitivity": "1Q26 회사 공시 기준 남은 9개월에 copper +$0.10/lb당 SCC attributable net income 약 +$89.2m."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "eps_usd": 7.44,
+      "revenue_usd_bn": 16.886,
+      "ebitda_usd_bn": 11.046
+    },
+    "fy2": {
+      "year": 2027,
+      "eps_usd": 7.36,
+      "revenue_usd_bn": 16.165,
+      "ebitda_usd_bn": 10.28
+    },
+    "revision_trend": "Vendor definitions differ; latest accessible snapshots generally imply peak-like 2026 earnings and slightly lower 2027 EBITDA.",
+    "ratings_snapshot": {
+      "average_target_usd": 163.83,
+      "buy": 1,
+      "hold": 7,
+      "underweight": 2,
+      "sell": 9
+    },
+    "ceiling": "No single issuer/SEC canonical aggregate; vendor definitions and update times differ."
+  },
+  "stance": {
+    "zone": "STRETCHED — 신규 매수 보류",
+    "price_bands": {
+      "<125": "적극 관심",
+      "125–160": "관심",
+      "160–190": "관망",
+      ">190": "고평가"
+    },
+    "horizon": "3 years",
+    "variant_perception": "Record earnings are driven primarily by metal price and by-product credits while mined copper volume is falling; current price already embeds a large share of long-term scarcity and project execution."
+  },
+  "catalysts": [
+    {
+      "when": "2026-08-27",
+      "event": "Stock dividend payment",
+      "sensitivity": "경제적 ownership dilution이 아닌 pro-rata distribution; quotation/share restatement 확인"
+    },
+    {
+      "when": "2026-09",
+      "event": "El Pilar site preparation target",
+      "sensitivity": "2H29 schedule confidence"
+    },
+    {
+      "when": "~2026-10",
+      "event": "3Q26 earnings",
+      "sensitivity": "Peru grade, mined copper, pre-credit cost, Tía María progress"
+    },
+    {
+      "when": "2026-10",
+      "event": "ICSG market meeting",
+      "sensitivity": "2026/27 refined balance revision"
+    },
+    {
+      "when": "1Q27",
+      "event": "El Pilar construction start target",
+      "sensitivity": "project execution"
+    },
+    {
+      "when": "2H27",
+      "event": "Tía María initial production target",
+      "sensitivity": "primary growth bridge"
+    },
+    {
+      "when": "2H29",
+      "event": "El Pilar production target",
+      "sensitivity": "post-Tía growth"
+    },
+    {
+      "when": "2031–2032",
+      "event": "Los Chancas / Michiquillay targets",
+      "sensitivity": "long-dated NAV optionality"
+    }
+  ],
+  "disconfirmation_conditions": [
+    "Copper >$6/lb for at least four quarters with physical deficit rather than exchange squeeze.",
+    "Quarterly mined copper recovers to >=240kt and Peru grade/recovery stabilizes.",
+    "Pre-byproduct cash cost falls to <=$2.20/lb.",
+    "Tía María keeps 2H27 schedule and cost with a clean ramp.",
+    "El Pilar starts construction in Q1 2027 without another material capex revision.",
+    "Los Chancas site-control issue is resolved."
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 1"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 3 / Appendix C"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 4 / Appendix B"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 3.3 / 4.4"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 2.3 / 3.5–3.7 / Appendix C"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 2.3 / Chapter 3"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 2"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "CEILING",
+      "h3_locator": "Chapter 1.1 / 3.4"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "CEILING",
+      "h3_locator": "Chapter 3.8"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 4 / Appendix A–B"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 2.5 / 4.6–4.7"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "CEILING",
+      "h3_locator": "Chapter 0 / Chapter 5"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 5"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 6"
+    }
+  ],
+  "as_of_registry": {
+    "PRICE_ASOF": "2026-08-24",
+    "PRICE_USD": 216.86,
+    "FILING_ASOF": "2026-07-31",
+    "LATEST_PERIODIC_FILING": "2Q26 Form 10-Q",
+    "LATEST_EARNINGS_8K": "2026-07-22",
+    "LATEST_FILING_CHECK": "PASS"
+  },
+  "source_ceilings": [
+    "Exact consolidated customer identities/concentration are not fully disclosed by the issuer.",
+    "A complete global cost-curve percentile cannot be reproduced from public primary sources without proprietary datasets.",
+    "Sell-side consensus and institutional ownership aggregates do not have one primary canonical source."
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "name": "SCCO 2Q26 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1001838/000110465926089169/scco-20260630x10q.htm"
+    },
+    {
+      "id": "S2",
+      "name": "SCCO 2Q26 Earnings Release / 8-K exhibit",
+      "url": "https://www.sec.gov/Archives/edgar/data/1001838/000110465926085515/scco-20260721xex99d1.htm"
+    },
+    {
+      "id": "S3",
+      "name": "SCCO 2025 Form 10-K",
+      "url": "https://southerncoppercorp.com/eng/wp-content/uploads/sites/2/2026/04/10k2025.pdf"
+    },
+    {
+      "id": "S10",
+      "name": "SCCO 2026 DEF 14A / CEO transition",
+      "url": "https://www.sec.gov/Archives/edgar/data/1001838/000110465926044982/scco-20260529xdef14a.htm"
+    },
+    {
+      "id": "S11",
+      "name": "IEA Global Critical Minerals Outlook 2026",
+      "url": "https://www.iea.org/reports/global-critical-minerals-outlook-2026/outlook"
+    },
+    {
+      "id": "S12",
+      "name": "ICSG Copper Market Forecast 2026/2027",
+      "url": "https://icsg.org/download/2026-04-23-press-release-icsg-copper-market-forecast-2026-2027/"
+    },
+    {
+      "id": "S13",
+      "name": "Reuters — LME copper squeeze, 2026-08-19",
+      "url": "https://www.reuters.com/commentary/reuters-open-interest/lme-gripped-by-flash-squeeze-copper-tensions-boil-over-2026-08-19/"
+    },
+    {
+      "id": "S14",
+      "name": "Peru MINEM Tía María authorization RD 194-2026",
+      "url": "https://www.gob.pe/institucion/minem/normas-legales/8095386-194-2026-minem-dgm"
+    },
+    {
+      "id": "S15",
+      "name": "BHP HY26 Escondida results",
+      "url": "https://www.bhp.com/-/media/documents/media/reports-and-presentations/2026/260217_bhpresultsforthehalfyearended31dec2025_exchangerelease.pdf"
+    },
+    {
+      "id": "S16",
+      "name": "Antofagasta 2025 Annual Report",
+      "url": "https://www.antofagasta.co.uk/investors/annual-report-2025/"
+    },
+    {
+      "id": "S17",
+      "name": "Freeport-McMoRan 1Q26",
+      "url": "https://s22.q4cdn.com/529358580/files/doc_news/2026/FCX_260423.pdf"
+    },
+    {
+      "id": "S18",
+      "name": "SCCO 2026-08-24 price history",
+      "url": "https://www.investing.com/equities/southern-copper-corp.-historical-data"
+    }
+  ],
+  "publishing_qa": {
+    "top_level_schema_match": "PASS",
+    "industry_company_narrative": "PASS",
+    "korean_prose_quality": "PASS",
+    "rc_unresolved": 0,
+    "rc_h3_coverage_rate_pct": 100,
+    "html_numeric_parity": "PASS",
+    "pdf": "NOT_APPLICABLE_USER_WAIVER",
+    "html_schema_and_section_check": "PASS",
+    "html_mobile_responsive_css": "PASS",
+    "html_sidebar_navigation": "PASS"
+  }
+}

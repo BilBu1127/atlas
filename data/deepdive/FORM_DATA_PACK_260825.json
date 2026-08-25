@@ -1,0 +1,661 @@
+{
+  "meta": {
+    "ticker": "FORM",
+    "company": "FormFactor, Inc.",
+    "T0": "2026-08-24",
+    "price_asof": "2026-08-24",
+    "current_price": 106.99,
+    "financial_period_asof": "2026-06-27",
+    "filing_asof": "2026-08-04",
+    "consensus_asof": "2026-08-24",
+    "version": "Clean DDOS Production OS v1.7",
+    "currency": "USD",
+    "units_note": "financial amounts are USD millions unless fields specify bn or per-share"
+  },
+  "capital_structure": {
+    "shares_outstanding_m": 78.120725,
+    "market_cap_m": 8358.1,
+    "cash_and_marketable_securities_m": 345.64,
+    "building_term_loan_m": 11.7,
+    "net_cash_m": 333.94,
+    "enterprise_value_m": 8024.2,
+    "additional_equity_plan_shares_reserved_2026_m": 5.0,
+    "equity_plan_note": "Reserved/registered shares are authorization, not assumed immediate issuance; scenarios use 81-83m diluted shares by 2030."
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "period": "FY2023",
+        "revenue": 663.102,
+        "gross_margin": 0.39,
+        "operating_income": 82.8,
+        "net_income": 82.4,
+        "diluted_eps": 1.05,
+        "operating_cash_flow": 64.6,
+        "capex": 56.027,
+        "simple_fcf": 8.573
+      },
+      {
+        "period": "FY2024",
+        "revenue": 763.599,
+        "gross_margin": 0.403,
+        "operating_income": 64.8,
+        "net_income": 69.6,
+        "diluted_eps": 0.89,
+        "operating_cash_flow": 117.5,
+        "capex": 38.436,
+        "simple_fcf": 79.064
+      },
+      {
+        "period": "FY2025",
+        "revenue": 784.993,
+        "gross_margin": 0.393,
+        "operating_income": 57.1,
+        "net_income": 54.4,
+        "diluted_eps": 0.69,
+        "operating_cash_flow": 115.4,
+        "capex": 103.658,
+        "simple_fcf": 11.742
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "period": "Q3 2024",
+        "revenue": 207.917,
+        "gaap_gross_margin": 0.407,
+        "net_income": 18.7,
+        "operating_cash_flow": 26.7,
+        "company_fcf": 20.0
+      },
+      {
+        "period": "Q4 2024",
+        "revenue": 189.483,
+        "gaap_gross_margin": 0.388,
+        "net_income": 9.7,
+        "operating_cash_flow": 35.9,
+        "company_fcf": 28.8
+      },
+      {
+        "period": "Q1 2025",
+        "revenue": 171.356,
+        "gaap_gross_margin": 0.377,
+        "net_income": 6.4,
+        "operating_cash_flow": 23.5,
+        "company_fcf": 6.3
+      },
+      {
+        "period": "Q2 2025",
+        "revenue": 195.798,
+        "gaap_gross_margin": 0.373,
+        "net_income": 9.1,
+        "operating_cash_flow": 18.9,
+        "company_fcf": -47.1
+      },
+      {
+        "period": "Q3 2025",
+        "revenue": 202.676,
+        "gaap_gross_margin": 0.398,
+        "net_income": 15.7,
+        "operating_cash_flow": 27.0,
+        "company_fcf": 19.7
+      },
+      {
+        "period": "Q4 2025",
+        "revenue": 215.163,
+        "gaap_gross_margin": 0.422,
+        "net_income": 23.2,
+        "operating_cash_flow": 46.0,
+        "company_fcf": 34.7
+      },
+      {
+        "period": "Q1 2026",
+        "revenue": 226.144,
+        "gaap_gross_margin": 0.384,
+        "non_gaap_gross_margin": 0.49,
+        "net_income": 20.4,
+        "operating_cash_flow": 45.0,
+        "company_fcf": 30.7
+      },
+      {
+        "period": "Q2 2026",
+        "revenue": 258.242,
+        "gaap_gross_margin": 0.507,
+        "non_gaap_gross_margin": 0.533,
+        "net_income": 56.2,
+        "operating_cash_flow": 61.8,
+        "company_fcf": 52.6
+      }
+    ],
+    "market_revenue_3y": {
+      "FY2023": {
+        "Foundry & Logic": 363.539,
+        "DRAM": 113.779,
+        "Flash": 20.585,
+        "Systems": 165.199
+      },
+      "FY2024": {
+        "Foundry & Logic": 381.182,
+        "DRAM": 227.422,
+        "Flash": 17.356,
+        "Systems": 137.639
+      },
+      "FY2025": {
+        "Foundry & Logic": 369.897,
+        "DRAM": 247.397,
+        "Flash": 20.604,
+        "Systems": 147.095
+      }
+    },
+    "q2_2026_market_mix": {
+      "Foundry & Logic": 121.839,
+      "DRAM": 84.999,
+      "Flash": 2.857,
+      "Systems": 48.547
+    },
+    "q2_2026_segment_metrics": {
+      "probe_cards_revenue": 209.695,
+      "probe_cards_gross_margin": 0.544,
+      "systems_revenue": 48.547,
+      "systems_gross_margin": 0.485
+    },
+    "ceilings": [
+      "Exact probe-card dollar content per HBM generation is not publicly disclosed.",
+      "Customer/design-level FORM share for HBM4/HBM4E, GPU/custom ASIC programs is not publicly disclosed.",
+      "CPO/TRITON customer-level HVM economics and recurring revenue are not publicly disclosed."
+    ]
+  },
+  "kpis": [
+    {
+      "name": "Quarterly revenue ($m)",
+      "history": [
+        207.917,
+        189.483,
+        171.356,
+        195.798,
+        202.676,
+        215.163,
+        226.144,
+        258.242
+      ],
+      "current": 258.242,
+      "thresholds": {
+        "green": ">=270 or above guide high-end",
+        "yellow": "245-270",
+        "red": "<245"
+      }
+    },
+    {
+      "name": "Probe Cards gross margin",
+      "history": [
+        0.383,
+        0.544
+      ],
+      "history_labels": [
+        "Q2 2025",
+        "Q2 2026"
+      ],
+      "current": 0.544,
+      "thresholds": {
+        "green": ">=52%",
+        "yellow": "47-52%",
+        "red": "<47%"
+      }
+    },
+    {
+      "name": "Foundry & Logic quarterly revenue ($m)",
+      "history": [
+        121.839
+      ],
+      "current": 121.839,
+      "thresholds": {
+        "green": ">=120",
+        "yellow": "100-120",
+        "red": "<100"
+      }
+    },
+    {
+      "name": "DRAM quarterly revenue ($m)",
+      "history": [
+        84.999
+      ],
+      "current": 84.999,
+      "thresholds": {
+        "green": ">=80 with next-gen ramp evidence",
+        "yellow": "65-80",
+        "red": "<65 or major qualification loss"
+      }
+    },
+    {
+      "name": "Systems quarterly revenue ($m)",
+      "history": [
+        48.547
+      ],
+      "current": 48.547,
+      "thresholds": {
+        "green": ">=45 with CPO proof",
+        "yellow": "35-45",
+        "red": "<35"
+      }
+    },
+    {
+      "name": "Texas ramp",
+      "history": [],
+      "current": "Production expected late Q4 2026; ramp through 2027",
+      "thresholds": {
+        "green": "late-Q4 start / 2027 on plan",
+        "yellow": "1-2 quarter delay",
+        "red": ">2 quarter delay or 2028 GM accretion goal withdrawn"
+      }
+    },
+    {
+      "name": "SBC / revenue",
+      "history": [
+        0.049
+      ],
+      "history_labels": [
+        "FY2025"
+      ],
+      "current": 0.049,
+      "thresholds": {
+        "green": "<4%",
+        "yellow": "4-5.5%",
+        "red": ">5.5%"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.2,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "revenue_path_bn": [
+        1.03,
+        1.02,
+        1.06,
+        1.1,
+        1.15
+      ],
+      "gross_margin_path": [
+        0.52,
+        0.48,
+        0.45,
+        0.45,
+        0.45
+      ],
+      "fcf_path_m": [
+        120,
+        110,
+        120,
+        130,
+        135
+      ],
+      "ebit_margin_2030": 0.14,
+      "net_margin_2030": 0.12,
+      "diluted_shares_m": 81,
+      "terminal_pe": 22,
+      "net_cash_2030_m": 400,
+      "terminal_per_share_value": 42.42,
+      "per_share_value": 27.0
+    },
+    {
+      "name": "Base",
+      "probability": 0.45,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "revenue_path_bn": [
+        1.03,
+        1.15,
+        1.27,
+        1.37,
+        1.45
+      ],
+      "gross_margin_path": [
+        0.52,
+        0.5,
+        0.51,
+        0.51,
+        0.51
+      ],
+      "fcf_path_m": [
+        120,
+        190,
+        240,
+        290,
+        320
+      ],
+      "ebit_margin_2030": 0.26,
+      "net_margin_2030": 0.23,
+      "diluted_shares_m": 81,
+      "terminal_pe": 25,
+      "net_cash_2030_m": 600,
+      "terminal_per_share_value": 110.34,
+      "per_share_value": 70.22
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.25,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "revenue_path_bn": [
+        1.03,
+        1.21,
+        1.37,
+        1.51,
+        1.6
+      ],
+      "gross_margin_path": [
+        0.52,
+        0.52,
+        0.54,
+        0.55,
+        0.55
+      ],
+      "fcf_path_m": [
+        120,
+        220,
+        300,
+        380,
+        430
+      ],
+      "ebit_margin_2030": 0.32,
+      "net_margin_2030": 0.28,
+      "diluted_shares_m": 82,
+      "terminal_pe": 28,
+      "net_cash_2030_m": 750,
+      "terminal_per_share_value": 162.12,
+      "per_share_value": 103.18
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.1,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "revenue_path_bn": [
+        1.03,
+        1.24,
+        1.45,
+        1.65,
+        1.85
+      ],
+      "gross_margin_path": [
+        0.52,
+        0.53,
+        0.55,
+        0.56,
+        0.57
+      ],
+      "fcf_path_m": [
+        120,
+        235,
+        330,
+        450,
+        540
+      ],
+      "ebit_margin_2030": 0.35,
+      "net_margin_2030": 0.3,
+      "diluted_shares_m": 83,
+      "terminal_pe": 30,
+      "net_cash_2030_m": 900,
+      "terminal_per_share_value": 211.45,
+      "per_share_value": 134.57
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B Hybrid + Mode D cyclical cross-check",
+    "core": 65.0,
+    "execution": 14.0,
+    "ecosystem": 0.0,
+    "drag": 2.75,
+    "expected_value": 76.25,
+    "expected_irr": 0.0265,
+    "current_price": 106.99,
+    "expected_terminal_value": 119.81,
+    "upside_downside_ratio": 0.34,
+    "ev_ttm_sales": 8.89,
+    "ev_fy26_consensus_sales": 7.79,
+    "fy26_adjusted_pe": 35.08,
+    "fy27_adjusted_pe": 29.64,
+    "hurdle_rate": 0.11,
+    "horizon_years": 4.33
+  },
+  "reverse_expectations": {
+    "required_2030_share_price_for_11pct_cagr": 168.11,
+    "assumed_2030_diluted_shares_m": 81,
+    "assumed_2030_net_cash_m": 600,
+    "required_operating_value_per_share": 160.7,
+    "table": [
+      {
+        "terminal_fcf_multiple": 22,
+        "required_fcf_m": 591.7,
+        "required_revenue_m_at_25pct_fcf_margin": 2366.7,
+        "required_revenue_m_at_30pct_fcf_margin": 1972.3
+      },
+      {
+        "terminal_fcf_multiple": 25,
+        "required_fcf_m": 520.7,
+        "required_revenue_m_at_25pct_fcf_margin": 2082.7,
+        "required_revenue_m_at_30pct_fcf_margin": 1735.6
+      },
+      {
+        "terminal_fcf_multiple": 28,
+        "required_fcf_m": 464.9,
+        "required_revenue_m_at_25pct_fcf_margin": 1859.6,
+        "required_revenue_m_at_30pct_fcf_margin": 1549.6
+      },
+      {
+        "terminal_fcf_multiple": 30,
+        "required_fcf_m": 433.9,
+        "required_revenue_m_at_25pct_fcf_margin": 1735.6,
+        "required_revenue_m_at_30pct_fcf_margin": 1446.3
+      }
+    ]
+  },
+  "consensus": {
+    "fy1": {
+      "period": "FY2026",
+      "revenue_m": 1030,
+      "adjusted_eps": 3.05
+    },
+    "fy2": {
+      "period": "FY2027",
+      "revenue_m": 1130,
+      "adjusted_eps": 3.61
+    },
+    "revision_trend": "Strong upward operating re-rating following Q2 2026 record revenue/margins; exact vendor-by-vendor consensus definitions may differ."
+  },
+  "stance": {
+    "zone": "AVOID / existing holders review trim at >$100 unless operating estimates rise materially",
+    "price_bands": {
+      "active_interest": "<=63",
+      "conditional_interest": "63-76",
+      "watch": "76-81",
+      "expectation_burden": "81-100",
+      "avoid_or_trim_review": ">100"
+    },
+    "horizon": "through year-end 2030",
+    "current_price": 106.99
+  },
+  "catalysts": [
+    {
+      "when": "Q3 2026 earnings",
+      "event": "Test $270m revenue / 54% non-GAAP GM guide",
+      "sensitivity": "High"
+    },
+    {
+      "when": "Late Q4 2026",
+      "event": "Farmers Branch production start",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2027",
+      "event": "Texas yield/utilization ramp and HBM4/HBM4E production qualifications",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2027",
+      "event": "Foundry & Logic networking/HPC design repeatability",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2027-2028",
+      "event": "TRITON/CPO HVM customer and revenue proof",
+      "sensitivity": "Medium-High"
+    }
+  ],
+  "falsification_conditions": [
+    "Probe Cards GM below 47% for two consecutive quarters.",
+    "DRAM revenue below $65m with evidence of major HBM qualification/allocation loss.",
+    "Foundry & Logic revenue below $100m with networking/HPC design weakness.",
+    "Texas ramp delayed >2 quarters or 2028 GM-accretion goal withdrawn.",
+    "Systems revenue below $35m together with CPO HVM delay.",
+    "Diluted share count grows materially faster than Base path because SBC issuance persistently exceeds buybacks."
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "1.1-1.7"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "1.2, 3.3"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "0.5, 3.6"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "1.3, 3.4"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1.4, 3.5, 5.4"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1.5, 3.7"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "0.5, 3.6"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 2"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "0.3-0.4, 4.4"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "2.3, 3.8"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 4, Appendix C-D"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "0.7, 2.4-2.5, 4.8, 5.5"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "4.7, Appendix E"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "0.8, 5.10"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "5.9"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "5.6, 6.5"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "5.8"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE",
+      "h3_locator": "6.7-6.10"
+    }
+  ],
+  "visual_data_source_registry": {
+    "VIS-01": {
+      "title": "3-year market revenue mix",
+      "source": "financials.market_revenue_3y"
+    },
+    "VIS-02": {
+      "title": "8-quarter revenue and GAAP gross margin",
+      "source": "financials.quarterly_8q"
+    },
+    "VIS-03": {
+      "title": "Scenario present value vs current price",
+      "source": "scenarios + valuation.current_price"
+    },
+    "VIS-04": {
+      "title": "Reverse expectations required FCF",
+      "source": "reverse_expectations.table"
+    },
+    "VIS-05": {
+      "title": "Q2 2026 market mix",
+      "source": "financials.q2_2026_market_mix"
+    }
+  },
+  "display_values": {
+    "current_price": "$106.99",
+    "probability_weighted_value": "$76.3",
+    "expected_irr": "2.6%",
+    "required_2030_share_price": "168.1달러",
+    "upside_downside_ratio": "0.34배",
+    "scenario_present_values": {
+      "Bear": "$27.0",
+      "Base": "$70.2",
+      "Bull Execution": "$103.2",
+      "Bull Ecosystem": "$134.6"
+    }
+  }
+}

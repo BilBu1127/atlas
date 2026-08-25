@@ -1,0 +1,849 @@
+{
+  "meta": {
+    "ticker": "EQIX",
+    "company": "Equinix, Inc.",
+    "T0": "2026-08-25",
+    "price_asof": "2026-08-24",
+    "filing_asof": "2026-08-06 material 8-K / 2026-07-29 Q2 10-Q",
+    "consensus_asof": "2026-08-24/25",
+    "version": "DDOS v1.7",
+    "pdf_waived_by_user": true,
+    "currency": "USD"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue_bn": 8.188,
+        "operating_income_bn": 1.443,
+        "net_income_bn": 0.969,
+        "operating_cash_flow_bn": 3.217,
+        "ppe_purchases_bn": 2.781,
+        "real_estate_purchases_bn": 0.384,
+        "affo_bn": 3.019,
+        "affo_per_share": 32.11,
+        "sbc_bn": 0.407
+      },
+      {
+        "year": 2024,
+        "revenue_bn": 8.748,
+        "operating_income_bn": 1.328,
+        "net_income_bn": 0.815,
+        "operating_cash_flow_bn": 3.249,
+        "ppe_purchases_bn": 3.066,
+        "real_estate_purchases_bn": 0.337,
+        "affo_bn": 3.356,
+        "affo_per_share": 35.02,
+        "sbc_bn": 0.462
+      },
+      {
+        "year": 2025,
+        "revenue_bn": 9.217,
+        "operating_income_bn": 1.848,
+        "net_income_bn": 1.35,
+        "operating_cash_flow_bn": 3.911,
+        "ppe_purchases_bn": 4.311,
+        "real_estate_purchases_bn": 0.994,
+        "affo_bn": 3.761,
+        "affo_per_share": 38.33,
+        "sbc_bn": 0.498
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "period": "3Q24",
+        "revenue_bn": 2.201,
+        "adj_ebitda_bn": 1.048,
+        "affo_bn": 0.866,
+        "affo_per_share": 9.05,
+        "recurring_revenue_bn": 2.059
+      },
+      {
+        "period": "4Q24",
+        "revenue_bn": 2.261,
+        "adj_ebitda_bn": 1.021,
+        "affo_bn": 0.77,
+        "affo_per_share": 7.92,
+        "recurring_revenue_bn": 2.091
+      },
+      {
+        "period": "1Q25",
+        "revenue_bn": 2.225,
+        "adj_ebitda_bn": 1.067,
+        "affo_bn": 0.947,
+        "affo_per_share": 9.67,
+        "recurring_revenue_bn": 2.087
+      },
+      {
+        "period": "2Q25",
+        "revenue_bn": 2.256,
+        "adj_ebitda_bn": 1.129,
+        "affo_bn": 0.972,
+        "affo_per_share": 9.91,
+        "recurring_revenue_bn": 2.143
+      },
+      {
+        "period": "3Q25",
+        "revenue_bn": 2.316,
+        "adj_ebitda_bn": 1.148,
+        "affo_bn": 0.965,
+        "affo_per_share": 9.83,
+        "recurring_revenue_bn": 2.215
+      },
+      {
+        "period": "4Q25",
+        "revenue_bn": 2.42,
+        "adj_ebitda_bn": 1.186,
+        "affo_bn": 0.877,
+        "affo_per_share": 8.91,
+        "recurring_revenue_bn": 2.294
+      },
+      {
+        "period": "1Q26",
+        "revenue_bn": 2.444,
+        "adj_ebitda_bn": 1.245,
+        "affo_bn": 1.065,
+        "affo_per_share": 10.79,
+        "recurring_revenue_bn": 2.331
+      },
+      {
+        "period": "2Q26",
+        "revenue_bn": 2.625,
+        "adj_ebitda_bn": 1.396,
+        "affo_bn": 1.168,
+        "affo_per_share": 11.78,
+        "recurring_revenue_bn": 2.377,
+        "note": "headline growth includes one-time xScale fees"
+      }
+    ],
+    "ceilings": [
+      "project/cohort development return curve not publicly disclosed",
+      "portfolio-wide facility-level AI rack-density / cooling metrics not consistently disclosed"
+    ]
+  },
+  "operating": {
+    "q2_2026": {
+      "mrr_yoy_growth": 0.11,
+      "annualized_gross_bookings_yoy_growth": 0.23,
+      "net_interconnections_added": 9700,
+      "cabinet_utilization": 0.78,
+      "data_centers": 282,
+      "markets": 77
+    },
+    "quality": {
+      "revenue_recurring_share_3y": ">90%",
+      "existing_customer_mrr_bookings_share_3y": ">90%",
+      "largest_customer_recurring_revenue_share": "~2%",
+      "top50_customer_recurring_revenue_share": "~36%",
+      "stabilized_asset_cash_on_cash_return": "~26% company-reported Q1 2026 pool metric"
+    },
+    "capital": {
+      "fy2026_total_capex_guidance_bn": [
+        5.0,
+        6.0
+      ],
+      "long_term_annual_capex_bn": [
+        5.0,
+        7.0
+      ],
+      "senior_notes_principal_q2_bn": 19.9,
+      "aug_2026_notes_bn": 3.0,
+      "forward_sale_shares": 465000,
+      "forward_sale_settlement_value_mn": 498
+    }
+  },
+  "kpis": [
+    {
+      "name": "MRR YoY growth",
+      "history": [
+        {
+          "period": "2Q26",
+          "value": 0.11
+        }
+      ],
+      "current": 0.11,
+      "thresholds": {
+        "green": ">=10%",
+        "yellow": "7%-10%",
+        "red": "<7%"
+      }
+    },
+    {
+      "name": "Net interconnection adds / quarter",
+      "history": [
+        {
+          "period": "2Q26",
+          "value": 9700
+        }
+      ],
+      "current": 9700,
+      "thresholds": {
+        "green": ">=8000",
+        "yellow": "5000-8000",
+        "red": "<5000"
+      }
+    },
+    {
+      "name": "Recurring revenue growth",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": ">=9%",
+        "yellow": "6%-9%",
+        "red": "<6%"
+      }
+    },
+    {
+      "name": "Cabinet utilization",
+      "history": [
+        {
+          "period": "FY25",
+          "value": 0.77
+        },
+        {
+          "period": "2Q26",
+          "value": 0.78
+        }
+      ],
+      "current": 0.78,
+      "thresholds": {
+        "green": ">=78% with capacity growth",
+        "yellow": "75%-78%",
+        "red": "<75% or increasing power-stranded capacity"
+      }
+    },
+    {
+      "name": "Stabilized cash-on-cash return",
+      "history": [
+        {
+          "period": "1Q26 reported stabilized pool",
+          "value": 0.26
+        }
+      ],
+      "current": 0.26,
+      "thresholds": {
+        "green": ">=20%",
+        "yellow": "15%-20%",
+        "red": "<15%"
+      }
+    },
+    {
+      "name": "AFFO/share growth",
+      "history": [
+        {
+          "period": "FY24",
+          "value": 0.091
+        },
+        {
+          "period": "FY25",
+          "value": 0.095
+        },
+        {
+          "period": "2Q26 YoY reported",
+          "value": 0.19
+        }
+      ],
+      "current": 0.19,
+      "thresholds": {
+        "green": ">=10%",
+        "yellow": "7%-10%",
+        "red": "<7%"
+      }
+    },
+    {
+      "name": "Diluted share growth",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": "<1%/yr",
+        "yellow": "1%-1.5%",
+        "red": ">1.5%"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.2,
+      "revenue_path": [
+        10.962,
+        11.73,
+        12.551
+      ],
+      "margin_path": [
+        0.505,
+        0.505,
+        0.51
+      ],
+      "affo_per_share_path": [
+        45.57,
+        48.3,
+        51.2
+      ],
+      "affo_total_path_bn": [
+        4.584,
+        4.908,
+        5.243
+      ],
+      "development_capex_bn": [
+        4.2,
+        4.0,
+        4.0
+      ],
+      "fcf": [
+        0.384,
+        0.908,
+        1.243
+      ],
+      "fcf_definition": "AFFO dollars minus modeled on-balance-sheet development CAPEX; analytical funding-pressure proxy, not company-reported FCF",
+      "diluted_shares": [
+        100.6,
+        101.6,
+        102.4
+      ],
+      "exit_multiple": 16,
+      "per_share_value": 819.23,
+      "scenario_irr": -0.049489,
+      "hurdle_pv": 636.76
+    },
+    {
+      "name": "Base",
+      "probability": 0.55,
+      "revenue_path": [
+        11.27,
+        12.396,
+        13.636
+      ],
+      "margin_path": [
+        0.518,
+        0.524,
+        0.53
+      ],
+      "affo_per_share_path": [
+        47.29,
+        52.02,
+        57.22
+      ],
+      "affo_total_path_bn": [
+        4.738,
+        5.243,
+        5.802
+      ],
+      "development_capex_bn": [
+        5.5,
+        6.0,
+        6.0
+      ],
+      "fcf": [
+        -0.762,
+        -0.757,
+        -0.198
+      ],
+      "fcf_definition": "AFFO dollars minus modeled on-balance-sheet development CAPEX; analytical funding-pressure proxy, not company-reported FCF",
+      "diluted_shares": [
+        100.2,
+        100.8,
+        101.4
+      ],
+      "exit_multiple": 23,
+      "per_share_value": 1316.05,
+      "scenario_irr": 0.088968,
+      "hurdle_pv": 991.02
+    },
+    {
+      "name": "Up",
+      "probability": 0.25,
+      "revenue_path": [
+        11.577,
+        13.082,
+        14.782
+      ],
+      "margin_path": [
+        0.52,
+        0.53,
+        0.54
+      ],
+      "affo_per_share_path": [
+        48.15,
+        53.93,
+        60.4
+      ],
+      "affo_total_path_bn": [
+        4.805,
+        5.398,
+        6.064
+      ],
+      "development_capex_bn": [
+        6.0,
+        6.5,
+        7.0
+      ],
+      "fcf": [
+        -1.195,
+        -1.102,
+        -0.936
+      ],
+      "fcf_definition": "AFFO dollars minus modeled on-balance-sheet development CAPEX; analytical funding-pressure proxy, not company-reported FCF",
+      "diluted_shares": [
+        99.8,
+        100.1,
+        100.4
+      ],
+      "exit_multiple": 27,
+      "per_share_value": 1630.74,
+      "scenario_irr": 0.15861,
+      "hurdle_pv": 1214.94
+    }
+  ],
+  "valuation": {
+    "mode": "Mode F — Asset / NAV with forward AFFO/share core engine",
+    "core": "FY2026 AFFO/share midpoint $42.99",
+    "execution": "2027-2029 revenue, margin, AFFO/share and development-return delivery",
+    "ecosystem": "interconnection density plus xScale spillover; no separate unproven monetary add-on",
+    "drag": "development CAPEX, higher marginal debt cost, xScale minority economics, forward equity/SBC dilution",
+    "expected_value": 976.15,
+    "expected_2029_price": 1295.36,
+    "expected_irr": 0.083955,
+    "current_price": 1055.2,
+    "hurdle_rate": 0.11,
+    "base_hurdle_pv": 991.02,
+    "current_forward_affo_multiple": 24.55,
+    "up_down_ratio": 2.44
+  },
+  "reverse_expectations": {
+    "hurdle_rate": 0.11,
+    "current_price": 1055.2,
+    "starting_fy2026_affo_per_share": 42.99,
+    "exit_multiple_cases": {
+      "24.55": {
+        "required_affo_per_share_cagr": 0.100597,
+        "required_2029_affo_per_share": 57.31
+      },
+      "23": {
+        "required_affo_per_share_cagr": 0.123837,
+        "required_2029_affo_per_share": 61.02
+      },
+      "21": {
+        "required_affo_per_share_cagr": 0.156993,
+        "required_2029_affo_per_share": 66.58
+      }
+    },
+    "interpretation": "At an unchanged ~24.55x multiple, current price needs ~10.1% FY26-29 AFFO/share CAGR to meet 11% total-return hurdle; at 23x it needs ~12.4%, slightly above company 9-12% guide."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_bn": 10.27,
+      "ebit_bn": 2.426,
+      "eps": 17.2
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_bn": 11.346,
+      "ebit_bn": 2.722,
+      "eps": 18.71
+    },
+    "fy3": {
+      "year": 2028,
+      "revenue_bn": 12.423,
+      "ebit_bn": 3.157,
+      "eps": null
+    },
+    "revision_trend": "Positive after Q2 2026; multiple brokers raised targets in August 2026. Exact 3-6 month estimate-revision series is PRIMARY_SOURCE_CEILING.",
+    "target_price_avg": 1234.55,
+    "analyst_count": 32,
+    "rating": "Buy",
+    "short_interest": "~1.9% of float in mid-July 2026; latest fully consistent primary aggregation ceiling",
+    "institutional_positioning": "PRIMARY_SOURCE_CEILING — aggregate 13F sources partial/ambiguous",
+    "insider_positioning": "Recent sales largely plan/tax-related; no strong conviction-buy signal identified."
+  },
+  "stance": {
+    "zone": "WATCH / HOLD; new buying requires price discipline",
+    "price_bands": {
+      "strong_asymmetry": "<=900",
+      "attractive_entry": "940-980",
+      "watch_hold": "980-1100",
+      "high_end_execution_required": "1100-1200",
+      "up_case_required": ">1200"
+    },
+    "horizon": "to 2029-12-31 (~3.35 years)",
+    "hurdle_trigger_price": 976.15,
+    "falsification_summary": "Two or more of MRR <7%, interconnection adds <5k for two quarters, new-cohort cash return <15%, diluted share growth >1.5% with AFFO/share growth <7%, or long-term margin/AFFO guide cut."
+  },
+  "catalysts": [
+    {
+      "when": "3Q26 earnings",
+      "event": "Underlying MRR/recurring revenue after Q2 one-time xScale fees",
+      "sensitivity": "high"
+    },
+    {
+      "when": "4Q26/FY26 results",
+      "event": "FY26 AFFO/share delivery and 2027 CAPEX/funding guide",
+      "sensitivity": "high"
+    },
+    {
+      "when": "2027 commissioning cycle",
+      "event": "52-project development pipeline conversion from backlog to billing",
+      "sensitivity": "high"
+    },
+    {
+      "when": "ongoing",
+      "event": "xScale JV deployments, asset sales and fee/equity-method economics",
+      "sensitivity": "medium-high"
+    },
+    {
+      "when": "ongoing",
+      "event": "ATM/forward settlement and new debt coupons",
+      "sensitivity": "high"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.0, Ch.3.1"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1.1–1.4"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1.1"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1.2, Ch.4.5"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1.2–1.3, Ch.6.4"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.0, Ch.3.2"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.1, Ch.4.5"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1.4, Ch.3.4"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.1–3.2"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.0, Ch.3.1–3.2"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1.3, Ch.3.5"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2.1"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2.2–2.3"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4.1–4.2"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4.3"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.4.5, Ch.6.4"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4.4, Ch.5.4"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.0, Ch.5.2"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5.1–5.7"
+    },
+    {
+      "rc_id": "RC-020",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.6.2–6.6"
+    }
+  ],
+  "source_registry": [
+    {
+      "id": "E01",
+      "title": "Equinix Q2 2026 earnings release",
+      "date": "2026-07-29",
+      "type": "primary",
+      "url": "https://investor.equinix.com/sec-filings/all-sec-filings/content/0001101239-26-000145/a991eqix-q226xpr.htm"
+    },
+    {
+      "id": "E02",
+      "title": "Equinix Q2 2026 Form 10-Q",
+      "date": "2026-07-29",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000147/eqix-20260630.htm"
+    },
+    {
+      "id": "E03",
+      "title": "Equinix FY2025 Form 10-K",
+      "date": "2026-02-11",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm"
+    },
+    {
+      "id": "E04",
+      "title": "Equinix 2026 Proxy Statement",
+      "date": "2026-04-01",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000073/eqix-20260401.htm"
+    },
+    {
+      "id": "E05",
+      "title": "Equinix new revolving facility Form 8-K",
+      "date": "2026-07-27",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000148/eqix-20260727.htm"
+    },
+    {
+      "id": "E06",
+      "title": "Equinix $3.0B notes issuance Form 8-K",
+      "date": "2026-08-06",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110465926092009/0001104659-26-092009-index.html"
+    },
+    {
+      "id": "E07",
+      "title": "Equinix xScale U.S. JV official disclosure",
+      "date": "2024-10-01",
+      "type": "primary",
+      "url": "https://investor.equinix.com/sec-filings/all-sec-filings/content/0001104659-24-104921/tm2425348d1_ex99-1.htm"
+    },
+    {
+      "id": "E08",
+      "title": "Digital Realty Q2 2026 results",
+      "date": "2026-07-23",
+      "type": "peer-primary",
+      "url": "https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-reports-second-quarter-2026-results"
+    },
+    {
+      "id": "E09",
+      "title": "StockAnalysis EQIX statistics / S&P Global consensus",
+      "date": "2026-08-24",
+      "type": "secondary",
+      "url": "https://stockanalysis.com/stocks/eqix/statistics/"
+    },
+    {
+      "id": "E10",
+      "title": "MarketScreener EQIX consensus and recommendation changes",
+      "date": "2026-08-25",
+      "type": "secondary",
+      "url": "https://www.marketscreener.com/quote/stock/EQUINIX-INC-20565916/consensus/"
+    },
+    {
+      "id": "E11",
+      "title": "Macrotrends EQIX historical price/book and price/sales context",
+      "date": "2026-08-2026",
+      "type": "secondary",
+      "url": "https://www.macrotrends.net/stocks/charts/EQIX/equinix/price-book"
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "8-quarter AFFO/share trajectory",
+      "authoritative_source_block": "financials.quarterly_8q[].affo_per_share",
+      "source_values": [
+        9.05,
+        7.92,
+        9.67,
+        9.91,
+        9.83,
+        8.91,
+        10.79,
+        11.78
+      ],
+      "display_values": [
+        9.05,
+        7.92,
+        9.67,
+        9.91,
+        9.83,
+        8.91,
+        10.79,
+        11.78
+      ],
+      "narrative_locator": "Ch.4.2",
+      "table_locator": "Ch.4.2",
+      "caption_locator": "HTML figure 1",
+      "rendered_asset_locator": "inline SVG #vis-affo",
+      "source_version_or_hash": "f589baec2238642291830c4b6a6d210dd097ffb7c2452dab63c35360ebadebf7"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "2029 scenario price vs current price",
+      "authoritative_source_block": "scenarios[].per_share_value + valuation.current_price",
+      "source_values": [
+        819.23,
+        1316.05,
+        1630.74,
+        1055.2
+      ],
+      "display_values": [
+        819.23,
+        1316.05,
+        1630.74,
+        1055.2
+      ],
+      "narrative_locator": "Ch.5.3-5.5",
+      "table_locator": "Ch.5.3",
+      "caption_locator": "HTML figure 2",
+      "rendered_asset_locator": "inline SVG #vis-scenario",
+      "source_version_or_hash": "f8bddf7589b0a79a4e646bc656ae5e291bf4bbf2b2f923a9dd5b3e3e82a9f4f5"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "Reverse expectations by exit multiple",
+      "authoritative_source_block": "reverse_expectations.exit_multiple_cases",
+      "source_values": {
+        "24.55": {
+          "required_affo_per_share_cagr": 0.100597,
+          "required_2029_affo_per_share": 57.31
+        },
+        "23": {
+          "required_affo_per_share_cagr": 0.123837,
+          "required_2029_affo_per_share": 61.02
+        },
+        "21": {
+          "required_affo_per_share_cagr": 0.156993,
+          "required_2029_affo_per_share": 66.58
+        }
+      },
+      "display_values": {
+        "24.55": {
+          "required_affo_per_share_cagr": 0.100597,
+          "required_2029_affo_per_share": 57.31
+        },
+        "23": {
+          "required_affo_per_share_cagr": 0.123837,
+          "required_2029_affo_per_share": 61.02
+        },
+        "21": {
+          "required_affo_per_share_cagr": 0.156993,
+          "required_2029_affo_per_share": 66.58
+        }
+      },
+      "narrative_locator": "Ch.5.6",
+      "table_locator": "Appendix A3",
+      "caption_locator": "HTML figure 3",
+      "rendered_asset_locator": "inline SVG #vis-reverse",
+      "source_version_or_hash": "701a39ffbf7f5389ed90251203a76c44eff7faeeba213183ce75465a59e6a6cf"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "Capital intensity — PP&E purchases vs AFFO",
+      "authoritative_source_block": "financials.annual_3y",
+      "source_values": [
+        {
+          "year": 2023,
+          "ppe": 2.781,
+          "affo": 3.019
+        },
+        {
+          "year": 2024,
+          "ppe": 3.066,
+          "affo": 3.356
+        },
+        {
+          "year": 2025,
+          "ppe": 4.311,
+          "affo": 3.761
+        }
+      ],
+      "display_values": [
+        {
+          "year": 2023,
+          "ppe": 2.781,
+          "affo": 3.019
+        },
+        {
+          "year": 2024,
+          "ppe": 3.066,
+          "affo": 3.356
+        },
+        {
+          "year": 2025,
+          "ppe": 4.311,
+          "affo": 3.761
+        }
+      ],
+      "narrative_locator": "Ch.4.1-4.3",
+      "table_locator": "Ch.4.1",
+      "caption_locator": "HTML figure 4",
+      "rendered_asset_locator": "inline SVG #vis-capital",
+      "source_version_or_hash": "5b6d276bd2275239e55b3070cd2789cd19de8a1663f73237315919745644b428"
+    }
+  ],
+  "audits": {
+    "rc_unresolved": 0,
+    "rc_h3_coverage_rate": 1.0,
+    "latest_filing_check": "PASS",
+    "industry_company_narrative": "PASS",
+    "korean_readability": "PASS",
+    "data_pack_report_parity": "PASS",
+    "pdf_gate": "N/A — explicitly waived by user",
+    "html_template_resolution": "PASS",
+    "html_structure_validation": "PASS",
+    "visible_raw_urls": 0,
+    "visual_data_lineage": "PASS",
+    "publishing_acceptance": "PASS_WITH_USER_PDF_WAIVER",
+    "report_data_pack": "EMITTED",
+    "data_pack_source_registry_completeness": "PASS",
+    "content_meaning_lock_preserved": "PASS",
+    "published_top_level_schema_match": "PASS",
+    "explanatory_depth_preserved": "PASS",
+    "html_sidebar": "PASS",
+    "searchable_text": "PASS",
+    "korean_prose_quality": "PASS",
+    "explanatory_space_allocation": "PASS",
+    "visual_substitution": "PASS",
+    "visual_grammar_variety": "PASS",
+    "chart_readability": "PASS",
+    "table_quality": "PASS",
+    "semantic_golden_qa": "PASS",
+    "visual_golden_qa": "PASS",
+    "golden_parity": "PASS",
+    "internal_state_leakage": 0,
+    "pdf_specific_gates": "N/A — explicitly waived by user"
+  }
+}

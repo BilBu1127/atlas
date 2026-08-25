@@ -1,0 +1,1230 @@
+{
+  "meta": {
+    "ticker": "RTX",
+    "company": "RTX Corporation",
+    "T0": "2026-08-25",
+    "price_asof": "2026-08-24",
+    "price": 209.22,
+    "filing_asof": "2026-06-30 (10-Q filed 2026-07-23)",
+    "consensus_asof": "2026-08-17",
+    "version": "DDOS-v1.7-RTX-FINAL-2026-08-25",
+    "pdf": "WAIVED_BY_USER"
+  },
+  "financials": {
+    "annual_3y": {
+      "2023": {
+        "adjusted_sales_b": 74.305,
+        "adjusted_eps": 5.06,
+        "fcf_b": 5.468,
+        "backlog_b": 196
+      },
+      "2024": {
+        "adjusted_sales_b": 80.808,
+        "adjusted_eps": 5.73,
+        "fcf_b": 4.534,
+        "backlog_b": 218
+      },
+      "2025": {
+        "adjusted_sales_b": 88.603,
+        "adjusted_eps": 6.29,
+        "fcf_b": 7.94,
+        "backlog_b": 268
+      }
+    },
+    "quarterly_8q": {
+      "2024Q3": {
+        "sales_b": 20.089,
+        "adjusted_eps": 1.45,
+        "fcf_b": 1.971,
+        "backlog_b": 221
+      },
+      "2024Q4": {
+        "sales_b": 21.623,
+        "adjusted_eps": 1.54,
+        "fcf_b": 0.492,
+        "backlog_b": 218
+      },
+      "2025Q1": {
+        "sales_b": 20.306,
+        "adjusted_eps": 1.47,
+        "fcf_b": 0.792,
+        "backlog_b": 217
+      },
+      "2025Q2": {
+        "sales_b": 21.581,
+        "adjusted_eps": 1.56,
+        "fcf_b": -0.072,
+        "backlog_b": 236
+      },
+      "2025Q3": {
+        "sales_b": 22.478,
+        "adjusted_eps": 1.7,
+        "fcf_b": 4.025,
+        "backlog_b": 251
+      },
+      "2025Q4": {
+        "sales_b": 24.238,
+        "adjusted_eps": 1.55,
+        "fcf_b": 3.195,
+        "backlog_b": 268
+      },
+      "2026Q1": {
+        "sales_b": 22.076,
+        "adjusted_eps": 1.78,
+        "fcf_b": 1.309,
+        "backlog_b": 271
+      },
+      "2026Q2": {
+        "sales_b": 24.708,
+        "adjusted_eps": 1.89,
+        "fcf_b": 2.878,
+        "backlog_b": 289
+      }
+    },
+    "segments_2025": {
+      "Collins Aerospace": {
+        "sales_b": 30.196,
+        "adj_op_profit_b": 4.893,
+        "adj_margin_pct": 16.2
+      },
+      "Pratt & Whitney": {
+        "sales_b": 32.916,
+        "adj_op_profit_b": 2.725,
+        "adj_margin_pct": 8.3
+      },
+      "Raytheon": {
+        "sales_b": 28.043,
+        "adj_op_profit_b": 3.231,
+        "adj_margin_pct": 11.5
+      }
+    },
+    "segments_2026Q2": {
+      "Collins Aerospace": {
+        "sales_b": 8.21,
+        "op_profit_b": 1.306,
+        "reported_margin_pct": 15.9,
+        "adj_op_profit_b": 1.37,
+        "adj_margin_pct": 16.7,
+        "yoy_sales_pct": 8,
+        "organic_sales_pct": 13
+      },
+      "Pratt & Whitney": {
+        "sales_b": 8.889,
+        "op_profit_b": 0.738,
+        "reported_margin_pct": 8.3,
+        "adj_op_profit_b": 0.74,
+        "adj_margin_pct": 8.3,
+        "yoy_sales_pct": 16,
+        "commercial_aftermarket_yoy_pct": 25,
+        "military_yoy_pct": 23,
+        "commercial_oe_yoy_pct": -8
+      },
+      "Raytheon": {
+        "sales_b": 8.269,
+        "op_profit_b": 1.042,
+        "reported_margin_pct": 12.6,
+        "adj_op_profit_b": 1.043,
+        "adj_margin_pct": 12.6,
+        "yoy_sales_pct": 18
+      }
+    },
+    "current_backlog": {
+      "total_b": 289,
+      "commercial_b": 170,
+      "defense_b": 119
+    },
+    "q2_customer_mix_pct": {
+      "us_government": 37.6,
+      "foreign_military_sales": 8.2,
+      "foreign_government": 7.0,
+      "commercial": 47.2
+    },
+    "q2_raytheon_contract_mix": {
+      "fixed_price_sales_b": 5.106,
+      "cost_type_sales_b": 3.114,
+      "fixed_price_share_pct": 62.1,
+      "net_eac_adjustment_m": -66
+    },
+    "balance_sheet": {
+      "cash_b": 8.305,
+      "total_debt_b": 37.383,
+      "simple_net_debt_b": 29.078,
+      "shares_outstanding_b": 1.347758144,
+      "q2_diluted_weighted_average_shares_b": 1.365
+    },
+    "2026_guidance": {
+      "adjusted_sales_low_b": 95.0,
+      "adjusted_sales_high_b": 96.0,
+      "adjusted_sales_mid_b": 95.5,
+      "adjusted_eps_low": 7.1,
+      "adjusted_eps_high": 7.25,
+      "adjusted_eps_mid": 7.175,
+      "fcf_low_b": 8.5,
+      "fcf_high_b": 8.75,
+      "fcf_mid_b": 8.625,
+      "organic_growth_low_pct": 8,
+      "organic_growth_high_pct": 9
+    },
+    "cash_quality": {
+      "h1_2026_factoring_yoy_ocf_benefit_b": 1.5,
+      "powder_metal_2026_expected_cash_impact_b": 0.7
+    },
+    "ceilings": [
+      "GTF Advantage의 '최대 2배 time-on-wing'은 상용 서비스 초기 단계라 충분한 실제 fleet durability 데이터가 아직 없다.",
+      "완전한 FY1–FY3 sell-side revenue/EBIT/FCF revision matrix와 aggregate 13F positioning은 공개 데이터만으로 표준화하지 못했다."
+    ]
+  },
+  "industry": {
+    "iata_june_2026": {
+      "rpk_yoy_pct": -1.7,
+      "ask_yoy_pct": -1.3,
+      "load_factor_pct": 84.2
+    },
+    "iata_2026_profitability": {
+      "net_profit_b": 23,
+      "net_margin_pct": 2.0,
+      "rpk_growth_forecast_pct": 2.1
+    },
+    "airbus_a320_ramp": {
+      "target_monthly_rate_low": 70,
+      "target_monthly_rate_high": 75,
+      "target_timing": "end-2027",
+      "pacer": "Pratt & Whitney"
+    },
+    "raytheon_capacity": {
+      "tomahawk_target_per_year": 1000,
+      "amraam_target_per_year": 1900,
+      "sm6_target_per_year": 500,
+      "huntsville_capacity_increase_pct": 50,
+      "huntsville_investment_m": 115
+    }
+  },
+  "product_technology": {
+    "gtf": {
+      "gtf_aircraft_delivered_min": 2700,
+      "customers_min": 90,
+      "orders_and_commitments_min": 13000,
+      "advantage_takeoff_thrust_improvement_low_pct": 4,
+      "advantage_takeoff_thrust_improvement_high_pct": 8,
+      "company_claim_time_on_wing_multiple": 2.0,
+      "hot_section_plus_durability_benefit_low_pct": 90,
+      "hot_section_plus_durability_benefit_high_pct": 95,
+      "full_production_cutover": 2028,
+      "claim_validation": "PRIMARY_SOURCE_CEILING"
+    }
+  },
+  "management": {
+    "ceo": "Christopher T. Calio",
+    "2025_total_direct_comp_m": 27.65,
+    "2025_corporate_performance_factor_pct": 164,
+    "promise_delivery": {
+      "2024_initial": {
+        "sales_b_range": [
+          78,
+          79
+        ],
+        "eps_range": [
+          5.25,
+          5.4
+        ],
+        "fcf_b": 5.7
+      },
+      "2024_actual": {
+        "adjusted_sales_b": 80.808,
+        "eps": 5.73,
+        "fcf_b": 4.534,
+        "assessment": "sales/EPS beat; FCF miss"
+      },
+      "2025_initial": {
+        "sales_b_range": [
+          83,
+          84
+        ],
+        "eps_range": [
+          6.0,
+          6.15
+        ],
+        "fcf_b_range": [
+          7.0,
+          7.5
+        ]
+      },
+      "2025_actual": {
+        "sales_b": 88.603,
+        "eps": 6.29,
+        "fcf_b": 7.94,
+        "assessment": "beat all"
+      },
+      "2026_initial": {
+        "sales_b_range": [
+          92,
+          93
+        ],
+        "eps_range": [
+          6.6,
+          6.8
+        ],
+        "fcf_b_range": [
+          8.25,
+          8.75
+        ]
+      },
+      "2026_q2_updated": {
+        "sales_b_range": [
+          95,
+          96
+        ],
+        "eps_range": [
+          7.1,
+          7.25
+        ],
+        "fcf_b_range": [
+          8.5,
+          8.75
+        ],
+        "assessment": "raised all three major guides"
+      }
+    }
+  },
+  "kpis": [
+    {
+      "name": "PW1100G AOG 전년 대비 감소율",
+      "history": [
+        {
+          "period": "2026H1",
+          "value_pct": -25
+        }
+      ],
+      "current": -25,
+      "thresholds": {
+        "green": "-20% 이하",
+        "yellow": "-5%~-20%",
+        "red": "-5% 초과 또는 증가"
+      },
+      "signal": "GREEN",
+      "source": "Q2 management commentary; exact fleet series ceiling"
+    },
+    {
+      "name": "PW1100G MRO output 증가율",
+      "history": [
+        {
+          "period": "2026H1",
+          "value_pct": 43
+        }
+      ],
+      "current": 43,
+      "thresholds": {
+        "green": ">25%",
+        "yellow": "10~25%",
+        "red": "<10%"
+      },
+      "signal": "GREEN",
+      "source": "Q2 management commentary"
+    },
+    {
+      "name": "Pratt 상업 aftermarket 성장률",
+      "history": [
+        {
+          "period": "2026Q2",
+          "value_pct": 25
+        }
+      ],
+      "current": 25,
+      "thresholds": {
+        "green": ">15%",
+        "yellow": "8~15%",
+        "red": "<8%"
+      },
+      "signal": "GREEN",
+      "source": "S02"
+    },
+    {
+      "name": "Pratt 조정 영업이익률",
+      "history": [
+        {
+          "period": "2025FY",
+          "value_pct": 8.3
+        },
+        {
+          "period": "2026Q2",
+          "value_pct": 8.3
+        }
+      ],
+      "current": 8.3,
+      "thresholds": {
+        "green": ">=10%",
+        "yellow": "8~10%",
+        "red": "<8%"
+      },
+      "signal": "YELLOW",
+      "source": "S02/S05"
+    },
+    {
+      "name": "Raytheon 조정 영업이익률",
+      "history": [
+        {
+          "period": "2025FY",
+          "value_pct": 11.5
+        },
+        {
+          "period": "2026Q2",
+          "value_pct": 12.6
+        }
+      ],
+      "current": 12.6,
+      "thresholds": {
+        "green": ">=12.5%",
+        "yellow": "11~12.5%",
+        "red": "<11%"
+      },
+      "signal": "GREEN",
+      "source": "S02/S05"
+    },
+    {
+      "name": "Collins 조정 영업이익률",
+      "history": [
+        {
+          "period": "2025FY",
+          "value_pct": 16.2
+        },
+        {
+          "period": "2026Q2",
+          "value_pct": 16.7
+        }
+      ],
+      "current": 16.7,
+      "thresholds": {
+        "green": ">=16%",
+        "yellow": "15~16%",
+        "red": "<15%"
+      },
+      "signal": "GREEN",
+      "source": "S02/S05"
+    },
+    {
+      "name": "Raytheon EAC 품질",
+      "history": [
+        {
+          "period": "2026Q2",
+          "net_eac_m": -66
+        }
+      ],
+      "current": -66,
+      "thresholds": {
+        "green": ">-100M/분기이며 대형 신규 charge 없음",
+        "yellow": "-100M~-250M",
+        "red": "<-250M 또는 신규 material charge"
+      },
+      "signal": "GREEN",
+      "source": "S01"
+    },
+    {
+      "name": "정규화 FCF",
+      "history": [
+        {
+          "period": "2026FY guide midpoint",
+          "fcf_b": 8.625
+        }
+      ],
+      "current": 8.625,
+      "thresholds": {
+        "green": "2027 궤적 >=9.5B, 운전자본 정상화",
+        "yellow": "8.5~9.5B",
+        "red": "<8.5B 또는 factoring 의존 상승"
+      },
+      "signal": "YELLOW",
+      "source": "S02; H1 2026 factoring benefit noted in S01"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.2,
+      "revenue_path": [
+        95.0,
+        99.0,
+        103.0,
+        107.0,
+        111.0
+      ],
+      "margin_path": [
+        12.4,
+        12.6,
+        12.8,
+        12.9,
+        13.0
+      ],
+      "fcf": [
+        8.5,
+        9.0,
+        9.5,
+        10.0,
+        10.5
+      ],
+      "diluted_shares": 1.38,
+      "exit_p_fcf": 18.0,
+      "per_share_value": 153.96,
+      "terminal_share_price_2030": 136.96
+    },
+    {
+      "name": "Base",
+      "probability": 0.55,
+      "revenue_path": [
+        95.5,
+        102.0,
+        109.0,
+        116.0,
+        123.0
+      ],
+      "margin_path": [
+        12.6,
+        13.0,
+        13.5,
+        13.9,
+        14.3
+      ],
+      "fcf": [
+        8.625,
+        9.8,
+        11.2,
+        12.8,
+        14.5
+      ],
+      "diluted_shares": 1.365,
+      "exit_p_fcf": 22.0,
+      "per_share_value": 211.35,
+      "terminal_share_price_2030": 233.7
+    },
+    {
+      "name": "Up",
+      "probability": 0.25,
+      "revenue_path": [
+        96.0,
+        104.0,
+        113.0,
+        123.0,
+        133.0
+      ],
+      "margin_path": [
+        12.8,
+        13.5,
+        14.2,
+        14.8,
+        15.3
+      ],
+      "fcf": [
+        8.75,
+        10.5,
+        12.6,
+        15.1,
+        17.5
+      ],
+      "diluted_shares": 1.35,
+      "exit_p_fcf": 25.0,
+      "per_share_value": 256.2,
+      "terminal_share_price_2030": 324.07
+    }
+  ],
+  "valuation": {
+    "mode": "Mode C — Mature Compounder",
+    "core": "DCF",
+    "cross_checks": [
+      "EV/EBIT",
+      "FCF Yield",
+      "ROIC/Reinvestment",
+      "segment-aware SOTP"
+    ],
+    "execution": null,
+    "ecosystem": null,
+    "drag": null,
+    "expected_value": 211.08,
+    "expected_irr": 0.0454,
+    "current_price": 209.22,
+    "current_price_asof": "2026-08-24",
+    "ke": 0.075,
+    "terminal_growth": 0.03,
+    "2026_midpoint_pe": 29.16,
+    "2026_midpoint_fcf_yield_pct": 3.06,
+    "economic_diluted_denominator_b": 1.365,
+    "spot_weighted_dcf_upside_pct": 0.89,
+    "expected_terminal_share_price_2030": 236.94,
+    "illustrative_cumulative_dividends_2027_2030": 12.9,
+    "expected_total_value_2030": 249.84,
+    "sensitivity": [
+      {
+        "ke": 0.07,
+        "0.025": 214.23,
+        "0.03": 238.31,
+        "0.035": 269.28
+      },
+      {
+        "ke": 0.075,
+        "0.025": 192.34,
+        "0.03": 211.35,
+        "0.035": 235.1
+      },
+      {
+        "ke": 0.08,
+        "0.025": 174.45,
+        "0.03": 189.78,
+        "0.035": 208.52
+      },
+      {
+        "ke": 0.085,
+        "0.025": 159.54,
+        "0.03": 172.14,
+        "0.035": 187.26
+      },
+      {
+        "ke": 0.09,
+        "0.025": 146.93,
+        "0.03": 157.45,
+        "0.035": 169.87
+      }
+    ]
+  },
+  "reverse_expectations": {
+    "starting_fcf_2026_b": 8.625,
+    "ke": 0.075,
+    "terminal_growth": 0.03,
+    "required_fcf_cagr_2027_2030": 0.135707,
+    "required_2030_fcf_b": 14.349,
+    "base_2030_revenue_b": 123.0,
+    "implied_fcf_margin_at_base_revenue_pct": 11.7,
+    "interpretation": "현재가는 낮은 자본비용 가정에서도 2026~2030 FCF의 두 자릿수 중반 성장, 즉 GTF 정상화와 Raytheon 증산의 상당 부분을 요구한다."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "company_eps_guide_midpoint": 7.175
+    },
+    "fy2": {
+      "year": 2027,
+      "public_eps_snapshot": 7.89
+    },
+    "revision_trend": "Q1과 Q2에서 2026 매출/EPS 가이드가 연속 상향됐고 Q2에서 FCF 가이드 하단도 상향. 27명 목표가 평균 $236.86, Buy 18 / Hold 9 / Sell 0 스냅샷.",
+    "target_price": {
+      "low": 200,
+      "average": 236.86,
+      "high": 265,
+      "asof": "2026-08-17"
+    },
+    "short_interest": {
+      "shares_m": 18.052,
+      "float_pct": 1.34,
+      "days_to_cover": 3.1,
+      "asof": "2026-07-31"
+    },
+    "ceiling": "완전한 FY1–FY3 항목별 컨센서스 revision history와 13F 포지셔닝 표준화는 PRIMARY_SOURCE_CEILING"
+  },
+  "stance": {
+    "zone": "관망 / 가격 조정 대기",
+    "price_bands": {
+      "attractive_10pct_plus": {
+        "max": 170.65,
+        "label": "매력적 — 기대수익률 10%+"
+      },
+      "conditional_8_10pct": {
+        "min": 170.66,
+        "max": 183.64,
+        "label": "조건부 관심 — 약 8~10%"
+      },
+      "watch_5_8pct": {
+        "min": 183.64999999999998,
+        "max": 205.55,
+        "label": "관망 — 약 5~8%"
+      },
+      "priced_in": {
+        "min": 205.56,
+        "label": "선반영 구간 — 기대수익률 약 5% 미만"
+      }
+    },
+    "horizon": "4년 (2026-08-25 기준 2030 exit sanity check)",
+    "variant_perception": "사업의 질과 수요는 강하지만 현 가격은 GTF 정상화와 Raytheon cash conversion을 상당 부분 선반영한다. 핵심 오판 가능성은 Pratt aftermarket FCF inflection이 예상보다 훨씬 빠르거나, 반대로 factoring·고정가 계약·GTF cash drag 때문에 reported growth가 현금으로 덜 전환되는 경우다."
+  },
+  "catalysts": [
+    {
+      "when": "2026년 10월 전후",
+      "event": "Q3 2026 실적",
+      "sensitivity": "Pratt AOG/MRO 정상화, Raytheon 생산량, 운전자본/FCF 확인"
+    },
+    {
+      "when": "2026년 하반기",
+      "event": "GTF Advantage 상용 서비스 진입 및 Hot Section Plus 적용",
+      "sensitivity": "durability 개선이 실제 time-on-wing과 shop visit 경제성으로 확인되는지"
+    },
+    {
+      "when": "2026H2–2027",
+      "event": "Tomahawk/AMRAAM/SM-6 증산 및 Huntsville 등 capacity ramp",
+      "sensitivity": "방산 backlog가 매출·마진·현금으로 전환되는 속도"
+    },
+    {
+      "when": "2027년 1월 전후",
+      "event": "FY2026 실적 및 FY2027 가이던스",
+      "sensitivity": "FCF 9.5B+ 진입 가능성, Pratt margin 10% 접근 여부"
+    },
+    {
+      "when": "2027년 말까지",
+      "event": "Airbus A320 family 월 70–75대 ramp 목표",
+      "sensitivity": "Pratt가 pacer에서 정상 공급자로 바뀌는지"
+    }
+  ],
+  "risks": [
+    "GTF durability/remediation 재악화",
+    "Airbus 및 공급망 생산 병목 지속",
+    "Raytheon fixed-price EAC 및 원가상승",
+    "항공사 수익성/연료비 충격에 따른 aftermarket 수요 둔화",
+    "방산 예산·수출 승인 지연",
+    "운전자본/factoring 역풍",
+    "법률·규제 및 powder-metal 관련 조사",
+    "밸류에이션 multiple compression"
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "§3.1 / Appendix A1"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "§1.1–1.4"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "§1.5–1.7"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "§2.1–2.4"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "§3.1–3.4"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "§3.5–3.7 / §4.4"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "§3.6 / Appendix A4"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "§3.2–3.5"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "§3.8"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "§4.1–4.5 / Appendix A2"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "§1.6 / §3.4 / §4.4"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "§1.3 / §1.6 / §3.7"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "§4.5 / Appendix A3"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "§5.4 / Appendix A5"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "§5.1–5.5 / Appendix A6"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "§6.2–6.5"
+    }
+  ],
+  "as_of_registry": {
+    "price": {
+      "as_of": "2026-08-24",
+      "value": 209.22,
+      "source": "S19"
+    },
+    "financials": {
+      "as_of": "2026-06-30",
+      "filed": "2026-07-23",
+      "source": "S01"
+    },
+    "guidance": {
+      "as_of": "2026-07-23",
+      "source": "S02"
+    },
+    "post_filing_operational_updates": {
+      "as_of": "2026-08-24",
+      "sources": [
+        "S12",
+        "S13",
+        "S20",
+        "S21"
+      ]
+    },
+    "consensus": {
+      "as_of": "2026-08-17",
+      "source": "S17"
+    },
+    "short_interest": {
+      "as_of": "2026-07-31",
+      "source": "S18"
+    }
+  },
+  "latest_filing_check": {
+    "checked_on": "2026-08-25",
+    "result": "PASS",
+    "latest_quarterly_financial_filing": "2026-07-23 10-Q for quarter ended 2026-06-30",
+    "later_material_financial_8k_found": false,
+    "later_sec_activity": "Form 4 / ownership-related filings do not change operating financial baseline",
+    "post_filing_operational_updates_incorporated": [
+      "2026-08-10 SM-3 IIA $745M award",
+      "2026-08-17 Tomahawk seven-year award",
+      "2026-08-24 Pratt AutoAir production-time/output update",
+      "2026-08-24 Collins EPACS altitude-test milestone"
+    ]
+  },
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "3개년 매출·FCF·backlog",
+      "authoritative_source_block": "financials.annual_3y",
+      "source_values": {
+        "2023": {
+          "adjusted_sales_b": 74.305,
+          "adjusted_eps": 5.06,
+          "fcf_b": 5.468,
+          "backlog_b": 196
+        },
+        "2024": {
+          "adjusted_sales_b": 80.808,
+          "adjusted_eps": 5.73,
+          "fcf_b": 4.534,
+          "backlog_b": 218
+        },
+        "2025": {
+          "adjusted_sales_b": 88.603,
+          "adjusted_eps": 6.29,
+          "fcf_b": 7.94,
+          "backlog_b": 268
+        }
+      },
+      "source_version_or_hash": "8b45e98891f01c82",
+      "display_values": {
+        "2023": {
+          "adjusted_sales_b": 74.305,
+          "adjusted_eps": 5.06,
+          "fcf_b": 5.468,
+          "backlog_b": 196
+        },
+        "2024": {
+          "adjusted_sales_b": 80.808,
+          "adjusted_eps": 5.73,
+          "fcf_b": 4.534,
+          "backlog_b": 218
+        },
+        "2025": {
+          "adjusted_sales_b": 88.603,
+          "adjusted_eps": 6.29,
+          "fcf_b": 7.94,
+          "backlog_b": 268
+        }
+      },
+      "narrative_locator": "§4.1",
+      "table_locator": "Table 4-1",
+      "caption_locator": "#vis-001-caption",
+      "rendered_asset_locator": "#vis-001"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "Q2 2026 사업부 매출과 마진",
+      "authoritative_source_block": "segments.2026Q2",
+      "source_values": {
+        "Collins Aerospace": {
+          "sales_b": 8.21,
+          "op_profit_b": 1.306,
+          "reported_margin_pct": 15.9,
+          "adj_op_profit_b": 1.37,
+          "adj_margin_pct": 16.7,
+          "yoy_sales_pct": 8,
+          "organic_sales_pct": 13
+        },
+        "Pratt & Whitney": {
+          "sales_b": 8.889,
+          "op_profit_b": 0.738,
+          "reported_margin_pct": 8.3,
+          "adj_op_profit_b": 0.74,
+          "adj_margin_pct": 8.3,
+          "yoy_sales_pct": 16,
+          "commercial_aftermarket_yoy_pct": 25,
+          "military_yoy_pct": 23,
+          "commercial_oe_yoy_pct": -8
+        },
+        "Raytheon": {
+          "sales_b": 8.269,
+          "op_profit_b": 1.042,
+          "reported_margin_pct": 12.6,
+          "adj_op_profit_b": 1.043,
+          "adj_margin_pct": 12.6,
+          "yoy_sales_pct": 18
+        }
+      },
+      "source_version_or_hash": "d6ebd64df74063e5",
+      "display_values": {
+        "Collins Aerospace": {
+          "sales_b": 8.21,
+          "op_profit_b": 1.306,
+          "reported_margin_pct": 15.9,
+          "adj_op_profit_b": 1.37,
+          "adj_margin_pct": 16.7,
+          "yoy_sales_pct": 8,
+          "organic_sales_pct": 13
+        },
+        "Pratt & Whitney": {
+          "sales_b": 8.889,
+          "op_profit_b": 0.738,
+          "reported_margin_pct": 8.3,
+          "adj_op_profit_b": 0.74,
+          "adj_margin_pct": 8.3,
+          "yoy_sales_pct": 16,
+          "commercial_aftermarket_yoy_pct": 25,
+          "military_yoy_pct": 23,
+          "commercial_oe_yoy_pct": -8
+        },
+        "Raytheon": {
+          "sales_b": 8.269,
+          "op_profit_b": 1.042,
+          "reported_margin_pct": 12.6,
+          "adj_op_profit_b": 1.043,
+          "adj_margin_pct": 12.6,
+          "yoy_sales_pct": 18
+        }
+      },
+      "narrative_locator": "§3.1–3.4",
+      "table_locator": "Table 3-1",
+      "caption_locator": "#vis-002-caption",
+      "rendered_asset_locator": "#vis-002"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "Backlog 구성",
+      "authoritative_source_block": "financials.current_backlog",
+      "source_values": {
+        "commercial_b": 170,
+        "defense_b": 119,
+        "total_b": 289
+      },
+      "source_version_or_hash": "179534b07e8883c4",
+      "display_values": {
+        "commercial_b": 170,
+        "defense_b": 119,
+        "total_b": 289
+      },
+      "narrative_locator": "§0.2 / §4.2",
+      "table_locator": "Table 4-2",
+      "caption_locator": "#vis-003-caption",
+      "rendered_asset_locator": "#vis-003"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "DCF 시나리오 가치와 현재가",
+      "authoritative_source_block": "scenarios",
+      "source_values": {
+        "Down": {
+          "probability": 0.2,
+          "per_share_value": 153.96
+        },
+        "Base": {
+          "probability": 0.55,
+          "per_share_value": 211.35
+        },
+        "Up": {
+          "probability": 0.25,
+          "per_share_value": 256.2
+        }
+      },
+      "source_version_or_hash": "92e3f0b84be0c77b",
+      "display_values": {
+        "Down": {
+          "probability": 0.2,
+          "per_share_value": 153.96
+        },
+        "Base": {
+          "probability": 0.55,
+          "per_share_value": 211.35
+        },
+        "Up": {
+          "probability": 0.25,
+          "per_share_value": 256.2
+        }
+      },
+      "narrative_locator": "§5.2",
+      "table_locator": "Table 5-1",
+      "caption_locator": "#vis-004-caption",
+      "rendered_asset_locator": "#vis-004"
+    },
+    {
+      "vis_id": "VIS-005",
+      "figure_title": "가격 밴드",
+      "authoritative_source_block": "stance.price_bands",
+      "source_values": {
+        "attractive_10pct_plus": {
+          "max": 170.65,
+          "label": "매력적 — 기대수익률 10%+"
+        },
+        "conditional_8_10pct": {
+          "min": 170.66,
+          "max": 183.64,
+          "label": "조건부 관심 — 약 8~10%"
+        },
+        "watch_5_8pct": {
+          "min": 183.64999999999998,
+          "max": 205.55,
+          "label": "관망 — 약 5~8%"
+        },
+        "priced_in": {
+          "min": 205.56,
+          "label": "선반영 구간 — 기대수익률 약 5% 미만"
+        }
+      },
+      "source_version_or_hash": "45ed52321862cdfe",
+      "display_values": {
+        "attractive_10pct_plus": {
+          "max": 170.65,
+          "label": "매력적 — 기대수익률 10%+"
+        },
+        "conditional_8_10pct": {
+          "min": 170.66,
+          "max": 183.64,
+          "label": "조건부 관심 — 약 8~10%"
+        },
+        "watch_5_8pct": {
+          "min": 183.64999999999998,
+          "max": 205.55,
+          "label": "관망 — 약 5~8%"
+        },
+        "priced_in": {
+          "min": 205.56,
+          "label": "선반영 구간 — 기대수익률 약 5% 미만"
+        }
+      },
+      "narrative_locator": "§6.1",
+      "table_locator": "Table 6-1",
+      "caption_locator": "#vis-005-caption",
+      "rendered_asset_locator": "#vis-005"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "RTX 2026 Q2 Form 10-Q",
+      "publisher": "SEC",
+      "date": "2026-07-23",
+      "url": "https://www.sec.gov/Archives/edgar/data/101829/000010182926000027/rtx-20260630.htm",
+      "tier": "PRIMARY"
+    },
+    {
+      "id": "S02",
+      "title": "RTX Reports Q2 2026 Results",
+      "publisher": "RTX",
+      "date": "2026-07-23",
+      "url": "https://www.rtx.com/news/news-center/2026/07/23/rtx-reports-q2-2026-results",
+      "tier": "PRIMARY"
+    },
+    {
+      "id": "S03",
+      "title": "RTX 2025 Form 10-K",
+      "publisher": "SEC",
+      "date": "2026-02-06",
+      "url": "https://www.sec.gov/Archives/edgar/data/101829/000010182926000006/rtx-20251231.htm",
+      "tier": "PRIMARY"
+    },
+    {
+      "id": "S04",
+      "title": "RTX 2026 Proxy Statement",
+      "publisher": "SEC",
+      "date": "2026-03-20",
+      "url": "https://www.sec.gov/Archives/edgar/data/101829/000130817926000036/rtx014050-def14a.htm",
+      "tier": "PRIMARY"
+    },
+    {
+      "id": "S05",
+      "title": "RTX Reports 2025 Results and Announces 2026 Outlook",
+      "publisher": "RTX",
+      "date": "2026-01-27",
+      "url": "https://www.rtx.com/news/news-center/2026/01/27/rtx-reports-2025-results-and-announces-2026-outlook-",
+      "tier": "PRIMARY"
+    },
+    {
+      "id": "S06",
+      "title": "RTX Reports 2024 Results and Announces 2025 Outlook",
+      "publisher": "RTX",
+      "date": "2025-01-28",
+      "url": "https://www.rtx.com/news/news-center/2025/01/28/rtx-reports-2024-results-and-announces-2025-outlook-2",
+      "tier": "PRIMARY"
+    },
+    {
+      "id": "S07",
+      "title": "RTX Reports 2023 Results and Announces 2024 Outlook",
+      "publisher": "RTX",
+      "date": "2024-01-23",
+      "url": "https://www.rtx.com/news/news-center/2024/01/23/rtx-reports-2023-results-and-announces-2024-outlook",
+      "tier": "PRIMARY"
+    },
+    {
+      "id": "S08",
+      "title": "RTX Reports Q1 2026 Results",
+      "publisher": "RTX",
+      "date": "2026-04-21",
+      "url": "https://www.rtx.com/news/news-center/2026/04/21/rtx-reports-q1-2026-results-",
+      "tier": "PRIMARY"
+    },
+    {
+      "id": "S09",
+      "title": "GTF Advantage certified for Airbus A320neo family",
+      "publisher": "RTX / Pratt & Whitney",
+      "date": "2026-04-17",
+      "url": "https://www.rtx.com/news/news-center/2026/04/17/rtxs-pratt-whitney-gtf-advantage-engine-certified-for-airbus-a320neo-aircraft",
+      "tier": "PRIMARY"
+    },
+    {
+      "id": "S10",
+      "title": "Raytheon / Department of War critical munitions framework agreements",
+      "publisher": "RTX / Raytheon",
+      "date": "2026-02-04",
+      "url": "https://www.rtx.com/news/news-center/2026/02/04/rtxs-raytheon-partners-with-department-of-war-on-five-landmark-agreements-to-exp",
+      "tier": "PRIMARY"
+    },
+    {
+      "id": "S11",
+      "title": "Raytheon completes $115M Huntsville missile facility expansion",
+      "publisher": "RTX / Raytheon",
+      "date": "2026-03-13",
+      "url": "https://www.rtx.com/news/news-center/2026/03/13/rtxs-raytheon-completes-115-million-expansion-of-alabama-missile-integration-fa",
+      "tier": "PRIMARY"
+    },
+    {
+      "id": "S12",
+      "title": "Raytheon awarded $745M SM-3 IIA contract",
+      "publisher": "RTX / Raytheon",
+      "date": "2026-08-10",
+      "url": "https://www.rtx.com/news/news-center/2026/08/10/rtxs-raytheon-awarded-745-million-contract-for-sm-3-iia-interceptors",
+      "tier": "PRIMARY"
+    },
+    {
+      "id": "S13",
+      "title": "Raytheon seven-year Tomahawk contract",
+      "publisher": "RTX / Raytheon",
+      "date": "2026-08-17",
+      "url": "https://www.rtx.com/news/news-center/2026/08/17/rtxs-raytheon-awarded-seven-year-contract-for-tomahawk-cruise-missiles",
+      "tier": "PRIMARY"
+    },
+    {
+      "id": "S14",
+      "title": "Airbus Q1 2026 results — Pratt & Whitney remains key pacer",
+      "publisher": "Airbus",
+      "date": "2026-04-28",
+      "url": "https://www.airbus.com/en/newsroom/press-releases/2026-04-airbus-reports-first-quarter-q1-2026-results",
+      "tier": "PRIMARY"
+    },
+    {
+      "id": "S15",
+      "title": "Air Passenger Demand Falls 1.7% in June",
+      "publisher": "IATA",
+      "date": "2026-07-30",
+      "url": "https://www.iata.org/en/pressroom/2026-releases/07-30-air-passenger-demand-falls-june/",
+      "tier": "PRIMARY_INDUSTRY"
+    },
+    {
+      "id": "S16",
+      "title": "Middle East disruptions and high fuel prices halve airline industry profitability",
+      "publisher": "IATA",
+      "date": "2026-06-07",
+      "url": "https://www.iata.org/en/pressroom/2026-releases/06-07-middle-east-disruptions-high-fuel-prices-halve-airline-industry-profitability/",
+      "tier": "PRIMARY_INDUSTRY"
+    },
+    {
+      "id": "S17",
+      "title": "RTX analyst consensus snapshot",
+      "publisher": "Finviz",
+      "date": "2026-08-17",
+      "url": "https://finviz.com/stock?b=2&p=m&t=RTX&ta=1&ty=fc",
+      "tier": "SECONDARY_MARKET"
+    },
+    {
+      "id": "S18",
+      "title": "RTX short interest",
+      "publisher": "MarketBeat",
+      "date": "2026-07-31",
+      "url": "https://www.marketbeat.com/stocks/NYSE/RTX/short-interest/",
+      "tier": "SECONDARY_MARKET"
+    },
+    {
+      "id": "S19",
+      "title": "RTX August 24, 2026 close",
+      "publisher": "MarketWatch",
+      "date": "2026-08-24",
+      "url": "https://www.marketwatch.com/data-news/l3harris-technologies-inc-stock-underperforms-monday-when-compared-to-competitors-9823a1d1-7a36a53bbd0b",
+      "tier": "SECONDARY_MARKET"
+    },
+    {
+      "id": "S20",
+      "title": "A production boost, powered by hard data",
+      "publisher": "RTX",
+      "date": "2026-08-24",
+      "url": "https://www.rtx.com/news/2026/08/24/a-production-boost-powered-by-hard-data",
+      "tier": "PRIMARY"
+    },
+    {
+      "id": "S21",
+      "title": "Collins EPACS power and thermal management system completes altitude testing",
+      "publisher": "RTX / Collins Aerospace",
+      "date": "2026-08-24",
+      "url": "https://www.rtx.com/news/news-center/2026/08/24/rtxs-collins-aerospace-epacs-power-and-thermal-management-system-completes-altit",
+      "tier": "PRIMARY"
+    }
+  ],
+  "qa": {
+    "RESEARCH_COMPLETE": true,
+    "DEEP": true,
+    "READABLE": true,
+    "EXPLANATORY_COMPLETE": true,
+    "TOP_LEVEL_CHAPTER_SCHEMA_LOCK": "PASS",
+    "H1_H2_RESEARCH_CONTRACT_COMPLETENESS": "PASS",
+    "H2_H3_COVERAGE_LINEAGE": "PASS",
+    "RC_H3_COVERAGE_RATE": 1.0,
+    "LATEST_FILING_CHECK": "PASS",
+    "VARIANT_PERCEPTION_VISIBLE": "PASS",
+    "CH6_TRIPWIRE_CALENDAR_FALSIFICATION": "PASS",
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "EXPLANATORY_SPACE_ALLOCATION": "PASS",
+    "GOLDEN_CONTENT_PARITY": "PASS",
+    "REPORT_DATA_PACK": "EMITTED",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "PDF": "WAIVED_BY_USER"
+  }
+}

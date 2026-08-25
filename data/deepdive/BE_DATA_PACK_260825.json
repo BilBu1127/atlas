@@ -1,0 +1,1039 @@
+{
+  "meta": {
+    "ticker": "BE",
+    "company": "Bloom Energy Corporation",
+    "T0": "2026-08-25",
+    "price_asof": "2026-08-24",
+    "price_usd": 204.02,
+    "filing_asof": "2026-07-29 Q2 2026 10-Q/A",
+    "latest_filing_check_asof": "2026-08-25",
+    "consensus_asof": "2026-08",
+    "version": "DDOS v1.7 Production / BE H3",
+    "pdf_status": "USER_WAIVED"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue_m": 1333.5,
+        "gaap_gm_pct": 14.8,
+        "ng_gm_pct": 25.8,
+        "gaap_opinc_m": -208.9,
+        "ng_opinc_m": 19.2,
+        "net_income_common_m": -302.1,
+        "ocf_m": -372.5,
+        "capex_m": 83.7,
+        "simple_fcf_m": -456.2,
+        "sbc_ng_adjustment_m": 87.1
+      },
+      {
+        "year": 2024,
+        "revenue_m": 1473.9,
+        "gaap_gm_pct": 27.5,
+        "ng_gm_pct": 28.7,
+        "gaap_opinc_m": 22.9,
+        "ng_opinc_m": 107.6,
+        "net_income_common_m": -29.2,
+        "ocf_m": 92.0,
+        "capex_m": 58.9,
+        "simple_fcf_m": 33.1,
+        "sbc_ng_adjustment_m": 83.0
+      },
+      {
+        "year": 2025,
+        "revenue_m": 2024.0,
+        "gaap_gm_pct": 29.0,
+        "ng_gm_pct": 30.3,
+        "gaap_opinc_m": 72.8,
+        "ng_opinc_m": 221.0,
+        "net_income_common_m": -88.4,
+        "ocf_m": 113.9,
+        "capex_m": 56.8,
+        "simple_fcf_m": 57.1,
+        "sbc_ng_adjustment_m": 145.0
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "Q3'24",
+        "revenue_m": 330.4,
+        "gaap_gm_pct": 23.8,
+        "ng_gm_pct": 25.2,
+        "gaap_opinc_m": -9.7,
+        "ng_opinc_m": 8.1
+      },
+      {
+        "quarter": "Q4'24",
+        "revenue_m": 572.4,
+        "gaap_gm_pct": 38.3,
+        "ng_gm_pct": 39.3,
+        "gaap_opinc_m": 104.7,
+        "ng_opinc_m": 133.4
+      },
+      {
+        "quarter": "Q1'25",
+        "revenue_m": 326.0,
+        "gaap_gm_pct": 27.2,
+        "ng_gm_pct": 28.7,
+        "gaap_opinc_m": -19.1,
+        "ng_opinc_m": 13.2
+      },
+      {
+        "quarter": "Q2'25",
+        "revenue_m": 401.2,
+        "gaap_gm_pct": 26.7,
+        "ng_gm_pct": 28.2,
+        "gaap_opinc_m": -3.5,
+        "ng_opinc_m": 28.6
+      },
+      {
+        "quarter": "Q3'25",
+        "revenue_m": 519.0,
+        "gaap_gm_pct": 29.2,
+        "ng_gm_pct": 30.4,
+        "gaap_opinc_m": 7.8,
+        "ng_opinc_m": 46.2
+      },
+      {
+        "quarter": "Q4'25",
+        "revenue_m": 777.7,
+        "gaap_gm_pct": 30.8,
+        "ng_gm_pct": 31.9,
+        "gaap_opinc_m": 87.5,
+        "ng_opinc_m": 133.0
+      },
+      {
+        "quarter": "Q1'26",
+        "revenue_m": 751.1,
+        "gaap_gm_pct": 30.0,
+        "ng_gm_pct": 31.5,
+        "gaap_opinc_m": 72.2,
+        "ng_opinc_m": 129.7
+      },
+      {
+        "quarter": "Q2'26",
+        "revenue_m": 1065.4,
+        "gaap_gm_pct": 33.4,
+        "ng_gm_pct": 34.3,
+        "gaap_opinc_m": 182.2,
+        "ng_opinc_m": 239.6
+      }
+    ],
+    "latest_half": {
+      "period": "1H 2026",
+      "ocf_m": 300.042,
+      "ppe_purchases_m": 77.823,
+      "simple_fcf_m": 222.219
+    },
+    "balance_sheet_q2_2026": {
+      "cash_b": 2.667,
+      "recourse_debt_b": 2.475,
+      "accounts_receivable_m": 458.1,
+      "contract_assets_m": 428.3,
+      "inventory_m": 758.2,
+      "customer_deposits_m": 360.6
+    },
+    "ceilings": [
+      "site-level customer TCO unavailable",
+      "stack replacement cadence/cash cost proprietary",
+      "raw sell-side estimate distribution proprietary"
+    ]
+  },
+  "customers": {
+    "oracle": {
+      "contracted_deploying_gw": 1.2,
+      "max_master_agreement_gw": 2.8
+    },
+    "aep": {
+      "initial_firm_mw": 100,
+      "framework_up_to_gw": 1.0
+    },
+    "equinix": {
+      "relationship_mw_gt": 100,
+      "operational_mw_approx": 75,
+      "construction_mw_approx": 30
+    },
+    "q2_top_customer_pct": 73,
+    "1h_customer_concentration_pct": [
+      44,
+      21
+    ],
+    "brookfield_finance_framework_b": 25
+  },
+  "technology": {
+    "energy_server_6_5_kw": 325,
+    "electrical_efficiency_lhv_pct_range": [
+      65,
+      53
+    ],
+    "normal_water_use": "none",
+    "post_2020_fleet_availability_pct_company_claim": 99.9
+  },
+  "capacity": {
+    "fremont_run_rate_gw_start": 1,
+    "target_run_rate_gw_end_2026": 2,
+    "physical_headroom_gw_approx": 5,
+    "incremental_gw_time_months": [
+      6,
+      9
+    ],
+    "incremental_gw_capex_m": [
+      100,
+      150
+    ]
+  },
+  "accounting_quality": {
+    "recoverable_tariff_m": 37.4,
+    "specific_warranty_reserve_m": 58.3,
+    "q2_reported_gaap_gm_pct": 33.4,
+    "q2_mechanical_gm_ex_tariff_pct": 29.9,
+    "q2_mechanical_gm_ex_tariff_and_specific_warranty_pct": 35.4,
+    "q2_stock_award_sbc_m": 45.0,
+    "1h_stock_award_sbc_m": 88.2,
+    "unrecognized_stock_award_comp_m": 401.1
+  },
+  "capital_structure": {
+    "q2_basic_weighted_avg_shares_m": 287.288,
+    "q2_diluted_weighted_avg_shares_m": 323.331,
+    "2030_convert_potential_shares_m_approx": 19.554,
+    "unvested_awards_m": 10.101,
+    "cash_b": 2.667,
+    "recourse_debt_b": 2.475
+  },
+  "kpis": [
+    {
+      "name": "Firm contracted/deploying MW",
+      "current": "Oracle 1.2GW + AEP initial 100MW separately confirmed",
+      "thresholds": {
+        "green": "top customer outside 신규 firm MW가 반복 증가",
+        "yellow": "framework/announcement만 증가",
+        "red": "firm cancellations 또는 material delay"
+      }
+    },
+    {
+      "name": "Top-customer revenue concentration",
+      "current": "~73% (Q2 2026)",
+      "thresholds": {
+        "green": "<50% while growth remains strong",
+        "yellow": "50–70%",
+        "red": ">70% 지속/상승"
+      }
+    },
+    {
+      "name": "Product non-GAAP gross margin",
+      "current": "37.2% reported Q2; abnormal-item normalization needed",
+      "thresholds": {
+        "green": "≥36% ex abnormal items",
+        "yellow": "32–36%",
+        "red": "<32%"
+      }
+    },
+    {
+      "name": "Specific warranty reserve",
+      "current": "~$58.3M Q2 2026 charge",
+      "thresholds": {
+        "green": "reserve stabilizes/declines",
+        "yellow": "isolated spike",
+        "red": "repeated large reserves"
+      }
+    },
+    {
+      "name": "Service non-GAAP gross margin",
+      "current": "22.0% Q2 2026",
+      "thresholds": {
+        "green": "≥20% sustained",
+        "yellow": "10–20%",
+        "red": "<10% or re-deterioration"
+      }
+    },
+    {
+      "name": "Installation non-GAAP gross margin",
+      "current": "-1.4% Q2 2026",
+      "thresholds": {
+        "green": "approaches breakeven or positive",
+        "yellow": "-10% to 0%",
+        "red": "<-10% sustained"
+      }
+    },
+    {
+      "name": "Fremont production run-rate",
+      "current": "1GW → 2GW target by end-2026",
+      "thresholds": {
+        "green": "2GW on-time + next expansion demand-backed",
+        "yellow": "minor delay",
+        "red": "major delay/cost overrun"
+      }
+    },
+    {
+      "name": "1H OCF less PP&E purchases",
+      "current": "~$222.2M",
+      "thresholds": {
+        "green": "positive and less deposit-dependent",
+        "yellow": "working-capital dependent",
+        "red": "repeated material negative"
+      }
+    },
+    {
+      "name": "Diluted weighted-average shares",
+      "current": "323.3M Q2 2026",
+      "thresholds": {
+        "green": "share growth materially below FCF growth",
+        "yellow": "3–5% annualized",
+        "red": ">5% annualized sustained"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.2,
+      "revenue_path_b": [
+        4.0,
+        5.1,
+        6.2,
+        7.5,
+        9.0
+      ],
+      "fcf_margin_path": [
+        0.04,
+        0.06,
+        0.08,
+        0.09,
+        0.11
+      ],
+      "terminal_fcf_multiple": 25.0,
+      "terminal_net_cash_b": 0.5,
+      "diluted_shares_m": 335.0,
+      "fcf_b": [
+        0.16,
+        0.306,
+        0.496,
+        0.675,
+        0.99
+      ],
+      "terminal_equity_b": 25.25,
+      "terminal_per_share": 75.3731343283582,
+      "per_share_value": 46.035862015091205,
+      "irr_from_current": -0.20458284050813635
+    },
+    {
+      "name": "Base",
+      "probability": 0.55,
+      "revenue_path_b": [
+        4.05,
+        6.6,
+        9.3,
+        12.2,
+        15.0
+      ],
+      "fcf_margin_path": [
+        0.06,
+        0.1,
+        0.14,
+        0.17,
+        0.185
+      ],
+      "terminal_fcf_multiple": 31.0,
+      "terminal_net_cash_b": 2.5,
+      "diluted_shares_m": 335.0,
+      "fcf_b": [
+        0.243,
+        0.66,
+        1.302,
+        2.074,
+        2.775
+      ],
+      "terminal_equity_b": 88.52499999999999,
+      "terminal_per_share": 264.25373134328356,
+      "per_share_value": 161.39899742122572,
+      "irr_from_current": 0.06126678899664806
+    },
+    {
+      "name": "Bull",
+      "probability": 0.25,
+      "revenue_path_b": [
+        4.1,
+        7.0,
+        10.5,
+        15.0,
+        20.0
+      ],
+      "fcf_margin_path": [
+        0.07,
+        0.12,
+        0.16,
+        0.19,
+        0.22
+      ],
+      "terminal_fcf_multiple": 34.0,
+      "terminal_net_cash_b": 4.0,
+      "diluted_shares_m": 345.0,
+      "fcf_b": [
+        0.287,
+        0.84,
+        1.68,
+        2.85,
+        4.4
+      ],
+      "terminal_equity_b": 153.60000000000002,
+      "terminal_per_share": 445.2173913043479,
+      "per_share_value": 271.9266828352457,
+      "irr_from_current": 0.19646482578834812
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B — Hybrid / Expectation-Driven v3.3",
+    "discount_rate": 0.12,
+    "horizon_years": 4.350444900752909,
+    "core": 14.4,
+    "execution": 43.0,
+    "ecosystem": 5.0,
+    "drag": 6.8,
+    "bridge_net_equity_b": 55.6,
+    "bridge_net_per_share": 165.97014925373134,
+    "bear_per_share": 46.035862015091205,
+    "base_per_share": 161.39899742122572,
+    "expected_value": 165.9582916935038,
+    "bull_per_share": 271.9266828352457,
+    "expected_terminal_per_share": 271.71852693056456,
+    "expected_irr": 0.06808414191863443,
+    "current_price": 204.02,
+    "upside_downside_ratio": 0.4298322838064436,
+    "buy_zone_boundary_ud2": 121.33280228847603
+  },
+  "reverse_expectations": {
+    "current_fully_diluted_equity_value_b": 65.96599062000001,
+    "required_2030_equity_value_at_12pct_b": 108.00413535157799,
+    "assumed_terminal_fcf_multiple": 31.0,
+    "assumed_2030_net_cash_b": 2.5,
+    "required_2030_fcf_b": 3.4033592048896124,
+    "required_2030_revenue_b_at_18_5pct_fcf_margin": 18.396536242646555,
+    "required_2030_revenue_b_at_20pct_fcf_margin": 17.016796024448062,
+    "interpretation": "Current price requires roughly $17–19B 2030 revenue under 20–18.5% FCF margin and 31x terminal FCF at a 12% hurdle."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_b": 4.127
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_b": 6.772
+    },
+    "fy3": {
+      "year": 2028,
+      "revenue_b": 9.925
+    },
+    "analyst_count": 29,
+    "aggregate_target": 273.5,
+    "rating": "OUTPERFORM proxy",
+    "revision_trend": "FY26 guidance raised twice; aggregate estimates high and current target near DDOS bull PV, not DDOS base."
+  },
+  "valuation_history": [
+    {
+      "year": 2021,
+      "ev_sales": 3.87
+    },
+    {
+      "year": 2022,
+      "ev_sales": 3.32
+    },
+    {
+      "year": 2023,
+      "ev_sales": 2.62
+    },
+    {
+      "year": 2024,
+      "ev_sales": 3.59
+    },
+    {
+      "year": 2025,
+      "ev_sales": 10.3
+    },
+    {
+      "year": 2026,
+      "ev_sales": 15.0
+    }
+  ],
+  "peer_context": [
+    {
+      "ticker": "BE",
+      "company": "Bloom Energy",
+      "ev_sales_2026": 15.0,
+      "note": "aggregate consensus proxy"
+    },
+    {
+      "ticker": "VRT",
+      "company": "Vertiv",
+      "ev_sales_2026": 7.68,
+      "note": "data-center power/cooling equipment"
+    },
+    {
+      "ticker": "GEV",
+      "company": "GE Vernova",
+      "ev_sales_2026": 5.25,
+      "note": "generation/grid equipment"
+    },
+    {
+      "ticker": "CAT",
+      "company": "Caterpillar",
+      "ev_sales_2026": 5.5,
+      "note": "large power/industrial equipment context"
+    }
+  ],
+  "stance": {
+    "zone": "회피 / 기존 보유 시 축소 검토",
+    "price_bands": {
+      "active_interest": "$105–120",
+      "conditional_interest": "$121–150",
+      "fair_value_watch": "$151–170",
+      "avoid_reduce_zone": ">$170",
+      "current": "$204.02"
+    },
+    "horizon": "2030-12-31",
+    "hurdle": "12% base; DDOS default 10–15%",
+    "why": "Expected IRR ~6.8% and U/D ~0.43x at current price; both fail stance hurdle."
+  },
+  "catalysts": [
+    {
+      "when": "2026 Q3 / Oct–Nov",
+      "event": "Q3 2026 results",
+      "bull": "revenue/firm MW broaden beyond top customer; normalized product margin ≥36%",
+      "bear": "concentration remains extreme; warranty or installation leakage repeats",
+      "sensitivity": "H"
+    },
+    {
+      "when": "By 2026-12-31",
+      "event": "Fremont 2GW annual production run-rate target",
+      "bull": "on-time, utilization backed by firm orders",
+      "bear": "delay, yield/cost problems, or under-utilization",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2H 2026–2027",
+      "event": "Oracle 1.2GW deployment milestones / additional MSA conversion",
+      "bull": "commissioning on schedule and some of remaining 1.6GW becomes firm",
+      "bear": "site/permitting delays or no additional firm conversion",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2026 Q4–2027 Q2",
+      "event": "AEP/other hyperscaler incremental firm orders",
+      "bull": "customer concentration structurally falls",
+      "bear": "framework remains mostly unconverted",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027 Q1 / Feb",
+      "event": "FY2026 results and FY2027 guidance",
+      "bull": "guide validates multi-GW ramp and cash conversion",
+      "bear": "2027 growth/margin reset below consensus",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027 H1",
+      "event": "Power Connect evidence in installation cycle/margin",
+      "bull": "installation margin moves toward breakeven with shorter field cycle",
+      "bear": "no measurable field-economic improvement",
+      "sensitivity": "M"
+    }
+  ],
+  "falsification": [
+    {
+      "thesis": "time-to-power demand converts into diversified firm orders",
+      "condition": "If top-customer concentration remains >70% for multiple quarters while non-top-customer firm MW does not expand, the diversification thesis is wrong."
+    },
+    {
+      "thesis": "mid-30s product margin is scalable",
+      "condition": "If normalized product non-GAAP gross margin is <32% for two consecutive quarters or large warranty reserves recur, the margin thesis is wrong."
+    },
+    {
+      "thesis": "manufacturing can follow demand",
+      "condition": "If the 2GW run-rate target materially slips beyond 2026 or requires materially higher capex/yield loss than disclosed, the scale thesis is wrong."
+    },
+    {
+      "thesis": "growth converts to shareholder cash flow",
+      "condition": "If rolling cash generation repeatedly depends on customer deposits while SBC/dilution rises faster than FCF, per-share economics are weaker than the thesis."
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "promise": "경제적 정의·역사",
+      "status": "COMPLETE",
+      "h3_locator": "Ch0, Ch3"
+    },
+    {
+      "rc_id": "RC-002",
+      "promise": "산업 B1–B5 + transmission",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1"
+    },
+    {
+      "rc_id": "RC-003",
+      "promise": "경영진 Promise→Delivery",
+      "status": "COMPLETE",
+      "h3_locator": "Ch2"
+    },
+    {
+      "rc_id": "RC-004",
+      "promise": "보상·소유·이사회·자본배분",
+      "status": "COMPLETE",
+      "h3_locator": "Ch2, Ch4"
+    },
+    {
+      "rc_id": "RC-005",
+      "promise": "사업모델/unit economics/value capture",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3"
+    },
+    {
+      "rc_id": "RC-006",
+      "promise": "SOFC 정량 기술·제약",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3"
+    },
+    {
+      "rc_id": "RC-007",
+      "promise": "고객·계약·채택",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3"
+    },
+    {
+      "rc_id": "RC-008",
+      "promise": "고객 job 기준 경쟁",
+      "status": "CEILING",
+      "h3_locator": "Ch1, Ch3; Appx A6"
+    },
+    {
+      "rc_id": "RC-009",
+      "promise": "FY23–25 + 최신 8Q",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4; Appx A1"
+    },
+    {
+      "rc_id": "RC-010",
+      "promise": "회계품질/red flags",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4"
+    },
+    {
+      "rc_id": "RC-011",
+      "promise": "현금·부채·전환사채·희석",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4, Ch5"
+    },
+    {
+      "rc_id": "RC-012",
+      "promise": "생산능력·공급망·Power Connect",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3, Ch6"
+    },
+    {
+      "rc_id": "RC-013",
+      "promise": "가스·관세·세제·환경·규제",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1, Ch3"
+    },
+    {
+      "rc_id": "RC-014",
+      "promise": "installed base/service/stack lifecycle",
+      "status": "CEILING",
+      "h3_locator": "Ch3, Ch4; Appx A6"
+    },
+    {
+      "rc_id": "RC-015",
+      "promise": "컨센서스·포지셔닝·short/ownership/insider",
+      "status": "CEILING",
+      "h3_locator": "Ch0, Ch5, Ch6; Appx A6"
+    },
+    {
+      "rc_id": "RC-016",
+      "promise": "Mode B valuation + reverse expectations",
+      "status": "COMPLETE",
+      "h3_locator": "Ch5"
+    },
+    {
+      "rc_id": "RC-017",
+      "promise": "Variant Perception/base-rate/red-team",
+      "status": "COMPLETE",
+      "h3_locator": "Ch5, Ch6; Appx A7"
+    },
+    {
+      "rc_id": "RC-018",
+      "promise": "KPI·촉매·반증조건",
+      "status": "COMPLETE",
+      "h3_locator": "Ch6"
+    }
+  ],
+  "latest_filing_check": {
+    "status": "PASS",
+    "check_as_of": "2026-08-25",
+    "latest_financial_filing": "Q2 2026 10-Q/A filed 2026-07-29",
+    "latest_material_8k_discovered": "2026-07-28 earnings 8-K",
+    "later_ownership_filings": "Form 4 / ownership filings through 2026-08-19 discovered; not treated as thesis-changing",
+    "latest_corporate_release": "Power Connect 2026-08-19",
+    "material_change_after_h1": "No later material financial/contract disclosure discovered through the 2026-08-25 cut."
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "type": "primary",
+      "title": "Bloom Energy 2025 Form 10-K",
+      "date": "2026-02-05",
+      "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026006516/be-20251231.htm",
+      "use": "business, capacity, warranty, policy, cash flow"
+    },
+    {
+      "id": "S02",
+      "type": "primary",
+      "title": "Bloom Energy Q2 2026 Form 10-Q/A",
+      "date": "2026-07-29",
+      "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026050325/be-20260630.htm",
+      "use": "customer concentration, working capital, warranty, dilution, related parties"
+    },
+    {
+      "id": "S03",
+      "type": "primary",
+      "title": "Bloom Q2 2026 earnings release",
+      "date": "2026-07-28",
+      "url": "https://investor.bloomenergy.com/press-releases/press-release-details/2026/Bloom-Energy-Reports-Record-Second-Quarter-2026-Financial-Results-and-Raises-Full-Year-2026-Guidance/default.aspx",
+      "use": "Q2 results and FY26 guidance"
+    },
+    {
+      "id": "S04",
+      "type": "primary",
+      "title": "Bloom–Oracle expanded partnership",
+      "date": "2026-04-13",
+      "url": "https://investor.bloomenergy.com/press-releases/press-release-details/2026/Bloom-Energy-and-Oracle-Expand-Strategic-Partnership-to-Deploy-up-to-2-8-GW-to-Accelerate-AI-Infrastructure-Build-Out/default.aspx",
+      "use": "1.2GW contracted/deploying; 2.8GW maximum framework"
+    },
+    {
+      "id": "S05",
+      "type": "primary",
+      "title": "Bloom–AEP procurement agreement",
+      "date": "2024-11-14",
+      "url": "https://investor.bloomenergy.com/press-releases/press-release-details/2024/Bloom-Energy-Announces-Gigawatt-Fuel-Cell-Procurement-Agreement-with-AEP-to-Power-AI-Data-Centers/default.aspx",
+      "use": "up to 1GW framework, initial 100MW order"
+    },
+    {
+      "id": "S06",
+      "type": "primary",
+      "title": "Bloom–Equinix expansion",
+      "date": "2025-02-20",
+      "url": "https://investor.bloomenergy.com/press-releases/press-release-details/2025/Bloom-Energy-Expands-Data-Center-Power-Agreement-with-Equinix-Surpassing-100MW/default.aspx",
+      "use": "repeat adoption: 1MW pilot to 100MW+"
+    },
+    {
+      "id": "S07",
+      "type": "primary",
+      "title": "Bloom–Brookfield $25B finance framework",
+      "date": "2026-06-30",
+      "url": "https://investor.bloomenergy.com/press-releases/press-release-details/2026/Brookfield-and-Bloom-Energy-Expand-AI-Infrastructure-Partnership-to-25-Billion-Fivefold-Increase-to-Build-and-Finance-Rapid-Power-for-AI-Infrastructure/default.aspx",
+      "use": "project-finance capacity; explicitly not backlog"
+    },
+    {
+      "id": "S08",
+      "type": "primary",
+      "title": "Bloom Power Connect",
+      "date": "2026-08-19",
+      "url": "https://investor.bloomenergy.com/press-releases/press-release-details/2026/Bloom-Energy-Introduces-Power-Connect-Cutting-Onsite-Power-Installation-Time-by-Over-40/default.aspx",
+      "use": "installation-time claim and deployment architecture"
+    },
+    {
+      "id": "S09",
+      "type": "primary",
+      "title": "LBNL 2024 U.S. Data Center Energy Usage Report",
+      "date": "2024-12",
+      "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report_1.pdf",
+      "use": "2023 176TWh/4.4%; 2028 325–580TWh/6.7–12%"
+    },
+    {
+      "id": "S10",
+      "type": "primary",
+      "title": "FERC large-load order / Rosner concurrence",
+      "date": "2026-06-18",
+      "url": "https://www.ferc.gov/sites/default/files/2026-06/EL26-67-000.pdf",
+      "use": "speculative/duplicate data-center interconnection requests"
+    },
+    {
+      "id": "S11",
+      "type": "secondary",
+      "title": "MarketScreener BE valuation/consensus",
+      "date": "2026-08",
+      "url": "https://www.marketscreener.com/quote/stock/BLOOM-ENERGY-CORPORATION-157409146/valuation/",
+      "use": "aggregate revenue consensus and annual valuation history proxy"
+    },
+    {
+      "id": "S12",
+      "type": "secondary",
+      "title": "MarketScreener VRT valuation",
+      "date": "2026-08",
+      "url": "https://www.marketscreener.com/quote/stock/VERTIV-HOLDINGS-CO-45109447/valuation/",
+      "use": "peer valuation context"
+    },
+    {
+      "id": "S13",
+      "type": "secondary",
+      "title": "MarketScreener GEV valuation",
+      "date": "2026-08",
+      "url": "https://in.marketscreener.com/quote/stock/GE-VERNOVA-INC-167654523/valuation/",
+      "use": "peer valuation context"
+    },
+    {
+      "id": "S14",
+      "type": "secondary",
+      "title": "MarketScreener CAT valuation",
+      "date": "2026-08",
+      "url": "https://www.marketscreener.com/quote/stock/CATERPILLAR-INC-4817/valuation/",
+      "use": "peer valuation context"
+    },
+    {
+      "id": "S15",
+      "type": "secondary",
+      "title": "BE official closing price mirror",
+      "date": "2026-08-24",
+      "url": "https://markets.financialcontent.com/stocks/quote/detailedquote?Language=english%2F1000&Symbol=NY%3ABE",
+      "use": "$204.02 official close mirror"
+    },
+    {
+      "id": "S16",
+      "type": "secondary-regulator-index",
+      "title": "2026 BE filing archive, regulator-sourced",
+      "date": "2026-08-25",
+      "url": "https://financialfilings.com/companies/bloom-energy-corp/2026/",
+      "use": "latest filing check: ownership filings through Aug-19; no later material 8-K discovered"
+    }
+  ],
+  "qa": {
+    "h3": {
+      "H2_H3_COVERAGE_LINEAGE": "PASS",
+      "RC_H3_COVERAGE_RATE": 1.0,
+      "RC_UNRESOLVED": 0,
+      "LATEST_FILING_CHECK": "PASS",
+      "TOP_LEVEL_SCHEMA": "PASS",
+      "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+      "KOREAN_PROSE_QUALITY": "PASS",
+      "EXPLANATORY_SPACE_ALLOCATION": "PASS",
+      "CH1_PLUS_CH3_TO_CH5_CHAR_RATIO": 1.7050927753651797,
+      "SCENARIO_WEIGHT_SUM": 1.0,
+      "VALUATION_RECALC_PARITY": "PASS",
+      "FINANCING_DILUTION_AUDIT": "PASS",
+      "RED_TEAM": "PASS",
+      "STANCE_DECISION_FRAMEWORK": "PASS",
+      "H3_READY": "TRUE"
+    },
+    "publishing": {
+      "REPORT_DATA_PACK": "EMITTED",
+      "DATA_PACK_REPORT_PARITY": "PASS",
+      "CONTENT_MEANING_LOCK_PRESERVED": "PASS",
+      "PUBLISHED_TOP_LEVEL_SCHEMA_MATCH": "PASS",
+      "EXPLANATORY_DEPTH_PRESERVED": "PASS",
+      "CORE_LANDSCAPE_PAGES": 0,
+      "PRINTED_TOC": "N/A_HTML_ONLY",
+      "TOC_CLICKABLE": "PASS",
+      "PDF_BOOKMARKS": "N/A_USER_WAIVED",
+      "HTML_SIDEBAR": "PASS",
+      "SEARCHABLE_TEXT": "PASS",
+      "KOREAN_READABILITY": "PASS",
+      "KOREAN_PROSE_QUALITY": "PASS",
+      "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+      "EXPLANATORY_SPACE_ALLOCATION": "PASS",
+      "SMART_CHAPTER_TRANSITIONS": "PASS",
+      "ARGUMENT_BLOCK_PAGINATION": "N/A_HTML",
+      "ACCIDENTAL_SPARSE_PAGES": 0,
+      "DENSITY_CONTROL": "PASS",
+      "VISUAL_SUBSTITUTION": "PASS",
+      "VISUAL_GRAMMAR_VARIETY": "PASS",
+      "CHART_READABILITY": "PASS",
+      "TABLE_QUALITY": "PASS",
+      "CONTACT_SHEET_COMPOSITION_QA": "PASS",
+      "SEMANTIC_GOLDEN_QA": "PASS",
+      "VISUAL_GOLDEN_QA": "PASS",
+      "GOLDEN_PARITY": "PASS",
+      "DECISION_VISUALS_TOTAL": 4,
+      "DECISION_VISUALS_PARITY_PASS": 4,
+      "STALE_VISUAL_ASSETS": 0,
+      "FIGURE_NUMERICAL_PARITY": "PASS",
+      "VISUAL_DATA_LINEAGE": "PASS",
+      "VISUAL_SEMANTIC_PARITY": "PASS",
+      "RENDERED_VISUAL_PARITY_QA": "PASS",
+      "PUBLISHING_ACCEPTANCE": "PASS",
+      "DESKTOP_RENDER_QA": "PASS",
+      "MOBILE_RENDER_QA": "PASS",
+      "HTML_TOP_LEVEL_H1_SCHEMA": "PASS",
+      "HTML_TOC_TARGETS": "PASS",
+      "HTML_HORIZONTAL_PAGE_OVERFLOW_DESKTOP": 0,
+      "HTML_HORIZONTAL_PAGE_OVERFLOW_MOBILE": 0,
+      "RENDERED_FIGURES": 4,
+      "RENDERED_EMPTY_FIGURES": 0,
+      "RENDER_PAGE_ERRORS": 0,
+      "PDF_STATUS": "N/A_USER_WAIVED"
+    }
+  },
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "최근 8분기 매출과 GAAP 총마진",
+      "authoritative_source_block": "financials.quarterly_8q",
+      "source_values": [
+        {
+          "quarter": "Q3'24",
+          "revenue_m": 330.4,
+          "gaap_gm_pct": 23.8,
+          "ng_gm_pct": 25.2,
+          "gaap_opinc_m": -9.7,
+          "ng_opinc_m": 8.1
+        },
+        {
+          "quarter": "Q4'24",
+          "revenue_m": 572.4,
+          "gaap_gm_pct": 38.3,
+          "ng_gm_pct": 39.3,
+          "gaap_opinc_m": 104.7,
+          "ng_opinc_m": 133.4
+        },
+        {
+          "quarter": "Q1'25",
+          "revenue_m": 326.0,
+          "gaap_gm_pct": 27.2,
+          "ng_gm_pct": 28.7,
+          "gaap_opinc_m": -19.1,
+          "ng_opinc_m": 13.2
+        },
+        {
+          "quarter": "Q2'25",
+          "revenue_m": 401.2,
+          "gaap_gm_pct": 26.7,
+          "ng_gm_pct": 28.2,
+          "gaap_opinc_m": -3.5,
+          "ng_opinc_m": 28.6
+        },
+        {
+          "quarter": "Q3'25",
+          "revenue_m": 519.0,
+          "gaap_gm_pct": 29.2,
+          "ng_gm_pct": 30.4,
+          "gaap_opinc_m": 7.8,
+          "ng_opinc_m": 46.2
+        },
+        {
+          "quarter": "Q4'25",
+          "revenue_m": 777.7,
+          "gaap_gm_pct": 30.8,
+          "ng_gm_pct": 31.9,
+          "gaap_opinc_m": 87.5,
+          "ng_opinc_m": 133.0
+        },
+        {
+          "quarter": "Q1'26",
+          "revenue_m": 751.1,
+          "gaap_gm_pct": 30.0,
+          "ng_gm_pct": 31.5,
+          "gaap_opinc_m": 72.2,
+          "ng_opinc_m": 129.7
+        },
+        {
+          "quarter": "Q2'26",
+          "revenue_m": 1065.4,
+          "gaap_gm_pct": 33.4,
+          "ng_gm_pct": 34.3,
+          "gaap_opinc_m": 182.2,
+          "ng_opinc_m": 239.6
+        }
+      ],
+      "source_version_or_hash": "e5c629b0756c3d80",
+      "display_values": "generated from source_values",
+      "narrative_locator": "Ch4",
+      "table_locator": "Appx A1",
+      "caption_locator": "Ch4",
+      "rendered_asset_locator": "#vis-001",
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "시나리오별 2026–2030 매출 경로",
+      "authoritative_source_block": "scenarios.revenue_path_b",
+      "source_values": [
+        {
+          "name": "Bear",
+          "v": [
+            4.0,
+            5.1,
+            6.2,
+            7.5,
+            9.0
+          ]
+        },
+        {
+          "name": "Base",
+          "v": [
+            4.05,
+            6.6,
+            9.3,
+            12.2,
+            15.0
+          ]
+        },
+        {
+          "name": "Bull",
+          "v": [
+            4.1,
+            7.0,
+            10.5,
+            15.0,
+            20.0
+          ]
+        }
+      ],
+      "source_version_or_hash": "63b4de6db315634e",
+      "display_values": "generated from source_values",
+      "narrative_locator": "Ch5",
+      "table_locator": "Ch5 scenario table",
+      "caption_locator": "Ch5",
+      "rendered_asset_locator": "#vis-002",
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "주당 현재가 vs Bear/Base/Expected/Bull 가치",
+      "authoritative_source_block": "valuation",
+      "source_values": [
+        46.04,
+        161.4,
+        165.96,
+        204.02,
+        271.93
+      ],
+      "source_version_or_hash": "df6686fb9c6866ff",
+      "display_values": "generated from source_values",
+      "narrative_locator": "Ch5",
+      "table_locator": "Ch5 valuation table",
+      "caption_locator": "Ch5",
+      "rendered_asset_locator": "#vis-003",
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "현재 가격이 요구하는 2030 매출",
+      "authoritative_source_block": "reverse_expectations",
+      "source_values": {
+        "current_fully_diluted_equity_value_b": 65.96599062000001,
+        "required_2030_equity_value_at_12pct_b": 108.00413535157799,
+        "assumed_terminal_fcf_multiple": 31.0,
+        "assumed_2030_net_cash_b": 2.5,
+        "required_2030_fcf_b": 3.4033592048896124,
+        "required_2030_revenue_b_at_18_5pct_fcf_margin": 18.396536242646555,
+        "required_2030_revenue_b_at_20pct_fcf_margin": 17.016796024448062,
+        "interpretation": "Current price requires roughly $17–19B 2030 revenue under 20–18.5% FCF margin and 31x terminal FCF at a 12% hurdle."
+      },
+      "source_version_or_hash": "206a0c6fe4b219b4",
+      "display_values": "generated from source_values",
+      "narrative_locator": "Ch5",
+      "table_locator": "Ch5 reverse-expectations table",
+      "caption_locator": "Ch5",
+      "rendered_asset_locator": "#vis-004",
+      "status": "PASS"
+    }
+  ]
+}

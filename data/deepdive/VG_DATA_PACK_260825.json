@@ -1,0 +1,1113 @@
+{
+  "meta": {
+    "ticker": "VG",
+    "company": "Venture Global, Inc.",
+    "exchange": "NYSE",
+    "research_asof": "2026-08-25 KST",
+    "T0": "2026-08-24",
+    "price_asof": "2026-08-24 NYSE close",
+    "price": 14.2,
+    "filing_asof": "2026-06-30 Form 10-Q filed 2026-08-11",
+    "consensus_asof": "2026-08-24",
+    "version": "DDOS v1.7 / VG / 2026-08-25"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue": 7.897,
+        "adj_ebitda": 5.155,
+        "ocf": 4.55,
+        "cash_capex": 8.091,
+        "ocf_minus_capex": -3.541
+      },
+      {
+        "year": 2024,
+        "revenue": 4.972,
+        "adj_ebitda": 2.104,
+        "ocf": 2.149,
+        "cash_capex": 13.717,
+        "ocf_minus_capex": -11.568
+      },
+      {
+        "year": 2025,
+        "revenue": 13.769,
+        "adj_ebitda": 6.265,
+        "ocf": 6.566,
+        "cash_capex": 13.365,
+        "ocf_minus_capex": -6.799
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "period": "2024Q3",
+        "revenue": 0.926,
+        "operating_income": 0.189,
+        "net_income_common": -0.347,
+        "adj_ebitda": 0.283
+      },
+      {
+        "period": "2024Q4",
+        "revenue": 1.524,
+        "operating_income": 0.594,
+        "net_income_common": 0.871,
+        "adj_ebitda": 0.688
+      },
+      {
+        "period": "2025Q1",
+        "revenue": 2.894,
+        "operating_income": 1.08,
+        "net_income_common": 0.396,
+        "adj_ebitda": 1.346
+      },
+      {
+        "period": "2025Q2",
+        "revenue": 3.101,
+        "operating_income": 1.038,
+        "net_income_common": 0.368,
+        "adj_ebitda": 1.393
+      },
+      {
+        "period": "2025Q3",
+        "revenue": 3.329,
+        "operating_income": 1.32,
+        "net_income_common": 0.429,
+        "adj_ebitda": 1.525
+      },
+      {
+        "period": "2025Q4",
+        "revenue": 4.445,
+        "operating_income": 1.718,
+        "net_income_common": 1.067,
+        "adj_ebitda": 2.001
+      },
+      {
+        "period": "2026Q1",
+        "revenue": 4.599,
+        "operating_income": 1.151,
+        "net_income_common": 0.488,
+        "adj_ebitda": 1.372
+      },
+      {
+        "period": "2026Q2",
+        "revenue": 4.578,
+        "operating_income": 2.188,
+        "net_income_common": 1.347,
+        "adj_ebitda": 2.491
+      }
+    ],
+    "h1_2026": {
+      "revenue": 9.177,
+      "operating_income": 3.339,
+      "net_income_common": 1.835,
+      "adj_ebitda": 3.863,
+      "ocf": 2.835,
+      "investing_cash_outflow": 6.675,
+      "interest_expense_net": 0.933
+    },
+    "q2_2026": {
+      "revenue": 4.578,
+      "operating_income": 2.188,
+      "net_income_common": 1.347,
+      "adj_ebitda": 2.491,
+      "cargos": 127,
+      "tbtu_sold": 466.4
+    },
+    "balance_sheet_2026q2": {
+      "cash": 3.12,
+      "pp&e_net": 53.216,
+      "assets": 61.515,
+      "current_debt_net": 0.287,
+      "long_term_debt_net": 41.527,
+      "gross_debt": 42.386,
+      "net_carrying_debt_including_current": 41.814,
+      "total_liabilities": 49.436,
+      "vg_equity": 8.572,
+      "nci": 3.507,
+      "basic_shares_b": 2.498,
+      "diluted_weighted_avg_shares_b": 2.643
+    },
+    "ceilings": [
+      "Exact customer-level weighted long-term SPA fixed fees for Plaquemines and CP2 are not publicly disclosed."
+    ]
+  },
+  "guidance": {
+    "fy2026_adj_ebitda_low": 8.7,
+    "fy2026_adj_ebitda_high": 9.1,
+    "unsold_cargo_fee_assumption_low": 12.5,
+    "unsold_cargo_fee_assumption_high": 13.5,
+    "ebitda_sensitivity_per_1_fee_low": 0.18,
+    "ebitda_sensitivity_per_1_fee_high": 0.21,
+    "available_cargos_contracted_pct": 91,
+    "contracted_weighted_fee": 5.05,
+    "cargo_guidance_low": 500,
+    "cargo_guidance_high": 518
+  },
+  "projects": [
+    {
+      "name": "Calcasieu Pass",
+      "trains": 18,
+      "expected_mtpa": 11.2,
+      "peak_mtpa": 12.4,
+      "cod": "2025-04-15",
+      "lt_mtpa": 8.5,
+      "medium_mtpa": 1.5,
+      "excess_mtpa": 1.2,
+      "status": "COD 완료 / 정상화 표본",
+      "q2_2026_volume_tbtu": 137.6,
+      "q2_2026_operating_income": 0.067,
+      "h1_2026_operating_income": 0.249,
+      "normal_fee_2026": 2.2
+    },
+    {
+      "name": "Plaquemines",
+      "trains": 36,
+      "expected_mtpa": 28.0,
+      "peak_mtpa": 35.0,
+      "cod": "Phase I Q4 2026 / Phase II mid-2027",
+      "lt_mtpa": 19.7,
+      "medium_mtpa": 0.3,
+      "excess_mtpa": 8.0,
+      "status": "Commissioning / COD 전환 중",
+      "q2_2026_volume_tbtu": 342.1,
+      "q2_2026_operating_income": 2.212,
+      "h1_2026_operating_income": 3.253,
+      "remaining_cost_low": 0.6,
+      "remaining_cost_high": 1.0
+    },
+    {
+      "name": "CP2",
+      "trains": 36,
+      "expected_mtpa": 29.0,
+      "peak_mtpa": 35.0,
+      "cod": "First LNG H2 2027; COD later",
+      "contracted_mtpa": 27.5,
+      "status": "Phase I/II 건설",
+      "project_cost_low": 32.5,
+      "project_cost_high": 33.5,
+      "construction_complete_pct": 36,
+      "engineering_pct": 100,
+      "procurement_pct": 79,
+      "capex_spent": 15.0,
+      "equity_deployed": 8.0,
+      "credit_facilities": 20.7
+    }
+  ],
+  "industry": {
+    "global_lng_imports_2025_mt": 428,
+    "global_lng_import_growth_2025_pct": 5,
+    "spot_share_pct": 35,
+    "global_liquefaction_capacity_2025_mtpa": 524,
+    "europe_import_change_mt": 28,
+    "asia_import_change_mt": -11,
+    "q2_2026_ttf_usd_mmbtu": 16.0,
+    "q2_2026_asia_spot_usd_mmbtu": 17.5,
+    "us_lng_exports_2026_bcfd": 17.0,
+    "north_america_capacity_2023_bcfd": 11.4,
+    "north_america_capacity_2028_bcfd": 24.4
+  },
+  "governance": {
+    "class_b_voting_power_pct": 97.5,
+    "partners_ii_class_b_shares_b": 1.9686,
+    "ceo_comp_2025_m": 39.105,
+    "cfo_comp_2025_m": 9.084,
+    "pender_comp_2025_m": 12.484
+  },
+  "legal": {
+    "bp_claim_low": 3.7,
+    "bp_claim_high_gt": 6.0,
+    "bp_damages_hearing": "2027-05",
+    "other_two_claims_gt": 2.4,
+    "company_stated_caps_other_two": 0.425,
+    "base_expected_drag": 2.0,
+    "bear_drag": 4.0,
+    "bull_drag": 0.5
+  },
+  "consensus": {
+    "analyst_target_avg": 16.42,
+    "analyst_target_median": 16.0,
+    "analyst_target_low": 13.0,
+    "analyst_target_high": 22.0,
+    "fy1_2026": {
+      "revenue": 18.142,
+      "ebitda": 8.861
+    },
+    "fy2_2027": {
+      "revenue": 16.386,
+      "ebitda": 7.008
+    },
+    "fy3_2028": {
+      "revenue": 21.434,
+      "ebitda": 8.446
+    },
+    "revision_trend": "2026 high commissioning earnings followed by 2027 normalization and 2028 re-acceleration already embedded."
+  },
+  "valuation_history": {
+    "price_52w_low": 5.72,
+    "price_52w_high": 17.62,
+    "ipo_price": 25.0,
+    "pb_snapshots": [
+      [
+        "2025-03-31",
+        2.96
+      ],
+      [
+        "2025-06-30",
+        4.09
+      ],
+      [
+        "2025-09-30",
+        3.76
+      ],
+      [
+        "2025-12-31",
+        1.62
+      ],
+      [
+        "2026-03-31",
+        3.65
+      ],
+      [
+        "2026-08-03",
+        3.03
+      ]
+    ]
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "tier": "Primary",
+      "title": "Venture Global Q2 2026 Results",
+      "url": "https://investors.ventureglobal.com/news/news-details/2026/Venture-Global-Reports-Second-Quarter-2026-Results/default.aspx"
+    },
+    {
+      "id": "S2",
+      "tier": "Primary",
+      "title": "Venture Global 2026 Q2 Form 10-Q, accession 0002007855-26-000062",
+      "url": "https://www.sec.gov/Archives/edgar/data/2007855/000200785526000062/vg-20260630.htm"
+    },
+    {
+      "id": "S3",
+      "tier": "Primary",
+      "title": "Venture Global 2025 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/2007855/000200785526000013/vg-20251231.htm"
+    },
+    {
+      "id": "S4",
+      "tier": "Primary",
+      "title": "Venture Global 2026 Q1 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/2007855/000200785526000040/vg-20260331.htm"
+    },
+    {
+      "id": "S5",
+      "tier": "Primary",
+      "title": "Venture Global 2026 Proxy",
+      "url": "https://www.sec.gov/Archives/edgar/data/2007855/000200785526000026/vg-20260407.htm"
+    },
+    {
+      "id": "S6",
+      "tier": "Primary",
+      "title": "Venture Global Q3 2025 Investor Presentation - CP2 illustrative economics",
+      "url": "https://s205.q4cdn.com/622838971/files/doc_financials/2025/q3/VG-Quarterly-Investor-Presentation_3Q2025_vF.pdf"
+    },
+    {
+      "id": "S7",
+      "tier": "Primary",
+      "title": "Venture Global Q1 2026 Investor Presentation",
+      "url": "https://s205.q4cdn.com/622838971/files/doc_financials/2026/q1/VG-Quarterly-Investor-Presentation_1Q2026_vF.pdf"
+    },
+    {
+      "id": "S8",
+      "tier": "Authority",
+      "title": "IEA Gas Market Report Q3 2026",
+      "url": "https://www.iea.org/reports/gas-market-report-q3-2026"
+    },
+    {
+      "id": "S9",
+      "tier": "Authority",
+      "title": "GIIGNL Annual Report 2026",
+      "url": "https://www.giignl.org/annual-report"
+    },
+    {
+      "id": "S10",
+      "tier": "Authority",
+      "title": "EIA U.S. natural gas exports outlook, 2026-04-16",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67484"
+    },
+    {
+      "id": "S11",
+      "tier": "Primary",
+      "title": "Cheniere Q2 2026 Form 10-Q",
+      "url": "https://lngir.cheniere.com/sec-filings/all-sec-filings/content/0000003570-26-000028/lng-20260630.htm"
+    },
+    {
+      "id": "S12",
+      "tier": "Primary",
+      "title": "NextDecade Q2 2026 Business Update",
+      "url": "https://www.investors.next-decade.com/news-releases/news-release-details/nextdecade-provides-second-quarter-2026-business-update"
+    },
+    {
+      "id": "S13",
+      "tier": "Secondary",
+      "title": "MarketScreener financial consensus snapshot",
+      "url": "https://www.marketscreener.com/quote/stock/VENTURE-GLOBAL-INC-181440826/finances/"
+    },
+    {
+      "id": "S14",
+      "tier": "Secondary",
+      "title": "Investing.com VG historical prices",
+      "url": "https://www.investing.com/equities/venture-global-inc-historical-data"
+    },
+    {
+      "id": "S15",
+      "tier": "Secondary",
+      "title": "Macrotrends VG Price/Book history",
+      "url": "https://www.macrotrends.net/stocks/charts/VG/venture-global/price-book"
+    },
+    {
+      "id": "S16",
+      "tier": "Academic/Secondary",
+      "title": "LNG megaproject cost and schedule overrun literature",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2352484718302890"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.2,
+      "industry_path": "2026 tightness fades quickly; 2028+ supply wave compresses merchant/excess fees",
+      "customer_adoption": "new SPA execution slows, reliability premium does not improve",
+      "pricing": "excess fixed fees normalize sharply",
+      "capacity": "Plaq COD/CP2 slips; utilization under expected annualized",
+      "revenue_path": [
+        17.5,
+        14.8,
+        16.5,
+        17.5,
+        19.0
+      ],
+      "margin_path_adj_ebitda": [
+        8.7,
+        5.5,
+        6.0,
+        6.2,
+        6.5
+      ],
+      "fcf": [
+        -7.0,
+        -7.0,
+        -4.0,
+        -1.0,
+        1.0
+      ],
+      "net_debt": [
+        44,
+        50,
+        54,
+        55,
+        53
+      ],
+      "diluted_shares": 2.85,
+      "per_share_value": 1.5,
+      "formation_conditions": [
+        "Plaq COD/ramp slippage",
+        "CP2 cost > current range",
+        "BP/legal drag near high case",
+        "excess fee < $4/MMBtu"
+      ],
+      "break_conditions": [
+        "CP2 schedule de-risks with contracted economics > Base",
+        "legal liability capped near Bull"
+      ]
+    },
+    {
+      "name": "Base",
+      "probability": 0.55,
+      "industry_path": "near-term LNG remains tight but long-run new supply normalizes excess fees",
+      "customer_adoption": "contracting continues at bankable but not crisis-level economics",
+      "pricing": "post-COD fees materially below 2026 commissioning economics",
+      "capacity": "Plaq Phase I Q4-26, Phase II 2027; CP2 first LNG H2-27 with later COD",
+      "revenue_path": [
+        18.1,
+        16.4,
+        21.4,
+        24.0,
+        26.0
+      ],
+      "margin_path_adj_ebitda": [
+        8.9,
+        7.0,
+        8.45,
+        9.0,
+        9.3
+      ],
+      "fcf": [
+        -6.0,
+        -4.0,
+        0.0,
+        3.0,
+        5.0
+      ],
+      "net_debt": [
+        43,
+        47,
+        46,
+        43,
+        38
+      ],
+      "diluted_shares": 2.7,
+      "per_share_value": 9.881111111111112,
+      "formation_conditions": [
+        "Plaq planned COD range",
+        "CP2 current cost range maintained",
+        "excess fee around management middle economics",
+        "legal expected drag ~$2B"
+      ],
+      "break_conditions": [
+        "two-quarter schedule miss plus cost reset",
+        "long-term excess fee sustains >$6/MMBtu with expansion FID"
+      ]
+    },
+    {
+      "name": "Bull",
+      "probability": 0.25,
+      "industry_path": "security premium and durable LNG scarcity keep excess fees elevated despite supply additions",
+      "customer_adoption": "new SPAs sign rapidly; reliability concern recedes",
+      "pricing": "excess capacity monetized near/high company illustrative economics",
+      "capacity": "Plaq and CP2 execute on schedule; expansion FID and capital-efficient bolt-ons",
+      "revenue_path": [
+        19.0,
+        19.5,
+        25.5,
+        30.0,
+        33.0
+      ],
+      "margin_path_adj_ebitda": [
+        9.1,
+        8.5,
+        10.5,
+        11.5,
+        12.0
+      ],
+      "fcf": [
+        -5.0,
+        -2.0,
+        3.0,
+        6.0,
+        8.0
+      ],
+      "net_debt": [
+        42,
+        44,
+        40,
+        34,
+        26
+      ],
+      "diluted_shares": 2.65,
+      "per_share_value": 22.293962264150945,
+      "formation_conditions": [
+        "Plaq reliable ramp and excess > Base",
+        "CP2 cost/schedule outperform current plan",
+        "legal tail settles low",
+        "expansion gets SPAs/FID"
+      ],
+      "break_conditions": [
+        "excess fees reprice < Base",
+        "CP2 material cost reset"
+      ]
+    }
+  ],
+  "valuation": {
+    "mode": "Mode F - project-level SOTP/NAV",
+    "current_price": 14.2,
+    "basic_market_cap": 35.4716,
+    "fd_market_cap": 37.53059999999999,
+    "current_net_debt": 38.694,
+    "nci": 3.507,
+    "current_economic_ev_before_legal": 79.7316,
+    "base": {
+      "name": "Base",
+      "probability": 0.55,
+      "cal_ev": 5.949999999999999,
+      "plaq_ev": 39.25,
+      "cp2_ev": 17.180000000000003,
+      "other_ev": 4.5,
+      "expansion_option": 4.0,
+      "asset_ev": 70.88000000000001,
+      "net_debt": 38.694,
+      "nci": 3.507,
+      "legal_drag": 2.0,
+      "equity_value": 26.679000000000006,
+      "diluted_shares": 2.7,
+      "calculated_per_share": 9.881111111111112,
+      "per_share_value": 9.881111111111112,
+      "prob": 0.55,
+      "cal_ebitda": 0.7,
+      "cal_multiple": 8.5,
+      "plaq_ebitda": 4.3,
+      "plaq_multiple": 8.5,
+      "plaq_comm_pv": 3.5,
+      "plaq_rem_capex": 0.8,
+      "cp2_ebitda": 4.4,
+      "cp2_multiple": 8.5,
+      "cp2_discount": 0.7,
+      "cp2_comm_pv": 5.5,
+      "cp2_rem_capex": 14.5,
+      "other": 4.5,
+      "expansion": 4.0,
+      "legal": 2.0,
+      "shares": 2.7
+    },
+    "expected_value": 11.308101677148848,
+    "expected_irr_proxy": -0.1287392096431914,
+    "upside_downside_ratio": 0.6373198633189722,
+    "reverse_required_asset_ev": 81.7316,
+    "reverse_required_cp2_ev": 28.031599999999997,
+    "reverse_required_cp2_ebitda": 6.223798319327732,
+    "reverse_incremental_fee_vs_mgmt_high": 1.968842921784099,
+    "reverse_implied_excess_fee": 7.968842921784099,
+    "ud_2x_price": 8.431320754716982,
+    "core": 45.2,
+    "execution": 17.180000000000003,
+    "ecosystem": 8.5,
+    "drag": 44.201
+  },
+  "reverse_expectations": {
+    "current_price": 14.2,
+    "required_asset_ev": 81.7316,
+    "base_asset_ev": 70.88000000000001,
+    "gap_vs_base_asset_ev": 10.85159999999999,
+    "cp2_required_current_ev_if_other_base": 28.031599999999997,
+    "cp2_required_stabilized_ebitda_if_other_base": 6.223798319327732,
+    "company_illustrative_cp2_post_cod_ebitda_high": 5.2,
+    "incremental_ebitda_needed": 1.0237983193277316,
+    "approx_incremental_excess_fee_needed_per_mmbtu": 1.968842921784099,
+    "approx_implied_excess_fee_if_management_high_case_starts_at_6": 7.968842921784099,
+    "interpretation": "If all non-CP2 Base assumptions hold, the market price needs CP2 stabilized EBITDA above the company 2025 illustrative high case, or equivalent value from higher Plaquemines economics, lower debt/legal leakage, or expansion options."
+  },
+  "stance": {
+    "zone": "신규매수 비선호 / 관망-회피",
+    "horizon": "12-18 months re-rating; 3-5 year project realization monitored separately",
+    "hurdle_rate": 0.12,
+    "price_bands": [
+      {
+        "low": 0,
+        "high": 8.5,
+        "label": "매수 검토",
+        "reason": "Bull/Bear payoff ratio about 2x or better under current scenario set"
+      },
+      {
+        "low": 8.5,
+        "high": 10.5,
+        "label": "조건부 관심",
+        "reason": "near Base NAV; require CP2/legal de-risking"
+      },
+      {
+        "low": 10.5,
+        "high": 12.5,
+        "label": "관망",
+        "reason": "probability-weighted value approached/exceeded"
+      },
+      {
+        "low": 12.5,
+        "high": 999,
+        "label": "신규매수 비선호",
+        "reason": "requires high CP2/excess/option realization"
+      }
+    ],
+    "annualized_dividend_per_share": 0.16,
+    "dividend_yield_at_t0": 0.011267605633802818
+  },
+  "kpis": [
+    {
+      "id": "KPI-01",
+      "name": "Plaquemines Phase I COD",
+      "status": "YELLOW",
+      "threshold_green": "Q4 2026 within plan + stable cargo cadence",
+      "threshold_red": "material slip into 2027 or repeated reliability issue",
+      "why": "converts commissioning economics into contracted post-COD economics"
+    },
+    {
+      "id": "KPI-02",
+      "name": "Plaquemines post-COD realized liquefaction fee / excess mix",
+      "status": "YELLOW",
+      "threshold_green": "normalized economics at/above Base range with excess volumes sustained",
+      "threshold_red": "fee/mix falls toward Calcasieu legacy economics faster than modeled",
+      "why": "largest near-term normalization driver"
+    },
+    {
+      "id": "KPI-03",
+      "name": "CP2 construction cost",
+      "status": "YELLOW",
+      "threshold_green": "total project cost stays within $32.5-33.5B",
+      "threshold_red": "formal reset above $35B or funding gap emerges",
+      "why": "directly changes equity NAV and financing drag"
+    },
+    {
+      "id": "KPI-04",
+      "name": "CP2 schedule / first LNG",
+      "status": "YELLOW",
+      "threshold_green": "H2 2027 first LNG with construction milestones intact",
+      "threshold_red": "first LNG slips into 2028 without offsetting contract economics",
+      "why": "delays commissioning cash and terminal value"
+    },
+    {
+      "id": "KPI-05",
+      "name": "CP2/portfolio excess fixed fee",
+      "status": "RED",
+      "threshold_green": "durable contracted economics >$6/MMBtu or equivalent value with bankable tenor",
+      "threshold_red": "long-run market clears <~$4/MMBtu",
+      "why": "current price reverse expectation is more demanding than Base"
+    },
+    {
+      "id": "KPI-06",
+      "name": "Net debt / funding trajectory",
+      "status": "RED",
+      "threshold_green": "net debt peaks and declines as FCF turns positive",
+      "threshold_red": "net debt >$50B with continued large negative FCF",
+      "why": "project value can leak to creditors before equity captures it"
+    },
+    {
+      "id": "KPI-07",
+      "name": "BP/remaining arbitration exposure",
+      "status": "YELLOW",
+      "threshold_green": "aggregate economic loss near/below $1B",
+      "threshold_red": "expected loss approaches/exceeds $4B",
+      "why": "direct equity-value drag plus contracting trust signal"
+    },
+    {
+      "id": "KPI-08",
+      "name": "New long-term SPA volume and pricing quality",
+      "status": "YELLOW",
+      "threshold_green": "contracted volume grows without sacrificing fee/terms",
+      "threshold_red": "volume only clears at structurally lower fee or weaker protections",
+      "why": "tests whether customer trust and demand translate into bankable economics"
+    }
+  ],
+  "catalysts": [
+    {
+      "date": "2026-Q3/Q4",
+      "event": "Plaquemines Phase I commissioning milestones and COD evidence",
+      "direction": "two-sided",
+      "watch": "reliability, cargo cadence, fee normalization"
+    },
+    {
+      "date": "2026-Q4",
+      "event": "2027 contracting/earnings outlook",
+      "direction": "two-sided",
+      "watch": "management bridge from 2026 commissioning to 2027 normalized EBITDA"
+    },
+    {
+      "date": "2027-early",
+      "event": "Plaquemines expansion targeted FID window / new SPA support",
+      "direction": "positive if bankable",
+      "watch": "capex, financing, signed volume"
+    },
+    {
+      "date": "2027-05",
+      "event": "BP damages hearing",
+      "direction": "risk resolution",
+      "watch": "damage methodology, caps, settlement signals"
+    },
+    {
+      "date": "2027-H2",
+      "event": "CP2 first LNG target",
+      "direction": "major execution catalyst",
+      "watch": "actual first LNG vs COD, commissioning cargo monetization"
+    },
+    {
+      "date": "2027-2028",
+      "event": "CP2 COD path and debt peak",
+      "direction": "valuation transition",
+      "watch": "post-COD fee, FCF inflection, deleveraging"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "promise": "프로젝트 chronology",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch.3",
+      "treatment": "프로젝트별 First LNG/commissioning/COD 분리"
+    },
+    {
+      "rc_id": "RC-002",
+      "promise": "산업 B1-B5 + transmission",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch.1",
+      "treatment": "산업 변화가 고객 구매와 VG 손익으로 연결"
+    },
+    {
+      "rc_id": "RC-003",
+      "promise": "Calcasieu 정상화",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch.3/4",
+      "treatment": "post-COD 정상화 표본"
+    },
+    {
+      "rc_id": "RC-004",
+      "promise": "Plaquemines ramp/COD",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch.3/4/5",
+      "treatment": "commissioning→COD 브리지"
+    },
+    {
+      "rc_id": "RC-005",
+      "promise": "CP2",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch.3/5",
+      "treatment": "건설→first LNG→COD→정상화"
+    },
+    {
+      "rc_id": "RC-006",
+      "promise": "Expansion/CP3",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch.3/5",
+      "treatment": "Base는 옵션가치만"
+    },
+    {
+      "rc_id": "RC-007",
+      "promise": "SPA 구조/가격",
+      "h2_status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.3/Appx",
+      "treatment": "Plaq/CP2 customer-level weighted LT fee 비공개"
+    },
+    {
+      "rc_id": "RC-008",
+      "promise": "Arbitration",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch.2/5/6",
+      "treatment": "법률 drag 확률화"
+    },
+    {
+      "rc_id": "RC-009",
+      "promise": "기술/건설",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch.3",
+      "treatment": "midscale modular/owner-led trade-off"
+    },
+    {
+      "rc_id": "RC-010",
+      "promise": "Management promise→delivery",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch.2",
+      "treatment": "금융/건설 실행 vs COD/신뢰"
+    },
+    {
+      "rc_id": "RC-011",
+      "promise": "Governance",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch.2",
+      "treatment": "97.5% voting control"
+    },
+    {
+      "rc_id": "RC-012",
+      "promise": "경쟁",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch.3",
+      "treatment": "customer job 기준"
+    },
+    {
+      "rc_id": "RC-013",
+      "promise": "3Y/8Q 재무",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch.4/Appx",
+      "treatment": "3Y+8Q"
+    },
+    {
+      "rc_id": "RC-014",
+      "promise": "회계 품질",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch.4",
+      "treatment": "capitalization/non-GAAP/derivative/NCI"
+    },
+    {
+      "rc_id": "RC-015",
+      "promise": "Debt/financing/dilution",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch.4/5",
+      "treatment": "net debt/NCI/denominator"
+    },
+    {
+      "rc_id": "RC-016",
+      "promise": "Consensus/positioning",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch.0/5",
+      "treatment": "컨센서스와 Variant"
+    },
+    {
+      "rc_id": "RC-017",
+      "promise": "SOTP/reverse/stance",
+      "h2_status": "COMPLETE",
+      "h3_locator": "Ch.5/6",
+      "treatment": "Mode F + 역산 + 가격대"
+    }
+  ],
+  "qa": {
+    "RESEARCH_COMPLETE": true,
+    "DEEP": true,
+    "READABLE": true,
+    "EXPLANATORY_COMPLETE": true,
+    "TOP_LEVEL_CHAPTER_SCHEMA_LOCK": "PASS",
+    "H1_H2_RESEARCH_CONTRACT_COMPLETENESS": "PASS",
+    "H2_H3_COVERAGE_LINEAGE": "PASS",
+    "RC_H3_COVERAGE_RATE": "100%",
+    "LATEST_FILING_CHECK": "PASS",
+    "VARIANT_PERCEPTION_VISIBLE": "PASS",
+    "CH6_TRIPWIRE_CALENDAR_FALSIFICATION": "PASS",
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "EXPLANATORY_SPACE_ALLOCATION": "PASS",
+    "GOLDEN_CONTENT_PARITY": "PASS"
+  },
+  "visual_lineage": [
+    {
+      "vis_id": "VIS-001",
+      "title": "3Y financials",
+      "source": "REPORT_DATA_PACK.json",
+      "fields": [
+        "annual_3y.revenue",
+        "annual_3y.adj_ebitda",
+        "annual_3y.ocf",
+        "annual_3y.cash_capex"
+      ],
+      "displayed_values": [
+        {
+          "year": 2023,
+          "revenue": 7.897,
+          "adj_ebitda": 5.155,
+          "ocf": 4.55,
+          "cash_capex": 8.091,
+          "ocf_minus_capex": -3.541
+        },
+        {
+          "year": 2024,
+          "revenue": 4.972,
+          "adj_ebitda": 2.104,
+          "ocf": 2.149,
+          "cash_capex": 13.717,
+          "ocf_minus_capex": -11.568
+        },
+        {
+          "year": 2025,
+          "revenue": 13.769,
+          "adj_ebitda": 6.265,
+          "ocf": 6.566,
+          "cash_capex": 13.365,
+          "ocf_minus_capex": -6.799
+        }
+      ],
+      "file": "VIS-001.svg",
+      "parity": "PASS"
+    },
+    {
+      "vis_id": "VIS-002",
+      "title": "8Q revenue and EBITDA",
+      "source": "REPORT_DATA_PACK.json",
+      "fields": [
+        "quarterly_8q.revenue",
+        "quarterly_8q.adj_ebitda"
+      ],
+      "displayed_values": [
+        {
+          "period": "2024Q3",
+          "revenue": 0.926,
+          "operating_income": 0.189,
+          "net_income_common": -0.347,
+          "adj_ebitda": 0.283
+        },
+        {
+          "period": "2024Q4",
+          "revenue": 1.524,
+          "operating_income": 0.594,
+          "net_income_common": 0.871,
+          "adj_ebitda": 0.688
+        },
+        {
+          "period": "2025Q1",
+          "revenue": 2.894,
+          "operating_income": 1.08,
+          "net_income_common": 0.396,
+          "adj_ebitda": 1.346
+        },
+        {
+          "period": "2025Q2",
+          "revenue": 3.101,
+          "operating_income": 1.038,
+          "net_income_common": 0.368,
+          "adj_ebitda": 1.393
+        },
+        {
+          "period": "2025Q3",
+          "revenue": 3.329,
+          "operating_income": 1.32,
+          "net_income_common": 0.429,
+          "adj_ebitda": 1.525
+        },
+        {
+          "period": "2025Q4",
+          "revenue": 4.445,
+          "operating_income": 1.718,
+          "net_income_common": 1.067,
+          "adj_ebitda": 2.001
+        },
+        {
+          "period": "2026Q1",
+          "revenue": 4.599,
+          "operating_income": 1.151,
+          "net_income_common": 0.488,
+          "adj_ebitda": 1.372
+        },
+        {
+          "period": "2026Q2",
+          "revenue": 4.578,
+          "operating_income": 2.188,
+          "net_income_common": 1.347,
+          "adj_ebitda": 2.491
+        }
+      ],
+      "file": "VIS-002.svg",
+      "parity": "PASS"
+    },
+    {
+      "vis_id": "VIS-003",
+      "title": "Project capacity",
+      "source": "REPORT_DATA_PACK.json",
+      "fields": [
+        "projects.expected_mtpa"
+      ],
+      "displayed_values": [
+        {
+          "name": "Calcasieu Pass",
+          "expected_mtpa": 11.2,
+          "status": "COD 완료 / 정상화 표본"
+        },
+        {
+          "name": "Plaquemines",
+          "expected_mtpa": 28.0,
+          "status": "Commissioning / COD 전환 중"
+        },
+        {
+          "name": "CP2",
+          "expected_mtpa": 29.0,
+          "status": "Phase I/II 건설"
+        }
+      ],
+      "file": "VIS-003.svg",
+      "parity": "PASS"
+    },
+    {
+      "vis_id": "VIS-004",
+      "title": "Scenario fair values",
+      "source": "REPORT_DATA_PACK.json",
+      "fields": [
+        "valuation.expected_value",
+        "meta.price",
+        "consensus.analyst_target_avg",
+        "scenarios.per_share_value"
+      ],
+      "displayed_values": {
+        "Bear": 1.5,
+        "Base": 9.881111111111112,
+        "확률가중": 11.308101677148848,
+        "현재가": 14.2,
+        "컨센서스 PT": 16.42,
+        "Bull": 22.293962264150945
+      },
+      "file": "VIS-004.svg",
+      "parity": "PASS"
+    },
+    {
+      "vis_id": "VIS-005",
+      "title": "Reverse CP2 expectations",
+      "source": "REPORT_DATA_PACK.json",
+      "fields": [
+        "reverse_expectations.cp2_required_stabilized_ebitda_if_other_base",
+        "reverse_expectations.company_illustrative_cp2_post_cod_ebitda_high",
+        "valuation.base.cp2_ebitda"
+      ],
+      "displayed_values": {
+        "회사 2025\nCP2 high case": 5.2,
+        "Base": 4.4,
+        "현재가 역산\n필요치": 6.223798319327732
+      },
+      "file": "VIS-005.svg",
+      "parity": "PASS"
+    },
+    {
+      "vis_id": "VIS-006",
+      "title": "P/B history",
+      "source": "REPORT_DATA_PACK.json",
+      "fields": [
+        "valuation_history.pb_snapshots"
+      ],
+      "displayed_values": [
+        [
+          "2025-03-31",
+          2.96
+        ],
+        [
+          "2025-06-30",
+          4.09
+        ],
+        [
+          "2025-09-30",
+          3.76
+        ],
+        [
+          "2025-12-31",
+          1.62
+        ],
+        [
+          "2026-03-31",
+          3.65
+        ],
+        [
+          "2026-08-03",
+          3.03
+        ]
+      ],
+      "file": "VIS-006.svg",
+      "parity": "PASS"
+    }
+  ],
+  "publishing_qa": {
+    "PUBLISHED_TOP_LEVEL_SCHEMA_MATCH": "PASS",
+    "REPORT_DATA_PACK": "EMITTED",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "CONTENT_MEANING_LOCK_PRESERVED": "PASS",
+    "EXPLANATORY_DEPTH_PRESERVED": "PASS",
+    "PRINTED_TOC": "1 page",
+    "TOC_CLICKABLE": "PASS",
+    "PDF_BOOKMARKS": "PASS",
+    "HTML_SIDEBAR": "PASS",
+    "SEARCHABLE_TEXT": "PASS",
+    "KOREAN_READABILITY": "PASS",
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "EXPLANATORY_SPACE_ALLOCATION": "PASS",
+    "SMART_CHAPTER_TRANSITIONS": "PASS",
+    "ARGUMENT_BLOCK_PAGINATION": "PASS",
+    "DENSITY_CONTROL": "PASS",
+    "VISUAL_SUBSTITUTION": "PASS",
+    "VISUAL_GRAMMAR_VARIETY": "PASS",
+    "CHART_READABILITY": "PASS",
+    "TABLE_QUALITY": "PASS",
+    "CONTACT_SHEET_COMPOSITION_QA": "PASS",
+    "SEMANTIC_GOLDEN_QA": "PASS",
+    "VISUAL_GOLDEN_QA": "PASS",
+    "GOLDEN_PARITY": "PASS",
+    "FIGURE_NUMERICAL_PARITY": "PASS",
+    "VISUAL_DATA_LINEAGE": "PASS",
+    "VISUAL_SEMANTIC_PARITY": "PASS",
+    "STALE_VISUAL_ASSETS": 0,
+    "RENDERED_VISUAL_PARITY_QA": "PASS",
+    "DECISION_VISUALS_TOTAL": 6,
+    "DECISION_VISUALS_PARITY_PASS": 6,
+    "PUBLISHING_ACCEPTANCE": "PASS",
+    "pages": 24,
+    "pdf_internal_links": 10,
+    "outline_items": 77,
+    "explanatory_space_ratio_ch1_ch3_to_ch5": 2.29
+  }
+}

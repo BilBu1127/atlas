@@ -1,0 +1,1072 @@
+{
+  "meta": {
+    "ticker": "GEV",
+    "company": "GE Vernova Inc.",
+    "T0": "2026-08-25 Asia/Seoul",
+    "price_asof": "2026-08-24 close",
+    "price_usd": 942.1,
+    "filing_asof": "2026-07-22 Form 10-Q, period ended 2026-06-30",
+    "consensus_asof": "2026-08-24 public snapshots",
+    "latest_release_check_asof": "2026-08-25",
+    "version": "DDOS v1.7 / GEV H3",
+    "pdf": "N/A — user waived PDF",
+    "valuation_horizon_years": 4.35
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue_b": 33.239,
+        "adj_ebitda_b": 0.807,
+        "adj_ebitda_margin_pct": 2.4,
+        "fcf_b": 0.442,
+        "gaap_net_income_b": -0.474
+      },
+      {
+        "year": 2024,
+        "revenue_b": 34.935,
+        "adj_ebitda_b": 2.035,
+        "adj_ebitda_margin_pct": 5.8,
+        "fcf_b": 1.701,
+        "gaap_net_income_b": 1.559
+      },
+      {
+        "year": 2025,
+        "revenue_b": 38.068,
+        "adj_ebitda_b": 3.196,
+        "adj_ebitda_margin_pct": 8.4,
+        "fcf_b": 3.71,
+        "gaap_net_income_b": 4.9,
+        "note": "약 $2.9B tax valuation allowance release 포함"
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "3Q24",
+        "revenue_b": 8.913,
+        "adj_ebitda_b": 0.243,
+        "adj_ebitda_margin_pct": 2.7,
+        "fcf_b": 0.968
+      },
+      {
+        "quarter": "4Q24",
+        "revenue_b": 10.559,
+        "adj_ebitda_b": 1.079,
+        "adj_ebitda_margin_pct": 10.2,
+        "fcf_b": 0.572
+      },
+      {
+        "quarter": "1Q25",
+        "revenue_b": 8.03,
+        "adj_ebitda_b": 0.46,
+        "adj_ebitda_margin_pct": 5.7,
+        "fcf_b": 1.0,
+        "rounded": true
+      },
+      {
+        "quarter": "2Q25",
+        "revenue_b": 9.111,
+        "adj_ebitda_b": 0.77,
+        "adj_ebitda_margin_pct": 8.5,
+        "fcf_b": 0.194
+      },
+      {
+        "quarter": "3Q25",
+        "revenue_b": 9.97,
+        "adj_ebitda_b": 0.81,
+        "adj_ebitda_margin_pct": 8.1,
+        "fcf_b": 0.7,
+        "rounded": true
+      },
+      {
+        "quarter": "4Q25",
+        "revenue_b": 10.96,
+        "adj_ebitda_b": 1.16,
+        "adj_ebitda_margin_pct": 10.6,
+        "fcf_b": 1.8,
+        "rounded": true
+      },
+      {
+        "quarter": "1Q26",
+        "revenue_b": 9.34,
+        "adj_ebitda_b": 0.9,
+        "adj_ebitda_margin_pct": 9.6,
+        "fcf_b": 4.8,
+        "rounded": true
+      },
+      {
+        "quarter": "2Q26",
+        "revenue_b": 11.104,
+        "adj_ebitda_b": 1.25,
+        "adj_ebitda_margin_pct": 11.3,
+        "fcf_b": 5.107
+      }
+    ],
+    "ceilings": [
+      "일부 1Q25/3Q25/4Q25/1Q26 quarterly values are rounded public-IR values",
+      "2025 GAAP net income includes $2.9B tax valuation allowance release",
+      "1H26 GAAP earnings include large Prolec remeasurement/M&A gain"
+    ]
+  },
+  "operating": {
+    "backlog_total_b": 176.284,
+    "gas_contract_ladder": {
+      "1Q25_total_gw": 50,
+      "4Q25_total_gw": 83,
+      "1Q26_total_gw": 100,
+      "2Q26_total_gw": 116,
+      "2Q26_firm_gw": 53,
+      "2Q26_sra_gw": 63,
+      "q2_new_sra_gw": 18,
+      "q2_new_direct_order_gw": 2,
+      "q2_sra_conversion_gw": 10,
+      "q2_shipments_gw": 3
+    },
+    "power_service_rpo_b": 72.4,
+    "electrification_equipment_backlog_b": 40.6,
+    "data_center_orders_ytd_b_gt": 5.0,
+    "contract_liabilities_2q26_b": 40.037,
+    "contract_liabilities_ye25_b": 25.95,
+    "contract_liabilities_change_b": 14.088,
+    "h1_26_fcf_b": 9.897,
+    "h1_26_adj_ebitda_b": 2.146,
+    "segment_2q26": {
+      "Power": 18.8,
+      "Electrification": 18.4,
+      "Wind": -13.6
+    },
+    "gas_capacity_gw": {
+      "3Q26_annualized": 20,
+      "2028": 24,
+      "2030": 30
+    },
+    "ha_fleet": {
+      "units": 128,
+      "countries": 21,
+      "installed_gw": 74,
+      "operating_hours_m_gt": 4
+    }
+  },
+  "kpis": [
+    {
+      "name": "Gas backlog + SRA",
+      "current": "116GW (53GW firm + 63GW SRA)",
+      "history": [
+        {
+          "period": "1Q25",
+          "value": "50GW"
+        },
+        {
+          "period": "4Q25",
+          "value": "83GW"
+        },
+        {
+          "period": "1Q26",
+          "value": "100GW"
+        },
+        {
+          "period": "2Q26",
+          "value": "116GW"
+        }
+      ],
+      "thresholds": {
+        "green": "2026년 말 ≥125GW이면서 firm backlog 비중/절대량이 상승",
+        "yellow": "총량 116–124GW 또는 SRA만 늘고 firm 전환이 둔화",
+        "red": "총량 감소 또는 firm backlog가 2개 분기 연속 감소"
+      }
+    },
+    {
+      "name": "Electrification equipment backlog",
+      "current": "$40.6B",
+      "history": [
+        {
+          "period": "2Q26",
+          "value": "$40.6B, +69% YoY"
+        }
+      ],
+      "thresholds": {
+        "green": "backlog ≥$40B 유지 + organic revenue growth >20%",
+        "yellow": "backlog $35–40B 또는 organic growth 10–20%",
+        "red": "backlog <$35B 또는 organic growth <10%가 지속"
+      }
+    },
+    {
+      "name": "Power / Electrification EBITDA margin",
+      "current": "18.8% / 18.4% (2Q26)",
+      "history": [
+        {
+          "period": "2Q26",
+          "value": "18.8% / 18.4%"
+        }
+      ],
+      "thresholds": {
+        "green": "각각 18%+ 유지하며 2028년 22% 목표로 접근",
+        "yellow": "15–18%",
+        "red": "15% 미만이 2개 분기 지속"
+      }
+    },
+    {
+      "name": "Wind EBITDA",
+      "current": "1H26 -$657M; FY26 guide ~-$400M",
+      "history": [
+        {
+          "period": "2Q26",
+          "value": "-$275M"
+        },
+        {
+          "period": "1H26",
+          "value": "-$657M"
+        }
+      ],
+      "thresholds": {
+        "green": "2H26 유의미한 흑자 전환으로 FY guide 달성",
+        "yellow": "손실 개선되나 FY guide 소폭 미달",
+        "red": "FY 손실 >$0.7B 또는 신규 대형 project charge"
+      }
+    },
+    {
+      "name": "FCF quality / contract liabilities",
+      "current": "1H26 FCF $9.897B; contract liabilities $40.037B (+$14.088B vs YE25)",
+      "history": [
+        {
+          "period": "YE25",
+          "value": "$25.950B liabilities"
+        },
+        {
+          "period": "2Q26",
+          "value": "$40.037B liabilities"
+        }
+      ],
+      "thresholds": {
+        "green": "EBITDA가 FCF를 따라 올라오고 선급금 증가가 둔화되어도 현금흐름 견조",
+        "yellow": "FCF가 계속 계약부채 증가에 크게 의존",
+        "red": "계약부채 감소와 함께 FCF 급락, 주문/마진도 동반 약화"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.25,
+      "revenue_2030_b": 60,
+      "margin_2030_pct": 18,
+      "normalized_fcf_2030_b": 6.5,
+      "terminal_ev_ebitda": 16,
+      "net_cash_2030_b": 12,
+      "diluted_shares_m": 270,
+      "ebitda_2030_b": 10.8,
+      "equity_value_2030_b": 184.8,
+      "per_share_value": 684.44,
+      "irr_pct": -7.08,
+      "revenue_path": [
+        46.0,
+        52.9,
+        null,
+        null,
+        60
+      ],
+      "margin_path": [
+        13.0,
+        null,
+        16.0,
+        null,
+        18
+      ],
+      "fcf": [
+        12.0,
+        null,
+        null,
+        null,
+        6.5
+      ]
+    },
+    {
+      "name": "Base",
+      "probability": 0.45,
+      "revenue_2030_b": 70,
+      "margin_2030_pct": 22,
+      "normalized_fcf_2030_b": 10,
+      "terminal_ev_ebitda": 18,
+      "net_cash_2030_b": 18,
+      "diluted_shares_m": 265,
+      "ebitda_2030_b": 15.4,
+      "equity_value_2030_b": 295.2,
+      "per_share_value": 1113.96,
+      "irr_pct": 3.93,
+      "revenue_path": [
+        46.0,
+        52.9,
+        null,
+        null,
+        70
+      ],
+      "margin_path": [
+        13.0,
+        null,
+        20.0,
+        null,
+        22
+      ],
+      "fcf": [
+        12.0,
+        null,
+        null,
+        null,
+        10
+      ]
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.25,
+      "revenue_2030_b": 78,
+      "margin_2030_pct": 24,
+      "normalized_fcf_2030_b": 13,
+      "terminal_ev_ebitda": 20,
+      "net_cash_2030_b": 22,
+      "diluted_shares_m": 260,
+      "ebitda_2030_b": 18.72,
+      "equity_value_2030_b": 396.4,
+      "per_share_value": 1524.62,
+      "irr_pct": 11.7,
+      "revenue_path": [
+        46.0,
+        52.9,
+        null,
+        null,
+        78
+      ],
+      "margin_path": [
+        13.0,
+        null,
+        20.0,
+        null,
+        24
+      ],
+      "fcf": [
+        12.0,
+        null,
+        null,
+        null,
+        13
+      ]
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.05,
+      "revenue_2030_b": 85,
+      "margin_2030_pct": 25,
+      "normalized_fcf_2030_b": 15,
+      "terminal_ev_ebitda": 22,
+      "net_cash_2030_b": 25,
+      "diluted_shares_m": 255,
+      "ebitda_2030_b": 21.25,
+      "equity_value_2030_b": 492.5,
+      "per_share_value": 1931.37,
+      "irr_pct": 17.94,
+      "revenue_path": [
+        46.0,
+        52.9,
+        null,
+        null,
+        85
+      ],
+      "margin_path": [
+        13.0,
+        null,
+        20.0,
+        null,
+        25
+      ],
+      "fcf": [
+        12.0,
+        null,
+        null,
+        null,
+        15
+      ]
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B — Hybrid",
+    "core": null,
+    "execution": null,
+    "ecosystem": null,
+    "drag": null,
+    "expected_value": 1150.12,
+    "expected_irr_pct": 4.69,
+    "current_price": 942.1,
+    "market_cap_b": 250.9,
+    "net_cash_b": 10.5,
+    "enterprise_value_b": 240.4,
+    "ev_2026_guided_mid_ebitda_x": 40.2,
+    "ev_2027_consensus_ebitda_x": 25.7,
+    "ev_2028_company_target_ebitda_x": 21.5,
+    "upside_downside_ratio_bull_exec_vs_bear": 2.26,
+    "hurdle_present_values": {
+      "8pct": {
+        "pw_present_value": 822.9,
+        "required_2030_share_value": 1316.71,
+        "base_present_value": 797.03
+      },
+      "10pct": {
+        "pw_present_value": 759.77,
+        "required_2030_share_value": 1426.12,
+        "base_present_value": 735.89
+      },
+      "12pct": {
+        "pw_present_value": 702.49,
+        "required_2030_share_value": 1542.39,
+        "base_present_value": 680.41
+      },
+      "15pct": {
+        "pw_present_value": 626.19,
+        "required_2030_share_value": 1730.34,
+        "base_present_value": 606.5
+      }
+    },
+    "base_2030_value": 1113.96,
+    "base_12pct_present_value": 680.41
+  },
+  "reverse_expectations": {
+    "hurdle_pct": 12,
+    "required_2030_share_value": 1542.39,
+    "assumed_2030_shares_m": 265,
+    "assumed_2030_net_cash_b": 18,
+    "required_equity_b": 408.7,
+    "required_ev_b": 390.7,
+    "required_revenue_cases": [
+      {
+        "margin_pct": 24,
+        "terminal_ev_ebitda": 20,
+        "required_2030_revenue_b": 81.4
+      },
+      {
+        "margin_pct": 22,
+        "terminal_ev_ebitda": 18,
+        "required_2030_revenue_b": 98.7
+      },
+      {
+        "margin_pct": 22,
+        "terminal_ev_ebitda": 20,
+        "required_2030_revenue_b": 88.8
+      },
+      {
+        "margin_pct": 24,
+        "terminal_ev_ebitda": 18,
+        "required_2030_revenue_b": 90.4
+      }
+    ],
+    "interpretation": "현재가에서 12% 복리 수익을 얻으려면 2030년 Bull급 운영실적 또는 높은 terminal multiple의 지속이 필요"
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_b": 46.306,
+      "ebitda_b": 6.394
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_b": 52.888,
+      "ebitda_b": 9.339
+    },
+    "revision_trend": "2026 company guidance repeatedly raised; public consensus remains strongly positive",
+    "ceiling": "broker-by-broker models, crowding and options positioning are proprietary/incomplete"
+  },
+  "stance": {
+    "zone": "회피 / 기존 보유 시 축소 검토",
+    "framework_reason": "expected IRR 4.69% < 12% hurdle despite U/D 2.26x",
+    "price_bands": {
+      "aggressive_interest": "$620–700",
+      "conditional_interest": "$700–760",
+      "watch_low_return": "$760–925",
+      "avoid_or_trim": ">$925"
+    },
+    "current_price": 942.1,
+    "base_2030_future_value": 1113.96,
+    "base_12pct_present_value": 680.41,
+    "attractive_trigger": "약 $700 이하에서 probability-weighted expected IRR이 12% 수준으로 개선",
+    "horizon": "end-2030 (~4.35 years)",
+    "mispricing_rationale": "NOT_IDENTIFIED at current price"
+  },
+  "catalysts": [
+    {
+      "when": "2026-10-28",
+      "event": "3Q26 earnings",
+      "sensitivity": "Gas firm/SRA conversion, Electrification backlog, FCF 선급금 의존, Wind 2H 회복 확인"
+    },
+    {
+      "when": "2026 year-end",
+      "event": "Gas contracted target ≥125GW",
+      "sensitivity": "firm backlog 증가가 동반되는지가 핵심"
+    },
+    {
+      "when": "mid-2027",
+      "event": "MV-UPS first shipment target",
+      "sensitivity": "power-to-rack의 option value가 실제 매출로 전환되는지"
+    },
+    {
+      "when": "2028",
+      "event": "$56B revenue / 20% adj EBITDA margin; Gas 24GW capacity; Vietnam transformer plant full operation target",
+      "sensitivity": "현재 valuation의 핵심 중간 검증점"
+    },
+    {
+      "when": "2030",
+      "event": "Gas 30GW annual capacity target / scenario horizon",
+      "sensitivity": "scarcity normalization 이후에도 높은 margin·service cash가 유지되는지"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "promise": "GE 분사 이후 경제적 정의·사업 재편·Prolec GE 계보를 재구성",
+      "status": "COMPLETE",
+      "h3_locator": "3.1 / 4.1"
+    },
+    {
+      "rc_id": "RC-002",
+      "promise": "전력산업 value chain, profit pool, lifecycle를 Gas/Grid/Wind로 분리",
+      "status": "COMPLETE",
+      "h3_locator": "1.1–1.4"
+    },
+    {
+      "rc_id": "RC-003",
+      "promise": "전력 수요를 secular/cyclical, 수량/가격으로 분해하고 선행지표를 특정",
+      "status": "COMPLETE",
+      "h3_locator": "1.1 / 6.4"
+    },
+    {
+      "rc_id": "RC-004",
+      "promise": "Gas turbine 및 grid 장비 공급능력·증설·lead time·진입장벽 조사",
+      "status": "COMPLETE",
+      "h3_locator": "1.2 / 3.5"
+    },
+    {
+      "rc_id": "RC-005",
+      "promise": "직전 gas/grid/wind cycle의 가격·margin·회복 패턴을 비교",
+      "status": "COMPLETE",
+      "h3_locator": "1.5 / Appendix A7"
+    },
+    {
+      "rc_id": "RC-006",
+      "promise": "Gas Power 116GW를 reservation/order/backlog/shipment로 분해하고 전환 누수를 추적",
+      "status": "COMPLETE",
+      "h3_locator": "3.2 / 4.3"
+    },
+    {
+      "rc_id": "RC-007",
+      "promise": "Gas Power 20→24→30GW 생산능력 확대의 공장·공급망·CapEx 실행가능성 검증",
+      "status": "COMPLETE",
+      "h3_locator": "3.5 / 6.4"
+    },
+    {
+      "rc_id": "RC-008",
+      "promise": "HA/aeroderivative 기술·효율·유연성·lead time을 경쟁사와 정량 비교",
+      "status": "COMPLETE",
+      "h3_locator": "3.3 / Appendix A5"
+    },
+    {
+      "rc_id": "RC-009",
+      "promise": "Gas installed base와 장기 service economics, attach/capture를 최대한 정량화",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.4 / Appendix A6"
+    },
+    {
+      "rc_id": "RC-010",
+      "promise": "Electrification backlog·product mix·Prolec GE·data-center orders를 유기적/인수효과로 분리",
+      "status": "COMPLETE",
+      "h3_locator": "3.6 / 4.3"
+    },
+    {
+      "rc_id": "RC-011",
+      "promise": "변압기/switchgear/HVDC 경쟁구도와 경쟁사 증설을 customer-job 기준 비교",
+      "status": "COMPLETE",
+      "h3_locator": "1.3 / 3.7"
+    },
+    {
+      "rc_id": "RC-012",
+      "promise": "Wind 손실을 Onshore/Offshore/legacy project/서비스로 분해하고 정상화 ceiling을 설정",
+      "status": "COMPLETE",
+      "h3_locator": "3.8 / 4.3 / 6.2"
+    },
+    {
+      "rc_id": "RC-013",
+      "promise": "Scott Strazik 및 핵심 경영진의 measurable prior record와 2024–26 Promise→Delivery를 점검",
+      "status": "COMPLETE",
+      "h3_locator": "2.1–2.3"
+    },
+    {
+      "rc_id": "RC-014",
+      "promise": "compensation·governance·capital allocation·주당가치 정렬을 감사",
+      "status": "COMPLETE",
+      "h3_locator": "2.4 / 4.5 / 6.1"
+    },
+    {
+      "rc_id": "RC-015",
+      "promise": "3개년 + 최근 8분기 재무와 segment recast를 연속 구축",
+      "status": "COMPLETE",
+      "h3_locator": "4.1–4.2 / Appendix A2"
+    },
+    {
+      "rc_id": "RC-016",
+      "promise": "FCF를 EBITDA, 고객 선급금, 계약부채, 운전자본, CapEx로 분해하고 정상화",
+      "status": "COMPLETE",
+      "h3_locator": "4.4 / 5.2"
+    },
+    {
+      "rc_id": "RC-017",
+      "promise": "backlog의 margin quality와 price/productivity/inflation bridge를 검증",
+      "status": "COMPLETE",
+      "h3_locator": "3.2 / 4.3"
+    },
+    {
+      "rc_id": "RC-018",
+      "promise": "순현금·pension·M&A·buyback·희석주식수의 주당가치 bridge 구축",
+      "status": "COMPLETE",
+      "h3_locator": "4.5 / 5.3 / Appendix A9"
+    },
+    {
+      "rc_id": "RC-019",
+      "promise": "consensus/positioning/valuation history와 Variant Perception을 구축",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "0 / 5.1 / 6.1 / Appendix A8"
+    },
+    {
+      "rc_id": "RC-020",
+      "promise": "고객→주문→capacity→매출→margin→FCF→순현금→희석주당가치 scenario bridge를 완성",
+      "status": "COMPLETE",
+      "h3_locator": "5.2–5.5 / 6"
+    }
+  ],
+  "as_of_registry": {
+    "PRICE_ASOF": "2026-08-24 close $942.10",
+    "FILING_ASOF": "2026-07-22 10-Q / 2026-06-30 period",
+    "CONSENSUS_ASOF": "2026-08-24",
+    "CORPORATE_RELEASE_ASOF": "2026-08-24; rechecked 2026-08-25",
+    "NEXT_SCHEDULED_EARNINGS": "2026-10-28"
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "tier": 1,
+      "title": "GE Vernova 2Q26 Form 10-Q",
+      "asof": "2026-07-22",
+      "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000148/gev-20260630.htm"
+    },
+    {
+      "id": "S02",
+      "tier": 1,
+      "title": "GE Vernova 2Q26 results and raised guidance",
+      "asof": "2026-07-22",
+      "url": "https://www.gevernova.com/news/press-releases/ge-vernova-reports-second-quarter-2026-financial-results-raises-2026-financial"
+    },
+    {
+      "id": "S03",
+      "tier": 1,
+      "title": "GE Vernova FY2025 results and 2026/2028 outlook",
+      "asof": "2026-01-28",
+      "url": "https://www.gevernova.com/news/articles/ge-vernova-releases-fourth-quarter-full-year-2025-financial-results"
+    },
+    {
+      "id": "S04",
+      "tier": 1,
+      "title": "GE Vernova 1Q26 results and raised guidance",
+      "asof": "2026-04-22",
+      "url": "https://www.gevernova.com/news/articles/ge-vernova-releases-first-quarter-2026-financial-results"
+    },
+    {
+      "id": "S05",
+      "tier": 1,
+      "title": "GE Vernova 2025 Investor Update / multi-year outlook",
+      "asof": "2025-12-09",
+      "url": "https://www.gevernova.com/news/press-releases/ge-vernova-raises-multi-year-financial-outlook-doubles-dividend-increases-buyback-authorization"
+    },
+    {
+      "id": "S06",
+      "tier": 1,
+      "title": "GE Vernova 2026 Proxy Statement",
+      "asof": "2026-04-02",
+      "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000049/gev-20260402.htm"
+    },
+    {
+      "id": "S07",
+      "tier": 1,
+      "title": "GE Vernova 9HA product specifications",
+      "asof": "2026-08-25",
+      "url": "https://www.gevernova.com/gas-power/products/gas-turbines/9ha"
+    },
+    {
+      "id": "S08",
+      "tier": 1,
+      "title": "GE Vernova LM6000 product specifications",
+      "asof": "2026-08-25",
+      "url": "https://www.gevernova.com/gas-power/products/gas-turbines/lm6000"
+    },
+    {
+      "id": "S09",
+      "tier": 1,
+      "title": "GE Vernova HA fleet surpasses 4 million operating hours",
+      "asof": "2026-05-26",
+      "url": "https://www.gevernova.com/news/press-releases/ge-vernova-ha-gas-turbine-fleet-surpasses-4-million"
+    },
+    {
+      "id": "S10",
+      "tier": 1,
+      "title": "GE Vernova Greenville capacity investment",
+      "asof": "2026",
+      "url": "https://www.gevernova.com/news/press-releases/ge-vernova-announces-more-160-million-investment-greenville-facility"
+    },
+    {
+      "id": "S11",
+      "tier": 1,
+      "title": "GE Vernova MV-UPS / power-to-rack",
+      "asof": "2026-08-24",
+      "url": "https://www.gevernova.com/news/press-releases/ge-vernova-introduces-medium-voltage-ups-help-accelerate-buildout-ai-factories-energy-intensive-industries"
+    },
+    {
+      "id": "S12",
+      "tier": 2,
+      "title": "NERC 2025 Long-Term Reliability Assessment",
+      "asof": "2025",
+      "url": "https://www.nerc.com/our-work/assessments/long-term-reliability-assessments"
+    },
+    {
+      "id": "S13",
+      "tier": 2,
+      "title": "Lawrence Berkeley National Laboratory U.S. Data Center Energy Usage 2025 Update",
+      "asof": "2026",
+      "url": "https://seta.lbl.gov/publications/united-states-data-center-energy-2025"
+    },
+    {
+      "id": "S14",
+      "tier": 3,
+      "title": "Siemens Energy SGT6-9000HL specifications",
+      "asof": "2026-08-25",
+      "url": "https://www.siemens-energy.com/global/en/home/products-services/product/sgt6-9000hl-heavy-duty-gas-turbine.html"
+    },
+    {
+      "id": "S15",
+      "tier": 3,
+      "title": "Mitsubishi Power M501J/JAC specifications",
+      "asof": "2026-08-25",
+      "url": "https://power.mhi.com/products/gasturbines/lineup/m501j"
+    },
+    {
+      "id": "S16",
+      "tier": 3,
+      "title": "Siemens Energy Q1 FY2026 earnings / gas reservations",
+      "asof": "2026",
+      "url": "https://www.siemens-energy.com/global/en/home/press-releases/earnings-release-q1-fy-2026.html"
+    },
+    {
+      "id": "S17",
+      "tier": 3,
+      "title": "Siemens Energy $1B U.S. manufacturing investment",
+      "asof": "2026",
+      "url": "https://www.siemens-energy.com/global/en/home/press-releases/siemens-energy-is-investing--1-billion-and-creating-highly-skill.html"
+    },
+    {
+      "id": "S18",
+      "tier": 3,
+      "title": "Hitachi Energy global manufacturing capacity program",
+      "asof": "2026-08-17",
+      "url": "https://www.hitachienergy.com/uk-ie/en/news-and-events/press-releases/2026/08/hitachi-energy-invests-300-million-in-china-to-bolster-global-manufacturing-capacity-for-critical-grid-infrastructure"
+    },
+    {
+      "id": "S19",
+      "tier": 2,
+      "title": "GE 2018 Form 10-K — Power overcapacity / impairment",
+      "asof": "2019",
+      "url": "https://www.sec.gov/Archives/edgar/data/40545/000004054519000014/ge10-k2018.htm"
+    },
+    {
+      "id": "S20",
+      "tier": 2,
+      "title": "GE Power 2017 restructuring",
+      "asof": "2017",
+      "url": "https://www.ge.com/news/press-releases/ge-power-announces-global-headcount-reduction-12000-jobs-part-plan-take-out-1"
+    },
+    {
+      "id": "S21",
+      "tier": 4,
+      "title": "MarketWatch price reference — 2026-08-24 close $942.10",
+      "asof": "2026-08-24",
+      "url": "https://www.marketwatch.com/investing/stock/gev"
+    },
+    {
+      "id": "S22",
+      "tier": 4,
+      "title": "Boursorama public consensus snapshot",
+      "asof": "2026-08-24",
+      "url": "https://www.boursorama.com/cours/consensus/GEV/"
+    },
+    {
+      "id": "S23",
+      "tier": 4,
+      "title": "BusinessQuant public quarterly consensus snapshot",
+      "asof": "2026-08-21",
+      "url": "https://businessquant.com/stocks/gev/estimates/"
+    },
+    {
+      "id": "S24",
+      "tier": 1,
+      "title": "GE Vernova Media Hub latest release check",
+      "asof": "2026-08-25",
+      "url": "https://www.gevernova.com/news/media-hub?type%5Bpress_release%5D=press_release"
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "3개년 매출·EBITDA 마진",
+      "authoritative_source_block": "financials.annual_3y",
+      "source_values": [
+        {
+          "year": 2023,
+          "revenue_b": 33.239,
+          "adj_ebitda_b": 0.807,
+          "adj_ebitda_margin_pct": 2.4,
+          "fcf_b": 0.442,
+          "gaap_net_income_b": -0.474
+        },
+        {
+          "year": 2024,
+          "revenue_b": 34.935,
+          "adj_ebitda_b": 2.035,
+          "adj_ebitda_margin_pct": 5.8,
+          "fcf_b": 1.701,
+          "gaap_net_income_b": 1.559
+        },
+        {
+          "year": 2025,
+          "revenue_b": 38.068,
+          "adj_ebitda_b": 3.196,
+          "adj_ebitda_margin_pct": 8.4,
+          "fcf_b": 3.71,
+          "gaap_net_income_b": 4.9,
+          "note": "약 $2.9B tax valuation allowance release 포함"
+        }
+      ],
+      "source_hash": "1712710a3994f933",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "최근 8분기 EBITDA 마진·FCF",
+      "authoritative_source_block": "financials.quarterly_8q",
+      "source_values": [
+        {
+          "quarter": "3Q24",
+          "revenue_b": 8.913,
+          "adj_ebitda_b": 0.243,
+          "adj_ebitda_margin_pct": 2.7,
+          "fcf_b": 0.968
+        },
+        {
+          "quarter": "4Q24",
+          "revenue_b": 10.559,
+          "adj_ebitda_b": 1.079,
+          "adj_ebitda_margin_pct": 10.2,
+          "fcf_b": 0.572
+        },
+        {
+          "quarter": "1Q25",
+          "revenue_b": 8.03,
+          "adj_ebitda_b": 0.46,
+          "adj_ebitda_margin_pct": 5.7,
+          "fcf_b": 1.0,
+          "rounded": true
+        },
+        {
+          "quarter": "2Q25",
+          "revenue_b": 9.111,
+          "adj_ebitda_b": 0.77,
+          "adj_ebitda_margin_pct": 8.5,
+          "fcf_b": 0.194
+        },
+        {
+          "quarter": "3Q25",
+          "revenue_b": 9.97,
+          "adj_ebitda_b": 0.81,
+          "adj_ebitda_margin_pct": 8.1,
+          "fcf_b": 0.7,
+          "rounded": true
+        },
+        {
+          "quarter": "4Q25",
+          "revenue_b": 10.96,
+          "adj_ebitda_b": 1.16,
+          "adj_ebitda_margin_pct": 10.6,
+          "fcf_b": 1.8,
+          "rounded": true
+        },
+        {
+          "quarter": "1Q26",
+          "revenue_b": 9.34,
+          "adj_ebitda_b": 0.9,
+          "adj_ebitda_margin_pct": 9.6,
+          "fcf_b": 4.8,
+          "rounded": true
+        },
+        {
+          "quarter": "2Q26",
+          "revenue_b": 11.104,
+          "adj_ebitda_b": 1.25,
+          "adj_ebitda_margin_pct": 11.3,
+          "fcf_b": 5.107
+        }
+      ],
+      "source_hash": "26136185dcd6a718",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "Gas 계약 ladder",
+      "authoritative_source_block": "operating.gas_contract_ladder",
+      "source_values": {
+        "1Q25_total_gw": 50,
+        "4Q25_total_gw": 83,
+        "1Q26_total_gw": 100,
+        "2Q26_total_gw": 116,
+        "2Q26_firm_gw": 53,
+        "2Q26_sra_gw": 63,
+        "q2_new_sra_gw": 18,
+        "q2_new_direct_order_gw": 2,
+        "q2_sra_conversion_gw": 10,
+        "q2_shipments_gw": 3
+      },
+      "source_hash": "bda7103346113621",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "2Q26 segment EBITDA margin",
+      "authoritative_source_block": "operating.segment_2q26",
+      "source_values": {
+        "Power": 18.8,
+        "Electrification": 18.4,
+        "Wind": -13.6
+      },
+      "source_hash": "338a4751463c8885",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-005",
+      "figure_title": "2030 scenario per-share value",
+      "authoritative_source_block": "scenarios",
+      "source_values": [
+        {
+          "name": "Bear",
+          "per_share_value": 684.44,
+          "probability": 0.25
+        },
+        {
+          "name": "Base",
+          "per_share_value": 1113.96,
+          "probability": 0.45
+        },
+        {
+          "name": "Bull Execution",
+          "per_share_value": 1524.62,
+          "probability": 0.25
+        },
+        {
+          "name": "Bull Ecosystem",
+          "per_share_value": 1931.37,
+          "probability": 0.05
+        }
+      ],
+      "source_hash": "d75d1c870e8c2332",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-006",
+      "figure_title": "12% hurdle reverse expectations",
+      "authoritative_source_block": "reverse_expectations",
+      "source_values": {
+        "current_price": 942.1,
+        "required_2030_share": 1542.39,
+        "required_cases": [
+          {
+            "margin_pct": 24,
+            "terminal_ev_ebitda": 20,
+            "required_2030_revenue_b": 81.4
+          },
+          {
+            "margin_pct": 22,
+            "terminal_ev_ebitda": 18,
+            "required_2030_revenue_b": 98.7
+          },
+          {
+            "margin_pct": 22,
+            "terminal_ev_ebitda": 20,
+            "required_2030_revenue_b": 88.8
+          },
+          {
+            "margin_pct": 24,
+            "terminal_ev_ebitda": 18,
+            "required_2030_revenue_b": 90.4
+          }
+        ]
+      },
+      "source_hash": "eadb727df68d650c",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    }
+  ],
+  "quality_gates": {
+    "RC_UNRESOLVED": 0,
+    "RC_H3_COVERAGE_RATE_PCT": 100,
+    "H1_RESEARCH_CONTRACT_RECONCILIATION": "PASS",
+    "RC_LINEAGE_REMEDIATION": "PASS",
+    "LATEST_FILING_CHECK": "PASS",
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "EXPLANATORY_SPACE_ALLOCATION": "PASS",
+    "REPORT_DATA_PACK": "EMITTED",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "PDF": "N/A — user waived PDF",
+    "GOLDEN_CONTENT_PARITY": "PASS",
+    "PUBLISHED_TOP_LEVEL_SCHEMA_MATCH": "PASS",
+    "FIGURE_NUMERICAL_PARITY": "PASS",
+    "VISUAL_DATA_LINEAGE": "PASS",
+    "VISUAL_SEMANTIC_PARITY": "PASS",
+    "STALE_VISUAL_ASSETS": 0,
+    "HTML_RENDER_DESKTOP": "PASS",
+    "HTML_RENDER_MOBILE": "PASS",
+    "HTML_CONSOLE_ERRORS": 0,
+    "HTML_HORIZONTAL_OVERFLOW": "PASS"
+  },
+  "publishing_qa": {
+    "checked_at": "2026-08-25 Asia/Seoul",
+    "desktop_viewport": "1440x1200",
+    "mobile_viewport": "390x844",
+    "horizontal_overflow": false,
+    "console_errors": 0,
+    "rendered_visuals": 6,
+    "source_ledger_entries": 24,
+    "pdf": "N/A — user waived PDF"
+  }
+}

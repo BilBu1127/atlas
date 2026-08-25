@@ -1,0 +1,1391 @@
+{
+  "meta": {
+    "company": "Vertiv Holdings Co",
+    "ticker": "VRT",
+    "mode": "Mode B — Hybrid",
+    "t0": "2026-08-25",
+    "currency": "USD",
+    "price_asof": "2026-08-24",
+    "price": 254.94,
+    "filing_asof": "2026-07-29",
+    "consensus_asof": "2026-08-24",
+    "pdf_status": "NOT_RUN_USER_WAIVED",
+    "hurdle_rate": 0.12,
+    "forecast_horizon_years": 4.35318,
+    "economic_diluted_shares_m": 392.0,
+    "evidence_version": "Clean DDOS Production OS v1.7",
+    "T0": "2026-08-25",
+    "version": "Clean DDOS Production OS v1.7"
+  },
+  "financials": {
+    "annual": [
+      {
+        "year": 2023,
+        "revenue_b": 6.863,
+        "gaap_operating_income_b": 0.918,
+        "net_income_b": 0.46,
+        "ocf_b": 0.901,
+        "capex_b": 0.128,
+        "standardized_fcf_b": 0.773
+      },
+      {
+        "year": 2024,
+        "revenue_b": 8.012,
+        "gaap_operating_income_b": 1.385,
+        "net_income_b": 0.496,
+        "ocf_b": 1.319,
+        "capex_b": 0.167,
+        "standardized_fcf_b": 1.152
+      },
+      {
+        "year": 2025,
+        "revenue_b": 10.23,
+        "gaap_operating_income_b": 1.899,
+        "net_income_b": 1.333,
+        "ocf_b": 2.114,
+        "capex_b": 0.22,
+        "standardized_fcf_b": 1.894
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": "Q3 2024",
+        "revenue_b": 2.074,
+        "gaap_operating_income_b": 0.3716,
+        "ocf_b": 0.3751,
+        "capex_b": 0.0364,
+        "standardized_fcf_b": 0.3387,
+        "service_and_spares_b": 0.4579
+      },
+      {
+        "quarter": "Q4 2024",
+        "revenue_b": 2.346,
+        "gaap_operating_income_b": 0.4572,
+        "ocf_b": 0.4252,
+        "capex_b": 0.0607,
+        "standardized_fcf_b": 0.3645,
+        "service_and_spares_b": 0.4715
+      },
+      {
+        "quarter": "Q1 2025",
+        "revenue_b": 2.036,
+        "gaap_operating_income_b": 0.2907,
+        "ocf_b": 0.3033,
+        "capex_b": 0.0365,
+        "standardized_fcf_b": 0.2668,
+        "service_and_spares_b": 0.4249
+      },
+      {
+        "quarter": "Q2 2025",
+        "revenue_b": 2.638,
+        "gaap_operating_income_b": 0.4424,
+        "ocf_b": 0.3229,
+        "capex_b": 0.045,
+        "standardized_fcf_b": 0.2779,
+        "service_and_spares_b": 0.5192
+      },
+      {
+        "quarter": "Q3 2025",
+        "revenue_b": 2.676,
+        "gaap_operating_income_b": 0.5167,
+        "ocf_b": 0.5087,
+        "capex_b": 0.0452,
+        "standardized_fcf_b": 0.4635,
+        "service_and_spares_b": 0.5082
+      },
+      {
+        "quarter": "Q4 2025",
+        "revenue_b": 2.88,
+        "gaap_operating_income_b": 0.5799,
+        "ocf_b": 0.9789,
+        "capex_b": 0.0933,
+        "standardized_fcf_b": 0.8856,
+        "service_and_spares_b": 0.5706
+      },
+      {
+        "quarter": "Q1 2026",
+        "revenue_b": 2.65,
+        "gaap_operating_income_b": 0.4401,
+        "ocf_b": 0.7668,
+        "capex_b": 0.1126,
+        "standardized_fcf_b": 0.6542,
+        "service_and_spares_b": 0.5583
+      },
+      {
+        "quarter": "Q2 2026",
+        "revenue_b": 3.274,
+        "gaap_operating_income_b": 0.6379,
+        "ocf_b": 1.1,
+        "capex_b": 0.1733,
+        "standardized_fcf_b": 0.9267,
+        "service_and_spares_b": 0.6679
+      }
+    ],
+    "q2_2026_balance_sheet_b": {
+      "cash": 2.8106,
+      "short_term_investments": 0.3,
+      "accounts_receivable": 3.7503,
+      "inventory": 2.5227,
+      "accounts_payable": 2.4731,
+      "current_deferred_revenue": 3.6337,
+      "long_term_debt_net": 2.9398
+    },
+    "dec_2025_comparables_b": {
+      "cash": 1.7284,
+      "short_term_investments": 0.0995,
+      "accounts_receivable": 3.109,
+      "inventory": 1.4565,
+      "accounts_payable": 1.7564,
+      "current_deferred_revenue": 1.8147,
+      "long_term_debt_net": 2.8921
+    },
+    "fy2026_guidance_midpoint": {
+      "revenue_b": 14.0,
+      "organic_growth_pct": 31.0,
+      "adjusted_operating_margin_pct": 23.8,
+      "adjusted_eps": 6.7,
+      "adjusted_fcf_b": 2.5
+    },
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue_b": 6.863,
+        "gaap_operating_income_b": 0.918,
+        "net_income_b": 0.46,
+        "ocf_b": 0.901,
+        "capex_b": 0.128,
+        "standardized_fcf_b": 0.773
+      },
+      {
+        "year": 2024,
+        "revenue_b": 8.012,
+        "gaap_operating_income_b": 1.385,
+        "net_income_b": 0.496,
+        "ocf_b": 1.319,
+        "capex_b": 0.167,
+        "standardized_fcf_b": 1.152
+      },
+      {
+        "year": 2025,
+        "revenue_b": 10.23,
+        "gaap_operating_income_b": 1.899,
+        "net_income_b": 1.333,
+        "ocf_b": 2.114,
+        "capex_b": 0.22,
+        "standardized_fcf_b": 1.894
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "Q3 2024",
+        "revenue_b": 2.074,
+        "gaap_operating_income_b": 0.3716,
+        "ocf_b": 0.3751,
+        "capex_b": 0.0364,
+        "standardized_fcf_b": 0.3387,
+        "service_and_spares_b": 0.4579
+      },
+      {
+        "quarter": "Q4 2024",
+        "revenue_b": 2.346,
+        "gaap_operating_income_b": 0.4572,
+        "ocf_b": 0.4252,
+        "capex_b": 0.0607,
+        "standardized_fcf_b": 0.3645,
+        "service_and_spares_b": 0.4715
+      },
+      {
+        "quarter": "Q1 2025",
+        "revenue_b": 2.036,
+        "gaap_operating_income_b": 0.2907,
+        "ocf_b": 0.3033,
+        "capex_b": 0.0365,
+        "standardized_fcf_b": 0.2668,
+        "service_and_spares_b": 0.4249
+      },
+      {
+        "quarter": "Q2 2025",
+        "revenue_b": 2.638,
+        "gaap_operating_income_b": 0.4424,
+        "ocf_b": 0.3229,
+        "capex_b": 0.045,
+        "standardized_fcf_b": 0.2779,
+        "service_and_spares_b": 0.5192
+      },
+      {
+        "quarter": "Q3 2025",
+        "revenue_b": 2.676,
+        "gaap_operating_income_b": 0.5167,
+        "ocf_b": 0.5087,
+        "capex_b": 0.0452,
+        "standardized_fcf_b": 0.4635,
+        "service_and_spares_b": 0.5082
+      },
+      {
+        "quarter": "Q4 2025",
+        "revenue_b": 2.88,
+        "gaap_operating_income_b": 0.5799,
+        "ocf_b": 0.9789,
+        "capex_b": 0.0933,
+        "standardized_fcf_b": 0.8856,
+        "service_and_spares_b": 0.5706
+      },
+      {
+        "quarter": "Q1 2026",
+        "revenue_b": 2.65,
+        "gaap_operating_income_b": 0.4401,
+        "ocf_b": 0.7668,
+        "capex_b": 0.1126,
+        "standardized_fcf_b": 0.6542,
+        "service_and_spares_b": 0.5583
+      },
+      {
+        "quarter": "Q2 2026",
+        "revenue_b": 3.274,
+        "gaap_operating_income_b": 0.6379,
+        "ocf_b": 1.1,
+        "capex_b": 0.1733,
+        "standardized_fcf_b": 0.9267,
+        "service_and_spares_b": 0.6679
+      }
+    ],
+    "ceilings": [
+      "Q2 2026 numeric quarter-end orders/backlog/book-to-bill not disclosed",
+      "Installed base / service attach / renewal rates not disclosed",
+      "Homogeneous critical-infrastructure profit-pool absolute size unavailable"
+    ]
+  },
+  "kpis": [
+    {
+      "name": "FY2025 backlog",
+      "history": [
+        15.0
+      ],
+      "current": 15.0,
+      "unit": "USD bn",
+      "thresholds": {
+        "green": "current numeric backlog/orders re-disclosed with strong conversion",
+        "yellow": "pipeline only / numeric Q2 ceiling",
+        "red": "numeric backlog/orders deterioration or cancellations"
+      }
+    },
+    {
+      "name": "Organic growth",
+      "history": [
+        26.0,
+        31.0
+      ],
+      "current": 31.0,
+      "unit": "pct",
+      "thresholds": {
+        "green": ">=30%",
+        "yellow": "20-30%",
+        "red": "<20% plus guide cut"
+      }
+    },
+    {
+      "name": "Adjusted operating margin",
+      "history": [
+        20.4,
+        23.8
+      ],
+      "current": 23.8,
+      "unit": "pct",
+      "thresholds": {
+        "green": ">=24% sustained",
+        "yellow": "22-24%",
+        "red": "<22% or guide cut"
+      }
+    },
+    {
+      "name": "Adjusted FCF",
+      "history": [
+        1.887,
+        2.5
+      ],
+      "current": 2.5,
+      "unit": "USD bn",
+      "thresholds": {
+        "green": ">=2.5 with working-capital normalization",
+        "yellow": "strong but deferred-revenue aided",
+        "red": "<2.1 or material WC reversal"
+      }
+    },
+    {
+      "name": "Inventory growth Dec25-Jun26",
+      "history": [
+        73.2
+      ],
+      "current": 73.2,
+      "unit": "pct",
+      "thresholds": {
+        "green": "shipment conversion with inventory growth slowing",
+        "yellow": "inventory and deferred revenue both elevated",
+        "red": "inventory rises while orders/deferred weaken"
+      }
+    },
+    {
+      "name": "Service organic growth H1 2026",
+      "history": [
+        11.7
+      ],
+      "current": 11.7,
+      "unit": "pct",
+      "thresholds": {
+        "green": ">=20%",
+        "yellow": "10-20%",
+        "red": "<10% or further deceleration"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.25,
+      "revenue_path": [
+        14.0,
+        16.0,
+        18.0,
+        20.0,
+        22.0
+      ],
+      "margin_path": [
+        23.8,
+        22.5,
+        22.0,
+        22.0,
+        22.5
+      ],
+      "fcf": [
+        2.5,
+        2.88,
+        3.17,
+        3.52,
+        3.96
+      ],
+      "diluted_shares": 392,
+      "per_share_value": 124.5839626702926,
+      "future_value_per_share": 204.04081632653066,
+      "irr_pct": -4.987324854755681,
+      "terminal_revenue_b": 22.0,
+      "terminal_margin_pct": 22.5,
+      "exit_pe": 20.0
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "revenue_path": [
+        14.0,
+        18.0,
+        21.5,
+        24.8,
+        28.0
+      ],
+      "margin_path": [
+        23.8,
+        25.0,
+        25.8,
+        26.4,
+        27.0
+      ],
+      "fcf": [
+        2.5,
+        3.6,
+        4.44,
+        5.24,
+        6.05
+      ],
+      "diluted_shares": 392,
+      "per_share_value": 227.31152700854946,
+      "future_value_per_share": 372.28571428571433,
+      "irr_pct": 9.087330554169526,
+      "terminal_revenue_b": 28.0,
+      "terminal_margin_pct": 27.0,
+      "exit_pe": 24.0
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.25,
+      "revenue_path": [
+        14.0,
+        18.5,
+        23.0,
+        27.5,
+        31.5
+      ],
+      "margin_path": [
+        23.8,
+        25.5,
+        26.5,
+        27.5,
+        28.5
+      ],
+      "fcf": [
+        2.5,
+        3.77,
+        4.88,
+        6.05,
+        7.18
+      ],
+      "diluted_shares": 392,
+      "per_share_value": 314.45051990246384,
+      "future_value_per_share": 515.0,
+      "irr_pct": 17.529948546160924,
+      "terminal_revenue_b": 31.5,
+      "terminal_margin_pct": 28.499999999999996,
+      "exit_pe": 28.0
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.1,
+      "revenue_path": [
+        14.0,
+        19.0,
+        24.5,
+        29.5,
+        35.0
+      ],
+      "margin_path": [
+        23.8,
+        26.0,
+        27.5,
+        29.0,
+        30.0
+      ],
+      "fcf": [
+        2.5,
+        3.95,
+        5.39,
+        6.84,
+        8.4
+      ],
+      "diluted_shares": 392,
+      "per_share_value": 393.7391530762057,
+      "future_value_per_share": 644.8571428571428,
+      "irr_pct": 23.760446444602135,
+      "terminal_revenue_b": 35.0,
+      "terminal_margin_pct": 30.0,
+      "exit_pe": 30.0
+    }
+  ],
+  "valuation": {
+    "current_price": 254.94,
+    "core": 140.306,
+    "execution": 94.005,
+    "ecosystem": 0.0,
+    "drag": -7.0,
+    "base_fair_value": 227.31152700854946,
+    "expected_value": 240.05714675422948,
+    "probability_weighted_future_value": 393.1602040816327,
+    "expected_irr_pct": 10.463053392420862,
+    "bull_execution_bear_ud": 0.45652292844668835,
+    "ud_1x_price": 219.51724128637824,
+    "ud_2x_price": 187.87281508101637,
+    "entry_bands": {
+      "buy_zone_max": 188.0,
+      "conditional_min": 188.0,
+      "conditional_max": 220.0,
+      "watch_min": 220.0,
+      "watch_max": 240.0,
+      "avoid_above": 240.0
+    },
+    "peer_forward_pe": {
+      "VRT": 32.62,
+      "ETN": 27.94,
+      "Schneider_Electric": 26.54
+    },
+    "historical_vrt_forward_pe": {
+      "2023": 23.29,
+      "2024": 34.24,
+      "2025": 32.39,
+      "2026_08_24": 32.62
+    },
+    "mode": "Mode B — Hybrid",
+    "expected_irr": 0.10463053392420862
+  },
+  "reverse_expectations": {
+    "required_future_value_per_share": 417.5350069089559,
+    "terminal_equity_value_per_share": 415.5350069089559,
+    "assumed_margin_pct": 27.0,
+    "conversion_pct": 80.0,
+    "shares_m": 392.0,
+    "required_by_exit_pe": [
+      {
+        "exit_pe": 24,
+        "required_eps": 17.313958621206496,
+        "required_revenue_b": 31.421628608856228
+      },
+      {
+        "exit_pe": 25,
+        "required_eps": 16.621400276358237,
+        "required_revenue_b": 30.164763464501984
+      },
+      {
+        "exit_pe": 27,
+        "required_eps": 15.39018544107244,
+        "required_revenue_b": 27.93033654120553
+      },
+      {
+        "exit_pe": 28,
+        "required_eps": 14.840535961034139,
+        "required_revenue_b": 26.932824521876768
+      },
+      {
+        "exit_pe": 30,
+        "required_eps": 13.851166896965196,
+        "required_revenue_b": 25.137302887084985
+      }
+    ],
+    "management_2030_revenue_framework_b": {
+      "20pct_cagr": 25.456,
+      "21pct_cagr": 26.534,
+      "22pct_cagr": 27.649
+    }
+  },
+  "consensus": {
+    "asof": "2026-08-24",
+    "analyst_count": 28,
+    "rating_summary": {
+      "strong_buy": 21,
+      "buy": 3,
+      "hold": 4,
+      "sell": 0
+    },
+    "avg_target": 338.15,
+    "median_target": 345.0,
+    "low_target": 236.0,
+    "high_target": 427.0,
+    "fy2026": {
+      "revenue_b": 14.01,
+      "eps": 6.72
+    },
+    "fy2027": {
+      "revenue_b": 18.14,
+      "eps": 9.1
+    },
+    "fy2028": "PRIMARY_SOURCE_CEILING_SAME_TIMESTAMP_DETAILED_PUBLIC_DISTRIBUTION_UNAVAILABLE",
+    "short_interest_2026_07_31_m": 12.335,
+    "short_float_pct": 3.2,
+    "fy1": {
+      "revenue_b": 14.01,
+      "eps": 6.72
+    },
+    "fy2": {
+      "revenue_b": 18.14,
+      "eps": 9.1
+    },
+    "revision_trend": "2026 guidance and public estimates moved upward through Q2; detailed same-timestamp FY3 distribution = PRIMARY_SOURCE_CEILING"
+  },
+  "stance": {
+    "label": "회피 / 기존 보유 시 축소 검토",
+    "rule": "Expected IRR < hurdle OR U/D < 1.0",
+    "hurdle_pct": 12.0,
+    "expected_irr_pct": 10.463053392420862,
+    "ud_ratio": 0.45652292844668835,
+    "mispricing_rationale": "NOT_IDENTIFIED_AT_CURRENT_PRICE",
+    "time_to_value_years": 4.35318,
+    "upgrade_conditions": [
+      "numeric order/backlog visibility restored",
+      "800VDC/liquid-cooling revenue contribution verified",
+      "service attach economics disclosed",
+      "27% margin path accelerated without price expansion"
+    ],
+    "zone": "AVOID_REDUCE",
+    "price_bands": {
+      "buy_zone_max": 188.0,
+      "conditional_min": 188.0,
+      "conditional_max": 220.0,
+      "watch_min": 220.0,
+      "watch_max": 240.0,
+      "avoid_above": 240.0
+    },
+    "horizon": "4.35 years to 2030-12-31"
+  },
+  "catalysts": [
+    {
+      "when": "2026-10/11 estimated",
+      "event": "Q3 2026 results",
+      "sensitivity": "Q3 guide, margin 24–25%, order/backlog disclosure, inventory/deferred balance",
+      "status": "DATE_NOT_YET_CONFIRMED"
+    },
+    {
+      "when": "H2 2026",
+      "event": "PowerDirect 5000 commercialization / pilots",
+      "sensitivity": "design engagement to revenue/order conversion",
+      "status": "COMPANY_WINDOW"
+    },
+    {
+      "when": "late 2026–2027",
+      "event": "Americas capacity ramp",
+      "sensitivity": "lead time, utilization, quality, fixed-cost absorption",
+      "status": "ONGOING"
+    },
+    {
+      "when": "early 2027 estimated",
+      "event": "FY2026 results / FY2027 guide",
+      "sensitivity": "FY27 guide vs ~$18.1B consensus, FCF quality",
+      "status": "DATE_NOT_YET_CONFIRMED"
+    },
+    {
+      "when": "2027",
+      "event": "Johor ramp / 800VDC broader deployment",
+      "sensitivity": "APAC growth and regional manufacturing economics",
+      "status": "COMPANY_WINDOW"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "h1_promise": "역사·소유·M&A·경제적 정의",
+      "h2_status": "COMPLETE",
+      "primary_evidence": "10-K/IR history, transaction records",
+      "material_unknown": "인수별 장기 ROIC는 아직 일부 짧음",
+      "canonical_chapter": "0,3,Appendix",
+      "h3_treatment": "MAIN + APPENDIX",
+      "status": "COMPLETE",
+      "h3_locator": "0,3,Appendix"
+    },
+    {
+      "rc_id": "RC-002",
+      "h1_promise": "산업 value chain/profit pool/lifecycle/cycle",
+      "h2_status": "PRIMARY_SOURCE_CEILING",
+      "primary_evidence": "hyperscaler CAPEX, NVIDIA, company/peer architecture",
+      "material_unknown": "동질적인 산업 profit-pool 절대 규모 부재",
+      "canonical_chapter": "1,Appendix",
+      "h3_treatment": "MAIN + EXPLICIT_CEILING",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1,Appendix"
+    },
+    {
+      "rc_id": "RC-003",
+      "h1_promise": "rack density/800VDC/liquid cooling 정량 + transmission",
+      "h2_status": "COMPLETE",
+      "primary_evidence": "NVIDIA 800VDC, Vertiv technical sources",
+      "material_unknown": "open ecosystem이며 독점 아님",
+      "canonical_chapter": "1,3",
+      "h3_treatment": "MAIN + APPENDIX",
+      "status": "COMPLETE",
+      "h3_locator": "1,3"
+    },
+    {
+      "rc_id": "RC-004",
+      "h1_promise": "power/thermal/rack/prefab/service architecture·고객경제성",
+      "h2_status": "COMPLETE",
+      "primary_evidence": "product/technical releases, capacity, M&A",
+      "material_unknown": "제품별 gross margin 미공개",
+      "canonical_chapter": "3",
+      "h3_treatment": "MAIN + APPENDIX",
+      "status": "COMPLETE",
+      "h3_locator": "3"
+    },
+    {
+      "rc_id": "RC-005",
+      "h1_promise": "고객/계약/pipeline/orders/backlog/adoption/concentration",
+      "h2_status": "PRIMARY_SOURCE_CEILING",
+      "primary_evidence": "10-K, FY25 backlog, Q4 orders, Q2 pipeline",
+      "material_unknown": "Q2 numeric orders/backlog/book-to-bill 및 고객집중도 부재",
+      "canonical_chapter": "1,3,4",
+      "h3_treatment": "MAIN + EXPLICIT_CEILING",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1,3,4"
+    },
+    {
+      "rc_id": "RC-006",
+      "h1_promise": "competition by customer job / moat",
+      "h2_status": "COMPLETE",
+      "primary_evidence": "NVIDIA partner list, Eaton/Schneider architecture",
+      "material_unknown": "표준화가 leakage를 높일 수 있음",
+      "canonical_chapter": "3",
+      "h3_treatment": "MAIN + APPENDIX",
+      "status": "COMPLETE",
+      "h3_locator": "3"
+    },
+    {
+      "rc_id": "RC-007",
+      "h1_promise": "capacity/supply chain/tariff/quality ledger",
+      "h2_status": "COMPLETE",
+      "primary_evidence": "capacity releases, 10-Q inventory, price-cost",
+      "material_unknown": "시설별 utilization/lead-time 세부 부재",
+      "canonical_chapter": "1,3,4",
+      "h3_treatment": "MAIN + APPENDIX",
+      "status": "COMPLETE",
+      "h3_locator": "1,3,4"
+    },
+    {
+      "rc_id": "RC-008",
+      "h1_promise": "installed base / service attach economics",
+      "h2_status": "PRIMARY_SOURCE_CEILING",
+      "primary_evidence": "5,000+ service engineers, service revenue",
+      "material_unknown": "installed base/attach/renewal rate 부재",
+      "canonical_chapter": "3,4",
+      "h3_treatment": "MAIN + EXPLICIT_CEILING",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3,4"
+    },
+    {
+      "rc_id": "RC-009",
+      "h1_promise": "Albertazzi track + 2022–26 Promise→Delivery",
+      "h2_status": "COMPLETE",
+      "primary_evidence": "filings, guidance history, proxy",
+      "material_unknown": "AI cycle tailwind confounds attribution",
+      "canonical_chapter": "2",
+      "h3_treatment": "MAIN + APPENDIX",
+      "status": "COMPLETE",
+      "h3_locator": "2"
+    },
+    {
+      "rc_id": "RC-010",
+      "h1_promise": "보상/ownership/board/insider/M&A allocation",
+      "h2_status": "COMPLETE",
+      "primary_evidence": "proxy, Form4, 10-Q acquisitions",
+      "material_unknown": "향후 대규모 자본배분 가격 규율 미확인",
+      "canonical_chapter": "2,4",
+      "h3_treatment": "MAIN + APPENDIX",
+      "status": "COMPLETE",
+      "h3_locator": "2,4"
+    },
+    {
+      "rc_id": "RC-011",
+      "h1_promise": "3Y + latest 8Q + earnings quality",
+      "h2_status": "COMPLETE",
+      "primary_evidence": "10-K/10-Q/releases",
+      "material_unknown": "고객선수금이 현금흐름을 보조",
+      "canonical_chapter": "4,Appendix",
+      "h3_treatment": "MAIN + APPENDIX",
+      "status": "COMPLETE",
+      "h3_locator": "4,Appendix"
+    },
+    {
+      "rc_id": "RC-012",
+      "h1_promise": "region/product-service + PVM/productivity/tariff margin bridge",
+      "h2_status": "COMPLETE",
+      "primary_evidence": "10-Q segment/product-service + margin commentary",
+      "material_unknown": "제품별 gross margin 미공개",
+      "canonical_chapter": "4",
+      "h3_treatment": "MAIN + APPENDIX",
+      "status": "COMPLETE",
+      "h3_locator": "4"
+    },
+    {
+      "rc_id": "RC-013",
+      "h1_promise": "FCF/WC/capex/liquidity/debt/SBC/shares/M&A funding",
+      "h2_status": "COMPLETE",
+      "primary_evidence": "Q2 10-Q, proxy, market data",
+      "material_unknown": "net-cash 정의 차이",
+      "canonical_chapter": "4,5",
+      "h3_treatment": "MAIN + APPENDIX",
+      "status": "COMPLETE",
+      "h3_locator": "4,5"
+    },
+    {
+      "rc_id": "RC-014",
+      "h1_promise": "KPI history + operating scenario bridge",
+      "h2_status": "COMPLETE",
+      "primary_evidence": "operating ledger + long-term framework",
+      "material_unknown": "Q2 order KPI ceiling",
+      "canonical_chapter": "4,5,6",
+      "h3_treatment": "MAIN + APPENDIX",
+      "status": "COMPLETE",
+      "h3_locator": "4,5,6"
+    },
+    {
+      "rc_id": "RC-015",
+      "h1_promise": "FY1–FY3 consensus/revisions/PT/short/ownership/Variant",
+      "h2_status": "PRIMARY_SOURCE_CEILING",
+      "primary_evidence": "public consensus, market data, proxy/Form4",
+      "material_unknown": "동일 timestamp FY3 상세 분포 부재",
+      "canonical_chapter": "5,6",
+      "h3_treatment": "MAIN + EXPLICIT_CEILING",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "5,6"
+    },
+    {
+      "rc_id": "RC-016",
+      "h1_promise": "Mode B valuation/history/peer/reverse/funding-dilution",
+      "h2_status": "COMPLETE",
+      "primary_evidence": "model + VRT/ETN/SU ratios",
+      "material_unknown": "terminal multiple uncertainty",
+      "canonical_chapter": "5",
+      "h3_treatment": "MAIN + APPENDIX",
+      "status": "COMPLETE",
+      "h3_locator": "5"
+    },
+    {
+      "rc_id": "RC-017",
+      "h1_promise": "risks/catalysts/tripwires/falsification",
+      "h2_status": "COMPLETE",
+      "primary_evidence": "reconciled evidence",
+      "material_unknown": "일부 future event exact date 미확정",
+      "canonical_chapter": "6",
+      "h3_treatment": "MAIN + APPENDIX",
+      "status": "COMPLETE",
+      "h3_locator": "6"
+    }
+  ],
+  "rc_summary": {
+    "total": 17,
+    "complete": 13,
+    "ceiling": 4,
+    "not_material": 0,
+    "contradicted": 0,
+    "unresolved": 0
+  },
+  "source_registry": [
+    {
+      "id": "S01",
+      "title": "Vertiv Q2 2026 earnings release, Jul. 29, 2026",
+      "url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Second-Quarter-2026-with-Diluted-EPS-Growth-of-53-Adjusted-Diluted-EPS-Growth-of-60-Raises-Full-Year-2026-Guidance-Across-All-Key-Metrics/default.aspx"
+    },
+    {
+      "id": "S02",
+      "title": "Vertiv Q2 2026 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026050609/vrt-20260630.htm"
+    },
+    {
+      "id": "S03",
+      "title": "Vertiv Q1 2026 earnings release, Apr. 22, 2026",
+      "url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-First-Quarter-with-Diluted-EPS-Growth-of-136-Adjusted-Diluted-EPS-Growth-of-83-Raises-Full-Year-Guidance/default.aspx"
+    },
+    {
+      "id": "S04",
+      "title": "Vertiv Q4/FY2025 results, Feb. 11, 2026",
+      "url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Fourth-Quarter-with-Organic-Orders-Growth-of-252-and-Diluted-EPS-Growth-of-200-Adjusted-Diluted-EPS-37/"
+    },
+    {
+      "id": "S05",
+      "title": "Vertiv 2026 Investor Conference, May 19–20, 2026",
+      "url": "https://investors.vertiv.com/events-presentations/2026-investor-conference/default.aspx"
+    },
+    {
+      "id": "S06",
+      "title": "Vertiv Americas capacity expansion, Mar. 24, 2026",
+      "url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Announces-Expansion-of-Manufacturing-Capacity-Spanning-Infrastructure-Solutions-Power-and-Rack-Systems-to-Meet-Rising-Demand/default.aspx"
+    },
+    {
+      "id": "S07",
+      "title": "BMarko acquisition, Apr. 13, 2026",
+      "url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Acquires-BMarko-Structures-to-Expand-Capacity-for-Manufactured-and-Converged-Infrastructure-Solutions/"
+    },
+    {
+      "id": "S08",
+      "title": "Strategic Thermal Labs acquisition, Apr. 27, 2026",
+      "url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Strengthens-Liquid-Cooling-System-Capability-with-Acquisition-of-Strategic-Thermal-Labs/"
+    },
+    {
+      "id": "S09",
+      "title": "ThermoKey acquisition close, Jun. 12, 2026",
+      "url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Completes-Acquisition-of-ThermoKey-Expanding-Heat-Rejection-Portfolio-for-AI-Data-Centers/default.aspx"
+    },
+    {
+      "id": "S10",
+      "title": "Johor Malaysia manufacturing facility, Jul. 1, 2026",
+      "url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Increases-Manufacturing-Capacity-with-New-Facility-in-Malaysia-to-Support-Growing-Demand-for-AI-and-Digital-Infrastructure-Across-Asia/default.aspx"
+    },
+    {
+      "id": "S11",
+      "title": "Vertiv 2025 Shareholder Letter",
+      "url": "https://investors.vertiv.com/financials/annual-reports/2026-Shareholder-Letter/"
+    },
+    {
+      "id": "S12",
+      "title": "Vertiv 2026 Proxy Statement",
+      "url": "https://www.sec.gov/Archives/edgar/data/1674101/000119312526174898/d18663ddef14a.htm"
+    },
+    {
+      "id": "S13",
+      "title": "Vertiv/NVIDIA 800VDC platform update",
+      "url": "https://investors.vertiv.com/news/news-details/2025/From-Vision-to-Readiness-Vertiv-Collaborates-with-NVIDIA-to-Advance-800-VDC-Platform-Designs-to-Power-the-Next-Generation-of-AI-Factories/"
+    },
+    {
+      "id": "S14",
+      "title": "Vertiv 800VDC practical architecture, Jul. 2026",
+      "url": "https://www.vertiv.com/tr-emea/insights/articles/blog-posts/from-rack-to-data-hall-the-practical-path-to-800-vdc/"
+    },
+    {
+      "id": "S15",
+      "title": "NVIDIA 800VDC technical ecosystem",
+      "url": "https://developer.nvidia.com/blog/?p=100571"
+    },
+    {
+      "id": "S16",
+      "title": "NVIDIA 800VDC update, Aug. 11, 2026",
+      "url": "https://blogs.nvidia.com/blog/800-vdc-power-architecture-ai-factory/"
+    },
+    {
+      "id": "S17",
+      "title": "Meta Q2 2026 results / FY2026 capex",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx"
+    },
+    {
+      "id": "S18",
+      "title": "Alphabet 2025 Q4 earnings call / FY2026 capex",
+      "url": "https://abc.xyz/investor/events/event-details/2026/2025-Q4-Earnings-Call-2026-Dr_C033hS6/default.aspx"
+    },
+    {
+      "id": "S19",
+      "title": "VRT market statistics, Aug. 24, 2026",
+      "url": "https://stockanalysis.com/stocks/vrt/statistics/"
+    },
+    {
+      "id": "S20",
+      "title": "VRT historical valuation ratios",
+      "url": "https://stockanalysis.com/stocks/vrt/financials/ratios/"
+    },
+    {
+      "id": "S21",
+      "title": "VRT public consensus snapshot",
+      "url": "https://stockanalysis.com/stocks/vrt/forecast/"
+    },
+    {
+      "id": "S22",
+      "title": "Eaton valuation ratios",
+      "url": "https://stockanalysis.com/stocks/etn/financials/ratios/"
+    },
+    {
+      "id": "S23",
+      "title": "Schneider Electric valuation ratios",
+      "url": "https://stockanalysis.com/quote/epa/SU/financials/ratios/"
+    },
+    {
+      "id": "S24",
+      "title": "VRT quarterly financials",
+      "url": "https://stockanalysis.com/stocks/vrt/financials/?p=quarterly"
+    }
+  ],
+  "visual_lineage": [
+    {
+      "visual_id": "VIS-001",
+      "title": "최근 8분기 매출과 서비스 매출",
+      "source_locator": "visual_source_blocks.VIS-001",
+      "fields": [
+        "quarter",
+        "revenue_b",
+        "service_and_spares_b"
+      ],
+      "source_hash": "780182a3c6e8d50f467e670386b316ba3b7762ab716d5c591206808c63ca52fa",
+      "rendered_asset_locator": "#vis-001",
+      "status": "PASS"
+    },
+    {
+      "visual_id": "VIS-002",
+      "title": "2026 가이던스 상향 경로",
+      "source_locator": "visual_source_blocks.VIS-002",
+      "fields": [
+        "revenue_b",
+        "adjusted_operating_margin_pct",
+        "adjusted_eps",
+        "adjusted_fcf_b"
+      ],
+      "source_hash": "9e88b759ef5185de7a2a5932b4919138fbea389eb7a1f93f9997338f006a0914",
+      "rendered_asset_locator": "#vis-002",
+      "status": "PASS"
+    },
+    {
+      "visual_id": "VIS-003",
+      "title": "Working capital: 2025년말 vs 2026년 6월",
+      "source_locator": "visual_source_blocks.VIS-003",
+      "fields": [
+        "inventory",
+        "current_deferred_revenue",
+        "accounts_receivable",
+        "accounts_payable"
+      ],
+      "source_hash": "97abbdd5d3d8ceaa1ac580c4c47b334775e0fde1aaf6f96aa1ebb6113998063a",
+      "rendered_asset_locator": "#vis-003",
+      "status": "PASS"
+    },
+    {
+      "visual_id": "VIS-004",
+      "title": "2030 시나리오 가치 vs 현재가",
+      "source_locator": "visual_source_blocks.VIS-004",
+      "fields": [
+        "probability",
+        "pv_per_share",
+        "future_value_per_share"
+      ],
+      "source_hash": "1cea179e9ddcb03dd03b3da281c92457e1017ae8916598d5a6509e6ea93b1f7e",
+      "rendered_asset_locator": "#vis-004",
+      "status": "PASS"
+    },
+    {
+      "visual_id": "VIS-005",
+      "title": "Reverse expectations: exit P/E별 요구 매출",
+      "source_locator": "visual_source_blocks.VIS-005",
+      "fields": [
+        "exit_pe",
+        "required_revenue_b"
+      ],
+      "source_hash": "4e422814bd058b00485557bfeec66b7beba5ac171846380b5a00fb7ac0e0ad1b",
+      "rendered_asset_locator": "#vis-005",
+      "status": "PASS"
+    },
+    {
+      "visual_id": "VIS-006",
+      "title": "현재 valuation과 peer 비교",
+      "source_locator": "visual_source_blocks.VIS-006",
+      "fields": [
+        "VRT",
+        "ETN",
+        "Schneider_Electric"
+      ],
+      "source_hash": "8584159bb0978a778c18cb66e3c6e8dbc8712314debcc1c8bc4788be4ea26b8c",
+      "rendered_asset_locator": "#vis-006",
+      "status": "PASS"
+    }
+  ],
+  "kpi_snapshot": {
+    "fy2025_backlog_b": 15.0,
+    "q4_2025_organic_orders_growth_pct": 252.0,
+    "field_service_engineers_min": 5000,
+    "h1_2026_service_and_spares_b": 1.2262,
+    "h1_2026_service_share_pct": 20.7,
+    "h1_2026_service_organic_growth_pct": 11.7,
+    "h1_2026_product_organic_growth_pct": 22.0,
+    "q2_2026_revenue_over_time_pct": 23.0,
+    "inventory_growth_dec25_to_jun26_pct": 73.2,
+    "current_deferred_revenue_growth_dec25_to_jun26_pct": 100.2,
+    "order_visibility_status": "PRIMARY_SOURCE_CEILING_Q2_NUMERIC_NOT_DISCLOSED"
+  },
+  "scenario_map": {
+    "Bear": {
+      "probability": 0.25,
+      "revenue_path": [
+        14.0,
+        16.0,
+        18.0,
+        20.0,
+        22.0
+      ],
+      "margin_path_pct": [
+        23.8,
+        22.5,
+        22.0,
+        22.0,
+        22.5
+      ],
+      "fcf_path_b": [
+        2.5,
+        2.88,
+        3.17,
+        3.52,
+        3.96
+      ],
+      "diluted_shares_m": [
+        392,
+        392,
+        392,
+        392,
+        392
+      ],
+      "terminal_revenue_b": 22.0,
+      "terminal_margin_pct": 22.5,
+      "terminal_eps_like": 10.102040816326532,
+      "exit_pe": 20.0,
+      "future_value_per_share": 204.04081632653066,
+      "pv_per_share": 124.5839626702926,
+      "irr_pct": -4.987324854755681
+    },
+    "Base": {
+      "probability": 0.4,
+      "revenue_path": [
+        14.0,
+        18.0,
+        21.5,
+        24.8,
+        28.0
+      ],
+      "margin_path_pct": [
+        23.8,
+        25.0,
+        25.8,
+        26.4,
+        27.0
+      ],
+      "fcf_path_b": [
+        2.5,
+        3.6,
+        4.44,
+        5.24,
+        6.05
+      ],
+      "diluted_shares_m": [
+        392,
+        392,
+        392,
+        392,
+        392
+      ],
+      "terminal_revenue_b": 28.0,
+      "terminal_margin_pct": 27.0,
+      "terminal_eps_like": 15.42857142857143,
+      "exit_pe": 24.0,
+      "future_value_per_share": 372.28571428571433,
+      "pv_per_share": 227.31152700854946,
+      "irr_pct": 9.087330554169526
+    },
+    "Bull Execution": {
+      "probability": 0.25,
+      "revenue_path": [
+        14.0,
+        18.5,
+        23.0,
+        27.5,
+        31.5
+      ],
+      "margin_path_pct": [
+        23.8,
+        25.5,
+        26.5,
+        27.5,
+        28.5
+      ],
+      "fcf_path_b": [
+        2.5,
+        3.77,
+        4.88,
+        6.05,
+        7.18
+      ],
+      "diluted_shares_m": [
+        392,
+        392,
+        392,
+        392,
+        392
+      ],
+      "terminal_revenue_b": 31.5,
+      "terminal_margin_pct": 28.499999999999996,
+      "terminal_eps_like": 18.32142857142857,
+      "exit_pe": 28.0,
+      "future_value_per_share": 515.0,
+      "pv_per_share": 314.45051990246384,
+      "irr_pct": 17.529948546160924
+    },
+    "Bull Ecosystem": {
+      "probability": 0.1,
+      "revenue_path": [
+        14.0,
+        19.0,
+        24.5,
+        29.5,
+        35.0
+      ],
+      "margin_path_pct": [
+        23.8,
+        26.0,
+        27.5,
+        29.0,
+        30.0
+      ],
+      "fcf_path_b": [
+        2.5,
+        3.95,
+        5.39,
+        6.84,
+        8.4
+      ],
+      "diluted_shares_m": [
+        392,
+        392,
+        392,
+        392,
+        392
+      ],
+      "terminal_revenue_b": 35.0,
+      "terminal_margin_pct": 30.0,
+      "terminal_eps_like": 21.428571428571427,
+      "exit_pe": 30.0,
+      "future_value_per_share": 644.8571428571428,
+      "pv_per_share": 393.7391530762057,
+      "irr_pct": 23.760446444602135
+    }
+  },
+  "visual_source_blocks": {
+    "VIS-001": {
+      "quarters": [
+        {
+          "quarter": "Q3 2024",
+          "revenue_b": 2.074,
+          "gaap_operating_income_b": 0.3716,
+          "ocf_b": 0.3751,
+          "capex_b": 0.0364,
+          "standardized_fcf_b": 0.3387,
+          "service_and_spares_b": 0.4579
+        },
+        {
+          "quarter": "Q4 2024",
+          "revenue_b": 2.346,
+          "gaap_operating_income_b": 0.4572,
+          "ocf_b": 0.4252,
+          "capex_b": 0.0607,
+          "standardized_fcf_b": 0.3645,
+          "service_and_spares_b": 0.4715
+        },
+        {
+          "quarter": "Q1 2025",
+          "revenue_b": 2.036,
+          "gaap_operating_income_b": 0.2907,
+          "ocf_b": 0.3033,
+          "capex_b": 0.0365,
+          "standardized_fcf_b": 0.2668,
+          "service_and_spares_b": 0.4249
+        },
+        {
+          "quarter": "Q2 2025",
+          "revenue_b": 2.638,
+          "gaap_operating_income_b": 0.4424,
+          "ocf_b": 0.3229,
+          "capex_b": 0.045,
+          "standardized_fcf_b": 0.2779,
+          "service_and_spares_b": 0.5192
+        },
+        {
+          "quarter": "Q3 2025",
+          "revenue_b": 2.676,
+          "gaap_operating_income_b": 0.5167,
+          "ocf_b": 0.5087,
+          "capex_b": 0.0452,
+          "standardized_fcf_b": 0.4635,
+          "service_and_spares_b": 0.5082
+        },
+        {
+          "quarter": "Q4 2025",
+          "revenue_b": 2.88,
+          "gaap_operating_income_b": 0.5799,
+          "ocf_b": 0.9789,
+          "capex_b": 0.0933,
+          "standardized_fcf_b": 0.8856,
+          "service_and_spares_b": 0.5706
+        },
+        {
+          "quarter": "Q1 2026",
+          "revenue_b": 2.65,
+          "gaap_operating_income_b": 0.4401,
+          "ocf_b": 0.7668,
+          "capex_b": 0.1126,
+          "standardized_fcf_b": 0.6542,
+          "service_and_spares_b": 0.5583
+        },
+        {
+          "quarter": "Q2 2026",
+          "revenue_b": 3.274,
+          "gaap_operating_income_b": 0.6379,
+          "ocf_b": 1.1,
+          "capex_b": 0.1733,
+          "standardized_fcf_b": 0.9267,
+          "service_and_spares_b": 0.6679
+        }
+      ]
+    },
+    "VIS-002": {
+      "guidance_ladder": [
+        {
+          "asof": "2026-02",
+          "revenue_mid_b": 13.5,
+          "margin_mid_pct": 22.5,
+          "eps_mid": 6.02,
+          "fcf_mid_b": 2.2
+        },
+        {
+          "asof": "2026-04",
+          "revenue_mid_b": 13.75,
+          "margin_mid_pct": 23.3,
+          "eps_mid": 6.35,
+          "fcf_mid_b": 2.2
+        },
+        {
+          "asof": "2026-07",
+          "revenue_mid_b": 14.0,
+          "margin_mid_pct": 23.8,
+          "eps_mid": 6.7,
+          "fcf_mid_b": 2.5
+        }
+      ]
+    },
+    "VIS-003": {
+      "dec_2025": {
+        "cash": 1.7284,
+        "short_term_investments": 0.0995,
+        "accounts_receivable": 3.109,
+        "inventory": 1.4565,
+        "accounts_payable": 1.7564,
+        "current_deferred_revenue": 1.8147,
+        "long_term_debt_net": 2.8921
+      },
+      "jun_2026": {
+        "cash": 2.8106,
+        "short_term_investments": 0.3,
+        "accounts_receivable": 3.7503,
+        "inventory": 2.5227,
+        "accounts_payable": 2.4731,
+        "current_deferred_revenue": 3.6337,
+        "long_term_debt_net": 2.9398
+      }
+    },
+    "VIS-004": {
+      "current_price": 254.94,
+      "scenarios": [
+        {
+          "name": "Bear",
+          "pv_per_share": 124.5839626702926,
+          "future_value_per_share": 204.04081632653066,
+          "probability": 0.25
+        },
+        {
+          "name": "Base",
+          "pv_per_share": 227.31152700854946,
+          "future_value_per_share": 372.28571428571433,
+          "probability": 0.4
+        },
+        {
+          "name": "Bull Execution",
+          "pv_per_share": 314.45051990246384,
+          "future_value_per_share": 515.0,
+          "probability": 0.25
+        },
+        {
+          "name": "Bull Ecosystem",
+          "pv_per_share": 393.7391530762057,
+          "future_value_per_share": 644.8571428571428,
+          "probability": 0.1
+        }
+      ]
+    },
+    "VIS-005": {
+      "reverse": [
+        {
+          "exit_pe": 24,
+          "required_eps": 17.313958621206496,
+          "required_revenue_b": 31.421628608856228
+        },
+        {
+          "exit_pe": 25,
+          "required_eps": 16.621400276358237,
+          "required_revenue_b": 30.164763464501984
+        },
+        {
+          "exit_pe": 27,
+          "required_eps": 15.39018544107244,
+          "required_revenue_b": 27.93033654120553
+        },
+        {
+          "exit_pe": 28,
+          "required_eps": 14.840535961034139,
+          "required_revenue_b": 26.932824521876768
+        },
+        {
+          "exit_pe": 30,
+          "required_eps": 13.851166896965196,
+          "required_revenue_b": 25.137302887084985
+        }
+      ]
+    },
+    "VIS-006": {
+      "peer_forward_pe": {
+        "VRT": 32.62,
+        "ETN": 27.94,
+        "Schneider_Electric": 26.54
+      }
+    }
+  }
+}

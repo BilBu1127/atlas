@@ -1,0 +1,1067 @@
+{
+  "schema_version": "DDOS_REPORT_DATA_PACK_v1.7",
+  "company": {
+    "name": "Cheniere Energy, Inc.",
+    "ticker": "LNG",
+    "exchange": "NYSE",
+    "mode": "COMPANY_DEEP_DIVE",
+    "valuation_router": "Mode B - Hybrid"
+  },
+  "as_of_registry": {
+    "report_as_of": "2026-08-25 KST",
+    "price_as_of": "2026-08-24",
+    "price": 280.79,
+    "filing_as_of": "2026-08-06 Form 10-Q / period ended 2026-06-30",
+    "proxy_as_of": "2026-04-07",
+    "consensus_as_of": "2026-08-23/24",
+    "latest_filing_check": "PASS"
+  },
+  "market": {
+    "price": 280.79,
+    "shares_outstanding_m": 206.534158,
+    "market_cap_b": 57.99272622482,
+    "consensus_rating": "Strong Buy",
+    "consensus_avg_target": 308.9,
+    "consensus_low": 255,
+    "consensus_high": 340
+  },
+  "contract_economics": {
+    "anticipated_production_contracted_pct": 90,
+    "weighted_average_remaining_life_years": 15,
+    "spa_variable_fee": "generally 115% of Henry Hub",
+    "long_term_spa_customers_10yr_plus_approx": 30,
+    "h1_2026_long_term_volume_tbtu": 1070,
+    "h1_2026_short_term_marketing_volume_tbtu": 233,
+    "h1_2026_third_party_volume_tbtu": 36
+  },
+  "guidance_2026": {
+    "production_mtpa": [
+      53,
+      54
+    ],
+    "adjusted_ebitda_b": [
+      7.9,
+      8.4
+    ],
+    "dcf_b": [
+      5.3,
+      5.8
+    ]
+  },
+  "run_rate_company_bridge": {
+    "capacity_current_and_under_construction_mtpa": [
+      60,
+      63
+    ],
+    "dcf_b": [
+      4.1,
+      4.7
+    ],
+    "shares_today_illustrative_m": 210,
+    "dcf_per_share_today_illustrative": 21,
+    "shares_after_buyback_illustrative_m": 175,
+    "dcf_per_share_after_buyback_illustrative": 25,
+    "capacity_initial_expansions_mtpa": [
+      71,
+      75
+    ],
+    "dcf_initial_expansions_b": [
+      4.9,
+      5.6
+    ],
+    "dcf_per_share_target": 30,
+    "company_assumptions": [
+      "CMI open capacity margin $2.50-$3.00/MMBtu",
+      "Henry Hub $3.00/MMBtu",
+      "refinancing rate 5%",
+      "~10%-15% effective cash tax as % DCF"
+    ]
+  },
+  "financial_3y": [
+    {
+      "year": 2023,
+      "revenue_b": 20.394,
+      "adjusted_ebitda_b": 8.771,
+      "cargoes": 637
+    },
+    {
+      "year": 2024,
+      "revenue_b": 15.703,
+      "adjusted_ebitda_b": 6.155,
+      "dcf_b": 3.7,
+      "cargoes": 646,
+      "exported_tbtu": 2327
+    },
+    {
+      "year": 2025,
+      "revenue_b": 19.976,
+      "adjusted_ebitda_b": 6.943,
+      "dcf_b": 5.29,
+      "cargoes": 670
+    }
+  ],
+  "financial_8q": [
+    {
+      "quarter": "3Q24",
+      "revenue_b": 3.763,
+      "adjusted_ebitda_b": 1.483,
+      "dcf_b": 0.8,
+      "cargoes": 158
+    },
+    {
+      "quarter": "4Q24",
+      "revenue_b": 4.436,
+      "adjusted_ebitda_b": 1.577,
+      "dcf_b": 1.1,
+      "cargoes": 167
+    },
+    {
+      "quarter": "1Q25",
+      "revenue_b": 5.444,
+      "adjusted_ebitda_b": 1.872,
+      "dcf_b": 1.3,
+      "cargoes": 168
+    },
+    {
+      "quarter": "2Q25",
+      "revenue_b": 4.641,
+      "adjusted_ebitda_b": 1.416,
+      "dcf_b": 0.9,
+      "cargoes": 154
+    },
+    {
+      "quarter": "3Q25",
+      "revenue_b": 4.441,
+      "adjusted_ebitda_b": 1.608,
+      "dcf_b": 1.6,
+      "cargoes": 163
+    },
+    {
+      "quarter": "4Q25",
+      "revenue_b": 5.45,
+      "adjusted_ebitda_b": 2.047,
+      "dcf_b": 1.49,
+      "cargoes": 185
+    },
+    {
+      "quarter": "1Q26",
+      "revenue_b": 5.868,
+      "adjusted_ebitda_b": 2.333,
+      "dcf_b": 1.67,
+      "cargoes": 187
+    },
+    {
+      "quarter": "2Q26",
+      "revenue_b": 5.732,
+      "adjusted_ebitda_b": 1.804,
+      "dcf_b": 1.17,
+      "cargoes": 184
+    }
+  ],
+  "balance_sheet_2026q2": {
+    "cash_b": 1.099,
+    "total_debt_principal_b": 24.257,
+    "parent_senior_notes_b": 4.75,
+    "cqp_lp_ownership_pct": 48.6,
+    "vie_liabilities_b": 16.9,
+    "1h26_ocf_b": 2.658,
+    "1h26_investing_outflow_b": 1.927,
+    "1h26_buyback_b": 1.1,
+    "remaining_buyback_authorization_b": 9.1,
+    "vie_assets_b": 17.2
+  },
+  "projects": [
+    {
+      "project": "CCL Stage 3",
+      "completion_pct": 98.4,
+      "capacity_mtpa": 10.0,
+      "status": "Train 1-6 operational; Train 7 commissioning",
+      "expected_completion": "2H26"
+    },
+    {
+      "project": "CCL Midscale 8&9",
+      "completion_pct": 48.3,
+      "capacity_mtpa": 5.0,
+      "status": "Under construction",
+      "expected_completion": "2H28"
+    },
+    {
+      "project": "SPL Expansion Phase 1",
+      "completion_pct": null,
+      "capacity_mtpa": 6.0,
+      "status": "EPC + LNTP; pre-FID",
+      "expected_completion": "FID path targeted early 2027"
+    },
+    {
+      "project": "CCL Expansion",
+      "completion_pct": null,
+      "capacity_mtpa": 24.0,
+      "status": "Development; pre-FID",
+      "expected_completion": "Regulatory/commercial gates pending"
+    }
+  ],
+  "capital_allocation": {
+    "2025_buyback_b": 2.7,
+    "2025_debt_repaid_b": 0.652,
+    "2025_growth_capex_b": 2.6,
+    "2025_dividends_b": 0.451,
+    "1h26_buyback_b": 1.1,
+    "1h26_debt_repaid_b": 0.253,
+    "1h26_growth_capital_b": 2.1,
+    "1h26_dividends_b": 0.233
+  },
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.25,
+      "dcf_b": 4.4,
+      "diluted_shares_m": 190,
+      "terminal_multiple": 9.0,
+      "cumulative_dividends": 6.0,
+      "dcf_per_share": 23.157894736842106,
+      "terminal_price": 208.42105263157896,
+      "current_value": 146.63559093208252,
+      "irr_from_current": -0.07727600928347655
+    },
+    {
+      "name": "Base",
+      "probability": 0.45,
+      "dcf_b": 5.4,
+      "diluted_shares_m": 180,
+      "terminal_multiple": 11.0,
+      "cumulative_dividends": 8.0,
+      "dcf_per_share": 30.0,
+      "terminal_price": 330.0,
+      "current_value": 231.147217713754,
+      "irr_from_current": 0.0568632779665883
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.25,
+      "dcf_b": 6.1,
+      "diluted_shares_m": 175,
+      "terminal_multiple": 12.0,
+      "cumulative_dividends": 9.0,
+      "dcf_per_share": 34.857142857142854,
+      "terminal_price": 418.2857142857142,
+      "current_value": 292.206816644902,
+      "irr_from_current": 0.13339209116531547
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.05,
+      "dcf_b": 6.7,
+      "diluted_shares_m": 170,
+      "terminal_multiple": 12.5,
+      "cumulative_dividends": 10.0,
+      "dcf_per_share": 39.411764705882355,
+      "terminal_price": 492.64705882352945,
+      "current_value": 343.7439915356819,
+      "irr_from_current": 0.18965073630298557
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B Hybrid with parent DCF/share scenario engine",
+    "discount_rate": 0.12,
+    "horizon_years": 3.353,
+    "current_price": 280.79,
+    "probability_weighted_current_value": 230.91404944221952,
+    "probability_weighted_terminal_total_value": 337.6590446704998,
+    "expected_irr": 0.056545210085258146,
+    "hurdle_rate": 0.12,
+    "bull_execution_bear_ud": 0.08510206056009732,
+    "ud_2x_trigger_price": 195.15933283635567,
+    "base_current_fair_value": 231.147217713754
+  },
+  "reverse_expectations": {
+    "target_total_value_for_12pct_return": 410.59122813033423,
+    "approx_terminal_stock_price_after_dividends": 402.09122813033423,
+    "required_dcf_per_share_at_11x": 36.55374801184857,
+    "required_parent_dcf_b_at_175m_11x": 6.3969059020735,
+    "required_dcf_per_share_at_12x": 33.50760234419452,
+    "required_parent_dcf_b_at_175m_12x": 5.863830410234041
+  },
+  "stance": {
+    "zone": "회피 / 기존 보유 시 축소 검토",
+    "price_bands": {
+      "avoid_above": 270,
+      "watch": [
+        235,
+        270
+      ],
+      "recheck": [
+        215,
+        235
+      ],
+      "interest": [
+        195,
+        215
+      ],
+      "active_interest": [
+        185,
+        195
+      ]
+    },
+    "horizon": "2029-12-31 / 2030 run-rate",
+    "falsification": "Raise base if normalized DCF >$5.6B structurally, initial SPL/CCL phases de-risk faster, and share count path ~175M is funded without credit deterioration."
+  },
+  "kpi_tripwires": [
+    {
+      "kpi": "2026 production",
+      "green": "53-54 mtpa",
+      "yellow": "52-53",
+      "red": "<52"
+    },
+    {
+      "kpi": "Stage 3 Train 7",
+      "green": "Substantial completion in fall 2026",
+      "yellow": "4Q26 delay",
+      "red": "moves into 2027"
+    },
+    {
+      "kpi": "8&9 completion",
+      "green": "2H28 on track",
+      "yellow": "cost/schedule warning",
+      "red": ">2Q material delay"
+    },
+    {
+      "kpi": "normalized DCF",
+      "green": ">= $4.4B at 60-63mtpa",
+      "yellow": "$4.0-4.4B",
+      "red": "< $4.0B"
+    },
+    {
+      "kpi": "share count path",
+      "green": "175-185M by 2030",
+      "yellow": "185-195M",
+      "red": ">195M with slower buyback"
+    }
+  ],
+  "catalysts": [
+    {
+      "when": "Fall 2026",
+      "event": "Stage 3 Train 7 substantial completion",
+      "sensitivity": "Near-term production de-risking"
+    },
+    {
+      "when": "3Q26 results",
+      "event": "Stage 3 volume / DCF / guidance",
+      "sensitivity": "Separates run-rate from temporary margin"
+    },
+    {
+      "when": "4Q26/FY26",
+      "event": "2027 production and DCF framing",
+      "sensitivity": "Tests normalized cash power"
+    },
+    {
+      "when": "2H26-2027",
+      "event": "SPL Expansion FERC/DOE/commercial milestones",
+      "sensitivity": "Changes Phase 1 FID probability"
+    },
+    {
+      "when": "2027",
+      "event": "CCL Expansion regulatory progress",
+      "sensitivity": "Changes optionality value"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2.5/4.5"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1.2/3.2"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2.1-2.3"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2.2-2.4"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2.5/4.5"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.3.3/5.1"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.3.4"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.3.2/4.3"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1.3/3.4"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.1.5/3.6"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.5"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.3/6.4"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4.1-4.3"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4.5"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2.4/4.6"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.3.1/4.2/6.3"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1.3-1.4/6.2"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5.7-5.8"
+    },
+    {
+      "rc_id": "RC-020",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5"
+    },
+    {
+      "rc_id": "RC-021",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.6.3-6.5"
+    }
+  ],
+  "rc_counts": {
+    "COMPLETE": 16,
+    "PRIMARY_SOURCE_CEILING": 5,
+    "NOT_MATERIAL": 0,
+    "CONTRADICTED": 0,
+    "UNRESOLVED": 0
+  },
+  "sources": [
+    {
+      "source_id": "S01",
+      "title": "Cheniere Energy 2025 Form 10-K",
+      "url": "https://lngir.cheniere.com/sec-filings/all-sec-filings/content/0000003570-26-000005/lng-20251231.htm",
+      "tier": "Tier 1",
+      "as_of": "2025-12-31"
+    },
+    {
+      "source_id": "S02",
+      "title": "Cheniere Energy Q2 2026 Form 10-Q",
+      "url": "https://lngir.cheniere.com/sec-filings/all-sec-filings/content/0000003570-26-000028/lng-20260630.htm",
+      "tier": "Tier 1",
+      "as_of": "2026-06-30"
+    },
+    {
+      "source_id": "S03",
+      "title": "Cheniere Q2 2026 earnings release",
+      "url": "https://lngir.cheniere.com/news-events/press-releases/detail/343/cheniere-reports-second-quarter-2026-results-and-raises",
+      "tier": "Tier 2",
+      "as_of": "2026-08-06"
+    },
+    {
+      "source_id": "S04",
+      "title": "Cheniere Q1 2026 earnings release",
+      "url": "https://lngir.cheniere.com/news-events/press-releases/detail/339/cheniere-reports-first-quarter-2026-results-and-raises-full",
+      "tier": "Tier 2",
+      "as_of": "2026-05-07"
+    },
+    {
+      "source_id": "S05",
+      "title": "Cheniere FY2025 earnings release",
+      "url": "https://lngir.cheniere.com/news-events/press-releases/detail/333/cheniere-reports-fourth-quarter-and-full-year-2025-results",
+      "tier": "Tier 2",
+      "as_of": "2026-02-26"
+    },
+    {
+      "source_id": "S06",
+      "title": "Cheniere FY2024 earnings release",
+      "url": "https://lngir.cheniere.com/news-events/press-releases/detail/314/cheniere-reports-fourth-quarter-and-full-year-2024-results",
+      "tier": "Tier 2",
+      "as_of": "2025-02-20"
+    },
+    {
+      "source_id": "S07",
+      "title": "Cheniere Q3 2025 earnings release",
+      "url": "https://lngir.cheniere.com/news-events/press-releases/detail/328/cheniere-reports-third-quarter-2025-results-reconfirms",
+      "tier": "Tier 2",
+      "as_of": "2025-10-30"
+    },
+    {
+      "source_id": "S08",
+      "title": "Cheniere Q1 2025 earnings release",
+      "url": "https://lngir.cheniere.com/news-events/press-releases/detail/318/cheniere-reports-first-quarter-2025-results-and-reconfirms",
+      "tier": "Tier 2",
+      "as_of": "2025-05-08"
+    },
+    {
+      "source_id": "S09",
+      "title": "Cheniere Q3 2024 earnings release",
+      "url": "https://lngir.cheniere.com/news-events/press-releases/detail/308/cheniere-reports-third-quarter-2024-results-and-raises-full",
+      "tier": "Tier 2",
+      "as_of": "2024-10-31"
+    },
+    {
+      "source_id": "S10",
+      "title": "Cheniere 2026 DEF 14A",
+      "url": "https://lngir.cheniere.com/sec-filings/all-sec-filings/content/0001193125-26-144572/d93921ddef14a.htm",
+      "tier": "Tier 1",
+      "as_of": "2026-04-07"
+    },
+    {
+      "source_id": "S11",
+      "title": "Cheniere FY2025 earnings presentation - run-rate DCF bridge",
+      "url": "https://lngir.cheniere.com/_assets/_dec8a5d8652acde3a2c539de7f6cd61c/cheniere/db/804/7553/presentation/02%2B26%2B2026%2B4Q%2B%26%2BFY%2B2025%2BEarnings%2BPresentation%2BvF.pdf",
+      "tier": "Tier 2",
+      "as_of": "2026-02-26"
+    },
+    {
+      "source_id": "S12",
+      "title": "EIA - U.S. natural gas exports to grow nearly 30% by 2027",
+      "url": "https://www.eia.gov/todayinEnergy/detail.php?id=67484",
+      "tier": "Tier 1",
+      "as_of": "2026-04-16"
+    },
+    {
+      "source_id": "S13",
+      "title": "EIA - U.S. LNG exports declined by more than half in 2020",
+      "url": "https://www.eia.gov/TODAYINENERGY/detail.php?id=44196",
+      "tier": "Tier 1",
+      "as_of": "2020-06-23"
+    },
+    {
+      "source_id": "S14",
+      "title": "FERC - Sabine Pass Stage 5 Expansion Draft EIS",
+      "url": "https://www.ferc.gov/news-events/news/ferc-staff-issues-draft-environmental-impact-statement-sabine-pass-liquefaction",
+      "tier": "Tier 1",
+      "as_of": "2026-04-03"
+    },
+    {
+      "source_id": "S15",
+      "title": "U.S. DOE FECM LNG export regulation records",
+      "url": "https://www.energy.gov/fecm/regulation",
+      "tier": "Tier 1",
+      "as_of": "2026-08-24"
+    },
+    {
+      "source_id": "S16",
+      "title": "NextDecade Rio Grande LNG project materials",
+      "url": "https://www.next-decade.com/",
+      "tier": "Tier 2",
+      "as_of": "2026-08-24"
+    },
+    {
+      "source_id": "S17",
+      "title": "LNG share-price history - Aug. 24, 2026 close",
+      "url": "https://tallacoptions.com/Stocks/LNG",
+      "tier": "Tier 3",
+      "as_of": "2026-08-24"
+    },
+    {
+      "source_id": "S18",
+      "title": "S&P Global-based analyst consensus snapshot",
+      "url": "https://stockanalysis.com/stocks/lng/forecast/",
+      "tier": "Tier 3",
+      "as_of": "2026-08-24"
+    },
+    {
+      "source_id": "S19",
+      "title": "S&P Global-based historical valuation ratios",
+      "url": "https://stockanalysis.com/stocks/lng/financials/ratios/",
+      "tier": "Tier 3",
+      "as_of": "2026-08-24"
+    },
+    {
+      "source_id": "S20",
+      "title": "Cheniere SEC filings index - latest filing check",
+      "url": "https://lngir.cheniere.com/sec-filings/all-sec-filings",
+      "tier": "Tier 1",
+      "as_of": "2026-08-24"
+    }
+  ],
+  "qa": {
+    "industry_blocks_total": 5,
+    "industry_blocks_landed": 5,
+    "korean_readability": "PASS",
+    "rc_h3_coverage_rate": 1.0,
+    "scenario_probability_audit": "PASS",
+    "common_time_value_audit": "PASS",
+    "stance_consistency_audit": "PASS",
+    "latest_filing_check": "PASS",
+    "visual_data_lineage": "PASS",
+    "data_pack_source_registry_completeness": "PASS"
+  },
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "3-year Adjusted EBITDA and revenue",
+      "authoritative_source_block": "financial_3y",
+      "source_values": [
+        {
+          "year": 2023,
+          "revenue_b": 20.394,
+          "adjusted_ebitda_b": 8.771,
+          "cargoes": 637
+        },
+        {
+          "year": 2024,
+          "revenue_b": 15.703,
+          "adjusted_ebitda_b": 6.155,
+          "dcf_b": 3.7,
+          "cargoes": 646,
+          "exported_tbtu": 2327
+        },
+        {
+          "year": 2025,
+          "revenue_b": 19.976,
+          "adjusted_ebitda_b": 6.943,
+          "dcf_b": 5.29,
+          "cargoes": 670
+        }
+      ],
+      "source_version_or_hash": "e71c4769bb6b3a957bda9b3e1eb299bb8116e89c4eb527943b5fb9d51bd16275",
+      "display_values": [
+        {
+          "year": 2023,
+          "revenue_b": 20.394,
+          "adjusted_ebitda_b": 8.771,
+          "cargoes": 637
+        },
+        {
+          "year": 2024,
+          "revenue_b": 15.703,
+          "adjusted_ebitda_b": 6.155,
+          "dcf_b": 3.7,
+          "cargoes": 646,
+          "exported_tbtu": 2327
+        },
+        {
+          "year": 2025,
+          "revenue_b": 19.976,
+          "adjusted_ebitda_b": 6.943,
+          "dcf_b": 5.29,
+          "cargoes": 670
+        }
+      ],
+      "narrative_locator": "final HTML/PDF",
+      "table_locator": "final HTML/PDF",
+      "caption_locator": "final HTML/PDF",
+      "rendered_asset_locator": "inline-svg:VIS-001"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "Latest 8Q Adjusted EBITDA and cargoes",
+      "authoritative_source_block": "financial_8q",
+      "source_values": [
+        {
+          "quarter": "3Q24",
+          "revenue_b": 3.763,
+          "adjusted_ebitda_b": 1.483,
+          "dcf_b": 0.8,
+          "cargoes": 158
+        },
+        {
+          "quarter": "4Q24",
+          "revenue_b": 4.436,
+          "adjusted_ebitda_b": 1.577,
+          "dcf_b": 1.1,
+          "cargoes": 167
+        },
+        {
+          "quarter": "1Q25",
+          "revenue_b": 5.444,
+          "adjusted_ebitda_b": 1.872,
+          "dcf_b": 1.3,
+          "cargoes": 168
+        },
+        {
+          "quarter": "2Q25",
+          "revenue_b": 4.641,
+          "adjusted_ebitda_b": 1.416,
+          "dcf_b": 0.9,
+          "cargoes": 154
+        },
+        {
+          "quarter": "3Q25",
+          "revenue_b": 4.441,
+          "adjusted_ebitda_b": 1.608,
+          "dcf_b": 1.6,
+          "cargoes": 163
+        },
+        {
+          "quarter": "4Q25",
+          "revenue_b": 5.45,
+          "adjusted_ebitda_b": 2.047,
+          "dcf_b": 1.49,
+          "cargoes": 185
+        },
+        {
+          "quarter": "1Q26",
+          "revenue_b": 5.868,
+          "adjusted_ebitda_b": 2.333,
+          "dcf_b": 1.67,
+          "cargoes": 187
+        },
+        {
+          "quarter": "2Q26",
+          "revenue_b": 5.732,
+          "adjusted_ebitda_b": 1.804,
+          "dcf_b": 1.17,
+          "cargoes": 184
+        }
+      ],
+      "source_version_or_hash": "83bf143914b18cb8893cd79a2c1b6846ff6950283ff032dbba7533aff66314a7",
+      "display_values": [
+        {
+          "quarter": "3Q24",
+          "revenue_b": 3.763,
+          "adjusted_ebitda_b": 1.483,
+          "dcf_b": 0.8,
+          "cargoes": 158
+        },
+        {
+          "quarter": "4Q24",
+          "revenue_b": 4.436,
+          "adjusted_ebitda_b": 1.577,
+          "dcf_b": 1.1,
+          "cargoes": 167
+        },
+        {
+          "quarter": "1Q25",
+          "revenue_b": 5.444,
+          "adjusted_ebitda_b": 1.872,
+          "dcf_b": 1.3,
+          "cargoes": 168
+        },
+        {
+          "quarter": "2Q25",
+          "revenue_b": 4.641,
+          "adjusted_ebitda_b": 1.416,
+          "dcf_b": 0.9,
+          "cargoes": 154
+        },
+        {
+          "quarter": "3Q25",
+          "revenue_b": 4.441,
+          "adjusted_ebitda_b": 1.608,
+          "dcf_b": 1.6,
+          "cargoes": 163
+        },
+        {
+          "quarter": "4Q25",
+          "revenue_b": 5.45,
+          "adjusted_ebitda_b": 2.047,
+          "dcf_b": 1.49,
+          "cargoes": 185
+        },
+        {
+          "quarter": "1Q26",
+          "revenue_b": 5.868,
+          "adjusted_ebitda_b": 2.333,
+          "dcf_b": 1.67,
+          "cargoes": 187
+        },
+        {
+          "quarter": "2Q26",
+          "revenue_b": 5.732,
+          "adjusted_ebitda_b": 1.804,
+          "dcf_b": 1.17,
+          "cargoes": 184
+        }
+      ],
+      "narrative_locator": "final HTML/PDF",
+      "table_locator": "final HTML/PDF",
+      "caption_locator": "final HTML/PDF",
+      "rendered_asset_locator": "inline-svg:VIS-002"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "Project completion and capacity ladder",
+      "authoritative_source_block": "projects",
+      "source_values": [
+        {
+          "project": "CCL Stage 3",
+          "completion_pct": 98.4,
+          "capacity_mtpa": 10.0,
+          "status": "Train 1-6 operational; Train 7 commissioning",
+          "expected_completion": "2H26"
+        },
+        {
+          "project": "CCL Midscale 8&9",
+          "completion_pct": 48.3,
+          "capacity_mtpa": 5.0,
+          "status": "Under construction",
+          "expected_completion": "2H28"
+        },
+        {
+          "project": "SPL Expansion Phase 1",
+          "completion_pct": null,
+          "capacity_mtpa": 6.0,
+          "status": "EPC + LNTP; pre-FID",
+          "expected_completion": "FID path targeted early 2027"
+        },
+        {
+          "project": "CCL Expansion",
+          "completion_pct": null,
+          "capacity_mtpa": 24.0,
+          "status": "Development; pre-FID",
+          "expected_completion": "Regulatory/commercial gates pending"
+        }
+      ],
+      "source_version_or_hash": "cad83dcb75d7c23d443247991e500a1007525a5bd51e4fec7f554b78331b0f14",
+      "display_values": [
+        {
+          "project": "CCL Stage 3",
+          "completion_pct": 98.4,
+          "capacity_mtpa": 10.0,
+          "status": "Train 1-6 operational; Train 7 commissioning",
+          "expected_completion": "2H26"
+        },
+        {
+          "project": "CCL Midscale 8&9",
+          "completion_pct": 48.3,
+          "capacity_mtpa": 5.0,
+          "status": "Under construction",
+          "expected_completion": "2H28"
+        },
+        {
+          "project": "SPL Expansion Phase 1",
+          "completion_pct": null,
+          "capacity_mtpa": 6.0,
+          "status": "EPC + LNTP; pre-FID",
+          "expected_completion": "FID path targeted early 2027"
+        },
+        {
+          "project": "CCL Expansion",
+          "completion_pct": null,
+          "capacity_mtpa": 24.0,
+          "status": "Development; pre-FID",
+          "expected_completion": "Regulatory/commercial gates pending"
+        }
+      ],
+      "narrative_locator": "final HTML/PDF",
+      "table_locator": "final HTML/PDF",
+      "caption_locator": "final HTML/PDF",
+      "rendered_asset_locator": "inline-svg:VIS-003"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "Scenario current value vs current price",
+      "authoritative_source_block": "scenarios",
+      "source_values": [
+        {
+          "name": "Bear",
+          "probability": 0.25,
+          "dcf_b": 4.4,
+          "diluted_shares_m": 190,
+          "terminal_multiple": 9.0,
+          "cumulative_dividends": 6.0,
+          "dcf_per_share": 23.157894736842106,
+          "terminal_price": 208.42105263157896,
+          "current_value": 146.63559093208252,
+          "irr_from_current": -0.07727600928347655
+        },
+        {
+          "name": "Base",
+          "probability": 0.45,
+          "dcf_b": 5.4,
+          "diluted_shares_m": 180,
+          "terminal_multiple": 11.0,
+          "cumulative_dividends": 8.0,
+          "dcf_per_share": 30.0,
+          "terminal_price": 330.0,
+          "current_value": 231.147217713754,
+          "irr_from_current": 0.0568632779665883
+        },
+        {
+          "name": "Bull Execution",
+          "probability": 0.25,
+          "dcf_b": 6.1,
+          "diluted_shares_m": 175,
+          "terminal_multiple": 12.0,
+          "cumulative_dividends": 9.0,
+          "dcf_per_share": 34.857142857142854,
+          "terminal_price": 418.2857142857142,
+          "current_value": 292.206816644902,
+          "irr_from_current": 0.13339209116531547
+        },
+        {
+          "name": "Bull Ecosystem",
+          "probability": 0.05,
+          "dcf_b": 6.7,
+          "diluted_shares_m": 170,
+          "terminal_multiple": 12.5,
+          "cumulative_dividends": 10.0,
+          "dcf_per_share": 39.411764705882355,
+          "terminal_price": 492.64705882352945,
+          "current_value": 343.7439915356819,
+          "irr_from_current": 0.18965073630298557
+        }
+      ],
+      "source_version_or_hash": "b69d64e19669fd798319d3549ff629d16191de0e451b6de31144a36e02862827",
+      "display_values": [
+        {
+          "name": "Bear",
+          "probability": 0.25,
+          "dcf_b": 4.4,
+          "diluted_shares_m": 190,
+          "terminal_multiple": 9.0,
+          "cumulative_dividends": 6.0,
+          "dcf_per_share": 23.157894736842106,
+          "terminal_price": 208.42105263157896,
+          "current_value": 146.63559093208252,
+          "irr_from_current": -0.07727600928347655
+        },
+        {
+          "name": "Base",
+          "probability": 0.45,
+          "dcf_b": 5.4,
+          "diluted_shares_m": 180,
+          "terminal_multiple": 11.0,
+          "cumulative_dividends": 8.0,
+          "dcf_per_share": 30.0,
+          "terminal_price": 330.0,
+          "current_value": 231.147217713754,
+          "irr_from_current": 0.0568632779665883
+        },
+        {
+          "name": "Bull Execution",
+          "probability": 0.25,
+          "dcf_b": 6.1,
+          "diluted_shares_m": 175,
+          "terminal_multiple": 12.0,
+          "cumulative_dividends": 9.0,
+          "dcf_per_share": 34.857142857142854,
+          "terminal_price": 418.2857142857142,
+          "current_value": 292.206816644902,
+          "irr_from_current": 0.13339209116531547
+        },
+        {
+          "name": "Bull Ecosystem",
+          "probability": 0.05,
+          "dcf_b": 6.7,
+          "diluted_shares_m": 170,
+          "terminal_multiple": 12.5,
+          "cumulative_dividends": 10.0,
+          "dcf_per_share": 39.411764705882355,
+          "terminal_price": 492.64705882352945,
+          "current_value": 343.7439915356819,
+          "irr_from_current": 0.18965073630298557
+        }
+      ],
+      "narrative_locator": "final HTML/PDF",
+      "table_locator": "final HTML/PDF",
+      "caption_locator": "final HTML/PDF",
+      "rendered_asset_locator": "inline-svg:VIS-004"
+    },
+    {
+      "vis_id": "VIS-005",
+      "figure_title": "Company run-rate DCF/share bridge",
+      "authoritative_source_block": "run_rate_company_bridge",
+      "source_values": {
+        "capacity_current_and_under_construction_mtpa": [
+          60,
+          63
+        ],
+        "dcf_b": [
+          4.1,
+          4.7
+        ],
+        "shares_today_illustrative_m": 210,
+        "dcf_per_share_today_illustrative": 21,
+        "shares_after_buyback_illustrative_m": 175,
+        "dcf_per_share_after_buyback_illustrative": 25,
+        "capacity_initial_expansions_mtpa": [
+          71,
+          75
+        ],
+        "dcf_initial_expansions_b": [
+          4.9,
+          5.6
+        ],
+        "dcf_per_share_target": 30,
+        "company_assumptions": [
+          "CMI open capacity margin $2.50-$3.00/MMBtu",
+          "Henry Hub $3.00/MMBtu",
+          "refinancing rate 5%",
+          "~10%-15% effective cash tax as % DCF"
+        ]
+      },
+      "source_version_or_hash": "a5a636704d3df9db6e3b3af68e00fe0f65502c8a7f96ac60ae3d3ce2fcd9e1c3",
+      "display_values": {
+        "capacity_current_and_under_construction_mtpa": [
+          60,
+          63
+        ],
+        "dcf_b": [
+          4.1,
+          4.7
+        ],
+        "shares_today_illustrative_m": 210,
+        "dcf_per_share_today_illustrative": 21,
+        "shares_after_buyback_illustrative_m": 175,
+        "dcf_per_share_after_buyback_illustrative": 25,
+        "capacity_initial_expansions_mtpa": [
+          71,
+          75
+        ],
+        "dcf_initial_expansions_b": [
+          4.9,
+          5.6
+        ],
+        "dcf_per_share_target": 30,
+        "company_assumptions": [
+          "CMI open capacity margin $2.50-$3.00/MMBtu",
+          "Henry Hub $3.00/MMBtu",
+          "refinancing rate 5%",
+          "~10%-15% effective cash tax as % DCF"
+        ]
+      },
+      "narrative_locator": "final HTML/PDF",
+      "table_locator": "final HTML/PDF",
+      "caption_locator": "final HTML/PDF",
+      "rendered_asset_locator": "inline-svg:VIS-005"
+    }
+  ]
+}
