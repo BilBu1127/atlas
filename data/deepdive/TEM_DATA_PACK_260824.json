@@ -1,0 +1,858 @@
+{
+  "meta": {
+    "ticker": "TEM",
+    "company": "Tempus AI, Inc.",
+    "T0": "2026-08-24",
+    "price_asof": "2026-08-21",
+    "filing_asof": "2026-07-30 Q2 2026 Form 10-Q",
+    "consensus_asof": "2026-08-24 latest observable public snapshot",
+    "version": "DDOS v1.7",
+    "pdf": "USER_WAIVED",
+    "currency": "USD",
+    "horizon_years": 4.3614
+  },
+  "financials": {
+    "annual_3y": {
+      "2023": {
+        "revenue_m": 531.822,
+        "diagnostics_m": 363.022,
+        "data_apps_m": 168.8,
+        "gross_profit_m": 286.175,
+        "gross_margin": 0.5381,
+        "operating_income_m": -196.083,
+        "net_income_m": -214.118,
+        "adj_ebitda_m": -154.2
+      },
+      "2024": {
+        "revenue_m": 693.398,
+        "diagnostics_m": 451.749,
+        "data_apps_m": 241.649,
+        "gross_profit_m": 381.113,
+        "gross_margin": 0.5497,
+        "operating_income_m": -691.082,
+        "net_income_m": -705.809,
+        "adj_ebitda_m": -104.707
+      },
+      "2025": {
+        "revenue_m": 1271.789,
+        "diagnostics_m": 955.381,
+        "data_apps_m": 316.408,
+        "gross_profit_m": 797.897,
+        "gross_margin": 0.6274,
+        "operating_income_m": -252.872,
+        "net_income_m": -245.028,
+        "adj_ebitda_m": -7.385
+      }
+    },
+    "quarterly_8q": {
+      "2024Q3": {
+        "revenue_m": 180.929,
+        "gross_profit_m": 105.839,
+        "operating_income_m": -53.616,
+        "adj_ebitda_m": -21.843
+      },
+      "2024Q4": {
+        "revenue_m": 200.68,
+        "gross_profit_m": 122.064,
+        "operating_income_m": -50.7,
+        "adj_ebitda_m": -7.752
+      },
+      "2025Q1": {
+        "revenue_m": 255.737,
+        "gross_profit_m": 155.203,
+        "operating_income_m": -68.689,
+        "adj_ebitda_m": -16.174
+      },
+      "2025Q2": {
+        "revenue_m": 314.635,
+        "gross_profit_m": 195.039,
+        "operating_income_m": -61.774,
+        "adj_ebitda_m": -5.58
+      },
+      "2025Q3": {
+        "revenue_m": 334.206,
+        "gross_profit_m": 209.942,
+        "operating_income_m": -60.996,
+        "adj_ebitda_m": 1.476
+      },
+      "2025Q4": {
+        "revenue_m": 367.211,
+        "gross_profit_m": 237.713,
+        "operating_income_m": -61.413,
+        "adj_ebitda_m": 12.893
+      },
+      "2026Q1": {
+        "revenue_m": 348.116,
+        "gross_profit_m": 222.041,
+        "operating_income_m": -84.711,
+        "adj_ebitda_m": -2.833
+      },
+      "2026Q2": {
+        "revenue_m": 382.486,
+        "gross_profit_m": 246.498,
+        "operating_income_m": -75.913,
+        "adj_ebitda_m": 8.044
+      }
+    },
+    "latest_segment": {
+      "2026Q2": {
+        "diagnostics_revenue_m": 289.333,
+        "data_apps_revenue_m": 93.153,
+        "diagnostics_gross_margin": 0.6259,
+        "data_apps_gross_margin": 0.702,
+        "marketable_equity_unrealized_gain_m": 98.474,
+        "sbc_plus_payroll_tax_m": 55.6,
+        "cash_plus_marketable_securities_m": 820.7
+      }
+    },
+    "ceilings": [
+      "Exact quarterly free cash flow history is not used as a decision anchor where primary-source classification is inconsistent across acquisitions.",
+      "Personalis closing share issuance is not final until transaction close.",
+      "Exact lab utilization and marginal capacity economics are undisclosed."
+    ]
+  },
+  "kpis": [
+    {
+      "name": "Oncology volume growth YoY",
+      "history": [
+        [
+          "2025FY",
+          0.26
+        ],
+        [
+          "2026Q1",
+          0.28
+        ],
+        [
+          "2026Q2",
+          0.31
+        ]
+      ],
+      "current": 0.31,
+      "thresholds": {
+        "green": ">=25% with stable/improving revenue per test",
+        "yellow": "15–25% or pricing leakage",
+        "red": "<15% for two quarters"
+      }
+    },
+    {
+      "name": "MRD tests",
+      "history": [
+        [
+          "2025Q4",
+          4700
+        ],
+        [
+          "2026Q1",
+          6500
+        ],
+        [
+          "2026Q2",
+          9000
+        ]
+      ],
+      "current": 9000,
+      "thresholds": {
+        "green": ">=25% sequential growth with reimbursement expansion",
+        "yellow": "volume grows but revenue/coverage lags",
+        "red": "two quarters of flat/down volume"
+      }
+    },
+    {
+      "name": "Insights growth YoY",
+      "history": [
+        [
+          "2025FY",
+          0.38
+        ],
+        [
+          "2026Q1",
+          0.441
+        ],
+        [
+          "2026Q2",
+          0.36
+        ]
+      ],
+      "current": 0.36,
+      "thresholds": {
+        "green": ">=25% excluding related-party distortion",
+        "yellow": "15–25% or related-party share rises",
+        "red": "<15% / weak renewals"
+      }
+    },
+    {
+      "name": "Data NRR",
+      "history": [
+        [
+          "2024YE",
+          1.4
+        ],
+        [
+          "2025YE",
+          1.26
+        ]
+      ],
+      "current": 1.26,
+      "thresholds": {
+        "green": ">=1.20",
+        "yellow": "1.10–1.20",
+        "red": "<1.10"
+      }
+    },
+    {
+      "name": "Total gross margin",
+      "history": [
+        [
+          "2023FY",
+          0.538
+        ],
+        [
+          "2024FY",
+          0.55
+        ],
+        [
+          "2025FY",
+          0.627
+        ],
+        [
+          "2026Q2",
+          0.644
+        ]
+      ],
+      "current": 0.644,
+      "thresholds": {
+        "green": ">=0.64 with Personalis integration controlled",
+        "yellow": "0.58–0.64",
+        "red": "<0.58"
+      }
+    },
+    {
+      "name": "Adjusted EBITDA",
+      "history": [
+        [
+          "2023FY",
+          -154.2
+        ],
+        [
+          "2024FY",
+          -104.7
+        ],
+        [
+          "2025FY",
+          -7.4
+        ],
+        [
+          "2026Q1",
+          -2.833
+        ],
+        [
+          "2026Q2",
+          8.044
+        ]
+      ],
+      "current": 8.044,
+      "thresholds": {
+        "green": "FY2026 >= $65m and positive CFO trajectory",
+        "yellow": "positive but below guide",
+        "red": "FY2026 guide materially missed"
+      }
+    },
+    {
+      "name": "Related-party Data revenue share",
+      "history": [
+        [
+          "2025FY",
+          0.206
+        ],
+        [
+          "2026H1",
+          0.242
+        ]
+      ],
+      "current": 0.242,
+      "thresholds": {
+        "green": "declines as external pharma revenue outgrows Pathos",
+        "yellow": "~15–25%",
+        "red": ">25% with weak external growth"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.25,
+      "revenue_path": [
+        1.6,
+        1.95,
+        2.35,
+        2.75,
+        3.15
+      ],
+      "margin_path": [
+        0.041,
+        0.03,
+        0.05,
+        0.07,
+        0.09
+      ],
+      "fcf": [
+        -0.15,
+        -0.12,
+        -0.02,
+        0.08,
+        0.1575
+      ],
+      "data_share_2030": 0.22,
+      "diag_multiple": 2.0,
+      "data_multiple": 4.0,
+      "terminal_net_cash_b": -0.5,
+      "diluted_shares": 230.0,
+      "industry_path": "Precision-oncology demand remains healthy but reimbursement pressure and competition cap pricing; MRD adoption grows slower than expected.",
+      "customer_adoption": "Oncology ordering grows but MRD and multi-product cross-sell stay subscale; biopharma renewals slow.",
+      "price_take_rate": "ADLT benefit is partly offset by payer mix and hereditary/MRD reimbursement pressure.",
+      "opex": "Personalis integration and AI/model costs keep operating leverage weak.",
+      "capital_treatment": "Personalis and recurring SBC enlarge the denominator; convertibles are treated economically without debt/share double counting.",
+      "terminal_diagnostics_revenue_b": 2.457,
+      "terminal_data_revenue_b": 0.693,
+      "terminal_ev_b": 7.686,
+      "terminal_equity_b": 7.186,
+      "per_share_value": 31.24,
+      "present_value": 19.06,
+      "irr_from_current": -0.176
+    },
+    {
+      "name": "Base",
+      "probability": 0.35,
+      "revenue_path": [
+        1.6,
+        2.1,
+        2.75,
+        3.5,
+        4.35
+      ],
+      "margin_path": [
+        0.041,
+        0.07,
+        0.12,
+        0.16,
+        0.19
+      ],
+      "fcf": [
+        -0.15,
+        -0.05,
+        0.12,
+        0.34,
+        0.609
+      ],
+      "data_share_2030": 0.3,
+      "diag_multiple": 3.5,
+      "data_multiple": 8.0,
+      "terminal_net_cash_b": 0.5,
+      "diluted_shares": 220.0,
+      "industry_path": "CGP remains standard-of-care infrastructure, MRD expands indication by indication, and pharma RWD/model demand compounds.",
+      "customer_adoption": "Tempus keeps mid/high-20s oncology growth initially; Personalis benefits from Tempus distribution; Data customers expand at healthy but non-heroic rates.",
+      "price_take_rate": "xT ADLT and coverage expansion support pricing while normal payer leakage persists.",
+      "opex": "Gross profit scales faster than core opex after 2027; Personalis integration becomes manageable.",
+      "capital_treatment": "All-stock Personalis dilution plus ongoing SBC is embedded in a 220m economic denominator; no double count of converted debt.",
+      "terminal_diagnostics_revenue_b": 3.045,
+      "terminal_data_revenue_b": 1.305,
+      "terminal_ev_b": 21.097,
+      "terminal_equity_b": 21.597,
+      "per_share_value": 98.17,
+      "present_value": 59.89,
+      "irr_from_current": 0.0713
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.25,
+      "revenue_path": [
+        1.6,
+        2.2,
+        3.05,
+        4.15,
+        5.45
+      ],
+      "margin_path": [
+        0.041,
+        0.1,
+        0.16,
+        0.21,
+        0.25
+      ],
+      "fcf": [
+        -0.15,
+        0.0,
+        0.25,
+        0.65,
+        1.09
+      ],
+      "data_share_2030": 0.38,
+      "diag_multiple": 4.0,
+      "data_multiple": 10.0,
+      "terminal_net_cash_b": 1.5,
+      "diluted_shares": 215.0,
+      "industry_path": "MRD becomes a large serial-testing category, Tempus/Personalis takes meaningful share, and pharma AI/data budgets stay robust.",
+      "customer_adoption": "Health-system connectivity converts into high repeat ordering; pharma renewals and Lens/model usage expand.",
+      "price_take_rate": "Coverage broadens fast enough that volume and revenue grow together; Data pricing holds.",
+      "opex": "Data mix and lab utilization create visible operating leverage; FCF inflects strongly.",
+      "capital_treatment": "Higher internal cash generation reduces funding need; dilution remains material but is absorbed by value creation.",
+      "terminal_diagnostics_revenue_b": 3.379,
+      "terminal_data_revenue_b": 2.071,
+      "terminal_ev_b": 34.226,
+      "terminal_equity_b": 35.726,
+      "per_share_value": 166.17,
+      "present_value": 101.36,
+      "irr_from_current": 0.2087
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.15,
+      "revenue_path": [
+        1.6,
+        2.3,
+        3.35,
+        4.8,
+        6.6
+      ],
+      "margin_path": [
+        0.041,
+        0.11,
+        0.18,
+        0.25,
+        0.3
+      ],
+      "fcf": [
+        -0.15,
+        0.05,
+        0.35,
+        0.9,
+        1.584
+      ],
+      "data_share_2030": 0.45,
+      "diag_multiple": 4.5,
+      "data_multiple": 12.0,
+      "terminal_net_cash_b": 2.5,
+      "diluted_shares": 212.0,
+      "industry_path": "Tempus becomes a preferred multimodal data/model layer across oncology R&D and care delivery, not merely a diagnostics vendor.",
+      "customer_adoption": "MRD, Data, Lens/One and pathology models show repeat paid adoption and cross-sell at scale.",
+      "price_take_rate": "High-value data/model products sustain premium economics while diagnostics reimbursement remains supportive.",
+      "opex": "AI/application revenue becomes materially software-like and operating leverage is substantial.",
+      "capital_treatment": "Strong FCF limits incremental financing; existing dilution is outweighed by ecosystem value.",
+      "terminal_diagnostics_revenue_b": 3.63,
+      "terminal_data_revenue_b": 2.97,
+      "terminal_ev_b": 51.975,
+      "terminal_equity_b": 54.475,
+      "per_share_value": 256.96,
+      "present_value": 156.75,
+      "irr_from_current": 0.3358
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B — Hybrid",
+    "units": "USD/share unless otherwise specified",
+    "discount_rate": 0.12,
+    "current_price": 72.69,
+    "current_basic_shares_m": 180.244,
+    "market_cap_b": 13.102,
+    "economic_ev_b": 13.642,
+    "fy2026_revenue_guide_mid_b": 1.6,
+    "current_ev_sales": 8.53,
+    "core": 52.0,
+    "execution": 24.0,
+    "ecosystem": 8.0,
+    "drag": 9.4,
+    "expected_value": 74.58,
+    "probability_weighted_2030_value": 122.26,
+    "expected_irr": 0.1266,
+    "hurdle": 0.12,
+    "up_down_ratio_vs_bull_execution_and_bear_pv": 0.53,
+    "base_rate": "PRIMARY_SOURCE_CEILING"
+  },
+  "reverse_expectations": {
+    "required_2030_share_price_for_12pct_irr": 119.16,
+    "assumed_2030_diluted_shares_m": 220.0,
+    "required_2030_equity_b": 26.22,
+    "assumed_terminal_net_cash_b": 0.5,
+    "required_2030_ev_b": 25.72,
+    "revenue_requirement_by_blended_ev_sales": {
+      "4.0": {
+        "required_2030_revenue_b": 6.43,
+        "required_cagr": 0.3756
+      },
+      "4.85": {
+        "required_2030_revenue_b": 5.3,
+        "required_cagr": 0.3161
+      },
+      "5.0": {
+        "required_2030_revenue_b": 5.14,
+        "required_cagr": 0.307
+      },
+      "6.0": {
+        "required_2030_revenue_b": 4.29,
+        "required_cagr": 0.2535
+      }
+    },
+    "interpretation": "At a Base-like blended 4.85x terminal EV/Sales, current price requires roughly $5.30bn 2030 revenue, ~31.6% CAGR from FY2026 guide, near Bull Execution rather than Base."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_b": 1.6,
+      "source": "company guidance midpoint"
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_b": 1.99,
+      "growth": 0.244,
+      "source": "latest observable public consensus snapshot"
+    },
+    "revision_trend": "Company raised FY2026 revenue guidance from ~$1.59bn to $1.595–1.605bn; EBITDA guide stayed ~$65m."
+  },
+  "stance": {
+    "zone": "WATCH / HOLD_IF_OWNED / SELECTIVE_NEW_ENTRY",
+    "price_bands": {
+      "strong_interest": "<= $60",
+      "attractive": "$60–65",
+      "watch_fair": "$65–75",
+      "execution_premium": "$75–90",
+      "ecosystem_priced": "> $90"
+    },
+    "horizon": "through 2030",
+    "reason": "Expected IRR is near the 12% hurdle, but Base IRR is only ~7% and U/D vs Bear/Bull Execution is <1; current price relies materially on execution tails."
+  },
+  "catalysts": [
+    {
+      "when": "2H 2026",
+      "event": "FY2026 Adjusted EBITDA delivery toward ~$65m",
+      "sensitivity": "high"
+    },
+    {
+      "when": "late 2026 / early 2027",
+      "event": "Personalis close and final stock/cash consideration",
+      "sensitivity": "high"
+    },
+    {
+      "when": "2026–2027",
+      "event": "Additional MRD Medicare/payer coverage and clinical revenue conversion",
+      "sensitivity": "high"
+    },
+    {
+      "when": "2026–2027",
+      "event": "xT Tumor Only migration to ADLT pricing",
+      "sensitivity": "medium"
+    },
+    {
+      "when": "2026–2027",
+      "event": "External pharma data/model renewals and new bookings",
+      "sensitivity": "high"
+    },
+    {
+      "when": "2027",
+      "event": "Disclosure of Personalis integration economics / consolidated margin path",
+      "sensitivity": "high"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "3.1"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "1.1–1.3"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "1.4 / 3.4"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "1.5"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "1 전체"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "2.2"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "2.3"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "3.2 / 4.2"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "3.3 / 4.2"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.6 / Appendix"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "3.7"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "3.2–3.4"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "3.4"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.5"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "3.6"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.6 / Appendix"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "3.8"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE",
+      "h3_locator": "3.9"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "COMPLETE",
+      "h3_locator": "4.1"
+    },
+    {
+      "rc_id": "RC-020",
+      "status": "COMPLETE",
+      "h3_locator": "4.4"
+    },
+    {
+      "rc_id": "RC-021",
+      "status": "COMPLETE",
+      "h3_locator": "4.4–4.6"
+    },
+    {
+      "rc_id": "RC-022",
+      "status": "COMPLETE",
+      "h3_locator": "4.7"
+    },
+    {
+      "rc_id": "RC-023",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.4 / 4.7 / 5"
+    },
+    {
+      "rc_id": "RC-024",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1 / 4.3"
+    },
+    {
+      "rc_id": "RC-025",
+      "status": "COMPLETE",
+      "h3_locator": "4.2 / 6.2"
+    },
+    {
+      "rc_id": "RC-026",
+      "status": "COMPLETE",
+      "h3_locator": "6.3–6.4"
+    },
+    {
+      "rc_id": "RC-027",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "5.2 / 6.1"
+    },
+    {
+      "rc_id": "RC-028",
+      "status": "COMPLETE",
+      "h3_locator": "5.7"
+    },
+    {
+      "rc_id": "RC-029",
+      "status": "COMPLETE",
+      "h3_locator": "5.4–5.6"
+    },
+    {
+      "rc_id": "RC-030",
+      "status": "COMPLETE",
+      "h3_locator": "0 / 6.1"
+    }
+  ],
+  "qa": {
+    "RC_TOTAL": 30,
+    "RC_COMPLETE": 24,
+    "RC_CEILING": 6,
+    "RC_NOT_MATERIAL": 0,
+    "RC_CONTRADICTED": 0,
+    "RC_UNRESOLVED": 0,
+    "H1_H2_RESEARCH_CONTRACT_COMPLETENESS": "PASS",
+    "LATEST_FILING_CHECK": "PASS",
+    "BASE_RATE": "PRIMARY_SOURCE_CEILING",
+    "INDUSTRY_BLOCKS_TOTAL": 6,
+    "LANDED": 6,
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "PDF": "USER_WAIVED",
+    "H2_H3_COVERAGE_LINEAGE": "PASS",
+    "RC_H3_COVERAGE_RATE": 1.0,
+    "REPORT_DATA_PACK": "EMITTED",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "CONTENT_MEANING_LOCK_PRESERVED": "PASS",
+    "PUBLISHED_TOP_LEVEL_SCHEMA_MATCH": "PASS",
+    "EXPLANATORY_DEPTH_PRESERVED": "PASS",
+    "HTML_SIDEBAR": "PASS",
+    "SEARCHABLE_TEXT": "PASS",
+    "KOREAN_READABILITY": "PASS",
+    "EXPLANATORY_SPACE_ALLOCATION": "PASS",
+    "GOLDEN_PARITY": "PASS"
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "type": "primary",
+      "title": "Tempus Q2 2026 Results",
+      "url": "https://investors.tempus.com/news-releases/news-release-details/tempus-reports-second-quarter-2026-results"
+    },
+    {
+      "id": "S02",
+      "type": "primary",
+      "title": "Tempus Q2 2026 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1717115/000119312526326090/tem-20260630.htm"
+    },
+    {
+      "id": "S03",
+      "type": "primary",
+      "title": "Tempus FY2025 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1717115/000119312526066961/tem-20251231.htm"
+    },
+    {
+      "id": "S04",
+      "type": "primary",
+      "title": "Tempus Q1 2026 Results",
+      "url": "https://investors.tempus.com/news-releases/news-release-details/tempus-reports-first-quarter-2026-results"
+    },
+    {
+      "id": "S05",
+      "type": "primary",
+      "title": "Tempus FY2025 Results",
+      "url": "https://investors.tempus.com/news-releases/news-release-details/tempus-reports-fourth-quarter-and-full-year-2025-results"
+    },
+    {
+      "id": "S06",
+      "type": "primary",
+      "title": "Tempus Q3 2025 Results",
+      "url": "https://investors.tempus.com/news-releases/news-release-details/tempus-reports-third-quarter-2025-results"
+    },
+    {
+      "id": "S07",
+      "type": "primary",
+      "title": "Tempus Q3 2024 / Ambry Agreement",
+      "url": "https://investors.tempus.com/news-releases/news-release-details/tempus-reports-third-quarter-2024-results-and-agreement-acquire"
+    },
+    {
+      "id": "S08",
+      "type": "primary",
+      "title": "Tempus FY2024 Results",
+      "url": "https://investors.tempus.com/news-releases/news-release-details/tempus-reports-fourth-quarter-and-full-year-2024-results"
+    },
+    {
+      "id": "S09",
+      "type": "primary",
+      "title": "Ambry Acquisition Close",
+      "url": "https://investors.tempus.com/news-releases/news-release-details/tempus-completes-acquisition-ambry-genetics"
+    },
+    {
+      "id": "S10",
+      "type": "primary",
+      "title": "Paige Acquisition",
+      "url": "https://investors.tempus.com/news-releases/news-release-details/tempus-announces-acquisition-paige"
+    },
+    {
+      "id": "S11",
+      "type": "primary",
+      "title": "Personalis Q2 2026 Results",
+      "url": "https://investors.personalis.com/news-releases/news-release-details/personalis-reports-second-quarter-results-and-recent-highlights"
+    },
+    {
+      "id": "S12",
+      "type": "primary",
+      "title": "Tempus Investor Relations Metrics",
+      "url": "https://investors.tempus.com/"
+    },
+    {
+      "id": "S13",
+      "type": "primary",
+      "title": "Tempus SEC EDGAR",
+      "url": "https://www.sec.gov/edgar/browse/index.html?cik=1717115"
+    },
+    {
+      "id": "S14",
+      "type": "independent_scientific",
+      "title": "PRISM2 — Nature Medicine 2026",
+      "url": "https://www.nature.com/articles/s41591-026-04521-4"
+    },
+    {
+      "id": "S15",
+      "type": "primary",
+      "title": "CMS NGS Coverage",
+      "url": "https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=372"
+    },
+    {
+      "id": "S16",
+      "type": "primary_counterparty",
+      "title": "Merck — Tempus expanded multi-year precision-medicine collaboration",
+      "url": "https://www.merck.com/bdl_item/tempus-announces-strategic-collaboration-agreement-with-merck-to-accelerate-ai-driven-precision-medicine/"
+    },
+    {
+      "id": "S17",
+      "type": "primary_counterparty",
+      "title": "AstraZeneca — joined-up oncology development / Tempus-Pathos foundation models",
+      "url": "https://www.astrazeneca.com/what-science-can-do/topics/clinical-innovation/holistic-approaches-for-oncology-clinical-development.html"
+    },
+    {
+      "id": "S18",
+      "type": "primary_competitor",
+      "title": "Natera Q2 2026 Financial Results",
+      "url": "https://investor.natera.com/news/news-details/2026/Natera-Reports-Second-Quarter-2026-Financial-Results/default.aspx"
+    },
+    {
+      "id": "S19",
+      "type": "primary_competitor",
+      "title": "Guardant Health Q2 2026 Financial Results",
+      "url": "https://investors.guardanthealth.com/press-releases/press-releases/2026/Guardant-Health-Reports-Second-Quarter-2026-Financial-Results-and-Increases-2026-Revenue-Guidance/default.aspx"
+    },
+    {
+      "id": "S20",
+      "type": "primary_competitor",
+      "title": "Myriad Genetics Q2 2026 Financial Results",
+      "url": "https://investor.myriad.com/news-releases/news-release-detail/?newsItemId=27481"
+    }
+  ]
+}

@@ -1,0 +1,837 @@
+{
+  "meta": {
+    "ticker": "CRWD",
+    "company": "CrowdStrike Holdings, Inc.",
+    "T0": 191.95,
+    "price_asof": "2026-08-21 U.S. close, post 4:1 split",
+    "filing_asof": "Q1 FY27 10-Q filed 2026-06-04",
+    "consensus_asof": "2026-08-24",
+    "research_cutoff": "2026-08-24",
+    "version": "DDOS v1.7"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "fy": "FY24",
+        "revenue_m": 3055.555,
+        "gross_profit_m": 2296.626,
+        "gaap_operating_income_m": -19.141,
+        "ocf_m": 1166.207,
+        "fcf_m": 938.2,
+        "sbc_m": 648.665,
+        "sbc_pct_revenue": 21.2,
+        "cash_m": 3375.069
+      },
+      {
+        "fy": "FY25",
+        "revenue_m": 3953.624,
+        "gross_profit_m": 2963.452,
+        "gaap_operating_income_m": -116.4,
+        "ocf_m": 1381.727,
+        "fcf_m": 1065.0,
+        "sbc_m": 861.391,
+        "sbc_pct_revenue": 21.8,
+        "cash_m": 4323.295
+      },
+      {
+        "fy": "FY26",
+        "revenue_m": 4812.005,
+        "gross_profit_m": 3593.076,
+        "gaap_operating_income_m": -293.292,
+        "ocf_m": 1612.349,
+        "fcf_m": 1241.0,
+        "sbc_m": 1097.668,
+        "sbc_pct_revenue": 22.8,
+        "cash_m": 5230.125
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "Q2 FY25",
+        "revenue_m": 963.872,
+        "arr_b": 3.86,
+        "nnarr_m": 217.6,
+        "fcf_m": 272.2,
+        "gaap_operating_income_m": 12.525
+      },
+      {
+        "quarter": "Q3 FY25",
+        "revenue_m": 1010.178,
+        "arr_b": 4.02,
+        "nnarr_m": 153.0,
+        "fcf_m": 230.6,
+        "gaap_operating_income_m": -54.365
+      },
+      {
+        "quarter": "Q4 FY25",
+        "revenue_m": 1058.538,
+        "arr_b": 4.24,
+        "nnarr_m": 224.3,
+        "fcf_m": 239.8,
+        "gaap_operating_income_m": -79.305
+      },
+      {
+        "quarter": "Q1 FY26",
+        "revenue_m": 1103.434,
+        "arr_b": 4.436,
+        "nnarr_m": 193.8,
+        "fcf_m": 279.4,
+        "gaap_operating_income_m": -118.713
+      },
+      {
+        "quarter": "Q2 FY26",
+        "revenue_m": 1168.952,
+        "arr_b": 4.66,
+        "nnarr_m": 221.1,
+        "fcf_m": 283.6,
+        "gaap_operating_income_m": -105.457
+      },
+      {
+        "quarter": "Q3 FY26",
+        "revenue_m": 1234.244,
+        "arr_b": 4.92,
+        "nnarr_m": 265.3,
+        "fcf_m": 295.9,
+        "gaap_operating_income_m": -62.222
+      },
+      {
+        "quarter": "Q4 FY26",
+        "revenue_m": 1305.375,
+        "arr_b": 5.25,
+        "nnarr_m": 330.7,
+        "fcf_m": 376.4,
+        "gaap_operating_income_m": -6.9
+      },
+      {
+        "quarter": "Q1 FY27",
+        "revenue_m": 1385.629,
+        "arr_b": 5.5086,
+        "nnarr_m": 255.8,
+        "fcf_m": 468.5,
+        "gaap_operating_income_m": -30.6
+      }
+    ],
+    "ceilings": [
+      "product-level ARR/revenue mix not fully disclosed",
+      "Flex cohort net price/discount/term/usage not disclosed",
+      "July 19 final legal/regulatory loss range not estimable"
+    ]
+  },
+  "kpis": [
+    {
+      "name": "ARR YoY growth",
+      "current": 0.24,
+      "unit": "%",
+      "thresholds": {
+        "green": ">=25%",
+        "yellow": "20-25%",
+        "red": "<20%"
+      },
+      "source": "Q1 FY27 earnings"
+    },
+    {
+      "name": "Net New ARR YoY",
+      "current": 0.32,
+      "unit": "%",
+      "thresholds": {
+        "green": ">=25%",
+        "yellow": "0-25%",
+        "red": "<0%"
+      },
+      "source": "Q1 FY27 earnings"
+    },
+    {
+      "name": "6+/7+/8+ module adoption",
+      "current": {
+        "6+": 0.51,
+        "7+": 0.35,
+        "8+": 0.25
+      },
+      "thresholds": {
+        "green": "각 지표 지속 상승",
+        "yellow": "대체로 정체",
+        "red": "2개 이상 2분기 연속 하락"
+      },
+      "source": "Q1 FY27 presentation"
+    },
+    {
+      "name": "GAAP subscription gross margin",
+      "current": 0.78,
+      "unit": "%",
+      "thresholds": {
+        "green": ">=78%",
+        "yellow": "76.5-78%",
+        "red": "<76.5%"
+      },
+      "source": "Q1 FY27 earnings"
+    },
+    {
+      "name": "Free cash flow margin",
+      "current": 0.338,
+      "unit": "%",
+      "thresholds": {
+        "green": ">=32% 정상화",
+        "yellow": "27-32%",
+        "red": "<27%"
+      },
+      "source": "Q1 FY27 earnings"
+    },
+    {
+      "name": "SBC / revenue",
+      "current": 0.215,
+      "unit": "%",
+      "thresholds": {
+        "green": "<18%",
+        "yellow": "18-22%",
+        "red": ">22%"
+      },
+      "source": "Q1 FY27 10-Q"
+    },
+    {
+      "name": "AI monetization",
+      "current": "AIDR ending ARR >250% QoQ; absolute ARR undisclosed",
+      "thresholds": {
+        "green": "절대 ARR/attach 공개 + material",
+        "yellow": "성장률만 공개",
+        "red": "성장 둔화/attach 미확인 지속"
+      },
+      "source": "Q1 FY27 presentation"
+    },
+    {
+      "name": "July 19 legal/regulatory",
+      "current": "DOJ/SEC requests outstanding; loss range not estimable",
+      "thresholds": {
+        "green": "no material charge / inquiries resolve",
+        "yellow": "현 상태 유지",
+        "red": "material penalty/settlement 또는 영업효과 재확대"
+      },
+      "source": "Q1 FY27 10-Q"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.25,
+      "revenue_path": [
+        5.66,
+        6.66,
+        7.83,
+        9.21,
+        10.83
+      ],
+      "margin_path": [
+        0.3,
+        0.31,
+        0.31,
+        0.32,
+        0.32
+      ],
+      "fcf": [
+        1.698,
+        2.0646,
+        2.4273,
+        2.9472,
+        3.4656
+      ],
+      "exit_ev_fcf": 30,
+      "net_cash_b": 12,
+      "diluted_shares": 1.09,
+      "per_share_value": 106.39,
+      "present_value_12pct": 60.37,
+      "irr_5y": -0.1113
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "revenue_path": [
+        5.96,
+        7.38,
+        9.14,
+        11.31,
+        14.0
+      ],
+      "margin_path": [
+        0.33,
+        0.34,
+        0.35,
+        0.355,
+        0.36
+      ],
+      "fcf": [
+        1.9668,
+        2.5092,
+        3.199,
+        4.015,
+        5.04
+      ],
+      "exit_ev_fcf": 42,
+      "net_cash_b": 15,
+      "diluted_shares": 1.07,
+      "per_share_value": 211.85,
+      "present_value_12pct": 120.21,
+      "irr_5y": 0.0199
+    },
+    {
+      "name": "Up",
+      "probability": 0.25,
+      "revenue_path": [
+        6.27,
+        8.16,
+        10.62,
+        13.83,
+        18.0
+      ],
+      "margin_path": [
+        0.34,
+        0.355,
+        0.37,
+        0.38,
+        0.39
+      ],
+      "fcf": [
+        2.1318,
+        2.8968,
+        3.9294,
+        5.2554,
+        7.02
+      ],
+      "exit_ev_fcf": 50,
+      "net_cash_b": 18,
+      "diluted_shares": 1.05,
+      "per_share_value": 351.43,
+      "present_value_12pct": 199.41,
+      "irr_5y": 0.1286
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B Hybrid / Expectation-Driven v3.3",
+    "core": 83.89,
+    "execution": 45.16,
+    "ecosystem": 0.0,
+    "drag": 4.0,
+    "expected_value": 125.05,
+    "expected_future_value": 220.38,
+    "expected_irr": 0.028,
+    "current_price": 191.95,
+    "market_cap_b": 198.9,
+    "ev_b": 195.1,
+    "ev_fy27_sales": 32.9,
+    "ev_ttm_fcf": 137.0,
+    "upside_downside_ratio": 1.86,
+    "hurdle_rate": 0.12
+  },
+  "reverse_expectations": {
+    "assumed_fy31_diluted_shares_b": 1.07,
+    "assumed_fy31_net_cash_b": 15,
+    "cases": [
+      {
+        "required_return": 0.1,
+        "exit_ev_fcf": 45,
+        "fcf_margin": 0.37,
+        "required_fy31_revenue_b": 18.97,
+        "fy26_fy31_cagr": 0.3156
+      },
+      {
+        "required_return": 0.1,
+        "exit_ev_fcf": 50,
+        "fcf_margin": 0.39,
+        "required_fy31_revenue_b": 16.19,
+        "fy26_fy31_cagr": 0.2747
+      },
+      {
+        "required_return": 0.1,
+        "exit_ev_fcf": 40,
+        "fcf_margin": 0.36,
+        "required_fy31_revenue_b": 21.93,
+        "fy26_fy31_cagr": 0.3544
+      },
+      {
+        "required_return": 0.12,
+        "exit_ev_fcf": 45,
+        "fcf_margin": 0.37,
+        "required_fy31_revenue_b": 20.84,
+        "fy26_fy31_cagr": 0.3406
+      },
+      {
+        "required_return": 0.12,
+        "exit_ev_fcf": 50,
+        "fcf_margin": 0.39,
+        "required_fy31_revenue_b": 17.79,
+        "fy26_fy31_cagr": 0.2989
+      },
+      {
+        "required_return": 0.12,
+        "exit_ev_fcf": 40,
+        "fcf_margin": 0.36,
+        "required_fy31_revenue_b": 24.09,
+        "fy26_fy31_cagr": 0.3801
+      }
+    ]
+  },
+  "consensus": {
+    "fy1": {
+      "fiscal_year": "FY27",
+      "revenue_b": 5.95
+    },
+    "fy2": {
+      "fiscal_year": "FY28",
+      "revenue_b": 7.24
+    },
+    "fy3": {
+      "fiscal_year": "FY29",
+      "revenue_b": 8.83
+    },
+    "our_base": {
+      "FY27": 5.96,
+      "FY28": 7.38,
+      "FY29": 9.14
+    },
+    "revision_trend": "Q1 FY27 beat/raise; FY27 NNARR growth midpoint raised to ~27.7%"
+  },
+  "stance": {
+    "zone": "회피 / 기존 보유 시 축소 검토",
+    "price_bands": {
+      "active_interest": "<=125",
+      "conditional_interest": "125-145",
+      "watch": "145-170",
+      "avoid_trim_review": "170-215",
+      "strong_price_pressure": ">215"
+    },
+    "horizon": "5 years",
+    "change_conditions": "multiple quarters of ~30% NNARR, verified Flex cohort economics, material AIDR absolute ARR, stable >=78% subscription GM, lower SBC/net dilution, July 19 legal clarity"
+  },
+  "catalysts": [
+    {
+      "when": "2026-08-26",
+      "event": "Q2 FY27 earnings",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2026-08-31 to 2026-09-03",
+      "event": "Fal.Con 2026",
+      "sensitivity": "Medium"
+    },
+    {
+      "when": "FY27 Q3, date not announced",
+      "event": "Q3 FY27 earnings / guide",
+      "sensitivity": "High"
+    },
+    {
+      "when": "FY27 Q4 / FY28 guide",
+      "event": "annual results and next-year guide",
+      "sensitivity": "High"
+    },
+    {
+      "when": "ongoing",
+      "event": "DOJ/SEC and July 19 litigation updates",
+      "sensitivity": "High"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "0.1 / 3.1-3.2"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "1.1-1.5"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "1.1-1.4 / 3.4"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.3 / 4.2"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "3.2 / 3.5"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1.5 / 3.6 / 5.3"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "3.4 / 4.2"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "3.7"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "2.1-2.4"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "2.3 / 4.4 / 6"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "4.1-4.2"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "4.3"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "4.5 / 5.3"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "3.8 / 4"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "0.4-0.5 / 5.4"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "5.1-5.7"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "6.2-6.4"
+    }
+  ],
+  "valuation_history": {
+    "ps_samples": [
+      {
+        "date": "2023-01-31",
+        "ps": 11.0,
+        "context": "성장주 멀티플 압축"
+      },
+      {
+        "date": "2024-01-31",
+        "ps": 23.2,
+        "context": "플랫폼 재가속 기대"
+      },
+      {
+        "date": "2024-07-31",
+        "ps": 16.3,
+        "context": "July 19 사고 직후"
+      },
+      {
+        "date": "2025-01-31",
+        "ps": 25.0,
+        "context": "회복 기대"
+      },
+      {
+        "date": "2025-10-31",
+        "ps": 29.6,
+        "context": "Flex/플랫폼 프리미엄"
+      },
+      {
+        "date": "2026-04-30",
+        "ps": 22.1,
+        "context": "최근 랠리 이전"
+      },
+      {
+        "date": "2026-08-05",
+        "ps": 41.6,
+        "context": "Q2/Fal.Con 전 기대 확대"
+      },
+      {
+        "date": "2026-08-21",
+        "ps": 38.4,
+        "context": "리서치 기준 현재"
+      }
+    ],
+    "methodology_note": "secondary market-data snapshots; provider methodology differs, use as context not exact official percentile"
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "CrowdStrike FY26 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000010/crwd-20260131.htm",
+      "tier": "Primary"
+    },
+    {
+      "id": "S2",
+      "title": "CrowdStrike Q1 FY27 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000025/crwd-20260430.htm",
+      "tier": "Primary"
+    },
+    {
+      "id": "S3",
+      "title": "CrowdStrike Q1 FY27 Financial Results",
+      "url": "https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-reports-first-quarter-fiscal-year-2027-financial/",
+      "tier": "Primary"
+    },
+    {
+      "id": "S4",
+      "title": "CrowdStrike Q1 FY27 Presentation",
+      "url": "https://ir.crowdstrike.com/static-files/f774ef12-cf94-48bf-ace2-c7f3dcf8ec97",
+      "tier": "Primary"
+    },
+    {
+      "id": "S5",
+      "title": "CrowdStrike 2026 DEF 14A",
+      "url": "https://www.sec.gov/Archives/edgar/data/1535527/000110465926055599/tm2532333-4_def14a.htm",
+      "tier": "Primary"
+    },
+    {
+      "id": "S8",
+      "title": "CrowdStrike Next-Gen SIEM / Microsoft Defender telemetry",
+      "url": "https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-unveils-falcon-next-gen-siem-support-microsoft",
+      "tier": "Primary"
+    },
+    {
+      "id": "S9",
+      "title": "Microsoft Unified Security Operations",
+      "url": "https://learn.microsoft.com/en-us/unified-secops/overview-unified-security",
+      "tier": "Primary competitor"
+    },
+    {
+      "id": "S10",
+      "title": "Palo Alto Networks Investor Relations",
+      "url": "https://investors.paloaltonetworks.com/",
+      "tier": "Primary competitor"
+    },
+    {
+      "id": "S11",
+      "title": "SentinelOne Q1 FY27 Financial Results",
+      "url": "https://investors.sentinelone.com/press-releases/news-details/2026/SentinelOne-Announces-First-Quarter-Fiscal-Year-2027-Financial-Results/default.aspx",
+      "tier": "Primary competitor"
+    },
+    {
+      "id": "S12",
+      "title": "CrowdStrike Project QuiltWorks SMB expansion",
+      "url": "https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-expands-project-quiltworks-smbs-extending-frontier",
+      "tier": "Primary"
+    },
+    {
+      "id": "S13",
+      "title": "StockAnalysis CRWD Forecast",
+      "url": "https://stockanalysis.com/stocks/crwd/forecast/",
+      "tier": "Secondary / consensus"
+    },
+    {
+      "id": "S14",
+      "title": "MarketScreener CRWD estimates",
+      "url": "https://www.marketscreener.com/quote/stock/CROWDSTRIKE-HOLDINGS-INC-59783691/finances/",
+      "tier": "Secondary / consensus"
+    },
+    {
+      "id": "S15",
+      "title": "Macrotrends CRWD P/S history",
+      "url": "https://www.macrotrends.net/stocks/charts/CRWD/crowdstrike/price-sales",
+      "tier": "Secondary / market data"
+    },
+    {
+      "id": "S16",
+      "title": "StockAnalysis CRWD ratios",
+      "url": "https://stockanalysis.com/stocks/crwd/financials/ratios/",
+      "tier": "Secondary / market data"
+    },
+    {
+      "id": "S17",
+      "title": "Fal.Con Las Vegas",
+      "url": "https://www.crowdstrike.com/en-us/events/fal-con/las-vegas/",
+      "tier": "Primary"
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "최근 8분기 ARR와 순증 ARR",
+      "authoritative_source_block": "financials.quarterly_8q",
+      "source_values": {
+        "quarter": [
+          "Q2 FY25",
+          "Q3 FY25",
+          "Q4 FY25",
+          "Q1 FY26",
+          "Q2 FY26",
+          "Q3 FY26",
+          "Q4 FY26",
+          "Q1 FY27"
+        ],
+        "arr_b": [
+          3.86,
+          4.02,
+          4.24,
+          4.436,
+          4.66,
+          4.92,
+          5.25,
+          5.5086
+        ],
+        "nnarr_m": [
+          217.6,
+          153.0,
+          224.3,
+          193.8,
+          221.1,
+          265.3,
+          330.7,
+          255.8
+        ]
+      },
+      "narrative_locator": "4.2",
+      "table_locator": "Appendix B",
+      "source_version_or_hash": "b9c1a62086025a02",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": "PENDING_RENDER_QA",
+      "status": "SOURCE_PARITY_PASS"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "3년 매출·FCF와 SBC 비중",
+      "authoritative_source_block": "financials.annual_3y",
+      "source_values": {
+        "fy": [
+          "FY24",
+          "FY25",
+          "FY26"
+        ],
+        "revenue_m": [
+          3055.555,
+          3953.624,
+          4812.005
+        ],
+        "fcf_m": [
+          938.2,
+          1065.0,
+          1241.0
+        ],
+        "sbc_pct": [
+          21.2,
+          21.8,
+          22.8
+        ]
+      },
+      "narrative_locator": "4.1/4.3",
+      "table_locator": "Appendix B/F",
+      "source_version_or_hash": "d7f3416ee30cde1c",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": "PENDING_RENDER_QA",
+      "status": "SOURCE_PARITY_PASS"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "시나리오 12% 현재가치 vs 현재가",
+      "authoritative_source_block": "scenarios + valuation.current_price",
+      "source_values": {
+        "scenario": [
+          "Down",
+          "Base",
+          "Up"
+        ],
+        "pv": [
+          60.37,
+          120.21,
+          199.41
+        ],
+        "current_price": 191.95
+      },
+      "narrative_locator": "5.3",
+      "table_locator": "5.3/Appendix H",
+      "source_version_or_hash": "6067ac48893f0a3a",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": "PENDING_RENDER_QA",
+      "status": "SOURCE_PARITY_PASS"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "현재가가 요구하는 FY31 매출",
+      "authoritative_source_block": "reverse_expectations",
+      "source_values": {
+        "labels": [
+          "10% / 45x / 37%",
+          "10% / 50x / 39%",
+          "10% / 40x / 36%",
+          "12% / 45x / 37%",
+          "12% / 50x / 39%",
+          "12% / 40x / 36%"
+        ],
+        "required_revenue_b": [
+          18.97,
+          16.19,
+          21.93,
+          20.84,
+          17.79,
+          24.09
+        ]
+      },
+      "narrative_locator": "5.5",
+      "table_locator": "Appendix H",
+      "source_version_or_hash": "b89100ce500b153f",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": "PENDING_RENDER_QA",
+      "status": "SOURCE_PARITY_PASS"
+    },
+    {
+      "vis_id": "VIS-005",
+      "figure_title": "CrowdStrike P/S 표본 밴드",
+      "authoritative_source_block": "valuation_history.ps_samples",
+      "source_values": {
+        "date": [
+          "2023-01-31",
+          "2024-01-31",
+          "2024-07-31",
+          "2025-01-31",
+          "2025-10-31",
+          "2026-04-30",
+          "2026-08-05",
+          "2026-08-21"
+        ],
+        "ps": [
+          11.0,
+          23.2,
+          16.3,
+          25.0,
+          29.6,
+          22.1,
+          41.6,
+          38.4
+        ]
+      },
+      "narrative_locator": "5.6",
+      "table_locator": "Appendix I",
+      "source_version_or_hash": "82d084caca6dc91a",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": "PENDING_RENDER_QA",
+      "status": "SOURCE_PARITY_PASS"
+    }
+  ],
+  "publishing_lineage": {
+    "decision_visuals_total": 5,
+    "decision_visuals_parity_pass": 5,
+    "stale_visual_assets": 0,
+    "figure_numerical_parity": "PASS",
+    "visual_data_lineage": "PASS",
+    "visual_semantic_parity": "PASS",
+    "rendered_visual_parity_qa": "PENDING_RENDER_QA"
+  }
+}

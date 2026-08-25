@@ -1,0 +1,1122 @@
+{
+  "meta": {
+    "ticker": "YSS",
+    "company": "York Space Systems Inc.",
+    "T0": "2026-08-24",
+    "price_asof": "2026-08-21 regular-session close",
+    "filing_asof": "2026-08-14 / Q2 2026 10-Q, quarter ended 2026-06-30",
+    "transcript_asof": "2026-08-13",
+    "consensus_asof": "2026-08-20 to 2026-08-24 collection",
+    "company_news_asof": "2026-08-18",
+    "version": "1.0",
+    "currency": "USD",
+    "units_financials": "USD millions"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "fy": "2023",
+        "revenue": 238.103,
+        "gross_profit": 54.904,
+        "gross_margin": 0.2306,
+        "net_income": -29.656,
+        "ocf": 15.701,
+        "eac_pretax": -0.824
+      },
+      {
+        "fy": "2024",
+        "revenue": 253.531,
+        "gross_profit": 32.421,
+        "gross_margin": 0.1279,
+        "net_income": -98.911,
+        "ocf": 31.614,
+        "eac_pretax": -22.916
+      },
+      {
+        "fy": "2025",
+        "revenue": 386.203,
+        "gross_profit": 75.46,
+        "gross_margin": 0.1954,
+        "net_income": -84.537,
+        "ocf": -121.33,
+        "eac_pretax": -11.12
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "Q3 2024",
+        "revenue": 62.456,
+        "gross_profit": 12.539,
+        "gross_margin": 0.201,
+        "net_income": -18.869
+      },
+      {
+        "quarter": "Q4 2024",
+        "revenue": 76.606,
+        "gross_profit": 15.656,
+        "gross_margin": 0.204,
+        "net_income": -25.268
+      },
+      {
+        "quarter": "Q1 2025",
+        "revenue": 106.252,
+        "gross_profit": 24.602,
+        "gross_margin": 0.232,
+        "net_income": -11.729
+      },
+      {
+        "quarter": "Q2 2025",
+        "revenue": 83.839,
+        "gross_profit": 9.526,
+        "gross_margin": 0.114,
+        "net_income": -24.234
+      },
+      {
+        "quarter": "Q3 2025",
+        "revenue": 90.763,
+        "gross_profit": 20.266,
+        "gross_margin": 0.223,
+        "net_income": -20.081
+      },
+      {
+        "quarter": "Q4 2025",
+        "revenue": 105.349,
+        "gross_profit": 21.066,
+        "gross_margin": 0.2,
+        "net_income": -28.493
+      },
+      {
+        "quarter": "Q1 2026",
+        "revenue": 116.343,
+        "gross_profit": 22.15,
+        "gross_margin": 0.19,
+        "net_income": -114.842
+      },
+      {
+        "quarter": "Q2 2026",
+        "revenue": 92.547,
+        "gross_profit": 22.18,
+        "gross_margin": 0.24,
+        "net_income": -39.343
+      }
+    ],
+    "h1_2026": {
+      "revenue": 208.89,
+      "gross_profit": 44.33,
+      "net_income": -154.185,
+      "ocf": -186.637,
+      "sbc": 95.589
+    },
+    "working_capital": {
+      "2025-12-31": {
+        "ar": 11.539,
+        "inventory": 18.747,
+        "contract_assets": 76.809,
+        "contract_liabilities": 110.275
+      },
+      "2026-06-30": {
+        "ar": 55.8,
+        "inventory": 41.787,
+        "contract_assets": 114.967,
+        "contract_liabilities": 18.157
+      }
+    },
+    "ceilings": [
+      "Acquisition organic/inorganic split not fully disclosed",
+      "Independent normalized platform technical-cost comparison unavailable"
+    ]
+  },
+  "contract_and_customer": {
+    "backlog_2026_06_30": 592.049,
+    "backlog_2026_03_31": 642.3,
+    "backlog_2025_12_31": 542.557,
+    "awarded_contract_potential": 1850,
+    "pipeline_2y": 11500,
+    "largest_customer_q2_revenue_pct": 0.91,
+    "largest_customer_h1_revenue_pct": 0.96,
+    "ytd_contract_wins": 8,
+    "reported_win_rate": 0.88,
+    "commercial_m_class_contract": 187
+  },
+  "capital_structure": {
+    "shares_outstanding_2026_08_12_m": 137.357605,
+    "market_cap_at_price_m": 1280.173,
+    "cash_2026_06_30_m": 534,
+    "allspace_cash_post_q_m": 155,
+    "proforma_cash_m": 379.0,
+    "term_loan_principal_m": 148.125,
+    "revolver_available_m": 150,
+    "proforma_net_cash_m": 230.875,
+    "proforma_ev_m": 1049.298,
+    "tra_early_termination_estimate_m": 262
+  },
+  "kpis": [
+    {
+      "name": "Backlog ($m)",
+      "history": [
+        {
+          "asof": "2025-12-31",
+          "value": 542.6
+        },
+        {
+          "asof": "2026-03-31",
+          "value": 642.3
+        },
+        {
+          "asof": "2026-06-30",
+          "value": 592.0
+        }
+      ],
+      "current": 592.0,
+      "thresholds": {
+        "green": ">700 또는 YoY +15% 이상",
+        "yellow": "550–700, 매출소진을 대체할 신규수주 확인",
+        "red": "<550 또는 QoQ/YoY 급감 지속"
+      }
+    },
+    {
+      "name": "Largest customer revenue concentration",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": 0.91
+        },
+        {
+          "period": "H1 2026",
+          "value": 0.96
+        }
+      ],
+      "current": 0.91,
+      "thresholds": {
+        "green": "<80%",
+        "yellow": "80–90%",
+        "red": ">90%"
+      }
+    },
+    {
+      "name": "Normalized gross margin",
+      "history": [
+        {
+          "period": "Q2 2025",
+          "value": 0.114
+        },
+        {
+          "period": "Q1 2026",
+          "value": 0.19
+        },
+        {
+          "period": "Q2 2026 reported",
+          "value": 0.24
+        }
+      ],
+      "current": 0.24,
+      "thresholds": {
+        "green": "≥25% with low EAC for multiple quarters",
+        "yellow": "21–25% 또는 EAC 비교효과 존재",
+        "red": "<21% 또는 큰 unfavorable EAC"
+      }
+    },
+    {
+      "name": "Quarterly EAC magnitude / revenue",
+      "history": [
+        {
+          "period": "Q2 2025",
+          "eac": -13.812,
+          "revenue": 83.839
+        },
+        {
+          "period": "Q2 2026",
+          "eac": -0.439,
+          "revenue": 92.547
+        }
+      ],
+      "current": 0.0047,
+      "thresholds": {
+        "green": "|EAC| <2% revenue",
+        "yellow": "2–5%",
+        "red": ">5%"
+      }
+    },
+    {
+      "name": "Cash conversion / working capital",
+      "history": [
+        {
+          "period": "H1 2026",
+          "ocf": -186.637,
+          "contract_assets": 114.967,
+          "contract_liabilities": 18.157,
+          "inventory": 41.787,
+          "ar": 55.8
+        }
+      ],
+      "current": -186.637,
+      "thresholds": {
+        "green": "OCF 개선 + contract assets/inventory 안정 또는 감소",
+        "yellow": "OCF 적자 축소, 운전자본 증가율 둔화",
+        "red": "OCF 대규모 적자와 contract assets/inventory 동반 증가"
+      }
+    },
+    {
+      "name": "Diluted economic denominator (m shares)",
+      "history": [
+        {
+          "asof": "2026-08-12",
+          "value": 137.358
+        }
+      ],
+      "current": 137.358,
+      "thresholds": {
+        "green": "향후 12개월 <145m",
+        "yellow": "145–150m",
+        "red": ">150m unless clearly accretive funded growth"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.3,
+      "revenue_path": [
+        375,
+        440,
+        515,
+        590
+      ],
+      "gross_margin_path": [
+        0.2,
+        0.2,
+        0.21,
+        0.22
+      ],
+      "ebitda_margin_path": [
+        -0.15,
+        -0.1,
+        -0.05,
+        0.0
+      ],
+      "fcf": [
+        -90,
+        -110,
+        -40,
+        5
+      ],
+      "diluted_shares": 143,
+      "terminal_multiple": 1.2,
+      "terminal_net_cash": -4,
+      "industry_path": "IDIQ 전환이 장기화되고 Transport 후속 물량의 경쟁 강도가 높아지며, Golden Dome/Tracking 인접 수주가 York으로 충분히 확장되지 않는다.",
+      "customer_adoption": "기존 핵심 고객 의존이 유지되고 신규 고객/상업 프로그램은 부분적 매출 기여에 그친다.",
+      "formation": "2027 funded task order가 작고 backlog가 550m 아래로 하락하며 고객 집중도가 90% 안팎에 머문다.",
+      "break": "2027 backlog가 700m 이상으로 재확대되고 정상화 GM이 25% 이상으로 올라서면 Bear는 약화된다.",
+      "terminal_ev": 708.0,
+      "terminal_equity_value": 704.0,
+      "terminal_per_share_value": 4.9231,
+      "per_share_value": 3.2691,
+      "scenario_irr": -0.173468
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "revenue_path": [
+        390,
+        600,
+        790,
+        980
+      ],
+      "gross_margin_path": [
+        0.22,
+        0.24,
+        0.26,
+        0.27
+      ],
+      "ebitda_margin_path": [
+        -0.12,
+        -0.04,
+        0.04,
+        0.09
+      ],
+      "fcf": [
+        -70,
+        -50,
+        10,
+        60
+      ],
+      "diluted_shares": 145,
+      "terminal_multiple": 2.4,
+      "terminal_net_cash": 181,
+      "industry_path": "PWSA/국가안보 우주 지출은 유지되고 IDIQ가 task order로 점진 전환되지만, York이 모든 레이어의 승자가 되지는 않는다.",
+      "customer_adoption": "Transport에서 반복 수주가 이어지고 M-CLASS 상업 계약 및 인수 자산이 고객 집중도를 천천히 낮춘다.",
+      "formation": "2027 매출이 약 600m 수준으로 반등하고 정상화 GM 24% 안팎, backlog가 매출 소진을 상쇄할 정도로 유지된다.",
+      "break": "2027 신규 task order가 매출 반등을 뒷받침하지 못하거나 OCF가 계속 큰 폭의 마이너스면 Base는 깨진다.",
+      "terminal_ev": 2352.0,
+      "terminal_equity_value": 2533.0,
+      "terminal_per_share_value": 17.469,
+      "per_share_value": 11.5999,
+      "scenario_irr": 0.20628
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.2,
+      "revenue_path": [
+        405,
+        760,
+        1050,
+        1350
+      ],
+      "gross_margin_path": [
+        0.225,
+        0.26,
+        0.285,
+        0.3
+      ],
+      "ebitda_margin_path": [
+        -0.1,
+        0.01,
+        0.09,
+        0.14
+      ],
+      "fcf": [
+        -60,
+        -20,
+        60,
+        160
+      ],
+      "diluted_shares": 148,
+      "terminal_multiple": 3.1,
+      "terminal_net_cash": 371,
+      "industry_path": "정부가 증액된 분산형 우주 아키텍처를 빠르게 발주하고 York이 Transport 및 인접 임무에서 반복적으로 큰 task order를 확보한다.",
+      "customer_adoption": "기존 고객 외 복수 프로그램이 실제 funded backlog로 전환되며 상업 M-CLASS도 계획대로 기여한다.",
+      "formation": "2027 매출 700m대, 정상화 GM 26%+, backlog/수주가 매출보다 빠르게 성장하고 현금소진이 급격히 줄어든다.",
+      "break": "수주가 IDIQ 풀 선정에 머물거나 고객 집중도·현금소진이 개선되지 않으면 Bull Execution은 성립하지 않는다.",
+      "terminal_ev": 4185.0,
+      "terminal_equity_value": 4556.0,
+      "terminal_per_share_value": 30.7838,
+      "per_share_value": 20.4413,
+      "scenario_irr": 0.428556
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.1,
+      "revenue_path": [
+        405,
+        820,
+        1200,
+        1600
+      ],
+      "gross_margin_path": [
+        0.23,
+        0.27,
+        0.3,
+        0.32
+      ],
+      "ebitda_margin_path": [
+        -0.11,
+        0.02,
+        0.11,
+        0.16
+      ],
+      "fcf": [
+        -70,
+        -30,
+        80,
+        240
+      ],
+      "diluted_shares": 152,
+      "terminal_multiple": 3.6,
+      "terminal_net_cash": 451,
+      "industry_path": "분산형 우주·assured communications·무인체계 수요가 동시에 확대되고, prime의 통합 역량이 개별 부품보다 높은 가치를 얻는다.",
+      "customer_adoption": "ATLAS/Orbion/Solestial/ALL.SPACE가 실제 교차수주와 원가·납기 우위로 이어져 고객당 지갑점유율이 확대된다.",
+      "formation": "인수 자산의 독립 매출뿐 아니라 York spacecraft와 묶인 통합 계약이 공개되고, GM 27%+와 긍정적 FCF 전환이 조기에 나타난다.",
+      "break": "교차수주가 보이지 않거나 인수자산이 현금·SBC·goodwill만 키우면 Ecosystem 프리미엄은 0으로 되돌아간다.",
+      "terminal_ev": 5760.0,
+      "terminal_equity_value": 6211.0,
+      "terminal_per_share_value": 40.8618,
+      "per_share_value": 27.1335,
+      "scenario_irr": 0.554578
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B — Hybrid",
+    "discount_rate": 0.13,
+    "valuation_horizon_years": 3.35,
+    "core": 6.7916,
+    "execution": 5.6307,
+    "ecosystem": 0.0,
+    "drag": 0.9044,
+    "expected_value": 12.4223,
+    "base_value": 11.5999,
+    "bear_value": 3.2691,
+    "bull_execution_value": 20.4413,
+    "bull_ecosystem_value": 27.1335,
+    "expected_terminal_value_2029": 18.7075,
+    "expected_irr": 0.231199,
+    "current_price": 9.32,
+    "upside_to_expected_value": 0.332865,
+    "upside_downside_ratio": 1.838,
+    "ud_2_trigger_price": 8.9932,
+    "proforma_ev_fy26_guide_mid_sales": 2.6905,
+    "proforma_ev_fy27_consensus_sales": 1.7481
+  },
+  "reverse_expectations": {
+    "terminal_timepoint": "FY2029",
+    "common_discount_rate": 0.13,
+    "base_like_terminal_net_cash": 181,
+    "base_like_diluted_shares": 145,
+    "required_revenue_by_terminal_multiple": [
+      {
+        "terminal_ev_sales": 1.8,
+        "required_2029_revenue": 1030.1,
+        "required_revenue_cagr_2026_2029": 0.3823
+      },
+      {
+        "terminal_ev_sales": 2.0,
+        "required_2029_revenue": 927.1,
+        "required_revenue_cagr_2026_2029": 0.3346
+      },
+      {
+        "terminal_ev_sales": 2.4,
+        "required_2029_revenue": 772.6,
+        "required_revenue_cagr_2026_2029": 0.2559
+      },
+      {
+        "terminal_ev_sales": 2.5,
+        "required_2029_revenue": 741.7,
+        "required_revenue_cagr_2026_2029": 0.2389
+      },
+      {
+        "terminal_ev_sales": 3.0,
+        "required_2029_revenue": 618.1,
+        "required_revenue_cagr_2026_2029": 0.1659
+      }
+    ],
+    "interpretation": "현재 가격은 2.4x terminal EV/Sales가 정당화되는 마진/현금흐름 개선을 전제로 약 $773m FY2029 revenue를 요구한다. 1.8–2.0x로 de-rate되면 약 $0.93–1.03bn이 필요하다."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue": 408.46,
+      "source": "StockAnalysis current S&P/TipRanks-derived feed"
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue": 600.25,
+      "growth_from_fy26": 0.4696
+    },
+    "fy3": {
+      "status": "PRIMARY_SOURCE_CEILING",
+      "reason": "full broker FY2028 estimate set not publicly reproducible"
+    },
+    "revision_trend": "Q2 guide reset 후 주요 브로커 PT가 $13.5–18대로 급격히 하향; 일부 Buy 유지, Hold/Neutral 증가"
+  },
+  "stance": {
+    "zone": "조건부 관심 / 증거 대기형",
+    "price_bands": {
+      "<7.5": "높은 위험을 감수한 매력 구간 — 단, backlog/cash thesis가 훼손되지 않았을 때",
+      "7.5-9.0": "조건부 관심 강해지는 구간; 약 $9.0 아래에서 modeled U/D >2",
+      "9.0-11.5": "현재 포함 관망/조건부 관심; 2027 order proof 필요",
+      "11.5-15": "Base 실행 증거가 상당 부분 필요",
+      ">15": "Bull 실행을 선반영하기 시작; 추가 수주·마진 증거 없으면 매력 저하"
+    },
+    "horizon": "FY2029 terminal / ~3.35 years",
+    "hurdle": "10–15% reference; modeled expected IRR ~23.1% but U/D ~1.84"
+  },
+  "catalysts": [
+    {
+      "when": "Q3 2026 earnings / expected mid-Nov 2026",
+      "event": "Q3 10-Q and earnings",
+      "sensitivity": "backlog, post-Q2 funded task-order value, OCF/working capital, normalized GM가 핵심"
+    },
+    {
+      "when": "Q4 2026",
+      "event": "Nemesis spacecraft delivery target",
+      "sensitivity": "GEO prime integration schedule proof; delay 시 execution credibility 손상"
+    },
+    {
+      "when": "2026 H2–2027",
+      "event": "IDIQ task-order conversion",
+      "sensitivity": "2027 revenue rebound thesis의 가장 직접적인 증거"
+    },
+    {
+      "when": "2027",
+      "event": "$187m M-CLASS commercial constellation work",
+      "sensitivity": "고객 집중도 완화와 상업 매출 다각화의 증거"
+    },
+    {
+      "when": "FY2027 Q4 onward",
+      "event": "T2 Gamma delivery-for-launch schedule begins",
+      "sensitivity": "Transport-layer 반복실행·생산능력 증거"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "promise": "국가안보 우주 산업 구조·profit pool·수요/공급·조달 사이클 B1–B5 재구성",
+      "status": "COMPLETE",
+      "h3_locator": "1.1–1.4 / Appendix A"
+    },
+    {
+      "rc_id": "RC-002",
+      "promise": "산업→York 전달 체인을 proof/leakage/KPI와 함께 매핑",
+      "status": "COMPLETE",
+      "h3_locator": "1.5 / 3.1 / 3.7"
+    },
+    {
+      "rc_id": "RC-003",
+      "promise": "IDIQ→task order→firm award→backlog→revenue→cash 채택 사다리 구축",
+      "status": "COMPLETE",
+      "h3_locator": "1.3 / 3.4 / Appendix B"
+    },
+    {
+      "rc_id": "RC-004",
+      "promise": "고객·프로그램 집중도와 경제적 다각화 정량화",
+      "status": "COMPLETE",
+      "h3_locator": "3.4 / 4.4"
+    },
+    {
+      "rc_id": "RC-005",
+      "promise": "CEO/founder의 측정 가능한 Promise→Delivery 이력 재구성",
+      "status": "COMPLETE",
+      "h3_locator": "2.1–2.2 / Appendix C"
+    },
+    {
+      "rc_id": "RC-006",
+      "promise": "CFO 전환·통제 성숙도·sponsor governance·관련자·TRA 조사",
+      "status": "COMPLETE",
+      "h3_locator": "2.3–2.5 / 4.7"
+    },
+    {
+      "rc_id": "RC-007",
+      "promise": "최근 3개년 + 연속 8분기 재무 구축",
+      "status": "COMPLETE",
+      "h3_locator": "4.1–4.2 / Appendix D"
+    },
+    {
+      "rc_id": "RC-008",
+      "promise": "EAC/계약회계 품질 원장과 정상화 마진 구축",
+      "status": "COMPLETE",
+      "h3_locator": "4.3 / Appendix D"
+    },
+    {
+      "rc_id": "RC-009",
+      "promise": "운전자본·계약자산/부채·재고·OCF/FCF 조정",
+      "status": "COMPLETE",
+      "h3_locator": "4.5 / Appendix D"
+    },
+    {
+      "rc_id": "RC-010",
+      "promise": "S/LX/M 플랫폼과 경쟁사 정량 비교 또는 명시적 ceiling",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.2–3.3 / Appendix E"
+    },
+    {
+      "rc_id": "RC-011",
+      "promise": "고객 job 기준 경쟁 매트릭스 구축",
+      "status": "COMPLETE",
+      "h3_locator": "3.5–3.6 / Appendix F"
+    },
+    {
+      "rc_id": "RC-012",
+      "promise": "생산능력·throughput·재고·공급망 제약 정량화",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.3 / Appendix G"
+    },
+    {
+      "rc_id": "RC-013",
+      "promise": "ATLAS/Orbion/Solestial/ALL.SPACE 개별 언더라이팅",
+      "status": "COMPLETE",
+      "h3_locator": "3.7 / 4.6 / 5.2 / Appendix H"
+    },
+    {
+      "rc_id": "RC-014",
+      "promise": "자본구조·완전희석 denominator·SBC·부채·TRA 정합",
+      "status": "COMPLETE",
+      "h3_locator": "4.7 / 5.2 / Appendix I"
+    },
+    {
+      "rc_id": "RC-015",
+      "promise": "backlog·win rate·on-orbit·margin·EAC·cash KPI 이력",
+      "status": "COMPLETE",
+      "h3_locator": "4.8 / 6.2"
+    },
+    {
+      "rc_id": "RC-016",
+      "promise": "컨센서스·리비전·ratings/PT·positioning 연구",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "0.4 / 5.1 / Appendix J"
+    },
+    {
+      "rc_id": "RC-017",
+      "promise": "Bear/Base/Bull operating bridge와 diluted per-share valuation",
+      "status": "COMPLETE",
+      "h3_locator": "5.2–5.4 / Appendix K"
+    },
+    {
+      "rc_id": "RC-018",
+      "promise": "현재가격 역산 기대치와 반증 가능한 mispricing rationale",
+      "status": "COMPLETE",
+      "h3_locator": "0.5 / 5.5–5.6 / 6.1"
+    }
+  ],
+  "as_of_registry": {
+    "PRICE_ASOF": "2026-08-21 close $9.32",
+    "FILING_ASOF": "2026-08-14 Q2 2026 filing",
+    "TRANSCRIPT_ASOF": "2026-08-13",
+    "CONSENSUS_ASOF": "2026-08-20–24",
+    "COMPANY_NEWS_ASOF": "2026-08-18 NITE-STAR"
+  },
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "SDA Transport award economics",
+      "authoritative_source_block": "S5/S6/S8 + derived award$/satellite",
+      "source_values": {
+        "T0": {
+          "York": 9.404,
+          "Lockheed": 18.754
+        },
+        "T1": {
+          "York": 9.095,
+          "Lockheed": 16.667
+        },
+        "T2 Alpha": {
+          "York": 9.952,
+          "Northrop": 19.263
+        }
+      },
+      "narrative_locator": "1.2, 3.5",
+      "table_locator": "Appendix F",
+      "caption_locator": "Figure 1",
+      "rendered_asset_locator": "inline SVG",
+      "source_version_or_hash": "e8ef4115acc8",
+      "display_values": {
+        "T0": {
+          "York": 9.404,
+          "Lockheed": 18.754
+        },
+        "T1": {
+          "York": 9.095,
+          "Lockheed": 16.667
+        },
+        "T2 Alpha": {
+          "York": 9.952,
+          "Northrop": 19.263
+        }
+      }
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "Latest 8-quarter revenue and gross margin",
+      "authoritative_source_block": "financials.quarterly_8q",
+      "source_values": [
+        {
+          "quarter": "Q3 2024",
+          "revenue": 62.456,
+          "gross_profit": 12.539,
+          "gross_margin": 0.201,
+          "net_income": -18.869
+        },
+        {
+          "quarter": "Q4 2024",
+          "revenue": 76.606,
+          "gross_profit": 15.656,
+          "gross_margin": 0.204,
+          "net_income": -25.268
+        },
+        {
+          "quarter": "Q1 2025",
+          "revenue": 106.252,
+          "gross_profit": 24.602,
+          "gross_margin": 0.232,
+          "net_income": -11.729
+        },
+        {
+          "quarter": "Q2 2025",
+          "revenue": 83.839,
+          "gross_profit": 9.526,
+          "gross_margin": 0.114,
+          "net_income": -24.234
+        },
+        {
+          "quarter": "Q3 2025",
+          "revenue": 90.763,
+          "gross_profit": 20.266,
+          "gross_margin": 0.223,
+          "net_income": -20.081
+        },
+        {
+          "quarter": "Q4 2025",
+          "revenue": 105.349,
+          "gross_profit": 21.066,
+          "gross_margin": 0.2,
+          "net_income": -28.493
+        },
+        {
+          "quarter": "Q1 2026",
+          "revenue": 116.343,
+          "gross_profit": 22.15,
+          "gross_margin": 0.19,
+          "net_income": -114.842
+        },
+        {
+          "quarter": "Q2 2026",
+          "revenue": 92.547,
+          "gross_profit": 22.18,
+          "gross_margin": 0.24,
+          "net_income": -39.343
+        }
+      ],
+      "narrative_locator": "4.2",
+      "table_locator": "Appendix D",
+      "caption_locator": "Figure 2",
+      "rendered_asset_locator": "inline SVG",
+      "source_version_or_hash": "03f153842191",
+      "display_values": [
+        {
+          "quarter": "Q3 2024",
+          "revenue": 62.456,
+          "gross_profit": 12.539,
+          "gross_margin": 0.201,
+          "net_income": -18.869
+        },
+        {
+          "quarter": "Q4 2024",
+          "revenue": 76.606,
+          "gross_profit": 15.656,
+          "gross_margin": 0.204,
+          "net_income": -25.268
+        },
+        {
+          "quarter": "Q1 2025",
+          "revenue": 106.252,
+          "gross_profit": 24.602,
+          "gross_margin": 0.232,
+          "net_income": -11.729
+        },
+        {
+          "quarter": "Q2 2025",
+          "revenue": 83.839,
+          "gross_profit": 9.526,
+          "gross_margin": 0.114,
+          "net_income": -24.234
+        },
+        {
+          "quarter": "Q3 2025",
+          "revenue": 90.763,
+          "gross_profit": 20.266,
+          "gross_margin": 0.223,
+          "net_income": -20.081
+        },
+        {
+          "quarter": "Q4 2025",
+          "revenue": 105.349,
+          "gross_profit": 21.066,
+          "gross_margin": 0.2,
+          "net_income": -28.493
+        },
+        {
+          "quarter": "Q1 2026",
+          "revenue": 116.343,
+          "gross_profit": 22.15,
+          "gross_margin": 0.19,
+          "net_income": -114.842
+        },
+        {
+          "quarter": "Q2 2026",
+          "revenue": 92.547,
+          "gross_profit": 22.18,
+          "gross_margin": 0.24,
+          "net_income": -39.343
+        }
+      ]
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "H1 2026 working-capital bridge",
+      "authoritative_source_block": "Q2 10-Q balances",
+      "source_values": {
+        "AR_delta": 44.261,
+        "Inventory_delta": 23.04,
+        "Contract_assets_delta": 38.158,
+        "Contract_liabilities_delta": -92.118,
+        "H1_OCF": -186.637
+      },
+      "narrative_locator": "4.5",
+      "table_locator": "Appendix D",
+      "caption_locator": "Figure 3",
+      "rendered_asset_locator": "inline SVG",
+      "source_version_or_hash": "4ed535020abd",
+      "display_values": {
+        "AR_delta": 44.261,
+        "Inventory_delta": 23.04,
+        "Contract_assets_delta": 38.158,
+        "Contract_liabilities_delta": -92.118,
+        "H1_OCF": -186.637
+      }
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "Scenario present value vs current price",
+      "authoritative_source_block": "scenarios",
+      "source_values": {
+        "Bear": 3.2691,
+        "Base": 11.5999,
+        "Bull Execution": 20.4413,
+        "Bull Ecosystem": 27.1335,
+        "Current": 9.32
+      },
+      "narrative_locator": "5.3",
+      "table_locator": "Appendix K",
+      "caption_locator": "Figure 4",
+      "rendered_asset_locator": "inline SVG",
+      "source_version_or_hash": "4a9026f704f5",
+      "display_values": {
+        "Bear": 3.2691,
+        "Base": 11.5999,
+        "Bull Execution": 20.4413,
+        "Bull Ecosystem": 27.1335,
+        "Current": 9.32
+      }
+    },
+    {
+      "vis_id": "VIS-005",
+      "figure_title": "Reverse expectations — required 2029 revenue",
+      "authoritative_source_block": "reverse_expectations",
+      "source_values": [
+        {
+          "terminal_ev_sales": 1.8,
+          "required_2029_revenue": 1030.1,
+          "required_revenue_cagr_2026_2029": 0.3823
+        },
+        {
+          "terminal_ev_sales": 2.0,
+          "required_2029_revenue": 927.1,
+          "required_revenue_cagr_2026_2029": 0.3346
+        },
+        {
+          "terminal_ev_sales": 2.4,
+          "required_2029_revenue": 772.6,
+          "required_revenue_cagr_2026_2029": 0.2559
+        },
+        {
+          "terminal_ev_sales": 2.5,
+          "required_2029_revenue": 741.7,
+          "required_revenue_cagr_2026_2029": 0.2389
+        },
+        {
+          "terminal_ev_sales": 3.0,
+          "required_2029_revenue": 618.1,
+          "required_revenue_cagr_2026_2029": 0.1659
+        }
+      ],
+      "narrative_locator": "5.5",
+      "table_locator": "Appendix K",
+      "caption_locator": "Figure 5",
+      "rendered_asset_locator": "inline SVG",
+      "source_version_or_hash": "8356b79321e8",
+      "display_values": [
+        {
+          "terminal_ev_sales": 1.8,
+          "required_2029_revenue": 1030.1,
+          "required_revenue_cagr_2026_2029": 0.3823
+        },
+        {
+          "terminal_ev_sales": 2.0,
+          "required_2029_revenue": 927.1,
+          "required_revenue_cagr_2026_2029": 0.3346
+        },
+        {
+          "terminal_ev_sales": 2.4,
+          "required_2029_revenue": 772.6,
+          "required_revenue_cagr_2026_2029": 0.2559
+        },
+        {
+          "terminal_ev_sales": 2.5,
+          "required_2029_revenue": 741.7,
+          "required_revenue_cagr_2026_2029": 0.2389
+        },
+        {
+          "terminal_ev_sales": 3.0,
+          "required_2029_revenue": 618.1,
+          "required_revenue_cagr_2026_2029": 0.1659
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "York Space Systems Q2 2026 Results",
+      "date": "2026-08-13",
+      "type": "Company IR / primary",
+      "url": "https://ir.yorkspacesystems.com/news/news-details/2026/York-Space-Systems-Reports-Second-Quarter-2026-Results/default.aspx"
+    },
+    {
+      "id": "S2",
+      "title": "York Space Systems FY2025 Form 10-K",
+      "date": "2026-03-19",
+      "type": "SEC / primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/2086587/000162828026019923/yorkspacesystemsinc10-k.htm"
+    },
+    {
+      "id": "S3",
+      "title": "York Space Systems Q1 2026 Form 10-Q",
+      "date": "2026-05-15",
+      "type": "SEC / primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/2086587/000162828026035244/yss-20260331.htm"
+    },
+    {
+      "id": "S4",
+      "title": "York Space Systems Q2 2026 Form 10-Q mirror of SEC filing",
+      "date": "2026-08-14",
+      "type": "SEC filing mirror / secondary transport",
+      "url": "https://www.stocktitan.net/sec-filings/YSS/10-q-york-space-systems-inc-quarterly-earnings-report-ac814add3bdf.html"
+    },
+    {
+      "id": "S5",
+      "title": "SDA Tranche 0 Transport Layer Awards",
+      "date": "2020-08-31",
+      "type": "U.S. government / primary",
+      "url": "https://www.sda.mil/sda-awards-contracts-for-the-first-generation-of-the-transport-layer/"
+    },
+    {
+      "id": "S6",
+      "title": "SDA Tranche 1 Transport Layer Awards",
+      "date": "2022-02-28",
+      "type": "U.S. government / primary",
+      "url": "https://www.sda.mil/space-development-agency-makes-awards-for-tranche-1-transport-layer/"
+    },
+    {
+      "id": "S7",
+      "title": "SDA T1DES Award",
+      "date": "2022-10-26",
+      "type": "U.S. government / primary",
+      "url": "https://www.sda.mil/sda-awards-prototype-agreement-to-establish-the-tranche-1-demonstration-and-experimentation-system-t1des/"
+    },
+    {
+      "id": "S8",
+      "title": "SDA Tranche 2 Alpha Awards",
+      "date": "2023-10-30",
+      "type": "U.S. government / primary",
+      "url": "https://www.sda.mil/space-development-agency-makes-awards-to-build-100-alpha-variant-satellites-for-tranche-2-transport-layer/"
+    },
+    {
+      "id": "S9",
+      "title": "SDA Tranche 2 Gamma Awards",
+      "date": "2024-08-16",
+      "type": "U.S. government / primary",
+      "url": "https://www.sda.mil/sda-makes-awards-to-build-20-gamma-variant-satellites-for-tranche-2-transport-layer/"
+    },
+    {
+      "id": "S10",
+      "title": "SDA On-Orbit / T1DES performance",
+      "date": "2026-08 accessed",
+      "type": "U.S. government / primary",
+      "url": "https://www.sda.mil/on-orbit/"
+    },
+    {
+      "id": "S11",
+      "title": "SDA T1 third launch — 21 York satellites",
+      "date": "2026-07-16",
+      "type": "U.S. government / primary",
+      "url": "https://www.sda.mil/space-development-agency-successfully-completes-third-launch-of-tranche-1-satellites/"
+    },
+    {
+      "id": "S12",
+      "title": "SDA Golden Dome AMDT3 Tracking awards",
+      "date": "2026-07-13",
+      "type": "U.S. government / primary",
+      "url": "https://www.sda.mil/space-development-agency-issues-awards-to-build-36-accelerated-missile-defense-tracking-layer-satellites-for-tranche-3-in-support-of-golden-dome-for-america/"
+    },
+    {
+      "id": "S13",
+      "title": "York Orbion acquisition",
+      "date": "2026-03-12",
+      "type": "Company IR / primary",
+      "url": "https://ir.yorkspacesystems.com/news/news-details/2026/York-Space-Systems-Acquires-Orbion-Space-Technology-Further-Strengthening-Supply-Chain-with-Flight-Proven-Spacecraft-Capability/default.aspx"
+    },
+    {
+      "id": "S14",
+      "title": "York Solestial acquisition close",
+      "date": "2026-06-04",
+      "type": "Company IR / primary",
+      "url": "https://ir.yorkspacesystems.com/news/news-details/2026/York-Space-Systems-Closes-Acquisition-of-Solestial-U-S--Sourced-Space-Solar-Capability/default.aspx"
+    },
+    {
+      "id": "S15",
+      "title": "York ALL.SPACE acquisition close",
+      "date": "2026-07-08",
+      "type": "Company IR / primary",
+      "url": "https://ir.yorkspacesystems.com/news/news-details/2026/York-Space-Systems-Completes-Acquisition-of-ALL-SPACE-Delivering-Assured-Communications-and-Positioning-in-Contested-Environments/default.aspx"
+    },
+    {
+      "id": "S16",
+      "title": "York FY2025 results / M-CLASS commercial contract / IPO",
+      "date": "2026-03-19",
+      "type": "Company IR / primary",
+      "url": "https://ir.yorkspacesystems.com/news/news-details/2026/York-Space-Systems-Reports-Fourth-Quarter-and-Full-Year-2025-Results/"
+    },
+    {
+      "id": "S17",
+      "title": "York Q1 2026 Results",
+      "date": "2026-05-14",
+      "type": "Company IR / primary",
+      "url": "https://ir.yorkspacesystems.com/news/news-details/2026/York-Space-Systems-Reports-First-Quarter-2026-Results/default.aspx"
+    },
+    {
+      "id": "S18",
+      "title": "York CFO Transition",
+      "date": "2026-08-05",
+      "type": "Company release / primary",
+      "url": "https://www.streetinsider.com/dr/news.php?id=26874131"
+    },
+    {
+      "id": "S19",
+      "title": "York AE Industrial Schedule 13G/A summary",
+      "date": "2026-08-14",
+      "type": "SEC filing mirror",
+      "url": "https://www.stocktitan.net/sec-filings/YSS/schedule-13g-a-york-space-systems-inc-amended-passive-investment-disc-b3d598b1177f.html"
+    },
+    {
+      "id": "S20",
+      "title": "York IPO prospectus",
+      "date": "2026-01-29",
+      "type": "SEC / primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/2086587/000119312526030469/d941199d424b4.htm"
+    },
+    {
+      "id": "S21",
+      "title": "York NITE-STAR selection",
+      "date": "2026-08-18",
+      "type": "Company release distributed by Nasdaq",
+      "url": "https://www.nasdaq.com/press-release/york-space-systems-selected-us-space-force-nite-star-contract-support-national-space"
+    },
+    {
+      "id": "S22",
+      "title": "YSS historical price",
+      "date": "2026-08-24 accessed",
+      "type": "Market data / secondary",
+      "url": "https://www.investing.com/equities/york-space-systems-inc-historical-data"
+    },
+    {
+      "id": "S23",
+      "title": "YSS consensus financial forecast",
+      "date": "2026-08-20 updated",
+      "type": "S&P/TipRanks-derived secondary",
+      "url": "https://stockanalysis.com/stocks/yss/forecast/"
+    },
+    {
+      "id": "S24",
+      "title": "YSS analyst target revisions",
+      "date": "2026-08-24 accessed",
+      "type": "Market consensus / secondary",
+      "url": "https://www.investing.com/equities/york-space-systems-inc-consensus-estimates"
+    }
+  ],
+  "latest_source_check": {
+    "checked_through": "2026-08-24",
+    "items_consumed": [
+      "Q2 2026 10-Q / earnings",
+      "2026-08-14 AE Industrial 13G/A ownership update",
+      "2026-08-18 NITE-STAR company announcement"
+    ]
+  }
+}

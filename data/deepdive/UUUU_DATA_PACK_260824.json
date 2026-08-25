@@ -1,0 +1,1362 @@
+{
+  "meta": {
+    "ticker": "UUUU",
+    "company": "Energy Fuels Inc.",
+    "T0": "2026-08-21",
+    "price_asof": "2026-08-21 close",
+    "research_asof": "2026-08-24",
+    "filing_asof": "2026-08-05 Q2 2026 Form 10-Q",
+    "consensus_asof": "2026-08-24 public snapshot",
+    "version": "DDOS v1.7 / UUUU 2026-08-24",
+    "currency": "USD",
+    "horizon_years": 3.5,
+    "current_price": 15.14,
+    "note": "Decision-relevant numeric source for the accompanying HTML/PDF report. Scenario figures are analyst estimates, not company guidance unless explicitly labeled."
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue_m": 37.928,
+        "operating_pl_m": -32.367,
+        "net_attributable_m": 99.862
+      },
+      {
+        "year": 2024,
+        "revenue_m": 78.114,
+        "operating_pl_m": -47.515,
+        "net_attributable_m": -47.765
+      },
+      {
+        "year": 2025,
+        "revenue_m": 65.922,
+        "operating_pl_m": -101.155,
+        "net_attributable_m": -85.634
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "Q3 2024",
+        "revenue_m": 4.047,
+        "operating_pl_m": -11.913,
+        "net_attributable_m": -12.06,
+        "source_type": "direct 10-Q"
+      },
+      {
+        "quarter": "Q4 2024",
+        "revenue_m": 39.922,
+        "operating_pl_m": -28.579,
+        "net_attributable_m": -32.926,
+        "source_type": "FY-9M derived"
+      },
+      {
+        "quarter": "Q1 2025",
+        "revenue_m": 16.898,
+        "operating_pl_m": -26.193,
+        "net_attributable_m": -26.297,
+        "source_type": "direct 10-Q"
+      },
+      {
+        "quarter": "Q2 2025",
+        "revenue_m": 4.212,
+        "operating_pl_m": -26.175,
+        "net_attributable_m": -21.812,
+        "source_type": "direct 10-Q"
+      },
+      {
+        "quarter": "Q3 2025",
+        "revenue_m": 17.71,
+        "operating_pl_m": -26.666,
+        "net_attributable_m": -16.736,
+        "source_type": "direct / 9M reconciliation"
+      },
+      {
+        "quarter": "Q4 2025",
+        "revenue_m": 27.102,
+        "operating_pl_m": -22.121,
+        "net_attributable_m": -20.789,
+        "source_type": "FY-9M derived"
+      },
+      {
+        "quarter": "Q1 2026",
+        "revenue_m": 35.838,
+        "operating_pl_m": -16.928,
+        "net_attributable_m": -10.844,
+        "source_type": "direct 10-Q"
+      },
+      {
+        "quarter": "Q2 2026",
+        "revenue_m": 25.108,
+        "operating_pl_m": -30.575,
+        "net_attributable_m": -33.378,
+        "source_type": "direct 10-Q"
+      }
+    ],
+    "q2_2026": {
+      "revenue_m": 25.108,
+      "operating_loss_m": 30.575,
+      "net_loss_attributable_m": 33.378
+    },
+    "h1_2026": {
+      "revenue_m": 60.946,
+      "operating_loss_m": 47.503
+    },
+    "liquidity_2026_06_30": {
+      "cash_m": 58.416,
+      "marketable_securities_m": 878.338,
+      "gross_liquidity_m": 936.754,
+      "working_capital_m": 996.0
+    },
+    "ceilings": [
+      "Q4 2024 and Q4 2025 are derived as FY minus 9M SEC values.",
+      "Post-VAC purchase accounting and integration economics are not yet observable in reported UUUU financials."
+    ]
+  },
+  "uranium": {
+    "recent_mine_transport_cost_per_lb": 14.0,
+    "recent_milling_cost_per_lb": 9.0,
+    "recent_combined_cost_per_lb": 23.0,
+    "q2_2026_sales_klb": 310,
+    "q2_2026_realized_price_per_lb": 80.48,
+    "finished_inventory_mlb": 1.64,
+    "finished_plus_ore_wip_mlb": 2.265,
+    "guidance_2026": {
+      "mined_mlb": [
+        2.0,
+        2.5
+      ],
+      "processed_mlb": [
+        1.5,
+        2.5
+      ],
+      "sales_mlb": [
+        1.5,
+        2.0
+      ]
+    },
+    "pinyon_plain_pp_reserve_mlb": 2.06,
+    "pinyon_plain_pp_grade_pct": 1.06
+  },
+  "rare_earth_industry": {
+    "china_share_2024_pct": {
+      "magnet_ree_mining": 60,
+      "refining": 91,
+      "sintered_permanent_magnets": 94
+    },
+    "non_china_capacity_multiplier_needed_2035": {
+      "mining": 2,
+      "refining": 4,
+      "magnet_manufacturing": 6
+    }
+  },
+  "assets_and_transactions": {
+    "white_mesa_phase1": {
+      "monazite_tpa": [
+        8000,
+        10000
+      ],
+      "ndpr_tpa": [
+        850,
+        1000
+      ]
+    },
+    "white_mesa_hre_max_design_tpa": {
+      "Tb": 20,
+      "Dy": 120,
+      "Sm": 140,
+      "Eu": 20,
+      "Gd": 140
+    },
+    "donald": {
+      "post_tax_npv8_m": 496,
+      "irr_pct": 16,
+      "uuuu_max_interest_pct": 49,
+      "expected_monazite_tpa": [
+        8500,
+        9500
+      ],
+      "feed_target_year": 2028
+    },
+    "vara_mada": {
+      "post_tax_npv10_m": 1415,
+      "irr_pct": 22.1,
+      "avg_monazite_tpa": 24000
+    },
+    "asm": {
+      "share_ratio_uuuu_per_asm": 0.053,
+      "cash_aud_per_share": 0.13,
+      "estimated_uuuu_shares_m": 14.813,
+      "kmp_installed_ndfeb_alloy_tpa": 1300,
+      "kmp_expansion_design_tpa": 3600,
+      "expected_close": "2026-08-28"
+    },
+    "vac": {
+      "cash_consideration_m": 718,
+      "uuuu_shares_m": 65.853,
+      "preferred_topup_max_m": 135,
+      "adjusted_net_debt_assumption_m": 140,
+      "fy2025_revenue_eur_m": 325.052,
+      "fy2025_revenue_usd_m": 367.5,
+      "legacy_adjusted_ebitda_m": 28.6,
+      "customers_plus": 1000,
+      "patents_plus": 400,
+      "top10_customer_pct": 33,
+      "customer_specific_output_pct": 85,
+      "sumter_current_tpa": 2000,
+      "sumter_scalable_tpa": 12000,
+      "management_ebitda_targets_m": {
+        "2000_tpa": [
+          65,
+          75
+        ],
+        "4000_tpa": [
+          130,
+          140
+        ],
+        "12000_tpa": 400
+      },
+      "expected_close": "early 2027"
+    }
+  },
+  "capital_structure": {
+    "common_shares_2026_07_31_m": 249.965,
+    "h1_2026_atm_shares_m": 8.375,
+    "h1_2026_atm_net_proceeds_m": 153.1,
+    "convert_face_m": 700,
+    "convert_coupon_pct": 0.75,
+    "convert_due": "2031-11-01",
+    "convert_price": 20.34,
+    "convert_underlying_m_before_capped_call": 34.4,
+    "capped_call_effective_price_approx": 30.7,
+    "asm_estimated_new_shares_m": 14.813,
+    "vac_new_shares_m": 65.853,
+    "simple_post_asm_vac_common_m": 330.631,
+    "goldman_secured_term_loan_commitment_m": 250,
+    "osc_conditional_facility_m": 725
+  },
+  "kpis": [
+    {
+      "name": "Uranium mine+mill recent cost",
+      "unit": "$/lb",
+      "history": [
+        {
+          "date": "2026-H1 recent campaign",
+          "value": 23.0
+        }
+      ],
+      "current": 23.0,
+      "thresholds": {
+        "green": "<=30 지속",
+        "yellow": "30-40",
+        "red": ">40 지속"
+      }
+    },
+    {
+      "name": "Finished U3O8 inventory",
+      "unit": "m lb",
+      "history": [
+        {
+          "date": "2026-06-30",
+          "value": 1.64
+        }
+      ],
+      "current": 1.64,
+      "thresholds": {
+        "green": ">=1.3m 유지하며 판매",
+        "yellow": "0.8-1.3m",
+        "red": "<0.8m + replenishment 약화"
+      }
+    },
+    {
+      "name": "Uranium 2026 sales",
+      "unit": "m lb",
+      "history": [],
+      "current": "guidance 1.5-2.0",
+      "thresholds": {
+        "green": "가이던스 달성 + margin 개선",
+        "yellow": "volume 달성, margin 정체",
+        "red": "volume/원가 동시 악화"
+      }
+    },
+    {
+      "name": "Tb/Dy commercial adoption",
+      "unit": "stage",
+      "history": [
+        {
+          "date": "2026-08-19",
+          "value": "Tb qualification passed"
+        }
+      ],
+      "current": "Tb qualification 통과",
+      "thresholds": {
+        "green": "반복 상업주문/volume 공개",
+        "yellow": "qualification만 유지",
+        "red": "고객 reject 또는 2027년 상반기까지 주문 증거 부재"
+      }
+    },
+    {
+      "name": "White Mesa HRE expansion",
+      "unit": "stage",
+      "history": [],
+      "current": "construction",
+      "thresholds": {
+        "green": "Tb/Dy 2027년 말 일정 유지",
+        "yellow": "1-2분기 지연",
+        "red": ">2분기 지연/예산 급증"
+      }
+    },
+    {
+      "name": "Donald FID",
+      "unit": "stage",
+      "history": [],
+      "current": "Q3 2026 target",
+      "thresholds": {
+        "green": "2026년 내 FID + finance",
+        "yellow": "2027년 상반기로 지연",
+        "red": "2027년 상반기 이후/조건 악화"
+      }
+    },
+    {
+      "name": "ASM integration",
+      "unit": "stage",
+      "history": [],
+      "current": "2026-08-28 expected",
+      "thresholds": {
+        "green": "closing + KMP throughput 유지",
+        "yellow": "closing 지연 <1분기",
+        "red": "거래실패/고객이탈"
+      }
+    },
+    {
+      "name": "VAC closing",
+      "unit": "stage",
+      "history": [],
+      "current": "early 2027 expected",
+      "thresholds": {
+        "green": "일정 내 close, funding 명확",
+        "yellow": "1-2분기 지연",
+        "red": "거래조건 악화/철회"
+      }
+    },
+    {
+      "name": "Sumter utilization/EBITDA",
+      "unit": "stage",
+      "history": [],
+      "current": "initial production",
+      "thresholds": {
+        "green": "2027에 2ktpa economics 가시화",
+        "yellow": "낮은 utilization이나 개선",
+        "red": "startup loss 지속, 고객 ramp 부재"
+      }
+    },
+    {
+      "name": "Pro forma common shares",
+      "unit": "m shares",
+      "history": [
+        {
+          "date": "post ASM/VAC simple",
+          "value": 330.631
+        }
+      ],
+      "current": 330.631,
+      "thresholds": {
+        "green": "<=340m",
+        "yellow": "340-365m",
+        "red": ">365m, 가치창출 없이 추가발행"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.3,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "revenue_path_bn": [
+        0.15,
+        0.55,
+        0.72,
+        0.82,
+        0.9
+      ],
+      "margin_path": [
+        -0.25,
+        0.02,
+        0.08,
+        0.12,
+        0.15
+      ],
+      "fcf_path_bn": [
+        -0.1,
+        -0.15,
+        -0.08,
+        0.0,
+        0.05
+      ],
+      "terminal_ebitda_m": 135,
+      "diluted_shares_m": 331,
+      "net_debt_preferred_bn": 0.8,
+      "per_share_value": 9.0
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "revenue_path_bn": [
+        0.15,
+        0.62,
+        0.88,
+        1.16,
+        1.45
+      ],
+      "margin_path": [
+        -0.25,
+        0.05,
+        0.11,
+        0.17,
+        0.21
+      ],
+      "fcf_path_bn": [
+        -0.1,
+        -0.1,
+        0.02,
+        0.1,
+        0.175
+      ],
+      "terminal_ebitda_m": 300,
+      "diluted_shares_m": 335,
+      "net_debt_preferred_bn": 0.5,
+      "per_share_value": 16.5
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.22,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "revenue_path_bn": [
+        0.15,
+        0.68,
+        1.05,
+        1.55,
+        2.2
+      ],
+      "margin_path": [
+        -0.25,
+        0.07,
+        0.14,
+        0.2,
+        0.24
+      ],
+      "fcf_path_bn": [
+        -0.1,
+        -0.08,
+        0.08,
+        0.22,
+        0.34
+      ],
+      "terminal_ebitda_m": 520,
+      "diluted_shares_m": 342,
+      "net_debt_preferred_bn": 0.3,
+      "per_share_value": 25.0
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.08,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "revenue_path_bn": [
+        0.15,
+        0.72,
+        1.3,
+        2.15,
+        3.2
+      ],
+      "margin_path": [
+        -0.25,
+        0.08,
+        0.16,
+        0.23,
+        0.27
+      ],
+      "fcf_path_bn": [
+        -0.1,
+        -0.05,
+        0.14,
+        0.38,
+        0.6
+      ],
+      "terminal_ebitda_m": 850,
+      "diluted_shares_m": 360,
+      "net_debt_preferred_bn": 0.2,
+      "per_share_value": 35.0
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B Hybrid",
+    "attribution_current_per_share": {
+      "core": 5.6,
+      "execution": 10.4,
+      "ecosystem": 0.0,
+      "funding_dilution_drag": -4.16
+    },
+    "expected_future_value": 17.6,
+    "expected_value": 11.84,
+    "expected_irr": 0.044,
+    "hurdle_rate": 0.12,
+    "horizon_years": 3.5,
+    "current_price": 15.14,
+    "base_future_value": 16.5,
+    "bull_execution_bear_ud": 1.61,
+    "hurdle_entry_price": 11.84
+  },
+  "reverse_expectations": {
+    "current_price": 15.14,
+    "hurdle_rate": 0.12,
+    "horizon_years": 3.5,
+    "required_2030_per_share": 22.51,
+    "pro_forma_common_m": 330.631,
+    "required_equity_value_bn": 7.44,
+    "ev_range_bn": [
+      7.74,
+      8.14
+    ],
+    "net_debt_preferred_range_bn": [
+      0.3,
+      0.7
+    ],
+    "required_ebitda_m_at_15x": [
+      516,
+      543
+    ],
+    "required_ebitda_m_at_12x": [
+      645,
+      679
+    ],
+    "operating_translation": [
+      "우라늄 저원가 현금엔진 유지",
+      "White Mesa heavy-REE commercial order 확보",
+      "Donald 2028 feed 공급",
+      "VAC Sumter 최소 4ktpa economics 접근",
+      "추가 희석 제한"
+    ]
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "eps": "public snapshots vary / not used as anchor"
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_m_public_aggregator": 224.8,
+      "eps_public_aggregator": 0.03,
+      "merger_inclusion": "uncertain"
+    },
+    "recent_target_sample": [
+      {
+        "firm": "BMO",
+        "target": 18
+      },
+      {
+        "firm": "B. Riley",
+        "target": 25
+      },
+      {
+        "firm": "Roth/MKM",
+        "target": 16
+      },
+      {
+        "firm": "H.C. Wainwright",
+        "target": 29
+      },
+      {
+        "firm": "Goldman",
+        "target": 21
+      }
+    ],
+    "target_sample_average": 21.8,
+    "target_sample_median": 21.0,
+    "short_interest_public_aggregator": {
+      "asof": "2026-07-31",
+      "shares_m": 50.753,
+      "pct_float": 20.51
+    },
+    "revision_trend": "PRIMARY_SOURCE_CEILING: full sell-side model revision series and exact merger roll-forward not reconstructable from primary sources."
+  },
+  "stance": {
+    "zone": "관망 / 신규매수 비선호",
+    "existing_holder": "실행 증거 없이 비중 확대 비선호",
+    "price_bands": [
+      {
+        "min": null,
+        "max": 11.8,
+        "label": "적극 재평가 / Buy-zone 후보",
+        "logic": "현재 scenario set에서 기대 IRR 약 12% 이상"
+      },
+      {
+        "min": 11.8,
+        "max": 13.0,
+        "label": "조건부 관심",
+        "logic": "기대 IRR 약 9-12%, catalyst 확인 필요"
+      },
+      {
+        "min": 13.0,
+        "max": 18.0,
+        "label": "관망 / 신규매수 비선호",
+        "logic": "현재가 포함; Bull Execution 성공이 더 필요"
+      },
+      {
+        "min": 18.0,
+        "max": 24.0,
+        "label": "execution premium",
+        "logic": "실적증거 없이는 margin of safety 부족"
+      },
+      {
+        "min": 24.0,
+        "max": null,
+        "label": "ecosystem priced",
+        "logic": "4ktpa+ magnet ramp와 추가 feed/Phase2 상당 부분 선반영"
+      }
+    ],
+    "horizon": "2030 operating run-rate / about 3.5 years",
+    "falsification_rule": "6개 반증 조건 중 2개 이상 동시 발생 시 thesis를 크게 하향",
+    "bull_execution_upgrade_rule": "2027년 중반까지 Tb/Dy 반복주문, Donald FID, VAC/Sumter 2ktpa evidence, White Mesa HRE 일정 준수 중 최소 3개"
+  },
+  "catalysts": [
+    {
+      "when": "2026-08-28 예정",
+      "event": "ASM scheme implementation",
+      "sensitivity": "HIGH",
+      "watch": "실제 closing, 신주수, KMP integration plan"
+    },
+    {
+      "when": "2026 Q3-Q4",
+      "event": "Donald FID",
+      "sensitivity": "HIGH",
+      "watch": "project financing, UUUU 추가 cash/equity contribution"
+    },
+    {
+      "when": "2026 Q4 / 2027 초",
+      "event": "다음 uranium mill campaign 가능성",
+      "sensitivity": "MED-HIGH",
+      "watch": "stockpile grade, recovered lbs, unit cost"
+    },
+    {
+      "when": "2026 Q4",
+      "event": "Tb/Dy commercial order update 가능성",
+      "sensitivity": "HIGH",
+      "watch": "qualification -> signed volume"
+    },
+    {
+      "when": "2027 초",
+      "event": "VAC closing target",
+      "sensitivity": "VERY HIGH",
+      "watch": "cash/debt/preferred 최종 funding bridge, share count"
+    },
+    {
+      "when": "2027-02 전후",
+      "event": "FY2026 results / 2027 guidance",
+      "sensitivity": "HIGH",
+      "watch": "uranium gross margin, transaction cost, HRE capex, Sumter guide"
+    },
+    {
+      "when": "2027 Q1-Q2",
+      "event": "VAC/ASM 첫 연결 성과",
+      "sensitivity": "VERY HIGH",
+      "watch": "customer retention, revenue, margin, working capital"
+    },
+    {
+      "when": "2027 Q2",
+      "event": "Donald/White Mesa construction update",
+      "sensitivity": "HIGH",
+      "watch": "2028 feed와 2027 HRE schedule 동기화"
+    },
+    {
+      "when": "2027-08 전후",
+      "event": "Q2 2027 results",
+      "sensitivity": "VERY HIGH",
+      "watch": "Sumter utilization, HRE commercial sales, net debt/희석"
+    }
+  ],
+  "falsification_conditions": [
+    "Pinyon Plain 중심 blended mine+mill cost가 $40/lb를 지속적으로 넘고 uranium inventory까지 감소",
+    "Tb/Dy가 qualification 단계에 머물고 2027년 상반기까지 반복 상업주문 또는 meaningful shipment 증거 부재",
+    "Donald FID가 2027년 상반기 이후로 밀리거나 parent-level equity funding 의존도 급증",
+    "White Mesa HRE circuit이 두 분기 이상 지연되고 capex가 크게 증가",
+    "VAC closing 후 Sumter utilization이 낮고 legacy business margin까지 악화",
+    "계획된 ASM/VAC 거래주식 외 10% 이상의 추가 common dilution이 funding gap 때문에 발생"
+  ],
+  "price_history": [
+    {
+      "date": "2026-06-22",
+      "close": 16.12,
+      "event": "VAC announcement 전일"
+    },
+    {
+      "date": "2026-06-23",
+      "close": 15.47,
+      "event": "VAC announcement"
+    },
+    {
+      "date": "2026-07-07",
+      "close": 12.86,
+      "event": "Bhappu insider purchase day"
+    },
+    {
+      "date": "2026-07-29",
+      "close": 10.74,
+      "event": "White Mesa HRE construction announcement"
+    },
+    {
+      "date": "2026-08-05",
+      "close": 12.44,
+      "event": "Q2 results"
+    },
+    {
+      "date": "2026-08-12",
+      "close": 14.47,
+      "event": "ASM shareholder approval"
+    },
+    {
+      "date": "2026-08-19",
+      "close": 14.85,
+      "event": "Tb qualification"
+    },
+    {
+      "date": "2026-08-21",
+      "close": 15.14,
+      "event": "T0"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "report_locator": "0, 2",
+      "scope": "economic pivot"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "report_locator": "1.1, 3.1",
+      "scope": "uranium structure"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "report_locator": "1.2-1.4",
+      "scope": "REE/magnet structure"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "report_locator": "3.1, 4",
+      "scope": "uranium P&L bridge"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "report_locator": "2.2, App.C/G",
+      "scope": "Pinyon detail + support-mine ceiling"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "report_locator": "1.2, 2.3, 3.2",
+      "scope": "White Mesa architecture"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "report_locator": "2.4, 3.3",
+      "scope": "feedstock ledger"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "report_locator": "1.3, App.D",
+      "scope": "adoption ladder"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "report_locator": "2.5, 3.4",
+      "scope": "ASM"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "report_locator": "1.4, 2.6, 3.4",
+      "scope": "VAC"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "report_locator": "3.5, 4.4, App.H",
+      "scope": "funding"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "report_locator": "2.8, App.E",
+      "scope": "management record"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "report_locator": "1.3-1.4, 2.7, App.F",
+      "scope": "competition"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "report_locator": "4, App.B",
+      "scope": "3Y/8Q"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "report_locator": "3.5, App.H",
+      "scope": "capital structure"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "report_locator": "2.4, App.G",
+      "scope": "project economics"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "report_locator": "1-3, App.M",
+      "scope": "regulatory/social"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE",
+      "report_locator": "1, 3, 6",
+      "scope": "macro sensitivity"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "report_locator": "5.4, App.J",
+      "scope": "consensus/positioning"
+    },
+    {
+      "rc_id": "RC-020",
+      "status": "NOT_MATERIAL",
+      "report_locator": "App.N",
+      "scope": "vanadium/TAT option only"
+    },
+    {
+      "rc_id": "RC-021",
+      "status": "COMPLETE",
+      "report_locator": "5, App.I",
+      "scope": "valuation/reverse expectations"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Energy Fuels Q2 2026 Form 10-Q",
+      "publisher": "SEC",
+      "date": "2026-08-05",
+      "url": "https://www.sec.gov/Archives/edgar/data/1385849/000138584926000029/efr-20260630.htm"
+    },
+    {
+      "id": "S2",
+      "title": "Energy Fuels FY2025 Form 10-K",
+      "publisher": "SEC",
+      "url": "https://www.sec.gov/Archives/edgar/data/1385849/000138584926000009/efr-20251231.htm"
+    },
+    {
+      "id": "S3",
+      "title": "Energy Fuels FY2024 Form 10-K",
+      "publisher": "SEC",
+      "url": "https://www.sec.gov/Archives/edgar/data/1385849/000138584925000004/efr-20241231.htm"
+    },
+    {
+      "id": "S4",
+      "title": "Energy Fuels Q3 2024 Form 10-Q",
+      "publisher": "SEC",
+      "url": "https://www.sec.gov/Archives/edgar/data/1385849/000138584924000052/efr-20240930.htm"
+    },
+    {
+      "id": "S5",
+      "title": "Energy Fuels Q3 2025 Form 10-Q",
+      "publisher": "SEC",
+      "url": "https://www.sec.gov/Archives/edgar/data/1385849/000138584925000044/efr-20250930.htm"
+    },
+    {
+      "id": "S6",
+      "title": "VAC Scheme Booklet / transaction exhibit",
+      "publisher": "SEC",
+      "url": "https://www.sec.gov/Archives/edgar/data/1385849/000106299326003884/exhibit99-1.htm"
+    },
+    {
+      "id": "S7",
+      "title": "U.S. Uranium Marketing Annual Report 2025",
+      "publisher": "U.S. EIA",
+      "url": "https://www.eia.gov/uranium/marketing/"
+    },
+    {
+      "id": "S8",
+      "title": "Rare Earth Elements / Global Critical Minerals Outlook 2026",
+      "publisher": "IEA",
+      "url": "https://www.iea.org/reports/rare-earth-elements"
+    },
+    {
+      "id": "S9",
+      "title": "MP Materials FY2025 results",
+      "publisher": "MP Materials",
+      "url": "https://investors.mpmaterials.com/investor-news/news-details/2026/MP-Materials-Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx"
+    },
+    {
+      "id": "S10",
+      "title": "Lynas Rare Earths U.S. markets / products",
+      "publisher": "Lynas Rare Earths",
+      "url": "https://lynasrareearths.com/products-our-products/us-markets/"
+    },
+    {
+      "id": "S11",
+      "title": "White Mesa permit / public participation records",
+      "publisher": "Utah DEQ",
+      "url": "https://lf-public.deq.utah.gov/"
+    },
+    {
+      "id": "S12",
+      "title": "Reporting on Navajo Nation uranium-haul agreement",
+      "publisher": "Associated Press",
+      "url": null
+    },
+    {
+      "id": "S13",
+      "title": "Tb oxide Japan-customer qualification release",
+      "publisher": "Energy Fuels",
+      "date": "2026-08-19",
+      "url": "https://investors.energyfuels.com/news-releases"
+    },
+    {
+      "id": "S14",
+      "title": "Donald Project technical/economic disclosures",
+      "publisher": "Energy Fuels SEC filings",
+      "url": null
+    },
+    {
+      "id": "S15",
+      "title": "Vara Mada technical report disclosures",
+      "publisher": "Energy Fuels SEC filings",
+      "url": null
+    },
+    {
+      "id": "S16",
+      "title": "ASM transaction / Korean Metals Plant scheme materials",
+      "publisher": "Energy Fuels / ASM",
+      "url": null
+    },
+    {
+      "id": "S17",
+      "title": "Energy Fuels 2026 Proxy Statement",
+      "publisher": "SEC",
+      "url": null
+    },
+    {
+      "id": "S18",
+      "title": "Ross Bhappu Form 4",
+      "publisher": "SEC",
+      "date": "2026-07",
+      "url": null
+    },
+    {
+      "id": "S19",
+      "title": "0.75% Convertible Senior Notes due 2031 filing / release",
+      "publisher": "SEC / Energy Fuels",
+      "url": null
+    },
+    {
+      "id": "S20",
+      "title": "Conditional U.S. Office of Strategic Capital financing release",
+      "publisher": "Energy Fuels",
+      "date": "2026-06-18",
+      "url": null
+    }
+  ],
+  "visual_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "연속 8분기 재무",
+      "authoritative_source_block": "financials.quarterly_8q",
+      "source_hash": "b4b859aa38588f91",
+      "source_values": [
+        {
+          "quarter": "Q3 2024",
+          "revenue_m": 4.047,
+          "operating_pl_m": -11.913,
+          "net_attributable_m": -12.06,
+          "source_type": "direct 10-Q"
+        },
+        {
+          "quarter": "Q4 2024",
+          "revenue_m": 39.922,
+          "operating_pl_m": -28.579,
+          "net_attributable_m": -32.926,
+          "source_type": "FY-9M derived"
+        },
+        {
+          "quarter": "Q1 2025",
+          "revenue_m": 16.898,
+          "operating_pl_m": -26.193,
+          "net_attributable_m": -26.297,
+          "source_type": "direct 10-Q"
+        },
+        {
+          "quarter": "Q2 2025",
+          "revenue_m": 4.212,
+          "operating_pl_m": -26.175,
+          "net_attributable_m": -21.812,
+          "source_type": "direct 10-Q"
+        },
+        {
+          "quarter": "Q3 2025",
+          "revenue_m": 17.71,
+          "operating_pl_m": -26.666,
+          "net_attributable_m": -16.736,
+          "source_type": "direct / 9M reconciliation"
+        },
+        {
+          "quarter": "Q4 2025",
+          "revenue_m": 27.102,
+          "operating_pl_m": -22.121,
+          "net_attributable_m": -20.789,
+          "source_type": "FY-9M derived"
+        },
+        {
+          "quarter": "Q1 2026",
+          "revenue_m": 35.838,
+          "operating_pl_m": -16.928,
+          "net_attributable_m": -10.844,
+          "source_type": "direct 10-Q"
+        },
+        {
+          "quarter": "Q2 2026",
+          "revenue_m": 25.108,
+          "operating_pl_m": -30.575,
+          "net_attributable_m": -33.378,
+          "source_type": "direct 10-Q"
+        }
+      ],
+      "display_values": "generated directly from authoritative block",
+      "narrative_locator": "4.2 / Appendix B",
+      "table_locator": "4.2 / Appendix B",
+      "caption_locator": "4.2 / Appendix B",
+      "rendered_asset_locator": "inline SVG in HTML/PDF"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "시나리오별 2030 주당가치",
+      "authoritative_source_block": "scenarios",
+      "source_hash": "1485aeb561a53093",
+      "source_values": [
+        {
+          "name": "Bear",
+          "probability": 0.3,
+          "years": [
+            2026,
+            2027,
+            2028,
+            2029,
+            2030
+          ],
+          "revenue_path_bn": [
+            0.15,
+            0.55,
+            0.72,
+            0.82,
+            0.9
+          ],
+          "margin_path": [
+            -0.25,
+            0.02,
+            0.08,
+            0.12,
+            0.15
+          ],
+          "fcf_path_bn": [
+            -0.1,
+            -0.15,
+            -0.08,
+            0.0,
+            0.05
+          ],
+          "terminal_ebitda_m": 135,
+          "diluted_shares_m": 331,
+          "net_debt_preferred_bn": 0.8,
+          "per_share_value": 9.0
+        },
+        {
+          "name": "Base",
+          "probability": 0.4,
+          "years": [
+            2026,
+            2027,
+            2028,
+            2029,
+            2030
+          ],
+          "revenue_path_bn": [
+            0.15,
+            0.62,
+            0.88,
+            1.16,
+            1.45
+          ],
+          "margin_path": [
+            -0.25,
+            0.05,
+            0.11,
+            0.17,
+            0.21
+          ],
+          "fcf_path_bn": [
+            -0.1,
+            -0.1,
+            0.02,
+            0.1,
+            0.175
+          ],
+          "terminal_ebitda_m": 300,
+          "diluted_shares_m": 335,
+          "net_debt_preferred_bn": 0.5,
+          "per_share_value": 16.5
+        },
+        {
+          "name": "Bull Execution",
+          "probability": 0.22,
+          "years": [
+            2026,
+            2027,
+            2028,
+            2029,
+            2030
+          ],
+          "revenue_path_bn": [
+            0.15,
+            0.68,
+            1.05,
+            1.55,
+            2.2
+          ],
+          "margin_path": [
+            -0.25,
+            0.07,
+            0.14,
+            0.2,
+            0.24
+          ],
+          "fcf_path_bn": [
+            -0.1,
+            -0.08,
+            0.08,
+            0.22,
+            0.34
+          ],
+          "terminal_ebitda_m": 520,
+          "diluted_shares_m": 342,
+          "net_debt_preferred_bn": 0.3,
+          "per_share_value": 25.0
+        },
+        {
+          "name": "Bull Ecosystem",
+          "probability": 0.08,
+          "years": [
+            2026,
+            2027,
+            2028,
+            2029,
+            2030
+          ],
+          "revenue_path_bn": [
+            0.15,
+            0.72,
+            1.3,
+            2.15,
+            3.2
+          ],
+          "margin_path": [
+            -0.25,
+            0.08,
+            0.16,
+            0.23,
+            0.27
+          ],
+          "fcf_path_bn": [
+            -0.1,
+            -0.05,
+            0.14,
+            0.38,
+            0.6
+          ],
+          "terminal_ebitda_m": 850,
+          "diluted_shares_m": 360,
+          "net_debt_preferred_bn": 0.2,
+          "per_share_value": 35.0
+        }
+      ],
+      "display_values": "generated directly from authoritative block",
+      "narrative_locator": "0 / 5.3",
+      "table_locator": "0 / 5.3",
+      "caption_locator": "0 / 5.3",
+      "rendered_asset_locator": "inline SVG in HTML/PDF"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "밸류에이션 현재가치 브리지",
+      "authoritative_source_block": "valuation.attribution_current_per_share",
+      "source_hash": "41679703c3b3ffd0",
+      "source_values": {
+        "core": 5.6,
+        "execution": 10.4,
+        "ecosystem": 0.0,
+        "funding_dilution_drag": -4.16
+      },
+      "display_values": "generated directly from authoritative block",
+      "narrative_locator": "5.1",
+      "table_locator": "5.1",
+      "caption_locator": "5.1",
+      "rendered_asset_locator": "inline SVG in HTML/PDF"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "현재가가 요구하는 역산 기대치",
+      "authoritative_source_block": "reverse_expectations",
+      "source_hash": "bb011e697e7bdd9d",
+      "source_values": {
+        "current_price": 15.14,
+        "hurdle_rate": 0.12,
+        "horizon_years": 3.5,
+        "required_2030_per_share": 22.51,
+        "pro_forma_common_m": 330.631,
+        "required_equity_value_bn": 7.44,
+        "ev_range_bn": [
+          7.74,
+          8.14
+        ],
+        "net_debt_preferred_range_bn": [
+          0.3,
+          0.7
+        ],
+        "required_ebitda_m_at_15x": [
+          516,
+          543
+        ],
+        "required_ebitda_m_at_12x": [
+          645,
+          679
+        ],
+        "operating_translation": [
+          "우라늄 저원가 현금엔진 유지",
+          "White Mesa heavy-REE commercial order 확보",
+          "Donald 2028 feed 공급",
+          "VAC Sumter 최소 4ktpa economics 접근",
+          "추가 희석 제한"
+        ]
+      },
+      "display_values": "generated directly from authoritative block",
+      "narrative_locator": "5.2",
+      "table_locator": "5.2",
+      "caption_locator": "5.2",
+      "rendered_asset_locator": "inline SVG in HTML/PDF"
+    },
+    {
+      "vis_id": "VIS-005",
+      "figure_title": "거래 전후 common share bridge",
+      "authoritative_source_block": "capital_structure",
+      "source_hash": "85007fcdeadff0bd",
+      "source_values": {
+        "common_shares_2026_07_31_m": 249.965,
+        "asm_estimated_new_shares_m": 14.813,
+        "vac_new_shares_m": 65.853,
+        "simple_post_asm_vac_common_m": 330.631
+      },
+      "display_values": "generated directly from authoritative block",
+      "narrative_locator": "Appendix H",
+      "table_locator": "Appendix H",
+      "caption_locator": "Appendix H",
+      "rendered_asset_locator": "inline SVG in HTML/PDF"
+    },
+    {
+      "vis_id": "VIS-006",
+      "figure_title": "주가와 핵심 이벤트",
+      "authoritative_source_block": "price_history",
+      "source_hash": "1688ee7aa7274fec",
+      "source_values": [
+        {
+          "date": "2026-06-22",
+          "close": 16.12,
+          "event": "VAC announcement 전일"
+        },
+        {
+          "date": "2026-06-23",
+          "close": 15.47,
+          "event": "VAC announcement"
+        },
+        {
+          "date": "2026-07-07",
+          "close": 12.86,
+          "event": "Bhappu insider purchase day"
+        },
+        {
+          "date": "2026-07-29",
+          "close": 10.74,
+          "event": "White Mesa HRE construction announcement"
+        },
+        {
+          "date": "2026-08-05",
+          "close": 12.44,
+          "event": "Q2 results"
+        },
+        {
+          "date": "2026-08-12",
+          "close": 14.47,
+          "event": "ASM shareholder approval"
+        },
+        {
+          "date": "2026-08-19",
+          "close": 14.85,
+          "event": "Tb qualification"
+        },
+        {
+          "date": "2026-08-21",
+          "close": 15.14,
+          "event": "T0"
+        }
+      ],
+      "display_values": "generated directly from authoritative block",
+      "narrative_locator": "Appendix K",
+      "table_locator": "Appendix K",
+      "caption_locator": "Appendix K",
+      "rendered_asset_locator": "inline SVG in HTML/PDF"
+    }
+  ]
+}

@@ -1,0 +1,772 @@
+{
+  "meta": {
+    "ticker": "TECK",
+    "company": "Teck Resources Limited",
+    "T0": "2026-08-24",
+    "version": "DDOS v1.7",
+    "price_asof": "2026-08-21",
+    "current_price_usd": 69.2,
+    "filing_asof": "2026-08-12",
+    "financial_asof": "2026-06-30",
+    "consensus_asof": "2026-08-17/21",
+    "valuation_mode": "D - Cyclical / Commodity + merger-linked cross-check",
+    "latest_filing_check": "PASS",
+    "price_correction": {
+      "from_usd": 66.12,
+      "to_usd": 69.2,
+      "reason": "Initial planning snapshot used stale Teck IR displayed price; Aug-21 NYSE close verified at 69.20"
+    }
+  },
+  "financials": {
+    "annual_3y": {
+      "currency": "CAD million",
+      "years": [
+        2023,
+        2024,
+        2025
+      ],
+      "revenue": [
+        6476,
+        9065,
+        10756
+      ],
+      "gross_profit": [
+        1112,
+        1607,
+        2657
+      ],
+      "gross_profit_before_da": [
+        1973,
+        3272,
+        4339
+      ],
+      "adjusted_ebitda": [
+        1436,
+        2933,
+        4333
+      ],
+      "continuing_profit_attributable": [
+        -118,
+        -467,
+        1401
+      ],
+      "reported_cfo": [
+        4084,
+        2790,
+        1479
+      ],
+      "cfo_comparability_note": "2023-24 reported CFO includes coal/discontinued-operation comparability effects; use post-coal 8Q for cleaner cash conversion trend"
+    },
+    "quarterly_8q": {
+      "currency": "CAD million",
+      "quarters": [
+        "Q3 2024",
+        "Q4 2024",
+        "Q1 2025",
+        "Q2 2025",
+        "Q3 2025",
+        "Q4 2025",
+        "Q1 2026",
+        "Q2 2026"
+      ],
+      "revenue": [
+        2858,
+        2786,
+        2290,
+        2023,
+        3385,
+        3058,
+        3943,
+        3605
+      ],
+      "gross_profit": [
+        478,
+        542,
+        536,
+        471,
+        660,
+        990,
+        1715,
+        1670
+      ],
+      "profit_attributable": [
+        -699,
+        399,
+        370,
+        206,
+        281,
+        544,
+        819,
+        854
+      ],
+      "operating_cash_flow": [
+        134,
+        1288,
+        -515,
+        88,
+        647,
+        1259,
+        1024,
+        1718
+      ]
+    },
+    "q2_2026": {
+      "adjusted_ebitda_cad_m": 2193,
+      "operating_cash_flow_cad_m": 1718,
+      "copper_production_kt": 135.9,
+      "avg_copper_price_usd_lb": 6.05,
+      "copper_net_cash_cost_usd_lb": 1.64,
+      "copper_gp_before_da_cad_m": 1755,
+      "zinc_gp_before_da_cad_m": 353,
+      "cash_cad_m": 6052,
+      "total_debt_incl_leases_cad_m": 4808,
+      "net_cash_cad_m": 1244,
+      "liquidity_cad_m": 10300
+    },
+    "capex_2026_guidance": {
+      "sustaining_cad_bn": [
+        1.3,
+        1.5
+      ],
+      "growth_cad_bn": [
+        1.47,
+        1.88
+      ],
+      "total_before_partner_cad_bn": [
+        2.78,
+        3.4
+      ],
+      "net_partner_cad_bn": [
+        2.48,
+        3.05
+      ],
+      "capitalized_stripping_cad_bn": [
+        0.455,
+        0.56
+      ],
+      "hvc_mle_cad_bn": [
+        0.9,
+        1.2
+      ]
+    },
+    "ceilings": [
+      "2023-24 CFO is not directly comparable to 2025 because of coal/discontinued operation perimeter change",
+      "uniform peer C1/net-cash-cost percentile not definition-consistent across issuers"
+    ]
+  },
+  "production_guidance": {
+    "years": [
+      "2025A",
+      "2026G",
+      "2027G",
+      "2028G"
+    ],
+    "qb_copper_kt": [
+      190,
+      [
+        200,
+        235
+      ],
+      [
+        240,
+        275
+      ],
+      [
+        220,
+        255
+      ]
+    ],
+    "hvc_copper_kt": [
+      127.1,
+      [
+        115,
+        135
+      ],
+      [
+        135,
+        155
+      ],
+      [
+        100,
+        120
+      ]
+    ],
+    "antamina_copper_kt": [
+      85.9,
+      [
+        95,
+        105
+      ],
+      [
+        85,
+        95
+      ],
+      [
+        80,
+        90
+      ]
+    ],
+    "carmen_copper_kt": [
+      50.5,
+      [
+        45,
+        55
+      ],
+      [
+        45,
+        55
+      ],
+      [
+        35,
+        45
+      ]
+    ],
+    "total_copper_kt": [
+      453.5,
+      [
+        455,
+        530
+      ],
+      [
+        505,
+        580
+      ],
+      [
+        435,
+        510
+      ]
+    ],
+    "red_dog_zinc_kt": [
+      462.7,
+      [
+        375,
+        415
+      ],
+      [
+        330,
+        370
+      ],
+      [
+        230,
+        270
+      ]
+    ],
+    "trail_refined_zinc_kt": [
+      229.9,
+      [
+        190,
+        230
+      ],
+      [
+        260,
+        300
+      ],
+      [
+        260,
+        300
+      ]
+    ]
+  },
+  "assets": {
+    "qb": {
+      "teck_interest_pct": 60,
+      "reserve_mt": 1330.6,
+      "reserve_grade_cu_pct": 0.53,
+      "q4_2025_cu_kt": 55.4,
+      "q1_2026_cu_kt": 55.5,
+      "q2_2026_cu_kt": 55.8,
+      "q2_2026_recovery_pct": 83.3,
+      "q2_2026_net_cash_cost_usd_lb": 1.83,
+      "status": "RECOVERING_NOT_FULLY_DERISKED"
+    },
+    "hvc": {
+      "teck_interest_pct": 100,
+      "reserve_mt": 1073.5,
+      "reserve_grade_cu_pct": 0.28,
+      "mine_life_pre_mle": 2028,
+      "mine_life_post_mle": 2046,
+      "project_capex_cad_bn": [
+        2.1,
+        2.4
+      ]
+    },
+    "antamina": {
+      "teck_interest_pct": 22.5,
+      "mine_life": 2036
+    },
+    "carmen": {
+      "teck_interest_pct": 90,
+      "mine_life": 2038
+    },
+    "red_dog": {
+      "reserve_mt": 22.8,
+      "reserve_grade_zinc_pct": 11.2
+    }
+  },
+  "industry": {
+    "copper": {
+      "icsg_refined_balance_2026_kt": 96,
+      "icsg_refined_balance_2027_kt": 377,
+      "icsg_mine_growth_2026_pct": 1.6,
+      "icsg_mine_growth_2027_pct": 2.3,
+      "iea_2035_projected_supply_gap_pct": 25,
+      "iea_2026_benchmark_tc_usd_t": 0
+    },
+    "zinc": {
+      "ilzsg_2026_demand_mt": 14.0,
+      "ilzsg_2026_refined_output_mt": 13.99,
+      "ilzsg_2026_balance_deficit_kt": 19
+    }
+  },
+  "merger": {
+    "exchange_ratio_aal_per_teck": 1.3301,
+    "legacy_ownership_pct": {
+      "anglo": 62.4,
+      "teck": 37.6
+    },
+    "expected_close_window": "2026-09 to 2027-03",
+    "final_major_regulatory_milestone": "China antitrust approval",
+    "break_fee_usd_m": 330,
+    "anglo_special_dividend_usd_bn": 4.5,
+    "special_dividend_usd_per_aal_share_approx": 4.19,
+    "special_dividend_recipient": "legacy Anglo American shareholders, not TECK holders as a TECK entitlement",
+    "recurring_pretax_synergy_usd_m": 800,
+    "recurring_company_attributable_after_nci_approx_usd_m": 700,
+    "recurring_synergy_oneoff_cost_usd_m": 700,
+    "qb_collahuasi_adj_ebitda_100pct_usd_bn": 1.4,
+    "qb_collahuasi_combined_attributable_share_pct_approx": 52,
+    "qb_collahuasi_attributable_ebitda_approx_usd_bn": 0.7,
+    "qb_collahuasi_oneoff_cash_100pct_usd_bn": 1.9,
+    "mechanical_crosscheck_2026_08_21": {
+      "aal_close_gbp": 40.67,
+      "gbp_cad": 1.8772,
+      "usd_cad": 1.376,
+      "implied_gbp_usd": 1.364244,
+      "aal_usd_equivalent": 55.48,
+      "gross_exchange_value_usd": 73.8,
+      "teck_equiv_special_dividend_usd": 5.57,
+      "special_dividend_adjusted_value_usd": 68.23,
+      "teck_close_usd": 69.2,
+      "premium_vs_adjusted_pct": 1.4
+    }
+  },
+  "kpis": [
+    {
+      "name": "QB quarterly copper production",
+      "current": 55.8,
+      "unit": "kt",
+      "thresholds": {
+        "green": ">=55kt sustained with improving throughput",
+        "yellow": "48-55kt",
+        "red": "<48kt or material TMF-related downtime"
+      }
+    },
+    {
+      "name": "QB net cash cost",
+      "current": 1.83,
+      "unit": "USD/lb",
+      "thresholds": {
+        "green": "<=2.00 sustained",
+        "yellow": "2.00-2.35",
+        "red": ">2.35 sustained"
+      }
+    },
+    {
+      "name": "HVC MLE project cost",
+      "current": [
+        2.1,
+        2.4
+      ],
+      "unit": "CAD bn",
+      "thresholds": {
+        "green": "range maintained",
+        "yellow": "upper-end pressure",
+        "red": "range raised or schedule slippage"
+      }
+    },
+    {
+      "name": "China merger approval",
+      "current": "pending",
+      "thresholds": {
+        "green": "clean/acceptable approval",
+        "yellow": "review extension",
+        "red": "material remedy or deal risk"
+      }
+    },
+    {
+      "name": "Copper price",
+      "current": 6.05,
+      "unit": "USD/lb Q2 average",
+      "thresholds": {
+        "green": ">4.5 with demand support",
+        "yellow": "4.0-4.5",
+        "red": "<4.0 sustained"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.2,
+      "per_share_value_usd": 45.0,
+      "copper_price_usd_lb": [
+        5.1,
+        3.8,
+        3.75,
+        3.8
+      ],
+      "copper_production_kt": [
+        470,
+        480,
+        430,
+        450
+      ],
+      "revenue_cad_bn": [
+        14.0,
+        11.5,
+        10.7,
+        11.2
+      ],
+      "adj_ebitda_cad_bn": [
+        6.0,
+        3.3,
+        2.6,
+        2.9
+      ],
+      "fcf_cad_bn": [
+        1.0,
+        0.1,
+        0.2,
+        0.7
+      ],
+      "narrative": "copper mean reversion, QB renewed constraint and/or material merger delay; little synergy credit"
+    },
+    {
+      "name": "Base",
+      "probability": 0.55,
+      "per_share_value_usd": 74.0,
+      "copper_price_usd_lb": [
+        5.6,
+        4.5,
+        4.25,
+        4.25
+      ],
+      "copper_production_kt": [
+        495,
+        545,
+        475,
+        500
+      ],
+      "revenue_cad_bn": [
+        15.1,
+        13.4,
+        12.4,
+        13.0
+      ],
+      "adj_ebitda_cad_bn": [
+        7.4,
+        5.6,
+        4.6,
+        5.0
+      ],
+      "fcf_cad_bn": [
+        2.2,
+        1.8,
+        1.1,
+        1.8
+      ],
+      "narrative": "merger closes in announced window; QB stable within guide; HVC within budget; partial recurring synergy credit"
+    },
+    {
+      "name": "Up",
+      "probability": 0.25,
+      "per_share_value_usd": 90.0,
+      "copper_price_usd_lb": [
+        5.9,
+        5.25,
+        5.0,
+        4.75
+      ],
+      "copper_production_kt": [
+        520,
+        565,
+        510,
+        540
+      ],
+      "revenue_cad_bn": [
+        16.0,
+        15.4,
+        14.7,
+        15.2
+      ],
+      "adj_ebitda_cad_bn": [
+        8.5,
+        7.8,
+        6.7,
+        6.8
+      ],
+      "fcf_cad_bn": [
+        3.0,
+        3.2,
+        2.4,
+        3.0
+      ],
+      "narrative": "sustained high copper; QB approaches sustainable nameplate; clean HVC/integration; higher synergy and scarcity premium"
+    }
+  ],
+  "valuation": {
+    "mode": "D - Cyclical / Commodity + merger-linked cross-check",
+    "current_price_usd": 69.2,
+    "horizon_years": 1.5,
+    "hurdle_rate": 0.125,
+    "core": "standalone commodity downside anchor",
+    "execution": "QB/HVC operating execution",
+    "ecosystem": "Anglo Teck merger and synergies",
+    "drag": "special dividend, capex/stripping, NCI, one-off synergy costs, deal/FX risk",
+    "expected_value_usd": 72.2,
+    "expected_irr": 0.028697,
+    "upside_downside_ratio": 0.86,
+    "hurdle_future_value_usd": 82.57,
+    "entry_price_for_hurdle_usd": 60.51,
+    "price_bands": {
+      "avoid_or_trim_above_usd": 65,
+      "conditional_interest_usd": [
+        60,
+        62
+      ],
+      "active_interest_usd": [
+        55,
+        60
+      ],
+      "stronger_margin_of_safety_below_usd": 58
+    }
+  },
+  "reverse_expectations": {
+    "current_post_special_aal_equivalent_gbp": 37.6,
+    "required_teck_future_value_for_12_5pct_18m_usd": 82.57,
+    "required_post_special_aal_gbp_at_current_fx": 45.5,
+    "required_uplift_vs_current_post_special_aal_pct": 21.0,
+    "interpretation": "current TECK price needs more than merger completion; requires operating/commodity/synergy/multiple support to achieve hurdle return"
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_cad_bn": 15.07,
+      "eps_cad": 5.89
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_cad_bn": 14.95,
+      "eps_cad": 4.99
+    },
+    "recommendation": "Hold-dominant across secondary providers",
+    "target_price_provider_range_usd": [
+      54.53,
+      62.25
+    ],
+    "revision_trend": "not treated as primary evidence; target definitions are heterogeneous because of merger mechanics",
+    "ceiling": "real-time institutional positioning and like-for-like historical valuation percentile are PRIMARY_SOURCE_CEILING"
+  },
+  "stance": {
+    "zone": "회피 / 기존 보유 시 축소 검토",
+    "price_bands": {
+      "conditional": "USD 60-62",
+      "active_interest": "USD 55-60",
+      "stronger_margin_of_safety": "USD 58 이하"
+    },
+    "horizon": "18 months",
+    "reason": "expected IRR below 12.5% hurdle and U/D below 1.0 at current price"
+  },
+  "catalysts": [
+    {
+      "when": "2026 Q3/Q4",
+      "event": "China antitrust decision",
+      "sensitivity": "HIGH"
+    },
+    {
+      "when": "2026 Q3 results",
+      "event": "QB lower-grade operating performance",
+      "sensitivity": "HIGH"
+    },
+    {
+      "when": "2026 Q4",
+      "event": "Secondary cyclone station / TMF progress",
+      "sensitivity": "HIGH"
+    },
+    {
+      "when": "2026 Q4-2027 Q1",
+      "event": "Merger completion window",
+      "sensitivity": "HIGH"
+    },
+    {
+      "when": "2027 Q1",
+      "event": "FY2026 results and 2027 guidance",
+      "sensitivity": "HIGH"
+    },
+    {
+      "when": "2027 H1",
+      "event": "Anglo Teck integration and synergy milestones",
+      "sensitivity": "MEDIUM-HIGH"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.0, Ch.3"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.2, Ch.4.5"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.3, Ch.5"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.4-3.5"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1.5, Ch.3.6-3.7"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1.4, Ch.4.8"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.3.9 + Appendix D"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4.1-4.2"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4.6-4.9"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4.10, Ch.2.3"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.0, Ch.5.2"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5.3"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.8"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4, Ch.5.4"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.0.5, Ch.5.8-5.9 + Appendix D"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5.4-5.6"
+    },
+    {
+      "rc_id": "RC-020",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.6.5-6.7"
+    }
+  ],
+  "visual_registry": [
+    {
+      "id": "V01",
+      "title": "3-Year Earnings Expansion",
+      "data_path": "financials.annual_3y",
+      "source": "Teck 2025 MD&A"
+    },
+    {
+      "id": "V02",
+      "title": "Latest 8Q Financial Pulse",
+      "data_path": "financials.quarterly_8q",
+      "source": "Teck quarterly reports"
+    },
+    {
+      "id": "V03",
+      "title": "Copper Production Guide",
+      "data_path": "production_guidance.total_copper_kt",
+      "source": "Teck Q2 2026 guidance"
+    },
+    {
+      "id": "V04",
+      "title": "Merger Value Bridge",
+      "data_path": "merger.mechanical_crosscheck_2026_08_21",
+      "source": "AAL close + BoC FX + merger circular"
+    },
+    {
+      "id": "V05",
+      "title": "Scenario Payoff",
+      "data_path": "scenarios",
+      "source": "DDOS analyst model"
+    },
+    {
+      "id": "V06",
+      "title": "Price-to-Stance Map",
+      "data_path": "valuation.price_bands",
+      "source": "DDOS stance framework"
+    },
+    {
+      "id": "V07",
+      "title": "QB Three-Quarter Production Stability",
+      "data_path": "assets.qb.q4_2025_cu_kt, assets.qb.q1_2026_cu_kt, assets.qb.q2_2026_cu_kt",
+      "source": "Teck Q4 2025, Q1 2026 and Q2 2026 operating results"
+    }
+  ],
+  "audit": {
+    "rc_total": 20,
+    "rc_complete": 18,
+    "rc_ceiling": 2,
+    "rc_not_material": 0,
+    "rc_contradicted": 0,
+    "rc_unresolved": 0,
+    "industry_company_narrative": "PASS",
+    "korean_prose_quality": "PASS",
+    "explanatory_space_allocation": "PASS",
+    "research_contract_completeness": "PASS",
+    "coverage_lineage": "PASS",
+    "research_contract_coverage_rate": "100%"
+  }
+}

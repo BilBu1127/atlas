@@ -1,0 +1,1294 @@
+{
+  "meta": {
+    "ticker": "HOOD",
+    "company": "Robinhood Markets, Inc.",
+    "T0": "2026-08-24",
+    "price_asof": "2026-08-21 regular close",
+    "filing_asof": "2026-07-30 Form 10-Q for quarter ended 2026-06-30",
+    "operating_metrics_asof": "2026-08-12 release for Jul 2026",
+    "consensus_asof": "2026-08-21, cross-checked 2026-08-24",
+    "version": "DDOS v1.7 Production",
+    "currency": "USD",
+    "units_note": "financial statement values in USD millions unless otherwise specified"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue_m": 1865,
+        "tbr_m": 785,
+        "nii_m": 929,
+        "other_m": 151,
+        "opex_m": 2401,
+        "pretax_m": -533,
+        "net_income_m": -541,
+        "diluted_eps": -0.61,
+        "sbc_m": 871,
+        "ocf_m": 1181,
+        "capex_like_m": 21
+      },
+      {
+        "year": 2024,
+        "revenue_m": 2951,
+        "tbr_m": 1647,
+        "nii_m": 1109,
+        "other_m": 195,
+        "opex_m": 1897,
+        "pretax_m": 1064,
+        "net_income_m": 1411,
+        "diluted_eps": 1.56,
+        "sbc_m": 304,
+        "ocf_m": -157,
+        "capex_like_m": 50
+      },
+      {
+        "year": 2025,
+        "revenue_m": 4473,
+        "tbr_m": 2628,
+        "nii_m": 1514,
+        "other_m": 331,
+        "opex_m": 2379,
+        "pretax_m": 2108,
+        "net_income_m": 1883,
+        "diluted_eps": 2.05,
+        "sbc_m": 305,
+        "ocf_m": 1638,
+        "capex_like_m": 54
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "Q3 2024",
+        "revenue_m": 637,
+        "tbr_m": 319,
+        "nii_m": 274,
+        "other_m": 44,
+        "net_income_m": 150,
+        "eps": 0.17,
+        "opex_m": 486,
+        "ocf_m": 1812,
+        "capex_like_m": 19,
+        "funded_customers_m": 24.3,
+        "tpa_b": 152.2,
+        "net_deposits_b": 10.0,
+        "ltm_nd_growth_pct": 45,
+        "gold_m": 2.2,
+        "arpu": 105,
+        "margin_book_b": 5.5
+      },
+      {
+        "quarter": "Q4 2024",
+        "revenue_m": 1010,
+        "tbr_m": 672,
+        "nii_m": 296,
+        "other_m": 46,
+        "net_income_m": 916,
+        "eps": 1.01,
+        "opex_m": 458,
+        "ocf_m": -1400,
+        "capex_like_m": 15,
+        "funded_customers_m": 25.2,
+        "tpa_b": 193.0,
+        "net_deposits_b": 16.1,
+        "ltm_nd_growth_pct": null,
+        "gold_m": 2.6,
+        "arpu": 164,
+        "margin_book_b": 7.9
+      },
+      {
+        "quarter": "Q1 2025",
+        "revenue_m": 927,
+        "tbr_m": 583,
+        "nii_m": 290,
+        "other_m": 54,
+        "net_income_m": 336,
+        "eps": 0.37,
+        "opex_m": 557,
+        "ocf_m": 642,
+        "capex_like_m": 11,
+        "funded_customers_m": 25.8,
+        "tpa_b": 221.0,
+        "net_deposits_b": 18.0,
+        "ltm_nd_growth_pct": 44,
+        "gold_m": 3.2,
+        "arpu": 145,
+        "margin_book_b": 8.8
+      },
+      {
+        "quarter": "Q2 2025",
+        "revenue_m": 989,
+        "tbr_m": 539,
+        "nii_m": 357,
+        "other_m": 93,
+        "net_income_m": 386,
+        "eps": 0.42,
+        "opex_m": 550,
+        "ocf_m": 3509,
+        "capex_like_m": 18,
+        "funded_customers_m": 26.5,
+        "tpa_b": 278.6,
+        "net_deposits_b": 13.8,
+        "ltm_nd_growth_pct": 41,
+        "gold_m": 3.5,
+        "arpu": 151,
+        "margin_book_b": null
+      },
+      {
+        "quarter": "Q3 2025",
+        "revenue_m": 1270,
+        "tbr_m": 730,
+        "nii_m": 456,
+        "other_m": 86,
+        "net_income_m": 556,
+        "eps": 0.61,
+        "opex_m": 639,
+        "ocf_m": -1576,
+        "capex_like_m": 12,
+        "funded_customers_m": 26.8,
+        "tpa_b": 333.0,
+        "net_deposits_b": 20.4,
+        "ltm_nd_growth_pct": 45,
+        "gold_m": 3.9,
+        "arpu": 191,
+        "margin_book_b": 13.9
+      },
+      {
+        "quarter": "Q4 2025",
+        "revenue_m": 1280,
+        "tbr_m": 776,
+        "nii_m": 411,
+        "other_m": 96,
+        "net_income_m": 605,
+        "eps": 0.66,
+        "opex_m": 633,
+        "ocf_m": -937,
+        "capex_like_m": 13,
+        "funded_customers_m": 27.0,
+        "tpa_b": 324.0,
+        "net_deposits_b": 15.9,
+        "ltm_nd_growth_pct": 35,
+        "gold_m": 4.2,
+        "arpu": 191,
+        "margin_book_b": 16.8
+      },
+      {
+        "quarter": "Q1 2026",
+        "revenue_m": 1067,
+        "tbr_m": 623,
+        "nii_m": 359,
+        "other_m": 85,
+        "net_income_m": 346,
+        "eps": 0.38,
+        "opex_m": 656,
+        "ocf_m": 2038,
+        "capex_like_m": 18,
+        "funded_customers_m": 27.4,
+        "tpa_b": 307.3,
+        "net_deposits_b": 17.7,
+        "ltm_nd_growth_pct": 31,
+        "gold_m": 4.34,
+        "arpu": 157,
+        "margin_book_b": null
+      },
+      {
+        "quarter": "Q2 2026",
+        "revenue_m": 1308,
+        "tbr_m": 776,
+        "nii_m": 389,
+        "other_m": 143,
+        "net_income_m": 573,
+        "eps": 0.62,
+        "opex_m": 734,
+        "ocf_m": 720,
+        "capex_like_m": 24,
+        "funded_customers_m": 28.4,
+        "tpa_b": 368.7,
+        "net_deposits_b": 21.7,
+        "ltm_nd_growth_pct": 27,
+        "gold_m": 4.84,
+        "arpu": 187,
+        "margin_book_b": 21.6
+      }
+    ],
+    "latest_month": {
+      "period": "Jul 2026",
+      "funded_customers_m": 28.5,
+      "tpa_b": 355.0,
+      "net_deposits_b": 5.6,
+      "ltm_nd_growth_pct": 25,
+      "equity_notional_b": 332.8,
+      "options_contracts_m": 324.2,
+      "crypto_volume_b": 10.9,
+      "event_contracts_b": 6.1,
+      "margin_book_b": 20.7,
+      "cash_and_deposits_b": 19.5,
+      "sweep_b": 29.2,
+      "securities_lending_revenue_m": 40
+    },
+    "ceilings": [
+      "Broker operating cash flow is dominated by customer/broker working-capital and segregated cash movements; do not treat OCF-capex as industrial FCF.",
+      "Q4 2024 net income included a material deferred-tax benefit; Q2 2026 included gains primarily from RVI deconsolidation."
+    ]
+  },
+  "revenue_detail_q2_2026": {
+    "total_revenue_m": 1308,
+    "transaction_based_revenue_m": 776,
+    "net_interest_revenue_m": 389,
+    "other_revenue_m": 143,
+    "event_contract_revenue_m": 156,
+    "options_revenue_m": 342,
+    "equities_revenue_m": 129,
+    "crypto_revenue_m": 100
+  },
+  "balance_and_credit": {
+    "q2_2026_margin_avg_b": 19.015,
+    "q2_2026_margin_interest_revenue_m": 215,
+    "q2_2026_margin_yield_pct": 4.52,
+    "q2_2026_card_receivables_b": 1.457,
+    "q2_2026_card_90plus_delinquency_pct": 2.0,
+    "q2_2026_credit_loss_provision_m": 51,
+    "h1_2026_credit_loss_provision_m": 82,
+    "rate_sensitivity_100bp_pretax_m_annualized": 350,
+    "regulatory_capital": {
+      "RHS_excess_net_capital_b": 3.443,
+      "RHD_excess_net_capital_b": 0.426
+    }
+  },
+  "capital_dilution": {
+    "convert_2029": {
+      "principal_b": 2.2,
+      "coupon_pct": 0,
+      "maturity": "2029-10-01",
+      "initial_conversion_price": 174.42,
+      "potential_shares_m": 12.6,
+      "capped_call_cost_m": 123.2,
+      "capped_call_cap_price_approx": 237.85,
+      "treatment": "cash principal claim; do not add 12.6M shares mechanically at current price"
+    },
+    "pre_ipo_warrants": {
+      "potential_shares_m": 8.74,
+      "strike": 26.6,
+      "expiry": "2031-02-12"
+    },
+    "repurchase_authorization_b": 1.5,
+    "h1_2026_program_repurchase_m": 374,
+    "q2_2026_convert_related_repurchase_m": 290,
+    "sbc_2025_m": 305
+  },
+  "kpis": [
+    {
+      "name": "LTM Net Deposit Growth",
+      "unit": "%",
+      "history": [
+        {
+          "period": "Q3 2024",
+          "value": 45
+        },
+        {
+          "period": "Q1 2025",
+          "value": 44
+        },
+        {
+          "period": "Q2 2025",
+          "value": 41
+        },
+        {
+          "period": "Q3 2025",
+          "value": 45
+        },
+        {
+          "period": "Q4 2025",
+          "value": 35
+        },
+        {
+          "period": "Q1 2026",
+          "value": 31
+        },
+        {
+          "period": "Q2 2026",
+          "value": 27
+        },
+        {
+          "period": "Jul 2026",
+          "value": 25
+        }
+      ],
+      "current": 25,
+      "thresholds": {
+        "green": ">=20%",
+        "yellow": "12-20%",
+        "red": "<12% for 2+ months"
+      }
+    },
+    {
+      "name": "Funded Customers YoY",
+      "unit": "%",
+      "history": [],
+      "current": 6.6,
+      "thresholds": {
+        "green": ">=6%",
+        "yellow": "3-6%",
+        "red": "<3%"
+      }
+    },
+    {
+      "name": "Gold Subscribers YoY",
+      "unit": "%",
+      "history": [
+        {
+          "period": "Q2 2025",
+          "value": null
+        },
+        {
+          "period": "Q2 2026",
+          "value": 39
+        }
+      ],
+      "current": 39,
+      "thresholds": {
+        "green": ">=25%",
+        "yellow": "10-25%",
+        "red": "<10%"
+      }
+    },
+    {
+      "name": "Retirement AUC YoY",
+      "unit": "%",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": 82
+        }
+      ],
+      "current": 82,
+      "thresholds": {
+        "green": ">=30%",
+        "yellow": "15-30%",
+        "red": "<15%"
+      }
+    },
+    {
+      "name": "Margin Book",
+      "unit": "$B",
+      "history": [
+        {
+          "period": "Q3 2024",
+          "value": 5.5
+        },
+        {
+          "period": "Q4 2024",
+          "value": 7.9
+        },
+        {
+          "period": "Q1 2025",
+          "value": 8.8
+        },
+        {
+          "period": "Q3 2025",
+          "value": 13.9
+        },
+        {
+          "period": "Q4 2025",
+          "value": 16.8
+        },
+        {
+          "period": "Q2 2026",
+          "value": 21.6
+        },
+        {
+          "period": "Jul 2026",
+          "value": 20.7
+        }
+      ],
+      "current": 20.7,
+      "thresholds": {
+        "green": ">=20% YoY with stable losses",
+        "yellow": "0-20% YoY",
+        "red": "decline plus NII slowing"
+      }
+    },
+    {
+      "name": "Event Contracts YoY",
+      "unit": "%",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": ">10x contracts/revenue context"
+        },
+        {
+          "period": "Jul 2026",
+          "value": "~20x contracts"
+        }
+      ],
+      "current": "~20x contracts YoY",
+      "thresholds": {
+        "green": ">50% plus regulatory stability",
+        "yellow": "0-50% / regional restrictions",
+        "red": "material product ban or sharp decline"
+      }
+    },
+    {
+      "name": "Card 90+ day delinquency",
+      "unit": "%",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": 2.0
+        }
+      ],
+      "current": 2.0,
+      "thresholds": {
+        "green": "<=2.5%",
+        "yellow": "2.5-4%",
+        "red": ">4%"
+      }
+    },
+    {
+      "name": "Diluted Share Count YoY",
+      "unit": "%",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": "<=0%",
+        "yellow": "0-2%",
+        "red": ">2%"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.25,
+      "revenue_path_b": [
+        5.05,
+        5.45,
+        5.85,
+        6.25,
+        6.7
+      ],
+      "margin_path_pct": [
+        39,
+        36,
+        34,
+        32,
+        31
+      ],
+      "fcf": [],
+      "diluted_shares_m": 925,
+      "terminal_eps": 2.25,
+      "terminal_pe": 22,
+      "per_share_value": 49.4,
+      "discounted_present_value": 30.17
+    },
+    {
+      "name": "Central",
+      "probability": 0.55,
+      "revenue_path_b": [
+        5.16,
+        6.5,
+        7.75,
+        9.1,
+        10.7
+      ],
+      "margin_path_pct": [
+        44.1,
+        43.5,
+        44.0,
+        44.5,
+        45.0
+      ],
+      "fcf": [],
+      "diluted_shares_m": 900,
+      "terminal_eps": 5.35,
+      "terminal_pe": 30,
+      "per_share_value": 160.5,
+      "discounted_present_value": 98.03
+    },
+    {
+      "name": "Up",
+      "probability": 0.2,
+      "revenue_path_b": [
+        5.3,
+        6.9,
+        8.8,
+        10.9,
+        13.2
+      ],
+      "margin_path_pct": [
+        45.0,
+        45.5,
+        46.0,
+        46.5,
+        47.0
+      ],
+      "fcf": [],
+      "diluted_shares_m": 895,
+      "terminal_eps": 6.93,
+      "terminal_pe": 34,
+      "per_share_value": 235.6,
+      "discounted_present_value": 143.91
+    }
+  ],
+  "valuation": {
+    "mode": "Mode E — Financial Institution adapted to hybrid broker/fintech; normalized EPS/ROE/capital with P/E cross-check",
+    "core": "normalized earnings / capital economics",
+    "execution": "asset gathering + Gold/wallet share + active trading share + operating leverage",
+    "ecosystem": "Prediction Markets / Rothera, international, tokenization optionality constrained by evidence ceilings",
+    "drag": "regulatory uncertainty, card credit/funding/rewards, activity beta, valuation compression, dilution complexity",
+    "expected_value": 90.24,
+    "expected_terminal_value": 147.75,
+    "expected_irr": 0.0744,
+    "current_price": 108.13,
+    "hurdle_rate": 0.12,
+    "years_to_terminal": 4.35,
+    "central_present_value": 98.03,
+    "central_terminal_value": 160.5
+  },
+  "reverse_expectations": {
+    "required_2030_terminal_price_for_12pct": 177.03,
+    "anchor_2026_revenue_b": 5.16,
+    "assumed_2030_diluted_shares_m": 900,
+    "assumed_normalized_net_margin_pct": 44,
+    "sensitivity": [
+      {
+        "terminal_pe": 25,
+        "required_eps": 7.08,
+        "required_revenue_b": 14.48,
+        "revenue_cagr_pct": 29.4
+      },
+      {
+        "terminal_pe": 30,
+        "required_eps": 5.9,
+        "required_revenue_b": 12.07,
+        "revenue_cagr_pct": 23.7
+      },
+      {
+        "terminal_pe": 35,
+        "required_eps": 5.06,
+        "required_revenue_b": 10.35,
+        "revenue_cagr_pct": 19.0
+      }
+    ],
+    "interpretation": "At 30x terminal P/E, current price requires roughly $12.1B 2030 revenue and about 24% 2026-2030 revenue CAGR."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_b": 5.16,
+      "normalized_eps": 2.5
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_b": 6.49,
+      "normalized_eps": 3.25
+    },
+    "fy3": {
+      "year": 2028,
+      "revenue_b": 7.396
+    },
+    "revision_trend": "Positive business momentum is reflected in a premium current valuation; real-time estimate revision breadth was not treated as a primary-source fact."
+  },
+  "stance": {
+    "zone": "회피/축소 검토 — 사업 긍정, 가격 부정",
+    "price_bands": {
+      "<80": "적극 관심 후보",
+      "80-90": "조건부 관심",
+      "90-100": "관망",
+      "100-120": "회피/축소 검토",
+      ">120": "기대치 과열 감시"
+    },
+    "horizon": "2030 year-end",
+    "attractive_band": "$80–90"
+  },
+  "catalysts": [
+    {
+      "when": "monthly from 2026-09",
+      "event": "Monthly operating metrics",
+      "sensitivity": "High",
+      "watch": "Net Deposits, equities/options/events, crypto, margin/cash balances"
+    },
+    {
+      "when": "2026-10~11 expected",
+      "event": "Q3 2026 earnings",
+      "sensitivity": "Very high",
+      "watch": "expense leverage, event revenue, card provision, Gold/retirement"
+    },
+    {
+      "when": "2026 Q4",
+      "event": "Prediction Markets regulation/litigation and federal rulemaking",
+      "sensitivity": "Very high",
+      "watch": "sports/political scope and federal preemption"
+    },
+    {
+      "when": "2026 Q4~2027 H1",
+      "event": "Singapore/international rollout",
+      "sensitivity": "Medium",
+      "watch": "customer, volume, revenue evidence"
+    },
+    {
+      "when": "around 2027-02 expected",
+      "event": "FY2026/Q4 earnings",
+      "sensitivity": "Very high",
+      "watch": "2027 expense outlook, normalized EPS, buyback pace"
+    },
+    {
+      "when": "2027 H1",
+      "event": "Card/Banking cohort maturation",
+      "sensitivity": "High",
+      "watch": "delinquency, provision, funding, direct deposit, retention"
+    },
+    {
+      "when": "2027 H1~H2",
+      "event": "Rothera scale/economics disclosure potential",
+      "sensitivity": "Very high",
+      "watch": "economic ownership and venue economics"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "0,3"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "1"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "1,3,4"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "1,3,4"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "1,3,4"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "3,4"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1,3,4"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1,3"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "CONTRADICTED",
+      "h3_locator": "1,3,5"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "1,6"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3,5"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "1,3"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "2"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "2"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "4, Appendix A-C"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "4"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "1,4,6"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE",
+      "h3_locator": "4, Appendix D"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "COMPLETE",
+      "h3_locator": "4,5"
+    },
+    {
+      "rc_id": "RC-020",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "5,6"
+    },
+    {
+      "rc_id": "RC-021",
+      "status": "COMPLETE",
+      "h3_locator": "5"
+    },
+    {
+      "rc_id": "RC-022",
+      "status": "COMPLETE",
+      "h3_locator": "5"
+    },
+    {
+      "rc_id": "RC-023",
+      "status": "COMPLETE",
+      "h3_locator": "6"
+    }
+  ],
+  "evidence_ceilings": [
+    "Rothera exact economic ownership percentage is not publicly disclosed in consumed primary materials; H1 provisional 45% assumption was contradicted and removed.",
+    "Gold Card exact interchange revenue, rewards expense and contribution margin are not separately disclosed.",
+    "Robinhood Banking exact Robinhood-vs-Coastal economics are not separately disclosed.",
+    "Strategies/TradePMR product-level contribution profit is not fully segmented.",
+    "Robinhood Chain/tokenization developer adoption and monetization are not sufficiently observable for Central valuation.",
+    "Real-time institutional positioning cannot be measured precisely from lagged 13F data."
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "type": "primary",
+      "title": "Robinhood Q2 2026 Form 10-Q",
+      "date": "2026-07-30",
+      "url": "https://www.sec.gov/Archives/edgar/data/1783879/000178387926000114/hood-20260630.htm"
+    },
+    {
+      "id": "S2",
+      "type": "primary",
+      "title": "Robinhood Q2 2026 Results",
+      "date": "2026-07-29",
+      "url": "https://investors.robinhood.com/news-releases/news-release-details/robinhood-reports-second-quarter-2026-results"
+    },
+    {
+      "id": "S3",
+      "type": "primary",
+      "title": "Robinhood Quarterly Results archive",
+      "date": "accessed 2026-08-24",
+      "url": "https://investors.robinhood.com/financials/quarterly-results"
+    },
+    {
+      "id": "S4",
+      "type": "primary",
+      "title": "Robinhood 2025 Form 10-K / Rothera JV disclosures",
+      "date": "2026 filing cycle",
+      "url": "https://investors.robinhood.com/financials/quarterly-results"
+    },
+    {
+      "id": "S5",
+      "type": "primary",
+      "title": "Robinhood Q1 2026 Form 10-Q",
+      "date": "2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1783879/000178387926000062/hood-20260331.htm"
+    },
+    {
+      "id": "S6",
+      "type": "primary",
+      "title": "Robinhood 2026 Proxy Statement / SEC filings archive",
+      "date": "2026",
+      "url": "https://investors.robinhood.com/financials/sec-filings"
+    },
+    {
+      "id": "S7",
+      "type": "primary",
+      "title": "Robinhood Gold / margin / product pricing pages",
+      "date": "accessed 2026-08-24",
+      "url": "https://robinhood.com/us/en/support/"
+    },
+    {
+      "id": "S8",
+      "type": "primary",
+      "title": "Robinhood event contract fee/risk disclosures",
+      "date": "accessed 2026-08-24",
+      "url": "https://robinhood.com/us/en/support/"
+    },
+    {
+      "id": "S9",
+      "type": "regulatory",
+      "title": "CFTC event-contract rulemaking and jurisdiction materials",
+      "date": "accessed 2026-08-24",
+      "url": "https://www.cftc.gov/"
+    },
+    {
+      "id": "S10",
+      "type": "primary",
+      "title": "Robinhood 2029 Convertible Note materials and Q2 10-Q Note 11",
+      "date": "2026-06",
+      "url": "https://investors.robinhood.com/"
+    },
+    {
+      "id": "S11",
+      "type": "primary",
+      "title": "Robinhood July 2026 Monthly Metrics",
+      "date": "2026-08-12",
+      "url": "https://investors.robinhood.com/"
+    },
+    {
+      "id": "S12",
+      "type": "market",
+      "title": "StockAnalysis HOOD Forecast (S&P Global/TipRanks aggregation)",
+      "date": "2026-08-21",
+      "url": "https://stockanalysis.com/stocks/hood/forecast/"
+    },
+    {
+      "id": "S13",
+      "type": "market",
+      "title": "Investing.com HOOD consensus estimates",
+      "date": "accessed 2026-08-24",
+      "url": "https://www.investing.com/"
+    },
+    {
+      "id": "S14",
+      "type": "market",
+      "title": "FINRA-derived short-interest cross-check via market aggregators",
+      "date": "2026-07-31 settlement",
+      "url": "https://www.finra.org/"
+    },
+    {
+      "id": "S15",
+      "type": "market",
+      "title": "Peer valuation / pricing cross-checks",
+      "date": "accessed 2026-08-24",
+      "url": "https://www.interactivebrokers.com/"
+    }
+  ],
+  "audit": {
+    "RC_TOTAL": 23,
+    "RC_COMPLETE": 18,
+    "RC_CEILING": 4,
+    "RC_CONTRADICTED": 1,
+    "RC_UNRESOLVED": 0,
+    "LATEST_FILING_CHECK": "PASS",
+    "INDUSTRY_TO_COMPANY_TRANSMISSION": "PASS",
+    "INDUSTRY_BLOCK_PNL_LANDING": "PASS",
+    "KOREAN_PROSE_READER_GATE": "PASS",
+    "VALUATION_DEPTH_NONREGRESSION": "PASS",
+    "ACCOUNTING_QUALITY_SCREEN": "FLAGS_NOTED",
+    "ROTHERA_45_PERCENT_ASSUMPTION": "CONTRADICTED_AND_REMOVED",
+    "REPORT_DATA_PACK": "EMITTED",
+    "DECISION_VISUALS_TOTAL": 5,
+    "DECISION_VISUALS_PARITY_PASS": 5,
+    "STALE_VISUAL_ASSETS": 0,
+    "FIGURE_NUMERICAL_PARITY": "PASS",
+    "VISUAL_DATA_LINEAGE": "PASS",
+    "VISUAL_SEMANTIC_PARITY": "PASS",
+    "DATA_PACK_REPORT_PARITY": "PASS"
+  },
+  "visual_data_registry": [
+    {
+      "VIS_ID": "VIS-001",
+      "FIGURE_TITLE": "3개년 매출과 이익 전환",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.annual_3y",
+      "SOURCE_VALUES": [
+        {
+          "year": 2023,
+          "revenue_m": 1865,
+          "net_income_m": -541
+        },
+        {
+          "year": 2024,
+          "revenue_m": 2951,
+          "net_income_m": 1411
+        },
+        {
+          "year": 2025,
+          "revenue_m": 4473,
+          "net_income_m": 1883
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "f561bd22f18713fe",
+      "DISPLAY_VALUES": [
+        {
+          "year": 2023,
+          "revenue_m": 1865,
+          "net_income_m": -541
+        },
+        {
+          "year": 2024,
+          "revenue_m": 2951,
+          "net_income_m": 1411
+        },
+        {
+          "year": 2025,
+          "revenue_m": 4473,
+          "net_income_m": 1883
+        }
+      ],
+      "NARRATIVE_LOCATOR": "0.2 / 4.1",
+      "TABLE_LOCATOR": "Appendix A",
+      "CAPTION_LOCATOR": "Figure 1",
+      "RENDERED_ASSET_LOCATOR": "inline SVG #vis-001",
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-002",
+      "FIGURE_TITLE": "최근 8분기 매출과 순이익",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.quarterly_8q",
+      "SOURCE_VALUES": [
+        {
+          "quarter": "Q3 2024",
+          "revenue_m": 637,
+          "net_income_m": 150
+        },
+        {
+          "quarter": "Q4 2024",
+          "revenue_m": 1010,
+          "net_income_m": 916
+        },
+        {
+          "quarter": "Q1 2025",
+          "revenue_m": 927,
+          "net_income_m": 336
+        },
+        {
+          "quarter": "Q2 2025",
+          "revenue_m": 989,
+          "net_income_m": 386
+        },
+        {
+          "quarter": "Q3 2025",
+          "revenue_m": 1270,
+          "net_income_m": 556
+        },
+        {
+          "quarter": "Q4 2025",
+          "revenue_m": 1280,
+          "net_income_m": 605
+        },
+        {
+          "quarter": "Q1 2026",
+          "revenue_m": 1067,
+          "net_income_m": 346
+        },
+        {
+          "quarter": "Q2 2026",
+          "revenue_m": 1308,
+          "net_income_m": 573
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "ae6dcc409da21370",
+      "DISPLAY_VALUES": [
+        {
+          "quarter": "Q3 2024",
+          "revenue_m": 637,
+          "net_income_m": 150
+        },
+        {
+          "quarter": "Q4 2024",
+          "revenue_m": 1010,
+          "net_income_m": 916
+        },
+        {
+          "quarter": "Q1 2025",
+          "revenue_m": 927,
+          "net_income_m": 336
+        },
+        {
+          "quarter": "Q2 2025",
+          "revenue_m": 989,
+          "net_income_m": 386
+        },
+        {
+          "quarter": "Q3 2025",
+          "revenue_m": 1270,
+          "net_income_m": 556
+        },
+        {
+          "quarter": "Q4 2025",
+          "revenue_m": 1280,
+          "net_income_m": 605
+        },
+        {
+          "quarter": "Q1 2026",
+          "revenue_m": 1067,
+          "net_income_m": 346
+        },
+        {
+          "quarter": "Q2 2026",
+          "revenue_m": 1308,
+          "net_income_m": 573
+        }
+      ],
+      "NARRATIVE_LOCATOR": "4.2",
+      "TABLE_LOCATOR": "Appendix B",
+      "CAPTION_LOCATOR": "Figure 2",
+      "RENDERED_ASSET_LOCATOR": "inline SVG #vis-002",
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-003",
+      "FIGURE_TITLE": "자산집결과 Gold 관계층 확장",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.quarterly_8q / latest_month",
+      "SOURCE_VALUES": [
+        {
+          "quarter": "Q3 2024",
+          "tpa_b": 152.2,
+          "net_deposits_b": 10.0,
+          "gold_m": 2.2
+        },
+        {
+          "quarter": "Q4 2024",
+          "tpa_b": 193.0,
+          "net_deposits_b": 16.1,
+          "gold_m": 2.6
+        },
+        {
+          "quarter": "Q1 2025",
+          "tpa_b": 221.0,
+          "net_deposits_b": 18.0,
+          "gold_m": 3.2
+        },
+        {
+          "quarter": "Q2 2025",
+          "tpa_b": 278.6,
+          "net_deposits_b": 13.8,
+          "gold_m": 3.5
+        },
+        {
+          "quarter": "Q3 2025",
+          "tpa_b": 333.0,
+          "net_deposits_b": 20.4,
+          "gold_m": 3.9
+        },
+        {
+          "quarter": "Q4 2025",
+          "tpa_b": 324.0,
+          "net_deposits_b": 15.9,
+          "gold_m": 4.2
+        },
+        {
+          "quarter": "Q1 2026",
+          "tpa_b": 307.3,
+          "net_deposits_b": 17.7,
+          "gold_m": 4.34
+        },
+        {
+          "quarter": "Q2 2026",
+          "tpa_b": 368.7,
+          "net_deposits_b": 21.7,
+          "gold_m": 4.84
+        },
+        {
+          "period": "Jul 2026",
+          "funded_customers_m": 28.5,
+          "tpa_b": 355.0,
+          "net_deposits_b": 5.6,
+          "ltm_nd_growth_pct": 25,
+          "equity_notional_b": 332.8,
+          "options_contracts_m": 324.2,
+          "crypto_volume_b": 10.9,
+          "event_contracts_b": 6.1,
+          "margin_book_b": 20.7,
+          "cash_and_deposits_b": 19.5,
+          "sweep_b": 29.2,
+          "securities_lending_revenue_m": 40
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "635e6d80583ee1bd",
+      "DISPLAY_VALUES": [
+        {
+          "quarter": "Q3 2024",
+          "tpa_b": 152.2,
+          "net_deposits_b": 10.0,
+          "gold_m": 2.2
+        },
+        {
+          "quarter": "Q4 2024",
+          "tpa_b": 193.0,
+          "net_deposits_b": 16.1,
+          "gold_m": 2.6
+        },
+        {
+          "quarter": "Q1 2025",
+          "tpa_b": 221.0,
+          "net_deposits_b": 18.0,
+          "gold_m": 3.2
+        },
+        {
+          "quarter": "Q2 2025",
+          "tpa_b": 278.6,
+          "net_deposits_b": 13.8,
+          "gold_m": 3.5
+        },
+        {
+          "quarter": "Q3 2025",
+          "tpa_b": 333.0,
+          "net_deposits_b": 20.4,
+          "gold_m": 3.9
+        },
+        {
+          "quarter": "Q4 2025",
+          "tpa_b": 324.0,
+          "net_deposits_b": 15.9,
+          "gold_m": 4.2
+        },
+        {
+          "quarter": "Q1 2026",
+          "tpa_b": 307.3,
+          "net_deposits_b": 17.7,
+          "gold_m": 4.34
+        },
+        {
+          "quarter": "Q2 2026",
+          "tpa_b": 368.7,
+          "net_deposits_b": 21.7,
+          "gold_m": 4.84
+        },
+        {
+          "period": "Jul 2026",
+          "funded_customers_m": 28.5,
+          "tpa_b": 355.0,
+          "net_deposits_b": 5.6,
+          "ltm_nd_growth_pct": 25,
+          "equity_notional_b": 332.8,
+          "options_contracts_m": 324.2,
+          "crypto_volume_b": 10.9,
+          "event_contracts_b": 6.1,
+          "margin_book_b": 20.7,
+          "cash_and_deposits_b": 19.5,
+          "sweep_b": 29.2,
+          "securities_lending_revenue_m": 40
+        }
+      ],
+      "NARRATIVE_LOCATOR": "1.2.1 / 3",
+      "TABLE_LOCATOR": "Appendix C",
+      "CAPTION_LOCATOR": "Figure 3",
+      "RENDERED_ASSET_LOCATOR": "inline SVG #vis-003",
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-004",
+      "FIGURE_TITLE": "2030 시나리오별 주당가치와 현재가치",
+      "AUTHORITATIVE_SOURCE_BLOCK": "scenarios / valuation",
+      "SOURCE_VALUES": [
+        {
+          "name": "Down",
+          "terminal": 49.4,
+          "pv": 30.17,
+          "probability": 0.25
+        },
+        {
+          "name": "Central",
+          "terminal": 160.5,
+          "pv": 98.03,
+          "probability": 0.55
+        },
+        {
+          "name": "Up",
+          "terminal": 235.6,
+          "pv": 143.91,
+          "probability": 0.2
+        },
+        {
+          "current_price": 108.13,
+          "weighted_pv": 90.24
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "31f592767af24586",
+      "DISPLAY_VALUES": [
+        {
+          "name": "Down",
+          "terminal": 49.4,
+          "pv": 30.17,
+          "probability": 0.25
+        },
+        {
+          "name": "Central",
+          "terminal": 160.5,
+          "pv": 98.03,
+          "probability": 0.55
+        },
+        {
+          "name": "Up",
+          "terminal": 235.6,
+          "pv": 143.91,
+          "probability": 0.2
+        },
+        {
+          "current_price": 108.13,
+          "weighted_pv": 90.24
+        }
+      ],
+      "NARRATIVE_LOCATOR": "5.4-5.5",
+      "TABLE_LOCATOR": "5.4-5.5",
+      "CAPTION_LOCATOR": "Figure 4",
+      "RENDERED_ASSET_LOCATOR": "inline SVG #vis-004",
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-005",
+      "FIGURE_TITLE": "$108이 요구하는 2030 매출",
+      "AUTHORITATIVE_SOURCE_BLOCK": "reverse_expectations",
+      "SOURCE_VALUES": [
+        {
+          "terminal_pe": 25,
+          "required_eps": 7.08,
+          "required_revenue_b": 14.48,
+          "revenue_cagr_pct": 29.4
+        },
+        {
+          "terminal_pe": 30,
+          "required_eps": 5.9,
+          "required_revenue_b": 12.07,
+          "revenue_cagr_pct": 23.7
+        },
+        {
+          "terminal_pe": 35,
+          "required_eps": 5.06,
+          "required_revenue_b": 10.35,
+          "revenue_cagr_pct": 19.0
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "a39fae5f60401af4",
+      "DISPLAY_VALUES": [
+        {
+          "terminal_pe": 25,
+          "required_eps": 7.08,
+          "required_revenue_b": 14.48,
+          "revenue_cagr_pct": 29.4
+        },
+        {
+          "terminal_pe": 30,
+          "required_eps": 5.9,
+          "required_revenue_b": 12.07,
+          "revenue_cagr_pct": 23.7
+        },
+        {
+          "terminal_pe": 35,
+          "required_eps": 5.06,
+          "required_revenue_b": 10.35,
+          "revenue_cagr_pct": 19.0
+        }
+      ],
+      "NARRATIVE_LOCATOR": "5.6",
+      "TABLE_LOCATOR": "5.6",
+      "CAPTION_LOCATOR": "Figure 5",
+      "RENDERED_ASSET_LOCATOR": "inline SVG #vis-005",
+      "STATUS": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,1533 @@
+{
+  "meta": {
+    "ticker": "RIOT",
+    "company": "Riot Platforms, Inc.",
+    "T0": "2026-08-24",
+    "price_asof": "2026-08-21 close",
+    "filing_asof": "2026 Q2 Form 10-Q, period 2026-06-30; material current report through 2026-08-14",
+    "consensus_asof": "2026-08-21 public-market snapshot",
+    "version": "Deep Dive OS v1.7 / RIOT 2026-08-24",
+    "currency": "USD",
+    "units_note": "Financial table amounts are USD millions unless marked otherwise."
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue_m": 280.7,
+        "bitcoin_mining_revenue_m": 189.0,
+        "engineering_revenue_m": 64.3,
+        "operating_income_m": -63.0,
+        "net_income_m": -49.5,
+        "operating_cash_flow_m": 33.1,
+        "miner_plus_ppe_capex_m": 424.1,
+        "simplified_fcf_proxy_m": -391.0,
+        "stock_based_compensation_m": 32.2
+      },
+      {
+        "year": 2024,
+        "revenue_m": 376.7,
+        "bitcoin_mining_revenue_m": 321.0,
+        "engineering_revenue_m": 38.5,
+        "operating_income_m": 153.6,
+        "net_income_m": 109.4,
+        "operating_cash_flow_m": -255.1,
+        "miner_plus_ppe_capex_m": 682.8,
+        "simplified_fcf_proxy_m": -937.9,
+        "stock_based_compensation_m": 125.2
+      },
+      {
+        "year": 2025,
+        "revenue_m": 647.4,
+        "bitcoin_mining_revenue_m": 576.3,
+        "engineering_revenue_m": 64.7,
+        "operating_income_m": -622.2,
+        "net_income_m": -663.2,
+        "operating_cash_flow_m": -572.9,
+        "miner_plus_ppe_capex_m": 415.0,
+        "simplified_fcf_proxy_m": -987.9,
+        "stock_based_compensation_m": 125.7
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "period": "Q3'24",
+        "total_revenue_m": 84.8,
+        "mining_revenue_m": 67.5,
+        "data_center_revenue_m": 0.0,
+        "engineering_revenue_m": 12.6,
+        "btc_mined": 1104,
+        "cost_per_btc_usd": 35376,
+        "derived": false
+      },
+      {
+        "period": "Q4'24",
+        "total_revenue_m": 142.6,
+        "mining_revenue_m": 123.1,
+        "data_center_revenue_m": 0.0,
+        "engineering_revenue_m": 11.5,
+        "btc_mined": 1516,
+        "cost_per_btc_usd": 42000,
+        "derived": true
+      },
+      {
+        "period": "Q1'25",
+        "total_revenue_m": 161.4,
+        "mining_revenue_m": 142.9,
+        "data_center_revenue_m": 0.0,
+        "engineering_revenue_m": 13.9,
+        "btc_mined": 1530,
+        "cost_per_btc_usd": 43808,
+        "derived": false
+      },
+      {
+        "period": "Q2'25",
+        "total_revenue_m": 153.0,
+        "mining_revenue_m": 140.9,
+        "data_center_revenue_m": 0.0,
+        "engineering_revenue_m": 10.6,
+        "btc_mined": 1426,
+        "cost_per_btc_usd": 48992,
+        "derived": false
+      },
+      {
+        "period": "Q3'25",
+        "total_revenue_m": 180.2,
+        "mining_revenue_m": 160.8,
+        "data_center_revenue_m": 0.0,
+        "engineering_revenue_m": 19.1,
+        "btc_mined": 1406,
+        "cost_per_btc_usd": 46324,
+        "derived": false
+      },
+      {
+        "period": "Q4'25",
+        "total_revenue_m": 152.8,
+        "mining_revenue_m": 131.7,
+        "data_center_revenue_m": 0.0,
+        "engineering_revenue_m": 21.1,
+        "btc_mined": 1324,
+        "cost_per_btc_usd": null,
+        "derived": true
+      },
+      {
+        "period": "Q1'26",
+        "total_revenue_m": 167.2,
+        "mining_revenue_m": 111.9,
+        "data_center_revenue_m": 33.2,
+        "data_center_lease_revenue_m": 0.9,
+        "data_center_fitout_revenue_m": 32.2,
+        "engineering_revenue_m": 22.2,
+        "btc_mined": 1473,
+        "cost_per_btc_usd": 44629,
+        "derived": false
+      },
+      {
+        "period": "Q2'26",
+        "total_revenue_m": 174.2,
+        "mining_revenue_m": 113.7,
+        "data_center_revenue_m": 23.2,
+        "data_center_lease_revenue_m": 4.9,
+        "data_center_fitout_revenue_m": 18.3,
+        "engineering_revenue_m": 37.3,
+        "btc_mined": 1587,
+        "cost_per_btc_usd": 49912,
+        "derived": false
+      }
+    ],
+    "ceilings": [
+      "Q4'24 and Q4'25 selected values are derived from annual minus disclosed prior quarters as marked.",
+      "Q4'25 cost/BTC not reconstructed.",
+      "Detailed same-timestamp FY1–FY3 sell-side model consensus is PRIMARY_SOURCE_CEILING."
+    ]
+  },
+  "balance_sheet": {
+    "as_of": "2026-06-30",
+    "cash_and_equivalents_m": 471.4,
+    "restricted_cash_m": 77.5,
+    "btc_held": 11380,
+    "btc_fair_value_m": 666.0,
+    "btc_restricted_or_collateral": 5821,
+    "debt_principal_m": 853.7,
+    "h1_2026_btc_sale_proceeds_m": 732.5,
+    "remaining_2025_atm_capacity_m": 500.0
+  },
+  "capital_structure": {
+    "filed_basic_shares_m": 378.023,
+    "share_history": [
+      {
+        "date": "2023-12-31",
+        "basic_shares_m": 230.837
+      },
+      {
+        "date": "2024-12-31",
+        "basic_shares_m": 344.89
+      },
+      {
+        "date": "2025-12-31",
+        "basic_shares_m": 371.576
+      },
+      {
+        "date": "2026-06-30",
+        "basic_shares_m": 378.023
+      }
+    ],
+    "convert": {
+      "principal_m": 594.4,
+      "coupon_pct": 0.75,
+      "maturity": "2030-01-15",
+      "initial_conversion_price": 14.86,
+      "conversion_ratio_per_1000": 67.2767,
+      "potential_shares_m": 39.99,
+      "scenario_rule": "Bear: debt claim if out-of-money; Base/Bull: move economic claim into diluted denominator and do not double-count as debt."
+    },
+    "unvested_equity_awards_potential_m": 32.0,
+    "potential_dilutive_securities_total_m_approx": 72.5
+  },
+  "contracts": {
+    "rockdale_gross_power_mw": 700,
+    "contracted_critical_it_mw": 241,
+    "commissioned_critical_it_mw": 25,
+    "amd": {
+      "initial_mw": 25,
+      "total_contracted_mw": 50,
+      "term_years_initial": 10,
+      "initial_contract_revenue_m": 311,
+      "company_avg_annual_noi_m": 25,
+      "initial_capex_m": 89.8,
+      "initial_capex_per_it_mw_m": 3.6,
+      "initial_delivered": "2026-05",
+      "phase3_mw": 10,
+      "phase3_target": "2026-11",
+      "phase4_mw": 15,
+      "phase4_target": "2027-05"
+    },
+    "frontier_ai_lab": {
+      "critical_it_mw": 191,
+      "term_years_initial": 20,
+      "base_contract_revenue_b": 9.1,
+      "potential_contract_revenue_with_extensions_b": 16.1,
+      "company_avg_annual_noi_range_m": [
+        365,
+        411
+      ],
+      "company_capex_range_b": [
+        2.1,
+        2.3
+      ],
+      "company_capex_per_it_mw_m": [
+        11,
+        12
+      ],
+      "first_delivery_mw": 96,
+      "first_delivery_target": "2027-12",
+      "full_delivery_target": "2028-06",
+      "tenant_identity": "PRIMARY_SOURCE_CEILING"
+    },
+    "corsicana": {
+      "status": "non-binding LOI",
+      "base_treatment": "probability-adjusted option only; not contracted Core value"
+    }
+  },
+  "kpis": [
+    {
+      "name": "191MW permanent finance",
+      "current": "interim facility 최대 $573M",
+      "history": [],
+      "thresholds": {
+        "green": "≥80% LTC, limited/non-recourse, 경쟁금리",
+        "yellow": "70–80% LTC 또는 지연",
+        "red": "<70% LTC, equity/BTC 의존 확대"
+      },
+      "frequency": "이벤트"
+    },
+    {
+      "name": "191MW capex",
+      "current": "회사예상 $11–12M/MW",
+      "history": [],
+      "thresholds": {
+        "green": "≤$12M/MW",
+        "yellow": "$12–13.5M/MW",
+        "red": ">$13.5M/MW"
+      },
+      "frequency": "분기"
+    },
+    {
+      "name": "AMD Phase 3/4",
+      "current": "build 중",
+      "history": [],
+      "thresholds": {
+        "green": "일정·예산 준수",
+        "yellow": "≤1분기 지연",
+        "red": ">1분기 지연 또는 >20% cost overrun"
+      },
+      "frequency": "분기"
+    },
+    {
+      "name": "191MW delivery",
+      "current": "96MW Dec-27 목표",
+      "history": [],
+      "thresholds": {
+        "green": "milestone 유지",
+        "yellow": "minor slip",
+        "red": "일정이 1분기+ 밀림"
+      },
+      "frequency": "분기"
+    },
+    {
+      "name": "Stabilized 191 NOI",
+      "current": "회사예상 $365–411M/년",
+      "history": [],
+      "thresholds": {
+        "green": "≥$365M run-rate",
+        "yellow": "$330–365M",
+        "red": "<$330M"
+      },
+      "frequency": "운영 후 분기"
+    },
+    {
+      "name": "Contracted critical IT MW",
+      "current": 241,
+      "unit": "MW",
+      "history": [
+        {
+          "date": "2026-01-16",
+          "mw": 25
+        },
+        {
+          "date": "2026-04-30",
+          "mw": 50
+        },
+        {
+          "date": "2026-08-10",
+          "mw": 241
+        }
+      ],
+      "thresholds": {
+        "green": "binding MW 증가",
+        "yellow": "변화 없음",
+        "red": "기존 계약 축소/재협상"
+      },
+      "frequency": "분기"
+    },
+    {
+      "name": "Economic diluted shares",
+      "current": "378M basic + 잠재희석",
+      "history": [
+        {
+          "date": "2023-12-31",
+          "basic_shares_m": 230.837
+        },
+        {
+          "date": "2024-12-31",
+          "basic_shares_m": 344.89
+        },
+        {
+          "date": "2025-12-31",
+          "basic_shares_m": 371.576
+        },
+        {
+          "date": "2026-06-30",
+          "basic_shares_m": 378.023
+        }
+      ],
+      "thresholds": {
+        "green": "ex-convert 연간 순증 <2%",
+        "yellow": "2–5%",
+        "red": ">5%"
+      },
+      "frequency": "분기"
+    },
+    {
+      "name": "Mining cost/BTC",
+      "current": 49912,
+      "unit": "USD/BTC",
+      "history": [
+        {
+          "period": "2024 FY",
+          "value": 32216
+        },
+        {
+          "period": "2026 Q1",
+          "value": 44629
+        },
+        {
+          "period": "2026 Q2",
+          "value": 49912
+        }
+      ],
+      "thresholds": {
+        "green": "BTC economics 개선",
+        "yellow": "현 수준",
+        "red": "4개분기 구조적 cash loss"
+      },
+      "frequency": "월/분기"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.3,
+      "revenue_path_m": [
+        670,
+        760,
+        980,
+        1050
+      ],
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029
+      ],
+      "margin_path": [],
+      "fcf_2029_m": 80,
+      "fcf": [
+        null,
+        null,
+        null,
+        80
+      ],
+      "diluted_shares_m": 405,
+      "per_share_value": 7.5,
+      "core_condition": "191MW 지연·높은 equity funding·Corsicana 미전환"
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "revenue_path_m": [
+        690,
+        900,
+        1250,
+        1480
+      ],
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029
+      ],
+      "margin_path": [],
+      "fcf_2029_m": 360,
+      "fcf": [
+        null,
+        null,
+        null,
+        360
+      ],
+      "diluted_shares_m": 440,
+      "per_share_value": 22.0,
+      "core_condition": "191MW 대체로 계획대로, 80%대 장기금융, Corsicana 제한적 옵션"
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.2,
+      "revenue_path_m": [
+        710,
+        980,
+        1550,
+        1950
+      ],
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029
+      ],
+      "margin_path": [],
+      "fcf_2029_m": 620,
+      "fcf": [
+        null,
+        null,
+        null,
+        620
+      ],
+      "diluted_shares_m": 448,
+      "per_share_value": 38.0,
+      "core_condition": "191MW 일정·예산 준수, 85–90% LTC, AMD 추가 확장"
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.1,
+      "revenue_path_m": [
+        710,
+        1050,
+        1850,
+        2650
+      ],
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029
+      ],
+      "margin_path": [],
+      "fcf_2029_m": 980,
+      "fcf": [
+        null,
+        null,
+        null,
+        980
+      ],
+      "diluted_shares_m": 465,
+      "per_share_value": 60.0,
+      "core_condition": "Rockdale 검증 후 Corsicana까지 대형 AI 캠퍼스로 확장"
+    }
+  ],
+  "valuation": {
+    "mode": "Hybrid — Core + Execution + Ecosystem − Funding/Dilution",
+    "core_b": 2.81,
+    "execution_b": 4.3,
+    "ecosystem_b": 0.0,
+    "drag_b": -0.55,
+    "base_equity_value_b": 6.56,
+    "base_economic_diluted_shares_m": 440,
+    "base_current_fair_value": 14.909090909090908,
+    "expected_value_2029": 24.650000000000002,
+    "expected_value_pv_12pct": 16.901331037049438,
+    "base_value_2029": 22.0,
+    "base_value_pv_12pct": 15.08435224401978,
+    "expected_irr": 0.06752152197072947,
+    "current_price": 19.83,
+    "horizon_years": 3.33,
+    "bull_execution_bear_ud": 1.4736415247364156,
+    "ud_2x_price": 17.666666666666668,
+    "entry_for_12pct_expected_irr": 16.901331037049438,
+    "components": {
+      "net_liquid_assets_after_nonconvert_debt_b": 0.96,
+      "bitcoin_mining_core_b": 1.2,
+      "engineering_core_b": 0.25,
+      "amd_contracted_50mw_b": 0.4,
+      "core_subtotal_b": 2.81,
+      "frontier_191mw_execution_b": 2.55,
+      "residual_rockdale_amd_expansion_b": 0.35,
+      "corsicana_option_b": 1.4,
+      "execution_subtotal_b": 4.3,
+      "ecosystem_b": 0.0,
+      "funding_corporate_dilution_drag_b": -0.55,
+      "base_equity_value_b": 6.56,
+      "base_economic_diluted_shares_m": 440,
+      "base_current_fair_value_per_share": 14.909090909090908
+    },
+    "frontier_191_working": {
+      "company_noi_midpoint_m": 388,
+      "capex_midpoint_b": 2.2,
+      "illustrative_cap_rate": 0.075,
+      "illustrative_gross_stabilized_property_value_b": 5.173333333333334,
+      "illustrative_simple_development_surplus_b": 2.9733333333333336
+    }
+  },
+  "reverse_expectations": {
+    "filed_basic_market_cap_b": 7.49619609,
+    "simple_current_ev_b": 7.13499609,
+    "economic_equity_at_current_price_using_base_denominator_b": 8.7252,
+    "post_core_value_implied_b": 5.915199999999999,
+    "conditions_required": [
+      "191MW가 높은 확률로 일정과 예산에 맞는다.",
+      "permanent financing이 80–90% LTC와 경쟁력 있는 금리로 닫힌다.",
+      "회사 NOI $365–411M의 중간 이상이 실제로 나온다.",
+      "Corsicana가 binding contract로 전환된다.",
+      "diluted shares가 과도하게 증가하지 않는다."
+    ]
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_context": "public aggregators: high-$600M region",
+      "our_base_revenue_m": 690
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_context": "public aggregators: ~$800M region",
+      "our_base_revenue_m": 900
+    },
+    "revision_trend": "Post-data-center announcements, public analyst stance remained generally Buy and targets moved higher; exact same-timestamp detailed consensus is PRIMARY_SOURCE_CEILING.",
+    "public_average_target_context": "~$30 region; aggregator universes differ",
+    "short_interest": {
+      "as_of": "2026-07-31",
+      "shares_m": 51.6,
+      "pct_float": 14.8
+    }
+  },
+  "stance": {
+    "zone": "관망",
+    "price_bands": {
+      "active_interest": "< $15",
+      "attractive_entry": "$15–17",
+      "watch": "$17–22",
+      "success_priced": "≥ $22"
+    },
+    "horizon": "~3.33 years to 2029 scenario value",
+    "required_return_hurdle": "10–15%",
+    "current_expected_irr": 0.06752152197072947,
+    "rule": "현재가에서 비중 확대보다 permanent financing과 추가 AMD delivery 증거를 우선 확인."
+  },
+  "catalysts": [
+    {
+      "when": "2026 Q3/Q4",
+      "event": "191MW permanent financing 세부",
+      "bull": "80–90% LTC, 낮은 recourse",
+      "bear": "bridge 연장·equity 비중 증가",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2026-11",
+      "event": "AMD Phase 3 10MW 인도 목표",
+      "bull": "on time/on budget",
+      "bear": "지연·cost overrun",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2026-12-31 전후",
+      "event": "interim facility maturity 대응",
+      "bull": "장기 refinancing 완료",
+      "bear": "만기연장 의존",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027 Q1",
+      "event": "FY2026 실적",
+      "bull": "lease revenue와 DC economics 개선",
+      "bear": "fit-out만 증가, cash burn 지속",
+      "sensitivity": "M"
+    },
+    {
+      "when": "2027 H1",
+      "event": "Corsicana LOI 진전",
+      "bull": "binding lease/credit backstop",
+      "bear": "장기 미전환",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027-05",
+      "event": "AMD Phase 4 15MW 인도 목표",
+      "bull": "total 50MW 안정화",
+      "bear": "일정 미달",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027 H1/H2",
+      "event": "191MW construction milestones",
+      "bull": "capex/MW 유지",
+      "bear": "비용상승/조달지연",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027 Q2",
+      "event": "capital structure update",
+      "bull": "ATM 불필요",
+      "bear": "equity issuance 확대",
+      "sensitivity": "H"
+    }
+  ],
+  "falsification": [
+    {
+      "id": "F1",
+      "statement": "향후 12개월 binding capacity가 전혀 늘지 않고 peers는 유사조건 계약을 계속 확보하면 power-scarcity thesis를 낮춘다."
+    },
+    {
+      "id": "F2",
+      "statement": "permanent finance <70% LTC, capex >$13.5M/MW 지속, 또는 일정 >1분기 지연이면 high-capital-efficiency development 가정을 폐기한다."
+    },
+    {
+      "id": "F3",
+      "statement": "ex-convert 추가 희석이 연 5%를 넘는데 contracted NOI가 비례해 늘지 않으면 per-share accretion thesis를 폐기한다."
+    },
+    {
+      "id": "F4",
+      "statement": "normalized mining cash contribution이 4개 분기 이상 구조적으로 음수이고 corporate operations를 위해 BTC 매각이 계속 필요하면 Mining bridge value를 대폭 낮춘다."
+    }
+  ],
+  "event_price_sample": [
+    {
+      "date": "2023-12-31",
+      "price": 15.47,
+      "event": "pre-transition baseline"
+    },
+    {
+      "date": "2024-03-31",
+      "price": 12.24,
+      "event": "mining phase"
+    },
+    {
+      "date": "2024-06-30",
+      "price": 9.14,
+      "event": "post-halving"
+    },
+    {
+      "date": "2024-09-30",
+      "price": 7.42,
+      "event": "mining pressure"
+    },
+    {
+      "date": "2024-12-31",
+      "price": 10.21,
+      "event": "convert/BTC accumulation"
+    },
+    {
+      "date": "2025-03-31",
+      "price": 7.12,
+      "event": "AI/HPC evaluation"
+    },
+    {
+      "date": "2025-06-30",
+      "price": 11.3,
+      "event": "transition"
+    },
+    {
+      "date": "2025-09-30",
+      "price": 19.03,
+      "event": "AI/DC optionality rerating"
+    },
+    {
+      "date": "2025-12-31",
+      "price": 12.67,
+      "event": "year-end"
+    },
+    {
+      "date": "2026-01-16",
+      "price": 19.24,
+      "event": "AMD lease + Rockdale land"
+    },
+    {
+      "date": "2026-03-31",
+      "price": 12.36,
+      "event": "financing/execution reset"
+    },
+    {
+      "date": "2026-04-30",
+      "price": 17.24,
+      "event": "AMD additional 25MW"
+    },
+    {
+      "date": "2026-06-30",
+      "price": 27.38,
+      "event": "DC rerating peak region"
+    },
+    {
+      "date": "2026-08-10",
+      "price": 19.4,
+      "event": "Q2 + 191MW disclosure date close"
+    },
+    {
+      "date": "2026-08-21",
+      "price": 19.83,
+      "event": "T0 price baseline"
+    }
+  ],
+  "valuation_history_context": {
+    "price_to_sales": {
+      "observed_low": 1.72,
+      "sample_median": 7.0,
+      "early_aug_2026": 10.9
+    },
+    "price_to_book": {
+      "2025-03": 0.85,
+      "2025-12": 1.65,
+      "early_aug_2026": 3.4
+    },
+    "use": "Expectation context only; structural comparability is broken by business-model transition."
+  },
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "obligation": "RIOT의 사업전환 연혁과 경제적 정의 재구축",
+      "status": "COMPLETE",
+      "h3_locator": "0,3"
+    },
+    {
+      "rc_id": "RC-002",
+      "obligation": "AI/HPC 산업 B1–B5 및 RIOT 손익 전달 증명",
+      "status": "COMPLETE",
+      "h3_locator": "1"
+    },
+    {
+      "rc_id": "RC-003",
+      "obligation": "Rockdale/Corsicana/Kentucky capacity ledger 구축",
+      "status": "COMPLETE",
+      "h3_locator": "1,3,Appx"
+    },
+    {
+      "rc_id": "RC-004",
+      "obligation": "191MW 계약 economics 완전 분해",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3,5,Appx H"
+    },
+    {
+      "rc_id": "RC-005",
+      "obligation": "AMD 계약 단계·경제성·납기 Promise→Delivery",
+      "status": "COMPLETE",
+      "h3_locator": "2,3"
+    },
+    {
+      "rc_id": "RC-006",
+      "obligation": "Corsicana LOI와 미계약 site option 분리",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3,5,Appx H"
+    },
+    {
+      "rc_id": "RC-007",
+      "obligation": "고객·계약·채택 ladder와 집중도",
+      "status": "COMPLETE",
+      "h3_locator": "3"
+    },
+    {
+      "rc_id": "RC-008",
+      "obligation": "Mining 3Y + 8Q operating economics",
+      "status": "COMPLETE",
+      "h3_locator": "4"
+    },
+    {
+      "rc_id": "RC-009",
+      "obligation": "BTC treasury·restricted BTC·매각·담보 lineage",
+      "status": "COMPLETE",
+      "h3_locator": "4,5"
+    },
+    {
+      "rc_id": "RC-010",
+      "obligation": "Engineering 외부 economics와 내부 전략가치 분리",
+      "status": "COMPLETE",
+      "h3_locator": "3,4"
+    },
+    {
+      "rc_id": "RC-011",
+      "obligation": "경영진 3Y Promise→Delivery·보상·소유",
+      "status": "COMPLETE",
+      "h3_locator": "2"
+    },
+    {
+      "rc_id": "RC-012",
+      "obligation": "고객 job 기준 경쟁 매트릭스",
+      "status": "COMPLETE",
+      "h3_locator": "1,3"
+    },
+    {
+      "rc_id": "RC-013",
+      "obligation": "3Y + latest 8Q 재무 및 Accounting Quality",
+      "status": "COMPLETE",
+      "h3_locator": "4"
+    },
+    {
+      "rc_id": "RC-014",
+      "obligation": "자본구조·project finance·dilution denominator",
+      "status": "COMPLETE",
+      "h3_locator": "4,5,Appx C"
+    },
+    {
+      "rc_id": "RC-015",
+      "obligation": "공급망·냉각·water·fiber·grid·규제 bottleneck",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1,3,Appx H"
+    },
+    {
+      "rc_id": "RC-016",
+      "obligation": "Consensus·targets·ownership·short/positioning",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "0,5,Appx G"
+    },
+    {
+      "rc_id": "RC-017",
+      "obligation": "Hybrid SOTP + peer/base-rate valuation",
+      "status": "COMPLETE",
+      "h3_locator": "5"
+    },
+    {
+      "rc_id": "RC-018",
+      "obligation": "Reverse expectations + scenarios + stance",
+      "status": "COMPLETE",
+      "h3_locator": "5,6"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Riot Platforms Q2 2026 Results",
+      "date": "2026-08-10",
+      "type": "Company primary",
+      "url": "https://www.riotplatforms.com/riot-platforms-reports-second-quarter-2026-financial-results-and-strategic-highlights/"
+    },
+    {
+      "id": "S2",
+      "title": "Riot / AMD Rockdale Lease Announcement",
+      "date": "2026-01-16",
+      "type": "Company primary",
+      "url": "https://www.riotplatforms.com/riot-announces-fee-simple-acquisition-of-land-and-first-data-center-lease-with-amd-at-the-rockdale-site/"
+    },
+    {
+      "id": "S3",
+      "title": "Riot Q1 2026 Results",
+      "date": "2026-04-30",
+      "type": "Company primary",
+      "url": "https://www.riotplatforms.com/riot-platforms-reports-first-quarter-2026-financial-results-and-strategic-highlights/"
+    },
+    {
+      "id": "S4",
+      "title": "Riot FY2025 Results",
+      "date": "2026-03-02",
+      "type": "Company primary",
+      "url": "https://www.riotplatforms.com/riot-platforms-reports-full-year-2025-financial-results-and-strategic-highlights/"
+    },
+    {
+      "id": "S5",
+      "title": "Riot FY2024 Results",
+      "date": "2025-02-24",
+      "type": "Company primary",
+      "url": "https://www.riotplatforms.com/riot-platforms-reports-full-year-2024-financial-results-current-operational-and-financial-highlights/"
+    },
+    {
+      "id": "S6",
+      "title": "Riot SEC filings: 2025 10-K, 2026 Q1/Q2 10-Q, 2026 Proxy, relevant 8-Ks",
+      "date": "through 2026-08-14",
+      "type": "SEC primary",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=1167419&owner=exclude"
+    },
+    {
+      "id": "S7",
+      "title": "ERCOT Batch Zero approval",
+      "date": "2026-06-18",
+      "type": "Grid primary",
+      "url": "https://www.ercot.com/news/release/06182026-puct-approves-ercots"
+    },
+    {
+      "id": "S8",
+      "title": "ERCOT Batch Zero status notice",
+      "date": "2026-08-03",
+      "type": "Grid primary",
+      "url": "https://www.ercot.com/services/comm/mkt_notices/M-A080326-01"
+    },
+    {
+      "id": "S9",
+      "title": "Berkeley Lab U.S. Data Center Energy Usage Report: 2025 Update",
+      "date": "2026-06",
+      "type": "Government lab / research",
+      "url": "https://seta.lbl.gov/publications/united-states-data-center-energy-2025"
+    },
+    {
+      "id": "S10",
+      "title": "Berkeley Lab Speed to Power",
+      "date": "2026-06",
+      "type": "Government lab / research",
+      "url": "https://datacenters.lbl.gov/publications/speed-power-solutions-accelerating"
+    },
+    {
+      "id": "S11",
+      "title": "Hut 8 primary AI data-center / project-financing disclosures",
+      "date": "2025-2026",
+      "type": "Peer primary",
+      "url": "https://www.hut8.com/investors"
+    },
+    {
+      "id": "S12",
+      "title": "Cipher Mining primary Fluidstack / Google-backed data-center disclosures",
+      "date": "2025-2026",
+      "type": "Peer primary",
+      "url": "https://investors.ciphermining.com/"
+    },
+    {
+      "id": "S13",
+      "title": "Historical price / valuation multiple snapshots",
+      "date": "through 2026-08-21",
+      "type": "Market data",
+      "url": "https://www.macrotrends.net/stocks/charts/RIOT/riot-platforms/price-sales"
+    }
+  ],
+  "evidence_boundaries": [
+    "191MW AI tenant identity is not treated as confirmed without company/SEC primary confirmation.",
+    "Permanent project finance terms are not treated as final until disclosed.",
+    "Corsicana LOI is non-binding and is not Core.",
+    "Company NOI and capex ranges are forward estimates.",
+    "Gross MW is never equated with critical IT MW.",
+    "Fit-out revenue is not recurring lease revenue.",
+    "Historical multiples are expectation context, not the primary valuation anchor."
+  ],
+  "visual_data_source_registry": [
+    {
+      "VIS_ID": "VIS-001",
+      "FIGURE_TITLE": "분기별 매출 믹스 전환",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.quarterly_8q",
+      "SOURCE_VALUES": [
+        {
+          "period": "Q3'24",
+          "total_revenue_m": 84.8,
+          "mining_revenue_m": 67.5,
+          "data_center_revenue_m": 0.0,
+          "engineering_revenue_m": 12.6,
+          "btc_mined": 1104,
+          "cost_per_btc_usd": 35376,
+          "derived": false
+        },
+        {
+          "period": "Q4'24",
+          "total_revenue_m": 142.6,
+          "mining_revenue_m": 123.1,
+          "data_center_revenue_m": 0.0,
+          "engineering_revenue_m": 11.5,
+          "btc_mined": 1516,
+          "cost_per_btc_usd": 42000,
+          "derived": true
+        },
+        {
+          "period": "Q1'25",
+          "total_revenue_m": 161.4,
+          "mining_revenue_m": 142.9,
+          "data_center_revenue_m": 0.0,
+          "engineering_revenue_m": 13.9,
+          "btc_mined": 1530,
+          "cost_per_btc_usd": 43808,
+          "derived": false
+        },
+        {
+          "period": "Q2'25",
+          "total_revenue_m": 153.0,
+          "mining_revenue_m": 140.9,
+          "data_center_revenue_m": 0.0,
+          "engineering_revenue_m": 10.6,
+          "btc_mined": 1426,
+          "cost_per_btc_usd": 48992,
+          "derived": false
+        },
+        {
+          "period": "Q3'25",
+          "total_revenue_m": 180.2,
+          "mining_revenue_m": 160.8,
+          "data_center_revenue_m": 0.0,
+          "engineering_revenue_m": 19.1,
+          "btc_mined": 1406,
+          "cost_per_btc_usd": 46324,
+          "derived": false
+        },
+        {
+          "period": "Q4'25",
+          "total_revenue_m": 152.8,
+          "mining_revenue_m": 131.7,
+          "data_center_revenue_m": 0.0,
+          "engineering_revenue_m": 21.1,
+          "btc_mined": 1324,
+          "cost_per_btc_usd": null,
+          "derived": true
+        },
+        {
+          "period": "Q1'26",
+          "total_revenue_m": 167.2,
+          "mining_revenue_m": 111.9,
+          "data_center_revenue_m": 33.2,
+          "data_center_lease_revenue_m": 0.9,
+          "data_center_fitout_revenue_m": 32.2,
+          "engineering_revenue_m": 22.2,
+          "btc_mined": 1473,
+          "cost_per_btc_usd": 44629,
+          "derived": false
+        },
+        {
+          "period": "Q2'26",
+          "total_revenue_m": 174.2,
+          "mining_revenue_m": 113.7,
+          "data_center_revenue_m": 23.2,
+          "data_center_lease_revenue_m": 4.9,
+          "data_center_fitout_revenue_m": 18.3,
+          "engineering_revenue_m": 37.3,
+          "btc_mined": 1587,
+          "cost_per_btc_usd": 49912,
+          "derived": false
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "831fd4a6a4b40658",
+      "DISPLAY_VALUES": [
+        {
+          "period": "Q3'24",
+          "mining_revenue_m": 67.5,
+          "data_center_revenue_m": 0.0,
+          "engineering_revenue_m": 12.6
+        },
+        {
+          "period": "Q4'24",
+          "mining_revenue_m": 123.1,
+          "data_center_revenue_m": 0.0,
+          "engineering_revenue_m": 11.5
+        },
+        {
+          "period": "Q1'25",
+          "mining_revenue_m": 142.9,
+          "data_center_revenue_m": 0.0,
+          "engineering_revenue_m": 13.9
+        },
+        {
+          "period": "Q2'25",
+          "mining_revenue_m": 140.9,
+          "data_center_revenue_m": 0.0,
+          "engineering_revenue_m": 10.6
+        },
+        {
+          "period": "Q3'25",
+          "mining_revenue_m": 160.8,
+          "data_center_revenue_m": 0.0,
+          "engineering_revenue_m": 19.1
+        },
+        {
+          "period": "Q4'25",
+          "mining_revenue_m": 131.7,
+          "data_center_revenue_m": 0.0,
+          "engineering_revenue_m": 21.1
+        },
+        {
+          "period": "Q1'26",
+          "mining_revenue_m": 111.9,
+          "data_center_revenue_m": 33.2,
+          "engineering_revenue_m": 22.2
+        },
+        {
+          "period": "Q2'26",
+          "mining_revenue_m": 113.7,
+          "data_center_revenue_m": 23.2,
+          "engineering_revenue_m": 37.3
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Chapter 4.2",
+      "TABLE_LOCATOR": "Chapter 4.2 8Q table",
+      "CAPTION_LOCATOR": "Figure 1",
+      "RENDERED_ASSET_LOCATOR": "inline-svg:vis-001"
+    },
+    {
+      "VIS_ID": "VIS-002",
+      "FIGURE_TITLE": "계약된 critical IT MW의 단계",
+      "AUTHORITATIVE_SOURCE_BLOCK": "contracts",
+      "SOURCE_VALUES": {
+        "rockdale_gross_power_mw": 700,
+        "contracted_critical_it_mw": 241,
+        "commissioned_critical_it_mw": 25,
+        "amd": {
+          "initial_mw": 25,
+          "total_contracted_mw": 50,
+          "term_years_initial": 10,
+          "initial_contract_revenue_m": 311,
+          "company_avg_annual_noi_m": 25,
+          "initial_capex_m": 89.8,
+          "initial_capex_per_it_mw_m": 3.6,
+          "initial_delivered": "2026-05",
+          "phase3_mw": 10,
+          "phase3_target": "2026-11",
+          "phase4_mw": 15,
+          "phase4_target": "2027-05"
+        },
+        "frontier_ai_lab": {
+          "critical_it_mw": 191,
+          "term_years_initial": 20,
+          "base_contract_revenue_b": 9.1,
+          "potential_contract_revenue_with_extensions_b": 16.1,
+          "company_avg_annual_noi_range_m": [
+            365,
+            411
+          ],
+          "company_capex_range_b": [
+            2.1,
+            2.3
+          ],
+          "company_capex_per_it_mw_m": [
+            11,
+            12
+          ],
+          "first_delivery_mw": 96,
+          "first_delivery_target": "2027-12",
+          "full_delivery_target": "2028-06",
+          "tenant_identity": "PRIMARY_SOURCE_CEILING"
+        },
+        "corsicana": {
+          "status": "non-binding LOI",
+          "base_treatment": "probability-adjusted option only; not contracted Core value"
+        }
+      },
+      "SOURCE_VERSION_OR_HASH": "9b2df34d68999c4c",
+      "DISPLAY_VALUES": {
+        "commissioned_mw": 25,
+        "amd_build_mw": 25,
+        "frontier_build_mw": 191,
+        "contracted_total_mw": 241
+      },
+      "NARRATIVE_LOCATOR": "Chapter 3.3–3.4",
+      "TABLE_LOCATOR": "Appendix B",
+      "CAPTION_LOCATOR": "Figure 2",
+      "RENDERED_ASSET_LOCATOR": "inline-svg:vis-002"
+    },
+    {
+      "VIS_ID": "VIS-003",
+      "FIGURE_TITLE": "2029 시나리오 주당가치와 현재가",
+      "AUTHORITATIVE_SOURCE_BLOCK": "scenarios + valuation.current_price",
+      "SOURCE_VALUES": {
+        "scenarios": [
+          {
+            "name": "Bear",
+            "probability": 0.3,
+            "revenue_path_m": [
+              670,
+              760,
+              980,
+              1050
+            ],
+            "years": [
+              2026,
+              2027,
+              2028,
+              2029
+            ],
+            "margin_path": [],
+            "fcf_2029_m": 80,
+            "fcf": [
+              null,
+              null,
+              null,
+              80
+            ],
+            "diluted_shares_m": 405,
+            "per_share_value": 7.5,
+            "core_condition": "191MW 지연·높은 equity funding·Corsicana 미전환"
+          },
+          {
+            "name": "Base",
+            "probability": 0.4,
+            "revenue_path_m": [
+              690,
+              900,
+              1250,
+              1480
+            ],
+            "years": [
+              2026,
+              2027,
+              2028,
+              2029
+            ],
+            "margin_path": [],
+            "fcf_2029_m": 360,
+            "fcf": [
+              null,
+              null,
+              null,
+              360
+            ],
+            "diluted_shares_m": 440,
+            "per_share_value": 22.0,
+            "core_condition": "191MW 대체로 계획대로, 80%대 장기금융, Corsicana 제한적 옵션"
+          },
+          {
+            "name": "Bull Execution",
+            "probability": 0.2,
+            "revenue_path_m": [
+              710,
+              980,
+              1550,
+              1950
+            ],
+            "years": [
+              2026,
+              2027,
+              2028,
+              2029
+            ],
+            "margin_path": [],
+            "fcf_2029_m": 620,
+            "fcf": [
+              null,
+              null,
+              null,
+              620
+            ],
+            "diluted_shares_m": 448,
+            "per_share_value": 38.0,
+            "core_condition": "191MW 일정·예산 준수, 85–90% LTC, AMD 추가 확장"
+          },
+          {
+            "name": "Bull Ecosystem",
+            "probability": 0.1,
+            "revenue_path_m": [
+              710,
+              1050,
+              1850,
+              2650
+            ],
+            "years": [
+              2026,
+              2027,
+              2028,
+              2029
+            ],
+            "margin_path": [],
+            "fcf_2029_m": 980,
+            "fcf": [
+              null,
+              null,
+              null,
+              980
+            ],
+            "diluted_shares_m": 465,
+            "per_share_value": 60.0,
+            "core_condition": "Rockdale 검증 후 Corsicana까지 대형 AI 캠퍼스로 확장"
+          }
+        ],
+        "current_price": 19.83
+      },
+      "SOURCE_VERSION_OR_HASH": "52ce8c4af32754ba",
+      "DISPLAY_VALUES": {
+        "values": [
+          7.5,
+          22,
+          38,
+          60
+        ],
+        "current_price": 19.83,
+        "probabilities": [
+          30,
+          40,
+          20,
+          10
+        ]
+      },
+      "NARRATIVE_LOCATOR": "Chapter 5.4–5.5",
+      "TABLE_LOCATOR": "Chapter 0 scenario table",
+      "CAPTION_LOCATOR": "Figure 3",
+      "RENDERED_ASSET_LOCATOR": "inline-svg:vis-003"
+    },
+    {
+      "VIS_ID": "VIS-004",
+      "FIGURE_TITLE": "기본주식수 증가와 잠재 희석",
+      "AUTHORITATIVE_SOURCE_BLOCK": "capital_structure",
+      "SOURCE_VALUES": {
+        "filed_basic_shares_m": 378.023,
+        "share_history": [
+          {
+            "date": "2023-12-31",
+            "basic_shares_m": 230.837
+          },
+          {
+            "date": "2024-12-31",
+            "basic_shares_m": 344.89
+          },
+          {
+            "date": "2025-12-31",
+            "basic_shares_m": 371.576
+          },
+          {
+            "date": "2026-06-30",
+            "basic_shares_m": 378.023
+          }
+        ],
+        "convert": {
+          "principal_m": 594.4,
+          "coupon_pct": 0.75,
+          "maturity": "2030-01-15",
+          "initial_conversion_price": 14.86,
+          "conversion_ratio_per_1000": 67.2767,
+          "potential_shares_m": 39.99,
+          "scenario_rule": "Bear: debt claim if out-of-money; Base/Bull: move economic claim into diluted denominator and do not double-count as debt."
+        },
+        "unvested_equity_awards_potential_m": 32.0,
+        "potential_dilutive_securities_total_m_approx": 72.5
+      },
+      "SOURCE_VERSION_OR_HASH": "8c91bd1d9977df95",
+      "DISPLAY_VALUES": {
+        "share_history_m": [
+          230.837,
+          344.89,
+          371.576,
+          378.023
+        ],
+        "convert_potential_m": 39.99,
+        "unvested_awards_approx_m": 32.0
+      },
+      "NARRATIVE_LOCATOR": "Chapter 2.4 / 4.5",
+      "TABLE_LOCATOR": "Appendix C",
+      "CAPTION_LOCATOR": "Figure 4",
+      "RENDERED_ASSET_LOCATOR": "inline-svg:vis-004"
+    },
+    {
+      "VIS_ID": "VIS-005",
+      "FIGURE_TITLE": "이벤트 표본 기준 RIOT 주가",
+      "AUTHORITATIVE_SOURCE_BLOCK": "event_price_sample",
+      "SOURCE_VALUES": [
+        {
+          "date": "2023-12-31",
+          "price": 15.47,
+          "event": "pre-transition baseline"
+        },
+        {
+          "date": "2024-03-31",
+          "price": 12.24,
+          "event": "mining phase"
+        },
+        {
+          "date": "2024-06-30",
+          "price": 9.14,
+          "event": "post-halving"
+        },
+        {
+          "date": "2024-09-30",
+          "price": 7.42,
+          "event": "mining pressure"
+        },
+        {
+          "date": "2024-12-31",
+          "price": 10.21,
+          "event": "convert/BTC accumulation"
+        },
+        {
+          "date": "2025-03-31",
+          "price": 7.12,
+          "event": "AI/HPC evaluation"
+        },
+        {
+          "date": "2025-06-30",
+          "price": 11.3,
+          "event": "transition"
+        },
+        {
+          "date": "2025-09-30",
+          "price": 19.03,
+          "event": "AI/DC optionality rerating"
+        },
+        {
+          "date": "2025-12-31",
+          "price": 12.67,
+          "event": "year-end"
+        },
+        {
+          "date": "2026-01-16",
+          "price": 19.24,
+          "event": "AMD lease + Rockdale land"
+        },
+        {
+          "date": "2026-03-31",
+          "price": 12.36,
+          "event": "financing/execution reset"
+        },
+        {
+          "date": "2026-04-30",
+          "price": 17.24,
+          "event": "AMD additional 25MW"
+        },
+        {
+          "date": "2026-06-30",
+          "price": 27.38,
+          "event": "DC rerating peak region"
+        },
+        {
+          "date": "2026-08-10",
+          "price": 19.4,
+          "event": "Q2 + 191MW disclosure date close"
+        },
+        {
+          "date": "2026-08-21",
+          "price": 19.83,
+          "event": "T0 price baseline"
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "13fc3a3847baecbb",
+      "DISPLAY_VALUES": [
+        {
+          "date": "2023-12-31",
+          "price": 15.47
+        },
+        {
+          "date": "2024-03-31",
+          "price": 12.24
+        },
+        {
+          "date": "2024-06-30",
+          "price": 9.14
+        },
+        {
+          "date": "2024-09-30",
+          "price": 7.42
+        },
+        {
+          "date": "2024-12-31",
+          "price": 10.21
+        },
+        {
+          "date": "2025-03-31",
+          "price": 7.12
+        },
+        {
+          "date": "2025-06-30",
+          "price": 11.3
+        },
+        {
+          "date": "2025-09-30",
+          "price": 19.03
+        },
+        {
+          "date": "2025-12-31",
+          "price": 12.67
+        },
+        {
+          "date": "2026-01-16",
+          "price": 19.24
+        },
+        {
+          "date": "2026-03-31",
+          "price": 12.36
+        },
+        {
+          "date": "2026-04-30",
+          "price": 17.24
+        },
+        {
+          "date": "2026-06-30",
+          "price": 27.38
+        },
+        {
+          "date": "2026-08-10",
+          "price": 19.4
+        },
+        {
+          "date": "2026-08-21",
+          "price": 19.83
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Chapter 5.9",
+      "TABLE_LOCATOR": "Appendix F",
+      "CAPTION_LOCATOR": "Figure 5",
+      "RENDERED_ASSET_LOCATOR": "inline-svg:vis-005"
+    },
+    {
+      "VIS_ID": "VIS-006",
+      "FIGURE_TITLE": "Base 현재가치 SOTP",
+      "AUTHORITATIVE_SOURCE_BLOCK": "valuation.components",
+      "SOURCE_VALUES": {
+        "net_liquid_assets_after_nonconvert_debt_b": 0.96,
+        "bitcoin_mining_core_b": 1.2,
+        "engineering_core_b": 0.25,
+        "amd_contracted_50mw_b": 0.4,
+        "core_subtotal_b": 2.81,
+        "frontier_191mw_execution_b": 2.55,
+        "residual_rockdale_amd_expansion_b": 0.35,
+        "corsicana_option_b": 1.4,
+        "execution_subtotal_b": 4.3,
+        "ecosystem_b": 0.0,
+        "funding_corporate_dilution_drag_b": -0.55,
+        "base_equity_value_b": 6.56,
+        "base_economic_diluted_shares_m": 440,
+        "base_current_fair_value_per_share": 14.909090909090908
+      },
+      "SOURCE_VERSION_OR_HASH": "dbb20e183cbec207",
+      "DISPLAY_VALUES": {
+        "core": 2.81,
+        "execution": 4.3,
+        "ecosystem": 0.0,
+        "drag": -0.55,
+        "equity": 6.56
+      },
+      "NARRATIVE_LOCATOR": "Chapter 5.2",
+      "TABLE_LOCATOR": "Appendix D1",
+      "CAPTION_LOCATOR": "Figure 6",
+      "RENDERED_ASSET_LOCATOR": "inline-svg:vis-006"
+    }
+  ],
+  "publication_numeric_checks": {
+    "scenario_probability_sum": 1.0,
+    "weighted_2029_recomputed": 24.650000000000002,
+    "expected_irr_recomputed": 0.06752152197072947,
+    "pv12_recomputed": 16.901331037049438,
+    "base_pv12_recomputed": 15.08435224401978,
+    "ud_recomputed": 1.4736415247364156,
+    "visuals_total": 6
+  }
+}

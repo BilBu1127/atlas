@@ -1,0 +1,1051 @@
+{
+  "meta": {
+    "ticker": "VST",
+    "company": "Vistra Corp.",
+    "exchange": "NYSE",
+    "T0": 136.21,
+    "price_asof": "2026-08-21 close",
+    "research_asof": "2026-08-24",
+    "filing_asof": "2026-08-10 Q2 2026 Form 10-Q",
+    "operating_update_asof": "2026-08-07 Q2 2026 earnings",
+    "consensus_asof": "2026-08-24",
+    "pjm_auction_asof": "2026-07-14 2028/29 BRA",
+    "ercot_outlook_asof": "2026-05 Summer Outlook",
+    "version": "Clean DDOS Production v1.7",
+    "currency": "USD",
+    "hurdle_annual": 0.12,
+    "horizon_years": 3
+  },
+  "financials": {
+    "annual_3y": {
+      "years": [
+        2023,
+        2024,
+        2025
+      ],
+      "revenue_m": [
+        14779,
+        17224,
+        17738
+      ],
+      "operating_income_m": [
+        2661,
+        4081,
+        1906
+      ],
+      "net_income_m": [
+        1492,
+        2812,
+        944
+      ],
+      "cfo_m": [
+        5453,
+        4563,
+        4070
+      ],
+      "ongoing_adj_ebitda_m": [
+        4140,
+        5656,
+        5912
+      ],
+      "ongoing_adj_fcfbg_m": [
+        2491,
+        2888,
+        3592
+      ]
+    },
+    "quarterly_8q": {
+      "quarters": [
+        "2024Q3",
+        "2024Q4",
+        "2025Q1",
+        "2025Q2",
+        "2025Q3",
+        "2025Q4",
+        "2026Q1",
+        "2026Q2"
+      ],
+      "ongoing_adj_ebitda_m": [
+        1444,
+        1985,
+        1240,
+        1349,
+        1581,
+        1742,
+        1494,
+        1767
+      ]
+    },
+    "segment_h1_2025_2026_m": {
+      "segments": [
+        "Retail",
+        "Texas",
+        "East"
+      ],
+      "h1_2025": [
+        940,
+        632,
+        932
+      ],
+      "h1_2026": [
+        841,
+        897,
+        1443
+      ]
+    },
+    "2026_guidance": {
+      "ongoing_adj_ebitda_bn": [
+        6.8,
+        7.6
+      ],
+      "midpoint_ebitda_bn": 7.2,
+      "fcfbg_bn": [
+        3.925,
+        4.725
+      ],
+      "midpoint_fcfbg_bn": 4.325
+    },
+    "2026_h1": {
+      "cfo_bn": 2.222,
+      "prior_year_cfo_bn": 1.171,
+      "disclosed_capex_bn": 1.286
+    },
+    "ceilings": [
+      "AWS/Meta contract price, escalation, and full project-level capex/return are not public.",
+      "Fleet-wide plant-level UCAP/EFORd/heat-rate/age on one authoritative basis is incomplete.",
+      "Precise same-date Street 2027-2029 EBITDA/FCF consensus dataset is an access ceiling."
+    ]
+  },
+  "industry": {
+    "pjm_capacity_usd_mw_day": {
+      "delivery_years": [
+        "2025/26",
+        "2026/27",
+        "2027/28",
+        "2028/29"
+      ],
+      "prices": [
+        28.92,
+        329.17,
+        333.44,
+        325.0
+      ]
+    },
+    "east_capacity_sales_less_purchases_m": {
+      "h1_2025": 50,
+      "h1_2026": 256
+    },
+    "ercot": {
+      "2025_peak_mw": 83679,
+      "2026_summer_peak_forecast_mw": 92211,
+      "may_sep_2026_large_load_growth_mw": 1725
+    }
+  },
+  "hedges": {
+    "snapshots": [
+      {
+        "as_of": "2026-02-18",
+        "2026": 100,
+        "2027": 84,
+        "2028": 58
+      },
+      {
+        "as_of": "2026-05-01",
+        "2026": 98,
+        "2027": 89,
+        "2028": 65
+      },
+      {
+        "as_of": "2026-08-03",
+        "2026": 100,
+        "2027": 94,
+        "2028": 72
+      }
+    ]
+  },
+  "fleet": {
+    "year_end_2025_net_capacity_mw": 43641,
+    "fuel_mix_mw": {
+      "Gas": 26989,
+      "Coal": 8743,
+      "Nuclear": 6448,
+      "Renewable/Battery": 1274,
+      "Oil": 187
+    },
+    "regional_mw": {
+      "Texas": 19858,
+      "East": 22254,
+      "West": 1529
+    },
+    "pending_cogentrix_gas_mw": 5496
+  },
+  "contracts_and_growth": {
+    "aws": {
+      "technology": "Comanche Peak nuclear",
+      "term_years": 20,
+      "max_mw": 1200,
+      "price_disclosed": false
+    },
+    "meta": {
+      "technology": "PJM nuclear",
+      "term_years": 20,
+      "total_mw": 2609,
+      "existing_mw": 2176,
+      "uprate_mw": 433,
+      "start": "late 2026",
+      "full_ramp": "2034",
+      "price_disclosed": false
+    },
+    "cogentrix": {
+      "gas_mw": 5496,
+      "cash_consideration_bn": 2.3,
+      "new_shares_m": 5,
+      "assumed_debt_bn": 1.5,
+      "net_purchase_price_bn": 4.0,
+      "transaction_multiple_2027e_ebitda": 7.25,
+      "implied_2027e_ebitda_bn": 0.55,
+      "status": "pending as of 2026-08-07"
+    },
+    "helix": {
+      "committed_capital_bn_gt": 10,
+      "vistra_initial_commitment_bn": 0.5,
+      "vistra_additional_contingent_bn": 0.5,
+      "base_ebitda_bn": 0
+    }
+  },
+  "capital_structure": {
+    "as_of": "2026-06-30",
+    "cash_m": 435,
+    "long_term_debt_incl_current_bn": 19.595,
+    "preferred_carrying_bn": 2.476,
+    "available_liquidity_bn": 6.295,
+    "commodity_posted_cash_eligible_assets_bn": 1.874,
+    "common_shares_m_asof_2026_08_03": 336,
+    "remaining_buyback_authorization_bn": 1.2,
+    "buyback_since_2021_bn": 6.5,
+    "share_count_reduction_since_2021_pct": 30,
+    "2026_buyback_shares_m": 4.96592,
+    "2026_buyback_avg_price": 156.57,
+    "2026_buyback_spend_m": 778
+  },
+  "management_delivery": [
+    {
+      "year": 2022,
+      "guidance_ebitda_bn": [
+        2.81,
+        3.31
+      ],
+      "actual_ebitda_bn": 3.115,
+      "outcome": "within range, above midpoint"
+    },
+    {
+      "year": 2023,
+      "guidance_ebitda_bn": [
+        3.4,
+        4.0
+      ],
+      "actual_ebitda_bn": 4.14,
+      "outcome": "above high end"
+    },
+    {
+      "year": 2024,
+      "guidance_ebitda_bn": [
+        4.55,
+        5.05
+      ],
+      "actual_ebitda_bn": 5.656,
+      "outcome": "above high end"
+    },
+    {
+      "year": 2025,
+      "guidance_ebitda_bn": [
+        5.5,
+        6.1
+      ],
+      "actual_ebitda_bn": 5.912,
+      "guidance_fcfbg_bn": [
+        3.0,
+        3.6
+      ],
+      "actual_fcfbg_bn": 3.592,
+      "outcome": "upper end"
+    }
+  ],
+  "base_operating_path": {
+    "years": [
+      2026,
+      2027,
+      2028,
+      2029
+    ],
+    "ongoing_adj_ebitda_bn": [
+      7.2,
+      8.15,
+      8.7,
+      9.2
+    ],
+    "ongoing_adj_fcfbg_bn": [
+      4.33,
+      4.75,
+      5.05,
+      5.5
+    ],
+    "diluted_economic_shares_m": [
+      336,
+      333,
+      327,
+      322
+    ],
+    "fcfbg_per_share": [
+      12.87,
+      14.26,
+      15.44,
+      17.08
+    ]
+  },
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.2,
+      "2029_ebitda_bn": 7.5,
+      "2029_fcfbg_bn": 4.15,
+      "diluted_shares_m": 335,
+      "fcf_per_share": 12.39,
+      "exit_p_fcf": 8.0,
+      "per_share_value": 99,
+      "total_3y_irr": -0.09
+    },
+    {
+      "name": "Base",
+      "probability": 0.55,
+      "2029_ebitda_bn": 9.2,
+      "2029_fcfbg_bn": 5.5,
+      "diluted_shares_m": 322,
+      "fcf_per_share": 17.08,
+      "exit_p_fcf": 11.0,
+      "per_share_value": 188,
+      "total_3y_irr": 0.12
+    },
+    {
+      "name": "Up",
+      "probability": 0.25,
+      "2029_ebitda_bn": 10.5,
+      "2029_fcfbg_bn": 6.6,
+      "diluted_shares_m": 312,
+      "fcf_per_share": 21.15,
+      "exit_p_fcf": 12.0,
+      "per_share_value": 254,
+      "total_3y_irr": 0.24
+    }
+  ],
+  "valuation": {
+    "mode": "Mode D - Cyclical / Commodity",
+    "cross_checks": [
+      "Mode C - FCF yield/capital return",
+      "Mode F - asset/transaction value"
+    ],
+    "core_2026_ebitda_bn": 7.2,
+    "core_2026_fcfbg_bn": 4.325,
+    "execution": "Cogentrix + Meta ramp + PJM capacity + hedge reset + Permian/uprates",
+    "ecosystem": "Helix; $0 Base EBITDA until contracted economics are disclosed",
+    "drag": "debt/preferred, acquisition dilution, capex, outage, hedge opportunity cost, regulation",
+    "current_price": 136.21,
+    "current_market_cap_bn": 45.77,
+    "rough_adjusted_ev_bn": 68.0,
+    "current_ev_adj_ebitda_midpoint": 9.4,
+    "current_p_fcfbg_midpoint": 10.6,
+    "base_fair_value_range": [
+      188,
+      195
+    ],
+    "probability_weighted_exit_price": 186.7,
+    "three_year_dividends_assumed": 3.0,
+    "probability_weighted_total_future_value": 189.7,
+    "expected_irr": 0.116742,
+    "hurdle": 0.12,
+    "up_down_ratio": 3.166
+  },
+  "reverse_expectations": {
+    "required_exit_price_for_12pct_irr": 188.37,
+    "assumed_2029_shares_m": 322,
+    "fcf_conversion": 0.6,
+    "rows": [
+      {
+        "exit_p_fcf": 10,
+        "required_fcf_per_share": 18.84,
+        "required_fcfbg_bn": 6.07,
+        "required_ebitda_bn": 10.1
+      },
+      {
+        "exit_p_fcf": 11,
+        "required_fcf_per_share": 17.12,
+        "required_fcfbg_bn": 5.51,
+        "required_ebitda_bn": 9.2
+      },
+      {
+        "exit_p_fcf": 12,
+        "required_fcf_per_share": 15.7,
+        "required_fcfbg_bn": 5.05,
+        "required_ebitda_bn": 8.4
+      }
+    ],
+    "central_conclusion": "At an 11x normalized exit P/FCFbG, the current price effectively requires about $9.2bn of 2029 EBITDA."
+  },
+  "consensus": {
+    "snapshot_as_of": "2026-08-24",
+    "analyst_buys": 18,
+    "holds": 0,
+    "sells": 1,
+    "average_12m_target": 220.56,
+    "revision_trend": "secondary snapshot; exact FY1/FY2 consensus access ceiling"
+  },
+  "stance": {
+    "zone": "관망에 가까운 조건부 관심",
+    "horizon": "3 years",
+    "attractive_entry": "$120-125",
+    "trigger_below": 125,
+    "price_bands": {
+      "115-125": "적극적으로 매력적; probability-weighted expected IRR roughly 15-18% and U/D roughly 5-9x",
+      "125-145": "조건부 관심/관망; current price is here",
+      "145-190": "Base execution substantially priced",
+      "190+": "requires stronger-than-Base contract economics or sustained scarcity"
+    }
+  },
+  "kpis": [
+    {
+      "name": "2026 EBITDA guidance",
+      "current": "$6.8-7.6bn",
+      "thresholds": {
+        "green": ">= midpoint trajectory",
+        "yellow": "inside range but execution softens",
+        "red": "below range / guide cut"
+      }
+    },
+    {
+      "name": "2027 opportunity / pro forma bridge",
+      "current": "company $7.4-7.8bn excl. Cogentrix/Meta; Base ~8.15bn incl. Cogentrix implied contribution",
+      "thresholds": {
+        "green": "close + accretion intact",
+        "yellow": "timing slip",
+        "red": "material accretion shortfall"
+      }
+    },
+    {
+      "name": "Hedge coverage",
+      "current": "2026 ~100%; 2027 94%; 2028 72%",
+      "thresholds": {
+        "green": "locks favorable curves without over-hedging open upside",
+        "yellow": "curve weakens or hedge opportunity cost rises",
+        "red": "material adverse realized-price reset"
+      }
+    },
+    {
+      "name": "PJM capacity economics",
+      "current": "2028/29 $325/MW-day at cap",
+      "thresholds": {
+        "green": "scarcity persists with East margin retention",
+        "yellow": "clearing normalizes moderately",
+        "red": "rapid normalization + East capacity margin reversal"
+      }
+    },
+    {
+      "name": "Economic share count",
+      "current": "~336m before Cogentrix 5m issuance",
+      "thresholds": {
+        "green": "net share count declines over horizon",
+        "yellow": "flat after M&A",
+        "red": "persistent dilution without per-share accretion"
+      }
+    },
+    {
+      "name": "Balance sheet",
+      "current": "debt $19.595bn + preferred $2.476bn; liquidity $6.295bn",
+      "thresholds": {
+        "green": "investment grade / net leverage discipline",
+        "yellow": "M&A funding raises leverage",
+        "red": "leverage blocks buyback or weakens ratings"
+      }
+    }
+  ],
+  "catalysts": [
+    {
+      "when": "2026-08 to 2026-12",
+      "event": "Cogentrix closing / financing / integration detail",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2026 Q3-Q4",
+      "event": "2026 guidance delivery and 2027 outlook refresh",
+      "sensitivity": "High"
+    },
+    {
+      "when": "late 2026",
+      "event": "Meta PPA initial start / nuclear contract disclosure",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2026-12 expected",
+      "event": "PJM 2029/30 Base Residual Auction",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2027",
+      "event": "Cogentrix full-year contribution / AFCFbG-share accretion validation",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2027-2028",
+      "event": "2028 open hedge volume repricing, Permian/uprates progress",
+      "sensitivity": "Medium-High"
+    }
+  ],
+  "evidence_boundaries": [
+    "AWS/Meta contract price and project economics are not public; headline MW is not directly valued.",
+    "Helix project-level power margin and ownership economics are not public; Base EBITDA contribution is $0.",
+    "Fleet-wide UCAP/EFORd/heat-rate dataset is incomplete; nameplate MW is not treated as UCAP.",
+    "Historical multiple percentile is approximate and secondary-data constrained after material portfolio changes.",
+    "Permian 860MW project-level return is not point-valued."
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "0,3"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "1"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "1.6,4.4"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "2"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "3.1,4.4"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "A6"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "3.5,5"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.2,3.6"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.3,5"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "3.4,4.4"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "A7"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.8,6"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "4,A3/A4"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "4.6,5"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "2.4,4.7,5"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.6,5.2"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "0.5,5.7-5.9"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE",
+      "h3_locator": "5"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "COMPLETE",
+      "h3_locator": "6.7-6.9"
+    }
+  ],
+  "sources": {
+    "primary": [
+      {
+        "id": "S1",
+        "title": "Vistra Q2 2026 earnings release",
+        "date": "2026-08-07",
+        "url": "https://investor.vistracorp.com/2026-08-07-Vistra-Reports-Second-Quarter-2026-Results"
+      },
+      {
+        "id": "S2",
+        "title": "Vistra SEC filings index / Q2 2026 Form 10-Q",
+        "date": "2026-08-10",
+        "url": "https://investor.vistracorp.com/sec-filings"
+      },
+      {
+        "id": "S3",
+        "title": "Vistra FY2025 results",
+        "date": "2026-02-26",
+        "url": "https://investor.vistracorp.com/2026-02-26-Vistra-Reports-Fourth-Quarter-and-Full-Year-2025-Results"
+      },
+      {
+        "id": "S4",
+        "title": "Cogentrix acquisition announcement",
+        "date": "2026-01-05",
+        "url": "https://investor.vistracorp.com/2026-01-05-Vistra-Adds-to-its-Industry-Leading-Generation-Portfolio-with-Acquisition-of-Cogentrix"
+      },
+      {
+        "id": "S5",
+        "title": "Vistra / Meta nuclear PPAs",
+        "date": "2026-01-09",
+        "url": "https://investor.vistracorp.com/2026-01-09-Vistra-and-Meta-Announce-Agreements-to-Support-Nuclear-Plants-in-PJM-and-Add-New-Nuclear-Generation-to-the-Grid"
+      },
+      {
+        "id": "S6",
+        "title": "KKR Helix launch",
+        "date": "2026-06-11",
+        "url": "https://media.kkr.com/news-details?news_id=6a26acd6-83b8-4377-84be-b1dadb847806"
+      },
+      {
+        "id": "S7",
+        "title": "PJM Capacity Market / auction results",
+        "date": "through 2026-07-14",
+        "url": "https://www.pjm.com/markets-and-operations/rpm"
+      },
+      {
+        "id": "S8",
+        "title": "ERCOT Summer 2026 Weather and Operations Outlook",
+        "date": "2026-05",
+        "url": "https://www.ercot.com/files/docs/2026/05/24/14.1-2026-Summer-Weather-and-Operations-Outlook.pdf"
+      },
+      {
+        "id": "S9",
+        "title": "Vistra 2026 DEF 14A / proxy",
+        "date": "2026",
+        "url": "https://www.sec.gov/edgar/browse/?CIK=1692819&owner=exclude"
+      },
+      {
+        "id": "S10",
+        "title": "Historical VST earnings releases 2022-2025",
+        "date": "2022-2025",
+        "url": "https://investor.vistracorp.com/financial-information/quarterly-results"
+      }
+    ],
+    "secondary": [
+      {
+        "id": "M1",
+        "title": "Price-history cross-check for 2026-08-21 close $136.21",
+        "note": "Investing.com / MarketWatch"
+      },
+      {
+        "id": "M2",
+        "title": "2026-08-24 analyst target consensus snapshot",
+        "note": "Investing.com; secondary"
+      },
+      {
+        "id": "M3",
+        "title": "Historical EV/EBITDA annual snapshots",
+        "note": "Morningstar; rough context only"
+      }
+    ]
+  },
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "3년 Adjusted EBITDA와 FCFbG",
+      "authoritative_source_block": "3년 Adjusted EBITDA와 FCFbG",
+      "source_values": {
+        "years": [
+          2023,
+          2024,
+          2025
+        ],
+        "ebitda": [
+          4140,
+          5656,
+          5912
+        ],
+        "fcf": [
+          2491,
+          2888,
+          3592
+        ]
+      },
+      "source_hash": "4af2dd76a6ef51c7",
+      "display_values": {
+        "years": [
+          2023,
+          2024,
+          2025
+        ],
+        "ebitda": [
+          4140,
+          5656,
+          5912
+        ],
+        "fcf": [
+          2491,
+          2888,
+          3592
+        ]
+      },
+      "narrative_locator": "4.1",
+      "table_locator": "A3",
+      "caption_locator": "VIS-001",
+      "rendered_asset_locator": "#vis-001",
+      "status": "PASS",
+      "external_source_ids": [
+        "S3"
+      ]
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "최근 8분기 Adjusted EBITDA",
+      "authoritative_source_block": "최근 8분기 Adjusted EBITDA",
+      "source_values": {
+        "quarters": [
+          "2024Q3",
+          "2024Q4",
+          "2025Q1",
+          "2025Q2",
+          "2025Q3",
+          "2025Q4",
+          "2026Q1",
+          "2026Q2"
+        ],
+        "ongoing_adj_ebitda_m": [
+          1444,
+          1985,
+          1240,
+          1349,
+          1581,
+          1742,
+          1494,
+          1767
+        ]
+      },
+      "source_hash": "aaffd984548bf47e",
+      "display_values": {
+        "quarters": [
+          "2024Q3",
+          "2024Q4",
+          "2025Q1",
+          "2025Q2",
+          "2025Q3",
+          "2025Q4",
+          "2026Q1",
+          "2026Q2"
+        ],
+        "ongoing_adj_ebitda_m": [
+          1444,
+          1985,
+          1240,
+          1349,
+          1581,
+          1742,
+          1494,
+          1767
+        ]
+      },
+      "narrative_locator": "4.3",
+      "table_locator": "A4",
+      "caption_locator": "VIS-002",
+      "rendered_asset_locator": "#vis-002",
+      "status": "PASS",
+      "external_source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "2026년 상반기 Segment EBITDA 변화",
+      "authoritative_source_block": "2026년 상반기 Segment EBITDA 변화",
+      "source_values": {
+        "segments": [
+          "Retail",
+          "Texas",
+          "East"
+        ],
+        "h1_2025": [
+          940,
+          632,
+          932
+        ],
+        "h1_2026": [
+          841,
+          897,
+          1443
+        ]
+      },
+      "source_hash": "9f5d048cc3ec2237",
+      "display_values": {
+        "segments": [
+          "Retail",
+          "Texas",
+          "East"
+        ],
+        "h1_2025": [
+          940,
+          632,
+          932
+        ],
+        "h1_2026": [
+          841,
+          897,
+          1443
+        ]
+      },
+      "narrative_locator": "4.4",
+      "table_locator": "4.4",
+      "caption_locator": "VIS-003",
+      "rendered_asset_locator": "#vis-003",
+      "status": "PASS",
+      "external_source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "예상 발전량 헤지 커버리지",
+      "authoritative_source_block": "예상 발전량 헤지 커버리지",
+      "source_values": {
+        "as_of": "2026-08-03",
+        "2026": 100,
+        "2027": 94,
+        "2028": 72
+      },
+      "source_hash": "6947cfcdc18f8868",
+      "display_values": {
+        "as_of": "2026-08-03",
+        "2026": 100,
+        "2027": 94,
+        "2028": 72
+      },
+      "narrative_locator": "3.5",
+      "table_locator": "A5",
+      "caption_locator": "VIS-004",
+      "rendered_asset_locator": "#vis-004",
+      "status": "PASS",
+      "external_source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "vis_id": "VIS-005",
+      "figure_title": "PJM Capacity Auction 가격",
+      "authoritative_source_block": "PJM Capacity Auction 가격",
+      "source_values": {
+        "delivery_years": [
+          "2025/26",
+          "2026/27",
+          "2027/28",
+          "2028/29"
+        ],
+        "prices": [
+          28.92,
+          329.17,
+          333.44,
+          325.0
+        ]
+      },
+      "source_hash": "017937be019f0007",
+      "display_values": {
+        "delivery_years": [
+          "2025/26",
+          "2026/27",
+          "2027/28",
+          "2028/29"
+        ],
+        "prices": [
+          28.92,
+          329.17,
+          333.44,
+          325.0
+        ]
+      },
+      "narrative_locator": "1.2",
+      "table_locator": "1.2",
+      "caption_locator": "VIS-005",
+      "rendered_asset_locator": "#vis-005",
+      "status": "PASS",
+      "external_source_ids": [
+        "S7"
+      ]
+    },
+    {
+      "vis_id": "VIS-006",
+      "figure_title": "2029 시나리오별 주당가치",
+      "authoritative_source_block": "2029 시나리오별 주당가치",
+      "source_values": [
+        {
+          "name": "Down",
+          "probability": 0.2,
+          "2029_ebitda_bn": 7.5,
+          "2029_fcfbg_bn": 4.15,
+          "diluted_shares_m": 335,
+          "fcf_per_share": 12.39,
+          "exit_p_fcf": 8.0,
+          "per_share_value": 99,
+          "total_3y_irr": -0.09
+        },
+        {
+          "name": "Base",
+          "probability": 0.55,
+          "2029_ebitda_bn": 9.2,
+          "2029_fcfbg_bn": 5.5,
+          "diluted_shares_m": 322,
+          "fcf_per_share": 17.08,
+          "exit_p_fcf": 11.0,
+          "per_share_value": 188,
+          "total_3y_irr": 0.12
+        },
+        {
+          "name": "Up",
+          "probability": 0.25,
+          "2029_ebitda_bn": 10.5,
+          "2029_fcfbg_bn": 6.6,
+          "diluted_shares_m": 312,
+          "fcf_per_share": 21.15,
+          "exit_p_fcf": 12.0,
+          "per_share_value": 254,
+          "total_3y_irr": 0.24
+        }
+      ],
+      "source_hash": "e5799658a0797e6b",
+      "display_values": [
+        {
+          "name": "Down",
+          "probability": 0.2,
+          "2029_ebitda_bn": 7.5,
+          "2029_fcfbg_bn": 4.15,
+          "diluted_shares_m": 335,
+          "fcf_per_share": 12.39,
+          "exit_p_fcf": 8.0,
+          "per_share_value": 99,
+          "total_3y_irr": -0.09
+        },
+        {
+          "name": "Base",
+          "probability": 0.55,
+          "2029_ebitda_bn": 9.2,
+          "2029_fcfbg_bn": 5.5,
+          "diluted_shares_m": 322,
+          "fcf_per_share": 17.08,
+          "exit_p_fcf": 11.0,
+          "per_share_value": 188,
+          "total_3y_irr": 0.12
+        },
+        {
+          "name": "Up",
+          "probability": 0.25,
+          "2029_ebitda_bn": 10.5,
+          "2029_fcfbg_bn": 6.6,
+          "diluted_shares_m": 312,
+          "fcf_per_share": 21.15,
+          "exit_p_fcf": 12.0,
+          "per_share_value": 254,
+          "total_3y_irr": 0.24
+        }
+      ],
+      "narrative_locator": "5.4",
+      "table_locator": "5.4",
+      "caption_locator": "VIS-006",
+      "rendered_asset_locator": "#vis-006",
+      "status": "PASS",
+      "external_source_ids": [
+        "MODEL"
+      ]
+    },
+    {
+      "vis_id": "VIS-007",
+      "figure_title": "현재가격이 요구하는 2029 EBITDA",
+      "authoritative_source_block": "현재가격이 요구하는 2029 EBITDA",
+      "source_values": [
+        {
+          "exit_p_fcf": 10,
+          "required_fcf_per_share": 18.84,
+          "required_fcfbg_bn": 6.07,
+          "required_ebitda_bn": 10.1
+        },
+        {
+          "exit_p_fcf": 11,
+          "required_fcf_per_share": 17.12,
+          "required_fcfbg_bn": 5.51,
+          "required_ebitda_bn": 9.2
+        },
+        {
+          "exit_p_fcf": 12,
+          "required_fcf_per_share": 15.7,
+          "required_fcfbg_bn": 5.05,
+          "required_ebitda_bn": 8.4
+        }
+      ],
+      "source_hash": "941a26542e41b588",
+      "display_values": [
+        {
+          "exit_p_fcf": 10,
+          "required_fcf_per_share": 18.84,
+          "required_fcfbg_bn": 6.07,
+          "required_ebitda_bn": 10.1
+        },
+        {
+          "exit_p_fcf": 11,
+          "required_fcf_per_share": 17.12,
+          "required_fcfbg_bn": 5.51,
+          "required_ebitda_bn": 9.2
+        },
+        {
+          "exit_p_fcf": 12,
+          "required_fcf_per_share": 15.7,
+          "required_fcfbg_bn": 5.05,
+          "required_ebitda_bn": 8.4
+        }
+      ],
+      "narrative_locator": "5.8",
+      "table_locator": "5.8",
+      "caption_locator": "VIS-007",
+      "rendered_asset_locator": "#vis-007",
+      "status": "PASS",
+      "external_source_ids": [
+        "MODEL"
+      ]
+    }
+  ]
+}

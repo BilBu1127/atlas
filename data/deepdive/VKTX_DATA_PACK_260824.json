@@ -1,0 +1,814 @@
+{
+  "meta": {
+    "ticker": "VKTX",
+    "company": "Viking Therapeutics, Inc.",
+    "T0": "2026-08-24",
+    "price_asof": "2026-08-21 close",
+    "price": 33.89,
+    "filing_asof": "2026-07-29 10-Q, period ended 2026-06-30",
+    "consensus_asof": "2026-08-24",
+    "version": "v1.7"
+  },
+  "thesis": {
+    "one_line": "강한 임상자산이지만 현재 가격은 임상 성공을 넘어 상당한 상업 성공까지 요구한다.",
+    "stance": "WATCH / AVOID CHASING",
+    "weighted_value_per_share": 28.55,
+    "expected_cagr": 0.0782,
+    "hurdle": 0.12,
+    "active_interest_price_max": 24.3,
+    "conditional_zone": [
+      24,
+      29
+    ],
+    "watch_zone": [
+      29,
+      38
+    ]
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue_m": 0,
+        "rd_m": 63.8,
+        "ga_m": 37.0,
+        "ocf_m": -73.4
+      },
+      {
+        "year": 2024,
+        "revenue_m": 0,
+        "rd_m": 101.6,
+        "ga_m": 49.3,
+        "ocf_m": -87.8
+      },
+      {
+        "year": 2025,
+        "revenue_m": 0,
+        "rd_m": 345.0,
+        "ga_m": 48.4,
+        "ocf_m": -278.7
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "3Q24",
+        "rd_m": 22.8,
+        "ga_m": 13.8,
+        "ocf_m": null,
+        "cash_m": 930.4,
+        "derived": false
+      },
+      {
+        "quarter": "4Q24",
+        "rd_m": 31.0,
+        "ga_m": 15.3,
+        "ocf_m": -31.2,
+        "cash_m": 902.6,
+        "derived": true
+      },
+      {
+        "quarter": "1Q25",
+        "rd_m": 41.4,
+        "ga_m": 14.1,
+        "ocf_m": -52.3,
+        "cash_m": 852.0,
+        "derived": false
+      },
+      {
+        "quarter": "2Q25",
+        "rd_m": 60.2,
+        "ga_m": 14.4,
+        "ocf_m": -47.1,
+        "cash_m": 807.7,
+        "derived": true
+      },
+      {
+        "quarter": "3Q25",
+        "rd_m": 90.0,
+        "ga_m": 8.6,
+        "ocf_m": -94.0,
+        "cash_m": 715.0,
+        "derived": true
+      },
+      {
+        "quarter": "4Q25",
+        "rd_m": 153.5,
+        "ga_m": 11.3,
+        "ocf_m": -85.3,
+        "cash_m": 705.7,
+        "derived": true
+      },
+      {
+        "quarter": "1Q26",
+        "rd_m": 150.2,
+        "ga_m": 14.0,
+        "ocf_m": -114.0,
+        "cash_m": 603.0,
+        "derived": false
+      },
+      {
+        "quarter": "2Q26",
+        "rd_m": 115.8,
+        "ga_m": 16.8,
+        "ocf_m": -125.2,
+        "cash_m": 501.7,
+        "derived": true
+      }
+    ],
+    "cash_2026_06_30_m": 501.874,
+    "h1_2026_ocf_m": -239.148,
+    "h1_2026_sbc_m": 21.47,
+    "ceilings": [
+      "분기 cash series 일부는 누적/연간 공시에서 파생된 approximate 값"
+    ]
+  },
+  "capital_structure": {
+    "basic_shares_m": 116.652937,
+    "options_outstanding_m": 5.990015,
+    "option_wa_strike": 17.83,
+    "option_proceeds_if_full_exercise_m": 106.8,
+    "new_atm_capacity_m": 500,
+    "repurchase_authorization_m": 500,
+    "repurchase_assumed": false,
+    "rsu_unit_count": "PRIMARY_SOURCE_CEILING"
+  },
+  "clinical": {
+    "sc_phase2": {
+      "duration_weeks": 13,
+      "n": 176,
+      "weight_loss_range_pct": [
+        9.1,
+        14.7
+      ],
+      "dose_15mg_early_discontinuation_pct": 20,
+      "dose_15mg_gi_disorders_pct": 83,
+      "dose_15mg_nausea_pct": 63,
+      "dose_15mg_vomiting_pct": 29
+    },
+    "oral_phase2": [
+      {
+        "dose_mg": 0,
+        "label": "Placebo",
+        "weight_change_pct": -1.3,
+        "gte10_pct": 5,
+        "early_discontinuation_pct": 18
+      },
+      {
+        "dose_mg": 15,
+        "label": "15mg",
+        "weight_change_pct": -2.3,
+        "gte10_pct": 8,
+        "early_discontinuation_pct": 20
+      },
+      {
+        "dose_mg": 30,
+        "label": "30mg",
+        "weight_change_pct": -7.0,
+        "gte10_pct": 35,
+        "early_discontinuation_pct": 20
+      },
+      {
+        "dose_mg": 60,
+        "label": "60mg",
+        "weight_change_pct": -8.7,
+        "gte10_pct": 40,
+        "early_discontinuation_pct": 28
+      },
+      {
+        "dose_mg": 90,
+        "label": "90mg",
+        "weight_change_pct": -11.1,
+        "gte10_pct": 59,
+        "early_discontinuation_pct": 25
+      },
+      {
+        "dose_mg": 120,
+        "label": "120mg",
+        "weight_change_pct": -12.2,
+        "gte10_pct": 80,
+        "early_discontinuation_pct": 38
+      }
+    ],
+    "vanquish_1": {
+      "n": 4500,
+      "duration_weeks": 78,
+      "status": "fully enrolled / active-not-recruiting",
+      "primary_completion_est": "2027-07"
+    },
+    "vanquish_2": {
+      "n": 1100,
+      "duration_weeks": 78,
+      "status": "fully enrolled / active-not-recruiting",
+      "primary_completion_est": "2027-07"
+    },
+    "maintenance": {
+      "n_approx": 180,
+      "status": "data expected 3Q26",
+      "regimens": [
+        "weekly",
+        "Q2W",
+        "monthly"
+      ],
+      "result": "PRIMARY_SOURCE_CEILING"
+    },
+    "oral_phase3": {
+      "start_guidance": "4Q26",
+      "exact_design": "PRIMARY_SOURCE_CEILING"
+    }
+  },
+  "industry": {
+    "us_adult_obesity_prevalence_pct": 40.3,
+    "capacity": {
+      "autoinjector_units_y": 100000000,
+      "vial_syringe_units_y": 100000000,
+      "oral_tablets_y": 1000000000,
+      "weekly_patient_equiv_m": 1.92,
+      "daily_oral_patient_equiv_m": 2.74
+    },
+    "corden_prepayment_m": 150,
+    "unit_cogs": "PRIMARY_SOURCE_CEILING",
+    "payer_contracts": "PRIMARY_SOURCE_CEILING"
+  },
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.35,
+      "launch_sc": "실패/중단",
+      "launch_oral": "없음",
+      "maintenance": "경제적 차별화 실패",
+      "revenue_2035_b": 0.0,
+      "fcf_margin_2035": null,
+      "external_capital_b": 0.0,
+      "shares_2031_m": 122.6,
+      "value_2031_per_share": 3.5,
+      "t0_pv_per_share": 2.1
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "launch_sc": "2029",
+      "launch_oral": "2031",
+      "maintenance": "modest benefit",
+      "revenue_2035_b": 3.5,
+      "fcf_margin_2035": 0.28,
+      "external_capital_b": 1.2,
+      "shares_2031_m": 159.3,
+      "value_2031_per_share": 34.3,
+      "t0_pv_per_share": 20.6
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.2,
+      "launch_sc": "2029",
+      "launch_oral": "2031",
+      "maintenance": "strong benefit",
+      "revenue_2035_b": 8.0,
+      "fcf_margin_2035": 0.35,
+      "external_capital_b": 1.0,
+      "shares_2031_m": 144.2,
+      "value_2031_per_share": 114.7,
+      "t0_pv_per_share": 68.9
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.05,
+      "launch_sc": "2029",
+      "launch_oral": "2030–31",
+      "maintenance": "franchise-wide benefit",
+      "revenue_2035_b": 11.6,
+      "fcf_margin_2035": 0.38,
+      "external_capital_b": 0.85,
+      "shares_2031_m": 138.8,
+      "value_2031_per_share": 193.5,
+      "t0_pv_per_share": 116.2
+    }
+  ],
+  "reverse_expectations": {
+    "required_expected_2031_per_share_at_current_price": 56.5,
+    "base_2031_value_per_share": 34.3,
+    "required_base_2031_value_per_share": 56.5,
+    "base_ev_scaling_required": 1.684,
+    "base_2035_revenue_b": 3.5,
+    "current_price_implied_base_2035_revenue_b": 5.9,
+    "interpretation": "현재가는 단순 임상 성공보다 강한 상업 점유·순가격·마진을 요구"
+  },
+  "kpis": [
+    {
+      "name": "Maintenance efficacy",
+      "current": "3Q26 데이터 대기",
+      "green": "Q2W/monthly에서도 의미 있는 유지 + 낮은 rescue",
+      "yellow": "일부 유지되나 weekly 대비 decay 뚜렷",
+      "red": "월 1회에서 빠른 regain/중단",
+      "frequency": "이벤트"
+    },
+    {
+      "name": "VANQUISH schedule",
+      "current": "fully enrolled",
+      "green": "primary timeline 유지",
+      "yellow": "경미한 지연/수정",
+      "red": "material delay 또는 safety-driven change",
+      "frequency": "분기"
+    },
+    {
+      "name": "Phase 3 tolerability",
+      "current": "미확정",
+      "green": "중단률이 efficacy와 함께 경쟁력",
+      "yellow": "efficacy 강하나 중단 부담",
+      "red": "high-dose persistence 훼손",
+      "frequency": "readout"
+    },
+    {
+      "name": "Oral Phase 3",
+      "current": "4Q26 start 예정",
+      "green": "계획대로 시작, commercial-relevant dose",
+      "yellow": "일정 지연/복잡한 titration",
+      "red": "장기 지연 또는 dose/tolerability 후퇴",
+      "frequency": "분기"
+    },
+    {
+      "name": "Cash runway",
+      "current": "≥ 2027-09 company view",
+      "green": "de-risking 후 고가 financing/partner",
+      "yellow": "ATM 사용 증가",
+      "red": "저가 대규모 financing + runway 단축",
+      "frequency": "분기"
+    },
+    {
+      "name": "R&D burn",
+      "current": "H1 26 $265.9M",
+      "green": "burn 증가가 milestone과 정합",
+      "yellow": "지속 증가",
+      "red": "milestone 없이 급증/재설계",
+      "frequency": "분기"
+    }
+  ],
+  "catalysts": [
+    {
+      "period": "3Q26",
+      "event": "VK2735 maintenance data",
+      "bull": "Q2W/monthly weight 유지, tolerability 양호",
+      "bear": "regain/중단으로 differentiation 약화",
+      "sensitivity": "H"
+    },
+    {
+      "period": "4Q26",
+      "event": "Oral VK2735 Phase 3 initiation/design",
+      "bull": "commercial-relevant dose와 명확한 설계",
+      "bear": "delay, 고용량·복잡한 titration 우려",
+      "sensitivity": "H"
+    },
+    {
+      "period": "4Q26–1Q27",
+      "event": "3Q/4Q financial updates",
+      "bull": "burn 통제, financing 가격 우호적",
+      "bear": "ATM 급증, runway 압박",
+      "sensitivity": "M-H"
+    },
+    {
+      "period": "4Q26",
+      "event": "CagriSema FDA decision window",
+      "bull": "경쟁 hurdle 관리 가능",
+      "bear": "강한 label/launch로 후기진입 압박",
+      "sensitivity": "M"
+    },
+    {
+      "period": "1Q27",
+      "event": "retatrutide regulatory progression",
+      "bull": "일정/label 예상 범위",
+      "bear": "best-in-class profile 확정",
+      "sensitivity": "M-H"
+    },
+    {
+      "period": "1H27",
+      "event": "VANQUISH ongoing updates",
+      "bull": "schedule 유지, no safety signal",
+      "bear": "delay/safety concern",
+      "sensitivity": "H"
+    }
+  ],
+  "falsification": [
+    "VANQUISH 장기 efficacy/tolerability가 경쟁력을 잃으면 SC major-product thesis 폐기",
+    "maintenance에서 Q2W/monthly regain이 크면 maintenance premium 제거",
+    "oral Phase 3가 고용량/복잡한 titration과 높은 discontinuation을 유지하면 oral을 secondary option으로 하향",
+    "저가 대규모 equity 발행으로 share count가 Base보다 빠르게 늘면 fair value 하향",
+    "경쟁약이 efficacy·convenience·access를 동시에 개선하면 peak-share 가정 하향"
+  ],
+  "market": {
+    "event_prices": [
+      {
+        "date": "2024-02-26",
+        "label": "SC Phase 2 전일",
+        "close": 38.48
+      },
+      {
+        "date": "2024-02-27",
+        "label": "VENTURE SC readout",
+        "close": 85.05
+      },
+      {
+        "date": "2025-08-18",
+        "label": "Oral Phase 2 전일",
+        "close": 42.09
+      },
+      {
+        "date": "2025-08-19",
+        "label": "Oral Phase 2 공개",
+        "close": 24.36
+      },
+      {
+        "date": "2026-08-21",
+        "label": "T0",
+        "close": 33.89
+      }
+    ],
+    "sell_side_avg_target_approx": 92,
+    "sell_side_snapshot": "18 Buy / 2 Hold / 0 Sell",
+    "short_interest_snapshot": "~20% of float at 2026-07-31, third-party",
+    "traditional_multiple_history": "NOT_MEANINGFUL_FOR_PRE_REVENUE"
+  },
+  "source_registry": [
+    {
+      "id": "S1",
+      "title": "Viking 2Q26 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1607678/000119312526324219/vktx-20260630.htm",
+      "tier": 1
+    },
+    {
+      "id": "S2",
+      "title": "Viking 2Q26 Results & Corporate Update",
+      "url": "https://ir.vikingtherapeutics.com/2026-07-29-Viking-Therapeutics-Reports-Second-Quarter-2026-Financial-Results-and-Provides-Corporate-Update",
+      "tier": 1
+    },
+    {
+      "id": "S3",
+      "title": "Viking 2025 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1607678/000119312526046876/vktx-20251231.htm",
+      "tier": 1
+    },
+    {
+      "id": "S4",
+      "title": "Corden manufacturing announcement",
+      "url": "https://www.sec.gov/Archives/edgar/data/1607678/000095017025036820/vktx-ex99_1.htm",
+      "tier": 1
+    },
+    {
+      "id": "S5",
+      "title": "Corden strategic supply 8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1607678/000095017025036820/vktx-20250310.htm",
+      "tier": 1
+    },
+    {
+      "id": "S6",
+      "title": "VENTURE SC peer-reviewed paper",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/oby.70106",
+      "tier": 1
+    },
+    {
+      "id": "S7",
+      "title": "VENTURE Oral Phase 2",
+      "url": "https://ir.vikingtherapeutics.com/2025-08-19-Viking-Therapeutics-Announces-Positive-Top-Line-Results-from-Phase-2-VENTURE-Oral-Dosing-Trial-of-VK2735-Tablet-Formulation-in-Patients-with-Obesity",
+      "tier": 1
+    },
+    {
+      "id": "S8",
+      "title": "VANQUISH-1",
+      "url": "https://clinicaltrials.gov/study/NCT07104500",
+      "tier": 1
+    },
+    {
+      "id": "S9",
+      "title": "VANQUISH-2",
+      "url": "https://clinicaltrials.gov/study/NCT07104383",
+      "tier": 1
+    },
+    {
+      "id": "S10",
+      "title": "CMS GLP-1 Bridge",
+      "url": "https://www.cms.gov/medicare/coverage/prescription-drug-coverage/medicare-glp-1-bridge",
+      "tier": 1
+    },
+    {
+      "id": "S11",
+      "title": "CMS BALANCE",
+      "url": "https://www.cms.gov/priorities/innovation/innovation-models/balance",
+      "tier": 1
+    },
+    {
+      "id": "S12",
+      "title": "CDC Obesity Data Brief",
+      "url": "https://www.cdc.gov/nchs/data/databriefs/db508.pdf",
+      "tier": 1
+    },
+    {
+      "id": "S13",
+      "title": "BIO Clinical Development Success Rates",
+      "url": "https://go.bio.org/rs/490-EHZ-999/images/ClinicalDevelopmentSuccessRates2011_2020.pdf",
+      "tier": 2
+    },
+    {
+      "id": "S14",
+      "title": "Viking DEF 14A 2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1607678/000119312526137915/vktx-20260401.htm",
+      "tier": 1
+    },
+    {
+      "id": "S15",
+      "title": "Viking Annual Meeting 8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1607678/000119312526239535/vktx-20260519.htm",
+      "tier": 1
+    },
+    {
+      "id": "S16",
+      "title": "Lilly Foundayo/orforglipron approval",
+      "url": "https://investor.lilly.com/news-releases/news-release-details/fda-approves-lillys-foundayotm-orforglipron-only-glp-1-pill",
+      "tier": 1
+    },
+    {
+      "id": "S17",
+      "title": "Novo Wegovy pill approval",
+      "url": "https://www.novonordisk.com/content/nncorp/global/en/news-and-media/news-and-ir-materials/news-details.html?id=916472",
+      "tier": 1
+    },
+    {
+      "id": "S18",
+      "title": "Novo CagriSema REDEFINE 4",
+      "url": "https://www.novonordisk.com/news-and-media/news-and-ir-materials/news-details.html?id=916501",
+      "tier": 1
+    },
+    {
+      "id": "S19",
+      "title": "Lilly retatrutide Phase 3 update",
+      "url": "https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-successful-two-additional",
+      "tier": 1
+    },
+    {
+      "id": "S20",
+      "title": "Amgen MariTide development update",
+      "url": "https://investors.amgen.com/static-files/4e8e58ab-1e91-441e-94ea-4c8285338ec9",
+      "tier": 1
+    },
+    {
+      "id": "M1",
+      "title": "VKTX historical price – Investing",
+      "url": "https://www.investing.com/equities/viking-therapeutics-inc-historical-data",
+      "tier": 3
+    },
+    {
+      "id": "M2",
+      "title": "VKTX 2025 historical prices – FinanceCharts",
+      "url": "https://www.financecharts.com/stocks/VKTX/summary/price",
+      "tier": 3
+    },
+    {
+      "id": "M3",
+      "title": "VKTX 2024 historical prices – StatMuse",
+      "url": "https://www.statmuse.com/money/ask/vktx-december-2022-to-march-2024",
+      "tier": 3
+    }
+  ],
+  "research_contracts": {
+    "total": 22,
+    "complete": 16,
+    "ceiling": 6,
+    "not_material": 0,
+    "contradicted": 0,
+    "unresolved": 0,
+    "h3_coverage_rate": 1.0
+  },
+  "as_of_registry": {
+    "PRICE_ASOF": "2026-08-21 close",
+    "FILING_ASOF": "2026-07-29",
+    "CLINICAL_ASOF": "2026-08-24",
+    "CONSENSUS_ASOF": "2026-08-24",
+    "LATEST_FILING_CHECK": "PASS"
+  },
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "Oral VK2735 Phase 2: dose, efficacy, discontinuation",
+      "authoritative_source_block": "clinical.oral_phase2",
+      "source_values": [
+        {
+          "dose_mg": 0,
+          "label": "Placebo",
+          "weight_change_pct": -1.3,
+          "gte10_pct": 5,
+          "early_discontinuation_pct": 18
+        },
+        {
+          "dose_mg": 15,
+          "label": "15mg",
+          "weight_change_pct": -2.3,
+          "gte10_pct": 8,
+          "early_discontinuation_pct": 20
+        },
+        {
+          "dose_mg": 30,
+          "label": "30mg",
+          "weight_change_pct": -7.0,
+          "gte10_pct": 35,
+          "early_discontinuation_pct": 20
+        },
+        {
+          "dose_mg": 60,
+          "label": "60mg",
+          "weight_change_pct": -8.7,
+          "gte10_pct": 40,
+          "early_discontinuation_pct": 28
+        },
+        {
+          "dose_mg": 90,
+          "label": "90mg",
+          "weight_change_pct": -11.1,
+          "gte10_pct": 59,
+          "early_discontinuation_pct": 25
+        },
+        {
+          "dose_mg": 120,
+          "label": "120mg",
+          "weight_change_pct": -12.2,
+          "gte10_pct": 80,
+          "early_discontinuation_pct": 38
+        }
+      ],
+      "source_version_or_hash": "8420060fd2765f75",
+      "narrative_locator": "Ch3.3",
+      "table_locator": "Data Pack clinical.oral_phase2",
+      "caption_locator": "HTML Fig 1",
+      "rendered_asset_locator": "#vis-001",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "R&D cost acceleration",
+      "authoritative_source_block": "financials.annual_3y",
+      "source_values": [
+        {
+          "year": 2023,
+          "revenue_m": 0,
+          "rd_m": 63.8,
+          "ga_m": 37.0,
+          "ocf_m": -73.4
+        },
+        {
+          "year": 2024,
+          "revenue_m": 0,
+          "rd_m": 101.6,
+          "ga_m": 49.3,
+          "ocf_m": -87.8
+        },
+        {
+          "year": 2025,
+          "revenue_m": 0,
+          "rd_m": 345.0,
+          "ga_m": 48.4,
+          "ocf_m": -278.7
+        }
+      ],
+      "source_version_or_hash": "c2a4a1f483618d48",
+      "narrative_locator": "Ch4.1",
+      "table_locator": "Appendix A",
+      "caption_locator": "HTML Fig 2",
+      "rendered_asset_locator": "#vis-002",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "Scenario valuation vs current price",
+      "authoritative_source_block": "scenarios",
+      "source_values": [
+        {
+          "name": "Bear",
+          "pv": 2.1,
+          "prob": 0.35
+        },
+        {
+          "name": "Base",
+          "pv": 20.6,
+          "prob": 0.4
+        },
+        {
+          "name": "Bull Execution",
+          "pv": 68.9,
+          "prob": 0.2
+        },
+        {
+          "name": "Bull Ecosystem",
+          "pv": 116.2,
+          "prob": 0.05
+        },
+        {
+          "current_price": 33.89,
+          "weighted": 28.554356035934138
+        }
+      ],
+      "source_version_or_hash": "c9638991e6b095c0",
+      "narrative_locator": "Ch5.2-5.4",
+      "table_locator": "Appendix C",
+      "caption_locator": "HTML Fig 3",
+      "rendered_asset_locator": "#vis-003",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "2035 revenue by scenario",
+      "authoritative_source_block": "scenarios.revenue_2035_b",
+      "source_values": [
+        {
+          "name": "Bear",
+          "value": 0.0
+        },
+        {
+          "name": "Base",
+          "value": 3.5
+        },
+        {
+          "name": "Bull Execution",
+          "value": 8.0
+        },
+        {
+          "name": "Bull Ecosystem",
+          "value": 11.6
+        }
+      ],
+      "source_version_or_hash": "019496cc8d21651f",
+      "narrative_locator": "Ch5.2",
+      "table_locator": "Valuation Table",
+      "caption_locator": "HTML Fig 4",
+      "rendered_asset_locator": "#vis-004",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-005",
+      "figure_title": "Clinical-event price sensitivity",
+      "authoritative_source_block": "market.event_prices",
+      "source_values": [
+        {
+          "date": "2024-02-26",
+          "label": "SC Phase 2 전일",
+          "close": 38.48
+        },
+        {
+          "date": "2024-02-27",
+          "label": "VENTURE SC readout",
+          "close": 85.05
+        },
+        {
+          "date": "2025-08-18",
+          "label": "Oral Phase 2 전일",
+          "close": 42.09
+        },
+        {
+          "date": "2025-08-19",
+          "label": "Oral Phase 2 공개",
+          "close": 24.36
+        },
+        {
+          "date": "2026-08-21",
+          "label": "T0",
+          "close": 33.89
+        }
+      ],
+      "source_version_or_hash": "79c96ae05db44855",
+      "narrative_locator": "Ch5.5",
+      "table_locator": "Data Pack market.event_prices",
+      "caption_locator": "HTML Fig 5",
+      "rendered_asset_locator": "#vis-005",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    }
+  ],
+  "publishing_audits": {
+    "decision_visuals_total": 5,
+    "decision_visuals_parity_pass": 5,
+    "stale_visual_assets": 0,
+    "figure_numerical_parity": "PASS",
+    "visual_data_lineage": "PASS",
+    "visual_semantic_parity": "PASS",
+    "pdf_render_inspection": "PASS",
+    "pdf_bookmarks": "PASS",
+    "html_sidebar": "PASS",
+    "korean_glyph_render": "PASS",
+    "publishing_hard_fail": "CLEAR",
+    "published": true
+  }
+}

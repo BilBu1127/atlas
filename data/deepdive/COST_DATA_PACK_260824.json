@@ -1,0 +1,640 @@
+{
+  "meta": {
+    "ticker": "COST",
+    "company": "Costco Wholesale Corporation",
+    "T0": "2026-08-24",
+    "price_asof": "2026-08-21 regular-session close",
+    "price": 947.74,
+    "filing_asof": "FY2026 Q3 Form 10-Q filed 2026-06-03",
+    "operating_update_asof": "July 2026 sales released 2026-08-05",
+    "consensus_asof": "2026-08-24",
+    "version": "Deep Dive OS v1.7"
+  },
+  "financials": {
+    "annual_3y": {
+      "units": "USD bn except EPS/SBC where noted",
+      "FY2023": {
+        "net_sales": 237.71,
+        "membership_fees": 4.58,
+        "total_revenue": 242.29,
+        "merchandise_costs": 212.586,
+        "sga": 21.59,
+        "operating_income": 8.114,
+        "net_income": 6.292,
+        "operating_cash_flow": 11.068,
+        "capex": 4.323,
+        "simple_fcf": 6.745,
+        "sbc": 0.774
+      },
+      "FY2024": {
+        "net_sales": 249.625,
+        "membership_fees": 4.828,
+        "total_revenue": 254.453,
+        "merchandise_costs": 222.358,
+        "sga": 22.81,
+        "operating_income": 9.285,
+        "net_income": 7.367,
+        "operating_cash_flow": 11.339,
+        "capex": 4.71,
+        "simple_fcf": 6.629,
+        "sbc": 0.818
+      },
+      "FY2025": {
+        "net_sales": 269.912,
+        "membership_fees": 5.323,
+        "total_revenue": 275.235,
+        "merchandise_costs": 239.886,
+        "sga": 24.966,
+        "operating_income": 10.383,
+        "net_income": 8.099,
+        "operating_cash_flow": 13.335,
+        "capex": 5.498,
+        "simple_fcf": 7.837,
+        "sbc": 0.86
+      }
+    },
+    "quarterly_8q": {
+      "units": "USD bn except EPS",
+      "FY24_Q4_16w": {
+        "total_revenue": 79.697,
+        "operating_income": 3.042,
+        "net_income": 2.354,
+        "diluted_eps": 5.29
+      },
+      "FY25_Q1": {
+        "total_revenue": 62.151,
+        "operating_income": 2.196,
+        "net_income": 1.798,
+        "diluted_eps": 4.04
+      },
+      "FY25_Q2": {
+        "total_revenue": 63.723,
+        "operating_income": 2.316,
+        "net_income": 1.788,
+        "diluted_eps": 4.02
+      },
+      "FY25_Q3": {
+        "total_revenue": 63.205,
+        "operating_income": 2.53,
+        "net_income": 1.903,
+        "diluted_eps": 4.28
+      },
+      "FY25_Q4_16w": {
+        "total_revenue": 86.156,
+        "operating_income": 3.341,
+        "net_income": 2.61,
+        "diluted_eps": 5.87
+      },
+      "FY26_Q1": {
+        "total_revenue": 67.307,
+        "operating_income": 2.463,
+        "net_income": 2.001,
+        "diluted_eps": 4.5
+      },
+      "FY26_Q2": {
+        "total_revenue": 69.597,
+        "operating_income": 2.606,
+        "net_income": 2.035,
+        "diluted_eps": 4.58
+      },
+      "FY26_Q3": {
+        "total_revenue": 70.527,
+        "operating_income": 2.815,
+        "net_income": 2.192,
+        "diluted_eps": 4.93
+      }
+    },
+    "members": {
+      "FY2023": {
+        "paid_m": 71.0,
+        "cardholders_m": 127.9,
+        "executive_m": 32.3
+      },
+      "FY2024": {
+        "paid_m": 76.2,
+        "cardholders_m": 136.8,
+        "executive_m": 35.4
+      },
+      "FY2025": {
+        "paid_m": 81.0,
+        "cardholders_m": 145.2,
+        "executive_m": 38.7,
+        "renewal_us_ca_pct": 92.3,
+        "renewal_worldwide_pct": 89.8
+      },
+      "FY26_Q1": {
+        "paid_m": 81.4,
+        "cardholders_m": 145.9,
+        "renewal_us_ca_pct": 92.2,
+        "renewal_worldwide_pct": 89.7
+      },
+      "FY26_Q2": {
+        "paid_m": 82.1,
+        "cardholders_m": 147.2,
+        "renewal_us_ca_pct": 92.1,
+        "renewal_worldwide_pct": 89.7
+      },
+      "FY26_Q3": {
+        "paid_m": 82.9,
+        "cardholders_m": 148.5,
+        "executive_m": 41.2,
+        "renewal_us_ca_pct": 92.2,
+        "renewal_worldwide_pct": 89.7,
+        "executive_sales_penetration_pct": 75.0
+      }
+    },
+    "balance_sheet_2026_05_10": {
+      "cash_and_st_investments_bn": 19.996,
+      "long_term_debt_bn": 5.684,
+      "net_cash_bn": 14.312
+    },
+    "fy26_36w_cashflow": {
+      "operating_cash_flow_bn": 11.133,
+      "capex_bn": 4.228,
+      "simple_fcf_bn": 6.905
+    },
+    "ceilings": [
+      "신규점 cohort별 capex·성숙 매출·mature ROIC 비공개",
+      "관세 품목/국가별 dollar exposure 비공개",
+      "디지털 incremental operating profit·CAC·LTV 비공개",
+      "Kirkland 별도 매출·마진 비공개"
+    ]
+  },
+  "kpis": [
+    {
+      "name": "US/Canada renewal",
+      "history": "FY25 92.3% → FY26 Q3 92.2%",
+      "current": 92.2,
+      "unit": "%",
+      "thresholds": {
+        "green": ">=92",
+        "yellow": "91–92",
+        "red": "<91 지속"
+      }
+    },
+    {
+      "name": "Worldwide renewal",
+      "history": "FY25 89.8% → FY26 Q3 89.7%",
+      "current": 89.7,
+      "unit": "%",
+      "thresholds": {
+        "green": ">=89.5",
+        "yellow": "88.5–89.5",
+        "red": "<88.5"
+      }
+    },
+    {
+      "name": "Adjusted comparable sales",
+      "history": "FY26 Q3 +6.6%; Jul-26 +6.6%",
+      "current": 6.6,
+      "unit": "%",
+      "thresholds": {
+        "green": ">=5.5",
+        "yellow": "4–5.5",
+        "red": "<4 두 분기"
+      }
+    },
+    {
+      "name": "Traffic",
+      "history": "FY26 Q3 +2.4%",
+      "current": 2.4,
+      "unit": "%",
+      "thresholds": {
+        "green": ">=2",
+        "yellow": "0–2",
+        "red": "<0 지속"
+      }
+    },
+    {
+      "name": "Executive sales penetration",
+      "history": "FY26 Q3 75.0%",
+      "current": 75.0,
+      "unit": "%",
+      "thresholds": {
+        "green": "상승/유지",
+        "yellow": "정체",
+        "red": "하락 + 갱신 약화"
+      }
+    },
+    {
+      "name": "Membership fee growth",
+      "history": "FY26 Q3 +10.7%",
+      "current": 10.7,
+      "unit": "%",
+      "thresholds": {
+        "green": "유료회원 성장률 상회",
+        "yellow": "유사",
+        "red": "구조적으로 하회"
+      }
+    },
+    {
+      "name": "Core-on-core gross margin",
+      "history": "FY26 Q3 -9bp",
+      "current": -9,
+      "unit": "bp",
+      "thresholds": {
+        "green": "flat/up",
+        "yellow": "-10~-30bp",
+        "red": "<-30bp 지속"
+      }
+    },
+    {
+      "name": "FY26 net new warehouses",
+      "history": "29 total openings incl. 3 relocations ≈ 26 net",
+      "current": 26,
+      "unit": "net stores plan",
+      "thresholds": {
+        "green": "계획 달성",
+        "yellow": "10–15% 미달",
+        "red": "반복적 대폭 미달"
+      }
+    },
+    {
+      "name": "36w OCF-capex",
+      "history": "FY26 36w $6.905bn",
+      "current": 6.905,
+      "unit": "USD bn",
+      "thresholds": {
+        "green": "순이익 성장과 동행",
+        "yellow": "운전자본 의존",
+        "red": "FCF 감소"
+      }
+    },
+    {
+      "name": "FY27 EPS consensus",
+      "history": "$22.51; 60-day $22.50",
+      "current": 22.51,
+      "unit": "USD",
+      "thresholds": {
+        "green": "상향",
+        "yellow": "횡보",
+        "red": ">5% 하향"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.25,
+      "revenue_path": "보수적 트래픽/점포 성장",
+      "margin_path": "비용·가격투자로 완만한 압박",
+      "fcf": null,
+      "diluted_shares": "약 444m, 의미 있는 희석 없음 가정",
+      "eps_cagr": 0.07,
+      "fy2030_eps": 26.7665,
+      "exit_pe": 32,
+      "terminal_share_price": 856.53,
+      "regular_dividend_4y": 28.6156,
+      "per_share_value": 604.56,
+      "current_price_irr": -0.016938
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "revenue_path": "최근 회원·트래픽 추세의 점진 정상화",
+      "margin_path": "대체로 안정",
+      "fcf": null,
+      "diluted_shares": "약 444m, 의미 있는 희석 없음 가정",
+      "eps_cagr": 0.1,
+      "fy2030_eps": 29.8969,
+      "exit_pe": 38,
+      "terminal_share_price": 1136.08,
+      "regular_dividend_4y": 28.6156,
+      "per_share_value": 795.5,
+      "current_price_irr": 0.052885
+    },
+    {
+      "name": "Up",
+      "probability": 0.25,
+      "revenue_path": "회원/점포/믹스 강세 지속",
+      "margin_path": "운영 레버리지로 소폭 개선",
+      "fcf": null,
+      "diluted_shares": "약 444m, 의미 있는 희석 없음 가정",
+      "eps_cagr": 0.13,
+      "fy2030_eps": 33.2943,
+      "exit_pe": 44,
+      "terminal_share_price": 1464.95,
+      "regular_dividend_4y": 28.6156,
+      "per_share_value": 1020.12,
+      "current_price_irr": 0.120427
+    }
+  ],
+  "valuation": {
+    "mode": "4-year EPS / exit P-E scenario + reverse expectations",
+    "core": {
+      "base_fair_value": 795.5,
+      "weighted_fair_value": 803.92
+    },
+    "execution": "회원·traffic·신규점·운영레버리지로 EPS 경로 평가",
+    "ecosystem": "해당 없음; membership flywheel은 core economics에 포함",
+    "drag": "현 밸류에이션의 terminal premium 의존성",
+    "expected_value": 803.92,
+    "expected_irr": 0.05566,
+    "current_price": 947.74,
+    "market_multiples": {
+      "fy26_eps_consensus": 20.42,
+      "fy26_pe": 46.4,
+      "fy27_eps_consensus": 22.51,
+      "fy27_pe": 42.1,
+      "ttm_pe_approx": 47.7
+    },
+    "regular_dividend_4y_assumption": 28.6156,
+    "hurdle_rate": 0.1
+  },
+  "reverse_expectations": {
+    "target_total_return_cagr": 0.1,
+    "years": 4,
+    "required_terminal_share_price": 1358.9705,
+    "starting_fy26_eps": 20.42,
+    "required_eps_by_exit_pe": [
+      {
+        "exit_pe": 35,
+        "fy2030_eps": 38.82773,
+        "required_eps_cagr": 0.1742797
+      },
+      {
+        "exit_pe": 38,
+        "fy2030_eps": 35.76238,
+        "required_eps_cagr": 0.1503836
+      },
+      {
+        "exit_pe": 40,
+        "fy2030_eps": 33.97426,
+        "required_eps_cagr": 0.135726
+      },
+      {
+        "exit_pe": 44,
+        "fy2030_eps": 30.88569,
+        "required_eps_cagr": 0.1089843
+      },
+      {
+        "exit_pe": 46,
+        "fy2030_eps": 29.54284,
+        "required_eps_cagr": 0.0967285
+      }
+    ],
+    "interpretation": "EPS CAGR가 약 10%라면 4년 뒤에도 대략 44–46x P/E가 유지되어야 현재가에서 10% 총수익률이 가능하다."
+  },
+  "consensus": {
+    "fy1": {
+      "period": "FY2026",
+      "revenue_bn": 301.94,
+      "eps": 20.42
+    },
+    "fy2": {
+      "period": "FY2027",
+      "revenue_bn": 325.63,
+      "eps": 22.51
+    },
+    "revision_trend": "대체로 횡보: FY26 EPS $20.42는 60일 전과 동일, FY27 $22.51 vs 60일 전 $22.50",
+    "analyst_snapshot": "S&P Global/StockAnalysis: 39 analysts, consensus Buy, avg target $1,077, low $740, high $1,315",
+    "short_interest": "2026-07-31 7.656m shares, 1.73% float, 3.75 days-to-cover"
+  },
+  "stance": {
+    "zone": "관망 / 신규매수 회피",
+    "price_bands": {
+      "900_plus": "신규진입 회피·보유자 기회비용 점검",
+      "800_900": "선별적 접근·장기보유 가능",
+      "720_800": "관심/진입 구간",
+      "below_720": "KPI 유지 시 강한 재검토"
+    },
+    "horizon": "4 years",
+    "variant_perception": "시장은 사업의 질보다 그 질의 지속기간과 terminal premium을 너무 오래 자본화할 위험이 있다."
+  },
+  "catalysts": [
+    {
+      "when": "2026-09-02",
+      "event": "August 2026 monthly sales",
+      "sensitivity": "adjusted comp / traffic / e-commerce"
+    },
+    {
+      "when": "2026-09-24",
+      "event": "FY2026 Q4 / full-year earnings",
+      "sensitivity": "renewal, Executive mix, margin, FY27 warehouse plan"
+    },
+    {
+      "when": "2026-10 to 2026-12",
+      "event": "monthly sales cadence",
+      "sensitivity": "holiday traffic/ticket and fuel/FX bridge"
+    },
+    {
+      "when": "2026-12",
+      "event": "FY2027 Q1 earnings",
+      "sensitivity": "membership fee anniversary, wage/tariff absorption"
+    },
+    {
+      "when": "2027-01",
+      "event": "annual meeting / capital allocation update",
+      "sensitivity": "buyback authorization, dividend/special dividend"
+    },
+    {
+      "when": "2027-03",
+      "event": "FY2027 Q2 earnings",
+      "sensitivity": "margin + new warehouse execution"
+    },
+    {
+      "when": "2027-05 to 2027-06",
+      "event": "FY2027 Q3 earnings",
+      "sensitivity": "renewal and mature-store productivity"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "1.1–1.6"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "1.2, 3.1–3.2"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "1.3, 3.7"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "1.5, 3.3"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "1.6, 4.3–4.4"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "2.1–2.3"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1.4, 3.6"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "4.1–4.7"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "3.1–3.7"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "3.7"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1.5, Appendix I"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1.6, Appendix I"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "4.7"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Appendix H/I"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "5.1–5.6"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "6.1–6.6"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "Appendix K/L"
+    }
+  ],
+  "sources": {
+    "S1": {
+      "title": "Costco FY2025 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000101/cost-20250831.htm",
+      "type": "primary"
+    },
+    "S2": {
+      "title": "Costco FY2026 Q3 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000051/cost-20260510.htm",
+      "type": "primary"
+    },
+    "S3": {
+      "title": "Costco FY2026 Q3 earnings supplemental / 8-K exhibit",
+      "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000046/costex9928-k52826.htm",
+      "type": "primary"
+    },
+    "S4": {
+      "title": "Costco FY2025 Q4 earnings release / 8-K exhibit",
+      "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000093/costex9918-k92525.htm",
+      "type": "primary"
+    },
+    "S5": {
+      "title": "Costco 2026 Proxy Statement",
+      "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000159/cost-20251204.htm",
+      "type": "primary"
+    },
+    "S6": {
+      "title": "Costco FY2026 Q1 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000169/cost-20251123.htm",
+      "type": "primary"
+    },
+    "S7": {
+      "title": "Costco FY2026 Q2 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000029/cost-20260215.htm",
+      "type": "primary"
+    },
+    "S8": {
+      "title": "Costco Investor Events & Presentations / July 2026 sales",
+      "url": "https://investor.costco.com/events-and-presentations/",
+      "type": "primary"
+    },
+    "S9": {
+      "title": "Walmart FY2026 Form 10-K (Sam’s Club)",
+      "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000055/wmt-20260131.htm",
+      "type": "primary"
+    },
+    "S10": {
+      "title": "BJ’s Wholesale Club FY2025 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1531152/000153115226000007/bj-20260131.htm",
+      "type": "primary"
+    },
+    "S12": {
+      "title": "StockAnalysis / S&P Global COST analyst consensus",
+      "url": "https://stockanalysis.com/stocks/cost/forecast/",
+      "type": "secondary",
+      "checked": "2026-08-24"
+    },
+    "S13": {
+      "title": "Zacks COST detailed estimates",
+      "url": "https://www.zacks.com/stock/quote/COST/detailed-earning-estimates",
+      "type": "secondary",
+      "checked": "2026-08-24"
+    }
+  },
+  "visual_data_source_registry": [
+    {
+      "visual_id": "VIS-001",
+      "title": "회원 기반 확대",
+      "data_path": "financials.members",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S7"
+      ]
+    },
+    {
+      "visual_id": "VIS-002",
+      "title": "3개년 매출·영업이익·FCF",
+      "data_path": "financials.annual_3y",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "visual_id": "VIS-003",
+      "title": "최근 8분기 영업이익률",
+      "data_path": "financials.quarterly_8q",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S6",
+        "S7"
+      ]
+    },
+    {
+      "visual_id": "VIS-004",
+      "title": "4년 시나리오 가치와 현재가",
+      "data_path": "scenarios + valuation.current_price",
+      "source_ids": [
+        "S12",
+        "S13"
+      ]
+    },
+    {
+      "visual_id": "VIS-005",
+      "title": "Exit P/E별 10% 수익률에 필요한 EPS 성장",
+      "data_path": "reverse_expectations.required_eps_by_exit_pe",
+      "source_ids": [
+        "S13"
+      ]
+    }
+  ]
+}
