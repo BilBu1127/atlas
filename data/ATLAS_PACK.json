@@ -1,9 +1,9 @@
 {
  "meta": {
-  "version": "ATLAS_PACK_2026-08_UPDATE6_v2.0",
+  "version": "ATLAS_PACK_2026-08_UPDATE6_v2.2",
   "as_of": "2026-08 (UPDATE-6 딥다이브통합 완료 배치6/6, 2026-08-30)",
   "build_progress": "BUILD 1~7 완료 후 네 번째 월간 갱신(UPDATE-4, 딥다이브 통합형 B타입). 바텀업 딥다이브 21종 통합(§7A): 14종 승격(AMKR·CEG·EQIX·ET·FSLR·GEV·IRM·LNG·LRCX·RTX·SCCO·VLO·VRT·WMB) + 7종 신설(ALM·BE·FORM·NBIS·OII·TDW·VG). 톱다운: 티어 변경 0 — 21종 스탠스가 압도적 회피/관망/WATCH(밸류 만개)로 상향 트리거 미형성, 수요 견조로 하향 트리거도 없음. MAT-02(SCCO 구리·ALM 텅스텐)·ITC-02(AMKR 후공정)·IND-02(RTX)·IND-03(GEV·VRT·BE)·RLE-02(EQIX·IRM·NBIS) HEAT 재확인·선행지표 강화; UTL-02(CEG=발전측 4번째 corroboration, VST/CCJ/LEU 후)로 HEAT 근거 추가 보강하되 B타입이라 WARM 유지(승격은 전면스캔 이관); ITC-03(FORM·LRCX)·ENE-01(OII·TDW)·ENE-02(ET·WMB)·ENE-03(VLO)·ENE-04(LNG·VG)·UTL-03(FSLR) 종목 확인·산업 티어 유지. AI·전력·DC 클러스터 엣지 완비로 신규 산업엣지 불필요; §3A 아웃바운드 2홉 워크·51종 전면스캔은 다음 정식 월간으로 이관(부채 유지).",
-  "prev_version": "ATLAS_PACK_2026-08_UPDATE6-B5_v1.9",
+  "prev_version": "ATLAS_PACK_2026-08_UPDATE6_v2.1",
   "taxonomy_locked": true,
   "counts": {
    "sectors": 11,
@@ -60,7 +60,7 @@
    "UPDATE-5: ENE-05·MAT-03 cold_reversal_signal 필드 보강(BUILD1 유산). §3A 전파 부채 해소. meta 장부 UPDATE-5 정정.",
    "UPDATE-5: 56종 톱다운 전면스캔 실행(3연속 이월 해소). 티어 변경 0 — 정산·부채회수·서사갱신 업데이트."
   ],
-  "notes": "산업 그룹 56개로 확정(초안 70 → 병합). 확정 후 임의 변경 금지, 추가만 사유 기록과 함께 허용(소스 01 §1). 반도체 4분할·지루한 산업 카드는 원칙대로 유지. | UPDATE-6 MODE B(딥다이브 통합) 배치 1/6: AI-DC 전력·컴퓨트층 — APLD·CORZ·WULF 신설(RLE-02, DEEP_DIVED), TLN 승격(UTL-02), WMB 리프레시(무변경). 티어 변경 0. 카드 additive 역반영만. | UPDATE-6 B2: AI-DC 네트워킹·광학 — ANET·COHR 승격, AAOI·CRDO·GLW·POET 신설(전부 ITC-06 DEEP_DIVED). GLW=광통신 무게중심 이동으로 ITC-06 primary(유리레그 이월). 티어 변경 0·additive 역반영만. | UPDATE-6 B3: 전력기기+중후장대 — HUBB 승격, POWL·CLF·ARLP 신설. CLF 삼중귀속(MAT-01 primary+DIS-01+IND-03). FPS(Forgent) 팩 불일치로 통합 보류. 티어 변경 0·additive만. | UPDATE-6 B4: 사이버·SW — PANW·FTNT·ZS·NTSK·FFIV·FICO 신설(전부 primary ITC-07). NTSK(Netskope) 추가 반영. FICO=ITC-07+ITC-08 conn·FFIV=ITC-07+ITC-06 conn. FPS 프로젝트 배제(사용자 지시). 티어 변경 0·additive만. | UPDATE-6 B5: 방산·우주·전력반도체 — HEI 승격(IND-02), SATL(IND-02)·VELO(IND-04+IND-02)·WOLF·NVTS(ITC-04) 신설, NVEC 리프레시 무변경. NVTS 추가. WOLF fresh-start 주의. 티어 변경 0·additive만. | UPDATE-6 B6(최종): 헬스+아웃라이어 — ALNY·SHOP 승격, FIVE·HSHP·PURR·NNN·ILMN 신설, TEM 리프레시 무변경. PURR=FIN-02 잠정귀속(택소노미 미대응). SHOP/NNN/ILMN 추가. B1-B6 딥다이브통합 사이클 완료. 티어 변경 0·additive만.",
+  "notes": "산업 그룹 56개로 확정(초안 70 → 병합). 확정 후 임의 변경 금지, 추가만 사유 기록과 함께 허용(소스 01 §1). 반도체 4분할·지루한 산업 카드는 원칙대로 유지. | UPDATE-6 MODE B(딥다이브 통합) 배치 1/6: AI-DC 전력·컴퓨트층 — APLD·CORZ·WULF 신설(RLE-02, DEEP_DIVED), TLN 승격(UTL-02), WMB 리프레시(무변경). 티어 변경 0. 카드 additive 역반영만. | UPDATE-6 B2: AI-DC 네트워킹·광학 — ANET·COHR 승격, AAOI·CRDO·GLW·POET 신설(전부 ITC-06 DEEP_DIVED). GLW=광통신 무게중심 이동으로 ITC-06 primary(유리레그 이월). 티어 변경 0·additive 역반영만. | UPDATE-6 B3: 전력기기+중후장대 — HUBB 승격, POWL·CLF·ARLP 신설. CLF 삼중귀속(MAT-01 primary+DIS-01+IND-03). FPS(Forgent) 팩 불일치로 통합 보류. 티어 변경 0·additive만. | UPDATE-6 B4: 사이버·SW — PANW·FTNT·ZS·NTSK·FFIV·FICO 신설(전부 primary ITC-07). NTSK(Netskope) 추가 반영. FICO=ITC-07+ITC-08 conn·FFIV=ITC-07+ITC-06 conn. FPS 프로젝트 배제(사용자 지시). 티어 변경 0·additive만. | UPDATE-6 B5: 방산·우주·전력반도체 — HEI 승격(IND-02), SATL(IND-02)·VELO(IND-04+IND-02)·WOLF·NVTS(ITC-04) 신설, NVEC 리프레시 무변경. NVTS 추가. WOLF fresh-start 주의. 티어 변경 0·additive만. | UPDATE-6 B6(최종): 헬스+아웃라이어 — ALNY·SHOP 승격, FIVE·HSHP·PURR·NNN·ILMN 신설, TEM 리프레시 무변경. PURR=FIN-02 잠정귀속(택소노미 미대응). SHOP/NNN/ILMN 추가. B1-B6 딥다이브통합 사이클 완료. 티어 변경 0·additive만. | UPDATE-6 최종보정: 딥다이브 후보 원장 구조화 이전 — carry 문자열에 갇혀 있던 UPDATE-5 승인 후보를 monthly_diff 배열(deep_dive_candidates 5·screening_recommendations 3·candidates_withheld 3)로 이전. 각 후보에 falsifier·horizon·verdict_log 3규율 부착. 신규 후보 생성 0. | UPDATE-6 v2.2: 거버넌스 v1.3(REVISIT 트랙) 승인 반영 — deep_dive_candidates에 type/trigger/status 스키마 적용. NEW 5종(OPEN) + REVISIT TLN 1종(PENDING_TRIGGER, UTL-02 승격 연동). 실제 REVISIT 판정은 차기 A타입. 티어·노드·엣지 무변경.",
   "os_version": "v1.3-role",
   "axes": [
    "수급 균형(온도)",
@@ -106,7 +106,8 @@
    "RESOLVED(UPDATE-5): ENE-05·MAT-03 cold_reversal_signal 필드 보강 완료.",
    "RESOLVED(UPDATE-5): §3A 아웃바운드 2홉 전파 워크 실행 — 임계 통과 노드 0, 감시강화만 기록.",
    "RESOLVED(UPDATE-5): BUILD7 최종정산 잔여(provisional=0·섬해소·필드) 전부 확정.",
-   "잔여: fresh 40종 중 비-AI(ENE·FIN·소비재·비HLT02 헬스·비MAT02 소재·유틸) 다수는 UPDATE-4 freshness 기반 유지 — 차기 갱신에서 톱다운 재확인 권장(coverage_honesty 참조)."
+   "잔여: fresh 40종 중 비-AI(ENE·FIN·소비재·비HLT02 헬스·비MAT02 소재·유틸) 다수는 UPDATE-4 freshness 기반 유지 — 차기 갱신에서 톱다운 재확인 권장(coverage_honesty 참조).",
+   "거버넌스 파일 반영 대기: 01_ATLAS_TAXONOMY_SCORING.md v1.2→v1.3 패치 4건(§3B 2트랙·§7A 5단계·§8 QA·PACK 스펙) — 프로젝트 Knowledge 원본에 수동 반영 필요."
   ]
  },
  "themes": [
@@ -12095,9 +12096,10 @@
  ],
  "monthly_diff": {
   "build": "UPDATE-6 (MODE B — 딥다이브 통합) 배치 6/6 (최종)",
-  "note": "헬스+아웃라이어 8종 통합(SHOP·NNN·ILMN 추가)+TEM 리프레시 무변경. B1-B6 사이클 완료. 티어 변경 0. §7A 승격 2·신설 5 + additive 역반영 + §3A 전파(전부 AMPLIFY/중립, 임계통과 0).",
+  "note": "헬스+아웃라이어 8종 통합(SHOP·NNN·ILMN 추가)+TEM 리프레시 무변경. B1-B6 사이클 완료. 티어 변경 0. §7A 승격 2·신설 5 + additive 역반영 + §3A 전파(전부 AMPLIFY/중립, 임계통과 0). + 후보 원장 구조화 이전(carry 문자열 → deep_dive_candidates/screening_recommendations/candidates_withheld 배열). 신규 후보 생성 아님 — 기존 승인 후보의 이전. + 거버넌스 v1.3 REVISIT 트랙 승인·PACK 스키마 선반영(type/trigger/status), TLN 조건부 등재.",
   "flags": [
-   "PURR=아틀라스 택소노미 미대응 아웃라이어 → FIN-02 잠정 귀속(사용자 지시). 디지털자산 트레저리 전용 노드 도입은 차기 거버넌스 판정."
+   "PURR=아틀라스 택소노미 미대응 아웃라이어 → FIN-02 잠정 귀속(사용자 지시). 디지털자산 트레저리 전용 노드 도입은 차기 거버넌스 판정.",
+   "거버넌스 v1.3 개정 승인(2026-08-30): 딥다이브 후보 NEW/REVISIT 2트랙. 01 §3B·§7A·§8 패치 필요 — ATLAS_GOVERNANCE_PATCH_v1.3_REVISIT.md 참조."
   ],
   "upgrades": [],
   "downgrades": [],
@@ -12182,12 +12184,230 @@
    "RLE-01(COLD) — NNN 넷리스 안정적이나 금리·리테일 크레딧 역풍. 역발상 감시 유지.",
    "FIN-02 — PURR 디지털자산 트레저리 편입. 토큰 트레저리 코호트 확대 시 전용 분류 필요성 재검토."
   ],
-  "screening_recommendations": [],
-  "deep_dive_candidates": [],
+  "screening_recommendations": [
+   {
+    "industry": "IND-05",
+    "label": "DC-EPC 포켓",
+    "tier_context": "WARM(aggregate) / 포켓은 HEAT급",
+    "rationale": "DC 백로그 11.4개월·전력인프라 착공 +30%·DC착공 +190%. UPDATE-6 B3에서 POWL book-to-bill 3.0x·DC 수주 $800M로 EPC/전기설비 수요 교차확증.",
+    "net_exposure_shallow": [
+     {
+      "ticker": "PWR",
+      "status": "SHALLOW"
+     },
+     {
+      "ticker": "EME",
+      "status": "SHALLOW"
+     },
+     {
+      "ticker": "FIX",
+      "status": "NOT_IN_PACK — 노드 신설 필요"
+     },
+     {
+      "ticker": "STRL",
+      "status": "NOT_IN_PACK — 노드 신설 필요"
+     }
+    ],
+    "falsifier": "하이퍼스케일러 capex 가이던스 하향 또는 DC 착공 둔화",
+    "horizon": "수분기~1년",
+    "status": "OPEN",
+    "origin": "UPDATE-5 §5 (승인 후보 이전)"
+   },
+   {
+    "industry": "ITC-03",
+    "label": "반도체 장비 (HEAT 후보 2순위)",
+    "tier_context": "WARM(BALANCED·cap 포화 대기)",
+    "rationale": "SEMI WFE 2026 +23.1% $143.9B 상향 리비전(D2 선행지표↑·D3 capex 가이던스↑)·백로그 2027. 장비공급은 병목 아님으로 HEAT 미승격.",
+    "net_exposure_shallow": [
+     {
+      "ticker": "ASML",
+      "status": "SHALLOW"
+     },
+     {
+      "ticker": "AMAT",
+      "status": "SHALLOW"
+     },
+     {
+      "ticker": "KLAC",
+      "status": "SHALLOW"
+     }
+    ],
+    "falsifier": "파운드리·메모리 capex 가이던스 하향",
+    "horizon": "수분기",
+    "status": "OPEN",
+    "origin": "UPDATE-5 §5 (승인 후보 이전)"
+   },
+   {
+    "industry": "UTL-02",
+    "label": "원전 (HEAT 후보 1순위)",
+    "tier_context": "WARM(cap 8/8 포화·IND-01 강등 대기)",
+    "rationale": "발전측 corroboration 4건(VST·CCJ·LEU·CEG)·DC 전력수요·EPC 2홉 보강. UPDATE-6 B1 TLN 딥다이브(AWS 1,920MW PPA·PJM $325/MW-day·4GW)로 근거 추가 경화 — TLN은 소진, OKLO·BWXT 잔여.",
+    "net_exposure_shallow": [
+     {
+      "ticker": "OKLO",
+      "status": "SHALLOW"
+     },
+     {
+      "ticker": "BWXT",
+      "status": "SHALLOW"
+     },
+     {
+      "ticker": "TLN",
+      "status": "소진(B1 딥다이브 완료)"
+     }
+    ],
+    "falsifier": "SMR 인허가·상업화 지연 또는 DC 전력계약 미실현",
+    "horizon": "수분기~1년",
+    "status": "OPEN",
+    "origin": "UPDATE-5 §5 (승인 후보 이전)"
+   }
+  ],
+  "deep_dive_candidates": [
+   {
+    "ticker": "TSM",
+    "name": "TSMC",
+    "type": "NEW",
+    "industry": "ITC-02",
+    "bucket": "C — 확장 지속",
+    "trigger": null,
+    "tier_context": "HEAT",
+    "node_status": "SHALLOW",
+    "rationale": "CoWoS·2nm 완판의 핵심 순노출. 캐비앳: 컨센 HIGH·모멘텀 가속(Axis③) → '진입 눌림 대기'. UPDATE-6 B2에서 ITC-06 광·네트워킹 수요가 상류 pull 확증.",
+    "falsifier": "CoWoS 수급갭 0 수렴 또는 가동률 90% 미만·2nm 예약슬롯 개방",
+    "horizon": "수분기(확장 지속)",
+    "verdict_log": "분기 사후 검토 — 미실시",
+    "status": "OPEN",
+    "origin": "UPDATE-5 §6 버킷C (승인 후보 이전)"
+   },
+   {
+    "ticker": "ASML",
+    "name": "ASML",
+    "type": "NEW",
+    "industry": "ITC-03",
+    "bucket": "C — 확장 지속(HEAT후보 큐)",
+    "trigger": null,
+    "tier_context": "WARM",
+    "node_status": "SHALLOW",
+    "rationale": "WFE 2026 +23.1% 상향 리비전의 병목 장비 순노출. cap 포화로 산업은 WARM 대기.",
+    "falsifier": "파운드리·메모리 capex 가이던스 하향 또는 WFE 리비전 하향 전환",
+    "horizon": "수분기~1년",
+    "verdict_log": "미실시",
+    "status": "OPEN",
+    "origin": "UPDATE-5 §5 큐 (승인 후보 이전)"
+   },
+   {
+    "ticker": "OKLO",
+    "name": "Oklo",
+    "type": "NEW",
+    "industry": "UTL-02",
+    "bucket": "A — 신규 수요",
+    "trigger": null,
+    "tier_context": "WARM(HEAT후보 1순위)",
+    "node_status": "SHALLOW",
+    "rationale": "DC 전력수요發 SMR 신규 수요. TLN(기존 원전 '지금 있는 전력')과 대조되는 신설 레그 — 인허가·상업화 시점이 논제 핵심.",
+    "falsifier": "SMR 인허가·상업화 지연 또는 DC 전력계약 미실현",
+    "horizon": "1년+",
+    "verdict_log": "미실시",
+    "status": "OPEN",
+    "origin": "UPDATE-5 §5 순노출 (승인 후보 이전)"
+   },
+   {
+    "ticker": "BWXT",
+    "name": "BWX Technologies",
+    "type": "NEW",
+    "industry": "UTL-02",
+    "bucket": "C — 확장 지속",
+    "trigger": null,
+    "tier_context": "WARM(HEAT후보 1순위)",
+    "node_status": "SHALLOW",
+    "rationale": "원자로 부품·해군 원자력의 기확립 공급자. UTL-02 HEAT 후보 근거와 IND-02(방산, HEAT·SHORTAGE) 이중 노출.",
+    "falsifier": "해군·정부 수주 둔화 또는 SMR 부품 파이프라인 미실현",
+    "horizon": "수분기~1년",
+    "verdict_log": "미실시",
+    "status": "OPEN",
+    "origin": "UPDATE-5 §5 순노출 (승인 후보 이전)"
+   },
+   {
+    "ticker": "PWR",
+    "name": "Quanta Services",
+    "type": "NEW",
+    "industry": "IND-05(+IND-03)",
+    "bucket": "C — 확장 지속",
+    "trigger": null,
+    "tier_context": "WARM(포켓 HEAT급)",
+    "node_status": "SHALLOW",
+    "rationale": "DC-EPC·전력인프라 착공의 최대 순노출. B3(HUBB·POWL) 전기설비 수요 확증과 동일 capex 풀 공유.",
+    "falsifier": "하이퍼스케일러 capex 가이던스 하향 또는 DC/전력 착공 둔화",
+    "horizon": "수분기~1년",
+    "verdict_log": "미실시",
+    "status": "OPEN",
+    "origin": "UPDATE-5 §5 순노출 (승인 후보 이전)"
+   },
+   {
+    "ticker": "TLN",
+    "name": "Talen Energy",
+    "type": "REVISIT",
+    "industry": "UTL-02",
+    "bucket": null,
+    "trigger": {
+     "kind": "TIER_CHANGE",
+     "detail": "UTL-02 HEAT 승격 시 자동 소환. 승격 체인은 PACK에 기록됨 — IND-01(score 7, 최약 인컴번트) 신조선가 하락 전환 → 강등 → HEAT 슬롯 개방 → UTL-02(후보1) 승격. 현재 cap 8/8로 미발생.",
+     "evidence_as_of": "미발생(조건부 대기)",
+     "prior_dd_as_of": "2026-08-27"
+    },
+    "tier_context": "UTL-02 WARM(HEAT 후보 1순위)",
+    "node_status": "DEEP_DIVED",
+    "rationale": "B1 딥다이브는 UTL-02 WARM 전제의 판단. 산업이 HEAT로 승격되면 조사 우선순위 전제가 바뀌므로 재소환 대상. AWS PPA 1,920MW 램프·4GW 파이프라인 firm 전환 여부가 재검토 핵심.",
+    "falsifier": "AWS PPA 축소·재협상 또는 추가 DC 계약이 장기 미전환(FCF/주 2028 <$35)",
+    "horizon": "IND-01 강등 시점에 연동(수분기)",
+    "verdict_log": "미실시",
+    "status": "PENDING_TRIGGER",
+    "origin": "거버넌스 v1.3 REVISIT 트랙 (승인 2026-08-30) — PACK 기록 승격 체인 기반 조건부 등재"
+   }
+  ],
   "candidates_consumed": [
    "HLT-02(ALNY)·HLT-04(ILMN)·DIS-04(SHOP·FIVE)·IND-07(HSHP)·FIN-02(PURR)·RLE-01(NNN) 딥다이브 완료. B1-B6 사이클 종료."
   ],
-  "candidates_withheld": [],
+  "candidates_withheld": [
+   {
+    "industry": "ITC-08",
+    "label": "스테이블코인 레그",
+    "bucket": "A — 신규 수요",
+    "tickers": [
+     "V",
+     "MA"
+    ],
+    "reason": "후보 자격은 있으나 컨센서스 상승으로 '시장 저인지' 조건 약화(Axis③) → 보류·감시.",
+    "status": "WITHHELD",
+    "origin": "UPDATE-5 §6 버킷A (승인 판정 이전)"
+   },
+   {
+    "industry": "ENE-04",
+    "label": "LNG 유니버스",
+    "tickers": [
+     "SRE",
+     "NEXT",
+     "BKR",
+     "KMI"
+    ],
+    "reason": "유니버스 thin·BKR 다각화로 순도 저하. 인접 순노출은 IND-01(LNG선)·IND-05(터미널 EPC) 엣지 경유.",
+    "status": "WITHHELD",
+    "origin": "UPDATE-5 carry ene04_universe (이전)"
+   },
+   {
+    "industry": "COLD 7종",
+    "label": "버킷 B — 바닥 반전",
+    "tickers": [
+     "ARLP(소진)",
+     "BTU",
+     "HCC",
+     "AMR"
+    ],
+    "reason": "확증 바닥반전 신호 점등 0. UPDATE-6 B3 ARLP 딥다이브도 미점등 확인(price-cost green이나 구조적 역풍). 역발상 감시목록 유지.",
+    "status": "WITHHELD",
+    "origin": "UPDATE-5 §6 버킷B + B3 검증"
+   }
+  ],
   "peak_watch": [
    {
     "id": "ITC-05",
@@ -12214,7 +12434,7 @@
     "carry_forward": true
    }
   ],
-  "coverage_honesty": "MODE B 배치 6/6(최종). 전면 톱다운 미실행(정상). 티어 무변경. 하드넘버 7개 원본 팩+ILMN 인컨텍스트 대조(§1-4). B1-B6 딥다이브통합 사이클 완료.",
+  "coverage_honesty": "MODE B 배치 6/6(최종). 전면 톱다운 미실행(정상). 티어 무변경. 하드넘버 7개 원본 팩+ILMN 인컨텍스트 대조(§1-4). B1-B6 딥다이브통합 사이클 완료. 후보 원장은 UPDATE-5 승인분을 배열로 이전(신규 생성 0, HUBB·TLN 소진 반영).",
   "next_session_carry": {
    "full_scan_pending": "RESOLVED(UPDATE-5): 56종 톱다운 전면스캔 실행 완료. | 차기 정식 A타입 월간에서 heat_score 재산정·UTL-02 로테이션 재판정.",
    "propagation_debt": "RESOLVED(UPDATE-5): §3A 아웃바운드 2홉 워크 실행, 임계통과 노드 0(감시강화만).",
@@ -12224,7 +12444,7 @@
    "multi_attribution_note": "다중귀속 트립와이어(RIOT/UUUU/HOOD/BE)는 기업 매출 무게중심 이벤트 → 톱다운 스캔 아닌 해당 기업 딥다이브 갱신(MODE B)에서 검증 대상. 이번 전면스캔은 산업수준 강제 재지정 사유 미발견 → 대표산업 현행 유지·트립와이어 이월.",
    "unapproved_flags": "미승인 플래그 2건(조용히 생성 안 함): (1) 신규 테마 후보 'AI가 인컴번트 SW·광고 모델 재편'(ITC-07+COM-03 연결), (2) 엣지 TH-AI→IND-05 M→H 상향 후보(DC건설이 E&C 성장엔진화). 차기 승인 판정.",
    "ene04_universe": "ENE-04 스크리닝 유니버스 5종(LNG·SRE·NEXT·BKR·KMI). BKR은 다각화로 순도 저하 — 인접 순노출은 IND-01(LNG선: 329180.KS·042660.KS·삼성중공업)+IND-05(LNG터미널 EPC: FLR·KBR·J) 엣지 경유.",
-   "remaining_shallow_candidates": "RLE-02 전환-광업체 코호트 딥다이브 완료(APLD·CORZ·WULF). TLN 완료. 잔여 버킷C: HUBB·TSM. HEAT후보큐: ITC-03(ASML/AMAT/KLAC). 버킷A 보류: ITC-08(V/MA).",
+   "remaining_shallow_candidates": "→ monthly_diff.deep_dive_candidates / screening_recommendations / candidates_withheld 배열로 이전 완료(UPDATE-6 최종). 이 필드는 요약 포인터: 잔여 OPEN 후보 = TSM·ASML·OKLO·BWXT·PWR, 스크리닝 3건(IND-05·ITC-03·UTL-02), 보류 3건(ITC-08·ENE-04·버킷B COLD). 소진: HUBB·TLN·전환광업체 코호트.",
    "coverage_debt": "fresh 40종 비-AI 다수 UPDATE-4 freshness 기반 유지 — 차기 갱신 톱다운 재확인 권장. boring 5종(COM-01·COM-02·COM-04·IND-09·UTL-04) 딥 재스캔 대상.",
    "modeB_batch_progress": "완료: B1~B6 딥다이브 통합 전량 종료. FPS=배제 종결. 추가분(SHOP·NNN·ILMN) 포함.",
    "modeB_classification_decisions": "확정 누적(B1-B6): 전환광업체=RLE-02; GLW/CRDO/POET=ITC-06; CLF=MAT-01+DIS-01+IND-03·ARLP=ENE-05; FICO=ITC-07+ITC-08·FFIV=ITC-07+ITC-06; WOLF/NVTS=ITC-04·SATL=IND-02·VELO=IND-04+IND-02; PURR=FIN-02(잠정)·NNN=RLE-01·ILMN=HLT-04·FIVE/SHOP=DIS-04·HSHP=IND-07.",
@@ -12240,6 +12460,20 @@
     "ITC-04 SiC/GaN 파워반도체 코호트 재점검(WOLF 매출 재가속+GM 인플렉션).",
     "ITC-06 balance 재점검(AI 네트워킹·광 수요 강도 vs BALANCED).",
     "PURR 디지털자산 트레저리 전용 분류 도입 여부."
+   ],
+   "candidate_ledger_note": "후보 원장은 PACK 배열이 단일 진실원(single source of truth). carry 문자열은 포인터만 유지 — 신규 후보 생성은 A타입 톱다운 스캔에서만. v2.2: 후보 원장에 NEW/REVISIT 2트랙 스키마 적용(거버넌스 v1.3). NEW 5종 OPEN + REVISIT 1종 PENDING_TRIGGER.",
+   "revisit_track": {
+    "status": "거버넌스 v1.3 승인 완료(2026-08-30). PACK 스키마 v2.2 선반영. 실제 REVISIT 판정은 차기 A타입 갱신부터.",
+    "why_empty_now": "UPDATE-6은 티어·balance 변경 0건이라 TIER_CHANGE/BALANCE_CHANGE 미발생. TRIPWIRE는 CLF Q3'26 등 미발표 실적이라 관측 불가. THESIS_STALE은 86종 전부 as_of 2026-08로 4분기 경과 0. → 관측 없는 추정 등재는 규율 위반이므로 미등재(TLN 조건부 1건만).",
+    "quota": "동시 OPEN ≤5종. 강도순 컷: TIER_CHANGE > TRIPWIRE red > BALANCE_CHANGE > THESIS_STALE.",
+    "excluded_reasons": "가격이 stance_zone 진입(아틀라스 밖·HARD RULE 2 침식) / 신규 후보 부족(규율 마모) — 등재 금지."
+   },
+   "revisit_execution_order_next_A": [
+    "STEP 1 산업 필터: 이번 갱신에서 tier·balance 변한 산업의 DEEP_DIVED 노드 전량 소환 → TIER_CHANGE·BALANCE_CHANGE 자동 판정(추가 조사 0). 특히 UTL-02 승격 시 TLN 자동 OPEN 전환(PENDING_TRIGGER 해제).",
+    "STEP 2 경과 필터: 직전 딥다이브 as_of 4분기 초과 + 소속 산업 HEAT/WARM → THESIS_STALE 후보군. (UPDATE-6 통합분 86종은 2026-08 기준이므로 2027-08 이후 해당)",
+    "STEP 3 tripwire 필터: STEP1·2에서 걸린 노드에 한해 실적 하드넘버 확인 → TRIPWIRE 판정. 우선 확인 대상: CLF(Q3'26 EBITDA ≥$500M+FCF, MAT-01 티어 연동)·WOLF(매출 재가속+GM 인플렉션)·ZS(net-new ARR 14% yellow)·NTSK(NRR 113% yellow)·COHR(FCF -$869M 정상화)·POWL(book-to-bill ex-mega ≥1.2x).",
+    "STEP 4 정원 컷: 강도순 상위 5종만 OPEN. 나머지는 미등재(다음 사이클 재평가).",
+    "STEP 5 QA: type/trigger/status 필드 완비·REVISIT OPEN ≤5·가격/리스트공백 사유 0건 검증."
    ]
   }
  },
