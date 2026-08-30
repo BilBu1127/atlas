@@ -1,0 +1,816 @@
+{
+  "meta": {
+    "ticker": "PANW",
+    "company": "Palo Alto Networks, Inc.",
+    "exchange": "NASDAQ",
+    "currency": "USD",
+    "publishing_date_asia_seoul": "2026-08-27",
+    "as_of": "2026-08-27T14:41:00+09:00",
+    "valuation_mode": "Mode B — Hybrid",
+    "latest_operating_filing": "FY2026 Q3 Form 10-Q, filed 2026-06-03",
+    "latest_filing_check": "PASS",
+    "latest_non_operating_material_filing": "2026-08-21 8-K — governance/severance/bylaw; no operating financial update",
+    "next_scheduled_results": "2026-09-01 after U.S. market close — FY2026 Q4/FY results",
+    "current_price": 339.6,
+    "price_as_of": "2026-08-26 U.S. close / secondary-source cross-check",
+    "price_source_quality": "SECONDARY / PRICE_SOURCE_CEILING",
+    "h1_approved": true,
+    "pdf_status": "USER_OVERRIDDEN_NOT_APPLICABLE",
+    "rc_unresolved": 0
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "fiscal_year": "FY2023",
+        "revenue_b": 6.893,
+        "subscription_support_b": 5.314,
+        "gross_profit_b": 4.983,
+        "gross_margin": 0.723,
+        "gaap_operating_income_b": 0.387,
+        "net_income_b": 0.44,
+        "operating_cash_flow_b": 2.778,
+        "capex_proxy_b": 0.146,
+        "fcf_proxy_b": 2.631,
+        "sbc_b": 1.087
+      },
+      {
+        "fiscal_year": "FY2024",
+        "revenue_b": 8.028,
+        "subscription_support_b": 6.424,
+        "gross_profit_b": 5.968,
+        "gross_margin": 0.743,
+        "gaap_operating_income_b": 0.684,
+        "net_income_b": 2.578,
+        "operating_cash_flow_b": 3.258,
+        "capex_proxy_b": 0.157,
+        "fcf_proxy_b": 3.101,
+        "sbc_b": 1.079,
+        "note": "Net income includes a material tax benefit."
+      },
+      {
+        "fiscal_year": "FY2025",
+        "revenue_b": 9.222,
+        "subscription_support_b": 7.42,
+        "gross_profit_b": 6.77,
+        "gross_margin": 0.734,
+        "gaap_operating_income_b": 1.243,
+        "net_income_b": 1.134,
+        "operating_cash_flow_b": 3.716,
+        "capex_proxy_b": 0.246,
+        "fcf_proxy_b": 3.47,
+        "sbc_b": 1.3
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "FY24 Q4",
+        "revenue_b": 2.19,
+        "ngs_arr_b": 4.2,
+        "rpo_b": 12.7
+      },
+      {
+        "quarter": "FY25 Q1",
+        "revenue_b": 2.139,
+        "ngs_arr_b": 4.5,
+        "rpo_b": 12.6
+      },
+      {
+        "quarter": "FY25 Q2",
+        "revenue_b": 2.257,
+        "ngs_arr_b": 4.8,
+        "rpo_b": 13.0
+      },
+      {
+        "quarter": "FY25 Q3",
+        "revenue_b": 2.289,
+        "ngs_arr_b": 5.1,
+        "rpo_b": 13.5
+      },
+      {
+        "quarter": "FY25 Q4",
+        "revenue_b": 2.536,
+        "ngs_arr_b": 5.58,
+        "rpo_b": 15.8
+      },
+      {
+        "quarter": "FY26 Q1",
+        "revenue_b": 2.474,
+        "ngs_arr_b": 5.9,
+        "rpo_b": 15.5
+      },
+      {
+        "quarter": "FY26 Q2",
+        "revenue_b": 2.594,
+        "ngs_arr_b": 6.3,
+        "rpo_b": 16.0
+      },
+      {
+        "quarter": "FY26 Q3",
+        "revenue_b": 3.002,
+        "ngs_arr_b": 8.13,
+        "rpo_b": 18.4,
+        "reported_revenue_growth": 0.31,
+        "acquired_revenue_b": 0.388,
+        "organic_like_revenue_b": 2.614,
+        "organic_like_revenue_growth": 0.142,
+        "acquired_ngs_arr_b": 1.63,
+        "ex_acquisition_ngs_arr_b": 6.5,
+        "ex_acquisition_ngs_arr_growth": 0.28,
+        "reported_rpo_growth": 0.36,
+        "ex_acquisition_rpo_growth": 0.22
+      }
+    ]
+  },
+  "platformization": {
+    "current_count": 2280,
+    "current_period": "FY26 Q3",
+    "fy2030_target_count": 4000,
+    "fy2030_ngs_arr_target_b": 20.0,
+    "platformized_nrr_approx": 1.2,
+    "churn": "low single digit",
+    "share_of_ngs_arr_approx": 0.65,
+    "history_approx": [
+      {
+        "period": "FY24 Q4",
+        "count": 1000
+      },
+      {
+        "period": "FY25 Q4",
+        "count": 1400
+      },
+      {
+        "period": "FY26 Q1",
+        "count": 1450
+      },
+      {
+        "period": "FY26 Q2",
+        "count": 1550
+      },
+      {
+        "period": "FY26 Q3",
+        "count": 2280
+      }
+    ],
+    "q3_note": "Q3 total includes identity/observability criteria after acquisitions; management cited ~110 net additions under prior-style criteria plus ~20 identity/observability additions."
+  },
+  "product_kpis": {
+    "sase_arr_b": 1.6,
+    "sase_arr_growth": 0.4,
+    "xsiam_arr_b_min": 0.6,
+    "xsiam_arr_growth_approx": 1.0,
+    "xsiam_customers_min": 740,
+    "chronosphere_arr_b_min": 0.3,
+    "prisma_airs_customers_min": 300,
+    "prisma_airs_arr_visibility_b": 0.1,
+    "telemetry_pb_per_day_min": 17,
+    "sensor_count_m_min": 125
+  },
+  "acquisitions": {
+    "cyberark": {
+      "total_consideration_b": 21.061,
+      "cash_b": 2.308,
+      "panw_common_shares_m": 112,
+      "stock_value_b": 18.488,
+      "replacement_awards_fv_b": 0.265,
+      "goodwill_b": 14.802,
+      "intangibles_b": 6.279,
+      "closed": "2026-02-11"
+    },
+    "chronosphere": {
+      "total_consideration_b": 2.951,
+      "cash_b": 2.842,
+      "replacement_awards_fv_b": 0.109,
+      "goodwill_b": 2.364,
+      "intangibles_b": 0.565
+    },
+    "q3_combined_acquired_revenue_b": 0.388,
+    "q3_combined_acquired_operating_loss_b": 0.523,
+    "goodwill_q3_fy26_b": 21.902
+  },
+  "accounting_quality": {
+    "nine_month_fy26_sbc_b": 1.355,
+    "unrecognized_unvested_sbc_b": 3.6,
+    "weighted_recognition_years": 2.6,
+    "q3_fy26_gaap_operating_loss_b": 0.183,
+    "q3_fy26_gaap_net_loss_b": 0.177,
+    "q3_fy26_non_gaap_operating_income_b": 0.814,
+    "q3_fy26_adjusted_fcf_b": 0.91,
+    "ttm_adjusted_fcf_b": 4.079,
+    "ttm_adjusted_fcf_margin": 0.385,
+    "q3_fy26_gross_margin": 0.676,
+    "q3_prior_year_gross_margin": 0.729,
+    "q3_yoy_cloud_hosting_cost_increase_b": 0.075,
+    "quality_verdict": "MIXED — strong cash generation, but SBC, acquisition amortization, dilution and cloud hosting economics require per-share normalization."
+  },
+  "capital_structure": {
+    "cash_and_investments_q3_fy26_b": 6.992,
+    "firm_purchase_commitments_b": 8.6,
+    "revolver_b": 0.4,
+    "revolver_drawn_b": 0,
+    "remaining_buyback_authorization_b_apr30": 1.0,
+    "q4_fy26_non_gaap_diluted_share_guide_m": [
+      830,
+      840
+    ]
+  },
+  "kpis": [
+    {
+      "name": "Ex-acquisition NGS ARR growth",
+      "current": 0.28,
+      "green": ">=25%",
+      "yellow": "18-25%",
+      "red": "<18%",
+      "status": "GREEN",
+      "source_ids": [
+        "S3",
+        "S5"
+      ]
+    },
+    {
+      "name": "Organic-like revenue growth proxy",
+      "current": 0.142,
+      "green": ">=15%",
+      "yellow": "10-15%",
+      "red": "<10%",
+      "status": "YELLOW_GREEN_BOUNDARY",
+      "source_ids": [
+        "S3"
+      ]
+    },
+    {
+      "name": "Platformized NRR",
+      "current": 0.2,
+      "display": "~120% NRR",
+      "green": ">=120%",
+      "yellow": "115-120%",
+      "red": "<115%",
+      "status": "GREEN",
+      "source_ids": [
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "name": "XSIAM ARR growth",
+      "current": 1.0,
+      "green": ">=50%",
+      "yellow": "30-50%",
+      "red": "<30%",
+      "status": "GREEN",
+      "source_ids": [
+        "S5"
+      ]
+    },
+    {
+      "name": "SASE ARR growth",
+      "current": 0.4,
+      "green": ">=30%",
+      "yellow": "20-30%",
+      "red": "<20%",
+      "status": "GREEN",
+      "source_ids": [
+        "S5"
+      ]
+    },
+    {
+      "name": "Q3 FY26 gross margin",
+      "current": 0.676,
+      "green": ">=70% recovery",
+      "yellow": "66-70%",
+      "red": "<66% persistent",
+      "status": "YELLOW",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "TTM adjusted FCF margin",
+      "current": 0.385,
+      "green": ">=37%",
+      "yellow": "33-37%",
+      "red": "<33%",
+      "status": "GREEN",
+      "source_ids": [
+        "S3"
+      ]
+    },
+    {
+      "name": "Diluted share trend",
+      "current": "acquisition step-up",
+      "green": "flat/down after integration",
+      "yellow": "0-3% growth",
+      "red": ">3% persistent",
+      "status": "RED_WATCH",
+      "source_ids": [
+        "S1",
+        "S10"
+      ]
+    },
+    {
+      "name": "Prisma AIRS adoption",
+      "current": "300+ customers; visibility to $100M ARR",
+      "green": "$100M ARR + renewal evidence",
+      "yellow": "customers grow but renewal evidence limited",
+      "red": "pipeline stalls",
+      "status": "YELLOW",
+      "source_ids": [
+        "S5"
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.2,
+      "revenue_growth_path": [
+        0.15,
+        0.12,
+        0.1,
+        0.08
+      ],
+      "revenue_path_b": {
+        "FY2026": 11.42,
+        "FY2027": 13.133,
+        "FY2028": 14.709,
+        "FY2029": 16.18,
+        "FY2030": 17.474
+      },
+      "fy2030_revenue_b": 17.474,
+      "fy2030_fcf_margin": 0.32,
+      "fy2030_fcf_b": 5.592,
+      "terminal_fcf_multiple": 25,
+      "terminal_net_cash_b": 6.0,
+      "fy2030_diluted_shares_m": 900,
+      "fy2030_per_share_value": 161.99,
+      "current_equivalent_value": 104.81,
+      "four_year_irr": -0.1689
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "revenue_growth_path": [
+        0.21,
+        0.19,
+        0.17,
+        0.15
+      ],
+      "revenue_path_b": {
+        "FY2026": 11.42,
+        "FY2027": 13.818,
+        "FY2028": 16.444,
+        "FY2029": 19.239,
+        "FY2030": 22.125
+      },
+      "fy2030_revenue_b": 22.125,
+      "fy2030_fcf_margin": 0.38,
+      "fy2030_fcf_b": 8.407,
+      "terminal_fcf_multiple": 38,
+      "terminal_net_cash_b": 6.0,
+      "fy2030_diluted_shares_m": 875,
+      "fy2030_per_share_value": 371.98,
+      "current_equivalent_value": 240.67,
+      "four_year_irr": 0.023
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.25,
+      "revenue_growth_path": [
+        0.25,
+        0.23,
+        0.21,
+        0.18
+      ],
+      "revenue_path_b": {
+        "FY2026": 11.42,
+        "FY2027": 14.275,
+        "FY2028": 17.558,
+        "FY2029": 21.245,
+        "FY2030": 25.07
+      },
+      "fy2030_revenue_b": 25.07,
+      "fy2030_fcf_margin": 0.4,
+      "fy2030_fcf_b": 10.028,
+      "terminal_fcf_multiple": 45,
+      "terminal_net_cash_b": 6.0,
+      "fy2030_diluted_shares_m": 860,
+      "fy2030_per_share_value": 531.69,
+      "current_equivalent_value": 344.0,
+      "four_year_irr": 0.1186
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.15,
+      "revenue_growth_path": [
+        0.3,
+        0.27,
+        0.24,
+        0.2
+      ],
+      "revenue_path_b": {
+        "FY2026": 11.42,
+        "FY2027": 14.846,
+        "FY2028": 18.854,
+        "FY2029": 23.379,
+        "FY2030": 28.055
+      },
+      "fy2030_revenue_b": 28.055,
+      "fy2030_fcf_margin": 0.42,
+      "fy2030_fcf_b": 11.783,
+      "terminal_fcf_multiple": 50,
+      "terminal_net_cash_b": 6.0,
+      "fy2030_diluted_shares_m": 850,
+      "fy2030_per_share_value": 700.19,
+      "current_equivalent_value": 453.02,
+      "four_year_irr": 0.1983
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B — Hybrid",
+    "horizon_years": 4,
+    "hurdle_rate": 0.115,
+    "fy26_start_revenue_b": 11.42,
+    "terminal_net_cash_b": 6.0,
+    "core_current_equivalent_per_share": 215,
+    "execution_increment_per_share": 88,
+    "ecosystem_increment_per_share": 28,
+    "funding_dilution_drag_per_share": -90,
+    "base_bridge_value_per_share": 241,
+    "probability_weighted_fy2030_value": 419.14,
+    "probability_weighted_current_value": 271.18,
+    "expected_four_year_irr": 0.054,
+    "current_price": 339.6,
+    "bull_bear_current_value_up_down_ratio": 0.48,
+    "base_rate": "PRIMARY_SOURCE_CEILING",
+    "base_rate_note": "No directly comparable public historical base rate for a cybersecurity platform integration of this scope; scenario probabilities are underwriting assumptions, not empirical frequencies."
+  },
+  "reverse_expectations": {
+    "required_fy2030_share_price_for_hurdle": 524.89,
+    "assumed_fy2030_diluted_shares_m": 875,
+    "required_fy2030_equity_value_b": 459.28,
+    "required_fy2030_enterprise_value_b": 453.28,
+    "sensitivity": [
+      {
+        "terminal_fcf_multiple": 35,
+        "fy2030_fcf_margin": 0.38,
+        "required_fy2030_fcf_b": 12.951,
+        "required_fy2030_revenue_b": 34.081,
+        "required_revenue_cagr": 0.3144
+      },
+      {
+        "terminal_fcf_multiple": 38,
+        "fy2030_fcf_margin": 0.38,
+        "required_fy2030_fcf_b": 11.928,
+        "required_fy2030_revenue_b": 31.39,
+        "required_revenue_cagr": 0.2876
+      },
+      {
+        "terminal_fcf_multiple": 40,
+        "fy2030_fcf_margin": 0.4,
+        "required_fy2030_fcf_b": 11.332,
+        "required_fy2030_revenue_b": 28.33,
+        "required_revenue_cagr": 0.255
+      },
+      {
+        "terminal_fcf_multiple": 45,
+        "fy2030_fcf_margin": 0.4,
+        "required_fy2030_fcf_b": 10.073,
+        "required_fy2030_revenue_b": 25.182,
+        "required_revenue_cagr": 0.2186
+      },
+      {
+        "terminal_fcf_multiple": 50,
+        "fy2030_fcf_margin": 0.42,
+        "required_fy2030_fcf_b": 9.066,
+        "required_fy2030_revenue_b": 21.585,
+        "required_revenue_cagr": 0.1725
+      }
+    ]
+  },
+  "consensus": {
+    "source_quality": "SECONDARY / MODULE_M_CEILING",
+    "analyst_count": 55,
+    "rating": "Buy",
+    "average_price_target": 362.71,
+    "median_price_target": 370.5,
+    "low_target": 201,
+    "high_target": 475,
+    "fy26_revenue_consensus_b": 11.42,
+    "fy27_revenue_consensus_b": 13.84,
+    "fy27_revenue_growth": 0.2115,
+    "short_interest_date": "2026-07-31",
+    "short_interest_shares_m": 21.001,
+    "short_interest_float_pct": 0.0261,
+    "days_to_cover": 3.5
+  },
+  "stance": {
+    "label": "WAIT / AVOID NEW BUY",
+    "reason": "Probability-weighted expected return is below the 11.5% hurdle and current-price upside/downside is <1 despite strong business quality.",
+    "price_bands": [
+      {
+        "range": ">$300",
+        "stance": "Avoid new buy",
+        "condition": "Current price requires execution near Bull Execution."
+      },
+      {
+        "range": "$260–280",
+        "stance": "Watch / conditional interest",
+        "condition": "Organic NGS ARR, XSIAM/SASE growth and FCF margin remain intact."
+      },
+      {
+        "range": "$220–240",
+        "stance": "Attractive interest zone",
+        "condition": "Base thesis intact; acquired margin/FCF conversion begins to prove out."
+      },
+      {
+        "range": "<$220",
+        "stance": "Strong asymmetry if thesis intact",
+        "condition": "No structural deterioration in platform NRR, organic ARR, XSIAM/SASE or integration economics."
+      }
+    ],
+    "falsification_conditions": [
+      "Ex-acquisition NGS ARR growth persistently below 18%",
+      "Platformized NRR below 115%",
+      "XSIAM ARR growth below 30%",
+      "SASE ARR growth below 20%",
+      "Gross margin persistently below 66% after acquisition normalization",
+      "Adjusted FCF margin below 33%",
+      "CyberArk cross-sell without margin/FCF conversion",
+      "Diluted share count grows >3% annually after integration period",
+      "Prisma AIRS misses $100M ARR milestone or lacks renewal evidence"
+    ]
+  },
+  "catalysts": [
+    {
+      "date": "2026-09-01",
+      "event": "FY2026 Q4/FY results",
+      "watch": "FY27 organic growth, NGS ARR, gross margin, FCF margin, diluted shares"
+    },
+    {
+      "date": "FY2027 H1",
+      "event": "CyberArk integration proof",
+      "watch": "identity ARR/renewal/cross-sell, acquired margin, FCF conversion"
+    },
+    {
+      "date": "FY2027",
+      "event": "XSIAM and SASE scaling",
+      "watch": "organic platform expansion and displacement wins"
+    },
+    {
+      "date": "next couple quarters from Q3 FY26",
+      "event": "Prisma AIRS $100M ARR milestone",
+      "watch": "production usage and renewal evidence"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "PRIMARY_SOURCE_CEILING"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "PRIMARY_SOURCE_CEILING"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "PRIMARY_SOURCE_CEILING"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "PRIMARY_SOURCE_CEILING"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "PRIMARY_SOURCE_CEILING"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "PRIMARY_SOURCE_CEILING"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "PRIMARY_SOURCE_CEILING"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "COMPLETE"
+    }
+  ],
+  "visual_lineage": [
+    {
+      "visual_id": "V1",
+      "title": "3Y Revenue vs FCF",
+      "data_path": "financials.annual_3y",
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "visual_id": "V2",
+      "title": "8Q NGS ARR trajectory",
+      "data_path": "financials.quarterly_8q[*].ngs_arr_b",
+      "source_ids": [
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "visual_id": "V3",
+      "title": "Q3 FY26 reported vs organic-like revenue bridge",
+      "data_path": "financials.quarterly_8q[-1]",
+      "source_ids": [
+        "S3"
+      ]
+    },
+    {
+      "visual_id": "V4",
+      "title": "Scenario current-equivalent values",
+      "data_path": "scenarios[*].current_equivalent_value",
+      "source_ids": [
+        "MODEL"
+      ]
+    },
+    {
+      "visual_id": "V5",
+      "title": "Reverse expectations sensitivity",
+      "data_path": "reverse_expectations.sensitivity",
+      "source_ids": [
+        "MODEL",
+        "S17",
+        "S18"
+      ]
+    }
+  ],
+  "source_registry": [
+    {
+      "id": "S1",
+      "class": "primary",
+      "title": "FY2026 Q3 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000015/panw-20260430.htm"
+    },
+    {
+      "id": "S2",
+      "class": "primary",
+      "title": "FY2025 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1327567/000132756725000027/panw-20250731.htm"
+    },
+    {
+      "id": "S3",
+      "class": "primary",
+      "title": "Q3 FY2026 Financial Results",
+      "url": "https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-reports-fiscal-third-quarter-2026-financial"
+    },
+    {
+      "id": "S4",
+      "class": "primary",
+      "title": "Q3 FY2026 Earnings Presentation",
+      "url": "https://investors.paloaltonetworks.com/static-files/67ce9226-4fe0-43cd-b83e-42efb035f38c"
+    },
+    {
+      "id": "S5",
+      "class": "primary",
+      "title": "Q3 FY2026 Earnings Transcript",
+      "url": "https://investors.paloaltonetworks.com/static-files/ea18c9ae-cbe6-4b5d-aa7c-65a6b9aeb2e2"
+    },
+    {
+      "id": "S6",
+      "class": "primary",
+      "title": "Q4/FY2026 Earnings Date Notice",
+      "url": "https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-announce-fiscal-fourth-quarter-and-fiscal-7"
+    },
+    {
+      "id": "S7",
+      "class": "primary",
+      "title": "PANW SEC Filings Index",
+      "url": "https://investors.paloaltonetworks.com/financial-information/sec-filings"
+    },
+    {
+      "id": "S8",
+      "class": "primary",
+      "title": "Platformization Transition Program",
+      "url": "https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-enables-customers-break-free-legacy-solutions"
+    },
+    {
+      "id": "S9",
+      "class": "primary",
+      "title": "PANW and IBM Partnership",
+      "url": "https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-and-ibm-jointly-provide-ai-powered-security"
+    },
+    {
+      "id": "S10",
+      "class": "primary",
+      "title": "CyberArk Acquisition Completion",
+      "url": "https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-completes-acquisition-cyberark-secure--ai-era"
+    },
+    {
+      "id": "S11",
+      "class": "primary",
+      "title": "Portkey Acquisition Completion",
+      "url": "https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-completes-acquisition-portkey-secure-ai"
+    },
+    {
+      "id": "S12",
+      "class": "external_primary",
+      "title": "Verizon 2026 DBIR",
+      "url": "https://www.verizon.com/business/resources/reports/dbir/"
+    },
+    {
+      "id": "S13",
+      "class": "external_primary",
+      "title": "NIST AI Agent Identity Concept Paper",
+      "url": "https://csrc.nist.gov/pubs/other/2026/02/05/accelerating-the-adoption-of-software-and-ai-agent/ipd"
+    },
+    {
+      "id": "S14",
+      "class": "external_primary",
+      "title": "CISA Zero Trust Maturity Model",
+      "url": "https://www.cisa.gov/zero-trust-maturity-model"
+    },
+    {
+      "id": "S15",
+      "class": "competitor_primary",
+      "title": "CrowdStrike Q2 FY2027 Results",
+      "url": "https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-reports-second-quarter-fiscal-year-2027-financial"
+    },
+    {
+      "id": "S16",
+      "class": "competitor_primary",
+      "title": "Zscaler Q3 FY2026 Results",
+      "url": "https://ir.zscaler.com/news-releases/news-release-details/zscaler-announces-strong-third-quarter-fiscal-2026-results"
+    },
+    {
+      "id": "S17",
+      "class": "secondary_market",
+      "title": "PANW Consensus Forecast",
+      "url": "https://stockanalysis.com/stocks/panw/forecast/"
+    },
+    {
+      "id": "S18",
+      "class": "secondary_market",
+      "title": "PANW Valuation Ratios",
+      "url": "https://stockanalysis.com/stocks/panw/financials/ratios/"
+    },
+    {
+      "id": "S19",
+      "class": "secondary_market",
+      "title": "PANW Price History",
+      "url": "https://stockanalysis.com/stocks/panw/history/"
+    }
+  ],
+  "gates": {
+    "H1_H2_RESEARCH_CONTRACT_COMPLETENESS": "PASS",
+    "H2_H3_COVERAGE_LINEAGE": "PASS",
+    "LATEST_FILING_CHECK": "PASS",
+    "TOP_LEVEL_CHAPTER_SCHEMA_LOCK": true,
+    "INDUSTRY_TO_COMPANY_TRANSMISSION": "PASS",
+    "KOREAN_READABILITY_GATE": "PASS",
+    "VALUATION_REVERSE_EXPECTATIONS": "PASS",
+    "STANCE_FRAMEWORK": "PASS",
+    "REPORT_DATA_PACK": "EMITTED",
+    "PDF": "USER_OVERRIDDEN_NOT_APPLICABLE"
+  }
+}

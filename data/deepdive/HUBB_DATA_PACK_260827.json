@@ -1,0 +1,853 @@
+{
+  "meta": {
+    "ticker": "HUBB",
+    "company": "Hubbell Incorporated",
+    "T0": "2026-08-27",
+    "price_asof": "2026-08-26 close",
+    "filing_asof": "2026-07-29 (2026 Q2 Form 10-Q)",
+    "consensus_asof": "2026-08-27",
+    "version": "Deep Dive OS v1.7 / Publishing 2026-08-27",
+    "current_price": 472.46,
+    "currency": "USD",
+    "pdf_export": "NOT_APPLICABLE_USER_OVERRIDE"
+  },
+  "financials": {
+    "annual_3y": {
+      "years": [
+        2023,
+        2024,
+        2025
+      ],
+      "revenue_m": [
+        5372.9,
+        5628.5,
+        5844.6
+      ],
+      "utility_revenue_m": [
+        3261.7,
+        3600.7,
+        3672.3
+      ],
+      "electrical_revenue_m": [
+        2111.2,
+        2027.8,
+        2172.3
+      ],
+      "gross_profit_m": [
+        1877.0,
+        1905.6,
+        2064.1
+      ],
+      "gaap_operating_income_m": [
+        1027.4,
+        1093.1,
+        1208.8
+      ],
+      "gaap_operating_margin_pct": [
+        19.1,
+        19.4,
+        20.7
+      ],
+      "net_income_attributable_m": [
+        751.4,
+        779.0,
+        887.1
+      ],
+      "gaap_diluted_eps": [
+        13.89,
+        14.39,
+        16.54
+      ],
+      "free_cash_flow_m": [
+        715.1,
+        810.8,
+        874.7
+      ],
+      "capex_m": [
+        165.7,
+        180.4,
+        155.1
+      ]
+    },
+    "quarterly_8q": {
+      "quarters": [
+        "Q3'24",
+        "Q4'24",
+        "Q1'25",
+        "Q2'25",
+        "Q3'25",
+        "Q4'25",
+        "Q1'26",
+        "Q2'26"
+      ],
+      "sales_m": [
+        1442.6,
+        1334.0,
+        1365.0,
+        1484.3,
+        1502.0,
+        1493.0,
+        1517.0,
+        1711.8
+      ],
+      "yoy_sales_growth_pct": [
+        5.0,
+        -1.0,
+        -2.0,
+        2.0,
+        4.0,
+        12.0,
+        11.0,
+        15.0
+      ],
+      "organic_growth_pct": [
+        -1.0,
+        -3.0,
+        -1.0,
+        2.0,
+        3.0,
+        9.0,
+        8.2,
+        10.0
+      ],
+      "adjusted_operating_margin_pct": [
+        23.2,
+        21.8,
+        19.3,
+        24.4,
+        23.9,
+        23.4,
+        19.8,
+        23.9
+      ],
+      "adjusted_eps": [
+        4.49,
+        4.1,
+        3.5,
+        4.93,
+        5.17,
+        4.73,
+        3.93,
+        5.52
+      ],
+      "free_cash_flow_m": [
+        189.0,
+        364.4,
+        11.4,
+        220.7,
+        253.8,
+        388.8,
+        46.0,
+        212.8
+      ]
+    },
+    "q2_2026_segments": {
+      "utility": {
+        "sales_m": 1025.8,
+        "yoy_pct": 9.7,
+        "organic_pct": 5.5,
+        "adjusted_margin_pct": 25.6,
+        "prior_adjusted_margin_pct": 25.5
+      },
+      "electrical": {
+        "sales_m": 686.0,
+        "yoy_pct": 25.1,
+        "organic_pct": 18.3,
+        "adjusted_margin_pct": 21.2,
+        "prior_adjusted_margin_pct": 22.5
+      }
+    },
+    "balance_sheet_q2_2026": {
+      "cash_m": 378.6,
+      "short_term_debt_m": 568.7,
+      "long_term_debt_m": 4803.9,
+      "approx_net_debt_m": 4994.0,
+      "goodwill_m": 4354.1,
+      "intangibles_m": 3189.9,
+      "goodwill_plus_intangibles_m": 7544.0,
+      "inventory_m": 1267.5
+    },
+    "ceilings": [
+      "Q1'25/Q3'25/Q4'25/Q1'26 quarterly sales shown rounded where company release presentation was rounded in the research ledger.",
+      "Company-wide capacity utilization and a normalized lead-time series are not publicly disclosed.",
+      "NSI post-close standalone revenue, EBITDA, FCF and synergy realization have not yet been separately disclosed."
+    ]
+  },
+  "management": {
+    "ceo": "Gerben Bakker",
+    "ceo_since": "2020-10",
+    "2020_to_2025_outcome": {
+      "revenue_cagr_pct": 9.68,
+      "adjusted_eps_cagr_pct": 19.16,
+      "fcf_cagr_pct": 9.33,
+      "adjusted_operating_margin_expansion_bp_approx": 820
+    },
+    "guidance_record": {
+      "fy2025_initial_adj_eps": [
+        17.35,
+        17.85
+      ],
+      "fy2025_actual_adj_eps": 18.21,
+      "fy2026_initial_adj_eps": [
+        19.15,
+        19.85
+      ],
+      "fy2026_q2_adj_eps": [
+        20.25,
+        20.55
+      ],
+      "fy2026_initial_organic_growth_pct": [
+        5,
+        7
+      ],
+      "fy2026_q2_organic_growth_pct": [
+        9,
+        11
+      ]
+    }
+  },
+  "acquisitions": [
+    {
+      "name": "Systems Control",
+      "close_year": 2023,
+      "purchase_price_m": 1100,
+      "strategic_job": "substation control / relay panels / control buildings",
+      "valuation_note": "~12x projected 2024 EBITDA at announcement"
+    },
+    {
+      "name": "DMC",
+      "close_year": 2025,
+      "purchase_price_m": 829,
+      "strategic_job": "substation / transmission connectors & tooling",
+      "valuation_note": "connector depth in load growth / interconnection"
+    },
+    {
+      "name": "Nicor",
+      "close_year": 2025,
+      "purchase_price_m": 56,
+      "strategic_job": "AMI water endpoint lids / covers",
+      "valuation_note": "small adjacency"
+    },
+    {
+      "name": "NSI Industries",
+      "close_year": 2026,
+      "purchase_price_m": 3000,
+      "strategic_job": "electrical fittings / connectors / timers",
+      "valuation_note": "~15.5x anticipated 2026 EBITDA at announcement",
+      "intangibles_m": 1856,
+      "goodwill_m": 1288.7
+    }
+  ],
+  "kpis": [
+    {
+      "name": "Total organic sales growth",
+      "history": [
+        {
+          "period": "Q4'25",
+          "value_pct": 9.0
+        },
+        {
+          "period": "Q1'26",
+          "value_pct": 8.2
+        },
+        {
+          "period": "Q2'26",
+          "value_pct": 10.0
+        }
+      ],
+      "current": 10.0,
+      "thresholds": {
+        "green": ">=6%",
+        "yellow": "2% to <6%",
+        "red": "<2% for two quarters"
+      }
+    },
+    {
+      "name": "Utility organic growth",
+      "history": [
+        {
+          "period": "Q2'26",
+          "value_pct": 5.5
+        }
+      ],
+      "current": 5.5,
+      "thresholds": {
+        "green": ">=5% with Grid Infrastructure >=8%",
+        "yellow": "2% to <5%",
+        "red": "<2% / project slowdown"
+      }
+    },
+    {
+      "name": "Electrical organic growth",
+      "history": [
+        {
+          "period": "Q4'25",
+          "value_pct": 13.0
+        },
+        {
+          "period": "Q2'26",
+          "value_pct": 18.3
+        }
+      ],
+      "current": 18.3,
+      "thresholds": {
+        "green": ">=8%",
+        "yellow": "4% to <8%",
+        "red": "<4%"
+      }
+    },
+    {
+      "name": "Adjusted operating margin",
+      "history": [
+        {
+          "period": "FY2025",
+          "value_pct": 22.7
+        },
+        {
+          "period": "Q2'26",
+          "value_pct": 23.9
+        }
+      ],
+      "current": 23.9,
+      "thresholds": {
+        "green": ">=23%",
+        "yellow": "22% to <23%",
+        "red": "<22% sustained"
+      }
+    },
+    {
+      "name": "Electrical adjusted margin",
+      "history": [
+        {
+          "period": "Q2'25",
+          "value_pct": 22.5
+        },
+        {
+          "period": "Q2'26",
+          "value_pct": 21.2
+        }
+      ],
+      "current": 21.2,
+      "thresholds": {
+        "green": ">=21.5% and rising post-NSI",
+        "yellow": "20.5% to <21.5%",
+        "red": "<20.5% or integration dilution persists"
+      }
+    },
+    {
+      "name": "FCF conversion vs adjusted net income",
+      "history": [
+        {
+          "period": "FY2026 guide",
+          "value_pct": 90
+        }
+      ],
+      "current": 90,
+      "thresholds": {
+        "green": ">=90%",
+        "yellow": "80% to <90%",
+        "red": "<80%"
+      }
+    },
+    {
+      "name": "Approx. net debt",
+      "history": [
+        {
+          "period": "FY2025",
+          "value_m": 1730
+        },
+        {
+          "period": "Q2'26",
+          "value_m": 4994
+        }
+      ],
+      "current": 4994,
+      "thresholds": {
+        "green": "<=$4.0B by FY2027",
+        "yellow": "$4.0B-$4.5B by FY2027",
+        "red": ">$4.5B at FY2027 or another transformational M&A before deleveraging"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.2,
+      "revenue_path": [
+        6.85,
+        7.25,
+        7.58,
+        7.85,
+        8.1
+      ],
+      "margin_path": [
+        22.2,
+        22.1,
+        21.8,
+        21.5,
+        21.5
+      ],
+      "fcf": [
+        0.96,
+        1.0,
+        1.04,
+        1.07,
+        1.1
+      ],
+      "diluted_shares": 52.8,
+      "per_share_value": 257,
+      "future_target_2029": 365,
+      "assumptions": "Grid growth normalizes, data-center mix slows, tariff/material pressure persists, NSI synergy is weak; no balance-sheet crisis."
+    },
+    {
+      "name": "Base",
+      "probability": 0.55,
+      "revenue_path": [
+        6.87,
+        7.56,
+        8.1,
+        8.63,
+        9.18
+      ],
+      "margin_path": [
+        22.4,
+        22.8,
+        23.1,
+        23.3,
+        23.5
+      ],
+      "fcf": [
+        0.98,
+        1.11,
+        1.25,
+        1.39,
+        1.54
+      ],
+      "diluted_shares": 52.8,
+      "per_share_value": 435,
+      "future_target_2029": 579,
+      "assumptions": "Mid/high-single-digit structural demand continues after 2026, NSI integration is competent, price/productivity recovers cost, and no new transformational M&A occurs before material deleveraging."
+    },
+    {
+      "name": "Bull",
+      "probability": 0.25,
+      "revenue_path": [
+        6.9,
+        7.75,
+        8.55,
+        9.38,
+        10.25
+      ],
+      "margin_path": [
+        22.5,
+        23.2,
+        23.8,
+        24.2,
+        24.5
+      ],
+      "fcf": [
+        0.99,
+        1.18,
+        1.39,
+        1.62,
+        1.85
+      ],
+      "diluted_shares": 52.8,
+      "per_share_value": 616,
+      "future_target_2029": 767,
+      "assumptions": "Grid/data-center demand stays well above trend, Electrical mix and NSI synergies expand margin, and deleveraging lowers financing drag."
+    }
+  ],
+  "valuation": {
+    "mode": "Mode C — Mature Compounder",
+    "core": 435,
+    "execution": 579,
+    "ecosystem": null,
+    "drag": -27,
+    "expected_value": 444.65,
+    "expected_irr": 0.0767,
+    "current_price": 472.46,
+    "hurdle_rate": 0.1,
+    "base_fair_value_range": [
+      440,
+      460
+    ],
+    "forward_adjusted_pe_2026": 23.1,
+    "forward_adjusted_pe_2027_approx": 20.9,
+    "guided_2026_fcf_m_approx": 973,
+    "fcf_yield_2026_approx_pct": 3.9,
+    "market_cap_b_approx": 24.95,
+    "enterprise_value_b_approx": 29.9,
+    "ev_to_consensus_2026_gaap_ebit_approx": 20.9,
+    "historical_ttm_pe_context": "Current TTM P/E ~28x; recent 2023-Q2'26 quarterly sample centered around high-20s, with Q2'26 near 31x.",
+    "future_probability_weighted_target_2029": 583.2,
+    "assumed_cumulative_dividends_to_2029": 21.0,
+    "upside_downside_ratio_future_targets": 2.75
+  },
+  "reverse_expectations": {
+    "statement": "At $472.46, without multiple expansion, a 10–12% 4-year return requires materially faster FCF compounding than the current 2026 cash-yield suggests.",
+    "terminal_fcf_multiple": 22,
+    "shares_m": 52.8,
+    "2026_fcf_base_m": 973,
+    "required_2030_share_price_for_10pct_return": 691.73,
+    "required_2030_fcf_m_for_10pct_return": 1660.15,
+    "required_2026_2030_fcf_cagr_pct_for_10pct_return": 14.29,
+    "required_2030_share_price_for_12pct_return": 743.42,
+    "required_2030_fcf_m_for_12pct_return": 1784.22,
+    "required_2026_2030_fcf_cagr_pct_for_12pct_return": 16.37,
+    "operating_translation": "With 2030 revenue around $9.2B, required FCF margin is roughly 18% for a 10% hurdle before crediting dividends; alternatively revenue must be closer to ~$9.8B at a 17% FCF margin.",
+    "main_dependency": "NSI cash return + margin recovery + deleveraging, not revenue growth alone."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_b_approx": 6.87,
+      "adjusted_eps_approx": 20.45,
+      "gaap_ebit_b_approx": 1.428
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_b_approx": 7.55,
+      "adjusted_eps_range": [
+        22.36,
+        22.88
+      ],
+      "gaap_ebit_b_approx": 1.615
+    },
+    "fy3": {
+      "year": 2028,
+      "revenue_b_approx": 8.07,
+      "gaap_ebit_b_approx": 1.798
+    },
+    "revision_trend": "Positive in 2026: company organic-growth midpoint moved from ~6% initially to ~10% at Q2; adjusted EPS midpoint moved from ~$19.50 to ~$20.40. NSI contributes materially to total-sales revision.",
+    "analyst_target_avg_approx": 564.82,
+    "analyst_target_range_approx": [
+      502,
+      630
+    ],
+    "short_interest_2026_07_31_shares_m_approx": 2.72,
+    "short_interest_float_pct_approx": 5.2,
+    "ceiling": "Consensus/targets/short interest are secondary-source snapshots; a standardized real-time primary positioning aggregate is unavailable."
+  },
+  "stance": {
+    "zone": "회피/축소 검토 — 신규 매수 비선호; 기존 보유는 KPI 조건부",
+    "price_bands": {
+      ">470": "신규 매수 비선호 / 기대수익률이 10% hurdle 미달",
+      "430-470": "관망 / 실적 확인",
+      "400-430": "조건부 관심 / 기대수익률 약 11–13% 범위",
+      "<390": "적극 관심 후보 — 단, thesis와 NSI deleveraging이 훼손되지 않았을 때"
+    },
+    "horizon": "3–4 years",
+    "base_fair_value_mid": 450,
+    "attractive_entry_trigger": 430,
+    "high_conviction_trigger": 390,
+    "time_to_value": "2027–2030; NSI integration and deleveraging must convert into cash before terminal valuation can be justified."
+  },
+  "catalysts": [
+    {
+      "when": "Late Oct–early Nov 2026 (estimated)",
+      "event": "Q3 2026 earnings",
+      "sensitivity": "Utility/Electrical organic growth, Electrical margin, NSI integration and working capital."
+    },
+    {
+      "when": "By late Dec 2026 (~120 days from Aug 26 EO)",
+      "event": "DOE bulk-power-system rulemaking milestone",
+      "sensitivity": "Could improve qualification/domestic-sourcing optionality for relevant protection/control/metering equipment; not in base valuation."
+    },
+    {
+      "when": "Feb 2027 FY2026 results",
+      "event": "Full-year FCF and year-end debt",
+      "sensitivity": "Tests 90% FCF conversion and whether NSI financing starts to delever."
+    },
+    {
+      "when": "2027",
+      "event": "$300M senior note maturity / refinancing-deleveraging decision",
+      "sensitivity": "Capital allocation priority and financing cost."
+    }
+  ],
+  "falsification_conditions": [
+    "Total organic growth falls below 2% for two quarters without a clear temporary comparison effect.",
+    "Electrical adjusted margin remains below 20.5% after NSI integration despite high-single/double-digit growth.",
+    "FY2026/FY2027 FCF conversion falls below 80% of adjusted net income because working capital or integration costs persist.",
+    "Net debt remains above $4.5B at FY2027 or another transformational acquisition is announced before meaningful deleveraging.",
+    "Utility/Grid Infrastructure growth decouples from industry capex for multiple quarters, suggesting share/content loss rather than timing.",
+    "Data-center growth remains strong but fails to improve Electrical profitability, undermining the assumed mix advantage."
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "obligation": "history / portfolio reshaping",
+      "status": "COMPLETE",
+      "h3_locator": "1.1; 2.2; 3.1"
+    },
+    {
+      "rc_id": "RC-002",
+      "obligation": "grid value chain / B1–B5",
+      "status": "COMPLETE",
+      "h3_locator": "1.2–1.5"
+    },
+    {
+      "rc_id": "RC-003",
+      "obligation": "data-center power architecture",
+      "status": "COMPLETE",
+      "h3_locator": "1.3; 3.2"
+    },
+    {
+      "rc_id": "RC-004",
+      "obligation": "leading indicators / cycle",
+      "status": "COMPLETE",
+      "h3_locator": "1.1; 1.4; 4.2"
+    },
+    {
+      "rc_id": "RC-005",
+      "obligation": "capacity / sourcing / tariffs",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.5; Appendix A7"
+    },
+    {
+      "rc_id": "RC-006",
+      "obligation": "CEO / Promise→Delivery",
+      "status": "COMPLETE",
+      "h3_locator": "2.1–2.3"
+    },
+    {
+      "rc_id": "RC-007",
+      "obligation": "governance / compensation / allocation",
+      "status": "COMPLETE",
+      "h3_locator": "2.4–2.5"
+    },
+    {
+      "rc_id": "RC-008",
+      "obligation": "segment model / PVM",
+      "status": "COMPLETE",
+      "h3_locator": "3.1; 4.2–4.3"
+    },
+    {
+      "rc_id": "RC-009",
+      "obligation": "quantitative product architecture",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.2; Appendix A7"
+    },
+    {
+      "rc_id": "RC-010",
+      "obligation": "customer / channel / adoption",
+      "status": "COMPLETE",
+      "h3_locator": "1.4; 3.3"
+    },
+    {
+      "rc_id": "RC-011",
+      "obligation": "competition by customer job",
+      "status": "COMPLETE",
+      "h3_locator": "3.4"
+    },
+    {
+      "rc_id": "RC-012",
+      "obligation": "3Y + 8Q financial factory",
+      "status": "COMPLETE",
+      "h3_locator": "4.1–4.2; Appendix A1–A2"
+    },
+    {
+      "rc_id": "RC-013",
+      "obligation": "earnings quality / non-GAAP",
+      "status": "COMPLETE",
+      "h3_locator": "4.4"
+    },
+    {
+      "rc_id": "RC-014",
+      "obligation": "orders / backlog / working capital",
+      "status": "COMPLETE",
+      "h3_locator": "1.4; 4.3"
+    },
+    {
+      "rc_id": "RC-015",
+      "obligation": "Systems Control / DMC / Nicor / NSI",
+      "status": "COMPLETE",
+      "h3_locator": "2.5; 3.6; Appendix A4"
+    },
+    {
+      "rc_id": "RC-016",
+      "obligation": "debt / liquidity / repurchase / dilution",
+      "status": "COMPLETE",
+      "h3_locator": "4.5; 5.4"
+    },
+    {
+      "rc_id": "RC-017",
+      "obligation": "causal KPIs / scenario bridge",
+      "status": "COMPLETE",
+      "h3_locator": "5.2; 6.3"
+    },
+    {
+      "rc_id": "RC-018",
+      "obligation": "Module M consensus / positioning",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "5.1; Appendix A6–A7"
+    },
+    {
+      "rc_id": "RC-019",
+      "obligation": "Mode C valuation / reverse",
+      "status": "COMPLETE",
+      "h3_locator": "5.1–5.5; Appendix A5"
+    },
+    {
+      "rc_id": "RC-020",
+      "obligation": "catalysts / tripwires / falsification",
+      "status": "COMPLETE",
+      "h3_locator": "6.2–6.4"
+    }
+  ],
+  "as_of_registry": [
+    {
+      "item": "Stock price",
+      "as_of": "2026-08-26 close",
+      "value": "$472.46",
+      "source_type": "market secondary"
+    },
+    {
+      "item": "Latest financial filing",
+      "as_of": "2026-07-29",
+      "value": "Q2 2026 Form 10-Q",
+      "source_type": "SEC primary"
+    },
+    {
+      "item": "Latest earnings release/call",
+      "as_of": "2026-07-28",
+      "value": "Q2 2026",
+      "source_type": "company primary + secondary transcript"
+    },
+    {
+      "item": "Consensus snapshot",
+      "as_of": "2026-08-27",
+      "value": "FY26–28 estimates / targets / positioning",
+      "source_type": "secondary"
+    },
+    {
+      "item": "Bulk-power-system policy",
+      "as_of": "2026-08-26",
+      "value": "Executive Order",
+      "source_type": "U.S. government primary"
+    }
+  ],
+  "gates": {
+    "RC_UNRESOLVED": 0,
+    "H1_H2_RESEARCH_CONTRACT_COMPLETENESS": "PASS",
+    "H2_H3_COVERAGE_LINEAGE": "PASS",
+    "LATEST_FILING_CHECK": "PASS — no later Hubbell financial filing found after Q2 2026 10-Q filed 2026-07-29 as of publishing check",
+    "RC_H3_COVERAGE_RATE": "100%",
+    "INDUSTRY_COMPANY_TRANSMISSION": "PASS / STRONG",
+    "KOREAN_PROSE_GATE": "PASS",
+    "ACCOUNTING_QUALITY_SCREEN": "PASS_WITH_MONITORING",
+    "REPORT_DATA_PACK": "EMITTED",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "PDF": "NOT_APPLICABLE_USER_OVERRIDE"
+  },
+  "visual_lineage": [
+    {
+      "visual_id": "V1",
+      "title": "3Y Revenue / FCF / Operating Margin",
+      "source_fields": [
+        "financials.annual_3y.revenue_m",
+        "financials.annual_3y.free_cash_flow_m",
+        "financials.annual_3y.gaap_operating_margin_pct"
+      ]
+    },
+    {
+      "visual_id": "V2",
+      "title": "8Q Organic Growth / Adjusted Margin",
+      "source_fields": [
+        "financials.quarterly_8q.organic_growth_pct",
+        "financials.quarterly_8q.adjusted_operating_margin_pct"
+      ]
+    },
+    {
+      "visual_id": "V3",
+      "title": "Net Debt Step-up after NSI",
+      "source_fields": [
+        "financials.balance_sheet_q2_2026.approx_net_debt_m",
+        "kpis[6].history"
+      ]
+    },
+    {
+      "visual_id": "V4",
+      "title": "Scenario Valuation Range",
+      "source_fields": [
+        "scenarios[*].future_target_2029",
+        "valuation.current_price",
+        "valuation.future_probability_weighted_target_2029"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "issuer": "Hubbell Incorporated",
+      "document": "2025 Form 10-K",
+      "date": "2026-02-12",
+      "url": "https://www.sec.gov/Archives/edgar/data/48898/000162828026007500/hubb-20251231.htm",
+      "tier": "primary"
+    },
+    {
+      "id": "S2",
+      "issuer": "Hubbell Incorporated",
+      "document": "Q2 2026 Form 10-Q",
+      "date": "2026-07-29",
+      "url": "https://www.sec.gov/Archives/edgar/data/48898/000162828026050405/hubb-20260630.htm",
+      "tier": "primary"
+    },
+    {
+      "id": "S3",
+      "issuer": "Hubbell Incorporated",
+      "document": "Q2 2026 Form 8-K / earnings release",
+      "date": "2026-07-28",
+      "url": "https://www.sec.gov/Archives/edgar/data/48898/000162828026049934/hubb-20260728.htm",
+      "tier": "primary"
+    },
+    {
+      "id": "S4",
+      "issuer": "Hubbell Incorporated",
+      "document": "NSI closing Form 8-K",
+      "date": "2026-06-09",
+      "url": "https://www.sec.gov/Archives/edgar/data/48898/000119312526263819/d143835d8k.htm",
+      "tier": "primary"
+    },
+    {
+      "id": "S5",
+      "issuer": "Hubbell Incorporated",
+      "document": "NSI agreement Form 8-K",
+      "date": "2026-05-04",
+      "url": "https://www.sec.gov/Archives/edgar/data/48898/000119312526204099/0001193125-26-204099-index.htm",
+      "tier": "primary"
+    },
+    {
+      "id": "S6",
+      "issuer": "NERC",
+      "document": "2025 Long-Term Reliability Assessment",
+      "date": "2025",
+      "url": "https://www.nerc.com/globalassets/our-work/assessments/nerc_ltra_2025.pdf",
+      "tier": "primary-industry"
+    },
+    {
+      "id": "S7",
+      "issuer": "White House",
+      "document": "Executive Order — Secure the United States Bulk-Power System",
+      "date": "2026-08-26",
+      "url": "https://www.whitehouse.gov/presidential-actions/2026/08/declaring-a-national-emergency-to-secure-the-united-states-bulk-power-system/",
+      "tier": "primary-government"
+    },
+    {
+      "id": "S8",
+      "issuer": "Earnings Labs",
+      "document": "HUBB Q2 2026 earnings call transcript",
+      "date": "2026-07-28",
+      "url": "https://www.earningslabs.com/stock/HUBB/2026/Q2",
+      "tier": "secondary-transcript"
+    },
+    {
+      "id": "S9",
+      "issuer": "Berkeley Lab",
+      "document": "United States Data Center Energy Usage Report: 2025 Update",
+      "date": "2026-06",
+      "url": "https://eta-publications.lbl.gov/publications/united-states-data-center-energy-2025",
+      "tier": "primary-government-lab"
+    }
+  ]
+}

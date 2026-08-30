@@ -1,0 +1,1042 @@
+{
+  "meta": {
+    "ticker": "NTSK",
+    "company": "Netskope, Inc.",
+    "T0": "2026-08-26 US close",
+    "price_asof": "2026-08-26",
+    "current_price_usd": 13.6,
+    "filing_asof": "2026-06-03 Q1 FY27 10-Q, period ended 2026-04-30",
+    "latest_filing_check_asof": "2026-08-29 Asia/Seoul",
+    "latest_sec_filing": "2026-08-14 Schedule 13G/A (beneficial ownership amendment)",
+    "latest_sec_filing_material_thesis_change": false,
+    "consensus_asof": "2026-08-21",
+    "publishing_date": "2026-08-29 Asia/Seoul",
+    "version": "DDOS v1.7 final data pack",
+    "currency": "USD",
+    "units_financials": "USD millions unless noted",
+    "next_earnings": "2026-09-02 after US market close",
+    "pdf_generated": false
+  },
+  "financials": {
+    "annual_3y": {
+      "FY24": {
+        "revenue": 406.883,
+        "gross_profit": 243.25,
+        "gross_margin_pct": 59.8,
+        "sales_marketing": 263.096,
+        "rd": 224.496,
+        "ga": 68.456,
+        "ocf": -167.166,
+        "fcf": -208.318,
+        "fcf_margin_pct": -51.0,
+        "sbc": 60.991
+      },
+      "FY25": {
+        "revenue": 538.268,
+        "gross_profit": 347.899,
+        "gross_margin_pct": 64.6,
+        "sales_marketing": 280.828,
+        "rd": 254.189,
+        "ga": 68.623,
+        "ocf": -110.678,
+        "fcf": -151.1,
+        "fcf_margin_pct": -28.0,
+        "sbc": 50.834
+      },
+      "FY26": {
+        "revenue": 708.997,
+        "gross_profit": 482.669,
+        "gross_margin_pct": 68.1,
+        "sales_marketing": 393.742,
+        "rd": 509.029,
+        "ga": 232.477,
+        "ocf": 38.073,
+        "fcf": 12.373,
+        "fcf_margin_pct": 2.0,
+        "sbc": 516.191
+      }
+    },
+    "quarterly_8q": [
+      {
+        "quarter": "FY25 Q2",
+        "revenue": 130.253,
+        "gross_profit": 83.028,
+        "gross_margin_pct": 63.7
+      },
+      {
+        "quarter": "FY25 Q3",
+        "revenue": 138.532,
+        "gross_profit": 91.767,
+        "gross_margin_pct": 66.2
+      },
+      {
+        "quarter": "FY25 Q4",
+        "revenue": 148.486,
+        "gross_profit": 99.326,
+        "gross_margin_pct": 66.9
+      },
+      {
+        "quarter": "FY26 Q1",
+        "revenue": 157.736,
+        "gross_profit": 109.513,
+        "gross_margin_pct": 69.4
+      },
+      {
+        "quarter": "FY26 Q2",
+        "revenue": 170.758,
+        "gross_profit": 123.244,
+        "gross_margin_pct": 72.2
+      },
+      {
+        "quarter": "FY26 Q3",
+        "revenue": 184.173,
+        "gross_profit": 106.643,
+        "gross_margin_pct": 57.9,
+        "note": "IPO SBC distortion; non-GAAP GM ~75%"
+      },
+      {
+        "quarter": "FY26 Q4",
+        "revenue": 196.33,
+        "gross_profit": 143.269,
+        "gross_margin_pct": 73.0
+      },
+      {
+        "quarter": "FY27 Q1",
+        "revenue": 201.592,
+        "gross_profit": 148.255,
+        "gross_margin_pct": 73.5
+      }
+    ],
+    "ceilings": [
+      "FY26 Q3 GAAP GM distorted by IPO SBC; non-GAAP ~75%",
+      "Public trading history <1 year limits valuation-band history"
+    ]
+  },
+  "kpis": [
+    {
+      "name": "ARR growth",
+      "history": [
+        {
+          "period": "FY27 Q1",
+          "value": 29.0
+        }
+      ],
+      "current": 29.0,
+      "unit": "% YoY",
+      "thresholds": {
+        "green": ">=25%",
+        "yellow": "20–25%",
+        "red": "<20%"
+      }
+    },
+    {
+      "name": "NRR",
+      "history": [
+        {
+          "period": "Jan-24",
+          "value": 115
+        },
+        {
+          "period": "Jan-25",
+          "value": 113
+        },
+        {
+          "period": "Jul-24",
+          "value": 113
+        },
+        {
+          "period": "Jul-25",
+          "value": 118
+        },
+        {
+          "period": "Jan-26",
+          "value": 116
+        },
+        {
+          "period": "Apr-26",
+          "value": 113
+        }
+      ],
+      "current": 113,
+      "unit": "%",
+      "thresholds": {
+        "green": ">=115%",
+        "yellow": "110–115%",
+        "red": "<110%"
+      }
+    },
+    {
+      "name": "$100k+ ARR customers",
+      "history": [
+        {
+          "period": "Jan-26",
+          "value": 1531,
+          "growth_yoy_pct": 22,
+          "arr_share_pct": 86
+        }
+      ],
+      "current": 1531,
+      "unit": "customers",
+      "thresholds": {
+        "green": "growth >=20%",
+        "yellow": "10–20%",
+        "red": "<10% or prolonged non-disclosure"
+      }
+    },
+    {
+      "name": "non-GAAP gross margin",
+      "history": [
+        {
+          "period": "FY27 guide",
+          "value": 77.0
+        }
+      ],
+      "current": 77.0,
+      "unit": "%",
+      "thresholds": {
+        "green": ">=77%",
+        "yellow": "75–77%",
+        "red": "<75%"
+      }
+    },
+    {
+      "name": "FCF margin",
+      "history": [
+        {
+          "period": "FY26",
+          "value": 2.0
+        },
+        {
+          "period": "FY27 guide low",
+          "value": 2.0
+        },
+        {
+          "period": "FY27 guide high",
+          "value": 4.0
+        }
+      ],
+      "current": {
+        "guide_low": 2.0,
+        "guide_high": 4.0
+      },
+      "unit": "%",
+      "thresholds": {
+        "green": "guide upper end / raise",
+        "yellow": "0–2% or volatility",
+        "red": "annual guide withdrawn / negative"
+      }
+    },
+    {
+      "name": "diluted shares",
+      "history": [
+        {
+          "period": "FY27 guide",
+          "value": 415.0
+        }
+      ],
+      "current": 415.0,
+      "unit": "m shares",
+      "thresholds": {
+        "green": "YoY <3% growth",
+        "yellow": "3–5%",
+        "red": ">5% sustained"
+      }
+    },
+    {
+      "name": "NewEdge economics",
+      "history": [
+        {
+          "period": "FY27 Q1 GAAP GM",
+          "value": 73.5
+        }
+      ],
+      "current": 73.5,
+      "unit": "% GAAP GM",
+      "thresholds": {
+        "green": "GM rises + footprint growth slows",
+        "yellow": "flat",
+        "red": "GM declines + cost rises"
+      }
+    },
+    {
+      "name": "CFO succession",
+      "history": [
+        {
+          "period": "2026-08-29",
+          "value": "search ongoing"
+        }
+      ],
+      "current": "search ongoing",
+      "thresholds": {
+        "green": "credible successor + smooth handoff",
+        "yellow": "prolonged vacancy",
+        "red": "controls/guidance problems alongside transition"
+      }
+    }
+  ],
+  "customer_contract": {
+    "typical_subscription_term": "1–3 years",
+    "rpo_apr_2026_b": 1.2,
+    "rpo_next_12m_pct": 54,
+    "rpo_months_13_36_pct": 42,
+    "fy25_revenue_increase_new_pct": 32,
+    "fy25_revenue_increase_expansion_pct": 68,
+    "six_months_jul25_new_pct": 46,
+    "six_months_jul25_expansion_pct": 54
+  },
+  "capital_structure": {
+    "cash_and_marketable_securities_m": 1103.0,
+    "common_shares_m": 403.6,
+    "fy27_ng_eps_denominator_m": 415.0,
+    "convert_fair_value_m": 713.3,
+    "convert_current_shares_m": 22.33,
+    "convert_maturity_potential_shares_m": 24.63,
+    "notes": [
+      {
+        "maturity": "2028-12-15",
+        "principal_m": 401,
+        "pik_toggle_pct": 3.75,
+        "conversion_price_usd": 23.75,
+        "minimum_return_pct": 14.0,
+        "maximum_maturity_amount_m": 913.2
+      },
+      {
+        "maturity": "2029-08-01",
+        "principal_m": 75,
+        "pik_toggle_pct": 3.0,
+        "conversion_price_usd": 24.7,
+        "minimum_return_pct": 13.5,
+        "maximum_maturity_amount_m": 145.1
+      }
+    ]
+  },
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.25,
+      "revenue_path": [
+        875,
+        995,
+        1110
+      ],
+      "margin_path": [
+        null,
+        null,
+        8.0
+      ],
+      "fcf": [
+        null,
+        null,
+        88.8
+      ],
+      "diluted_shares": 445.0,
+      "terminal_ev_revenue": 4.0,
+      "net_cash_debt": -300.0,
+      "per_share_value": 9.303
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "revenue_path": [
+        881,
+        1070,
+        1286
+      ],
+      "margin_path": [
+        3.0,
+        9.0,
+        14.0
+      ],
+      "fcf": [
+        26.43,
+        96.3,
+        180.04
+      ],
+      "diluted_shares": 455.0,
+      "terminal_ev_revenue": 6.0,
+      "net_cash_debt": 250.0,
+      "per_share_value": 17.508
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.25,
+      "revenue_path": [
+        885,
+        1110,
+        1390
+      ],
+      "margin_path": [
+        null,
+        null,
+        19.0
+      ],
+      "fcf": [
+        null,
+        null,
+        264.1
+      ],
+      "diluted_shares": 470.0,
+      "terminal_ev_revenue": 7.5,
+      "net_cash_debt": 450.0,
+      "per_share_value": 23.138
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.1,
+      "revenue_path": [
+        890,
+        1140,
+        1480
+      ],
+      "margin_path": [
+        null,
+        null,
+        22.0
+      ],
+      "fcf": [
+        null,
+        null,
+        325.6
+      ],
+      "diluted_shares": 505.0,
+      "terminal_ev_revenue": 9.0,
+      "net_cash_debt": 1200.0,
+      "per_share_value": 28.752
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B — Hybrid",
+    "core_per_share": 11.1,
+    "execution": null,
+    "ecosystem": 0.0,
+    "drag": "embedded through diluted shares and convert treatment",
+    "expected_value": 17.989,
+    "expected_irr": 0.1218,
+    "expected_irr_pct": 12.18,
+    "current_price": 13.6,
+    "horizon_years": 2.434,
+    "hurdle_12_5_present_value": 13.5,
+    "price_for_15pct_irr": 12.8,
+    "price_for_20pct_irr": 11.54,
+    "current_ev_b": 5.1,
+    "fy27_consensus_ev_revenue": 5.8,
+    "ev_arr": 6.0,
+    "base_fy29_value": 17.508,
+    "bear_fy29_value": 9.303,
+    "bull_execution_fy29_value": 23.138,
+    "bull_ecosystem_fy29_value": 28.752
+  },
+  "reverse_expectations": {
+    "hurdle_rate_pct": 12.5,
+    "equity_denominator_m": 415.0,
+    "required_fy29_equity_value_b": 7.52,
+    "assumed_fy29_net_cash_b": 0.25,
+    "terminal_multiple_cases": [
+      {
+        "ev_revenue": 5.5,
+        "required_fy29_revenue_b": 1.32,
+        "required_fy27_fy29_cagr_pct": 22.5
+      },
+      {
+        "ev_revenue": 6.0,
+        "required_fy29_revenue_b": 1.21,
+        "required_fy27_fy29_cagr_pct": 17.2
+      },
+      {
+        "ev_revenue": 6.5,
+        "required_fy29_revenue_b": 1.12,
+        "required_fy27_fy29_cagr_pct": 12.6
+      }
+    ]
+  },
+  "consensus": {
+    "fy1": {
+      "period": "FY27",
+      "revenue_m": 881.2
+    },
+    "fy2": {
+      "period": "FY28",
+      "revenue_m": 1070
+    },
+    "fy3": {
+      "period": "FY29",
+      "revenue_m": 1286
+    },
+    "average_price_target_usd": 17.25,
+    "analyst_count": 18,
+    "revision_trend": "Base revenue path is essentially aligned with consensus; differentiation is cash conversion and dilution."
+  },
+  "stance": {
+    "zone": "조건부 관심 / 약세 시 축적",
+    "price_bands": {
+      "active_interest_20pct_plus": "<=11.54",
+      "attractive_15_20pct": "11.54–12.80",
+      "conditional_10_15pct": "12.80–14.26",
+      "wait_below_10pct": "14.26–17.50",
+      "base_fully_priced": ">=17.50"
+    },
+    "horizon": "FY29 / 2029-01-31",
+    "current_price_band": "conditional_10_15pct"
+  },
+  "catalysts": [
+    {
+      "when": "2026-09-02",
+      "event": "FY27 Q2 results",
+      "sensitivity": "H",
+      "bull": "revenue guide beat/raise, NRR stable, GM approaches 77%, FCF guide maintained",
+      "bear": "NRR falls further, FCF guide cut, CFO succession uncertainty"
+    },
+    {
+      "when": "2026 Q4",
+      "event": "Potential CFO successor update",
+      "sensitivity": "M",
+      "bull": "strong public-company finance successor",
+      "bear": "search drags / organizational departures"
+    },
+    {
+      "when": "2026 Q4–2027 Q1",
+      "event": "AI/DataSec product adoption update",
+      "sensitivity": "M",
+      "bull": "separate ARR/attach evidence",
+      "bear": "product announcements without KPI evidence"
+    },
+    {
+      "when": "~2026-12",
+      "event": "FY27 Q3",
+      "sensitivity": "H",
+      "bull": "ARR growth 25%+ and operating leverage",
+      "bear": "ARR growth <20%, no S&M leverage"
+    },
+    {
+      "when": "~2027-03",
+      "event": "FY27 Q4 / FY27 annual",
+      "sensitivity": "H",
+      "bull": "FCF 2–4%+ and FY28 double-digit FCF path",
+      "bear": "FCF guide miss, high SBC/share growth"
+    },
+    {
+      "when": "2027 H1",
+      "event": "Initial FY28 guidance",
+      "sensitivity": "H",
+      "bull": "20%+ growth with margin leverage",
+      "bear": "growth and margin both revised down"
+    },
+    {
+      "when": "ongoing",
+      "event": "Share price approaches $23.75/$24.70 convert levels",
+      "sensitivity": "M",
+      "bull": "dilution becomes economic but reflects business success",
+      "bear": "low price into note maturity increases cash drag"
+    }
+  ],
+  "falsification": [
+    "NRR below 110% for two or more disclosure periods without recovery invalidates the land-and-expand assumption.",
+    "FY27 non-GAAP gross margin below 75% with no FY28 improvement invalidates the NewEdge leverage assumption.",
+    "Meaningful miss vs FY27 FCF margin 2–4% or FY28 remaining mid-single-digit or lower implies structural cash-conversion weakness.",
+    "No measurable improvement in NRR/ARR/attach despite AI/data-security product growth over 12–18 months means AI should not be valued as upside.",
+    "Diluted shares rising >5% annually without FCF/share improvement invalidates shareholder-value creation from non-GAAP leverage."
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "0,3"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "1"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "1.1–1.7"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "2.1–2.2"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "3.1–3.3"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "3.4–3.6"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "1.6,3.5"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "3.7–3.8"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.9"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "4.1–4.2"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "4,6"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "4.1,4.9"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "4.7–4.8,5"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "1.5–1.6,3.10"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "0.5,5.7,6"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "5.5–5.6"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "5"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE",
+      "h3_locator": "0.6,6.4"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "6.5"
+    },
+    {
+      "rc_id": "RC-020",
+      "status": "COMPLETE",
+      "h3_locator": "6.7"
+    }
+  ],
+  "source_registry": {
+    "S1": "https://www.sec.gov/Archives/edgar/data/2063196/000119312526135011/ck0002063196-20260131.htm",
+    "S2": "https://www.sec.gov/Archives/edgar/data/2063196/000119312526255732/ck0002063196-20260430.htm",
+    "S3": "https://www.sec.gov/Archives/edgar/data/2063196/000119312525207534/netskope_424b4_sept_2025.htm",
+    "S4": "https://investors.netskope.com/news-releases/news-release-details/netskope-announces-strong-fourth-quarter-and-fiscal-year-2026",
+    "S5": "https://www.netskope.com/press-releases/netskope-announces-strong-fiscal-first-quarter-2027-financial-results",
+    "S6": "https://www.sec.gov/Archives/edgar/data/2063196/000119312526242108/ck0002063196-20260527.htm",
+    "S7": "https://www.netskope.com/netskope-one/zero-trust-engine",
+    "S8": "https://investors.netskope.com/",
+    "S9": "https://www.sec.gov/edgar/browse/?CIK=2063196",
+    "S10": "https://www.netskope.com/netskope-one/newedge",
+    "S11": "https://www.netskope.com/press-releases/netskope-introduces-newedge-management-plane-in-india-to-enable-dpdpa-compliance-and-data-sovereignty-to-customers",
+    "S12": "https://www.gartner.com/en/documents/8192429",
+    "S13": "https://www.gartner.com/en/documents/8207329",
+    "S14": "https://www.gartner.com/en/documents/8183329",
+    "S15": "https://www.gartner.com/en/documents/8192029",
+    "S16": "https://stockanalysis.com/stocks/ntsk/statistics/",
+    "S17": "https://www.holdingschannel.com/holdings-changes/ntsk/",
+    "S18": "https://www.investing.com/equities/netskope-inc-ownership",
+    "S19": "https://www.netskope.com/press-releases/netskope-announces-closing-of-initial-public-offering-and-full-exercise-of-over-allotment-option",
+    "S20": "secondary market-price reconstruction from StockAnalysis / FinanceCharts / Trading212",
+    "S21": "https://www.sec.gov/Archives/edgar/data/2063196/000153906126000011/0001539061-26-000011-index.html"
+  },
+  "visual_data_source_registry": {
+    "VIS-001": {
+      "title": "3개년 매출 · Gross Margin · FCF",
+      "source": "financials.annual_3y",
+      "values": {
+        "FY24": {
+          "revenue": 406.883,
+          "gross_profit": 243.25,
+          "gross_margin_pct": 59.8,
+          "sales_marketing": 263.096,
+          "rd": 224.496,
+          "ga": 68.456,
+          "ocf": -167.166,
+          "fcf": -208.318,
+          "fcf_margin_pct": -51.0,
+          "sbc": 60.991
+        },
+        "FY25": {
+          "revenue": 538.268,
+          "gross_profit": 347.899,
+          "gross_margin_pct": 64.6,
+          "sales_marketing": 280.828,
+          "rd": 254.189,
+          "ga": 68.623,
+          "ocf": -110.678,
+          "fcf": -151.1,
+          "fcf_margin_pct": -28.0,
+          "sbc": 50.834
+        },
+        "FY26": {
+          "revenue": 708.997,
+          "gross_profit": 482.669,
+          "gross_margin_pct": 68.1,
+          "sales_marketing": 393.742,
+          "rd": 509.029,
+          "ga": 232.477,
+          "ocf": 38.073,
+          "fcf": 12.373,
+          "fcf_margin_pct": 2.0,
+          "sbc": 516.191
+        }
+      },
+      "narrative_locator": "4.1",
+      "table_locator": "4.1 / A2",
+      "source_hash": "40032c51fd6ab595",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    "VIS-002": {
+      "title": "최근 8분기 매출과 Gross Margin",
+      "source": "financials.quarterly_8q",
+      "values": [
+        {
+          "quarter": "FY25 Q2",
+          "revenue": 130.253,
+          "gross_profit": 83.028,
+          "gross_margin_pct": 63.7
+        },
+        {
+          "quarter": "FY25 Q3",
+          "revenue": 138.532,
+          "gross_profit": 91.767,
+          "gross_margin_pct": 66.2
+        },
+        {
+          "quarter": "FY25 Q4",
+          "revenue": 148.486,
+          "gross_profit": 99.326,
+          "gross_margin_pct": 66.9
+        },
+        {
+          "quarter": "FY26 Q1",
+          "revenue": 157.736,
+          "gross_profit": 109.513,
+          "gross_margin_pct": 69.4
+        },
+        {
+          "quarter": "FY26 Q2",
+          "revenue": 170.758,
+          "gross_profit": 123.244,
+          "gross_margin_pct": 72.2
+        },
+        {
+          "quarter": "FY26 Q3",
+          "revenue": 184.173,
+          "gross_profit": 106.643,
+          "gross_margin_pct": 57.9,
+          "note": "IPO SBC distortion; non-GAAP GM ~75%"
+        },
+        {
+          "quarter": "FY26 Q4",
+          "revenue": 196.33,
+          "gross_profit": 143.269,
+          "gross_margin_pct": 73.0
+        },
+        {
+          "quarter": "FY27 Q1",
+          "revenue": 201.592,
+          "gross_profit": 148.255,
+          "gross_margin_pct": 73.5
+        }
+      ],
+      "narrative_locator": "4.2",
+      "table_locator": "4.2 / A3",
+      "source_hash": "de6858b0f56cd6c4",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    "VIS-003": {
+      "title": "FY29 시나리오별 주당가치",
+      "source": "scenarios",
+      "values": [
+        {
+          "name": "Bear",
+          "probability": 0.25,
+          "per_share_value": 9.303
+        },
+        {
+          "name": "Base",
+          "probability": 0.4,
+          "per_share_value": 17.508
+        },
+        {
+          "name": "Bull Execution",
+          "probability": 0.25,
+          "per_share_value": 23.138
+        },
+        {
+          "name": "Bull Ecosystem",
+          "probability": 0.1,
+          "per_share_value": 28.752
+        }
+      ],
+      "narrative_locator": "5.5–5.6",
+      "table_locator": "5.6",
+      "source_hash": "afa4288385d0991d",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    "VIS-004": {
+      "title": "현재가 역산 요구 매출",
+      "source": "reverse_expectations",
+      "values": [
+        {
+          "ev_revenue": 5.5,
+          "required_fy29_revenue_b": 1.32,
+          "required_fy27_fy29_cagr_pct": 22.5
+        },
+        {
+          "ev_revenue": 6.0,
+          "required_fy29_revenue_b": 1.21,
+          "required_fy27_fy29_cagr_pct": 17.2
+        },
+        {
+          "ev_revenue": 6.5,
+          "required_fy29_revenue_b": 1.12,
+          "required_fy27_fy29_cagr_pct": 12.6
+        }
+      ],
+      "narrative_locator": "5.8",
+      "table_locator": "5.8",
+      "source_hash": "c57d4930e4e7c0ec",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    "VIS-005": {
+      "title": "핵심 KPI 신호등",
+      "source": "kpis",
+      "values": [
+        {
+          "name": "ARR growth",
+          "history": [
+            {
+              "period": "FY27 Q1",
+              "value": 29.0
+            }
+          ],
+          "current": 29.0,
+          "unit": "% YoY",
+          "thresholds": {
+            "green": ">=25%",
+            "yellow": "20–25%",
+            "red": "<20%"
+          }
+        },
+        {
+          "name": "NRR",
+          "history": [
+            {
+              "period": "Jan-24",
+              "value": 115
+            },
+            {
+              "period": "Jan-25",
+              "value": 113
+            },
+            {
+              "period": "Jul-24",
+              "value": 113
+            },
+            {
+              "period": "Jul-25",
+              "value": 118
+            },
+            {
+              "period": "Jan-26",
+              "value": 116
+            },
+            {
+              "period": "Apr-26",
+              "value": 113
+            }
+          ],
+          "current": 113,
+          "unit": "%",
+          "thresholds": {
+            "green": ">=115%",
+            "yellow": "110–115%",
+            "red": "<110%"
+          }
+        },
+        {
+          "name": "$100k+ ARR customers",
+          "history": [
+            {
+              "period": "Jan-26",
+              "value": 1531,
+              "growth_yoy_pct": 22,
+              "arr_share_pct": 86
+            }
+          ],
+          "current": 1531,
+          "unit": "customers",
+          "thresholds": {
+            "green": "growth >=20%",
+            "yellow": "10–20%",
+            "red": "<10% or prolonged non-disclosure"
+          }
+        },
+        {
+          "name": "non-GAAP gross margin",
+          "history": [
+            {
+              "period": "FY27 guide",
+              "value": 77.0
+            }
+          ],
+          "current": 77.0,
+          "unit": "%",
+          "thresholds": {
+            "green": ">=77%",
+            "yellow": "75–77%",
+            "red": "<75%"
+          }
+        },
+        {
+          "name": "FCF margin",
+          "history": [
+            {
+              "period": "FY26",
+              "value": 2.0
+            },
+            {
+              "period": "FY27 guide low",
+              "value": 2.0
+            },
+            {
+              "period": "FY27 guide high",
+              "value": 4.0
+            }
+          ],
+          "current": {
+            "guide_low": 2.0,
+            "guide_high": 4.0
+          },
+          "unit": "%",
+          "thresholds": {
+            "green": "guide upper end / raise",
+            "yellow": "0–2% or volatility",
+            "red": "annual guide withdrawn / negative"
+          }
+        },
+        {
+          "name": "diluted shares",
+          "history": [
+            {
+              "period": "FY27 guide",
+              "value": 415.0
+            }
+          ],
+          "current": 415.0,
+          "unit": "m shares",
+          "thresholds": {
+            "green": "YoY <3% growth",
+            "yellow": "3–5%",
+            "red": ">5% sustained"
+          }
+        },
+        {
+          "name": "NewEdge economics",
+          "history": [
+            {
+              "period": "FY27 Q1 GAAP GM",
+              "value": 73.5
+            }
+          ],
+          "current": 73.5,
+          "unit": "% GAAP GM",
+          "thresholds": {
+            "green": "GM rises + footprint growth slows",
+            "yellow": "flat",
+            "red": "GM declines + cost rises"
+          }
+        },
+        {
+          "name": "CFO succession",
+          "history": [
+            {
+              "period": "2026-08-29",
+              "value": "search ongoing"
+            }
+          ],
+          "current": "search ongoing",
+          "thresholds": {
+            "green": "credible successor + smooth handoff",
+            "yellow": "prolonged vacancy",
+            "red": "controls/guidance problems alongside transition"
+          }
+        }
+      ],
+      "narrative_locator": "6.6",
+      "table_locator": "6.6",
+      "source_hash": "db58f1c248c0c548",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    }
+  },
+  "publishing_qa": {
+    "REPORT_DATA_PACK": "EMITTED",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "CONTENT_MEANING_LOCK_PRESERVED": "PASS",
+    "PUBLISHED_TOP_LEVEL_SCHEMA_MATCH": "PASS",
+    "EXPLANATORY_DEPTH_PRESERVED": "PASS",
+    "HTML_SIDEBAR": "PASS",
+    "SEARCHABLE_TEXT": "PASS",
+    "KOREAN_READABILITY": "PASS",
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "EXPLANATORY_SPACE_ALLOCATION": "PASS",
+    "VISUAL_GRAMMAR_VARIETY": "PASS",
+    "CHART_READABILITY": "PASS",
+    "TABLE_QUALITY": "PASS",
+    "SEMANTIC_GOLDEN_QA": "PASS",
+    "VISUAL_GOLDEN_QA": "PASS",
+    "GOLDEN_PARITY": "PASS",
+    "FIGURE_NUMERICAL_PARITY": "PASS",
+    "VISUAL_DATA_LINEAGE": "PASS",
+    "VISUAL_SEMANTIC_PARITY": "PASS",
+    "STALE_VISUAL_ASSETS": 0,
+    "DECISION_VISUALS_TOTAL": 5,
+    "DECISION_VISUALS_PARITY_PASS": 5,
+    "PDF_NOT_GENERATED_BY_USER_REQUEST": true
+  }
+}

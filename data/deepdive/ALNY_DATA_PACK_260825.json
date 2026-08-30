@@ -1,0 +1,1124 @@
+{
+  "meta": {
+    "ticker": "ALNY",
+    "company": "Alnylam Pharmaceuticals, Inc.",
+    "T0": "2026-08-25 KST",
+    "price_asof": "2026-08-24 close",
+    "filing_asof": "Q2 2026 Form 10-Q filed 2026-07-30",
+    "transcript_asof": "Q2 2026 earnings call 2026-07-30; secondary text used only for color",
+    "consensus_asof": "S&P Global snapshot updated 2026-08-18 / checked 2026-08-25",
+    "version": "DDOS v1.7",
+    "latest_filing_check": "PASS_AS_OF_2026-08-25"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "fy": "2023",
+        "product_revenue": 1241.5,
+        "total_revenue": 1828.3,
+        "cogs": 268.2,
+        "rnd": 1004.4,
+        "sga": 795.6,
+        "op_income": -282.2,
+        "ocf": 104.2,
+        "capex": 62.2,
+        "simple_fcf": 41.9,
+        "sbc": 221.7
+      },
+      {
+        "fy": "2024",
+        "product_revenue": 1646.2,
+        "total_revenue": 2248.2,
+        "cogs": 306.5,
+        "rnd": 1126.2,
+        "sga": 975.5,
+        "op_income": -176.9,
+        "ocf": -8.3,
+        "capex": 34.3,
+        "simple_fcf": -42.6,
+        "sbc": 272.1
+      },
+      {
+        "fy": "2025",
+        "product_revenue": 2986.5,
+        "total_revenue": 3713.9,
+        "cogs": 677.2,
+        "rnd": 1319.8,
+        "sga": 1210.7,
+        "op_income": 501.6,
+        "ocf": 524.1,
+        "capex": 58.7,
+        "simple_fcf": 465.4,
+        "sbc": 348.2
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "q": "Q3'24",
+        "product": 420.1,
+        "ttr": 308.9,
+        "rare": 111.3,
+        "total": 500.9,
+        "cogs_pct": 19.5,
+        "rnd": 270.9,
+        "sga": 221.0,
+        "op_income": -76.9
+      },
+      {
+        "q": "Q4'24",
+        "product": 450.8,
+        "ttr": 342.6,
+        "rare": 108.2,
+        "total": 593.2,
+        "cogs_pct": 22.8,
+        "rnd": 300.2,
+        "sga": 295.3,
+        "op_income": -105.2
+      },
+      {
+        "q": "Q1'25",
+        "product": 468.5,
+        "ttr": 359.5,
+        "rare": 109.1,
+        "total": 594.2,
+        "cogs_pct": 15.0,
+        "rnd": 265.1,
+        "sga": 239.9,
+        "op_income": 18.1
+      },
+      {
+        "q": "Q2'25",
+        "product": 672.2,
+        "ttr": 544.5,
+        "rare": 127.7,
+        "total": 773.7,
+        "cogs_pct": 21.1,
+        "rnd": 323.6,
+        "sga": 323.3,
+        "op_income": -16.2
+      },
+      {
+        "q": "Q3'25",
+        "product": 851.1,
+        "ttr": 724.4,
+        "rare": 126.7,
+        "total": 1249.0,
+        "cogs_pct": 23.2,
+        "rnd": 358.8,
+        "sga": 322.1,
+        "op_income": 368.0
+      },
+      {
+        "q": "Q4'25",
+        "product": 994.7,
+        "ttr": 858.3,
+        "rare": 136.4,
+        "total": 1097.0,
+        "cogs_pct": 26.9,
+        "rnd": 372.2,
+        "sga": 325.4,
+        "op_income": 131.7
+      },
+      {
+        "q": "Q1'26",
+        "product": 1036.1,
+        "ttr": 910.4,
+        "rare": 125.7,
+        "total": 1167.2,
+        "cogs_pct": 20.0,
+        "rnd": 364.9,
+        "sga": 322.6,
+        "op_income": 268.6
+      },
+      {
+        "q": "Q2'26",
+        "product": 1172.1,
+        "ttr": 1030.2,
+        "rare": 141.9,
+        "total": 1290.9,
+        "cogs_pct": 25.4,
+        "rnd": 413.1,
+        "sga": 347.9,
+        "op_income": 231.4
+      }
+    ],
+    "ceilings": [
+      "Exact ATTR diagnosis→treated patient funnel is not publicly disclosed.",
+      "Channel-level payer abandonment/persistence is not fully disclosed.",
+      "Plant unit capacity/yield is not publicly quantified.",
+      "Full proprietary broker/positioning distribution is unavailable.",
+      "Exact comparable-program base rate from primary sources: PRIMARY_SOURCE_CEILING."
+    ]
+  },
+  "kpis": [
+    {
+      "name": "FY2026 TTR revenue",
+      "history": [
+        {
+          "period": "FY2025",
+          "value": 2.487
+        },
+        {
+          "period": "Q1 2026 YTD annual guide",
+          "value": "4.4–4.7"
+        },
+        {
+          "period": "Q2 2026 guide",
+          "value": "4.2–4.5"
+        }
+      ],
+      "current": "$4.2–4.5B guidance",
+      "thresholds": {
+        "green": "≥$4.35B",
+        "yellow": "$4.20–4.35B",
+        "red": "<$4.20B or another material guide cut"
+      }
+    },
+    {
+      "name": "U.S. TTR sequential demand growth",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": 106,
+          "unit": "USD M reported revenue change; demand component ~129 offset by inventory/price"
+        }
+      ],
+      "current": "Q2 demand growth >2x Q1 sequential demand growth",
+      "thresholds": {
+        "green": "sustained ≥$100M demand growth/qtr",
+        "yellow": "$50–100M",
+        "red": "<$50M or sequential demand contraction"
+      }
+    },
+    {
+      "name": "Product COGS %",
+      "history": [
+        {
+          "period": "Q3'24",
+          "value": 19.5
+        },
+        {
+          "period": "Q4'24",
+          "value": 22.8
+        },
+        {
+          "period": "Q1'25",
+          "value": 15.0
+        },
+        {
+          "period": "Q2'25",
+          "value": 21.1
+        },
+        {
+          "period": "Q3'25",
+          "value": 23.2
+        },
+        {
+          "period": "Q4'25",
+          "value": 26.9
+        },
+        {
+          "period": "Q1'26",
+          "value": 20.0
+        },
+        {
+          "period": "Q2'26",
+          "value": 25.4
+        }
+      ],
+      "current": 25.4,
+      "thresholds": {
+        "green": "<23% before nucresiran mix shift",
+        "yellow": "23–27%",
+        "red": ">27% without offsetting franchise/margin evidence"
+      }
+    },
+    {
+      "name": "Nucresiran execution",
+      "history": [
+        {
+          "period": "2026",
+          "value": "TRITON-PN / TRITON-CM active; CM enrollment expanded"
+        }
+      ],
+      "current": "PN launch target 2028; CM target 2030 assuming success",
+      "thresholds": {
+        "green": "timelines hold + efficacy/safety support infrequent dosing",
+        "yellow": "≤2-quarter delay / mixed convenience edge",
+        "red": "material efficacy, safety or regulatory failure"
+      }
+    },
+    {
+      "name": "Non-TTR de-risking",
+      "history": [
+        {
+          "period": "H2 2026",
+          "value": "ALN-6400, ALN-2232 and CNS readouts/updates expected across pipeline"
+        }
+      ],
+      "current": "early/partnered optionality remains mostly unproven",
+      "thresholds": {
+        "green": "≥2 material clinical/regulatory de-risking events",
+        "yellow": "mixed data without thesis break",
+        "red": "serial failures / tissue-delivery thesis weakens"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.2,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "revenue_path": [
+        5.3,
+        6.05,
+        6.75,
+        7.5,
+        8.4
+      ],
+      "margin_path": [
+        0.11,
+        0.13,
+        0.14,
+        0.16,
+        0.17
+      ],
+      "fcf": [
+        0.583,
+        0.786,
+        0.945,
+        1.2,
+        1.428
+      ],
+      "terminal_fcf_multiple": 15,
+      "diluted_shares": 139,
+      "terminal_per_share_value": 154.1,
+      "per_share_value": 101.8,
+      "scenario_irr": -0.0933
+    },
+    {
+      "name": "Base",
+      "probability": 0.45,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "revenue_path": [
+        5.5,
+        7.0,
+        8.6,
+        10.2,
+        12.0
+      ],
+      "margin_path": [
+        0.15,
+        0.17,
+        0.2,
+        0.22,
+        0.24
+      ],
+      "fcf": [
+        0.825,
+        1.19,
+        1.72,
+        2.244,
+        2.88
+      ],
+      "terminal_fcf_multiple": 20,
+      "diluted_shares": 140,
+      "terminal_per_share_value": 411.43,
+      "per_share_value": 271.79,
+      "scenario_irr": 0.1363
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.25,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "revenue_path": [
+        5.65,
+        7.4,
+        9.3,
+        11.5,
+        14.0
+      ],
+      "margin_path": [
+        0.16,
+        0.19,
+        0.22,
+        0.25,
+        0.27
+      ],
+      "fcf": [
+        0.904,
+        1.406,
+        2.046,
+        2.875,
+        3.78
+      ],
+      "terminal_fcf_multiple": 22,
+      "diluted_shares": 142,
+      "terminal_per_share_value": 585.63,
+      "per_share_value": 386.87,
+      "scenario_irr": 0.2324
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.1,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "revenue_path": [
+        5.7,
+        7.5,
+        9.8,
+        13.0,
+        17.0
+      ],
+      "margin_path": [
+        0.16,
+        0.19,
+        0.23,
+        0.27,
+        0.29
+      ],
+      "fcf": [
+        0.912,
+        1.425,
+        2.254,
+        3.51,
+        4.93
+      ],
+      "terminal_fcf_multiple": 24,
+      "diluted_shares": 145,
+      "terminal_per_share_value": 816.0,
+      "per_share_value": 539.05,
+      "scenario_irr": 0.33
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B — Hybrid",
+    "core": 215.0,
+    "execution": 75.0,
+    "ecosystem": 17.29,
+    "drag": 14.0,
+    "expected_value": 293.29,
+    "expected_future_value_2030": 443.97,
+    "expected_irr": 0.1563,
+    "probability_weighted_scenario_irr": 0.1338,
+    "current_price": 236.01,
+    "discount_rate": 0.1,
+    "hurdle_rate": 0.125,
+    "base_intrinsic_value": 271.79,
+    "bear_value": 101.8,
+    "bull_execution_value": 386.87,
+    "up_down_ratio_current": 1.12,
+    "base_rate": "PRIMARY_SOURCE_CEILING"
+  },
+  "reverse_expectations": {
+    "method": "At 10% required return to YE2030 and 140M economic diluted shares, solve 2030 revenue required under terminal FCF multiple × FCF margin combinations.",
+    "future_equity_value_required_bn": 50.02,
+    "matrix": [
+      {
+        "multiple": 16,
+        "required_revenue": {
+          "20%": {
+            "revenue_2030": 15.63,
+            "cagr_2025_30": 0.333
+          },
+          "22%": {
+            "revenue_2030": 14.21,
+            "cagr_2025_30": 0.3078
+          },
+          "24%": {
+            "revenue_2030": 13.03,
+            "cagr_2025_30": 0.2853
+          },
+          "27%": {
+            "revenue_2030": 11.58,
+            "cagr_2025_30": 0.2553
+          }
+        }
+      },
+      {
+        "multiple": 18,
+        "required_revenue": {
+          "20%": {
+            "revenue_2030": 13.89,
+            "cagr_2025_30": 0.302
+          },
+          "22%": {
+            "revenue_2030": 12.63,
+            "cagr_2025_30": 0.2774
+          },
+          "24%": {
+            "revenue_2030": 11.58,
+            "cagr_2025_30": 0.2553
+          },
+          "27%": {
+            "revenue_2030": 10.29,
+            "cagr_2025_30": 0.2261
+          }
+        }
+      },
+      {
+        "multiple": 20,
+        "required_revenue": {
+          "20%": {
+            "revenue_2030": 12.5,
+            "cagr_2025_30": 0.2748
+          },
+          "22%": {
+            "revenue_2030": 11.37,
+            "cagr_2025_30": 0.2507
+          },
+          "24%": {
+            "revenue_2030": 10.42,
+            "cagr_2025_30": 0.2292
+          },
+          "27%": {
+            "revenue_2030": 9.26,
+            "cagr_2025_30": 0.2005
+          }
+        }
+      },
+      {
+        "multiple": 22,
+        "required_revenue": {
+          "20%": {
+            "revenue_2030": 11.37,
+            "cagr_2025_30": 0.2507
+          },
+          "22%": {
+            "revenue_2030": 10.33,
+            "cagr_2025_30": 0.2271
+          },
+          "24%": {
+            "revenue_2030": 9.47,
+            "cagr_2025_30": 0.206
+          },
+          "27%": {
+            "revenue_2030": 8.42,
+            "cagr_2025_30": 0.1779
+          }
+        }
+      },
+      {
+        "multiple": 24,
+        "required_revenue": {
+          "20%": {
+            "revenue_2030": 10.42,
+            "cagr_2025_30": 0.2292
+          },
+          "22%": {
+            "revenue_2030": 9.47,
+            "cagr_2025_30": 0.206
+          },
+          "24%": {
+            "revenue_2030": 8.68,
+            "cagr_2025_30": 0.1851
+          },
+          "27%": {
+            "revenue_2030": 7.72,
+            "cagr_2025_30": 0.1576
+          }
+        }
+      }
+    ],
+    "interpretation": "Current price still requires strong growth: under 20x terminal FCF and 24% FCF margin, ~10.42B 2030 revenue / ~22.9% 2025–30 CAGR."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_bn": 5.49,
+      "eps": 8.92
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_bn": 6.94,
+      "eps": 12.59
+    },
+    "revision_trend": "Q2 guidance reset drove a 28.3% one-day share-price decline; public sell-side consensus remains Buy with average target ~$370 and wide $230–$536 range.",
+    "analyst_count": 28,
+    "avg_target": 370.2,
+    "median_target": 350,
+    "low_target": 230,
+    "high_target": 536
+  },
+  "stance": {
+    "zone": "CONDITIONAL_INTEREST",
+    "price_bands": {
+      "≤$197": "Buy zone: Bull Execution/Bear U/D ≥2x",
+      ">$197–$215": "Attractive/conditional: U/D ~1.5–2x",
+      ">$215–$250": "Conditional watch: current $236 sits here",
+      ">$250–$293": "Near fair/expected value: require KPI de-risking",
+      ">$293": "Execution-rich: avoid chasing without bull evidence"
+    },
+    "horizon": "YE2030 / ~4.35 years",
+    "time_to_value": "2026–2028 first-line demand + non-TTR/nucresiran de-risking; 2028–2030 franchise handoff"
+  },
+  "catalysts": [
+    {
+      "when": "H2 2026",
+      "event": "ALN-6400 human proof / HHT program data updates",
+      "sensitivity": "High"
+    },
+    {
+      "when": "H2 2026",
+      "event": "ALN-2232 adipose RNAi Phase 1 data",
+      "sensitivity": "Medium–High"
+    },
+    {
+      "when": "H2 2026 onward",
+      "event": "ALN-HTT02 / CNS delivery clinical updates",
+      "sensitivity": "Medium"
+    },
+    {
+      "when": "2026 Q3–Q4",
+      "event": "AMVUTTRA first-line demand trajectory and FY2026 TTR guide delivery",
+      "sensitivity": "Very High"
+    },
+    {
+      "when": "2027–2028",
+      "event": "TRITON-PN execution / regulatory path toward 2028 nucresiran launch target",
+      "sensitivity": "Very High"
+    },
+    {
+      "when": "2028",
+      "event": "mivelsiran cAPPricorn-1 initial results",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2028–2030",
+      "event": "TRITON-CM and nucresiran CM regulatory path",
+      "sensitivity": "Very High"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "3.1"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "1.1"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "CEILING",
+      "h3_locator": "1.2 / Appx A4"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "1.3"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "1.5"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "2.2"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "3.2 / 4.2"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "3.3 / 4.2"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "3.4 / 4.4"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "3.5"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "3.6 / 5.3"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "3.7 / 5.4"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "CEILING",
+      "h3_locator": "1.4 / Appx A4"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "3.5"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "4.1 / Appx A1"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "4.2 / Appx A2"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "4.3"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE",
+      "h3_locator": "4.4 / 5.5"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "CEILING",
+      "h3_locator": "3.8 / Appx A4"
+    },
+    {
+      "rc_id": "RC-020",
+      "status": "COMPLETE",
+      "h3_locator": "2.3 / 4.2"
+    },
+    {
+      "rc_id": "RC-021",
+      "status": "COMPLETE",
+      "h3_locator": "6.3–6.5"
+    },
+    {
+      "rc_id": "RC-022",
+      "status": "CEILING",
+      "h3_locator": "5.1 / Appx A5"
+    },
+    {
+      "rc_id": "RC-023",
+      "status": "COMPLETE",
+      "h3_locator": "5.1"
+    },
+    {
+      "rc_id": "RC-024",
+      "status": "COMPLETE",
+      "h3_locator": "4.5 / 5.2"
+    },
+    {
+      "rc_id": "RC-025",
+      "status": "COMPLETE",
+      "h3_locator": "5.3"
+    },
+    {
+      "rc_id": "RC-026",
+      "status": "COMPLETE",
+      "h3_locator": "5.4"
+    },
+    {
+      "rc_id": "RC-027",
+      "status": "COMPLETE",
+      "h3_locator": "5.6"
+    },
+    {
+      "rc_id": "RC-028",
+      "status": "COMPLETE",
+      "h3_locator": "5.2"
+    },
+    {
+      "rc_id": "RC-029",
+      "status": "COMPLETE",
+      "h3_locator": "6.1"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Alnylam Q2 2026 earnings release / SEC Exhibit 99.1",
+      "url": "https://www.sec.gov/Archives/edgar/data/1178670/000117867026000060/alny2026q2earningsrelease.htm"
+    },
+    {
+      "id": "S02",
+      "title": "Alnylam Q2 2026 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1178670/000117867026000062/alny-20260630.htm"
+    },
+    {
+      "id": "S03",
+      "title": "Alnylam FY2025 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1178670/000162828026007497/alny-20251231.htm"
+    },
+    {
+      "id": "S04",
+      "title": "Alnylam Q3 2025 earnings release / SEC",
+      "url": "https://www.sec.gov/Archives/edgar/data/1178670/000162828025047342/alny2025q3earningsrelease.htm"
+    },
+    {
+      "id": "S05",
+      "title": "Alnylam Q4/FY2025 results",
+      "url": "https://investors.alnylam.com/press-release?id=29551"
+    },
+    {
+      "id": "S06",
+      "title": "Alnylam Q1 2026 results",
+      "url": "https://investors.alnylam.com/press-release?id=29796"
+    },
+    {
+      "id": "S07",
+      "title": "Alnylam 2030 strategy",
+      "url": "https://investors.alnylam.com/press-release?id=29491"
+    },
+    {
+      "id": "S08",
+      "title": "AMVUTTRA ATTR-CM FDA approval / Alnylam release",
+      "url": "https://investors.alnylam.com/press-release?id=28831"
+    },
+    {
+      "id": "S09",
+      "title": "Alnylam / Roche zilebesiran collaboration economics",
+      "url": "https://investors.alnylam.com/press-release?id=27611"
+    },
+    {
+      "id": "S10",
+      "title": "Pfizer VYNDAMAX patent settlement update",
+      "url": "https://www.pfizer.com/news/press-release/press-release-detail/pfizer-reaches-three-settlement-agreements-vyndamax"
+    },
+    {
+      "id": "S11",
+      "title": "BridgeBio Q2 2026 results / Attruby commercial update",
+      "url": "https://investor.bridgebio.com/news/news-details/2026/BridgeBio-Reports-Second-Quarter-2026-Financial-Results-and-Corporate-Updates/default.aspx"
+    },
+    {
+      "id": "S12",
+      "title": "AstraZeneca CARDIO-TTRansform Phase 3 update",
+      "url": "https://www.astrazeneca.com/media-centre/press-releases/2026/update-cardio-ttransform-phase-iii-trial.html"
+    },
+    {
+      "id": "S13",
+      "title": "Alnylam 2026 neuroscience pipeline update",
+      "url": "https://investors.alnylam.com/press-release?id=29966"
+    },
+    {
+      "id": "S14",
+      "title": "Alnylam Q2 2025 results",
+      "url": "https://investors.alnylam.com/press-release?id=29136"
+    },
+    {
+      "id": "S15",
+      "title": "Alnylam 2026 Proxy Statement",
+      "url": "https://investors.alnylam.com/sites/default/files/pdfs/alny-2026-proxy-statement.pdf"
+    },
+    {
+      "id": "S16",
+      "title": "Q2 2026 transcript aggregation – secondary color only",
+      "url": "https://www.marketbeat.com/earnings/reports/2026-7-30-alnylam-pharmaceuticals-inc-stock/"
+    },
+    {
+      "id": "S17",
+      "title": "ALNY price history – S&P Global via StockAnalysis",
+      "url": "https://stockanalysis.com/stocks/alny/history/"
+    },
+    {
+      "id": "S18",
+      "title": "ALNY consensus / forecasts – S&P Global via StockAnalysis",
+      "url": "https://stockanalysis.com/stocks/alny/forecast/"
+    },
+    {
+      "id": "S19",
+      "title": "SEC 2026 CEO special equity award filing",
+      "url": "https://www.sec.gov/Archives/edgar/data/1178670/000162828026014728/alny-20260302.htm"
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "TTR가 Rare를 압도하며 제품 믹스가 재편됐다",
+      "authoritative_source_block": "financials.quarterly_8q",
+      "source_values": [
+        {
+          "q": "Q3'24",
+          "product": 420.1,
+          "ttr": 308.9,
+          "rare": 111.3,
+          "total": 500.9,
+          "cogs_pct": 19.5,
+          "rnd": 270.9,
+          "sga": 221.0,
+          "op_income": -76.9
+        },
+        {
+          "q": "Q4'24",
+          "product": 450.8,
+          "ttr": 342.6,
+          "rare": 108.2,
+          "total": 593.2,
+          "cogs_pct": 22.8,
+          "rnd": 300.2,
+          "sga": 295.3,
+          "op_income": -105.2
+        },
+        {
+          "q": "Q1'25",
+          "product": 468.5,
+          "ttr": 359.5,
+          "rare": 109.1,
+          "total": 594.2,
+          "cogs_pct": 15.0,
+          "rnd": 265.1,
+          "sga": 239.9,
+          "op_income": 18.1
+        },
+        {
+          "q": "Q2'25",
+          "product": 672.2,
+          "ttr": 544.5,
+          "rare": 127.7,
+          "total": 773.7,
+          "cogs_pct": 21.1,
+          "rnd": 323.6,
+          "sga": 323.3,
+          "op_income": -16.2
+        },
+        {
+          "q": "Q3'25",
+          "product": 851.1,
+          "ttr": 724.4,
+          "rare": 126.7,
+          "total": 1249.0,
+          "cogs_pct": 23.2,
+          "rnd": 358.8,
+          "sga": 322.1,
+          "op_income": 368.0
+        },
+        {
+          "q": "Q4'25",
+          "product": 994.7,
+          "ttr": 858.3,
+          "rare": 136.4,
+          "total": 1097.0,
+          "cogs_pct": 26.9,
+          "rnd": 372.2,
+          "sga": 325.4,
+          "op_income": 131.7
+        },
+        {
+          "q": "Q1'26",
+          "product": 1036.1,
+          "ttr": 910.4,
+          "rare": 125.7,
+          "total": 1167.2,
+          "cogs_pct": 20.0,
+          "rnd": 364.9,
+          "sga": 322.6,
+          "op_income": 268.6
+        },
+        {
+          "q": "Q2'26",
+          "product": 1172.1,
+          "ttr": 1030.2,
+          "rare": 141.9,
+          "total": 1290.9,
+          "cogs_pct": 25.4,
+          "rnd": 413.1,
+          "sga": 347.9,
+          "op_income": 231.4
+        }
+      ],
+      "source_version_or_hash": "60cd18f4abd7a026",
+      "display_values": {
+        "ttr": [
+          308.9,
+          342.6,
+          359.5,
+          544.5,
+          724.4,
+          858.3,
+          910.4,
+          1030.2
+        ],
+        "rare": [
+          111.3,
+          108.2,
+          109.1,
+          127.7,
+          126.7,
+          136.4,
+          125.7,
+          141.9
+        ]
+      },
+      "narrative_locator": "4.2",
+      "table_locator": "Appendix A2",
+      "caption_locator": "Fig. 1",
+      "rendered_asset_locator": "inline-svg#VIS-001"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "AMVUTTRA 고성장과 함께 제품 원가율도 상승했다",
+      "authoritative_source_block": "financials.quarterly_8q.cogs_pct",
+      "source_values": [
+        19.5,
+        22.8,
+        15.0,
+        21.1,
+        23.2,
+        26.9,
+        20.0,
+        25.4
+      ],
+      "source_version_or_hash": "9fc9ee2870881010",
+      "display_values": [
+        19.5,
+        22.8,
+        15.0,
+        21.1,
+        23.2,
+        26.9,
+        20.0,
+        25.4
+      ],
+      "narrative_locator": "4.3",
+      "table_locator": "Appendix A2",
+      "caption_locator": "Fig. 2",
+      "rendered_asset_locator": "inline-svg#VIS-002"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "Scenario present value와 현재 주가",
+      "authoritative_source_block": "scenarios",
+      "source_values": [
+        {
+          "name": "Bear",
+          "probability": 0.2,
+          "per_share_value": 101.8
+        },
+        {
+          "name": "Base",
+          "probability": 0.45,
+          "per_share_value": 271.79
+        },
+        {
+          "name": "Bull Execution",
+          "probability": 0.25,
+          "per_share_value": 386.87
+        },
+        {
+          "name": "Bull Ecosystem",
+          "probability": 0.1,
+          "per_share_value": 539.05
+        }
+      ],
+      "source_version_or_hash": "3728ca24a7eb06b3",
+      "display_values": [
+        101.8,
+        271.79,
+        386.87,
+        539.05,
+        236.01
+      ],
+      "narrative_locator": "5.2",
+      "table_locator": "5.2",
+      "caption_locator": "Fig. 3",
+      "rendered_asset_locator": "inline-svg#VIS-003"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "3년 매출 성장과 영업손익 전환",
+      "authoritative_source_block": "financials.annual_3y",
+      "source_values": [
+        {
+          "fy": "2023",
+          "product_revenue": 1241.5,
+          "total_revenue": 1828.3,
+          "cogs": 268.2,
+          "rnd": 1004.4,
+          "sga": 795.6,
+          "op_income": -282.2,
+          "ocf": 104.2,
+          "capex": 62.2,
+          "simple_fcf": 41.9,
+          "sbc": 221.7
+        },
+        {
+          "fy": "2024",
+          "product_revenue": 1646.2,
+          "total_revenue": 2248.2,
+          "cogs": 306.5,
+          "rnd": 1126.2,
+          "sga": 975.5,
+          "op_income": -176.9,
+          "ocf": -8.3,
+          "capex": 34.3,
+          "simple_fcf": -42.6,
+          "sbc": 272.1
+        },
+        {
+          "fy": "2025",
+          "product_revenue": 2986.5,
+          "total_revenue": 3713.9,
+          "cogs": 677.2,
+          "rnd": 1319.8,
+          "sga": 1210.7,
+          "op_income": 501.6,
+          "ocf": 524.1,
+          "capex": 58.7,
+          "simple_fcf": 465.4,
+          "sbc": 348.2
+        }
+      ],
+      "source_version_or_hash": "c57e811ace2582f0",
+      "display_values": {
+        "revenue": [
+          1828.3,
+          2248.2,
+          3713.9
+        ],
+        "op_income": [
+          -282.2,
+          -176.9,
+          501.6
+        ]
+      },
+      "narrative_locator": "4.1",
+      "table_locator": "Appendix A1",
+      "caption_locator": "Fig. 4",
+      "rendered_asset_locator": "inline-svg#VIS-004"
+    }
+  ],
+  "publishing_qa": {
+    "report_data_pack": "EMITTED",
+    "data_pack_report_parity": "PASS_BY_SINGLE_SOURCE_GENERATION",
+    "top_level_schema_match": "PASS",
+    "korean_prose_quality": "PASS_PENDING_RENDER_INSPECTION",
+    "industry_company_narrative": "PASS",
+    "rc_h3_coverage_rate": "100%",
+    "display_rounding_tolerance": "per-share $1; ratios 0.1pp; USD M 0.1; USD B 0.1"
+  }
+}

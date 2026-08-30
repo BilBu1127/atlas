@@ -1,0 +1,302 @@
+{
+  "schema_version": "DDOS_v1.7_REPORT_DATA_PACK",
+  "ticker": "ILMN",
+  "company": "Illumina, Inc.",
+  "publishing_date": "2026-08-30",
+  "timezone": "Asia/Seoul",
+  "as_of_registry": {
+    "price_asof": "2026-08-28",
+    "price_usd": 215.59,
+    "financial_asof": "2026-06-28",
+    "filing_asof": "2026-08-17",
+    "transcript_asof": "2026-07-30",
+    "consensus_asof": "2026-08-28",
+    "latest_filing_check": "PASS"
+  },
+  "investment_judgment": {
+    "stance": "WATCH / NEUTRAL",
+    "probability_weighted_value_usd": 207.25,
+    "expected_12m_return_pct": -3.87,
+    "thesis": "NovaSeq X 전환은 상당 부분 검증됐지만 현재 주가는 2027년 Base 실행과 높은 quality multiple을 상당 부분 선반영한다.",
+    "price_bands": [
+      {
+        "label": "적극 관찰/분할 진입 검토",
+        "low": 0,
+        "high": 180
+      },
+      {
+        "label": "선택적 진입",
+        "low": 180,
+        "high": 200
+      },
+      {
+        "label": "Fair-to-full",
+        "low": 200,
+        "high": 225
+      },
+      {
+        "label": "Bull Execution 선반영",
+        "low": 225,
+        "high": 245
+      },
+      {
+        "label": "Ecosystem 증거 필요",
+        "low": 245,
+        "high": 999
+      }
+    ]
+  },
+  "three_year_core": [
+    {
+      "fy": 2023,
+      "revenue_bn": 4.44,
+      "consumables_mix_pct": 68,
+      "instruments_mix_pct": 16,
+      "service_mix_pct": 16,
+      "non_gaap_om_pct": 19.9
+    },
+    {
+      "fy": 2024,
+      "revenue_bn": 4.33,
+      "consumables_mix_pct": 72,
+      "instruments_mix_pct": 12,
+      "service_mix_pct": 16,
+      "non_gaap_om_pct": 21.3
+    },
+    {
+      "fy": 2025,
+      "revenue_bn": 4.34,
+      "consumables_mix_pct": 74,
+      "instruments_mix_pct": 11,
+      "service_mix_pct": 15,
+      "non_gaap_om_pct": 23.1
+    }
+  ],
+  "latest_8q": [
+    {
+      "q": "Q3 2024",
+      "revenue_m": 1080,
+      "gaap_gm_pct": 68.9,
+      "non_gaap_om_pct": 22.6,
+      "fcf_m": 284
+    },
+    {
+      "q": "Q4 2024",
+      "revenue_m": 1104,
+      "gaap_gm_pct": 65.9,
+      "non_gaap_om_pct": 19.7,
+      "fcf_m": 322
+    },
+    {
+      "q": "Q1 2025",
+      "revenue_m": 1041,
+      "gaap_gm_pct": 65.6,
+      "non_gaap_om_pct": 20.4,
+      "fcf_m": 208
+    },
+    {
+      "q": "Q2 2025",
+      "revenue_m": 1059,
+      "gaap_gm_pct": 65.6,
+      "non_gaap_om_pct": 23.8,
+      "fcf_m": 204
+    },
+    {
+      "q": "Q3 2025",
+      "revenue_m": 1084,
+      "gaap_gm_pct": 67.6,
+      "non_gaap_om_pct": 24.5,
+      "fcf_m": 253
+    },
+    {
+      "q": "Q4 2025",
+      "revenue_m": 1159,
+      "gaap_gm_pct": 65.5,
+      "non_gaap_om_pct": 23.7,
+      "fcf_m": 267
+    },
+    {
+      "q": "Q1 2026",
+      "revenue_m": 1091,
+      "gaap_gm_pct": 66.1,
+      "non_gaap_om_pct": 21.9,
+      "fcf_m": 251
+    },
+    {
+      "q": "Q2 2026",
+      "revenue_m": 1159,
+      "gaap_gm_pct": 66.4,
+      "non_gaap_om_pct": 22.5,
+      "fcf_m": 162
+    }
+  ],
+  "q2_2026": {
+    "revenue_m": 1159,
+    "growth_pct": 9.5,
+    "organic_growth_pct": 6.5,
+    "row_organic_growth_pct": 8.1,
+    "consumables_m": 852,
+    "sequencing_consumables_m": 775,
+    "instruments_m": 130,
+    "service_other_m": 177,
+    "gaap_gm_pct": 66.4,
+    "non_gaap_gm_pct": 68.2,
+    "non_gaap_om_pct": 22.5,
+    "fcf_m": 162
+  },
+  "nova_x": {
+    "q4_2025_active_installed_base": 890,
+    "q4_2025_placements_gt": 100,
+    "q1_2026_placements_gt": 80,
+    "q2_2026_placements_gt": 95,
+    "q1_2026_volume_transition_pct": 82,
+    "q1_2026_revenue_transition_pct": 55,
+    "q1_2026_research_volume_transition_pct": 90,
+    "q1_2026_clinical_volume_transition_pct": 76,
+    "connected_gb_growth_pct_gt": 30,
+    "cost_per_gb_reduction_vs_ns6000_pct_up_to": 60
+  },
+  "capital_structure": {
+    "shares_out_m": 151.0,
+    "market_cap_bn": 32.554,
+    "cash_st_investments_bn": 1.168,
+    "gross_debt_bn_june": 1.991,
+    "net_debt_bn_june": 0.823,
+    "enterprise_value_bn": 33.377,
+    "new_notes_m": 300,
+    "new_notes_coupon_pct": 4.95,
+    "new_notes_due": 2029,
+    "repaid_notes_m": 500,
+    "repaid_notes_coupon_pct": 4.65,
+    "repaid_notes_due": "2026-09-09"
+  },
+  "guidance_2026": {
+    "revenue_low_bn": 4.6,
+    "revenue_high_bn": 4.64,
+    "revenue_mid_bn": 4.62,
+    "non_gaap_om_low_pct": 23.4,
+    "non_gaap_om_high_pct": 23.6,
+    "eps_low": 5.3,
+    "eps_high": 5.4,
+    "eps_mid": 5.35
+  },
+  "valuation": {
+    "ev_sales_2026_mid": 7.22,
+    "pe_2026_mid": 40.3,
+    "reverse_eps": [
+      {
+        "pe": 35.0,
+        "required_eps": 6.16,
+        "vs_fy26_pct": 15.1
+      },
+      {
+        "pe": 32.5,
+        "required_eps": 6.63,
+        "vs_fy26_pct": 24.0
+      },
+      {
+        "pe": 30.0,
+        "required_eps": 7.19,
+        "vs_fy26_pct": 34.3
+      }
+    ],
+    "scenarios": [
+      {
+        "name": "Bear",
+        "probability_pct": 25,
+        "fy27_revenue_bn": 4.72,
+        "fy27_non_gaap_om_pct": 22.5,
+        "fy27_eps": 5.2,
+        "value_usd": 150
+      },
+      {
+        "name": "Base",
+        "probability_pct": 40,
+        "fy27_revenue_bn": 4.99,
+        "fy27_non_gaap_om_pct": 24.8,
+        "fy27_eps": 6.15,
+        "value_usd": 200
+      },
+      {
+        "name": "Bull Execution",
+        "probability_pct": 25,
+        "fy27_revenue_bn": 5.1,
+        "fy27_non_gaap_om_pct": 26.0,
+        "fy27_eps": 6.75,
+        "value_usd": 245
+      },
+      {
+        "name": "Bull Ecosystem",
+        "probability_pct": 10,
+        "fy27_revenue_bn": 5.22,
+        "fy27_non_gaap_om_pct": 26.4,
+        "fy27_eps": 7.05,
+        "value_usd": 285
+      }
+    ]
+  },
+  "research_contract": {
+    "complete": 16,
+    "primary_source_ceiling": 3,
+    "contradicted": 0,
+    "unresolved": 0,
+    "ceilings": [
+      "RC-004 NovaSeq X cohort utilization/pull-through dollars",
+      "RC-007 multiomics cross-sell economics",
+      "RC-008 granular contract/minimum-volume/customer concentration economics"
+    ]
+  },
+  "market_expectations": {
+    "marketbeat_avg_target": 188.4,
+    "marketbeat_analysts": 17,
+    "marketbeat_low": 113,
+    "marketbeat_high": 230,
+    "stockanalysis_avg_target": 198.89,
+    "stockanalysis_analysts": 20,
+    "stockanalysis_median": 211
+  },
+  "visual_lineage": [
+    {
+      "visual_id": "VIS-001",
+      "source": "REPORT_DATA_PACK",
+      "status": "LOCKED",
+      "semantic_mapping": "PASS"
+    },
+    {
+      "visual_id": "VIS-002",
+      "source": "REPORT_DATA_PACK",
+      "status": "LOCKED",
+      "semantic_mapping": "PASS"
+    },
+    {
+      "visual_id": "VIS-003",
+      "source": "REPORT_DATA_PACK",
+      "status": "LOCKED",
+      "semantic_mapping": "PASS"
+    },
+    {
+      "visual_id": "VIS-004",
+      "source": "REPORT_DATA_PACK",
+      "status": "LOCKED",
+      "semantic_mapping": "PASS"
+    },
+    {
+      "visual_id": "VIS-005",
+      "source": "REPORT_DATA_PACK",
+      "status": "LOCKED",
+      "semantic_mapping": "PASS"
+    }
+  ],
+  "publishing_qa": {
+    "REPORT_DATA_PACK": "EMITTED",
+    "HTML_SIDEBAR": "PASS",
+    "PDF_BOOKMARKS": "PASS",
+    "CONTACT_SHEET_COMPOSITION_QA": "PASS",
+    "SEMANTIC_GOLDEN_QA": "PASS",
+    "VISUAL_GOLDEN_QA": "PASS",
+    "RENDERED_VISUAL_PARITY_QA": "PASS",
+    "KOREAN_PROSE_QUALITY_GATE": "PASS",
+    "INDUSTRY_TO_COMPANY_NARRATIVE_GATE": "PASS",
+    "RC_UNRESOLVED": 0
+  }
+}

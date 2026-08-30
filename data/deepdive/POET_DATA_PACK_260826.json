@@ -1,0 +1,1001 @@
+{
+  "meta": {
+    "ticker": "POET",
+    "company": "POET Technologies Inc.",
+    "T0": "2026-08-25",
+    "publishing_date": "2026-08-26",
+    "price_asof": "2026-08-25 regular close",
+    "filing_asof": "2026-08-13 Q2 2026 interim filing / MD&A",
+    "consensus_asof": "2026-08-25",
+    "version": "Clean DDOS Production OS v1.7",
+    "valuation_mode": "Mode A — Option-led",
+    "reporting_currency": "USD",
+    "latest_filing_check": "PASS"
+  },
+  "financials": {
+    "annual_3y": {
+      "2023": {
+        "revenue": 465777,
+        "rd": 10077930,
+        "sm_admin": 10795155,
+        "net_income": -20267000,
+        "operating_cash_flow": -15407000,
+        "capex_ppe": -1168000,
+        "cash_st_investments": 3019000
+      },
+      "2024": {
+        "revenue": 41427,
+        "rd": 11334641,
+        "sm_admin": 18771421,
+        "net_income": -56696000,
+        "operating_cash_flow": -23291000,
+        "capex_ppe": -6782000,
+        "cash_st_investments": 53817000
+      },
+      "2025": {
+        "revenue": 1074865,
+        "rd": 18084303,
+        "sm_admin": 25081957,
+        "net_income": -62963000,
+        "operating_cash_flow": -31087000,
+        "capex_ppe": -2255000,
+        "cash_st_investments": 313398000
+      }
+    },
+    "quarterly_8q": [
+      {
+        "quarter": "2024-Q3",
+        "revenue": 3685,
+        "net_income": -12700000,
+        "rd": 1800000
+      },
+      {
+        "quarter": "2024-Q4",
+        "revenue": 29032,
+        "net_income": -30200000,
+        "rd": 3400000
+      },
+      {
+        "quarter": "2025-Q1",
+        "revenue": 166760,
+        "net_income": 6300000,
+        "rd": 4300000,
+        "note": "net income distorted by $15.4M non-cash warrant fair-value gain"
+      },
+      {
+        "quarter": "2025-Q2",
+        "revenue": 268469,
+        "net_income": -17300000,
+        "rd": 3150044
+      },
+      {
+        "quarter": "2025-Q3",
+        "revenue": 298434,
+        "net_income": -9400000,
+        "rd": 3735703
+      },
+      {
+        "quarter": "2025-Q4",
+        "revenue": 341202,
+        "net_income": -42671682,
+        "rd": 4621450
+      },
+      {
+        "quarter": "2026-Q1",
+        "revenue": 503389,
+        "net_income": -12344086,
+        "rd": 4499556,
+        "operating_cash_flow": -8800000
+      },
+      {
+        "quarter": "2026-Q2",
+        "revenue": 569925,
+        "net_income": -11338060,
+        "rd": 5784056,
+        "operating_cash_flow": -12200000,
+        "cash_st_investments": 796341903
+      }
+    ],
+    "q2_2026": {
+      "revenue": 569925,
+      "operating_cash_flow": -12200000,
+      "net_loss": -11338060,
+      "rd": 5784056,
+      "cash_st_investments": 796341903
+    },
+    "ceilings": [
+      "NRE and product revenue are combined",
+      "product-only gross margin not disclosed",
+      "mass-production yield and qualified throughput not disclosed"
+    ]
+  },
+  "capital_structure": {
+    "basic_shares": 173058088,
+    "warrants": 78734968,
+    "options": 5369393,
+    "rsus": 4252504,
+    "simple_if_converted_ceiling": 261415953,
+    "warrant_strike_range_usd": [
+      1.09,
+      26.25
+    ],
+    "may_2026_warrants": {
+      "shares": 19047620,
+      "strike": 26.25,
+      "expiry": "2029-05-18"
+    },
+    "lumilens_warrants": {
+      "max_shares": 22921408,
+      "immediately_exercisable": 2292140,
+      "strike": 8.25,
+      "term_years": 9,
+      "remaining_vesting": "cumulative Lumilens payments against future POs up to $500M"
+    },
+    "cash_st_investments": 796341903,
+    "convertible_debt": 5800000,
+    "basic_market_cap": 1387925865.76,
+    "basic_cash_adjusted_ev": 597383962.76
+  },
+  "kpis": [
+    {
+      "name": "H2 2026 production/qualification shipment",
+      "current": "management says on schedule; actual qualified volume not disclosed",
+      "thresholds": {
+        "green": "$5M+ order ships on schedule and is followed by repeat/expanded PO",
+        "yellow": "qualification units ship but timing/volume remains limited",
+        "red": "material slip beyond 2026 or cancellation"
+      },
+      "cadence": "quarterly / event-driven",
+      "source": "POET filings and customer announcements"
+    },
+    {
+      "name": "Product-only revenue and gross margin",
+      "current": "NRE + product combined; Q2 total $0.570M",
+      "thresholds": {
+        "green": "product revenue becomes separately visible with positive and improving gross profit",
+        "yellow": "revenue rises but remains NRE-heavy or margin opaque",
+        "red": "revenue remains subscale through 2027 or negative product economics persist"
+      },
+      "cadence": "quarterly",
+      "source": "financial statements/MD&A"
+    },
+    {
+      "name": "Lumilens qualification / cash payments",
+      "current": "$50M initial PO; subject to development, qualification and scale; samples targeted late-2026",
+      "thresholds": {
+        "green": "samples accepted, qualification completed, payment-linked warrant tranches vest alongside real purchases",
+        "yellow": "development continues with schedule drift but no cancellation",
+        "red": "qualification failure, PO reduction/cancellation, or multi-quarter silence after target dates"
+      },
+      "cadence": "event-driven",
+      "source": "POET/Lumilens filings and releases"
+    },
+    {
+      "name": "Qualified manufacturing throughput / yield",
+      "current": "target up to 1M units/month end-2027; yield not disclosed",
+      "thresholds": {
+        "green": "company discloses sustained high-volume qualified shipments with stable yield/quality",
+        "yellow": "capacity equipment installed but qualified throughput remains undisclosed",
+        "red": "quality/yield bottlenecks delay customer shipments"
+      },
+      "cadence": "quarterly",
+      "source": "POET + manufacturing partners"
+    },
+    {
+      "name": "Diluted share claims",
+      "current": "173.058M basic; 78.735M warrants; 5.369M options; 4.253M RSUs",
+      "thresholds": {
+        "green": "dilution occurs mainly through high-strike warrants after major equity value creation",
+        "yellow": "SBC and low-strike exercises grow faster than revenue but remain manageable",
+        "red": "additional large equity issuance or grants occur before operating proof despite ample cash"
+      },
+      "cadence": "quarterly",
+      "source": "MD&A, prospectuses, equity-plan filings"
+    },
+    {
+      "name": "Operating cash burn / capital deployment",
+      "current": "Q2 CFO -$12.2M; cash+ST $796.3M; ~$50M H2 capex plan",
+      "thresholds": {
+        "green": "burn per qualified-revenue dollar falls and capex leads to visible customer shipments",
+        "yellow": "burn rises during ramp with credible milestones",
+        "red": "large M&A/capex deployment without measurable commercial return"
+      },
+      "cadence": "quarterly",
+      "source": "cash-flow statement / AGM / MD&A"
+    },
+    {
+      "name": "Disclosure / customer trust",
+      "current": "Celestial AI POs cancelled after Marvell cited confidentiality breach",
+      "thresholds": {
+        "green": "no repeat incidents; named counterparties or contract milestones validate renewed trust",
+        "yellow": "no new breach but customer identities/economics remain opaque",
+        "red": "another material customer dispute, cancellation, or disclosure-control failure"
+      },
+      "cadence": "event-driven",
+      "source": "6-K/20-F/customer counterparty releases"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.3,
+      "revenue_path": [
+        3000000,
+        15000000,
+        25000000,
+        35000000,
+        50000000
+      ],
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "terminal_gross_margin": 0.2,
+      "ev_gp_multiple": 5.0,
+      "terminal_net_cash": 490000000,
+      "diluted_shares": 185000000,
+      "terminal_fcf": -10000000,
+      "formation_conditions": [
+        "H2 2026 qualification shipments do not convert to sustained volume",
+        "Lumilens qualification materially slips or order economics shrink",
+        "product revenue remains subscale through 2028"
+      ],
+      "break_conditions": [
+        "repeat production orders across at least three programs",
+        "product gross margin becomes sustainably positive and visible"
+      ],
+      "terminal_gross_profit": 10000000.0,
+      "terminal_enterprise_value": 50000000.0,
+      "terminal_equity_value": 540000000.0,
+      "terminal_per_share_value": 2.9189,
+      "per_share_value": 1.7153,
+      "discount_rate": 0.13
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "revenue_path": [
+        4000000,
+        50000000,
+        120000000,
+        200000000,
+        300000000
+      ],
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "terminal_gross_margin": 0.33,
+      "ev_gp_multiple": 10.0,
+      "terminal_net_cash": 625000000,
+      "diluted_shares": 200000000,
+      "terminal_fcf": 35000000,
+      "formation_conditions": [
+        "$5M+ Infinity order ships and repeats",
+        "Lumilens advances from samples to qualified 2027 production",
+        "several active engagements convert to recurring optical-engine/ELS revenue"
+      ],
+      "break_conditions": [
+        "2026 volume shipment slips materially",
+        "cash burn rises without corresponding qualified revenue",
+        "fully diluted denominator trends above model without value-creating deployment"
+      ],
+      "terminal_gross_profit": 99000000.0,
+      "terminal_enterprise_value": 990000000.0,
+      "terminal_equity_value": 1615000000.0,
+      "terminal_per_share_value": 8.075,
+      "per_share_value": 4.7452,
+      "discount_rate": 0.13
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.2,
+      "revenue_path": [
+        5000000,
+        100000000,
+        275000000,
+        500000000,
+        750000000
+      ],
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "terminal_gross_margin": 0.4,
+      "ev_gp_multiple": 12.0,
+      "terminal_net_cash": 850000000,
+      "diluted_shares": 225000000,
+      "terminal_fcf": 150000000,
+      "formation_conditions": [
+        "multiple 800G/1.6T programs achieve high-volume qualification",
+        "Lumilens becomes a major repeat customer",
+        "Malaysia manufacturing proves high qualified throughput and acceptable yield"
+      ],
+      "break_conditions": [
+        "customer concentration remains extreme",
+        "gross margin fails to scale despite volume",
+        "CPO/LPO substitution reduces POET content"
+      ],
+      "terminal_gross_profit": 300000000.0,
+      "terminal_enterprise_value": 3600000000.0,
+      "terminal_equity_value": 4450000000.0,
+      "terminal_per_share_value": 19.7778,
+      "per_share_value": 11.6221,
+      "discount_rate": 0.13
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.1,
+      "revenue_path": [
+        6000000,
+        150000000,
+        450000000,
+        900000000,
+        1500000000
+      ],
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "terminal_gross_margin": 0.45,
+      "ev_gp_multiple": 14.0,
+      "terminal_net_cash": 1400000000,
+      "diluted_shares": 245000000,
+      "terminal_fcf": 330000000,
+      "formation_conditions": [
+        "Blazar/EOI wins meaningful CPO or scale-up deployment",
+        "Optical Interposer becomes a repeatable multi-customer integration standard",
+        "May/Lumilens warrants exercise because equity value creation overwhelms dilution"
+      ],
+      "break_conditions": [
+        "ecosystem adoption remains development-only by 2028",
+        "incumbent SiPh/CPO stacks internalize the relevant content"
+      ],
+      "terminal_gross_profit": 675000000.0,
+      "terminal_enterprise_value": 9450000000.0,
+      "terminal_equity_value": 10850000000.0,
+      "terminal_per_share_value": 44.2857,
+      "per_share_value": 26.0239,
+      "discount_rate": 0.13
+    }
+  ],
+  "valuation": {
+    "mode": "Mode A — Option-led",
+    "common_discount_rate": 0.13,
+    "horizon_years": 4.35,
+    "core": "net cash plus negligible proven operating value; adjusted for burn/deployment by scenario",
+    "execution": "800G/1.6T optical-engine and ELS qualification-to-volume conversion",
+    "ecosystem": "EOI/Blazar scale-up/CPO adoption only in Bull Ecosystem",
+    "drag": "warrants/options/RSUs plus future burn and capital deployment",
+    "expected_value": 7.3395,
+    "expected_terminal_value": 12.4898,
+    "expected_irr": 0.107199,
+    "current_price": 8.02,
+    "base_value": 4.7452,
+    "bear_value": 1.7153,
+    "bull_execution_value": 11.6221,
+    "bull_ecosystem_value": 26.0239,
+    "upside_downside_ratio": 0.5713,
+    "price_ud_1x": 6.67,
+    "price_ud_2x": 5.02,
+    "price_for_15pct_expected_irr": 6.8,
+    "price_for_13pct_expected_irr": 7.34
+  },
+  "reverse_expectations": {
+    "hurdle_rate": 0.13,
+    "terminal_diluted_shares": 205000000,
+    "terminal_net_cash": 650000000,
+    "terminal_gross_margin": 0.35,
+    "terminal_ev_gp_multiple": 10.0,
+    "required_terminal_share_price": 13.65,
+    "required_2030_revenue": 613662283.09,
+    "required_2030_gross_profit": 214781799.08,
+    "required_2030_ebit_model": 118129989.5,
+    "required_2030_fcf_model": 94503991.6,
+    "translation": "roughly $614M 2030 revenue, equivalent to several simultaneous large production programs; disclosed >$100M future annual revenue engagement estimate alone is insufficient"
+  },
+  "consensus": {
+    "fy1": {},
+    "fy2": {},
+    "revision_trend": "PRIMARY_SOURCE_CEILING — analyst coverage is sparse and aggregators conflict",
+    "one_source_snapshot": {
+      "rating": "Sell",
+      "price_target": 8.0,
+      "analysts": 1,
+      "warning": "not canonical consensus due source inconsistency"
+    },
+    "short_interest": {
+      "asof": "2026-07-31",
+      "shares": 25816884,
+      "days_to_cover": 2.2,
+      "percent_float": "not canonical because denominator is stale across sources"
+    }
+  },
+  "valuation_history": {
+    "poet_multiple_history": "PRIMARY_SOURCE_CEILING — historical EV/Sales percentile is not economically meaningful because revenue was near zero and capital structure changed discontinuously",
+    "peer_snapshot": {
+      "AAOI_ev_sales": 17.09,
+      "LITE_ev_sales": 24.94,
+      "COHR_ev_sales": 8.06,
+      "interpretation": "AI-optics peer multiples are currently elevated; not used directly as POET terminal anchors. POET scenario terminal EV/Sales equivalents are 1.0x/3.3x/4.8x/6.3x."
+    },
+    "price_52week_range": [
+      3.87,
+      20.81
+    ]
+  },
+  "stance": {
+    "zone": "회피 — 신규 비중 확대 기준. 현재 가격은 확률가중 가치와 Base 가치를 모두 상회하고 U/D<1",
+    "price_bands": {
+      "active_interest": "<= $5.02, only if thesis not broken; discounted Bull/Bear U/D >=2x",
+      "conditional_interest": "$5.02–$6.67, requires shipment/qualification evidence",
+      "watch": "$6.67–$7.34",
+      "avoid_add": "above $7.34 at current evidence set"
+    },
+    "horizon": "through 2030; quarterly operating verification",
+    "change_conditions": [
+      "on-time $5M+ order shipment and repeat PO",
+      "Lumilens qualification and payment milestones",
+      "product-only gross margin disclosure",
+      "qualified throughput/yield evidence"
+    ]
+  },
+  "catalysts": [
+    {
+      "when": "2026 H2",
+      "event": "$5M+ Infinity 800G production-order shipment and substantial qualification units",
+      "bull": "on-time shipment, acceptance and follow-on orders",
+      "bear": "slip, cancellation or qualification bottleneck",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2026 Q4",
+      "event": "Lumilens late-2026 engineering samples / EOI development checkpoint",
+      "bull": "sample acceptance and qualification timetable confirmed for 2027",
+      "bear": "sample delay or scope reduction",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2026 Q4",
+      "event": "Q3 2026 financial update / commercialization evidence",
+      "bull": "product revenue begins separating from NRE and burn efficiency improves",
+      "bear": "revenue remains near $0.5–1M quarterly while expenses rise",
+      "sensitivity": "High"
+    },
+    {
+      "when": "End-2026",
+      "event": "Sivers-related ELS production-readiness target and Tier-1 laser-development progress",
+      "bull": "production-ready ELS + customer commitment",
+      "bear": "prototype-only status persists",
+      "sensitivity": "Medium"
+    },
+    {
+      "when": "2027 Q1",
+      "event": "OFC 2027 / industry 1.6T-CPO roadmap updates",
+      "bull": "POET products appear in partner/customer production systems",
+      "bear": "incumbent CPO/TRO architectures reduce addressable POET content",
+      "sensitivity": "Medium"
+    },
+    {
+      "when": "2027 H1",
+      "event": "Lumilens qualification-to-production transition",
+      "bull": "production release and payment-linked purchase milestones",
+      "bear": "qualification failure or material delay",
+      "sensitivity": "Very High"
+    },
+    {
+      "when": "2027 H1",
+      "event": "Manufacturing capacity ramp toward end-2027 1M units/month target",
+      "bull": "qualified throughput scales with repeat customer orders",
+      "bear": "nameplate capacity rises without utilization/yield proof",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2027 Jun",
+      "event": "Annual meeting / capital allocation and operating milestone refresh",
+      "bull": "cash deployment tied to measurable returns; no unnecessary financing",
+      "bear": "new capital-intensive ambitions without operating proof",
+      "sensitivity": "Medium"
+    },
+    {
+      "when": "2027 Aug",
+      "event": "Q2 2027 financial update",
+      "bull": "material product revenue, visible gross margin and lower burn ratio",
+      "bear": "revenue still development-scale despite prior orders",
+      "sensitivity": "Very High"
+    }
+  ],
+  "falsification": [
+    {
+      "thesis": "Optical Interposer can convert architecture advantage into commercial scale",
+      "wrong_if": "2027 progresses without material repeat production revenue despite installed capacity and disclosed orders"
+    },
+    {
+      "thesis": "Lumilens provides a credible execution branch",
+      "wrong_if": "late-2026 sample/2027 qualification path materially slips, order scope falls, or payment-linked milestones fail to appear"
+    },
+    {
+      "thesis": "capital removes funding risk without destroying per-share economics",
+      "wrong_if": "additional large equity issuance occurs before operating proof despite current liquidity, or cash is deployed into low-return acquisitions"
+    },
+    {
+      "thesis": "POET can participate across pluggable and CPO architectures",
+      "wrong_if": "industry CPO/TRO/LPO roadmaps systematically remove the optical-engine/light-source content POET is trying to supply"
+    },
+    {
+      "thesis": "management execution can improve from historical schedule slippage",
+      "wrong_if": "H2 2026 and 2027 milestones repeat the prior pattern of multi-quarter/annual delays"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "§3.1 / Appendix A"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "§1.1–1.4"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "§1.2 / §6.2"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "§1.3 / §3.6"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "§3.2 / Appendix B"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "§3.3"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "§3.4 / Appendix C"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "§3.4 / §4.5"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "CONTRADICTED",
+      "h3_locator": "§2.3 / §3.4"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "§3.5 / §5.2"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "§3.7 / Appendix D"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "§2.2 / §4.4"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "§2.1"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "§2.4 / §4.6"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "§4.1 / Appendix E"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "§4.2–4.3"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "§4.6 / §5.1 / Appendix F"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE",
+      "h3_locator": "§2.4 / §5.1"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "§4.4 / §6.3"
+    },
+    {
+      "rc_id": "RC-020",
+      "status": "COMPLETE",
+      "h3_locator": "§5.1–5.5"
+    },
+    {
+      "rc_id": "RC-021",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "§5.4 / §6.2 / Appendix G"
+    },
+    {
+      "rc_id": "RC-022",
+      "status": "COMPLETE",
+      "h3_locator": "§6.3–6.5"
+    }
+  ],
+  "research_contract_counts": {
+    "total": 22,
+    "complete": 14,
+    "primary_source_ceiling": 7,
+    "not_material": 0,
+    "contradicted": 1,
+    "unresolved": 0
+  },
+  "ceilings": [
+    {
+      "topic": "Current optical TAM by subsegment",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "impact": "use architecture and customer-order bottom-up evidence instead of a precise TAM"
+    },
+    {
+      "topic": "Mass-production yield/cost/field reliability",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "impact": "no moat premium for unverified manufacturing economics"
+    },
+    {
+      "topic": "ASP/BOM share/end-hyperscaler identity",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "impact": "scenario revenue is order/program based rather than unit-ASP extrapolation"
+    },
+    {
+      "topic": "Consensus forecast",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "impact": "reverse expectations replaces broker target averaging"
+    },
+    {
+      "topic": "Empirical commercialization base rate cohort",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "impact": "scenario probabilities are explicitly judgmental, not statistical"
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-01",
+      "title": "Latest 8Q revenue trace",
+      "data_path": "financials.quarterly_8q",
+      "source_ids": [
+        "SRC-015",
+        "SRC-016",
+        "SRC-017",
+        "SRC-018",
+        "SRC-019",
+        "SRC-002"
+      ],
+      "render": "bar chart"
+    },
+    {
+      "vis_id": "VIS-02",
+      "title": "Scenario T0 per-share values",
+      "data_path": "scenarios[*].per_share_value",
+      "source_ids": [
+        "MODEL"
+      ],
+      "render": "bar chart"
+    },
+    {
+      "vis_id": "VIS-03",
+      "title": "Capital structure dilution stack",
+      "data_path": "capital_structure",
+      "source_ids": [
+        "SRC-003",
+        "SRC-005",
+        "SRC-006"
+      ],
+      "render": "stacked bar / table"
+    },
+    {
+      "vis_id": "VIS-04",
+      "title": "Customer adoption ladder",
+      "data_path": "customer_programs",
+      "source_ids": [
+        "SRC-006",
+        "SRC-007",
+        "SRC-008",
+        "SRC-002"
+      ],
+      "render": "stage matrix"
+    },
+    {
+      "vis_id": "VIS-05",
+      "title": "Industry-to-company transmission",
+      "data_path": "transmission",
+      "source_ids": [
+        "SRC-009",
+        "SRC-010",
+        "SRC-011",
+        "SRC-012"
+      ],
+      "render": "flow diagram"
+    }
+  ],
+  "customer_programs": [
+    {
+      "program": "Unnamed systems integrator — Infinity 800G",
+      "stage": "Firm production PO",
+      "value": "$5M+",
+      "timing": "H2 2026 shipment scheduled",
+      "confidence": "high-relative"
+    },
+    {
+      "program": "Existing unnamed customer",
+      "stage": "Follow-on PO",
+      "value": "$2.4M",
+      "timing": "post-Q2 2026; delivery timing undisclosed",
+      "confidence": "medium-high"
+    },
+    {
+      "program": "Lumilens EOI",
+      "stage": "JDA + conditional commercial PO",
+      "value": "$50M initial / $500M+ cumulative framework",
+      "timing": "samples late-2026; production 2027 target",
+      "confidence": "medium"
+    },
+    {
+      "program": "LITEON",
+      "stage": "Strategic collaboration",
+      "value": "undisclosed",
+      "timing": "development",
+      "confidence": "medium-low"
+    },
+    {
+      "program": "Lessengers 1.6T 2xDR4",
+      "stage": "JDA/development",
+      "value": "undisclosed",
+      "timing": "qualification evidence pending",
+      "confidence": "medium-low"
+    },
+    {
+      "program": "Semtech 1.6T receiver",
+      "stage": "Product collaboration/sampling",
+      "value": "undisclosed",
+      "timing": "sampling",
+      "confidence": "medium"
+    },
+    {
+      "program": "Sivers ELS",
+      "stage": "Development",
+      "value": "undisclosed",
+      "timing": "production readiness target end-2026",
+      "confidence": "medium-low"
+    },
+    {
+      "program": "Celestial AI / Marvell",
+      "stage": "Cancelled",
+      "value": "all POs cancelled",
+      "timing": "notice 2026-04-23",
+      "confidence": "zero current order value"
+    }
+  ],
+  "transmission": [
+    {
+      "industry": "800G→1.6T transition",
+      "customer_problem": "bandwidth density and module power",
+      "poet_eligibility": "200G/lane engines and compact passive assembly",
+      "leakage": "module maker/end-customer capture and competing DSP architectures",
+      "pnl_proof": "qualified 1.6T shipments, product revenue, GP"
+    },
+    {
+      "industry": "CPO enters production",
+      "customer_problem": "switch-level power/density/reliability",
+      "poet_eligibility": "Blazar/ELS and EOI",
+      "leakage": "vertical SiPh ecosystems can internalize optics",
+      "pnl_proof": "ELS production PO and CPO design win"
+    },
+    {
+      "industry": "TRO/LPO lowers module power",
+      "customer_problem": "DSP energy cost",
+      "poet_eligibility": "architecture-flexible optical engines",
+      "leakage": "TRO/LPO can reduce or reshape POET content",
+      "pnl_proof": "stable content per module and gross margin"
+    },
+    {
+      "industry": "AI-cluster scaling",
+      "customer_problem": "more optical ports and shorter high-bandwidth reaches",
+      "poet_eligibility": "wafer-level integration and compact form factor",
+      "leakage": "qualification failure disconnects TAM from POET",
+      "pnl_proof": "firm/repeat PO, yield, shipment growth"
+    }
+  ],
+  "sources": [
+    {
+      "id": "SRC-001",
+      "title": "POET Technologies FY2025 Form 20-F",
+      "url": "https://www.sec.gov/Archives/edgar/data/1437424/000149315226014253/form20-f.htm",
+      "tier": 1,
+      "asof": "2026-03-31"
+    },
+    {
+      "id": "SRC-002",
+      "title": "POET Q2 2026 Results",
+      "url": "https://www.globenewswire.com/news-release/2026/08/13/3344383/0/en/poet-technologies-reports-second-quarter-2026-results-revenue-up-112-year-over-year-in-sixth-consecutive-quarter-of-sequential-growth.html",
+      "tier": 2,
+      "asof": "2026-08-13"
+    },
+    {
+      "id": "SRC-003",
+      "title": "Q2 2026 MD&A filed-data mirror",
+      "url": "https://www.publicnow.com/view/9FB0D336C6BFFA3161F8B006C1D513B464AA23CA",
+      "tier": 1,
+      "asof": "2026-08-13"
+    },
+    {
+      "id": "SRC-004",
+      "title": "2026 AGM / CEO commercial update filed with SEC",
+      "url": "https://www.sec.gov/Archives/edgar/data/1437424/000117184326004397/exh_991.htm",
+      "tier": 1,
+      "asof": "2026-06-30"
+    },
+    {
+      "id": "SRC-005",
+      "title": "May 2026 $400M offering prospectus supplement",
+      "url": "https://www.sec.gov/Archives/edgar/data/1437424/000149315226024090/form424b5.htm",
+      "tier": 1,
+      "asof": "2026-05-15"
+    },
+    {
+      "id": "SRC-006",
+      "title": "POET-Lumilens supply/development announcement",
+      "url": "https://www.poet-technologies.com/news/poet-technologies-and-lumilens-advance-wafer-level-photonic-integration-for-next-generation-ai-optical-networks",
+      "tier": 2,
+      "asof": "2026-05-14"
+    },
+    {
+      "id": "SRC-007",
+      "title": "$5M+ Infinity 800G production order",
+      "url": "https://www.poet-technologies.com/news/poet-technologies-receives-5-million-production-order-for-800g-optical-engines",
+      "tier": 2,
+      "asof": "2025-10-22"
+    },
+    {
+      "id": "SRC-008",
+      "title": "Celestial AI / Marvell purchase-order cancellation filed with SEC",
+      "url": "https://www.sec.gov/Archives/edgar/data/1437424/000117184326002726/exh_991.htm",
+      "tier": 1,
+      "asof": "2026-04-27"
+    },
+    {
+      "id": "SRC-009",
+      "title": "NVIDIA Vera Rubin and Spectrum-X Ethernet Photonics production",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Vera-Rubin-Ramps-Into-Full-Production-to-Power-Agentic-AI-Factories-Worldwide/default.aspx",
+      "tier": 4,
+      "asof": "2026-05-31"
+    },
+    {
+      "id": "SRC-010",
+      "title": "Marvell 1.6T optical DSP mass-volume update",
+      "url": "https://www.marvell.com/company/newsroom/marvell-1-6t-optical-dsp-ai-data-center-connectivity.html",
+      "tier": 4,
+      "asof": "2026-03-12"
+    },
+    {
+      "id": "SRC-011",
+      "title": "Marvell Ara T optical power discussion",
+      "url": "https://www.marvell.com/blogs/ara-t-improving-ai-roi-with-dsps.html",
+      "tier": 4,
+      "asof": "2026-03-16"
+    },
+    {
+      "id": "SRC-012",
+      "title": "Coherent OFC 2026 investor presentation",
+      "url": "https://www.coherent.com/content/dam/coherent/site/en/documents/investors/investor-presentations/2026/march-17/OFC-2026-Investor%20event-deck-vf.pdf",
+      "tier": 4,
+      "asof": "2026-03-17"
+    },
+    {
+      "id": "SRC-013",
+      "title": "Public POET Aug-25 regular close snapshot",
+      "url": "https://public.com/stocks/poet/after-hours",
+      "tier": 5,
+      "asof": "2026-08-25"
+    },
+    {
+      "id": "SRC-014",
+      "title": "FINRA-derived POET short interest snapshot",
+      "url": "https://www.marketbeat.com/stocks/NASDAQ/POET/short-interest/",
+      "tier": 5,
+      "asof": "2026-07-31"
+    },
+    {
+      "id": "SRC-015",
+      "title": "POET Q1 2025 results",
+      "url": "https://www.poet-technologies.com/news/poet-technologies-reports-first-quarter-2025-financial-results",
+      "tier": 2,
+      "asof": "2025-05-14"
+    },
+    {
+      "id": "SRC-016",
+      "title": "POET Q2 2025 results",
+      "url": "https://www.poet-technologies.com/news/poet-technologies-reports-second-quarter-2025-financial-results",
+      "tier": 2,
+      "asof": "2025-08-11"
+    },
+    {
+      "id": "SRC-017",
+      "title": "POET Q3 2025 results",
+      "url": "https://www.poet-technologies.com/news/poet-technologies-reports-third-quarter-2025-financial-results",
+      "tier": 2,
+      "asof": "2025-11-13"
+    },
+    {
+      "id": "SRC-018",
+      "title": "POET FY2025/Q4 results",
+      "url": "https://www.poet-technologies.com/news/poet-technologies-reports-fourth-quarter-2025-financial-results",
+      "tier": 2,
+      "asof": "2026-03-31"
+    },
+    {
+      "id": "SRC-019",
+      "title": "POET Q1 2026 results",
+      "url": "https://www.poet-technologies.com/news/poet-technologies-reports-first-quarter-2026-financial-results",
+      "tier": 2,
+      "asof": "2026-05-14"
+    },
+    {
+      "id": "SRC-020",
+      "title": "AAOI current/historical EV/Sales",
+      "url": "https://www.financecharts.com/stocks/AAOI/value/ev-to-sales",
+      "tier": 5,
+      "asof": "2026-08-21"
+    },
+    {
+      "id": "SRC-021",
+      "title": "Lumentum current/historical EV/Sales",
+      "url": "https://www.financecharts.com/stocks/LITE/value/ev-to-sales",
+      "tier": 5,
+      "asof": "2026-08-21"
+    },
+    {
+      "id": "SRC-022",
+      "title": "Coherent current EV/Sales history",
+      "url": "https://www.financecharts.com/compare/V%2CCOHR/value/ev-to-sales",
+      "tier": 5,
+      "asof": "2026-08-19"
+    }
+  ],
+  "qa": {
+    "rc_unresolved": 0,
+    "latest_filing_check": "PASS",
+    "data_pack_report_parity": "PENDING_RENDER",
+    "industry_company_narrative": "PENDING_H3",
+    "korean_prose_quality": "PENDING_H3",
+    "publishing_acceptance": "PENDING_RENDER"
+  }
+}

@@ -1,0 +1,971 @@
+{
+  "meta": {
+    "ticker": "AAOI",
+    "company": "Applied Optoelectronics, Inc.",
+    "T0": "2026-08-27 Asia/Seoul",
+    "price_asof": "2026-08-26 U.S. close",
+    "filing_asof": "Q2 2026 Form 10-Q filed 2026-08-06; period ended 2026-06-30",
+    "consensus_asof": "public snapshot through 2026-08-19/26",
+    "version": "Clean DDOS Production v1.7",
+    "pdf_status": "WAIVED_BY_USER",
+    "latest_filing_check": "PASS",
+    "latest_material_capital_filing": "2026-08-21 424B5 / 8-K, up to $600M ATM"
+  },
+  "financials": {
+    "annual_3y": {
+      "2023": {
+        "revenue": 217.646,
+        "datacenter": 141.213,
+        "catv": 59.942,
+        "gross_profit": 58.921,
+        "gaap_operating_income": -41.349,
+        "net_income": -56.048,
+        "ocf": -7.929,
+        "ppe_capex": 9.079,
+        "fcf": -17.008
+      },
+      "2024": {
+        "revenue": 249.365,
+        "datacenter": 148.525,
+        "catv": 87.713,
+        "gross_profit": 61.8,
+        "gaap_operating_income": -70.908,
+        "net_income": -186.733,
+        "ocf": -69.526,
+        "ppe_capex": 43.406,
+        "fcf": -112.932
+      },
+      "2025": {
+        "revenue": 455.715,
+        "datacenter": 195.651,
+        "catv": 245.124,
+        "gross_profit": 136.913,
+        "gaap_operating_income": -54.602,
+        "net_income": -38.228,
+        "ocf": -174.428,
+        "ppe_capex": 179.148,
+        "fcf": -353.576
+      }
+    },
+    "quarterly_8q": [
+      {
+        "period": "3Q24",
+        "revenue": 65.151,
+        "datacenter": 40.945,
+        "catv": 20.947,
+        "gaap_gross_margin": 24.4,
+        "non_gaap_gross_margin": 25.0,
+        "gaap_operating_income": -16.547,
+        "gaap_net_income": -17.757,
+        "non_gaap_net_income": -8.782,
+        "ocf": -14.44,
+        "ppe_capex": 6.288,
+        "fcf": -20.728,
+        "cash_restricted": 41.367,
+        "ar": 75.154,
+        "inventory": 64.382,
+        "ppe_net": 205.303,
+        "ap": 55.991,
+        "basic_wavg_shares": 42.312
+      },
+      {
+        "period": "4Q24",
+        "revenue": 100.271,
+        "datacenter": 44.242,
+        "catv": 52.212,
+        "gaap_gross_margin": 28.7,
+        "non_gaap_gross_margin": 28.9,
+        "gaap_operating_income": -6.473,
+        "gaap_net_income": -119.692,
+        "non_gaap_net_income": -1.047,
+        "ocf": -24.616,
+        "ppe_capex": 28.379,
+        "fcf": -52.995,
+        "cash_restricted": 79.133,
+        "ar": 116.801,
+        "inventory": 88.135,
+        "ppe_net": 219.235,
+        "ap": 104.969,
+        "basic_wavg_shares": 46.057
+      },
+      {
+        "period": "1Q25",
+        "revenue": 99.859,
+        "datacenter": 32.049,
+        "catv": 64.501,
+        "gaap_gross_margin": 30.6,
+        "non_gaap_gross_margin": 30.7,
+        "gaap_operating_income": -8.937,
+        "gaap_net_income": -9.172,
+        "non_gaap_net_income": -0.859,
+        "ocf": -50.915,
+        "ppe_capex": 28.389,
+        "fcf": -79.304,
+        "cash_restricted": 66.811,
+        "ar": 171.101,
+        "inventory": 102.313,
+        "ppe_net": 241.453,
+        "ap": 124.866,
+        "basic_wavg_shares": 50.041
+      },
+      {
+        "period": "2Q25",
+        "revenue": 102.952,
+        "datacenter": 44.791,
+        "catv": 56.019,
+        "gaap_gross_margin": 30.3,
+        "non_gaap_gross_margin": 30.4,
+        "gaap_operating_income": -15.976,
+        "gaap_net_income": -9.098,
+        "non_gaap_net_income": -8.83,
+        "ocf": -65.474,
+        "ppe_capex": 25.479,
+        "fcf": -90.953,
+        "cash_restricted": 87.195,
+        "ar": 211.452,
+        "inventory": 138.867,
+        "ppe_net": 269.386,
+        "ap": 150.145,
+        "basic_wavg_shares": 56.772
+      },
+      {
+        "period": "3Q25",
+        "revenue": 118.63,
+        "datacenter": 43.935,
+        "catv": 70.602,
+        "gaap_gross_margin": 28.0,
+        "non_gaap_gross_margin": 31.0,
+        "gaap_operating_income": -18.187,
+        "gaap_net_income": -17.936,
+        "non_gaap_net_income": -5.399,
+        "ocf": -28.462,
+        "ppe_capex": 50.245,
+        "fcf": -78.707,
+        "cash_restricted": 150.717,
+        "ar": 224.028,
+        "inventory": 170.214,
+        "ppe_net": 310.303,
+        "ap": 132.962,
+        "basic_wavg_shares": 63.329
+      },
+      {
+        "period": "4Q25",
+        "revenue": 134.274,
+        "datacenter": 74.876,
+        "catv": 54.002,
+        "gaap_gross_margin": 31.2,
+        "non_gaap_gross_margin": 31.4,
+        "gaap_operating_income": -11.501,
+        "gaap_net_income": -2.022,
+        "non_gaap_net_income": -0.635,
+        "ocf": -29.577,
+        "ppe_capex": 75.035,
+        "fcf": -104.612,
+        "cash_restricted": 216.035,
+        "ar": 244.404,
+        "inventory": 183.105,
+        "ppe_net": 376.05,
+        "ap": 143.932,
+        "basic_wavg_shares": 70.336
+      },
+      {
+        "period": "1Q26",
+        "revenue": 151.144,
+        "datacenter": 81.404,
+        "catv": 66.841,
+        "gaap_gross_margin": 29.1,
+        "non_gaap_gross_margin": 29.2,
+        "gaap_operating_income": -12.991,
+        "gaap_net_income": -14.281,
+        "non_gaap_net_income": -4.941,
+        "ocf": -85.353,
+        "ppe_capex": 58.225,
+        "fcf": -143.578,
+        "cash_restricted": 449.377,
+        "ar": 298.996,
+        "inventory": 206.246,
+        "ppe_net": 419.003,
+        "ap": 148.16,
+        "basic_wavg_shares": 75.98
+      },
+      {
+        "period": "2Q26",
+        "revenue": 191.922,
+        "datacenter": 107.662,
+        "catv": 80.578,
+        "gaap_gross_margin": 27.7,
+        "non_gaap_gross_margin": 29.8,
+        "gaap_operating_income": -24.727,
+        "gaap_net_income": -22.781,
+        "non_gaap_net_income": 5.475,
+        "ocf": 11.572,
+        "ppe_capex": 276.907,
+        "fcf": -265.335,
+        "cash_restricted": 508.758,
+        "ar": 314.009,
+        "inventory": 278.791,
+        "ppe_net": 697.086,
+        "ap": 286.088,
+        "basic_wavg_shares": 81.568
+      }
+    ],
+    "h1_2026": {
+      "revenue": 343.066,
+      "ocf": -73.781,
+      "ppe_capex": 335.132,
+      "equipment_prepayments": 289.744,
+      "land_purchase": 8.581,
+      "equity_offering_net_proceeds": 1028.207,
+      "cash_restricted_end": 508.758
+    },
+    "ceilings": []
+  },
+  "kpis": [
+    {
+      "name": "800G revenue",
+      "history": [
+        {
+          "period": "2Q26",
+          "value": 12.8
+        }
+      ],
+      "current": 12.8,
+      "unit": "$M/quarter",
+      "thresholds": {
+        "green": "3Q26 ≥ $60M and subsequent strong ramp",
+        "yellow": "$45–60M or modest timing slip",
+        "red": "< $45M or sequential stall before 1.6T offsets"
+      }
+    },
+    {
+      "name": "1.6T qualification/revenue",
+      "history": [
+        {
+          "period": "Mar-2026",
+          "value": "first volume order >$200M"
+        }
+      ],
+      "current": "qualification / initial shipment ramp",
+      "thresholds": {
+        "green": "qualification completed; material Q4 revenue and order-completion path intact",
+        "yellow": "qualification/revenue pushed within Q4",
+        "red": "material slip into 2027 or order cancellation"
+      }
+    },
+    {
+      "name": "800G+1.6T capacity",
+      "history": [
+        {
+          "period": "2Q26",
+          "value": 200000
+        }
+      ],
+      "current": 200000,
+      "unit": "units/month",
+      "thresholds": {
+        "green": "YE26 qualified-capable ≥600k/month",
+        "yellow": "450k–600k/month",
+        "red": "<450k/month or persistent tool/yield bottleneck"
+      }
+    },
+    {
+      "name": "Non-GAAP gross margin",
+      "history": [
+        {
+          "period": "3Q24",
+          "value": 25.0
+        },
+        {
+          "period": "4Q24",
+          "value": 28.9
+        },
+        {
+          "period": "1Q25",
+          "value": 30.7
+        },
+        {
+          "period": "2Q25",
+          "value": 30.4
+        },
+        {
+          "period": "3Q25",
+          "value": 31.0
+        },
+        {
+          "period": "4Q25",
+          "value": 31.4
+        },
+        {
+          "period": "1Q26",
+          "value": 29.2
+        },
+        {
+          "period": "2Q26",
+          "value": 29.8
+        }
+      ],
+      "current": 29.8,
+      "unit": "%",
+      "thresholds": {
+        "green": "≥32% as volume scales and GAAP follows",
+        "yellow": "29–32%",
+        "red": "<29% despite high-volume ramp"
+      }
+    },
+    {
+      "name": "Cash conversion",
+      "history": [
+        {
+          "period": "3Q24",
+          "ocf": -14.44,
+          "fcf": -20.728
+        },
+        {
+          "period": "4Q24",
+          "ocf": -24.616,
+          "fcf": -52.995
+        },
+        {
+          "period": "1Q25",
+          "ocf": -50.915,
+          "fcf": -79.304
+        },
+        {
+          "period": "2Q25",
+          "ocf": -65.474,
+          "fcf": -90.953
+        },
+        {
+          "period": "3Q25",
+          "ocf": -28.462,
+          "fcf": -78.707
+        },
+        {
+          "period": "4Q25",
+          "ocf": -29.577,
+          "fcf": -104.612
+        },
+        {
+          "period": "1Q26",
+          "ocf": -85.353,
+          "fcf": -143.578
+        },
+        {
+          "period": "2Q26",
+          "ocf": 11.572,
+          "fcf": -265.335
+        }
+      ],
+      "current": {
+        "2Q26_ocf": 11.572,
+        "2Q26_fcf": -265.335
+      },
+      "unit": "$M",
+      "thresholds": {
+        "green": "sustainable positive OCF and burn/revenue sharply lower by H1 2027",
+        "yellow": "burn declines but remains material",
+        "red": "deeply negative OCF plus repeated equity need"
+      }
+    },
+    {
+      "name": "Diluted share count",
+      "history": [
+        {
+          "period": "Aug-20-2026 basic",
+          "value": 84.906289
+        },
+        {
+          "period": "3Q26 guide diluted",
+          "value": 92.8
+        }
+      ],
+      "current": 92.8,
+      "unit": "M shares guide",
+      "thresholds": {
+        "green": "≤100M through 2027 with self-funding path",
+        "yellow": "100–105M",
+        "red": ">105M or repeated ATM while margin/OCF misses"
+      }
+    },
+    {
+      "name": "Customer concentration / AR",
+      "history": [
+        {
+          "period": "2Q26 top3",
+          "value": 92.0
+        },
+        {
+          "period": "Jun-30 Digicomm AR",
+          "value": 67.2
+        }
+      ],
+      "current": {
+        "top3_revenue_pct": 92.0,
+        "digicomm_ar_pct": 67.2
+      },
+      "unit": "%",
+      "thresholds": {
+        "green": "top3 <80% and AR concentration declines",
+        "yellow": "top3 80–90%",
+        "red": "top3 ≥90% persists with lengthening terms / collection stress"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.25,
+      "revenue_path": [
+        0.98,
+        1.8,
+        2.3,
+        2.6
+      ],
+      "margin_path": [
+        29.0,
+        30.0,
+        31.0,
+        32.0
+      ],
+      "fcf": [
+        -0.6,
+        -0.25,
+        0.05,
+        0.15
+      ],
+      "diluted_shares": 105.0,
+      "terminal_ev_sales": 1.5,
+      "terminal_net_cash": -0.1,
+      "required_return": 0.18,
+      "terminal_equity_value": 3.8,
+      "terminal_per_share": 36.19,
+      "per_share_value": 20.82
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "revenue_path": [
+        1.05,
+        2.75,
+        3.8,
+        4.5
+      ],
+      "margin_path": [
+        30.5,
+        34.0,
+        36.0,
+        37.0
+      ],
+      "fcf": [
+        -0.52,
+        0.05,
+        0.35,
+        0.6
+      ],
+      "diluted_shares": 101.0,
+      "terminal_ev_sales": 3.75,
+      "terminal_net_cash": 0.15,
+      "required_return": 0.16,
+      "terminal_equity_value": 17.025,
+      "terminal_per_share": 168.56,
+      "per_share_value": 102.68
+    },
+    {
+      "name": "Up",
+      "probability": 0.25,
+      "revenue_path": [
+        1.1,
+        4.1,
+        5.6,
+        6.2
+      ],
+      "margin_path": [
+        31.0,
+        37.0,
+        40.0,
+        40.0
+      ],
+      "fcf": [
+        -0.45,
+        0.3,
+        0.9,
+        1.25
+      ],
+      "diluted_shares": 102.0,
+      "terminal_ev_sales": 4.75,
+      "terminal_net_cash": 0.5,
+      "required_return": 0.14,
+      "terminal_equity_value": 29.95,
+      "terminal_per_share": 293.63,
+      "per_share_value": 189.55
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B Hybrid / expectations-driven stabilized EV/Sales with FCF cross-check",
+    "core": {
+      "status": "NOT_SEPARATELY_VALUED",
+      "reason": "CATV and legacy 100/400G share common manufacturing/capital base; avoiding false precision"
+    },
+    "execution": {
+      "status": "MODELED_IN_SCENARIOS",
+      "down": 20.82,
+      "base": 102.68,
+      "up": 189.55
+    },
+    "ecosystem": {
+      "status": "NO_SEPARATE_OPTION_VALUE",
+      "reason": "CPO/other future optics optionality not separately capitalized"
+    },
+    "drag": {
+      "status": "MODELED",
+      "items": [
+        "diluted share assumptions",
+        "convert",
+        "Amazon warrant",
+        "ATM / RSU / PSU overhang",
+        "working-capital and expansion cash needs"
+      ]
+    },
+    "expected_value": 103.93,
+    "expected_irr": 0.121,
+    "current_price": 113.84,
+    "market_cap_b": 9.666,
+    "ltm_revenue_m": 595.97,
+    "current_ps": 16.22,
+    "expected_value_premium_discount_vs_current": -0.0871,
+    "valuation_range_interpretation": "analytical midpoint ~$104; practical sensitivity band ~$95–115 before new evidence"
+  },
+  "reverse_expectations": {
+    "framework": "101M diluted shares, 16% required return, 3.34 years, +$0.15B terminal net cash",
+    "required_2029_revenue_b_by_terminal_ev_sales": {
+      "3.0": 6.24,
+      "3.5": 5.35,
+      "3.75": 4.99,
+      "4.0": 4.68,
+      "4.5": 4.16
+    },
+    "base_reference_terminal_multiple": 3.75,
+    "base_reference_required_2029_revenue_b": 4.99,
+    "management_mid_2027_monthly_dc_target_m": 471,
+    "management_target_annualized_b": 5.652
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_b": 1.04,
+      "eps": 0.68,
+      "gross_profit_b": 0.316,
+      "gross_margin_pct": 30.44,
+      "fcf_b": -0.521
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_b": 2.66,
+      "eps": 4.6
+    },
+    "analyst_snapshot": {
+      "count": 6,
+      "rating": "Buy",
+      "avg_price_target": 163.4,
+      "median_price_target": 178,
+      "low": 109,
+      "high": 220
+    },
+    "short_interest": {
+      "date": "2026-07-31",
+      "shares_m": 10.434,
+      "float_pct": 12.83
+    },
+    "revision_trend": "Same-vendor long historical revision series not fully available; cross-vendor snapshots not treated as apples-to-apples. Current FY26/FY27 consensus locked."
+  },
+  "stance": {
+    "zone": "WATCH / HOLD — no chase at current price",
+    "price_bands": {
+      "attractive_positive_skew": "≤$80 if KPI reds absent",
+      "selective_accumulation": "$80–100",
+      "watch_hold": "$100–125",
+      "execution_confirmation_required": "$125–155",
+      "up_case_increasingly_priced": ">$155 unless $471M/month bridge is visibly on track"
+    },
+    "horizon": "through YE2029 valuation; 12-month operating monitoring",
+    "current_price_band": "$100–125 watch/hold"
+  },
+  "catalysts": [
+    {
+      "when": "2026-09",
+      "event": "IEEE P802.3dj standards work / September session",
+      "bull": "1.6T ecosystem and interoperability timetable remains on track",
+      "bear": "standards/interoperability issues add qualification friction",
+      "sensitivity": "L-M"
+    },
+    {
+      "when": "2026-Q3",
+      "event": "1.6T qualification and first volume shipments",
+      "bull": "major customer qualification completed; shipment ramp begins",
+      "bear": "qualification slips materially into Q4/2027",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2026-11 (date TBD)",
+      "event": "Q3 2026 earnings",
+      "bull": "800G ≈$60M+; Q3 revenue near/high end; 1.6T on track",
+      "bear": "800G < $45M or 1.6T timing slips",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2026-Q4",
+      "event": "YE26 800G+1.6T capacity / 1.6T revenue milestone",
+      "bull": "qualified capacity near 600–650k/month and material 1.6T revenue",
+      "bear": "capacity <450k or yield bottleneck",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027-02 (date TBD)",
+      "event": "Q4/FY2026 earnings",
+      "bull": "FY revenue near/above $1.1B bridge and GM inflects",
+      "bear": "Q4 fails required ~$467–502M range; cash burn remains extreme",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027-H1",
+      "event": "Pearland/Texas expansion ramp + cash-conversion check",
+      "bull": "capacity converts to qualified shipments; OCF inflects sustainably",
+      "bear": "idle/ramping assets, inventory/AR rise faster than revenue",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027-midyear",
+      "event": "Management $471M/month Data Center revenue checkpoint",
+      "bull": "monthly trajectory credibly approaches target with GM mid/high-30s",
+      "bear": "large gap persists despite installed capacity",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027-Q2 earnings window",
+      "event": "2027 operating model validation",
+      "bull": "Base/Up revenue path and self-funding become visible",
+      "bear": "additional ATM needed without margin/FCF conversion",
+      "sensitivity": "H"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "3.1"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "1"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "3.2"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "3.3"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "3.4 / 4.4"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.5 / Appendix"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "3.6"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "1.3 / 3.7"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "2"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "4 / Appendix"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "4.4"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "4.5 / 5"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "6.3"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "3.6 / 5.2"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "3.6 / 5.2"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "5.1 / Appendix"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "5"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE",
+      "h3_locator": "6"
+    }
+  ],
+  "industry_company_transmission": [
+    {
+      "change": "AI cluster bandwidth and 400G→800G→1.6T migration",
+      "customer_problem": "more bandwidth per switch/GPU interconnect with power/thermal/reach constraints",
+      "company_eligibility": "qualified high-speed pluggables, laser vertical integration, hyperscaler orders, U.S./Taiwan capacity",
+      "value_capture": "higher DC volume and richer speed mix",
+      "leakage": "qualification/yield delays, DSP/component supply, competitive pricing, customer concentration",
+      "financial_proof": "800G/1.6T revenue, GM, OCF, inventory/AR"
+    },
+    {
+      "change": "DOCSIS 4.0 / 1.8GHz HFC upgrades",
+      "customer_problem": "multi-gig service without full fiber rebuild",
+      "company_eligibility": "Quantum Bandwidth / 1.8GHz product portfolio and Mediacom deployment",
+      "value_capture": "CATV hardware revenue and factory absorption",
+      "leakage": "channel/customer concentration and project lumpiness",
+      "financial_proof": "CATV revenue trajectory, channel AR, segment mix and GM"
+    }
+  ],
+  "capital_structure": {
+    "basic_shares_m_asof_2026_08_20": 84.906289,
+    "q3_guide_diluted_shares_m": 92.8,
+    "convert_principal_m": 124.925,
+    "convert_price": 43.31,
+    "convert_economic_shares_m": 2.884,
+    "amazon_warrant_max_shares_m": 7.945399,
+    "amazon_warrant_exercise_price": 23.6956,
+    "amazon_initial_vested_shares_m": 1.324233,
+    "rsu_outstanding_m_aug20": 1.090055,
+    "psu_outstanding_m_aug20": 0.629463,
+    "new_atm_capacity_m": 600,
+    "new_atm_illustrative_shares_at_129_10_m": 4.647561,
+    "new_atm_simple_shares_at_current_price_m": 5.271,
+    "cash_restricted_m_jun30": 508.758
+  },
+  "management_targets": {
+    "q3_2026_revenue_guide_m": [
+      255,
+      290
+    ],
+    "q3_non_gaap_gm_pct": [
+      29.0,
+      30.5
+    ],
+    "q3_non_gaap_eps": [
+      0.11,
+      0.26
+    ],
+    "fy2026_revenue_target_b": ">1.1",
+    "mid_2027_monthly_dc_revenue_m": 471,
+    "mid_2027_monthly_mix_m": {
+      "100G_400G": 90,
+      "800G": 217,
+      "1.6T": 164
+    },
+    "ye2026_800g_1_6t_capacity_units_month": 650000,
+    "q2_2026_capacity_units_month_approx": 200000
+  },
+  "falsification": {
+    "primary": "By 1H27, if revenue scales above roughly $300M/quarter but non-GAAP gross margin does not sustainably exceed ~32% and operating cash flow fails to inflect, the scale-to-economics thesis is falsified even if AI demand remains strong.",
+    "forced_reassessment": "Two or more KPI RED signals at the same time trigger a full re-underwrite.",
+    "hard_break_combo": [
+      "qualified capacity materially below ramp path / 1.6T slip",
+      "non-GAAP GM stays <30% despite high volume",
+      "diluted shares >105M or repeated ATM while OCF remains deeply negative"
+    ]
+  },
+  "source_registry": [
+    {
+      "id": "S01",
+      "type": "primary",
+      "title": "AAOI Q2 2026 Results",
+      "date": "2026-08-06",
+      "url": "https://investors.ao-inc.com/news-releases/news-release-details/applied-optoelectronics-reports-second-quarter-2026-results"
+    },
+    {
+      "id": "S02",
+      "type": "primary",
+      "title": "AAOI Q2 2026 Form 10-Q",
+      "date": "2026-08-06",
+      "url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926026278/aaoi20260630_10q.htm"
+    },
+    {
+      "id": "S03",
+      "type": "primary",
+      "title": "AAOI Q1 2026 Form 10-Q",
+      "date": "2026-05",
+      "url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926015620/aaoi20260331_10q.htm"
+    },
+    {
+      "id": "S04",
+      "type": "primary",
+      "title": "AAOI FY2025 Form 10-K",
+      "date": "2026-02",
+      "url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926005875/aaoi20251231_10k.htm"
+    },
+    {
+      "id": "S05",
+      "type": "primary",
+      "title": "AAOI FY2024 Form 10-K",
+      "date": "2025-03",
+      "url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774925005575/aaoi20241231_10k.htm"
+    },
+    {
+      "id": "S06",
+      "type": "primary",
+      "title": "AAOI Q3 2025 Form 10-Q",
+      "date": "2025-11",
+      "url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774925033627/aaoi20250930_10q.htm"
+    },
+    {
+      "id": "S07",
+      "type": "primary",
+      "title": "AAOI Q2 2024 Form 10-Q",
+      "date": "2024-08",
+      "url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774924024888/aaoi20240630_10q.htm"
+    },
+    {
+      "id": "S08",
+      "type": "primary",
+      "title": "AAOI Aug-21-2026 $600M ATM Prospectus",
+      "date": "2026-08-21",
+      "url": "https://www.sec.gov/Archives/edgar/data/1158114/000110465926099685/"
+    },
+    {
+      "id": "S09",
+      "type": "primary",
+      "title": "AOI First 1.6T Volume Order >$200M",
+      "date": "2026-03-09",
+      "url": "https://investors.ao-inc.com/news-releases/news-release-details/aoi-receives-first-volume-order-16t-data-center-transceivers"
+    },
+    {
+      "id": "S10",
+      "type": "primary",
+      "title": "AOI Pearland Manufacturing Expansion",
+      "date": "2026-07-14",
+      "url": "https://investors.ao-inc.com/news-releases/news-release-details/aoi-begins-expansion-pearland-manufacturing-campus-scale-800g"
+    },
+    {
+      "id": "S11",
+      "type": "primary",
+      "title": "AOI Quarterly Results Registry",
+      "date": "2026-08",
+      "url": "https://investors.ao-inc.com/financial-information/quarterly-results"
+    },
+    {
+      "id": "S12",
+      "type": "primary-industry",
+      "title": "IEEE 802.3dj Task Force",
+      "date": "2026",
+      "url": "https://www.ieee802.org/3/dj/"
+    },
+    {
+      "id": "S13",
+      "type": "primary-industry",
+      "title": "CableLabs DOCSIS 4.0 Technology",
+      "date": "2026",
+      "url": "https://www.cablelabs.com/technologies/docsis-4-0-technology"
+    },
+    {
+      "id": "S14",
+      "type": "company-primary",
+      "title": "AOI-Mediacom DOCSIS 4.0 / Quantum Bandwidth announcement",
+      "date": "2026-05-12",
+      "url": "https://investors.ao-inc.com/news-events/press-releases?page=1"
+    },
+    {
+      "id": "S15",
+      "type": "secondary-market",
+      "title": "Public consensus snapshot (StockAnalysis / S&P Global aggregation)",
+      "date": "2026-08-19",
+      "url": "https://stockanalysis.com/stocks/aaoi/forecast/"
+    },
+    {
+      "id": "S16",
+      "type": "secondary-market",
+      "title": "AAOI historical market valuation / price series",
+      "date": "2026-08-26",
+      "url": "https://www.macrotrends.net/stocks/charts/AAOI/applied-optoelectronics/price-sales"
+    }
+  ],
+  "qa": {
+    "RC_UNRESOLVED": 0,
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "EXPLANATORY_SPACE_ALLOCATION": "PASS",
+    "REPORT_DATA_PACK": "EMITTED",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "PDF": "WAIVED_BY_USER",
+    "HTML_SIDEBAR": "PASS",
+    "TOC_CLICKABLE": "PASS",
+    "SEARCHABLE_TEXT": "PASS",
+    "PUBLISHED_TOP_LEVEL_SCHEMA_MATCH": "PASS",
+    "CONTENT_MEANING_LOCK_PRESERVED": "PASS",
+    "VISUAL_DATA_LINEAGE": "PASS",
+    "VISUAL_SEMANTIC_PARITY": "PASS",
+    "STALE_VISUAL_ASSETS": 0,
+    "PUBLISHING_ACCEPTANCE": "PASS_WITH_PDF_USER_WAIVER"
+  },
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "8Q Revenue Mix",
+      "authoritative_source_block": "financials.quarterly_8q",
+      "source_hash": "8965803edc834f43",
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "Revenue vs Gross Margin",
+      "authoritative_source_block": "financials.quarterly_8q",
+      "source_hash": "8965803edc834f43",
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "Cash Conversion",
+      "authoritative_source_block": "financials.quarterly_8q",
+      "source_hash": "8965803edc834f43",
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "Scenario Revenue Path",
+      "authoritative_source_block": "scenarios",
+      "source_hash": "8965803edc834f43",
+      "status": "PASS"
+    }
+  ]
+}

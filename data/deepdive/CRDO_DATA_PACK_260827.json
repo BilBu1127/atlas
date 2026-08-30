@@ -1,0 +1,1237 @@
+{
+  "meta": {
+    "ticker": "CRDO",
+    "company": "Credo Technology Group Holding Ltd",
+    "T0": "2026-08-27",
+    "price_asof": "2026-08-25 U.S. close",
+    "price_usd": 226.51,
+    "filing_asof": "FY2026 Form 10-K filed 2026-06-15",
+    "transcript_asof": "FY2026 Q4 call 2026-06-01",
+    "consensus_asof": "retrieved 2026-08-27; recent public estimate snapshot",
+    "version": "DDOS v1.7",
+    "report_currency": "USD",
+    "pdf_output": "OMITTED_BY_USER_REQUEST"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "fiscal_year": "FY2024",
+        "revenue_m": 192.97,
+        "gross_profit_m": 119.431,
+        "gross_margin": 0.6189,
+        "rd_m": 96.296,
+        "sga_m": 60.193,
+        "operating_income_m": -37.058,
+        "net_income_m": -28.369,
+        "ocf_m": 32.737,
+        "capex_m": 15.652,
+        "fcf_m": 17.085,
+        "diluted_shares_m": 155.091
+      },
+      {
+        "fiscal_year": "FY2025",
+        "revenue_m": 436.775,
+        "gross_profit_m": 282.909,
+        "gross_margin": 0.6477,
+        "rd_m": 146.867,
+        "sga_m": 98.918,
+        "operating_income_m": 37.124,
+        "net_income_m": 52.183,
+        "ocf_m": 65.083,
+        "capex_m": 36.061,
+        "fcf_m": 29.022,
+        "diluted_shares_m": 181.158
+      },
+      {
+        "fiscal_year": "FY2026",
+        "revenue_m": 1335.116,
+        "gross_profit_m": 908.349,
+        "gross_margin": 0.6803,
+        "rd_m": 279.381,
+        "sga_m": 183.963,
+        "operating_income_m": 445.005,
+        "net_income_m": 472.279,
+        "ocf_m": 464.292,
+        "capex_m": 57.296,
+        "fcf_m": 406.996,
+        "diluted_shares_m": 188.232
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "FY25 Q1",
+        "revenue_m": 59.714,
+        "gross_margin": 0.624,
+        "opex_m": 51.734,
+        "net_income_m": -9.54,
+        "ocf_m": -7.236,
+        "capex_m": 5.863,
+        "fcf_m": -13.099
+      },
+      {
+        "quarter": "FY25 Q2",
+        "revenue_m": 72.034,
+        "gross_margin": 0.632,
+        "opex_m": 53.9,
+        "net_income_m": -4.2,
+        "ocf_m": 10.285,
+        "capex_m": 21.948,
+        "fcf_m": -11.663
+      },
+      {
+        "quarter": "FY25 Q3",
+        "revenue_m": 135.002,
+        "gross_margin": 0.636,
+        "opex_m": 59.732,
+        "net_income_m": 29.4,
+        "ocf_m": 4.212,
+        "capex_m": 4.595,
+        "fcf_m": -0.383
+      },
+      {
+        "quarter": "FY25 Q4",
+        "revenue_m": 170.025,
+        "gross_margin": 0.672,
+        "opex_m": 80.4,
+        "net_income_m": 36.6,
+        "ocf_m": 57.822,
+        "capex_m": 3.655,
+        "fcf_m": 54.167
+      },
+      {
+        "quarter": "FY26 Q1",
+        "revenue_m": 223.074,
+        "gross_margin": 0.674,
+        "opex_m": 89.6,
+        "net_income_m": 63.399,
+        "ocf_m": 54.168,
+        "capex_m": 2.821,
+        "fcf_m": 51.347
+      },
+      {
+        "quarter": "FY26 Q2",
+        "revenue_m": 268.027,
+        "gross_margin": 0.675,
+        "opex_m": 102.3,
+        "net_income_m": 82.6,
+        "ocf_m": 61.665,
+        "capex_m": 23.188,
+        "fcf_m": 38.477
+      },
+      {
+        "quarter": "FY26 Q3",
+        "revenue_m": 407.012,
+        "gross_margin": 0.685,
+        "opex_m": 129.246,
+        "net_income_m": 157.1,
+        "ocf_m": 166.217,
+        "capex_m": 26.514,
+        "fcf_m": 139.703
+      },
+      {
+        "quarter": "FY26 Q4",
+        "revenue_m": 437.003,
+        "gross_margin": 0.682,
+        "opex_m": 142.2,
+        "net_income_m": 169.1,
+        "ocf_m": 182.242,
+        "capex_m": 4.773,
+        "fcf_m": 177.469
+      }
+    ],
+    "ceilings": [
+      "DustPhotonics purchase-price allocation, acquired amortization and standalone gross margin are not filed before FY27 Q1 10-Q.",
+      "Exact product-level gross margin and customer-level ASP/link counts are not publicly disclosed."
+    ]
+  },
+  "customers": {
+    "fy26_top10_share": 0.9,
+    "fy26_top3_end_customer_shares": [
+      0.32,
+      0.33,
+      0.19
+    ],
+    "fy26_q4_top4_shares": [
+      0.34,
+      0.27,
+      0.16,
+      0.1
+    ],
+    "contract_note": "Generally purchase-order based; no general long-term/minimum purchase commitments; contracting customer may be a contract manufacturer rather than end customer."
+  },
+  "management": {
+    "guidance_history": [
+      {
+        "quarter": "FY25 Q2",
+        "low_m": 65,
+        "high_m": 68,
+        "actual_m": 72.034,
+        "beat_vs_high_pct": 0.059323529411764886
+      },
+      {
+        "quarter": "FY25 Q3",
+        "low_m": 115,
+        "high_m": 125,
+        "actual_m": 135.002,
+        "beat_vs_high_pct": 0.08001600000000009
+      },
+      {
+        "quarter": "FY25 Q4",
+        "low_m": 155,
+        "high_m": 165,
+        "actual_m": 170.025,
+        "beat_vs_high_pct": 0.030454545454545512
+      },
+      {
+        "quarter": "FY26 Q1",
+        "low_m": 185,
+        "high_m": 195,
+        "actual_m": 223.074,
+        "beat_vs_high_pct": 0.14396923076923085
+      },
+      {
+        "quarter": "FY26 Q2",
+        "low_m": 230,
+        "high_m": 240,
+        "actual_m": 268.027,
+        "beat_vs_high_pct": 0.11677916666666666
+      },
+      {
+        "quarter": "FY26 Q3",
+        "low_m": 335,
+        "high_m": 345,
+        "actual_m": 407.012,
+        "beat_vs_high_pct": 0.17974492753623195
+      },
+      {
+        "quarter": "FY26 Q4",
+        "low_m": 425,
+        "high_m": 435,
+        "actual_m": 437.003,
+        "beat_vs_high_pct": 0.004604597701149293
+      }
+    ],
+    "average_beat_vs_high_pct": 0.08784171393422703,
+    "fy27_q1_guide_m": [
+      465,
+      475
+    ],
+    "ceo_special_psu": {
+      "total_shares_m": 1.437,
+      "performance_end": "2031-06-30",
+      "revenue_hurdles_bn": [
+        2.5,
+        3.5,
+        4.5,
+        5.5,
+        6.5,
+        7.5
+      ],
+      "stock_price_hurdles_usd": [
+        244.7,
+        293.64,
+        342.58,
+        391.52,
+        440.46,
+        489.4
+      ]
+    }
+  },
+  "accounting_quality": {
+    "sbc_m": {
+      "FY2024": 39.022,
+      "FY2025": 77.355,
+      "FY2026": 182.638
+    },
+    "fy26_sbc_revenue": 0.13679560427708154,
+    "fy26_sbc_net_income": 0.3867163265781456,
+    "fy26_sbc_cash_fcf": 0.4487464250262902,
+    "inventory_m": {
+      "FY2025": 90.029,
+      "FY2026": 250.831
+    },
+    "fy26_inventory_write_down_m": 15.116,
+    "fy26_inventory_cash_outflow_m": 174.036,
+    "fy26_atm_net_proceeds_m": 736.327,
+    "dust_final_cash_consideration_m": 770,
+    "dust_initial_shares_m": 0.8,
+    "dust_contingent_shares_m": 2.8,
+    "dust_contingent_cash_m": 31.6,
+    "screen": "PASS_WITH_FLAGS"
+  },
+  "supply_chain": {
+    "foundry": "TSMC",
+    "assembly_test": [
+      "Amkor",
+      "ASE",
+      "KYEC",
+      "Sigurd"
+    ],
+    "aec_assembly_includes": "BizLink",
+    "fy27_manufacturing_vendor_commitments_m": 333.503,
+    "inventory_purchase_orders_due_within_year_m": 149.2
+  },
+  "kpis": [
+    {
+      "name": "Top-4 customer concentration",
+      "history": [
+        {
+          "period": "FY26 Q4",
+          "value": 0.87
+        }
+      ],
+      "current": 0.87,
+      "thresholds": {
+        "green": "<70%",
+        "yellow": "70–80%",
+        "red": ">80%"
+      },
+      "status": "red",
+      "value_link": "낮아질수록 단일 architecture/design-win 의존도가 완화된다."
+    },
+    {
+      "name": "FY27 optical revenue",
+      "history": [
+        {
+          "period": "FY27 management target",
+          "value_m": 600
+        }
+      ],
+      "current": 600,
+      "thresholds": {
+        "green": ">=$600M",
+        "yellow": "$450–600M",
+        "red": "<$450M"
+      },
+      "status": "pending",
+      "value_link": "두 번째 성장엔진의 실증."
+    },
+    {
+      "name": "GAAP gross margin",
+      "history": [
+        {
+          "period": "FY25",
+          "value": 0.6477
+        },
+        {
+          "period": "FY26",
+          "value": 0.6803
+        }
+      ],
+      "current": 0.6803,
+      "thresholds": {
+        "green": ">=66%",
+        "yellow": "63–66%",
+        "red": "<63%"
+      },
+      "status": "green",
+      "value_link": "제품 mix와 pricing/yield의 가치 포착."
+    },
+    {
+      "name": "Inventory / revenue",
+      "history": [
+        {
+          "period": "FY25",
+          "value": 0.20612214526930342
+        },
+        {
+          "period": "FY26",
+          "value": 0.18787206504902945
+        }
+      ],
+      "current": 0.18787206504902945,
+      "thresholds": {
+        "green": "<18% and stable",
+        "yellow": "18–23% or rising",
+        "red": ">23% or write-down spike"
+      },
+      "status": "yellow",
+      "value_link": "선행공급 확보와 수요 miss 위험의 균형."
+    },
+    {
+      "name": "SBC / revenue",
+      "history": [
+        {
+          "period": "FY24",
+          "value": 0.20221796134114112
+        },
+        {
+          "period": "FY25",
+          "value": 0.1771049167191346
+        },
+        {
+          "period": "FY26",
+          "value": 0.13679560427708154
+        }
+      ],
+      "current": 0.13679560427708154,
+      "thresholds": {
+        "green": "<10%",
+        "yellow": "10–15%",
+        "red": ">15%"
+      },
+      "status": "yellow",
+      "value_link": "per-share FCF와 희석 drag."
+    },
+    {
+      "name": "Cash FCF margin",
+      "history": [
+        {
+          "period": "FY24",
+          "value": 0.0885370783023268
+        },
+        {
+          "period": "FY25",
+          "value": 0.06644611069772766
+        },
+        {
+          "period": "FY26",
+          "value": 0.3048394296825145
+        }
+      ],
+      "current": 0.3048394296825145,
+      "thresholds": {
+        "green": ">=25%",
+        "yellow": "15–25%",
+        "red": "<15%"
+      },
+      "status": "green",
+      "value_link": "회계이익이 현금으로 전환되는 정도."
+    },
+    {
+      "name": "Revenue guidance delivery",
+      "history": [
+        {
+          "period": "FY25 Q2",
+          "value": 0.059323529411764886
+        },
+        {
+          "period": "FY25 Q3",
+          "value": 0.08001600000000009
+        },
+        {
+          "period": "FY25 Q4",
+          "value": 0.030454545454545512
+        },
+        {
+          "period": "FY26 Q1",
+          "value": 0.14396923076923085
+        },
+        {
+          "period": "FY26 Q2",
+          "value": 0.11677916666666666
+        },
+        {
+          "period": "FY26 Q3",
+          "value": 0.17974492753623195
+        },
+        {
+          "period": "FY26 Q4",
+          "value": 0.004604597701149293
+        }
+      ],
+      "current": 0.08784171393422703,
+      "thresholds": {
+        "green": "actual >= guide high",
+        "yellow": "within range",
+        "red": "below guide low"
+      },
+      "status": "green",
+      "value_link": "management execution credibility."
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.3,
+      "revenue_path_bn": [
+        2.3,
+        2.55,
+        2.85,
+        3.2
+      ],
+      "gross_margin_path": [
+        0.655,
+        0.65,
+        0.645,
+        0.64
+      ],
+      "fcf_margin_path": [
+        0.22,
+        0.23,
+        0.24,
+        0.25
+      ],
+      "diluted_shares_m": 206,
+      "net_cash_fy30_bn": 1.8,
+      "terminal_fcf_multiple": 18,
+      "years": [
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "fcf_path_m": [
+        506.0,
+        586.5,
+        684.0,
+        800.0
+      ],
+      "terminal_equity_m": 16200.0,
+      "terminal_per_share_value": 78.64,
+      "per_share_value": 49.98,
+      "scenario_irr_from_current": -0.232391
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "revenue_path_bn": [
+        2.46,
+        3.6,
+        4.75,
+        5.6
+      ],
+      "gross_margin_path": [
+        0.67,
+        0.67,
+        0.67,
+        0.665
+      ],
+      "fcf_margin_path": [
+        0.31,
+        0.34,
+        0.37,
+        0.38
+      ],
+      "diluted_shares_m": 202,
+      "net_cash_fy30_bn": 3.5,
+      "terminal_fcf_multiple": 24,
+      "years": [
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "fcf_path_m": [
+        762.6,
+        1224.0,
+        1757.5,
+        2128.0
+      ],
+      "terminal_equity_m": 54572.0,
+      "terminal_per_share_value": 270.16,
+      "per_share_value": 171.69,
+      "scenario_irr_from_current": 0.04504
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.2,
+      "revenue_path_bn": [
+        2.55,
+        4.05,
+        5.7,
+        7.1
+      ],
+      "gross_margin_path": [
+        0.675,
+        0.68,
+        0.685,
+        0.69
+      ],
+      "fcf_margin_path": [
+        0.32,
+        0.37,
+        0.4,
+        0.42
+      ],
+      "diluted_shares_m": 201,
+      "net_cash_fy30_bn": 4.8,
+      "terminal_fcf_multiple": 28,
+      "years": [
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "fcf_path_m": [
+        816.0,
+        1498.5,
+        2280.0,
+        2982.0
+      ],
+      "terminal_equity_m": 88296.0,
+      "terminal_per_share_value": 439.28,
+      "per_share_value": 279.17,
+      "scenario_irr_from_current": 0.180088
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.1,
+      "revenue_path_bn": [
+        2.58,
+        4.3,
+        6.2,
+        8.5
+      ],
+      "gross_margin_path": [
+        0.675,
+        0.685,
+        0.695,
+        0.7
+      ],
+      "fcf_margin_path": [
+        0.31,
+        0.37,
+        0.42,
+        0.44
+      ],
+      "diluted_shares_m": 203,
+      "net_cash_fy30_bn": 5.4,
+      "terminal_fcf_multiple": 30,
+      "years": [
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "fcf_path_m": [
+        799.8,
+        1591.0,
+        2604.0,
+        3740.0
+      ],
+      "terminal_equity_m": 117600.0,
+      "terminal_per_share_value": 579.31,
+      "per_share_value": 368.16,
+      "scenario_irr_from_current": 0.264608
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B Hybrid / Expectation-Driven v3.3",
+    "hurdle_rate": 0.12,
+    "horizon_years": 4,
+    "core": 92.0,
+    "execution": 92.0,
+    "ecosystem": 8.0,
+    "drag": 15.68,
+    "expected_value": 176.32,
+    "weighted_future_value": 277.44,
+    "expected_irr": 0.052014,
+    "current_price": 226.51,
+    "base_value": 171.69,
+    "bear_value": 49.98,
+    "bull_execution_value": 279.17,
+    "bull_ecosystem_value": 368.16,
+    "upside_downside_ratio_exec_vs_bear": 0.298,
+    "upside_downside_ratio_blended_bull_vs_bear": 0.466,
+    "current_ev_forward_sales_approx": {
+      "FY2027": 17.1,
+      "FY2028": 11.4,
+      "FY2029": 8.75
+    },
+    "note": "EV/Sales approximations use FY2026 diluted-weighted market-cap cross-check and pro-forma liquid cash after Dust cash consideration; they are cross-checks, not the governing valuation engine."
+  },
+  "reverse_expectations": {
+    "required_terminal_share_price_2030": 356.42,
+    "assumptions": {
+      "hurdle_rate": 0.12,
+      "fy30_diluted_shares_m": 202,
+      "fy30_net_cash_bn": 3.5,
+      "terminal_fcf_multiple": 24,
+      "fcf_margin": 0.38,
+      "gross_margin": 0.67,
+      "ebit_margin": 0.42
+    },
+    "required_fy30_revenue_bn": 7.51,
+    "required_fy30_gross_profit_bn": 5.03,
+    "required_fy30_ebit_bn": 3.15,
+    "required_fy30_fcf_bn": 2.85,
+    "required_revenue_cagr_from_fy26": 0.540063,
+    "required_revenue_cagr_from_fy27_consensus": 0.450509,
+    "terminal_multiple_sensitivity": [
+      {
+        "terminal_fcf_multiple": 20,
+        "required_fy30_revenue_bn": 9.01
+      },
+      {
+        "terminal_fcf_multiple": 24,
+        "required_fy30_revenue_bn": 7.51
+      },
+      {
+        "terminal_fcf_multiple": 28,
+        "required_fy30_revenue_bn": 6.44
+      },
+      {
+        "terminal_fcf_multiple": 30,
+        "required_fy30_revenue_bn": 6.01
+      }
+    ],
+    "industry_kpi_translation": "Base-like economics at a 12% hurdle require roughly $7.5B FY2030 revenue. That is close to the top end of the CEO revenue hurdle ladder and implies several large hyperscaler/NeoCloud wins plus material optical scale; exact market-share denominator/link count is PRIMARY_SOURCE_CEILING."
+  },
+  "consensus": {
+    "fy1": {
+      "year": "FY2027",
+      "revenue_bn": 2.461,
+      "growth": 0.8432855272500666,
+      "net_income_bn": 1.005
+    },
+    "fy2": {
+      "year": "FY2028",
+      "revenue_bn": 3.691,
+      "growth": 0.4997968305566842,
+      "net_income_bn": 1.583
+    },
+    "fy3": {
+      "year": "FY2029",
+      "revenue_bn": 4.796,
+      "growth": 0.2993768626388513,
+      "net_income_bn": 1.871
+    },
+    "management_fy27_growth_floor": 0.8,
+    "management_fy27_revenue_floor_bn": 2.4032088,
+    "revision_trend": "Public price targets/estimates remain bullish; exact real-time positioning and revision breadth are PRIMARY_SOURCE_CEILING."
+  },
+  "stance": {
+    "zone": "WATCH / REDUCE AT CURRENT PRICE",
+    "price_bands": {
+      ">200": "회피/축소 검토 — expected return가 hurdle에 크게 못 미침",
+      "175-200": "관망 — 좋은 실행을 요구하면서 upside/downside가 불충분",
+      "140-175": "조건부 관심 — weighted expected IRR 약 12% 이상, blended bull/bear U/D 약 1x 이상으로 개선",
+      "<=140": "적극 관심 후보 — 대략 $135 부근부터 blended bull/bear U/D가 2x에 접근/상회"
+    },
+    "attractive_entry_band_usd": [
+      140,
+      175
+    ],
+    "buy_zone_trigger_usd": 140,
+    "strong_buy_asymmetry_approx_usd": 135,
+    "horizon": "FY2030 / ~4 years",
+    "falsification": [
+      "FY27 optical revenue materially below $450M or repeated optical ramp delay",
+      "Top-4 customer concentration remains >80% without new durable 10% customers",
+      "GAAP gross margin <63% with inventory write-down acceleration",
+      "SBC/revenue returns above 15% while diluted shares outgrow revenue per share",
+      "AEC/retimer growth stalls before optical reaches scale",
+      "Current price rises materially without upward revision to multi-year FCF path"
+    ]
+  },
+  "catalysts": [
+    {
+      "when": "2026-09-01",
+      "event": "FY2027 Q1 results",
+      "sensitivity": "매우 높음 — $465–475M guide, customer mix, optical ramp timing, post-Dust accounting 확인"
+    },
+    {
+      "when": "FY2027 H2",
+      "event": "Optical revenue inflection expected by management",
+      "sensitivity": "매우 높음 — $600M+ full-year target의 핵심 증거"
+    },
+    {
+      "when": "2026–2027",
+      "event": "1.6T / 200G-lane AEC & optical deployments",
+      "sensitivity": "높음 — content duration과 competition 검증"
+    },
+    {
+      "when": "ongoing",
+      "event": "Additional hyperscaler / NeoCloud diversification",
+      "sensitivity": "높음 — customer concentration 완화 여부"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1.1–1.6"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.1.3 + Appendix A"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.2"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.5"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.3"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.2.3 + Ch.3.3 + Ch.4.4"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.4"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.6"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.7 + Ch.4.3"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.2.1–2.4"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4.1–4.2 + Appendix B"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4.3–4.4"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4.4 + Ch.5.4"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.6.3"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.5.2 + Ch.6.2"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5.5"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.5.6 + Ch.6.4"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "FY2026 Form 10-K",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828026043303/crdo-20260502.htm"
+    },
+    {
+      "id": "S02",
+      "title": "FY2026 Q3 Form 10-Q",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828026014017/crdo-20260131.htm"
+    },
+    {
+      "id": "S03",
+      "title": "FY2026 Q2 Form 10-Q",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828025054549/crdo-20251101.htm"
+    },
+    {
+      "id": "S04",
+      "title": "FY2026 Q1 Form 10-Q",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/1807794/000180779425000021/crdo-20250802.htm"
+    },
+    {
+      "id": "S05",
+      "title": "FY2025 Q3 Form 10-Q",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828025011738/crdo-20250201.htm"
+    },
+    {
+      "id": "S06",
+      "title": "FY2025 Q2 Form 10-Q",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828024049786/crdo-20241102.htm"
+    },
+    {
+      "id": "S07",
+      "title": "FY2025 Q1 Form 10-Q",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828024039562/crdo-20240803.htm"
+    },
+    {
+      "id": "S08",
+      "title": "FY2026 results / FY27 Q1 guide",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828026039474/credoq42026ex-991.htm"
+    },
+    {
+      "id": "S09",
+      "title": "CEO Special PSU Form 8-K",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828026039474/crdo-20260528.htm"
+    },
+    {
+      "id": "S10",
+      "title": "Q1 FY27 earnings schedule",
+      "type": "primary",
+      "url": "https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Schedules-First-Quarter-Fiscal-Year-2027-Financial-Results-Conference-Call/default.aspx"
+    },
+    {
+      "id": "S11",
+      "title": "ZeroFlap AEC product page",
+      "type": "primary_vendor",
+      "url": "https://credosemi.com/products/zeroflapaec/"
+    },
+    {
+      "id": "S12",
+      "title": "Bluebird optical DSP product page",
+      "type": "primary_vendor",
+      "url": "https://credosemi.com/products/optical-dsp/bluebird/"
+    },
+    {
+      "id": "S13",
+      "title": "ZeroFlap Optics GA release",
+      "type": "primary_vendor",
+      "url": "https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Launches-800G-ZeroFlap-Optical-Transceivers-Engineered-for-AI-Networks/default.aspx"
+    },
+    {
+      "id": "S14",
+      "title": "OFC 2026 showcase",
+      "type": "primary_vendor",
+      "url": "https://investors.credosemi.com/news-events/news/news-details/2026/Credo-to-Showcase-Optical-Solutions-for-AI-Scale-Out-Fabrics-at-OFC-2026/default.aspx"
+    },
+    {
+      "id": "S15",
+      "title": "OmniConnect OCP contribution",
+      "type": "primary_vendor",
+      "url": "https://investors.credosemi.com/news-events/news/news-details/2026/Credo-to-Contribute-OmniConnect-Scale-In-Interconnect-Solution-to-the-Open-Compute-Project-to-Address-AI-Inference-Memory-Wall/default.aspx"
+    },
+    {
+      "id": "S16",
+      "title": "Astera Taurus Ethernet Smart Cable Modules",
+      "type": "competitor_primary",
+      "url": "https://www.asteralabs.com/products/taurus-ethernet-smart-cable-modules/"
+    },
+    {
+      "id": "S17",
+      "title": "Marvell Alaska A 1.6T AEC",
+      "type": "competitor_primary",
+      "url": "https://www.marvell.com/company/newsroom/marvell-extends-connectivity-leadership-industry-first-1-6t-pam4-dsp-active-electrical-cables.html"
+    },
+    {
+      "id": "S18",
+      "title": "Marvell 1.6T optical DSP portfolio",
+      "type": "competitor_primary",
+      "url": "https://www.marvell.com/company/newsroom/marvell-1-6t-optical-dsp-ai-data-center-connectivity.html"
+    },
+    {
+      "id": "S19",
+      "title": "Broadcom OFC 2026 AI connectivity portfolio",
+      "type": "competitor_primary",
+      "url": "https://www.broadcom.com/company/news/product-releases/64036"
+    },
+    {
+      "id": "S20",
+      "title": "Q4 FY2026 earnings-call transcript",
+      "type": "secondary",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/06/01/credo-crdo-q4-2026-earnings-transcript/"
+    },
+    {
+      "id": "S21",
+      "title": "Recent analyst estimate snapshot",
+      "type": "secondary",
+      "url": "https://simplywall.st/stocks/us/semiconductors/nasdaq-crdo/credo-technology-group-holding/future"
+    },
+    {
+      "id": "S22",
+      "title": "CRDO price history snapshot",
+      "type": "secondary",
+      "url": "https://www.financecharts.com/stocks/CRDO/summary/price"
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "3Y Revenue & Cash FCF",
+      "authoritative_source_block": {
+        "annual_3y": [
+          {
+            "year": "FY2024",
+            "revenue_m": 192.97,
+            "fcf_m": 17.085
+          },
+          {
+            "year": "FY2025",
+            "revenue_m": 436.775,
+            "fcf_m": 29.022
+          },
+          {
+            "year": "FY2026",
+            "revenue_m": 1335.116,
+            "fcf_m": 406.996
+          }
+        ]
+      },
+      "source_version_or_hash": "3319eb36e24aed90",
+      "narrative_locator": "Ch.4.1",
+      "table_locator": "Ch.4.1",
+      "caption_locator": "VIS-001",
+      "rendered_asset_locator": "#vis-001",
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "Latest 8Q Revenue & GAAP GM",
+      "authoritative_source_block": {
+        "quarterly_8q": [
+          {
+            "q": "FY25 Q1",
+            "revenue_m": 59.714,
+            "gross_margin": 0.624
+          },
+          {
+            "q": "FY25 Q2",
+            "revenue_m": 72.034,
+            "gross_margin": 0.632
+          },
+          {
+            "q": "FY25 Q3",
+            "revenue_m": 135.002,
+            "gross_margin": 0.636
+          },
+          {
+            "q": "FY25 Q4",
+            "revenue_m": 170.025,
+            "gross_margin": 0.672
+          },
+          {
+            "q": "FY26 Q1",
+            "revenue_m": 223.074,
+            "gross_margin": 0.674
+          },
+          {
+            "q": "FY26 Q2",
+            "revenue_m": 268.027,
+            "gross_margin": 0.675
+          },
+          {
+            "q": "FY26 Q3",
+            "revenue_m": 407.012,
+            "gross_margin": 0.685
+          },
+          {
+            "q": "FY26 Q4",
+            "revenue_m": 437.003,
+            "gross_margin": 0.682
+          }
+        ]
+      },
+      "source_version_or_hash": "81d8e50d52c43795",
+      "narrative_locator": "Ch.4.2",
+      "table_locator": "Appendix B",
+      "caption_locator": "VIS-002",
+      "rendered_asset_locator": "#vis-002",
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "Q4 FY26 Customer Concentration",
+      "authoritative_source_block": {
+        "q4_top4": [
+          0.34,
+          0.27,
+          0.16,
+          0.1
+        ]
+      },
+      "source_version_or_hash": "390a3220d71bb086",
+      "narrative_locator": "Ch.3.5",
+      "table_locator": "Ch.3.5",
+      "caption_locator": "VIS-003",
+      "rendered_asset_locator": "#vis-003",
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "Management Revenue Guide Delivery",
+      "authoritative_source_block": {
+        "guidance": [
+          {
+            "q": "FY25 Q2",
+            "high_m": 68,
+            "actual_m": 72.034
+          },
+          {
+            "q": "FY25 Q3",
+            "high_m": 125,
+            "actual_m": 135.002
+          },
+          {
+            "q": "FY25 Q4",
+            "high_m": 165,
+            "actual_m": 170.025
+          },
+          {
+            "q": "FY26 Q1",
+            "high_m": 195,
+            "actual_m": 223.074
+          },
+          {
+            "q": "FY26 Q2",
+            "high_m": 240,
+            "actual_m": 268.027
+          },
+          {
+            "q": "FY26 Q3",
+            "high_m": 345,
+            "actual_m": 407.012
+          },
+          {
+            "q": "FY26 Q4",
+            "high_m": 435,
+            "actual_m": 437.003
+          }
+        ]
+      },
+      "source_version_or_hash": "b3ab8153d2efe3b2",
+      "narrative_locator": "Ch.2.1",
+      "table_locator": "Appendix C",
+      "caption_locator": "VIS-004",
+      "rendered_asset_locator": "#vis-004",
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-005",
+      "figure_title": "Scenario Present Value / Share",
+      "authoritative_source_block": {
+        "scenarios": [
+          {
+            "name": "Bear",
+            "probability": 0.3,
+            "pv": 49.98
+          },
+          {
+            "name": "Base",
+            "probability": 0.4,
+            "pv": 171.69
+          },
+          {
+            "name": "Bull Execution",
+            "probability": 0.2,
+            "pv": 279.17
+          },
+          {
+            "name": "Bull Ecosystem",
+            "probability": 0.1,
+            "pv": 368.16
+          }
+        ],
+        "current_price": 226.51
+      },
+      "source_version_or_hash": "3ddcbe190c45170f",
+      "narrative_locator": "Ch.5.3",
+      "table_locator": "Ch.5.3",
+      "caption_locator": "VIS-005",
+      "rendered_asset_locator": "#vis-005",
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-006",
+      "figure_title": "Reverse Expectations — FY30 Revenue Required",
+      "authoritative_source_block": {
+        "sensitivity": [
+          {
+            "terminal_fcf_multiple": 20,
+            "required_fy30_revenue_bn": 9.01
+          },
+          {
+            "terminal_fcf_multiple": 24,
+            "required_fy30_revenue_bn": 7.51
+          },
+          {
+            "terminal_fcf_multiple": 28,
+            "required_fy30_revenue_bn": 6.44
+          },
+          {
+            "terminal_fcf_multiple": 30,
+            "required_fy30_revenue_bn": 6.01
+          }
+        ],
+        "base_required": 7.51
+      },
+      "source_version_or_hash": "3fdede10e4aade48",
+      "narrative_locator": "Ch.5.5",
+      "table_locator": "Appendix D",
+      "caption_locator": "VIS-006",
+      "rendered_asset_locator": "#vis-006",
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-007",
+      "figure_title": "KPI Traffic Lights",
+      "authoritative_source_block": {
+        "kpis": [
+          {
+            "name": "Top-4 customer concentration",
+            "status": "red"
+          },
+          {
+            "name": "FY27 optical revenue",
+            "status": "pending"
+          },
+          {
+            "name": "GAAP gross margin",
+            "status": "green"
+          },
+          {
+            "name": "Inventory / revenue",
+            "status": "yellow"
+          },
+          {
+            "name": "SBC / revenue",
+            "status": "yellow"
+          },
+          {
+            "name": "Cash FCF margin",
+            "status": "green"
+          },
+          {
+            "name": "Revenue guidance delivery",
+            "status": "green"
+          }
+        ]
+      },
+      "source_version_or_hash": "1e7fd4350d35bf18",
+      "narrative_locator": "Ch.6.3",
+      "table_locator": "Ch.6.3",
+      "caption_locator": "VIS-007",
+      "rendered_asset_locator": "#vis-007",
+      "status": "PASS"
+    }
+  ],
+  "publishing_qa": {
+    "REPORT_DATA_PACK": "EMITTED",
+    "DATA_PACK_REPORT_PARITY": "PENDING_RENDER",
+    "CONTENT_MEANING_LOCK_PRESERVED": "PENDING_RENDER",
+    "PUBLISHED_TOP_LEVEL_SCHEMA_MATCH": "PENDING_RENDER",
+    "EXPLANATORY_DEPTH_PRESERVED": "PENDING_RENDER",
+    "HTML_SIDEBAR": "PENDING_RENDER",
+    "SEARCHABLE_TEXT": "PENDING_RENDER",
+    "KOREAN_PROSE_QUALITY": "PENDING_RENDER",
+    "INDUSTRY_COMPANY_NARRATIVE": "PENDING_RENDER",
+    "EXPLANATORY_SPACE_ALLOCATION": "PENDING_RENDER",
+    "VISUAL_SEMANTIC_PARITY": "PENDING_RENDER",
+    "FIGURE_NUMERICAL_PARITY": "PENDING_RENDER",
+    "PDF_BOOKMARKS": "SKIPPED_BY_USER_OUTPUT_SCOPE",
+    "CONTACT_SHEET_COMPOSITION_QA": "SKIPPED_BY_USER_OUTPUT_SCOPE"
+  }
+}

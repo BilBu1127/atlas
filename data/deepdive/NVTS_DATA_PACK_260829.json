@@ -1,0 +1,1329 @@
+{
+  "meta": {
+    "ticker": "NVTS",
+    "company": "Navitas Semiconductor Corporation",
+    "T0": "2026-08-29T23:06:00+09:00",
+    "price_asof": "2026-08-28",
+    "price_usd": 11.49,
+    "filing_asof": "2026-08-25",
+    "latest_10q_period": "2026-06-30",
+    "latest_10q_filed": "2026-07-27",
+    "consensus_asof": "2026-07-28",
+    "publishing_date_kst": "2026-08-29",
+    "version": "Clean DDOS Production OS v1.7",
+    "valuation_mode": "Mode A — Option-led",
+    "currency": "USD",
+    "units": "USD millions unless otherwise noted"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue": 79.456,
+        "cost_of_revenue_ex_intangible_amort": 48.392,
+        "product_gross_profit": 31.064,
+        "product_gross_margin_pct": 39.0959,
+        "operating_loss": -118.132,
+        "operating_cash_flow": -41.379,
+        "capex": 4.782,
+        "free_cash_flow": -46.161,
+        "year_end_cash": 151.892
+      },
+      {
+        "year": 2024,
+        "revenue": 83.302,
+        "cost_of_revenue_ex_intangible_amort": 54.963,
+        "product_gross_profit": 28.339,
+        "product_gross_margin_pct": 34.0196,
+        "operating_loss": -130.675,
+        "operating_cash_flow": -58.823,
+        "capex": 6.771,
+        "free_cash_flow": -65.594,
+        "year_end_cash": 86.737
+      },
+      {
+        "year": 2025,
+        "revenue": 45.916,
+        "cost_of_revenue_ex_intangible_amort": 31.668,
+        "product_gross_profit": 14.248,
+        "product_gross_margin_pct": 31.0306,
+        "operating_loss": -107.764,
+        "operating_cash_flow": -42.891,
+        "capex": 1.478,
+        "free_cash_flow": -44.369,
+        "year_end_cash": 236.857
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "2024Q3",
+        "revenue": 21.681,
+        "qoq_pct": null,
+        "product_gross_margin_pct": 39.7214
+      },
+      {
+        "quarter": "2024Q4",
+        "revenue": 17.978,
+        "qoq_pct": -17.0795,
+        "product_gross_margin_pct": 12.3596,
+        "note": "Derived from FY2024 less 9M2024; inventory write-down distorted margin."
+      },
+      {
+        "quarter": "2025Q1",
+        "revenue": 14.018,
+        "qoq_pct": -22.0269,
+        "product_gross_margin_pct": 37.8585
+      },
+      {
+        "quarter": "2025Q2",
+        "revenue": 14.49,
+        "qoq_pct": 3.3671,
+        "product_gross_margin_pct": 16.0663,
+        "note": "China SiC inventory reserve distorted margin."
+      },
+      {
+        "quarter": "2025Q3",
+        "revenue": 10.112,
+        "qoq_pct": -30.2139,
+        "product_gross_margin_pct": 37.8857,
+        "non_gaap_gross_margin_pct": 38.7,
+        "gaap_gross_margin_pct": -2.0
+      },
+      {
+        "quarter": "2025Q4",
+        "revenue": 7.296,
+        "qoq_pct": -27.8481,
+        "product_gross_margin_pct": 38.1305,
+        "non_gaap_gross_margin_pct": 38.7,
+        "gaap_gross_margin_pct": -17.2
+      },
+      {
+        "quarter": "2026Q1",
+        "revenue": 8.598,
+        "qoq_pct": 17.8454,
+        "product_gross_margin_pct": 37.6483,
+        "non_gaap_gross_margin_pct": 39.0,
+        "gaap_gross_margin_pct": -9.3
+      },
+      {
+        "quarter": "2026Q2",
+        "revenue": 10.529,
+        "qoq_pct": 22.4587,
+        "product_gross_margin_pct": 38.7311,
+        "non_gaap_gross_margin_pct": 39.5,
+        "gaap_gross_margin_pct": 0.4
+      }
+    ],
+    "current_balance_sheet": {
+      "as_of": "2026-06-30",
+      "cash": 557.409,
+      "accounts_receivable": 4.767,
+      "inventory": 19.51,
+      "prepaids_and_other_current_assets": 19.84
+    },
+    "h1_2026": {
+      "revenue": 19.127,
+      "operating_cash_flow": -48.348,
+      "stock_based_compensation": 18.724
+    },
+    "q2_2026": {
+      "revenue": 10.529,
+      "gaap_gross_profit": 0.041,
+      "gaap_gross_margin_pct": 0.4,
+      "non_gaap_gross_margin_pct": 39.5,
+      "non_gaap_opex": 15.5,
+      "net_loss": -228.218,
+      "distributor_a_revenue_concentration_pct": 71
+    },
+    "ceilings": [
+      "Pre-Q3 2025 continuous non-GAAP gross-margin history not used; product gross margin is shown for 8Q continuity.",
+      "End-customer revenue by hyperscaler is not publicly disclosed.",
+      "Quarterly cash-flow line items are reported YTD in 10-Qs and are not forced into false quarterly precision."
+    ]
+  },
+  "capital_structure": {
+    "basic_shares_2025_12_31_m": 230.525,
+    "basic_shares_2026_06_30_m": 261.081,
+    "basic_shares_2026_07_24_m": 261.093488,
+    "q2_2026_atm_shares_m": 17.397,
+    "q2_2026_atm_gross_proceeds": 380.731,
+    "q2_2026_atm_costs": 7.566,
+    "legacy_earnout_settlement_shares_m": 9.726,
+    "rsus_outstanding_m": 7.751,
+    "options_outstanding_m": 1.337,
+    "options_weighted_avg_strike": 8.35,
+    "claro_transaction": {
+      "estimated_purchase_price": 232.8,
+      "cash_at_close": 126.4,
+      "stock_value_at_close": 89.7,
+      "approx_close_shares_m": 6.9,
+      "earnout_value_max": 16.7,
+      "earnout_shares_max_m": 1.28,
+      "employee_psu_grant_value": 28.9,
+      "employee_psu_reference_share_equivalent_m": 2.23,
+      "status": "Definitive agreement signed; not closed as of T0."
+    },
+    "model_denominators_m": {
+      "bear_2030": 300,
+      "base_2030": 295,
+      "bull_execution_2030": 300,
+      "bull_ecosystem_2030": 315
+    }
+  },
+  "kpis": [
+    {
+      "name": "FY27 revenue trajectory",
+      "current": "2027 company ramp expected; firm volume not disclosed",
+      "thresholds": {
+        "green": "$120M+ annualized/FY pace",
+        "yellow": "$80–120M",
+        "red": "<$80M"
+      }
+    },
+    {
+      "name": "Non-GAAP gross margin",
+      "current": 39.5,
+      "unit": "%",
+      "thresholds": {
+        "green": ">45%",
+        "yellow": "40–45%",
+        "red": "<40% sustained"
+      }
+    },
+    {
+      "name": "Quarterly operating cash burn",
+      "current": "H1 2026 OCF -$48.3M; working-capital build material",
+      "thresholds": {
+        "green": "< $10M burn",
+        "yellow": "$10–20M burn",
+        "red": "> $20M burn sustained"
+      }
+    },
+    {
+      "name": "Share growth",
+      "current": "~13.3% basic-share growth from 2025-12-31 to 2026-06-30",
+      "thresholds": {
+        "green": "<5% YoY",
+        "yellow": "5–10%",
+        "red": ">10%"
+      }
+    },
+    {
+      "name": "AI infrastructure revenue mix",
+      "current": "Q4 2026 target ~one-third",
+      "thresholds": {
+        "green": "Q4'26 >=33% and rising",
+        "yellow": "20–33%",
+        "red": "<20% / delayed"
+      }
+    },
+    {
+      "name": "GF 8-inch GaN qualification",
+      "current": "Sampling/qualification targeted before YE2026",
+      "thresholds": {
+        "green": "On schedule",
+        "yellow": "1–2 quarter delay",
+        "red": "Delay impairs customer ramp"
+      }
+    },
+    {
+      "name": "Customer adoption stage",
+      "current": "Production samples/design wins; volume ramp expected 2027",
+      "thresholds": {
+        "green": "Volume shipments + repeat orders",
+        "yellow": "Samples/design wins",
+        "red": "Program cancellation"
+      }
+    },
+    {
+      "name": "Distributor concentration",
+      "current": 71,
+      "unit": "% of Q2 revenue",
+      "thresholds": {
+        "green": "<50%",
+        "yellow": "50–70%",
+        "red": ">70% sustained"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.3,
+      "revenue_path": [
+        48,
+        55,
+        70,
+        85,
+        100
+      ],
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "margin_path": [
+        39.5,
+        38,
+        36,
+        35,
+        35
+      ],
+      "fcf": [
+        -80,
+        -70,
+        -55,
+        -30,
+        -10
+      ],
+      "diluted_shares": 300,
+      "net_cash_2030": 50,
+      "terminal_ev_sales": 3,
+      "future_per_share_value": 1.1666666667,
+      "per_share_value": 0.7134118
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "revenue_path": [
+        48,
+        90,
+        200,
+        320,
+        450
+      ],
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "margin_path": [
+        39.5,
+        42,
+        45,
+        47,
+        48
+      ],
+      "fcf": [
+        -80,
+        -60,
+        -20,
+        15,
+        45
+      ],
+      "diluted_shares": 295,
+      "net_cash_2030": 120,
+      "terminal_ev_sales": 7,
+      "future_per_share_value": 11.0847457627,
+      "per_share_value": 6.7782802
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.2,
+      "revenue_path": [
+        48,
+        120,
+        300,
+        500,
+        700
+      ],
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "margin_path": [
+        39.5,
+        44,
+        49,
+        52,
+        54
+      ],
+      "fcf": [
+        -75,
+        -40,
+        10,
+        70,
+        130
+      ],
+      "diluted_shares": 300,
+      "net_cash_2030": 180,
+      "terminal_ev_sales": 8,
+      "future_per_share_value": 19.2666666667,
+      "per_share_value": 11.7814939
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.1,
+      "revenue_path": [
+        48,
+        130,
+        350,
+        700,
+        1100
+      ],
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "margin_path": [
+        39.5,
+        45,
+        50,
+        55,
+        57
+      ],
+      "fcf": [
+        -75,
+        -35,
+        25,
+        130,
+        250
+      ],
+      "diluted_shares": 315,
+      "net_cash_2030": 250,
+      "terminal_ev_sales": 10,
+      "future_per_share_value": 35.7142857143,
+      "per_share_value": 21.839151
+    }
+  ],
+  "valuation": {
+    "mode": "Mode A — Option-led",
+    "hurdle_rate": 0.12,
+    "horizon_years": 4.34,
+    "core": {
+      "method": "4x TTM revenue current-monetization anchor + pro-forma cash after Claros cash consideration; illustrative, not a downside floor",
+      "ttm_revenue": 36.54,
+      "operating_value": 146.16,
+      "pro_forma_cash_after_claros_cash": 431.009,
+      "illustrative_fully_diluted_shares_m": 279,
+      "anchor_per_share": 2.0508
+    },
+    "execution": {
+      "treatment": "Captured probabilistically in Base and Bull Execution scenarios; not separately added to avoid double counting."
+    },
+    "ecosystem": {
+      "treatment": "Claros / grid-to-xPU upside concentrated in Bull Ecosystem and limited Base contribution."
+    },
+    "drag": {
+      "treatment": "Funding and SBC drag reflected through scenario-specific diluted share denominators and cash paths."
+    },
+    "expected_value": 7.46555,
+    "expected_future_value_2030": 12.20866,
+    "expected_irr": 0.0140771,
+    "current_price": 11.49,
+    "current_price_premium_to_expected_value_pct": 53.906,
+    "bull_bear_upside_downside_ratio": 0.96034
+  },
+  "reverse_expectations": {
+    "current_price": 11.49,
+    "hurdle_rate": 0.12,
+    "horizon_years": 4.34,
+    "required_2030_share_price": 18.78998,
+    "assumed_2030_diluted_shares_m": 295,
+    "assumed_2030_net_cash": 120,
+    "required_2030_enterprise_value": 5423.0432,
+    "cases": [
+      {
+        "terminal_ev_sales": 6,
+        "required_2030_revenue": 903.8405,
+        "revenue_cagr_2026e_to_2030": 1.086489
+      },
+      {
+        "terminal_ev_sales": 7,
+        "required_2030_revenue": 774.7205,
+        "revenue_cagr_2026e_to_2030": 1.00761
+      },
+      {
+        "terminal_ev_sales": 8,
+        "required_2030_revenue": 677.8804,
+        "revenue_cagr_2026e_to_2030": 0.941696
+      },
+      {
+        "terminal_ev_sales": 10,
+        "required_2030_revenue": 542.3043,
+        "revenue_cagr_2026e_to_2030": 0.836344
+      }
+    ],
+    "company_claimed_sam_2030": {
+      "organic_high_power_min": 3500,
+      "including_claros_min": 8000,
+      "note": "Company-defined SAM; not treated as independently verified TAM."
+    }
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue": 47.69,
+      "eps": -0.15
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue": 74.25,
+      "eps": -0.13
+    },
+    "analyst_count": 8,
+    "average_price_target": 14.08,
+    "low_price_target": 8,
+    "high_price_target": 21,
+    "revision_trend": "Snapshot dated 2026-07-28; pre-Claros and stale for transaction economics."
+  },
+  "market_positioning": {
+    "market_cap_2026_08_28": 3000,
+    "ttm_revenue": 36.54,
+    "52_week_low": 5.44,
+    "52_week_high": 34.17,
+    "beta": 3.88,
+    "short_interest_2026_08_14_m": 40.247,
+    "short_float_pct": 17.6
+  },
+  "stance": {
+    "zone": "회피 / 기존 보유 시 비중 축소 검토",
+    "price_bands": {
+      "avoid_or_reduce": ">= $10",
+      "watch": "$7.5–10",
+      "attractive_entry": "$5.5–7.0",
+      "deep_value_requires_thesis_recheck": "< $5.5"
+    },
+    "horizon": "End-2030 / 4.34 years",
+    "price_for_12pct_expected_irr": 7.46555,
+    "price_where_bull_bear_ud_equals_2": 7.75533
+  },
+  "catalysts": [
+    {
+      "when": "2026 Q3 earnings",
+      "event": "Q3 revenue guide $13–14M delivery, AI mix, backlog commentary, cash burn",
+      "sensitivity": "very high"
+    },
+    {
+      "when": "2026 Q4",
+      "event": "AI infrastructure approaches ~one-third of revenue target",
+      "sensitivity": "very high"
+    },
+    {
+      "when": "Before 2026-12-31",
+      "event": "Expected Claros transaction close, subject to conditions",
+      "sensitivity": "high"
+    },
+    {
+      "when": "By 2026 year-end",
+      "event": "GF 8-inch GaN customer sampling/qualification progress",
+      "sensitivity": "very high"
+    },
+    {
+      "when": "Early 2027",
+      "event": "GF initial qualified product target",
+      "sensitivity": "very high"
+    },
+    {
+      "when": "2027 H1",
+      "event": "Selected hyperscaler/OEM/ODM programs show actual volume revenue",
+      "sensitivity": "critical"
+    },
+    {
+      "when": "Mid-2027",
+      "event": "800V power-sidecar architecture ramp evidence",
+      "sensitivity": "high"
+    },
+    {
+      "when": "2027-07",
+      "event": "TSMC GaN production end",
+      "sensitivity": "high"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "Ch0/2/3/4"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch1"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch2"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3/4"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1/3"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch0/3/6"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch1/3"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1/3"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4/App A/B"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4/5/App E"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch1/3/6"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch2/3/6"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch0/2/3/5"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "Ch0/5/6"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "Ch5/App C/D"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "Ch6"
+    }
+  ],
+  "research_contract_summary": {
+    "total": 16,
+    "complete": 9,
+    "primary_source_ceiling": 7,
+    "not_material": 0,
+    "contradicted": 0,
+    "unresolved": 0
+  },
+  "as_of_registry": {
+    "T0": "2026-08-29 KST",
+    "PRICE_ASOF": "2026-08-28 close $11.49",
+    "FILING_ASOF": "2026-08-25 latest material 8-K; latest 10-Q filed 2026-07-27",
+    "TRANSCRIPT_ASOF": "Q2 2026 results 2026-07-27",
+    "CONSENSUS_ASOF": "2026-07-28 pre-Claros snapshot",
+    "CLAROS_ASOF": "Definitive agreement 2026-08-24; 8-K 2026-08-25; not closed at T0"
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "NVTS Q2 2026 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1821769/000162828026049808/nvts-20260630.htm"
+    },
+    {
+      "id": "S2",
+      "title": "Navitas Q2 2026 Investor Presentation",
+      "url": "https://ir.navitassemi.com/static-files/442d8026-a895-4d9d-9e1f-65f01fcc75a6"
+    },
+    {
+      "id": "S3",
+      "title": "Q2 2026 Earnings Release",
+      "url": "https://www.sec.gov/Archives/edgar/data/1821769/000162828026049795/exhibit991-navitassemicond.htm"
+    },
+    {
+      "id": "S4",
+      "title": "NVTS 2025 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1821769/000182176926000007/nvts-20251231.htm"
+    },
+    {
+      "id": "S5",
+      "title": "NVTS 2024 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1821769/000182176925000021/nvts-20241231.htm"
+    },
+    {
+      "id": "S6",
+      "title": "NVTS Q1 2026 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1821769/000162828026030524/nvts-20260331.htm"
+    },
+    {
+      "id": "S7",
+      "title": "NVTS Q1 2025 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1821769/000182176925000068/nvts-20250331.htm"
+    },
+    {
+      "id": "S8",
+      "title": "NVTS Q2 2025 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1821769/000182176925000181/nvts-20250630.htm"
+    },
+    {
+      "id": "S9",
+      "title": "Claros acquisition 8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1821769/000110465926100478/tm2623854d1_8k.htm"
+    },
+    {
+      "id": "S10",
+      "title": "Claros transaction release",
+      "url": "https://www.sec.gov/Archives/edgar/data/1821769/000110465926100478/tm2623854d1_ex99-1.htm"
+    },
+    {
+      "id": "S11",
+      "title": "NVIDIA 800 VDC Architecture",
+      "url": "https://blogs.nvidia.com/blog/800-vdc-power-architecture-ai-factory/"
+    },
+    {
+      "id": "S12",
+      "title": "Navitas 800V-to-6V PDB",
+      "url": "https://navitassemi.com/navitas-debuts-revolutionary-800-v-6-v-power-delivery-board-at-nvidia-gtc-2026/"
+    },
+    {
+      "id": "S13",
+      "title": "Navitas PCIM 2026",
+      "url": "https://navitassemi.com/event/pcim-2026/"
+    },
+    {
+      "id": "S14",
+      "title": "GlobalFoundries / Navitas 200mm GaN partnership",
+      "url": "https://gf.com/gf-press-release/globalfoundries-and-navitas-semiconductor-partner-to-accelerate-u-s-gan-technology-and-manufacturing-for-ai-datacenters-and-critical-power-applications/"
+    },
+    {
+      "id": "S15",
+      "title": "Infineon AI data-center PSU portfolio",
+      "url": "https://www.infineon.com/technology-news/2026/infpss202606-094"
+    },
+    {
+      "id": "S16",
+      "title": "onsemi high-voltage AI data-center power",
+      "url": "https://www.onsemi.com/company/newsroom/featured-stories/data-center/the-emerging-way-to-conquer-power-challenges-in-ai-data-centers"
+    },
+    {
+      "id": "S17",
+      "title": "STMicroelectronics 800V-to-12V/6V",
+      "url": "https://newsroom.st.com/media-center/press-item.html/t4766.html"
+    },
+    {
+      "id": "S19",
+      "title": "StockAnalysis NVTS price/statistics",
+      "url": "https://stockanalysis.com/stocks/nvts/"
+    },
+    {
+      "id": "S20",
+      "title": "StockAnalysis/S&P Global forecast snapshot",
+      "url": "https://stockanalysis.com/stocks/nvts/forecast/"
+    },
+    {
+      "id": "S21",
+      "title": "NVTS Q3 2024 earnings release",
+      "url": "https://www.sec.gov/Archives/edgar/data/1821769/000182176924000118/exhibit991-navitassemicond.htm"
+    }
+  ],
+  "evidence_boundaries": [
+    "No public hyperscaler-by-hyperscaler revenue.",
+    "No public NVIDIA-platform content-dollar disclosure.",
+    "No numerical backlog/book-to-bill disclosure.",
+    "No public design-win-to-revenue conversion-rate history.",
+    "No current detailed GF/PSMC yield, wafer cost, or capacity disclosure.",
+    "No public Claros end-customer volume qualification or revenue.",
+    "No robust external listed-company commercialization base-rate dataset was available; scenario probabilities are underwriting judgments."
+  ],
+  "visual_data_source_registry": [
+    {
+      "VIS_ID": "VIS-001",
+      "FIGURE_TITLE": "최근 8분기 매출과 제품 총마진",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.quarterly_8q",
+      "SOURCE_VALUES": [
+        {
+          "quarter": "2024Q3",
+          "revenue": 21.681,
+          "qoq_pct": null,
+          "product_gross_margin_pct": 39.7214
+        },
+        {
+          "quarter": "2024Q4",
+          "revenue": 17.978,
+          "qoq_pct": -17.0795,
+          "product_gross_margin_pct": 12.3596,
+          "note": "Derived from FY2024 less 9M2024; inventory write-down distorted margin."
+        },
+        {
+          "quarter": "2025Q1",
+          "revenue": 14.018,
+          "qoq_pct": -22.0269,
+          "product_gross_margin_pct": 37.8585
+        },
+        {
+          "quarter": "2025Q2",
+          "revenue": 14.49,
+          "qoq_pct": 3.3671,
+          "product_gross_margin_pct": 16.0663,
+          "note": "China SiC inventory reserve distorted margin."
+        },
+        {
+          "quarter": "2025Q3",
+          "revenue": 10.112,
+          "qoq_pct": -30.2139,
+          "product_gross_margin_pct": 37.8857,
+          "non_gaap_gross_margin_pct": 38.7,
+          "gaap_gross_margin_pct": -2.0
+        },
+        {
+          "quarter": "2025Q4",
+          "revenue": 7.296,
+          "qoq_pct": -27.8481,
+          "product_gross_margin_pct": 38.1305,
+          "non_gaap_gross_margin_pct": 38.7,
+          "gaap_gross_margin_pct": -17.2
+        },
+        {
+          "quarter": "2026Q1",
+          "revenue": 8.598,
+          "qoq_pct": 17.8454,
+          "product_gross_margin_pct": 37.6483,
+          "non_gaap_gross_margin_pct": 39.0,
+          "gaap_gross_margin_pct": -9.3
+        },
+        {
+          "quarter": "2026Q2",
+          "revenue": 10.529,
+          "qoq_pct": 22.4587,
+          "product_gross_margin_pct": 38.7311,
+          "non_gaap_gross_margin_pct": 39.5,
+          "gaap_gross_margin_pct": 0.4
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "b3833c63e0a70d7c8680b115285becd0ec83ecb3bd016dc2fe4e550c59e298f0",
+      "DISPLAY_VALUES": [
+        {
+          "quarter": "2024Q3",
+          "revenue": 21.7,
+          "product_gross_margin_pct": 39.7
+        },
+        {
+          "quarter": "2024Q4",
+          "revenue": 18.0,
+          "product_gross_margin_pct": 12.4
+        },
+        {
+          "quarter": "2025Q1",
+          "revenue": 14.0,
+          "product_gross_margin_pct": 37.9
+        },
+        {
+          "quarter": "2025Q2",
+          "revenue": 14.5,
+          "product_gross_margin_pct": 16.1
+        },
+        {
+          "quarter": "2025Q3",
+          "revenue": 10.1,
+          "product_gross_margin_pct": 37.9
+        },
+        {
+          "quarter": "2025Q4",
+          "revenue": 7.3,
+          "product_gross_margin_pct": 38.1
+        },
+        {
+          "quarter": "2026Q1",
+          "revenue": 8.6,
+          "product_gross_margin_pct": 37.6
+        },
+        {
+          "quarter": "2026Q2",
+          "revenue": 10.5,
+          "product_gross_margin_pct": 38.7
+        }
+      ],
+      "NARRATIVE_LOCATOR": "NVTS_H3_MANUSCRIPT_260829.md / published report",
+      "TABLE_LOCATOR": "Published report / REPORT_DATA_PACK",
+      "CAPTION_LOCATOR": "#vis-001",
+      "RENDERED_ASSET_LOCATOR": "NVTS_DEEP_DIVE.html and NVTS_DEEP_DIVE.pdf",
+      "DISPLAYED_VALUES_MATCH": true,
+      "TABLE_MATCH": true,
+      "NARRATIVE_MATCH": true,
+      "RENDER_MATCH": true,
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-002",
+      "FIGURE_TITLE": "현금과 희석의 동시 확대",
+      "AUTHORITATIVE_SOURCE_BLOCK": "capital_structure",
+      "SOURCE_VALUES": {
+        "basic_shares_2025_12_31_m": 230.525,
+        "basic_shares_2026_06_30_m": 261.081,
+        "basic_shares_2026_07_24_m": 261.093488,
+        "q2_2026_atm_shares_m": 17.397,
+        "q2_2026_atm_gross_proceeds": 380.731,
+        "q2_2026_atm_costs": 7.566,
+        "legacy_earnout_settlement_shares_m": 9.726,
+        "rsus_outstanding_m": 7.751,
+        "options_outstanding_m": 1.337,
+        "options_weighted_avg_strike": 8.35,
+        "claro_transaction": {
+          "estimated_purchase_price": 232.8,
+          "cash_at_close": 126.4,
+          "stock_value_at_close": 89.7,
+          "approx_close_shares_m": 6.9,
+          "earnout_value_max": 16.7,
+          "earnout_shares_max_m": 1.28,
+          "employee_psu_grant_value": 28.9,
+          "employee_psu_reference_share_equivalent_m": 2.23,
+          "status": "Definitive agreement signed; not closed as of T0."
+        },
+        "model_denominators_m": {
+          "bear_2030": 300,
+          "base_2030": 295,
+          "bull_execution_2030": 300,
+          "bull_ecosystem_2030": 315
+        }
+      },
+      "SOURCE_VERSION_OR_HASH": "2e7076d76edcda059096034ea0860941988aff164feddcb14a2cfdf48dab9aae",
+      "DISPLAY_VALUES": {
+        "2025_ye_basic_m": 230.5,
+        "2026_q2_basic_m": 261.1,
+        "near_pro_forma_fd_m": 279.0,
+        "2030_base_m": 295.0
+      },
+      "NARRATIVE_LOCATOR": "NVTS_H3_MANUSCRIPT_260829.md / published report",
+      "TABLE_LOCATOR": "Published report / REPORT_DATA_PACK",
+      "CAPTION_LOCATOR": "#vis-002",
+      "RENDERED_ASSET_LOCATOR": "NVTS_DEEP_DIVE.html and NVTS_DEEP_DIVE.pdf",
+      "DISPLAYED_VALUES_MATCH": true,
+      "TABLE_MATCH": true,
+      "NARRATIVE_MATCH": true,
+      "RENDER_MATCH": true,
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-003",
+      "FIGURE_TITLE": "시나리오 현재가치 vs 현재주가",
+      "AUTHORITATIVE_SOURCE_BLOCK": "scenarios",
+      "SOURCE_VALUES": [
+        {
+          "name": "Bear",
+          "probability": 0.3,
+          "revenue_path": [
+            48,
+            55,
+            70,
+            85,
+            100
+          ],
+          "years": [
+            2026,
+            2027,
+            2028,
+            2029,
+            2030
+          ],
+          "margin_path": [
+            39.5,
+            38,
+            36,
+            35,
+            35
+          ],
+          "fcf": [
+            -80,
+            -70,
+            -55,
+            -30,
+            -10
+          ],
+          "diluted_shares": 300,
+          "net_cash_2030": 50,
+          "terminal_ev_sales": 3,
+          "future_per_share_value": 1.1666666667,
+          "per_share_value": 0.7134118
+        },
+        {
+          "name": "Base",
+          "probability": 0.4,
+          "revenue_path": [
+            48,
+            90,
+            200,
+            320,
+            450
+          ],
+          "years": [
+            2026,
+            2027,
+            2028,
+            2029,
+            2030
+          ],
+          "margin_path": [
+            39.5,
+            42,
+            45,
+            47,
+            48
+          ],
+          "fcf": [
+            -80,
+            -60,
+            -20,
+            15,
+            45
+          ],
+          "diluted_shares": 295,
+          "net_cash_2030": 120,
+          "terminal_ev_sales": 7,
+          "future_per_share_value": 11.0847457627,
+          "per_share_value": 6.7782802
+        },
+        {
+          "name": "Bull Execution",
+          "probability": 0.2,
+          "revenue_path": [
+            48,
+            120,
+            300,
+            500,
+            700
+          ],
+          "years": [
+            2026,
+            2027,
+            2028,
+            2029,
+            2030
+          ],
+          "margin_path": [
+            39.5,
+            44,
+            49,
+            52,
+            54
+          ],
+          "fcf": [
+            -75,
+            -40,
+            10,
+            70,
+            130
+          ],
+          "diluted_shares": 300,
+          "net_cash_2030": 180,
+          "terminal_ev_sales": 8,
+          "future_per_share_value": 19.2666666667,
+          "per_share_value": 11.7814939
+        },
+        {
+          "name": "Bull Ecosystem",
+          "probability": 0.1,
+          "revenue_path": [
+            48,
+            130,
+            350,
+            700,
+            1100
+          ],
+          "years": [
+            2026,
+            2027,
+            2028,
+            2029,
+            2030
+          ],
+          "margin_path": [
+            39.5,
+            45,
+            50,
+            55,
+            57
+          ],
+          "fcf": [
+            -75,
+            -35,
+            25,
+            130,
+            250
+          ],
+          "diluted_shares": 315,
+          "net_cash_2030": 250,
+          "terminal_ev_sales": 10,
+          "future_per_share_value": 35.7142857143,
+          "per_share_value": 21.839151
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "438c7fa54c8ecff7fcf6fbef64ea952ce74a8b6ebc8d1ce814be1d89f9522411",
+      "DISPLAY_VALUES": {
+        "scenario_pv": [
+          {
+            "name": "Bear",
+            "pv": 0.71
+          },
+          {
+            "name": "Base",
+            "pv": 6.78
+          },
+          {
+            "name": "Bull Execution",
+            "pv": 11.78
+          },
+          {
+            "name": "Bull Ecosystem",
+            "pv": 21.84
+          }
+        ],
+        "current_price": 11.49,
+        "expected_value": 7.47
+      },
+      "NARRATIVE_LOCATOR": "NVTS_H3_MANUSCRIPT_260829.md / published report",
+      "TABLE_LOCATOR": "Published report / REPORT_DATA_PACK",
+      "CAPTION_LOCATOR": "#vis-003",
+      "RENDERED_ASSET_LOCATOR": "NVTS_DEEP_DIVE.html and NVTS_DEEP_DIVE.pdf",
+      "DISPLAYED_VALUES_MATCH": true,
+      "TABLE_MATCH": true,
+      "NARRATIVE_MATCH": true,
+      "RENDER_MATCH": true,
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-004",
+      "FIGURE_TITLE": "현재가가 요구하는 2030 매출",
+      "AUTHORITATIVE_SOURCE_BLOCK": "reverse_expectations.cases",
+      "SOURCE_VALUES": [
+        {
+          "terminal_ev_sales": 6,
+          "required_2030_revenue": 903.8405,
+          "revenue_cagr_2026e_to_2030": 1.086489
+        },
+        {
+          "terminal_ev_sales": 7,
+          "required_2030_revenue": 774.7205,
+          "revenue_cagr_2026e_to_2030": 1.00761
+        },
+        {
+          "terminal_ev_sales": 8,
+          "required_2030_revenue": 677.8804,
+          "revenue_cagr_2026e_to_2030": 0.941696
+        },
+        {
+          "terminal_ev_sales": 10,
+          "required_2030_revenue": 542.3043,
+          "revenue_cagr_2026e_to_2030": 0.836344
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "2034ae43f54898e61b59634dee7ed68bda4a2d19b1a93db590e7c87e7f1a4cf6",
+      "DISPLAY_VALUES": [
+        {
+          "terminal_ev_sales": 6,
+          "required_revenue_m": 904,
+          "cagr_pct": 109
+        },
+        {
+          "terminal_ev_sales": 7,
+          "required_revenue_m": 775,
+          "cagr_pct": 101
+        },
+        {
+          "terminal_ev_sales": 8,
+          "required_revenue_m": 678,
+          "cagr_pct": 94
+        },
+        {
+          "terminal_ev_sales": 10,
+          "required_revenue_m": 542,
+          "cagr_pct": 84
+        }
+      ],
+      "NARRATIVE_LOCATOR": "NVTS_H3_MANUSCRIPT_260829.md / published report",
+      "TABLE_LOCATOR": "Published report / REPORT_DATA_PACK",
+      "CAPTION_LOCATOR": "#vis-004",
+      "RENDERED_ASSET_LOCATOR": "NVTS_DEEP_DIVE.html and NVTS_DEEP_DIVE.pdf",
+      "DISPLAYED_VALUES_MATCH": true,
+      "TABLE_MATCH": true,
+      "NARRATIVE_MATCH": true,
+      "RENDER_MATCH": true,
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-005",
+      "FIGURE_TITLE": "KPI 신호등",
+      "AUTHORITATIVE_SOURCE_BLOCK": "kpis",
+      "SOURCE_VALUES": [
+        {
+          "name": "FY27 revenue trajectory",
+          "current": "2027 company ramp expected; firm volume not disclosed",
+          "thresholds": {
+            "green": "$120M+ annualized/FY pace",
+            "yellow": "$80–120M",
+            "red": "<$80M"
+          }
+        },
+        {
+          "name": "Non-GAAP gross margin",
+          "current": 39.5,
+          "unit": "%",
+          "thresholds": {
+            "green": ">45%",
+            "yellow": "40–45%",
+            "red": "<40% sustained"
+          }
+        },
+        {
+          "name": "Quarterly operating cash burn",
+          "current": "H1 2026 OCF -$48.3M; working-capital build material",
+          "thresholds": {
+            "green": "< $10M burn",
+            "yellow": "$10–20M burn",
+            "red": "> $20M burn sustained"
+          }
+        },
+        {
+          "name": "Share growth",
+          "current": "~13.3% basic-share growth from 2025-12-31 to 2026-06-30",
+          "thresholds": {
+            "green": "<5% YoY",
+            "yellow": "5–10%",
+            "red": ">10%"
+          }
+        },
+        {
+          "name": "AI infrastructure revenue mix",
+          "current": "Q4 2026 target ~one-third",
+          "thresholds": {
+            "green": "Q4'26 >=33% and rising",
+            "yellow": "20–33%",
+            "red": "<20% / delayed"
+          }
+        },
+        {
+          "name": "GF 8-inch GaN qualification",
+          "current": "Sampling/qualification targeted before YE2026",
+          "thresholds": {
+            "green": "On schedule",
+            "yellow": "1–2 quarter delay",
+            "red": "Delay impairs customer ramp"
+          }
+        },
+        {
+          "name": "Customer adoption stage",
+          "current": "Production samples/design wins; volume ramp expected 2027",
+          "thresholds": {
+            "green": "Volume shipments + repeat orders",
+            "yellow": "Samples/design wins",
+            "red": "Program cancellation"
+          }
+        },
+        {
+          "name": "Distributor concentration",
+          "current": 71,
+          "unit": "% of Q2 revenue",
+          "thresholds": {
+            "green": "<50%",
+            "yellow": "50–70%",
+            "red": ">70% sustained"
+          }
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "d47c984b7f45db0a363943f8ab3d584024d582df01129a97280bfeb84b28c17d",
+      "DISPLAY_VALUES": [
+        {
+          "name": "FY27 revenue trajectory",
+          "current": "2027 company ramp expected; firm volume not disclosed"
+        },
+        {
+          "name": "Non-GAAP gross margin",
+          "current": 39.5
+        },
+        {
+          "name": "Quarterly operating cash burn",
+          "current": "H1 2026 OCF -$48.3M; working-capital build material"
+        },
+        {
+          "name": "Share growth",
+          "current": "~13.3% basic-share growth from 2025-12-31 to 2026-06-30"
+        },
+        {
+          "name": "AI infrastructure revenue mix",
+          "current": "Q4 2026 target ~one-third"
+        },
+        {
+          "name": "GF 8-inch GaN qualification",
+          "current": "Sampling/qualification targeted before YE2026"
+        },
+        {
+          "name": "Customer adoption stage",
+          "current": "Production samples/design wins; volume ramp expected 2027"
+        },
+        {
+          "name": "Distributor concentration",
+          "current": 71
+        }
+      ],
+      "NARRATIVE_LOCATOR": "NVTS_H3_MANUSCRIPT_260829.md / published report",
+      "TABLE_LOCATOR": "Published report / REPORT_DATA_PACK",
+      "CAPTION_LOCATOR": "#vis-005",
+      "RENDERED_ASSET_LOCATOR": "NVTS_DEEP_DIVE.html and NVTS_DEEP_DIVE.pdf",
+      "DISPLAYED_VALUES_MATCH": true,
+      "TABLE_MATCH": true,
+      "NARRATIVE_MATCH": true,
+      "RENDER_MATCH": true,
+      "STATUS": "PASS"
+    }
+  ],
+  "publishing_qa": {
+    "REPORT_DATA_PACK": "EMITTED",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "CONTENT_MEANING_LOCK_PRESERVED": "PASS",
+    "PUBLISHED_TOP_LEVEL_SCHEMA_MATCH": "PASS",
+    "EXPLANATORY_DEPTH_PRESERVED": "PASS",
+    "CORE_LANDSCAPE_PAGES": 0,
+    "PRINTED_TOC_PAGES": 1,
+    "TOC_CLICKABLE": "PASS",
+    "PDF_BOOKMARKS": "PASS",
+    "HTML_SIDEBAR": "PASS",
+    "SEARCHABLE_TEXT": "PASS",
+    "KOREAN_READABILITY": "PASS",
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "EXPLANATORY_SPACE_ALLOCATION": "PASS",
+    "SMART_CHAPTER_TRANSITIONS": "PASS",
+    "ARGUMENT_BLOCK_PAGINATION": "PASS",
+    "ACCIDENTAL_SPARSE_PAGES": 0,
+    "DENSITY_CONTROL": "PASS",
+    "VISUAL_SUBSTITUTION": "PASS",
+    "VISUAL_GRAMMAR_VARIETY": "PASS",
+    "CHART_READABILITY": "PASS",
+    "TABLE_QUALITY": "PASS",
+    "CONTACT_SHEET_COMPOSITION_QA": "PASS",
+    "SEMANTIC_GOLDEN_QA": "PASS",
+    "VISUAL_GOLDEN_QA": "PASS",
+    "GOLDEN_PARITY": "PASS",
+    "DECISION_VISUALS_TOTAL": 5,
+    "DECISION_VISUALS_PARITY_PASS": 5,
+    "STALE_VISUAL_ASSETS": 0,
+    "FIGURE_NUMERICAL_PARITY": "PASS",
+    "VISUAL_DATA_LINEAGE": "PASS",
+    "VISUAL_SEMANTIC_PARITY": "PASS",
+    "RENDERED_VISUAL_PARITY_QA": "PASS",
+    "PUBLISHING_ACCEPTANCE": "PASS"
+  }
+}

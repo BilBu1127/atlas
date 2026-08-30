@@ -1,0 +1,1039 @@
+{
+  "meta": {
+    "ticker": "VELO",
+    "company": "Velo3D, Inc.",
+    "T0": "2026-08-25 Asia/Seoul",
+    "price_asof": "2026-08-24 US close",
+    "current_price_usd": 12.47,
+    "filing_asof": "Q2 2026 Form 10-Q filed 2026-08-11",
+    "consensus_asof": "August 2026 snapshot",
+    "publishing_date": "2026-08-26 Asia/Seoul",
+    "version": "Deep Dive v1.7",
+    "currency": "USD",
+    "horizon_years": 3.35
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue_m": 77.443,
+        "gross_margin_pct": -33.9,
+        "adjusted_ebitda_m": -98.5,
+        "operating_cash_flow_m": -105.636,
+        "capex_m": -3.21
+      },
+      {
+        "year": 2024,
+        "revenue_m": 41.003,
+        "gross_margin_pct": -5.1,
+        "adjusted_ebitda_m": -58.5,
+        "operating_cash_flow_m": -32.677,
+        "capex_m": -0.009
+      },
+      {
+        "year": 2025,
+        "revenue_m": 45.973,
+        "gross_margin_pct": -16.1,
+        "adjusted_ebitda_m": -33.3,
+        "operating_cash_flow_m": -27.327,
+        "capex_m": -2.715
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "Q3 2024",
+        "revenue_m": 8.2,
+        "gross_margin_pct": 49.4,
+        "adjusted_ebitda_m": -9.7,
+        "quality_note": "약 $5m license revenue가 gross margin을 크게 부풀림"
+      },
+      {
+        "quarter": "Q4 2024",
+        "revenue_m": 12.626,
+        "gross_margin_pct": -3.5,
+        "adjusted_ebitda_m": -14.6,
+        "quality_note": "hardware mix/scale weakness"
+      },
+      {
+        "quarter": "Q1 2025",
+        "revenue_m": 9.3,
+        "gross_margin_pct": 7.5,
+        "adjusted_ebitda_m": -6.9,
+        "quality_note": "초기 턴어라운드"
+      },
+      {
+        "quarter": "Q2 2025",
+        "revenue_m": 13.572,
+        "gross_margin_pct": -11.7,
+        "adjusted_ebitda_m": -8.9,
+        "quality_note": "manufacturing inefficiency 지속"
+      },
+      {
+        "quarter": "Q3 2025",
+        "revenue_m": 13.6,
+        "gross_margin_pct": 3.2,
+        "adjusted_ebitda_m": -7.3,
+        "quality_note": "RPS/defense mix 개선 시작"
+      },
+      {
+        "quarter": "Q4 2025",
+        "revenue_m": 9.441,
+        "gross_margin_pct": -73.6,
+        "adjusted_ebitda_m": -10.0,
+        "quality_note": "약 $7m obsolete inventory write-down + govt shutdown delay"
+      },
+      {
+        "quarter": "Q1 2026",
+        "revenue_m": 13.816,
+        "gross_margin_pct": 17.2,
+        "adjusted_ebitda_m": -3.6,
+        "quality_note": "bookings/backlog 증가"
+      },
+      {
+        "quarter": "Q2 2026",
+        "revenue_m": 20.664,
+        "gross_margin_pct": 21.5,
+        "adjusted_ebitda_m": -8.1,
+        "quality_note": "성장 강함, 단 cost allocation 변경 포함"
+      }
+    ],
+    "ttm_revenue_m": 57.561,
+    "cash_m": 91.144,
+    "debt_m": 8.17,
+    "shares_outstanding_m": 32.149,
+    "market_cap_m": 400.89803,
+    "simple_enterprise_value_m": 317.92403,
+    "simple_ev_sales": 5.523254113027918,
+    "ceilings": [
+      "Q2 2026 labor/overhead allocation refinement effect is not separately quantified; normalized economic gross margin cannot be isolated.",
+      "RPS standalone revenue, gross margin, machine-hour pricing and utilization are not disclosed.",
+      "Forge 1 active systems, utilization, yield, scrap and production economics are not disclosed.",
+      "Historical non-GAAP adjusted EBITDA definitions show restatement/definition changes; latest comparative presentation is prioritized."
+    ]
+  },
+  "kpis": [
+    {
+      "name": "Bookings",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value_m": 29
+        }
+      ],
+      "current": {
+        "value_m": 29,
+        "status": "green_candidate"
+      },
+      "thresholds": {
+        "green": "분기 $25m 이상이 2개 분기 이상 지속 + production-order mix 증가",
+        "yellow": "$15–25m 또는 단일 대형 주문 spike",
+        "red": "$15m 아래 또는 backlog 의미 있는 감소"
+      }
+    },
+    {
+      "name": "Backlog",
+      "history": [
+        {
+          "period": "Q1 2026",
+          "value_m": 30
+        },
+        {
+          "period": "Q2 2026",
+          "value_m": 31
+        }
+      ],
+      "current": {
+        "value_m": 31,
+        "status": "yellow"
+      },
+      "thresholds": {
+        "green": "$35m 이상 + production contract 비중 증가",
+        "yellow": "$25–35m",
+        "red": "$25m 아래 또는 conversion 약화"
+      }
+    },
+    {
+      "name": "Gross margin quality",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "reported_pct": 21.5
+        }
+      ],
+      "current": {
+        "reported_pct": 21.5,
+        "status": "yellow"
+      },
+      "thresholds": {
+        "green": "30%+가 2개 분기 이상 지속 + allocation/RPS/utilization 설명 가능",
+        "yellow": "20–30% 또는 accounting comparability 불명확",
+        "red": "normalized basis 20% 아래"
+      }
+    },
+    {
+      "name": "Adjusted EBITDA",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value_m": -8.1
+        }
+      ],
+      "current": {
+        "value_m": -8.1,
+        "status": "red_near"
+      },
+      "thresholds": {
+        "green": "2개 분기 연속 positive",
+        "yellow": "적자 축소 중이나 negative",
+        "red": "H2 2026에도 material negative 지속"
+      }
+    },
+    {
+      "name": "Share count",
+      "history": [
+        {
+          "period": "2025-12-31",
+          "shares_m": 24.608
+        },
+        {
+          "period": "2026-08-07",
+          "shares_m": 32.149
+        }
+      ],
+      "current": {
+        "shares_m": 32.149,
+        "status": "green_level_yellow_velocity"
+      },
+      "thresholds": {
+        "green": "2027년까지 36m주 아래 + 충분한 liquidity",
+        "yellow": "36–40m주",
+        "red": "structural EBITDA breakeven 전 40m주 초과"
+      }
+    },
+    {
+      "name": "Forge 1 utilization",
+      "history": [],
+      "current": {
+        "status": "yellow",
+        "disclosure": "비공개"
+      },
+      "thresholds": {
+        "green": "active systems/utilization/yield/production economics 상승 공개",
+        "yellow": "capacity headline만 있고 utilization evidence 없음",
+        "red": "ramp delay/cost overrun/underutilization"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.3,
+      "revenue_years": [
+        2026,
+        2027,
+        2028,
+        2029
+      ],
+      "revenue_path": [
+        65,
+        null,
+        null,
+        95
+      ],
+      "margin_path": [
+        null,
+        null,
+        null,
+        "~30%"
+      ],
+      "fcf": [],
+      "fcf_comment": "EBITDA와 FCF가 장기간 적자",
+      "diluted_shares": 48,
+      "exit_ev_sales": 1.5,
+      "net_cash_m": 0,
+      "per_share_value": 2.97,
+      "pv_per_share_at_15pct": 1.8595963459333547
+    },
+    {
+      "name": "Base",
+      "probability": 0.45,
+      "revenue_years": [
+        2026,
+        2027,
+        2028,
+        2029
+      ],
+      "revenue_path": [
+        72,
+        100,
+        135,
+        175
+      ],
+      "margin_path": [
+        "high-20s",
+        "mid-30s",
+        "high-30s",
+        "low-40s"
+      ],
+      "fcf": [],
+      "fcf_comment": "2027–28 구조적 breakeven을 지나 이후 개선",
+      "diluted_shares": 40,
+      "exit_ev_sales": 4.0,
+      "net_cash_m": 40,
+      "per_share_value": 18.5,
+      "pv_per_share_at_15pct": 11.583344242345811
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.2,
+      "revenue_years": [
+        2026,
+        2027,
+        2028,
+        2029
+      ],
+      "revenue_path": [
+        null,
+        null,
+        null,
+        240
+      ],
+      "margin_path": [
+        null,
+        null,
+        null,
+        "~48%"
+      ],
+      "fcf": [],
+      "fcf_comment": "positive FCF, 2029 EBITDA margin ~20%",
+      "diluted_shares": 37,
+      "exit_ev_sales": 5.5,
+      "net_cash_m": 80,
+      "per_share_value": 37.84,
+      "pv_per_share_at_15pct": 23.692634925965702
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.05,
+      "revenue_years": [
+        2026,
+        2027,
+        2028,
+        2029
+      ],
+      "revenue_path": [
+        null,
+        null,
+        null,
+        300
+      ],
+      "margin_path": [
+        null,
+        null,
+        null,
+        "52%"
+      ],
+      "fcf": [],
+      "fcf_comment": "network-like economics 검증, 2029 EBITDA margin ~25%",
+      "diluted_shares": 36,
+      "exit_ev_sales": 6.5,
+      "net_cash_m": 100,
+      "per_share_value": 56.94,
+      "pv_per_share_at_15pct": 35.651655197793
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B Hybrid / Expectation-Driven v3.3",
+    "core": 7.06,
+    "execution": 7.71,
+    "ecosystem": 0.0,
+    "drag": -2.48,
+    "expected_value": 12.291493557918411,
+    "core_pv_per_share": 7.06,
+    "execution_pv_per_share": 7.71,
+    "ecosystem_pv_per_share": 0.0,
+    "funding_dilution_drag_per_share": -2.48,
+    "expected_value_2029_per_share": 19.631000000000004,
+    "expected_present_value_per_share": 12.291493557918411,
+    "expected_irr": 0.1450610645682242,
+    "current_price": 12.47,
+    "hurdle_rate": 0.15,
+    "horizon_years": 3.35,
+    "bull_execution_bear_up_down": 2.67
+  },
+  "reverse_expectations": {
+    "target_2029_price_at_15pct": 19.916096351227893,
+    "assumed_2029_diluted_shares_m": 40,
+    "assumed_2029_net_cash_m": 30,
+    "revenue_sensitivity": [
+      {
+        "exit_ev_sales": 3.0,
+        "required_2029_revenue_m": 255.54795134970524,
+        "2026_2029_cagr_pct": 52.53867480383603
+      },
+      {
+        "exit_ev_sales": 3.5,
+        "required_2029_revenue_m": 219.0411011568902,
+        "2026_2029_cagr_pct": 44.89866111527336
+      },
+      {
+        "exit_ev_sales": 4.0,
+        "required_2029_revenue_m": 191.66096351227893,
+        "2026_2029_cagr_pct": 38.59058359468774
+      },
+      {
+        "exit_ev_sales": 4.5,
+        "required_2029_revenue_m": 170.3653008998035,
+        "2026_2029_cagr_pct": 33.25480642539424
+      },
+      {
+        "exit_ev_sales": 5.0,
+        "required_2029_revenue_m": 153.32877080982314,
+        "2026_2029_cagr_pct": 28.6561010513962
+      }
+    ],
+    "interpretation": "4.0–4.5x exit EV/Sales에서 현재가는 대략 2029 revenue $170–192m을 요구한다."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_m": 72.9,
+      "ebitda_m": -20.4
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_m": 92.7,
+      "ebitda_m": -3.4
+    },
+    "fy3": {
+      "year": 2028,
+      "revenue_m": 122.3,
+      "ebitda_m": -0.7
+    },
+    "quarterly_ebitda_m": {
+      "Q3 2026": -4.7,
+      "Q4 2026": -4.0
+    },
+    "analyst_price_target_usd": {
+      "low": 17,
+      "high": 33,
+      "average": 23.6,
+      "positive_recommendations": 5
+    },
+    "revision_trend": "FY2026 revenue guide was raised from $60–70m to $65–75m after Q2; sell-side remains more conservative than company H2 profitability messaging."
+  },
+  "stance": {
+    "zone": "관망 / 조건부 관심",
+    "price_bands": {
+      "below_9": "적극 관심 — fundamentals 동일 조건",
+      "10_to_11": "매력적 진입 구간",
+      "11_to_13": "관망 구간",
+      "above_15": "신규 진입에 RPS economics / Forge 1 utilization / positive EBITDA 중 최소 2개 증거 필요"
+    },
+    "horizon": "2029 year-end",
+    "condition": "가격 하락 원인이 financing crisis나 defense-order deterioration이면 확률 재계산"
+  },
+  "catalysts": [
+    {
+      "when": "Q3 2026 earnings / 10-Q",
+      "event": "Forge 1 ramp의 첫 운영 증거와 H2 margin/EBITDA 가이던스 중간 검증",
+      "sensitivity": "매우 높음"
+    },
+    {
+      "when": "Q4 2026 / FY2026 results",
+      "event": "FY2026 guidance 및 H2 profitability delivery 최종 판별",
+      "sensitivity": "매우 높음"
+    },
+    {
+      "when": "향후 2–4개 분기",
+      "event": "Defense award가 qualification에서 full-rate production으로 이동하는지 확인",
+      "sensitivity": "높음"
+    },
+    {
+      "when": "2027",
+      "event": "RPS standalone revenue/gross margin/utilization 중 하나라도 신규 공개",
+      "sensitivity": "매우 높음"
+    },
+    {
+      "when": "매 분기",
+      "event": "ATM·equity·debt 조달 조합과 share count 변화",
+      "sensitivity": "높음"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "0, 2, Appendix A"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "1.1–1.3"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "1.2–1.4"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.1, Appendix B"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1.4, 3.3"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "1.4, 3.3"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.4, 4.2"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "3.2"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.2–3.3"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "3.5"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "2.1–2.2"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "2.3"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "4.1–4.2"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "4.3"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.6, 4.5"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.7, 4.4"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "4.6, Appendix C"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE",
+      "h3_locator": "4.4–4.6, 5.2"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "COMPLETE",
+      "h3_locator": "5.6"
+    },
+    {
+      "rc_id": "RC-020",
+      "status": "COMPLETE",
+      "h3_locator": "5.2"
+    },
+    {
+      "rc_id": "RC-021",
+      "status": "COMPLETE",
+      "h3_locator": "5.3–5.5"
+    },
+    {
+      "rc_id": "RC-022",
+      "status": "COMPLETE",
+      "h3_locator": "6.2–6.6"
+    }
+  ],
+  "source_ledger": [
+    {
+      "source_id": "S1",
+      "description": "Velo3D, Q2 2026 Form 10-Q, filed 2026-08-11."
+    },
+    {
+      "source_id": "S2",
+      "description": "Velo3D, Q2 2026 earnings release and presentation, 2026-08-11."
+    },
+    {
+      "source_id": "S3",
+      "description": "Velo3D, Q4/FY2025 financial results, 2026-03-24."
+    },
+    {
+      "source_id": "S4",
+      "description": "Velo3D, Q4/FY2024 financial results, 2025-03-31."
+    },
+    {
+      "source_id": "S5",
+      "description": "Velo3D / DIU Project FORGE $32.6m contract announcement, 2025-12-22."
+    },
+    {
+      "source_id": "S6",
+      "description": "Velo3D, $11.5m full-rate production RPS defense contract, 2026-02-17."
+    },
+    {
+      "source_id": "S7",
+      "description": "U.S. Army, advanced manufacturing supply-chain qualification initiative, 2026-03-24."
+    },
+    {
+      "source_id": "S8",
+      "description": "NIST, Roadmapping In-Situ Metrology for Metal Alloy Additive Manufacturing, 2026."
+    },
+    {
+      "source_id": "S9",
+      "description": "NIST, Fundamental Measurements for Metal Additive Manufacturing, updated 2026-05-07."
+    },
+    {
+      "source_id": "S10",
+      "description": "Velo3D Sapphire XC/XC 1MZ product documentation and process materials."
+    },
+    {
+      "source_id": "S11",
+      "description": "Nikon SLM Solutions NXG XII 600 product documentation."
+    },
+    {
+      "source_id": "S12",
+      "description": "EOS M 400-4 product documentation."
+    },
+    {
+      "source_id": "S13",
+      "description": "Colibrium Additive M Line product documentation."
+    },
+    {
+      "source_id": "S14",
+      "description": "3D Systems DMP Factory 500 product documentation."
+    },
+    {
+      "source_id": "S15",
+      "description": "MarketScreener VELO consensus estimates, August 2026 snapshot."
+    },
+    {
+      "source_id": "S16",
+      "description": "Investing.com VELO analyst consensus/price targets, 2026-08-24 snapshot."
+    },
+    {
+      "source_id": "S17",
+      "description": "StockAnalysis VELO valuation-ratio history, August 2026 snapshot."
+    },
+    {
+      "source_id": "S18",
+      "description": "StockScan/Investing historical price data, August 2026 snapshot."
+    },
+    {
+      "source_id": "S19",
+      "description": "Nano Dimension / SEC, Desktop Metal acquisition completion, 2025-04-02."
+    },
+    {
+      "source_id": "S20",
+      "description": "Nano Dimension / SEC, Markforged acquisition completion, 2025-04-25."
+    },
+    {
+      "source_id": "S21",
+      "description": "Shapeways SEC filing, Chapter 7 bankruptcy, 2024-07-02."
+    },
+    {
+      "source_id": "S22",
+      "description": "Velo3D 2021 SPAC investor presentation."
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "최근 8분기 매출",
+      "authoritative_source_block": "financials.quarterly_8q",
+      "source_values": [
+        {
+          "quarter": "Q3 2024",
+          "revenue_m": 8.2
+        },
+        {
+          "quarter": "Q4 2024",
+          "revenue_m": 12.626
+        },
+        {
+          "quarter": "Q1 2025",
+          "revenue_m": 9.3
+        },
+        {
+          "quarter": "Q2 2025",
+          "revenue_m": 13.572
+        },
+        {
+          "quarter": "Q3 2025",
+          "revenue_m": 13.6
+        },
+        {
+          "quarter": "Q4 2025",
+          "revenue_m": 9.441
+        },
+        {
+          "quarter": "Q1 2026",
+          "revenue_m": 13.816
+        },
+        {
+          "quarter": "Q2 2026",
+          "revenue_m": 20.664
+        }
+      ],
+      "source_version_or_hash": "3fcc128a9477bfa3",
+      "display_values": [
+        {
+          "quarter": "Q3 2024",
+          "revenue_m": 8.2
+        },
+        {
+          "quarter": "Q4 2024",
+          "revenue_m": 12.626
+        },
+        {
+          "quarter": "Q1 2025",
+          "revenue_m": 9.3
+        },
+        {
+          "quarter": "Q2 2025",
+          "revenue_m": 13.572
+        },
+        {
+          "quarter": "Q3 2025",
+          "revenue_m": 13.6
+        },
+        {
+          "quarter": "Q4 2025",
+          "revenue_m": 9.441
+        },
+        {
+          "quarter": "Q1 2026",
+          "revenue_m": 13.816
+        },
+        {
+          "quarter": "Q2 2026",
+          "revenue_m": 20.664
+        }
+      ],
+      "narrative_locator": "4.2",
+      "table_locator": "4.2 table",
+      "caption_locator": "최근 8분기 매출",
+      "rendered_asset_locator": "#vis-001"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "최근 8분기 총마진",
+      "authoritative_source_block": "financials.quarterly_8q",
+      "source_values": [
+        {
+          "quarter": "Q3 2024",
+          "gross_margin_pct": 49.4
+        },
+        {
+          "quarter": "Q4 2024",
+          "gross_margin_pct": -3.5
+        },
+        {
+          "quarter": "Q1 2025",
+          "gross_margin_pct": 7.5
+        },
+        {
+          "quarter": "Q2 2025",
+          "gross_margin_pct": -11.7
+        },
+        {
+          "quarter": "Q3 2025",
+          "gross_margin_pct": 3.2
+        },
+        {
+          "quarter": "Q4 2025",
+          "gross_margin_pct": -73.6
+        },
+        {
+          "quarter": "Q1 2026",
+          "gross_margin_pct": 17.2
+        },
+        {
+          "quarter": "Q2 2026",
+          "gross_margin_pct": 21.5
+        }
+      ],
+      "source_version_or_hash": "4c3b2fe4e12953cb",
+      "display_values": [
+        {
+          "quarter": "Q3 2024",
+          "gross_margin_pct": 49.4
+        },
+        {
+          "quarter": "Q4 2024",
+          "gross_margin_pct": -3.5
+        },
+        {
+          "quarter": "Q1 2025",
+          "gross_margin_pct": 7.5
+        },
+        {
+          "quarter": "Q2 2025",
+          "gross_margin_pct": -11.7
+        },
+        {
+          "quarter": "Q3 2025",
+          "gross_margin_pct": 3.2
+        },
+        {
+          "quarter": "Q4 2025",
+          "gross_margin_pct": -73.6
+        },
+        {
+          "quarter": "Q1 2026",
+          "gross_margin_pct": 17.2
+        },
+        {
+          "quarter": "Q2 2026",
+          "gross_margin_pct": 21.5
+        }
+      ],
+      "narrative_locator": "4.2–4.3",
+      "table_locator": "4.2 table",
+      "caption_locator": "최근 8분기 총마진",
+      "rendered_asset_locator": "#vis-002"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "발행주식수와 희석 경로",
+      "authoritative_source_block": "kpis.share_count + scenarios.diluted_shares",
+      "source_values": {
+        "actual": [
+          {
+            "date": "2025-12-31",
+            "shares_m": 24.608
+          },
+          {
+            "date": "2026-08-07",
+            "shares_m": 32.149
+          }
+        ],
+        "scenario_2029": {
+          "Bear": 48,
+          "Base": 40,
+          "Bull Execution": 37,
+          "Bull Ecosystem": 36
+        }
+      },
+      "source_version_or_hash": "06d48b63b0c59f11",
+      "display_values": {
+        "actual": [
+          {
+            "date": "2025-12-31",
+            "shares_m": 24.608
+          },
+          {
+            "date": "2026-08-07",
+            "shares_m": 32.149
+          }
+        ],
+        "scenario_2029": {
+          "Bear": 48,
+          "Base": 40,
+          "Bull Execution": 37,
+          "Bull Ecosystem": 36
+        }
+      },
+      "narrative_locator": "4.6",
+      "table_locator": "Appendix C",
+      "caption_locator": "발행주식수와 희석 경로",
+      "rendered_asset_locator": "#vis-003"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "시나리오별 2029 주당가치와 현재가치",
+      "authoritative_source_block": "scenarios",
+      "source_values": [
+        {
+          "name": "Bear",
+          "probability": 0.3,
+          "future": 2.97,
+          "pv": 1.8595963459333547
+        },
+        {
+          "name": "Base",
+          "probability": 0.45,
+          "future": 18.5,
+          "pv": 11.583344242345811
+        },
+        {
+          "name": "Bull Execution",
+          "probability": 0.2,
+          "future": 37.84,
+          "pv": 23.692634925965702
+        },
+        {
+          "name": "Bull Ecosystem",
+          "probability": 0.05,
+          "future": 56.94,
+          "pv": 35.651655197793
+        }
+      ],
+      "source_version_or_hash": "35d0a7c63816e650",
+      "display_values": [
+        {
+          "name": "Bear",
+          "probability": 0.3,
+          "future": 2.97,
+          "pv": 1.8595963459333547
+        },
+        {
+          "name": "Base",
+          "probability": 0.45,
+          "future": 18.5,
+          "pv": 11.583344242345811
+        },
+        {
+          "name": "Bull Execution",
+          "probability": 0.2,
+          "future": 37.84,
+          "pv": 23.692634925965702
+        },
+        {
+          "name": "Bull Ecosystem",
+          "probability": 0.05,
+          "future": 56.94,
+          "pv": 35.651655197793
+        }
+      ],
+      "narrative_locator": "5.2–5.3",
+      "table_locator": "Appendix D",
+      "caption_locator": "시나리오별 2029 주당가치와 현재가치",
+      "rendered_asset_locator": "#vis-004"
+    },
+    {
+      "vis_id": "VIS-005",
+      "figure_title": "현재가가 요구하는 2029 매출",
+      "authoritative_source_block": "reverse_expectations",
+      "source_values": [
+        {
+          "exit_ev_sales": 3.0,
+          "required_2029_revenue_m": 255.54795134970524,
+          "2026_2029_cagr_pct": 52.53867480383603
+        },
+        {
+          "exit_ev_sales": 3.5,
+          "required_2029_revenue_m": 219.0411011568902,
+          "2026_2029_cagr_pct": 44.89866111527336
+        },
+        {
+          "exit_ev_sales": 4.0,
+          "required_2029_revenue_m": 191.66096351227893,
+          "2026_2029_cagr_pct": 38.59058359468774
+        },
+        {
+          "exit_ev_sales": 4.5,
+          "required_2029_revenue_m": 170.3653008998035,
+          "2026_2029_cagr_pct": 33.25480642539424
+        },
+        {
+          "exit_ev_sales": 5.0,
+          "required_2029_revenue_m": 153.32877080982314,
+          "2026_2029_cagr_pct": 28.6561010513962
+        }
+      ],
+      "source_version_or_hash": "6c2f32096a2a5381",
+      "display_values": [
+        {
+          "exit_ev_sales": 3.0,
+          "required_2029_revenue_m": 255.54795134970524,
+          "2026_2029_cagr_pct": 52.53867480383603
+        },
+        {
+          "exit_ev_sales": 3.5,
+          "required_2029_revenue_m": 219.0411011568902,
+          "2026_2029_cagr_pct": 44.89866111527336
+        },
+        {
+          "exit_ev_sales": 4.0,
+          "required_2029_revenue_m": 191.66096351227893,
+          "2026_2029_cagr_pct": 38.59058359468774
+        },
+        {
+          "exit_ev_sales": 4.5,
+          "required_2029_revenue_m": 170.3653008998035,
+          "2026_2029_cagr_pct": 33.25480642539424
+        },
+        {
+          "exit_ev_sales": 5.0,
+          "required_2029_revenue_m": 153.32877080982314,
+          "2026_2029_cagr_pct": 28.6561010513962
+        }
+      ],
+      "narrative_locator": "5.5",
+      "table_locator": "Appendix D",
+      "caption_locator": "현재가가 요구하는 2029 매출",
+      "rendered_asset_locator": "#vis-005"
+    },
+    {
+      "vis_id": "VIS-006",
+      "figure_title": "Consensus vs Base 매출 경로",
+      "authoritative_source_block": "consensus + scenarios.Base",
+      "source_values": {
+        "years": [
+          2026,
+          2027,
+          2028
+        ],
+        "consensus_revenue_m": [
+          72.9,
+          92.7,
+          122.3
+        ],
+        "base_revenue_m": [
+          72,
+          100,
+          135
+        ]
+      },
+      "source_version_or_hash": "ec6d0954cba137fa",
+      "display_values": {
+        "years": [
+          2026,
+          2027,
+          2028
+        ],
+        "consensus_revenue_m": [
+          72.9,
+          92.7,
+          122.3
+        ],
+        "base_revenue_m": [
+          72,
+          100,
+          135
+        ]
+      },
+      "narrative_locator": "5.6",
+      "table_locator": null,
+      "caption_locator": "Consensus vs Base 매출 경로",
+      "rendered_asset_locator": "#vis-006"
+    }
+  ]
+}

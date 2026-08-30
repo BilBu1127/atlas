@@ -1,0 +1,854 @@
+{
+  "meta": {
+    "ticker": "GLW",
+    "company": "Corning Incorporated",
+    "T0": "2026-08-27 Asia/Seoul",
+    "price_asof": "2026-08-25 close",
+    "price_usd": 147.16,
+    "price_note": "2026-08-26 feeds conflicted/staled during finalization; 2026-08-25 $147.16 is the latest stable verified close used for valuation.",
+    "filing_asof": "2026-07-29 Form 10-Q for period ended 2026-06-30, accession 0000024741-26-000255",
+    "latest_filing_check": "PASS; no material Corning filing after the Q2 10-Q was identified before publishing; post-filing Zayo 2026-08-20 supply announcement was consumed.",
+    "transcript_asof": "2026-07-28 Q2 2026 earnings materials",
+    "consensus_asof": "2026-08-24~2026-08-26",
+    "version": "Deep Dive OS v1.7",
+    "publishing_date": "2026-08-27",
+    "pdf": "USER_WAIVED"
+  },
+  "financials": {
+    "annual_3y": {
+      "2023": {
+        "gaap_sales_b": 12.588,
+        "gaap_net_income_b": 0.581,
+        "gaap_eps": 0.68,
+        "core_sales_b": 13.58,
+        "core_net_income_b": 1.463,
+        "core_eps": 1.7,
+        "ocf_b": 2.0,
+        "adjusted_fcf_b": 0.88
+      },
+      "2024": {
+        "gaap_sales_b": 13.118,
+        "gaap_net_income_b": 0.506,
+        "gaap_eps": 0.58,
+        "core_sales_b": 14.469,
+        "core_net_income_b": 1.699,
+        "core_eps": 1.96,
+        "ocf_b": 1.939,
+        "adjusted_fcf_b": 1.25
+      },
+      "2025": {
+        "gaap_sales_b": 15.629,
+        "gaap_net_income_b": 1.596,
+        "gaap_eps": 1.83,
+        "core_sales_b": 16.408,
+        "core_net_income_b": 2.199,
+        "core_eps": 2.52,
+        "ocf_b": 2.695,
+        "adjusted_fcf_b": 1.72,
+        "core_gross_margin_pct": 38.4,
+        "core_operating_margin_pct": 19.3
+      }
+    },
+    "quarterly_8q": [
+      {
+        "period": "Q3 2024",
+        "gaap_sales_b": 3.391,
+        "gaap_net_income_b": -0.117,
+        "gaap_eps": -0.14,
+        "core_sales_b": 3.733,
+        "core_net_income_b": 0.465,
+        "core_eps": 0.54
+      },
+      {
+        "period": "Q4 2024",
+        "gaap_sales_b": 3.501,
+        "gaap_net_income_b": 0.31,
+        "gaap_eps": 0.36,
+        "core_sales_b": 3.874,
+        "core_net_income_b": 0.497,
+        "core_eps": 0.57,
+        "core_operating_margin_pct": 18.5
+      },
+      {
+        "period": "Q1 2025",
+        "gaap_sales_b": 3.452,
+        "gaap_net_income_b": 0.157,
+        "gaap_eps": 0.18,
+        "core_sales_b": 3.679,
+        "core_net_income_b": 0.467,
+        "core_eps": 0.54
+      },
+      {
+        "period": "Q2 2025",
+        "gaap_sales_b": 3.862,
+        "gaap_net_income_b": 0.469,
+        "gaap_eps": 0.54,
+        "core_sales_b": 4.045,
+        "core_net_income_b": 0.523,
+        "core_eps": 0.6,
+        "core_operating_margin_pct": 19.0,
+        "core_roic_pct": 13.1,
+        "adjusted_fcf_b": 0.451
+      },
+      {
+        "period": "Q3 2025",
+        "gaap_sales_b": 4.1,
+        "gaap_net_income_b": 0.43,
+        "gaap_eps": 0.5,
+        "core_sales_b": 4.272,
+        "core_net_income_b": 0.585,
+        "core_eps": 0.67,
+        "core_operating_margin_pct": 19.6,
+        "adjusted_fcf_b": 0.535
+      },
+      {
+        "period": "Q4 2025",
+        "gaap_sales_b": 4.215,
+        "gaap_net_income_b": 0.54,
+        "gaap_eps": 0.62,
+        "core_sales_b": 4.412,
+        "core_net_income_b": 0.624,
+        "core_eps": 0.72,
+        "core_operating_margin_pct": 20.2
+      },
+      {
+        "period": "Q1 2026",
+        "gaap_sales_b": 4.144,
+        "gaap_net_income_b": 0.371,
+        "gaap_eps": 0.43,
+        "core_sales_b": 4.345,
+        "core_net_income_b": 0.612,
+        "core_eps": 0.7,
+        "core_operating_margin_pct": 20.2,
+        "core_gross_margin_pct": 39.1,
+        "adjusted_fcf_b": 0.188
+      },
+      {
+        "period": "Q2 2026",
+        "gaap_sales_b": 4.505,
+        "gaap_net_income_b": 0.559,
+        "gaap_eps": 0.64,
+        "core_sales_b": 4.738,
+        "core_net_income_b": 0.68,
+        "core_eps": 0.78,
+        "core_operating_margin_pct": 20.9,
+        "core_gross_margin_pct": 39.6,
+        "core_roic_pct": 14.9,
+        "adjusted_fcf_b": 1.42
+      }
+    ],
+    "q2_2026_segments": [
+      {
+        "segment": "Optical Communications",
+        "sales_b": 2.072,
+        "sales_yoy_pct": 32,
+        "segment_net_income_b": 0.438,
+        "net_income_yoy_pct": 77,
+        "net_income_margin_pct": 21.1
+      },
+      {
+        "segment": "Glass Innovations",
+        "sales_b": 1.463,
+        "sales_yoy_pct": 1,
+        "segment_net_income_b": 0.354,
+        "net_income_yoy_pct": 9,
+        "net_income_margin_pct": 24.2
+      },
+      {
+        "segment": "Automotive",
+        "sales_b": 0.471,
+        "sales_yoy_pct": 2,
+        "segment_net_income_b": 0.082,
+        "net_income_yoy_pct": 4,
+        "net_income_margin_pct": 17.4
+      },
+      {
+        "segment": "Solar",
+        "sales_b": 0.438,
+        "sales_yoy_pct": 90,
+        "segment_net_income_b": -0.007,
+        "net_income_yoy_pct": null,
+        "net_income_margin_pct": -1.6
+      }
+    ],
+    "balance_sheet_q2_2026": {
+      "cash_b": 2.504,
+      "current_debt_b": 0.668,
+      "long_term_debt_b": 7.756,
+      "revolver_available_b": 1.5,
+      "working_capital_b": 4.896,
+      "accounts_receivable_b": 2.932,
+      "inventory_b": 3.426,
+      "dso_days": 59,
+      "inventory_turns": 3.3,
+      "dpo_days": 70,
+      "shares_outstanding_m": 861.388
+    },
+    "cashflow_6m_2026": {
+      "ocf_b": 2.079,
+      "customer_deposit_inflow_b": 1.0,
+      "cash_capex_b": 0.754,
+      "fy2026_capex_guidance_b": 2.0,
+      "optical_segment_capex_b": 0.328
+    },
+    "ceilings": [
+      "2026 recast creates limited historical comparability for the new Glass Innovations and Solar segments.",
+      "Exact plant-level optical capex/nameplate/utilization is not disclosed.",
+      "Solar wafer nameplate GW and normalized margin are not disclosed."
+    ]
+  },
+  "kpis": [
+    {
+      "name": "Optical Communications sales growth YoY",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": 32
+        }
+      ],
+      "current": 32,
+      "thresholds": {
+        "green": ">=25%",
+        "yellow": "15% to <25%",
+        "red": "<15% for two consecutive quarters"
+      }
+    },
+    {
+      "name": "Optical segment net income margin",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": 21.1
+        }
+      ],
+      "current": 21.1,
+      "thresholds": {
+        "green": ">=20.5%",
+        "yellow": "18% to <20.5%",
+        "red": "<18% for two consecutive quarters"
+      }
+    },
+    {
+      "name": "Core operating margin",
+      "history": [
+        {
+          "period": "Q4 2024",
+          "value": 18.5
+        },
+        {
+          "period": "Q4 2025",
+          "value": 20.2
+        },
+        {
+          "period": "Q1 2026",
+          "value": 20.2
+        },
+        {
+          "period": "Q2 2026",
+          "value": 20.9
+        }
+      ],
+      "current": 20.9,
+      "thresholds": {
+        "green": ">=21% while sales grow >12%",
+        "yellow": "19.5% to <21%",
+        "red": "<19.5% with elevated capex"
+      }
+    },
+    {
+      "name": "Core ROIC",
+      "history": [
+        {
+          "period": "Q4 2024",
+          "value": 12.7
+        },
+        {
+          "period": "Q4 2025",
+          "value": 14.2
+        },
+        {
+          "period": "Q2 2026",
+          "value": 14.9
+        }
+      ],
+      "current": 14.9,
+      "thresholds": {
+        "green": ">=16% by 2027 / trending to high teens",
+        "yellow": "14% to <16%",
+        "red": "<14% while growth capex rises"
+      }
+    },
+    {
+      "name": "Solar segment profitability",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": -0.007,
+          "unit": "$B segment net income"
+        }
+      ],
+      "current": -0.007,
+      "thresholds": {
+        "green": "positive segment NI for two consecutive quarters with improving cash contribution",
+        "yellow": "near breakeven / one-off volatility",
+        "red": "persistent losses despite >30% sales growth"
+      }
+    },
+    {
+      "name": "Customer-funded growth quality",
+      "history": [
+        {
+          "period": "6M 2026",
+          "value": 1.0,
+          "unit": "$B customer deposit"
+        }
+      ],
+      "current": 1.0,
+      "thresholds": {
+        "green": "new capacity is materially matched by deposits/contracts/customer risk sharing",
+        "yellow": "capex rises faster than visible contract support",
+        "red": "large uncommitted capacity build / working-capital strain"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.2,
+      "revenue_path": [
+        19.1,
+        21.0,
+        23.5,
+        25.0,
+        27.0
+      ],
+      "margin_path": [
+        20.5,
+        20.0,
+        19.5,
+        19.5,
+        20.0
+      ],
+      "fcf_margin_path": [
+        9.0,
+        9.5,
+        10.0,
+        11.0,
+        12.0
+      ],
+      "diluted_shares_m": 875,
+      "terminal_net_margin_pct": 12.0,
+      "terminal_pe": 22.0,
+      "cumulative_dividends": 5.0,
+      "formation_conditions": "AI capex slope decelerates, new optical capacity utilization disappoints, Solar remains low-return, legacy glass/auto only partly offset.",
+      "break_conditions": "Optical growth >25% and margin >20% through 2027 with Solar sustainably profitable.",
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "fcf": [
+        1.719,
+        1.995,
+        2.35,
+        2.75,
+        3.24
+      ],
+      "terminal_net_income_b": 3.24,
+      "terminal_eps": 3.7,
+      "terminal_price_2030": 81.46,
+      "terminal_total_return_value_2030": 86.46,
+      "per_share_value": 57.17,
+      "scenario_irr_from_current": -0.1153
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "revenue_path": [
+        19.2,
+        22.5,
+        27.0,
+        31.0,
+        35.0
+      ],
+      "margin_path": [
+        21.0,
+        22.0,
+        23.0,
+        23.5,
+        24.0
+      ],
+      "fcf_margin_path": [
+        10.0,
+        11.5,
+        13.0,
+        14.5,
+        15.5
+      ],
+      "diluted_shares_m": 880,
+      "terminal_net_margin_pct": 17.0,
+      "terminal_pe": 28.0,
+      "cumulative_dividends": 6.0,
+      "formation_conditions": "Company high-confidence 2028/2030 revenue is achieved, optical mix remains strong, customer co-funding limits capital drag, Solar reaches sustainable profit.",
+      "break_conditions": "Two quarters of optical sales <15% growth or segment NI margin <18%, or 2030 high-confidence run-rate is cut.",
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "fcf": [
+        1.92,
+        2.587,
+        3.51,
+        4.495,
+        5.425
+      ],
+      "terminal_net_income_b": 5.95,
+      "terminal_eps": 6.76,
+      "terminal_price_2030": 189.32,
+      "terminal_total_return_value_2030": 195.32,
+      "per_share_value": 129.15,
+      "scenario_irr_from_current": 0.0674
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.25,
+      "revenue_path": [
+        19.3,
+        23.5,
+        29.5,
+        35.0,
+        40.0
+      ],
+      "margin_path": [
+        21.0,
+        23.0,
+        25.0,
+        26.0,
+        26.5
+      ],
+      "fcf_margin_path": [
+        10.0,
+        12.0,
+        14.5,
+        16.5,
+        18.0
+      ],
+      "diluted_shares_m": 890,
+      "terminal_net_margin_pct": 19.0,
+      "terminal_pe": 30.0,
+      "cumulative_dividends": 6.5,
+      "formation_conditions": "Internal Springboard plan is broadly delivered; hyperscaler contracts convert to high utilization and mix; Solar and Glass contribute positive incremental cash.",
+      "break_conditions": "Capacity ramp requires materially more capital than customer funding, or photonics content per cluster plateaus.",
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "fcf": [
+        1.93,
+        2.82,
+        4.277,
+        5.775,
+        7.2
+      ],
+      "terminal_net_income_b": 7.6,
+      "terminal_eps": 8.54,
+      "terminal_price_2030": 256.18,
+      "terminal_total_return_value_2030": 262.68,
+      "per_share_value": 173.69,
+      "scenario_irr_from_current": 0.1428
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.15,
+      "revenue_path": [
+        19.3,
+        24.0,
+        31.0,
+        38.0,
+        45.0
+      ],
+      "margin_path": [
+        21.0,
+        23.5,
+        25.5,
+        27.0,
+        28.0
+      ],
+      "fcf_margin_path": [
+        10.0,
+        12.5,
+        15.0,
+        18.0,
+        20.0
+      ],
+      "diluted_shares_m": 900,
+      "terminal_net_margin_pct": 20.5,
+      "terminal_pe": 32.0,
+      "cumulative_dividends": 7.0,
+      "formation_conditions": "Photonics MAP expands beyond passive connectivity into a larger attributable value pool, CPO/multicore adoption accelerates, and Corning exceeds its $40B internal 2030 plan.",
+      "break_conditions": "Photonics remains mostly passive/low take-rate or ecosystem partners capture the majority of economics.",
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "fcf": [
+        1.93,
+        3.0,
+        4.65,
+        6.84,
+        9.0
+      ],
+      "terminal_net_income_b": 9.225,
+      "terminal_eps": 10.25,
+      "terminal_price_2030": 328.0,
+      "terminal_total_return_value_2030": 335.0,
+      "per_share_value": 221.51,
+      "scenario_irr_from_current": 0.2087
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B — Hybrid / Expectation-Driven v3.3",
+    "core": 82.0,
+    "execution": 56.0,
+    "ecosystem": 6.0,
+    "drag": 4.0,
+    "expected_value": 139.74,
+    "expected_value_bridge_rounded": 140.0,
+    "expected_terminal_total_return_value_2030": 211.34,
+    "expected_irr": 0.087,
+    "hurdle_rate": 0.12,
+    "hurdle_fair_price": 129.23,
+    "current_price": 147.16,
+    "valuation_band_history": {
+      "forward_pe_low": 16.6,
+      "forward_pe_median": 21.74,
+      "forward_pe_high_q2_2026": 75.99,
+      "recent_forward_pe_range": "~39x to 46x depending snapshot",
+      "recent_percentile_range": "~82nd to 91st percentile of observed 2023Q4–2026Q2 quarterly snapshots"
+    },
+    "upside_downside": {
+      "bull_execution_pv": 173.69,
+      "bull_ecosystem_pv": 221.51,
+      "bear_pv": 57.17,
+      "ud_ratio_vs_bull_execution": 0.29,
+      "ud_ratio_vs_bull_ecosystem": 0.83
+    }
+  },
+  "reverse_expectations": {
+    "horizon_years": 4.34,
+    "required_return": 0.12,
+    "required_2030_total_return_value_per_share": 240.66,
+    "assumed_cumulative_dividends_per_share": 6.0,
+    "required_2030_terminal_share_price": 234.66,
+    "exit_pe_sensitivity": {
+      "25": {
+        "required_2030_eps": 9.39,
+        "required_net_income_b": 8.26,
+        "required_revenue_b_at_17pct_net_margin": 48.6
+      },
+      "28": {
+        "required_2030_eps": 8.38,
+        "required_net_income_b": 7.37,
+        "required_revenue_b_at_17pct_net_margin": 43.4
+      },
+      "30": {
+        "required_2030_eps": 7.82,
+        "required_net_income_b": 6.88,
+        "required_revenue_b_at_17pct_net_margin": 40.5
+      },
+      "35": {
+        "required_2030_eps": 6.7,
+        "required_net_income_b": 5.9,
+        "required_revenue_b_at_17pct_net_margin": 34.7
+      }
+    },
+    "interpretation": "At a 30x 2030 P/E and 17% net margin, the current price requires about $40.5B of 2030 revenue—approximately Corning's internal $40B plan, not merely its $35B high-confidence plan. At a 35x terminal P/E, the $35B high-confidence plan is roughly sufficient; at 25x, required revenue rises toward ~$49B."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_b": 19.19,
+      "eps": 3.27
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_b": 22.61,
+      "eps": 4.33
+    },
+    "fy3": {
+      "year": 2028,
+      "revenue_b_range": [
+        27.1,
+        27.8
+      ]
+    },
+    "price_target": {
+      "average_median_range": [
+        191,
+        193
+      ],
+      "low": 129,
+      "high": 226
+    },
+    "rating_snapshot": {
+      "strong_buy": 14,
+      "buy": 2,
+      "hold": 5
+    },
+    "short_interest": {
+      "asof": "2026-07-31",
+      "shares_m": 17.97,
+      "float_pct_approx": 2.1,
+      "days_to_cover": 1.09
+    },
+    "revision_trend": "Positive operating revisions through 2026, but FY2028 revenue consensus already sits near the company's $27B high-confidence 2028 run-rate; market expectations are not low."
+  },
+  "stance": {
+    "zone": "가격 부담 — 신규 진입 회피 / 기존 보유는 비중 재점검",
+    "price_bands": {
+      "below_105": "적극 관심 후보 — expected IRR ~17%+; Bull Ecosystem/Bear U/D >2x in this model",
+      "105_to_120": "조건부 관심 — execution evidence required",
+      "120_to_135": "관망/선별 관심 — 12% hurdle 근처",
+      "135_to_165": "가격 부담 — expected return below hurdle in base probability set",
+      "above_165": "강한 실행 선반영 — Bull execution dependence rises"
+    },
+    "horizon": "to FY2030 (~4.34 years)",
+    "reassessment_rule": "Two RED KPI tripwires simultaneously trigger mandatory thesis/valuation reassessment."
+  },
+  "catalysts": [
+    {
+      "when": "2026 Q3 earnings (estimated late Oct 2026)",
+      "event": "Q3 guidance delivery: core sales $4.9–5.0B, core EPS $0.85–0.89; Solar profitability improvement",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2H 2026",
+      "event": "T1 Energy begins receiving Corning U.S. solar wafers; Solar ramp economics become observable",
+      "sensitivity": "M"
+    },
+    {
+      "when": "2H 2026",
+      "event": "Stryków, Poland optical expansion opens/ramp begins for EMEA AI connectivity",
+      "sensitivity": "M"
+    },
+    {
+      "when": "by end-2026",
+      "event": "Apple Kentucky cover-glass program reaches full global iPhone/Apple Watch production objective",
+      "sensitivity": "M"
+    },
+    {
+      "when": "Q4 2026 / FY2026 results (early 2027)",
+      "event": "Test of ~$20B annualized sales run-rate and >20% operating-margin durability",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027 H1",
+      "event": "Evidence on NVIDIA/Meta/Amazon-linked U.S. optical capacity commissioning and utilization",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027 Q1–Q2 earnings",
+      "event": "ROIC progression toward high teens while capex remains elevated",
+      "sensitivity": "H"
+    },
+    {
+      "when": "through 2027",
+      "event": "Potential U.S. trade/policy decisions affecting domestic polysilicon/solar economics",
+      "sensitivity": "M"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC001",
+      "status": "COMPLETE",
+      "h3_locator": "Ch0/3/4"
+    },
+    {
+      "rc_id": "RC002",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1/3"
+    },
+    {
+      "rc_id": "RC003",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1/3"
+    },
+    {
+      "rc_id": "RC004",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1/3"
+    },
+    {
+      "rc_id": "RC005",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3/4/5 + Appendix"
+    },
+    {
+      "rc_id": "RC006",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch1/3/5 + Appendix"
+    },
+    {
+      "rc_id": "RC007",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch1/3/5"
+    },
+    {
+      "rc_id": "RC008",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch1/3/4/5"
+    },
+    {
+      "rc_id": "RC009",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1/3/4"
+    },
+    {
+      "rc_id": "RC010",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1/3/4"
+    },
+    {
+      "rc_id": "RC011",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3"
+    },
+    {
+      "rc_id": "RC012",
+      "status": "COMPLETE",
+      "h3_locator": "Ch2"
+    },
+    {
+      "rc_id": "RC013",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4"
+    },
+    {
+      "rc_id": "RC014",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4"
+    },
+    {
+      "rc_id": "RC015",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4/5"
+    },
+    {
+      "rc_id": "RC016",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4/6"
+    },
+    {
+      "rc_id": "RC017",
+      "status": "COMPLETE",
+      "h3_locator": "Ch0/5/6"
+    },
+    {
+      "rc_id": "RC018",
+      "status": "COMPLETE",
+      "h3_locator": "Ch5"
+    },
+    {
+      "rc_id": "RC019",
+      "status": "NOT_MATERIAL",
+      "h3_locator": "Appendix"
+    },
+    {
+      "rc_id": "RC020",
+      "status": "COMPLETE",
+      "h3_locator": "Ch6"
+    }
+  ],
+  "audit": {
+    "rc_total": 20,
+    "rc_complete": 15,
+    "rc_ceiling": 4,
+    "rc_not_material": 1,
+    "rc_contradicted": 0,
+    "rc_unresolved": 0,
+    "rc_h3_coverage_rate": 1.0,
+    "latest_filing_check": "PASS",
+    "korean_prose_quality": "PASS",
+    "industry_company_narrative": "PASS",
+    "explanatory_space_allocation": "PASS",
+    "data_pack_report_parity": "PASS"
+  },
+  "sources": [
+    {
+      "name": "Corning Q2 2026 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000255/glw-20260630.htm",
+      "tier": "Primary"
+    },
+    {
+      "name": "Corning 2025 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000124/glw-20251231.htm",
+      "tier": "Primary"
+    },
+    {
+      "name": "Corning Q2 2026 earnings release",
+      "url": "https://investor.corning.com/news-and-events/news/news-details/2026/Cornings-Strong-Second-Quarter-2026-Financial-Results1-Demonstrate-Progress-on-Recently-Upgraded-Springboard-Plan/default.aspx",
+      "tier": "Primary"
+    },
+    {
+      "name": "Corning Springboard investor relations",
+      "url": "https://investor.corning.com/investor-relations/",
+      "tier": "Primary"
+    },
+    {
+      "name": "NVIDIA/Corning Form 8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/24741/000120677426000273/glw4631061-8k.htm",
+      "tier": "Primary"
+    },
+    {
+      "name": "Meta-Corning agreement",
+      "url": "https://about.fb.com/news/2026/01/meta-6-billion-agreement-corning-support-us-manufacturing/",
+      "tier": "Primary"
+    },
+    {
+      "name": "Apple-Corning Kentucky commitment",
+      "url": "https://www.apple.com/newsroom/2025/08/apple-corning-to-manufacture-all-iphone-apple-watch-cover-glass-in-kentucky/",
+      "tier": "Primary"
+    },
+    {
+      "name": "T1 Energy-Corning solar agreement",
+      "url": "https://ir.t1energy.com/news-releases/news-release-details/t1-energy-and-corning-deal-accelerates-made-america-solar",
+      "tier": "Primary"
+    },
+    {
+      "name": "IRS Section 45X regulations",
+      "url": "https://www.irs.gov/irb/2024-51_IRB",
+      "tier": "Primary"
+    },
+    {
+      "name": "Corning 2024 Springboard update",
+      "url": "https://www.corning.com/worldwide/en/about-us/news-events/news-releases/2024/09/corning-provides-update-on-key-milestones-in-springboard-plan-to-add-more-than-3-billion-in-annualized-sales-and-shares-operating-margin-target-of-20-by-end-of-2026.html",
+      "tier": "Primary"
+    },
+    {
+      "name": "Corning 2023 full-year results",
+      "url": "https://investor.corning.com/news-and-events/news/news-details/2024/Corning-Reports-Fourth-Quarter-and-Full-Year-2023-Financial-Results/default.aspx",
+      "tier": "Primary"
+    },
+    {
+      "name": "T1 Energy Q1 2026 results",
+      "url": "https://ir.t1energy.com/news-releases/news-release-details/t1-energy-reports-first-quarter-2026-results",
+      "tier": "Primary"
+    },
+    {
+      "name": "Corning vehicle emissions regulation context",
+      "url": "https://www.corning.com/asean/en/products/environmental-technologies/emissions-control/emissions-regulations.html",
+      "tier": "Primary"
+    }
+  ]
+}

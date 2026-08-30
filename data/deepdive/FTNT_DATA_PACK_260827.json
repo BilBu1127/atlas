@@ -1,0 +1,1168 @@
+{
+  "meta": {
+    "ticker": "FTNT",
+    "company": "Fortinet, Inc.",
+    "T0": "2026-08-27",
+    "price_asof": "2026-08-26",
+    "filing_asof": "2026-07-30 Form 10-Q (period 2026-06-30)",
+    "consensus_asof": "2026-08-27",
+    "version": "Clean DDOS Production v1.7",
+    "pdf_waived_by_user": true,
+    "data_hash_sha256": "4a50a89ffdebf439a136ea420a5c95f1ff199d111893d2ce521aaaa5a9a248d4"
+  },
+  "financials": {
+    "annual_3y": {
+      "2023": {
+        "revenue": 5304.8,
+        "product_revenue": 1927.3,
+        "service_revenue": 3377.5,
+        "gaap_operating_margin": 23.4,
+        "ocf": 1935.5,
+        "capex": 204.1,
+        "fcf": 1731.4,
+        "fcf_margin": 32.6,
+        "deferred_revenue": 5735.0,
+        "billings": 6399.5
+      },
+      "2024": {
+        "revenue": 5955.8,
+        "product_revenue": 1908.7,
+        "service_revenue": 4047.1,
+        "gaap_operating_margin": 30.3,
+        "ocf": 2258.1,
+        "capex": 378.9,
+        "fcf": 1879.2,
+        "fcf_margin": 31.6,
+        "deferred_revenue": 6360.9,
+        "billings": 6532.5
+      },
+      "2025": {
+        "revenue": 6799.6,
+        "product_revenue": 2218.4,
+        "service_revenue": 4581.2,
+        "gaap_operating_margin": 30.7,
+        "ocf": 2590.6,
+        "capex": 364.8,
+        "fcf": 2211.8,
+        "fcf_margin": 32.5,
+        "deferred_revenue": 7115.8,
+        "billings": 7553.7
+      }
+    },
+    "quarterly_8q": [
+      {
+        "period": "2024 Q3",
+        "revenue": 1508.1,
+        "product": 473.9,
+        "service": 1034.2,
+        "billings": 1582.2,
+        "gaap_op_margin": 31.2,
+        "ocf": 608.1,
+        "fcf": 571.8
+      },
+      {
+        "period": "2024 Q4",
+        "revenue": 1660.1,
+        "product": 574.0,
+        "service": 1086.1,
+        "billings": 2002.5,
+        "gaap_op_margin": 34.6,
+        "ocf": 477.6,
+        "fcf": 380.0
+      },
+      {
+        "period": "2025 Q1",
+        "revenue": 1539.7,
+        "product": 459.1,
+        "service": 1080.6,
+        "billings": 1597.2,
+        "gaap_op_margin": 29.5,
+        "ocf": 863.3,
+        "fcf": 782.8
+      },
+      {
+        "period": "2025 Q2",
+        "revenue": 1630.0,
+        "product": 508.9,
+        "service": 1121.1,
+        "billings": 1778.4,
+        "gaap_op_margin": 28.1,
+        "ocf": 451.9,
+        "fcf": 284.1
+      },
+      {
+        "period": "2025 Q3",
+        "revenue": 1724.9,
+        "product": 559.3,
+        "service": 1165.6,
+        "billings": 1807.7,
+        "gaap_op_margin": 32.0,
+        "ocf": 655.2,
+        "fcf": 567.5
+      },
+      {
+        "period": "2025 Q4",
+        "revenue": 1905.0,
+        "product": 691.1,
+        "service": 1213.9,
+        "billings": 2370.4,
+        "gaap_op_margin": 32.8,
+        "ocf": 620.2,
+        "fcf": 577.4
+      },
+      {
+        "period": "2026 Q1",
+        "revenue": 1849.6,
+        "product": 645.1,
+        "service": 1204.5,
+        "billings": 2085.3,
+        "gaap_op_margin": 31.0,
+        "ocf": 1077.1,
+        "fcf": 1006.5
+      },
+      {
+        "period": "2026 Q2",
+        "revenue": 2047.9,
+        "product": 773.0,
+        "service": 1274.9,
+        "billings": 2372.0,
+        "gaap_op_margin": 33.7,
+        "ocf": 1043.6,
+        "fcf": 965.6
+      }
+    ],
+    "ceilings": [
+      "독립 bottom-up TAM 미확보",
+      "FortiASIC 경쟁사 동일조건 독립 성능시험 ceiling",
+      "세부 고객 cohort unit economics 비공개",
+      "distributor sell-through/channel inventory 정량 비공개"
+    ]
+  },
+  "balance_sheet_q2_2026": {
+    "cash": 2934.9,
+    "short_term_investments": 1134.7,
+    "long_term_investments": 399.1,
+    "long_term_debt": 496.9,
+    "net_cash_and_investments": 3971.8,
+    "deferred_revenue": 7675.7,
+    "inventory": 426.3,
+    "accounts_receivable": 1455.6,
+    "inventory_purchase_commitments": 1670.0
+  },
+  "kpis": [
+    {
+      "name": "Product revenue growth YoY",
+      "history": [
+        {
+          "period": "2025 Q2",
+          "value": 12.6
+        },
+        {
+          "period": "2025 Q3",
+          "value": 18.0
+        },
+        {
+          "period": "2025 Q4",
+          "value": 20.4
+        },
+        {
+          "period": "2026 Q1",
+          "value": 40.5
+        },
+        {
+          "period": "2026 Q2",
+          "value": 51.9
+        }
+      ],
+      "current": 51.9,
+      "thresholds": {
+        "green": "제품 성장 >20%이면서 서비스 성장도 13% 이상",
+        "yellow": "제품 0~20% 또는 서비스 전환이 지연",
+        "red": "제품 역성장이 2개 분기 지속되고 서비스도 <10%"
+      }
+    },
+    {
+      "name": "Service revenue growth YoY",
+      "history": [
+        {
+          "period": "2025 Q2",
+          "value": 14.1
+        },
+        {
+          "period": "2025 Q3",
+          "value": 12.7
+        },
+        {
+          "period": "2025 Q4",
+          "value": 11.8
+        },
+        {
+          "period": "2026 Q1",
+          "value": 11.5
+        },
+        {
+          "period": "2026 Q2",
+          "value": 13.7
+        }
+      ],
+      "current": 13.7,
+      "thresholds": {
+        "green": "2027 상반기까지 >=15%로 재가속",
+        "yellow": "10~15%",
+        "red": "<10%가 2개 분기 지속"
+      }
+    },
+    {
+      "name": "Billings growth YoY",
+      "history": [
+        {
+          "period": "2025 Q2",
+          "value": 15.0
+        },
+        {
+          "period": "2025 Q3",
+          "value": 14.3
+        },
+        {
+          "period": "2025 Q4",
+          "value": 18.4
+        },
+        {
+          "period": "2026 Q1",
+          "value": 30.6
+        },
+        {
+          "period": "2026 Q2",
+          "value": 33.4
+        }
+      ],
+      "current": 33.4,
+      "thresholds": {
+        "green": ">20%",
+        "yellow": "10~20%",
+        "red": "<10% 또는 2개 분기 연속 revenue 성장보다 현저히 낮음"
+      }
+    },
+    {
+      "name": "Deferred revenue",
+      "history": [
+        {
+          "period": "2023 YE",
+          "value": 5.735
+        },
+        {
+          "period": "2024 YE",
+          "value": 6.361
+        },
+        {
+          "period": "2025 YE",
+          "value": 7.116
+        },
+        {
+          "period": "2026 Q1",
+          "value": 7.352
+        },
+        {
+          "period": "2026 Q2",
+          "value": 7.676
+        }
+      ],
+      "current": 7.676,
+      "unit": "USD B",
+      "thresholds": {
+        "green": "YoY 성장 >=12%",
+        "yellow": "5~12%",
+        "red": "<5% 또는 절대액 감소"
+      }
+    },
+    {
+      "name": "FortiSASE large-enterprise penetration",
+      "history": [
+        {
+          "period": "2025 Q2",
+          "value": 13
+        },
+        {
+          "period": "2025 Q3",
+          "value": 15
+        },
+        {
+          "period": "2026 Q2",
+          "value": 19
+        }
+      ],
+      "current": 19,
+      "unit": "%",
+      "thresholds": {
+        "green": "2027 상반기 >23% 또는 연간 +4%p 이상",
+        "yellow": "19~23%에서 완만한 상승",
+        "red": "2개 측정시점 정체 또는 하락"
+      }
+    },
+    {
+      "name": "Product gross margin",
+      "history": [
+        {
+          "period": "2025 Q2",
+          "value": 67.4
+        },
+        {
+          "period": "2026 Q2",
+          "value": 69.8
+        }
+      ],
+      "current": 69.8,
+      "unit": "%",
+      "thresholds": {
+        "green": ">=68%",
+        "yellow": "65~68%",
+        "red": "<65%"
+      }
+    },
+    {
+      "name": "GAAP operating margin",
+      "history": [
+        {
+          "period": "2025 Q2",
+          "value": 28.1
+        },
+        {
+          "period": "2025 Q3",
+          "value": 32.0
+        },
+        {
+          "period": "2025 Q4",
+          "value": 32.8
+        },
+        {
+          "period": "2026 Q1",
+          "value": 31.0
+        },
+        {
+          "period": "2026 Q2",
+          "value": 33.7
+        }
+      ],
+      "current": 33.7,
+      "unit": "%",
+      "thresholds": {
+        "green": ">=33%",
+        "yellow": "30~33%",
+        "red": "<30%"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.25,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "revenue_path": [
+        8.1,
+        8.67,
+        9.36,
+        10.11,
+        10.82
+      ],
+      "growth_path": [
+        null,
+        7.0,
+        8.0,
+        8.0,
+        7.0
+      ],
+      "margin_path": [
+        33.5,
+        31.0,
+        30.5,
+        30.0,
+        30.0
+      ],
+      "fcf_margin_path": [
+        3700.0,
+        3200.0,
+        3100.0,
+        3050.0,
+        3050.0
+      ],
+      "fcf": [
+        299700.0,
+        277440.0,
+        290160.0,
+        308355.0,
+        330010.0
+      ],
+      "share_path": [
+        742,
+        730,
+        727,
+        724,
+        720
+      ],
+      "diluted_shares": 720,
+      "terminal_p_fcf": 24,
+      "terminal_price_2030": 11000.33,
+      "scenario_irr": 1.66,
+      "present_value_at_12pct": 6726.66,
+      "logic": "제품 리프레시가 빠르게 정상화되고 SASE/SecOps가 이를 충분히 상쇄하지 못함. 메모리 비용과 경쟁으로 마진도 정상화."
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "revenue_path": [
+        8.1,
+        9.07,
+        10.16,
+        11.38,
+        12.63
+      ],
+      "growth_path": [
+        null,
+        12.0,
+        12.0,
+        12.0,
+        11.0
+      ],
+      "margin_path": [
+        34.0,
+        34.5,
+        35.0,
+        35.5,
+        36.0
+      ],
+      "fcf_margin_path": [
+        3750.0,
+        3600.0,
+        3600.0,
+        3600.0,
+        3600.0
+      ],
+      "fcf": [
+        303750.0,
+        326520.0,
+        365760.0,
+        409680.0,
+        454680.0
+      ],
+      "share_path": [
+        742,
+        726,
+        719,
+        711,
+        703
+      ],
+      "diluted_shares": 703,
+      "terminal_p_fcf": 30,
+      "terminal_price_2030": 19403.13,
+      "scenario_irr": 2.0316,
+      "present_value_at_12pct": 11864.94,
+      "logic": "2026 제품 급증은 둔화되지만 설치기반이 서비스·SASE·SecOps로 전환돼 11~12%대 성장을 유지. 운영레버리지로 중후반 30%대 FCF margin 유지."
+    },
+    {
+      "name": "Up",
+      "probability": 0.25,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "revenue_path": [
+        8.1,
+        9.32,
+        10.72,
+        12.22,
+        13.81
+      ],
+      "growth_path": [
+        null,
+        15.1,
+        15.0,
+        14.0,
+        13.0
+      ],
+      "margin_path": [
+        34.0,
+        36.0,
+        37.0,
+        38.0,
+        38.5
+      ],
+      "fcf_margin_path": [
+        3800.0,
+        3800.0,
+        3850.0,
+        3900.0,
+        3900.0
+      ],
+      "fcf": [
+        307800.0,
+        354160.0,
+        412720.0,
+        476580.0,
+        538590.0
+      ],
+      "share_path": [
+        742,
+        723,
+        711,
+        699,
+        687
+      ],
+      "diluted_shares": 687,
+      "terminal_p_fcf": 34,
+      "terminal_price_2030": 26655.11,
+      "scenario_irr": 2.2618,
+      "present_value_at_12pct": 16299.5,
+      "logic": "FortiSASE/SecOps/OT cross-sell과 AI 인프라 수요가 예상보다 오래 지속되고 제품→서비스 전환이 빨라져 성장과 마진이 함께 상향."
+    }
+  ],
+  "valuation": {
+    "mode": "Mode C — Mature Compounder",
+    "core": "Secure Networking + existing FortiGuard/FortiCare installed-base cash flows",
+    "execution": "incremental SASE/SecOps/OT cross-sell and 2026 installed-base conversion",
+    "ecosystem": 0,
+    "ecosystem_note": "AI/agentic-security optionality is not separately capitalized; evidence is too early.",
+    "drag": "supply/memory cost, refresh normalization, channel concentration, cloud-native competition; reflected in scenario paths rather than double-counted add-on deduction",
+    "expected_terminal_value_2030_per_share": 19115.42,
+    "expected_value": 11689.01,
+    "expected_irr": 2.0212,
+    "current_price": 157.54,
+    "hurdle_rate": 0.12,
+    "horizon_years": 4.34,
+    "upside_downside_ratio": -2.44
+  },
+  "reverse_expectations": {
+    "method": "12% required-return reverse from Aug-2026 price to YE2030; assumes 2030 FCF margin 36% and Base terminal shares 703M",
+    "required_terminal_price": 257.63,
+    "sensitivity": [
+      {
+        "terminal_p_fcf": 25,
+        "required_2030_price": 257.63,
+        "required_2030_fcf_b": 7.24,
+        "required_2030_revenue_b": 20.12,
+        "required_revenue_cagr_2026_30": 25.5
+      },
+      {
+        "terminal_p_fcf": 30,
+        "required_2030_price": 257.63,
+        "required_2030_fcf_b": 6.04,
+        "required_2030_revenue_b": 16.77,
+        "required_revenue_cagr_2026_30": 19.9
+      },
+      {
+        "terminal_p_fcf": 35,
+        "required_2030_price": 257.63,
+        "required_2030_fcf_b": 5.17,
+        "required_2030_revenue_b": 14.37,
+        "required_revenue_cagr_2026_30": 15.4
+      },
+      {
+        "terminal_p_fcf": 40,
+        "required_2030_price": 257.63,
+        "required_2030_fcf_b": 4.53,
+        "required_2030_revenue_b": 12.58,
+        "required_revenue_cagr_2026_30": 11.6
+      }
+    ],
+    "interpretation": "30x terminal P/FCF로 정상화되면 2030 revenue 약 $16.8B, 2026-30 CAGR 약 19.9%가 필요. 40x가 유지돼야 consensus-like ~12% revenue CAGR이 12% hurdle을 충족."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_b": 8.119,
+      "fcf_b": 3.093,
+      "gaap_eps": 3.088
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_b": 9.009,
+      "fcf_b": 3.362,
+      "gaap_eps": 3.348
+    },
+    "fy3": {
+      "year": 2028,
+      "revenue_b": 10.017,
+      "fcf_b": 3.766,
+      "gaap_eps": 3.977
+    },
+    "revision_trend": "2026 guidance and street estimates revised materially upward after Q1/Q2 beats",
+    "mean_rating": "HOLD",
+    "analysts": 44,
+    "average_target_price": 160.86
+  },
+  "historical_valuation": {
+    "pe_snapshots": [
+      {
+        "date": "2023-12-31",
+        "pe": 40.09
+      },
+      {
+        "date": "2024-03-31",
+        "pe": 44.36
+      },
+      {
+        "date": "2024-06-30",
+        "pe": 35.45
+      },
+      {
+        "date": "2024-09-30",
+        "pe": 38.97
+      },
+      {
+        "date": "2024-12-31",
+        "pe": 41.81
+      },
+      {
+        "date": "2025-03-31",
+        "pe": 39.61
+      },
+      {
+        "date": "2025-06-30",
+        "pe": 42.12
+      },
+      {
+        "date": "2025-09-30",
+        "pe": 34.6
+      },
+      {
+        "date": "2025-12-31",
+        "pe": 32.81
+      },
+      {
+        "date": "2026-03-31",
+        "pe": 31.67
+      },
+      {
+        "date": "2026-06-30",
+        "pe": 54.28
+      },
+      {
+        "date": "2026-08-05",
+        "pe": 58.0
+      }
+    ],
+    "current_forward_pe_fy26": 51.0,
+    "current_ps_approx": 14.2
+  },
+  "stance": {
+    "zone": "신규매수 회피 / 기존 보유는 밸류에이션 기준 축소 검토",
+    "price_bands": {
+      "active_interest": "<= $115",
+      "conditional_interest": "$115–130",
+      "watch": "$130–150",
+      "avoid_new_buy": "$150–160",
+      "reduce_consideration": "> $160"
+    },
+    "horizon": "to YE2030",
+    "rationale": "확률가중 2030 가격 $191.15의 현재가 기준 기대 IRR은 약 4.6%로 10–15% 허들보다 낮다. 사업의 질과 주식의 기대수익을 분리해야 한다."
+  },
+  "catalysts": [
+    {
+      "when": "2026-09-08",
+      "event": "Goldman Sachs Communacopia + Technology Conference",
+      "bull": "하반기 수요·공급과 서비스 전환에 대한 자신감 유지",
+      "bear": "제품 주문/부품비용 또는 채널 정상화 경고",
+      "sensitivity": "L"
+    },
+    {
+      "when": "2026 Q3 results (10월말~11월초 예상)",
+      "event": "2026 Q3 실적",
+      "bull": "billings >20%, 서비스 성장 재가속, 제품 GM 방어",
+      "bear": "제품 성장 급락 + 서비스 <12% + billings 둔화",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027-02 예상",
+      "event": "2026 Q4/FY26 실적 및 FY27 가이던스",
+      "bull": "FY27 매출 두 자릿수 중반에 근접, 서비스 15%+ 경로",
+      "bear": "FY27 성장 10% 이하 또는 마진 정상화 폭 확대",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027 Q1 results (5월 예상)",
+      "event": "2027 Q1 실적",
+      "bull": "2026 설치기반이 서비스/이연매출로 전환됨이 확인",
+      "bear": "서비스 성장 <10% 지속",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027 H1",
+      "event": "FortiSASE·SecOps 침투 업데이트 / Virtue AI 통합 진척",
+      "bull": "대기업 SASE 침투 >23%, SecOps cross-sell 강화",
+      "bear": "침투 정체·AI 보안 매출화 증거 부족",
+      "sensitivity": "M"
+    },
+    {
+      "when": "2027 Q2 results (7월말 예상)",
+      "event": "2027 Q2 실적",
+      "bull": "제품 정상화 후에도 전체 성장 두 자릿수 유지",
+      "bear": "리프레시 이후 revenue/billings 한 자릿수로 하락",
+      "sensitivity": "H"
+    }
+  ],
+  "falsification": [
+    "제품 성장 둔화 이후 2027년 상반기까지 서비스 매출 성장률이 10% 미만으로 2개 분기 지속되면 “설치기반 확대가 후행 서비스 성장으로 전환된다”는 핵심 thesis를 폐기한다.",
+    "billings 성장률이 10% 미만으로 내려가고 이연매출 성장률도 5% 미만으로 둔화되면 2026년 재가속을 구조적 성장으로 보지 않는다.",
+    "FortiSASE 대기업 침투율이 향후 두 차례 공개 시점에도 19% 부근에서 정체하거나 하락하면 네트워크 설치기반의 SASE cross-sell 가정을 낮춘다.",
+    "제품 총마진이 65% 아래로 하락하면서 재고·구매약정 부담이 확대되면 AI 수요 수혜보다 공급망/가격 부담이 더 크다고 판단한다.",
+    "30% 이상의 GAAP 영업이익률을 유지하지 못하면서 성장률도 한 자릿수로 내려가면 프리미엄 compounder 멀티플을 더 이상 정당화하지 않는다."
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "0,3"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "CEILING",
+      "h3_locator": "1"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "2"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "2,4"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "3,4"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "CEILING",
+      "h3_locator": "3"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "3"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "CEILING",
+      "h3_locator": "3"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "CEILING",
+      "h3_locator": "3,4"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "3"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "4"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "4"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "2,4,5"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "1,3"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "6"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "0,5"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "5,6"
+    }
+  ],
+  "as_of_registry": {
+    "T0": "2026-08-27",
+    "PRICE_ASOF": "2026-08-26",
+    "LATEST_FILING_CHECK": "2026-08-27 checked; latest substantive periodic filing is 2026-07-30 10-Q; later Aug filings are principally insider ownership forms. Virtue AI acquisition announced 2026-08-17 via company release.",
+    "CONSENSUS_ASOF": "2026-08-27",
+    "POST_FILING_EVENT_CHECK": "Virtue AI acquisition announcement 2026-08-17; purchase price not disclosed in reviewed company release."
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "type": "primary",
+      "title": "Fortinet 2026 Q2 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1262039/000126203926000021/ftnt-20260630.htm"
+    },
+    {
+      "id": "S2",
+      "type": "primary",
+      "title": "Fortinet Q2 2026 earnings release",
+      "url": "https://www.sec.gov/Archives/edgar/data/1262039/000126203926000018/ftntq2-2026ex991.htm"
+    },
+    {
+      "id": "S3",
+      "type": "primary",
+      "title": "Fortinet 2025 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1262039/000126203926000007/ftnt-20251231.htm"
+    },
+    {
+      "id": "S4",
+      "type": "primary",
+      "title": "Fortinet 2026 Proxy",
+      "url": "https://www.sec.gov/Archives/edgar/data/1262039/000207709626000106/ea0287420-01.htm"
+    },
+    {
+      "id": "S5",
+      "type": "primary",
+      "title": "Fortinet quarterly earnings archive",
+      "url": "https://investor.fortinet.com/quarterly-earnings/"
+    },
+    {
+      "id": "S6",
+      "type": "primary",
+      "title": "Fortinet Virtue AI acquisition",
+      "url": "https://investor.fortinet.com/news-releases/news-release-details/fortinet-advances-continuous-ai-protection-acquisition-virtue-ai"
+    },
+    {
+      "id": "S7",
+      "type": "primary",
+      "title": "Fortinet SEC filings",
+      "url": "https://investor.fortinet.com/sec-filings/"
+    },
+    {
+      "id": "S8",
+      "type": "secondary",
+      "title": "MarketScreener FTNT forecasts / consensus",
+      "url": "https://www.marketscreener.com/quote/stock/FORTINET-INC-60103137/finances/"
+    },
+    {
+      "id": "S9",
+      "type": "secondary",
+      "title": "Macrotrends FTNT historical P/E",
+      "url": "https://www.macrotrends.net/stocks/charts/FTNT/fortinet/pe-ratio"
+    },
+    {
+      "id": "S10",
+      "type": "secondary",
+      "title": "Macrotrends FTNT historical P/S",
+      "url": "https://www.macrotrends.net/stocks/charts/FTNT/fortinet/price-sales"
+    }
+  ],
+  "qa": {
+    "RC_UNRESOLVED": 0,
+    "H1_H2_RESEARCH_CONTRACT_COMPLETENESS": "PASS",
+    "H2_H3_COVERAGE_LINEAGE": "PASS",
+    "RC_H3_COVERAGE_RATE": "100%",
+    "EARNINGS_QUALITY_SCREEN": "PASS_WITH_NORMALIZATION",
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "EXPLANATORY_SPACE_ALLOCATION": "PASS",
+    "REPORT_DATA_PACK": "EMITTED",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "CONTENT_MEANING_LOCK_PRESERVED": "PASS",
+    "PUBLISHED_TOP_LEVEL_SCHEMA_MATCH": "PASS",
+    "EXPLANATORY_DEPTH_PRESERVED": "PASS",
+    "HTML_SIDEBAR": "PASS",
+    "SEARCHABLE_TEXT": "PASS",
+    "KOREAN_READABILITY": "PASS",
+    "PUBLISHING_ACCEPTANCE": "PASS",
+    "CORE_LANDSCAPE_PAGES": "N/A_USER_PDF_WAIVER",
+    "PRINTED_TOC": "N/A_USER_PDF_WAIVER",
+    "TOC_CLICKABLE": "PASS",
+    "PDF_BOOKMARKS": "N/A_USER_PDF_WAIVER",
+    "SMART_CHAPTER_TRANSITIONS": "PASS",
+    "ARGUMENT_BLOCK_PAGINATION": "N/A_USER_PDF_WAIVER",
+    "ACCIDENTAL_SPARSE_PAGES": "N/A_USER_PDF_WAIVER",
+    "DENSITY_CONTROL": "PASS",
+    "VISUAL_SUBSTITUTION": "PASS",
+    "VISUAL_GRAMMAR_VARIETY": "PASS",
+    "CHART_READABILITY": "PASS",
+    "TABLE_QUALITY": "PASS",
+    "CONTACT_SHEET_COMPOSITION_QA": "N/A_USER_PDF_WAIVER",
+    "SEMANTIC_GOLDEN_QA": "PASS",
+    "VISUAL_GOLDEN_QA": "PASS",
+    "GOLDEN_PARITY": "PASS",
+    "FIGURE_NUMERICAL_PARITY": "PASS",
+    "VISUAL_DATA_LINEAGE": "PASS",
+    "VISUAL_SEMANTIC_PARITY": "PASS",
+    "STALE_VISUAL_ASSETS": 0,
+    "RENDERED_VISUAL_PARITY_QA": "PASS",
+    "PDF_EXPORT": "WAIVED_BY_USER"
+  },
+  "visual_data_source_registry": [
+    {
+      "VIS_ID": "VIS-001",
+      "FIGURE_TITLE": "3년 매출 구성",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.annual_3y",
+      "SOURCE_VALUES": {
+        "labels": [
+          "2023",
+          "2024",
+          "2025"
+        ],
+        "product": [
+          1927.3,
+          1908.7,
+          2218.4
+        ],
+        "service": [
+          3377.5,
+          4047.1,
+          4581.2
+        ]
+      },
+      "SOURCE_VERSION_OR_HASH": "41d346dbf7e62893",
+      "NARRATIVE_LOCATOR": "Chapter 4",
+      "DISPLAY_VALUES_MATCH": true,
+      "TABLE_MATCH": true,
+      "NARRATIVE_MATCH": true,
+      "RENDER_MATCH": true,
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-002",
+      "FIGURE_TITLE": "최근 8개 분기 매출 구성",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.quarterly_8q",
+      "SOURCE_VALUES": {
+        "labels": [
+          "2024 Q3",
+          "2024 Q4",
+          "2025 Q1",
+          "2025 Q2",
+          "2025 Q3",
+          "2025 Q4",
+          "2026 Q1",
+          "2026 Q2"
+        ],
+        "product": [
+          473.9,
+          574.0,
+          459.1,
+          508.9,
+          559.3,
+          691.1,
+          645.1,
+          773.0
+        ],
+        "service": [
+          1034.2,
+          1086.1,
+          1080.6,
+          1121.1,
+          1165.6,
+          1213.9,
+          1204.5,
+          1274.9
+        ]
+      },
+      "SOURCE_VERSION_OR_HASH": "d47b54431da930df",
+      "NARRATIVE_LOCATOR": "Chapter 4",
+      "DISPLAY_VALUES_MATCH": true,
+      "TABLE_MATCH": true,
+      "NARRATIVE_MATCH": true,
+      "RENDER_MATCH": true,
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-003",
+      "FIGURE_TITLE": "2030 시나리오 주당가치",
+      "AUTHORITATIVE_SOURCE_BLOCK": "scenarios",
+      "SOURCE_VALUES": {
+        "labels": [
+          "Down",
+          "Base",
+          "Up"
+        ],
+        "values": [
+          11000.33,
+          19403.13,
+          26655.11
+        ],
+        "current": 157.54
+      },
+      "SOURCE_VERSION_OR_HASH": "432eec515a4aaf25",
+      "NARRATIVE_LOCATOR": "Chapter 5",
+      "DISPLAY_VALUES_MATCH": true,
+      "TABLE_MATCH": true,
+      "NARRATIVE_MATCH": true,
+      "RENDER_MATCH": true,
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-004",
+      "FIGURE_TITLE": "Reverse Expectations — terminal multiple별 요구 매출",
+      "AUTHORITATIVE_SOURCE_BLOCK": "reverse_expectations.sensitivity",
+      "SOURCE_VALUES": [
+        {
+          "terminal_p_fcf": 25,
+          "required_2030_price": 257.63,
+          "required_2030_fcf_b": 7.24,
+          "required_2030_revenue_b": 20.12,
+          "required_revenue_cagr_2026_30": 25.5
+        },
+        {
+          "terminal_p_fcf": 30,
+          "required_2030_price": 257.63,
+          "required_2030_fcf_b": 6.04,
+          "required_2030_revenue_b": 16.77,
+          "required_revenue_cagr_2026_30": 19.9
+        },
+        {
+          "terminal_p_fcf": 35,
+          "required_2030_price": 257.63,
+          "required_2030_fcf_b": 5.17,
+          "required_2030_revenue_b": 14.37,
+          "required_revenue_cagr_2026_30": 15.4
+        },
+        {
+          "terminal_p_fcf": 40,
+          "required_2030_price": 257.63,
+          "required_2030_fcf_b": 4.53,
+          "required_2030_revenue_b": 12.58,
+          "required_revenue_cagr_2026_30": 11.6
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "fe244d79b6aa87ac",
+      "NARRATIVE_LOCATOR": "Chapter 5",
+      "DISPLAY_VALUES_MATCH": true,
+      "TABLE_MATCH": true,
+      "NARRATIVE_MATCH": true,
+      "RENDER_MATCH": true,
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-005",
+      "FIGURE_TITLE": "TTM P/E 히스토리",
+      "AUTHORITATIVE_SOURCE_BLOCK": "historical_valuation.pe_snapshots",
+      "SOURCE_VALUES": {
+        "labels": [
+          "23-12",
+          "24-03",
+          "24-06",
+          "24-09",
+          "24-12",
+          "25-03",
+          "25-06",
+          "25-09",
+          "25-12",
+          "26-03",
+          "26-06",
+          "26-08"
+        ],
+        "values": [
+          40.09,
+          44.36,
+          35.45,
+          38.97,
+          41.81,
+          39.61,
+          42.12,
+          34.6,
+          32.81,
+          31.67,
+          54.28,
+          58.0
+        ]
+      },
+      "SOURCE_VERSION_OR_HASH": "0f8028bdd9852253",
+      "NARRATIVE_LOCATOR": "Chapter 5",
+      "DISPLAY_VALUES_MATCH": true,
+      "TABLE_MATCH": true,
+      "NARRATIVE_MATCH": true,
+      "RENDER_MATCH": true,
+      "STATUS": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-006",
+      "FIGURE_TITLE": "FortiSASE 대기업 침투율",
+      "AUTHORITATIVE_SOURCE_BLOCK": "kpis.FortiSASE",
+      "SOURCE_VALUES": [
+        {
+          "period": "2025 Q2",
+          "value": 13
+        },
+        {
+          "period": "2025 Q3",
+          "value": 15
+        },
+        {
+          "period": "2026 Q2",
+          "value": 19
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "2bc0374cf9aa3fd2",
+      "NARRATIVE_LOCATOR": "Chapter 3",
+      "DISPLAY_VALUES_MATCH": true,
+      "TABLE_MATCH": true,
+      "NARRATIVE_MATCH": true,
+      "RENDER_MATCH": true,
+      "STATUS": "PASS"
+    }
+  ],
+  "visual_lineage_manifest": {
+    "DECISION_VISUALS_TOTAL": 6,
+    "DECISION_VISUALS_PARITY_PASS": 6,
+    "STALE_VISUAL_ASSETS": 0,
+    "FIGURE_NUMERICAL_PARITY": "PASS",
+    "VISUAL_DATA_LINEAGE": "PASS",
+    "VISUAL_SEMANTIC_PARITY": "PASS",
+    "RENDERED_VISUAL_PARITY_QA": "PASS"
+  },
+  "render_qa": {
+    "artifact": "FTNT_DEEP_DIVE.html",
+    "desktop": {
+      "viewport": "1440x1000",
+      "document_scroll_width": 1440,
+      "viewport_width": 1440,
+      "console_errors": 0,
+      "chapter_count": 8,
+      "decision_visual_count": 6,
+      "table_count": 11,
+      "status": "PASS"
+    },
+    "mobile": {
+      "viewport": "390x844",
+      "document_scroll_width": 390,
+      "viewport_width": 390,
+      "console_errors": 0,
+      "chapter_count": 8,
+      "decision_visual_count": 6,
+      "table_count": 11,
+      "wide_tables": "contained in local horizontal scrollers",
+      "status": "PASS"
+    },
+    "html_searchable_text": true,
+    "toc_clickable": true,
+    "pdf_export": "WAIVED_BY_USER"
+  }
+}

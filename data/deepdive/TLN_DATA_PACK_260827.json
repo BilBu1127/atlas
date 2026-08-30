@@ -1,0 +1,806 @@
+{
+  "meta": {
+    "ticker": "TLN",
+    "company": "Talen Energy Corporation",
+    "T0": "2026-08-27",
+    "price_asof": "2026-08-25 close",
+    "filing_asof": "2026-08-12",
+    "consensus_asof": "2026-08-26",
+    "version": "1.7",
+    "currency": "USD"
+  },
+  "as_of_registry": {
+    "research_cutoff_et": "2026-08-26",
+    "publishing_date_asia_seoul": "2026-08-27",
+    "price": {
+      "value": 307.67,
+      "date": "2026-08-25",
+      "basis": "US regular-session close"
+    },
+    "latest_filing_check": "PASS"
+  },
+  "financials": {
+    "annual_3y": {
+      "FY2023": {
+        "adjusted_ebitda_m": 1121,
+        "adjusted_fcf_m": 587,
+        "generation_twh": 32.5,
+        "basis_note": "company-reported combined non-GAAP; restructuring year"
+      },
+      "FY2024": {
+        "adjusted_ebitda_m": 770,
+        "adjusted_fcf_m": 283,
+        "generation_twh": 36.3
+      },
+      "FY2025": {
+        "adjusted_ebitda_m": 1035,
+        "adjusted_fcf_m": 524,
+        "generation_twh": 39.9
+      }
+    },
+    "quarterly_8q": [
+      {
+        "quarter": "Q3 2024",
+        "adjusted_ebitda_m": 230,
+        "adjusted_fcf_m": 97,
+        "generation_twh": 10.8
+      },
+      {
+        "quarter": "Q4 2024",
+        "adjusted_ebitda_m": 164,
+        "adjusted_fcf_m": 21,
+        "generation_twh": 9.2
+      },
+      {
+        "quarter": "Q1 2025",
+        "adjusted_ebitda_m": 200,
+        "adjusted_fcf_m": 87,
+        "generation_twh": 9.7
+      },
+      {
+        "quarter": "Q2 2025",
+        "adjusted_ebitda_m": 90,
+        "adjusted_fcf_m": -78,
+        "generation_twh": 7.3
+      },
+      {
+        "quarter": "Q3 2025",
+        "adjusted_ebitda_m": 363,
+        "adjusted_fcf_m": 223,
+        "generation_twh": 11.1
+      },
+      {
+        "quarter": "Q4 2025",
+        "adjusted_ebitda_m": 382,
+        "adjusted_fcf_m": 292,
+        "generation_twh": 11.7
+      },
+      {
+        "quarter": "Q1 2026",
+        "adjusted_ebitda_m": 473,
+        "adjusted_fcf_m": 350,
+        "generation_twh": 15.6
+      },
+      {
+        "quarter": "Q2 2026",
+        "adjusted_ebitda_m": 374,
+        "adjusted_fcf_m": 212,
+        "generation_twh": 14.1
+      }
+    ],
+    "current_period": {
+      "H1_2026": {
+        "adjusted_ebitda_m": 847,
+        "adjusted_fcf_m": 562,
+        "generation_twh": 29.7
+      }
+    },
+    "guidance": {
+      "FY2026": {
+        "adjusted_ebitda_m_low": 2025,
+        "adjusted_ebitda_m_high": 2225,
+        "adjusted_ebitda_m_mid": 2125,
+        "adjusted_fcf_m_low": 1200,
+        "adjusted_fcf_m_high": 1350,
+        "adjusted_fcf_m_mid": 1275,
+        "fcf_per_share_mid": 26.6
+      }
+    },
+    "ceilings": [
+      "Exact AWS PPA price is not publicly disclosed.",
+      "Exact annual minimum-volume schedule and shortfall cap are not publicly disclosed.",
+      "The ~4GW powered-land pipeline is not fully disclosed as named binding contracts with MW/COD/economics.",
+      "Live/proprietary investor positioning is unavailable from public-primary sources."
+    ]
+  },
+  "capital_structure": {
+    "shares_outstanding_m": 47.914259,
+    "market_cap_b": 14.74,
+    "debt_principal_b": 9.696,
+    "cash_b": 0.525,
+    "simple_net_debt_b": 9.171,
+    "enterprise_value_b": 23.91,
+    "ev_ebitda_2026_mid_x": 11.3,
+    "ev_ebitda_2027_consensus_x": 8.8,
+    "p_fcf_2026_mid_x": 11.6,
+    "fcf_yield_2026_mid_pct": 8.6
+  },
+  "operating_kpis": {
+    "generation_capacity_gw": 15.7,
+    "nuclear_capacity_gw": 2.2,
+    "aws_ppa_mw_max": 1920,
+    "aws_ppa_end_year": 2042,
+    "aws_full_volume_by_year": 2032,
+    "pjm_2028_29_cleared_mw": 10180,
+    "pjm_2028_29_price_usd_per_mw_day": 325.0,
+    "pjm_2028_29_capacity_revenue_b": 1.208,
+    "data_center_pipeline_gw_approx": 4.0
+  },
+  "kpis": [
+    {
+      "name": "FY26 Adj. FCF",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": ">=$1.30B",
+        "yellow": "$1.20-$1.30B",
+        "red": "<$1.20B"
+      }
+    },
+    {
+      "name": "2028 FCF/share trajectory",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": ">=$40 without heroic 4GW",
+        "yellow": "$35-$40",
+        "red": "<$35"
+      }
+    },
+    {
+      "name": "Net debt",
+      "history": [],
+      "current": 9.171,
+      "unit": "USD bn simple net debt",
+      "thresholds": {
+        "green": "stable/down",
+        "yellow": "modest rise tied to clear accretion",
+        "red": "rises without FCF/share gain"
+      }
+    },
+    {
+      "name": "AWS ramp",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": "on/accelerated",
+        "yellow": "mild timing slip",
+        "red": "material reduction/renegotiation"
+      }
+    },
+    {
+      "name": "Additional DC contracts",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": "named binding MW+COD+cost payer",
+        "yellow": "pipeline headline only",
+        "red": "prolonged no conversion"
+      }
+    },
+    {
+      "name": "Fleet availability",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": "normal",
+        "yellow": "one material outage",
+        "red": "repeated major outages/penalties"
+      }
+    },
+    {
+      "name": "PJM supply-demand scarcity",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": "scarcity",
+        "yellow": "orderly normalization",
+        "red": "rapid oversupply vs thesis"
+      }
+    },
+    {
+      "name": "Diluted shares",
+      "history": [],
+      "current": 47.914259,
+      "unit": "million shares",
+      "thresholds": {
+        "green": "down",
+        "yellow": "flat",
+        "red": "up without per-share accretion"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.25,
+      "revenue_path": [],
+      "margin_path": [],
+      "fcf": [],
+      "diluted_shares": null,
+      "fcf_per_share_2028": 30.0,
+      "terminal_multiple": 8.0,
+      "future_value_2028": 240.0,
+      "per_share_value": 193.7,
+      "narrative_scope": "No extra DC PPA; slower AWS ramp; lower PJM/merchant margins; constrained buybacks."
+    },
+    {
+      "name": "Base",
+      "probability": 0.55,
+      "revenue_path": [],
+      "margin_path": [],
+      "fcf": [],
+      "diluted_shares": null,
+      "fcf_per_share_2028": 43.0,
+      "terminal_multiple": 10.0,
+      "future_value_2028": 430.0,
+      "per_share_value": 347.0,
+      "narrative_scope": "Uncontracted 4GW explicit value = 0; AWS ramp and completed acquisitions only; leverage does not worsen."
+    },
+    {
+      "name": "Up",
+      "probability": 0.2,
+      "revenue_path": [],
+      "margin_path": [],
+      "fcf": [],
+      "diluted_shares": null,
+      "fcf_per_share_2028": 49.0,
+      "terminal_multiple": 11.0,
+      "future_value_2028": 539.0,
+      "per_share_value": 435.0,
+      "narrative_scope": "Faster AWS ramp, strong availability, persistent scarcity, disciplined buybacks, at least one additional de-risked large-load contract."
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B Hybrid; Mode D Cyclical/Commodity downside cross-check",
+    "core": "Existing fleet normalized merchant/capacity cash flow",
+    "execution": "Signed AWS PPA ramp + completed acquisitions",
+    "ecosystem": "Uncontracted ~4GW pipeline; explicit Base value = 0",
+    "drag": "Net debt, interest, maintenance, regulatory cost, dilution, outage",
+    "expected_value": 326.3,
+    "expected_irr": 0.129,
+    "current_price": 307.67,
+    "probability_weighted_future_value_2028": 404.3,
+    "bull_bear_ud_ratio": 1.12,
+    "two_x_ud_trigger_price": 274.0,
+    "discount_rate": 0.1,
+    "discount_horizon_years": 2.25
+  },
+  "reverse_expectations": {
+    "formula": "2028 FCF/share * terminal multiple / (1.10^2.25)",
+    "required_fcf_per_share_by_terminal_multiple": [
+      {
+        "multiple": 8,
+        "required": 47.7
+      },
+      {
+        "multiple": 9,
+        "required": 42.4
+      },
+      {
+        "multiple": 10,
+        "required": 38.1
+      }
+    ]
+  },
+  "consensus": {
+    "fy1": {},
+    "fy2": {
+      "period": "FY2027",
+      "adjusted_ebitda_m_approx": 2730
+    },
+    "revision_trend": "Not established from public-primary sources in this report.",
+    "public_target_aggregation": "mid/high $460s; some recent targets above $500, used only as a variant-perception reference"
+  },
+  "stance": {
+    "zone": "조건부 관심 / 관망 우위",
+    "price_bands": {
+      "active_interest": "<=270",
+      "attractive_entry": "270-285",
+      "selective_interest": "285-305",
+      "hold_watch": "305-350",
+      "new_evidence_required": "350-390",
+      "poor_asymmetry_without_new_contract_or_deleveraging": ">=390"
+    },
+    "horizon": "2028 scenario horizon; current-equivalent values discounted 2.25 years"
+  },
+  "catalysts": [
+    {
+      "when": "2026 Q3/Q4 results",
+      "event": "Cornerstone full-quarter contribution and interest burden",
+      "sensitivity": "Tests acquisition accretion."
+    },
+    {
+      "when": "Upcoming",
+      "event": "PJM RBP / FERC decisions",
+      "sensitivity": "Reprice terminal capacity economics and new-build competition."
+    },
+    {
+      "when": "Upcoming",
+      "event": "RMR proceedings",
+      "sensitivity": "Affects Brandon Shores/H.A. Wagner reliability cash flows."
+    },
+    {
+      "when": "Ongoing",
+      "event": "AWS contracted-volume update",
+      "sensitivity": "Ramp and contracted-margin share drive multiple quality."
+    },
+    {
+      "when": "Ongoing",
+      "event": "New data-center agreement",
+      "sensitivity": "Named binding MW would be the largest positive thesis upgrade."
+    },
+    {
+      "when": "Ongoing",
+      "event": "Debt / capital return actions",
+      "sensitivity": "Evaluate buybacks together with price and net leverage."
+    }
+  ],
+  "falsification_conditions": [
+    "AWS PPA ramp is materially delayed or economically renegotiated.",
+    "2027-28 FCF/share remains below the mid-$30s despite full acquisition run-rate.",
+    "Net debt and diluted shares both rise without incremental contracted FCF.",
+    "PJM reserve tightness resolves rapidly and AWS/additional contracts do not replace merchant margin.",
+    "Repeated availability issues at Susquehanna or acquired gas fleet.",
+    "The ~4GW pipeline fails to convert to firm contracts over an extended period or shrinks due to permitting/cost issues."
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2 §2.1; Ch.3 portfolio evolution; Ch.4 history"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1 §1.1–1.3"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1 §1.2; Ch.6 monitoring"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1 §1.3; Ch.5 normalization"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3 §3.2; Ch.4 outage base rate"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.3 §3.3; exact price/minimum/shortfall ceiling stated"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.3 §3.3; Ch.5 scenario range, no fake precision"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.3 §3.6; Ch.5 Base value=0"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3 §3.4–3.5; Ch.4 financing"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3 §3.8; Ch.6 risks"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3 §3.7"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1 §1.6"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4 §4.1–4.2; App. A"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4 §4.3–4.4"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4 §4.5; App. B"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2 §2.3; Ch.4 §4.6"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2 §2.1–2.4"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4; Ch.6 KPI table"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1 §1.5; Ch.3 §3.8; Ch.6 catalysts"
+    },
+    {
+      "rc_id": "RC-020",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.5 §5.8; live/proprietary positioning ceiling stated"
+    },
+    {
+      "rc_id": "RC-021",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5 §5.3–5.6"
+    },
+    {
+      "rc_id": "RC-022",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5 §5.2/5.7; Ch.6 monitoring/falsification"
+    }
+  ],
+  "visual_data_source_registry": {
+    "VIS-01": {
+      "title": "최근 8분기 — EBITDA가 아니라 cash conversion을 같이 본다",
+      "data": [
+        {
+          "quarter": "Q3 2024",
+          "adjusted_ebitda_m": 230,
+          "adjusted_fcf_m": 97,
+          "generation_twh": 10.8
+        },
+        {
+          "quarter": "Q4 2024",
+          "adjusted_ebitda_m": 164,
+          "adjusted_fcf_m": 21,
+          "generation_twh": 9.2
+        },
+        {
+          "quarter": "Q1 2025",
+          "adjusted_ebitda_m": 200,
+          "adjusted_fcf_m": 87,
+          "generation_twh": 9.7
+        },
+        {
+          "quarter": "Q2 2025",
+          "adjusted_ebitda_m": 90,
+          "adjusted_fcf_m": -78,
+          "generation_twh": 7.3
+        },
+        {
+          "quarter": "Q3 2025",
+          "adjusted_ebitda_m": 363,
+          "adjusted_fcf_m": 223,
+          "generation_twh": 11.1
+        },
+        {
+          "quarter": "Q4 2025",
+          "adjusted_ebitda_m": 382,
+          "adjusted_fcf_m": 292,
+          "generation_twh": 11.7
+        },
+        {
+          "quarter": "Q1 2026",
+          "adjusted_ebitda_m": 473,
+          "adjusted_fcf_m": 350,
+          "generation_twh": 15.6
+        },
+        {
+          "quarter": "Q2 2026",
+          "adjusted_ebitda_m": 374,
+          "adjusted_fcf_m": 212,
+          "generation_twh": 14.1
+        }
+      ],
+      "lineage_hash": "575459fdf9"
+    },
+    "VIS-02": {
+      "title": "PJM capacity price regime은 이미 바뀌었다",
+      "data": [
+        {
+          "delivery_year": "2024/25",
+          "rto_usd_per_mw_day": 28.92
+        },
+        {
+          "delivery_year": "2025/26",
+          "rto_usd_per_mw_day": 269.92
+        },
+        {
+          "delivery_year": "2026/27",
+          "rto_usd_per_mw_day": 329.17
+        },
+        {
+          "delivery_year": "2027/28",
+          "rto_usd_per_mw_day": 333.44
+        },
+        {
+          "delivery_year": "2028/29",
+          "rto_usd_per_mw_day": 325.0
+        }
+      ],
+      "lineage_hash": "501a003a51"
+    },
+    "VIS-03": {
+      "title": "현재가격이 요구하는 2028 FCF/share",
+      "data": [
+        {
+          "terminal_multiple": 8,
+          "required_fcf_per_share": 47.7
+        },
+        {
+          "terminal_multiple": 9,
+          "required_fcf_per_share": 42.4
+        },
+        {
+          "terminal_multiple": 10,
+          "required_fcf_per_share": 38.1
+        }
+      ],
+      "base_fcf_per_share": 43.0,
+      "lineage_hash": "1d191b309a"
+    },
+    "VIS-04": {
+      "title": "시나리오 가치 — upside보다 downside 비대칭이 아직 충분하지 않다",
+      "data": [
+        {
+          "scenario": "Down",
+          "probability": 0.25,
+          "current_equivalent": 193.7
+        },
+        {
+          "scenario": "Base",
+          "probability": 0.55,
+          "current_equivalent": 347.0
+        },
+        {
+          "scenario": "Up",
+          "probability": 0.2,
+          "current_equivalent": 435.0
+        }
+      ],
+      "current_price": 307.67,
+      "weighted_value": 326.3,
+      "lineage_hash": "43ad1f719a"
+    },
+    "VIS-05": {
+      "title": "자산의 MW보다 자산의 역할이 다르다",
+      "data": [
+        {
+          "asset": "Susquehanna",
+          "mw": 2200,
+          "type": "Nuclear",
+          "note": "AWS anchor; licenses 2042/2044"
+        },
+        {
+          "asset": "Freedom",
+          "mw": 1045,
+          "type": "CCGT",
+          "heat_rate_btu_per_kwh": 6501
+        },
+        {
+          "asset": "Guernsey",
+          "mw": 1836,
+          "type": "CCGT",
+          "heat_rate_btu_per_kwh": 6578
+        },
+        {
+          "asset": "Lawrenceburg",
+          "mw": 1120,
+          "type": "CCGT",
+          "note": "Cornerstone"
+        },
+        {
+          "asset": "Waterford",
+          "mw": 875,
+          "type": "CCGT",
+          "note": "Cornerstone"
+        },
+        {
+          "asset": "Darby",
+          "mw": 456,
+          "type": "CT",
+          "note": "Cornerstone"
+        }
+      ],
+      "lineage_hash": "acd7490a65"
+    }
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Talen Q2 2026 Form 10-Q, filed Aug 5 2026",
+      "urls": [
+        "https://www.sec.gov/Archives/edgar/data/1622536/000162253626000066/tln-20260630.htm"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Talen Q2 2026 Earnings Release, Aug 5 2026",
+      "urls": [
+        "https://ir.talenenergy.com/news-releases/news-release-details/talen-energy-reports-second-quarter-2026-results-raises-2026"
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "Talen FY2025 Form 10-K — AWS PPA terms / portfolio",
+      "urls": [
+        "https://www.sec.gov/Archives/edgar/data/1622536/000162253626000017/tln-20251231.htm"
+      ]
+    },
+    {
+      "id": "S4",
+      "title": "Talen June 2025 AWS Business Update — contract mechanics / illustrative FCF/share",
+      "urls": [
+        "https://www.sec.gov/Archives/edgar/data/1622536/000162828025030559/a20250611talenbusinessup.htm"
+      ]
+    },
+    {
+      "id": "S5",
+      "title": "PJM January 2026 Load Forecast Report",
+      "urls": [
+        "https://www.pjm.com/-/media/DotCom/library/reports-notices/load-forecast/2026-load-report.pdf"
+      ]
+    },
+    {
+      "id": "S6",
+      "title": "PJM 2028/29 Base Residual Auction / results materials",
+      "urls": [
+        "https://insidelines.pjm.com/"
+      ]
+    },
+    {
+      "id": "S7",
+      "title": "PJM Reliability Backstop Procurement proposal, Jul 31 2026",
+      "urls": [
+        "https://insidelines.pjm.com/pjm-reliability-backstop-proposal-outlines-steps-to-secure-new-supply-and-maintain-reliability/"
+      ]
+    },
+    {
+      "id": "S8",
+      "title": "Pennsylvania Executive Order 2026-05 GRID, Aug 18 2026",
+      "urls": [
+        "https://www.pa.gov/governor/newsroom/2026-press-releases/governor-shapiro-signs-executive-order-on-data-center-developmen"
+      ]
+    },
+    {
+      "id": "S9",
+      "title": "Talen FY2024 Results, Feb 27 2025",
+      "urls": [
+        "https://ir.talenenergy.com/news-releases/news-release-details/talen-energy-reports-full-year-2024-results-exceeds-2024"
+      ]
+    },
+    {
+      "id": "S10",
+      "title": "Talen FY2025 results / 2025 10-K",
+      "urls": [
+        "https://ir.talenenergy.com/financial-information/sec-filings"
+      ]
+    },
+    {
+      "id": "S11",
+      "title": "Talen Q3 2025 Results, Nov 5 2025",
+      "urls": [
+        "https://ir.talenenergy.com/news-releases/news-release-details/talen-energy-reports-third-quarter-2025-results-narrows-2025"
+      ]
+    },
+    {
+      "id": "S12",
+      "title": "Talen Freedom & Guernsey acquisition presentation",
+      "urls": [
+        "https://ir.talenenergy.com/static-files/5c768cbd-5a19-4e91-88b7-852fd5531526"
+      ]
+    },
+    {
+      "id": "S13",
+      "title": "FERC PJM large-load / co-location proceedings",
+      "urls": [
+        "https://www.ferc.gov/media/e-7-el26-67-000"
+      ]
+    },
+    {
+      "id": "S14",
+      "title": "Talen Q3 2024 Results — repurchase price and operating metrics",
+      "urls": [
+        "https://ir.talenenergy.com/node/8126/pdf"
+      ]
+    },
+    {
+      "id": "S15",
+      "title": "Talen 2026 Proxy Statement Talen SEC/IR proxy filing, 2026 annual meeting materials.",
+      "urls": []
+    },
+    {
+      "id": "S16",
+      "title": "U.S. NRC Susquehanna Unit 1 / Unit 2 current license pages",
+      "urls": [
+        "https://www.nrc.gov/info-finder/reactors/susq1.html",
+        "https://www.nrc.gov/info-finder/reactors/susq2.html"
+      ]
+    },
+    {
+      "id": "S17",
+      "title": "Talen Q2 2025 Results — Susquehanna outage period",
+      "urls": [
+        "https://ir.talenenergy.com/news-releases/news-release-details/talen-energy-reports-second-quarter-2025-results-reaffirms-2025"
+      ]
+    }
+  ],
+  "publishing_parity": {
+    "report_data_pack": "EMITTED",
+    "data_pack_report_parity": "PASS",
+    "visual_registry_count": 5,
+    "note": "All numeric values are transcribed from the approved H3/published report; unsupported revenue/margin paths remain empty rather than inferred."
+  },
+  "publishing_qa": {
+    "REPORT_DATA_PACK": "EMITTED",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "CONTENT_MEANING_LOCK_PRESERVED": "PASS",
+    "PUBLISHED_TOP_LEVEL_SCHEMA_MATCH": "PASS",
+    "EXPLANATORY_DEPTH_PRESERVED": "PASS",
+    "CORE_LANDSCAPE_PAGES": 0,
+    "PRINTED_TOC_PAGES": 1,
+    "TOC_CLICKABLE": "PASS",
+    "PDF_BOOKMARKS": "PASS",
+    "HTML_SIDEBAR": "PASS",
+    "SEARCHABLE_TEXT": "PASS",
+    "KOREAN_READABILITY": "PASS",
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "EXPLANATORY_SPACE_ALLOCATION": "PASS",
+    "SMART_CHAPTER_TRANSITIONS": "PASS",
+    "ARGUMENT_BLOCK_PAGINATION": "PASS",
+    "ACCIDENTAL_SPARSE_PAGES": 0,
+    "DENSITY_CONTROL": "PASS",
+    "VISUAL_SUBSTITUTION": "PASS",
+    "VISUAL_GRAMMAR_VARIETY": "PASS",
+    "CHART_READABILITY": "PASS",
+    "TABLE_QUALITY": "PASS",
+    "CONTACT_SHEET_COMPOSITION_QA": "PASS",
+    "SEMANTIC_GOLDEN_QA": "PASS",
+    "VISUAL_GOLDEN_QA": "PASS",
+    "GOLDEN_PARITY": "PASS",
+    "METADATA_FIREWALL": "PASS",
+    "PUBLISHING_ACCEPTANCE": "PASS",
+    "final_pdf_pages": 29,
+    "pdf_outline_items": 82,
+    "pdf_link_annotations": 106,
+    "sparsest_core_pages_inspected": [
+      26,
+      21,
+      11,
+      18,
+      19
+    ],
+    "sparse_page_note": "Page 26 is the intentional end of core content before the Appendix; no subsequent core content follows."
+  },
+  "integrity": {
+    "sha256": "3839890f46bdc0b492d6a39c9774b57fe6c9be4421f1fddbc38236ad52712fec"
+  }
+}

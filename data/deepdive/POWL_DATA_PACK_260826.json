@@ -1,0 +1,1454 @@
+{
+  "meta": {
+    "ticker": "POWL",
+    "company": "Powell Industries, Inc.",
+    "T0": 188.95,
+    "price_asof": "2026-08-25",
+    "research_cutoff": "2026-08-26 Asia/Seoul",
+    "filing_asof": "FY2026 Q3 Form 10-Q filed 2026-08-04",
+    "consensus_asof": "2026-08-14",
+    "version": "Clean DDOS Production OS v1.7",
+    "currency": "USD",
+    "pdf_user_waived": true
+  },
+  "economic_identity": "맞춤형 전력 배전·제어 프로젝트를 설계·통합·제작·시험하는 engineered-to-order electrical infrastructure integrator",
+  "financials": {
+    "annual_3y": [
+      {
+        "fiscal_year": "FY2023",
+        "revenue_m": 699.308,
+        "gross_profit_m": 147.553,
+        "gross_margin_pct": 21.1,
+        "net_income_m": 54.53,
+        "ocf_m": 182.553,
+        "capex_m": 7.819,
+        "ocf_less_capex_m": 174.734
+      },
+      {
+        "fiscal_year": "FY2024",
+        "revenue_m": 1012.356,
+        "gross_profit_m": 273.088,
+        "gross_margin_pct": 26.98,
+        "net_income_m": 149.85,
+        "ocf_m": 108.661,
+        "capex_m": 11.983,
+        "ocf_less_capex_m": 96.678
+      },
+      {
+        "fiscal_year": "FY2025",
+        "revenue_m": 1104.318,
+        "gross_profit_m": 324.381,
+        "gross_margin_pct": 29.37,
+        "net_income_m": 180.747,
+        "ocf_m": 167.937,
+        "capex_m": 13.149,
+        "ocf_less_capex_m": 154.788
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "FY24 Q4",
+        "revenue_m": 275.1,
+        "gross_margin_pct": 29.2,
+        "net_income_m": 46.1,
+        "orders_m": 267,
+        "backlog_b": 1.3
+      },
+      {
+        "quarter": "FY25 Q1",
+        "revenue_m": 241.4,
+        "gross_margin_pct": 24.7,
+        "net_income_m": 34.8,
+        "orders_m": 269,
+        "backlog_b": 1.3
+      },
+      {
+        "quarter": "FY25 Q2",
+        "revenue_m": 278.6,
+        "gross_margin_pct": 29.9,
+        "net_income_m": 46.3,
+        "orders_m": 249,
+        "backlog_b": 1.3
+      },
+      {
+        "quarter": "FY25 Q3",
+        "revenue_m": 286.3,
+        "gross_margin_pct": 30.7,
+        "net_income_m": 48.2,
+        "orders_m": 362,
+        "backlog_b": 1.4
+      },
+      {
+        "quarter": "FY25 Q4",
+        "revenue_m": 298.0,
+        "gross_margin_pct": 31.4,
+        "net_income_m": 51.4,
+        "orders_m": 271,
+        "backlog_b": 1.4
+      },
+      {
+        "quarter": "FY26 Q1",
+        "revenue_m": 251.2,
+        "gross_margin_pct": 28.4,
+        "net_income_m": 41.4,
+        "orders_m": 439,
+        "backlog_b": 1.6
+      },
+      {
+        "quarter": "FY26 Q2",
+        "revenue_m": 296.6,
+        "gross_margin_pct": 29.6,
+        "net_income_m": 45.9,
+        "orders_m": 490,
+        "backlog_b": 1.8
+      },
+      {
+        "quarter": "FY26 Q3",
+        "revenue_m": 311.7,
+        "gross_margin_pct": 30.6,
+        "net_income_m": 52.2,
+        "orders_m": 934,
+        "backlog_b": 2.4
+      }
+    ],
+    "ttm_through_fy26_q3": {
+      "revenue_m": 1157.522,
+      "gross_profit_m": 348.179,
+      "gross_margin_pct": 30.08,
+      "net_income_m": 190.857,
+      "eps": 5.21
+    },
+    "fy26_9m": {
+      "net_income_m": 139.437,
+      "ocf_m": 195.038,
+      "capex_m": 10.386,
+      "ocf_less_capex_m": 184.652,
+      "accounts_receivable_cash_use_m": 146.438,
+      "contract_assets_liabilities_cash_source_m": 188.763,
+      "contract_assets_m": 116.002,
+      "contract_liabilities_m": 466.362,
+      "net_contract_liability_m": 350.36,
+      "net_contract_liability_fy25_m": 161.27
+    },
+    "ceilings": [
+      "Quarterly OCF is timing-sensitive; FY26 9M cash flow is boosted by customer milestone payments.",
+      "Project-level gross margin and customer concentration inside the $400M+ data-center award are not disclosed."
+    ]
+  },
+  "end_markets": [
+    {
+      "name": "Oil & Gas (ex Petrochemical)",
+      "fy2023_m": 273.1,
+      "fy2024_m": 417.2,
+      "fy2025_m": 406.6
+    },
+    {
+      "name": "Electric Utility",
+      "fy2023_m": 158.4,
+      "fy2024_m": 186.5,
+      "fy2025_m": 279.0
+    },
+    {
+      "name": "Commercial & Other Industrial",
+      "fy2023_m": 104.0,
+      "fy2024_m": 149.9,
+      "fy2025_m": 178.2
+    },
+    {
+      "name": "Petrochemical",
+      "fy2023_m": 94.2,
+      "fy2024_m": 185.6,
+      "fy2025_m": 151.2
+    },
+    {
+      "name": "Traction Power",
+      "fy2023_m": 28.1,
+      "fy2024_m": 22.0,
+      "fy2025_m": 41.3
+    },
+    {
+      "name": "Other",
+      "fy2023_m": 41.5,
+      "fy2024_m": 51.1,
+      "fy2025_m": 48.1
+    }
+  ],
+  "order_book": {
+    "backlog_b": 2.4,
+    "backlog_date": "2026-06-30",
+    "expected_next_12m_revenue_from_backlog_b": 1.3,
+    "q3_fy26_orders_m": 934,
+    "q3_book_to_bill_x": 3.0,
+    "fy26_9m_orders_b_approx": 1.863,
+    "fy26_9m_data_center_orders_m_approx": 800,
+    "single_data_center_order_m_min": 400,
+    "data_center_project_duration_years": "~2.0–2.5",
+    "backlog_mix_pct": {
+      "Commercial & Other Industrial": 40,
+      "Oil & Gas ex Petrochemical": 24,
+      "Electric Utility": 24,
+      "Other": 12
+    }
+  },
+  "capital_structure": {
+    "cash_and_short_term_investments_m": 633.561,
+    "debt_m": 0,
+    "revolver_commitment_m": 150,
+    "revolver_borrowings_m": 0,
+    "letters_of_credit_m": 103.9,
+    "surety_bonds_m": 492.4,
+    "additional_bonding_capacity_m": 707.6,
+    "shares_outstanding_m": 36.432564,
+    "q3_diluted_weighted_avg_m": 36.604,
+    "ceo_retention_rsu_shares": 36000,
+    "ceo_retention_rsu_pct_current_shares": 0.099
+  },
+  "capacity": {
+    "houston_expansion": "completed and in service FY2025",
+    "jacintoport_capex_m": 12.4,
+    "jacintoport_added_laydown_sqft": 335000,
+    "jacintoport_laydown_increase_pct": 62,
+    "ohio_leased_sqft_approx": 30000,
+    "houston_leased_sqft_approx": 50000,
+    "greenfield_capex_range_m": [
+      70,
+      100
+    ],
+    "greenfield_sqft_range": [
+      250000,
+      300000
+    ]
+  },
+  "kpis": [
+    {
+      "name": "Quarterly bookings / book-to-bill",
+      "history": [
+        {
+          "period": "FY24 Q4",
+          "orders_m": 267,
+          "revenue_m": 275.1
+        },
+        {
+          "period": "FY25 Q1",
+          "orders_m": 269,
+          "revenue_m": 241.4
+        },
+        {
+          "period": "FY25 Q2",
+          "orders_m": 249,
+          "revenue_m": 278.6
+        },
+        {
+          "period": "FY25 Q3",
+          "orders_m": 362,
+          "revenue_m": 286.3
+        },
+        {
+          "period": "FY25 Q4",
+          "orders_m": 271,
+          "revenue_m": 298.0
+        },
+        {
+          "period": "FY26 Q1",
+          "orders_m": 439,
+          "revenue_m": 251.2
+        },
+        {
+          "period": "FY26 Q2",
+          "orders_m": 490,
+          "revenue_m": 296.6
+        },
+        {
+          "period": "FY26 Q3",
+          "orders_m": 934,
+          "revenue_m": 311.7
+        }
+      ],
+      "current": {
+        "orders_m": 934,
+        "book_to_bill_x": 3.0
+      },
+      "thresholds": {
+        "green": "대형 단일수주 효과를 제외해도 2개 분기 평균 book-to-bill ≥1.2x",
+        "yellow": "0.9–1.2x 또는 수주가 한 프로젝트에 과도하게 집중",
+        "red": "2개 분기 연속 <0.9x이면서 backlog도 감소"
+      }
+    },
+    {
+      "name": "Backlog",
+      "history": [
+        {
+          "period": "FY24 Q4",
+          "backlog_b": 1.3
+        },
+        {
+          "period": "FY25 Q1",
+          "backlog_b": 1.3
+        },
+        {
+          "period": "FY25 Q2",
+          "backlog_b": 1.3
+        },
+        {
+          "period": "FY25 Q3",
+          "backlog_b": 1.4
+        },
+        {
+          "period": "FY25 Q4",
+          "backlog_b": 1.4
+        },
+        {
+          "period": "FY26 Q1",
+          "backlog_b": 1.6
+        },
+        {
+          "period": "FY26 Q2",
+          "backlog_b": 1.8
+        },
+        {
+          "period": "FY26 Q3",
+          "backlog_b": 2.4
+        }
+      ],
+      "current": 2.4,
+      "thresholds": {
+        "green": "≥$2.2B이며 C&I/Utility/O&G가 함께 유지",
+        "yellow": "$1.8–2.2B 또는 특정 mega project 의존도 상승",
+        "red": "<$1.6B이고 신규수주 회복 신호 없음"
+      }
+    },
+    {
+      "name": "Gross margin",
+      "history": [
+        {
+          "period": "FY24 Q4",
+          "gross_margin_pct": 29.2
+        },
+        {
+          "period": "FY25 Q1",
+          "gross_margin_pct": 24.7
+        },
+        {
+          "period": "FY25 Q2",
+          "gross_margin_pct": 29.9
+        },
+        {
+          "period": "FY25 Q3",
+          "gross_margin_pct": 30.7
+        },
+        {
+          "period": "FY25 Q4",
+          "gross_margin_pct": 31.4
+        },
+        {
+          "period": "FY26 Q1",
+          "gross_margin_pct": 28.4
+        },
+        {
+          "period": "FY26 Q2",
+          "gross_margin_pct": 29.6
+        },
+        {
+          "period": "FY26 Q3",
+          "gross_margin_pct": 30.6
+        }
+      ],
+      "current": 30.6,
+      "thresholds": {
+        "green": "≥28.5% 유지, favorable estimate change 의존도 확대 없음",
+        "yellow": "26–28.5%",
+        "red": "2개 분기 연속 <26% 또는 프로젝트 원가 재추정 손실 동반"
+      }
+    },
+    {
+      "name": "Data-center repeat orders",
+      "history": [
+        {
+          "period": "FY2026 9M",
+          "orders_m_approx": 800
+        },
+        {
+          "period": "FY2026 Q3 first phase",
+          "single_order_m_min": 400
+        }
+      ],
+      "current": "FY2026 9M 약 $800M, $400M+ first phase 포함",
+      "thresholds": {
+        "green": "현재 first phase 외 후속 단계 또는 신규 고객의 대형 firm order 확인",
+        "yellow": "기존 backlog는 정상 전환되지만 12개월 이상 추가 대형 수주 부재",
+        "red": "현재 프로젝트 취소/축소 또는 데이터센터 backlog 전환 차질"
+      }
+    },
+    {
+      "name": "Capacity conversion",
+      "history": [
+        {
+          "period": "FY2025",
+          "event": "Houston expansion in service"
+        },
+        {
+          "period": "FY2026",
+          "event": "Ohio/Houston leased capacity + Jacintoport expansion"
+        }
+      ],
+      "current": "단계적 임대·확장 진행, $70–100M greenfield는 검토 중",
+      "thresholds": {
+        "green": "매출 throughput 확대와 납기 준수 후 단계적으로 greenfield 결정",
+        "yellow": "인력/부품 병목으로 backlog conversion 지연",
+        "red": "대규모 capex 선집행 후 utilization 부진 또는 납기/원가 동시 악화"
+      }
+    },
+    {
+      "name": "Normalized FCF / working capital",
+      "history": [
+        {
+          "period": "FY2023",
+          "ocf_less_capex_m": 174.7
+        },
+        {
+          "period": "FY2024",
+          "ocf_less_capex_m": 96.7
+        },
+        {
+          "period": "FY2025",
+          "ocf_less_capex_m": 154.8
+        },
+        {
+          "period": "FY2026 9M",
+          "ocf_less_capex_m": 184.7
+        }
+      ],
+      "current": "FY26 9M $184.7M, 단 contract liability 증가 효과 큼",
+      "thresholds": {
+        "green": "3년 누적 기준 순이익 대비 건전한 cash conversion 유지",
+        "yellow": "계약부채 정상화로 단기 OCF 둔화하나 마진·backlog 정상",
+        "red": "마진 악화와 함께 미수/contract asset이 구조적으로 급증"
+      }
+    },
+    {
+      "name": "Dilution / funding",
+      "history": [
+        {
+          "period": "2026-06-30",
+          "shares_out_m": 36.433
+        },
+        {
+          "period": "2026-07",
+          "ceo_retention_rsu": 36000
+        }
+      ],
+      "current": "현금 $633.6M, revolver 차입 0, CEO retention grant 약 0.10% of shares",
+      "thresholds": {
+        "green": "성장 capex를 내부현금으로 조달하며 share count drift 제한",
+        "yellow": "greenfield 투자로 순현금 감소하나 ROIC 가시성 충분",
+        "red": "성장 둔화 중 대규모 외부자금/희석 필요"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.2,
+      "years": [
+        "FY2026E",
+        "FY2027E",
+        "FY2028E",
+        "FY2029E"
+      ],
+      "revenue_path_b": [
+        1.195,
+        1.38,
+        1.34,
+        1.35
+      ],
+      "gross_margin_path_pct": [
+        29.9,
+        28.0,
+        26.5,
+        26.0
+      ],
+      "ebit_margin_path_pct": [
+        19.5,
+        17.5,
+        16.0,
+        16.0
+      ],
+      "net_margin_path_pct": [
+        16.0,
+        15.0,
+        14.0,
+        13.8
+      ],
+      "eps_path": [
+        5.22,
+        5.64,
+        5.1,
+        5.05
+      ],
+      "fcf_m": [
+        173.3,
+        186.3,
+        180.9,
+        182.2
+      ],
+      "fcf_margin_path_pct": [
+        14.5,
+        13.5,
+        13.5,
+        13.5
+      ],
+      "diluted_shares_m": 36.9,
+      "terminal_cash_b": 0.75,
+      "exit_ev_ebit": 17.0,
+      "terminal_ebit_b": 0.216,
+      "terminal_equity_b": 4.422,
+      "terminal_per_share": 119.84,
+      "per_share_value": 84.34,
+      "revenue_cagr_pct": 4.1,
+      "revenue_path": [
+        1.195,
+        1.38,
+        1.34,
+        1.35
+      ],
+      "margin_path": [
+        29.9,
+        28.0,
+        26.5,
+        26.0
+      ],
+      "fcf": [
+        173.3,
+        186.3,
+        180.9,
+        182.2
+      ],
+      "diluted_shares": 36.9
+    },
+    {
+      "name": "Base",
+      "probability": 0.55,
+      "years": [
+        "FY2026E",
+        "FY2027E",
+        "FY2028E",
+        "FY2029E"
+      ],
+      "revenue_path_b": [
+        1.195,
+        1.48,
+        1.73,
+        1.95
+      ],
+      "gross_margin_path_pct": [
+        29.9,
+        29.4,
+        29.0,
+        28.8
+      ],
+      "ebit_margin_path_pct": [
+        19.5,
+        19.3,
+        19.1,
+        19.0
+      ],
+      "net_margin_path_pct": [
+        16.4,
+        17.3,
+        17.0,
+        16.8
+      ],
+      "eps_path": [
+        5.35,
+        6.97,
+        7.98,
+        8.85
+      ],
+      "fcf_m": [
+        179.2,
+        229.4,
+        276.8,
+        312.0
+      ],
+      "fcf_margin_path_pct": [
+        15.0,
+        15.5,
+        16.0,
+        16.0
+      ],
+      "diluted_shares_m": 37.0,
+      "terminal_cash_b": 0.95,
+      "exit_ev_ebit": 23.0,
+      "terminal_ebit_b": 0.3705,
+      "terminal_equity_b": 9.4715,
+      "terminal_per_share": 255.99,
+      "per_share_value": 180.15,
+      "revenue_cagr_pct": 17.7,
+      "revenue_path": [
+        1.195,
+        1.48,
+        1.73,
+        1.95
+      ],
+      "margin_path": [
+        29.9,
+        29.4,
+        29.0,
+        28.8
+      ],
+      "fcf": [
+        179.2,
+        229.4,
+        276.8,
+        312.0
+      ],
+      "diluted_shares": 37.0
+    },
+    {
+      "name": "Up",
+      "probability": 0.25,
+      "years": [
+        "FY2026E",
+        "FY2027E",
+        "FY2028E",
+        "FY2029E"
+      ],
+      "revenue_path_b": [
+        1.2,
+        1.6,
+        2.05,
+        2.45
+      ],
+      "gross_margin_path_pct": [
+        30.0,
+        30.3,
+        30.5,
+        30.3
+      ],
+      "ebit_margin_path_pct": [
+        19.7,
+        20.4,
+        21.0,
+        21.0
+      ],
+      "net_margin_path_pct": [
+        16.5,
+        18.0,
+        18.5,
+        18.5
+      ],
+      "eps_path": [
+        5.41,
+        7.83,
+        10.25,
+        12.18
+      ],
+      "fcf_m": [
+        186.0,
+        264.0,
+        348.5,
+        416.5
+      ],
+      "fcf_margin_path_pct": [
+        15.5,
+        16.5,
+        17.0,
+        17.0
+      ],
+      "diluted_shares_m": 37.2,
+      "terminal_cash_b": 1.0,
+      "exit_ev_ebit": 28.0,
+      "terminal_ebit_b": 0.5145,
+      "terminal_equity_b": 15.406,
+      "terminal_per_share": 414.14,
+      "per_share_value": 291.45,
+      "revenue_cagr_pct": 26.9,
+      "revenue_path": [
+        1.2,
+        1.6,
+        2.05,
+        2.45
+      ],
+      "margin_path": [
+        30.0,
+        30.3,
+        30.5,
+        30.3
+      ],
+      "fcf": [
+        186.0,
+        264.0,
+        348.5,
+        416.5
+      ],
+      "diluted_shares": 37.2
+    }
+  ],
+  "valuation": {
+    "mode": "Mode C Mature Compounder primary + Mode D cyclical-normalization cross-check",
+    "hurdle_rate_pct": 12.0,
+    "horizon_years": 3.1,
+    "core": 180.15,
+    "execution": 27.82,
+    "ecosystem": 0.0,
+    "drag": -19.16,
+    "expected_value": 188.81,
+    "expected_terminal_per_share": 268.29,
+    "expected_irr_pct": 12.0,
+    "current_price": 188.95,
+    "up_down_ratio": 0.98,
+    "current_market_cap_b": 6.884,
+    "current_operating_ev_b": 6.25,
+    "current_ttm_pe": 36.3,
+    "current_ev_ebit_approx": 27.5,
+    "fy27_consensus_forward_pe": 26.5,
+    "historical_2023_2025_quarter_sample_median_pe": 16.73,
+    "current_percentile_in_12point_2023_2026_sample_pct": 91.7,
+    "historical_pe": [
+      {
+        "date": "2023-09",
+        "ttm_pe": 18.16
+      },
+      {
+        "date": "2023-12",
+        "ttm_pe": 13.7
+      },
+      {
+        "date": "2024-03",
+        "ttm_pe": 16.72
+      },
+      {
+        "date": "2024-06",
+        "ttm_pe": 13.3
+      },
+      {
+        "date": "2024-09",
+        "ttm_pe": 17.95
+      },
+      {
+        "date": "2024-12",
+        "ttm_pe": 16.74
+      },
+      {
+        "date": "2025-03",
+        "ttm_pe": 11.92
+      },
+      {
+        "date": "2025-06",
+        "ttm_pe": 14.58
+      },
+      {
+        "date": "2025-09",
+        "ttm_pe": 20.48
+      },
+      {
+        "date": "2025-12",
+        "ttm_pe": 20.68
+      },
+      {
+        "date": "2026-03",
+        "ttm_pe": 35.26
+      },
+      {
+        "date": "2026-06",
+        "ttm_pe": 54.93
+      }
+    ]
+  },
+  "reverse_expectations": {
+    "hurdle_rate_pct": 12.0,
+    "horizon_years": 3.1,
+    "required_terminal_price": 268.49,
+    "base_terminal_shares_m": 37.0,
+    "base_terminal_cash_b": 0.95,
+    "multiple_sensitivity": [
+      {
+        "exit_ev_ebit": 20,
+        "required_revenue_b_at_19pct_ebit": 2.364
+      },
+      {
+        "exit_ev_ebit": 23,
+        "required_revenue_b_at_19pct_ebit": 2.056
+      },
+      {
+        "exit_ev_ebit": 25,
+        "required_revenue_b_at_19pct_ebit": 1.891
+      },
+      {
+        "exit_ev_ebit": 28,
+        "required_revenue_b_at_19pct_ebit": 1.689
+      }
+    ],
+    "margin_sensitivity_at_23x": [
+      {
+        "ebit_margin_pct": 17,
+        "required_revenue_b_at_23x": 2.298
+      },
+      {
+        "ebit_margin_pct": 19,
+        "required_revenue_b_at_23x": 2.056
+      },
+      {
+        "ebit_margin_pct": 21,
+        "required_revenue_b_at_23x": 1.86
+      }
+    ],
+    "central_case": {
+      "exit_ev_ebit": 23,
+      "ebit_margin_pct": 19,
+      "required_fy2029_revenue_b": 2.056,
+      "required_fy2029_revenue_cagr_from_fy26_pct": 19.8,
+      "operational_translation": "FY2028–FY2029에도 연간 firm bookings가 대략 $2B 안팎을 유지해야 하며, 이는 FY2023–FY2025의 $1.1–1.4B 체제보다 구조적으로 높은 주문 수준이다."
+    }
+  },
+  "consensus": {
+    "fy1": {
+      "period": "FY2026E",
+      "revenue_b": 1.19,
+      "eps": 5.37
+    },
+    "fy2": {
+      "period": "FY2027E",
+      "revenue_b": 1.48,
+      "revenue_growth_pct": 24.1,
+      "eps": 7.12,
+      "eps_growth_pct": 32.4
+    },
+    "analyst_count": 4,
+    "rating": "Buy aggregate",
+    "price_target_low": 235,
+    "price_target_avg": 280,
+    "price_target_median": 276,
+    "price_target_high": 333,
+    "revision_trend": "Q3 이후 의견 분화: Cantor Hold/목표가 235로 하향, J.P. Morgan Buy/300으로 상향, Roth Buy/333 유지. 장기 FY28–FY29 공개 컨센서스는 PRIMARY_SOURCE_CEILING."
+  },
+  "positioning": {
+    "short_interest_date": "2026-07-31",
+    "short_shares_m": 2.731871,
+    "short_float_pct": 7.67,
+    "days_to_cover": 3.4,
+    "ceo_sale_2026_08_13": {
+      "shares": 4500,
+      "avg_price": 207.01,
+      "note": "pre-existing 10b5-1 plan disclosed; monitoring signal, not standalone thesis"
+    }
+  },
+  "stance": {
+    "zone": "관망",
+    "reason": "확률가중 기대수익률이 12% 요구수익률과 거의 같고 Up/Down 비대칭이 약 1.0x라 현재가는 사업 개선을 상당 부분 반영한다.",
+    "price_bands": {
+      "aggressive_interest": "≤ $145",
+      "conditional_interest": "$145–165",
+      "watch": "$165–195",
+      "needs_new_evidence_or_trim_review": "> $195"
+    },
+    "attractive_entry_band": "$145–165",
+    "horizon": "FY2029E, 약 3.1년",
+    "what_changes_stance_up": "현재 $400M+ first phase 외 추가 데이터센터 firm order, ex-mega bookings의 구조적 $2B run-rate, 28–30% GPM 유지가 함께 확인될 때",
+    "what_changes_stance_down": "2개 분기 연속 book-to-bill <0.9x + backlog 감소 + GPM <26% 중 2개 이상 동시 발생"
+  },
+  "catalysts": [
+    {
+      "when": "2026년 11–12월",
+      "event": "FY2026 Q4 및 연간 실적, FY2027 초반 backlog conversion 업데이트",
+      "bull": "매출이 $1.19B 안팎을 달성하고 29%대 GPM을 유지하며 backlog가 높은 수준을 지속",
+      "bear": "수주 급감과 backlog 감소가 동시에 나타나거나 GPM이 26%대로 하락",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2026년 4Q–2027년 3Q",
+      "event": "현재 데이터센터 캠퍼스 후속 phase 또는 신규 대형 데이터센터 고객 수주",
+      "bull": "현재 first phase 외 firm order가 확인되어 반복성 확률 상승",
+      "bear": "후속 phase가 계속 미계약이거나 범위가 경쟁사로 이동",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027년 1–2월",
+      "event": "FY2027 Q1 실적",
+      "bull": "$2.4B backlog가 매출로 빠르게 전환되면서 마진 유지",
+      "bear": "capacity/engineering 병목으로 매출 전환이 예상보다 느림",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027년 4–5월",
+      "event": "FY2027 Q2 실적과 대형 설비투자 결정 가능성",
+      "bull": "수주가 강해 $70–100M greenfield 투자의 utilization 근거가 명확",
+      "bear": "수주 정상화 전에 대규모 capex를 확정하거나 프로젝트 일정이 지연",
+      "sensitivity": "M/H"
+    },
+    {
+      "when": "향후 12개월 상시",
+      "event": "미국 데이터센터 전력·LNG·utility 프로젝트의 FID/전력 인프라 발주",
+      "bull": "Powell의 실제 firm orders로 연결",
+      "bear": "산업 성장에도 Powell의 수주 전환이 약해 시장점유/경쟁 이슈 시사",
+      "sensitivity": "M"
+    }
+  ],
+  "falsification": [
+    {
+      "thesis": "데이터센터는 새로운 구조적 성장축이다",
+      "falsifier": "현재 first phase는 정상 실행되더라도 향후 12–18개월 동안 후속 phase/신규 대형 데이터센터 firm order가 사실상 부재하고 C&I backlog가 빠르게 축소되면 반복성 가설을 폐기한다."
+    },
+    {
+      "thesis": "마진 체질은 과거 대비 구조적으로 개선됐다",
+      "falsifier": "일회성 프로젝트 추정이익을 제외한 상태에서 2개 분기 연속 GPM이 26% 아래로 내려가고 원가 재추정 손실까지 동반되면 고마진 regime 가정을 폐기한다."
+    },
+    {
+      "thesis": "capacity 확장은 가치창출형 성장투자다",
+      "falsifier": "대형 greenfield를 집행한 뒤 납기 개선 없이 utilization이 부진하거나 주문 정상화와 고정비 증가가 겹치면 실행 프리미엄을 제거한다."
+    },
+    {
+      "thesis": "현재 valuation은 12% 장기수익률을 겨우 충족할 수 있다",
+      "falsifier": "FY2029 매출 약 $2.05B/EBIT margin 19% 또는 그에 상응하는 earnings/multiple 조합으로 가는 증거가 약해지면 현재가의 요구수익률 충족 가정을 폐기한다."
+    }
+  ],
+  "ceilings": {
+    "Remsdaq": "2025-08 acquisition price 약 $18.4M 및 SCADA/RTU capability는 확인되지만 standalone revenue/synergy economics는 미공개. 별도 가치 0으로 두고 옵션으로만 취급.",
+    "Module_M": "FY28–FY29 상세 sell-side consensus history와 완전한 13F delta는 공개 일관성이 부족해 ceiling 처리.",
+    "Project": "$400M+ 데이터센터 고객명, project-level margin, future phase 계약 여부는 비공개.",
+    "Capacity": "정확한 공장 utilization/headcount/BOM commodity exposure는 미공개."
+  },
+  "as_of_registry": {
+    "PRICE_ASOF": "2026-08-25 / $188.95",
+    "FILING_ASOF": "FY2026 Q3 Form 10-Q / filed 2026-08-04",
+    "TRANSCRIPT_ASOF": "FY2026 Q3 earnings call / 2026-08-04",
+    "CONSENSUS_ASOF": "2026-08-14 public aggregate",
+    "SHORT_INTEREST_ASOF": "2026-07-31",
+    "LATEST_FILING_CHECK": "2026-08-26: Q3 10-Q remains latest material financial filing reviewed; later insider Form 4 filings do not alter financial base."
+  },
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "promise": "회사 역사와 end-market mix",
+      "status": "COMPLETE",
+      "h3_locator": "1.5 / 3.1 / Appendix A.1"
+    },
+    {
+      "rc_id": "RC-002",
+      "promise": "산업 구조·수요·공급·사이클",
+      "status": "COMPLETE",
+      "h3_locator": "1.1–1.5"
+    },
+    {
+      "rc_id": "RC-003",
+      "promise": "데이터센터/유틸리티/LNG 산업→회사 전달",
+      "status": "COMPLETE",
+      "h3_locator": "1.1–1.4"
+    },
+    {
+      "rc_id": "RC-004",
+      "promise": "FY26 데이터센터 수주와 $400M+ 프로젝트 범위·단계·기간·반복성",
+      "status": "COMPLETE",
+      "h3_locator": "1.1 / 3.3 / 5.3"
+    },
+    {
+      "rc_id": "RC-005",
+      "promise": "$2.4B backlog 품질",
+      "status": "COMPLETE",
+      "h3_locator": "3.3 / 4.2 / 5.3"
+    },
+    {
+      "rc_id": "RC-006",
+      "promise": "제품 아키텍처와 고객 job 정량화",
+      "status": "COMPLETE",
+      "h3_locator": "3.2"
+    },
+    {
+      "rc_id": "RC-007",
+      "promise": "고객 job 기준 경쟁·moat",
+      "status": "COMPLETE",
+      "h3_locator": "3.4"
+    },
+    {
+      "rc_id": "RC-008",
+      "promise": "생산능력·공급망·관세·인력",
+      "status": "COMPLETE",
+      "h3_locator": "1.4 / 3.5 / 4.4"
+    },
+    {
+      "rc_id": "RC-009",
+      "promise": "Brett Cope 측정 가능한 Promise→Delivery",
+      "status": "COMPLETE",
+      "h3_locator": "2.1"
+    },
+    {
+      "rc_id": "RC-010",
+      "promise": "거버넌스·보상·소유·retention",
+      "status": "COMPLETE",
+      "h3_locator": "2.2–2.3"
+    },
+    {
+      "rc_id": "RC-011",
+      "promise": "3개년 + 최근 8분기 재무/KPI",
+      "status": "COMPLETE",
+      "h3_locator": "4.1–4.2 / Appendix A.1–A.2"
+    },
+    {
+      "rc_id": "RC-012",
+      "promise": "마진·회계·운전자본·OCF/FCF 품질",
+      "status": "COMPLETE",
+      "h3_locator": "4.3"
+    },
+    {
+      "rc_id": "RC-013",
+      "promise": "현금·부채·capex·배당·SBC·희석",
+      "status": "COMPLETE",
+      "h3_locator": "4.4 / 5.4"
+    },
+    {
+      "rc_id": "RC-014",
+      "promise": "Remsdaq 통합·cross-sell",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.6 / Appendix A.6"
+    },
+    {
+      "rc_id": "RC-015",
+      "promise": "컨센서스·revision·positioning·역사적 valuation",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "5.1 / 5.5 / Appendix A.5"
+    },
+    {
+      "rc_id": "RC-016",
+      "promise": "Down/Base/Up 브리지·밸류에이션·역산 기대",
+      "status": "COMPLETE",
+      "h3_locator": "5.2–5.6"
+    },
+    {
+      "rc_id": "RC-017",
+      "promise": "KPI tripwire·촉매·반증 조건",
+      "status": "COMPLETE",
+      "h3_locator": "6.4–6.6"
+    }
+  ],
+  "rc_h3_coverage_rate_pct": 100,
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Powell FY2026 Q3 Form 10-Q",
+      "publisher": "SEC",
+      "date": "2026-08-04",
+      "url": "https://www.sec.gov/Archives/edgar/data/80420/000008042026000107/powl-20260630.htm"
+    },
+    {
+      "id": "S2",
+      "title": "Powell FY2026 Q3 earnings exhibit",
+      "publisher": "SEC",
+      "date": "2026-08-03",
+      "url": "https://www.sec.gov/Archives/edgar/data/80420/000008042026000103/ex991-powlq3xfy2026earning.htm"
+    },
+    {
+      "id": "S3",
+      "title": "Powell FY2026 Q2 earnings exhibit",
+      "publisher": "SEC",
+      "date": "2026-05",
+      "url": "https://www.sec.gov/Archives/edgar/data/80420/000008042026000063/ex991-powlq2xfy2026earning.htm"
+    },
+    {
+      "id": "S4",
+      "title": "Powell FY2026 Q1 earnings exhibit",
+      "publisher": "SEC",
+      "date": "2026-02",
+      "url": "https://www.sec.gov/Archives/edgar/data/80420/000008042026000013/ex991-powlq1xfy2026earning.htm"
+    },
+    {
+      "id": "S5",
+      "title": "Powell FY2025 Q4 / FY earnings exhibit",
+      "publisher": "SEC",
+      "date": "2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/80420/000008042025000145/ex991-powlq4xfy2025earning.htm"
+    },
+    {
+      "id": "S6",
+      "title": "Powell FY2025 Q3 earnings exhibit",
+      "publisher": "SEC",
+      "date": "2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/80420/000008042025000095/ex991-powlq3xfy2025earning.htm"
+    },
+    {
+      "id": "S7",
+      "title": "Powell FY2025 Q2 earnings exhibit",
+      "publisher": "SEC",
+      "date": "2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/80420/000008042025000057/ex991-powlq2xfy2025earning.htm"
+    },
+    {
+      "id": "S8",
+      "title": "Powell FY2025 Q1 earnings exhibit",
+      "publisher": "SEC",
+      "date": "2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/80420/000008042025000026/ex991-powlq1xfy2025earning.htm"
+    },
+    {
+      "id": "S9",
+      "title": "Powell FY2024 Q4 / FY earnings exhibit",
+      "publisher": "SEC",
+      "date": "2024",
+      "url": "https://www.sec.gov/Archives/edgar/data/80420/000008042024000084/ex991-powlq4xfy2024earning.htm"
+    },
+    {
+      "id": "S10",
+      "title": "Powell FY2025 Form 10-K",
+      "publisher": "SEC",
+      "date": "2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/80420/000008042025000147/powl-20250930.htm"
+    },
+    {
+      "id": "S11",
+      "title": "United States Data Center Energy Usage Report: 2025 Update",
+      "publisher": "Lawrence Berkeley National Laboratory",
+      "date": "2026-06",
+      "url": "https://eta-publications.lbl.gov/publications/united-states-data-center-energy-2025"
+    },
+    {
+      "id": "S12",
+      "title": "U.S. LNG export outlook",
+      "publisher": "U.S. EIA",
+      "date": "2026-04",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67484"
+    },
+    {
+      "id": "S13",
+      "title": "Data centers and U.S. electricity demand",
+      "publisher": "U.S. EIA",
+      "date": "2026-03",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67344"
+    },
+    {
+      "id": "S14",
+      "title": "2026 Draft National Transmission Needs Study",
+      "publisher": "U.S. Department of Energy",
+      "date": "2026-07",
+      "url": "https://www.energy.gov/oe/national-transmission-needs-study"
+    },
+    {
+      "id": "S15",
+      "title": "CEO retention award Form 8-K",
+      "publisher": "SEC",
+      "date": "2026-07",
+      "url": "https://www.sec.gov/Archives/edgar/data/80420/000008042026000095/powl-20260701.htm"
+    },
+    {
+      "id": "S16",
+      "title": "POWL public analyst-consensus aggregate",
+      "publisher": "StockAnalysis / S&P Global / TipRanks",
+      "date": "2026-08-14",
+      "url": "https://stockanalysis.com/stocks/powl/forecast/"
+    },
+    {
+      "id": "S17",
+      "title": "POWL historical P/E series cross-check",
+      "publisher": "Macrotrends",
+      "date": "2026-08",
+      "url": "https://www.macrotrends.net/stocks/charts/POWL/powell-industries/pe-ratio"
+    },
+    {
+      "id": "S18",
+      "title": "POWL short-interest cross-check",
+      "publisher": "MarketBeat",
+      "date": "2026-07-31",
+      "url": "https://www.marketbeat.com/stocks/NASDAQ/POWL/short-interest/"
+    },
+    {
+      "id": "S19",
+      "title": "FY2026 Q2 earnings-call transcript cross-check",
+      "publisher": "The Motley Fool",
+      "date": "2026-05-05",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/05/05/powell-powl-q2-2026-earnings-call-transcript/"
+    },
+    {
+      "id": "S20",
+      "title": "Powell Industries SEC filing feed / latest filing check",
+      "publisher": "SEC",
+      "date": "2026-08-26",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=80420&owner=include&action=getcompany"
+    },
+    {
+      "id": "S21",
+      "title": "POWL historical price cross-check",
+      "publisher": "Investing.com",
+      "date": "2026-08-25",
+      "url": "https://www.investing.com/equities/powell-industries-historical-data"
+    }
+  ],
+  "visual_data_source_registry": {
+    "VIS-001": {
+      "title": "최근 8분기 매출·총마진·백로그",
+      "source": "financials.quarterly_8q",
+      "values": [
+        {
+          "quarter": "FY24 Q4",
+          "revenue_m": 275.1,
+          "gross_margin_pct": 29.2,
+          "net_income_m": 46.1,
+          "orders_m": 267,
+          "backlog_b": 1.3
+        },
+        {
+          "quarter": "FY25 Q1",
+          "revenue_m": 241.4,
+          "gross_margin_pct": 24.7,
+          "net_income_m": 34.8,
+          "orders_m": 269,
+          "backlog_b": 1.3
+        },
+        {
+          "quarter": "FY25 Q2",
+          "revenue_m": 278.6,
+          "gross_margin_pct": 29.9,
+          "net_income_m": 46.3,
+          "orders_m": 249,
+          "backlog_b": 1.3
+        },
+        {
+          "quarter": "FY25 Q3",
+          "revenue_m": 286.3,
+          "gross_margin_pct": 30.7,
+          "net_income_m": 48.2,
+          "orders_m": 362,
+          "backlog_b": 1.4
+        },
+        {
+          "quarter": "FY25 Q4",
+          "revenue_m": 298.0,
+          "gross_margin_pct": 31.4,
+          "net_income_m": 51.4,
+          "orders_m": 271,
+          "backlog_b": 1.4
+        },
+        {
+          "quarter": "FY26 Q1",
+          "revenue_m": 251.2,
+          "gross_margin_pct": 28.4,
+          "net_income_m": 41.4,
+          "orders_m": 439,
+          "backlog_b": 1.6
+        },
+        {
+          "quarter": "FY26 Q2",
+          "revenue_m": 296.6,
+          "gross_margin_pct": 29.6,
+          "net_income_m": 45.9,
+          "orders_m": 490,
+          "backlog_b": 1.8
+        },
+        {
+          "quarter": "FY26 Q3",
+          "revenue_m": 311.7,
+          "gross_margin_pct": 30.6,
+          "net_income_m": 52.2,
+          "orders_m": 934,
+          "backlog_b": 2.4
+        }
+      ],
+      "narrative_locator": "4.2",
+      "table_locator": "Appendix A.2",
+      "source_hash_sha256": "e49fbef53c86df3ec13a4e4e02876e50b47a114504f3c76b58fa105f1e84813b",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    "VIS-002": {
+      "title": "End-market 매출 다변화",
+      "source": "end_markets",
+      "values": [
+        {
+          "name": "Oil & Gas (ex Petrochemical)",
+          "fy2023_m": 273.1,
+          "fy2024_m": 417.2,
+          "fy2025_m": 406.6
+        },
+        {
+          "name": "Electric Utility",
+          "fy2023_m": 158.4,
+          "fy2024_m": 186.5,
+          "fy2025_m": 279.0
+        },
+        {
+          "name": "Commercial & Other Industrial",
+          "fy2023_m": 104.0,
+          "fy2024_m": 149.9,
+          "fy2025_m": 178.2
+        },
+        {
+          "name": "Petrochemical",
+          "fy2023_m": 94.2,
+          "fy2024_m": 185.6,
+          "fy2025_m": 151.2
+        },
+        {
+          "name": "Traction Power",
+          "fy2023_m": 28.1,
+          "fy2024_m": 22.0,
+          "fy2025_m": 41.3
+        },
+        {
+          "name": "Other",
+          "fy2023_m": 41.5,
+          "fy2024_m": 51.1,
+          "fy2025_m": 48.1
+        }
+      ],
+      "narrative_locator": "1.3 / 3.1",
+      "table_locator": "Appendix A.3",
+      "source_hash_sha256": "ee638eed4decbae1bd2b9b7ed11276df58342ad6acbd13351865087cec59bab0",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    "VIS-003": {
+      "title": "Down/Base/Up 현재가치",
+      "source": "scenarios.per_share_value",
+      "values": [
+        {
+          "Down": 84.34
+        },
+        {
+          "Base": 180.15
+        },
+        {
+          "Up": 291.45
+        }
+      ],
+      "narrative_locator": "5.3",
+      "table_locator": "5.3",
+      "source_hash_sha256": "47b57a575667ade75aab317701c3f1a205216a529714959e9e80cc731c242b33",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    "VIS-004": {
+      "title": "12% 요구수익률을 만족시키는 FY2029 매출 역산",
+      "source": "reverse_expectations.multiple_sensitivity",
+      "values": [
+        {
+          "exit_ev_ebit": 20,
+          "required_revenue_b_at_19pct_ebit": 2.364
+        },
+        {
+          "exit_ev_ebit": 23,
+          "required_revenue_b_at_19pct_ebit": 2.056
+        },
+        {
+          "exit_ev_ebit": 25,
+          "required_revenue_b_at_19pct_ebit": 1.891
+        },
+        {
+          "exit_ev_ebit": 28,
+          "required_revenue_b_at_19pct_ebit": 1.689
+        }
+      ],
+      "narrative_locator": "5.4",
+      "table_locator": "5.4",
+      "source_hash_sha256": "5af06e7e91e72020c5dea4a982b2ba6a6df28c4275a7b4cffe2727028ce00f63",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    "VIS-005": {
+      "title": "역사적 TTM P/E 관측치와 현재",
+      "source": "valuation.historical_pe",
+      "values": [
+        {
+          "date": "2023-09",
+          "ttm_pe": 18.16
+        },
+        {
+          "date": "2023-12",
+          "ttm_pe": 13.7
+        },
+        {
+          "date": "2024-03",
+          "ttm_pe": 16.72
+        },
+        {
+          "date": "2024-06",
+          "ttm_pe": 13.3
+        },
+        {
+          "date": "2024-09",
+          "ttm_pe": 17.95
+        },
+        {
+          "date": "2024-12",
+          "ttm_pe": 16.74
+        },
+        {
+          "date": "2025-03",
+          "ttm_pe": 11.92
+        },
+        {
+          "date": "2025-06",
+          "ttm_pe": 14.58
+        },
+        {
+          "date": "2025-09",
+          "ttm_pe": 20.48
+        },
+        {
+          "date": "2025-12",
+          "ttm_pe": 20.68
+        },
+        {
+          "date": "2026-03",
+          "ttm_pe": 35.26
+        },
+        {
+          "date": "2026-06",
+          "ttm_pe": 54.93
+        },
+        {
+          "date": "2026-08-25",
+          "ttm_pe": 36.3
+        }
+      ],
+      "narrative_locator": "5.5",
+      "table_locator": "Appendix A.5",
+      "source_hash_sha256": "1d3b0befe8fcc8332c1ce4e5878f71ad641822ee52a22a0a1c1547adb072ce5d",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    }
+  },
+  "publishing_qa": {
+    "REPORT_DATA_PACK": "EMITTED",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "CONTENT_MEANING_LOCK_PRESERVED": "PASS",
+    "PUBLISHED_TOP_LEVEL_SCHEMA_MATCH": "PASS",
+    "EXPLANATORY_DEPTH_PRESERVED": "PASS",
+    "HTML_SIDEBAR": "PASS",
+    "SEARCHABLE_TEXT": "PASS",
+    "KOREAN_READABILITY": "PASS",
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "EXPLANATORY_SPACE_ALLOCATION": "PASS",
+    "SMART_CHAPTER_TRANSITIONS": "PASS",
+    "DENSITY_CONTROL": "PASS",
+    "VISUAL_SUBSTITUTION": "PASS",
+    "VISUAL_GRAMMAR_VARIETY": "PASS",
+    "CHART_READABILITY": "PASS",
+    "TABLE_QUALITY": "PASS",
+    "SEMANTIC_GOLDEN_QA": "PASS",
+    "VISUAL_GOLDEN_QA": "PASS",
+    "GOLDEN_PARITY": "PASS",
+    "FIGURE_NUMERICAL_PARITY": "PASS",
+    "VISUAL_DATA_LINEAGE": "PASS",
+    "VISUAL_SEMANTIC_PARITY": "PASS",
+    "STALE_VISUAL_ASSETS": 0,
+    "RENDERED_VISUAL_PARITY_QA": "PASS",
+    "DECISION_VISUALS_TOTAL": 5,
+    "DECISION_VISUALS_PARITY_PASS": 5,
+    "PDF": "USER_WAIVED",
+    "PDF_BOOKMARKS": "NOT_APPLICABLE_USER_WAIVED",
+    "PUBLISHING_ACCEPTANCE": "PASS_WITH_USER_PDF_WAIVER"
+  }
+}

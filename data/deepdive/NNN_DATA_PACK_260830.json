@@ -1,0 +1,1090 @@
+{
+  "schema_version": "Deep Dive OS v1.7",
+  "ticker": "NNN",
+  "company": "NNN REIT, Inc.",
+  "mode_primary": "F Asset/NAV",
+  "mode_crosscheck": "C Mature Compounder",
+  "publishing_date_kst": "2026-08-30",
+  "price_asof": "2026-08-28",
+  "price_usd": 45.67,
+  "stance": {
+    "current": "WATCH",
+    "korean": "관망",
+    "conditional_interest_band": [
+      42,
+      44
+    ],
+    "active_interest_below": 42,
+    "base_fair_value": 49.21,
+    "probability_weighted_fair_value": 48.61,
+    "expected_3y_irr": 0.103,
+    "upside_downside_ratio_12m": 2.27
+  },
+  "executive_thesis": "NNN은 관계 기반 sale-leaseback과 장기 자본을 이용해 취득 cap rate와 자본비용의 spread를 AFFO/share로 복리화하는 REIT다. 현재 가격은 사업의 안정성을 상당 부분 반영해 margin of safety가 크지 않다.",
+  "as_of_registry": {
+    "PRICE_ASOF": "2026-08-28 close $45.67",
+    "FILING_ASOF": "2026-08-05 Q2 2026 Form 10-Q, period ended 2026-06-30",
+    "EARNINGS_ASOF": "2026-08-05",
+    "MATERIAL_8K_ASOF": "2026-08-17 board succession; 2026-08-07 equity distribution",
+    "INDUSTRY_ASOF": "2026-08-03 CBRE Q2 2026",
+    "LATEST_FILING_CHECK": "2026-08-30 KST PASS — latest periodic filing remains Q2 2026 Form 10-Q filed 2026-08-05; latest material current report is board succession 8-K filed 2026-08-17; NNN IR SEC-filings page rechecked before Publishing.",
+    "PRICE_RECHECK": "2026-08-30 KST PASS — NNN Investor Dashboard shows 2026-08-28 close $45.67."
+  },
+  "key_metrics": {
+    "properties": 3774,
+    "gla_m_sqft": 40.44,
+    "occupancy_pct": 99.1,
+    "abr_m": 959.145,
+    "walt_years": 10.1,
+    "q2_2026_affo_per_share": 0.9,
+    "affo_2026_guidance": [
+      3.55,
+      3.59
+    ],
+    "affo_2026_mid": 3.57,
+    "annualized_dividend": 2.48,
+    "dividend_yield": 0.05430260564922268,
+    "p_affo_2026": 12.792717086834735,
+    "h1_2026_investments_m": 436.403,
+    "h1_2026_acq_cap_pct": 7.4,
+    "acquisition_2026_guide_m": [
+      700,
+      800
+    ]
+  },
+  "annual_financials": [
+    {
+      "year": 2023,
+      "revenue_m": 828.111,
+      "affo_per_share": 3.26,
+      "occupancy_pct": 99.5,
+      "investments_m": 819.7,
+      "acq_cap_pct": 7.3
+    },
+    {
+      "year": 2024,
+      "revenue_m": 869.266,
+      "affo_per_share": 3.35,
+      "occupancy_pct": 98.5,
+      "investments_m": 565.4,
+      "acq_cap_pct": 7.7
+    },
+    {
+      "year": 2025,
+      "revenue_m": 926.213,
+      "affo_per_share": 3.44,
+      "occupancy_pct": 98.3,
+      "investments_m": 931.0,
+      "acq_cap_pct": 7.4
+    }
+  ],
+  "latest_8_quarters": [
+    {
+      "quarter": "3Q24",
+      "revenue_m": 218.564,
+      "affo_per_share": 0.84,
+      "occupancy_pct": 99.3,
+      "investments_m": 113.6,
+      "acq_cap_pct": 7.6
+    },
+    {
+      "quarter": "4Q24",
+      "revenue_m": 218.482,
+      "affo_per_share": 0.82,
+      "occupancy_pct": 98.5,
+      "investments_m": 216.8,
+      "acq_cap_pct": 7.6
+    },
+    {
+      "quarter": "1Q25",
+      "revenue_m": 230.854,
+      "affo_per_share": 0.87,
+      "occupancy_pct": 97.7,
+      "investments_m": 232.4,
+      "acq_cap_pct": 7.4
+    },
+    {
+      "quarter": "2Q25",
+      "revenue_m": 226.802,
+      "affo_per_share": 0.85,
+      "occupancy_pct": 98.0,
+      "investments_m": 232.536,
+      "acq_cap_pct": 7.4
+    },
+    {
+      "quarter": "3Q25",
+      "revenue_m": 230.159,
+      "affo_per_share": 0.86,
+      "occupancy_pct": 97.5,
+      "investments_m": 283.027,
+      "acq_cap_pct": 7.3
+    },
+    {
+      "quarter": "4Q25",
+      "revenue_m": 238.398,
+      "affo_per_share": 0.87,
+      "occupancy_pct": 98.3,
+      "investments_m": 183.06,
+      "acq_cap_pct": 7.4
+    },
+    {
+      "quarter": "1Q26",
+      "revenue_m": 240.424,
+      "affo_per_share": 0.87,
+      "occupancy_pct": 98.6,
+      "investments_m": 145.394,
+      "acq_cap_pct": 7.5
+    },
+    {
+      "quarter": "2Q26",
+      "revenue_m": 244.266,
+      "affo_per_share": 0.9,
+      "occupancy_pct": 99.1,
+      "investments_m": 291.009,
+      "acq_cap_pct": 7.3
+    }
+  ],
+  "portfolio": {
+    "top_lines_of_trade": [
+      {
+        "name": "Auto service",
+        "abr_pct": 18.6
+      },
+      {
+        "name": "Convenience stores",
+        "abr_pct": 15.9
+      },
+      {
+        "name": "Limited-service restaurants",
+        "abr_pct": 7.7
+      },
+      {
+        "name": "Entertainment",
+        "abr_pct": 7.3
+      },
+      {
+        "name": "Auto dealerships",
+        "abr_pct": 6.4
+      },
+      {
+        "name": "Full-service restaurants",
+        "abr_pct": 6.3
+      },
+      {
+        "name": "Health & fitness",
+        "abr_pct": 3.8
+      },
+      {
+        "name": "Theaters",
+        "abr_pct": 3.5
+      },
+      {
+        "name": "Auto parts",
+        "abr_pct": 3.2
+      },
+      {
+        "name": "Equipment rental",
+        "abr_pct": 3.0
+      }
+    ],
+    "top_tenants": [
+      {
+        "name": "7-Eleven",
+        "abr_pct": 4.2
+      },
+      {
+        "name": "Mister Car Wash",
+        "abr_pct": 3.7
+      },
+      {
+        "name": "Dave & Buster's",
+        "abr_pct": 3.5
+      },
+      {
+        "name": "Camping World",
+        "abr_pct": 3.4
+      },
+      {
+        "name": "Kent Distributors",
+        "abr_pct": 2.6
+      },
+      {
+        "name": "Flynn Restaurant Group",
+        "abr_pct": 2.4
+      },
+      {
+        "name": "GPM Investments",
+        "abr_pct": 2.3
+      },
+      {
+        "name": "AMC",
+        "abr_pct": 2.3
+      },
+      {
+        "name": "BJ's Wholesale Club",
+        "abr_pct": 2.2
+      },
+      {
+        "name": "LA Fitness",
+        "abr_pct": 2.1
+      }
+    ],
+    "cash_basis_tenant_abr_pct": 4.0,
+    "lease_base_rates_2016_2025": {
+      "renewal_rate_pct": 83,
+      "renewal_rent_recovery_pct": 99,
+      "re_leased_rent_recovery_pct": 83,
+      "tenant_improvement_pct_of_released_and_renewal_rent": 3
+    }
+  },
+  "asset_quality_leakage": {
+    "impairment_m": {
+      "2024": 6.632,
+      "2025": 28.602,
+      "1H25": 6.047,
+      "1H26": 18.747
+    },
+    "vacant_properties_sold": {
+      "2025": 67,
+      "2025_total_sold": 116,
+      "1H26": 35,
+      "1H26_total_sold": 51
+    }
+  },
+  "capital_structure": {
+    "debt_m_2026_06_30": 5001.3,
+    "cash_m": 4.223,
+    "outstanding_forward_shares_m": 5.999528,
+    "estimated_forward_net_proceeds_m": 272.109,
+    "q2_weighted_avg_diluted_shares_m": 190.276,
+    "proforma_diluted_shares_m": 196.275528,
+    "term_loan_avg_rate_pct_h1": 4.13,
+    "revolver_avg_rate_pct_h1": 4.44,
+    "debt_maturities_m": {
+      "2026": 350,
+      "2027": 400,
+      "2028": 400,
+      "2029_term_loan": 500,
+      "2030": 400,
+      "thereafter_notes": 3000
+    }
+  },
+  "acquisition_spread_model": {
+    "acquisition_midpoint_m": 750,
+    "initial_cash_cap_pct": 7.4,
+    "initial_rent_m": 55.5,
+    "illustrative_debt_weight": 0.6,
+    "illustrative_debt_cost_pct": 4.8,
+    "illustrative_equity_weight": 0.4,
+    "equity_affo_yield_pct": 7.82,
+    "illustrative_blended_cost_pct": 6.01,
+    "illustrative_gross_spread_bps": 139,
+    "illustrative_gross_accretion_m": 10.4,
+    "illustrative_accretion_per_share": 0.053
+  },
+  "industry": {
+    "q2_2026_net_lease_volume_b": 12.8,
+    "yoy_volume_growth_pct": 13,
+    "ltm_volume_b": 57,
+    "ltm_growth_pct": 14,
+    "average_net_lease_cap_pct": 6.9,
+    "average_10y_treasury_pct_q2": 4.5,
+    "cap_treasury_spread_bps": 241,
+    "retail_availability_pct": 4.9,
+    "retail_asking_rent_yoy_pct": 2.4
+  },
+  "peers": [
+    {
+      "ticker": "O",
+      "company": "Realty Income",
+      "q2_signal": "AFFO/share $1.09, +3.8%; investments $2.6bn at 7.3% yield",
+      "leverage": "pro forma net debt/EBITDAre 5.4x",
+      "edge": "규모·자본시장 접근, re-lease rent recapture 102.7%"
+    },
+    {
+      "ticker": "ADC",
+      "company": "Agree Realty",
+      "q2_signal": "2026 AFFO guide midpoint +5.8%; investments guide $1.6–1.8bn",
+      "leverage": "net debt/recurring EBITDA 3.7x",
+      "edge": "높은 IG retailer 비중, 강한 balance sheet"
+    },
+    {
+      "ticker": "EPRT",
+      "company": "Essential Properties",
+      "q2_signal": "Q2 investments $332m at 7.8%; 2026 guide $1.2–1.5bn",
+      "leverage": "net debt/EBITDA ~3.5x",
+      "edge": "middle-market repeat sourcing, 더 빠른 성장"
+    },
+    {
+      "ticker": "WPC",
+      "company": "W.P. Carey",
+      "q2_signal": "AFFO/share $1.34; investment guide $1.7–2.1bn",
+      "leverage": "diversified net lease",
+      "edge": "산업/물류 포함 자산 폭"
+    },
+    {
+      "ticker": "BNL",
+      "company": "Broadstone Net Lease",
+      "q2_signal": "2026 AFFO guide $1.55–1.57; investments $600–800m",
+      "leverage": "diversified net lease",
+      "edge": "NNN와 유사한 external-growth sensitivity"
+    },
+    {
+      "ticker": "FCPT",
+      "company": "Four Corners Property Trust",
+      "q2_signal": "AFFO/share $0.45; occupancy 99.5%; Q2 acquisitions 6.8% cash yield",
+      "leverage": "net debt/EBITDAre 5.2x",
+      "edge": "restaurant/retail niche underwriting"
+    }
+  ],
+  "valuation": {
+    "noi_proxy_m": 945,
+    "proforma_net_debt_m": 4724.968,
+    "nav_sensitivity": [
+      {
+        "cap_rate_pct": 6.25,
+        "nav_per_share": 52.96
+      },
+      {
+        "cap_rate_pct": 6.5,
+        "nav_per_share": 50.0
+      },
+      {
+        "cap_rate_pct": 6.65,
+        "nav_per_share": 48.33
+      },
+      {
+        "cap_rate_pct": 6.75,
+        "nav_per_share": 47.26
+      },
+      {
+        "cap_rate_pct": 7.0,
+        "nav_per_share": 44.71
+      },
+      {
+        "cap_rate_pct": 7.25,
+        "nav_per_share": 42.34
+      }
+    ],
+    "scenarios_12_18m": [
+      {
+        "scenario": "Down",
+        "probability": 0.25,
+        "affo_2027": 3.62,
+        "p_affo_multiple": 11.5,
+        "p_affo_value": 41.63,
+        "nav_value": 42.34,
+        "fair_value": 41.99,
+        "total_return_12m": -0.026
+      },
+      {
+        "scenario": "Base",
+        "probability": 0.5,
+        "affo_2027": 3.71,
+        "p_affo_multiple": 13.5,
+        "p_affo_value": 50.09,
+        "nav_value": 48.33,
+        "fair_value": 49.21,
+        "total_return_12m": 0.132
+      },
+      {
+        "scenario": "Up",
+        "probability": 0.25,
+        "affo_2027": 3.8,
+        "p_affo_multiple": 14.5,
+        "p_affo_value": 55.1,
+        "nav_value": 52.96,
+        "fair_value": 54.03,
+        "total_return_12m": 0.237
+      }
+    ],
+    "probability_weighted_fair_value": 48.61,
+    "expected_total_return_12m": 0.119,
+    "scenarios_3y": [
+      {
+        "scenario": "Down",
+        "probability": 0.25,
+        "affo_2029": 3.72,
+        "terminal_multiple": 11.5,
+        "terminal_price": 42.78,
+        "dividends_3y": 7.65,
+        "irr_3y": 0.034
+      },
+      {
+        "scenario": "Base",
+        "probability": 0.5,
+        "affo_2029": 4.02,
+        "terminal_multiple": 13.5,
+        "terminal_price": 54.27,
+        "dividends_3y": 7.92,
+        "irr_3y": 0.108
+      },
+      {
+        "scenario": "Up",
+        "probability": 0.25,
+        "affo_2029": 4.3,
+        "terminal_multiple": 14.5,
+        "terminal_price": 62.35,
+        "dividends_3y": 8.16,
+        "irr_3y": 0.156
+      }
+    ],
+    "expected_3y_irr": 0.103,
+    "reverse_expectations": {
+      "steady_multiple": 12.8,
+      "steady_state_total_return_with_3_4pct_growth_range": [
+        0.085,
+        0.095
+      ],
+      "affo_growth_needed_for_12pct_return_approx": 0.065,
+      "current_implied_property_cap_rate_range_pct": [
+        6.9,
+        7.0
+      ]
+    }
+  },
+  "price_bands": [
+    {
+      "band": "< $42",
+      "stance": "적극 관심",
+      "logic": "Down NAV 근접, dividend yield 약 5.9%+, margin of safety 확대"
+    },
+    {
+      "band": "$42–44",
+      "stance": "조건부 관심",
+      "logic": "NAV discount와 현금수익률 균형"
+    },
+    {
+      "band": "$44–50",
+      "stance": "관망/보유",
+      "logic": "expected IRR이 기본 허들 하단"
+    },
+    {
+      "band": "> $50",
+      "stance": "신규진입 매력 저하",
+      "logic": "Base valuation 대부분 반영"
+    }
+  ],
+  "kpi_traffic_lights": [
+    {
+      "kpi": "Occupancy",
+      "green": "≥98.5%",
+      "yellow": "97.5–98.5%",
+      "red": "<97.5%"
+    },
+    {
+      "kpi": "Cash-basis tenant ABR",
+      "green": "<4%",
+      "yellow": "4–5%",
+      "red": ">5%"
+    },
+    {
+      "kpi": "Acquisition cap rate",
+      "green": "≥7.3%",
+      "yellow": "7.0–7.3%",
+      "red": "<7.0%"
+    },
+    {
+      "kpi": "AFFO/share growth",
+      "green": "≥4%",
+      "yellow": "2–4%",
+      "red": "<2%"
+    },
+    {
+      "kpi": "Impairment",
+      "green": "normalizing <~$15m/yr",
+      "yellow": "$15–25m",
+      "red": ">$25m sustained"
+    },
+    {
+      "kpi": "Net debt/EBITDAre",
+      "green": "≤5.5x",
+      "yellow": "5.5–5.8x",
+      "red": ">5.8x"
+    },
+    {
+      "kpi": "Dividend payout/AFFO",
+      "green": "<72%",
+      "yellow": "72–75%",
+      "red": ">75%"
+    }
+  ],
+  "falsification_conditions": [
+    "Occupancy <97.5% for two quarters",
+    "Cash-basis ABR >5%",
+    "12-month impairment >$30m while vacant sales remain elevated",
+    "Acquisition cap rate <7.0% with equity AFFO yield >7.5%",
+    "AFFO/share growth <2% for a full year despite >$700m acquisitions",
+    "Leverage >5.8x without credible deleveraging path"
+  ],
+  "catalysts": [
+    {
+      "date": "2026-Q3 earnings",
+      "event": "acquisition guide pace/cap rate and impairment trend"
+    },
+    {
+      "date": "2026-FY results",
+      "event": "$3.55–3.59 AFFO guide delivery and vacant disposition normalization"
+    },
+    {
+      "date": "2026-10-01",
+      "event": "new directors Chiu/Mueller effective"
+    },
+    {
+      "date": "2027-02-19",
+      "event": "Holden planned board retirement"
+    },
+    {
+      "date": "2027",
+      "event": "$400m debt maturity/refinancing terms"
+    },
+    {
+      "date": "2027 dividend cycle",
+      "event": "38th consecutive annual dividend increase test"
+    }
+  ],
+  "research_contract_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "conclusion": "Net-lease industry / rate-cap spread / retail residual-value transmission"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "conclusion": "Sale-leaseback customer job and financing economics"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "conclusion": "Tenant and line-of-trade concentration / credit architecture"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "conclusion": "Lease architecture / renewals / rent recovery"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "conclusion": "Vacancy / bankruptcy / impairment / re-leasing loss"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "conclusion": "Relationship sourcing moat and boundary"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "conclusion": "3Y + latest 8Q acquisition volume/cap/WALT"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "conclusion": "Marginal WACC and acquisition spread sensitivity"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "conclusion": "Debt maturity / coupon / facilities / refinancing"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "conclusion": "3Y + 8Q financials / AFFO / accounting quality"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "conclusion": "Horn-era promise→delivery / compensation / governance"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "conclusion": "Dispositions / vacant sales / impairment / recycling"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "conclusion": "Dividend payout / retained cash / ATM-forward dilution"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "conclusion": "O/ADC/EPRT/WPC/BNL/FCPT customer-job peer frame"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "conclusion": "Exact FY27–28 public AFFO consensus not consistently observable"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "conclusion": "Mode F NAV + P/AFFO + yield + reverse expectations"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "conclusion": "Rates/recession/retail stress sensitivity"
+    }
+  ],
+  "rc_counts": {
+    "COMPLETE": 16,
+    "PRIMARY_SOURCE_CEILING": 1,
+    "NOT_MATERIAL": 0,
+    "CONTRADICTED": 0,
+    "UNRESOLVED": 0
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "tier": 1,
+      "title": "NNN Q2 2026 earnings release",
+      "date": "2026-08-05",
+      "url": "https://www.sec.gov/Archives/edgar/data/751364/000119312526333958/nnn-ex99_1.htm"
+    },
+    {
+      "id": "S02",
+      "tier": 1,
+      "title": "NNN Q2 2026 Form 10-Q",
+      "date": "2026-08-05",
+      "url": "https://www.sec.gov/Archives/edgar/data/751364/000119312526333967/nnn-20260630.htm"
+    },
+    {
+      "id": "S03",
+      "tier": 1,
+      "title": "NNN 2025 annual results",
+      "date": "2026-02-11",
+      "url": "https://www.sec.gov/Archives/edgar/data/751364/000119312526045612/nnn-ex99_1.htm"
+    },
+    {
+      "id": "S04",
+      "tier": 1,
+      "title": "NNN 2026 DEF 14A",
+      "date": "2026-03-20",
+      "url": "https://www.sec.gov/Archives/edgar/data/751364/000119312526118585/nnn-20260320.htm"
+    },
+    {
+      "id": "S05",
+      "tier": 1,
+      "title": "NNN Q1 2026 earnings release",
+      "date": "2026-04-30",
+      "url": "https://www.sec.gov/Archives/edgar/data/751364/000119312526194205/nnn-ex99_1.htm"
+    },
+    {
+      "id": "S06",
+      "tier": 1,
+      "title": "NNN Q2 2025 earnings release",
+      "date": "2025-08-05",
+      "url": "https://www.sec.gov/Archives/edgar/data/751364/000095017025102425/nnn-ex99_1.htm"
+    },
+    {
+      "id": "S07",
+      "tier": 1,
+      "title": "NNN Q3 2025 earnings release",
+      "date": "2025-11-04",
+      "url": "https://www.sec.gov/Archives/edgar/data/751364/000119312525263635/nnn-ex99_1.htm"
+    },
+    {
+      "id": "S08",
+      "tier": 1,
+      "title": "NNN 2024 annual results",
+      "date": "2025-02-11",
+      "url": "https://www.sec.gov/Archives/edgar/data/751364/000095017025017471/nnn-ex99_1.htm"
+    },
+    {
+      "id": "S09",
+      "tier": 1,
+      "title": "NNN Q3 2024 earnings release",
+      "date": "2024-10-31",
+      "url": "https://www.sec.gov/Archives/edgar/data/751364/000095017024119257/nnn-ex99_1.htm"
+    },
+    {
+      "id": "S10",
+      "tier": 1,
+      "title": "NNN Q2 2024 earnings release",
+      "date": "2024-08-01",
+      "url": "https://www.sec.gov/Archives/edgar/data/751364/000095017024088970/nnn-ex99_1.htm"
+    },
+    {
+      "id": "S11",
+      "tier": 1,
+      "title": "NNN 2026 investor presentation - leasing base rates",
+      "date": "2026-05",
+      "url": "https://www.nnnreit.com/wp-content/uploads/2026/05/NNN-Investor-Presentation-Q12026_FINAL.pdf"
+    },
+    {
+      "id": "S12",
+      "tier": 1,
+      "title": "NNN equity distribution agreement 8-K",
+      "date": "2026-08-07",
+      "url": "https://www.sec.gov/Archives/edgar/data/751364/000119312526338984/d141531d8k.htm"
+    },
+    {
+      "id": "S13",
+      "tier": 1,
+      "title": "NNN 25m-share ATM prospectus supplement",
+      "date": "2026-08-06",
+      "url": "https://www.sec.gov/Archives/edgar/data/751364/000119312526338365/d141329d424b5.htm"
+    },
+    {
+      "id": "S14",
+      "tier": 1,
+      "title": "NNN Board succession 8-K",
+      "date": "2026-08-17",
+      "url": "https://www.sec.gov/Archives/edgar/data/751364/000119312526354148/nnn-20260813.htm"
+    },
+    {
+      "id": "S15",
+      "tier": 3,
+      "title": "CBRE U.S. Net Lease Investment Figures Q2 2026",
+      "date": "2026-08-03",
+      "url": "https://www.cbre.com/insights/figures/us-net-lease-investment-figures-q2-2026"
+    },
+    {
+      "id": "S16",
+      "tier": 3,
+      "title": "CBRE U.S. Retail Figures Q2 2026",
+      "date": "2026-08-03",
+      "url": "https://www.cbre.com/insights/figures/us-retail-figures-q2-2026"
+    },
+    {
+      "id": "S17",
+      "tier": 2,
+      "title": "Realty Income Q2 2026 results",
+      "date": "2026-08",
+      "url": "https://www.realtyincome.com/investors"
+    },
+    {
+      "id": "S18",
+      "tier": 2,
+      "title": "Agree Realty Q2 2026 results",
+      "date": "2026-07",
+      "url": "https://investors.agreerealty.com/"
+    },
+    {
+      "id": "S19",
+      "tier": 2,
+      "title": "Essential Properties Q2 2026 results",
+      "date": "2026-07",
+      "url": "https://investors.essentialproperties.com/"
+    },
+    {
+      "id": "S20",
+      "tier": 2,
+      "title": "W.P. Carey Q2 2026 results",
+      "date": "2026-07",
+      "url": "https://ir.wpcarey.com/"
+    },
+    {
+      "id": "S21",
+      "tier": 2,
+      "title": "Broadstone Net Lease Q2 2026 results",
+      "date": "2026-07",
+      "url": "https://investors.bnl.broadstone.com/"
+    },
+    {
+      "id": "S22",
+      "tier": 2,
+      "title": "Four Corners Property Trust Q2 2026 results",
+      "date": "2026-07-29",
+      "url": "https://investors.fcpt.com/news/news-details/2026/FCPT-Announces-Second-Quarter-2026-Financial-and-Operating-Results/default.aspx"
+    },
+    {
+      "id": "S23",
+      "tier": 2,
+      "title": "NNN Investor Dashboard / price",
+      "date": "2026-08-28",
+      "url": "https://www.nnnreit.com/investor-relations/"
+    }
+  ],
+  "VISUAL_DATA_SOURCE_REGISTRY": {
+    "VIS-001": {
+      "title": "3-year revenue and AFFO/share",
+      "source_ids": [
+        "S03",
+        "S08"
+      ],
+      "values": [
+        {
+          "year": 2023,
+          "revenue_m": 828.111,
+          "affo_per_share": 3.26,
+          "occupancy_pct": 99.5,
+          "investments_m": 819.7,
+          "acq_cap_pct": 7.3
+        },
+        {
+          "year": 2024,
+          "revenue_m": 869.266,
+          "affo_per_share": 3.35,
+          "occupancy_pct": 98.5,
+          "investments_m": 565.4,
+          "acq_cap_pct": 7.7
+        },
+        {
+          "year": 2025,
+          "revenue_m": 926.213,
+          "affo_per_share": 3.44,
+          "occupancy_pct": 98.3,
+          "investments_m": 931.0,
+          "acq_cap_pct": 7.4
+        }
+      ],
+      "source_hash_sha256": "943b5ed9d379f6fb5af71e82aaf80243f3b22781c7a7101ee3398ded8f2440f3",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_locator": "#vis-001"
+    },
+    "VIS-002": {
+      "title": "Latest 8Q occupancy and investments",
+      "source_ids": [
+        "S01",
+        "S03",
+        "S05",
+        "S06",
+        "S07",
+        "S09"
+      ],
+      "values": [
+        {
+          "quarter": "3Q24",
+          "revenue_m": 218.564,
+          "affo_per_share": 0.84,
+          "occupancy_pct": 99.3,
+          "investments_m": 113.6,
+          "acq_cap_pct": 7.6
+        },
+        {
+          "quarter": "4Q24",
+          "revenue_m": 218.482,
+          "affo_per_share": 0.82,
+          "occupancy_pct": 98.5,
+          "investments_m": 216.8,
+          "acq_cap_pct": 7.6
+        },
+        {
+          "quarter": "1Q25",
+          "revenue_m": 230.854,
+          "affo_per_share": 0.87,
+          "occupancy_pct": 97.7,
+          "investments_m": 232.4,
+          "acq_cap_pct": 7.4
+        },
+        {
+          "quarter": "2Q25",
+          "revenue_m": 226.802,
+          "affo_per_share": 0.85,
+          "occupancy_pct": 98.0,
+          "investments_m": 232.536,
+          "acq_cap_pct": 7.4
+        },
+        {
+          "quarter": "3Q25",
+          "revenue_m": 230.159,
+          "affo_per_share": 0.86,
+          "occupancy_pct": 97.5,
+          "investments_m": 283.027,
+          "acq_cap_pct": 7.3
+        },
+        {
+          "quarter": "4Q25",
+          "revenue_m": 238.398,
+          "affo_per_share": 0.87,
+          "occupancy_pct": 98.3,
+          "investments_m": 183.06,
+          "acq_cap_pct": 7.4
+        },
+        {
+          "quarter": "1Q26",
+          "revenue_m": 240.424,
+          "affo_per_share": 0.87,
+          "occupancy_pct": 98.6,
+          "investments_m": 145.394,
+          "acq_cap_pct": 7.5
+        },
+        {
+          "quarter": "2Q26",
+          "revenue_m": 244.266,
+          "affo_per_share": 0.9,
+          "occupancy_pct": 99.1,
+          "investments_m": 291.009,
+          "acq_cap_pct": 7.3
+        }
+      ],
+      "source_hash_sha256": "4683a78fe0c3fd282a2431ec7acaacdb207f5ccd42611b05f973a0c12deda179",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_locator": "#vis-002"
+    },
+    "VIS-003": {
+      "title": "NAV sensitivity to cap rate",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S12"
+      ],
+      "values": [
+        {
+          "cap_rate_pct": 6.25,
+          "nav_per_share": 52.96
+        },
+        {
+          "cap_rate_pct": 6.5,
+          "nav_per_share": 50.0
+        },
+        {
+          "cap_rate_pct": 6.65,
+          "nav_per_share": 48.33
+        },
+        {
+          "cap_rate_pct": 6.75,
+          "nav_per_share": 47.26
+        },
+        {
+          "cap_rate_pct": 7.0,
+          "nav_per_share": 44.71
+        },
+        {
+          "cap_rate_pct": 7.25,
+          "nav_per_share": 42.34
+        }
+      ],
+      "source_hash_sha256": "87e5e33ae10c25227696003f12306b6c1cda2d68f4aea5d9969a3bd44e0b4d32",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_locator": "#vis-003"
+    },
+    "VIS-004": {
+      "title": "Scenario fair value vs current price",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S15"
+      ],
+      "values": [
+        {
+          "scenario": "Down",
+          "probability": 0.25,
+          "affo_2027": 3.62,
+          "p_affo_multiple": 11.5,
+          "p_affo_value": 41.63,
+          "nav_value": 42.34,
+          "fair_value": 41.99,
+          "total_return_12m": -0.026
+        },
+        {
+          "scenario": "Base",
+          "probability": 0.5,
+          "affo_2027": 3.71,
+          "p_affo_multiple": 13.5,
+          "p_affo_value": 50.09,
+          "nav_value": 48.33,
+          "fair_value": 49.21,
+          "total_return_12m": 0.132
+        },
+        {
+          "scenario": "Up",
+          "probability": 0.25,
+          "affo_2027": 3.8,
+          "p_affo_multiple": 14.5,
+          "p_affo_value": 55.1,
+          "nav_value": 52.96,
+          "fair_value": 54.03,
+          "total_return_12m": 0.237
+        }
+      ],
+      "source_hash_sha256": "dcad21c564b50b85a4e97345098937fc1c9c6d63503b64ab2811dc21bf7ee43a",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_locator": "#vis-004"
+    },
+    "VIS-005": {
+      "title": "Portfolio concentration by line of trade",
+      "source_ids": [
+        "S02"
+      ],
+      "values": [
+        {
+          "name": "Auto service",
+          "abr_pct": 18.6
+        },
+        {
+          "name": "Convenience stores",
+          "abr_pct": 15.9
+        },
+        {
+          "name": "Limited-service restaurants",
+          "abr_pct": 7.7
+        },
+        {
+          "name": "Entertainment",
+          "abr_pct": 7.3
+        },
+        {
+          "name": "Auto dealerships",
+          "abr_pct": 6.4
+        },
+        {
+          "name": "Full-service restaurants",
+          "abr_pct": 6.3
+        },
+        {
+          "name": "Health & fitness",
+          "abr_pct": 3.8
+        },
+        {
+          "name": "Theaters",
+          "abr_pct": 3.5
+        },
+        {
+          "name": "Auto parts",
+          "abr_pct": 3.2
+        },
+        {
+          "name": "Equipment rental",
+          "abr_pct": 3.0
+        }
+      ],
+      "source_hash_sha256": "a4bf40f460fa10b7644e9ab2e0a7ef047bf28d5134bd9d4e7f61bc0e9c87f4d0",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_locator": "#vis-005"
+    }
+  },
+  "publishing_gates": {
+    "REPORT_DATA_PACK": "EMITTED",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "CONTENT_MEANING_LOCK_PRESERVED": "PASS",
+    "PUBLISHED_TOP_LEVEL_SCHEMA_MATCH": "PASS",
+    "EXPLANATORY_DEPTH_PRESERVED": "PASS",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "METADATA_FIREWALL": "PASS",
+    "RC_H3_COVERAGE_RATE": 1.0,
+    "FINANCING_DILUTION_CONSISTENCY": "PASS",
+    "FIGURE_NUMERICAL_PARITY": "PASS",
+    "VISUAL_DATA_LINEAGE": "PASS",
+    "VISUAL_SEMANTIC_PARITY": "PASS",
+    "RENDERED_VISUAL_PARITY_QA": "PASS",
+    "DECISION_VISUALS_TOTAL": 5,
+    "DECISION_VISUALS_PARITY_PASS": 5,
+    "STALE_VISUAL_ASSETS": 0,
+    "CORE_LANDSCAPE_PAGES": 0,
+    "PRINTED_TOC_PAGES": 1,
+    "TOC_CLICKABLE": "PASS",
+    "PDF_BOOKMARKS": "PASS",
+    "HTML_SIDEBAR": "PASS",
+    "SEARCHABLE_TEXT": "PASS",
+    "ACCIDENTAL_SPARSE_PAGES": 0,
+    "LATEST_FILING_CHECK": "PASS",
+    "PDF_PAGE_COUNT": 24
+  }
+}

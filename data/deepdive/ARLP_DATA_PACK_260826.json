@@ -1,0 +1,1028 @@
+{
+  "meta": {
+    "ticker": "ARLP",
+    "company": "Alliance Resource Partners, L.P.",
+    "T0": "2026-08-25 close",
+    "price_asof": "2026-08-25",
+    "price": 26.47,
+    "filing_asof": "2026-08-06 2Q26 Form 10-Q",
+    "consensus_asof": "2026-07-29",
+    "publishing_date": "2026-08-26",
+    "timezone": "Asia/Seoul",
+    "version": "Clean DDOS Production OS v1.7",
+    "source_manuscript_sha256": "a78feaab73ddb2d478326af778bb3c9b4cce60202572464a49e1e300f3e3de57"
+  },
+  "financials": {
+    "annual_3y": {
+      "2023": {
+        "revenue_m": 2566.701,
+        "net_income_attributable_m": 630.118,
+        "adjusted_ebitda_m": 933.077,
+        "coal_tons_mt": 34.442,
+        "coal_price_per_t": 64.17,
+        "og_volume_mboe": 3.105,
+        "ocf_m": 824.231,
+        "capex_m": 379.338,
+        "fcf_m": 415.198,
+        "dcf_m": 641.924,
+        "cash_distributions_m": 364.579,
+        "distribution_coverage_x": 1.76
+      },
+      "2024": {
+        "revenue_m": 2448.708,
+        "net_income_attributable_m": 360.855,
+        "adjusted_ebitda_m": 714.23,
+        "coal_tons_mt": 33.319,
+        "coal_price_per_t": 63.38,
+        "og_volume_mboe": 3.402,
+        "ocf_m": 803.131,
+        "capex_m": 428.741,
+        "fcf_m": 383.532,
+        "dcf_m": 398.838,
+        "cash_distributions_m": 363.43,
+        "distribution_coverage_x": 1.1
+      },
+      "2025": {
+        "revenue_m": 2194.811,
+        "net_income_attributable_m": 311.163,
+        "adjusted_ebitda_m": 698.739,
+        "coal_tons_mt": 32.967,
+        "coal_price_per_t": 58.62,
+        "og_volume_mboe": 3.648,
+        "ocf_m": 651.136,
+        "capex_m": 263.28,
+        "fcf_m": 377.03,
+        "dcf_m": 381.265,
+        "cash_distributions_m": 337.178,
+        "distribution_coverage_x": 1.13
+      }
+    },
+    "quarterly_8q": [
+      {
+        "quarter": "3Q24",
+        "revenue_m": 613.6,
+        "net_income_m": 86.281,
+        "adjusted_ebitda_m": 170.395,
+        "coal_tons_mt": 8.379,
+        "coal_price_per_t": 63.57,
+        "coal_expense_per_t": 46.11,
+        "dcf_m": 97.639,
+        "fcf_m": 103.221,
+        "distribution_per_unit": 0.7,
+        "derived": []
+      },
+      {
+        "quarter": "4Q24",
+        "revenue_m": 590.1,
+        "net_income_m": 16.33,
+        "adjusted_ebitda_m": 123.968,
+        "coal_tons_mt": 8.415,
+        "coal_price_per_t": 59.97,
+        "coal_expense_per_t": 48.09,
+        "dcf_m": 58.701,
+        "fcf_m": 75.216,
+        "distribution_per_unit": 0.7,
+        "derived": []
+      },
+      {
+        "quarter": "1Q25",
+        "revenue_m": 540.5,
+        "net_income_m": 74.0,
+        "adjusted_ebitda_m": 159.9,
+        "coal_tons_mt": 7.771,
+        "coal_price_per_t": 60.29,
+        "coal_expense_per_t": 42.53,
+        "dcf_m": 84.125,
+        "fcf_m": 52.714,
+        "distribution_per_unit": 0.7,
+        "derived": [
+          "coal_price_per_t",
+          "coal_expense_per_t"
+        ]
+      },
+      {
+        "quarter": "2Q25",
+        "revenue_m": 547.5,
+        "net_income_m": 59.4,
+        "adjusted_ebitda_m": 161.9,
+        "coal_tons_mt": 8.382,
+        "coal_price_per_t": 57.92,
+        "coal_expense_per_t": 41.27,
+        "dcf_m": 90.693,
+        "fcf_m": 79.032,
+        "distribution_per_unit": 0.6,
+        "derived": []
+      },
+      {
+        "quarter": "3Q25",
+        "revenue_m": 571.4,
+        "net_income_m": 95.104,
+        "adjusted_ebitda_m": 185.813,
+        "coal_tons_mt": 8.703,
+        "coal_price_per_t": 58.78,
+        "coal_expense_per_t": 40.99,
+        "dcf_m": 106.36,
+        "fcf_m": 151.438,
+        "distribution_per_unit": 0.6,
+        "derived": []
+      },
+      {
+        "quarter": "4Q25",
+        "revenue_m": 535.411,
+        "net_income_m": 82.666,
+        "adjusted_ebitda_m": 191.067,
+        "coal_tons_mt": 8.111,
+        "coal_price_per_t": 57.57,
+        "coal_expense_per_t": 40.04,
+        "dcf_m": 100.087,
+        "fcf_m": 93.846,
+        "distribution_per_unit": 0.6,
+        "derived": [
+          "revenue_m",
+          "coal_price_per_t",
+          "coal_expense_per_t"
+        ]
+      },
+      {
+        "quarter": "1Q26",
+        "revenue_m": 516.0,
+        "net_income_m": 9.1,
+        "adjusted_ebitda_m": 155.008,
+        "coal_tons_mt": 7.86,
+        "coal_price_per_t": 56.4,
+        "coal_expense_per_t": 41.42,
+        "dcf_m": 77.79,
+        "fcf_m": 13.289,
+        "distribution_per_unit": 0.6,
+        "derived": []
+      },
+      {
+        "quarter": "2Q26",
+        "revenue_m": 551.6,
+        "net_income_m": 79.6,
+        "adjusted_ebitda_m": 185.672,
+        "coal_tons_mt": 8.558,
+        "coal_price_per_t": 54.87,
+        "coal_expense_per_t": 38.68,
+        "dcf_m": 108.151,
+        "fcf_m": 96.245,
+        "distribution_per_unit": 0.6,
+        "derived": []
+      }
+    ],
+    "ceilings": [
+      "Individual mine realized price/cash cost/EBITDA unavailable",
+      "All contract tons plant/mine/maturity/take-or-pay mapping unavailable",
+      "Exact day-one post-AllDale net debt not fully reconstructable from public data"
+    ]
+  },
+  "kpis": [
+    {
+      "name": "Total coal expense/t",
+      "current": 38.68,
+      "unit": "$/t",
+      "history": [
+        {
+          "period": "3Q24",
+          "value": 46.11
+        },
+        {
+          "period": "4Q24",
+          "value": 48.09
+        },
+        {
+          "period": "1Q25",
+          "value": 42.53
+        },
+        {
+          "period": "2Q25",
+          "value": 41.27
+        },
+        {
+          "period": "3Q25",
+          "value": 40.99
+        },
+        {
+          "period": "4Q25",
+          "value": 40.04
+        },
+        {
+          "period": "1Q26",
+          "value": 41.42
+        },
+        {
+          "period": "2Q26",
+          "value": 38.68
+        }
+      ],
+      "thresholds": {
+        "green": "≤ $39",
+        "yellow": "$39–42",
+        "red": "> $42 for two quarters"
+      }
+    },
+    {
+      "name": "Coal price-cost spread",
+      "current": 16.19,
+      "unit": "$/t",
+      "history": [
+        {
+          "period": "3Q24",
+          "value": 17.46
+        },
+        {
+          "period": "4Q24",
+          "value": 11.88
+        },
+        {
+          "period": "1Q25",
+          "value": 17.76
+        },
+        {
+          "period": "2Q25",
+          "value": 16.65
+        },
+        {
+          "period": "3Q25",
+          "value": 17.79
+        },
+        {
+          "period": "4Q25",
+          "value": 17.53
+        },
+        {
+          "period": "1Q26",
+          "value": 14.98
+        },
+        {
+          "period": "2Q26",
+          "value": 16.19
+        }
+      ],
+      "thresholds": {
+        "green": "≥ $15",
+        "yellow": "$11–15",
+        "red": "< $11"
+      }
+    },
+    {
+      "name": "Next-year committed & priced",
+      "current": 29.4,
+      "unit": "Mt for 2027",
+      "history": [],
+      "thresholds": {
+        "green": "≥85% of expected sales",
+        "yellow": "70–85%",
+        "red": "<70%"
+      }
+    },
+    {
+      "name": "O&G Segment Adjusted EBITDA",
+      "current": 38.0,
+      "unit": "$M, 2Q26 pre-AllDale full quarter",
+      "history": [],
+      "thresholds": {
+        "green": "≥ $50M after integration",
+        "yellow": "$40–50M",
+        "red": "< $40M sustained"
+      }
+    },
+    {
+      "name": "Net leverage",
+      "current": 0.67,
+      "unit": "x, 6/30/26 pre-AllDale",
+      "history": [],
+      "thresholds": {
+        "green": "<0.8x",
+        "yellow": "0.8–1.2x",
+        "red": ">1.2x"
+      }
+    },
+    {
+      "name": "FCF coverage of distribution + scheduled principal",
+      "current": null,
+      "unit": "x",
+      "history": [],
+      "thresholds": {
+        "green": "≥1.25x LTM",
+        "yellow": "1.0–1.25x",
+        "red": "<1.0x"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.25,
+      "revenue_path": [],
+      "margin_path": [],
+      "fcf": [
+        {
+          "period": "2029",
+          "value_m": 180
+        }
+      ],
+      "diluted_shares_m": 128.659,
+      "per_share_value": 6.18,
+      "coal_tons_2029_mt": 26.0,
+      "coal_price_2029_per_t": 49.0,
+      "coal_expense_2029_per_t": 43.0,
+      "coal_ebitda_2029_m": 200,
+      "coal_multiple_x": 2.5,
+      "og_ebitda_attributable_2029_m": 170,
+      "og_multiple_x": 7.0,
+      "other_value_m": 80,
+      "corporate_burden_m": -350,
+      "ending_net_debt_m": 625,
+      "equity_value_m": 795,
+      "distribution_path_per_unit": [
+        2.4,
+        1.2,
+        1.2
+      ],
+      "cumulative_distributions_per_unit": 4.8,
+      "total_3y_value_per_unit": 10.98
+    },
+    {
+      "name": "Base",
+      "probability": 0.55,
+      "revenue_path": [
+        {
+          "period": "2027",
+          "value_m": 2300,
+          "note": "H3 approximate Base revenue"
+        }
+      ],
+      "margin_path": [],
+      "fcf": [
+        {
+          "period": "2029",
+          "value_m": 455
+        }
+      ],
+      "diluted_shares_m": 128.659,
+      "per_share_value": 33.29,
+      "coal_tons_2029_mt": 31.5,
+      "coal_price_2029_per_t": 55.0,
+      "coal_expense_2029_per_t": 39.5,
+      "coal_ebitda_2029_m": 525,
+      "coal_multiple_x": 4.5,
+      "og_ebitda_attributable_2029_m": 275,
+      "og_multiple_x": 9.0,
+      "other_value_m": 120,
+      "corporate_burden_m": -400,
+      "ending_net_debt_m": 275,
+      "equity_value_m": 4283,
+      "distribution_path_per_unit": [
+        2.4,
+        2.4,
+        2.4
+      ],
+      "cumulative_distributions_per_unit": 7.2,
+      "total_3y_value_per_unit": 40.49
+    },
+    {
+      "name": "Up",
+      "probability": 0.2,
+      "revenue_path": [],
+      "margin_path": [],
+      "fcf": [
+        {
+          "period": "2029",
+          "value_m": 660
+        }
+      ],
+      "diluted_shares_m": 128.659,
+      "per_share_value": 49.98,
+      "coal_tons_2029_mt": 34.5,
+      "coal_price_2029_per_t": 58.0,
+      "coal_expense_2029_per_t": 38.0,
+      "coal_ebitda_2029_m": 700,
+      "coal_multiple_x": 5.0,
+      "og_ebitda_attributable_2029_m": 330,
+      "og_multiple_x": 10.0,
+      "other_value_m": 150,
+      "corporate_burden_m": -420,
+      "ending_net_debt_m": 100,
+      "equity_value_m": 6430,
+      "distribution_path_per_unit": [
+        2.4,
+        2.8,
+        3.2
+      ],
+      "cumulative_distributions_per_unit": 8.4,
+      "total_3y_value_per_unit": 58.38
+    }
+  ],
+  "valuation": {
+    "mode": "Mode D — Cyclical / Commodity, 2029 SOTP + FCF cross-check",
+    "core": "contracted coal cash flow + existing O&G royalty cash flow",
+    "execution": "coal cost normalization + AllDale integration/deleveraging",
+    "ecosystem": 0,
+    "drag": "corporate burden, net debt, NCI, governance complexity, ARO",
+    "expected_value": 36.69,
+    "expected_irr": 0.124,
+    "hurdle_rate": 0.14,
+    "hurdle_present_value": 25.46,
+    "current_price": 26.47,
+    "base_terminal_price": 33.29,
+    "up_down_ratio": 2.06
+  },
+  "reverse_expectations": {
+    "assumptions": {
+      "current_price": 26.47,
+      "annual_distribution_per_unit": 2.4,
+      "hurdle_rate": 0.14,
+      "horizon_years": 3,
+      "distribution_timing": "year-end"
+    },
+    "required_2029_terminal_price": 31.0,
+    "operating_requirements": [
+      "2029 coal EBITDA ~ $500M+",
+      "attributable O&G EBITDA ~ $250M+",
+      "ending net debt ~ $300M",
+      "distribution maintained",
+      "2028+ coal tons not rapidly below 30Mt"
+    ]
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_m": 2230,
+      "eps": 2.38
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_m": 2310,
+      "eps": 2.89
+    },
+    "price_target_avg": 31.17,
+    "price_target_range": [
+      29,
+      33.5
+    ],
+    "revision_trend": "PRIMARY_SOURCE_CEILING — complete sell-side revision history unavailable",
+    "analyst_count_financial_forecast": 3
+  },
+  "stance": {
+    "zone": "관망 / 신규매수 회피",
+    "price_bands": {
+      "active_interest_candidate": "≤ $23",
+      "conditional_interest": "$23–25.5",
+      "watch_avoid_new_buy": "$25.5–30",
+      "weak_add_case": "$30–34",
+      "consider_reduce": "> $34"
+    },
+    "preferred_entry_with_uncertainty_buffer": "$23–25",
+    "horizon": "3 years to 2029 year-end"
+  },
+  "catalysts": [
+    {
+      "when": "2026-09-30",
+      "event": "AllDale first full-quarter operating period ends / term-loan amortization progresses",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2026-10 late (estimated)",
+      "event": "3Q26 earnings",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027-02 early (estimated)",
+      "event": "FY26 results + 2027/28 contract book update",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027-04 late (estimated)",
+      "event": "1Q27 earnings",
+      "sensitivity": "M/H"
+    },
+    {
+      "when": "2027-07 late (estimated)",
+      "event": "2Q27 earnings / 2028 contracting check",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2028-01-01",
+      "event": "AllDale term-loan maturity",
+      "sensitivity": "H"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC001",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1"
+    },
+    {
+      "rc_id": "RC002",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1.3, Ch.4/5"
+    },
+    {
+      "rc_id": "RC003",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.1.6, Ch.3.7"
+    },
+    {
+      "rc_id": "RC004",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.3.2–3.3"
+    },
+    {
+      "rc_id": "RC005",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4.2"
+    },
+    {
+      "rc_id": "RC006",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1.5, Ch.3.3"
+    },
+    {
+      "rc_id": "RC007",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1.2, Ch.3.8"
+    },
+    {
+      "rc_id": "RC008",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.5"
+    },
+    {
+      "rc_id": "RC009",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.2.3, Ch.3.6, Ch.5"
+    },
+    {
+      "rc_id": "RC010",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.4"
+    },
+    {
+      "rc_id": "RC011",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2.2"
+    },
+    {
+      "rc_id": "RC012",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.2.5"
+    },
+    {
+      "rc_id": "RC013",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4.1–4.2"
+    },
+    {
+      "rc_id": "RC014",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4.3–4.5"
+    },
+    {
+      "rc_id": "RC015",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4.4, Ch.5.9"
+    },
+    {
+      "rc_id": "RC016",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4.3, Ch.6"
+    },
+    {
+      "rc_id": "RC017",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.1, Ch.6"
+    },
+    {
+      "rc_id": "RC018",
+      "status": "NOT_MATERIAL",
+      "h3_locator": "Ch.3.9"
+    },
+    {
+      "rc_id": "RC019",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.0, Ch.5.7"
+    },
+    {
+      "rc_id": "RC020",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5.3"
+    },
+    {
+      "rc_id": "RC021",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5, Ch.6.2"
+    }
+  ],
+  "as_of_registry": {
+    "price": "2026-08-25 close",
+    "filing": "2026-08-06 2Q26 10-Q",
+    "earnings": "2026-07-27 2Q26 release",
+    "alldale": "2026-07 closing/financing filings",
+    "consensus": "2026-07-29",
+    "industry": "2026-08 EIA STEO",
+    "latest_filing_check": "PASS as of 2026-08-26"
+  },
+  "primary_source_ceilings": [
+    "All contract tons plant/mine/maturity/take-or-pay details",
+    "Individual mine realized price/cash cost/EBITDA",
+    "AllDale final PPA and reserve-level acquired NAV",
+    "Independent arm’s-length benchmark for every related-party transfer",
+    "Uniform latest MSHA safety trend for all mines",
+    "Complete institutional flow / sell-side revision history"
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "tier": "primary",
+      "name": "ARLP 2Q26 Form 10-Q",
+      "date": "2026-08-06",
+      "url": "https://www.sec.gov/Archives/edgar/data/1086600/000110465926092001/arlp-20260630x10q.htm"
+    },
+    {
+      "id": 2,
+      "tier": "primary",
+      "name": "ARLP 2Q26 earnings release",
+      "date": "2026-07-27",
+      "url": "https://www.sec.gov/Archives/edgar/data/1086600/000110465926086855/arlp-20260727xex99d1.htm"
+    },
+    {
+      "id": 3,
+      "tier": "primary",
+      "name": "AllDale closing 8-K / financing",
+      "date": "2026-07",
+      "url": "https://www.sec.gov/Archives/edgar/data/1086600/000110465926080100/arlp-20260701x8k.htm"
+    },
+    {
+      "id": 4,
+      "tier": "primary",
+      "name": "AllDale transaction announcement",
+      "date": "2026-06-05",
+      "url": "https://www.sec.gov/Archives/edgar/data/1086600/000110465926071203/arlp-20260605xex99d1.htm"
+    },
+    {
+      "id": 5,
+      "tier": "primary",
+      "name": "ARLP 2025 Form 10-K",
+      "date": "2026 filing",
+      "url": "https://www.sec.gov/Archives/edgar/data/1086600/000110465926020468/arlp-20251231x10k.htm"
+    },
+    {
+      "id": 6,
+      "tier": "primary",
+      "name": "ARLP 2024 Form 10-K",
+      "date": "2025 filing",
+      "url": "https://www.sec.gov/Archives/edgar/data/1086600/000155837025001805/arlp-20241231x10k.htm"
+    },
+    {
+      "id": 7,
+      "tier": "primary",
+      "name": "ARLP 3Q25 earnings release",
+      "date": "2025-10-27",
+      "url": "https://www.sec.gov/Archives/edgar/data/1086600/000110465925102328/arlp-20251027xex99d1.htm"
+    },
+    {
+      "id": 8,
+      "tier": "primary",
+      "name": "U.S. EIA Short-Term Energy Outlook",
+      "date": "2026-08",
+      "url": "https://www.eia.gov/outlooks/steo/report/elec_coal_renew.php"
+    },
+    {
+      "id": 9,
+      "tier": "primary",
+      "name": "LG&E/KU load-growth/resource planning release",
+      "date": "2024-10-18",
+      "url": "https://lge-ku.com/newsroom/press-releases/2024/10/18/lge-and-ku-forecast-load-growth-due-data-centers-and-economic"
+    },
+    {
+      "id": 10,
+      "tier": "secondary",
+      "name": "ARLP consensus/forecast aggregation",
+      "date": "2026-07-29",
+      "url": "https://stockanalysis.com/stocks/arlp/forecast/"
+    },
+    {
+      "id": 11,
+      "tier": "secondary",
+      "name": "ARLP valuation ratios",
+      "date": "2026-08",
+      "url": "https://stockanalysis.com/stocks/arlp/financials/ratios/"
+    },
+    {
+      "id": 12,
+      "tier": "secondary",
+      "name": "KRP valuation ratios",
+      "date": "2026-08",
+      "url": "https://stockanalysis.com/stocks/krp/financials/ratios/"
+    },
+    {
+      "id": 13,
+      "tier": "secondary",
+      "name": "BSM valuation ratios",
+      "date": "2026-08",
+      "url": "https://stockanalysis.com/stocks/bsm/financials/ratios/"
+    },
+    {
+      "id": 14,
+      "tier": "secondary",
+      "name": "NRP valuation ratios",
+      "date": "2026-08",
+      "url": "https://stockanalysis.com/stocks/nrp/financials/ratios/"
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "3개년 핵심 재무 추이",
+      "authoritative_source_block": "financials.annual_3y",
+      "source_values": {
+        "2023": {
+          "revenue_m": 2566.701,
+          "net_income_attributable_m": 630.118,
+          "adjusted_ebitda_m": 933.077,
+          "coal_tons_mt": 34.442,
+          "coal_price_per_t": 64.17,
+          "og_volume_mboe": 3.105,
+          "ocf_m": 824.231,
+          "capex_m": 379.338,
+          "fcf_m": 415.198,
+          "dcf_m": 641.924,
+          "cash_distributions_m": 364.579,
+          "distribution_coverage_x": 1.76
+        },
+        "2024": {
+          "revenue_m": 2448.708,
+          "net_income_attributable_m": 360.855,
+          "adjusted_ebitda_m": 714.23,
+          "coal_tons_mt": 33.319,
+          "coal_price_per_t": 63.38,
+          "og_volume_mboe": 3.402,
+          "ocf_m": 803.131,
+          "capex_m": 428.741,
+          "fcf_m": 383.532,
+          "dcf_m": 398.838,
+          "cash_distributions_m": 363.43,
+          "distribution_coverage_x": 1.1
+        },
+        "2025": {
+          "revenue_m": 2194.811,
+          "net_income_attributable_m": 311.163,
+          "adjusted_ebitda_m": 698.739,
+          "coal_tons_mt": 32.967,
+          "coal_price_per_t": 58.62,
+          "og_volume_mboe": 3.648,
+          "ocf_m": 651.136,
+          "capex_m": 263.28,
+          "fcf_m": 377.03,
+          "dcf_m": 381.265,
+          "cash_distributions_m": 337.178,
+          "distribution_coverage_x": 1.13
+        }
+      },
+      "narrative_locator": "Ch.4.1",
+      "table_locator": "Ch.4.1 table",
+      "caption_locator": "HTML Financial Deep Dive visual",
+      "rendered_asset_locator": "#vis-001",
+      "source_version_or_hash": "aad33ba938d7184c",
+      "display_values": {
+        "2023": {
+          "revenue_m": 2566.701,
+          "net_income_attributable_m": 630.118,
+          "adjusted_ebitda_m": 933.077,
+          "coal_tons_mt": 34.442,
+          "coal_price_per_t": 64.17,
+          "og_volume_mboe": 3.105,
+          "ocf_m": 824.231,
+          "capex_m": 379.338,
+          "fcf_m": 415.198,
+          "dcf_m": 641.924,
+          "cash_distributions_m": 364.579,
+          "distribution_coverage_x": 1.76
+        },
+        "2024": {
+          "revenue_m": 2448.708,
+          "net_income_attributable_m": 360.855,
+          "adjusted_ebitda_m": 714.23,
+          "coal_tons_mt": 33.319,
+          "coal_price_per_t": 63.38,
+          "og_volume_mboe": 3.402,
+          "ocf_m": 803.131,
+          "capex_m": 428.741,
+          "fcf_m": 383.532,
+          "dcf_m": 398.838,
+          "cash_distributions_m": 363.43,
+          "distribution_coverage_x": 1.1
+        },
+        "2025": {
+          "revenue_m": 2194.811,
+          "net_income_attributable_m": 311.163,
+          "adjusted_ebitda_m": 698.739,
+          "coal_tons_mt": 32.967,
+          "coal_price_per_t": 58.62,
+          "og_volume_mboe": 3.648,
+          "ocf_m": 651.136,
+          "capex_m": 263.28,
+          "fcf_m": 377.03,
+          "dcf_m": 381.265,
+          "cash_distributions_m": 337.178,
+          "distribution_coverage_x": 1.13
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "최근 8개 분기 Coal price vs expense",
+      "authoritative_source_block": "financials.quarterly_8q[*].coal_price_per_t/coal_expense_per_t",
+      "source_values": [
+        {
+          "quarter": "3Q24",
+          "price": 63.57,
+          "expense": 46.11
+        },
+        {
+          "quarter": "4Q24",
+          "price": 59.97,
+          "expense": 48.09
+        },
+        {
+          "quarter": "1Q25",
+          "price": 60.29,
+          "expense": 42.53
+        },
+        {
+          "quarter": "2Q25",
+          "price": 57.92,
+          "expense": 41.27
+        },
+        {
+          "quarter": "3Q25",
+          "price": 58.78,
+          "expense": 40.99
+        },
+        {
+          "quarter": "4Q25",
+          "price": 57.57,
+          "expense": 40.04
+        },
+        {
+          "quarter": "1Q26",
+          "price": 56.4,
+          "expense": 41.42
+        },
+        {
+          "quarter": "2Q26",
+          "price": 54.87,
+          "expense": 38.68
+        }
+      ],
+      "narrative_locator": "Ch.4.2",
+      "table_locator": "Ch.4.2 table",
+      "caption_locator": "HTML Financial Deep Dive visual",
+      "rendered_asset_locator": "#vis-002",
+      "source_version_or_hash": "f455e8f8b4fa2211",
+      "display_values": [
+        {
+          "quarter": "3Q24",
+          "price": 63.57,
+          "expense": 46.11
+        },
+        {
+          "quarter": "4Q24",
+          "price": 59.97,
+          "expense": 48.09
+        },
+        {
+          "quarter": "1Q25",
+          "price": 60.29,
+          "expense": 42.53
+        },
+        {
+          "quarter": "2Q25",
+          "price": 57.92,
+          "expense": 41.27
+        },
+        {
+          "quarter": "3Q25",
+          "price": 58.78,
+          "expense": 40.99
+        },
+        {
+          "quarter": "4Q25",
+          "price": 57.57,
+          "expense": 40.04
+        },
+        {
+          "quarter": "1Q26",
+          "price": 56.4,
+          "expense": 41.42
+        },
+        {
+          "quarter": "2Q26",
+          "price": 54.87,
+          "expense": 38.68
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "2029 시나리오 총가치와 현재가",
+      "authoritative_source_block": "scenarios[*].total_3y_value_per_unit + valuation.current_price",
+      "source_values": {
+        "current_price": 26.47,
+        "scenarios": [
+          {
+            "name": "Down",
+            "total_value": 10.98,
+            "probability": 0.25
+          },
+          {
+            "name": "Base",
+            "total_value": 40.49,
+            "probability": 0.55
+          },
+          {
+            "name": "Up",
+            "total_value": 58.38,
+            "probability": 0.2
+          }
+        ]
+      },
+      "narrative_locator": "Ch.5.4–5.5",
+      "table_locator": "Ch.5.4 table",
+      "caption_locator": "HTML Valuation visual",
+      "rendered_asset_locator": "#vis-003",
+      "source_version_or_hash": "aefda0d258837205",
+      "display_values": {
+        "current_price": 26.47,
+        "scenarios": [
+          {
+            "name": "Down",
+            "total_value": 10.98,
+            "probability": 0.25
+          },
+          {
+            "name": "Base",
+            "total_value": 40.49,
+            "probability": 0.55
+          },
+          {
+            "name": "Up",
+            "total_value": 58.38,
+            "probability": 0.2
+          }
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "가격 밴드와 투자 스탠스",
+      "authoritative_source_block": "stance.price_bands + valuation.current_price",
+      "source_values": {
+        "current_price": 26.47,
+        "bands": [
+          23,
+          25.5,
+          30,
+          34
+        ]
+      },
+      "narrative_locator": "Ch.6.2",
+      "table_locator": "Ch.6.2 table",
+      "caption_locator": "HTML Investment Judgment visual",
+      "rendered_asset_locator": "#vis-004",
+      "source_version_or_hash": "b7734bb36aafa0d2",
+      "display_values": {
+        "current_price": 26.47,
+        "bands": [
+          23,
+          25.5,
+          30,
+          34
+        ]
+      },
+      "status": "PASS"
+    }
+  ],
+  "publishing_qa": {
+    "report_data_pack": "EMITTED",
+    "data_pack_report_parity": "PASS",
+    "content_meaning_lock_preserved": "PASS",
+    "published_top_level_schema_match": "PASS",
+    "korean_readability": "PASS",
+    "korean_prose_quality": "PASS",
+    "industry_company_narrative": "PASS",
+    "explanatory_space_allocation": "PASS",
+    "html_sidebar": "PASS",
+    "searchable_text": "PASS",
+    "figure_numerical_parity": "PASS",
+    "visual_data_lineage": "PASS",
+    "visual_semantic_parity": "PASS",
+    "stale_visual_assets": 0,
+    "pdf_excluded_by_user": true
+  }
+}

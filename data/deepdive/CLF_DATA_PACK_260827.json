@@ -1,0 +1,1045 @@
+{
+  "meta": {
+    "ticker": "CLF",
+    "company": "Cleveland-Cliffs Inc.",
+    "T0": "2026-08-27",
+    "price_asof": "2026-08-26",
+    "filing_asof": "2026-06-30 10-Q filed 2026-07-23",
+    "consensus_asof": "2026-08-24",
+    "version": "Deep Dive OS v1.7",
+    "currency": "USD",
+    "publishing_timezone": "Asia/Seoul",
+    "pdf_omitted_by_user": true
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue_m": 21996,
+        "adjusted_ebitda_m": 1911,
+        "ocf_m": 2267,
+        "capex_m": 646,
+        "fcf_m": 1621,
+        "shipments_mnt": 16.432,
+        "asp_per_nt": 1171
+      },
+      {
+        "year": 2024,
+        "revenue_m": 19185,
+        "adjusted_ebitda_m": 773,
+        "ocf_m": 105,
+        "capex_m": 695,
+        "fcf_m": -590,
+        "shipments_mnt": 15.596,
+        "asp_per_nt": 1081
+      },
+      {
+        "year": 2025,
+        "revenue_m": 18610,
+        "adjusted_ebitda_m": 37,
+        "ocf_m": -462,
+        "capex_m": 561,
+        "fcf_m": -1023,
+        "shipments_mnt": 16.229,
+        "asp_per_nt": 1005
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "2024 Q3",
+        "revenue_m": 4569,
+        "adjusted_ebitda_m": 124,
+        "shipments_mnt": 3.84,
+        "asp_per_nt": 1045,
+        "ocf_m": -84,
+        "capex_m": 151,
+        "fcf_m": -235,
+        "derived": false
+      },
+      {
+        "quarter": "2024 Q4",
+        "revenue_m": 4325,
+        "adjusted_ebitda_m": -81,
+        "shipments_mnt": 3.827,
+        "asp_per_nt": 976,
+        "ocf_m": -472,
+        "capex_m": 205,
+        "fcf_m": -677,
+        "derived": true
+      },
+      {
+        "quarter": "2025 Q1",
+        "revenue_m": 4629,
+        "adjusted_ebitda_m": -174,
+        "shipments_mnt": 4.14,
+        "asp_per_nt": 980,
+        "ocf_m": -351,
+        "capex_m": 152,
+        "fcf_m": -503,
+        "derived": false
+      },
+      {
+        "quarter": "2025 Q2",
+        "revenue_m": 4934,
+        "adjusted_ebitda_m": 94,
+        "shipments_mnt": 4.29,
+        "asp_per_nt": 1015,
+        "ocf_m": 45,
+        "capex_m": 112,
+        "fcf_m": -67,
+        "derived": true,
+        "note": "Latest Q2 2026 comparative uses $94M; initial release reported $97M."
+      },
+      {
+        "quarter": "2025 Q3",
+        "revenue_m": 4734,
+        "adjusted_ebitda_m": 143,
+        "shipments_mnt": 4.029,
+        "asp_per_nt": 1032,
+        "ocf_m": -143,
+        "capex_m": 157,
+        "fcf_m": -300,
+        "derived": true
+      },
+      {
+        "quarter": "2025 Q4",
+        "revenue_m": 4313,
+        "adjusted_ebitda_m": -21,
+        "shipments_mnt": 3.77,
+        "asp_per_nt": 993,
+        "ocf_m": -13,
+        "capex_m": 140,
+        "fcf_m": -153,
+        "derived": true
+      },
+      {
+        "quarter": "2026 Q1",
+        "revenue_m": 4922,
+        "adjusted_ebitda_m": 95,
+        "shipments_mnt": 4.108,
+        "asp_per_nt": 1048,
+        "ocf_m": -325,
+        "capex_m": 152,
+        "fcf_m": -477,
+        "derived": false
+      },
+      {
+        "quarter": "2026 Q2",
+        "revenue_m": 5226,
+        "adjusted_ebitda_m": 286,
+        "shipments_mnt": 4.025,
+        "asp_per_nt": 1124,
+        "ocf_m": 230,
+        "capex_m": 157,
+        "fcf_m": 73,
+        "derived": true
+      }
+    ],
+    "ceilings": [
+      "OEM별 자동차 계약 가격·물량은 비공개",
+      "Stelco 인수 후 standalone EBITDA/synergy 실현액은 충분히 분리 공시되지 않음",
+      "GOES/NOES 개별 매출·마진·capacity는 stainless/electrical 합산 공시",
+      "Nucor/STLD 대비 apples-to-apples cash cost per ton은 public primary sources로 재구성 불가",
+      "Full licensed FY1–FY3 consensus revision history는 공개 소스로 완전 재구성 불가"
+    ]
+  },
+  "balance_sheet": {
+    "q2_2026_long_term_debt_b": 7.703,
+    "q2_2026_cash_b": 0.07,
+    "q2_2026_net_debt_b": 7.633,
+    "q2_2026_abl_b": 0.895,
+    "q2_2026_available_abl_b": 3.014,
+    "q2_2026_pension_opeb_liabilities_b": 0.617,
+    "q2_2026_environmental_aro_b": 0.695,
+    "q2_2026_shares_outstanding_m": 570.528,
+    "market_cap_b": 6.584,
+    "simple_enterprise_value_b": 14.217
+  },
+  "product_revenue_2025_m": {
+    "hot_rolled": 4770,
+    "cold_rolled": 2402,
+    "coated": 5431,
+    "stainless_and_electrical": 1748,
+    "plate": 1079,
+    "slab_and_other_steel": 881,
+    "other": 1642
+  },
+  "markets_2025_m": {
+    "direct_automotive": 5047,
+    "infrastructure_manufacturing": 5377,
+    "distributors_converters": 5195,
+    "steel_producers": 2334
+  },
+  "capacity": {
+    "configured_raw_steel_mnt_2025": 20.0,
+    "configured_raw_steel_mnt_2024": 23.0,
+    "raw_steel_production_mnt_2025": 18.8,
+    "raw_steel_production_mnt_2024": 17.7,
+    "iron_ore_capacity_m_long_tons": 20.1,
+    "hbi_capacity_m_metric_tons": 1.9,
+    "coke_capacity_mnt": 4.0,
+    "met_coal_capacity_mnt": 1.8,
+    "blast_furnaces_operating": 7,
+    "eafs_operating": 4
+  },
+  "kpis": [
+    {
+      "name": "Quarterly Adjusted EBITDA",
+      "history": [
+        {
+          "period": "2024 Q3",
+          "value_m": 124
+        },
+        {
+          "period": "2024 Q4",
+          "value_m": -81
+        },
+        {
+          "period": "2025 Q1",
+          "value_m": -174
+        },
+        {
+          "period": "2025 Q2",
+          "value_m": 94
+        },
+        {
+          "period": "2025 Q3",
+          "value_m": 143
+        },
+        {
+          "period": "2025 Q4",
+          "value_m": -21
+        },
+        {
+          "period": "2026 Q1",
+          "value_m": 95
+        },
+        {
+          "period": "2026 Q2",
+          "value_m": 286
+        }
+      ],
+      "current": 286,
+      "unit": "$M",
+      "thresholds": {
+        "green": ">= $550M around Q3 2026 guidance level",
+        "yellow": "$300–550M",
+        "red": "< $300M after Q3 2026"
+      }
+    },
+    {
+      "name": "Quarterly FCF",
+      "history": [
+        {
+          "period": "2024 Q3",
+          "value_m": -235
+        },
+        {
+          "period": "2024 Q4",
+          "value_m": -677
+        },
+        {
+          "period": "2025 Q1",
+          "value_m": -503
+        },
+        {
+          "period": "2025 Q2",
+          "value_m": -67
+        },
+        {
+          "period": "2025 Q3",
+          "value_m": -300
+        },
+        {
+          "period": "2025 Q4",
+          "value_m": -153
+        },
+        {
+          "period": "2026 Q1",
+          "value_m": -477
+        },
+        {
+          "period": "2026 Q2",
+          "value_m": 73
+        }
+      ],
+      "current": 73,
+      "unit": "$M",
+      "thresholds": {
+        "green": ">= $250M in a strong earnings quarter",
+        "yellow": "$0–250M",
+        "red": "< $0M"
+      }
+    },
+    {
+      "name": "Net debt",
+      "history": [
+        {
+          "period": "2023 YE",
+          "value_b": 2.939
+        },
+        {
+          "period": "2024 Q3",
+          "value_b": 3.735
+        },
+        {
+          "period": "2025 YE",
+          "value_b": 7.196
+        },
+        {
+          "period": "2026 Q1",
+          "value_b": 7.718
+        },
+        {
+          "period": "2026 Q2",
+          "value_b": 7.633
+        }
+      ],
+      "current": 7.633,
+      "unit": "$B",
+      "thresholds": {
+        "green": "<= $6.5B by mid-2027",
+        "yellow": "$6.5–7.0B",
+        "red": "> $7.0B into 2H 2027"
+      }
+    },
+    {
+      "name": "Steel ASP",
+      "history": [
+        {
+          "period": "2024 Q3",
+          "value": 1045
+        },
+        {
+          "period": "2024 Q4",
+          "value": 976
+        },
+        {
+          "period": "2025 Q1",
+          "value": 980
+        },
+        {
+          "period": "2025 Q2",
+          "value": 1015
+        },
+        {
+          "period": "2025 Q3",
+          "value": 1032
+        },
+        {
+          "period": "2025 Q4",
+          "value": 993
+        },
+        {
+          "period": "2026 Q1",
+          "value": 1048
+        },
+        {
+          "period": "2026 Q2",
+          "value": 1124
+        }
+      ],
+      "current": 1124,
+      "unit": "$/nt",
+      "thresholds": {
+        "green": ">= $1,100/nt",
+        "yellow": "$1,000–1,100/nt",
+        "red": "< $1,000/nt"
+      }
+    },
+    {
+      "name": "Flat-rolled fixed-price mix",
+      "history": [
+        {
+          "period": "2025",
+          "value": "35–40%"
+        },
+        {
+          "period": "Q2 2026",
+          "value": "40–45%"
+        }
+      ],
+      "current": "40–45%",
+      "unit": "share of flat-rolled shipments",
+      "thresholds": {
+        "green": "계약 reset이 ASP와 auto revenue에 반영",
+        "yellow": "비중 유지하나 pricing 개선 미확인",
+        "red": "renewal loss / price reset 약화"
+      }
+    },
+    {
+      "name": "Direct automotive revenue",
+      "history": [
+        {
+          "period": "2023",
+          "value_b": 7.44
+        },
+        {
+          "period": "2024",
+          "value_b": 5.571
+        },
+        {
+          "period": "2025",
+          "value_b": 5.047
+        },
+        {
+          "period": "Q2 2026",
+          "value_b": 1.461
+        }
+      ],
+      "current": 1.461,
+      "unit": "$B per quarter current",
+      "thresholds": {
+        "green": "industry volume 대비 outgrowth 지속",
+        "yellow": "industry 수준 성장",
+        "red": "market share/qualification loss 신호"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.25,
+      "industry_path": "미국 HRC 가격이 다시 약해지고 자동차 생산·가동률 개선이 지연된다. 캐나다 가격 정상화도 제한적이다.",
+      "revenue_path": [
+        {
+          "year": 2026,
+          "value_b": 20.4
+        },
+        {
+          "year": 2027,
+          "value_b": 19.8
+        }
+      ],
+      "margin_path": [
+        {
+          "year": 2026,
+          "adjusted_ebitda_margin": 0.045
+        },
+        {
+          "year": 2027,
+          "adjusted_ebitda_margin": 0.061
+        }
+      ],
+      "ebitda_2027_b": 1.2,
+      "fcf": [
+        {
+          "year": 2026,
+          "value_b": -0.1
+        },
+        {
+          "year": 2027,
+          "value_b": 0.1
+        }
+      ],
+      "diluted_shares_m": 575,
+      "terminal_net_debt_b": 7.6,
+      "multiple_x": 5.5,
+      "per_share_value": 3.0,
+      "valuation_note": "정상 EV/EBITDA 산식상 잔여가치가 거의 소진될 수 있어 $3는 유동성·asset-option floor를 반영한 stressed equity value."
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "industry_path": "50% Section 232 보호 아래 HRC가 안정되고, 자동차 계약·slab mix·footprint 효과가 2027 정상화 EBITDA로 연결된다.",
+      "revenue_path": [
+        {
+          "year": 2026,
+          "value_b": 21.4
+        },
+        {
+          "year": 2027,
+          "value_b": 22.0
+        }
+      ],
+      "margin_path": [
+        {
+          "year": 2026,
+          "adjusted_ebitda_margin": 0.073
+        },
+        {
+          "year": 2027,
+          "adjusted_ebitda_margin": 0.1
+        }
+      ],
+      "ebitda_2027_b": 2.2,
+      "fcf": [
+        {
+          "year": 2026,
+          "value_b": 0.2
+        },
+        {
+          "year": 2027,
+          "value_b": 1.0
+        }
+      ],
+      "diluted_shares_m": 575,
+      "terminal_net_debt_b": 6.4,
+      "multiple_x": 6.0,
+      "per_share_value": 11.8,
+      "valuation_note": "2027 consensus EBITDA 약 $2.2B와 유사한 중앙 경로. 순부채는 Q2 2026 대비 약 $1.2B 감소 가정."
+    },
+    {
+      "name": "Up",
+      "probability": 0.25,
+      "industry_path": "자동차 fixed-price reset, Stelco 정상화, 낮은 수입, 높은 finishing utilization이 동시에 작동해 2027 EBITDA가 과거 중상단으로 복귀한다.",
+      "revenue_path": [
+        {
+          "year": 2026,
+          "value_b": 21.8
+        },
+        {
+          "year": 2027,
+          "value_b": 23.2
+        }
+      ],
+      "margin_path": [
+        {
+          "year": 2026,
+          "adjusted_ebitda_margin": 0.085
+        },
+        {
+          "year": 2027,
+          "adjusted_ebitda_margin": 0.125
+        }
+      ],
+      "ebitda_2027_b": 2.9,
+      "fcf": [
+        {
+          "year": 2026,
+          "value_b": 0.4
+        },
+        {
+          "year": 2027,
+          "value_b": 1.4
+        }
+      ],
+      "diluted_shares_m": 580,
+      "terminal_net_debt_b": 5.8,
+      "multiple_x": 6.5,
+      "per_share_value": 22.5,
+      "valuation_note": "높은 가격·믹스·가동률과 빠른 deleveraging이 동시에 필요한 실행 성공 경로."
+    }
+  ],
+  "valuation": {
+    "mode": "D — Cyclical / Commodity",
+    "core": 11.8,
+    "execution": null,
+    "ecosystem": 0,
+    "drag": "Net debt / interest burden explicitly embedded in EV bridge",
+    "expected_value": 12.275,
+    "expected_irr": 0.042,
+    "current_price": 11.54,
+    "horizon_years": 1.5,
+    "upside_downside_ratio": 1.28,
+    "hurdle_rate": 0.12,
+    "entry_trigger": 9.5,
+    "entry_expected_irr": 0.1863,
+    "entry_upside_downside_ratio": 2.0
+  },
+  "reverse_expectations": {
+    "current_market_cap_b": 6.584,
+    "current_simple_ev_b": 14.217,
+    "required_ebitda_at_6x_current_net_debt_b": 2.369,
+    "required_ebitda_at_6x_if_net_debt_6_4b_b": 2.164,
+    "public_2027_consensus_ebitda_b": 2.216,
+    "company_mid_2027_leverage_target": "<2.5x debt/EBITDA",
+    "illustrative_gross_debt_at_2_5x_on_2_216b_ebitda_b": 5.54,
+    "interpretation": "현재가는 2027 consensus 수준 EBITDA 회복뿐 아니라 약 $1B+의 deleveraging을 동시에 요구한다. 회사의 <2.5x 목표는 더 큰 현금창출/부채감축을 필요로 한다."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_b": 21.45,
+      "eps": -0.27,
+      "ebitda_b": 1.568
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_b": 22.03,
+      "eps": 0.57,
+      "ebitda_b": 2.216
+    },
+    "fy3": {
+      "year": 2028,
+      "ebitda_b": 2.169,
+      "revenue_b": 22.061,
+      "eps": null,
+      "ceiling": "public full consensus fields limited"
+    },
+    "revision_trend": "가격목표는 2026년 7~8월 혼조. 8/24 Wells Fargo $11→$12, GLJ $15.60, 다수 Hold. Public consensus target 약 $11.8–12.0.",
+    "price_target_avg": 11.9,
+    "price_target_range": [
+      10.0,
+      15.6
+    ],
+    "rating": "Hold",
+    "short_interest": {
+      "settlement": "2026-07-31",
+      "shares_m": 80.26,
+      "float_pct": 14.2
+    }
+  },
+  "stance": {
+    "zone": "관망",
+    "price_bands": {
+      "attractive_entry": "$8.5–9.5",
+      "watch": "$9.5–13",
+      "base_fair_value": "$11.8",
+      "high_execution_value": "$18+",
+      "trigger": "$9.50 이하에서 Bull/Down U/D 약 2.0x"
+    },
+    "horizon": "18 months to 2027 normalized earnings",
+    "reason": "현재가에서는 probability-weighted expected IRR 약 4.2%로 12% hurdle 미달, U/D 약 1.28x."
+  },
+  "catalysts": [
+    {
+      "when": "2026 Q3 earnings (approx. Oct 2026)",
+      "event": "Adjusted EBITDA ~ $575M guidance validation",
+      "sensitivity": "Very high — earnings recovery slope"
+    },
+    {
+      "when": "2026 H2",
+      "event": "Quarterly FCF and debt paydown",
+      "sensitivity": "Very high — equity thesis bottleneck"
+    },
+    {
+      "when": "Late 2026 / 2027 contract cycle",
+      "event": "Automotive fixed-price contract reset",
+      "sensitivity": "High — margin and utilization"
+    },
+    {
+      "when": "2026 H2–2027",
+      "event": "Stelco/Canada pricing normalization",
+      "sensitivity": "High — acquisition credibility"
+    },
+    {
+      "when": "2026–2027",
+      "event": "POSCO MoU / potential transaction or asset actions",
+      "sensitivity": "Medium-high — capital structure / asset value"
+    },
+    {
+      "when": "2026",
+      "event": "Labor agreements at multiple facilities",
+      "sensitivity": "Medium-high — cost / production continuity"
+    },
+    {
+      "when": "2026–2030",
+      "event": "Middletown $1B modernization milestones",
+      "sensitivity": "Long-dated — cost competitiveness, project execution"
+    }
+  ],
+  "falsification_conditions": [
+    "Q3 2026 Adjusted EBITDA materially below ~$500M without a clearly temporary operational cause",
+    "2H 2026 FCF remains weak/negative despite >$500M quarterly EBITDA",
+    "Net debt remains >$7.0B well into 2027",
+    "Auto revenue/shipments underperform North American vehicle production, suggesting contract/share loss",
+    "Stelco remains a material earnings drag after Canadian trade protections mature",
+    "HRC/ASP falls back below ~$1,000/t while utilization remains weak",
+    "Large new buybacks/M&A precede credible deleveraging, repeating 2024–25 capital allocation pattern"
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "3.1"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "1.1–1.5"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "1.2"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1.3 / 3.3"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "3.2 / 4.1"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "3.4"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1.5 / 3.4"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1.4 / 3.5"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.2"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "3.6 / 6.3"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "2.1–2.3"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "2.4 / 4.4"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "4.1–4.3"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "4.4 / 5.2"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "5.1 / 6.1"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "5.2"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "5.3–5.5 / 6.1"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE",
+      "h3_locator": "6.2–6.5 / Appendix"
+    }
+  ],
+  "source_registry": [
+    {
+      "id": "S1",
+      "name": "Cleveland-Cliffs 2025 Form 10-K",
+      "date": "2026-02-09",
+      "url": "https://www.sec.gov/Archives/edgar/data/764065/000076406526000025/clf-20251231.htm",
+      "class": "Primary / SEC"
+    },
+    {
+      "id": "S2",
+      "name": "Cleveland-Cliffs Q2 2026 Form 10-Q",
+      "date": "2026-07-23",
+      "url": "https://www.sec.gov/Archives/edgar/data/764065/000076406526000100/clf-20260630.htm",
+      "class": "Primary / SEC"
+    },
+    {
+      "id": "S3",
+      "name": "Cleveland-Cliffs Q2 2026 Earnings Release",
+      "date": "2026-07-23",
+      "url": "https://www.sec.gov/Archives/edgar/data/764065/000076406526000097/clf-202606308xkex991.htm",
+      "class": "Primary / SEC"
+    },
+    {
+      "id": "S4",
+      "name": "Cleveland-Cliffs Q1 2026 Earnings Release",
+      "date": "2026-04-20",
+      "url": "https://www.sec.gov/Archives/edgar/data/764065/000076406526000067/clf-202603318xkex991.htm",
+      "class": "Primary / SEC"
+    },
+    {
+      "id": "S5",
+      "name": "Cleveland-Cliffs Q4/FY2025 Earnings Release",
+      "date": "2026-02-09",
+      "url": "https://www.sec.gov/Archives/edgar/data/764065/000076406526000022/ex991q420258-k.htm",
+      "class": "Primary / SEC"
+    },
+    {
+      "id": "S6",
+      "name": "Cleveland-Cliffs Q3 2025 Earnings Release",
+      "date": "2025-10-20",
+      "url": "https://www.sec.gov/Archives/edgar/data/764065/000076406525000146/clf-202509308xkex991.htm",
+      "class": "Primary / SEC"
+    },
+    {
+      "id": "S7",
+      "name": "Cleveland-Cliffs Q2 2025 Earnings Release",
+      "date": "2025-07-21",
+      "url": "https://www.sec.gov/Archives/edgar/data/764065/000076406525000121/clf-202506308xkex991.htm",
+      "class": "Primary / SEC"
+    },
+    {
+      "id": "S8",
+      "name": "Cleveland-Cliffs Q1 2025 Earnings Release",
+      "date": "2025-05-07",
+      "url": "https://www.sec.gov/Archives/edgar/data/764065/000076406525000100/clf-202503318xkex991.htm",
+      "class": "Primary / SEC"
+    },
+    {
+      "id": "S9",
+      "name": "Cleveland-Cliffs Q4/FY2024 Earnings Release",
+      "date": "2025-02-24",
+      "url": "https://www.sec.gov/Archives/edgar/data/764065/000076406525000055/ex991q420248-k.htm",
+      "class": "Primary / SEC"
+    },
+    {
+      "id": "S10",
+      "name": "Cleveland-Cliffs Q3 2024 Earnings Release",
+      "date": "2024-11-04",
+      "url": "https://www.sec.gov/Archives/edgar/data/764065/000076406524000202/clf-20249308xkex991.htm",
+      "class": "Primary / SEC"
+    },
+    {
+      "id": "S11",
+      "name": "Cleveland-Cliffs 2026 Proxy Statement",
+      "date": "2026-04-02",
+      "url": "https://www.sec.gov/Archives/edgar/data/764065/000076406526000054/clf-20260402.htm",
+      "class": "Primary / SEC"
+    },
+    {
+      "id": "S12",
+      "name": "Cleveland-Cliffs Officer/Director Appointment 8-K",
+      "date": "2026-07-24",
+      "url": "https://www.sec.gov/Archives/edgar/data/764065/000076406526000102/0000764065-26-000102-index.htm",
+      "class": "Primary / SEC"
+    },
+    {
+      "id": "S13",
+      "name": "U.S. DOE — $500M Middletown Award",
+      "date": "2026-08-21",
+      "url": "https://www.energy.gov/articles/energy-department-announces-500-million-award-revitalize-american-steelmaking",
+      "class": "Primary / Government"
+    },
+    {
+      "id": "S14",
+      "name": "Cleveland-Cliffs — $1B Middletown Works Investment",
+      "date": "2026-08-21",
+      "url": "https://www.clevelandcliffs.com/news/news-releases/detail/702/cleveland-cliffs-announces-1-billion-middletown-works",
+      "class": "Primary / Company"
+    },
+    {
+      "id": "S15",
+      "name": "Federal Register — Section 232 steel tariff increase to 50%",
+      "date": "2025-06-09",
+      "url": "https://www.federalregister.gov/documents/full_text/html/2025/06/09/2025-10524.html",
+      "class": "Primary / Government"
+    },
+    {
+      "id": "S16",
+      "name": "Government of Canada — Steel and aluminum tariffs",
+      "date": "2026-06-19",
+      "url": "https://www.canada.ca/en/department-finance/programs/international-trade-finance-policy/canadas-tariff-responses/canadas-tariffs-steel-aluminum.html",
+      "class": "Primary / Government"
+    },
+    {
+      "id": "S17",
+      "name": "Government of Canada — extension of steel/aluminum tariff measures",
+      "date": "2026-06-03",
+      "url": "https://www.canada.ca/en/department-finance/news/2026/06/canada-to-extend-steel-and-aluminum-tariff-measures-to-support-workers-and-businesses.html",
+      "class": "Primary / Government"
+    },
+    {
+      "id": "S18",
+      "name": "StockAnalysis CLF analyst forecast (S&P Global / TipRanks data)",
+      "date": "2026-08-24",
+      "url": "https://stockanalysis.com/stocks/clf/forecast/",
+      "class": "Secondary / Consensus"
+    },
+    {
+      "id": "S19",
+      "name": "MarketScreener CLF consensus financial forecasts",
+      "date": "2026-08-24",
+      "url": "https://www.marketscreener.com/quote/stock/CLEVELAND-CLIFFS-INC-37488524/finances/",
+      "class": "Secondary / Consensus"
+    },
+    {
+      "id": "S20",
+      "name": "MarketBeat CLF analyst price targets",
+      "date": "2026-08-24",
+      "url": "https://www.marketbeat.com/stocks/NYSE/CLF/forecast/",
+      "class": "Secondary / Consensus"
+    },
+    {
+      "id": "S21",
+      "name": "MarketBeat CLF short interest",
+      "date": "2026-08-24",
+      "url": "https://www.marketbeat.com/stocks/NYSE/CLF/short-interest/",
+      "class": "Secondary / Positioning"
+    }
+  ],
+  "audits": {
+    "H1_H2_RESEARCH_CONTRACT_COMPLETENESS": "PASS",
+    "H2_H3_COVERAGE_LINEAGE": "PASS",
+    "LATEST_FILING_CHECK": "PASS",
+    "RC_H3_COVERAGE_RATE": "100%",
+    "RC_UNRESOLVED": 0,
+    "MODE_ROUTER_AUDIT": "PASS",
+    "STANCE_CONSISTENCY_AUDIT": "PASS",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "REPORT_DATA_PACK": "EMITTED",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "PDF": "OMITTED_BY_USER_EXPLICIT_OVERRIDE",
+    "INDUSTRY_BLOCKS_TOTAL": 5,
+    "INDUSTRY_BLOCKS_LANDED": 5,
+    "EVIDENCE_BOUNDARY_STATED": 3,
+    "EXPLANATORY_SPACE_ALLOCATION": "PASS",
+    "CH1_CH3_TO_CH5_LENGTH_RATIO": 2.71,
+    "CONTENT_MEANING_LOCK_PRESERVED": "PASS",
+    "PUBLISHED_TOP_LEVEL_SCHEMA_MATCH": "PASS",
+    "EXPLANATORY_DEPTH_PRESERVED": "PASS",
+    "HTML_SIDEBAR": "PASS",
+    "SEARCHABLE_TEXT": "PASS",
+    "KOREAN_READABILITY": "PASS",
+    "SMART_CHAPTER_TRANSITIONS": "PASS",
+    "DENSITY_CONTROL": "PASS",
+    "VISUAL_SUBSTITUTION": "PASS",
+    "VISUAL_GRAMMAR_VARIETY": "PASS",
+    "CHART_READABILITY": "PASS",
+    "TABLE_QUALITY": "PASS",
+    "SEMANTIC_GOLDEN_QA": "PASS",
+    "VISUAL_GOLDEN_QA": "PASS",
+    "GOLDEN_PARITY": "PASS",
+    "DECISION_VISUALS_TOTAL": 8,
+    "DECISION_VISUALS_PARITY_PASS": 8,
+    "STALE_VISUAL_ASSETS": 0,
+    "FIGURE_NUMERICAL_PARITY": "PASS",
+    "VISUAL_DATA_LINEAGE": "PASS",
+    "VISUAL_SEMANTIC_PARITY": "PASS",
+    "RENDERED_VISUAL_PARITY_QA": "PASS",
+    "PDF_BOOKMARKS": "N/A_USER_WAIVED_PDF",
+    "CORE_LANDSCAPE_PAGES": "N/A_USER_WAIVED_PDF",
+    "PRINTED_TOC": "N/A_USER_WAIVED_PDF",
+    "TOC_CLICKABLE": "N/A_USER_WAIVED_PDF",
+    "ARGUMENT_BLOCK_PAGINATION": "N/A_USER_WAIVED_PDF",
+    "ACCIDENTAL_SPARSE_PAGES": "N/A_USER_WAIVED_PDF",
+    "CONTACT_SHEET_COMPOSITION_QA": "N/A_USER_WAIVED_PDF",
+    "PUBLISHING_ACCEPTANCE": "PASS"
+  },
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "3Y financial table",
+      "authoritative_source_block": "financials.annual_3y",
+      "source_hash": "5eb2f7bc92c7b88f",
+      "narrative_locator": "4.1",
+      "table_locator": "HTML #s4 annual table",
+      "rendered_asset_locator": "HTML #s4",
+      "displayed_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "8Q Adjusted EBITDA chart",
+      "authoritative_source_block": "financials.quarterly_8q.adjusted_ebitda_m",
+      "source_hash": "ea43265bc89a0424",
+      "narrative_locator": "4.2",
+      "table_locator": "HTML #s4 8Q table",
+      "rendered_asset_locator": "HTML #s4 chart 1",
+      "displayed_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "8Q FCF chart",
+      "authoritative_source_block": "financials.quarterly_8q.fcf_m",
+      "source_hash": "0d57af1940bbfa9e",
+      "narrative_locator": "4.2–4.3",
+      "table_locator": "HTML #s4 8Q table",
+      "rendered_asset_locator": "HTML #s4 chart 2",
+      "displayed_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "8Q Steel ASP chart",
+      "authoritative_source_block": "financials.quarterly_8q.asp_per_nt",
+      "source_hash": "4f565dac05595c97",
+      "narrative_locator": "4.2",
+      "table_locator": "HTML #s4 8Q table",
+      "rendered_asset_locator": "HTML #s4 chart 3",
+      "displayed_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-005",
+      "figure_title": "Scenario valuation table",
+      "authoritative_source_block": "scenarios",
+      "source_hash": "1032f36155a632eb",
+      "narrative_locator": "5.1",
+      "table_locator": "HTML #s5 scenario table",
+      "rendered_asset_locator": "HTML #s5",
+      "displayed_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-006",
+      "figure_title": "Reverse expectations callout",
+      "authoritative_source_block": "reverse_expectations",
+      "source_hash": "26d1733b9b66d549",
+      "narrative_locator": "5.2",
+      "table_locator": null,
+      "rendered_asset_locator": "HTML #s5 reverse panels",
+      "displayed_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-007",
+      "figure_title": "Stance price bands",
+      "authoritative_source_block": "stance.price_bands + valuation",
+      "source_hash": "045ff7b8e1b78a82",
+      "narrative_locator": "5.3 / 6",
+      "table_locator": null,
+      "rendered_asset_locator": "HTML #s5 price bands",
+      "displayed_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-008",
+      "figure_title": "KPI signal cards",
+      "authoritative_source_block": "kpis",
+      "source_hash": "36180c46e5d2621b",
+      "narrative_locator": "6",
+      "table_locator": null,
+      "rendered_asset_locator": "HTML #s6 KPI cards",
+      "displayed_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "status": "PASS"
+    }
+  ]
+}

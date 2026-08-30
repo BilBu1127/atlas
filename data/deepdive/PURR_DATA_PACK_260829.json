@@ -1,0 +1,804 @@
+{
+  "meta": {
+    "ticker": "PURR",
+    "company": "Hyperliquid Strategies Inc.",
+    "cik": "0002078856",
+    "report_date": "2026-08-29",
+    "timezone": "Asia/Seoul",
+    "price_as_of": "2026-08-28 close",
+    "stock_price": 11.61,
+    "hype_price_source": "CoinLore normalized daily close",
+    "hype_price_as_of": "2026-08-28",
+    "hype_price": 80.9,
+    "valuation_mode": "Mode F - Asset/NAV",
+    "currency": "USD",
+    "units_note": "financial balance-sheet amounts in USD millions unless stated",
+    "latest_filing_check": {
+      "status": "PASS",
+      "latest_core_filing_date": "2026-08-27",
+      "forms": [
+        "10-K",
+        "8-K"
+      ],
+      "note": "No later issuer core filing identified in Aug-28/Aug-29 checks; insider/ownership filings are not substitutes for core financial updates."
+    },
+    "timepoint_audit": "Formal current NAV uses Aug-19 HYPE/cash/share disclosures re-priced to Aug-28 market prices; Aug-23 10-K common-share count is treated as a subsequent denominator datapoint only because matching Aug-23 HYPE/cash balances are not disclosed."
+  },
+  "financials": {
+    "fy2026": {
+      "period_end": "2026-06-30",
+      "total_assets": 2060.008,
+      "cash_and_cash_like": 149.9,
+      "hype_tokens_m": 29.275,
+      "hype_fair_value": 1904.1,
+      "total_liabilities": 187.137,
+      "deferred_tax_liability": 183.475,
+      "stockholders_equity": 1872.871,
+      "debt": 0,
+      "staking_and_validator_income": 9.5,
+      "delegated_staking_income": 9.41,
+      "interest_income": 2.7,
+      "sga_and_rd": 14.0,
+      "net_income": 305.5,
+      "hype_unrealized_gain": 709.9,
+      "contributed_hype_loss": 169.2,
+      "iprd_writeoff": 35.6,
+      "deferred_tax_expense": 183.5
+    },
+    "quarter_history": [
+      {
+        "period": "2025-12-31",
+        "hype_tokens_m": 12.858,
+        "hype_fair_value": 327.6,
+        "cash": null,
+        "staking_income_cumulative": 0.5,
+        "net_income_cumulative": -317.9
+      },
+      {
+        "period": "2026-03-31",
+        "hype_tokens_m": 18.831,
+        "hype_fair_value": 689.2,
+        "cash": 113.1,
+        "staking_income_cumulative": 3.1,
+        "net_income_cumulative": -165.4
+      },
+      {
+        "period": "2026-06-30",
+        "hype_tokens_m": 29.275,
+        "hype_fair_value": 1904.1,
+        "cash": 149.9,
+        "staking_income_cumulative": 9.5,
+        "net_income_cumulative": 305.5
+      }
+    ],
+    "history_ceiling": "Current treasury strategy began Dec-2-2025; a 3-year / 8-quarter economically comparable history does not exist. Pre-combination legacy biotech results are not used as treasury operating history."
+  },
+  "kpis": {
+    "token_bridge": [
+      {
+        "date": "Completion",
+        "hype_tokens_m": 12.518,
+        "fully_diluted_shares_m": 153.6413,
+        "hype_per_fd_share": 0.08147548868696113
+      },
+      {
+        "date": "2025-12-31",
+        "hype_tokens_m": 12.858,
+        "fully_diluted_shares_m": 150.680695,
+        "hype_per_fd_share": 0.08533276276698884
+      },
+      {
+        "date": "2026-03-31",
+        "hype_tokens_m": 18.831,
+        "fully_diluted_shares_m": 150.807755,
+        "hype_per_fd_share": 0.12486758389845404
+      },
+      {
+        "date": "2026-06-30",
+        "hype_tokens_m": 29.275,
+        "fully_diluted_shares_m": 227.417261,
+        "hype_per_fd_share": 0.12872813554816315
+      },
+      {
+        "date": "2026-08-19 disclosed",
+        "hype_tokens_m": 29.365,
+        "fully_diluted_shares_m": 227.883374,
+        "hype_per_fd_share": 0.12885977368405999
+      },
+      {
+        "date": "2026-08-19 dynamic @ $11.61",
+        "hype_tokens_m": 29.365,
+        "fully_diluted_shares_m": 229.7841577200689,
+        "hype_per_fd_share": 0.12779384049518971
+      }
+    ],
+    "capital_allocation": {
+      "equity_facility_raised_to_aug19": 646.6,
+      "avg_issue_price": 8.7,
+      "presentation_avg_net_issue_price": 8.5,
+      "presentation_avg_net_issue_mnav": 1.15,
+      "hype_purchased_m": 16.538,
+      "hype_purchase_cost": 773.4,
+      "avg_hype_purchase_price": 46.77,
+      "share_buybacks_m": 5.8,
+      "buyback_cost": 27.8,
+      "avg_buyback_price": 4.8,
+      "cash_aug19": 132.6,
+      "debt": 0
+    },
+    "protocol_revenue_quarterly": [
+      {
+        "quarter": "Q4 2024",
+        "gross_protocol_revenue": 11.12
+      },
+      {
+        "quarter": "Q1 2025",
+        "gross_protocol_revenue": 139.68
+      },
+      {
+        "quarter": "Q2 2025",
+        "gross_protocol_revenue": 180.35
+      },
+      {
+        "quarter": "Q3 2025",
+        "gross_protocol_revenue": 356.66
+      },
+      {
+        "quarter": "Q4 2025",
+        "gross_protocol_revenue": 294.98
+      },
+      {
+        "quarter": "Q1 2026",
+        "gross_protocol_revenue": 217.47
+      },
+      {
+        "quarter": "Q2 2026",
+        "gross_protocol_revenue": 201.83
+      }
+    ],
+    "short_interest": {
+      "date": "2026-08-14/25 vendor timing",
+      "shares_m": 23.94,
+      "note": "Vendor denominators vary; used as positioning, not capitalization truth."
+    }
+  },
+  "capital_structure": {
+    "aug19_basic_shares_m": 200.769691,
+    "preferred_as_converted_m": 26.587647,
+    "company_disclosed_fd_m": 227.883374,
+    "dynamic_fd_at_stock_price_m": 229.7841577200689,
+    "dynamic_warrant_dilution_m": {
+      "bridge_pipe_6_25": 0.5712407304048235,
+      "advisor_9_375": 1.7578919896640826,
+      "rsu_proxy": 0.097687
+    },
+    "advisor_warrants_total_m": 27.3948,
+    "advisor_waiver": "Future-financing equity-grant right waived, but waiver is revocable for future financings per S-1/A.",
+    "aug23_10k_basic_shares_m": 197.837597,
+    "timepoint_ceiling": "Aug-23 common share count lacks same-date HYPE/cash disclosure; not mixed into formal Aug-19 NAV calculation."
+  },
+  "scenarios": {
+    "Bear": {
+      "hype_price": 45,
+      "hype_per_share": 0.12,
+      "cash_per_share": 0.45,
+      "mnav": 0.85,
+      "ecosystem_per_share": 0,
+      "dtl_per_share": 0.1825565649302232,
+      "tax_adjusted_nav_per_share": 5.651340875466792,
+      "price": 4.803639744146773
+    },
+    "Base": {
+      "hype_price": 90,
+      "hype_per_share": 0.135,
+      "cash_per_share": 0.55,
+      "mnav": 1.05,
+      "ecosystem_per_share": 0,
+      "dtl_per_share": 1.6000565649302234,
+      "tax_adjusted_nav_per_share": 11.083840875466793,
+      "price": 11.638032919240134
+    },
+    "Bull": {
+      "hype_price": 130,
+      "hype_per_share": 0.15,
+      "cash_per_share": 0.6,
+      "mnav": 1.25,
+      "ecosystem_per_share": 0.2,
+      "dtl_per_share": 3.1435565649302233,
+      "tax_adjusted_nav_per_share": 16.940340875466795,
+      "price": 21.375426094333495
+    }
+  },
+  "visual_lineage": [
+    {
+      "visual_id": "VIS-001",
+      "title": "FD HYPE/share history",
+      "data_paths": [
+        "kpis.token_bridge[*].date",
+        "kpis.token_bridge[*].hype_per_fd_share"
+      ],
+      "source_ids": [
+        "S1"
+      ],
+      "report_locator": "0.3"
+    },
+    {
+      "visual_id": "VIS-002",
+      "title": "Hyperliquid quarterly gross protocol revenue",
+      "data_paths": [
+        "kpis.protocol_revenue_quarterly[*].quarter",
+        "kpis.protocol_revenue_quarterly[*].gross_protocol_revenue"
+      ],
+      "source_ids": [
+        "S8",
+        "S7"
+      ],
+      "report_locator": "1.2"
+    },
+    {
+      "visual_id": "VIS-003",
+      "title": "12-month scenario valuation",
+      "data_paths": [
+        "scenarios",
+        "meta.stock_price"
+      ],
+      "source_ids": [
+        "S1",
+        "S14",
+        "S15"
+      ],
+      "report_locator": "5.3"
+    },
+    {
+      "visual_id": "VIS-004",
+      "title": "HYPE x mNAV sensitivity table",
+      "data_paths": [
+        "valuation.sensitivity"
+      ],
+      "source_ids": [
+        "S1",
+        "S14",
+        "S15"
+      ],
+      "report_locator": "5.5"
+    }
+  ],
+  "valuation": {
+    "current": {
+      "hype_holdings_m": 29.365,
+      "hype_value_m": 2375.6285000000003,
+      "cash_m": 132.6,
+      "dynamic_fd_m": 229.7841577200689,
+      "gross_nav_m": 2508.2285,
+      "gross_nav_per_share": 10.91558497716632,
+      "gross_mnav": 1.0636168399848736,
+      "estimated_current_dtl_m": 280.97831499999995,
+      "tax_adjusted_nav_m": 2223.5881850000005,
+      "tax_adjusted_nav_per_share": 9.676855911489136,
+      "tax_adjusted_mnav": 1.1997698535756516,
+      "dtl_method": "FY2026 reported DTL plus 21% of HYPE fair-value increase from Jun-30 $65.04 to Aug-28 $80.90 on Jun-30 token count; approximation, not issuer-published current DTL."
+    },
+    "scenario_probabilities": {
+      "Bear": 0.3,
+      "Base": 0.5,
+      "Bull": 0.2
+    },
+    "scenarios": {
+      "Bear": {
+        "hype_price": 45,
+        "hype_per_share": 0.12,
+        "cash_per_share": 0.45,
+        "mnav": 0.85,
+        "ecosystem_per_share": 0,
+        "dtl_per_share": 0.1825565649302232,
+        "tax_adjusted_nav_per_share": 5.651340875466792,
+        "price": 4.803639744146773
+      },
+      "Base": {
+        "hype_price": 90,
+        "hype_per_share": 0.135,
+        "cash_per_share": 0.55,
+        "mnav": 1.05,
+        "ecosystem_per_share": 0,
+        "dtl_per_share": 1.6000565649302234,
+        "tax_adjusted_nav_per_share": 11.083840875466793,
+        "price": 11.638032919240134
+      },
+      "Bull": {
+        "hype_price": 130,
+        "hype_per_share": 0.15,
+        "cash_per_share": 0.6,
+        "mnav": 1.25,
+        "ecosystem_per_share": 0.2,
+        "dtl_per_share": 3.1435565649302233,
+        "tax_adjusted_nav_per_share": 16.940340875466795,
+        "price": 21.375426094333495
+      }
+    },
+    "probability_weighted_price": 11.535193601730798,
+    "expected_return": -0.006443272891404117,
+    "up_down_ratio": 1.4347501053790943,
+    "sensitivity": [
+      {
+        "hype_price": 50,
+        "mnav_0.85": 5.576221727712419,
+        "mnav_1.00": 6.560260856132257,
+        "mnav_1.15": 7.544299984552095,
+        "mnav_1.30": 8.528339112971935
+      },
+      {
+        "hype_price": 70,
+        "mnav_0.85": 7.292493005562816,
+        "mnav_1.00": 8.579403535956255,
+        "mnav_1.15": 9.866314066349693,
+        "mnav_1.30": 11.153224596743131
+      },
+      {
+        "hype_price": 90,
+        "mnav_0.85": 9.008764283413214,
+        "mnav_1.00": 10.598546215780251,
+        "mnav_1.15": 12.188328148147288,
+        "mnav_1.30": 13.778110080514328
+      },
+      {
+        "hype_price": 110,
+        "mnav_0.85": 10.725035561263612,
+        "mnav_1.00": 12.61768889560425,
+        "mnav_1.15": 14.510342229944886,
+        "mnav_1.30": 16.402995564285526
+      },
+      {
+        "hype_price": 130,
+        "mnav_0.85": 12.441306839114011,
+        "mnav_1.00": 14.636831575428248,
+        "mnav_1.15": 16.832356311742483,
+        "mnav_1.30": 19.027881048056724
+      }
+    ],
+    "price_bands": [
+      {
+        "band": "<= $10",
+        "stance": "매수 관심 구간",
+        "logic": "Probability-weighted 12m return exceeds roughly 15% at $10, subject to thesis intact."
+      },
+      {
+        "band": "$10-$12",
+        "stance": "관망 / 조건부",
+        "logic": "Base value is close to spot; requires continued FD HYPE/share accretion."
+      },
+      {
+        "band": "$12-$14",
+        "stance": "증거 요구 구간",
+        "logic": "Needs higher HYPE, sustained premium, or faster per-share accretion."
+      },
+      {
+        "band": "> $14",
+        "stance": "추격 회피",
+        "logic": "Bull evidence must arrive before price, not after."
+      }
+    ]
+  },
+  "reverse_expectations": {
+    "rows": [
+      {
+        "mnav": 1.0,
+        "required_hype_price": 100.01864597610222,
+        "required_hype_per_share": 0.15799464635865088,
+        "required_hps_growth": 0.23632442492091754
+      },
+      {
+        "mnav": 1.05,
+        "required_hype_price": 94.54248871013493,
+        "required_hype_per_share": 0.14934422400792655,
+        "required_hps_growth": 0.16863397663949242
+      },
+      {
+        "mnav": 1.1,
+        "required_hype_price": 89.56416392289192,
+        "required_hype_per_share": 0.1414802036890862,
+        "required_hps_growth": 0.10709720547456003
+      },
+      {
+        "mnav": 1.2,
+        "required_hype_price": 80.85209554521671,
+        "required_hype_per_share": 0.12771816813111572,
+        "required_hps_growth": -0.0005921440640704878
+      }
+    ],
+    "interpretation": "At current $11.61, the stock is roughly consistent with a ~1.20x tax-adjusted NAV premium at HYPE $80.90, or HYPE around $94.5 at 1.05x mNAV, or ~16.9% additional FD HYPE/share accretion at current HYPE and 1.05x mNAV."
+  },
+  "consensus": {
+    "analysts": 3,
+    "rating": "Buy / Strong Buy depending vendor",
+    "average_target": 13.05,
+    "chardan_target": 17.0,
+    "cantor_target": 22.6,
+    "our_base": 11.638032919240134,
+    "our_probability_weighted": 11.535193601730798,
+    "ceiling": "Coverage is thin and vendor averages differ; analyst targets are positioning evidence, not a fundamental anchor."
+  },
+  "stance": {
+    "current": "관망 / 신규 추격매수 회피",
+    "why": "Probability-weighted 12-month value is approximately current price, while downside remains strongly HYPE-sensitive. The stock becomes more attractive at <=$10 if HYPE/share and capital-allocation discipline remain intact.",
+    "hurdle": "At least ~15% probability-weighted 12-month return for new position consideration."
+  },
+  "catalysts": [
+    {
+      "window": "2026-11 (expected)",
+      "event": "FY27 Q1 / Sep-30 quarter",
+      "bull": "FD HYPE/share rises; issuance remains >1.15x tax-adjusted NAV; validator economics improve",
+      "bear": "HYPE/share stalls/falls or issuance occurs near/below NAV",
+      "sensitivity": "H"
+    },
+    {
+      "window": "2027-02 (expected)",
+      "event": "FY27 Q2 / Dec-31 quarter",
+      "bull": "protocol revenue and treasury accretion remain resilient through volatility",
+      "bear": "mNAV compression removes accretive financing engine",
+      "sensitivity": "H"
+    },
+    {
+      "window": "2027-05 (expected)",
+      "event": "FY27 Q3 / Mar-31 quarter",
+      "bull": "repeatable per-share compounding becomes visible",
+      "bear": "corporate drag/tax/compensation absorbs staking and issuance gains",
+      "sensitivity": "M-H"
+    },
+    {
+      "window": "2027-08 (expected)",
+      "event": "FY27 10-K",
+      "bull": "12-month capital-allocation track record validates framework",
+      "bear": "per-share value creation fails despite higher gross HYPE holdings",
+      "sensitivity": "H"
+    },
+    {
+      "window": "Any time",
+      "event": "Formal U.S. regulatory pathway for Hyperliquid",
+      "bull": "actual filing/approval or legally actionable pathway",
+      "bear": "enforcement/access restriction or no pathway despite expectations",
+      "sensitivity": "H"
+    },
+    {
+      "window": "Any time",
+      "event": "Advisor waiver / financing terms",
+      "bull": "waiver remains and financing stays NAV-accretive",
+      "bear": "waiver revoked or related-party economics expand",
+      "sensitivity": "H"
+    },
+    {
+      "window": "Q4 2026-H1 2027",
+      "event": "USDC aligned quote-asset economics",
+      "bull": "on-chain/issuer evidence of material incremental economics",
+      "bear": "optional revenue fails to materialize",
+      "sensitivity": "M"
+    }
+  ],
+  "tripwires": [
+    {
+      "kpi": "FD HYPE/share",
+      "current": 0.1278,
+      "green": ">0.132 and rising QoQ",
+      "yellow": "0.124-0.132",
+      "red": "<0.124 or two sequential declines",
+      "frequency": "each disclosure",
+      "source": "issuer token/share bridge"
+    },
+    {
+      "kpi": "Equity issuance mNAV",
+      "current": "FY avg 1.15x",
+      "green": ">1.15x",
+      "yellow": "1.05-1.15x",
+      "red": "<1.05x / below tax-adjusted NAV",
+      "frequency": "each financing update",
+      "source": "issuer financing disclosure"
+    },
+    {
+      "kpi": "Hyperliquid quarterly gross protocol revenue",
+      "current": "Q2 2026 $201.8m",
+      "green": ">=$200m",
+      "yellow": "$150-200m",
+      "red": "<$150m for two completed quarters",
+      "frequency": "quarterly",
+      "source": "DeFiLlama + protocol checks"
+    },
+    {
+      "kpi": "Tax-adjusted mNAV",
+      "current": "1.20x",
+      "green": ">=1.15x while issuing",
+      "yellow": "0.95-1.15x",
+      "red": "<0.95x + continued issuance",
+      "frequency": "weekly / financing dates",
+      "source": "market prices + issuer balances"
+    },
+    {
+      "kpi": "Liquidity / leverage",
+      "current": "$132.6m cash; no debt",
+      "green": ">$75m and no debt",
+      "yellow": "$30-75m",
+      "red": "<$30m or debt-funded HYPE accumulation",
+      "frequency": "quarterly",
+      "source": "10-Q/10-K"
+    },
+    {
+      "kpi": "Advisor waiver",
+      "current": "waived, revocable",
+      "green": "waiver remains",
+      "yellow": "ambiguous amendment",
+      "red": "waiver revoked / new economics",
+      "frequency": "filing event",
+      "source": "S-1/A / 8-K"
+    },
+    {
+      "kpi": "Validator execution",
+      "current": "top-tier validator; economics not separately disclosed",
+      "green": "top-5 + rising third-party delegation / no slashing",
+      "yellow": "rank or commission weakens",
+      "red": "slashing, custody loss, prolonged outage",
+      "frequency": "ongoing",
+      "source": "issuer + on-chain"
+    },
+    {
+      "kpi": "Regulatory pathway",
+      "current": "no relevant application/approval disclosed",
+      "green": "formal pathway / approval",
+      "yellow": "political remarks only",
+      "red": "enforcement / access restriction",
+      "frequency": "event-driven",
+      "source": "CFTC/SEC/issuer"
+    }
+  ],
+  "falsification": [
+    "Capital-allocation thesis is falsified if FD HYPE/share declines for two consecutive issuer disclosures, or if equity is issued below tax-adjusted NAV without a compelling liquidity reason.",
+    "Protocol thesis is falsified if completed-quarter gross protocol revenue falls below $150m for two quarters while open-interest share also falls materially toward/below 40%.",
+    "Premium thesis is falsified if tax-adjusted mNAV remains below 0.95x while the company continues issuing equity.",
+    "Governance thesis is falsified if the Advisor revokes its waiver or related-party economics expand materially without commensurate per-share value creation.",
+    "U.S. regulatory optionality is not counted as value until a formal filing, approval, exemptive action, or legally actionable pathway exists."
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "promise": "Hyperliquid B1-B5",
+      "h2_status": "COMPLETE",
+      "h3_locator": "1.1-1.5",
+      "appendix": "A.2"
+    },
+    {
+      "rc_id": "RC-002",
+      "promise": "fee -> Assistance Fund / emissions / staking",
+      "h2_status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1.3, 3.2",
+      "appendix": "A.3 exact net-supply ceiling"
+    },
+    {
+      "rc_id": "RC-003",
+      "promise": "HYPE holdings + basic/FD denominator bridge",
+      "h2_status": "COMPLETE",
+      "h3_locator": "4.2, 5.2",
+      "appendix": "A.5"
+    },
+    {
+      "rc_id": "RC-004",
+      "promise": "equity facility, preferred, warrants, RSUs, buyback",
+      "h2_status": "COMPLETE",
+      "h3_locator": "2.3, 4.3, 5.2",
+      "appendix": "A.5"
+    },
+    {
+      "rc_id": "RC-005",
+      "promise": "tranche issuance/buyback accretion",
+      "h2_status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "4.3, 5.2",
+      "appendix": "A.6 lot matching ceiling"
+    },
+    {
+      "rc_id": "RC-006",
+      "promise": "staking + validator economics",
+      "h2_status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.2, 4.1",
+      "appendix": "A.7 validator-only economics ceiling"
+    },
+    {
+      "rc_id": "RC-007",
+      "promise": "management measurable track record",
+      "h2_status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "2.1-2.4",
+      "appendix": "A.8"
+    },
+    {
+      "rc_id": "RC-008",
+      "promise": "FY2026 + quarters + accounting quality",
+      "h2_status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "4.1-4.5",
+      "appendix": "A.9 3Y/8Q ceiling"
+    },
+    {
+      "rc_id": "RC-009",
+      "promise": "direct HYPE / DAT / ETP competition",
+      "h2_status": "COMPLETE",
+      "h3_locator": "3.4",
+      "appendix": "A.10"
+    },
+    {
+      "rc_id": "RC-010",
+      "promise": "custody/staking/regulatory evidence",
+      "h2_status": "COMPLETE",
+      "h3_locator": "1.5, 3.5, 6.2",
+      "appendix": "A.11"
+    },
+    {
+      "rc_id": "RC-011",
+      "promise": "consensus / mNAV history / ownership / short",
+      "h2_status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "0.4, 5.6, 6.3",
+      "appendix": "A.12"
+    },
+    {
+      "rc_id": "RC-012",
+      "promise": "Bear/Base/Bull NAV + reverse expectations",
+      "h2_status": "COMPLETE",
+      "h3_locator": "5.3-5.5",
+      "appendix": "A.13"
+    },
+    {
+      "rc_id": "RC-013",
+      "promise": "KPI tripwire / catalysts / falsification",
+      "h2_status": "COMPLETE",
+      "h3_locator": "6.4-6.6",
+      "appendix": "A.14"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "FY2026 earnings 8-K / investor presentation mirror",
+      "type": "Primary filing mirror",
+      "date": "2026-08-27",
+      "url": "https://www.stocktitan.net/sec-filings/PURR/8-k-hyperliquid-strategies-inc-reports-material-event-892c80d5f3d8.html",
+      "use": "FY2026 financials, HYPE/token bridge, share-count bridge, treasury framework, regulatory disclaimer"
+    },
+    {
+      "id": "S2",
+      "title": "Hyperliquid Strategies FY2026 10-K",
+      "type": "Primary filing mirror / SEC-origin filing",
+      "date": "2026-08-27",
+      "url": "https://financialfilings.com/filings/hyperliquid-strategies-inc/annual-report/2026/57796754/",
+      "use": "audited balance sheet, income statement, staking accounting, Aug-23 common share count, risk factors"
+    },
+    {
+      "id": "S3",
+      "title": "Quarter ended Dec. 31, 2025 earnings exhibit",
+      "type": "SEC primary",
+      "date": "2026-02",
+      "url": "https://www.sec.gov/Archives/edgar/data/2078856/000119312526045553/purr-ex99_1.htm",
+      "use": "first treasury-era quarter financials and HYPE position"
+    },
+    {
+      "id": "S4",
+      "title": "Quarter ended Mar. 31, 2026 earnings exhibit",
+      "type": "SEC primary",
+      "date": "2026-05",
+      "url": "https://www.sec.gov/Archives/edgar/data/2078856/000119312526212109/purr-ex99_1.htm",
+      "use": "treasury-era quarterly bridge and staking income"
+    },
+    {
+      "id": "S5",
+      "title": "Hyperliquid Trading Fees documentation",
+      "type": "Protocol primary",
+      "date": "current",
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees",
+      "use": "fee routing, Assistance Fund, HYPE removal mechanism, deployer fee share"
+    },
+    {
+      "id": "S6",
+      "title": "Hyperliquid Staking documentation",
+      "type": "Protocol primary",
+      "date": "current",
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/staking",
+      "use": "delegated PoS, reward/emission mechanics, lock/unstake mechanics"
+    },
+    {
+      "id": "S7",
+      "title": "21Shares: Hyperliquid fees & revenue H1 2026",
+      "type": "Industry secondary",
+      "date": "2026-08-20",
+      "url": "https://www.21shares.com/de-ch/insights/hyperliquid-fees-revenue-h1-2026",
+      "use": "H1 fees, users, volume, HIP-3 mix, USDC reserve-income optionality boundary"
+    },
+    {
+      "id": "S8",
+      "title": "DeFiLlama Hyperliquid protocol metrics",
+      "type": "Industry data",
+      "date": "2026-08",
+      "url": "https://defillama.com/protocol/hyperliquid",
+      "use": "quarterly gross protocol revenue history"
+    },
+    {
+      "id": "S9",
+      "title": "21Shares Hyperliquid Staking ETP",
+      "type": "Competitor primary",
+      "date": "2026",
+      "url": "https://www.21shares.com/en-eu/product",
+      "use": "listed HYPE wrapper and staking economics comparison"
+    },
+    {
+      "id": "S10",
+      "title": "Hyperion DeFi (HYPD) 10-Q",
+      "type": "Competitor SEC primary",
+      "date": "2026-06-30",
+      "url": "https://www.sec.gov/Archives/edgar/data/1682639/000110465926095181/hypd-20260630x10q.htm",
+      "use": "HYPE treasury competitor scale and active-deployment model"
+    },
+    {
+      "id": "S11",
+      "title": "PURR S-1/A advisor agreement disclosure",
+      "type": "SEC primary",
+      "date": "2026-07",
+      "url": "https://www.sec.gov/Archives/edgar/data/2078856/000119312526309340/d50758ds1a.htm",
+      "use": "advisor warrants and revocable waiver of future-financing equity grants"
+    },
+    {
+      "id": "S12",
+      "title": "Rorschach Advisors Schedule 13G/A",
+      "type": "SEC primary",
+      "date": "2026-08",
+      "url": "https://www.sec.gov/Archives/edgar/data/2078856/000119312526337954/xslSCHEDULE_13G_X02/primary_doc.xml",
+      "use": "advisor beneficial ownership"
+    },
+    {
+      "id": "S13",
+      "title": "BlackRock Schedule 13G",
+      "type": "SEC primary",
+      "date": "2026-06-30",
+      "url": "https://www.sec.gov/Archives/edgar/data/2012383/000201238326002522/xslSCHEDULE_13G_X02/primary_doc.xml",
+      "use": "institutional ownership"
+    },
+    {
+      "id": "S14",
+      "title": "Benzinga PURR price targets",
+      "type": "Market data",
+      "date": "2026-08-29 crawl",
+      "url": "https://www.benzinga.com/quote/PURR/price-targets",
+      "use": "Aug-28 close $11.61, 3-analyst consensus, post-earnings positioning"
+    },
+    {
+      "id": "S15",
+      "title": "CoinLore HYPE historical prices",
+      "type": "Market data",
+      "date": "2026-08-29 crawl",
+      "url": "https://www.coinlore.com/coin/hyperliquid/historical-data",
+      "use": "normalized HYPE Aug-28 close $80.90"
+    },
+    {
+      "id": "S16",
+      "title": "Financial Times digital-asset treasury base-rate article",
+      "type": "News / base rate",
+      "date": "2026-08",
+      "url": "https://www.ft.com/content/79884de5-774a-4633-ba92-be4184eb22c1",
+      "use": "DAT premium fragility / peer base-rate warning"
+    },
+    {
+      "id": "S17",
+      "title": "The Block - U.S. Hyperliquid regulatory remarks",
+      "type": "News",
+      "date": "2026-08-19",
+      "url": "https://www.theblock.co/news/regulation/2026-08-19-hype-token-surges-trump-says-cftc-bring-hyperliquid-us-fully-compliant-fashion-412262",
+      "use": "political catalyst context; explicitly not a filing/approval"
+    }
+  ],
+  "publishing_qa": {
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "TOP_LEVEL_SCHEMA": "PASS",
+    "VISUAL_DATA_LINEAGE": "PASS",
+    "PDF_SEARCHABLE_TEXT": "PASS",
+    "PDF_BOOKMARKS": "PASS",
+    "HTML_SIDEBAR_OR_TOC": "PASS",
+    "KOREAN_READABILITY": "PASS",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "EXPLANATORY_SPACE_ALLOCATION": "PASS",
+    "CONTACT_SHEET_COMPOSITION_QA": "PASS",
+    "SEMANTIC_GOLDEN_QA": "PASS",
+    "VISUAL_GOLDEN_QA": "PASS",
+    "RENDERED_VISUAL_PARITY_QA": "PASS",
+    "pdf_pages": 24
+  }
+}

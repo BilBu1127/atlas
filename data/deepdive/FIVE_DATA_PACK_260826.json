@@ -1,0 +1,876 @@
+{
+  "meta": {
+    "ticker": "FIVE",
+    "company": "Five Below, Inc.",
+    "T0": 256.44,
+    "price_asof": "2026-08-25",
+    "filing_asof": "2026-07-22",
+    "consensus_asof": "2026-08-19",
+    "version": "DDOS v1.7",
+    "currency": "USD",
+    "publishing_date_kst": "2026-08-26"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "fy": "FY2023",
+        "sales": 3559.369,
+        "cogs": 2285.544,
+        "op_income": 385.571,
+        "net_income": 301.106,
+        "ocf": 499.619,
+        "capex": 335.05,
+        "fcf_proxy": 164.569,
+        "stores": 1544,
+        "gross_margin": 0.357879444362189,
+        "op_margin": 0.10832566109330052,
+        "fcf_margin": 0.04623544229328288
+      },
+      {
+        "fy": "FY2024",
+        "sales": 3876.527,
+        "cogs": 2523.865,
+        "op_income": 323.817,
+        "net_income": 253.611,
+        "ocf": 430.648,
+        "capex": 323.994,
+        "fcf_proxy": 106.654,
+        "stores": 1771,
+        "gross_margin": 0.3489365609990593,
+        "op_margin": 0.08353276012265619,
+        "fcf_margin": 0.027512771096396334
+      },
+      {
+        "fy": "FY2025",
+        "sales": 4764.147,
+        "cogs": 3049.461,
+        "op_income": 457.399,
+        "net_income": 358.641,
+        "ocf": 586.428,
+        "capex": 174.741,
+        "fcf_proxy": 411.687,
+        "stores": 1921,
+        "gross_margin": 0.35991458701841067,
+        "op_margin": 0.09600858243878704,
+        "fcf_margin": 0.08641358043737946
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "q": "Q2 FY24",
+        "sales": 830.069,
+        "cogs": 558.283,
+        "op_income": 41.509,
+        "comp": -5.7,
+        "stores": 1667,
+        "gross_margin": 0.327425792313651,
+        "op_margin": 0.05000668619114797
+      },
+      {
+        "q": "Q3 FY24",
+        "sales": 843.71,
+        "cogs": 585.668,
+        "op_income": -0.606,
+        "comp": 0.6,
+        "stores": 1749,
+        "gross_margin": 0.3058420547344467,
+        "op_margin": -0.000718256272889974
+      },
+      {
+        "q": "Q4 FY24",
+        "sales": 1390.885,
+        "cogs": 831.571,
+        "op_income": 246.764,
+        "comp": -3.0,
+        "stores": 1771,
+        "gross_margin": 0.4021281414351294,
+        "op_margin": 0.1774150990196889
+      },
+      {
+        "q": "Q1 FY25",
+        "sales": 970.527,
+        "cogs": 646.614,
+        "op_income": 50.847,
+        "comp": 7.1,
+        "stores": 1826,
+        "gross_margin": 0.33374960202034565,
+        "op_margin": 0.05239112358543348
+      },
+      {
+        "q": "Q2 FY25",
+        "sales": 1026.847,
+        "cogs": 684.478,
+        "op_income": 52.365,
+        "comp": 12.4,
+        "stores": 1858,
+        "gross_margin": 0.33341773409281034,
+        "op_margin": 0.050995912730913175
+      },
+      {
+        "q": "Q3 FY25",
+        "sales": 1038.293,
+        "cogs": 686.873,
+        "op_income": 43.305,
+        "comp": 14.3,
+        "stores": 1907,
+        "gross_margin": 0.33845937514747754,
+        "op_margin": 0.041707880145585116
+      },
+      {
+        "q": "Q4 FY25",
+        "sales": 1728.48,
+        "cogs": 1031.496,
+        "op_income": 310.882,
+        "comp": 15.4,
+        "stores": 1921,
+        "gross_margin": 0.4032352124409886,
+        "op_margin": 0.17985860409145607
+      },
+      {
+        "q": "Q1 FY26",
+        "sales": 1285.602,
+        "cogs": 806.96,
+        "op_income": 154.243,
+        "comp": 22.7,
+        "stores": 1970,
+        "gross_margin": 0.372309626151795,
+        "op_margin": 0.11997725579145022
+      }
+    ],
+    "ceilings": [
+      "Merchandise-world별 매출/마진 세그먼트 공시 없음",
+      "신규점 vintage별 four-wall margin/payback/cannibalization 공시 없음",
+      "FY25 FCF proxy는 CAPEX timing 변화로 정상화 수치가 아님"
+    ]
+  },
+  "kpis": [
+    {
+      "name": "Comparable sales",
+      "current": 22.7,
+      "unit": "%",
+      "history": [
+        {
+          "period": "Q2 FY24",
+          "value": -5.7
+        },
+        {
+          "period": "Q3 FY24",
+          "value": 0.6
+        },
+        {
+          "period": "Q4 FY24",
+          "value": -3.0
+        },
+        {
+          "period": "Q1 FY25",
+          "value": 7.1
+        },
+        {
+          "period": "Q2 FY25",
+          "value": 12.4
+        },
+        {
+          "period": "Q3 FY25",
+          "value": 14.3
+        },
+        {
+          "period": "Q4 FY25",
+          "value": 15.4
+        },
+        {
+          "period": "Q1 FY26",
+          "value": 22.7
+        }
+      ],
+      "thresholds": {
+        "green": "근시일 분기 ≥7%이며 거래건수 주도",
+        "yellow": "3~7% 또는 객단가 의존 증가",
+        "red": "<3% 또는 거래건수 감소"
+      }
+    },
+    {
+      "name": "Transaction growth",
+      "current": 18.5,
+      "unit": "%",
+      "history": [
+        {
+          "period": "Q1 FY26",
+          "value": 18.5
+        }
+      ],
+      "thresholds": {
+        "green": "정상화 이후 ≥5%",
+        "yellow": "0~5%",
+        "red": "<0%"
+      }
+    },
+    {
+      "name": "Gross margin",
+      "current": 37.2309626151795,
+      "unit": "%",
+      "history": [
+        {
+          "period": "Q2 FY24",
+          "value": 32.74
+        },
+        {
+          "period": "Q3 FY24",
+          "value": 30.58
+        },
+        {
+          "period": "Q4 FY24",
+          "value": 40.21
+        },
+        {
+          "period": "Q1 FY25",
+          "value": 33.37
+        },
+        {
+          "period": "Q2 FY25",
+          "value": 33.34
+        },
+        {
+          "period": "Q3 FY25",
+          "value": 33.85
+        },
+        {
+          "period": "Q4 FY25",
+          "value": 40.32
+        },
+        {
+          "period": "Q1 FY26",
+          "value": 37.23
+        }
+      ],
+      "thresholds": {
+        "green": "FY26 연간/정상화 기준 ≥36.5%",
+        "yellow": "35.0~36.5%",
+        "red": "<35.0%가 지속"
+      }
+    },
+    {
+      "name": "Operating margin",
+      "current": 11.99772557914502,
+      "unit": "%",
+      "history": [
+        {
+          "period": "Q2 FY24",
+          "value": 5.0
+        },
+        {
+          "period": "Q3 FY24",
+          "value": -0.07
+        },
+        {
+          "period": "Q4 FY24",
+          "value": 17.74
+        },
+        {
+          "period": "Q1 FY25",
+          "value": 5.24
+        },
+        {
+          "period": "Q2 FY25",
+          "value": 5.1
+        },
+        {
+          "period": "Q3 FY25",
+          "value": 4.17
+        },
+        {
+          "period": "Q4 FY25",
+          "value": 17.99
+        },
+        {
+          "period": "Q1 FY26",
+          "value": 12.0
+        }
+      ],
+      "thresholds": {
+        "green": "FY26 ≥11.5% 및 12%+ 경로",
+        "yellow": "10~11.5%",
+        "red": "<10%"
+      }
+    },
+    {
+      "name": "Net new stores",
+      "current": 150,
+      "unit": "FY26 guide",
+      "history": [
+        {
+          "period": "FY24",
+          "value": 227
+        },
+        {
+          "period": "FY25",
+          "value": 150
+        },
+        {
+          "period": "FY26 guide",
+          "value": 150
+        }
+      ],
+      "thresholds": {
+        "green": "~150개 가이드 달성 + 초기 생산성 유지",
+        "yellow": "개점은 달성하나 생산성 약화",
+        "red": "운영 문제로 재차 대폭 감속"
+      }
+    },
+    {
+      "name": "Normalized FCF proxy",
+      "current": 520.96,
+      "unit": "$m consensus FY26",
+      "history": [
+        {
+          "period": "FY2023",
+          "value": 164.6
+        },
+        {
+          "period": "FY2024",
+          "value": 106.7
+        },
+        {
+          "period": "FY2025",
+          "value": 411.7
+        }
+      ],
+      "thresholds": {
+        "green": "FY26 ≥$450m 또는 정상화 전환율 개선",
+        "yellow": "$300~450m",
+        "red": "<$300m (고수익 성장 CAPEX 제외)"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.2,
+      "revenue_path": [
+        5.35,
+        5.7,
+        6.05,
+        6.42
+      ],
+      "margin_path": [
+        10.7,
+        9.8,
+        10.0,
+        10.2
+      ],
+      "fcf": [
+        0.321,
+        0.359,
+        0.393,
+        0.437
+      ],
+      "diluted_shares": 55.7,
+      "per_share_value": 127.58,
+      "dcf_per_share": 133.12,
+      "terminal_pe": 18,
+      "fy29_price": 164.77,
+      "eps_path": [
+        8.04,
+        7.86,
+        8.48,
+        9.15
+      ]
+    },
+    {
+      "name": "Base",
+      "probability": 0.55,
+      "revenue_path": [
+        5.46,
+        6.05,
+        6.68,
+        7.4
+      ],
+      "margin_path": [
+        11.9,
+        12.0,
+        12.3,
+        12.6
+      ],
+      "fcf": [
+        0.409,
+        0.484,
+        0.554,
+        0.629
+      ],
+      "diluted_shares": 55.7,
+      "per_share_value": 210.77,
+      "dcf_per_share": 197.63,
+      "terminal_pe": 24,
+      "fy29_price": 309.39,
+      "eps_path": [
+        9.09,
+        10.11,
+        11.4,
+        12.89
+      ]
+    },
+    {
+      "name": "Bull",
+      "probability": 0.25,
+      "revenue_path": [
+        5.5,
+        6.22,
+        7.1,
+        8.12
+      ],
+      "margin_path": [
+        12.2,
+        12.8,
+        13.4,
+        14.0
+      ],
+      "fcf": [
+        0.451,
+        0.547,
+        0.653,
+        0.771
+      ],
+      "diluted_shares": 55.7,
+      "per_share_value": 299.96,
+      "dcf_per_share": 263.86,
+      "terminal_pe": 30,
+      "fy29_price": 469.31,
+      "eps_path": [
+        9.37,
+        11.06,
+        13.15,
+        15.64
+      ]
+    }
+  ],
+  "valuation": {
+    "mode": "Mode C - Mature Compounder",
+    "core": 197.63,
+    "execution": 13.14,
+    "ecosystem": 0.0,
+    "drag": 0.0,
+    "expected_value": 216.43,
+    "expected_future_value_fy29": 320.45,
+    "expected_irr": 0.0673,
+    "current_price": 256.44,
+    "base_fair_value": 210.77,
+    "bear_value": 127.58,
+    "bull_value": 299.96,
+    "upside_downside_ratio": 0.34,
+    "discount_rate": 0.095,
+    "hurdle_rate": 0.12,
+    "valuation_method": "55% 7Y FCFE-style DCF proxy + 45% FY29 terminal P/E present value; scenario probabilities applied after scenario valuation",
+    "capital_structure_note": "Q1 FY26 cash+short-term investments ≈ $1.113bn, no revolver draw. Operating lease expense remains in operating economics and is not double-subtracted as funded debt."
+  },
+  "reverse_expectations": {
+    "required_fy29_price_for_12pct_irr": 377.84,
+    "paths": [
+      {
+        "exit_pe": 24,
+        "required_fy29_price": 377.84302170479094,
+        "required_eps": 15.743459237699623,
+        "required_revenue_at_12pct_ebit": 9.535118661554103,
+        "required_revenue_at_13pct_ebit": 8.801647995280709
+      },
+      {
+        "exit_pe": 26,
+        "required_fy29_price": 377.84302170479094,
+        "required_eps": 14.532423911722729,
+        "required_revenue_at_12pct_ebit": 8.785622354255068,
+        "required_revenue_at_13pct_ebit": 8.109805250081601
+      },
+      {
+        "exit_pe": 28,
+        "required_fy29_price": 377.84302170479094,
+        "required_eps": 13.494393632313962,
+        "required_revenue_at_12pct_ebit": 8.143196947998751,
+        "required_revenue_at_13pct_ebit": 7.516797182768078
+      },
+      {
+        "exit_pe": 30,
+        "required_fy29_price": 377.84302170479094,
+        "required_eps": 12.594767390159697,
+        "required_revenue_at_12pct_ebit": 7.5864282625766135,
+        "required_revenue_at_13pct_ebit": 7.002856857763027
+      }
+    ],
+    "one_year_eps_implied": {
+      "24": 10.69,
+      "26": 9.86,
+      "28": 9.16,
+      "30": 8.55
+    },
+    "interpretation": "Current price can work if a high-20s/30x multiple persists, or if FY29 operating results approach Bull. Mid-20s multiple normalization requires EPS/revenue materially above Base."
+  },
+  "consensus": {
+    "fy1": {
+      "period": "FY2026",
+      "revenue_b": 5.5,
+      "eps": 9.19,
+      "operating_income_m": 650.67,
+      "fcf_m": 520.96,
+      "source": "S16"
+    },
+    "fy2": {
+      "period": "FY2027",
+      "revenue_b": 6.03,
+      "eps": 9.92,
+      "source": "S17/S16 composite"
+    },
+    "fy3": {
+      "period": "FY2028",
+      "revenue_b": 6.69,
+      "eps": null,
+      "source": "S17 composite"
+    },
+    "revision_trend": "Q1 FY26 대폭 beat와 회사 가이던스 상향 이후 상향 리비전. 최근 목표주가 분산도도 확대."
+  },
+  "stance": {
+    "zone": "회피 / 기존 보유 시 축소 검토",
+    "price_bands": {
+      ">=240": "회피/추가매수 비선호: 회복 지속성과 프리미엄 멀티플을 동시에 요구",
+      "218-240": "관망: 12% 허들에 아직 미달하나 리스크-리턴 개선",
+      "190-218": "조건부 관심: 기대 IRR이 대체로 12~15% 영역으로 진입",
+      "<=190": "적극 관심 후보: thesis가 유지될 경우 U/D 약 2배 이상 구간"
+    },
+    "horizon": "FY2029 (~3.4 years)",
+    "entry_at_12pct_hurdle": 217.49,
+    "entry_at_15pct_hurdle": 198.69,
+    "ud_1x_price": 213.77,
+    "ud_2x_price": 185.04
+  },
+  "catalysts": [
+    {
+      "when": "2026-09-02",
+      "event": "Q2 FY26 실적 발표",
+      "sensitivity": "H",
+      "bull": "comp 9%+ 또는 거래건수 강세, 마진/가이던스 상향",
+      "bear": "comp 7% 하단 미달, 트래픽 급둔화, tariff/markdown 압박"
+    },
+    {
+      "when": "2026-09-09",
+      "event": "Barclays Global Consumer Conference",
+      "sensitivity": "M",
+      "bull": "트래픽 지속성과 상품 폭, tariff 완화의 구체적 근거",
+      "bear": "바이럴 집중도나 가격 인상 의존성 확인"
+    },
+    {
+      "when": "2026-09-15",
+      "event": "Goldman Sachs Consumer & Retail Conference",
+      "sensitivity": "M",
+      "bull": "FY27 점포/마진 프레임에 자신감",
+      "bear": "확장 재가속 지연 또는 비용 역풍"
+    },
+    {
+      "when": "2026-11-27",
+      "event": "현 자사주 매입 승인 만료",
+      "sensitivity": "L/M",
+      "bull": "FCF 기반의 규율 있는 재승인/집행",
+      "bear": "고평가 구간 공격적 매입 또는 자본배분 불명확"
+    },
+    {
+      "when": "2026 Holiday season",
+      "event": "Q3/Q4 holiday merchandising",
+      "sensitivity": "H",
+      "bull": "여러 merchandise world에서 신상품·라이선스가 동시 성공",
+      "bear": "한두 바이럴 품목에 집중, 재고/markdown 상승"
+    },
+    {
+      "when": "2027-03 (est.)",
+      "event": "FY26 연간 실적 및 FY27 가이던스",
+      "sensitivity": "H",
+      "bull": "FY26 comp 6~8%+ 및 op margin 11.5%+, FY27 150+ 점포 품질 성장",
+      "bear": "가이던스 하향·점포 생산성/마진 정상화 실패"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "promise": "산업 B1-B5와 고객 문제, 공급·사이클을 FIVE 손익으로 연결",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 1",
+      "appendix_or_ceiling": "Appendix A1"
+    },
+    {
+      "rc_id": "RC-002",
+      "promise": "FY23~Q1FY26 comp, 거래건수·객단가, 범주·지역·고객 폭",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 1.4 / 4.2",
+      "appendix_or_ceiling": "Appendix A2"
+    },
+    {
+      "rc_id": "RC-003",
+      "promise": "trend sensing, newness, licensed/social 반복 가능성",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 3.3",
+      "appendix_or_ceiling": "Appendix A3"
+    },
+    {
+      "rc_id": "RC-004",
+      "promise": "$1-$5 vs >$5/Five Beyond 가격 구조, 탄력성·가치 인식",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 3.2",
+      "appendix_or_ceiling": "Appendix A3"
+    },
+    {
+      "rc_id": "RC-005",
+      "promise": "신규점 첫해 매출·투자·payback·four-wall·점포 cohort",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Chapter 3.5",
+      "appendix_or_ceiling": "실제 vintage별 four-wall/payback 비공개"
+    },
+    {
+      "rc_id": "RC-006",
+      "promise": "3,500+ whitespace, 부지·densification·cannibalization",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Chapter 3.6",
+      "appendix_or_ceiling": "정량 cannibalization 및 지역별 cohort economics 비공개"
+    },
+    {
+      "rc_id": "RC-007",
+      "promise": "shipcenter, sourcing, China, freight/tariff, 완화 민감도",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 1.5 / 3.7",
+      "appendix_or_ceiling": "Appendix A4"
+    },
+    {
+      "rc_id": "RC-008",
+      "promise": "재고·markdown·shrink·노동·점유/물류 마진 bridge",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 4.3",
+      "appendix_or_ceiling": "Appendix A2"
+    },
+    {
+      "rc_id": "RC-009",
+      "promise": "customer job 기준 경쟁 분석·대표 가격 evidence",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 3.8",
+      "appendix_or_ceiling": "Appendix A5"
+    },
+    {
+      "rc_id": "RC-010",
+      "promise": "Winnie Park/핵심 경영진 과거 성과·실패 및 Promise→Delivery",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Chapter 2.1-2.3",
+      "appendix_or_ceiling": "Paper Source/Forever 21은 private, audited granularity 제한"
+    },
+    {
+      "rc_id": "RC-011",
+      "promise": "보상·소유·지배구조·내부자·자사주/자본배분",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 2.4 / 4.5",
+      "appendix_or_ceiling": "Appendix A6"
+    },
+    {
+      "rc_id": "RC-012",
+      "promise": "3개년+최근 8분기 재무/KPI·회계 품질",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 4",
+      "appendix_or_ceiling": "Appendix A2"
+    },
+    {
+      "rc_id": "RC-013",
+      "promise": "OCF/CAPEX/FCF, 운전자본, 리스, 현금, SBC/희석, 자사주",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 4.4-4.6",
+      "appendix_or_ceiling": "Appendix A6"
+    },
+    {
+      "rc_id": "RC-014",
+      "promise": "FY1-3 컨센서스·리비전·가이던스 gap·포지셔닝",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 0 / 5.2",
+      "appendix_or_ceiling": "Appendix A7"
+    },
+    {
+      "rc_id": "RC-015",
+      "promise": "Down/Base/Up 운영 bridge: 점포×점포매출+comp+margin+FCF",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 5.3",
+      "appendix_or_ceiling": "Appendix A8"
+    },
+    {
+      "rc_id": "RC-016",
+      "promise": "Mode C valuation·역산 기대·기대수익·U/D·스탠스·진입밴드",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 5.4-5.7",
+      "appendix_or_ceiling": "Appendix A8"
+    },
+    {
+      "rc_id": "RC-017",
+      "promise": "KPI 신호등·12개월 촉매·반증 조건",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 6",
+      "appendix_or_ceiling": "Appendix A9"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "FY2025 Form 10-K",
+      "type": "Primary",
+      "asof": "2026-03-19",
+      "url": "https://www.sec.gov/Archives/edgar/data/1177609/000117760926000010/five-20260131.htm"
+    },
+    {
+      "id": "S02",
+      "title": "Q1 FY2026 Form 10-Q",
+      "type": "Primary",
+      "asof": "2026-06-04",
+      "url": "https://www.sec.gov/Archives/edgar/data/1177609/000117760926000020/five-20260502.htm"
+    },
+    {
+      "id": "S03",
+      "title": "Q1 FY2026 earnings release",
+      "type": "Primary",
+      "asof": "2026-06-03",
+      "url": "https://investor.fivebelow.com/news/press-release-details/2026/Five-Below-Inc--Announces-First-Quarter-Fiscal-2026-Financial-Results/default.aspx"
+    },
+    {
+      "id": "S04",
+      "title": "Q4/FY2025 earnings release",
+      "type": "Primary",
+      "asof": "2026-03-18",
+      "url": "https://investor.fivebelow.com/news/press-release-details/2026/Five-Below-Inc--Announces-Fourth-Quarter-and-Fiscal-2025-Financial-Results/default.aspx"
+    },
+    {
+      "id": "S05",
+      "title": "Q4/FY2024 earnings release",
+      "type": "Primary",
+      "asof": "2025-03-19",
+      "url": "https://investor.fivebelow.com/news/press-release-details/2025/Five-Below-Inc--Announces-Fourth-Quarter-and-Fiscal-2024-Financial-Results/default.aspx"
+    },
+    {
+      "id": "S06",
+      "title": "Q1 FY2025 earnings release",
+      "type": "Primary",
+      "asof": "2025-06-04",
+      "url": "https://investor.fivebelow.com/news/press-release-details/2025/Five-Below-Inc--Announces-First-Quarter-Fiscal-2025-Financial-Results/default.aspx"
+    },
+    {
+      "id": "S07",
+      "title": "Q2 FY2025 earnings release",
+      "type": "Primary",
+      "asof": "2025-08-27",
+      "url": "https://investor.fivebelow.com/news/press-release-details/2025/Five-Below-Inc--Announces-Second-Quarter-Fiscal-2025-Financial-Results/default.aspx"
+    },
+    {
+      "id": "S08",
+      "title": "Q3 FY2025 earnings release",
+      "type": "Primary",
+      "asof": "2025-12-03",
+      "url": "https://investor.fivebelow.com/news/press-release-details/2025/Five-Below-Inc--Announces-Third-Quarter-Fiscal-2025-Financial-Results/default.aspx"
+    },
+    {
+      "id": "S09",
+      "title": "Q2 FY2024 earnings release",
+      "type": "Primary",
+      "asof": "2024-08-28",
+      "url": "https://investor.fivebelow.com/news/press-release-details/2024/Five-Below-Inc--Announces-Second-Quarter-Fiscal-2024-Financial-Results/default.aspx"
+    },
+    {
+      "id": "S10",
+      "title": "Investor Day 2022 / Triple-Double vision",
+      "type": "Primary",
+      "asof": "2022-03-30",
+      "url": "https://investor.fivebelow.com/news/press-release-details/2022/Five-Below-Inc.-Announces-Fourth-Quarter-and-Fiscal-2021-Financial-Results-Provides-Long-Term-Triple-Double-Vision-at-Investor-Day-2022/default.aspx"
+    },
+    {
+      "id": "S11",
+      "title": "2026 Proxy Statement",
+      "type": "Primary",
+      "asof": "2026-04-17",
+      "url": "https://www.sec.gov/Archives/edgar/data/1177609/000119312526199315/d86361ddef14a.htm"
+    },
+    {
+      "id": "S12",
+      "title": "Cybersecurity incident Form 8-K",
+      "type": "Primary",
+      "asof": "2026-07-22",
+      "url": "https://www.sec.gov/Archives/edgar/data/1177609/000119312526312573/d19155d8k.htm"
+    },
+    {
+      "id": "S13",
+      "title": "2,000th store announcement",
+      "type": "Primary",
+      "asof": "2026-07-09",
+      "url": "https://investor.fivebelow.com/news/press-release-details/2026/Five-Below-Celebrates-2000-Store-With-a-Mega-Grand-Opening-Party/default.aspx"
+    },
+    {
+      "id": "S14",
+      "title": "Q2 FY2026 earnings date announcement",
+      "type": "Primary",
+      "asof": "2026-08-19",
+      "url": "https://www.globenewswire.com/news-release/2026/08/19/3347960/21529/en/five-below-inc-announces-second-quarter-fiscal-2026-earnings-release-and-conference-call-date-and-participation-in-upcoming-investor-conferences.html"
+    },
+    {
+      "id": "S15",
+      "title": "Historical P/E series",
+      "type": "Secondary market data",
+      "asof": "2026-08-06",
+      "url": "https://www.macrotrends.net/stocks/charts/FIVE/five-below/pe-ratio"
+    },
+    {
+      "id": "S16",
+      "title": "Analyst forecast / ratios",
+      "type": "Secondary consensus",
+      "asof": "2026-08-19",
+      "url": "https://stockanalysis.com/stocks/five/forecast/"
+    },
+    {
+      "id": "S17",
+      "title": "Analyst forecasts and valuation",
+      "type": "Secondary consensus",
+      "asof": "2026-08",
+      "url": "https://www.marketscreener.com/quote/stock/FIVE-BELOW-INC-11076428/valuation/"
+    },
+    {
+      "id": "S18",
+      "title": "NASDAQ FIVE historical close, Aug. 25 2026",
+      "type": "Secondary market data",
+      "asof": "2026-08-25",
+      "url": "https://ph.investing.com/equities/five-below-inc-historical-data"
+    },
+    {
+      "id": "S19",
+      "title": "U.S. CPI July 2026",
+      "type": "Primary macro",
+      "asof": "2026-08",
+      "url": "https://www.bls.gov/news.release/cpi.nr0.htm"
+    },
+    {
+      "id": "S20",
+      "title": "U.S. retail sales July 2026",
+      "type": "Primary macro",
+      "asof": "2026-08",
+      "url": "https://www.census.gov/retail/index.html"
+    }
+  ],
+  "audit": {
+    "RC_UNRESOLVED": 0,
+    "RC_H3_COVERAGE_RATE": 1.0,
+    "H1_H2_RESEARCH_CONTRACT_COMPLETENESS": "PASS",
+    "H2_H3_COVERAGE_LINEAGE": "PASS",
+    "LATEST_FILING_CHECK": "PASS",
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "EXPLANATORY_SPACE_ALLOCATION": "PASS",
+    "TOP_LEVEL_CHAPTER_SCHEMA_LOCK": "PASS",
+    "REPORT_DATA_PACK": "EMITTED",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "CONTENT_MEANING_LOCK_PRESERVED": "PASS",
+    "PUBLISHED_TOP_LEVEL_SCHEMA_MATCH": "PASS",
+    "EXPLANATORY_DEPTH_PRESERVED": "PASS",
+    "CORE_LANDSCAPE_PAGES": 0,
+    "PRINTED_TOC_PAGES": 1,
+    "TOC_CLICKABLE": "PASS",
+    "PDF_BOOKMARKS": "PASS",
+    "HTML_SIDEBAR": "PASS",
+    "SEARCHABLE_TEXT": "PASS",
+    "KOREAN_READABILITY": "PASS",
+    "CONTACT_SHEET_COMPOSITION_QA": "PASS",
+    "SEMANTIC_GOLDEN_QA": "PASS",
+    "VISUAL_GOLDEN_QA": "PASS",
+    "GOLDEN_PARITY": "PASS",
+    "PUBLISHING_ACCEPTANCE": "PASS"
+  }
+}

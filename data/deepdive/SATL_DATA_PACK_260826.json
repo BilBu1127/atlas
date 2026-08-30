@@ -1,0 +1,942 @@
+{
+  "meta": {
+    "ticker": "SATL",
+    "company": "Satellogic Inc.",
+    "T0": "2026-08-25 KST",
+    "price_asof": "2026-08-24 U.S. close",
+    "current_price": 5.28,
+    "filing_asof": "Q2 2026 Form 10-Q filed 2026-08-06",
+    "consensus_asof": "2026-08-25",
+    "publishing_date_kst": "2026-08-26",
+    "version": "DDOS v1.7",
+    "horizon": "2028-12-31",
+    "hurdle_rate": 0.125,
+    "valuation_mode": "Mode B — Hybrid / Expectation-Driven v3.3"
+  },
+  "financials": {
+    "annual_3y": {
+      "unit": "USD_millions",
+      "2023": {
+        "revenue": 10.074,
+        "operating_income": -69.403,
+        "ocf": -49.57,
+        "capex": 14.89,
+        "ocf_minus_capex": -64.46,
+        "sbc": 6.3
+      },
+      "2024": {
+        "revenue": 12.87,
+        "operating_income": -52.206,
+        "ocf": -35.89,
+        "capex": 5.04,
+        "ocf_minus_capex": -40.93,
+        "sbc": 2.34
+      },
+      "2025": {
+        "revenue": 17.707,
+        "operating_income": -31.019,
+        "ocf": -26.89,
+        "capex": 7.38,
+        "ocf_minus_capex": -34.27,
+        "sbc": 4.26
+      }
+    },
+    "quarterly_8q": [
+      {
+        "quarter": "Q3'24",
+        "revenue": 2.817,
+        "operating_income": -11.496
+      },
+      {
+        "quarter": "Q4'24",
+        "revenue": 3.224,
+        "operating_income": -11.435
+      },
+      {
+        "quarter": "Q1'25",
+        "revenue": 3.387,
+        "operating_income": -9.515
+      },
+      {
+        "quarter": "Q2'25",
+        "revenue": 4.44,
+        "operating_income": -6.285
+      },
+      {
+        "quarter": "Q3'25",
+        "revenue": 3.633,
+        "operating_income": -8.082
+      },
+      {
+        "quarter": "Q4'25",
+        "revenue": 6.247,
+        "operating_income": -7.137
+      },
+      {
+        "quarter": "Q1'26",
+        "revenue": 6.107,
+        "operating_income": -6.361
+      },
+      {
+        "quarter": "Q2'26",
+        "revenue": 15.919,
+        "operating_income": 0.266
+      }
+    ],
+    "ceilings": [
+      "current fleet utilization and normalized lifetime",
+      "current AIT throughput / single-source component concentration"
+    ]
+  },
+  "q2_2026_bridge": {
+    "unit": "USD_millions",
+    "revenue": 15.919,
+    "data_and_analytics": 7.1,
+    "space_systems": 8.8,
+    "operating_income": 0.266,
+    "adjusted_ebitda": 2.844,
+    "gaap_ocf": -8.63,
+    "capex": -5.635,
+    "ocf_minus_capex": -14.265,
+    "in_orbit_satellite_sale_proceeds": 8.335,
+    "company_defined_fcf": -5.93
+  },
+  "rpo": {
+    "unit": "USD_millions",
+    "less_than_1y": 45.8,
+    "1_to_2y": 9.3,
+    "2_to_3y": 7.2,
+    "thereafter": 18.4,
+    "total": 80.7
+  },
+  "kpis": [
+    {
+      "name": "D&A revenue",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": 7.1,
+          "unit": "USD_millions"
+        }
+      ],
+      "current": 7.1,
+      "thresholds": {
+        "green": "YoY >40% + repeat contract 증가",
+        "yellow": "성장 10–40%",
+        "red": "2개 분기 연속 역성장"
+      },
+      "cadence": "분기"
+    },
+    {
+      "name": "Space Systems",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": 8.8,
+          "unit": "USD_millions"
+        }
+      ],
+      "current": 8.8,
+      "thresholds": {
+        "green": "신규 sovereign delivery가 연속적으로 확보",
+        "yellow": "backlog는 늘지만 delivery 지연",
+        "red": "2개 이상 주요 인도 취소/장기 지연"
+      },
+      "cadence": "분기"
+    },
+    {
+      "name": "RPO",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": 80.7,
+          "unit": "USD_millions"
+        }
+      ],
+      "current": 80.7,
+      "thresholds": {
+        "green": "$80M 이상 유지하며 1년내 인식분 cash 전환",
+        "yellow": "감소하나 revenue 전환 확인",
+        "red": "RPO 급감 + revenue miss 동시"
+      },
+      "cadence": "분기"
+    },
+    {
+      "name": ">$18M monitoring renewal",
+      "history": [
+        {
+          "period": "2026",
+          "value": ">18M one-year contract"
+        }
+      ],
+      "current": "1년 계약",
+      "thresholds": {
+        "green": "renewal/expansion",
+        "yellow": "조건 축소 renewal",
+        "red": "미갱신"
+      },
+      "cadence": "계약 갱신시"
+    },
+    {
+      "name": "Merlin",
+      "history": [
+        {
+          "period": "target",
+          "value": "Oct-2026 launch / H1-2027 FOC"
+        }
+      ],
+      "current": "Oct-26 launch / H1-27 FOC 목표",
+      "thresholds": {
+        "green": "일정 준수 + paying adoption",
+        "yellow": "1–2분기 지연",
+        "red": "launch/FOC 장기 지연 또는 commercial traction 없음"
+      },
+      "cadence": "월/분기"
+    },
+    {
+      "name": "Operating income",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": 0.266,
+          "unit": "USD_millions"
+        }
+      ],
+      "current": 0.266,
+      "thresholds": {
+        "green": "4Q rolling positive",
+        "yellow": "분기별 변동",
+        "red": "다시 구조적 -$5M/분기 이하"
+      },
+      "cadence": "분기"
+    },
+    {
+      "name": "GAAP OCF",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": -8.63,
+          "unit": "USD_millions"
+        }
+      ],
+      "current": -8.63,
+      "thresholds": {
+        "green": "trailing 12M break-even 접근",
+        "yellow": "burn 개선 정체",
+        "red": "burn 재확대 + financing 필요"
+      },
+      "cadence": "분기"
+    },
+    {
+      "name": "Cash",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": 112.8,
+          "unit": "USD_millions"
+        }
+      ],
+      "current": 112.8,
+      "thresholds": {
+        "green": ">$80M 유지하며 성장",
+        "yellow": "$50–80M",
+        "red": "<$50M + 추가 대규모 equity 필요"
+      },
+      "cadence": "분기"
+    },
+    {
+      "name": "Diluted denominator",
+      "history": [
+        {
+          "period": "6/30/2026 reported",
+          "value": 153.708,
+          "unit": "million_shares"
+        },
+        {
+          "period": "Base 2028",
+          "value": 185,
+          "unit": "million_shares"
+        }
+      ],
+      "current": 153.708,
+      "thresholds": {
+        "green": "share growth < revenue/FCF growth",
+        "yellow": "dilution 10–20%",
+        "red": ">20% 추가 희석 without proportional value"
+      },
+      "cadence": "분기"
+    },
+    {
+      "name": "Revenue mix quality",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": "D&A 45%"
+        }
+      ],
+      "current": 0.45,
+      "thresholds": {
+        "green": "D&A >60% 또는 Space Systems에 service attach",
+        "yellow": "mixed",
+        "red": "point-in-time/noncash 의존 재확대"
+      },
+      "cadence": "분기/연간"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.2,
+      "revenue_path": [
+        40,
+        50,
+        55
+      ],
+      "margin_path": [
+        null,
+        null,
+        -0.05
+      ],
+      "fcf": [
+        null,
+        null,
+        null
+      ],
+      "diluted_shares": 175,
+      "net_cash_2028": 40,
+      "ev_sales_2028": 2.5,
+      "ev_2028": 137.5,
+      "equity_value_2028": 177.5,
+      "per_share_value": 1.014,
+      "present_value_per_share": 0.771
+    },
+    {
+      "name": "Base",
+      "probability": 0.45,
+      "revenue_path": [
+        48,
+        72,
+        120
+      ],
+      "margin_path": [
+        null,
+        null,
+        0.12
+      ],
+      "fcf": [
+        null,
+        null,
+        null
+      ],
+      "diluted_shares": 185,
+      "net_cash_2028": 80,
+      "ev_sales_2028": 6.0,
+      "ev_2028": 720,
+      "equity_value_2028": 800,
+      "per_share_value": 4.324,
+      "present_value_per_share": 3.285
+    },
+    {
+      "name": "Up",
+      "probability": 0.28,
+      "revenue_path": [
+        55,
+        110,
+        200
+      ],
+      "margin_path": [
+        null,
+        null,
+        0.22
+      ],
+      "fcf": [
+        null,
+        null,
+        null
+      ],
+      "diluted_shares": 195,
+      "net_cash_2028": 100,
+      "ev_sales_2028": 8.0,
+      "ev_2028": 1600,
+      "equity_value_2028": 1700,
+      "per_share_value": 8.718,
+      "present_value_per_share": 6.623
+    },
+    {
+      "name": "Breakout",
+      "probability": 0.07,
+      "revenue_path": [
+        60,
+        150,
+        320
+      ],
+      "margin_path": [
+        null,
+        null,
+        0.3
+      ],
+      "fcf": [
+        null,
+        null,
+        null
+      ],
+      "diluted_shares": 210,
+      "net_cash_2028": 170,
+      "ev_sales_2028": 10.0,
+      "ev_2028": 3200,
+      "equity_value_2028": 3370,
+      "per_share_value": 16.048,
+      "present_value_per_share": 12.191
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B — Hybrid / Expectation-Driven v3.3",
+    "core": 2.05,
+    "execution": 2.35,
+    "ecosystem": 1.1,
+    "drag": -1.16,
+    "expected_value": 4.34,
+    "expected_future_value_2028": 5.71,
+    "expected_irr": 0.034,
+    "current_price": 5.28,
+    "hurdle_rate": 0.125,
+    "up_down": 0.3,
+    "base_present_value": 3.29,
+    "up_present_value": 6.62,
+    "down_present_value": 0.77,
+    "breakout_present_value": 12.19
+  },
+  "reverse_expectations": {
+    "base_future_diluted_shares_m": 185,
+    "assumed_2028_net_cash_m": 80,
+    "future_equity_claim_at_current_price_m": 976.8,
+    "required_ev_m": 896.8,
+    "required_2028_revenue_m": {
+      "4x": 224.2,
+      "6x": 149.5,
+      "8x": 112.1,
+      "10x": 89.7
+    },
+    "consensus_2028_revenue_m": 94.6,
+    "analyst_target_price": 10.2,
+    "target_reverse_case": {
+      "diluted_shares_m": 195,
+      "net_cash_m": 100,
+      "equity_value_m": 1950,
+      "ev_m": 1850,
+      "required_revenue_m_at_8x": 231,
+      "required_revenue_m_at_10x": 185
+    }
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_m": 47.12
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_m": 62.37
+    },
+    "fy3": {
+      "year": 2028,
+      "revenue_m": 94.6,
+      "coverage": "thinner"
+    },
+    "analyst_count": 5,
+    "rating": "Strong Buy",
+    "average_price_target": 10.2,
+    "revision_trend": "Q2 2026 이후 FY26 매출 추정 상향"
+  },
+  "stance": {
+    "zone": "회피 / 기존 보유 시 축소 검토",
+    "price_bands": {
+      "active_interest_max": 2.7,
+      "conditional_interest": [
+        2.7,
+        3.7
+      ],
+      "watch_no_chase": [
+        3.7,
+        4.34
+      ],
+      "avoid_above": 4.34
+    },
+    "horizon": "2028년 말까지 약 2.3년",
+    "current_price": 5.28
+  },
+  "catalysts": [
+    {
+      "when": "2026-10",
+      "event": "첫 Merlin launch 목표",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2026-11경",
+      "event": "Q3 2026 실적",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027-01-25",
+      "event": "$8.63/PIPE warrant expiry 관련 이벤트",
+      "sensitivity": "M"
+    },
+    {
+      "when": "2027-H1",
+      "event": "Merlin full operational capability 목표",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027-H1",
+      "event": "$12M sovereign transfer / Portugal 후속 delivery",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027-H1-H2",
+      "event": ">$18M monitoring contract renewal window",
+      "sensitivity": "H"
+    },
+    {
+      "when": "분기별",
+      "event": "신규 U.S./allied defense award",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027",
+      "event": "permanent CFO/finance leadership 안정화",
+      "sensitivity": "M"
+    }
+  ],
+  "contracts": [
+    {
+      "program": "International defense persistent EO",
+      "value": ">18M USD",
+      "stage": "trial→full deployment <6mo",
+      "economic_meaning": "strongest recurring PGI proof",
+      "ceiling": "customer identity/renewal terms confidential"
+    },
+    {
+      "program": "Sovereign defense in-orbit NewSat",
+      "value": "12M USD",
+      "stage": "contracted / transfer process",
+      "economic_meaning": "Space Systems ownership proof",
+      "ceiling": "customer confidential"
+    },
+    {
+      "program": "CEiiA Portugal",
+      "value": "18M USD / 2 satellites",
+      "stage": "first satellite delivered Q2",
+      "economic_meaning": "sovereign optical capability",
+      "ceiling": "full program margin undisclosed"
+    }
+  ],
+  "accounting_quality": {
+    "flags": [
+      "Noncash customer consideration",
+      "Point-in-time revenue dominance through 2025",
+      "Company-defined OCF/FCF adds satellite-sale proceeds",
+      "Fair-value net-income volatility",
+      "Cost of revenue excludes depreciation"
+    ],
+    "assessment": "FLAGS_NOTED — no evidence of accounting impropriety; quality adjustments required for underwriting."
+  },
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "Ch2"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1.1"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1.2–1.4"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1.5"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1.7 / Ch4.9"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "Ch2.1–2.3"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "Ch2.4"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3.2"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3.3 / Ch4.3–4.5"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3.4–3.5"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3.4/3.9"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3.5 / Ch5"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3.6"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3.6 / Ch6"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3.7"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4.1–4.2"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4.4–4.6"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch4.7–4.8 / Ch5"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3.9"
+    },
+    {
+      "rc_id": "RC-020",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4 / Ch6.5"
+    },
+    {
+      "rc_id": "RC-021",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch0.4 / Ch5.5"
+    },
+    {
+      "rc_id": "RC-022",
+      "status": "COMPLETE",
+      "h3_locator": "Ch5.1–5.4"
+    },
+    {
+      "rc_id": "RC-023",
+      "status": "COMPLETE",
+      "h3_locator": "Ch5.6"
+    },
+    {
+      "rc_id": "RC-024",
+      "status": "COMPLETE",
+      "h3_locator": "Ch6"
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "VIS_ID": "VIS-001",
+      "FIGURE_TITLE": "Scenario revenue paths",
+      "AUTHORITATIVE_SOURCE_BLOCK": "scenarios.revenue_path",
+      "SOURCE_VALUES": [
+        {
+          "name": "Down",
+          "values": [
+            40,
+            50,
+            55
+          ]
+        },
+        {
+          "name": "Base",
+          "values": [
+            48,
+            72,
+            120
+          ]
+        },
+        {
+          "name": "Up",
+          "values": [
+            55,
+            110,
+            200
+          ]
+        },
+        {
+          "name": "Breakout",
+          "values": [
+            60,
+            150,
+            320
+          ]
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "326101f468c3c998",
+      "DISPLAY_VALUES": [
+        {
+          "name": "Down",
+          "values": [
+            40,
+            50,
+            55
+          ]
+        },
+        {
+          "name": "Base",
+          "values": [
+            48,
+            72,
+            120
+          ]
+        },
+        {
+          "name": "Up",
+          "values": [
+            55,
+            110,
+            200
+          ]
+        },
+        {
+          "name": "Breakout",
+          "values": [
+            60,
+            150,
+            320
+          ]
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Ch5.3",
+      "TABLE_LOCATOR": "Ch5.3",
+      "CAPTION_LOCATOR": "VIS-001",
+      "RENDERED_ASSET_LOCATOR": "#vis-001"
+    },
+    {
+      "VIS_ID": "VIS-002",
+      "FIGURE_TITLE": "Scenario present values vs current price",
+      "AUTHORITATIVE_SOURCE_BLOCK": "scenarios.present_value_per_share",
+      "SOURCE_VALUES": [
+        {
+          "name": "Down",
+          "value": 0.771
+        },
+        {
+          "name": "Base",
+          "value": 3.285
+        },
+        {
+          "name": "Up",
+          "value": 6.623
+        },
+        {
+          "name": "Breakout",
+          "value": 12.191
+        },
+        {
+          "name": "Current",
+          "value": 5.28
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "affc24ff41a2a415",
+      "DISPLAY_VALUES": [
+        {
+          "name": "Down",
+          "value": 0.771
+        },
+        {
+          "name": "Base",
+          "value": 3.285
+        },
+        {
+          "name": "Up",
+          "value": 6.623
+        },
+        {
+          "name": "Breakout",
+          "value": 12.191
+        },
+        {
+          "name": "Current",
+          "value": 5.28
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Ch5.4",
+      "TABLE_LOCATOR": "Ch5.4",
+      "CAPTION_LOCATOR": "VIS-002",
+      "RENDERED_ASSET_LOCATOR": "#vis-002"
+    },
+    {
+      "VIS_ID": "VIS-003",
+      "FIGURE_TITLE": "Latest 8Q revenue / operating income",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.quarterly_8q",
+      "SOURCE_VALUES": [
+        {
+          "quarter": "Q3'24",
+          "revenue": 2.817,
+          "operating_income": -11.496
+        },
+        {
+          "quarter": "Q4'24",
+          "revenue": 3.224,
+          "operating_income": -11.435
+        },
+        {
+          "quarter": "Q1'25",
+          "revenue": 3.387,
+          "operating_income": -9.515
+        },
+        {
+          "quarter": "Q2'25",
+          "revenue": 4.44,
+          "operating_income": -6.285
+        },
+        {
+          "quarter": "Q3'25",
+          "revenue": 3.633,
+          "operating_income": -8.082
+        },
+        {
+          "quarter": "Q4'25",
+          "revenue": 6.247,
+          "operating_income": -7.137
+        },
+        {
+          "quarter": "Q1'26",
+          "revenue": 6.107,
+          "operating_income": -6.361
+        },
+        {
+          "quarter": "Q2'26",
+          "revenue": 15.919,
+          "operating_income": 0.266
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "b5a6178445555d33",
+      "DISPLAY_VALUES": [
+        {
+          "quarter": "Q3'24",
+          "revenue": 2.817,
+          "operating_income": -11.496
+        },
+        {
+          "quarter": "Q4'24",
+          "revenue": 3.224,
+          "operating_income": -11.435
+        },
+        {
+          "quarter": "Q1'25",
+          "revenue": 3.387,
+          "operating_income": -9.515
+        },
+        {
+          "quarter": "Q2'25",
+          "revenue": 4.44,
+          "operating_income": -6.285
+        },
+        {
+          "quarter": "Q3'25",
+          "revenue": 3.633,
+          "operating_income": -8.082
+        },
+        {
+          "quarter": "Q4'25",
+          "revenue": 6.247,
+          "operating_income": -7.137
+        },
+        {
+          "quarter": "Q1'26",
+          "revenue": 6.107,
+          "operating_income": -6.361
+        },
+        {
+          "quarter": "Q2'26",
+          "revenue": 15.919,
+          "operating_income": 0.266
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Ch4.2",
+      "TABLE_LOCATOR": "Ch4.2",
+      "CAPTION_LOCATOR": "VIS-003",
+      "RENDERED_ASSET_LOCATOR": "#vis-003"
+    },
+    {
+      "VIS_ID": "VIS-004",
+      "FIGURE_TITLE": "RPO duration",
+      "AUTHORITATIVE_SOURCE_BLOCK": "rpo",
+      "SOURCE_VALUES": {
+        "unit": "USD_millions",
+        "less_than_1y": 45.8,
+        "1_to_2y": 9.3,
+        "2_to_3y": 7.2,
+        "thereafter": 18.4,
+        "total": 80.7
+      },
+      "SOURCE_VERSION_OR_HASH": "e4ad2dc2079a5fe5",
+      "DISPLAY_VALUES": {
+        "unit": "USD_millions",
+        "less_than_1y": 45.8,
+        "1_to_2y": 9.3,
+        "2_to_3y": 7.2,
+        "thereafter": 18.4,
+        "total": 80.7
+      },
+      "NARRATIVE_LOCATOR": "Appendix D",
+      "TABLE_LOCATOR": "Appendix D",
+      "CAPTION_LOCATOR": "VIS-004",
+      "RENDERED_ASSET_LOCATOR": "#vis-004"
+    },
+    {
+      "VIS_ID": "VIS-005",
+      "FIGURE_TITLE": "Valuation attribution",
+      "AUTHORITATIVE_SOURCE_BLOCK": "valuation core/execution/ecosystem/drag",
+      "SOURCE_VALUES": {
+        "core": 2.05,
+        "execution": 2.35,
+        "ecosystem": 1.1,
+        "drag": -1.16,
+        "expected_value": 4.34
+      },
+      "SOURCE_VERSION_OR_HASH": "1fdb636af9d5ade0",
+      "DISPLAY_VALUES": {
+        "core": 2.05,
+        "execution": 2.35,
+        "ecosystem": 1.1,
+        "drag": -1.16,
+        "expected_value": 4.34
+      },
+      "NARRATIVE_LOCATOR": "Ch5.2",
+      "TABLE_LOCATOR": "Ch5.2",
+      "CAPTION_LOCATOR": "VIS-005",
+      "RENDERED_ASSET_LOCATOR": "#vis-005"
+    }
+  ]
+}

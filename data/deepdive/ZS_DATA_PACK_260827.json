@@ -1,0 +1,1425 @@
+{
+  "meta": {
+    "ticker": "ZS",
+    "company": "Zscaler, Inc.",
+    "exchange": "NASDAQ",
+    "report_type": "Deep Dive OS v1.7",
+    "as_of_date": "2026-08-27",
+    "publishing_date_asia_seoul": "2026-08-27",
+    "price_reference": {
+      "date": "2026-08-26",
+      "close_usd": 170.31
+    },
+    "currency": "USD",
+    "valuation_mode": "Mode B Hybrid",
+    "latest_filing_check": {
+      "status": "PASS",
+      "latest_periodic_filing": "FY26 Q3 Form 10-Q",
+      "filed": "2026-05-26",
+      "period_end": "2026-04-30",
+      "next_earnings": "2026-09-03 after market close"
+    },
+    "pdf_status": "WAIVED_BY_USER / PDF_NOT_REQUESTED",
+    "h1_approved": true,
+    "h2_ready": true,
+    "h3_ready": true,
+    "rc_unresolved": 0,
+    "T0": 170.31,
+    "price_asof": "2026-08-26 close",
+    "filing_asof": "FY26 Q3 10-Q filed 2026-05-26 / period ended 2026-04-30",
+    "consensus_asof": "2026-08-26",
+    "version": "v1.7-production-260827"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "fiscal_year": 2023,
+        "revenue_m": 1616.952,
+        "revenue_yoy_pct": null,
+        "gross_profit_m": 1254.12,
+        "gaap_gross_margin_pct": 77.56,
+        "sbc_m": 444.834,
+        "sbc_revenue_pct": 27.51,
+        "ocf_m": 462.343,
+        "fcf_m": 333.619,
+        "fcf_margin_pct": 20.63
+      },
+      {
+        "fiscal_year": 2024,
+        "revenue_m": 2167.771,
+        "revenue_yoy_pct": 34.06,
+        "gross_profit_m": 1690.642,
+        "gaap_gross_margin_pct": 77.99,
+        "sbc_m": 527.676,
+        "sbc_revenue_pct": 24.34,
+        "ocf_m": 779.8,
+        "fcf_m": 585.0,
+        "fcf_margin_pct": 26.99
+      },
+      {
+        "fiscal_year": 2025,
+        "revenue_m": 2673.115,
+        "revenue_yoy_pct": 23.31,
+        "gross_profit_m": 2054.937,
+        "gaap_gross_margin_pct": 76.87,
+        "sbc_m": 661.35,
+        "sbc_revenue_pct": 24.74,
+        "ocf_m": 972.5,
+        "fcf_m": 726.7,
+        "fcf_margin_pct": 27.19
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "Q4 FY24",
+        "revenue_m": 592.9,
+        "revenue_yoy_pct": 30,
+        "deferred_revenue_m": 1895.0,
+        "ocf_margin_pct": 34.0,
+        "fcf_margin_pct": 23.0,
+        "non_gaap_op_margin_pct": 22.0,
+        "derived": false
+      },
+      {
+        "quarter": "Q1 FY25",
+        "revenue_m": 628.0,
+        "revenue_yoy_pct": 26,
+        "deferred_revenue_m": 1783.7,
+        "ocf_margin_pct": 53.0,
+        "fcf_margin_pct": 46.0,
+        "non_gaap_op_margin_pct": 21.0,
+        "derived": false
+      },
+      {
+        "quarter": "Q2 FY25",
+        "revenue_m": 647.9,
+        "revenue_yoy_pct": 23,
+        "deferred_revenue_m": 1878.5,
+        "ocf_margin_pct": 27.0,
+        "fcf_margin_pct": 22.0,
+        "non_gaap_op_margin_pct": 22.0,
+        "derived": false
+      },
+      {
+        "quarter": "Q3 FY25",
+        "revenue_m": 678.0,
+        "revenue_yoy_pct": 23,
+        "deferred_revenue_m": 1985.0,
+        "ocf_margin_pct": 31.0,
+        "fcf_margin_pct": 18.0,
+        "non_gaap_op_margin_pct": 22.0,
+        "derived": false
+      },
+      {
+        "quarter": "Q4 FY25",
+        "revenue_m": 719.2,
+        "revenue_yoy_pct": 21,
+        "deferred_revenue_m": 2468.0,
+        "ocf_margin_pct": 34.9,
+        "fcf_margin_pct": 23.9,
+        "non_gaap_op_margin_pct": 22.0,
+        "derived": true,
+        "derivation": "FY25 total minus Q1-Q3 reported values"
+      },
+      {
+        "quarter": "Q1 FY26",
+        "revenue_m": 788.1,
+        "revenue_yoy_pct": 26,
+        "deferred_revenue_m": 2351.3,
+        "ocf_margin_pct": 57.0,
+        "fcf_margin_pct": 52.0,
+        "non_gaap_op_margin_pct": 22.0,
+        "derived": false
+      },
+      {
+        "quarter": "Q2 FY26",
+        "revenue_m": 815.8,
+        "revenue_yoy_pct": 26,
+        "deferred_revenue_m": 2355.4,
+        "ocf_margin_pct": 25.0,
+        "fcf_margin_pct": 21.0,
+        "non_gaap_op_margin_pct": 22.0,
+        "derived": false
+      },
+      {
+        "quarter": "Q3 FY26",
+        "revenue_m": 850.5,
+        "revenue_yoy_pct": 25,
+        "deferred_revenue_m": 2477.2,
+        "ocf_margin_pct": 23.0,
+        "fcf_margin_pct": 16.0,
+        "non_gaap_op_margin_pct": 23.0,
+        "derived": false
+      }
+    ],
+    "fy26_guidance": {
+      "revenue_m_low": 3329.5,
+      "revenue_m_high": 3332.5,
+      "revenue_m_mid": 3331.0,
+      "arr_m_low": 3740,
+      "arr_m_high": 3749,
+      "non_gaap_operating_income_m_low": 755,
+      "non_gaap_operating_income_m_high": 757,
+      "fcf_margin_pct_low": 22.8,
+      "fcf_margin_pct_high": 23.3,
+      "fcf_margin_pct_mid": 23.05,
+      "implied_fcf_m_mid": 767.7955
+    },
+    "balance_sheet": {
+      "as_of": "2026-04-30",
+      "cash_m": 982.112,
+      "short_term_investments_m": 2556.995,
+      "cash_plus_st_investments_m": 3539.107,
+      "convertible_principal_m": 1725.0,
+      "convertible_carrying_value_m": 1699.636,
+      "simple_net_cash_m": 1814.107,
+      "shares_outstanding_m": 161.709525,
+      "shares_outstanding_date": "2026-05-19"
+    },
+    "accounting_quality": {
+      "fy25_sbc_revenue_pct": 24.74,
+      "nine_month_fy26_sbc_m": 610.332,
+      "nine_month_fy26_sbc_revenue_pct": 24.86,
+      "server_network_useful_life_change": "4 years to 5 years in Aug-2023",
+      "estimated_fy24_gross_margin_benefit_bps": 60,
+      "assessment": "Headline FCF is strong, but SBC, acquisition awards and variable infrastructure CapEx materially reduce shareholder-quality interpretation."
+    },
+    "ceilings": [
+      "Product-level revenue, attach rates and module NRR are not disclosed with sufficient granularity.",
+      "Agentic AI-specific ARR/FCF is not separately disclosed.",
+      "Cross-vendor standardized performance benchmarks are unavailable.",
+      "Vendor-published customer case studies are not representative cohort statistics."
+    ]
+  },
+  "kpis": [
+    {
+      "name": "Organic ARR growth ex-M&A",
+      "history": [],
+      "current": "~21%",
+      "thresholds": {
+        "green": ">=19%",
+        "yellow": "15-19%",
+        "red": "<15%"
+      },
+      "state": "green"
+    },
+    {
+      "name": "ex-M&A net-new ARR growth",
+      "history": [],
+      "current": "~14%",
+      "thresholds": {
+        "green": ">=15%",
+        "yellow": "0-15%",
+        "red": "<0%"
+      },
+      "state": "yellow"
+    },
+    {
+      "name": "RPO growth vs revenue",
+      "history": [],
+      "current": "~30% vs 25%",
+      "thresholds": {
+        "green": "> revenue +3pt",
+        "yellow": "within ±3pt",
+        "red": "< revenue -3pt"
+      },
+      "state": "green"
+    },
+    {
+      "name": "$1M+ ARR customer growth",
+      "history": [],
+      "current": "18%",
+      "thresholds": {
+        "green": ">=17%",
+        "yellow": "12-17%",
+        "red": "<12%"
+      },
+      "state": "green"
+    },
+    {
+      "name": "Metered/non-seat new ACV share",
+      "history": [],
+      "current": ">30%",
+      "thresholds": {
+        "green": ">=30% and rising",
+        "yellow": "20-30%",
+        "red": "<20%"
+      },
+      "state": "green"
+    },
+    {
+      "name": "Data Security ARR growth",
+      "history": [],
+      "current": ">30%",
+      "thresholds": {
+        "green": ">=25%",
+        "yellow": "15-25%",
+        "red": "<15%"
+      },
+      "state": "green"
+    },
+    {
+      "name": "Normalized FCF margin",
+      "history": [],
+      "current": "FY26 guide 22.8-23.3%",
+      "thresholds": {
+        "green": ">=26%",
+        "yellow": "23-26%",
+        "red": "<23%"
+      },
+      "state": "yellow_red_boundary"
+    },
+    {
+      "name": "Net dilution",
+      "history": [],
+      "current": "monitor",
+      "thresholds": {
+        "green": "<=2.5%",
+        "yellow": "2.5-4%",
+        "red": ">4%"
+      },
+      "state": "unknown"
+    },
+    {
+      "name": "SBC / revenue",
+      "history": [],
+      "current": "~24.9% 9M FY26",
+      "thresholds": {
+        "green": "<20%",
+        "yellow": "20-25%",
+        "red": ">25%"
+      },
+      "state": "yellow_red_boundary"
+    }
+  ],
+  "industry_transmission": [
+    {
+      "industry_change": "Cloud/SaaS/multicloud/remote/AI agents reduce the usefulness of network location as a trust primitive.",
+      "customer_problem": "VPN/appliance/backhaul architecture creates attack surface, lateral-movement risk, latency and operational complexity.",
+      "why_zs_can_win": "Identity/context/policy-based one-to-one app access, cloud proxy/TLS inspection, 160+ edge locations.",
+      "value_capture": "ZIA/ZPA land followed by Data/ZDX/Workload/Branch/AI cross-sell and Z-Flex standardization.",
+      "value_leakage": "Bundled platform competitors, pricing pressure, selling expense and infrastructure CapEx.",
+      "pnl_result": "ARR/RPO/large-customer growth if attach succeeds; margin/FCF pressure if competition or capacity intensity dominates."
+    },
+    {
+      "industry_change": "Security buying is consolidating toward fewer strategic platforms and single/dual-vendor SASE.",
+      "customer_problem": "Too many point tools create policy, console, contract and staffing complexity.",
+      "why_zs_can_win": "Single Zero Trust policy layer plus Z-Flex can reduce procurement friction and expand wallet share.",
+      "value_capture": "Longer contracts, larger ACV/RPO and potentially better sales efficiency.",
+      "value_leakage": "PANW/MSFT/Fortinet/Cisco bundle economics and Netskope/Cloudflare direct SASE competition.",
+      "pnl_result": "Platform win should show up in $1M customer growth, module attach and FCF margin—not TAM alone."
+    },
+    {
+      "industry_change": "Agentic AI creates fast-changing machine identities and agent-to-app/data connections.",
+      "customer_problem": "Human/user-centric policies do not fully govern ephemeral agents and data access.",
+      "why_zs_can_win": "Existing inline enforcement, identity context and Data Security can extend to AI connections.",
+      "value_capture": "AI Protect, Data Security and usage-based products create non-seat monetization.",
+      "value_leakage": "Agentic AI ARR not separately disclosed; competing AI security bundles are proliferating.",
+      "pnl_result": "Execution evidence belongs in current growth; unproven ecosystem economics remain zero in Base valuation."
+    }
+  ],
+  "management": {
+    "founder_ceo": "Jay Chaudhry",
+    "founder_ownership_pct_fy25_proxy": 16.8,
+    "promise_delivery": {
+      "fy25_initial_revenue_guide_m": [
+        2623,
+        2643
+      ],
+      "fy25_actual_revenue_m": 2673.115,
+      "fy25_initial_non_gaap_op_income_guide_m": [
+        549,
+        559
+      ],
+      "fy25_actual_non_gaap_op_income_m": 580.1,
+      "fy26_q1_initial_revenue_guide_m": [
+        3282,
+        3301
+      ],
+      "fy26_q3_updated_revenue_guide_m": [
+        3329.5,
+        3332.5
+      ],
+      "fy26_q1_initial_arr_guide_m": [
+        3698,
+        3718
+      ],
+      "fy26_q3_updated_arr_guide_m": [
+        3740,
+        3749
+      ],
+      "fcf_margin_guide_change_pct": {
+        "from": [
+          26.5,
+          27.0
+        ],
+        "to": [
+          22.8,
+          23.3
+        ]
+      },
+      "assessment": "Revenue/ARR/non-GAAP operating delivery has been strong; cash-conversion promise is mixed due infrastructure CapEx."
+    }
+  },
+  "competition": [
+    {
+      "company": "Palo Alto Networks",
+      "job_strength": "Broad security platform, SASE + cloud + SOC + firewall, strong bundle/GTM",
+      "key_risk_to_zs": "Platformization captures more wallet; Q3 FY26 ~2,280 platformizations and ~120% platformized-customer NRR."
+    },
+    {
+      "company": "Netskope",
+      "job_strength": "Direct SSE/SASE rival with data context and integrated SD-WAN",
+      "key_risk_to_zs": "Closest architectural challenger for SSE/data-centric buyers."
+    },
+    {
+      "company": "Cloudflare",
+      "job_strength": "Global network edge plus security/network consolidation",
+      "key_risk_to_zs": "Networking economics and developer/internet-edge adjacency."
+    },
+    {
+      "company": "Fortinet",
+      "job_strength": "Firewall/SD-WAN installed base and integrated SASE procurement",
+      "key_risk_to_zs": "Bundle convenience and hybrid appliance/cloud economics."
+    },
+    {
+      "company": "Microsoft",
+      "job_strength": "Entra identity + Defender/M365 installed base",
+      "key_risk_to_zs": "Identity and productivity-bundle price pressure."
+    },
+    {
+      "company": "Cisco",
+      "job_strength": "Networking installed base + Secure Access + Splunk adjacency",
+      "key_risk_to_zs": "Enterprise procurement leverage and broad installed base."
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability_pct": 25,
+      "revenue_growth_pct_fy27_fy30": [
+        12,
+        10,
+        8,
+        7
+      ],
+      "fcf_margin_pct_fy27_fy30": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "terminal_ev_fcf_x": 18,
+      "annual_net_dilution_pct": 4.0,
+      "fy30_revenue_b": 4.742,
+      "fy30_fcf_b": 1.138,
+      "fair_value_per_share": 99.4,
+      "economic_irr_proxy_pct": -5.2,
+      "probability": 0.25,
+      "revenue_path": [
+        12,
+        10,
+        8,
+        7
+      ],
+      "margin_path": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "fcf": [
+        null,
+        null,
+        null,
+        1.138
+      ],
+      "diluted_shares": null,
+      "per_share_value": 99.4
+    },
+    {
+      "name": "Base",
+      "probability_pct": 40,
+      "revenue_growth_pct_fy27_fy30": [
+        17,
+        16,
+        15,
+        14
+      ],
+      "fcf_margin_pct_fy27_fy30": [
+        24,
+        25.5,
+        27,
+        28
+      ],
+      "terminal_ev_fcf_x": 24,
+      "annual_net_dilution_pct": 2.5,
+      "fy30_revenue_b": 5.927,
+      "fy30_fcf_b": 1.66,
+      "fair_value_per_share": 184.9,
+      "economic_irr_proxy_pct": 12.0,
+      "probability": 0.4,
+      "revenue_path": [
+        17,
+        16,
+        15,
+        14
+      ],
+      "margin_path": [
+        24,
+        25.5,
+        27,
+        28
+      ],
+      "fcf": [
+        null,
+        null,
+        null,
+        1.66
+      ],
+      "diluted_shares": null,
+      "per_share_value": 184.9
+    },
+    {
+      "name": "Bull Execution",
+      "probability_pct": 25,
+      "revenue_growth_pct_fy27_fy30": [
+        20,
+        19,
+        18,
+        16
+      ],
+      "fcf_margin_pct_fy27_fy30": [
+        24.5,
+        27,
+        29,
+        30
+      ],
+      "terminal_ev_fcf_x": 28,
+      "annual_net_dilution_pct": 2.0,
+      "fy30_revenue_b": 6.511,
+      "fy30_fcf_b": 1.953,
+      "fair_value_per_share": 249.5,
+      "economic_irr_proxy_pct": 21.2,
+      "probability": 0.25,
+      "revenue_path": [
+        20,
+        19,
+        18,
+        16
+      ],
+      "margin_path": [
+        24.5,
+        27,
+        29,
+        30
+      ],
+      "fcf": [
+        null,
+        null,
+        null,
+        1.953
+      ],
+      "diluted_shares": null,
+      "per_share_value": 249.5
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability_pct": 10,
+      "revenue_growth_pct_fy27_fy30": [
+        22,
+        21,
+        20,
+        18
+      ],
+      "fcf_margin_pct_fy27_fy30": [
+        25,
+        28,
+        30,
+        31
+      ],
+      "terminal_ev_fcf_x": 30,
+      "annual_net_dilution_pct": 1.5,
+      "fy30_revenue_b": 6.963,
+      "fy30_fcf_b": 2.158,
+      "fair_value_per_share": 296.6,
+      "economic_irr_proxy_pct": 26.8,
+      "probability": 0.1,
+      "revenue_path": [
+        22,
+        21,
+        20,
+        18
+      ],
+      "margin_path": [
+        25,
+        28,
+        30,
+        31
+      ],
+      "fcf": [
+        null,
+        null,
+        null,
+        2.158
+      ],
+      "diluted_shares": null,
+      "per_share_value": 296.6
+    }
+  ],
+  "valuation": {
+    "starting_market_cap_b": 27.54075,
+    "simple_enterprise_value_b": 25.72664,
+    "fy26_revenue_guide_mid_b": 3.331,
+    "ev_fy26_sales_x": 7.72,
+    "fy26_implied_fcf_b": 0.7678,
+    "market_cap_fcf_x": 35.87,
+    "ev_fcf_x": 33.51,
+    "mode_b_base_bridge_per_share": {
+      "core_value": 153.6,
+      "execution_value": 50.5,
+      "ecosystem_value": 0.0,
+      "funding_dilution_drag": -19.2,
+      "base_fair_value": 184.9
+    },
+    "probability_weighted_fair_value_per_share": 190.9,
+    "probability_weighted_upside_pct": 12.1,
+    "weighted_economic_irr_proxy_pct": 13.0,
+    "bull_execution_bear_up_down_x_at_spot": 1.12,
+    "up_down_2x_trigger_price_approx": 149.0,
+    "base_rate": "PRIMARY_SOURCE_CEILING",
+    "mode": "Mode B Hybrid",
+    "core": 153.6,
+    "execution": 50.5,
+    "ecosystem": 0.0,
+    "drag": -19.2,
+    "expected_value": 190.9,
+    "expected_irr": 13.0,
+    "current_price": 170.31
+  },
+  "reverse_expectations": {
+    "spot_price": 170.31,
+    "discount_rate_pct": 10,
+    "terminal_ev_fcf_x_base": 24,
+    "annual_net_dilution_pct_base": 2.5,
+    "fcf_margin_path_pct": [
+      24,
+      25,
+      26,
+      27
+    ],
+    "implied_revenue_cagr_fy27_fy30_pct": 14.0,
+    "required_fy30_fcf_margin_by_terminal_multiple": [
+      {
+        "terminal_ev_fcf_x": 18,
+        "required_fy30_fcf_margin_pct": 33.3
+      },
+      {
+        "terminal_ev_fcf_x": 20,
+        "required_fy30_fcf_margin_pct": 30.2
+      },
+      {
+        "terminal_ev_fcf_x": 22,
+        "required_fy30_fcf_margin_pct": 27.7
+      },
+      {
+        "terminal_ev_fcf_x": 24,
+        "required_fy30_fcf_margin_pct": 25.6
+      },
+      {
+        "terminal_ev_fcf_x": 26,
+        "required_fy30_fcf_margin_pct": 23.7
+      }
+    ],
+    "interpretation": "Current price requires mid-teens growth plus durable high-quality FCF. Terminal multiple, shareholder FCF quality and dilution are more fragile than the headline FY27 growth rate alone."
+  },
+  "consensus": {
+    "q4_fy26_company_revenue_guide_m": [
+      875,
+      878
+    ],
+    "q4_fy26_mid_m": 876.5,
+    "fy27_management_early_growth_framework_pct": [
+      16,
+      17
+    ],
+    "fy27_revenue_consensus_b_approx": 3.9,
+    "fy27_revenue_consensus_growth_pct_approx": 17.0,
+    "recent_sell_side_examples": [
+      {
+        "date": "2026-08-25",
+        "firm": "Barclays",
+        "rating": "Overweight",
+        "pt_usd": 192,
+        "theme": "Raised target; flags FY27 ARR timing/sales execution and FCF risk."
+      },
+      {
+        "date": "2026-08-26",
+        "firm": "Evercore",
+        "rating": "In Line / Tactical Underperform",
+        "pt_usd": 155,
+        "theme": "Limited near-term upside and cautious field checks."
+      }
+    ],
+    "positioning_ceiling": "Full primary-source institutional 13F and short-interest time series not reconstructed; not thesis-critical.",
+    "fy1": {
+      "fiscal_year": 2027,
+      "revenue_b_approx": 3.9,
+      "revenue_growth_pct_approx": 17.0,
+      "company_growth_framework_pct": [
+        16,
+        17
+      ]
+    },
+    "fy2": {
+      "fiscal_year": 2028,
+      "revenue_b_approx": 4.554,
+      "revenue_growth_pct_approx": 16.8
+    },
+    "revision_trend": "Near-term estimates broadly align with management FY27 16-17% framework; recent broker views show upside-target dispersion but increasing caution around FCF and execution."
+  },
+  "variant_perception": {
+    "market_view": "FY27 16-17% growth is a material deceleration; capex, sales execution and platform consolidation can pressure FCF and upside.",
+    "our_view": "16-17% FY27 can still support acceptable returns if organic ARR stays high teens and FCF returns to high-20s while dilution is contained.",
+    "mispricing_strength": "moderate",
+    "key_difference": "The market debate should center on organic ARR + attach + shareholder-quality FCF, not on whether Zero Trust/AI TAM exists."
+  },
+  "stance": {
+    "label": "조건부 관심 / WATCH-TO-ACCUMULATE",
+    "reference_price": 170.31,
+    "base_fair_value": 184.9,
+    "probability_weighted_fair_value": 190.9,
+    "expected_economic_irr_proxy_pct": 13.0,
+    "up_down_x": 1.12,
+    "price_bands": [
+      {
+        "range": "<=150",
+        "stance": "적극 관심 후보",
+        "reason": "U/D near or above 2x; expected IRR high-teens if business thesis remains intact."
+      },
+      {
+        "range": "150-185",
+        "stance": "조건부 관심",
+        "reason": "Current zone; validate organic ARR, FY27 guide, FCF recovery and dilution."
+      },
+      {
+        "range": "185-210",
+        "stance": "관망 우위",
+        "reason": "Base fair value substantially reflected; execution evidence required."
+      },
+      {
+        "range": ">210",
+        "stance": "추격 비우호",
+        "reason": "Material execution premium already reflected."
+      }
+    ],
+    "zone": "조건부 관심 / WATCH-TO-ACCUMULATE",
+    "horizon": "FY27-FY30 / 4-year valuation horizon",
+    "price_bands_map": {
+      "<=150": {
+        "stance": "적극 관심 후보",
+        "reason": "U/D near or above 2x; expected IRR high-teens if business thesis remains intact."
+      },
+      "150-185": {
+        "stance": "조건부 관심",
+        "reason": "Current zone; validate organic ARR, FY27 guide, FCF recovery and dilution."
+      },
+      "185-210": {
+        "stance": "관망 우위",
+        "reason": "Base fair value substantially reflected; execution evidence required."
+      },
+      ">210": {
+        "stance": "추격 비우호",
+        "reason": "Material execution premium already reflected."
+      }
+    }
+  },
+  "catalysts": [
+    {
+      "date": "2026-09-03",
+      "event": "Q4 FY26 earnings + formal FY27 outlook",
+      "sensitivity": "high",
+      "when": "2026-09-03"
+    },
+    {
+      "date": "FY27 H1",
+      "event": "Organic ARR trajectory after Red Canary integration",
+      "sensitivity": "high",
+      "when": "FY27 H1"
+    },
+    {
+      "date": "FY27",
+      "event": "Data Security / Branch / AI Protect / metered product attach evidence",
+      "sensitivity": "high",
+      "when": "FY27"
+    },
+    {
+      "date": "FY27-FY28",
+      "event": "CapEx normalization and FCF margin recovery",
+      "sensitivity": "high",
+      "when": "FY27-FY28"
+    },
+    {
+      "date": "ongoing",
+      "event": "Red Canary / SquareX / SPLX / Symmetry integration",
+      "sensitivity": "medium",
+      "when": "ongoing"
+    }
+  ],
+  "falsification_conditions": [
+    "Organic ARR growth below 15% for two consecutive quarters.",
+    "RPO growth below revenue growth for two consecutive quarters.",
+    "Metered/non-seat new ACV share below 20%.",
+    "$1M+ ARR customer growth below 12%.",
+    "FCF margin fails to recover above 25% by FY28 without demonstrably productive investment.",
+    "Annual net dilution persistently above 4%.",
+    "Platform consolidation evidence systematically favors bundled competitors while ZS module attach stalls.",
+    "Repeated acquisitions mask organic ARR deterioration."
+  ],
+  "rc_ledger": [
+    {
+      "rc": "RC-001",
+      "status": "COMPLETE",
+      "coverage": "History, product platform and recent M&A.",
+      "rc_id": "RC-001",
+      "h3_locator": "§3.1, §3.6"
+    },
+    {
+      "rc": "RC-002",
+      "status": "COMPLETE",
+      "coverage": "Zero Trust/SASE value chain using NIST/Gartner and competitor primary sources.",
+      "rc_id": "RC-002",
+      "h3_locator": "§1.1–1.2"
+    },
+    {
+      "rc": "RC-003",
+      "status": "COMPLETE",
+      "coverage": "Industry→customer→ZS→P&L transmission.",
+      "rc_id": "RC-003",
+      "h3_locator": "§1"
+    },
+    {
+      "rc": "RC-004",
+      "status": "COMPLETE",
+      "coverage": "Management promise→delivery and governance.",
+      "rc_id": "RC-004",
+      "h3_locator": "§2"
+    },
+    {
+      "rc": "RC-005",
+      "status": "COMPLETE",
+      "coverage": "Architecture and product roles; standardized benchmark ceiling stated.",
+      "rc_id": "RC-005",
+      "h3_locator": "§3.2–3.3"
+    },
+    {
+      "rc": "RC-006",
+      "status": "COMPLETE",
+      "coverage": "PANW/Netskope/Cloudflare/Fortinet/MSFT/Cisco by customer job.",
+      "rc_id": "RC-006",
+      "h3_locator": "§3.5"
+    },
+    {
+      "rc": "RC-007",
+      "status": "COMPLETE",
+      "coverage": "Customer contract→deployment→usage→expansion→standardization ladder.",
+      "rc_id": "RC-007",
+      "h3_locator": "§3.4"
+    },
+    {
+      "rc": "RC-008",
+      "status": "CEILING",
+      "coverage": "Large-customer growth available; product-level NRR/cohort retention not disclosed.",
+      "rc_id": "RC-008",
+      "h3_locator": "§3.4, §4.4"
+    },
+    {
+      "rc": "RC-009",
+      "status": "COMPLETE",
+      "coverage": "AI/Data/Branch monetization; Agentic AI-specific economics ceiling.",
+      "rc_id": "RC-009",
+      "h3_locator": "§1.3, §3.3, §4.4"
+    },
+    {
+      "rc": "RC-010",
+      "status": "COMPLETE",
+      "coverage": "Red Canary/SquareX/SPLX/Symmetry M&A economics.",
+      "rc_id": "RC-010",
+      "h3_locator": "§3.6, §4.6"
+    },
+    {
+      "rc": "RC-011",
+      "status": "COMPLETE",
+      "coverage": "3Y annual + latest 8Q financial factory.",
+      "rc_id": "RC-011",
+      "h3_locator": "§4.1–4.2"
+    },
+    {
+      "rc": "RC-012",
+      "status": "COMPLETE",
+      "coverage": "Revenue/ARR/RPO and organic/acquired bridge.",
+      "rc_id": "RC-012",
+      "h3_locator": "§4.2–4.3"
+    },
+    {
+      "rc": "RC-013",
+      "status": "COMPLETE",
+      "coverage": "OCF→CapEx→FCF and FY26 CapEx effect.",
+      "rc_id": "RC-013",
+      "h3_locator": "§4.5"
+    },
+    {
+      "rc": "RC-014",
+      "status": "COMPLETE",
+      "coverage": "SBC, GAAP/non-GAAP, convertible, dilution and M&A.",
+      "rc_id": "RC-014",
+      "h3_locator": "§2.4, §4.6–4.7"
+    },
+    {
+      "rc": "RC-015",
+      "status": "COMPLETE",
+      "coverage": "Edge footprint and sovereignty/data residency; detailed unit economics ceiling.",
+      "rc_id": "RC-015",
+      "h3_locator": "§1.1, §3.2"
+    },
+    {
+      "rc": "RC-016",
+      "status": "COMPLETE",
+      "coverage": "Historical and forward KPI traffic lights.",
+      "rc_id": "RC-016",
+      "h3_locator": "§6.3"
+    },
+    {
+      "rc": "RC-017",
+      "status": "CEILING",
+      "coverage": "Current consensus and sell-side dispersion established; full 13F/short series incomplete.",
+      "rc_id": "RC-017",
+      "h3_locator": "§5.9, Appendix D"
+    },
+    {
+      "rc": "RC-018",
+      "status": "COMPLETE",
+      "coverage": "Mode B scenarios and Core/Execution/Ecosystem/Dilution bridge.",
+      "rc_id": "RC-018",
+      "h3_locator": "§5.1–5.7"
+    },
+    {
+      "rc": "RC-019",
+      "status": "COMPLETE",
+      "coverage": "Reverse expectations and terminal-multiple sensitivity.",
+      "rc_id": "RC-019",
+      "h3_locator": "§5.8"
+    },
+    {
+      "rc": "RC-020",
+      "status": "COMPLETE",
+      "coverage": "Variant, stance, price bands, catalysts and falsification.",
+      "rc_id": "RC-020",
+      "h3_locator": "§5.9, §6"
+    }
+  ],
+  "source_registry": [
+    {
+      "id": "S1",
+      "tier": "primary",
+      "name": "Zscaler FY25 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713683/000171368325000158/zs-20250731.htm"
+    },
+    {
+      "id": "S2",
+      "tier": "primary",
+      "name": "Zscaler FY26 Q3 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713683/000171368326000096/zs-20260430.htm"
+    },
+    {
+      "id": "S3",
+      "tier": "primary",
+      "name": "Zscaler Q3 FY26 Results",
+      "url": "https://ir.zscaler.com/news-releases/news-release-details/zscaler-announces-strong-third-quarter-fiscal-2026-results"
+    },
+    {
+      "id": "S4",
+      "tier": "primary",
+      "name": "Zscaler Quarterly Results Archive",
+      "url": "https://ir.zscaler.com/financial-information/quarterly-results"
+    },
+    {
+      "id": "S5",
+      "tier": "primary",
+      "name": "Zscaler Investor Overview",
+      "url": "https://ir.zscaler.com/"
+    },
+    {
+      "id": "S6",
+      "tier": "primary",
+      "name": "Zscaler Q4 FY26 Earnings Notice",
+      "url": "https://ir.zscaler.com/news-releases/news-release-details/zscaler-host-fourth-quarter-fiscal-year-2026-earnings-conference"
+    },
+    {
+      "id": "S7",
+      "tier": "primary-standard",
+      "name": "NIST SP 800-207 Zero Trust Architecture",
+      "url": "https://csrc.nist.gov/pubs/sp/800/207/final"
+    },
+    {
+      "id": "S8",
+      "tier": "industry",
+      "name": "Gartner SASE Forecast Public Abstract",
+      "url": "https://www.gartner.com/en/documents/6152891"
+    },
+    {
+      "id": "S9",
+      "tier": "competitor-primary",
+      "name": "Palo Alto Networks Q3 FY26 Results/Presentation",
+      "url": "https://investors.paloaltonetworks.com/financial-information/quarterly-results"
+    },
+    {
+      "id": "S10",
+      "tier": "competitor-primary",
+      "name": "Cloudflare SASE Reference Architecture",
+      "url": "https://developers.cloudflare.com/reference-architecture/architectures/sase/"
+    },
+    {
+      "id": "S11",
+      "tier": "vendor-case-study",
+      "name": "Zscaler Customer Case Studies",
+      "url": "https://www.zscaler.com/customers"
+    },
+    {
+      "id": "S12",
+      "tier": "primary",
+      "name": "Zscaler FY23 Results",
+      "url": "https://ir.zscaler.com/news-releases/news-release-details/zscaler-reports-fourth-quarter-and-fiscal-2023-financial-results"
+    }
+  ],
+  "visual_lineage": [
+    {
+      "visual_id": "V1",
+      "title": "Revenue growth vs ARR/RPO growth",
+      "data_paths": [
+        "financials.quarterly_8q",
+        "kpis.q3_fy26"
+      ],
+      "source_ids": [
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "visual_id": "V2",
+      "title": "Mode B scenario fair values",
+      "data_paths": [
+        "scenarios",
+        "valuation"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "model": "internal scenario model"
+    },
+    {
+      "visual_id": "V3",
+      "title": "Reverse expectation sensitivity",
+      "data_paths": [
+        "reverse_expectations"
+      ],
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "model": "internal reverse DCF"
+    },
+    {
+      "visual_id": "V4",
+      "title": "KPI traffic lights",
+      "data_paths": [
+        "kpis.traffic_lights"
+      ],
+      "source_ids": [
+        "S3",
+        "S5"
+      ]
+    }
+  ],
+  "qa": {
+    "h1_h2_research_contract_completeness": "PASS",
+    "h2_h3_coverage_lineage": "PASS",
+    "rc_h3_coverage_rate_pct": 100,
+    "latest_filing_check": "PASS",
+    "industry_to_company_transmission": "PASS",
+    "korean_prose_quality": "PASS",
+    "valuation_expectations": "PASS",
+    "stance_consistency_audit": "PASS",
+    "pdf": "WAIVED_BY_USER / PDF_NOT_REQUESTED"
+  },
+  "kpi_snapshot": {
+    "revenue_m": 850.5,
+    "revenue_growth_pct": 25,
+    "arr_m": 3525,
+    "arr_growth_pct": 25,
+    "arr_ex_red_canary_m": 3398,
+    "arr_ex_red_canary_growth_pct": 21,
+    "red_canary_arr_m": 127,
+    "ex_red_canary_net_new_arr_growth_pct": 14,
+    "rpo_m": 6459.3,
+    "rpo_growth_pct_approx": 30,
+    "customers_over_1m_arr": 748,
+    "customers_over_1m_growth_pct": 18,
+    "customers_over_100k_arr": 4003,
+    "customers_over_100k_growth_pct": 19,
+    "data_security_arr_m_gt": 500,
+    "data_security_arr_growth_pct_gt": 30,
+    "zero_trust_branch_arr_growth": "approximately 3x YoY",
+    "metered_non_seat_new_acv_share_pct_gt": 30,
+    "metered_non_seat_arr_growth_pct_gt": 100,
+    "z_flex_q3_tcv_m_gt": 480,
+    "z_flex_qoq_growth_pct": 60,
+    "z_flex_ltm_tcv_b_gt": 1.0
+  },
+  "visual_data_source_registry": [
+    {
+      "VIS_ID": "VIS-001",
+      "FIGURE_TITLE": "성장 구성: 매출·ARR·RPO",
+      "AUTHORITATIVE_SOURCE_BLOCK": "kpi_snapshot",
+      "SOURCE_VALUES": {
+        "revenue_growth_pct": 25,
+        "arr_growth_pct": 25,
+        "organic_arr_growth_pct": 21,
+        "rpo_growth_pct": 30
+      },
+      "SOURCE_VERSION_OR_HASH": "09a0b1fb3ee45ff1",
+      "DISPLAY_VALUES": {
+        "revenue_growth_pct": 25,
+        "arr_growth_pct": 25,
+        "organic_arr_growth_pct": 21,
+        "rpo_growth_pct": 30
+      },
+      "NARRATIVE_LOCATOR": "§0 / §4.2–4.3",
+      "TABLE_LOCATOR": "Growth dashboard",
+      "CAPTION_LOCATOR": "성장 구성: 매출·ARR·RPO",
+      "RENDERED_ASSET_LOCATOR": "Executive KPI cards"
+    },
+    {
+      "VIS_ID": "VIS-002",
+      "FIGURE_TITLE": "Mode B 시나리오 공정가치",
+      "AUTHORITATIVE_SOURCE_BLOCK": "scenarios",
+      "SOURCE_VALUES": [
+        {
+          "name": "Bear",
+          "probability_pct": 25,
+          "fair_value_per_share": 99.4
+        },
+        {
+          "name": "Base",
+          "probability_pct": 40,
+          "fair_value_per_share": 184.9
+        },
+        {
+          "name": "Bull Execution",
+          "probability_pct": 25,
+          "fair_value_per_share": 249.5
+        },
+        {
+          "name": "Bull Ecosystem",
+          "probability_pct": 10,
+          "fair_value_per_share": 296.6
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "9a312e6a6744aa0f",
+      "DISPLAY_VALUES": [
+        {
+          "name": "Bear",
+          "probability_pct": 25,
+          "fair_value_per_share": 99.4
+        },
+        {
+          "name": "Base",
+          "probability_pct": 40,
+          "fair_value_per_share": 184.9
+        },
+        {
+          "name": "Bull Execution",
+          "probability_pct": 25,
+          "fair_value_per_share": 249.5
+        },
+        {
+          "name": "Bull Ecosystem",
+          "probability_pct": 10,
+          "fair_value_per_share": 296.6
+        }
+      ],
+      "NARRATIVE_LOCATOR": "§5.3",
+      "TABLE_LOCATOR": "Scenario table",
+      "CAPTION_LOCATOR": "Mode B 시나리오 공정가치",
+      "RENDERED_ASSET_LOCATOR": "Scenario valuation bars"
+    },
+    {
+      "VIS_ID": "VIS-003",
+      "FIGURE_TITLE": "역산 기대치: Terminal multiple ↔ FY30 FCF margin",
+      "AUTHORITATIVE_SOURCE_BLOCK": "reverse_expectations",
+      "SOURCE_VALUES": [
+        {
+          "terminal_ev_fcf_x": 18,
+          "required_fy30_fcf_margin_pct": 33.3
+        },
+        {
+          "terminal_ev_fcf_x": 20,
+          "required_fy30_fcf_margin_pct": 30.2
+        },
+        {
+          "terminal_ev_fcf_x": 22,
+          "required_fy30_fcf_margin_pct": 27.7
+        },
+        {
+          "terminal_ev_fcf_x": 24,
+          "required_fy30_fcf_margin_pct": 25.6
+        },
+        {
+          "terminal_ev_fcf_x": 26,
+          "required_fy30_fcf_margin_pct": 23.7
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "0361d317391b4171",
+      "DISPLAY_VALUES": [
+        {
+          "terminal_ev_fcf_x": 18,
+          "required_fy30_fcf_margin_pct": 33.3
+        },
+        {
+          "terminal_ev_fcf_x": 20,
+          "required_fy30_fcf_margin_pct": 30.2
+        },
+        {
+          "terminal_ev_fcf_x": 22,
+          "required_fy30_fcf_margin_pct": 27.7
+        },
+        {
+          "terminal_ev_fcf_x": 24,
+          "required_fy30_fcf_margin_pct": 25.6
+        },
+        {
+          "terminal_ev_fcf_x": 26,
+          "required_fy30_fcf_margin_pct": 23.7
+        }
+      ],
+      "NARRATIVE_LOCATOR": "§5.8",
+      "TABLE_LOCATOR": "Reverse-expectations table",
+      "CAPTION_LOCATOR": "역산 기대치: Terminal multiple ↔ FY30 FCF margin",
+      "RENDERED_ASSET_LOCATOR": "Sensitivity tiles"
+    },
+    {
+      "VIS_ID": "VIS-004",
+      "FIGURE_TITLE": "KPI 신호등",
+      "AUTHORITATIVE_SOURCE_BLOCK": "kpis",
+      "SOURCE_VALUES": [
+        {
+          "name": "Organic ARR growth ex-M&A",
+          "history": [],
+          "current": "~21%",
+          "thresholds": {
+            "green": ">=19%",
+            "yellow": "15-19%",
+            "red": "<15%"
+          },
+          "state": "green"
+        },
+        {
+          "name": "ex-M&A net-new ARR growth",
+          "history": [],
+          "current": "~14%",
+          "thresholds": {
+            "green": ">=15%",
+            "yellow": "0-15%",
+            "red": "<0%"
+          },
+          "state": "yellow"
+        },
+        {
+          "name": "RPO growth vs revenue",
+          "history": [],
+          "current": "~30% vs 25%",
+          "thresholds": {
+            "green": "> revenue +3pt",
+            "yellow": "within ±3pt",
+            "red": "< revenue -3pt"
+          },
+          "state": "green"
+        },
+        {
+          "name": "$1M+ ARR customer growth",
+          "history": [],
+          "current": "18%",
+          "thresholds": {
+            "green": ">=17%",
+            "yellow": "12-17%",
+            "red": "<12%"
+          },
+          "state": "green"
+        },
+        {
+          "name": "Metered/non-seat new ACV share",
+          "history": [],
+          "current": ">30%",
+          "thresholds": {
+            "green": ">=30% and rising",
+            "yellow": "20-30%",
+            "red": "<20%"
+          },
+          "state": "green"
+        },
+        {
+          "name": "Data Security ARR growth",
+          "history": [],
+          "current": ">30%",
+          "thresholds": {
+            "green": ">=25%",
+            "yellow": "15-25%",
+            "red": "<15%"
+          },
+          "state": "green"
+        },
+        {
+          "name": "Normalized FCF margin",
+          "history": [],
+          "current": "FY26 guide 22.8-23.3%",
+          "thresholds": {
+            "green": ">=26%",
+            "yellow": "23-26%",
+            "red": "<23%"
+          },
+          "state": "yellow_red_boundary"
+        },
+        {
+          "name": "Net dilution",
+          "history": [],
+          "current": "monitor",
+          "thresholds": {
+            "green": "<=2.5%",
+            "yellow": "2.5-4%",
+            "red": ">4%"
+          },
+          "state": "unknown"
+        },
+        {
+          "name": "SBC / revenue",
+          "history": [],
+          "current": "~24.9% 9M FY26",
+          "thresholds": {
+            "green": "<20%",
+            "yellow": "20-25%",
+            "red": ">25%"
+          },
+          "state": "yellow_red_boundary"
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "f0122711546cd2f2",
+      "DISPLAY_VALUES": [
+        {
+          "name": "Organic ARR growth ex-M&A",
+          "history": [],
+          "current": "~21%",
+          "thresholds": {
+            "green": ">=19%",
+            "yellow": "15-19%",
+            "red": "<15%"
+          },
+          "state": "green"
+        },
+        {
+          "name": "ex-M&A net-new ARR growth",
+          "history": [],
+          "current": "~14%",
+          "thresholds": {
+            "green": ">=15%",
+            "yellow": "0-15%",
+            "red": "<0%"
+          },
+          "state": "yellow"
+        },
+        {
+          "name": "RPO growth vs revenue",
+          "history": [],
+          "current": "~30% vs 25%",
+          "thresholds": {
+            "green": "> revenue +3pt",
+            "yellow": "within ±3pt",
+            "red": "< revenue -3pt"
+          },
+          "state": "green"
+        },
+        {
+          "name": "$1M+ ARR customer growth",
+          "history": [],
+          "current": "18%",
+          "thresholds": {
+            "green": ">=17%",
+            "yellow": "12-17%",
+            "red": "<12%"
+          },
+          "state": "green"
+        },
+        {
+          "name": "Metered/non-seat new ACV share",
+          "history": [],
+          "current": ">30%",
+          "thresholds": {
+            "green": ">=30% and rising",
+            "yellow": "20-30%",
+            "red": "<20%"
+          },
+          "state": "green"
+        },
+        {
+          "name": "Data Security ARR growth",
+          "history": [],
+          "current": ">30%",
+          "thresholds": {
+            "green": ">=25%",
+            "yellow": "15-25%",
+            "red": "<15%"
+          },
+          "state": "green"
+        },
+        {
+          "name": "Normalized FCF margin",
+          "history": [],
+          "current": "FY26 guide 22.8-23.3%",
+          "thresholds": {
+            "green": ">=26%",
+            "yellow": "23-26%",
+            "red": "<23%"
+          },
+          "state": "yellow_red_boundary"
+        },
+        {
+          "name": "Net dilution",
+          "history": [],
+          "current": "monitor",
+          "thresholds": {
+            "green": "<=2.5%",
+            "yellow": "2.5-4%",
+            "red": ">4%"
+          },
+          "state": "unknown"
+        },
+        {
+          "name": "SBC / revenue",
+          "history": [],
+          "current": "~24.9% 9M FY26",
+          "thresholds": {
+            "green": "<20%",
+            "yellow": "20-25%",
+            "red": ">25%"
+          },
+          "state": "yellow_red_boundary"
+        }
+      ],
+      "NARRATIVE_LOCATOR": "§6.3",
+      "TABLE_LOCATOR": "KPI traffic-light table",
+      "CAPTION_LOCATOR": "KPI 신호등",
+      "RENDERED_ASSET_LOCATOR": "Traffic light pills"
+    }
+  ]
+}

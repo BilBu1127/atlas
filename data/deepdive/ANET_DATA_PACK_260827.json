@@ -1,0 +1,1155 @@
+{
+  "meta": {
+    "ticker": "ANET",
+    "company": "Arista Networks, Inc.",
+    "T0": "2026-08-27 Asia/Seoul",
+    "price_asof": {
+      "date": "2026-08-25",
+      "close_usd": 190.94,
+      "note": "Last independently cross-verified NYSE close available in the locked source snapshots."
+    },
+    "filing_asof": {
+      "period": "2026-06-30",
+      "filed": "2026-08-05",
+      "form": "10-Q"
+    },
+    "consensus_asof": "2026-08-10 to 2026-08-26 accessible public snapshots",
+    "version": "Deep Dive OS v1.7",
+    "published_date_kst": "2026-08-27",
+    "pdf_generation": "omitted_per_user_request"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "period": "2023",
+        "revenue_b": 5.8602,
+        "product_b": 5.0295,
+        "service_b": 0.8307,
+        "gross_profit_b": 3.6303,
+        "gross_margin_pct": 61.9484,
+        "operating_income_b": 2.2573,
+        "operating_margin_pct": 38.5192,
+        "net_income_b": 2.0873,
+        "ocf_b": 2.034,
+        "capex_b": 0.0344,
+        "simple_fcf_b": 1.9996
+      },
+      {
+        "period": "2024",
+        "revenue_b": 7.0031,
+        "product_b": 5.884,
+        "service_b": 1.1191,
+        "gross_profit_b": 4.4913,
+        "gross_margin_pct": 64.133,
+        "operating_income_b": 2.9446,
+        "operating_margin_pct": 42.0471,
+        "net_income_b": 2.8521,
+        "ocf_b": 3.7082,
+        "capex_b": 0.032,
+        "simple_fcf_b": 3.6762
+      },
+      {
+        "period": "2025",
+        "revenue_b": 9.0057,
+        "product_b": 7.5769,
+        "service_b": 1.4288,
+        "gross_profit_b": 5.7687,
+        "gross_margin_pct": 64.0561,
+        "operating_income_b": 3.8561,
+        "operating_margin_pct": 42.8184,
+        "net_income_b": 3.5114,
+        "ocf_b": 4.3719,
+        "capex_b": 0.1195,
+        "simple_fcf_b": 4.2524
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "period": "Q3 2024",
+        "revenue_b": 1.811,
+        "gross_margin_pct": 64.2,
+        "operating_margin_pct": 43.4
+      },
+      {
+        "period": "Q4 2024",
+        "revenue_b": 1.93,
+        "gross_margin_pct": 63.8,
+        "operating_margin_pct": 41.4
+      },
+      {
+        "period": "Q1 2025",
+        "revenue_b": 2.005,
+        "gross_margin_pct": 63.7,
+        "operating_margin_pct": 42.8
+      },
+      {
+        "period": "Q2 2025",
+        "revenue_b": 2.205,
+        "gross_margin_pct": 65.2,
+        "operating_margin_pct": 44.7
+      },
+      {
+        "period": "Q3 2025",
+        "revenue_b": 2.308,
+        "gross_margin_pct": 64.6,
+        "operating_margin_pct": 42.4
+      },
+      {
+        "period": "Q4 2025",
+        "revenue_b": 2.488,
+        "gross_margin_pct": 62.9,
+        "operating_margin_pct": 41.5
+      },
+      {
+        "period": "Q1 2026",
+        "revenue_b": 2.709,
+        "gross_margin_pct": 61.9,
+        "operating_margin_pct": 42.7
+      },
+      {
+        "period": "Q2 2026",
+        "revenue_b": 3.0357,
+        "gross_margin_pct": 62.9,
+        "operating_margin_pct": 45.4
+      }
+    ],
+    "current_balance_sheet": {
+      "as_of": "2026-06-30",
+      "cash_and_marketable_securities_b": 13.3433,
+      "accounts_receivable_b": 2.2662,
+      "inventory_b": 2.5353,
+      "deferred_revenue_b": 6.8659,
+      "other_performance_obligations_b": 1.3,
+      "future_revenue_from_deferred_and_other_obligations_b": 8.4,
+      "purchase_commitments_b": 9.7,
+      "purchase_commitments_due_within_12m_b": 9.4,
+      "h1_2026_ocf_b": 2.7765,
+      "h1_2026_simple_fcf_b": 2.6923,
+      "h1_2026_sbc_b": 0.2413
+    },
+    "ceilings": [
+      "Simple FCF is OCF minus capex and is not treated as normalized owner FCF because deferred revenue/cost timing is material.",
+      "Quarterly Q4 2024 and Q4 2025 operating metrics are reconciled from annual and 9M disclosures to displayed precision."
+    ]
+  },
+  "industry": {
+    "idc_q1_2026": {
+      "total_ethernet_switch_market_b": 15.4,
+      "total_growth_yoy_pct": 39.8,
+      "datacenter_market_b": 10.0,
+      "datacenter_growth_yoy_pct": 61.0,
+      "800g_share_of_dc_revenue_pct": 35.8,
+      "nvidia_dc_revenue_share_pct": 21.5,
+      "arista_dc_revenue_share_pct": 20.7,
+      "arista_total_ethernet_revenue_b": 2.2,
+      "arista_total_share_pct": 14.6
+    },
+    "delloro_q3_2025": {
+      "ethernet_share_of_ai_backend_switch_sales": "> two-thirds"
+    }
+  },
+  "management": {
+    "2026_revenue_view_timeline": [
+      {
+        "when": "Sep 2025 Analyst Day",
+        "revenue_b": 10.5,
+        "ai_networking_b": 2.75
+      },
+      {
+        "when": "FY2025 results / early 2026",
+        "revenue_b": 11.25,
+        "ai_networking_b": 3.25
+      },
+      {
+        "when": "Q1 2026",
+        "revenue_b": 11.5,
+        "ai_networking_b": 3.5
+      },
+      {
+        "when": "Q2 2026",
+        "revenue_b": 12.6,
+        "ai_networking_b": 3.5,
+        "note": "AI networking stated as at least; revenue approximately +40% YoY."
+      }
+    ],
+    "campus_2026_goal_b": 1.25
+  },
+  "kpis": [
+    {
+      "name": "Revenue growth",
+      "current": "Q2 2026 +37.7% YoY",
+      "thresholds": {
+        "green": ">25%",
+        "yellow": "15–25%",
+        "red": "<15%"
+      }
+    },
+    {
+      "name": "GAAP gross margin",
+      "current": "Q2 2026 62.9%",
+      "thresholds": {
+        "green": "≥62%",
+        "yellow": "59–62%",
+        "red": "<59%"
+      }
+    },
+    {
+      "name": "GAAP operating margin",
+      "current": "Q2 2026 45.4%",
+      "thresholds": {
+        "green": "≥43%",
+        "yellow": "39–43%",
+        "red": "<39%"
+      }
+    },
+    {
+      "name": "DC Ethernet revenue share",
+      "current": "Q1 2026 20.7% (IDC)",
+      "thresholds": {
+        "green": "~20.7% 이상 유지/상승",
+        "yellow": "완만한 하락",
+        "red": "지속적으로 <18%"
+      }
+    },
+    {
+      "name": "Supply absorption",
+      "current": "6/30/26 commitments $9.7B; inventory $2.54B",
+      "thresholds": {
+        "green": "revenue와 함께 소진",
+        "yellow": "inventory가 revenue보다 빠르게 증가",
+        "red": "charge/obsolete reserve 급증"
+      }
+    },
+    {
+      "name": "1.6T / scale-up adoption",
+      "current": "제품 발표·availability 전환기",
+      "thresholds": {
+        "green": "named production deployment",
+        "yellow": "qualification/trial",
+        "red": "지연·경쟁사 대체"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.2,
+      "revenue_path_b": [
+        12.6,
+        13.9,
+        15.2,
+        16.2,
+        17.2
+      ],
+      "gross_margin_path_pct": [
+        63.0,
+        61.5,
+        60.5,
+        60.0,
+        59.5
+      ],
+      "operating_margin_path_pct": [
+        44.5,
+        41.0,
+        38.5,
+        36.5,
+        35.0
+      ],
+      "normalized_fcf_margin_path_pct": [
+        35.0,
+        34.0,
+        33.0,
+        32.5,
+        32.0
+      ],
+      "diluted_shares_b": 1.33,
+      "terminal_p_fcf": 30,
+      "revenue_cagr_2026_2030_pct": 8.090985247593707,
+      "fcf_2030_b": 5.504,
+      "fcf_per_share_2030": 4.1383458646616536,
+      "future_value_per_share": 124.15037593984961,
+      "present_value_per_share": 79.01317997716434,
+      "scenario_irr_pct": -9.46328363755774
+    },
+    {
+      "name": "Base",
+      "probability": 0.45,
+      "revenue_path_b": [
+        12.6,
+        16.0,
+        19.5,
+        23.0,
+        26.8
+      ],
+      "gross_margin_path_pct": [
+        63.0,
+        62.5,
+        62.2,
+        62.0,
+        62.0
+      ],
+      "operating_margin_path_pct": [
+        44.5,
+        44.5,
+        44.5,
+        44.2,
+        44.0
+      ],
+      "normalized_fcf_margin_path_pct": [
+        35.0,
+        35.5,
+        36.0,
+        36.0,
+        36.0
+      ],
+      "diluted_shares_b": 1.31,
+      "terminal_p_fcf": 38,
+      "revenue_cagr_2026_2030_pct": 20.76499347360383,
+      "fcf_2030_b": 9.648,
+      "fcf_per_share_2030": 7.364885496183206,
+      "future_value_per_share": 279.8656488549618,
+      "present_value_per_share": 178.1152470542391,
+      "scenario_irr_pct": 9.231864848312622
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.25,
+      "revenue_path_b": [
+        12.7,
+        16.8,
+        21.5,
+        26.5,
+        32.2
+      ],
+      "gross_margin_path_pct": [
+        63.0,
+        63.0,
+        63.2,
+        63.3,
+        63.5
+      ],
+      "operating_margin_path_pct": [
+        44.8,
+        45.5,
+        46.2,
+        46.8,
+        47.0
+      ],
+      "normalized_fcf_margin_path_pct": [
+        35.5,
+        36.5,
+        37.5,
+        38.0,
+        38.5
+      ],
+      "diluted_shares_b": 1.3,
+      "terminal_p_fcf": 43,
+      "revenue_cagr_2026_2030_pct": 26.186541570016164,
+      "fcf_2030_b": 12.397000000000002,
+      "fcf_per_share_2030": 9.536153846153848,
+      "future_value_per_share": 410.0546153846155,
+      "present_value_per_share": 260.97157483879926,
+      "scenario_irr_pct": 19.305815446985886
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.1,
+      "revenue_path_b": [
+        12.8,
+        17.5,
+        23.5,
+        30.5,
+        39.0
+      ],
+      "gross_margin_path_pct": [
+        63.0,
+        63.5,
+        64.0,
+        64.5,
+        65.0
+      ],
+      "operating_margin_path_pct": [
+        45.0,
+        46.5,
+        48.0,
+        49.0,
+        50.0
+      ],
+      "normalized_fcf_margin_path_pct": [
+        35.5,
+        37.0,
+        38.0,
+        39.0,
+        40.0
+      ],
+      "diluted_shares_b": 1.3,
+      "terminal_p_fcf": 47,
+      "revenue_cagr_2026_2030_pct": 32.11850761612158,
+      "fcf_2030_b": 15.600000000000001,
+      "fcf_per_share_2030": 12.0,
+      "future_value_per_share": 564.0,
+      "present_value_per_share": 358.9472296782372,
+      "scenario_irr_pct": 28.42018737506722
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B — Hybrid",
+    "hurdle_rate_pct": 11.0,
+    "horizon_years": 4.33,
+    "core": 92.7371262086631,
+    "execution": 94.5574221547571,
+    "ecosystem": 9.797565483943794,
+    "drag": 0.0,
+    "drag_note": "SBC/dilution and working-capital effects are embedded in scenario FCF margins and diluted-share counts; no separate double subtraction.",
+    "expected_value": 197.092113847364,
+    "expected_future_value_2030": 309.68327101885666,
+    "expected_irr_pct": 11.81592356148553,
+    "current_price": 190.94,
+    "base_value": 178.1152470542391,
+    "bear_value": 79.01317997716434,
+    "bull_execution_value": 260.97157483879926,
+    "bull_ecosystem_value": 358.9472296782372,
+    "upside_downside_bull_execution": 0.6256907399362476,
+    "upside_downside_bull_ecosystem": 1.5010453226845883,
+    "ud_1x_trigger_price": 169.9923774079818,
+    "ud_2x_trigger_price": 139.66597826437598
+  },
+  "reverse_expectations": {
+    "required_future_value_at_2030_for_11pct_hurdle": 300.01669074458164,
+    "assumed_diluted_shares_b": 1.31,
+    "assumed_normalized_fcf_margin_pct": 36.0,
+    "sensitivity": [
+      {
+        "terminal_p_fcf": 30,
+        "required_fcf_per_share": 10.000556358152721,
+        "required_revenue_b": 36.39091341438907,
+        "required_revenue_cagr_pct": 30.363377219134648
+      },
+      {
+        "terminal_p_fcf": 32,
+        "required_fcf_per_share": 9.375521585768176,
+        "required_revenue_b": 34.11648132598975,
+        "required_revenue_cagr_pct": 28.276889939268045
+      },
+      {
+        "terminal_p_fcf": 35,
+        "required_fcf_per_share": 8.57190544984519,
+        "required_revenue_b": 31.192211498047776,
+        "required_revenue_cagr_pct": 25.435049475312166
+      },
+      {
+        "terminal_p_fcf": 38,
+        "required_fcf_per_share": 7.895176072225833,
+        "required_revenue_b": 28.729668485044,
+        "required_revenue_cagr_pct": 22.88249406967524
+      },
+      {
+        "terminal_p_fcf": 40,
+        "required_fcf_per_share": 7.500417268614541,
+        "required_revenue_b": 27.293185060791807,
+        "required_revenue_cagr_pct": 21.31679228908665
+      },
+      {
+        "terminal_p_fcf": 45,
+        "required_fcf_per_share": 6.6670375721018145,
+        "required_revenue_b": 24.260608942926048,
+        "required_revenue_cagr_pct": 17.796608852556073
+      }
+    ]
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_b": 12.67,
+      "non_gaap_eps": 4.11
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_b_range": [
+        16.0,
+        16.2
+      ],
+      "non_gaap_eps_approx": 5.1
+    },
+    "fy3": {
+      "year": 2028,
+      "revenue_b_approx": 19.6
+    },
+    "analyst_target": {
+      "average_usd": 241.82,
+      "median_usd": 248,
+      "low_usd": 185,
+      "high_usd": 289,
+      "analysts": 30
+    },
+    "revision_trend": "2026 revenue expectations were revised materially upward through Q2 2026; public consensus remains high-growth.",
+    "note": "Secondary expectation data; used as market-expectation anchors, not intrinsic-value evidence."
+  },
+  "stance": {
+    "zone": "관망 / 신규진입 회피; 기존 보유는 KPI 조건부 보유·비중 관리",
+    "price_bands": {
+      "active_interest": "≤ $140",
+      "conditional_interest": "$140–170",
+      "watch_avoid_new_buy": "$170–200",
+      "consider_reduce": "$200–220",
+      "high_execution_requirement": "> $220"
+    },
+    "horizon": "to 2030 (~4.33 years from price reference)",
+    "rationale": "Expected IRR is only slightly above the 11% hurdle while Bull Execution/Bear upside-downside is below 1x at the current price."
+  },
+  "catalysts": [
+    {
+      "when": "Q4 2026",
+      "event": "7060XE7 / 1.6T air-cooled availability 및 초기 고객 qualification",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2026년 11월 전후",
+      "event": "Q3 2026 실적: 약 $3.3B revenue guide와 margin 검증",
+      "sensitivity": "Very High"
+    },
+    {
+      "when": "Q4 2026 hyperscaler results",
+      "event": "AI capex / capacity commentary",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2027 Q1",
+      "event": "liquid-cooled 1.6T 계획 및 production deployment evidence",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2027년 2월 전후",
+      "event": "FY2026 실적과 FY2027 초기 guidance",
+      "sensitivity": "Very High"
+    },
+    {
+      "when": "2027 상반기",
+      "event": "IDC/Dell'Oro의 800G/1.6T 및 NVIDIA vs Arista share",
+      "sensitivity": "Very High"
+    },
+    {
+      "when": "2027 상반기",
+      "event": "campus 목표와 customer concentration 변화",
+      "sensitivity": "Medium–High"
+    },
+    {
+      "when": "2027년 8월 전후",
+      "event": "1.6T revenue contribution과 margin evidence 누적",
+      "sensitivity": "Very High"
+    }
+  ],
+  "evidence_ceilings": [
+    "Customer-level accelerator count to network-spend conversion is not publicly disclosed.",
+    "Current identities of the two 2025 10%+ customers are anonymized; historical customer names are not mapped mechanically.",
+    "Etherlink customer count does not disclose production-scale revenue by customer.",
+    "1.6T/scale-up material revenue and share are not yet publicly proven.",
+    "Service attach and renewal rates are not disclosed.",
+    "Live short interest and institutional positioning have normal reporting lags.",
+    "Arista XPO/LPO power and space savings are vendor claims unless independently corroborated."
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "0, 3.1"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "1.2, 3.6"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1.1–1.5, Appendix evidence limits"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "1.6, 3.6"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "1.1–1.6, 4.2"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 1 material blocks"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "2.1"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "2.4, 4.6"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "3.1, 4.1–4.3"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "3.2–3.3"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "1.3, 3.3"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "3.4"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1.4, 3.4, Appendix evidence limits"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "3.6"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "3.2, 3.6"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "4.1–4.2"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "4.4–4.6"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE",
+      "h3_locator": "1.6, 2.3, 4.5"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "COMPLETE",
+      "h3_locator": "1.1–1.4, 5.2"
+    },
+    {
+      "rc_id": "RC-020",
+      "status": "COMPLETE",
+      "h3_locator": "1.4, 5.2"
+    },
+    {
+      "rc_id": "RC-021",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1.3–1.4, 3.3, 5.2"
+    },
+    {
+      "rc_id": "RC-022",
+      "status": "COMPLETE",
+      "h3_locator": "3.5, 5.2"
+    },
+    {
+      "rc_id": "RC-023",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.1, 4.3"
+    },
+    {
+      "rc_id": "RC-024",
+      "status": "COMPLETE",
+      "h3_locator": "5.3–5.5, 6.2"
+    },
+    {
+      "rc_id": "RC-025",
+      "status": "COMPLETE",
+      "h3_locator": "Chapter 5, Appendix valuation"
+    },
+    {
+      "rc_id": "RC-026",
+      "status": "COMPLETE",
+      "h3_locator": "6.4–6.6"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "S1",
+      "title": "Arista Q2 2026 Form 10-Q",
+      "tier": "Arista / SEC primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000175/anet-20260630.htm"
+    },
+    {
+      "source_id": "S2",
+      "title": "Arista Q2 2026 results",
+      "tier": "Arista primary",
+      "url": "https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2026/Arista-Networks-Inc--Reports-Second-Quarter-2026-Financial-Results/default.aspx"
+    },
+    {
+      "source_id": "S3",
+      "title": "Arista Q1 2026 earnings release",
+      "tier": "Arista / SEC primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000074/ex991q126-earningsrelease.htm"
+    },
+    {
+      "source_id": "S4",
+      "title": "Arista FY2025 Form 10-K",
+      "tier": "Arista / SEC primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm"
+    },
+    {
+      "source_id": "S5",
+      "title": "Arista FY2025 results",
+      "tier": "Arista primary",
+      "url": "https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2026/Arista-Networks-Inc--Reports-Fourth-Quarter-and-Year-End-2025-Financial-Results/default.aspx"
+    },
+    {
+      "source_id": "S6",
+      "title": "Arista FY2024 results",
+      "tier": "Arista primary",
+      "url": "https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2025/Arista-Networks-Inc.-Reports-Fourth-Quarter-and-Year-End-2024-Financial-Results/default.aspx"
+    },
+    {
+      "source_id": "S7",
+      "title": "Arista Q3 2024 results",
+      "tier": "Arista primary",
+      "url": "https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2024/Arista-Networks-Inc.-Reports-Third-Quarter-2024-Financial-Results/default.aspx"
+    },
+    {
+      "source_id": "S8",
+      "title": "Arista Q1 2025 results",
+      "tier": "Arista primary",
+      "url": "https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2025/Arista-Networks-Inc--Reports-First-Quarter-2025-Financial-Results/default.aspx"
+    },
+    {
+      "source_id": "S9",
+      "title": "Arista Q2 2025 results",
+      "tier": "Arista primary",
+      "url": "https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2025/Arista-Networks-Inc--Reports-Second-Quarter-2025-Financial-Results/"
+    },
+    {
+      "source_id": "S10",
+      "title": "Arista Q3 2025 results",
+      "tier": "Arista primary",
+      "url": "https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2025/Arista-Networks-Inc--Reports-Third-Quarter-2025-Financial-Results/"
+    },
+    {
+      "source_id": "S11",
+      "title": "Arista 2026 Proxy",
+      "tier": "Arista / SEC primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/1596532/000119312526158942/d66465ddef14a.htm"
+    },
+    {
+      "source_id": "S12",
+      "title": "Arista 2025 Analyst Day",
+      "tier": "Arista primary",
+      "url": "https://s21.q4cdn.com/861911615/files/doc_events/2025/Sep/11/Arista-2025-Analyst-Day.pdf"
+    },
+    {
+      "source_id": "S13",
+      "title": "Arista 1.6T / 7060XE7 announcement",
+      "tier": "Arista primary",
+      "url": "https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2026/Arista-Introduces-Next-Generation-1-6Terabit-Portfolio-for-AI-Fabrics/default.aspx"
+    },
+    {
+      "source_id": "S14",
+      "title": "Arista XPO announcement",
+      "tier": "Arista primary",
+      "url": "https://www.arista.com/en/company/news/press-release/23697-pr-20260311"
+    },
+    {
+      "source_id": "S15",
+      "title": "IDC Q1 2026 Ethernet switch market",
+      "tier": "Independent industry",
+      "url": "https://www.idc.com/resource-center/blog/nvidia-becomes-1-in-datacenter-ethernet-switching-as-1q26-market-surges-39-8-to-15-4-billion/"
+    },
+    {
+      "source_id": "S16",
+      "title": "Dell'Oro AI back-end Ethernet shift",
+      "tier": "Independent industry",
+      "url": "https://www.prnewswire.com/news-releases/ai-back-end-networks-continue-their-shift-to-ethernet-now-accounting-for-over-two-thirds-of-3q-2025-switch-sales-in-ai-clusters-according-to-delloro-group-302633730.html"
+    },
+    {
+      "source_id": "S17",
+      "title": "NVIDIA Spectrum-X",
+      "tier": "Competitor primary",
+      "url": "https://www.nvidia.com/en-us/networking/spectrumx/"
+    },
+    {
+      "source_id": "S18",
+      "title": "NVIDIA Spectrum-XGS",
+      "tier": "Competitor primary",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-introduces-spectrum-xgs-ethernet-to-connect-distributed-data-centers-into-giga-scale-ai-super-factories"
+    },
+    {
+      "source_id": "S19",
+      "title": "Cisco Silicon One G300",
+      "tier": "Competitor primary",
+      "url": "https://www.cisco.com/c/en/us/solutions/collateral/silicon-one/silicon-one-g300-ds.html"
+    },
+    {
+      "source_id": "S20",
+      "title": "HPE / Juniper networking",
+      "tier": "Competitor primary",
+      "url": "https://www.hpe.com/us/en/newsroom/press-release/2026/06/hpe-expands-self-driving-networks-across-edge-campus-data-center-and-ai-factories.html"
+    },
+    {
+      "source_id": "S21",
+      "title": "Broadcom Tomahawk 6",
+      "tier": "Supplier primary",
+      "url": "https://www.broadcom.com/company/news/product-releases/64031"
+    },
+    {
+      "source_id": "S22",
+      "title": "SONiC Foundation",
+      "tier": "Open networking primary",
+      "url": "https://sonicfoundation.dev/about/"
+    },
+    {
+      "source_id": "S23",
+      "title": "Microsoft FY2026 Q4 earnings",
+      "tier": "Customer demand primary",
+      "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+    },
+    {
+      "source_id": "S24",
+      "title": "Meta Q2 2026 Form 10-Q",
+      "tier": "Customer demand / SEC primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+    },
+    {
+      "source_id": "S25",
+      "title": "Alphabet Q2 2026 results",
+      "tier": "Customer demand / SEC primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm"
+    },
+    {
+      "source_id": "S26",
+      "title": "Amazon Q2 2026 results",
+      "tier": "Customer demand / SEC primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000024/amzn-20260630xex991.htm"
+    },
+    {
+      "source_id": "S27",
+      "title": "StockAnalysis ANET historical price",
+      "tier": "Secondary market data",
+      "url": "https://stockanalysis.com/stocks/anet/history/"
+    },
+    {
+      "source_id": "S28",
+      "title": "StockAnalysis ANET forecast",
+      "tier": "Secondary consensus",
+      "url": "https://stockanalysis.com/stocks/anet/forecast/"
+    },
+    {
+      "source_id": "S29",
+      "title": "MarketScreener ANET estimates",
+      "tier": "Secondary consensus",
+      "url": "https://www.marketscreener.com/quote/stock/ARISTA-NETWORKS-INC-40680930/finances/"
+    },
+    {
+      "source_id": "S30",
+      "title": "Arista Q2 2026 earnings-call transcript mirror",
+      "tier": "Secondary transcript mirror",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/08/11/arista-anet-q2-2026-earnings-call-transcript/"
+    },
+    {
+      "source_id": "S31",
+      "title": "Arista Q1 2026 earnings-call transcript mirror",
+      "tier": "Secondary transcript mirror",
+      "url": "https://cdn1.benzinga.com/insights/news/26/05/52309056/full-transcript-arista-networks-q1-2026-earnings-call"
+    },
+    {
+      "source_id": "S32",
+      "title": "Arista Q4 2025 earnings-call transcript mirror",
+      "tier": "Secondary transcript mirror",
+      "url": "https://www.earningscall.ai/stock/transcript/ANET-2025-Q4"
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "VIS_ID": "VIS-001",
+      "FIGURE_TITLE": "3개년 매출과 GAAP 영업이익률",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.annual_3y",
+      "SOURCE_VALUES": [
+        {
+          "period": "2023",
+          "revenue_b": 5.8602,
+          "operating_margin_pct": 38.5192
+        },
+        {
+          "period": "2024",
+          "revenue_b": 7.0031,
+          "operating_margin_pct": 42.0471
+        },
+        {
+          "period": "2025",
+          "revenue_b": 9.0057,
+          "operating_margin_pct": 42.8184
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "833ec2c7c1c39a1366bff5ca36460b7d86dde04ef646c3a7db0eee29a275f2f2",
+      "DISPLAY_VALUES": [
+        {
+          "period": "2023",
+          "revenue_b": 5.86,
+          "operating_margin_pct": 38.5
+        },
+        {
+          "period": "2024",
+          "revenue_b": 7.0,
+          "operating_margin_pct": 42.0
+        },
+        {
+          "period": "2025",
+          "revenue_b": 9.01,
+          "operating_margin_pct": 42.8
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Chapter 4.1",
+      "TABLE_LOCATOR": "Chapter 4.1 3Y table",
+      "CAPTION_LOCATOR": "Figure VIS-001 caption",
+      "RENDERED_ASSET_LOCATOR": "#vis-001"
+    },
+    {
+      "VIS_ID": "VIS-002",
+      "FIGURE_TITLE": "최근 8분기 매출과 Gross Margin",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.quarterly_8q",
+      "SOURCE_VALUES": [
+        {
+          "period": "Q3 2024",
+          "revenue_b": 1.811,
+          "gross_margin_pct": 64.2
+        },
+        {
+          "period": "Q4 2024",
+          "revenue_b": 1.93,
+          "gross_margin_pct": 63.8
+        },
+        {
+          "period": "Q1 2025",
+          "revenue_b": 2.005,
+          "gross_margin_pct": 63.7
+        },
+        {
+          "period": "Q2 2025",
+          "revenue_b": 2.205,
+          "gross_margin_pct": 65.2
+        },
+        {
+          "period": "Q3 2025",
+          "revenue_b": 2.308,
+          "gross_margin_pct": 64.6
+        },
+        {
+          "period": "Q4 2025",
+          "revenue_b": 2.488,
+          "gross_margin_pct": 62.9
+        },
+        {
+          "period": "Q1 2026",
+          "revenue_b": 2.709,
+          "gross_margin_pct": 61.9
+        },
+        {
+          "period": "Q2 2026",
+          "revenue_b": 3.0357,
+          "gross_margin_pct": 62.9
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "2d6e2dab7befbdc4149aaf6cf2c615ef217329c34a2274bd7c91c8794ca33d73",
+      "DISPLAY_VALUES": [
+        {
+          "period": "Q3 2024",
+          "revenue_b": 1.811,
+          "gross_margin_pct": 64.2
+        },
+        {
+          "period": "Q4 2024",
+          "revenue_b": 1.93,
+          "gross_margin_pct": 63.8
+        },
+        {
+          "period": "Q1 2025",
+          "revenue_b": 2.005,
+          "gross_margin_pct": 63.7
+        },
+        {
+          "period": "Q2 2025",
+          "revenue_b": 2.205,
+          "gross_margin_pct": 65.2
+        },
+        {
+          "period": "Q3 2025",
+          "revenue_b": 2.308,
+          "gross_margin_pct": 64.6
+        },
+        {
+          "period": "Q4 2025",
+          "revenue_b": 2.488,
+          "gross_margin_pct": 62.9
+        },
+        {
+          "period": "Q1 2026",
+          "revenue_b": 2.709,
+          "gross_margin_pct": 61.9
+        },
+        {
+          "period": "Q2 2026",
+          "revenue_b": 3.036,
+          "gross_margin_pct": 62.9
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Chapter 4.2",
+      "TABLE_LOCATOR": "Chapter 4.2 8Q table",
+      "CAPTION_LOCATOR": "Figure VIS-002 caption",
+      "RENDERED_ASSET_LOCATOR": "#vis-002"
+    },
+    {
+      "VIS_ID": "VIS-003",
+      "FIGURE_TITLE": "Q1 2026 데이터센터 Ethernet 매출 점유율",
+      "AUTHORITATIVE_SOURCE_BLOCK": "industry.idc_q1_2026",
+      "SOURCE_VALUES": {
+        "NVIDIA": 21.5,
+        "Arista": 20.7
+      },
+      "SOURCE_VERSION_OR_HASH": "109109713b408633a601f71c6d0d8de539d1a219e77ce2f7f713483248c13f5b",
+      "DISPLAY_VALUES": {
+        "NVIDIA": 21.5,
+        "Arista": 20.7
+      },
+      "NARRATIVE_LOCATOR": "Chapter 1.2",
+      "TABLE_LOCATOR": "Figure data labels",
+      "CAPTION_LOCATOR": "Figure VIS-003 caption",
+      "RENDERED_ASSET_LOCATOR": "#vis-003"
+    },
+    {
+      "VIS_ID": "VIS-004",
+      "FIGURE_TITLE": "공급 선투자와 Deferred Revenue 확대",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.current_balance_sheet + FY2025 filing anchors",
+      "SOURCE_VALUES": {
+        "purchase_commitments_2025_12_b": 6.8,
+        "purchase_commitments_2026_06_b": 9.7,
+        "deferred_revenue_2025_12_b": 5.3724,
+        "deferred_revenue_2026_06_b": 6.8659
+      },
+      "SOURCE_VERSION_OR_HASH": "354347e06265398791fc406153bc056ea8e04886079929a945c3afbbad6e0787",
+      "DISPLAY_VALUES": {
+        "purchase_commitments_2025_12_b": 6.8,
+        "purchase_commitments_2026_06_b": 9.7,
+        "deferred_revenue_2025_12_b": 5.37,
+        "deferred_revenue_2026_06_b": 6.87
+      },
+      "NARRATIVE_LOCATOR": "Chapters 1.6 / 4.4–4.5",
+      "TABLE_LOCATOR": "Appendix / balance sheet data",
+      "CAPTION_LOCATOR": "Figure VIS-004 caption",
+      "RENDERED_ASSET_LOCATOR": "#vis-004"
+    },
+    {
+      "VIS_ID": "VIS-005",
+      "FIGURE_TITLE": "시나리오별 현재가치와 현재 주가",
+      "AUTHORITATIVE_SOURCE_BLOCK": "scenarios + valuation.current_price",
+      "SOURCE_VALUES": {
+        "current_price": 190.94,
+        "Bear": 79.01317997716434,
+        "Base": 178.1152470542391,
+        "Bull Execution": 260.97157483879926,
+        "Bull Ecosystem": 358.9472296782372
+      },
+      "SOURCE_VERSION_OR_HASH": "5b805c60a7081b87e75184a4af73db69dbc0ffdeccc9e8c6b981780f5dc585ba",
+      "DISPLAY_VALUES": {
+        "current_price": 190.94,
+        "Bear": 79,
+        "Base": 178,
+        "Bull Execution": 261,
+        "Bull Ecosystem": 359
+      },
+      "NARRATIVE_LOCATOR": "Chapter 5.2–5.3",
+      "TABLE_LOCATOR": "Chapter 5.2 scenario table",
+      "CAPTION_LOCATOR": "Figure VIS-005 caption",
+      "RENDERED_ASSET_LOCATOR": "#vis-005"
+    },
+    {
+      "VIS_ID": "VIS-006",
+      "FIGURE_TITLE": "현재 가격이 요구하는 2030 매출",
+      "AUTHORITATIVE_SOURCE_BLOCK": "reverse_expectations.sensitivity",
+      "SOURCE_VALUES": [
+        {
+          "terminal_p_fcf": 30,
+          "required_fcf_per_share": 10.000556358152721,
+          "required_revenue_b": 36.39091341438907,
+          "required_revenue_cagr_pct": 30.363377219134648
+        },
+        {
+          "terminal_p_fcf": 32,
+          "required_fcf_per_share": 9.375521585768176,
+          "required_revenue_b": 34.11648132598975,
+          "required_revenue_cagr_pct": 28.276889939268045
+        },
+        {
+          "terminal_p_fcf": 35,
+          "required_fcf_per_share": 8.57190544984519,
+          "required_revenue_b": 31.192211498047776,
+          "required_revenue_cagr_pct": 25.435049475312166
+        },
+        {
+          "terminal_p_fcf": 38,
+          "required_fcf_per_share": 7.895176072225833,
+          "required_revenue_b": 28.729668485044,
+          "required_revenue_cagr_pct": 22.88249406967524
+        },
+        {
+          "terminal_p_fcf": 40,
+          "required_fcf_per_share": 7.500417268614541,
+          "required_revenue_b": 27.293185060791807,
+          "required_revenue_cagr_pct": 21.31679228908665
+        },
+        {
+          "terminal_p_fcf": 45,
+          "required_fcf_per_share": 6.6670375721018145,
+          "required_revenue_b": 24.260608942926048,
+          "required_revenue_cagr_pct": 17.796608852556073
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "b85aa0064893dc495615a59fa8651fe8b2d12fb7429d777a28b4feca1addf041",
+      "DISPLAY_VALUES": [
+        {
+          "terminal_p_fcf": 30,
+          "required_revenue_b": 36.4
+        },
+        {
+          "terminal_p_fcf": 32,
+          "required_revenue_b": 34.1
+        },
+        {
+          "terminal_p_fcf": 35,
+          "required_revenue_b": 31.2
+        },
+        {
+          "terminal_p_fcf": 38,
+          "required_revenue_b": 28.7
+        },
+        {
+          "terminal_p_fcf": 40,
+          "required_revenue_b": 27.3
+        },
+        {
+          "terminal_p_fcf": 45,
+          "required_revenue_b": 24.3
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Chapter 5.4",
+      "TABLE_LOCATOR": "Chapter 5.4 reverse expectations table",
+      "CAPTION_LOCATOR": "Figure VIS-006 caption",
+      "RENDERED_ASSET_LOCATOR": "#vis-006"
+    }
+  ]
+}

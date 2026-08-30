@@ -1,0 +1,802 @@
+{
+  "meta": {
+    "ticker": "HEI",
+    "reference_ticker": "HEI.A",
+    "company": "HEICO Corporation",
+    "T0": "2026-08-25",
+    "publishing_date_kst": "2026-08-25",
+    "price_asof": "2026-08-24 NYSE close (H1 frozen registry)",
+    "filing_asof": "FY2026 Q2 10-Q filed 2026-05-27; subsequent material 8-K through 2026-07-16",
+    "consensus_asof": "2026-08-24",
+    "version": "CLEAN DDOS Production OS v1.7",
+    "latest_filing_check": {
+      "status": "PASS",
+      "checked_at": "2026-08-25 23:12 KST / 10:12 ET",
+      "note": "FY2026 Q3 results scheduled after NYSE close on 2026-08-25 and not yet released at cutoff."
+    }
+  },
+  "share_classes": {
+    "HEI": {
+      "price": 352.67,
+      "votes_per_share": 1.0,
+      "approx_shares_m": 55.24
+    },
+    "HEI.A": {
+      "price": 259.23,
+      "votes_per_share": 0.1,
+      "approx_shares_m": 84.5
+    },
+    "economic_rights": "virtually identical except voting rights",
+    "hei_premium_pct": 36.05,
+    "class_adjusted_combined_equity_value_bn": 41.386
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "fy": "FY2023",
+        "revenue": 2968.105,
+        "op_income": 625.339,
+        "cfo": 448.735,
+        "capex": 49.434,
+        "fcf": 399.301,
+        "fsg_revenue": 1770.185,
+        "etg_revenue": 1225.222,
+        "op_margin_pct": 21.07
+      },
+      {
+        "fy": "FY2024",
+        "revenue": 3857.669,
+        "op_income": 824.455,
+        "cfo": 672.37,
+        "capex": 58.261,
+        "fcf": 614.109,
+        "fsg_revenue": 2639.354,
+        "etg_revenue": 1263.626,
+        "op_margin_pct": 21.37
+      },
+      {
+        "fy": "FY2025",
+        "revenue": 4485.044,
+        "op_income": 1018.998,
+        "cfo": 934.266,
+        "capex": 72.886,
+        "fcf": 861.38,
+        "fsg_revenue": 3117.277,
+        "etg_revenue": 1413.12,
+        "op_margin_pct": 22.72
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "FY24 Q3",
+        "revenue": 992.246,
+        "op_income": 216.446,
+        "fsg_revenue": 681.626,
+        "fsg_op_income": 153.594,
+        "etg_revenue": 322.129,
+        "etg_op_income": 75.788,
+        "diluted_eps": 0.97,
+        "op_margin_pct": 21.81,
+        "fsg_op_margin_pct": 22.53,
+        "etg_op_margin_pct": 23.53
+      },
+      {
+        "quarter": "FY24 Q4",
+        "revenue": 1013.665,
+        "op_income": 218.646,
+        "fsg_revenue": 691.78,
+        "fsg_op_income": 154.513,
+        "etg_revenue": 336.233,
+        "etg_op_income": 81.814,
+        "diluted_eps": 0.99,
+        "op_margin_pct": 21.57,
+        "fsg_op_margin_pct": 22.34,
+        "etg_op_margin_pct": 24.33
+      },
+      {
+        "quarter": "FY25 Q1",
+        "revenue": 1030.222,
+        "op_income": 226.805,
+        "fsg_revenue": 713.174,
+        "fsg_op_income": 166.116,
+        "etg_revenue": 330.315,
+        "etg_op_income": 76.456,
+        "diluted_eps": 1.2,
+        "op_margin_pct": 22.02,
+        "fsg_op_margin_pct": 23.29,
+        "etg_op_margin_pct": 23.15
+      },
+      {
+        "quarter": "FY25 Q2",
+        "revenue": 1097.82,
+        "op_income": 248.152,
+        "fsg_revenue": 767.07,
+        "fsg_op_income": 184.98,
+        "etg_revenue": 342.167,
+        "etg_op_income": 77.88,
+        "diluted_eps": 1.12,
+        "op_margin_pct": 22.6,
+        "fsg_op_margin_pct": 24.12,
+        "etg_op_margin_pct": 22.76
+      },
+      {
+        "quarter": "FY25 Q3",
+        "revenue": 1147.591,
+        "op_income": 265.019,
+        "fsg_revenue": 802.661,
+        "fsg_op_income": 198.326,
+        "etg_revenue": 355.863,
+        "etg_op_income": 80.998,
+        "diluted_eps": 1.26,
+        "op_margin_pct": 23.09,
+        "fsg_op_margin_pct": 24.71,
+        "etg_op_margin_pct": 22.76
+      },
+      {
+        "quarter": "FY25 Q4",
+        "revenue": 1209.411,
+        "op_income": 279.022,
+        "fsg_revenue": 834.372,
+        "fsg_op_income": 200.973,
+        "etg_revenue": 384.775,
+        "etg_op_income": 89.618,
+        "diluted_eps": 1.33,
+        "op_margin_pct": 23.07,
+        "fsg_op_margin_pct": 24.09,
+        "etg_op_margin_pct": 23.29
+      },
+      {
+        "quarter": "FY26 Q1",
+        "revenue": 1178.582,
+        "op_income": 259.899,
+        "fsg_revenue": 820.0,
+        "fsg_op_income": 200.733,
+        "etg_revenue": 370.675,
+        "etg_op_income": 73.246,
+        "diluted_eps": 1.35,
+        "op_margin_pct": 22.05,
+        "fsg_op_margin_pct": 24.48,
+        "etg_op_margin_pct": 19.76
+      },
+      {
+        "quarter": "FY26 Q2",
+        "revenue": 1375.713,
+        "op_income": 350.437,
+        "fsg_revenue": 929.427,
+        "fsg_op_income": 243.064,
+        "etg_revenue": 459.532,
+        "etg_op_income": 121.809,
+        "diluted_eps": 1.66,
+        "op_margin_pct": 25.47,
+        "fsg_op_margin_pct": 26.15,
+        "etg_op_margin_pct": 26.51
+      }
+    ],
+    "ttm": {
+      "revenue": 4911.297,
+      "operating_income": 1154.377,
+      "cfo": 997.107,
+      "capex": 71.133,
+      "simple_fcf": 925.974
+    },
+    "balance_sheet_apr_2026": {
+      "cash": 210.335,
+      "total_debt": 2587.29,
+      "net_debt": 2376.955,
+      "goodwill": 4197.386,
+      "intangible_assets": 1715.157,
+      "total_assets": 9592.213,
+      "shareholders_equity": 4854.917,
+      "redeemable_nci": 536.654,
+      "inventory": 1410.527,
+      "accounts_receivable": 734.955
+    },
+    "ceilings": [
+      "FY24 Q4 and FY25 Q4 segment quarterly values are derived as annual less nine-month filings.",
+      "Named customer contract economics and SKU-level PMA adoption are not publicly disclosed."
+    ]
+  },
+  "kpis": [
+    {
+      "name": "FSG organic growth",
+      "history": [
+        {
+          "period": "FY2025",
+          "value_pct": 14
+        },
+        {
+          "period": "FY26 Q1",
+          "value_pct": 12
+        },
+        {
+          "period": "FY26 Q2",
+          "value_pct": 19
+        }
+      ],
+      "current": 19,
+      "thresholds": {
+        "green": ">=10% with price not material",
+        "yellow": "5-10% or mix-dependent",
+        "red": "<5% or price-led"
+      }
+    },
+    {
+      "name": "FSG operating margin",
+      "history": [
+        {
+          "period": "FY24 Q3",
+          "value_pct": 22.5
+        },
+        {
+          "period": "FY25 Q3",
+          "value_pct": 24.7
+        },
+        {
+          "period": "FY26 Q2",
+          "value_pct": 26.2
+        }
+      ],
+      "current": 26.2,
+      "thresholds": {
+        "green": ">=24%",
+        "yellow": "22-24%",
+        "red": "<22%"
+      }
+    },
+    {
+      "name": "ETG organic growth",
+      "history": [
+        {
+          "period": "FY26 Q1",
+          "value_pct": 6
+        },
+        {
+          "period": "FY26 Q2",
+          "value_pct": 17
+        }
+      ],
+      "current": 17,
+      "thresholds": {
+        "green": ">=8%",
+        "yellow": "3-8%",
+        "red": "<3% for 2 quarters"
+      }
+    },
+    {
+      "name": "Net debt / EBITDA",
+      "history": [
+        {
+          "period": "FY2025",
+          "value_x": 1.6
+        },
+        {
+          "period": "FY26 Q2",
+          "value_x": 1.74
+        }
+      ],
+      "current": 1.74,
+      "thresholds": {
+        "green": "<=2.0x",
+        "yellow": "2.0-2.5x",
+        "red": ">2.5x without visible deleveraging"
+      }
+    },
+    {
+      "name": "TTM simple FCF margin",
+      "history": [
+        {
+          "period": "TTM Apr-2026",
+          "value_pct": 18.9
+        }
+      ],
+      "current": 18.9,
+      "thresholds": {
+        "green": ">=17%",
+        "yellow": "14-17%",
+        "red": "<14%"
+      }
+    },
+    {
+      "name": "PMA cadence",
+      "history": [
+        {
+          "period": "FY2025 disclosure",
+          "value": "~400-550 new PMAs/year incl. acquisitions; ~20,000 total"
+        }
+      ],
+      "current": "~400-550/year",
+      "thresholds": {
+        "green": "cadence sustained with FSG organic > industry",
+        "yellow": "cadence stable but organic convergence",
+        "red": "cadence/adoption evidence weakens materially"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.2,
+      "years": [
+        "FY26E",
+        "FY27E",
+        "FY28E",
+        "FY29E",
+        "FY30E",
+        "FY31E"
+      ],
+      "revenue_path_bn": [
+        5.302,
+        5.62,
+        5.93,
+        6.25,
+        6.6,
+        6.97
+      ],
+      "margin_path_pct": [
+        23.9,
+        23.2,
+        22.8,
+        22.5,
+        22.3,
+        22.2
+      ],
+      "fcf_bn": [
+        0.981,
+        0.967,
+        0.996,
+        1.031,
+        1.076,
+        1.129
+      ],
+      "diluted_shares_m": 143.5,
+      "terminal_ev_ebit": 20.0,
+      "terminal_net_debt_bn": 3.1,
+      "terminal_redeemable_nci_bn": 0.65,
+      "terminal_vote_premium_pct": 10.0,
+      "economic_per_share_value": 189.52,
+      "per_share_value": 208.48,
+      "hei_a_per_share_value": 189.52,
+      "five_year_irr_hei_pct": -9.98,
+      "five_year_irr_hei_a_pct": -6.07
+    },
+    {
+      "name": "Base",
+      "probability": 0.55,
+      "years": [
+        "FY26E",
+        "FY27E",
+        "FY28E",
+        "FY29E",
+        "FY30E",
+        "FY31E"
+      ],
+      "revenue_path_bn": [
+        5.302,
+        5.86,
+        6.45,
+        7.1,
+        7.8,
+        8.57
+      ],
+      "margin_path_pct": [
+        23.9,
+        24.1,
+        24.3,
+        24.5,
+        24.7,
+        24.8
+      ],
+      "fcf_bn": [
+        0.981,
+        1.067,
+        1.187,
+        1.313,
+        1.451,
+        1.603
+      ],
+      "diluted_shares_m": 143.5,
+      "terminal_ev_ebit": 30.0,
+      "terminal_net_debt_bn": 2.4,
+      "terminal_redeemable_nci_bn": 0.7,
+      "terminal_vote_premium_pct": 20.0,
+      "economic_per_share_value": 422.72,
+      "per_share_value": 507.27,
+      "hei_a_per_share_value": 422.72,
+      "five_year_irr_hei_pct": 7.54,
+      "five_year_irr_hei_a_pct": 10.27
+    },
+    {
+      "name": "Up",
+      "probability": 0.25,
+      "years": [
+        "FY26E",
+        "FY27E",
+        "FY28E",
+        "FY29E",
+        "FY30E",
+        "FY31E"
+      ],
+      "revenue_path_bn": [
+        5.302,
+        6.1,
+        7.0,
+        8.0,
+        9.0,
+        10.0
+      ],
+      "margin_path_pct": [
+        23.9,
+        24.6,
+        25.1,
+        25.5,
+        25.8,
+        26.0
+      ],
+      "fcf_bn": [
+        0.981,
+        1.153,
+        1.344,
+        1.552,
+        1.764,
+        1.98
+      ],
+      "diluted_shares_m": 144.0,
+      "terminal_ev_ebit": 34.0,
+      "terminal_net_debt_bn": 2.0,
+      "terminal_redeemable_nci_bn": 0.8,
+      "terminal_vote_premium_pct": 30.0,
+      "economic_per_share_value": 594.44,
+      "per_share_value": 772.78,
+      "hei_a_per_share_value": 594.44,
+      "five_year_irr_hei_pct": 16.99,
+      "five_year_irr_hei_a_pct": 18.06
+    }
+  ],
+  "valuation": {
+    "mode": "Mode C — Mature Compounder",
+    "core": 315.0,
+    "execution": 0,
+    "ecosystem": 0,
+    "drag": "HEI voting-premium normalization + acquisition capital/NCI/debt",
+    "expected_value": 319.08,
+    "expected_future_value_5y": 513.89,
+    "expected_irr": 7.82,
+    "current_price": 352.67,
+    "upside_downside_ratio": 2.91,
+    "class_adjusted_market": {
+      "equity_bn": 41.39,
+      "ev_bn": 44.3,
+      "ttm_ev_ebit": 38.4,
+      "ttm_fcf_yield_pct": 2.24
+    },
+    "hei_a_reference": {
+      "current_price": 259.23,
+      "expected_future_value_5y": 419.01,
+      "expected_irr_pct": 10.08,
+      "10pct_hurdle_value": 260.17
+    },
+    "dcf_cross_check": {
+      "normalized_fy26_fcf_bn": 0.981,
+      "base_fcf_path_bn": [
+        0.981,
+        1.067,
+        1.187,
+        1.313,
+        1.451,
+        1.603
+      ],
+      "sensitivity_economic_per_share": {
+        "8.0%_ke_4.5%_g": 263.2,
+        "8.5%_ke_4.5%_g": 229.8,
+        "9.0%_ke_4.5%_g": 203.8,
+        "8.5%_ke_5.0%_g": 258.6
+      }
+    }
+  },
+  "reverse_expectations": {
+    "horizon_years": 5,
+    "required_hei_future_price_for_10pct_irr": 567.98,
+    "assumptions": {
+      "terminal_ev_ebit": 30.0,
+      "terminal_ebit_margin_pct": 24.8,
+      "terminal_shares_m": 143.0,
+      "terminal_net_debt_plus_redeemable_nci_bn": 3.2
+    },
+    "if_vote_premium_persists_36pct": {
+      "required_fy31_revenue_bn": 8.46,
+      "required_fy26_fy31_revenue_cagr_pct": 9.79
+    },
+    "if_vote_premium_normalizes_20pct": {
+      "required_fy31_revenue_bn": 9.53,
+      "required_fy26_fy31_revenue_cagr_pct": 12.44
+    },
+    "if_vote_premium_normalizes_10pct": {
+      "required_fy31_revenue_bn": 10.35,
+      "required_fy26_fy31_revenue_cagr_pct": 14.32
+    },
+    "interpretation": "At the HEI price, a 10% return is achievable with near-consensus-like operating growth only if the current voting premium largely persists. Premium normalization forces a materially higher operating growth hurdle."
+  },
+  "consensus": {
+    "fy1": {
+      "year": "FY2026",
+      "revenue_bn": 5.3,
+      "revenue_growth_pct": 17.6,
+      "eps": 6.08,
+      "eps_alt": 6.12
+    },
+    "fy2": {
+      "year": "FY2027",
+      "revenue_bn": 5.84,
+      "revenue_growth_pct": 10.3,
+      "eps": 6.8,
+      "eps_growth_pct": 12.0
+    },
+    "fy3": {
+      "year": "FY2028",
+      "revenue_bn": 6.32,
+      "revenue_growth_pct": 8.7
+    },
+    "price_target": {
+      "average": 389.26,
+      "range": [
+        290,
+        472
+      ]
+    },
+    "revision_trend": "FY2026 estimates benefited from Q2 beat; medium-term consensus still embeds deceleration into FY2027-28."
+  },
+  "stance": {
+    "zone": "HEI: 가격 기준 회피 / 기존 보유 시 축소 검토; HEI.A: 저가에서 조건부 관심",
+    "price_bands": {
+      "HEI": {
+        "attractive": "<= $300",
+        "watch": "$300-$325",
+        "expensive": "$325-$350",
+        "avoid": "> $350"
+      },
+      "HEI.A": {
+        "attractive": "<= $240",
+        "watch": "$240-$260",
+        "expensive": "> $260"
+      }
+    },
+    "horizon": "5 years",
+    "hurdle": "10-12% annualized expected return",
+    "time_value": "At the H1 frozen price HEI probability-weighted 5Y IRR is ~7.8%, below the 10% minimum hurdle."
+  },
+  "catalysts": [
+    {
+      "when": "2026-08-25 after NYSE close",
+      "event": "FY2026 Q3 results",
+      "sensitivity": "Very high: tests FSG organic growth, ETG mix, cash conversion and post-acquisition leverage."
+    },
+    {
+      "when": "FY2026 Q4 / FY2027",
+      "event": "Wencor + FY2026 acquisition cross-sell and margin evidence",
+      "sensitivity": "High: validates or weakens acquisition-return proxy."
+    },
+    {
+      "when": "2026-2027",
+      "event": "Aerospace supply-chain normalization",
+      "sensitivity": "Two-sided: improves customer operations but may reduce urgency for alternatives while lowering HEICO input constraints."
+    },
+    {
+      "when": "ongoing",
+      "event": "HEI/HEI.A premium movement",
+      "sensitivity": "High specifically for HEI expected return; not company operating value."
+    }
+  ],
+  "falsification_conditions": [
+    "FSG organic growth falls below 5% for two consecutive quarters while air traffic remains healthy.",
+    "FSG operating margin sustainably falls below 22% after acquisition normalization.",
+    "Net debt/EBITDA exceeds 2.5x without a credible deleveraging path or deal-level earnings contribution.",
+    "TTM simple FCF margin falls below 14% without a temporary working-capital explanation.",
+    "ETG growth stalls and margin volatility is accompanied by program loss rather than timing.",
+    "HEI voting premium compresses materially without compensating operating upgrades."
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "1. 산업/고객문제/전달"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3. 제품/기술 + Appendix ceiling"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "3. FSG/Wencor + 4. 재무"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3. 고객/채택 + Appendix ceiling"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "1. 경쟁구조 + 3. 경쟁"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "1. ETG 산업 + 3. ETG + 4. 재무"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "2. 경영진/거버넌스"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "3. M&A + 4. 자본배분 + Appendix"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "4. 재무 + Appendix"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "4. 현금흐름"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "4. 부채/NCI + 5. 밸류에이션"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "1. 규제/공급 + 3. 운영"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "5. 컨센서스/포지셔닝"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "0/2/5. HEI vs HEI.A"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "5. 시나리오/역산"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "0. Variant + 6. 모니터링"
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "title": "3Y 매출·영업이익·FCF",
+      "source": "financials.annual_3y"
+    },
+    {
+      "vis_id": "VIS-002",
+      "title": "8Q 연결 영업마진",
+      "source": "financials.quarterly_8q"
+    },
+    {
+      "vis_id": "VIS-003",
+      "title": "8Q FSG/ETG 영업마진",
+      "source": "financials.quarterly_8q"
+    },
+    {
+      "vis_id": "VIS-004",
+      "title": "HEI vs HEI.A 가격/의결권 프리미엄",
+      "source": "share_classes"
+    },
+    {
+      "vis_id": "VIS-005",
+      "title": "Down/Base/Up 5Y 가치",
+      "source": "scenarios"
+    },
+    {
+      "vis_id": "VIS-006",
+      "title": "Reverse expectations: voting premium별 요구 매출 CAGR",
+      "source": "reverse_expectations"
+    },
+    {
+      "vis_id": "VIS-007",
+      "title": "KPI 신호등",
+      "source": "kpis"
+    }
+  ],
+  "source_registry": [
+    {
+      "id": "S1",
+      "type": "primary",
+      "title": "HEICO FY2025 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/46619/000004661925000082/hei-20251031.htm"
+    },
+    {
+      "id": "S2",
+      "type": "primary",
+      "title": "HEICO FY2026 Q2 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/46619/000004661926000016/hei-20260430.htm"
+    },
+    {
+      "id": "S3",
+      "type": "primary",
+      "title": "HEICO FY2026 Q2 earnings release",
+      "url": "https://www.sec.gov/Archives/edgar/data/46619/000004661926000012/a04302026ex991earningsrele.htm"
+    },
+    {
+      "id": "S4",
+      "type": "primary",
+      "title": "HEICO June 2026 revolver amendment 8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/46619/000121390026069674/ea0294696-8k_heico.htm"
+    },
+    {
+      "id": "S5",
+      "type": "primary",
+      "title": "HEICO July 2026 notes 8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/46619/000121390026078776/ea0298133-8k_heico.htm"
+    },
+    {
+      "id": "S6",
+      "type": "primary",
+      "title": "HEICO 2026 Proxy",
+      "url": "https://heico.com/wp-content/uploads/2026/02/Annual-Proxy.pdf"
+    },
+    {
+      "id": "S7",
+      "type": "primary",
+      "title": "FAA PMA overview",
+      "url": "https://www.faa.gov/aircraft/air_cert/design_approvals/pma"
+    },
+    {
+      "id": "S8",
+      "type": "primary",
+      "title": "FAA PMA design approval",
+      "url": "https://www.faa.gov/aircraft/air_cert/design_approvals/pma/pma_des"
+    },
+    {
+      "id": "S9",
+      "type": "industry_primary",
+      "title": "IATA 2025 passenger demand and capacity",
+      "url": "https://www.iata.org/en/pressroom/2026-releases/2026-01-29-02/"
+    },
+    {
+      "id": "S10",
+      "type": "industry_primary",
+      "title": "IATA aerospace supply-chain cost study",
+      "url": "https://www.iata.org/en/pressroom/2025-releases/2025-10-13-01/"
+    },
+    {
+      "id": "S11",
+      "type": "competitor_primary",
+      "title": "GE Aerospace 2025 annual report",
+      "url": "https://www.geaerospace.com/investor-relations/annual-report"
+    },
+    {
+      "id": "S12",
+      "type": "market",
+      "title": "StockAnalysis HEI forecast",
+      "url": "https://stockanalysis.com/stocks/hei/forecast/"
+    },
+    {
+      "id": "S13",
+      "type": "market",
+      "title": "MarketScreener HEICO estimates",
+      "url": "https://ae.marketscreener.com/quote/stock/HEICO-CORPORATION-41642004/finances/"
+    },
+    {
+      "id": "S14",
+      "type": "market",
+      "title": "MarketBeat HEI short interest",
+      "url": "https://www.marketbeat.com/stocks/NYSE/HEI/short-interest/"
+    }
+  ]
+}

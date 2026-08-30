@@ -1,0 +1,1257 @@
+{
+  "meta": {
+    "ticker": "FICO",
+    "company": "Fair Isaac Corporation",
+    "T0": "2026-08-29 Asia/Seoul",
+    "price_asof": "2026-08-28 close",
+    "price": 1153.57,
+    "filing_asof": "Q3 FY2026 Form 10-Q filed 2026-07-29; period ended 2026-06-30",
+    "consensus_asof": "2026-08-28",
+    "version": "Deep Dive OS v1.7",
+    "currency": "USD"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "fiscal_year": "FY2023",
+        "revenue": 1513.557,
+        "scores_revenue": 773.828,
+        "software_revenue": 739.729,
+        "operating_income": 642.83,
+        "net_income": 429.375,
+        "cfo": 468.915,
+        "free_cash_flow": 464.678,
+        "sbc": 123.847,
+        "scores_segment_op_income": 681.071,
+        "software_segment_op_income": 241.191
+      },
+      {
+        "fiscal_year": "FY2024",
+        "revenue": 1717.526,
+        "scores_revenue": 919.65,
+        "software_revenue": 797.876,
+        "operating_income": 733.629,
+        "net_income": 512.811,
+        "cfo": 632.964,
+        "free_cash_flow": 607.4,
+        "sbc": 149.439,
+        "scores_segment_op_income": 813.354,
+        "software_segment_op_income": 257.529
+      },
+      {
+        "fiscal_year": "FY2025",
+        "revenue": 1990.869,
+        "scores_revenue": 1168.575,
+        "software_revenue": 822.294,
+        "operating_income": 924.85,
+        "net_income": 651.946,
+        "cfo": 778.807,
+        "free_cash_flow": 739.0,
+        "sbc": 156.667,
+        "scores_segment_op_income": 1026.243,
+        "software_segment_op_income": 247.694
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "Q4 FY24",
+        "revenue": 453.8,
+        "scores": 249.2,
+        "software": 204.6,
+        "net_income": 135.7,
+        "diluted_eps": 5.44,
+        "cfo": 226.5,
+        "fcf": 219.4
+      },
+      {
+        "quarter": "Q1 FY25",
+        "revenue": 440.0,
+        "scores": 235.7,
+        "software": 204.3,
+        "net_income": 152.5,
+        "diluted_eps": 6.14,
+        "cfo": 194.0,
+        "fcf": 186.8
+      },
+      {
+        "quarter": "Q2 FY25",
+        "revenue": 498.7,
+        "scores": 297.0,
+        "software": 201.7,
+        "net_income": 162.6,
+        "diluted_eps": 6.59,
+        "cfo": 74.9,
+        "fcf": 65.5
+      },
+      {
+        "quarter": "Q3 FY25",
+        "revenue": 536.4,
+        "scores": 324.3,
+        "software": 212.1,
+        "net_income": 181.8,
+        "diluted_eps": 7.4,
+        "cfo": 286.2,
+        "fcf": 276.2
+      },
+      {
+        "quarter": "Q4 FY25",
+        "revenue": 515.8,
+        "scores": 311.6,
+        "software": 204.2,
+        "net_income": 155.0,
+        "diluted_eps": 6.42,
+        "cfo": 223.7,
+        "fcf": 210.8
+      },
+      {
+        "quarter": "Q1 FY26",
+        "revenue": 512.0,
+        "scores": 305.0,
+        "software": 207.0,
+        "net_income": 158.4,
+        "diluted_eps": 6.61,
+        "cfo": 174.1,
+        "fcf": 165.4
+      },
+      {
+        "quarter": "Q2 FY26",
+        "revenue": 691.7,
+        "scores": 475.0,
+        "software": 216.7,
+        "net_income": 264.5,
+        "diluted_eps": 11.14,
+        "cfo": 223.4,
+        "fcf": 214.3
+      },
+      {
+        "quarter": "Q3 FY26",
+        "revenue": 674.2,
+        "scores": 458.9,
+        "software": 215.3,
+        "net_income": 237.2,
+        "diluted_eps": 10.45,
+        "cfo": 380.4,
+        "fcf": 370.3
+      }
+    ],
+    "ttm_fcf": 960.8,
+    "q3_fy26_scores_segment_margin_pct": 91,
+    "q3_fy26_software_segment_margin_pct": 26,
+    "debt_2026_06_30": 5582.389,
+    "cash_2026_06_30": 248.444,
+    "net_debt_2026_06_30": 5333.945,
+    "ceilings": [
+      "Exact GSE production share by credit-score model is not publicly disclosed.",
+      "Direct License paid transaction volume, pricing-option mix and realized take-rate are not public.",
+      "Industry-wide score pulls per mortgage application / re-pull frequency are not available as a consistent primary dataset.",
+      "Vendor-sponsored FICO 10T vs VantageScore 4.0 studies conflict; no unconflicted definitive performance winner is established."
+    ]
+  },
+  "kpis": [
+    {
+      "name": "GSE mortgage score share retention",
+      "history": [
+        {
+          "date": "2026-04-22",
+          "value": "VS4 limited rollout live; Classic FICO default for non-approved lenders"
+        }
+      ],
+      "current": "Exact share not public",
+      "thresholds": {
+        "green": "FICO retains clear majority of observable GSE/lender production as disclosure expands",
+        "yellow": "VS4 adoption expands but FICO remains majority / economics buffered by Direct License",
+        "red": "FICO falls below 60% of newly observable eligible mortgage production or material lender migration accelerates for two consecutive quarters"
+      }
+    },
+    {
+      "name": "Mortgage B2B revenue growth / price realization",
+      "history": [
+        {
+          "quarter": "Q3 FY25",
+          "mortgage_b2b_revenue": 144
+        },
+        {
+          "quarter": "Q4 FY25",
+          "mortgage_b2b_revenue": 140
+        },
+        {
+          "quarter": "Q1 FY26",
+          "mortgage_b2b_revenue": 127
+        },
+        {
+          "quarter": "Q2 FY26",
+          "mortgage_b2b_revenue": 300
+        },
+        {
+          "quarter": "Q3 FY26",
+          "mortgage_b2b_revenue": 282
+        }
+      ],
+      "current": "Q3 FY26 ~$282M; mortgage origination score growth ~97% YoY",
+      "thresholds": {
+        "green": "Positive growth with evidence of retained volume/share after price normalization",
+        "yellow": "Revenue flat to +10% while share data remains opaque",
+        "red": "Two consecutive quarters of >10% YoY decline not explained by mortgage originations alone"
+      }
+    },
+    {
+      "name": "Direct License commercialization",
+      "history": [
+        {
+          "date": "2025-10-01",
+          "value": "Program launched"
+        },
+        {
+          "date": "2026-08-13",
+          "value": "Participating reseller network covers 73.1% of reseller volume"
+        }
+      ],
+      "current": "Coverage disclosed; paid transaction share not disclosed",
+      "thresholds": {
+        "green": "Company discloses rising paid production and realized economics supportive of Scores revenue",
+        "yellow": "Coverage expands without transaction economics",
+        "red": "Major resellers/lenders reject program or economics are materially repriced downward"
+      }
+    },
+    {
+      "name": "Platform ARR / DBNRR",
+      "history": [
+        {
+          "quarter": "Q3 FY25",
+          "total_arr": 739,
+          "platform_arr": 254,
+          "nonplatform_arr": 485,
+          "total_dbnrr": 103,
+          "platform_dbnrr": 115,
+          "nonplatform_dbnrr": 97
+        },
+        {
+          "quarter": "Q4 FY25",
+          "total_arr": 747,
+          "platform_arr": 264,
+          "nonplatform_arr": 484,
+          "total_dbnrr": 102,
+          "platform_dbnrr": 112,
+          "nonplatform_dbnrr": 97
+        },
+        {
+          "quarter": "Q1 FY26",
+          "total_arr": 766,
+          "platform_arr": 303,
+          "nonplatform_arr": 463,
+          "total_dbnrr": 103,
+          "platform_dbnrr": 122,
+          "nonplatform_dbnrr": 91
+        },
+        {
+          "quarter": "Q2 FY26",
+          "total_arr": 789,
+          "platform_arr": 349,
+          "nonplatform_arr": 440,
+          "total_dbnrr": 109,
+          "platform_dbnrr": 136,
+          "nonplatform_dbnrr": 90
+        },
+        {
+          "quarter": "Q3 FY26",
+          "total_arr": 816,
+          "platform_arr": 413,
+          "nonplatform_arr": 403,
+          "total_dbnrr": 109,
+          "platform_dbnrr": 148,
+          "nonplatform_dbnrr": 82
+        }
+      ],
+      "current": "Q3 FY26 Platform ARR $413M; DBNRR 148%",
+      "thresholds": {
+        "green": "Platform ARR growth >25% and DBNRR >115% with Software margin improving",
+        "yellow": "Platform ARR growth 15-25% or DBNRR 100-115%, margin still weak",
+        "red": "Platform DBNRR <100% or total Software ARR growth <5% for two quarters"
+      }
+    },
+    {
+      "name": "Software P&L conversion",
+      "history": [
+        {
+          "quarter": "Q3 FY25",
+          "revenue": 212.1,
+          "segment_margin_pct": 32
+        },
+        {
+          "quarter": "Q3 FY26",
+          "revenue": 215.3,
+          "segment_margin_pct": 26
+        }
+      ],
+      "current": "Q3 FY26 revenue +2% YoY; margin 26%",
+      "thresholds": {
+        "green": "Revenue growth >8% and segment margin >=30%",
+        "yellow": "Revenue growth 3-8% or margin 25-30%",
+        "red": "Revenue growth <3% and margin <25% for two quarters"
+      }
+    },
+    {
+      "name": "Leverage / buyback discipline",
+      "history": [
+        {
+          "date": "2025-09-30",
+          "debt": 3055.691
+        },
+        {
+          "date": "2026-06-30",
+          "debt": 5582.389
+        }
+      ],
+      "current": "Net debt ~$5.33B; $1.5B ASR executed Jun-2026",
+      "thresholds": {
+        "green": "Net debt/FCF declines and repurchases occur below fair-value band",
+        "yellow": "Leverage stable with buybacks near fair value",
+        "red": "Net debt rises while repurchases continue above $1,300 without upward FCF revisions"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.3,
+      "revenue_path": [
+        2.53,
+        2.55,
+        2.62,
+        2.7
+      ],
+      "margin_path": [
+        39.9,
+        38.4,
+        38.9,
+        40.7
+      ],
+      "margin_metric": "FCF margin %",
+      "fcf": [
+        1.01,
+        0.98,
+        1.02,
+        1.1
+      ],
+      "diluted_shares": 22.5,
+      "exit_fcf_multiple": 16.0,
+      "per_share_value": 782.0
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "revenue_path": [
+        2.53,
+        2.88,
+        3.2,
+        3.52
+      ],
+      "margin_path": [
+        39.9,
+        41.0,
+        41.9,
+        42.3
+      ],
+      "margin_metric": "FCF margin %",
+      "fcf": [
+        1.01,
+        1.18,
+        1.34,
+        1.49
+      ],
+      "diluted_shares": 21.2,
+      "exit_fcf_multiple": 23.0,
+      "per_share_value": 1617.0
+    },
+    {
+      "name": "Bull",
+      "probability": 0.2,
+      "revenue_path": [
+        2.53,
+        3.02,
+        3.48,
+        3.92
+      ],
+      "margin_path": [
+        39.9,
+        42.4,
+        43.4,
+        43.9
+      ],
+      "margin_metric": "FCF margin %",
+      "fcf": [
+        1.01,
+        1.28,
+        1.51,
+        1.72
+      ],
+      "diluted_shares": 20.0,
+      "exit_fcf_multiple": 27.0,
+      "per_share_value": 2322.0
+    }
+  ],
+  "valuation": {
+    "mode": "HYBRID: levered FCF DCF + scenario/reverse expectations",
+    "core": 1182,
+    "execution": null,
+    "ecosystem": 0,
+    "drag": "Leverage and repurchase-price discipline embedded in FCF/share and scenario share-count paths; no double subtraction.",
+    "expected_value": 1507.5,
+    "expected_value_horizon": "FY2029 / approximately 3 years",
+    "expected_present_value_at_10pct": 1133.0,
+    "expected_irr": 0.09329607563648556,
+    "current_price": 1153.57,
+    "hurdle_rate": 0.12,
+    "upside_downside_base_vs_bear": 1.2472212503700517,
+    "upside_downside_expected_vs_bear": 0.9525257690340989,
+    "ttm_fcf_yield": 0.03785875783240486,
+    "normalized_diluted_share_base_m": 22.0,
+    "current_basic_shares_2026_06_30_m": 21.6
+  },
+  "reverse_expectations": {
+    "starting_fcf_fy26e": 1.01,
+    "shares_m": 22.0,
+    "cost_of_equity": 0.09,
+    "terminal_growth": 0.035,
+    "required_5y_fcf_cagr": 0.1027902390491542,
+    "interpretation": "At $1,153.57, using a normalized 22.0M diluted economic share base, an equity DCF with 9% cost of equity and 3.5% terminal growth requires about 10.3% annual FCF growth for five years."
+  },
+  "consensus": {
+    "fy1": {
+      "fiscal_year": "FY2026",
+      "revenue": 2.548,
+      "net_income": 0.87
+    },
+    "fy2": {
+      "fiscal_year": "FY2027",
+      "revenue": 2.897,
+      "net_income": 1.016
+    },
+    "fy3": {
+      "fiscal_year": "FY2028",
+      "revenue": 3.275,
+      "net_income": 1.226
+    },
+    "revision_trend": "FY2026 company guidance was raised from $2.35B revenue / $33.47 GAAP EPS at initial FY26 guide to $2.53B / $36.86 by Q3 FY26. Sell-side targets remain dispersed after the credit-score competition reset."
+  },
+  "stance": {
+    "zone": "WATCH / conditional accumulation only below the required-return band",
+    "price_bands": {
+      "high_conviction_buy_below": 950,
+      "attractive_conditional": "$950-$1,075",
+      "watch_fair_value": "$1,075-$1,300",
+      "insufficient_return_above": 1300,
+      "probability_weighted_12pct_hurdle_entry": 1073,
+      "preferred_trigger_around": 1000
+    },
+    "horizon": "3 years",
+    "reason": "Probability-weighted 3Y expected IRR is ~9.3%, below the 12% hurdle; base-vs-bear upside/downside is ~1.25x at the current price."
+  },
+  "catalysts": [
+    {
+      "when": "2026-09 to 2027-08",
+      "event": "Quarterly Scores B2B / mortgage revenue and any model-share disclosure",
+      "sensitivity": "Highest - distinguishes pricing normalization from share erosion."
+    },
+    {
+      "when": "2026-10-26 onward",
+      "event": "Fannie Mae CRT disclosure support for Classic FICO or VantageScore 4.0 files",
+      "sensitivity": "High - may improve observability of score-model adoption over time."
+    },
+    {
+      "when": "2026-11 (expected)",
+      "event": "FY2026 results / FY2027 guidance",
+      "sensitivity": "High - tests whether mortgage pricing step-up becomes durable baseline and whether Software margin starts recovering."
+    },
+    {
+      "when": "2026-2027, date TBD",
+      "event": "FICO Score 10T GSE implementation guidance",
+      "sensitivity": "High - affects competitive parity and migration incentives."
+    },
+    {
+      "when": "Each quarter",
+      "event": "Direct License commercial usage / reseller additions",
+      "sensitivity": "High - validates whether 73.1% coverage converts to paid volume."
+    },
+    {
+      "when": "Each quarter",
+      "event": "Debt reduction / repurchase pace",
+      "sensitivity": "Medium-high - determines whether per-share compounding offsets higher interest burden."
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "0,3"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "1"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1; Appendix A"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1,3,6; Appendix A"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3,4,5; Appendix A"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3; Appendix A"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "4,5"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "4,5"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "3"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "4,5"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "3"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "3"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "2; Appendix A"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "4; Appendix B/C"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "2,4,5; Appendix D"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "1,3,6"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "0,5,6; Appendix E"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE",
+      "h3_locator": "5,6"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "COMPLETE",
+      "h3_locator": "6"
+    },
+    {
+      "rc_id": "RC-020",
+      "status": "NOT_MATERIAL",
+      "h3_locator": "3,4; Appendix A"
+    }
+  ],
+  "visual_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "3Y Segment Revenue",
+      "authoritative_source_block": "financials.annual_3y",
+      "source_values": [
+        {
+          "fiscal_year": "FY2023",
+          "revenue": 1513.557,
+          "scores_revenue": 773.828,
+          "software_revenue": 739.729,
+          "operating_income": 642.83,
+          "net_income": 429.375,
+          "cfo": 468.915,
+          "free_cash_flow": 464.678,
+          "sbc": 123.847,
+          "scores_segment_op_income": 681.071,
+          "software_segment_op_income": 241.191
+        },
+        {
+          "fiscal_year": "FY2024",
+          "revenue": 1717.526,
+          "scores_revenue": 919.65,
+          "software_revenue": 797.876,
+          "operating_income": 733.629,
+          "net_income": 512.811,
+          "cfo": 632.964,
+          "free_cash_flow": 607.4,
+          "sbc": 149.439,
+          "scores_segment_op_income": 813.354,
+          "software_segment_op_income": 257.529
+        },
+        {
+          "fiscal_year": "FY2025",
+          "revenue": 1990.869,
+          "scores_revenue": 1168.575,
+          "software_revenue": 822.294,
+          "operating_income": 924.85,
+          "net_income": 651.946,
+          "cfo": 778.807,
+          "free_cash_flow": 739.0,
+          "sbc": 156.667,
+          "scores_segment_op_income": 1026.243,
+          "software_segment_op_income": 247.694
+        }
+      ],
+      "source_version_or_hash": "01861c683e5d43a1",
+      "display_values": "generated from source_values",
+      "narrative_locator": "Ch4.1",
+      "table_locator": "Appendix B1",
+      "caption_locator": "Scores mix expands while Software growth is modest.",
+      "rendered_asset_locator": "#vis-001",
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "Latest 8Q Revenue & FCF",
+      "authoritative_source_block": "financials.quarterly_8q",
+      "source_values": [
+        {
+          "quarter": "Q4 FY24",
+          "revenue": 453.8,
+          "scores": 249.2,
+          "software": 204.6,
+          "net_income": 135.7,
+          "diluted_eps": 5.44,
+          "cfo": 226.5,
+          "fcf": 219.4
+        },
+        {
+          "quarter": "Q1 FY25",
+          "revenue": 440.0,
+          "scores": 235.7,
+          "software": 204.3,
+          "net_income": 152.5,
+          "diluted_eps": 6.14,
+          "cfo": 194.0,
+          "fcf": 186.8
+        },
+        {
+          "quarter": "Q2 FY25",
+          "revenue": 498.7,
+          "scores": 297.0,
+          "software": 201.7,
+          "net_income": 162.6,
+          "diluted_eps": 6.59,
+          "cfo": 74.9,
+          "fcf": 65.5
+        },
+        {
+          "quarter": "Q3 FY25",
+          "revenue": 536.4,
+          "scores": 324.3,
+          "software": 212.1,
+          "net_income": 181.8,
+          "diluted_eps": 7.4,
+          "cfo": 286.2,
+          "fcf": 276.2
+        },
+        {
+          "quarter": "Q4 FY25",
+          "revenue": 515.8,
+          "scores": 311.6,
+          "software": 204.2,
+          "net_income": 155.0,
+          "diluted_eps": 6.42,
+          "cfo": 223.7,
+          "fcf": 210.8
+        },
+        {
+          "quarter": "Q1 FY26",
+          "revenue": 512.0,
+          "scores": 305.0,
+          "software": 207.0,
+          "net_income": 158.4,
+          "diluted_eps": 6.61,
+          "cfo": 174.1,
+          "fcf": 165.4
+        },
+        {
+          "quarter": "Q2 FY26",
+          "revenue": 691.7,
+          "scores": 475.0,
+          "software": 216.7,
+          "net_income": 264.5,
+          "diluted_eps": 11.14,
+          "cfo": 223.4,
+          "fcf": 214.3
+        },
+        {
+          "quarter": "Q3 FY26",
+          "revenue": 674.2,
+          "scores": 458.9,
+          "software": 215.3,
+          "net_income": 237.2,
+          "diluted_eps": 10.45,
+          "cfo": 380.4,
+          "fcf": 370.3
+        }
+      ],
+      "source_version_or_hash": "57efabde05f74761",
+      "display_values": "generated from source_values",
+      "narrative_locator": "Ch4.2",
+      "table_locator": "Appendix B2",
+      "caption_locator": "Revenue mix and FCF show the FY26 Scores step-up.",
+      "rendered_asset_locator": "#vis-002",
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "Mortgage B2B Revenue",
+      "authoritative_source_block": "kpis[1].history",
+      "source_values": [
+        {
+          "quarter": "Q3 FY25",
+          "mortgage_b2b_revenue": 144
+        },
+        {
+          "quarter": "Q4 FY25",
+          "mortgage_b2b_revenue": 140
+        },
+        {
+          "quarter": "Q1 FY26",
+          "mortgage_b2b_revenue": 127
+        },
+        {
+          "quarter": "Q2 FY26",
+          "mortgage_b2b_revenue": 300
+        },
+        {
+          "quarter": "Q3 FY26",
+          "mortgage_b2b_revenue": 282
+        }
+      ],
+      "source_version_or_hash": "5ea2e14bbcd0121a",
+      "display_values": "generated from source_values",
+      "narrative_locator": "Ch1.5 / Ch4.3",
+      "table_locator": "KPI ledger",
+      "caption_locator": "Company IR classification; current share loss cannot be inferred from revenue alone.",
+      "rendered_asset_locator": "#vis-003",
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "Software ARR Migration",
+      "authoritative_source_block": "kpis[3].history",
+      "source_values": [
+        {
+          "quarter": "Q3 FY25",
+          "total_arr": 739,
+          "platform_arr": 254,
+          "nonplatform_arr": 485,
+          "total_dbnrr": 103,
+          "platform_dbnrr": 115,
+          "nonplatform_dbnrr": 97
+        },
+        {
+          "quarter": "Q4 FY25",
+          "total_arr": 747,
+          "platform_arr": 264,
+          "nonplatform_arr": 484,
+          "total_dbnrr": 102,
+          "platform_dbnrr": 112,
+          "nonplatform_dbnrr": 97
+        },
+        {
+          "quarter": "Q1 FY26",
+          "total_arr": 766,
+          "platform_arr": 303,
+          "nonplatform_arr": 463,
+          "total_dbnrr": 103,
+          "platform_dbnrr": 122,
+          "nonplatform_dbnrr": 91
+        },
+        {
+          "quarter": "Q2 FY26",
+          "total_arr": 789,
+          "platform_arr": 349,
+          "nonplatform_arr": 440,
+          "total_dbnrr": 109,
+          "platform_dbnrr": 136,
+          "nonplatform_dbnrr": 90
+        },
+        {
+          "quarter": "Q3 FY26",
+          "total_arr": 816,
+          "platform_arr": 413,
+          "nonplatform_arr": 403,
+          "total_dbnrr": 109,
+          "platform_dbnrr": 148,
+          "nonplatform_dbnrr": 82
+        }
+      ],
+      "source_version_or_hash": "35615e6790309093",
+      "display_values": "generated from source_values",
+      "narrative_locator": "Ch3.5 / Ch4.4",
+      "table_locator": "Appendix C1",
+      "caption_locator": "Platform ARR rises while non-platform runoff accelerates.",
+      "rendered_asset_locator": "#vis-004",
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-005",
+      "figure_title": "Debt vs FCF",
+      "authoritative_source_block": "financials debt/TTM FCF",
+      "source_values": [
+        {
+          "date": "FY2025 end",
+          "debt": 3.056,
+          "fcf": 0.739
+        },
+        {
+          "date": "Q3 FY26 / TTM",
+          "debt": 5.582,
+          "fcf": 0.961
+        }
+      ],
+      "source_version_or_hash": "37e3b3062b5b2dd3",
+      "display_values": "generated from source_values",
+      "narrative_locator": "Ch2.1 / Ch4.6",
+      "table_locator": "Appendix D",
+      "caption_locator": "Debt increased sharply alongside the 2026 ASR.",
+      "rendered_asset_locator": "#vis-005",
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-006",
+      "figure_title": "Event-annotated Price & P/E",
+      "authoritative_source_block": "market_history",
+      "source_values": [
+        {
+          "date": "2023-09-30",
+          "price": 868.53,
+          "pe": 51.3,
+          "p_fcf": 47.41
+        },
+        {
+          "date": "2023-12-31",
+          "price": 1164.01,
+          "pe": 65.06,
+          "p_fcf": 58.78
+        },
+        {
+          "date": "2024-03-31",
+          "price": 1249.61,
+          "pe": 65.6,
+          "p_fcf": 66.71
+        },
+        {
+          "date": "2024-06-30",
+          "price": 1488.66,
+          "pe": 78.27,
+          "p_fcf": 67.16
+        },
+        {
+          "date": "2024-09-30",
+          "price": 1943.52,
+          "pe": 95.04,
+          "p_fcf": 80.24
+        },
+        {
+          "date": "2024-12-31",
+          "price": 1990.93,
+          "pe": 91.37,
+          "p_fcf": 73.86
+        },
+        {
+          "date": "2025-03-31",
+          "price": 1844.16,
+          "pe": 79.42,
+          "p_fcf": 67.82
+        },
+        {
+          "date": "2025-06-30",
+          "price": 1827.96,
+          "pe": 71.49,
+          "p_fcf": 60.5
+        },
+        {
+          "date": "2025-09-30",
+          "price": 1496.53,
+          "pe": 56.39,
+          "p_fcf": 49.71
+        },
+        {
+          "date": "2025-12-31",
+          "price": 1690.62,
+          "pe": 62.59,
+          "p_fcf": 57.34
+        },
+        {
+          "date": "2026-03-31",
+          "price": 1067.54,
+          "pe": 33.83,
+          "p_fcf": 29.76
+        },
+        {
+          "date": "2026-06-30",
+          "price": 1194.78,
+          "pe": 34.52,
+          "p_fcf": 28.7
+        },
+        {
+          "date": "2026-08-28",
+          "price": 1153.57,
+          "pe": 33.32,
+          "p_fcf": 27.25
+        }
+      ],
+      "source_version_or_hash": "883001e7193133f3",
+      "display_values": "generated from source_values",
+      "narrative_locator": "Ch5.6",
+      "table_locator": "Appendix E4",
+      "caption_locator": "Quarter-end/as-of observations; historical data used as valuation context.",
+      "rendered_asset_locator": "#vis-006",
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-007",
+      "figure_title": "3Y Scenario Values",
+      "authoritative_source_block": "scenarios",
+      "source_values": [
+        {
+          "name": "Bear",
+          "probability": 0.3,
+          "revenue_path": [
+            2.53,
+            2.55,
+            2.62,
+            2.7
+          ],
+          "margin_path": [
+            39.9,
+            38.4,
+            38.9,
+            40.7
+          ],
+          "margin_metric": "FCF margin %",
+          "fcf": [
+            1.01,
+            0.98,
+            1.02,
+            1.1
+          ],
+          "diluted_shares": 22.5,
+          "exit_fcf_multiple": 16.0,
+          "per_share_value": 782.0
+        },
+        {
+          "name": "Base",
+          "probability": 0.5,
+          "revenue_path": [
+            2.53,
+            2.88,
+            3.2,
+            3.52
+          ],
+          "margin_path": [
+            39.9,
+            41.0,
+            41.9,
+            42.3
+          ],
+          "margin_metric": "FCF margin %",
+          "fcf": [
+            1.01,
+            1.18,
+            1.34,
+            1.49
+          ],
+          "diluted_shares": 21.2,
+          "exit_fcf_multiple": 23.0,
+          "per_share_value": 1617.0
+        },
+        {
+          "name": "Bull",
+          "probability": 0.2,
+          "revenue_path": [
+            2.53,
+            3.02,
+            3.48,
+            3.92
+          ],
+          "margin_path": [
+            39.9,
+            42.4,
+            43.4,
+            43.9
+          ],
+          "margin_metric": "FCF margin %",
+          "fcf": [
+            1.01,
+            1.28,
+            1.51,
+            1.72
+          ],
+          "diluted_shares": 20.0,
+          "exit_fcf_multiple": 27.0,
+          "per_share_value": 2322.0
+        }
+      ],
+      "source_version_or_hash": "7332762783a797aa",
+      "display_values": "generated from source_values",
+      "narrative_locator": "Ch5.4-5.5",
+      "table_locator": "Appendix E1",
+      "caption_locator": "Probability-weighted 3Y value is about $1,508; expected IRR ~9.3%.",
+      "rendered_asset_locator": "#vis-007",
+      "status": "PASS"
+    }
+  ],
+  "source_registry": [
+    {
+      "id": "S01",
+      "type": "SEC primary",
+      "title": "FICO FY2025 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/814547/000081454725000030/fico-20250930.htm"
+    },
+    {
+      "id": "S02",
+      "type": "SEC primary",
+      "title": "FICO Q3 FY2026 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/814547/000081454726000030/fico-20260630.htm"
+    },
+    {
+      "id": "S03",
+      "type": "Company primary",
+      "title": "FICO Q3 FY2026 earnings release",
+      "url": "https://investors.fico.com/news-releases/news-release-details/fico-announces-earnings-1045-share-third-quarter-fiscal-2026/"
+    },
+    {
+      "id": "S04",
+      "type": "Company primary",
+      "title": "FICO Q2 FY2025 earnings release",
+      "url": "https://investors.fico.com/news-releases/news-release-details/fico-announces-earnings-659-share-second-quarter-fiscal-2025"
+    },
+    {
+      "id": "S05",
+      "type": "Company primary",
+      "title": "FICO Q4 FY2024 earnings release",
+      "url": "https://investors.fico.com/news-releases/news-release-details/fico-announces-earnings-544-share-fourth-quarter-fiscal-2024/"
+    },
+    {
+      "id": "S06",
+      "type": "GSE primary",
+      "title": "Fannie Mae SEL-2026-04",
+      "url": "https://singlefamily.fanniemae.com/news-events/announcement-sel-2026-04-selling-guide-updates"
+    },
+    {
+      "id": "S07",
+      "type": "GSE primary",
+      "title": "Fannie Mae Credit Score Models and Reports Initiative",
+      "url": "https://singlefamily.fanniemae.com/originating-underwriting/credit-score-models"
+    },
+    {
+      "id": "S08",
+      "type": "GSE primary",
+      "title": "Freddie Mac Credit Score Models and Reports Initiative",
+      "url": "https://sf.freddiemac.com/general/credit-score-models"
+    },
+    {
+      "id": "S09",
+      "type": "Counterparty/competitor primary",
+      "title": "VantageScore: Rocket Mortgage adoption",
+      "url": "https://vantagescore.com/resources/knowledge-center/press_releases/rocket-mortgage-adopts-vantagescore-4-0-credit-score-for-mortgages"
+    },
+    {
+      "id": "S10",
+      "type": "Company primary",
+      "title": "FICO: Informative Research joins Mortgage Direct License",
+      "url": "https://investors.fico.com/news-releases/news-release-details/informative-research-joins-fico-mortgage-direct-license-program"
+    },
+    {
+      "id": "S11",
+      "type": "Company primary",
+      "title": "FICO Q4 FY2023 earnings release",
+      "url": "https://investors.fico.com/news-releases/news-release-details/fico-announces-earnings-401-share-fourth-quarter-fiscal-2023/"
+    },
+    {
+      "id": "S12",
+      "type": "Company/SEC primary",
+      "title": "FICO FY2024 shareholder materials",
+      "url": "https://investors.fico.com/static-files/7363a0f4-e05a-4510-8dbb-170ae6d4c7a2"
+    },
+    {
+      "id": "S13",
+      "type": "Company/SEC primary",
+      "title": "FICO FY2025 shareholder materials",
+      "url": "https://investors.fico.com/static-files/4dd43bd8-b07f-472c-9e53-5cb224ec9acd"
+    },
+    {
+      "id": "S14",
+      "type": "Secondary market data",
+      "title": "Macrotrends Fair Isaac historical P/E",
+      "url": "https://www.macrotrends.net/stocks/charts/FICO/fair-isaac/pe-ratio"
+    },
+    {
+      "id": "S15",
+      "type": "Secondary market data",
+      "title": "Macrotrends Fair Isaac historical P/FCF",
+      "url": "https://www.macrotrends.net/stocks/charts/FICO/fair-isaac/price-fcf"
+    }
+  ],
+  "market_history": [
+    {
+      "date": "2023-09-30",
+      "price": 868.53,
+      "pe": 51.3,
+      "p_fcf": 47.41
+    },
+    {
+      "date": "2023-12-31",
+      "price": 1164.01,
+      "pe": 65.06,
+      "p_fcf": 58.78
+    },
+    {
+      "date": "2024-03-31",
+      "price": 1249.61,
+      "pe": 65.6,
+      "p_fcf": 66.71
+    },
+    {
+      "date": "2024-06-30",
+      "price": 1488.66,
+      "pe": 78.27,
+      "p_fcf": 67.16
+    },
+    {
+      "date": "2024-09-30",
+      "price": 1943.52,
+      "pe": 95.04,
+      "p_fcf": 80.24
+    },
+    {
+      "date": "2024-12-31",
+      "price": 1990.93,
+      "pe": 91.37,
+      "p_fcf": 73.86
+    },
+    {
+      "date": "2025-03-31",
+      "price": 1844.16,
+      "pe": 79.42,
+      "p_fcf": 67.82
+    },
+    {
+      "date": "2025-06-30",
+      "price": 1827.96,
+      "pe": 71.49,
+      "p_fcf": 60.5
+    },
+    {
+      "date": "2025-09-30",
+      "price": 1496.53,
+      "pe": 56.39,
+      "p_fcf": 49.71
+    },
+    {
+      "date": "2025-12-31",
+      "price": 1690.62,
+      "pe": 62.59,
+      "p_fcf": 57.34
+    },
+    {
+      "date": "2026-03-31",
+      "price": 1067.54,
+      "pe": 33.83,
+      "p_fcf": 29.76
+    },
+    {
+      "date": "2026-06-30",
+      "price": 1194.78,
+      "pe": 34.52,
+      "p_fcf": 28.7
+    },
+    {
+      "date": "2026-08-28",
+      "price": 1153.57,
+      "pe": 33.32,
+      "p_fcf": 27.25
+    }
+  ],
+  "market_history_note": "Quarter-end/as-of observations; 2026-08-28 PE/P-FCF calculated from current price and TTM EPS/FCF. Earlier series from Macrotrends. This is valuation context, not an operating source.",
+  "publishing_audit": {
+    "REPORT_DATA_PACK": "EMITTED",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "CONTENT_MEANING_LOCK_PRESERVED": "PASS",
+    "PUBLISHED_TOP_LEVEL_SCHEMA_MATCH": "PASS",
+    "EXPLANATORY_DEPTH_PRESERVED": "PASS",
+    "CORE_LANDSCAPE_PAGES": 0,
+    "PRINTED_TOC": "<=2",
+    "TOC_CLICKABLE": "PASS",
+    "PDF_BOOKMARKS": "PASS",
+    "HTML_SIDEBAR": "PASS",
+    "SEARCHABLE_TEXT": "PASS",
+    "KOREAN_READABILITY": "PASS",
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "EXPLANATORY_SPACE_ALLOCATION": "PASS",
+    "SMART_CHAPTER_TRANSITIONS": "PASS",
+    "DENSITY_CONTROL": "PASS",
+    "VISUAL_SUBSTITUTION": "PASS",
+    "VISUAL_GRAMMAR_VARIETY": "PASS",
+    "CHART_READABILITY": "PASS",
+    "TABLE_QUALITY": "PASS",
+    "DECISION_VISUALS_TOTAL": 7,
+    "DECISION_VISUALS_PARITY_PASS": 7,
+    "STALE_VISUAL_ASSETS": 0,
+    "FIGURE_NUMERICAL_PARITY": "PASS",
+    "VISUAL_DATA_LINEAGE": "PASS",
+    "VISUAL_SEMANTIC_PARITY": "PASS",
+    "CONTACT_SHEET_COMPOSITION_QA": "PASS",
+    "SEMANTIC_GOLDEN_QA": "PASS",
+    "VISUAL_GOLDEN_QA": "PASS",
+    "GOLDEN_PARITY": "PASS",
+    "ARGUMENT_BLOCK_PAGINATION": "PASS",
+    "ACCIDENTAL_SPARSE_PAGES": 0,
+    "RENDERED_VISUAL_PARITY_QA": "PASS",
+    "PUBLISHING_ACCEPTANCE": "PASS",
+    "PDF_PAGES": 32,
+    "PDF_OUTLINE_ITEMS": 92,
+    "HTML_REPORT_H1_SCHEMA": [
+      "0. Executive Summary",
+      "1. Industry / Customer Problem / Transmission",
+      "2. Management / Promise→Delivery / Governance",
+      "3. Business Model / Product / Technology / Customer / Competition",
+      "4. Financial Deep Dive",
+      "5. Valuation / Reverse Expectations",
+      "6. Investment Judgment / Risk / Catalyst / Monitoring",
+      "Appendix"
+    ],
+    "QA_COMPLETED_AT": "2026-08-29 Asia/Seoul"
+  }
+}

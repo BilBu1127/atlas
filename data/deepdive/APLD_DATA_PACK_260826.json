@@ -1,0 +1,701 @@
+{
+  "meta": {
+    "ticker": "APLD",
+    "company": "Applied Digital Corporation",
+    "T0": "2026-08-26 Asia/Seoul",
+    "price_asof": "2026-08-25 U.S. close; model reference $28.85",
+    "filing_asof": "2026-07-29 FY2026 Form 10-K",
+    "consensus_asof": "2026-08-26; free/secondary snapshots",
+    "version": "Clean DDOS Production OS v1.7"
+  },
+  "financials": {
+    "annual_3y": {
+      "FY2024": {
+        "revenue_m": 165.575,
+        "gross_profit_m": 17.235,
+        "operating_income_m": -98.338,
+        "ocf_m": 13.794,
+        "capex_ppe_m": 141.809,
+        "simple_fcf_m": -128.015,
+        "sbc_m": 17.362
+      },
+      "FY2025": {
+        "revenue_m": 228.569,
+        "gross_profit_m": 11.81,
+        "operating_income_m": -72.175,
+        "ocf_m": -115.402,
+        "capex_ppe_m": 681.603,
+        "simple_fcf_m": -797.005,
+        "sbc_m": 22.704
+      },
+      "FY2026": {
+        "revenue_m": 611.311,
+        "gross_profit_m": 157.682,
+        "operating_income_m": -236.462,
+        "ocf_m": 89.685,
+        "capex_ppe_m": 2865.765,
+        "simple_fcf_m": -2776.08,
+        "sbc_m": 220.135
+      }
+    },
+    "quarterly_8q": {
+      "FY25_Q1": {
+        "revenue_m": 34.849,
+        "cost_of_revenue_m": 22.743,
+        "gross_margin_pct": 34.7
+      },
+      "FY25_Q2": {
+        "revenue_m": 36.163,
+        "cost_of_revenue_m": 22.661,
+        "gross_margin_pct": 37.3
+      },
+      "FY25_Q3": {
+        "revenue_m": 52.921,
+        "cost_of_revenue_m": 49.141,
+        "gross_margin_pct": 7.1
+      },
+      "FY25_Q4_residual": {
+        "revenue_m": 104.636,
+        "cost_of_revenue_m": 122.214,
+        "gross_margin_pct": -16.8
+      },
+      "FY26_Q1": {
+        "revenue_m": 64.216,
+        "cost_of_revenue_m": 55.606,
+        "gross_margin_pct": 13.4
+      },
+      "FY26_Q2": {
+        "revenue_m": 126.589,
+        "cost_of_revenue_m": 100.553,
+        "gross_margin_pct": 20.6
+      },
+      "FY26_Q3": {
+        "revenue_m": 126.637,
+        "cost_of_revenue_m": 72.832,
+        "gross_margin_pct": 42.5
+      },
+      "FY26_Q4": {
+        "revenue_m": 258.748,
+        "cost_of_revenue_m": 218.2,
+        "gross_margin_pct": 15.7
+      }
+    },
+    "hpc_fy2026_revenue_mix_m": {
+      "tenant_fit_out": 270.6,
+      "base_rent": 99.8,
+      "tenant_recoveries": 14.9,
+      "total_hpc": 385.3
+    },
+    "balance_sheet_2026_05_31_b": {
+      "unrestricted_cash": 1.592,
+      "current_restricted_cash": 2.381,
+      "other_restricted_cash": 0.1804,
+      "current_debt": 0.0164,
+      "long_term_debt_net": 4.9595,
+      "redeemable_nci": 1.956
+    },
+    "shares": {
+      "2025_05_31_m": 224.91,
+      "2026_05_31_m": 287.884,
+      "2026_07_28_m": 291.469112,
+      "coreweave_warrant_1_m": 13.062521,
+      "coreweave_warrant_1_strike": 7.19,
+      "coreweave_warrant_2_m": 8.393611,
+      "coreweave_warrant_2_strike": 10.75
+    },
+    "ceilings": [
+      "FY25 Q4 quarterly values are residuals from audited annual less Q1-Q3 and not treated as a clean operating-margin signal.",
+      "Detailed FY2028-FY2029 sell-side consensus dispersion is not fully available in free authoritative sources."
+    ]
+  },
+  "campuses": [
+    {
+      "campus": "Polaris Forge 1",
+      "tenant": "CoreWeave",
+      "contracted_mw": 400,
+      "contract_revenue_b": 11.0,
+      "live_mw_2026_06_30": 175,
+      "delivery_window": "2H25–1H27"
+    },
+    {
+      "campus": "Polaris Forge 2",
+      "tenant": "Investment-grade hyperscaler",
+      "contracted_mw": 200,
+      "contract_revenue_b": 5.0,
+      "live_mw_2026_06_30": 0,
+      "delivery_window": "2H26–1H27"
+    },
+    {
+      "campus": "Delta Forge 1",
+      "tenant": "High investment-grade hyperscaler",
+      "contracted_mw": 300,
+      "contract_revenue_b": 7.5,
+      "live_mw_2026_06_30": 0,
+      "delivery_window": "1H27–1H28"
+    },
+    {
+      "campus": "Polaris Forge 3",
+      "tenant": "Same high-IG tenant group",
+      "contracted_mw": 300,
+      "contract_revenue_b": 7.5,
+      "live_mw_2026_06_30": 0,
+      "delivery_window": "2H27–2H28"
+    },
+    {
+      "campus": "Delta Forge 2",
+      "tenant": "Same high-IG tenant group",
+      "contracted_mw": 210,
+      "contract_revenue_b": 5.2,
+      "live_mw_2026_06_30": 0,
+      "delivery_window": "1H28"
+    }
+  ],
+  "kpis": [
+    {
+      "name": "HPC live/billing MW",
+      "history": [
+        {
+          "date": "2025-10",
+          "value": 100
+        },
+        {
+          "date": "2026-06-30",
+          "value": 175
+        }
+      ],
+      "current": 175,
+      "thresholds": {
+        "green": "≥400MW by 2027-05-31",
+        "yellow": "300–399MW",
+        "red": "<300MW"
+      }
+    },
+    {
+      "name": "RFS schedule adherence",
+      "history": [],
+      "current": "PF1 first 100MW on time; next 150MW partially delivered",
+      "thresholds": {
+        "green": "≥90% of announced MW within delivery window",
+        "yellow": "75–90%",
+        "red": "<75% or repeated delays across 2 campuses"
+      }
+    },
+    {
+      "name": "Development cost per MW",
+      "history": [],
+      "current": "Company illustrative range $11–13M/MW",
+      "thresholds": {
+        "green": "≤$12M/MW",
+        "yellow": "$12–13M/MW",
+        "red": ">$13M/MW without rent compensation"
+      }
+    },
+    {
+      "name": "New secured debt cost",
+      "history": [
+        {
+          "instrument": "PF1 notes",
+          "rate_pct": 9.25
+        },
+        {
+          "instrument": "PF2 notes",
+          "rate_pct": 6.75
+        },
+        {
+          "instrument": "PF1 B4 notes",
+          "rate_pct": 7.0
+        }
+      ],
+      "current": "6.75–9.25% range",
+      "thresholds": {
+        "green": "<7.5%",
+        "yellow": "7.5–9.0%",
+        "red": ">9.0% repeatedly"
+      }
+    },
+    {
+      "name": "Diluted share count",
+      "history": [
+        {
+          "date": "2025-05-31",
+          "basic_m": 224.91
+        },
+        {
+          "date": "2026-07-28",
+          "basic_m": 291.469
+        }
+      ],
+      "current": 291.469,
+      "thresholds": {
+        "green": "≤330M by FY27-end",
+        "yellow": "330–350M",
+        "red": ">350M"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.25,
+      "revenue_path": [
+        {
+          "period": "FY2027",
+          "modeled_hpc_base_revenue_b": 0.56
+        },
+        {
+          "period": "FY2028",
+          "modeled_hpc_base_revenue_b": 1.12
+        },
+        {
+          "period": "FY2029",
+          "modeled_hpc_base_revenue_b": 1.68
+        }
+      ],
+      "margin_path": [
+        {
+          "period": "FY2027",
+          "site_noi_margin": 0.82
+        },
+        {
+          "period": "FY2028",
+          "site_noi_margin": 0.82
+        },
+        {
+          "period": "FY2029",
+          "site_noi_margin": 0.82
+        }
+      ],
+      "fcf": [
+        {
+          "period": "FY2029",
+          "stabilized_site_noi_b": 1.378,
+          "note": "Pre-financing stabilized site NOI proxy; common FCF is not equated to this figure."
+        }
+      ],
+      "diluted_shares": 350,
+      "per_share_value": 6.1955,
+      "inputs": {
+        "terminal_live_mw": 1050,
+        "revenue_per_mw_m": 1.6,
+        "site_noi_margin": 0.82,
+        "cap_rate": 0.085,
+        "development_cost_per_mw_m": 13.0,
+        "debt_ltc": 0.75,
+        "senior_pref_nci_claim_per_mw_m": 3.0,
+        "apld_common_share": 0.84,
+        "non_hpc_net_value_b": 0.25,
+        "corporate_convert_net_liability_b": 0.45,
+        "diluted_shares_m": 350
+      },
+      "common_nav_per_mw_m": 2.2556,
+      "terminal_common_equity_b": 2.1684,
+      "live_mw_path": [
+        {
+          "period": "FY2027",
+          "mw": 350
+        },
+        {
+          "period": "FY2028",
+          "mw": 700
+        },
+        {
+          "period": "FY2029",
+          "mw": 1050
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "probability": 0.55,
+      "revenue_path": [
+        {
+          "period": "FY2027",
+          "modeled_hpc_base_revenue_b": 0.769
+        },
+        {
+          "period": "FY2028",
+          "modeled_hpc_base_revenue_b": 1.71
+        },
+        {
+          "period": "FY2029",
+          "modeled_hpc_base_revenue_b": 2.821
+        }
+      ],
+      "margin_path": [
+        {
+          "period": "FY2027",
+          "site_noi_margin": 0.85
+        },
+        {
+          "period": "FY2028",
+          "site_noi_margin": 0.85
+        },
+        {
+          "period": "FY2029",
+          "site_noi_margin": 0.85
+        }
+      ],
+      "fcf": [
+        {
+          "period": "FY2029",
+          "stabilized_site_noi_b": 2.398,
+          "note": "Pre-financing stabilized site NOI proxy; common FCF is not equated to this figure."
+        }
+      ],
+      "diluted_shares": 340,
+      "per_share_value": 34.419,
+      "inputs": {
+        "terminal_live_mw": 1650,
+        "revenue_per_mw_m": 1.71,
+        "site_noi_margin": 0.85,
+        "cap_rate": 0.07,
+        "development_cost_per_mw_m": 12.0,
+        "debt_ltc": 0.8,
+        "senior_pref_nci_claim_per_mw_m": 3.0,
+        "apld_common_share": 0.865,
+        "non_hpc_net_value_b": 0.5,
+        "corporate_convert_net_liability_b": 0.45,
+        "diluted_shares_m": 340
+      },
+      "common_nav_per_mw_m": 7.0621,
+      "terminal_common_equity_b": 11.7025,
+      "live_mw_path": [
+        {
+          "period": "FY2027",
+          "mw": 450
+        },
+        {
+          "period": "FY2028",
+          "mw": 1000
+        },
+        {
+          "period": "FY2029",
+          "mw": 1650
+        }
+      ]
+    },
+    {
+      "name": "Bull",
+      "probability": 0.2,
+      "revenue_path": [
+        {
+          "period": "FY2027",
+          "modeled_hpc_base_revenue_b": 0.89
+        },
+        {
+          "period": "FY2028",
+          "modeled_hpc_base_revenue_b": 2.492
+        },
+        {
+          "period": "FY2029",
+          "modeled_hpc_base_revenue_b": 4.272
+        }
+      ],
+      "margin_path": [
+        {
+          "period": "FY2027",
+          "site_noi_margin": 0.87
+        },
+        {
+          "period": "FY2028",
+          "site_noi_margin": 0.87
+        },
+        {
+          "period": "FY2029",
+          "site_noi_margin": 0.87
+        }
+      ],
+      "fcf": [
+        {
+          "period": "FY2029",
+          "stabilized_site_noi_b": 3.717,
+          "note": "Pre-financing stabilized site NOI proxy; common FCF is not equated to this figure."
+        }
+      ],
+      "diluted_shares": 345,
+      "per_share_value": 79.5448,
+      "inputs": {
+        "terminal_live_mw": 2400,
+        "revenue_per_mw_m": 1.78,
+        "site_noi_margin": 0.87,
+        "cap_rate": 0.0625,
+        "development_cost_per_mw_m": 11.5,
+        "debt_ltc": 0.8,
+        "senior_pref_nci_claim_per_mw_m": 2.7,
+        "apld_common_share": 0.875,
+        "non_hpc_net_value_b": 0.8,
+        "corporate_convert_net_liability_b": 0.4,
+        "diluted_shares_m": 345
+      },
+      "common_nav_per_mw_m": 11.2679,
+      "terminal_common_equity_b": 27.443,
+      "live_mw_path": [
+        {
+          "period": "FY2027",
+          "mw": 500
+        },
+        {
+          "period": "FY2028",
+          "mw": 1400
+        },
+        {
+          "period": "FY2029",
+          "mw": 2400
+        }
+      ]
+    }
+  ],
+  "valuation": {
+    "mode": "Mode F Asset/NAV with Mode B Hybrid execution overlay",
+    "core": {
+      "base_contracted_1410mw_common_nav_b": 9.9576
+    },
+    "execution": {
+      "base_incremental_240mw_pipeline_common_nav_b": 1.6949
+    },
+    "ecosystem": {
+      "base_non_hpc_net_value_b": 0.5
+    },
+    "drag": {
+      "base_corporate_convert_net_liability_b": -0.45,
+      "note": "Project debt and senior preferred/NCI claim are already deducted in common NAV/MW."
+    },
+    "expected_value": 36.3883,
+    "expected_irr": 0.088079,
+    "current_price": 28.85,
+    "horizon_years": 2.75,
+    "upside_downside_ratio": 2.2377
+  },
+  "reverse_expectations": {
+    "base_common_nav_per_mw_m": 7.0621,
+    "hurdle_cases": {
+      "10pct_hurdle": {
+        "required_fy2029_price": 37.4952,
+        "required_live_billing_mw": 1798.1
+      },
+      "12pct_hurdle": {
+        "required_fy2029_price": 39.3999,
+        "required_live_billing_mw": 1889.8
+      },
+      "15pct_hurdle": {
+        "required_fy2029_price": 42.3706,
+        "required_live_billing_mw": 2032.8
+      }
+    },
+    "street_average_target_proxy": {
+      "target_price": 74.227,
+      "implied_live_billing_mw_under_base_economics": 3566.5
+    },
+    "current_contracted_mw": 1410,
+    "current_live_mw": 175,
+    "marketed_pipeline_mw": 1700,
+    "interpretation": "At a 12% hurdle, current price requires ~1.89GW live/billing by FY2029: all 1.41GW contracted plus roughly 480MW additional pipeline."
+  },
+  "consensus": {
+    "fy1": {
+      "period": "FY2027",
+      "revenue_m_avg": 780.63,
+      "source_note": "Free S&P Global Market Intelligence-derived snapshot"
+    },
+    "fy2": {
+      "period": "FY2028",
+      "revenue_b_preview": 1.9,
+      "source_note": "Aggregate preview only; detailed dispersion source ceiling"
+    },
+    "revision_trend": "Sell-side targets remain widely dispersed and mostly above current price; average target proxy ~$74.23."
+  },
+  "stance": {
+    "zone": "관망 / 기존 보유 시 축소 검토; 신규매수는 더 낮은 가격 요구",
+    "price_bands": {
+      "active_interest": "≤$24.8",
+      "conditional_interest": "$24.8–$26.6",
+      "watch": "$26.6–$34.5",
+      "reduce_or_avoid": ">$34.5 absent incremental de-risking",
+      "high_expectation_zone": ">$50 requires >2GW billing visibility and/or materially better financing"
+    },
+    "horizon": "FY2029 / ~2.75 years"
+  },
+  "catalysts": [
+    {
+      "when": "2H 2026",
+      "event": "PF1 Building 2 remaining 75MW RFS",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2H 2026–1H 2027",
+      "event": "PF2 200MW phased RFS",
+      "sensitivity": "H"
+    },
+    {
+      "when": "1H 2027",
+      "event": "PF1 Building 4 150MW target",
+      "sensitivity": "H"
+    },
+    {
+      "when": "1H 2027 onward",
+      "event": "Delta Forge 1 initial progress/RFS",
+      "sensitivity": "H"
+    },
+    {
+      "when": "Next 12 months",
+      "event": "New lease conversion from ~1.7GW marketed pipeline",
+      "sensitivity": "H"
+    },
+    {
+      "when": "Next 12 months",
+      "event": "Project financing/refinancing terms",
+      "sensitivity": "H"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "0 / 3.6"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "1"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "2 / Appendix E"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "3.1 / 4"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1.4 / 3.4"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "3.2–3.3"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "1.5 / 3.5"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "4 / Appendix B–C"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "4.4–4.6"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1.3 / Appendix F"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "2.2 / 6.5"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "6"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "0 / 5.6 / Appendix F"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "5"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "4.7"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "3.3"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "1.5–1.6 / 6.8"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Applied Digital FY2026 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1144879/000114487926000048/apld-20260531.htm"
+    },
+    {
+      "id": "S2",
+      "title": "Applied Digital FY2026 Q4 / Full-Year Results",
+      "url": "https://ir.applieddigital.com/news-events/press-releases/detail/159/applied-digital-reports-fiscal-fourth-quarter-and-full-year"
+    },
+    {
+      "id": "S3",
+      "title": "Applied Digital SEC Filings",
+      "url": "https://ir.applieddigital.com/sec-filings"
+    },
+    {
+      "id": "S5",
+      "title": "Wes Cummins Form 4",
+      "url": "https://www.sec.gov/Archives/edgar/data/1144879/000139193526000005/xslF345X06/wk-form4_1785878526.xml"
+    },
+    {
+      "id": "S6",
+      "title": "Digital Realty Q2 2026 Results",
+      "url": "https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-reports-second-quarter-2026-results"
+    },
+    {
+      "id": "S7",
+      "title": "Core Scientific FY2025 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013305/core-20251231.htm"
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "최근 8개 분기 매출과 Gross Margin",
+      "source_block": "financials.quarterly_8q"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "계약 MW와 실제 Live MW의 간극",
+      "source_block": "campuses + reverse_expectations.current_live_mw"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "FY2026 HPC 매출의 질",
+      "source_block": "financials.hpc_fy2026_revenue_mix_m"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "2026-05-31 자본구조 스냅샷",
+      "source_block": "financials.balance_sheet_2026_05_31_b"
+    },
+    {
+      "vis_id": "VIS-005",
+      "figure_title": "Bear / Base / Bull 주당가치",
+      "source_block": "scenarios + valuation.current_price + valuation.expected_value"
+    },
+    {
+      "vis_id": "VIS-006",
+      "figure_title": "현재가가 요구하는 FY2029 Live/Billing MW",
+      "source_block": "reverse_expectations"
+    }
+  ]
+}

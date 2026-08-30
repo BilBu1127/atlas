@@ -1,0 +1,826 @@
+{
+  "meta": {
+    "ticker": "FFIV",
+    "company": "F5, Inc.",
+    "T0": "2026-08-27",
+    "price_asof": "2026-08-26",
+    "current_price": 399.59,
+    "filing_asof": "2026-08-06 / Q3 FY26 10-Q, quarter ended 2026-06-30",
+    "consensus_asof": "2026-08-26 retrieval",
+    "version": "DDOS v1.7",
+    "publishing_date_seoul": "2026-08-27",
+    "pdf": "WAIVED_BY_USER"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "fy": "FY23",
+        "revenue_m": 2813.169,
+        "product_m": 1334.638,
+        "services_m": 1478.531,
+        "gross_margin": 0.789,
+        "gaap_op_margin": 0.168,
+        "net_income_m": 394.948,
+        "ocf_m": 653.409,
+        "capex_m": 54.184,
+        "fcf_m": 599.225,
+        "sbc_m": 236.65,
+        "diluted_shares_m": 60.27,
+        "gaap_eps": 6.55
+      },
+      {
+        "fy": "FY24",
+        "revenue_m": 2816.12,
+        "product_m": 1272.795,
+        "services_m": 1543.325,
+        "gross_margin": 0.802,
+        "gaap_op_margin": 0.234,
+        "net_income_m": 566.778,
+        "ocf_m": 792.419,
+        "capex_m": 30.412,
+        "fcf_m": 762.007,
+        "sbc_m": 219.108,
+        "diluted_shares_m": 59.359,
+        "gaap_eps": 9.55
+      },
+      {
+        "fy": "FY25",
+        "revenue_m": 3088.072,
+        "product_m": 1508.64,
+        "services_m": 1579.432,
+        "gross_margin": 0.814,
+        "gaap_op_margin": 0.248,
+        "net_income_m": 692.38,
+        "ocf_m": 949.666,
+        "capex_m": 43.26,
+        "fcf_m": 906.406,
+        "sbc_m": 231.491,
+        "diluted_shares_m": 58.684,
+        "gaap_eps": 11.8
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "q": "Q4 FY24",
+        "revenue_m": 746.7,
+        "systems_m": 131.0,
+        "software_m": 228.0,
+        "services_m": 388.0,
+        "gaap_gm": 0.808,
+        "gaap_om": 0.256,
+        "fcf_m": 240.445,
+        "ng_eps": 3.67,
+        "fcf_per_share_approx": 4.082258064516129
+      },
+      {
+        "q": "Q1 FY25",
+        "revenue_m": 766.489,
+        "systems_m": 160.0,
+        "software_m": 209.0,
+        "services_m": 397.992,
+        "gaap_gm": 0.817,
+        "gaap_om": 0.268,
+        "fcf_m": 194.709,
+        "ng_eps": 3.84,
+        "fcf_per_share_approx": 3.296911510718277
+      },
+      {
+        "q": "Q2 FY25",
+        "revenue_m": 731.123,
+        "systems_m": 179.0,
+        "software_m": 158.0,
+        "services_m": 394.0,
+        "gaap_gm": 0.807,
+        "gaap_om": 0.217,
+        "fcf_m": 246.094,
+        "ng_eps": 3.42,
+        "fcf_per_share_approx": 4.187836090123205
+      },
+      {
+        "q": "Q3 FY25",
+        "revenue_m": 780.37,
+        "systems_m": 180.855,
+        "software_m": 207.983,
+        "services_m": 391.532,
+        "gaap_gm": 0.81,
+        "gaap_om": 0.252,
+        "fcf_m": 273.676,
+        "ng_eps": 4.16,
+        "fcf_per_share_approx": 4.678222222222222
+      },
+      {
+        "q": "Q4 FY25",
+        "revenue_m": 810.09,
+        "systems_m": 185.583,
+        "software_m": 228.526,
+        "services_m": 395.981,
+        "gaap_gm": 0.822,
+        "gaap_om": 0.254,
+        "fcf_m": 191.927,
+        "ng_eps": 4.39,
+        "fcf_per_share_approx": 3.2808034188034187
+      },
+      {
+        "q": "Q1 FY26",
+        "revenue_m": 822.465,
+        "systems_m": 218.0,
+        "software_m": 192.0,
+        "services_m": 412.0,
+        "gaap_gm": 0.815,
+        "gaap_om": 0.26,
+        "fcf_m": 149.491,
+        "ng_eps": 4.45,
+        "fcf_per_share_approx": 2.568573883161512
+      },
+      {
+        "q": "Q2 FY26",
+        "revenue_m": 811.7,
+        "systems_m": 226.0,
+        "software_m": 184.0,
+        "services_m": 401.0,
+        "gaap_gm": 0.814,
+        "gaap_om": 0.221,
+        "fcf_m": 347.571,
+        "ng_eps": 3.9,
+        "fcf_per_share_approx": 6.066023246884709
+      },
+      {
+        "q": "Q3 FY26",
+        "revenue_m": 865.077,
+        "systems_m": 239.519,
+        "software_m": 223.31,
+        "services_m": 402.248,
+        "gaap_gm": 0.822,
+        "gaap_om": 0.247,
+        "fcf_m": 280.606,
+        "ng_eps": 4.73,
+        "fcf_per_share_approx": 4.880104347826087
+      }
+    ],
+    "ceilings": [
+      "일부 분기의 Systems/Software/Services는 회사 IR의 반올림 공시값",
+      "분기 FCF/share는 인접 diluted denominator 기반 방향성 근사",
+      "설치기반 수/retention/attach cohort 비공개"
+    ]
+  },
+  "business_mix": {
+    "fy25_systems_m": 705.551,
+    "fy25_software_m": 803.089,
+    "fy25_services_m": 1579.432,
+    "fy25_subscription_software_m": 507.585,
+    "fy25_saas_managed_m": 175.641,
+    "fy25_perpetual_m": 119.863,
+    "q3fy26_recurring_revenue_m": 594,
+    "q3fy26_recurring_mix": 0.69,
+    "q3fy26_software_subscription_mix": 0.9
+  },
+  "balance_sheet_quality": {
+    "q3fy26_cash_and_investments_b": 1.63,
+    "q3fy26_deferred_revenue_b": 2.193,
+    "q3fy26_inventory_m": 126.89,
+    "fy25_inventory_m": 77.229,
+    "q3fy26_raw_materials_m": 95.875,
+    "fy25_raw_materials_m": 50.296,
+    "fy26_9m_cyber_incident_cost_m": 26.5,
+    "fy26_9m_sbc_m": 193.535
+  },
+  "capital_allocation": {
+    "buybacks_m": {
+      "FY23": 350.049,
+      "FY24": 500.056,
+      "FY25": 500.037,
+      "FY26_9M": 500.038
+    },
+    "remaining_authorization_q3fy26_m": 422,
+    "policy": "FY26 full-year FCF의 최소 50% repurchase 의도",
+    "shares_outstanding_m": 56.63,
+    "dividend": "none"
+  },
+  "ai_evidence": {
+    "h1fy26_direct_ai_sales_m": 50,
+    "yoy_growth_gt": 2.0,
+    "h1fy26_identified_customers_approx": 100,
+    "q3_direct_ai_customer_growth_qoq": 0.5,
+    "use_cases": [
+      "AI data delivery",
+      "AI runtime security",
+      "AI factory load balancing"
+    ],
+    "evidence_ceiling": "deal size distribution, repeat rate, standardized enterprise deployments, standalone AI ARR not disclosed"
+  },
+  "consensus": {
+    "fy1": {
+      "period": "FY26",
+      "revenue_b": 3.38,
+      "non_gaap_eps": 17.33
+    },
+    "fy2": {
+      "period": "FY27",
+      "revenue_b": 3.64,
+      "revenue_growth": 0.0764,
+      "non_gaap_eps": 18.08,
+      "eps_growth": 0.043
+    },
+    "revision_trend": "FY26 guidance and consensus rose materially through Q2/Q3; FY27 revenue embeds continued high-single-digit company growth while EPS growth is more modest",
+    "analyst_rating": "Hold",
+    "average_price_target": 436.1,
+    "analyst_count": 13,
+    "short_interest_pct_float": 0.0251,
+    "short_interest_date": "2026-07-31"
+  },
+  "kpis": [
+    {
+      "kpi": "Systems growth YoY",
+      "current": "Q3 FY26 +32%",
+      "green": "normalization 뒤에도 total product 성장 ≥8%",
+      "yellow": "Systems 감소하나 Software가 상쇄",
+      "red": "Systems <-15% + Software <8% 동시 발생",
+      "why": "refresh cliff 여부"
+    },
+    {
+      "kpi": "Software growth YoY",
+      "current": "Q3 FY26 +7%",
+      "green": "2개 분기 평균 ≥10%",
+      "yellow": "5–10%",
+      "red": "2개 분기 평균 <5%",
+      "why": "refresh 이후 성장 승계"
+    },
+    {
+      "kpi": "Recurring revenue mix",
+      "current": "Q3 FY26 69%",
+      "green": "≥70% + Software 성장",
+      "yellow": "68–70%",
+      "red": "<67% 또는 maintenance만 증가",
+      "why": "반복매출 질"
+    },
+    {
+      "kpi": "AI direct adoption",
+      "current": "H1 FY26 ~$50M sales; Q3 customer count +50%",
+      "green": "고객 증가 + 반복/표준화 매출 공개",
+      "yellow": "고객수만 증가",
+      "red": "12개월 내 추가 monetization 증거 부재",
+      "why": "AI 옵션의 실체"
+    },
+    {
+      "kpi": "GAAP gross margin",
+      "current": "Q3 FY26 82.2%",
+      "green": "≥81%",
+      "yellow": "79–81%",
+      "red": "<79% 지속",
+      "why": "mix·부품원가·가격력"
+    },
+    {
+      "kpi": "FCF margin",
+      "current": "FY25 29.4%; FY26 9M ~31.1%",
+      "green": "≥28.5%",
+      "yellow": "26–28.5%",
+      "red": "<26%",
+      "why": "owner cash economics"
+    },
+    {
+      "kpi": "Share count",
+      "current": "~56.63M vs FY23 diluted 60.27M",
+      "green": "YoY -1% 이상",
+      "yellow": "flat",
+      "red": "증가",
+      "why": "buyback이 SBC를 넘는지"
+    },
+    {
+      "kpi": "Deferred revenue",
+      "current": "Q3 FY26 ~$2.19B",
+      "green": "mid/high-single growth 이상",
+      "yellow": "low-single growth",
+      "red": "YoY 감소",
+      "why": "maintenance/subscription visibility"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Down",
+      "probability": 0.25,
+      "terminal_p_fcf": 17,
+      "years": [
+        {
+          "year": 2027,
+          "systems_b": 0.7272,
+          "software_b": 0.9061,
+          "services_b": 1.6473,
+          "revenue_b": 3.2806,
+          "fcf_margin": 0.285,
+          "fcf_b": 0.935,
+          "shares_m": 56.347,
+          "fcf_per_share": 16.59
+        },
+        {
+          "year": 2028,
+          "systems_b": 0.6908,
+          "software_b": 0.9786,
+          "services_b": 1.6803,
+          "revenue_b": 3.3497,
+          "fcf_margin": 0.28,
+          "fcf_b": 0.9379,
+          "shares_m": 56.065,
+          "fcf_per_share": 16.73
+        },
+        {
+          "year": 2029,
+          "systems_b": 0.6908,
+          "software_b": 1.0471,
+          "services_b": 1.7139,
+          "revenue_b": 3.4518,
+          "fcf_margin": 0.275,
+          "fcf_b": 0.9492,
+          "shares_m": 55.785,
+          "fcf_per_share": 17.02
+        },
+        {
+          "year": 2030,
+          "systems_b": 0.7047,
+          "software_b": 1.1204,
+          "services_b": 1.7481,
+          "revenue_b": 3.5732,
+          "fcf_margin": 0.27,
+          "fcf_b": 0.9648,
+          "shares_m": 55.506,
+          "fcf_per_share": 17.38
+        }
+      ],
+      "fy30_terminal_price": 295.46,
+      "present_value": 194.63,
+      "irr_4y": -0.0727
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "terminal_p_fcf": 23,
+      "years": [
+        {
+          "year": 2027,
+          "systems_b": 0.8636,
+          "software_b": 0.99,
+          "services_b": 1.6962,
+          "revenue_b": 3.5498,
+          "fcf_margin": 0.3,
+          "fcf_b": 1.0649,
+          "shares_m": 55.781,
+          "fcf_per_share": 19.09
+        },
+        {
+          "year": 2028,
+          "systems_b": 0.9154,
+          "software_b": 1.1385,
+          "services_b": 1.7641,
+          "revenue_b": 3.818,
+          "fcf_margin": 0.302,
+          "fcf_b": 1.153,
+          "shares_m": 54.944,
+          "fcf_per_share": 20.99
+        },
+        {
+          "year": 2029,
+          "systems_b": 0.9794,
+          "software_b": 1.2979,
+          "services_b": 1.8347,
+          "revenue_b": 4.112,
+          "fcf_margin": 0.305,
+          "fcf_b": 1.2542,
+          "shares_m": 54.12,
+          "fcf_per_share": 23.17
+        },
+        {
+          "year": 2030,
+          "systems_b": 1.0382,
+          "software_b": 1.4537,
+          "services_b": 1.908,
+          "revenue_b": 4.3999,
+          "fcf_margin": 0.305,
+          "fcf_b": 1.342,
+          "shares_m": 53.308,
+          "fcf_per_share": 25.17
+        }
+      ],
+      "fy30_terminal_price": 578.91,
+      "present_value": 381.35,
+      "irr_4y": 0.0971
+    },
+    {
+      "name": "Up",
+      "probability": 0.25,
+      "terminal_p_fcf": 27,
+      "years": [
+        {
+          "year": 2027,
+          "systems_b": 0.9545,
+          "software_b": 1.0236,
+          "services_b": 1.7126,
+          "revenue_b": 3.6906,
+          "fcf_margin": 0.31,
+          "fcf_b": 1.1441,
+          "shares_m": 55.497,
+          "fcf_per_share": 20.62
+        },
+        {
+          "year": 2028,
+          "systems_b": 1.0499,
+          "software_b": 1.2078,
+          "services_b": 1.7982,
+          "revenue_b": 4.0559,
+          "fcf_margin": 0.315,
+          "fcf_b": 1.2776,
+          "shares_m": 54.387,
+          "fcf_per_share": 23.49
+        },
+        {
+          "year": 2029,
+          "systems_b": 1.1549,
+          "software_b": 1.4011,
+          "services_b": 1.8881,
+          "revenue_b": 4.444,
+          "fcf_margin": 0.32,
+          "fcf_b": 1.4221,
+          "shares_m": 53.3,
+          "fcf_per_share": 26.68
+        },
+        {
+          "year": 2030,
+          "systems_b": 1.2473,
+          "software_b": 1.5972,
+          "services_b": 1.9825,
+          "revenue_b": 4.827,
+          "fcf_margin": 0.32,
+          "fcf_b": 1.5446,
+          "shares_m": 52.234,
+          "fcf_per_share": 29.57
+        }
+      ],
+      "fy30_terminal_price": 798.39,
+      "present_value": 525.92,
+      "irr_4y": 0.1889
+    }
+  ],
+  "valuation": {
+    "mode": "Mode C — Mature Compounder",
+    "hurdle_rate": 0.11,
+    "fy26e_revenue_b": 3.379242,
+    "fy26e_fcf_b": 1.02,
+    "fy26e_non_gaap_eps_mid": 17.27,
+    "current_price": 399.59,
+    "current_market_cap_b": 22.63,
+    "fy26e_p_fcf": 22.19,
+    "fy26e_fcf_yield": 0.0451,
+    "fy26e_non_gaap_pe": 23.14,
+    "core": 381.35,
+    "execution": "software/security/AI가 FY27 이후 성장률을 승계하는 가치가 Base 안에 포함",
+    "ecosystem": "AI standalone premium = 0 in Base; Up에서만 monetization/standardization 반영",
+    "drag": "refresh normalization, component cost, cyber trust/cost, SBC and multiple compression",
+    "expected_value": 370.81,
+    "expected_irr": 0.0895,
+    "base_irr": 0.0971,
+    "price_bands": {
+      "strong_attractive_max": 330.99,
+      "attractive_max": 355.06,
+      "base_hurdle_fair_max": 381.35,
+      "execution_premium_max": 420.0
+    }
+  },
+  "reverse_expectations": {
+    "horizon": "FY26E→FY29",
+    "required_return": 0.11,
+    "assumed_fcf_margin_fy29": 0.305,
+    "assumed_share_shrink_pa": 0.015,
+    "p_fcf_sensitivity": [
+      {
+        "terminal_p_fcf": 23,
+        "required_fy29_fcf_per_share": 23.76,
+        "required_fy29_fcf_b": 1.286,
+        "required_fy29_revenue_b": 4.216,
+        "required_fy26_29_revenue_cagr": 0.0765
+      },
+      {
+        "terminal_p_fcf": 21,
+        "required_fy29_fcf_per_share": 26.02,
+        "required_fy29_fcf_b": 1.408,
+        "required_fy29_revenue_b": 4.618,
+        "required_fy26_29_revenue_cagr": 0.1097
+      },
+      {
+        "terminal_p_fcf": 19,
+        "required_fy29_fcf_per_share": 28.76,
+        "required_fy29_fcf_b": 1.557,
+        "required_fy29_revenue_b": 5.104,
+        "required_fy26_29_revenue_cagr": 0.1473
+      }
+    ],
+    "pe_sensitivity": [
+      {
+        "terminal_pe": 22,
+        "required_fy29_non_gaap_eps": 24.84,
+        "required_eps_cagr": 0.1288
+      },
+      {
+        "terminal_pe": 20,
+        "required_fy29_non_gaap_eps": 27.32,
+        "required_eps_cagr": 0.1653
+      },
+      {
+        "terminal_pe": 18,
+        "required_fy29_non_gaap_eps": 30.36,
+        "required_eps_cagr": 0.2069
+      }
+    ]
+  },
+  "stance": {
+    "zone": "EXECUTION_PREMIUM / WAIT",
+    "price_bands": {
+      "≤$332": "강한 매력 — Base 4Y IRR 약 15% 이상",
+      ">$332–$355": "매력 — Base IRR 약 13–15%",
+      ">$355–$381": "조건부 관심 — Base IRR 약 11–13%",
+      ">$381–$420": "Execution premium — Base hurdle 미달, 신규매수 대기",
+      ">$420": "과열/축소 검토 — 중기 목표 초과 실행 필요"
+    },
+    "horizon": "3–4 years",
+    "summary": "사업의 질은 높지만 $399.59에서는 Base와 확률가중 기대수익이 11% hurdle에 미달한다. 신규매수는 $381 이하, 선호는 $355 이하에서 비대칭이 개선된다."
+  },
+  "catalysts": [
+    {
+      "window": "2026-10~11",
+      "event": "Q4/FY26 results",
+      "watch": "FY27 초기 성장 가이던스, Systems 정상화 속도, Software renewal base, component-cost margin 영향"
+    },
+    {
+      "window": "2027-01",
+      "event": "Q1 FY27 results",
+      "watch": "larger software renewal base가 실제 double-digit Software 성장으로 전환되는지"
+    },
+    {
+      "window": "2027-04",
+      "event": "Q2 FY27 results",
+      "watch": "AI Gateway/AI Security Platform의 유료 adoption, DCS 보안 attach, recurring mix"
+    },
+    {
+      "window": "2027 상반기",
+      "event": "AI factory / NVIDIA DPU commercialization evidence",
+      "watch": "POC→production→repeat/standardization 단계 전환"
+    },
+    {
+      "window": "상시",
+      "event": "Cyber / product-security disclosures",
+      "watch": "추가 취약점, 고객 churn/discounting, litigation 또는 보안비용 확대"
+    }
+  ],
+  "falsification_conditions": [
+    "FY27 상반기 Software growth가 2개 분기 평균 5% 미만인데 Systems도 두 자릿수 감소",
+    "AI 직접 고객 수는 늘지만 12개월 동안 반복구매·표준화·별도 매출 증거가 추가되지 않음",
+    "recurring revenue mix가 67% 아래로 내려가거나 deferred revenue가 YoY 감소",
+    "FCF margin이 26% 아래로 내려가고 share count까지 증가",
+    "추가 중대 cyber incident가 renewal, 할인, 소송비용 또는 규제비용에 구조적 영향을 미침"
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "promise": "ADC appliance→ADSP 경제적 전환",
+      "h3_treatment": "MAIN",
+      "h3_locator": "0,3"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "promise": "산업 B1–B5 / profit pool / lifecycle",
+      "h3_treatment": "MAIN",
+      "h3_locator": "1"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "promise": "refresh·software/security·AI 수요 분해",
+      "h3_treatment": "MAIN",
+      "h3_locator": "1,4,6"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "promise": "BIG-IP/NGINX/DCS/ADSP 구조·경제성",
+      "h3_treatment": "MAIN+APPENDIX",
+      "h3_locator": "3,A"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "promise": "고객/채널/설치기반/renewal",
+      "h3_treatment": "EXPLICIT_CEILING",
+      "h3_locator": "3,A"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "promise": "customer-job 경쟁 지도",
+      "h3_treatment": "MAIN",
+      "h3_locator": "1,3"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "promise": "경영진 promise→delivery / governance",
+      "h3_treatment": "MAIN+APPENDIX",
+      "h3_locator": "2,A"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "promise": "3Y + 8Q 재무 연속 계열",
+      "h3_treatment": "MAIN+APPENDIX",
+      "h3_locator": "4,A"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "promise": "회계품질/SBC/deferred/cyber",
+      "h3_treatment": "MAIN+APPENDIX",
+      "h3_locator": "4,A"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "promise": "현금/repurchase/SBC/share count",
+      "h3_treatment": "MAIN",
+      "h3_locator": "2,4,5"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "promise": "contract manufacturer/components/inventory",
+      "h3_treatment": "EXPLICIT_CEILING",
+      "h3_locator": "1,3,4"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "promise": "AI adoption ladder",
+      "h3_treatment": "MAIN+EXPLICIT_CEILING",
+      "h3_locator": "1,3,5"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "promise": "Down/Base/Up operating bridge",
+      "h3_treatment": "MAIN+APPENDIX",
+      "h3_locator": "4,5,A"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "promise": "consensus/positioning/reverse expectations",
+      "h3_treatment": "MAIN",
+      "h3_locator": "5,6"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "promise": "catalyst/KPI/falsification",
+      "h3_treatment": "MAIN",
+      "h3_locator": "6"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "promise": "macro sensitivities",
+      "h3_treatment": "MAIN",
+      "h3_locator": "1,5,6"
+    }
+  ],
+  "source_registry": [
+    {
+      "id": "S1",
+      "title": "F5 FY2025 Form 10-K",
+      "type": "SEC / statutory",
+      "url": "https://www.sec.gov/Archives/edgar/data/1048695/000104869525000157/ffiv-20250930.htm"
+    },
+    {
+      "id": "S2",
+      "title": "F5 FY26 Q3 Form 10-Q",
+      "type": "SEC / statutory",
+      "url": "https://www.sec.gov/Archives/edgar/data/1048695/000104869526000067/ffiv-20260630.htm"
+    },
+    {
+      "id": "S3",
+      "title": "F5 2026 Proxy Statement",
+      "type": "SEC / statutory",
+      "url": "https://www.sec.gov/Archives/edgar/data/1048695/000104869526000012/ffiv-20260126.htm"
+    },
+    {
+      "id": "S4",
+      "title": "F5 Q1 FY25 earnings release",
+      "type": "Company primary",
+      "url": "https://investors.f5.com/news/news-details/2025/F5s-Alignment-with-Hybrid-Multicloud-Trends-Contributes-to-Record-First-Quarter-Results-with-11-Revenue-Growth-Including-22-Software-Revenue-Growth-and-18-Systems-Revenue-Growth-01-28-2025/default.aspx"
+    },
+    {
+      "id": "S5",
+      "title": "F5 Q2 FY25 earnings release",
+      "type": "Company primary",
+      "url": "https://investors.f5.com/news/news-details/2025/F5-Reports-Strong-Second-Quarter-Results-with-7-Revenue-Growth-Driven-by-Continuous-Innovation-and-Leadership-in-Hybrid-Multicloud-Solutions-04-28-2025/default.aspx"
+    },
+    {
+      "id": "S6",
+      "title": "F5 Q3 FY25 earnings release",
+      "type": "Company primary",
+      "url": "https://investors.f5.com/news/news-details/2025/F5-Reports-Robust-Third-Quarter-Results-with-12-Revenue-Growth-Fueled-by-Strong-Product-Demand-in-Alignment-with-Key-Industry-Trends-07-30-2025/default.aspx"
+    },
+    {
+      "id": "S7",
+      "title": "F5 Q4/FY25 earnings release",
+      "type": "Company primary",
+      "url": "https://investors.f5.com/news/news-details/2025/F5-Reports-Strong-Fourth-Quarter-Results-with-8-Revenue-Growth-FY25-Revenue-of-3-1-Billion-Reflects-10-Annual-Growth-Driven-by-Transformative-Industry-Trends-10-27-2025/default.aspx"
+    },
+    {
+      "id": "S8",
+      "title": "F5 Q1 FY26 earnings release",
+      "type": "Company primary",
+      "url": "https://investors.f5.com/news/news-details/2026/F5-Reports-Strong-First-Quarter-Results-with-7-Revenue-Growth-Including-11-Product-Growth-01-27-2026/default.aspx"
+    },
+    {
+      "id": "S9",
+      "title": "F5 Q2 FY26 earnings release",
+      "type": "Company primary",
+      "url": "https://investors.f5.com/news/news-details/2026/F5-Reports-Second-Quarter-Results-with-11-Revenue-Growth/default.aspx"
+    },
+    {
+      "id": "S10",
+      "title": "F5 Q3 FY26 earnings release",
+      "type": "Company primary",
+      "url": "https://investors.f5.com/news/news-details/2026/F5-Reports-Third-Quarter-Results-with-19-Product-Revenue-Growth/default.aspx"
+    },
+    {
+      "id": "S11",
+      "title": "F5 Analyst & Investor Meeting, 2026-05-28",
+      "type": "Company primary",
+      "url": "https://investors.f5.com/events-and-presentations/event-details/2026/F5-Analyst--Investor-Meeting/default.aspx"
+    },
+    {
+      "id": "S12",
+      "title": "F5 AI-powered WAAP release, 2026-06-09",
+      "type": "Company primary",
+      "url": "https://investors.f5.com/news/news-details/2026/F5-Expands-AI-powered-WAAP-Solutions-to-Arm-Enterprises-Against-Frontier-AI-Threats-and-Stop-Attacks-Before-Exploitation/default.aspx"
+    },
+    {
+      "id": "S13",
+      "title": "StockAnalysis consensus / S&P Global snapshot",
+      "type": "Secondary market data",
+      "url": "https://stockanalysis.com/stocks/ffiv/forecast/"
+    },
+    {
+      "id": "S14",
+      "title": "MarketBeat FFIV short interest",
+      "type": "Secondary positioning data",
+      "url": "https://www.marketbeat.com/stocks/NASDAQ/FFIV/short-interest/"
+    },
+    {
+      "id": "S15",
+      "title": "Investing.com FFIV price snapshot",
+      "type": "Secondary market data",
+      "url": "https://www.investing.com/equities/f5-networks-inc"
+    }
+  ],
+  "visual_lineage": [
+    {
+      "visual_id": "V1",
+      "title": "8Q revenue mix",
+      "source_fields": "financials.quarterly_8q.{systems_m,software_m,services_m}"
+    },
+    {
+      "visual_id": "V2",
+      "title": "3Y cash conversion / SBC / buybacks",
+      "source_fields": "financials.annual_3y + capital_allocation.buybacks_m"
+    },
+    {
+      "visual_id": "V3",
+      "title": "Scenario present value",
+      "source_fields": "scenarios[].present_value + valuation.current_price"
+    },
+    {
+      "visual_id": "V4",
+      "title": "Reverse-expectations sensitivity",
+      "source_fields": "reverse_expectations.p_fcf_sensitivity"
+    }
+  ],
+  "qa": {
+    "RC_UNRESOLVED": 0,
+    "RC_H3_COVERAGE_RATE": "100%",
+    "H1_H2_RESEARCH_CONTRACT_COMPLETENESS": "PASS",
+    "H2_H3_COVERAGE_LINEAGE": "PASS",
+    "LATEST_FILING_CHECK": "PASS",
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "EXPLANATORY_SPACE_ALLOCATION": "PASS",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "VISUAL_SEMANTIC_PARITY": "PASS",
+    "HTML_SIDEBAR": "PASS",
+    "TOC_CLICKABLE": "PASS",
+    "SEARCHABLE_TEXT": "PASS",
+    "PDF": "WAIVED_BY_USER",
+    "TOP_LEVEL_SCHEMA": "PASS",
+    "DECISION_VISUALS_TOTAL": 4,
+    "VISUAL_DATA_LINEAGE": "PASS",
+    "PUBLISHING_ACCEPTANCE": "PASS_WITH_PDF_USER_WAIVER"
+  }
+}

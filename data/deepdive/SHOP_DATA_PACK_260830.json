@@ -1,0 +1,785 @@
+{
+  "meta": {
+    "ticker": "SHOP",
+    "company": "Shopify Inc.",
+    "T0": "2026-08-30",
+    "price_asof": "2026-08-28",
+    "filing_asof": "2026-08-05 Q2 10-Q",
+    "transcript_asof": "2026-08-05 Q2 call/earnings materials",
+    "consensus_asof": "2026-08-19 secondary snapshots",
+    "publishing_date_asia_seoul": "2026-08-30",
+    "version": "Clean DDOS Production OS v1.7",
+    "currency": "USD"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "gmv_b": 235.91,
+        "revenue_b": 7.06,
+        "subscription_b": 1.837,
+        "merchant_b": 5.223,
+        "gross_profit_b": 3.515,
+        "gross_margin": 0.498,
+        "operating_income_b": -1.418,
+        "fcf_b": 0.905,
+        "fcf_margin": 0.13,
+        "mrr_m": 144
+      },
+      {
+        "year": 2024,
+        "gmv_b": 292.275,
+        "revenue_b": 8.88,
+        "subscription_b": 2.35,
+        "merchant_b": 6.53,
+        "gross_profit_b": 4.472,
+        "gross_margin": 0.504,
+        "operating_income_b": 1.075,
+        "fcf_b": 1.597,
+        "fcf_margin": 0.18,
+        "mrr_m": 178
+      },
+      {
+        "year": 2025,
+        "gmv_b": 378.441,
+        "revenue_b": 11.556,
+        "subscription_b": 2.752,
+        "merchant_b": 8.804,
+        "gross_profit_b": 5.555,
+        "gross_margin": 0.481,
+        "operating_income_b": 1.468,
+        "fcf_b": 2.007,
+        "fcf_margin": 0.17,
+        "mrr_m": 205
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "q": "Q3 2024",
+        "gmv_b": 69.7,
+        "mrr_m": 175,
+        "revenue_b": 2.162,
+        "subscription_b": 0.61,
+        "merchant_b": 1.552,
+        "gross_profit_b": 1.118,
+        "operating_income_b": 0.283,
+        "fcf_b": 0.421,
+        "fcf_margin": 0.19
+      },
+      {
+        "q": "Q4 2024",
+        "gmv_b": 94.5,
+        "mrr_m": 178,
+        "revenue_b": 2.812,
+        "subscription_b": 0.666,
+        "merchant_b": 2.146,
+        "gross_profit_b": 1.352,
+        "operating_income_b": 0.465,
+        "fcf_b": 0.611,
+        "fcf_margin": 0.22
+      },
+      {
+        "q": "Q1 2025",
+        "gmv_b": 74.8,
+        "mrr_m": 182,
+        "revenue_b": 2.36,
+        "subscription_b": 0.62,
+        "merchant_b": 1.74,
+        "gross_profit_b": 1.169,
+        "operating_income_b": 0.203,
+        "fcf_b": 0.363,
+        "fcf_margin": 0.15
+      },
+      {
+        "q": "Q2 2025",
+        "gmv_b": 87.8,
+        "mrr_m": 185,
+        "revenue_b": 2.68,
+        "subscription_b": 0.656,
+        "merchant_b": 2.024,
+        "gross_profit_b": 1.302,
+        "operating_income_b": 0.291,
+        "fcf_b": 0.422,
+        "fcf_margin": 0.16
+      },
+      {
+        "q": "Q3 2025",
+        "gmv_b": 92.0,
+        "mrr_m": 193,
+        "revenue_b": 2.844,
+        "subscription_b": 0.699,
+        "merchant_b": 2.145,
+        "gross_profit_b": 1.391,
+        "operating_income_b": 0.343,
+        "fcf_b": 0.507,
+        "fcf_margin": 0.18
+      },
+      {
+        "q": "Q4 2025",
+        "gmv_b": 123.841,
+        "mrr_m": 205,
+        "revenue_b": 3.672,
+        "subscription_b": 0.777,
+        "merchant_b": 2.895,
+        "gross_profit_b": 1.693,
+        "operating_income_b": 0.631,
+        "fcf_b": 0.715,
+        "fcf_margin": 0.19
+      },
+      {
+        "q": "Q1 2026",
+        "gmv_b": 100.7,
+        "mrr_m": 212,
+        "revenue_b": 3.17,
+        "subscription_b": 0.75,
+        "merchant_b": 2.42,
+        "gross_profit_b": 1.546,
+        "operating_income_b": 0.382,
+        "fcf_b": 0.476,
+        "fcf_margin": 0.15
+      },
+      {
+        "q": "Q2 2026",
+        "gmv_b": 115.567,
+        "mrr_m": 221,
+        "revenue_b": 3.583,
+        "subscription_b": 0.802,
+        "merchant_b": 2.781,
+        "gross_profit_b": 1.708,
+        "operating_income_b": 0.488,
+        "fcf_b": 0.654,
+        "fcf_margin": 0.18
+      }
+    ],
+    "ceilings": [
+      "Enterprise/B2B/POS 별도 매출·gross profit 미공시",
+      "merchant retention/NRR cohort series 미공시",
+      "AI-attributed GMV/revenue/gross profit/take rate 미공시"
+    ]
+  },
+  "operating_kpis": {
+    "q2_2026": {
+      "gmv_b": 115.567,
+      "gmv_yoy": 0.32,
+      "revenue_b": 3.583,
+      "revenue_yoy": 0.34,
+      "merchant_solutions_b": 2.781,
+      "merchant_solutions_yoy": 0.37,
+      "subscription_solutions_b": 0.802,
+      "subscription_yoy": 0.22,
+      "gross_profit_b": 1.708,
+      "gross_profit_yoy": 0.31,
+      "operating_income_b": 0.488,
+      "fcf_b": 0.654,
+      "fcf_margin": 0.18,
+      "mrr_m": 221,
+      "payments_penetration": 0.68,
+      "gpv_b": 78.1,
+      "transaction_loan_losses_m": 141,
+      "capital_net_b": 2.184
+    }
+  },
+  "capital_structure": {
+    "cash_and_current_marketable_b": 4.947,
+    "long_term_htm_marketable_b": 0.525,
+    "valuation_net_cash_b": 5.472,
+    "shares_outstanding_b": 1.2892,
+    "diluted_weighted_avg_b": 1.2979,
+    "h1_2026_sbc_m": 260,
+    "h1_2026_repurchases_b": 1.933,
+    "repurchased_shares_m": 16.86,
+    "average_repurchase_price": 114.63,
+    "remaining_authorization_b": 3.067
+  },
+  "kpis": [
+    {
+      "name": "GMV YoY growth",
+      "current": 0.32,
+      "history": [
+        {
+          "period": "Q2 2025",
+          "value": 0.22
+        },
+        {
+          "period": "Q3 2025",
+          "value": 0.2
+        },
+        {
+          "period": "Q4 2025",
+          "value": 0.31
+        },
+        {
+          "period": "Q1 2026",
+          "value": 0.23
+        },
+        {
+          "period": "Q2 2026",
+          "value": 0.32
+        }
+      ],
+      "thresholds": {
+        "green": ">=25%",
+        "yellow": "18-25%",
+        "red": "<18%"
+      }
+    },
+    {
+      "name": "Shopify Payments penetration",
+      "current": 0.68,
+      "history": [
+        {
+          "period": "FY2023",
+          "value": 0.58
+        },
+        {
+          "period": "Q2 2024",
+          "value": 0.61
+        },
+        {
+          "period": "FY2025",
+          "value": 0.656
+        },
+        {
+          "period": "Q2 2026",
+          "value": 0.68
+        }
+      ],
+      "thresholds": {
+        "green": ">=69% 또는 상승 지속",
+        "yellow": "66-69%",
+        "red": "<66% 또는 2개 분기 연속 하락"
+      }
+    },
+    {
+      "name": "FCF margin",
+      "current": 0.18,
+      "history": [
+        {
+          "period": "Q3 2024",
+          "value": 0.19
+        },
+        {
+          "period": "Q4 2024",
+          "value": 0.22
+        },
+        {
+          "period": "Q1 2025",
+          "value": 0.15
+        },
+        {
+          "period": "Q2 2025",
+          "value": 0.16
+        },
+        {
+          "period": "Q3 2025",
+          "value": 0.18
+        },
+        {
+          "period": "Q4 2025",
+          "value": 0.19
+        },
+        {
+          "period": "Q1 2026",
+          "value": 0.15
+        },
+        {
+          "period": "Q2 2026",
+          "value": 0.18
+        }
+      ],
+      "thresholds": {
+        "green": ">=18%",
+        "yellow": "13-18%",
+        "red": "<13%"
+      }
+    },
+    {
+      "name": "MRR YoY growth",
+      "current": 0.19,
+      "history": [
+        {
+          "period": "Q2 2025",
+          "value": 185
+        },
+        {
+          "period": "Q2 2026",
+          "value": 221
+        }
+      ],
+      "thresholds": {
+        "green": ">=18% YoY",
+        "yellow": "12-18%",
+        "red": "<12%"
+      }
+    },
+    {
+      "name": "Transaction + loan losses / revenue",
+      "current": 0.039352497906782025,
+      "history": [
+        {
+          "period": "Q2 2025",
+          "value": 0.029850746268656716
+        },
+        {
+          "period": "Q2 2026",
+          "value": 0.039352497906782025
+        }
+      ],
+      "thresholds": {
+        "green": "<=4.0%",
+        "yellow": "4.0-5.5%",
+        "red": ">5.5%"
+      }
+    },
+    {
+      "name": "Agentic commerce economics",
+      "current": null,
+      "history": [],
+      "thresholds": {
+        "green": "AI 기여 GMV/전환/수익성이 별도 공시되고 증분성 확인",
+        "yellow": "채널·개발자 채택은 늘지만 경제성 미공시",
+        "red": "checkout 우회 또는 수익배분으로 가치 포착률 하락"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.25,
+      "rev_cagr_26_30": 0.14,
+      "fcf_margin_2030": 0.18,
+      "terminal_fcf_multiple": 25,
+      "diluted_shares_b": 1.32,
+      "formation": "GMV 성장률이 산업 대비 우위에서 빠르게 축소되고 Payments 침투율이 정체되며, Capital 손실률이 높은 수준을 유지한다.",
+      "break": "GMV 25%+ 성장과 Payments 침투율 상승, FCF 마진 18%+가 동시에 재확인되면 Bear 확률을 낮춘다.",
+      "revenue_path": [
+        15.3,
+        17.442,
+        19.884,
+        22.668,
+        25.841
+      ],
+      "margin_path": [
+        0.185,
+        0.1837,
+        0.1825,
+        0.1812,
+        0.18
+      ],
+      "fcf": [
+        2.831,
+        3.205,
+        3.629,
+        4.109,
+        4.651
+      ],
+      "terminal_ev_b": 116.275,
+      "per_share_value": 92.23,
+      "irr": -0.1102
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "rev_cagr_26_30": 0.2,
+      "fcf_margin_2030": 0.23,
+      "terminal_fcf_multiple": 32,
+      "diluted_shares_b": 1.285,
+      "formation": "점유율 상승과 Payments/오프라인/기업 고객 확장이 이어지지만 AI는 방어적 유통 인프라 역할에 머문다.",
+      "break": "매출 성장률이 20% 아래로 구조적으로 내려가거나 FCF 마진이 중후반 10%대에 정체되면 Base를 하향한다.",
+      "revenue_path": [
+        15.3,
+        18.36,
+        22.032,
+        26.438,
+        31.726
+      ],
+      "margin_path": [
+        0.185,
+        0.1963,
+        0.2075,
+        0.2188,
+        0.23
+      ],
+      "fcf": [
+        2.831,
+        3.603,
+        4.572,
+        5.783,
+        7.297
+      ],
+      "terminal_ev_b": 233.504,
+      "per_share_value": 185.97,
+      "irr": 0.0463
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.25,
+      "rev_cagr_26_30": 0.24,
+      "fcf_margin_2030": 0.25,
+      "terminal_fcf_multiple": 36,
+      "diluted_shares_b": 1.25,
+      "formation": "Enterprise/B2B/POS/국제 결제가 의미 있는 GMV와 gross profit을 만들고, 비용 증가 없이 attach가 확대된다.",
+      "break": "B2B/POS 성장률이 둔화되거나 gross profit 성장보다 비용이 빨라지면 실행 프리미엄을 제거한다.",
+      "revenue_path": [
+        15.3,
+        18.972,
+        23.525,
+        29.171,
+        36.172
+      ],
+      "margin_path": [
+        0.185,
+        0.2012,
+        0.2175,
+        0.2338,
+        0.25
+      ],
+      "fcf": [
+        2.831,
+        3.818,
+        5.117,
+        6.819,
+        9.043
+      ],
+      "terminal_ev_b": 325.548,
+      "per_share_value": 264.82,
+      "irr": 0.1352
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.1,
+      "rev_cagr_26_30": 0.27,
+      "fcf_margin_2030": 0.27,
+      "terminal_fcf_multiple": 40,
+      "diluted_shares_b": 1.22,
+      "formation": "UCP/Catalog가 AI 상거래의 사실상 표준 레이어가 되고, AI 채널의 증분 GMV와 Shopify 경제성이 별도로 입증된다.",
+      "break": "AI 채널이 Shopify checkout을 우회하거나 수익배분으로 가치 포착률이 낮아지면 Ecosystem 가치를 0에 가깝게 본다.",
+      "revenue_path": [
+        15.3,
+        19.431,
+        24.677,
+        31.34,
+        39.802
+      ],
+      "margin_path": [
+        0.185,
+        0.2062,
+        0.2275,
+        0.2488,
+        0.27
+      ],
+      "fcf": [
+        2.831,
+        4.008,
+        5.614,
+        7.796,
+        10.747
+      ],
+      "terminal_ev_b": 429.88,
+      "per_share_value": 356.85,
+      "irr": 0.2162
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B - Hybrid",
+    "current_price": 152.9,
+    "current_market_cap_b": 197.119,
+    "current_enterprise_value_b": 191.647,
+    "core": null,
+    "execution": null,
+    "ecosystem": null,
+    "drag": null,
+    "expected_future_value_2030_per_share": 199.34,
+    "expected_irr": 0.0632,
+    "base_fair_value_2030_per_share": 185.97,
+    "upside_downside_ratio_bull_execution_vs_bear": 1.84,
+    "horizon_years": 4.33,
+    "method_note": "2030 FCF x scenario terminal multiple + conservative net cash, divided by scenario diluted shares; interim FCF is reflected partly through share-count paths and is not separately added to terminal equity value."
+  },
+  "reverse_expectations": {
+    "hurdle": 0.1,
+    "horizon_years": 4.33,
+    "required_2030_share_price": 231.01,
+    "assumed_2030_diluted_shares_b": 1.285,
+    "required_2030_enterprise_value_b": 291.381,
+    "assumed_fcf_margin": 0.23,
+    "sensitivity": [
+      {
+        "terminal_fcf_multiple": 28,
+        "required_2030_fcf_b": 10.406,
+        "required_2030_revenue_b_at_23pct_fcf_margin": 45.245,
+        "required_revenue_cagr_26_30": 0.3114
+      },
+      {
+        "terminal_fcf_multiple": 32,
+        "required_2030_fcf_b": 9.106,
+        "required_2030_revenue_b_at_23pct_fcf_margin": 39.59,
+        "required_revenue_cagr_26_30": 0.2683
+      },
+      {
+        "terminal_fcf_multiple": 36,
+        "required_2030_fcf_b": 8.094,
+        "required_2030_revenue_b_at_23pct_fcf_margin": 35.191,
+        "required_revenue_cagr_26_30": 0.2315
+      },
+      {
+        "terminal_fcf_multiple": 40,
+        "required_2030_fcf_b": 7.285,
+        "required_2030_revenue_b_at_23pct_fcf_margin": 31.672,
+        "required_revenue_cagr_26_30": 0.1995
+      }
+    ],
+    "central_case_32x": {
+      "terminal_fcf_multiple": 32,
+      "required_2030_fcf_b": 9.106,
+      "required_2030_revenue_b_at_23pct_fcf_margin": 39.59,
+      "required_revenue_cagr_26_30": 0.2683
+    },
+    "interpretation": "32x terminal FCF와 23% FCF margin을 유지해도 약 $39.6B 매출과 $9.1B FCF, 2026-30 매출 CAGR 약 26.8%가 필요하다."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_b_range": [
+        15.2,
+        15.4
+      ]
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_b_illustrative": 19.36
+    },
+    "fy3": {
+      "year": 2028,
+      "revenue_b_illustrative": 24.25
+    },
+    "revision_trend": "Q2 beat와 Q3 low-30s guide 이후 FY2026 매출 기대가 약 $14.7B에서 $15.2~15.4B로 상향. Secondary snapshot이므로 방향성 중심으로 사용.",
+    "price_target_range": [
+      145,
+      200
+    ],
+    "price_target_consensus_range": [
+      168,
+      175
+    ]
+  },
+  "stance": {
+    "zone": "신규 매수 회피 / 관망; 기존 보유는 비중 확대보다 축소 검토",
+    "price_bands": {
+      "current": 152.9,
+      "base_2030_value": 185.97,
+      "10pct_expected_irr_entry": 131.93,
+      "12pct_expected_irr_entry": 122.03,
+      "15pct_expected_irr_entry": 108.83,
+      "attractive_entry_band": [
+        115,
+        132
+      ],
+      "high_conviction_band": "<=110"
+    },
+    "horizon": "2030 year-end (~4.33 years)",
+    "reason": "확률가중 기대 IRR 약 6%로 10-15% hurdle 미달. Bull Execution 대비 Bear U/D는 약 1.8x지만 시간가치가 부족하다."
+  },
+  "catalysts": [
+    {
+      "when": "2026-11 (예상)",
+      "event": "Q3 2026 실적",
+      "sensitivity": "low-30s revenue growth 및 high-teens~low-20s FCF margin 달성 여부"
+    },
+    {
+      "when": "2027-02 (예상)",
+      "event": "Q4/FY2026 실적 및 2027 초기 가이던스",
+      "sensitivity": "2026 성장 지속성, buyback·SBC·Capital 손실률"
+    },
+    {
+      "when": "2027-H1",
+      "event": "Enterprise/B2B/POS 및 Agentic commerce 제품 업데이트",
+      "sensitivity": "분리된 adoption/economics가 처음 공시되는지 여부"
+    },
+    {
+      "when": "2027-05~06 (예상)",
+      "event": "Spring 2027 Editions / 개발자 생태계 업데이트",
+      "sensitivity": "UCP/Catalog 외부 채널 확대와 monetization leakage"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "1.1~1.4"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1.2 / 4.2"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "3.2 / 4.3"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "3.1 / 4.2"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.3"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "1.3 / 3.4 / 5.3"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.5"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "3.6"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "2.1~2.3"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "4.1~4.2"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "4.3"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "4.4 / 5.2"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "5.1 / 6.1"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "5.2"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "5.3"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "6.2~6.4"
+    }
+  ],
+  "as_of_registry": {
+    "PRICE_ASOF": "2026-08-28",
+    "FILING_ASOF": "2026-08-05",
+    "TRANSCRIPT_ASOF": "2026-08-05",
+    "CONSENSUS_ASOF": "2026-08-19",
+    "LATEST_FILING_CHECK": "2026-08-27 Form 144 확인; Q2 10-Q를 대체하는 영업 업데이트 없음"
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "type": "primary",
+      "title": "Shopify Q2 2026 Form 10-Q",
+      "date": "2026-08-05",
+      "url": "https://www.sec.gov/Archives/edgar/data/1594805/000159480526000047/shop-20260630.htm",
+      "use": "Q2 재무, Payments 침투, Capital, 주식수·회계"
+    },
+    {
+      "id": "S2",
+      "type": "primary",
+      "title": "Shopify Q2 2026 earnings release",
+      "date": "2026-08-05",
+      "url": "https://www.shopify.com/investors/press-releases/shopify-delivers-big-30-growth-across-gmv-revenue-gross-profit",
+      "use": "Q2 GMV/매출/FCF 및 Q3 가이던스"
+    },
+    {
+      "id": "S3",
+      "type": "primary",
+      "title": "Shopify FY2025 investor press release",
+      "date": "2026-02-11",
+      "url": "https://s27.q4cdn.com/572064924/files/doc_financials/2025/q4/Shopify_Investor_Press_Release_Q4-25_FINAL.pdf",
+      "use": "2025 연간 및 2024 비교 재무"
+    },
+    {
+      "id": "S4",
+      "type": "primary",
+      "title": "Shopify FY2024 results",
+      "date": "2025-02-11",
+      "url": "https://www.shopify.com/investors/press-releases/shopify-merchant-success-powers-q4-outperformance-across-both-top-and-bottom-line",
+      "use": "2024/2023 비교 및 성장 드라이버"
+    },
+    {
+      "id": "S5",
+      "type": "primary",
+      "title": "Shopify FY2023 results",
+      "date": "2024-02-13",
+      "url": "https://www.shopify.com/news/shopify-announces-fourth-quarter-and-full-year-2023-financial-results",
+      "use": "2023 GMV/매출/FCF"
+    },
+    {
+      "id": "S6",
+      "type": "primary",
+      "title": "U.S. Census Q2 2026 Retail E-Commerce",
+      "date": "2026-08-18",
+      "url": "https://www.census.gov/retail/ecommerce.html",
+      "use": "미국 전자상거래 성장률 및 침투율"
+    },
+    {
+      "id": "S7",
+      "type": "primary/company",
+      "title": "Shopify Spring 2026 Agentic Commerce / UCP",
+      "date": "2026-06-17",
+      "url": "https://www.shopify.com/news/spring-26-edition-dev",
+      "use": "UCP/Catalog 공개 범위와 구조"
+    },
+    {
+      "id": "S8",
+      "type": "primary/company",
+      "title": "Shopify Agentic Storefronts Help Center",
+      "date": "2026-08-30",
+      "url": "https://help.shopify.com/en/manual/online-sales-channels/agentic-storefronts",
+      "use": "채널별 rollout/early access 경계"
+    },
+    {
+      "id": "S9",
+      "type": "market",
+      "title": "SHOP historical close",
+      "date": "2026-08-28",
+      "url": "https://kr.investing.com/equities/shopify-inc-historical-data",
+      "use": "현재가 $152.90"
+    },
+    {
+      "id": "S10",
+      "type": "primary",
+      "title": "SEC Form 144 filed Aug 27 2026",
+      "date": "2026-08-27",
+      "url": "https://www.sec.gov/Archives/edgar/data/1594805/000195004726008762/0001950047-26-008762-index.htm",
+      "use": "LATEST_FILING_CHECK - 비영업 업데이트"
+    }
+  ],
+  "visual_data_source_registry": [
+    "financials.annual_3y",
+    "financials.quarterly_8q",
+    "operating_kpis.q2_2026",
+    "scenarios",
+    "valuation",
+    "reverse_expectations",
+    "stance.price_bands"
+  ]
+}

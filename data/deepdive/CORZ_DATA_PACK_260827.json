@@ -1,0 +1,966 @@
+{
+  "meta": {
+    "ticker": "CORZ",
+    "company": "Core Scientific, Inc.",
+    "T0": "2026-08-26 Asia/Seoul",
+    "price_asof": "2026-08-25 US close",
+    "price_usd": 18.03,
+    "filing_asof": "2026-08-14 Polaris DS acquisition closing disclosure",
+    "quarterly_financial_asof": "2026-06-30",
+    "consensus_asof": "2026-08-26",
+    "version": "Clean DDOS Production OS v1.7",
+    "currency": "USD",
+    "normalization_horizon": "2029E (~3.33 years)",
+    "publishing_completed_asia_seoul": "2026-08-27",
+    "publishing_artifact": "CORZ_DEEP_DIVE"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue_usd_m": 502.4,
+        "hdc_revenue_usd_m": 0.0,
+        "self_mining_usd_m": 390.3,
+        "hosted_mining_usd_m": 112.1,
+        "gross_profit_usd_m": 123.5
+      },
+      {
+        "year": 2024,
+        "revenue_usd_m": 510.7,
+        "hdc_revenue_usd_m": 24.4,
+        "self_mining_usd_m": 408.7,
+        "hosted_mining_usd_m": 77.6,
+        "gross_profit_usd_m": 121.1
+      },
+      {
+        "year": 2025,
+        "revenue_usd_m": 319.0,
+        "hdc_revenue_usd_m": 65.4,
+        "self_mining_usd_m": 229.2,
+        "hosted_mining_usd_m": 24.4,
+        "gross_profit_usd_m": 37.9
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "2024Q3",
+        "revenue_usd_m": 95.4,
+        "hdc_revenue_usd_m": 10.3,
+        "gross_profit_usd_m": -0.2,
+        "adjusted_ebitda_usd_m": 10.1
+      },
+      {
+        "quarter": "2024Q4",
+        "revenue_usd_m": 94.9,
+        "hdc_revenue_usd_m": 8.5,
+        "gross_profit_usd_m": 4.8,
+        "adjusted_ebitda_usd_m": 13.3
+      },
+      {
+        "quarter": "2025Q1",
+        "revenue_usd_m": 79.5,
+        "hdc_revenue_usd_m": 8.6,
+        "gross_profit_usd_m": 8.2,
+        "adjusted_ebitda_usd_m": -6.1
+      },
+      {
+        "quarter": "2025Q2",
+        "revenue_usd_m": 78.6,
+        "hdc_revenue_usd_m": 10.6,
+        "gross_profit_usd_m": 5.0,
+        "adjusted_ebitda_usd_m": 28.5
+      },
+      {
+        "quarter": "2025Q3",
+        "revenue_usd_m": 81.1,
+        "hdc_revenue_usd_m": 15.0,
+        "gross_profit_usd_m": 3.9,
+        "adjusted_ebitda_usd_m": -2.4
+      },
+      {
+        "quarter": "2025Q4",
+        "revenue_usd_m": 79.8,
+        "hdc_revenue_usd_m": 31.3,
+        "gross_profit_usd_m": 20.8,
+        "adjusted_ebitda_usd_m": -42.7
+      },
+      {
+        "quarter": "2026Q1",
+        "revenue_usd_m": 115.2,
+        "hdc_revenue_usd_m": 77.5,
+        "gross_profit_usd_m": 30.1,
+        "adjusted_ebitda_usd_m": 8.9
+      },
+      {
+        "quarter": "2026Q2",
+        "revenue_usd_m": 164.2,
+        "hdc_revenue_usd_m": 136.7,
+        "gross_profit_usd_m": 70.0,
+        "adjusted_ebitda_usd_m": 41.1
+      }
+    ],
+    "ceilings": [
+      "2024–2025 interim figures were restated for demolition/impairment accounting; latest comparable reported figures are used.",
+      "Adjusted EBITDA is company-defined non-GAAP and definition/reclassification changed; Q1 2026 uses the latest Q2 earnings-release comparable series.",
+      "Site-level AMD net capex/MW, PUE and cooling specifications are not fully disclosed."
+    ]
+  },
+  "kpis": [
+    {
+      "name": "Billable customer power capacity (MW)",
+      "history": [
+        {
+          "period": "2025Q4",
+          "value": 120
+        },
+        {
+          "period": "2026Q1",
+          "value": 225
+        },
+        {
+          "period": "2026Q2",
+          "value": 395
+        },
+        {
+          "period": "2026-07 mid-month",
+          "value": 437
+        }
+      ],
+      "current": 437,
+      "thresholds": {
+        "green": "CoreWeave ~590MW substantially billable by early 2027",
+        "yellow": "modest 1–2 quarter delay",
+        "red": "<500MW well into 2027 / systemic delay"
+      }
+    },
+    {
+      "name": "Leased customer power capacity (MW)",
+      "history": [
+        {
+          "period": "2026Q2",
+          "value": 590
+        },
+        {
+          "period": "2026-07-27 pro forma initial contracts",
+          "value": 1119
+        }
+      ],
+      "current": 1119,
+      "thresholds": {
+        "green": "initial 1.12GW remains contracted and additional IG customer wins",
+        "yellow": "no incremental leasing through 2027",
+        "red": "material contract loss/default"
+      }
+    },
+    {
+      "name": "HDC revenue (USD m/quarter)",
+      "history": [
+        {
+          "period": "2025Q4",
+          "value": 31.3
+        },
+        {
+          "period": "2026Q1",
+          "value": 77.5
+        },
+        {
+          "period": "2026Q2",
+          "value": 136.7
+        }
+      ],
+      "current": 136.7,
+      "thresholds": {
+        "green": "tracks commissioned MW and annualized contract economics",
+        "yellow": "temporary construction/billing lag",
+        "red": "revenue/MW materially below contract economics"
+      }
+    },
+    {
+      "name": "HDC GAAP gross margin",
+      "history": [
+        {
+          "period": "2026Q1",
+          "value": 0.566
+        },
+        {
+          "period": "2026Q2",
+          "value": 0.585
+        }
+      ],
+      "current": 0.585,
+      "thresholds": {
+        "green": ">=58% GAAP and ex-power ~78%+",
+        "yellow": "52–58%",
+        "red": "<52% without mix explanation"
+      }
+    },
+    {
+      "name": "Liquidity (cash + digital assets, USD bn)",
+      "history": [
+        {
+          "period": "2025Q4",
+          "value": 0.533
+        },
+        {
+          "period": "2026Q1",
+          "value": 1.043
+        },
+        {
+          "period": "2026Q2",
+          "value": 1.819
+        }
+      ],
+      "current": 1.819,
+      "thresholds": {
+        "green": "committed project funding ahead of construction need",
+        "yellow": "funding matched only near-term",
+        "red": "repeated expensive equity-like financing"
+      }
+    },
+    {
+      "name": "Customer concentration — HDC revenue from CoreWeave",
+      "history": [
+        {
+          "period": "2026H1",
+          "value": 1.0
+        }
+      ],
+      "current": 1.0,
+      "thresholds": {
+        "green": "AMD/other customers become meaningful revenue share by 2028",
+        "yellow": "CoreWeave remains dominant but declining",
+        "red": "CoreWeave remains overwhelming after 2028"
+      }
+    },
+    {
+      "name": "Internal control over financial reporting",
+      "history": [
+        {
+          "period": "2025FY",
+          "value": "material weakness"
+        },
+        {
+          "period": "2026Q2",
+          "value": "unremediated"
+        }
+      ],
+      "current": "unremediated",
+      "thresholds": {
+        "green": "remediated after sufficient operating/testing period",
+        "yellow": "remediation proceeding",
+        "red": "repeat restatement/control failure"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.2,
+      "billable_mw_2029": 800,
+      "revenue_path": [
+        {
+          "year": 2026,
+          "usd_bn": 0.64
+        },
+        {
+          "year": 2027,
+          "usd_bn": 0.82
+        },
+        {
+          "year": 2028,
+          "usd_bn": 1.02
+        },
+        {
+          "year": 2029,
+          "usd_bn": 1.25
+        }
+      ],
+      "margin_path": [
+        {
+          "year": 2026,
+          "ebitda_margin": 0.07
+        },
+        {
+          "year": 2027,
+          "ebitda_margin": 0.22
+        },
+        {
+          "year": 2028,
+          "ebitda_margin": 0.32
+        },
+        {
+          "year": 2029,
+          "ebitda_margin": 0.38
+        }
+      ],
+      "fcf": [
+        {
+          "year": 2026,
+          "usd_bn": -1.55
+        },
+        {
+          "year": 2027,
+          "usd_bn": -1.35
+        },
+        {
+          "year": 2028,
+          "usd_bn": -0.65
+        },
+        {
+          "year": 2029,
+          "usd_bn": 0.15
+        }
+      ],
+      "diluted_shares": 350,
+      "net_debt_2029_usd_bn": 3.2,
+      "ev_ebitda": 10.5,
+      "per_share_value": 5.11,
+      "thesis": "CoreWeave 완공 지연·AMD build 지연, 높은 funding cost와 낮은 정상화 마진."
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "billable_mw_2029": 1119,
+      "revenue_path": [
+        {
+          "year": 2026,
+          "usd_bn": 0.67
+        },
+        {
+          "year": 2027,
+          "usd_bn": 1.05
+        },
+        {
+          "year": 2028,
+          "usd_bn": 1.48
+        },
+        {
+          "year": 2029,
+          "usd_bn": 1.8
+        }
+      ],
+      "margin_path": [
+        {
+          "year": 2026,
+          "ebitda_margin": 0.08
+        },
+        {
+          "year": 2027,
+          "ebitda_margin": 0.3
+        },
+        {
+          "year": 2028,
+          "ebitda_margin": 0.42
+        },
+        {
+          "year": 2029,
+          "ebitda_margin": 0.48
+        }
+      ],
+      "fcf": [
+        {
+          "year": 2026,
+          "usd_bn": -1.65
+        },
+        {
+          "year": 2027,
+          "usd_bn": -1.7
+        },
+        {
+          "year": 2028,
+          "usd_bn": -0.95
+        },
+        {
+          "year": 2029,
+          "usd_bn": 0.35
+        }
+      ],
+      "diluted_shares": 480,
+      "net_debt_2029_usd_bn": 2.5,
+      "ev_ebitda": 13.0,
+      "per_share_value": 18.19,
+      "thesis": "초기 1.12GW 계약을 대체로 일정대로 가동. 추가 AMD reservation 가치는 거의 반영하지 않음."
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.25,
+      "billable_mw_2029": 1500,
+      "revenue_path": [
+        {
+          "year": 2026,
+          "usd_bn": 0.69
+        },
+        {
+          "year": 2027,
+          "usd_bn": 1.25
+        },
+        {
+          "year": 2028,
+          "usd_bn": 1.9
+        },
+        {
+          "year": 2029,
+          "usd_bn": 2.55
+        }
+      ],
+      "margin_path": [
+        {
+          "year": 2026,
+          "ebitda_margin": 0.09
+        },
+        {
+          "year": 2027,
+          "ebitda_margin": 0.34
+        },
+        {
+          "year": 2028,
+          "ebitda_margin": 0.45
+        },
+        {
+          "year": 2029,
+          "ebitda_margin": 0.5
+        }
+      ],
+      "fcf": [
+        {
+          "year": 2026,
+          "usd_bn": -1.7
+        },
+        {
+          "year": 2027,
+          "usd_bn": -2.05
+        },
+        {
+          "year": 2028,
+          "usd_bn": -1.25
+        },
+        {
+          "year": 2029,
+          "usd_bn": 0.55
+        }
+      ],
+      "diluted_shares": 520,
+      "net_debt_2029_usd_bn": 3.5,
+      "ev_ebitda": 13.5,
+      "per_share_value": 26.37,
+      "thesis": "기존 계약 완공에 더해 추가 300~400MW가 경제성 있게 계약·가동되고 funding 조건이 통제됨."
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.15,
+      "billable_mw_2029": 2200,
+      "revenue_path": [
+        {
+          "year": 2026,
+          "usd_bn": 0.7
+        },
+        {
+          "year": 2027,
+          "usd_bn": 1.35
+        },
+        {
+          "year": 2028,
+          "usd_bn": 2.25
+        },
+        {
+          "year": 2029,
+          "usd_bn": 3.55
+        }
+      ],
+      "margin_path": [
+        {
+          "year": 2026,
+          "ebitda_margin": 0.09
+        },
+        {
+          "year": 2027,
+          "ebitda_margin": 0.36
+        },
+        {
+          "year": 2028,
+          "ebitda_margin": 0.47
+        },
+        {
+          "year": 2029,
+          "ebitda_margin": 0.52
+        }
+      ],
+      "fcf": [
+        {
+          "year": 2026,
+          "usd_bn": -1.75
+        },
+        {
+          "year": 2027,
+          "usd_bn": -2.35
+        },
+        {
+          "year": 2028,
+          "usd_bn": -1.9
+        },
+        {
+          "year": 2029,
+          "usd_bn": 0.8
+        }
+      ],
+      "diluted_shares": 538,
+      "net_debt_2029_usd_bn": 5.0,
+      "ev_ebitda": 14.5,
+      "per_share_value": 40.46,
+      "thesis": "AMD reservation과 신규 사이트의 상당 부분이 계약으로 전환되고 scale premium을 유지."
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B — Hybrid",
+    "core": 10.1,
+    "execution": 8.4,
+    "ecosystem": 5.2,
+    "drag": -2.74,
+    "bridge_note": "Per-share attribution bridge; not a second independent valuation. Sum equals probability-weighted 2029 scenario value.",
+    "expected_value": 20.96,
+    "expected_irr": 0.0462,
+    "current_price": 18.03,
+    "hurdle_entry_price_10pct": 15.26,
+    "hurdle_entry_price_12pct": 14.37,
+    "hurdle_entry_price_15pct": 13.16,
+    "horizon_years": 3.33
+  },
+  "reverse_expectations": {
+    "assumptions": {
+      "diluted_shares_m": 480,
+      "ev_ebitda": 13.0,
+      "normalized_ebitda_margin": 0.48,
+      "revenue_per_billable_mw_usd_m": 1.6
+    },
+    "sensitivity": [
+      {
+        "net_debt_usd_bn": 1.5,
+        "required_revenue_usd_bn": 1.63,
+        "required_billable_mw": 1017
+      },
+      {
+        "net_debt_usd_bn": 2.5,
+        "required_revenue_usd_bn": 1.79,
+        "required_billable_mw": 1117
+      },
+      {
+        "net_debt_usd_bn": 3.5,
+        "required_revenue_usd_bn": 1.95,
+        "required_billable_mw": 1217
+      },
+      {
+        "net_debt_usd_bn": 4.5,
+        "required_revenue_usd_bn": 2.11,
+        "required_billable_mw": 1318
+      }
+    ],
+    "interpretation": "Base funding assumption에서 현재 주가는 초기 계약 약 1.12GW의 정상 가동과 거의 일치한다."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_usd_m": 671.6,
+      "eps": -3.88,
+      "source_asof": "aggregator snapshot Aug-2026"
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_usd_bn": 1.15,
+      "eps": 0.14,
+      "source_asof": "aggregator snapshot Aug-2026"
+    },
+    "revision_trend": "AMD 발표 후 다수 목표가 상향. 목표가 평균은 provider별 표본/갱신 시점 차이로 대략 low-$30s~high-$30s 범위; 단일 평균값을 authoritative로 사용하지 않음.",
+    "short_interest": {
+      "date": "2026-07-31",
+      "shares_m": 63.1,
+      "percent_float": 0.2
+    }
+  },
+  "stance": {
+    "zone": "관심 대기 / 가격 규율",
+    "price_bands": {
+      "deep_value": "< $13",
+      "attractive": "$13–15.3",
+      "fair_watch": "$15.3–21",
+      "execution_premium": "$21–27",
+      "ecosystem_priced": "> $27"
+    },
+    "horizon": "2029E normalization (~3.33 years)",
+    "current_price_zone": "fair_watch",
+    "rationale": "Probability-weighted value ~$21.0 implies ~4.6% annualized return at $18.03, below a 10–15% hurdle. $14.4 approximates the 12% hurdle entry."
+  },
+  "catalysts": [
+    {
+      "when": "2H 2026–early 2027",
+      "event": "Remaining CoreWeave capacity commissioning toward 590MW billable",
+      "sensitivity": "매우 높음 — 현재 core/execution 가치의 직접 증거"
+    },
+    {
+      "when": "YE 2026 / 2027 filing cycle",
+      "event": "Material weakness remediation evidence",
+      "sensitivity": "중간 — capex accounting credibility 개선"
+    },
+    {
+      "when": "1H 2027",
+      "event": "AMD Pecos + Auburn initial delivery milestones",
+      "sensitivity": "높음 — 신규 customer cohort의 첫 delivery proof"
+    },
+    {
+      "when": "2H 2027",
+      "event": "Dalton/Muskogee AMD/neocloud delivery",
+      "sensitivity": "높음 — 529MW schedule credibility"
+    },
+    {
+      "when": "1H 2028",
+      "event": "Hunt County AMD delivery",
+      "sensitivity": "높음"
+    },
+    {
+      "when": "through 2028-12-28",
+      "event": "AMD reservation rights conversion / additional capacity awards",
+      "sensitivity": "매우 높음 — Bull Ecosystem probability를 결정"
+    },
+    {
+      "when": "ongoing",
+      "event": "New investment-grade customer contracts / customer-funded capex or project finance",
+      "sensitivity": "매우 높음 — funding drag를 낮추는 핵심"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "0,2,Appendix"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "1"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "1,6"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "2"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "3,4"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "3,4,5"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "3,4"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "3,5"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "3,6"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "3"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "4,Appendix"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "4,5,Appendix"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "1,3,Appendix"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "4,6"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "6"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "0,6"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE",
+      "h3_locator": "5,6"
+    }
+  ],
+  "_extensions": {
+    "capacity": {
+      "portfolio_2026Q2": {
+        "gross_utility_power_mw": 2100,
+        "leasable_customer_power_mw": 1300,
+        "leased_coreweave_mw": 590,
+        "billable_mw": 395
+      },
+      "mid_july_billable_mw": 437,
+      "post_amd_initial_leased_mw": 1119,
+      "polaris_gross_grid_connected_mw": 440,
+      "amd_reservation_additional_mw": 1925,
+      "amd_total_potential_leasable_mw": 2500
+    },
+    "contracts": {
+      "coreweave": {
+        "leased_mw": 590,
+        "annualized_gaap_revenue_usd_m": 850,
+        "potential_revenue_usd_bn": 10,
+        "term": "long-term take-or-pay / escalator; no unilateral termination per company deck"
+      },
+      "amd_neocloud": {
+        "initial_mw": 529,
+        "base_term_years": 15,
+        "potential_base_term_revenue_usd_bn": 14,
+        "amd_direct_mw": 377,
+        "neocloud_mw": 152,
+        "initial_warrant_shares_m": 6.5,
+        "max_warrant_shares_m": 30,
+        "warrant_strike_usd": 23.47
+      }
+    },
+    "unit_economics": {
+      "q2_hdc_revenue_usd_m": 136.669,
+      "q2_hdc_cost_usd_m": 56.686,
+      "q2_hdc_gross_profit_usd_m": 79.983,
+      "q2_power_passthrough_usd_m": 35.073,
+      "q2_gaap_hdc_gross_margin": 0.585,
+      "q2_ex_power_gross_margin": 0.787,
+      "coreweave_revenue_per_mw_usd_m": 1.44,
+      "amd_neocloud_revenue_per_mw_usd_m": 1.76,
+      "blended_initial_revenue_per_mw_usd_m": 1.6,
+      "generic_build_cost_usd_m_per_mw": "11–12"
+    },
+    "capital_structure": {
+      "basic_shares_m": 321,
+      "tranche1_warrants_m": 96.4,
+      "tranche1_strike_usd": 6.81,
+      "tranche1_expiry": "2027-01-23",
+      "tranche2_warrants_m": 6.6,
+      "tranche2_strike_usd": 0.01,
+      "rsu_psu_m": 16,
+      "2029_convert_principal_usd_m": 460,
+      "2029_convert_rate": 0.03,
+      "2029_initial_conversion_price_usd": 11.0,
+      "2029_stock_condition_usd": 14.3,
+      "2031_convert_principal_usd_m": 625,
+      "2031_convert_rate": 0.0,
+      "2031_initial_conversion_price_usd": 22.49,
+      "2031_stock_condition_usd": 29.24,
+      "secured_notes_principal_usd_m": 3300,
+      "secured_notes_coupon": 0.0775,
+      "management_pre_amd_proforma_diluted_shares_m": 508,
+      "cash_plus_digital_assets_2026Q2_usd_m": 1819.4,
+      "future_cash_commitments_2026Q2_usd_m": 1000,
+      "customer_passthrough_component_usd_m": 264
+    },
+    "competition": [
+      {
+        "company": "CORZ",
+        "contracted_mw": 1119,
+        "live_mw": 395,
+        "live_asof": "2026-06-30",
+        "contract_revenue_usd_bn": 24,
+        "build_cost_usd_m_per_mw": "11–12 generic",
+        "credit_note": "CoreWeave + AMD direct + neocloud; concentration remains"
+      },
+      {
+        "company": "Applied Digital",
+        "contracted_mw": 1410,
+        "live_mw": 175,
+        "live_asof": "2026-06-30",
+        "contract_revenue_usd_bn": 36.2,
+        "build_cost_usd_m_per_mw": "11–13",
+        "credit_note": "CoreWeave + investment-grade hyperscalers; Macquarie capital support"
+      },
+      {
+        "company": "TeraWulf",
+        "contracted_mw": 378,
+        "live_mw": 102,
+        "live_asof": "2026-07",
+        "contract_revenue_usd_bn": null,
+        "build_cost_usd_m_per_mw": "8–10",
+        "credit_note": "Fluidstack + Google backstop"
+      },
+      {
+        "company": "Cipher Mining",
+        "contracted_mw": 168,
+        "live_mw": 0,
+        "live_asof": "service expected 4Q26",
+        "contract_revenue_usd_bn": 3.0,
+        "build_cost_usd_m_per_mw": "9–11",
+        "credit_note": "Google backstop"
+      }
+    ],
+    "management": {
+      "ceo": "Adam Sullivan",
+      "ceo_since": "2023-08-02",
+      "president_since": "2023-05-15",
+      "2025_total_comp_usd_m": 22.923,
+      "2025_customer_acquisition_kpi_target_mw": 100,
+      "2025_customer_acquisition_kpi_achievement": 0,
+      "2026_proxy_energized_delivery_pct_of_plan": 1.42,
+      "say_on_pay_opposition_approx": 0.36
+    },
+    "accounting": {
+      "material_weakness_2026Q2": "unremediated",
+      "issue": "controls over demolition/impairment accounting for assets converted from mining to HDC",
+      "q2_2026_warrant_fv_adjustment_usd_m": 1045.5
+    },
+    "market_positioning": {
+      "analyst_view": "Strong/Moderate Buy across major aggregators, exact average target provider-dependent",
+      "target_range_comment": "average target snapshots roughly low-$30s to high-$30s after AMD updates",
+      "top_13f_examples": [
+        {
+          "holder": "BlackRock",
+          "shares_m": 28.12,
+          "period": "2026-06-30"
+        },
+        {
+          "holder": "Jericho Capital",
+          "shares_m": 22.88,
+          "period": "2026-06-30"
+        },
+        {
+          "holder": "Situational Awareness LP",
+          "shares_m": 26.01,
+          "period": "2026-06-30"
+        },
+        {
+          "holder": "Vanguard Portfolio Management",
+          "shares_m": 18.66,
+          "period": "2026-06-30"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "id": "S1",
+        "title": "Core Scientific Q2 2026 Form 10-Q",
+        "type": "primary",
+        "url": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000014/core-20260630.htm"
+      },
+      {
+        "id": "S2",
+        "title": "Core Scientific Q2 2026 Results",
+        "type": "primary",
+        "url": "https://investors.corescientific.com/news-events/press-releases/detail/139/core-scientific-announces-second-quarter-2026-results"
+      },
+      {
+        "id": "S3",
+        "title": "Core Scientific Q2 2026 Earnings Deck",
+        "type": "primary",
+        "url": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/q2fy26earningsdeck728am.htm"
+      },
+      {
+        "id": "S4",
+        "title": "Core Scientific AMD Agreement 8-K",
+        "type": "primary",
+        "url": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/core-20260727.htm"
+      },
+      {
+        "id": "S5",
+        "title": "Core Scientific 2025 Form 10-K",
+        "type": "primary",
+        "url": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013305/core-20251231.htm"
+      },
+      {
+        "id": "S6",
+        "title": "Core Scientific Polaris DS Closing",
+        "type": "primary",
+        "url": "https://investors.corescientific.com/sec-filings/all-sec-filings/content/0001839341-26-000018/core-20260813.htm"
+      },
+      {
+        "id": "S7",
+        "title": "Core Scientific 2026 Proxy",
+        "type": "primary",
+        "url": "https://www.sec.gov/Archives/edgar/data/1839341/000119312526134857/d119389ddef14a.htm"
+      },
+      {
+        "id": "S8",
+        "title": "Core Scientific Oct-2025 Merger Investor Materials / Standalone Financing Need",
+        "type": "primary",
+        "url": "https://investors.corescientific.com/sec-filings/all-sec-filings/content/0001140361-25-038209/ef20057150_ex99-1.htm"
+      },
+      {
+        "id": "S9",
+        "title": "LBNL U.S. Data Center Energy Usage Report: 2025 Update",
+        "type": "primary_government",
+        "url": "https://datacenters.lbl.gov/publications/united-states-data-center-energy-2025"
+      },
+      {
+        "id": "S10",
+        "title": "U.S. EIA Today in Energy — Data Center Power Demand",
+        "type": "primary_government",
+        "url": "https://www.eia.gov/TODAYINENERGY/detail.php?id=67344"
+      },
+      {
+        "id": "S11",
+        "title": "Applied Digital FY2026 10-K",
+        "type": "primary_peer",
+        "url": "https://ir.applieddigital.com/sec-filings/all-sec-filings/content/0001144879-26-000048/apld-20260531.htm"
+      },
+      {
+        "id": "S12",
+        "title": "TeraWulf Q2 2026 10-Q",
+        "type": "primary_peer",
+        "url": "https://investors.terawulf.com/sec-filings/all-sec-filings/content/0001083301-26-000166/wulf-20260630.htm"
+      },
+      {
+        "id": "S13",
+        "title": "Core Scientific Financial Results Hub",
+        "type": "primary",
+        "url": "https://investors.corescientific.com/financial-information/financial-results"
+      },
+      {
+        "id": "S14",
+        "title": "StockAnalysis CORZ Forecast / Consensus (provider aggregation)",
+        "type": "secondary_aggregator",
+        "url": "https://stockanalysis.com/stocks/corz/forecast/"
+      },
+      {
+        "id": "S15",
+        "title": "MarketBeat CORZ Short Interest / Analyst aggregation",
+        "type": "secondary_aggregator",
+        "url": "https://www.marketbeat.com/stocks/NASDAQ/CORZ/"
+      },
+      {
+        "id": "S16",
+        "title": "HoldingsChannel CORZ 13F holder aggregation",
+        "type": "secondary_aggregator",
+        "url": "https://www.holdingschannel.com/institutional/holders-of-corz/"
+      }
+    ]
+  }
+}

@@ -1,0 +1,975 @@
+{
+  "meta": {
+    "ticker": "WOLF",
+    "company": "Wolfspeed, Inc.",
+    "T0": "2026-08-29 Asia/Seoul",
+    "price_asof": "2026-08-28 regular close",
+    "filing_asof": "2026-08-25 8-K; FY26 10-K financial baseline filed 2026-08-20",
+    "consensus_asof": "2026-08-29",
+    "version": "DDOS v1.7",
+    "currency": "USD"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "fy": "FY24",
+        "revenue": 807.2,
+        "power": 415.6,
+        "materials": 391.6,
+        "gross_profit": 77.4,
+        "gross_margin": 9.6,
+        "ocf": -671.3,
+        "fcf": -2772.7,
+        "cash_sti": 2174.6
+      },
+      {
+        "fy": "FY25",
+        "revenue": 757.6,
+        "power": 414.0,
+        "materials": 343.6,
+        "gross_profit": -121.6,
+        "gross_margin": -16.1,
+        "ocf": -711.7,
+        "fcf": -1748.0,
+        "cash_sti": 955.4
+      },
+      {
+        "fy": "FY26 analytical bridge",
+        "revenue": 665.1,
+        "power": 456.5,
+        "materials": 208.6,
+        "gross_profit": -232.1,
+        "gross_margin": -34.9,
+        "ocf": null,
+        "fcf": null,
+        "cash_sti": 1088.6,
+        "note": "fresh-start predecessor+successor analytical bridge; not an audited single reporting period"
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "q": "FY25 Q1",
+        "revenue": 194.7,
+        "power": 97.1,
+        "materials": 97.6,
+        "gross_margin": -19.0,
+        "ocf": -132.0,
+        "fcf": -528.2,
+        "fcf_quality": "approx"
+      },
+      {
+        "q": "FY25 Q2",
+        "revenue": 180.5,
+        "power": 90.8,
+        "materials": 89.7,
+        "gross_margin": -21.0,
+        "ocf": -195.1,
+        "fcf": -598.1,
+        "segment_quality": "derived"
+      },
+      {
+        "q": "FY25 Q3",
+        "revenue": 185.4,
+        "power": 107.5,
+        "materials": 77.9,
+        "gross_margin": -12.0,
+        "ocf": -142.1,
+        "fcf": -167.7
+      },
+      {
+        "q": "FY25 Q4",
+        "revenue": 197.0,
+        "power": 118.6,
+        "materials": 78.4,
+        "gross_margin": -13.0,
+        "ocf": -242.5,
+        "fcf": -454.0
+      },
+      {
+        "q": "FY26 Q1",
+        "revenue": 196.8,
+        "power": 131.8,
+        "materials": 65.0,
+        "gross_margin": -39.2,
+        "ocf": 5.7,
+        "fcf": -99.6,
+        "fcf_quality": "approx"
+      },
+      {
+        "q": "FY26 Q2",
+        "revenue": 168.5,
+        "power": 118.3,
+        "materials": 50.2,
+        "gross_margin": -46.5,
+        "ocf": null,
+        "fcf": null,
+        "segment_quality": "derived",
+        "fcf_quality": "reported FCF distorted by Section 48D/reimbursements"
+      },
+      {
+        "q": "FY26 Q3",
+        "revenue": 150.2,
+        "power": 100.1,
+        "materials": 50.1,
+        "gross_margin": -27.0,
+        "ocf": -83.8,
+        "fcf": -90.0
+      },
+      {
+        "q": "FY26 Q4",
+        "revenue": 149.6,
+        "power": 106.3,
+        "materials": 43.3,
+        "gross_margin": -25.0,
+        "ocf": -54.1,
+        "fcf": -60.9
+      }
+    ],
+    "ceilings": [
+      "FY26 predecessor/successor is an analytical bridge, not audited single period",
+      "FY26 Q2 reported FCF distorted by Section 48D/reimbursements",
+      "FY25 Q2 and FY26 Q2 segment values derived from cumulative disclosed totals"
+    ]
+  },
+  "kpis": [
+    {
+      "name": "Quarterly revenue",
+      "current": 149.6,
+      "unit": "$M",
+      "thresholds": {
+        "green": ">=180 and 2Q sequential growth",
+        "yellow": "150–180",
+        "red": "<150 or 2Q decline"
+      }
+    },
+    {
+      "name": "Gross margin",
+      "current": -25.0,
+      "unit": "% GAAP",
+      "thresholds": {
+        "green": ">=0 then >10",
+        "yellow": "-20 to 0",
+        "red": "persistently <-20 after FY27 H1"
+      }
+    },
+    {
+      "name": "Power revenue",
+      "current": 106.3,
+      "unit": "$M",
+      "thresholds": {
+        "green": ">=125 with broad end-markets",
+        "yellow": "100–125",
+        "red": "<100"
+      }
+    },
+    {
+      "name": "Materials revenue",
+      "current": 43.3,
+      "unit": "$M",
+      "thresholds": {
+        "green": ">50 and pricing stabilizes",
+        "yellow": "40–50",
+        "red": "<40 / continued price erosion"
+      }
+    },
+    {
+      "name": "Normalized quarterly FCF",
+      "current": -60.9,
+      "unit": "$M",
+      "thresholds": {
+        "green": ">=0 for 2Q",
+        "yellow": "-100 to 0",
+        "red": "<-100"
+      }
+    },
+    {
+      "name": "Liquidity",
+      "current": 1088.6,
+      "unit": "$M cash+STI",
+      "thresholds": {
+        "green": ">900 with debt falling",
+        "yellow": "600–900",
+        "red": "<600 or new financing; covenant 350"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.3,
+      "revenue_path": [
+        580,
+        620,
+        680,
+        750
+      ],
+      "margin_path": [
+        -15,
+        -5,
+        3,
+        10
+      ],
+      "opex_path": [
+        250,
+        250,
+        255,
+        260
+      ],
+      "fcf": [
+        -250,
+        -220,
+        -170,
+        -120
+      ],
+      "fy30_ebit": -185,
+      "operating_ev": 600,
+      "diluted_shares": null,
+      "per_share_value": 2.0,
+      "formation_conditions": "Auto/industrial recovery stalls; Materials pricing stays weak; 200mm utilization fails to absorb fixed cost; financing required.",
+      "break_conditions": "Sustained positive GM and normalized FCF without new dilution."
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "revenue_path": [
+        620,
+        800,
+        1050,
+        1500
+      ],
+      "margin_path": [
+        -8,
+        8,
+        22,
+        34
+      ],
+      "opex_path": [
+        255,
+        265,
+        280,
+        300
+      ],
+      "fcf": [
+        -220,
+        -150,
+        -50,
+        100
+      ],
+      "fy30_ebit": 210,
+      "operating_ev": 2450,
+      "diluted_shares": 110.515,
+      "per_share_value": 20.68761532556061,
+      "formation_conditions": "Power broad recovery; Materials stabilizes; underutilization declines; no new mega-capex.",
+      "break_conditions": "Revenue/margin remain below path or financing is required before FY29."
+    },
+    {
+      "name": "Bull",
+      "probability": 0.2,
+      "revenue_path": [
+        700,
+        1000,
+        1500,
+        2100
+      ],
+      "margin_path": [
+        -3,
+        15,
+        30,
+        40
+      ],
+      "opex_path": [
+        260,
+        275,
+        305,
+        340
+      ],
+      "fcf": [
+        -170,
+        -50,
+        150,
+        350
+      ],
+      "fy30_ebit": 500,
+      "operating_ev": 5800,
+      "diluted_shares": 115.45895100000001,
+      "per_share_value": 55.038592393326,
+      "formation_conditions": "200mm yield/utilization succeeds; auto/industrial recover; AI/grid becomes material; cost-down outruns price erosion.",
+      "break_conditions": "Revenue growth fails to translate into GM and normalized FCF."
+    }
+  ],
+  "valuation": {
+    "mode": "Mode D — Cyclical / capacity-utilization recovery",
+    "core": "current business has negative GM; normalized core earnings not meaningful",
+    "execution": "200mm utilization/yield and demand recovery",
+    "ecosystem": 0,
+    "drag": "non-convert debt + remaining cash burn + converts/warrants",
+    "expected_value": 21.951526141445505,
+    "expected_irr": -0.040044628807038185,
+    "current_price": 25.85,
+    "horizon_years": 4,
+    "base_value": 20.68761532556061,
+    "bull_value": 55.038592393326,
+    "bear_value": 2.0,
+    "upside_downside_ratio": 1.2238403519214254
+  },
+  "reverse_expectations": {
+    "fully_diluted_economic_operating_ev_m": 2709.9157411,
+    "normalized_ebit_multiple": 12,
+    "required_ebit_m": 225.82631175833333,
+    "assumed_recurring_opex_m": 300,
+    "required_gross_profit_m": 525.8263117583333,
+    "required_revenue_by_gross_margin_m": {
+      "30": 1752.7543725277778,
+      "34": 1546.5479757598036,
+      "35": 1502.3608907380953,
+      "37": 1421.1521939414413
+    },
+    "fy26_bridge_revenue_m": 665.1,
+    "fy30_required_revenue_at_35_gm_m": 1502.3608907380953,
+    "fy26_to_fy30_required_cagr": 0.2259473816926485,
+    "fy28_public_consensus_revenue_m": 795,
+    "fy28_to_fy30_required_cagr": 0.3746861920869742,
+    "legacy_projection_comparison": {
+      "fy29_revenue_m": 1450,
+      "fy29_gross_margin_pct": 37.7,
+      "fy29_ebit_m": 237,
+      "fy26_projected_revenue_m": 850,
+      "fy26_projected_gross_margin_pct": 2.2
+    }
+  },
+  "consensus": {
+    "fy1": {
+      "period": "FY27",
+      "revenue_m": 643
+    },
+    "fy2": {
+      "period": "FY28",
+      "revenue_m": 795
+    },
+    "revision_trend": "PRIMARY_SOURCE_CEILING — complete FY1-FY3 revision series unavailable; recent post-Q4 targets roughly $25-$30, Hold-leaning",
+    "short_interest": {
+      "asof": "2026-08-14",
+      "shares_m": 24.000616,
+      "float_pct": 45.29,
+      "days_to_cover": 5.4
+    }
+  },
+  "stance": {
+    "zone": "AVOID / TRIM ON STRENGTH at $25.85",
+    "price_bands": {
+      "10-14": "attractive if fundamentals intact",
+      "14-20": "conditional/watch",
+      "above_20": "avoid/trim under current probabilities"
+    },
+    "horizon": "FY30 / 4 years",
+    "default_hurdle": "10-15%",
+    "change_conditions": [
+      "sustained revenue reacceleration",
+      "gross-margin inflection",
+      "normalized FCF near/above zero",
+      "debt reduction without new dilution",
+      "material production revenue from AI/auto/high-voltage programs"
+    ]
+  },
+  "catalysts": [
+    {
+      "when": "2026-09-27",
+      "event": "Renesas board representative resignation / observer transition effective",
+      "sensitivity": "L"
+    },
+    {
+      "when": "2026 H2",
+      "event": "LITEON 800VDC rack validation window",
+      "sensitivity": "M"
+    },
+    {
+      "when": "2026-10~11 estimated",
+      "event": "FY27 Q1 earnings; exact date not announced",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027-01~02 estimated",
+      "event": "FY27 Q2 earnings",
+      "sensitivity": "H"
+    },
+    {
+      "when": "CY2027",
+      "event": "competitor 200mm ramps / customer auto SOP cadence",
+      "sensitivity": "H"
+    }
+  ],
+  "security_dilution": {
+    "price": 25.85,
+    "basic_shares_m": 52.995396,
+    "stock_units_m": 3.766,
+    "prefunded_warrants_m": 2.0,
+    "convert_shares_m": 51.754000000000005,
+    "renesas_warrant_shares_m": 4.943555,
+    "renesas_warrant_strike": 23.95,
+    "all_share_conversion_equivalent_fd_shares_m": 115.45895100000001,
+    "debt_principal_m": 1782.0,
+    "convert_principal_m": 849.7,
+    "residual_nonconvert_debt_m": 932.3,
+    "cash_sti_m": 1088.6,
+    "warrant_exercise_cash_m": 118.39814224999999,
+    "fd_equity_market_value_m": 2984.6138833500004,
+    "fd_economic_operating_ev_m": 2709.9157411,
+    "basic_screen_ev_m": 2063.3309866000004,
+    "minimum_unrestricted_cash_covenant_m": 350
+  },
+  "market": {
+    "price_points": [
+      {
+        "date": "2026-05-01",
+        "close": 36.76,
+        "event": "CEO-era / spring repricing"
+      },
+      {
+        "date": "2026-06-04",
+        "close": 67.06,
+        "event": "squeeze / recovery narrative peak zone"
+      },
+      {
+        "date": "2026-06-18",
+        "close": 57.41,
+        "event": "high-volatility post-recap trading"
+      },
+      {
+        "date": "2026-07-30",
+        "close": 23.79,
+        "event": "sharp de-rating"
+      },
+      {
+        "date": "2026-08-19",
+        "close": 29.09,
+        "event": "FY26 Q4 results day"
+      },
+      {
+        "date": "2026-08-28",
+        "close": 25.85,
+        "event": "report price as-of"
+      }
+    ],
+    "peer_ev_sales_current": {
+      "STMicroelectronics": 3.25,
+      "onsemi": 4.74,
+      "Infineon": 4.95
+    },
+    "wolf_public_provider_ev_sales": 3.19,
+    "wolf_fd_economic_ev_sales_on_fy26_bridge": 4.074448565779582,
+    "valuation_history_status": "PRIMARY_SOURCE_CEILING — post-emergence capital structure discontinuity makes long-term WOLF multiple percentile non-comparable"
+  },
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "Ch0/2/4"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch1"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1/3"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch2"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3/4"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4/5"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4/5"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4/6"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4/5"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch0/5"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE",
+      "h3_locator": "Ch5"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "COMPLETE",
+      "h3_locator": "Ch6"
+    }
+  ],
+  "source_register": {
+    "S1": {
+      "title": "Wolfspeed FY26 10-K",
+      "date": "2026-08-20",
+      "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000054/wolf-20260628.htm",
+      "type": "primary"
+    },
+    "S2": {
+      "title": "Wolfspeed FY26 Q4 results",
+      "date": "2026-08-19",
+      "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000049/ex991q4-26.htm",
+      "type": "primary"
+    },
+    "S3": {
+      "title": "Wolfspeed 8-K - Renesas board observer update",
+      "date": "2026-08-25",
+      "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541926000057/wolfspeed-20260820.htm",
+      "type": "primary"
+    },
+    "S12": {
+      "title": "Wolfspeed restructuring cleansing material / projections",
+      "date": "2025-05-08",
+      "url": "https://www.sec.gov/Archives/edgar/data/895419/000089541925000060/exhibit99_1050825.htm",
+      "type": "primary"
+    },
+    "S13": {
+      "title": "Infineon 200mm SiC product rollout",
+      "date": "2025-02-13",
+      "url": "https://www.infineon.com/press-release/2025/infxx202502-055",
+      "type": "primary"
+    },
+    "S14": {
+      "title": "STMicroelectronics Catania integrated 200mm SiC facility",
+      "date": "2024-05-31",
+      "url": "https://newsroom.st.com/media-center/press-item.html/c3262.html",
+      "type": "primary"
+    },
+    "S15": {
+      "title": "onsemi Bucheon SiC expansion",
+      "date": "2023-10-24",
+      "url": "https://www.onsemi.com/company/newsroom/news-and-insights/onsemi-completes-expansion-of-silicon-carbide-production-facility-in-bucheon-south-korea",
+      "type": "primary"
+    },
+    "S18": {
+      "title": "STMicroelectronics ratios",
+      "date": "2026-08",
+      "url": "https://stockanalysis.com/stocks/stm/financials/ratios/",
+      "type": "secondary"
+    },
+    "S19": {
+      "title": "onsemi ratios",
+      "date": "2026-08",
+      "url": "https://stockanalysis.com/stocks/on/financials/ratios/",
+      "type": "secondary"
+    },
+    "S20": {
+      "title": "Infineon ratios",
+      "date": "2026-08",
+      "url": "https://stockanalysis.com/quote/etr/IFX/financials/ratios/",
+      "type": "secondary"
+    },
+    "S21": {
+      "title": "WOLF historical price",
+      "date": "2026-08",
+      "url": "https://stockanalysis.com/stocks/wolf/history/",
+      "type": "secondary"
+    }
+  },
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "최근 8분기: 매출은 내려왔고 gross margin은 아직 음수",
+      "authoritative_source_block": "financials.quarterly_8q",
+      "source_values": [
+        {
+          "q": "FY25 Q1",
+          "revenue": 194.7,
+          "gross_margin": -19.0
+        },
+        {
+          "q": "FY25 Q2",
+          "revenue": 180.5,
+          "gross_margin": -21.0
+        },
+        {
+          "q": "FY25 Q3",
+          "revenue": 185.4,
+          "gross_margin": -12.0
+        },
+        {
+          "q": "FY25 Q4",
+          "revenue": 197.0,
+          "gross_margin": -13.0
+        },
+        {
+          "q": "FY26 Q1",
+          "revenue": 196.8,
+          "gross_margin": -39.2
+        },
+        {
+          "q": "FY26 Q2",
+          "revenue": 168.5,
+          "gross_margin": -46.5
+        },
+        {
+          "q": "FY26 Q3",
+          "revenue": 150.2,
+          "gross_margin": -27.0
+        },
+        {
+          "q": "FY26 Q4",
+          "revenue": 149.6,
+          "gross_margin": -25.0
+        }
+      ],
+      "source_hash": "2ce9869ac2a665ce",
+      "display_values": [
+        {
+          "q": "FY25 Q1",
+          "revenue": 194.7,
+          "gross_margin": -19.0
+        },
+        {
+          "q": "FY25 Q2",
+          "revenue": 180.5,
+          "gross_margin": -21.0
+        },
+        {
+          "q": "FY25 Q3",
+          "revenue": 185.4,
+          "gross_margin": -12.0
+        },
+        {
+          "q": "FY25 Q4",
+          "revenue": 197.0,
+          "gross_margin": -13.0
+        },
+        {
+          "q": "FY26 Q1",
+          "revenue": 196.8,
+          "gross_margin": -39.2
+        },
+        {
+          "q": "FY26 Q2",
+          "revenue": 168.5,
+          "gross_margin": -46.5
+        },
+        {
+          "q": "FY26 Q3",
+          "revenue": 150.2,
+          "gross_margin": -27.0
+        },
+        {
+          "q": "FY26 Q4",
+          "revenue": 149.6,
+          "gross_margin": -25.0
+        }
+      ],
+      "narrative_locator": "Ch4.3",
+      "table_locator": "Appendix C",
+      "caption_locator": "VIS-001 caption",
+      "rendered_asset_locator": "inline-svg:VIS-001"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "3년 segment mix: Materials 축소를 Power가 아직 완전히 상쇄하지 못했다",
+      "authoritative_source_block": "financials.annual_3y",
+      "source_values": [
+        {
+          "fy": "FY24",
+          "power": 415.6,
+          "materials": 391.6
+        },
+        {
+          "fy": "FY25",
+          "power": 414.0,
+          "materials": 343.6
+        },
+        {
+          "fy": "FY26 analytical bridge",
+          "power": 456.5,
+          "materials": 208.6
+        }
+      ],
+      "source_hash": "1e94f44893451d8d",
+      "display_values": [
+        {
+          "fy": "FY24",
+          "power": 415.6,
+          "materials": 391.6
+        },
+        {
+          "fy": "FY25",
+          "power": 414.0,
+          "materials": 343.6
+        },
+        {
+          "fy": "FY26 analytical bridge",
+          "power": 456.5,
+          "materials": 208.6
+        }
+      ],
+      "narrative_locator": "Ch3.2/Ch4.4",
+      "table_locator": "Appendix B",
+      "caption_locator": "VIS-002 caption",
+      "rendered_asset_locator": "inline-svg:VIS-002"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "현재 경제적 fully diluted share bridge",
+      "authoritative_source_block": "security_dilution",
+      "source_values": {
+        "basic": 52.995396,
+        "stock_units": 3.766,
+        "prefunded": 2.0,
+        "convert_shares": 51.754000000000005,
+        "renesas_warrant": 4.943555,
+        "fd_total": 115.45895100000001
+      },
+      "source_hash": "70ece1a543359cbd",
+      "display_values": {
+        "basic": 52.995396,
+        "stock_units": 3.766,
+        "prefunded": 2.0,
+        "convert_shares": 51.754000000000005,
+        "renesas_warrant": 4.943555,
+        "fd_total": 115.45895100000001
+      },
+      "narrative_locator": "Ch4.9/Ch5.2",
+      "table_locator": "Appendix H",
+      "caption_locator": "VIS-003 caption",
+      "rendered_asset_locator": "inline-svg:VIS-003"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "FY30 scenario per-share value vs current price",
+      "authoritative_source_block": "scenarios",
+      "source_values": [
+        {
+          "name": "Bear",
+          "prob": 0.3,
+          "value": 2.0
+        },
+        {
+          "name": "Base",
+          "prob": 0.5,
+          "value": 20.68761532556061
+        },
+        {
+          "name": "Bull",
+          "prob": 0.2,
+          "value": 55.038592393326
+        },
+        {
+          "name": "Current",
+          "prob": null,
+          "value": 25.85
+        }
+      ],
+      "source_hash": "f8222d8d76050ac8",
+      "display_values": [
+        {
+          "name": "Bear",
+          "prob": 0.3,
+          "value": 2.0
+        },
+        {
+          "name": "Base",
+          "prob": 0.5,
+          "value": 20.68761532556061
+        },
+        {
+          "name": "Bull",
+          "prob": 0.2,
+          "value": 55.038592393326
+        },
+        {
+          "name": "Current",
+          "prob": null,
+          "value": 25.85
+        }
+      ],
+      "narrative_locator": "Ch5.5/5.6",
+      "table_locator": "Appendix I",
+      "caption_locator": "VIS-004 caption",
+      "rendered_asset_locator": "inline-svg:VIS-004"
+    },
+    {
+      "vis_id": "VIS-005",
+      "figure_title": "현재 가격이 요구하는 revenue: normalized gross margin별 역산",
+      "authoritative_source_block": "reverse_expectations",
+      "source_values": [
+        {
+          "gm": 30,
+          "required_revenue": 1752.7543725277778
+        },
+        {
+          "gm": 34,
+          "required_revenue": 1546.5479757598036
+        },
+        {
+          "gm": 35,
+          "required_revenue": 1502.3608907380953
+        },
+        {
+          "gm": 37,
+          "required_revenue": 1421.1521939414413
+        }
+      ],
+      "source_hash": "75e1fc37d007f9aa",
+      "display_values": [
+        {
+          "gm": 30,
+          "required_revenue": 1752.7543725277778
+        },
+        {
+          "gm": 34,
+          "required_revenue": 1546.5479757598036
+        },
+        {
+          "gm": 35,
+          "required_revenue": 1502.3608907380953
+        },
+        {
+          "gm": 37,
+          "required_revenue": 1421.1521939414413
+        }
+      ],
+      "narrative_locator": "Ch5.8",
+      "table_locator": "Appendix J",
+      "caption_locator": "VIS-005 caption",
+      "rendered_asset_locator": "inline-svg:VIS-005"
+    },
+    {
+      "vis_id": "VIS-006",
+      "figure_title": "Post-recap event-sampled WOLF price path",
+      "authoritative_source_block": "market.price_points",
+      "source_values": [
+        {
+          "date": "2026-05-01",
+          "close": 36.76,
+          "event": "CEO-era / spring repricing"
+        },
+        {
+          "date": "2026-06-04",
+          "close": 67.06,
+          "event": "squeeze / recovery narrative peak zone"
+        },
+        {
+          "date": "2026-06-18",
+          "close": 57.41,
+          "event": "high-volatility post-recap trading"
+        },
+        {
+          "date": "2026-07-30",
+          "close": 23.79,
+          "event": "sharp de-rating"
+        },
+        {
+          "date": "2026-08-19",
+          "close": 29.09,
+          "event": "FY26 Q4 results day"
+        },
+        {
+          "date": "2026-08-28",
+          "close": 25.85,
+          "event": "report price as-of"
+        }
+      ],
+      "source_hash": "775f958135852baf",
+      "display_values": [
+        {
+          "date": "2026-05-01",
+          "close": 36.76,
+          "event": "CEO-era / spring repricing"
+        },
+        {
+          "date": "2026-06-04",
+          "close": 67.06,
+          "event": "squeeze / recovery narrative peak zone"
+        },
+        {
+          "date": "2026-06-18",
+          "close": 57.41,
+          "event": "high-volatility post-recap trading"
+        },
+        {
+          "date": "2026-07-30",
+          "close": 23.79,
+          "event": "sharp de-rating"
+        },
+        {
+          "date": "2026-08-19",
+          "close": 29.09,
+          "event": "FY26 Q4 results day"
+        },
+        {
+          "date": "2026-08-28",
+          "close": 25.85,
+          "event": "report price as-of"
+        }
+      ],
+      "narrative_locator": "Ch5.10",
+      "table_locator": "Appendix M",
+      "caption_locator": "VIS-006 caption",
+      "rendered_asset_locator": "inline-svg:VIS-006"
+    }
+  ],
+  "qa": {
+    "rc_total": 19,
+    "rc_complete": 13,
+    "rc_ceiling": 6,
+    "rc_unresolved": 0,
+    "latest_filing_check": "PASS",
+    "data_pack_report_parity": "PENDING_RENDER_QA"
+  }
+}

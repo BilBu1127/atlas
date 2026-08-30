@@ -1,0 +1,2409 @@
+{
+  "meta": {
+    "ticker": "WULF",
+    "company": "TeraWulf Inc.",
+    "version": "Deep Dive OS v1.7",
+    "T0": "2026-08-26",
+    "publishing_date_asia_seoul": "2026-08-26",
+    "price_asof": "2026-08-25 close",
+    "current_price": 16.32,
+    "filing_asof": "2026-08-05 Q2 2026 Form 10-Q",
+    "transcript_asof": "2026-08-05 Q2 2026 earnings call",
+    "consensus_asof": "2026-08-24 public S&P Global snapshot; price-target refresh through 2026-08-24",
+    "latest_filing_check": "PASS",
+    "currency": "USD",
+    "monetary_units": "USD millions unless noted"
+  },
+  "economic_definition": "Power-first AI/HPC digital infrastructure developer/owner/operator transitioning from bitcoin mining; value is determined by converting contracted MW into rent-producing capacity after capex, financing, dilution and governance leakage.",
+  "capacity": {
+    "contracted_critical_it_mw": 839,
+    "revenue_generating_critical_it_mw_july_2026": 102,
+    "revenue_generating_share_of_contracted": 0.1216,
+    "additional_under_construction_mw": 336,
+    "lake_mariner_contracts_mw": {
+      "Core42": 60,
+      "Fluidstack": 378
+    },
+    "justified_anthropic_mw": 401,
+    "pipeline_mw": {
+      "lake_mariner_expansion": 162,
+      "lake_hawkeye": 320,
+      "chesapeake": 800,
+      "muskie": 800,
+      "total": 2902
+    },
+    "legacy_bitcoin_mining_mw_lake_mariner_june_2026": 145
+  },
+  "contracts": {
+    "Core42": {
+      "critical_it_mw": 60,
+      "initial_term_years": 10,
+      "renewal_options": "2 x 5 years",
+      "prepaid_rent_m": 90,
+      "company_guide_capex_total_m": 430,
+      "company_guide_capex_per_critical_mw_m": 7.2,
+      "company_guide_annual_recurring_rent_per_mw_m": 1.6,
+      "company_guide_ebitda_margin": 0.75,
+      "analytical_initial_annual_rent_m": 96,
+      "status": "all leases commenced by Q1 2026"
+    },
+    "Fluidstack": {
+      "critical_it_mw": 378,
+      "initial_term_years": 10,
+      "historical_contracted_payments_b": 6.7,
+      "july_2026_amendment_incremental_revenue_b": 0.5,
+      "analytical_reconstructed_initial_term_contract_b": 7.2,
+      "analytical_flattened_average_annual_contract_b": 0.72,
+      "company_guide_site_noi_margin_initial_deal": 0.85,
+      "company_guide_project_cost_per_critical_mw_m": [
+        8,
+        10
+      ],
+      "google_backstop": "Commencement-gated recognition agreement; default/insolvency after notice gives Google termination-fee or rent-pay-and-assume options.",
+      "status": "partially commenced; CB4/CB5 ramp expected 2H26-early27"
+    },
+    "Anthropic": {
+      "critical_it_mw": 401,
+      "initial_term_years": 20,
+      "renewal_options": "2 x 5 years",
+      "contracted_revenue_b": 19,
+      "analytical_flattened_average_annual_contract_b": 0.95,
+      "analytical_average_revenue_per_mw_year_m": 2.369,
+      "analytical_average_kW_month_usd": 197.4,
+      "delivery": "phased 2H27 to early 2028",
+      "credit_support": "investment-grade support expected; exact guarantor/economics PRIMARY_SOURCE_CEILING",
+      "exact_capex": "PRIMARY_SOURCE_CEILING"
+    },
+    "contracted_platform_analytical_flattened_average_revenue_b": 1.766
+  },
+  "financials": {
+    "annual_3y": {
+      "2023": {
+        "revenue_m": 69.229,
+        "net_loss_m": -73.421,
+        "operating_cash_flow_m": 4.263,
+        "ppe_purchases_deposits_m": 75.168
+      },
+      "2024": {
+        "revenue_m": 140.051,
+        "net_loss_m": -72.418,
+        "operating_cash_flow_m": -24.422,
+        "ppe_purchases_deposits_m": 267.94
+      },
+      "2025": {
+        "revenue_m": 168.455,
+        "net_loss_m": -661.416,
+        "operating_cash_flow_m": -123.18,
+        "ppe_purchases_deposits_m": 1060.189
+      }
+    },
+    "quarterly_8q": [
+      {
+        "quarter": "2024Q3",
+        "revenue_m": 27.059,
+        "hpc_lease_revenue_m": 0,
+        "mining_revenue_m": 27.059,
+        "hpc_share": 0.0
+      },
+      {
+        "quarter": "2024Q4",
+        "revenue_m": 34.985,
+        "hpc_lease_revenue_m": 0,
+        "mining_revenue_m": 34.985,
+        "hpc_share": 0.0
+      },
+      {
+        "quarter": "2025Q1",
+        "revenue_m": 34.405,
+        "hpc_lease_revenue_m": 0,
+        "mining_revenue_m": 34.405,
+        "hpc_share": 0.0
+      },
+      {
+        "quarter": "2025Q2",
+        "revenue_m": 47.636,
+        "hpc_lease_revenue_m": 0,
+        "mining_revenue_m": 47.636,
+        "hpc_share": 0.0
+      },
+      {
+        "quarter": "2025Q3",
+        "revenue_m": 50.578,
+        "hpc_lease_revenue_m": 7.203,
+        "mining_revenue_m": 43.375,
+        "hpc_share": 0.1424
+      },
+      {
+        "quarter": "2025Q4",
+        "revenue_m": 35.836,
+        "hpc_lease_revenue_m": 9.696,
+        "mining_revenue_m": 26.14,
+        "hpc_share": 0.2706
+      },
+      {
+        "quarter": "2026Q1",
+        "revenue_m": 34.012,
+        "hpc_lease_revenue_m": 21.022,
+        "mining_revenue_m": 12.99,
+        "hpc_share": 0.6181
+      },
+      {
+        "quarter": "2026Q2",
+        "revenue_m": 44.767,
+        "hpc_lease_revenue_m": 31.932,
+        "mining_revenue_m": 12.835,
+        "hpc_share": 0.7133
+      }
+    ],
+    "q2_2026_segments": {
+      "hpc": {
+        "revenue_m": 31.932,
+        "cost_of_revenue_m": 4.452,
+        "operating_expenses_m": 18.473,
+        "segment_profit_m": 9.007
+      },
+      "mining": {
+        "revenue_m": 12.835,
+        "cost_of_revenue_m": 7.948,
+        "operating_expenses_m": 4.965,
+        "segment_profit_m": -0.078
+      }
+    },
+    "h1_2026": {
+      "revenue_m": 78.779,
+      "net_loss_m": -1368.53,
+      "operating_cash_flow_m": -154.3,
+      "ppe_purchases_deposits_m": 1378.514,
+      "hpc_expansion_system_spend_m": 1164.9,
+      "interest_paid_m": 131.072,
+      "common_stock_issuance_net_proceeds_m": 1199.8,
+      "stock_based_compensation_m": 185.4,
+      "warrant_fair_value_loss_m": 971.992
+    },
+    "ceilings": [
+      "Exact contract-level pass-through and full rent schedules unavailable for some leases."
+    ]
+  },
+  "balance_sheet_and_financing": {
+    "unrestricted_cash_b": 2.619191,
+    "restricted_cash_current_b": 0.142938,
+    "restricted_cash_long_term_b": 0.266479,
+    "cash_plus_restricted_b": 3.028608,
+    "gross_debt_principal_b": 5.725,
+    "analytical_net_debt_b": 3.106,
+    "debt": [
+      {
+        "security": "WULF Compute Senior Secured Notes 2030",
+        "principal_b": 3.2,
+        "coupon": 0.0775
+      },
+      {
+        "security": "Convertible Notes 2030",
+        "principal_b": 0.5,
+        "coupon": 0.0275,
+        "conversion_price": 8.48,
+        "capped_call_cap": 12.8,
+        "initial_underlying_shares_m": 58.96225
+      },
+      {
+        "security": "Convertible Notes 2031",
+        "principal_b": 1.0,
+        "coupon": 0.01,
+        "conversion_price": 12.43,
+        "capped_call_cap": 18.76,
+        "initial_underlying_shares_m": 80.4602
+      },
+      {
+        "security": "Convertible Notes 2032",
+        "principal_b": 1.025,
+        "coupon": 0.0,
+        "conversion_price": 19.9375,
+        "capped_call_cap": null,
+        "initial_underlying_shares_m": 51.4106175
+      }
+    ]
+  },
+  "dilution": {
+    "basic_shares_m": 498.932431,
+    "common_warrants_m": 77.70445,
+    "google_warrants_m": 73.58,
+    "google_warrant_strike": 0.01,
+    "rsus_m": 36.219695,
+    "equity_linked_floor_shares_m": 612.857,
+    "current_price_economic_diluted_shares_m": 625.574,
+    "current_price_economic_diluted_equity_value_b": 10.209,
+    "method": "Debt principal remains debt; add warrants/RSUs and only convertible excess-share leakage above capped-call protection / conversion threshold. No double count."
+  },
+  "management_governance": {
+    "promise_delivery": [
+      {
+        "promise": "72.5MW HPC hosting capacity by end-Q2 2025",
+        "outcome": "First revenue began July 2025; remaining Core42 leases commenced Q1 2026",
+        "assessment": "MISS/DELAY, partly tenant change-order/fit-out affected"
+      },
+      {
+        "promise": "CB3 / Lake Mariner ramp in 2026",
+        "outcome": "CB3 delivered early July 2026; total revenue-generating critical IT 102MW",
+        "assessment": "DELIVERED"
+      }
+    ],
+    "beowulf_ed_purchase_price_m_proxy": 52.4,
+    "employee_trust_capex_rate": 0.02,
+    "employee_trust_term_years": 10,
+    "pre_wulf_quantitative_track_record": "PRIMARY_SOURCE_CEILING"
+  },
+  "competition": {
+    "customer_job": "Deliver operational, high-density critical IT MW on schedule with bankable power and financing.",
+    "wulf_fluidstack_project_cost_per_mw_m": [
+      8,
+      10
+    ],
+    "wulf_fluidstack_site_noi_margin_guide": 0.85,
+    "applied_digital_modern_ai_factory_project_cost_per_mw_m": [
+      11,
+      13
+    ],
+    "applied_digital_site_noi_margin_guide_range": [
+      0.85,
+      0.88
+    ],
+    "comparison_boundary": "Scope, land, power, tenant equipment and site conditions differ; figures are anchors, not apples-to-apples proof."
+  },
+  "consensus": {
+    "fy2026_revenue_avg_m": 270.09,
+    "fy2026_revenue_low_m": 230.0,
+    "fy2026_revenue_high_m": 333.2,
+    "analyst_count_revenue": 12,
+    "fy2027_revenue_avg_m": 905.32,
+    "price_target_avg": 36.64,
+    "price_target_median": 34.0,
+    "price_target_low": 25.0,
+    "price_target_high": 62.5,
+    "analyst_count_price_target": 18,
+    "rating": "Strong Buy",
+    "revision_trend": "Post-Q2 targets remain bullish but several high targets were cut; public target dispersion is very wide.",
+    "boundary": "Full FY2028 broker model and real-time institutional positioning PRIMARY_SOURCE_CEILING."
+  },
+  "valuation": {
+    "mode": "Mode B Hybrid + asset/NAV cross-check",
+    "current_price": 16.32,
+    "time_horizon_years": 3,
+    "base_components_b": {
+      "core_current_monetization": 1.1,
+      "execution_incremental_contracted": 13.6,
+      "ecosystem_probability_weighted": 3.6,
+      "current_net_debt_drag": -3.1
+    },
+    "base_economic_equity_value_b": 15.2,
+    "base_value_per_share": 23.0,
+    "expected_value_per_share": 25.475,
+    "expected_irr": 0.16,
+    "bull_execution_value": 36.0,
+    "bear_value": 8.5,
+    "upside_downside_ratio": 2.517,
+    "hurdle_range": [
+      0.1,
+      0.15
+    ],
+    "stabilized_site_multiple_range": [
+      9.5,
+      15.0
+    ],
+    "historical_multiple_band": "PRIMARY_SOURCE_CEILING due 2025-26 business-model break; peer/asset band substituted. Mature DLR/EQIX trade around high-20s LTM EV/EBITDA, but WULF scenarios deliberately use 9.5x-15x stabilized site EBITDA to reflect construction, funding and concentration risk.",
+    "scenarios": [
+      {
+        "name": "Bear",
+        "probability": 0.25,
+        "value_per_share": 8.5,
+        "economic_diluted_shares_m": 612.857,
+        "economic_diluted_equity_value_b": 5.209,
+        "revenue_path_b": {
+          "2026": 0.25,
+          "2027": 0.55,
+          "2028": 1.1,
+          "2029": 1.25
+        },
+        "normalized_ebitda_margin_path": {
+          "2026": 0.05,
+          "2027": 0.3,
+          "2028": 0.55,
+          "2029": 0.6
+        },
+        "fcf_path_b": {
+          "2026": -1.8,
+          "2027": -1.0,
+          "2028": 0.1,
+          "2029": 0.25
+        },
+        "operating_world": "Lake Mariner ramp 지연, Justified 일정/자본비용 악화, 미계약 pipeline 거의 무가치"
+      },
+      {
+        "name": "Base",
+        "probability": 0.4,
+        "value_per_share": 23.0,
+        "economic_diluted_shares_m": 660.683,
+        "economic_diluted_equity_value_b": 15.196,
+        "revenue_path_b": {
+          "2026": 0.27,
+          "2027": 0.9,
+          "2028": 1.75,
+          "2029": 1.9
+        },
+        "normalized_ebitda_margin_path": {
+          "2026": 0.08,
+          "2027": 0.4,
+          "2028": 0.6,
+          "2029": 0.62
+        },
+        "fcf_path_b": {
+          "2026": -1.6,
+          "2027": -0.6,
+          "2028": 0.45,
+          "2029": 0.65
+        },
+        "operating_world": "Lake Mariner 대부분 정상화, Justified 2028 ramp, pipeline에는 제한적 확률가치만 부여"
+      },
+      {
+        "name": "Bull Execution",
+        "probability": 0.25,
+        "value_per_share": 36.0,
+        "economic_diluted_shares_m": 712.324,
+        "economic_diluted_equity_value_b": 25.644,
+        "revenue_path_b": {
+          "2026": 0.29,
+          "2027": 1.15,
+          "2028": 2.1,
+          "2029": 2.45
+        },
+        "normalized_ebitda_margin_path": {
+          "2026": 0.1,
+          "2027": 0.45,
+          "2028": 0.62,
+          "2029": 0.65
+        },
+        "fcf_path_b": {
+          "2026": -1.5,
+          "2027": -0.4,
+          "2028": 0.75,
+          "2029": 1.0
+        },
+        "operating_world": "839MW 계약자산의 높은 완공률과 우호적 site economics, 추가 signing 일부 성공"
+      },
+      {
+        "name": "Bull Ecosystem",
+        "probability": 0.1,
+        "value_per_share": 51.5,
+        "economic_diluted_shares_m": 739.823,
+        "economic_diluted_equity_value_b": 38.101,
+        "revenue_path_b": {
+          "2026": 0.31,
+          "2027": 1.3,
+          "2028": 2.45,
+          "2029": 3.2
+        },
+        "normalized_ebitda_margin_path": {
+          "2026": 0.12,
+          "2027": 0.48,
+          "2028": 0.64,
+          "2029": 0.66
+        },
+        "fcf_path_b": {
+          "2026": -1.4,
+          "2027": -0.2,
+          "2028": 0.9,
+          "2029": 1.35
+        },
+        "operating_world": "250–500MW/년 신규 계약이 반복되고 Muskie/Hawkeye 등 전력 옵션이 계약자산으로 승격"
+      }
+    ],
+    "no_double_count_rule": "Warrants/RSUs/convert excess shares are in denominator and not subtracted again as monetary drag."
+  },
+  "reverse_expectations": {
+    "current_economic_diluted_equity_value_b": 10.209,
+    "analytical_current_ev_b": 13.315,
+    "base_stabilized_ebitda_multiple": 11.5,
+    "base_stabilized_margin": 0.725,
+    "required_stabilized_revenue_b_if_pipeline_option_zero": 1.597,
+    "required_share_of_contracted_flattened_revenue_if_option_zero": 0.904,
+    "required_stabilized_revenue_b_if_uncontracted_option_value_b_1_5": 1.417,
+    "required_share_of_contracted_flattened_revenue_if_option_1_5b": 0.802,
+    "future_value_needed_for_12pct_3yr_return": 22.93,
+    "future_value_needed_for_15pct_3yr_return": 24.82,
+    "operating_interpretation": "At current price a 12–15% 3-year return requires roughly Base-to-above-Base execution: Lake Mariner largely on schedule and meaningful Justified delivery. Current price does not require full 2.9GW pipeline value, but it is not pricing a major contracted-build failure."
+  },
+  "stance": {
+    "zone": "적극 관심 — 고위험·실행조건부",
+    "preferred_entry_band": [
+      12,
+      15
+    ],
+    "current_zone": [
+      15,
+      18
+    ],
+    "base_fair_value": 23.0,
+    "probability_weighted_value": 25.48,
+    "trigger_price": 14.0,
+    "trigger_ud_ratio_at_14": 4.0,
+    "ud_ratio_at_12": 6.86,
+    "horizon": "2.5–3.5 years",
+    "rule": "Expected IRR ~16.0% is just above the top of the default 10–15% hurdle and U/D ~2.52x; therefore active interest is consistent, but preferred entry is lower because Base execution is already required at current price."
+  },
+  "kpis": [
+    {
+      "name": "Revenue-generating critical IT MW",
+      "current": "102MW (Jul-2026)",
+      "green": "CB4/CB5 phased delivery remains on disclosed schedule; steady quarterly step-up",
+      "yellow": "one-quarter slippage or customer fit-out changes without rent compensation",
+      "red": "two-quarter+ slippage or material cancellation",
+      "frequency": "quarterly / material 8-K"
+    },
+    {
+      "name": "WULF Compute project cost / critical IT MW",
+      "current": "$8–10M guide",
+      "green": "≤$10M/MW or overrun fully compensated by rent/scope",
+      "yellow": "$10–11.5M/MW",
+      "red": ">$11.5M/MW without equivalent economics",
+      "frequency": "quarterly"
+    },
+    {
+      "name": "HPC share of revenue",
+      "current": "71.3% Q2 2026",
+      "green": ">80% with positive segment-profit scaling",
+      "yellow": "flat despite additional MW delivery",
+      "red": "declines because HPC ramp stalls",
+      "frequency": "quarterly"
+    },
+    {
+      "name": "New critical IT lease signings",
+      "current": "company target 250–500MW/year",
+      "green": "≥250MW over trailing 12 months with bankable credit",
+      "yellow": "<250MW but funded near-term pipeline",
+      "red": "no meaningful signing plus construction delay",
+      "frequency": "rolling 12 months"
+    },
+    {
+      "name": "Justified delivery",
+      "current": "401MW, initial delivery planned 2H27",
+      "green": "construction/financing milestones support 2H27 start",
+      "yellow": "schedule shifts within ~1 quarter",
+      "red": "material delay, financing gap, or credit-support deterioration",
+      "frequency": "quarterly / 8-K"
+    },
+    {
+      "name": "Basic-share growth / equity funding",
+      "current": "~499M shares outstanding Jul-2026",
+      "green": "≤5% annual basic share growth unless per-share contracted value rises faster",
+      "yellow": "5–10%",
+      "red": ">10% without clearly accretive contracted value",
+      "frequency": "quarterly"
+    },
+    {
+      "name": "Funding coverage",
+      "current": "$2.62B unrestricted cash; $5.725B gross debt",
+      "green": "contracted build equity and debt funding remain committed with no near-term gap",
+      "yellow": "additional equity likely but manageable",
+      "red": "unfunded contracted capex / covenant or refinancing stress",
+      "frequency": "quarterly"
+    }
+  ],
+  "catalysts": [
+    {
+      "when": "2H 2026",
+      "event": "CB4 phased commissioning / rent commencement",
+      "sensitivity": "High — validates 336MW construction ramp and cash-revenue conversion"
+    },
+    {
+      "when": "2H 2026",
+      "event": "Additional 250–500MW annual signing progress",
+      "sensitivity": "High — upgrades pipeline option to Execution only if credit/funding are bankable"
+    },
+    {
+      "when": "By Dec 31, 2026",
+      "event": "Abernathy sale installment milestone",
+      "sensitivity": "Medium — capital recycling / liquidity"
+    },
+    {
+      "when": "Early 2027",
+      "event": "CB5 phased delivery / rent commencement",
+      "sensitivity": "High — Lake Mariner contracted ramp completion"
+    },
+    {
+      "when": "By Apr 30, 2027",
+      "event": "Abernathy final major installment milestone",
+      "sensitivity": "Medium"
+    },
+    {
+      "when": "2027 H1-H2",
+      "event": "Justified construction + financing evidence ahead of Anthropic initial delivery",
+      "sensitivity": "Very High"
+    },
+    {
+      "when": "2H 2027 expected start",
+      "event": "Initial Anthropic capacity delivery",
+      "sensitivity": "Very High — unlocks the largest contracted engine"
+    }
+  ],
+  "red_team": {
+    "pre_mortem": [
+      {
+        "failure": "Contracted MW is real but construction/tenant timing slips repeatedly",
+        "early_sign": "Core42 precedent + CB4/5 fit-out changes",
+        "watch": "revenue-generating MW, rent commencement, capex/MW"
+      },
+      {
+        "failure": "Capital structure consumes asset upside",
+        "early_sign": "large equity issuance, warrants, converts, high SBC",
+        "watch": "economic diluted shares, funding gap, interest and trust leakage"
+      },
+      {
+        "failure": "Power pipeline fails to become bankable tenant contracts",
+        "early_sign": "Muskie/Hawkeye/Chesapeake remain power-only options",
+        "watch": "signed MW with investment-grade support, project financing"
+      }
+    ],
+    "base_rate": "PRIMARY_SOURCE_CEILING — the cohort of former crypto miners transformed into multi-hundred-MW hyperscale AI landlords is too young for a stable historical success rate. Scenario probabilities therefore intentionally keep Bear at 25% and Bull Ecosystem at only 10%.",
+    "false_conservatism": [
+      "Uncontracted power sites could be worth materially more if hyperscaler time-to-power scarcity persists.",
+      "WULF may replicate Google-backed financing faster than modeled, reducing equity funding needs and raising per-share value."
+    ]
+  },
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "Ch0, Ch3"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1, Ch5"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch2, Appendix"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "Ch2, Ch4"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3, Appendix"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3, Ch4"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3, Ch5, Appendix"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch1, Ch3, Appendix"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3, Appendix"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4, Appendix"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4, Ch5"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4, Ch5, Appendix"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3, Ch4"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch0, Ch5, Ch6, Appendix"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "COMPLETE",
+      "h3_locator": "Ch5"
+    },
+    {
+      "rc_id": "RC-020",
+      "status": "COMPLETE",
+      "h3_locator": "Ch6"
+    }
+  ],
+  "source_index": [
+    {
+      "id": "S01",
+      "type": "primary",
+      "name": "TeraWulf Q2 2026 Form 10-Q",
+      "url": "https://investors.terawulf.com/sec-filings/all-sec-filings/content/0001083301-26-000166/wulf-20260630.htm"
+    },
+    {
+      "id": "S02",
+      "type": "primary",
+      "name": "TeraWulf Q2 2026 Results",
+      "url": "https://investors.terawulf.com/news-events/press-releases/detail/144/terawulf-reports-second-quarter-2026-results"
+    },
+    {
+      "id": "S03",
+      "type": "primary",
+      "name": "TeraWulf Q2 2026 Investor Presentation",
+      "url": "https://investors.terawulf.com/sec-filings/all-sec-filings/content/0001083301-26-000162/terawulfq22026investorpr.htm"
+    },
+    {
+      "id": "S04",
+      "type": "primary",
+      "name": "Anthropic / Abernathy 8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1083301/000110465926080583/tm2619468d1_8k.htm"
+    },
+    {
+      "id": "S05",
+      "type": "primary",
+      "name": "Anthropic / Abernathy Exhibit 99.1",
+      "url": "https://www.sec.gov/Archives/edgar/data/1083301/000110465926080583/tm2619468d1_ex99-1.htm"
+    },
+    {
+      "id": "S06",
+      "type": "primary",
+      "name": "TeraWulf Q1 2026 10-Q",
+      "url": "https://investors.terawulf.com/sec-filings/all-sec-filings/content/0001083301-26-000092/wulf-20260331.htm"
+    },
+    {
+      "id": "S07",
+      "type": "primary",
+      "name": "TeraWulf 2026 Proxy",
+      "url": "https://investors.terawulf.com/sec-filings/all-sec-filings/content/0001083301-26-000077/0001083301-26-000077.pdf"
+    },
+    {
+      "id": "S08",
+      "type": "primary",
+      "name": "Fluidstack Initial Agreements",
+      "url": "https://investors.terawulf.com/news-events/press-releases/detail/112/terawulf-signs-200-mw-10-year-ai-hosting-agreements-with-fluidstack"
+    },
+    {
+      "id": "S09",
+      "type": "primary",
+      "name": "Fluidstack CB-5 Expansion",
+      "url": "https://investors.terawulf.com/sec-filings/all-sec-filings/content/0001104659-25-079463/tm2523651d3_ex99-1.htm"
+    },
+    {
+      "id": "S10",
+      "type": "primary",
+      "name": "Core42 Unit-Economics Guide — Q1 2025 Presentation",
+      "url": "https://investors.terawulf.com/sec-filings/all-sec-filings/content/0001083301-25-000033/wulfq12025investorpresvf.htm"
+    },
+    {
+      "id": "S11",
+      "type": "primary",
+      "name": "November 2024 Production / Delivery Promise",
+      "url": "https://investors.terawulf.com/news-events/press-releases/detail/98/terawulf-announces-november-2024-production-and-operations-update"
+    },
+    {
+      "id": "S12",
+      "type": "industry-primary",
+      "name": "LBNL U.S. Data Center Energy Usage Report",
+      "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf"
+    },
+    {
+      "id": "S13",
+      "type": "industry-primary",
+      "name": "IEA Energy and AI",
+      "url": "https://www.iea.org/reports/energy-and-ai"
+    },
+    {
+      "id": "S14",
+      "type": "peer-primary",
+      "name": "Applied Digital Investor Relations",
+      "url": "https://ir.applieddigital.com/"
+    },
+    {
+      "id": "S15",
+      "type": "peer-primary",
+      "name": "Core Scientific Investor Relations",
+      "url": "https://investors.corescientific.com/"
+    },
+    {
+      "id": "S16",
+      "type": "secondary-market",
+      "name": "StockAnalysis WULF Forecast",
+      "url": "https://stockanalysis.com/stocks/wulf/forecast/"
+    },
+    {
+      "id": "S17",
+      "type": "secondary-market",
+      "name": "Investing.com WULF Consensus / Price History",
+      "url": "https://www.investing.com/equities/ikonics-corp-consensus-estimates"
+    },
+    {
+      "id": "S18",
+      "type": "secondary-peer",
+      "name": "Digital Realty EV/EBITDA history",
+      "url": "https://www.financecharts.com/stocks/DLR/value/ev-to-ebitda"
+    },
+    {
+      "id": "S19",
+      "type": "secondary-peer",
+      "name": "Equinix EV/EBITDA history",
+      "url": "https://www.financecharts.com/stocks/EQIX/value/ev-to-ebitda"
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "VIS_ID": "VIS-001",
+      "FIGURE_TITLE": "8개 분기 매출 믹스 전환",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.quarterly_8q",
+      "SOURCE_VALUES": [
+        {
+          "quarter": "2024Q3",
+          "revenue_m": 27.059,
+          "hpc_lease_revenue_m": 0,
+          "mining_revenue_m": 27.059,
+          "hpc_share": 0.0
+        },
+        {
+          "quarter": "2024Q4",
+          "revenue_m": 34.985,
+          "hpc_lease_revenue_m": 0,
+          "mining_revenue_m": 34.985,
+          "hpc_share": 0.0
+        },
+        {
+          "quarter": "2025Q1",
+          "revenue_m": 34.405,
+          "hpc_lease_revenue_m": 0,
+          "mining_revenue_m": 34.405,
+          "hpc_share": 0.0
+        },
+        {
+          "quarter": "2025Q2",
+          "revenue_m": 47.636,
+          "hpc_lease_revenue_m": 0,
+          "mining_revenue_m": 47.636,
+          "hpc_share": 0.0
+        },
+        {
+          "quarter": "2025Q3",
+          "revenue_m": 50.578,
+          "hpc_lease_revenue_m": 7.203,
+          "mining_revenue_m": 43.375,
+          "hpc_share": 0.1424
+        },
+        {
+          "quarter": "2025Q4",
+          "revenue_m": 35.836,
+          "hpc_lease_revenue_m": 9.696,
+          "mining_revenue_m": 26.14,
+          "hpc_share": 0.2706
+        },
+        {
+          "quarter": "2026Q1",
+          "revenue_m": 34.012,
+          "hpc_lease_revenue_m": 21.022,
+          "mining_revenue_m": 12.99,
+          "hpc_share": 0.6181
+        },
+        {
+          "quarter": "2026Q2",
+          "revenue_m": 44.767,
+          "hpc_lease_revenue_m": 31.932,
+          "mining_revenue_m": 12.835,
+          "hpc_share": 0.7133
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "fc1e9df01c60b18e",
+      "DISPLAY_VALUES": [
+        {
+          "quarter": "2024Q3",
+          "revenue_m": 27.059,
+          "hpc_m": 0,
+          "mining_m": 27.059,
+          "hpc_share": 0.0
+        },
+        {
+          "quarter": "2024Q4",
+          "revenue_m": 34.985,
+          "hpc_m": 0,
+          "mining_m": 34.985,
+          "hpc_share": 0.0
+        },
+        {
+          "quarter": "2025Q1",
+          "revenue_m": 34.405,
+          "hpc_m": 0,
+          "mining_m": 34.405,
+          "hpc_share": 0.0
+        },
+        {
+          "quarter": "2025Q2",
+          "revenue_m": 47.636,
+          "hpc_m": 0,
+          "mining_m": 47.636,
+          "hpc_share": 0.0
+        },
+        {
+          "quarter": "2025Q3",
+          "revenue_m": 50.578,
+          "hpc_m": 7.203,
+          "mining_m": 43.375,
+          "hpc_share": 0.1424
+        },
+        {
+          "quarter": "2025Q4",
+          "revenue_m": 35.836,
+          "hpc_m": 9.696,
+          "mining_m": 26.14,
+          "hpc_share": 0.2706
+        },
+        {
+          "quarter": "2026Q1",
+          "revenue_m": 34.012,
+          "hpc_m": 21.022,
+          "mining_m": 12.99,
+          "hpc_share": 0.6181
+        },
+        {
+          "quarter": "2026Q2",
+          "revenue_m": 44.767,
+          "hpc_m": 31.932,
+          "mining_m": 12.835,
+          "hpc_share": 0.7133
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Ch4 §4.2",
+      "TABLE_LOCATOR": "VIS-008 / VIS-014",
+      "CAPTION_LOCATOR": "HTML figure #VIS-001",
+      "RENDERED_ASSET_LOCATOR": "HTML #VIS-001 / PDF Ch4",
+      "PARITY": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-002",
+      "FIGURE_TITLE": "계약 MW vs 매출 발생 MW",
+      "AUTHORITATIVE_SOURCE_BLOCK": "capacity",
+      "SOURCE_VALUES": {
+        "contracted_critical_it_mw": 839,
+        "revenue_generating_critical_it_mw_july_2026": 102,
+        "revenue_generating_share_of_contracted": 0.1216,
+        "additional_under_construction_mw": 336,
+        "lake_mariner_contracts_mw": {
+          "Core42": 60,
+          "Fluidstack": 378
+        },
+        "justified_anthropic_mw": 401,
+        "pipeline_mw": {
+          "lake_mariner_expansion": 162,
+          "lake_hawkeye": 320,
+          "chesapeake": 800,
+          "muskie": 800,
+          "total": 2902
+        },
+        "legacy_bitcoin_mining_mw_lake_mariner_june_2026": 145
+      },
+      "SOURCE_VERSION_OR_HASH": "ebb986982d63211b",
+      "DISPLAY_VALUES": {
+        "live_mw": 102,
+        "under_construction_mw": 336,
+        "anthropic_mw": 401,
+        "contracted_mw": 839,
+        "live_share": 0.1216
+      },
+      "NARRATIVE_LOCATOR": "Ch3 §3.1",
+      "TABLE_LOCATOR": "VIS-013",
+      "CAPTION_LOCATOR": "HTML figure #VIS-002",
+      "RENDERED_ASSET_LOCATOR": "HTML #VIS-002 / PDF Ch3",
+      "PARITY": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-003",
+      "FIGURE_TITLE": "시나리오 주당가치",
+      "AUTHORITATIVE_SOURCE_BLOCK": "valuation.scenarios",
+      "SOURCE_VALUES": [
+        {
+          "name": "Bear",
+          "probability": 0.25,
+          "value_per_share": 8.5,
+          "economic_diluted_shares_m": 612.857,
+          "economic_diluted_equity_value_b": 5.209,
+          "revenue_path_b": {
+            "2026": 0.25,
+            "2027": 0.55,
+            "2028": 1.1,
+            "2029": 1.25
+          },
+          "normalized_ebitda_margin_path": {
+            "2026": 0.05,
+            "2027": 0.3,
+            "2028": 0.55,
+            "2029": 0.6
+          },
+          "fcf_path_b": {
+            "2026": -1.8,
+            "2027": -1.0,
+            "2028": 0.1,
+            "2029": 0.25
+          },
+          "operating_world": "Lake Mariner ramp 지연, Justified 일정/자본비용 악화, 미계약 pipeline 거의 무가치"
+        },
+        {
+          "name": "Base",
+          "probability": 0.4,
+          "value_per_share": 23.0,
+          "economic_diluted_shares_m": 660.683,
+          "economic_diluted_equity_value_b": 15.196,
+          "revenue_path_b": {
+            "2026": 0.27,
+            "2027": 0.9,
+            "2028": 1.75,
+            "2029": 1.9
+          },
+          "normalized_ebitda_margin_path": {
+            "2026": 0.08,
+            "2027": 0.4,
+            "2028": 0.6,
+            "2029": 0.62
+          },
+          "fcf_path_b": {
+            "2026": -1.6,
+            "2027": -0.6,
+            "2028": 0.45,
+            "2029": 0.65
+          },
+          "operating_world": "Lake Mariner 대부분 정상화, Justified 2028 ramp, pipeline에는 제한적 확률가치만 부여"
+        },
+        {
+          "name": "Bull Execution",
+          "probability": 0.25,
+          "value_per_share": 36.0,
+          "economic_diluted_shares_m": 712.324,
+          "economic_diluted_equity_value_b": 25.644,
+          "revenue_path_b": {
+            "2026": 0.29,
+            "2027": 1.15,
+            "2028": 2.1,
+            "2029": 2.45
+          },
+          "normalized_ebitda_margin_path": {
+            "2026": 0.1,
+            "2027": 0.45,
+            "2028": 0.62,
+            "2029": 0.65
+          },
+          "fcf_path_b": {
+            "2026": -1.5,
+            "2027": -0.4,
+            "2028": 0.75,
+            "2029": 1.0
+          },
+          "operating_world": "839MW 계약자산의 높은 완공률과 우호적 site economics, 추가 signing 일부 성공"
+        },
+        {
+          "name": "Bull Ecosystem",
+          "probability": 0.1,
+          "value_per_share": 51.5,
+          "economic_diluted_shares_m": 739.823,
+          "economic_diluted_equity_value_b": 38.101,
+          "revenue_path_b": {
+            "2026": 0.31,
+            "2027": 1.3,
+            "2028": 2.45,
+            "2029": 3.2
+          },
+          "normalized_ebitda_margin_path": {
+            "2026": 0.12,
+            "2027": 0.48,
+            "2028": 0.64,
+            "2029": 0.66
+          },
+          "fcf_path_b": {
+            "2026": -1.4,
+            "2027": -0.2,
+            "2028": 0.9,
+            "2029": 1.35
+          },
+          "operating_world": "250–500MW/년 신규 계약이 반복되고 Muskie/Hawkeye 등 전력 옵션이 계약자산으로 승격"
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "4de64dcde3494cb4",
+      "DISPLAY_VALUES": [
+        {
+          "name": "Bear",
+          "probability": 0.25,
+          "value_per_share": 8.5
+        },
+        {
+          "name": "Base",
+          "probability": 0.4,
+          "value_per_share": 23.0
+        },
+        {
+          "name": "Bull Execution",
+          "probability": 0.25,
+          "value_per_share": 36.0
+        },
+        {
+          "name": "Bull Ecosystem",
+          "probability": 0.1,
+          "value_per_share": 51.5
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Ch5 §5.3–5.5",
+      "TABLE_LOCATOR": "VIS-009",
+      "CAPTION_LOCATOR": "HTML figure #VIS-003",
+      "RENDERED_ASSET_LOCATOR": "HTML #VIS-003 / PDF Ch5",
+      "PARITY": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-004",
+      "FIGURE_TITLE": "경제적 희석 브리지",
+      "AUTHORITATIVE_SOURCE_BLOCK": "dilution + balance_sheet_and_financing.debt",
+      "SOURCE_VALUES": {
+        "dilution": {
+          "basic_shares_m": 498.932431,
+          "common_warrants_m": 77.70445,
+          "google_warrants_m": 73.58,
+          "google_warrant_strike": 0.01,
+          "rsus_m": 36.219695,
+          "equity_linked_floor_shares_m": 612.857,
+          "current_price_economic_diluted_shares_m": 625.574,
+          "current_price_economic_diluted_equity_value_b": 10.209,
+          "method": "Debt principal remains debt; add warrants/RSUs and only convertible excess-share leakage above capped-call protection / conversion threshold. No double count."
+        },
+        "debt": [
+          {
+            "security": "WULF Compute Senior Secured Notes 2030",
+            "principal_b": 3.2,
+            "coupon": 0.0775
+          },
+          {
+            "security": "Convertible Notes 2030",
+            "principal_b": 0.5,
+            "coupon": 0.0275,
+            "conversion_price": 8.48,
+            "capped_call_cap": 12.8,
+            "initial_underlying_shares_m": 58.96225
+          },
+          {
+            "security": "Convertible Notes 2031",
+            "principal_b": 1.0,
+            "coupon": 0.01,
+            "conversion_price": 12.43,
+            "capped_call_cap": 18.76,
+            "initial_underlying_shares_m": 80.4602
+          },
+          {
+            "security": "Convertible Notes 2032",
+            "principal_b": 1.025,
+            "coupon": 0.0,
+            "conversion_price": 19.9375,
+            "capped_call_cap": null,
+            "initial_underlying_shares_m": 51.4106175
+          }
+        ]
+      },
+      "SOURCE_VERSION_OR_HASH": "38a3dabdf9b823df",
+      "DISPLAY_VALUES": {
+        "price_points": [
+          8.5,
+          16.32,
+          23,
+          36,
+          51.5
+        ],
+        "diluted_shares_m": [
+          612.9,
+          625.6,
+          660.7,
+          712.3,
+          739.8
+        ]
+      },
+      "NARRATIVE_LOCATOR": "Ch4 §4.6–4.7",
+      "TABLE_LOCATOR": "HTML table #VIS-004",
+      "CAPTION_LOCATOR": "n/a",
+      "RENDERED_ASSET_LOCATOR": "HTML #VIS-004 / PDF Ch4",
+      "PARITY": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-005",
+      "FIGURE_TITLE": "산업→회사 전달 구조",
+      "AUTHORITATIVE_SOURCE_BLOCK": "economic_definition + capacity + contracts",
+      "SOURCE_VALUES": {
+        "economic_definition": "Power-first AI/HPC digital infrastructure developer/owner/operator transitioning from bitcoin mining; value is determined by converting contracted MW into rent-producing capacity after capex, financing, dilution and governance leakage.",
+        "capacity": {
+          "contracted_mw": 839,
+          "live_mw": 102
+        },
+        "contracts": [
+          "Core42",
+          "Fluidstack",
+          "Anthropic"
+        ]
+      },
+      "SOURCE_VERSION_OR_HASH": "26011eb4e577f02e",
+      "DISPLAY_VALUES": {
+        "chain": [
+          "AI 전력수요 증가",
+          "고객 time-to-power",
+          "WULF 전력·부지",
+          "장기 Lease + 신용보강",
+          "건설·Commissioning",
+          "임대료·Site NOI",
+          "이자·희석·Trust",
+          "주당가치"
+        ]
+      },
+      "NARRATIVE_LOCATOR": "Ch1",
+      "TABLE_LOCATOR": "n/a",
+      "CAPTION_LOCATOR": "HTML figure #VIS-005",
+      "RENDERED_ASSET_LOCATOR": "HTML #VIS-005 / PDF Ch1",
+      "PARITY": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-006",
+      "FIGURE_TITLE": "가격 밴드 / 스탠스",
+      "AUTHORITATIVE_SOURCE_BLOCK": "stance",
+      "SOURCE_VALUES": {
+        "zone": "적극 관심 — 고위험·실행조건부",
+        "preferred_entry_band": [
+          12,
+          15
+        ],
+        "current_zone": [
+          15,
+          18
+        ],
+        "base_fair_value": 23.0,
+        "probability_weighted_value": 25.48,
+        "trigger_price": 14.0,
+        "trigger_ud_ratio_at_14": 4.0,
+        "ud_ratio_at_12": 6.86,
+        "horizon": "2.5–3.5 years",
+        "rule": "Expected IRR ~16.0% is just above the top of the default 10–15% hurdle and U/D ~2.52x; therefore active interest is consistent, but preferred entry is lower because Base execution is already required at current price."
+      },
+      "SOURCE_VERSION_OR_HASH": "f6faf8596d4b7463",
+      "DISPLAY_VALUES": {
+        "preferred_entry_band": [
+          12,
+          15
+        ],
+        "current_zone": [
+          15,
+          18
+        ],
+        "current_price": 16.32,
+        "base": 23,
+        "expected": 25.48
+      },
+      "NARRATIVE_LOCATOR": "Ch5 §5.8",
+      "TABLE_LOCATOR": "VIS-009",
+      "CAPTION_LOCATOR": "HTML figure #VIS-006",
+      "RENDERED_ASSET_LOCATOR": "HTML #VIS-006 / PDF Ch5",
+      "PARITY": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-007",
+      "FIGURE_TITLE": "3개년 재무 테이블",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.annual_3y",
+      "SOURCE_VALUES": {
+        "2023": {
+          "revenue_m": 69.229,
+          "net_loss_m": -73.421,
+          "operating_cash_flow_m": 4.263,
+          "ppe_purchases_deposits_m": 75.168
+        },
+        "2024": {
+          "revenue_m": 140.051,
+          "net_loss_m": -72.418,
+          "operating_cash_flow_m": -24.422,
+          "ppe_purchases_deposits_m": 267.94
+        },
+        "2025": {
+          "revenue_m": 168.455,
+          "net_loss_m": -661.416,
+          "operating_cash_flow_m": -123.18,
+          "ppe_purchases_deposits_m": 1060.189
+        }
+      },
+      "SOURCE_VERSION_OR_HASH": "39834e2430bfe802",
+      "DISPLAY_VALUES": {
+        "2023": {
+          "revenue_m": 69.229,
+          "net_loss_m": -73.421,
+          "operating_cash_flow_m": 4.263,
+          "ppe_purchases_deposits_m": 75.168
+        },
+        "2024": {
+          "revenue_m": 140.051,
+          "net_loss_m": -72.418,
+          "operating_cash_flow_m": -24.422,
+          "ppe_purchases_deposits_m": 267.94
+        },
+        "2025": {
+          "revenue_m": 168.455,
+          "net_loss_m": -661.416,
+          "operating_cash_flow_m": -123.18,
+          "ppe_purchases_deposits_m": 1060.189
+        }
+      },
+      "NARRATIVE_LOCATOR": "Ch4 §4.1",
+      "TABLE_LOCATOR": "HTML table #VIS-007",
+      "CAPTION_LOCATOR": "n/a",
+      "RENDERED_ASSET_LOCATOR": "HTML #VIS-007 / PDF Ch4",
+      "PARITY": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-008",
+      "FIGURE_TITLE": "최근 8개 분기 재무 테이블",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.quarterly_8q",
+      "SOURCE_VALUES": [
+        {
+          "quarter": "2024Q3",
+          "revenue_m": 27.059,
+          "hpc_lease_revenue_m": 0,
+          "mining_revenue_m": 27.059,
+          "hpc_share": 0.0
+        },
+        {
+          "quarter": "2024Q4",
+          "revenue_m": 34.985,
+          "hpc_lease_revenue_m": 0,
+          "mining_revenue_m": 34.985,
+          "hpc_share": 0.0
+        },
+        {
+          "quarter": "2025Q1",
+          "revenue_m": 34.405,
+          "hpc_lease_revenue_m": 0,
+          "mining_revenue_m": 34.405,
+          "hpc_share": 0.0
+        },
+        {
+          "quarter": "2025Q2",
+          "revenue_m": 47.636,
+          "hpc_lease_revenue_m": 0,
+          "mining_revenue_m": 47.636,
+          "hpc_share": 0.0
+        },
+        {
+          "quarter": "2025Q3",
+          "revenue_m": 50.578,
+          "hpc_lease_revenue_m": 7.203,
+          "mining_revenue_m": 43.375,
+          "hpc_share": 0.1424
+        },
+        {
+          "quarter": "2025Q4",
+          "revenue_m": 35.836,
+          "hpc_lease_revenue_m": 9.696,
+          "mining_revenue_m": 26.14,
+          "hpc_share": 0.2706
+        },
+        {
+          "quarter": "2026Q1",
+          "revenue_m": 34.012,
+          "hpc_lease_revenue_m": 21.022,
+          "mining_revenue_m": 12.99,
+          "hpc_share": 0.6181
+        },
+        {
+          "quarter": "2026Q2",
+          "revenue_m": 44.767,
+          "hpc_lease_revenue_m": 31.932,
+          "mining_revenue_m": 12.835,
+          "hpc_share": 0.7133
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "fc1e9df01c60b18e",
+      "DISPLAY_VALUES": [
+        {
+          "quarter": "2024Q3",
+          "revenue_m": 27.059,
+          "hpc_lease_revenue_m": 0,
+          "mining_revenue_m": 27.059,
+          "hpc_share": 0.0
+        },
+        {
+          "quarter": "2024Q4",
+          "revenue_m": 34.985,
+          "hpc_lease_revenue_m": 0,
+          "mining_revenue_m": 34.985,
+          "hpc_share": 0.0
+        },
+        {
+          "quarter": "2025Q1",
+          "revenue_m": 34.405,
+          "hpc_lease_revenue_m": 0,
+          "mining_revenue_m": 34.405,
+          "hpc_share": 0.0
+        },
+        {
+          "quarter": "2025Q2",
+          "revenue_m": 47.636,
+          "hpc_lease_revenue_m": 0,
+          "mining_revenue_m": 47.636,
+          "hpc_share": 0.0
+        },
+        {
+          "quarter": "2025Q3",
+          "revenue_m": 50.578,
+          "hpc_lease_revenue_m": 7.203,
+          "mining_revenue_m": 43.375,
+          "hpc_share": 0.1424
+        },
+        {
+          "quarter": "2025Q4",
+          "revenue_m": 35.836,
+          "hpc_lease_revenue_m": 9.696,
+          "mining_revenue_m": 26.14,
+          "hpc_share": 0.2706
+        },
+        {
+          "quarter": "2026Q1",
+          "revenue_m": 34.012,
+          "hpc_lease_revenue_m": 21.022,
+          "mining_revenue_m": 12.99,
+          "hpc_share": 0.6181
+        },
+        {
+          "quarter": "2026Q2",
+          "revenue_m": 44.767,
+          "hpc_lease_revenue_m": 31.932,
+          "mining_revenue_m": 12.835,
+          "hpc_share": 0.7133
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Ch4 §4.2",
+      "TABLE_LOCATOR": "HTML table #VIS-008",
+      "CAPTION_LOCATOR": "n/a",
+      "RENDERED_ASSET_LOCATOR": "HTML #VIS-008 / PDF Ch4",
+      "PARITY": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-009",
+      "FIGURE_TITLE": "확률가중 시나리오 테이블",
+      "AUTHORITATIVE_SOURCE_BLOCK": "valuation.scenarios",
+      "SOURCE_VALUES": [
+        {
+          "name": "Bear",
+          "probability": 0.25,
+          "value_per_share": 8.5,
+          "economic_diluted_shares_m": 612.857,
+          "economic_diluted_equity_value_b": 5.209,
+          "revenue_path_b": {
+            "2026": 0.25,
+            "2027": 0.55,
+            "2028": 1.1,
+            "2029": 1.25
+          },
+          "normalized_ebitda_margin_path": {
+            "2026": 0.05,
+            "2027": 0.3,
+            "2028": 0.55,
+            "2029": 0.6
+          },
+          "fcf_path_b": {
+            "2026": -1.8,
+            "2027": -1.0,
+            "2028": 0.1,
+            "2029": 0.25
+          },
+          "operating_world": "Lake Mariner ramp 지연, Justified 일정/자본비용 악화, 미계약 pipeline 거의 무가치"
+        },
+        {
+          "name": "Base",
+          "probability": 0.4,
+          "value_per_share": 23.0,
+          "economic_diluted_shares_m": 660.683,
+          "economic_diluted_equity_value_b": 15.196,
+          "revenue_path_b": {
+            "2026": 0.27,
+            "2027": 0.9,
+            "2028": 1.75,
+            "2029": 1.9
+          },
+          "normalized_ebitda_margin_path": {
+            "2026": 0.08,
+            "2027": 0.4,
+            "2028": 0.6,
+            "2029": 0.62
+          },
+          "fcf_path_b": {
+            "2026": -1.6,
+            "2027": -0.6,
+            "2028": 0.45,
+            "2029": 0.65
+          },
+          "operating_world": "Lake Mariner 대부분 정상화, Justified 2028 ramp, pipeline에는 제한적 확률가치만 부여"
+        },
+        {
+          "name": "Bull Execution",
+          "probability": 0.25,
+          "value_per_share": 36.0,
+          "economic_diluted_shares_m": 712.324,
+          "economic_diluted_equity_value_b": 25.644,
+          "revenue_path_b": {
+            "2026": 0.29,
+            "2027": 1.15,
+            "2028": 2.1,
+            "2029": 2.45
+          },
+          "normalized_ebitda_margin_path": {
+            "2026": 0.1,
+            "2027": 0.45,
+            "2028": 0.62,
+            "2029": 0.65
+          },
+          "fcf_path_b": {
+            "2026": -1.5,
+            "2027": -0.4,
+            "2028": 0.75,
+            "2029": 1.0
+          },
+          "operating_world": "839MW 계약자산의 높은 완공률과 우호적 site economics, 추가 signing 일부 성공"
+        },
+        {
+          "name": "Bull Ecosystem",
+          "probability": 0.1,
+          "value_per_share": 51.5,
+          "economic_diluted_shares_m": 739.823,
+          "economic_diluted_equity_value_b": 38.101,
+          "revenue_path_b": {
+            "2026": 0.31,
+            "2027": 1.3,
+            "2028": 2.45,
+            "2029": 3.2
+          },
+          "normalized_ebitda_margin_path": {
+            "2026": 0.12,
+            "2027": 0.48,
+            "2028": 0.64,
+            "2029": 0.66
+          },
+          "fcf_path_b": {
+            "2026": -1.4,
+            "2027": -0.2,
+            "2028": 0.9,
+            "2029": 1.35
+          },
+          "operating_world": "250–500MW/년 신규 계약이 반복되고 Muskie/Hawkeye 등 전력 옵션이 계약자산으로 승격"
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "4de64dcde3494cb4",
+      "DISPLAY_VALUES": [
+        {
+          "name": "Bear",
+          "probability": 0.25,
+          "value_per_share": 8.5,
+          "economic_diluted_shares_m": 612.857
+        },
+        {
+          "name": "Base",
+          "probability": 0.4,
+          "value_per_share": 23.0,
+          "economic_diluted_shares_m": 660.683
+        },
+        {
+          "name": "Bull Execution",
+          "probability": 0.25,
+          "value_per_share": 36.0,
+          "economic_diluted_shares_m": 712.324
+        },
+        {
+          "name": "Bull Ecosystem",
+          "probability": 0.1,
+          "value_per_share": 51.5,
+          "economic_diluted_shares_m": 739.823
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Ch5 §5.5",
+      "TABLE_LOCATOR": "HTML table #VIS-009",
+      "CAPTION_LOCATOR": "n/a",
+      "RENDERED_ASSET_LOCATOR": "HTML #VIS-009 / PDF Ch5",
+      "PARITY": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-010",
+      "FIGURE_TITLE": "컨센서스 vs Base",
+      "AUTHORITATIVE_SOURCE_BLOCK": "consensus + valuation",
+      "SOURCE_VALUES": {
+        "consensus": {
+          "fy2026_revenue_avg_m": 270.09,
+          "fy2026_revenue_low_m": 230.0,
+          "fy2026_revenue_high_m": 333.2,
+          "analyst_count_revenue": 12,
+          "fy2027_revenue_avg_m": 905.32,
+          "price_target_avg": 36.64,
+          "price_target_median": 34.0,
+          "price_target_low": 25.0,
+          "price_target_high": 62.5,
+          "analyst_count_price_target": 18,
+          "rating": "Strong Buy",
+          "revision_trend": "Post-Q2 targets remain bullish but several high targets were cut; public target dispersion is very wide.",
+          "boundary": "Full FY2028 broker model and real-time institutional positioning PRIMARY_SOURCE_CEILING."
+        },
+        "valuation": {
+          "mode": "Mode B Hybrid + asset/NAV cross-check",
+          "current_price": 16.32,
+          "time_horizon_years": 3,
+          "base_components_b": {
+            "core_current_monetization": 1.1,
+            "execution_incremental_contracted": 13.6,
+            "ecosystem_probability_weighted": 3.6,
+            "current_net_debt_drag": -3.1
+          },
+          "base_economic_equity_value_b": 15.2,
+          "base_value_per_share": 23.0,
+          "expected_value_per_share": 25.475,
+          "expected_irr": 0.16,
+          "bull_execution_value": 36.0,
+          "bear_value": 8.5,
+          "upside_downside_ratio": 2.517,
+          "hurdle_range": [
+            0.1,
+            0.15
+          ],
+          "stabilized_site_multiple_range": [
+            9.5,
+            15.0
+          ],
+          "historical_multiple_band": "PRIMARY_SOURCE_CEILING due 2025-26 business-model break; peer/asset band substituted. Mature DLR/EQIX trade around high-20s LTM EV/EBITDA, but WULF scenarios deliberately use 9.5x-15x stabilized site EBITDA to reflect construction, funding and concentration risk.",
+          "scenarios": [
+            {
+              "name": "Bear",
+              "probability": 0.25,
+              "value_per_share": 8.5,
+              "economic_diluted_shares_m": 612.857,
+              "economic_diluted_equity_value_b": 5.209,
+              "revenue_path_b": {
+                "2026": 0.25,
+                "2027": 0.55,
+                "2028": 1.1,
+                "2029": 1.25
+              },
+              "normalized_ebitda_margin_path": {
+                "2026": 0.05,
+                "2027": 0.3,
+                "2028": 0.55,
+                "2029": 0.6
+              },
+              "fcf_path_b": {
+                "2026": -1.8,
+                "2027": -1.0,
+                "2028": 0.1,
+                "2029": 0.25
+              },
+              "operating_world": "Lake Mariner ramp 지연, Justified 일정/자본비용 악화, 미계약 pipeline 거의 무가치"
+            },
+            {
+              "name": "Base",
+              "probability": 0.4,
+              "value_per_share": 23.0,
+              "economic_diluted_shares_m": 660.683,
+              "economic_diluted_equity_value_b": 15.196,
+              "revenue_path_b": {
+                "2026": 0.27,
+                "2027": 0.9,
+                "2028": 1.75,
+                "2029": 1.9
+              },
+              "normalized_ebitda_margin_path": {
+                "2026": 0.08,
+                "2027": 0.4,
+                "2028": 0.6,
+                "2029": 0.62
+              },
+              "fcf_path_b": {
+                "2026": -1.6,
+                "2027": -0.6,
+                "2028": 0.45,
+                "2029": 0.65
+              },
+              "operating_world": "Lake Mariner 대부분 정상화, Justified 2028 ramp, pipeline에는 제한적 확률가치만 부여"
+            },
+            {
+              "name": "Bull Execution",
+              "probability": 0.25,
+              "value_per_share": 36.0,
+              "economic_diluted_shares_m": 712.324,
+              "economic_diluted_equity_value_b": 25.644,
+              "revenue_path_b": {
+                "2026": 0.29,
+                "2027": 1.15,
+                "2028": 2.1,
+                "2029": 2.45
+              },
+              "normalized_ebitda_margin_path": {
+                "2026": 0.1,
+                "2027": 0.45,
+                "2028": 0.62,
+                "2029": 0.65
+              },
+              "fcf_path_b": {
+                "2026": -1.5,
+                "2027": -0.4,
+                "2028": 0.75,
+                "2029": 1.0
+              },
+              "operating_world": "839MW 계약자산의 높은 완공률과 우호적 site economics, 추가 signing 일부 성공"
+            },
+            {
+              "name": "Bull Ecosystem",
+              "probability": 0.1,
+              "value_per_share": 51.5,
+              "economic_diluted_shares_m": 739.823,
+              "economic_diluted_equity_value_b": 38.101,
+              "revenue_path_b": {
+                "2026": 0.31,
+                "2027": 1.3,
+                "2028": 2.45,
+                "2029": 3.2
+              },
+              "normalized_ebitda_margin_path": {
+                "2026": 0.12,
+                "2027": 0.48,
+                "2028": 0.64,
+                "2029": 0.66
+              },
+              "fcf_path_b": {
+                "2026": -1.4,
+                "2027": -0.2,
+                "2028": 0.9,
+                "2029": 1.35
+              },
+              "operating_world": "250–500MW/년 신규 계약이 반복되고 Muskie/Hawkeye 등 전력 옵션이 계약자산으로 승격"
+            }
+          ],
+          "no_double_count_rule": "Warrants/RSUs/convert excess shares are in denominator and not subtracted again as monetary drag."
+        }
+      },
+      "SOURCE_VERSION_OR_HASH": "554f7b8b1501d81b",
+      "DISPLAY_VALUES": {
+        "fy2026_consensus_m": 270.09,
+        "fy2026_base_m": 270,
+        "fy2027_consensus_m": 905.32,
+        "fy2027_base_m": 900,
+        "pt_avg": 36.64,
+        "base_fv": 23,
+        "expected_3y": 25.48
+      },
+      "NARRATIVE_LOCATOR": "Ch5 §5.6",
+      "TABLE_LOCATOR": "HTML table #VIS-010",
+      "CAPTION_LOCATOR": "n/a",
+      "RENDERED_ASSET_LOCATOR": "HTML #VIS-010 / PDF Ch5",
+      "PARITY": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-011",
+      "FIGURE_TITLE": "KPI Tripwire",
+      "AUTHORITATIVE_SOURCE_BLOCK": "kpis",
+      "SOURCE_VALUES": [
+        {
+          "name": "Revenue-generating critical IT MW",
+          "current": "102MW (Jul-2026)",
+          "green": "CB4/CB5 phased delivery remains on disclosed schedule; steady quarterly step-up",
+          "yellow": "one-quarter slippage or customer fit-out changes without rent compensation",
+          "red": "two-quarter+ slippage or material cancellation",
+          "frequency": "quarterly / material 8-K"
+        },
+        {
+          "name": "WULF Compute project cost / critical IT MW",
+          "current": "$8–10M guide",
+          "green": "≤$10M/MW or overrun fully compensated by rent/scope",
+          "yellow": "$10–11.5M/MW",
+          "red": ">$11.5M/MW without equivalent economics",
+          "frequency": "quarterly"
+        },
+        {
+          "name": "HPC share of revenue",
+          "current": "71.3% Q2 2026",
+          "green": ">80% with positive segment-profit scaling",
+          "yellow": "flat despite additional MW delivery",
+          "red": "declines because HPC ramp stalls",
+          "frequency": "quarterly"
+        },
+        {
+          "name": "New critical IT lease signings",
+          "current": "company target 250–500MW/year",
+          "green": "≥250MW over trailing 12 months with bankable credit",
+          "yellow": "<250MW but funded near-term pipeline",
+          "red": "no meaningful signing plus construction delay",
+          "frequency": "rolling 12 months"
+        },
+        {
+          "name": "Justified delivery",
+          "current": "401MW, initial delivery planned 2H27",
+          "green": "construction/financing milestones support 2H27 start",
+          "yellow": "schedule shifts within ~1 quarter",
+          "red": "material delay, financing gap, or credit-support deterioration",
+          "frequency": "quarterly / 8-K"
+        },
+        {
+          "name": "Basic-share growth / equity funding",
+          "current": "~499M shares outstanding Jul-2026",
+          "green": "≤5% annual basic share growth unless per-share contracted value rises faster",
+          "yellow": "5–10%",
+          "red": ">10% without clearly accretive contracted value",
+          "frequency": "quarterly"
+        },
+        {
+          "name": "Funding coverage",
+          "current": "$2.62B unrestricted cash; $5.725B gross debt",
+          "green": "contracted build equity and debt funding remain committed with no near-term gap",
+          "yellow": "additional equity likely but manageable",
+          "red": "unfunded contracted capex / covenant or refinancing stress",
+          "frequency": "quarterly"
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "8aaf65e36da55e09",
+      "DISPLAY_VALUES": [
+        {
+          "name": "Revenue-generating critical IT MW",
+          "current": "102MW (Jul-2026)",
+          "green": "CB4/CB5 phased delivery remains on disclosed schedule; steady quarterly step-up",
+          "yellow": "one-quarter slippage or customer fit-out changes without rent compensation",
+          "red": "two-quarter+ slippage or material cancellation",
+          "frequency": "quarterly / material 8-K"
+        },
+        {
+          "name": "WULF Compute project cost / critical IT MW",
+          "current": "$8–10M guide",
+          "green": "≤$10M/MW or overrun fully compensated by rent/scope",
+          "yellow": "$10–11.5M/MW",
+          "red": ">$11.5M/MW without equivalent economics",
+          "frequency": "quarterly"
+        },
+        {
+          "name": "HPC share of revenue",
+          "current": "71.3% Q2 2026",
+          "green": ">80% with positive segment-profit scaling",
+          "yellow": "flat despite additional MW delivery",
+          "red": "declines because HPC ramp stalls",
+          "frequency": "quarterly"
+        },
+        {
+          "name": "New critical IT lease signings",
+          "current": "company target 250–500MW/year",
+          "green": "≥250MW over trailing 12 months with bankable credit",
+          "yellow": "<250MW but funded near-term pipeline",
+          "red": "no meaningful signing plus construction delay",
+          "frequency": "rolling 12 months"
+        },
+        {
+          "name": "Justified delivery",
+          "current": "401MW, initial delivery planned 2H27",
+          "green": "construction/financing milestones support 2H27 start",
+          "yellow": "schedule shifts within ~1 quarter",
+          "red": "material delay, financing gap, or credit-support deterioration",
+          "frequency": "quarterly / 8-K"
+        },
+        {
+          "name": "Basic-share growth / equity funding",
+          "current": "~499M shares outstanding Jul-2026",
+          "green": "≤5% annual basic share growth unless per-share contracted value rises faster",
+          "yellow": "5–10%",
+          "red": ">10% without clearly accretive contracted value",
+          "frequency": "quarterly"
+        },
+        {
+          "name": "Funding coverage",
+          "current": "$2.62B unrestricted cash; $5.725B gross debt",
+          "green": "contracted build equity and debt funding remain committed with no near-term gap",
+          "yellow": "additional equity likely but manageable",
+          "red": "unfunded contracted capex / covenant or refinancing stress",
+          "frequency": "quarterly"
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Ch6 §6.6",
+      "TABLE_LOCATOR": "HTML table #VIS-011",
+      "CAPTION_LOCATOR": "n/a",
+      "RENDERED_ASSET_LOCATOR": "HTML #VIS-011 / PDF Ch6",
+      "PARITY": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-012",
+      "FIGURE_TITLE": "RC Coverage Audit",
+      "AUTHORITATIVE_SOURCE_BLOCK": "rc_ledger",
+      "SOURCE_VALUES": [
+        {
+          "rc_id": "RC-001",
+          "status": "COMPLETE",
+          "h3_locator": "Ch0, Ch3"
+        },
+        {
+          "rc_id": "RC-002",
+          "status": "COMPLETE",
+          "h3_locator": "Ch1"
+        },
+        {
+          "rc_id": "RC-003",
+          "status": "COMPLETE",
+          "h3_locator": "Ch1, Ch5"
+        },
+        {
+          "rc_id": "RC-004",
+          "status": "PRIMARY_SOURCE_CEILING",
+          "h3_locator": "Ch2, Appendix"
+        },
+        {
+          "rc_id": "RC-005",
+          "status": "COMPLETE",
+          "h3_locator": "Ch2, Ch4"
+        },
+        {
+          "rc_id": "RC-006",
+          "status": "COMPLETE",
+          "h3_locator": "Ch3"
+        },
+        {
+          "rc_id": "RC-007",
+          "status": "PRIMARY_SOURCE_CEILING",
+          "h3_locator": "Ch3, Appendix"
+        },
+        {
+          "rc_id": "RC-008",
+          "status": "COMPLETE",
+          "h3_locator": "Ch3, Ch4"
+        },
+        {
+          "rc_id": "RC-009",
+          "status": "PRIMARY_SOURCE_CEILING",
+          "h3_locator": "Ch3, Ch5, Appendix"
+        },
+        {
+          "rc_id": "RC-010",
+          "status": "PRIMARY_SOURCE_CEILING",
+          "h3_locator": "Ch1, Ch3, Appendix"
+        },
+        {
+          "rc_id": "RC-011",
+          "status": "PRIMARY_SOURCE_CEILING",
+          "h3_locator": "Ch3, Appendix"
+        },
+        {
+          "rc_id": "RC-012",
+          "status": "COMPLETE",
+          "h3_locator": "Ch3"
+        },
+        {
+          "rc_id": "RC-013",
+          "status": "COMPLETE",
+          "h3_locator": "Ch4, Appendix"
+        },
+        {
+          "rc_id": "RC-014",
+          "status": "COMPLETE",
+          "h3_locator": "Ch4"
+        },
+        {
+          "rc_id": "RC-015",
+          "status": "COMPLETE",
+          "h3_locator": "Ch4, Ch5"
+        },
+        {
+          "rc_id": "RC-016",
+          "status": "COMPLETE",
+          "h3_locator": "Ch4, Ch5, Appendix"
+        },
+        {
+          "rc_id": "RC-017",
+          "status": "COMPLETE",
+          "h3_locator": "Ch3, Ch4"
+        },
+        {
+          "rc_id": "RC-018",
+          "status": "PRIMARY_SOURCE_CEILING",
+          "h3_locator": "Ch0, Ch5, Ch6, Appendix"
+        },
+        {
+          "rc_id": "RC-019",
+          "status": "COMPLETE",
+          "h3_locator": "Ch5"
+        },
+        {
+          "rc_id": "RC-020",
+          "status": "COMPLETE",
+          "h3_locator": "Ch6"
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "773d6efb52e9f78a",
+      "DISPLAY_VALUES": [
+        {
+          "rc_id": "RC-001",
+          "status": "COMPLETE",
+          "h3_locator": "Ch0, Ch3"
+        },
+        {
+          "rc_id": "RC-002",
+          "status": "COMPLETE",
+          "h3_locator": "Ch1"
+        },
+        {
+          "rc_id": "RC-003",
+          "status": "COMPLETE",
+          "h3_locator": "Ch1, Ch5"
+        },
+        {
+          "rc_id": "RC-004",
+          "status": "PRIMARY_SOURCE_CEILING",
+          "h3_locator": "Ch2, Appendix"
+        },
+        {
+          "rc_id": "RC-005",
+          "status": "COMPLETE",
+          "h3_locator": "Ch2, Ch4"
+        },
+        {
+          "rc_id": "RC-006",
+          "status": "COMPLETE",
+          "h3_locator": "Ch3"
+        },
+        {
+          "rc_id": "RC-007",
+          "status": "PRIMARY_SOURCE_CEILING",
+          "h3_locator": "Ch3, Appendix"
+        },
+        {
+          "rc_id": "RC-008",
+          "status": "COMPLETE",
+          "h3_locator": "Ch3, Ch4"
+        },
+        {
+          "rc_id": "RC-009",
+          "status": "PRIMARY_SOURCE_CEILING",
+          "h3_locator": "Ch3, Ch5, Appendix"
+        },
+        {
+          "rc_id": "RC-010",
+          "status": "PRIMARY_SOURCE_CEILING",
+          "h3_locator": "Ch1, Ch3, Appendix"
+        },
+        {
+          "rc_id": "RC-011",
+          "status": "PRIMARY_SOURCE_CEILING",
+          "h3_locator": "Ch3, Appendix"
+        },
+        {
+          "rc_id": "RC-012",
+          "status": "COMPLETE",
+          "h3_locator": "Ch3"
+        },
+        {
+          "rc_id": "RC-013",
+          "status": "COMPLETE",
+          "h3_locator": "Ch4, Appendix"
+        },
+        {
+          "rc_id": "RC-014",
+          "status": "COMPLETE",
+          "h3_locator": "Ch4"
+        },
+        {
+          "rc_id": "RC-015",
+          "status": "COMPLETE",
+          "h3_locator": "Ch4, Ch5"
+        },
+        {
+          "rc_id": "RC-016",
+          "status": "COMPLETE",
+          "h3_locator": "Ch4, Ch5, Appendix"
+        },
+        {
+          "rc_id": "RC-017",
+          "status": "COMPLETE",
+          "h3_locator": "Ch3, Ch4"
+        },
+        {
+          "rc_id": "RC-018",
+          "status": "PRIMARY_SOURCE_CEILING",
+          "h3_locator": "Ch0, Ch5, Ch6, Appendix"
+        },
+        {
+          "rc_id": "RC-019",
+          "status": "COMPLETE",
+          "h3_locator": "Ch5"
+        },
+        {
+          "rc_id": "RC-020",
+          "status": "COMPLETE",
+          "h3_locator": "Ch6"
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Appendix B",
+      "TABLE_LOCATOR": "HTML table #VIS-012",
+      "CAPTION_LOCATOR": "n/a",
+      "RENDERED_ASSET_LOCATOR": "HTML #VIS-012 / PDF Appendix",
+      "PARITY": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-013",
+      "FIGURE_TITLE": "Contract / Capacity Audit",
+      "AUTHORITATIVE_SOURCE_BLOCK": "capacity + contracts",
+      "SOURCE_VALUES": {
+        "capacity": {
+          "contracted_critical_it_mw": 839,
+          "revenue_generating_critical_it_mw_july_2026": 102,
+          "revenue_generating_share_of_contracted": 0.1216,
+          "additional_under_construction_mw": 336,
+          "lake_mariner_contracts_mw": {
+            "Core42": 60,
+            "Fluidstack": 378
+          },
+          "justified_anthropic_mw": 401,
+          "pipeline_mw": {
+            "lake_mariner_expansion": 162,
+            "lake_hawkeye": 320,
+            "chesapeake": 800,
+            "muskie": 800,
+            "total": 2902
+          },
+          "legacy_bitcoin_mining_mw_lake_mariner_june_2026": 145
+        },
+        "contracts": {
+          "Core42": {
+            "critical_it_mw": 60,
+            "initial_term_years": 10,
+            "renewal_options": "2 x 5 years",
+            "prepaid_rent_m": 90,
+            "company_guide_capex_total_m": 430,
+            "company_guide_capex_per_critical_mw_m": 7.2,
+            "company_guide_annual_recurring_rent_per_mw_m": 1.6,
+            "company_guide_ebitda_margin": 0.75,
+            "analytical_initial_annual_rent_m": 96,
+            "status": "all leases commenced by Q1 2026"
+          },
+          "Fluidstack": {
+            "critical_it_mw": 378,
+            "initial_term_years": 10,
+            "historical_contracted_payments_b": 6.7,
+            "july_2026_amendment_incremental_revenue_b": 0.5,
+            "analytical_reconstructed_initial_term_contract_b": 7.2,
+            "analytical_flattened_average_annual_contract_b": 0.72,
+            "company_guide_site_noi_margin_initial_deal": 0.85,
+            "company_guide_project_cost_per_critical_mw_m": [
+              8,
+              10
+            ],
+            "google_backstop": "Commencement-gated recognition agreement; default/insolvency after notice gives Google termination-fee or rent-pay-and-assume options.",
+            "status": "partially commenced; CB4/CB5 ramp expected 2H26-early27"
+          },
+          "Anthropic": {
+            "critical_it_mw": 401,
+            "initial_term_years": 20,
+            "renewal_options": "2 x 5 years",
+            "contracted_revenue_b": 19,
+            "analytical_flattened_average_annual_contract_b": 0.95,
+            "analytical_average_revenue_per_mw_year_m": 2.369,
+            "analytical_average_kW_month_usd": 197.4,
+            "delivery": "phased 2H27 to early 2028",
+            "credit_support": "investment-grade support expected; exact guarantor/economics PRIMARY_SOURCE_CEILING",
+            "exact_capex": "PRIMARY_SOURCE_CEILING"
+          },
+          "contracted_platform_analytical_flattened_average_revenue_b": 1.766
+        }
+      },
+      "SOURCE_VERSION_OR_HASH": "1fac919e5ee37282",
+      "DISPLAY_VALUES": {
+        "core42_mw": 60,
+        "fluidstack_mw": 378,
+        "anthropic_mw": 401,
+        "muskie_target_mw": 800,
+        "hawkeye_mw": 320,
+        "chesapeake_mw": 800,
+        "lmd_expansion_mw": 162
+      },
+      "NARRATIVE_LOCATOR": "Ch3 / Appendix C",
+      "TABLE_LOCATOR": "HTML table #VIS-013",
+      "CAPTION_LOCATOR": "n/a",
+      "RENDERED_ASSET_LOCATOR": "HTML #VIS-013 / PDF Appendix",
+      "PARITY": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-014",
+      "FIGURE_TITLE": "8Q Operating Ledger — Appendix",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.quarterly_8q",
+      "SOURCE_VALUES": [
+        {
+          "quarter": "2024Q3",
+          "revenue_m": 27.059,
+          "hpc_lease_revenue_m": 0,
+          "mining_revenue_m": 27.059,
+          "hpc_share": 0.0
+        },
+        {
+          "quarter": "2024Q4",
+          "revenue_m": 34.985,
+          "hpc_lease_revenue_m": 0,
+          "mining_revenue_m": 34.985,
+          "hpc_share": 0.0
+        },
+        {
+          "quarter": "2025Q1",
+          "revenue_m": 34.405,
+          "hpc_lease_revenue_m": 0,
+          "mining_revenue_m": 34.405,
+          "hpc_share": 0.0
+        },
+        {
+          "quarter": "2025Q2",
+          "revenue_m": 47.636,
+          "hpc_lease_revenue_m": 0,
+          "mining_revenue_m": 47.636,
+          "hpc_share": 0.0
+        },
+        {
+          "quarter": "2025Q3",
+          "revenue_m": 50.578,
+          "hpc_lease_revenue_m": 7.203,
+          "mining_revenue_m": 43.375,
+          "hpc_share": 0.1424
+        },
+        {
+          "quarter": "2025Q4",
+          "revenue_m": 35.836,
+          "hpc_lease_revenue_m": 9.696,
+          "mining_revenue_m": 26.14,
+          "hpc_share": 0.2706
+        },
+        {
+          "quarter": "2026Q1",
+          "revenue_m": 34.012,
+          "hpc_lease_revenue_m": 21.022,
+          "mining_revenue_m": 12.99,
+          "hpc_share": 0.6181
+        },
+        {
+          "quarter": "2026Q2",
+          "revenue_m": 44.767,
+          "hpc_lease_revenue_m": 31.932,
+          "mining_revenue_m": 12.835,
+          "hpc_share": 0.7133
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "fc1e9df01c60b18e",
+      "DISPLAY_VALUES": [
+        {
+          "quarter": "2024Q3",
+          "revenue_m": 27.059,
+          "hpc_lease_revenue_m": 0,
+          "mining_revenue_m": 27.059,
+          "hpc_share": 0.0
+        },
+        {
+          "quarter": "2024Q4",
+          "revenue_m": 34.985,
+          "hpc_lease_revenue_m": 0,
+          "mining_revenue_m": 34.985,
+          "hpc_share": 0.0
+        },
+        {
+          "quarter": "2025Q1",
+          "revenue_m": 34.405,
+          "hpc_lease_revenue_m": 0,
+          "mining_revenue_m": 34.405,
+          "hpc_share": 0.0
+        },
+        {
+          "quarter": "2025Q2",
+          "revenue_m": 47.636,
+          "hpc_lease_revenue_m": 0,
+          "mining_revenue_m": 47.636,
+          "hpc_share": 0.0
+        },
+        {
+          "quarter": "2025Q3",
+          "revenue_m": 50.578,
+          "hpc_lease_revenue_m": 7.203,
+          "mining_revenue_m": 43.375,
+          "hpc_share": 0.1424
+        },
+        {
+          "quarter": "2025Q4",
+          "revenue_m": 35.836,
+          "hpc_lease_revenue_m": 9.696,
+          "mining_revenue_m": 26.14,
+          "hpc_share": 0.2706
+        },
+        {
+          "quarter": "2026Q1",
+          "revenue_m": 34.012,
+          "hpc_lease_revenue_m": 21.022,
+          "mining_revenue_m": 12.99,
+          "hpc_share": 0.6181
+        },
+        {
+          "quarter": "2026Q2",
+          "revenue_m": 44.767,
+          "hpc_lease_revenue_m": 31.932,
+          "mining_revenue_m": 12.835,
+          "hpc_share": 0.7133
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Appendix D",
+      "TABLE_LOCATOR": "HTML table #VIS-014",
+      "CAPTION_LOCATOR": "n/a",
+      "RENDERED_ASSET_LOCATOR": "HTML #VIS-014 / PDF Appendix",
+      "PARITY": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-015",
+      "FIGURE_TITLE": "Debt / Convert / Dilution Ledger",
+      "AUTHORITATIVE_SOURCE_BLOCK": "balance_sheet_and_financing + dilution",
+      "SOURCE_VALUES": {
+        "balance_sheet_and_financing": {
+          "unrestricted_cash_b": 2.619191,
+          "restricted_cash_current_b": 0.142938,
+          "restricted_cash_long_term_b": 0.266479,
+          "cash_plus_restricted_b": 3.028608,
+          "gross_debt_principal_b": 5.725,
+          "analytical_net_debt_b": 3.106,
+          "debt": [
+            {
+              "security": "WULF Compute Senior Secured Notes 2030",
+              "principal_b": 3.2,
+              "coupon": 0.0775
+            },
+            {
+              "security": "Convertible Notes 2030",
+              "principal_b": 0.5,
+              "coupon": 0.0275,
+              "conversion_price": 8.48,
+              "capped_call_cap": 12.8,
+              "initial_underlying_shares_m": 58.96225
+            },
+            {
+              "security": "Convertible Notes 2031",
+              "principal_b": 1.0,
+              "coupon": 0.01,
+              "conversion_price": 12.43,
+              "capped_call_cap": 18.76,
+              "initial_underlying_shares_m": 80.4602
+            },
+            {
+              "security": "Convertible Notes 2032",
+              "principal_b": 1.025,
+              "coupon": 0.0,
+              "conversion_price": 19.9375,
+              "capped_call_cap": null,
+              "initial_underlying_shares_m": 51.4106175
+            }
+          ]
+        },
+        "dilution": {
+          "basic_shares_m": 498.932431,
+          "common_warrants_m": 77.70445,
+          "google_warrants_m": 73.58,
+          "google_warrant_strike": 0.01,
+          "rsus_m": 36.219695,
+          "equity_linked_floor_shares_m": 612.857,
+          "current_price_economic_diluted_shares_m": 625.574,
+          "current_price_economic_diluted_equity_value_b": 10.209,
+          "method": "Debt principal remains debt; add warrants/RSUs and only convertible excess-share leakage above capped-call protection / conversion threshold. No double count."
+        }
+      },
+      "SOURCE_VERSION_OR_HASH": "1b8c80f8b94f758b",
+      "DISPLAY_VALUES": {
+        "gross_debt_b": 5.725,
+        "unrestricted_cash_b": 2.619191,
+        "google_warrants_m": 73.58,
+        "total_warrants_m": 77.70445,
+        "rsus_m": 36.219695
+      },
+      "NARRATIVE_LOCATOR": "Ch4 / Appendix E",
+      "TABLE_LOCATOR": "HTML table #VIS-015",
+      "CAPTION_LOCATOR": "n/a",
+      "RENDERED_ASSET_LOCATOR": "HTML #VIS-015 / PDF Appendix",
+      "PARITY": "PASS"
+    }
+  ],
+  "audits": {
+    "RC_UNRESOLVED": 0,
+    "H1_H2_RESEARCH_CONTRACT_COMPLETENESS": "PASS",
+    "H2_H3_COVERAGE_LINEAGE": "PASS",
+    "RC_H3_COVERAGE_RATE": "100%",
+    "MATERIAL_VALUATION_INPUT_LINEAGE": "PASS",
+    "FORWARD_DRIVER_TO_SCENARIO_PARITY": "PASS",
+    "REVERSE_EXPECTATIONS_OPERATING_KPI": "PASS",
+    "OWNERSHIP_DENOMINATOR_LINEAGE": "PASS",
+    "STANCE_CONSISTENCY_AUDIT": "PASS",
+    "LATEST_FILING_CHECK": "PASS",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "EXPLANATORY_SPACE_ALLOCATION": "PASS",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "REPORT_DATA_PACK": "EMITTED",
+    "PUBLISHED_TOP_LEVEL_SCHEMA_MATCH": "PASS",
+    "CONTENT_MEANING_LOCK_PRESERVED": "PASS",
+    "EXPLANATORY_DEPTH_PRESERVED": "PASS",
+    "CORE_LANDSCAPE_PAGES": 0,
+    "PRINTED_TOC_PAGES": 2,
+    "TOC_CLICKABLE": "PASS",
+    "PDF_BOOKMARKS": "PASS",
+    "HTML_SIDEBAR": "PASS",
+    "SEARCHABLE_TEXT": "PASS",
+    "KOREAN_READABILITY": "PASS",
+    "SMART_CHAPTER_TRANSITIONS": "PASS",
+    "ARGUMENT_BLOCK_PAGINATION": "PASS",
+    "ACCIDENTAL_SPARSE_PAGES": 0,
+    "DENSITY_CONTROL": "PASS",
+    "VISUAL_SUBSTITUTION": "PASS",
+    "VISUAL_GRAMMAR_VARIETY": "PASS",
+    "CHART_READABILITY": "PASS",
+    "TABLE_QUALITY": "PASS",
+    "CONTACT_SHEET_COMPOSITION_QA": "PASS",
+    "SEMANTIC_GOLDEN_QA": "PASS",
+    "VISUAL_GOLDEN_QA": "PASS",
+    "GOLDEN_PARITY": "PASS",
+    "VISUAL_DATA_LINEAGE_GATE": "PASS",
+    "RENDERED_VISUAL_PARITY_QA": "PASS",
+    "PUBLISHING_ACCEPTANCE": "PASS"
+  },
+  "publishing": {
+    "html": "WULF_DEEP_DIVE.html",
+    "pdf": "WULF_DEEP_DIVE.pdf",
+    "data_pack": "WULF_DATA_PACK_260826.json",
+    "pdf_pages": 31,
+    "pdf_outline_items": 18,
+    "printed_toc_pages": 2,
+    "contact_sheet_internal": "WULF_CONTACT_SHEET.png",
+    "qa_timestamp_asia_seoul": "2026-08-26",
+    "PUBLISHING_ACCEPTANCE": "PASS"
+  }
+}
