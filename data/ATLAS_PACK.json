@@ -1,9 +1,9 @@
 {
  "meta": {
-  "version": "ATLAS_PACK_2026-08_UPDATE5_v1.4",
-  "as_of": "2026-08 (update 2026-08-26)",
+  "version": "ATLAS_PACK_2026-08_UPDATE6_v2.0",
+  "as_of": "2026-08 (UPDATE-6 딥다이브통합 완료 배치6/6, 2026-08-30)",
   "build_progress": "BUILD 1~7 완료 후 네 번째 월간 갱신(UPDATE-4, 딥다이브 통합형 B타입). 바텀업 딥다이브 21종 통합(§7A): 14종 승격(AMKR·CEG·EQIX·ET·FSLR·GEV·IRM·LNG·LRCX·RTX·SCCO·VLO·VRT·WMB) + 7종 신설(ALM·BE·FORM·NBIS·OII·TDW·VG). 톱다운: 티어 변경 0 — 21종 스탠스가 압도적 회피/관망/WATCH(밸류 만개)로 상향 트리거 미형성, 수요 견조로 하향 트리거도 없음. MAT-02(SCCO 구리·ALM 텅스텐)·ITC-02(AMKR 후공정)·IND-02(RTX)·IND-03(GEV·VRT·BE)·RLE-02(EQIX·IRM·NBIS) HEAT 재확인·선행지표 강화; UTL-02(CEG=발전측 4번째 corroboration, VST/CCJ/LEU 후)로 HEAT 근거 추가 보강하되 B타입이라 WARM 유지(승격은 전면스캔 이관); ITC-03(FORM·LRCX)·ENE-01(OII·TDW)·ENE-02(ET·WMB)·ENE-03(VLO)·ENE-04(LNG·VG)·UTL-03(FSLR) 종목 확인·산업 티어 유지. AI·전력·DC 클러스터 엣지 완비로 신규 산업엣지 불필요; §3A 아웃바운드 2홉 워크·51종 전면스캔은 다음 정식 월간으로 이관(부채 유지).",
-  "prev_version": "ATLAS_PACK_2026-08_UPDATE4_v1.3",
+  "prev_version": "ATLAS_PACK_2026-08_UPDATE6-B5_v1.9",
   "taxonomy_locked": true,
   "counts": {
    "sectors": 11,
@@ -11,8 +11,9 @@
    "themes": 11,
    "built": 56,
    "edges": 132,
-   "company_nodes": 301,
-   "deep_dived": 54
+   "company_nodes": 326,
+   "deep_dived": 86,
+   "shallow": 240
   },
   "merge_log": [
    "에너지: 유전서비스(OFS) → 상류(E&P)에 통합",
@@ -59,7 +60,7 @@
    "UPDATE-5: ENE-05·MAT-03 cold_reversal_signal 필드 보강(BUILD1 유산). §3A 전파 부채 해소. meta 장부 UPDATE-5 정정.",
    "UPDATE-5: 56종 톱다운 전면스캔 실행(3연속 이월 해소). 티어 변경 0 — 정산·부채회수·서사갱신 업데이트."
   ],
-  "notes": "산업 그룹 56개로 확정(초안 70 → 병합). 확정 후 임의 변경 금지, 추가만 사유 기록과 함께 허용(소스 01 §1). 반도체 4분할·지루한 산업 카드는 원칙대로 유지.",
+  "notes": "산업 그룹 56개로 확정(초안 70 → 병합). 확정 후 임의 변경 금지, 추가만 사유 기록과 함께 허용(소스 01 §1). 반도체 4분할·지루한 산업 카드는 원칙대로 유지. | UPDATE-6 MODE B(딥다이브 통합) 배치 1/6: AI-DC 전력·컴퓨트층 — APLD·CORZ·WULF 신설(RLE-02, DEEP_DIVED), TLN 승격(UTL-02), WMB 리프레시(무변경). 티어 변경 0. 카드 additive 역반영만. | UPDATE-6 B2: AI-DC 네트워킹·광학 — ANET·COHR 승격, AAOI·CRDO·GLW·POET 신설(전부 ITC-06 DEEP_DIVED). GLW=광통신 무게중심 이동으로 ITC-06 primary(유리레그 이월). 티어 변경 0·additive 역반영만. | UPDATE-6 B3: 전력기기+중후장대 — HUBB 승격, POWL·CLF·ARLP 신설. CLF 삼중귀속(MAT-01 primary+DIS-01+IND-03). FPS(Forgent) 팩 불일치로 통합 보류. 티어 변경 0·additive만. | UPDATE-6 B4: 사이버·SW — PANW·FTNT·ZS·NTSK·FFIV·FICO 신설(전부 primary ITC-07). NTSK(Netskope) 추가 반영. FICO=ITC-07+ITC-08 conn·FFIV=ITC-07+ITC-06 conn. FPS 프로젝트 배제(사용자 지시). 티어 변경 0·additive만. | UPDATE-6 B5: 방산·우주·전력반도체 — HEI 승격(IND-02), SATL(IND-02)·VELO(IND-04+IND-02)·WOLF·NVTS(ITC-04) 신설, NVEC 리프레시 무변경. NVTS 추가. WOLF fresh-start 주의. 티어 변경 0·additive만. | UPDATE-6 B6(최종): 헬스+아웃라이어 — ALNY·SHOP 승격, FIVE·HSHP·PURR·NNN·ILMN 신설, TEM 리프레시 무변경. PURR=FIN-02 잠정귀속(택소노미 미대응). SHOP/NNN/ILMN 추가. B1-B6 딥다이브통합 사이클 완료. 티어 변경 0·additive만.",
   "os_version": "v1.3-role",
   "axes": [
    "수급 균형(온도)",
@@ -735,6 +736,13 @@
      "chain_position": "제철용 석탄",
      "note": "",
      "role": null
+    },
+    {
+     "ticker": "ARLP",
+     "name": "Alliance Resource Partners",
+     "chain_position": "발전용 석탄+O&G 로열티",
+     "note": "price-cost 스프레드 $16.19(green)·확증 바닥반전 미점등 · 딥다이브 완료(B3)",
+     "role": null
     }
    ],
    "tier": "COLD",
@@ -795,6 +803,11 @@
      "name": "OECD 과잉능력",
      "last_reading": "700백만톤+ (2027 전망)",
      "as_of": "2026-08"
+    },
+    {
+     "name": "북미 철강 사이클 인플렉션(CLF)",
+     "last_reading": "CLF 조정EBITDA -174M(1Q25)→+286M(2Q26)·FCF 2Q26 +$73M 첫 흑전. 턴어라운드 초기(확증 2신호 미달)",
+     "as_of": "2026-08"
     }
    ],
    "triggers_watchlist": [
@@ -821,7 +834,7 @@
      "ticker": "CLF",
      "name": "Cleveland-Cliffs",
      "chain_position": "고로/자동차강판",
-     "note": "",
+     "note": "북미 flat-rolled·EBITDA 턴어라운드(2Q26 +$286M)·primary 귀속 · 딥다이브 완료(B3)",
      "role": null
     },
     {
@@ -1570,6 +1583,11 @@
      "name": "국방 우주 수주(YSS)",
      "last_reading": "SDA Transport/Tracking·Golden Dome 인접·백로그 $592M",
      "as_of": "2026-08-24"
+    },
+    {
+     "name": "방산·우주 애프터마켓/EO 수주(HEI·SATL)",
+     "last_reading": "HEI FSG 유기 +19%·영업이익률 26.2%; SATL 방산 persistent EO $18M+·주권 NewSat $12M",
+     "as_of": "2026-08"
     }
    ],
    "triggers_watchlist": [
@@ -1619,7 +1637,7 @@
      "ticker": "HEI",
      "name": "HEICO",
      "chain_position": "애프터마켓 부품",
-     "note": "고마진 정비부품(주목)",
+     "note": "애프터마켓 부품·PMA·M&A 롤업·FSG +19% · 딥다이브 완료(B5)",
      "role": "HIGH_BETA",
      "role_reason": "애프터마켓 고마진 부품 — 병목 인접 고베타(주목)"
     },
@@ -1643,6 +1661,13 @@
      "name": "York Space Systems",
      "chain_position": "국방 우주 위성 제조",
      "note": "딥다이브 완료(조건부 관심)",
+     "role": null
+    },
+    {
+     "ticker": "SATL",
+     "name": "Satellogic",
+     "chain_position": "지구관측(EO) 위성·지오공간",
+     "note": "방산 persistent EO 계약 · 딥다이브 완료(B5)",
      "role": null
     }
    ],
@@ -1708,6 +1733,11 @@
      "name": "미 DC 전력수요(EPRI)",
      "last_reading": "DC 전력비중 4–5%→2030 9–17% · 피크부하 2030 45–94GW · EA 수주 YoY +41%",
      "as_of": "2026-08-24"
+    },
+    {
+     "name": "전기설비 DC·그리드 수주 강도(HUBB·POWL)",
+     "last_reading": "HUBB Electrical +18.3%·Utility +5.5%; POWL book-to-bill 3.0x·백로그 $2.4B·DC 수주 9M $800M(단일 ≥$400M)",
+     "as_of": "2026-08"
     }
    ],
    "triggers_watchlist": [
@@ -1751,7 +1781,7 @@
      "ticker": "HUBB",
      "name": "Hubbell",
      "chain_position": "전력기기",
-     "note": "",
+     "note": "변압기·스위치기어 부족 순노출·Electrical +18.3% · 딥다이브 완료(B3)",
      "role": null
     },
     {
@@ -1769,6 +1799,20 @@
      "note": "",
      "role": "REGIME_LEADER",
      "role_reason": "변압기·그리드(Grid Technologies) 해외 순노출 — HVDC·변압기 백로그 사상 최고. 미국 ADR SMNEY(모회사 Siemens AG=SIEGY와 구분)"
+    },
+    {
+     "ticker": "POWL",
+     "name": "Powell Industries",
+     "chain_position": "맞춤형 전력배전·제어(ETO)",
+     "note": "DC 수주 book-to-bill 3.0x · 딥다이브 완료(B3)",
+     "role": null
+    },
+    {
+     "ticker": "CLF",
+     "name": "Cleveland-Cliffs",
+     "chain_position": "전기강판(GOES)→변압기 옵셔널리티",
+     "note": "connected 귀속(primary=MAT-01) · 딥다이브 완료(B3)",
+     "role": null
     }
    ],
    "tier": "HEAT",
@@ -1823,6 +1867,11 @@
      "name": "기계 신규주문(대형업종)",
      "last_reading": "증가(6대 업종 중 상위)",
      "as_of": "2026-07"
+    },
+    {
+     "name": "금속 AM 방산·우주 수주(VELO)",
+     "last_reading": "VELO Q2 bookings $29M·backlog $31M(production 믹스 전환 관건)",
+     "as_of": "2026-08"
     }
    ],
    "triggers_watchlist": [
@@ -1874,6 +1923,13 @@
      "name": "ABB(스위스)",
      "chain_position": "로봇·전동화",
      "note": "",
+     "role": null
+    },
+    {
+     "ticker": "VELO",
+     "name": "Velo3D",
+     "chain_position": "금속 적층제조(metal AM)",
+     "note": "connected IND-02(방산/우주) · 딥다이브 완료(B5)",
      "role": null
     }
    ],
@@ -2152,6 +2208,11 @@
      "name": "컨테이너 선복 증가",
      "last_reading": "2023~27 ~+36% (구조 과잉)",
      "as_of": "2026-01"
+    },
+    {
+     "name": "케이프 운임 사이클(HSHP)",
+     "last_reading": "BCI 5TC $36.3k/day(Q2 green>32)·gross TCE $51.2k/day(Jul)·가동률 99.7%. 현재 운임 강세이나 IND-01 신조 잔고發 향후 선복 공급과잉이 2홉 약세 감시",
+     "as_of": "2026-08"
     }
    ],
    "triggers_watchlist": [
@@ -2201,6 +2262,13 @@
      "name": "HMM",
      "chain_position": "컨테이너",
      "note": "",
+     "role": null
+    },
+    {
+     "ticker": "HSHP",
+     "name": "Himalaya Shipping",
+     "chain_position": "Newcastlemax 벌크선(dual-fuel)",
+     "note": "BCI $36.3k/day·가동률 99.7% · 딥다이브 완료(B6)",
      "role": null
     }
    ],
@@ -2598,6 +2666,11 @@
      "name": "IPP 원전·데이터센터 PPA(VST)",
      "last_reading": "VST 2026 EBITDA $6.8–7.6B·PJM 용량가 2028/29 $325/MW-day — 원전 희소성 수요 재확인",
      "as_of": "2026-08-24"
+    },
+    {
+     "name": "IPP 원전 DC PPA·용량가격 (TLN 딥다이브)",
+     "last_reading": "TLN AWS PPA 최대 1,920MW(2042까지)·PJM 2028-29 $325/MW-day($1.21B)·~4GW DC 파이프라인",
+     "as_of": "2026-08"
     }
    ],
    "triggers_watchlist": [
@@ -2630,7 +2703,7 @@
      "ticker": "TLN",
      "name": "Talen Energy",
      "chain_position": "원전 운영",
-     "note": "Amazon Susquehanna",
+     "note": "Amazon Susquehanna·AWS 1,920MW PPA·PJM $325/MW-day·~4GW 파이프라인 · 딥다이브 완료(UPDATE-6 B1)",
      "role": "HIGH_BETA",
      "role_reason": "원전 운영(Amazon PPA) — 국면 탄력"
     },
@@ -3285,6 +3358,11 @@
      "name": "WFE 연동(소재는 후행 수혜)",
      "last_reading": "WFE $135B로 소재 강도 동반",
      "as_of": "2026-02"
+    },
+    {
+     "name": "SiC/GaN 파워반도체 코호트(WOLF·NVTS)",
+     "last_reading": "AI DC 전력·auto/HV 수요 레그이나 현재 마진압박: WOLF GM -25%(fresh-start)·매출 $149.6M; NVTS GM 39.5%·H1 OCF -$48.3M. 수요-공급 반전 아닌 초기·조정 국면",
+     "as_of": "2026-08"
     }
    ],
    "triggers_watchlist": [
@@ -3330,6 +3408,20 @@
      "note": "첨단 패키징 기판",
      "role": "HIGH_BETA",
      "role_reason": "ABF 첨단 패키징 기판 순노출(해외)"
+    },
+    {
+     "ticker": "WOLF",
+     "name": "Wolfspeed",
+     "chain_position": "SiC 파워·소재 수직통합",
+     "note": "딥다이브 완료(B5)",
+     "role": null
+    },
+    {
+     "ticker": "NVTS",
+     "name": "Navitas Semiconductor",
+     "chain_position": "GaN·SiC 파워 반도체",
+     "note": "딥다이브 완료(B5)",
+     "role": null
     }
    ],
    "tier": "WARM",
@@ -3482,6 +3574,16 @@
      "name": "MLCC·기판 리드타임",
      "last_reading": "AI 서버향 국소 타이트",
      "as_of": "2026-06"
+    },
+    {
+     "name": "DC 이더넷 스위치 시장(IDC)",
+     "last_reading": "Q1'26 DC $10.0B(+61% YoY)·800G 35.8%·이더넷 AI백엔드 >2/3(Dell'Oro). Arista DC 점유 20.7%·NVIDIA 21.5%",
+     "as_of": "2026-Q1"
+    },
+    {
+     "name": "800G→1.6T 광 마이그레이션 램프",
+     "last_reading": "COHR D&C+40%·GLW Optical+32%·AAOI 1.6T 첫 볼륨 >$200M·CRDO FY27 옵티컬 목표 $600M·POET 1.6T/CPO pre-commercial",
+     "as_of": "2026-08"
     }
    ],
    "triggers_watchlist": [
@@ -3510,7 +3612,7 @@
      "ticker": "ANET",
      "name": "Arista",
      "chain_position": "데이터센터 스위칭",
-     "note": "AI 네트워킹",
+     "note": "AI 네트워킹·DC 이더넷 점유 20.7% · 딥다이브 완료(B2)",
      "role": "REGIME_LEADER",
      "role_reason": "AI 데이터센터 네트워킹 스위칭 순노출"
     },
@@ -3518,7 +3620,7 @@
      "ticker": "COHR",
      "name": "Coherent",
      "chain_position": "광트랜시버(AI 네트워킹)",
-     "note": "800G/1.6T 순노출·컨센 상대적 낮음(주목)",
+     "note": "800G/1.6T 광트랜시버·D&C+40% · 딥다이브 완료(B2)",
      "role": "REGIME_LEADER",
      "role_reason": "800G/1.6T 광트랜시버 순노출·컨센 낮음(주목)"
     },
@@ -3556,6 +3658,41 @@
      "name": "NVE Corporation",
      "chain_position": "스핀트로닉스 부품",
      "note": "딥다이브 완료(저성장 니치)",
+     "role": null
+    },
+    {
+     "ticker": "AAOI",
+     "name": "Applied Optoelectronics",
+     "chain_position": "광트랜시버(800G/1.6T·레이저 수직통합)",
+     "note": "딥다이브 완료(B2)",
+     "role": null
+    },
+    {
+     "ticker": "CRDO",
+     "name": "Credo Technology",
+     "chain_position": "AI 커넥티비티(AEC·리타이머·광 DSP)",
+     "note": "딥다이브 완료(B2)·팹리스 성격",
+     "role": null
+    },
+    {
+     "ticker": "GLW",
+     "name": "Corning",
+     "chain_position": "광통신 광섬유·연결(매출 무게중심 이동)",
+     "note": "딥다이브 완료(B2)·유리/소재 레그 단일귀속 이월",
+     "role": null
+    },
+    {
+     "ticker": "POET",
+     "name": "POET Technologies",
+     "chain_position": "광집적 엔진(1.6T/CPO)",
+     "note": "딥다이브 완료(B2)·pre-revenue·thin",
+     "role": null
+    },
+    {
+     "ticker": "FFIV",
+     "name": "F5",
+     "chain_position": "ADC systems 하드웨어",
+     "note": "connected 귀속(primary=ITC-07) · 딥다이브 완료(B4)",
      "role": null
     }
    ],
@@ -3611,6 +3748,16 @@
      "name": "엔터프라이즈 AI 소프트웨어 지출",
      "last_reading": "가속(에이전트 도입 초기)",
      "as_of": "2026-06"
+    },
+    {
+     "name": "사이버보안 포켓 회복탄력(좌석탈피)",
+     "last_reading": "ZS metered/non-seat ACV >30%·PANW XSIAM ARR +100%/SASE +40%·FTNT 제품 +51.9%·NTSK ARR +29%. 좌석기반 침식과 분리된 플랫폼·소비형 과금",
+     "as_of": "2026-08"
+    },
+    {
+     "name": "보안 플랫폼 ARR·NRR",
+     "last_reading": "PANW 플랫폼 NRR ~120%·NGS ARR +28%; ZS 유기 ARR ~21%; NTSK NRR 113%",
+     "as_of": "2026-08"
     }
    ],
    "triggers_watchlist": [
@@ -3674,6 +3821,48 @@
      "name": "SailPoint",
      "chain_position": "아이덴티티 보안(IGA)",
      "note": "딥다이브 완료(테일 의존)",
+     "role": null
+    },
+    {
+     "ticker": "PANW",
+     "name": "Palo Alto Networks",
+     "chain_position": "플랫폼 사이버보안(XSIAM/SASE)",
+     "note": "딥다이브 완료(B4)",
+     "role": null
+    },
+    {
+     "ticker": "FTNT",
+     "name": "Fortinet",
+     "chain_position": "네트워크·OT 보안(ASIC)",
+     "note": "딥다이브 완료(B4)",
+     "role": null
+    },
+    {
+     "ticker": "ZS",
+     "name": "Zscaler",
+     "chain_position": "Zero Trust SSE(ZIA/ZPA)",
+     "note": "딥다이브 완료(B4)",
+     "role": null
+    },
+    {
+     "ticker": "NTSK",
+     "name": "Netskope",
+     "chain_position": "SASE/SSE 클라우드 보안(IPO)",
+     "note": "딥다이브 완료(B4)",
+     "role": null
+    },
+    {
+     "ticker": "FFIV",
+     "name": "F5",
+     "chain_position": "앱 딜리버리+보안(connected ITC-06)",
+     "note": "딥다이브 완료(B4)",
+     "role": null
+    },
+    {
+     "ticker": "FICO",
+     "name": "Fair Isaac",
+     "chain_position": "신용점수+의사결정 SW(connected ITC-08)",
+     "note": "딥다이브 완료(B4)",
      "role": null
     }
    ],
@@ -3792,6 +3981,13 @@
      "name": "Robinhood Markets",
      "chain_position": "크립토·토큰화(핀테크 인프라)",
      "note": "딥다이브 완료(WATCH)·FIN-02와 이중귀속",
+     "role": null
+    },
+    {
+     "ticker": "FICO",
+     "name": "Fair Isaac",
+     "chain_position": "신용점수 인프라",
+     "note": "connected 귀속(primary=ITC-07) · 딥다이브 완료(B4)",
      "role": null
     }
    ],
@@ -4419,7 +4615,7 @@
      "ticker": "ALNY",
      "name": "Alnylam",
      "chain_position": "RNAi 플랫폼",
-     "note": "",
+     "note": "RNAi·TTR 프랜차이즈 FY26 $4.2~4.5B · 딥다이브 완료(B6)",
      "role": null
     },
     {
@@ -4634,6 +4830,11 @@
      "name": "비중국 CDMO 가동률·증설(삼성바이오 등)",
      "last_reading": "높은 가동률·capa 증설",
      "as_of": "2026-08"
+    },
+    {
+     "name": "NGS 시퀀싱 전환·소모품(ILMN)",
+     "last_reading": "ILMN NovaSeq X 볼륨전환 82%·소모품 74%·연결 Gb +30%·FY26 가이드 $4.62B",
+     "as_of": "2026-08"
     }
    ],
    "triggers_watchlist": [
@@ -4706,6 +4907,13 @@
      "name": "Tempus AI",
      "chain_position": "정밀종양 진단·유전체 데이터",
      "note": "딥다이브 완료(WATCH)",
+     "role": null
+    },
+    {
+     "ticker": "ILMN",
+     "name": "Illumina",
+     "chain_position": "차세대 시퀀싱(NGS)",
+     "note": "NovaSeq X 전환·소모품 74% · 딥다이브 완료(B6)",
      "role": null
     }
    ],
@@ -5099,6 +5307,13 @@
      "chain_position": "리테일 브로커리지·핀테크",
      "note": "딥다이브 완료(WATCH)",
      "role": null
+    },
+    {
+     "ticker": "PURR",
+     "name": "Hyperliquid Strategies",
+     "chain_position": "디지털자산 트레저리(HYPE)",
+     "note": "택소노미 미대응 아웃라이어·잠정 귀속(사용자 지시) · 딥다이브 완료(B6)",
+     "role": null
     }
    ],
    "tier": "WARM",
@@ -5362,6 +5577,13 @@
      "chain_position": "산업·물류",
      "note": "",
      "role": null
+    },
+    {
+     "ticker": "NNN",
+     "name": "NNN REIT",
+     "chain_position": "넷리스 리테일 REIT",
+     "note": "base fair $49.21·U/D 2.27x · 딥다이브 완료(B6)",
+     "role": null
     }
    ],
    "tier": "COLD",
@@ -5422,6 +5644,11 @@
      "name": "AI 호스팅 전환 수요(RIOT)",
      "last_reading": "Rockdale 700MW·AMD 25→50MW 10년·계약 critical IT 241MW",
      "as_of": "2026-08-24"
+    },
+    {
+     "name": "전환-광업체 AI-DC 계약 critical-IT MW (APLD·CORZ·WULF)",
+     "last_reading": "APLD 계약~1,410MW(라이브175)·CORZ 리스1,119MW(billable437)·WULF 계약839MW(라이브102) — 장기 take-or-pay, 전력이 물리적 상한",
+     "as_of": "2026-08"
     }
    ],
    "triggers_watchlist": [
@@ -5473,6 +5700,27 @@
      "name": "Riot Platforms",
      "chain_position": "AI/HPC 데이터센터 호스팅(비트코인 채굴 전환)",
      "note": "딥다이브 완료(관망·산업귀속 판단콜)",
+     "role": null
+    },
+    {
+     "ticker": "APLD",
+     "name": "Applied Digital",
+     "chain_position": "AI-DC 캠퍼스 소유(Layer1)·CoreWeave 등 IG 테넌트 리스(비트코인 채굴 전환)",
+     "note": "딥다이브 완료(UPDATE-6 B1)",
+     "role": null
+    },
+    {
+     "ticker": "CORZ",
+     "name": "Core Scientific",
+     "chain_position": "AI-DC 소유·운영(Layer1)·CoreWeave 590MW+AMD 리스(비트코인 채굴 전환)",
+     "note": "딥다이브 완료(UPDATE-6 B1)",
+     "role": null
+    },
+    {
+     "ticker": "WULF",
+     "name": "TeraWulf",
+     "chain_position": "Power-first AI/HPC 인프라 소유(Layer1)·Fluidstack/Core42/Anthropic(비트코인 채굴 전환)",
+     "note": "딥다이브 완료(UPDATE-6 B1)",
      "role": null
     }
    ],
@@ -6145,6 +6393,13 @@
      "chain_position": "EV/배터리",
      "note": "글로벌 볼륨 1위·가격전쟁 주도",
      "role": null
+    },
+    {
+     "ticker": "CLF",
+     "name": "Cleveland-Cliffs",
+     "chain_position": "자동차용 철강 공급",
+     "note": "connected 귀속(primary=MAT-01)·자동차 사이클 순노출 · 딥다이브 완료(B3)",
+     "role": null
     }
    ],
    "tier": "COLD",
@@ -6486,7 +6741,7 @@
      "ticker": "SHOP",
      "name": "Shopify",
      "chain_position": "커머스 인프라",
-     "note": "롱테일 셀러",
+     "note": "커머스 플랫폼·GMV +32%·Payments 68% · 딥다이브 완료(B6)",
      "role": "HIGH_BETA",
      "role_reason": "커머스 인프라 롱테일 성장 — 고베타"
     },
@@ -6517,6 +6772,13 @@
      "name": "Etsy",
      "chain_position": "수공예 마켓플레이스",
      "note": "",
+     "role": null
+    },
+    {
+     "ticker": "FIVE",
+     "name": "Five Below",
+     "chain_position": "익스트림 밸류 할인소매",
+     "note": "comps +22.7%·거래 +18.5% · 딥다이브 완료(B6)",
      "role": null
     }
    ],
@@ -8248,8 +8510,20 @@
    "industries": [
     "IND-02"
    ],
-   "verification": "SHALLOW",
-   "deep_dive_ref": null
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-25",
+    "stance_zone": "HEI 가격 회피/축소 검토; HEI.A 저가 조건부 (HEI 회피 >$350·매력 ≤$300; HEI.A 매력 ≤$240)",
+    "thesis_oneline": "항공우주·방산 애프터마켓 부품·전자. FSG 유기성장 +19%·FSG 영업이익률 26.2%·ETG 유기 +17%. M&A 롤업+PMA/애프터마켓 순노출. 방산·항공 사이클 순풍이나 밸류 프리미엄.",
+    "moat_verdict": "PMA 부품 승인·애프터마켓 락인·M&A 롤업 규율. 가격 프리미엄이 상방 제약.",
+    "mgmt_verdict": "M&A 통합·유기성장·마진 유지. 5년 IRR 허들 대비 현가 부담.",
+    "kpi_tripwires": [
+     "FSG 유기성장 ≥10%(가격 아닌) (현 19%)",
+     "FSG 영업이익률 ≥24% (현 26.2%)",
+     "ETG 유기 회복 (현 17%)",
+     "M&A 통합·레버리지 관리"
+    ]
+   }
   },
   {
    "ticker": "GE",
@@ -8331,8 +8605,21 @@
    "industries": [
     "IND-03"
    ],
-   "verification": "SHALLOW",
-   "deep_dive_ref": null
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-27",
+    "stance_zone": "회피/축소 검토 — 신규매수 비선호 (현재 $472.46, >$470 hurdle 미달; 적극관심 <$390)",
+    "thesis_oneline": "그리드·DC 전기설비. Electrical organic +18.3%·Utility +5.5%·총유기성장 +10.0%·조정영업이익률 23.9%. 변압기·스위치기어 부족의 순노출. NSI 인수 통합·디레버리징이 밸류 전환 관건.",
+    "moat_verdict": "유틸리티 T&D·그리드 인프라 설치기반·브랜드. 백로그 2028-29 연장(롤오버 없음).",
+    "mgmt_verdict": "NSI 통합·FCF 전환 ≥80%·순부채 <$4.5B FY27이 관건.",
+    "kpi_tripwires": [
+     "총유기성장 ≥6% (현 10%, red <2% 2분기)",
+     "Utility 유기 ≥5%+Grid Infra ≥8% (현 5.5%)",
+     "Electrical 유기 ≥8% (현 18.3%)",
+     "조정영업이익률 ≥23% (현 23.9%)",
+     "Electrical 조정마진 ≥20.5%(NSI 후) (현 21.2%)"
+    ]
+   }
   },
   {
    "ticker": "NVT",
@@ -8622,8 +8909,21 @@
    "industries": [
     "UTL-02"
    ],
-   "verification": "SHALLOW",
-   "deep_dive_ref": null
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-27",
+    "stance_zone": "조건부 관심 / 관망 우위 (2026-08-25 종가 기준; active_interest ≤$270·hold_watch $305~350)",
+    "thesis_oneline": "15.7GW 발전(원자력 2.2GW Susquehanna)의 IPP. AWS와 최대 1,920MW PPA(2042까지·2032 풀볼륨)·PJM 2028-29 10,180MW 낙찰@$325/MW-day($1.21B)·~4GW DC 파이프라인. AI 데이터센터 무탄소 기저전력 순노출 — UTL-02 원전 HEAT 후보의 대표 IPP.",
+    "moat_verdict": "재가동·수명연장 가능한 대형 원전 선단 + PJM 입지·계통 포지션. SMR 신설 10년+ 대비 '지금 있는 전력'의 희소 프리미엄.",
+    "mgmt_verdict": "AWS 램프·추가 DC 계약 전환·순부채 $9.17B 관리가 관건. 4GW 파이프라인의 firm 계약 전환 속도가 FCF/주 궤적을 좌우.",
+    "kpi_tripwires": [
+     "FY26 조정 FCF ≥$1.30B (red <$1.20B)",
+     "2028 FCF/주 ≥$40 무-heroic-4GW (red <$35)",
+     "AWS PPA 램프 정상/가속 (red 축소/재협상)",
+     "추가 DC 계약 named binding MW+COD+cost payer (red 장기 무전환)",
+     "PJM 수급 희소성 유지 (red 급속 공급과잉)"
+    ]
+   }
   },
   {
    "ticker": "CCJ",
@@ -9046,8 +9346,22 @@
    "industries": [
     "ITC-06"
    ],
-   "verification": "SHALLOW",
-   "deep_dive_ref": null
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-27",
+    "stance_zone": "관망 / 신규진입 회피 (2026-08-25 $190.94, watch_avoid_new_buy $170~200; active_interest ≤$140)",
+    "thesis_oneline": "데이터센터 이더넷 스위칭 리더. DC 이더넷 시장 Q1'26 $10.0B(+61% YoY)·800G 35.8%, Arista DC 점유 20.7%(NVIDIA 21.5%와 양강). 매출 +37.7% YoY·GAAP 총이익률 62.9%·영업이익률 45.4%. AI 백엔드 스위치의 이더넷 우위(>2/3)가 구조 순풍, 1.6T·scale-up 채택이 다음 레그.",
+    "moat_verdict": "EOS/CloudVision SW 스택 + 하이퍼스케일러 락인. 화이트박스·NVIDIA(스펙트럼) 대체 압력이 상방 제약.",
+    "mgmt_verdict": "$9.7B 커밋먼트·$2.54B 재고의 공급흡수 실행이 관건. 컨센 2027 매출 $16B대 상향.",
+    "kpi_tripwires": [
+     "매출성장 >25% (현 +37.7%, red <15%)",
+     "GAAP 총이익률 ≥62% (현 62.9%, red <59%)",
+     "GAAP 영업이익률 ≥43% (현 45.4%, red <39%)",
+     "DC 이더넷 점유 ~20.7% 유지/상승 (red 지속 <18%)",
+     "공급흡수: 재고 vs 매출 동반소진 (red obsolete reserve 급증)",
+     "1.6T named production deployment (red 지연·경쟁 대체)"
+    ]
+   }
   },
   {
    "ticker": "COHR",
@@ -9055,8 +9369,20 @@
    "industries": [
     "ITC-06"
    ],
-   "verification": "SHALLOW",
-   "deep_dive_ref": null
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-27",
+    "stance_zone": "조건부 관심 (2026-08-25 $288.14, base fair $260~320; ≤$240 적극관심)",
+    "thesis_oneline": "AI 네트워킹 광트랜시버·레이저. Datacom&Comms +40% YoY(FY26)·GAAP 총이익률 34→38.5% 상승궤적, 800G/1.6T 순노출. 단 FCF 2Q -$869M·재고 +79%·GM 40% 미만이 실행 리스크.",
+    "moat_verdict": "수직통합 레이저·InP·광부품 + 규모. 마진 정상화 전까지 밸류 프리미엄 부담.",
+    "mgmt_verdict": "GM ≥40%·FCF 정상화가 스탠스 상향 조건. 컨센 FY27 매출 $10.6B(+49%).",
+    "kpi_tripwires": [
+     "D&C YoY ≥35% (현 40%, red <20%)",
+     "GAAP 총이익률 ≥40% (현 38.5%=YELLOW, red <37%)",
+     "Trailing 2Q 단순 FCF positive (현 -$869M=RED)",
+     "재고증가 vs 매출 (red 재고 과속, 현 +79%)"
+    ]
+   }
   },
   {
    "ticker": "CLS",
@@ -9452,8 +9778,20 @@
    "industries": [
     "HLT-02"
    ],
-   "verification": "SHALLOW",
-   "deep_dive_ref": null
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-25",
+    "stance_zone": "CONDITIONAL_INTEREST (현재 $236, watch $215~250; buy zone ≤$197)",
+    "thesis_oneline": "RNAi 치료제 리더. TTR 프랜차이즈(vutrisiran 등) FY26 가이드 $4.2~4.5B·미국 TTR 수요성장 Q2>2xQ1. 1차치료 수요+non-TTR/nucresiran 파이프라인 de-risking이 밸류 레그. 상환·경쟁이 제약.",
+    "moat_verdict": "RNAi 플랫폼·TTR 선점·특허. 파이프라인 실행·경쟁 리스크.",
+    "mgmt_verdict": "TTR 가이드 달성·nucresiran de-risking·프랜차이즈 핸드오프.",
+    "kpi_tripwires": [
+     "FY26 TTR 매출 ≥$4.35B (현 가이드 $4.2~4.5B, red <$4.2B)",
+     "미국 TTR 순차 수요성장 (현 Q2>2xQ1)",
+     "non-TTR/nucresiran de-risking",
+     "상환·가격 유지"
+    ]
+   }
   },
   {
    "ticker": "MRNA",
@@ -10610,8 +10948,20 @@
    "industries": [
     "DIS-04"
    ],
-   "verification": "SHALLOW",
-   "deep_dive_ref": null
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-30",
+    "stance_zone": "신규매수 회피 / 관망 (현재 $152.9, 매력진입 $115~132; 고확신 ≤$110)",
+    "thesis_oneline": "커머스 플랫폼(SaaS+결제). GMV +32% YoY·Shopify Payments 침투 68%. 상거래 인프라·attach(결제/캐피털/물류) 순노출. Base 2030 $185.97 대비 현가 시간가치 부족(기대 IRR ~6%).",
+    "moat_verdict": "머천트 네트워크·결제 attach·생태계 락인. 밸류 프리미엄·경쟁.",
+    "mgmt_verdict": "GMV·Payments 침투·attach 확대·FCF 마진.",
+    "kpi_tripwires": [
+     "GMV YoY ≥25% (현 32%)",
+     "Payments 침투 ≥69% 상승 (현 68%)",
+     "attach rate·마진 확대",
+     "FCF 마진"
+    ]
+   }
   },
   {
    "ticker": "MELI",
@@ -11205,191 +11555,639 @@
    "verification": "SHALLOW",
    "deep_dive_ref": null,
    "note": "2026-07-16 Chart Industries(GTLS) 인수완료로 LNG 액화·크라이오 장비 순노출 승계. BKR의 3번째 사업부. 단 BKR 전체는 OFS·에너지테크 다각화 기업이라 LNG장비 비중은 희석."
+  },
+  {
+   "ticker": "APLD",
+   "name": "Applied Digital",
+   "industries": [
+    "RLE-02"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-26",
+    "stance_zone": "관망 / 보유 시 축소 검토 (모델참조 $28.85, watch $26.6~34.5; 신규매수 ≤$24.8 요구)",
+    "thesis_oneline": "비트코인 채굴 전환 AI-DC 개발·소유주(Layer 1). CoreWeave 등 IG 하이퍼스케일러와 5개 캠퍼스 계약 ~1,410MW(계약매출 합 $36B대), 라이브 175MW(2026-06)→2027 400MW+ 램프가 밸류 스윙. 전력확보 속도·자금조달 코스트(PF 노트 6.75~9.25%)·희석이 관건.",
+    "moat_verdict": "부지·전력·계통접속 선점 Layer 1 소유자 + IG 테넌트 장기 take-or-pay(예: CoreWeave PF1 400MW/$11B). 단 전력·건설 실행 리스크 상존.",
+    "mgmt_verdict": "RFS(Ready-for-Service) 일정준수·개발원가 $11~13M/MW·희석 관리가 관건. PF1 첫 100MW 정시, 이후 150MW 부분 지연.",
+    "kpi_tripwires": [
+     "HPC 빌링 MW 175(2026-06)→2027-05 ≥400 (red <300)",
+     "RFS 일정준수 ≥90% (red <75% 또는 2캠퍼스 반복지연)",
+     "개발원가 ≤$12M/MW (red >$13M 무보상)",
+     "신규 담보부채 코스트 <7.5% (red >9.0% 반복)",
+     "희석주식수 ≤330M FY27말 (red >350M)"
+    ]
+   }
+  },
+  {
+   "ticker": "CORZ",
+   "name": "Core Scientific",
+   "industries": [
+    "RLE-02"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-27",
+    "stance_zone": "관심 대기 / 가격 규율 (현재 $18.03, fair_watch $15.3~21; 12% 허들 진입 ~$14.4)",
+    "thesis_oneline": "비트코인 채굴 전환 AI-DC 소유·운영주(Layer 1). 2,100MW 그로스 전력·~1,300MW 리스가능, CoreWeave 590MW + AMD/네오클라우드로 post-AMD 1,119MW 리스. HDC 매출 분기 31→77→137M·GAAP 총이익률 58.5%. AMD 예약 추가 1,925MW로 잠재 2,500MW.",
+    "moat_verdict": "그리드 접속·전력 선점 Layer 1 + CoreWeave 장기 take-or-pay(해지불가, 회사자료)·AMD 15년 계약. 건설·자금 실행이 upside 관건.",
+    "mgmt_verdict": "billable MW 램프(2026Q2 395→7월 437)·유동성 $1.82B. tranche1 워런트 96.4M(strike $6.81, 2027-01 만기)·2029 전환사채 $460M 등 자본구조 희석 감시.",
+    "kpi_tripwires": [
+     "Billable MW 437(2026-07)→CoreWeave ~590MW early-2027 (red <500 well into 2027)",
+     "Leased MW 1,119 유지+추가 IG 수주 (red 계약손실/디폴트)",
+     "HDC GAAP 총이익률 ≥58% (red <52%)",
+     "유동성(현금+디지털자산) 건설수요 선행 확보 (red 자금갭)"
+    ]
+   }
+  },
+  {
+   "ticker": "WULF",
+   "name": "TeraWulf",
+   "industries": [
+    "RLE-02"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-26",
+    "stance_zone": "적극 관심 — 고위험·실행조건부 (현재 $16.32, current_zone $15~18; 선호진입 $12~15, trigger $14)",
+    "thesis_oneline": "Power-first AI/HPC 인프라 개발·소유주(비트코인 채굴 전환). Lake Mariner 중심 계약 critical-IT 839MW(Core42 60·Fluidstack 378·Anthropic 401), 라이브 102MW(2026-07)·HPC 매출비중 71.3%. 파이프라인 2,902MW(Hawkeye·Chesapeake·Muskie). Fluidstack엔 Google 백스톱.",
+    "moat_verdict": "전력 우선 확보 Layer 1 + 장기 리스(사이트 NOI 마진 85% 가이드)·Google 백스톱. 계약 MW→가동 전환의 건설·테넌트 타이밍이 핵심 리스크.",
+    "mgmt_verdict": "프로젝트원가 $8~10M/MW(APLD $11~13 대비 우위 주장, 비교경계 존재)·연 250~500MW 신규 리스 목표. 대규모 주식·워런트·전환사채·SBC·employee trust 누수 감점.",
+    "kpi_tripwires": [
+     "Revenue-generating critical IT MW 102(2026-07) 단계 램프 (red 2분기+ 지연/취소)",
+     "프로젝트원가 ≤$10M/MW (red >$11.5M 무보상)",
+     "HPC 매출비중 71.3%→>80% (red 램프 정체 하락)",
+     "신규 critical-IT 리스 ≥250MW/12개월 (red 무수주+건설지연)",
+     "파이프라인(Muskie/Hawkeye/Chesapeake) 계약 전환 (red power-only 잔존)"
+    ]
+   }
+  },
+  {
+   "ticker": "AAOI",
+   "name": "Applied Optoelectronics",
+   "industries": [
+    "ITC-06"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-27",
+    "stance_zone": "WATCH / HOLD — no chase (현재 $100~125 밴드; ≤$80 매력, KPI red 부재 시)",
+    "thesis_oneline": "데이터센터 광트랜시버(레이저 수직통합). 800G 매출 2Q26 $12.8M→3Q 가이드 ≥$60M 램프·1.6T 첫 볼륨오더 >$200M(Mar-2026)·캐파 20만/월→YE26 60만/월 목표. 400G→800G→1.6T 마이그레이션 순노출, CATV(DOCSIS 4.0) 부수 레그.",
+    "moat_verdict": "레이저 자체생산·미국/대만 캐파. qualification/yield·고객집중·DSP 공급이 leakage.",
+    "mgmt_verdict": "800G/1.6T 캐파 램프·$471M/월 매출 브리지 실행이 관건.",
+    "kpi_tripwires": [
+     "800G 매출 3Q26 ≥$60M (현 2Q $12.8M, red <$45M 또는 stall)",
+     "1.6T qualification 완료·Q4 유의미 매출 (red 2027 슬립/취소)",
+     "800G+1.6T 캐파 YE26 ≥600k/월 (현 200k, red <450k)",
+     "Non-GAAP 총이익률 회복"
+    ]
+   }
+  },
+  {
+   "ticker": "CRDO",
+   "name": "Credo Technology",
+   "industries": [
+    "ITC-06"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-27",
+    "stance_zone": "WATCH / REDUCE at current price (현재 $226.51, >$200 회피/축소; 매력진입 $140~175)",
+    "thesis_oneline": "AI 커넥티비티(AEC·리타이머·광 DSP). GAAP 총이익률 68.0%(FY26)·FY27 옵티컬 매출 목표 $600M(2번째 성장엔진). 400G→800G→1.6T 인터커넥트 순노출. 단 Top-4 고객집중 87%(RED)·PO 기반 계약이 취약점.",
+    "moat_verdict": "AEC/리타이머 설계자산·저전력 인터커넥트. 고객집중·design-win 의존이 리스크.",
+    "mgmt_verdict": "옵티컬 램프로 집중도 완화가 관건. GM 63→68% 개선.",
+    "kpi_tripwires": [
+     "FY27 옵티컬 매출 ≥$600M (red <$450M)",
+     "Top-4 고객집중 <80% (현 87%=RED)",
+     "GAAP 총이익률 ≥66% (현 68%)",
+     "재고/매출 <18% 안정 (현 18.8%)",
+     "SBC/매출 <15%"
+    ]
+   }
+  },
+  {
+   "ticker": "GLW",
+   "name": "Corning",
+   "industries": [
+    "ITC-06"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-27",
+    "stance_zone": "가격 부담 — 신규 진입 회피 (현재 $147.16, $135~165 가격부담; ≤$105 적극관심)",
+    "thesis_oneline": "매출 무게중심이 광통신으로 이동한 소재·연결 기업. Optical Communications 2Q26 $2.07B(+32% YoY·NI +77%·전체 47%)이 성장·이익 엔진, AI/DC 광섬유·연결 순노출. Glass Innovations·Automotive·Solar가 잔여 레그.",
+    "moat_verdict": "광섬유·특수유리 공정·규모(Stryków 증설). AI 연결 수요가 구조 순풍.",
+    "mgmt_verdict": "Core 영업이익률 20.9%·ROIC 14.9% 개선. Solar 흑자전환·2 RED tripwire 동시 시 재평가.",
+    "kpi_tripwires": [
+     "Optical 매출 YoY ≥25% (현 32%, red <15% 2분기)",
+     "Optical NI 마진 ≥20.5% (현 21.1%, red <18% 2분기)",
+     "Core 영업이익률 ≥21% (현 20.9%)",
+     "Core ROIC →16% by 2027 (현 14.9%)"
+    ]
+   }
+  },
+  {
+   "ticker": "POET",
+   "name": "POET Technologies",
+   "industries": [
+    "ITC-06"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-26",
+    "stance_zone": "회피 — 신규 비중확대 기준 (현재 U/D<1; ≤$5.02 조건부, thesis 미훼손 시)",
+    "thesis_oneline": "광집적(옵티컬 인터포저/엔진) 프리커머셜 옵션. 800G→1.6T·CPO 겨냥 200G/lane 엔진. Infinity 800G 첫 생산 PO $5M+(H2 2026 선적 예정)·Lumilens EOI $50M/$500M+ 프레임워크. Q2 총매출 $0.57M(NRE 중심)로 아직 subscale — 실증 전 단계.",
+    "moat_verdict": "광집적 IP·컴팩트 패시브 어셈블리. 모듈러/엔드커스터머 캡처·경쟁 DSP·SiPh 내재화가 leakage. thin-universe·pre-revenue.",
+    "mgmt_verdict": "$5M+ 오더 정시선적·repeat PO·Lumilens qualification이 스탠스 전환 조건.",
+    "kpi_tripwires": [
+     "H2 2026 $5M+ 오더 정시선적+repeat PO (red 2026 이후 슬립/취소)",
+     "product-only 매출·GM 가시화 (red 2027까지 subscale)",
+     "Lumilens qualification·현금 마일스톤"
+    ]
+   }
+  },
+  {
+   "ticker": "POWL",
+   "name": "Powell Industries",
+   "industries": [
+    "IND-03"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-26",
+    "stance_zone": "관망 (2026-08-25 $188.95, watch $165~195; 매력진입 $145~165)",
+    "thesis_oneline": "맞춤형 전력배전·제어 engineered-to-order 인티그레이터. 백로그 $2.4B·Q3 FY26 수주 $934M·book-to-bill 3.0x, DC 수주 9M $800M(단일 ≥$400M). Oil&Gas·유틸리티·DC 전방. 대형 단일수주 제외 구조적 run-rate·GPM 28~30% 유지가 관건.",
+    "moat_verdict": "engineered-to-order 통합·현장 실행·레퍼런스. 프로젝트 집중·사이클 노출.",
+    "mgmt_verdict": "book-to-bill(대형 제외) ≥1.2x·backlog·GPM 유지. 추가 DC firm order가 스탠스 상향 조건.",
+    "kpi_tripwires": [
+     "book-to-bill(대형 제외) 2분기평균 ≥1.2x (red 2분기<0.9x+backlog 감소)",
+     "backlog 유지/증가 (현 $2.4B)",
+     "GPM 28~30% 유지 (red <26%)",
+     "ex-mega 구조적 $2B run-rate 확인"
+    ]
+   }
+  },
+  {
+   "ticker": "CLF",
+   "name": "Cleveland-Cliffs",
+   "industries": [
+    "MAT-01",
+    "DIS-01",
+    "IND-03"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-27",
+    "stance_zone": "관망 (2026-08-26 기준, watch $9.5~13, base fair $11.8; 적극진입 $8.5~9.5)",
+    "thesis_oneline": "북미 flat-rolled 철강 최대. 조정EBITDA -174M(1Q25)→+286M(2Q26)·FCF 2Q26 +$73M 첫 흑전 = 사이클 턴어라운드 초기. 최대 전방 자동차($5.0B) 사이클 + GOES/전기강판→변압기 국가안보 옵셔널리티 이중논제. 순부채 축소·HRC 가격이 관건.",
+    "moat_verdict": "북미 통합 제철·자동차강 공급 포지션 + GOES 국내 소수 공급자. 사이클·가격 노출 큼.",
+    "mgmt_verdict": "Q3'26 EBITDA ≥$500M·2H FCF·순부채 <$7.0B가 falsifier. Stelco 통합·자동차 점유 유지.",
+    "kpi_tripwires": [
+     "분기 조정EBITDA →$550M(Q3'26 가이드) (현 $286M, red <$300M)",
+     "분기 FCF 흑자 지속 (현 +$73M)",
+     "순부채 <$7.0B 2027 진입 (red 유지)",
+     "자동차 매출/출하 북미 생산 상회 (red 점유 손실)",
+     "HRC/ASP ≥$1,000/t"
+    ]
+   }
+  },
+  {
+   "ticker": "ARLP",
+   "name": "Alliance Resource Partners",
+   "industries": [
+    "ENE-05"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-26",
+    "stance_zone": "관망 / 신규매수 회피 (현재 $26.47, watch_avoid $25.5~30; 관심후보 ≤$23)",
+    "thesis_oneline": "일리노이베이슨 석탄(발전용) + 오일&가스 로열티. price-cost 스프레드 $16.19/t(green ≥$15)·비용 $38.68/t 하락·2027 계약 29.4Mt. 데이터센터 전력수요가 발전용 석탄 수명연장 잠재 레그이나, 확증 바닥반전 신호는 미점등.",
+    "moat_verdict": "저비용 일리노이베이슨 매장·장기 계약·로열티 다각화. 구조적 석탄 수요 감소 역풍.",
+    "mgmt_verdict": "AllDale 로열티 통합·계약북 갱신·디레버리징. 스탠스는 관망.",
+    "kpi_tripwires": [
+     "price-cost 스프레드 ≥$15/t (현 $16.19)",
+     "총비용 ≤$39/t (현 $38.68)",
+     "2027 committed&priced 29.4Mt 유지/확대",
+     "DC 전력수요發 발전용 수요 실현(감시)"
+    ]
+   }
+  },
+  {
+   "ticker": "PANW",
+   "name": "Palo Alto Networks",
+   "industries": [
+    "ITC-07"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-27",
+    "stance_zone": "WAIT / AVOID NEW BUY (>$300 회피; 매력 $220~240)",
+    "thesis_oneline": "플랫폼화 사이버보안 리더. Ex-M&A NGS ARR +28%·XSIAM ARR +100%·SASE ARR +40%·플랫폼 NRR ~120%·GM 67.6%. 좌석기반 아닌 플랫폼·AI 보안(XSIAM) 순노출. 밸류·인수 마진 전환이 관건.",
+    "moat_verdict": "플랫폼 통합·NRR·크로스셀. 인수 마진/FCF 전환 실증 전 프리미엄 부담.",
+    "mgmt_verdict": "유기 NGS ARR·XSIAM/SASE 성장·FCF 마진 유지가 스탠스 조건.",
+    "kpi_tripwires": [
+     "Ex-M&A NGS ARR ≥25% (현 28%)",
+     "유기 매출성장 ≥15% (현 14.2% 경계)",
+     "플랫폼 NRR ≥120% (현 ~120%)",
+     "XSIAM ARR ≥50% (현 100%)",
+     "SASE ARR ≥30% (현 40%)"
+    ]
+   }
+  },
+  {
+   "ticker": "FTNT",
+   "name": "Fortinet",
+   "industries": [
+    "ITC-07"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-27",
+    "stance_zone": "신규매수 회피 / 밸류 기준 축소 검토 (avoid $150~160; 적극관심 ≤$115)",
+    "thesis_oneline": "네트워크 보안(방화벽)·OT·SASE. 제품매출 재가속 +51.9% YoY(2Q26, 리프레시 사이클)·서비스 +13.7%. 자체 ASIC(SPU) 하드+서비스. 리프레시 이후 서비스 재가속·밸류가 관건.",
+    "moat_verdict": "자체 ASIC·설치기반·OT 보안. 리프레시 클리프 리스크.",
+    "mgmt_verdict": "제품>20%+서비스≥15% 재가속이 green. 컨센 대비 밸류 부담.",
+    "kpi_tripwires": [
+     "제품 성장 >20%+서비스 ≥13% (현 제품 51.9%·서비스 13.7%)",
+     "서비스 2027 상반기 ≥15% 재가속 (red <10% 2분기)",
+     "Billings 성장 유지"
+    ]
+   }
+  },
+  {
+   "ticker": "ZS",
+   "name": "Zscaler",
+   "industries": [
+    "ITC-07"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-27",
+    "stance_zone": "조건부 관심 / WATCH-TO-ACCUMULATE (참조 $170.31, 150~185 조건부; ≤$150 적극)",
+    "thesis_oneline": "Zero Trust SSE(ZIA/ZPA) 리더. 유기 ARR ~21%·RPO +30%(매출 +25% 상회)·$1M+ 고객 +18%·metered/non-seat ACV >30%(좌석탈피). '네트워크 위치=신뢰' 종말 순노출. net-new ARR ~14%(yellow)가 감시점.",
+    "moat_verdict": "160+ 엣지·클라우드 프록시·정책 락인. Z-Flex 표준화 크로스셀.",
+    "mgmt_verdict": "유기 ARR·FY27 가이드·FCF·희석 검증이 스탠스 조건.",
+    "kpi_tripwires": [
+     "유기 ARR ex-M&A ≥19% (현 ~21%)",
+     "net-new ARR ≥15% (현 ~14%=yellow)",
+     "RPO > 매출+3pt (현 30 vs 25)",
+     "$1M+ 고객 ≥17% (현 18%)",
+     "metered/non-seat ACV ≥30% (현 >30%)"
+    ]
+   }
+  },
+  {
+   "ticker": "NTSK",
+   "name": "Netskope",
+   "industries": [
+    "ITC-07"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-29",
+    "stance_zone": "조건부 관심 / 약세 시 축적 (현재 conditional $12.80~14.26; ≤$11.54 적극)",
+    "thesis_oneline": "SASE/SSE 클라우드 보안(최근 IPO). ARR +29% YoY·$100k+ 고객 1,531(+22%, ARR 86%)·NRR 113%. 좌석·어플라이언스 탈피 SSE 순노출. NRR 115% 미만·IPO 희석이 감시점.",
+    "moat_verdict": "클라우드 인라인 프록시·데이터 보안. IPO 초기·경쟁(ZS/PANW) 밀도.",
+    "mgmt_verdict": "ARR ≥25%·NRR 회복·GM이 관건. IPO 후 희석/락업.",
+    "kpi_tripwires": [
+     "ARR 성장 ≥25% (현 29%)",
+     "NRR ≥115% (현 113%=yellow)",
+     "$100k+ 고객 성장 ≥20% (현 22%)",
+     "non-GAAP GM"
+    ]
+   }
+  },
+  {
+   "ticker": "FFIV",
+   "name": "F5",
+   "industries": [
+    "ITC-07",
+    "ITC-06"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-27",
+    "stance_zone": "EXECUTION_PREMIUM / WAIT (현재 $399.59, $381~420 프리미엄; 매력 ≤$332)",
+    "thesis_oneline": "앱 딜리버리(ADC)+보안. Systems +32%·Software +7%·반복매출 69%(SW 구독 90%)·GAAP GM 82.2%. AI 직접매출 H1FY26 $50M(+2x YoY, AI 런타임 보안·AI factory 로드밸런싱). Systems 리프레시 이후 SW 성장 승계가 관건.",
+    "moat_verdict": "ADC 설치기반·앱 보안·하이브리드. Systems 리프레시 클리프 리스크.",
+    "mgmt_verdict": "Software 2분기평균 ≥10%·반복매출 ≥70%·AI monetization 실증이 green.",
+    "kpi_tripwires": [
+     "Software 성장 2분기평균 ≥10% (현 +7%)",
+     "Systems total product ≥8% 정상화 후 (현 +32% 리프레시)",
+     "반복매출 ≥70% (현 69%)",
+     "AI 직접 monetization 실증 (현 $50M)",
+     "GAAP GM ≥81% (현 82.2%)"
+    ]
+   }
+  },
+  {
+   "ticker": "FICO",
+   "name": "Fair Isaac",
+   "industries": [
+    "ITC-07",
+    "ITC-08"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-29",
+    "stance_zone": "WATCH / 조건부 축적은 요구수익 밴드 이하에서만 (>$1,300 부족; 12% 허들 진입 ~$1,073)",
+    "thesis_oneline": "신용점수(Scores)+의사결정 SW. FY24 매출 Scores $920M(54%·영업이익 $813M 엔진)+Software $798M. 모기지 FICO 점수 준독점 + FICO Platform SaaS. GSE VS4 경쟁·가격실현이 관건. primary=분석 SW 정체성, 신용 인프라 인접(ITC-08 connected).",
+    "moat_verdict": "모기지 FICO 점수 표준·전환비용·데이터. VS4/대체점수 마이그레이션 리스크.",
+    "mgmt_verdict": "GSE 점유 유지·모기지 B2B 가격실현·Software ARR. 밸류 부담.",
+    "kpi_tripwires": [
+     "GSE 모기지 점유 다수 유지 (red <60% 2분기)",
+     "모기지 B2B 매출/가격실현 (2Q26 $300M 스파이크)",
+     "Software ARR 성장",
+     "Scores 세그먼트 마진 유지"
+    ]
+   }
+  },
+  {
+   "ticker": "WOLF",
+   "name": "Wolfspeed",
+   "industries": [
+    "ITC-04"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-29",
+    "stance_zone": "AVOID / TRIM ON STRENGTH (현재 $25.85, >$20 회피/트림; 매력 $10~14)",
+    "thesis_oneline": "SiC(실리콘카바이드) 파워·소재 수직통합. Ch.11 졸업(fresh-start 회계, pre/post 손익 비교 불가). 매출 $149.6M·GAAP GM -25%(적자)·Power $106.3M·Materials $43.3M. 200mm Mohawk Valley 전환·AI/auto/HV 생산매출 실현이 관건.",
+    "moat_verdict": "SiC 기판·디바이스 수직통합·미국 캐파. 마진 인플렉션·희석·부채가 리스크.",
+    "mgmt_verdict": "fresh-start 후 매출 재가속·GM 인플렉션·FCF 정상화·무희석 디레버리징이 change 조건. 현 GM -25%.",
+    "kpi_tripwires": [
+     "분기 매출 ≥$180M+2Q 순차성장 (현 $149.6M=RED)",
+     "GAAP GM ≥0 후 >10 (현 -25%=RED)",
+     "Power 매출 ≥$125M (현 $106.3M)",
+     "Materials 가격안정 (현 $43.3M)",
+     "무신규희석 디레버리징"
+    ]
+   }
+  },
+  {
+   "ticker": "NVTS",
+   "name": "Navitas Semiconductor",
+   "industries": [
+    "ITC-04"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-29",
+    "stance_zone": "회피 / 비중 축소 검토 (≥$10 회피; 매력진입 $5.5~7.0)",
+    "thesis_oneline": "GaN·SiC 파워 반도체(팹라이트). Non-GAAP GM 39.5%·H1 2026 OCF -$48.3M(운전자본)·주식 +13.3%. AI 데이터센터 전력(48V/HV)·auto GaN 채택이 성장 레그이나 FY27 물량 미확정·현금소진·희석.",
+    "moat_verdict": "GaN IP·파트너십. 소규모·현금소진·희석·경쟁.",
+    "mgmt_verdict": "FY27 매출 램프($120M+)·GM ≥45%·현금소진 축소·희석 관리.",
+    "kpi_tripwires": [
+     "FY27 매출 ≥$120M annualized (현 미확정, red <$80M)",
+     "Non-GAAP GM >45% (현 39.5%)",
+     "분기 현금소진 <$10M (현 H1 -$48.3M=RED)",
+     "주식성장 <5% (현 +13.3%=RED)"
+    ]
+   }
+  },
+  {
+   "ticker": "SATL",
+   "name": "Satellogic",
+   "industries": [
+    "IND-02"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-26",
+    "stance_zone": "회피 / 축소 검토 (현재 $5.28, avoid >$4.34; 적극관심 ≤$2.7)",
+    "thesis_oneline": "지구관측(EO) 위성·지오공간 데이터. 국제 방산 persistent EO 계약 $18M+·주권 방산 in-orbit NewSat $12M. D&A 매출 $7.1M+Space Systems $8.8M. 방산·주권 EO 순노출이나 subscale·현가 프리미엄.",
+    "moat_verdict": "저비용 위성군·수직통합 제조·주권 계약. subscale·자본소요·경쟁.",
+    "mgmt_verdict": "반복 계약 확대·delivery 실행·현금. 현가 부담.",
+    "kpi_tripwires": [
+     "D&A 매출 YoY >40%+반복계약 (현 $7.1M)",
+     "Space Systems 주권 인도 연속 (현 $8.8M)",
+     "RPO/backlog 전환",
+     "현금소진 관리"
+    ]
+   }
+  },
+  {
+   "ticker": "VELO",
+   "name": "Velo3D",
+   "industries": [
+    "IND-04",
+    "IND-02"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-26",
+    "stance_zone": "관망 / 조건부 관심 (11~13 관망; 매력진입 10~11, 적극 ≤$9)",
+    "thesis_oneline": "금속 적층제조(metal AM). 방산·우주 수요. Bookings Q2 $29M(green 후보)·backlog $31M(yellow). Forge 1 가동률·RPS economics·production-order 믹스 전환이 관건. 가격하락 원인이 financing/방산주문 악화면 재계산.",
+    "moat_verdict": "SUPPORT-free 금속 AM·방산 인증. financing·subscale·경쟁.",
+    "mgmt_verdict": "bookings $25M+ 2분기 지속·backlog $35M+·EBITDA 흑전이 green.",
+    "kpi_tripwires": [
+     "Bookings ≥$25M 2분기+production 믹스↑ (현 $29M)",
+     "Backlog ≥$35M (현 $31M=yellow)",
+     "Forge 1 가동률·RPS economics",
+     "positive EBITDA 경로"
+    ]
+   }
+  },
+  {
+   "ticker": "FIVE",
+   "name": "Five Below",
+   "industries": [
+    "DIS-04"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-26",
+    "stance_zone": "회피 / 축소 검토 (>$240 회피; 적극관심 ≤$190)",
+    "thesis_oneline": "익스트림 밸류 할인소매(오프라인). Comps +22.7%(Q1 FY26)·거래건수 +18.5% 회복. 트래픽·거래건수 주도 반등. 회복 지속성+프리미엄 멀티플 동시 요구가 제약.",
+    "moat_verdict": "저가 브랜드·틴 타깃·매장 확장. 소비 사이클·실행 노출.",
+    "mgmt_verdict": "comps 거래건수 주도 지속·신규점 생산성. 프리미엄 밸류 부담.",
+    "kpi_tripwires": [
+     "comps ≥7% 거래건수 주도 (현 22.7%, red <3% 또는 거래 감소)",
+     "거래건수 성장 (현 +18.5%)",
+     "신규점 생산성",
+     "마진 회복"
+    ]
+   }
+  },
+  {
+   "ticker": "HSHP",
+   "name": "Himalaya Shipping",
+   "industries": [
+    "IND-07"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-29",
+    "stance_zone": "Avoid / reduce (현재 $16.7, avoid >$15.5; buy zone ≤$12.5)",
+    "thesis_oneline": "Newcastlemax 벌크선(dual-fuel LNG). BCI 5TC $36.3k/day(Q2, green>32)·gross TCE $51.2k/day(Jul)·가동률 99.7%. 케이프 운임 사이클 순노출. 운임 지속성·부채·분배 커버가 관건.",
+    "moat_verdict": "신형 dual-fuel 선대·프리미엄 용선. 운임 사이클 변동성·부채.",
+    "mgmt_verdict": "BCI ≥35k 2027 지속·용선 프리미엄 ≥35%·부채 감소+FCF 분배 커버가 view 전환 조건.",
+    "kpi_tripwires": [
+     "BCI 5TC ≥$32k/day (현 $36.3k)",
+     "TCE/BCI ≥1.35x (현 1.39x)",
+     "가동률 ≥98% (현 99.7%)",
+     "부채 감소+분배 FCF 커버"
+    ]
+   }
+  },
+  {
+   "ticker": "PURR",
+   "name": "Hyperliquid Strategies",
+   "industries": [
+    "FIN-02"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-29",
+    "stance_zone": "관망 / 신규 추격매수 회피 (≤$10에서 매력, HYPE/주·자본배분 규율 유지 시)",
+    "thesis_oneline": "디지털자산 트레저리(HYPE 토큰 축적). HYPE 보유 29.4M(2026-08)·HYPE/FD주 0.129. 확률가중 12M 가치 ≈현가, 하방은 HYPE 가격 민감. ※아틀라스 택소노미 미대응 아웃라이어 — FIN-02 잠정 귀속(사용자 지시).",
+    "moat_verdict": "HYPE 노출·자본배분. NAV 디스카운트/프리미엄·토큰 가격에 전적 의존.",
+    "mgmt_verdict": "HYPE/주 증대·자본배분 규율(희석 관리). 토큰 가격 리스크 지배.",
+    "kpi_tripwires": [
+     "HYPE/FD주 증대 (현 0.129)",
+     "NAV 대비 프리미엄/디스카운트",
+     "자본배분 규율(희석)",
+     "HYPE 토큰 가격(지배 변수)"
+    ]
+   }
+  },
+  {
+   "ticker": "NNN",
+   "name": "NNN REIT",
+   "industries": [
+    "RLE-01"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-30",
+    "stance_zone": "WATCH / 관망 (base fair $49.21, 조건부 $42~44; 적극관심 <$42)",
+    "thesis_oneline": "넷리스 리테일 REIT. 확률가중 공정가 $48.61·기대 3Y IRR 10.3%·12M U/D 2.27x. 단일테넌트 넷리스 임대 안정성. 금리·리테일 크레딧 사이클 노출(RLE-01 COLD 역발상 감시).",
+    "moat_verdict": "장기 넷리스 계약·테넌트 분산·배당 이력. 금리 민감·리테일 크레딧.",
+    "mgmt_verdict": "occupancy·투자 스프레드·배당 커버. 금리 사이클.",
+    "kpi_tripwires": [
+     "occupancy 유지",
+     "투자 스프레드 유지",
+     "AFFO/배당 커버",
+     "테넌트 크레딧/금리"
+    ]
+   }
+  },
+  {
+   "ticker": "ILMN",
+   "name": "Illumina",
+   "industries": [
+    "HLT-04"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-30",
+    "stance_zone": "WATCH / NEUTRAL (현재 $215.59, fair-to-full $200~225; 선택적 진입 $180~200)",
+    "thesis_oneline": "차세대 시퀀싱(NGS) 리더. NovaSeq X 전환(Q1'26 볼륨 82%·매출 55%)·소모품 비중 74%·연결 Gb +30%. FY26 가이드 매출 $4.62B·non-GAAP OM 23.4~23.6%. 전환 검증됐으나 현가가 2027 Base 실행·품질 멀티플 선반영.",
+    "moat_verdict": "설치기반·소모품 razor-blade·NovaSeq X 원가우위(Gb당 -60% vs NS6000). 경쟁(Element/Ultima)·자본지출 사이클.",
+    "mgmt_verdict": "NovaSeq X pull-through·소모품 램프·OM 개선. 밸류 프리미엄.",
+    "kpi_tripwires": [
+     "소모품/시퀀싱 pull-through 램프 (현 소모품 74%)",
+     "non-GAAP OM →24%+ (현 가이드 23.4~23.6%)",
+     "NovaSeq X 설치기반·연결 Gb (현 +30%)",
+     "유기성장 (현 Q2 +6.5%)"
+    ]
+   }
   }
  ],
  "monthly_diff": {
-  "build": "ATLAS_PACK_2026-08_UPDATE5_v1.4",
-  "note": "UPDATE-5 (2026-08-26): 3연속 이월된 56종 톱다운 전면스캔 실행(웹 실데이터). 티어 변경 0 — 정산·부채회수·서사갱신 사이클. HEAT 8/8 유지(결정론적 heat_score 랭킹이 무변경 확인, 서수는 미저장). §3A 2홉 전파 실행(임계통과 0). GTLS 상폐 교정·cold_reversal 필드·meta 장부 부채 전부 해소. HEAT 후보 큐(UTL-02·ITC-03) 공식화 — cap 포화로 대기.",
+  "build": "UPDATE-6 (MODE B — 딥다이브 통합) 배치 6/6 (최종)",
+  "note": "헬스+아웃라이어 8종 통합(SHOP·NNN·ILMN 추가)+TEM 리프레시 무변경. B1-B6 사이클 완료. 티어 변경 0. §7A 승격 2·신설 5 + additive 역반영 + §3A 전파(전부 AMPLIFY/중립, 임계통과 0).",
   "flags": [
-   "tier_change_0",
-   "heat_cap_maintained_8of56",
-   "full_topdown_scan_executed",
-   "propagation_debt_RESOLVED",
-   "cold_reversal_field_debt_RESOLVED",
-   "gtls_delisting_corrected",
-   "settlement_pressure_high(UTL-02·ITC-03 queued)"
+   "PURR=아틀라스 택소노미 미대응 아웃라이어 → FIN-02 잠정 귀속(사용자 지시). 디지털자산 트레저리 전용 노드 도입은 차기 거버넌스 판정."
   ],
   "upgrades": [],
   "downgrades": [],
-  "node_promotions": [],
-  "node_corrections": [
+  "node_promotions": [
    {
-    "ticker": "GTLS",
-    "action": "DELISTED",
-    "detail": "2026-07-16 Baker Hughes 인수완료·NYSE 상폐·$210 현금. company_nodes 제거→BKR 신설, ENE-04 카드 승계, IND-01 카드 제거."
+    "ticker": "ALNY",
+    "from": "SHALLOW",
+    "to": "DEEP_DIVED",
+    "industry": "HLT-02",
+    "summary": "RNAi. TTR FY26 $4.2~4.5B·미국 수요 Q2>2xQ1. nucresiran de-risking."
+   },
+   {
+    "ticker": "SHOP",
+    "from": "SHALLOW",
+    "to": "DEEP_DIVED",
+    "industry": "DIS-04",
+    "summary": "커머스 플랫폼. GMV +32%·Payments 68%. 밸류 시간가치 부족."
+   },
+   {
+    "ticker": "FIVE",
+    "from": "신설",
+    "to": "DEEP_DIVED",
+    "industry": "DIS-04",
+    "summary": "밸류 할인소매. comps +22.7%·거래 +18.5% 회복. 프리미엄 밸류."
+   },
+   {
+    "ticker": "HSHP",
+    "from": "신설",
+    "to": "DEEP_DIVED",
+    "industry": "IND-07",
+    "summary": "Newcastlemax 벌크. BCI $36.3k/day·가동률 99.7%. 운임 사이클."
+   },
+   {
+    "ticker": "PURR",
+    "from": "신설",
+    "to": "DEEP_DIVED",
+    "industry": "FIN-02(잠정)",
+    "summary": "디지털자산 트레저리(HYPE 29.4M). 택소노미 미대응 아웃라이어."
+   },
+   {
+    "ticker": "NNN",
+    "from": "신설",
+    "to": "DEEP_DIVED",
+    "industry": "RLE-01",
+    "summary": "넷리스 리테일 REIT. base fair $49.21·U/D 2.27x. RLE-01 COLD 역발상 감시."
+   },
+   {
+    "ticker": "ILMN",
+    "from": "신설",
+    "to": "DEEP_DIVED",
+    "industry": "HLT-04",
+    "summary": "NGS 리더. NovaSeq X 전환·소모품 74%·Gb +30%. 밸류 선반영."
    }
   ],
-  "new_triggers": [
+  "node_corrections": [],
+  "node_refreshes": [
    {
-    "industry": "ITC-05",
-    "tier": "HEAT(유지·peak_watch↑)",
-    "corroboration": "DRAM 계약가 QoQ 증가율 단계 둔화(1Q +90~95%→2Q +30%→3Q +13~18%, TrendForce)+소비자 수용한계. 단 HBM4 2026 완판·공급증가율 상한(DRAM16%/NAND17%)으로 balance는 SHORTAGE 유지 — 반전 아닌 변화율 롤오버."
-   },
-   {
-    "industry": "IND-01",
-    "tier": "HEAT(유지·peak_watch신규)",
-    "corroboration": "Clarksons 신조선가 185.01→185.15 평탄화·LNG선 −4%YoY, 한국 발주점유율 19% vs 중국 72%(격차 53%p). 잔고 17년최고(1.91억CGT)·美 LNG FID 웨이브(84MTPA)가 지지."
-   },
-   {
-    "industry": "ITC-02",
-    "tier": "HEAT(유지)",
-    "corroboration": "CoWoS 2026 완판·2nm 2028 예약·TSMC 3Q26 +37%. 유일 완화: 수급갭 20%→10% 축소 시작(공급 캐치업 초기)."
-   },
-   {
-    "industry": "ITC-03",
-    "tier": "WARM(유지·근거강화→HEAT후보큐)",
-    "corroboration": "SEMI WFE 2026 +23.1% $143.9B 상향 리비전(D2 선행지표↑·D3 capex 가이던스↑). 단 장비공급은 병목 아님·balance BALANCED으로 HEAT 미승격."
-   },
-   {
-    "industry": "IND-03",
-    "tier": "HEAT(유지·가속)",
-    "corroboration": "변압기 리드타임 128-250주·스위치기어 2028 매진·하이퍼스케일러 2026 capex $650-750B. 백로그 2028-29 연장 → 롤오버 아님."
-   },
-   {
-    "industry": "RLE-02",
-    "tier": "HEAT(유지)",
-    "corroboration": "JLL DC 97%점유·77%사전계약(공급제약)·2026-30 +100GW 설치기반 2배·장비 리드타임 33주(+50%)."
-   },
-   {
-    "industry": "IND-05",
-    "tier": "WARM(유지·양극화)",
-    "corroboration": "DC-EPC 백로그 11.4개월·DC착공 2025 +190% vs 광의 비주거건설 −4%YoY 수축(6개월중 6개월). DC-EPC 포켓만 HEAT급."
-   },
-   {
-    "industry": "ITC-07",
-    "tier": "NEUTRAL(유지·구조파괴)",
-    "corroboration": "SaaS 아포칼립스(1~2월 $1-2T 시총 증발)·좌석과금 붕괴 조짐·기업당 앱 112→106. 단 SW지출 +15.1% $1.43T 성장(수요위축=COLD 아님)·아웃컴 과금 이행."
-   },
-   {
-    "industry": "COM-03",
-    "tier": "WARM(유지·재편)",
-    "corroboration": "디지털광고 +11.4% $740B(감속하나 견조). AI Overviews 47%·Meta가 Google 광고 추월·Google Network −4%·OpenAI ChatGPT 광고 진입."
-   },
-   {
-    "industry": "IND-04",
-    "tier": "WARM(유지)",
-    "corroboration": "북미 로봇 발주 $2.25B·리쇼어링 지지. 단 휴머노이드 공급>수요 역전·매크로 제조전망 하향 → near-term 트리거 아님."
-   },
-   {
-    "industry": "MAT-02",
-    "tier": "HEAT(유지·구리레그 논쟁)",
-    "corroboration": "구리 deficit(Jefferies 44.2만톤·현물프리미엄 4년최고) vs surplus(Macquarie 26.2만톤·LME재고 8년최고) 컨센 분열, 가격 6월대비 −4.5%. 전략광물(희토류·텅스텐 P1) 레그가 HEAT 앵커."
+    "ticker": "TEM",
+    "industry": "HLT-04",
+    "result": "NO_CHANGE",
+    "summary": "신규 스탠스=WATCH/선별진입·$60~65 매력·Base IRR ~7%로 기존과 동일 → 무편집(§7A-4)."
    }
+  ],
+  "classification_decisions": [
+   "PURR=FIN-02 잠정 귀속(사용자 지시). 순수 디지털자산 트레저리로 아틀라스 산업 택소노미 직접 대응 없음 → outlier 플래그·전용 노드 도입은 차기 거버넌스.",
+   "FIVE=DIS-04(오프라인 할인소매)·SHOP=DIS-04(승격, 커머스 플랫폼)·HSHP=IND-07(해운)·NNN=RLE-01(넷리스 리테일 REIT)·ILMN=HLT-04(NGS 도구)."
+  ],
+  "card_reflections_additive": [
+   "승격 note enrich: HLT-02(ALNY)·DIS-04(SHOP). 신규 companies: HLT-04(ILMN)·DIS-04(FIVE)·IND-07(HSHP)·FIN-02(PURR)·RLE-01(NNN).",
+   "LI += HLT-04 'NGS 시퀀싱 전환·소모품(ILMN)' / IND-07 '케이프 운임 사이클(HSHP)'.",
+   "※ 02 §4 무결성락."
   ],
   "propagation_paths": [
-   "ITC-05 메모리(peak_watch↑) ←SUPPLIES_TO(H)← ITC-03 장비: 메모리 계약가 변화율 롤오버 하드화 시 메모리 capex→장비 지연전이. 현재 HBM capa 증설 지속으로 압력 미미 → ITC-03 감시강화(sub-threshold, 티어 유지).",
-   "IND-01 조선(peak_watch↑) →SUPPLIES_TO(H)→ IND-07 해운: 수주잔고 17년최고가 향후 선복 공급과잉→운임 하방압력. 증거 미달(운임 수요측도 좌우)→IND-07 티어 유지·감시강화. 이번 전파 유일 신규 시그널.",
-   "ITC-03 장비(WFE+23%↑) →SUPPLIES_TO(H)→ ITC-02·ITC-05: AMPLIFY(둘 다 HEAT 정합) +→DEMAND_COMOVES(M)→ IND-04 완만 positive corroboration.",
-   "TH-AI(AI인프라) →THEME_DRIVES→ IND-05 E&C(DC-EPC 포켓↑) →SUPPLIES_TO(M)→ UTL-02 원전: DC 건설붐→EPC 실행수요→원전·발전 건설. UTL-02 HEAT후보 근거 2홉 보강.",
-   "ITC-07 SW(SaaS 파괴) →CUSTOMER_OF(M)→ ITC-06 HW: AMPLIFY — 좌석침식≠컴퓨트침식, 에이전트/AI 워크로드가 오히려 서버수요 증가. 파괴는 비즈모델층 한정.",
-   "MAT-02 →SUPPLIES_TO→ MAT-06·IND-02·UTL-02: AMPLIFY 유지 — 구리 공급밸런스 논쟁이나 희토류·우라늄·티타늄 레그 조임 지속으로 전파방향 불변."
+   "HLT-02(HEAT 유지): ALNY RNAi 수요 확증 → AMPLIFY. 이미 HEAT → 재조정 0.",
+   "HLT-04(WARM 유지): ILMN NGS 전환+TEM 진단 → 연구·진단 도구 수요 AMPLIFY. WARM 유지.",
+   "DIS-04(WARM 유지): SHOP GMV +32%·FIVE comps +22.7% → 소비 회복 포켓 AMPLIFY. WARM 유지.",
+   "IND-07(NEUTRAL 유지): HSHP 케이프 운임 현재 강세(BCI $36.3k)이나, UPDATE-5 IND-01 신조잔고發 향후 선복 공급과잉 2홉 약세 감시 유효 → 상충 신호로 NEUTRAL 유지.",
+   "FIN-02(WARM)·RLE-01(COLD): PURR(토큰 가격 지배·아웃라이어)·NNN(금리 민감·COLD 역발상) — 교차전파 미미, 티어 유지. 3홉 없음·임계통과 0."
   ],
   "watch_intensified": [
-   {
-    "industry": "IND-07",
-    "reason": "조선 수주잔고 17년최고→향후 선복 공급과잉→운임 하방 압력(신규 약세 감시, 2홉). 증거 미달로 NEUTRAL 유지."
-   },
-   {
-    "industry": "ITC-03",
-    "reason": "메모리 계약가 롤오버 하드화 시 메모리 capex→장비 지연 압력(2홉 감시). 동시에 WFE+23%로 HEAT 후보 큐 2순위."
-   },
-   {
-    "industry": "UTL-02",
-    "reason": "발전측 corroboration 4건(VST·CCJ·LEU·CEG)+DC-EPC 2홉 보강 = HEAT 후보 큐 1순위. heat_score 5로 강등 슬롯 미개방, IND-01 강등 조건부 승격 대기."
-   },
-   {
-    "industry": "ITC-07",
-    "reason": "좌석기반 인컴번트 코호트 구조 리스크(SaaS 아포칼립스)·에이전트 네이티브 양극화 감시. COM-03과 'AI가 인컴번트 모델 재편' 공통 테마."
-   }
+   "IND-07(NEUTRAL) — 현재 케이프 운임 강세(HSHP)와 미래 신조 공급과잉(IND-01 2홉) 상충. 운임 지속성 vs 선복 인도 추적. 반전 미확정.",
+   "RLE-01(COLD) — NNN 넷리스 안정적이나 금리·리테일 크레딧 역풍. 역발상 감시 유지.",
+   "FIN-02 — PURR 디지털자산 트레저리 편입. 토큰 트레저리 코호트 확대 시 전용 분류 필요성 재검토."
   ],
-  "screening_recommendations": {
-   "note": "A타입 전면스캔 산출 — HEAT 후보 큐(cap 포화 대기) 및 데워진 포켓 중심 스크리닝 권고 3건.",
-   "recommendations": [
-    {
-     "industry": "IND-05",
-     "label": "DC-EPC 포켓",
-     "rationale": "DC 백로그 11.4개월·전력인프라 착공 +30%·DC착공 +190%. aggregate WARM이나 포켓은 HEAT급.",
-     "trigger_exposed_shallow": [
-      "PWR",
-      "EME",
-      "FIX",
-      "STRL"
-     ],
-     "falsifier": "하이퍼스케일러 capex 가이던스 하향 또는 DC 착공 둔화"
-    },
-    {
-     "industry": "ITC-03",
-     "label": "반도체 장비(HEAT후보 2순위)",
-     "rationale": "WFE 2026 +23.1% 상향 리비전·백로그 2027. cap 포화로 WARM 대기.",
-     "trigger_exposed_shallow": [
-      "ASML",
-      "AMAT",
-      "KLAC"
-     ],
-     "falsifier": "파운드리·메모리 capex 가이던스 하향"
-    },
-    {
-     "industry": "UTL-02",
-     "label": "원전(HEAT후보 1순위)",
-     "rationale": "발전측 corroboration 4건·DC 전력수요·EPC 2홉 보강.",
-     "trigger_exposed_shallow": [
-      "TLN",
-      "OKLO",
-      "BWXT"
-     ],
-     "falsifier": "SMR 인허가·상업화 지연 또는 DC 전력계약 미실현"
-    }
-   ]
-  },
-  "deep_dive_candidates": [
-   {
-    "id": "HUBB",
-    "name": "Hubbell",
-    "bucket": "C",
-    "tier": "HEAT",
-    "why": "[IND-03] 변압기·스위치기어 부족의 그리드·DC 전기설비 순노출. 백로그 2028-29 연장·롤오버 없음.",
-    "falsifier": "전기설비 리드타임 52주 미만 축소 또는 유틸 T&D capex 가이던스 하향",
-    "horizon": "수분기~1년"
-   },
-   {
-    "id": "TSM",
-    "name": "TSMC",
-    "bucket": "C",
-    "tier": "HEAT",
-    "why": "[ITC-02] CoWoS·2nm 완판의 핵심 순노출. 캐비앳: 컨센 HIGH·모멘텀 가속 → '진입 눌림 대기'.",
-    "falsifier": "CoWoS 수급갭 0 수렴 또는 가동률 90% 미만·2nm 예약슬롯 개방",
-    "horizon": "수분기(확장 지속)"
-   }
+  "screening_recommendations": [],
+  "deep_dive_candidates": [],
+  "candidates_consumed": [
+   "HLT-02(ALNY)·HLT-04(ILMN)·DIS-04(SHOP·FIVE)·IND-07(HSHP)·FIN-02(PURR)·RLE-01(NNN) 딥다이브 완료. B1-B6 사이클 종료."
   ],
-  "candidates_consumed": [],
-  "candidates_withheld": [
-   {
-    "industry": "ITC-05",
-    "reason": "peak_watch(변화율 롤오버) — 후보 제외, 보유·차익 감시로. tripwire: 계약가 MoM 마이너스."
-   },
-   {
-    "industry": "IND-01",
-    "reason": "peak_watch(선가 평탄화) — 후보 제외, 감시로. 차기 로테이션-아웃 최유력."
-   },
-   {
-    "industry": "ITC-08",
-    "reason": "버킷A 후보이나 스테이블코인 컨센서스 상승으로 '시장 저인지' 조건 약화 → 보류·감시."
-   },
-   {
-    "bucket": "B",
-    "reason": "공란 — COLD 7종(ENE-05 석탄·MAT-03 화학·COM-02 미디어 등) 확증 바닥반전 신호 점등 0. 역발상 감시목록 유지."
-   }
-  ],
+  "candidates_withheld": [],
   "peak_watch": [
    {
     "id": "ITC-05",
@@ -11416,18 +12214,33 @@
     "carry_forward": true
    }
   ],
-  "coverage_honesty": "A타입 갱신 — 56종 톱다운 전면스캔 실행(3연속 이월 해소, 웹 실데이터). stale-LI 16종 정밀·fresh 40종 롤오버 확인. 단 fresh 중 비-AI 다수(ENE·FIN·소비재·비HLT02 헬스·비MAT02 소재·유틸)는 UPDATE-4(전일) freshness 기반 유지 — 1일齡 데이터 재서치 저가치로 무신호 확인 수준. boring 5종(COM-01·COM-02·COM-04·IND-09·UTL-04)은 저신호 안정산업 라이트 홀드. 지식 컷오프(2026-01) 대비 현행 신호는 웹서치 조달. §3A 전파·GTLS·cold_reversal 필드·meta 부채 전부 해소. 티어 온도는 딥다이브 밸류 아닌 수급 변화율 기준(밸류 만개는 티어 안 낮춤).",
+  "coverage_honesty": "MODE B 배치 6/6(최종). 전면 톱다운 미실행(정상). 티어 무변경. 하드넘버 7개 원본 팩+ILMN 인컨텍스트 대조(§1-4). B1-B6 딥다이브통합 사이클 완료.",
   "next_session_carry": {
-   "full_scan_pending": "RESOLVED(UPDATE-5): 56종 톱다운 전면스캔 실행 완료.",
+   "full_scan_pending": "RESOLVED(UPDATE-5): 56종 톱다운 전면스캔 실행 완료. | 차기 정식 A타입 월간에서 heat_score 재산정·UTL-02 로테이션 재판정.",
    "propagation_debt": "RESOLVED(UPDATE-5): §3A 아웃바운드 2홉 워크 실행, 임계통과 노드 0(감시강화만).",
-   "utl02_rotation": "UTL-02 HEAT 근거 4건(발전측)+DC-EPC 2홉 보강 = heat_score 5. 인컴번트 8종 전부 상회로 강등 슬롯 미개방→WARM 유지. 차기 조건부: IND-01(score 7, 최약 3파전) 신조선가 하락 전환 시 강등→슬롯 개방→UTL-02 승격.",
+   "utl02_rotation": "UPDATE-6 B1: TLN 딥다이브로 HEAT후보1 근거 추가 경화(AWS 1,920MW·PJM $325/MW-day·4GW). 단 cap 8/8·IND-01(score7) 강등 미개방 → UTL-02 WARM 유지. 조건부 승격 체인 불변. heat_score 재산정은 차기 정식 월간(A타입) 몫.",
    "itc03_heat_queue": "ITC-03 WFE+23%(D2·D3)로 HEAT급 근거이나 balance BALANCED+cap 포화로 WARM 유지. HEAT 후보 큐 2순위(score 3).",
    "peak_watch_carry": "ITC-05·IND-01·MAT-02(구리레그) peak_watch 이월. tripwire 점등 시 차기 강등 검토.",
    "multi_attribution_note": "다중귀속 트립와이어(RIOT/UUUU/HOOD/BE)는 기업 매출 무게중심 이벤트 → 톱다운 스캔 아닌 해당 기업 딥다이브 갱신(MODE B)에서 검증 대상. 이번 전면스캔은 산업수준 강제 재지정 사유 미발견 → 대표산업 현행 유지·트립와이어 이월.",
    "unapproved_flags": "미승인 플래그 2건(조용히 생성 안 함): (1) 신규 테마 후보 'AI가 인컴번트 SW·광고 모델 재편'(ITC-07+COM-03 연결), (2) 엣지 TH-AI→IND-05 M→H 상향 후보(DC건설이 E&C 성장엔진화). 차기 승인 판정.",
    "ene04_universe": "ENE-04 스크리닝 유니버스 5종(LNG·SRE·NEXT·BKR·KMI). BKR은 다각화로 순도 저하 — 인접 순노출은 IND-01(LNG선: 329180.KS·042660.KS·삼성중공업)+IND-05(LNG터미널 EPC: FLR·KBR·J) 엣지 경유.",
-   "remaining_shallow_candidates": "버킷C: HUBB·TSM. HEAT후보큐: ITC-03(ASML/AMAT/KLAC)·UTL-02(TLN/OKLO/BWXT). 버킷A 보류: ITC-08(V/MA). 스크리닝 포켓: IND-05(PWR/EME/FIX/STRL).",
-   "coverage_debt": "fresh 40종 비-AI 다수 UPDATE-4 freshness 기반 유지 — 차기 갱신 톱다운 재확인 권장. boring 5종(COM-01·COM-02·COM-04·IND-09·UTL-04) 딥 재스캔 대상."
+   "remaining_shallow_candidates": "RLE-02 전환-광업체 코호트 딥다이브 완료(APLD·CORZ·WULF). TLN 완료. 잔여 버킷C: HUBB·TSM. HEAT후보큐: ITC-03(ASML/AMAT/KLAC). 버킷A 보류: ITC-08(V/MA).",
+   "coverage_debt": "fresh 40종 비-AI 다수 UPDATE-4 freshness 기반 유지 — 차기 갱신 톱다운 재확인 권장. boring 5종(COM-01·COM-02·COM-04·IND-09·UTL-04) 딥 재스캔 대상.",
+   "modeB_batch_progress": "완료: B1~B6 딥다이브 통합 전량 종료. FPS=배제 종결. 추가분(SHOP·NNN·ILMN) 포함.",
+   "modeB_classification_decisions": "확정 누적(B1-B6): 전환광업체=RLE-02; GLW/CRDO/POET=ITC-06; CLF=MAT-01+DIS-01+IND-03·ARLP=ENE-05; FICO=ITC-07+ITC-08·FFIV=ITC-07+ITC-06; WOLF/NVTS=ITC-04·SATL=IND-02·VELO=IND-04+IND-02; PURR=FIN-02(잠정)·NNN=RLE-01·ILMN=HLT-04·FIVE/SHOP=DIS-04·HSHP=IND-07.",
+   "itc06_note": "ITC-06 WARM 유지(BALANCED·수요주도). AI 네트워킹·광 수요는 HEAT급이나 공급 병목 아님 → 티어 미변경. 차기 A타입 월간에서 balance 재점검 시 근거로 사용.",
+   "mat01_watch": "CLF 딥다이브로 MAT-01 사이클 인플렉션 초기신호. Q3'26 EBITDA ≥$500M+FCF 지속 확증 시 차기 A타입에서 NEUTRAL→WARM 검토.",
+   "itc07_theme": "ITC-07 NEUTRAL 유지. 사이버보안=회복탄력 포켓 확증. 'AI가 인컴번트 SW·광고 재편' 테마(ITC-07+COM-03) 근거 축적 — 차기 A타입 승인 판정 대기.",
+   "itc04_watch": "ITC-04 WARM 유지. SiC/GaN 파워반도체(WOLF·NVTS) 조정 국면(공급과잉·가격침식). WOLF 매출 재가속+GM 인플렉션 시 차기 A타입에서 코호트 재점검.",
+   "cycle_complete": "UPDATE-6(MODE B 딥다이브 통합) 완료 — 신규노드 25 + 승격 다수, DEEP_DIVED 54→86. 다음은 정식 A타입 월간 톱다운(전면 재스캔) 또는 추가 딥다이브 통합.",
+   "deferred_to_next_A_scan": [
+    "heat_score 재산정·UTL-02 로테이션 재판정(IND-01 강등 조건 확인).",
+    "MAT-01(CLF 턴어라운드) NEUTRAL→WARM 승격 검토(Q3'26 EBITDA ≥$500M+FCF 지속).",
+    "테마 승인 판정: 'AI가 인컴번트 SW·광고 모델 재편'(ITC-07+COM-03) — B4로 근거 축적.",
+    "ITC-04 SiC/GaN 파워반도체 코호트 재점검(WOLF 매출 재가속+GM 인플렉션).",
+    "ITC-06 balance 재점검(AI 네트워킹·광 수요 강도 vs BALANCED).",
+    "PURR 디지털자산 트레저리 전용 분류 도입 여부."
+   ]
   }
  },
  "verdict_log": [
