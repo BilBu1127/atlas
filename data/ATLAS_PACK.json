@@ -106,8 +106,7 @@
    "RESOLVED(UPDATE-5): ENE-05·MAT-03 cold_reversal_signal 필드 보강 완료.",
    "RESOLVED(UPDATE-5): §3A 아웃바운드 2홉 전파 워크 실행 — 임계 통과 노드 0, 감시강화만 기록.",
    "RESOLVED(UPDATE-5): BUILD7 최종정산 잔여(provisional=0·섬해소·필드) 전부 확정.",
-   "잔여: fresh 40종 중 비-AI(ENE·FIN·소비재·비HLT02 헬스·비MAT02 소재·유틸) 다수는 UPDATE-4 freshness 기반 유지 — 차기 갱신에서 톱다운 재확인 권장(coverage_honesty 참조).",
-   "거버넌스 파일 반영 대기: 01_ATLAS_TAXONOMY_SCORING.md v1.2→v1.3 패치 4건(§3B 2트랙·§7A 5단계·§8 QA·PACK 스펙) — 프로젝트 Knowledge 원본에 수동 반영 필요."
+   "잔여: fresh 40종 중 비-AI(ENE·FIN·소비재·비HLT02 헬스·비MAT02 소재·유틸) 다수는 UPDATE-4 freshness 기반 유지 — 차기 갱신에서 톱다운 재확인 권장(coverage_honesty 참조)."
   ]
  },
  "themes": [
@@ -12463,7 +12462,7 @@
    ],
    "candidate_ledger_note": "후보 원장은 PACK 배열이 단일 진실원(single source of truth). carry 문자열은 포인터만 유지 — 신규 후보 생성은 A타입 톱다운 스캔에서만. v2.2: 후보 원장에 NEW/REVISIT 2트랙 스키마 적용(거버넌스 v1.3). NEW 5종 OPEN + REVISIT 1종 PENDING_TRIGGER.",
    "revisit_track": {
-    "status": "거버넌스 v1.3 승인 완료(2026-08-30). PACK 스키마 v2.2 선반영. 실제 REVISIT 판정은 차기 A타입 갱신부터.",
+    "status": "거버넌스 v1.3 반영 완료(2026-08-30, 01 md5 97493dfe...). PACK v2.2 스키마 정합 확인 — QA Gate v1.3 5조항 전항목 PASS. 실제 REVISIT 판정은 차기 A타입부터.",
     "why_empty_now": "UPDATE-6은 티어·balance 변경 0건이라 TIER_CHANGE/BALANCE_CHANGE 미발생. TRIPWIRE는 CLF Q3'26 등 미발표 실적이라 관측 불가. THESIS_STALE은 86종 전부 as_of 2026-08로 4분기 경과 0. → 관측 없는 추정 등재는 규율 위반이므로 미등재(TLN 조건부 1건만).",
     "quota": "동시 OPEN ≤5종. 강도순 컷: TIER_CHANGE > TRIPWIRE red > BALANCE_CHANGE > THESIS_STALE.",
     "excluded_reasons": "가격이 stance_zone 진입(아틀라스 밖·HARD RULE 2 침식) / 신규 후보 부족(규율 마모) — 등재 금지."
