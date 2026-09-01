@@ -1,5 +1,5 @@
 # 01_ATLAS_TAXONOMY_SCORING.md
-## Global Sector Atlas OS v1.3 (Ontology Layer)
+## Global Sector Atlas OS v1.4 (Ontology Layer)
 ## Role: 분류 체계, 산업 카드 스키마, 수요-공급 채점, 티어 규칙, 출력 스펙
 ## Authority: Governing taxonomy & scoring specification
 
@@ -201,6 +201,14 @@ diff 리포트에는 전파 경로를 체인 형태로 기록한다:
 - 가격이 딥다이브 stance_zone 매력 구간에 진입 — 가격 감시는 아틀라스(산업 지도)
   밖의 일이다. 스크리닝·딥다이브 레이어 소관이며, 이를 허용하면 아틀라스가
   종목 가격 트래커로 변질되어 HARD RULE 2를 침식한다.
+  - **(v1.4) 스탠스 보드가 생겨도 이 조항은 그대로다.** 보드는 가격 위치를 *보여줄*
+    뿐이며, 보여준다는 사실이 등재 사유가 되지 않는다. 화면에 "밴드 진입"이 떠 있어도
+    후보 등재는 여전히 아래 trigger 4종 중 하나를 **관측 사실로** 요구한다.
+    표시(읽기)와 등재(쓰기)를 분리하는 것이 이 레이어 설계의 전제다(00 §0 방화벽).
+  - **인간 경로 우회 주의:** 기계적 방화벽은 PACK 필드 간 참조만 막는다. 보드를 보고
+    사람이 딥다이브를 돌리는 경로는 막을 수 없고, 막을 필요도 없다 — 다만 그렇게 시작한
+    딥다이브라도 **후보 원장에는 trigger 근거로만 등재**된다. "가격이 싸 보여서"는
+    verdict_log에 그렇게 적고, trigger 칸에 분식하지 않는다.
 - 신규 후보가 부족해서 / 리스트를 채우기 위해 — 규율 마모의 시작점이다. 신규 후보가
   마르는 것은 딥다이브를 늘릴 신호가 아니라 산업 스캔 주기를 당길 신호다.
   후보가 없으면 멈추는 것이 정답이다.
@@ -295,7 +303,23 @@ FROZEN 구조적 쇠퇴. 반기 1회 생존 확인만.
       "verification": "SHALLOW|SCREENED|DEEP_DIVED",
       "deep_dive_ref": { "as_of": "", "stance_zone": "", "thesis_oneline": "",
                          "moat_verdict": "", "mgmt_verdict": "",
-                         "kpi_tripwires": [] } }
+                         "kpi_tripwires": [],
+                         // (v1.4) 구조화 스탠스 — 딥다이브 소유. 아틀라스는 수정 불가.
+                         "stance": {
+                           "label": "AVOID|TRIM|WATCH|CONDITIONAL|ACTIVE_INTEREST",
+                           "bands": { "aggressive_max": 0, "attractive": [0,0],
+                                      "watch": [0,0], "avoid_above": 0 },
+                           "ev": 0, "hurdle_irr": 0,
+                           "ref_price": { "value": 0, "as_of": "" },
+                           "parse_confidence": "EXACT|DERIVED|UNKNOWN" } },
+      // (v1.4) 계산값 — 아틀라스 소유. 매 UPDATE 재산출. 판단 아님.
+      "stance_state": {
+        "price": { "value": 0, "as_of": "", "source": "" },
+        "zone": "AGGRESSIVE|ATTRACTIVE|WATCH|AVOID|UNKNOWN",
+        "gap_to_attractive_pct": 0,
+        "freshness": "FRESH|AGING|STALE",
+        "tripwire_status": "GREEN|YELLOW|RED|UNKNOWN",
+        "display_suppressed": false } }
   ],
   "monthly_diff": { "upgrades": [], "downgrades": [], "new_triggers": [],
                     "propagation_paths": [],
@@ -318,6 +342,37 @@ FROZEN 구조적 쇠퇴. 반기 1회 생존 확인만.
 
 company_nodes.verification이 노드의 "진하기"다:
 SHALLOW(이름+체인위치) → SCREENED(후보카드 있음) → DEEP_DIVED(팩 연결됨).
+
+## 5A. 스탠스 레이어 규격 (v1.4)
+
+**소유권 분리가 이 레이어의 전부다.**
+
+| 필드 | 소유 | 성격 | 갱신 경로 |
+|---|---|---|---|
+| `deep_dive_ref.stance_zone` | 딥다이브 | 원문 (불변 보존) | §7A 4단계만 |
+| `deep_dive_ref.stance` | 딥다이브 | **판단** (밴드·EV·허들) | §7A 4단계만 |
+| `stance_state` | 아틀라스 | **관측·계산** (주가·위치) | 매 UPDATE 재산출 |
+
+- `stance_zone` **원문은 절대 삭제·수정하지 않는다.** `stance`는 그 옆에 붙는 구조화
+  사본이며, 둘이 어긋나면 **원문이 우선**이다. 구조화는 필터링을 위한 편의이지 판단의
+  원본이 아니다.
+- `parse_confidence`: 원문에서 밴드를 기계적으로 뽑아낸 신뢰도.
+  `EXACT`(원문에 수치 명시) / `DERIVED`(EV·허들에서 계산) / `UNKNOWN`(추출 불가).
+  **UNKNOWN이면 zone도 UNKNOWN이다 — 추정으로 채우지 않는다**(00 §4 증거 규율).
+- `zone`은 저장된 밴드와 관측 주가의 **기계적 대조 결과**이지 새 판단이 아니다.
+  경계값은 밴드 하한 이하부터 순서대로 판정하며, 밴드가 없으면 UNKNOWN.
+- `gap_to_attractive_pct`: 현재가가 `attractive` 상단까지 남은 거리(%). 음수면 이미 진입.
+- `freshness`: 직전 딥다이브 `as_of` 경과 기준. `FRESH`(≤2분기) / `AGING`(2~4분기) /
+  `STALE`(4분기 초과). §3B의 THESIS_STALE 트리거와 같은 시계를 쓴다.
+- `tripwire_status`: `kpi_tripwires`의 최신 판정 상태. 확인 안 했으면 `UNKNOWN`.
+- `display_suppressed`: `freshness=STALE` 또는 `tripwire_status=RED`이면 **true**.
+  뷰는 이 값이 true인 노드의 zone 강조를 끄고 밴드 수치를 접는다(00 §0 표시 억제).
+
+**주가(`price`) 취급 규율:**
+- `as_of`와 `source` **병기 필수.** 병기 없는 주가는 PACK에 넣지 않는다.
+- 주가는 **UPDATE 시점 스냅샷**이며 실시간이 아니다. 뷰는 이를 실시간처럼 표시하지 않는다.
+- 주가는 관측값이므로 갱신에 트리거 증거를 요구하지 않는다. 반대로 **주가만 바뀐 것은
+  어떤 변화도 아니다** — diff 리포트의 티어·후보 섹션에 등장할 수 없다.
 
 (v1.3) deep_dive_candidates.status 정의:
 - OPEN — 즉시 딥다이브 대상
@@ -342,10 +397,38 @@ tier_history가 이 시스템의 심장이다 — 순위가 "유기적으로 바
 5) NEUTRAL 이하: 한 줄 요약 리스트 (카드 전문은 PACK에만 보존)
 6) 크로스 섹터 테마 레이어 요약
 7) COLD 역발상 감시 목록 (바닥 반전 신호 명시)
-8) 푸터: 미검증·조사우선순위 고지 재확인
+8) **(v1.4) 스탠스 보드** — 아래 §6A
+9) 푸터: 미검증·조사우선순위 고지 재확인
 
 디자인: Part 2 디자인 시스템의 절제된 톤 준용. 신호등 남발 금지,
 티어 색상 외 장식 최소화.
+
+## 6A. 스탠스 보드 스펙 (v1.4)
+
+**배치:** 콘솔 내부 탭. **5번째 HTML 파일을 만들지 않는다** — 뷰는 4개로 고정이며
+파일을 늘리면 SOP §1 트리·`index.html`·전 뷰의 `xnav`가 연쇄 변경된다.
+
+**축:** 산업 티어(주축) × zone(종속축). **zone 단독 정렬 금지**(00 §0 종속 원칙).
+정렬 기본값은 티어 우선, 동일 티어 안에서 zone 근접도.
+
+**구성 — 3블록:**
+```
+① 밴드 진입   zone ≤ ATTRACTIVE 인 DEEP_DIVED 노드
+② 근접        gap_to_attractive_pct ≤ 15%
+③ 커버리지 구멍  HEAT/WARM 인데 DEEP_DIVED 노드 0인 산업
+```
+③이 이 보드의 존재 이유에 가장 가깝다 — 깔때기(00 §0)가 어디서 막혔는지를 드러낸다.
+①②만 있으면 이 보드는 가격 트래커가 된다. **③은 생략 불가.**
+
+**필수 병기 (하나라도 빠지면 스펙 위반):**
+- 각 행에 산업 티어 배지 · `freshness` · `tripwire_status` · 딥다이브 `as_of`
+- `display_suppressed=true` 행은 zone 강조 해제 + 밴드 수치 접기
+- 주가에 `as_of` 병기
+- 보드 헤더 고지: **"표시는 딥다이브 산출의 인용이며 아틀라스의 매매 의견이 아님.
+  밴드 진입은 후보 등재 사유가 아님(§3B)."**
+
+**금지:** 스탠스만으로 정렬한 단독 랭킹, "매수/매도" 어휘, 아틀라스가 만든 목표가,
+`parse_confidence=UNKNOWN` 노드에 추정 밴드 표시.
 
 ---
 
@@ -367,6 +450,12 @@ tier_history가 이 시스템의 심장이다 — 순위가 "유기적으로 바
 3. 딥다이브가 발견한 산업 레벨 사실(수급, 선행지표, 경쟁 구도)을
    산업 카드와 엣지에 역반영 — 딥다이브는 온톨로지를 살찌우는 공정이다
 4. 분기 업데이트에서 스탠스가 바뀌면 노드의 deep_dive_ref도 갱신
+   - **(v1.4) 이 4단계가 `deep_dive_ref.stance`(밴드·EV·허들)의 유일한 갱신 경로다.**
+     아틀라스는 어떤 모드에서도 밴드를 새로 만들거나 고치지 않는다. 밴드가 낡았다고
+     판단되면 고치는 게 아니라 `freshness=STALE`로 표시하고 딥다이브에 되돌린다.
+   - 새 DATA_PACK을 통합할 때 `stance`를 원문 `stance_zone`과 함께 재구성하고,
+     기존 `stance_zone`은 새 값으로 교체한다(원문의 최신성 유지). 과거 원문은
+     `data/deepdive/`의 이전 날짜 파일이 보존한다.
 5. (v1.3) deep_dive_ref.kpi_tripwires는 저장으로 끝나지 않는다 — 이후 갱신에서
    REVISIT 트리거의 소스가 된다(§3B). 딥다이브가 산업 카드·엣지로 되먹임되듯
    (3단계), 종목 tripwire는 후보 원장으로 되먹임된다. 이것이 딥다이브→아틀라스
@@ -398,5 +487,17 @@ tier_history가 이 시스템의 심장이다 — 순위가 "유기적으로 바
 - [ ] (v1.3) REVISIT 동시 OPEN ≤5종
 - [ ] (v1.3) REVISIT 등재 사유에 가격·리스트 공백 0건
 - [ ] (v1.2) 버킷 B는 COLD/하강 + "바닥 반전 신호 확인"된 경우만 (COLD 사실만으론 후보 아님)
+
+**(v1.4) 스탠스 레이어 게이트 — 방화벽 검증**
+- [ ] **`stance_state`가 티어·balance·`deep_dive_candidates`에 영향 준 흔적 0건**
+      (이번 갱신의 티어 변경 근거에 가격·zone 어휘 0건)
+- [ ] 아틀라스가 신규 산출한 밴드·목표가·기대수익률 0건 (`stance`는 전부 딥다이브 인용)
+- [ ] `stance_zone` 원문 삭제·수정 0건 (구조화는 추가만)
+- [ ] 모든 `stance_state.price`에 `as_of`·`source` 병기
+- [ ] `parse_confidence=UNKNOWN` → `zone=UNKNOWN` 일치 (추정 밴드 0건)
+- [ ] `freshness=STALE` 또는 `tripwire_status=RED` → `display_suppressed=true` 일치
+- [ ] `freshness`가 `deep_dive_ref.as_of` 경과와 일치 (수기 지정 0건)
+- [ ] 스탠스 보드에 커버리지 구멍(③) 블록 존재 (①②만 있는 보드 = 스펙 위반)
+- [ ] 뷰 교체가 있었다면: CONSOLE·GRAPH·MAP의 `ATLAS_DERIVE` 블록 3개 md5 일치
 - [ ] (v1.2) 선행지표 롤오버한 HEAT/WARM은 후보 아닌 peak_watch로 표기
 - [ ] (v1.2) 축은 3개 초과 금지 (금리·환율·밸류에이션 배수 등은 딥다이브 하위 변수)
