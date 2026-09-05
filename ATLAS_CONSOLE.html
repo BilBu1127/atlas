@@ -71,6 +71,51 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;
 .flt .fc{font-family:var(--mono);font-size:10px;color:var(--faint);margin-left:auto}
 .flt.off{opacity:.32}
 .canvas{padding:16px 20px 40px;min-width:0}
+
+/* ── 스탠스 보드 ── */
+.vswitch{display:flex;gap:2px;padding:0 20px;margin-top:14px}
+.vswitch button{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;color:var(--faint);
+  background:transparent;border:1px solid transparent;padding:6px 11px;border-radius:4px;cursor:pointer}
+.vswitch button:hover{color:var(--ink);background:var(--bg2)}
+.vswitch button.cur{color:var(--teal);border-color:var(--line2);background:var(--bg1)}
+.vswitch button:focus-visible{outline:2px solid var(--teal);outline-offset:1px}
+.sbwrap{padding:6px 20px 40px}
+.sbnote{font-size:11.5px;color:var(--faint);line-height:1.65;border-left:2px solid var(--line2);
+  padding:2px 0 2px 11px;margin:10px 0 20px}
+.sbsec{margin-bottom:30px}
+.sbh{display:flex;align-items:baseline;gap:9px;padding-bottom:7px;margin-bottom:11px;
+  border-bottom:1px solid var(--line)}
+.sbh h3{margin:0;font-size:14px;font-weight:600;color:var(--ink)}
+.sbh .n{font-family:var(--mono);font-size:10px;color:var(--faint)}
+.sbh .sub{font-size:11.5px;color:var(--dim);margin-left:auto}
+table.sb{width:100%;border-collapse:collapse;font-size:12.5px}
+table.sb th{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;color:var(--faint);
+  text-align:left;font-weight:400;padding:0 10px 7px 0;border-bottom:1px solid var(--line)}
+table.sb th.r,table.sb td.r{text-align:right}
+table.sb td{padding:8px 10px 8px 0;border-bottom:1px solid var(--line);vertical-align:top}
+table.sb tr:hover td{background:var(--bg1)}
+.tk{font-family:var(--mono);font-size:12.5px;color:var(--ink);letter-spacing:.03em}
+.px{font-family:var(--mono);font-size:12px;color:var(--dim)}
+.zn{font-family:var(--mono);font-size:10px;letter-spacing:.06em;padding:2px 7px;border-radius:3px;
+  border:1px solid var(--line2);color:var(--dim);white-space:nowrap}
+.zn.agg{color:var(--heat);border-color:var(--heat)}
+.zn.att{color:var(--teal);border-color:var(--teal)}
+.tb{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;padding:1px 6px;border-radius:3px;
+  border:1px solid var(--line2);color:var(--faint);white-space:nowrap}
+.indn{color:var(--dim);font-size:12px}
+.gapv{font-family:var(--mono);font-size:12px;color:var(--warm)}
+.pill{display:inline-block;font-family:var(--mono);font-size:11px;color:var(--dim);
+  background:var(--bg2);border:1px solid var(--line);border-radius:3px;padding:3px 8px;margin:0 4px 5px 0}
+.holes{display:flex;flex-wrap:wrap;gap:6px}
+.hole{display:flex;align-items:center;gap:8px;background:var(--bg1);border:1px solid var(--line);
+  border-radius:4px;padding:7px 11px}
+.flags{font-size:12px;color:var(--dim);line-height:1.7}
+.flags li{margin-bottom:5px}
+.flags b{color:var(--ink);font-family:var(--mono);font-size:11.5px}
+@media(max-width:760px){
+  .vswitch,.sbwrap{padding-left:14px;padding-right:14px}
+  table.sb th:nth-child(4),table.sb td:nth-child(4){display:none}
+}
 .sector{scroll-margin-top:64px;margin-bottom:22px}
 .shead{display:flex;align-items:baseline;gap:10px;margin:0 0 10px;padding-bottom:7px;border-bottom:1px solid var(--line)}
 .shead .sc{font-family:var(--mono);font-size:10px;letter-spacing:.14em;color:var(--teal)}
@@ -258,7 +303,11 @@ details.co.dd[open] .ddcaret{transform:rotate(90deg)}
   </div>
   <div class="strip">
     <span class="warn">Advisory</span>
-    <span>티어·role = <b>조사 우선순위</b>이며 매매 신호가 아님. 기업은 <b>미검증(SHALLOW)</b> 후보 분류 — 진위는 딥다이브에서 검증.</span>
+    <span>티어·role = <b>조사 우선순위</b>이며 매매 신호가 아님. 기업 노드는 <b>미검증</b>과 <b>딥다이브 검증</b>으로 구분되며, 검증 노드의 스탠스는 딥다이브 산출의 <b>인용</b>이다.</span>
+  </div>
+  <div class="vswitch" id="vswitch">
+    <button type="button" data-v="browse" class="cur">섹터 브라우저</button>
+    <button type="button" data-v="stance">스탠스 보드</button>
   </div>
   <div class="main">
     <aside class="rail">
@@ -271,6 +320,7 @@ details.co.dd[open] .ddcaret{transform:rotate(90deg)}
       <div class="diffwrap" id="diffwrap"></div>
       <div id="canvas"></div>
       <div class="block"><div class="bh">Cross-Sector Themes · 수요 원천</div><div class="themes" id="themes"></div></div>
+      <div class="sbwrap" id="stanceBoard" hidden></div>
     </div>
   </div>
   <div class="status">
@@ -639,6 +689,107 @@ function toast(msg){ let t=document.createElement('div'); t.textContent=msg;
 scrim.onclick=closeDrawer;
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer();});
 
+/* ===== 스탠스 보드 (01 §6A) =====
+   딥다이브가 정한 진입 밴드 대비 현재 위치를 표시한다.
+   읽기 전용 — 티어·후보 등재에 영향을 주지 않는다(00 §0 방화벽). */
+const ZKO={AGGRESSIVE:'적극 관심 구간',ATTRACTIVE:'매력 구간',WATCH:'관망',AVOID:'회피',UNKNOWN:'판단 불가'};
+const ZCLS={AGGRESSIVE:'agg',ATTRACTIVE:'att'};
+const ZORD={AGGRESSIVE:0,ATTRACTIVE:1,WATCH:2,AVOID:3,UNKNOWN:4};
+const TORD={HEAT:0,WARM:1,NEUTRAL:2,COLD:3,FROZEN:4};
+
+function stanceRows(){
+  const pack=window.PACK; if(!pack) return [];
+  const out=[];
+  (pack.company_nodes||[]).forEach(n=>{
+    const st=n.stance_state; if(!st) return;
+    const ind=(n.industries||[])[0]; const o=IND_BY_ID[ind]||{};
+    out.push({tk:n.ticker,nm:n.name,zone:st.zone,gap:st.gap_to_attractive_pct,
+      price:(st.price||{}).value,asof:(st.price||{}).as_of,
+      supp:st.display_suppressed,fresh:st.freshness,
+      ind:ind,indn:o.name||ind,tier:o.tier||'—',
+      label:((n.deep_dive_ref||{}).atlas_stance||{}).label||'UNKNOWN'});
+  });
+  return out;
+}
+function sbRow(r,showGap){
+  const zc=ZCLS[r.zone]&&!r.supp?' '+ZCLS[r.zone]:'';
+  return `<tr>
+    <td><span class="tk">${esc(r.tk)}</span></td>
+    <td class="r"><span class="px">${r.price!=null?'$'+r.price:'—'}</span></td>
+    <td><span class="zn${zc}">${ZKO[r.zone]||r.zone}</span></td>
+    <td><span class="tb" style="color:${TIER_COLOR[r.tier]||'var(--faint)'}">${TIER_KO[r.tier]||r.tier}</span>
+        <span class="indn">${esc(r.indn)}</span></td>
+    ${showGap?`<td class="r"><span class="gapv">+${r.gap}%</span></td>`:''}
+  </tr>`;
+}
+function renderStanceBoard(){
+  const el=$('stanceBoard'); if(el.dataset.done) return; el.dataset.done='1';
+  const rows=stanceRows();
+  const entered=rows.filter(r=>(r.zone==='AGGRESSIVE'||r.zone==='ATTRACTIVE')&&!r.supp)
+    .sort((a,b)=>(TORD[a.tier]??9)-(TORD[b.tier]??9)||ZORD[a.zone]-ZORD[b.zone]||a.tk.localeCompare(b.tk));
+  const near=rows.filter(r=>!r.supp&&r.gap!=null&&r.gap>0&&r.gap<=15&&r.zone!=='AGGRESSIVE'&&r.zone!=='ATTRACTIVE')
+    .sort((a,b)=>a.gap-b.gap);
+  const rest=g=>rows.filter(r=>r.zone===g).map(r=>r.tk).sort();
+
+  /* 커버리지 구멍: HEAT/WARM인데 딥다이브 노드 0 */
+  const covered=new Set();
+  (window.PACK.company_nodes||[]).forEach(n=>{
+    if(n.verification==='DEEP_DIVED')(n.industries||[]).forEach(i=>covered.add(i));});
+  const holes=DATA.industries.filter(o=>(o.tier==='HEAT'||o.tier==='WARM')&&!covered.has(o.id))
+    .sort((a,b)=>(TORD[a.tier]??9)-(TORD[b.tier]??9));
+
+  const TH=(g)=>`<tr><th>종목</th><th class="r">주가</th><th>위치</th><th>산업</th>${g?'<th class="r">매력 구간까지</th>':''}</tr>`;
+  el.innerHTML=`
+  <div class="sbnote">딥다이브가 정한 진입 밴드와 그 시점 주가를 대조한 결과다. 딥다이브 판단의 <b>인용</b>이지 아틀라스의 매매 의견이 아니다.<br>
+    밴드 진입은 딥다이브 후보 등재 사유가 되지 않는다. 주가는 딥다이브 시점 스냅샷이며 실시간이 아니다.</div>
+
+  <section class="sbsec">
+    <div class="sbh"><h3>밴드에 들어온 종목</h3><span class="n">${entered.length}</span>
+      <span class="sub">산업 티어 순 · 같은 티어 안에서는 진입 깊이 순</span></div>
+    ${entered.length?`<table class="sb">${TH(false)}${entered.map(r=>sbRow(r,false)).join('')}</table>`
+      :`<div class="sbnote">지금 밴드 안에 들어온 종목이 없다.</div>`}
+  </section>
+
+  <section class="sbsec">
+    <div class="sbh"><h3>매력 구간에 가까운 종목</h3><span class="n">${near.length}</span>
+      <span class="sub">상단까지 15% 이내</span></div>
+    ${near.length?`<table class="sb">${TH(true)}${near.map(r=>sbRow(r,true)).join('')}</table>`
+      :`<div class="sbnote">해당 종목이 없다.</div>`}
+  </section>
+
+  <section class="sbsec">
+    <div class="sbh"><h3>커버리지 구멍</h3><span class="n">${holes.length}</span>
+      <span class="sub">산업은 데워졌는데 검증된 종목이 없는 곳</span></div>
+    ${holes.length?`<div class="holes">${holes.map(o=>`<div class="hole">
+      <span class="tb" style="color:${TIER_COLOR[o.tier]}">${TIER_KO[o.tier]}</span>
+      <span class="tk">${o.id}</span><span class="indn">${esc(o.name)}</span></div>`).join('')}</div>`
+      :`<div class="sbnote">구멍 없음.</div>`}
+  </section>
+
+  <section class="sbsec">
+    <div class="sbh"><h3>나머지</h3><span class="n">${rows.length}</span></div>
+    <div style="font-size:11.5px;color:var(--faint);margin-bottom:6px">관망 ${rest('WATCH').length}</div>
+    <div>${rest('WATCH').map(t=>`<span class="pill">${t}</span>`).join('')}</div>
+    <div style="font-size:11.5px;color:var(--faint);margin:14px 0 6px">회피 ${rest('AVOID').length}</div>
+    <div>${rest('AVOID').map(t=>`<span class="pill">${t}</span>`).join('')}</div>
+    <div style="font-size:11.5px;color:var(--faint);margin:14px 0 6px">판단 불가 ${rest('UNKNOWN').length} — 딥다이브 팩에 가격 밴드가 없어 위치를 계산할 수 없다</div>
+    <div>${rest('UNKNOWN').map(t=>`<span class="pill">${t}</span>`).join('')}</div>
+  </section>`;
+}
+$('vswitch').addEventListener('click',e=>{
+  const b=e.target.closest('button[data-v]'); if(!b) return;
+  const v=b.dataset.v;
+  document.querySelectorAll('#vswitch button').forEach(x=>x.classList.toggle('cur',x===b));
+  const browse=v==='browse';
+  $('canvas').hidden=!browse;
+  $('diffwrap').hidden=!browse;
+  document.querySelectorAll('.canvas .block').forEach(x=>x.hidden=!browse);
+  document.querySelector('.rail').style.visibility=browse?'':'hidden';
+  $('stanceBoard').hidden=browse;
+  if(!browse) renderStanceBoard();
+  window.scrollTo({top:0});
+});
+
 /* scroll-spy */
 const obs=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting){
   const code=en.target.id.replace('sec-','');
@@ -656,6 +807,7 @@ document.querySelectorAll('.sector').forEach(s=>obs.observe(s));
   }
   fetch('./data/ATLAS_PACK.json').then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
     .then(function(pack){
+      window.PACK = pack;
       window.DATA = ATLAS_DERIVE.deriveConsole(pack, ATLAS_DERIVE.deriveGraph(pack));
       (0,eval)(document.getElementById('appcode').textContent);
     })
