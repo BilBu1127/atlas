@@ -1,6 +1,6 @@
 {
  "meta": {
-  "version": "ATLAS_PACK_2026-08_UPDATE6_v2.2",
+  "version": "ATLAS_PACK_2026-08_UPDATE6_v2.3",
   "as_of": "2026-08 (UPDATE-6 딥다이브통합 완료 배치6/6, 2026-08-30)",
   "build_progress": "BUILD 1~7 완료 후 네 번째 월간 갱신(UPDATE-4, 딥다이브 통합형 B타입). 바텀업 딥다이브 21종 통합(§7A): 14종 승격(AMKR·CEG·EQIX·ET·FSLR·GEV·IRM·LNG·LRCX·RTX·SCCO·VLO·VRT·WMB) + 7종 신설(ALM·BE·FORM·NBIS·OII·TDW·VG). 톱다운: 티어 변경 0 — 21종 스탠스가 압도적 회피/관망/WATCH(밸류 만개)로 상향 트리거 미형성, 수요 견조로 하향 트리거도 없음. MAT-02(SCCO 구리·ALM 텅스텐)·ITC-02(AMKR 후공정)·IND-02(RTX)·IND-03(GEV·VRT·BE)·RLE-02(EQIX·IRM·NBIS) HEAT 재확인·선행지표 강화; UTL-02(CEG=발전측 4번째 corroboration, VST/CCJ/LEU 후)로 HEAT 근거 추가 보강하되 B타입이라 WARM 유지(승격은 전면스캔 이관); ITC-03(FORM·LRCX)·ENE-01(OII·TDW)·ENE-02(ET·WMB)·ENE-03(VLO)·ENE-04(LNG·VG)·UTL-03(FSLR) 종목 확인·산업 티어 유지. AI·전력·DC 클러스터 엣지 완비로 신규 산업엣지 불필요; §3A 아웃바운드 2홉 워크·51종 전면스캔은 다음 정식 월간으로 이관(부채 유지).",
   "prev_version": "ATLAS_PACK_2026-08_UPDATE6_v2.1",
@@ -106,7 +106,8 @@
    "RESOLVED(UPDATE-5): ENE-05·MAT-03 cold_reversal_signal 필드 보강 완료.",
    "RESOLVED(UPDATE-5): §3A 아웃바운드 2홉 전파 워크 실행 — 임계 통과 노드 0, 감시강화만 기록.",
    "RESOLVED(UPDATE-5): BUILD7 최종정산 잔여(provisional=0·섬해소·필드) 전부 확정.",
-   "잔여: fresh 40종 중 비-AI(ENE·FIN·소비재·비HLT02 헬스·비MAT02 소재·유틸) 다수는 UPDATE-4 freshness 기반 유지 — 차기 갱신에서 톱다운 재확인 권장(coverage_honesty 참조)."
+   "잔여: fresh 40종 중 비-AI(ENE·FIN·소비재·비HLT02 헬스·비MAT02 소재·유틸) 다수는 UPDATE-4 freshness 기반 유지 — 차기 갱신에서 톱다운 재확인 권장(coverage_honesty 참조).",
+   "스탠스 통관(Phase2B): 71종 atlas_stance 소급 기록(contract_source=ATLAS_DERIVED). NEUTRAL/COLD 15종 미통관. tripwire_status 전량 UNKNOWN(미판정). 팩 내부 불일치 플래그 15건 — GEV(EV>가격인데 회피)·VLO(조건부관심인데 IRR −13.9%) 우선 확인."
   ]
  },
  "themes": [
@@ -8117,7 +8118,63 @@
      "Americas 리치 YE26 ≥300Mlb (red <250)",
      "단위 순현금원가 Q2'26 $1.97 (green <$1.80)",
      "ICSG 정련수지 2027 +377kt"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "EV",
+     "valuation_mode": "Mode D - Cyclical / Commodity",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 45,
+       "tier": "AGGRESSIVE",
+       "src": "strong_interest"
+      },
+      {
+       "lo": 45,
+       "hi": 56,
+       "tier": "ATTRACTIVE",
+       "src": "watch_accumulate"
+      },
+      {
+       "lo": 56,
+       "hi": 64.5,
+       "tier": "WATCH",
+       "src": "watch"
+      },
+      {
+       "lo": 64.5,
+       "hi": 72,
+       "tier": "AVOID",
+       "src": "trim"
+      },
+      {
+       "lo": 72,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "avoid"
+      }
+     ],
+     "ref_price": 76.66,
+     "price_asof": "2026-08-21",
+     "hurdle": 0.12,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone 'AVOID / TRIM'. EV 61.6 < 현재가, U/D 0.371"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 76.66,
+     "as_of": "2026-08-21",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 36.9,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -8138,7 +8195,57 @@
      "반부산물 前 순현금원가 ≤$2.20/lb(현 $2.297 YELLOW)",
      "Tía María 2H27 초도생산 일정 유지",
      "구리가 >$6/lb를 4개 분기(물리적 적자 기반)"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode D — Cyclical / Commodity; Mode F — Asset / NAV cross-check",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 125,
+       "tier": "AGGRESSIVE",
+       "src": "<125 적극 관심"
+      },
+      {
+       "lo": 125,
+       "hi": 160,
+       "tier": "ATTRACTIVE",
+       "src": "125–160 관심"
+      },
+      {
+       "lo": 160,
+       "hi": 190,
+       "tier": "WATCH",
+       "src": "160–190 관망"
+      },
+      {
+       "lo": 190,
+       "hi": null,
+       "tier": "AVOID",
+       "src": ">190 고평가"
+      }
+     ],
+     "ref_price": 216.86,
+     "price_asof": "2026-08-24",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "B계열. zone 'STRETCHED — 신규 매수 보류'. IRR −4.1%, EV 166.1"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 216.86,
+     "as_of": "2026-08-24",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 35.5,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -8195,7 +8302,45 @@
      "HVC MLE 프로젝트비 $2.1–2.4B",
      "中 합병승인 pending",
      "구리가 $6.05/lb"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "valuation_mode": "D - Cyclical / Commodity + merger-linked cross-check",
+     "ladder": [
+      {
+       "lo": 55,
+       "hi": 60,
+       "tier": "AGGRESSIVE",
+       "src": "active_interest"
+      },
+      {
+       "lo": 60,
+       "hi": 62,
+       "tier": "ATTRACTIVE",
+       "src": "conditional"
+      }
+     ],
+     "ref_price": null,
+     "price_asof": "2026-08-21",
+     "hurdle": 0.125,
+     "hurdle_unit": "decimal",
+     "derived_note": "★밴드 중첩: 팩의 stronger_margin_of_safety 'USD 58 이하'가 active_interest 55-60과 겹쳐 사다리에서 제외(해소하지 않음). 현재가 필드 부재. zone '회피/축소 검토', IRR 2.87%<허들 12.5%, U/D 0.86"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": null,
+     "as_of": "2026-08-21",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -8216,7 +8361,63 @@
      "총 처리량 ≥3.0mb/d",
      "걸프코스트 배럴당 영업이익(현 $17.38)",
      "DGD 갤런당 영업이익 정상화"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "ATTRACTIVE",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode D - Cyclical / Commodity",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 230,
+       "tier": "AGGRESSIVE",
+       "src": "<230 적극 관심"
+      },
+      {
+       "lo": 230,
+       "hi": 270,
+       "tier": "ATTRACTIVE",
+       "src": "230-270 분할매수 검토"
+      },
+      {
+       "lo": 270,
+       "hi": 310,
+       "tier": "WATCH",
+       "src": "270-310 관찰/보유 우위"
+      },
+      {
+       "lo": 310,
+       "hi": 340,
+       "tier": "AVOID",
+       "src": "310-340 신규매수 비선호"
+      },
+      {
+       "lo": 340,
+       "hi": null,
+       "tier": "AVOID",
+       "src": ">340 경계"
+      }
+     ],
+     "ref_price": 346.17,
+     "price_asof": "2026-08-24",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "B계열. zone 'Conditional interest / wait for a better entry price' — 라벨은 조건부 관심이나 현재가는 AVOID 구간. IRR −13.9%, EV 293.25"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 346.17,
+     "as_of": "2026-08-24",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 28.2,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -8282,7 +8483,63 @@
      "SPA 변동수수료 ≈115% HH 유지",
      "성장capex 대비 FCF/배당 커버리지",
      "Corpus Christi Stage 3 램프 일정"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode B Hybrid with parent DCF/share scenario engine",
+     "ladder": [
+      {
+       "lo": 185,
+       "hi": 195,
+       "tier": "AGGRESSIVE",
+       "src": "active_interest"
+      },
+      {
+       "lo": 195,
+       "hi": 215,
+       "tier": "ATTRACTIVE",
+       "src": "interest"
+      },
+      {
+       "lo": 215,
+       "hi": 235,
+       "tier": "WATCH",
+       "src": "recheck"
+      },
+      {
+       "lo": 235,
+       "hi": 270,
+       "tier": "WATCH",
+       "src": "watch"
+      },
+      {
+       "lo": 270,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "avoid_above"
+      }
+     ],
+     "ref_price": 280.79,
+     "price_asof": "",
+     "hurdle": 0.12,
+     "hurdle_unit": "decimal",
+     "derived_note": "price_asof 부재. zone '회피/축소 검토'. IRR 5.65%<허들 12%"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 280.79,
+     "as_of": "",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 30.6,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -8340,7 +8597,63 @@
      "분배 커버리지 ≥1.8x(현 2.17x)",
      "NGL 수출/수송 두 자릿수 물량 성장(현 +25%)",
      "레버리지 4.0~4.5x 목표 내 유지"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "ATTRACTIVE",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode C — Mature Compounder; attributable DCF/unit + terminal DCF",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 19.0,
+       "tier": "AGGRESSIVE",
+       "src": "strong_interest"
+      },
+      {
+       "lo": 19.0,
+       "hi": 20.0,
+       "tier": "ATTRACTIVE",
+       "src": "attractive"
+      },
+      {
+       "lo": 20.0,
+       "hi": 22.0,
+       "tier": "ATTRACTIVE",
+       "src": "conditional_interest"
+      },
+      {
+       "lo": 22.0,
+       "hi": 24.5,
+       "tier": "WATCH",
+       "src": "fair_hold"
+      },
+      {
+       "lo": 24.5,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "requires_execution_premium"
+      }
+     ],
+     "ref_price": 21.13,
+     "price_asof": "2026-08-24",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone '조건부 관심 / Accumulate on weakness'. IRR 10.95%, EV 23.7, U/D 1.986"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 21.13,
+     "as_of": "2026-08-24",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "ATTRACTIVE",
+    "gap_to_attractive_pct": -4.0,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -8361,7 +8674,63 @@
      "레버리지 ≤4.0x(현 3.67x)",
      "Power Innovation(Socrates North 4Q26) 일정",
      "AFFO/주 성장이 EBITDA 성장을 추종"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "NONE",
+     "valuation_mode": "C — Mature Compounder",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 58,
+       "tier": "AGGRESSIVE",
+       "src": "strong_accumulation"
+      },
+      {
+       "lo": 58,
+       "hi": 64,
+       "tier": "ATTRACTIVE",
+       "src": "accumulation"
+      },
+      {
+       "lo": 64,
+       "hi": 70,
+       "tier": "WATCH",
+       "src": "watch_selective"
+      },
+      {
+       "lo": 70,
+       "hi": 78,
+       "tier": "WATCH",
+       "src": "hold_fully_valued"
+      },
+      {
+       "lo": 78,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "rich"
+      }
+     ],
+     "ref_price": 71.63,
+     "price_asof": "2026-08-24",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "★정량근거 부재: IRR·EV·U/D 모두 없음. 밴드와 zone('WATCH / HOLD')만 존재 → label_basis=NONE이나 label은 성립"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 71.63,
+     "as_of": "2026-08-24",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 11.9,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -8390,7 +8759,57 @@
      "ALB 실현가 2Q26 $19.53/kg LCE (green >$22 2분기, red <$15 2분기)",
      "Energy Storage 판매량 65kt/Q, FY26 가이드 225–235kt",
      "정상화 현금전환 개선 여부"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode D — Cyclical / Commodity; SOTP + normalized",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 110,
+       "tier": "AGGRESSIVE",
+       "src": "attractive US$105-110 or below"
+      },
+      {
+       "lo": 110,
+       "hi": 120,
+       "tier": "ATTRACTIVE",
+       "src": "conditional"
+      },
+      {
+       "lo": 120,
+       "hi": 145,
+       "tier": "WATCH",
+       "src": "watch"
+      },
+      {
+       "lo": 145,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "rich_without_new_evidence"
+      }
+     ],
+     "ref_price": 143.25,
+     "price_asof": "2026-08-21",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "stance.zone 필드 부재(밴드만 존재). 원문 stance_zone은 'WATCH / 안전마진 대기, 기대 IRR −3.2%, U/D 0.7'. IRR −3.21%"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 143.25,
+     "as_of": "2026-08-21",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 19.4,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -8474,7 +8893,57 @@
      "Pratt 상업 aftermarket 성장 >15%(현 +25%)",
      "Pratt 조정 영업마진 ≥10%(현 8.3% YELLOW)",
      "Raytheon 조정 영업마진 ≥12.5%(현 12.6%)"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode C — Mature Compounder",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 170.65,
+       "tier": "ATTRACTIVE",
+       "src": "attractive_10pct_plus"
+      },
+      {
+       "lo": 170.66,
+       "hi": 183.64,
+       "tier": "ATTRACTIVE",
+       "src": "conditional_8_10pct"
+      },
+      {
+       "lo": 183.65,
+       "hi": 205.55,
+       "tier": "WATCH",
+       "src": "watch_5_8pct"
+      },
+      {
+       "lo": 205.56,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "priced_in"
+      }
+     ],
+     "ref_price": 209.22,
+     "price_asof": "2026-08-24",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "D계열(값이 중첩 dict, min/max/label). zone '관망 / 가격 조정 대기'. IRR 4.54%, EV 211.08"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 209.22,
+     "as_of": "2026-08-24",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 13.9,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -8522,7 +8991,57 @@
      "FSG 영업이익률 ≥24% (현 26.2%)",
      "ETG 유기 회복 (현 17%)",
      "M&A 통합·레버리지 관리"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "EV",
+     "valuation_mode": "Mode C — Mature Compounder",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 300,
+       "tier": "ATTRACTIVE",
+       "src": "HEI.attractive"
+      },
+      {
+       "lo": 300,
+       "hi": 325,
+       "tier": "WATCH",
+       "src": "HEI.watch"
+      },
+      {
+       "lo": 325,
+       "hi": 350,
+       "tier": "AVOID",
+       "src": "HEI.expensive"
+      },
+      {
+       "lo": 350,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "HEI.avoid"
+      }
+     ],
+     "ref_price": 352.67,
+     "price_asof": "2026-08-24",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "★판단: 팩이 HEI/HEI.A 두 주식클래스 사다리를 병기. 노드 티커가 HEI이므로 HEI 사다리만 전사. HEI.A(attractive<=240 / watch 240-260 / expensive>260)는 미반영. IRR 7.82 → 0.0782 단위정규화"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 352.67,
+     "as_of": "2026-08-24",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 17.6,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -8553,7 +9072,57 @@
      "Electrification 백로그 ≥$40B·organic >20%(현 $40.6B)",
      "Power/Elec EBITDA 마진 각 18%+ 유지",
      "Wind 2H26 흑자 전환으로 FY26 가이드 달성"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "EV",
+     "valuation_mode": "Mode B — Hybrid",
+     "ladder": [
+      {
+       "lo": 620,
+       "hi": 700,
+       "tier": "AGGRESSIVE",
+       "src": "aggressive_interest"
+      },
+      {
+       "lo": 700,
+       "hi": 760,
+       "tier": "ATTRACTIVE",
+       "src": "conditional_interest"
+      },
+      {
+       "lo": 760,
+       "hi": 925,
+       "tier": "WATCH",
+       "src": "watch_low_return"
+      },
+      {
+       "lo": 925,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "avoid_or_trim"
+      }
+     ],
+     "ref_price": 942.1,
+     "price_asof": "2026-08-24",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "★불일치 플래그: EV 1150.12 > 현재가 942.1(+22%)인데 zone은 '회피 / 축소 검토'이고 밴드는 >925 avoid_or_trim. 팩 내부 불일치를 해소하지 않고 양쪽 그대로 전사(제1조). 사용자 확인 요망"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 942.1,
+     "as_of": "2026-08-24",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 24.0,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -8575,7 +9144,63 @@
      "EA 백로그 YoY +33% (red <5%)",
      "미 DC 전력비중 4–5%→2030 9–17%",
      "EPRI 피크부하 2030 45–94GW"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode C — Mature Compounder",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 340,
+       "tier": "AGGRESSIVE",
+       "src": "stronger_margin_of_safety_below"
+      },
+      {
+       "lo": 340,
+       "hi": 365,
+       "tier": "ATTRACTIVE",
+       "src": "active_interest"
+      },
+      {
+       "lo": 365,
+       "hi": 385,
+       "tier": "ATTRACTIVE",
+       "src": "conditional_interest"
+      },
+      {
+       "lo": 385,
+       "hi": 400,
+       "tier": "WATCH",
+       "src": "watch_range"
+      },
+      {
+       "lo": 400,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "avoid_above"
+      }
+     ],
+     "ref_price": 419.2,
+     "price_asof": "2026-08-21",
+     "hurdle": 0.125,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone '회피 / 비중 축소 검토'. IRR 7.40% < 허들 12.5%, EV 364.77"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 419.2,
+     "as_of": "2026-08-21",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 8.9,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -8596,7 +9221,57 @@
      "조정 영업마진 ≥24%(현 23.8%)",
      "재고 증가율 둔화·출하 전환(Dec25~Jun26 +73.2% 경보)",
      "서비스 organic ≥20%(현 +11.7%)"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode B — Hybrid",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 188.0,
+       "tier": "AGGRESSIVE",
+       "src": "buy_zone_max"
+      },
+      {
+       "lo": 188.0,
+       "hi": 220.0,
+       "tier": "ATTRACTIVE",
+       "src": "conditional"
+      },
+      {
+       "lo": 220.0,
+       "hi": 240.0,
+       "tier": "WATCH",
+       "src": "watch"
+      },
+      {
+       "lo": 240.0,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "avoid_above"
+      }
+     ],
+     "ref_price": 254.94,
+     "price_asof": "2026-08-24",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "C계열(min/max 분리 키를 쌍으로 병합). zone 'AVOID_REDUCE'. IRR 10.46%, EV 240.06"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 254.94,
+     "as_of": "2026-08-24",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 15.9,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -8618,7 +9293,57 @@
      "Electrical 유기 ≥8% (현 18.3%)",
      "조정영업이익률 ≥23% (현 23.9%)",
      "Electrical 조정마진 ≥20.5%(NSI 후) (현 21.2%)"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode C — Mature Compounder",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 390,
+       "tier": "AGGRESSIVE",
+       "src": "<390"
+      },
+      {
+       "lo": 400,
+       "hi": 430,
+       "tier": "ATTRACTIVE",
+       "src": "400-430"
+      },
+      {
+       "lo": 430,
+       "hi": 470,
+       "tier": "WATCH",
+       "src": "430-470"
+      },
+      {
+       "lo": 470,
+       "hi": null,
+       "tier": "AVOID",
+       "src": ">470"
+      }
+     ],
+     "ref_price": 472.46,
+     "price_asof": "2026-08-26",
+     "hurdle": 0.1,
+     "hurdle_unit": "decimal",
+     "derived_note": "B계열. zone '회피/축소 — 신규매수 비선호'. IRR 7.67% < 허들 10%. 390~400 구간은 팩에 정의 없음 — 채우지 않음"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 472.46,
+     "as_of": "2026-08-26",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 9.9,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -8648,7 +9373,57 @@
      "총 ARR 성장 +6% (green ≥8%, red <5%)",
      "S&C 세그먼트 마진 34.8%",
      "수주 회복 신호"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "NONE",
+     "valuation_mode": "Mode C Mature Compounder + cyclical overlay",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 350,
+       "tier": "AGGRESSIVE",
+       "src": "strong_interest"
+      },
+      {
+       "lo": 350,
+       "hi": 390,
+       "tier": "ATTRACTIVE",
+       "src": "conditional_interest"
+      },
+      {
+       "lo": 390,
+       "hi": 430,
+       "tier": "WATCH",
+       "src": "neutral"
+      },
+      {
+       "lo": 430,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "valuation_heavy"
+      }
+     ],
+     "ref_price": 437.08,
+     "price_asof": "2026-08-21",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "정량근거 부재(IRR·EV·U/D 없음). zone '신규매수 보류 / 보유자 관망'"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 437.08,
+     "as_of": "2026-08-21",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 12.1,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -8878,7 +9653,63 @@
      "조정 Op EPS ≥$12.0 궤적",
      "Crane 재가동 NRC 마일스톤(2027~2028 목표)",
      "장기 클린 계약 추가 체결(920MW 이후)"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode B Hybrid; Mode D normalized commodity/cyclical",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 220,
+       "tier": "AGGRESSIVE",
+       "src": "<=220"
+      },
+      {
+       "lo": 220,
+       "hi": 240,
+       "tier": "ATTRACTIVE",
+       "src": "220-240"
+      },
+      {
+       "lo": 240,
+       "hi": 285,
+       "tier": "WATCH",
+       "src": "240-285"
+      },
+      {
+       "lo": 285,
+       "hi": 320,
+       "tier": "AVOID",
+       "src": "285-320"
+      },
+      {
+       "lo": 320,
+       "hi": null,
+       "tier": "AVOID",
+       "src": ">320"
+      }
+     ],
+     "ref_price": 273.43,
+     "price_asof": "2026-08-24",
+     "hurdle": 0.12,
+     "hurdle_unit": "decimal",
+     "derived_note": "B계열. zone '관망 / 조건부 매수'. IRR 8.93%<허들 12%, EV 244.67"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 273.43,
+     "as_of": "2026-08-24",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 13.9,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -8900,7 +9731,57 @@
      "PJM 용량가 2028/29 $325/MW-day",
      "헤지커버 2027 94%·2028 72%",
      "데이터센터 PPA 체결"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "ATTRACTIVE",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode D - Cyclical / Commodity",
+     "ladder": [
+      {
+       "lo": 115,
+       "hi": 125,
+       "tier": "AGGRESSIVE",
+       "src": "115-125 적극적으로 매력적"
+      },
+      {
+       "lo": 125,
+       "hi": 145,
+       "tier": "WATCH",
+       "src": "125-145 조건부 관심/관망"
+      },
+      {
+       "lo": 145,
+       "hi": 190,
+       "tier": "AVOID",
+       "src": "145-190 Base execution priced"
+      },
+      {
+       "lo": 190,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "190+"
+      }
+     ],
+     "ref_price": 136.21,
+     "price_asof": "2026-08-21",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "B계열. ATTRACTIVE 구간 정의 없음(적극→관망 직결). zone '관망에 가까운 조건부 관심'. IRR 11.67%"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 136.21,
+     "as_of": "2026-08-21",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": null,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -8922,7 +9803,69 @@
      "AWS PPA 램프 정상/가속 (red 축소/재협상)",
      "추가 DC 계약 named binding MW+COD+cost payer (red 장기 무전환)",
      "PJM 수급 희소성 유지 (red 급속 공급과잉)"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "ATTRACTIVE",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode B Hybrid; Mode D Cyclical/Commodity downside",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 270,
+       "tier": "AGGRESSIVE",
+       "src": "active_interest"
+      },
+      {
+       "lo": 270,
+       "hi": 285,
+       "tier": "ATTRACTIVE",
+       "src": "attractive_entry"
+      },
+      {
+       "lo": 285,
+       "hi": 305,
+       "tier": "ATTRACTIVE",
+       "src": "selective_interest"
+      },
+      {
+       "lo": 305,
+       "hi": 350,
+       "tier": "WATCH",
+       "src": "hold_watch"
+      },
+      {
+       "lo": 350,
+       "hi": 390,
+       "tier": "AVOID",
+       "src": "new_evidence_required"
+      },
+      {
+       "lo": 390,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "poor_asymmetry"
+      }
+     ],
+     "ref_price": 307.67,
+     "price_asof": "2026-08-25",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone '조건부 관심 / 관망 우위'. IRR 12.9%, EV 326.3. 주: 노드가 UTL-02 HEAT 승급 체인의 REVISIT 후보로 등재됨"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 307.67,
+     "as_of": "2026-08-25",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 0.9,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -8943,7 +9886,63 @@
      "외부구매 누수 축소 여부 (red 고가구매 구조화)",
      "장기계약가 $95.5/lb·현물 $86.4/lb",
      "2029 실현가 민감도(현물$100→$85, $160→$101)"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode B Hybrid SOTP",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 75,
+       "tier": "AGGRESSIVE",
+       "src": "active_interest"
+      },
+      {
+       "lo": 75,
+       "hi": 85,
+       "tier": "ATTRACTIVE",
+       "src": "conditional_interest"
+      },
+      {
+       "lo": 85,
+       "hi": 110,
+       "tier": "WATCH",
+       "src": "watch"
+      },
+      {
+       "lo": 110,
+       "hi": 120,
+       "tier": "AVOID",
+       "src": "low_new_buy_appeal"
+      },
+      {
+       "lo": 120,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "avoid_or_reduce_without_up_evidence"
+      }
+     ],
+     "ref_price": 102.51,
+     "price_asof": "2026-08-21",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone 'WATCH'. IRR 3.14%"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 102.51,
+     "as_of": "2026-08-21",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 20.6,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -8973,7 +9972,32 @@
      "HALEU 제조 수율/처리량 반복성",
      "LEU 백로그 $3.7B·확정분 $2.4B",
      "추가 확정 선불 오프테이크 체결"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "UNKNOWN",
+     "label_basis": "NONE",
+     "valuation_mode": "",
+     "ladder": [],
+     "ref_price": null,
+     "price_asof": "",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "팩에 stance·valuation 구조 전무. 원문 stance_zone '관망 / 공격적 신규매수 보류 (Bull U/D <1x)'"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": null,
+     "as_of": "",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -9196,7 +10220,57 @@
      "GM ≥18.5% 근단기(현 16.8%→Q3 가이드 18.5~19.5%)",
      "2.5D/HDFO 양산 engagement 수 증가(2027까지)",
      "Arizona 2027 qual·2028 초 양산 일정"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode B — Hybrid (cyclical OSAT core + advanced-packaging execution optionality)",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 42,
+       "tier": "AGGRESSIVE",
+       "src": "strong_attractive"
+      },
+      {
+       "lo": 42,
+       "hi": 45,
+       "tier": "ATTRACTIVE",
+       "src": "attractive_conditional"
+      },
+      {
+       "lo": 45,
+       "hi": 52,
+       "tier": "WATCH",
+       "src": "watch_fair"
+      },
+      {
+       "lo": 52,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "evidence_required_above"
+      }
+     ],
+     "ref_price": 47.9,
+     "price_asof": "2026-08-24",
+     "hurdle": 0.125,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone 'WATCH / 조건부 관심 — 12.5% hurdle 미달'. IRR 10.94%"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 47.9,
+     "as_of": "2026-08-24",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 6.4,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -9244,7 +10318,63 @@
      "영업마진 ≥38%(강한 사이클, 현 37.4%)",
      "중국 매출 비중 하락을 비중국 성장이 상쇄(현 34%)",
      "OCF/순이익 ≥0.9x 정상화(현 0.806)"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "NONE",
+     "valuation_mode": "Mode D",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 235,
+       "tier": "AGGRESSIVE",
+       "src": "strong_interest_if_thesis_intact"
+      },
+      {
+       "lo": 245,
+       "hi": 265,
+       "tier": "ATTRACTIVE",
+       "src": "attractive_entry"
+      },
+      {
+       "lo": 265,
+       "hi": 300,
+       "tier": "WATCH",
+       "src": "watch_zone"
+      },
+      {
+       "lo": 300,
+       "hi": 340,
+       "tier": "AVOID",
+       "src": "valuation_stretched"
+      },
+      {
+       "lo": 340,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "requires_upside_case"
+      }
+     ],
+     "ref_price": 310.17,
+     "price_asof": "2026-08-24",
+     "hurdle": 0.12,
+     "hurdle_unit": "decimal",
+     "derived_note": "★사다리 공백 235~245. IRR·EV·U/D 부재(허들만 존재). zone '관망 / 가격 대기'"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 310.17,
+     "as_of": "2026-08-24",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 17.0,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -9328,7 +10458,63 @@
      "ISG 영업이익률 개선",
      "정상화 CFO/NI ~1.0 회복",
      "스토리지 회복 여부"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode C Mature Compounder primary + Mode D hardware cross-check",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 275,
+       "tier": "AGGRESSIVE",
+       "src": "깊은 안전마진"
+      },
+      {
+       "lo": 275,
+       "hi": 290,
+       "tier": "AGGRESSIVE",
+       "src": "매수 검토 구간"
+      },
+      {
+       "lo": 290,
+       "hi": 330,
+       "tier": "ATTRACTIVE",
+       "src": "조건부 관심 구간"
+      },
+      {
+       "lo": 330,
+       "hi": 400,
+       "tier": "WATCH",
+       "src": "관망 / 질적 증명 대기"
+      },
+      {
+       "lo": 400,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "기대치 부담 / 회피"
+      }
+     ],
+     "ref_price": 442.08,
+     "price_asof": "2026-08-21",
+     "hurdle": 0.12,
+     "hurdle_unit": "decimal",
+     "derived_note": "list-of-dict. zone '회피/축소 검토'. IRR −1.57%<허들 12%, EV 322.60"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 442.08,
+     "as_of": "2026-08-21",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 34.0,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -9360,7 +10546,63 @@
      "DC 이더넷 점유 ~20.7% 유지/상승 (red 지속 <18%)",
      "공급흡수: 재고 vs 매출 동반소진 (red obsolete reserve 급증)",
      "1.6T named production deployment (red 지연·경쟁 대체)"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "EV",
+     "valuation_mode": "Mode B — Hybrid",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 140,
+       "tier": "AGGRESSIVE",
+       "src": "active_interest"
+      },
+      {
+       "lo": 140,
+       "hi": 170,
+       "tier": "ATTRACTIVE",
+       "src": "conditional_interest"
+      },
+      {
+       "lo": 170,
+       "hi": 200,
+       "tier": "WATCH",
+       "src": "watch_avoid_new_buy"
+      },
+      {
+       "lo": 200,
+       "hi": 220,
+       "tier": "AVOID",
+       "src": "consider_reduce"
+      },
+      {
+       "lo": 220,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "high_execution_requirement"
+      }
+     ],
+     "ref_price": 190.94,
+     "price_asof": "2026-08-25",
+     "hurdle": 0.11,
+     "hurdle_unit": "decimal",
+     "derived_note": "허들 11.0 → 0.11 단위정규화. price_asof가 dict 구조라 날짜만 추출. zone '관망 / 신규진입 회피'. EV 197.09"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 190.94,
+     "as_of": "2026-08-25",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 12.3,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -9381,7 +10623,63 @@
      "GAAP 총이익률 ≥40% (현 38.5%=YELLOW, red <37%)",
      "Trailing 2Q 단순 FCF positive (현 -$869M=RED)",
      "재고증가 vs 매출 (red 재고 과속, 현 +79%)"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "ATTRACTIVE",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode B — Hybrid",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 240,
+       "tier": "AGGRESSIVE",
+       "src": "≤240"
+      },
+      {
+       "lo": 240,
+       "hi": 260,
+       "tier": "ATTRACTIVE",
+       "src": "240–260"
+      },
+      {
+       "lo": 260,
+       "hi": 320,
+       "tier": "WATCH",
+       "src": "260–320"
+      },
+      {
+       "lo": 320,
+       "hi": 375,
+       "tier": "AVOID",
+       "src": "320–375"
+      },
+      {
+       "lo": 375,
+       "hi": null,
+       "tier": "AVOID",
+       "src": ">375"
+      }
+     ],
+     "ref_price": 288.14,
+     "price_asof": "2026-08-25",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "D계열(값이 중첩 dict). IRR 13.4 → 0.134 단위정규화. zone '조건부 관심'. EV 319.26"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 288.14,
+     "as_of": "2026-08-25",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 10.8,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -9634,7 +10932,57 @@
      "광고매출 YoY +64%",
      "글로벌 ARPU YoY +36%",
      "국제 ARPU YoY +31%"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AGGRESSIVE",
+     "label_basis": "UD_RATIO",
+     "valuation_mode": "Mode B - Hybrid",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 155,
+       "tier": "AGGRESSIVE",
+       "src": "active_interest"
+      },
+      {
+       "lo": 155,
+       "hi": 191,
+       "tier": "ATTRACTIVE",
+       "src": "conditional_interest"
+      },
+      {
+       "lo": 191,
+       "hi": 212,
+       "tier": "AVOID",
+       "src": "avoid_reduce_asymmetry"
+      },
+      {
+       "lo": 212,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "avoid_reduce_irr_and_asymmetry"
+      }
+     ],
+     "ref_price": 153.29,
+     "price_asof": "2026-08-21",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone 'Active interest at $153.29; threshold ~$155 from U/D>=2x'. IRR·EV 부재, U/D 2.08이 유일 근거"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 153.29,
+     "as_of": "2026-08-21",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AGGRESSIVE",
+    "gap_to_attractive_pct": -19.7,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -9790,7 +11138,63 @@
      "미국 TTR 순차 수요성장 (현 Q2>2xQ1)",
      "non-TTR/nucresiran de-risking",
      "상환·가격 유지"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "ATTRACTIVE",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode B — Hybrid",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 197,
+       "tier": "AGGRESSIVE",
+       "src": "≤$197 (Buy zone)"
+      },
+      {
+       "lo": 197,
+       "hi": 215,
+       "tier": "ATTRACTIVE",
+       "src": ">$197–$215"
+      },
+      {
+       "lo": 215,
+       "hi": 250,
+       "tier": "WATCH",
+       "src": ">$215–$250"
+      },
+      {
+       "lo": 250,
+       "hi": 293,
+       "tier": "WATCH",
+       "src": ">$250–$293"
+      },
+      {
+       "lo": 293,
+       "hi": null,
+       "tier": "AVOID",
+       "src": ">$293"
+      }
+     ],
+     "ref_price": 236.01,
+     "price_asof": "2026-08-24",
+     "hurdle": 0.125,
+     "hurdle_unit": "decimal",
+     "derived_note": "B계열(키=가격). zone 'CONDITIONAL_INTEREST'. IRR 15.63%>허들 12.5%이나 현재가는 사다리상 WATCH — 팩 내 판단 그대로 전사"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 236.01,
+     "as_of": "2026-08-24",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 9.8,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -9829,7 +11233,32 @@
      "VANQUISH 완전등록",
      "경구 Phase3 4Q26 개시",
      "현금런웨이·R&D번 H1 $265.9M"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "UNKNOWN",
+     "label_basis": "NONE",
+     "valuation_mode": "",
+     "ladder": [],
+     "ref_price": null,
+     "price_asof": "2026-08-21",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "팩에 stance/valuation 구조 부재 — 밴드·IRR·EV·현재가 모두 없음. 추정 금지(제1·2조)"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": null,
+     "as_of": "2026-08-21",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -10131,7 +11560,63 @@
      "오가닉 FGAUM $858B (red flat/negative organic 2분기)",
      "오리지네이션 전환 LTM $317B·ACS 수수료 $277M",
      "Athene 순스프레드"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "ATTRACTIVE",
+     "label_basis": "NONE",
+     "valuation_mode": "Mode E Financial Institution with segment SOTP overlay",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 120,
+       "tier": "AGGRESSIVE",
+       "src": "active_interest_max"
+      },
+      {
+       "lo": 120,
+       "hi": 132,
+       "tier": "ATTRACTIVE",
+       "src": "attractive_entry"
+      },
+      {
+       "lo": 132,
+       "hi": 140,
+       "tier": "ATTRACTIVE",
+       "src": "conditional"
+      },
+      {
+       "lo": 140,
+       "hi": 150,
+       "tier": "WATCH",
+       "src": "hold_watch"
+      },
+      {
+       "lo": 150,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "avoid_chasing_above"
+      }
+     ],
+     "ref_price": 132.69,
+     "price_asof": "2026-08-21",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "C계열(low/high 8칸을 쌍으로 병합). 정량근거 부재(IRR·EV·U/D 없음). zone '조건부 관심'. 구형 팩(260823)"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 132.69,
+     "as_of": "2026-08-21",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "ATTRACTIVE",
+    "gap_to_attractive_pct": -5.2,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -10170,7 +11655,63 @@
      "기술 조직 ACV +15%",
      "프라이빗마켓 순유입 $50B/Q",
      "조정 영업이익률 45.9%"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode C Mature Compounder",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 950,
+       "tier": "AGGRESSIVE",
+       "src": "strong_attractive"
+      },
+      {
+       "lo": 950,
+       "hi": 1090,
+       "tier": "ATTRACTIVE",
+       "src": "attractive"
+      },
+      {
+       "lo": 1090,
+       "hi": 1200,
+       "tier": "WATCH",
+       "src": "watch_fair"
+      },
+      {
+       "lo": 1200,
+       "hi": 1350,
+       "tier": "AVOID",
+       "src": "expensive"
+      },
+      {
+       "lo": 1350,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "very_expensive"
+      }
+     ],
+     "ref_price": 1156.55,
+     "price_asof": "2026-08-21",
+     "hurdle": 0.115,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone 'WATCH'. IRR 9.63%<허들 11.5%, EV 1092.69"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 1156.55,
+     "as_of": "2026-08-21",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 6.1,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -10389,7 +11930,63 @@
      "순 인터커넥션 adds ≥8,000/분기(현 9,700)",
      "캐비닛 이용률 ≥78%+증설 동반",
      "안정화 cash-on-cash ≥20%(현 26%)"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode F — Asset / NAV with forward AFFO/share core engine",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 900,
+       "tier": "AGGRESSIVE",
+       "src": "strong_asymmetry"
+      },
+      {
+       "lo": 940,
+       "hi": 980,
+       "tier": "ATTRACTIVE",
+       "src": "attractive_entry"
+      },
+      {
+       "lo": 980,
+       "hi": 1100,
+       "tier": "WATCH",
+       "src": "watch_hold"
+      },
+      {
+       "lo": 1100,
+       "hi": 1200,
+       "tier": "AVOID",
+       "src": "high_end_execution_required"
+      },
+      {
+       "lo": 1200,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "up_case_required"
+      }
+     ],
+     "ref_price": 1055.2,
+     "price_asof": "2026-08-24",
+     "hurdle": 0.11,
+     "hurdle_unit": "decimal",
+     "derived_note": "★사다리 공백: 900~940 정의 없음. IRR 8.40%<허들 11%, EV 976.15"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 1055.2,
+     "as_of": "2026-08-24",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 7.7,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -10410,7 +12007,57 @@
      "순부채/조정EBITDA 4.7x (red >5.5x 2분기)",
      "개발 프리리스 54% (red <45%)",
      "임대 갱신 현금 스프레드 2Q26 +25.4%"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode F — Asset / NAV",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 175,
+       "tier": "AGGRESSIVE",
+       "src": "strong_interest"
+      },
+      {
+       "lo": 175,
+       "hi": 185,
+       "tier": "ATTRACTIVE",
+       "src": "conditional_interest"
+      },
+      {
+       "lo": 185,
+       "hi": 200,
+       "tier": "WATCH",
+       "src": "watch"
+      },
+      {
+       "lo": 210,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "low_attraction"
+      }
+     ],
+     "ref_price": null,
+     "price_asof": "2026-08-21",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "★사다리 공백: 200~210 팩에 정의 없음, 메우지 않음. 구형 팩(260823) — 현재가 필드 부재. IRR 10.38%"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": null,
+     "as_of": "2026-08-21",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -10431,7 +12078,63 @@
      "DC organic ≥30%(현 +38.7%)·프로젝트 슬립 없음",
      "AFFO/주 성장 ≥10%(현 +16.1%)",
      "희석 YoY ≤1.5%(현 1.52%)"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode F — Hybrid Asset/NAV (SOTP + AFFO/share + Reverse Expectations)",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 105,
+       "tier": "AGGRESSIVE",
+       "src": "strong_interest_if_thesis_intact"
+      },
+      {
+       "lo": 108,
+       "hi": 116,
+       "tier": "ATTRACTIVE",
+       "src": "attractive_entry"
+      },
+      {
+       "lo": 116,
+       "hi": 130,
+       "tier": "WATCH",
+       "src": "conditional_or_watch"
+      },
+      {
+       "lo": 130,
+       "hi": 135,
+       "tier": "WATCH",
+       "src": "fair_value_watch"
+      },
+      {
+       "lo": 135,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "avoid_new_or_review_existing"
+      }
+     ],
+     "ref_price": 121.19,
+     "price_asof": "",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "★팩 데이터 오류: price_asof 필드에 날짜가 아닌 가격값 '121.19'가 들어있음. 날짜 미상으로 비움(수정 안 함). 105~108 공백. IRR 8.68%, U/D 1.41"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 121.19,
+     "as_of": "",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 4.5,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -10960,7 +12663,45 @@
      "Payments 침투 ≥69% 상승 (현 68%)",
      "attach rate·마진 확대",
      "FCF 마진"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode B - Hybrid",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 110,
+       "tier": "AGGRESSIVE",
+       "src": "high_conviction_band"
+      },
+      {
+       "lo": 115,
+       "hi": 132,
+       "tier": "ATTRACTIVE",
+       "src": "attractive_entry_band"
+      }
+     ],
+     "ref_price": 152.9,
+     "price_asof": "2026-08-28",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "★사다리 부분: 팩의 current·base_2030_value·10/12/15pct_expected_irr_entry는 구간이 아니라 참조값이라 제외. WATCH·AVOID 구간 정의 없음. 110~115 공백. zone '신규 매수 회피/관망', IRR 6.32%"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 152.9,
+     "as_of": "2026-08-28",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": 15.8,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11078,7 +12819,32 @@
      "USDC YoY 성장/점유율: 2Q +19% YoY (green >30% 2분기, red <10% 2분기)",
      "NRM/RLDC 마진 2Q ~38.5%/~41% (red NRM<30%)",
      "토큰 제외 반복 기타매출 (FY26 ~$130–150M)"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "UNKNOWN",
+     "label_basis": "NONE",
+     "valuation_mode": "B — Hybrid",
+     "ladder": [],
+     "ref_price": 83.66,
+     "price_asof": "2026-08-20",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "stance.price_bands·IRR·EV 부재. 원문 stance_zone '높은 분산·관망 (애널 목표가 $37–243 극단 분산)' — 분산 자체가 결론이므로 밴드 없음이 정당(계약 제2조)"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 83.66,
+     "as_of": "2026-08-20",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11098,7 +12864,32 @@
      "Electron/HASTE 케이던스·미션 성공률 (red 반복 실패 or 다분기 케이던스 하락)",
      "Neutron 인증→첫 발사→반복 케이던스 (gating 마일스톤)",
      "현금전환·운전자본·고정가 프로그램 마진"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "UNKNOWN",
+     "label_basis": "NONE",
+     "valuation_mode": "Mode B Hybrid + Transaction-State Overlay",
+     "ladder": [],
+     "ref_price": null,
+     "price_asof": "2026-08-20",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "구형 팩(260823). stance.price_bands·IRR·EV 부재. 원문 stance_zone은 '높은 분산·관망' — 밴드 추정 금지"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": null,
+     "as_of": "2026-08-20",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11119,7 +12910,63 @@
      "진행 파트너 프로그램·다운스트림 수",
      "유동성/현금소진",
      "경제적 희석 주식수 증가"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "EV",
+     "valuation_mode": "Mode A/B Hybrid - Expectation-Driven v3.3 + SOTP/rNPV + Reverse Expectations",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 7.6,
+       "tier": "AGGRESSIVE",
+       "src": "active_interest"
+      },
+      {
+       "lo": 7.6,
+       "hi": 8.7,
+       "tier": "ATTRACTIVE",
+       "src": "conditional_interest"
+      },
+      {
+       "lo": 8.7,
+       "hi": 10.0,
+       "tier": "WATCH",
+       "src": "watch"
+      },
+      {
+       "lo": 10.0,
+       "hi": 13.0,
+       "tier": "AVOID",
+       "src": "avoid_chasing"
+      },
+      {
+       "lo": 13.0,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "success_priced"
+      }
+     ],
+     "ref_price": 11.32,
+     "price_asof": "2026-08-21",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone 원문 'WATCH / AVOID CHASING at current price' — 현재가는 avoid_chasing 구간. EV 11.62"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 11.32,
+     "as_of": "2026-08-21",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 30.1,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11140,7 +12987,51 @@
      "RPO/반복수주",
      "기여마진(CM) 경제성 입증",
      "양산 램프 수율"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode A Option-led primary / Mode B Hybrid cross-check",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 8.5,
+       "tier": "ATTRACTIVE",
+       "src": "attractive <=~$8.3-$8.5"
+      },
+      {
+       "lo": 8.5,
+       "hi": 9.6,
+       "tier": "ATTRACTIVE",
+       "src": "conditional_interest <=~$9.6"
+      },
+      {
+       "lo": 12,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "chase_risk >~$12"
+      }
+     ],
+     "ref_price": 10.34,
+     "price_asof": "2026-08-21",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "★사다리 공백 9.6~12(현재가 10.34가 이 공백에 위치). 팩의 current·base_present_value·probability_weighted_present_value는 참조값이라 제외. zone 'WATCH / avoid chasing'. IRR 12.62%"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 10.34,
+     "as_of": "2026-08-21",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": 7.7,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11161,7 +13052,32 @@
      "오퍼링 단위 마진",
      "고객 계약 파이프라인",
      "현금소진·희석"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "UNKNOWN",
+     "label_basis": "NONE",
+     "valuation_mode": "",
+     "ladder": [],
+     "ref_price": null,
+     "price_asof": "",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "팩에 stance·valuation 구조 전무"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": null,
+     "as_of": "",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11182,7 +13098,57 @@
      "제품 총마진 흑자 전환",
      "분기 현금소진",
      "희석 주식수"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode A — Option-led",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 1.4,
+       "tier": "AGGRESSIVE",
+       "src": "적극 관심 검토"
+      },
+      {
+       "lo": 1.4,
+       "hi": 1.65,
+       "tier": "ATTRACTIVE",
+       "src": "조건부 관심"
+      },
+      {
+       "lo": 1.65,
+       "hi": 2.0,
+       "tier": "ATTRACTIVE",
+       "src": "관심/증거 확인"
+      },
+      {
+       "lo": 2.0,
+       "hi": 2.5,
+       "tier": "WATCH",
+       "src": "관망 / 신규매수 보류"
+      }
+     ],
+     "ref_price": 2.04,
+     "price_asof": "2026-08-21",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "list-of-dict 구조. zone '관망 / 신규매수 보류'. IRR 14.09%"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 2.04,
+     "as_of": "2026-08-21",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 2.0,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11203,7 +13169,57 @@
      "현금흐름 손익분기 경로",
      "zilganersen 규제 결과",
      "plozasiran 경쟁 압력"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "ATTRACTIVE",
+     "label_basis": "IRR",
+     "valuation_mode": "B — Hybrid",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 55,
+       "tier": "AGGRESSIVE",
+       "src": "strong_interest"
+      },
+      {
+       "lo": 55,
+       "hi": 65,
+       "tier": "ATTRACTIVE",
+       "src": "conditional_interest"
+      },
+      {
+       "lo": 65,
+       "hi": 80,
+       "tier": "WATCH",
+       "src": "watch_hold"
+      },
+      {
+       "lo": 80,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "requires_upward_evidence_reset"
+      }
+     ],
+     "ref_price": 59.74,
+     "price_asof": "2026-08-21",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone '조건부 관심 / 실행확인형 매수 후보'. IRR 13.26%, U/D 2.20, EV 86.8"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 59.74,
+     "as_of": "2026-08-21",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "ATTRACTIVE",
+    "gap_to_attractive_pct": -8.1,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11224,7 +13240,57 @@
      "총마진 회복",
      "하이퍼스케일러 수주",
      "800G/1.6T 전환 캐파"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "NONE",
+     "valuation_mode": "Expectation-Driven Hybrid (Core / Execution / Ecosystem)",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 515,
+       "tier": "AGGRESSIVE",
+       "src": "<$515"
+      },
+      {
+       "lo": 515,
+       "hi": 650,
+       "tier": "ATTRACTIVE",
+       "src": "$515-$650"
+      },
+      {
+       "lo": 650,
+       "hi": 725,
+       "tier": "WATCH",
+       "src": "$650-$725"
+      },
+      {
+       "lo": 725,
+       "hi": null,
+       "tier": "AVOID",
+       "src": ">$725"
+      }
+     ],
+     "ref_price": 866.71,
+     "price_asof": "2026-08-21",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "list-of-dict(range/stance). 정량근거 부재. zone '회피 / 추격 금지'"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 866.71,
+     "as_of": "2026-08-21",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 33.3,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11245,7 +13311,63 @@
      "총마진 유지",
      "신제품 채택",
      "고객 집중/배당 FCF 커버"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode C - Mature Compounder",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 82,
+       "tier": "AGGRESSIVE",
+       "src": "<82"
+      },
+      {
+       "lo": 82,
+       "hi": 90,
+       "tier": "ATTRACTIVE",
+       "src": "82-90"
+      },
+      {
+       "lo": 90,
+       "hi": 98,
+       "tier": "ATTRACTIVE",
+       "src": "90-98"
+      },
+      {
+       "lo": 98,
+       "hi": 115,
+       "tier": "WATCH",
+       "src": "98-115"
+      },
+      {
+       "lo": 115,
+       "hi": null,
+       "tier": "AVOID",
+       "src": ">115"
+      }
+     ],
+     "ref_price": 109.89,
+     "price_asof": "2026-08-21",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "B계열. zone '관망 / 신규 진입 대기'. IRR 7.37%, EV 97.48"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 109.89,
+     "as_of": "2026-08-21",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 12.1,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11309,7 +13431,63 @@
      "골드구독 +39%",
      "이벤트계약 ~20배 증가",
      "카드 90일+ 연체 2.0%"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode E — Financial Institution adapted to hybrid",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 80,
+       "tier": "AGGRESSIVE",
+       "src": "<80"
+      },
+      {
+       "lo": 80,
+       "hi": 90,
+       "tier": "ATTRACTIVE",
+       "src": "80-90"
+      },
+      {
+       "lo": 90,
+       "hi": 100,
+       "tier": "WATCH",
+       "src": "90-100"
+      },
+      {
+       "lo": 100,
+       "hi": 120,
+       "tier": "AVOID",
+       "src": "100-120"
+      },
+      {
+       "lo": 120,
+       "hi": null,
+       "tier": "AVOID",
+       "src": ">120"
+      }
+     ],
+     "ref_price": 108.13,
+     "price_asof": "2026-08-21",
+     "hurdle": 0.12,
+     "hurdle_unit": "decimal",
+     "derived_note": "B계열. zone '회피/축소 — 사업 긍정, 가격 부정'. IRR 7.44%<허들 12%"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 108.13,
+     "as_of": "2026-08-21",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 20.1,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11331,7 +13509,57 @@
      "AMD Phase3/4 인도",
      "안정 NOI $365–411M/년",
      "계약 critical IT 241MW"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Hybrid — Core + Execution + Ecosystem − Funding/Dilution",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 15,
+       "tier": "AGGRESSIVE",
+       "src": "active_interest"
+      },
+      {
+       "lo": 15,
+       "hi": 17,
+       "tier": "ATTRACTIVE",
+       "src": "attractive_entry"
+      },
+      {
+       "lo": 17,
+       "hi": 22,
+       "tier": "WATCH",
+       "src": "watch"
+      },
+      {
+       "lo": 22,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "success_priced"
+      }
+     ],
+     "ref_price": 19.83,
+     "price_asof": "2026-08-21",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone '관망'. IRR 6.75%"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 19.83,
+     "as_of": "2026-08-21",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 16.6,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11352,7 +13580,63 @@
      "Data NRR 126%",
      "총마진 64.4%",
      "MRD 검사 9,000건"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode B — Hybrid",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 60,
+       "tier": "AGGRESSIVE",
+       "src": "strong_interest"
+      },
+      {
+       "lo": 60,
+       "hi": 65,
+       "tier": "ATTRACTIVE",
+       "src": "attractive"
+      },
+      {
+       "lo": 65,
+       "hi": 75,
+       "tier": "WATCH",
+       "src": "watch_fair"
+      },
+      {
+       "lo": 75,
+       "hi": 90,
+       "tier": "AVOID",
+       "src": "execution_premium"
+      },
+      {
+       "lo": 90,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "ecosystem_priced"
+      }
+     ],
+     "ref_price": 72.69,
+     "price_asof": "2026-08-21",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone 'WATCH / HOLD_IF_OWNED / SELECTIVE_NEW_ENTRY'. IRR 12.66%, EV 74.58"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 72.69,
+     "as_of": "2026-08-21",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 11.8,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11374,7 +13658,63 @@
      "2026 우라늄판매 1.5–2.0Mlb",
      "Tb/Dy 상업채택",
      "Donald FID Q3'26·ASM 통합"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode B Hybrid",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 11.8,
+       "tier": "AGGRESSIVE",
+       "src": "적극 재평가 / Buy-zone 후보"
+      },
+      {
+       "lo": 11.8,
+       "hi": 13.0,
+       "tier": "ATTRACTIVE",
+       "src": "조건부 관심"
+      },
+      {
+       "lo": 13.0,
+       "hi": 18.0,
+       "tier": "WATCH",
+       "src": "관망 / 신규매수 비선호"
+      },
+      {
+       "lo": 18.0,
+       "hi": 24.0,
+       "tier": "AVOID",
+       "src": "execution premium"
+      },
+      {
+       "lo": 24.0,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "ecosystem priced"
+      }
+     ],
+     "ref_price": 15.14,
+     "price_asof": "2026-08-21",
+     "hurdle": 0.12,
+     "hurdle_unit": "decimal",
+     "derived_note": "★신규 구조: price_bands가 dict가 아니라 list-of-dict(min/max/label/logic). 그대로 수용. IRR 4.4%<허들 12%"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 15.14,
+     "as_of": "2026-08-21",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 16.5,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11395,7 +13735,63 @@
      "최대고객 집중 91%",
      "정규화 총마진 24%",
      "2027 order proof"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "ATTRACTIVE",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode B — Hybrid",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 7.5,
+       "tier": "AGGRESSIVE",
+       "src": "<7.5"
+      },
+      {
+       "lo": 7.5,
+       "hi": 9.0,
+       "tier": "ATTRACTIVE",
+       "src": "7.5-9.0"
+      },
+      {
+       "lo": 9.0,
+       "hi": 11.5,
+       "tier": "WATCH",
+       "src": "9.0-11.5"
+      },
+      {
+       "lo": 11.5,
+       "hi": 15,
+       "tier": "AVOID",
+       "src": "11.5-15"
+      },
+      {
+       "lo": 15,
+       "hi": null,
+       "tier": "AVOID",
+       "src": ">15"
+      }
+     ],
+     "ref_price": 9.32,
+     "price_asof": "2026-08-21",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "B계열. zone '조건부 관심 / 증거 대기형'. IRR 23.12%, U/D 1.838. 현재가는 사다리상 WATCH 하단"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 9.32,
+     "as_of": "2026-08-21",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 3.6,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11416,7 +13812,32 @@
      "상동 Phase I 처리량·품위·회수율 설계치 수렴(2027 중반)",
      "Phase II 저증분 CAPEX 가시화·별도 오프테이크 확보",
      "GTP 오프테이크 21년/연 최소 210k MTU 실행"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "UNKNOWN",
+     "label_basis": "NONE",
+     "valuation_mode": "Mode D normalized commodity economics + Mode F risk-adjusted SOTP/NAV",
+     "ladder": [],
+     "ref_price": null,
+     "price_asof": "",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "stance.price_bands·IRR·EV·현재가 모두 부재. 원문 stance_zone은 '회피' 서술뿐 — 가격 정보 없음"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": null,
+     "as_of": "",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11438,7 +13859,57 @@
      "제품 non-GAAP GM ≥36% ex-abnormal(현 37.2%)",
      "톱고객 외 신규 firm MW 반복 증가(Oracle/AEP 외)",
      "워런티 충당 안정/감소(현 $58.3M 충당)"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode B — Hybrid / Expectation-Driven v3.3",
+     "ladder": [
+      {
+       "lo": 105,
+       "hi": 120,
+       "tier": "AGGRESSIVE",
+       "src": "active_interest"
+      },
+      {
+       "lo": 121,
+       "hi": 150,
+       "tier": "ATTRACTIVE",
+       "src": "conditional_interest"
+      },
+      {
+       "lo": 151,
+       "hi": 170,
+       "tier": "WATCH",
+       "src": "fair_value_watch"
+      },
+      {
+       "lo": 170,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "avoid_reduce_zone"
+      }
+     ],
+     "ref_price": 204.02,
+     "price_asof": "2026-08-24",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone '회피 / 축소 검토'. IRR 6.81%, U/D 0.43. 팩의 'current: $204.02'는 밴드가 아니라 참조값이므로 사다리에서 제외"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 204.02,
+     "as_of": "2026-08-24",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 36.0,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11459,7 +13930,63 @@
      "DRAM 매출 ≥$80m·HBM allocation 유지(현 $85m)",
      "Foundry&Logic ≥$120m(현 $121.8m)",
      "Texas 램프 late-Q4 2026 개시(>2분기 지연 시 반증)"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode B Hybrid + Mode D cyclical cross-check",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 63,
+       "tier": "AGGRESSIVE",
+       "src": "active_interest"
+      },
+      {
+       "lo": 63,
+       "hi": 76,
+       "tier": "ATTRACTIVE",
+       "src": "conditional_interest"
+      },
+      {
+       "lo": 76,
+       "hi": 81,
+       "tier": "WATCH",
+       "src": "watch"
+      },
+      {
+       "lo": 81,
+       "hi": 100,
+       "tier": "AVOID",
+       "src": "expectation_burden"
+      },
+      {
+       "lo": 100,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "avoid_or_trim_review"
+      }
+     ],
+     "ref_price": 106.99,
+     "price_asof": "2026-08-24",
+     "hurdle": 0.11,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone 'AVOID / trim review >$100'. IRR 2.65%<허들 11%, U/D 0.34"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 106.99,
+     "as_of": "2026-08-24",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 40.8,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11480,7 +14007,63 @@
      "장기계약 $/MW 매출밀도 유지",
      "AI Cloud EBITDA 마진 지속성(Q2 ~50%→Base 40% 가정)",
      "기업 희석 없이 고객/프로젝트 자본으로 성장 조달"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode B - Hybrid / Expectation-Driven",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 155,
+       "tier": "AGGRESSIVE",
+       "src": "aggressive_interest_max"
+      },
+      {
+       "lo": 155,
+       "hi": 180,
+       "tier": "ATTRACTIVE",
+       "src": "positive_interest"
+      },
+      {
+       "lo": 180,
+       "hi": 225,
+       "tier": "WATCH",
+       "src": "watch_neutral"
+      },
+      {
+       "lo": 225,
+       "hi": 275,
+       "tier": "AVOID",
+       "src": "bull_evidence_required"
+      },
+      {
+       "lo": 275,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "bull_dependent_min"
+      }
+     ],
+     "ref_price": 212.85,
+     "price_asof": "",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "price_asof 부재. zone 'WATCH / NEUTRAL'. IRR 12.35%, EV 212.65 ≈ 현재가"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 212.85,
+     "as_of": "",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 18.2,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11543,7 +14126,57 @@
      "CP2 건설원가·first LNG 일정",
      "순부채/펀딩 궤적",
      "BP 중재 결과(2027-05 심리)"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "EV",
+     "valuation_mode": "Mode F - project-level SOTP/NAV",
+     "ladder": [
+      {
+       "lo": 0,
+       "hi": 8.5,
+       "tier": "AGGRESSIVE",
+       "src": "매수 검토"
+      },
+      {
+       "lo": 8.5,
+       "hi": 10.5,
+       "tier": "ATTRACTIVE",
+       "src": "조건부 관심"
+      },
+      {
+       "lo": 10.5,
+       "hi": 12.5,
+       "tier": "WATCH",
+       "src": "관망"
+      },
+      {
+       "lo": 12.5,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "신규매수 비선호"
+      }
+     ],
+     "ref_price": 14.2,
+     "price_asof": "2026-08-24",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "list-of-dict(low/high/label/reason) 구조. 팩의 high=999는 개구간으로 보아 null 처리. EV 11.31<현재가, U/D 0.637"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 14.2,
+     "as_of": "2026-08-24",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 35.2,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11575,7 +14208,63 @@
      "개발원가 ≤$12M/MW (red >$13M 무보상)",
      "신규 담보부채 코스트 <7.5% (red >9.0% 반복)",
      "희석주식수 ≤330M FY27말 (red >350M)"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode F Asset/NAV with Mode B Hybrid execution overlay",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 24.8,
+       "tier": "AGGRESSIVE",
+       "src": "active_interest"
+      },
+      {
+       "lo": 24.8,
+       "hi": 26.6,
+       "tier": "ATTRACTIVE",
+       "src": "conditional_interest"
+      },
+      {
+       "lo": 26.6,
+       "hi": 34.5,
+       "tier": "WATCH",
+       "src": "watch"
+      },
+      {
+       "lo": 34.5,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "reduce_or_avoid"
+      },
+      {
+       "lo": 50,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "high_expectation_zone"
+      }
+     ],
+     "ref_price": 28.85,
+     "price_asof": "2026-08-25",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "AVOID 칸이 2개(>34.5, >50) — 팩이 중첩 정의. 병합하지 않고 둘 다 전사. IRR 8.81%, U/D 2.24"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 28.85,
+     "as_of": "2026-08-25",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 8.5,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11596,7 +14285,63 @@
      "Leased MW 1,119 유지+추가 IG 수주 (red 계약손실/디폴트)",
      "HDC GAAP 총이익률 ≥58% (red <52%)",
      "유동성(현금+디지털자산) 건설수요 선행 확보 (red 자금갭)"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode B — Hybrid",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 13,
+       "tier": "AGGRESSIVE",
+       "src": "deep_value"
+      },
+      {
+       "lo": 13,
+       "hi": 15.3,
+       "tier": "ATTRACTIVE",
+       "src": "attractive"
+      },
+      {
+       "lo": 15.3,
+       "hi": 21,
+       "tier": "WATCH",
+       "src": "fair_watch"
+      },
+      {
+       "lo": 21,
+       "hi": 27,
+       "tier": "AVOID",
+       "src": "execution_premium"
+      },
+      {
+       "lo": 27,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "ecosystem_priced"
+      }
+     ],
+     "ref_price": 18.03,
+     "price_asof": "2026-08-25",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone '관심 대기 / 가격 규율'. IRR 4.62%, EV 20.96"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 18.03,
+     "as_of": "2026-08-25",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 17.8,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11618,7 +14363,32 @@
      "HPC 매출비중 71.3%→>80% (red 램프 정체 하락)",
      "신규 critical-IT 리스 ≥250MW/12개월 (red 무수주+건설지연)",
      "파이프라인(Muskie/Hawkeye/Chesapeake) 계약 전환 (red power-only 잔존)"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AGGRESSIVE",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode B Hybrid + asset/NAV cross-check",
+     "ladder": [],
+     "ref_price": 16.32,
+     "price_asof": "2026-08-25",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "★밴드 없음·라벨 있음: zone '적극 관심 — 고위험·실행조건부', IRR 16.0%, U/D 2.517. 사다리 빈 채로 라벨만 성립(계약 v1이 허용하는 상태)"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 16.32,
+     "as_of": "2026-08-25",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11639,7 +14409,63 @@
      "1.6T qualification 완료·Q4 유의미 매출 (red 2027 슬립/취소)",
      "800G+1.6T 캐파 YE26 ≥600k/월 (현 200k, red <450k)",
      "Non-GAAP 총이익률 회복"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode B Hybrid / expectations-driven stabilized EBITDA",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 80,
+       "tier": "AGGRESSIVE",
+       "src": "attractive_positive_skew"
+      },
+      {
+       "lo": 80,
+       "hi": 100,
+       "tier": "ATTRACTIVE",
+       "src": "selective_accumulation"
+      },
+      {
+       "lo": 100,
+       "hi": 125,
+       "tier": "WATCH",
+       "src": "watch_hold"
+      },
+      {
+       "lo": 125,
+       "hi": 155,
+       "tier": "AVOID",
+       "src": "execution_confirmation_required"
+      },
+      {
+       "lo": 155,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "up_case_increasingly_priced"
+      }
+     ],
+     "ref_price": 113.84,
+     "price_asof": "2026-08-26",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone 'WATCH / HOLD — no chase'. IRR 12.1%, EV 103.93"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 113.84,
+     "as_of": "2026-08-26",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 13.8,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11661,7 +14487,57 @@
      "GAAP 총이익률 ≥66% (현 68%)",
      "재고/매출 <18% 안정 (현 18.8%)",
      "SBC/매출 <15%"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode B Hybrid / Expectation-Driven v3.3",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 140,
+       "tier": "AGGRESSIVE",
+       "src": "<=140"
+      },
+      {
+       "lo": 140,
+       "hi": 175,
+       "tier": "ATTRACTIVE",
+       "src": "140-175"
+      },
+      {
+       "lo": 175,
+       "hi": 200,
+       "tier": "WATCH",
+       "src": "175-200"
+      },
+      {
+       "lo": 200,
+       "hi": null,
+       "tier": "AVOID",
+       "src": ">200"
+      }
+     ],
+     "ref_price": 226.51,
+     "price_asof": "2026-08-25",
+     "hurdle": 0.12,
+     "hurdle_unit": "decimal",
+     "derived_note": "B계열. zone 'WATCH / REDUCE AT CURRENT PRICE'. IRR 5.20%<허들 12%, EV 176.32"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 226.51,
+     "as_of": "2026-08-25",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 29.4,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11682,7 +14558,63 @@
      "Optical NI 마진 ≥20.5% (현 21.1%, red <18% 2분기)",
      "Core 영업이익률 ≥21% (현 20.9%)",
      "Core ROIC →16% by 2027 (현 14.9%)"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode B — Hybrid / Expectation-Driven v3.3",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 105,
+       "tier": "AGGRESSIVE",
+       "src": "below_105"
+      },
+      {
+       "lo": 105,
+       "hi": 120,
+       "tier": "ATTRACTIVE",
+       "src": "105_to_120"
+      },
+      {
+       "lo": 120,
+       "hi": 135,
+       "tier": "WATCH",
+       "src": "120_to_135"
+      },
+      {
+       "lo": 135,
+       "hi": 165,
+       "tier": "AVOID",
+       "src": "135_to_165"
+      },
+      {
+       "lo": 165,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "above_165"
+      }
+     ],
+     "ref_price": 147.16,
+     "price_asof": "2026-08-25",
+     "hurdle": 0.12,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone '가격 부담 — 신규 진입 회피'. IRR 8.7%<허들 12%, EV 139.74"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 147.16,
+     "as_of": "2026-08-25",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 22.6,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11702,7 +14634,57 @@
      "H2 2026 $5M+ 오더 정시선적+repeat PO (red 2026 이후 슬립/취소)",
      "product-only 매출·GM 가시화 (red 2027까지 subscale)",
      "Lumilens qualification·현금 마일스톤"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode A — Option-led",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 5.02,
+       "tier": "AGGRESSIVE",
+       "src": "active_interest"
+      },
+      {
+       "lo": 5.02,
+       "hi": 6.67,
+       "tier": "ATTRACTIVE",
+       "src": "conditional_interest"
+      },
+      {
+       "lo": 6.67,
+       "hi": 7.34,
+       "tier": "WATCH",
+       "src": "watch"
+      },
+      {
+       "lo": 7.34,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "avoid_add"
+      }
+     ],
+     "ref_price": 8.02,
+     "price_asof": "2026-08-25",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone '회피 — 신규 비중확대 기준, U/D<1'. IRR 10.72%, EV 7.34, U/D 0.571"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 8.02,
+     "as_of": "2026-08-25",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 20.2,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11723,7 +14705,57 @@
      "backlog 유지/증가 (현 $2.4B)",
      "GPM 28~30% 유지 (red <26%)",
      "ex-mega 구조적 $2B run-rate 확인"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "EV",
+     "valuation_mode": "Mode C Mature Compounder primary + Mode D cyclical-normalization cross-check",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 145,
+       "tier": "AGGRESSIVE",
+       "src": "aggressive_interest"
+      },
+      {
+       "lo": 145,
+       "hi": 165,
+       "tier": "ATTRACTIVE",
+       "src": "conditional_interest"
+      },
+      {
+       "lo": 165,
+       "hi": 195,
+       "tier": "WATCH",
+       "src": "watch"
+      },
+      {
+       "lo": 195,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "needs_new_evidence_or_trim_review"
+      }
+     ],
+     "ref_price": 188.95,
+     "price_asof": "2026-08-25",
+     "hurdle": 0.12,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone '관망'. hurdle 12.0 → 0.12 단위정규화. EV 188.81 ≈ 현재가 188.95"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 188.95,
+     "as_of": "2026-08-25",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 14.5,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11747,7 +14779,45 @@
      "순부채 <$7.0B 2027 진입 (red 유지)",
      "자동차 매출/출하 북미 생산 상회 (red 점유 손실)",
      "HRC/ASP ≥$1,000/t"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "D — Cyclical / Commodity",
+     "ladder": [
+      {
+       "lo": 8.5,
+       "hi": 9.5,
+       "tier": "ATTRACTIVE",
+       "src": "attractive_entry"
+      },
+      {
+       "lo": 9.5,
+       "hi": 13,
+       "tier": "WATCH",
+       "src": "watch"
+      }
+     ],
+     "ref_price": 11.54,
+     "price_asof": "2026-08-26",
+     "hurdle": 0.12,
+     "hurdle_unit": "decimal",
+     "derived_note": "★사다리 부분: 팩의 base_fair_value $11.8·high_execution_value $18+·trigger는 구간이 아니라 참조값이므로 사다리에서 제외. AGGRESSIVE·AVOID 구간 팩에 정의 없음. IRR 4.2% < 허들 12%, U/D 1.28"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 11.54,
+     "as_of": "2026-08-26",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 21.5,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11876,7 +14946,63 @@
      "반복매출 ≥70% (현 69%)",
      "AI 직접 monetization 실증 (현 $50M)",
      "GAAP GM ≥81% (현 82.2%)"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode C — Mature Compounder",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 332,
+       "tier": "AGGRESSIVE",
+       "src": "≤$332"
+      },
+      {
+       "lo": 332,
+       "hi": 355,
+       "tier": "ATTRACTIVE",
+       "src": ">$332–$355"
+      },
+      {
+       "lo": 355,
+       "hi": 381,
+       "tier": "ATTRACTIVE",
+       "src": ">$355–$381"
+      },
+      {
+       "lo": 381,
+       "hi": 420,
+       "tier": "AVOID",
+       "src": ">$381–$420"
+      },
+      {
+       "lo": 420,
+       "hi": null,
+       "tier": "AVOID",
+       "src": ">$420"
+      }
+     ],
+     "ref_price": 399.59,
+     "price_asof": "2026-08-26",
+     "hurdle": 0.11,
+     "hurdle_unit": "decimal",
+     "derived_note": "B계열. WATCH 구간 정의 없음(팩이 조건부관심→execution premium 직결). zone 'EXECUTION_PREMIUM / WAIT'. IRR 8.95%<허들 11%"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 399.59,
+     "as_of": "2026-08-26",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 4.9,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11898,7 +15024,57 @@
      "모기지 B2B 매출/가격실현 (2Q26 $300M 스파이크)",
      "Software ARR 성장",
      "Scores 세그먼트 마진 유지"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "HYBRID: levered FCF DCF + scenario/reverse expectations",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 950,
+       "tier": "AGGRESSIVE",
+       "src": "high_conviction_buy_below"
+      },
+      {
+       "lo": 950,
+       "hi": 1075,
+       "tier": "ATTRACTIVE",
+       "src": "attractive_conditional"
+      },
+      {
+       "lo": 1075,
+       "hi": 1300,
+       "tier": "WATCH",
+       "src": "watch_fair_value"
+      },
+      {
+       "lo": 1300,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "insufficient_return_above"
+      }
+     ],
+     "ref_price": 1153.57,
+     "price_asof": "2026-08-28",
+     "hurdle": 0.12,
+     "hurdle_unit": "decimal",
+     "derived_note": "팩의 probability_weighted_12pct_hurdle_entry 1073·preferred_trigger_around 1000은 구간이 아닌 참조값이라 사다리 제외. zone 'WATCH / conditional accumulation only below required-return band'. IRR 9.33%<허들 12%, EV 1507.5"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 1153.57,
+     "as_of": "2026-08-28",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 7.3,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11920,7 +15096,51 @@
      "Power 매출 ≥$125M (현 $106.3M)",
      "Materials 가격안정 (현 $43.3M)",
      "무신규희석 디레버리징"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode D — Cyclical / capacity-utilization recovery",
+     "ladder": [
+      {
+       "lo": 10,
+       "hi": 14,
+       "tier": "ATTRACTIVE",
+       "src": "10-14 attractive if fundamentals intact"
+      },
+      {
+       "lo": 14,
+       "hi": 20,
+       "tier": "WATCH",
+       "src": "14-20 conditional/watch"
+      },
+      {
+       "lo": 20,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "above_20 avoid/trim"
+      }
+     ],
+     "ref_price": 25.85,
+     "price_asof": "2026-08-28",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "AGGRESSIVE 구간 정의 없음(3칸). zone 'AVOID / TRIM ON STRENGTH'. IRR −4.0%, U/D 1.22. 주: 노드에 fresh-start accounting 플래그 있음"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 25.85,
+     "as_of": "2026-08-28",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 84.6,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11941,7 +15161,57 @@
      "Non-GAAP GM >45% (현 39.5%)",
      "분기 현금소진 <$10M (현 H1 -$48.3M=RED)",
      "주식성장 <5% (현 +13.3%=RED)"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode A — Option-led",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 5.5,
+       "tier": "AGGRESSIVE",
+       "src": "deep_value_requires_thesis_recheck"
+      },
+      {
+       "lo": 5.5,
+       "hi": 7.0,
+       "tier": "ATTRACTIVE",
+       "src": "attractive_entry"
+      },
+      {
+       "lo": 7.5,
+       "hi": 10,
+       "tier": "WATCH",
+       "src": "watch"
+      },
+      {
+       "lo": 10,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "avoid_or_reduce"
+      }
+     ],
+     "ref_price": 11.49,
+     "price_asof": "2026-08-28",
+     "hurdle": 0.12,
+     "hurdle_unit": "decimal",
+     "derived_note": "★사다리 공백 7.0~7.5. deep_value가 최하단이나 '논제 재확인 요구' 단서 있음. IRR 1.41%<허들 12%"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 11.49,
+     "as_of": "2026-08-28",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 64.1,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11962,7 +15232,57 @@
      "Space Systems 주권 인도 연속 (현 $8.8M)",
      "RPO/backlog 전환",
      "현금소진 관리"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode B — Hybrid / Expectation-Driven v3.3",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 2.7,
+       "tier": "AGGRESSIVE",
+       "src": "active_interest_max"
+      },
+      {
+       "lo": 2.7,
+       "hi": 3.7,
+       "tier": "ATTRACTIVE",
+       "src": "conditional_interest"
+      },
+      {
+       "lo": 3.7,
+       "hi": 4.34,
+       "tier": "WATCH",
+       "src": "watch_no_chase"
+      },
+      {
+       "lo": 4.34,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "avoid_above"
+      }
+     ],
+     "ref_price": 5.28,
+     "price_asof": "2026-08-24",
+     "hurdle": 0.125,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone '회피 / 기존 보유 시 축소 검토'. IRR 3.4% << 허들 12.5%"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 5.28,
+     "as_of": "2026-08-24",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 42.7,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -11984,7 +15304,57 @@
      "Backlog ≥$35M (현 $31M=yellow)",
      "Forge 1 가동률·RPS economics",
      "positive EBITDA 경로"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode B Hybrid / Expectation-Driven v3.3",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 9,
+       "tier": "AGGRESSIVE",
+       "src": "below_9"
+      },
+      {
+       "lo": 10,
+       "hi": 11,
+       "tier": "ATTRACTIVE",
+       "src": "10_to_11"
+      },
+      {
+       "lo": 11,
+       "hi": 13,
+       "tier": "WATCH",
+       "src": "11_to_13"
+      },
+      {
+       "lo": 15,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "above_15"
+      }
+     ],
+     "ref_price": 12.47,
+     "price_asof": "2026-08-24",
+     "hurdle": 0.15,
+     "hurdle_unit": "decimal",
+     "derived_note": "★사다리 불연속: 팩에 9~10, 13~15 구간 정의 없음. 빈 구간을 메우지 않고 그대로 둠(제1조). zone '관망 / 조건부 관심', IRR 14.51% < 허들 15%"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 12.47,
+     "as_of": "2026-08-24",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 13.4,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -12005,7 +15375,57 @@
      "거래건수 성장 (현 +18.5%)",
      "신규점 생산성",
      "마진 회복"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode C - Mature Compounder",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 190,
+       "tier": "AGGRESSIVE",
+       "src": "<=190 적극 관심 후보"
+      },
+      {
+       "lo": 190,
+       "hi": 218,
+       "tier": "ATTRACTIVE",
+       "src": "190-218 조건부 관심"
+      },
+      {
+       "lo": 218,
+       "hi": 240,
+       "tier": "WATCH",
+       "src": "218-240 관망"
+      },
+      {
+       "lo": 240,
+       "hi": null,
+       "tier": "AVOID",
+       "src": ">=240 회피"
+      }
+     ],
+     "ref_price": 256.44,
+     "price_asof": "2026-08-25",
+     "hurdle": 0.12,
+     "hurdle_unit": "decimal",
+     "derived_note": "B계열. zone '회피/축소 검토'. IRR 6.73%<허들 12%, U/D 0.34"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 256.44,
+     "as_of": "2026-08-25",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 17.6,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -12047,7 +15467,32 @@
      "NAV 대비 프리미엄/디스카운트",
      "자본배분 규율(희석)",
      "HYPE 토큰 가격(지배 변수)"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "UNKNOWN",
+     "label_basis": "NONE",
+     "valuation_mode": "",
+     "ladder": [],
+     "ref_price": null,
+     "price_asof": "",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "팩에 stance·valuation 구조 전무. 원문 stance_zone '관망/신규 추격매수 회피 (≤$10에서 매력)'만 존재하나 구조화 필드 없어 전사 불가"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": null,
+     "as_of": "",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   },
   {
@@ -12089,7 +15534,32 @@
      "non-GAAP OM →24%+ (현 가이드 23.4~23.6%)",
      "NovaSeq X 설치기반·연결 Gb (현 +30%)",
      "유기성장 (현 Q2 +6.5%)"
-    ]
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "UNKNOWN",
+     "label_basis": "NONE",
+     "valuation_mode": "",
+     "ladder": [],
+     "ref_price": null,
+     "price_asof": "",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "팩에 stance·valuation 구조 전무"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": null,
+     "as_of": "",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
    }
   }
  ],
