@@ -225,6 +225,7 @@ button{font-family:inherit;cursor:pointer}
   <button class="chip tog" id="toggleCo"><span class="dot" style="background:var(--company)"></span>기업 노드</button>
   <button class="chip tog" id="toggleTheme"><span class="dot" style="background:var(--theme)"></span>테마 노드</button>
   <span class="sep"></span>
+  <button class="chip tog" id="toggleHop2" title="선택한 노드에서 두 단계 건너까지 함께 밝힌다 (전파 규칙과 같은 깊이)"><span class="dot" style="background:var(--ink)"></span>2단계까지 보기</button>
   <button class="chip" id="resetBtn">↺ 리셋</button>
   <span class="hint">산업 클릭 → 기업 계층 펼침 · 드래그 → 이동 · 휠 → 줌</span>
  </div>
@@ -398,7 +399,7 @@ const EDGE_KO={SUPPLIES_TO:'공급',CUSTOMER_OF:'고객',SUBSTITUTES:'대체',CA
 
 /* ---------- build node/edge model ---------- */
 let NODES=[], EDGES=[], NBYID={};
-const showState={company:false, theme:true, tiers:{HEAT:1,WARM:1,NEUTRAL:1,COLD:0,FROZEN:0}};
+const showState={company:false, theme:true, hop2:true, tiers:{HEAT:1,WARM:1,NEUTRAL:1,COLD:0,FROZEN:0}};
 
 function initModel(){
   NODES = GRAPH.nodes.map(n=>({...n, x:0,y:0,vx:0,vy:0, active:true, expanded:false}));
@@ -595,18 +596,41 @@ function syncPositions(){
 }
 
 /* ---------- visibility & neighbor highlight ---------- */
-function neighborsOf(id){ const s=new Set([id]); const es=[];
-  EDGES.forEach((e,i)=>{ if(e.from===id||e.to===id){ if(!edgeVisible(e))return; s.add(e.from);s.add(e.to);es.push(i);} });
-  return {nodes:s,edges:es};
+/* 01 §3A: 전파는 최대 2홉. 화면도 같은 깊이로 보여준다.
+   hop1 = 직접 연결, hop2 = 한 단계 건너, 그 외 = 배경. */
+function neighborsOf(id){
+  const hop1=new Set(), es1=[];
+  EDGES.forEach((e,i)=>{ if(!edgeVisible(e))return;
+    if(e.from===id||e.to===id){ hop1.add(e.from); hop1.add(e.to); es1.push(i);} });
+  hop1.delete(id);
+  const hop2=new Set(), es2=[];
+  EDGES.forEach((e,i)=>{ if(!edgeVisible(e)||es1.includes(i))return;
+    const a=hop1.has(e.from), b=hop1.has(e.to);
+    if(a||b){ const far=a?e.to:e.from;
+      if(far!==id&&!hop1.has(far)){ hop2.add(far); es2.push(i); } } });
+  const on=showState.hop2;
+  const nodes=new Set(on?[id,...hop1,...hop2]:[id,...hop1]);
+  return {nodes,hop1,hop2,edges:es1,edges2:on?es2:[],
+          depth:x=>x===id?0:hop1.has(x)?1:(on&&hop2.has(x))?2:3};
 }
+/* hover는 일시적이라 강한 대비가 맞지만, 선택은 해제 전까지 지속되므로
+   같은 강도를 쓰면 지도가 계속 비어 보인다. 둘을 분리한다. */
+const FOCUS={
+  hover:{ node:[1,.55,.20], label:[1,.45,0],   edge:[1,.30,.06] },
+  sel:  { node:[1,.62,.34], label:[1,.55,.14], edge:[1,.42,.13] }
+};
 function updateVisibility(){
   const focus = hoverId||selId;
+  const F = hoverId? FOCUS.hover : FOCUS.sel;
   let hi=null; if(focus) hi=neighborsOf(focus);
   for(const id in nodeEls){ const n=NBYID[id]; const vis=nodeVisible(n);
     nodeEls[id].g.style.display=vis?'':'none';
     labelEls[id].style.display=vis?'':'none';
     let op=1, lop=1;
-    if(hi){ if(hi.nodes.has(id)){op=1;lop=1;} else {op=.13;lop=.06;} }
+    if(hi){ const d=hi.depth(id);
+      op = d===0?1 : d===1?F.node[0] : d===2?F.node[1] : F.node[2];
+      lop= d===0?1 : d===1?F.label[0]: d===2?F.label[1]: F.label[2];
+      if(d===0){ op=1; lop=1; } }
     else { // no focus: labels for small nodes fade unless zoomed
       lop = (n.kind==='company')? (view.k>1.15?.9:0) : (n.kind==='industry'&&(n.tier==='NEUTRAL'||n.tier==='COLD'||n.tier==='FROZEN')? (view.k>0.9?.85:0.0):1);
     }
@@ -618,8 +642,13 @@ function updateVisibility(){
   }
   edgeEls.forEach((el,i)=>{ const e=EDGES[i]; const vis=edgeVisible(e);
     el.style.display=vis?'':'none';
-    if(hi){ if(hi.edges.includes(i)){ el.style.opacity=1; el.setAttribute('stroke',hlEdgeColor(e)); el.setAttribute('stroke-width',(e.strength==='H'?2.4:1.7)); }
-      else { el.style.opacity=.07; el.setAttribute('stroke',edgeBaseColor(e)); } }
+    if(hi){
+      if(hi.edges.includes(i)){ el.style.opacity=F.edge[0]; el.setAttribute('stroke',hlEdgeColor(e));
+        el.setAttribute('stroke-width',(e.strength==='H'?2.4:1.7)); }
+      else if(hi.edges2.includes(i)){ el.style.opacity=F.edge[1]; el.setAttribute('stroke',hlEdgeColor(e));
+        el.setAttribute('stroke-width',(e.strength==='H'?1.5:1.05)); }
+      else { el.style.opacity=F.edge[2]; el.setAttribute('stroke',edgeBaseColor(e));
+        el.setAttribute('stroke-width',e.strength==='H'?1.5:e.strength==='M'?1:0.7); } }
     else { el.style.opacity=1; el.setAttribute('stroke',edgeBaseColor(e)); el.setAttribute('stroke-width',e.strength==='H'?1.5:e.strength==='M'?1:0.7);} });
 }
 function hlEdgeColor(e){
@@ -841,6 +870,8 @@ $('toggleCo').onclick=function(){ showState.company=!showState.company; this.cla
   NODES.forEach(n=>{if(n.kind==='company')n.active=showState.company;}); alpha=Math.max(alpha,0.3); updateVisibility();};
 $('toggleTheme').onclick=function(){ showState.theme=!showState.theme; this.classList.toggle('off',!showState.theme);
   alpha=Math.max(alpha,0.3); updateVisibility();};
+$('toggleHop2').onclick=function(){ showState.hop2=!showState.hop2;
+  this.classList.toggle('off',!showState.hop2); updateVisibility(); };
 $('resetBtn').onclick=()=>{ selId=null;hoverId=null;
   NODES=NODES.filter(n=>!(n.kind==='company'&&n.id.split('::').length>2)); NBYID={};NODES.forEach(n=>NBYID[n.id]=n);
   EDGES=EDGES.filter(e=>NBYID[e.from]&&NBYID[e.to]);
