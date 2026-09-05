@@ -1,5 +1,5 @@
 # 01_ATLAS_TAXONOMY_SCORING.md
-## Global Sector Atlas OS v1.4 (Ontology Layer)
+## Global Sector Atlas OS v1.5 (Ontology Layer)
 ## Role: 분류 체계, 산업 카드 스키마, 수요-공급 채점, 티어 규칙, 출력 스펙
 ## Authority: Governing taxonomy & scoring specification
 
@@ -304,14 +304,17 @@ FROZEN 구조적 쇠퇴. 반기 1회 생존 확인만.
       "deep_dive_ref": { "as_of": "", "stance_zone": "", "thesis_oneline": "",
                          "moat_verdict": "", "mgmt_verdict": "",
                          "kpi_tripwires": [],
-                         // (v1.4) 구조화 스탠스 — 딥다이브 소유. 아틀라스는 수정 불가.
-                         "stance": {
-                           "label": "AVOID|TRIM|WATCH|CONDITIONAL|ACTIVE_INTEREST",
-                           "bands": { "aggressive_max": 0, "attractive": [0,0],
-                                      "watch": [0,0], "avoid_above": 0 },
-                           "ev": 0, "hurdle_irr": 0,
-                           "ref_price": { "value": 0, "as_of": "" },
-                           "parse_confidence": "EXACT|DERIVED|UNKNOWN" } },
+                         // (v1.5) 통관 계약 §7B. 전사만. 통관 시 1회 생성 후 동결.
+                         "atlas_stance": {
+                           "contract": "v1",
+                           "contract_source": "DDOS_NATIVE|ATLAS_DERIVED",
+                           "label": "AGGRESSIVE|ATTRACTIVE|WATCH|AVOID|UNKNOWN",
+                           "label_basis": "IRR|EV|UD_RATIO|NONE",
+                           "valuation_mode": "",
+                           "bands": { "aggressive_max": null, "attractive": null,
+                                      "watch": null, "avoid_above": null },
+                           "ref_price": null, "price_asof": "", "hurdle": null,
+                           "derived_note": "" } },
       // (v1.4) 계산값 — 아틀라스 소유. 매 UPDATE 재산출. 판단 아님.
       "stance_state": {
         "price": { "value": 0, "as_of": "", "source": "" },
@@ -350,15 +353,15 @@ SHALLOW(이름+체인위치) → SCREENED(후보카드 있음) → DEEP_DIVED(�
 | 필드 | 소유 | 성격 | 갱신 경로 |
 |---|---|---|---|
 | `deep_dive_ref.stance_zone` | 딥다이브 | 원문 (불변 보존) | §7A 4단계만 |
-| `deep_dive_ref.stance` | 딥다이브 | **판단** (밴드·EV·허들) | §7A 4단계만 |
+| `deep_dive_ref.atlas_stance` | 딥다이브(전사) | **판단** (밴드·EV·허들) | **§7B 통관 시 1회, 이후 동결** |
 | `stance_state` | 아틀라스 | **관측·계산** (주가·위치) | 매 UPDATE 재산출 |
 
-- `stance_zone` **원문은 절대 삭제·수정하지 않는다.** `stance`는 그 옆에 붙는 구조화
-  사본이며, 둘이 어긋나면 **원문이 우선**이다. 구조화는 필터링을 위한 편의이지 판단의
-  원본이 아니다.
-- `parse_confidence`: 원문에서 밴드를 기계적으로 뽑아낸 신뢰도.
-  `EXACT`(원문에 수치 명시) / `DERIVED`(EV·허들에서 계산) / `UNKNOWN`(추출 불가).
-  **UNKNOWN이면 zone도 UNKNOWN이다 — 추정으로 채우지 않는다**(00 §4 증거 규율).
+- `atlas_stance`는 §7B 통관 계약으로 생성된다. **전사만 하며 계산하지 않는다.**
+  생성 후 동결되고, 새 날짜의 팩이 들어올 때만 다시 만든다.
+- `stance_zone` **원문은 절대 삭제·수정하지 않는다.** `atlas_stance`는 그 옆에 붙는
+  구조화 사본이며, 둘이 어긋나면 **원문이 우선**이다.
+- 팩에서 밴드를 얻지 못하면 `label: UNKNOWN`. **서술에서 유추해 채우지 않는다**
+  (00 §4 증거 규율 / §7B 제1·2조).
 - `zone`은 저장된 밴드와 관측 주가의 **기계적 대조 결과**이지 새 판단이 아니다.
   경계값은 밴드 하한 이하부터 순서대로 판정하며, 밴드가 없으면 UNKNOWN.
 - `gap_to_attractive_pct`: 현재가가 `attractive` 상단까지 남은 거리(%). 음수면 이미 진입.
@@ -428,7 +431,7 @@ tier_history가 이 시스템의 심장이다 — 순위가 "유기적으로 바
   밴드 진입은 후보 등재 사유가 아님(§3B)."**
 
 **금지:** 스탠스만으로 정렬한 단독 랭킹, "매수/매도" 어휘, 아틀라스가 만든 목표가,
-`parse_confidence=UNKNOWN` 노드에 추정 밴드 표시.
+`label=UNKNOWN` 노드에 추정 밴드 표시.
 
 ---
 
@@ -450,16 +453,109 @@ tier_history가 이 시스템의 심장이다 — 순위가 "유기적으로 바
 3. 딥다이브가 발견한 산업 레벨 사실(수급, 선행지표, 경쟁 구도)을
    산업 카드와 엣지에 역반영 — 딥다이브는 온톨로지를 살찌우는 공정이다
 4. 분기 업데이트에서 스탠스가 바뀌면 노드의 deep_dive_ref도 갱신
-   - **(v1.4) 이 4단계가 `deep_dive_ref.stance`(밴드·EV·허들)의 유일한 갱신 경로다.**
+   - **(v1.5) 이 4단계가 `atlas_stance`의 유일한 재생성 경로다(§7B 제3조 동결).**
      아틀라스는 어떤 모드에서도 밴드를 새로 만들거나 고치지 않는다. 밴드가 낡았다고
      판단되면 고치는 게 아니라 `freshness=STALE`로 표시하고 딥다이브에 되돌린다.
-   - 새 DATA_PACK을 통합할 때 `stance`를 원문 `stance_zone`과 함께 재구성하고,
+   - 새 DATA_PACK을 통합할 때 §7B 통관을 다시 거쳐 `atlas_stance`를 재생성하고,
      기존 `stance_zone`은 새 값으로 교체한다(원문의 최신성 유지). 과거 원문은
      `data/deepdive/`의 이전 날짜 파일이 보존한다.
 5. (v1.3) deep_dive_ref.kpi_tripwires는 저장으로 끝나지 않는다 — 이후 갱신에서
    REVISIT 트리거의 소스가 된다(§3B). 딥다이브가 산업 카드·엣지로 되먹임되듯
    (3단계), 종목 tripwire는 후보 원장으로 되먹임된다. 이것이 딥다이브→아틀라스
    역방향 루프의 종목 레벨 경로다.
+
+## 7B. 스탠스 정규화 — 통관 계약 (v1.5)
+
+**문제:** 딥다이브 팩은 자유 형식이다. 실측 결과 밴드 키 이름 225종, 구조 4계열,
+버전 표기 5종이 확인됐다. 팩이 늘수록 사후 번역 부담은 무한히 자란다.
+
+**해법의 위치가 중요하다.** 이 정규화는 **아틀라스의 통관 절차**이지 딥다이브의
+출력 규격이 아니다. 딥다이브(DDOS)는 이 스키마를 알 필요가 없고, 알아서도 안 된다 —
+"4개 밴드를 내야 한다"는 인식은 밸류에이션 사고 자체를 밴드에 맞춰 왜곡시키고,
+Mode A~F를 사업 유형별로 골라 쓰는 DDOS의 설계를 마모시킨다.
+**딥다이브는 지금처럼 자유롭게 쓰고, 정규화는 문 앞에서 일어난다.**
+
+### 제1조 — 전사(轉寫)만 한다
+
+> **팩 안에 이미 존재하는 숫자만 옮겨 적는다. 없으면 UNKNOWN. 예외 없음.**
+
+아틀라스는 이 단계에서 계산·추정·보간을 하지 않는다. 팩에 밴드가 없는데 서술에서
+가격을 유추해 채우는 것은 **딥다이브 판단의 위조**이며 00 §0 방화벽 위반이다.
+
+### 제2조 — UNKNOWN은 일급 답이다
+
+UNKNOWN은 미달이 아니라 정당한 결론이다. "목표가 $37–243 극단 분산"이 결론인 팩에서
+밴드를 짜내면 **그 분산이라는 발견 자체가 사라진다.** 칸을 채우려는 압력에 굴복하지 않는다.
+
+### 제3조 — 통관 시 1회 생성 후 동결
+
+`atlas_stance`는 팩 통관 시점에 **한 번** 만들어 노드에 박제한다. 이후 갱신에서
+재계산하지 않는다. 재계산하면 같은 팩이 세션마다 다른 라벨을 받는다.
+**새 날짜의 팩이 들어올 때만** 새로 만든다.
+
+### 블록 규격
+
+```json
+"atlas_stance": {
+  "contract": "v1",
+  "contract_source": "DDOS_NATIVE | ATLAS_DERIVED",
+  "label": "AGGRESSIVE|ATTRACTIVE|WATCH|AVOID|UNKNOWN",
+  "label_basis": "IRR|EV|UD_RATIO|NONE",
+  "valuation_mode": "<팩의 valuation.mode 원문 그대로>",
+  "ladder": [
+    { "lo": null, "hi": 42, "tier": "AGGRESSIVE", "src": "strong_attractive" },
+    { "lo": 42, "hi": 45, "tier": "ATTRACTIVE", "src": "attractive_conditional" },
+    { "lo": 45, "hi": 52, "tier": "WATCH", "src": "watch_fair" },
+    { "lo": 52, "hi": null, "tier": "AVOID", "src": "evidence_required_above" }
+  ],
+  "ref_price": null, "price_asof": "", "hurdle": null, "hurdle_unit": "decimal",
+  "derived_note": "<UNKNOWN 사유 또는 판단이 갈린 지점 1줄>"
+}
+```
+
+**밴드는 고정 4칸이 아니라 순서 있는 사다리(`ladder`)다.** 실측 결과 5단 구성이
+오히려 흔하다(AMKR·FCX·ANET·CEG·COHR 모두 5단). 4칸에 욱여넣으면 밴드를 합쳐야 하고,
+합치는 순간 그건 전사가 아니라 판단이 되어 제1조를 위반한다.
+**팩의 밴드 개수를 그대로 옮기고, 각 칸에 정규 tier를 태그한다.**
+
+- `src`에 팩의 **원래 키 이름을 그대로** 남긴다. 태그가 틀렸을 때 역추적이 가능해야 한다.
+- `lo`/`hi`는 경계값. 개구간 끝은 `null`.
+- 밴드가 없으면 `ladder: []`. 그래도 `label_basis`가 있으면 `label`은 붙는다
+  (예: WULF — 밴드 없으나 IRR 0.16 존재).
+
+### 단위 정규화 — 유일하게 허용되는 변환
+
+실측에서 같은 필드가 다른 단위로 들어온다: `expected_irr`가 AMKR은 `0.1094`,
+COHR은 `13.4`다. 통관은 **단위만** 소수로 통일하고 `hurdle_unit`에 기록한다.
+단위 변환은 값을 바꾸지 않으므로 전사의 범위 안이다. **그 외 어떤 산술도 금지된다.**
+
+구조가 어긋난 필드(예: ANET의 `price_asof`가 문자열이 아니라 dict)는
+날짜만 뽑아 `price_asof`에 넣고 원본 구조는 버리지 않는다 — 팩이 원본이다.
+
+### 그 외 필드 규율
+
+- `valuation_mode`는 **원문 그대로** 싣는다. 모드를 통일하지 않는다 — 기록하는 것이지
+  규격화하는 것이 아니다. NAV형·순환형이 IRR을 내지 않는 것은 결함이 아니라 설계다.
+  (실측: `"Mode D - Cyclical / Commodity"`, `"Mode E Financial Institution with
+  segment SOTP overlay"` 등 — 이 다양성이 DDOS의 자산이다.)
+- `contract_source`: 팩이 `atlas_stance`를 직접 담고 있으면 `DDOS_NATIVE`,
+  아틀라스가 통관에서 파생했으면 `ATLAS_DERIVED`. **NATIVE가 있으면 항상 우선**한다.
+  이 필드가 있어 훗날 DDOS가 블록을 네이티브로 내기 시작해도 이행이 매끄럽다.
+
+### 제4조 — 게이트는 팩을 막지 않는다
+
+계약을 못 채운 팩도 **통관은 된다.** `label: UNKNOWN`으로 들어오고 diff에 플래그만
+남는다. 딥다이브 통합이 계약 때문에 멈추는 일은 없어야 한다 — 마찰이 쌓이면
+게이트가 느슨해지고, 그러면 계약 자체가 무너진다.
+
+### 제5조 — 파생분은 전량 공시한다
+
+`contract_source: ATLAS_DERIVED`인 항목은 **그 세션 diff 리포트에 전량 나열한다**
+(티커 · label · label_basis · derived_note).
+
+이유: 정규화를 아틀라스가 하면 **밸류에이션을 직접 수행한 사람의 검토가 빠진다.**
+남의 작업을 해석하는 것이므로 오류가 조용히 지나갈 수 있다. 전량 공시가 그 검토를
+사용자에게 되돌려주는 유일한 장치다. 요약·샘플링하지 않는다.
 
 시간이 지날수록 진한 노드가 늘어나는 것이 이 시스템의 복리다.
 단, 진한 노드도 낡는다 — 복리를 지키는 것은 재소환 규율이다.
@@ -491,13 +587,20 @@ tier_history가 이 시스템의 심장이다 — 순위가 "유기적으로 바
 **(v1.4) 스탠스 레이어 게이트 — 방화벽 검증**
 - [ ] **`stance_state`가 티어·balance·`deep_dive_candidates`에 영향 준 흔적 0건**
       (이번 갱신의 티어 변경 근거에 가격·zone 어휘 0건)
-- [ ] 아틀라스가 신규 산출한 밴드·목표가·기대수익률 0건 (`stance`는 전부 딥다이브 인용)
+- [ ] 아틀라스가 신규 산출한 밴드·목표가·기대수익률 0건 (`atlas_stance`는 전부 팩에서 전사)
 - [ ] `stance_zone` 원문 삭제·수정 0건 (구조화는 추가만)
 - [ ] 모든 `stance_state.price`에 `as_of`·`source` 병기
-- [ ] `parse_confidence=UNKNOWN` → `zone=UNKNOWN` 일치 (추정 밴드 0건)
+- [ ] `label=UNKNOWN` → `zone=UNKNOWN` 일치 (추정 밴드 0건)
+- [ ] **(v1.5) `contract_source=ATLAS_DERIVED` 항목이 diff에 전량 나열됐는가 (§7B 제5조)**
+- [ ] **(v1.5) 통관에서 재계산·보간한 숫자 0건 — 전부 팩 원본 전사 (§7B 제1조)**
+- [ ] **(v1.5) `valuation_mode`를 팩 원문 그대로 실었는가 (모드 통일 0건)**
 - [ ] `freshness=STALE` 또는 `tripwire_status=RED` → `display_suppressed=true` 일치
 - [ ] `freshness`가 `deep_dive_ref.as_of` 경과와 일치 (수기 지정 0건)
 - [ ] 스탠스 보드에 커버리지 구멍(③) 블록 존재 (①②만 있는 보드 = 스펙 위반)
-- [ ] 뷰 교체가 있었다면: CONSOLE·GRAPH·MAP의 `ATLAS_DERIVE` 블록 3개 md5 일치
+- [ ] 뷰 교체가 있었다면: `ATLAS_DERIVE` 블록의 **의도치 않은 분기 0건**
+      — 주의: 3파일이 byte 동일하지 않다. CONSOLE만 `deep_dive_ref`를 파생에 싣고
+      GRAPH·MAP은 싣지 않는 **의도된 차이**가 이미 존재한다(2026-09-02 확인).
+      따라서 md5 일치가 아니라 **diff를 열어 차이가 위 항목뿐인지 확인**한다.
+      새 차이가 생겼다면 3파일에 모두 반영했는지 검토한다.
 - [ ] (v1.2) 선행지표 롤오버한 HEAT/WARM은 후보 아닌 peak_watch로 표기
 - [ ] (v1.2) 축은 3개 초과 금지 (금리·환율·밸류에이션 배수 등은 딥다이브 하위 변수)
