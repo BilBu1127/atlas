@@ -1,0 +1,948 @@
+{
+  "meta": {
+    "ticker": "AMAT",
+    "company": "Applied Materials, Inc.",
+    "T0": "2026-09-05 Asia/Seoul",
+    "price_asof": "2026-09-04 close",
+    "price": 454.71,
+    "filing_asof": "2026-08-27 material 8-K; 2026-08-20 latest financial 10-Q",
+    "consensus_asof": "2026-09-03",
+    "industry_asof": "2026-07-14",
+    "version": "Deep Dive OS v1.7",
+    "currency": "USD",
+    "share_denominator_m": 793.597,
+    "share_denominator_lineage": "Common shares outstanding at 2026-07-26 from Q3 FY2026 Form 10-Q; valuation does not assume future buybacks.",
+    "net_cash_and_investments_less_debt_b": 7.957
+  },
+  "financials": {
+    "annual_3y": {
+      "fiscal_years": [
+        "FY2023",
+        "FY2024",
+        "FY2025"
+      ],
+      "revenue_b": [
+        26.517,
+        27.176,
+        28.368
+      ],
+      "gross_margin": [
+        0.467,
+        0.475,
+        0.487
+      ],
+      "operating_margin": [
+        0.284,
+        0.289,
+        0.292
+      ],
+      "net_income_b": [
+        6.856,
+        7.177,
+        6.998
+      ],
+      "gaap_diluted_eps": [
+        8.11,
+        8.61,
+        8.66
+      ],
+      "cfo_b": [
+        8.7,
+        8.677,
+        7.958
+      ],
+      "capex_b": [
+        1.106,
+        1.19,
+        2.26
+      ],
+      "fcf_b": [
+        7.594,
+        7.487,
+        5.698
+      ]
+    },
+    "quarterly_8q": {
+      "quarters": [
+        "Q4 FY24",
+        "Q1 FY25",
+        "Q2 FY25",
+        "Q3 FY25",
+        "Q4 FY25",
+        "Q1 FY26",
+        "Q2 FY26",
+        "Q3 FY26"
+      ],
+      "revenue_b": [
+        7.045,
+        7.166,
+        7.1,
+        7.302,
+        6.8,
+        7.012,
+        7.91,
+        9.115
+      ],
+      "non_gaap_gross_margin": [
+        0.475,
+        0.489,
+        0.492,
+        0.489,
+        0.481,
+        0.491,
+        0.5,
+        0.504
+      ],
+      "non_gaap_operating_margin": [
+        0.293,
+        0.306,
+        0.307,
+        0.307,
+        0.286,
+        0.3,
+        0.321,
+        0.34
+      ],
+      "non_gaap_eps": [
+        2.32,
+        2.38,
+        2.39,
+        2.48,
+        2.17,
+        2.38,
+        2.86,
+        3.5
+      ],
+      "fcf_b": [
+        2.168,
+        0.544,
+        1.061,
+        2.05,
+        2.043,
+        1.04,
+        0.21,
+        2.33
+      ]
+    },
+    "fy2026_9m_actual": {
+      "revenue_b": 24.037,
+      "net_income_b": 7.37
+    },
+    "q4_fy2026_company_guidance": {
+      "revenue_b_mid": 10.25,
+      "revenue_b_range": [
+        9.75,
+        10.75
+      ],
+      "non_gaap_eps_mid": 4.02,
+      "non_gaap_eps_range": [
+        3.82,
+        4.22
+      ]
+    },
+    "fy2026_midpoint_bridge": {
+      "revenue_b": 34.287,
+      "non_gaap_eps": 12.76
+    },
+    "segment_q3_fy2026": {
+      "semiconductor_systems": {
+        "revenue_b": 7.04,
+        "gross_margin": 0.553,
+        "operating_margin": 0.377
+      },
+      "ags": {
+        "revenue_b": 1.781,
+        "gross_margin": 0.356,
+        "operating_margin": 0.301
+      },
+      "other_revenue_b": 0.294
+    },
+    "semi_systems_market_mix_q3": {
+      "foundry_logic_other": 0.67,
+      "dram": 0.26,
+      "nand": 0.07
+    },
+    "geography_q3": {
+      "china": 0.28,
+      "taiwan": 0.22,
+      "korea": 0.17,
+      "us": 0.15,
+      "japan": 0.09,
+      "europe": 0.05,
+      "southeast_asia": 0.04
+    },
+    "balance_sheet_q3_fy2026_b": {
+      "cash": 7.037,
+      "short_term_investments": 2.196,
+      "long_term_investments": 5.268,
+      "accounts_receivable": 7.691,
+      "inventory": 6.564,
+      "pp_e_net": 5.606,
+      "short_term_debt": 1.299,
+      "long_term_debt": 5.245,
+      "contract_liabilities": 3.271
+    },
+    "ceilings": [
+      "AGS attach rate, renewal rate, churn and contract ARR are not disclosed; recurring-quality assessment is bounded by segment/service/chamber evidence.",
+      "EPIC engagement-to-POR-to-revenue conversion is not disclosed; partnerships are evidence of access/co-development, not booked share.",
+      "Anonymous top customers in SEC filings are not assigned to named customers."
+    ]
+  },
+  "industry": {
+    "semi_wfe_forecast_b": {
+      "2025": 116.9,
+      "2026": 143.9,
+      "2027": 175.3,
+      "2028": 200.0
+    },
+    "wfe_growth": {
+      "2026": 0.231,
+      "2027": 0.218,
+      "2028": 0.141
+    },
+    "300mm_fab_equipment_spend_b": {
+      "2026": 133,
+      "2027": 151,
+      "2028": 155,
+      "2029": 172
+    },
+    "customer_capex_signals": {
+      "tsmc_2026_capex_b": [
+        60,
+        64
+      ],
+      "tsmc_advanced_process_share": "70–80%",
+      "tsmc_advanced_packaging_test_mask_other_share": "10–20%",
+      "samsung_2026_facility_and_rd_krw_t": ">110",
+      "sk_hynix_hbm4": "Mass shipments began Q2 2026; ramp in H2",
+      "micron_singapore_hbm_packaging": "Expected meaningful HBM supply contribution in CY2027"
+    }
+  },
+  "kpis": [
+    {
+      "name": "Semiconductor Systems revenue growth",
+      "history": [
+        {
+          "q": "Q3 FY26",
+          "value": 0.27
+        }
+      ],
+      "current": 0.27,
+      "thresholds": {
+        "green": ">=15% YoY with leading-edge/DRAM mix support",
+        "yellow": "0–15% YoY or mixed share evidence",
+        "red": "<0% YoY for 2 quarters absent deliberate timing"
+      },
+      "current_status": "GREEN"
+    },
+    {
+      "name": "Consolidated non-GAAP gross margin",
+      "history": [
+        {
+          "q": "Q4 FY24",
+          "value": 0.475
+        },
+        {
+          "q": "Q1 FY25",
+          "value": 0.489
+        },
+        {
+          "q": "Q2 FY25",
+          "value": 0.492
+        },
+        {
+          "q": "Q3 FY25",
+          "value": 0.489
+        },
+        {
+          "q": "Q4 FY25",
+          "value": 0.481
+        },
+        {
+          "q": "Q1 FY26",
+          "value": 0.491
+        },
+        {
+          "q": "Q2 FY26",
+          "value": 0.5
+        },
+        {
+          "q": "Q3 FY26",
+          "value": 0.504
+        }
+      ],
+      "current": 0.504,
+      "thresholds": {
+        "green": ">=49.5%",
+        "yellow": "48.0–49.5%",
+        "red": "<48.0%"
+      },
+      "current_status": "GREEN"
+    },
+    {
+      "name": "AGS revenue growth",
+      "history": [
+        {
+          "q": "Q3 FY26",
+          "value": 0.22
+        }
+      ],
+      "current": 0.22,
+      "thresholds": {
+        "green": ">=mid-teens YoY",
+        "yellow": "5–15% YoY",
+        "red": "<5% YoY"
+      },
+      "current_status": "GREEN"
+    },
+    {
+      "name": "Advanced packaging revenue growth",
+      "history": [
+        {
+          "period": "CY2026 company outlook",
+          "value": ">50%"
+        }
+      ],
+      "current": ">50% company outlook",
+      "thresholds": {
+        "green": ">=40% with product/adoption evidence",
+        "yellow": "15–40%",
+        "red": "<15% or repeated POR losses"
+      },
+      "current_status": "GREEN*"
+    },
+    {
+      "name": "China revenue share",
+      "history": [
+        {
+          "q": "Q3 FY26",
+          "value": 0.28
+        }
+      ],
+      "current": 0.28,
+      "thresholds": {
+        "green": "<=25% with ex-China growth strong",
+        "yellow": "25–30%",
+        "red": ">30% plus tighter export controls/local substitution"
+      },
+      "current_status": "YELLOW"
+    },
+    {
+      "name": "Inventory / revenue risk",
+      "history": [
+        {
+          "date": "FY25",
+          "inventory_b": 5.915
+        },
+        {
+          "date": "Q3 FY26",
+          "inventory_b": 6.564
+        }
+      ],
+      "current": 6.564,
+      "thresholds": {
+        "green": "Inventory growth <= revenue/order conversion and contract liabilities healthy",
+        "yellow": "Inventory outgrows revenue for 2 quarters",
+        "red": "Inventory rises while systems revenue/guidance declines"
+      },
+      "current_status": "YELLOW"
+    },
+    {
+      "name": "PDC growth",
+      "history": [
+        {
+          "period": "CY2026 company outlook",
+          "value": ">50%"
+        }
+      ],
+      "current": ">50% company outlook",
+      "thresholds": {
+        "green": ">=30% with optical/eBeam adoption",
+        "yellow": "10–30%",
+        "red": "<10% or share loss"
+      },
+      "current_status": "GREEN*"
+    },
+    {
+      "name": "EPIC commercialization",
+      "history": [
+        {
+          "q": "Q3 FY26",
+          "engagements": 11
+        }
+      ],
+      "current": "11 engagements",
+      "thresholds": {
+        "green": "Named partnerships convert to disclosed POR/ramp evidence",
+        "yellow": "Engagement count rises without monetization proof",
+        "red": "Delays/cancellations or no visible qualification wins"
+      },
+      "current_status": "YELLOW"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Downside",
+      "probability": 0.25,
+      "revenue_path": [
+        42.0,
+        42.0,
+        45.0,
+        49.0,
+        53.0
+      ],
+      "margin_path": [
+        0.16,
+        0.18,
+        0.2,
+        0.21,
+        0.22
+      ],
+      "discount_rate": 0.09,
+      "terminal_fcf_multiple": 18.0,
+      "eps_fy29": 16.0,
+      "exit_pe_fy29": 18.0,
+      "fcf": [
+        6.72,
+        7.56,
+        9.0,
+        10.29,
+        11.66
+      ],
+      "diluted_shares": 793.597,
+      "per_share_value": 225.19,
+      "fy29_terminal_wealth_per_share": 294.5,
+      "three_year_irr": -0.1348
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "revenue_path": [
+        45.8,
+        51.0,
+        57.0,
+        63.0,
+        69.0
+      ],
+      "margin_path": [
+        0.19,
+        0.22,
+        0.24,
+        0.25,
+        0.26
+      ],
+      "discount_rate": 0.085,
+      "terminal_fcf_multiple": 23.0,
+      "eps_fy29": 24.0,
+      "exit_pe_fy29": 23.0,
+      "fcf": [
+        8.702,
+        11.22,
+        13.68,
+        15.75,
+        17.94
+      ],
+      "diluted_shares": 793.597,
+      "per_share_value": 420.77,
+      "fy29_terminal_wealth_per_share": 558.5,
+      "three_year_irr": 0.0709
+    },
+    {
+      "name": "Upside",
+      "probability": 0.25,
+      "revenue_path": [
+        47.5,
+        55.0,
+        64.0,
+        74.0,
+        84.0
+      ],
+      "margin_path": [
+        0.2,
+        0.23,
+        0.25,
+        0.27,
+        0.28
+      ],
+      "discount_rate": 0.08,
+      "terminal_fcf_multiple": 27.0,
+      "eps_fy29": 30.0,
+      "exit_pe_fy29": 27.0,
+      "fcf": [
+        9.5,
+        12.65,
+        16.0,
+        19.98,
+        23.52
+      ],
+      "diluted_shares": 793.597,
+      "per_share_value": 634.06,
+      "fy29_terminal_wealth_per_share": 816.5,
+      "three_year_irr": 0.2155
+    }
+  ],
+  "valuation": {
+    "mode": "Mode C Mature Compounder + Mode D semiconductor-capex cycle overlay",
+    "method": "5-year corporate FCF DCF with scenario-specific terminal FCF multiples, cross-checked with FY2029 EPS/exit P-E.",
+    "core": 420.77,
+    "execution": 213.29,
+    "ecosystem": null,
+    "drag": 195.58,
+    "expected_value": 425.2,
+    "expected_value_gap": -0.0649,
+    "expected_irr": 0.07,
+    "current_price": 454.71,
+    "notes": [
+      "Net cash/investments less debt of $7.957B is added to DCF equity value.",
+      "Current 793.6M share count is held constant; future buybacks are not treated as a free value-creation assumption.",
+      "Terminal FCF multiples are deliberately scenario-dependent to reflect cycle/multiple risk."
+    ]
+  },
+  "reverse_expectations": {
+    "three_year_required_return": 0.1,
+    "cumulative_dividends_assumed": 6.5,
+    "required_fy2029_ex_dividend_price": 598.72,
+    "required_fy2029_eps_by_exit_pe": {
+      "20x": 29.94,
+      "23x": 26.03,
+      "25x": 23.95,
+      "27x": 22.17
+    },
+    "fy2027_consensus_eps": 18.46,
+    "required_eps_cagr_fy2027_to_fy2029": {
+      "20x": 0.2734,
+      "23x": 0.1875,
+      "25x": 0.139,
+      "27x": 0.096
+    },
+    "interpretation": "At a 23x FY2029 exit P/E, a 10% annual return requires about $26.0 EPS in FY2029, roughly 18.7% CAGR from FY2027 consensus EPS after the already-extraordinary FY2027 growth step."
+  },
+  "consensus": {
+    "fy1": {
+      "fiscal_year": "FY2026",
+      "revenue_b": 34.25,
+      "non_gaap_eps": 12.79
+    },
+    "fy2": {
+      "fiscal_year": "FY2027",
+      "revenue_b": 46.13,
+      "non_gaap_eps": 18.46
+    },
+    "revision_trend": "Strong upward revisions into early September 2026; current expectations already embed a sharp FY2027 acceleration.",
+    "source_boundary": "Secondary consensus snapshot (S&P Global Market Intelligence via StockAnalysis); expectations only, not factual company guidance."
+  },
+  "stance": {
+    "zone": "WATCH / NEUTRAL — operating thesis strong, valuation requires duration",
+    "price_bands": {
+      "below_390": "Attractive / add-to-research if operating thesis intact",
+      "390_to_430": "Selective accumulation / positive watch",
+      "430_to_500": "Neutral / expectation-heavy (current zone)",
+      "above_500": "Bull-case dependent; avoid adding without new share/FCF evidence"
+    },
+    "horizon": "12–36 months"
+  },
+  "catalysts": [
+    {
+      "when": "2026-09-08",
+      "event": "Citi 2026 Global TMT Conference",
+      "sensitivity": "FY2027 demand visibility, capacity and China commentary"
+    },
+    {
+      "when": "2026-09-09",
+      "event": "Goldman Sachs Communacopia + Technology Conference",
+      "sensitivity": "WFE/share/advanced packaging/AGS messaging"
+    },
+    {
+      "when": "2026-10-25",
+      "event": "FY2026 fiscal year-end",
+      "sensitivity": "Q4 shipment/acceptance cutoff and working-capital conversion"
+    },
+    {
+      "when": "2026-11-12 (projected)",
+      "event": "Q4/FY2026 earnings call",
+      "sensitivity": "FY2027 setup, Semi Systems growth, margins, capex, China"
+    },
+    {
+      "when": "2027-02 window; exact date TBD",
+      "event": "Q1 FY2027 earnings",
+      "sensitivity": "14-week-quarter normalization and FY2027 revenue ramp quality"
+    },
+    {
+      "when": "2027 H1; exact date TBD",
+      "event": "Next logic/memory/packaging technology updates",
+      "sensitivity": "POR evidence for GAA/HBM4/advanced packaging and PDC"
+    }
+  ],
+  "risks": [
+    {
+      "risk": "WFE/capex normalization after FY2027",
+      "transmission": "Systems revenue and utilization decline; multiple compression",
+      "materiality": "High"
+    },
+    {
+      "risk": "Competitor POR/share gains",
+      "transmission": "Industry grows but AMAT content/share lags",
+      "materiality": "High"
+    },
+    {
+      "risk": "China export controls/local substitution",
+      "transmission": "Revenue loss, compliance costs, structural multiple discount",
+      "materiality": "High"
+    },
+    {
+      "risk": "Customer concentration",
+      "transmission": "Node/fab timing creates shipment/acceptance volatility",
+      "materiality": "High"
+    },
+    {
+      "risk": "Capacity overbuild / working capital",
+      "transmission": "Inventory/PP&E rise faster than realized demand, FCF/ROIC pressure",
+      "materiality": "Medium-High"
+    },
+    {
+      "risk": "AGS recurring-quality overstatement",
+      "transmission": "Lower-than-assumed resilience and valuation quality",
+      "materiality": "Medium"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "PASS",
+      "h3_locator": "Appendix RC Coverage Ledger / mapped canonical chapter"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "PASS",
+      "h3_locator": "Appendix RC Coverage Ledger / mapped canonical chapter"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "PASS",
+      "h3_locator": "Appendix RC Coverage Ledger / mapped canonical chapter"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "PASS",
+      "h3_locator": "Appendix RC Coverage Ledger / mapped canonical chapter"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "PASS",
+      "h3_locator": "Appendix RC Coverage Ledger / mapped canonical chapter"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "PASS",
+      "h3_locator": "Appendix RC Coverage Ledger / mapped canonical chapter"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "PASS",
+      "h3_locator": "Appendix RC Coverage Ledger / mapped canonical chapter"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "PASS",
+      "h3_locator": "Appendix RC Coverage Ledger / mapped canonical chapter"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "PASS",
+      "h3_locator": "Appendix RC Coverage Ledger / mapped canonical chapter"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "PASS",
+      "h3_locator": "Appendix RC Coverage Ledger / mapped canonical chapter"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "PASS",
+      "h3_locator": "Appendix RC Coverage Ledger / mapped canonical chapter"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "PASS",
+      "h3_locator": "Appendix RC Coverage Ledger / mapped canonical chapter"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "PASS",
+      "h3_locator": "Appendix RC Coverage Ledger / mapped canonical chapter"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "PASS",
+      "h3_locator": "Appendix RC Coverage Ledger / mapped canonical chapter"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "CEILING_CLOSED",
+      "h3_locator": "3.6 AGS"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "PASS",
+      "h3_locator": "Appendix RC Coverage Ledger / mapped canonical chapter"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "PASS",
+      "h3_locator": "Appendix RC Coverage Ledger / mapped canonical chapter"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "PASS",
+      "h3_locator": "Appendix RC Coverage Ledger / mapped canonical chapter"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "CEILING_CLOSED",
+      "h3_locator": "3.5 EPIC/customer adoption"
+    },
+    {
+      "rc_id": "RC-020",
+      "status": "PASS",
+      "h3_locator": "Appendix RC Coverage Ledger / mapped canonical chapter"
+    }
+  ],
+  "visual_data_lineage": [
+    {
+      "visual_id": "VIS-001",
+      "title": "3Y Financial Profile",
+      "source_path": "financials.annual_3y"
+    },
+    {
+      "visual_id": "VIS-002",
+      "title": "Latest 8Q Revenue & Non-GAAP Operating Margin",
+      "source_path": "financials.quarterly_8q"
+    },
+    {
+      "visual_id": "VIS-003",
+      "title": "Q3 Semiconductor Systems Mix",
+      "source_path": "financials.semi_systems_market_mix_q3"
+    },
+    {
+      "visual_id": "VIS-004",
+      "title": "SEMI WFE Forecast",
+      "source_path": "industry.semi_wfe_forecast_b"
+    },
+    {
+      "visual_id": "VIS-005",
+      "title": "Scenario DCF Per-Share Value",
+      "source_path": "scenarios[*].per_share_value"
+    },
+    {
+      "visual_id": "VIS-006",
+      "title": "Reverse Expectations EPS Requirement",
+      "source_path": "reverse_expectations.required_fy2029_eps_by_exit_pe"
+    },
+    {
+      "visual_id": "VIS-007",
+      "title": "KPI Traffic Light",
+      "source_path": "kpis"
+    },
+    {
+      "visual_id": "VIS-008",
+      "title": "Geographic Revenue Mix",
+      "source_path": "financials.geography_q3"
+    }
+  ],
+  "sources": [
+    {
+      "tier": 1,
+      "name": "AMAT Q3 FY2026 results",
+      "url": "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-third-quarter-2026-results"
+    },
+    {
+      "tier": 1,
+      "name": "AMAT Q3 FY2026 earnings script",
+      "url": "https://ir.appliedmaterials.com/static-files/e9985149-77c2-4cf3-aaad-a579178cbfe4"
+    },
+    {
+      "tier": 1,
+      "name": "AMAT Q3 FY2026 10-Q",
+      "url": "https://ir.appliedmaterials.com/static-files/14c1d32a-cac2-4c39-b895-f33dca70e1ef"
+    },
+    {
+      "tier": 1,
+      "name": "AMAT FY2025 10-K",
+      "url": "https://ir.appliedmaterials.com/static-files/af687923-06c7-4b43-a7a5-45750717f3ca"
+    },
+    {
+      "tier": 1,
+      "name": "AMAT 2026 DRAM & Advanced Packaging Master Class",
+      "url": "https://ir.appliedmaterials.com/events/event-details/2026-dram-and-advanced-packaging-master-class/"
+    },
+    {
+      "tier": 1,
+      "name": "AMAT 2026 Logic Master Class",
+      "url": "https://ir.appliedmaterials.com/events/event-details/2026-logic-master-class/"
+    },
+    {
+      "tier": 1,
+      "name": "AMAT Singapore expansion",
+      "url": "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-expands-singapore-manufacturing-support-ai/"
+    },
+    {
+      "tier": 1,
+      "name": "BIS settlement order",
+      "url": "https://www.bis.gov/media/documents/2026.02.11-amat-settlement-documents-combined.pdf"
+    },
+    {
+      "tier": 1,
+      "name": "SEMI 2026 mid-year equipment forecast",
+      "url": "https://www.semi.org/en/semi-press-release/global-semiconductor-equipment-sales-forecast-to-reach-a-record-229-billion-dollars-in-2028-semi-reports"
+    },
+    {
+      "tier": 1,
+      "name": "SEMI 300mm Fab Outlook 2026",
+      "url": "https://www.semi.org/en/semi-press-release/semi-projects-double-digit-growth-in-global-300mm-fab-equipment-spending-for-2026-and-2027"
+    },
+    {
+      "tier": 1,
+      "name": "TSMC Q2 2026 transcript",
+      "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/547d1696765e05ce3adb81c108ce1c8c1682b80c/TSMC%202Q26%20Transcript.pdf"
+    },
+    {
+      "tier": 1,
+      "name": "SK hynix Q2 2026 results",
+      "url": "https://news.skhynix.com/en/q2-2026-business-results/"
+    },
+    {
+      "tier": 1,
+      "name": "Samsung 2026 value enhancement plan",
+      "url": "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84599/"
+    },
+    {
+      "tier": 1,
+      "name": "Micron FQ1 2026 prepared remarks",
+      "url": "https://investors.micron.com/static-files/088991c5-a249-4f66-a0a6-258d9b66f3f9"
+    },
+    {
+      "tier": 1,
+      "name": "Lam 2026 lab expansion",
+      "url": "https://investor.lamresearch.com/2026-08-13-Lam-Research-Announces-Plans-to-Invest-More-than-3B-to-Expand-Global-Lab-Network%2C-Increase-Innovation-Velocity-in-the-AI-Era"
+    },
+    {
+      "tier": 1,
+      "name": "ASM Annual Report 2025 highlights",
+      "url": "https://www.asm.com/investors/highlights-annual-report-2025"
+    },
+    {
+      "tier": 1,
+      "name": "TEL FY2026 Q4 presentation",
+      "url": "https://www.tel.com/ir/library/report/pjuomj00000000tf-att/fy26q4presentations-e.pdf"
+    },
+    {
+      "tier": 1,
+      "name": "KLA FY2026 10-K",
+      "url": "https://ir.kla.com/sec-filings/all-sec-filings/content/0000319201-26-000027/klac-20260630.htm"
+    },
+    {
+      "tier": 2,
+      "name": "AMAT consensus snapshot via StockAnalysis/S&P Global MI",
+      "url": "https://stockanalysis.com/stocks/amat/forecast/"
+    },
+    {
+      "tier": 1,
+      "name": "AMAT historical quarterly results / non-GAAP reconciliation",
+      "url": "https://ir.appliedmaterials.com/financial-information/quarterly-results"
+    },
+    {
+      "tier": 1,
+      "name": "AMAT EPIC partner announcements in Q2/Q3 FY2026 earnings materials",
+      "url": "https://ir.appliedmaterials.com/financial-information/quarterly-results"
+    },
+    {
+      "tier": 1,
+      "name": "AMAT Akash Palkhiwala Board Appointment Form 8-K",
+      "url": "https://ir.appliedmaterials.com/static-files/0c7fc905-1731-4be5-b921-63fd7afd9069"
+    },
+    {
+      "tier": 1,
+      "name": "AMAT Q2 FY2026 results / earnings materials",
+      "url": "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-second-quarter-2026-results"
+    },
+    {
+      "tier": 1,
+      "name": "AMAT Q3 FY2026 earnings presentation balance-sheet data",
+      "url": "https://ir.appliedmaterials.com/static-files/9d5d182d-f060-4b22-a32c-4582257fdc9b"
+    }
+  ],
+  "qa": {
+    "RC_UNRESOLVED": 0,
+    "LATEST_FILING_CHECK": "PASS",
+    "H1_H2_RESEARCH_CONTRACT_COMPLETENESS": "PASS",
+    "H2_H3_COVERAGE_GATE": "PASS",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "VISUAL_DATA_LINEAGE": "PASS",
+    "CONTENT_MEANING_LOCK_PRESERVED": "PASS",
+    "PUBLISHED_TOP_LEVEL_SCHEMA_MATCH": "PASS",
+    "EXPLANATORY_DEPTH_PRESERVED": "PASS",
+    "PRINTED_TOC_PAGES": 1,
+    "TOC_CLICKABLE": "PASS",
+    "PDF_BOOKMARKS": "PASS",
+    "HTML_SIDEBAR": "PASS",
+    "SEARCHABLE_TEXT": "PASS",
+    "KOREAN_READABILITY": "PASS",
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "EXPLANATORY_SPACE_ALLOCATION": "PASS",
+    "SMART_CHAPTER_TRANSITIONS": "PASS",
+    "ARGUMENT_BLOCK_PAGINATION": "PASS",
+    "CORE_ACCIDENTAL_SPARSE_PAGE": false,
+    "DENSITY_CONTROL": "PASS",
+    "VISUAL_SUBSTITUTION": "PASS",
+    "VISUAL_GRAMMAR_VARIETY": "PASS",
+    "CHART_READABILITY": "PASS",
+    "TABLE_QUALITY": "PASS",
+    "CONTACT_SHEET_COMPOSITION_QA": "PASS",
+    "SEMANTIC_GOLDEN_QA": "PASS",
+    "VISUAL_GOLDEN_QA": "PASS",
+    "GOLDEN_PARITY": "PASS",
+    "FIGURE_NUMERICAL_PARITY": "PASS",
+    "VISUAL_SEMANTIC_PARITY": "PASS",
+    "STALE_VISUAL_ASSETS": 0,
+    "DECISION_VISUALS_PARITY_PASS": 8,
+    "RENDERED_VISUAL_PARITY_QA": "PASS",
+    "PDF_PAGE_SIZE": "A4 portrait",
+    "PDF_PAGE_COUNT": 27,
+    "PUBLISHING_ACCEPTANCE": "PASS",
+    "visual_render_pages": {
+      "VIS-001": [
+        12,
+        27
+      ],
+      "VIS-002": [
+        13,
+        27
+      ],
+      "VIS-003": [
+        9,
+        27
+      ],
+      "VIS-004": [
+        5,
+        27
+      ],
+      "VIS-005": [
+        17,
+        27
+      ],
+      "VIS-006": [
+        18,
+        27
+      ],
+      "VIS-007": [
+        20,
+        27
+      ],
+      "VIS-008": [
+        15,
+        27
+      ]
+    }
+  }
+}

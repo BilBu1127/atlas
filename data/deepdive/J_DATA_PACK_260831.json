@@ -1,0 +1,966 @@
+{
+  "meta": {
+    "ticker": "J",
+    "company": "Jacobs Solutions Inc.",
+    "exchange": "NYSE",
+    "T0": "2026-08-28",
+    "publishing_date_seoul": "2026-08-31",
+    "current_price_usd": 151.98,
+    "price_asof": "2026-08-28 close",
+    "filing_asof": "2026-08-14 latest material filing; latest periodic 2026-08-04 Q3 FY26 10-Q",
+    "consensus_asof": "2026-08-27",
+    "version": "Deep Dive OS v1.7",
+    "currency": "USD",
+    "units_note": "Unless indicated, financial statement values are USD millions."
+  },
+  "economic_definition": {
+    "primary_series": "Adjusted Net Revenue (ANR)",
+    "reason": "Gross revenue contains substantial pass-through subcontractor/material costs; ANR better represents Jacobs' retained economic activity.",
+    "q3_fy26_gross_revenue_m": 4076.0,
+    "q3_fy26_anr_m": 2416.608,
+    "q3_fy26_pass_through_m": 1659.392,
+    "q3_fy26_direct_ai_buildout_anr_pct": 11.0
+  },
+  "financials": {
+    "annual_3y": {
+      "FY2023": {
+        "gross_revenue_m": 10851.42,
+        "anr_m": 7858.5,
+        "anr_quality": "derived from FY2024 reported +5.1% comparison; approximate",
+        "adj_ebitda_m": 972.258,
+        "gaap_cfo_m": 974.763,
+        "capex_m": 137.486,
+        "gaap_fcf_m": 837.277,
+        "backlog_b": 17.837
+      },
+      "FY2024": {
+        "gross_revenue_m": 11500.941,
+        "anr_m": 8259.301,
+        "adj_ebitda_m": 1059.269,
+        "gaap_cfo_m": 1054.673,
+        "capex_m": 121.114,
+        "gaap_fcf_m": 933.559,
+        "backlog_b": 21.85,
+        "comparability_note": "Cash flow includes effects around the Amentum separation; use with caution."
+      },
+      "FY2025": {
+        "gross_revenue_m": 12029.783,
+        "anr_m": 8694.965,
+        "adj_ebitda_m": 1206.541,
+        "adj_ebitda_margin_pct": 13.88,
+        "gaap_cfo_m": 686.704,
+        "capex_m": 79.232,
+        "gaap_fcf_m": 607.472,
+        "backlog_b": 23.064
+      }
+    },
+    "quarterly_8q": [
+      {
+        "period": "Q4 FY24",
+        "anr_m": 2118.93,
+        "adj_ebitda_m": 288.942,
+        "adj_ebitda_margin_pct": 13.6,
+        "adj_eps": 1.37,
+        "backlog_b": 21.8
+      },
+      {
+        "period": "Q1 FY25",
+        "anr_m": 2082.497,
+        "adj_ebitda_m": 282.114,
+        "adj_ebitda_margin_pct": 13.5,
+        "adj_eps": 1.33,
+        "backlog_b": 21.8
+      },
+      {
+        "period": "Q2 FY25",
+        "anr_m": 2138.946,
+        "adj_ebitda_m": 286.571,
+        "adj_ebitda_margin_pct": 13.4,
+        "adj_eps": 1.43,
+        "backlog_b": 22.2
+      },
+      {
+        "period": "Q3 FY25",
+        "anr_m": 2231.276,
+        "adj_ebitda_m": 314.349,
+        "adj_ebitda_margin_pct": 14.1,
+        "adj_eps": 1.62,
+        "backlog_b": 22.7
+      },
+      {
+        "period": "Q4 FY25",
+        "anr_m": 2242.246,
+        "adj_ebitda_m": 323.507,
+        "adj_ebitda_margin_pct": 14.4,
+        "adj_eps": 1.75,
+        "backlog_b": 23.1
+      },
+      {
+        "period": "Q1 FY26",
+        "anr_m": 2252.628,
+        "adj_ebitda_m": 302.584,
+        "adj_ebitda_margin_pct": 13.4,
+        "adj_eps": 1.53,
+        "backlog_b": 26.3
+      },
+      {
+        "period": "Q2 FY26",
+        "anr_m": 2327.911,
+        "adj_ebitda_m": 327.181,
+        "adj_ebitda_margin_pct": 14.1,
+        "adj_eps": 1.75,
+        "backlog_b": 27.0
+      },
+      {
+        "period": "Q3 FY26",
+        "anr_m": 2416.608,
+        "adj_ebitda_m": 366.809,
+        "adj_ebitda_margin_pct": 15.2,
+        "adj_eps": 1.84,
+        "backlog_b": 28.888
+      }
+    ],
+    "q3_fy26": {
+      "gross_revenue_m": 4076.0,
+      "gross_revenue_yoy_pct": 34.5,
+      "anr_m": 2416.608,
+      "anr_yoy_pct": 8.3,
+      "adj_ebitda_m": 366.809,
+      "adj_ebitda_yoy_pct": 16.7,
+      "adj_ebitda_margin_pct": 15.2,
+      "adj_eps": 1.84,
+      "adj_eps_yoy_pct": 13.6,
+      "backlog_b": 28.888,
+      "backlog_yoy_pct": 27.3,
+      "book_to_bill_q3_x": 1.5,
+      "book_to_bill_ttm_x": 1.4,
+      "anr_book_to_bill_q3_x": 1.1,
+      "anr_book_to_bill_ttm_x": 1.2
+    },
+    "q3_segments": {
+      "IAF": {
+        "anr_m": 2087.1,
+        "anr_yoy_pct": 9.9,
+        "segment_operating_profit_m": 268.1,
+        "segment_margin_pct": 12.8,
+        "prior_margin_pct": 12.4
+      },
+      "PA": {
+        "anr_m": 329.5,
+        "anr_yoy_pct": -1.0,
+        "segment_operating_profit_m": 73.64,
+        "segment_margin_pct": 22.3,
+        "prior_margin_pct": 21.8
+      }
+    },
+    "q3_iaf_end_markets": {
+      "Life Sciences & Advanced Manufacturing": {
+        "gross_revenue_m": 1633,
+        "gross_yoy_pct": 116.6,
+        "anr_m": 476,
+        "anr_yoy_pct": 24.2,
+        "anr_mix_pct": 23
+      },
+      "Critical Infrastructure": {
+        "gross_revenue_m": 1225,
+        "gross_yoy_pct": 7.2,
+        "anr_m": 1008,
+        "anr_yoy_pct": 9.4,
+        "anr_mix_pct": 48
+      },
+      "Water & Environmental": {
+        "gross_revenue_m": 889,
+        "gross_yoy_pct": 10.8,
+        "anr_m": 603,
+        "anr_yoy_pct": 1.5,
+        "anr_mix_pct": 29
+      }
+    },
+    "working_capital_q3_fy26": {
+      "receivables_plus_contract_assets_m": 3760.646,
+      "sep2025_m": 2989.067,
+      "billed_receivables_m": 1661.062,
+      "unbilled_receivables_and_other_m": 1342.81,
+      "contract_assets_m": 756.774,
+      "sep2025_contract_assets_m": 487.528
+    },
+    "cash_flow_q3_fy26": {
+      "gaap_cfo_q3_m": 456.119,
+      "pa_employee_related_adjustment_q3_m": 109.899,
+      "adjusted_cfo_q3_m": 566.018,
+      "capex_q3_m": 25.125,
+      "adjusted_fcf_q3_m": 540.893,
+      "gaap_cfo_9m_m": 352.758,
+      "pa_employee_related_adjustment_9m_m": 342.431,
+      "adjusted_cfo_9m_m": 695.189,
+      "capex_9m_m": 61.722,
+      "adjusted_fcf_9m_m": 633.467
+    },
+    "ceilings": [
+      "FY2023 ANR is approximate because the current post-separation economic presentation is reconstructed from the FY2024 comparison.",
+      "Long-cycle comparisons before the Amentum separation are not fully apples-to-apples."
+    ]
+  },
+  "guidance": {
+    "FY2026": {
+      "anr_growth_pct_range": [
+        9.5,
+        10.0
+      ],
+      "adj_ebitda_margin_pct_range": [
+        14.7,
+        14.8
+      ],
+      "adj_eps_range": [
+        7.2,
+        7.3
+      ],
+      "adjusted_fcf_margin_pct_approx": 8.0,
+      "fully_diluted_avg_shares_m_range": [
+        118,
+        119
+      ],
+      "net_interest_m_range": [
+        147,
+        149
+      ],
+      "capex_pct_gross_revenue_approx": 1.0
+    },
+    "FY2029_targets": {
+      "organic_anr_cagr_pct_range": [
+        6,
+        8
+      ],
+      "adj_ebitda_margin_pct_min": 17.0,
+      "fcf_margin_pct_min": 11.0,
+      "source": "May 2026 investor presentation; updated after full PA ownership."
+    }
+  },
+  "backlog_quality": {
+    "backlog_b": 28.888,
+    "rpo_b": 22.2,
+    "rpo_revenue_next_12m_pct": 45,
+    "rpo_later_pct": 55,
+    "backlog_caveat": "Most contracts may be terminated at client discretion; backlog includes items not identical to GAAP RPO. Do not treat backlog as guaranteed revenue."
+  },
+  "capital_structure": {
+    "cash_m": 1172.914,
+    "total_debt_m": 3579.376,
+    "net_debt_m": 2406.462,
+    "net_debt_to_ltm_adj_ebitda_x": 1.82,
+    "weighted_interest_rate_pct": 5.2,
+    "target_net_debt_to_ebitda_ye2027_x": 1.5,
+    "shares_outstanding_m_2026_07_24": 117.038611,
+    "buybacks_9m_fy26_m": 614,
+    "buybacks_q3_m": 142,
+    "dividend_quarterly_usd": 0.36,
+    "remaining_buyback_authorization_m": 618.8,
+    "new_bonds_2026": [
+      {
+        "principal_m": 800,
+        "coupon_pct": 4.75,
+        "due": 2031
+      },
+      {
+        "principal_m": 500,
+        "coupon_pct": 5.375,
+        "due": 2036
+      }
+    ]
+  },
+  "pa_transaction": {
+    "close_date": "2026-03-20",
+    "upfront_gbp_m": 1216,
+    "upfront_usd_m_approx": 1600,
+    "full_pa_value_gbp_m_approx": 3050,
+    "pre_synergy_multiple_expected_cy25_adj_ebitda_x": 13.0,
+    "with_synergy_multiple_x": 12.3,
+    "funding": "~80% cash/debt and ~20% Jacobs shares",
+    "new_shares_issued": 2043537,
+    "share_lockup_until": "2027-03-20",
+    "deferred_consideration_gbp_m": 75,
+    "target_annual_cost_synergy_usd_m_min": 20,
+    "synergy_timing": "within 24 months",
+    "expected_accretion": "Management expects adjusted EPS accretion within first 12 months",
+    "quality_note": "Q3/9M non-GAAP cash flow adds back significant PA employee-related transaction payments; assess GAAP and adjusted cash conversion side-by-side."
+  },
+  "customers_contracts": [
+    {
+      "customer": "Hut 8",
+      "project": "River Bend",
+      "jacobs_role": "EPCM lead",
+      "customer_project_economics": "15-year, 245MW AI data-center lease; $7.0B base-term contract value to Hut 8, not Jacobs revenue",
+      "proof": "repeatable execution reference"
+    },
+    {
+      "customer": "Hut 8",
+      "project": "Beacon Point",
+      "jacobs_role": "sole-source follow-on EPCM lead",
+      "customer_project_economics": "first phase 352MW / campus up to 1GW; customer lease economics are not Jacobs revenue",
+      "proof": "repeat award plus design reuse/digital twin"
+    },
+    {
+      "customer": "Intel",
+      "project": "Fab 52",
+      "jacobs_role": "design/engineering reference",
+      "customer_project_economics": "2.9M sq ft multibillion-dollar fab reference",
+      "proof": "advanced-facilities qualification"
+    }
+  ],
+  "industry": {
+    "grid": {
+      "iea_queue_gw_gt": 2500,
+      "annual_grid_investment_current_b_approx": 400,
+      "required_investment_increase_by_2030_pct": 50,
+      "grid_project_lead_time_years": "5-15",
+      "data_center_lead_time_years": "1-3",
+      "equipment_price_change_5y": "nearly doubled"
+    },
+    "water": {
+      "us_drinking_water_20y_need_b": 625
+    },
+    "transmission_note": "These pools create design/program-management demand but grid/permitting/talent bottlenecks can delay customer project timing; no naive market-share conversion is used."
+  },
+  "management": {
+    "ceo": "Bob Pragada",
+    "ceo_since": "2023-01",
+    "jacobs_since": 2006,
+    "fy25_scorecard": {
+      "adjusted_operating_profit_actual_m": 1202.9,
+      "target_m": 8837,
+      "payout_level_pct": 129.8,
+      "adjusted_net_revenue_actual_m": 8728,
+      "payout_level_pct_anr": 53.6,
+      "adj_ebitda_margin_actual_pct": 13.9,
+      "target_pct": 13.8,
+      "payout_level_pct_margin": 115.4,
+      "total_payout_pct": 98.7
+    },
+    "governance_flag": "Committee excluded an older legal-accrual impact, lifting incentive performance from 82.8% to 98.7%; incremental payout was delivered as 1-year vesting RSUs rather than cash.",
+    "fy25_total_comp_m": 14.038,
+    "beneficial_shares": 259183,
+    "latest_management_event": "Shannon Miller transitioned from President, Strategy, Growth & Digital on 2026-08-10; special advisor through departure no later than 2026-10-03."
+  },
+  "consensus": {
+    "source": "StockAnalysis / S&P Global secondary consensus",
+    "rating": "Buy",
+    "analyst_count": 16,
+    "price_target_avg": 162.53,
+    "price_target_median": 163.0,
+    "price_target_low": 144.0,
+    "price_target_high": 181.0,
+    "fy1": {
+      "period": "FY2026",
+      "gross_revenue_b": 15.07,
+      "adj_eps": 7.26
+    },
+    "fy2": {
+      "period": "FY2027",
+      "gross_revenue_b": 15.73,
+      "adj_eps": 8.26,
+      "adj_eps_growth_pct": 13.8
+    },
+    "revision_trend": "Management raised FY2026 guidance for a third consecutive quarter; street remains constructive but price-target upside at T0 is modest.",
+    "ceiling": "Decision-grade ANR consensus is not publicly accessible in the reviewed source set; gross revenue consensus is less informative due pass-through."
+  },
+  "positioning": {
+    "short_interest": {
+      "date": "2026-08-14",
+      "shares": 3959178,
+      "float_pct": 3.37,
+      "days_to_cover": 4.13,
+      "previous_2026_07_31_shares": 5274098,
+      "previous_float_pct": 6.1,
+      "previous_2026_07_15_shares": 7207604
+    },
+    "interpretation": "Short interest has fallen sharply from mid-July; this is evidence of less bearish positioning, not evidence of why the stock moved."
+  },
+  "valuation_history": {
+    "metric": "Forward P/E (secondary, changing forward estimates)",
+    "current_x": 18.98,
+    "observations": {
+      "FY2021": 19.84,
+      "FY2022": 14.4,
+      "FY2023": 16.92,
+      "FY2024": 19.05,
+      "FY2025": 21.62
+    },
+    "median_5y_x": 19.05,
+    "interpretation": "Current forward P/E is almost exactly the median of the last five fiscal-year snapshots. Comparability is limited by the Amentum separation and changing forward estimates; use only as context, not intrinsic-value proof."
+  },
+  "kpis": [
+    {
+      "name": "ANR organic growth",
+      "current": "Q3 FY26 about +8-10% depending segment/constant-currency basis; FY26 guide +9.5-10.0%",
+      "thresholds": {
+        "green": "sustained >=6% with mix quality",
+        "yellow": "3-6% for multiple quarters",
+        "red": "<3% or negative for two quarters despite end-market demand"
+      },
+      "frequency": "quarterly",
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "name": "ANR book-to-bill",
+      "current": "1.2x TTM",
+      "thresholds": {
+        "green": ">=1.1x TTM",
+        "yellow": "1.0-1.1x",
+        "red": "<1.0x TTM with backlog decline"
+      },
+      "frequency": "quarterly",
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "name": "Adjusted EBITDA margin",
+      "current": "15.2% Q3 FY26; 14.7-14.8% FY26 guide; 17%+ FY29 target",
+      "thresholds": {
+        "green": "trajectory toward >=17% by FY29",
+        "yellow": "flat around 14-15% without clear bridge",
+        "red": "<14.5% sustained or long-term target cut"
+      },
+      "frequency": "quarterly",
+      "source_ids": [
+        "S2",
+        "S6"
+      ]
+    },
+    {
+      "name": "Adjusted FCF margin",
+      "current": "~8% FY26 guide",
+      "thresholds": {
+        "green": ">=8% now and credible path to >=11% FY29",
+        "yellow": "7-8%",
+        "red": "<7% with working-capital build"
+      },
+      "frequency": "quarterly/annual",
+      "source_ids": [
+        "S1",
+        "S6"
+      ]
+    },
+    {
+      "name": "Net debt / LTM adjusted EBITDA",
+      "current": "1.82x",
+      "thresholds": {
+        "green": "clear decline toward 1.5x by YE2027",
+        "yellow": "1.8-2.2x without decline",
+        "red": ">2.2x or YE2027 deleveraging target pushed out"
+      },
+      "frequency": "quarterly",
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "name": "PA segment margin / synergy",
+      "current": "22.3% Q3 segment margin; $20M+ annual cost synergy target within 24 months",
+      "thresholds": {
+        "green": "margin >=22% and synergy milestones on time",
+        "yellow": "20-22% or synergy timing less clear",
+        "red": "<20% sustained or material delay to synergy/accretion"
+      },
+      "frequency": "quarterly",
+      "source_ids": [
+        "S2",
+        "S7"
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.25,
+      "fy26_anr_m": 9542.724,
+      "anr_cagr_fy26_fy29_pct": 0.0,
+      "fy29_anr_m": 9542.724,
+      "fy29_adj_ebitda_margin_pct": 13.5,
+      "fy29_adj_ebitda_m": 1288.268,
+      "fy29_fcf_margin_pct": 7.0,
+      "fy29_fcf_m": 667.991,
+      "exit_ev_ebitda_x": 10.5,
+      "fy29_net_debt_m": 2200,
+      "fy29_diluted_shares_m": 116,
+      "fy29_per_share_value": 97.64,
+      "annual_dividend_assumption": 1.45,
+      "three_year_dividends": 4.35,
+      "scenario_irr_pct": -12.45,
+      "notes": "AI/advanced-facilities momentum normalizes, public infrastructure slows, PA accretion is offset by financing and working-capital drag."
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "fy26_anr_m": 9542.724,
+      "anr_cagr_fy26_fy29_pct": 6.5,
+      "fy29_anr_m": 11527.13,
+      "fy29_adj_ebitda_margin_pct": 17.0,
+      "fy29_adj_ebitda_m": 1959.612,
+      "fy29_fcf_margin_pct": 10.5,
+      "fy29_fcf_m": 1210.349,
+      "exit_ev_ebitda_x": 13.5,
+      "fy29_net_debt_m": 900,
+      "fy29_diluted_shares_m": 113,
+      "fy29_per_share_value": 226.15,
+      "annual_dividend_assumption": 1.6,
+      "three_year_dividends": 4.8,
+      "scenario_irr_pct": 14.97,
+      "notes": "Organic ANR grows within management's 6-8% long-term range, FY29 margin reaches the updated 17%+ neighborhood, leverage normalizes."
+    },
+    {
+      "name": "Bull",
+      "probability": 0.25,
+      "fy26_anr_m": 9542.724,
+      "anr_cagr_fy26_fy29_pct": 8.5,
+      "fy29_anr_m": 12188.818,
+      "fy29_adj_ebitda_margin_pct": 18.0,
+      "fy29_adj_ebitda_m": 2193.987,
+      "fy29_fcf_margin_pct": 11.5,
+      "fy29_fcf_m": 1401.714,
+      "exit_ev_ebitda_x": 15.0,
+      "fy29_net_debt_m": 300,
+      "fy29_diluted_shares_m": 111,
+      "fy29_per_share_value": 293.78,
+      "annual_dividend_assumption": 1.75,
+      "three_year_dividends": 5.25,
+      "scenario_irr_pct": 25.31,
+      "notes": "AI/semiconductor/power/water demand remains strong, PA mix/cross-sell helps value density, and cash conversion supports deleveraging plus buybacks."
+    }
+  ],
+  "valuation": {
+    "mode": "Mode C - Mature Compounder",
+    "current_price": 151.98,
+    "market_cap_m": 17787.5,
+    "enterprise_value_model_m": 20194.0,
+    "fy26_anr_midpoint_model_m": 9542.7,
+    "fy26_adj_ebitda_midpoint_model_m": 1407.6,
+    "fy26_adj_fcf_model_m": 763.4,
+    "fy26_adj_eps_midpoint": 7.25,
+    "forward_pe_on_fy26_guide_midpoint_x": 20.96,
+    "ev_to_fy26_adj_ebitda_x": 14.35,
+    "fy26_adj_fcf_yield_pct": 4.29,
+    "core": "Base operating value anchored to FY29 ANR growth and EBITDA/FCF margins.",
+    "execution": "Margin expansion, PA integration, and backlog-to-ANR conversion.",
+    "ecosystem": 0,
+    "ecosystem_note": "Digital-twin/AI tooling may improve execution but no decision-grade standalone economics are disclosed, so no separate intrinsic ecosystem value is assigned.",
+    "drag": "PA financing, interest burden, working-capital risk, dilution, execution risk.",
+    "expected_future_value_including_dividends": 215.73,
+    "expected_irr_from_weighted_future_value_pct": 12.38,
+    "probability_weighted_average_scenario_irr_pct": 10.7,
+    "up_down_ratio": 2.61,
+    "fair_current_value_at_12pct_hurdle": 153.55,
+    "fair_current_value_at_12_5pct_hurdle": 151.51,
+    "fair_current_value_at_15pct_hurdle": 141.85
+  },
+  "reverse_expectations": {
+    "assumptions": {
+      "fy29_adj_ebitda_margin_pct": 17.0,
+      "exit_ev_ebitda_x": 13.5,
+      "fy29_net_debt_m": 900,
+      "fy29_shares_m": 113,
+      "cumulative_dividends_3y": 4.8
+    },
+    "required_anr_cagr_for_return": {
+      "10pct": 1.96,
+      "12pct": 3.79,
+      "15pct": 6.53
+    },
+    "required_margin_at_12pct_return": {
+      "4pct_anr_cagr": 16.9,
+      "6pct_anr_cagr": 15.96,
+      "8pct_anr_cagr": 15.09
+    },
+    "interpretation": "At a 12% hurdle the current price requires only mid-single-digit-or-lower ANR growth if FY29 margin reaches ~17%. A 15% return requirement effectively demands management-target growth plus margin delivery."
+  },
+  "stance": {
+    "zone": "조건부 관심 / 관망-매수 경계",
+    "horizon": "3 years to FY2029",
+    "price_bands": {
+      "under_130": "강한 매력 구간 - large margin of safety",
+      "130_to_140": "매력 구간 - weighted-value return clears ~15%",
+      "140_to_165": "적정가/조건부 관심 - execution matters",
+      "165_to_185": "실행 선반영 구간 - needs strong target delivery",
+      "over_185": "낙관 선반영 - near-bull execution increasingly required"
+    },
+    "current_interpretation": "$151.98 is roughly fair for a 12-13% expected return framework; the stock is not obviously cheap despite improving operating evidence."
+  },
+  "catalysts": [
+    {
+      "when": "FY2026 Q4 / around Nov 2026",
+      "event": "FY2026 results and FY2027 initial guide",
+      "bull": "ANR growth remains >=6-8%, margin bridge toward 17% strengthens, FCF conversion normalizes",
+      "bear": "growth/margin guide resets lower or working capital stays elevated",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2026 H2-2027 H1",
+      "event": "Hut 8 River Bend / Beacon Point execution milestones",
+      "bull": "repeat AI-campus execution with schedule/design reuse evidence",
+      "bear": "grid/permitting/schedule delays reduce revenue timing or confidence",
+      "sensitivity": "Medium"
+    },
+    {
+      "when": "2027-03-20",
+      "event": "PA transaction share lock-up expiry",
+      "bull": "absorbed with improving PA economics",
+      "bear": "incremental supply coincides with weak integration evidence",
+      "sensitivity": "Low-Medium"
+    },
+    {
+      "when": "By YE2027",
+      "event": "Net leverage target around 1.5x",
+      "bull": "FCF funds deleveraging while buybacks continue selectively",
+      "bear": "leverage remains near/above 2x due working-capital, M&A, or aggressive capital return",
+      "sensitivity": "High"
+    },
+    {
+      "when": "By 2028-03",
+      "event": "PA $20M+ annual cost synergy timing",
+      "bull": "synergy delivered with PA margin >22% and cross-sell proof",
+      "bear": "synergy delayed or margin falls below 20%",
+      "sensitivity": "Medium"
+    }
+  ],
+  "falsification": [
+    "If TTM ANR book-to-bill falls below 1.0x while backlog also declines, the backlog-led growth thesis is no longer intact.",
+    "If I&AF ANR growth remains below mid-single digits for two quarters despite continued AI/advanced-facilities industry demand, the industry-to-Jacobs transmission thesis is weakened.",
+    "If adjusted EBITDA margin remains below 14.5% or the 17%+ FY2029 target is reduced without a temporary explanation, the margin-compounding thesis is falsified.",
+    "If receivables/contract assets keep outgrowing ANR and adjusted FCF margin falls below 7%, reported earnings quality should be re-underwritten.",
+    "If net leverage does not trend toward 1.5x by YE2027 because capital returns/M&A outrun cash generation, the per-share compounding thesis is weakened.",
+    "If PA margin falls below 20% on a sustained basis or the $20M+ synergy timing materially slips, the full-ownership accretion thesis is impaired."
+  ],
+  "variant_perception": {
+    "consensus": "Street consensus is constructive (Buy; FY27 adjusted EPS +13.8%) but average target of $162.53 implies modest near-term upside from $151.98.",
+    "our_view": "The market may underappreciate the quality difference between gross revenue and ANR and may over-focus on headline AI/data-center revenue. Jacobs' better case is ANR growth plus margin/FCF compounding across AI, grid, water, transport and PA; conversely, headline gross growth can overstate economic growth.",
+    "mispricing_rationale": "Not a large obvious mispricing at T0. The opportunity is execution-dependent: if 6-8% organic ANR growth and ~17% margin are delivered while leverage falls, current valuation is reasonable; below ~$140 the asymmetry becomes materially better."
+  },
+  "earnings_quality": {
+    "screen": "FLAGS_NOTED",
+    "strengths": [
+      "Asset-light capex burden ~1% of gross revenue",
+      "Contract mix predominantly cost-reimbursable or limited-risk fixed-price",
+      "Strong backlog/RPO and improving margin"
+    ],
+    "flags": [
+      "Large pass-through creates headline revenue distortion",
+      "Receivables + contract assets rose sharply versus Sep 2025",
+      "Adjusted cash flow adds back substantial PA employee-related transaction payments",
+      "Backlog is cancellable and not equivalent to guaranteed revenue",
+      "Management incentive committee used discretion around a legal accrual"
+    ]
+  },
+  "source_registry": [
+    {
+      "id": "S1",
+      "type": "primary",
+      "title": "Jacobs Q3 FY2026 Form 10-Q",
+      "as_of": "2026-06-26",
+      "filed": "2026-08-04",
+      "url": "https://www.sec.gov/Archives/edgar/data/52988/000162828026052573/jec-20260626.htm"
+    },
+    {
+      "id": "S2",
+      "type": "primary",
+      "title": "Jacobs Q3 FY2026 Earnings Presentation",
+      "as_of": "2026-08-04",
+      "url": "https://s205.q4cdn.com/384284279/files/doc_financials/2026/q3/Q3-FY2026-Earnings-Presentation-FINAL.pdf"
+    },
+    {
+      "id": "S3",
+      "type": "primary",
+      "title": "Jacobs Q3 FY2026 Earnings Release",
+      "as_of": "2026-08-04",
+      "url": "https://invest.jacobs.com/news/investor-news/news-details/2026/Jacobs-reports-strong-fiscal-third-quarter-2026-results/default.aspx"
+    },
+    {
+      "id": "S4",
+      "type": "primary",
+      "title": "Jacobs FY2025 Form 10-K",
+      "as_of": "2025-09-26",
+      "url": "https://www.sec.gov/Archives/edgar/data/52988/000162828025053316/jec-20250926.htm"
+    },
+    {
+      "id": "S5",
+      "type": "primary",
+      "title": "Jacobs 2026 Proxy Statement",
+      "as_of": "2026-01-01",
+      "url": "https://www.sec.gov/Archives/edgar/data/52988/000119312525325103/d76905ddef14a.htm"
+    },
+    {
+      "id": "S6",
+      "type": "primary",
+      "title": "Jacobs May 2026 Investor Presentation",
+      "as_of": "2026-05-08",
+      "url": "https://s205.q4cdn.com/384284279/files/doc_presentations/2026/May/08/Jacobs-Investor-Presentation-May-2026.pdf"
+    },
+    {
+      "id": "S7",
+      "type": "primary",
+      "title": "Jacobs PA Consulting Remaining Stake Announcement",
+      "as_of": "2026-01-20",
+      "url": "https://invest.jacobs.com/news/investor-news/news-details/2026/Jacobs-to-Acquire-Remaining-Stake-in-PA-Consulting/default.aspx"
+    },
+    {
+      "id": "S8",
+      "type": "primary",
+      "title": "Jacobs PA Consulting Completion",
+      "as_of": "2026-03-20",
+      "url": "https://invest.jacobs.com/news/investor-news/news-details/2026/Jacobs-completes-acquisition-of-the-remaining-stake-in-PA-Consulting/default.aspx"
+    },
+    {
+      "id": "S9",
+      "type": "primary",
+      "title": "Jacobs Hut 8 River Bend EPCM Award",
+      "as_of": "2026",
+      "url": "https://invest.jacobs.com/news/investor-news/news-details/2026/Jacobs-Appointed-Engineering-Procurement-and-Construction-Management-Lead-for-Hut-8-AI-Data-Center/default.aspx"
+    },
+    {
+      "id": "S10",
+      "type": "primary",
+      "title": "Jacobs Hut 8 Beacon Point EPCM Award",
+      "as_of": "2026",
+      "url": "https://invest.jacobs.com/news/investor-news/news-details/2026/Jacobs-awarded-EPCM-contract-to-deliver-second-Hut-8-AI-data-center-in-Texas/default.aspx"
+    },
+    {
+      "id": "S11",
+      "type": "primary",
+      "title": "IEA Electricity 2026 - Grids",
+      "as_of": "2026",
+      "url": "https://www.iea.org/reports/electricity-2026/grids"
+    },
+    {
+      "id": "S12",
+      "type": "primary",
+      "title": "US EPA 7th Drinking Water Infrastructure Needs Survey",
+      "as_of": "2023",
+      "url": "https://www.epa.gov/dwsrf/epas-7th-drinking-water-infrastructure-needs-survey-and-assessment"
+    },
+    {
+      "id": "S13",
+      "type": "secondary",
+      "title": "StockAnalysis Jacobs Forecast / Ratios / History",
+      "as_of": "2026-08-28",
+      "url": "https://stockanalysis.com/stocks/j/forecast/"
+    },
+    {
+      "id": "S14",
+      "type": "secondary",
+      "title": "MarketBeat Jacobs Short Interest",
+      "as_of": "2026-08-14",
+      "url": "https://www.marketbeat.com/stocks/NYSE/J/short-interest/"
+    },
+    {
+      "id": "S15",
+      "type": "primary",
+      "title": "Jacobs Form 8-K - Strategy, Growth & Digital leadership transition",
+      "as_of": "2026-08-10",
+      "filed": "2026-08-14",
+      "url": "https://www.sec.gov/Archives/edgar/data/52988/000119312526352551/d151187d8k.htm"
+    }
+  ],
+  "as_of_registry": {
+    "price": "2026-08-28 close",
+    "latest_periodic_filing": "2026-08-04 Q3 FY26 10-Q for quarter ended 2026-06-26",
+    "latest_material_filing": "2026-08-14 8-K covering 2026-08-10 management transition",
+    "company_guidance": "2026-08-04 Q3 FY26 earnings",
+    "long_term_targets": "2026-05-08 investor presentation",
+    "consensus": "2026-08-27 secondary consensus",
+    "short_interest": "2026-08-14 FINRA-derived secondary data",
+    "publishing": "2026-08-31 Asia/Seoul"
+  },
+  "latest_filing_check": {
+    "status": "PASS",
+    "checked_through": "2026-08-31 research window",
+    "latest_periodic": "2026-08-04 10-Q",
+    "latest_material": "2026-08-14 8-K"
+  },
+  "rc_ledger": [
+    {
+      "rc_id": "RC-01",
+      "promise": "Post-Amentum economic definition and segment history",
+      "status": "COMPLETE",
+      "h3_locator": "§0, §3, Appendix A"
+    },
+    {
+      "rc_id": "RC-02",
+      "promise": "AEC/professional-services value chain and profit pool",
+      "status": "COMPLETE",
+      "h3_locator": "§1, §3"
+    },
+    {
+      "rc_id": "RC-03",
+      "promise": "AI/data center/semiconductor demand transmission to ANR/margin/FCF",
+      "status": "COMPLETE",
+      "h3_locator": "§1, §3, §4"
+    },
+    {
+      "rc_id": "RC-04",
+      "promise": "Water/grid/transport structural demand transmission",
+      "status": "COMPLETE",
+      "h3_locator": "§1, §3"
+    },
+    {
+      "rc_id": "RC-05",
+      "promise": "Talent/qualification/regulation/permitting/capacity bottlenecks",
+      "status": "COMPLETE",
+      "h3_locator": "§1, §3, §6"
+    },
+    {
+      "rc_id": "RC-06",
+      "promise": "Prior downcycle/current cycle/macro sensitivity/base-rate",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "§1, §6, Appendix H"
+    },
+    {
+      "rc_id": "RC-07",
+      "promise": "Pragada measurable Promise-to-Delivery/governance/pay/ownership",
+      "status": "COMPLETE",
+      "h3_locator": "§2, Appendix C"
+    },
+    {
+      "rc_id": "RC-08",
+      "promise": "I&AF vs PA contract/pass-through/segment economics",
+      "status": "COMPLETE",
+      "h3_locator": "§3, §4"
+    },
+    {
+      "rc_id": "RC-09",
+      "promise": "Digital twin/AI technical architecture and quantitative value",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "§3, Appendix H"
+    },
+    {
+      "rc_id": "RC-10",
+      "promise": "Named customers/contracts/adoption/counterparty evidence",
+      "status": "COMPLETE",
+      "h3_locator": "§3, Appendix D"
+    },
+    {
+      "rc_id": "RC-11",
+      "promise": "Customer-job competition/moat/leakage",
+      "status": "COMPLETE",
+      "h3_locator": "§3, §6"
+    },
+    {
+      "rc_id": "RC-12",
+      "promise": "Continuous 3Y + latest 8Q financials",
+      "status": "COMPLETE",
+      "h3_locator": "§4, Appendix A/B"
+    },
+    {
+      "rc_id": "RC-13",
+      "promise": "Working capital/contract assets/receivables/FCF/Earnings Quality",
+      "status": "COMPLETE",
+      "h3_locator": "§4, Appendix F"
+    },
+    {
+      "rc_id": "RC-14",
+      "promise": "PA funding/synergy/integration/accretion/dilution",
+      "status": "COMPLETE",
+      "h3_locator": "§3, §4, §5"
+    },
+    {
+      "rc_id": "RC-15",
+      "promise": "Debt/interest/buyback/dividend/share count/per-share compounding",
+      "status": "COMPLETE",
+      "h3_locator": "§4, §5"
+    },
+    {
+      "rc_id": "RC-16",
+      "promise": "KPI history backlog/book-to-bill/ANR/margins/leverage",
+      "status": "COMPLETE",
+      "h3_locator": "§4, §6"
+    },
+    {
+      "rc_id": "RC-17",
+      "promise": "Consensus/targets/positioning/short interest/ownership/insider/historical valuation context",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "§0, §5, Appendix G/H"
+    },
+    {
+      "rc_id": "RC-18",
+      "promise": "Scenarios/reverse expectations/stance/price bands/KPI lights/catalysts/falsification/Variant Perception",
+      "status": "COMPLETE",
+      "h3_locator": "§5, §6, Appendix E/G"
+    }
+  ],
+  "research_contract_summary": {
+    "total": 18,
+    "complete": 15,
+    "primary_source_ceiling": 3,
+    "not_material": 0,
+    "contradicted": 0,
+    "unresolved": 0
+  },
+  "visual_lineage": [
+    {
+      "vis_id": "VIS-01",
+      "title": "8-quarter ANR and backlog",
+      "source_paths": [
+        "financials.quarterly_8q"
+      ],
+      "purpose": "Show economic growth and forward demand together.",
+      "source_hash": "44ec4c15c709915f",
+      "status": "SOURCE_LOCKED"
+    },
+    {
+      "vis_id": "VIS-02",
+      "title": "Q3 FY26 gross revenue vs ANR/pass-through",
+      "source_paths": [
+        "economic_definition.q3_fy26_gross_revenue_m",
+        "economic_definition.q3_fy26_anr_m",
+        "economic_definition.q3_fy26_pass_through_m"
+      ],
+      "purpose": "Prevent headline gross-revenue misread.",
+      "source_hash": "1c1fd80d2de07b5e",
+      "status": "SOURCE_LOCKED"
+    },
+    {
+      "vis_id": "VIS-03",
+      "title": "Q3 I&AF end-market ANR mix and growth",
+      "source_paths": [
+        "financials.q3_iaf_end_markets"
+      ],
+      "purpose": "Show where retained economic growth is coming from.",
+      "source_hash": "d252a2ab8dee5a49",
+      "status": "SOURCE_LOCKED"
+    },
+    {
+      "vis_id": "VIS-04",
+      "title": "FY29 scenario per-share values",
+      "source_paths": [
+        "scenarios",
+        "valuation.current_price"
+      ],
+      "purpose": "Connect operating scenarios to per-share outcomes.",
+      "source_hash": "125aadf59a5e9564",
+      "status": "SOURCE_LOCKED"
+    },
+    {
+      "vis_id": "VIS-05",
+      "title": "Reverse expectations",
+      "source_paths": [
+        "reverse_expectations"
+      ],
+      "purpose": "Show operating delivery required by current price.",
+      "source_hash": "a7d7ad78b436fd00",
+      "status": "SOURCE_LOCKED"
+    },
+    {
+      "vis_id": "VIS-06",
+      "title": "Capital and cash conversion",
+      "source_paths": [
+        "capital_structure",
+        "financials.cash_flow_q3_fy26",
+        "pa_transaction"
+      ],
+      "purpose": "Show PA funding, leverage and adjusted-vs-GAAP cash-flow tension.",
+      "source_hash": "e5dd0aafab9b83ac",
+      "status": "SOURCE_LOCKED"
+    }
+  ]
+}

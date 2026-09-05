@@ -1,0 +1,1271 @@
+{
+  "meta": {
+    "ticker": "LRCX",
+    "company": "Lam Research Corporation",
+    "T0": "2026-09-05 Asia/Seoul",
+    "price_asof": "2026-09-04",
+    "reference_price_usd": 303.72,
+    "price_source_note": "Investing historical table reference; public-vendor dispersion for Sep-04 observed ~$303.72-$305.70, <0.7% and not stance-changing.",
+    "filing_asof": "FY2026 Form 10-K filed 2026-08-07, period ended 2026-06-28",
+    "latest_filing_check": "SEC filings checked through 2026-09-03; latest thesis-relevant 8-K event dated 2026-08-24; later Form 4 not thesis-changing.",
+    "consensus_asof": "2026-09-04/05",
+    "version": "Deep Dive OS v1.7",
+    "publishing_date_kst": "2026-09-05",
+    "currency": "USD"
+  },
+  "company_economics": {
+    "definition": "WFE cycle x process-intensity/content x application qualification/share + installed-base customer support economics",
+    "revenue_architecture": [
+      "Systems",
+      "Customer support-related revenue"
+    ],
+    "core_transmission": [
+      "AI compute/storage demand",
+      "foundry/memory/packaging capex",
+      "more difficult etch/deposition/surface steps",
+      "Lam qualification/content",
+      "Systems shipments",
+      "installed base",
+      "service/spares/upgrades",
+      "margin and FCF",
+      "buybacks/per-share value"
+    ]
+  },
+  "industry": {
+    "wfe_forecast_b": [
+      {
+        "year": 2025,
+        "value": 116.9,
+        "source": "SEMI actual total WFE segment sales cited in 2026 mid-year forecast"
+      },
+      {
+        "year": 2026,
+        "value": 143.9,
+        "growth_pct": 23.1
+      },
+      {
+        "year": 2027,
+        "value": 175.3,
+        "growth_pct": 21.8,
+        "derived": true
+      },
+      {
+        "year": 2028,
+        "value": 200.0,
+        "growth_pct": 14.1,
+        "source_note": "SEMI says reaches $200B"
+      }
+    ],
+    "lam_management_2026_wfe_view": "low-$150B; definition differs from SEMI and is not forced into one series",
+    "customer_signals": {
+      "TSMC": {
+        "2026_capex_b_range": [
+          60,
+          64
+        ],
+        "N2": "steep ramp",
+        "advanced_capex_share": "70-80% advanced process; 10-20% advanced packaging/testing/masks/other"
+      },
+      "Micron": {
+        "signals": [
+          "HBM4 HVM",
+          "accelerated tool acquisition/installation",
+          "advanced NAND/DRAM investment"
+        ]
+      },
+      "SK_hynix": {
+        "signals": [
+          "HBM4 mass shipments",
+          "321-layer NAND ramp",
+          "M15X/Yongin/P&T7/M17 phased capacity expansion"
+        ]
+      },
+      "Samsung": {
+        "signals": [
+          "HBM/base-die demand",
+          "2nm HPC engagements",
+          "second-generation 2nm mobile ramp"
+        ]
+      }
+    }
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "fiscal_year": "FY2024",
+        "period_end": "2024-06-30",
+        "revenue_b": 14.905386,
+        "systems_b": 8.921643,
+        "support_related_b": 5.983743,
+        "gross_profit_b": 7.052791,
+        "gross_margin_pct": 47.32,
+        "operating_income_b": 4.263913,
+        "operating_margin_pct": 28.61,
+        "net_income_b": 3.827772,
+        "diluted_eps": 2.9,
+        "ocf_b": 4.652269,
+        "capex_intangibles_b": 0.39667,
+        "fcf_b": 4.255599,
+        "fcf_margin_pct": 28.55,
+        "diluted_avg_shares_b": 1.319949
+      },
+      {
+        "fiscal_year": "FY2025",
+        "period_end": "2025-06-29",
+        "revenue_b": 18.435591,
+        "systems_b": 11.49128,
+        "support_related_b": 6.944311,
+        "gross_profit_b": 8.979059,
+        "gross_margin_pct": 48.7,
+        "operating_income_b": 5.900968,
+        "operating_margin_pct": 32.01,
+        "net_income_b": 5.358217,
+        "diluted_eps": 4.15,
+        "ocf_b": 6.173264,
+        "capex_intangibles_b": 0.759186,
+        "fcf_b": 5.414078,
+        "fcf_margin_pct": 29.37,
+        "diluted_avg_shares_b": 1.290142
+      },
+      {
+        "fiscal_year": "FY2026",
+        "period_end": "2026-06-28",
+        "revenue_b": 23.23269,
+        "systems_b": 14.885488,
+        "support_related_b": 8.347202,
+        "gross_profit_b": 11.725308,
+        "gross_margin_pct": 50.47,
+        "operating_income_b": 8.199795,
+        "operating_margin_pct": 35.29,
+        "net_income_b": 7.265396,
+        "diluted_eps": 5.76,
+        "ocf_b": 5.857657,
+        "capex_intangibles_b": 0.966405,
+        "fcf_b": 4.891252,
+        "fcf_margin_pct": 21.05,
+        "diluted_avg_shares_b": 1.261102
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "period_end": "2024-09-29",
+        "revenue_b": 4.167976,
+        "systems_b": 2.39273,
+        "support_related_b": 1.775246,
+        "gross_margin_pct": 48.0,
+        "operating_margin_pct": 30.3,
+        "diluted_eps": 0.86
+      },
+      {
+        "period_end": "2024-12-29",
+        "revenue_b": 4.376047,
+        "systems_b": 2.625649,
+        "support_related_b": 1.750398,
+        "gross_margin_pct": 47.4,
+        "operating_margin_pct": 30.5,
+        "diluted_eps": 0.92
+      },
+      {
+        "period_end": "2025-03-30",
+        "revenue_b": 4.720175,
+        "systems_b": 3.035276,
+        "support_related_b": 1.684899,
+        "gross_margin_pct": 49.0,
+        "operating_margin_pct": 33.1,
+        "diluted_eps": 1.03
+      },
+      {
+        "period_end": "2025-06-29",
+        "revenue_b": 5.171393,
+        "systems_b": 3.437625,
+        "support_related_b": 1.733768,
+        "gross_margin_pct": 50.1,
+        "operating_margin_pct": 33.7,
+        "diluted_eps": 1.35
+      },
+      {
+        "period_end": "2025-09-28",
+        "revenue_b": 5.324173,
+        "systems_b": 3.547565,
+        "support_related_b": 1.776608,
+        "gross_margin_pct": 50.4,
+        "operating_margin_pct": 34.4,
+        "diluted_eps": 1.24
+      },
+      {
+        "period_end": "2025-12-28",
+        "revenue_b": 5.344791,
+        "systems_b": 3.357493,
+        "support_related_b": 1.987298,
+        "gross_margin_pct": 49.6,
+        "operating_margin_pct": 33.9,
+        "diluted_eps": 1.26
+      },
+      {
+        "period_end": "2026-03-29",
+        "revenue_b": 5.841488,
+        "systems_b": 3.730582,
+        "support_related_b": 2.110906,
+        "gross_margin_pct": 49.8,
+        "operating_margin_pct": 35.0,
+        "diluted_eps": 1.45
+      },
+      {
+        "period_end": "2026-06-28",
+        "revenue_b": 6.722238,
+        "systems_b": 4.249848,
+        "support_related_b": 2.47239,
+        "gross_margin_pct": 51.7,
+        "operating_margin_pct": 37.4,
+        "diluted_eps": 1.81
+      }
+    ],
+    "mix": {
+      "systems_market_mix_pct": {
+        "FY2024": {
+          "Foundry": 40,
+          "Memory": 42,
+          "Logic_IDM": 18
+        },
+        "FY2025": {
+          "Foundry": 45,
+          "Memory": 42,
+          "Logic_IDM": 13
+        },
+        "FY2026": {
+          "Foundry": 54,
+          "Memory": 39,
+          "Logic_IDM": 7
+        }
+      },
+      "china_revenue_pct": {
+        "FY2024": 42,
+        "FY2025": 34,
+        "FY2026": 34
+      },
+      "FY2026_top_customer_revenue_pct": [
+        16,
+        15,
+        12,
+        12
+      ]
+    },
+    "balance_sheet_fy2026": {
+      "cash_and_restricted_cash_b": 5.597943,
+      "debt_carrying_b": 3.7219,
+      "net_cash_b": 1.876043,
+      "accounts_receivable_b": 5.339682,
+      "accounts_receivable_prior_b": 3.378071,
+      "inventory_b": 4.276111,
+      "inventory_prior_b": 4.307991,
+      "deferred_revenue_b": 2.434
+    },
+    "capital_allocation_fy2026": {
+      "repurchases_b": 3.851343,
+      "dividends_paid_b": 1.270635,
+      "debt_principal_payments_b": 0.755428,
+      "sbc_expense_b": 0.386381
+    },
+    "ceilings": [
+      "Gross margin by Systems vs customer-support-related revenue is not disclosed.",
+      "Current total installed chamber base after end-2024 is not separately disclosed; 2026 conductor-etch base >40,000 chambers is available.",
+      "Application-level market-share time series is not fully available from primary sources."
+    ]
+  },
+  "accounting_quality": {
+    "screen": "FLAGS_NOTED",
+    "receivables_growth_pct": 58.1,
+    "revenue_growth_pct_fy2026": 26.0,
+    "dso_proxy_days": {
+      "FY2025": 66.9,
+      "FY2026": 83.9
+    },
+    "fcf_to_net_income_pct": {
+      "FY2024": 111.2,
+      "FY2025": 101.0,
+      "FY2026": 67.3
+    },
+    "judgment": "Receivables/OCF divergence is an amber monitoring flag, not evidence of aggressive accounting on current disclosed facts."
+  },
+  "products": [
+    {
+      "name": "Akara",
+      "job": "advanced conductor etch",
+      "drivers": [
+        "GAA",
+        "advanced DRAM",
+        "3D NAND"
+      ],
+      "adoption_stage": "production-tool-of-record / repeat-order evidence",
+      "boundary": "exact application share undisclosed"
+    },
+    {
+      "name": "Aether",
+      "job": "dry EUV resist/patterning",
+      "drivers": [
+        "advanced DRAM",
+        "2nm-below EUV/High-NA"
+      ],
+      "adoption_stage": "production-tool-of-record/HVM in leading memory; research validation with imec",
+      "boundary": "customer identity/share often undisclosed"
+    },
+    {
+      "name": "ALTUS Halo",
+      "job": "molybdenum ALD metallization",
+      "drivers": [
+        "NAND",
+        "advanced logic resistance scaling"
+      ],
+      "adoption_stage": "HVM/mass-production evidence",
+      "boundary": "cross-vendor TCO not public"
+    },
+    {
+      "name": "Striker / VECTOR",
+      "job": "dielectric/hard-mask deposition",
+      "drivers": [
+        "DRAM",
+        "NAND",
+        "logic vertical scaling"
+      ],
+      "adoption_stage": "production-proven / application wins",
+      "boundary": "platform revenue undisclosed"
+    },
+    {
+      "name": "Argos",
+      "job": "selective etch / surface treatment",
+      "drivers": [
+        "GAA",
+        "2nm-below"
+      ],
+      "adoption_stage": "multiple-customer application expansion disclosed",
+      "boundary": "exact share undisclosed"
+    },
+    {
+      "name": "Syndion / SABRE 3D",
+      "job": "TSV/TGV etch and Cu electroplating",
+      "drivers": [
+        "HBM",
+        "advanced packaging"
+      ],
+      "adoption_stage": "established packaging production tools",
+      "boundary": "packaging revenue not separately reported"
+    }
+  ],
+  "management": {
+    "ceo": "Tim Archer",
+    "ceo_since": "2018-12",
+    "track_record": [
+      "FY2024-FY2026 revenue and margin recovery",
+      "broader product adoption",
+      "share-count reduction"
+    ],
+    "lab_investment": "$3B+ over five years in global R&D lab network; outcome not yet fully delivered",
+    "insider_activity": "CEO sold 30,000 shares on 2026-07-02 at $390.01 and 30,000 on 2026-08-06 at $300 after option exercises under a 10b5-1 plan adopted 2026-02-24; not treated as standalone bearish signal."
+  },
+  "consensus": {
+    "fy1": {
+      "fiscal_year": "FY2027",
+      "revenue_b": 34.79,
+      "eps": 9.46,
+      "ebit_b": 13.815
+    },
+    "fy2": {
+      "fiscal_year": "FY2028",
+      "revenue_b": 40.66,
+      "eps": 11.56,
+      "ebit_b": 16.644
+    },
+    "fy3": {
+      "fiscal_year": "FY2029",
+      "revenue_b": 45.875,
+      "eps": null,
+      "ebit_b": 18.444,
+      "eps_ceiling": "Free public sources did not provide a sufficiently robust FY2029 EPS consensus."
+    },
+    "revision_trend": "Strongly positive: FY2027 EPS 7.94 -> 9.46 and FY2028 EPS 9.55 -> 11.56 over ~90 days.",
+    "guidance_gap": {
+      "sep2026_company_revenue_mid_b": 8.1,
+      "sep2026_consensus_revenue_b": 8.13,
+      "sep2026_company_eps_mid": 2.15,
+      "sep2026_consensus_eps": 2.18
+    },
+    "target_price_public_range": {
+      "central_range_usd": [
+        367,
+        371
+      ],
+      "low_usd": 290,
+      "high_usd": 500,
+      "note": "Vendor analyst counts differ; use distribution only as sanity check."
+    },
+    "positioning": {
+      "short_interest_shares_m": 28.4,
+      "short_float_pct": 2.3,
+      "institutional_flow": "selected 13F mixed; aggregate institutional flow is a data ceiling"
+    }
+  },
+  "peer_valuation": {
+    "asof": "2026-09-04/05 public snapshots",
+    "forward_pe": {
+      "LRCX_using_fy2027_consensus": 32.1,
+      "AMAT": 24.77,
+      "Tokyo_Electron": 28.25,
+      "ASM_International": 28.86,
+      "KLA": 31.72
+    },
+    "historical_lrcx_forward_pe_snapshots": {
+      "FY2022": 12.42,
+      "FY2023": 25.81,
+      "FY2024": 31.65,
+      "FY2025": 23.7,
+      "FY2026": 50.21
+    },
+    "historical_5y_trailing_pe_avg": 33.76
+  },
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.2,
+      "revenue_path_b": {
+        "FY2027": 29.5,
+        "FY2028": 31.0,
+        "FY2029": 29.5
+      },
+      "margin_path_pct": {
+        "FY2027": 35.0,
+        "FY2028": 33.5,
+        "FY2029": 31.0
+      },
+      "fcf_b": {
+        "FY2028": 6.8
+      },
+      "diluted_shares_b": 1.235,
+      "fy2028_eps": 7.4,
+      "terminal_pe": 22.0,
+      "per_share_value": 162.8,
+      "price_irr_pre_dividend": -0.299761
+    },
+    {
+      "name": "Base",
+      "probability": 0.55,
+      "revenue_path_b": {
+        "FY2027": 34.5,
+        "FY2028": 40.5,
+        "FY2029": 44.5
+      },
+      "margin_path_pct": {
+        "FY2027": 38.5,
+        "FY2028": 39.0,
+        "FY2029": 38.5
+      },
+      "fcf_b": {
+        "FY2028": 12.2
+      },
+      "diluted_shares_b": 1.22,
+      "fy2028_eps": 11.4,
+      "terminal_pe": 28.0,
+      "per_share_value": 319.2,
+      "price_irr_pre_dividend": 0.028814
+    },
+    {
+      "name": "Bull",
+      "probability": 0.25,
+      "revenue_path_b": {
+        "FY2027": 37.5,
+        "FY2028": 46.5,
+        "FY2029": 53.0
+      },
+      "margin_path_pct": {
+        "FY2027": 40.0,
+        "FY2028": 41.5,
+        "FY2029": 41.0
+      },
+      "fcf_b": {
+        "FY2028": 15.8
+      },
+      "diluted_shares_b": 1.205,
+      "fy2028_eps": 14.1,
+      "terminal_pe": 33.0,
+      "per_share_value": 465.3,
+      "price_irr_pre_dividend": 0.276035
+    }
+  ],
+  "valuation": {
+    "mode": "Mode D - Cyclical / Normalized Earnings & FCF",
+    "core": "FY2028 scenario EPS x terminal P/E with operating bridge",
+    "execution": "Application qualification/adoption probability expressed in scenario revenue/margin paths",
+    "ecosystem": "Installed-base support economics reflected in base/bull duration and multiple",
+    "drag": "China/export-control leakage + working-capital/capex + cyclical normalization",
+    "expected_value": 324.44,
+    "expected_irr_pre_dividend": 0.03844,
+    "current_price": 303.72,
+    "horizon_years": 1.75,
+    "hurdle_rate": 0.12,
+    "hurdle_implied_entry_price": 266.08,
+    "market_cap_b": 380.05,
+    "enterprise_value_b": 378.18,
+    "current_multiples": {
+      "fy2027_pe": 32.1,
+      "fy2028_pe": 26.3,
+      "fy2027_ev_ebit": 27.4,
+      "fy2028_ev_ebit": 22.7,
+      "fy2026_p_fcf": 77.7,
+      "fy2026_fcf_yield_pct": 1.29
+    }
+  },
+  "reverse_expectations": {
+    "current_price": 303.72,
+    "fy2028_eps_required_by_pe": {
+      "24x": 12.66,
+      "26x": 11.68,
+      "28x": 10.85,
+      "30x": 10.12,
+      "32x": 9.49
+    },
+    "fy2028_consensus_eps": 11.56,
+    "future_price_needed_for_12pct_irr": 370.34,
+    "eps_needed_at_28x_for_12pct_irr": 13.23,
+    "eps_needed_at_30x_for_12pct_irr": 12.34
+  },
+  "kpis": [
+    {
+      "name": "Customer/WFE capex",
+      "history": [
+        "SEMI 2026 WFE $143.9B +23.1%",
+        "TSMC 2026 capex $60-64B"
+      ],
+      "current": "Green",
+      "thresholds": {
+        "green": "SEMI/customer capex maintained or raised",
+        "yellow": "isolated memory/foundry delays",
+        "red": "broad customer capex cuts"
+      }
+    },
+    {
+      "name": "Lam Systems growth vs WFE",
+      "history": [
+        "FY2026 Systems +29.5%"
+      ],
+      "current": "Green/Amber",
+      "thresholds": {
+        "green": "sustained WFE outgrowth with application-win evidence",
+        "yellow": "roughly in line",
+        "red": "2-3 quarters meaningful underperformance"
+      }
+    },
+    {
+      "name": "New-platform adoption",
+      "history": [
+        "Akara/Aether/ALTUS HVM/tool-of-record evidence"
+      ],
+      "current": "Green",
+      "thresholds": {
+        "green": "repeat wins/application expansion",
+        "yellow": "qualification only",
+        "red": "major loss or ramp delay"
+      }
+    },
+    {
+      "name": "CSBG absolute growth",
+      "history": [
+        "FY2024 5.98B",
+        "FY2025 6.94B",
+        "FY2026 8.35B"
+      ],
+      "current": "Green",
+      "thresholds": {
+        "green": "double-digit or installed-base-consistent growth",
+        "yellow": "low-single-digit",
+        "red": "YoY decline without cycle explanation"
+      }
+    },
+    {
+      "name": "Operating margin",
+      "history": [
+        "FY2024 28.6%",
+        "FY2025 32.0%",
+        "FY2026 35.3%",
+        "JunQ26 37.4%",
+        "SepQ26 guide 39.5% midpoint"
+      ],
+      "current": "Green",
+      "thresholds": {
+        "green": ">=38% around current revenue scale",
+        "yellow": "35-38%",
+        "red": "<35% with strong revenue"
+      }
+    },
+    {
+      "name": "Receivables / DSO",
+      "history": [
+        "DSO proxy FY2025 ~66.9d",
+        "FY2026 ~83.9d"
+      ],
+      "current": "Amber",
+      "thresholds": {
+        "green": "material normalization",
+        "yellow": "elevated level persists",
+        "red": "AR outgrows revenue for multiple quarters"
+      }
+    },
+    {
+      "name": "FCF conversion",
+      "history": [
+        "FCF/NI FY2024 111.2%",
+        "FY2025 101.0%",
+        "FY2026 67.3%"
+      ],
+      "current": "Amber",
+      "thresholds": {
+        "green": ">=85% normalized",
+        "yellow": "70-85%",
+        "red": "<70% persistently"
+      }
+    },
+    {
+      "name": "China exposure",
+      "history": [
+        "FY2024 42%",
+        "FY2025 34%",
+        "FY2026 34%"
+      ],
+      "current": "Amber",
+      "thresholds": {
+        "green": "mix falls while consolidated growth remains strong",
+        "yellow": "partial offset elsewhere",
+        "red": "China loss drives consolidated decline"
+      }
+    },
+    {
+      "name": "Diluted share count",
+      "history": [
+        "FY2024 1.320B",
+        "FY2025 1.290B",
+        "FY2026 1.261B"
+      ],
+      "current": "Green",
+      "thresholds": {
+        "green": "steady FCF-funded decline",
+        "yellow": "flat",
+        "red": "dilution or debt-funded repurchase"
+      }
+    }
+  ],
+  "stance": {
+    "zone": "관망 / 조건부 매수",
+    "price_bands": {
+      "<=250": "매우 매력적",
+      "250-270": "매력적 진입 구간",
+      "270-330": "관망 / 보유",
+      "330-380": "기대치가 높은 구간",
+      ">380": "신규 진입에 불리"
+    },
+    "attractive_entry_band_usd": [
+      250,
+      270
+    ],
+    "horizon": "18-24 months; FY2028 normalized earnings",
+    "why": "Probability-weighted value ~$324 vs $303.72 reference price gives only ~3.8% annualized pre-dividend price IRR over 21 months; 12% hurdle implies ~$266 entry."
+  },
+  "variant_perception": {
+    "status": "PARTIAL / DURATION-DEPENDENT",
+    "consensus_view": "Near-term AI/WFE strength and FY2027 earnings acceleration are already consensus.",
+    "bull_variant": "Lam process-content and installed-base economics raise the post-cycle earnings floor more than history suggests.",
+    "bear_variant": "Market is capitalizing synchronized-cycle earnings at a structural premium while China leakage and cash conversion remain material."
+  },
+  "catalysts": [
+    {
+      "when": "2026-09-09",
+      "event": "Citi 2026 Global TMT Conference",
+      "sensitivity": "WFE outlook, Sep-quarter guide, China, margin, customer mix"
+    },
+    {
+      "when": "2026-09-10",
+      "event": "Goldman Sachs Communacopia + Technology Conference 2026",
+      "sensitivity": "Akara/Aether adoption, packaging, FY2027 WFE color"
+    },
+    {
+      "when": "Company date not yet announced as of T0",
+      "event": "Next quarterly earnings",
+      "sensitivity": "Sep-quarter delivery, Dec-quarter guide, receivables/OCF normalization"
+    },
+    {
+      "when": "H2 2026-2027",
+      "event": "TSMC N2, HBM4/HBM4E, advanced NAND and fab-installation updates",
+      "sensitivity": "FY2027/FY2028 demand duration"
+    }
+  ],
+  "falsification_conditions": [
+    "Lam Systems growth materially trails WFE for 2-3 quarters despite a healthy WFE backdrop.",
+    "Akara/Aether/ALTUS key-platform repeat qualification stalls or major customer-loss evidence appears.",
+    "China revenue decline is not offset by Taiwan/Korea/U.S. leading-edge growth.",
+    "Operating margin falls below 35% despite strong revenue without a temporary mix/tariff explanation.",
+    "AR continues to outgrow revenue and FCF/net income remains below 70% for multiple quarters.",
+    "Capital return persistently exceeds FCF while net cash erodes.",
+    "Foundry and memory customers cut capex simultaneously."
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "1.1–1.2"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "1.3–1.7 / 3.2–3.6"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "1.2 / 3.7"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.2–3.6"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "3.2–3.6"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.1 / 3.8 / 3.10"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.9"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "1.9 / 6.4–6.6"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "2.1–2.3"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "2.4–2.5 / 4.7"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "4.1–4.2 / Appendix A–B"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "4.3–4.8"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "2.3–2.4 / 4.6–4.7"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "0 / 5.2–5.7"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "5.4"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "5.1–5.8 / Appendix C–D"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "6.4–6.7"
+    }
+  ],
+  "source_registry": [
+    {
+      "id": "SRC-001",
+      "tier": 1,
+      "name": "Lam Research FY2026 Form 10-K",
+      "date": "2026-08-07",
+      "url": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000037/lrcx-20260628.htm"
+    },
+    {
+      "id": "SRC-002",
+      "tier": 1,
+      "name": "Lam Research Quarterly Results / June Quarter 2026",
+      "date": "2026-07-29",
+      "url": "https://investor.lamresearch.com/quarterly-results"
+    },
+    {
+      "id": "SRC-003",
+      "tier": 1,
+      "name": "Lam Research Events & Presentations",
+      "date": "2026-09-05 accessed",
+      "url": "https://investor.lamresearch.com/events"
+    },
+    {
+      "id": "SRC-004",
+      "tier": 1,
+      "name": "Lam Research 8-K, August 24 2026 event",
+      "date": "2026-08-27 filing context",
+      "url": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000043/lrcx-20260824.htm"
+    },
+    {
+      "id": "SRC-005",
+      "tier": 1,
+      "name": "Tim Archer Form 4",
+      "date": "2026-08-07",
+      "url": "https://www.sec.gov/Archives/edgar/data/707549/000134360026000011/xslF345X06/wk-form4_1786123467.xml"
+    },
+    {
+      "id": "SRC-006",
+      "tier": 1,
+      "name": "Tim Archer Form 4",
+      "date": "2026-07-06",
+      "url": "https://www.sec.gov/Archives/edgar/data/707549/000134360026000009/xslF345X06/wk-form4_1783355605.xml"
+    },
+    {
+      "id": "SRC-007",
+      "tier": 3,
+      "name": "SEMI Mid-Year Total Semiconductor Equipment Forecast",
+      "date": "2026-07-14",
+      "url": "https://www.semi.org/en/semi-press-release/global-semiconductor-equipment-sales-forecast-to-reach-a-record-229-billion-dollars-in-2028-semi-reports"
+    },
+    {
+      "id": "SRC-008",
+      "tier": 2,
+      "name": "TSMC Q2 2026 Quarterly Results",
+      "date": "2026-07-16",
+      "url": "https://investor.tsmc.com/english/quarterly-results/2026/q2"
+    },
+    {
+      "id": "SRC-009",
+      "tier": 2,
+      "name": "TSMC Q2 2026 earnings transcript",
+      "date": "2026-07-16",
+      "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/547d1696765e05ce3adb81c108ce1c8c1682b80c/TSMC%202Q26%20Transcript.pdf"
+    },
+    {
+      "id": "SRC-010",
+      "tier": 2,
+      "name": "Micron FY2026 Q3 earnings release",
+      "date": "2026-06-24",
+      "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000013/a2026q3ex991-pressrelease.htm"
+    },
+    {
+      "id": "SRC-011",
+      "tier": 2,
+      "name": "SK hynix Q2 2026 financial results",
+      "date": "2026-07-29",
+      "url": "https://news.skhynix.com/en/q2-2026-business-results/"
+    },
+    {
+      "id": "SRC-012",
+      "tier": 2,
+      "name": "Samsung Electronics Q2 2026 results",
+      "date": "2026-07-30",
+      "url": "https://news.samsung.com/global/samsung-electronics-announces-second-quarter-2026-results"
+    },
+    {
+      "id": "SRC-013",
+      "tier": 4,
+      "name": "TwelveData LRCX analyst estimates",
+      "date": "2026-09-03/04 snapshot",
+      "url": "https://twelvedata.com/markets/410519/stock/nasdaq/lrcx/analysis"
+    },
+    {
+      "id": "SRC-014",
+      "tier": 4,
+      "name": "MarketScreener LRCX consensus financials",
+      "date": "2026-09-03/05 snapshot",
+      "url": "https://www.marketscreener.com/quote/stock/LAM-RESEARCH-CORPORATION-211785022/finances/"
+    },
+    {
+      "id": "SRC-015",
+      "tier": 4,
+      "name": "StockAnalysis LRCX ratios",
+      "date": "2026-09-04/05 snapshot",
+      "url": "https://stockanalysis.com/stocks/lrcx/financials/ratios/"
+    },
+    {
+      "id": "SRC-016",
+      "tier": 4,
+      "name": "StockAnalysis AMAT financials",
+      "date": "2026-09-05 snapshot",
+      "url": "https://stockanalysis.com/stocks/amat/financials/"
+    },
+    {
+      "id": "SRC-017",
+      "tier": 4,
+      "name": "StockAnalysis Tokyo Electron ratios",
+      "date": "2026-09-05 snapshot",
+      "url": "https://stockanalysis.com/quote/tyo/8035/financials/ratios/"
+    },
+    {
+      "id": "SRC-018",
+      "tier": 4,
+      "name": "StockAnalysis KLA financials",
+      "date": "2026-09-05 snapshot",
+      "url": "https://stockanalysis.com/stocks/klac/financials/"
+    },
+    {
+      "id": "SRC-019",
+      "tier": 4,
+      "name": "StockAnalysis ASM International overview",
+      "date": "2026-09-05 snapshot",
+      "url": "https://stockanalysis.com/quote/ams/ASM/"
+    },
+    {
+      "id": "SRC-020",
+      "tier": 4,
+      "name": "Investing LRCX historical price",
+      "date": "2026-09-05 accessed",
+      "url": "https://kr.investing.com/equities/lam-research-corp-historical-data"
+    },
+    {
+      "id": "SRC-021",
+      "tier": 1,
+      "name": "Lam Research - Akara conductor etch launch",
+      "date": "2025-02-19",
+      "url": "https://newsroom.lamresearch.com/2025-02-19-Lam-Research-Unveils-Industrys-Most-Advanced-Conductor-Etch-Technology-to-Date"
+    },
+    {
+      "id": "SRC-022",
+      "tier": 1,
+      "name": "Lam Research - Aether dry resist overview and adoption",
+      "date": "2025-02-13",
+      "url": "https://newsroom.lamresearch.com/everything-you-need-to-know-about-aether"
+    },
+    {
+      "id": "SRC-023",
+      "tier": 1,
+      "name": "Lam Research - ALTUS Halo molybdenum ALD launch",
+      "date": "2025-02-19",
+      "url": "https://newsroom.lamresearch.com/2025-02-19-Lam-Research-Ushers-in-New-Era-of-Semiconductor-Metallization-with-ALTUS-R-Halo-for-Molybdenum-Atomic-Layer-Deposition"
+    },
+    {
+      "id": "SRC-024",
+      "tier": 1,
+      "name": "Lam Research - Faster DRAM Faster / memory tool adoption",
+      "date": "2026-02-24",
+      "url": "https://newsroom.lamresearch.com/faster-dram-faster-lam-velocity-accelerates-scaling-solutions"
+    },
+    {
+      "id": "SRC-025",
+      "tier": 1,
+      "name": "Lam Research - SABRE 3D advanced packaging",
+      "date": "2026-07-21",
+      "url": "https://newsroom.lamresearch.com/blog-sabre-3d-advanced-packaging-interconnects"
+    },
+    {
+      "id": "SRC-026",
+      "tier": 1,
+      "name": "Lam Research - Syndion product family",
+      "date": "2026-09-05 accessed",
+      "url": "https://www.lamresearch.com/product/syndion-product-family/"
+    },
+    {
+      "id": "SRC-027",
+      "tier": 1,
+      "name": "Lam Research - Advanced Memory Solutions / Striker",
+      "date": "2026-09-05 accessed",
+      "url": "https://www.lamresearch.com/products/our-solutions/advanced-memory-solutions/"
+    },
+    {
+      "id": "SRC-028",
+      "tier": 1,
+      "name": "Lam Research - Selective Etch product family / Argos",
+      "date": "2026-09-05 accessed",
+      "url": "https://www.lamresearch.com/product/selective-etch-product-family/"
+    },
+    {
+      "id": "SRC-029",
+      "tier": 2,
+      "name": "U.S. BIS - export controls for foreign-owned semiconductor fabs in China",
+      "date": "2025-08-29",
+      "url": "https://www.bis.gov/press-release/department-commerce-closes-export-controls-loophole-foreign-owned-semiconductor-fabs-china?id=946588%40"
+    }
+  ],
+  "visual_lineage": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "3개년 매출·영업이익률",
+      "authoritative_source_block": "financials.annual_3y",
+      "source_values": {
+        "years": [
+          "FY2024",
+          "FY2025",
+          "FY2026"
+        ],
+        "revenue_b": [
+          14.905386,
+          18.435591,
+          23.23269
+        ],
+        "operating_margin_pct": [
+          28.61,
+          32.01,
+          35.29
+        ]
+      },
+      "source_hash": "04ba3fa53d99e8b1",
+      "display_values": "generated_from_source_values",
+      "narrative_locator": "Ch.4",
+      "table_locator": "Appendix A",
+      "caption_locator": "VIS-001",
+      "rendered_asset_locator": "HTML/PDF #VIS-001",
+      "status": "PENDING_RENDER_QA"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "최근 8분기 매출·영업이익률",
+      "authoritative_source_block": "financials.quarterly_8q",
+      "source_values": {
+        "periods": [
+          "2024-09-29",
+          "2024-12-29",
+          "2025-03-30",
+          "2025-06-29",
+          "2025-09-28",
+          "2025-12-28",
+          "2026-03-29",
+          "2026-06-28"
+        ],
+        "revenue_b": [
+          4.167976,
+          4.376047,
+          4.720175,
+          5.171393,
+          5.324173,
+          5.344791,
+          5.841488,
+          6.722238
+        ],
+        "operating_margin_pct": [
+          30.3,
+          30.5,
+          33.1,
+          33.7,
+          34.4,
+          33.9,
+          35.0,
+          37.4
+        ]
+      },
+      "source_hash": "a68102feb6e251ac",
+      "display_values": "generated_from_source_values",
+      "narrative_locator": "Ch.4",
+      "table_locator": "Appendix B",
+      "caption_locator": "VIS-002",
+      "rendered_asset_locator": "HTML/PDF #VIS-002",
+      "status": "PENDING_RENDER_QA"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "Systems vs 고객지원 매출 3개년",
+      "authoritative_source_block": "financials.annual_3y",
+      "source_values": {
+        "years": [
+          "FY2024",
+          "FY2025",
+          "FY2026"
+        ],
+        "systems_b": [
+          8.921643,
+          11.49128,
+          14.885488
+        ],
+        "support_related_b": [
+          5.983743,
+          6.944311,
+          8.347202
+        ]
+      },
+      "source_hash": "5e946d222229d189",
+      "display_values": "generated_from_source_values",
+      "narrative_locator": "Ch.3/4",
+      "table_locator": "Appendix A",
+      "caption_locator": "VIS-003",
+      "rendered_asset_locator": "HTML/PDF #VIS-003",
+      "status": "PENDING_RENDER_QA"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "SEMI WFE 전망",
+      "authoritative_source_block": "industry.wfe_forecast_b",
+      "source_values": [
+        {
+          "year": 2025,
+          "value": 116.9,
+          "source": "SEMI actual total WFE segment sales cited in 2026 mid-year forecast"
+        },
+        {
+          "year": 2026,
+          "value": 143.9,
+          "growth_pct": 23.1
+        },
+        {
+          "year": 2027,
+          "value": 175.3,
+          "growth_pct": 21.8,
+          "derived": true
+        },
+        {
+          "year": 2028,
+          "value": 200.0,
+          "growth_pct": 14.1,
+          "source_note": "SEMI says reaches $200B"
+        }
+      ],
+      "source_hash": "6706a91c659df05a",
+      "display_values": "generated_from_source_values",
+      "narrative_locator": "Ch.1",
+      "table_locator": "Ch.1",
+      "caption_locator": "VIS-004",
+      "rendered_asset_locator": "HTML/PDF #VIS-004",
+      "status": "PENDING_RENDER_QA"
+    },
+    {
+      "vis_id": "VIS-005",
+      "figure_title": "시나리오 주당가치",
+      "authoritative_source_block": "scenarios",
+      "source_values": {
+        "names": [
+          "Bear",
+          "Base",
+          "Bull"
+        ],
+        "probabilities": [
+          0.2,
+          0.55,
+          0.25
+        ],
+        "values": [
+          162.8,
+          319.2,
+          465.3
+        ],
+        "current_price": 303.72,
+        "expected_value": 324.44
+      },
+      "source_hash": "bdbd3a2cc9fe7762",
+      "display_values": "generated_from_source_values",
+      "narrative_locator": "Ch.5",
+      "table_locator": "Appendix C",
+      "caption_locator": "VIS-005",
+      "rendered_asset_locator": "HTML/PDF #VIS-005",
+      "status": "PENDING_RENDER_QA"
+    },
+    {
+      "vis_id": "VIS-006",
+      "figure_title": "Reverse Expectations",
+      "authoritative_source_block": "reverse_expectations",
+      "source_values": {
+        "current_price": 303.72,
+        "fy2028_eps_required_by_pe": {
+          "24x": 12.66,
+          "26x": 11.68,
+          "28x": 10.85,
+          "30x": 10.12,
+          "32x": 9.49
+        },
+        "fy2028_consensus_eps": 11.56,
+        "future_price_needed_for_12pct_irr": 370.34,
+        "eps_needed_at_28x_for_12pct_irr": 13.23,
+        "eps_needed_at_30x_for_12pct_irr": 12.34
+      },
+      "source_hash": "0cdafb452829f4b2",
+      "display_values": "generated_from_source_values",
+      "narrative_locator": "Ch.5",
+      "table_locator": "Appendix D",
+      "caption_locator": "VIS-006",
+      "rendered_asset_locator": "HTML/PDF #VIS-006",
+      "status": "PENDING_RENDER_QA"
+    },
+    {
+      "vis_id": "VIS-007",
+      "figure_title": "가격 구간 / 스탠스",
+      "authoritative_source_block": "stance.price_bands",
+      "source_values": {
+        "price_bands": {
+          "<=250": "매우 매력적",
+          "250-270": "매력적 진입 구간",
+          "270-330": "관망 / 보유",
+          "330-380": "기대치가 높은 구간",
+          ">380": "신규 진입에 불리"
+        },
+        "current_price": 303.72,
+        "hurdle_entry": 266.08
+      },
+      "source_hash": "30a4cd9348b6bd8d",
+      "display_values": "generated_from_source_values",
+      "narrative_locator": "Ch.5/6",
+      "table_locator": "Ch.5",
+      "caption_locator": "VIS-007",
+      "rendered_asset_locator": "HTML/PDF #VIS-007",
+      "status": "PENDING_RENDER_QA"
+    },
+    {
+      "vis_id": "VIS-008",
+      "figure_title": "KPI 신호등",
+      "authoritative_source_block": "kpis",
+      "source_values": {
+        "current": [
+          {
+            "name": "Customer/WFE capex",
+            "current": "Green"
+          },
+          {
+            "name": "Lam Systems growth vs WFE",
+            "current": "Green/Amber"
+          },
+          {
+            "name": "New-platform adoption",
+            "current": "Green"
+          },
+          {
+            "name": "CSBG absolute growth",
+            "current": "Green"
+          },
+          {
+            "name": "Operating margin",
+            "current": "Green"
+          },
+          {
+            "name": "Receivables / DSO",
+            "current": "Amber"
+          },
+          {
+            "name": "FCF conversion",
+            "current": "Amber"
+          },
+          {
+            "name": "China exposure",
+            "current": "Amber"
+          },
+          {
+            "name": "Diluted share count",
+            "current": "Green"
+          }
+        ]
+      },
+      "source_hash": "84b9799d959bfb6b",
+      "display_values": "generated_from_source_values",
+      "narrative_locator": "Ch.6",
+      "table_locator": "Ch.6",
+      "caption_locator": "VIS-008",
+      "rendered_asset_locator": "HTML/PDF #VIS-008",
+      "status": "PENDING_RENDER_QA"
+    }
+  ]
+}

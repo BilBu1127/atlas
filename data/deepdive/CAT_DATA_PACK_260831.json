@@ -1,0 +1,868 @@
+{
+  "meta": {
+    "ticker": "CAT",
+    "company": "Caterpillar Inc.",
+    "T0": "2026-08-31",
+    "price_asof": "2026-08-28",
+    "filing_asof": "2026-08-05",
+    "consensus_asof": "2026-08-21/2026-08-31",
+    "version": "Deep Dive OS v1.7",
+    "currency": "USD"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue_bn": 67.06,
+        "net_income_bn": 10.335,
+        "diluted_eps": 20.12,
+        "diluted_shares_m": 513.6,
+        "gaap_op_margin_pct": 19.3,
+        "adj_op_margin_pct": 20.5,
+        "enterprise_ocf_bn": 12.885,
+        "capex_bn": 1.597,
+        "mpe_fcf_bn": 10.0
+      },
+      {
+        "year": 2024,
+        "revenue_bn": 64.809,
+        "net_income_bn": 10.792,
+        "diluted_eps": 22.05,
+        "diluted_shares_m": 489.4,
+        "gaap_op_margin_pct": 20.2,
+        "adj_op_margin_pct": 20.7,
+        "enterprise_ocf_bn": 12.035,
+        "capex_bn": 1.988,
+        "mpe_fcf_bn": 9.449
+      },
+      {
+        "year": 2025,
+        "revenue_bn": 67.589,
+        "net_income_bn": 8.884,
+        "diluted_eps": 18.81,
+        "diluted_shares_m": 472.3,
+        "gaap_op_margin_pct": 16.5,
+        "adj_op_margin_pct": 17.2,
+        "enterprise_ocf_bn": 11.739,
+        "capex_bn": 2.821,
+        "mpe_fcf_bn": 9.484
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "3Q24",
+        "revenue_bn": 16.106,
+        "gaap_op_margin_pct": 19.5,
+        "adj_op_margin_pct": 20.0,
+        "gaap_eps": 5.06,
+        "adj_eps": 5.17,
+        "enterprise_ocf_bn": 3.6
+      },
+      {
+        "quarter": "4Q24",
+        "revenue_bn": 16.215,
+        "gaap_op_margin_pct": 18.0,
+        "adj_op_margin_pct": 18.3,
+        "gaap_eps": 5.78,
+        "adj_eps": 5.14,
+        "enterprise_ocf_bn": null
+      },
+      {
+        "quarter": "1Q25",
+        "revenue_bn": 14.249,
+        "gaap_op_margin_pct": 18.1,
+        "adj_op_margin_pct": 18.3,
+        "gaap_eps": 4.2,
+        "adj_eps": 4.25,
+        "enterprise_ocf_bn": 1.3
+      },
+      {
+        "quarter": "2Q25",
+        "revenue_bn": 16.569,
+        "gaap_op_margin_pct": 17.3,
+        "adj_op_margin_pct": 17.6,
+        "gaap_eps": 4.62,
+        "adj_eps": 4.72,
+        "enterprise_ocf_bn": 3.1
+      },
+      {
+        "quarter": "3Q25",
+        "revenue_bn": 17.638,
+        "gaap_op_margin_pct": 17.3,
+        "adj_op_margin_pct": 17.5,
+        "gaap_eps": 4.88,
+        "adj_eps": 4.95,
+        "enterprise_ocf_bn": 3.7
+      },
+      {
+        "quarter": "4Q25",
+        "revenue_bn": 19.133,
+        "gaap_op_margin_pct": 13.9,
+        "adj_op_margin_pct": 15.6,
+        "gaap_eps": 5.12,
+        "adj_eps": 5.16,
+        "enterprise_ocf_bn": null
+      },
+      {
+        "quarter": "1Q26",
+        "revenue_bn": 17.415,
+        "gaap_op_margin_pct": 17.7,
+        "adj_op_margin_pct": 18.0,
+        "gaap_eps": 5.47,
+        "adj_eps": 5.54,
+        "enterprise_ocf_bn": 1.9
+      },
+      {
+        "quarter": "2Q26",
+        "revenue_bn": 20.543,
+        "gaap_op_margin_pct": 20.9,
+        "adj_op_margin_pct": 21.9,
+        "gaap_eps": 7.77,
+        "adj_eps": 8.17,
+        "enterprise_ocf_bn": 4.4
+      }
+    ],
+    "ceilings": [
+      "Standalone quarterly enterprise OCF/CAPEX/FCF for Q4 periods is not consistently presented in earnings releases; annual MP&E FCF is complete.",
+      "2026 segment reclassification (Rail to Resource Industries; application remaps) limits direct pre-2026 segment-series comparability."
+    ]
+  },
+  "segments": {
+    "2q26": [
+      {
+        "segment": "Power & Energy",
+        "sales_bn": 8.238,
+        "sales_yoy_pct": 17,
+        "profit_bn": 2.027,
+        "margin_pct": 24.6
+      },
+      {
+        "segment": "Construction Industries",
+        "sales_bn": 8.346,
+        "sales_yoy_pct": 35,
+        "profit_bn": 1.947,
+        "margin_pct": 23.3
+      },
+      {
+        "segment": "Resource Industries",
+        "sales_bn": 4.648,
+        "sales_yoy_pct": 20,
+        "profit_bn": 0.693,
+        "margin_pct": 14.9
+      }
+    ],
+    "retail_2q26": {
+      "power_generation_yoy_pct": 72,
+      "construction_world_yoy_pct": 22,
+      "construction_na_yoy_pct": 27,
+      "resource_total_yoy_pct": 17,
+      "mining_hc_qa_yoy_pct": 15,
+      "rail_yoy_pct": 272,
+      "note": "Dealer retail statistics are unaudited/directional; Power Generation retail is not equivalent to data-center revenue."
+    }
+  },
+  "industry": {
+    "us_data_center": {
+      "2023_twh": 176,
+      "2023_share_pct": 4.4,
+      "2028_twh_low": 325,
+      "2028_twh_high": 580,
+      "2028_share_pct_low": 6.7,
+      "2028_share_pct_high": 12.0
+    },
+    "lbnl_queue_end_2025": {
+      "projects": 8200,
+      "generation_gw": 1312,
+      "storage_gw": 749,
+      "scope_note": "Generation interconnection queues; excludes load interconnection and behind-the-meter projects."
+    },
+    "us_construction_jun_2026": {
+      "total_saar_bn": 2166.5,
+      "yoy_pct": -3.2,
+      "private_nonres_saar_bn": 745.3,
+      "public_saar_bn": 544.1
+    },
+    "critical_minerals": {
+      "copper_demand_growth_to_2040_pct": 30,
+      "mining_capital_needed_to_2040_bn": 500,
+      "copper_2035_supply_gap_2025_outlook_pct": 30,
+      "copper_2035_supply_gap_2026_outlook_pct": 25
+    }
+  },
+  "kpis": [
+    {
+      "name": "P&E sales growth",
+      "history": [
+        {
+          "period": "2Q26",
+          "value": 17,
+          "unit": "% YoY"
+        }
+      ],
+      "current": 17,
+      "thresholds": {
+        "green": ">15% with P&E margin ≥23%",
+        "yellow": "5–15% or margin 20–23%",
+        "red": "<5% with margin <20%"
+      }
+    },
+    {
+      "name": "Power Generation retail growth",
+      "history": [
+        {
+          "period": "2Q26",
+          "value": 72,
+          "unit": "% YoY"
+        }
+      ],
+      "current": 72,
+      "thresholds": {
+        "green": ">25% for multiple quarters",
+        "yellow": "0–25%",
+        "red": "negative YoY"
+      }
+    },
+    {
+      "name": "P&E segment margin",
+      "history": [
+        {
+          "period": "1Q26",
+          "value": 20.6
+        },
+        {
+          "period": "2Q26",
+          "value": 24.6
+        }
+      ],
+      "current": 24.6,
+      "thresholds": {
+        "green": "≥23% excluding unusual recoveries",
+        "yellow": "20–23%",
+        "red": "<20%"
+      }
+    },
+    {
+      "name": "Enterprise backlog",
+      "history": [
+        {
+          "period": "2025YE",
+          "value": 51,
+          "unit": "$B"
+        },
+        {
+          "period": "2Q26",
+          "value": 72.1,
+          "unit": "$B"
+        }
+      ],
+      "current": 72.1,
+      "thresholds": {
+        "green": "stable/up with conversion",
+        "yellow": "flat/down <10%",
+        "red": ">20% decline without delivery explanation"
+      }
+    },
+    {
+      "name": "CI North America machine retail growth",
+      "history": [
+        {
+          "period": "2Q26",
+          "value": 27,
+          "unit": "% YoY"
+        }
+      ],
+      "current": 27,
+      "thresholds": {
+        "green": ">10%",
+        "yellow": "0–10%",
+        "red": "negative plus dealer inventory build"
+      }
+    },
+    {
+      "name": "RI mining/HC/Q&A retail growth",
+      "history": [
+        {
+          "period": "2Q26",
+          "value": 15,
+          "unit": "% YoY"
+        }
+      ],
+      "current": 15,
+      "thresholds": {
+        "green": ">5%",
+        "yellow": "-5–5%",
+        "red": "<-5%"
+      }
+    },
+    {
+      "name": "Cat Financial past dues",
+      "history": [
+        {
+          "period": "2Q25",
+          "value": 1.62,
+          "unit": "%"
+        },
+        {
+          "period": "1Q26",
+          "value": 1.39,
+          "unit": "%"
+        },
+        {
+          "period": "2Q26",
+          "value": 1.31,
+          "unit": "%"
+        }
+      ],
+      "current": 1.31,
+      "thresholds": {
+        "green": "≤1.5%",
+        "yellow": "1.5–2.0%",
+        "red": ">2.0%"
+      }
+    },
+    {
+      "name": "FY27 EPS consensus",
+      "history": [
+        {
+          "period": "~90d prior",
+          "value": 29.86
+        },
+        {
+          "period": "~60d prior",
+          "value": 30.15
+        },
+        {
+          "period": "~30d prior",
+          "value": 30.45
+        },
+        {
+          "period": "current",
+          "value": 32.33
+        }
+      ],
+      "current": 32.33,
+      "thresholds": {
+        "green": "≥$34 and rising",
+        "yellow": "$30–34",
+        "red": "<$30 / negative revisions"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.2,
+      "revenue_path": [
+        79.2,
+        80.0,
+        82.0,
+        84.0,
+        87.0
+      ],
+      "margin_path": [
+        19.1,
+        18.0,
+        17.0,
+        17.3,
+        17.5
+      ],
+      "fcf": [
+        10.5,
+        9.0,
+        8.0,
+        8.0,
+        9.0
+      ],
+      "diluted_shares": 448,
+      "terminal_pe": 16,
+      "cum_dividends": 28,
+      "implied_2030_eps": 27.53,
+      "terminal_price": 440.44,
+      "scenario_irr": -0.1163,
+      "per_share_value": 302.65
+    },
+    {
+      "name": "Base",
+      "probability": 0.55,
+      "revenue_path": [
+        79.2,
+        86.0,
+        91.0,
+        96.0,
+        101.0
+      ],
+      "margin_path": [
+        19.1,
+        20.0,
+        21.0,
+        21.8,
+        22.5
+      ],
+      "fcf": [
+        10.8,
+        11.0,
+        12.5,
+        13.5,
+        14.5
+      ],
+      "diluted_shares": 435,
+      "terminal_pe": 21,
+      "cum_dividends": 31,
+      "implied_2030_eps": 42.32,
+      "terminal_price": 888.63,
+      "scenario_irr": 0.0326,
+      "per_share_value": 590.28
+    },
+    {
+      "name": "Bull",
+      "probability": 0.25,
+      "revenue_path": [
+        79.2,
+        89.0,
+        98.0,
+        106.0,
+        114.0
+      ],
+      "margin_path": [
+        19.1,
+        21.2,
+        22.8,
+        24.2,
+        25.5
+      ],
+      "fcf": [
+        11.0,
+        12.0,
+        14.0,
+        16.0,
+        18.0
+      ],
+      "diluted_shares": 425,
+      "terminal_pe": 25,
+      "cum_dividends": 34,
+      "implied_2030_eps": 55.4,
+      "terminal_price": 1385.1,
+      "scenario_irr": 0.1414,
+      "per_share_value": 908.64
+    }
+  ],
+  "valuation": {
+    "mode": "Mode D — Cyclical with segment-aware P&E structural overlay",
+    "required_return": 0.11,
+    "horizon_years": 4.33,
+    "core": 590.28,
+    "execution": null,
+    "ecosystem": null,
+    "drag": null,
+    "expected_value": 612.34,
+    "expected_irr": 0.03,
+    "current_price": 800.25,
+    "up_down_ratio": 0.22,
+    "current_fy26_pe": 29.43,
+    "current_fy27_pe": 24.75,
+    "gaap_ttm_pe": 34.43,
+    "adj_ttm_pe": 33.6,
+    "historical_10y_median_gaap_pe": 18.47,
+    "five_year_quarterly_adjusted_pe_percentile": 85.0,
+    "method_note": "Mode D scenario PVs discounted at 11%; no additive ecosystem/optionality buckets to avoid double counting."
+  },
+  "reverse_expectations": {
+    "required_terminal_price_2030": 1226.4,
+    "assumed_cumulative_dividends": 31,
+    "share_count_assumption_m": 435,
+    "pe_eps_table": [
+      {
+        "terminal_pe": 20,
+        "required_eps": 61.32,
+        "required_net_income_bn": 26.67
+      },
+      {
+        "terminal_pe": 22,
+        "required_eps": 55.75,
+        "required_net_income_bn": 24.25
+      },
+      {
+        "terminal_pe": 24,
+        "required_eps": 51.1,
+        "required_net_income_bn": 22.23
+      },
+      {
+        "terminal_pe": 25,
+        "required_eps": 49.06,
+        "required_net_income_bn": 21.34
+      }
+    ],
+    "operating_combinations": [
+      {
+        "terminal_pe": 22,
+        "revenue_bn": 105,
+        "required_adj_op_margin_pct": 28.5
+      },
+      {
+        "terminal_pe": 24,
+        "revenue_bn": 105,
+        "required_adj_op_margin_pct": 26.1
+      },
+      {
+        "terminal_pe": 24,
+        "revenue_bn": 110,
+        "required_adj_op_margin_pct": 24.9
+      },
+      {
+        "terminal_pe": 25,
+        "revenue_bn": 101,
+        "required_adj_op_margin_pct": 26.1
+      },
+      {
+        "terminal_pe": 25,
+        "revenue_bn": 105,
+        "required_adj_op_margin_pct": 25.1
+      },
+      {
+        "terminal_pe": 25,
+        "revenue_bn": 110,
+        "required_adj_op_margin_pct": 23.9
+      }
+    ],
+    "company_stable_economy_2030_revenue_range_bn": [
+      86.8,
+      97.3
+    ],
+    "conclusion": "At $800.25, an 11% hurdle requires an operating path above the upper end of CAT's stable-economy long-term revenue framework plus near-top-end margins and a premium terminal multiple."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_bn": 79.16,
+      "eps": 27.19
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_bn": 88.12,
+      "eps": 32.33
+    },
+    "revision_trend": "Strong upward EPS revisions after 2Q26; approximately $24.5–24.7 FY26 and $29.9–30.5 FY27 roughly 30–90 days earlier versus $27.19/$32.33 current reference.",
+    "positioning_note": "Consensus already embeds sharp earnings acceleration; valuation risk is duration/multiple rather than lack of near-term growth."
+  },
+  "stance": {
+    "zone": "회피 / 신규 매수 보류; 기존 보유자는 비중 축소 검토",
+    "price_bands": {
+      "≤$500": "적극 관심 / Buy zone",
+      "$500–610": "조건부 관심",
+      "$610–800": "관망 / 신규매수 보류",
+      ">$800": "회피 / 기존 보유 비중 축소 검토"
+    },
+    "horizon": "End-2030 valuation horizon; 12-month monitoring overlay",
+    "hurdle_irr": 0.11,
+    "current_thesis": "Good company, unattractive expected return at current price unless P&E/service duration exceeds the bull path."
+  },
+  "catalysts": [
+    {
+      "when": "2026-09-10",
+      "event": "Wells Fargo virtual headquarters visit with CEO Joe Creed",
+      "sensitivity": "M"
+    },
+    {
+      "when": "2026-11 (estimated; not formally announced at T0)",
+      "event": "3Q26 earnings",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027-01/02 (estimated)",
+      "event": "4Q26/FY26 results and 2027 outlook",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027 proxy season",
+      "event": "Capital-allocation, incentive and governance update",
+      "sensitivity": "L"
+    },
+    {
+      "when": "1H27",
+      "event": "Engine capacity step-up window; monitor shipment/margin absorption",
+      "sensitivity": "H"
+    },
+    {
+      "when": "Through 2027-08",
+      "event": "Hyperscaler/data-center project and framework disclosures",
+      "sensitivity": "H"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC001",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3 / Appendix A"
+    },
+    {
+      "rc_id": "RC002",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1"
+    },
+    {
+      "rc_id": "RC003",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch1 & Ch3 / Appendix F"
+    },
+    {
+      "rc_id": "RC004",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1 & Ch4"
+    },
+    {
+      "rc_id": "RC005",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1 & Ch3"
+    },
+    {
+      "rc_id": "RC006",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3 / Appendix H"
+    },
+    {
+      "rc_id": "RC007",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3 / Appendix G"
+    },
+    {
+      "rc_id": "RC008",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch2 / Appendix D"
+    },
+    {
+      "rc_id": "RC009",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch4 / Appendix B"
+    },
+    {
+      "rc_id": "RC010",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4 & Ch5"
+    },
+    {
+      "rc_id": "RC011",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4 / Appendix I"
+    },
+    {
+      "rc_id": "RC012",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4 & Ch6"
+    },
+    {
+      "rc_id": "RC013",
+      "status": "COMPLETE",
+      "h3_locator": "Ch5 / Appendix J"
+    },
+    {
+      "rc_id": "RC014",
+      "status": "COMPLETE",
+      "h3_locator": "Ch5 / Appendix K"
+    },
+    {
+      "rc_id": "RC015",
+      "status": "COMPLETE",
+      "h3_locator": "Ch6"
+    }
+  ],
+  "capacity": {
+    "p_and_e_capex_2025_2030_vs_2019_2024": "~2x",
+    "large_engine_capacity_target_vs_2024": "~2x",
+    "solar_turbines_capacity_target_vs_2024": "2.5x",
+    "power_generation_sales_2030_target_vs_2024": ">2x",
+    "combined_large_engine_turbine_capacity_2030_gw": 50
+  },
+  "services": {
+    "2024_revenue_bn": 24,
+    "2030_target_bn": 30,
+    "connected_assets_m_gt": 1.5,
+    "ecommerce_daily_m_approx": 18,
+    "current_attach_rate": null,
+    "services_margin": null,
+    "ceiling": "Current service attach rate and separate services margin are not disclosed."
+  },
+  "capital_allocation": {
+    "2025_buybacks_bn": 5.19,
+    "2025_dividends_bn": 2.788,
+    "2026_quarterly_dividend": 1.63,
+    "2026_dividend_increase_pct": 8,
+    "shares_outstanding_jun_2026_m": 459.7,
+    "shares_outstanding_jun_2025_m": 468.5,
+    "sbc_2025_m": 242
+  },
+  "cat_financial": {
+    "2q26_retail_new_business_bn": 3.92,
+    "2q26_past_dues_pct": 1.31,
+    "2q25_past_dues_pct": 1.62,
+    "2q26_allowance_m": 294,
+    "2q26_allowance_pct_finance_receivables": 0.84
+  },
+  "earnings_quality": {
+    "tariff_recoveries_2q26_m": 392,
+    "inventory_jun_2026_bn": 20.627,
+    "inventory_dec_2025_bn": 18.135,
+    "customer_advances_jun_2026_bn": 4.777,
+    "customer_advances_dec_2025_bn": 3.314,
+    "mpe_long_term_debt_gt_1y_jun_2026_bn": 10.655,
+    "financial_products_short_term_borrowings_jun_2026_bn": 5.046,
+    "financial_products_lt_due_1y_jun_2026_bn": 8.026,
+    "financial_products_lt_gt_1y_jun_2026_bn": 21.384
+  },
+  "valuation_history": {
+    "quarterly_adjusted_pe_sample_5y": [
+      19.9,
+      18.6,
+      19.6,
+      16.1,
+      16.7,
+      18.2,
+      13.5,
+      15.8,
+      11.4,
+      15.2,
+      15.4,
+      14.6,
+      17.2,
+      17.1,
+      15.0,
+      22.5,
+      30.7,
+      34.9,
+      43.7,
+      36.8
+    ],
+    "current_adjusted_ttm_pe": 33.6,
+    "current_sample_percentile": 85.0,
+    "source_note": "20-quarter adjusted P/E sample from historicalperatio.com; current adjusted TTM P/E recalculated from CAT adjusted EPS."
+  },
+  "source_registry": [
+    {
+      "id": "S01",
+      "type": "primary",
+      "title": "CAT 2025 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823026000008/cat-20251231.htm"
+    },
+    {
+      "id": "S02",
+      "type": "primary",
+      "title": "CAT 2Q26 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823026000046/0000018230-26-000046-index.htm"
+    },
+    {
+      "id": "S03",
+      "type": "primary",
+      "title": "CAT 2Q26 earnings exhibit",
+      "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823026000040/ex991toformcat2q2026earnin.htm"
+    },
+    {
+      "id": "S04",
+      "type": "primary",
+      "title": "CAT 2025 Investor Day Highlights",
+      "url": "https://investors.caterpillar.com/events-presentations/2025-Investor-Day-Highlights/default.aspx"
+    },
+    {
+      "id": "S05",
+      "type": "primary",
+      "title": "CAT 2026 proxy materials",
+      "url": "https://www.caterpillar.com/en/investors/financial-information/proxy-materials/annual-meeting-proxy-statement.html"
+    },
+    {
+      "id": "S06",
+      "type": "primary",
+      "title": "Cat Financial 2Q26",
+      "url": "https://www.caterpillar.com/en/news/corporate-press-releases/h/2q26-results-cat-financial.html"
+    },
+    {
+      "id": "S07",
+      "type": "government",
+      "title": "DOE/LBNL 2024 U.S. Data Center Energy Use",
+      "url": "https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers"
+    },
+    {
+      "id": "S08",
+      "type": "research",
+      "title": "LBNL Queued Up 2026",
+      "url": "https://emp.lbl.gov/queues"
+    },
+    {
+      "id": "S09",
+      "type": "government",
+      "title": "U.S. Census June 2026 Construction Spending",
+      "url": "https://www.census.gov/construction/c30/current/index.html"
+    },
+    {
+      "id": "S10",
+      "type": "agency",
+      "title": "IEA Global Critical Minerals Outlook 2025",
+      "url": "https://www.iea.org/reports/global-critical-minerals-outlook-2025/overview-of-outlook-for-key-minerals"
+    },
+    {
+      "id": "S11",
+      "type": "agency",
+      "title": "IEA Global Critical Minerals Outlook 2026",
+      "url": "https://www.iea.org/reports/global-critical-minerals-outlook-2026/outlook"
+    },
+    {
+      "id": "S12",
+      "type": "primary",
+      "title": "CAT dividend June 2026",
+      "url": "https://www.caterpillar.com/en/news/corporate-press-releases/h/june-2026-dividends.html"
+    },
+    {
+      "id": "S13",
+      "type": "primary",
+      "title": "CAT C175 product",
+      "url": "https://www.cat.com/en_US/products/new/power-systems/electric-power/diesel-generator-sets/1000028913.html"
+    },
+    {
+      "id": "S14",
+      "type": "competitor_primary",
+      "title": "Komatsu autonomous haulage",
+      "url": "https://www.komatsu.com/en-us/technology/smart-mining/loading-and-haulage/autonomous-haulage-system"
+    },
+    {
+      "id": "S15",
+      "type": "secondary",
+      "title": "StockAnalysis CAT forecast/history",
+      "url": "https://stockanalysis.com/stocks/cat/forecast/"
+    },
+    {
+      "id": "S16",
+      "type": "secondary",
+      "title": "GuruFocus CAT P/E",
+      "url": "https://www.gurufocus.com/term/pe-ratio/CAT"
+    },
+    {
+      "id": "S17",
+      "type": "secondary",
+      "title": "Historical P/E quarterly sample",
+      "url": "https://www.historicalperatio.com/cat-pe-ratio-history.html"
+    }
+  ],
+  "audit": {
+    "rc_unresolved": 0,
+    "h1_h2_research_contract_completeness": "PASS",
+    "h2_h3_coverage_lineage": "PASS",
+    "latest_filing_check": "PASS",
+    "data_pack_report_parity": "PASS",
+    "industry_company_narrative": "PASS",
+    "korean_prose_quality": "PASS",
+    "content_meaning_lock_preserved": "PASS",
+    "published_top_level_schema_match": "PASS",
+    "explanatory_depth_preserved": "PASS",
+    "pdf_bookmarks": "PASS",
+    "html_sidebar": "PASS",
+    "searchable_text": "PASS",
+    "contact_sheet_composition_qa": "PASS",
+    "semantic_golden_qa": "PASS",
+    "visual_golden_qa": "PASS",
+    "publishing_acceptance": "PASS"
+  },
+  "publishing": {
+    "completed_asia_seoul": "2026-08-31",
+    "pdf_pages": 26,
+    "core_landscape_pages": 0,
+    "printed_toc_pages": 1,
+    "decision_visuals": 7
+  }
+}

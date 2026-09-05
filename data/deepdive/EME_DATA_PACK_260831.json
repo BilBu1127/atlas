@@ -1,0 +1,1032 @@
+{
+  "meta": {
+    "ticker": "EME",
+    "company": "EMCOR Group, Inc.",
+    "T0": "2026-08-31",
+    "publishing_date_asia_seoul": "2026-08-31",
+    "price_asof": "2026-08-28",
+    "price": 740.17,
+    "filing_asof": "2026-07-31",
+    "latest_financial_filing": "2026-07-30 2Q26 Form 10-Q / earnings 8-K",
+    "latest_other_filing": "2026-07-31 mine-safety 8-K (no injury; MOR PPM subsidiary)",
+    "transcript_asof": "2026-07-30",
+    "consensus_asof": "2026-08-31",
+    "version": "Clean DDOS Production v1.7"
+  },
+  "economic_definition": "미국의 고복잡도 비주거 시설에서 전기·기계 시공, VDC/BIM·prefabrication, 유지보수와 프로젝트 관리 역량을 결합하는 specialty contractor/service hybrid.",
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue_b": 12.582873,
+        "gross_profit_b": 2.089339,
+        "operating_income_b": 0.875756,
+        "operating_margin_pct": 6.96,
+        "net_income_b": 0.633329,
+        "diluted_eps": 13.31,
+        "ocf_b": 0.899655,
+        "capex_b": 0.078404,
+        "fcf_b": 0.821251,
+        "fcf_margin_pct": 6.53,
+        "diluted_avg_shares_m": 47.564
+      },
+      {
+        "year": 2024,
+        "revenue_b": 14.566116,
+        "gross_profit_b": 2.765051,
+        "operating_income_b": 1.344863,
+        "operating_margin_pct": 9.23,
+        "net_income_b": 1.007145,
+        "diluted_eps": 21.52,
+        "ocf_b": 1.407894,
+        "capex_b": 0.07495,
+        "fcf_b": 1.332944,
+        "fcf_margin_pct": 9.15,
+        "diluted_avg_shares_m": 46.808
+      },
+      {
+        "year": 2025,
+        "revenue_b": 16.986422,
+        "gross_profit_b": 3.282988,
+        "operating_income_b": 1.713418,
+        "operating_margin_pct": 10.09,
+        "adjusted_operating_income_b": 1.589,
+        "adjusted_operating_margin_pct": 9.35,
+        "net_income_b": 1.272817,
+        "diluted_eps": 28.19,
+        "adjusted_diluted_eps": 25.87,
+        "ocf_b": 1.302063,
+        "capex_b": 0.11275,
+        "fcf_b": 1.189313,
+        "fcf_margin_pct": 7.0,
+        "diluted_avg_shares_m": 45.146,
+        "note": "GAAP operating income/EPS include UK disposal gain; adjusted figures shown separately."
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "3Q24",
+        "revenue_b": 3.696924,
+        "operating_margin_pct": 9.8,
+        "diluted_eps": 5.8,
+        "rpo_b": 9.79
+      },
+      {
+        "quarter": "4Q24",
+        "revenue_b": 3.770019,
+        "operating_margin_pct": 10.3,
+        "diluted_eps": 6.32,
+        "rpo_b": 10.1
+      },
+      {
+        "quarter": "1Q25",
+        "revenue_b": 3.867372,
+        "operating_margin_pct": 8.2,
+        "diluted_eps": 5.26,
+        "rpo_b": 11.75
+      },
+      {
+        "quarter": "2Q25",
+        "revenue_b": 4.3044,
+        "operating_margin_pct": 9.6,
+        "diluted_eps": 6.72,
+        "rpo_b": 11.91
+      },
+      {
+        "quarter": "3Q25",
+        "revenue_b": 4.301529,
+        "operating_margin_pct": 9.4,
+        "diluted_eps": 6.57,
+        "rpo_b": 12.61
+      },
+      {
+        "quarter": "4Q25",
+        "revenue_b": 4.513121,
+        "operating_margin_pct": 12.7,
+        "adjusted_operating_margin_pct": 9.7,
+        "diluted_eps": 9.68,
+        "adjusted_diluted_eps": 7.19,
+        "rpo_b": 13.25,
+        "note": "GAAP includes UK disposal gain."
+      },
+      {
+        "quarter": "1Q26",
+        "revenue_b": 4.628233,
+        "operating_margin_pct": 8.7,
+        "diluted_eps": 6.84,
+        "rpo_b": 15.62067
+      },
+      {
+        "quarter": "2Q26",
+        "revenue_b": 5.154892,
+        "operating_margin_pct": 10.6,
+        "diluted_eps": 9.06,
+        "rpo_b": 17.143101
+      }
+    ],
+    "1h26": {
+      "revenue_b": 9.783125,
+      "net_income_b": 0.7092,
+      "ocf_b": 0.2899,
+      "capex_b": 0.05986,
+      "fcf_b": 0.23004,
+      "ocf_to_net_income_pct": 40.9
+    },
+    "ceilings": [
+      "Data-center-only/AI-only revenue is not disclosed.",
+      "Quantified VDC/BIM/prefab productivity uplift is not disclosed.",
+      "Standalone normalized post-acquisition EBITDA/ROIC for 2026 acquisition cluster is not disclosed."
+    ]
+  },
+  "segments": {
+    "annual_and_q2_26": {
+      "electrical": {
+        "2023": {
+          "revenue_b": 2.7837,
+          "operating_income_b": 0.23064,
+          "margin_pct": 8.3
+        },
+        "2024": {
+          "revenue_b": 3.3429,
+          "operating_income_b": 0.447186,
+          "margin_pct": 13.4
+        },
+        "2025": {
+          "revenue_b": 5.0743,
+          "operating_income_b": 0.611952,
+          "margin_pct": 12.1
+        },
+        "2Q26": {
+          "revenue_b": 1.662501,
+          "operating_income_b": 0.2312,
+          "margin_pct": 13.9
+        }
+      },
+      "mechanical": {
+        "2023": {
+          "revenue_b": 5.0748,
+          "operating_income_b": 0.530644,
+          "margin_pct": 10.5
+        },
+        "2024": {
+          "revenue_b": 6.4057,
+          "operating_income_b": 0.799613,
+          "margin_pct": 12.5
+        },
+        "2025": {
+          "revenue_b": 7.0505,
+          "operating_income_b": 0.905325,
+          "margin_pct": 12.8
+        },
+        "2Q26": {
+          "revenue_b": 2.300873,
+          "operating_income_b": 0.2866,
+          "margin_pct": 12.5
+        }
+      },
+      "building_services": {
+        "2023": {
+          "revenue_b": 3.1201,
+          "operating_income_b": 0.182995,
+          "margin_pct": 5.9
+        },
+        "2024": {
+          "revenue_b": 3.1148,
+          "operating_income_b": 0.17672,
+          "margin_pct": 5.7
+        },
+        "2025": {
+          "revenue_b": 3.1222,
+          "operating_income_b": 0.187192,
+          "margin_pct": 6.0
+        },
+        "2Q26": {
+          "revenue_b": 0.837706,
+          "operating_income_b": 0.0634,
+          "margin_pct": 7.6
+        }
+      },
+      "industrial_services": {
+        "2023": {
+          "revenue_b": 1.1678,
+          "operating_income_b": 0.035375,
+          "margin_pct": 3.0
+        },
+        "2024": {
+          "revenue_b": 1.2772,
+          "operating_income_b": 0.044213,
+          "margin_pct": 3.5
+        },
+        "2025": {
+          "revenue_b": 1.2681,
+          "operating_income_b": 0.024998,
+          "margin_pct": 2.0
+        },
+        "2Q26": {
+          "revenue_b": 0.353812,
+          "operating_income_b": 0.0096,
+          "margin_pct": 2.7
+        }
+      }
+    },
+    "network_communications_revenue": {
+      "2023": {
+        "electrical_b": 0.934455,
+        "mechanical_b": 0.410397,
+        "combined_b": 1.344852
+      },
+      "2024": {
+        "electrical_b": 1.442877,
+        "mechanical_b": 0.818991,
+        "combined_b": 2.261868
+      },
+      "2025": {
+        "electrical_b": 2.461883,
+        "mechanical_b": 1.670355,
+        "combined_b": 4.132238
+      },
+      "2Q26": {
+        "electrical_b": 0.973046,
+        "mechanical_b": 0.799293,
+        "combined_b": 1.772339,
+        "share_of_em_segments_pct": 44.7
+      }
+    },
+    "rpo_2q26": {
+      "total_b": 17.143101,
+      "within_one_year_b": 13.023427,
+      "within_one_year_pct": 76.0,
+      "segment_mix": {
+        "electrical_pct": 36,
+        "mechanical_pct": 55,
+        "building_services_pct": 8,
+        "industrial_services_pct": 1
+      },
+      "sector_mix": {
+        "network_communications_pct": 45,
+        "high_tech_manufacturing_pct": 6,
+        "healthcare_pct": 10,
+        "institutional_pct": 10,
+        "water_wastewater_pct": 8,
+        "commercial_pct": 8,
+        "manufacturing_industrial_pct": 5,
+        "other_pct": 8
+      }
+    }
+  },
+  "industry": {
+    "census_june_2026": {
+      "total_construction_saar_b": 2166.5,
+      "yoy_pct": -3.2,
+      "private_nonresidential_saar_b": 745.3,
+      "mom_pct": 0.1
+    },
+    "labor": {
+      "electrician_median_pay_2025": 63190,
+      "electrician_growth_2025_35_pct": 9,
+      "electrician_openings_pa": 72700,
+      "pipefitters_median_pay_2025": 63800,
+      "pipefitters_growth_2025_35_pct": 7,
+      "pipefitters_openings_pa": 42000
+    },
+    "end_demand_signals": {
+      "microsoft_added_capacity_gw_fy26q4": 1.0,
+      "microsoft_capacity_target": "roughly double overall capacity in two years",
+      "meta_2026_capex_range_b": [
+        130,
+        145
+      ],
+      "boundary": "These are end-demand indicators, not evidence that the companies are EMCOR customers."
+    }
+  },
+  "management": {
+    "ceo": "Anthony J. Guzzi",
+    "ceo_since": 2011,
+    "2011_revenue_b": 5.613459,
+    "2011_operating_income_b": 0.210793,
+    "2011_operating_margin_pct": 3.76,
+    "2011_diluted_eps": 1.91,
+    "2011_2025_revenue_cagr_pct": 8.23,
+    "2011_2025_eps_cagr_pct": 21.2,
+    "approx_share_base_change_2011_to_2025_pct": -34.1,
+    "2025_ceo_total_comp_m": 14.38063,
+    "2025_salary_as_pct_total_comp": 9,
+    "2025_incentive_adjusted_eps": 25.9,
+    "2025_incentive_cash_flow_ratio_pct": 83,
+    "comp_design": "Annual incentive tied to adjusted diluted EPS and adjusted positive operating cash flow / adjusted operating income ratio."
+  },
+  "m_and_a": {
+    "miller": {
+      "close": "2025-02-03",
+      "cash_consideration_m": 876.8,
+      "predeal_2024_revenue_m": 805,
+      "predeal_adjusted_ebitda_m": 80,
+      "implied_ev_ebitda_x": 10.96,
+      "2025_post_close_revenue_b": 1.09,
+      "2025_post_close_oi_net_amort_m": 21.3,
+      "2025_identifiable_amort_m": 40.5,
+      "conclusion": "Strategic contribution visible; definitive normalized post-deal ROIC remains a primary-source ceiling."
+    },
+    "1h26_small_acquisitions_upfront_m": 99.8,
+    "july_2026_four_electrical_contractors_upfront_m": 700,
+    "funding": "cash on hand plus revolver as necessary",
+    "cash_2026_06_30_m": 924.4,
+    "direct_revolver_borrowings_2026_06_30_m": 0,
+    "letters_of_credit_m": 73.4
+  },
+  "accounting_quality": {
+    "screen": "FLAGS_NOTED",
+    "cost_to_cost": true,
+    "contract_assets_2026_06_30_m": 400.539,
+    "current_contract_liabilities_2026_06_30_m": 2609.243,
+    "net_contract_liabilities_2026_06_30_m": -2209.502,
+    "net_contract_liabilities_2025_12_31_m": -1990.48,
+    "estimate_sensitivity_2025_operating_income_per_50bp_gp_m": 175,
+    "1h26_large_favorable_revisions_m": 42.179,
+    "1h26_large_unfavorable_revisions_m": 47.13,
+    "interpretation": "Cash conversion is the main current flag; large estimate revisions were net unfavorable in 1H26, which argues against catch-up profit inflation."
+  },
+  "guidance": {
+    "2025_initial": {
+      "revenue_range_b": [
+        16.1,
+        16.9
+      ],
+      "op_margin_range_pct": [
+        8.5,
+        9.2
+      ],
+      "eps_range": [
+        22.25,
+        24.0
+      ]
+    },
+    "2025_actual": {
+      "revenue_b": 16.986,
+      "adjusted_op_margin_pct": 9.4,
+      "adjusted_eps": 25.87
+    },
+    "2026_initial": {
+      "revenue_range_b": [
+        17.75,
+        18.5
+      ],
+      "op_margin_range_pct": [
+        9.0,
+        9.4
+      ],
+      "eps_range": [
+        27.25,
+        29.25
+      ]
+    },
+    "2026_q1_update": {
+      "revenue_range_b": [
+        18.5,
+        19.25
+      ],
+      "op_margin_range_pct": [
+        9.0,
+        9.4
+      ],
+      "eps_range": [
+        28.25,
+        29.75
+      ]
+    },
+    "2026_q2_update": {
+      "revenue_range_b": [
+        20.0,
+        20.5
+      ],
+      "op_margin_range_pct": [
+        9.5,
+        9.8
+      ],
+      "eps_range": [
+        32.0,
+        33.25
+      ]
+    }
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_b": 20.32,
+      "eps": 32.8
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_b": 22.326,
+      "eps": 37.0
+    },
+    "fy3": {
+      "year": 2028,
+      "revenue_b": 24.239,
+      "eps": 46.6,
+      "quality_note": "Public-provider EPS shows wider dispersion/inconsistency; use cautiously."
+    },
+    "target": {
+      "average": 1033,
+      "low": 885,
+      "median": 1047,
+      "high": 1200,
+      "analysts": 10
+    },
+    "short_interest": {
+      "date": "2026-08-14",
+      "shares": 941124,
+      "float_pct": 2.15,
+      "days_to_cover": 2.6
+    },
+    "revision_trend": "Strong upward company guidance revisions in 1Q26 and 2Q26; public consensus largely converged near Q2 company guidance."
+  },
+  "valuation": {
+    "mode": "Mode C — Mature Compounder with cyclical stress overlay",
+    "current_price": 740.17,
+    "2026_guide_mid_eps": 32.625,
+    "current_pe_on_guide_mid_x": 22.69,
+    "historical_pe": {
+      "current_x": 22.96,
+      "10y_mean_x": 20.15,
+      "10y_median_x": 19.04
+    },
+    "scenario_expected_2029_value": 895.64,
+    "scenario_expected_price_irr_pct": 6.56,
+    "risk_adjusted_present_value": 676.53,
+    "bull_upside_to_bear_downside_ratio": 2.55,
+    "dcf": {
+      "bear": 307.0,
+      "base": 578.24,
+      "bull": 978.61,
+      "note": "FCF-based cross-check; long-duration terminal sensitivity is high."
+    },
+    "expected_value": 676.53,
+    "expected_irr": 6.56,
+    "core": 650,
+    "execution": 75,
+    "ecosystem": 0,
+    "drag": -48,
+    "note": "Core/execution/drag are narrative valuation bridge references, not separately traded assets."
+  },
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.25,
+      "revenue_path_b": [
+        20.25,
+        20.0,
+        20.6,
+        21.6,
+        22.7
+      ],
+      "operating_margin_path_pct": [
+        9.6,
+        8.6,
+        8.3,
+        8.5,
+        8.6
+      ],
+      "fcf_margin_path_pct": [
+        4.5,
+        5.0,
+        5.3,
+        5.5,
+        5.6
+      ],
+      "diluted_shares_2029_m": 43.5,
+      "2029_eps": 31.23,
+      "exit_pe": 15.0,
+      "per_share_value_2029": 468.5,
+      "dcf_per_share": 307.0,
+      "dcf_discount_rate_pct": 11.0,
+      "terminal_growth_pct": 2.0,
+      "path_years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ]
+    },
+    {
+      "name": "Base",
+      "probability": 0.55,
+      "revenue_path_b": [
+        20.25,
+        22.3,
+        24.3,
+        26.0,
+        27.6
+      ],
+      "operating_margin_path_pct": [
+        9.65,
+        9.8,
+        9.9,
+        10.0,
+        10.0
+      ],
+      "fcf_margin_path_pct": [
+        5.7,
+        6.2,
+        6.5,
+        6.8,
+        7.0
+      ],
+      "diluted_shares_2029_m": 43.0,
+      "2029_eps": 44.74,
+      "exit_pe": 20.0,
+      "per_share_value_2029": 894.88,
+      "dcf_per_share": 578.24,
+      "dcf_discount_rate_pct": 10.0,
+      "terminal_growth_pct": 3.0,
+      "path_years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ]
+    },
+    {
+      "name": "Bull",
+      "probability": 0.2,
+      "revenue_path_b": [
+        20.5,
+        23.7,
+        27.0,
+        29.9,
+        32.3
+      ],
+      "operating_margin_path_pct": [
+        9.8,
+        10.5,
+        10.8,
+        11.0,
+        11.0
+      ],
+      "fcf_margin_path_pct": [
+        6.2,
+        7.0,
+        7.5,
+        7.8,
+        8.0
+      ],
+      "diluted_shares_2029_m": 42.5,
+      "2029_eps": 57.27,
+      "exit_pe": 25.0,
+      "per_share_value_2029": 1431.68,
+      "dcf_per_share": 978.61,
+      "dcf_discount_rate_pct": 9.0,
+      "terminal_growth_pct": 3.5,
+      "path_years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ]
+    }
+  ],
+  "reverse_expectations": {
+    "price": 740.17,
+    "2027_consensus_eps": 37.0,
+    "implied_2027_pe_x": 20.0,
+    "historical_median_pe_x": 19.04,
+    "eps_required_at_median_pe": 38.87,
+    "assumed_2027_revenue_b": 22.326,
+    "assumed_diluted_shares_m": 43.7,
+    "assumed_tax_rate_pct": 26,
+    "implied_operating_income_b": 2.296,
+    "implied_operating_margin_pct": 10.28,
+    "2026_guidance_mid_operating_margin_pct": 9.65,
+    "interpretation": "Current price is broadly consistent with 2027 consensus at the long-run average multiple, but requires roughly a 10% operating-margin regime to hold if multiple reverts toward historical median."
+  },
+  "kpis": [
+    {
+      "name": "RPO YoY growth",
+      "current": 43.9,
+      "unit": "%",
+      "history": [
+        {
+          "period": "2Q25",
+          "value": null
+        },
+        {
+          "period": "2Q26",
+          "value": 43.9
+        }
+      ],
+      "thresholds": {
+        "green": ">=20%",
+        "yellow": "5% to <20%",
+        "red": "<5% or two consecutive sequential declines"
+      },
+      "current_signal": "GREEN"
+    },
+    {
+      "name": "Electrical + Mechanical N&C revenue growth",
+      "current": "very strong",
+      "unit": "qualitative",
+      "history": [
+        {
+          "period": "2023",
+          "value_b": 1.345
+        },
+        {
+          "period": "2024",
+          "value_b": 2.262
+        },
+        {
+          "period": "2025",
+          "value_b": 4.132
+        },
+        {
+          "period": "2Q26",
+          "value_b": 1.772
+        }
+      ],
+      "thresholds": {
+        "green": ">=20% YoY",
+        "yellow": "0% to <20%",
+        "red": "<0% YoY"
+      },
+      "current_signal": "GREEN"
+    },
+    {
+      "name": "Construction segment margin durability",
+      "current": "Electrical 13.9%, Mechanical 12.5%",
+      "unit": "%",
+      "thresholds": {
+        "green": "weighted E&M >=11.5%",
+        "yellow": "9.5% to <11.5%",
+        "red": "<9.5%"
+      },
+      "current_signal": "GREEN"
+    },
+    {
+      "name": "OCF / Net income conversion",
+      "current": 40.9,
+      "unit": "% 1H26",
+      "thresholds": {
+        "green": ">=80% on TTM/FY basis",
+        "yellow": "50% to <80% or seasonal YTD weakness",
+        "red": "<50% for two consecutive quarters / FY <70%"
+      },
+      "current_signal": "YELLOW"
+    },
+    {
+      "name": "RPO expected within 1 year",
+      "current": 76.0,
+      "unit": "%",
+      "thresholds": {
+        "green": ">=70%",
+        "yellow": "60% to <70%",
+        "red": "<60%"
+      },
+      "current_signal": "GREEN"
+    },
+    {
+      "name": "Post-M&A leverage / funding",
+      "current": "No direct revolver debt at 6/30/26; ~$700M acquisitions pending/closed in Q3",
+      "unit": "qualitative",
+      "thresholds": {
+        "green": "net debt/EBITDA <0.5x and acquired margins stable",
+        "yellow": "0.5–1.5x or integration drag",
+        "red": ">1.5x or material acquired-profit deterioration"
+      },
+      "current_signal": "YELLOW"
+    }
+  ],
+  "stance": {
+    "zone": "HOLD / WAIT FOR BETTER ENTRY",
+    "framework": "Expected return below 10–15% single-stock hurdle despite favorable upside/downside geometry.",
+    "price_bands": {
+      "strong_buy": "<= $600",
+      "accumulate": "$600–680",
+      "hold": "$680–850",
+      "trim": "$850–950",
+      "avoid_chasing": "> $950"
+    },
+    "attractive_entry_trigger": "Around $600 or below, probability-weighted 3-year price IRR rises to roughly the low/mid-teens and downside geometry improves materially.",
+    "horizon": "3 years",
+    "current_price_assessment": "High-quality operator; current price offers insufficient expected return for aggressive new buying."
+  },
+  "catalysts": [
+    {
+      "when": "3Q26 earnings (expected late Oct 2026)",
+      "event": "RPO growth, N&C revenue, Mechanical margin, 2026 acquisition closing/integration update",
+      "sensitivity": "High"
+    },
+    {
+      "when": "4Q26 / FY26 results (early 2027)",
+      "event": "full-year OCF/FCF catch-up and 2027 revenue/margin guide",
+      "sensitivity": "Very high"
+    },
+    {
+      "when": "2026–2027 hyperscaler infrastructure updates",
+      "event": "pace of data-center capacity additions and construction timing",
+      "sensitivity": "Medium; end-demand indicator only"
+    },
+    {
+      "when": "2027 filings",
+      "event": "Miller and 2026 electrical-acquisition contribution, goodwill/intangibles, leverage",
+      "sensitivity": "High"
+    }
+  ],
+  "risks": [
+    {
+      "risk": "N&C/data-center concentration and project timing",
+      "mechanism": "Award slowdown or delay reduces RPO conversion and utilization.",
+      "leading_indicator": "RPO sequential decline; N&C revenue growth <0%"
+    },
+    {
+      "risk": "Contract-role mix",
+      "mechanism": "More prime/CM, GMP, cost-plus work can lower margin despite higher revenue.",
+      "leading_indicator": "Mechanical margin <9.5%; disclosure of lower-margin mix"
+    },
+    {
+      "risk": "Working-capital / earnings-quality",
+      "mechanism": "Strong accrual earnings fail to convert to cash.",
+      "leading_indicator": "OCF/NI remains <50% for two quarters or FY <70%"
+    },
+    {
+      "risk": "M&A overpayment/integration",
+      "mechanism": "Purchase price and amortization exceed acquired cash returns; revolver usage rises.",
+      "leading_indicator": "net debt/EBITDA >1.5x or acquired margin deterioration"
+    },
+    {
+      "risk": "Skilled-labor inflation / execution",
+      "mechanism": "Wage pressure or insufficient craft capacity erodes project profitability.",
+      "leading_indicator": "margin compression with strong revenue; project delays"
+    },
+    {
+      "risk": "Safety/regulatory",
+      "mechanism": "site incidents/orders can stop work and damage bidding qualifications.",
+      "leading_indicator": "repeat OSHA/MSHA serious orders; recordable incident deterioration"
+    }
+  ],
+  "falsification_conditions": [
+    "RPO YoY growth falls below 5% while N&C revenue growth turns negative.",
+    "Weighted Electrical/Mechanical operating margin falls below 9.5% for two consecutive quarters without a clear temporary mix explanation.",
+    "Full-year OCF / net income falls below 70% and contract assets/receivables continue to rise faster than revenue.",
+    "Post-acquisition leverage exceeds 1.5x net debt/EBITDA or acquired businesses show persistent margin dilution.",
+    "Evidence shows the current N&C backlog is materially more cancelable, delayed, or non-data-center than the thesis assumes."
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.1 §1.3 / Ch.3 §3.2 / Ch.4 §4.2"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.1 §1.4 / Ch.3 §3.4"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3 §3.3 / Ch.4 §4.4"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3 §3.6"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3 §3.5"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.2 §2.4 / Ch.5 §5.5"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4 §4.1–4.3"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4 §4.4"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4 §4.5 / Ch.5 §5.5"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5 §5.1–5.4"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5–6"
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "visual_id": "VIS-01",
+      "title": "RPO 8Q trajectory",
+      "source_block": "financials.quarterly_8q[*].rpo_b",
+      "render": "line/bar hybrid"
+    },
+    {
+      "visual_id": "VIS-02",
+      "title": "N&C construction revenue expansion",
+      "source_block": "segments.network_communications_revenue",
+      "render": "stacked columns"
+    },
+    {
+      "visual_id": "VIS-03",
+      "title": "3Y financial quality",
+      "source_block": "financials.annual_3y",
+      "render": "revenue bars + margin/FCF callouts"
+    },
+    {
+      "visual_id": "VIS-04",
+      "title": "Segment margin map",
+      "source_block": "segments.annual_and_q2_26",
+      "render": "comparison bars"
+    },
+    {
+      "visual_id": "VIS-05",
+      "title": "Scenario value vs current price",
+      "source_block": "scenarios + valuation.current_price",
+      "render": "range/columns"
+    },
+    {
+      "visual_id": "VIS-06",
+      "title": "Reverse expectations",
+      "source_block": "reverse_expectations",
+      "render": "bridge/callout"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "name": "EMCOR 2025 Form 10-K",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/105634/000010563426000025/eme-20251231.htm",
+      "as_of": "2025-12-31"
+    },
+    {
+      "id": "S2",
+      "name": "EMCOR 2Q26 Form 10-Q",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/105634/000010563426000110/eme-20260630.htm",
+      "as_of": "2026-06-30"
+    },
+    {
+      "id": "S3",
+      "name": "EMCOR 2Q26 earnings release / 8-K",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/105634/000010563426000112/eme-ex991_2026630xq2.htm",
+      "as_of": "2026-07-30"
+    },
+    {
+      "id": "S4",
+      "name": "EMCOR 2026 Proxy Statement",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/105634/000114036126015809/ny20062562x1_def14a.htm",
+      "as_of": "2026-04-21"
+    },
+    {
+      "id": "S5",
+      "name": "EMCOR mine-safety 8-K",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/105634/000010563426000115/eme-20260728.htm",
+      "as_of": "2026-07-31"
+    },
+    {
+      "id": "S6",
+      "name": "EMCOR 2020 Form 10-K",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/105634/000010563421000044/eme-20201231.htm",
+      "as_of": "2020-12-31"
+    },
+    {
+      "id": "S7",
+      "name": "EMCOR 2013 Form 10-K (contains 2011 comparatives/history)",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/105634/000010563414000042/eme-20131231x10k.htm",
+      "as_of": "2013-12-31"
+    },
+    {
+      "id": "S8",
+      "name": "U.S. Census June 2026 Construction Spending",
+      "type": "primary",
+      "url": "https://www.census.gov/construction/c30/current/index.html",
+      "as_of": "2026-06-30"
+    },
+    {
+      "id": "S9",
+      "name": "BLS Electricians OOH",
+      "type": "primary",
+      "url": "https://www.bls.gov/ooh/construction-and-extraction/electricians.htm",
+      "as_of": "2026-08-28"
+    },
+    {
+      "id": "S10",
+      "name": "BLS Plumbers, Pipefitters and Steamfitters OOH",
+      "type": "primary",
+      "url": "https://www.bls.gov/ooh/construction-and-extraction/plumbers-pipefitters-and-steamfitters.htm",
+      "as_of": "2026-08-28"
+    },
+    {
+      "id": "S11",
+      "name": "Microsoft FY26 Q4 earnings call",
+      "type": "customer/end-demand primary",
+      "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4",
+      "as_of": "2026-07-29"
+    },
+    {
+      "id": "S12",
+      "name": "Meta 2Q26 earnings release",
+      "type": "customer/end-demand primary",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx",
+      "as_of": "2026-07-29"
+    },
+    {
+      "id": "S13",
+      "name": "MarketScreener EME consensus",
+      "type": "secondary",
+      "url": "https://www.marketscreener.com/quote/stock/EMCOR-GROUP-INC-12447/consensus/",
+      "as_of": "2026-08-31"
+    },
+    {
+      "id": "S14",
+      "name": "MarketScreener EME estimates/calendar",
+      "type": "secondary",
+      "url": "https://www.marketscreener.com/quote/stock/EMCOR-GROUP-INC-12447/calendar/",
+      "as_of": "2026-08-31"
+    },
+    {
+      "id": "S15",
+      "name": "FullRatio historical EME P/E",
+      "type": "secondary",
+      "url": "https://fullratio.com/stocks/nyse-eme/pe-ratio",
+      "as_of": "2026-08-31"
+    },
+    {
+      "id": "S16",
+      "name": "Macrotrends EME stock-price history",
+      "type": "secondary",
+      "url": "https://www.macrotrends.net/stocks/charts/EME/emcor/stock-price-history",
+      "as_of": "2026-08-31"
+    },
+    {
+      "id": "S17",
+      "name": "MarketBeat EME short interest",
+      "type": "secondary",
+      "url": "https://www.marketbeat.com/stocks/NYSE/EME/short-interest/",
+      "as_of": "2026-08-31"
+    },
+    {
+      "id": "S18",
+      "name": "StockAnalysis EME price/history/forecast",
+      "type": "secondary",
+      "url": "https://stockanalysis.com/stocks/eme/",
+      "as_of": "2026-08-31"
+    }
+  ],
+  "qa": {
+    "RC_UNRESOLVED": 0,
+    "H1_H2_RESEARCH_CONTRACT_COMPLETENESS": "PASS",
+    "H2_H3_COVERAGE_LINEAGE": "PASS",
+    "LATEST_FILING_CHECK": "PASS",
+    "latest_filing_note": "Added 2026-07-31 mine-safety 8-K after H1 registry correction; no later EME filing found through 2026-08-31 search.",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "PUBLISHED_TOP_LEVEL_SCHEMA_MATCH": "PASS",
+    "EXPLANATORY_DEPTH_PRESERVED": "PASS",
+    "CONTENT_MEANING_LOCK_PRESERVED": "PASS",
+    "PDF_RENDER_QA": "PASS",
+    "PDF_PREFLIGHT": "PASS",
+    "PDF_PAGE_COUNT": 26,
+    "PDF_PAGE_SIZE": "A4 portrait",
+    "PDF_FONT_EMBEDDING": "PASS",
+    "PDF_BOOKMARKS": "PASS",
+    "TOC_CLICKABLE": "PASS",
+    "PUBLISHED_VISUAL_COUNT": 6,
+    "CORE_LANDSCAPE_PAGES": 0,
+    "RAW_SOURCE_URL_DISPLAY": "HIDDEN_AS_CLICKABLE_LABEL"
+  }
+}

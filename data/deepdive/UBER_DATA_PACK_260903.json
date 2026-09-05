@@ -1,0 +1,313 @@
+{
+  "meta": {
+    "ticker": "UBER",
+    "company": "Uber Technologies, Inc.",
+    "as_of": "2026-09-03",
+    "price_as_of": "2026-09-02",
+    "price_usd": 76.78,
+    "mode": "C_MATURE_COMPOUNDER",
+    "currency": "USD"
+  },
+  "thesis": {
+    "stance": "ACCUMULATE_ON_WEAKNESS",
+    "summary": "본업 FCF 복리화는 강하나 Delivery Hero와 AV 자본배분이 핵심 할인요인. $70대에서는 risk/reward가 우호적이지만 AV economics와 인수 후 leverage를 반드시 감시.",
+    "variant_perception": "시장 컨센서스가 이미 Buy이므로 성장 자체가 variant가 아니다. 핵심 variant는 Uber가 AV 기술 승자를 맞히지 않아도 여러 AV 공급자를 묶는 수요·운영 레이어로 남을 수 있다는 점과, 반대로 이 옵션을 확보하기 위한 자본집약도가 예상보다 커질 수 있다는 양면성이다."
+  },
+  "financials": {
+    "annual_2025": {
+      "gross_bookings_bn": 193.454,
+      "revenue_bn": 52.017,
+      "adj_ebitda_bn": 8.73,
+      "fcf_bn": 9.763
+    },
+    "quarterly_8q": [
+      {
+        "period": "Q3 2024",
+        "gross_bookings_bn": 40.973,
+        "revenue_bn": 11.188,
+        "adj_ebitda_bn": 1.69,
+        "fcf_bn": 2.109
+      },
+      {
+        "period": "Q4 2024",
+        "gross_bookings_bn": 44.197,
+        "revenue_bn": 11.959,
+        "adj_ebitda_bn": 1.842,
+        "fcf_bn": 1.706
+      },
+      {
+        "period": "Q1 2025",
+        "gross_bookings_bn": 42.818,
+        "revenue_bn": 11.533,
+        "adj_ebitda_bn": 1.868,
+        "fcf_bn": 2.25
+      },
+      {
+        "period": "Q2 2025",
+        "gross_bookings_bn": 46.756,
+        "revenue_bn": 12.651,
+        "adj_ebitda_bn": 2.119,
+        "fcf_bn": 2.475
+      },
+      {
+        "period": "Q3 2025",
+        "gross_bookings_bn": 49.74,
+        "revenue_bn": 13.467,
+        "adj_ebitda_bn": 2.256,
+        "fcf_bn": 2.23
+      },
+      {
+        "period": "Q4 2025",
+        "gross_bookings_bn": 54.14,
+        "revenue_bn": 14.366,
+        "adj_ebitda_bn": 2.506,
+        "fcf_bn": 2.808
+      },
+      {
+        "period": "Q1 2026",
+        "gross_bookings_bn": 53.72,
+        "revenue_bn": 13.203,
+        "adj_ebitda_bn": 2.481,
+        "fcf_bn": 2.286
+      },
+      {
+        "period": "Q2 2026",
+        "gross_bookings_bn": 58.022,
+        "revenue_bn": 14.191,
+        "adj_ebitda_bn": 2.819,
+        "fcf_bn": 2.792
+      }
+    ],
+    "q2_2026": {
+      "mapc_m": 208,
+      "trips_bn": 3.867,
+      "gross_bookings_bn": 58.022,
+      "revenue_bn": 14.191,
+      "adj_ebitda_bn": 2.819,
+      "fcf_bn": 2.792,
+      "ebitda_margin_gb_pct": 4.9
+    },
+    "accounting_quality": {
+      "insurance_reserves_bn": 13.286,
+      "h1_2026_sbc_bn": 1.0,
+      "h1_2026_working_capital_inflow_bn": 0.21
+    }
+  },
+  "capital_allocation": {
+    "h1_2026_buyback_bn": 3.5,
+    "h1_2026_shares_repurchased_m": 46.6,
+    "remaining_authorization_bn": 15.7,
+    "delivery_hero_equity_value_bn": 14.8,
+    "delivery_hero_bridge_eur_bn": 14.2,
+    "target_gross_leverage_lt": "2.0x"
+  },
+  "valuation": {
+    "market_cap_bn": 158.78,
+    "ttm_fcf_bn_floor": 10.0,
+    "spot_p_fcf_approx": 15.9,
+    "reverse_2029_fcf_bn_at_10pct_return_18x": 11.35,
+    "scenarios": {
+      "Bear": {
+        "prob": 0.25,
+        "fcf_2028": 11.5,
+        "multiple": 14,
+        "value": 161.0,
+        "per_share": 79.31034482758622
+      },
+      "Base": {
+        "prob": 0.5,
+        "fcf_2028": 15.0,
+        "multiple": 18,
+        "value": 270,
+        "per_share": 135.0
+      },
+      "Bull": {
+        "prob": 0.25,
+        "fcf_2028": 18.5,
+        "multiple": 21,
+        "value": 388.5,
+        "per_share": 197.20812182741116
+      }
+    },
+    "prob_weighted_value_per_share": 136.63,
+    "price_bands": {
+      "attractive_below": 72,
+      "fair_range": [
+        82,
+        105
+      ],
+      "expensive_above": 120
+    }
+  },
+  "kpi_tripwires": [
+    {
+      "metric": "Gross Bookings CC growth",
+      "green": ">=18%",
+      "yellow": "14-18%",
+      "red": "<14% for 2Q"
+    },
+    {
+      "metric": "Adj EBITDA / Gross Bookings",
+      "green": ">=4.8%",
+      "yellow": "4.4-4.8%",
+      "red": "<4.4%"
+    },
+    {
+      "metric": "TTM FCF",
+      "green": ">=$10B and rising",
+      "yellow": "$9-10B",
+      "red": "<$9B"
+    },
+    {
+      "metric": "Diluted/share count",
+      "green": "YoY decline",
+      "yellow": "flat",
+      "red": "YoY increase despite buyback"
+    },
+    {
+      "metric": "AV commercialization",
+      "green": "multi-partner paid scale expands",
+      "yellow": "pilots only",
+      "red": "major partners bypass Uber / economics worsen"
+    },
+    {
+      "metric": "Delivery Hero leverage/integration",
+      "green": "gross leverage <2x + accretion visible",
+      "yellow": "integration delay",
+      "red": "deleveraging stalls or dilution/buyback suspension"
+    }
+  ],
+  "research_contract": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "conclusion": "회사 경제적 정의·역사·포트폴리오 전환",
+      "h3_locator": "0,3"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "conclusion": "Mobility/Delivery/AV 산업 구조와 profit pool",
+      "h3_locator": "1"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "conclusion": "Trips = MAPC × frequency 중심 수요 분해",
+      "h3_locator": "1,4,6"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "conclusion": "Mobility 네트워크·인센티브·보험·마진 구조",
+      "h3_locator": "3,4"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "conclusion": "Delivery+광고+Uber One의 margin bridge",
+      "h3_locator": "3,4"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "conclusion": "AV 파트너별 상업화 단계 확인; 개별 revenue-share/vehicle economics는 비공개",
+      "h3_locator": "1,3,5"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "conclusion": "Rider/Driver/Courier/Merchant job과 cross-use",
+      "h3_locator": "1,3"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "conclusion": "Lyft/DoorDash/Waymo/Tesla 등 customer-job 경쟁지도",
+      "h3_locator": "3"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "conclusion": "Dara 체제의 3년 가이던스 초과달성·수익성 전환을 Promise→Delivery로 감사",
+      "h3_locator": "2"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "conclusion": "2023–25 3Y 및 최근 연속 8Q KPI/재무",
+      "h3_locator": "4"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "conclusion": "equity marks·보험준비금·SBC·working capital 회계품질",
+      "h3_locator": "4"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "conclusion": "Delivery Hero 인수·€14.2B bridge/term financing·SSW carve-out",
+      "h3_locator": "2,3,4,5"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "conclusion": "2026H1 $3.5B buyback, 46.6m주 소각, SBC 상계",
+      "h3_locator": "4,5"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "conclusion": "노동자 분류·보험·세금 위험 확인; 사건별 최종 현금영향은 판결 전 비가시",
+      "h3_locator": "1,4,6"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "conclusion": "공개 컨센서스 43 Buy/7 Hold/1 Sell·평균 $101.81 확인; 상세 기관별 FY3 추정/포지셔닝은 proprietary ceiling",
+      "h3_locator": "0,5,6"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "conclusion": "Mode C 유지 + forward FCF multiple + reverse expectations",
+      "h3_locator": "5"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "conclusion": "KPI tripwire·촉매·thesis break 고정",
+      "h3_locator": "6"
+    }
+  ],
+  "sources": {
+    "Q2_2026_IR": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-Second-Quarter-2026/default.aspx",
+    "Q2_2026_10Q": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000032/uber-20260630.htm",
+    "2025_10K": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000015/uber-20251231.htm",
+    "Q1_2026_IR": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-First-Quarter-2026/default.aspx",
+    "Q4_2025_IR": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-Fourth-Quarter-and-Full-Year-2025/default.aspx",
+    "Q3_2025_IR": "https://investor.uber.com/news-events/news/press-release-details/2025/Uber-Announces-Results-for-Third-Quarter-2025/",
+    "Q2_2025_IR": "https://investor.uber.com/news-events/news/press-release-details/2025/Uber-Announces-Results-for-Second-Quarter-2025/default.aspx",
+    "Q1_2025_IR": "https://investor.uber.com/news-events/news/press-release-details/2025/Uber-Announces-Results-for-First-Quarter-2025/default.aspx",
+    "Q4_2024_IR": "https://investor.uber.com/news-events/news/press-release-details/2025/Uber-Announces-Results-for-Fourth-Quarter-and-Full-Year-2024/default.aspx",
+    "Q3_2024_IR": "https://investor.uber.com/news-events/news/press-release-details/2024/Uber-Announces-Results-for-Third-Quarter-2024/",
+    "Delivery_Hero": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Acquisition-Offer-for-Delivery-Hero/default.aspx",
+    "Delivery_Hero_8K": "https://www.sec.gov/Archives/edgar/data/1543151/000155278126000382/e26302_uber-8k.htm",
+    "Baidu_Dubai": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Launches-Baidus-Fully-Driverless-Apollo-Go-in-Dubai-Establishing-the-First-Multi-Partner-Autonomous-Network-Globally/default.aspx",
+    "AV_Solutions": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Unveils-Uber-Autonomous-Solutions-to-Accelerate-Autonomous-Mobility--Delivery-Worldwide/",
+    "Lucid_Nuro_Houston": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Nuro-and-Lucid-to-Bring-Robotaxi-Service-to-Houston-in-2027/default.aspx",
+    "Reuters_layoffs": "https://www.reuters.com/business/world-at-work/uber-cut-3300-jobs-overhaul-bloomberg-news-reports-2026-09-02/",
+    "Reuters_Wayve_London": "https://www.reuters.com/business/uber-ai-firm-wayve-launch-londons-first-robotaxis-2026-09-02/",
+    "DASH_2025_10K": "https://www.sec.gov/Archives/edgar/data/1792789/000179278926000013/dash-20251231.htm",
+    "LYFT_2025_10K": "https://www.sec.gov/Archives/edgar/data/1759509/000162828026006960/lyft-20251231.htm",
+    "price": "https://kr.investing.com/equities/uber-technologies-inc-historical-data",
+    "consensus": "https://kr.investing.com/equities/uber-technologies-inc-consensus-estimates"
+  },
+  "qa": {
+    "rc_unresolved": 0,
+    "latest_filing_check": "PASS: Q2 2026 10-Q filed 2026-08-05 + subsequent Delivery Hero financing 8-K reviewed",
+    "as_of_registry": "PASS",
+    "numeric_lineage": "PASS"
+  }
+}

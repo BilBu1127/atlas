@@ -1,0 +1,934 @@
+{
+  "meta": {
+    "ticker": "XE",
+    "company": "X-Energy, Inc.",
+    "T0": "2026-08-31",
+    "price_asof": "2026-08-28",
+    "price": 17.22,
+    "filing_asof": "2026-08-13",
+    "latest_material_update": "2026-08-24",
+    "consensus_asof": "2026-08-28",
+    "version": "Clean DDOS Production OS v1.7",
+    "valuation_mode": "Mode A - Option-led",
+    "currency": "USD"
+  },
+  "capital_structure": {
+    "class_a_shares": 287458734,
+    "class_b_shares": 118907374,
+    "economic_share_equivalents": 406366108,
+    "economic_market_cap_b": 6.9976243797599995,
+    "conditional_warrant_shares_m": 14.1,
+    "debt_b": 0.0,
+    "liquidity_b": 1.8998,
+    "tra_cash_tax_savings_share_to_holders": 0.85,
+    "notes": [
+      "Class B has no direct PubCo economic rights but holders own matching XERC Common Units redeemable generally 1:1 for Class A; corresponding Class B is cancelled.",
+      "Conditional warrant excluded in Bear/Base and included fully in Bull scenarios when performance conditions are assumed achieved."
+    ]
+  },
+  "financials": {
+    "annual_3y": {
+      "2023": null,
+      "2024": {
+        "service_revenue": 83.986,
+        "grant_income": 36.166,
+        "revenue_plus_grant": 120.152,
+        "direct_costs": 130.115,
+        "sga": 111.887,
+        "rd": 1.662,
+        "operating_expenses": 243.664,
+        "operating_loss": -123.512,
+        "operating_cash_flow": -96.159,
+        "capex_purchases": -4.162,
+        "doe_capex_reimbursement": 2.297
+      },
+      "2025": {
+        "service_revenue": 94.26,
+        "grant_income": 14.838,
+        "revenue_plus_grant": 109.098,
+        "direct_costs": 161.367,
+        "sga": 116.318,
+        "rd": 1.708,
+        "operating_expenses": 279.393,
+        "operating_loss": -170.295,
+        "operating_cash_flow": -149.86,
+        "capex_purchases": -117.236,
+        "doe_capex_reimbursement": 54.838
+      }
+    },
+    "quarterly_8q": {
+      "2024Q3": null,
+      "2024Q4": null,
+      "2025Q1": {
+        "revenue_plus_grant": 20.8
+      },
+      "2025Q2": {
+        "revenue_plus_grant": 21.5
+      },
+      "2025Q3": null,
+      "2025Q4": null,
+      "2026Q1": {
+        "service_revenue": 39.9,
+        "grant_income": 3.5,
+        "revenue_plus_grant": 43.4,
+        "operating_expenses": 109.5,
+        "direct_costs": 65.4,
+        "operating_cash_flow": -67.3
+      },
+      "2026Q2": {
+        "service_revenue": 50.119,
+        "grant_income": 4.482,
+        "revenue_plus_grant": 54.601,
+        "operating_expenses": 164.6,
+        "direct_costs": 86.7,
+        "operating_cash_flow": -97.3
+      }
+    },
+    "half_year": {
+      "2026H1": {
+        "service_revenue": 90.025,
+        "grant_income": 7.999,
+        "revenue_plus_grant": 98.024,
+        "operating_expenses": 274.2,
+        "direct_costs": 152.0,
+        "operating_cash_flow": -164.6
+      }
+    },
+    "ceilings": [
+      {
+        "field": "2023 audited comparable annual financials",
+        "status": "PRIMARY_SOURCE_CEILING",
+        "reason": "Final public EGC filing set consumed does not provide a comparable three-year statement set."
+      },
+      {
+        "field": "continuous latest 8 discrete quarters",
+        "status": "PRIMARY_SOURCE_CEILING",
+        "reason": "Pre-IPO Q3/Q4 discrete periods cannot be safely reconstructed from primary-source annual totals without estimation."
+      }
+    ]
+  },
+  "business_model": {
+    "standard_plant": {
+      "reactors": 4,
+      "mwe": 320,
+      "technology_fee_range_m": [
+        50,
+        300
+      ],
+      "reactor_services_fee_range_m": [
+        800,
+        1300
+      ],
+      "fuel_fee_range_m": [
+        1560,
+        3125
+      ],
+      "total_fee_range_m": [
+        2410,
+        4725
+      ],
+      "target_blended_margin_range": [
+        0.3,
+        0.55
+      ],
+      "midpoint_screening": {
+        "technology_fee_m": 175,
+        "service_fee_m": 1050,
+        "service_margin": 0.25,
+        "fuel_fee_m": 2342.5,
+        "fuel_margin": 0.45,
+        "cod_assumption": 2032,
+        "discount_rate": 0.12,
+        "gross_profit_pv_m": 282.1096958,
+        "low_case_pv_m": 120.3527648,
+        "high_case_pv_m": 471.2196655
+      },
+      "contract_boundary": "Illustrative company target economics; no customer technology/IP agreement or definitive fuel supply agreement was in place in the IPO prospectus."
+    }
+  },
+  "projects": [
+    {
+      "name": "Dow Seadrift / Long Mott",
+      "capacity_mwe": 320,
+      "reactors": 4,
+      "stage": "Execution project",
+      "commitment": "MPDA/CCA; NRC CPA docketed; environmental FONSI; CP/FID pending",
+      "next_gate": "Construction Permit + final design/FID"
+    },
+    {
+      "name": "Amazon + Energy Northwest initial",
+      "capacity_mwe": 320,
+      "upsize_mwe": 960,
+      "reactors_initial": 4,
+      "reactors_upsize": 12,
+      "stage": "Funded development",
+      "commitment": "Carbon Free Development and Funding Agreement; project engineering",
+      "next_gate": "CPA submission/acceptance + firm construction path"
+    },
+    {
+      "name": "Amazon broader U.S. rights",
+      "capacity_gwe": 5.0,
+      "stage": "Option pool",
+      "commitment": "Options/allocation rights; >5 GWe target by 2039",
+      "next_gate": "site-by-site funded conversion"
+    },
+    {
+      "name": "Centrica / Hartlepool + U.K. fleet",
+      "capacity_gwe": 6.0,
+      "hartlepool_mwe": 960,
+      "stage": "Development option",
+      "commitment": "JDA + GDA application; long-term option",
+      "next_gate": "GDA progression + binding site/project agreement"
+    },
+    {
+      "name": "Talen",
+      "stage": "Exploration",
+      "commitment": "Non-binding LOI / feasibility",
+      "next_gate": "funded site/project agreement"
+    },
+    {
+      "name": "LG&E/KU",
+      "stage": "Exploration",
+      "commitment": "feasibility work",
+      "next_gate": "funded site development"
+    }
+  ],
+  "capacity_supply_chain": {
+    "tx1": {
+      "sq_ft": 214000,
+      "throughput_mtu_per_year": 5,
+      "pebbles_per_year": 700000,
+      "reactors_supported": 11,
+      "license": "40-year NRC Category II Special Nuclear Material license",
+      "construction_status_asof": "2026-08-24 interior build-out and fuel-fabrication equipment installation",
+      "target_operations": "H1 2028 company target"
+    },
+    "tx2": {
+      "status": "conceptual",
+      "nameplate_mtu": 25,
+      "anticipated_throughput_mtu": 20,
+      "pebbles_per_year": 2800000,
+      "reactors_supported": 44
+    },
+    "haleu_suppliers": [
+      "Centrus",
+      "General Matter"
+    ],
+    "graphite": {
+      "supplier": "SGL Carbon",
+      "capacity_expansion_target": "double Chedde NBG-18 capacity by 2030",
+      "x_energy_milestone_payments_up_to_m": 8,
+      "billets_reactor_equivalent_per_year": 8
+    }
+  },
+  "kpis": [
+    {
+      "name": "Dow CP/FID",
+      "history": [
+        {
+          "date": "2025",
+          "value": "CPA docketed"
+        },
+        {
+          "date": "2026-05-18",
+          "value": "Environmental FONSI"
+        },
+        {
+          "date": "2026-08-27",
+          "value": "Construction Permit decision TBD"
+        }
+      ],
+      "current": "CP/FID pending",
+      "thresholds": {
+        "green": "CP issued + FID/major procurement",
+        "yellow": "minor schedule slip",
+        "red": "material CP delay or FID uncertainty"
+      }
+    },
+    {
+      "name": "Amazon first-site conversion",
+      "history": [
+        {
+          "date": "2024",
+          "value": "320 MWe development/funding agreement; option to 960 MWe"
+        },
+        {
+          "date": "2026",
+          "value": "site engineering / CPA preparation"
+        }
+      ],
+      "current": "funded development",
+      "thresholds": {
+        "green": "CPA accepted + funded construction path",
+        "yellow": "development continues with modest delay",
+        "red": "site/financing indefinite delay"
+      }
+    },
+    {
+      "name": "TX-1 commercialization",
+      "history": [
+        {
+          "date": "2026-02",
+          "value": "NRC Category II license"
+        },
+        {
+          "date": "2026-08-24",
+          "value": "interior/equipment phase"
+        }
+      ],
+      "current": "construction",
+      "thresholds": {
+        "green": "commissioning and operations near 2028 target",
+        "yellow": "6-12 month delay",
+        "red": "long regulatory/quality/supply delay"
+      }
+    },
+    {
+      "name": "Quarterly operating cash flow",
+      "history": [
+        {
+          "period": "2026Q1",
+          "value_m": -67.3
+        },
+        {
+          "period": "2026Q2",
+          "value_m": -97.3
+        }
+      ],
+      "current": -97.3,
+      "thresholds": {
+        "green": "burn stable/falling with milestones",
+        "yellow": "burn rises with funded milestones",
+        "red": "burn rises without milestone progress"
+      }
+    },
+    {
+      "name": "Economic share equivalents",
+      "history": [
+        {
+          "date": "2026-08-10",
+          "value_m": 406.366108
+        }
+      ],
+      "current": 406.366108,
+      "thresholds": {
+        "green": "limited dilution",
+        "yellow": "normal SBC",
+        "red": ">15% incremental dilution without value-accretive milestones"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.3,
+      "formation_conditions": [
+        "Dow CP/FID materially delayed or downsized",
+        "Amazon first site slow conversion",
+        "TX-1 underutilized",
+        "additional equity financing"
+      ],
+      "break_conditions": [
+        "Dow CP+FID with budget credibility",
+        "Amazon site converts faster than expected"
+      ],
+      "plant_equivalents_4x80MWe": 4,
+      "revenue_path": [
+        200,
+        220,
+        250,
+        290,
+        340,
+        420
+      ],
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030,
+        2031
+      ],
+      "margin_path": [
+        -0.35,
+        -0.25,
+        -0.15,
+        -0.05,
+        0.05,
+        0.1
+      ],
+      "fcf": [
+        -400,
+        -450,
+        -450,
+        -400,
+        -350,
+        -250
+      ],
+      "diluted_shares": 470.0,
+      "core_value_b": 2.0,
+      "execution_value_b": 0.3290351412,
+      "ecosystem_value_b": 0.0,
+      "funding_dilution_drag_b": 1.05,
+      "equity_value_pv_b": 1.2790351412,
+      "per_share_value": 2.7213513642
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "formation_conditions": [
+        "Dow CP/FID advances",
+        "Amazon first site reaches firm construction path",
+        "TX-1 operates and ramps",
+        "broader options convert selectively"
+      ],
+      "break_conditions": [
+        "Dow or Amazon material schedule reset",
+        "TX-1 long delay",
+        "unexpected large funding gap"
+      ],
+      "plant_equivalents_4x80MWe": 24,
+      "revenue_path": [
+        214,
+        280,
+        380,
+        520,
+        720,
+        1000
+      ],
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030,
+        2031
+      ],
+      "margin_path": [
+        -0.3,
+        -0.15,
+        0.0,
+        0.08,
+        0.15,
+        0.22
+      ],
+      "fcf": [
+        -360,
+        -380,
+        -320,
+        -250,
+        -120,
+        0
+      ],
+      "diluted_shares": 430.0,
+      "core_value_b": 2.05,
+      "execution_value_b": 3.2701788487,
+      "ecosystem_value_b": 0.0,
+      "funding_dilution_drag_b": 0.9,
+      "equity_value_pv_b": 4.4201788487,
+      "per_share_value": 10.2794856946
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.2,
+      "formation_conditions": [
+        "named pipeline converts broadly",
+        "upper-mid target economics",
+        "TX-1/TX-2 scale",
+        "multiple binding follow-on projects"
+      ],
+      "break_conditions": [
+        "repeat-project economics fail",
+        "fuel margin/utilization below target"
+      ],
+      "plant_equivalents_4x80MWe": 50,
+      "revenue_path": [
+        215,
+        330,
+        500,
+        800,
+        1200,
+        1800
+      ],
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030,
+        2031
+      ],
+      "margin_path": [
+        -0.28,
+        -0.05,
+        0.08,
+        0.18,
+        0.27,
+        0.33
+      ],
+      "fcf": [
+        -340,
+        -300,
+        -200,
+        -50,
+        150,
+        350
+      ],
+      "diluted_shares": 445.0,
+      "core_value_b": 2.1,
+      "execution_value_b": 10.2403073075,
+      "ecosystem_value_b": 0.0,
+      "funding_dilution_drag_b": 1.2,
+      "equity_value_pv_b": 11.1403073075,
+      "per_share_value": 25.0343984438
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.1,
+      "formation_conditions": [
+        "11.5 GWe named rights convert strongly",
+        "new fleet beyond named pipeline",
+        "standardized deployment/financing model",
+        "scaled fuel platform"
+      ],
+      "break_conditions": [
+        "new-customer replication fails",
+        "TX-2/fuel economics underperform"
+      ],
+      "plant_equivalents_4x80MWe": 72,
+      "revenue_path": [
+        220,
+        380,
+        600,
+        1000,
+        1700,
+        2600
+      ],
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030,
+        2031
+      ],
+      "margin_path": [
+        -0.25,
+        0.0,
+        0.12,
+        0.25,
+        0.35,
+        0.4
+      ],
+      "fcf": [
+        -320,
+        -250,
+        -100,
+        150,
+        450,
+        800
+      ],
+      "diluted_shares": 465.0,
+      "core_value_b": 2.1,
+      "execution_value_b": 14.7933742428,
+      "ecosystem_value_b": 2.0,
+      "funding_dilution_drag_b": 1.5,
+      "equity_value_pv_b": 17.3933742428,
+      "per_share_value": 37.4051058984
+    }
+  ],
+  "valuation": {
+    "mode": "Mode A - Option-led",
+    "core": null,
+    "execution": null,
+    "ecosystem": null,
+    "drag": null,
+    "expected_value": 13.675589965700002,
+    "expected_irr_5y": 0.06954880648990858,
+    "expected_future_value_2031": 24.10106223890478,
+    "current_price": 17.22,
+    "hurdle_rate": 0.12,
+    "bull_execution_upside_downside_ratio": 0.5389742616773762,
+    "bull_ecosystem_upside_downside_ratio": 1.3922060190188368,
+    "common_discount_rate": 0.12,
+    "time_horizon_years": 5
+  },
+  "reverse_expectations": {
+    "current_economic_market_cap_b": 6.9976243797599995,
+    "required_2031_expected_per_share_at_12pct": 30.34752378470401,
+    "our_2031_expected_per_share": 24.10106223890478,
+    "required_execution_ecosystem_pv_b_screening": 5.84762437976,
+    "midpoint_2032_standard_plant_gp_pv_m": 282.1096958,
+    "equivalent_standard_plants_screening": 20.728193560229986,
+    "equivalent_gwe_screening": 6.633021939273596,
+    "full_named_pipeline_gwe": 11.5,
+    "full_named_pipeline_standard_plant_equivalents": 36,
+    "full_named_pipeline_midpoint_gp_pv_b": 6.0762438587,
+    "probabilities_to_match_current_price_if_base_stays_40pct": {
+      "Bear": 0.165928,
+      "Base": 0.4,
+      "Bull Execution": 0.289381,
+      "Bull Ecosystem": 0.144691
+    },
+    "interpretation": "Current price requires materially lower downside probability and higher bull probability than our underwriting; simple unit-economics screen also indicates substantial fleet-scale conversion is already capitalized."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_m_avg": 213.5
+    },
+    "fy2": {
+      "status": "PRIMARY_SOURCE_CEILING"
+    },
+    "revision_trend": "PRIMARY_SOURCE_CEILING",
+    "rating_mix": {
+      "buy": 6,
+      "hold": 3,
+      "sell": 1
+    },
+    "average_price_target": 37.86,
+    "target_range": [
+      22,
+      57
+    ],
+    "short_interest": {
+      "asof": "2026-08-14",
+      "shares_m": 18.0176,
+      "float_pct": 4.43,
+      "days_to_cover": 3.7
+    },
+    "note": "Secondary public aggregators only; not used as primary fundamental evidence."
+  },
+  "variant_perception": {
+    "summary": "The market appears to capitalize credible customer logos and the 11.5 GWe option-heavy pipeline more aggressively than our stage-adjusted model. We separate strategic validation from binding project economics and discount long-dated fuel/service cash flows.",
+    "mispricing_rationale": "NOT_IDENTIFIED",
+    "reason": "Recent IPO/Up-C complexity can create misunderstanding, but there is no clear forced-flow or information-gap evidence showing systematic underpricing; sell-side targets are already optimistic."
+  },
+  "stance": {
+    "zone": "WATCH / wait for price or de-risking evidence",
+    "price_bands": {
+      "active_interest": [
+        10.5,
+        12.0
+      ],
+      "conditional_interest": [
+        12.0,
+        13.7
+      ],
+      "watch": [
+        13.7,
+        17.0
+      ],
+      "requires_material_de_risking_above": 17.0
+    },
+    "horizon": "5 years",
+    "expected_irr_at_current": 0.06954880648990858,
+    "expected_irr_trigger_prices": {
+      "10pct": 14.964863452511796,
+      "12pct": 13.675589965700002,
+      "15pct": 11.982487441159572,
+      "18pct": 10.534796425569171
+    }
+  },
+  "catalysts": [
+    {
+      "when": "2026H2-2027",
+      "event": "Dow Construction Permit / FID progression",
+      "sensitivity": "Very high; changes FOAK and follow-on conversion probabilities"
+    },
+    {
+      "when": "2026H2-2027",
+      "event": "Energy Northwest CPA submission/acceptance",
+      "sensitivity": "High; first evidence Amazon 5 GWe option converts into real project"
+    },
+    {
+      "when": "2026H2-2028",
+      "event": "TX-1 equipment installation, commissioning, operations",
+      "sensitivity": "High; fuel-platform proof and schedule de-risking"
+    },
+    {
+      "when": "2027-2028",
+      "event": "Definitive TRISO-X customer fuel-supply terms",
+      "sensitivity": "High; validates 30-60% target fuel gross margin"
+    },
+    {
+      "when": "2026-2028",
+      "event": "U.K. GDA / Hartlepool binding project progression",
+      "sensitivity": "Medium-high; validates utility/grid customer job"
+    }
+  ],
+  "ceilings": {
+    "management_prior_employer_track_record": "PRIMARY_SOURCE_CEILING",
+    "financial_3y": "PRIMARY_SOURCE_CEILING",
+    "latest_8q": "PRIMARY_SOURCE_CEILING",
+    "fy2_fy3_consensus_revisions": "PRIMARY_SOURCE_CEILING",
+    "advanced_nuclear_clean_success_rate_base_rate": "PRIMARY_SOURCE_CEILING"
+  },
+  "audits": {
+    "RC_UNRESOLVED": 0,
+    "H1_H2_RESEARCH_CONTRACT_COMPLETENESS": "PASS",
+    "H2_H3_COVERAGE_LINEAGE": "PASS",
+    "RC_H3_COVERAGE_RATE": "100%",
+    "LATEST_FILING_CHECK": "PASS",
+    "AS_OF_REGISTRY": "PASS",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "EXPLANATORY_SPACE_ALLOCATION": "PASS",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "REPORT_DATA_PACK": "EMITTED",
+    "CONTACT_SHEET_COMPOSITION_QA": "PASS",
+    "SEMANTIC_GOLDEN_QA": "PASS",
+    "VISUAL_GOLDEN_QA": "PASS",
+    "RENDERED_VISUAL_PARITY_QA": "PASS",
+    "INTERNAL_QA_TOKEN_LEAK": "PASS - audit ledger excluded from investor-facing HTML/PDF; retained in H3 checkpoint/data pack"
+  },
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "2 / Appendix D"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "1,3"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "1.1-1.2"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "1.4-1.5 / 3.5"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "1.3 / 3.9-3.11"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "3.6 / 6"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "3.7"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "3.8"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "3.6-3.8 / Appendix C"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "3.1-3.2 / Appendix A"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "3.3"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "3.4"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "3.4-3.5"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "1.4"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "2.1-2.2"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "2.3-2.4 / Appendix D"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "4.7 / Appendix B"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE",
+      "h3_locator": "4.1-4.6"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "COMPLETE",
+      "h3_locator": "4.2-4.3"
+    },
+    {
+      "rc_id": "RC-020",
+      "status": "COMPLETE",
+      "h3_locator": "2.3-2.4 / 5.2 / Appendix D"
+    },
+    {
+      "rc_id": "RC-021",
+      "status": "COMPLETE",
+      "h3_locator": "2.3 / Appendix D"
+    },
+    {
+      "rc_id": "RC-022",
+      "status": "COMPLETE",
+      "h3_locator": "3.9-3.11"
+    },
+    {
+      "rc_id": "RC-023",
+      "status": "COMPLETE",
+      "h3_locator": "4.8 / 6.2"
+    },
+    {
+      "rc_id": "RC-024",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "5.7 / Appendix E"
+    },
+    {
+      "rc_id": "RC-025",
+      "status": "COMPLETE",
+      "h3_locator": "0 / 5.7"
+    },
+    {
+      "rc_id": "RC-026",
+      "status": "COMPLETE",
+      "h3_locator": "5 / Appendix A"
+    },
+    {
+      "rc_id": "RC-027",
+      "status": "COMPLETE",
+      "h3_locator": "5.6"
+    },
+    {
+      "rc_id": "RC-028",
+      "status": "COMPLETE",
+      "h3_locator": "6"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "type": "primary",
+      "title": "X-Energy, Inc. Form 424B4",
+      "date": "2026-04-23",
+      "url": "https://www.sec.gov/Archives/edgar/data/2088896/000110465926049515/tm2527015-22_424b4.htm"
+    },
+    {
+      "id": "S2",
+      "type": "primary",
+      "title": "X-Energy, Inc. Form 10-Q, quarter ended 2026-06-30",
+      "date": "2026-08-13",
+      "url": "https://www.sec.gov/Archives/edgar/data/2088896/000119312526347752/xe-20260630.htm"
+    },
+    {
+      "id": "S3",
+      "type": "primary",
+      "title": "X-Energy, Inc. Form 10-Q, quarter ended 2026-03-31",
+      "date": "2026-06",
+      "url": "https://www.sec.gov/Archives/edgar/data/2088896/000119312526256376/xe-20260331.htm"
+    },
+    {
+      "id": "S4",
+      "type": "primary",
+      "title": "U.S. NRC Advanced Reactor Highlights 2026",
+      "date": "2026-08-27",
+      "url": "https://www.nrc.gov/reactors/new-reactors/advanced/highlights/2026"
+    },
+    {
+      "id": "S5",
+      "type": "primary",
+      "title": "U.S. NRC Long Mott / advanced reactor project records",
+      "date": "2026-08-27",
+      "url": "https://www.nrc.gov/"
+    },
+    {
+      "id": "S6",
+      "type": "primary",
+      "title": "Ontario Power Generation Darlington SMR",
+      "date": "2026",
+      "url": "https://www.opg.com/projects-services/projects/nuclear/smr/darlington-smr/"
+    },
+    {
+      "id": "S7",
+      "type": "primary",
+      "title": "TRISO-X Advances to Next Phase of Construction for TX-1",
+      "date": "2026-08-24",
+      "url": "https://investors.x-energy.com/news-releases/news-release-details/triso-x-advances-next-phase-construction-tx-1-fuel-fabrication"
+    },
+    {
+      "id": "S8",
+      "type": "primary",
+      "title": "Amazon Invests in X-energy",
+      "date": "2024",
+      "url": "https://x-energy.com/news/amazon-invests-in-x-energy-to-support-advanced-small-modular-nuclear-reactors-and-expand-carbon-free-power/"
+    },
+    {
+      "id": "S9",
+      "type": "primary",
+      "title": "SGL Carbon / X-energy graphite capacity disclosures",
+      "date": "2026",
+      "url": "https://www.sglcarbon.com/"
+    },
+    {
+      "id": "S10",
+      "type": "secondary",
+      "title": "Public consensus/positioning aggregators",
+      "date": "2026-08-28",
+      "url": "https://www.marketbeat.com/stocks/NASDAQ/XE/"
+    }
+  ],
+  "visual_lineage": [
+    {
+      "visual_id": "V1_COVER_KPIS",
+      "source_keys": [
+        "meta.price",
+        "valuation.expected_value",
+        "valuation.expected_irr_5y",
+        "capital_structure.economic_market_cap_b"
+      ],
+      "render": "HTML/PDF cover KPI cards"
+    },
+    {
+      "visual_id": "V2_SCENARIO_BARS",
+      "source_keys": [
+        "scenarios[].probability",
+        "scenarios[].per_share_value"
+      ],
+      "render": "HTML/PDF scenario-value bars"
+    },
+    {
+      "visual_id": "V3_ADOPTION_LADDER",
+      "source_keys": [
+        "projects[].stage",
+        "projects[].commitment"
+      ],
+      "render": "HTML/PDF project-stage ladder"
+    },
+    {
+      "visual_id": "V4_VALUATION_STRIP",
+      "source_keys": [
+        "scenarios[].per_share_value"
+      ],
+      "render": "HTML/PDF Chapter 5 scenario cards"
+    }
+  ]
+}

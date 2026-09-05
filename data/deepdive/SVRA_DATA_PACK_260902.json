@@ -1,0 +1,2873 @@
+{
+  "meta": {
+    "ticker": "SVRA",
+    "company": "Savara Inc.",
+    "report_version": "Deep Dive OS v1.7",
+    "publishing_date_asia_seoul": "2026-09-02",
+    "currency": "USD",
+    "units_note": "Unless noted, financial statement and valuation model monetary values are USD millions.",
+    "price_asof": "2026-09-01 U.S. close",
+    "current_price_usd": 5.35,
+    "filing_asof": "2026-08-11",
+    "latest_filing": "2Q26 Form 10-Q for quarter ended 2026-06-30",
+    "clinical_asof": "2026-08-25 research cutoff",
+    "regulatory_asof": "2026-08-11 company/SEC update",
+    "latest_filing_check": "PASS",
+    "research_contract_unresolved": 0,
+    "valuation_mode": "Mode A — Option-led",
+    "analytical_note": "This is an evidence-constrained underwriting model, not company guidance or a price target from Savara.",
+    "T0": "2026-09-01 U.S. close",
+    "consensus_asof": "2026-09-01 / latest available aggregation",
+    "version": "v1.7"
+  },
+  "thesis": {
+    "one_sentence_ko": "MOLBREEVI의 임상 효능은 상당히 de-risk됐지만, SVRA의 현재 가격은 FDA 승인만이 아니라 빠른 환자 전환과 높은 실현 순가격까지 상당 부분 요구한다.",
+    "variant_perception_ko": "시장 논쟁의 중심을 ‘승인되느냐’에서 ‘승인 뒤 몇 명이 실제 지속 투약하고 어떤 순가격이 실현되느냐’로 이동시키는 것이 핵심이다.",
+    "primary_risk_ko": "과거 CMC 관련 RTF와 현재 major-amendment 연장 때문에 FDA 최종 CMC/device/label 결과가 가장 큰 단일 이벤트 리스크다."
+  },
+  "industry": {
+    "disease": "autoimmune pulmonary alveolar proteinosis (aPAP)",
+    "mechanism_ko": "GM-CSF autoantibody가 alveolar macrophage의 surfactant clearance를 방해해 폐포에 surfactant가 축적된다.",
+    "independent_pap_prevalence_per_million": 6.87,
+    "referral_autoimmune_share": 0.915,
+    "literature_prevalence_range_per_million": [
+      7,
+      27
+    ],
+    "company_us_claims_pap_patients": 6158,
+    "company_us_estimated_apap_patients": 5542,
+    "company_patient_line_of_sight": 1000,
+    "target_accounts": 1700,
+    "target_pulmonology_hcps": 4500,
+    "customer_facing_staff_approx": 30,
+    "transmission_ko": "진단 friction과 specialty access가 줄수록 실제 treated patient가 늘고, 높은 환자당 순가격과 작은 field force가 operating leverage로 이어진다. 반대로 좁은 label/PA/가격할인이 환자수와 net price를 동시에 훼손한다.",
+    "sources": [
+      "P3",
+      "P7",
+      "P10",
+      "P11"
+    ]
+  },
+  "clinical": {
+    "impala2_n": 164,
+    "dose": "molgramostim 300 μg once daily",
+    "week24_dlco_change_treatment_pp": 9.8,
+    "week24_dlco_change_placebo_pp": 3.8,
+    "week24_dlco_treatment_difference_pp": 6.0,
+    "week24_dlco_ci_pp": [
+      2.5,
+      9.4
+    ],
+    "week24_dlco_p_value": "<0.001",
+    "week24_sgrq_total_significant": true,
+    "multiplicity_boundary_ko": "SGRQ activity endpoint가 hierarchy에서 실패해 이후 secondary endpoints의 formal statistical inference가 제한된다.",
+    "safety_ko": "IMPALA-2에서 adverse-event/serious-adverse-event 비율은 치료군과 placebo군에서 대체로 유사했다.",
+    "ole_boundary_ko": "Week 48 이후 open-label extension은 durability/persistence 가설을 지지하지만 대조군이 없어 causal evidence 강도는 낮다.",
+    "sources": [
+      "P6"
+    ]
+  },
+  "regulatory": {
+    "original_bla_submitted": "2025-03",
+    "refusal_to_file": "2025-05",
+    "rtf_reason_ko": "추가 CMC data 요구와 연계.",
+    "resubmitted": "2025-12",
+    "priority_review_accepted": "2026-02",
+    "pdufa_date": "2026-11-22",
+    "pdufa_extension_months": 3,
+    "extension_reason_ko": "FDA가 review 중 회사 답변을 major amendment로 판단.",
+    "company_statement_boundary_ko": "회사는 연장 통지에 safety/efficacy/manufacturing concern이 명시되지 않았다고 밝혔지만 FDA의 세부 review issue는 비공개.",
+    "mhra_company_expected_decision": "4Q26",
+    "ema_company_expected_decision": "1Q27",
+    "sources": [
+      "P1",
+      "P2",
+      "P4"
+    ]
+  },
+  "commercial": {
+    "prelaunch": true,
+    "clearpath_no_charge_testing": true,
+    "exclusive_specialty_pharmacy": "PANTHERx Rare",
+    "patient_support_program": "MyMOLBREEVI",
+    "company_potential_wac_range_usd": [
+      400000,
+      500000
+    ],
+    "underwriting_net_price_usd": {
+      "bear": 260000,
+      "base": 330000,
+      "bull_execution": 360000,
+      "bull_ecosystem": 380000
+    },
+    "pricing_evidence_boundary_ko": "Company payer research is not realized price; final WAC/GTN/PA economics are unknown before approval.",
+    "sources": [
+      "P3",
+      "P5",
+      "P12"
+    ]
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "fy": 2023,
+        "revenue_usd_m": 0.0,
+        "r_and_d_usd_m": 44.262,
+        "g_and_a_usd_m": 15.668,
+        "operating_expenses_usd_m": 60.007,
+        "net_loss_usd_m": -54.7,
+        "operating_cash_flow_usd_m": null
+      },
+      {
+        "fy": 2024,
+        "revenue_usd_m": 0.0,
+        "r_and_d_usd_m": 78.029,
+        "g_and_a_usd_m": 25.037,
+        "operating_expenses_usd_m": 103.196,
+        "net_loss_usd_m": -95.881,
+        "operating_cash_flow_usd_m": -89.1
+      },
+      {
+        "fy": 2025,
+        "revenue_usd_m": 0.0,
+        "r_and_d_usd_m": 81.404,
+        "g_and_a_usd_m": 42.056,
+        "operating_expenses_usd_m": 123.547,
+        "net_loss_usd_m": -118.837,
+        "operating_cash_flow_usd_m": -101.0
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "3Q24",
+        "r_and_d_usd_m": 20.311,
+        "g_and_a_usd_m": 6.013,
+        "operating_expenses_usd_m": 26.357,
+        "net_loss_usd_m": -24.248
+      },
+      {
+        "quarter": "4Q24",
+        "r_and_d_usd_m": 23.294,
+        "g_and_a_usd_m": 7.848,
+        "operating_expenses_usd_m": 31.174,
+        "net_loss_usd_m": -29.044
+      },
+      {
+        "quarter": "1Q25",
+        "r_and_d_usd_m": 19.159,
+        "g_and_a_usd_m": 9.246,
+        "operating_expenses_usd_m": 28.435,
+        "net_loss_usd_m": -26.639
+      },
+      {
+        "quarter": "2Q25",
+        "r_and_d_usd_m": 20.751,
+        "g_and_a_usd_m": 10.655,
+        "operating_expenses_usd_m": 31.44,
+        "net_loss_usd_m": -30.401
+      },
+      {
+        "quarter": "3Q25",
+        "r_and_d_usd_m": 20.592,
+        "g_and_a_usd_m": 9.627,
+        "operating_expenses_usd_m": 30.255,
+        "net_loss_usd_m": -29.561
+      },
+      {
+        "quarter": "4Q25",
+        "r_and_d_usd_m": 20.902,
+        "g_and_a_usd_m": 12.491,
+        "operating_expenses_usd_m": 33.419,
+        "net_loss_usd_m": -32.236
+      },
+      {
+        "quarter": "1Q26",
+        "r_and_d_usd_m": 23.398,
+        "g_and_a_usd_m": 15.568,
+        "operating_expenses_usd_m": 38.99,
+        "net_loss_usd_m": -37.284
+      },
+      {
+        "quarter": "2Q26",
+        "r_and_d_usd_m": 21.951,
+        "g_and_a_usd_m": 18.986,
+        "operating_expenses_usd_m": 40.965,
+        "net_loss_usd_m": -40.228
+      }
+    ],
+    "latest_balance_sheet": {
+      "as_of": "2026-06-30",
+      "cash_usd_m": 41.8,
+      "short_term_investments_usd_m": 131.234,
+      "cash_plus_st_investments_usd_m": 173.034,
+      "debt_usd_m": 30.109,
+      "net_cash_proxy_usd_m": 142.925,
+      "h1_2026_operating_cash_burn_usd_m": 62.793,
+      "h1_2026_net_loss_usd_m": -77.512,
+      "h1_2026_sbc_usd_m": 18.492,
+      "h1_2025_sbc_usd_m": 5.641
+    },
+    "accounting_quality": {
+      "screen": "PASS_WITH_FLAGS",
+      "flags_ko": [
+        "상업화 전 회사라 revenue quality 평가보다 burn composition이 핵심.",
+        "H1 2026 SBC $18.5M으로 전년 동기 $5.6M 대비 크게 증가해 GAAP loss와 cash burn의 차이를 분리해야 한다.",
+        "approval-linked financing은 현금유입과 royalty/debt leakage를 동시에 봐야 한다."
+      ]
+    },
+    "sources": [
+      "P1",
+      "P2"
+    ],
+    "ceilings": [
+      "Pre-commercial: no product revenue history is available.",
+      "Runway is not mechanically annualized because launch timing, RTW proceeds, debt and working capital change the path."
+    ]
+  },
+  "capital_structure": {
+    "as_of": "2026-06-30 except current-price TSM",
+    "common_shares_m": 205.399365,
+    "prefunded_warrants_m": 48.600212,
+    "economic_basic_shares_m": 253.999577,
+    "legacy_warrants_m": 0.077793,
+    "options_m": 12.227121,
+    "avg_option_strike_usd_2025ye": 2.82,
+    "unvested_rsus_m": 6.973,
+    "central_fd_shares_m": 266.8,
+    "psu_additive_sensitivity_fd_m": 271.0,
+    "simple_max_issuance_ceiling_m": 278.0,
+    "economic_basic_equity_value_at_current_usd_m": 1358.898,
+    "enterprise_value_proxy_at_current_usd_m": 1215.973,
+    "ownership_denominator_lineage": "PASS",
+    "sources": [
+      "P1",
+      "P2"
+    ]
+  },
+  "funding_and_value_leakage": {
+    "rtw_approval_payment_usd_m": 75.0,
+    "rtw_us_royalty_tiers_ko": "미국 Net Sales에 7%→1% tiered royalty; 일정 저매출 조건에서는 7% tier가 9.5%까지 상승 가능.",
+    "rtw_total_payment_cap_usd_m": 187.5,
+    "hercules_existing_debt_usd_m": 30.0,
+    "hercules_post_approval_additional_capacity_usd_m": 75.0,
+    "valuation_treatment_ko": "Hercules draw는 기업가치에 더하지 않는다. RTW는 success-case cash 유입과 royalty leakage를 동시에 반영한다.",
+    "sources": [
+      "P1",
+      "P2",
+      "P13"
+    ]
+  },
+  "consensus_and_positioning": {
+    "analyst_ratings_count": 8,
+    "buy_type_count": 8,
+    "avg_price_target_usd": 10.94,
+    "target_range_usd": [
+      9.0,
+      16.0
+    ],
+    "revenue_consensus_usd_m": {
+      "2027": 80.64,
+      "2028": 206.37,
+      "2029": 372.68,
+      "2030": 534.65
+    },
+    "ebit_consensus_usd_m": {
+      "2026": -160.31,
+      "2027": -86.66,
+      "2028": 21.53,
+      "2029": 163.08,
+      "2030": 290.42
+    },
+    "short_interest_asof": "2026-08-14",
+    "shares_short": 38505948,
+    "days_to_cover": 27.1,
+    "short_float_ratio_boundary_ko": "Provider denominator differences produce ~20%-36% ratios; use shares-short as the authoritative field.",
+    "sources": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "valuation": {
+    "discount_rate": 0.12,
+    "capex_pct_revenue": 0.015,
+    "realization_horizon_months": 15,
+    "hurdle_rate": 0.15,
+    "scenarios": {
+      "bear": {
+        "label_ko": "Bear",
+        "probability": 0.3,
+        "net_price_usd": 260000,
+        "success_net_cash_usd_m": 25.0,
+        "fd_shares_m": 300.0,
+        "product_ev_usd_m": 27.964950390742175,
+        "equity_value_usd_m": 52.964950390742175,
+        "value_per_share_usd": 0.17654983463580726,
+        "description_ko": "규제/CMC 지연 또는 제한적 승인 이후 약한 침투, 추가 자금조달과 희석까지 반영한 severe downside.",
+        "forecast": [
+          {
+            "year": 2027,
+            "us_treated_patient_equivalent": 0,
+            "us_revenue_usd_m": 0.0,
+            "ex_us_revenue_usd_m": 0.0,
+            "total_revenue_usd_m": 0.0,
+            "post_leakage_contribution_margin": 0.0,
+            "operating_expenses_usd_m": 85.0,
+            "ebit_usd_m": -85.0,
+            "cash_tax_usd_m": 0.0,
+            "capex_usd_m": 0.0,
+            "fcf_usd_m": -85.0,
+            "pv_fcf_usd_m": -75.893
+          },
+          {
+            "year": 2028,
+            "us_treated_patient_equivalent": 80,
+            "us_revenue_usd_m": 20.8,
+            "ex_us_revenue_usd_m": 0.0,
+            "total_revenue_usd_m": 20.8,
+            "post_leakage_contribution_margin": 0.67,
+            "operating_expenses_usd_m": 100.0,
+            "ebit_usd_m": -86.064,
+            "cash_tax_usd_m": 0.0,
+            "capex_usd_m": 0.312,
+            "fcf_usd_m": -86.376,
+            "pv_fcf_usd_m": -68.858
+          },
+          {
+            "year": 2029,
+            "us_treated_patient_equivalent": 250,
+            "us_revenue_usd_m": 65.0,
+            "ex_us_revenue_usd_m": 10.0,
+            "total_revenue_usd_m": 75.0,
+            "post_leakage_contribution_margin": 0.69,
+            "operating_expenses_usd_m": 115.0,
+            "ebit_usd_m": -63.25,
+            "cash_tax_usd_m": 0.0,
+            "capex_usd_m": 1.125,
+            "fcf_usd_m": -64.375,
+            "pv_fcf_usd_m": -45.821
+          },
+          {
+            "year": 2030,
+            "us_treated_patient_equivalent": 500,
+            "us_revenue_usd_m": 130.0,
+            "ex_us_revenue_usd_m": 30.0,
+            "total_revenue_usd_m": 160.0,
+            "post_leakage_contribution_margin": 0.7,
+            "operating_expenses_usd_m": 125.0,
+            "ebit_usd_m": -13.0,
+            "cash_tax_usd_m": 0.0,
+            "capex_usd_m": 2.4,
+            "fcf_usd_m": -15.4,
+            "pv_fcf_usd_m": -9.787
+          },
+          {
+            "year": 2031,
+            "us_treated_patient_equivalent": 750,
+            "us_revenue_usd_m": 195.0,
+            "ex_us_revenue_usd_m": 50.0,
+            "total_revenue_usd_m": 245.0,
+            "post_leakage_contribution_margin": 0.7,
+            "operating_expenses_usd_m": 135.0,
+            "ebit_usd_m": 36.5,
+            "cash_tax_usd_m": 0.0,
+            "capex_usd_m": 3.675,
+            "fcf_usd_m": 32.825,
+            "pv_fcf_usd_m": 18.626
+          },
+          {
+            "year": 2032,
+            "us_treated_patient_equivalent": 950,
+            "us_revenue_usd_m": 247.0,
+            "ex_us_revenue_usd_m": 70.0,
+            "total_revenue_usd_m": 317.0,
+            "post_leakage_contribution_margin": 0.7,
+            "operating_expenses_usd_m": 140.0,
+            "ebit_usd_m": 81.9,
+            "cash_tax_usd_m": 4.095,
+            "capex_usd_m": 4.755,
+            "fcf_usd_m": 73.05,
+            "pv_fcf_usd_m": 37.009
+          },
+          {
+            "year": 2033,
+            "us_treated_patient_equivalent": 1100,
+            "us_revenue_usd_m": 286.0,
+            "ex_us_revenue_usd_m": 90.0,
+            "total_revenue_usd_m": 376.0,
+            "post_leakage_contribution_margin": 0.7,
+            "operating_expenses_usd_m": 145.0,
+            "ebit_usd_m": 118.2,
+            "cash_tax_usd_m": 11.82,
+            "capex_usd_m": 5.64,
+            "fcf_usd_m": 100.74,
+            "pv_fcf_usd_m": 45.57
+          },
+          {
+            "year": 2034,
+            "us_treated_patient_equivalent": 1150,
+            "us_revenue_usd_m": 299.0,
+            "ex_us_revenue_usd_m": 100.0,
+            "total_revenue_usd_m": 399.0,
+            "post_leakage_contribution_margin": 0.7,
+            "operating_expenses_usd_m": 150.0,
+            "ebit_usd_m": 129.3,
+            "cash_tax_usd_m": 19.395,
+            "capex_usd_m": 5.985,
+            "fcf_usd_m": 103.92,
+            "pv_fcf_usd_m": 41.972
+          },
+          {
+            "year": 2035,
+            "us_treated_patient_equivalent": 1150,
+            "us_revenue_usd_m": 299.0,
+            "ex_us_revenue_usd_m": 105.0,
+            "total_revenue_usd_m": 404.0,
+            "post_leakage_contribution_margin": 0.7,
+            "operating_expenses_usd_m": 155.0,
+            "ebit_usd_m": 127.8,
+            "cash_tax_usd_m": 23.004,
+            "capex_usd_m": 6.06,
+            "fcf_usd_m": 98.736,
+            "pv_fcf_usd_m": 35.605
+          },
+          {
+            "year": 2036,
+            "us_treated_patient_equivalent": 1100,
+            "us_revenue_usd_m": 286.0,
+            "ex_us_revenue_usd_m": 105.0,
+            "total_revenue_usd_m": 391.0,
+            "post_leakage_contribution_margin": 0.7,
+            "operating_expenses_usd_m": 160.0,
+            "ebit_usd_m": 113.7,
+            "cash_tax_usd_m": 23.877,
+            "capex_usd_m": 5.865,
+            "fcf_usd_m": 83.958,
+            "pv_fcf_usd_m": 27.032
+          },
+          {
+            "year": 2037,
+            "us_treated_patient_equivalent": 1050,
+            "us_revenue_usd_m": 273.0,
+            "ex_us_revenue_usd_m": 100.0,
+            "total_revenue_usd_m": 373.0,
+            "post_leakage_contribution_margin": 0.69,
+            "operating_expenses_usd_m": 165.0,
+            "ebit_usd_m": 92.37,
+            "cash_tax_usd_m": 19.398,
+            "capex_usd_m": 5.595,
+            "fcf_usd_m": 67.377,
+            "pv_fcf_usd_m": 19.369
+          },
+          {
+            "year": 2038,
+            "us_treated_patient_equivalent": 1000,
+            "us_revenue_usd_m": 260.0,
+            "ex_us_revenue_usd_m": 95.0,
+            "total_revenue_usd_m": 355.0,
+            "post_leakage_contribution_margin": 0.68,
+            "operating_expenses_usd_m": 165.0,
+            "ebit_usd_m": 76.4,
+            "cash_tax_usd_m": 16.044,
+            "capex_usd_m": 5.325,
+            "fcf_usd_m": 55.031,
+            "pv_fcf_usd_m": 14.125
+          },
+          {
+            "year": 2039,
+            "us_treated_patient_equivalent": 900,
+            "us_revenue_usd_m": 234.0,
+            "ex_us_revenue_usd_m": 85.0,
+            "total_revenue_usd_m": 319.0,
+            "post_leakage_contribution_margin": 0.66,
+            "operating_expenses_usd_m": 160.0,
+            "ebit_usd_m": 50.54,
+            "cash_tax_usd_m": 10.613,
+            "capex_usd_m": 4.785,
+            "fcf_usd_m": 35.142,
+            "pv_fcf_usd_m": 8.054
+          },
+          {
+            "year": 2040,
+            "us_treated_patient_equivalent": 750,
+            "us_revenue_usd_m": 195.0,
+            "ex_us_revenue_usd_m": 70.0,
+            "total_revenue_usd_m": 265.0,
+            "post_leakage_contribution_margin": 0.64,
+            "operating_expenses_usd_m": 150.0,
+            "ebit_usd_m": 19.6,
+            "cash_tax_usd_m": 4.116,
+            "capex_usd_m": 3.975,
+            "fcf_usd_m": 11.509,
+            "pv_fcf_usd_m": 2.355
+          },
+          {
+            "year": 2041,
+            "us_treated_patient_equivalent": 600,
+            "us_revenue_usd_m": 156.0,
+            "ex_us_revenue_usd_m": 50.0,
+            "total_revenue_usd_m": 206.0,
+            "post_leakage_contribution_margin": 0.62,
+            "operating_expenses_usd_m": 140.0,
+            "ebit_usd_m": -12.28,
+            "cash_tax_usd_m": 0.0,
+            "capex_usd_m": 3.09,
+            "fcf_usd_m": -15.37,
+            "pv_fcf_usd_m": -2.808
+          },
+          {
+            "year": 2042,
+            "us_treated_patient_equivalent": 400,
+            "us_revenue_usd_m": 104.0,
+            "ex_us_revenue_usd_m": 30.0,
+            "total_revenue_usd_m": 134.0,
+            "post_leakage_contribution_margin": 0.6,
+            "operating_expenses_usd_m": 130.0,
+            "ebit_usd_m": -49.6,
+            "cash_tax_usd_m": 0.0,
+            "capex_usd_m": 2.01,
+            "fcf_usd_m": -51.61,
+            "pv_fcf_usd_m": -8.419
+          },
+          {
+            "year": 2043,
+            "us_treated_patient_equivalent": 250,
+            "us_revenue_usd_m": 65.0,
+            "ex_us_revenue_usd_m": 15.0,
+            "total_revenue_usd_m": 80.0,
+            "post_leakage_contribution_margin": 0.58,
+            "operating_expenses_usd_m": 115.0,
+            "ebit_usd_m": -68.6,
+            "cash_tax_usd_m": 0.0,
+            "capex_usd_m": 1.2,
+            "fcf_usd_m": -69.8,
+            "pv_fcf_usd_m": -10.166
+          }
+        ],
+        "peak_us_treated_patient_equivalent": 1150,
+        "peak_total_revenue_usd_m": 404.0
+      },
+      "base": {
+        "label_ko": "Base",
+        "probability": 0.4,
+        "net_price_usd": 330000,
+        "success_net_cash_usd_m": 150.0,
+        "fd_shares_m": 267.0,
+        "product_ev_usd_m": 1520.4150302337139,
+        "equity_value_usd_m": 1670.4150302337139,
+        "value_per_share_usd": 6.256236068291063,
+        "description_ko": "FDA 승인 뒤 점진적 진단/접근 전환. 미국 peak treated-patient equivalent 2,000명과 보수적 ex-U.S. ramp.",
+        "forecast": [
+          {
+            "year": 2027,
+            "us_treated_patient_equivalent": 150,
+            "us_revenue_usd_m": 49.5,
+            "ex_us_revenue_usd_m": 0.0,
+            "total_revenue_usd_m": 49.5,
+            "post_leakage_contribution_margin": 0.76,
+            "operating_expenses_usd_m": 165.0,
+            "ebit_usd_m": -127.38,
+            "cash_tax_usd_m": 0.0,
+            "capex_usd_m": 0.742,
+            "fcf_usd_m": -128.123,
+            "pv_fcf_usd_m": -114.395
+          },
+          {
+            "year": 2028,
+            "us_treated_patient_equivalent": 450,
+            "us_revenue_usd_m": 148.5,
+            "ex_us_revenue_usd_m": 30.0,
+            "total_revenue_usd_m": 178.5,
+            "post_leakage_contribution_margin": 0.78,
+            "operating_expenses_usd_m": 170.0,
+            "ebit_usd_m": -30.77,
+            "cash_tax_usd_m": 0.0,
+            "capex_usd_m": 2.677,
+            "fcf_usd_m": -33.447,
+            "pv_fcf_usd_m": -26.664
+          },
+          {
+            "year": 2029,
+            "us_treated_patient_equivalent": 900,
+            "us_revenue_usd_m": 297.0,
+            "ex_us_revenue_usd_m": 80.0,
+            "total_revenue_usd_m": 377.0,
+            "post_leakage_contribution_margin": 0.79,
+            "operating_expenses_usd_m": 175.0,
+            "ebit_usd_m": 122.83,
+            "cash_tax_usd_m": 0.0,
+            "capex_usd_m": 5.655,
+            "fcf_usd_m": 117.175,
+            "pv_fcf_usd_m": 83.403
+          },
+          {
+            "year": 2030,
+            "us_treated_patient_equivalent": 1350,
+            "us_revenue_usd_m": 445.5,
+            "ex_us_revenue_usd_m": 120.0,
+            "total_revenue_usd_m": 565.5,
+            "post_leakage_contribution_margin": 0.8,
+            "operating_expenses_usd_m": 180.0,
+            "ebit_usd_m": 272.4,
+            "cash_tax_usd_m": 13.62,
+            "capex_usd_m": 8.482,
+            "fcf_usd_m": 250.298,
+            "pv_fcf_usd_m": 159.069
+          },
+          {
+            "year": 2031,
+            "us_treated_patient_equivalent": 1700,
+            "us_revenue_usd_m": 561.0,
+            "ex_us_revenue_usd_m": 170.0,
+            "total_revenue_usd_m": 731.0,
+            "post_leakage_contribution_margin": 0.8,
+            "operating_expenses_usd_m": 185.0,
+            "ebit_usd_m": 399.8,
+            "cash_tax_usd_m": 39.98,
+            "capex_usd_m": 10.965,
+            "fcf_usd_m": 348.855,
+            "pv_fcf_usd_m": 197.95
+          },
+          {
+            "year": 2032,
+            "us_treated_patient_equivalent": 1900,
+            "us_revenue_usd_m": 627.0,
+            "ex_us_revenue_usd_m": 210.0,
+            "total_revenue_usd_m": 837.0,
+            "post_leakage_contribution_margin": 0.8,
+            "operating_expenses_usd_m": 190.0,
+            "ebit_usd_m": 479.6,
+            "cash_tax_usd_m": 71.94,
+            "capex_usd_m": 12.555,
+            "fcf_usd_m": 395.105,
+            "pv_fcf_usd_m": 200.172
+          },
+          {
+            "year": 2033,
+            "us_treated_patient_equivalent": 2000,
+            "us_revenue_usd_m": 660.0,
+            "ex_us_revenue_usd_m": 250.0,
+            "total_revenue_usd_m": 910.0,
+            "post_leakage_contribution_margin": 0.8,
+            "operating_expenses_usd_m": 195.0,
+            "ebit_usd_m": 533.0,
+            "cash_tax_usd_m": 95.94,
+            "capex_usd_m": 13.65,
+            "fcf_usd_m": 423.41,
+            "pv_fcf_usd_m": 191.529
+          },
+          {
+            "year": 2034,
+            "us_treated_patient_equivalent": 2000,
+            "us_revenue_usd_m": 660.0,
+            "ex_us_revenue_usd_m": 280.0,
+            "total_revenue_usd_m": 940.0,
+            "post_leakage_contribution_margin": 0.8,
+            "operating_expenses_usd_m": 200.0,
+            "ebit_usd_m": 552.0,
+            "cash_tax_usd_m": 115.92,
+            "capex_usd_m": 14.1,
+            "fcf_usd_m": 421.98,
+            "pv_fcf_usd_m": 170.431
+          },
+          {
+            "year": 2035,
+            "us_treated_patient_equivalent": 1950,
+            "us_revenue_usd_m": 643.5,
+            "ex_us_revenue_usd_m": 300.0,
+            "total_revenue_usd_m": 943.5,
+            "post_leakage_contribution_margin": 0.8,
+            "operating_expenses_usd_m": 205.0,
+            "ebit_usd_m": 549.8,
+            "cash_tax_usd_m": 115.458,
+            "capex_usd_m": 14.152,
+            "fcf_usd_m": 420.19,
+            "pv_fcf_usd_m": 151.525
+          },
+          {
+            "year": 2036,
+            "us_treated_patient_equivalent": 1900,
+            "us_revenue_usd_m": 627.0,
+            "ex_us_revenue_usd_m": 300.0,
+            "total_revenue_usd_m": 927.0,
+            "post_leakage_contribution_margin": 0.8,
+            "operating_expenses_usd_m": 210.0,
+            "ebit_usd_m": 531.6,
+            "cash_tax_usd_m": 111.636,
+            "capex_usd_m": 13.905,
+            "fcf_usd_m": 406.059,
+            "pv_fcf_usd_m": 130.74
+          },
+          {
+            "year": 2037,
+            "us_treated_patient_equivalent": 1850,
+            "us_revenue_usd_m": 610.5,
+            "ex_us_revenue_usd_m": 290.0,
+            "total_revenue_usd_m": 900.5,
+            "post_leakage_contribution_margin": 0.8,
+            "operating_expenses_usd_m": 215.0,
+            "ebit_usd_m": 505.4,
+            "cash_tax_usd_m": 106.134,
+            "capex_usd_m": 13.508,
+            "fcf_usd_m": 385.759,
+            "pv_fcf_usd_m": 110.896
+          },
+          {
+            "year": 2038,
+            "us_treated_patient_equivalent": 1800,
+            "us_revenue_usd_m": 594.0,
+            "ex_us_revenue_usd_m": 280.0,
+            "total_revenue_usd_m": 874.0,
+            "post_leakage_contribution_margin": 0.8,
+            "operating_expenses_usd_m": 220.0,
+            "ebit_usd_m": 479.2,
+            "cash_tax_usd_m": 100.632,
+            "capex_usd_m": 13.11,
+            "fcf_usd_m": 365.458,
+            "pv_fcf_usd_m": 93.804
+          },
+          {
+            "year": 2039,
+            "us_treated_patient_equivalent": 1700,
+            "us_revenue_usd_m": 561.0,
+            "ex_us_revenue_usd_m": 260.0,
+            "total_revenue_usd_m": 821.0,
+            "post_leakage_contribution_margin": 0.79,
+            "operating_expenses_usd_m": 225.0,
+            "ebit_usd_m": 423.59,
+            "cash_tax_usd_m": 88.954,
+            "capex_usd_m": 12.315,
+            "fcf_usd_m": 322.321,
+            "pv_fcf_usd_m": 73.868
+          },
+          {
+            "year": 2040,
+            "us_treated_patient_equivalent": 1500,
+            "us_revenue_usd_m": 495.0,
+            "ex_us_revenue_usd_m": 230.0,
+            "total_revenue_usd_m": 725.0,
+            "post_leakage_contribution_margin": 0.77,
+            "operating_expenses_usd_m": 225.0,
+            "ebit_usd_m": 333.25,
+            "cash_tax_usd_m": 69.983,
+            "capex_usd_m": 10.875,
+            "fcf_usd_m": 252.392,
+            "pv_fcf_usd_m": 51.645
+          },
+          {
+            "year": 2041,
+            "us_treated_patient_equivalent": 1250,
+            "us_revenue_usd_m": 412.5,
+            "ex_us_revenue_usd_m": 190.0,
+            "total_revenue_usd_m": 602.5,
+            "post_leakage_contribution_margin": 0.75,
+            "operating_expenses_usd_m": 220.0,
+            "ebit_usd_m": 231.875,
+            "cash_tax_usd_m": 48.694,
+            "capex_usd_m": 9.037,
+            "fcf_usd_m": 174.144,
+            "pv_fcf_usd_m": 31.815
+          },
+          {
+            "year": 2042,
+            "us_treated_patient_equivalent": 950,
+            "us_revenue_usd_m": 313.5,
+            "ex_us_revenue_usd_m": 140.0,
+            "total_revenue_usd_m": 453.5,
+            "post_leakage_contribution_margin": 0.72,
+            "operating_expenses_usd_m": 210.0,
+            "ebit_usd_m": 116.52,
+            "cash_tax_usd_m": 24.469,
+            "capex_usd_m": 6.802,
+            "fcf_usd_m": 85.248,
+            "pv_fcf_usd_m": 13.906
+          },
+          {
+            "year": 2043,
+            "us_treated_patient_equivalent": 650,
+            "us_revenue_usd_m": 214.5,
+            "ex_us_revenue_usd_m": 90.0,
+            "total_revenue_usd_m": 304.5,
+            "post_leakage_contribution_margin": 0.68,
+            "operating_expenses_usd_m": 195.0,
+            "ebit_usd_m": 12.06,
+            "cash_tax_usd_m": 2.533,
+            "capex_usd_m": 4.567,
+            "fcf_usd_m": 4.96,
+            "pv_fcf_usd_m": 0.722
+          }
+        ],
+        "peak_us_treated_patient_equivalent": 2000,
+        "peak_total_revenue_usd_m": 943.5
+      },
+      "bull_execution": {
+        "label_ko": "Bull Execution",
+        "probability": 0.2,
+        "net_price_usd": 360000,
+        "success_net_cash_usd_m": 150.0,
+        "fd_shares_m": 270.0,
+        "product_ev_usd_m": 3167.035357832117,
+        "equity_value_usd_m": 3317.035357832117,
+        "value_per_share_usd": 12.285316140118951,
+        "description_ko": "진단·보험·specialty pharmacy 인프라가 빠르게 환자전환으로 연결되고 미국/유럽이 모두 강하게 실행.",
+        "forecast": [
+          {
+            "year": 2027,
+            "us_treated_patient_equivalent": 250,
+            "us_revenue_usd_m": 90.0,
+            "ex_us_revenue_usd_m": 0.0,
+            "total_revenue_usd_m": 90.0,
+            "post_leakage_contribution_margin": 0.78,
+            "operating_expenses_usd_m": 170.0,
+            "ebit_usd_m": -99.8,
+            "cash_tax_usd_m": 0.0,
+            "capex_usd_m": 1.35,
+            "fcf_usd_m": -101.15,
+            "pv_fcf_usd_m": -90.312
+          },
+          {
+            "year": 2028,
+            "us_treated_patient_equivalent": 700,
+            "us_revenue_usd_m": 252.0,
+            "ex_us_revenue_usd_m": 50.0,
+            "total_revenue_usd_m": 302.0,
+            "post_leakage_contribution_margin": 0.8,
+            "operating_expenses_usd_m": 180.0,
+            "ebit_usd_m": 61.6,
+            "cash_tax_usd_m": 0.0,
+            "capex_usd_m": 4.53,
+            "fcf_usd_m": 57.07,
+            "pv_fcf_usd_m": 45.496
+          },
+          {
+            "year": 2029,
+            "us_treated_patient_equivalent": 1350,
+            "us_revenue_usd_m": 486.0,
+            "ex_us_revenue_usd_m": 140.0,
+            "total_revenue_usd_m": 626.0,
+            "post_leakage_contribution_margin": 0.81,
+            "operating_expenses_usd_m": 190.0,
+            "ebit_usd_m": 317.06,
+            "cash_tax_usd_m": 15.853,
+            "capex_usd_m": 9.39,
+            "fcf_usd_m": 291.817,
+            "pv_fcf_usd_m": 207.71
+          },
+          {
+            "year": 2030,
+            "us_treated_patient_equivalent": 2000,
+            "us_revenue_usd_m": 720.0,
+            "ex_us_revenue_usd_m": 240.0,
+            "total_revenue_usd_m": 960.0,
+            "post_leakage_contribution_margin": 0.82,
+            "operating_expenses_usd_m": 200.0,
+            "ebit_usd_m": 587.2,
+            "cash_tax_usd_m": 58.72,
+            "capex_usd_m": 14.4,
+            "fcf_usd_m": 514.08,
+            "pv_fcf_usd_m": 326.707
+          },
+          {
+            "year": 2031,
+            "us_treated_patient_equivalent": 2500,
+            "us_revenue_usd_m": 900.0,
+            "ex_us_revenue_usd_m": 350.0,
+            "total_revenue_usd_m": 1250.0,
+            "post_leakage_contribution_margin": 0.82,
+            "operating_expenses_usd_m": 210.0,
+            "ebit_usd_m": 815.0,
+            "cash_tax_usd_m": 122.25,
+            "capex_usd_m": 18.75,
+            "fcf_usd_m": 674.0,
+            "pv_fcf_usd_m": 382.446
+          },
+          {
+            "year": 2032,
+            "us_treated_patient_equivalent": 2750,
+            "us_revenue_usd_m": 990.0,
+            "ex_us_revenue_usd_m": 430.0,
+            "total_revenue_usd_m": 1420.0,
+            "post_leakage_contribution_margin": 0.82,
+            "operating_expenses_usd_m": 220.0,
+            "ebit_usd_m": 944.4,
+            "cash_tax_usd_m": 169.992,
+            "capex_usd_m": 21.3,
+            "fcf_usd_m": 753.108,
+            "pv_fcf_usd_m": 381.548
+          },
+          {
+            "year": 2033,
+            "us_treated_patient_equivalent": 2800,
+            "us_revenue_usd_m": 1008.0,
+            "ex_us_revenue_usd_m": 500.0,
+            "total_revenue_usd_m": 1508.0,
+            "post_leakage_contribution_margin": 0.82,
+            "operating_expenses_usd_m": 230.0,
+            "ebit_usd_m": 1006.56,
+            "cash_tax_usd_m": 211.378,
+            "capex_usd_m": 22.62,
+            "fcf_usd_m": 772.562,
+            "pv_fcf_usd_m": 349.468
+          },
+          {
+            "year": 2034,
+            "us_treated_patient_equivalent": 2800,
+            "us_revenue_usd_m": 1008.0,
+            "ex_us_revenue_usd_m": 540.0,
+            "total_revenue_usd_m": 1548.0,
+            "post_leakage_contribution_margin": 0.82,
+            "operating_expenses_usd_m": 240.0,
+            "ebit_usd_m": 1029.36,
+            "cash_tax_usd_m": 216.166,
+            "capex_usd_m": 23.22,
+            "fcf_usd_m": 789.974,
+            "pv_fcf_usd_m": 319.057
+          },
+          {
+            "year": 2035,
+            "us_treated_patient_equivalent": 2750,
+            "us_revenue_usd_m": 990.0,
+            "ex_us_revenue_usd_m": 560.0,
+            "total_revenue_usd_m": 1550.0,
+            "post_leakage_contribution_margin": 0.82,
+            "operating_expenses_usd_m": 250.0,
+            "ebit_usd_m": 1021.0,
+            "cash_tax_usd_m": 214.41,
+            "capex_usd_m": 23.25,
+            "fcf_usd_m": 783.34,
+            "pv_fcf_usd_m": 282.48
+          },
+          {
+            "year": 2036,
+            "us_treated_patient_equivalent": 2700,
+            "us_revenue_usd_m": 972.0,
+            "ex_us_revenue_usd_m": 560.0,
+            "total_revenue_usd_m": 1532.0,
+            "post_leakage_contribution_margin": 0.82,
+            "operating_expenses_usd_m": 260.0,
+            "ebit_usd_m": 996.24,
+            "cash_tax_usd_m": 209.21,
+            "capex_usd_m": 22.98,
+            "fcf_usd_m": 764.05,
+            "pv_fcf_usd_m": 246.004
+          },
+          {
+            "year": 2037,
+            "us_treated_patient_equivalent": 2650,
+            "us_revenue_usd_m": 954.0,
+            "ex_us_revenue_usd_m": 540.0,
+            "total_revenue_usd_m": 1494.0,
+            "post_leakage_contribution_margin": 0.82,
+            "operating_expenses_usd_m": 270.0,
+            "ebit_usd_m": 955.08,
+            "cash_tax_usd_m": 200.567,
+            "capex_usd_m": 22.41,
+            "fcf_usd_m": 732.103,
+            "pv_fcf_usd_m": 210.462
+          },
+          {
+            "year": 2038,
+            "us_treated_patient_equivalent": 2550,
+            "us_revenue_usd_m": 918.0,
+            "ex_us_revenue_usd_m": 510.0,
+            "total_revenue_usd_m": 1428.0,
+            "post_leakage_contribution_margin": 0.81,
+            "operating_expenses_usd_m": 280.0,
+            "ebit_usd_m": 876.68,
+            "cash_tax_usd_m": 184.103,
+            "capex_usd_m": 21.42,
+            "fcf_usd_m": 671.157,
+            "pv_fcf_usd_m": 172.269
+          },
+          {
+            "year": 2039,
+            "us_treated_patient_equivalent": 2400,
+            "us_revenue_usd_m": 864.0,
+            "ex_us_revenue_usd_m": 470.0,
+            "total_revenue_usd_m": 1334.0,
+            "post_leakage_contribution_margin": 0.8,
+            "operating_expenses_usd_m": 290.0,
+            "ebit_usd_m": 777.2,
+            "cash_tax_usd_m": 163.212,
+            "capex_usd_m": 20.01,
+            "fcf_usd_m": 593.978,
+            "pv_fcf_usd_m": 136.124
+          },
+          {
+            "year": 2040,
+            "us_treated_patient_equivalent": 2100,
+            "us_revenue_usd_m": 756.0,
+            "ex_us_revenue_usd_m": 410.0,
+            "total_revenue_usd_m": 1166.0,
+            "post_leakage_contribution_margin": 0.78,
+            "operating_expenses_usd_m": 290.0,
+            "ebit_usd_m": 619.48,
+            "cash_tax_usd_m": 130.091,
+            "capex_usd_m": 17.49,
+            "fcf_usd_m": 471.899,
+            "pv_fcf_usd_m": 96.56
+          },
+          {
+            "year": 2041,
+            "us_treated_patient_equivalent": 1750,
+            "us_revenue_usd_m": 630.0,
+            "ex_us_revenue_usd_m": 330.0,
+            "total_revenue_usd_m": 960.0,
+            "post_leakage_contribution_margin": 0.76,
+            "operating_expenses_usd_m": 280.0,
+            "ebit_usd_m": 449.6,
+            "cash_tax_usd_m": 94.416,
+            "capex_usd_m": 14.4,
+            "fcf_usd_m": 340.784,
+            "pv_fcf_usd_m": 62.26
+          },
+          {
+            "year": 2042,
+            "us_treated_patient_equivalent": 1300,
+            "us_revenue_usd_m": 468.0,
+            "ex_us_revenue_usd_m": 230.0,
+            "total_revenue_usd_m": 698.0,
+            "post_leakage_contribution_margin": 0.73,
+            "operating_expenses_usd_m": 265.0,
+            "ebit_usd_m": 244.54,
+            "cash_tax_usd_m": 51.353,
+            "capex_usd_m": 10.47,
+            "fcf_usd_m": 182.717,
+            "pv_fcf_usd_m": 29.805
+          },
+          {
+            "year": 2043,
+            "us_treated_patient_equivalent": 900,
+            "us_revenue_usd_m": 324.0,
+            "ex_us_revenue_usd_m": 150.0,
+            "total_revenue_usd_m": 474.0,
+            "post_leakage_contribution_margin": 0.7,
+            "operating_expenses_usd_m": 245.0,
+            "ebit_usd_m": 86.8,
+            "cash_tax_usd_m": 18.228,
+            "capex_usd_m": 7.11,
+            "fcf_usd_m": 61.462,
+            "pv_fcf_usd_m": 8.952
+          }
+        ],
+        "peak_us_treated_patient_equivalent": 2800,
+        "peak_total_revenue_usd_m": 1550.0
+      },
+      "bull_ecosystem": {
+        "label_ko": "Bull Ecosystem",
+        "probability": 0.1,
+        "net_price_usd": 380000,
+        "success_net_cash_usd_m": 150.0,
+        "fd_shares_m": 272.0,
+        "product_ev_usd_m": 4282.669573964394,
+        "equity_value_usd_m": 4432.669573964394,
+        "value_per_share_usd": 16.296579316045566,
+        "description_ko": "새 플랫폼/M&A 가치는 0으로 두되, global centers·testing·device·access network가 최고 수준으로 작동하는 stretch execution.",
+        "forecast": [
+          {
+            "year": 2027,
+            "us_treated_patient_equivalent": 300,
+            "us_revenue_usd_m": 114.0,
+            "ex_us_revenue_usd_m": 0.0,
+            "total_revenue_usd_m": 114.0,
+            "post_leakage_contribution_margin": 0.79,
+            "operating_expenses_usd_m": 175.0,
+            "ebit_usd_m": -84.94,
+            "cash_tax_usd_m": 0.0,
+            "capex_usd_m": 1.71,
+            "fcf_usd_m": -86.65,
+            "pv_fcf_usd_m": -77.366
+          },
+          {
+            "year": 2028,
+            "us_treated_patient_equivalent": 850,
+            "us_revenue_usd_m": 323.0,
+            "ex_us_revenue_usd_m": 60.0,
+            "total_revenue_usd_m": 383.0,
+            "post_leakage_contribution_margin": 0.81,
+            "operating_expenses_usd_m": 190.0,
+            "ebit_usd_m": 120.23,
+            "cash_tax_usd_m": 0.0,
+            "capex_usd_m": 5.745,
+            "fcf_usd_m": 114.485,
+            "pv_fcf_usd_m": 91.267
+          },
+          {
+            "year": 2029,
+            "us_treated_patient_equivalent": 1600,
+            "us_revenue_usd_m": 608.0,
+            "ex_us_revenue_usd_m": 180.0,
+            "total_revenue_usd_m": 788.0,
+            "post_leakage_contribution_margin": 0.82,
+            "operating_expenses_usd_m": 205.0,
+            "ebit_usd_m": 441.16,
+            "cash_tax_usd_m": 22.058,
+            "capex_usd_m": 11.82,
+            "fcf_usd_m": 407.282,
+            "pv_fcf_usd_m": 289.895
+          },
+          {
+            "year": 2030,
+            "us_treated_patient_equivalent": 2400,
+            "us_revenue_usd_m": 912.0,
+            "ex_us_revenue_usd_m": 320.0,
+            "total_revenue_usd_m": 1232.0,
+            "post_leakage_contribution_margin": 0.83,
+            "operating_expenses_usd_m": 220.0,
+            "ebit_usd_m": 802.56,
+            "cash_tax_usd_m": 80.256,
+            "capex_usd_m": 18.48,
+            "fcf_usd_m": 703.824,
+            "pv_fcf_usd_m": 447.293
+          },
+          {
+            "year": 2031,
+            "us_treated_patient_equivalent": 3000,
+            "us_revenue_usd_m": 1140.0,
+            "ex_us_revenue_usd_m": 480.0,
+            "total_revenue_usd_m": 1620.0,
+            "post_leakage_contribution_margin": 0.83,
+            "operating_expenses_usd_m": 235.0,
+            "ebit_usd_m": 1109.6,
+            "cash_tax_usd_m": 166.44,
+            "capex_usd_m": 24.3,
+            "fcf_usd_m": 918.86,
+            "pv_fcf_usd_m": 521.386
+          },
+          {
+            "year": 2032,
+            "us_treated_patient_equivalent": 3250,
+            "us_revenue_usd_m": 1235.0,
+            "ex_us_revenue_usd_m": 580.0,
+            "total_revenue_usd_m": 1815.0,
+            "post_leakage_contribution_margin": 0.83,
+            "operating_expenses_usd_m": 250.0,
+            "ebit_usd_m": 1256.45,
+            "cash_tax_usd_m": 226.161,
+            "capex_usd_m": 27.225,
+            "fcf_usd_m": 1003.064,
+            "pv_fcf_usd_m": 508.183
+          },
+          {
+            "year": 2033,
+            "us_treated_patient_equivalent": 3300,
+            "us_revenue_usd_m": 1254.0,
+            "ex_us_revenue_usd_m": 650.0,
+            "total_revenue_usd_m": 1904.0,
+            "post_leakage_contribution_margin": 0.83,
+            "operating_expenses_usd_m": 265.0,
+            "ebit_usd_m": 1315.32,
+            "cash_tax_usd_m": 276.217,
+            "capex_usd_m": 28.56,
+            "fcf_usd_m": 1010.543,
+            "pv_fcf_usd_m": 457.118
+          },
+          {
+            "year": 2034,
+            "us_treated_patient_equivalent": 3300,
+            "us_revenue_usd_m": 1254.0,
+            "ex_us_revenue_usd_m": 700.0,
+            "total_revenue_usd_m": 1954.0,
+            "post_leakage_contribution_margin": 0.83,
+            "operating_expenses_usd_m": 280.0,
+            "ebit_usd_m": 1341.82,
+            "cash_tax_usd_m": 281.782,
+            "capex_usd_m": 29.31,
+            "fcf_usd_m": 1030.728,
+            "pv_fcf_usd_m": 416.294
+          },
+          {
+            "year": 2035,
+            "us_treated_patient_equivalent": 3250,
+            "us_revenue_usd_m": 1235.0,
+            "ex_us_revenue_usd_m": 730.0,
+            "total_revenue_usd_m": 1965.0,
+            "post_leakage_contribution_margin": 0.83,
+            "operating_expenses_usd_m": 295.0,
+            "ebit_usd_m": 1335.95,
+            "cash_tax_usd_m": 280.549,
+            "capex_usd_m": 29.475,
+            "fcf_usd_m": 1025.925,
+            "pv_fcf_usd_m": 369.959
+          },
+          {
+            "year": 2036,
+            "us_treated_patient_equivalent": 3200,
+            "us_revenue_usd_m": 1216.0,
+            "ex_us_revenue_usd_m": 730.0,
+            "total_revenue_usd_m": 1946.0,
+            "post_leakage_contribution_margin": 0.83,
+            "operating_expenses_usd_m": 310.0,
+            "ebit_usd_m": 1305.18,
+            "cash_tax_usd_m": 274.088,
+            "capex_usd_m": 29.19,
+            "fcf_usd_m": 1001.902,
+            "pv_fcf_usd_m": 322.586
+          },
+          {
+            "year": 2037,
+            "us_treated_patient_equivalent": 3150,
+            "us_revenue_usd_m": 1197.0,
+            "ex_us_revenue_usd_m": 700.0,
+            "total_revenue_usd_m": 1897.0,
+            "post_leakage_contribution_margin": 0.83,
+            "operating_expenses_usd_m": 325.0,
+            "ebit_usd_m": 1249.51,
+            "cash_tax_usd_m": 262.397,
+            "capex_usd_m": 28.455,
+            "fcf_usd_m": 958.658,
+            "pv_fcf_usd_m": 275.591
+          },
+          {
+            "year": 2038,
+            "us_treated_patient_equivalent": 3000,
+            "us_revenue_usd_m": 1140.0,
+            "ex_us_revenue_usd_m": 660.0,
+            "total_revenue_usd_m": 1800.0,
+            "post_leakage_contribution_margin": 0.82,
+            "operating_expenses_usd_m": 340.0,
+            "ebit_usd_m": 1136.0,
+            "cash_tax_usd_m": 238.56,
+            "capex_usd_m": 27.0,
+            "fcf_usd_m": 870.44,
+            "pv_fcf_usd_m": 223.42
+          },
+          {
+            "year": 2039,
+            "us_treated_patient_equivalent": 2850,
+            "us_revenue_usd_m": 1083.0,
+            "ex_us_revenue_usd_m": 600.0,
+            "total_revenue_usd_m": 1683.0,
+            "post_leakage_contribution_margin": 0.81,
+            "operating_expenses_usd_m": 355.0,
+            "ebit_usd_m": 1008.23,
+            "cash_tax_usd_m": 211.728,
+            "capex_usd_m": 25.245,
+            "fcf_usd_m": 771.257,
+            "pv_fcf_usd_m": 176.752
+          },
+          {
+            "year": 2040,
+            "us_treated_patient_equivalent": 2500,
+            "us_revenue_usd_m": 950.0,
+            "ex_us_revenue_usd_m": 520.0,
+            "total_revenue_usd_m": 1470.0,
+            "post_leakage_contribution_margin": 0.79,
+            "operating_expenses_usd_m": 355.0,
+            "ebit_usd_m": 806.3,
+            "cash_tax_usd_m": 169.323,
+            "capex_usd_m": 22.05,
+            "fcf_usd_m": 614.927,
+            "pv_fcf_usd_m": 125.826
+          },
+          {
+            "year": 2041,
+            "us_treated_patient_equivalent": 2050,
+            "us_revenue_usd_m": 779.0,
+            "ex_us_revenue_usd_m": 420.0,
+            "total_revenue_usd_m": 1199.0,
+            "post_leakage_contribution_margin": 0.77,
+            "operating_expenses_usd_m": 340.0,
+            "ebit_usd_m": 583.23,
+            "cash_tax_usd_m": 122.478,
+            "capex_usd_m": 17.985,
+            "fcf_usd_m": 442.767,
+            "pv_fcf_usd_m": 80.892
+          },
+          {
+            "year": 2042,
+            "us_treated_patient_equivalent": 1550,
+            "us_revenue_usd_m": 589.0,
+            "ex_us_revenue_usd_m": 300.0,
+            "total_revenue_usd_m": 889.0,
+            "post_leakage_contribution_margin": 0.74,
+            "operating_expenses_usd_m": 320.0,
+            "ebit_usd_m": 337.86,
+            "cash_tax_usd_m": 70.951,
+            "capex_usd_m": 13.335,
+            "fcf_usd_m": 253.574,
+            "pv_fcf_usd_m": 41.363
+          },
+          {
+            "year": 2043,
+            "us_treated_patient_equivalent": 1050,
+            "us_revenue_usd_m": 399.0,
+            "ex_us_revenue_usd_m": 190.0,
+            "total_revenue_usd_m": 589.0,
+            "post_leakage_contribution_margin": 0.7,
+            "operating_expenses_usd_m": 295.0,
+            "ebit_usd_m": 117.3,
+            "cash_tax_usd_m": 24.633,
+            "capex_usd_m": 8.835,
+            "fcf_usd_m": 83.832,
+            "pv_fcf_usd_m": 12.21
+          }
+        ],
+        "peak_us_treated_patient_equivalent": 3300,
+        "peak_total_revenue_usd_m": 1965.0
+      }
+    },
+    "expected_value_per_share_usd": 6.6422,
+    "expected_upside": 0.241529,
+    "expected_irr_annualized": 0.188955,
+    "up_down_ratio_bull_execution_vs_bear": 1.3406,
+    "current_price_usd": 5.35,
+    "base_value_per_share_usd": 6.2562,
+    "bull_execution_value_per_share_usd": 12.2853,
+    "bull_ecosystem_value_per_share_usd": 16.2966,
+    "bear_value_per_share_usd": 0.1765,
+    "ecosystem_standalone_value_usd": 0.0,
+    "ecosystem_note_ko": "Mode A branch를 유지하되 별도 플랫폼/M&A 옵션은 가치 0. Bull Ecosystem의 증분은 global execution stretch에서만 발생.",
+    "tax_note_ko": "NOL의 전액 즉시 활용을 가정하지 않고 흑자 전환 뒤 cash tax를 단계적으로 21%까지 높였다.",
+    "terminal_note_ko": "미국 12-year biologic exclusivity와 U.S. patent-ceiling을 고려해 2039년 이후 매출/마진을 점진 감쇠.",
+    "mode": "Mode A — Option-led",
+    "core": 6.2562,
+    "execution": 12.2853,
+    "ecosystem": 16.2966,
+    "drag": 0.1765,
+    "expected_value": 6.6422,
+    "expected_irr": 0.188955
+  },
+  "reverse_expectations": {
+    "implied_base_path_probability_two_state": 0.85094,
+    "two_state_assumption_ko": "Current price is mixed only between severe Bear and Base success; this is a diagnostic reverse-expectation bridge, not the four-scenario probability model.",
+    "if_base_probability_75pct": {
+      "required_base_value_per_share_usd": 7.074,
+      "required_peak_us_treated_patient_equivalent": 2161,
+      "required_net_price_usd": 366300
+    },
+    "sensitivity": [
+      {
+        "base_path_probability": 0.6,
+        "required_peak_us_treated": 2501,
+        "required_net_price_usd": 442800
+      },
+      {
+        "base_path_probability": 0.65,
+        "required_peak_us_treated": 2370,
+        "required_net_price_usd": 413400
+      },
+      {
+        "base_path_probability": 0.7,
+        "required_peak_us_treated": 2258,
+        "required_net_price_usd": 388100
+      },
+      {
+        "base_path_probability": 0.75,
+        "required_peak_us_treated": 2161,
+        "required_net_price_usd": 366300
+      },
+      {
+        "base_path_probability": 0.8,
+        "required_peak_us_treated": 2076,
+        "required_net_price_usd": 347200
+      },
+      {
+        "base_path_probability": 0.85,
+        "required_peak_us_treated": 2001,
+        "required_net_price_usd": 330300
+      }
+    ]
+  },
+  "stance": {
+    "rating_ko": "조건부 관심",
+    "reason_ko": "확률가중 기대 IRR은 15% hurdle을 넘지만 U/D가 약 1.34로 Buy-zone 규칙(U/D>2)을 충족하지 못한다.",
+    "price_bands": [
+      {
+        "min_usd": null,
+        "max_usd": 4.2,
+        "stance_ko": "Buy zone / 적극 관심",
+        "logic_ko": "현 증거가 유지되면 Bull Execution 대비 Bear U/D가 2배 이상."
+      },
+      {
+        "min_usd": 4.21,
+        "max_usd": 6.2,
+        "stance_ko": "조건부 관심",
+        "logic_ko": "현재 $5.35 포함. 기대수익은 양호하지만 event downside가 여전히 크다."
+      },
+      {
+        "min_usd": 6.21,
+        "max_usd": 8.0,
+        "stance_ko": "관망 또는 축소",
+        "logic_ko": "pre-PDUFA 기준 U/D가 1 이하로 악화. 승인/상업 증거 개선이 필요."
+      },
+      {
+        "min_usd": 8.01,
+        "max_usd": null,
+        "stance_ko": "Bull evidence 필요",
+        "logic_ko": "빠른 patient conversion과 높은 net price가 실제 데이터로 확인되지 않으면 선반영 부담이 큼."
+      }
+    ],
+    "ud2_trigger_price_usd": 4.21,
+    "ud1_trigger_price_usd": 6.23,
+    "zone": "조건부 관심",
+    "horizon": "15-month valuation realization diagnostic; FDA catalyst is earlier, commercial proof requires 12-24 months."
+  },
+  "kpis": [
+    {
+      "name": "FDA outcome / label / CMC-device",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": "2026-11-22까지 승인, 상업적으로 사용 가능한 symptomatic confirmed aPAP label, 제한적 CMC/device burden",
+        "yellow": "승인되나 label/PMR/CMC/device 제약이 상업화 속도를 낮춤",
+        "red": "CRL 또는 material CMC/device delay"
+      },
+      "basis": null
+    },
+    {
+      "name": "2027 U.S. treated-patient-equivalent",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": ">200",
+        "yellow": "100-200",
+        "red": "<100"
+      },
+      "basis": "Model-based monitoring threshold; Base=150, Bull Execution=250."
+    },
+    {
+      "name": "2028 U.S. treated-patient-equivalent",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": ">600",
+        "yellow": "300-600",
+        "red": "<300"
+      },
+      "basis": "Model-based monitoring threshold; Base=450, Bull Execution=700."
+    },
+    {
+      "name": "realized annual net price",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": ">$350K+",
+        "yellow": "$280K-$350K",
+        "red": "<$280K"
+      },
+      "basis": "Scenario underwriting, not company guidance."
+    },
+    {
+      "name": "commercial G&A efficiency",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": "Revenue ramp overtakes G&A growth by 2028",
+        "yellow": "G&A rises with only moderate patient conversion",
+        "red": "G&A remains >$200M annualized while revenue stays below ~$200M"
+      },
+      "basis": null
+    },
+    {
+      "name": "fully diluted denominator",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": "<275M",
+        "yellow": "275-300M",
+        "red": ">300M before sustainable positive FCF"
+      },
+      "basis": "Dilution discipline monitoring."
+    }
+  ],
+  "catalysts": [
+    {
+      "date": "2026-11-22",
+      "event": "FDA PDUFA for MOLBREEVI",
+      "importance": "VERY_HIGH",
+      "evidence": "P1/P4",
+      "when": "2026-11-22",
+      "sensitivity": "VERY_HIGH"
+    },
+    {
+      "date": "4Q26 (company expectation)",
+      "event": "MHRA decision",
+      "importance": "HIGH",
+      "evidence": "P1/P4",
+      "when": "4Q26 (company expectation)",
+      "sensitivity": "HIGH"
+    },
+    {
+      "date": "1Q27 (company expectation)",
+      "event": "EMA decision",
+      "importance": "HIGH",
+      "evidence": "P1/P4",
+      "when": "1Q27 (company expectation)",
+      "sensitivity": "HIGH"
+    },
+    {
+      "date": "post-FDA approval",
+      "event": "RTW $75M approval-linked funding and potential Hercules draw",
+      "importance": "MEDIUM",
+      "evidence": "P1/P13",
+      "when": "post-FDA approval",
+      "sensitivity": "MEDIUM"
+    },
+    {
+      "date": "2027 quarterly results",
+      "event": "First commercial patient/price/access metrics",
+      "importance": "VERY_HIGH",
+      "evidence": "future observation",
+      "when": "2027 quarterly results",
+      "sensitivity": "VERY_HIGH"
+    }
+  ],
+  "falsification_conditions": [
+    "FDA CRL or another material CMC/device remediation that pushes U.S. launch materially beyond 2027.",
+    "Approved label materially narrows the addressable symptomatic aPAP pool versus Base underwriting.",
+    "2027 treated-patient-equivalent remains below ~100 or 2028 below ~300 without a clearly temporary access bottleneck.",
+    "Realized annual net price persistently below ~$280K.",
+    "Fully diluted shares exceed ~300M before a credible path to sustainable positive FCF.",
+    "Commercial spending continues to scale while revenue/patient conversion fails to show operating leverage."
+  ],
+  "rc_ledger": [
+    {
+      "rc": "RC-001",
+      "topic": "FDA BLA review / 3-month extension / label / CMC-device risk",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "main_sources": [
+        "P1",
+        "P2",
+        "P4"
+      ],
+      "ceiling": "FDA information requests, remaining review issues, final label and PMR/PMC are not public.",
+      "rc_id": "RC-001",
+      "h3_locator": "See SVRA_H3_MANUSCRIPT_2026-09-02.md and published chapter references."
+    },
+    {
+      "rc": "RC-002",
+      "topic": "IMPALA-2 efficacy, multiplicity, safety, durability",
+      "status": "COMPLETE",
+      "main_sources": [
+        "P6"
+      ],
+      "ceiling": null,
+      "rc_id": "RC-002",
+      "h3_locator": "See SVRA_H3_MANUSCRIPT_2026-09-02.md and published chapter references."
+    },
+    {
+      "rc": "RC-003",
+      "topic": "aPAP prevalence triangulation and 5,500-patient boundary",
+      "status": "COMPLETE",
+      "main_sources": [
+        "P3",
+        "P10",
+        "P11"
+      ],
+      "ceiling": null,
+      "rc_id": "RC-003",
+      "h3_locator": "See SVRA_H3_MANUSCRIPT_2026-09-02.md and published chapter references."
+    },
+    {
+      "rc": "RC-004",
+      "topic": "prevalence-to-persistent-treated-patient funnel",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "main_sources": [
+        "P3",
+        "P7"
+      ],
+      "ceiling": "Prelaunch stage-by-stage conversion, PA approval, dispensing and persistence are not observable yet.",
+      "rc_id": "RC-004",
+      "h3_locator": "See SVRA_H3_MANUSCRIPT_2026-09-02.md and published chapter references."
+    },
+    {
+      "rc": "RC-005",
+      "topic": "WLL and off-label inhaled GM-CSF customer-job competition",
+      "status": "COMPLETE",
+      "main_sources": [
+        "P7",
+        "P12"
+      ],
+      "ceiling": null,
+      "rc_id": "RC-005",
+      "h3_locator": "See SVRA_H3_MANUSCRIPT_2026-09-02.md and published chapter references."
+    },
+    {
+      "rc": "RC-006",
+      "topic": "$400K-$500K price hypothesis and realized net price",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "main_sources": [
+        "P3",
+        "P12"
+      ],
+      "ceiling": "Final WAC, gross-to-net, payer criteria and abandonment are unavailable before approval/launch.",
+      "rc_id": "RC-006",
+      "h3_locator": "See SVRA_H3_MANUSCRIPT_2026-09-02.md and published chapter references."
+    },
+    {
+      "rc": "RC-007",
+      "topic": "patient line-of-sight, ClearPath, accounts/HCPs, field force",
+      "status": "COMPLETE",
+      "main_sources": [
+        "P3",
+        "P4"
+      ],
+      "ceiling": null,
+      "rc_id": "RC-007",
+      "h3_locator": "See SVRA_H3_MANUSCRIPT_2026-09-02.md and published chapter references."
+    },
+    {
+      "rc": "RC-008",
+      "topic": "PANTHERx / MyMOLBREEVI access architecture",
+      "status": "COMPLETE",
+      "main_sources": [
+        "P5",
+        "P3"
+      ],
+      "ceiling": null,
+      "rc_id": "RC-008",
+      "h3_locator": "See SVRA_H3_MANUSCRIPT_2026-09-02.md and published chapter references."
+    },
+    {
+      "rc": "RC-009",
+      "topic": "PARI / GEMA / Fujifilm / Patheon supply and CMC readiness",
+      "status": "COMPLETE",
+      "main_sources": [
+        "P2"
+      ],
+      "ceiling": null,
+      "rc_id": "RC-009",
+      "h3_locator": "See SVRA_H3_MANUSCRIPT_2026-09-02.md and published chapter references."
+    },
+    {
+      "rc": "RC-010",
+      "topic": "RTW/PARI/GEMA royalty and Hercules leakage waterfall",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "main_sources": [
+        "P1",
+        "P2",
+        "P13"
+      ],
+      "ceiling": "Exact PARI/GEMA commercial economics are redacted/non-public.",
+      "rc_id": "RC-010",
+      "h3_locator": "See SVRA_H3_MANUSCRIPT_2026-09-02.md and published chapter references."
+    },
+    {
+      "rc": "RC-011",
+      "topic": "3-year + latest 8-quarter financials / burn / runway",
+      "status": "COMPLETE",
+      "main_sources": [
+        "P1",
+        "P2"
+      ],
+      "ceiling": null,
+      "rc_id": "RC-011",
+      "h3_locator": "See SVRA_H3_MANUSCRIPT_2026-09-02.md and published chapter references."
+    },
+    {
+      "rc": "RC-012",
+      "topic": "basic-to-fully-diluted ownership denominator",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "main_sources": [
+        "P1",
+        "P2"
+      ],
+      "ceiling": "PSU overlap/additivity with reserved-share table cannot be proven from disclosure wording.",
+      "rc_id": "RC-012",
+      "h3_locator": "See SVRA_H3_MANUSCRIPT_2026-09-02.md and published chapter references."
+    },
+    {
+      "rc": "RC-013",
+      "topic": "Matt Pauls management promise-to-delivery record",
+      "status": "COMPLETE",
+      "main_sources": [
+        "P2",
+        "P3"
+      ],
+      "ceiling": null,
+      "rc_id": "RC-013",
+      "h3_locator": "See SVRA_H3_MANUSCRIPT_2026-09-02.md and published chapter references."
+    },
+    {
+      "rc": "RC-014",
+      "topic": "UK/EU4+ patient, access, pricing and approval timing",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "main_sources": [
+        "P1",
+        "P3"
+      ],
+      "ceiling": "Company 5,200 is population extrapolation; country-level eligible prevalence and HTA net price are not yet observable.",
+      "rc_id": "RC-014",
+      "h3_locator": "See SVRA_H3_MANUSCRIPT_2026-09-02.md and published chapter references."
+    },
+    {
+      "rc": "RC-015",
+      "topic": "patent / statutory biologic exclusivity / device IP",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "main_sources": [
+        "P2"
+      ],
+      "ceiling": "Final U.S. issued claim breadth/enforceability remains uncertain.",
+      "rc_id": "RC-015",
+      "h3_locator": "See SVRA_H3_MANUSCRIPT_2026-09-02.md and published chapter references."
+    },
+    {
+      "rc": "RC-016",
+      "topic": "consensus / target prices / short interest / positioning",
+      "status": "COMPLETE",
+      "main_sources": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "ceiling": null,
+      "rc_id": "RC-016",
+      "h3_locator": "See SVRA_H3_MANUSCRIPT_2026-09-02.md and published chapter references."
+    },
+    {
+      "rc": "RC-017",
+      "topic": "regulatory and launch base-rate discipline",
+      "status": "COMPLETE",
+      "main_sources": [
+        "P8",
+        "P9"
+      ],
+      "ceiling": null,
+      "rc_id": "RC-017",
+      "h3_locator": "See SVRA_H3_MANUSCRIPT_2026-09-02.md and published chapter references."
+    },
+    {
+      "rc": "RC-018",
+      "topic": "reverse-implied approval/commercial expectations",
+      "status": "COMPLETE",
+      "main_sources": [
+        "P1",
+        "S4"
+      ],
+      "ceiling": null,
+      "rc_id": "RC-018",
+      "h3_locator": "See SVRA_H3_MANUSCRIPT_2026-09-02.md and published chapter references."
+    }
+  ],
+  "rc_counts": {
+    "total": 18,
+    "complete": 11,
+    "primary_source_ceiling": 7,
+    "not_material": 0,
+    "contradicted": 0,
+    "unresolved": 0
+  },
+  "as_of_registry": {
+    "PRICE_ASOF": "2026-09-01 U.S. close ($5.35)",
+    "FILING_ASOF": "2026-08-11 (2Q26 Form 10-Q, period ended 2026-06-30)",
+    "CONSENSUS_ASOF": "2026-09-01 / latest available aggregation",
+    "SHORT_INTEREST_ASOF": "2026-08-14",
+    "CLINICAL_ASOF": "2026-08-25 research cutoff",
+    "REGULATORY_ASOF": "2026-08-11 company/SEC update"
+  },
+  "source_registry": [
+    {
+      "id": "P1",
+      "tier": "PRIMARY",
+      "title": "Savara 2Q26 Form 10-Q",
+      "as_of": "2026-08-11",
+      "url": "https://www.sec.gov/Archives/edgar/data/1160308/000119312526344585/svra-20260630.htm"
+    },
+    {
+      "id": "P2",
+      "tier": "PRIMARY",
+      "title": "Savara 2025 Form 10-K",
+      "as_of": "2026-03-13",
+      "url": "https://www.sec.gov/Archives/edgar/data/1160308/000119312526105076/svra-20251231.htm"
+    },
+    {
+      "id": "P3",
+      "tier": "PRIMARY",
+      "title": "Savara Jan-2026 Corporate Presentation, SEC Exhibit 99.1",
+      "as_of": "2026-01-28",
+      "url": "https://www.sec.gov/Archives/edgar/data/1160308/000119312526008301/d24211dex991.htm"
+    },
+    {
+      "id": "P4",
+      "tier": "PRIMARY",
+      "title": "Savara 2Q26 results / business update",
+      "as_of": "2026-08-11",
+      "url": "https://investors.savarapharma.com/news/news-details/2026/Savara-Reports-Second-Quarter-2026-Financial-Results-and-Provides-Business-Update/default.aspx"
+    },
+    {
+      "id": "P5",
+      "tier": "PRIMARY",
+      "title": "PANTHERx exclusive specialty pharmacy announcement",
+      "as_of": "2026-01",
+      "url": "https://investors.savarapharma.com/news/news-details/2026/PANTHERx-Rare-Selected-by-Savara-as-the-U-S--Exclusive-Specialty-Pharmacy-for-MOLBREEVI/default.aspx"
+    },
+    {
+      "id": "P6",
+      "tier": "PRIMARY_PEER_REVIEW",
+      "title": "NEJM — IMPALA-2 molgramostim in aPAP",
+      "as_of": "2024",
+      "url": "https://www.nejm.org/doi/10.1056/NEJMoa2410542"
+    },
+    {
+      "id": "P7",
+      "tier": "PRIMARY_GUIDELINE",
+      "title": "ERS Clinical Practice Guidelines for PAP",
+      "as_of": "2024",
+      "url": "https://publications.ersnet.org/content/erj/64/5/2400725"
+    },
+    {
+      "id": "P8",
+      "tier": "PRIMARY_REGULATOR",
+      "title": "FDA FY2025 PDUFA Performance Report",
+      "as_of": "2026",
+      "url": "https://www.fda.gov/media/191112/download"
+    },
+    {
+      "id": "P9",
+      "tier": "PRIMARY_REGULATOR",
+      "title": "FDA PDUFA public meeting — Complete Response Letter summary",
+      "as_of": "2026",
+      "url": "https://www.fda.gov/media/191325/download"
+    },
+    {
+      "id": "P10",
+      "tier": "PEER_REVIEW",
+      "title": "PAP prevalence and healthcare utilization study",
+      "as_of": "2018",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6069872/"
+    },
+    {
+      "id": "P11",
+      "tier": "PEER_REVIEW",
+      "title": "Newer PAP healthcare burden study",
+      "as_of": "2025",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11829527/"
+    },
+    {
+      "id": "P12",
+      "tier": "PRIMARY_COMPANY",
+      "title": "Partner Therapeutics LEUKINE WAC disclosure",
+      "as_of": "2025-07",
+      "url": "https://www.partnertx.com/compliance/connecticut/ct_wac_disclosure_leukine_03-28/"
+    },
+    {
+      "id": "P13",
+      "tier": "PRIMARY",
+      "title": "Savara Hercules debt amendment / 8-K",
+      "as_of": "2026-01",
+      "url": "https://www.sec.gov/Archives/edgar/data/1160308/000119312526023378/d39349d8k.htm"
+    },
+    {
+      "id": "S1",
+      "tier": "SECONDARY_MARKET",
+      "title": "StockAnalysis analyst aggregation",
+      "as_of": "2026-09-01",
+      "url": "https://stockanalysis.com/stocks/svra/forecast/"
+    },
+    {
+      "id": "S2",
+      "tier": "SECONDARY_MARKET",
+      "title": "FactSet estimates aggregation via finanzen.net",
+      "as_of": "2026-09-01",
+      "url": "https://www.finanzen.net/schaetzungen/savara"
+    },
+    {
+      "id": "S3",
+      "tier": "SECONDARY_MARKET",
+      "title": "MarketBeat short interest aggregation",
+      "as_of": "2026-08-14",
+      "url": "https://www.marketbeat.com/stocks/NASDAQ/SVRA/short-interest/"
+    },
+    {
+      "id": "S4",
+      "tier": "SECONDARY_MARKET",
+      "title": "Historical price cross-check",
+      "as_of": "2026-09-01",
+      "url": "https://ca.investing.com/equities/mast-therapeutics-historical-data"
+    }
+  ],
+  "visual_lineage": [
+    {
+      "visual_id": "V1",
+      "title": "최근 8분기 비용 구조",
+      "data_path": "financials.quarterly_8q",
+      "type": "stacked_bar",
+      "purpose": "commercial-build가 R&D보다 G&A에서 가속되는 것을 확인"
+    },
+    {
+      "visual_id": "V2",
+      "title": "경제적 주식수와 희석 계단",
+      "data_path": "capital_structure",
+      "type": "share_ladder",
+      "purpose": "common-only market cap의 denominator 오류 교정"
+    },
+    {
+      "visual_id": "V3",
+      "title": "시나리오별 주당가치",
+      "data_path": "valuation.scenarios.*.value_per_share_usd",
+      "type": "bar",
+      "purpose": "current price와 severe downside/upside asymmetry 시각화"
+    },
+    {
+      "visual_id": "V4",
+      "title": "시나리오별 매출 경로",
+      "data_path": "valuation.scenarios.*.forecast[].total_revenue_usd_m",
+      "type": "line",
+      "purpose": "approval 이후 핵심 가치가 patient conversion speed에 있음을 확인"
+    },
+    {
+      "visual_id": "V5",
+      "title": "역산 기대치 민감도",
+      "data_path": "reverse_expectations.sensitivity",
+      "type": "table_heatmap",
+      "purpose": "현재 가격이 요구하는 success probability/patient/price 조합을 표시"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "scenario_key": "bear",
+      "probability": 0.3,
+      "revenue_path": [
+        {
+          "year": 2027,
+          "revenue_usd_m": 0.0
+        },
+        {
+          "year": 2028,
+          "revenue_usd_m": 20.8
+        },
+        {
+          "year": 2029,
+          "revenue_usd_m": 75.0
+        },
+        {
+          "year": 2030,
+          "revenue_usd_m": 160.0
+        },
+        {
+          "year": 2031,
+          "revenue_usd_m": 245.0
+        },
+        {
+          "year": 2032,
+          "revenue_usd_m": 317.0
+        },
+        {
+          "year": 2033,
+          "revenue_usd_m": 376.0
+        },
+        {
+          "year": 2034,
+          "revenue_usd_m": 399.0
+        },
+        {
+          "year": 2035,
+          "revenue_usd_m": 404.0
+        },
+        {
+          "year": 2036,
+          "revenue_usd_m": 391.0
+        },
+        {
+          "year": 2037,
+          "revenue_usd_m": 373.0
+        },
+        {
+          "year": 2038,
+          "revenue_usd_m": 355.0
+        },
+        {
+          "year": 2039,
+          "revenue_usd_m": 319.0
+        },
+        {
+          "year": 2040,
+          "revenue_usd_m": 265.0
+        },
+        {
+          "year": 2041,
+          "revenue_usd_m": 206.0
+        },
+        {
+          "year": 2042,
+          "revenue_usd_m": 134.0
+        },
+        {
+          "year": 2043,
+          "revenue_usd_m": 80.0
+        }
+      ],
+      "margin_path": [
+        {
+          "year": 2027,
+          "post_leakage_contribution_margin": 0.0
+        },
+        {
+          "year": 2028,
+          "post_leakage_contribution_margin": 0.67
+        },
+        {
+          "year": 2029,
+          "post_leakage_contribution_margin": 0.69
+        },
+        {
+          "year": 2030,
+          "post_leakage_contribution_margin": 0.7
+        },
+        {
+          "year": 2031,
+          "post_leakage_contribution_margin": 0.7
+        },
+        {
+          "year": 2032,
+          "post_leakage_contribution_margin": 0.7
+        },
+        {
+          "year": 2033,
+          "post_leakage_contribution_margin": 0.7
+        },
+        {
+          "year": 2034,
+          "post_leakage_contribution_margin": 0.7
+        },
+        {
+          "year": 2035,
+          "post_leakage_contribution_margin": 0.7
+        },
+        {
+          "year": 2036,
+          "post_leakage_contribution_margin": 0.7
+        },
+        {
+          "year": 2037,
+          "post_leakage_contribution_margin": 0.69
+        },
+        {
+          "year": 2038,
+          "post_leakage_contribution_margin": 0.68
+        },
+        {
+          "year": 2039,
+          "post_leakage_contribution_margin": 0.66
+        },
+        {
+          "year": 2040,
+          "post_leakage_contribution_margin": 0.64
+        },
+        {
+          "year": 2041,
+          "post_leakage_contribution_margin": 0.62
+        },
+        {
+          "year": 2042,
+          "post_leakage_contribution_margin": 0.6
+        },
+        {
+          "year": 2043,
+          "post_leakage_contribution_margin": 0.58
+        }
+      ],
+      "fcf": [
+        {
+          "year": 2027,
+          "fcf_usd_m": -85.0
+        },
+        {
+          "year": 2028,
+          "fcf_usd_m": -86.376
+        },
+        {
+          "year": 2029,
+          "fcf_usd_m": -64.375
+        },
+        {
+          "year": 2030,
+          "fcf_usd_m": -15.4
+        },
+        {
+          "year": 2031,
+          "fcf_usd_m": 32.825
+        },
+        {
+          "year": 2032,
+          "fcf_usd_m": 73.05
+        },
+        {
+          "year": 2033,
+          "fcf_usd_m": 100.74
+        },
+        {
+          "year": 2034,
+          "fcf_usd_m": 103.92
+        },
+        {
+          "year": 2035,
+          "fcf_usd_m": 98.736
+        },
+        {
+          "year": 2036,
+          "fcf_usd_m": 83.958
+        },
+        {
+          "year": 2037,
+          "fcf_usd_m": 67.377
+        },
+        {
+          "year": 2038,
+          "fcf_usd_m": 55.031
+        },
+        {
+          "year": 2039,
+          "fcf_usd_m": 35.142
+        },
+        {
+          "year": 2040,
+          "fcf_usd_m": 11.509
+        },
+        {
+          "year": 2041,
+          "fcf_usd_m": -15.37
+        },
+        {
+          "year": 2042,
+          "fcf_usd_m": -51.61
+        },
+        {
+          "year": 2043,
+          "fcf_usd_m": -69.8
+        }
+      ],
+      "diluted_shares_m": 300.0,
+      "per_share_value_usd": 0.17654983463580726
+    },
+    {
+      "name": "Base",
+      "scenario_key": "base",
+      "probability": 0.4,
+      "revenue_path": [
+        {
+          "year": 2027,
+          "revenue_usd_m": 49.5
+        },
+        {
+          "year": 2028,
+          "revenue_usd_m": 178.5
+        },
+        {
+          "year": 2029,
+          "revenue_usd_m": 377.0
+        },
+        {
+          "year": 2030,
+          "revenue_usd_m": 565.5
+        },
+        {
+          "year": 2031,
+          "revenue_usd_m": 731.0
+        },
+        {
+          "year": 2032,
+          "revenue_usd_m": 837.0
+        },
+        {
+          "year": 2033,
+          "revenue_usd_m": 910.0
+        },
+        {
+          "year": 2034,
+          "revenue_usd_m": 940.0
+        },
+        {
+          "year": 2035,
+          "revenue_usd_m": 943.5
+        },
+        {
+          "year": 2036,
+          "revenue_usd_m": 927.0
+        },
+        {
+          "year": 2037,
+          "revenue_usd_m": 900.5
+        },
+        {
+          "year": 2038,
+          "revenue_usd_m": 874.0
+        },
+        {
+          "year": 2039,
+          "revenue_usd_m": 821.0
+        },
+        {
+          "year": 2040,
+          "revenue_usd_m": 725.0
+        },
+        {
+          "year": 2041,
+          "revenue_usd_m": 602.5
+        },
+        {
+          "year": 2042,
+          "revenue_usd_m": 453.5
+        },
+        {
+          "year": 2043,
+          "revenue_usd_m": 304.5
+        }
+      ],
+      "margin_path": [
+        {
+          "year": 2027,
+          "post_leakage_contribution_margin": 0.76
+        },
+        {
+          "year": 2028,
+          "post_leakage_contribution_margin": 0.78
+        },
+        {
+          "year": 2029,
+          "post_leakage_contribution_margin": 0.79
+        },
+        {
+          "year": 2030,
+          "post_leakage_contribution_margin": 0.8
+        },
+        {
+          "year": 2031,
+          "post_leakage_contribution_margin": 0.8
+        },
+        {
+          "year": 2032,
+          "post_leakage_contribution_margin": 0.8
+        },
+        {
+          "year": 2033,
+          "post_leakage_contribution_margin": 0.8
+        },
+        {
+          "year": 2034,
+          "post_leakage_contribution_margin": 0.8
+        },
+        {
+          "year": 2035,
+          "post_leakage_contribution_margin": 0.8
+        },
+        {
+          "year": 2036,
+          "post_leakage_contribution_margin": 0.8
+        },
+        {
+          "year": 2037,
+          "post_leakage_contribution_margin": 0.8
+        },
+        {
+          "year": 2038,
+          "post_leakage_contribution_margin": 0.8
+        },
+        {
+          "year": 2039,
+          "post_leakage_contribution_margin": 0.79
+        },
+        {
+          "year": 2040,
+          "post_leakage_contribution_margin": 0.77
+        },
+        {
+          "year": 2041,
+          "post_leakage_contribution_margin": 0.75
+        },
+        {
+          "year": 2042,
+          "post_leakage_contribution_margin": 0.72
+        },
+        {
+          "year": 2043,
+          "post_leakage_contribution_margin": 0.68
+        }
+      ],
+      "fcf": [
+        {
+          "year": 2027,
+          "fcf_usd_m": -128.123
+        },
+        {
+          "year": 2028,
+          "fcf_usd_m": -33.447
+        },
+        {
+          "year": 2029,
+          "fcf_usd_m": 117.175
+        },
+        {
+          "year": 2030,
+          "fcf_usd_m": 250.298
+        },
+        {
+          "year": 2031,
+          "fcf_usd_m": 348.855
+        },
+        {
+          "year": 2032,
+          "fcf_usd_m": 395.105
+        },
+        {
+          "year": 2033,
+          "fcf_usd_m": 423.41
+        },
+        {
+          "year": 2034,
+          "fcf_usd_m": 421.98
+        },
+        {
+          "year": 2035,
+          "fcf_usd_m": 420.19
+        },
+        {
+          "year": 2036,
+          "fcf_usd_m": 406.059
+        },
+        {
+          "year": 2037,
+          "fcf_usd_m": 385.759
+        },
+        {
+          "year": 2038,
+          "fcf_usd_m": 365.458
+        },
+        {
+          "year": 2039,
+          "fcf_usd_m": 322.321
+        },
+        {
+          "year": 2040,
+          "fcf_usd_m": 252.392
+        },
+        {
+          "year": 2041,
+          "fcf_usd_m": 174.144
+        },
+        {
+          "year": 2042,
+          "fcf_usd_m": 85.248
+        },
+        {
+          "year": 2043,
+          "fcf_usd_m": 4.96
+        }
+      ],
+      "diluted_shares_m": 267.0,
+      "per_share_value_usd": 6.256236068291063
+    },
+    {
+      "name": "Bull Execution",
+      "scenario_key": "bull_execution",
+      "probability": 0.2,
+      "revenue_path": [
+        {
+          "year": 2027,
+          "revenue_usd_m": 90.0
+        },
+        {
+          "year": 2028,
+          "revenue_usd_m": 302.0
+        },
+        {
+          "year": 2029,
+          "revenue_usd_m": 626.0
+        },
+        {
+          "year": 2030,
+          "revenue_usd_m": 960.0
+        },
+        {
+          "year": 2031,
+          "revenue_usd_m": 1250.0
+        },
+        {
+          "year": 2032,
+          "revenue_usd_m": 1420.0
+        },
+        {
+          "year": 2033,
+          "revenue_usd_m": 1508.0
+        },
+        {
+          "year": 2034,
+          "revenue_usd_m": 1548.0
+        },
+        {
+          "year": 2035,
+          "revenue_usd_m": 1550.0
+        },
+        {
+          "year": 2036,
+          "revenue_usd_m": 1532.0
+        },
+        {
+          "year": 2037,
+          "revenue_usd_m": 1494.0
+        },
+        {
+          "year": 2038,
+          "revenue_usd_m": 1428.0
+        },
+        {
+          "year": 2039,
+          "revenue_usd_m": 1334.0
+        },
+        {
+          "year": 2040,
+          "revenue_usd_m": 1166.0
+        },
+        {
+          "year": 2041,
+          "revenue_usd_m": 960.0
+        },
+        {
+          "year": 2042,
+          "revenue_usd_m": 698.0
+        },
+        {
+          "year": 2043,
+          "revenue_usd_m": 474.0
+        }
+      ],
+      "margin_path": [
+        {
+          "year": 2027,
+          "post_leakage_contribution_margin": 0.78
+        },
+        {
+          "year": 2028,
+          "post_leakage_contribution_margin": 0.8
+        },
+        {
+          "year": 2029,
+          "post_leakage_contribution_margin": 0.81
+        },
+        {
+          "year": 2030,
+          "post_leakage_contribution_margin": 0.82
+        },
+        {
+          "year": 2031,
+          "post_leakage_contribution_margin": 0.82
+        },
+        {
+          "year": 2032,
+          "post_leakage_contribution_margin": 0.82
+        },
+        {
+          "year": 2033,
+          "post_leakage_contribution_margin": 0.82
+        },
+        {
+          "year": 2034,
+          "post_leakage_contribution_margin": 0.82
+        },
+        {
+          "year": 2035,
+          "post_leakage_contribution_margin": 0.82
+        },
+        {
+          "year": 2036,
+          "post_leakage_contribution_margin": 0.82
+        },
+        {
+          "year": 2037,
+          "post_leakage_contribution_margin": 0.82
+        },
+        {
+          "year": 2038,
+          "post_leakage_contribution_margin": 0.81
+        },
+        {
+          "year": 2039,
+          "post_leakage_contribution_margin": 0.8
+        },
+        {
+          "year": 2040,
+          "post_leakage_contribution_margin": 0.78
+        },
+        {
+          "year": 2041,
+          "post_leakage_contribution_margin": 0.76
+        },
+        {
+          "year": 2042,
+          "post_leakage_contribution_margin": 0.73
+        },
+        {
+          "year": 2043,
+          "post_leakage_contribution_margin": 0.7
+        }
+      ],
+      "fcf": [
+        {
+          "year": 2027,
+          "fcf_usd_m": -101.15
+        },
+        {
+          "year": 2028,
+          "fcf_usd_m": 57.07
+        },
+        {
+          "year": 2029,
+          "fcf_usd_m": 291.817
+        },
+        {
+          "year": 2030,
+          "fcf_usd_m": 514.08
+        },
+        {
+          "year": 2031,
+          "fcf_usd_m": 674.0
+        },
+        {
+          "year": 2032,
+          "fcf_usd_m": 753.108
+        },
+        {
+          "year": 2033,
+          "fcf_usd_m": 772.562
+        },
+        {
+          "year": 2034,
+          "fcf_usd_m": 789.974
+        },
+        {
+          "year": 2035,
+          "fcf_usd_m": 783.34
+        },
+        {
+          "year": 2036,
+          "fcf_usd_m": 764.05
+        },
+        {
+          "year": 2037,
+          "fcf_usd_m": 732.103
+        },
+        {
+          "year": 2038,
+          "fcf_usd_m": 671.157
+        },
+        {
+          "year": 2039,
+          "fcf_usd_m": 593.978
+        },
+        {
+          "year": 2040,
+          "fcf_usd_m": 471.899
+        },
+        {
+          "year": 2041,
+          "fcf_usd_m": 340.784
+        },
+        {
+          "year": 2042,
+          "fcf_usd_m": 182.717
+        },
+        {
+          "year": 2043,
+          "fcf_usd_m": 61.462
+        }
+      ],
+      "diluted_shares_m": 270.0,
+      "per_share_value_usd": 12.285316140118951
+    },
+    {
+      "name": "Bull Ecosystem",
+      "scenario_key": "bull_ecosystem",
+      "probability": 0.1,
+      "revenue_path": [
+        {
+          "year": 2027,
+          "revenue_usd_m": 114.0
+        },
+        {
+          "year": 2028,
+          "revenue_usd_m": 383.0
+        },
+        {
+          "year": 2029,
+          "revenue_usd_m": 788.0
+        },
+        {
+          "year": 2030,
+          "revenue_usd_m": 1232.0
+        },
+        {
+          "year": 2031,
+          "revenue_usd_m": 1620.0
+        },
+        {
+          "year": 2032,
+          "revenue_usd_m": 1815.0
+        },
+        {
+          "year": 2033,
+          "revenue_usd_m": 1904.0
+        },
+        {
+          "year": 2034,
+          "revenue_usd_m": 1954.0
+        },
+        {
+          "year": 2035,
+          "revenue_usd_m": 1965.0
+        },
+        {
+          "year": 2036,
+          "revenue_usd_m": 1946.0
+        },
+        {
+          "year": 2037,
+          "revenue_usd_m": 1897.0
+        },
+        {
+          "year": 2038,
+          "revenue_usd_m": 1800.0
+        },
+        {
+          "year": 2039,
+          "revenue_usd_m": 1683.0
+        },
+        {
+          "year": 2040,
+          "revenue_usd_m": 1470.0
+        },
+        {
+          "year": 2041,
+          "revenue_usd_m": 1199.0
+        },
+        {
+          "year": 2042,
+          "revenue_usd_m": 889.0
+        },
+        {
+          "year": 2043,
+          "revenue_usd_m": 589.0
+        }
+      ],
+      "margin_path": [
+        {
+          "year": 2027,
+          "post_leakage_contribution_margin": 0.79
+        },
+        {
+          "year": 2028,
+          "post_leakage_contribution_margin": 0.81
+        },
+        {
+          "year": 2029,
+          "post_leakage_contribution_margin": 0.82
+        },
+        {
+          "year": 2030,
+          "post_leakage_contribution_margin": 0.83
+        },
+        {
+          "year": 2031,
+          "post_leakage_contribution_margin": 0.83
+        },
+        {
+          "year": 2032,
+          "post_leakage_contribution_margin": 0.83
+        },
+        {
+          "year": 2033,
+          "post_leakage_contribution_margin": 0.83
+        },
+        {
+          "year": 2034,
+          "post_leakage_contribution_margin": 0.83
+        },
+        {
+          "year": 2035,
+          "post_leakage_contribution_margin": 0.83
+        },
+        {
+          "year": 2036,
+          "post_leakage_contribution_margin": 0.83
+        },
+        {
+          "year": 2037,
+          "post_leakage_contribution_margin": 0.83
+        },
+        {
+          "year": 2038,
+          "post_leakage_contribution_margin": 0.82
+        },
+        {
+          "year": 2039,
+          "post_leakage_contribution_margin": 0.81
+        },
+        {
+          "year": 2040,
+          "post_leakage_contribution_margin": 0.79
+        },
+        {
+          "year": 2041,
+          "post_leakage_contribution_margin": 0.77
+        },
+        {
+          "year": 2042,
+          "post_leakage_contribution_margin": 0.74
+        },
+        {
+          "year": 2043,
+          "post_leakage_contribution_margin": 0.7
+        }
+      ],
+      "fcf": [
+        {
+          "year": 2027,
+          "fcf_usd_m": -86.65
+        },
+        {
+          "year": 2028,
+          "fcf_usd_m": 114.485
+        },
+        {
+          "year": 2029,
+          "fcf_usd_m": 407.282
+        },
+        {
+          "year": 2030,
+          "fcf_usd_m": 703.824
+        },
+        {
+          "year": 2031,
+          "fcf_usd_m": 918.86
+        },
+        {
+          "year": 2032,
+          "fcf_usd_m": 1003.064
+        },
+        {
+          "year": 2033,
+          "fcf_usd_m": 1010.543
+        },
+        {
+          "year": 2034,
+          "fcf_usd_m": 1030.728
+        },
+        {
+          "year": 2035,
+          "fcf_usd_m": 1025.925
+        },
+        {
+          "year": 2036,
+          "fcf_usd_m": 1001.902
+        },
+        {
+          "year": 2037,
+          "fcf_usd_m": 958.658
+        },
+        {
+          "year": 2038,
+          "fcf_usd_m": 870.44
+        },
+        {
+          "year": 2039,
+          "fcf_usd_m": 771.257
+        },
+        {
+          "year": 2040,
+          "fcf_usd_m": 614.927
+        },
+        {
+          "year": 2041,
+          "fcf_usd_m": 442.767
+        },
+        {
+          "year": 2042,
+          "fcf_usd_m": 253.574
+        },
+        {
+          "year": 2043,
+          "fcf_usd_m": 83.832
+        }
+      ],
+      "diluted_shares_m": 272.0,
+      "per_share_value_usd": 16.296579316045566
+    }
+  ],
+  "consensus": {
+    "fy1": {
+      "year": 2027,
+      "revenue_usd_m": 80.64,
+      "ebit_usd_m": -86.66
+    },
+    "fy2": {
+      "year": 2028,
+      "revenue_usd_m": 206.37,
+      "ebit_usd_m": 21.53
+    },
+    "revision_trend": "No robust primary/consistent time-series revision history was available; current consensus snapshot only.",
+    "snapshot": {
+      "analyst_ratings_count": 8,
+      "buy_type_count": 8,
+      "avg_price_target_usd": 10.94,
+      "target_range_usd": [
+        9.0,
+        16.0
+      ],
+      "revenue_consensus_usd_m": {
+        "2027": 80.64,
+        "2028": 206.37,
+        "2029": 372.68,
+        "2030": 534.65
+      },
+      "ebit_consensus_usd_m": {
+        "2026": -160.31,
+        "2027": -86.66,
+        "2028": 21.53,
+        "2029": 163.08,
+        "2030": 290.42
+      },
+      "short_interest_asof": "2026-08-14",
+      "shares_short": 38505948,
+      "days_to_cover": 27.1,
+      "short_float_ratio_boundary_ko": "Provider denominator differences produce ~20%-36% ratios; use shares-short as the authoritative field.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  },
+  "kpi_traffic_lights": [
+    {
+      "kpi": "FDA outcome / label / CMC-device",
+      "green": "2026-11-22까지 승인, 상업적으로 사용 가능한 symptomatic confirmed aPAP label, 제한적 CMC/device burden",
+      "yellow": "승인되나 label/PMR/CMC/device 제약이 상업화 속도를 낮춤",
+      "red": "CRL 또는 material CMC/device delay"
+    },
+    {
+      "kpi": "2027 U.S. treated-patient-equivalent",
+      "green": ">200",
+      "yellow": "100-200",
+      "red": "<100",
+      "basis": "Model-based monitoring threshold; Base=150, Bull Execution=250."
+    },
+    {
+      "kpi": "2028 U.S. treated-patient-equivalent",
+      "green": ">600",
+      "yellow": "300-600",
+      "red": "<300",
+      "basis": "Model-based monitoring threshold; Base=450, Bull Execution=700."
+    },
+    {
+      "kpi": "realized annual net price",
+      "green": ">$350K+",
+      "yellow": "$280K-$350K",
+      "red": "<$280K",
+      "basis": "Scenario underwriting, not company guidance."
+    },
+    {
+      "kpi": "commercial G&A efficiency",
+      "green": "Revenue ramp overtakes G&A growth by 2028",
+      "yellow": "G&A rises with only moderate patient conversion",
+      "red": "G&A remains >$200M annualized while revenue stays below ~$200M"
+    },
+    {
+      "kpi": "fully diluted denominator",
+      "green": "<275M",
+      "yellow": "275-300M",
+      "red": ">300M before sustainable positive FCF",
+      "basis": "Dilution discipline monitoring."
+    }
+  ]
+}

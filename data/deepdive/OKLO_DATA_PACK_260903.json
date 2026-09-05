@@ -1,0 +1,1194 @@
+{
+  "meta": {
+    "ticker": "OKLO",
+    "company": "Oklo Inc.",
+    "T0": "2026-09-03",
+    "price_asof": "2026-09-02",
+    "filing_asof": "2026-08-07",
+    "consensus_asof": "2026-09-02",
+    "version": "DDOS-v1.7",
+    "currency": "USD",
+    "latest_filing_check": {
+      "checked_on": "2026-09-03",
+      "result": "PASS",
+      "latest_financial_filing": "2026-08-07 Form 10-Q for quarter ended 2026-06-30",
+      "subsequent_sec_items_observed": "Form 4 insider ownership filings including 2026-08-25; no later financial filing used in analysis"
+    }
+  },
+  "market": {
+    "current_price": 39.39,
+    "shares_out_m": 186.02,
+    "market_cap_usd_b": 7.327,
+    "cash_cash_equivalents_and_marketable_debt_usd_b": 3.006289,
+    "execution_ev_after_cash_usd_b": 4.321
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "fy": 2023,
+        "revenue": 0.0,
+        "rd": 9.763,
+        "ga": 8.873,
+        "op_loss": -18.636,
+        "net_loss": -32.173,
+        "cfo": -15.998,
+        "capex": -0.083
+      },
+      {
+        "fy": 2024,
+        "revenue": 0.0,
+        "rd": 26.711,
+        "ga": 26.09,
+        "op_loss": -52.801,
+        "net_loss": -73.616,
+        "cfo": -38.39,
+        "capex": -0.352
+      },
+      {
+        "fy": 2025,
+        "revenue": 0.0,
+        "rd": 58.852,
+        "ga": 80.442,
+        "op_loss": -139.294,
+        "net_loss": -105.663,
+        "cfo": -82.174,
+        "capex": -33.205
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "q": "24Q3",
+        "revenue": 0.0,
+        "rd": 5.049,
+        "ga": 7.232,
+        "op_loss": -12.281,
+        "net_loss": -9.96
+      },
+      {
+        "q": "24Q4",
+        "revenue": 0.0,
+        "rd": 7.282,
+        "ga": 8.096,
+        "op_loss": -15.378,
+        "net_loss": -10.289,
+        "derived": true
+      },
+      {
+        "q": "25Q1",
+        "revenue": 0.0,
+        "rd": 7.846,
+        "ga": 10.028,
+        "op_loss": -17.874,
+        "net_loss": -9.81
+      },
+      {
+        "q": "25Q2",
+        "revenue": 0.0,
+        "rd": 11.468,
+        "ga": 16.547,
+        "op_loss": -28.015,
+        "net_loss": -24.685
+      },
+      {
+        "q": "25Q3",
+        "revenue": 0.0,
+        "rd": 14.945,
+        "ga": 21.364,
+        "op_loss": -36.309,
+        "net_loss": -29.722
+      },
+      {
+        "q": "25Q4",
+        "revenue": 0.0,
+        "rd": 24.593,
+        "ga": 32.503,
+        "op_loss": -57.096,
+        "net_loss": -41.446,
+        "derived": true
+      },
+      {
+        "q": "26Q1",
+        "revenue": 0.0,
+        "rd": 27.049,
+        "ga": 24.2,
+        "op_loss": -51.249,
+        "net_loss": -33.065
+      },
+      {
+        "q": "26Q2",
+        "revenue": 1.21,
+        "rd": 39.474,
+        "ga": 34.205,
+        "op_loss": -73.19,
+        "net_loss": -48.536
+      }
+    ],
+    "latest_balance_sheet": {
+      "date": "2026-06-30",
+      "cash_and_securities_usd_m": 3006.289,
+      "pp_and_e_cip_and_equipment_deposits_usd_m": 165.117,
+      "total_liabilities_usd_m": 84.325,
+      "shares_out_m": 185.090155,
+      "long_term_debt_net_of_current_usd_m": 0.7,
+      "right_of_first_refusal_liability_usd_m": 25.0,
+      "note": "Balance-sheet debt is immaterial relative to liquidity; $25m Equinix ROFR liability is separate from debt."
+    },
+    "2026_guidance": {
+      "cash_used_operating_activities_usd_m": [
+        120,
+        150
+      ],
+      "pp_and_e_purchases_usd_m": [
+        400,
+        500
+      ]
+    },
+    "ceilings": [
+      "Aurora 상업발전 매출은 아직 없음",
+      "현재 75 MWe Aurora의 signed PPA price / all-in CAPEX / normalized O&M 미공개",
+      "2026 Q2 매출의 대부분은 6월 인수사업에서 발생"
+    ]
+  },
+  "kpis": {
+    "history": [
+      {
+        "date": "2022-01-06",
+        "metric": "original_NRC_application",
+        "value": "denied without prejudice for information insufficiency"
+      },
+      {
+        "date": "2025-08",
+        "metric": "NRC_PDC",
+        "value": "accepted for review"
+      },
+      {
+        "date": "2026-04",
+        "metric": "NRC_PDC",
+        "value": "approved"
+      },
+      {
+        "date": "2026-06-11",
+        "metric": "Aurora_INL_DOE_PDSA",
+        "value": "approved; company describes as step 2 of 5"
+      },
+      {
+        "date": "2026-08-06",
+        "metric": "Groves_criticality",
+        "value": "achieved; DOE classifies reactor as 100 W zero-power critical assembly"
+      }
+    ],
+    "current": {
+      "headline_customer_interest_gw": "~14+",
+      "binding_backlog_gw": "not disclosed / cannot be inferred",
+      "Meta_Ohio_gw": 1.2,
+      "Switch_gw": 12,
+      "INL_fuel_award_HALEU_metric_tons": 5,
+      "Centrus_LOI_delivery_start": "2029 expected"
+    },
+    "thresholds": {
+      "green": [
+        "final/bankable PPA pricing emerges",
+        "Aurora-INL remaining DOE steps completed without material delay",
+        "first concrete/nuclear-island construction milestones",
+        "definitive multi-year HALEU supply terms",
+        "project finance/customer prepay reduces corporate equity burden"
+      ],
+      "yellow": [
+        "2028 target shifts modestly while physical work advances",
+        "capital intensity rises but customer/debt funding offsets",
+        "additional LOIs without stronger contract terms"
+      ],
+      "red": [
+        "first Aurora slips beyond 2030 without compensating de-risking",
+        "current all-in cost implies >$6,000/kW with power price near/below $110/MWh",
+        "major HALEU delay beyond Ohio schedule",
+        "equity-funded fleet build drives >300m diluted shares before material power revenue"
+      ]
+    }
+  },
+  "scenarios": [
+    {
+      "name": "Downside",
+      "probability": 0.25,
+      "eventual_de_risked_capacity_gw": 0.15,
+      "mature_capex_per_kw_usd": 8000,
+      "realized_power_price_per_mwh_usd": 110,
+      "all_in_operating_cost_per_mwh_usd": 45,
+      "capacity_factor": 0.85,
+      "average_years_to_cod": 8.0,
+      "corporate_burn_before_scale_usd_b": 1.4,
+      "ecosystem_value_today_usd_b": 0.15,
+      "diluted_shares_m": 230,
+      "annual_power_revenue_at_scale_usd_b": 0.123,
+      "annual_pre_financing_project_cash_margin_usd_b": 0.073,
+      "project_npv_at_cod_usd_b": -0.49,
+      "project_npv_present_value_usd_b": -0.198,
+      "equity_value_usd_b": 1.558,
+      "per_share_value_usd": 6.78,
+      "assumption_class": "INVESTOR_SCENARIO_NOT_COMPANY_GUIDANCE"
+    },
+    {
+      "name": "Base",
+      "probability": 0.45,
+      "eventual_de_risked_capacity_gw": 4.0,
+      "mature_capex_per_kw_usd": 5000,
+      "realized_power_price_per_mwh_usd": 125,
+      "all_in_operating_cost_per_mwh_usd": 35,
+      "capacity_factor": 0.92,
+      "average_years_to_cod": 6.5,
+      "corporate_burn_before_scale_usd_b": 1.0,
+      "ecosystem_value_today_usd_b": 1.0,
+      "diluted_shares_m": 250,
+      "annual_power_revenue_at_scale_usd_b": 4.03,
+      "annual_pre_financing_project_cash_margin_usd_b": 2.901,
+      "project_npv_at_cod_usd_b": 8.372,
+      "project_npv_present_value_usd_b": 4.008,
+      "equity_value_usd_b": 7.014,
+      "per_share_value_usd": 28.06,
+      "assumption_class": "INVESTOR_SCENARIO_NOT_COMPANY_GUIDANCE"
+    },
+    {
+      "name": "Bull",
+      "probability": 0.25,
+      "eventual_de_risked_capacity_gw": 7.0,
+      "mature_capex_per_kw_usd": 4500,
+      "realized_power_price_per_mwh_usd": 130,
+      "all_in_operating_cost_per_mwh_usd": 33,
+      "capacity_factor": 0.92,
+      "average_years_to_cod": 6.0,
+      "corporate_burn_before_scale_usd_b": 0.9,
+      "ecosystem_value_today_usd_b": 1.5,
+      "diluted_shares_m": 285,
+      "annual_power_revenue_at_scale_usd_b": 7.334,
+      "annual_pre_financing_project_cash_margin_usd_b": 5.472,
+      "project_npv_at_cod_usd_b": 22.013,
+      "project_npv_present_value_usd_b": 11.152,
+      "equity_value_usd_b": 14.759,
+      "per_share_value_usd": 51.78,
+      "assumption_class": "INVESTOR_SCENARIO_NOT_COMPANY_GUIDANCE"
+    },
+    {
+      "name": "Blue-sky",
+      "probability": 0.05,
+      "eventual_de_risked_capacity_gw": 12.0,
+      "mature_capex_per_kw_usd": 4000,
+      "realized_power_price_per_mwh_usd": 140,
+      "all_in_operating_cost_per_mwh_usd": 30,
+      "capacity_factor": 0.93,
+      "average_years_to_cod": 5.5,
+      "corporate_burn_before_scale_usd_b": 0.8,
+      "ecosystem_value_today_usd_b": 2.5,
+      "diluted_shares_m": 320,
+      "annual_power_revenue_at_scale_usd_b": 13.687,
+      "annual_pre_financing_project_cash_margin_usd_b": 10.754,
+      "project_npv_at_cod_usd_b": 57.162,
+      "project_npv_present_value_usd_b": 30.648,
+      "equity_value_usd_b": 35.355,
+      "per_share_value_usd": 110.48,
+      "assumption_class": "INVESTOR_SCENARIO_NOT_COMPANY_GUIDANCE"
+    }
+  ],
+  "valuation": {
+    "mode": "A_OPTION_LED_EXPECTATION_DRIVEN_V3.3",
+    "core": {
+      "cash_and_securities_usd_b": 3.006289,
+      "treatment": "scenario-specific burn deducted before adding execution value"
+    },
+    "execution": "40-year unlevered project NPV; project discount 10%, pre-COD corporate discount 12%; capacity/capex/power price/cost/CF vary by scenario",
+    "ecosystem": "scenario-specific present value for isotope/fuel/manufacturing; avoids double count with Aurora savings",
+    "drag": "scenario-specific corporate burn and diluted shares",
+    "expected_value_per_share_usd": 32.79,
+    "expected_irr": "not meaningful as single rate; scenario PV is present-value basis",
+    "current_price": 39.39
+  },
+  "reverse_expectations": {
+    "execution_ev_usd_b": 4.321,
+    "method": "solve de-risked GW needed to cover market cap less current cash under 40-year project NPV; 92% CF, $35/MWh operating cost, 10% project discount, 6.5-year pre-COD delay at 12%",
+    "grid": [
+      {
+        "capex_per_kw_usd": 4000,
+        "power_price_per_mwh_usd": 110,
+        "operating_cost_per_mwh_usd": 35,
+        "capacity_factor": 0.92,
+        "avg_years_to_cod": 6.5,
+        "npv_per_gw_at_cod_usd_b": 1.911,
+        "present_value_per_gw_usd_b": 0.915,
+        "gw_required_to_cover_execution_ev": 4.7
+      },
+      {
+        "capex_per_kw_usd": 4000,
+        "power_price_per_mwh_usd": 125,
+        "operating_cost_per_mwh_usd": 35,
+        "capacity_factor": 0.92,
+        "avg_years_to_cod": 6.5,
+        "npv_per_gw_at_cod_usd_b": 3.093,
+        "present_value_per_gw_usd_b": 1.481,
+        "gw_required_to_cover_execution_ev": 2.9
+      },
+      {
+        "capex_per_kw_usd": 4000,
+        "power_price_per_mwh_usd": 140,
+        "operating_cost_per_mwh_usd": 35,
+        "capacity_factor": 0.92,
+        "avg_years_to_cod": 6.5,
+        "npv_per_gw_at_cod_usd_b": 4.275,
+        "present_value_per_gw_usd_b": 2.047,
+        "gw_required_to_cover_execution_ev": 2.1
+      },
+      {
+        "capex_per_kw_usd": 5000,
+        "power_price_per_mwh_usd": 110,
+        "operating_cost_per_mwh_usd": 35,
+        "capacity_factor": 0.92,
+        "avg_years_to_cod": 6.5,
+        "npv_per_gw_at_cod_usd_b": 0.911,
+        "present_value_per_gw_usd_b": 0.436,
+        "gw_required_to_cover_execution_ev": 9.9
+      },
+      {
+        "capex_per_kw_usd": 5000,
+        "power_price_per_mwh_usd": 125,
+        "operating_cost_per_mwh_usd": 35,
+        "capacity_factor": 0.92,
+        "avg_years_to_cod": 6.5,
+        "npv_per_gw_at_cod_usd_b": 2.093,
+        "present_value_per_gw_usd_b": 1.002,
+        "gw_required_to_cover_execution_ev": 4.3
+      },
+      {
+        "capex_per_kw_usd": 5000,
+        "power_price_per_mwh_usd": 140,
+        "operating_cost_per_mwh_usd": 35,
+        "capacity_factor": 0.92,
+        "avg_years_to_cod": 6.5,
+        "npv_per_gw_at_cod_usd_b": 3.275,
+        "present_value_per_gw_usd_b": 1.568,
+        "gw_required_to_cover_execution_ev": 2.8
+      },
+      {
+        "capex_per_kw_usd": 6000,
+        "power_price_per_mwh_usd": 110,
+        "operating_cost_per_mwh_usd": 35,
+        "capacity_factor": 0.92,
+        "avg_years_to_cod": 6.5,
+        "npv_per_gw_at_cod_usd_b": -0.089,
+        "present_value_per_gw_usd_b": -0.043,
+        "gw_required_to_cover_execution_ev": null
+      },
+      {
+        "capex_per_kw_usd": 6000,
+        "power_price_per_mwh_usd": 125,
+        "operating_cost_per_mwh_usd": 35,
+        "capacity_factor": 0.92,
+        "avg_years_to_cod": 6.5,
+        "npv_per_gw_at_cod_usd_b": 1.093,
+        "present_value_per_gw_usd_b": 0.523,
+        "gw_required_to_cover_execution_ev": 8.3
+      },
+      {
+        "capex_per_kw_usd": 6000,
+        "power_price_per_mwh_usd": 140,
+        "operating_cost_per_mwh_usd": 35,
+        "capacity_factor": 0.92,
+        "avg_years_to_cod": 6.5,
+        "npv_per_gw_at_cod_usd_b": 2.275,
+        "present_value_per_gw_usd_b": 1.089,
+        "gw_required_to_cover_execution_ev": 4.0
+      },
+      {
+        "capex_per_kw_usd": 7000,
+        "power_price_per_mwh_usd": 110,
+        "operating_cost_per_mwh_usd": 35,
+        "capacity_factor": 0.92,
+        "avg_years_to_cod": 6.5,
+        "npv_per_gw_at_cod_usd_b": -1.089,
+        "present_value_per_gw_usd_b": -0.521,
+        "gw_required_to_cover_execution_ev": null
+      },
+      {
+        "capex_per_kw_usd": 7000,
+        "power_price_per_mwh_usd": 125,
+        "operating_cost_per_mwh_usd": 35,
+        "capacity_factor": 0.92,
+        "avg_years_to_cod": 6.5,
+        "npv_per_gw_at_cod_usd_b": 0.093,
+        "present_value_per_gw_usd_b": 0.045,
+        "gw_required_to_cover_execution_ev": 97.0
+      },
+      {
+        "capex_per_kw_usd": 7000,
+        "power_price_per_mwh_usd": 140,
+        "operating_cost_per_mwh_usd": 35,
+        "capacity_factor": 0.92,
+        "avg_years_to_cod": 6.5,
+        "npv_per_gw_at_cod_usd_b": 1.275,
+        "present_value_per_gw_usd_b": 0.61,
+        "gw_required_to_cover_execution_ev": 7.1
+      }
+    ]
+  },
+  "consensus": {
+    "analyst_count": 25,
+    "rating": "Buy",
+    "average_price_target_usd": 79.88,
+    "target_low_usd": 14,
+    "target_high_usd": 130,
+    "fy2026_revenue_consensus_usd_m": 2.39,
+    "source": "S&P Global via StockAnalysis",
+    "revision_trend": "not reliably reconstructed from free primary/consensus history; ceiling"
+  },
+  "stance": {
+    "zone": "WATCH_HOLD_EXECUTION_PRICED",
+    "price_bands": [
+      {
+        "band": "<=25",
+        "stance": "매력적/분할매수 검토"
+      },
+      {
+        "band": "25-35",
+        "stance": "선별적 축적 가능"
+      },
+      {
+        "band": "35-50",
+        "stance": "관망/보유; 실행진척 확인 필요"
+      },
+      {
+        "band": "50-80",
+        "stance": "Bull 실행을 상당부분 선반영"
+      },
+      {
+        "band": ">80",
+        "stance": "Blue-sky 성격; 매우 높은 증거 요구"
+      }
+    ],
+    "horizon": "5-8 years",
+    "central_fair_value_usd": 32.79
+  },
+  "catalysts": [
+    {
+      "window": "2026 H2–2027",
+      "event": "Aurora-INL DOE remaining safety/authorization steps and site/construction milestones",
+      "direction": "two-sided"
+    },
+    {
+      "window": "2026 H2–2027",
+      "event": "Meta/Ohio prepayment detail, site preparation and project structure disclosure",
+      "direction": "positive if bankable terms emerge"
+    },
+    {
+      "window": "2027–2029",
+      "event": "definitive HALEU contracts and first Centrus deliveries",
+      "direction": "positive if quantity/price/timing align"
+    },
+    {
+      "window": "2028 target",
+      "event": "Aurora-INL first power / critical operating milestones",
+      "direction": "major positive or major negative if delayed"
+    },
+    {
+      "window": "~2030+",
+      "event": "Meta Ohio first phases potentially online",
+      "direction": "commercial validation"
+    }
+  ],
+  "rc_ledger": {
+    "RC_UNRESOLVED": 0,
+    "status": {
+      "RC-001": "COMPLETE",
+      "RC-002": "COMPLETE",
+      "RC-003": "PRIMARY_SOURCE_CEILING",
+      "RC-004": "COMPLETE",
+      "RC-005": "COMPLETE",
+      "RC-006": "COMPLETE",
+      "RC-007": "COMPLETE",
+      "RC-008": "COMPLETE",
+      "RC-009": "PRIMARY_SOURCE_CEILING",
+      "RC-010": "PRIMARY_SOURCE_CEILING",
+      "RC-011": "COMPLETE",
+      "RC-012": "COMPLETE",
+      "RC-013": "COMPLETE",
+      "RC-014": "COMPLETE",
+      "RC-015": "PRIMARY_SOURCE_CEILING",
+      "RC-016": "COMPLETE",
+      "RC-017": "COMPLETE",
+      "RC-018": "COMPLETE",
+      "RC-019": "COMPLETE",
+      "RC-020": "COMPLETE",
+      "RC-021": "COMPLETE"
+    },
+    "h3_locator": {
+      "RC-001": "Ch0–6/Appendix evidence map",
+      "RC-002": "Ch0–6/Appendix evidence map",
+      "RC-003": "Ch0–6/Appendix evidence map",
+      "RC-004": "Ch0–6/Appendix evidence map",
+      "RC-005": "Ch0–6/Appendix evidence map",
+      "RC-006": "Ch0–6/Appendix evidence map",
+      "RC-007": "Ch0–6/Appendix evidence map",
+      "RC-008": "Ch0–6/Appendix evidence map",
+      "RC-009": "Ch0–6/Appendix evidence map",
+      "RC-010": "Ch0–6/Appendix evidence map",
+      "RC-011": "Ch0–6/Appendix evidence map",
+      "RC-012": "Ch0–6/Appendix evidence map",
+      "RC-013": "Ch0–6/Appendix evidence map",
+      "RC-014": "Ch0–6/Appendix evidence map",
+      "RC-015": "Ch0–6/Appendix evidence map",
+      "RC-016": "Ch0–6/Appendix evidence map",
+      "RC-017": "Ch0–6/Appendix evidence map",
+      "RC-018": "Ch0–6/Appendix evidence map",
+      "RC-019": "Ch0–6/Appendix evidence map",
+      "RC-020": "Ch0–6/Appendix evidence map",
+      "RC-021": "Ch0–6/Appendix evidence map"
+    }
+  },
+  "visual_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "미국 데이터센터 전력 비중 전망",
+      "chapter": 1,
+      "authoritative_source_block": "industry.data_center_power_share_us",
+      "source_values": {
+        "2030_central_pct": 11.8,
+        "2030_low_pct": 9.5,
+        "2030_high_pct": 15.3,
+        "source": "S10",
+        "interpretation": "전력량보다 특정 지역·시점의 firm MW 확보가 고객의 핵심 병목으로 이동"
+      },
+      "source_hash_sha256": "65039da328b90195212af6b09b67863cf8c69e9aa7e968c60ffefe1d5fe9fa09",
+      "display_values": [
+        "2030 11.8% central",
+        "9.5–15.3% range"
+      ],
+      "narrative_locator": "Ch1 demand",
+      "table_locator": "industry evidence",
+      "caption_locator": "VIS-001-caption",
+      "rendered_asset_locator": "#VIS-001",
+      "status": "PARITY_LOCKED"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "고객 계약 채택 사다리",
+      "chapter": 3,
+      "authoritative_source_block": "contracts",
+      "source_values": [
+        {
+          "customer": "Meta",
+          "scale": "up to 1.2 GW",
+          "stage": "개발·전력 선지급 메커니즘",
+          "strength": 5
+        },
+        {
+          "customer": "Equinix",
+          "scale": "100–500 MW",
+          "stage": "LOI + ROFR + $25m nonrefundable upfront",
+          "strength": 4
+        },
+        {
+          "customer": "Eielson AFB",
+          "scale": "≥5 MWe + heat",
+          "stage": "Notice of Intent to Award",
+          "strength": 3
+        },
+        {
+          "customer": "Diamondback",
+          "scale": "50 MW",
+          "stage": "20-year PPA contemplated LOI",
+          "strength": 2
+        },
+        {
+          "customer": "Prometheus / data-center LOIs",
+          "scale": "100 MW disclosed / broader LOIs",
+          "stage": "LOI",
+          "strength": 2
+        },
+        {
+          "customer": "Switch",
+          "scale": "12 GW through 2044",
+          "stage": "Master Power Agreement",
+          "strength": 1
+        }
+      ],
+      "source_hash_sha256": "0d5bb52947e1014180939d43c73def7f4cb1015f1ae1848b60843debd148463e",
+      "display_values": [
+        "Meta | up to 1.2 GW | 5/5",
+        "Equinix | 100–500 MW | 4/5",
+        "Eielson AFB | ≥5 MWe + heat | 3/5",
+        "Diamondback | 50 MW | 2/5",
+        "Prometheus / data-center LOIs | 100 MW disclosed / broader LOIs | 2/5",
+        "Switch | 12 GW through 2044 | 1/5"
+      ],
+      "narrative_locator": "Ch3 customer quality",
+      "table_locator": "contract ledger",
+      "caption_locator": "VIS-002-caption",
+      "rendered_asset_locator": "#VIS-002",
+      "status": "PARITY_LOCKED"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "최근 8분기 R&D와 G&A",
+      "chapter": 4,
+      "authoritative_source_block": "financials.quarterly_8q",
+      "source_values": [
+        {
+          "q": "24Q3",
+          "rd": 5.049,
+          "ga": 7.232
+        },
+        {
+          "q": "24Q4",
+          "rd": 7.282,
+          "ga": 8.096
+        },
+        {
+          "q": "25Q1",
+          "rd": 7.846,
+          "ga": 10.028
+        },
+        {
+          "q": "25Q2",
+          "rd": 11.468,
+          "ga": 16.547
+        },
+        {
+          "q": "25Q3",
+          "rd": 14.945,
+          "ga": 21.364
+        },
+        {
+          "q": "25Q4",
+          "rd": 24.593,
+          "ga": 32.503
+        },
+        {
+          "q": "26Q1",
+          "rd": 27.049,
+          "ga": 24.2
+        },
+        {
+          "q": "26Q2",
+          "rd": 39.474,
+          "ga": 34.205
+        }
+      ],
+      "source_hash_sha256": "e4e0ce81988fb103526497601648f1bd8a3a6a8bab92484624d4b6d918fedc29",
+      "display_values": [
+        "24Q3 R&D 5.0 / G&A 7.2",
+        "24Q4 R&D 7.3 / G&A 8.1",
+        "25Q1 R&D 7.8 / G&A 10.0",
+        "25Q2 R&D 11.5 / G&A 16.5",
+        "25Q3 R&D 14.9 / G&A 21.4",
+        "25Q4 R&D 24.6 / G&A 32.5",
+        "26Q1 R&D 27.0 / G&A 24.2",
+        "26Q2 R&D 39.5 / G&A 34.2"
+      ],
+      "narrative_locator": "Ch4 cost ramp",
+      "table_locator": "8Q table",
+      "caption_locator": "VIS-003-caption",
+      "rendered_asset_locator": "#VIS-003",
+      "status": "PARITY_LOCKED"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "현금과 주식수의 동시 증가",
+      "chapter": 4,
+      "authoritative_source_block": "financials + management",
+      "source_values": {
+        "2024YE_cash_b": 0.275287,
+        "2024YE_shares_m": 137.706596,
+        "2025YE_cash_b": 1.412539,
+        "2025YE_shares_m": 160.514103,
+        "2026Q2_cash_b": 3.006289,
+        "2026Q2_shares_m": 185.090155
+      },
+      "source_hash_sha256": "2be601f3a598437db7021473619623031bed78d478086b91ea89b8bd441324eb",
+      "display_values": [
+        "2024YE $0.275b / 137.7m",
+        "2025YE $1.413b / 160.5m",
+        "2026Q2 $3.006b / 185.1m"
+      ],
+      "narrative_locator": "Ch4 funding/dilution",
+      "table_locator": "capital table",
+      "caption_locator": "VIS-004-caption",
+      "rendered_asset_locator": "#VIS-004",
+      "status": "PARITY_LOCKED"
+    },
+    {
+      "vis_id": "VIS-005",
+      "figure_title": "시나리오별 주당가치",
+      "chapter": 5,
+      "authoritative_source_block": "scenarios + valuation",
+      "source_values": {
+        "scenarios": [
+          {
+            "name": "Downside",
+            "prob": 0.25,
+            "per_share": 6.78
+          },
+          {
+            "name": "Base",
+            "prob": 0.45,
+            "per_share": 28.06
+          },
+          {
+            "name": "Bull",
+            "prob": 0.25,
+            "per_share": 51.78
+          },
+          {
+            "name": "Blue-sky",
+            "prob": 0.05,
+            "per_share": 110.48
+          }
+        ],
+        "current": 39.39,
+        "expected": 32.79
+      },
+      "source_hash_sha256": "a3957505b05ce1ecca0e35b37a6b34d24c119ca37198663ab0f218ba90de208a",
+      "display_values": [
+        "Downside $6.78",
+        "Base $28.06",
+        "Bull $51.78",
+        "Blue-sky $110.48",
+        "현재 $39.39",
+        "확률가중 $32.79"
+      ],
+      "narrative_locator": "Ch5 scenario valuation",
+      "table_locator": "scenario table",
+      "caption_locator": "VIS-005-caption",
+      "rendered_asset_locator": "#VIS-005",
+      "status": "PARITY_LOCKED"
+    },
+    {
+      "vis_id": "VIS-006",
+      "figure_title": "현재가격 역산 GW 요구량",
+      "chapter": 5,
+      "authoritative_source_block": "reverse_expectations.grid",
+      "source_values": [
+        {
+          "capex_per_kw_usd": 4000,
+          "power_price_per_mwh_usd": 110,
+          "operating_cost_per_mwh_usd": 35,
+          "capacity_factor": 0.92,
+          "avg_years_to_cod": 6.5,
+          "npv_per_gw_at_cod_usd_b": 1.911,
+          "present_value_per_gw_usd_b": 0.915,
+          "gw_required_to_cover_execution_ev": 4.7
+        },
+        {
+          "capex_per_kw_usd": 4000,
+          "power_price_per_mwh_usd": 125,
+          "operating_cost_per_mwh_usd": 35,
+          "capacity_factor": 0.92,
+          "avg_years_to_cod": 6.5,
+          "npv_per_gw_at_cod_usd_b": 3.093,
+          "present_value_per_gw_usd_b": 1.481,
+          "gw_required_to_cover_execution_ev": 2.9
+        },
+        {
+          "capex_per_kw_usd": 4000,
+          "power_price_per_mwh_usd": 140,
+          "operating_cost_per_mwh_usd": 35,
+          "capacity_factor": 0.92,
+          "avg_years_to_cod": 6.5,
+          "npv_per_gw_at_cod_usd_b": 4.275,
+          "present_value_per_gw_usd_b": 2.047,
+          "gw_required_to_cover_execution_ev": 2.1
+        },
+        {
+          "capex_per_kw_usd": 5000,
+          "power_price_per_mwh_usd": 110,
+          "operating_cost_per_mwh_usd": 35,
+          "capacity_factor": 0.92,
+          "avg_years_to_cod": 6.5,
+          "npv_per_gw_at_cod_usd_b": 0.911,
+          "present_value_per_gw_usd_b": 0.436,
+          "gw_required_to_cover_execution_ev": 9.9
+        },
+        {
+          "capex_per_kw_usd": 5000,
+          "power_price_per_mwh_usd": 125,
+          "operating_cost_per_mwh_usd": 35,
+          "capacity_factor": 0.92,
+          "avg_years_to_cod": 6.5,
+          "npv_per_gw_at_cod_usd_b": 2.093,
+          "present_value_per_gw_usd_b": 1.002,
+          "gw_required_to_cover_execution_ev": 4.3
+        },
+        {
+          "capex_per_kw_usd": 5000,
+          "power_price_per_mwh_usd": 140,
+          "operating_cost_per_mwh_usd": 35,
+          "capacity_factor": 0.92,
+          "avg_years_to_cod": 6.5,
+          "npv_per_gw_at_cod_usd_b": 3.275,
+          "present_value_per_gw_usd_b": 1.568,
+          "gw_required_to_cover_execution_ev": 2.8
+        },
+        {
+          "capex_per_kw_usd": 6000,
+          "power_price_per_mwh_usd": 110,
+          "operating_cost_per_mwh_usd": 35,
+          "capacity_factor": 0.92,
+          "avg_years_to_cod": 6.5,
+          "npv_per_gw_at_cod_usd_b": -0.089,
+          "present_value_per_gw_usd_b": -0.043,
+          "gw_required_to_cover_execution_ev": null
+        },
+        {
+          "capex_per_kw_usd": 6000,
+          "power_price_per_mwh_usd": 125,
+          "operating_cost_per_mwh_usd": 35,
+          "capacity_factor": 0.92,
+          "avg_years_to_cod": 6.5,
+          "npv_per_gw_at_cod_usd_b": 1.093,
+          "present_value_per_gw_usd_b": 0.523,
+          "gw_required_to_cover_execution_ev": 8.3
+        },
+        {
+          "capex_per_kw_usd": 6000,
+          "power_price_per_mwh_usd": 140,
+          "operating_cost_per_mwh_usd": 35,
+          "capacity_factor": 0.92,
+          "avg_years_to_cod": 6.5,
+          "npv_per_gw_at_cod_usd_b": 2.275,
+          "present_value_per_gw_usd_b": 1.089,
+          "gw_required_to_cover_execution_ev": 4.0
+        },
+        {
+          "capex_per_kw_usd": 7000,
+          "power_price_per_mwh_usd": 110,
+          "operating_cost_per_mwh_usd": 35,
+          "capacity_factor": 0.92,
+          "avg_years_to_cod": 6.5,
+          "npv_per_gw_at_cod_usd_b": -1.089,
+          "present_value_per_gw_usd_b": -0.521,
+          "gw_required_to_cover_execution_ev": null
+        },
+        {
+          "capex_per_kw_usd": 7000,
+          "power_price_per_mwh_usd": 125,
+          "operating_cost_per_mwh_usd": 35,
+          "capacity_factor": 0.92,
+          "avg_years_to_cod": 6.5,
+          "npv_per_gw_at_cod_usd_b": 0.093,
+          "present_value_per_gw_usd_b": 0.045,
+          "gw_required_to_cover_execution_ev": 97.0
+        },
+        {
+          "capex_per_kw_usd": 7000,
+          "power_price_per_mwh_usd": 140,
+          "operating_cost_per_mwh_usd": 35,
+          "capacity_factor": 0.92,
+          "avg_years_to_cod": 6.5,
+          "npv_per_gw_at_cod_usd_b": 1.275,
+          "present_value_per_gw_usd_b": 0.61,
+          "gw_required_to_cover_execution_ev": 7.1
+        }
+      ],
+      "source_hash_sha256": "daadb4af578cd4d1aeeaa41460df1b1a9e12307adb2548ff37f7556bae033bdf",
+      "display_values": [
+        "$4000/kW @ $110/MWh = 4.7GW",
+        "$4000/kW @ $125/MWh = 2.9GW",
+        "$4000/kW @ $140/MWh = 2.1GW",
+        "$5000/kW @ $110/MWh = 9.9GW",
+        "$5000/kW @ $125/MWh = 4.3GW",
+        "$5000/kW @ $140/MWh = 2.8GW",
+        "$6000/kW @ $110/MWh = NoneGW",
+        "$6000/kW @ $125/MWh = 8.3GW",
+        "$6000/kW @ $140/MWh = 4.0GW",
+        "$7000/kW @ $110/MWh = NoneGW",
+        "$7000/kW @ $125/MWh = 97.0GW",
+        "$7000/kW @ $140/MWh = 7.1GW"
+      ],
+      "narrative_locator": "Ch5 reverse expectations",
+      "table_locator": "reverse matrix",
+      "caption_locator": "VIS-006-caption",
+      "rendered_asset_locator": "#VIS-006",
+      "status": "PARITY_LOCKED"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "label": "Oklo Q2 2026 Form 10-Q (SEC, 2026-08-07)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1849056/000162828026054571/oklo-20260630.htm"
+    },
+    {
+      "id": "S02",
+      "label": "Oklo Q1 2026 Form 10-Q (SEC)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1849056/000162828026034095/oklo-20260331.htm"
+    },
+    {
+      "id": "S03",
+      "label": "Oklo 2025 Form 10-K (SEC)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1849056/000162828026018698/oklo-20251231.htm"
+    },
+    {
+      "id": "S04",
+      "label": "Oklo 2024 Form 10-K (SEC)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1849056/000162828025014490/oklo-20241231.htm"
+    },
+    {
+      "id": "S05",
+      "label": "Oklo 2026 Proxy Statement (SEC)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1849056/000184905626000023/a2025proxy.htm"
+    },
+    {
+      "id": "S06",
+      "label": "NRC — Oklo Aurora Powerhouse pre-application project page",
+      "url": "https://www.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/pre-application-activities/okla-aurora-powerhouse"
+    },
+    {
+      "id": "S07",
+      "label": "DOE — Reactor Pilot Program",
+      "url": "https://www.energy.gov/ne/us-department-energy-reactor-pilot-program"
+    },
+    {
+      "id": "S08",
+      "label": "DOE NEPA — Groves-1 Project, zero-power critical assembly",
+      "url": "https://www.energy.gov/nepa/articles/cx-271014-groves-1-project"
+    },
+    {
+      "id": "S09",
+      "label": "Idaho National Laboratory — EBR-II history and specifications",
+      "url": "https://inl.gov/historic-reactor-dome-gets-a-facelift/"
+    },
+    {
+      "id": "S10",
+      "label": "Lawrence Berkeley National Laboratory — U.S. Data Center Energy Usage Report: 2025 Update (published 2026-06)",
+      "url": "https://eta.lbl.gov/publications/united-states-data-center-energy-2025"
+    },
+    {
+      "id": "S11",
+      "label": "PJM — 2026 Long-Term Load Forecast",
+      "url": "https://www.pjm.com/planning/resource-adequacy-planning/load-forecast-dev-process"
+    },
+    {
+      "id": "S12",
+      "label": "Meta — 2026 nuclear energy projects announcement",
+      "url": "https://about.fb.com/news/2026/01/meta-nuclear-energy-projects-power-american-ai-leadership/"
+    },
+    {
+      "id": "S13",
+      "label": "Oklo — Meta 1.2 GW southern Ohio agreement",
+      "url": "https://oklo.com/newsroom/news-details/2026/Oklo-Meta-Announce-Agreement-in-Support-of-1-2-GW-Nuclear-Energy-Development-in-Southern-Ohio/default.aspx"
+    },
+    {
+      "id": "S14",
+      "label": "Switch — Oklo 12 GW Master Power Agreement",
+      "url": "https://www.switch.com/oklo-and-switch-form-landmark-strategic-relationship/"
+    },
+    {
+      "id": "S15",
+      "label": "Centrus — Oklo HALEU LOI for southern Ohio",
+      "url": "https://investors.centrusenergy.com/news-releases/news-release-details/oklo-centrus-sign-letter-intent-purchase-nuclear-fuel-aurora"
+    },
+    {
+      "id": "S16",
+      "label": "DOE — Centrus reaches 900 kg HALEU production",
+      "url": "https://www.energy.gov/ne/articles/centrus-reaches-900-kilogram-mark-haleu-production"
+    },
+    {
+      "id": "S17",
+      "label": "NRC — NuScale US460 Standard Design Approval",
+      "url": "https://www.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/applicant-projects/nuscale-us460"
+    },
+    {
+      "id": "S18",
+      "label": "NRC — TerraPower Kemmerer construction permit",
+      "url": "https://www.nrc.gov/node/2156776"
+    },
+    {
+      "id": "S19",
+      "label": "NRC — Long Mott / X-energy Xe-100 construction permit review",
+      "url": "https://www.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/applicant-projects/long-mott"
+    },
+    {
+      "id": "S20",
+      "label": "Oklo — Diamondback 50 MW non-binding LOI",
+      "url": "https://oklo.com/newsroom/news-details/2024/Oklo-Signs-LOI-to-Supply-50-Megawatts-of-Power-to-Diamondback-Energy/default.aspx"
+    },
+    {
+      "id": "S21",
+      "label": "Oklo — 750 MW data-center LOIs announcement",
+      "url": "https://oklo.com/newsroom/news-details/2024/Oklo-Secures-Partnerships-for-Up-to-750-Megawatts-of-Power-for-U.S.-Data-Centers/"
+    },
+    {
+      "id": "S22",
+      "label": "AltC/Oklo 2023 merger materials — historical illustrative 15/50 MWe unit economics (SEC)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1849056/000110465923082750/tm2321738d1_425.htm"
+    },
+    {
+      "id": "S23",
+      "label": "FT Markets — OKLO historical price, 2026-09-02 close",
+      "url": "https://markets.ft.markitdigital.com/data/equities/tearsheet/historical?s=OKLO%3ANYQ"
+    },
+    {
+      "id": "S24",
+      "label": "StockAnalysis / S&P Global — analyst consensus snapshot, updated 2026-09-02",
+      "url": "https://stockanalysis.com/stocks/oklo/statistics/"
+    },
+    {
+      "id": "S25",
+      "label": "Oklo — Q2 2026 financial results and business update",
+      "url": "https://oklo.com/investors/financials/quarterly-results/default.aspx"
+    }
+  ],
+  "industry": {
+    "data_center_power_share_us": {
+      "2030_central_pct": 11.8,
+      "2030_low_pct": 9.5,
+      "2030_high_pct": 15.3,
+      "source": "S10",
+      "interpretation": "전력량보다 특정 지역·시점의 firm MW 확보가 고객의 핵심 병목으로 이동"
+    },
+    "pjm_10y_forecast": {
+      "summer_peak_cagr_pct": 3.6,
+      "net_energy_cagr_pct": 5.3,
+      "source": "S11"
+    }
+  },
+  "contracts": [
+    {
+      "customer": "Meta",
+      "scale": "up to 1.2 GW",
+      "stage": "개발·전력 선지급 메커니즘",
+      "binding_readthrough": "가장 강한 상업 신호; 최종 PPA 가격·물량은 미공개",
+      "strength": 5,
+      "source": [
+        "S12",
+        "S13"
+      ]
+    },
+    {
+      "customer": "Equinix",
+      "scale": "100–500 MW",
+      "stage": "LOI + ROFR + $25m nonrefundable upfront",
+      "binding_readthrough": "실제 현금지원이 있으나 최종 PPA 조건 미확정",
+      "strength": 4,
+      "source": [
+        "S01"
+      ]
+    },
+    {
+      "customer": "Eielson AFB",
+      "scale": "≥5 MWe + heat",
+      "stage": "Notice of Intent to Award",
+      "binding_readthrough": "잠정 선정/협상 단계; 최종 허가·계약 필요",
+      "strength": 3,
+      "source": [
+        "S01"
+      ]
+    },
+    {
+      "customer": "Diamondback",
+      "scale": "50 MW",
+      "stage": "20-year PPA contemplated LOI",
+      "binding_readthrough": "명시적 비구속",
+      "strength": 2,
+      "source": [
+        "S20"
+      ]
+    },
+    {
+      "customer": "Prometheus / data-center LOIs",
+      "scale": "100 MW disclosed / broader LOIs",
+      "stage": "LOI",
+      "binding_readthrough": "비구속; 사이트·경제조건 미공개",
+      "strength": 2,
+      "source": [
+        "S21"
+      ]
+    },
+    {
+      "customer": "Switch",
+      "scale": "12 GW through 2044",
+      "stage": "Master Power Agreement",
+      "binding_readthrough": "명시적 비구속; headline MW ≠ backlog",
+      "strength": 1,
+      "source": [
+        "S14"
+      ]
+    }
+  ],
+  "technology": {
+    "aurora": {
+      "reactor": "liquid-metal-cooled, metal-fueled fast reactor",
+      "public_output_range_mwe": "15–75",
+      "nrc_status": "pre-application interactions",
+      "source": "S06"
+    },
+    "ebr_ii": {
+      "thermal_mw": 62.5,
+      "electric_mwe": 20,
+      "operation": "1964–1994",
+      "role": "기술 계보의 증거; 현재 Aurora 경제성의 증거는 아님",
+      "source": "S09"
+    },
+    "groves_1": {
+      "max_power_w": 100,
+      "classification": "zero-power critical assembly",
+      "role": "조직·허가·건설 실행 증거; MW급 발전성능 증거 아님",
+      "source": "S08"
+    },
+    "fuel": {
+      "inl_recovered_haleu_metric_tons": 5,
+      "centrus_expected_delivery_start": 2029,
+      "centrus_scope": "up to five Aurora powerhouses, subject to definitive agreement",
+      "source": [
+        "S01",
+        "S15",
+        "S16"
+      ]
+    }
+  },
+  "management": {
+    "promise_delivery": "일정 가이던스는 과거 2026/2027 기대에서 현재 2028 목표로 밀렸지만, DOE/NRC 승인·현장·CIP·Kiewit·Groves 등 물리적 증거는 증가",
+    "capital_allocation": "높은 주가에서 ATM을 활용해 유동성을 크게 확보했으나 희석도 컸음",
+    "h1_2026_atm_net_proceeds_usd_b": 1.852,
+    "shares_2025ye_m": 160.514103,
+    "shares_2026q2_m": 185.090155,
+    "shares_2026aug4_m": 186.01765,
+    "six_month_sbc_usd_m": 29.944,
+    "source": [
+      "S01",
+      "S05"
+    ]
+  },
+  "publishing_qa": {
+    "completed_on": "2026-09-03",
+    "editorial_gate": "PASS",
+    "numeric_gate": "PASS",
+    "visual_gate": "PASS",
+    "render_gate": "PASS",
+    "latest_filing_check": "PASS",
+    "pdf_page_count": 16,
+    "pdf_bookmarks": 8,
+    "pdf_searchable_text": true,
+    "pdf_clickable_links_total": 162,
+    "canonical_top_level_sections": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "Appendix"
+    ],
+    "visuals_total": 6,
+    "visuals_parity_pass": 6,
+    "stale_visual_assets": 0,
+    "rc_total": 21,
+    "rc_complete": 17,
+    "rc_primary_source_ceiling": 4,
+    "rc_unresolved": 0,
+    "weighted_scenario_value_recomputed_usd": 32.791,
+    "weighted_scenario_value_published_usd": 32.79,
+    "market_cap_recomputed_usd_b": 7.3273278,
+    "market_cap_published_usd_b": 7.327,
+    "execution_ev_recomputed_usd_b": 4.3210388,
+    "execution_ev_published_usd_b": 4.321,
+    "internal_build_path_leak": false,
+    "internal_checkpoint_token_leak": false
+  }
+}

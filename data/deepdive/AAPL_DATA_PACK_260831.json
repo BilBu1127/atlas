@@ -1,0 +1,1124 @@
+{
+  "meta": {
+    "ticker": "AAPL",
+    "company": "Apple Inc.",
+    "T0": "2026-08-31",
+    "price_asof": "2026-08-28",
+    "price": 319.7,
+    "filing_asof": "FY2026 Q3 Form 10-Q; quarter ended 2026-06-27; filed 2026-07-31",
+    "consensus_asof": "2026-08-31",
+    "version": "Clean DDOS Production OS v1.7",
+    "currency": "USD",
+    "units": "USD billions unless stated"
+  },
+  "financials": {
+    "annual_3y": {
+      "FY2023": {
+        "revenue": 383.285,
+        "iphone": 200.583,
+        "mac": 29.357,
+        "ipad": 28.3,
+        "wearables_home_accessories": 39.845,
+        "services": 85.2,
+        "gross_margin_pct": 44.1,
+        "products_gm_pct": 36.5,
+        "services_gm_pct": 70.8,
+        "operating_income": 114.301,
+        "net_income": 96.995,
+        "ocf": 110.543,
+        "capex": 10.959,
+        "fcf": 99.584,
+        "sbc": 10.833
+      },
+      "FY2024": {
+        "revenue": 391.035,
+        "iphone": 201.183,
+        "mac": 29.984,
+        "ipad": 26.694,
+        "wearables_home_accessories": 37.005,
+        "services": 96.169,
+        "gross_margin_pct": 46.2,
+        "products_gm_pct": 37.2,
+        "services_gm_pct": 73.9,
+        "operating_income": 123.216,
+        "net_income": 93.736,
+        "ocf": 118.254,
+        "capex": 9.447,
+        "fcf": 108.807,
+        "sbc": 11.688
+      },
+      "FY2025": {
+        "revenue": 416.161,
+        "iphone": 209.586,
+        "mac": 33.708,
+        "ipad": 28.023,
+        "wearables_home_accessories": 35.686,
+        "services": 109.158,
+        "gross_margin_pct": 46.9,
+        "products_gm_pct": 36.8,
+        "services_gm_pct": 75.4,
+        "operating_income": 133.05,
+        "net_income": 112.01,
+        "ocf": 111.482,
+        "capex": 12.715,
+        "fcf": 98.767,
+        "sbc": 12.863
+      }
+    },
+    "quarterly_8q": {
+      "FY2024_Q4": {
+        "revenue": 94.93,
+        "gross_margin_pct": 46.2,
+        "note": "quarter derived from FY2024 annual less 9M where applicable"
+      },
+      "FY2025_Q1": {
+        "revenue": 124.3,
+        "gross_margin_pct": 46.9
+      },
+      "FY2025_Q2": {
+        "revenue": 95.359,
+        "gross_margin_pct": 47.1
+      },
+      "FY2025_Q3": {
+        "revenue": 94.036,
+        "gross_margin_pct": 46.5
+      },
+      "FY2025_Q4": {
+        "revenue": 102.466,
+        "gross_margin_pct": 47.2,
+        "note": "quarter derived from FY2025 annual less 9M where applicable"
+      },
+      "FY2026_Q1": {
+        "revenue": 143.756,
+        "gross_margin_pct": 48.2
+      },
+      "FY2026_Q2": {
+        "revenue": 111.184,
+        "gross_margin_pct": 49.3
+      },
+      "FY2026_Q3": {
+        "revenue": 109.417,
+        "gross_margin_pct": 50.1,
+        "normalized_gross_margin_pct": 48.1,
+        "tariff_refund_gm_benefit_ppt": 2.0
+      }
+    },
+    "fy2026_9m": {
+      "revenue": 364.357,
+      "iphone": 196.515,
+      "mac": 27.137,
+      "services": 91.728,
+      "net_income": 101.464,
+      "ocf": 116.996,
+      "capex": 6.799,
+      "fcf": 110.197,
+      "sbc": 10.523,
+      "buybacks_cash": 62.094,
+      "dividends_cash": 11.778
+    },
+    "balance_sheet_2026q3": {
+      "cash": 39.544,
+      "current_marketable_securities": 22.855,
+      "noncurrent_marketable_securities": 84.118,
+      "cash_and_securities": 146.517,
+      "debt_approx": 84.3,
+      "net_cash_approx": 62.2,
+      "inventory": 11.092,
+      "components_inventory": 7.645,
+      "finished_goods_inventory": 3.447,
+      "manufacturing_purchase_obligations": 57.0,
+      "manufacturing_obligations_within_12m": 56.2,
+      "shares_outstanding_b": 14.608963,
+      "net_intangibles": 25.417
+    },
+    "ceilings": [
+      "Siri AI broad consumer adoption/monetization data do not yet exist as of T0.",
+      "Exact country/supplier production shares, memory contract pricing and advanced-node capacity reservations are not disclosed.",
+      "The FY2026 Q3 10-Q does not provide enough detail to fully attribute the step-up in net intangible assets."
+    ]
+  },
+  "kpis": [
+    {
+      "name": "Total revenue growth",
+      "history": [
+        {
+          "period": "FY26 Q3",
+          "value_pct": 16.0
+        }
+      ],
+      "current": 16.0,
+      "thresholds": {
+        "green": "FY27 high-single-digit or better",
+        "yellow": "mid-single-digit",
+        "red": "two consecutive quarters low-single-digit or negative"
+      }
+    },
+    {
+      "name": "iPhone revenue growth",
+      "history": [
+        {
+          "period": "FY26 Q3",
+          "value_pct": 22.0
+        }
+      ],
+      "current": 22.0,
+      "thresholds": {
+        "green": "FY27 mid/high-single-digit or better",
+        "yellow": "low-single-digit",
+        "red": "two consecutive quarters negative"
+      }
+    },
+    {
+      "name": "Mac revenue growth",
+      "history": [
+        {
+          "period": "FY26 Q3",
+          "value_pct": 29.0
+        }
+      ],
+      "current": 29.0,
+      "thresholds": {
+        "green": "FY27 double-digit with new-customer evidence",
+        "yellow": "mid-single-digit or cannibalization signs",
+        "red": "persistent underperformance vs PC market"
+      }
+    },
+    {
+      "name": "Normalized total gross margin",
+      "history": [
+        {
+          "period": "FY26 Q2",
+          "value_pct": 49.3
+        },
+        {
+          "period": "FY26 Q3",
+          "value_pct": 48.1
+        },
+        {
+          "period": "FY26 Q4 guide midpoint normalized",
+          "value_pct": 46.5
+        }
+      ],
+      "current": 48.1,
+      "thresholds": {
+        "green": "FY27 recovery to 48%+",
+        "yellow": "46-48%",
+        "red": "sustained below 46%"
+      }
+    },
+    {
+      "name": "Services growth / gross margin",
+      "history": [
+        {
+          "period": "FY26 Q3 growth",
+          "value_pct": 12.0
+        },
+        {
+          "period": "FY26 Q3 GM",
+          "value_pct": 75.6
+        }
+      ],
+      "current": 75.6,
+      "thresholds": {
+        "green": "10%+ growth and ~75% GM",
+        "yellow": "high-single growth or 73-75% GM",
+        "red": "mid-single growth and <73% GM"
+      }
+    },
+    {
+      "name": "Siri AI adoption",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": "quantitative evidence of replacement/engagement lift",
+        "yellow": "released but behavior impact unclear",
+        "red": "repeat delay or weak usage"
+      }
+    },
+    {
+      "name": "China revenue growth",
+      "history": [
+        {
+          "period": "FY26 Q3",
+          "value_pct": 22.0
+        }
+      ],
+      "current": 22.0,
+      "thresholds": {
+        "green": "sustained outperformance / share resilience",
+        "yellow": "flat/volatile",
+        "red": "structural double-digit decline"
+      }
+    },
+    {
+      "name": "FY2027 FCF",
+      "history": [
+        {
+          "period": "Base",
+          "value_b": 152.676
+        }
+      ],
+      "current": 152.676,
+      "thresholds": {
+        "green": "$155B+",
+        "yellow": "$145-155B",
+        "red": "<$145B"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.25,
+      "revenue_path": [
+        496.6,
+        516.464,
+        534.54,
+        550.576,
+        567.094
+      ],
+      "revenue_growth_pct": [
+        4.0,
+        4.0,
+        3.5,
+        3.0,
+        3.0
+      ],
+      "margin_path": [
+        27.5,
+        27.5,
+        27.6,
+        27.8,
+        28.0
+      ],
+      "margin_metric": "FCF margin %",
+      "fcf": [
+        136.565,
+        142.028,
+        147.533,
+        153.06,
+        158.786
+      ],
+      "diluted_shares": 14.175062,
+      "share_count_decline_pct_per_year": 1.0,
+      "terminal_growth_pct": 2.5,
+      "exit_p_fcf": 22.0,
+      "dcf_current_value": 167.31,
+      "market_state_pv_8_5pct": 182.01,
+      "per_share_value": 180.0,
+      "fair_value_band": [
+        175,
+        185
+      ],
+      "future_3y_value_including_dividends": 232.47,
+      "three_year_irr": -0.1008,
+      "diluted_shares_period": "FY2029"
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "revenue_path": [
+        522.8625,
+        564.6915,
+        604.2199,
+        640.473,
+        675.699
+      ],
+      "revenue_growth_pct": [
+        9.5,
+        8.0,
+        7.0,
+        6.0,
+        5.5
+      ],
+      "margin_path": [
+        29.2,
+        29.5,
+        29.7,
+        29.9,
+        30.0
+      ],
+      "margin_metric": "FCF margin %",
+      "fcf": [
+        152.676,
+        166.584,
+        179.453,
+        191.501,
+        202.71
+      ],
+      "diluted_shares": 13.961371,
+      "share_count_decline_pct_per_year": 1.5,
+      "terminal_growth_pct": 3.0,
+      "exit_p_fcf": 27.0,
+      "dcf_current_value": 224.69,
+      "market_state_pv_8_5pct": 274.44,
+      "per_share_value": 260.0,
+      "fair_value_band": [
+        250,
+        275
+      ],
+      "future_3y_value_including_dividends": 350.55,
+      "three_year_irr": 0.0312,
+      "diluted_shares_period": "FY2029"
+    },
+    {
+      "name": "Bull",
+      "probability": 0.25,
+      "revenue_path": [
+        534.8,
+        593.628,
+        647.055,
+        698.819,
+        747.736
+      ],
+      "revenue_growth_pct": [
+        12.0,
+        11.0,
+        9.0,
+        8.0,
+        7.0
+      ],
+      "margin_path": [
+        30.5,
+        30.8,
+        31.0,
+        31.2,
+        31.3
+      ],
+      "margin_metric": "FCF margin %",
+      "fcf": [
+        163.114,
+        182.837,
+        200.587,
+        218.031,
+        234.041
+      ],
+      "diluted_shares": 13.834194,
+      "share_count_decline_pct_per_year": 1.8,
+      "terminal_growth_pct": 3.5,
+      "exit_p_fcf": 32.0,
+      "dcf_current_value": 277.9,
+      "market_state_pv_8_5pct": 365.99,
+      "per_share_value": 347.5,
+      "fair_value_band": [
+        330,
+        365
+      ],
+      "future_3y_value_including_dividends": 467.48,
+      "three_year_irr": 0.135,
+      "diluted_shares_period": "FY2029"
+    }
+  ],
+  "valuation": {
+    "mode": "C — Mature Compounder",
+    "normalized_fy2026_fcf": 142.0,
+    "discount_rate_pct": 8.5,
+    "core": 224.69,
+    "execution": null,
+    "ecosystem": 0.0,
+    "drag": null,
+    "bridge_note": "Mode C integrated DCF: execution and drag are embedded in scenario operating paths; ecosystem receives no separate additive value to avoid double counting.",
+    "expected_value": 261.875,
+    "expected_value_definition": "probability-weighted center of current fair-value bands",
+    "probability_weighted_future_3y_value": 350.2625,
+    "expected_irr": 0.0309,
+    "current_price": 319.7,
+    "base_fair_value_center": 260.0,
+    "base_fair_value_band": [
+      250,
+      275
+    ],
+    "current_price_premium_to_base_center_pct": 22.96,
+    "selection_hurdle_pct_range": [
+      10,
+      15
+    ],
+    "historical_pe": {
+      "FY2021": 25.9,
+      "FY2022": 24.8,
+      "FY2023": 27.8,
+      "FY2024": 37.5,
+      "FY2025": 34.2,
+      "FY2026E": 36.3,
+      "FY2021_FY2025_mean": 30.04
+    }
+  },
+  "reverse_expectations": {
+    "normalized_fcf_2026": 142.0,
+    "net_cash": 62.2,
+    "equity_value_b": 4670.485,
+    "discount_rate_pct": 8.5,
+    "terminal_growth_pct": 3.0,
+    "horizon_years": 10,
+    "required_fcf_cagr_pct": 10.0703,
+    "implied_fcf_2036": 370.672,
+    "implied_revenue_2036_at_30pct_fcf_margin": 1235.573,
+    "implied_revenue_2036_at_32pct_fcf_margin": 1158.35,
+    "discount_rate_sensitivity": {
+      "8.0": 8.7448,
+      "8.5": 10.0703,
+      "9.0": 11.3252
+    },
+    "interpretation": "Current price requires either roughly 10% annual FCF growth for a decade under these stylized assumptions or a persistently elevated terminal valuation."
+  },
+  "consensus": {
+    "fy0": {
+      "fiscal_year": "FY2026",
+      "revenue_range_b": [
+        477,
+        479
+      ],
+      "eps_range": [
+        8.8,
+        8.9
+      ],
+      "fcf_approx_b": 141
+    },
+    "fy1": {
+      "fiscal_year": "FY2027",
+      "revenue_range_b": [
+        518,
+        525
+      ],
+      "eps_range": [
+        9.5,
+        9.7
+      ],
+      "fcf_approx_b": 153
+    },
+    "fy2": {
+      "fiscal_year": "FY2028",
+      "revenue_range_b": [
+        564,
+        567
+      ],
+      "eps_range": [
+        10.7,
+        11.0
+      ],
+      "fcf_approx_b": 167
+    },
+    "revision_trend": "mixed; FY2027 revisions were not uniformly positive in late-August snapshots",
+    "base_vs_consensus": "Base operating path is essentially Street-like; the differentiated conclusion is on expected return at the current multiple."
+  },
+  "stance": {
+    "zone": "관망 / 신규 진입 회피; 기존 보유자는 비중 축소 검토",
+    "price_bands": {
+      "active_interest": "<=230",
+      "attractive": "230-250",
+      "conditional": "250-265",
+      "wait": "265-300",
+      "avoid_new_entry": ">300"
+    },
+    "hurdle_entry_prices": {
+      "10pct_irr": 263.3,
+      "12pct_irr": 249.4,
+      "15pct_irr": 230.4
+    },
+    "horizon": "3 years",
+    "what_changes_view": "Higher normalized FY2027-28 FCF, measurable Siri AI replacement/engagement lift, sustained double-digit Mac growth and normalization of memory cost pressure."
+  },
+  "catalysts": [
+    {
+      "when": "2026-09-01",
+      "event": "John Ternus becomes CEO",
+      "sensitivity": "M"
+    },
+    {
+      "when": "2026-09-22",
+      "event": "M6 Mac mini and new Mac Studio availability",
+      "sensitivity": "M"
+    },
+    {
+      "when": "2026-10-01",
+      "event": "EU App Store new fee structure takes effect",
+      "sensitivity": "M"
+    },
+    {
+      "when": "FY2026 Q4 earnings",
+      "event": "September-quarter revenue and normalized gross margin",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2H 2026",
+      "event": "Siri AI beta / early rollout",
+      "sensitivity": "H"
+    },
+    {
+      "when": "FY2027 Q1",
+      "event": "Holiday iPhone/Mac demand and price-elasticity test",
+      "sensitivity": "H"
+    },
+    {
+      "when": "FY2027 Q2",
+      "event": "Memory cost / gross-margin normalization check",
+      "sensitivity": "H"
+    },
+    {
+      "when": "WWDC27",
+      "event": "Siri AI expansion and developer ecosystem evidence",
+      "sensitivity": "H"
+    },
+    {
+      "when": "1H 2027",
+      "event": "China AI/regulatory progress",
+      "sensitivity": "H"
+    }
+  ],
+  "mac_cycle": {
+    "stance": "Thesis Positive / Valuation Moderate",
+    "fy2025_revenue_b": 33.708,
+    "fy2025_total_revenue_share_pct": 8.1,
+    "fy2026_q3_revenue_b": 10.352,
+    "fy2026_q3_growth_pct": 29.0,
+    "macbook_neo_start_price": 599,
+    "macbook_neo_education_price": 499,
+    "m6_mac_mini_start_price": 899,
+    "m6_mac_mini_availability": "2026-09-22",
+    "economic_test": "new-to-Mac acquisition and services attach must exceed Air cannibalization/ASP dilution; upper-tier local-AI demand must absorb higher pricing."
+  },
+  "source_ledger": [
+    {
+      "id": "S1",
+      "type": "primary",
+      "title": "Apple FY2025 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+    },
+    {
+      "id": "S2",
+      "type": "primary",
+      "title": "Apple FY2026 Q1 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000006/aapl-20251227.htm"
+    },
+    {
+      "id": "S3",
+      "type": "primary",
+      "title": "Apple FY2026 Q2 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000013/aapl-20260328.htm"
+    },
+    {
+      "id": "S4",
+      "type": "primary",
+      "title": "Apple FY2026 Q3 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+    },
+    {
+      "id": "S5",
+      "type": "primary",
+      "title": "Apple Newsroom — Mac",
+      "url": "https://www.apple.com/newsroom/topics/mac/"
+    },
+    {
+      "id": "S6",
+      "type": "primary",
+      "title": "Apple introduces Siri AI",
+      "url": "https://www.apple.com/newsroom/2026/06/apple-introduces-siri-ai-a-profoundly-more-capable-and-personal-assistant/"
+    },
+    {
+      "id": "S7",
+      "type": "primary",
+      "title": "Apple introduces M6 and M5 Ultra",
+      "url": "https://www.apple.com/kr/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/"
+    },
+    {
+      "id": "S8",
+      "type": "primary",
+      "title": "Apple EU App Store changes",
+      "url": "https://www.apple.com/ca/newsroom/2026/08/apple-announces-changes-for-apps-in-the-european-union/"
+    },
+    {
+      "id": "S9",
+      "type": "primary",
+      "title": "Apple M6 / M5 Pro Mac mini",
+      "url": "https://www.apple.com/newsroom/2026/08/apple-unveils-a-more-powerful-mac-mini-featuring-the-all-new-m6-and-m5-pro/"
+    },
+    {
+      "id": "S11",
+      "type": "secondary",
+      "title": "Apple Q3 2026 earnings call transcript cross-check",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/08/07/apple-aapl-q3-2026-earnings-call-transcript/"
+    }
+  ],
+  "price_valuation_history": [
+    {
+      "date": "2023-03",
+      "price": 162.4,
+      "pe": 27.57
+    },
+    {
+      "date": "2023-06",
+      "price": 191.29,
+      "pe": 32.15
+    },
+    {
+      "date": "2023-09",
+      "price": 169.07,
+      "pe": 27.58
+    },
+    {
+      "date": "2023-12",
+      "price": 190.38,
+      "pe": 29.61
+    },
+    {
+      "date": "2024-03",
+      "price": 169.78,
+      "pe": 26.36
+    },
+    {
+      "date": "2024-06",
+      "price": 208.81,
+      "pe": 31.73
+    },
+    {
+      "date": "2024-09",
+      "price": 231.27,
+      "pe": 38.04
+    },
+    {
+      "date": "2024-12",
+      "price": 248.83,
+      "pe": 39.5
+    },
+    {
+      "date": "2025-03",
+      "price": 220.96,
+      "pe": 34.42
+    },
+    {
+      "date": "2025-06",
+      "price": 204.36,
+      "pe": 31.01
+    },
+    {
+      "date": "2025-09",
+      "price": 253.91,
+      "pe": 34.04
+    },
+    {
+      "date": "2025-12",
+      "price": 271.36,
+      "pe": 34.35
+    },
+    {
+      "date": "2026-03",
+      "price": 253.56,
+      "pe": 30.7
+    },
+    {
+      "date": "2026-06",
+      "price": 289.36,
+      "pe": 33.22
+    },
+    {
+      "date": "2026-08-28",
+      "price": 319.7,
+      "pe": 36.3
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4 / Appendix C"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4.2 / Appendix D"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3-4"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3.1, Ch3.5"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3 / Appendix F"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "CEILING",
+      "h3_locator": "Ch1.3, Ch3.4 / Appendix B"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3.6 / Appendix G"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3.7"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1.1, Ch3.2"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1.4, Ch3.5"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "Ch2 / Appendix E"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "CEILING",
+      "h3_locator": "Ch1.5, Ch3.8 / Appendix B,H"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4.7 / Appendix O"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "Ch2.3, Ch4.6"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "Ch0.5, Ch5.5"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "Ch5"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "Ch6"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1.2, Ch3.3"
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "Revenue mix and Services expansion",
+      "authoritative_source_block": "financials.annual_3y",
+      "narrative_locator": "Ch0/Ch4",
+      "table_locator": "Ch4.1",
+      "source_values": {
+        "years": [
+          "FY2023",
+          "FY2024",
+          "FY2025"
+        ],
+        "revenue": [
+          383.285,
+          391.035,
+          416.161
+        ],
+        "services": [
+          85.2,
+          96.169,
+          109.158
+        ],
+        "services_share_pct": [
+          22.228889729574597,
+          24.593450714130448,
+          26.22975242754607
+        ]
+      },
+      "display_values": {
+        "years": [
+          "FY2023",
+          "FY2024",
+          "FY2025"
+        ],
+        "revenue": [
+          383.285,
+          391.035,
+          416.161
+        ],
+        "services": [
+          85.2,
+          96.169,
+          109.158
+        ],
+        "services_share_pct": [
+          22.228889729574597,
+          24.593450714130448,
+          26.22975242754607
+        ]
+      },
+      "source_version_or_hash": "d09910501fb89c34",
+      "rendered_asset_locator": "inline-svg:VIS-001"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "Eight-quarter revenue and gross-margin trend",
+      "authoritative_source_block": "financials.quarterly_8q",
+      "narrative_locator": "Ch4.2",
+      "table_locator": "Appendix D",
+      "source_values": {
+        "quarters": [
+          "FY2024_Q4",
+          "FY2025_Q1",
+          "FY2025_Q2",
+          "FY2025_Q3",
+          "FY2025_Q4",
+          "FY2026_Q1",
+          "FY2026_Q2",
+          "FY2026_Q3"
+        ],
+        "revenue": [
+          94.93,
+          124.3,
+          95.359,
+          94.036,
+          102.466,
+          143.756,
+          111.184,
+          109.417
+        ],
+        "gross_margin_pct": [
+          46.2,
+          46.9,
+          47.1,
+          46.5,
+          47.2,
+          48.2,
+          49.3,
+          50.1
+        ],
+        "normalized_q3_2026": 48.1
+      },
+      "display_values": {
+        "quarters": [
+          "FY2024_Q4",
+          "FY2025_Q1",
+          "FY2025_Q2",
+          "FY2025_Q3",
+          "FY2025_Q4",
+          "FY2026_Q1",
+          "FY2026_Q2",
+          "FY2026_Q3"
+        ],
+        "revenue": [
+          94.93,
+          124.3,
+          95.359,
+          94.036,
+          102.466,
+          143.756,
+          111.184,
+          109.417
+        ],
+        "gross_margin_pct": [
+          46.2,
+          46.9,
+          47.1,
+          46.5,
+          47.2,
+          48.2,
+          49.3,
+          50.1
+        ],
+        "normalized_q3_2026": 48.1
+      },
+      "source_version_or_hash": "6b718919d960b5ac",
+      "rendered_asset_locator": "inline-svg:VIS-002"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "Scenario value versus current price",
+      "authoritative_source_block": "scenarios + valuation.current_price",
+      "narrative_locator": "Ch5.4-5.7",
+      "table_locator": "Ch5.4",
+      "source_values": {
+        "scenario": [
+          "Bear",
+          "Base",
+          "Bull"
+        ],
+        "current_fair_center": [
+          180.0,
+          260.0,
+          347.5
+        ],
+        "future_3y_value": [
+          232.47,
+          350.55,
+          467.48
+        ],
+        "current_price": 319.7,
+        "weighted_future_3y": 350.2625
+      },
+      "display_values": {
+        "scenario": [
+          "Bear",
+          "Base",
+          "Bull"
+        ],
+        "current_fair_center": [
+          180.0,
+          260.0,
+          347.5
+        ],
+        "future_3y_value": [
+          232.47,
+          350.55,
+          467.48
+        ],
+        "current_price": 319.7,
+        "weighted_future_3y": 350.2625
+      },
+      "source_version_or_hash": "7c13b4103dea05e9",
+      "rendered_asset_locator": "inline-svg:VIS-003"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "Reverse-expectations FCF path",
+      "authoritative_source_block": "reverse_expectations",
+      "narrative_locator": "Ch5.8",
+      "table_locator": "Appendix K",
+      "source_values": {
+        "fcf_2026": 142.0,
+        "fcf_2036": 370.672,
+        "required_fcf_cagr_pct": 10.0703,
+        "implied_revenue_2036_at_30pct_fcf_margin": 1235.573
+      },
+      "display_values": {
+        "fcf_2026": 142.0,
+        "fcf_2036": 370.672,
+        "required_fcf_cagr_pct": 10.0703,
+        "implied_revenue_2036_at_30pct_fcf_margin": 1235.573
+      },
+      "source_version_or_hash": "8ac35b07e7d5b566",
+      "rendered_asset_locator": "inline-svg:VIS-004"
+    },
+    {
+      "vis_id": "VIS-005",
+      "figure_title": "Price and valuation history",
+      "authoritative_source_block": "price_valuation_history",
+      "narrative_locator": "Ch5.6",
+      "table_locator": "Appendix N",
+      "source_values": {
+        "date": [
+          "2023-03",
+          "2023-06",
+          "2023-09",
+          "2023-12",
+          "2024-03",
+          "2024-06",
+          "2024-09",
+          "2024-12",
+          "2025-03",
+          "2025-06",
+          "2025-09",
+          "2025-12",
+          "2026-03",
+          "2026-06",
+          "2026-08-28"
+        ],
+        "price": [
+          162.4,
+          191.29,
+          169.07,
+          190.38,
+          169.78,
+          208.81,
+          231.27,
+          248.83,
+          220.96,
+          204.36,
+          253.91,
+          271.36,
+          253.56,
+          289.36,
+          319.7
+        ],
+        "pe": [
+          27.57,
+          32.15,
+          27.58,
+          29.61,
+          26.36,
+          31.73,
+          38.04,
+          39.5,
+          34.42,
+          31.01,
+          34.04,
+          34.35,
+          30.7,
+          33.22,
+          36.3
+        ]
+      },
+      "display_values": {
+        "date": [
+          "2023-03",
+          "2023-06",
+          "2023-09",
+          "2023-12",
+          "2024-03",
+          "2024-06",
+          "2024-09",
+          "2024-12",
+          "2025-03",
+          "2025-06",
+          "2025-09",
+          "2025-12",
+          "2026-03",
+          "2026-06",
+          "2026-08-28"
+        ],
+        "price": [
+          162.4,
+          191.29,
+          169.07,
+          190.38,
+          169.78,
+          208.81,
+          231.27,
+          248.83,
+          220.96,
+          204.36,
+          253.91,
+          271.36,
+          253.56,
+          289.36,
+          319.7
+        ],
+        "pe": [
+          27.57,
+          32.15,
+          27.58,
+          29.61,
+          26.36,
+          31.73,
+          38.04,
+          39.5,
+          34.42,
+          31.01,
+          34.04,
+          34.35,
+          30.7,
+          33.22,
+          36.3
+        ]
+      },
+      "source_version_or_hash": "74ba6ba11010f2ad",
+      "rendered_asset_locator": "inline-svg:VIS-005"
+    }
+  ]
+}

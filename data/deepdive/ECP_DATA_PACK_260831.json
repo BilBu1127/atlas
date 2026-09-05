@@ -1,0 +1,1133 @@
+{
+  "meta": {
+    "ticker": "ECP",
+    "company": "Electra Consumer Products (1970) Ltd.",
+    "exchange": "Tel Aviv Stock Exchange",
+    "currency": "ILS",
+    "T0": "2026-08-31T08:00:00+09:00",
+    "price_asof": "2026-08-28 close",
+    "current_price": 65.72,
+    "filing_asof": "2026-08-20 Q2/H1 2026",
+    "consensus_asof": "2026-08-31 public-source search",
+    "version": "Deep Dive OS v1.7",
+    "publishing_date_kst": "2026-08-31",
+    "official_rights_bearing_shares_m_approx": 22.976247,
+    "official_denominator_implied_market_cap_m": 1510.0,
+    "latest_filing_check": "PASS — issuer IR and indexed regulatory filings checked through 2026-08-31 KST; latest financial filing remains 2026-08-20 H1/Q2 2026."
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue": 6257,
+        "gross_profit_latest_comparable": 1702,
+        "operating_income_standardized": 111,
+        "net_income_attributable_or_standardized": -101,
+        "operating_cash_flow": 297,
+        "capex": 472,
+        "fcf_ocf_minus_capex": -175,
+        "note": "2023 standardized cross-check; latest filing classifications differ slightly."
+      },
+      {
+        "year": 2024,
+        "revenue": 7256,
+        "gross_profit_latest_comparable": 2057,
+        "operating_profit_before_other_latest_reported": 311,
+        "net_income_attributable_or_standardized": 52,
+        "operating_cash_flow": 559,
+        "capex": 222,
+        "fcf_ocf_minus_capex": 337,
+        "note": "Latest restated/comparable series used where available."
+      },
+      {
+        "year": 2025,
+        "revenue": 7477,
+        "gross_profit_latest_comparable": 2184,
+        "operating_profit_before_other_latest_reported": 352,
+        "operating_profit_after_other": 433,
+        "net_income_attributable": 100,
+        "consolidated_net_income": 116,
+        "operating_cash_flow": 531,
+        "capex": 225,
+        "fcf_ocf_minus_capex": 306,
+        "note": "FY25 original gross profit was later restated in H1 2026 comparative; latest 2,184 governs comparable trend."
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "2024 Q3",
+        "revenue": 1939,
+        "consolidated_net_profit": 30,
+        "lineage": "Q3 2025 comparative"
+      },
+      {
+        "quarter": "2024 Q4",
+        "revenue": 1874,
+        "consolidated_net_profit": 3,
+        "lineage": "FY2024 less 9M2024"
+      },
+      {
+        "quarter": "2025 Q1",
+        "revenue": 1756,
+        "consolidated_net_profit": 25,
+        "lineage": "Q1/H1 2025 comparative"
+      },
+      {
+        "quarter": "2025 Q2",
+        "revenue": 1793,
+        "consolidated_net_profit": 25,
+        "lineage": "H1 less Q1"
+      },
+      {
+        "quarter": "2025 Q3",
+        "revenue": 2025,
+        "consolidated_net_profit": 30,
+        "lineage": "Q3 filing"
+      },
+      {
+        "quarter": "2025 Q4",
+        "revenue": 1903,
+        "consolidated_net_profit": 35,
+        "lineage": "FY2025 less 9M2025"
+      },
+      {
+        "quarter": "2026 Q1",
+        "revenue": 1866,
+        "consolidated_net_profit": 34,
+        "lineage": "Q1 filing / H1 less Q2"
+      },
+      {
+        "quarter": "2026 Q2",
+        "revenue": 1823,
+        "consolidated_net_profit": 30,
+        "lineage": "Q2 filing"
+      }
+    ],
+    "h1_2026": {
+      "revenue": 3689,
+      "gross_profit": 1090,
+      "operating_profit_before_other": 178,
+      "other_income_net": 10,
+      "operating_profit_after_other": 188,
+      "net_finance_expense": 111,
+      "profit_before_tax": 77,
+      "net_profit_continuing": 64,
+      "net_profit_attributable": 53,
+      "ebitda_ex_ifrs16": 189,
+      "ebitda_including_ifrs16": 382,
+      "operating_cash_flow": -39,
+      "cash_interest_paid": 122,
+      "capex_fixed_assets": 64
+    },
+    "q2_2026": {
+      "revenue": 1823,
+      "gross_profit": 541,
+      "operating_profit_before_other": 82,
+      "operating_profit_after_other": 89,
+      "net_finance_expense": 53,
+      "net_profit": 30,
+      "net_profit_attributable": 27,
+      "eps_continuing_attributable": 1.19,
+      "ebitda_ex_ifrs16": 87,
+      "ebitda_including_ifrs16": 184
+    },
+    "segments_h1_2026": [
+      {
+        "segment": "Electrical Consumer Products / HVAC",
+        "h1_revenue": 479,
+        "yoy_pct": -4.6,
+        "segment_profit": 30,
+        "ebitda_ex16": 36,
+        "margin_ex16_pct": 7.5,
+        "q2_revenue_comment": "price pressure offsetting unit/project activity"
+      },
+      {
+        "segment": "Electrical Retail",
+        "h1_revenue": 1319,
+        "yoy_pct": 6.1,
+        "segment_profit": 58,
+        "ebitda_ex16": 62,
+        "margin_ex16_pct": 4.7,
+        "q2_margin_ex16_pct": 4.2
+      },
+      {
+        "segment": "Food Retail / Carrefour",
+        "h1_revenue": 1678,
+        "yoy_pct": 2.4,
+        "segment_profit": 86,
+        "ebitda_ex16": 76,
+        "margin_ex16_pct": 4.5,
+        "q2_same_store_pct": -7.2,
+        "h1_same_store_pct": -2.6
+      },
+      {
+        "segment": "Sports & Leisure",
+        "h1_revenue": 266,
+        "yoy_pct": 13.7,
+        "segment_profit": 25,
+        "ebitda_ex16": 25,
+        "margin_ex16_pct": 9.4,
+        "q2_revenue_yoy_pct": 31.0
+      },
+      {
+        "segment": "Investment Property",
+        "h1_revenue": 5,
+        "segment_profit": 4,
+        "ebitda_ex16": 5
+      },
+      {
+        "segment": "Adjustments / Other",
+        "h1_revenue": -58,
+        "segment_profit": 2,
+        "ebitda_ex16": -15
+      }
+    ],
+    "balance_sheet_h1_2026": {
+      "net_financial_debt_including_ifrs16": 3651,
+      "net_financial_debt_excluding_ifrs16": 1162,
+      "lease_related_debt_implied": 2489,
+      "equity_attributable": 653,
+      "nci": 446,
+      "working_capital_deficit": 1521,
+      "economic_net_debt_proportional_estimate": 973.8
+    },
+    "ceilings": [
+      "2023 standardized line items have minor presentation differences vs latest restated filings.",
+      "2024 gross-profit historical classifications differ across presentation/provider; current report uses latest comparable series.",
+      "Exact customer cohort/unit economics are not disclosed."
+    ]
+  },
+  "business": {
+    "food_economic_ownership_assumption": 0.49,
+    "stores_q2_2026": {
+      "electrical_retail": 97,
+      "food_retail": 145,
+      "sports_leisure": 108
+    },
+    "network_over_350_stores": true
+  },
+  "kpis": [
+    {
+      "name": "Food Retail same-store sales",
+      "unit": "% YoY",
+      "history": [
+        {
+          "period": "H1 2026",
+          "value": -2.6
+        },
+        {
+          "period": "Q2 2026",
+          "value": -7.2
+        }
+      ],
+      "current": -7.2,
+      "thresholds": {
+        "green": "> +3%",
+        "yellow": "-2% to +3%",
+        "red": "< -2% for two consecutive quarters"
+      },
+      "frequency": "Quarterly",
+      "source": "S2"
+    },
+    {
+      "name": "Food Retail EBITDA ex-IFRS16 margin",
+      "unit": "%",
+      "history": [
+        {
+          "period": "H1 2026",
+          "value": 4.5
+        }
+      ],
+      "current": 4.5,
+      "thresholds": {
+        "green": ">= 5.0%",
+        "yellow": "4.0%-5.0%",
+        "red": "< 4.0%"
+      },
+      "frequency": "Quarterly",
+      "source": "S2"
+    },
+    {
+      "name": "Electrical Retail EBITDA ex-IFRS16 margin",
+      "unit": "%",
+      "history": [
+        {
+          "period": "H1 2026",
+          "value": 4.7
+        },
+        {
+          "period": "Q2 2026",
+          "value": 4.2
+        }
+      ],
+      "current": 4.7,
+      "thresholds": {
+        "green": ">= 4.7% H1/LTM",
+        "yellow": "4.0%-4.7%",
+        "red": "< 4.0%"
+      },
+      "frequency": "Quarterly",
+      "source": "S2"
+    },
+    {
+      "name": "Group EBITDA ex-IFRS16 margin",
+      "unit": "%",
+      "history": [
+        {
+          "period": "H1 2026",
+          "value": 5.1
+        }
+      ],
+      "current": 5.1,
+      "thresholds": {
+        "green": ">= 5.5%",
+        "yellow": "4.8%-5.5%",
+        "red": "< 4.8%"
+      },
+      "frequency": "Quarterly",
+      "source": "S2"
+    },
+    {
+      "name": "Net financial debt ex-IFRS16",
+      "unit": "ILS m",
+      "history": [
+        {
+          "period": "FY2025",
+          "value": 929
+        },
+        {
+          "period": "H1 2026",
+          "value": 1162
+        }
+      ],
+      "current": 1162,
+      "thresholds": {
+        "green": "< 950",
+        "yellow": "950-1,150",
+        "red": "> 1,150"
+      },
+      "frequency": "Quarterly",
+      "source": "S2"
+    },
+    {
+      "name": "Quarterly net finance expense",
+      "unit": "ILS m",
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": 53
+        }
+      ],
+      "current": 53,
+      "thresholds": {
+        "green": "annualized < 190",
+        "yellow": "190-230 annualized",
+        "red": "> 230 annualized"
+      },
+      "frequency": "Quarterly",
+      "source": "S2"
+    },
+    {
+      "name": "Sports & Leisure EBITDA ex-IFRS16 margin",
+      "unit": "%",
+      "history": [
+        {
+          "period": "H1 2026",
+          "value": 9.4
+        }
+      ],
+      "current": 9.4,
+      "thresholds": {
+        "green": ">= 9%",
+        "yellow": "6%-9%",
+        "red": "< 6%"
+      },
+      "frequency": "Quarterly",
+      "source": "S2"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.3,
+      "revenue_path": [
+        7.35,
+        7.45,
+        7.6
+      ],
+      "margin_path": [
+        4.8,
+        4.6,
+        4.6
+      ],
+      "fcf": [
+        40,
+        55,
+        65
+      ],
+      "prop_ebitda": 285,
+      "exit_multiple": 6.0,
+      "economic_net_debt": 1050,
+      "real_estate_credit": 250,
+      "diluted_shares": 23.5,
+      "annual_dividend": 0.5,
+      "dcf_fcff": [
+        130,
+        150,
+        165,
+        175
+      ],
+      "wacc": 0.105,
+      "terminal_growth": 0.015,
+      "operating_ev": 1710.0,
+      "equity_value": 910.0,
+      "per_share_value": 38.723404255319146,
+      "dcf_operating_ev": 1803.9348066049356,
+      "dcf_equity_value": 1003.9348066049356,
+      "dcf_per_share_value": 42.72063006829513,
+      "scenario_irr": -0.15096207532360373
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "revenue_path": [
+        7.55,
+        8.0,
+        8.4
+      ],
+      "margin_path": [
+        5.2,
+        5.5,
+        5.7
+      ],
+      "fcf": [
+        70,
+        105,
+        140
+      ],
+      "prop_ebitda": 365,
+      "exit_multiple": 7.0,
+      "economic_net_debt": 800,
+      "real_estate_credit": 350,
+      "diluted_shares": 23.0,
+      "annual_dividend": 2.5,
+      "dcf_fcff": [
+        150,
+        175,
+        195,
+        210
+      ],
+      "wacc": 0.1,
+      "terminal_growth": 0.02,
+      "operating_ev": 2555.0,
+      "equity_value": 2105.0,
+      "per_share_value": 91.52173913043478,
+      "dcf_operating_ev": 2399.699474079639,
+      "dcf_equity_value": 1949.699474079639,
+      "dcf_per_share_value": 84.76954235128865,
+      "scenario_irr": 0.14642152479463832
+    },
+    {
+      "name": "Bull",
+      "probability": 0.2,
+      "revenue_path": [
+        7.75,
+        8.5,
+        9.2
+      ],
+      "margin_path": [
+        5.4,
+        5.9,
+        6.2
+      ],
+      "fcf": [
+        90,
+        150,
+        220
+      ],
+      "prop_ebitda": 455,
+      "exit_multiple": 7.5,
+      "economic_net_debt": 600,
+      "real_estate_credit": 450,
+      "diluted_shares": 22.7,
+      "annual_dividend": 4.0,
+      "dcf_fcff": [
+        180,
+        220,
+        250,
+        280
+      ],
+      "wacc": 0.095,
+      "terminal_growth": 0.025,
+      "operating_ev": 3412.5,
+      "equity_value": 3262.5,
+      "per_share_value": 143.72246696035242,
+      "dcf_operating_ev": 3584.894842737046,
+      "dcf_equity_value": 3434.894842737046,
+      "dcf_per_share_value": 151.31695342453946,
+      "scenario_irr": 0.3331670567579965
+    }
+  ],
+  "valuation": {
+    "mode": "Mode C — Mature/turnaround consumer platform with proportional SOTP/NAV overlay",
+    "core": 2133.8,
+    "execution": null,
+    "ecosystem": 0,
+    "drag": "IFRS16 leases, NCI, financing cost, cash-conversion uncertainty",
+    "expected_value": 86.12,
+    "expected_dcf_crosscheck": 85.46,
+    "expected_irr": 0.121577,
+    "current_price": 65.72,
+    "base_fair_value": 91.52,
+    "horizon_years": 3,
+    "weighted_annual_dividend_assumption": 2.2,
+    "upside_downside_ratio_bull_bear": 2.89,
+    "default_hurdle_irr": 0.125,
+    "h1_annualized_proportional_ebitda": 300.5,
+    "economic_net_debt_current": 973.8,
+    "real_estate_base_credit": 350,
+    "price_band_irrs": {
+      "50": 0.228584,
+      "52": 0.212627,
+      "55": 0.190165,
+      "60": 0.156142,
+      "65.72": 0.121577,
+      "70": 0.098236,
+      "75": 0.073267,
+      "80": 0.050425,
+      "90": 0.009983
+    }
+  },
+  "reverse_expectations": {
+    "current_market_cap_official_denominator_m": 1510.0,
+    "economic_net_debt_m": 973.8,
+    "real_estate_credit_base_m": 350,
+    "implied_operating_ev_m": 2133.8,
+    "implied_proportional_ebitda_at_7x_m": 304.8,
+    "implied_proportional_ebitda_at_6_5x_m": 328.3,
+    "current_h1_annualized_proportional_ebitda_m": 300.5,
+    "interpretation": "Current price broadly discounts today's proportional ex-IFRS16 run-rate with limited advance credit for Food-margin expansion or deleveraging."
+  },
+  "consensus": {
+    "fy1": {},
+    "fy2": {},
+    "fy3": {},
+    "revision_trend": "PRIMARY_SOURCE_CEILING — no decision-grade public FY1-FY3 consensus/target revision history located.",
+    "analyst_price_target": null,
+    "short_interest": null
+  },
+  "stance": {
+    "zone": "WATCH / 조건부 관심",
+    "rationale": "Expected 3Y IRR ~12.2% is approximately at/slightly below the 12.5% default hurdle despite favorable bull/bear convexity. Wait for either lower entry price or stronger debt/Carrefour proof.",
+    "price_bands": {
+      "<52": "Strongly attractive / deep margin of safety",
+      "52-60": "Accumulate zone if thesis intact",
+      "60-75": "Watch / conditional interest (current price here)",
+      "75-95": "Fair-to-hold; requires proof to justify",
+      ">105": "Prices strong execution; trim/avoid unless KPIs materially upgrade"
+    },
+    "trigger_price": "<= ILS 60 for expected IRR >15%; <= ILS 55 for ~19% expected IRR",
+    "horizon": "3 years",
+    "time_value_note": "Target value needs multi-year operating and debt conversion; headline upside without time value overstates attractiveness."
+  },
+  "catalysts": [
+    {
+      "when": "2026-09-07",
+      "event": "Additional ILS 45m dividend ex/record date",
+      "sensitivity": "Neutral to mildly negative for deleveraging; confirms shareholder return."
+    },
+    {
+      "when": "2026-10-04",
+      "event": "ILS 45m dividend payment",
+      "sensitivity": "Cash outflow; monitor debt after distribution."
+    },
+    {
+      "when": "2026-10-31",
+      "event": "Midea RAC 2027-2029 option commercial terms deadline",
+      "sensitivity": "Important HVAC supply economics / continuity checkpoint."
+    },
+    {
+      "when": "2026-11 (estimated)",
+      "event": "Q3 2026 results",
+      "sensitivity": "First major proof on Carrefour SSS normalization and debt/interest trajectory after H1."
+    },
+    {
+      "when": "2026-12-31",
+      "event": "Current Midea RAC agreement initial term ends unless option renewed",
+      "sensitivity": "Supply continuity and pricing; a renewal on acceptable terms supports base case."
+    },
+    {
+      "when": "2027-03 (estimated)",
+      "event": "FY2026 results",
+      "sensitivity": "Critical annual cash-conversion and net-debt proof; legacy 2026 target gap becomes final."
+    },
+    {
+      "when": "2027-Q2",
+      "event": "Bank of Israel staff forecast average policy rate around 3.0%",
+      "sensitivity": "Lower rates could reduce financing drag; macro forecast, not a guaranteed catalyst."
+    },
+    {
+      "when": "2027-05 / 2027-08 (estimated)",
+      "event": "Q1/H1 2027 results",
+      "sensitivity": "Tests whether Food margin >=5% and ex16 net debt moves below ILS 0.95-1.0bn."
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "h1_promise": "legal/JV/NCI/denominator",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2, Ch.5, Appendix A"
+    },
+    {
+      "rc_id": "RC-002",
+      "h1_promise": "4 industries B1-B5",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1"
+    },
+    {
+      "rc_id": "RC-003",
+      "h1_promise": "macro/demand leading indicators",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1, Ch.6"
+    },
+    {
+      "rc_id": "RC-004",
+      "h1_promise": "Carrefour store economics",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3, Ch.4"
+    },
+    {
+      "rc_id": "RC-005",
+      "h1_promise": "Carrefour ownership/capital raise/listing",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.2, Ch.5; listing economics/timing ceiling in Appendix C"
+    },
+    {
+      "rc_id": "RC-006",
+      "h1_promise": "Electrical Retail economics",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3, Ch.4"
+    },
+    {
+      "rc_id": "RC-007",
+      "h1_promise": "Samsung direct import",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3"
+    },
+    {
+      "rc_id": "RC-008",
+      "h1_promise": "HVAC/VRF/B2B/service",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3, Ch.4"
+    },
+    {
+      "rc_id": "RC-009",
+      "h1_promise": "data-center HVAC optionality",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.3, Ch.5; zero core value"
+    },
+    {
+      "rc_id": "RC-010",
+      "h1_promise": "Sports store economics",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3, Ch.4"
+    },
+    {
+      "rc_id": "RC-011",
+      "h1_promise": "competition by customer job",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1, Ch.3"
+    },
+    {
+      "rc_id": "RC-012",
+      "h1_promise": "management promise-delivery",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2"
+    },
+    {
+      "rc_id": "RC-013",
+      "h1_promise": "3Y + latest 8Q",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4, Appendix B"
+    },
+    {
+      "rc_id": "RC-014",
+      "h1_promise": "accounting quality",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4, Ch.5"
+    },
+    {
+      "rc_id": "RC-015",
+      "h1_promise": "WC/capex/OCF/FCF",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4"
+    },
+    {
+      "rc_id": "RC-016",
+      "h1_promise": "debt/lease/maturity/credit",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4, Ch.5"
+    },
+    {
+      "rc_id": "RC-017",
+      "h1_promise": "real estate monetization",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.5, Ch.6; timing/net proceeds ceiling"
+    },
+    {
+      "rc_id": "RC-018",
+      "h1_promise": "consensus/positioning/ownership",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.0, Ch.5, Appendix C"
+    },
+    {
+      "rc_id": "RC-019",
+      "h1_promise": "base-rate/peer stack",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5"
+    },
+    {
+      "rc_id": "RC-020",
+      "h1_promise": "SOTP/FCF/reverse/lease/NCI",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5, Appendix D"
+    },
+    {
+      "rc_id": "RC-021",
+      "h1_promise": "variant/mispricing",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.0, Ch.6"
+    },
+    {
+      "rc_id": "RC-022",
+      "h1_promise": "KPI/catalyst/falsification",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.6"
+    },
+    {
+      "rc_id": "RC-023",
+      "h1_promise": "latest filing check",
+      "status": "COMPLETE",
+      "h3_locator": "Appendix F"
+    }
+  ],
+  "source_registry": {
+    "S1": {
+      "title": "ECP Investor Relations — latest reports/notices",
+      "url": "https://www.ecp.co.il/pages/investor-relations",
+      "tier": "Primary"
+    },
+    "S2": {
+      "title": "ECP Q2/H1 2026 interim filing — digital navigation of official Hebrew filing",
+      "url": "https://financialfilings.com/filings/electra-co-pr/interim-quarterly-report/2026/56946503/",
+      "tier": "Primary-equivalent navigation"
+    },
+    "S3": {
+      "title": "ECP FY2025 annual report — official TASE PDF",
+      "url": "https://mayafiles.tase.co.il/rpdf/1730001-1731000/P1730583-00.pdf",
+      "tier": "Primary"
+    },
+    "S4": {
+      "title": "ECP Q1 2026 interim filing",
+      "url": "https://financialfilings.com/filings/electra-co-pr/interim-quarterly-report/2026/47149484/",
+      "tier": "Primary-equivalent navigation"
+    },
+    "S5": {
+      "title": "Bank of Israel Research Department Staff Forecast, July 2026",
+      "url": "https://www.boi.org.il/en/communication-and-publications/press-releases/research-department-staff-forecast-july-2026/",
+      "tier": "Primary macro"
+    },
+    "S6": {
+      "title": "Euromonitor — Air Conditioners in Israel, 2025 competitive landscape",
+      "url": "https://www.euromonitor.com/air-conditioners-in-israel/report",
+      "tier": "Industry secondary"
+    },
+    "S7": {
+      "title": "Dun’s 100 — Electra Consumer Products profile",
+      "url": "https://www.duns100.co.il/%D7%90%D7%9C%D7%A7%D7%98%D7%A8%D7%94_%D7%9E%D7%95%D7%A6%D7%A8%D7%99_%D7%A6%D7%A8%D7%99%D7%9B%D7%94_1970_%D7%91%D7%A2%D7%9E",
+      "tier": "Industry secondary"
+    },
+    "S8": {
+      "title": "Dun’s 100 — Food Retail 2025",
+      "url": "https://www.duns100.co.il/en/rating/Food_Industry/Food_Retail/2025",
+      "tier": "Industry secondary"
+    },
+    "S9": {
+      "title": "StockAnalysis — ECP market data as of 2026-08-28",
+      "url": "https://stockanalysis.com/quote/tlv/ECP/",
+      "tier": "Market-data triangulation"
+    },
+    "S10": {
+      "title": "ECP Management",
+      "url": "https://www.ecp.co.il/pages/management",
+      "tier": "Primary"
+    },
+    "S11": {
+      "title": "ECP Consumer Products/HVAC activity",
+      "url": "https://www.ecp.co.il/pages/consumer-products",
+      "tier": "Primary"
+    },
+    "S12": {
+      "title": "ECP Electrical Retail activity",
+      "url": "https://www.ecp.co.il/pages/electrical-retail",
+      "tier": "Primary"
+    },
+    "S13": {
+      "title": "ECP Sports & Outdoor activity",
+      "url": "https://www.ecp.co.il/pages/sports-outdoor",
+      "tier": "Primary"
+    },
+    "S14": {
+      "title": "ECP Credit Platform / Carrefour Club",
+      "url": "https://www.ecp.co.il/pages/credit-platform",
+      "tier": "Primary"
+    },
+    "S15": {
+      "title": "ECP group overview / footprint",
+      "url": "https://www.ecp.co.il/pages/about",
+      "tier": "Primary"
+    },
+    "S16": {
+      "title": "Calcalist — Samsung direct sourcing context",
+      "url": "https://www.calcalist.co.il/shopping/article/hydlu7ppr",
+      "tier": "Secondary"
+    }
+  },
+  "visual_data_source_registry": [
+    {
+      "VIS_ID": "VIS-001",
+      "FIGURE_TITLE": "3개년 매출·FCF 회복",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.annual_3y",
+      "SOURCE_VALUES": [
+        [
+          2023,
+          6257,
+          -175
+        ],
+        [
+          2024,
+          7256,
+          337
+        ],
+        [
+          2025,
+          7477,
+          306
+        ]
+      ],
+      "NARRATIVE_LOCATOR": "Ch.4",
+      "TABLE_LOCATOR": "Ch.4 annual table",
+      "SOURCE_VERSION_OR_HASH": "65b31120f0f0",
+      "DISPLAY_VALUES": [
+        [
+          2023,
+          6257,
+          -175
+        ],
+        [
+          2024,
+          7256,
+          337
+        ],
+        [
+          2025,
+          7477,
+          306
+        ]
+      ],
+      "CAPTION_LOCATOR": "Ch.4",
+      "RENDERED_ASSET_LOCATOR": "inline SVG in final HTML/PDF",
+      "status": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-002",
+      "FIGURE_TITLE": "최근 8개 분기 매출",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.quarterly_8q",
+      "SOURCE_VALUES": [
+        [
+          "2024 Q3",
+          1939
+        ],
+        [
+          "2024 Q4",
+          1874
+        ],
+        [
+          "2025 Q1",
+          1756
+        ],
+        [
+          "2025 Q2",
+          1793
+        ],
+        [
+          "2025 Q3",
+          2025
+        ],
+        [
+          "2025 Q4",
+          1903
+        ],
+        [
+          "2026 Q1",
+          1866
+        ],
+        [
+          "2026 Q2",
+          1823
+        ]
+      ],
+      "NARRATIVE_LOCATOR": "Ch.4",
+      "TABLE_LOCATOR": "Appendix B",
+      "SOURCE_VERSION_OR_HASH": "296ef5fde33e",
+      "DISPLAY_VALUES": [
+        [
+          "2024 Q3",
+          1939
+        ],
+        [
+          "2024 Q4",
+          1874
+        ],
+        [
+          "2025 Q1",
+          1756
+        ],
+        [
+          "2025 Q2",
+          1793
+        ],
+        [
+          "2025 Q3",
+          2025
+        ],
+        [
+          "2025 Q4",
+          1903
+        ],
+        [
+          "2026 Q1",
+          1866
+        ],
+        [
+          "2026 Q2",
+          1823
+        ]
+      ],
+      "CAPTION_LOCATOR": "Ch.4",
+      "RENDERED_ASSET_LOCATOR": "inline SVG in final HTML/PDF",
+      "status": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-003",
+      "FIGURE_TITLE": "H1 2026 세그먼트 ex-IFRS16 마진",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.segments_h1_2026",
+      "SOURCE_VALUES": [
+        [
+          "Electrical Consumer Products / HVAC",
+          7.5
+        ],
+        [
+          "Electrical Retail",
+          4.7
+        ],
+        [
+          "Food Retail / Carrefour",
+          4.5
+        ],
+        [
+          "Sports & Leisure",
+          9.4
+        ]
+      ],
+      "NARRATIVE_LOCATOR": "Ch.3/4",
+      "TABLE_LOCATOR": "Ch.4 segment table",
+      "SOURCE_VERSION_OR_HASH": "c9480bde7fa5",
+      "DISPLAY_VALUES": [
+        [
+          "Electrical Consumer Products / HVAC",
+          7.5
+        ],
+        [
+          "Electrical Retail",
+          4.7
+        ],
+        [
+          "Food Retail / Carrefour",
+          4.5
+        ],
+        [
+          "Sports & Leisure",
+          9.4
+        ]
+      ],
+      "CAPTION_LOCATOR": "Ch.3/4",
+      "RENDERED_ASSET_LOCATOR": "inline SVG in final HTML/PDF",
+      "status": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-004",
+      "FIGURE_TITLE": "부채와 IFRS16/NCI 조정",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.balance_sheet_h1_2026",
+      "SOURCE_VALUES": [
+        3651,
+        1162,
+        973.8
+      ],
+      "NARRATIVE_LOCATOR": "Ch.4/5",
+      "TABLE_LOCATOR": "Ch.4 leverage table",
+      "SOURCE_VERSION_OR_HASH": "cb273187e32f",
+      "DISPLAY_VALUES": [
+        3651,
+        1162,
+        973.8
+      ],
+      "CAPTION_LOCATOR": "Ch.4/5",
+      "RENDERED_ASSET_LOCATOR": "inline SVG in final HTML/PDF",
+      "status": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-005",
+      "FIGURE_TITLE": "시나리오별 주당가치",
+      "AUTHORITATIVE_SOURCE_BLOCK": "scenarios",
+      "SOURCE_VALUES": [
+        [
+          "Bear",
+          38.72
+        ],
+        [
+          "Base",
+          91.52
+        ],
+        [
+          "Bull",
+          143.72
+        ],
+        [
+          "Current",
+          65.72
+        ]
+      ],
+      "NARRATIVE_LOCATOR": "Ch.5",
+      "TABLE_LOCATOR": "Ch.5 scenario table",
+      "SOURCE_VERSION_OR_HASH": "b6cb24cba5f5",
+      "DISPLAY_VALUES": [
+        [
+          "Bear",
+          38.72
+        ],
+        [
+          "Base",
+          91.52
+        ],
+        [
+          "Bull",
+          143.72
+        ],
+        [
+          "Current",
+          65.72
+        ]
+      ],
+      "CAPTION_LOCATOR": "Ch.5",
+      "RENDERED_ASSET_LOCATOR": "inline SVG in final HTML/PDF",
+      "status": "PASS"
+    },
+    {
+      "VIS_ID": "VIS-006",
+      "FIGURE_TITLE": "진입가격별 기대 IRR",
+      "AUTHORITATIVE_SOURCE_BLOCK": "valuation.price_band_irrs",
+      "SOURCE_VALUES": [
+        [
+          50,
+          22.9
+        ],
+        [
+          55,
+          19.0
+        ],
+        [
+          60,
+          15.6
+        ],
+        [
+          65.72,
+          12.2
+        ],
+        [
+          70,
+          9.8
+        ],
+        [
+          75,
+          7.3
+        ],
+        [
+          80,
+          5.0
+        ]
+      ],
+      "NARRATIVE_LOCATOR": "Ch.5/6",
+      "TABLE_LOCATOR": "Ch.5 price-band table",
+      "SOURCE_VERSION_OR_HASH": "f035d0e4ddef",
+      "DISPLAY_VALUES": [
+        [
+          50,
+          22.9
+        ],
+        [
+          55,
+          19.0
+        ],
+        [
+          60,
+          15.6
+        ],
+        [
+          65.72,
+          12.2
+        ],
+        [
+          70,
+          9.8
+        ],
+        [
+          75,
+          7.3
+        ],
+        [
+          80,
+          5.0
+        ]
+      ],
+      "CAPTION_LOCATOR": "Ch.5/6",
+      "RENDERED_ASSET_LOCATOR": "inline SVG in final HTML/PDF",
+      "status": "PASS"
+    }
+  ],
+  "qa": {
+    "H1_H2_RESEARCH_CONTRACT_COMPLETENESS": "PASS",
+    "H2_H3_COVERAGE_LINEAGE": "PASS",
+    "RC_H3_COVERAGE_RATE": 1.0,
+    "LATEST_FILING_CHECK": "PASS",
+    "INDUSTRY_BLOCKS_TOTAL": 5,
+    "INDUSTRY_BLOCKS_LANDED": 5,
+    "EVIDENCE_BOUNDARY_STATED": 5,
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "EXPLANATORY_SPACE_ALLOCATION": "PASS",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "VISUAL_DATA_LINEAGE": "PASS",
+    "PUBLISHING_ACCEPTANCE": "PASS",
+    "VISUAL_SEMANTIC_PARITY": "PASS",
+    "FIGURE_NUMERICAL_PARITY": "PASS",
+    "DECISION_VISUALS_TOTAL": 6,
+    "DECISION_VISUALS_PARITY_PASS": 6,
+    "STALE_VISUAL_ASSETS": 0,
+    "PDF_PAGE_COUNT": 19,
+    "PDF_BOOKMARKS": "PASS",
+    "PDF_SEARCHABLE_TEXT": "PASS",
+    "PDF_RENDER_INSPECTION": "PASS",
+    "METADATA_FIREWALL": "PASS"
+  }
+}

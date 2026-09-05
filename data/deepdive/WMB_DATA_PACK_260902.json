@@ -1,0 +1,1133 @@
+{
+  "meta": {
+    "ticker": "WMB",
+    "company": "The Williams Companies, Inc.",
+    "T0": "2026-09-02",
+    "price": 75.23,
+    "price_asof": "2026-09-01 NYSE regular close",
+    "filing_asof": "2026-08-21",
+    "latest_financial_filing": "2026-08-03 (2Q26 10-Q)",
+    "consensus_asof": "2026-08-25 observation / latest vendor update Aug-18 to Aug-25",
+    "version": "Deep Dive OS v1.7 — conversation-integrated update 2026-09-02",
+    "currency": "USD"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue_b": 10.907,
+        "adjusted_ebitda_b": 6.779,
+        "affo_b": 5.213,
+        "cfo_b": 5.938,
+        "cash_capex_b": 2.516,
+        "common_dividends_b": 2.179,
+        "dividend_coverage_x": 2.39,
+        "leverage_x": 3.58
+      },
+      {
+        "year": 2024,
+        "revenue_b": 10.503,
+        "adjusted_ebitda_b": 7.08,
+        "affo_b": 5.378,
+        "cfo_b": 4.974,
+        "cash_capex_b": 2.573,
+        "common_dividends_b": 2.316,
+        "dividend_coverage_x": 2.32,
+        "leverage_x": 3.79
+      },
+      {
+        "year": 2025,
+        "revenue_b": 11.95,
+        "adjusted_ebitda_b": 7.75,
+        "affo_b": 5.858,
+        "cfo_b": 5.898,
+        "cash_capex_b": 4.893,
+        "common_dividends_b": 2.442,
+        "dividend_coverage_x": 2.4,
+        "leverage_x": 3.71
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "period": "3Q24",
+        "adjusted_ebitda_b": 1.703,
+        "affo_b": 1.286
+      },
+      {
+        "period": "4Q24",
+        "adjusted_ebitda_b": 1.776,
+        "affo_b": 1.335
+      },
+      {
+        "period": "1Q25",
+        "adjusted_ebitda_b": 1.989,
+        "affo_b": 1.445
+      },
+      {
+        "period": "2Q25",
+        "adjusted_ebitda_b": 1.808,
+        "affo_b": 1.317
+      },
+      {
+        "period": "3Q25",
+        "adjusted_ebitda_b": 1.92,
+        "affo_b": 1.449
+      },
+      {
+        "period": "4Q25",
+        "adjusted_ebitda_b": 2.033,
+        "affo_b": 1.647
+      },
+      {
+        "period": "1Q26",
+        "adjusted_ebitda_b": 2.254,
+        "affo_b": 1.77
+      },
+      {
+        "period": "2Q26",
+        "adjusted_ebitda_b": 1.921,
+        "affo_b": 1.45
+      }
+    ],
+    "segments_2025": [
+      {
+        "segment": "Transmission, Power & Gulf",
+        "adjusted_ebitda_b": 3.71
+      },
+      {
+        "segment": "Northeast G&P",
+        "adjusted_ebitda_b": 2.028
+      },
+      {
+        "segment": "West",
+        "adjusted_ebitda_b": 1.45
+      },
+      {
+        "segment": "Gas & NGL Marketing",
+        "adjusted_ebitda_b": 0.193
+      },
+      {
+        "segment": "Other",
+        "adjusted_ebitda_b": 0.369
+      }
+    ],
+    "2026_guidance": {
+      "adjusted_ebitda_b": {
+        "low": 8.3,
+        "mid": 8.4,
+        "high": 8.5
+      },
+      "adjusted_eps": 2.35,
+      "affo_b": 6.375,
+      "affo_per_share": 5.15,
+      "diluted_shares_b": 1.237,
+      "common_dividends_b": 2.585,
+      "dividend_coverage_x": 2.47,
+      "growth_capex_b": {
+        "low": 7.3,
+        "mid": 7.6,
+        "high": 7.9
+      },
+      "pro_forma_leverage_midpoint_x": 3.75
+    },
+    "capital_structure_2q26": {
+      "cash_b": 0.203,
+      "long_term_debt_due_1y_b": 2.2,
+      "long_term_debt_after_1y_b": 28.1,
+      "liquidity_b": 4.478,
+      "company_leverage_x": 3.67,
+      "credit_ratings": [
+        "S&P BBB+ Stable",
+        "Moody Baa2 Positive",
+        "Fitch BBB Positive"
+      ]
+    },
+    "accounting_quality": {
+      "affo_definition_note": "AFFO excludes certain working-capital/derivative items and, from 2Q26, NCI contributions; AFFO reduces NCI distributions but does not deduct growth capex.",
+      "2025_gaap_operating_income_b": 4.196,
+      "simplified_2025_roic_range": "~8–10% depending treatment of equity-method earnings",
+      "2025_post_investment_fcf_proxy_b": 1.005,
+      "post_investment_fcf_proxy_definition": "2025 CFO 5.898 - cash capex 4.893",
+      "ceilings": [
+        "Project-level growth capex and partner-funding timing are insufficient for a precise annual FCFE forecast."
+      ]
+    },
+    "ceilings": [
+      "Project-level EBITDA/IRR",
+      "Power customer identities and exact JV waterfall",
+      "Momentum standalone audited customer/contract metrics",
+      "weighted-average contract life and basin-level MVC share"
+    ]
+  },
+  "industry": {
+    "eia": {
+      "lng_exports_bcf_d": {
+        "2025": 15.0,
+        "2026": 17.0,
+        "2027": 19.0,
+        "2026_H1_actual": 17.4,
+        "2026_H2_estimate": 17.3,
+        "2027_H1_estimate": 18.7
+      },
+      "marketed_gas_production_2026_bcf_d": 122.5,
+      "haynesville_2026_growth_bcf_d": 1.3,
+      "haynesville_2026_growth_pct": 0.09,
+      "henry_hub_avg_usd_mmbtu": {
+        "2026": 3.44,
+        "2027": 3.31
+      }
+    },
+    "transmission_chains": [
+      "LNG export growth → Gulf Coast feedgas reliability → Haynesville takeaway → WMB G&P/pipeline reservation revenue, minus acquisition/funding/dilution.",
+      "Data-center load → speed-to-power constraint → gas + pipeline + generation turnkey solution → long-term contracted EBITDA, minus 49% NCI/capex/permit leakage.",
+      "Appalachia takeaway bottleneck → firm delivery procurement → Transco ROW/interconnect scarcity → reservation revenue/high incremental margin, minus regulatory/project risk."
+    ],
+    "ai_data_center_power": {
+      "us_current_generation_mix": {
+        "natural_gas_share_gt": 0.4,
+        "renewables_share": 0.24,
+        "nuclear_share_approx": 0.2,
+        "coal_share_approx": 0.15
+      },
+      "incremental_generation_2024_2030_twh": {
+        "natural_gas_gt": 130,
+        "renewables": 110
+      },
+      "interpretation": "Stock vs flow: WMB growth depends primarily on newly energized MW/campus expansions and associated contracted gas/power infrastructure, not unlimited load growth at already-built facilities."
+    },
+    "lng_risk": {
+      "post_fid_capacity_additions_2025_2030_bcm_yr_approx": 345,
+      "peak_annual_additions_2028_bcm_yr_approx": 95,
+      "middle_east_conflict_cumulative_supply_loss_2026_2030_bcm_approx": 140,
+      "primary_risk_metric": "JKM/TTF minus Henry Hub netback after liquefaction/shipping, not LNG absolute price",
+      "risk_window": "2028–2030 supply-wave stress; 2026–27 currently tighter than prior expectations",
+      "historical_stress": "2020 U.S. LNG feedgas fell from 9.8 Bcf/d to below 4 Bcf/d amid cargo cancellations."
+    }
+  },
+  "assets": {
+    "network": {
+      "customers_approx": 800,
+      "pipeline_miles_gt": 32000,
+      "processing_facilities": 35,
+      "ngl_fractionation_facilities": 9,
+      "ngl_storage_mmbbl": 23,
+      "natural_gas_storage_bcf": 423,
+      "transco_miles": 9600,
+      "transco_design_capacity_mmdth_d": 20.6,
+      "nwp_miles": 3900,
+      "nwp_design_capacity_mmdth_d": 3.8
+    },
+    "contracting": {
+      "remaining_performance_obligations_2q26_b": {
+        "Williams": 30.735,
+        "Transco": 21.142,
+        "NWP": 3.597
+      },
+      "g_and_p_customers_approx": 253,
+      "g_and_p_top10_fee_revenue_share": 0.55,
+      "interstate_top10_regulated_revenue_share": 0.44,
+      "nwp_top3_revenue_share": 0.52,
+      "2025_ngl_production_fee_based_share": 0.93
+    },
+    "pipeline_projects": [
+      {
+        "project": "Gillis West",
+        "capacity": "115 Mdth/d",
+        "service": "4Q26 earliest",
+        "status": "authorized"
+      },
+      {
+        "project": "Southeast Supply Enhancement",
+        "capacity": "1,597 Mdth/d",
+        "service": "3Q27 earliest",
+        "status": "FERC approved Jan-26"
+      },
+      {
+        "project": "Northeast Supply Enhancement",
+        "capacity": "400 Mdth/d",
+        "service": "4Q27 earliest",
+        "status": "all capacity subscribed; state permits obtained"
+      },
+      {
+        "project": "Leidy Access",
+        "capacity": "183 Mdth/d",
+        "service": "4Q27 earliest",
+        "status": "customer agreements; filing planned"
+      },
+      {
+        "project": "Line 200",
+        "capacity": "3,100 Mdth/d",
+        "service": "2Q28 earliest",
+        "status": "FERC-approved Driftwood connection"
+      },
+      {
+        "project": "Pine Prairie Phase IV",
+        "capacity": "+10 Bcf storage",
+        "service": "4Q28",
+        "status": "FERC approved May-26"
+      },
+      {
+        "project": "Dalton Lateral II",
+        "capacity": "up to 460 Mdth/d",
+        "service": "4Q29 earliest",
+        "status": "filing planned 2027"
+      },
+      {
+        "project": "Power Express",
+        "capacity": "800 Mdth/d",
+        "service": "3Q30 earliest",
+        "status": "filing as early as 2Q27"
+      }
+    ],
+    "power_projects": [
+      {
+        "project": "Socrates",
+        "mw": 556,
+        "contract_years": 10.0,
+        "service": "Plato South in-service / Plato North 4Q26",
+        "contract": "primarily fixed-price PPA",
+        "customer": "Meta affiliate Sidecat LLC",
+        "customer_status": "CONFIRMED_PUBLIC_EVIDENCE"
+      },
+      {
+        "project": "Apollo",
+        "mw": 490,
+        "contract_years": 12.5,
+        "service": "2H27",
+        "contract": "long-term contracted",
+        "customer": "Meta",
+        "customer_status": "CONFIRMED_REUTERS"
+      },
+      {
+        "project": "Aquila",
+        "mw": 520,
+        "contract_years": 12.5,
+        "service": "2H27 + 1H28",
+        "contract": "long-term contracted",
+        "customer": "Meta site",
+        "customer_status": "CONFIRMED_PUBLIC_RECORD"
+      },
+      {
+        "project": "Socrates the Younger",
+        "mw": 340,
+        "contract_years": 10.0,
+        "service": "2H28",
+        "contract": "long-term contracted",
+        "customer": "Meta affiliate Sidecat LLC",
+        "customer_status": "CONFIRMED_PUBLIC_EVIDENCE"
+      },
+      {
+        "project": "Neo",
+        "mw": 682,
+        "contract_years": 12.5,
+        "service": "Two phases, 2H28",
+        "contract": "long-term contracted",
+        "customer": "Undisclosed investment-grade hyperscaler",
+        "customer_status": "PRIMARY_SOURCE_CEILING"
+      }
+    ],
+    "power_jv": {
+      "external_commitment_b": 5.34,
+      "first_five_project_growth_capex_49pct_b": 4.4,
+      "additional_consideration_b_approx": 0.9,
+      "wmb_ownership": 0.51,
+      "partner_ownership": 0.49,
+      "simple_51pct_economic_share_b_approx": 0.9792,
+      "note": "Simple 51% share is an analytical approximation; actual waterfall/promote/buyout mechanics differ.",
+      "first_five_total_project_capital_b_approx": 9.6,
+      "gross_annual_ebitda_implied_b_approx": 1.92,
+      "gross_annual_ebitda_inference_basis": "Analytical inference: ~$9.6B total project capital / ~5x build multiple. Not company-disclosed aggregate run-rate EBITDA.",
+      "partner_cost_of_equity_approx": 0.0635,
+      "promote_additional_consideration_b_approx": 0.9,
+      "project_build_multiple_target_x": "roughly 4x–6x for future projects per Analyst Day; first commercialized projects around 5x",
+      "accounting_margin_ceiling": "Project revenue, fuel pass-through, O&M and project-level IRR are not fully disclosed; EBITDA margin % cannot be verified."
+    },
+    "momentum": {
+      "max_consideration_b": 5.5,
+      "cash_debt_b_approx": 3.5,
+      "equity_b_approx": 2.0,
+      "wmb_shares_to_issue": 26874496,
+      "predeal_shares_outstanding": 1223167472,
+      "explicit_share_dilution_pct": 0.02197,
+      "gathering_capacity_bcf_d": 6.0,
+      "take_or_pay_pipeline_capacity_bcf_d": 4.05,
+      "pipeline_miles_gt": 4000,
+      "dedicated_acres_gt": 1000000,
+      "implied_2027_ebitda_multiple_x": 8.5,
+      "calculated_projected_2027_ebitda_b_approx": 0.647
+    },
+    "power_projects_total_mw": 2588,
+    "power_publicly_identified_meta_mw": 1906,
+    "power_publicly_identified_meta_share": 0.7364760432766615,
+    "power_potential_backlog_gw_analyst_day_2026": 6.0,
+    "power_backlog_treatment": "Potential project backlog; do not treat as contracted revenue. First five commercialized generation projects total 2.588 GW.",
+    "atlas": {
+      "capacity_mmcf_d_up_to": 164,
+      "contract_years": 13,
+      "service": "4Q26",
+      "customer": "large Northeast data-center customer, undisclosed",
+      "type": "gas infrastructure / backup conversion, not generation"
+    }
+  },
+  "management": {
+    "ceo": "Chad Zamarin",
+    "executive_chair": "Alan Armstrong",
+    "long_term_adjusted_ebitda_cagr_target": "11%+ 2025–2030, raised from 10%+ after Momentum/new projects",
+    "analyst_day_current_book_initial_cagr": "~8% at Feb-2026; ~9% after May projects; 11%+ target after Aug announcements",
+    "promise_delivery": [
+      "2024 initial midpoint ~6.95B vs 7.08B actual",
+      "2025 initial/early guide below 7.75B actual; guidance raised through year",
+      "12 projects completed in 2025",
+      "Socrates South entered service late Jul-2026 on time/within budget per management"
+    ],
+    "ceiling": "Zamarin standalone CEO track record remains short; long-cycle Power program not yet seasoned.",
+    "confidence": {
+      "FY2026": "HIGH — core business tracking upper half of original guide; pro forma EBITDA $8.3–8.5B with Momentum",
+      "2H2026": "HIGH_EXECUTION — Socrates Phase 1 in service; Phase 2 and Atlas targeted 4Q26",
+      "FY2027": "HIGH_BUT_EXECUTION_DEPENDENT — Apollo/Aquila and major Transco projects enter service",
+      "FY2028_PLUS": "VERY_HIGH_MANAGEMENT_TONE — Analyst Day framed 2028 as major earnings inflection and leverage normalization period"
+    }
+  },
+  "kpis": [
+    {
+      "name": "2026 Adjusted EBITDA",
+      "current": "guide midpoint $8.4B",
+      "thresholds": {
+        "green": ">=8.4B / upward trajectory",
+        "yellow": "8.2–8.4B",
+        "red": "<8.2B or guide cut"
+      }
+    },
+    {
+      "name": "Company leverage",
+      "current": "3.67x 2Q26; ~3.75x pro forma guide midpoint",
+      "thresholds": {
+        "green": "<=4.0x with path to 3.5–4.0x",
+        "yellow": "4.0–4.3x",
+        "red": ">4.3x without de-lever path"
+      }
+    },
+    {
+      "name": "Power Innovation execution",
+      "current": "Socrates South online; North targeted 4Q26",
+      "thresholds": {
+        "green": "milestones on time",
+        "yellow": "modest delay/cost pressure",
+        "red": "multi-quarter delays or material customer/capex reset"
+      }
+    },
+    {
+      "name": "Attributable cash conversion",
+      "current": "AFFO subtracts NCI distributions; gross EBITDA growth must translate to per-share AFFO",
+      "thresholds": {
+        "green": "AFFO/share grows broadly with EBITDA",
+        "yellow": "gross EBITDA materially outruns AFFO/share",
+        "red": "NCI/funding drag invalidates accretion"
+      }
+    },
+    {
+      "name": "Dividend coverage",
+      "current": "2.26x 2Q26; 2.47x 2026 guide",
+      "thresholds": {
+        "green": ">2.0x",
+        "yellow": "1.6–2.0x",
+        "red": "<1.6x"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Downside",
+      "probability": 0.25,
+      "ebitda_cagr_2025_2030": 0.085,
+      "ebitda_2030_b": 11.653339348880467,
+      "affo_to_ebitda": 0.69,
+      "affo_2030_b": 8.04080415072752,
+      "diluted_shares_2030_b": 1.29,
+      "affo_per_share_2030": 6.2331815121918765,
+      "terminal_p_affo_x": 10.5,
+      "terminal_price_2030": 65.44840587801471,
+      "cumulative_dividends_2027_2030": 9.049185201,
+      "terminal_total_value": 74.49759107901471,
+      "irr": 0.009106528430150584,
+      "pv_at_10_5pct": 48.34856248084791,
+      "dcf_fcfe_conversion": 0.6,
+      "dcf_cost_of_equity": 0.1,
+      "dcf_terminal_growth": 0.025,
+      "dcf_value_per_share": 41.446542311937435,
+      "irr_from_current_price": -0.0022568714180264404
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "ebitda_cagr_2025_2030": 0.11,
+      "ebitda_2030_b": 13.059200702025006,
+      "affo_to_ebitda": 0.72,
+      "affo_2030_b": 9.402624505458004,
+      "diluted_shares_2030_b": 1.275,
+      "affo_per_share_2030": 7.37460745526118,
+      "terminal_p_affo_x": 12.5,
+      "terminal_price_2030": 92.18259319076475,
+      "cumulative_dividends_2027_2030": 9.503825625000001,
+      "terminal_total_value": 101.68641881576475,
+      "irr": 0.0842831917570257,
+      "pv_at_10_5pct": 65.99397513878235,
+      "dcf_fcfe_conversion": 0.68,
+      "dcf_cost_of_equity": 0.0925,
+      "dcf_terminal_growth": 0.0275,
+      "dcf_value_per_share": 62.123694764286995,
+      "irr_from_current_price": 0.0720732385861147
+    },
+    {
+      "name": "Upside",
+      "probability": 0.25,
+      "ebitda_cagr_2025_2030": 0.13,
+      "ebitda_2030_b": 14.278872639574994,
+      "affo_to_ebitda": 0.74,
+      "affo_2030_b": 10.566365753285496,
+      "diluted_shares_2030_b": 1.265,
+      "affo_per_share_2030": 8.352858302992487,
+      "terminal_p_affo_x": 14.0,
+      "terminal_price_2030": 116.94001624189482,
+      "cumulative_dividends_2027_2030": 9.737895216000002,
+      "terminal_total_value": 126.67791145789482,
+      "irr": 0.14073251488119864,
+      "pv_at_10_5pct": 82.21332835539991,
+      "dcf_fcfe_conversion": 0.75,
+      "dcf_cost_of_equity": 0.0875,
+      "dcf_terminal_growth": 0.03,
+      "dcf_value_per_share": 86.37965214584602,
+      "irr_from_current_price": 0.1278868942046807
+    }
+  ],
+  "valuation": {
+    "mode": "C — Mature Compounder",
+    "current_price": 75.23,
+    "current_2026_p_affo_x": 14.607766990291262,
+    "current_2026_affo_yield": 0.06845673268642828,
+    "annualized_dividend_per_share": 2.1,
+    "current_dividend_yield": 0.02791439585271833,
+    "probability_weighted_2030_total_value": 101.13708504210976,
+    "probability_weighted_pv_at_10_5pct": 65.63746027845313,
+    "probability_weighted_irr": 0.06744412498972091,
+    "probability_weighted_dcf_value": 63.01839599658936,
+    "dcf_method": "Bounded normalized FCFE DCF. 2030 AFFO is converted to normalized owner FCFE using 60%/68%/75%; project-level capex/funding ceilings make this a range, not a precision point estimate.",
+    "dcf_values": {
+      "Downside": 41.446542311937435,
+      "Base": 62.123694764286995,
+      "Upside": 86.37965214584602
+    },
+    "ev_ebit_crosscheck": {
+      "2025_operating_income_b": 4.196,
+      "approx_market_cap_b_at_price": 92.01888891856001,
+      "approx_net_debt_2q26_b": 30.097,
+      "approx_ev_b": 122.11588891856002,
+      "approx_ev_to_2025_ebit_x": 29.102928722249768,
+      "note": "Backward-looking and intentionally punitive because large 2026–30 projects are capitalized before full earnings contribution."
+    },
+    "fcf_yield_crosscheck": {
+      "2025_cfo_minus_cash_capex_b": 1.005,
+      "approx_equity_fcf_yield": 0.010921670667958844,
+      "note": "2025 already reflects a growth-investment ramp; 2026 gross growth capex rises further, so AFFO yield is not owner FCF yield."
+    },
+    "roic_reinvestment": {
+      "simplified_2025_roic_low": 0.081,
+      "simplified_2025_roic_high": 0.096,
+      "note": "Approximate NOPAT / average invested capital; high case adds equity-method earnings. The next cycle must preserve returns above cost of capital despite higher capex."
+    },
+    "price_bands": [
+      {
+        "label": "Strong accumulation",
+        "low": 0,
+        "high": 58
+      },
+      {
+        "label": "Accumulation",
+        "low": 58,
+        "high": 64
+      },
+      {
+        "label": "Watch / selective",
+        "low": 64,
+        "high": 70
+      },
+      {
+        "label": "Hold / fully valued",
+        "low": 70,
+        "high": 78
+      },
+      {
+        "label": "Rich / bull case required",
+        "low": 78,
+        "high": 999
+      }
+    ],
+    "fair_value_synthesis": "Operational assumptions unchanged; DCF probability-weighted ~$63; terminal-AFFO scenario PV ~$65.6; practical central value band ~$63–68. At $75.23, new-money asymmetry is worse than the original report."
+  },
+  "reverse_expectations": [
+    {
+      "required_total_return": 0.08,
+      "terminal_p_affo_x": 11.0,
+      "required_terminal_price": 95.4784356546347,
+      "required_affo_per_share_2030": 8.679857786784972,
+      "required_ebitda_2030_b": 15.37058149743172,
+      "required_ebitda_cagr": 0.14677368619810616
+    },
+    {
+      "required_total_return": 0.08,
+      "terminal_p_affo_x": 12.5,
+      "required_terminal_price": 95.4784356546347,
+      "required_affo_per_share_2030": 7.638274852370776,
+      "required_ebitda_2030_b": 13.526111717739916,
+      "required_ebitda_cagr": 0.11782612015397498
+    },
+    {
+      "required_total_return": 0.08,
+      "terminal_p_affo_x": 14.0,
+      "required_terminal_price": 95.4784356546347,
+      "required_affo_per_share_2030": 6.819888261045335,
+      "required_ebitda_2030_b": 12.07688546226778,
+      "required_ebitda_cagr": 0.09277474366336835
+    },
+    {
+      "required_total_return": 0.1,
+      "terminal_p_affo_x": 11.0,
+      "required_terminal_price": 104.15976952674102,
+      "required_affo_per_share_2030": 9.469069956976456,
+      "required_ebitda_2030_b": 16.768144715479142,
+      "required_ebitda_cagr": 0.16690812072855965
+    },
+    {
+      "required_total_return": 0.1,
+      "terminal_p_affo_x": 12.5,
+      "required_terminal_price": 104.15976952674102,
+      "required_affo_per_share_2030": 8.332781562139282,
+      "required_ebitda_2030_b": 14.755967349621642,
+      "required_ebitda_cagr": 0.13745230891602067
+    },
+    {
+      "required_total_return": 0.1,
+      "terminal_p_affo_x": 14.0,
+      "required_terminal_price": 104.15976952674102,
+      "required_affo_per_share_2030": 7.439983537624358,
+      "required_ebitda_2030_b": 13.174970847876466,
+      "required_ebitda_cagr": 0.11196109385402164
+    },
+    {
+      "required_total_return": 0.105,
+      "terminal_p_affo_x": 11.0,
+      "required_terminal_price": 106.41386642829202,
+      "required_affo_per_share_2030": 9.673987857117456,
+      "required_ebitda_2030_b": 17.131020163645495,
+      "required_ebitda_cagr": 0.1719155172299376
+    },
+    {
+      "required_total_return": 0.105,
+      "terminal_p_affo_x": 12.5,
+      "required_terminal_price": 106.41386642829202,
+      "required_affo_per_share_2030": 8.513109314263362,
+      "required_ebitda_2030_b": 15.075297744008036,
+      "required_ebitda_cagr": 0.14233330563801982
+    },
+    {
+      "required_total_return": 0.105,
+      "terminal_p_affo_x": 14.0,
+      "required_terminal_price": 106.41386642829202,
+      "required_affo_per_share_2030": 7.600990459163716,
+      "required_ebitda_2030_b": 13.460087271435748,
+      "required_ebitda_cagr": 0.11673270353958665
+    },
+    {
+      "required_total_return": 0.12,
+      "terminal_p_affo_x": 11.0,
+      "required_terminal_price": 113.38293610087325,
+      "required_affo_per_share_2030": 10.307539645533932,
+      "required_ebitda_2030_b": 18.252934788966336,
+      "required_ebitda_cagr": 0.1868783282791593
+    },
+    {
+      "required_total_return": 0.12,
+      "terminal_p_affo_x": 12.5,
+      "required_terminal_price": 113.38293610087325,
+      "required_affo_per_share_2030": 9.07063488806986,
+      "required_ebitda_2030_b": 16.062582614290378,
+      "required_ebitda_cagr": 0.15691841621655045
+    },
+    {
+      "required_total_return": 0.12,
+      "terminal_p_affo_x": 14.0,
+      "required_terminal_price": 113.38293610087325,
+      "required_affo_per_share_2030": 8.098781150062376,
+      "required_ebitda_2030_b": 14.341591619902122,
+      "required_ebitda_cagr": 0.13099095013661577
+    }
+  ],
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "eps_avg": 2.45,
+      "source": "Barchart, observed 2026-08-25",
+      "company_adjusted_eps_guide": 2.35
+    },
+    "fy2": {
+      "year": 2027,
+      "eps_avg": 2.16,
+      "source": "Barchart, observed 2026-08-25",
+      "reliability": "LOW/MEDIUM; estimates dispersed and accounting differs from AFFO model"
+    },
+    "price_target_avg": 85.1,
+    "revision_trend": "Long-term operating narrative revised upward after 2Q26/Momentum; some quarterly EPS estimates were cut after Aug-20. Consensus is secondary evidence only."
+  },
+  "stance": {
+    "zone": "WATCH / HOLD",
+    "price_bands": {
+      "strong_accumulation": "<=58",
+      "accumulation": "58–64",
+      "watch_selective": "64–70",
+      "hold_fully_valued": "70–78",
+      "rich": ">78"
+    },
+    "horizon": "to 2030",
+    "thesis": "Asset quality and contracted growth strengthened, but $75.23 now prices in much of the 11%+ plan and premium multiple durability. Power economics look attractive, while Meta concentration and 2028–30 LNG netback risk add counterweights. New-money asymmetry improves materially below the low/mid-$60s."
+  },
+  "catalysts": [
+    {
+      "date": "3Q26",
+      "event": "Socrates Phase 1 load ramp / recurring contracted contribution",
+      "watch": "operating proof and cash conversion"
+    },
+    {
+      "date": "4Q26",
+      "event": "Socrates Phase 2 and Atlas targeted in service",
+      "watch": "repeatability and existing-DC backup gas conversion"
+    },
+    {
+      "date": "4Q26/FY26",
+      "event": "Momentum close, financing, purchase accounting and 2027 outlook",
+      "watch": "AFFO/share accretion and leverage"
+    },
+    {
+      "date": "2H27",
+      "event": "Apollo 490 MW and Aquila phase 1; SSE 3Q27",
+      "watch": "Power scale-up + pipeline execution"
+    },
+    {
+      "date": "1H28–2H28",
+      "event": "Aquila phase 2, STY 340 MW, Neo 682 MW",
+      "watch": "2028 earnings inflection"
+    },
+    {
+      "date": "2028–30",
+      "event": "Global LNG supply wave",
+      "watch": "JKM/TTF-HH netback, U.S. LNG feedgas, Haynesville production"
+    },
+    {
+      "date": "3Q30",
+      "event": "Power Express 800 MMcf/d target",
+      "watch": "utility/data-center demand monetization"
+    }
+  ],
+  "risks": [
+    "Power Innovation timing/cost/fuel-pass-through uncertainty and 49% NCI leakage",
+    "Power customer concentration: at least 1.906 GW / 73.6% of first five publicly tied to Meta; Neo officially undisclosed",
+    "2028–30 LNG netback compression could slow U.S. LNG utilization, Haynesville drilling and WMB growth projects",
+    "Momentum funding/integration and explicit ~2.2% equity dilution",
+    "Large 2026 growth-capex cycle raises refinancing and owner-FCF sensitivity",
+    "FERC/state/local permitting and political opposition on pipeline and BTM power projects",
+    "Terminal multiple compression from premium valuation even if earnings grow"
+  ],
+  "rc_ledger": [
+    {
+      "rc": "RC-WMB-01",
+      "status": "COMPLETE",
+      "ceiling": null
+    },
+    {
+      "rc": "RC-WMB-02",
+      "status": "COMPLETE",
+      "ceiling": null
+    },
+    {
+      "rc": "RC-WMB-03",
+      "status": "CEILING",
+      "ceiling": "Project-specific EBITDA/IRR not disclosed"
+    },
+    {
+      "rc": "RC-WMB-04",
+      "status": "COMPLETE",
+      "ceiling": null
+    },
+    {
+      "rc": "RC-WMB-05",
+      "status": "CEILING",
+      "ceiling": "Standalone Momentum customer/contract/synergy detail incomplete"
+    },
+    {
+      "rc": "RC-WMB-06",
+      "status": "CEILING",
+      "ceiling": "Project customer/IRR/waterfall detail incomplete"
+    },
+    {
+      "rc": "RC-WMB-07",
+      "status": "COMPLETE",
+      "ceiling": null
+    },
+    {
+      "rc": "RC-WMB-08",
+      "status": "COMPLETE",
+      "ceiling": null
+    },
+    {
+      "rc": "RC-WMB-09",
+      "status": "COMPLETE",
+      "ceiling": null
+    },
+    {
+      "rc": "RC-WMB-10",
+      "status": "COMPLETE",
+      "ceiling": null
+    },
+    {
+      "rc": "RC-WMB-11",
+      "status": "COMPLETE",
+      "ceiling": null
+    },
+    {
+      "rc": "RC-WMB-12",
+      "status": "CEILING",
+      "ceiling": "Exact weighted-average contract life/MVC mix incomplete"
+    },
+    {
+      "rc": "RC-WMB-13",
+      "status": "COMPLETE",
+      "ceiling": null
+    },
+    {
+      "rc": "RC-WMB-14",
+      "status": "COMPLETE",
+      "ceiling": null
+    },
+    {
+      "rc": "RC-WMB-15",
+      "status": "COMPLETE",
+      "ceiling": null
+    },
+    {
+      "rc": "RC-WMB-16",
+      "status": "COMPLETE",
+      "ceiling": null
+    },
+    {
+      "rc": "RC-WMB-17",
+      "status": "COMPLETE",
+      "ceiling": null
+    },
+    {
+      "rc": "RC-WMB-18",
+      "status": "COMPLETE",
+      "ceiling": null
+    },
+    {
+      "rc": "RC-WMB-19",
+      "status": "COMPLETE",
+      "ceiling": null
+    },
+    {
+      "rc": "RC-WMB-20",
+      "status": "COMPLETE",
+      "ceiling": null
+    },
+    {
+      "rc": "RC-WMB-21",
+      "status": "COMPLETE",
+      "ceiling": null
+    }
+  ],
+  "source_registry": [
+    {
+      "id": "S1",
+      "title": "Williams 2Q26 Form 10-Q",
+      "date": "2026-08-03",
+      "url": "https://www.sec.gov/Archives/edgar/data/107263/000010726326000026/wmb-20260630.htm",
+      "type": "primary"
+    },
+    {
+      "id": "S2",
+      "title": "Williams 2Q26 earnings release / Momentum announcement",
+      "date": "2026-08-03",
+      "url": "https://www.williams.com/2026/08/03/williams-delivers-strong-second-quarter-2026-results-announces-strategic-acquisition-of-momentum-midstream-connecting-haynesville-to-gulf-coast-lng-and-power-demand/",
+      "type": "primary"
+    },
+    {
+      "id": "S3",
+      "title": "Williams 2025 Form 10-K",
+      "date": "2026-02-24",
+      "url": "https://www.sec.gov/Archives/edgar/data/107263/000010726326000006/wmb-20251231.htm",
+      "type": "primary"
+    },
+    {
+      "id": "S4",
+      "title": "Williams 2026 Proxy",
+      "date": "2026-03-18",
+      "url": "https://www.sec.gov/Archives/edgar/data/107263/000119312526112643/wmb-20260317.htm",
+      "type": "primary"
+    },
+    {
+      "id": "S5",
+      "title": "Power Innovation JV / Blackstone financing announcement",
+      "date": "2026-07-13",
+      "url": "https://investor.williams.com/news-releases/news-release-details/williams-announces-534-billion-investment-power-innovation-joint",
+      "type": "primary"
+    },
+    {
+      "id": "S6",
+      "title": "Williams 1Q26 results",
+      "date": "2026-05-04",
+      "url": "https://investor.williams.com/news-releases/news-release-details/williams-announces-record-first-quarter-2026-results",
+      "type": "primary"
+    },
+    {
+      "id": "S7",
+      "title": "Williams FY2025 results / Analyst Day release",
+      "date": "2026-02-10",
+      "url": "https://investor.williams.com/news-releases/news-release-details/williams-delivers-another-year-record-results-company-host-0",
+      "type": "primary"
+    },
+    {
+      "id": "S8",
+      "title": "Williams 2026 Analyst Day",
+      "date": "2026-02-10",
+      "url": "https://investor.williams.com/events/event-details/williams-2026-analyst-day",
+      "type": "primary"
+    },
+    {
+      "id": "S9",
+      "title": "Williams latest 8-K (board retirement disclosure)",
+      "date": "2026-08-21",
+      "url": "https://www.sec.gov/Archives/edgar/data/107263/000010726326000028/wmb-20260821.htm",
+      "type": "primary"
+    },
+    {
+      "id": "S10",
+      "title": "EIA U.S. gas production / Haynesville update",
+      "date": "2026-08-12",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67944",
+      "type": "government"
+    },
+    {
+      "id": "S11",
+      "title": "EIA Short-Term Energy Outlook: Natural Gas",
+      "date": "2026-08-12",
+      "url": "https://www.eia.gov/outlooks/steo/report/natgas.php",
+      "type": "government"
+    },
+    {
+      "id": "S12",
+      "title": "EIA LNG exports growth",
+      "date": "2026-04-16",
+      "url": "https://www.eia.gov/TODAYINENERGY/detail.php?id=67484",
+      "type": "government"
+    },
+    {
+      "id": "S13",
+      "title": "Williams investor stock information (reference)",
+      "date": "2026-09-02",
+      "url": "https://investor.williams.com/stock-information/stock-quote-chart",
+      "type": "secondary/reference"
+    },
+    {
+      "id": "S14",
+      "title": "Williams 2026 Analyst Day presentation",
+      "date": "2026-02-10",
+      "url": "https://investor.williams.com/static-files/54c171ab-542b-41d9-af06-3566749244a1",
+      "type": "primary"
+    },
+    {
+      "id": "S15",
+      "title": "Barchart WMB earnings estimates",
+      "date": "2026-08-25",
+      "url": "https://www.barchart.com/stocks/quotes/WMB/earnings-estimates",
+      "type": "secondary"
+    },
+    {
+      "id": "S16",
+      "title": "MarketBeat Q2 2026 transcript mirror",
+      "date": "2026-08-04",
+      "url": "https://www.marketbeat.com/earnings/reports/2026-8-3-the-williams-companies-inc-stock/",
+      "type": "secondary"
+    },
+    {
+      "id": "S17",
+      "title": "Williams 2Q26 Earnings Presentation",
+      "date": "2026-08-04",
+      "url": "https://investor.williams.com/static-files/f614f046-cccf-4f74-91e9-5202008eeafc",
+      "type": "primary"
+    },
+    {
+      "id": "S18",
+      "title": "EIA U.S. LNG exports H1 2026",
+      "date": "2026-09-01",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68064",
+      "type": "primary"
+    },
+    {
+      "id": "S19",
+      "title": "IEA Energy and AI — Energy supply for AI",
+      "date": "2025/2026",
+      "url": "https://www.iea.org/reports/energy-and-ai/energy-supply-for-ai",
+      "type": "primary/authoritative"
+    },
+    {
+      "id": "S20",
+      "title": "IEA Global LNG Capacity Tracker",
+      "date": "2026-06-12",
+      "url": "https://www.iea.org/data-and-statistics/data-tools/global-lng-capacity-tracker",
+      "type": "primary/authoritative"
+    },
+    {
+      "id": "S21",
+      "title": "IEA Gas Market Report Q3 2026",
+      "date": "2026-07-07",
+      "url": "https://www.iea.org/reports/gas-market-report-q3-2026/executive-summary",
+      "type": "primary/authoritative"
+    },
+    {
+      "id": "S22",
+      "title": "Reuters Apollo / Meta data-center power investigation",
+      "date": "2026-06-16",
+      "url": "https://www.reuters.com/business/energy/fast-tracked-power-plants-fuel-ai-boom-with-little-public-scrutiny-2026-06-16/",
+      "type": "secondary-high-quality"
+    },
+    {
+      "id": "S23",
+      "title": "Power Engineering Socrates / Sidecat-Meta filing summary",
+      "date": "2026",
+      "url": "https://www.power-eng.com/onsite-power/onsite-gas-turbines-reciprocating-engines-to-power-meta-data-center/",
+      "type": "secondary"
+    },
+    {
+      "id": "S24",
+      "title": "Eagle Mountain Utah public meeting record — Aquila / Meta site",
+      "date": "2026",
+      "url": "https://www.utah.gov/pmn/files/1404039.pdf",
+      "type": "primary-regulatory"
+    },
+    {
+      "id": "S25",
+      "title": "American Public Power Association STY / Sidecat-Meta",
+      "date": "2026",
+      "url": "https://www.publicpower.org/periodical/article/ohio-power-siting-board-approves-construction-power-plant-serve-load-adjacent-data-center",
+      "type": "secondary/public-power"
+    },
+    {
+      "id": "S26",
+      "title": "Public.com WMB historical price — Sep 1 close",
+      "date": "2026-09-01",
+      "url": "https://public.com/stocks/wmb/after-hours",
+      "type": "secondary-price"
+    },
+    {
+      "id": "S27",
+      "title": "EIA 2020 LNG feedgas/cargo cancellation precedent",
+      "date": "2020-06",
+      "url": "https://www.eia.gov/TODAYINENERGY/detail.php?id=44196",
+      "type": "primary"
+    },
+    {
+      "id": "S28",
+      "title": "Williams Q1 2026 data-center recap — Neo + Atlas",
+      "date": "2026-05-05",
+      "url": "https://www.williams.com/2026/05/05/q1-earnings-recap-data-centers-accelerate-new-growth-paths-for-williams/",
+      "type": "primary"
+    }
+  ],
+  "visual_lineage": [
+    {
+      "visual_id": "V-AI-01",
+      "visual": "U.S. data-center physical power mix and 2024–2030 incremental supply",
+      "data": "industry.ai_data_center_power",
+      "source_ids": [
+        "S19"
+      ]
+    },
+    {
+      "visual_id": "V-POWER-01",
+      "visual": "Power Innovation first five MW and publicly identified customers",
+      "data": "assets.power_projects + assets.power_publicly_identified_meta_share",
+      "source_ids": [
+        "S17",
+        "S22",
+        "S23",
+        "S24",
+        "S25"
+      ]
+    },
+    {
+      "visual_id": "V-FIN-01",
+      "visual": "Latest eight-quarter Adjusted EBITDA / AFFO",
+      "data": "financials.quarterly_8q",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S6",
+        "S7"
+      ]
+    },
+    {
+      "visual_id": "V-VAL-01",
+      "visual": "2030 scenario total value versus current price",
+      "data": "scenarios + valuation.current_price",
+      "source_ids": [
+        "MODEL",
+        "S1",
+        "S2",
+        "S3",
+        "S5",
+        "S17",
+        "S26"
+      ]
+    },
+    {
+      "visual_id": "T-REV-01",
+      "visual": "Reverse-expectations matrix",
+      "data": "reverse_expectations",
+      "source_ids": [
+        "MODEL",
+        "S1",
+        "S2",
+        "S26"
+      ]
+    },
+    {
+      "visual_id": "T-POWER-01",
+      "visual": "Power Innovation project ledger",
+      "data": "assets.power_projects",
+      "source_ids": [
+        "S17",
+        "S22",
+        "S23",
+        "S24",
+        "S25",
+        "S28"
+      ]
+    }
+  ],
+  "qa": {
+    "RC_UNRESOLVED": 0,
+    "H1_H2_RESEARCH_CONTRACT_COMPLETENESS": "PASS",
+    "H2_H3_COVERAGE_LINEAGE": "PASS",
+    "LATEST_FILING_CHECK": "PASS — 2026-08-21 8-K latest identified; no newer financial filing through 2026-09-02 check",
+    "RC_H3_COVERAGE_RATE": "100%",
+    "INDUSTRY_TO_COMPANY_TRANSMISSION": "STRONG",
+    "REPORT_DATA_PACK": "EMITTED",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "VISUAL_DATA_LINEAGE": "PASS",
+    "HTML_PDF_PARITY": "PASS",
+    "PDF_SEARCHABLE_TEXT": "PASS",
+    "PDF_BOOKMARKS": "PASS — 60 outline entries",
+    "TOC_MAX_2_PAGES": "PASS — printed TOC occupies 1 page",
+    "PUBLISHING_FINAL_GATE": "PASS",
+    "HTML_SIDEBAR": "PASS",
+    "KOREAN_PROSE_QUALITY": "PASS"
+  }
+}

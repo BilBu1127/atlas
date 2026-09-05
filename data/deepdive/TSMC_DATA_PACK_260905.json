@@ -1,0 +1,1494 @@
+{
+  "meta": {
+    "ticker": "2330.TW / TSM",
+    "company": "Taiwan Semiconductor Manufacturing Company Limited",
+    "T0": "2026-09-04",
+    "price_asof": "2026-09-04 close",
+    "price_ntd": 2410.0,
+    "filing_asof": "2Q26 results / six-month financials reported 2026-07-16",
+    "monthly_sales_asof": "2026-07; August scheduled 2026-09-10",
+    "consensus_asof": "2026-09-05",
+    "version": "DDOS v1.7 / 2026-09-05",
+    "source_hash": "4b896ef0e69f9ba1"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue": 2.161736,
+        "gross_margin": 54.4,
+        "operating_margin": 42.6,
+        "net_income": 0.838498,
+        "eps": 32.34,
+        "ocf": 1.24197,
+        "capex": 0.94982,
+        "fcf": 0.29215,
+        "roe": 26.2
+      },
+      {
+        "year": 2024,
+        "revenue": 2.894308,
+        "gross_margin": 56.1,
+        "operating_margin": 45.7,
+        "net_income": 1.173268,
+        "eps": 45.25,
+        "ocf": 1.82618,
+        "capex": 0.95601,
+        "fcf": 0.87017,
+        "roe": 30.3
+      },
+      {
+        "year": 2025,
+        "revenue": 3.809054,
+        "gross_margin": 59.9,
+        "operating_margin": 50.8,
+        "net_income": 1.717883,
+        "eps": 66.25,
+        "ocf": 2.27498,
+        "capex": 1.27241,
+        "fcf": 1.00257,
+        "roe": 35.4
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "3Q24",
+        "revenue": 0.7597,
+        "usd_revenue": 23.5,
+        "gross_margin": 57.8,
+        "operating_margin": 47.5,
+        "net_income": 0.3253,
+        "eps": 12.54
+      },
+      {
+        "quarter": "4Q24",
+        "revenue": 0.8685,
+        "usd_revenue": 26.88,
+        "gross_margin": 59.0,
+        "operating_margin": 49.0,
+        "net_income": 0.3747,
+        "eps": 14.45
+      },
+      {
+        "quarter": "1Q25",
+        "revenue": 0.8393,
+        "usd_revenue": 25.53,
+        "gross_margin": 58.8,
+        "operating_margin": 48.5,
+        "net_income": 0.3616,
+        "eps": 13.94
+      },
+      {
+        "quarter": "2Q25",
+        "revenue": 0.9338,
+        "usd_revenue": 30.07,
+        "gross_margin": 58.6,
+        "operating_margin": 49.6,
+        "net_income": 0.3983,
+        "eps": 15.36
+      },
+      {
+        "quarter": "3Q25",
+        "revenue": 0.9899,
+        "usd_revenue": 33.1,
+        "gross_margin": 59.5,
+        "operating_margin": 50.6,
+        "net_income": 0.4523,
+        "eps": 17.44
+      },
+      {
+        "quarter": "4Q25",
+        "revenue": 1.0461,
+        "usd_revenue": 33.73,
+        "gross_margin": 62.3,
+        "operating_margin": 54.0,
+        "net_income": 0.5057,
+        "eps": 19.5
+      },
+      {
+        "quarter": "1Q26",
+        "revenue": 1.1341,
+        "usd_revenue": 35.9,
+        "gross_margin": 66.2,
+        "operating_margin": 58.1,
+        "net_income": 0.5725,
+        "eps": 22.08
+      },
+      {
+        "quarter": "2Q26",
+        "revenue": 1.27038,
+        "usd_revenue": 40.2,
+        "gross_margin": 67.7,
+        "operating_margin": 60.3,
+        "net_income": 0.70656,
+        "eps": 27.25
+      }
+    ],
+    "monthly_2026": [
+      {
+        "month": "2026-01",
+        "revenue_ntd_bn": 401.255,
+        "yoy": 36.8
+      },
+      {
+        "month": "2026-02",
+        "revenue_ntd_bn": 317.657,
+        "yoy": 22.2
+      },
+      {
+        "month": "2026-03",
+        "revenue_ntd_bn": 415.191,
+        "yoy": 45.2
+      },
+      {
+        "month": "2026-04",
+        "revenue_ntd_bn": 410.726,
+        "yoy": 17.5
+      },
+      {
+        "month": "2026-05",
+        "revenue_ntd_bn": 416.975,
+        "yoy": 30.1
+      },
+      {
+        "month": "2026-06",
+        "revenue_ntd_bn": 442.68,
+        "yoy": 67.9
+      },
+      {
+        "month": "2026-07",
+        "revenue_ntd_bn": 467.58,
+        "yoy": 44.7
+      }
+    ],
+    "balance_sheet_2q26": {
+      "cash_and_marketable_securities_ntd_tn": 3.51801,
+      "interest_bearing_debt_ntd_tn": 1.03168,
+      "net_cash_ntd_tn": 2.48633,
+      "net_ppe_ntd_tn": 4.30288,
+      "inventory_ntd_tn": 0.38553,
+      "accounts_receivable_ntd_tn": 0.44092,
+      "shares_bn": 25.932,
+      "inventory_days": 87,
+      "ar_days": 29
+    },
+    "ceilings": [
+      "개별 node ASP·utilization·yield 수치는 비공개",
+      "CoWoS exact capacity/pricing/margin 비공개",
+      "개별 고객 계약·capacity commitment 비공개"
+    ]
+  },
+  "business_kpis": {
+    "2q26": {
+      "hpc_revenue_share_pct": 66,
+      "smartphone_share_pct": 22,
+      "iot_pct": 5,
+      "automotive_pct": 4,
+      "dce_pct": 1,
+      "other_pct": 2,
+      "n2_wafer_revenue_share_pct": 3,
+      "n3_pct": 30,
+      "n5_pct": 33,
+      "n7_pct": 11,
+      "advanced_le_7nm_pct": 77
+    },
+    "2025": {
+      "customers": 534,
+      "products": 12682,
+      "technologies": 305,
+      "managed_capacity_12in_eq_mn_plus": 17,
+      "foundry2_0_market_usd_bn": 305,
+      "foundry2_0_share_pct": 40,
+      "top10_customer_share_pct": 78,
+      "largest_customer_share_pct": 19,
+      "second_customer_share_pct": 17,
+      "hpc_share_pct": 58,
+      "advanced_le_7nm_pct": 74
+    }
+  },
+  "kpis": [
+    {
+      "name": "3개월 월매출 YoY",
+      "current": "2026년 1–7월 누적 +37.0%; 7월 +44.7%",
+      "thresholds": {
+        "green": "3개월 추세가 대체로 +25% 이상",
+        "yellow": "+10~25%로 둔화",
+        "red": "3개월 이상 +10% 미만 또는 YoY 감소"
+      },
+      "cadence": "monthly",
+      "source": "TSMC monthly revenue"
+    },
+    {
+      "name": "HPC / ≤7nm 매출 비중",
+      "current": "2Q26 HPC 66%, ≤7nm 77%",
+      "thresholds": {
+        "green": "HPC ≥60% 및 ≤7nm ≥75%",
+        "yellow": "HPC 55–60% 또는 ≤7nm 70–75%",
+        "red": "지속적으로 HPC <55% 또는 ≤7nm <70%"
+      },
+      "cadence": "quarterly",
+      "source": "TSMC management report"
+    },
+    {
+      "name": "Gross margin",
+      "current": "2Q26 67.7%; 3Q26 guide 65–67%",
+      "thresholds": {
+        "green": "≥64%",
+        "yellow": "60–64%",
+        "red": "전략적 램프 설명 없이 2개 분기 연속 <60%"
+      },
+      "cadence": "quarterly",
+      "source": "TSMC earnings"
+    },
+    {
+      "name": "N2 adoption",
+      "current": "2Q26 wafer revenue 3%",
+      "thresholds": {
+        "green": "2H26–2027 순차적 비중 상승",
+        "yellow": "수요 강세에도 정체",
+        "red": "양산 지연 또는 비중 역행"
+      },
+      "cadence": "quarterly",
+      "source": "TSMC wafer mix / roadmap"
+    },
+    {
+      "name": "CapEx→FCF 전환",
+      "current": "2025 FCF NT$1.003tn; 2026 CapEx US$60–64bn",
+      "thresholds": {
+        "green": "높은 CapEx에도 연간 FCF 성장",
+        "yellow": "FCF가 2개 분기 이상 정체",
+        "red": "매출 성장 둔화 중 연간 FCF 20%+ 감소"
+      },
+      "cadence": "quarterly/annual",
+      "source": "TSMC cash flow"
+    },
+    {
+      "name": "해외 팹 마진 희석",
+      "current": "회사 전망 초기 2–3%p, 향후 3–4%p",
+      "thresholds": {
+        "green": "가이드 범위 내 + 가동률 개선",
+        "yellow": "3–4%p 상단 지속",
+        "red": "4%p 초과 또는 만성 저가동률 징후"
+      },
+      "cadence": "quarterly",
+      "source": "TSMC earnings call"
+    },
+    {
+      "name": "경쟁사 외부 선단 양산",
+      "current": "Intel Foundry 외부매출 규모는 여전히 작고 Samsung은 2nm engagement 확대 중",
+      "thresholds": {
+        "green": "외부 선단 volume이 제한적",
+        "yellow": "의미 있는 design win·양산 증거 증가",
+        "red": "TSMC 점유율·가격·마진을 압박할 규모의 외부 volume과 경제성 확인"
+      },
+      "cadence": "quarterly",
+      "source": "Samsung / Intel filings"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Downside",
+      "probability": 0.25,
+      "revenue_path": [
+        5.2,
+        5.75,
+        6.35,
+        6.8,
+        7.2
+      ],
+      "gross_margin_path": [
+        63,
+        59,
+        58,
+        58,
+        58
+      ],
+      "operating_margin_path": [
+        55,
+        50,
+        49,
+        49,
+        49
+      ],
+      "fcf": [
+        1.25,
+        1.6,
+        2.0,
+        2.4,
+        2.8
+      ],
+      "eps": [
+        101,
+        101,
+        102,
+        103,
+        105
+      ],
+      "ke": 0.105,
+      "terminal_g": 0.03,
+      "dcf_value": 1356.05,
+      "fair_value": 1500,
+      "condition": "AI 인프라 투자 소화와 경쟁 공급 증가가 겹치고, N2·해외 팹 초기비용이 가격·가동률 개선보다 빠르게 나타난다."
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "revenue_path": [
+        5.4,
+        6.7,
+        8.1,
+        9.45,
+        10.6
+      ],
+      "gross_margin_path": [
+        65,
+        63,
+        62,
+        61,
+        60
+      ],
+      "operating_margin_path": [
+        57,
+        55,
+        54,
+        53,
+        52
+      ],
+      "fcf": [
+        1.43,
+        2.1,
+        2.75,
+        3.4,
+        4.0
+      ],
+      "eps": [
+        105,
+        128,
+        151,
+        172,
+        190
+      ],
+      "ke": 0.095,
+      "terminal_g": 0.04,
+      "dcf_value": 2476.26,
+      "fair_value": 2520,
+      "condition": "AI 수요는 높은 수준에서 둔화하되 구조적으로 확장되고, N2/N2P/A16 양산과 해외 팹 램프가 회사 가이드 범위에서 진행된다."
+    },
+    {
+      "name": "Upside",
+      "probability": 0.25,
+      "revenue_path": [
+        5.5,
+        7.3,
+        9.4,
+        11.8,
+        14.2
+      ],
+      "gross_margin_path": [
+        66,
+        65,
+        64,
+        64,
+        63
+      ],
+      "operating_margin_path": [
+        58,
+        58,
+        57,
+        57,
+        56
+      ],
+      "fcf": [
+        1.5,
+        2.3,
+        3.2,
+        4.2,
+        5.3
+      ],
+      "eps": [
+        108,
+        145,
+        185,
+        230,
+        275
+      ],
+      "ke": 0.0875,
+      "terminal_g": 0.045,
+      "dcf_value": 4091.32,
+      "fair_value": 3800,
+      "condition": "GPU뿐 아니라 custom silicon·networking·agentic inference가 동시에 커지고, packaging 지갑점유율과 가격·가동률이 해외비용을 빠르게 상쇄한다."
+    }
+  ],
+  "valuation": {
+    "mode": "Mode C Mature Compounder primary + Mode D cycle cross-check",
+    "current_price": 2410.0,
+    "shares_bn": 25.932,
+    "net_cash_ntd_tn": 2.48633,
+    "ttm_eps": 86.27,
+    "ttm_pe": 27.935551176538773,
+    "probability_weighted_fair_value": 2585.0,
+    "probability_weighted_upside_pct": 0.07261410788381739,
+    "upside_downside_ratio_current": 1.5274725274725274,
+    "core": "FCFE-style DCF using OCF-CapEx, explicit 2026-2030, net cash added",
+    "execution": "N2/N2P/A16 and advanced-packaging ramp realization",
+    "ecosystem": "customer neutrality, design ecosystem, scale, packaging integration",
+    "drag": "cycle risk, overseas-fab dilution, heavy reinvestment, customer concentration, export controls",
+    "expected_value": 2585.0,
+    "expected_irr": "장기 시나리오 cross-check 기준 허들 부근~낮은 두 자릿수; 정확한 확률가중 IRR은 terminal timing 민감도가 높아 범위로 판단",
+    "current_price_ntd": 2410.0
+  },
+  "reverse_expectations": {
+    "current_price": 2410.0,
+    "ke": 0.1,
+    "terminal_g": 0.04,
+    "starting_2026_fcf": 1.425643,
+    "required_fcf_cagr_2026_2030": 0.3205553149588064,
+    "required_2030_fcf": 4.335479889016075,
+    "revenue_required_by_2030_fcf_margin": [
+      {
+        "fcf_margin": 0.3,
+        "revenue_2030": 14.451599630053584,
+        "revenue_cagr_2026_2030": 0.27695160623481585
+      },
+      {
+        "fcf_margin": 0.32,
+        "revenue_2030": 13.548374653175236,
+        "revenue_cagr_2026_2030": 0.25651378588795937
+      },
+      {
+        "fcf_margin": 0.35,
+        "revenue_2030": 12.387085397188788,
+        "revenue_cagr_2026_2030": 0.22867703585492238
+      }
+    ]
+  },
+  "consensus": {
+    "source": "MarketScreener snapshot accessed 2026-09-05",
+    "2026": {
+      "revenue": 5.435233,
+      "net_income": 2.76885,
+      "eps_implied": 106.8,
+      "fcf": 1.426,
+      "capex": 1.957
+    },
+    "2027": {
+      "revenue": 7.294166,
+      "net_income": 3.638327,
+      "eps_implied": 140.3,
+      "fcf": 2.111,
+      "capex": 2.452
+    },
+    "2028": {
+      "revenue": 9.199737,
+      "net_income": 4.563794,
+      "eps_implied": 176.0,
+      "fcf": 2.931,
+      "capex": 2.808
+    },
+    "target_price_mean": 3229.33,
+    "target_price_high": 4200,
+    "target_price_low": 2650,
+    "analyst_count": 33,
+    "rating": "BUY",
+    "revision_trend": "정확한 장기 revision time series는 공개 스냅샷만으로 복원하기 어려워 PRIMARY_SOURCE_CEILING."
+  },
+  "stance": {
+    "zone": "조건부 관심 / 관망에 가까운 관심",
+    "price_bands": {
+      "aggressive_interest": "≤ NT$1,950",
+      "attractive": "NT$1,950–2,100",
+      "watch": "NT$2,100–2,600",
+      "demanding": "> NT$2,600"
+    },
+    "base_fair_value_ntd": 2520,
+    "probability_weighted_fair_value_ntd": 2585.0,
+    "downside_anchor_ntd": 1500,
+    "upside_anchor_ntd": 3800,
+    "horizon": "2026-2030 operating horizon; price bands are T0-relative underwriting zones",
+    "red_rule": "KPI RED 2개 이상 동시 점등 시 강제 재평가"
+  },
+  "catalysts": [
+    {
+      "when": "2026-09-10",
+      "event": "TSMC 2026년 8월 월매출",
+      "bull": "YoY·MoM 강세가 AI/HPC 공급 긴축의 지속성을 확인",
+      "bear": "급격한 둔화가 고객 inventory digestion 신호",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2026-10-08",
+      "event": "TSMC 2026년 9월 월매출",
+      "bull": "3Q 매출 가이던스 상단 이상의 run-rate",
+      "bear": "가이던스 하단/차질 가능성",
+      "sensitivity": "M"
+    },
+    {
+      "when": "2026-10 (회사 일정 공지 대기)",
+      "event": "3Q26 실적 및 4Q26 가이던스",
+      "bull": "GM 65%+ 유지, N2 ramp 비용 흡수, 2026 성장 전망 유지/상향",
+      "bear": "N2·해외 fab 희석이 예상보다 크고 4Q 성장 둔화",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2026-11-10",
+      "event": "10월 월매출",
+      "bull": "N2/AI 계절성 이후에도 고성장 유지",
+      "bear": "선단공정 가동률 정상화가 빠르게 진행",
+      "sensitivity": "M"
+    },
+    {
+      "when": "2026-12-10",
+      "event": "11월 월매출",
+      "bull": "연말 출하 강세",
+      "bear": "고객 조정 확대",
+      "sensitivity": "M"
+    },
+    {
+      "when": "2027-01-08",
+      "event": "2026년 12월 월매출",
+      "bull": "연간 고성장 마무리",
+      "bear": "2027 시작점이 약화",
+      "sensitivity": "M"
+    },
+    {
+      "when": "2027-01 (예상)",
+      "event": "4Q26/FY26 실적 및 2027 CapEx",
+      "bull": "FCF 회수 가시성 상승, CapEx가 수요와 정합",
+      "bear": "CapEx 추가 상향에도 매출·마진 전망 둔화",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027 H1",
+      "event": "N2P/A16 양산·고객 채택 증거",
+      "bull": "N2 family와 backside power delivery 채택 확대",
+      "bear": "고객 전환 지연·대체 노드 사용",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027 H2",
+      "event": "Arizona Fab 2 HVM 진행 상황",
+      "bull": "일정·가동률·고객 mix가 계획대로 전개",
+      "bear": "지연 또는 구조적 비용 상승",
+      "sensitivity": "M"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC001",
+      "h1_promise": "Economic definition / Foundry2.0 / profit pool",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1 §1.2 / Ch3 §3.1"
+    },
+    {
+      "rc_id": "RC002",
+      "h1_promise": "AI/HPC bottom-up demand",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1 §1.1"
+    },
+    {
+      "rc_id": "RC003",
+      "h1_promise": "Leading-edge supply / cycle / barriers / buying criteria",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1 §1.2 / Ch3 §3.6"
+    },
+    {
+      "rc_id": "RC004",
+      "h1_promise": "N3/N2/N2P/A16/A14 quantitative roadmap / yield alternatives",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3 §3.3 + App C1"
+    },
+    {
+      "rc_id": "RC005",
+      "h1_promise": "CoWoS/SoIC architecture/capacity/pricing/value capture",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch1 §1.3 / Ch3 §3.4 + App C2"
+    },
+    {
+      "rc_id": "RC006",
+      "h1_promise": "Customer concentration/jobs/switching/commitments/adoption",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch1 §1.4 / Ch3 §3.5 + App C3"
+    },
+    {
+      "rc_id": "RC007",
+      "h1_promise": "Node/platform economics / mix/util/ASP/cost/depr/margin",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3 §3.2 / Ch4 §4.2 + App C4"
+    },
+    {
+      "rc_id": "RC008",
+      "h1_promise": "Global fab ledger / subsidy / utilization / margin dilution",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1 §1.5 / Ch3 §3.7"
+    },
+    {
+      "rc_id": "RC009",
+      "h1_promise": "Management promise→delivery",
+      "status": "COMPLETE",
+      "h3_locator": "Ch2 §2.2"
+    },
+    {
+      "rc_id": "RC010",
+      "h1_promise": "3Y + 8Q financial / OCF / CapEx / FCF / accounting",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4 §4.1–4.5 + App A1–A2"
+    },
+    {
+      "rc_id": "RC011",
+      "h1_promise": "Capital structure / shares / dividend / dilution",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4 §4.4 / Ch6 §6.2"
+    },
+    {
+      "rc_id": "RC012",
+      "h1_promise": "Equipment/test/material/power/water/workforce/export regulation",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch1 §1.5 / Ch6 §6.4 + App C5"
+    },
+    {
+      "rc_id": "RC013",
+      "h1_promise": "Consensus/revisions/TP/reco/ownership/positioning/short",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch5 §5.4–5.6 + App D3"
+    },
+    {
+      "rc_id": "RC014",
+      "h1_promise": "Down/base/up operating scenarios",
+      "status": "COMPLETE",
+      "h3_locator": "Ch5 §5.2"
+    },
+    {
+      "rc_id": "RC015",
+      "h1_promise": "Mode C + D valuation / historical band / reverse expectations / ADR-common",
+      "status": "COMPLETE",
+      "h3_locator": "Ch5 §5.1–5.7 + App D1–D4"
+    },
+    {
+      "rc_id": "RC016",
+      "h1_promise": "Variant perception / KPIs / catalysts / thesis break",
+      "status": "COMPLETE",
+      "h3_locator": "Ch0 / Ch6 §6.1–6.7"
+    }
+  ],
+  "as_of_registry": {
+    "PRICE_ASOF": "2026-09-04 close NT$2,410",
+    "FILING_ASOF": "2Q26 results 2026-07-16",
+    "MONTHLY_SALES_ASOF": "July 2026; August due 2026-09-10",
+    "CONSENSUS_ASOF": "2026-09-05 secondary snapshot",
+    "LATEST_FILING_CHECK": "PASS as of 2026-09-05"
+  },
+  "source_registry": [
+    {
+      "id": "S01",
+      "title": "TSMC 2Q26 Quarterly Results",
+      "publisher": "TSMC",
+      "date": "2026-07-16",
+      "url": "https://investor.tsmc.com/english/quarterly-results/2026/q2"
+    },
+    {
+      "id": "S02",
+      "title": "TSMC 2Q26 Earnings Release",
+      "publisher": "TSMC",
+      "date": "2026-07-16",
+      "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/a80d7933be643644081584087731f73b22ea5a2c/2Q26%20EarningsRelease.pdf"
+    },
+    {
+      "id": "S03",
+      "title": "TSMC 2Q26 Management Report",
+      "publisher": "TSMC",
+      "date": "2026-07-16",
+      "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/qr/phase4_reports/2026-07/bf09036349a253e83f78155099133806cad0320b/2Q26%20ManagementReport.pdf"
+    },
+    {
+      "id": "S04",
+      "title": "TSMC 2025 Annual Report web edition",
+      "publisher": "TSMC",
+      "date": "2026",
+      "url": "https://investor.tsmc.com/static/annualReports/2025/english/index.html"
+    },
+    {
+      "id": "S05",
+      "title": "TSMC 2025 Form 20-F",
+      "publisher": "TSMC",
+      "date": "2026-04",
+      "url": "https://investor.tsmc.com/sites/ir/sec-filings/2025_20F%20Report.pdf"
+    },
+    {
+      "id": "S06",
+      "title": "TSMC 2026 Monthly Revenue",
+      "publisher": "TSMC",
+      "date": "2026-09-05 access",
+      "url": "https://investor.tsmc.com/english/monthly-revenue/2026"
+    },
+    {
+      "id": "S07",
+      "title": "TSMC Financial Calendar",
+      "publisher": "TSMC",
+      "date": "2026-09-05 access",
+      "url": "https://investor.tsmc.com/english/financial-calendar"
+    },
+    {
+      "id": "S08",
+      "title": "TSMC N2 Technology",
+      "publisher": "TSMC",
+      "date": "2026 access",
+      "url": "https://www.tsmc.com/english/dedicatedFoundry/technology/logic/l_2nm"
+    },
+    {
+      "id": "S09",
+      "title": "TSMC A16 Technology",
+      "publisher": "TSMC",
+      "date": "2026 access",
+      "url": "https://www.tsmc.com/english/dedicatedFoundry/technology/logic/l_A16"
+    },
+    {
+      "id": "S10",
+      "title": "TSMC A14 Technology",
+      "publisher": "TSMC",
+      "date": "2026 access",
+      "url": "https://www.tsmc.com/english/dedicatedFoundry/technology/logic/l_A14"
+    },
+    {
+      "id": "S11",
+      "title": "TSMC 2026 Technology Symposium release",
+      "publisher": "TSMC",
+      "date": "2026",
+      "url": "https://pr.tsmc.com/english/news/3302"
+    },
+    {
+      "id": "S12",
+      "title": "TSMC Arizona Manufacturing",
+      "publisher": "TSMC",
+      "date": "2026 access",
+      "url": "https://www.tsmc.com/static/abouttsmcaz/index.htm"
+    },
+    {
+      "id": "S13",
+      "title": "NVIDIA FY27 Q2 Results",
+      "publisher": "NVIDIA",
+      "date": "2026-08-26",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027"
+    },
+    {
+      "id": "S14",
+      "title": "AMD 2Q26 Results",
+      "publisher": "AMD",
+      "date": "2026-08-04",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results"
+    },
+    {
+      "id": "S15",
+      "title": "Broadcom FY26 Q3 Results",
+      "publisher": "Broadcom",
+      "date": "2026-09-02",
+      "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial"
+    },
+    {
+      "id": "S16",
+      "title": "Samsung Electronics 2Q26 Results",
+      "publisher": "Samsung Electronics",
+      "date": "2026",
+      "url": "https://news.samsung.com/global/samsung-electronics-announces-second-quarter-2026-results"
+    },
+    {
+      "id": "S17",
+      "title": "Intel 2Q26 10-Q",
+      "publisher": "Intel",
+      "date": "2026",
+      "url": "https://www.intc.com/filings-reports/quarterly-reports/content/0000050863-26-000157/0000050863-26-000157.pdf"
+    },
+    {
+      "id": "S18",
+      "title": "U.S. Department of Commerce TSMC CHIPS award",
+      "publisher": "U.S. DoC",
+      "date": "2024",
+      "url": "https://www.commerce.gov/news/press-releases/2024/11/biden-harris-administration-announces-final-66-billion-chips-incentives"
+    },
+    {
+      "id": "S19",
+      "title": "European Commission ESMC state aid decision",
+      "publisher": "European Commission",
+      "date": "2024",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_24_4286"
+    },
+    {
+      "id": "S20",
+      "title": "MarketScreener TSMC Financial Forecasts",
+      "publisher": "MarketScreener",
+      "date": "2026-09-05 access",
+      "url": "https://www.marketscreener.com/quote/stock/TSMC-TAIWAN-SEMICONDUCTOR-6492349/finances/"
+    },
+    {
+      "id": "S21",
+      "title": "MarketScreener 2330 price / static chart",
+      "publisher": "MarketScreener",
+      "date": "2026-09-04",
+      "url": "https://www.marketscreener.com/quote/stock/TSMC-TAIWAN-SEMICONDUCTOR-6492349/graphics-historical/"
+    },
+    {
+      "id": "S22",
+      "title": "MarketScreener TSMC consensus",
+      "publisher": "MarketScreener",
+      "date": "2026-09-05 access",
+      "url": "https://www.marketscreener.com/quote/stock/TSMC-TAIWAN-SEMICONDUCTOR-6492349/consensus/"
+    },
+    {
+      "id": "S23",
+      "title": "TSMC 2025 Annual Report - Board & Management",
+      "publisher": "TSMC",
+      "date": "2026",
+      "url": "https://investor.tsmc.com/static/annualReports/2025/english/index.html"
+    },
+    {
+      "id": "S24",
+      "title": "TSMC July 2026 Revenue Report",
+      "publisher": "TSMC",
+      "date": "2026-08-10",
+      "url": "https://pr.tsmc.com/english/news/3329"
+    }
+  ],
+  "qa": {
+    "RC_H3_COVERAGE_RATE": "100%",
+    "RC_UNRESOLVED": 0,
+    "LATEST_FILING_CHECK": "PASS",
+    "PRIMARY_SOURCE_CONSUMPTION": "PASS"
+  },
+  "market_history": {
+    "method": "MarketScreener calendar-year market capitalization divided by 25.932bn shares; 2026 point equals 2026-09-04 actual close. Directional secondary proxy, not daily total-return series.",
+    "source_url": "https://www.marketscreener.com/quote/stock/TSMC-TAIWAN-SEMICONDUCTOR-40246785/valuation/",
+    "points": [
+      {
+        "year": 2021,
+        "market_cap_ntd_bn": 15947.184,
+        "implied_price_ntd": 614.9615918556224,
+        "pe_x": 26.7
+      },
+      {
+        "year": 2022,
+        "market_cap_ntd_bn": 11629.776,
+        "implied_price_ntd": 448.4720037019898,
+        "pe_x": 11.4
+      },
+      {
+        "year": 2023,
+        "market_cap_ntd_bn": 15377.718,
+        "implied_price_ntd": 593.0016196205461,
+        "pe_x": 18.3
+      },
+      {
+        "year": 2024,
+        "market_cap_ntd_bn": 27877.688,
+        "implied_price_ntd": 1075.0303871664353,
+        "pe_x": 23.8
+      },
+      {
+        "year": 2025,
+        "market_cap_ntd_bn": 40195.412,
+        "implied_price_ntd": 1550.03131266389,
+        "pe_x": 23.4
+      },
+      {
+        "year": 2026,
+        "market_cap_ntd_bn": 62497.012,
+        "implied_price_ntd": 2410.0,
+        "pe_x": 22.4
+      }
+    ]
+  },
+  "visual_registry": [
+    {
+      "VIS_ID": "VIS-001",
+      "FIGURE_TITLE": "2026 월매출: 고성장은 아직 실물 매출로 확인된다",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.monthly_2026",
+      "SOURCE_VALUES": [
+        {
+          "month": "2026-01",
+          "revenue_ntd_bn": 401.255,
+          "yoy": 36.8
+        },
+        {
+          "month": "2026-02",
+          "revenue_ntd_bn": 317.657,
+          "yoy": 22.2
+        },
+        {
+          "month": "2026-03",
+          "revenue_ntd_bn": 415.191,
+          "yoy": 45.2
+        },
+        {
+          "month": "2026-04",
+          "revenue_ntd_bn": 410.726,
+          "yoy": 17.5
+        },
+        {
+          "month": "2026-05",
+          "revenue_ntd_bn": 416.975,
+          "yoy": 30.1
+        },
+        {
+          "month": "2026-06",
+          "revenue_ntd_bn": 442.68,
+          "yoy": 67.9
+        },
+        {
+          "month": "2026-07",
+          "revenue_ntd_bn": 467.58,
+          "yoy": 44.7
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "a19dae31cc85fc",
+      "DISPLAY_VALUES": [
+        {
+          "month": "2026-01",
+          "revenue_ntd_bn": 401.255,
+          "yoy": 36.8
+        },
+        {
+          "month": "2026-02",
+          "revenue_ntd_bn": 317.657,
+          "yoy": 22.2
+        },
+        {
+          "month": "2026-03",
+          "revenue_ntd_bn": 415.191,
+          "yoy": 45.2
+        },
+        {
+          "month": "2026-04",
+          "revenue_ntd_bn": 410.726,
+          "yoy": 17.5
+        },
+        {
+          "month": "2026-05",
+          "revenue_ntd_bn": 416.975,
+          "yoy": 30.1
+        },
+        {
+          "month": "2026-06",
+          "revenue_ntd_bn": 442.68,
+          "yoy": 67.9
+        },
+        {
+          "month": "2026-07",
+          "revenue_ntd_bn": 467.58,
+          "yoy": 44.7
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Ch1 §1.1",
+      "TABLE_LOCATOR": "Appendix A3",
+      "CAPTION_LOCATOR": "#vis-001-caption",
+      "RENDERED_ASSET_LOCATOR": "#vis-001"
+    },
+    {
+      "VIS_ID": "VIS-002",
+      "FIGURE_TITLE": "8분기 매출과 마진: volume과 economics가 함께 상승",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.quarterly_8q",
+      "SOURCE_VALUES": [
+        {
+          "quarter": "3Q24",
+          "revenue": 0.7597,
+          "usd_revenue": 23.5,
+          "gross_margin": 57.8,
+          "operating_margin": 47.5,
+          "net_income": 0.3253,
+          "eps": 12.54
+        },
+        {
+          "quarter": "4Q24",
+          "revenue": 0.8685,
+          "usd_revenue": 26.88,
+          "gross_margin": 59.0,
+          "operating_margin": 49.0,
+          "net_income": 0.3747,
+          "eps": 14.45
+        },
+        {
+          "quarter": "1Q25",
+          "revenue": 0.8393,
+          "usd_revenue": 25.53,
+          "gross_margin": 58.8,
+          "operating_margin": 48.5,
+          "net_income": 0.3616,
+          "eps": 13.94
+        },
+        {
+          "quarter": "2Q25",
+          "revenue": 0.9338,
+          "usd_revenue": 30.07,
+          "gross_margin": 58.6,
+          "operating_margin": 49.6,
+          "net_income": 0.3983,
+          "eps": 15.36
+        },
+        {
+          "quarter": "3Q25",
+          "revenue": 0.9899,
+          "usd_revenue": 33.1,
+          "gross_margin": 59.5,
+          "operating_margin": 50.6,
+          "net_income": 0.4523,
+          "eps": 17.44
+        },
+        {
+          "quarter": "4Q25",
+          "revenue": 1.0461,
+          "usd_revenue": 33.73,
+          "gross_margin": 62.3,
+          "operating_margin": 54.0,
+          "net_income": 0.5057,
+          "eps": 19.5
+        },
+        {
+          "quarter": "1Q26",
+          "revenue": 1.1341,
+          "usd_revenue": 35.9,
+          "gross_margin": 66.2,
+          "operating_margin": 58.1,
+          "net_income": 0.5725,
+          "eps": 22.08
+        },
+        {
+          "quarter": "2Q26",
+          "revenue": 1.27038,
+          "usd_revenue": 40.2,
+          "gross_margin": 67.7,
+          "operating_margin": 60.3,
+          "net_income": 0.70656,
+          "eps": 27.25
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "3fcf720803b074",
+      "DISPLAY_VALUES": [
+        {
+          "quarter": "3Q24",
+          "revenue": 0.7597,
+          "usd_revenue": 23.5,
+          "gross_margin": 57.8,
+          "operating_margin": 47.5,
+          "net_income": 0.3253,
+          "eps": 12.54
+        },
+        {
+          "quarter": "4Q24",
+          "revenue": 0.8685,
+          "usd_revenue": 26.88,
+          "gross_margin": 59.0,
+          "operating_margin": 49.0,
+          "net_income": 0.3747,
+          "eps": 14.45
+        },
+        {
+          "quarter": "1Q25",
+          "revenue": 0.8393,
+          "usd_revenue": 25.53,
+          "gross_margin": 58.8,
+          "operating_margin": 48.5,
+          "net_income": 0.3616,
+          "eps": 13.94
+        },
+        {
+          "quarter": "2Q25",
+          "revenue": 0.9338,
+          "usd_revenue": 30.07,
+          "gross_margin": 58.6,
+          "operating_margin": 49.6,
+          "net_income": 0.3983,
+          "eps": 15.36
+        },
+        {
+          "quarter": "3Q25",
+          "revenue": 0.9899,
+          "usd_revenue": 33.1,
+          "gross_margin": 59.5,
+          "operating_margin": 50.6,
+          "net_income": 0.4523,
+          "eps": 17.44
+        },
+        {
+          "quarter": "4Q25",
+          "revenue": 1.0461,
+          "usd_revenue": 33.73,
+          "gross_margin": 62.3,
+          "operating_margin": 54.0,
+          "net_income": 0.5057,
+          "eps": 19.5
+        },
+        {
+          "quarter": "1Q26",
+          "revenue": 1.1341,
+          "usd_revenue": 35.9,
+          "gross_margin": 66.2,
+          "operating_margin": 58.1,
+          "net_income": 0.5725,
+          "eps": 22.08
+        },
+        {
+          "quarter": "2Q26",
+          "revenue": 1.27038,
+          "usd_revenue": 40.2,
+          "gross_margin": 67.7,
+          "operating_margin": 60.3,
+          "net_income": 0.70656,
+          "eps": 27.25
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Ch4 §4.2",
+      "TABLE_LOCATOR": "Appendix A2",
+      "CAPTION_LOCATOR": "#vis-002-caption",
+      "RENDERED_ASSET_LOCATOR": "#vis-002"
+    },
+    {
+      "VIS_ID": "VIS-003",
+      "FIGURE_TITLE": "현금창출의 본질: OCF가 늘어도 CapEx가 FCF를 결정한다",
+      "AUTHORITATIVE_SOURCE_BLOCK": "financials.annual_3y.[ocf,capex,fcf]",
+      "SOURCE_VALUES": [
+        {
+          "year": 2023,
+          "ocf": 1.24197,
+          "capex": 0.94982,
+          "fcf": 0.29215
+        },
+        {
+          "year": 2024,
+          "ocf": 1.82618,
+          "capex": 0.95601,
+          "fcf": 0.87017
+        },
+        {
+          "year": 2025,
+          "ocf": 2.27498,
+          "capex": 1.27241,
+          "fcf": 1.00257
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "ea37d2c1f9c7a9",
+      "DISPLAY_VALUES": [
+        {
+          "year": 2023,
+          "ocf": 1.24197,
+          "capex": 0.94982,
+          "fcf": 0.29215
+        },
+        {
+          "year": 2024,
+          "ocf": 1.82618,
+          "capex": 0.95601,
+          "fcf": 0.87017
+        },
+        {
+          "year": 2025,
+          "ocf": 2.27498,
+          "capex": 1.27241,
+          "fcf": 1.00257
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Ch4 §4.3",
+      "TABLE_LOCATOR": "Appendix A1",
+      "CAPTION_LOCATOR": "#vis-003-caption",
+      "RENDERED_ASSET_LOCATOR": "#vis-003"
+    },
+    {
+      "VIS_ID": "VIS-004",
+      "FIGURE_TITLE": "2Q26 wafer mix: 선단공정이 매출의 중심",
+      "AUTHORITATIVE_SOURCE_BLOCK": "business_kpis.2q26.node_mix",
+      "SOURCE_VALUES": {
+        "N2": 3,
+        "N3": 30,
+        "N5": 33,
+        "N7": 11,
+        "Other": 23
+      },
+      "SOURCE_VERSION_OR_HASH": "19974493adb102",
+      "DISPLAY_VALUES": {
+        "N2": 3,
+        "N3": 30,
+        "N5": 33,
+        "N7": 11,
+        "Other": 23
+      },
+      "NARRATIVE_LOCATOR": "Ch3 §3.3",
+      "TABLE_LOCATOR": "business_kpis.2q26",
+      "CAPTION_LOCATOR": "#vis-004-caption",
+      "RENDERED_ASSET_LOCATOR": "#vis-004"
+    },
+    {
+      "VIS_ID": "VIS-005",
+      "FIGURE_TITLE": "운영 시나리오: 2030년 매출 경로가 크게 갈린다",
+      "AUTHORITATIVE_SOURCE_BLOCK": "scenarios.revenue_path",
+      "SOURCE_VALUES": [
+        {
+          "name": "Downside",
+          "revenue_path": [
+            5.2,
+            5.75,
+            6.35,
+            6.8,
+            7.2
+          ]
+        },
+        {
+          "name": "Base",
+          "revenue_path": [
+            5.4,
+            6.7,
+            8.1,
+            9.45,
+            10.6
+          ]
+        },
+        {
+          "name": "Upside",
+          "revenue_path": [
+            5.5,
+            7.3,
+            9.4,
+            11.8,
+            14.2
+          ]
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "bf2f2c01bebf13",
+      "DISPLAY_VALUES": [
+        {
+          "name": "Downside",
+          "revenue_path": [
+            5.2,
+            5.75,
+            6.35,
+            6.8,
+            7.2
+          ]
+        },
+        {
+          "name": "Base",
+          "revenue_path": [
+            5.4,
+            6.7,
+            8.1,
+            9.45,
+            10.6
+          ]
+        },
+        {
+          "name": "Upside",
+          "revenue_path": [
+            5.5,
+            7.3,
+            9.4,
+            11.8,
+            14.2
+          ]
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Ch5 §5.2",
+      "TABLE_LOCATOR": "Appendix D1",
+      "CAPTION_LOCATOR": "#vis-005-caption",
+      "RENDERED_ASSET_LOCATOR": "#vis-005"
+    },
+    {
+      "VIS_ID": "VIS-006",
+      "FIGURE_TITLE": "현재가와 시나리오 판단용 가치",
+      "AUTHORITATIVE_SOURCE_BLOCK": "scenarios.[probability,fair_value]",
+      "SOURCE_VALUES": [
+        {
+          "name": "Downside",
+          "probability": 0.25,
+          "fair_value": 1500
+        },
+        {
+          "name": "Base",
+          "probability": 0.5,
+          "fair_value": 2520
+        },
+        {
+          "name": "Upside",
+          "probability": 0.25,
+          "fair_value": 3800
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "cc811ffc0adbf4",
+      "DISPLAY_VALUES": [
+        {
+          "name": "Downside",
+          "probability": 0.25,
+          "fair_value": 1500
+        },
+        {
+          "name": "Base",
+          "probability": 0.5,
+          "fair_value": 2520
+        },
+        {
+          "name": "Upside",
+          "probability": 0.25,
+          "fair_value": 3800
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Ch5 §5.2",
+      "TABLE_LOCATOR": "Appendix D1",
+      "CAPTION_LOCATOR": "#vis-006-caption",
+      "RENDERED_ASSET_LOCATOR": "#vis-006"
+    },
+    {
+      "VIS_ID": "VIS-007",
+      "FIGURE_TITLE": "역산 기대치: 높은 FCF margin을 가정해도 큰 매출이 필요하다",
+      "AUTHORITATIVE_SOURCE_BLOCK": "reverse_expectations.revenue_required_by_2030_fcf_margin",
+      "SOURCE_VALUES": [
+        {
+          "fcf_margin": 0.3,
+          "revenue_2030": 14.451599630053584,
+          "revenue_cagr_2026_2030": 0.27695160623481585
+        },
+        {
+          "fcf_margin": 0.32,
+          "revenue_2030": 13.548374653175236,
+          "revenue_cagr_2026_2030": 0.25651378588795937
+        },
+        {
+          "fcf_margin": 0.35,
+          "revenue_2030": 12.387085397188788,
+          "revenue_cagr_2026_2030": 0.22867703585492238
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "33ef7ef8a83ce8",
+      "DISPLAY_VALUES": [
+        {
+          "fcf_margin": 0.3,
+          "revenue_2030": 14.451599630053584,
+          "revenue_cagr_2026_2030": 0.27695160623481585
+        },
+        {
+          "fcf_margin": 0.32,
+          "revenue_2030": 13.548374653175236,
+          "revenue_cagr_2026_2030": 0.25651378588795937
+        },
+        {
+          "fcf_margin": 0.35,
+          "revenue_2030": 12.387085397188788,
+          "revenue_cagr_2026_2030": 0.22867703585492238
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Ch5 §5.5",
+      "TABLE_LOCATOR": "Appendix D2",
+      "CAPTION_LOCATOR": "#vis-007-caption",
+      "RENDERED_ASSET_LOCATOR": "#vis-007"
+    },
+    {
+      "VIS_ID": "VIS-008",
+      "FIGURE_TITLE": "가격 재평가의 속도: 2022 저점 이후 AI 프리미엄이 빠르게 붙었다",
+      "AUTHORITATIVE_SOURCE_BLOCK": "market_history.points",
+      "SOURCE_VALUES": [
+        {
+          "year": 2021,
+          "implied_price_ntd": 614.9615918556224
+        },
+        {
+          "year": 2022,
+          "implied_price_ntd": 448.4720037019898
+        },
+        {
+          "year": 2023,
+          "implied_price_ntd": 593.0016196205461
+        },
+        {
+          "year": 2024,
+          "implied_price_ntd": 1075.0303871664353
+        },
+        {
+          "year": 2025,
+          "implied_price_ntd": 1550.03131266389
+        },
+        {
+          "year": 2026,
+          "implied_price_ntd": 2410.0
+        }
+      ],
+      "SOURCE_VERSION_OR_HASH": "2c2e81e7f406d8",
+      "DISPLAY_VALUES": [
+        {
+          "year": 2021,
+          "implied_price_ntd": 614.9615918556224
+        },
+        {
+          "year": 2022,
+          "implied_price_ntd": 448.4720037019898
+        },
+        {
+          "year": 2023,
+          "implied_price_ntd": 593.0016196205461
+        },
+        {
+          "year": 2024,
+          "implied_price_ntd": 1075.0303871664353
+        },
+        {
+          "year": 2025,
+          "implied_price_ntd": 1550.03131266389
+        },
+        {
+          "year": 2026,
+          "implied_price_ntd": 2410.0
+        }
+      ],
+      "NARRATIVE_LOCATOR": "Appendix D4",
+      "TABLE_LOCATOR": "market_history",
+      "CAPTION_LOCATOR": "#vis-008-caption",
+      "RENDERED_ASSET_LOCATOR": "#vis-008"
+    }
+  ],
+  "publishing_qa": {
+    "visuals_total": 8,
+    "decision_visuals_parity_pass": 8,
+    "stale_visual_assets": 0,
+    "data_pack_report_parity": "PASS",
+    "rendered_visual_parity_qa": "PASS",
+    "publishing_acceptance": "PASS",
+    "pdf_pages": 25,
+    "toc_clickable": "PASS",
+    "pdf_bookmarks": "PASS",
+    "html_sidebar": "PASS",
+    "searchable_text": "PASS",
+    "contact_sheet_composition_qa": "PASS",
+    "gate_map": {
+      "REPORT_DATA_PACK": "EMITTED",
+      "DATA_PACK_REPORT_PARITY": "PASS",
+      "CONTENT_MEANING_LOCK_PRESERVED": "PASS",
+      "PUBLISHED_TOP_LEVEL_SCHEMA_MATCH": "PASS",
+      "EXPLANATORY_DEPTH_PRESERVED": "PASS",
+      "CORE_LANDSCAPE_PAGES": 0,
+      "PRINTED_TOC_PAGES": 1,
+      "TOC_CLICKABLE": "PASS",
+      "PDF_BOOKMARKS": "PASS",
+      "HTML_SIDEBAR": "PASS",
+      "SEARCHABLE_TEXT": "PASS",
+      "KOREAN_READABILITY": "PASS",
+      "KOREAN_PROSE_QUALITY": "PASS",
+      "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+      "EXPLANATORY_SPACE_ALLOCATION": "PASS",
+      "SMART_CHAPTER_TRANSITIONS": "PASS",
+      "ARGUMENT_BLOCK_PAGINATION": "PASS",
+      "ACCIDENTAL_SPARSE_PAGES": 0,
+      "DENSITY_CONTROL": "PASS",
+      "VISUAL_SUBSTITUTION": "PASS",
+      "VISUAL_GRAMMAR_VARIETY": "PASS",
+      "CHART_READABILITY": "PASS",
+      "TABLE_QUALITY": "PASS",
+      "CONTACT_SHEET_COMPOSITION_QA": "PASS",
+      "SEMANTIC_GOLDEN_QA": "PASS",
+      "VISUAL_GOLDEN_QA": "PASS",
+      "GOLDEN_PARITY": "PASS",
+      "FIGURE_NUMERICAL_PARITY": "PASS",
+      "VISUAL_DATA_LINEAGE": "PASS",
+      "VISUAL_SEMANTIC_PARITY": "PASS",
+      "STALE_VISUAL_ASSETS": 0,
+      "RENDERED_VISUAL_PARITY_QA": "PASS",
+      "METADATA_FIREWALL": "PASS",
+      "SOURCE_LEDGER": "PASS"
+    },
+    "artifact_sha256": {
+      "html": "27c27675a289955b566a3c5990ff48fd53d53b8f0fb03caa6cdd4c87743e87ac",
+      "pdf": "8488e66f7e8dbdf156b9003f9eb65432e0321b5745e1bfd61f0a042ff6188da4"
+    }
+  }
+}

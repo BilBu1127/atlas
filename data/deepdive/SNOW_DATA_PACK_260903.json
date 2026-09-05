@@ -1,0 +1,417 @@
+{
+  "meta": {
+    "ticker": "SNOW",
+    "company": "Snowflake Inc.",
+    "mode": "COMPANY_DEEP_DIVE",
+    "os_version": "1.7",
+    "publishing_date_kst": "2026-09-03",
+    "filename": "SNOW_DATA_PACK_260903.json"
+  },
+  "as_of_registry": {
+    "price_regular_close": {
+      "date": "2026-09-02",
+      "value_usd": 305.84
+    },
+    "price_post_earnings_reference": {
+      "date": "2026-09-02/03 extended",
+      "value_usd": 375.51,
+      "note": "overnight indication, not regular close"
+    },
+    "filing_asof": "2026-09-02 8-K earnings exhibit; detailed FY27 Q2 10-Q not yet located",
+    "transcript_asof": "2026-09-02",
+    "consensus_asof": "2026-09-02 pre-earnings + immediate reaction",
+    "latest_filing_check": "2026-09-03 Asia/Seoul publishing check: SEC latest Snowflake filing remains 2026-09-02 Form 8-K earnings exhibit; detailed FY27 Q2 Form 10-Q not yet located."
+  },
+  "latest_quarter": {
+    "quarter": "FY27 Q2",
+    "revenue_b": 1.55,
+    "product_revenue_b": 1.4919,
+    "product_growth_yoy_pct": 37,
+    "nrr_pct": 126,
+    "customers_1m_plus": 828,
+    "forbes_global_2000": 829,
+    "rpo_b": 9.0,
+    "gaap_product_gm_pct": 70.9,
+    "non_gaap_product_gm_pct": 74.7,
+    "gaap_op_margin_pct": -17.0,
+    "non_gaap_op_margin_pct": 15.3,
+    "adjusted_fcf_margin_pct": 6.0
+  },
+  "fy27_guidance": {
+    "product_revenue_b": 6.07,
+    "growth_yoy_pct": 36,
+    "non_gaap_product_gm_pct": 74.0,
+    "non_gaap_op_margin_pct": 14.5,
+    "adjusted_fcf_margin_pct": 23.0,
+    "non_gaap_diluted_shares_m": 380
+  },
+  "balance_sheet": {
+    "cash_and_investments_b": 4.329,
+    "convertible_notes_b": 2.284,
+    "simple_net_cash_b": 2.045,
+    "convert_principal_b": 2.3,
+    "initial_conversion_price_usd": 157.5,
+    "capped_call_cap_price_usd": 225.0
+  },
+  "annual_history": [
+    {
+      "fy": "FY24",
+      "revenue": 2.806489,
+      "product": 2.666,
+      "sbc": 1.168015
+    },
+    {
+      "fy": "FY25",
+      "revenue": 3.626396,
+      "product": 3.46,
+      "sbc": 1.479314
+    },
+    {
+      "fy": "FY26",
+      "revenue": 4.683946,
+      "product": 4.4723,
+      "sbc": 1.599547
+    }
+  ],
+  "quarterly_history": [
+    {
+      "q": "FY25 Q3",
+      "prod": 0.9003,
+      "growth": 29,
+      "nrr": 127,
+      "m1": 542,
+      "g2000": 754,
+      "rpo": 5.7
+    },
+    {
+      "q": "FY25 Q4",
+      "prod": 0.9433,
+      "growth": 28,
+      "nrr": 126,
+      "m1": 580,
+      "g2000": 745,
+      "rpo": 6.9
+    },
+    {
+      "q": "FY26 Q1",
+      "prod": 0.9968,
+      "growth": 26,
+      "nrr": 124,
+      "m1": 606,
+      "g2000": 754,
+      "rpo": 6.7
+    },
+    {
+      "q": "FY26 Q2",
+      "prod": 1.09,
+      "growth": 32,
+      "nrr": 125,
+      "m1": 654,
+      "g2000": 751,
+      "rpo": 6.9
+    },
+    {
+      "q": "FY26 Q3",
+      "prod": 1.16,
+      "growth": 29,
+      "nrr": 125,
+      "m1": 688,
+      "g2000": 766,
+      "rpo": 7.88
+    },
+    {
+      "q": "FY26 Q4",
+      "prod": 1.2266,
+      "growth": 30,
+      "nrr": 125,
+      "m1": 733,
+      "g2000": null,
+      "rpo": 9.77
+    },
+    {
+      "q": "FY27 Q1",
+      "prod": 1.33,
+      "growth": 34,
+      "nrr": 126,
+      "m1": 779,
+      "g2000": 813,
+      "rpo": 9.21
+    },
+    {
+      "q": "FY27 Q2",
+      "prod": 1.4919,
+      "growth": 37,
+      "nrr": 126,
+      "m1": 828,
+      "g2000": 829,
+      "rpo": 9.0
+    }
+  ],
+  "sbc": {
+    "fy26_b": 1.599547,
+    "fy26_pct_revenue": 34.1,
+    "fy27_q1_related_charges_b": 0.433657,
+    "fy27_q2_approx_b": 0.423
+  },
+  "valuation": {
+    "router": "Mode B Hybrid",
+    "regular_close_ev_to_fy27_product_revenue_x": 17.1,
+    "post_earnings_ev_to_fy27_product_revenue_x": 21.1,
+    "scenarios": [
+      {
+        "name": "Bear",
+        "prob": 0.25,
+        "cagr": 0.2,
+        "fy31_prod": 12.59,
+        "fy31_rev": 13.2,
+        "fcf_margin": 0.25,
+        "fy31_fcf": 3.3,
+        "exit": 30,
+        "shares": 395,
+        "pv": 183
+      },
+      {
+        "name": "Base",
+        "prob": 0.35,
+        "cagr": 0.27,
+        "fy31_prod": 15.79,
+        "fy31_rev": 16.5,
+        "fcf_margin": 0.3,
+        "fy31_fcf": 4.95,
+        "exit": 35,
+        "shares": 390,
+        "pv": 310
+      },
+      {
+        "name": "Bull Execution",
+        "prob": 0.25,
+        "cagr": 0.32,
+        "fy31_prod": 18.36,
+        "fy31_rev": 19.3,
+        "fcf_margin": 0.33,
+        "fy31_fcf": 6.37,
+        "exit": 40,
+        "shares": 400,
+        "pv": 440
+      },
+      {
+        "name": "Bull Ecosystem",
+        "prob": 0.15,
+        "cagr": 0.36,
+        "fy31_prod": 20.76,
+        "fy31_rev": 22.0,
+        "fcf_margin": 0.35,
+        "fy31_fcf": 7.7,
+        "exit": 45,
+        "shares": 405,
+        "pv": 588
+      }
+    ],
+    "probability_weighted_value_usd": 352.4,
+    "stance": "WATCH / HOLD; post-earnings price above probability-weighted center",
+    "price_bands": {
+      "attractive_below": 300,
+      "watch_300_340": "attractive-to-fair",
+      "fair_340_380": "fair/premium",
+      "execution_required_380_440": "requires Bull-leaning execution",
+      "very_demanding_above": 440
+    }
+  },
+  "kpi_traffic_lights": {
+    "product_revenue_growth": {
+      "green": ">=30%",
+      "yellow": "25-30%",
+      "red": "<25%"
+    },
+    "nrr": {
+      "green": ">=126%",
+      "yellow": "120-125%",
+      "red": "<120%"
+    },
+    "customers_1m_growth": {
+      "green": ">=25%",
+      "yellow": "15-25%",
+      "red": "<15%"
+    },
+    "rpo_growth": {
+      "green": ">=30%",
+      "yellow": "20-30%",
+      "red": "<20%"
+    },
+    "non_gaap_product_gm": {
+      "green": ">=75%",
+      "yellow": "72-75%",
+      "red": "<72%"
+    },
+    "sbc_to_revenue": {
+      "green": "<25%",
+      "yellow": "25-30%",
+      "red": ">30%"
+    }
+  },
+  "research_contract": {
+    "total": 16,
+    "unresolved": 0,
+    "status": "PASS"
+  },
+  "evidence_ceilings": [
+    "Exact AI revenue dollars are not disclosed.",
+    "Normalized apples-to-apples cross-platform TCO/performance benchmark is not available from primary sources.",
+    "Acquisition-specific revenue/ROI for Observe, TensorStax, Natoma is not separately disclosed.",
+    "Detailed FY27 Q2 10-Q not yet located at publishing; earnings exhibit provides quarter financial statements."
+  ],
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1640147/000164014726000033/fy2027q2earnings.htm",
+    "https://www.sec.gov/Archives/edgar/data/1640147/000164014726000008/snow-20260131.htm",
+    "https://www.sec.gov/Archives/edgar/data/1640147/000164014726000030/snow-20260430.htm",
+    "https://www.sec.gov/Archives/edgar/data/1640147/000164014726000019/snow-20260518.htm",
+    "https://www.snowflake.com/en/news/press-releases/snowflake-expands-aws-collaboration-with-6b-commitment-to-accelerate-enterprise-agentic-ai-adoption/",
+    "https://docs.snowflake.com/en/user-guide/opencatalog/overview",
+    "https://docs.snowflake.com/en/user-guide/data-integration/openflow/about",
+    "https://docs.databricks.com/aws/en/data-governance/unity-catalog/",
+    "https://learn.microsoft.com/en-us/fabric/onelake/onelake-iceberg-snowflake",
+    "https://www.reuters.com/business/snowflake-lifts-annual-product-revenue-forecast-demand-cloud-data-platform-2026-09-02/"
+  ],
+  "visual_data_lineage": {
+    "decision_visuals_total": 4,
+    "decision_visuals_parity_pass": 4,
+    "stale_visual_assets": 0,
+    "figure_numerical_parity": "PASS",
+    "visual_data_lineage": "PASS",
+    "visual_semantic_parity": "PASS",
+    "rendered_visual_parity_qa": "PASS",
+    "registry": [
+      {
+        "vis_id": "VIS-001",
+        "figure_title": "Product revenue YoY 성장률",
+        "authoritative_source_block": "quarterly_history[].growth",
+        "source_values": [
+          29,
+          28,
+          26,
+          32,
+          29,
+          30,
+          34,
+          37
+        ],
+        "display_values": [
+          29,
+          28,
+          26,
+          32,
+          29,
+          30,
+          34,
+          37
+        ],
+        "narrative_locator": "0. Executive Summary",
+        "table_locator": "4. Financial Deep Dive",
+        "caption_locator": "Product revenue YoY 성장률",
+        "rendered_asset_locator": "PDF Executive Summary",
+        "source_version_or_hash": "bdd785181cca74b5",
+        "displayed_values_match": true,
+        "status": "PASS"
+      },
+      {
+        "vis_id": "VIS-002",
+        "figure_title": "Product revenue: 8분기 연속 추이",
+        "authoritative_source_block": "quarterly_history[].prod",
+        "source_values": [
+          0.9003,
+          0.9433,
+          0.9968,
+          1.09,
+          1.16,
+          1.2266,
+          1.33,
+          1.4919
+        ],
+        "display_values": [
+          0.9003,
+          0.9433,
+          0.9968,
+          1.09,
+          1.16,
+          1.2266,
+          1.33,
+          1.4919
+        ],
+        "narrative_locator": "1. Industry / Customer Problem / Transmission",
+        "table_locator": "4. Financial Deep Dive",
+        "caption_locator": "Product revenue: 8분기 연속 추이",
+        "rendered_asset_locator": "PDF Industry chapter",
+        "source_version_or_hash": "c5e0b2e6629c4e71",
+        "displayed_values_match": true,
+        "status": "PASS"
+      },
+      {
+        "vis_id": "VIS-003",
+        "figure_title": "TTM product revenue $1M+ 고객 수",
+        "authoritative_source_block": "quarterly_history[].m1",
+        "source_values": [
+          542,
+          580,
+          606,
+          654,
+          688,
+          733,
+          779,
+          828
+        ],
+        "display_values": [
+          542,
+          580,
+          606,
+          654,
+          688,
+          733,
+          779,
+          828
+        ],
+        "narrative_locator": "3. Business Model / Product / Technology / Customer / Competition",
+        "table_locator": "4. Financial Deep Dive",
+        "caption_locator": "TTM product revenue $1M+ 고객 수",
+        "rendered_asset_locator": "PDF Business Model chapter",
+        "source_version_or_hash": "9ae05b0a386ac0d6",
+        "displayed_values_match": true,
+        "status": "PASS"
+      },
+      {
+        "vis_id": "VIS-004",
+        "figure_title": "시나리오별 현재가치 ($/share)",
+        "authoritative_source_block": "valuation.scenarios[].pv",
+        "source_values": [
+          183,
+          310,
+          440,
+          588
+        ],
+        "display_values": [
+          183,
+          310,
+          440,
+          588
+        ],
+        "narrative_locator": "5. Valuation / Reverse Expectations",
+        "table_locator": "valuation scenario table",
+        "caption_locator": "시나리오별 현재가치 ($/share)",
+        "rendered_asset_locator": "PDF Valuation chapter",
+        "source_version_or_hash": "7037c6d8ec2d3c9a",
+        "displayed_values_match": true,
+        "status": "PASS"
+      }
+    ]
+  },
+  "publishing_qa": {
+    "data_pack_report_parity": "PASS",
+    "searchable_text": "PASS",
+    "page_composition": "PASS",
+    "accidental_sparse_core_pages": 0,
+    "contact_sheet_composition_qa": "PASS",
+    "korean_prose_quality": "PASS",
+    "industry_company_narrative": "PASS",
+    "pdf_bookmarks": "PASS",
+    "publishing_acceptance": "PASS"
+  }
+}

@@ -1,0 +1,944 @@
+{
+  "meta": {
+    "ticker": "FLR",
+    "company": "Fluor Corporation",
+    "T0": "2026-08-31",
+    "price_asof": "2026-08-28",
+    "current_price": 53.27,
+    "filing_asof": "2026-08-07 Q2 2026 Form 10-Q",
+    "consensus_asof": "2026-08-10 snapshot; checked through 2026-08-31",
+    "version": "DDOS v1.7 / FLR 260831"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "period": "2023",
+        "revenue_b": 15.5,
+        "adj_ebitda_m": 613,
+        "ocf_m": 212,
+        "capex_m": 106,
+        "fcf_proxy_m": 106,
+        "new_awards_b": 19.5,
+        "backlog_b": 29.4,
+        "reimbursable_pct": 76
+      },
+      {
+        "period": "2024",
+        "revenue_b": 16.3,
+        "adj_ebitda_m": 530,
+        "ocf_m": 828,
+        "capex_m": 164,
+        "fcf_proxy_m": 664,
+        "new_awards_b": 15.1,
+        "backlog_b": 28.5,
+        "reimbursable_pct": 79
+      },
+      {
+        "period": "2025",
+        "revenue_b": 15.5,
+        "adj_ebitda_m": 504,
+        "ocf_m": -387,
+        "capex_m": 50,
+        "fcf_proxy_m": -437,
+        "new_awards_b": 12.0,
+        "backlog_b": 25.5,
+        "reimbursable_pct": 81
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "period": "3Q24",
+        "revenue_b": 4.1,
+        "adj_ebitda_m": 124,
+        "ocf_m": 330,
+        "capex_m": 51,
+        "new_awards_b": 2.7,
+        "backlog_b": 31.3,
+        "reimbursable_pct": 80
+      },
+      {
+        "period": "4Q24",
+        "revenue_b": 4.3,
+        "adj_ebitda_m": 154,
+        "ocf_m": 327,
+        "capex_m": 31,
+        "new_awards_b": 2.3,
+        "backlog_b": 28.5,
+        "reimbursable_pct": 79
+      },
+      {
+        "period": "1Q25",
+        "revenue_b": 4.0,
+        "adj_ebitda_m": 155,
+        "ocf_m": -286,
+        "capex_m": 11,
+        "new_awards_b": 5.8,
+        "backlog_b": 28.7,
+        "reimbursable_pct": 79
+      },
+      {
+        "period": "2Q25",
+        "revenue_b": 4.0,
+        "adj_ebitda_m": 96,
+        "ocf_m": -21,
+        "capex_m": 14,
+        "new_awards_b": 1.8,
+        "backlog_b": 28.2,
+        "reimbursable_pct": 80
+      },
+      {
+        "period": "3Q25",
+        "revenue_b": 3.4,
+        "adj_ebitda_m": 161,
+        "ocf_m": 286,
+        "capex_m": 13,
+        "new_awards_b": 3.3,
+        "backlog_b": 28.2,
+        "reimbursable_pct": 82
+      },
+      {
+        "period": "4Q25",
+        "revenue_b": 4.2,
+        "adj_ebitda_m": 91,
+        "ocf_m": -366,
+        "capex_m": 12,
+        "new_awards_b": 1.1,
+        "backlog_b": 25.5,
+        "reimbursable_pct": 81
+      },
+      {
+        "period": "1Q26",
+        "revenue_b": 3.6,
+        "adj_ebitda_m": 60,
+        "ocf_m": 110,
+        "capex_m": 11,
+        "new_awards_b": 2.7,
+        "backlog_b": 25.7,
+        "reimbursable_pct": 82
+      },
+      {
+        "period": "2Q26",
+        "revenue_b": 4.3,
+        "adj_ebitda_m": 149,
+        "ocf_m": -317,
+        "capex_m": 7,
+        "new_awards_b": 6.1,
+        "backlog_b": 26.9,
+        "reimbursable_pct": 85
+      }
+    ],
+    "ceilings": [
+      "Absolute as-sold project margin not disclosed",
+      "Project-level profitability not disclosed",
+      "GAAP OCF distorted by project working capital, legal payments and transaction taxes"
+    ],
+    "share_count": {
+      "dec_2025_basic_m": 152.048,
+      "jul_2026_basic_m": 133.741,
+      "cumulative_buyback_since_q4_2024_musd": 1695,
+      "cumulative_shares_repurchased_m": 38
+    }
+  },
+  "kpis": [
+    {
+      "name": "Reimbursable backlog %",
+      "history": [
+        76,
+        79,
+        81,
+        85
+      ],
+      "current": 85,
+      "thresholds": {
+        "green": ">=85% + no recurring material charges",
+        "yellow": "80-85%",
+        "red": "<80% or new risky fixed-price concentration"
+      }
+    },
+    {
+      "name": "Awards / revenue",
+      "history": [
+        0.6585365853658538,
+        0.5348837209302325,
+        1.45,
+        0.45,
+        0.9705882352941176,
+        0.2619047619047619,
+        0.75,
+        1.4186046511627908
+      ],
+      "current": 1.42,
+      "thresholds": {
+        "green": ">1.1x sustained",
+        "yellow": "0.9-1.1x",
+        "red": "<0.9x for 2+ quarters"
+      }
+    },
+    {
+      "name": "New-award margin premium",
+      "history": [
+        "Q1 2026 management indication: ~+200bp vs existing backlog"
+      ],
+      "current": "~+200bp relative indication",
+      "thresholds": {
+        "green": "premium sustained and visible in segment margin",
+        "yellow": "flat",
+        "red": "new awards below backlog margin"
+      }
+    },
+    {
+      "name": "Project charge frequency",
+      "history": [
+        "2025 Santos; 1Q26 mining/Mission; 2Q26 Gordie Howe $44M"
+      ],
+      "current": "still present",
+      "thresholds": {
+        "green": "no material surprise charges",
+        "yellow": "isolated <~$25M/q",
+        "red": "repeated >$40-50M/q"
+      }
+    },
+    {
+      "name": "Contract assets",
+      "history": [
+        1146,
+        1440
+      ],
+      "current": 1440,
+      "thresholds": {
+        "green": "growth <= revenue and collections improve",
+        "yellow": "moderate divergence",
+        "red": "persistent rise with OCF miss"
+      }
+    },
+    {
+      "name": "Adjusted OCF",
+      "history": [
+        "2026 guide $300-320M"
+      ],
+      "current": "guide $300-320M",
+      "thresholds": {
+        "green": ">=guide and improving",
+        "yellow": "within guide",
+        "red": "guide miss / working-capital absorption"
+      }
+    },
+    {
+      "name": "Basic share count",
+      "history": [
+        152.048,
+        133.741
+      ],
+      "current": 133.741,
+      "thresholds": {
+        "green": "buyback > SBC/convert dilution",
+        "yellow": "flat",
+        "red": "re-expansion"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.3,
+      "revenue_path": [
+        16.58,
+        16.6,
+        17.0
+      ],
+      "margin_path": [
+        3.1,
+        3.3,
+        3.5
+      ],
+      "ebitda_path_m": [
+        512.5,
+        550,
+        600
+      ],
+      "fcf_m": [
+        285,
+        300,
+        330
+      ],
+      "terminal_ev_ebitda": 8.5,
+      "usable_net_cash_m": 1100,
+      "diluted_shares_m": 128,
+      "terminal_enterprise_value_m": 5100.0,
+      "terminal_equity_value_m": 6200.0,
+      "per_share_value_2028": 48.44,
+      "present_fair_value": 37.14,
+      "scenario_irr": -0.0398
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "revenue_path": [
+        16.58,
+        18.09,
+        18.8
+      ],
+      "margin_path": [
+        3.1,
+        3.43,
+        3.83
+      ],
+      "ebitda_path_m": [
+        512.5,
+        620,
+        720
+      ],
+      "fcf_m": [
+        285,
+        430,
+        520
+      ],
+      "terminal_ev_ebitda": 10.5,
+      "usable_net_cash_m": 1400,
+      "diluted_shares_m": 124,
+      "terminal_enterprise_value_m": 7560.0,
+      "terminal_equity_value_m": 8960.0,
+      "per_share_value_2028": 72.26,
+      "present_fair_value": 55.4,
+      "scenario_irr": 0.1389
+    },
+    {
+      "name": "Bull",
+      "probability": 0.2,
+      "revenue_path": [
+        16.58,
+        18.6,
+        19.5
+      ],
+      "margin_path": [
+        3.1,
+        3.76,
+        4.36
+      ],
+      "ebitda_path_m": [
+        512.5,
+        700,
+        850
+      ],
+      "fcf_m": [
+        285,
+        510,
+        650
+      ],
+      "terminal_ev_ebitda": 11.0,
+      "usable_net_cash_m": 1500,
+      "diluted_shares_m": 120,
+      "terminal_enterprise_value_m": 9350.0,
+      "terminal_equity_value_m": 10850.0,
+      "per_share_value_2028": 90.42,
+      "present_fair_value": 69.33,
+      "scenario_irr": 0.2533
+    }
+  ],
+  "valuation": {
+    "mode": "Normalized adjusted EBITDA / EV-EBITDA with P/E and FCF cross-check",
+    "hurdle_rate": 0.12,
+    "horizon_years": 2.3436,
+    "core": {
+      "2026_ebitda_mid_m": 512.5,
+      "headline_ev_m": 5153.4,
+      "headline_ev_ebitda": 10.06,
+      "2026_pe": 19.37,
+      "2027_consensus_pe": 15.67
+    },
+    "execution": "Higher-margin backlog conversion in 2027-2028",
+    "ecosystem": "Nuclear fuel, data-center power, mining, pharma and LNG options; early-stage items not fully capitalized",
+    "drag": "Project charges, working capital, legal claims, pass-through revenue, convert/SBC dilution",
+    "expected_value": 52.71,
+    "expected_future_value_2028": 68.75,
+    "expected_irr": 0.115,
+    "current_price": 53.27,
+    "upside_downside_ratio": 1.0
+  },
+  "reverse_expectations": {
+    "required_return": 0.12,
+    "required_2028_equity_value_m": 9291.7,
+    "usable_net_cash_assumption_m": 1300,
+    "required_2028_ebitda": [
+      {
+        "terminal_ev_ebitda": 9.5,
+        "required_2028_ebitda_m": 841.2,
+        "cagr_vs_2026_mid": 0.2812
+      },
+      {
+        "terminal_ev_ebitda": 10.0,
+        "required_2028_ebitda_m": 799.2,
+        "cagr_vs_2026_mid": 0.2487
+      },
+      {
+        "terminal_ev_ebitda": 10.5,
+        "required_2028_ebitda_m": 761.1,
+        "cagr_vs_2026_mid": 0.2186
+      }
+    ],
+    "operating_translation": [
+      "Sustained awards/revenue >1.0-1.1x",
+      "Reimbursable backlog in mid-80% range",
+      "Urban margin toward mid-3% range",
+      "No recurring $40-50M surprise charges",
+      "Normalized OCF >$400-500M by 2027-28"
+    ]
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_b": 16.58,
+      "adj_eps": 2.75,
+      "company_ebitda_guide_m": [
+        500,
+        525
+      ]
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_b": 18.09,
+      "adj_eps": 3.4
+    },
+    "price_target": {
+      "average": 59.69,
+      "low": 47.5,
+      "median": 62.5,
+      "high": 71,
+      "asof": "2026-08-10"
+    },
+    "revision_trend": "PRIMARY_SOURCE_CEILING - uniform 3-6 month FY1-FY3 revision series not reconstructed"
+  },
+  "stance": {
+    "zone": "WATCH / 관망",
+    "price_bands": {
+      "active_interest_below": 45,
+      "attractive_entry": [
+        46,
+        48
+      ],
+      "conditional_interest": [
+        48,
+        53
+      ],
+      "watch_fair": [
+        53,
+        58
+      ],
+      "evidence_required_above": 58,
+      "ud_gt_2_trigger": 47.87
+    },
+    "horizon": "2028-12-31",
+    "base_fair_value": 55.4,
+    "probability_weighted_fair_value": 52.71,
+    "reason": "Expected IRR ~11.5% is slightly below 12% hurdle and current Bull/Bear PV upside/downside is ~1.0x."
+  },
+  "catalysts": [
+    {
+      "when": "2H26 quarterly results",
+      "event": "Awards/backlog/segment-margin follow-through",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2H26",
+      "event": "2026 buyback progress toward $1.4B target",
+      "sensitivity": "Medium"
+    },
+    {
+      "when": "2026-27",
+      "event": "Centrus execution and nuclear-fuel backlog burn",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2026-27",
+      "event": "TeraWulf definitive EPC / data-center conversion",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2026-27",
+      "event": "LNG Canada Phase 2 FID / full authorization",
+      "sensitivity": "Medium-High"
+    },
+    {
+      "when": "Ongoing",
+      "event": "Santos appeal and insurance developments",
+      "sensitivity": "High downside"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "3.1, 4.1"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "1.1-1.5"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "2.1-2.4"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "3.2"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "3.3, 4.2"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "4.4, 6.3"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "1.4, 3.4"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "3.1, 3.4"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "3.5"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "1.3, 3.6"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "4.1-4.3"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "4.4"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "4.5, 5.1"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "6.2"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "5.5"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "5.2-5.4"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "6.2-6.5"
+    }
+  ],
+  "capital_structure": {
+    "cash_and_securities_m": 3043,
+    "debt_m": 1072,
+    "headline_net_cash_m": 1971,
+    "convert_2029_m": 575,
+    "convert_price": 45.37,
+    "conditional_trigger_price_approx": 58.98,
+    "q2_incremental_diluted_shares_m": 0.872,
+    "remaining_2026_buyback_target_m": 584
+  },
+  "management": {
+    "ceo": "James R. Breuer",
+    "ceo_since": "2025-05-01",
+    "base_salary_2025_annualized_m": 1.25,
+    "target_annual_incentive_pct": 140,
+    "annualized_ceo_lti_target_m": 5.0,
+    "ceo_beneficial_shares_mar_2026": 140398,
+    "ceo_ownership_guideline_x_base": 6,
+    "board_independence_note": "All director nominees except Breuer (and Constable while executive chair) were independent; independent Caldwell added Aug 2026."
+  },
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "Backlog quality reset",
+      "authoritative_source_block": "financials.annual_3y + quarterly_8q[-1]",
+      "source_values": [
+        {
+          "period": "2023",
+          "backlog_b": 29.4,
+          "reimbursable_pct": 76
+        },
+        {
+          "period": "2024",
+          "backlog_b": 28.5,
+          "reimbursable_pct": 79
+        },
+        {
+          "period": "2025",
+          "backlog_b": 25.5,
+          "reimbursable_pct": 81
+        },
+        {
+          "period": "2Q26",
+          "backlog_b": 26.9,
+          "reimbursable_pct": 85
+        }
+      ],
+      "source_hash": "8d15ef7beb1b14c9",
+      "display_values": [
+        {
+          "period": "2023",
+          "backlog_b": 29.4,
+          "reimbursable_pct": 76
+        },
+        {
+          "period": "2024",
+          "backlog_b": 28.5,
+          "reimbursable_pct": 79
+        },
+        {
+          "period": "2025",
+          "backlog_b": 25.5,
+          "reimbursable_pct": 81
+        },
+        {
+          "period": "2Q26",
+          "backlog_b": 26.9,
+          "reimbursable_pct": 85
+        }
+      ],
+      "narrative_locator": "§1.5, §3.3",
+      "table_locator": "§4.1/§4.2",
+      "caption_locator": "figure-backlog caption",
+      "rendered_asset_locator": "figure-backlog"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "Eight-quarter awards versus revenue",
+      "authoritative_source_block": "financials.quarterly_8q",
+      "source_values": [
+        {
+          "period": "3Q24",
+          "revenue_b": 4.1,
+          "new_awards_b": 2.7
+        },
+        {
+          "period": "4Q24",
+          "revenue_b": 4.3,
+          "new_awards_b": 2.3
+        },
+        {
+          "period": "1Q25",
+          "revenue_b": 4.0,
+          "new_awards_b": 5.8
+        },
+        {
+          "period": "2Q25",
+          "revenue_b": 4.0,
+          "new_awards_b": 1.8
+        },
+        {
+          "period": "3Q25",
+          "revenue_b": 3.4,
+          "new_awards_b": 3.3
+        },
+        {
+          "period": "4Q25",
+          "revenue_b": 4.2,
+          "new_awards_b": 1.1
+        },
+        {
+          "period": "1Q26",
+          "revenue_b": 3.6,
+          "new_awards_b": 2.7
+        },
+        {
+          "period": "2Q26",
+          "revenue_b": 4.3,
+          "new_awards_b": 6.1
+        }
+      ],
+      "source_hash": "9f4b43cc6511134e",
+      "display_values": [
+        {
+          "period": "3Q24",
+          "revenue_b": 4.1,
+          "new_awards_b": 2.7
+        },
+        {
+          "period": "4Q24",
+          "revenue_b": 4.3,
+          "new_awards_b": 2.3
+        },
+        {
+          "period": "1Q25",
+          "revenue_b": 4.0,
+          "new_awards_b": 5.8
+        },
+        {
+          "period": "2Q25",
+          "revenue_b": 4.0,
+          "new_awards_b": 1.8
+        },
+        {
+          "period": "3Q25",
+          "revenue_b": 3.4,
+          "new_awards_b": 3.3
+        },
+        {
+          "period": "4Q25",
+          "revenue_b": 4.2,
+          "new_awards_b": 1.1
+        },
+        {
+          "period": "1Q26",
+          "revenue_b": 3.6,
+          "new_awards_b": 2.7
+        },
+        {
+          "period": "2Q26",
+          "revenue_b": 4.3,
+          "new_awards_b": 6.1
+        }
+      ],
+      "narrative_locator": "§4.2",
+      "table_locator": "§4.2",
+      "caption_locator": "figure-awards caption",
+      "rendered_asset_locator": "figure-awards"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "Scenario fair value versus current price",
+      "authoritative_source_block": "scenarios + valuation.current_price",
+      "source_values": [
+        {
+          "name": "Bear",
+          "present_fair_value": 37.14
+        },
+        {
+          "name": "Base",
+          "present_fair_value": 55.4
+        },
+        {
+          "name": "Bull",
+          "present_fair_value": 69.33
+        },
+        {
+          "name": "Current",
+          "present_fair_value": 53.27
+        }
+      ],
+      "source_hash": "78bc945a52611b4a",
+      "display_values": [
+        {
+          "name": "Bear",
+          "present_fair_value": 37.14
+        },
+        {
+          "name": "Base",
+          "present_fair_value": 55.4
+        },
+        {
+          "name": "Bull",
+          "present_fair_value": 69.33
+        },
+        {
+          "name": "Current",
+          "present_fair_value": 53.27
+        }
+      ],
+      "narrative_locator": "§5.3",
+      "table_locator": "§5.3",
+      "caption_locator": "figure-scenarios caption",
+      "rendered_asset_locator": "figure-scenarios"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "Share-count reset",
+      "authoritative_source_block": "financials.share_count",
+      "source_values": [
+        {
+          "period": "Dec-2025",
+          "basic_shares_m": 152.048
+        },
+        {
+          "period": "Jul-2026",
+          "basic_shares_m": 133.741
+        },
+        {
+          "period": "2028 Base",
+          "diluted_shares_m": 124
+        }
+      ],
+      "source_hash": "ca4a49f42df5f23d",
+      "display_values": [
+        {
+          "period": "Dec-2025",
+          "basic_shares_m": 152.048
+        },
+        {
+          "period": "Jul-2026",
+          "basic_shares_m": 133.741
+        },
+        {
+          "period": "2028 Base",
+          "diluted_shares_m": 124
+        }
+      ],
+      "narrative_locator": "§4.5",
+      "table_locator": "Appendix capital structure",
+      "caption_locator": "figure-shares caption",
+      "rendered_asset_locator": "figure-shares"
+    },
+    {
+      "vis_id": "VIS-005",
+      "figure_title": "Reverse expectations: required 2028 EBITDA",
+      "authoritative_source_block": "reverse_expectations.required_2028_ebitda",
+      "source_values": [
+        {
+          "terminal_ev_ebitda": 9.5,
+          "required_2028_ebitda_m": 841.2,
+          "cagr_vs_2026_mid": 0.2812
+        },
+        {
+          "terminal_ev_ebitda": 10.0,
+          "required_2028_ebitda_m": 799.2,
+          "cagr_vs_2026_mid": 0.2487
+        },
+        {
+          "terminal_ev_ebitda": 10.5,
+          "required_2028_ebitda_m": 761.1,
+          "cagr_vs_2026_mid": 0.2186
+        }
+      ],
+      "source_hash": "77daef9428f04bd0",
+      "display_values": [
+        {
+          "terminal_ev_ebitda": 9.5,
+          "required_2028_ebitda_m": 841.2,
+          "cagr_vs_2026_mid": 0.2812
+        },
+        {
+          "terminal_ev_ebitda": 10.0,
+          "required_2028_ebitda_m": 799.2,
+          "cagr_vs_2026_mid": 0.2487
+        },
+        {
+          "terminal_ev_ebitda": 10.5,
+          "required_2028_ebitda_m": 761.1,
+          "cagr_vs_2026_mid": 0.2186
+        }
+      ],
+      "narrative_locator": "§5.4",
+      "table_locator": "§5.4",
+      "caption_locator": "figure-reverse caption",
+      "rendered_asset_locator": "figure-reverse"
+    }
+  ],
+  "sources": [
+    {
+      "id": "P01",
+      "type": "statutory",
+      "title": "Fluor Form 10-Q, quarter ended 2026-06-30",
+      "date": "2026-08-07",
+      "url": "https://www.sec.gov/Archives/edgar/data/1124198/000112419826000071/flr-20260630.htm"
+    },
+    {
+      "id": "P02",
+      "type": "statutory",
+      "title": "Fluor Q2 2026 8-K / Exhibit 99.1",
+      "date": "2026-08-07",
+      "url": "https://www.sec.gov/Archives/edgar/data/1124198/000112419826000074/ex991q22026.htm"
+    },
+    {
+      "id": "P03",
+      "type": "company_ir",
+      "title": "Fluor Q2 2026 Results",
+      "date": "2026-08-07",
+      "url": "https://investor.fluor.com/news/news-details/2026/Fluor-Reports-Second-Quarter-2026-Results/default.aspx"
+    },
+    {
+      "id": "P04",
+      "type": "company_ir",
+      "title": "Fluor Q1 2026 Results",
+      "date": "2026",
+      "url": "https://investor.fluor.com/news/news-details/2026/Fluor-Reports-First-Quarter-2026-Results/default.aspx"
+    },
+    {
+      "id": "P05",
+      "type": "statutory",
+      "title": "Fluor Form 10-K FY2025",
+      "date": "2026-02-17",
+      "url": "https://www.sec.gov/Archives/edgar/data/1124198/000112419826000007/flr-20251231.htm"
+    },
+    {
+      "id": "P06",
+      "type": "company_ir",
+      "title": "Fluor FY2025 Results",
+      "date": "2026",
+      "url": "https://investor.fluor.com/news/news-details/2026/Fluor-Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx"
+    },
+    {
+      "id": "P07",
+      "type": "company_ir",
+      "title": "Fluor FY2024 Results",
+      "date": "2025",
+      "url": "https://investor.fluor.com/news/news-details/2025/Fluor-Reports-Fourth-Quarter-and-Full-Year-2024-Results/default.aspx"
+    },
+    {
+      "id": "P08",
+      "type": "statutory",
+      "title": "Fluor 2026 Proxy Statement",
+      "date": "2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1124198/000110465926027053/tm261393-1_def14a.htm"
+    },
+    {
+      "id": "P09",
+      "type": "statutory",
+      "title": "Fluor Board Appointment 8-K",
+      "date": "2026-08-04",
+      "url": "https://www.sec.gov/Archives/edgar/data/1124198/000112419826000068/flr-20260730.htm"
+    },
+    {
+      "id": "P10",
+      "type": "government",
+      "title": "U.S. DOE Electricity Demand Growth Resource Hub",
+      "date": "accessed 2026-08-31",
+      "url": "https://www.energy.gov/oe/electricity-demand-growth-resource-hub"
+    },
+    {
+      "id": "S01",
+      "type": "market",
+      "title": "StockAnalysis FLR market snapshot",
+      "date": "2026-08-28",
+      "url": "https://stockanalysis.com/stocks/flr/"
+    },
+    {
+      "id": "S02",
+      "type": "consensus",
+      "title": "StockAnalysis / S&P Global FLR forecast snapshot",
+      "date": "2026-08-10",
+      "url": "https://stockanalysis.com/stocks/flr/forecast/"
+    }
+  ],
+  "qa": {
+    "data_pack_report_parity": "PASS",
+    "visual_data_lineage": "PASS",
+    "stale_visual_assets": 0,
+    "source_generation": "HTML visuals and tables generated from this pack in one build script"
+  }
+}

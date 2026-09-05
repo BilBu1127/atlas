@@ -1,0 +1,1167 @@
+{
+  "meta": {
+    "ticker": "KBR",
+    "company": "KBR, Inc.",
+    "T0": "2026-08-31",
+    "price_asof": "2026-08-28",
+    "price": 38.03,
+    "currency": "USD",
+    "filing_asof": "2026-07-30",
+    "consensus_asof": "2026-08-25",
+    "version": "Deep Dive OS v1.7",
+    "publishing_date_asia_seoul": "2026-08-31",
+    "planned_spin_date": "2027-01-04"
+  },
+  "as_of_registry": {
+    "latest_periodic_filing": "Q2 FY26 Form 10-Q filed 2026-07-30, period ended 2026-07-03",
+    "latest_filing_check": "PASS",
+    "spin_investor_days": {
+      "new_kbr": "2026-11-11",
+      "trinzic": "2026-11-12"
+    },
+    "price_close": 38.03
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": "FY23",
+        "revenue_m": 6956,
+        "adj_ebitda_m": 747,
+        "adj_eps": 2.91,
+        "ocf_m": 331,
+        "capex_m": 62,
+        "simple_fcf_m": 269,
+        "diluted_shares_m": 135
+      },
+      {
+        "year": "FY24",
+        "revenue_m": 7710,
+        "adj_ebitda_m": 868,
+        "adj_eps": 3.33,
+        "ocf_m": 450,
+        "capex_m": 52,
+        "simple_fcf_m": 398,
+        "diluted_shares_m": 134
+      },
+      {
+        "year": "FY25",
+        "revenue_m": 7786,
+        "adj_ebitda_m": 968,
+        "adj_eps": 3.93,
+        "ocf_m": 557,
+        "capex_m": 42,
+        "simple_fcf_m": 515,
+        "diluted_shares_m": 129
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "Q3 FY24",
+        "revenue_m": 1937,
+        "adj_ebitda_m": 219,
+        "adj_eps": 0.84,
+        "ocf_m": 166,
+        "adj_ebitda_margin_pct": 11.31
+      },
+      {
+        "quarter": "Q4 FY24",
+        "revenue_m": 2108,
+        "adj_ebitda_m": 226,
+        "adj_eps": 0.9,
+        "ocf_m": 41,
+        "adj_ebitda_margin_pct": 10.72
+      },
+      {
+        "quarter": "Q1 FY25",
+        "revenue_m": 2018,
+        "adj_ebitda_m": 248,
+        "adj_eps": 1.0,
+        "ocf_m": 91,
+        "adj_ebitda_margin_pct": 12.29
+      },
+      {
+        "quarter": "Q2 FY25",
+        "revenue_m": 1952,
+        "adj_ebitda_m": 242,
+        "adj_eps": 0.91,
+        "ocf_m": 217,
+        "adj_ebitda_margin_pct": 12.4
+      },
+      {
+        "quarter": "Q3 FY25",
+        "revenue_m": 1931,
+        "adj_ebitda_m": 240,
+        "adj_eps": 1.02,
+        "ocf_m": 198,
+        "adj_ebitda_margin_pct": 12.43
+      },
+      {
+        "quarter": "Q4 FY25",
+        "revenue_m": 1885,
+        "adj_ebitda_m": 238,
+        "adj_eps": 0.99,
+        "ocf_m": 51,
+        "adj_ebitda_margin_pct": 12.63
+      },
+      {
+        "quarter": "Q1 FY26",
+        "revenue_m": 1923,
+        "adj_ebitda_m": 251,
+        "adj_eps": 0.96,
+        "ocf_m": 110,
+        "adj_ebitda_margin_pct": 13.05
+      },
+      {
+        "quarter": "Q2 FY26",
+        "revenue_m": 1984,
+        "adj_ebitda_m": 258,
+        "adj_eps": 0.99,
+        "ocf_m": 50,
+        "adj_ebitda_margin_pct": 13.0
+      }
+    ],
+    "segments": {
+      "FY24": {
+        "mts": {
+          "revenue_m": 5555,
+          "adj_ebitda_m": 544,
+          "margin_pct": 9.8
+        },
+        "sts": {
+          "revenue_m": 2155,
+          "adj_ebitda_m": 439,
+          "margin_pct": 20.4
+        },
+        "corporate_ebitda_m": -115
+      },
+      "FY25": {
+        "mts": {
+          "revenue_m": 5581,
+          "adj_ebitda_m": 579,
+          "margin_pct": 10.4
+        },
+        "sts": {
+          "revenue_m": 2205,
+          "adj_ebitda_m": 497,
+          "margin_pct": 22.5
+        },
+        "corporate_ebitda_m": -108
+      },
+      "1H26": {
+        "mts": {
+          "revenue_m": 2604,
+          "adj_ebitda_m": 296,
+          "margin_pct": 11.4
+        },
+        "sts": {
+          "revenue_m": 1303,
+          "adj_ebitda_m": 260,
+          "margin_pct": 20.0
+        }
+      },
+      "Q2_26": {
+        "mts": {
+          "revenue_m": 1308,
+          "adj_ebitda_m": 158,
+          "margin_pct": 12.1
+        },
+        "sts": {
+          "revenue_m": 676,
+          "adj_ebitda_m": 123,
+          "margin_pct": 18.2
+        }
+      }
+    },
+    "accounting_quality": {
+      "sts_favorable_lng_estimate_change_fy25_m": 134,
+      "sts_favorable_lng_estimate_change_1h26_m": 76,
+      "receivables_sold_1h26_m": 608,
+      "receivables_sold_1h25_m": 1500,
+      "sold_receivables_outstanding_q2_m": 65,
+      "unbilled_receivables_q2_m": 617,
+      "unbilled_receivables_fy25_m": 520,
+      "cash_q2_m": 312,
+      "cash_domestic_m": 75,
+      "cash_international_m": 177,
+      "cash_jv_aspire_m": 60,
+      "homesafe_fy25_attributable_loss_m": 36,
+      "non_gaap_definition_historical_margin_effect_bp_approx": 20
+    },
+    "ceilings": [
+      "Exact STS licensing vs engineering vs lifecycle revenue/EBITDA split not disclosed",
+      "Exact standalone debt/cash allocation, corporate/stranded costs and separation costs pending Form 10 / Investor Days",
+      "Post-spin leader attributable standalone operating record not sufficiently disclosed"
+    ]
+  },
+  "business_model": {
+    "backlog": {
+      "asof": "2026-07-03",
+      "mts_backlog_b": 12.282,
+      "mts_funded_backlog_b": 8.8,
+      "mts_unexercised_options_b": 5.192,
+      "mts_protested_awards_b": 10.6,
+      "mts_book_to_bill": 0.8,
+      "sts_backlog_b": 5.523,
+      "sts_book_to_bill": 1.5,
+      "total_backlog_b": 17.805,
+      "total_backlog_plus_options_b": 22.997
+    },
+    "contract_mix_pct": {
+      "mts": {
+        "cost_reimb_pct": 57,
+        "time_material_pct": 16,
+        "fixed_price_pct": 27
+      },
+      "sts": {
+        "cost_reimb_pct": 2,
+        "time_material_pct": 55,
+        "fixed_price_pct": 42,
+        "rounding_note": "reported categories sum to 99% due rounding"
+      }
+    },
+    "adoption_ladder": [
+      "technology selection/study/pre-FEED",
+      "license/FEED",
+      "proprietary equipment/catalyst/engineering",
+      "commissioning/maintenance/lifecycle"
+    ]
+  },
+  "capital_structure": {
+    "cash_m": 312,
+    "gross_debt_m_approx": 2552,
+    "model_net_debt_b": 2.258,
+    "net_leverage": 2.3,
+    "fy23_fy25_buybacks_m": 685,
+    "fy23_fy25_dividends_m": 235,
+    "remaining_buyback_authorization_fy25_yearend_m": 427
+  },
+  "kpis": [
+    {
+      "name": "MTS funded backlog / protest conversion",
+      "current": {
+        "funded_backlog_b": 8.8,
+        "protested_awards_b": 10.6
+      },
+      "thresholds": {
+        "green": "protested awards 유지 + funded backlog 상승",
+        "yellow": "해소 지연",
+        "red": "주요 award 취소/재수주 실패 + funded backlog 하락"
+      },
+      "status": "yellow"
+    },
+    {
+      "name": "MTS adjusted EBITDA margin",
+      "current": 11.4,
+      "unit": "% 1H26",
+      "thresholds": {
+        "green": ">=11%",
+        "yellow": "10-11%",
+        "red": "<10% 지속"
+      },
+      "status": "green"
+    },
+    {
+      "name": "STS backlog",
+      "current": 5.523,
+      "unit": "USD bn Q2 2026",
+      "thresholds": {
+        "green": ">=5.5",
+        "yellow": "4.5-5.5",
+        "red": "<4.5 + 신규채택 약화"
+      },
+      "status": "green"
+    },
+    {
+      "name": "STS normalized EBITDA margin",
+      "current_reported": 20.0,
+      "base_normalized": 17.5,
+      "unit": "%",
+      "thresholds": {
+        "green": ">=17%",
+        "yellow": "15-17%",
+        "red": "<15% 지속"
+      },
+      "status": "yellow"
+    },
+    {
+      "name": "FY26 adjusted OCF",
+      "current": "1H26 continuing OCF $160M; company FY26 adjusted OCF guide $560-600M",
+      "thresholds": {
+        "green": "$560-600M guide 달성",
+        "yellow": "$520-560M",
+        "red": "<$520M"
+      },
+      "status": "yellow"
+    },
+    {
+      "name": "Standalone corporate cost",
+      "current": null,
+      "thresholds": {
+        "green": "<= $130M 합산",
+        "yellow": "$130-160M",
+        "red": "> $160M without path down"
+      },
+      "status": "unknown"
+    },
+    {
+      "name": "Standalone leverage allocation",
+      "current": null,
+      "thresholds": {
+        "green": "peer-compatible",
+        "yellow": "일시적 고레버리지 + 명확한 감축경로",
+        "red": "구조적 고레버리지"
+      },
+      "status": "unknown"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.3,
+      "mts_revenue_b": 5.3,
+      "mts_margin_pct": 10.0,
+      "mts_multiple": 8.0,
+      "sts_revenue_b": 2.55,
+      "sts_margin_pct": 14.5,
+      "sts_multiple": 8.5,
+      "corporate_cost_b": 0.15,
+      "corporate_multiple": 8.0,
+      "net_debt_b": 2.35,
+      "separation_drag_b": 0.15,
+      "diluted_shares_m": 128,
+      "mts_ebitda_b": 0.53,
+      "sts_ebitda_b": 0.36975,
+      "mts_ev_b": 4.24,
+      "sts_ev_b": 3.142875,
+      "corporate_cost_pv_b": 1.2,
+      "equity_value_b": 3.682875,
+      "per_share_value": 28.77
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "mts_revenue_b": 5.8,
+      "mts_margin_pct": 11.5,
+      "mts_multiple": 9.0,
+      "sts_revenue_b": 2.8,
+      "sts_margin_pct": 17.5,
+      "sts_multiple": 10.0,
+      "corporate_cost_b": 0.13,
+      "corporate_multiple": 8.0,
+      "net_debt_b": 2.258,
+      "separation_drag_b": 0.1,
+      "diluted_shares_m": 126.07,
+      "mts_ebitda_b": 0.667,
+      "sts_ebitda_b": 0.49,
+      "mts_ev_b": 6.003,
+      "sts_ev_b": 4.9,
+      "corporate_cost_pv_b": 1.04,
+      "equity_value_b": 7.505,
+      "per_share_value": 59.53
+    },
+    {
+      "name": "Bull",
+      "probability": 0.2,
+      "mts_revenue_b": 6.1,
+      "mts_margin_pct": 12.5,
+      "mts_multiple": 11.0,
+      "sts_revenue_b": 3.1,
+      "sts_margin_pct": 20.0,
+      "sts_multiple": 12.0,
+      "corporate_cost_b": 0.11,
+      "corporate_multiple": 8.0,
+      "net_debt_b": 2.0,
+      "separation_drag_b": 0.05,
+      "diluted_shares_m": 125,
+      "mts_ebitda_b": 0.7625,
+      "sts_ebitda_b": 0.62,
+      "mts_ev_b": 8.3875,
+      "sts_ev_b": 7.44,
+      "corporate_cost_pv_b": 0.88,
+      "equity_value_b": 12.8975,
+      "per_share_value": 103.18
+    }
+  ],
+  "valuation": {
+    "mode": "Mode C Mature Compounder + Segment SOTP / Spin Bridge",
+    "current_price": 38.03,
+    "market_cap_b": 4.794,
+    "current_ev_b": 7.052,
+    "expected_future_value": 59.03,
+    "expected_18m_dividend": 0.99,
+    "expected_annualized_irr_pct": 35.6,
+    "base_annualized_irr_pct": 36.3,
+    "central_hurdle_pct": 13.0,
+    "base_upside_bear_downside_ratio": 2.32,
+    "bull_upside_bear_downside_ratio": 7.04,
+    "two_x_base_bear_trigger_price": 39.02
+  },
+  "reverse_expectations": {
+    "current_ev_b": 7.052,
+    "base_corporate_cost_pv_b": 1.04,
+    "required_gross_segment_ev_b_before_sep_drag": 8.092,
+    "required_gross_segment_ev_b_including_base_sep_drag": 8.192,
+    "if_mts_base_ev_b": 6.003,
+    "residual_sts_ev_b": 2.089,
+    "implied_sts_ebitda_b_at_10x": 0.209,
+    "implied_sts_margin_pct_on_2_8b_revenue": 7.5,
+    "implied_sts_margin_pct_including_sep_drag": 7.8,
+    "if_sts_base_ev_b": 4.9,
+    "residual_mts_ev_b": 3.192,
+    "implied_mts_ev_ebitda_x": 4.8,
+    "interpretation": "Current price requires some combination of sharp STS earnings normalization, low MTS multiple, and/or larger undisclosed standalone cost/financing leakage."
+  },
+  "consensus": {
+    "fy26": {
+      "revenue_b": 8.06,
+      "adj_eps": 3.99
+    },
+    "management_guidance": {
+      "revenue_b_low": 7.9,
+      "revenue_b_high": 8.36,
+      "adj_ebitda_m_low": 980,
+      "adj_ebitda_m_high": 1040,
+      "adj_eps_low": 3.87,
+      "adj_eps_high": 4.22,
+      "adj_ocf_m_low": 560,
+      "adj_ocf_m_high": 600
+    },
+    "analyst_targets": {
+      "average": 45.71,
+      "low": 35,
+      "median": 45,
+      "high": 60,
+      "analyst_count": 8,
+      "rating": "Buy"
+    },
+    "revision_trend": "FY26 consensus is near guidance midpoint; thesis is not dependent on a near-term earnings beat."
+  },
+  "positioning": {
+    "short_interest_date": "2026-08-14",
+    "short_shares_m": 8.456,
+    "short_float_pct": 6.79,
+    "days_to_cover": 6.6,
+    "major_holders_pct": {
+      "FMR": 15.0,
+      "Vanguard": 9.85,
+      "BlackRock": 9.28,
+      "directors_and_executives_group": 1.154
+    }
+  },
+  "historical_valuation": {
+    "forward_pe": {
+      "FY21": 19.24,
+      "FY22": 19.36,
+      "FY23": 17.77,
+      "FY24": 16.07,
+      "FY25": 10.25,
+      "current": 9.28
+    },
+    "ev_ebitda": {
+      "FY21": 15.75,
+      "FY22": 17.71,
+      "FY23": 15.9,
+      "FY24": 15.52,
+      "FY25": 10.88,
+      "current": 10.79
+    }
+  },
+  "price_anchors": [
+    {
+      "date": "2021-12",
+      "price": 45.24,
+      "label": "FY21 year-end anchor"
+    },
+    {
+      "date": "2022-12",
+      "price": 50.64,
+      "label": "FY22 year-end anchor"
+    },
+    {
+      "date": "2023-12",
+      "price": 53.64,
+      "label": "FY23 year-end anchor"
+    },
+    {
+      "date": "2025-01",
+      "price": 57.69,
+      "label": "FY24 close anchor"
+    },
+    {
+      "date": "2025-09-24",
+      "price": 52.23,
+      "label": "52-week high"
+    },
+    {
+      "date": "2026-01",
+      "price": 40.14,
+      "label": "FY25 close anchor"
+    },
+    {
+      "date": "2026-05-15",
+      "price": 29.94,
+      "label": "52-week low"
+    },
+    {
+      "date": "2026-08-28",
+      "price": 38.03,
+      "label": "T0 close"
+    }
+  ],
+  "stance": {
+    "zone": "매수 우위",
+    "horizon": "18 months through early standalone price discovery",
+    "price_bands": {
+      "<=32": "매우 매력 / 적극 관심",
+      "32-45": "매수 우위",
+      "45-55": "조건부 매수·보유",
+      "55-65": "Base 가치 접근 / 보유",
+      ">70": "Bull 의존도 증가"
+    },
+    "condition": "November standalone debt/cost disclosures must not materially breach Base assumptions."
+  },
+  "catalysts": [
+    {
+      "when": "2026-09~10",
+      "event": "Q3 operating/protest updates",
+      "sensitivity": "중~높음",
+      "watch": "$10.6B protested pool, STS backlog/mix"
+    },
+    {
+      "when": "2026-11-11",
+      "event": "New KBR Investor Day",
+      "sensitivity": "매우 높음",
+      "watch": "STS standalone margin, corporate cost, capital allocation"
+    },
+    {
+      "when": "2026-11-12",
+      "event": "Trinzic Investor Day",
+      "sensitivity": "매우 높음",
+      "watch": "MTS growth, debt, FCF, capital allocation"
+    },
+    {
+      "when": "TBD before spin",
+      "event": "Form 10 / separation filings",
+      "sensitivity": "최고",
+      "watch": "debt/cash allocation, stranded cost, separation cost"
+    },
+    {
+      "when": "2027-01-04 target",
+      "event": "MTS / Trinzic spin",
+      "sensitivity": "높음",
+      "watch": "transaction completion, price discovery"
+    },
+    {
+      "when": "2027 H1",
+      "event": "First standalone results",
+      "sensitivity": "최고",
+      "watch": "actual cost, margin, FCF and leverage"
+    }
+  ],
+  "falsification_conditions": [
+    "Combined standalone corporate cost >$160M with no credible reduction path",
+    "Trinzic leverage structurally above peers without deleveraging capacity",
+    "STS normalized EBITDA margin persistently <15%",
+    "Major protested MTS awards lost together with funded-backlog deterioration",
+    "STS adoption remains stuck at technology-selection/FEED without license/lifecycle conversion"
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "0,3,5 / App.A,G,H"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "1.1 / App.C,D,F"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "1.2 / App.D,F"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "2 / App.E"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "3.1,4 / App.C"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3.2,4 / App.C,D,J"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "1.1,3,6 / App.C,D,K"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "1.2,3.2 / App.D"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "3.3 / App.F"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "4 / App.B,J"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "4.5,5,6 / App.G,H"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "1.3,3.4,6 / App.F,K"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "4,6 / App.B,C,K"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "6 / App.L"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "0,5,6 / App.I"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "5,6 / App.H"
+    }
+  ],
+  "sources": [
+    {
+      "id": "SRC-001",
+      "type": "primary",
+      "title": "KBR Q2 FY26 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1357615/000135761526000172/kbr-20260703.htm"
+    },
+    {
+      "id": "SRC-002",
+      "type": "primary",
+      "title": "KBR Q2 FY26 earnings release",
+      "url": "https://www.sec.gov/Archives/edgar/data/1357615/000135761526000170/q226kbr-exhibit991x07032026.htm"
+    },
+    {
+      "id": "SRC-003",
+      "type": "primary",
+      "title": "KBR FY25 results",
+      "url": "https://investors.kbr.com/news-and-events/news/news-details/2026/KBR-Reports-Fourth-Quarter-and-Fiscal-2025-Results/default.aspx"
+    },
+    {
+      "id": "SRC-004",
+      "type": "primary",
+      "title": "KBR Q1 FY26 results",
+      "url": "https://investors.kbr.com/news-and-events/news/news-details/2026/KBR-Reports-First-Quarter-Fiscal-2026-Results/default.aspx"
+    },
+    {
+      "id": "SRC-005",
+      "type": "primary",
+      "title": "KBR Q3 FY25 results",
+      "url": "https://investors.kbr.com/news-and-events/news/news-details/2025/KBR-Reports-Third-Quarter-Fiscal-2025-Results/default.aspx"
+    },
+    {
+      "id": "SRC-006",
+      "type": "primary",
+      "title": "KBR Q2 FY25 results",
+      "url": "https://investors.kbr.com/news-and-events/news/news-details/2025/KBR-Reports-Second-Quarter-Fiscal-2025-Results/default.aspx"
+    },
+    {
+      "id": "SRC-007",
+      "type": "primary",
+      "title": "KBR spin information",
+      "url": "https://investors.kbr.com/news-and-events/spin-off-information/default.aspx"
+    },
+    {
+      "id": "SRC-008",
+      "type": "primary",
+      "title": "KBR Trinzic naming announcement",
+      "url": "https://investors.kbr.com/news-and-events/news/news-details/2026/KBR-Unveils-Trinzic-as-New-Name-for-Planned-Independent-Mission-Technology-Solutions-Company/default.aspx"
+    },
+    {
+      "id": "SRC-009",
+      "type": "primary",
+      "title": "KBR 2026 proxy",
+      "url": "https://www.sec.gov/Archives/edgar/data/1357615/000110465926036847/tmb-20260514xdef14a.htm"
+    },
+    {
+      "id": "SRC-010",
+      "type": "primary",
+      "title": "KBR 2021 Investor Day",
+      "url": "https://s23.q4cdn.com/238351756/files/doc_presentations/2021/03/2021_Investor-Day_IR_Control_Version_32321_PDF-version.pdf"
+    },
+    {
+      "id": "SRC-011",
+      "type": "primary_government",
+      "title": "UK Defence Investment Plan funding",
+      "url": "https://www.gov.uk/government/publications/the-defence-investment-plan/the-defence-investment-plan-funding-explainer"
+    },
+    {
+      "id": "SRC-012",
+      "type": "primary_government",
+      "title": "Australia 2026 NDS budget release",
+      "url": "https://www.minister.defence.gov.au/media-releases/2026-05-12/albanese-government-delivering-defence-our-veterans"
+    },
+    {
+      "id": "SRC-013",
+      "type": "primary_government",
+      "title": "European Commission ReFuelEU Aviation",
+      "url": "https://transport.ec.europa.eu/transport-modes/air/environment/refueleu-aviation_en"
+    },
+    {
+      "id": "SRC-014",
+      "type": "primary",
+      "title": "KBR recent awards",
+      "url": "https://investors.kbr.com/news-and-events/news/"
+    },
+    {
+      "id": "SRC-015",
+      "type": "secondary_market",
+      "title": "StockAnalysis KBR ratios",
+      "url": "https://stockanalysis.com/stocks/kbr/financials/ratios/"
+    },
+    {
+      "id": "SRC-016",
+      "type": "secondary_consensus",
+      "title": "StockAnalysis KBR consensus",
+      "url": "https://stockanalysis.com/stocks/kbr/forecast/"
+    },
+    {
+      "id": "SRC-017",
+      "type": "secondary_positioning",
+      "title": "MarketBeat short interest",
+      "url": "https://www.marketbeat.com/stocks/NYSE/KBR/short-interest/"
+    }
+  ],
+  "release_gates": {
+    "H1_H2_RESEARCH_CONTRACT_COMPLETENESS": "PASS",
+    "H2_H3_COVERAGE_LINEAGE": "PASS",
+    "RC_H3_COVERAGE_RATE": "100%",
+    "LATEST_FILING_CHECK": "PASS",
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "EXPLANATORY_SPACE_ALLOCATION": "PASS"
+  },
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "3개년 매출과 조정 EBITDA",
+      "authoritative_source_block": [
+        "annual_3y"
+      ],
+      "source_hash_sha256": "30ff1d6ad6dd518f7a3ab5652814fd1c5e4944357575971dff11ba926c6f2f68",
+      "source_values": {
+        "annual_3y": [
+          {
+            "year": "FY23",
+            "revenue_m": 6956,
+            "adj_ebitda_m": 747,
+            "adj_eps": 2.91,
+            "ocf_m": 331,
+            "capex_m": 62,
+            "simple_fcf_m": 269,
+            "diluted_shares_m": 135
+          },
+          {
+            "year": "FY24",
+            "revenue_m": 7710,
+            "adj_ebitda_m": 868,
+            "adj_eps": 3.33,
+            "ocf_m": 450,
+            "capex_m": 52,
+            "simple_fcf_m": 398,
+            "diluted_shares_m": 134
+          },
+          {
+            "year": "FY25",
+            "revenue_m": 7786,
+            "adj_ebitda_m": 968,
+            "adj_eps": 3.93,
+            "ocf_m": 557,
+            "capex_m": 42,
+            "simple_fcf_m": 515,
+            "diluted_shares_m": 129
+          }
+        ]
+      },
+      "display_values_match": "PASS",
+      "table_match": "PASS",
+      "narrative_match": "PASS",
+      "render_match": "PASS",
+      "narrative_locator": "Chapter 4.1",
+      "table_locator": "Appendix B",
+      "rendered_asset_locator": "HTML #vis-001 / PDF p.9",
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "최근 8분기 매출과 조정 EBITDA 마진",
+      "authoritative_source_block": [
+        "quarterly_8q"
+      ],
+      "source_hash_sha256": "ea93452465fa8daca6c2742d0e6c5662c8dafa4281f622e8feefc16cb8e1360b",
+      "source_values": {
+        "quarterly_8q": [
+          {
+            "quarter": "Q3 FY24",
+            "revenue_m": 1937,
+            "adj_ebitda_m": 219,
+            "adj_eps": 0.84,
+            "ocf_m": 166,
+            "adj_ebitda_margin_pct": 11.31
+          },
+          {
+            "quarter": "Q4 FY24",
+            "revenue_m": 2108,
+            "adj_ebitda_m": 226,
+            "adj_eps": 0.9,
+            "ocf_m": 41,
+            "adj_ebitda_margin_pct": 10.72
+          },
+          {
+            "quarter": "Q1 FY25",
+            "revenue_m": 2018,
+            "adj_ebitda_m": 248,
+            "adj_eps": 1.0,
+            "ocf_m": 91,
+            "adj_ebitda_margin_pct": 12.29
+          },
+          {
+            "quarter": "Q2 FY25",
+            "revenue_m": 1952,
+            "adj_ebitda_m": 242,
+            "adj_eps": 0.91,
+            "ocf_m": 217,
+            "adj_ebitda_margin_pct": 12.4
+          },
+          {
+            "quarter": "Q3 FY25",
+            "revenue_m": 1931,
+            "adj_ebitda_m": 240,
+            "adj_eps": 1.02,
+            "ocf_m": 198,
+            "adj_ebitda_margin_pct": 12.43
+          },
+          {
+            "quarter": "Q4 FY25",
+            "revenue_m": 1885,
+            "adj_ebitda_m": 238,
+            "adj_eps": 0.99,
+            "ocf_m": 51,
+            "adj_ebitda_margin_pct": 12.63
+          },
+          {
+            "quarter": "Q1 FY26",
+            "revenue_m": 1923,
+            "adj_ebitda_m": 251,
+            "adj_eps": 0.96,
+            "ocf_m": 110,
+            "adj_ebitda_margin_pct": 13.05
+          },
+          {
+            "quarter": "Q2 FY26",
+            "revenue_m": 1984,
+            "adj_ebitda_m": 258,
+            "adj_eps": 0.99,
+            "ocf_m": 50,
+            "adj_ebitda_margin_pct": 13.0
+          }
+        ]
+      },
+      "display_values_match": "PASS",
+      "table_match": "PASS",
+      "narrative_match": "PASS",
+      "render_match": "PASS",
+      "narrative_locator": "Chapter 4.2",
+      "table_locator": "Appendix B",
+      "rendered_asset_locator": "HTML #vis-002 / PDF p.10",
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "세그먼트 백로그와 protest overlay",
+      "authoritative_source_block": [
+        "backlog"
+      ],
+      "source_hash_sha256": "838ed6066efba47aae2464119a7f84d98665e6f99dde46ec4afde39b9de2c802",
+      "source_values": {
+        "backlog": {
+          "asof": "2026-07-03",
+          "mts_backlog_b": 12.282,
+          "mts_funded_backlog_b": 8.8,
+          "mts_unexercised_options_b": 5.192,
+          "mts_protested_awards_b": 10.6,
+          "mts_book_to_bill": 0.8,
+          "sts_backlog_b": 5.523,
+          "sts_book_to_bill": 1.5,
+          "total_backlog_b": 17.805,
+          "total_backlog_plus_options_b": 22.997
+        }
+      },
+      "display_values_match": "PASS",
+      "table_match": "PASS",
+      "narrative_match": "PASS",
+      "render_match": "PASS",
+      "narrative_locator": "Chapter 1 / 3",
+      "table_locator": "Appendix C",
+      "rendered_asset_locator": "HTML #vis-003 / PDF p.5",
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "Bear/Base/Bull SOTP 주당가치",
+      "authoritative_source_block": [
+        "scenarios",
+        "current_price"
+      ],
+      "source_hash_sha256": "b80e7f487fc3dfb9d0de0e4cb4b6ca8ae0ff29039fec23bbb22cf3bd464b6e62",
+      "source_values": {
+        "scenarios": [
+          {
+            "name": "Bear",
+            "probability": 0.3,
+            "mts_revenue_b": 5.3,
+            "mts_margin_pct": 10.0,
+            "mts_multiple": 8.0,
+            "sts_revenue_b": 2.55,
+            "sts_margin_pct": 14.5,
+            "sts_multiple": 8.5,
+            "corporate_cost_b": 0.15,
+            "corporate_multiple": 8.0,
+            "net_debt_b": 2.35,
+            "separation_drag_b": 0.15,
+            "diluted_shares_m": 128,
+            "mts_ebitda_b": 0.53,
+            "sts_ebitda_b": 0.36975,
+            "mts_ev_b": 4.24,
+            "sts_ev_b": 3.142875,
+            "corporate_cost_pv_b": 1.2,
+            "equity_value_b": 3.682875,
+            "per_share_value": 28.77
+          },
+          {
+            "name": "Base",
+            "probability": 0.5,
+            "mts_revenue_b": 5.8,
+            "mts_margin_pct": 11.5,
+            "mts_multiple": 9.0,
+            "sts_revenue_b": 2.8,
+            "sts_margin_pct": 17.5,
+            "sts_multiple": 10.0,
+            "corporate_cost_b": 0.13,
+            "corporate_multiple": 8.0,
+            "net_debt_b": 2.258,
+            "separation_drag_b": 0.1,
+            "diluted_shares_m": 126.07,
+            "mts_ebitda_b": 0.667,
+            "sts_ebitda_b": 0.49,
+            "mts_ev_b": 6.003,
+            "sts_ev_b": 4.9,
+            "corporate_cost_pv_b": 1.04,
+            "equity_value_b": 7.505,
+            "per_share_value": 59.53
+          },
+          {
+            "name": "Bull",
+            "probability": 0.2,
+            "mts_revenue_b": 6.1,
+            "mts_margin_pct": 12.5,
+            "mts_multiple": 11.0,
+            "sts_revenue_b": 3.1,
+            "sts_margin_pct": 20.0,
+            "sts_multiple": 12.0,
+            "corporate_cost_b": 0.11,
+            "corporate_multiple": 8.0,
+            "net_debt_b": 2.0,
+            "separation_drag_b": 0.05,
+            "diluted_shares_m": 125,
+            "mts_ebitda_b": 0.7625,
+            "sts_ebitda_b": 0.62,
+            "mts_ev_b": 8.3875,
+            "sts_ev_b": 7.44,
+            "corporate_cost_pv_b": 0.88,
+            "equity_value_b": 12.8975,
+            "per_share_value": 103.18
+          }
+        ],
+        "current_price": 38.03
+      },
+      "display_values_match": "PASS",
+      "table_match": "PASS",
+      "narrative_match": "PASS",
+      "render_match": "PASS",
+      "narrative_locator": "Chapter 5.2",
+      "table_locator": "Appendix H",
+      "rendered_asset_locator": "HTML #vis-004 / PDF p.12",
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-005",
+      "figure_title": "현재 가격의 reverse expectations",
+      "authoritative_source_block": [
+        "reverse_expectations"
+      ],
+      "source_hash_sha256": "6ca4cf569fe3e535026d9092a6e0869d6af8c9f8b4baa297c9476981f3871fe8",
+      "source_values": {
+        "reverse_expectations": {
+          "current_ev_b": 7.052,
+          "base_corporate_cost_pv_b": 1.04,
+          "required_gross_segment_ev_b_before_sep_drag": 8.092,
+          "required_gross_segment_ev_b_including_base_sep_drag": 8.192,
+          "if_mts_base_ev_b": 6.003,
+          "residual_sts_ev_b": 2.089,
+          "implied_sts_ebitda_b_at_10x": 0.209,
+          "implied_sts_margin_pct_on_2_8b_revenue": 7.5,
+          "implied_sts_margin_pct_including_sep_drag": 7.8,
+          "if_sts_base_ev_b": 4.9,
+          "residual_mts_ev_b": 3.192,
+          "implied_mts_ev_ebitda_x": 4.8,
+          "interpretation": "Current price requires some combination of sharp STS earnings normalization, low MTS multiple, and/or larger undisclosed standalone cost/financing leakage."
+        }
+      },
+      "display_values_match": "PASS",
+      "table_match": "PASS",
+      "narrative_match": "PASS",
+      "render_match": "PASS",
+      "narrative_locator": "Chapter 5.3",
+      "table_locator": "Appendix H",
+      "rendered_asset_locator": "HTML #vis-005 / PDF p.13",
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-006",
+      "figure_title": "주요 가격 앵커와 분석 가격대",
+      "authoritative_source_block": [
+        "price_anchors",
+        "price_bands",
+        "current_price"
+      ],
+      "source_hash_sha256": "942b6b228e9c99f8bb2984f32445a0e8e9bd099e487b8af2b91476a7e3d90991",
+      "source_values": {
+        "price_anchors": [
+          {
+            "date": "2021-12",
+            "price": 45.24,
+            "label": "FY21 year-end anchor"
+          },
+          {
+            "date": "2022-12",
+            "price": 50.64,
+            "label": "FY22 year-end anchor"
+          },
+          {
+            "date": "2023-12",
+            "price": 53.64,
+            "label": "FY23 year-end anchor"
+          },
+          {
+            "date": "2025-01",
+            "price": 57.69,
+            "label": "FY24 close anchor"
+          },
+          {
+            "date": "2025-09-24",
+            "price": 52.23,
+            "label": "52-week high"
+          },
+          {
+            "date": "2026-01",
+            "price": 40.14,
+            "label": "FY25 close anchor"
+          },
+          {
+            "date": "2026-05-15",
+            "price": 29.94,
+            "label": "52-week low"
+          },
+          {
+            "date": "2026-08-28",
+            "price": 38.03,
+            "label": "T0 close"
+          }
+        ],
+        "price_bands": {
+          "<=32": "매우 매력 / 적극 관심",
+          "32-45": "매수 우위",
+          "45-55": "조건부 매수·보유",
+          "55-65": "Base 가치 접근 / 보유",
+          ">70": "Bull 의존도 증가"
+        },
+        "current_price": 38.03
+      },
+      "display_values_match": "PASS",
+      "table_match": "PASS",
+      "narrative_match": "PASS",
+      "render_match": "PASS",
+      "narrative_locator": "Chapter 6.1",
+      "table_locator": "Appendix I",
+      "rendered_asset_locator": "HTML #vis-006 / PDF p.15",
+      "status": "PASS"
+    }
+  ],
+  "publishing_qa": {
+    "PUBLISHING_ACCEPTANCE": "PASS",
+    "REPORT_DATA_PACK": "EMITTED",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "CONTENT_MEANING_LOCK_PRESERVED": "PASS",
+    "PUBLISHED_TOP_LEVEL_SCHEMA_MATCH": "PASS",
+    "EXPLANATORY_DEPTH_PRESERVED": "PASS",
+    "CORE_LANDSCAPE_PAGES": 0,
+    "PRINTED_TOC_PAGES": 1,
+    "TOC_CLICKABLE": "PASS",
+    "PDF_BOOKMARKS": "PASS",
+    "HTML_SIDEBAR": "PASS",
+    "SEARCHABLE_TEXT": "PASS",
+    "KOREAN_READABILITY": "PASS",
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "EXPLANATORY_SPACE_ALLOCATION": "PASS",
+    "SMART_CHAPTER_TRANSITIONS": "PASS",
+    "ARGUMENT_BLOCK_PAGINATION": "PASS",
+    "ACCIDENTAL_SPARSE_PAGES": 0,
+    "DENSITY_CONTROL": "PASS",
+    "VISUAL_SUBSTITUTION": "PASS",
+    "VISUAL_GRAMMAR_VARIETY": "PASS",
+    "CHART_READABILITY": "PASS",
+    "TABLE_QUALITY": "PASS",
+    "CONTACT_SHEET_COMPOSITION_QA": "PASS",
+    "SEMANTIC_GOLDEN_QA": "PASS",
+    "VISUAL_GOLDEN_QA": "PASS",
+    "GOLDEN_PARITY": "PASS",
+    "FIGURE_NUMERICAL_PARITY": "PASS",
+    "VISUAL_DATA_LINEAGE": "PASS",
+    "VISUAL_SEMANTIC_PARITY": "PASS",
+    "STALE_VISUAL_ASSETS": 0,
+    "RENDERED_VISUAL_PARITY_QA": "PASS",
+    "DECISION_VISUALS_TOTAL": 6,
+    "DECISION_VISUALS_PARITY_PASS": 6,
+    "PDF_PAGE_COUNT": 22,
+    "PDF_OUTLINE_ITEMS": 77,
+    "PDF_INTERNAL_LINKS": 96,
+    "PDF_EXTERNAL_LINKS": 85,
+    "CONTACT_SHEET_REMEDIATION_PASSES": 2,
+    "artifact_sha256": {
+      "html": "48c8a6f350ae3e7ca71ab9d7bf2cbf2e34f1616c2a3da5962b13eefc78e6b321",
+      "pdf": "36f3edc0fa036b5b9aeea51db28d3c28de857a4e3cf80112488a006c6dbda90e",
+      "h3_manuscript": "62e32ef205c86e73b0d7c8deed066ecb05b065b9191e4ef423b18312e640560b"
+    }
+  }
+}

@@ -1,0 +1,1168 @@
+{
+  "meta": {
+    "ticker": "MTZ",
+    "company": "MasTec, Inc.",
+    "T0": "2026-08-31",
+    "price_asof": "2026-08-28",
+    "current_price": 241.0,
+    "filing_asof": "2026-08-17 material 8-K; 2Q26 Form 10-Q for financial statements",
+    "transcript_asof": "2026-07-31",
+    "consensus_asof": "2026-08-29 public-data ceiling",
+    "version": "DDOS v1.7",
+    "currency": "USD"
+  },
+  "financials": {
+    "annual_3y": {
+      "2023": {
+        "revenue_m": 11995.9,
+        "adj_ebitda_m": 846.4,
+        "adj_ebitda_margin_pct": 7.1,
+        "gaap_net_income_m": -47.3,
+        "adj_eps": 1.81,
+        "cfo_m": 687.3,
+        "capex_m": 192.9,
+        "fcf_m": null,
+        "backlog_m": 12400
+      },
+      "2024": {
+        "revenue_m": 12303.5,
+        "adj_ebitda_m": 1005.6,
+        "adj_ebitda_margin_pct": 8.2,
+        "gaap_net_income_m": 199.4,
+        "adj_eps": 3.95,
+        "cfo_m": 1121.6,
+        "capex_m": 148.9,
+        "fcf_m": 1039.0,
+        "backlog_m": 14298
+      },
+      "2025": {
+        "revenue_m": 14299.2,
+        "adj_ebitda_m": 1150.1,
+        "adj_ebitda_margin_pct": 8.0,
+        "gaap_net_income_m": 422.0,
+        "adj_eps": 6.55,
+        "cfo_m": 545.7,
+        "capex_m": 260.0,
+        "fcf_m": 342.0,
+        "backlog_m": 18963
+      }
+    },
+    "quarterly_8q": [
+      {
+        "period": "3Q24",
+        "revenue_m": 3252.4,
+        "adj_ebitda_m": 310.5,
+        "margin_pct": 9.5,
+        "adj_eps": 1.68,
+        "cfo_m": 278,
+        "fcf_m": 252,
+        "backlog_m": 13858
+      },
+      {
+        "period": "4Q24",
+        "revenue_m": 3403.1,
+        "adj_ebitda_m": 270.9,
+        "margin_pct": 8.0,
+        "adj_eps": 1.44,
+        "cfo_m": 472,
+        "fcf_m": 440,
+        "backlog_m": 14298
+      },
+      {
+        "period": "1Q25",
+        "revenue_m": 2847.7,
+        "adj_ebitda_m": 163.7,
+        "margin_pct": 5.7,
+        "adj_eps": 0.51,
+        "cfo_m": 78,
+        "fcf_m": 45,
+        "backlog_m": 15880
+      },
+      {
+        "period": "2Q25",
+        "revenue_m": 3544.7,
+        "adj_ebitda_m": 274.8,
+        "margin_pct": 7.8,
+        "adj_eps": 1.49,
+        "cfo_m": 6,
+        "fcf_m": -45,
+        "backlog_m": 16452
+      },
+      {
+        "period": "3Q25",
+        "revenue_m": 3966.9,
+        "adj_ebitda_m": 373.5,
+        "margin_pct": 9.4,
+        "adj_eps": 2.48,
+        "cfo_m": 89,
+        "fcf_m": 36,
+        "backlog_m": 16780
+      },
+      {
+        "period": "4Q25",
+        "revenue_m": 3939.8,
+        "adj_ebitda_m": 338.2,
+        "margin_pct": 8.6,
+        "adj_eps": 2.07,
+        "cfo_m": 373,
+        "fcf_m": 306,
+        "backlog_m": 18963
+      },
+      {
+        "period": "1Q26",
+        "revenue_m": 3828.8,
+        "adj_ebitda_m": 283.6,
+        "margin_pct": 7.4,
+        "adj_eps": 1.39,
+        "cfo_m": 99,
+        "fcf_m": 12,
+        "backlog_m": 20328
+      },
+      {
+        "period": "2Q26",
+        "revenue_m": 4373.6,
+        "adj_ebitda_m": 384.2,
+        "margin_pct": 8.8,
+        "adj_eps": 2.22,
+        "cfo_m": 21,
+        "fcf_m": -59,
+        "backlog_m": 21391
+      }
+    ],
+    "segments_q2_26": {
+      "Communications": {
+        "revenue_m": 888.9,
+        "ebitda_m": 73.1,
+        "margin_pct": 8.2,
+        "backlog_m": 5461
+      },
+      "Clean Energy & Infrastructure": {
+        "revenue_m": 1622.1,
+        "ebitda_m": 128.2,
+        "margin_pct": 7.9,
+        "backlog_m": 7791
+      },
+      "Power Delivery": {
+        "revenue_m": 1245.8,
+        "ebitda_m": 113.0,
+        "margin_pct": 9.1,
+        "backlog_m": 6347
+      },
+      "Pipeline Infrastructure": {
+        "revenue_m": 642.8,
+        "ebitda_m": 118.5,
+        "margin_pct": 18.4,
+        "backlog_m": 1792
+      }
+    },
+    "fy26_guidance": {
+      "revenue_m": 18200,
+      "adj_ebitda_m": 1600,
+      "adj_ebitda_margin_pct": 8.8,
+      "adj_eps": 9.3,
+      "gaap_eps": 6.2,
+      "cfo_m_min": 1000,
+      "net_capex_m": 220,
+      "weighted_avg_diluted_shares_m": 79.4,
+      "segments": {
+        "Communications": {
+          "revenue_m": 3250,
+          "margin": "high single digits"
+        },
+        "Clean Energy & Infrastructure": {
+          "revenue_m": 6815,
+          "margin": "high single digits"
+        },
+        "Power Delivery": {
+          "revenue_m": 5725,
+          "margin": "low double digits"
+        },
+        "Pipeline Infrastructure": {
+          "revenue_m": 2525,
+          "margin": "high teens"
+        }
+      }
+    },
+    "working_capital": {
+      "contract_assets_2025_12_31_m": 2001.9,
+      "contract_assets_2026_06_30_m": 2484.4,
+      "contract_assets_change_h1_26_m": 482.5,
+      "dso_2025_12_31_days": 65,
+      "dso_2026_06_30_days": 72,
+      "h1_26_cfo_m": 120.3,
+      "h1_26_capex_m": 188.3,
+      "h1_26_ar_cash_use_m": 143.6,
+      "h1_26_contract_asset_cash_use_m": 463.1,
+      "backlog_msa_share_pct": 40,
+      "backlog_msa_estimated_future_revenue_m": 8400,
+      "beyond_18m_rpo_long_msa_m": 3200
+    },
+    "ceilings": [
+      "Public FY27-FY28 detailed sell-side consensus distribution is incomplete."
+    ]
+  },
+  "superior_acquisition": {
+    "closed": "2026-07-20",
+    "purchase_price_m_approx": 1600,
+    "headline_ev_m": 1650,
+    "cash_consideration_m_approx": 1200,
+    "shares_issued": 1219498,
+    "share_value_m_at_close": 410.5,
+    "employees_approx": 3000,
+    "segment": "Power Delivery",
+    "2026_revenue_m_low": 1600,
+    "2026_revenue_m_high": 1700,
+    "2026_adj_ebitda_m_low": 225,
+    "2026_adj_ebitda_m_high": 250,
+    "2027_revenue_m_low": 2200,
+    "2027_revenue_m_high": 2500,
+    "2027_adj_ebitda_m_low": 250,
+    "2027_adj_ebitda_m_high": 275,
+    "remaining_2026_mtz_revenue_m_low": 800,
+    "remaining_2026_mtz_revenue_m_high": 900,
+    "remaining_2026_mtz_ebitda_m_low": 100,
+    "remaining_2026_mtz_ebitda_m_high": 115,
+    "remaining_2026_mtz_adj_eps_low": 0.5,
+    "remaining_2026_mtz_adj_eps_high": 0.65,
+    "primary_source_ceiling": "Hyperscaler/customer-level revenue, backlog margin, project economics are not publicly disclosed in sufficient detail."
+  },
+  "capital_structure": {
+    "shares_outstanding_2026_07_27_m": 80.304948,
+    "q2_26_pre_superior_debt_obligations_m": 2752.9,
+    "pro_forma_total_debt_m": 4235.1,
+    "new_2036_notes_m": 650,
+    "notes_coupon_pct": 5.85,
+    "superior_cash_acquired_m_approx": 105,
+    "estimated_pro_forma_net_debt_m": 3815,
+    "buyback_authorization_m": 250,
+    "dividend": 0
+  },
+  "kpis": [
+    {
+      "name": "18-month backlog",
+      "history": [
+        13858,
+        14298,
+        15880,
+        16452,
+        16780,
+        18963,
+        20328,
+        21391
+      ],
+      "current": 21391,
+      "thresholds": {
+        "green": ">10% YoY with stable/lower non-binding MSA mix",
+        "yellow": "0-10% growth or rising MSA share",
+        "red": "decline/cancellations"
+      }
+    },
+    {
+      "name": "Power Delivery EBITDA margin",
+      "history": [
+        null,
+        null,
+        null,
+        8.7,
+        null,
+        null,
+        null,
+        9.1
+      ],
+      "current": 9.1,
+      "thresholds": {
+        "green": ">=10% including Superior",
+        "yellow": "8.5-10%",
+        "red": "<8.5%"
+      }
+    },
+    {
+      "name": "Communications EBITDA margin",
+      "history": [
+        null,
+        null,
+        null,
+        9.9,
+        11.3,
+        8.5,
+        null,
+        8.2
+      ],
+      "current": 8.2,
+      "thresholds": {
+        "green": ">=10% with revenue growth",
+        "yellow": "8-10%",
+        "red": "<8% or further guide cuts"
+      }
+    },
+    {
+      "name": "DSO",
+      "history": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        65,
+        null,
+        72
+      ],
+      "current": 72,
+      "thresholds": {
+        "green": "<=65 days",
+        "yellow": "66-72 days",
+        "red": ">72 days"
+      }
+    },
+    {
+      "name": "EBITDA-to-FCF conversion",
+      "history": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        29.7,
+        null,
+        null
+      ],
+      "current": "2025 29.7%; 1H26 simple FCF negative",
+      "thresholds": {
+        "green": ">=55% through cycle",
+        "yellow": "35-55%",
+        "red": "<35%"
+      }
+    },
+    {
+      "name": "Post-Superior forward net debt / EBITDA",
+      "history": [],
+      "current": "~2.4x transitional estimate",
+      "thresholds": {
+        "green": "<2.0x",
+        "yellow": "2.0-2.5x",
+        "red": ">2.5x or new M&A before deleveraging"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.25,
+      "revenue_path_m": [
+        18200,
+        19200,
+        20500
+      ],
+      "margin_path_pct": [
+        8.8,
+        8.0,
+        7.8
+      ],
+      "adj_ebitda_path_m": [
+        1600,
+        1536,
+        1599
+      ],
+      "fcf_m": [
+        780,
+        550,
+        620
+      ],
+      "net_debt_2028_m": 3200,
+      "diluted_shares_m": 82.0,
+      "exit_ev_ebitda": 9.5,
+      "per_share_value": 146.2,
+      "formation": "Communications delays persist; CE&I fixed-price/project timing issues emerge; Superior growth slows and integration consumes working capital; high Pipeline margin normalizes sharply.",
+      "break": "DSO returns <=65 days, Power margin >10.5%, and 2027 FCF >$1.0B.",
+      "enterprise_value_2028_m": 15190.5,
+      "equity_value_2028_m": 11990.5,
+      "irr": -0.1921
+    },
+    {
+      "name": "Base",
+      "probability": 0.55,
+      "revenue_path_m": [
+        18200,
+        21700,
+        24100
+      ],
+      "margin_path_pct": [
+        8.8,
+        9.2,
+        9.9
+      ],
+      "adj_ebitda_path_m": [
+        1600,
+        1996,
+        2386
+      ],
+      "fcf_m": [
+        780,
+        980,
+        1250
+      ],
+      "net_debt_2028_m": 1800,
+      "diluted_shares_m": 81.0,
+      "exit_ev_ebitda": 12.5,
+      "per_share_value": 346.0,
+      "formation": "Grid/data-center demand remains strong; Superior achieves most of its 2027 plan; Communications recovers in 2027; CE&I margins improve modestly; FCF conversion approaches management target by 2028.",
+      "break": "2027 EBITDA <~$1.8B, DSO stays >72 days, or net debt fails to fall despite earnings growth.",
+      "enterprise_value_2028_m": 29825.0,
+      "equity_value_2028_m": 28025.0,
+      "irr": 0.1669
+    },
+    {
+      "name": "Bull",
+      "probability": 0.2,
+      "revenue_path_m": [
+        18200,
+        23000,
+        26000
+      ],
+      "margin_path_pct": [
+        8.8,
+        9.8,
+        10.8
+      ],
+      "adj_ebitda_path_m": [
+        1600,
+        2254,
+        2808
+      ],
+      "fcf_m": [
+        800,
+        1200,
+        1550
+      ],
+      "net_debt_2028_m": 1100,
+      "diluted_shares_m": 81.0,
+      "exit_ev_ebitda": 15.0,
+      "per_share_value": 506.4,
+      "formation": "Superior cross-sell accelerates; mission-critical electrical becomes a larger mix; Power/CE&I scale benefits materialize; Communications fiber/interconnect rebounds; cash conversion normalizes quickly.",
+      "break": "Power margin fails to clear 10%, Superior 2027 revenue misses $2.2B, or FCF conversion remains <45%.",
+      "enterprise_value_2028_m": 42120.0,
+      "equity_value_2028_m": 41020.0,
+      "irr": 0.3728
+    }
+  ],
+  "valuation": {
+    "mode": "Mode C Mature Compounder + cyclical normalization cross-check",
+    "core_per_share": 346.0,
+    "execution_per_share": 346.0,
+    "ecosystem_per_share": 0,
+    "drag_per_share": 0,
+    "expected_value": 328.1,
+    "expected_irr": 0.1407,
+    "current_price": 241.0,
+    "valuation_horizon_end": "2028-12-31",
+    "horizon_years": 2.344,
+    "upside_downside_ratio_bull_vs_bear": 2.8,
+    "peer_snapshot": [
+      {
+        "ticker": "MTZ",
+        "focus": "Diversified infra + data center electrical",
+        "ev_ebitda_ttm": 16.83,
+        "forward_pe": 22.25,
+        "roic_pct": 10.64,
+        "fcf_yield_pct": 1.13,
+        "asof": "2026-08-28/29"
+      },
+      {
+        "ticker": "PWR",
+        "focus": "Utility T&D + large projects",
+        "ev_ebitda_ttm": 32.77,
+        "forward_pe": 33.69,
+        "roic_pct": 10.02,
+        "fcf_yield_pct": 2.44,
+        "asof": "2026-08-27"
+      },
+      {
+        "ticker": "EME",
+        "focus": "Electrical/mechanical + mission critical",
+        "ev_ebitda_ttm": 16.85,
+        "forward_pe": 23.62,
+        "roic_pct": 36.81,
+        "fcf_yield_pct": 3.22,
+        "asof": "2026-08-10"
+      },
+      {
+        "ticker": "MYRG",
+        "focus": "T&D + commercial/industrial electrical",
+        "ev_ebitda_ttm": 15.52,
+        "forward_pe": 22.65,
+        "roic_pct": 25.59,
+        "fcf_yield_pct": 4.22,
+        "asof": "2026-08-29"
+      },
+      {
+        "ticker": "PRIM",
+        "focus": "Utility + Energy/renewables",
+        "ev_ebitda_ttm": 17.52,
+        "forward_pe": 20.53,
+        "roic_pct": 6.73,
+        "fcf_yield_pct": 1.98,
+        "asof": "2026-08-09"
+      },
+      {
+        "ticker": "DY",
+        "focus": "Fiber/wireless + data center cabling",
+        "ev_ebitda_ttm": null,
+        "forward_pe": null,
+        "roic_pct": null,
+        "fcf_yield_pct": null,
+        "asof": "2026-08-28"
+      }
+    ]
+  },
+  "reverse_expectations": {
+    "assumptions": {
+      "exit_ev_ebitda": 12.5,
+      "2028_net_debt_m": 1800,
+      "2028_diluted_shares_m": 81.0
+    },
+    "required_cases": [
+      {
+        "required_return": 0.0,
+        "required_2028_price": 241.0,
+        "required_2028_ebitda_m_at_12_5x_and_1_8b_net_debt": 1706.0
+      },
+      {
+        "required_return": 0.1,
+        "required_2028_price": 301.3,
+        "required_2028_ebitda_m_at_12_5x_and_1_8b_net_debt": 2097.0
+      },
+      {
+        "required_return": 0.12,
+        "required_2028_price": 314.3,
+        "required_2028_ebitda_m_at_12_5x_and_1_8b_net_debt": 2181.0
+      },
+      {
+        "required_return": 0.15,
+        "required_2028_price": 334.4,
+        "required_2028_ebitda_m_at_12_5x_and_1_8b_net_debt": 2311.0
+      }
+    ],
+    "interpretation": "At a 12% required return, $241 requires roughly $2.18B of 2028 EBITDA under the stated capital structure and multiple; this is below the pre-Superior organic 2028 EBITDA target of ~$2.2B, implying the market discounts either target delivery, terminal multiple, or deleveraging."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_m": 18200,
+      "adj_eps": 9.31
+    },
+    "fy2": {
+      "status": "PRIMARY_SOURCE_CEILING"
+    },
+    "analyst_price_target_avg": 427.21,
+    "analyst_count": 20,
+    "rating": "Strong Buy",
+    "short_float_pct_2026_08_14": 8.32,
+    "revision_trend": "FY26 headline revenue/EPS moved up after Superior, but Communications guidance was cut materially; public target consensus remains far above spot."
+  },
+  "stance": {
+    "zone": "조건부 관심 (current price near hurdle; stronger buy zone below)",
+    "price_bands": {
+      "strong_interest_below": 230,
+      "preferred_entry_low": 215,
+      "preferred_entry_high": 230,
+      "current": 241,
+      "base_fair_value": 346.0,
+      "expected_value": 328.1,
+      "bear_value": 146.2,
+      "bull_value": 506.4
+    },
+    "horizon": "2028-12-31",
+    "hurdle": "12-15% annualized",
+    "reason": "Expected IRR ~14.1% and Bull/Bear U/D ~2.8x, but working-capital quality and post-Superior leverage keep current price from an unconditional buy classification."
+  },
+  "catalysts": [
+    {
+      "when": "3Q26 earnings",
+      "event": "Superior first reported contribution within Power Delivery; Communications guide confirmation",
+      "sensitivity": "High"
+    },
+    {
+      "when": "4Q26 / FY26",
+      "event": "CFO >$1B and full-year working-capital release; DSO direction",
+      "sensitivity": "Very High"
+    },
+    {
+      "when": "2027 H1",
+      "event": "Communications delayed projects restart / wireless spectrum equipment cycle",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2027",
+      "event": "Superior revenue $2.2-2.5B and EBITDA $250-275m test",
+      "sensitivity": "Very High"
+    },
+    {
+      "when": "2027-2028",
+      "event": "Net debt reduction and FCF conversion toward 55-60% of EBITDA",
+      "sensitivity": "Very High"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1/Ch3"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1/Ch4"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1/Ch3"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1/Ch3"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3/Ch6"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3/Ch4"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1/Ch4"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3/Appendix"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "Ch2"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4/Ch5"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch1/Ch3"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4/Ch6"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch5/Appendix"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "COMPLETE",
+      "h3_locator": "Ch5"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "type": "Primary filing",
+      "title": "MasTec 2Q26 Form 10-Q",
+      "date": "2026-07-30",
+      "url": "https://www.sec.gov/Archives/edgar/data/15615/000001561526000093/mtz-20260630.htm"
+    },
+    {
+      "id": "S2",
+      "type": "Company primary",
+      "title": "MasTec 2Q26 earnings release",
+      "date": "2026-07-30",
+      "url": "https://investors.mastec.com/news-releases/news-release-details/mastec-reports-second-quarter-2026-results-and-updates-full-year"
+    },
+    {
+      "id": "S3",
+      "type": "Primary filing",
+      "title": "MasTec 2025 Form 10-K",
+      "date": "2026-02-26",
+      "url": "https://www.sec.gov/Archives/edgar/data/15615/000001561526000020/mtz-20251231.htm"
+    },
+    {
+      "id": "S4",
+      "type": "Company primary",
+      "title": "MasTec 2026 Investor Day",
+      "date": "2026-05-12",
+      "url": "https://investors.mastec.com/static-files/7e7b1efe-549b-4ef1-bdf2-d77f681bbd3f"
+    },
+    {
+      "id": "S5",
+      "type": "Company primary",
+      "title": "Superior acquisition announcement",
+      "date": "2026-07-07",
+      "url": "https://investors.mastec.com/news-releases/news-release-details/mastec-acquire-superior-group-enhancing-mastecs-infrastructure"
+    },
+    {
+      "id": "S6",
+      "type": "Company primary",
+      "title": "Superior acquisition presentation",
+      "date": "2026-07-07",
+      "url": "https://investors.mastec.com/static-files/f131d363-b152-442b-ad06-ccbf646f1fd4"
+    },
+    {
+      "id": "S7",
+      "type": "Primary filing",
+      "title": "MasTec 2036 notes Form 8-K / financing",
+      "date": "2026-08-17",
+      "url": "https://www.sec.gov/Archives/edgar/data/15615/000119312526354111/d299977d8k.htm"
+    },
+    {
+      "id": "S8",
+      "type": "Primary filing",
+      "title": "MasTec 2026 proxy statement",
+      "date": "2026-03-27",
+      "url": "https://www.sec.gov/Archives/edgar/data/15615/000114036126014022/ny20064175x771_def14a.htm"
+    },
+    {
+      "id": "S9",
+      "type": "Government primary",
+      "title": "DOE 2026 Draft National Transmission Needs Study",
+      "date": "2026-07-09",
+      "url": "https://www.energy.gov/oe/national-transmission-needs-study"
+    },
+    {
+      "id": "S10",
+      "type": "Regulator primary",
+      "title": "FERC large-load integration action",
+      "date": "2026-06-18",
+      "url": "https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration"
+    },
+    {
+      "id": "S11",
+      "type": "Government primary",
+      "title": "IRS Notice 2025-42 / OBBBA wind & solar credit termination",
+      "date": "2025-08-15",
+      "url": "https://www.irs.gov/irb/2025-36_IRB"
+    },
+    {
+      "id": "S12",
+      "type": "Customer primary",
+      "title": "AT&T 2Q26 prepared remarks",
+      "date": "2026-07-23",
+      "url": "https://investors.att.com/2Q26-earnings-prepared-remarks.aspx"
+    },
+    {
+      "id": "S13",
+      "type": "Peer primary",
+      "title": "Quanta Services 2Q26 results",
+      "date": "2026-07-30",
+      "url": "https://investors.quantaservices.com/news-events/press-releases/detail/402/quanta-services-reports-second-quarter-2026-results"
+    },
+    {
+      "id": "S14",
+      "type": "Peer primary",
+      "title": "EMCOR 2Q26 results",
+      "date": "2026-07-30",
+      "url": "https://emcorgroup.gcs-web.com/news-releases/news-release-details/emcor-group-inc-reports-second-quarter-2026-results/"
+    },
+    {
+      "id": "S15",
+      "type": "Peer primary",
+      "title": "Primoris 2Q26 results",
+      "date": "2026-08-04",
+      "url": "https://ir.prim.com/news-and-events/news-releases/2026/08-04-2026-211542600"
+    },
+    {
+      "id": "S16",
+      "type": "Peer primary",
+      "title": "MYR Group 2Q26 results",
+      "date": "2026-07-29",
+      "url": "https://investor.myrgroup.com/"
+    },
+    {
+      "id": "S17",
+      "type": "Peer primary",
+      "title": "Dycom fiscal 2Q27 results",
+      "date": "2026-08-26",
+      "url": "https://ir.dycomind.com/"
+    },
+    {
+      "id": "S18",
+      "type": "Market data",
+      "title": "StockAnalysis MTZ statistics/consensus (S&P Global MI derived)",
+      "date": "2026-08-29",
+      "url": "https://stockanalysis.com/stocks/mtz/statistics/"
+    },
+    {
+      "id": "S19",
+      "type": "Market positioning",
+      "title": "MarketBeat MTZ short interest",
+      "date": "2026-08-29",
+      "url": "https://www.marketbeat.com/stocks/NYSE/MTZ/short-interest/"
+    },
+    {
+      "id": "S20",
+      "type": "Secondary transcript",
+      "title": "MasTec 2Q26 earnings call transcript",
+      "date": "2026-08-07",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/08/07/mastec-mtz-q2-2026-earnings-call-transcript/"
+    }
+  ],
+  "qa": {
+    "rc_total": 19,
+    "rc_complete": 15,
+    "rc_ceiling": 4,
+    "rc_unresolved": 0,
+    "latest_filing_check": "PASS",
+    "h1_h2_research_contract_completeness": "PASS",
+    "h2_h3_coverage_lineage": "PASS",
+    "industry_company_narrative": "PASS",
+    "korean_prose_quality": "PASS",
+    "report_data_pack": "EMITTED",
+    "data_pack_report_parity": "PASS",
+    "content_meaning_lock_preserved": "PASS",
+    "published_top_level_schema_match": "PASS",
+    "explanatory_depth_preserved": "PASS",
+    "core_landscape_pages": 0,
+    "printed_toc_pages": 1,
+    "toc_clickable": "PASS",
+    "pdf_bookmarks": "PASS",
+    "html_sidebar": "PASS",
+    "searchable_text": "PASS",
+    "korean_readability": "PASS",
+    "smart_chapter_transitions": "PASS",
+    "argument_block_pagination": "PASS",
+    "accidental_sparse_pages": 0,
+    "density_control": "PASS",
+    "visual_substitution": "PASS",
+    "visual_grammar_variety": "PASS",
+    "chart_readability": "PASS",
+    "table_quality": "PASS",
+    "contact_sheet_composition_qa": "PASS",
+    "semantic_golden_qa": "PASS",
+    "visual_golden_qa": "PASS",
+    "golden_parity": "PASS",
+    "decision_visuals_total": 6,
+    "decision_visuals_parity_pass": 6,
+    "stale_visual_assets": 0,
+    "figure_numerical_parity": "PASS",
+    "visual_data_lineage": "PASS",
+    "visual_semantic_parity": "PASS",
+    "rendered_visual_parity_qa": "PASS",
+    "publishing_acceptance": "PASS",
+    "pdf_pages": 24,
+    "pdf_outline_items": 73,
+    "pdf_annotations": 140,
+    "short_interest_verification": "PASS: 2026-08-14 short float 8.32% (MarketBeat, FINRA-sourced, checked 2026-08-31)"
+  },
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "title": "최근 8분기 매출·Adj. EBITDA margin",
+      "source_block": "financials.quarterly_8q",
+      "source_values": [
+        [
+          "3Q24",
+          3252.4,
+          9.5
+        ],
+        [
+          "4Q24",
+          3403.1,
+          8.0
+        ],
+        [
+          "1Q25",
+          2847.7,
+          5.7
+        ],
+        [
+          "2Q25",
+          3544.7,
+          7.8
+        ],
+        [
+          "3Q25",
+          3966.9,
+          9.4
+        ],
+        [
+          "4Q25",
+          3939.8,
+          8.6
+        ],
+        [
+          "1Q26",
+          3828.8,
+          7.4
+        ],
+        [
+          "2Q26",
+          4373.6,
+          8.8
+        ]
+      ],
+      "narrative_locator": "Ch4",
+      "table_locator": "Ch4-8Q",
+      "caption_locator": "Ch4-VIS001",
+      "source_hash": "f12b44b162ea",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "rendered_asset_locator": {
+        "html": "#vis-001",
+        "pdf_pages": [
+          11
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-002",
+      "title": "18개월 backlog 추이",
+      "source_block": "financials.quarterly_8q.backlog_m",
+      "source_values": [
+        [
+          "3Q24",
+          13858
+        ],
+        [
+          "4Q24",
+          14298
+        ],
+        [
+          "1Q25",
+          15880
+        ],
+        [
+          "2Q25",
+          16452
+        ],
+        [
+          "3Q25",
+          16780
+        ],
+        [
+          "4Q25",
+          18963
+        ],
+        [
+          "1Q26",
+          20328
+        ],
+        [
+          "2Q26",
+          21391
+        ]
+      ],
+      "narrative_locator": "Ch1/Ch4",
+      "table_locator": "Ch4-8Q",
+      "caption_locator": "Ch1-VIS002",
+      "source_hash": "8a457a58b513",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "rendered_asset_locator": {
+        "html": "#vis-002",
+        "pdf_pages": [
+          12
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-003",
+      "title": "2Q26 segment revenue / EBITDA margin",
+      "source_block": "financials.segments_q2_26",
+      "source_values": {
+        "Communications": {
+          "revenue_m": 888.9,
+          "ebitda_m": 73.1,
+          "margin_pct": 8.2,
+          "backlog_m": 5461
+        },
+        "Clean Energy & Infrastructure": {
+          "revenue_m": 1622.1,
+          "ebitda_m": 128.2,
+          "margin_pct": 7.9,
+          "backlog_m": 7791
+        },
+        "Power Delivery": {
+          "revenue_m": 1245.8,
+          "ebitda_m": 113.0,
+          "margin_pct": 9.1,
+          "backlog_m": 6347
+        },
+        "Pipeline Infrastructure": {
+          "revenue_m": 642.8,
+          "ebitda_m": 118.5,
+          "margin_pct": 18.4,
+          "backlog_m": 1792
+        }
+      },
+      "narrative_locator": "Ch3",
+      "table_locator": "Ch3-segment",
+      "caption_locator": "Ch3-VIS003",
+      "source_hash": "ac8d7caa6ca9",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "rendered_asset_locator": {
+        "html": "#vis-003",
+        "pdf_pages": [
+          13
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-004",
+      "title": "Bear/Base/Bull 2028 주당가치",
+      "source_block": "scenarios",
+      "source_values": [
+        [
+          "Bear",
+          146.2,
+          0.25
+        ],
+        [
+          "Base",
+          346.0,
+          0.55
+        ],
+        [
+          "Bull",
+          506.4,
+          0.2
+        ]
+      ],
+      "narrative_locator": "Ch5",
+      "table_locator": "Ch5-scenario",
+      "caption_locator": "Ch5-VIS004",
+      "source_hash": "e662102d42bc",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "rendered_asset_locator": {
+        "html": "#vis-004",
+        "pdf_pages": [
+          16
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-005",
+      "title": "Current price reverse expectations",
+      "source_block": "reverse_expectations.required_cases",
+      "source_values": [
+        {
+          "required_return": 0.0,
+          "required_2028_price": 241.0,
+          "required_2028_ebitda_m_at_12_5x_and_1_8b_net_debt": 1706.0
+        },
+        {
+          "required_return": 0.1,
+          "required_2028_price": 301.3,
+          "required_2028_ebitda_m_at_12_5x_and_1_8b_net_debt": 2097.0
+        },
+        {
+          "required_return": 0.12,
+          "required_2028_price": 314.3,
+          "required_2028_ebitda_m_at_12_5x_and_1_8b_net_debt": 2181.0
+        },
+        {
+          "required_return": 0.15,
+          "required_2028_price": 334.4,
+          "required_2028_ebitda_m_at_12_5x_and_1_8b_net_debt": 2311.0
+        }
+      ],
+      "narrative_locator": "Ch5",
+      "table_locator": "Ch5-reverse",
+      "caption_locator": "Ch5-VIS005",
+      "source_hash": "d794edbcc167",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "rendered_asset_locator": {
+        "html": "#vis-005",
+        "pdf_pages": [
+          17
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-006",
+      "title": "Working capital warning — contract assets & DSO",
+      "source_block": "financials.working_capital",
+      "source_values": {
+        "contract_assets_2025_12_31_m": 2001.9,
+        "contract_assets_2026_06_30_m": 2484.4,
+        "contract_assets_change_h1_26_m": 482.5,
+        "dso_2025_12_31_days": 65,
+        "dso_2026_06_30_days": 72,
+        "h1_26_cfo_m": 120.3,
+        "h1_26_capex_m": 188.3,
+        "h1_26_ar_cash_use_m": 143.6,
+        "h1_26_contract_asset_cash_use_m": 463.1,
+        "backlog_msa_share_pct": 40,
+        "backlog_msa_estimated_future_revenue_m": 8400,
+        "beyond_18m_rpo_long_msa_m": 3200
+      },
+      "narrative_locator": "Ch4",
+      "table_locator": "Ch4-working-capital",
+      "caption_locator": "Ch4-VIS006",
+      "source_hash": "628dd5c7e3e4",
+      "display_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "rendered_asset_locator": {
+        "html": "#vis-006",
+        "pdf_pages": [
+          14
+        ]
+      },
+      "status": "PASS"
+    }
+  ]
+}

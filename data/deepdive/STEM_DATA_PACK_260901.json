@@ -1,0 +1,1235 @@
+{
+  "meta": {
+    "ticker": "STEM",
+    "company": "Stem, Inc.",
+    "exchange": "NYSE",
+    "T0": "2026-09-01",
+    "publishing_date_asia_seoul": "2026-09-01",
+    "price_asof": "2026-08-31",
+    "current_price": 5.72,
+    "filing_asof": "2026-08-13 10-Q",
+    "consensus_asof": "2026-08-25 check / August 2026 dataset",
+    "version": "Clean DDOS Production OS v1.7",
+    "top_level_schema": "0-6 + Appendix",
+    "valuation_mode": "Mode B — Hybrid",
+    "latest_filing_check": "PASS",
+    "h1_approved": true,
+    "h2_auto_released": true,
+    "h3_auto_released": true
+  },
+  "economic_definition": {
+    "summary": "PowerTrack 중심의 재생에너지 control software, edge hardware, integration/service 사업으로 전환 중인 회사. Common equity는 2028 refinancing 및 높은 debt burden에 민감한 residual claim.",
+    "core_causal_chain": [
+      "solar/BESS/hybrid installed base growth",
+      "operational/control complexity",
+      "PowerTrack eligibility",
+      "PO/commissioning/portfolio standardization",
+      "ARR/CARR activation",
+      "gross profit",
+      "OCF/FCF",
+      "debt service/refinancing",
+      "dilution-adjusted per-share value"
+    ]
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue": 461.515,
+        "gross_profit": 3.665,
+        "operating_loss": -179.314,
+        "interest_expense": -14.977,
+        "debt_extinguishment_gain": 59.121,
+        "net_income": -140.413,
+        "operating_cash_flow": -207.377,
+        "sbc": 45.109,
+        "da": 46.275,
+        "capitalized_internal_software": 14.097,
+        "normalized_fcf_estimate": -225.6
+      },
+      {
+        "year": 2024,
+        "revenue": 144.584,
+        "gross_profit": -11.058,
+        "operating_loss": -839.456,
+        "interest_expense": -18.293,
+        "debt_extinguishment_gain": 0.0,
+        "net_income": -854.014,
+        "operating_cash_flow": -36.65,
+        "sbc": 18.471,
+        "da": 44.988,
+        "capitalized_internal_software": 11.275,
+        "normalized_fcf_estimate": -48.1
+      },
+      {
+        "year": 2025,
+        "revenue": 156.266,
+        "gross_profit": 59.956,
+        "operating_loss": -55.688,
+        "interest_expense": -23.933,
+        "debt_extinguishment_gain": 220.047,
+        "net_income": 137.761,
+        "operating_cash_flow": 6.861,
+        "sbc": 10.216,
+        "da": 44.947,
+        "capitalized_internal_software": 6.602,
+        "normalized_fcf_estimate": 0.3
+      }
+    ],
+    "revenue_mix_annual": [
+      {
+        "year": 2023,
+        "powertrack_software": 28.732,
+        "edge_hardware": 38.763,
+        "project_professional_services": 8.473,
+        "managed_services": 25.343,
+        "battery_hardware_resale": 360.204
+      },
+      {
+        "year": 2024,
+        "powertrack_software": 32.811,
+        "edge_hardware": 45.429,
+        "project_professional_services": 11.61,
+        "managed_services": 23.389,
+        "battery_hardware_resale": 31.345
+      },
+      {
+        "year": 2025,
+        "powertrack_software": 37.62,
+        "edge_hardware": 53.731,
+        "project_professional_services": 19.867,
+        "managed_services": 30.209,
+        "battery_hardware_resale": 14.839
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "3Q24",
+        "revenue": 29.3,
+        "gross_profit": 6.2,
+        "gaap_gross_margin": 0.21,
+        "adjusted_ebitda": -3.5,
+        "operating_cash_flow": -9.4,
+        "cash": 75.4,
+        "arr": 51.4
+      },
+      {
+        "quarter": "4Q24",
+        "revenue": 55.8,
+        "gross_profit": -2.5,
+        "gaap_gross_margin": -0.04,
+        "adjusted_ebitda": 4.2,
+        "operating_cash_flow": -14.7,
+        "cash": 56.3,
+        "arr": 52.8
+      },
+      {
+        "quarter": "1Q25",
+        "revenue": 32.5,
+        "gross_profit": 10.5,
+        "gaap_gross_margin": 0.32,
+        "adjusted_ebitda": -4.6,
+        "operating_cash_flow": 8.5,
+        "cash": 58.6,
+        "arr": 56.9
+      },
+      {
+        "quarter": "2Q25",
+        "revenue": 38.4,
+        "gross_profit": 12.8,
+        "gaap_gross_margin": 0.33,
+        "adjusted_ebitda": 3.8,
+        "operating_cash_flow": -21.3,
+        "cash": 40.8,
+        "arr": 58.5
+      },
+      {
+        "quarter": "3Q25",
+        "revenue": 38.2,
+        "gross_profit": 13.5,
+        "gaap_gross_margin": 0.35,
+        "adjusted_ebitda": 2.0,
+        "operating_cash_flow": 11.4,
+        "cash": 43.1,
+        "arr": 60.2
+      },
+      {
+        "quarter": "4Q25",
+        "revenue": 47.2,
+        "gross_profit": 23.2,
+        "gaap_gross_margin": 0.49,
+        "adjusted_ebitda": 5.5,
+        "operating_cash_flow": 8.2,
+        "cash": 48.9,
+        "arr": 61.1
+      },
+      {
+        "quarter": "1Q26",
+        "revenue": 29.0,
+        "gross_profit": 10.9,
+        "gaap_gross_margin": 0.38,
+        "adjusted_ebitda": 2.0,
+        "operating_cash_flow": -8.3,
+        "cash": 36.6,
+        "arr": 61.2
+      },
+      {
+        "quarter": "2Q26",
+        "revenue": 33.654,
+        "gross_profit": 13.9,
+        "gaap_gross_margin": 0.41,
+        "adjusted_ebitda": 6.2,
+        "operating_cash_flow": 0.3,
+        "cash": 38.4,
+        "arr": 62.4
+      }
+    ],
+    "q2_2026_product_line": {
+      "powertrack_software": 10.543,
+      "edge_hardware": 14.75,
+      "project_professional_services": 2.182,
+      "managed_services": 5.893,
+      "battery_hardware_resale": 0.286,
+      "total": 33.654
+    },
+    "fy2026_guidance": {
+      "revenue": [
+        140,
+        190
+      ],
+      "software_services_edge": [
+        130,
+        150
+      ],
+      "non_gaap_gross_margin": [
+        0.4,
+        0.5
+      ],
+      "adjusted_ebitda": [
+        10,
+        15
+      ],
+      "operating_cash_flow": [
+        0,
+        10
+      ],
+      "year_end_arr": [
+        65,
+        70
+      ]
+    },
+    "ceilings": [
+      "2024 headline bookings/backlog/CARR not mixed with post-1Q25 definition series",
+      "normalized FCF is analyst reconstruction, not company-reported"
+    ]
+  },
+  "kpis": [
+    {
+      "name": "PowerTrack ARR",
+      "as_of": "2Q26",
+      "value": 42.8,
+      "unit": "USDm",
+      "history_note": "QoQ +3%",
+      "bull_signal": ">15% YoY or sequential acceleration",
+      "bear_signal": "low-single-digit sequential growth for 2+ quarters",
+      "valuation_link": "recurring enterprise value"
+    },
+    {
+      "name": "Total ARR",
+      "as_of": "2Q26",
+      "value": 62.4,
+      "unit": "USDm",
+      "history_note": "4Q25 61.1 → 1Q26 61.2 → 2Q26 62.4",
+      "bull_signal": "YE26 >70",
+      "bear_signal": "YE26 <65",
+      "valuation_link": "EV/ARR and debt coverage"
+    },
+    {
+      "name": "CARR",
+      "as_of": "2Q26",
+      "value": 69.0,
+      "unit": "USDm",
+      "history_note": "contracted recurring incl. not-yet-operating",
+      "bull_signal": "CARR expands and activates to ARR",
+      "bear_signal": "CARR grows without ARR activation",
+      "valuation_link": "forward recurring pipeline"
+    },
+    {
+      "name": "GAAP Gross Margin",
+      "as_of": "2Q26",
+      "value": 0.41,
+      "unit": "ratio",
+      "history_note": "2Q25 33% → 2Q26 41%",
+      "bull_signal": "sustained >42-45%",
+      "bear_signal": "<35%",
+      "valuation_link": "mix / operating leverage"
+    },
+    {
+      "name": "Adjusted EBITDA",
+      "as_of": "2Q26",
+      "value": 6.2,
+      "unit": "USDm",
+      "history_note": "5 consecutive positive quarters",
+      "bull_signal": "annualized >30",
+      "bear_signal": "falls below annual cash coupon burden",
+      "valuation_link": "interest coverage"
+    },
+    {
+      "name": "Operating Cash Flow",
+      "as_of": "2Q26",
+      "value": 0.3,
+      "unit": "USDm quarterly",
+      "history_note": "6M26 about -8.0",
+      "bull_signal": "FY26 >10 and repeatable",
+      "bear_signal": "full-year negative",
+      "valuation_link": "refinancing capacity"
+    },
+    {
+      "name": "Bookings",
+      "as_of": "2Q26",
+      "value": 36.8,
+      "unit": "USDm",
+      "history_note": "+39% QoQ",
+      "bull_signal": "sustained >40",
+      "bear_signal": "<25",
+      "valuation_link": "3–6 month nonrecurring lead"
+    },
+    {
+      "name": "Backlog",
+      "as_of": "2Q26",
+      "value": 27.1,
+      "unit": "USDm",
+      "history_note": "+18% QoQ",
+      "bull_signal": "rising with quality",
+      "bear_signal": "falling despite AUM",
+      "valuation_link": "near-term revenue"
+    },
+    {
+      "name": "Solar operating AUM",
+      "as_of": "2Q26",
+      "value": 38.3,
+      "unit": "GW",
+      "history_note": "",
+      "bull_signal": "growth accompanied by ARR attach",
+      "bear_signal": "AUM growth without ARR",
+      "valuation_link": "distribution / attach opportunity"
+    },
+    {
+      "name": "Storage operating AUM",
+      "as_of": "2Q26",
+      "value": 1.8,
+      "unit": "GWh",
+      "history_note": "",
+      "bull_signal": "growth accompanied by EMS ARR",
+      "bear_signal": "AUM growth without monetization",
+      "valuation_link": "hybrid/storage penetration"
+    }
+  ],
+  "industry": {
+    "us_storage_capacity_end_2025_gw": 43.6,
+    "us_storage_capacity_1h26_added_gw": 8.3,
+    "us_storage_capacity_1h26_gw_approx": 52.0,
+    "planned_storage_next_2_5y_gw": 54.0,
+    "planned_2026_solar_additions_gw": 43.4,
+    "planned_2026_storage_additions_gw": 24.0,
+    "transmission_strength": "STRONG",
+    "material_blocks_total": 5,
+    "material_blocks_landed": 5
+  },
+  "customer_contract_map": [
+    {
+      "customer": "Summit Ridge Energy",
+      "stage": "portfolio standardization / operating",
+      "scope": "200 solar sites / 514 MW",
+      "product": "PowerTrack software",
+      "independent_primary_validation": true,
+      "economics_disclosed": false
+    },
+    {
+      "customer": "Solarmarkt / Pannonwatt",
+      "stage": "repeat attach / hybrid expansion",
+      "scope": "two existing ~60 MWp solar sites, each adding 40 MW / 80 MWh BESS",
+      "product": "PPC → EMS + SCADA",
+      "independent_primary_validation": false,
+      "economics_disclosed": false
+    },
+    {
+      "customer": "Copec Flux / Granja Solar",
+      "stage": "selected / implementation",
+      "scope": "135 MW solar + 420 MWh BESS",
+      "product": "PowerTrack EMS master control",
+      "independent_primary_validation": false,
+      "economics_disclosed": false
+    },
+    {
+      "customer": "Everyray",
+      "stage": "utility BESS deployment",
+      "scope": "100 MWh Germany",
+      "product": "PowerTrack EMS",
+      "independent_primary_validation": false,
+      "economics_disclosed": false
+    },
+    {
+      "customer": "Nuvation Energy",
+      "stage": "partner validation / co-marketing",
+      "scope": "North American-made BESS control stack",
+      "product": "PowerTrack EMS + Nuvation BMS",
+      "independent_primary_validation": true,
+      "economics_disclosed": false
+    },
+    {
+      "customer": "Bluesphere Ventures",
+      "stage": "signed advisory services",
+      "scope": "New York VDER storage pipeline",
+      "product": "advisory / services",
+      "independent_primary_validation": false,
+      "economics_disclosed": false
+    }
+  ],
+  "competition": [
+    {
+      "competitor": "Power Factors",
+      "job_overlap": "SCADA / EMS / APM / multi-OEM fleet management",
+      "scale": "310+ GW, 600+ customers, 18,000 sites; EMS page claims 50 GWh managed",
+      "relative_read": "direct independent-software competitor with larger operating footprint"
+    },
+    {
+      "competitor": "Fluence",
+      "job_overlap": "BESS controls, bidding, APM, portfolio software",
+      "scale": "Mosaic 13.3 GW; Nispera 15.5 GW; Fluence OS 2.5m operating hours",
+      "relative_read": "strong storage hardware + digital stack"
+    },
+    {
+      "competitor": "Wärtsilä",
+      "job_overlap": "BESS EMS, hybrid control, lifecycle services",
+      "scale": "19+ GWh, 130+ projects",
+      "relative_read": "strong full-stack bankability and mature GEMS platform"
+    }
+  ],
+  "management": {
+    "ceo": "Arun Narayanan",
+    "ceo_since": "2025-01",
+    "prior_roles": [
+      "RES Digital Solutions CEO",
+      "RES Chief Digital Officer",
+      "Anglo American Chief Data Officer",
+      "SLB digital/operating roles"
+    ],
+    "prior_measurable_track_record_status": "PRIMARY_SOURCE_CEILING",
+    "fy2025_promise_delivery": "initial guidance met or exceeded on key core revenue/margin/EBITDA/OCF/ARR dimensions",
+    "restructuring": {
+      "workforce_reduction_pct": 27,
+      "annual_2026_savings_target_usd_m": 30
+    }
+  },
+  "capital_structure": {
+    "cash_usd_m": 38.4,
+    "shares_outstanding_m": 9.626744,
+    "market_cap_usd_m": 55.06497568,
+    "standard_enterprise_value_usd_m": 383.1,
+    "principal_claim_enterprise_value_usd_m": 400.72197568000007,
+    "securities": [
+      {
+        "name": "2028 Green Convertible",
+        "principal_usd_m": 68.206,
+        "coupon": 0.005,
+        "maturity": "2028-12-01",
+        "conversion_price": 584.86,
+        "treatment": "debt/refinancing claim"
+      },
+      {
+        "name": "2030 Convertible",
+        "principal_usd_m": 118.69,
+        "coupon": 0.0425,
+        "maturity": "2030-04-01",
+        "conversion_price": 142.55,
+        "treatment": "debt in normal scenarios"
+      },
+      {
+        "name": "2030 Senior Secured Notes",
+        "principal_usd_m": 160.0,
+        "cash_coupon": 0.11,
+        "pik_coupon": 0.12,
+        "additional_pik_capacity": false,
+        "maturity": "2030-12-30",
+        "treatment": "secured debt"
+      },
+      {
+        "name": "Financing obligations",
+        "principal_usd_m": 37.161,
+        "treatment": "project-linked operating financing claim"
+      },
+      {
+        "name": "Warrants",
+        "units": 439919,
+        "strike": 30.0,
+        "treatment": "dilution only in high-price scenarios"
+      },
+      {
+        "name": "RSUs",
+        "units": 1146010,
+        "treatment": "diluted shares"
+      },
+      {
+        "name": "Options",
+        "units": 172215,
+        "avg_strike": 103.0,
+        "treatment": "OTM"
+      },
+      {
+        "name": "ATM remaining capacity",
+        "capacity_usd_m": 24.2,
+        "treatment": "funding/dilution source"
+      }
+    ],
+    "annual_note_cash_coupon_estimate_usd_m": 22.99,
+    "2028_maturity_exceeds_current_cash": true
+  },
+  "scenarios": [
+    {
+      "name": "Bear / Failure",
+      "probability": 0.45,
+      "arr_2029": 70,
+      "revenue_path": {
+        "2026": 150,
+        "2027": 155,
+        "2028": 158,
+        "2029": 160
+      },
+      "arr_path": {
+        "2026": 65,
+        "2027": 67,
+        "2028": 69,
+        "2029": 70
+      },
+      "gaap_gross_margin_2029": 0.38,
+      "adjusted_ebitda_2029": 5,
+      "normalized_fcf_2029": -15,
+      "ending_net_claims": 342,
+      "diluted_shares_2029": 18.0,
+      "ev_arr_multiple": 2.0,
+      "operating_ev": 140,
+      "equity_value": 0,
+      "per_share_value": 0.0,
+      "conditions": "ARR stagnation, punitive refinancing, heavy dilution",
+      "break_condition": "ARR accelerates >10% with cash stabilization",
+      "margin_path": {
+        "2026": 0.4,
+        "2027": 0.39,
+        "2028": 0.38,
+        "2029": 0.38
+      },
+      "fcf": {
+        "2026": -5,
+        "2027": -10,
+        "2028": -12,
+        "2029": -15
+      },
+      "diluted_shares": 18.0
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "arr_2029": 105,
+      "revenue_path": {
+        "2026": 150,
+        "2027": 175,
+        "2028": 198,
+        "2029": 220
+      },
+      "arr_path": {
+        "2026": 67,
+        "2027": 78,
+        "2028": 91,
+        "2029": 105
+      },
+      "gaap_gross_margin_2029": 0.48,
+      "adjusted_ebitda_2029": 40,
+      "normalized_fcf_2029": 10,
+      "ending_net_claims": 278,
+      "diluted_shares_2029": 15.0,
+      "ev_arr_multiple": 3.75,
+      "operating_ev": 393.75,
+      "equity_value": 115.75,
+      "per_share_value": 7.7166666667,
+      "conditions": "mid-teens ARR growth, margin holds, refinancing achieved with FCF/ATM",
+      "break_condition": "ARR <65 YE26 or cash <25 with negative OCF",
+      "margin_path": {
+        "2026": 0.41,
+        "2027": 0.44,
+        "2028": 0.46,
+        "2029": 0.48
+      },
+      "fcf": {
+        "2026": 2,
+        "2027": 3,
+        "2028": 7,
+        "2029": 10
+      },
+      "diluted_shares": 15.0
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.12,
+      "arr_2029": 140,
+      "revenue_path": {
+        "2026": 155,
+        "2027": 200,
+        "2028": 240,
+        "2029": 280
+      },
+      "arr_path": {
+        "2026": 70,
+        "2027": 90,
+        "2028": 115,
+        "2029": 140
+      },
+      "gaap_gross_margin_2029": 0.52,
+      "adjusted_ebitda_2029": 70,
+      "normalized_fcf_2029": 35,
+      "ending_net_claims": 222,
+      "diluted_shares_2029": 12.8,
+      "ev_arr_multiple": 4.5,
+      "operating_ev": 630,
+      "equity_value": 408,
+      "per_share_value": 31.875,
+      "conditions": "hybrid attach and software expansion accelerate, debt falls",
+      "break_condition": "no repeat utility-scale attach or margin slips below 40%",
+      "margin_path": {
+        "2026": 0.42,
+        "2027": 0.46,
+        "2028": 0.49,
+        "2029": 0.52
+      },
+      "fcf": {
+        "2026": 4,
+        "2027": 12,
+        "2028": 24,
+        "2029": 35
+      },
+      "diluted_shares": 12.8
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.03,
+      "arr_2029": 175,
+      "revenue_path": {
+        "2026": 155,
+        "2027": 220,
+        "2028": 280,
+        "2029": 340
+      },
+      "arr_path": {
+        "2026": 70,
+        "2027": 100,
+        "2028": 135,
+        "2029": 175
+      },
+      "gaap_gross_margin_2029": 0.55,
+      "adjusted_ebitda_2029": 100,
+      "normalized_fcf_2029": 60,
+      "ending_net_claims": 152,
+      "diluted_shares_2029": 13.0,
+      "ev_arr_multiple": 5.0,
+      "operating_ev": 875,
+      "equity_value": 723,
+      "per_share_value": 55.6153846154,
+      "conditions": "PowerTrack + AIONA + raicoon monetization and international utility scale",
+      "break_condition": "AI/autonomy remains nonmaterial services only",
+      "margin_path": {
+        "2026": 0.42,
+        "2027": 0.48,
+        "2028": 0.52,
+        "2029": 0.55
+      },
+      "fcf": {
+        "2026": 5,
+        "2027": 18,
+        "2028": 38,
+        "2029": 60
+      },
+      "diluted_shares": 13.0
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B — Hybrid",
+    "diagnostic_bridge_usd_m": {
+      "core_value": 237,
+      "execution_value": 125,
+      "ecosystem_value": 20,
+      "funding_dilution_drag": 327,
+      "implied_equity_value": 55
+    },
+    "diagnostic_bridge_note": "Illustrative decomposition only; decision output is probability-weighted scenario valuation.",
+    "expected_terminal_per_share_2029": 8.580128205142,
+    "expected_irr": 0.13288003339019405,
+    "current_price": 5.72,
+    "present_value_at_10pct": 6.294591492004481,
+    "present_value_at_12_5pct": 5.85124225410334,
+    "present_value_at_15pct": 5.447858212992486,
+    "base_case_per_share": 7.7166666667,
+    "failure_case_per_share": 0.0,
+    "expected_upside": 0.5000224134863636,
+    "expected_upside_to_failure_downside_ratio": 0.5000224134863636,
+    "horizon_years": 3.25,
+    "core": 237,
+    "execution": 125,
+    "ecosystem": 20,
+    "drag": 327,
+    "expected_value": 8.580128205142
+  },
+  "reverse_expectations": {
+    "current_standard_ev_usd_m": 383.1,
+    "current_arr_usd_m": 62.4,
+    "current_ev_arr": 6.1394230769230775,
+    "required_arr_at_multiple": {
+      "3.0x": 127.7,
+      "3.5x": 109.45714285714287,
+      "4.0x": 95.775
+    },
+    "required_arr_cagr_to_2029": {
+      "3.0x": 0.24650564175741785,
+      "3.5x": 0.18876288227340776,
+      "4.0x": 0.14091045602631347
+    },
+    "required_ebitda_at_ev_multiple": {
+      "10x": 38.31,
+      "12x": 31.925
+    },
+    "interpretation": "Current price requires material ARR acceleration, sustainable EBITDA above current guidance, meaningful debt reduction, or some combination."
+  },
+  "consensus": {
+    "rating": "Hold/Neutral",
+    "analyst_count": 6,
+    "average_price_target": 7.45,
+    "low_target": 6.75,
+    "high_target": 8.0,
+    "fy2026_revenue_consensus_usd_m": 149.7,
+    "revision_trend": "targets compressed through Jul-Aug 2026",
+    "recent_target_changes": [
+      {
+        "firm": "Roth MKM",
+        "from": 11,
+        "to": 6.75,
+        "date": "2026-08-17"
+      },
+      {
+        "firm": "UBS",
+        "from": 10.5,
+        "to": 7.0,
+        "date": "2026-08-14/17"
+      },
+      {
+        "firm": "Barclays",
+        "from": 18,
+        "to": 8.0,
+        "date": "2026-07-27"
+      },
+      {
+        "firm": "Susquehanna",
+        "from": 10,
+        "to": 7.5,
+        "date": "2026-07-10"
+      }
+    ],
+    "fy1": {
+      "year": 2026,
+      "revenue_usd_m": 149.7,
+      "rating_context": "Hold/Neutral"
+    },
+    "fy2": {
+      "status": "PRIMARY_SOURCE_CEILING",
+      "note": "Not decision-relevant enough to rely on in this run."
+    }
+  },
+  "variant_perception": {
+    "status": "PARTIAL / CONDITIONAL",
+    "market_shorthand": "failed storage SPAC with cost-cutting EBITDA turnaround and large debt",
+    "our_view": "operations are improving more genuinely than the shorthand suggests, but common equity is not cheap on enterprise basis and behaves like a refinancing option",
+    "mispricing_trigger": "PowerTrack ARR mid-teens acceleration + GAAP GM >40% + repeatable positive OCF + 2028 refinancing visibility"
+  },
+  "stance": {
+    "zone": "WATCH / SPECULATIVE ONLY",
+    "hurdle_rate_range": [
+      0.1,
+      0.15
+    ],
+    "horizon": "through end-2029",
+    "price_bands": [
+      {
+        "band": "<4.50",
+        "action": "speculative accumulate",
+        "condition": "position sizing must assume material failure probability"
+      },
+      {
+        "band": "4.50-6.50",
+        "action": "watch / optional small position",
+        "condition": "current risk-adjusted fair zone"
+      },
+      {
+        "band": "6.50-9.00",
+        "action": "hold only with KPI confirmation",
+        "condition": "base refinancing success increasingly priced"
+      },
+      {
+        "band": ">9.00",
+        "action": "reduce/avoid without new proof",
+        "condition": "needs ARR acceleration + OCF + refinancing visibility"
+      },
+      {
+        "band": ">15.00",
+        "action": "bull proof required",
+        "condition": "Bull Execution-type operating evidence"
+      }
+    ],
+    "expected_irr_at_price": {
+      "4.50": 0.21966451535935771,
+      "5.72": 0.13288003339019405,
+      "6.50": 0.08918504049508913,
+      "9.00": -0.014592701278549058
+    },
+    "price_bands_map": {
+      "<4.50": {
+        "action": "speculative accumulate",
+        "condition": "position sizing must assume material failure probability"
+      },
+      "4.50-6.50": {
+        "action": "watch / optional small position",
+        "condition": "current risk-adjusted fair zone"
+      },
+      "6.50-9.00": {
+        "action": "hold only with KPI confirmation",
+        "condition": "base refinancing success increasingly priced"
+      },
+      ">9.00": {
+        "action": "reduce/avoid without new proof",
+        "condition": "needs ARR acceleration + OCF + refinancing visibility"
+      },
+      ">15.00": {
+        "action": "bull proof required",
+        "condition": "Bull Execution-type operating evidence"
+      }
+    }
+  },
+  "catalysts": [
+    {
+      "window": "3Q26 earnings",
+      "event": "ARR/bookings/GM/OCF update",
+      "signal": "ARR reacceleration vs margin-only story",
+      "when": "3Q26 earnings",
+      "sensitivity": "ARR reacceleration vs margin-only story"
+    },
+    {
+      "window": "FY26 / early 2027",
+      "event": "full-year delivery and 2027 guidance",
+      "signal": "OCF and YE ARR >65m; 2027 growth handoff",
+      "when": "FY26 / early 2027",
+      "sensitivity": "OCF and YE ARR >65m; 2027 growth handoff"
+    },
+    {
+      "window": "1H27",
+      "event": "Hungary/Chile/Germany commissioning",
+      "signal": "CARR→ARR activation / repeat attach",
+      "when": "1H27",
+      "sensitivity": "CARR→ARR activation / repeat attach"
+    },
+    {
+      "window": "2027",
+      "event": "2028 debt financing updates",
+      "signal": "refinance/exchange/repurchase economics",
+      "when": "2027",
+      "sensitivity": "refinance/exchange/repurchase economics"
+    },
+    {
+      "window": "any time",
+      "event": "ATM/equity filings",
+      "signal": "share-count dilution and funding use",
+      "when": "any time",
+      "sensitivity": "share-count dilution and funding use"
+    },
+    {
+      "window": "any time",
+      "event": "AIONA/raicoon customer economics",
+      "signal": "optionality becoming monetized",
+      "when": "any time",
+      "sensitivity": "optionality becoming monetized"
+    }
+  ],
+  "falsification": [
+    "PowerTrack ARR sequential growth remains low-single-digit or negative for two consecutive quarters while AUM rises",
+    "GAAP gross margin falls below about 35% without a temporary mix explanation",
+    "FY26 operating cash flow is negative and cash falls below about $25m while ATM usage accelerates",
+    "2028 refinancing visibility remains absent through 2027",
+    "new EMS/hybrid wins do not translate to repeat expansion or material CARR/ARR growth",
+    "adjusted EBITDA remains below annual cash note coupon burden",
+    "R&D cuts are followed by product delays, customer losses, or weakening competitive evidence"
+  ],
+  "evidence_boundaries": [
+    {
+      "topic": "CEO prior-employer measurable contribution",
+      "status": "PRIMARY_SOURCE_CEILING"
+    },
+    {
+      "topic": "customer contract dollar value / ARR per MW / churn / renewal",
+      "status": "PRIMARY_SOURCE_CEILING"
+    },
+    {
+      "topic": "PowerTrack 32% commissioning engineering-hour reduction / 99.99% reliability",
+      "status": "COMPANY_CLAIM"
+    },
+    {
+      "topic": "AIONA customer outcome metrics",
+      "status": "COMPANY_CLAIM"
+    },
+    {
+      "topic": "distressed clean-energy SPAC empirical base-rate dataset",
+      "status": "PRIMARY_SOURCE_CEILING"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "final_status": "COMPLETE",
+      "status": "COMPLETE",
+      "h3_locator": "0,3,4"
+    },
+    {
+      "rc_id": "RC-002",
+      "final_status": "COMPLETE",
+      "status": "COMPLETE",
+      "h3_locator": "1"
+    },
+    {
+      "rc_id": "RC-003",
+      "final_status": "COMPLETE",
+      "status": "COMPLETE",
+      "h3_locator": "1"
+    },
+    {
+      "rc_id": "RC-004",
+      "final_status": "PRIMARY_SOURCE_CEILING",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "2"
+    },
+    {
+      "rc_id": "RC-005",
+      "final_status": "COMPLETE",
+      "status": "COMPLETE",
+      "h3_locator": "3"
+    },
+    {
+      "rc_id": "RC-006",
+      "final_status": "COMPLETE",
+      "status": "COMPLETE",
+      "h3_locator": "3,5"
+    },
+    {
+      "rc_id": "RC-007",
+      "final_status": "PRIMARY_SOURCE_CEILING",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3"
+    },
+    {
+      "rc_id": "RC-008",
+      "final_status": "PRIMARY_SOURCE_CEILING",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3,4"
+    },
+    {
+      "rc_id": "RC-009",
+      "final_status": "COMPLETE",
+      "status": "COMPLETE",
+      "h3_locator": "1,3"
+    },
+    {
+      "rc_id": "RC-010",
+      "final_status": "COMPLETE",
+      "status": "COMPLETE",
+      "h3_locator": "4,Appendix"
+    },
+    {
+      "rc_id": "RC-011",
+      "final_status": "COMPLETE",
+      "status": "COMPLETE",
+      "h3_locator": "4,6,Appendix"
+    },
+    {
+      "rc_id": "RC-012",
+      "final_status": "COMPLETE",
+      "status": "COMPLETE",
+      "h3_locator": "4,5,Appendix"
+    },
+    {
+      "rc_id": "RC-013",
+      "final_status": "COMPLETE",
+      "status": "COMPLETE",
+      "h3_locator": "5,6"
+    },
+    {
+      "rc_id": "RC-014",
+      "final_status": "COMPLETE",
+      "status": "COMPLETE",
+      "h3_locator": "1,3"
+    },
+    {
+      "rc_id": "RC-015",
+      "final_status": "COMPLETE",
+      "status": "COMPLETE",
+      "h3_locator": "0,5,6"
+    },
+    {
+      "rc_id": "RC-016",
+      "final_status": "COMPLETE",
+      "status": "COMPLETE",
+      "h3_locator": "5"
+    },
+    {
+      "rc_id": "RC-017",
+      "final_status": "COMPLETE",
+      "status": "COMPLETE",
+      "h3_locator": "5,Appendix"
+    },
+    {
+      "rc_id": "RC-018",
+      "final_status": "COMPLETE",
+      "status": "COMPLETE",
+      "h3_locator": "6"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "name": "Stem 2Q26 Form 10-Q",
+      "date": "2026-08-13",
+      "tier": 1,
+      "url": "https://investors.stem.com/sec-filings/all-sec-filings/content/0001758766-26-000081/stem-20260630.htm"
+    },
+    {
+      "id": "S2",
+      "name": "Stem Q2 2026 Results",
+      "date": "2026-08-12",
+      "tier": 2,
+      "url": "https://investors.stem.com/news-events/press-releases/detail/215/stem-announces-second-quarter-2026-results"
+    },
+    {
+      "id": "S3",
+      "name": "Stem FY2025 Form 10-K",
+      "date": "2026-03",
+      "tier": 1,
+      "url": "https://www.sec.gov/Archives/edgar/data/1758766/000175876626000016/stem-20251231.htm"
+    },
+    {
+      "id": "S4",
+      "name": "Stem Press Release Archive",
+      "date": "checked 2026-09-01",
+      "tier": 2,
+      "url": "https://investors.stem.com/news-events/press-releases"
+    },
+    {
+      "id": "S5",
+      "name": "Stem SEC Filings / 2026 Proxy",
+      "date": "checked 2026-09-01",
+      "tier": 1,
+      "url": "https://investors.stem.com/sec-filings/all-sec-filings"
+    },
+    {
+      "id": "S6",
+      "name": "Stem PowerTrack EMS",
+      "date": "checked 2026-09-01",
+      "tier": 2,
+      "url": "https://www.stem.com/products/powertrack-suite/powertrack-ems/"
+    },
+    {
+      "id": "S7",
+      "name": "Summit Ridge Energy PowerTrack fleet standardization",
+      "date": "2025-03-04",
+      "tier": 3,
+      "url": "https://srenergy.com/news/stem-powertrack-standard-on-sre-commercial-solar-portfolio/"
+    },
+    {
+      "id": "S8",
+      "name": "Nuvation Energy / Stem BESS control partnership",
+      "date": "2026-04-30",
+      "tier": 3,
+      "url": "https://nuvationenergy.com/news/stem-and-nuvation-energy-enter-into-agreement-to-deliver-north-american-made-bess-control-solution/"
+    },
+    {
+      "id": "S9",
+      "name": "Stem AIONA AI Services",
+      "date": "checked 2026-09-01",
+      "tier": 2,
+      "url": "https://www.stem.com/ai-services"
+    },
+    {
+      "id": "S10",
+      "name": "EIA battery storage capacity growth",
+      "date": "2026-08-07",
+      "tier": 4,
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67925"
+    },
+    {
+      "id": "S11",
+      "name": "EIA 2026 planned solar/storage additions",
+      "date": "2026-02-20",
+      "tier": 4,
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67205"
+    },
+    {
+      "id": "S12",
+      "name": "Power Factors Unity",
+      "date": "checked 2026-09-01",
+      "tier": 5,
+      "url": "https://www.powerfactors.com/unity"
+    },
+    {
+      "id": "S13",
+      "name": "Power Factors Unity EMS",
+      "date": "checked 2026-09-01",
+      "tier": 5,
+      "url": "https://www.powerfactors.com/unity/energy-management-system"
+    },
+    {
+      "id": "S14",
+      "name": "Fluence Energy Storage / Fluence IQ",
+      "date": "checked 2026-09-01",
+      "tier": 5,
+      "url": "https://fluenceenergy.com/energy-storage-technology/"
+    },
+    {
+      "id": "S15",
+      "name": "Wärtsilä Energy Storage / GEMS",
+      "date": "checked 2026-09-01",
+      "tier": 5,
+      "url": "https://www.wartsila.com/energy/energy-storage"
+    },
+    {
+      "id": "S16",
+      "name": "StockAnalysis STEM market statistics",
+      "date": "2026-08-31 context",
+      "tier": 6,
+      "url": "https://stockanalysis.com/stocks/stem/"
+    },
+    {
+      "id": "S17",
+      "name": "SEC 2030 Convertible detail",
+      "date": "2026 filing",
+      "tier": 1,
+      "url": "https://www.sec.gov/Archives/edgar/data/1758766/000175876626000016/stem-20251231.htm"
+    },
+    {
+      "id": "S18",
+      "name": "TipRanks analyst revisions",
+      "date": "checked 2026-09-01",
+      "tier": 6,
+      "url": "https://www.tipranks.com/stocks/stem/forecast"
+    },
+    {
+      "id": "S19",
+      "name": "Investing.com STEM consensus",
+      "date": "checked 2026-09-01",
+      "tier": 6,
+      "url": "https://www.investing.com/equities/star-peak-energy-transition-consensus-estimates"
+    },
+    {
+      "id": "S20",
+      "name": "Stem all SEC filings index",
+      "date": "checked 2026-09-01",
+      "tier": 1,
+      "url": "https://investors.stem.com/sec-filings/all-sec-filings"
+    }
+  ],
+  "visual_lineage": [
+    {
+      "visual_id": "V1",
+      "title": "Revenue mix transition 2023-2025",
+      "data_path": "financials.revenue_mix_annual",
+      "source_ids": [
+        "S3"
+      ]
+    },
+    {
+      "visual_id": "V2",
+      "title": "8-quarter margin / ARR / OCF",
+      "data_path": "financials.quarterly_8q",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "visual_id": "V3",
+      "title": "Capital structure burden",
+      "data_path": "capital_structure",
+      "source_ids": [
+        "S1",
+        "S17"
+      ]
+    },
+    {
+      "visual_id": "V4",
+      "title": "2029 scenario per-share value",
+      "data_path": "scenarios",
+      "source_ids": [
+        "analyst scenario model based on S1-S19"
+      ]
+    },
+    {
+      "visual_id": "V5",
+      "title": "Reverse expectations",
+      "data_path": "reverse_expectations",
+      "source_ids": [
+        "S1",
+        "S16"
+      ]
+    }
+  ],
+  "qa": {
+    "H1_H2_RESEARCH_CONTRACT_COMPLETENESS": "PASS",
+    "H2_H3_COVERAGE_LINEAGE": "PASS",
+    "LATEST_FILING_CHECK": "PASS",
+    "RC_TOTAL": 18,
+    "RC_COMPLETE": 15,
+    "RC_CEILING": 3,
+    "RC_UNRESOLVED": 0,
+    "industry_material_blocks_total": 5,
+    "industry_material_blocks_landed": 5,
+    "reader_quality_gate_17A": "PASS",
+    "reader_quality_gate_17B": "PASS",
+    "reader_quality_gate_17C": "PASS",
+    "data_pack_report_parity": "PASS",
+    "decision_visuals_total": 5,
+    "decision_visuals_parity_pass": 5,
+    "stale_visual_assets": 0,
+    "figure_numerical_parity": "PASS",
+    "visual_data_lineage": "PASS",
+    "visual_semantic_parity": "PASS",
+    "rendered_visual_parity_qa": "PASS",
+    "html_sidebar": "PASS",
+    "print_toc": "PASS",
+    "pdf_bookmarks": "PASS",
+    "pdf_searchable_text": "PASS",
+    "a4_portrait_pages": 24,
+    "whole_report_visual_pass": "PASS",
+    "clipping_overflow_pagebreak_qa": "PASS",
+    "metadata_firewall": "PASS",
+    "publishing_status": "PASS"
+  },
+  "publishing": {
+    "html_file": "STEM_DEEP_DIVE.html",
+    "pdf_file": "STEM_DEEP_DIVE.pdf",
+    "data_pack_file": "STEM_DATA_PACK_260901.json",
+    "pdf_pages": 24,
+    "page_size": "A4 portrait",
+    "contact_sheet_qa": "PASS",
+    "decision_visuals_checked": [
+      "VIS-001",
+      "VIS-002",
+      "VIS-003",
+      "VIS-004",
+      "VIS-005"
+    ],
+    "visual_lineage_status": "PASS"
+  }
+}

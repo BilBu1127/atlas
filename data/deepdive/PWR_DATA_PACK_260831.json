@@ -1,0 +1,1002 @@
+{
+  "meta": {
+    "ticker": "PWR",
+    "company": "Quanta Services, Inc.",
+    "currency": "USD",
+    "T0": "2026-08-28",
+    "price_asof": "2026-08-28 close",
+    "publishing_date": "2026-08-31",
+    "filing_asof": "2026-08-06 8-K; latest periodic 2026-07-30 10-Q",
+    "consensus_asof": "2026-08-30/31 public aggregations",
+    "version": "Clean DDOS Production v1.7"
+  },
+  "market": {
+    "current_price": 602.7,
+    "fifty_two_week_high": 788.75,
+    "current_vs_high_pct": -0.2359,
+    "analyst_target_avg": 770.04,
+    "analyst_target_low": 410,
+    "analyst_target_high": 976,
+    "short_interest_m_shares": 2.76,
+    "short_float_pct": 1.85
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue_b": 20.882206,
+        "operating_income_b": 1.127976,
+        "operating_margin_pct": 5.4,
+        "net_income_common_b": 0.744689,
+        "adjusted_eps": 7.16,
+        "ocf_b": 1.575952,
+        "fcf_b": 1.210496
+      },
+      {
+        "year": 2024,
+        "revenue_b": 23.672795,
+        "operating_income_b": 1.346468,
+        "operating_margin_pct": 5.69,
+        "net_income_common_b": 0.904824,
+        "adjusted_eps": 8.97,
+        "ocf_b": 2.081196,
+        "fcf_b": 1.554761
+      },
+      {
+        "year": 2025,
+        "revenue_b": 28.479697,
+        "operating_income_b": 1.611509,
+        "operating_margin_pct": 5.66,
+        "net_income_common_b": 1.028378,
+        "adjusted_eps": 10.75,
+        "ocf_b": 2.22997,
+        "fcf_b": 1.672732
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "3Q24",
+        "revenue_b": 6.49,
+        "adjusted_eps": 2.72,
+        "adjusted_ebitda_b": 0.6828,
+        "rpo_b": 15.61,
+        "backlog_b": 33.96
+      },
+      {
+        "quarter": "4Q24",
+        "revenue_b": 6.55,
+        "adjusted_eps": 2.94,
+        "adjusted_ebitda_b": 0.7378,
+        "rpo_b": 16.76,
+        "backlog_b": 34.54
+      },
+      {
+        "quarter": "1Q25",
+        "revenue_b": 6.233,
+        "adjusted_eps": 1.78,
+        "adjusted_ebitda_b": 0.5039,
+        "rpo_b": 17.6,
+        "backlog_b": 35.3
+      },
+      {
+        "quarter": "2Q25",
+        "revenue_b": 6.773,
+        "adjusted_eps": 2.48,
+        "adjusted_ebitda_b": 0.6688,
+        "rpo_b": 19.2,
+        "backlog_b": 35.8
+      },
+      {
+        "quarter": "3Q25",
+        "revenue_b": 7.63,
+        "adjusted_eps": 3.33,
+        "adjusted_ebitda_b": 0.8583,
+        "rpo_b": 20.973,
+        "backlog_b": 39.174
+      },
+      {
+        "quarter": "4Q25",
+        "revenue_b": 7.84,
+        "adjusted_eps": 3.16,
+        "adjusted_ebitda_b": 0.8453,
+        "rpo_b": 23.763,
+        "backlog_b": 43.976
+      },
+      {
+        "quarter": "1Q26",
+        "revenue_b": 7.875,
+        "adjusted_eps": 2.68,
+        "adjusted_ebitda_b": 0.6864,
+        "rpo_b": 26.2,
+        "backlog_b": 48.5
+      },
+      {
+        "quarter": "2Q26",
+        "revenue_b": 9.556997,
+        "adjusted_eps": 4.24,
+        "adjusted_ebitda_b": 1.066522,
+        "rpo_b": 33.554155,
+        "backlog_b": 53.440496
+      }
+    ],
+    "segments_3y": {
+      "Electric": [
+        {
+          "year": 2023,
+          "revenue_b": 15.867198,
+          "operating_margin_pct": 9.4
+        },
+        {
+          "year": 2024,
+          "revenue_b": 19.012379,
+          "operating_margin_pct": 10.3
+        },
+        {
+          "year": 2025,
+          "revenue_b": 23.001468,
+          "operating_margin_pct": 10.3
+        }
+      ],
+      "Underground": [
+        {
+          "year": 2023,
+          "revenue_b": 5.015008,
+          "operating_margin_pct": 7.5
+        },
+        {
+          "year": 2024,
+          "revenue_b": 4.660416,
+          "operating_margin_pct": 5.7
+        },
+        {
+          "year": 2025,
+          "revenue_b": 5.478229,
+          "operating_margin_pct": 7.3
+        }
+      ]
+    },
+    "latest_q2_2026": {
+      "revenue_b": 9.556997,
+      "adjusted_eps": 4.24,
+      "adjusted_ebitda_b": 1.066522,
+      "electric_revenue_b": 7.837805,
+      "electric_operating_margin_pct": 11.5,
+      "underground_revenue_b": 1.719192,
+      "underground_operating_margin_pct": 9.1,
+      "fixed_price_mix_pct": 63.7,
+      "unit_price_mix_pct": 18.5,
+      "cost_plus_mix_pct": 17.8,
+      "rpo_b": 33.554155,
+      "backlog_b": 53.440496,
+      "msa_estimate_b": 19.886341,
+      "rpo_expected_within_12m_pct": 70
+    },
+    "balance_sheet_2026_06_30": {
+      "cash_b": 0.506431,
+      "debt_b": 6.096174,
+      "net_debt_b": 5.589743,
+      "goodwill_b": 7.868886,
+      "intangibles_b": 3.216084,
+      "equity_b": 9.741943
+    },
+    "cashflow_1h26": {
+      "ocf_b": 1.487188,
+      "net_capex_b": 0.4168,
+      "fcf_b": 1.070388
+    },
+    "accounting_quality": {
+      "2025_amortization_b": 0.498795,
+      "2025_sbc_b": 0.181947,
+      "1h26_amortization_b": 0.309338,
+      "1h26_sbc_b": 0.126013,
+      "q2_fixed_price_estimate_change_revenue_pct": 0.9,
+      "1h_fixed_price_estimate_change_revenue_pct": -0.5
+    },
+    "ceilings": [
+      "고객별 wallet share 및 MW당 PWR 매출 계수 미공개",
+      "August notes 이후 정확한 post-close net debt는 상환액 미공개",
+      "acquisition-heavy purchase accounting으로 reported ROIC 정밀도 제한"
+    ]
+  },
+  "backlog": {
+    "2025_year_end": {
+      "rpo_b": 23.763014,
+      "msa_b": 20.213394,
+      "backlog_b": 43.976408
+    },
+    "2026_q2": {
+      "rpo_b": 33.554155,
+      "msa_b": 19.886341,
+      "backlog_b": 53.440496,
+      "twelve_month_rpo_b": 23.514933,
+      "twelve_month_msa_b": 8.799255,
+      "twelve_month_backlog_b": 32.314188
+    },
+    "rpo_growth_since_ye_pct": 41.2,
+    "backlog_growth_since_ye_pct": 21.5,
+    "msa_share_total_backlog_pct": 37.2,
+    "msa_share_12m_backlog_pct": 27.2
+  },
+  "guidance": {
+    "fy2024_initial": {
+      "revenue_b": [
+        22.25,
+        22.75
+      ],
+      "adjusted_ebitda_b": [
+        2.14,
+        2.25
+      ],
+      "adjusted_eps": [
+        8.0,
+        8.5
+      ],
+      "fcf_b": [
+        1.3,
+        1.7
+      ]
+    },
+    "fy2024_actual": {
+      "revenue_b": 23.67,
+      "adjusted_ebitda_b": 2.33,
+      "adjusted_eps": 8.97,
+      "fcf_b": 1.55
+    },
+    "fy2025_initial": {
+      "revenue_b": [
+        26.6,
+        27.1
+      ],
+      "adjusted_ebitda_b": [
+        2.66,
+        2.8
+      ],
+      "adjusted_eps": [
+        9.9,
+        10.5
+      ],
+      "fcf_b": [
+        1.2,
+        1.7
+      ]
+    },
+    "fy2025_actual": {
+      "revenue_b": 28.48,
+      "adjusted_ebitda_b": 2.88,
+      "adjusted_eps": 10.75,
+      "fcf_b": 1.67
+    },
+    "fy2026_initial": {
+      "revenue_b": [
+        33.25,
+        33.75
+      ],
+      "adjusted_ebitda_b": [
+        3.34,
+        3.5
+      ],
+      "adjusted_eps": [
+        12.65,
+        13.35
+      ],
+      "fcf_b": [
+        1.55,
+        2.05
+      ]
+    },
+    "fy2026_latest": {
+      "revenue_b": [
+        39.3,
+        39.7
+      ],
+      "adjusted_ebitda_b": [
+        4.0885,
+        4.2106
+      ],
+      "adjusted_eps": [
+        16.45,
+        16.95
+      ],
+      "fcf_b": [
+        2.0,
+        2.5
+      ]
+    },
+    "long_term": {
+      "2030_adjusted_eps_message": "2025 adjusted EPS 대비 2030년까지 2배 이상 경로",
+      "2025_adjusted_eps": 10.75,
+      "mechanical_floor_2030_eps": 21.5
+    }
+  },
+  "m_and_a": {
+    "CEI": {
+      "upfront_b": 1.54,
+      "2024e_revenue_b": [
+        2.1,
+        2.2
+      ],
+      "2024e_adjusted_ebitda_b": [
+        0.155,
+        0.175
+      ],
+      "max_earnout_b": 0.2
+    },
+    "Dynamic_Systems": {
+      "upfront_b": 1.35,
+      "2025e_revenue_b": [
+        1.0,
+        1.1
+      ],
+      "2025e_adjusted_ebitda_b": [
+        0.15,
+        0.17
+      ],
+      "max_earnout_b": 0.216
+    },
+    "2026_first_half_business_combinations": {
+      "cash_paid_or_payable_b": 1.086438,
+      "stock_value_b": 0.128324,
+      "contingent_consideration_fv_b": 0.215345,
+      "total_consideration_fv_b": 1.430107,
+      "goodwill_b": 0.482778,
+      "identifiable_intangibles_b": 0.635157,
+      "max_outstanding_contingent_payment_b": 0.9214
+    }
+  },
+  "capital_allocation": {
+    "quarterly_dividend_per_share": 0.11,
+    "annualized_dividend_per_share": 0.44,
+    "new_repurchase_authorization_b": 1.0,
+    "1h26_open_market_repurchases_b": 0.0,
+    "august_2026_notes": [
+      {
+        "amount_b": 0.5,
+        "coupon_pct": 4.85,
+        "due": 2029
+      },
+      {
+        "amount_b": 0.75,
+        "coupon_pct": 5.3,
+        "due": 2033
+      },
+      {
+        "amount_b": 0.75,
+        "coupon_pct": 5.55,
+        "due": 2036
+      }
+    ],
+    "note": "August notes proceeds include repayment of commercial paper/credit facility; not additive to 6/30 debt."
+  },
+  "kpis": [
+    {
+      "name": "RPO",
+      "current": 33.554,
+      "unit": "$B",
+      "history": [
+        16.76,
+        23.763,
+        26.2,
+        33.554
+      ],
+      "thresholds": {
+        "green": "YoY +20% 이상 또는 backlog 대비 RPO 비중 상승",
+        "yellow": "성장률 0~20% 또는 RPO 비중 정체",
+        "red": "2개 분기 연속 감소"
+      }
+    },
+    {
+      "name": "Electric segment operating margin",
+      "current": 11.5,
+      "unit": "%",
+      "history": [
+        10.3,
+        10.1,
+        11.5
+      ],
+      "thresholds": {
+        "green": "11% 이상 유지",
+        "yellow": "10~11%",
+        "red": "10% 미만이 2개 분기 지속"
+      }
+    },
+    {
+      "name": "FCF",
+      "current": 1.07,
+      "unit": "$B, 1H26",
+      "history": [
+        1.21,
+        1.555,
+        1.673,
+        1.07
+      ],
+      "thresholds": {
+        "green": "FY26 $2.25B 이상 / 2027 성장 지속",
+        "yellow": "FY26 $2.0~2.25B",
+        "red": "FY26 $2.0B 미만 또는 이익 성장 중 FCF 감소"
+      }
+    },
+    {
+      "name": "Acquired revenue dependence",
+      "current": "1H26 Electric ~$1.04B + Underground ~$0.69B",
+      "unit": "",
+      "history": [],
+      "thresholds": {
+        "green": "총 성장의 과반이 반복적으로 organic에서 발생",
+        "yellow": "인수·organic 혼재",
+        "red": "고성장이 M&A 없이는 유지되지 않음"
+      }
+    },
+    {
+      "name": "MSA share of total backlog",
+      "current": 37.2,
+      "unit": "%",
+      "history": [
+        46,
+        41
+      ],
+      "thresholds": {
+        "green": "40% 이하 또는 RPO가 더 빠르게 성장",
+        "yellow": "40~45%",
+        "red": "45% 초과와 RPO 성장 둔화가 동시 발생"
+      }
+    },
+    {
+      "name": "Net leverage / acquisition funding",
+      "current": "6/30 debt $6.10B; Aug notes mostly refinancing",
+      "unit": "",
+      "history": [],
+      "thresholds": {
+        "green": "FCF 성장으로 순부채/EBITDA 안정·하락",
+        "yellow": "인수 후 일시 상승",
+        "red": "추가 대형 M&A로 FCF보다 부채가 빠르게 증가"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.25,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "revenue_path_b": [
+        39.5,
+        42.0,
+        45.0,
+        48.0,
+        51.0
+      ],
+      "adjusted_eps_path": [
+        16.7,
+        17.5,
+        19.0,
+        21.0,
+        23.5
+      ],
+      "fcf_path_b": [
+        2.15,
+        2.35,
+        2.65,
+        2.95,
+        3.25
+      ],
+      "wacc": 0.095,
+      "terminal_growth": 0.025,
+      "terminal_pe": 24,
+      "dcf_per_share": 230.12,
+      "terminal_multiple_pv_per_share": 344.8,
+      "per_share_value": 287.46,
+      "terminal_2030_price": 564.0,
+      "scenario_irr": -0.015167
+    },
+    {
+      "name": "Base",
+      "probability": 0.55,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "revenue_path_b": [
+        39.5,
+        45.0,
+        50.5,
+        55.5,
+        60.0
+      ],
+      "adjusted_eps_path": [
+        16.7,
+        19.6,
+        23.0,
+        26.0,
+        29.0
+      ],
+      "fcf_path_b": [
+        2.25,
+        2.9,
+        3.55,
+        4.25,
+        5.0
+      ],
+      "wacc": 0.085,
+      "terminal_growth": 0.035,
+      "terminal_pe": 30,
+      "dcf_per_share": 520.09,
+      "terminal_multiple_pv_per_share": 531.87,
+      "per_share_value": 525.98,
+      "terminal_2030_price": 870.0,
+      "scenario_irr": 0.088212
+    },
+    {
+      "name": "Bull",
+      "probability": 0.2,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "revenue_path_b": [
+        39.5,
+        46.5,
+        54.0,
+        62.0,
+        70.0
+      ],
+      "adjusted_eps_path": [
+        16.7,
+        21.0,
+        26.0,
+        31.0,
+        36.0
+      ],
+      "fcf_path_b": [
+        2.3,
+        3.2,
+        4.2,
+        5.3,
+        6.3
+      ],
+      "wacc": 0.08,
+      "terminal_growth": 0.04,
+      "terminal_pe": 32,
+      "dcf_per_share": 830.69,
+      "terminal_multiple_pv_per_share": 704.27,
+      "per_share_value": 767.48,
+      "terminal_2030_price": 1152.0,
+      "scenario_irr": 0.160898
+    }
+  ],
+  "valuation": {
+    "mode": "Mode C — Mature Compounder",
+    "method": "각 시나리오 DCF와 2030 EPS×terminal P/E의 12% 할인현재가치를 50/50 교차검증",
+    "core": "2026 midpoint FCF $2.25B / RPO $33.55B / Electric margin 11.5%",
+    "execution": "organic award, self-perform, integration, margin/FCF conversion",
+    "ecosystem": "grid→generation→load-side electrical/mechanical/modular wallet expansion",
+    "drag": "net debt, goodwill/intangibles, amortization, contingent consideration, SBC",
+    "expected_value": 514.65,
+    "expected_irr": 0.08237,
+    "current_price": 602.7,
+    "base_value": 525.98,
+    "upside_downside_ratio": 0.523,
+    "hurdle_range": [
+      0.1,
+      0.15
+    ],
+    "strict_buy_ud2_trigger": 447.47,
+    "base_2030_terminal_price": 870,
+    "base_irr_from_current": 0.088212
+  },
+  "reverse_expectations": {
+    "horizon_years": 4.342,
+    "2026_adjusted_eps_mid": 16.7,
+    "management_2030_more_than_double_reference": 21.5,
+    "required": {
+      "10": {
+        "required_2030_price": 911.67,
+        "required_2030_eps_at_24x": 37.99,
+        "required_2030_eps_at_30x": 30.39,
+        "required_2030_eps_at_35x": 26.05
+      },
+      "12": {
+        "required_2030_price": 985.86,
+        "required_2030_eps_at_24x": 41.08,
+        "required_2030_eps_at_30x": 32.86,
+        "required_2030_eps_at_35x": 28.17
+      },
+      "15": {
+        "required_2030_price": 1105.77,
+        "required_2030_eps_at_24x": 46.07,
+        "required_2030_eps_at_30x": 36.86,
+        "required_2030_eps_at_35x": 31.59
+      }
+    },
+    "key_read": "12% required return + 30x 2030 P/E implies 2030 EPS $32.86, ~53% above the mechanical 'double 2025' level of $21.50."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_b": 39.6,
+      "adjusted_eps": 16.73
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_b": 45.42,
+      "adjusted_eps": 19.64,
+      "source_quality": "secondary-source ceiling"
+    },
+    "analyst_target_avg": 770.04,
+    "revision_trend": "2026 guidance/consensus sharply revised upward during 2026; market already recognizes demand strength."
+  },
+  "stance": {
+    "zone": "AVOID / 기존 보유 시 축소 검토",
+    "reason": "scenario-weighted 2030 expected IRR ~8.2% < 10–15% hurdle and current U/D <1",
+    "price_bands": {
+      "current": 602.7,
+      "base_fair": 525.98,
+      "probability_weighted_fair": 514.65,
+      "return_hurdle_entry_band": [
+        460,
+        520
+      ],
+      "strict_buy_zone_below": 450.0
+    },
+    "horizon": "2030-12-31 (~4.34 years)",
+    "stance_change": "가격이 $450 전후 이하로 하락하거나, 같은 가격에서 2030 Base EPS/FCF 경로가 Bull 수준으로 상향 검증될 때."
+  },
+  "catalysts": [
+    {
+      "when": "2026-10 하순 (추정)",
+      "event": "3Q26 실적/가이던스",
+      "bull": "RPO·Electric margin·FCF 가이던스 동반 상향",
+      "bear": "RPO 정체 또는 M&A 제외 성장 둔화",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2026-11~12",
+      "event": "주요 utility 2027 capex/부하 업데이트",
+      "bull": "signed load와 grid capex 추가 상향",
+      "bear": "부하 프로젝트 지연/취소 확대",
+      "sensitivity": "M"
+    },
+    {
+      "when": "2027-02 (예상)",
+      "event": "FY26 실적 및 FY27 초기 가이던스",
+      "bull": "FY27 organic 성장과 FCF가 컨센서스 상회",
+      "bear": "인수 기여 제거 시 성장률 급락",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027-03~04",
+      "event": "2030 장기목표 업데이트 여부",
+      "bull": "EPS/FCF 장기 경로 상향",
+      "bear": "목표 유지에도 필요한 M&A 의존도 상승",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027-04 하순 (예상)",
+      "event": "1Q27 실적",
+      "bull": "Electric margin 11%+와 RPO 성장 지속",
+      "bear": "working-capital/마진 역전",
+      "sensitivity": "M"
+    },
+    {
+      "when": "2027 상반기",
+      "event": "large-load interconnection 제도 및 고객 프로젝트 진행",
+      "bull": "실제 계약·착공으로 speculative pipeline이 firm award로 전환",
+      "bear": "허가·발전원·송전 병목으로 일정 지연",
+      "sensitivity": "M"
+    }
+  ],
+  "falsification": [
+    "전력수요 thesis: NERC/utility 계획과 별개로 PWR RPO가 2개 분기 연속 감소하면 산업 수요가 PWR 수주로 전달된다는 가설을 재검토한다.",
+    "moat thesis: Electric margin이 10% 아래에서 2개 분기 지속되고 subcontract 의존도가 상승하면 scale/self-perform 우위가 경제적 moat라는 판단을 약화한다.",
+    "M&A platform thesis: 2027년에도 성장의 과반이 신규 인수 없이는 설명되지 않고 FCF/투하자본 수익성이 개선되지 않으면 wallet-expansion 플랫폼 가설을 기각한다.",
+    "valuation thesis: 2030 Base EPS가 $33+로 상향 검증되거나 현재 가격이 $450 전후 이하로 내려오면 현재의 회피 스탠스를 재평가한다."
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "promise": "경제적 정의·역사",
+      "status": "PASS",
+      "h3_locator": "§0, §3.1"
+    },
+    {
+      "rc_id": "RC-002",
+      "promise": "산업 구조 B1–B5 / utility capex",
+      "status": "PASS",
+      "h3_locator": "§1 전체"
+    },
+    {
+      "rc_id": "RC-003",
+      "promise": "데이터센터·large-load 전달 정량화",
+      "status": "PASS_CEILING",
+      "h3_locator": "§1.4, §3.5"
+    },
+    {
+      "rc_id": "RC-004",
+      "promise": "인력·장비·허가 공급 제약",
+      "status": "PASS",
+      "h3_locator": "§1.3, §3.6"
+    },
+    {
+      "rc_id": "RC-005",
+      "promise": "backlog/RPO/MSA 계약 품질",
+      "status": "PASS",
+      "h3_locator": "§3.3, §4.3"
+    },
+    {
+      "rc_id": "RC-006",
+      "promise": "workforce/training moat",
+      "status": "PASS",
+      "h3_locator": "§3.2"
+    },
+    {
+      "rc_id": "RC-007",
+      "promise": "engineering/EPC/modular/fabrication 기술 아키텍처",
+      "status": "PASS",
+      "h3_locator": "§3.4"
+    },
+    {
+      "rc_id": "RC-008",
+      "promise": "고객 job 기준 경쟁",
+      "status": "PASS",
+      "h3_locator": "§3.7"
+    },
+    {
+      "rc_id": "RC-009",
+      "promise": "고객집중·계약·반복성",
+      "status": "PASS",
+      "h3_locator": "§3.3"
+    },
+    {
+      "rc_id": "RC-010",
+      "promise": "CEI/DSI/Tri-City/2026 M&A 경제성",
+      "status": "PASS",
+      "h3_locator": "§3.5, §4.5"
+    },
+    {
+      "rc_id": "RC-011",
+      "promise": "Duke Austin Promise→Delivery",
+      "status": "PASS",
+      "h3_locator": "§2.2"
+    },
+    {
+      "rc_id": "RC-012",
+      "promise": "3Y + 8Q 재무·세그먼트",
+      "status": "PASS",
+      "h3_locator": "§4.1–4.3"
+    },
+    {
+      "rc_id": "RC-013",
+      "promise": "마진·프로젝트 믹스",
+      "status": "PASS",
+      "h3_locator": "§4.2"
+    },
+    {
+      "rc_id": "RC-014",
+      "promise": "OCF→FCF·WC·SBC·amortization",
+      "status": "PASS",
+      "h3_locator": "§4.4"
+    },
+    {
+      "rc_id": "RC-015",
+      "promise": "자본구조·$2B notes·주주환원",
+      "status": "PASS_CEILING",
+      "h3_locator": "§4.6, §5.5"
+    },
+    {
+      "rc_id": "RC-016",
+      "promise": "ROIC·재투자 규율",
+      "status": "PASS_CEILING",
+      "h3_locator": "§4.5"
+    },
+    {
+      "rc_id": "RC-017",
+      "promise": "컨센서스·밸류에이션·포지셔닝",
+      "status": "PASS_CEILING",
+      "h3_locator": "§5.2–5.4"
+    },
+    {
+      "rc_id": "RC-018",
+      "promise": "시나리오·reverse expectations",
+      "status": "PASS",
+      "h3_locator": "§5 전체"
+    },
+    {
+      "rc_id": "RC-019",
+      "promise": "catalyst·KPI·risk·falsification",
+      "status": "PASS",
+      "h3_locator": "§6 전체"
+    }
+  ],
+  "source_registry": [
+    {
+      "id": "S01",
+      "name": "Quanta Services 2025 Form 10-K",
+      "tier": "Primary",
+      "url": "https://investors.quantaservices.com/sec-filings/all-sec-filings/content/0001050915-26-000006/pwr-20251231.htm"
+    },
+    {
+      "id": "S02",
+      "name": "Quanta Services 2Q26 Form 10-Q",
+      "tier": "Primary",
+      "url": "https://investors.quantaservices.com/sec-filings/all-sec-filings/content/0001050915-26-000025/pwr-20260630.htm"
+    },
+    {
+      "id": "S03",
+      "name": "Quanta Services 2Q26 results",
+      "tier": "Primary",
+      "url": "https://investors.quantaservices.com/news-events/press-releases/detail/402/quanta-services-reports-second-quarter-2026-results"
+    },
+    {
+      "id": "S04",
+      "name": "Quanta Services 1Q26 results / 2030 Investor Day target reference",
+      "tier": "Primary",
+      "url": "https://investors.quantaservices.com/news-events/press-releases/detail/396/quanta-services-reports-first-quarter-2026-results"
+    },
+    {
+      "id": "S05",
+      "name": "Quanta Services 2026 Proxy Statement",
+      "tier": "Primary",
+      "url": "https://investors.quantaservices.com/sec-filings/all-sec-filings/content/0001193125-26-150293/d118470ddef14a.htm"
+    },
+    {
+      "id": "S06",
+      "name": "Quanta 2026 Investor Day",
+      "tier": "Primary",
+      "url": "https://investors.quantaservices.com/news-events/ir-calendar/detail/20260331-2026-investor-day"
+    },
+    {
+      "id": "S07",
+      "name": "Quanta May 2026 dividend / $1B repurchase authorization",
+      "tier": "Primary",
+      "url": "https://investors.quantaservices.com/news-events/press-releases/detail/399/quanta-services-announces-quarterly-cash-dividend-and-new-1-billion-stock-repurchase-program"
+    },
+    {
+      "id": "S08",
+      "name": "NERC 2025 Long-Term Reliability Assessment",
+      "tier": "Regulator/Primary",
+      "url": "https://www.nerc.com/our-work/assessments/long-term-reliability-assessments"
+    },
+    {
+      "id": "S09",
+      "name": "EIA data-center / load growth analysis",
+      "tier": "Government/Primary",
+      "url": "https://www.eia.gov/TODAYINENERGY/detail.php?id=67344"
+    },
+    {
+      "id": "S10",
+      "name": "FERC large-load integration action",
+      "tier": "Regulator/Primary",
+      "url": "https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration"
+    },
+    {
+      "id": "S11",
+      "name": "AEP capital plan / signed load commitments",
+      "tier": "Customer/Primary",
+      "url": "https://pr.aep.com/news/releases/read/11917"
+    },
+    {
+      "id": "S12",
+      "name": "NiSource data-center regulatory approvals",
+      "tier": "Customer/Primary",
+      "url": "https://investors.nisource.com/financial-news/news-details/2026/Regulatory-Approvals-Underscore-Strength-of-NiSources-Customer-Focused-Data-Center-Strategy-Supporting-Growth-in-Indiana/default.aspx"
+    },
+    {
+      "id": "S13",
+      "name": "Quanta / NiSource 3GW project announcement",
+      "tier": "Primary",
+      "url": "https://investors.quantaservices.com/news-events/press-releases/detail/386/building-upon-decades-of-power-generation-experience-quanta-expands-its-total-solutions-platform-and-announces-its-selection-by-nisource-to-provide-power-generation-and-grid-infrastructure-solutions-for-a-large-load-customer"
+    },
+    {
+      "id": "S14",
+      "name": "Quanta August 2026 senior notes 8-K",
+      "tier": "Primary",
+      "url": "https://investors.quantaservices.com/sec-filings/all-sec-filings/content/0001193125-26-337945/d164254d8k.htm"
+    },
+    {
+      "id": "S15",
+      "name": "StockAnalysis PWR ratios / S&P Global analyst aggregation",
+      "tier": "Secondary",
+      "url": "https://stockanalysis.com/stocks/pwr/financials/ratios/"
+    },
+    {
+      "id": "S16",
+      "name": "StockAnalysis PWR analyst forecast",
+      "tier": "Secondary",
+      "url": "https://stockanalysis.com/stocks/pwr/forecast/"
+    },
+    {
+      "id": "S17",
+      "name": "MarketWatch 2026-08-28 close",
+      "tier": "Secondary/Market",
+      "url": "https://www.marketwatch.com/data-news/quanta-services-inc-stock-underperforms-friday-when-compared-to-competitors-124d86e5-5e0a0c4f4841"
+    },
+    {
+      "id": "S18",
+      "name": "MarketBeat short interest",
+      "tier": "Secondary/Market",
+      "url": "https://www.marketbeat.com/stocks/NYSE/PWR/short-interest/"
+    }
+  ],
+  "visual_lineage": {
+    "charts": [
+      {
+        "id": "V01",
+        "title": "3개년 매출·조정 EPS",
+        "data_path": "financials.annual_3y"
+      },
+      {
+        "id": "V02",
+        "title": "최근 8분기 RPO·Backlog",
+        "data_path": "financials.quarterly_8q"
+      },
+      {
+        "id": "V03",
+        "title": "시나리오 2030 EPS/FCF",
+        "data_path": "scenarios"
+      },
+      {
+        "id": "V04",
+        "title": "Reverse expectations: required 2030 EPS",
+        "data_path": "reverse_expectations.required"
+      },
+      {
+        "id": "V05",
+        "title": "Scenario fair value vs current price",
+        "data_path": "scenarios + valuation.current_price"
+      }
+    ]
+  },
+  "qa": {
+    "RC_UNRESOLVED": 0,
+    "LATEST_FILING_CHECK": "PASS",
+    "H2_H3_COVERAGE_LINEAGE": "PASS",
+    "RC_H3_COVERAGE_RATE": "100%",
+    "INDUSTRY_COMPANY_NARRATIVE": "PASS",
+    "INDUSTRY_BLOCKS_TOTAL": 4,
+    "LANDED": 4,
+    "EVIDENCE_BOUNDARY_STATED": 2,
+    "KOREAN_PROSE_QUALITY": "PASS",
+    "EXPLANATORY_SPACE_ALLOCATION": "PASS",
+    "REPORT_DATA_PACK": "EMITTED",
+    "DATA_PACK_REPORT_PARITY": "PASS",
+    "CONTENT_MEANING_LOCK_PRESERVED": "PASS",
+    "PUBLISHED_TOP_LEVEL_SCHEMA_MATCH": "PASS",
+    "EXPLANATORY_DEPTH_PRESERVED": "PASS",
+    "CORE_LANDSCAPE_PAGES": 0,
+    "PDF_PAGES": 21,
+    "PRINTED_TOC_PAGES": 1,
+    "TOC_CLICKABLE": "PASS",
+    "PDF_BOOKMARKS": "PASS",
+    "PDF_BOOKMARK_COUNT": 65,
+    "PDF_INTERNAL_LINK_COUNT": 8,
+    "HTML_SIDEBAR": "PASS",
+    "SEARCHABLE_TEXT": "PASS",
+    "KOREAN_READABILITY": "PASS",
+    "SMART_CHAPTER_TRANSITIONS": "PASS",
+    "ARGUMENT_BLOCK_PAGINATION": "PASS",
+    "ACCIDENTAL_SPARSE_PAGES": 0,
+    "DENSITY_CONTROL": "PASS",
+    "VISUAL_SUBSTITUTION": "PASS",
+    "VISUAL_GRAMMAR_VARIETY": "PASS",
+    "CHART_READABILITY": "PASS",
+    "TABLE_QUALITY": "PASS",
+    "CONTACT_SHEET_COMPOSITION_QA": "PASS",
+    "SEMANTIC_GOLDEN_QA": "PASS",
+    "VISUAL_GOLDEN_QA": "PASS",
+    "GOLDEN_PARITY": "PASS",
+    "RENDERED_VISUAL_PARITY_QA": "PASS",
+    "PUBLISHING_ACCEPTANCE": "PASS",
+    "PDF_RENDERER": "WeasyPrint 68.0",
+    "PUBLISHING_COMPLETED_ASIA_SEOUL": "2026-08-31"
+  }
+}

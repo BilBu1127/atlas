@@ -1,0 +1,1323 @@
+{
+  "meta": {
+    "ticker": "ACM",
+    "company": "AECOM",
+    "T0": "2026-08-31",
+    "price_asof": "2026-08-28",
+    "filing_asof": "2026-08-12",
+    "latest_operating_filing": "2026-08-11 FY2026 Q3 10-Q",
+    "consensus_asof": "2026-08-31",
+    "currency": "USD",
+    "version": "DDOS-v1.7-published-20260831",
+    "report_language": "ko"
+  },
+  "investment_view": {
+    "economic_definition": "설계·자문·프로그램 관리 중심 전문서비스 코어 + 두 legacy P3 design-build CM tail risks",
+    "central_tension": "강한 design demand와 record backlog가 오래된 두 P3 계약의 손실·현금유출에 가려져 있는가",
+    "stance": "BUY ZONE / 단계적 비중 확대",
+    "current_price": 69.17,
+    "probability_weighted_price": 88.23,
+    "expected_total_value": 89.47,
+    "expected_12m_total_return_pct": 29.3,
+    "upside_downside_ratio": 3.19,
+    "claims_recovery_in_base": 0
+  },
+  "as_of_registry": {
+    "T0": "2026-08-31",
+    "price": "2026-08-28 close",
+    "operating_results": "FY2026 Q3 / quarter ended 2026-06-30",
+    "latest_operating_filing": "2026-08-11",
+    "latest_sec_filing_checked": "2026-08-12 Schedule 13D/A re Shimmick",
+    "consensus": "2026-08-31",
+    "industry_policy": "through 2026-08-31"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "fy": "FY2023",
+        "revenue_m": 14378,
+        "nsr_m": 6703,
+        "adj_ebitda_m": 964,
+        "adj_ebitda_margin_pct": null,
+        "adj_eps": 3.71,
+        "ocf_m": 696,
+        "fcf_m": 591
+      },
+      {
+        "fy": "FY2024",
+        "revenue_m": 16105,
+        "nsr_m": 7165,
+        "adj_ebitda_m": 1095,
+        "adj_ebitda_margin_pct": 16.0,
+        "adj_eps": 4.52,
+        "ocf_m": 827,
+        "fcf_m": 708
+      },
+      {
+        "fy": "FY2025",
+        "revenue_m": 16140,
+        "nsr_m": 7573,
+        "adj_ebitda_m": 1203,
+        "adj_ebitda_margin_pct": 16.8,
+        "adj_eps": 5.26,
+        "ocf_m": 822,
+        "fcf_m": 685
+      }
+    ],
+    "quarterly_8q_plus_ex_charge": [
+      {
+        "quarter": "Q4 FY24",
+        "revenue_bn": 4.11,
+        "nsr_bn": 1.812,
+        "adj_ebitda_m": 290,
+        "ebitda_margin_pct": 16.7,
+        "adj_eps": 1.27,
+        "fcf_m": 275,
+        "operating_backlog_bn": 23.863,
+        "basis": "reported"
+      },
+      {
+        "quarter": "Q1 FY25",
+        "revenue_bn": 4.014,
+        "nsr_bn": 1.801,
+        "adj_ebitda_m": 271,
+        "ebitda_margin_pct": 15.6,
+        "adj_eps": 1.31,
+        "fcf_m": 111,
+        "operating_backlog_bn": 23.877,
+        "basis": "reported"
+      },
+      {
+        "quarter": "Q2 FY25",
+        "revenue_bn": 3.772,
+        "nsr_bn": 1.867,
+        "adj_ebitda_m": 290,
+        "ebitda_margin_pct": 16.3,
+        "adj_eps": 1.25,
+        "fcf_m": 178,
+        "operating_backlog_bn": 24.269,
+        "basis": "reported"
+      },
+      {
+        "quarter": "Q3 FY25",
+        "revenue_bn": 4.178,
+        "nsr_bn": 1.938,
+        "adj_ebitda_m": 313,
+        "ebitda_margin_pct": 17.6,
+        "adj_eps": 1.34,
+        "fcf_m": 262,
+        "operating_backlog_bn": 24.588,
+        "basis": "reported"
+      },
+      {
+        "quarter": "Q4 FY25",
+        "revenue_bn": 4.175,
+        "nsr_bn": 1.967,
+        "adj_ebitda_m": 329,
+        "ebitda_margin_pct": 17.5,
+        "adj_eps": 1.36,
+        "fcf_m": 134,
+        "operating_backlog_bn": 24.83,
+        "basis": "reported"
+      },
+      {
+        "quarter": "Q1 FY26",
+        "revenue_bn": 3.831,
+        "nsr_bn": 1.851,
+        "adj_ebitda_m": 287,
+        "ebitda_margin_pct": 16.4,
+        "adj_eps": 1.29,
+        "fcf_m": 42,
+        "operating_backlog_bn": 25.962,
+        "basis": "reported"
+      },
+      {
+        "quarter": "Q2 FY26",
+        "revenue_bn": 3.801,
+        "nsr_bn": 1.948,
+        "adj_ebitda_m": 312,
+        "ebitda_margin_pct": 16.5,
+        "adj_eps": 1.59,
+        "fcf_m": -27,
+        "operating_backlog_bn": 26.204,
+        "basis": "reported"
+      },
+      {
+        "quarter": "Q3 FY26 reported",
+        "revenue_bn": 3.586,
+        "nsr_bn": 1.609,
+        "adj_ebitda_m": -8,
+        "ebitda_margin_pct": -0.3,
+        "adj_eps": -0.5,
+        "fcf_m": 55,
+        "operating_backlog_bn": 27.816,
+        "basis": "reported"
+      },
+      {
+        "quarter": "Q3 FY26 ex-charge",
+        "revenue_bn": null,
+        "nsr_bn": 1.946,
+        "adj_ebitda_m": 329,
+        "ebitda_margin_pct": 17.0,
+        "adj_eps": 1.49,
+        "fcf_m": null,
+        "operating_backlog_bn": null,
+        "basis": "supplemental_ex_charge"
+      }
+    ],
+    "ceilings": [
+      "standalone CM margin unavailable",
+      "standalone AI revenue/margin/ROI unavailable",
+      "exact utilization/wage/ECC capacity unavailable"
+    ]
+  },
+  "backlog_definition_audit": {
+    "quarterly_operating_backlog_bn": [
+      [
+        "Q4 FY24",
+        23.863
+      ],
+      [
+        "Q1 FY25",
+        23.877
+      ],
+      [
+        "Q2 FY25",
+        24.269
+      ],
+      [
+        "Q3 FY25",
+        24.588
+      ],
+      [
+        "Q4 FY25",
+        24.83
+      ],
+      [
+        "Q1 FY26",
+        25.962
+      ],
+      [
+        "Q2 FY26",
+        26.204
+      ],
+      [
+        "Q3 FY26 reported",
+        27.816
+      ]
+    ],
+    "fy2025_10k_broader_backlog_bn": 39.7,
+    "fy2025_rupo_bn": 19.7,
+    "treatment": "Do not splice quarterly operating backlog with 10-K broader backlog/RUPO; no public bridge."
+  },
+  "cm_risk": {
+    "remaining_p3_design_build_projects": 2,
+    "q3_fy26_project_charge_pretax_m": 337.0,
+    "aggregate_loss_one_project_m": 336.8,
+    "fy26_9m_contract_estimate_revision_net_loss_m": 344.6,
+    "significant_claims_m": 620,
+    "significant_claims_fy25_year_end_m": 400,
+    "significant_claims_q2_fy26_m": 680,
+    "standby_letters_of_credit_m": 403.9,
+    "surety_performance_bonds_bn": 1.0,
+    "fy27_h1_cash_burden_indication_bn": 0.5,
+    "project_a_target": "FY2027 Q2 substantial completion",
+    "project_b_target": "FY2027 Q1 Phase 1 substantial completion",
+    "potential_liability": "cannot be reasonably estimated",
+    "base_claims_recovery_m": 0
+  },
+  "operating_forecast": [
+    {
+      "fy": "FY2026E",
+      "nsr_m": 7675,
+      "nsr_growth_pct": null,
+      "adj_ebitda_margin_pct": 17.4,
+      "adj_ebitda_m": 1335,
+      "adj_eps": 6.0,
+      "fcf_m": 300,
+      "diluted_shares_m": 130,
+      "notes": "EPS normalized ex-CM-charge midpoint; FCF reported guidance"
+    },
+    {
+      "fy": "FY2027E",
+      "nsr_m": 8030,
+      "nsr_growth_pct": 4.6,
+      "adj_ebitda_margin_pct": 18.0,
+      "adj_ebitda_m": 1445,
+      "adj_eps": 6.4,
+      "fcf_m": 400,
+      "diluted_shares_m": 130
+    },
+    {
+      "fy": "FY2028E",
+      "nsr_m": 8500,
+      "nsr_growth_pct": 5.9,
+      "adj_ebitda_margin_pct": 19.3,
+      "adj_ebitda_m": 1641,
+      "adj_eps": 7.6,
+      "fcf_m": 850,
+      "diluted_shares_m": 127
+    },
+    {
+      "fy": "FY2029E",
+      "nsr_m": 8970,
+      "nsr_growth_pct": 5.5,
+      "adj_ebitda_margin_pct": 20.2,
+      "adj_ebitda_m": 1812,
+      "adj_eps": 9.1,
+      "fcf_m": 1000,
+      "diluted_shares_m": 124
+    }
+  ],
+  "kpis": [
+    {
+      "name": "Design book-to-burn",
+      "history": [
+        {
+          "period": "Q3 FY26",
+          "value": 1.6
+        }
+      ],
+      "current": 1.6,
+      "thresholds": {
+        "green": ">1.2x",
+        "yellow": "1.0-1.2x",
+        "red": "<1.0x for 2 quarters"
+      },
+      "meaning": "신규수요와 점유율"
+    },
+    {
+      "name": "Operating backlog growth",
+      "history": [
+        {
+          "period": "Q3 FY26 YoY",
+          "value_pct": 13.0
+        }
+      ],
+      "current": 13.0,
+      "thresholds": {
+        "green": ">5% YoY",
+        "yellow": "0-5%",
+        "red": "decline"
+      },
+      "meaning": "future NSR base"
+    },
+    {
+      "name": "Ex-charge EBITDA margin",
+      "history": [
+        {
+          "period": "Q3 FY26",
+          "value_pct": 17.0
+        }
+      ],
+      "current": 17.0,
+      "thresholds": {
+        "green": "≥17.5% and rising",
+        "yellow": "16.5-17.5%",
+        "red": "<16.5% sustained"
+      },
+      "meaning": "AI/Advisory/ECC leverage"
+    },
+    {
+      "name": "P3 project completion",
+      "history": [],
+      "current": "Project B FY27 Q1 / Project A FY27 Q2 targets",
+      "thresholds": {
+        "green": "targets maintained",
+        "yellow": "1Q delay",
+        "red": "delay into FY27 H2+"
+      },
+      "meaning": "tail duration"
+    },
+    {
+      "name": "New project charges",
+      "history": [
+        {
+          "period": "Q3 FY26",
+          "value_m": 336.8
+        }
+      ],
+      "current": "known project charge recognized",
+      "thresholds": {
+        "green": "none",
+        "yellow": "small revision within known two",
+        "red": "material loss outside known two"
+      },
+      "meaning": "risk policy validation"
+    },
+    {
+      "name": "FY27 H1 project cash burden",
+      "history": [],
+      "current": "~$0.5bn management indication",
+      "thresholds": {
+        "green": "≤~$0.5bn",
+        "yellow": "$0.5-0.6bn",
+        "red": ">$0.6bn / rising"
+      },
+      "meaning": "liquidity/buyback drag"
+    },
+    {
+      "name": "Significant claims",
+      "history": [
+        {
+          "period": "FY25 year-end",
+          "value_m": 400
+        },
+        {
+          "period": "Q2 FY26",
+          "value_m": 680
+        },
+        {
+          "period": "Q3 FY26",
+          "value_m": 620
+        }
+      ],
+      "current": 620,
+      "thresholds": {
+        "green": "stable/down",
+        "yellow": "~$600m range",
+        "red": "re-acceleration + new exposure"
+      },
+      "meaning": "recovery uncertainty"
+    },
+    {
+      "name": "Net leverage",
+      "history": [
+        {
+          "period": "Q3 FY26",
+          "value_x": 1.5
+        }
+      ],
+      "current": 1.5,
+      "thresholds": {
+        "green": "≤1.5x",
+        "yellow": "1.5-2.0x",
+        "red": ">2.0x"
+      },
+      "meaning": "capital return capacity"
+    },
+    {
+      "name": "FCF conversion post-P3",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": "100%+",
+        "yellow": "70-100%",
+        "red": "<70%"
+      },
+      "meaning": "earnings quality"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.3,
+      "fy2027_eps": 5.0,
+      "forward_pe": 10.5,
+      "per_share_value": 52.5,
+      "revenue_path": [],
+      "margin_path": [],
+      "fcf": [],
+      "diluted_shares": 130,
+      "thesis": "추가 material charge 또는 cash drag 확대, margin 신뢰 붕괴, buyback 장기 중단"
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "fy2027_eps": 6.4,
+      "forward_pe": 15.0,
+      "per_share_value": 96.0,
+      "revenue_path": [
+        8030,
+        8500,
+        8970
+      ],
+      "margin_path": [
+        18.0,
+        19.3,
+        20.2
+      ],
+      "fcf": [
+        400,
+        850,
+        1000
+      ],
+      "diluted_shares": 130,
+      "thesis": "두 P3가 FY2027 상반기 내 실질 종료, claims 회수 0, design 약 5% 성장, margin 18% 접근"
+    },
+    {
+      "name": "Bull",
+      "probability": 0.2,
+      "fy2027_eps": 6.8,
+      "forward_pe": 18.0,
+      "per_share_value": 122.4,
+      "revenue_path": [],
+      "margin_path": [],
+      "fcf": [],
+      "diluted_shares": 126,
+      "thesis": "P3 종료 확증 + strong design conversion + 20% margin 경로 신뢰 회복"
+    }
+  ],
+  "valuation": {
+    "mode": "C - Mature Compounder with retained CM project-risk overlay",
+    "core": "normalized design/advisory/program-management earnings power",
+    "execution": "AI/Advisory/ECC reflected only through margin progression",
+    "ecosystem": 0,
+    "drag": "two P3 cash/loss uncertainty; claims recovery zero in base",
+    "current_price": 69.17,
+    "annual_dividend": 1.24,
+    "weighted_price": 88.23,
+    "expected_value_incl_dividend": 89.47,
+    "expected_irr_pct": 29.3,
+    "upside_downside_ratio": 3.19,
+    "buy_zone_ud_gt_2_price": 75.8,
+    "12pct_hurdle_entry": 79.88,
+    "15pct_hurdle_entry": 77.8,
+    "dcf": {
+      "method": "FCFE",
+      "fcfe_m": [
+        400,
+        850,
+        1000,
+        1100,
+        1180
+      ],
+      "years": [
+        "FY2027",
+        "FY2028",
+        "FY2029",
+        "FY2030",
+        "FY2031"
+      ],
+      "cost_of_equity_pct": 11.0,
+      "terminal_growth_pct": 3.0,
+      "shares_m": 130,
+      "base_per_share": 94.02,
+      "sensitivity_range_per_share": [
+        84,
+        106
+      ]
+    },
+    "peer_forward_pe": [
+      {
+        "company": "AECOM",
+        "ticker": "ACM",
+        "forward_pe": 11.3
+      },
+      {
+        "company": "Arcadis",
+        "ticker": "ARCAD",
+        "forward_pe": 13.0
+      },
+      {
+        "company": "WSP Global",
+        "ticker": "WSP",
+        "forward_pe": 15.4
+      },
+      {
+        "company": "Stantec",
+        "ticker": "STN",
+        "forward_pe": 15.85,
+        "range": "15.7-16.0"
+      },
+      {
+        "company": "Jacobs",
+        "ticker": "J",
+        "forward_pe": 19.0
+      },
+      {
+        "company": "Tetra Tech",
+        "ticker": "TTEK",
+        "forward_pe": 21.6
+      }
+    ],
+    "historical_acm_forward_pe": {
+      "FY2021": 20.26,
+      "FY2022": 19.35,
+      "FY2023": 20.11,
+      "FY2024": 21.23,
+      "FY2025": 23.83
+    }
+  },
+  "reverse_expectations": {
+    "current_price_over_base_fy27_eps_pe": 10.8,
+    "at_13x_required_eps": 5.32,
+    "at_13x_impairment_vs_base_pct": -17.0,
+    "at_15x_required_eps": 4.61,
+    "at_15x_impairment_vs_base_pct": -28.0,
+    "interpretation": "Market prices either persistent 10-11x multiple or roughly 17-28% FY2027 earnings impairment."
+  },
+  "consensus": {
+    "price_target": {
+      "average": 86.92,
+      "median": 87.5,
+      "low": 65,
+      "high": 106
+    },
+    "ratings_snapshot": {
+      "strong_buy": 9,
+      "buy": 2,
+      "hold": 2
+    },
+    "short_interest": {
+      "date": "2026-08-14",
+      "shares_m": 5.12,
+      "float_pct": 4.0,
+      "days_to_cover": 2.1
+    },
+    "revision_trend": "post-Q3 price targets cut sharply; broad Buy bias remains"
+  },
+  "stance": {
+    "zone": "BUY ZONE / 단계적 비중 확대",
+    "price_bands": [
+      {
+        "min": null,
+        "max": 75.8,
+        "label": "Buy zone",
+        "action": "단계적 비중 확대",
+        "logic": "U/D > 2.0"
+      },
+      {
+        "min": 75.8,
+        "max": 80.0,
+        "label": "조건부 매수",
+        "action": "선별적 추가",
+        "logic": "기대수익 허들 통과, event-risk 여유 축소"
+      },
+      {
+        "min": 80.0,
+        "max": 90.0,
+        "label": "관망/보유",
+        "action": "추가 확인",
+        "logic": "P3 종료 증거 필요"
+      },
+      {
+        "min": 90.0,
+        "max": 105.0,
+        "label": "증거 요구",
+        "action": "보유 중심",
+        "logic": "P3 closure + 18%+ margin 진전 필요"
+      },
+      {
+        "min": 105.0,
+        "max": null,
+        "label": "축소 검토",
+        "action": "비중 축소 가능",
+        "logic": "20% margin 또는 빠른 FCF 정상화 미확인 시"
+      }
+    ],
+    "horizon": "12 months",
+    "position_sizing": "stage position as P3 completion and cash normalization are verified"
+  },
+  "catalysts": [
+    {
+      "when": "2026-09-30 전후",
+      "event": "미국 surface transportation authorization",
+      "sensitivity": "재승인/단기연장/지연에 따른 FY2027 이후 project formation"
+    },
+    {
+      "when": "FY2026 Q4 / 2026-11 예상",
+      "event": "FY2026 full-year results",
+      "sensitivity": "FY2027 guidance, project cash profile, design margin"
+    },
+    {
+      "when": "FY2027 Q1 / 2027-02 전후",
+      "event": "Project B Phase 1 completion checkpoint",
+      "sensitivity": "FY2027 상반기 cash burden 초기 실현치"
+    },
+    {
+      "when": "FY2027 Q2 / 2027-05 전후",
+      "event": "Project A substantial completion target",
+      "sensitivity": "multiple discount 축소의 핵심 milestone"
+    },
+    {
+      "when": "FY2027 하반기",
+      "event": "post-P3 cash normalization",
+      "sensitivity": "FCF conversion 및 buyback 정상화"
+    }
+  ],
+  "falsification_conditions": [
+    "material loss outside known two P3 projects",
+    "Project A/B completion materially beyond FY2027 H1 with cash burden >$0.6bn",
+    "design book-to-burn <1x and backlog declines",
+    "post-P3 ex-charge margin stuck in 16% range with weak FCF conversion",
+    "net leverage >2x with structurally suspended buyback"
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "promise": "industry structure B1-B5",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1"
+    },
+    {
+      "rc_id": "RC-002",
+      "promise": "demand / leading indicators",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1.2"
+    },
+    {
+      "rc_id": "RC-003",
+      "promise": "backlog / RUPO definitions",
+      "status": "CONTRADICTED",
+      "h3_locator": "Ch.4.3"
+    },
+    {
+      "rc_id": "RC-004",
+      "promise": "CM charge / two P3 risk",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1.5, Ch.4"
+    },
+    {
+      "rc_id": "RC-005",
+      "promise": "CM strategic review / management risk policy",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2.2"
+    },
+    {
+      "rc_id": "RC-006",
+      "promise": "segment / CM economics",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.3.1"
+    },
+    {
+      "rc_id": "RC-007",
+      "promise": "AI / Advisory / ECC economics",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.1.3, Ch.3.2-3.3"
+    },
+    {
+      "rc_id": "RC-008",
+      "promise": "customers / contracts / adoption",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.4"
+    },
+    {
+      "rc_id": "RC-009",
+      "promise": "customer-job competition",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.5"
+    },
+    {
+      "rc_id": "RC-010",
+      "promise": "3Y + latest 8Q + accounting",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4"
+    },
+    {
+      "rc_id": "RC-011",
+      "promise": "debt / dilution / capital returns",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2.3, Ch.4.6, Ch.5"
+    },
+    {
+      "rc_id": "RC-012",
+      "promise": "talent / capacity / regulation",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.1.3, Ch.6"
+    },
+    {
+      "rc_id": "RC-013",
+      "promise": "management target history",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2, Ch.5"
+    },
+    {
+      "rc_id": "RC-014",
+      "promise": "consensus / revisions / positioning",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.0, Ch.5"
+    },
+    {
+      "rc_id": "RC-015",
+      "promise": "Mode C scenarios / reverse / bands",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5"
+    }
+  ],
+  "module_ledger": {
+    "A": "company/segment economics",
+    "B": "industry structure B1-B5",
+    "C": "management/track record",
+    "D": "customers/contracts/adoption",
+    "E": "competition/customer job",
+    "F": "financials/accounting quality",
+    "G": "capital structure/dilution",
+    "H": "management targets",
+    "I": "market expectations/positioning",
+    "J": "valuation scenarios",
+    "K": "reverse expectations",
+    "L": "stance/monitoring",
+    "M": "market expectations/consensus/positioning"
+  },
+  "source_registry": [
+    {
+      "id": "S01",
+      "name": "AECOM Q3 FY2026 Results",
+      "type": "primary",
+      "url": "https://investors.aecom.com/news-releases/news-release-details/aecom-reports-third-quarter-fiscal-2026-results"
+    },
+    {
+      "id": "S02",
+      "name": "AECOM Q3 FY2026 10-Q",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/868857/000086885726000021/0000868857-26-000021-index-headers.html"
+    },
+    {
+      "id": "S03",
+      "name": "AECOM FY2025 10-K",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/868857/000086885725000013/acm-20250930.htm"
+    },
+    {
+      "id": "S04",
+      "name": "AECOM Q1 FY2026 Results / CM Retention",
+      "type": "primary",
+      "url": "https://investors.aecom.com/news-releases/news-release-details/aecom-reports-first-quarter-fiscal-2026-results"
+    },
+    {
+      "id": "S05",
+      "name": "AECOM Q2 FY2026 Results",
+      "type": "primary",
+      "url": "https://investors.aecom.com/news-releases/news-release-details/aecom-reports-second-quarter-fiscal-2026-results"
+    },
+    {
+      "id": "S06",
+      "name": "AECOM FY2025 Results",
+      "type": "primary",
+      "url": "https://investors.aecom.com/news-releases/news-release-details/aecom-reports-fourth-quarter-and-full-year-fiscal-2025-results"
+    },
+    {
+      "id": "S07",
+      "name": "AECOM FY2024 Results",
+      "type": "primary",
+      "url": "https://investors.aecom.com/news-releases/news-release-details/aecom-reports-fourth-quarter-and-full-year-fiscal-2024-results"
+    },
+    {
+      "id": "S08",
+      "name": "AECOM FY2023 Results",
+      "type": "primary",
+      "url": "https://investors.aecom.com/news-releases/news-release-details/aecom-reports-fourth-quarter-and-full-year-fiscal-2023-results"
+    },
+    {
+      "id": "S09",
+      "name": "AECOM 2025 Investor Day Targets",
+      "type": "primary",
+      "url": "https://investors.aecom.com/news-releases/news-release-details/aecom-announces-increased-financial-targets-built-further"
+    },
+    {
+      "id": "S10",
+      "name": "AECOM Quarterly Results / Transcripts",
+      "type": "primary",
+      "url": "https://investors.aecom.com/node/5986"
+    },
+    {
+      "id": "S11",
+      "name": "AECOM SEC Filings",
+      "type": "primary",
+      "url": "https://investors.aecom.com/financial-information/sec-filings"
+    },
+    {
+      "id": "S12",
+      "name": "AECOM / Shimmick Schedule 13D/A",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/1887944/000110465926094873/0001104659-26-094873-index.htm"
+    },
+    {
+      "id": "S13",
+      "name": "FHWA IIJA Program Reference",
+      "type": "primary_government",
+      "url": "https://www.fhwa.dot.gov/bipartisan-infrastructure-law/"
+    },
+    {
+      "id": "S14",
+      "name": "AECOM Market Snapshot",
+      "type": "secondary_market",
+      "url": "https://stockanalysis.com/stocks/acm/"
+    },
+    {
+      "id": "S15",
+      "name": "AECOM Consensus Forecasts",
+      "type": "secondary_market",
+      "url": "https://stockanalysis.com/stocks/acm/forecast/"
+    },
+    {
+      "id": "S16",
+      "name": "Jacobs Valuation Reference",
+      "type": "secondary_market",
+      "url": "https://stockanalysis.com/stocks/j/financials/ratios/"
+    },
+    {
+      "id": "S17",
+      "name": "Tetra Tech Valuation Reference",
+      "type": "secondary_market",
+      "url": "https://stockanalysis.com/stocks/ttek/"
+    },
+    {
+      "id": "S18",
+      "name": "Stantec Valuation Reference",
+      "type": "secondary_market",
+      "url": "https://stockanalysis.com/quote/tsx/STN/"
+    },
+    {
+      "id": "S19",
+      "name": "WSP Valuation Reference",
+      "type": "secondary_market",
+      "url": "https://stockanalysis.com/quote/tsx/WSP/"
+    },
+    {
+      "id": "S20",
+      "name": "Arcadis Valuation Reference",
+      "type": "secondary_market",
+      "url": "https://stockanalysis.com/quote/ams/ARCAD/financials/ratios/"
+    },
+    {
+      "id": "S21",
+      "name": "SEC Form 4 - Troy Rudd Purchase",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/1653811/000165381126000002/xslF345X03/wk-form4_1778788962.xml"
+    }
+  ],
+  "visual_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "Operating backlog 추세",
+      "authoritative_source_block": "financials.quarterly_8q_plus_ex_charge",
+      "source_values": [
+        {
+          "q": "Q4 FY24",
+          "v": 23.863
+        },
+        {
+          "q": "Q1 FY25",
+          "v": 23.877
+        },
+        {
+          "q": "Q2 FY25",
+          "v": 24.269
+        },
+        {
+          "q": "Q3 FY25",
+          "v": 24.588
+        },
+        {
+          "q": "Q4 FY25",
+          "v": 24.83
+        },
+        {
+          "q": "Q1 FY26",
+          "v": 25.962
+        },
+        {
+          "q": "Q2 FY26",
+          "v": 26.204
+        },
+        {
+          "q": "Q3 FY26 reported",
+          "v": 27.816
+        }
+      ],
+      "source_version_or_hash": "7b34a19cadd1426d",
+      "display_values": [
+        {
+          "q": "Q4 FY24",
+          "v": 23.863
+        },
+        {
+          "q": "Q1 FY25",
+          "v": 23.877
+        },
+        {
+          "q": "Q2 FY25",
+          "v": 24.269
+        },
+        {
+          "q": "Q3 FY25",
+          "v": 24.588
+        },
+        {
+          "q": "Q4 FY25",
+          "v": 24.83
+        },
+        {
+          "q": "Q1 FY26",
+          "v": 25.962
+        },
+        {
+          "q": "Q2 FY26",
+          "v": 26.204
+        },
+        {
+          "q": "Q3 FY26 reported",
+          "v": 27.816
+        }
+      ],
+      "narrative_locator": "Ch.1.2 / Ch.4.2",
+      "table_locator": "Ch.4.2",
+      "caption_locator": "VIS-001",
+      "rendered_asset_locator": "inline SVG in ACM_DEEP_DIVE.html / ACM_DEEP_DIVE.pdf"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "3년 NSR·Adjusted EBITDA·FCF",
+      "authoritative_source_block": "financials.annual_3y",
+      "source_values": [
+        {
+          "fy": "FY2023",
+          "nsr_m": 6703,
+          "adj_ebitda_m": 964,
+          "fcf_m": 591
+        },
+        {
+          "fy": "FY2024",
+          "nsr_m": 7165,
+          "adj_ebitda_m": 1095,
+          "fcf_m": 708
+        },
+        {
+          "fy": "FY2025",
+          "nsr_m": 7573,
+          "adj_ebitda_m": 1203,
+          "fcf_m": 685
+        }
+      ],
+      "source_version_or_hash": "7005799f3297710f",
+      "display_values": [
+        {
+          "fy": "FY2023",
+          "nsr_m": 6703,
+          "adj_ebitda_m": 964,
+          "fcf_m": 591
+        },
+        {
+          "fy": "FY2024",
+          "nsr_m": 7165,
+          "adj_ebitda_m": 1095,
+          "fcf_m": 708
+        },
+        {
+          "fy": "FY2025",
+          "nsr_m": 7573,
+          "adj_ebitda_m": 1203,
+          "fcf_m": 685
+        }
+      ],
+      "narrative_locator": "Ch.4.1",
+      "table_locator": "Ch.4.1",
+      "caption_locator": "VIS-002",
+      "rendered_asset_locator": "inline SVG in ACM_DEEP_DIVE.html / ACM_DEEP_DIVE.pdf"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "Q3 FY26 reported vs ex-charge",
+      "authoritative_source_block": "financials.quarterly_8q_plus_ex_charge",
+      "source_values": [
+        {
+          "basis": "reported",
+          "nsr_bn": 1.609,
+          "adj_ebitda_m": -8,
+          "margin_pct": -0.3,
+          "adj_eps": -0.5
+        },
+        {
+          "basis": "supplemental_ex_charge",
+          "nsr_bn": 1.946,
+          "adj_ebitda_m": 329,
+          "margin_pct": 17.0,
+          "adj_eps": 1.49
+        }
+      ],
+      "source_version_or_hash": "6ee269d8dacd9cd6",
+      "display_values": [
+        {
+          "basis": "reported",
+          "nsr_bn": 1.609,
+          "adj_ebitda_m": -8,
+          "margin_pct": -0.3,
+          "adj_eps": -0.5
+        },
+        {
+          "basis": "supplemental_ex_charge",
+          "nsr_bn": 1.946,
+          "adj_ebitda_m": 329,
+          "margin_pct": 17.0,
+          "adj_eps": 1.49
+        }
+      ],
+      "narrative_locator": "Ch.0 / Ch.4.2",
+      "table_locator": "Ch.4.2",
+      "caption_locator": "VIS-003",
+      "rendered_asset_locator": "inline SVG in ACM_DEEP_DIVE.html / ACM_DEEP_DIVE.pdf"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "Peer forward P/E",
+      "authoritative_source_block": "valuation.peer_forward_pe",
+      "source_values": [
+        {
+          "company": "AECOM",
+          "ticker": "ACM",
+          "forward_pe": 11.3
+        },
+        {
+          "company": "Arcadis",
+          "ticker": "ARCAD",
+          "forward_pe": 13.0
+        },
+        {
+          "company": "WSP Global",
+          "ticker": "WSP",
+          "forward_pe": 15.4
+        },
+        {
+          "company": "Stantec",
+          "ticker": "STN",
+          "forward_pe": 15.85,
+          "range": "15.7-16.0"
+        },
+        {
+          "company": "Jacobs",
+          "ticker": "J",
+          "forward_pe": 19.0
+        },
+        {
+          "company": "Tetra Tech",
+          "ticker": "TTEK",
+          "forward_pe": 21.6
+        }
+      ],
+      "source_version_or_hash": "d3a9629a453756d3",
+      "display_values": [
+        {
+          "company": "AECOM",
+          "ticker": "ACM",
+          "forward_pe": 11.3
+        },
+        {
+          "company": "Arcadis",
+          "ticker": "ARCAD",
+          "forward_pe": 13.0
+        },
+        {
+          "company": "WSP Global",
+          "ticker": "WSP",
+          "forward_pe": 15.4
+        },
+        {
+          "company": "Stantec",
+          "ticker": "STN",
+          "forward_pe": 15.85,
+          "range": "15.7-16.0"
+        },
+        {
+          "company": "Jacobs",
+          "ticker": "J",
+          "forward_pe": 19.0
+        },
+        {
+          "company": "Tetra Tech",
+          "ticker": "TTEK",
+          "forward_pe": 21.6
+        }
+      ],
+      "narrative_locator": "Ch.3.5 / Ch.5.5",
+      "table_locator": "Ch.5.5",
+      "caption_locator": "VIS-004",
+      "rendered_asset_locator": "inline SVG in ACM_DEEP_DIVE.html / ACM_DEEP_DIVE.pdf"
+    },
+    {
+      "vis_id": "VIS-005",
+      "figure_title": "Scenario 12개월 주가",
+      "authoritative_source_block": "scenarios",
+      "source_values": [
+        {
+          "name": "Bear",
+          "p": 0.3,
+          "value": 52.5
+        },
+        {
+          "name": "Base",
+          "p": 0.5,
+          "value": 96.0
+        },
+        {
+          "name": "Bull",
+          "p": 0.2,
+          "value": 122.4
+        }
+      ],
+      "source_version_or_hash": "bfe5746249f6dc80",
+      "display_values": {
+        "current_price": 69.17,
+        "weighted_price": 88.23,
+        "scenarios": [
+          {
+            "name": "Bear",
+            "value": 52.5
+          },
+          {
+            "name": "Base",
+            "value": 96.0
+          },
+          {
+            "name": "Bull",
+            "value": 122.4
+          }
+        ]
+      },
+      "narrative_locator": "Ch.5.3",
+      "table_locator": "Ch.5.3",
+      "caption_locator": "VIS-005",
+      "rendered_asset_locator": "inline SVG in ACM_DEEP_DIVE.html / ACM_DEEP_DIVE.pdf"
+    },
+    {
+      "vis_id": "VIS-006",
+      "figure_title": "Base margin·EPS bridge",
+      "authoritative_source_block": "operating_forecast",
+      "source_values": [
+        {
+          "fy": "FY2026E",
+          "margin": 17.4,
+          "eps": 6.0
+        },
+        {
+          "fy": "FY2027E",
+          "margin": 18.0,
+          "eps": 6.4
+        },
+        {
+          "fy": "FY2028E",
+          "margin": 19.3,
+          "eps": 7.6
+        },
+        {
+          "fy": "FY2029E",
+          "margin": 20.2,
+          "eps": 9.1
+        }
+      ],
+      "source_version_or_hash": "6eb7bfdd3885a751",
+      "display_values": [
+        {
+          "fy": "FY2026E",
+          "margin": 17.4,
+          "eps": 6.0
+        },
+        {
+          "fy": "FY2027E",
+          "margin": 18.0,
+          "eps": 6.4
+        },
+        {
+          "fy": "FY2028E",
+          "margin": 19.3,
+          "eps": 7.6
+        },
+        {
+          "fy": "FY2029E",
+          "margin": 20.2,
+          "eps": 9.1
+        }
+      ],
+      "narrative_locator": "Ch.5.2",
+      "table_locator": "Ch.5.2",
+      "caption_locator": "VIS-006",
+      "rendered_asset_locator": "inline SVG in ACM_DEEP_DIVE.html / ACM_DEEP_DIVE.pdf"
+    },
+    {
+      "vis_id": "VIS-007",
+      "figure_title": "가격 밴드",
+      "authoritative_source_block": "stance.price_bands",
+      "source_values": [
+        {
+          "min": null,
+          "max": 75.8,
+          "label": "Buy zone",
+          "action": "단계적 비중 확대",
+          "logic": "U/D > 2.0"
+        },
+        {
+          "min": 75.8,
+          "max": 80.0,
+          "label": "조건부 매수",
+          "action": "선별적 추가",
+          "logic": "기대수익 허들 통과, event-risk 여유 축소"
+        },
+        {
+          "min": 80.0,
+          "max": 90.0,
+          "label": "관망/보유",
+          "action": "추가 확인",
+          "logic": "P3 종료 증거 필요"
+        },
+        {
+          "min": 90.0,
+          "max": 105.0,
+          "label": "증거 요구",
+          "action": "보유 중심",
+          "logic": "P3 closure + 18%+ margin 진전 필요"
+        },
+        {
+          "min": 105.0,
+          "max": null,
+          "label": "축소 검토",
+          "action": "비중 축소 가능",
+          "logic": "20% margin 또는 빠른 FCF 정상화 미확인 시"
+        }
+      ],
+      "source_version_or_hash": "a53dcd008cec64bb",
+      "display_values": {
+        "current_price": 69.17,
+        "bands": [
+          {
+            "min": null,
+            "max": 75.8,
+            "label": "Buy zone",
+            "action": "단계적 비중 확대",
+            "logic": "U/D > 2.0"
+          },
+          {
+            "min": 75.8,
+            "max": 80.0,
+            "label": "조건부 매수",
+            "action": "선별적 추가",
+            "logic": "기대수익 허들 통과, event-risk 여유 축소"
+          },
+          {
+            "min": 80.0,
+            "max": 90.0,
+            "label": "관망/보유",
+            "action": "추가 확인",
+            "logic": "P3 종료 증거 필요"
+          },
+          {
+            "min": 90.0,
+            "max": 105.0,
+            "label": "증거 요구",
+            "action": "보유 중심",
+            "logic": "P3 closure + 18%+ margin 진전 필요"
+          },
+          {
+            "min": 105.0,
+            "max": null,
+            "label": "축소 검토",
+            "action": "비중 축소 가능",
+            "logic": "20% margin 또는 빠른 FCF 정상화 미확인 시"
+          }
+        ]
+      },
+      "narrative_locator": "Ch.5.7",
+      "table_locator": "Ch.5.7",
+      "caption_locator": "VIS-007",
+      "rendered_asset_locator": "inline SVG in ACM_DEEP_DIVE.html / ACM_DEEP_DIVE.pdf"
+    }
+  ],
+  "audits": {
+    "rc_unresolved": 0,
+    "data_pack_report_parity": "PASS",
+    "published_top_level_schema_match": "PASS",
+    "latest_filing_check": "PASS",
+    "claims_recovery_base_zero": true,
+    "backlog_series_spliced": false
+  }
+}

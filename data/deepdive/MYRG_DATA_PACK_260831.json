@@ -1,0 +1,832 @@
+{
+  "meta": {
+    "ticker": "MYRG",
+    "company": "MYR Group Inc.",
+    "T0": "2026-08-28",
+    "price_asof": "2026-08-28 close",
+    "filing_asof": "2026-08-07 Form 8-K; latest periodic Q2 2026 10-Q filed 2026-07-29",
+    "consensus_asof": "2026-08-31",
+    "version": "Clean DDOS Production OS v1.7",
+    "currency": "USD",
+    "current_price": 294.42,
+    "market_cap_b": 4.58,
+    "pro_forma_ev_b": 4.78
+  },
+  "financials": {
+    "annual_3y": {
+      "2023": {
+        "revenue_m": 3643.905,
+        "gross_profit_m": 364.397,
+        "gross_margin_pct": 10.0,
+        "operating_income_m": 129.093,
+        "operating_margin_pct": 3.54,
+        "net_income_m": 90.99,
+        "diluted_eps": 5.4,
+        "diluted_shares_m": 16.837,
+        "cfo_m": 71.016,
+        "capex_m": 84.736,
+        "fcf_m": -13.72,
+        "ebitda_m": 188.193,
+        "roic_pct": 16.09,
+        "sbc_m": 8.376,
+        "estimate_change_gm_pp": -1.7,
+        "mechanical_adj_gm_pct": 11.7
+      },
+      "2024": {
+        "revenue_m": 3362.29,
+        "gross_profit_m": 290.319,
+        "gross_margin_pct": 8.63,
+        "operating_income_m": 54.082,
+        "operating_margin_pct": 1.61,
+        "net_income_m": 30.263,
+        "diluted_eps": 1.83,
+        "diluted_shares_m": 16.526,
+        "cfo_m": 87.115,
+        "capex_m": 75.938,
+        "fcf_m": 11.177,
+        "ebitda_m": 117.792,
+        "roic_pct": 5.61,
+        "sbc_m": 8.532,
+        "estimate_change_gm_pp": -4.4,
+        "mechanical_adj_gm_pct": 13.03
+      },
+      "2025": {
+        "revenue_m": 3657.889,
+        "gross_profit_m": 423.786,
+        "gross_margin_pct": 11.59,
+        "operating_income_m": 166.872,
+        "operating_margin_pct": 4.56,
+        "net_income_m": 118.416,
+        "diluted_eps": 7.53,
+        "diluted_shares_m": 15.729,
+        "cfo_m": 326.567,
+        "capex_m": 94.372,
+        "fcf_m": 232.195,
+        "ebitda_m": 232.721,
+        "roic_pct": 20.24,
+        "sbc_m": 14.832,
+        "estimate_change_gm_pp": -1.4,
+        "mechanical_adj_gm_pct": 12.99
+      }
+    },
+    "quarterly_8q": [
+      {
+        "quarter": "Q3 2024",
+        "revenue_m": 888.0,
+        "gross_profit_m": 77.3,
+        "gross_margin_pct": 8.7,
+        "net_income_m": 10.6,
+        "eps": 0.65,
+        "ebitda_m": 37.2,
+        "backlog_b": 2.6,
+        "td_revenue_m": 481.9,
+        "ci_revenue_m": 406.2,
+        "estimate_change_gm_pp": -3.9,
+        "mechanical_adj_gm_pct": 12.6
+      },
+      {
+        "quarter": "Q4 2024",
+        "revenue_m": 829.8,
+        "gross_profit_m": 85.9,
+        "gross_margin_pct": 10.35,
+        "net_income_m": 16.0,
+        "eps": 0.99,
+        "ebitda_m": 45.5,
+        "backlog_b": 2.58,
+        "td_revenue_m": 450.0,
+        "ci_revenue_m": 379.8,
+        "estimate_change_gm_pp": -2.9,
+        "mechanical_adj_gm_pct": 13.25
+      },
+      {
+        "quarter": "Q1 2025",
+        "revenue_m": 833.6,
+        "gross_profit_m": 96.9,
+        "gross_margin_pct": 11.62,
+        "net_income_m": 23.3,
+        "eps": 1.45,
+        "ebitda_m": 50.2,
+        "backlog_b": 2.64,
+        "td_revenue_m": 461.8,
+        "ci_revenue_m": 371.9,
+        "estimate_change_gm_pp": -1.1,
+        "mechanical_adj_gm_pct": 12.72
+      },
+      {
+        "quarter": "Q2 2025",
+        "revenue_m": 900.325,
+        "gross_profit_m": 103.7,
+        "gross_margin_pct": 11.52,
+        "net_income_m": 26.5,
+        "eps": 1.7,
+        "ebitda_m": 55.6,
+        "backlog_b": 2.64,
+        "td_revenue_m": 506.273,
+        "ci_revenue_m": 394.052,
+        "estimate_change_gm_pp": -1.0,
+        "mechanical_adj_gm_pct": 12.52
+      },
+      {
+        "quarter": "Q3 2025",
+        "revenue_m": 950.4,
+        "gross_profit_m": 111.9,
+        "gross_margin_pct": 11.77,
+        "net_income_m": 32.1,
+        "eps": 2.05,
+        "ebitda_m": 62.7,
+        "backlog_b": 2.66,
+        "td_revenue_m": 503.4,
+        "ci_revenue_m": 447.0,
+        "estimate_change_gm_pp": -0.6,
+        "mechanical_adj_gm_pct": 12.37
+      },
+      {
+        "quarter": "Q4 2025",
+        "revenue_m": 973.5,
+        "gross_profit_m": 111.3,
+        "gross_margin_pct": 11.43,
+        "net_income_m": 36.5,
+        "eps": 2.33,
+        "ebitda_m": 64.2,
+        "backlog_b": 2.82,
+        "td_revenue_m": 530.9,
+        "ci_revenue_m": 442.6,
+        "estimate_change_gm_pp": -2.0,
+        "mechanical_adj_gm_pct": 13.43
+      },
+      {
+        "quarter": "Q1 2026",
+        "revenue_m": 1000.38,
+        "gross_profit_m": 134.44,
+        "gross_margin_pct": 13.44,
+        "net_income_m": 46.8,
+        "eps": 2.99,
+        "ebitda_m": 81.537,
+        "backlog_b": 2.84,
+        "td_revenue_m": 541.0,
+        "ci_revenue_m": 459.4,
+        "estimate_change_gm_pp": 0.8,
+        "mechanical_adj_gm_pct": 12.64
+      },
+      {
+        "quarter": "Q2 2026",
+        "revenue_m": 1081.727,
+        "gross_profit_m": 142.673,
+        "gross_margin_pct": 13.19,
+        "net_income_m": 49.9,
+        "eps": 3.17,
+        "ebitda_m": 84.979,
+        "backlog_b": 3.16,
+        "td_revenue_m": 524.022,
+        "ci_revenue_m": 557.705,
+        "estimate_change_gm_pp": 0.9,
+        "mechanical_adj_gm_pct": 12.29
+      }
+    ],
+    "h1_2026": {
+      "revenue_m": 2082.107,
+      "gross_margin_pct": 13.3,
+      "estimate_change_gm_pp": 0.7,
+      "net_income_m": 96.651,
+      "eps": 6.15,
+      "ebitda_m": 166.516,
+      "cfo_m": 88.074,
+      "capex_m": 45.048,
+      "fcf_m": 43.026
+    },
+    "ceilings": [
+      "Exact data-center revenue/backlog/EBIT share not disclosed.",
+      "Valley/Comet acquired EBITDA/EBIT margin/working capital/PPA/ROIC not disclosed before first post-close filing.",
+      "Exact post-close EV unavailable until post-acquisition balance sheet; report uses analytical pro-forma bridge."
+    ]
+  },
+  "segments": {
+    "q2_2026": {
+      "td": {
+        "revenue_m": 524.022,
+        "operating_income_m": 49.513,
+        "operating_margin_pct": 9.4,
+        "estimate_change_margin_pp": 0.7,
+        "mechanical_adj_margin_pct": 8.7,
+        "fixed_price_pct": 30.3,
+        "unit_price_pct": 39.8,
+        "time_equipment_pct": 29.9,
+        "backlog_b": 1.27
+      },
+      "ci": {
+        "revenue_m": 557.705,
+        "operating_income_m": 47.289,
+        "operating_margin_pct": 8.5,
+        "estimate_change_margin_pp": 1.1,
+        "mechanical_adj_margin_pct": 7.4,
+        "fixed_price_pct": 87.7,
+        "unit_price_pct": 2.6,
+        "time_equipment_pct": 9.7,
+        "backlog_b": 1.89
+      }
+    }
+  },
+  "balance_sheet": {
+    "2026_06_30_cash_m": 137.872,
+    "2026_06_30_borrowings_m": 9.372,
+    "valley_purchase_price_m": 328.0,
+    "valley_cash_funding_m": 93.0,
+    "valley_revolver_funding_m": 235.0,
+    "post_close_revolver_availability_m": 225.5,
+    "analytical_post_close_cash_m": 44.872,
+    "analytical_post_close_debt_m": 244.372,
+    "analytical_post_close_net_debt_m": 199.5,
+    "facility_weighted_rate_pct_h1_2026": 4.7,
+    "analytical_annual_interest_on_235m_m": 11.045,
+    "contract_assets_2026_06_30_m": 225.053,
+    "contract_liabilities_2026_06_30_m": 245.822,
+    "contract_assets_2025_12_31_m": 241.766,
+    "contract_liabilities_2025_12_31_m": 300.56
+  },
+  "acquisition": {
+    "name": "Valley Holdings / Valley Electric / Comet Electric",
+    "closed": "2026-07-01",
+    "purchase_price_m": 328.0,
+    "historical_combined_revenue_floor_m": 400.0,
+    "after_tax_roic_hurdles": [
+      {
+        "roic_pct": 8.0,
+        "required_after_tax_return_m": 26.24,
+        "required_pretax_ebit_m": 35.7,
+        "required_margin_on_400m_pct": 8.93
+      },
+      {
+        "roic_pct": 10.0,
+        "required_after_tax_return_m": 32.8,
+        "required_pretax_ebit_m": 44.63,
+        "required_margin_on_400m_pct": 11.16
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "name": "Estimate-change impact on gross margin",
+      "history": [
+        {
+          "period": "Q3 2024",
+          "value": -3.9
+        },
+        {
+          "period": "Q4 2024",
+          "value": -2.9
+        },
+        {
+          "period": "Q1 2025",
+          "value": -1.1
+        },
+        {
+          "period": "Q2 2025",
+          "value": -1.0
+        },
+        {
+          "period": "Q3 2025",
+          "value": -0.6
+        },
+        {
+          "period": "Q4 2025",
+          "value": -2.0
+        },
+        {
+          "period": "Q1 2026",
+          "value": 0.8
+        },
+        {
+          "period": "Q2 2026",
+          "value": 0.9
+        }
+      ],
+      "current": 0.9,
+      "thresholds": {
+        "green": ">= -0.5%p",
+        "yellow": "-1.5%p to -0.5%p",
+        "red": "< -1.5%p"
+      }
+    },
+    {
+      "name": "Consolidated EBIT margin",
+      "history": [
+        {
+          "period": "2023",
+          "value": 3.54
+        },
+        {
+          "period": "2024",
+          "value": 1.61
+        },
+        {
+          "period": "2025",
+          "value": 4.56
+        },
+        {
+          "period": "1H26 reported",
+          "value": 6.37
+        },
+        {
+          "period": "1H26 mechanical proxy",
+          "value": 5.67
+        }
+      ],
+      "current": 6.37,
+      "thresholds": {
+        "green": ">=6.0%",
+        "yellow": "5.0%-6.0%",
+        "red": "<5.0%"
+      }
+    },
+    {
+      "name": "C&I operating margin",
+      "history": [
+        {
+          "period": "2024",
+          "value": 3.2
+        },
+        {
+          "period": "2025",
+          "value": 5.9
+        },
+        {
+          "period": "Q2 2026",
+          "value": 8.5
+        }
+      ],
+      "current": 8.5,
+      "thresholds": {
+        "green": ">=7%",
+        "yellow": "5%-7%",
+        "red": "<5%"
+      }
+    },
+    {
+      "name": "Total backlog",
+      "history": [
+        {
+          "period": "Q3 2024",
+          "value": 2.6
+        },
+        {
+          "period": "Q4 2024",
+          "value": 2.58
+        },
+        {
+          "period": "Q1 2025",
+          "value": 2.64
+        },
+        {
+          "period": "Q2 2025",
+          "value": 2.64
+        },
+        {
+          "period": "Q3 2025",
+          "value": 2.66
+        },
+        {
+          "period": "Q4 2025",
+          "value": 2.82
+        },
+        {
+          "period": "Q1 2026",
+          "value": 2.84
+        },
+        {
+          "period": "Q2 2026",
+          "value": 3.16
+        }
+      ],
+      "current": 3.16,
+      "thresholds": {
+        "green": ">= $3.0B with quality maintained",
+        "yellow": "$2.7B-$3.0B",
+        "red": "< $2.7B or sharp cancellations"
+      }
+    },
+    {
+      "name": "TTM CFO / Net income",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": ">=1.0x",
+        "yellow": "0.7x-1.0x",
+        "red": "<0.7x"
+      }
+    },
+    {
+      "name": "Net debt / EBITDA",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": "<1.0x",
+        "yellow": "1.0x-1.5x",
+        "red": ">1.5x"
+      }
+    },
+    {
+      "name": "Valley/Comet EBIT margin",
+      "history": [],
+      "current": null,
+      "thresholds": {
+        "green": ">=9%",
+        "yellow": "6%-9%",
+        "red": "<6%"
+      }
+    },
+    {
+      "name": "Diluted share count",
+      "history": [
+        {
+          "period": "2023",
+          "value": 16.837
+        },
+        {
+          "period": "2024",
+          "value": 16.526
+        },
+        {
+          "period": "2025",
+          "value": 15.729
+        }
+      ],
+      "current": 15.57,
+      "thresholds": {
+        "green": "flat/down YoY",
+        "yellow": "0%-2% YoY increase",
+        "red": ">2% YoY increase"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.2,
+      "revenue_path_b": [
+        4.35,
+        4.7,
+        4.95
+      ],
+      "margin_path_pct": [
+        5.4,
+        4.8,
+        5.0
+      ],
+      "fcf_m": [
+        145,
+        145,
+        165
+      ],
+      "diluted_shares_m": 15.9,
+      "terminal_ev_ebit": 12.0,
+      "terminal_net_debt_m": 100,
+      "per_share_value": 180.0
+    },
+    {
+      "name": "Base",
+      "probability": 0.55,
+      "revenue_path_b": [
+        4.4,
+        5.05,
+        5.55
+      ],
+      "margin_path_pct": [
+        6.0,
+        6.1,
+        6.2
+      ],
+      "fcf_m": [
+        165,
+        215,
+        265
+      ],
+      "diluted_shares_m": 15.55,
+      "terminal_ev_ebit": 15.5,
+      "terminal_net_debt_m": -100,
+      "per_share_value": 350.0
+    },
+    {
+      "name": "Bull",
+      "probability": 0.25,
+      "revenue_path_b": [
+        4.45,
+        5.25,
+        6.0
+      ],
+      "margin_path_pct": [
+        6.3,
+        6.8,
+        7.2
+      ],
+      "fcf_m": [
+        185,
+        270,
+        350
+      ],
+      "diluted_shares_m": 15.35,
+      "terminal_ev_ebit": 18.0,
+      "terminal_net_debt_m": -300,
+      "per_share_value": 525.0
+    }
+  ],
+  "valuation": {
+    "mode": "Mode C - Mature Compounder with project-cycle normalization and reverse-expectations overlay",
+    "core": "2028 normalized EBIT x terminal EV/EBIT, adjusted for terminal net debt/cash and diluted shares",
+    "execution": "Normalize significant estimate-change volatility; do not capitalize Q2 favorable revisions",
+    "ecosystem": "Grid/data-center demand supports workload, not guaranteed margin",
+    "drag": "Fixed-price execution risk, working capital volatility, Valley acquisition uncertainty",
+    "expected_value_2028": 359.75,
+    "expected_irr": 0.089273,
+    "expected_irr_pct": 8.93,
+    "hurdle_rate_pct": 12.0,
+    "hurdle_pv_equivalent": 275.84,
+    "current_price": 294.42,
+    "upside_downside_ratio_bull_bear": 2.02
+  },
+  "reverse_expectations": {
+    "assumptions": {
+      "fy2027_revenue_b": 5.05,
+      "diluted_shares_m": 15.65,
+      "tax_rate_pct": 26.5,
+      "net_interest_m": 12.0,
+      "current_price": 294.42
+    },
+    "required_by_pe": [
+      {
+        "pe_x": 20,
+        "required_eps": 14.72,
+        "required_net_income_m": 230.4,
+        "required_ebit_m": 325.4,
+        "required_ebit_margin_pct": 6.44
+      },
+      {
+        "pe_x": 22,
+        "required_eps": 13.38,
+        "required_net_income_m": 209.4,
+        "required_ebit_m": 297.0,
+        "required_ebit_margin_pct": 5.88
+      },
+      {
+        "pe_x": 24,
+        "required_eps": 12.27,
+        "required_net_income_m": 192.0,
+        "required_ebit_m": 273.2,
+        "required_ebit_margin_pct": 5.41
+      }
+    ],
+    "interpretation": "At 22x FY2027 P/E, current price requires about 5.9% EBIT margin, below public FactSet-derived FY2027 consensus ~6.6%."
+  },
+  "consensus": {
+    "source": "FactSet-derived public aggregation (finanzen.net), secondary evidence",
+    "fy1": {
+      "year": 2026,
+      "revenue_m": 4401.12,
+      "ebit_m": 280.61,
+      "ebit_margin_pct": 6.376,
+      "ebitda_m": 345.91,
+      "net_income_m": 189.63,
+      "eps": 12.2,
+      "fcf_m": 165.1
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_m": 5084.48,
+      "ebit_m": 334.57,
+      "ebit_margin_pct": 6.58,
+      "ebitda_m": 410.38,
+      "net_income_m": 224.97,
+      "eps": 14.45,
+      "fcf_m": 227.68
+    },
+    "fy3": {
+      "year": 2028,
+      "revenue_m": 5662.63,
+      "ebit_m": 411.45,
+      "ebit_margin_pct": 7.266,
+      "ebitda_m": 481.69,
+      "net_income_m": 270.54,
+      "eps": 17.65,
+      "fcf_m": 286.67
+    },
+    "revision_trend": "Post-Q2 2026 consensus remains constructive; target-price revisions have moved lower from peak but earnings estimates embed sustained margin expansion."
+  },
+  "stance": {
+    "zone": "WATCH",
+    "price_bands": {
+      "attractive": "<=260",
+      "conditional_buy": "260-275",
+      "watch": "275-320",
+      "rich": "320-350",
+      "reduce_avoid_without_estimate_upgrades": ">350"
+    },
+    "horizon": "2028-12-31 endpoint (~2.34 years from T0)",
+    "thesis": "Strong structural demand is visible in backlog, but current price offers ~8.9% probability-weighted IRR versus a 12% hurdle; execution and acquisition ROIC remain the scarce variables."
+  },
+  "catalysts": [
+    {
+      "when": "2026-09-07",
+      "event": "DOE Draft National Transmission Needs Study comment period closes",
+      "sensitivity": "Low-Medium"
+    },
+    {
+      "when": "2026-10 late (estimated)",
+      "event": "Q3 2026 results; first full quarter consolidating Valley/Comet",
+      "sensitivity": "Very High"
+    },
+    {
+      "when": "2027-02 to 03 (estimated)",
+      "event": "FY2026 / Q4 results",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2027-04 late (estimated)",
+      "event": "Q1 2027 results",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2027-07 late (estimated)",
+      "event": "Q2 2027 results; ~12-month acquisition scorecard",
+      "sensitivity": "High"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.0, Ch.3"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.1.2, Ch.3.1-3.2"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.3, Ch.3.6"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3.7"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1.4, Ch.4.2-4.4"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4, App.A1-A2"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4.5-4.6"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1.3, Ch.3.1-3.2"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.6.4"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.3.8, Ch.5.5"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5.2, Ch.5.4"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5.3-5.7"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.6.2-6.7"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "name": "MYR Group Q2 2026 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/700923/000070092326000042/myrg-20260630.htm",
+      "tier": 1
+    },
+    {
+      "id": "S2",
+      "name": "MYR Group Q2 2026 results release",
+      "url": "https://investor.myrgroup.com/news-releases/news-release-details/myr-group-inc-announces-second-quarter-and-first-half-2026",
+      "tier": 2
+    },
+    {
+      "id": "S3",
+      "name": "MYR Group 2025 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/700923/000070092326000007/myrg-20251231.htm",
+      "tier": 1
+    },
+    {
+      "id": "S4",
+      "name": "MYR Group Valley/Comet acquisition announcement",
+      "url": "https://investor.myrgroup.com/news-releases/news-release-details/myr-group-enters-definitive-agreement-acquire-valley-electric",
+      "tier": 2
+    },
+    {
+      "id": "S7",
+      "name": "MYR Group investor presentations",
+      "url": "https://investor.myrgroup.com/news-events/presentations",
+      "tier": 2
+    },
+    {
+      "id": "S8",
+      "name": "NERC 2025 Long-Term Reliability Assessment",
+      "url": "https://www.nerc.com/our-work/assessments/long-term-reliability-assessments",
+      "tier": 3
+    },
+    {
+      "id": "S9",
+      "name": "U.S. DOE 2026 Draft National Transmission Needs Study",
+      "url": "https://www.energy.gov/oe/national-transmission-needs-study",
+      "tier": 3
+    },
+    {
+      "id": "S10",
+      "name": "FERC Order No. 1920 explainer",
+      "url": "https://www.ferc.gov/explainer-transmission-planning-and-cost-allocation-final-rule",
+      "tier": 3
+    },
+    {
+      "id": "S11",
+      "name": "BLS Electricians Occupational Outlook Handbook",
+      "url": "https://www.bls.gov/ooh/construction-and-extraction/electricians.htm",
+      "tier": 3
+    },
+    {
+      "id": "S12",
+      "name": "MYR Group 2026 Proxy Statement",
+      "url": "https://www.sec.gov/Archives/edgar/data/700923/000070092326000017/myrg-20260304.htm",
+      "tier": 1
+    },
+    {
+      "id": "S13",
+      "name": "StockAnalysis MYRG historical/market cap",
+      "url": "https://stockanalysis.com/stocks/myrg/history/",
+      "tier": 5
+    },
+    {
+      "id": "S14",
+      "name": "finanzen.net MYR estimates (FactSet-derived)",
+      "url": "https://www.finanzen.net/schaetzungen/myr_group",
+      "tier": 5
+    },
+    {
+      "id": "S15",
+      "name": "Quanta Services FY2025 results",
+      "url": "https://investors.quantaservices.com/sec-filings/all-sec-filings/content/0001193125-26-058069/d101511dex991.htm",
+      "tier": 4
+    },
+    {
+      "id": "S16",
+      "name": "EMCOR 2025 Annual Report",
+      "url": "https://emcorgroup.com/application/files/9817/7669/7431/EMCOR_2025_AR_and_Form-10K.pdf",
+      "tier": 4
+    },
+    {
+      "id": "S17",
+      "name": "finanzen.net MYR earnings calendar",
+      "url": "https://www.finanzen.net/termine/myr_group",
+      "tier": 5
+    },
+    {
+      "id": "LATEST",
+      "name": "MYR Group 2026-08-07 Form 8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/700923/000070092326000044/myrg-20260807.htm",
+      "tier": 1
+    }
+  ]
+}

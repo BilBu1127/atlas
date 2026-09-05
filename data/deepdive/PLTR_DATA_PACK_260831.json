@@ -1,0 +1,1385 @@
+{
+  "meta": {
+    "ticker": "PLTR",
+    "company": "Palantir Technologies Inc.",
+    "T0": "2026-08-31",
+    "price_asof": "2026-08-28 close",
+    "filing_asof": "2026-08-04 Q2 2026 10-Q",
+    "transcript_asof": "2026-08-03 Q2 2026 earnings",
+    "consensus_asof": "2026-08-26 to 2026-08-28",
+    "version": "Deep Dive OS v1.7",
+    "currency": "USD",
+    "units": "billions unless noted",
+    "required_return": 0.12,
+    "valuation_horizon_years": 5.3333333333,
+    "latest_filing_check": "PASS",
+    "price": 186.29,
+    "shares_outstanding_bn": 2.40305848,
+    "market_cap_bn": 447.6657642392,
+    "cash_and_short_treasuries_bn": 9.225,
+    "enterprise_value_bn": 438.44076423919995,
+    "fy2026_revenue_guide_mid_bn": 8.154,
+    "ev_fy2026_revenue": 53.77002259494726
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "fy": 2023,
+        "revenue": 2.225012,
+        "revenue_growth": 0.1675,
+        "gross_profit": 1.793907,
+        "gross_margin": 0.8062459887856784,
+        "gaap_operating_income": 0.119966,
+        "gaap_operating_margin": 0.05391701258240405,
+        "net_income_common": 0.209825,
+        "cfo": 0.712183,
+        "capex": 0.015114,
+        "simple_fcf": 0.697069,
+        "sbc": 0.475903,
+        "sbc_pct_revenue": 0.2138878352116753,
+        "diluted_wa_shares_bn": 2.297927,
+        "government_revenue": 1.222215,
+        "commercial_revenue": 1.002797
+      },
+      {
+        "fy": 2024,
+        "revenue": 2.865507,
+        "revenue_growth": 0.2879,
+        "gross_profit": 2.299517,
+        "gross_margin": 0.8024817248745161,
+        "gaap_operating_income": 0.310403,
+        "gaap_operating_margin": 0.10832393709036481,
+        "net_income_common": 0.46219,
+        "cfo": 1.153865,
+        "capex": 0.012634,
+        "simple_fcf": 1.141231,
+        "sbc": 0.691638,
+        "sbc_pct_revenue": 0.24136671102181917,
+        "diluted_wa_shares_bn": 2.450818,
+        "government_revenue": 1.569605,
+        "commercial_revenue": 1.295902
+      },
+      {
+        "fy": 2025,
+        "revenue": 4.475446,
+        "revenue_growth": 0.5618,
+        "gross_profit": 3.686269,
+        "gross_margin": 0.8236651721415028,
+        "gaap_operating_income": 1.414015,
+        "gaap_operating_margin": 0.3159495165398041,
+        "net_income_common": 1.625033,
+        "cfo": 2.134473,
+        "capex": 0.033882,
+        "simple_fcf": 2.100591,
+        "sbc": 0.684033,
+        "sbc_pct_revenue": 0.15284130341422955,
+        "diluted_wa_shares_bn": 2.565197,
+        "government_revenue": 2.402287,
+        "commercial_revenue": 2.073159
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "period": "2024-Q3",
+        "revenue": 0.725516,
+        "yoy": 0.3,
+        "gross_profit": 0.578877,
+        "gross_margin": 0.7978831617772729,
+        "gaap_operating_income": 0.11314,
+        "gaap_operating_margin": 0.1559441831744579,
+        "cfo": 0.419772,
+        "capex": 0.003985,
+        "simple_fcf": 0.415787,
+        "sbc": 0.142425,
+        "government_revenue": 0.408341,
+        "commercial_revenue": 0.317175
+      },
+      {
+        "period": "2024-Q4",
+        "revenue": 0.827519,
+        "yoy": 0.36,
+        "gross_profit": 0.652986,
+        "gross_margin": 0.789088830588784,
+        "gaap_operating_income": 0.011043,
+        "gaap_operating_margin": 0.013344708701552473,
+        "cfo": 0.460327,
+        "capex": 0.003106,
+        "simple_fcf": 0.457221,
+        "sbc": 0.281798,
+        "government_revenue": 0.455124,
+        "commercial_revenue": 0.372395
+      },
+      {
+        "period": "2025-Q1",
+        "revenue": 0.883855,
+        "yoy": 0.394,
+        "gross_profit": 0.710885,
+        "gross_margin": 0.804300479150992,
+        "gaap_operating_income": 0.176048,
+        "gaap_operating_margin": 0.19918199252139776,
+        "cfo": 0.310263,
+        "capex": 0.006184,
+        "simple_fcf": 0.304079,
+        "sbc": 0.155339,
+        "government_revenue": 0.486963,
+        "commercial_revenue": 0.396892,
+        "us_government_revenue": 0.373,
+        "us_commercial_revenue": 0.255
+      },
+      {
+        "period": "2025-Q2",
+        "revenue": 1.003697,
+        "yoy": 0.48,
+        "gross_profit": 0.810763,
+        "gross_margin": 0.8077766497259631,
+        "gaap_operating_income": 0.269317,
+        "gaap_operating_margin": 0.2683250024658836,
+        "cfo": 0.539251,
+        "capex": 0.007634,
+        "simple_fcf": 0.531617,
+        "sbc": 0.159971,
+        "government_revenue": 0.552983,
+        "commercial_revenue": 0.450714,
+        "us_government_revenue": 0.4261,
+        "us_commercial_revenue": 0.3065
+      },
+      {
+        "period": "2025-Q3",
+        "revenue": 1.181092,
+        "yoy": 0.628,
+        "gross_profit": 0.973785,
+        "gross_margin": 0.8244785334249999,
+        "gaap_operating_income": 0.393256,
+        "gaap_operating_margin": 0.3329596678328191,
+        "cfo": 0.507664,
+        "capex": 0.006792,
+        "simple_fcf": 0.500872,
+        "sbc": 0.172318,
+        "government_revenue": 0.632676,
+        "commercial_revenue": 0.548416,
+        "us_government_revenue": 0.4859,
+        "us_commercial_revenue": 0.3967
+      },
+      {
+        "period": "2025-Q4",
+        "revenue": 1.406802,
+        "yoy": 0.7,
+        "gross_profit": 1.190836,
+        "gross_margin": 0.846484437753145,
+        "gaap_operating_income": 0.575394,
+        "gaap_operating_margin": 0.40900851719005227,
+        "cfo": 0.777295,
+        "capex": 0.013272,
+        "simple_fcf": 0.764023,
+        "sbc": 0.196405,
+        "government_revenue": 0.729665,
+        "commercial_revenue": 0.677137,
+        "us_government_revenue": 0.57,
+        "us_commercial_revenue": 0.507
+      },
+      {
+        "period": "2026-Q1",
+        "revenue": 1.632583,
+        "yoy": 0.847,
+        "gross_profit": 1.416785,
+        "gross_margin": 0.8678180527421884,
+        "gaap_operating_income": 0.753998,
+        "gaap_operating_margin": 0.46184359386322166,
+        "cfo": 0.899165,
+        "capex": 0.007401,
+        "simple_fcf": 0.891764,
+        "sbc": 0.201592,
+        "government_revenue": 0.85841,
+        "commercial_revenue": 0.774173,
+        "us_government_revenue": 0.687,
+        "us_commercial_revenue": 0.595
+      },
+      {
+        "period": "2026-Q2",
+        "revenue": 1.935464,
+        "yoy": 0.9283,
+        "gross_profit": 1.638594,
+        "gross_margin": 0.8466155919200771,
+        "gaap_operating_income": 0.912004,
+        "gaap_operating_margin": 0.4712069043908851,
+        "cfo": 1.216167,
+        "capex": 0.014554,
+        "simple_fcf": 1.201613,
+        "sbc": 0.265209,
+        "government_revenue": 0.990032,
+        "commercial_revenue": 0.945432,
+        "government_contribution_margin": 0.71,
+        "commercial_contribution_margin": 0.78,
+        "us_government_revenue": 0.809,
+        "us_commercial_revenue": 0.764
+      }
+    ],
+    "ceilings": [
+      "Bootcamp-to-paid cohort conversion, CAC and payback are not disclosed.",
+      "Program-level government recognized revenue (e.g. Maven/Vantage/NGC2 split) is not disclosed.",
+      "FDE hours/cost and cloud cost-to-serve by customer or cohort are not disclosed."
+    ]
+  },
+  "kpis": [
+    {
+      "name": "U.S. Commercial revenue growth YoY",
+      "history": [
+        {
+          "period": "2025-Q1",
+          "value": 0.71
+        },
+        {
+          "period": "2025-Q2",
+          "value": 0.93
+        },
+        {
+          "period": "2025-Q3",
+          "value": 1.21
+        },
+        {
+          "period": "2025-Q4",
+          "value": 1.37
+        },
+        {
+          "period": "2026-Q1",
+          "value": 1.33
+        },
+        {
+          "period": "2026-Q2",
+          "value": 1.49
+        }
+      ],
+      "current": 1.49,
+      "thresholds": {
+        "green": ">=80%",
+        "yellow": "50-80%",
+        "red": "<50%"
+      }
+    },
+    {
+      "name": "U.S. Government revenue growth YoY",
+      "history": [
+        {
+          "period": "2025-Q1",
+          "value": 0.45
+        },
+        {
+          "period": "2025-Q2",
+          "value": 0.53
+        },
+        {
+          "period": "2025-Q3",
+          "value": 0.52
+        },
+        {
+          "period": "2025-Q4",
+          "value": 0.66
+        },
+        {
+          "period": "2026-Q1",
+          "value": 0.84
+        },
+        {
+          "period": "2026-Q2",
+          "value": 0.9
+        }
+      ],
+      "current": 0.9,
+      "thresholds": {
+        "green": ">=45%",
+        "yellow": "25-45%",
+        "red": "<25%"
+      }
+    },
+    {
+      "name": "GAAP operating margin",
+      "history": [
+        {
+          "period": "2024-Q3",
+          "value": 0.1559441831744579
+        },
+        {
+          "period": "2024-Q4",
+          "value": 0.013344708701552473
+        },
+        {
+          "period": "2025-Q1",
+          "value": 0.19918199252139776
+        },
+        {
+          "period": "2025-Q2",
+          "value": 0.2683250024658836
+        },
+        {
+          "period": "2025-Q3",
+          "value": 0.3329596678328191
+        },
+        {
+          "period": "2025-Q4",
+          "value": 0.40900851719005227
+        },
+        {
+          "period": "2026-Q1",
+          "value": 0.46184359386322166
+        },
+        {
+          "period": "2026-Q2",
+          "value": 0.4712069043908851
+        }
+      ],
+      "current": 0.4712069043908851,
+      "thresholds": {
+        "green": ">=35%",
+        "yellow": "25-35%",
+        "red": "<25%"
+      }
+    },
+    {
+      "name": "SBC / revenue",
+      "history": [
+        {
+          "period": "2024-Q3",
+          "value": 0.19630855832262828
+        },
+        {
+          "period": "2024-Q4",
+          "value": 0.3405335708303978
+        },
+        {
+          "period": "2025-Q1",
+          "value": 0.17575167872558284
+        },
+        {
+          "period": "2025-Q2",
+          "value": 0.15938176561253048
+        },
+        {
+          "period": "2025-Q3",
+          "value": 0.14589718667131774
+        },
+        {
+          "period": "2025-Q4",
+          "value": 0.13961097581607076
+        },
+        {
+          "period": "2026-Q1",
+          "value": 0.12348039885261576
+        },
+        {
+          "period": "2026-Q2",
+          "value": 0.1370260568008498
+        }
+      ],
+      "current": 0.1370260568008498,
+      "thresholds": {
+        "green": "<10%",
+        "yellow": "10-15%",
+        "red": ">15%"
+      }
+    },
+    {
+      "name": "Customer count",
+      "history": [
+        {
+          "period": "2025-Q2",
+          "value": 849
+        },
+        {
+          "period": "2025-Q4",
+          "value": 954
+        },
+        {
+          "period": "2026-Q1",
+          "value": 1007
+        },
+        {
+          "period": "2026-Q2",
+          "value": 1049
+        }
+      ],
+      "current": 1049,
+      "thresholds": {
+        "green": ">=20% YoY",
+        "yellow": "10-20% YoY",
+        "red": "<10% YoY"
+      }
+    },
+    {
+      "name": "Top-20 TTM avg revenue, $m",
+      "history": [
+        {
+          "period": "2025-Q2",
+          "value": 75
+        },
+        {
+          "period": "2026-Q2",
+          "value": 124
+        }
+      ],
+      "current": 124,
+      "thresholds": {
+        "green": ">=35% YoY",
+        "yellow": "20-35% YoY",
+        "red": "<20% YoY"
+      }
+    },
+    {
+      "name": "U.S. Commercial RDV, $bn",
+      "history": [
+        {
+          "period": "2025-Q1",
+          "value": 2.32
+        },
+        {
+          "period": "2025-Q2",
+          "value": 2.79
+        },
+        {
+          "period": "2025-Q3",
+          "value": 3.63
+        },
+        {
+          "period": "2026-Q2",
+          "value": 6.238
+        }
+      ],
+      "current": 6.238,
+      "thresholds": {
+        "green": ">=60% YoY",
+        "yellow": "30-60% YoY",
+        "red": "<30% YoY"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.25,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030,
+        2031
+      ],
+      "revenue_path": [
+        8.154,
+        11.578679999999999,
+        14.820710399999998,
+        18.081266687999996,
+        21.335894691839993,
+        24.53627889561599
+      ],
+      "revenue_growth_path": [
+        null,
+        0.42,
+        0.28,
+        0.22,
+        0.18,
+        0.15
+      ],
+      "margin_path": [
+        0.51,
+        0.49,
+        0.47,
+        0.45,
+        0.44,
+        0.44
+      ],
+      "fcf": [
+        4.15854,
+        5.673553199999999,
+        6.965733887999998,
+        8.136570009599998,
+        9.387793664409598,
+        10.795962714071036
+      ],
+      "terminal_ev_fcf": 28,
+      "terminal_net_cash": 12,
+      "diluted_shares": 2.95,
+      "per_share_value": 58.21142351798215,
+      "terminal_per_share_value": 106.53795118440304,
+      "scenario_irr": -0.0994734436153778
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030,
+        2031
+      ],
+      "revenue_path": [
+        8.154,
+        12.231,
+        16.87878,
+        21.942414,
+        27.20859336,
+        32.650312031999995
+      ],
+      "revenue_growth_path": [
+        null,
+        0.5,
+        0.38,
+        0.3,
+        0.24,
+        0.2
+      ],
+      "margin_path": [
+        0.52,
+        0.51,
+        0.5,
+        0.5,
+        0.49,
+        0.49
+      ],
+      "fcf": [
+        4.24008,
+        6.23781,
+        8.43939,
+        10.971207,
+        13.3322107464,
+        15.998652895679998
+      ],
+      "terminal_ev_fcf": 34,
+      "terminal_net_cash": 18,
+      "diluted_shares": 2.9,
+      "per_share_value": 105.87826144773118,
+      "terminal_per_share_value": 193.77730981142068,
+      "scenario_irr": 0.007415801779907083
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.25,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030,
+        2031
+      ],
+      "revenue_path": [
+        8.154,
+        12.6387,
+        18.326114999999998,
+        24.74025525,
+        31.66752672,
+        38.9510578656
+      ],
+      "revenue_growth_path": [
+        null,
+        0.55,
+        0.45,
+        0.35,
+        0.28,
+        0.23
+      ],
+      "margin_path": [
+        0.52,
+        0.53,
+        0.53,
+        0.53,
+        0.53,
+        0.53
+      ],
+      "fcf": [
+        4.24008,
+        6.698511000000001,
+        9.712840949999999,
+        13.1123352825,
+        16.7837891616,
+        20.644060668768002
+      ],
+      "terminal_ev_fcf": 40,
+      "terminal_net_cash": 22,
+      "diluted_shares": 2.9,
+      "per_share_value": 159.72762924835382,
+      "terminal_per_share_value": 292.33187129335175,
+      "scenario_irr": 0.08815620275153191
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.1,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030,
+        2031
+      ],
+      "revenue_path": [
+        8.154,
+        13.0464,
+        19.5696,
+        27.788832,
+        37.5149232,
+        48.019101696
+      ],
+      "revenue_growth_path": [
+        null,
+        0.6,
+        0.5,
+        0.42,
+        0.35,
+        0.28
+      ],
+      "margin_path": [
+        0.52,
+        0.54,
+        0.55,
+        0.56,
+        0.56,
+        0.56
+      ],
+      "fcf": [
+        4.24008,
+        7.045056000000001,
+        10.763280000000002,
+        15.561745920000002,
+        21.008356992,
+        26.890696949760002
+      ],
+      "terminal_ev_fcf": 46,
+      "terminal_net_cash": 28,
+      "diluted_shares": 3.0,
+      "per_share_value": 230.38996428454064,
+      "terminal_per_share_value": 421.6573532296534,
+      "scenario_irr": 0.1655191147466919
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B — Product/Platform Hybrid",
+    "core": 58.21142351798215,
+    "execution": 47.66683792974903,
+    "ecosystem": 25.913512233836606,
+    "drag": -11.916709482437257,
+    "expected_value": 119.87506419913053,
+    "expected_terminal_value": 219.3941148669723,
+    "expected_irr": 0.031143582720745133,
+    "current_price": 186.29,
+    "base_value": 105.87826144773118,
+    "bear_value": 58.21142351798215,
+    "bull_execution_value": 159.72762924835382,
+    "bull_ecosystem_value": 230.38996428454064,
+    "required_return": 0.12,
+    "methodology": "FY2031 terminal EV/FCF, discounted to T0; scenario revenue/FCF margin/diluted share paths; current monetization floor + execution increment + probability-weighted ecosystem upside + downside drag."
+  },
+  "reverse_expectations": {
+    "required_return": 0.12,
+    "required_2031_share_price": 340.9460502200483,
+    "terminal_assumed_shares_bn": 2.9,
+    "terminal_assumed_net_cash_bn": 20.0,
+    "terminal_fcf_margin": 0.5,
+    "sensitivity": [
+      {
+        "terminal_ev_fcf": 30,
+        "terminal_fcf_margin": 0.5,
+        "terminal_shares_bn": 2.9,
+        "terminal_net_cash_bn": 20.0,
+        "required_2031_revenue_bn": 64.58290304254267,
+        "required_2031_fcf_bn": 32.291451521271334,
+        "fy26_to_fy31_revenue_cagr": 0.5126880329714223
+      },
+      {
+        "terminal_ev_fcf": 34,
+        "terminal_fcf_margin": 0.5,
+        "terminal_shares_bn": 2.9,
+        "terminal_net_cash_bn": 20.0,
+        "required_2031_revenue_bn": 56.98491444930235,
+        "required_2031_fcf_bn": 28.492457224651176,
+        "fy26_to_fy31_revenue_cagr": 0.4752914948958453
+      },
+      {
+        "terminal_ev_fcf": 40,
+        "terminal_fcf_margin": 0.5,
+        "terminal_shares_bn": 2.9,
+        "terminal_net_cash_bn": 20.0,
+        "required_2031_revenue_bn": 48.437177281907,
+        "required_2031_fcf_bn": 24.2185886409535,
+        "fy26_to_fy31_revenue_cagr": 0.42810988041357056
+      },
+      {
+        "terminal_ev_fcf": 46,
+        "terminal_fcf_margin": 0.5,
+        "terminal_shares_bn": 2.9,
+        "terminal_net_cash_bn": 20.0,
+        "required_2031_revenue_bn": 42.11928459296261,
+        "required_2031_fcf_bn": 21.059642296481304,
+        "fy26_to_fy31_revenue_cagr": 0.38874355285240036
+      }
+    ],
+    "interpretation": "Even with a 46x terminal EV/FCF, current price requires roughly $42B 2031 revenue at 50% FCF margin, implying ~39% FY2026-FY2031 CAGR. At a 34x terminal multiple, required revenue is roughly $57B and CAGR ~48%."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_bn": 8.189,
+      "growth": 0.8297,
+      "eps": 1.6
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_bn": 12.175,
+      "growth": 0.4868,
+      "eps": 2.31
+    },
+    "fy3": {
+      "year": 2028,
+      "revenue_bn": 17.684,
+      "growth": 0.4525,
+      "eps": null,
+      "analyst_count_narrower": true
+    },
+    "company_guide_fy2026_bn": [
+      8.15,
+      8.158
+    ],
+    "price_target": {
+      "average": 191.68,
+      "median": 204.0,
+      "low": 80.0,
+      "high": 255.0,
+      "analysts": 32
+    },
+    "revision_trend": "Strong upward revisions. FY2026 company guide rose from $7.182-$7.198B initially to $8.150-$8.158B after Q2. Provider universes differ, so historical consensus deltas are treated directionally, not as exact like-for-like revisions.",
+    "short_interest": {
+      "record_date": "2026-08-14",
+      "shares_m": 68.278633,
+      "pct_float": 0.0314,
+      "days_to_cover": 1.1
+    },
+    "insider_positioning": "Recent SEC Form 4 confirms continued CEO selling; no insider-buying signal is used in valuation."
+  },
+  "stance": {
+    "zone": "AVOID / WATCH FOR PRICE",
+    "horizon": "T0 2026-08-31 to FY2031 year-end",
+    "price_bands": {
+      "attractive": "<=95",
+      "conditional_interest": "95-120",
+      "watch_demanding": "120-160",
+      "priced_for_ecosystem_outcome": ">160"
+    },
+    "expected_value": 119.87506419913053,
+    "base_value": 105.87826144773118,
+    "current_price": 186.29,
+    "rationale": "Expected IRR ~3% is well below 12% hurdle and current price exceeds the Bull Execution scenario present value. Business quality is high; valuation provides insufficient margin of safety."
+  },
+  "catalysts": [
+    {
+      "when": "2026-Q3 earnings (expected Nov 2026)",
+      "event": "Q3 revenue / U.S. Commercial / margin / FY2026 guide",
+      "sensitivity": "High — tests whether 90%+ growth and >45% GAAP margin persist."
+    },
+    {
+      "when": "2027-Q1 (FY2026 results)",
+      "event": "Initial FY2027 guide and FY2026 cash/SBC/share-count reconciliation",
+      "sensitivity": "Very High — valuation needs continued >40% multi-year growth with controlled dilution."
+    },
+    {
+      "when": "2026-2027 government award cycle",
+      "event": "Army EA / Maven / other task-order conversion",
+      "sensitivity": "High — distinguish obligations/revenue from ceilings."
+    },
+    {
+      "when": "2026-2027 product cadence",
+      "event": "AIP/Ontology agentic workflow adoption and large-customer expansion",
+      "sensitivity": "High — validates operating-layer moat."
+    },
+    {
+      "when": "2027 proxy / quarterly filings",
+      "event": "Founder control, SBC grants, insider activity",
+      "sensitivity": "Medium — affects per-share capture and governance discount."
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "1,3"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "1"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "1,3"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "3"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "3,4"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "1,3,4"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "3"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "2"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "2"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "4"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "3,4"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "4"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "4,5"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "3,6"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "5,6"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE",
+      "h3_locator": "5"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "COMPLETE",
+      "h3_locator": "6"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "type": "primary",
+      "title": "Palantir Q2 2026 Form 10-Q",
+      "asof": "2026-06-30 / filed 2026-08-04",
+      "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000041/pltr-20260630.htm"
+    },
+    {
+      "id": "S2",
+      "type": "primary",
+      "title": "Palantir FY2025 Form 10-K",
+      "asof": "2025-12-31",
+      "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000011/pltr-20251231.htm"
+    },
+    {
+      "id": "S3",
+      "type": "primary",
+      "title": "Palantir 2026 Proxy Statement",
+      "asof": "2026-04-23",
+      "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000019/pltr-20260423.htm"
+    },
+    {
+      "id": "S4",
+      "type": "primary",
+      "title": "Palantir Q3 2024 Form 10-Q",
+      "asof": "2024-09-30",
+      "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165524000209/pltr-20240930.htm"
+    },
+    {
+      "id": "S5",
+      "type": "primary",
+      "title": "Palantir Architecture Center — Integrated Platforms",
+      "asof": "checked 2026-08-31",
+      "url": "https://www.palantir.com/docs/foundry/architecture-center/platforms"
+    },
+    {
+      "id": "S6",
+      "type": "primary",
+      "title": "Palantir AIP Architecture",
+      "asof": "checked 2026-08-31",
+      "url": "https://www.palantir.com/docs/foundry/architecture-center/aip-architecture"
+    },
+    {
+      "id": "S7",
+      "type": "primary",
+      "title": "Palantir Ontology System",
+      "asof": "checked 2026-08-31",
+      "url": "https://www.palantir.com/docs/foundry/architecture-center/ontology-system"
+    },
+    {
+      "id": "S8",
+      "type": "primary",
+      "title": "U.S. Army Enterprise Agreement announcement",
+      "asof": "2025-07-31",
+      "url": "https://www.army.mil/article/287506/u_s_army_awards_enterprise_service_agreement_to_enhance_military_readiness_and_drive_operational_efficiency"
+    },
+    {
+      "id": "S9",
+      "type": "primary",
+      "title": "U.S. DoD Contracts — Maven Smart System modification",
+      "asof": "2025-05-21",
+      "url": "https://www.defense.gov/News/Contracts/Contract/Article/4194643/"
+    },
+    {
+      "id": "S10",
+      "type": "secondary_consensus",
+      "title": "StockAnalysis / S&P Global Market Intelligence & TipRanks",
+      "asof": "2026-08-26",
+      "url": "https://stockanalysis.com/stocks/pltr/forecast/"
+    },
+    {
+      "id": "S11",
+      "type": "secondary_consensus",
+      "title": "MarketScreener analyst forecasts",
+      "asof": "2026-08-28",
+      "url": "https://www.marketscreener.com/quote/stock/PALANTIR-TECHNOLOGIES-INC-194318789/finances/"
+    },
+    {
+      "id": "S12",
+      "type": "secondary_positioning",
+      "title": "MarketBeat FINRA-sourced short interest",
+      "asof": "2026-08-25 publication / 2026-08-14 record",
+      "url": "https://www.marketbeat.com/stocks/NASDAQ/PLTR/short-interest/"
+    },
+    {
+      "id": "S13",
+      "type": "secondary_market",
+      "title": "StockAnalysis PLTR price history / current price (S&P Global Market Intelligence)",
+      "asof": "2026-08-28",
+      "url": "https://stockanalysis.com/stocks/pltr/history/"
+    },
+    {
+      "id": "S14",
+      "type": "secondary_market",
+      "title": "Macrotrends PLTR Price/Sales historical quarterly sample",
+      "asof": "checked 2026-08-31",
+      "url": "https://www.macrotrends.net/stocks/charts/PLTR/palantir-technologies/price-sales"
+    },
+    {
+      "id": "S15",
+      "type": "issuer_case_study",
+      "title": "Palantir customer case-study materials including General Mills",
+      "asof": "checked 2026-08-31",
+      "url": "https://www.palantir.com/"
+    }
+  ],
+  "operating_metrics": {
+    "q2_2026": {
+      "total_revenue_bn": 1.935464,
+      "us_total_revenue_bn": 1.573,
+      "us_commercial_revenue_bn": 0.764,
+      "us_commercial_yoy": 1.49,
+      "us_commercial_qoq": 0.28,
+      "us_government_revenue_bn": 0.809,
+      "us_government_yoy": 0.9,
+      "us_government_qoq": 0.18,
+      "total_tcv_bn": 3.373,
+      "total_tcv_yoy": 0.49,
+      "us_commercial_tcv_bn": 2.132,
+      "us_commercial_tcv_yoy": 1.53,
+      "us_commercial_rdv_bn": 6.238,
+      "us_commercial_rdv_yoy": 1.24,
+      "us_commercial_rdv_qoq": 0.27,
+      "customer_count": 1049,
+      "customer_count_yoy": 0.24,
+      "top20_ttm_avg_revenue_m": 124,
+      "top20_ttm_avg_revenue_yoy": 0.67,
+      "deals_ge_1m": 220,
+      "deals_ge_5m": 98,
+      "deals_ge_10m": 73,
+      "gaap_operating_margin": 0.4712,
+      "gross_margin": 0.8466,
+      "sbc_m": 265.209,
+      "sbc_yoy": 0.658
+    },
+    "q2_2025_new_vs_existing_bridge_m": {
+      "commercial_yoy_increase": 143.3,
+      "commercial_existing_customer_contribution": 86.5,
+      "commercial_implied_new_customer_contribution": 56.8,
+      "government_yoy_increase": 182.2,
+      "government_existing_customer_contribution": 174.2
+    }
+  },
+  "customer_evidence": [
+    {
+      "customer": "General Mills",
+      "source_type": "issuer/customer case study",
+      "metrics": {
+        "suppliers": 4000,
+        "plants": 200,
+        "orders_m": 1.2,
+        "decisions_m_per_year": 50,
+        "cogs_bn": 10,
+        "ontology_tables": 200,
+        "orders_evaluated_per_day": 3000,
+        "recommendations_per_day": 400,
+        "recommendation_acceptance_gt": 0.7,
+        "claimed_savings_per_day_k": 40,
+        "claimed_annual_savings_m": 14
+      },
+      "boundary": "Customer/Palantir case-study evidence; not independently audited ROI."
+    },
+    {
+      "customer": "Associated Materials",
+      "source_type": "issuer-reported",
+      "metrics": {
+        "use_cases_gt": 10,
+        "months": 9,
+        "otif_before": 0.4,
+        "otif_after": 0.9
+      },
+      "boundary": "Issuer/customer reported."
+    },
+    {
+      "customer": "Trinity Rail",
+      "source_type": "issuer-reported",
+      "metrics": {
+        "deployment_months": 3,
+        "claimed_bottom_line_m": 30
+      },
+      "boundary": "Issuer/customer reported."
+    },
+    {
+      "customer": "Leading insurer",
+      "source_type": "issuer-reported",
+      "metrics": {
+        "underwriting_response_before_days": 14,
+        "after_hours": 3
+      },
+      "boundary": "Customer identity/measurement independently unverified."
+    }
+  ],
+  "government_contracts": [
+    {
+      "program": "U.S. Army Enterprise Agreement",
+      "date": "2025-07-31",
+      "term_years_up_to": 10,
+      "ceiling_bn": 10.0,
+      "contracts_consolidated": 75,
+      "prime_contracts": 15,
+      "related_contracts": 60,
+      "accounting_treatment": "Maximum potential value; not committed backlog or obligation."
+    },
+    {
+      "program": "Maven Smart System modification",
+      "date": "2025-05-21",
+      "modification_m": 795,
+      "estimated_completion": "2029-05-28",
+      "accounting_treatment": "Funding and work location determined with each order; not all recognized revenue at award."
+    }
+  ],
+  "management_guidance": [
+    {
+      "fy": 2023,
+      "initial_low_bn": 2.18,
+      "initial_high_bn": 2.23,
+      "actual_bn": 2.225012
+    },
+    {
+      "fy": 2024,
+      "initial_low_bn": 2.652,
+      "initial_high_bn": 2.668,
+      "actual_bn": 2.865507
+    },
+    {
+      "fy": 2025,
+      "initial_low_bn": 3.741,
+      "initial_high_bn": 3.757,
+      "q1_low_bn": 3.89,
+      "q1_high_bn": 3.902,
+      "q2_low_bn": 4.142,
+      "q2_high_bn": 4.15,
+      "q3_low_bn": 4.396,
+      "q3_high_bn": 4.4,
+      "actual_bn": 4.475446
+    },
+    {
+      "fy": 2026,
+      "initial_low_bn": 7.182,
+      "initial_high_bn": 7.198,
+      "q1_low_bn": 7.65,
+      "q1_high_bn": 7.662,
+      "q2_low_bn": 8.15,
+      "q2_high_bn": 8.158,
+      "actual_bn": null
+    }
+  ],
+  "capital_structure": {
+    "shares_outstanding_bn": 2.40305848,
+    "shares_asof": "2026-07-27",
+    "class_a_bn": 2.300713329,
+    "class_b_bn": 0.101340151,
+    "class_f_m": 1.005,
+    "cash_and_short_treasuries_bn": 9.225,
+    "revolver_debt_bn": 0.0,
+    "awards_q2_2026": {
+      "options_m": 149.677,
+      "option_weighted_strike": 10.06,
+      "sars_m": 13.671,
+      "sar_weighted_strike": 131.61,
+      "unvested_rsus_m": 33.249,
+      "unrecognized_option_sbc_m": 361,
+      "unrecognized_sar_sbc_m": 136,
+      "unrecognized_rsu_sbc_m": 916
+    },
+    "governance": {
+      "class_a_votes_per_share": 1,
+      "class_b_votes_per_share": 10,
+      "founder_control_max_pct": 49.999999,
+      "proposal1_class_f_voting_power_pct": 27.7,
+      "note": "Founder Voting Trust/Class F can preserve substantial control; details governed by 2026 proxy."
+    }
+  },
+  "earnings_quality": {
+    "assessment": "CLEAN_WITH_FLAGS",
+    "controls_effective": true,
+    "material_icfr_change": false,
+    "h1_2026_cfo_bn": 2.115332,
+    "h1_2026_sbc_bn": 0.466801,
+    "h1_2026_ar_change_bn": -0.434,
+    "h1_2026_contract_liability_change_bn": 0.257,
+    "q2_2026_public_equity_unrealized_gain_m": 66,
+    "q2_2026_accounts_receivable_bn": 1.485,
+    "fy2025_accounts_receivable_bn": 1.042,
+    "customer_i_ar_concentration_pct": 27,
+    "flags": [
+      "SBC remains economically material.",
+      "Receivables grew sharply; customer concentration in A/R is material.",
+      "Contract-liability growth supports cash flow but is not the same as earned revenue.",
+      "Net income contains investment-mark-to-market noise; operating income is cleaner."
+    ]
+  },
+  "valuation_history": {
+    "metric": "Price / TTM Sales",
+    "current": 72.72,
+    "current_asof": "2026-08-28",
+    "quarter_end_sample": [
+      {
+        "date": "2021-06-30",
+        "value": 29.69
+      },
+      {
+        "date": "2021-09-30",
+        "value": 31.31
+      },
+      {
+        "date": "2021-12-31",
+        "value": 22.47
+      },
+      {
+        "date": "2022-03-31",
+        "value": 16.3
+      },
+      {
+        "date": "2022-06-30",
+        "value": 10.38
+      },
+      {
+        "date": "2022-09-30",
+        "value": 8.98
+      },
+      {
+        "date": "2022-12-31",
+        "value": 6.93
+      },
+      {
+        "date": "2023-03-31",
+        "value": 8.95
+      },
+      {
+        "date": "2023-06-30",
+        "value": 16.17
+      },
+      {
+        "date": "2023-09-30",
+        "value": 16.71
+      },
+      {
+        "date": "2023-12-31",
+        "value": 17.6
+      },
+      {
+        "date": "2024-03-31",
+        "value": 22.94
+      },
+      {
+        "date": "2024-06-30",
+        "value": 24.13
+      },
+      {
+        "date": "2024-09-30",
+        "value": 33.67
+      },
+      {
+        "date": "2024-12-31",
+        "value": 64.22
+      },
+      {
+        "date": "2025-03-31",
+        "value": 67.0
+      },
+      {
+        "date": "2025-06-30",
+        "value": 99.47
+      },
+      {
+        "date": "2025-09-30",
+        "value": 118.85
+      },
+      {
+        "date": "2025-12-31",
+        "value": 101.82
+      },
+      {
+        "date": "2026-03-31",
+        "value": 71.9
+      },
+      {
+        "date": "2026-06-30",
+        "value": 48.69
+      }
+    ],
+    "sample_percentile": 0.8571428571428571,
+    "methodology": "Percentile is against 21 sampled quarter-end observations from 2021-Q2 through 2026-Q2, not a daily-history percentile.",
+    "sample_peak": 118.85,
+    "sample_peak_date": "2025-09-30"
+  },
+  "price_history_annual": [
+    {
+      "year": 2021,
+      "year_close": 18.21,
+      "annual_change": -0.2268
+    },
+    {
+      "year": 2022,
+      "year_close": 6.42,
+      "annual_change": -0.6474
+    },
+    {
+      "year": 2023,
+      "year_close": 17.17,
+      "annual_change": 1.6745
+    },
+    {
+      "year": 2024,
+      "year_close": 75.63,
+      "annual_change": 3.4048
+    },
+    {
+      "year": 2025,
+      "year_close": 177.75,
+      "annual_change": 1.3503
+    },
+    {
+      "year": 2026,
+      "asof": "2026-08-28",
+      "close": 186.29
+    }
+  ],
+  "consensus_vs_base": [
+    {
+      "year": 2026,
+      "street_revenue_bn": 8.189,
+      "base_revenue_bn": 8.154
+    },
+    {
+      "year": 2027,
+      "street_revenue_bn": 12.175,
+      "base_revenue_bn": 12.231
+    },
+    {
+      "year": 2028,
+      "street_revenue_bn": 17.684,
+      "base_revenue_bn": 16.87878
+    }
+  ],
+  "variant_perception": {
+    "consensus": "Production-enterprise-AI category leader with extraordinary U.S. commercial/government growth, widening margins and repeated beats.",
+    "our_view": "Operating thesis is largely correct; disagreement is growth duration and terminal valuation. Current price monetizes unusually long continuation of >40% growth and premium FCF economics.",
+    "mispricing_rationale": "Repeated beats and GAAP margin acceleration reinforce extrapolation, while headline contract ceilings and near-current analyst price targets make duration risk less salient than near-term earnings momentum."
+  },
+  "red_team": {
+    "premortem": [
+      {
+        "path": "Incumbent cloud/data platforms bundle a good-enough governed AI layer.",
+        "early_sign": "U.S. Commercial TCV/RDV/customer growth decelerates faster than revenue.",
+        "watch": "U.S. Commercial growth, TCV, RDV, customer count."
+      },
+      {
+        "path": "Government ceiling awards convert slowly or procurement priorities change.",
+        "early_sign": "Task orders/obligations lag while segment growth slips below 25%.",
+        "watch": "U.S. Government revenue growth and task-order conversion."
+      },
+      {
+        "path": "Owner economics lag headline cash economics because of SBC, FDE/cloud burden or dilution.",
+        "early_sign": "SBC/revenue >15%, annual share dilution >5%, gross/operating margin compression.",
+        "watch": "SBC/revenue, diluted shares, gross margin, GAAP operating margin."
+      }
+    ],
+    "base_rate_ceiling": "No responsibly sourced primary numeric base rate was found for public software companies sustaining >40% revenue growth for five years while also producing ~45-55% FCF margins. Scenario probabilities therefore remain explicitly judgmental rather than falsely precise.",
+    "false_conservatism": [
+      "Ontology/AIP could become a more durable enterprise operating layer than modeled, producing expansion economics beyond the Bull Execution case.",
+      "Army/DoD procurement standardization could accelerate task-order conversion and make government revenue more repeatable than the Base case."
+    ]
+  },
+  "falsification": [
+    {
+      "thesis": "Commercial operating-layer leadership",
+      "condition": "U.S. Commercial growth <50% for two consecutive quarters while RDV growth also falls below 30%."
+    },
+    {
+      "thesis": "Government platform standardization",
+      "condition": "U.S. Government growth falls below 25% and major vehicles fail to produce material task-order/revenue conversion."
+    },
+    {
+      "thesis": "High-margin software economics",
+      "condition": "GAAP operating margin falls below 25% despite revenue still growing >30%."
+    },
+    {
+      "thesis": "Per-share value capture",
+      "condition": "SBC exceeds 15% of revenue or annual diluted-share growth exceeds 5% without commensurate per-share FCF acceleration."
+    },
+    {
+      "thesis": "Customer expansion moat",
+      "condition": "Customer growth falls below 10% while top-20 expansion stalls and competitive displacement becomes visible."
+    }
+  ]
+}

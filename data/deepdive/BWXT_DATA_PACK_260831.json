@@ -1,0 +1,1138 @@
+{
+  "meta": {
+    "ticker": "BWXT",
+    "company": "BWX Technologies, Inc.",
+    "T0": "2026-08-31",
+    "price_asof": "2026-08-28",
+    "current_price": 152.85,
+    "filing_asof": "2026-08-05 (2Q26 10-Q/A latest filing check)",
+    "consensus_asof": "2026-08-27",
+    "version": "Deep Dive OS v1.7",
+    "currency": "USD",
+    "publishing_date_asia_seoul": "2026-08-31"
+  },
+  "financials": {
+    "annual_3y": {
+      "2023": {
+        "revenue_m": 2496.3,
+        "government_revenue_m": 2031.3,
+        "commercial_revenue_m": 466.3,
+        "operating_income_m": 383.1,
+        "cfo_m": 363.7,
+        "capex_m": 151.3,
+        "fcf_m": 212.4,
+        "diluted_gaap_eps": 2.68
+      },
+      "2024": {
+        "revenue_m": 2703.7,
+        "government_revenue_m": 2183.0,
+        "commercial_revenue_m": 524.0,
+        "operating_income_m": 380.6,
+        "cfo_m": 408.4,
+        "capex_m": 153.6,
+        "fcf_m": 254.8,
+        "diluted_gaap_eps": 3.07
+      },
+      "2025": {
+        "revenue_m": 3198.4,
+        "government_revenue_m": 2350.1,
+        "commercial_revenue_m": 853.1,
+        "operating_income_m": 404.5,
+        "cfo_m": 479.8,
+        "capex_m": 184.6,
+        "fcf_m": 295.3,
+        "diluted_gaap_eps": 3.58
+      }
+    },
+    "quarterly_8q": [
+      {
+        "quarter": "3Q24",
+        "revenue_m": 672.0,
+        "operating_income_m": 96.6,
+        "diluted_gaap_eps": 0.76
+      },
+      {
+        "quarter": "4Q24",
+        "revenue_m": 746.3,
+        "operating_income_m": 92.3,
+        "diluted_gaap_eps": 0.77
+      },
+      {
+        "quarter": "1Q25",
+        "revenue_m": 682.3,
+        "operating_income_m": 96.6,
+        "diluted_gaap_eps": 0.82
+      },
+      {
+        "quarter": "2Q25",
+        "revenue_m": 764.0,
+        "operating_income_m": 102.4,
+        "diluted_gaap_eps": 0.85
+      },
+      {
+        "quarter": "3Q25",
+        "revenue_m": 866.3,
+        "operating_income_m": 113.3,
+        "diluted_gaap_eps": 0.89
+      },
+      {
+        "quarter": "4Q25",
+        "revenue_m": 885.8,
+        "operating_income_m": 92.1,
+        "diluted_gaap_eps": 1.01
+      },
+      {
+        "quarter": "1Q26",
+        "revenue_m": 860.2,
+        "operating_income_m": 106.7,
+        "diluted_gaap_eps": 0.99
+      },
+      {
+        "quarter": "2Q26",
+        "revenue_m": 901.6,
+        "operating_income_m": 114.1,
+        "diluted_gaap_eps": 0.97
+      }
+    ],
+    "backlog": [
+      {
+        "period": "2024-12-31",
+        "government_m": 3913,
+        "commercial_m": 930,
+        "total_m": 4843,
+        "unfunded_government_m": null
+      },
+      {
+        "period": "2025-12-31",
+        "government_m": 5541,
+        "commercial_m": 1720,
+        "total_m": 7261,
+        "unfunded_government_m": 2151.3
+      },
+      {
+        "period": "2026-06-30",
+        "government_m": 6798,
+        "commercial_m": 1600,
+        "total_m": 8398.1,
+        "unfunded_government_m": 2256.4
+      }
+    ],
+    "2026_guidance": {
+      "revenue_b": 3.8,
+      "adjusted_ebitda_low_m": 662,
+      "adjusted_ebitda_high_m": 672,
+      "adjusted_eps_low": 4.7,
+      "adjusted_eps_high": 4.8,
+      "fcf_low_m": 345,
+      "fcf_high_m": 360,
+      "capex_pct_sales_approx": 6.0
+    },
+    "ceilings": [
+      "PCG exact purchase consideration / preliminary PPA not disclosed in 2Q26 filing",
+      "Medical divestiture cash-at-close, tax leakage and retained-stake value not sufficiently disclosed"
+    ]
+  },
+  "business_kpis": {
+    "2025_us_government_revenue_pct": 68,
+    "2025_four_large_utility_customers_revenue_pct": 17,
+    "2025_government_segment_us_government_pct": 91,
+    "2025_commercial_segment_large_utilities_pct": 63,
+    "2026_h1_kinectrics_commercial_revenue_contribution_m": 173.5
+  },
+  "capital_structure": {
+    "cash_2026_06_30_m": 608.203,
+    "long_term_debt_2026_06_30_m": 2019.897,
+    "pre_pcg_net_debt_approx_m": 1411.694,
+    "convertible_notes_2030": {
+      "principal_m": 1250,
+      "coupon_pct": 0.0,
+      "maturity": 2030,
+      "conversion_price_approx": 262.51,
+      "shares_per_1000_principal": 3.8094,
+      "capped_call_cost_m": 131.875,
+      "capped_call_cap_price": 396.24,
+      "treatment": "Below conversion price, no modeled share dilution. At modeled Bull Ecosystem price above conversion but below capped-call cap, potential dilution is substantially hedged; exact settlement is kept as a financing ceiling rather than double-counting debt and shares."
+    }
+  },
+  "kpis": [
+    {
+      "name": "Government revenue / adjusted EBITDA margin",
+      "current": "2026 guide: revenue HSD growth; segment adj. EBITDA margin ~20.5%",
+      "history": [
+        "2025 Government revenue $2.35B",
+        "1H26 Government revenue $1.179B (+3.1% YoY)"
+      ],
+      "thresholds": {
+        "green": "revenue HSD+ and adj. EBITDA margin >=20%",
+        "yellow": "revenue mid-single to HSD or margin 19-20%",
+        "red": "revenue <=mid-single-digit growth and margin <19% for two quarters"
+      },
+      "frequency": "quarterly",
+      "source": "S2/S3"
+    },
+    {
+      "name": "Commercial organic growth / adjusted EBITDA margin",
+      "current": "2Q26 organic growth ~33%; FY26 segment margin guide ~13%",
+      "history": [
+        "Kinectrics added $173.5M to 1H26 Commercial revenue",
+        "2Q26 segment adj. EBITDA margin 11.9%"
+      ],
+      "thresholds": {
+        "green": "organic growth >=15% and margin >=13%",
+        "yellow": "organic growth 8-15% or margin 11-13%",
+        "red": "organic growth <8% or margin <11% with healthy backlog"
+      },
+      "frequency": "quarterly",
+      "source": "S2/S3"
+    },
+    {
+      "name": "Total / funded backlog quality",
+      "current": "6/30/26 total $8.398B; Government $6.798B; unfunded Government $2.256B",
+      "history": [
+        "12/31/24 total $4.843B",
+        "12/31/25 total $7.261B"
+      ],
+      "thresholds": {
+        "green": "total backlog >$8B and funded mix stable/improving",
+        "yellow": "backlog flat or unfunded mix rises",
+        "red": "material decline in funded backlog or program cancellations"
+      },
+      "frequency": "quarterly",
+      "source": "S1/S2"
+    },
+    {
+      "name": "Free cash flow",
+      "current": "FY26 guide $345-360M; midpoint $352.5M",
+      "history": [
+        "2023 $212.4M",
+        "2024 $254.8M",
+        "2025 $295.3M"
+      ],
+      "thresholds": {
+        "green": ">=$360M with no deterioration in backlog conversion",
+        "yellow": "$330-360M",
+        "red": "<$330M absent clearly revenue-leading growth capex"
+      },
+      "frequency": "quarterly / annual",
+      "source": "S1/S3"
+    },
+    {
+      "name": "ROIC / capital efficiency",
+      "current": "2023-2025 compensation-plan average ROIC 12.1%",
+      "history": [
+        "2023-2025 avg 12.1%"
+      ],
+      "thresholds": {
+        "green": ">=12%",
+        "yellow": "10-12%",
+        "red": "<10% on trailing 12-month basis"
+      },
+      "frequency": "semiannual / annual",
+      "source": "S4"
+    },
+    {
+      "name": "Advanced nuclear milestone discipline",
+      "current": "Pele core stacking complete Jun-2026; Janus Phase 1 selection Aug-2026",
+      "history": [
+        "Pele prior deployment timing slipped",
+        "Janus operations targeted early 2030s"
+      ],
+      "thresholds": {
+        "green": "Pele delivery/test and Janus Phase 1 milestones remain on disclosed schedule",
+        "yellow": "milestones shift but contract/adoption remains intact",
+        "red": "~12+ month material slip, cancellation, or follow-on economics fail to emerge"
+      },
+      "frequency": "event-driven",
+      "source": "S10/S11/S12"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.25,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029
+      ],
+      "revenue_path_b": [
+        3.8,
+        4.0,
+        4.2,
+        4.45
+      ],
+      "ebitda_margin_path_pct": [
+        17.55,
+        17.3,
+        17.1,
+        17.0
+      ],
+      "fcf_path_m": [
+        352.5,
+        360,
+        375,
+        390
+      ],
+      "adjusted_eps_path": [
+        4.75,
+        4.91,
+        5.08,
+        5.25
+      ],
+      "diluted_shares_m": 91.62,
+      "exit_pe": 24,
+      "per_share_value_2029": 126.0,
+      "price_irr": -0.06236235801327383,
+      "present_value_at_12pct": 89.68431122448978,
+      "formation_conditions": "Government growth falls to low/mid-single digits, Commercial organic growth normalizes sharply, integration/capex absorbs cash and multiple normalizes.",
+      "break_conditions": "Funded backlog and organic growth reaccelerate while Commercial margin reaches/holds >=13% and FCF exceeds guide."
+    },
+    {
+      "name": "Base",
+      "probability": 0.4,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029
+      ],
+      "revenue_path_b": [
+        3.8,
+        4.18,
+        4.59,
+        5.05
+      ],
+      "ebitda_margin_path_pct": [
+        17.55,
+        17.8,
+        18.1,
+        18.5
+      ],
+      "fcf_path_m": [
+        352.5,
+        390,
+        445,
+        500
+      ],
+      "adjusted_eps_path": [
+        4.75,
+        5.33,
+        5.97,
+        6.7
+      ],
+      "diluted_shares_m": 91.62,
+      "exit_pe": 31,
+      "per_share_value_2029": 207.7,
+      "price_irr": 0.10761888311693246,
+      "present_value_at_12pct": 147.83675747084544,
+      "formation_conditions": "Naval and special materials drive steady Government growth; Commercial sustains high-single/low-double-digit organic growth after acquisition normalization; advanced reactors remain optionality.",
+      "break_conditions": "Two or more operating tripwires turn red, or advanced nuclear becomes contracted and financially material earlier than modeled."
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.25,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029
+      ],
+      "revenue_path_b": [
+        3.8,
+        4.3,
+        4.88,
+        5.55
+      ],
+      "ebitda_margin_path_pct": [
+        17.55,
+        18.1,
+        18.7,
+        19.4
+      ],
+      "fcf_path_m": [
+        352.5,
+        425,
+        510,
+        600
+      ],
+      "adjusted_eps_path": [
+        4.75,
+        5.6,
+        6.61,
+        7.8
+      ],
+      "diluted_shares_m": 91.62,
+      "exit_pe": 33,
+      "per_share_value_2029": 257.4,
+      "price_irr": 0.18972804684350786,
+      "present_value_at_12pct": 183.21223578717195,
+      "formation_conditions": "Defense materials and commercial capacity convert faster, segment margins expand, and FCF scales without another large funding burden.",
+      "break_conditions": "ROIC falls below 10%, FCF lags despite backlog growth, or integration causes persistent margin dilution."
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.1,
+      "years": [
+        2026,
+        2027,
+        2028,
+        2029
+      ],
+      "revenue_path_b": [
+        3.8,
+        4.42,
+        5.15,
+        6.0
+      ],
+      "ebitda_margin_path_pct": [
+        17.55,
+        18.3,
+        19.1,
+        20.0
+      ],
+      "fcf_path_m": [
+        352.5,
+        450,
+        570,
+        690
+      ],
+      "adjusted_eps_path": [
+        4.75,
+        5.79,
+        7.06,
+        8.6
+      ],
+      "diluted_shares_m": 91.62,
+      "exit_pe": 35,
+      "per_share_value_2029": 301.0,
+      "price_irr": 0.25343076716406476,
+      "present_value_at_12pct": 214.24585459183666,
+      "formation_conditions": "Core execution succeeds and BANR/TRISO/Pele de-risk into repeatable post-2030 revenue, supporting a higher scarcity multiple.",
+      "break_conditions": "Janus/Pele schedules slip materially, follow-on orders fail to appear, or economics remain non-disclosed/non-bankable."
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B - Hybrid",
+    "core": 126.0,
+    "execution": 22.0,
+    "ecosystem": 8.0,
+    "drag": 7.0,
+    "expected_value": 148.78,
+    "expected_value_including_dividend_pv": 151.53,
+    "expected_future_value_2029": 209.03,
+    "expected_irr": 0.10997805478586065,
+    "expected_total_return_irr": 0.11675337130052021,
+    "current_price": 152.85,
+    "base_future_value_2029": 207.7,
+    "base_present_value_at_12pct": 147.84,
+    "hurdle_rate_primary": 0.12,
+    "hurdle_rate_high": 0.15,
+    "upside_downside_ratio_bull_execution_vs_bear": 3.8938547486033523,
+    "valuation_bridge_note": "Core + Execution + Ecosystem - Drag = ~149 current present value, reconciled to the probability-weighted scenario present value within rounding."
+  },
+  "reverse_expectations": {
+    "12pct_hurdle": {
+      "required_2029_price": 214.74324480000004,
+      "required_eps_by_exit_pe": {
+        "28": {
+          "eps": 7.669401600000001,
+          "eps_cagr": 0.17315651484669137
+        },
+        "30": {
+          "eps": 7.158108160000001,
+          "eps_cagr": 0.146484573794057
+        },
+        "32": {
+          "eps": 6.710726400000001,
+          "eps_cagr": 0.12208383976140769
+        }
+      }
+    },
+    "15pct_hurdle": {
+      "required_2029_price": 232.46574374999994,
+      "required_eps_by_exit_pe": {
+        "28": {
+          "eps": 8.302347991071427,
+          "eps_cagr": 0.204580350065799
+        },
+        "30": {
+          "eps": 7.748858124999998,
+          "eps_cagr": 0.17719398202068337
+        },
+        "32": {
+          "eps": 7.264554492187498,
+          "eps_cagr": 0.15213965689787368
+        }
+      }
+    },
+    "fcf_at_12pct_hurdle": {
+      "32": {
+        "required_2029_fcf_m": 614.8316160000002,
+        "fcf_cagr_from_2026_midpoint": 0.20373907022148008
+      },
+      "36": {
+        "required_2029_fcf_m": 546.5169920000002,
+        "fcf_cagr_from_2026_midpoint": 0.15739477119277923
+      },
+      "40": {
+        "required_2029_fcf_m": 491.86529280000013,
+        "fcf_cagr_from_2026_midpoint": 0.11745236538468995
+      }
+    }
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_b": 3.81,
+      "adjusted_eps": 4.74
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_b": 4.2,
+      "adjusted_eps": 5.25
+    },
+    "three_year_revenue_cagr": 0.1262,
+    "three_year_eps_cagr": 0.1368,
+    "analyst_count": 16,
+    "consensus_rating": "Buy",
+    "average_target": 232.31,
+    "revision_trend": "Recent target reductions coexist with Buy/Overweight calls; valuation dispersion remains wide."
+  },
+  "market_positioning": {
+    "short_interest_shares_m": 2.76,
+    "short_float_pct": 3.03,
+    "short_date": "2026-08-14",
+    "forward_pe_history": {
+      "2021": 15.12,
+      "2022": 19.57,
+      "2023": 24.97,
+      "2024": 33.95,
+      "2025": 43.59,
+      "current": 30.36
+    },
+    "all_time_high_close_2026_04_15": 238.1,
+    "drawdown_to_current_pct": -0.3580428391432171
+  },
+  "stance": {
+    "zone": "WATCH / 조건부 관심",
+    "current_price": 152.85,
+    "attractive_entry_band": "$135-$145",
+    "strong_interest_below": "$135",
+    "price_bands": {
+      "<=135": "적극 관심: 확률가중 3년 price IRR 약 15.7% 이상",
+      "135-145": "조건부 관심/매수 검토: price IRR 약 13.0-15.7%",
+      "145-175": "관망/보유: 사업 확인은 필요하지만 기대수익률 여유가 제한",
+      ">175": "기대치 부담: EPS 성장 또는 옵션의 재평가 증거가 먼저 필요"
+    },
+    "horizon": "3 years to 2029 scenario value; monitor quarterly",
+    "thesis_break_rule": "RED KPI 2개 이상 동시 점등 시 강제 재평가"
+  },
+  "catalysts": [
+    {
+      "when": "2026 Q3 filing / Nov. 2026 expected",
+      "event": "3Q26 results and first post-PCG operating read-through",
+      "bull": "Commercial organic growth remains double-digit and margin trajectory moves toward 13%; PCG purchase accounting becomes clearer",
+      "bear": "Acquisition growth masks weak organic demand or integration dilutes margin",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2026 Q4 - 2027 Q1",
+      "event": "BWXT Medical sale expected close window",
+      "bull": "cash-at-close and retained minority economics improve pro forma leverage and capital flexibility",
+      "bear": "net proceeds materially below headline up-to-$800M value or close slips",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2026 Q4 - 2027 Q1",
+      "event": "FY2027 U.S. appropriations / next naval & defense task-order visibility",
+      "bull": "funded backlog continues to rise and naval/special-material awards convert",
+      "bear": "continuing-resolution or program delays shift conversion right",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027 Q1",
+      "event": "Erwin enrichment license application expected",
+      "bull": "filing occurs on schedule with no new major scope issue",
+      "bear": "licensing timeline slips or material technical/regulatory burden emerges",
+      "sensitivity": "M"
+    },
+    {
+      "when": "2027 Feb.-Mar. expected",
+      "event": "FY2026 results and FY2027 guidance",
+      "bull": "FCF at/above high end, Government HSD+ and Commercial organic double-digit growth sustain EPS CAGR",
+      "bear": "guidance implies sub-10% EPS growth while valuation remains ~30x",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027 H1",
+      "event": "Project Pele delivery/test milestones and Janus Phase 1 updates",
+      "bull": "prototype reaches INL/test sequence and Janus progresses toward site/regulatory/fuel milestones",
+      "bear": "another material schedule slip confirms optionality should be discounted further",
+      "sensitivity": "M"
+    },
+    {
+      "when": "through 2027 H1",
+      "event": "Pickering / BWRX-300 / PCG manufacturing ramp",
+      "bull": "Commercial backlog converts with improving service mix and margin",
+      "bear": "capacity additions lift capex faster than revenue or margins",
+      "sensitivity": "M"
+    }
+  ],
+  "base_rate": {
+    "status": "PRIMARY_SOURCE_CEILING",
+    "reason": "A clean historical success-rate distribution for a hybrid of sole-source naval nuclear manufacturing, defense enrichment buildout, and FOAK microreactor commercialization is not publicly available. Bull Ecosystem probability is therefore held at 10%, below the default 15%, and advanced nuclear is not required for Base."
+  },
+  "premortem": [
+    {
+      "failure": "Backlog grows but throughput and FCF do not",
+      "early_sign": "capex remains ~6% of sales while Commercial integration and special-material facilities ramp concurrently",
+      "watch": "Commercial margin, FCF, backlog conversion, ROIC"
+    },
+    {
+      "failure": "Budget/shipbuilding schedules defer Government conversion",
+      "early_sign": "large unfunded Government backlog and known U.S. shipbuilding schedule pressure",
+      "watch": "funded backlog, Government organic growth, task-order timing"
+    },
+    {
+      "failure": "Multiple compresses because growth proves acquisition-heavy and advanced nuclear stays distant",
+      "early_sign": "Kinectrics materially lifts reported growth; Janus operations target early 2030s; Pele has slipped before",
+      "watch": "organic growth, forward P/E, advanced milestone discipline"
+    }
+  ],
+  "false_conservatism": [
+    "Defense enrichment and HPDU may become a larger, more durable sovereign-capability franchise than the Base model credits.",
+    "BANR/TRISO/Pele could produce repeat orders and an external fuel-supply franchise earlier than modeled, while Canadian nuclear capacity scarcity could sustain Commercial margins above Base."
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "promise": "continuing operations / segment reshaping",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3 §3.1; Ch.4 §4.4"
+    },
+    {
+      "rc_id": "RC-002",
+      "promise": "industry B1-B5 + bottom-up demand",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1 §1.1-1.4"
+    },
+    {
+      "rc_id": "RC-003",
+      "promise": "management measurable track record",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2 §2.1-2.4"
+    },
+    {
+      "rc_id": "RC-004",
+      "promise": "naval contracts / appropriations / backlog / throughput",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1 §1.1; Ch.3 §3.2; Ch.4 §4.3"
+    },
+    {
+      "rc_id": "RC-005",
+      "promise": "commercial life extension / new build / PCG / Kinectrics",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1 §1.2; Ch.3 §3.3; Ch.4 §4.2"
+    },
+    {
+      "rc_id": "RC-006",
+      "promise": "Pele / BANR / TRISO quantitative economics",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.3 §3.5; Appendix A.8 ceiling"
+    },
+    {
+      "rc_id": "RC-007",
+      "promise": "enrichment / special materials",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1 §1.3; Ch.3 §3.4"
+    },
+    {
+      "rc_id": "RC-008",
+      "promise": "customer / contract / adoption ledger",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3 §3.6; Appendix A.4"
+    },
+    {
+      "rc_id": "RC-009",
+      "promise": "customer-job competition / moat",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3 §3.7"
+    },
+    {
+      "rc_id": "RC-010",
+      "promise": "facilities / capacity / supply / regulation",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3 §3.8; Appendix A.5"
+    },
+    {
+      "rc_id": "RC-011",
+      "promise": "3Y + latest 8Q financials / accounting quality",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4 §4.1-4.5; Appendix A.1-A.2"
+    },
+    {
+      "rc_id": "RC-012",
+      "promise": "2026-2030 operating bridge",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4 §4.6; Ch.5 §5.2"
+    },
+    {
+      "rc_id": "RC-013",
+      "promise": "debt / liquidity / dividend / buyback / M&A / medical sale",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.4 §4.4; Ch.5 §5.5; Appendix A.8 ceiling"
+    },
+    {
+      "rc_id": "RC-014",
+      "promise": "consensus / revisions / short / 13F / Form 4",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5 §5.1; Ch.6 §6.2; Appendix A.6"
+    },
+    {
+      "rc_id": "RC-015",
+      "promise": "Mode B scenarios / reverse expectations / stance",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5 §5.2-5.6; Ch.6 §6.1"
+    },
+    {
+      "rc_id": "RC-016",
+      "promise": "KPI / catalyst / falsification",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.6 §6.3-6.5"
+    }
+  ],
+  "ceilings": [
+    {
+      "topic": "PCG",
+      "detail": "Exact purchase consideration and preliminary purchase price allocation not disclosed as of 2Q26 filing."
+    },
+    {
+      "topic": "Medical divestiture",
+      "detail": "Headline value is up to $800M; cash at close, earn-out/tax leakage, and retained minority stake economics are not fully disclosed."
+    },
+    {
+      "topic": "Janus",
+      "detail": "Up to $2.2B is the combined ceiling across five vendors; BWXT-specific allocation is not disclosed."
+    },
+    {
+      "topic": "Pele/BANR economics",
+      "detail": "Program-specific unit economics and margin are not publicly quantified."
+    },
+    {
+      "topic": "Advanced-reactor base rate",
+      "detail": "Clean historical commercialization success distribution unavailable; BASE_RATE=PRIMARY_SOURCE_CEILING."
+    }
+  ],
+  "source_registry": [
+    {
+      "id": "S1",
+      "type": "primary",
+      "title": "BWXT 2025 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1486957/000148695726000007/bwxt-20251231.htm",
+      "asof": "2025-12-31"
+    },
+    {
+      "id": "S2",
+      "type": "primary",
+      "title": "BWXT 2Q26 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1486957/000148695726000042/bwxt_63026x10qdocument.htm",
+      "asof": "2026-06-30"
+    },
+    {
+      "id": "S3",
+      "type": "primary",
+      "title": "BWXT Q2 2026 Results",
+      "url": "https://investors.bwxt.com/news-releases/news-release-details/bwx-technologies-reports-second-quarter-2026-results",
+      "asof": "2026-08-03"
+    },
+    {
+      "id": "S4",
+      "type": "primary",
+      "title": "BWXT 2026 Proxy",
+      "url": "https://www.sec.gov/Archives/edgar/data/1486957/000148695726000021/bwxt-20260318.htm",
+      "asof": "2026-03-18"
+    },
+    {
+      "id": "S5",
+      "type": "primary",
+      "title": "Naval Nuclear Propulsion Contracts",
+      "url": "https://investors.bwxt.com/news-releases/news-release-details/bwxt-announces-14-billion-contracts-naval-nuclear-propulsion",
+      "asof": "2026-05-07"
+    },
+    {
+      "id": "S6",
+      "type": "primary",
+      "title": "PCG Acquisition Close",
+      "url": "https://investors.bwxt.com/news-releases/news-release-details/bwxt-completes-acquisition-precision-components-group-expanding",
+      "asof": "2026-07-01"
+    },
+    {
+      "id": "S7",
+      "type": "primary",
+      "title": "Medical Business Sale",
+      "url": "https://investors.bwxt.com/news-releases/news-release-details/bwxt-selling-medical-business-nordic-capital-transaction-valued",
+      "asof": "2026-08-03"
+    },
+    {
+      "id": "S8",
+      "type": "primary",
+      "title": "NNSA DUECE Award",
+      "url": "https://investors.bwxt.com/news-releases/news-release-details/bwxt-awarded-contract-nnsa-defense-fuels-program",
+      "asof": "2025-09-16"
+    },
+    {
+      "id": "S9",
+      "type": "primary",
+      "title": "NNSA HPDU Award",
+      "url": "https://investors.bwxt.com/news-releases/news-release-details/bwxt-awarded-contract-produce-high-purity-depleted-uranium",
+      "asof": "2025-09-30"
+    },
+    {
+      "id": "S10",
+      "type": "primary",
+      "title": "Project Pele Program Page",
+      "url": "https://www.bwxt.com/sectors/defense-space/land/project-pele/",
+      "asof": "2026-08-31"
+    },
+    {
+      "id": "S11",
+      "type": "primary",
+      "title": "BWXT Janus/BANR Selection",
+      "url": "https://investors.bwxt.com/news-releases/news-release-details/us-army-chooses-bwxt-advanced-nuclear-reactor-banr-janus-program",
+      "asof": "2026-08-26"
+    },
+    {
+      "id": "S12",
+      "type": "primary",
+      "title": "U.S. Army Janus Program",
+      "url": "https://www.army.mil/article-amp/294891/army_reaches_agreement_with_private_industry_for_nuclear_micro_reactors",
+      "asof": "2026-08-26"
+    },
+    {
+      "id": "S13",
+      "type": "primary",
+      "title": "Pickering / Darlington BWRX-300 Contracts",
+      "url": "https://www.bwxt.com/bwxt-awarded-historic-manufacturing-contracts-to-support-pickering-life-extension-and-darlington-new-build-projects-2/",
+      "asof": "2025-01-27"
+    },
+    {
+      "id": "S14",
+      "type": "primary",
+      "title": "Erwin Enrichment Licensing",
+      "url": "https://investors.bwxt.com/news-releases/news-release-details/bwxt-begins-nrc-engagement-licensing-new-defense-nuclear-fuel",
+      "asof": "2026-04-07"
+    },
+    {
+      "id": "S15",
+      "type": "primary",
+      "title": "Oak Ridge CMDF Opening",
+      "url": "https://investors.bwxt.com/news-releases/news-release-details/bwxt-launches-new-era-domestic-uranium-enrichment-national",
+      "asof": "2026-01-26"
+    },
+    {
+      "id": "S16",
+      "type": "secondary",
+      "title": "StockAnalysis BWXT Forecast / Ratios",
+      "url": "https://stockanalysis.com/stocks/bwxt/forecast/",
+      "asof": "2026-08-27"
+    },
+    {
+      "id": "S17",
+      "type": "secondary",
+      "title": "StockAnalysis BWXT Ratios",
+      "url": "https://stockanalysis.com/stocks/bwxt/financials/ratios/",
+      "asof": "2026-08-28"
+    },
+    {
+      "id": "S18",
+      "type": "secondary",
+      "title": "MarketBeat BWXT Short Interest",
+      "url": "https://www.marketbeat.com/stocks/NYSE/BWXT/short-interest/",
+      "asof": "2026-08-14"
+    }
+  ],
+  "release_audit": {
+    "RC_TOTAL": 16,
+    "RC_COMPLETE": 14,
+    "RC_CEILING": 2,
+    "RC_UNRESOLVED": 0,
+    "RC_H3_COVERAGE_RATE": 1.0,
+    "LATEST_FILING_CHECK": "PASS",
+    "INDUSTRY_BLOCKS_TOTAL": 4,
+    "INDUSTRY_BLOCKS_LANDED": 4,
+    "EVIDENCE_BOUNDARY_STATED": 1
+  },
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "3Y Revenue & FCF",
+      "authoritative_source_block": "financials.annual_3y",
+      "source_hash": "895d3450f655aad4",
+      "source_values": {
+        "annual_3y": {
+          "2023": {
+            "revenue_m": 2496.3,
+            "government_revenue_m": 2031.3,
+            "commercial_revenue_m": 466.3,
+            "operating_income_m": 383.1,
+            "cfo_m": 363.7,
+            "capex_m": 151.3,
+            "fcf_m": 212.4,
+            "diluted_gaap_eps": 2.68
+          },
+          "2024": {
+            "revenue_m": 2703.7,
+            "government_revenue_m": 2183.0,
+            "commercial_revenue_m": 524.0,
+            "operating_income_m": 380.6,
+            "cfo_m": 408.4,
+            "capex_m": 153.6,
+            "fcf_m": 254.8,
+            "diluted_gaap_eps": 3.07
+          },
+          "2025": {
+            "revenue_m": 3198.4,
+            "government_revenue_m": 2350.1,
+            "commercial_revenue_m": 853.1,
+            "operating_income_m": 404.5,
+            "cfo_m": 479.8,
+            "capex_m": 184.6,
+            "fcf_m": 295.3,
+            "diluted_gaap_eps": 3.58
+          }
+        }
+      },
+      "status": "PASS",
+      "displayed_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "rendered_asset_locator": "PDF p.12"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "Backlog Expansion and Mix",
+      "authoritative_source_block": "financials.backlog",
+      "source_hash": "a181dd96e806b76a",
+      "source_values": {
+        "backlog": [
+          {
+            "period": "2024-12-31",
+            "government_m": 3913,
+            "commercial_m": 930,
+            "total_m": 4843,
+            "unfunded_government_m": null
+          },
+          {
+            "period": "2025-12-31",
+            "government_m": 5541,
+            "commercial_m": 1720,
+            "total_m": 7261,
+            "unfunded_government_m": 2151.3
+          },
+          {
+            "period": "2026-06-30",
+            "government_m": 6798,
+            "commercial_m": 1600,
+            "total_m": 8398.1,
+            "unfunded_government_m": 2256.4
+          }
+        ]
+      },
+      "status": "PASS",
+      "displayed_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "rendered_asset_locator": "PDF p.14"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "Latest 8Q Revenue and EPS",
+      "authoritative_source_block": "financials.quarterly_8q",
+      "source_hash": "17e2b35915c16818",
+      "source_values": {
+        "quarterly_8q": [
+          {
+            "quarter": "3Q24",
+            "revenue_m": 672.0,
+            "operating_income_m": 96.6,
+            "diluted_gaap_eps": 0.76
+          },
+          {
+            "quarter": "4Q24",
+            "revenue_m": 746.3,
+            "operating_income_m": 92.3,
+            "diluted_gaap_eps": 0.77
+          },
+          {
+            "quarter": "1Q25",
+            "revenue_m": 682.3,
+            "operating_income_m": 96.6,
+            "diluted_gaap_eps": 0.82
+          },
+          {
+            "quarter": "2Q25",
+            "revenue_m": 764.0,
+            "operating_income_m": 102.4,
+            "diluted_gaap_eps": 0.85
+          },
+          {
+            "quarter": "3Q25",
+            "revenue_m": 866.3,
+            "operating_income_m": 113.3,
+            "diluted_gaap_eps": 0.89
+          },
+          {
+            "quarter": "4Q25",
+            "revenue_m": 885.8,
+            "operating_income_m": 92.1,
+            "diluted_gaap_eps": 1.01
+          },
+          {
+            "quarter": "1Q26",
+            "revenue_m": 860.2,
+            "operating_income_m": 106.7,
+            "diluted_gaap_eps": 0.99
+          },
+          {
+            "quarter": "2Q26",
+            "revenue_m": 901.6,
+            "operating_income_m": 114.1,
+            "diluted_gaap_eps": 0.97
+          }
+        ]
+      },
+      "status": "PASS",
+      "displayed_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "rendered_asset_locator": "PDF p.13"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "Scenario 2029 Per-share Values",
+      "authoritative_source_block": "scenarios",
+      "source_hash": "4fcebd620ae3f9d1",
+      "source_values": {
+        "scenarios": [
+          [
+            "Bear",
+            0.25,
+            126.0
+          ],
+          [
+            "Base",
+            0.4,
+            207.7
+          ],
+          [
+            "Bull Execution",
+            0.25,
+            257.4
+          ],
+          [
+            "Bull Ecosystem",
+            0.1,
+            301.0
+          ]
+        ],
+        "current_price": 152.85
+      },
+      "status": "PASS",
+      "displayed_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "rendered_asset_locator": "PDF p.17"
+    },
+    {
+      "vis_id": "VIS-005",
+      "figure_title": "Reverse Expectations EPS Hurdle",
+      "authoritative_source_block": "reverse_expectations",
+      "source_hash": "30f9a6bd8e843c14",
+      "source_values": {
+        "reverse": {
+          "12pct_hurdle": {
+            "required_2029_price": 214.74324480000004,
+            "required_eps_by_exit_pe": {
+              "28": {
+                "eps": 7.669401600000001,
+                "eps_cagr": 0.17315651484669137
+              },
+              "30": {
+                "eps": 7.158108160000001,
+                "eps_cagr": 0.146484573794057
+              },
+              "32": {
+                "eps": 6.710726400000001,
+                "eps_cagr": 0.12208383976140769
+              }
+            }
+          },
+          "15pct_hurdle": {
+            "required_2029_price": 232.46574374999994,
+            "required_eps_by_exit_pe": {
+              "28": {
+                "eps": 8.302347991071427,
+                "eps_cagr": 0.204580350065799
+              },
+              "30": {
+                "eps": 7.748858124999998,
+                "eps_cagr": 0.17719398202068337
+              },
+              "32": {
+                "eps": 7.264554492187498,
+                "eps_cagr": 0.15213965689787368
+              }
+            }
+          },
+          "fcf_at_12pct_hurdle": {
+            "32": {
+              "required_2029_fcf_m": 614.8316160000002,
+              "fcf_cagr_from_2026_midpoint": 0.20373907022148008
+            },
+            "36": {
+              "required_2029_fcf_m": 546.5169920000002,
+              "fcf_cagr_from_2026_midpoint": 0.15739477119277923
+            },
+            "40": {
+              "required_2029_fcf_m": 491.86529280000013,
+              "fcf_cagr_from_2026_midpoint": 0.11745236538468995
+            }
+          }
+        }
+      },
+      "status": "PASS",
+      "displayed_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "rendered_asset_locator": "PDF p.18"
+    },
+    {
+      "vis_id": "VIS-006",
+      "figure_title": "Forward P/E History",
+      "authoritative_source_block": "market_positioning.forward_pe_history",
+      "source_hash": "2ee3c7777aff9d28",
+      "source_values": {
+        "forward_pe_history": {
+          "2021": 15.12,
+          "2022": 19.57,
+          "2023": 24.97,
+          "2024": 33.95,
+          "2025": 43.59,
+          "current": 30.36
+        }
+      },
+      "status": "PASS",
+      "displayed_values_match": true,
+      "table_match": true,
+      "narrative_match": true,
+      "render_match": true,
+      "rendered_asset_locator": "PDF p.16"
+    }
+  ]
+}

@@ -1,0 +1,1631 @@
+{
+  "meta": {
+    "ticker": "ASML",
+    "company": "ASML Holding N.V.",
+    "T0": "2026-09-05",
+    "price_asof": "2026-09-04 Euronext Amsterdam close",
+    "price_currency": "EUR",
+    "current_price": 1467.4,
+    "filing_asof": "Q2 2026 / six months ended 2026-06-28",
+    "consensus_asof": "2026-09-05",
+    "version": "DDOS v1.7 Production"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "fy": 2023,
+        "revenue": 27.559,
+        "gross_margin": 51.3,
+        "operating_income": 9.042,
+        "net_income": 7.839,
+        "eps": 19.91,
+        "ocf": 5.443,
+        "capex_intangibles": 2.196,
+        "fcf": 3.247,
+        "cash_sti": 7.01
+      },
+      {
+        "fy": 2024,
+        "revenue": 28.263,
+        "gross_margin": 51.3,
+        "operating_income": 9.023,
+        "net_income": 7.572,
+        "eps": 19.25,
+        "ocf": 11.166,
+        "capex_intangibles": 2.083,
+        "fcf": 9.083,
+        "cash_sti": 12.741
+      },
+      {
+        "fy": 2025,
+        "revenue": 32.667,
+        "gross_margin": 52.8,
+        "operating_income": 11.301,
+        "net_income": 9.609,
+        "eps": 24.73,
+        "ocf": 12.659,
+        "capex_intangibles": 1.631,
+        "fcf": 11.028,
+        "cash_sti": 13.322
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "q": "Q3'24",
+        "sales": 7.467,
+        "ibm": 1.541,
+        "gross_margin": 50.8,
+        "net_income": 2.077,
+        "eps": 5.28,
+        "new_units": 106,
+        "used_units": 10,
+        "bookings": 2.633,
+        "fcf": 0.534
+      },
+      {
+        "q": "Q4'24",
+        "sales": 9.263,
+        "ibm": 2.147,
+        "gross_margin": 51.7,
+        "net_income": 2.693,
+        "eps": 6.85,
+        "new_units": 119,
+        "used_units": 13,
+        "bookings": 7.088,
+        "fcf": 8.839
+      },
+      {
+        "q": "Q1'25",
+        "sales": 7.742,
+        "ibm": 2.001,
+        "gross_margin": 54.0,
+        "net_income": 2.355,
+        "eps": 6.0,
+        "new_units": 73,
+        "used_units": 4,
+        "bookings": 3.936,
+        "fcf": -0.476
+      },
+      {
+        "q": "Q2'25",
+        "sales": 7.692,
+        "ibm": 2.096,
+        "gross_margin": 53.7,
+        "net_income": 2.29,
+        "eps": 5.9,
+        "new_units": 67,
+        "used_units": 9,
+        "bookings": 5.541,
+        "fcf": 0.319
+      },
+      {
+        "q": "Q3'25",
+        "sales": 7.516,
+        "ibm": 1.962,
+        "gross_margin": 51.6,
+        "net_income": 2.125,
+        "eps": 5.49,
+        "new_units": 66,
+        "used_units": 6,
+        "bookings": 5.399,
+        "fcf": 0.244
+      },
+      {
+        "q": "Q4'25",
+        "sales": 9.718,
+        "ibm": 2.134,
+        "gross_margin": 52.2,
+        "net_income": 2.84,
+        "eps": 7.35,
+        "new_units": 94,
+        "used_units": 8,
+        "bookings": 13.158,
+        "fcf": 10.94
+      },
+      {
+        "q": "Q1'26",
+        "sales": 8.767,
+        "ibm": 2.488,
+        "gross_margin": 53.0,
+        "net_income": 2.757,
+        "eps": 7.15,
+        "new_units": 67,
+        "used_units": 12,
+        "bookings": null,
+        "fcf": -2.608
+      },
+      {
+        "q": "Q2'26",
+        "sales": 9.326,
+        "ibm": 2.762,
+        "gross_margin": 54.0,
+        "net_income": 2.918,
+        "eps": 7.59,
+        "new_units": 86,
+        "used_units": 5,
+        "bookings": null,
+        "fcf": 1.317
+      }
+    ],
+    "ceilings": [
+      "Quarterly bookings disclosure discontinued from Q1 2026; Q1/Q2 2026 bookings are N/D by primary-source ceiling.",
+      "IBM installed-base count, service-vs-upgrade margin split and attach rate are not disclosed.",
+      "Customer-by-customer order values and exact High-NA layer economics are confidential."
+    ],
+    "balance_sheet_q2_2026": {
+      "cash": 6.6719,
+      "short_term_investments": 0.9096,
+      "short_term_borrowings_current_debt": 1.7353,
+      "long_term_debt": 1.9844,
+      "net_cash": 3.8618,
+      "inventories": 11.7395
+    }
+  },
+  "business_mix": {
+    "2025": {
+      "total_sales": 32.667,
+      "system_sales": 24.474,
+      "euv_sales": 11.6,
+      "euv_units": 48,
+      "duv_sales": 12.0,
+      "duv_units": 279,
+      "metrology_inspection_sales": 0.825,
+      "ibm_sales": 8.193,
+      "logic_system_revenue": 16.1,
+      "memory_system_revenue": 8.4,
+      "china_total_sales_pct": 29.1
+    },
+    "2024": {
+      "logic_system_revenue": 13.2,
+      "memory_system_revenue": 8.6,
+      "china_total_sales_pct": 36.1
+    },
+    "q2_2026": {
+      "logic_system_sales_pct": 51,
+      "memory_system_sales_pct": 49,
+      "china_system_sales_pct": 14
+    }
+  },
+  "capacity": {
+    "low_na_euv_2026_systems": 65,
+    "low_na_euv_2027_growth_pct": 30,
+    "duv_immersion_2026_systems": 130,
+    "duv_immersion_2027_growth_pct": 30,
+    "2028_additional_growth_under_investigation_pct": 30
+  },
+  "kpis": [
+    {
+      "name": "FY/quarterly revenue vs guidance",
+      "current": "FY2026 guide €43–45bn; Q3 €11–12bn",
+      "history": [],
+      "thresholds": {
+        "green": "FY2026 ≥€44bn and 2027 visibility remains supported by capacity/order comments",
+        "yellow": "within guide but 2027 customer push-outs appear",
+        "red": "guide cut or two consecutive quarters of material shipment/order push-outs"
+      }
+    },
+    {
+      "name": "IBM sales / gross-margin contribution",
+      "current": "Q2'26 €2.762bn; GM 54.0%",
+      "history": [
+        {
+          "period": "Q3'24",
+          "ibm": 1.541,
+          "gm": 50.8
+        },
+        {
+          "period": "Q4'24",
+          "ibm": 2.147,
+          "gm": 51.7
+        },
+        {
+          "period": "Q1'25",
+          "ibm": 2.001,
+          "gm": 54.0
+        },
+        {
+          "period": "Q2'25",
+          "ibm": 2.096,
+          "gm": 53.7
+        },
+        {
+          "period": "Q3'25",
+          "ibm": 1.962,
+          "gm": 51.6
+        },
+        {
+          "period": "Q4'25",
+          "ibm": 2.134,
+          "gm": 52.2
+        },
+        {
+          "period": "Q1'26",
+          "ibm": 2.488,
+          "gm": 53.0
+        },
+        {
+          "period": "Q2'26",
+          "ibm": 2.762,
+          "gm": 54.0
+        }
+      ],
+      "thresholds": {
+        "green": "IBM double-digit YoY with GM ≥55% range during 2027 ramp",
+        "yellow": "IBM grows but upgrade mix softens and GM <54%",
+        "red": "IBM contraction plus sustained GM deterioration"
+      }
+    },
+    {
+      "name": "low-NA EUV capacity / order coverage",
+      "current": "2026 ~65 systems; 2027 +30% planned; nearly all 2027 EUV orders required received",
+      "history": [],
+      "thresholds": {
+        "green": "2027 capacity expansion on schedule and 2028 order coverage rises",
+        "yellow": "supplier timing slips but no customer cancellation",
+        "red": "material 2027 capacity delay or visible cancellations"
+      }
+    },
+    {
+      "name": "DUV immersion capacity / units",
+      "current": "2026 capacity ~130; 2027 +30% planned",
+      "history": [],
+      "thresholds": {
+        "green": "~169-system 2027 capacity is absorbed without pricing pressure",
+        "yellow": "non-China demand offsets China only partially",
+        "red": "under-utilization/discounting or rapid China substitution"
+      }
+    },
+    {
+      "name": "Logic vs Memory system-sales balance",
+      "current": "Q2'26 ~51% Logic / 49% Memory",
+      "history": [],
+      "thresholds": {
+        "green": "both Logic and Memory remain contributors",
+        "yellow": "growth concentrates in one end-market",
+        "red": "simultaneous Logic and Memory capex cuts"
+      }
+    },
+    {
+      "name": "China system-sales mix / domestic DUV qualification",
+      "current": "Q2'26 China ~14% of system sales vs 2025 total-sales China 29.1%",
+      "history": [],
+      "thresholds": {
+        "green": "China mix declines as guided while non-China growth more than offsets",
+        "yellow": "domestic tools gain limited mature-node qualification",
+        "red": "domestic immersion DUV proves competitive HVM reliability and ASML China DUV erodes faster than offset"
+      }
+    },
+    {
+      "name": "High-NA HVM adoption / repeat orders",
+      "current": "Intel selected 18A HVM layers; Samsung R&D; TSMC HVM timing not publicly fixed",
+      "history": [],
+      "thresholds": {
+        "green": "second/third customer HVM insertion + repeat tool orders",
+        "yellow": "qualification continues but insertion dates slip",
+        "red": "multiple customers defer beyond expected roadmap because low-NA economics remain superior"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Downside",
+      "probability": 0.25,
+      "revenue_path": [
+        44,
+        49,
+        53,
+        56,
+        59,
+        62,
+        65
+      ],
+      "fcf_margin_path": [
+        28.0,
+        28.0,
+        28.0,
+        28.5,
+        29.0,
+        29.0,
+        29.0
+      ],
+      "ebit_margin_path": [
+        38.0,
+        35.0,
+        35.0,
+        35.0,
+        35.0,
+        35.0,
+        35.0
+      ],
+      "diluted_shares": 377.0,
+      "per_share_value": 876.824437876107,
+      "future_2029_price": 1016.0212201591512,
+      "cumulative_dividends_2027_29": 28.0,
+      "future_2029_total_value": 1044.0212201591512,
+      "scenario_irr": -0.10726971012468867,
+      "conditions": "2027 주문은 상당 부분 매출화되지만 2028 AI CAPEX가 둔화되고, 중국 DUV 국산화가 빨라지며, High-NA 채택이 일부 고객에 머문다.",
+      "fcf": [
+        12.32,
+        13.72,
+        14.84,
+        15.96,
+        17.11,
+        17.98,
+        18.85
+      ]
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "revenue_path": [
+        44,
+        55,
+        65,
+        72,
+        78,
+        84,
+        90
+      ],
+      "fcf_margin_path": [
+        29.0,
+        30.5,
+        32.0,
+        32.5,
+        33.0,
+        33.0,
+        33.0
+      ],
+      "ebit_margin_path": [
+        38.5,
+        39.5,
+        40.0,
+        40.0,
+        40.5,
+        41.0,
+        41.0
+      ],
+      "diluted_shares": 375.0,
+      "per_share_value": 1337.148220279894,
+      "future_2029_price": 1774.08,
+      "cumulative_dividends_2027_29": 34.0,
+      "future_2029_total_value": 1808.08,
+      "scenario_irr": 0.07206975142569028,
+      "conditions": "2027 low-NA EUV/DUV 증설이 소화되고 AI Logic·DRAM/HBM 투자가 2028년까지 강하게 이어진다. IBM은 두 자릿수 성장, High-NA는 점진 확산한다.",
+      "fcf": [
+        12.76,
+        16.775,
+        20.8,
+        23.4,
+        25.74,
+        27.72,
+        29.7
+      ]
+    },
+    {
+      "name": "Upside",
+      "probability": 0.25,
+      "revenue_path": [
+        44,
+        59,
+        73,
+        87,
+        100,
+        112,
+        123
+      ],
+      "fcf_margin_path": [
+        29.0,
+        31.5,
+        33.5,
+        34.5,
+        35.0,
+        35.0,
+        35.0
+      ],
+      "ebit_margin_path": [
+        38.5,
+        40.5,
+        41.5,
+        42.0,
+        42.5,
+        42.5,
+        42.5
+      ],
+      "diluted_shares": 372.0,
+      "per_share_value": 1882.2309247357568,
+      "future_2029_price": 2455.645161290323,
+      "cumulative_dividends_2027_29": 40.0,
+      "future_2029_total_value": 2495.645161290323,
+      "scenario_irr": 0.19365303631025133,
+      "conditions": "2028 추가 증설이 현실화되고 High-NA가 여러 Logic·Memory 고객의 HVM 표준으로 빠르게 확산한다. pricing·upgrade mix가 강하고 중국 누수를 비중국 고객이 압도한다.",
+      "fcf": [
+        12.76,
+        18.585,
+        24.455,
+        30.015,
+        35.0,
+        39.2,
+        43.05
+      ]
+    }
+  ],
+  "valuation": {
+    "mode": "C — Mature Compounder with semiconductor-capex cyclical overlay",
+    "wacc": 8.0,
+    "terminal_growth": 3.5,
+    "core": 967.25,
+    "execution": 369.9,
+    "ecosystem": 0.0,
+    "drag": 0.0,
+    "base_dcf": 1337.15,
+    "dcf_sensitivity_base": {
+      "g_3_0": 1229.09,
+      "g_3_5": 1337.15,
+      "g_4_0": 1472.22
+    },
+    "expected_value": 1358.34,
+    "expected_future_2029_value": 1788.96,
+    "expected_irr": 6.83,
+    "current_price": 1467.4,
+    "upside_downside_ratio": 0.7,
+    "hurdle_irr_pct": 12.0,
+    "attractive_price_trigger": 1200.0
+  },
+  "reverse_expectations": {
+    "starting_2026_fcf": 12.76,
+    "wacc": 8.0,
+    "current_equity_value_bn": 564.8,
+    "q2_2026_net_cash_bn": 3.8618,
+    "cases": [
+      {
+        "terminal_growth": 3.0,
+        "required_fcf_cagr": 19.4983,
+        "required_2032_fcf": 37.155,
+        "required_2032_revenue_at_33pct_fcf_margin": 112.592,
+        "required_revenue_cagr_2026_32": 16.9523
+      },
+      {
+        "terminal_growth": 3.5,
+        "required_fcf_cagr": 17.5867,
+        "required_2032_fcf": 33.729,
+        "required_2032_revenue_at_33pct_fcf_margin": 102.208,
+        "required_revenue_cagr_2026_32": 15.0815
+      },
+      {
+        "terminal_growth": 4.0,
+        "required_fcf_cagr": 15.4738,
+        "required_2032_fcf": 30.252,
+        "required_2032_revenue_at_33pct_fcf_margin": 91.672,
+        "required_revenue_cagr_2026_32": 13.0137
+      }
+    ],
+    "interpretation": "At g=3.5%, current price requires roughly 17.6% FCF CAGR from 2026-2032 and ~€33.7bn 2032 FCF. At a 33% normalized FCF margin, that implies ~€102bn revenue in 2032."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2027,
+      "revenue": 54.457,
+      "ebit": 23.107,
+      "net_income": 19.428
+    },
+    "fy2": {
+      "year": 2028,
+      "revenue": 64.842,
+      "ebit": 28.869,
+      "net_income": 24.285
+    },
+    "2026_field_note": "Observed 2026 consensus feed around €42.8bn was stale/inconsistent with latest company guide €43–45bn; company guide takes precedence.",
+    "revision_trend": "Strong upward revisions in 2026 following Q1 and Q2 guidance increases; 2027/28 consensus already embeds a steep earnings step-up."
+  },
+  "valuation_history": {
+    "metric": "TTM P/E",
+    "sample": "Quarter-end/specified samples 2015-2026, Macrotrends cross-check",
+    "current_pe": 53.21,
+    "median_pe": 33.61,
+    "current_percentile": 93.8,
+    "low": 20.11,
+    "high": 61.86,
+    "history": [
+      {
+        "date": "2015-03-31",
+        "pe": 23.49,
+        "adr_price_usd": 90.25
+      },
+      {
+        "date": "2015-06-30",
+        "pe": 26.45,
+        "adr_price_usd": 93.72
+      },
+      {
+        "date": "2015-09-30",
+        "pe": 21.79,
+        "adr_price_usd": 79.19
+      },
+      {
+        "date": "2015-12-31",
+        "pe": 22.41,
+        "adr_price_usd": 79.9
+      },
+      {
+        "date": "2016-03-31",
+        "pe": 29.9,
+        "adr_price_usd": 90.36
+      },
+      {
+        "date": "2016-06-30",
+        "pe": 29.92,
+        "adr_price_usd": 90.36
+      },
+      {
+        "date": "2016-09-30",
+        "pe": 30.97,
+        "adr_price_usd": 99.8
+      },
+      {
+        "date": "2016-12-31",
+        "pe": 26.84,
+        "adr_price_usd": 102.19
+      },
+      {
+        "date": "2017-03-31",
+        "pe": 27.37,
+        "adr_price_usd": 120.95
+      },
+      {
+        "date": "2017-06-30",
+        "pe": 25.67,
+        "adr_price_usd": 119.86
+      },
+      {
+        "date": "2017-09-30",
+        "pe": 30.57,
+        "adr_price_usd": 157.47
+      },
+      {
+        "date": "2017-12-31",
+        "pe": 28.81,
+        "adr_price_usd": 159.88
+      },
+      {
+        "date": "2018-03-31",
+        "pe": 30.54,
+        "adr_price_usd": 182.63
+      },
+      {
+        "date": "2018-06-30",
+        "pe": 28.59,
+        "adr_price_usd": 183.7
+      },
+      {
+        "date": "2018-09-30",
+        "pe": 25.78,
+        "adr_price_usd": 174.47
+      },
+      {
+        "date": "2018-12-31",
+        "pe": 20.11,
+        "adr_price_usd": 144.41
+      },
+      {
+        "date": "2019-03-31",
+        "pe": 26.5,
+        "adr_price_usd": 174.5
+      },
+      {
+        "date": "2019-06-30",
+        "pe": 31.38,
+        "adr_price_usd": 195.21
+      },
+      {
+        "date": "2019-09-30",
+        "pe": 38.78,
+        "adr_price_usd": 233.22
+      },
+      {
+        "date": "2019-12-31",
+        "pe": 40.52,
+        "adr_price_usd": 279.04
+      },
+      {
+        "date": "2020-03-31",
+        "pe": 35.45,
+        "adr_price_usd": 246.69
+      },
+      {
+        "date": "2020-06-30",
+        "pe": 45.54,
+        "adr_price_usd": 348.76
+      },
+      {
+        "date": "2020-09-30",
+        "pe": 39.03,
+        "adr_price_usd": 349.94
+      },
+      {
+        "date": "2020-12-31",
+        "pe": 47.9,
+        "adr_price_usd": 463.98
+      },
+      {
+        "date": "2021-03-31",
+        "pe": 46.91,
+        "adr_price_usd": 587.31
+      },
+      {
+        "date": "2021-06-30",
+        "pe": 48.5,
+        "adr_price_usd": 659.12
+      },
+      {
+        "date": "2021-09-30",
+        "pe": 45.42,
+        "adr_price_usd": 710.9
+      },
+      {
+        "date": "2021-12-31",
+        "pe": 44.89,
+        "adr_price_usd": 761.55
+      },
+      {
+        "date": "2022-03-31",
+        "pe": 42.45,
+        "adr_price_usd": 638.91
+      },
+      {
+        "date": "2022-06-30",
+        "pe": 29.04,
+        "adr_price_usd": 458.33
+      },
+      {
+        "date": "2022-09-30",
+        "pe": 26.59,
+        "adr_price_usd": 400.99
+      },
+      {
+        "date": "2022-12-31",
+        "pe": 35.54,
+        "adr_price_usd": 529.1
+      },
+      {
+        "date": "2023-03-31",
+        "pe": 36.18,
+        "adr_price_usd": 660.59
+      },
+      {
+        "date": "2023-06-30",
+        "pe": 35.55,
+        "adr_price_usd": 705.39
+      },
+      {
+        "date": "2023-09-30",
+        "pe": 27.67,
+        "adr_price_usd": 574.21
+      },
+      {
+        "date": "2023-12-31",
+        "pe": 34.39,
+        "adr_price_usd": 740.23
+      },
+      {
+        "date": "2024-03-31",
+        "pe": 48.53,
+        "adr_price_usd": 950.73
+      },
+      {
+        "date": "2024-06-30",
+        "pe": 54.11,
+        "adr_price_usd": 1004.01
+      },
+      {
+        "date": "2024-09-30",
+        "pe": 42.85,
+        "adr_price_usd": 819.52
+      },
+      {
+        "date": "2024-12-31",
+        "pe": 32.82,
+        "adr_price_usd": 683.24
+      },
+      {
+        "date": "2025-03-31",
+        "pe": 27.55,
+        "adr_price_usd": 654.6
+      },
+      {
+        "date": "2025-06-30",
+        "pe": 30.38,
+        "adr_price_usd": 794.13
+      },
+      {
+        "date": "2025-09-30",
+        "pe": 35.96,
+        "adr_price_usd": 961.76
+      },
+      {
+        "date": "2025-12-31",
+        "pe": 38.09,
+        "adr_price_usd": 1064.74
+      },
+      {
+        "date": "2026-03-31",
+        "pe": 43.87,
+        "adr_price_usd": 1316.25
+      },
+      {
+        "date": "2026-06-30",
+        "pe": 61.86,
+        "adr_price_usd": 1986.87
+      },
+      {
+        "date": "2026-08-06",
+        "pe": 53.06,
+        "adr_price_usd": 1704.37
+      },
+      {
+        "date": "2026-09-04",
+        "pe": 53.21,
+        "adr_price_usd": 1707.74
+      }
+    ]
+  },
+  "stance": {
+    "zone": "회피 / 관망 — 신규 매수에는 가격 규율 필요",
+    "price_bands": {
+      "current": 1467.4,
+      "base_fair_value_point": 1337.15,
+      "base_fair_value_sensitivity": "€1,229–€1,472 (WACC 8%, g 3.0–4.0%)",
+      "attractive_entry": "€1,100–€1,200",
+      "trigger": "약 €1,200 이하에서 DCF Bull/Bear U/D >2.0, probability-weighted 3Y IRR 약 14%"
+    },
+    "horizon": "약 3년, 2029E exit cross-check; intrinsic DCF through 2032",
+    "what_changes_view": "2027 CMD, 2027/28 capacity absorption, High-NA second/third HVM customer, IBM/GM persistence, China DUV qualification"
+  },
+  "catalysts": [
+    {
+      "when": "2026-10-14",
+      "event": "Q3 2026 results / second 2026 interim dividend declaration",
+      "bull": "sales near/above €12bn, GM ≥56%, 2027 visibility reiterated",
+      "bear": "GM or shipment timing disappoints; 2027 capacity language softens",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027-01 (expected)",
+      "event": "Q4/FY2026 results and initial FY2027 guide",
+      "bull": "2027 guide validates ~€55bn Base revenue scale",
+      "bear": "guide implies capacity ramp or customer pull-ins were overestimated",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027-Q1/Q2",
+      "event": "2027 low-NA EUV and DUV immersion capacity ramp evidence",
+      "bull": "+30% capacity ramps without supplier/yield bottlenecks",
+      "bear": "optics/source/stage bottleneck or customer site-readiness delays",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2027-04 (expected)",
+      "event": "Q1 2027 results / AGM season",
+      "bull": "IBM/GM remain strong despite system ramp; buyback continues",
+      "bear": "working-capital/capex absorbs cash with weaker margins",
+      "sensitivity": "M"
+    },
+    {
+      "when": "2027-06-10",
+      "event": "ASML Capital Markets Day",
+      "bull": "2030 framework materially raised above old €44–60bn range with credible capacity/customer bridge",
+      "bear": "long-term framework rises only modestly or emphasizes High-NA/China uncertainty",
+      "sensitivity": "H"
+    },
+    {
+      "when": "2026-09 to 2027-09",
+      "event": "High-NA customer qualification / repeat-order disclosures",
+      "bull": "Intel follow-on plus additional Logic/Memory HVM customer",
+      "bear": "adoption remains R&D-only outside Intel",
+      "sensitivity": "H"
+    },
+    {
+      "when": "ongoing",
+      "event": "Dutch/US export-control changes and China domestic DUV qualification",
+      "bull": "non-China demand offsets restricted China revenue; local China tools remain low-volume",
+      "bear": "new controls impair service/system revenue or domestic immersion ramps faster",
+      "sensitivity": "H"
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "promise": "산업 value chain/profit pool/demand/supply/cycle B1-B4",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1",
+      "appendix_locator": "App RC ledger"
+    },
+    {
+      "rc_id": "RC-002",
+      "promise": "AI→Logic/DRAM capacity→lithography intensity→revenue",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1",
+      "appendix_locator": "App transmission audit"
+    },
+    {
+      "rc_id": "RC-003",
+      "promise": "0.33NA EUV vs DUV multi-patterning quantitative",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3",
+      "appendix_locator": "App product matrix"
+    },
+    {
+      "rc_id": "RC-004",
+      "promise": "High-NA readiness/adoption/economics",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3",
+      "appendix_locator": "TSMC timing/layer economics ceiling"
+    },
+    {
+      "rc_id": "RC-005",
+      "promise": "DUV application/geography incl China/substitutes",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1/3",
+      "appendix_locator": "App competition"
+    },
+    {
+      "rc_id": "RC-006",
+      "promise": "IBM installed base/service/upgrades economics",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3/4",
+      "appendix_locator": "attach-rate/margin split ceiling"
+    },
+    {
+      "rc_id": "RC-007",
+      "promise": "customer/adoption/order ledger",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3",
+      "appendix_locator": "customer order-value ceiling"
+    },
+    {
+      "rc_id": "RC-008",
+      "promise": "competition by customer job",
+      "status": "COMPLETE",
+      "h3_locator": "Ch3",
+      "appendix_locator": "App matrix"
+    },
+    {
+      "rc_id": "RC-009",
+      "promise": "2026-28 capacity/supply chain",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch3",
+      "appendix_locator": "supplier-by-supplier 2028 ceiling"
+    },
+    {
+      "rc_id": "RC-010",
+      "promise": "export control/geopolitics",
+      "status": "COMPLETE",
+      "h3_locator": "Ch1/6",
+      "appendix_locator": "App regulatory"
+    },
+    {
+      "rc_id": "RC-011",
+      "promise": "Fouquet Promise→Delivery/governance/comp",
+      "status": "COMPLETE",
+      "h3_locator": "Ch2",
+      "appendix_locator": "App management ledger"
+    },
+    {
+      "rc_id": "RC-012",
+      "promise": "3Y + latest 8Q financials/accounting quality",
+      "status": "COMPLETE",
+      "h3_locator": "Ch4",
+      "appendix_locator": "App financials"
+    },
+    {
+      "rc_id": "RC-013",
+      "promise": "capital/shareholder returns/dilution",
+      "status": "COMPLETE",
+      "h3_locator": "Ch2/4/5",
+      "appendix_locator": "App capital structure"
+    },
+    {
+      "rc_id": "RC-014",
+      "promise": "KPI/cycle history bookings/backlog/units/ASP/end-use/IBM",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch4/6",
+      "appendix_locator": "bookings disclosure ceiling"
+    },
+    {
+      "rc_id": "RC-015",
+      "promise": "consensus/revisions/targets/short/institutional/insider + VP",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch5/6",
+      "appendix_locator": "ownership/insider ceiling"
+    },
+    {
+      "rc_id": "RC-016",
+      "promise": "Mode C valuation/scenarios/reverse expectations",
+      "status": "COMPLETE",
+      "h3_locator": "Ch5",
+      "appendix_locator": "App valuation arithmetic"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "ASML Q2 2026 Financial Results",
+      "date": "2026-07-15",
+      "url": "https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results",
+      "type": "Primary"
+    },
+    {
+      "id": "S02",
+      "title": "ASML Q1 2026 Financial Results",
+      "date": "2026-04-15",
+      "url": "https://www.asml.com/en/news/press-releases/2026/q1-2026-financial-results",
+      "type": "Primary"
+    },
+    {
+      "id": "S03",
+      "title": "ASML Q4 / FY2025 Financial Results",
+      "date": "2026-01-28",
+      "url": "https://www.asml.com/en/news/press-releases/2026/q4-2025-financial-results",
+      "type": "Primary"
+    },
+    {
+      "id": "S04",
+      "title": "ASML 2025 Annual Report / Financials",
+      "date": "2026",
+      "url": "https://www.asml.com/en/investors/annual-report/2025",
+      "type": "Primary"
+    },
+    {
+      "id": "S05",
+      "title": "ASML Investor Day 2024",
+      "date": "2024-11-14",
+      "url": "https://www.asml.com/en/news/press-releases/2024/asml-investor-day-2024",
+      "type": "Primary"
+    },
+    {
+      "id": "S06",
+      "title": "ASML Products: EUV / DUV / EXE platform",
+      "date": "accessed 2026-09-05",
+      "url": "https://www.asml.com/en/products",
+      "type": "Primary"
+    },
+    {
+      "id": "S07",
+      "title": "ASML 2026 Statutory Interim Report / US GAAP Q2 statements",
+      "date": "2026-07-15",
+      "url": "https://www.sec.gov/Archives/edgar/data/937966/000162828026048235/financialstatementsusgaa.htm",
+      "type": "Primary"
+    },
+    {
+      "id": "S08",
+      "title": "ASML AGM 2026 / capital return",
+      "date": "2026-04-22",
+      "url": "https://www.asml.com/en/news/press-releases/2026/asml-discloses-2026-agm-results",
+      "type": "Primary"
+    },
+    {
+      "id": "S09",
+      "title": "ASML Capital return and financing",
+      "date": "accessed 2026-09-05",
+      "url": "https://www.asml.com/en/investors/why-invest-in-asml/capital-return-and-financing",
+      "type": "Primary"
+    },
+    {
+      "id": "S10",
+      "title": "Nikon NSR-S636E official specifications",
+      "date": "accessed 2026-09-05",
+      "url": "https://www.nikon.com/business/semi/lineup/",
+      "type": "Primary"
+    },
+    {
+      "id": "S11",
+      "title": "Canon FPA-1200NZ2C official product",
+      "date": "accessed 2026-09-05",
+      "url": "https://global.canon/en/product/indtech/semicon/fpa1200nz2c.html",
+      "type": "Primary"
+    },
+    {
+      "id": "S12",
+      "title": "Intel / ASML High-NA HVM announcement and customer materials",
+      "date": "2026",
+      "url": "https://www.asml.com/en/news",
+      "type": "Primary"
+    },
+    {
+      "id": "S13",
+      "title": "Reuters — China domestic immersion DUV production",
+      "date": "2026-07-28",
+      "url": "https://www.reuters.com/",
+      "type": "Independent"
+    },
+    {
+      "id": "S14",
+      "title": "MarketScreener consensus",
+      "date": "2026-09-05",
+      "url": "https://www.marketscreener.com/quote/stock/ASML-HOLDING-N-V-12002973/",
+      "type": "Market"
+    },
+    {
+      "id": "S15",
+      "title": "Euronext ASML quote",
+      "date": "2026-09-04",
+      "url": "https://live.euronext.com/pt/product/equities/nl0010273215-xams",
+      "type": "Market"
+    },
+    {
+      "id": "S16",
+      "title": "Macrotrends ASML historical P/E",
+      "date": "accessed 2026-09-05",
+      "url": "https://www.macrotrends.net/stocks/charts/ASML/asml-holding/pe-ratio",
+      "type": "Market"
+    },
+    {
+      "id": "S17",
+      "title": "Barron's / UBS China-DUV valuation debate",
+      "date": "2026-09-02",
+      "url": "https://www.barrons.com/articles/asml-stock-price-china-threat-f3183336",
+      "type": "Independent"
+    }
+  ],
+  "qa": {
+    "rc_unresolved": 0,
+    "latest_filing_check": "PASS",
+    "research_complete": true,
+    "earnings_quality": "FLAGS_NOTED_NO_MATERIAL_CONCERN",
+    "mispricing_rationale": "NOT_IDENTIFIED",
+    "decision_visuals_total": 8,
+    "decision_visuals_parity_pass": 8,
+    "stale_visual_assets": 0,
+    "figure_numerical_parity": "PASS",
+    "visual_data_lineage": "PASS",
+    "visual_semantic_parity": "PASS",
+    "report_data_pack": "EMITTED",
+    "data_pack_report_parity": "PASS",
+    "content_meaning_lock_preserved": "PASS",
+    "published_top_level_schema_match": "PASS",
+    "explanatory_depth_preserved": "PASS",
+    "core_landscape_pages": 0,
+    "printed_toc_pages": 1,
+    "toc_clickable": "PASS",
+    "pdf_bookmarks": "PASS",
+    "html_sidebar": "PASS",
+    "searchable_text": "PASS",
+    "korean_readability": "PASS",
+    "korean_prose_quality": "PASS",
+    "industry_company_narrative": "PASS",
+    "explanatory_space_allocation": "PASS",
+    "smart_chapter_transitions": "PASS",
+    "argument_block_pagination": "PASS",
+    "accidental_sparse_pages": 0,
+    "density_control": "PASS",
+    "visual_substitution": "PASS",
+    "visual_grammar_variety": "PASS",
+    "chart_readability": "PASS",
+    "table_quality": "PASS",
+    "contact_sheet_composition_qa": "PASS",
+    "semantic_golden_qa": "PASS",
+    "visual_golden_qa": "PASS",
+    "golden_parity": "PASS",
+    "rendered_visual_parity_qa": "PASS",
+    "publishing_acceptance": "PASS"
+  },
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "매출과 정상화 FCF",
+      "source_block": "financials.annual_3y + valuation Base 2026 FCF",
+      "source_values": {
+        "years": [
+          "2023",
+          "2024",
+          "2025",
+          "2026E"
+        ],
+        "revenue": [
+          27.559,
+          28.263,
+          32.667,
+          44.0
+        ],
+        "fcf": [
+          3.247,
+          9.083,
+          11.028,
+          12.76
+        ]
+      },
+      "source_hash": "f302c3cdb6ed3c07",
+      "display_values": {
+        "years": [
+          "2023",
+          "2024",
+          "2025",
+          "2026E"
+        ],
+        "revenue": [
+          27.559,
+          28.263,
+          32.667,
+          44.0
+        ],
+        "fcf": [
+          3.247,
+          9.083,
+          11.028,
+          12.76
+        ]
+      },
+      "narrative_locator": "Ch0/Ch4",
+      "table_locator": "Ch4 3Y table",
+      "caption_locator": "VIS-001 caption",
+      "rendered_asset_locator": "/mnt/data/asml_assets/vis001_annual.svg"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "2027년 생산능력 확대 계획",
+      "source_block": "capacity",
+      "source_values": {
+        "euv": [
+          65,
+          84.5
+        ],
+        "duv": [
+          130,
+          169.0
+        ]
+      },
+      "source_hash": "62c7b7c793caad6b",
+      "display_values": {
+        "euv": [
+          65,
+          84.5
+        ],
+        "duv": [
+          130,
+          169.0
+        ]
+      },
+      "narrative_locator": "Ch1.4",
+      "table_locator": "Appendix A4",
+      "caption_locator": "VIS-002 caption",
+      "rendered_asset_locator": "/mnt/data/asml_assets/vis002_capacity.svg"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "2025 매출 풀",
+      "source_block": "business_mix.2025",
+      "source_values": {
+        "EUV": 11.6,
+        "DUV": 12.0,
+        "Metrology & Inspection": 0.825,
+        "IBM": 8.193
+      },
+      "source_hash": "7ab131b098f5eae3",
+      "display_values": {
+        "EUV": 11.6,
+        "DUV": 12.0,
+        "Metrology & Inspection": 0.825,
+        "IBM": 8.193
+      },
+      "narrative_locator": "Ch3.1",
+      "table_locator": "Ch3.1 narrative / data pack",
+      "caption_locator": "VIS-003 caption",
+      "rendered_asset_locator": "/mnt/data/asml_assets/vis003_mix.svg"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "최근 8분기 매출과 gross margin",
+      "source_block": "financials.quarterly_8q",
+      "source_values": {
+        "quarters": [
+          "Q3'24",
+          "Q4'24",
+          "Q1'25",
+          "Q2'25",
+          "Q3'25",
+          "Q4'25",
+          "Q1'26",
+          "Q2'26"
+        ],
+        "sales": [
+          7.467,
+          9.263,
+          7.742,
+          7.692,
+          7.516,
+          9.718,
+          8.767,
+          9.326
+        ],
+        "gm": [
+          50.8,
+          51.7,
+          54.0,
+          53.7,
+          51.6,
+          52.2,
+          53.0,
+          54.0
+        ]
+      },
+      "source_hash": "cf856331797cc13e",
+      "display_values": {
+        "quarters": [
+          "Q3'24",
+          "Q4'24",
+          "Q1'25",
+          "Q2'25",
+          "Q3'25",
+          "Q4'25",
+          "Q1'26",
+          "Q2'26"
+        ],
+        "sales": [
+          7.467,
+          9.263,
+          7.742,
+          7.692,
+          7.516,
+          9.718,
+          8.767,
+          9.326
+        ],
+        "gm": [
+          50.8,
+          51.7,
+          54.0,
+          53.7,
+          51.6,
+          52.2,
+          53.0,
+          54.0
+        ]
+      },
+      "narrative_locator": "Ch4.2",
+      "table_locator": "Ch4 8Q table",
+      "caption_locator": "VIS-004 caption",
+      "rendered_asset_locator": "/mnt/data/asml_assets/vis004_8q.svg"
+    },
+    {
+      "vis_id": "VIS-005",
+      "figure_title": "시나리오별 매출 경로",
+      "source_block": "scenarios[].revenue_path",
+      "source_values": {
+        "Downside": [
+          44,
+          49,
+          53,
+          56,
+          59,
+          62,
+          65
+        ],
+        "Base": [
+          44,
+          55,
+          65,
+          72,
+          78,
+          84,
+          90
+        ],
+        "Upside": [
+          44,
+          59,
+          73,
+          87,
+          100,
+          112,
+          123
+        ]
+      },
+      "source_hash": "28faf8164b349345",
+      "display_values": {
+        "Downside": [
+          44,
+          49,
+          53,
+          56,
+          59,
+          62,
+          65
+        ],
+        "Base": [
+          44,
+          55,
+          65,
+          72,
+          78,
+          84,
+          90
+        ],
+        "Upside": [
+          44,
+          59,
+          73,
+          87,
+          100,
+          112,
+          123
+        ]
+      },
+      "narrative_locator": "Ch5.3",
+      "table_locator": "Ch5 scenario table",
+      "caption_locator": "VIS-005 caption",
+      "rendered_asset_locator": "/mnt/data/asml_assets/vis005_scenarios.svg"
+    },
+    {
+      "vis_id": "VIS-006",
+      "figure_title": "DCF 시나리오 가치 vs 현재가",
+      "source_block": "scenarios[].per_share_value + valuation.current_price",
+      "source_values": {
+        "scenarios": {
+          "Downside": 876.824437876107,
+          "Base": 1337.148220279894,
+          "Upside": 1882.2309247357568
+        },
+        "current": 1467.4
+      },
+      "source_hash": "99d625f434e15815",
+      "display_values": {
+        "scenarios": {
+          "Downside": 876.824437876107,
+          "Base": 1337.148220279894,
+          "Upside": 1882.2309247357568
+        },
+        "current": 1467.4
+      },
+      "narrative_locator": "Ch5.4",
+      "table_locator": "Ch5 scenario table",
+      "caption_locator": "VIS-006 caption",
+      "rendered_asset_locator": "/mnt/data/asml_assets/vis006_dcf.svg"
+    },
+    {
+      "vis_id": "VIS-007",
+      "figure_title": "현재 가격이 요구하는 2032 매출",
+      "source_block": "reverse_expectations.cases",
+      "source_values": {
+        "terminal_growth": [
+          "3.0%",
+          "3.5%",
+          "4.0%"
+        ],
+        "required_revenue": [
+          112.592,
+          102.208,
+          91.672
+        ]
+      },
+      "source_hash": "88f817781a793c81",
+      "display_values": {
+        "terminal_growth": [
+          "3.0%",
+          "3.5%",
+          "4.0%"
+        ],
+        "required_revenue": [
+          112.592,
+          102.208,
+          91.672
+        ]
+      },
+      "narrative_locator": "Ch5.6",
+      "table_locator": "Ch5 reverse table",
+      "caption_locator": "VIS-007 caption",
+      "rendered_asset_locator": "/mnt/data/asml_assets/vis007_reverse.svg"
+    },
+    {
+      "vis_id": "VIS-008",
+      "figure_title": "ASML ADR 가격 주요 국면",
+      "source_block": "valuation_history.history",
+      "source_values": {
+        "dates": [
+          "2015-03-31",
+          "2015-06-30",
+          "2015-09-30",
+          "2015-12-31",
+          "2016-03-31",
+          "2016-06-30",
+          "2016-09-30",
+          "2016-12-31",
+          "2017-03-31",
+          "2017-06-30",
+          "2017-09-30",
+          "2017-12-31",
+          "2018-03-31",
+          "2018-06-30",
+          "2018-09-30",
+          "2018-12-31",
+          "2019-03-31",
+          "2019-06-30",
+          "2019-09-30",
+          "2019-12-31",
+          "2020-03-31",
+          "2020-06-30",
+          "2020-09-30",
+          "2020-12-31",
+          "2021-03-31",
+          "2021-06-30",
+          "2021-09-30",
+          "2021-12-31",
+          "2022-03-31",
+          "2022-06-30",
+          "2022-09-30",
+          "2022-12-31",
+          "2023-03-31",
+          "2023-06-30",
+          "2023-09-30",
+          "2023-12-31",
+          "2024-03-31",
+          "2024-06-30",
+          "2024-09-30",
+          "2024-12-31",
+          "2025-03-31",
+          "2025-06-30",
+          "2025-09-30",
+          "2025-12-31",
+          "2026-03-31",
+          "2026-06-30",
+          "2026-08-06",
+          "2026-09-04"
+        ],
+        "adr_prices": [
+          90.25,
+          93.72,
+          79.19,
+          79.9,
+          90.36,
+          90.36,
+          99.8,
+          102.19,
+          120.95,
+          119.86,
+          157.47,
+          159.88,
+          182.63,
+          183.7,
+          174.47,
+          144.41,
+          174.5,
+          195.21,
+          233.22,
+          279.04,
+          246.69,
+          348.76,
+          349.94,
+          463.98,
+          587.31,
+          659.12,
+          710.9,
+          761.55,
+          638.91,
+          458.33,
+          400.99,
+          529.1,
+          660.59,
+          705.39,
+          574.21,
+          740.23,
+          950.73,
+          1004.01,
+          819.52,
+          683.24,
+          654.6,
+          794.13,
+          961.76,
+          1064.74,
+          1316.25,
+          1986.87,
+          1704.37,
+          1707.74
+        ]
+      },
+      "source_hash": "d3bd641d65d17263",
+      "display_values": {
+        "dates": [
+          "2015-03-31",
+          "2015-06-30",
+          "2015-09-30",
+          "2015-12-31",
+          "2016-03-31",
+          "2016-06-30",
+          "2016-09-30",
+          "2016-12-31",
+          "2017-03-31",
+          "2017-06-30",
+          "2017-09-30",
+          "2017-12-31",
+          "2018-03-31",
+          "2018-06-30",
+          "2018-09-30",
+          "2018-12-31",
+          "2019-03-31",
+          "2019-06-30",
+          "2019-09-30",
+          "2019-12-31",
+          "2020-03-31",
+          "2020-06-30",
+          "2020-09-30",
+          "2020-12-31",
+          "2021-03-31",
+          "2021-06-30",
+          "2021-09-30",
+          "2021-12-31",
+          "2022-03-31",
+          "2022-06-30",
+          "2022-09-30",
+          "2022-12-31",
+          "2023-03-31",
+          "2023-06-30",
+          "2023-09-30",
+          "2023-12-31",
+          "2024-03-31",
+          "2024-06-30",
+          "2024-09-30",
+          "2024-12-31",
+          "2025-03-31",
+          "2025-06-30",
+          "2025-09-30",
+          "2025-12-31",
+          "2026-03-31",
+          "2026-06-30",
+          "2026-08-06",
+          "2026-09-04"
+        ],
+        "adr_prices": [
+          90.25,
+          93.72,
+          79.19,
+          79.9,
+          90.36,
+          90.36,
+          99.8,
+          102.19,
+          120.95,
+          119.86,
+          157.47,
+          159.88,
+          182.63,
+          183.7,
+          174.47,
+          144.41,
+          174.5,
+          195.21,
+          233.22,
+          279.04,
+          246.69,
+          348.76,
+          349.94,
+          463.98,
+          587.31,
+          659.12,
+          710.9,
+          761.55,
+          638.91,
+          458.33,
+          400.99,
+          529.1,
+          660.59,
+          705.39,
+          574.21,
+          740.23,
+          950.73,
+          1004.01,
+          819.52,
+          683.24,
+          654.6,
+          794.13,
+          961.76,
+          1064.74,
+          1316.25,
+          1986.87,
+          1704.37,
+          1707.74
+        ]
+      },
+      "narrative_locator": "Appendix A9",
+      "table_locator": "valuation_history.history in data pack",
+      "caption_locator": "VIS-008 caption",
+      "rendered_asset_locator": "/mnt/data/asml_assets/vis008_price.svg"
+    }
+  ]
+}

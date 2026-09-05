@@ -1,0 +1,860 @@
+{
+  "meta": {
+    "ticker": "NEE",
+    "company": "NextEra Energy, Inc.",
+    "T0": "2026-08-31",
+    "timezone": "Asia/Seoul",
+    "price_asof": "2026-08-28",
+    "price_usd": 81.84,
+    "financial_filing_asof": "2026-07-24",
+    "latest_filing_asof": "2026-08-25",
+    "operating_update_asof": "2026-08-12",
+    "consensus_asof": "2026-08-30",
+    "version": "Deep Dive OS v1.7",
+    "valuation_mode": "Mode C — Mature Compounder + segment SOTP + Dominion pro-forma branch",
+    "currency": "USD",
+    "share_price_unit": "USD/share",
+    "financial_unit": "USD billions unless otherwise stated",
+    "prehash_sha256": "1d0579d1ee0e5cedf6bca220ea5e9aad233b0fc61262b1acd089bade64da911e"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "year": 2023,
+        "revenue_b": 28.114,
+        "operating_income_b": 10.237,
+        "net_income_nee_b": 7.31,
+        "gaap_diluted_eps": 3.6,
+        "adjusted_eps": 3.17,
+        "operating_cash_flow_b": 11.301,
+        "fpl_adjusted_eps": 2.09,
+        "neer_adjusted_eps": 1.36
+      },
+      {
+        "year": 2024,
+        "revenue_b": 24.753,
+        "operating_income_b": 7.479,
+        "net_income_nee_b": 6.946,
+        "gaap_diluted_eps": 3.37,
+        "adjusted_eps": 3.43,
+        "operating_cash_flow_b": 13.26,
+        "fpl_adjusted_eps": 2.21,
+        "neer_adjusted_eps": 1.51
+      },
+      {
+        "year": 2025,
+        "revenue_b": 27.412,
+        "operating_income_b": 8.28,
+        "net_income_nee_b": 6.835,
+        "gaap_diluted_eps": 3.3,
+        "adjusted_eps": 3.71,
+        "operating_cash_flow_b": 12.485,
+        "fpl_adjusted_eps": 2.42,
+        "neer_adjusted_eps": 1.7
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "Q3 2024",
+        "revenue_b": 7.567,
+        "adjusted_eps": 1.03,
+        "fpl_eps": 0.63,
+        "neer_adjusted_eps": 0.47,
+        "corporate_other_eps": -0.07,
+        "gaap_eps": 0.9,
+        "neer_backlog_gw": 24.0,
+        "backlog_qualifier": ">"
+      },
+      {
+        "quarter": "Q4 2024",
+        "revenue_b": 5.385,
+        "adjusted_eps": 0.53,
+        "fpl_eps": 0.41,
+        "neer_adjusted_eps": 0.22,
+        "corporate_other_eps": -0.1,
+        "gaap_eps": 0.58,
+        "neer_backlog_gw": 25.0,
+        "backlog_qualifier": ">"
+      },
+      {
+        "quarter": "Q1 2025",
+        "revenue_b": 6.247,
+        "adjusted_eps": 0.99,
+        "fpl_eps": 0.64,
+        "neer_adjusted_eps": 0.44,
+        "corporate_other_eps": -0.09,
+        "gaap_eps": 0.4,
+        "neer_backlog_gw": 28.0,
+        "backlog_qualifier": "~"
+      },
+      {
+        "quarter": "Q2 2025",
+        "revenue_b": 6.7,
+        "adjusted_eps": 1.05,
+        "fpl_eps": 0.62,
+        "neer_adjusted_eps": 0.53,
+        "corporate_other_eps": -0.1,
+        "gaap_eps": 0.98,
+        "neer_backlog_gw": 30.0,
+        "backlog_qualifier": "~"
+      },
+      {
+        "quarter": "Q3 2025",
+        "revenue_b": 7.966,
+        "adjusted_eps": 1.13,
+        "fpl_eps": 0.71,
+        "neer_adjusted_eps": 0.53,
+        "corporate_other_eps": -0.11,
+        "gaap_eps": 1.18,
+        "neer_backlog_gw": 30.0,
+        "backlog_qualifier": "~"
+      },
+      {
+        "quarter": "Q4 2025",
+        "revenue_b": 6.5,
+        "adjusted_eps": 0.54,
+        "fpl_eps": 0.46,
+        "neer_adjusted_eps": 0.2,
+        "corporate_other_eps": -0.12,
+        "gaap_eps": 0.73,
+        "neer_backlog_gw": 30.0,
+        "backlog_qualifier": "~"
+      },
+      {
+        "quarter": "Q1 2026",
+        "revenue_b": 6.701,
+        "adjusted_eps": 1.09,
+        "fpl_eps": 0.7,
+        "neer_adjusted_eps": 0.5,
+        "corporate_other_eps": -0.11,
+        "gaap_eps": 1.04,
+        "neer_backlog_gw": 33.0,
+        "backlog_qualifier": "="
+      },
+      {
+        "quarter": "Q2 2026",
+        "revenue_b": 7.534,
+        "adjusted_eps": 1.15,
+        "fpl_eps": 0.67,
+        "neer_adjusted_eps": 0.62,
+        "corporate_other_eps": -0.14,
+        "gaap_eps": 1.5,
+        "neer_backlog_gw": 35.1,
+        "backlog_qualifier": "="
+      }
+    ],
+    "h1_2026_cash_funding": {
+      "operating_cash_flow_b": 7.276,
+      "fpl_capex_b": 5.78,
+      "neer_independent_power_other_investments_b": 13.338,
+      "nuclear_fuel_b": 0.263,
+      "long_term_debt_issuance_b": 15.566,
+      "long_term_debt_retirements_b": 4.032,
+      "long_term_debt_2026_06_30_b": 98.79,
+      "long_term_debt_2025_12_31_b": 89.556,
+      "equity_units_issued_2026_03_b": 2.3,
+      "q2_2026_diluted_weighted_avg_shares_b": 2.0934,
+      "q2_2025_diluted_weighted_avg_shares_b": 2.0613
+    },
+    "ceilings": [
+      "NEER technology-level project IRR, contract prices and project margins are not sufficiently disclosed in primary sources.",
+      "Vendor-level procurement prices, cancellation rights and take-or-pay terms are not sufficiently disclosed.",
+      "Large-load interest is not equivalent to contracted backlog; customer-level economics are substantially undisclosed."
+    ]
+  },
+  "segments": {
+    "fpl": {
+      "allowed_roe_midpoint_pct": 10.95,
+      "allowed_roe_range_pct": [
+        9.95,
+        11.95
+      ],
+      "rate_settlement_period": "2026-01-01 to 2029-12-31",
+      "rsm_after_tax_initial_b": 1.5,
+      "rsm_after_tax_remaining_2026_06_30_b": 1.335,
+      "regulatory_capital_q2_2026_b": 79.7,
+      "regulatory_capital_yoy_growth_pct": 9.3,
+      "q2_2026_net_income_b": 1.412,
+      "q2_2026_eps_contribution": 0.67,
+      "q1_2026_net_income_b": 1.462,
+      "q1_2026_eps_contribution": 0.7,
+      "2026_capex_guidance_b_range": [
+        12.0,
+        13.0
+      ],
+      "h1_2026_capex_b": 5.78,
+      "customer_accounts_yoy_addition_q2_2026_gt": 90000,
+      "large_load_interest_gw": 21.0,
+      "large_load_advanced_discussions_gw": 12.0,
+      "average_customer_bill_discount_vs_us_pct_approx": 30,
+      "ytd_average_price_cents_per_kwh_2026_06_30": 13.07
+    },
+    "neer": {
+      "backlog_q2_2026_gw": 35.1,
+      "q2_2026_originations_gw": 3.6,
+      "q2_2026_battery_originations_gw": 2.0,
+      "placed_in_service_since_q1_call_gw": 1.1,
+      "backlog_by_period_gw": {
+        "2026_2027": {
+          "wind": 3.3,
+          "solar": 10.2,
+          "storage": 7.9,
+          "total": 21.4
+        },
+        "2028_2029": {
+          "wind": 2.7,
+          "solar": 5.3,
+          "storage": 4.4,
+          "nuclear": 0.6,
+          "total": 13.1
+        },
+        "2030_2032": {
+          "wind": 0.6,
+          "solar": 1.0,
+          "storage": 0.6,
+          "total": 2.1
+        }
+      },
+      "development_expectations_2026_2032_gw": {
+        "wind": [
+          8.5,
+          14.5
+        ],
+        "solar": [
+          31.5,
+          41.5
+        ],
+        "storage": [
+          32.0,
+          43.0
+        ],
+        "gas": [
+          4.0,
+          8.0
+        ],
+        "nuclear": [
+          0.6,
+          0.6
+        ],
+        "total": [
+          76.6,
+          107.6
+        ]
+      },
+      "supply_chain_secured_through": {
+        "battery": 2029,
+        "solar": 2029,
+        "switchgear_breakers": 2029,
+        "transformers": 2030
+      },
+      "initial_gas_turbine_capacity_secured_gw": 4.0,
+      "renewable_project_inventory_coverage_x": 1.5,
+      "gas_hubs_definitive_up_to_gw": 10.0,
+      "gas_hubs_initial_funding_b": 3.3,
+      "gas_hubs_locations": [
+        "Texas",
+        "Pennsylvania"
+      ],
+      "gas_hubs_initial_online_earliest": "2028 year-end",
+      "gas_hubs_completion_target": 2032,
+      "energy_hubs_in_development_gt": 30,
+      "duane_arnold_restart_target": "no later than Q1 2029",
+      "duane_arnold_backlog_gw": 0.6
+    },
+    "dominion_overlay": {
+      "exchange_ratio_nee_shares_per_d_share": 0.8138,
+      "aggregate_cash_consideration_b": 0.36,
+      "pro_forma_ownership_nee_pct": 74.5,
+      "pro_forma_ownership_d_pct": 25.5,
+      "shareholder_funded_bill_credits_b": 2.25,
+      "bill_credit_period_years": 2,
+      "combined_regulated_mix_gt_pct": 80,
+      "combined_customer_accounts_m": 10,
+      "combined_generation_gw": 110,
+      "combined_regulatory_capital_growth_target_pct_approx": 11,
+      "combined_adjusted_eps_growth_target_pct_gt": 9,
+      "standalone_adjusted_eps_growth_target_pct_gt": 8,
+      "target_close": "H2 2027",
+      "special_shareholder_meeting": "2026-09-03"
+    }
+  },
+  "management": {
+    "ceo": "John Ketchum",
+    "joined_nee": 2002,
+    "nee_cfo_period": "2016-2019",
+    "neer_ceo_period": "2019-2022",
+    "nee_ceo_since": "2022-03",
+    "promise_delivery": [
+      {
+        "year": 2022,
+        "guidance_low": 2.8,
+        "guidance_high": 2.9,
+        "actual_adjusted_eps": 2.9,
+        "result": "top end"
+      },
+      {
+        "year": 2023,
+        "guidance_low": 2.98,
+        "guidance_high": 3.13,
+        "actual_adjusted_eps": 3.17,
+        "result": "above high end"
+      },
+      {
+        "year": 2024,
+        "guidance_low": 3.23,
+        "guidance_high": 3.43,
+        "actual_adjusted_eps": 3.43,
+        "result": "top end"
+      },
+      {
+        "year": 2025,
+        "guidance_low": 3.45,
+        "guidance_high": 3.7,
+        "actual_adjusted_eps": 3.71,
+        "result": "above high end"
+      }
+    ],
+    "2025_total_compensation_m": 24.193,
+    "2026_director_re_election_support_pct": 94.5,
+    "primary_source_ceiling": "Pre-CEO NEER performance cannot be cleanly attributed to Ketchum individually from primary disclosure."
+  },
+  "kpis": [
+    {
+      "name": "FPL regulatory capital YoY growth",
+      "unit": "%",
+      "current": 9.3,
+      "history": [],
+      "thresholds": {
+        "green": ">=8% with earned return stable",
+        "yellow": "6-8% or earned-return slippage",
+        "red": "<6% or material disallowance"
+      }
+    },
+    {
+      "name": "NEER backlog",
+      "unit": "GW",
+      "current": 35.1,
+      "history": [
+        {
+          "q": "Q3 2024",
+          "v": 24.0,
+          "qualifier": ">"
+        },
+        {
+          "q": "Q4 2024",
+          "v": 25.0,
+          "qualifier": ">"
+        },
+        {
+          "q": "Q1 2025",
+          "v": 28.0,
+          "qualifier": "~"
+        },
+        {
+          "q": "Q2 2025",
+          "v": 30.0,
+          "qualifier": "~"
+        },
+        {
+          "q": "Q3 2025",
+          "v": 30.0,
+          "qualifier": "~"
+        },
+        {
+          "q": "Q4 2025",
+          "v": 30.0,
+          "qualifier": "~"
+        },
+        {
+          "q": "Q1 2026",
+          "v": 33.0,
+          "qualifier": "="
+        },
+        {
+          "q": "Q2 2026",
+          "v": 35.1,
+          "qualifier": "="
+        }
+      ],
+      "thresholds": {
+        "green": "COD conversion + net additions without margin deterioration",
+        "yellow": "headline backlog grows but COD slips",
+        "red": "removals/cancellations or margin erosion dominate"
+      }
+    },
+    {
+      "name": "Long-term debt",
+      "unit": "USD bn",
+      "current": 98.79,
+      "history": [
+        {
+          "date": "2025-12-31",
+          "v": 89.556
+        },
+        {
+          "date": "2026-06-30",
+          "v": 98.79
+        }
+      ],
+      "thresholds": {
+        "green": "funding growth accompanied by per-share EPS delivery",
+        "yellow": "debt grows faster than earnings for multiple periods",
+        "red": "credit pressure forces unfavorable issuance or project retrenchment"
+      }
+    },
+    {
+      "name": "Diluted weighted-average shares",
+      "unit": "bn shares",
+      "current": 2.0934,
+      "history": [
+        {
+          "q": "Q2 2025",
+          "v": 2.0613
+        },
+        {
+          "q": "Q2 2026",
+          "v": 2.0934
+        }
+      ],
+      "thresholds": {
+        "green": "per-share earnings absorbs dilution",
+        "yellow": "share growth persistently outruns EPS accretion",
+        "red": "merger/funding dilution breaks per-share growth thesis"
+      }
+    },
+    {
+      "name": "Large-load pipeline conversion",
+      "unit": "GW",
+      "current": 12.0,
+      "history": [
+        {
+          "stage": "interest",
+          "v": 21.0
+        },
+        {
+          "stage": "advanced discussions",
+          "v": 12.0
+        }
+      ],
+      "thresholds": {
+        "green": "signed tariff/contract and site/interconnection milestones",
+        "yellow": "advanced discussions without binding progress",
+        "red": "cancellations or cost-allocation rejection"
+      }
+    }
+  ],
+  "market_expectations": {
+    "price_usd": 81.84,
+    "fwd_pe_2026_consensus_x": 20.41,
+    "fwd_pe_2027_consensus_x": 18.77,
+    "historical_adjusted_trailing_pe": {
+      "current_x": 20.93,
+      "mean_x": 23.45,
+      "p25_x": 19.35,
+      "median_x": 22.6,
+      "p75_x": 26.1,
+      "current_percentile_approx": 40
+    },
+    "analyst_target_avg_usd": 98.39,
+    "ratings": {
+      "buy": 12,
+      "hold": 7,
+      "sell": 1
+    },
+    "short_interest": {
+      "asof": "2026-08-14",
+      "shares_m": 49.73,
+      "float_pct": 2.39,
+      "change_vs_prior_pct": -21.24,
+      "days_to_cover": 4.8
+    }
+  },
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.25,
+      "eps_base_2026": 4.02,
+      "eps_cagr_2026_2030": 0.05,
+      "eps_2030": 4.89,
+      "exit_pe_x": 17.0,
+      "terminal_price_2030": 83.1,
+      "assumed_dividends_2026_remaining_2030": 12.18,
+      "approx_irr": 0.037,
+      "pv_at_10pct": 64.37,
+      "pv_at_12pct": 59.81,
+      "diluted_shares": null,
+      "operating_path": "FPL rate-base/earned-return pressure, slower backlog conversion, financing drag, Dominion delay/remedies."
+    },
+    {
+      "name": "Base",
+      "probability": 0.5,
+      "eps_base_2026": 4.02,
+      "eps_cagr_2026_2030": 0.08,
+      "eps_2030": 5.47,
+      "exit_pe_x": 20.0,
+      "terminal_price_2030": 109.4,
+      "assumed_dividends_2026_remaining_2030": 12.18,
+      "approx_irr": 0.1,
+      "pv_at_10pct": 81.78,
+      "pv_at_12pct": 75.91,
+      "diluted_shares": null,
+      "operating_path": "Standalone 8%+ EPS target broadly delivered; high-single-digit FPL regulatory-capital growth and orderly backlog COD."
+    },
+    {
+      "name": "Bull",
+      "probability": 0.25,
+      "eps_base_2026": 4.02,
+      "eps_cagr_2026_2030": 0.095,
+      "eps_2030": 5.78,
+      "exit_pe_x": 22.0,
+      "terminal_price_2030": 127.1,
+      "assumed_dividends_2026_remaining_2030": 12.18,
+      "approx_irr": 0.136,
+      "pv_at_10pct": 93.54,
+      "pv_at_12pct": 86.78,
+      "diluted_shares": null,
+      "operating_path": "Large-load contracting accelerates, procurement protects COD, Dominion closes cleanly and supports >9% per-share growth."
+    }
+  ],
+  "valuation": {
+    "mode": "Mode C — Mature Compounder + SOTP + Dominion overlay",
+    "current_price": 81.84,
+    "2026e_adjusted_eps_base": 4.02,
+    "segment_eps_2026e": {
+      "fpl": 2.65,
+      "neer": 1.85,
+      "corporate_other": -0.48,
+      "total": 4.02
+    },
+    "sotp": {
+      "bear": {
+        "fpl_pe": 18,
+        "neer_pe": 16,
+        "corporate_drag_multiple": 16,
+        "per_share_value": 69.62
+      },
+      "base": {
+        "fpl_pe": 20,
+        "neer_pe": 20,
+        "corporate_drag_multiple": 15,
+        "per_share_value": 82.8
+      },
+      "bull": {
+        "fpl_pe": 22,
+        "neer_pe": 23,
+        "corporate_drag_multiple": 14,
+        "per_share_value": 94.13
+      }
+    },
+    "12m_scenario_prices": {
+      "bear": 71.4,
+      "base": 87.2,
+      "bull": 97.9
+    },
+    "12m_upside_downside_ratio": 1.54,
+    "probability_weighted_pv_10pct": 80.37,
+    "probability_weighted_pv_12pct": 74.61,
+    "expected_irr_approx": 0.095,
+    "base_case_pv_10pct": 81.78,
+    "base_case_pv_12pct": 75.91,
+    "mispricing_rationale": "PARTIAL",
+    "dominion_overlay_note": "The move from >8% standalone to >9% combined EPS growth is economically meaningful but does not by itself justify adding full merger headline value; fixed exchange ratio, 25.5% pro-forma ownership for Dominion holders, bill credits, regulatory remedies and funding must be reconciled per share."
+  },
+  "reverse_expectations": {
+    "assumptions": {
+      "exit_pe_2030_x": 20.0,
+      "dividend_path_total_2026_remaining_2030": 12.18,
+      "eps_base_2026": 4.02
+    },
+    "required_for_8pct_irr": {
+      "eps_2030": 5.02,
+      "eps_cagr": 0.057
+    },
+    "required_for_10pct_irr": {
+      "eps_2030": 5.47,
+      "eps_cagr": 0.08
+    },
+    "required_for_12pct_irr": {
+      "eps_2030": 5.95,
+      "eps_cagr": 0.103
+    },
+    "required_for_15pct_irr": {
+      "eps_2030": 6.73,
+      "eps_cagr": 0.138
+    },
+    "translation_to_industry_kpi": "A 12%+ return at the current price requires >10% per-share EPS CAGR under a 20x exit assumption, implying stronger backlog-to-COD conversion and/or Dominion accretion than the standalone >8% framework."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue_b": 31.77,
+      "eps": 4.01
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue_b": 35.1,
+      "eps": 4.36
+    },
+    "most_recent_eps_estimates": {
+      "2026": 4.03,
+      "2027": 4.41
+    },
+    "revision_trend": "Broadly flat/slightly softer over 30 days, with pockets of upward bias in most-recent estimates.",
+    "primary_source_ceiling": "FY3 consensus and institution-by-institution flow data lack a single sufficiently robust and consistent high-quality source at T0."
+  },
+  "stance": {
+    "zone": "관망 + 매력 가격 밴드",
+    "rationale": "Expected IRR is around the low end/below the default 10-15% single-stock hurdle and 12m upside/downside is 1.54x. Current price is close to standalone/base fair value, so the stock is high quality but not clearly mispriced.",
+    "price_bands": {
+      "attractive_entry_usd": [
+        75,
+        80
+      ],
+      "fair_neutral_usd": [
+        80,
+        90
+      ],
+      "caution_above_usd": 95,
+      "ud_gt_2_trigger_usd_approx": 80.23,
+      "expected_12pct_irr_trigger_usd_approx": 74.61
+    },
+    "horizon": "12 months for price bands; 2030 for fundamental scenario realization",
+    "time_value_note": "Most upside requires several years of rate-base/backlog execution; a high terminal value does not eliminate the opportunity cost of waiting."
+  },
+  "catalysts": [
+    {
+      "when": "2026-09-03",
+      "event": "NEE special shareholder meeting on Dominion combination",
+      "sensitivity": "Approval is necessary but not sufficient; focus shifts to regulatory conditions and per-share accretion."
+    },
+    {
+      "when": "H2 2026",
+      "event": "First FPL large-load tariff transaction targeted by management",
+      "sensitivity": "Converts 21GW interest / 12GW advanced discussions into evidence of monetizable demand."
+    },
+    {
+      "when": "Q3-Q4 2026 earnings",
+      "event": "FPL regulatory-capital growth and NEER backlog-to-COD updates",
+      "sensitivity": "Tests whether capital deployment is translating into segment earnings without margin/funding slippage."
+    },
+    {
+      "when": "2027 regulatory calendar",
+      "event": "Dominion state/FERC/NRC approval process",
+      "sensitivity": "Remedies, delays or bill-credit changes alter merger value."
+    },
+    {
+      "when": "H2 2027 target",
+      "event": "Dominion transaction close target",
+      "sensitivity": "Defines pro-forma dilution, funding and first credible accretion bridge."
+    },
+    {
+      "when": "by Q1 2029",
+      "event": "Duane Arnold restart target",
+      "sensitivity": "A high-visibility proof point for nuclear commercialization and large-load contracted power."
+    },
+    {
+      "when": "2028-2032",
+      "event": "Texas/Pennsylvania gas hub COD milestones",
+      "sensitivity": "Tests hub model, long-lead procurement and dedicated-generation economics."
+    }
+  ],
+  "falsification": [
+    "FPL regulatory capital continues to grow but earned returns or customer affordability deteriorate materially, indicating rate-base growth is not translating into quality per-share earnings.",
+    "NEER backlog grows while COD conversion slows, removals rise or margins weaken, showing headline GW is overstating economic value.",
+    "Debt and equity issuance persistently grow faster than per-share earnings, breaking the capital-compounder thesis.",
+    "Dominion requires material remedies or dilution such that combined >9% growth does not improve NEE per-share value versus standalone.",
+    "Large-load pipelines fail to convert into binding tariffs/contracts after regulatory cost-allocation rules tighten."
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1 — power demand / large-load regulation"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1 & 3 — FPL settlement / recovery mechanics"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3 & 4 — FPL customers / capex / affordability"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3 — NEER backlog / COD"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.3 / Appendix — technology economics ceiling"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3 & 5 — Dominion terms / value bridge"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1 & 3 — customer-job competition"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.2 — Ketchum attribution ceiling"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4 — 3Y / 8Q financials"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4 — funding / debt / equity units"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.3 — supply-chain unit-cost ceiling"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4 & 6 — operating KPI history / monitoring"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4 — accounting quality"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.5 / Appendix — consensus / positioning ceiling"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5 — SOTP / scenarios / reverse expectations"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.6 — risks / catalysts / falsification"
+    }
+  ],
+  "sources": {
+    "S1": {
+      "label": "NEE 2026 Q2 Form 10-Q",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/37634/000075330826000060/nee-20260630.htm"
+    },
+    "S2": {
+      "label": "NEE 2026 Q2 earnings release",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330826000058/neeq22026exhibit99.htm"
+    },
+    "S3": {
+      "label": "NEE 2025 Form 10-K",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330826000015/nee-20251231.htm"
+    },
+    "S4": {
+      "label": "NEE 2026 proxy",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/753308/000110465926038551/tm261592-1_def14a.htm"
+    },
+    "S5": {
+      "label": "Dominion joint proxy/prospectus",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/715957/000110465926087585/tm2621467-2_defm14a.htm"
+    },
+    "S6": {
+      "label": "NEE merger 8-K terms",
+      "type": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/753308/000110465926063001/tm2614888d1_8k.htm"
+    },
+    "S7": {
+      "label": "FPL financial policy / 2025 settlement",
+      "type": "primary",
+      "url": "https://www.investor.nexteraenergy.com/fixed-income-investors/financial-policy"
+    },
+    "S8": {
+      "label": "NEE May 2026 investor presentation",
+      "type": "primary",
+      "url": "https://www.investor.nexteraenergy.com/~/media/Files/N/NEE-IR/news-and-events/events-and-presentations/2026/May%20Investor%20Presentation%20%20vF.pdf"
+    },
+    "S9": {
+      "label": "NERC Long-Term Reliability Assessment",
+      "type": "regulatory",
+      "url": "https://www.nerc.com/our-work/assessments/long-term-reliability-assessments"
+    },
+    "S10": {
+      "label": "FERC large-load integration action 2026-06-18",
+      "type": "regulatory",
+      "url": "https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration"
+    },
+    "S11": {
+      "label": "EIA gas / power outlook 2026-05-28",
+      "type": "government",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67725"
+    },
+    "S12": {
+      "label": "NEE 2022 earnings expectations announcement",
+      "type": "primary",
+      "url": "https://www.investor.nexteraenergy.com/news-and-events/news-releases/2022/06-14-2022-130254826"
+    },
+    "S13": {
+      "label": "NEE gas hubs definitive funding milestone 2026-08-12",
+      "type": "primary",
+      "url": "https://www.investor.nexteraenergy.com/news-and-events/news-releases/2026/08-12-2026-211611676"
+    },
+    "S14": {
+      "label": "NEE dividend history",
+      "type": "primary",
+      "url": "https://www.investor.nexteraenergy.com/stock-information/dividend-history"
+    },
+    "S15": {
+      "label": "NEE events and presentations",
+      "type": "primary",
+      "url": "https://www.investor.nexteraenergy.com/news-and-events/events-and-presentations"
+    },
+    "S16": {
+      "label": "StockAnalysis NEE price history",
+      "type": "secondary",
+      "url": "https://stockanalysis.com/stocks/nee/history/"
+    },
+    "S17": {
+      "label": "Zacks detailed earning estimates",
+      "type": "secondary",
+      "url": "https://stage.zacks.com/stock/quote/NEE/detailed-earning-estimates"
+    },
+    "S18": {
+      "label": "Investing.com analyst consensus",
+      "type": "secondary",
+      "url": "https://www.investing.com/equities/nextera-energy-inc-consensus-estimates"
+    },
+    "S19": {
+      "label": "MarketBeat short interest",
+      "type": "secondary",
+      "url": "https://www.marketbeat.com/stocks/NYSE/NEE/short-interest/"
+    }
+  },
+  "qa_lineage": {
+    "authoritative_numeric_source": "NEE_DATA_PACK_260831.json",
+    "visual_ids": [
+      "VIS-01_EPS_COMPOSITION",
+      "VIS-02_BACKLOG",
+      "VIS-03_FUNDING_GAP",
+      "VIS-04_SCENARIO_VALUE",
+      "VIS-05_REVERSE_EXPECTATIONS",
+      "VIS-06_PE_BAND"
+    ],
+    "h2_source": "NEE_H2_RESEARCH_UNDERWRITING.md",
+    "h3_source": "NEE_H3_MANUSCRIPT.md"
+  }
+}

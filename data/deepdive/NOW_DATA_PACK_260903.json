@@ -1,0 +1,1299 @@
+{
+  "meta": {
+    "ticker": "NOW",
+    "company": "ServiceNow, Inc.",
+    "T0": "2026-09-02",
+    "price_asof": "2026-09-02 close",
+    "current_price": 136.5,
+    "filing_asof": "2026-06-30 10-Q filed 2026-07-22",
+    "consensus_asof": "2026-08/09 public snapshots",
+    "publishing_date": "2026-09-03",
+    "version": "DDOS v1.7"
+  },
+  "financials": {
+    "annual_3y": [
+      {
+        "fy": 2023,
+        "total_revenue": 8.971,
+        "revenue_growth_pct": 23.8,
+        "subscription_revenue": 8.68,
+        "company_fcf": 2.728,
+        "fcf_margin_pct": 30.4
+      },
+      {
+        "fy": 2024,
+        "total_revenue": 10.984,
+        "revenue_growth_pct": 22.4,
+        "subscription_revenue": 10.646,
+        "company_fcf": 3.455,
+        "fcf_margin_pct": 31.5
+      },
+      {
+        "fy": 2025,
+        "total_revenue": 13.278,
+        "revenue_growth_pct": 20.9,
+        "subscription_revenue": 12.883,
+        "company_fcf": 4.636,
+        "fcf_margin_pct": 35.0,
+        "sbc": 1.955,
+        "sbc_pct_revenue": 14.7
+      }
+    ],
+    "quarterly_8q": [
+      {
+        "quarter": "Q3 2024",
+        "subscription_revenue": 2.715,
+        "sub_growth_pct": 23.0,
+        "crpo": 9.36,
+        "crpo_growth_pct": 26.0,
+        "rpo": 19.5,
+        "large_customer_note": "$5M+ net-new 15건"
+      },
+      {
+        "quarter": "Q4 2024",
+        "subscription_revenue": 2.866,
+        "sub_growth_pct": 21.0,
+        "crpo": 10.27,
+        "crpo_growth_pct": 19.0,
+        "rpo": 22.3,
+        "customers_gt_5m": 500,
+        "large_customer_note": "약 500개"
+      },
+      {
+        "quarter": "Q1 2025",
+        "subscription_revenue": 3.005,
+        "sub_growth_pct": 19.0,
+        "crpo": 10.31,
+        "crpo_growth_pct": 22.0,
+        "rpo": 22.1,
+        "customers_gt_5m": 508,
+        "deals_gt_1m": 72
+      },
+      {
+        "quarter": "Q2 2025",
+        "subscription_revenue": 3.113,
+        "sub_growth_pct": 22.5,
+        "crpo": 10.92,
+        "crpo_growth_pct": 24.5,
+        "rpo": 23.9,
+        "customers_gt_5m": 528,
+        "deals_gt_1m": 89
+      },
+      {
+        "quarter": "Q3 2025",
+        "subscription_revenue": 3.299,
+        "sub_growth_pct": 21.5,
+        "crpo": 11.35,
+        "crpo_growth_pct": 21.0,
+        "rpo": 24.3,
+        "customers_gt_5m": 553,
+        "deals_gt_1m": 103
+      },
+      {
+        "quarter": "Q4 2025",
+        "subscription_revenue": 3.466,
+        "sub_growth_pct": 21.0,
+        "crpo": 12.85,
+        "crpo_growth_pct": 25.0,
+        "rpo": 28.2,
+        "customers_gt_5m": 603,
+        "deals_gt_1m": 244
+      },
+      {
+        "quarter": "Q1 2026",
+        "subscription_revenue": 3.671,
+        "sub_growth_pct": 22.0,
+        "crpo": 12.64,
+        "crpo_growth_pct": 22.5,
+        "rpo": 27.7,
+        "customers_gt_5m": 630,
+        "deals_gt_5m": 16
+      },
+      {
+        "quarter": "Q2 2026",
+        "subscription_revenue": 3.877,
+        "sub_growth_pct": 24.5,
+        "crpo": 13.2,
+        "crpo_growth_pct": 21.0,
+        "rpo": 29.0,
+        "customers_gt_5m": 658,
+        "deals_gt_1m": 123,
+        "ai_acv_gt": 1.0
+      }
+    ],
+    "balance_sheet": {
+      "cash": 2.503,
+      "current_marketables": 2.161,
+      "long_term_marketables": 2.043,
+      "cash_and_marketables": 6.707,
+      "short_term_debt": 2.082,
+      "long_term_debt": 5.435,
+      "total_debt": 7.517,
+      "net_debt": 0.81,
+      "goodwill": 9.837,
+      "intangibles_net": 3.781
+    },
+    "sbc": {
+      "q2_2026": 0.655,
+      "h1_2026": 1.213,
+      "h1_pct_revenue": 16.0,
+      "unrecognized_rsu_comp": 4.9,
+      "rsus_outstanding_m": 46.824,
+      "expected_to_vest_m": 41.15
+    },
+    "ceilings": [
+      "AI unit economics",
+      "organic/acquired security split",
+      "partner/SI economics"
+    ]
+  },
+  "kpis": [
+    {
+      "name": "cRPO growth",
+      "current": 21.0,
+      "unit": "%",
+      "thresholds": {
+        "green": ">=20%",
+        "yellow": "17-20%",
+        "red": "<17% for 2 consecutive quarters"
+      },
+      "history": [
+        {
+          "period": "Q3 2024",
+          "value": 26.0
+        },
+        {
+          "period": "Q4 2024",
+          "value": 19.0
+        },
+        {
+          "period": "Q1 2025",
+          "value": 22.0
+        },
+        {
+          "period": "Q2 2025",
+          "value": 24.5
+        },
+        {
+          "period": "Q3 2025",
+          "value": 21.0
+        },
+        {
+          "period": "Q4 2025",
+          "value": 25.0
+        },
+        {
+          "period": "Q1 2026",
+          "value": 22.5
+        },
+        {
+          "period": "Q2 2026",
+          "value": 21.0
+        }
+      ]
+    },
+    {
+      "name": "ACV renewal",
+      "current": 98.0,
+      "unit": "%",
+      "thresholds": {
+        "green": ">=98%",
+        "yellow": "97-98%",
+        "red": "<97%"
+      },
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": 98.0
+        }
+      ]
+    },
+    {
+      "name": "Customers >$5M ACV",
+      "current": 658,
+      "unit": "customers",
+      "thresholds": {
+        "green": "YoY growth >=20%",
+        "yellow": "15-20%",
+        "red": "<15%"
+      },
+      "history": [
+        {
+          "period": "Q4 2024",
+          "value": 500
+        },
+        {
+          "period": "Q1 2025",
+          "value": 508
+        },
+        {
+          "period": "Q2 2025",
+          "value": 528
+        },
+        {
+          "period": "Q3 2025",
+          "value": 553
+        },
+        {
+          "period": "Q4 2025",
+          "value": 603
+        },
+        {
+          "period": "Q1 2026",
+          "value": 630
+        },
+        {
+          "period": "Q2 2026",
+          "value": 658
+        }
+      ]
+    },
+    {
+      "name": "Non-GAAP subscription gross margin",
+      "current": 80.5,
+      "unit": "%",
+      "thresholds": {
+        "green": ">=81% or recovering",
+        "yellow": "79.5-81%",
+        "red": "<79.5% persistently"
+      },
+      "history": [
+        {
+          "period": "Q2 2026",
+          "value": 80.5
+        }
+      ]
+    },
+    {
+      "name": "SBC / revenue",
+      "current": 16.0,
+      "unit": "% H1 2026",
+      "thresholds": {
+        "green": "clear decline toward <10% in 2029",
+        "yellow": "14-16%",
+        "red": "~15%+ still in 2028"
+      },
+      "history": [
+        {
+          "period": "FY2025",
+          "value": 14.7
+        },
+        {
+          "period": "H1 2026",
+          "value": 16.0
+        }
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Bear",
+      "probability": 0.4,
+      "revenue_path": [
+        {
+          "year": 2027,
+          "revenue": 18.489660000000004,
+          "growth_pct": 14.000000000000002
+        },
+        {
+          "year": 2028,
+          "revenue": 20.708419200000005,
+          "growth_pct": 12.0
+        },
+        {
+          "year": 2029,
+          "revenue": 22.779261120000008,
+          "growth_pct": 10.0
+        },
+        {
+          "year": 2030,
+          "revenue": 24.82939462080001,
+          "growth_pct": 9.0
+        },
+        {
+          "year": 2031,
+          "revenue": 26.81574619046401,
+          "growth_pct": 8.0
+        }
+      ],
+      "economic_fcf_path": [
+        {
+          "year": 2027,
+          "economic_fcf": 3.7903803000000007,
+          "margin_pct": 20.5
+        },
+        {
+          "year": 2028,
+          "economic_fcf": 4.659394320000001,
+          "margin_pct": 22.5
+        },
+        {
+          "year": 2029,
+          "economic_fcf": 5.580918974400002,
+          "margin_pct": 24.5
+        },
+        {
+          "year": 2030,
+          "economic_fcf": 6.579789574512003,
+          "margin_pct": 26.5
+        },
+        {
+          "year": 2031,
+          "economic_fcf": 7.374330202377604,
+          "margin_pct": 27.500000000000004
+        }
+      ],
+      "diluted_shares_b": 1.04,
+      "wacc_pct": 10.0,
+      "terminal_growth_pct": 2.5,
+      "per_share_value": 79.16
+    },
+    {
+      "name": "Base",
+      "probability": 0.42,
+      "revenue_path": [
+        {
+          "year": 2027,
+          "revenue": 19.268172,
+          "growth_pct": 18.8
+        },
+        {
+          "year": 2028,
+          "revenue": 22.736442959999998,
+          "growth_pct": 18.0
+        },
+        {
+          "year": 2029,
+          "revenue": 26.601638263199995,
+          "growth_pct": 17.0
+        },
+        {
+          "year": 2030,
+          "revenue": 30.857900385311993,
+          "growth_pct": 16.0
+        },
+        {
+          "year": 2031,
+          "revenue": 35.178006439255675,
+          "growth_pct": 14.000000000000002
+        }
+      ],
+      "economic_fcf_path": [
+        {
+          "year": 2027,
+          "economic_fcf": 4.52802042,
+          "margin_pct": 23.5
+        },
+        {
+          "year": 2028,
+          "economic_fcf": 6.252521814,
+          "margin_pct": 27.500000000000004
+        },
+        {
+          "year": 2029,
+          "economic_fcf": 8.432719329434399,
+          "margin_pct": 31.7
+        },
+        {
+          "year": 2030,
+          "economic_fcf": 10.645975632932636,
+          "margin_pct": 34.5
+        },
+        {
+          "year": 2031,
+          "economic_fcf": 12.488192285935764,
+          "margin_pct": 35.5
+        }
+      ],
+      "diluted_shares_b": 1.04,
+      "wacc_pct": 8.5,
+      "terminal_growth_pct": 3.0,
+      "per_share_value": 179.61
+    },
+    {
+      "name": "Bull Execution",
+      "probability": 0.1,
+      "revenue_path": [
+        {
+          "year": 2027,
+          "revenue": 19.62499,
+          "growth_pct": 21.0
+        },
+        {
+          "year": 2028,
+          "revenue": 23.64811295,
+          "growth_pct": 20.5
+        },
+        {
+          "year": 2029,
+          "revenue": 28.37773554,
+          "growth_pct": 20.0
+        },
+        {
+          "year": 2030,
+          "revenue": 33.7695052926,
+          "growth_pct": 19.0
+        },
+        {
+          "year": 2031,
+          "revenue": 39.510321192342,
+          "growth_pct": 17.0
+        }
+      ],
+      "economic_fcf_path": [
+        {
+          "year": 2027,
+          "economic_fcf": 5.00437245,
+          "margin_pct": 25.5
+        },
+        {
+          "year": 2028,
+          "economic_fcf": 7.212674449750001,
+          "margin_pct": 30.5
+        },
+        {
+          "year": 2029,
+          "economic_fcf": 10.0740961167,
+          "margin_pct": 35.5
+        },
+        {
+          "year": 2030,
+          "economic_fcf": 13.001259537651,
+          "margin_pct": 38.5
+        },
+        {
+          "year": 2031,
+          "economic_fcf": 15.8041284769368,
+          "margin_pct": 40.0
+        }
+      ],
+      "diluted_shares_b": 1.04,
+      "wacc_pct": 7.5,
+      "terminal_growth_pct": 3.5000000000000004,
+      "per_share_value": 311.33
+    },
+    {
+      "name": "Bull Ecosystem",
+      "probability": 0.08,
+      "revenue_path": [
+        {
+          "year": 2027,
+          "revenue": 19.78718,
+          "growth_pct": 22.0
+        },
+        {
+          "year": 2028,
+          "revenue": 24.1403596,
+          "growth_pct": 22.0
+        },
+        {
+          "year": 2029,
+          "revenue": 29.209835116,
+          "growth_pct": 21.0
+        },
+        {
+          "year": 2030,
+          "revenue": 35.0518021392,
+          "growth_pct": 20.0
+        },
+        {
+          "year": 2031,
+          "revenue": 41.361126524255994,
+          "growth_pct": 18.0
+        }
+      ],
+      "economic_fcf_path": [
+        {
+          "year": 2027,
+          "economic_fcf": 5.1446668,
+          "margin_pct": 26.0
+        },
+        {
+          "year": 2028,
+          "economic_fcf": 7.604213274,
+          "margin_pct": 31.5
+        },
+        {
+          "year": 2029,
+          "economic_fcf": 10.80763899292,
+          "margin_pct": 37.0
+        },
+        {
+          "year": 2030,
+          "economic_fcf": 14.195979866376002,
+          "margin_pct": 40.5
+        },
+        {
+          "year": 2031,
+          "economic_fcf": 17.371673140187518,
+          "margin_pct": 42.0
+        }
+      ],
+      "diluted_shares_b": 1.04,
+      "wacc_pct": 7.5,
+      "terminal_growth_pct": 3.5000000000000004,
+      "per_share_value": 341.43
+    }
+  ],
+  "valuation": {
+    "mode": "Mode B Hybrid",
+    "equity_value_current": 141.96,
+    "enterprise_value_current": 142.77,
+    "current_price": 136.5,
+    "fy2026_revenue_consensus": 16.219,
+    "fy2026_company_fcf_consensus": 5.647,
+    "fy2026_economic_fcf": 3.214,
+    "ev_revenue": 8.8,
+    "price_company_fcf": 25.14,
+    "price_economic_fcf": 44.17,
+    "core": "embedded in DCF current monetization",
+    "execution": "AI + Security incremental operating path",
+    "ecosystem": "Action Fabric external-agent standardization only in Bull Ecosystem",
+    "drag": "SBC, AI/cloud cost, M&A integration/amortization, net debt",
+    "expected_value": 165.55,
+    "expected_irr_18m_pct": 13.7,
+    "expected_irr_24m_pct": 10.1
+  },
+  "reverse_expectations": {
+    "terminal_growth_pct": 2.5,
+    "horizon_years": 10,
+    "sensitivity": [
+      {
+        "wacc_pct": 8.0,
+        "headline_fcf_required_cagr_pct": 6.404914121518235,
+        "economic_fcf_required_cagr_pct": 13.651992223969833
+      },
+      {
+        "wacc_pct": 8.5,
+        "headline_fcf_required_cagr_pct": 7.60487859858806,
+        "economic_fcf_required_cagr_pct": 14.966792602528189
+      },
+      {
+        "wacc_pct": 9.0,
+        "headline_fcf_required_cagr_pct": 8.748157544550395,
+        "economic_fcf_required_cagr_pct": 16.21989898407824
+      },
+      {
+        "wacc_pct": 9.5,
+        "headline_fcf_required_cagr_pct": 9.843257457680677,
+        "economic_fcf_required_cagr_pct": 17.42050580956803
+      },
+      {
+        "wacc_pct": 10.0,
+        "headline_fcf_required_cagr_pct": 10.896935103959516,
+        "economic_fcf_required_cagr_pct": 18.57592234490636
+      }
+    ],
+    "governing_interpretation": "Economic FCF lens requires roughly 15-16% 10Y CAGR at 8.5-9.0% WACC."
+  },
+  "consensus": {
+    "fy1": {
+      "year": 2026,
+      "revenue": 16.22,
+      "growth_pct": 22.2,
+      "fcf": 5.65
+    },
+    "fy2": {
+      "year": 2027,
+      "revenue": 19.26,
+      "growth_pct": 18.8,
+      "fcf": 6.97
+    },
+    "fy3": {
+      "year": 2028,
+      "fcf": 8.47
+    },
+    "analyst_average_pt_approx": 142.23,
+    "revision_trend": "Operating estimates remain healthy while valuation multiple compressed; full broker-level revision history is a primary-source ceiling."
+  },
+  "stance": {
+    "zone": "조건부 관심 / 분할매수 우위",
+    "conviction": "medium",
+    "price_bands": {
+      "attractive_below": 115,
+      "conditional_interest": "115-150",
+      "fair_watch": "150-185",
+      "execution_priced_above": 185
+    },
+    "horizon": "18-24 months",
+    "falsification": "2 or more RED KPI tripwires trigger mandatory thesis re-evaluation."
+  },
+  "catalysts": [
+    {
+      "when": "2026-10 around",
+      "event": "Q3 2026 earnings",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2027-01 around",
+      "event": "Q4/FY2026 earnings and FY2027 guide",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2027-H1",
+      "event": "Armis/Veza integration and Security cross-sell evidence",
+      "sensitivity": "High"
+    },
+    {
+      "when": "2027-H1",
+      "event": "Knowledge/product/Action Fabric adoption updates",
+      "sensitivity": "Medium"
+    },
+    {
+      "when": "2027-07 around",
+      "event": "Q2 2027 earnings, SBC/gross-margin proof",
+      "sensitivity": "High"
+    }
+  ],
+  "evidence_ceilings": [
+    {
+      "topic": "AI monetization",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "detail": "Incrementality vs bundle/reclassification, usage, renewal, pricing and product GM not disclosed."
+    },
+    {
+      "topic": "AI cost",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "detail": "Hyperscaler/AI pressure is disclosed, unit compute economics are not."
+    },
+    {
+      "topic": "Security organic/acquired split",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "detail": "Post-close split and cross-sell attach are not disclosed at decision-useful granularity."
+    },
+    {
+      "topic": "Partner economics",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "detail": "Marketplace/SI fee economics are not fully disclosed."
+    },
+    {
+      "topic": "Market positioning",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "detail": "Full broker revision history, complete 13F flows and motive-adjusted insider activity unavailable at primary-source parity."
+    }
+  ],
+  "rc_ledger": [
+    {
+      "rc_id": "RC-001",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2/3"
+    },
+    {
+      "rc_id": "RC-002",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1"
+    },
+    {
+      "rc_id": "RC-003",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1/4"
+    },
+    {
+      "rc_id": "RC-004",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4"
+    },
+    {
+      "rc_id": "RC-005",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3/4"
+    },
+    {
+      "rc_id": "RC-006",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3/4"
+    },
+    {
+      "rc_id": "RC-007",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3"
+    },
+    {
+      "rc_id": "RC-008",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.3/4"
+    },
+    {
+      "rc_id": "RC-009",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.1/4"
+    },
+    {
+      "rc_id": "RC-010",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.3"
+    },
+    {
+      "rc_id": "RC-011",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1/3"
+    },
+    {
+      "rc_id": "RC-012",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2/4"
+    },
+    {
+      "rc_id": "RC-013",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.3/4"
+    },
+    {
+      "rc_id": "RC-014",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.2/4"
+    },
+    {
+      "rc_id": "RC-015",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.1/3"
+    },
+    {
+      "rc_id": "RC-016",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4/5"
+    },
+    {
+      "rc_id": "RC-017",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4/5"
+    },
+    {
+      "rc_id": "RC-018",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.4/5"
+    },
+    {
+      "rc_id": "RC-019",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1/4"
+    },
+    {
+      "rc_id": "RC-020",
+      "status": "PRIMARY_SOURCE_CEILING",
+      "h3_locator": "Ch.0/4/5"
+    },
+    {
+      "rc_id": "RC-021",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.1/5/6"
+    },
+    {
+      "rc_id": "RC-022",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5"
+    },
+    {
+      "rc_id": "RC-023",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.5"
+    },
+    {
+      "rc_id": "RC-024",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.0/6"
+    },
+    {
+      "rc_id": "RC-025",
+      "status": "COMPLETE",
+      "h3_locator": "Ch.6"
+    },
+    {
+      "rc_id": "RC-026",
+      "status": "COMPLETE",
+      "h3_locator": "Appendix F"
+    },
+    {
+      "rc_id": "RC-027",
+      "status": "COMPLETE",
+      "h3_locator": "Data Pack/Publishing"
+    }
+  ],
+  "sources": [
+    {
+      "id": "SRC-001",
+      "type": "primary",
+      "title": "ServiceNow Q2 2026 Financial Results",
+      "date": "2026-07-22",
+      "url": "https://investor.servicenow.com/news/news-details/2026/ServiceNow-Reports-Second-Quarter-2026-Financial-Results/default.aspx"
+    },
+    {
+      "id": "SRC-002",
+      "type": "primary",
+      "title": "ServiceNow Q1 2026 Financial Results",
+      "date": "2026-04-22",
+      "url": "https://investor.servicenow.com/news/news-details/2026/ServiceNow-Reports-First-Quarter-2026-Financial-Results/default.aspx"
+    },
+    {
+      "id": "SRC-003",
+      "type": "primary",
+      "title": "ServiceNow Q4/FY2025 Financial Results",
+      "date": "2026-01-28",
+      "url": "https://investor.servicenow.com/news/news-details/2026/ServiceNow-Reports-Fourth-Quarter-and-Full-Year-2025-Financial-Results-Board-of-Directors-Authorizes-Additional-5B-for-Share-Repurchase-Program/default.aspx"
+    },
+    {
+      "id": "SRC-004",
+      "type": "primary",
+      "title": "ServiceNow Q2 2026 Form 10-Q",
+      "date": "2026-07-22",
+      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm"
+    },
+    {
+      "id": "SRC-005",
+      "type": "primary",
+      "title": "ServiceNow 2026 Proxy",
+      "date": "2026-04-06",
+      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000039/now-20260406.htm"
+    },
+    {
+      "id": "SRC-006",
+      "type": "primary",
+      "title": "Workflow Data Fabric",
+      "url": "https://www.servicenow.com/platform/workflow-data-fabric.html"
+    },
+    {
+      "id": "SRC-007",
+      "type": "primary",
+      "title": "Otto",
+      "url": "https://www.servicenow.com/platform/otto.html"
+    },
+    {
+      "id": "SRC-008",
+      "type": "primary",
+      "title": "Context Engine",
+      "url": "https://www.servicenow.com/products/context-engine.html"
+    },
+    {
+      "id": "SRC-009",
+      "type": "primary",
+      "title": "Action Fabric",
+      "url": "https://www.servicenow.com/platform/action-fabric.html"
+    },
+    {
+      "id": "SRC-010",
+      "type": "primary",
+      "title": "Armis acquisition close",
+      "date": "2026",
+      "url": "https://investor.servicenow.com/news/news-details/2026/ServiceNow-completes-Armis-acquisition-closing-the-gap-between-asset-visibility-and-cyber-risk/default.aspx"
+    },
+    {
+      "id": "SRC-011",
+      "type": "secondary",
+      "title": "StockAnalysis consensus snapshot",
+      "asof": "2026-08-19",
+      "url": "https://stockanalysis.com/stocks/now/forecast/"
+    },
+    {
+      "id": "SRC-012",
+      "type": "secondary",
+      "title": "MarketScreener consensus/valuation",
+      "asof": "2026-09-03",
+      "url": "https://www.marketscreener.com/quote/stock/SERVICENOW-INC-41645340/finances/"
+    },
+    {
+      "id": "SRC-013",
+      "type": "secondary",
+      "title": "Historical P/FCF",
+      "asof": "2026-08",
+      "url": "https://www.macrotrends.net/stocks/charts/NOW/servicenow/price-fcf"
+    }
+  ],
+  "visual_data_source_registry": [
+    {
+      "vis_id": "VIS-001",
+      "figure_title": "최근 8분기 구독매출 성장과 cRPO 성장",
+      "authoritative_source_block": "financials.quarterly_8q",
+      "source_values": [
+        {
+          "period": "Q3 2024",
+          "sub_growth": 23.0,
+          "crpo_growth": 26.0
+        },
+        {
+          "period": "Q4 2024",
+          "sub_growth": 21.0,
+          "crpo_growth": 19.0
+        },
+        {
+          "period": "Q1 2025",
+          "sub_growth": 19.0,
+          "crpo_growth": 22.0
+        },
+        {
+          "period": "Q2 2025",
+          "sub_growth": 22.5,
+          "crpo_growth": 24.5
+        },
+        {
+          "period": "Q3 2025",
+          "sub_growth": 21.5,
+          "crpo_growth": 21.0
+        },
+        {
+          "period": "Q4 2025",
+          "sub_growth": 21.0,
+          "crpo_growth": 25.0
+        },
+        {
+          "period": "Q1 2026",
+          "sub_growth": 22.0,
+          "crpo_growth": 22.5
+        },
+        {
+          "period": "Q2 2026",
+          "sub_growth": 24.5,
+          "crpo_growth": 21.0
+        }
+      ],
+      "source_hash": "6600d910be55ee2e",
+      "display_values": [
+        {
+          "period": "Q3 2024",
+          "sub_growth": 23.0,
+          "crpo_growth": 26.0
+        },
+        {
+          "period": "Q4 2024",
+          "sub_growth": 21.0,
+          "crpo_growth": 19.0
+        },
+        {
+          "period": "Q1 2025",
+          "sub_growth": 19.0,
+          "crpo_growth": 22.0
+        },
+        {
+          "period": "Q2 2025",
+          "sub_growth": 22.5,
+          "crpo_growth": 24.5
+        },
+        {
+          "period": "Q3 2025",
+          "sub_growth": 21.5,
+          "crpo_growth": 21.0
+        },
+        {
+          "period": "Q4 2025",
+          "sub_growth": 21.0,
+          "crpo_growth": 25.0
+        },
+        {
+          "period": "Q1 2026",
+          "sub_growth": 22.0,
+          "crpo_growth": 22.5
+        },
+        {
+          "period": "Q2 2026",
+          "sub_growth": 24.5,
+          "crpo_growth": 21.0
+        }
+      ],
+      "narrative_locator": "Ch.4.2",
+      "table_locator": "Ch.4.2 table",
+      "caption_locator": "VIS-001",
+      "rendered_asset_locator": "inline SVG in NOW_DEEP_DIVE.html",
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-002",
+      "figure_title": "$5M+ ACV 고객 확대",
+      "authoritative_source_block": "financials.quarterly_8q",
+      "source_values": [
+        {
+          "period": "Q4 2024",
+          "customers": 500
+        },
+        {
+          "period": "Q1 2025",
+          "customers": 508
+        },
+        {
+          "period": "Q2 2025",
+          "customers": 528
+        },
+        {
+          "period": "Q3 2025",
+          "customers": 553
+        },
+        {
+          "period": "Q4 2025",
+          "customers": 603
+        },
+        {
+          "period": "Q1 2026",
+          "customers": 630
+        },
+        {
+          "period": "Q2 2026",
+          "customers": 658
+        }
+      ],
+      "source_hash": "37915df1b23f6961",
+      "display_values": [
+        {
+          "period": "Q4 2024",
+          "customers": 500
+        },
+        {
+          "period": "Q1 2025",
+          "customers": 508
+        },
+        {
+          "period": "Q2 2025",
+          "customers": 528
+        },
+        {
+          "period": "Q3 2025",
+          "customers": 553
+        },
+        {
+          "period": "Q4 2025",
+          "customers": 603
+        },
+        {
+          "period": "Q1 2026",
+          "customers": 630
+        },
+        {
+          "period": "Q2 2026",
+          "customers": 658
+        }
+      ],
+      "narrative_locator": "Ch.3.5",
+      "table_locator": "Ch.4.2 table",
+      "caption_locator": "VIS-002",
+      "rendered_asset_locator": "inline SVG in NOW_DEEP_DIVE.html",
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-003",
+      "figure_title": "3년 매출과 회사 정의 FCF",
+      "authoritative_source_block": "financials.annual_3y",
+      "source_values": [
+        {
+          "fy": 2023,
+          "revenue": 8.971,
+          "fcf": 2.728
+        },
+        {
+          "fy": 2024,
+          "revenue": 10.984,
+          "fcf": 3.455
+        },
+        {
+          "fy": 2025,
+          "revenue": 13.278,
+          "fcf": 4.636
+        }
+      ],
+      "source_hash": "a4e7a3d02a1eb8d8",
+      "display_values": [
+        {
+          "fy": 2023,
+          "revenue": 8.971,
+          "fcf": 2.728
+        },
+        {
+          "fy": 2024,
+          "revenue": 10.984,
+          "fcf": 3.455
+        },
+        {
+          "fy": 2025,
+          "revenue": 13.278,
+          "fcf": 4.636
+        }
+      ],
+      "narrative_locator": "Ch.4.1",
+      "table_locator": "Ch.4.1 table",
+      "caption_locator": "VIS-003",
+      "rendered_asset_locator": "inline SVG in NOW_DEEP_DIVE.html",
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-004",
+      "figure_title": "경제적 FCF 시나리오 주당가치",
+      "authoritative_source_block": "scenarios",
+      "source_values": [
+        {
+          "name": "Bear",
+          "probability": 0.4,
+          "value": 79.16
+        },
+        {
+          "name": "Base",
+          "probability": 0.42,
+          "value": 179.61
+        },
+        {
+          "name": "Bull Execution",
+          "probability": 0.1,
+          "value": 311.33
+        },
+        {
+          "name": "Bull Ecosystem",
+          "probability": 0.08,
+          "value": 341.43
+        },
+        {
+          "name": "Current",
+          "value": 136.5
+        },
+        {
+          "name": "Expected",
+          "value": 165.55
+        }
+      ],
+      "source_hash": "5a7aec0452a90856",
+      "display_values": [
+        {
+          "name": "Bear",
+          "probability": 0.4,
+          "value": 79.16
+        },
+        {
+          "name": "Base",
+          "probability": 0.42,
+          "value": 179.61
+        },
+        {
+          "name": "Bull Execution",
+          "probability": 0.1,
+          "value": 311.33
+        },
+        {
+          "name": "Bull Ecosystem",
+          "probability": 0.08,
+          "value": 341.43
+        },
+        {
+          "name": "Current",
+          "value": 136.5
+        },
+        {
+          "name": "Expected",
+          "value": 165.55
+        }
+      ],
+      "narrative_locator": "Ch.5.3",
+      "table_locator": "Ch.5.3 table",
+      "caption_locator": "VIS-004",
+      "rendered_asset_locator": "inline SVG in NOW_DEEP_DIVE.html",
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-005",
+      "figure_title": "Reverse expectations: 필요한 10년 FCF CAGR",
+      "authoritative_source_block": "reverse_expectations.sensitivity",
+      "source_values": [
+        {
+          "wacc_pct": 8.0,
+          "headline_fcf_required_cagr_pct": 6.404914121518235,
+          "economic_fcf_required_cagr_pct": 13.651992223969833
+        },
+        {
+          "wacc_pct": 8.5,
+          "headline_fcf_required_cagr_pct": 7.60487859858806,
+          "economic_fcf_required_cagr_pct": 14.966792602528189
+        },
+        {
+          "wacc_pct": 9.0,
+          "headline_fcf_required_cagr_pct": 8.748157544550395,
+          "economic_fcf_required_cagr_pct": 16.21989898407824
+        },
+        {
+          "wacc_pct": 9.5,
+          "headline_fcf_required_cagr_pct": 9.843257457680677,
+          "economic_fcf_required_cagr_pct": 17.42050580956803
+        },
+        {
+          "wacc_pct": 10.0,
+          "headline_fcf_required_cagr_pct": 10.896935103959516,
+          "economic_fcf_required_cagr_pct": 18.57592234490636
+        }
+      ],
+      "source_hash": "1a4c2c34578d9aa4",
+      "display_values": [
+        {
+          "wacc_pct": 8.0,
+          "headline_fcf_required_cagr_pct": 6.404914121518235,
+          "economic_fcf_required_cagr_pct": 13.651992223969833
+        },
+        {
+          "wacc_pct": 8.5,
+          "headline_fcf_required_cagr_pct": 7.60487859858806,
+          "economic_fcf_required_cagr_pct": 14.966792602528189
+        },
+        {
+          "wacc_pct": 9.0,
+          "headline_fcf_required_cagr_pct": 8.748157544550395,
+          "economic_fcf_required_cagr_pct": 16.21989898407824
+        },
+        {
+          "wacc_pct": 9.5,
+          "headline_fcf_required_cagr_pct": 9.843257457680677,
+          "economic_fcf_required_cagr_pct": 17.42050580956803
+        },
+        {
+          "wacc_pct": 10.0,
+          "headline_fcf_required_cagr_pct": 10.896935103959516,
+          "economic_fcf_required_cagr_pct": 18.57592234490636
+        }
+      ],
+      "narrative_locator": "Ch.5.5",
+      "table_locator": "Appendix A3",
+      "caption_locator": "VIS-005",
+      "rendered_asset_locator": "inline SVG in NOW_DEEP_DIVE.html",
+      "status": "PASS"
+    },
+    {
+      "vis_id": "VIS-006",
+      "figure_title": "SBC가 바꾸는 현재 valuation",
+      "authoritative_source_block": "valuation",
+      "source_values": [
+        {
+          "metric": "Company-defined FCF multiple",
+          "value": 25.14
+        },
+        {
+          "metric": "SBC-adjusted economic FCF multiple",
+          "value": 44.17
+        }
+      ],
+      "source_hash": "e611070020d649d8",
+      "display_values": [
+        {
+          "metric": "Company-defined FCF multiple",
+          "value": 25.14
+        },
+        {
+          "metric": "SBC-adjusted economic FCF multiple",
+          "value": 44.17
+        }
+      ],
+      "narrative_locator": "Ch.0/5.2",
+      "table_locator": "Appendix A1",
+      "caption_locator": "VIS-006",
+      "rendered_asset_locator": "inline SVG in NOW_DEEP_DIVE.html",
+      "status": "PASS"
+    }
+  ],
+  "qa": {
+    "rc_total": 27,
+    "rc_complete": 22,
+    "rc_primary_source_ceiling": 5,
+    "rc_unresolved": 0,
+    "data_pack_report_parity": "PASS",
+    "visual_data_lineage": "PASS",
+    "visual_semantic_parity": "PASS",
+    "figure_numerical_parity": "PASS",
+    "rendered_visual_parity_qa": "PASS",
+    "searchable_text": "PASS",
+    "pdf_bookmarks": "PASS",
+    "html_sidebar": "PASS",
+    "contact_sheet_composition_qa": "PASS",
+    "korean_readability": "PASS",
+    "industry_company_narrative": "PASS",
+    "publishing_acceptance": "PASS"
+  }
+}
