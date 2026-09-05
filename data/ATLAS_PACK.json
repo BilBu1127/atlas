@@ -1,9 +1,9 @@
 {
  "meta": {
-  "version": "ATLAS_PACK_2026-08_UPDATE6_v2.3",
-  "as_of": "2026-08 (UPDATE-6 딥다이브통합 완료 배치6/6, 2026-08-30)",
-  "build_progress": "BUILD 1~7 완료 후 네 번째 월간 갱신(UPDATE-4, 딥다이브 통합형 B타입). 바텀업 딥다이브 21종 통합(§7A): 14종 승격(AMKR·CEG·EQIX·ET·FSLR·GEV·IRM·LNG·LRCX·RTX·SCCO·VLO·VRT·WMB) + 7종 신설(ALM·BE·FORM·NBIS·OII·TDW·VG). 톱다운: 티어 변경 0 — 21종 스탠스가 압도적 회피/관망/WATCH(밸류 만개)로 상향 트리거 미형성, 수요 견조로 하향 트리거도 없음. MAT-02(SCCO 구리·ALM 텅스텐)·ITC-02(AMKR 후공정)·IND-02(RTX)·IND-03(GEV·VRT·BE)·RLE-02(EQIX·IRM·NBIS) HEAT 재확인·선행지표 강화; UTL-02(CEG=발전측 4번째 corroboration, VST/CCJ/LEU 후)로 HEAT 근거 추가 보강하되 B타입이라 WARM 유지(승격은 전면스캔 이관); ITC-03(FORM·LRCX)·ENE-01(OII·TDW)·ENE-02(ET·WMB)·ENE-03(VLO)·ENE-04(LNG·VG)·UTL-03(FSLR) 종목 확인·산업 티어 유지. AI·전력·DC 클러스터 엣지 완비로 신규 산업엣지 불필요; §3A 아웃바운드 2홉 워크·51종 전면스캔은 다음 정식 월간으로 이관(부채 유지).",
-  "prev_version": "ATLAS_PACK_2026-08_UPDATE6_v2.1",
+  "version": "ATLAS_PACK_2026-09_UPDATE7_v2.4",
+  "as_of": "2026-09 (UPDATE-7 딥다이브통합 완료 배치5/5, 2026-09-05)",
+  "build_progress": "BUILD 1~7 완료 후 일곱 번째 갱신(UPDATE-7, MODE B 딥다이브 통합형). 딥다이브 팩 28종 통관 — §7A 승격 15(EME·FLR·J·KBR·MTZ·PWR·TSM·ASML·AMAT·OKLO·BWXT·NEE·NOW·PLTR·SNOW) + 신설 10(ACM·MYRG·XE·STEM·SES·UBER·AAPL·CAT·ECP·SVRA) + 재통관 2(LRCX·WMB) + 동결 재확인 1(TLN). DEEP_DIVED 86→111, 노드 326→336. §7B 통관 27건 전량 ATLAS_DERIVED(diff에 전량 공시). 톱다운: 티어 변경 0 — IND-05(E&C 8종 잔고 사상권+인력 병목 확인)·ITC-03(WFE $143.9B/+23.1% 상향)·UTL-02(4개 레그 전부 딥다이브 도달)에서 상향 근거가 티어 기준에 도달했으나 HEAT cap 8/8 포화 + B타입 전면스캔 부재로 전부 차기 A타입 이관. §3A 인바운드 2홉 전파 8체인 실행, 임계 통과 0. peak_watch: ITC-05 강화(공급 응답 실물 집행 + AAPL 마진에서 가격 전가 하류 확인), MAT-02 구리 레그 근거 추가(공급갭 전망 30%→25%), IND-01 이월. 후보 원장 대정산: NEW OPEN 5종 전부 RESOLVED, 잔여 0 → 차기 A타입 전면스캔 우선순위 상승. 커버리지 구멍 ITC-05·IND-01은 미해소 이월.",
+  "prev_version": "ATLAS_PACK_2026-08_UPDATE6_v2.3",
   "taxonomy_locked": true,
   "counts": {
    "sectors": 11,
@@ -11,9 +11,10 @@
    "themes": 11,
    "built": 56,
    "edges": 132,
-   "company_nodes": 326,
-   "deep_dived": 86,
-   "shallow": 240
+   "company_nodes": 336,
+   "deep_dived": 111,
+   "shallow": 225,
+   "stance_customs_done": 96
   },
   "merge_log": [
    "에너지: 유전서비스(OFS) → 상류(E&P)에 통합",
@@ -58,7 +59,12 @@
    "UPDATE-4 (2026-08-25): 딥다이브 21종 §7A 통합 — 14 승격 + 7 신설(ALM/MAT-02, BE/IND-03+RLE-02, FORM/ITC-03, NBIS/RLE-02, OII·TDW/ENE-01, VG/ENE-04). deep_dived 33→54, nodes 294→301. 티어·카드본문·엣지·테마·pending·verdict 불변(무결성락). BE 다중귀속(대표 IND-03+연결 RLE-02) 트립와이어 등재. UPDATE3 후보 6종(SCCO·RTX·GEV·VRT·AMKR·EQIX) 딥다이브 소진.",
    "UPDATE-5 (2026-08-26): GTLS(Chart) 상폐 교정 — 2026-07-16 Baker Hughes 인수완료·NYSE 상폐·$210 현금. company_nodes에서 GTLS 제거+BKR 신설, ENE-04 카드 승계, IND-01 카드 제거.",
    "UPDATE-5: ENE-05·MAT-03 cold_reversal_signal 필드 보강(BUILD1 유산). §3A 전파 부채 해소. meta 장부 UPDATE-5 정정.",
-   "UPDATE-5: 56종 톱다운 전면스캔 실행(3연속 이월 해소). 티어 변경 0 — 정산·부채회수·서사갱신 업데이트."
+   "UPDATE-5: 56종 톱다운 전면스캔 실행(3연속 이월 해소). 티어 변경 0 — 정산·부채회수·서사갱신 업데이트.",
+   {
+    "as_of": "2026-09-05",
+    "event": "UPDATE-7 딥다이브 28종 통합",
+    "detail": "promote 15 + create 10 + recustoms 2 + frozen 1. nodes 326→336, deep_dived 86→111. 티어 변경 0. 카드 additive 선행지표 40+개, companies 편입 17건. 후보 NEW OPEN 5→0."
+   }
   ],
   "notes": "산업 그룹 56개로 확정(초안 70 → 병합). 확정 후 임의 변경 금지, 추가만 사유 기록과 함께 허용(소스 01 §1). 반도체 4분할·지루한 산업 카드는 원칙대로 유지. | UPDATE-6 MODE B(딥다이브 통합) 배치 1/6: AI-DC 전력·컴퓨트층 — APLD·CORZ·WULF 신설(RLE-02, DEEP_DIVED), TLN 승격(UTL-02), WMB 리프레시(무변경). 티어 변경 0. 카드 additive 역반영만. | UPDATE-6 B2: AI-DC 네트워킹·광학 — ANET·COHR 승격, AAOI·CRDO·GLW·POET 신설(전부 ITC-06 DEEP_DIVED). GLW=광통신 무게중심 이동으로 ITC-06 primary(유리레그 이월). 티어 변경 0·additive 역반영만. | UPDATE-6 B3: 전력기기+중후장대 — HUBB 승격, POWL·CLF·ARLP 신설. CLF 삼중귀속(MAT-01 primary+DIS-01+IND-03). FPS(Forgent) 팩 불일치로 통합 보류. 티어 변경 0·additive만. | UPDATE-6 B4: 사이버·SW — PANW·FTNT·ZS·NTSK·FFIV·FICO 신설(전부 primary ITC-07). NTSK(Netskope) 추가 반영. FICO=ITC-07+ITC-08 conn·FFIV=ITC-07+ITC-06 conn. FPS 프로젝트 배제(사용자 지시). 티어 변경 0·additive만. | UPDATE-6 B5: 방산·우주·전력반도체 — HEI 승격(IND-02), SATL(IND-02)·VELO(IND-04+IND-02)·WOLF·NVTS(ITC-04) 신설, NVEC 리프레시 무변경. NVTS 추가. WOLF fresh-start 주의. 티어 변경 0·additive만. | UPDATE-6 B6(최종): 헬스+아웃라이어 — ALNY·SHOP 승격, FIVE·HSHP·PURR·NNN·ILMN 신설, TEM 리프레시 무변경. PURR=FIN-02 잠정귀속(택소노미 미대응). SHOP/NNN/ILMN 추가. B1-B6 딥다이브통합 사이클 완료. 티어 변경 0·additive만. | UPDATE-6 최종보정: 딥다이브 후보 원장 구조화 이전 — carry 문자열에 갇혀 있던 UPDATE-5 승인 후보를 monthly_diff 배열(deep_dive_candidates 5·screening_recommendations 3·candidates_withheld 3)로 이전. 각 후보에 falsifier·horizon·verdict_log 3규율 부착. 신규 후보 생성 0. | UPDATE-6 v2.2: 거버넌스 v1.3(REVISIT 트랙) 승인 반영 — deep_dive_candidates에 type/trigger/status 스키마 적용. NEW 5종(OPEN) + REVISIT TLN 1종(PENDING_TRIGGER, UTL-02 승격 연동). 실제 REVISIT 판정은 차기 A타입. 티어·노드·엣지 무변경.",
   "os_version": "v1.3-role",
@@ -107,7 +113,37 @@
    "RESOLVED(UPDATE-5): §3A 아웃바운드 2홉 전파 워크 실행 — 임계 통과 노드 0, 감시강화만 기록.",
    "RESOLVED(UPDATE-5): BUILD7 최종정산 잔여(provisional=0·섬해소·필드) 전부 확정.",
    "잔여: fresh 40종 중 비-AI(ENE·FIN·소비재·비HLT02 헬스·비MAT02 소재·유틸) 다수는 UPDATE-4 freshness 기반 유지 — 차기 갱신에서 톱다운 재확인 권장(coverage_honesty 참조).",
-   "스탠스 통관(Phase2B): 71종 atlas_stance 소급 기록(contract_source=ATLAS_DERIVED). NEUTRAL/COLD 15종 미통관. tripwire_status 전량 UNKNOWN(미판정). 팩 내부 불일치 플래그 15건 — GEV(EV>가격인데 회피)·VLO(조건부관심인데 IRR −13.9%) 우선 확인."
+   "스탠스 통관(Phase2B): 71종 atlas_stance 소급 기록(contract_source=ATLAS_DERIVED). NEUTRAL/COLD 15종 미통관. tripwire_status 전량 UNKNOWN(미판정). 팩 내부 불일치 플래그 15건 — GEV(EV>가격인데 회피)·VLO(조건부관심인데 IRR −13.9%) 우선 확인.",
+   {
+    "as_of": "2026-09-05",
+    "id": "ITC-03",
+    "issue": "카드 demand 본문의 SEMI WFE 수치가 2026 $135B(+9%)로 남아 있으나 새 원본은 $143.9B(+23.1%). 02 §4 직전 본문 불가침으로 UPDATE-7에서 정정하지 않고 선행지표로 additive 반영. A타입에서 본문 정정."
+   },
+   {
+    "as_of": "2026-09-05",
+    "id": "TLN",
+    "issue": "atlas_stance.label(ATTRACTIVE)이 ref_price 기계적 zone(WATCH) 및 팩 zone 원문과 불일치. §7B 제3조 동결로 미수정 — 새 날짜 팩 통관 시 자동 해소."
+   },
+   {
+    "as_of": "2026-09-05",
+    "id": "stance_customs",
+    "issue": "레거시 15종 atlas_stance 미보유(원본 팩 재제출 필요). 111종 중 96종 통관(86.5%)."
+   },
+   {
+    "as_of": "2026-09-05",
+    "id": "SNOW",
+    "issue": "관측가가 정규장 종가($305.84)라 기계적 zone(ATTRACTIVE)과 팩 label(WATCH, 시간외 $375.51 기준)이 갈림. 차기 갱신에서 정규장 확인 필요."
+   },
+   {
+    "as_of": "2026-09-05",
+    "id": "UBER",
+    "issue": "팩 사다리에 72~82 공백이 있어 현재가 $76.78의 기계적 zone=UNKNOWN. 보간 금지(§7B 제1·2조) — 새 팩에서 밴드가 메워질 때까지 유지."
+   },
+   {
+    "as_of": "2026-09-05",
+    "id": "stance_state.price as_of",
+    "issue": "직전 팩에서 8개 노드의 stance_state.price.as_of가 공란이었음(LNG·LEU·IRM·DNA·ALM·NBIS·PURR·ILMN). 그중 값이 있는 3종(LNG, IRM, NBIS)은 §4A '확인 못 한 노드는 zone=UNKNOWN'에 따라 zone을 UNKNOWN으로 내리고 값은 보존. 날짜는 원본 팩 재제출로만 복원 가능 — 임의 추정 금지."
+   }
   ]
  },
  "themes": [
@@ -389,6 +425,26 @@
      "name": "퍼미안 반출 여력",
      "last_reading": "병목 정황",
      "as_of": "2026-08"
+    },
+    {
+     "name": "계약 잔고(WMB)",
+     "last_reading": "2Q26 RPO Williams $30.735B(Transco $21.142B·NWP $3.597B)·수수료 기반 NGL 매출 93%(2025)",
+     "as_of": "2026-09"
+    },
+    {
+     "name": "프로젝트 파이프(WMB)",
+     "last_reading": "Southeast Supply Enhancement 1,597Mdth/d(3Q27)·Northeast Supply Enhancement 400Mdth/d(전량 계약)·Line 200 3,100Mdth/d(2Q28)·Power Express 800Mdth/d(3Q30)",
+     "as_of": "2026-09"
+    },
+    {
+     "name": "LNG 수출 경로(EIA, WMB 팩)",
+     "last_reading": "15.0(2025)→17.0(2026)→19.0(2027) Bcf/d · 헨리허브 평균 $3.44(2026)/$3.31(2027)",
+     "as_of": "2026-09"
+    },
+    {
+     "name": "★역풍: 글로벌 LNG 공급파",
+     "last_reading": "2025~30 FID 후 증설 ~345bcm/yr, 정점 2028 ~95bcm/yr — 2028~30 netback(JKM·TTF−HH) 스트레스 창",
+     "as_of": "2026-09"
     }
    ],
    "triggers_watchlist": [
@@ -415,7 +471,7 @@
      "ticker": "WMB",
      "name": "Williams",
      "chain_position": "가스 파이프라인",
-     "note": "",
+     "note": "2Q26 RPO $30.7B·Socrates 556MW · 딥다이브 갱신(UPDATE-7 B4, WATCH/HOLD)",
      "role": "REGIME_LEADER",
      "role_reason": "데이터센터·LNG 가스 처리량 순노출 — 가스 파이프라인 최대 노출"
     },
@@ -930,6 +986,11 @@
      "name": "희토류 中 지배(UUUU)",
      "last_reading": "자석REE 채굴 60%·정련 91%·소결자석 94% (2024) — 탈중국 공급 트리거",
      "as_of": "2026-08-24"
+    },
+    {
+     "name": "★구리 공급갭 전망 축소(CAT 팩)",
+     "last_reading": "2035 공급갭 2025 outlook 30% → 2026 outlook 25%로 하향. 2040까지 구리 수요 +30%·광업 소요자본 $500B는 유지 — 구리 레그 peak_watch 근거 보강",
+     "as_of": "2026-08"
     }
    ],
    "triggers_watchlist": [
@@ -997,6 +1058,13 @@
      "name": "Energy Fuels",
      "chain_position": "우라늄·희토류 전략광물",
      "note": "딥다이브 완료(관망)",
+     "role": null
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "chain_position": "광산 장비",
+     "note": "구리 2035 공급갭 전망 30%→25%(2026 outlook)",
      "role": null
     }
    ],
@@ -1372,6 +1440,11 @@
      "name": "리튬 2025 수급(USGS)",
      "last_reading": "생산 +31% > 소비 +20% — 공급이 수요보다 빠르게 증가(가격 지속성 공급규율 의존)",
      "as_of": "2026-08-24"
+    },
+    {
+     "name": "배터리 소재 상업화 문턱(SES)",
+     "last_reading": "드론셀은 샘플·인증·라인감사 단계로 확정 물량 백로그 미공시, 소재는 2차 테스트 ~6곳 — 수요 서사와 계약 증거 사이 간극이 여전",
+     "as_of": "2026-08"
     }
    ],
    "triggers_watchlist": [
@@ -1417,6 +1490,13 @@
      "name": "Amprius Technologies",
      "chain_position": "실리콘음극 배터리셀",
      "note": "딥다이브 완료(단위경제성 미검증)",
+     "role": null
+    },
+    {
+     "ticker": "SES",
+     "name": "SES AI",
+     "chain_position": "드론용 셀·전지소재",
+     "note": "충주 라인 4Q26 100만셀 목표 · 딥다이브 완료(UPDATE-7 B4)",
      "role": null
     }
    ],
@@ -1670,6 +1750,21 @@
      "chain_position": "지구관측(EO) 위성·지오공간",
      "note": "방산 persistent EO 계약 · 딥다이브 완료(B5)",
      "role": null
+    },
+    {
+     "ticker": "BWXT",
+     "name": "BWX Technologies",
+     "chain_position": "해군 원자로·정부 원자력",
+     "note": "총잔고 $8.398B(2Q26) · 딥다이브 완료(UPDATE-7 B3)",
+     "role": "REGIME_LEADER",
+     "role_reason": "총잔고 $8.398B(2Q26) · 딥다이브 완료(UPDATE-7 B3)"
+    },
+    {
+     "ticker": "SES",
+     "name": "SES AI",
+     "chain_position": "드론용 셀",
+     "note": "연결 산업(대표=MAT-06)",
+     "role": null
     }
    ],
    "tier": "HEAT",
@@ -1738,6 +1833,21 @@
     {
      "name": "전기설비 DC·그리드 수주 강도(HUBB·POWL)",
      "last_reading": "HUBB Electrical +18.3%·Utility +5.5%; POWL book-to-bill 3.0x·백로그 $2.4B·DC 수주 9M $800M(단일 ≥$400M)",
+     "as_of": "2026-08"
+    },
+    {
+     "name": "장비 선확보 기간(NEE 딥다이브)",
+     "last_reading": "배터리·태양광·개폐기 2029년까지, 변압기 2030년까지 확보 — 발주자가 4년치를 미리 잠근다는 것이 리드타임 병목의 직접 증거",
+     "as_of": "2026-08"
+    },
+    {
+     "name": "발전기기 수요(CAT)",
+     "last_reading": "2Q26 발전 소매 +72% YoY, 대형엔진 capa 2024 대비 ~2배·Solar Turbines 2.5배 증설 목표, 2030 발전 매출 2배+ 목표",
+     "as_of": "2026-08"
+    },
+    {
+     "name": "가스터빈 확보(NEE)",
+     "last_reading": "초기 가스터빈 4GW 확보 — 발전설비 슬롯 자체가 희소재",
      "as_of": "2026-08"
     }
    ],
@@ -1814,6 +1924,13 @@
      "chain_position": "전기강판(GOES)→변압기 옵셔널리티",
      "note": "connected 귀속(primary=MAT-01) · 딥다이브 완료(B3)",
      "role": null
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "chain_position": "발전 패키지(Solar Turbines·엔진)",
+     "note": "발전 소매 +72% YoY·대형엔진 capa ~2배 증설 목표",
+     "role": null
     }
    ],
    "tier": "HEAT",
@@ -1872,6 +1989,16 @@
     {
      "name": "금속 AM 방산·우주 수주(VELO)",
      "last_reading": "VELO Q2 bookings $29M·backlog $31M(production 믹스 전환 관건)",
+     "as_of": "2026-08"
+    },
+    {
+     "name": "기계 사이클 재점화(CAT)",
+     "last_reading": "전사 잔고 $51B(2025말)→$72.1B(2Q26), 2Q26 P&E +17%·CI +35%·RI +20%, P&E 마진 24.6%",
+     "as_of": "2026-08"
+    },
+    {
+     "name": "딜러 소매(CAT, 비감사·방향성)",
+     "last_reading": "북미 건설기계 +27%·세계 건설 +22%·광산HC/Q&A +15%·철도 +272%",
      "as_of": "2026-08"
     }
    ],
@@ -1932,6 +2059,14 @@
      "chain_position": "금속 적층제조(metal AM)",
      "note": "connected IND-02(방산/우주) · 딥다이브 완료(B5)",
      "role": null
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "chain_position": "건설·광산 기계",
+     "note": "전사 잔고 $51B→$72.1B(2Q26) · 딥다이브 완료(UPDATE-7 B5)",
+     "role": "ANCHOR",
+     "role_reason": "전사 잔고 $51B→$72.1B(2Q26) · 딥다이브 완료(UPDATE-7 B5)"
     }
    ],
    "tier": "WARM",
@@ -1986,6 +2121,26 @@
      "name": "리쇼어링 팹 capex",
      "last_reading": "반도체·배터리 건설 진행",
      "as_of": "2026-06"
+    },
+    {
+     "name": "E&C 수주잔고 하드넘버(딥다이브 8종)",
+     "last_reading": "PWR RPO $33.55B·EME RPO +43.9% YoY·MTZ 18M 잔고 $21.39B(8분기 연속↑)·MYRG 잔고 $3.16B(사상)·ACM 설계 B/B 1.6x·J ANR B/B 1.2x·FLR 수주/매출 1.42x·KBR 잔고 $17.8B",
+     "as_of": "2026-08"
+    },
+    {
+     "name": "숙련 전기·기계 인력 공석(BLS, EME 팩)",
+     "last_reading": "전기공 연 72,700명·배관/피터 42,000명 공석 — 병목이 자재가 아니라 인력임을 확인",
+     "as_of": "2026-08"
+    },
+    {
+     "name": "미 총건설 SAAR(Census)",
+     "last_reading": "$2,166.5B(−3.2% YoY) / 민간 비주거 $745.3B — 총량은 감소, 전력·DC 포켓만 조여짐",
+     "as_of": "2026-06"
+    },
+    {
+     "name": "E&C 마진 실현",
+     "last_reading": "EME 전기 13.9%·기계 12.5%·MYRG C&I 8.5%(2024 3.2%)·PWR Electric 11.5% — 수요가 마진으로 전환 확인",
+     "as_of": "2026-08"
     }
    ],
    "triggers_watchlist": [
@@ -1999,7 +2154,7 @@
      "ticker": "PWR",
      "name": "Quanta Services",
      "chain_position": "전력·인프라 시공",
-     "note": "그리드·데이터센터 순노출(주목)",
+     "note": "RPO $33.55B·Electric 마진 11.5% · 딥다이브 완료(UPDATE-7 B1, AVOID)",
      "role": "REGIME_LEADER",
      "role_reason": "그리드·데이터센터 전력 시공 순노출(주목)"
     },
@@ -2007,7 +2162,7 @@
      "ticker": "EME",
      "name": "EMCOR",
      "chain_position": "기전 시공",
-     "note": "데이터센터 백로그(주목)",
+     "note": "RPO +43.9% YoY·1년내 76% · 딥다이브 완료(UPDATE-7 B1, HOLD)",
      "role": "REGIME_LEADER",
      "role_reason": "데이터센터 기전 시공 백로그 순노출(주목)"
     },
@@ -2015,7 +2170,7 @@
      "ticker": "MTZ",
      "name": "MasTec",
      "chain_position": "인프라 시공",
-     "note": "",
+     "note": "18개월 잔고 $21.39B · 딥다이브 완료(UPDATE-7 B1, 조건부 관심)",
      "role": "HIGH_BETA",
      "role_reason": "인프라 시공 — 전력·통신 국면 탄력"
     },
@@ -2023,28 +2178,35 @@
      "ticker": "FLR",
      "name": "Fluor",
      "chain_position": "대형 EPC",
-     "note": "LNG·원전",
+     "note": "보상형 잔고 85%·수주/매출 1.42x · 딥다이브 완료(UPDATE-7 B1, WATCH)",
      "role": null
     },
     {
      "ticker": "J",
      "name": "Jacobs",
      "chain_position": "엔지니어링",
-     "note": "",
+     "note": "ANR book-to-bill 1.2x·AI DC 직결 ANR 11% · 딥다이브 완료(UPDATE-7 B1, 조건부 관심)",
      "role": null
     },
     {
      "ticker": "KBR",
      "name": "KBR",
      "chain_position": "EPC·정부",
-     "note": "",
+     "note": "2027-01-04 분할·잔고 $17.8B · 딥다이브 완료(UPDATE-7 B1, 매수 우위)",
      "role": null
     },
     {
      "ticker": "ACM",
      "name": "AECOM",
      "chain_position": "인프라 설계",
-     "note": "",
+     "note": "설계 book-to-burn 1.6x·P3 꼬리 · 딥다이브 완료(UPDATE-7 B1, BUY ZONE)",
+     "role": null
+    },
+    {
+     "ticker": "MYRG",
+     "name": "MYR Group",
+     "chain_position": "송배전·상업산업 전기시공",
+     "note": "T&D+C&I 전기시공 · 딥다이브 완료(UPDATE-7 B1)",
      "role": null
     }
    ],
@@ -2149,6 +2311,13 @@
      "name": "J.B. Hunt",
      "chain_position": "인터모달·트럭",
      "note": "",
+     "role": null
+    },
+    {
+     "ticker": "UBER",
+     "name": "Uber Technologies",
+     "chain_position": "화물·라스트마일",
+     "note": "연결 산업(대표=COM-03)",
      "role": null
     }
    ],
@@ -2531,6 +2700,21 @@
      "name": "데이터센터 전력수요(VST)",
      "last_reading": "PJM 용량가 급등·헤지 2026 ~100% — 전력 희소성 심화 정황",
      "as_of": "2026-08-24"
+    },
+    {
+     "name": "대형부하 파이프라인(NEE/FPL)",
+     "last_reading": "관심 21GW · 심층협의 12GW — 계약 전환 여부가 SHORTAGE 지속의 시험대",
+     "as_of": "2026-08"
+    },
+    {
+     "name": "규제자본 성장(NEE/FPL)",
+     "last_reading": "규제자본 $79.7B(+9.3% YoY)·허용ROE 중간 10.95%(2026~29 합의)·2026 capex 가이 $12~13B",
+     "as_of": "2026-08"
+    },
+    {
+     "name": "신규 공급 파이프(NEE/NEER)",
+     "last_reading": "백로그 24GW(3Q24)→35.1GW(2Q26), 가스허브 최대 10GW(초기자금 $3.3B, 2028년말 최초 가동~2032 완공), Duane Arnold 재가동 2029 Q1 이전",
+     "as_of": "2026-08"
     }
    ],
    "triggers_watchlist": [
@@ -2581,7 +2765,7 @@
      "ticker": "NEE",
      "name": "NextEra",
      "chain_position": "유틸+신재생",
-     "note": "Dominion 인수 합의",
+     "note": "FPL 규제자본 +9.3%·대형부하 심층협의 12GW · 딥다이브 완료(UPDATE-7 B3, 관망)",
      "role": "ANCHOR"
     }
    ],
@@ -2672,6 +2856,31 @@
      "name": "IPP 원전 DC PPA·용량가격 (TLN 딥다이브)",
      "last_reading": "TLN AWS PPA 최대 1,920MW(2042까지)·PJM 2028-29 $325/MW-day($1.21B)·~4GW DC 파이프라인",
      "as_of": "2026-08"
+    },
+    {
+     "name": "SMR 규제 진척(OKLO)",
+     "last_reading": "NRC PDC 승인 2026-04 · Aurora-INL DOE PDSA 승인 2026-06(5단계 중 2) · Groves 임계 달성 2026-08-06(100W 영출력 임계집합체)",
+     "as_of": "2026-09"
+    },
+    {
+     "name": "SMR 고객 계약 강도(OKLO)",
+     "last_reading": "Meta 1.2GW(선지급 메커니즘)·Equinix 100~500MW($25M 비환급)·Switch 12GW(명시적 비구속) — headline 14GW+ 중 구속 잔고는 미공시",
+     "as_of": "2026-09"
+    },
+    {
+     "name": "연료 병목(XE·OKLO)",
+     "last_reading": "TRISO-X TX-1 연 5MTU·원자로 11기분, 2026-08-24 연료제조 장비 설치 단계·목표 가동 H1 2028 / INL 회수 HALEU 5t·Centrus 2029 인도 예정",
+     "as_of": "2026-08"
+    },
+    {
+     "name": "원자력 부품 잔고(BWXT)",
+     "last_reading": "총잔고 $4.843B(2024말)→$7.261B(2025말)→$8.398B(2Q26), 정부 $6.798B(미펀딩 $2.256B)",
+     "as_of": "2026-08"
+    },
+    {
+     "name": "DC 전력 수요 배경(OKLO 팩)",
+     "last_reading": "미 데이터센터 전력비중 2030 중심 11.8%(9.5~15.3%)·PJM 10년 하계피크 CAGR 3.6%·순전력량 5.3%",
+     "as_of": "2026-09"
     }
    ],
    "triggers_watchlist": [
@@ -2720,7 +2929,7 @@
      "ticker": "BWXT",
      "name": "BWX Technologies",
      "chain_position": "원자로·연료",
-     "note": "해군·SMR",
+     "note": "총잔고 $8.398B·FCF 가이 $345~360M · 딥다이브 완료(UPDATE-7 B3, WATCH)",
      "role": "ANCHOR"
     },
     {
@@ -2735,7 +2944,7 @@
      "ticker": "OKLO",
      "name": "Oklo",
      "chain_position": "SMR 개발",
-     "note": "상업화 前(고변동)",
+     "note": "NRC PDC 승인(2026-04)·Groves 임계(2026-08) · 딥다이브 완료(UPDATE-7 B3, 실행 선반영)",
      "role": "HIGH_BETA",
      "role_reason": "SMR 상업화 前 — 극고변동"
     },
@@ -2745,6 +2954,14 @@
      "chain_position": "우라늄 광산·밀(원전 연료 상류)",
      "note": "딥다이브 완료(관망)·MAT-02와 이중귀속",
      "role": null
+    },
+    {
+     "ticker": "XE",
+     "name": "X-Energy",
+     "chain_position": "SMR(HTGR)·TRISO 연료",
+     "note": "Dow Seadrift·Amazon 320MWe · TX-1 연료공장 2028 목표 · 딥다이브 완료(UPDATE-7 B3)",
+     "role": "HIGH_BETA",
+     "role_reason": "Dow Seadrift·Amazon 320MWe · TX-1 연료공장 2028 목표 · 딥다이브 완료(UPDATE-7 B3)"
     }
    ],
    "tier": "WARM",
@@ -2819,6 +3036,21 @@
      "name": "데이터센터發 전력수요",
      "last_reading": "재생 경쟁력 지지(속도·비용)",
      "as_of": "2026-06"
+    },
+    {
+     "name": "미 스토리지 설치(STEM 팩)",
+     "last_reading": "2025말 43.6GW → 1H26 +8.3GW(누적 ~52GW), 향후 2.5년 계획 54GW, 2026 계획 태양광 43.4GW·스토리지 24.0GW",
+     "as_of": "2026-09"
+    },
+    {
+     "name": "자산 제어 SW 수요(STEM)",
+     "last_reading": "총ARR $61.1M(4Q25)→$62.4M(2Q26)·CARR $69.0M·GAAP GM 33%→41% — 설치기반은 커지나 SW 화폐화 속도는 저한자릿수",
+     "as_of": "2026-09"
+    },
+    {
+     "name": "개발 백로그(NEE/NEER)",
+     "last_reading": "2Q26 백로그 35.1GW·신규 3.6GW(배터리 2.0GW)·2026~32 개발기대 76.6~107.6GW",
+     "as_of": "2026-08"
     }
    ],
    "triggers_watchlist": [
@@ -2868,6 +3100,20 @@
      "name": "Fluence",
      "chain_position": "ESS",
      "note": "저장 수요(주목)",
+     "role": null
+    },
+    {
+     "ticker": "STEM",
+     "name": "Stem",
+     "chain_position": "재생에너지 제어 SW·EMS",
+     "note": "PowerTrack ARR $42.8M · 딥다이브 완료(UPDATE-7 B4)",
+     "role": null
+    },
+    {
+     "ticker": "SES",
+     "name": "SES AI",
+     "chain_position": "ESS·드론셀·전지소재",
+     "note": "ESS가 매출 바닥 · 딥다이브 완료(UPDATE-7 B4)",
      "role": null
     }
    ],
@@ -3140,6 +3386,21 @@
      "name": "2nm 예약 상황",
      "last_reading": "2028년까지 예약, 리스크양산 H2'26",
      "as_of": "2026-06"
+    },
+    {
+     "name": "TSMC 선단 믹스·수익성",
+     "last_reading": "2Q26 총이익률 67.7%(3Q 가이 65~67%)·HPC 66%·≤7nm 77%·N2 웨이퍼 매출 3% 진입",
+     "as_of": "2026-09"
+    },
+    {
+     "name": "TSMC 월매출",
+     "last_reading": "2026 1~7월 누적 +37.0%, 7월 +44.7% (8월 2026-09-10 발표 예정)",
+     "as_of": "2026-09"
+    },
+    {
+     "name": "TSMC capex·점유",
+     "last_reading": "2026 capex $60~64B(선단공정 70~80%·첨단패키징 등 10~20%)·Foundry 2.0 점유 40%·상위10 고객 78%",
+     "as_of": "2026-09"
     }
    ],
    "triggers_watchlist": [
@@ -3153,7 +3414,7 @@
      "ticker": "TSM",
      "name": "TSMC",
      "chain_position": "선단 파운드리·CoWoS",
-     "note": "트리거 순노출 핵심, 단 컨센 HIGH",
+     "note": "2Q26 GM 67.7%·HPC 66%·≤7nm 77%·N2 3% · 딥다이브 완료(UPDATE-7 B2, 조건부 관심)",
      "role": "ANCHOR",
      "role_reason": "패키징 트리거 순노출이나 컨센 HIGH·재평가 완료 → 대장"
     },
@@ -3245,6 +3506,31 @@
      "name": "후공정 테스트 성장",
      "last_reading": "+12%(2026, SEMI)",
      "as_of": "2025-12"
+    },
+    {
+     "name": "WFE 시장(SEMI, AMAT·LRCX 팩 동일 출처)",
+     "last_reading": "2025 $116.9B → 2026 $143.9B(+23.1%) → 2027 $175.3B(+21.8%) → 2028 $200B(+14.1%) — 직전 카드 수치(2026 $135B/+9%) 대비 대폭 상향",
+     "as_of": "2026-09"
+    },
+    {
+     "name": "ASML 노광 capa 계획",
+     "last_reading": "low-NA EUV 2026 65대→2027 +30%, DUV 이머전 2026 130대→2027 +30%, 2028 추가 +30% 검토. 2027 EUV 오더는 사실상 필요분 전량 수령",
+     "as_of": "2026-09"
+    },
+    {
+     "name": "장비사 실적 인플렉션",
+     "last_reading": "LRCX FY26 시스템 +29.5%·영업마진 35.3%(JunQ 37.4%, SepQ 가이 39.5%) / AMAT Q3FY26 시스템 +27%·비GAAP GM 50.4% / ASML IBM €2.762B·GM 54.0%",
+     "as_of": "2026-09"
+    },
+    {
+     "name": "첨단패키징·PDC 성장(AMAT 회사 전망)",
+     "last_reading": "CY2026 각각 >50% — 알파가 광범위 WFE보다 패키징·검사 하위에 있다는 직전 판정과 정합",
+     "as_of": "2026-09"
+    },
+    {
+     "name": "중국 노출",
+     "last_reading": "AMAT 매출 비중 28%(YELLOW)·LRCX 34%·ASML 시스템 매출 14%(2025 총매출 29.1%) — 비중국 성장이 상쇄 중",
+     "as_of": "2026-09"
     }
    ],
    "triggers_watchlist": [
@@ -3258,21 +3544,21 @@
      "ticker": "ASML",
      "name": "ASML",
      "chain_position": "EUV/DUV 리소",
-     "note": "독점·백로그 2028",
+     "note": "EUV capa 2026 65대→2027 +30%·2027 오더 사실상 전량 수령 · 딥다이브 완료(UPDATE-7 B2, 회피/관망)",
      "role": "ANCHOR"
     },
     {
      "ticker": "AMAT",
      "name": "Applied Materials",
      "chain_position": "증착·식각·CMP",
-     "note": "",
+     "note": "Q3FY26 시스템 +27%·비GAAP GM 50.4% · 딥다이브 완료(UPDATE-7 B2, WATCH)",
      "role": "ANCHOR"
     },
     {
      "ticker": "LRCX",
      "name": "Lam Research",
      "chain_position": "식각·증착(메모리 강점)",
-     "note": "NAND 전환 노출",
+     "note": "FY26 시스템 +29.5%·영업마진 35.3% · 딥다이브 갱신(UPDATE-7 B2, 관망/조건부)",
      "role": "ANCHOR"
     },
     {
@@ -3585,6 +3871,16 @@
      "name": "800G→1.6T 광 마이그레이션 램프",
      "last_reading": "COHR D&C+40%·GLW Optical+32%·AAOI 1.6T 첫 볼륨 >$200M·CRDO FY27 옵티컬 목표 $600M·POET 1.6T/CPO pre-commercial",
      "as_of": "2026-08"
+    },
+    {
+     "name": "★메모리 원가 전가(AAPL)",
+     "last_reading": "정규화 총이익률 49.3%(FY26Q2)→48.1%(Q3)→FY26Q4 가이 중간 46.5%, 주된 요인이 메모리 원가 — ITC-05 부족의 청구서가 하류 세트에 도달",
+     "as_of": "2026-08"
+    },
+    {
+     "name": "완제품 수요(AAPL)",
+     "last_reading": "FY26 Q3 총매출 +16%·아이폰 +22%·Mac +29%·서비스 +12%(GM 75.6%) — 'AI 조여짐·소비 풀림' MIXED 판정 중 소비 레그가 예상보다 견조",
+     "as_of": "2026-08"
     }
    ],
    "triggers_watchlist": [
@@ -3695,6 +3991,14 @@
      "chain_position": "ADC systems 하드웨어",
      "note": "connected 귀속(primary=ITC-07) · 딥다이브 완료(B4)",
      "role": null
+    },
+    {
+     "ticker": "AAPL",
+     "name": "Apple",
+     "chain_position": "완제품·실리콘",
+     "note": "메모리 원가로 정규화 GM 49.3→48.1→가이 46.5% · 딥다이브 완료(UPDATE-7 B5)",
+     "role": "ANCHOR",
+     "role_reason": "메모리 원가로 정규화 GM 49.3→48.1→가이 46.5% · 딥다이브 완료(UPDATE-7 B5)"
     }
    ],
    "tier": "WARM",
@@ -3759,6 +4063,21 @@
      "name": "보안 플랫폼 ARR·NRR",
      "last_reading": "PANW 플랫폼 NRR ~120%·NGS ARR +28%; ZS 유기 ARR ~21%; NTSK NRR 113%",
      "as_of": "2026-08"
+    },
+    {
+     "name": "AI 시대 수요 이원화 하드넘버",
+     "last_reading": "PLTR 미국 상업 +149% YoY·GAAP 영업마진 47.1% / SNOW 제품매출 +37%·NRR 126%·RPO $9.0B / NOW cRPO +21%·ACV 갱신 98% — 상위 플랫폼은 가속",
+     "as_of": "2026-09"
+    },
+    {
+     "name": "★회계 FCF vs 경제 FCF 간극(NOW)",
+     "last_reading": "FY26 회사 FCF 컨센 $5.647B vs 경제적 FCF $3.214B(SBC/매출 16%) — P/경제FCF 44.2x vs P/회사FCF 25.1x. 'AI 재편으로 이원화' 판정의 주당 가치 측면",
+     "as_of": "2026-09"
+    },
+    {
+     "name": "시트 기반 과금 붕괴 감시",
+     "last_reading": "상위 3종은 소비량·플랫폼 과금으로 이미 이동 — ITC-07 구조적 교란 플래그의 반대편 증거",
+     "as_of": "2026-09"
     }
    ],
    "triggers_watchlist": [
@@ -3786,7 +4105,7 @@
      "ticker": "PLTR",
      "name": "Palantir",
      "chain_position": "AI 오케스트레이션",
-     "note": "주목·컨센 만개",
+     "note": "미국 상업 +149%·GAAP 영업마진 47.1% · 딥다이브 완료(UPDATE-7 B5, AVOID)",
      "role": null
     },
     {
@@ -3800,14 +4119,14 @@
      "ticker": "SNOW",
      "name": "Snowflake",
      "chain_position": "데이터 플랫폼",
-     "note": "",
+     "note": "FY27Q2 제품 +37%·NRR 126%·RPO $9.0B · 딥다이브 완료(UPDATE-7 B5, WATCH/HOLD)",
      "role": null
     },
     {
      "ticker": "NOW",
      "name": "ServiceNow",
      "chain_position": "워크플로우",
-     "note": "에이전트 확장",
+     "note": "cRPO +21%·ACV 갱신 98% · 딥다이브 완료(UPDATE-7 B5, 조건부 관심)",
      "role": null
     },
     {
@@ -3864,6 +4183,20 @@
      "name": "Fair Isaac",
      "chain_position": "신용점수+의사결정 SW(connected ITC-08)",
      "note": "딥다이브 완료(B4)",
+     "role": null
+    },
+    {
+     "ticker": "STEM",
+     "name": "Stem",
+     "chain_position": "버티컬 자산제어 SW",
+     "note": "연결 산업(대표=UTL-03)",
+     "role": null
+    },
+    {
+     "ticker": "AAPL",
+     "name": "Apple",
+     "chain_position": "서비스·플랫폼",
+     "note": "연결 산업(대표=ITC-06)",
      "role": null
     }
    ],
@@ -4251,6 +4584,11 @@
      "name": "신규 지면 수익화(WhatsApp/쇼츠)",
      "last_reading": "WhatsApp 메시징 $2B+ 런레이트",
      "as_of": "2026-01"
+    },
+    {
+     "name": "플랫폼 현금창출(UBER)",
+     "last_reading": "2026 Q2 총예약 $58.022B·조정EBITDA $2.819B(예약 대비 4.9%)·FCF $2.792B, 2025 연 FCF $9.763B·1H26 자사주 $3.5B",
+     "as_of": "2026-09"
     }
    ],
    "triggers_watchlist": [
@@ -4296,6 +4634,13 @@
      "note": "",
      "role": "HIGH_BETA",
      "role_reason": "모바일 광고 AI — 고베타"
+    },
+    {
+     "ticker": "UBER",
+     "name": "Uber Technologies",
+     "chain_position": "모빌리티·배달 마켓플레이스",
+     "note": "2Q26 총예약 $58.0B·FCF $2.79B · 딥다이브 완료(UPDATE-7 B5)",
+     "role": null
     }
    ],
    "tier": "WARM",
@@ -4582,6 +4927,16 @@
      "name": "비만치료 파이프라인(VKTX)",
      "last_reading": "VENTURE SC 체중감소 9.1~14.7%·경구 Phase3 4Q26 — 차세대 대사 수요",
      "as_of": "2026-08-24"
+    },
+    {
+     "name": "희귀질환 후기 자산 가치(SVRA)",
+     "last_reading": "IMPALA-2 n=164, 24주 DLCO 차이 +6.0%p(CI 2.5~9.4, p<0.001)로 효능 de-risk. PDUFA 2026-11-22(major amendment 3개월 연장), 회사 잠재 WAC $400~500K",
+     "as_of": "2026-09"
+    },
+    {
+     "name": "aPAP 시장 규모(SVRA)",
+     "last_reading": "독립 유병률 6.87/백만(문헌 7~27)·회사 추정 미국 aPAP 5,542명·line of sight 1,000명·타깃 1,700 계정/4,500 호흡기 HCP",
+     "as_of": "2026-09"
     }
    ],
    "triggers_watchlist": [
@@ -4661,6 +5016,14 @@
      "chain_position": "RNA 표적 치료제",
      "note": "딥다이브 완료(자립 전환기)",
      "role": null
+    },
+    {
+     "ticker": "SVRA",
+     "name": "Savara",
+     "chain_position": "희귀 호흡기(aPAP)",
+     "note": "PDUFA 2026-11-22 · 딥다이브 완료(UPDATE-7 B5)",
+     "role": "HIGH_BETA",
+     "role_reason": "PDUFA 2026-11-22 · 딥다이브 완료(UPDATE-7 B5)"
     }
    ],
    "tier": "HEAT",
@@ -6266,6 +6629,13 @@
      "chain_position": "슈퍼마켓",
      "note": "",
      "role": null
+    },
+    {
+     "ticker": "ECP",
+     "name": "Electra Consumer Products",
+     "chain_position": "식품 소매 145점",
+     "note": "동일점포 2Q26 −7.2%(RED)",
+     "role": null
     }
    ],
    "tier": "NEUTRAL",
@@ -6654,6 +7024,13 @@
      "chain_position": "패스트캐주얼",
      "note": "",
      "role": null
+    },
+    {
+     "ticker": "UBER",
+     "name": "Uber Technologies",
+     "chain_position": "배달·외식 수요 집계",
+     "note": "연결 산업(대표=COM-03)",
+     "role": null
     }
    ],
    "tier": "WARM",
@@ -6712,6 +7089,11 @@
     {
      "name": "TikTok Shop 미국",
      "last_reading": "~$23B (+48%)",
+     "as_of": "2026-08"
+    },
+    {
+     "name": "이스라엘 다포맷 소매 실사(ECP)",
+     "last_reading": "식품 동일점포 H1 2026 −2.6%·2Q26 −7.2%, 그룹 EBITDA(ex-IFRS16) 마진 5.1%, 순금융부채 929M→1,162M ILS — 소매 턴어라운드의 실패 경로 표본",
      "as_of": "2026-08"
     }
    ],
@@ -6780,6 +7162,13 @@
      "name": "Five Below",
      "chain_position": "익스트림 밸류 할인소매",
      "note": "comps +22.7%·거래 +18.5% · 딥다이브 완료(B6)",
+     "role": null
+    },
+    {
+     "ticker": "ECP",
+     "name": "Electra Consumer Products",
+     "chain_position": "이스라엘 다포맷 소매",
+     "note": "350점+ · 딥다이브 완료(UPDATE-7 B5)",
      "role": null
     }
    ],
@@ -6889,6 +7278,13 @@
      "name": "Floor & Decor",
      "chain_position": "바닥재 소매",
      "note": "",
+     "role": null
+    },
+    {
+     "ticker": "ECP",
+     "name": "Electra Consumer Products",
+     "chain_position": "전기전자 소매 97점",
+     "note": "연결 산업(대표=DIS-04)",
      "role": null
     }
    ],
@@ -8533,10 +8929,11 @@
     "price": {
      "value": 280.79,
      "as_of": "",
-     "source": "deep_dive_pack_snapshot"
+     "source": "deep_dive_pack_snapshot",
+     "note": "as_of 미기재 — 날짜를 확인할 수 없는 주가는 관측으로 인정하지 않음(§4A). 값은 삭제하지 않고 보존(HARD RULE 4)."
     },
-    "zone": "AVOID",
-    "gap_to_attractive_pct": 30.6,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
     "display_suppressed": false
@@ -8664,70 +9061,71 @@
    ],
    "verification": "DEEP_DIVED",
    "deep_dive_ref": {
-    "as_of": "2026-08-25",
-    "stance_zone": "WATCH / HOLD (현재 $71.63, hold_fully_valued $70~78)",
-    "thesis_oneline": "천연가스 수송 중심 미드스트림 + 데이터센터 전력(Power Innovation·Socrates) 옵셔널리티 — 조정EBITDA CAGR 11%+(2025~2030) 상향·2026 EBITDA 가이드 $8.4B. 현재가는 fully-valued 밴드, per-share AFFO 전환·NCI 누수가 관건.",
-    "moat_verdict": "Transco 등 대형 장거리 가스 파이프라인의 규제·입지 해자. 데이터센터 온사이트 발전으로 수요 인접 확장.",
-    "mgmt_verdict": "CEO Chad Zamarin·집행의장 Alan Armstrong. Momentum 인수·신규 프로젝트로 CAGR 목표 상향, 2.2% 지분희석·49% NCI 누수는 감점.",
+    "as_of": "2026-09-02",
+    "stance_zone": "WATCH / HOLD (2026-09-01 종가 $75.23; accumulation $58~64·hold_fully_valued $70~78)",
+    "thesis_oneline": "가스 수송 중심 미드스트림 + 데이터센터 전력 옵셔널리티. Transco 9,600마일·설계용량 20.6MMdth/d, 2Q26 RPO Williams $30.735B(Transco $21.142B). 프로젝트 파이프가 두껍다 — Southeast Supply Enhancement 1,597Mdth/d(3Q27), Line 200 3,100Mdth/d(2Q28), Power Express 800Mdth/d(3Q30). Socrates 556MW(Meta 계열 10년 고정가 PPA). 확률가중 IRR 6.74%·DCF ~$63·현실 중심가치 $63~68 대비 $75.23은 계획을 이미 반영.",
+    "moat_verdict": "Transco 등 장거리 가스 파이프라인의 규제·통행권(ROW) 해자. 수수료 기반 NGL 매출 93%(2025).",
+    "mgmt_verdict": "EBITDA CAGR 목표 11%+(2025~30) 상향. 감점은 49% NCI 누수와 Meta 집중, 그리고 2028~30 LNG 공급파(연 최대 95bcm 증설) 하의 netback 스트레스.",
     "kpi_tripwires": [
-     "2026 조정EBITDA ≥$8.4B 궤적",
-     "레버리지 ≤4.0x(현 3.67x)",
-     "Power Innovation(Socrates North 4Q26) 일정",
-     "AFFO/주 성장이 EBITDA 성장을 추종"
+     "2026 조정EBITDA 가이 중간 $8.4B (green ≥8.4B / red <8.2B·가이 하향)",
+     "레버리지 2Q26 3.67x·프로포마 ~3.75x (green ≤4.0x / red >4.3x)",
+     "Power Innovation 실행 (Socrates South 가동·North 4Q26 목표 / red 다분기 지연)",
+     "귀속 현금전환 — AFFO/주가 EBITDA 성장을 추종 (red NCI·자금조달 누수로 무효화)",
+     "배당커버리지 2Q26 2.26x·2026 가이 2.47x (green >2.0x / red <1.6x)"
     ],
     "atlas_stance": {
      "contract": "v1",
      "contract_source": "ATLAS_DERIVED",
      "label": "WATCH",
-     "label_basis": "NONE",
+     "label_basis": "IRR",
      "valuation_mode": "C — Mature Compounder",
      "ladder": [
       {
        "lo": null,
        "hi": 58,
        "tier": "AGGRESSIVE",
-       "src": "strong_accumulation"
+       "src": "price_bands.strong_accumulation"
       },
       {
        "lo": 58,
        "hi": 64,
        "tier": "ATTRACTIVE",
-       "src": "accumulation"
+       "src": "price_bands.accumulation"
       },
       {
        "lo": 64,
        "hi": 70,
        "tier": "WATCH",
-       "src": "watch_selective"
+       "src": "price_bands.watch_selective"
       },
       {
        "lo": 70,
        "hi": 78,
        "tier": "WATCH",
-       "src": "hold_fully_valued"
+       "src": "price_bands.hold_fully_valued"
       },
       {
        "lo": 78,
        "hi": null,
        "tier": "AVOID",
-       "src": "rich"
+       "src": "price_bands.rich"
       }
      ],
-     "ref_price": 71.63,
-     "price_asof": "2026-08-24",
+     "ref_price": 75.23,
+     "price_asof": "2026-09-01",
      "hurdle": null,
      "hurdle_unit": "decimal",
-     "derived_note": "★정량근거 부재: IRR·EV·U/D 모두 없음. 밴드와 zone('WATCH / HOLD')만 존재 → label_basis=NONE이나 label은 성립"
+     "derived_note": "zone 'WATCH / HOLD'. ★재통관(§7A 4단계): 직전 팩 260825($71.63, label_basis NONE)에서 밴드는 동일하나 정량근거가 새로 확보 — 확률가중 IRR 6.744%·DCF $63.02·10.5% 할인 PV $65.64 → label_basis NONE→IRR. 팩에 선택허들 명시 없어 hurdle 유지 null."
     }
    },
    "stance_state": {
     "price": {
-     "value": 71.63,
-     "as_of": "2026-08-24",
+     "value": 75.23,
+     "as_of": "2026-09-01",
      "source": "deep_dive_pack_snapshot"
     },
     "zone": "WATCH",
-    "gap_to_attractive_pct": 11.9,
+    "gap_to_attractive_pct": 17.5,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
     "display_suppressed": false
@@ -9451,8 +9849,66 @@
     "IND-05",
     "IND-03"
    ],
-   "verification": "SHALLOW",
-   "deep_dive_ref": null
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-31",
+    "stance_zone": "AVOID / 기존 보유 시 축소 검토 (2026-08-28 종가 $602.70; 허들진입 $460~520·엄격매수 <$450)",
+    "thesis_oneline": "전력 인프라 시공의 최대 순노출. RPO $16.76B→$33.55B로 2년 만에 2배, Electric 영업마진 11.5%, MSA 비중 46%→37.2%로 잔고 품질도 개선. 그럼에도 2030 시나리오가중 기대IRR 8.2% < 10~15% 허들이고 U/D 0.52 — 수요 논제가 옳아도 가격이 그 논제를 이미 다 반영한 전형.",
+    "moat_verdict": "self-perform 규모·숙련인력·유틸리티 관계. 다만 성장의 상당분이 인수(1H26 Electric ~$1.04B, Underground ~$0.69B) 기여.",
+    "mgmt_verdict": "wallet-expansion M&A 플랫폼. 6/30 부채 $6.10B·8월 발행은 대부분 차환. FCF 성장 없이 부채가 앞서면 논제 기각.",
+    "kpi_tripwires": [
+     "RPO $33.55B (green YoY +20%+ / red 2분기 연속 감소)",
+     "Electric 영업마진 11.5% (green ≥11% / red <10% 2분기)",
+     "FCF 1H26 $1.07B (green FY26 ≥$2.25B / red <$2.0B)",
+     "인수 의존도 (red 고성장이 M&A 없이 유지 불가)",
+     "MSA 잔고 비중 37.2% (green ≤40% / red >45%+RPO 둔화)",
+     "순레버리지·인수 자금조달 (red 대형 M&A로 부채가 FCF보다 빠르게 증가)"
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode C — Mature Compounder",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 450,
+       "tier": "AGGRESSIVE",
+       "src": "price_bands.strict_buy_zone_below"
+      },
+      {
+       "lo": 460,
+       "hi": 520,
+       "tier": "ATTRACTIVE",
+       "src": "price_bands.return_hurdle_entry_band"
+      },
+      {
+       "lo": 520,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "stance.zone 'AVOID' (현재가 $602.70; base_fair $525.98)"
+      }
+     ],
+     "ref_price": 602.7,
+     "price_asof": "2026-08-28",
+     "hurdle": 0.1,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone 'AVOID / 기존 보유 시 축소 검토'. IRR 8.24%·U/D 0.523·EV $514.65. ★사다리 공백 450~460, WATCH 칸 없음(팩이 정의하지 않음). U/D2 트리거 $447.47. 허들은 '10–15%' 하단."
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 602.7,
+     "as_of": "2026-08-28",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 15.9,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
+   }
   },
   {
    "ticker": "EME",
@@ -9460,8 +9916,78 @@
    "industries": [
     "IND-05"
    ],
-   "verification": "SHALLOW",
-   "deep_dive_ref": null
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-31",
+    "stance_zone": "HOLD / WAIT FOR BETTER ENTRY (2026-08-28 종가 $740.17; strong_buy ≤$600·accumulate $600~680)",
+    "thesis_oneline": "고복잡도 비주거 시설의 전기·기계 시공 + VDC/prefab. 2Q26 RPO +43.9% YoY·1년내 소화분 76%·전기 13.9%/기계 12.5% 세그먼트 마진으로 데이터센터發 수요가 실적에 도달했음이 확인됐다. 다만 3년 확률가중 price IRR 6.56%로 10~15% 허들 미달 — 사업은 GREEN, 가격이 문제.",
+    "moat_verdict": "숙련 전기·기계 인력과 prefab 역량이 실질 진입장벽. ROIC 36.8%로 동종 최고.",
+    "mgmt_verdict": "무차입(6/30/26 리볼버 잔액 0) 상태에서 3Q에 ~$700M 인수 집행 — 통합 마진 유지가 관건. 1H26 OCF/순이익 40.9%는 계절성 감안해도 YELLOW.",
+    "kpi_tripwires": [
+     "RPO YoY +43.9% (green ≥20% / red <5%)",
+     "전기+기계 신축·개조 매출 성장 (green ≥20% YoY)",
+     "시공 세그먼트 마진 전기 13.9%·기계 12.5% (green 가중 ≥11.5% / red <9.5%)",
+     "OCF/순이익 1H26 40.9% — YELLOW (green ≥80% TTM / red <50% 2분기)",
+     "RPO 1년내 소화 76% (green ≥70%)",
+     "인수후 레버리지 (green 순부채/EBITDA <0.5x / red >1.5x) — YELLOW"
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode C — Mature Compounder with cyclical stress overlay",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 600,
+       "tier": "AGGRESSIVE",
+       "src": "price_bands.strong_buy"
+      },
+      {
+       "lo": 600,
+       "hi": 680,
+       "tier": "ATTRACTIVE",
+       "src": "price_bands.accumulate"
+      },
+      {
+       "lo": 680,
+       "hi": 850,
+       "tier": "WATCH",
+       "src": "price_bands.hold"
+      },
+      {
+       "lo": 850,
+       "hi": 950,
+       "tier": "AVOID",
+       "src": "price_bands.trim"
+      },
+      {
+       "lo": 950,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "price_bands.avoid_chasing"
+      }
+     ],
+     "ref_price": 740.17,
+     "price_asof": "2026-08-28",
+     "hurdle": 0.1,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone 'HOLD / WAIT FOR BETTER ENTRY'. IRR 6.56%·EV $676.53·U/D 2.55. 허들은 팩의 '10–15% single-stock' 하단 전사."
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 740.17,
+     "as_of": "2026-08-28",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 8.8,
+    "freshness": "FRESH",
+    "tripwire_status": "YELLOW",
+    "display_suppressed": false
+   }
   },
   {
    "ticker": "MTZ",
@@ -9469,8 +9995,66 @@
    "industries": [
     "IND-05"
    ],
-   "verification": "SHALLOW",
-   "deep_dive_ref": null
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-31",
+    "stance_zone": "조건부 관심 (2026-08-28 종가 $241.00; strong_interest <$230·선호진입 $215~230)",
+    "thesis_oneline": "18개월 잔고 $21.39B(8분기 연속 증가, $13.86B→$21.39B)로 전력·데이터센터 수요가 확증. 다만 Power Delivery 마진 9.1%(목표 10%+), Communications 8.2%(가이던스 하향), DSO 65→72일, 1H26 단순 FCF 마이너스, Superior 인수 후 순부채/EBITDA ~2.4x — 운전자본 품질과 레버리지가 무조건부 매수를 막는다.",
+    "moat_verdict": "전력·통신·파이프라인 다각 시공의 규모. 다만 비구속 MSA 비중이 잔고 품질의 변수.",
+    "mgmt_verdict": "Superior($1.65B EV) 인수로 Power Delivery 확대. 디레버리징 전 추가 M&A가 red 조건.",
+    "kpi_tripwires": [
+     "18개월 잔고 $21.39B (green >10% YoY+MSA 비중 안정 / red 감소·취소)",
+     "Power Delivery EBITDA 마진 9.1% (green ≥10% / red <8.5%)",
+     "Communications EBITDA 마진 8.2% (green ≥10% / red <8% 또는 추가 가이 하향)",
+     "DSO 72일 (green ≤65 / red >72)",
+     "EBITDA→FCF 전환 2025 29.7%·1H26 마이너스 (green ≥55% / red <35%)",
+     "Superior 후 순부채/EBITDA ~2.4x (green <2.0x / red >2.5x)"
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode C Mature Compounder + cyclical normalization cross-check",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 215,
+       "tier": "AGGRESSIVE",
+       "src": "price_bands.preferred_entry_low 하단"
+      },
+      {
+       "lo": 215,
+       "hi": 230,
+       "tier": "ATTRACTIVE",
+       "src": "price_bands.preferred_entry_low/high (=strong_interest_below 230)"
+      },
+      {
+       "lo": 230,
+       "hi": null,
+       "tier": "WATCH",
+       "src": "stance.zone '조건부 관심' (현재가 $241)"
+      }
+     ],
+     "ref_price": 241.0,
+     "price_asof": "2026-08-28",
+     "hurdle": 0.12,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone '조건부 관심'. IRR 14.07%·U/D 2.8·EV $328.1·base FV $346.0. ★팩은 230 초과 구간 밴드를 명시하지 않아, zone 원문('조건부 관심'=현재가 위치)을 (230,∞) 칸으로 전사. 허들은 '12-15%' 하단."
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 241.0,
+     "as_of": "2026-08-28",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 4.8,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
+   }
   },
   {
    "ticker": "FLR",
@@ -9478,8 +10062,79 @@
    "industries": [
     "IND-05"
    ],
-   "verification": "SHALLOW",
-   "deep_dive_ref": null
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-31",
+    "stance_zone": "WATCH / 관망 (2026-08-28 종가 $53.27; active_interest <$45·attractive_entry $46~48)",
+    "thesis_oneline": "대형 EPC. 2Q26 수주/매출 1.42x·보상형(reimbursable) 잔고 85%로 계약 리스크 구조가 실제 개선됐고 신규 수주 마진 프리미엄 ~+200bp가 관측된다. 그러나 기대IRR 11.5%가 12% 허들 미달이고 Bull/Bear U/D ~1.0x — 개선은 진짜지만 가격에 이미 반영.",
+    "moat_verdict": "원자력연료·데이터센터 전력·광업·제약·LNG의 다각 EPC 레퍼런스. 다만 프로젝트 charge가 반복(2Q26 Gordie Howe $44M).",
+    "mgmt_verdict": "보상형 전환·자사주(2026 잔여 $584M)·주식수 152.0→133.7M 축소는 긍정. 계약자산 $1,440M 증가 추세는 감시.",
+    "kpi_tripwires": [
+     "보상형 잔고 비중 85% (green ≥85% / red <80%)",
+     "수주/매출 1.42x (green >1.1x 지속 / red <0.9x 2분기+)",
+     "신규수주 마진 프리미엄 ~+200bp (red 잔고 마진 하회)",
+     "프로젝트 charge 빈도 (red 분기 $40~50M+ 반복)",
+     "계약자산 $1,440M (red 지속 상승+OCF 미달)",
+     "조정 OCF 가이던스 $300~320M",
+     "기본 주식수 133.7M (red 재확대)"
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Normalized adjusted EBITDA / EV-EBITDA with P/E and FCF cross-check",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 45,
+       "tier": "AGGRESSIVE",
+       "src": "price_bands.active_interest_below"
+      },
+      {
+       "lo": 46,
+       "hi": 48,
+       "tier": "ATTRACTIVE",
+       "src": "price_bands.attractive_entry"
+      },
+      {
+       "lo": 48,
+       "hi": 53,
+       "tier": "ATTRACTIVE",
+       "src": "price_bands.conditional_interest"
+      },
+      {
+       "lo": 53,
+       "hi": 58,
+       "tier": "WATCH",
+       "src": "price_bands.watch_fair"
+      },
+      {
+       "lo": 58,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "price_bands.evidence_required_above"
+      }
+     ],
+     "ref_price": 53.27,
+     "price_asof": "2026-08-28",
+     "hurdle": 0.12,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone 'WATCH / 관망'. IRR 11.5%·EV $52.71·U/D 1.0. ★사다리 공백 45~46(팩 원문 그대로). U/D>2 트리거 $47.87."
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 53.27,
+     "as_of": "2026-08-28",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 0.5,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
+   }
   },
   {
    "ticker": "J",
@@ -9487,8 +10142,78 @@
    "industries": [
     "IND-05"
    ],
-   "verification": "SHALLOW",
-   "deep_dive_ref": null
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-31",
+    "stance_zone": "조건부 관심 / 관망-매수 경계 (2026-08-28 종가 $151.98; 매력 $130~140·적정 $140~165)",
+    "thesis_oneline": "조정순매출(ANR) 기준 엔지니어링·PM. Q3 FY26 ANR $2,417M 중 AI 데이터센터 직결분 11%·ANR book-to-bill 1.2x TTM·조정 EBITDA 마진 15.2%(FY29 목표 17%+). 전력망 대기열 2,500GW·계통 리드타임 5~15년이 설계·PM 수요풀을 만든다. 다만 12~13% 기대수익 프레임에서 현재가는 대략 적정.",
+    "moat_verdict": "pass-through를 걷어낸 ANR 기반의 설계·PM 인력 풀. PA(정보자문) 완전소유로 세그먼트 마진 22.3%.",
+    "mgmt_verdict": "FY26 가이던스 3분기 연속 상향. 순부채/EBITDA 1.82x → YE2027 1.5x 목표 이행 여부가 주당 복리의 관건.",
+    "kpi_tripwires": [
+     "ANR 유기성장 FY26 가이 +9.5~10.0% (green ≥6% / red <3% 2분기)",
+     "ANR book-to-bill 1.2x TTM (green ≥1.1x / red <1.0x+잔고감소)",
+     "조정 EBITDA 마진 15.2% → FY29 17%+ (red <14.5% 지속 또는 목표 하향)",
+     "조정 FCF 마진 ~8% (red <7%+운전자본 증가)",
+     "순부채/LTM EBITDA 1.82x (red >2.2x 또는 YE27 목표 연기)",
+     "PA 세그먼트 마진 22.3%·시너지 $20M+ (red <20% 지속)"
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode C - Mature Compounder",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 130,
+       "tier": "AGGRESSIVE",
+       "src": "price_bands.under_130"
+      },
+      {
+       "lo": 130,
+       "hi": 140,
+       "tier": "ATTRACTIVE",
+       "src": "price_bands.130_to_140"
+      },
+      {
+       "lo": 140,
+       "hi": 165,
+       "tier": "WATCH",
+       "src": "price_bands.140_to_165"
+      },
+      {
+       "lo": 165,
+       "hi": 185,
+       "tier": "AVOID",
+       "src": "price_bands.165_to_185"
+      },
+      {
+       "lo": 185,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "price_bands.over_185"
+      }
+     ],
+     "ref_price": 151.98,
+     "price_asof": "2026-08-28",
+     "hurdle": 0.12,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone '조건부 관심 / 관망-매수 경계'. 가중미래가치 IRR 12.38%·시나리오단순가중 10.7%·U/D 2.61. 12% 허들 공정가 $153.55."
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 151.98,
+     "as_of": "2026-08-28",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 8.6,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
+   }
   },
   {
    "ticker": "KBR",
@@ -9496,8 +10221,79 @@
    "industries": [
     "IND-05"
    ],
-   "verification": "SHALLOW",
-   "deep_dive_ref": null
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-31",
+    "stance_zone": "매수 우위 (2026-08-28 종가 $38.03; 매우매력 ≤$32·매수우위 $32~45)",
+    "thesis_oneline": "2027-01-04 예정 분할(정부서비스 New KBR / 기술 Trinzic)의 SOTP 스프레드가 논제. 현 EV $7.05B vs 세그먼트 합산 요구치 $8.19B — 분할이 가치를 드러내면 18개월 연환산 기대IRR 35.6%(중심허들 13%). 2Q26 총잔고 $17.8B(+옵션 포함 $23.0B), STS book-to-bill 1.5.",
+    "moat_verdict": "MTS는 정부 조달 실적·클리어런스, STS는 암모니아·올레핀 라이선스·촉매의 기술 로열티. 성격이 다른 두 사업이 한 지붕에 있는 것이 디스카운트 원인.",
+    "mgmt_verdict": "분할 실행과 11월 독립법인 부채·비용 공시가 논제의 전부. 이의제기(protest) 중인 수주 $10.6B의 확정 여부가 MTS 밸류 변수.",
+    "kpi_tripwires": [
+     "MTS funded 잔고 $8.8B·이의제기 수주 $10.6B (red 주요 수주 취소+funded 하락) — YELLOW",
+     "MTS 조정 EBITDA 마진 1H26 11.4% (green ≥11%) — GREEN",
+     "STS 잔고 $5.523B (green ≥5.5) — GREEN",
+     "STS 정상화 EBITDA 마진 17.5%(보고 20.0%) (green ≥17% / red <15%) — YELLOW",
+     "FY26 조정 OCF 가이 $560~600M (red <$520M) — YELLOW",
+     "독립법인 합산 본사비용 (green ≤$130M / red >$160M) — 미공시",
+     "독립법인 레버리지 배분 (red 구조적 고레버리지) — 미공시"
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "ATTRACTIVE",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode C Mature Compounder + Segment SOTP / Spin Bridge",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 32,
+       "tier": "AGGRESSIVE",
+       "src": "price_bands.<=32"
+      },
+      {
+       "lo": 32,
+       "hi": 45,
+       "tier": "ATTRACTIVE",
+       "src": "price_bands.32-45"
+      },
+      {
+       "lo": 45,
+       "hi": 55,
+       "tier": "WATCH",
+       "src": "price_bands.45-55"
+      },
+      {
+       "lo": 55,
+       "hi": 65,
+       "tier": "WATCH",
+       "src": "price_bands.55-65"
+      },
+      {
+       "lo": 70,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "price_bands.>70"
+      }
+     ],
+     "ref_price": 38.03,
+     "price_asof": "2026-08-28",
+     "hurdle": 0.13,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone '매수 우위'. 연환산 IRR 35.6%(base 36.3%)·U/D 2.32(base)/7.04(bull)·EV $59.03. ★사다리 공백 65~70(팩 원문 그대로). 2x U/D 트리거 $39.02."
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 38.03,
+     "as_of": "2026-08-28",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "ATTRACTIVE",
+    "gap_to_attractive_pct": -15.5,
+    "freshness": "FRESH",
+    "tripwire_status": "YELLOW",
+    "display_suppressed": false
+   }
   },
   {
    "ticker": "UNP",
@@ -9949,10 +10745,75 @@
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "industries": [
-    "UTL-02"
+    "UTL-02",
+    "IND-02"
    ],
-   "verification": "SHALLOW",
-   "deep_dive_ref": null
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-31",
+    "stance_zone": "WATCH / 조건부 관심 (2026-08-28 종가 $152.85; 적극관심 ≤$135·조건부 $135~145)",
+    "thesis_oneline": "해군 원자로·정부 원자력의 기확립 공급자 + 상업 원자력 옵션. 총잔고 $4.843B(2024말)→$7.261B(2025말)→$8.398B(2Q26)로 2년 만에 73% 증가, 정부 부문 $6.798B(미펀딩 $2.256B). 상업 부문 2Q26 유기성장 ~33%. FCF $212M→$255M→$295M→FY26 가이 $345~360M. 확률가중 3년 price IRR 11.0%(총수익 11.7%) vs 12% 허들 — 근소 미달.",
+    "moat_verdict": "해군 원자로는 사실상 단일 공급자. NRC·DOE 인증과 제조 실적이 진입장벽이며 SMR 부품·HALEU로 확장 가능.",
+    "mgmt_verdict": "Kinectrics 인수(1H26 상업매출 +$173.5M) 통합과 상업 마진 13% 가이 달성이 관건. 2023~25 평균 ROIC 12.1%.",
+    "kpi_tripwires": [
+     "정부 매출·조정EBITDA 마진 (2026 가이 HSD 성장·~20.5% / red HSD 이하+마진 <19% 2분기)",
+     "상업 유기성장 2Q26 ~33%·FY26 마진 가이 ~13% (green ≥15%·≥13% / red <8%·<11%)",
+     "총잔고 $8.398B·정부 $6.798B (green >$8B+funded 믹스 안정 / red funded 잔고 급감·프로그램 취소)",
+     "FCF FY26 가이 $345~360M (green ≥$360M / red <$330M)",
+     "ROIC 3년평균 12.1%",
+     "RED KPI 2개 동시 점등 시 강제 재평가"
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode B - Hybrid",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 135,
+       "tier": "AGGRESSIVE",
+       "src": "price_bands.<=135 적극 관심"
+      },
+      {
+       "lo": 135,
+       "hi": 145,
+       "tier": "ATTRACTIVE",
+       "src": "price_bands.135-145 조건부 관심/매수 검토"
+      },
+      {
+       "lo": 145,
+       "hi": 175,
+       "tier": "WATCH",
+       "src": "price_bands.145-175 관망/보유"
+      },
+      {
+       "lo": 175,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "price_bands.>175 기대치 부담"
+      }
+     ],
+     "ref_price": 152.85,
+     "price_asof": "2026-08-28",
+     "hurdle": 0.12,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone 'WATCH / 조건부 관심'. price IRR 11.00%(총수익 11.68%)·EV $148.78(배당포함 $151.53)·U/D 3.89. 다중귀속: UTL-02(대표)+IND-02(해군 원자력)."
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 152.85,
+     "as_of": "2026-08-28",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 5.4,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
+   }
   },
   {
    "ticker": "LEU",
@@ -9991,7 +10852,8 @@
     "price": {
      "value": null,
      "as_of": "",
-     "source": "deep_dive_pack_snapshot"
+     "source": "deep_dive_pack_snapshot",
+     "note": "주가 미확보 — zone UNKNOWN 유지"
     },
     "zone": "UNKNOWN",
     "gap_to_attractive_pct": null,
@@ -10006,8 +10868,79 @@
    "industries": [
     "UTL-02"
    ],
-   "verification": "SHALLOW",
-   "deep_dive_ref": null
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-09-03",
+    "stance_zone": "WATCH_HOLD_EXECUTION_PRICED (2026-09-02 종가 $39.39; 매력 ≤$25·선별축적 $25~35)",
+    "thesis_oneline": "Aurora 액체금속냉각 고속로 SMR. 규제 진척은 실물이다 — 2022-01 NRC 신청 반려 → 2026-04 PDC 승인 → 2026-06 Aurora-INL DOE PDSA 승인(5단계 중 2) → 2026-08-06 Groves 임계 달성(단, 100W 영출력 임계집합체로 MW급 발전 증거는 아님). 고객 관심 14GW+이나 구속 잔고는 미공시이며 Switch 12GW는 명시적 비구속. 중심 공정가 $32.79 vs 현재가 $39.39 — 실행이 이미 가격에 있다.",
+    "moat_verdict": "HALEU 연료 확보(INL 회수 5t·Centrus LOI 2029 인도 예정)와 발전+연료+동위원소 수직통합 설계. 단 아직 상업 매출 이전 단계.",
+    "mgmt_verdict": "현금·유가증권 $3.006B로 자금 여력은 충분. 문제는 속도 — 첫 Aurora가 2030 이후로 밀리면 논제 훼손.",
+    "kpi_tripwires": [
+     "구속 PPA 가격 확정 (green bankable PPA / yellow LOI 추가만)",
+     "Aurora-INL DOE 잔여 단계 무지연 (red 첫 Aurora 2030 이후 지연)",
+     "최초 콘크리트·원자로건물 건설 마일스톤",
+     "HALEU 다년 확정 공급조건 (red Ohio 일정 초과 지연)",
+     "프로젝트 파이낸스·고객 선지급으로 자기자본 부담 축소 (red 자기자본 조달로 희석주식 >300M 선행)",
+     "올인 비용 (red >$6,000/kW & 전력가 ~$110/MWh 이하)",
+     "고객 계약 강도: Meta 1.2GW(선지급)·Equinix 100~500MW($25M 비환급)·Switch 12GW(비구속)"
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "EV",
+     "valuation_mode": "A_OPTION_LED_EXPECTATION_DRIVEN_V3.3",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 25,
+       "tier": "AGGRESSIVE",
+       "src": "price_bands[0] <=25 매력적/분할매수 검토"
+      },
+      {
+       "lo": 25,
+       "hi": 35,
+       "tier": "ATTRACTIVE",
+       "src": "price_bands[1] 25-35 선별적 축적 가능"
+      },
+      {
+       "lo": 35,
+       "hi": 50,
+       "tier": "WATCH",
+       "src": "price_bands[2] 35-50 관망/보유"
+      },
+      {
+       "lo": 50,
+       "hi": 80,
+       "tier": "AVOID",
+       "src": "price_bands[3] 50-80 Bull 실행 선반영"
+      },
+      {
+       "lo": 80,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "price_bands[4] >80 Blue-sky"
+      }
+     ],
+     "ref_price": 39.39,
+     "price_asof": "2026-09-02",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone 'WATCH_HOLD_EXECUTION_PRICED'. 중심 공정가 $32.79(현재가 하회). 팩이 'expected_irr은 단일 rate로 무의미'라고 명시 → basis EV, hurdle null(프로젝트 10%·pre-COD 12%는 할인율이지 선택허들이 아님)."
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 39.39,
+     "as_of": "2026-09-02",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 12.5,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
+   }
   },
   {
    "ticker": "D",
@@ -10043,8 +10976,67 @@
     "UTL-01",
     "UTL-03"
    ],
-   "verification": "SHALLOW",
-   "deep_dive_ref": null
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-31",
+    "stance_zone": "관망 + 매력 가격 밴드 (2026-08-28 종가 $81.84; 매력진입 $75~80·적정 $80~90)",
+    "thesis_oneline": "규제 유틸(FPL)+개발(NEER)의 이중구조. FPL 규제자본 $79.7B(+9.3% YoY)·허용ROE 중간 10.95%(2026~29 합의), NEER 백로그 24GW(3Q24)→35.1GW(2Q26)·2Q26 신규 3.6GW(배터리 2.0GW). 대형부하 관심 21GW·심층협의 12GW. 공급망은 배터리·태양광·개폐기 2029년, 변압기 2030년까지 확보 — 이 확보 자체가 IND-03 병목의 역증거다. 기대IRR ~9.5%로 10~15% 허들 하단 부근.",
+    "moat_verdict": "개발 파이프라인 규모(2026~32 76.6~107.6GW)와 장비 선확보. 규제 유틸의 안정 자본조달이 개발 레그를 지지.",
+    "mgmt_verdict": "Dominion 합병(H2 2027 목표 종결)으로 표준 8%+ → 합산 9%+ EPS 성장. 다만 고정 교환비·25.5% 프로포마 지분·요금크레딧·규제 시정조치를 주당으로 환산해야 한다. 장기부채 $89.6B→$98.8B(6개월)는 감시.",
+    "kpi_tripwires": [
+     "FPL 규제자본 +9.3% YoY (green ≥8%+수익률 안정 / red <6% 또는 중대 불인정)",
+     "NEER 백로그 35.1GW (green COD 전환+순증 / red 취소·마진 훼손)",
+     "장기부채 $98.79B (red 신용압박·프로젝트 후퇴)",
+     "희석평균주식수 2.0934B (red 합병·자금조달 희석이 주당 성장 훼손)",
+     "대형부하 파이프라인 전환 12GW 심층협의 (green 요금·계약 체결 / red 비용배분 규제 후 미전환)",
+     "가스허브 최대 10GW·초기자금 $3.3B, 최초 가동 2028년말~2032 완공",
+     "Duane Arnold 재가동 2029 Q1 이전"
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode C — Mature Compounder + SOTP + Dominion overlay",
+     "ladder": [
+      {
+       "lo": 75,
+       "hi": 80,
+       "tier": "ATTRACTIVE",
+       "src": "price_bands.attractive_entry_usd"
+      },
+      {
+       "lo": 80,
+       "hi": 90,
+       "tier": "WATCH",
+       "src": "price_bands.fair_neutral_usd"
+      },
+      {
+       "lo": 95,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "price_bands.caution_above_usd"
+      }
+     ],
+     "ref_price": 81.84,
+     "price_asof": "2026-08-28",
+     "hurdle": 0.1,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone '관망 + 매력 가격 밴드'. IRR ~9.5%·12M U/D 1.54·SOTP base $82.8. ★사다리 공백 <75 및 90~95(팩이 정의하지 않음). U/D>2 트리거 ~$80.23·12% IRR 트리거 ~$74.61."
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 81.84,
+     "as_of": "2026-08-28",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 2.3,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
+   }
   },
   {
    "ticker": "FSLR",
@@ -10190,8 +11182,74 @@
    "industries": [
     "ITC-02"
    ],
-   "verification": "SHALLOW",
-   "deep_dive_ref": null
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-09-05",
+    "stance_zone": "조건부 관심 / 관망에 가까운 관심 (2026-09-04 종가 NT$2,410; attractive NT$1,950~2,100·watch NT$2,100~2,600)",
+    "thesis_oneline": "선단 파운드리 독점적 지위. 2Q26 총이익률 67.7%·HPC 66%·≤7nm 77%·N2 웨이퍼 매출 3% 진입, 2026 1~7월 누적 매출 +37.0%(7월 +44.7%), 2026 capex $60~64B. Foundry 2.0 점유 40%·상위10 고객 78%. 확률가중 공정가 NT$2,585 대비 현재가 상승여력 7.3%·U/D 1.53 — 사업은 HEAT, 가격은 관망.",
+    "moat_verdict": "고객중립성·설계 생태계·규모·패키징 통합. 외부 선단 양산(인텔 파운드리·삼성 2nm)이 규모의 경제성을 갖추기 전까지 대체 불가.",
+    "mgmt_verdict": "해외 팹 마진 희석 초기 2~3%p→향후 3~4%p 가이던스 관리와 N2 램프 속도가 관건.",
+    "kpi_tripwires": [
+     "월매출 3개월 YoY (현 누적 +37.0% / green ≥+25% / red 3개월 <+10%)",
+     "HPC 66%·≤7nm 77% (green HPC ≥60%·≤7nm ≥75%)",
+     "총이익률 2Q26 67.7%·3Q 가이 65~67% (green ≥64% / red 2분기 <60%)",
+     "N2 웨이퍼 매출 비중 3% (red 양산 지연·역행)",
+     "CapEx→FCF 전환 2025 FCF NT$1.003조 (red 성장둔화 중 FCF −20%)",
+     "해외 팹 마진 희석 (red >4%p)",
+     "경쟁사 외부 선단 양산 규모 (red TSMC 점유·가격 압박 규모 확인)"
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "EV",
+     "valuation_mode": "Mode C Mature Compounder primary + Mode D cycle cross-check",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 1950,
+       "tier": "AGGRESSIVE",
+       "src": "price_bands.aggressive_interest"
+      },
+      {
+       "lo": 1950,
+       "hi": 2100,
+       "tier": "ATTRACTIVE",
+       "src": "price_bands.attractive"
+      },
+      {
+       "lo": 2100,
+       "hi": 2600,
+       "tier": "WATCH",
+       "src": "price_bands.watch"
+      },
+      {
+       "lo": 2600,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "price_bands.demanding"
+      }
+     ],
+     "ref_price": 2410.0,
+     "price_asof": "2026-09-04",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "★통화 NTD(2330.TW 기준) — 밴드·주가 모두 NT$. zone '조건부 관심 / 관망에 가까운 관심'. 확률가중 FV NT$2,585·U/D 1.53. 팩의 expected_irr은 수치가 아니라 서술('허들 부근~낮은 두 자릿수')이라 IRR을 basis로 쓰지 않고 EV 사용, 허들 null.",
+     "currency": "TWD"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 2410.0,
+     "as_of": "2026-09-04",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 14.8,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
+   }
   },
   {
    "ticker": "INTC",
@@ -10288,8 +11346,61 @@
    "industries": [
     "ITC-03"
    ],
-   "verification": "SHALLOW",
-   "deep_dive_ref": null
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-09-05",
+    "stance_zone": "회피 / 관망 — 신규 매수에는 가격 규율 필요 (2026-09-04 암스테르담 종가 €1,467.4; attractive_entry €1,100~1,200)",
+    "thesis_oneline": "EUV 독점. 2026 매출 가이 €43~45B, low-NA EUV capa 2026 65대→2027 +30%, DUV 이머전 130대→2027 +30%, 2028 추가 +30% 검토 중이며 2027 EUV 오더는 사실상 필요분 전량 수령. IBM(설치기반) 매출 2Q26 €2.762B·GM 54.0%로 서비스 경제성도 상승. 그러나 기대IRR 6.83% vs 12% 허들·U/D 0.7 — 병목의 소유자이나 가격이 그 사실을 완전히 인식.",
+    "moat_verdict": "EUV 사실상 대체 불가. 설치기반 업그레이드·서비스가 사이클 저점을 올린다.",
+    "mgmt_verdict": "capa 확장(2027 +30%)이 흡수되는지가 논제. 중국 시스템 매출 비중 2Q26 14%(2025 총매출 29.1%)로 하락 — 비중국 성장이 상쇄해야 한다.",
+    "kpi_tripwires": [
+     "FY2026 가이 €43~45B·Q3 €11~12B (green FY26 ≥€44B / red 가이 하향·2분기 연속 push-out)",
+     "IBM 매출 €2.762B·GM 54.0% (green IBM 두자릿수 성장+GM ≥55% / red IBM 축소+GM 악화)",
+     "low-NA EUV capa 2026 65대→2027 +30% (red 2027 capa 지연·취소)",
+     "DUV 이머전 capa 130대→2027 +30% (red 저가동·할인)",
+     "로직:메모리 시스템 매출 2Q26 51:49 (red 로직·메모리 동시 capex 삭감)",
+     "중국 시스템 매출 비중 14% (red 급속 국산 DUV 대체)"
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "valuation_mode": "C — Mature Compounder with semiconductor-capex cyclical overlay",
+     "ladder": [
+      {
+       "lo": 1100,
+       "hi": 1200,
+       "tier": "ATTRACTIVE",
+       "src": "stance.price_bands.attractive_entry"
+      },
+      {
+       "lo": 1200,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "stance.zone '회피 / 관망' (현재가 €1,467.4; base DCF €1,337.15)"
+      }
+     ],
+     "ref_price": 1467.4,
+     "price_asof": "2026-09-04",
+     "hurdle": 0.12,
+     "hurdle_unit": "decimal",
+     "derived_note": "★통화 EUR. zone '회피 / 관망'. IRR 6.83%(단위 정규화 6.83→0.0683)·U/D 0.7·base DCF €1,337.15(민감도 €1,229~1,472). ★팩이 명시한 밴드는 attractive_entry 1개뿐 — AGGRESSIVE·WATCH 칸을 만들지 않고 공백으로 둠(제1조).",
+     "currency": "EUR"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 1467.4,
+     "as_of": "2026-09-04",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 22.3,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
+   }
   },
   {
    "ticker": "AMAT",
@@ -10297,8 +11408,73 @@
    "industries": [
     "ITC-03"
    ],
-   "verification": "SHALLOW",
-   "deep_dive_ref": null
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-09-05",
+    "stance_zone": "WATCH / NEUTRAL — 사업 논제는 강하나 밸류가 시간을 요구 (2026-09-04 종가 $454.71; attractive <$390·선별축적 $390~430)",
+    "thesis_oneline": "증착·식각·CMP + 서비스(AGS). Q3 FY26 반도체시스템 +27% YoY·비GAAP 총이익률 50.4%(8분기 47.5%→50.4% 추세 상승)·AGS +22%, CY2026 첨단패키징·PDC 각각 회사 전망 +50%. SEMI WFE 2026 $143.9B(+23.1%)→2027 $175.3B→2028 $200B가 배경. 기대IRR 7% vs EV $425.2(현재가 대비 −6.5%) — 사이클은 확장, 가격은 중립.",
+    "moat_verdict": "증착·식각·CMP 광폭 포트폴리오 + 설치기반 서비스. EPIC 협업 플랫폼이 차세대 잠금장치.",
+    "mgmt_verdict": "중국 매출 비중 28%(YELLOW)와 재고 $6.564B 증가(YELLOW)가 사이클 후반 감시 포인트. 자사주는 밸류에 미반영(주식수 793.6M 고정).",
+    "kpi_tripwires": [
+     "반도체시스템 매출 성장 Q3FY26 +27% (green ≥15% YoY) — GREEN",
+     "비GAAP 총이익률 50.4% (green ≥49.5% / red <48%) — GREEN",
+     "AGS 성장 +22% (green 중10%대 이상) — GREEN",
+     "첨단패키징 성장 CY26 회사전망 >50% (green ≥40%) — GREEN",
+     "중국 매출 비중 28% (green ≤25% / red >30%+수출규제 강화) — YELLOW",
+     "재고 $6.564B (red 매출·가이 하락 중 재고 증가) — YELLOW",
+     "PDC 성장 CY26 >50% (green ≥30%) — GREEN"
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode C Mature Compounder + Mode D semiconductor-capex cycle overlay",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 390,
+       "tier": "AGGRESSIVE",
+       "src": "price_bands.below_390"
+      },
+      {
+       "lo": 390,
+       "hi": 430,
+       "tier": "ATTRACTIVE",
+       "src": "price_bands.390_to_430"
+      },
+      {
+       "lo": 430,
+       "hi": 500,
+       "tier": "WATCH",
+       "src": "price_bands.430_to_500"
+      },
+      {
+       "lo": 500,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "price_bands.above_500"
+      }
+     ],
+     "ref_price": 454.71,
+     "price_asof": "2026-09-04",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone 'WATCH / NEUTRAL'. IRR 7.0%·EV $425.2(갭 −6.49%). 팩에 선택허들 수치 명시 없어 hurdle null."
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 454.71,
+     "as_of": "2026-09-04",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 5.7,
+    "freshness": "FRESH",
+    "tripwire_status": "YELLOW",
+    "display_suppressed": false
+   }
   },
   {
    "ticker": "LRCX",
@@ -10308,72 +11484,77 @@
    ],
    "verification": "DEEP_DIVED",
    "deep_dive_ref": {
-    "as_of": "2026-08-25",
-    "stance_zone": "관망 / 가격 대기 (현재 $310.17, watch_zone $265~300·stretched $300~340)",
-    "thesis_oneline": "식각·증착(etch/deposition) WFE 선도주 — Sep-26 가이드 $8.1B·영업마진 37.4%. NAND 층수·DRAM(HBM)·선단 로직 투자가 WFE 수요 견인하나 현재가는 stretched 밴드 진입, 중국 매출 34% 정상화가 변수.",
-    "moat_verdict": "conductor/HAR etch·ALD 등 특정 공정에서 Applied·TEL과의 과점·설치기반 서비스가 해자.",
-    "mgmt_verdict": "FY26 자사주 $3.85B·배당 $1.27B — 강한 주주환원. 시스템 성장이 WFE를 지속 outperform하는지가 관건.",
+    "as_of": "2026-09-05",
+    "stance_zone": "관망 / 조건부 매수 (2026-09-04 참조가 $303.72; 매력적 진입 $250~270·관망 $270~330)",
+    "thesis_oneline": "식각·증착 WFE 선도주. FY2026 시스템 +29.5%·영업마진 28.6%→32.0%→35.3%(JunQ26 37.4%, SepQ26 가이 39.5%)·CSBG $5.98B→$8.35B로 설치기반 경제성이 사이클 저점을 올렸다. 컨센서스 FY27 EPS 7.94→9.46, FY28 9.55→11.56으로 90일간 급상향 — 즉 가속은 이미 컨센서스다. 확률가중 $324.44 대비 21개월 배당전 price IRR 3.8%, 12% 허들 진입가 $266.08.",
+    "moat_verdict": "conductor/HAR 식각·ALD 등 특정 공정 과점 + 설치기반 서비스(CSBG). Akara/Aether/ALTUS 반복 채택이 컨텐츠 확대 증거.",
+    "mgmt_verdict": "주식수 1.320→1.261B 축소. 다만 FY26 FCF/순이익 67.3%(FY24 111.2%)·DSO 66.9→83.9일로 현금전환 품질은 Amber.",
     "kpi_tripwires": [
-     "Lam 시스템 성장 ≥ 관련 WFE 성장 지속",
-     "영업마진 ≥38%(강한 사이클, 현 37.4%)",
-     "중국 매출 비중 하락을 비중국 성장이 상쇄(현 34%)",
-     "OCF/순이익 ≥0.9x 정상화(현 0.806)"
+     "고객·WFE capex (SEMI 2026 WFE $143.9B +23.1%) — GREEN",
+     "Lam 시스템 성장 vs WFE (FY26 +29.5%) — GREEN/Amber",
+     "신규 플랫폼 채택 Akara/Aether/ALTUS — GREEN",
+     "CSBG 절대성장 FY26 $8.35B — GREEN",
+     "영업마진 JunQ26 37.4%·SepQ26 가이 39.5% (green ≥38% / red <35%) — GREEN",
+     "DSO FY26 ~83.9일(FY25 66.9일) — Amber",
+     "FCF/순이익 FY26 67.3% (green ≥85% / red <70% 지속) — Amber",
+     "중국 매출 비중 FY26 34% — Amber",
+     "희석주식수 1.261B — GREEN"
     ],
     "atlas_stance": {
      "contract": "v1",
      "contract_source": "ATLAS_DERIVED",
      "label": "WATCH",
-     "label_basis": "NONE",
-     "valuation_mode": "Mode D",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode D - Cyclical / Normalized Earnings & FCF",
      "ladder": [
       {
        "lo": null,
-       "hi": 235,
+       "hi": 250,
        "tier": "AGGRESSIVE",
-       "src": "strong_interest_if_thesis_intact"
+       "src": "price_bands.<=250 매우 매력적"
       },
       {
-       "lo": 245,
-       "hi": 265,
+       "lo": 250,
+       "hi": 270,
        "tier": "ATTRACTIVE",
-       "src": "attractive_entry"
+       "src": "price_bands.250-270 매력적 진입 구간"
       },
       {
-       "lo": 265,
-       "hi": 300,
+       "lo": 270,
+       "hi": 330,
        "tier": "WATCH",
-       "src": "watch_zone"
+       "src": "price_bands.270-330 관망/보유"
       },
       {
-       "lo": 300,
-       "hi": 340,
+       "lo": 330,
+       "hi": 380,
        "tier": "AVOID",
-       "src": "valuation_stretched"
+       "src": "price_bands.330-380 기대치가 높은 구간"
       },
       {
-       "lo": 340,
+       "lo": 380,
        "hi": null,
        "tier": "AVOID",
-       "src": "requires_upside_case"
+       "src": "price_bands.>380 신규 진입에 불리"
       }
      ],
-     "ref_price": 310.17,
-     "price_asof": "2026-08-24",
+     "ref_price": 303.72,
+     "price_asof": "2026-09-04",
      "hurdle": 0.12,
      "hurdle_unit": "decimal",
-     "derived_note": "★사다리 공백 235~245. IRR·EV·U/D 부재(허들만 존재). zone '관망 / 가격 대기'"
+     "derived_note": "zone '관망 / 조건부 매수'. IRR 3.844%·EV $324.44·12% 허들 진입가 $266.08. ★재통관(§7A 4단계): 직전 팩 260825($310.17, 사다리 235/245-265/265-300/300-340/340+, label_basis NONE) → 새 팩 260905로 밴드·근거 전면 교체, label_basis NONE→IRR."
     }
    },
    "stance_state": {
     "price": {
-     "value": 310.17,
-     "as_of": "2026-08-24",
+     "value": 303.72,
+     "as_of": "2026-09-04",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "AVOID",
-    "gap_to_attractive_pct": 17.0,
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 12.5,
     "freshness": "FRESH",
-    "tripwire_status": "UNKNOWN",
+    "tripwire_status": "YELLOW",
     "display_suppressed": false
    }
   },
@@ -10724,8 +11905,71 @@
    "industries": [
     "ITC-07"
    ],
-   "verification": "SHALLOW",
-   "deep_dive_ref": null
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-31",
+    "stance_zone": "AVOID / WATCH FOR PRICE (2026-08-28 종가 $186.29; attractive ≤$95·조건부 $95~120)",
+    "thesis_oneline": "사업 논제는 거의 다 맞다 — 2Q26 미국 상업 +149% YoY·미국 정부 +90%·GAAP 영업마진 47.1%(2024 3Q 15.6%에서 8분기 연속 상승). 이견은 성장의 '지속기간'과 터미널 밸류다. EV/FY26 매출 53.8x, 기대IRR 3.1% vs 12% 요구수익률이고 현재가 $186.29는 Bull Execution 시나리오 현재가치 $159.73마저 초과 — 즉 가격이 Bull Ecosystem($230.39)에 베팅 중.",
+    "moat_verdict": "온톨로지·설치형 운영계층의 전환비용과 정부 인증. 반복 수주와 상위20 확장이 해자 지표.",
+    "mgmt_verdict": "GAAP 마진 가속은 실물. 다만 SBC/매출과 희석주식 증가가 주당 가치 포착을 갉는지가 감시축이며, CEO 지속 매도는 밸류에 반영하지 않음.",
+    "kpi_tripwires": [
+     "미국 상업 성장 +149% (green ≥80% / red <50% 2분기 연속)",
+     "미국 정부 성장 +90% (green ≥45% / red <25%)",
+     "GAAP 영업마진 47.1% (green ≥35% / red <25%)",
+     "SBC/매출 (red >15% 또는 희석주식 연 5%+ 증가에 주당 FCF 미동반)",
+     "고객수 성장 (red <10%+상위20 확장 정체+경쟁 대체 가시화)"
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode B — Product/Platform Hybrid",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 95,
+       "tier": "AGGRESSIVE",
+       "src": "price_bands.attractive"
+      },
+      {
+       "lo": 95,
+       "hi": 120,
+       "tier": "ATTRACTIVE",
+       "src": "price_bands.conditional_interest"
+      },
+      {
+       "lo": 120,
+       "hi": 160,
+       "tier": "WATCH",
+       "src": "price_bands.watch_demanding"
+      },
+      {
+       "lo": 160,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "price_bands.priced_for_ecosystem_outcome"
+      }
+     ],
+     "ref_price": 186.29,
+     "price_asof": "2026-08-28",
+     "hurdle": 0.12,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone 'AVOID / WATCH FOR PRICE'. IRR 3.11% vs 요구수익률 12%·EV $119.88·base $105.88·Bull Execution $159.73."
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 186.29,
+     "as_of": "2026-08-28",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 55.2,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
+   }
   },
   {
    "ticker": "CRWD",
@@ -10754,8 +11998,78 @@
    "industries": [
     "ITC-07"
    ],
-   "verification": "SHALLOW",
-   "deep_dive_ref": null
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-09-03",
+    "stance_zone": "WATCH / HOLD — 실적 후 가격이 확률가중 중심 상회 (2026-09-02 정규장 종가 $305.84; attractive <$300·$300~340 매력~적정)",
+    "thesis_oneline": "FY27 Q2 제품매출 $1.4919B(+37% YoY)·NRR 126%·$1M+ 고객 828·RPO $9.0B로 성장 재가속이 확인됐고, FY27 가이 제품매출 $6.07B(+36%)·조정FCF 마진 23%. 문제는 반응 이후의 가격 — 확률가중 가치 $352.4 대비 시간외 지시가 $375.51은 이미 상회한다. GAAP 영업마진 −17.0% vs 비GAAP 15.3%의 간극(SBC)이 상시 감시축.",
+    "moat_verdict": "데이터 클라우드의 워크로드 중력과 126% NRR. 단 Databricks·하이퍼스케일러와의 경합이 상시.",
+    "mgmt_verdict": "비GAAP 희석주식 380M 가이던스 관리와 GAAP↔비GAAP 간극 축소가 주당 가치의 관건.",
+    "kpi_tripwires": [
+     "제품매출 성장 +37% (green ≥30% / red <25%)",
+     "NRR 126% (green ≥126% / red <120%)",
+     "$1M+ 고객 828 (green YoY ≥25% / red <15%)",
+     "RPO $9.0B (green ≥30% 성장 / red <20%)",
+     "비GAAP 제품 총이익률 74.7% (green ≥75% / red <72%)",
+     "SBC/매출 (green <25% / red >30%)"
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "EV",
+     "valuation_mode": "Mode B Hybrid",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 300,
+       "tier": "AGGRESSIVE",
+       "src": "price_bands.attractive_below"
+      },
+      {
+       "lo": 300,
+       "hi": 340,
+       "tier": "ATTRACTIVE",
+       "src": "price_bands.watch_300_340"
+      },
+      {
+       "lo": 340,
+       "hi": 380,
+       "tier": "WATCH",
+       "src": "price_bands.fair_340_380"
+      },
+      {
+       "lo": 380,
+       "hi": 440,
+       "tier": "AVOID",
+       "src": "price_bands.execution_required_380_440"
+      },
+      {
+       "lo": 440,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "price_bands.very_demanding_above"
+      }
+     ],
+     "ref_price": 305.84,
+     "price_asof": "2026-09-02",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone 'WATCH / HOLD'. 확률가중 가치 $352.4. ★관측가는 정규장 종가 $305.84를 사용(팩이 시간외 $375.51을 'overnight indication, not regular close'로 명시). 이 때문에 기계적 zone(ATTRACTIVE)과 label(WATCH)이 갈림 — 팩 스탠스는 시간외 가격 기준이므로 원문 우선(§5A). 다음 갱신에서 정규장 확인 필요."
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 305.84,
+     "as_of": "2026-09-02",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "ATTRACTIVE",
+    "gap_to_attractive_pct": -10.0,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
+   }
   },
   {
    "ticker": "NOW",
@@ -10763,8 +12077,72 @@
    "industries": [
     "ITC-07"
    ],
-   "verification": "SHALLOW",
-   "deep_dive_ref": null
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-09-03",
+    "stance_zone": "조건부 관심 / 분할매수 우위 (2026-09-02 종가 $136.50; attractive <$115·조건부 $115~150)",
+    "thesis_oneline": "엔터프라이즈 워크플로 플랫폼. 2Q26 cRPO +21%·ACV 갱신율 98%·$5M+ ACV 고객 500(4Q24)→658(2Q26)로 상위 고객 확장은 견고. 비GAAP 구독 총이익률 80.5%. 핵심 균열은 회계상 FCF($5.647B 컨센)와 경제적 FCF($3.214B)의 격차 — SBC/매출 16%가 그 간극이다. P/경제FCF 44.2x vs P/회사FCF 25.1x. 18개월 기대IRR 13.7%·24개월 10.1%.",
+    "moat_verdict": "플랫폼 표준화와 98% 갱신율의 전환비용. AI·보안 확장이 실행 레그.",
+    "mgmt_verdict": "SBC 16%가 2028까지 ~15%대로 남으면 red — 주당 가치 전환이 논제의 전부.",
+    "kpi_tripwires": [
+     "cRPO 성장 21% (green ≥20% / red <17% 2분기 연속)",
+     "ACV 갱신율 98% (green ≥98% / red <97%)",
+     "$5M+ ACV 고객 658 (green YoY ≥20% / red <15%)",
+     "비GAAP 구독 총이익률 80.5% (green ≥81% / red <79.5% 지속)",
+     "SBC/매출 1H26 16% (green 2029 <10% 하향추세 / red 2028에도 ~15%+)",
+     "RED KPI 2개 이상 → 강제 재평가"
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "ATTRACTIVE",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode B Hybrid",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 115,
+       "tier": "AGGRESSIVE",
+       "src": "price_bands.attractive_below"
+      },
+      {
+       "lo": 115,
+       "hi": 150,
+       "tier": "ATTRACTIVE",
+       "src": "price_bands.conditional_interest"
+      },
+      {
+       "lo": 150,
+       "hi": 185,
+       "tier": "WATCH",
+       "src": "price_bands.fair_watch"
+      },
+      {
+       "lo": 185,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "price_bands.execution_priced_above"
+      }
+     ],
+     "ref_price": 136.5,
+     "price_asof": "2026-09-02",
+     "hurdle": null,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone '조건부 관심 / 분할매수 우위'(conviction medium). 기대IRR 18M 13.7%·24M 10.1%·EV $165.55. 팩에 선택허들 수치 없어 hurdle null."
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 136.5,
+     "as_of": "2026-09-02",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "ATTRACTIVE",
+    "gap_to_attractive_pct": -9.0,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
+   }
   },
   {
    "ticker": "V",
@@ -12128,10 +13506,11 @@
     "price": {
      "value": 121.19,
      "as_of": "",
-     "source": "deep_dive_pack_snapshot"
+     "source": "deep_dive_pack_snapshot",
+     "note": "as_of 미기재 — 날짜를 확인할 수 없는 주가는 관측으로 인정하지 않음(§4A). 값은 삭제하지 않고 보존(HARD RULE 4)."
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 4.5,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
     "display_suppressed": false
@@ -13071,7 +14450,8 @@
     "price": {
      "value": null,
      "as_of": "",
-     "source": "deep_dive_pack_snapshot"
+     "source": "deep_dive_pack_snapshot",
+     "note": "주가 미확보 — zone UNKNOWN 유지"
     },
     "zone": "UNKNOWN",
     "gap_to_attractive_pct": null,
@@ -13831,7 +15211,8 @@
     "price": {
      "value": null,
      "as_of": "",
-     "source": "deep_dive_pack_snapshot"
+     "source": "deep_dive_pack_snapshot",
+     "note": "주가 미확보 — zone UNKNOWN 유지"
     },
     "zone": "UNKNOWN",
     "gap_to_attractive_pct": null,
@@ -14057,10 +15438,11 @@
     "price": {
      "value": 212.85,
      "as_of": "",
-     "source": "deep_dive_pack_snapshot"
+     "source": "deep_dive_pack_snapshot",
+     "note": "as_of 미기재 — 날짜를 확인할 수 없는 주가는 관측으로 인정하지 않음(§4A). 값은 삭제하지 않고 보존(HARD RULE 4)."
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 18.2,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
     "display_suppressed": false
@@ -15486,7 +16868,8 @@
     "price": {
      "value": null,
      "as_of": "",
-     "source": "deep_dive_pack_snapshot"
+     "source": "deep_dive_pack_snapshot",
+     "note": "주가 미확보 — zone UNKNOWN 유지"
     },
     "zone": "UNKNOWN",
     "gap_to_attractive_pct": null,
@@ -15553,7 +16936,8 @@
     "price": {
      "value": null,
      "as_of": "",
-     "source": "deep_dive_pack_snapshot"
+     "source": "deep_dive_pack_snapshot",
+     "note": "주가 미확보 — zone UNKNOWN 유지"
     },
     "zone": "UNKNOWN",
     "gap_to_attractive_pct": null,
@@ -15561,175 +16945,872 @@
     "tripwire_status": "UNKNOWN",
     "display_suppressed": false
    }
+  },
+  {
+   "ticker": "ACM",
+   "name": "AECOM",
+   "industries": [
+    "IND-05"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-31",
+    "stance_zone": "BUY ZONE / 단계적 비중 확대 (2026-08-28 종가 $69.17; buy zone ≤$75.8·조건부매수 $75.8~80)",
+    "thesis_oneline": "설계·자문·프로그램관리 코어의 전문서비스사. FY26 Q3 설계 book-to-burn 1.6x·수주잔고 +13% YoY·ex-charge EBITDA 마진 17.0%로 수요는 확증됐고, 밸류 할인의 원인은 레거시 P3 design-build 2건의 손실·현금유출 꼬리(청구채권 $620M·FY27 H1 현금부담 ~$0.5bn)다. 확률가중 12개월 기대수익 29.3%·U/D 3.19로 8종 E&C 딥다이브 중 유일하게 무조건부 매수 구간.",
+    "moat_verdict": "설계·PM은 자본 대신 인증·실적·인력이 진입장벽. AI/Advisory/ECC 믹스 상승이 마진 레버.",
+    "mgmt_verdict": "P3 리스크 정책 전환(신규 fixed-price 회피) 이후 재발 여부가 시험대. 순레버리지 1.5x·자사주 재개 여지.",
+    "kpi_tripwires": [
+     "설계 book-to-burn 1.6x (green >1.2x / red <1.0x 2분기)",
+     "수주잔고 +13% YoY (red 감소)",
+     "ex-charge EBITDA 마진 17.0% (green ≥17.5% / red <16.5% 지속)",
+     "P3 완공 Project B FY27Q1·A FY27Q2 (red FY27 H2 이후)",
+     "FY27 H1 P3 현금부담 ~$0.5bn (red >$0.6bn)",
+     "중대 청구채권 $620M (red 재가속+신규 익스포저)",
+     "순레버리지 1.5x (red >2.0x)"
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AGGRESSIVE",
+     "label_basis": "UD_RATIO",
+     "valuation_mode": "C - Mature Compounder with retained CM project-risk overlay",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 75.8,
+       "tier": "AGGRESSIVE",
+       "src": "price_bands[0] Buy zone (U/D>2.0)"
+      },
+      {
+       "lo": 75.8,
+       "hi": 80.0,
+       "tier": "ATTRACTIVE",
+       "src": "price_bands[1] 조건부 매수"
+      },
+      {
+       "lo": 80.0,
+       "hi": 90.0,
+       "tier": "WATCH",
+       "src": "price_bands[2] 관망/보유"
+      },
+      {
+       "lo": 90.0,
+       "hi": 105.0,
+       "tier": "WATCH",
+       "src": "price_bands[3] 증거 요구"
+      },
+      {
+       "lo": 105.0,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "price_bands[4] 축소 검토"
+      }
+     ],
+     "ref_price": 69.17,
+     "price_asof": "2026-08-28",
+     "hurdle": 0.12,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone 'BUY ZONE / 단계적 비중 확대'. U/D 3.19·기대IRR 29.3%(12M)·EV $89.47. 밴드 5칸 그대로 전사."
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 69.17,
+     "as_of": "2026-08-28",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AGGRESSIVE",
+    "gap_to_attractive_pct": -13.5,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
+   }
+  },
+  {
+   "ticker": "MYRG",
+   "name": "MYR Group",
+   "industries": [
+    "IND-05"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-28",
+    "stance_zone": "WATCH (2026-08-28 종가 $294.42; attractive ≤$260·조건부매수 $260~275)",
+    "thesis_oneline": "송배전(T&D)+상업산업(C&I) 전기시공. 총잔고 $3.16B 사상 최고, C&I 영업마진 3.2%(2024)→5.9%(2025)→8.5%(2Q26)로 추정변경 손실이 8분기에 걸쳐 −3.9%p에서 +0.9%p로 반전 — 실행 정상화가 진짜다. 그러나 확률가중 IRR 8.9% vs 12% 허들로 정상화가 이미 가격에 있다.",
+    "moat_verdict": "T&D 숙련인력과 유틸리티 MSA 관계. 규모는 PWR·MTZ 대비 작아 프로젝트 편차가 크다.",
+    "mgmt_verdict": "Valley/Comet 인수의 ROIC(요구 세후 8~10%)가 시험대. 주식수 16.84→15.57M 축소는 긍정.",
+    "kpi_tripwires": [
+     "추정변경 총이익 영향 +0.9%p (green ≥−0.5%p / red <−1.5%p)",
+     "연결 EBIT 마진 1H26 6.37% (green ≥6.0% / red <5.0%)",
+     "C&I 영업마진 8.5% (green ≥7% / red <5%)",
+     "총잔고 $3.16B (green ≥$3.0B / red <$2.7B)",
+     "TTM CFO/순이익 (green ≥1.0x / red <0.7x)",
+     "순부채/EBITDA (green <1.0x / red >1.5x)",
+     "Valley/Comet EBIT 마진 (green ≥9% / red <6%)"
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode C - Mature Compounder with project-cycle normalization and reverse-expectations overlay",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 260,
+       "tier": "AGGRESSIVE",
+       "src": "price_bands.attractive"
+      },
+      {
+       "lo": 260,
+       "hi": 275,
+       "tier": "ATTRACTIVE",
+       "src": "price_bands.conditional_buy"
+      },
+      {
+       "lo": 275,
+       "hi": 320,
+       "tier": "WATCH",
+       "src": "price_bands.watch"
+      },
+      {
+       "lo": 320,
+       "hi": 350,
+       "tier": "AVOID",
+       "src": "price_bands.rich"
+      },
+      {
+       "lo": 350,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "price_bands.reduce_avoid_without_estimate_upgrades"
+      }
+     ],
+     "ref_price": 294.42,
+     "price_asof": "2026-08-28",
+     "hurdle": 0.12,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone 'WATCH'. IRR 8.93% vs 허들 12%·U/D 2.02·EV(2028) $359.75·허들 PV $275.84."
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 294.42,
+     "as_of": "2026-08-28",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 7.1,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
+   }
+  },
+  {
+   "ticker": "XE",
+   "name": "X-Energy",
+   "industries": [
+    "UTL-02"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-31",
+    "stance_zone": "WATCH / 가격 또는 디리스킹 증거 대기 (2026-08-28 종가 $17.22; 적극관심 $10.5~12.0·조건부 $12.0~13.7)",
+    "thesis_oneline": "고온가스로(Xe-100) + TRISO-X 연료의 수직결합. 연료가 차별점 — TX-1(214,000sqft·연 5MTU·펠릿 70만개·원자로 11기분)이 2026-08-24 기준 내부 마감·연료제조 장비 설치 단계이며 회사 목표 가동 H1 2028. Dow Seadrift(320MWe, CP/FID 대기)와 Amazon+Energy Northwest(320MWe, 960 확대옵션·미국 5GWe+ 권리)가 실행 축. 5년 기대IRR 7.0% vs 12% 허들, Bull Execution U/D 0.54 — 옵션은 실재하나 가격이 이미 로고를 자본화.",
+    "moat_verdict": "TRISO 연료 공급망(SGL Carbon 흑연 Chedde 2030 2배 확대, Centrus·General Matter HALEU)의 선점. 표준플랜트 총 수수료 $2.41~4.73B 중 연료가 $1.56~3.13B로 최대 — 연료가 진짜 경제성.",
+    "mgmt_verdict": "분기 영업현금 −$67.3M(1Q26)→−$97.3M(2Q26)로 소진 확대. 경제적 주식등가 406.4M(2026-08-10) — 마일스톤 없는 희석이 red.",
+    "kpi_tripwires": [
+     "Dow CP/FID (2026-05-18 환경 FONSI 완료·CP 결정 미정, red 중대 지연)",
+     "Amazon 첫 사이트 전환 (green CPA 수리+자금 확보 건설경로)",
+     "TX-1 상업화 (green 2028 목표 근접 가동 / yellow 6~12개월 지연)",
+     "분기 영업현금흐름 −$97.3M (red 마일스톤 없이 소진 증가)",
+     "경제적 주식등가 406.4M (red 가치증분 없는 15%+ 희석)"
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode A - Option-led",
+     "ladder": [
+      {
+       "lo": 10.5,
+       "hi": 12.0,
+       "tier": "AGGRESSIVE",
+       "src": "price_bands.active_interest"
+      },
+      {
+       "lo": 12.0,
+       "hi": 13.7,
+       "tier": "ATTRACTIVE",
+       "src": "price_bands.conditional_interest"
+      },
+      {
+       "lo": 13.7,
+       "hi": 17.0,
+       "tier": "WATCH",
+       "src": "price_bands.watch"
+      },
+      {
+       "lo": 17.0,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "price_bands.requires_material_de_risking_above"
+      }
+     ],
+     "ref_price": 17.22,
+     "price_asof": "2026-08-28",
+     "hurdle": 0.12,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone 'WATCH / wait for price or de-risking evidence'. 5년 IRR 6.95%·EV $13.68·Bull Execution U/D 0.54. ★label(WATCH, 원문 우선)과 기계적 zone(AVOID)이 경계에서 갈림 — 현재가 $17.22가 밴드 상단 $17.00을 1.3% 초과. §5A '원문 우선' 적용."
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 17.22,
+     "as_of": "2026-08-28",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 25.7,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
+   }
+  },
+  {
+   "ticker": "STEM",
+   "name": "Stem",
+   "industries": [
+    "UTL-03",
+    "ITC-07"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-09-01",
+    "stance_zone": "WATCH / SPECULATIVE ONLY (2026-08-31 종가 $5.72; 투기적 축적 <$4.50·현 위험조정 적정 $4.50~6.50)",
+    "thesis_oneline": "PowerTrack 중심 재생에너지 제어 소프트웨어로 전환 중. 운영은 실제 개선됐다 — 총ARR $61.1M(4Q25)→$62.4M(2Q26), CARR $69.0M, GAAP 총이익률 33%(2Q25)→41%(2Q26), 조정EBITDA 5분기 연속 흑자($6.2M), 수주 $36.8M(+39% QoQ)·백로그 $27.1M(+18% QoQ). 그러나 보통주는 사실상 2028 차환 옵션이다 — 부채 원리금 청구 $384M 대 시총 $55M, 연 현금쿠폰 ~$23.0M, 2028 만기가 현금을 초과.",
+    "moat_verdict": "설치기반 자산의 표준화된 제어 플랫폼. 미 스토리지 2025말 43.6GW→1H26 +8.3GW, 향후 2.5년 계획 54GW가 수요 배경.",
+    "mgmt_verdict": "연 $30M 절감 구조조정 후 R&D 축소가 제품 지연으로 이어지는지가 falsifier. ATM 잔여 $24.2M 사용 가속은 red.",
+    "kpi_tripwires": [
+     "PowerTrack ARR $42.8M(+3% QoQ) — bear 신호: 저한자릿수 성장 2분기+",
+     "총ARR $62.4M (bull YE26 >$70M / bear <$65M)",
+     "CARR $69.0M — ARR 활성화 여부",
+     "GAAP 총이익률 41% (bull 지속 42~45% / bear <35%)",
+     "조정EBITDA $6.2M 5분기 연속 흑자 (bear 연 현금쿠폰 $23.0M 미만)",
+     "영업현금 2Q26 +$0.3M·6M26 −$8.0M (bull FY26 >$10M)",
+     "2028 만기 차환 가시성 (red 2027까지 부재)",
+     "현금 $38.4M (red <$25M + ATM 가속)"
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode B — Hybrid",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 4.5,
+       "tier": "ATTRACTIVE",
+       "src": "price_bands[0] <4.50 speculative accumulate"
+      },
+      {
+       "lo": 4.5,
+       "hi": 6.5,
+       "tier": "WATCH",
+       "src": "price_bands[1] 4.50-6.50 watch/optional small"
+      },
+      {
+       "lo": 6.5,
+       "hi": 9.0,
+       "tier": "WATCH",
+       "src": "price_bands[2] 6.50-9.00 hold only with KPI confirmation"
+      },
+      {
+       "lo": 9.0,
+       "hi": 15.0,
+       "tier": "AVOID",
+       "src": "price_bands[3] >9.00 reduce/avoid"
+      },
+      {
+       "lo": 15.0,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "price_bands[4] >15.00 bull proof required"
+      }
+     ],
+     "ref_price": 5.72,
+     "price_asof": "2026-08-31",
+     "hurdle": 0.1,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone 'WATCH / SPECULATIVE ONLY'. IRR 13.29% @$5.72·2029 기대 주당 $8.58·실패 시나리오 $0. ★최저 밴드가 'speculative accumulate'라 AGGRESSIVE 칸을 만들지 않음(팩이 적극구간을 정의하지 않았고 포지션 사이징에 중대 실패확률 가정을 요구). 허들은 '10-15%' 하단."
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 5.72,
+     "as_of": "2026-08-31",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 27.1,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
+   }
+  },
+  {
+   "ticker": "SES",
+   "name": "SES AI",
+   "industries": [
+    "MAT-06",
+    "IND-02",
+    "UTL-03"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-31",
+    "stance_zone": "HOLD / WAIT FOR PROOF (2026-08-28 종가 $0.5223; 적극검토 ≤$0.30·Accumulate $0.30~0.40)",
+    "thesis_oneline": "ESS가 매출 바닥을 만들고 드론셀·전지소재가 재평가 경로인 옵션형. 문제는 증거의 단계다 — 드론은 샘플·인증·라인감사 단계이고 확정 물량 백로그는 미공시, 소재는 2차 테스트 ~6곳, Molecular Universe는 다년 커밋 1건. 매출 구조도 고마진 서비스($13.582M, FY25)에서 저마진 제품(1H26 비중 97.7%)으로 이동해 총이익 달러와 현금소진이 매출 성장보다 결정적. 확률가중 주당 $0.426 < 현재가 $0.5223.",
+    "moat_verdict": "충주 라인(연 20만셀→2026 4Q 100만셀 목표)의 드론 특화 셀. 다만 Hisun JV(90/10)는 SES 전용 capa가 아니며 인버터 생태계는 비배타.",
+    "mgmt_verdict": "유동성 $163.0M이 방어선. NYSE $1 기준 미달 상태로 리버스스플릿 경로가 yellow.",
+    "kpi_tripwires": [
+     "FY26 매출 (green ≥$32.5M / red <$30M)",
+     "연결 총이익률 (green ≥25% 2분기 연속 / red <18%)",
+     "드론 수주 (green 다년 확정 PO+금액·물량 공시 / red 2027 Q1까지 유의미 PO 없음)",
+     "충주 가동률 (green 4Q 유의미 매출+1Q27 램프 / red capa 대비 매출 미미)",
+     "소재 (green 상업계약+반복 출하 / red 2027 H1까지 계약 없음)",
+     "유동성 (green YE26 ≥$125M / red <$110M)",
+     "영업현금 소진 (green 연환산 <$55M / red >$70M)",
+     "기본 희석 (green 연 <5% / red >10%·ATM 의존)",
+     "NYSE $1 기준 (red 추가 상장 이슈)"
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "EV",
+     "valuation_mode": "Mode B Hybrid: Core + Execution + Ecosystem - Funding/Dilution Drag",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 0.3,
+       "tier": "AGGRESSIVE",
+       "src": "price_bands[0] max 0.3 적극 검토"
+      },
+      {
+       "lo": 0.3,
+       "hi": 0.4,
+       "tier": "ATTRACTIVE",
+       "src": "price_bands[1] Accumulate zone"
+      },
+      {
+       "lo": 0.4,
+       "hi": 0.6,
+       "tier": "WATCH",
+       "src": "price_bands[2] Hold / proof required"
+      },
+      {
+       "lo": 0.6,
+       "hi": 0.8,
+       "tier": "AVOID",
+       "src": "price_bands[3] Execution priced"
+      },
+      {
+       "lo": 0.8,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "price_bands[4] Bull evidence required"
+      }
+     ],
+     "ref_price": 0.5223,
+     "price_asof": "2026-08-28",
+     "hurdle": 0.2,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone(market.stance) 'HOLD / WAIT FOR PROOF'. 확률가중 주당 $0.426·base $0.30·요구수익률 20%(팩 required_return_pct 전사). 다중귀속: MAT-06(대표)+IND-02(드론)+UTL-03(ESS)."
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 0.5223,
+     "as_of": "2026-08-28",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 30.6,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
+   }
+  },
+  {
+   "ticker": "UBER",
+   "name": "Uber Technologies",
+   "industries": [
+    "COM-03",
+    "DIS-03",
+    "IND-06"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-09-03",
+    "stance_zone": "ACCUMULATE_ON_WEAKNESS (2026-09-02 종가 $76.78; attractive <$72·적정 $82~105)",
+    "thesis_oneline": "본업 FCF 복리화는 강하다 — 2026 Q2 총예약 $58.022B·조정EBITDA $2.819B(예약 대비 4.9%)·FCF $2.792B, 2025 연 FCF $9.763B. 자사주 1H26 $3.5B(46.6M주)·잔여 승인 $15.7B. 핵심 할인요인은 자본배분 두 건 — Delivery Hero 지분가치 $14.8B·€14.2B 브릿지와 AV 옵션 확보 비용. Variant는 'Uber가 AV 승자를 맞히지 않아도 여러 공급자를 묶는 수요·운영 레이어로 남는가'.",
+    "moat_verdict": "양면 네트워크와 Uber One 교차이용. AV 시대에도 수요 집계·운영 레이어로 남을 수 있는지가 해자의 미래형.",
+    "mgmt_verdict": "가이던스 초과달성 이력은 확인됨. 인수 후 총레버리지 2.0x 목표 이행과 희석 관리가 시험대. 보험준비금 $13.286B는 회계품질 감시 항목.",
+    "kpi_tripwires": [
+     "총예약 고정환율 성장 (green ≥18% / red <14% 2분기)",
+     "조정EBITDA/총예약 4.9% (green ≥4.8% / red <4.4%)",
+     "TTM FCF ~$10B (green ≥$10B 상승 / red <$9B)",
+     "희석주식수 (green YoY 감소 / red 자사주에도 증가)",
+     "AV 상업화 (green 다중 파트너 유료 확대 / red 주요 파트너 우회·경제성 악화)",
+     "Delivery Hero 레버리지·통합 (green 총레버리지 <2x+증분 가시화 / red 디레버리징 정체·자사주 중단)"
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "ATTRACTIVE",
+     "label_basis": "EV",
+     "valuation_mode": "C_MATURE_COMPOUNDER",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 72,
+       "tier": "ATTRACTIVE",
+       "src": "valuation.price_bands.attractive_below"
+      },
+      {
+       "lo": 82,
+       "hi": 105,
+       "tier": "WATCH",
+       "src": "valuation.price_bands.fair_range"
+      },
+      {
+       "lo": 120,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "valuation.price_bands.expensive_above"
+      }
+     ],
+     "ref_price": 76.78,
+     "price_asof": "2026-09-02",
+     "hurdle": 0.1,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone(thesis.stance) 'ACCUMULATE_ON_WEAKNESS'. 확률가중 주당 $136.63·spot P/FCF ~15.9x. ★사다리 공백 72~82 및 105~120 — 현재가 $76.78이 그 공백에 들어가 기계적 zone은 UNKNOWN(보간 금지, §7B 제1·2조). 팩 서술은 '$70대에서 risk/reward 우호적'이나 밴드로 명시되지 않아 칸을 만들지 않음. gap은 attractive 상단 $72 기준으로 산출."
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 76.78,
+     "as_of": "2026-09-02",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": 6.6,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
+   }
+  },
+  {
+   "ticker": "AAPL",
+   "name": "Apple",
+   "industries": [
+    "ITC-06",
+    "ITC-07"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-31",
+    "stance_zone": "관망 / 신규 진입 회피; 기존 보유자는 비중 축소 검토 (2026-08-28 종가 $319.70; attractive $230~250·wait $265~300)",
+    "thesis_oneline": "FY26 Q3 총매출 +16%·아이폰 +22%·Mac +29%·서비스 +12%(GM 75.6%)로 사업은 좋다. 그러나 정규화 총이익률이 49.3%→48.1%→FY26 Q4 가이 중간 46.5%로 하강 중이고 그 주범이 메모리 원가다 — 즉 ITC-05 메모리 부족의 청구서가 하류 세트에 도달하기 시작했다. 기대IRR 3.09% vs 선택허들 10~15%, 현재가는 base 공정가 중심 $260 대비 +23.0% 프리미엄.",
+    "moat_verdict": "실리콘 수직통합·생태계 잠금·서비스 부착률. Siri AI 교체의 실측 인게이지먼트 상승은 아직 미확인.",
+    "mgmt_verdict": "정규화 FY2027-28 FCF 상향, 측정 가능한 Siri 개선, Mac 두자릿수 지속, 메모리 원가 정상화 — 이 넷 중 하나가 나와야 관점이 바뀐다.",
+    "kpi_tripwires": [
+     "총매출 성장 FY26 Q3 +16% (green FY27 고한자릿수+ / red 저한자릿수·마이너스 2분기)",
+     "아이폰 매출 +22% (green FY27 중~고한자릿수+ / red 2분기 연속 마이너스)",
+     "Mac 매출 +29% (green FY27 두자릿수+신규고객 증거 / red PC시장 대비 지속 열위)",
+     "정규화 총이익률 48.1%→FY26Q4 가이 46.5% (green FY27 48%+ 회복 / red 46% 미만 지속) ★메모리 원가 연동",
+     "서비스 성장 +12%·GM 75.6% (green 10%+·~75% / red 중한자릿수+GM <73%)",
+     "Siri AI 채택 — 미측정"
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "valuation_mode": "C — Mature Compounder",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 230,
+       "tier": "AGGRESSIVE",
+       "src": "price_bands.active_interest"
+      },
+      {
+       "lo": 230,
+       "hi": 250,
+       "tier": "ATTRACTIVE",
+       "src": "price_bands.attractive"
+      },
+      {
+       "lo": 250,
+       "hi": 265,
+       "tier": "ATTRACTIVE",
+       "src": "price_bands.conditional"
+      },
+      {
+       "lo": 265,
+       "hi": 300,
+       "tier": "WATCH",
+       "src": "price_bands.wait"
+      },
+      {
+       "lo": 300,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "price_bands.avoid_new_entry"
+      }
+     ],
+     "ref_price": 319.7,
+     "price_asof": "2026-08-28",
+     "hurdle": 0.1,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone '관망 / 신규 진입 회피'. IRR 3.09%·EV $261.875·base 공정가 밴드 $250~275(중심 $260). 허들 진입가 10% $263.3·12% $249.4·15% $230.4. 허들은 'selection_hurdle 10~15%' 하단 전사."
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 319.7,
+     "as_of": "2026-08-28",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 20.6,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
+   }
+  },
+  {
+   "ticker": "CAT",
+   "name": "Caterpillar",
+   "industries": [
+    "IND-04",
+    "IND-03",
+    "MAT-02"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-31",
+    "stance_zone": "회피 / 신규 매수 보류; 기존 보유자는 비중 축소 검토 (2026-08-28 종가 $800.25; 적극관심 ≤$500·조건부 $500~610)",
+    "thesis_oneline": "2Q26 전사 잔고 $51B(2025말)→$72.1B로 반년 만에 +41%, 발전 소매 +72% YoY, P&E 세그먼트 마진 24.6%, 북미 건설기계 소매 +27%, 철도 +272% — 데이터센터 전력이 기계 사이클을 재점화한 증거가 세그먼트 단위로 확인된다. 대형엔진 capa 2024 대비 ~2배·Solar Turbines 2.5배 증설 목표. 그럼에도 기대IRR 3% vs 요구 11%·U/D 0.22, 조정 TTM P/E 33.6x는 5년 분포 85퍼센타일(10년 중앙 GAAP P/E 18.5x).",
+    "moat_verdict": "딜러망·서비스(2030 $30B 목표)·부품 재제조. 발전 패키지는 리드타임이 곧 해자.",
+    "mgmt_verdict": "증설 목표는 공격적이나 사이클 정점 근처 capex의 전형적 위험. Cat Financial 연체율이 신용 사이클 조기경보.",
+    "kpi_tripwires": [
+     "P&E 매출 성장 2Q26 +17% (green >15%+마진 ≥23% / red <5%+마진 <20%)",
+     "발전 소매 성장 +72% (green >25% 다분기 / red 마이너스)",
+     "P&E 세그먼트 마진 24.6% (green ≥23% / red <20%)",
+     "전사 잔고 $72.1B (green 안정·상승+전환 / red >20% 감소)",
+     "북미 건설기계 소매 +27% (green >10% / red 마이너스+딜러재고 증가)",
+     "광산·중장비 소매 +15% (green >5% / red <−5%)",
+     "Cat Financial 연체율 (신용 사이클 조기경보)"
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode D — Cyclical with segment-aware P&E structural overlay",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 500,
+       "tier": "AGGRESSIVE",
+       "src": "price_bands.≤$500 적극 관심 / Buy zone"
+      },
+      {
+       "lo": 500,
+       "hi": 610,
+       "tier": "ATTRACTIVE",
+       "src": "price_bands.$500–610 조건부 관심"
+      },
+      {
+       "lo": 610,
+       "hi": 800,
+       "tier": "WATCH",
+       "src": "price_bands.$610–800 관망 / 신규매수 보류"
+      },
+      {
+       "lo": 800,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "price_bands.>$800 회피"
+      }
+     ],
+     "ref_price": 800.25,
+     "price_asof": "2026-08-28",
+     "hurdle": 0.11,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone '회피 / 신규 매수 보류'. IRR 3%·U/D 0.22·EV $612.34·core $590.28. ★현재가 $800.25가 밴드 경계 $800을 0.03% 초과 — 기계적 zone=AVOID, 원문 zone도 회피로 일치. 다중귀속: IND-04(대표)+IND-03(발전 패키지)+MAT-02(광산 장비)."
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 800.25,
+     "as_of": "2026-08-28",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "AVOID",
+    "gap_to_attractive_pct": 31.2,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
+   }
+  },
+  {
+   "ticker": "ECP",
+   "name": "Electra Consumer Products",
+   "industries": [
+    "DIS-04",
+    "STP-04",
+    "DIS-05"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-08-31",
+    "stance_zone": "WATCH / 조건부 관심 (2026-08-28 텔아비브 종가 ILS 65.72; 강한 매력 <52·Accumulate 52~60)",
+    "thesis_oneline": "전기전자 소매 97점·식품 소매 145점·스포츠레저 108점의 이스라엘 소매 플랫폼(총 350점+). 턴어라운드 논제이나 진행은 엇갈린다 — 식품 동일점포 매출 H1 2026 −2.6%, 2Q26 −7.2%(RED 임계)이고 순금융부채(ex-IFRS16)가 FY2025 929M→H1 2026 1,162M ILS로 RED 임계(>1,150) 진입. 그룹 EBITDA 마진 5.1%(green ≥5.5%). 3년 기대IRR 12.16% vs 기본허들 12.5% — 근소 미달이라 가격 하락이나 부채·Carrefour 증거를 기다리는 구간.",
+    "moat_verdict": "다포맷 소매망과 부동산(base credit 350M ILS). 다만 식품은 경쟁 심화로 동일점포가 훼손 중.",
+    "mgmt_verdict": "부채 전환과 Carrefour 전환 증거가 논제의 두 축. 분기 순금융비용 53M ILS가 이익을 잠식.",
+    "kpi_tripwires": [
+     "식품 동일점포 매출 2Q26 −7.2% (green >+3% / red <−2% 2분기 연속) ★RED 상태",
+     "식품 EBITDA(ex-IFRS16) 마진 4.5% (green ≥5.0% / red <4.0%)",
+     "전기전자 EBITDA 마진 H1 4.7%·2Q 4.2% (green ≥4.7% / red <4.0%)",
+     "그룹 EBITDA 마진 5.1% (green ≥5.5% / red <4.8%)",
+     "순금융부채(ex-IFRS16) 1,162M ILS (green <950 / red >1,150) ★RED 상태",
+     "분기 순금융비용 53M ILS"
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode C — Mature/turnaround consumer platform with proportional SOTP/NAV overlay",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 52,
+       "tier": "AGGRESSIVE",
+       "src": "price_bands.<52 Strongly attractive"
+      },
+      {
+       "lo": 52,
+       "hi": 60,
+       "tier": "ATTRACTIVE",
+       "src": "price_bands.52-60 Accumulate zone"
+      },
+      {
+       "lo": 60,
+       "hi": 75,
+       "tier": "WATCH",
+       "src": "price_bands.60-75 Watch / conditional interest"
+      },
+      {
+       "lo": 75,
+       "hi": 95,
+       "tier": "WATCH",
+       "src": "price_bands.75-95 Fair-to-hold"
+      },
+      {
+       "lo": 105,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "price_bands.>105 trim/avoid"
+      }
+     ],
+     "ref_price": 65.72,
+     "price_asof": "2026-08-28",
+     "hurdle": 0.125,
+     "hurdle_unit": "decimal",
+     "derived_note": "★통화 ILS(텔아비브). zone 'WATCH / 조건부 관심'. IRR 12.158% vs 기본허들 12.5%·U/D 2.89·EV 86.12·base FV 91.52. ★사다리 공백 95~105(팩 원문 그대로). 트리거: ≤60에서 IRR >15%, ≤55에서 ~19%. ★KPI 2건이 RED 임계 — tripwire_status=RED → display_suppressed=true.",
+     "currency": "ILS"
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 65.72,
+     "as_of": "2026-08-28",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 9.5,
+    "freshness": "FRESH",
+    "tripwire_status": "RED",
+    "display_suppressed": true
+   }
+  },
+  {
+   "ticker": "SVRA",
+   "name": "Savara",
+   "industries": [
+    "HLT-02"
+   ],
+   "verification": "DEEP_DIVED",
+   "deep_dive_ref": {
+    "as_of": "2026-09-02",
+    "stance_zone": "조건부 관심 (2026-09-01 종가 $5.35; Buy zone ≤$4.20·조건부 $4.21~6.20)",
+    "thesis_oneline": "MOLBREEVI(molgramostim)의 자가면역 폐포단백증(aPAP) 임상 효능은 상당히 de-risk됐다 — IMPALA-2 n=164, 24주 DLCO 치료군 +9.8%p vs 위약 +3.8%p(차이 6.0%p, CI 2.5~9.4, p<0.001). 논쟁의 중심은 '승인되느냐'가 아니라 '승인 뒤 몇 명이 지속 투약하고 어떤 순가격이 실현되느냐'다. PDUFA 2026-11-22(major amendment로 3개월 연장), 과거 CMC 관련 RTF 이력이 최대 단일 이벤트 리스크. 기대IRR 18.9%로 15% 허들은 통과하나 U/D ~1.34로 Buy-zone 규칙(U/D>2) 미충족.",
+    "moat_verdict": "희귀질환 orphan 포지션 + 전속 특수약국(PANTHERx Rare)·환자지원 프로그램. 적은 필드포스(~30명)로 1,700 계정·4,500 호흡기 HCP 커버가 오퍼레이팅 레버리지.",
+    "mgmt_verdict": "승인 전 상업 준비(ClearPath 무상 검사)는 진행. 회사 잠재 WAC $400~500K 대비 언더라이팅 순가격 base $330K — 이 격차가 실현 여부의 핵심.",
+    "kpi_tripwires": [
+     "FDA 결과·label·CMC/device (green 2026-11-22까지 승인+상업적 label / red CRL 또는 중대 CMC·device 지연)",
+     "2027 미국 치료환자 등가 (green >200 / red <100; base 150)",
+     "2028 미국 치료환자 등가 (green >600 / red <300; base 450)",
+     "실현 연간 순가격 (green >$350K / red <$280K; base $330K)",
+     "상업 G&A 효율 (red 연환산 >$200M인데 매출 ~$200M 미만)",
+     "완전희석 분모 (green <275M / red >300M)"
+    ],
+    "atlas_stance": {
+     "contract": "v1",
+     "contract_source": "ATLAS_DERIVED",
+     "label": "ATTRACTIVE",
+     "label_basis": "IRR",
+     "valuation_mode": "Mode A — Option-led",
+     "ladder": [
+      {
+       "lo": null,
+       "hi": 4.2,
+       "tier": "AGGRESSIVE",
+       "src": "price_bands[0] Buy zone / 적극 관심"
+      },
+      {
+       "lo": 4.21,
+       "hi": 6.2,
+       "tier": "ATTRACTIVE",
+       "src": "price_bands[1] 조건부 관심"
+      },
+      {
+       "lo": 6.21,
+       "hi": 8.0,
+       "tier": "WATCH",
+       "src": "price_bands[2] 관망 또는 축소"
+      },
+      {
+       "lo": 8.01,
+       "hi": null,
+       "tier": "AVOID",
+       "src": "price_bands[3] Bull evidence 필요"
+      }
+     ],
+     "ref_price": 5.35,
+     "price_asof": "2026-09-01",
+     "hurdle": 0.15,
+     "hurdle_unit": "decimal",
+     "derived_note": "zone '조건부 관심'. 연환산 기대IRR 18.90% > 허들 15%이나 U/D 1.34로 Buy-zone(U/D>2) 미달. U/D2 트리거 $4.21·U/D1 트리거 $6.23."
+    }
+   },
+   "stance_state": {
+    "price": {
+     "value": 5.35,
+     "as_of": "2026-09-01",
+     "source": "deep_dive_pack_snapshot"
+    },
+    "zone": "ATTRACTIVE",
+    "gap_to_attractive_pct": -13.7,
+    "freshness": "FRESH",
+    "tripwire_status": "UNKNOWN",
+    "display_suppressed": false
+   }
   }
  ],
  "monthly_diff": {
-  "build": "UPDATE-6 (MODE B — 딥다이브 통합) 배치 6/6 (최종)",
-  "note": "헬스+아웃라이어 8종 통합(SHOP·NNN·ILMN 추가)+TEM 리프레시 무변경. B1-B6 사이클 완료. 티어 변경 0. §7A 승격 2·신설 5 + additive 역반영 + §3A 전파(전부 AMPLIFY/중립, 임계통과 0). + 후보 원장 구조화 이전(carry 문자열 → deep_dive_candidates/screening_recommendations/candidates_withheld 배열). 신규 후보 생성 아님 — 기존 승인 후보의 이전. + 거버넌스 v1.3 REVISIT 트랙 승인·PACK 스키마 선반영(type/trigger/status), TLN 조건부 등재.",
+  "build": "UPDATE-7 (MODE B — 딥다이브 통합) 배치 1~5 완료",
+  "note": "딥다이브 팩 28종 통관. §7A 승격 15 · 신설 10 · 재통관 2(LRCX·WMB) · 동결 재확인 1(TLN, 동일 날짜 팩). DEEP_DIVED 86→111, 노드 326→336. 티어 변경 0. §7B 통관 27건 전량 ATLAS_DERIVED로 아래 전량 공시. 후보 원장 대정산: NEW OPEN 5종(TSM·ASML·OKLO·BWXT·PWR) 전부 RESOLVED — 잔여 NEW OPEN 0. 전면 톱다운 미실행(B타입 정상). IND-05 HEAT 승격 근거가 티어 기준에 도달했으나 cap 포화 + B타입이라 차기 A타입 이관.",
   "flags": [
-   "PURR=아틀라스 택소노미 미대응 아웃라이어 → FIN-02 잠정 귀속(사용자 지시). 디지털자산 트레저리 전용 노드 도입은 차기 거버넌스 판정.",
-   "거버넌스 v1.3 개정 승인(2026-08-30): 딥다이브 후보 NEW/REVISIT 2트랙. 01 §3B·§7A·§8 패치 필요 — ATLAS_GOVERNANCE_PATCH_v1.3_REVISIT.md 참조."
+   "티어 변경 0 — 상향 근거가 축적된 IND-05·ITC-03·UTL-02는 HEAT cap 8/8 포화 및 B타입 전면스캔 부재로 전부 보류(차기 A타입 이관).",
+   "★가격·zone 어휘가 티어 판단 근거에 사용된 건 0건. 스탠스 리프레시(§4A)는 티어·전파·후보 정산이 전부 끝난 뒤 마지막 단계로 실행.",
+   "★ITC-03 카드 본문의 WFE 수치(2026 $135B/+9%)가 새 원본(SEMI 2026 $143.9B/+23.1%)과 어긋남 — 02 §4 직전 카드 본문 불가침에 따라 본문은 건드리지 않고 선행지표로 additive 반영 + known_debt 등재. 본문 정정은 A타입 몫.",
+   "★SNOW 관측가는 정규장 종가 $305.84 사용(팩이 시간외 $375.51을 'not regular close'로 명시). 이 때문에 기계적 zone(ATTRACTIVE)과 label(WATCH)이 갈림 — 차기 갱신에서 정규장 확인 필요.",
+   "★UBER는 팩 밴드에 72~82 공백이 있어 현재가 $76.78이 어느 칸에도 속하지 않음 → zone=UNKNOWN(보간 금지, §7B 제1·2조). gap은 attractive 상단 $72 기준 산출.",
+   "★ECP는 KPI 2건(식품 동일점포 −7.2%, 순금융부채 1,162M ILS)이 RED 임계 → tripwire_status=RED → display_suppressed=true(스탠스 보드에서 zone 강조 해제).",
+   "★기존 84개 DEEP_DIVED 노드의 관측 주가는 이번 세션에서 갱신하지 않음 — B타입 범위 밖이라는 명시적 판정(§1-3). 전부 as_of·source가 병기된 딥다이브 시점 스냅샷이며 freshness가 노후화를 표시한다. '낡은 가격을 최신인 척' 두는 상태는 아니라고 판정.",
+   "★직전 팩 결함 정산: stance_state.price.as_of 공란 8종 발견. 값이 있는 3종(LNG, IRM, NBIS)은 zone을 UNKNOWN으로 내림(§4A). 값 삭제 0건, as_of 임의 생성 0건. known_debt 등재."
   ],
   "upgrades": [],
   "downgrades": [],
   "node_promotions": [
-   {
-    "ticker": "ALNY",
-    "from": "SHALLOW",
-    "to": "DEEP_DIVED",
-    "industry": "HLT-02",
-    "summary": "RNAi. TTR FY26 $4.2~4.5B·미국 수요 Q2>2xQ1. nucresiran de-risking."
-   },
-   {
-    "ticker": "SHOP",
-    "from": "SHALLOW",
-    "to": "DEEP_DIVED",
-    "industry": "DIS-04",
-    "summary": "커머스 플랫폼. GMV +32%·Payments 68%. 밸류 시간가치 부족."
-   },
-   {
-    "ticker": "FIVE",
-    "from": "신설",
-    "to": "DEEP_DIVED",
-    "industry": "DIS-04",
-    "summary": "밸류 할인소매. comps +22.7%·거래 +18.5% 회복. 프리미엄 밸류."
-   },
-   {
-    "ticker": "HSHP",
-    "from": "신설",
-    "to": "DEEP_DIVED",
-    "industry": "IND-07",
-    "summary": "Newcastlemax 벌크. BCI $36.3k/day·가동률 99.7%. 운임 사이클."
-   },
-   {
-    "ticker": "PURR",
-    "from": "신설",
-    "to": "DEEP_DIVED",
-    "industry": "FIN-02(잠정)",
-    "summary": "디지털자산 트레저리(HYPE 29.4M). 택소노미 미대응 아웃라이어."
-   },
-   {
-    "ticker": "NNN",
-    "from": "신설",
-    "to": "DEEP_DIVED",
-    "industry": "RLE-01",
-    "summary": "넷리스 리테일 REIT. base fair $49.21·U/D 2.27x. RLE-01 COLD 역발상 감시."
-   },
-   {
-    "ticker": "ILMN",
-    "from": "신설",
-    "to": "DEEP_DIVED",
-    "industry": "HLT-04",
-    "summary": "NGS 리더. NovaSeq X 전환·소모품 74%·Gb +30%. 밸류 선반영."
-   }
+   "EME",
+   "FLR",
+   "J",
+   "KBR",
+   "MTZ",
+   "PWR",
+   "TSM",
+   "ASML",
+   "AMAT",
+   "OKLO",
+   "BWXT",
+   "NEE",
+   "NOW",
+   "PLTR",
+   "SNOW"
   ],
-  "node_corrections": [],
+  "node_corrections": [
+   "BWXT industries UTL-02 → UTL-02+IND-02 (해군 원자력=방산 이중 노출, 대표는 UTL-02 유지)",
+   "PWR industries IND-05+IND-03 유지(변경 없음) — 딥다이브가 IND-03(전력기기) 인접성을 확증"
+  ],
   "node_refreshes": [
-   {
-    "ticker": "TEM",
-    "industry": "HLT-04",
-    "result": "NO_CHANGE",
-    "summary": "신규 스탠스=WATCH/선별진입·$60~65 매력·Base IRR ~7%로 기존과 동일 → 무편집(§7A-4)."
-   }
+   "LRCX 재통관(§7A 4단계): 팩 260825→260905. 밴드 전면 교체(235/245-265/265-300/300-340/340+ → 250/250-270/270-330/330-380/380+), ref $310.17→$303.72, label_basis NONE→IRR(3.844%). label WATCH 불변.",
+   "WMB 재통관(§7A 4단계): 팩 260825→260902. 밴드는 동일하나 정량근거 신규 확보(확률가중 IRR 6.744%·DCF $63.02) → label_basis NONE→IRR. ref $71.63→$75.23. label WATCH 불변.",
+   "TLN 동결 재확인: 제출 팩(260827)이 이미 통관된 팩과 동일 날짜·동일 내용 → §7B 제3조(통관 시 1회 생성 후 동결)에 따라 atlas_stance 재생성하지 않음. 노드 무변경. ※기존 label(ATTRACTIVE)과 ref_price $307.67의 기계적 zone(WATCH, hold_watch 305~350)이 갈리는 상태가 유지됨 — 동결 조항상 이번 세션에서 고치지 않고 known_debt로 이월."
   ],
   "classification_decisions": [
-   "PURR=FIN-02 잠정 귀속(사용자 지시). 순수 디지털자산 트레저리로 아틀라스 산업 택소노미 직접 대응 없음 → outlier 플래그·전용 노드 도입은 차기 거버넌스.",
-   "FIVE=DIS-04(오프라인 할인소매)·SHOP=DIS-04(승격, 커머스 플랫폼)·HSHP=IND-07(해운)·NNN=RLE-01(넷리스 리테일 REIT)·ILMN=HLT-04(NGS 도구)."
+   "UBER = COM-03(대표, 마켓플레이스 플랫폼) + DIS-03(배달·외식) + IND-06(화물·라스트마일). 대표는 총예약 무게중심(Mobility+Delivery) 기준.",
+   "CAT = IND-04(대표, 건설·광산 기계) + IND-03(발전 패키지) + MAT-02(광산 장비). 2Q26 매출은 P&E $8.238B ≈ CI $8.346B로 근접 — 발전 레그가 CI를 넘기면 차기 갱신에서 대표 재지정 검토(트립와이어 등재).",
+   "AAPL = ITC-06(대표, 완제품·실리콘) + ITC-07(서비스).",
+   "SES = MAT-06(대표, 드론셀·전지소재) + IND-02(드론) + UTL-03(ESS). ESS가 현 매출 바닥이나 재평가 경로는 드론·소재이므로 대표는 소재 축에 둔다.",
+   "STEM = UTL-03(대표, 재생에너지 자산 제어) + ITC-07(SW).",
+   "ECP = DIS-04(대표) + STP-04(식품 소매 145점) + DIS-05(전기전자 소매 97점).",
+   "XE = UTL-02, MYRG = IND-05, ACM = IND-05(카드에는 이미 등재돼 있었으나 company_node가 없던 상태 — 노드 신설로 정합), SVRA = HLT-02."
   ],
   "card_reflections_additive": [
-   "승격 note enrich: HLT-02(ALNY)·DIS-04(SHOP). 신규 companies: HLT-04(ILMN)·DIS-04(FIVE)·IND-07(HSHP)·FIN-02(PURR)·RLE-01(NNN).",
-   "LI += HLT-04 'NGS 시퀀싱 전환·소모품(ILMN)' / IND-07 '케이프 운임 사이클(HSHP)'.",
-   "※ 02 §4 무결성락."
+   "IND-05: 선행지표 4개 추가(딥다이브 8종 잔고 하드넘버 / 전기공·배관공 공석 / 미 총건설 SAAR −3.2% / 마진 실현). 수요·공급 본문 무변경.",
+   "ITC-03: 선행지표 5개 추가(SEMI WFE 2026 $143.9B +23.1%→2028 $200B / ASML capa 계획 / 장비사 실적 인플렉션 / 첨단패키징·PDC >50% / 중국 노출). 본문 무변경(known_debt 참조).",
+   "ITC-02: 선행지표 3개 추가(TSMC 선단 믹스·수익성 / 월매출 / capex·점유).",
+   "UTL-02: 선행지표 5개 추가(SMR 규제 진척 / 고객 계약 강도 / 연료 병목 TRISO-X·HALEU / BWXT 잔고 / DC 전력 수요 배경).",
+   "UTL-01: 선행지표 3개 추가(대형부하 21GW/12GW · 규제자본 +9.3% · 신규 공급 파이프).",
+   "IND-03: 선행지표 3개 추가(★NEE 변압기 2030·개폐기 2029 선확보 / CAT 발전 소매 +72% / 가스터빈 4GW 확보).",
+   "ENE-02: 선행지표 4개 추가(RPO $30.7B / 프로젝트 파이프 / LNG 수출 경로 / ★2028~30 공급파 역풍).",
+   "UTL-03: 선행지표 3개 추가(미 스토리지 설치 / 제어 SW 화폐화 / NEER 개발 백로그).",
+   "ITC-07: 선행지표 3개 추가(수요 이원화 하드넘버 / ★회계FCF↔경제FCF 간극 / 시트 과금 이동).",
+   "ITC-06: 선행지표 2개 추가(★메모리 원가 전가 / 완제품 수요).",
+   "IND-04: 선행지표 2개 추가(CAT 잔고 $51B→$72.1B / 딜러 소매).",
+   "MAT-02: 선행지표 1개 추가(★구리 공급갭 전망 30%→25% 하향).",
+   "MAT-06 / HLT-02 / COM-03 / DIS-04: 각 1~2개 추가.",
+   "카드 companies에 신규 편입 17건(중복 귀속 포함). 기존 기업의 note만 딥다이브 결과로 보강 — chain_position·role은 무변경."
   ],
   "propagation_paths": [
-   "HLT-02(HEAT 유지): ALNY RNAi 수요 확증 → AMPLIFY. 이미 HEAT → 재조정 0.",
-   "HLT-04(WARM 유지): ILMN NGS 전환+TEM 진단 → 연구·진단 도구 수요 AMPLIFY. WARM 유지.",
-   "DIS-04(WARM 유지): SHOP GMV +32%·FIVE comps +22.7% → 소비 회복 포켓 AMPLIFY. WARM 유지.",
-   "IND-07(NEUTRAL 유지): HSHP 케이프 운임 현재 강세(BCI $36.3k)이나, UPDATE-5 IND-01 신조잔고發 향후 선복 공급과잉 2홉 약세 감시 유효 → 상충 신호로 NEUTRAL 유지.",
-   "FIN-02(WARM)·RLE-01(COLD): PURR(토큰 가격 지배·아웃라이어)·NNN(금리 민감·COLD 역발상) — 교차전파 미미, 티어 유지. 3홉 없음·임계통과 0."
+   "ITC-03(반도체장비, WFE 2026 $143.9B/+23.1%·2027 $175.3B — 직전 카드 $135B/+9% 대비 상향) →SUPPLIES_TO(H)→ ITC-02(파운드리, AMPLIFY: TSMC 2026 capex $60~64B가 그 상향의 수요측 원본) →DEMAND_COMOVES(M)→ ITC-05(메모리) [2홉 종료] · 임계 통과 0, 양 노드 HEAT 유지",
+   "ITC-03 →SUPPLIES_TO(H)→ ITC-05(메모리, MIXED: ASML 시스템 매출 로직:메모리 51:49·SK하이닉스 HBM4 양산·321단 NAND 램프·AMAT 첨단패키징 +50%는 수요 강도인 동시에 공급 응답의 실물 증거) · 티어 유지, peak_watch 근거 강화",
+   "ITC-05(HEAT) →SUPPLIES_TO(H)→ ITC-06(IT하드웨어, PRESSURE: AAPL 정규화 GM 49.3→48.1→가이 46.5%, 주된 요인 메모리 원가 — 부족의 청구서가 하류 세트 마진에 도달) →DEMAND_COMOVES(M)→ IND-03 [2홉 종료] · ITC-06 WARM 유지(원가 압박은 마진 이슈이지 수급 균형 전환 아님), 임계 통과 0",
+   "IND-03(전력기기, AMPLIFY: NEE가 개폐기 2029·변압기 2030까지 선확보 — 발주자가 4년치를 잠근다는 리드타임 병목의 직접 증거 + CAT 발전 소매 +72% YoY) →SUPPLIES_TO(H)→ UTL-01(전력유틸, AMPLIFY: FPL 규제자본 +9.3%·대형부하 심층협의 12GW) →SUPPLIES_TO(H)→ RLE-02(DC리츠) [2홉 종료] · 3노드 전부 기존 티어 유지, 임계 통과 0",
+   "TH-AI(테마) →THEME_DRIVES(M)→ IND-05(E&C, AMPLIFY: 딥다이브 8종의 잔고가 일제히 사상권 + 전기공 연 72,700명 공석으로 병목이 인력임을 확인) →SUPPLIES_TO(M)→ UTL-02(원자력 EPC 수요) [2홉 종료] · IND-05는 상향 증거가 티어 기준에 도달했으나 HEAT cap 8/8 포화 + B타입 전면스캔 부재로 승격 보류 → 차기 A타입 이관(부채 등재)",
+   "MAT-02(광업·전략광물, 구리 레그 PRESSURE: CAT 팩의 2035 구리 공급갭 전망이 2025 outlook 30% → 2026 outlook 25%로 하향) · 전략광물(희토류·텅스텐) 앵커가 HEAT를 지지하므로 산업 티어 HEAT 유지, 구리 레그 peak_watch 근거만 보강",
+   "ENE-02(미드스트림) →SUPPLIES_TO(M)→ ENE-04(LNG·가스인프라, 잠재 PRESSURE: 2025~30 FID 후 글로벌 LNG 증설 ~345bcm/yr·정점 2028 ~95bcm/yr → 2028~30 netback 스트레스 창) · 2026~27은 오히려 타이트하다는 팩 판정이라 임계 미달 — 감시 강화만 표기, ENE-04 WARM 유지",
+   "UTL-03(신재생, MIXED: 미 스토리지 2025말 43.6GW→1H26 +8.3GW로 설치기반은 급증하나 STEM 총ARR $61.1M→$62.4M로 SW 화폐화는 저한자릿수) · NEUTRAL 유지, '태양광·ESS 조여짐 vs 해상풍력 풀림' 분열 판정 불변"
   ],
   "watch_intensified": [
-   "IND-07(NEUTRAL) — 현재 케이프 운임 강세(HSHP)와 미래 신조 공급과잉(IND-01 2홉) 상충. 운임 지속성 vs 선복 인도 추적. 반전 미확정.",
-   "RLE-01(COLD) — NNN 넷리스 안정적이나 금리·리테일 크레딧 역풍. 역발상 감시 유지.",
-   "FIN-02 — PURR 디지털자산 트레저리 편입. 토큰 트레저리 코호트 확대 시 전용 분류 필요성 재검토."
+   "ITC-05(메모리) — 장비·패키징 공급 응답이 실물로 집행 중임이 3개 팩(ASML·AMAT·LRCX)에서 교차 확인. 동시에 AAPL 마진에서 가격 전가의 하류 흔적 확인 → peak_watch 강화",
+   "ENE-04(LNG) — 2028~30 공급파 netback 스트레스 창(WMB 팩). 현재 임계 미달이나 차기 A타입에서 balance 재점검 대상",
+   "MAT-02 구리 레그 — 공급갭 전망 하향(30%→25%)으로 직전 peak_watch 사유(컨센 분열·가격 −4.5%)에 근거 1개 추가",
+   "ITC-07 — 상위 플랫폼 3종은 소비량·플랫폼 과금으로 이미 이동해 '시트 과금 붕괴' 교란 플래그의 반대편 증거. 다만 NOW의 회계FCF↔경제FCF 간극(SBC 16%)은 주당 가치 측면의 새 감시축"
   ],
   "screening_recommendations": [
-   {
-    "industry": "IND-05",
-    "label": "DC-EPC 포켓",
-    "tier_context": "WARM(aggregate) / 포켓은 HEAT급",
-    "rationale": "DC 백로그 11.4개월·전력인프라 착공 +30%·DC착공 +190%. UPDATE-6 B3에서 POWL book-to-bill 3.0x·DC 수주 $800M로 EPC/전기설비 수요 교차확증.",
-    "net_exposure_shallow": [
-     {
-      "ticker": "PWR",
-      "status": "SHALLOW"
-     },
-     {
-      "ticker": "EME",
-      "status": "SHALLOW"
-     },
-     {
-      "ticker": "FIX",
-      "status": "NOT_IN_PACK — 노드 신설 필요"
-     },
-     {
-      "ticker": "STRL",
-      "status": "NOT_IN_PACK — 노드 신설 필요"
-     }
-    ],
-    "falsifier": "하이퍼스케일러 capex 가이던스 하향 또는 DC 착공 둔화",
-    "horizon": "수분기~1년",
-    "status": "OPEN",
-    "origin": "UPDATE-5 §5 (승인 후보 이전)"
-   },
-   {
-    "industry": "ITC-03",
-    "label": "반도체 장비 (HEAT 후보 2순위)",
-    "tier_context": "WARM(BALANCED·cap 포화 대기)",
-    "rationale": "SEMI WFE 2026 +23.1% $143.9B 상향 리비전(D2 선행지표↑·D3 capex 가이던스↑)·백로그 2027. 장비공급은 병목 아님으로 HEAT 미승격.",
-    "net_exposure_shallow": [
-     {
-      "ticker": "ASML",
-      "status": "SHALLOW"
-     },
-     {
-      "ticker": "AMAT",
-      "status": "SHALLOW"
-     },
-     {
-      "ticker": "KLAC",
-      "status": "SHALLOW"
-     }
-    ],
-    "falsifier": "파운드리·메모리 capex 가이던스 하향",
-    "horizon": "수분기",
-    "status": "OPEN",
-    "origin": "UPDATE-5 §5 (승인 후보 이전)"
-   },
-   {
-    "industry": "UTL-02",
-    "label": "원전 (HEAT 후보 1순위)",
-    "tier_context": "WARM(cap 8/8 포화·IND-01 강등 대기)",
-    "rationale": "발전측 corroboration 4건(VST·CCJ·LEU·CEG)·DC 전력수요·EPC 2홉 보강. UPDATE-6 B1 TLN 딥다이브(AWS 1,920MW PPA·PJM $325/MW-day·4GW)로 근거 추가 경화 — TLN은 소진, OKLO·BWXT 잔여.",
-    "net_exposure_shallow": [
-     {
-      "ticker": "OKLO",
-      "status": "SHALLOW"
-     },
-     {
-      "ticker": "BWXT",
-      "status": "SHALLOW"
-     },
-     {
-      "ticker": "TLN",
-      "status": "소진(B1 딥다이브 완료)"
-     }
-    ],
-    "falsifier": "SMR 인허가·상업화 지연 또는 DC 전력계약 미실현",
-    "horizon": "수분기~1년",
-    "status": "OPEN",
-    "origin": "UPDATE-5 §5 (승인 후보 이전)"
-   }
+   "IND-05(E&C) — 8종 딥다이브 결과 전량이 '수요 확증·가격 선반영'으로 수렴. 추가 스크리닝은 대장주가 아니라 하위공정(전문 전기시공 중소형·prefab·변전 EPC)에서 진행할 것을 권고. (신규 등재 아님 — 직전 권고의 방향 수정)",
+   "ITC-03 — 알파는 광범위 WFE가 아니라 첨단패키징·검사·테스트 하위(ONTO·CAMT·ADTTF)라는 직전 판정을 AMAT 팩(첨단패키징·PDC 각 >50%)이 재확인. 스크리닝 유니버스 유지.",
+   "UTL-02 — 발전측(CEG·VST·TLN)·연료측(CCJ·LEU)·부품측(BWXT)·신설측(OKLO·XE) 4개 레그 모두 딥다이브 도달. 스크리닝은 이제 '아직 안 본 곳'이 아니라 '가격 대기'가 논점 — 신규 스크리닝 권고 없음."
   ],
   "deep_dive_candidates": [
    {
@@ -15744,9 +17825,10 @@
     "rationale": "CoWoS·2nm 완판의 핵심 순노출. 캐비앳: 컨센 HIGH·모멘텀 가속(Axis③) → '진입 눌림 대기'. UPDATE-6 B2에서 ITC-06 광·네트워킹 수요가 상류 pull 확증.",
     "falsifier": "CoWoS 수급갭 0 수렴 또는 가동률 90% 미만·2nm 예약슬롯 개방",
     "horizon": "수분기(확장 지속)",
-    "verdict_log": "분기 사후 검토 — 미실시",
-    "status": "OPEN",
-    "origin": "UPDATE-5 §6 버킷C (승인 후보 이전)"
+    "verdict_log": "UPDATE-7에서 딥다이브 실행 완료 — verdict_log 배열에 사후 판정 기록",
+    "status": "RESOLVED",
+    "origin": "UPDATE-5 §6 버킷C (승인 후보 이전)",
+    "resolved_as_of": "2026-09-05"
    },
    {
     "ticker": "ASML",
@@ -15760,9 +17842,10 @@
     "rationale": "WFE 2026 +23.1% 상향 리비전의 병목 장비 순노출. cap 포화로 산업은 WARM 대기.",
     "falsifier": "파운드리·메모리 capex 가이던스 하향 또는 WFE 리비전 하향 전환",
     "horizon": "수분기~1년",
-    "verdict_log": "미실시",
-    "status": "OPEN",
-    "origin": "UPDATE-5 §5 큐 (승인 후보 이전)"
+    "verdict_log": "UPDATE-7에서 딥다이브 실행 완료 — verdict_log 배열에 사후 판정 기록",
+    "status": "RESOLVED",
+    "origin": "UPDATE-5 §5 큐 (승인 후보 이전)",
+    "resolved_as_of": "2026-09-05"
    },
    {
     "ticker": "OKLO",
@@ -15776,9 +17859,10 @@
     "rationale": "DC 전력수요發 SMR 신규 수요. TLN(기존 원전 '지금 있는 전력')과 대조되는 신설 레그 — 인허가·상업화 시점이 논제 핵심.",
     "falsifier": "SMR 인허가·상업화 지연 또는 DC 전력계약 미실현",
     "horizon": "1년+",
-    "verdict_log": "미실시",
-    "status": "OPEN",
-    "origin": "UPDATE-5 §5 순노출 (승인 후보 이전)"
+    "verdict_log": "UPDATE-7에서 딥다이브 실행 완료 — verdict_log 배열에 사후 판정 기록",
+    "status": "RESOLVED",
+    "origin": "UPDATE-5 §5 순노출 (승인 후보 이전)",
+    "resolved_as_of": "2026-09-05"
    },
    {
     "ticker": "BWXT",
@@ -15792,9 +17876,10 @@
     "rationale": "원자로 부품·해군 원자력의 기확립 공급자. UTL-02 HEAT 후보 근거와 IND-02(방산, HEAT·SHORTAGE) 이중 노출.",
     "falsifier": "해군·정부 수주 둔화 또는 SMR 부품 파이프라인 미실현",
     "horizon": "수분기~1년",
-    "verdict_log": "미실시",
-    "status": "OPEN",
-    "origin": "UPDATE-5 §5 순노출 (승인 후보 이전)"
+    "verdict_log": "UPDATE-7에서 딥다이브 실행 완료 — verdict_log 배열에 사후 판정 기록",
+    "status": "RESOLVED",
+    "origin": "UPDATE-5 §5 순노출 (승인 후보 이전)",
+    "resolved_as_of": "2026-09-05"
    },
    {
     "ticker": "PWR",
@@ -15808,9 +17893,10 @@
     "rationale": "DC-EPC·전력인프라 착공의 최대 순노출. B3(HUBB·POWL) 전기설비 수요 확증과 동일 capex 풀 공유.",
     "falsifier": "하이퍼스케일러 capex 가이던스 하향 또는 DC/전력 착공 둔화",
     "horizon": "수분기~1년",
-    "verdict_log": "미실시",
-    "status": "OPEN",
-    "origin": "UPDATE-5 §5 순노출 (승인 후보 이전)"
+    "verdict_log": "UPDATE-7에서 딥다이브 실행 완료 — verdict_log 배열에 사후 판정 기록",
+    "status": "RESOLVED",
+    "origin": "UPDATE-5 §5 순노출 (승인 후보 이전)",
+    "resolved_as_of": "2026-09-05"
    },
    {
     "ticker": "TLN",
@@ -15835,62 +17921,32 @@
    }
   ],
   "candidates_consumed": [
-   "HLT-02(ALNY)·HLT-04(ILMN)·DIS-04(SHOP·FIVE)·IND-07(HSHP)·FIN-02(PURR)·RLE-01(NNN) 딥다이브 완료. B1-B6 사이클 종료."
+   "TSM(버킷C) → RESOLVED — 조건부 관심/관망",
+   "ASML(버킷C) → RESOLVED — 회피/관망",
+   "OKLO(버킷A) → RESOLVED — WATCH/실행 선반영",
+   "BWXT(버킷C) → RESOLVED — WATCH/조건부 관심",
+   "PWR(버킷C) → RESOLVED — AVOID/축소 검토",
+   "★잔여 NEW OPEN 후보 = 0. §3B에 따라 '리스트를 채우기 위한' 신규 등재는 금지이며, B타입은 신규 후보를 생성하지 않는다(후보 원장 규율). 후보가 마르는 것은 딥다이브를 늘릴 신호가 아니라 산업 스캔 주기를 당길 신호 → 차기 A타입 전면스캔 우선순위 상승."
   ],
   "candidates_withheld": [
-   {
-    "industry": "ITC-08",
-    "label": "스테이블코인 레그",
-    "bucket": "A — 신규 수요",
-    "tickers": [
-     "V",
-     "MA"
-    ],
-    "reason": "후보 자격은 있으나 컨센서스 상승으로 '시장 저인지' 조건 약화(Axis③) → 보류·감시.",
-    "status": "WITHHELD",
-    "origin": "UPDATE-5 §6 버킷A (승인 판정 이전)"
-   },
-   {
-    "industry": "ENE-04",
-    "label": "LNG 유니버스",
-    "tickers": [
-     "SRE",
-     "NEXT",
-     "BKR",
-     "KMI"
-    ],
-    "reason": "유니버스 thin·BKR 다각화로 순도 저하. 인접 순노출은 IND-01(LNG선)·IND-05(터미널 EPC) 엣지 경유.",
-    "status": "WITHHELD",
-    "origin": "UPDATE-5 carry ene04_universe (이전)"
-   },
-   {
-    "industry": "COLD 7종",
-    "label": "버킷 B — 바닥 반전",
-    "tickers": [
-     "ARLP(소진)",
-     "BTU",
-     "HCC",
-     "AMR"
-    ],
-    "reason": "확증 바닥반전 신호 점등 0. UPDATE-6 B3 ARLP 딥다이브도 미점등 확인(price-cost green이나 구조적 역풍). 역발상 감시목록 유지.",
-    "status": "WITHHELD",
-    "origin": "UPDATE-5 §6 버킷B + B3 검증"
-   }
+   "IND-05 하위공정 후보(전문 전기시공 중소형 등) — 방향은 식별했으나 종목 등재는 A타입 스캔에서. B타입 신규 등재 금지 규율 준수.",
+   "ITC-05(메모리)·IND-01(조선) 커버리지 구멍 후보 — 두 HEAT 산업 모두 DEEP_DIVED 0. 후보 등재의 근거는 충분하나 이번 세션에 팩이 없어 미실행. 차기 딥다이브 1순위.",
+   "REVISIT 신규 등재 0 — 이번 갱신에서 tier·balance 변경이 0이라 TIER_CHANGE/BALANCE_CHANGE 미발생, THESIS_STALE은 111종 전부 2026-08~09로 경과 0, 이번에 통관한 27종은 방금 딥다이브라 재소환 대상 아님. 관측 없는 추정 등재는 규율 위반이므로 미등재."
   ],
   "peak_watch": [
    {
     "id": "ITC-05",
     "name": "메모리(DRAM/NAND)",
     "tier": "HEAT",
-    "reason": "계약가 QoQ 증가율 단계 둔화(+90→+30→+13~18%)+소비자 수용한계 — 역신호 2개로 강화(직전 1개). 단 balance는 HBM 완판·공급상한으로 SHORTAGE 유지 → 반전 아닌 변화율 롤오버. heat_score 8.",
-    "tripwire": "계약가 MoM/QoQ 마이너스 전환 또는 HBM4 신규 capa 조기 소진",
+    "reason": "직전 사유(계약가 QoQ 증가율 단계 둔화 +90→+30→+13~18%) 유지 + UPDATE-7 신규: 공급 응답이 실물로 집행 중 — ASML 시스템 매출 로직:메모리 51:49(메모리 비중 상승)·SK하이닉스 HBM4 양산 개시 및 321단 NAND 램프·Micron 싱가포르 HBM 패키징 CY2027 기여·AMAT 첨단패키징 CY26 +50%. balance는 여전히 SHORTAGE이나 '공급이 응답하지 않는다'는 전제가 약해짐. 추가로 AAPL 정규화 GM 49.3→46.5%(가이)로 가격 전가가 하류 수요파괴 압력으로 전환되는 경로도 관측 개시.",
+    "tripwire": "계약가 MoM/QoQ 마이너스 전환 또는 HBM4 신규 capa 조기 소진 (신규 추가: 세트 업체 GM 압박이 주문 하향으로 전환되는지)",
     "carry_forward": true
    },
    {
     "id": "IND-01",
     "name": "조선",
     "tier": "HEAT",
-    "reason": "신조선가지수 평탄화(185.01→185.15)+한국 발주점유율 잠식(중국 72%). 잔고 17년최고·LNG FID 웨이브가 지지 → 반전 아닌 모멘텀 평탄화. heat_score 7(최약 인컴번트 3파전) — 차기 로테이션-아웃 최유력.",
+    "reason": "신조선가지수 평탄화(185.01→185.15)+한국 발주점유율 잠식(중국 72%). 잔고 17년최고·LNG FID 웨이브가 지지 → 반전 아닌 모멘텀 평탄화. heat_score 7(최약 인컴번트) — 차기 로테이션-아웃 최유력. ★UPDATE-7 신규 증거 0(조선 딥다이브 팩 미제출) — 커버리지 구멍 그대로.",
     "tripwire": "신조선가지수 하락 전환 또는 한국 LNG 100척 발주 미실현",
     "carry_forward": true
    },
@@ -15898,18 +17954,18 @@
     "id": "MAT-02",
     "name": "광업·전략광물(구리 레그)",
     "tier": "HEAT",
-    "reason": "구리 레그 deficit/surplus 컨센 분열(Jefferies 적자 vs Macquarie 흑자)·가격 6월대비 −4.5%. 전략광물 레그(희토류·텅스텐 P1)가 HEAT 앵커라 산업 티어는 HEAT 유지, 구리 레그만 감시.",
-    "tripwire": "LME 재고 추세 반전+현물 프리미엄 소멸 동시",
+    "reason": "구리 레그 deficit/surplus 컨센 분열·가격 6월대비 −4.5%에 더해, CAT 팩에서 2035 구리 공급갭 전망이 2025 outlook 30% → 2026 outlook 25%로 하향된 것을 확인(역신호 2개로 강화). 전략광물 레그(희토류·텅스텐 P1)가 HEAT 앵커라 산업 티어는 HEAT 유지, 구리 레그만 감시.",
+    "tripwire": "LME 재고 추세 반전+현물 프리미엄 소멸 동시 (신규 추가: 2027 outlook에서 공급갭 추가 하향)",
     "carry_forward": true
    }
   ],
-  "coverage_honesty": "MODE B 배치 6/6(최종). 전면 톱다운 미실행(정상). 티어 무변경. 하드넘버 7개 원본 팩+ILMN 인컨텍스트 대조(§1-4). B1-B6 딥다이브통합 사이클 완료. 후보 원장은 UPDATE-5 승인분을 배열로 이전(신규 생성 0, HUBB·TLN 소진 반영).",
+  "coverage_honesty": "MODE B 배치 1~5(28팩). 전면 톱다운 미실행(정상). 티어·balance 변경 0. 하드넘버는 28개 원본 팩 전량 대조(§1-4) — 카드·deep_dive_ref·선행지표에 들어간 수치는 모두 팩 원문에서 전사. §3A 전파는 인바운드(통합 노드가 속한 산업)에서 출발해 2홉까지 실행, 임계 통과 0. 아웃바운드 전면 2홉 워크는 미실행(A타입 몫, 부채 등재). 후보 원장은 NEW OPEN 5종 전부 소진, 신규 등재 0. 스탠스 리프레시는 티어·전파·후보 정산 완료 후 마지막 단계로 실행했고, 이번 세션에 팩이 들어온 27종만 관측가를 갱신했다(기존 84종 미갱신 — 명시적 판정).",
   "next_session_carry": {
-   "full_scan_pending": "RESOLVED(UPDATE-5): 56종 톱다운 전면스캔 실행 완료. | 차기 정식 A타입 월간에서 heat_score 재산정·UTL-02 로테이션 재판정.",
+   "full_scan_pending": "★차기 A타입 최우선. UPDATE-7에서 상향 근거가 티어 기준에 도달했으나 cap 포화로 보류된 산업이 3개 누적(IND-05·ITC-03·UTL-02) + NEW 후보 원장 잔고 0 → §3B 규율상 '후보가 마르면 스캔 주기를 당긴다'에 해당. heat_score 재산정 및 8슬롯 로테이션 재판정 필요.",
    "propagation_debt": "RESOLVED(UPDATE-5): §3A 아웃바운드 2홉 워크 실행, 임계통과 노드 0(감시강화만).",
-   "utl02_rotation": "UPDATE-6 B1: TLN 딥다이브로 HEAT후보1 근거 추가 경화(AWS 1,920MW·PJM $325/MW-day·4GW). 단 cap 8/8·IND-01(score7) 강등 미개방 → UTL-02 WARM 유지. 조건부 승격 체인 불변. heat_score 재산정은 차기 정식 월간(A타입) 몫.",
-   "itc03_heat_queue": "ITC-03 WFE+23%(D2·D3)로 HEAT급 근거이나 balance BALANCED+cap 포화로 WARM 유지. HEAT 후보 큐 2순위(score 3).",
-   "peak_watch_carry": "ITC-05·IND-01·MAT-02(구리레그) peak_watch 이월. tripwire 점등 시 차기 강등 검토.",
+   "utl02_rotation": "갱신(UPDATE-7). UTL-02는 발전(CEG·VST·TLN)·연료(CCJ·LEU)·부품(BWXT)·신설(OKLO·XE) 4개 레그 전부 딥다이브 도달 — HEAT 후보 1순위 근거가 5번째 corroboration까지 축적. 단 cap 8/8·IND-01(score 7) 강등 미개방으로 WARM 유지. 조건부 승격 체인 불변: IND-01 신조선가 하락 전환 → 강등 → 슬롯 개방 → UTL-02 승격 → TLN REVISIT 자동 OPEN.",
+   "itc03_heat_queue": "갱신(UPDATE-7). 근거 대폭 경화 — SEMI WFE 2026 $143.9B(+23.1%)·2027 $175.3B(+21.8%)·2028 $200B, ASML 2027 EUV 오더 사실상 전량 수령·capa +30%, LRCX FY26 시스템 +29.5%. 직전 카드 본문 수치($135B/+9%)와 어긋나므로 A타입에서 본문 정정 필수. balance BALANCED 재점검 + HEAT 후보 큐 2순위 유지.",
+   "peak_watch_carry": "ITC-05·IND-01·MAT-02(구리레그) 이월. UPDATE-7에서 ITC-05는 '공급 응답이 실물 집행 중'(ASML 메모리 49%·SK하이닉스 HBM4 양산·AMAT 첨단패키징 +50%)과 '가격 전가의 하류 마진 압박'(AAPL GM 49.3→46.5% 가이) 두 축이 추가돼 강화. MAT-02는 CAT 팩의 구리 공급갭 전망 30%→25% 하향으로 역신호 1개 추가.",
    "multi_attribution_note": "다중귀속 트립와이어(RIOT/UUUU/HOOD/BE)는 기업 매출 무게중심 이벤트 → 톱다운 스캔 아닌 해당 기업 딥다이브 갱신(MODE B)에서 검증 대상. 이번 전면스캔은 산업수준 강제 재지정 사유 미발견 → 대표산업 현행 유지·트립와이어 이월.",
    "unapproved_flags": "미승인 플래그 2건(조용히 생성 안 함): (1) 신규 테마 후보 'AI가 인컴번트 SW·광고 모델 재편'(ITC-07+COM-03 연결), (2) 엣지 TH-AI→IND-05 M→H 상향 후보(DC건설이 E&C 성장엔진화). 차기 승인 판정.",
    "ene04_universe": "ENE-04 스크리닝 유니버스 5종(LNG·SRE·NEXT·BKR·KMI). BKR은 다각화로 순도 저하 — 인접 순노출은 IND-01(LNG선: 329180.KS·042660.KS·삼성중공업)+IND-05(LNG터미널 EPC: FLR·KBR·J) 엣지 경유.",
@@ -15921,14 +17977,19 @@
    "mat01_watch": "CLF 딥다이브로 MAT-01 사이클 인플렉션 초기신호. Q3'26 EBITDA ≥$500M+FCF 지속 확증 시 차기 A타입에서 NEUTRAL→WARM 검토.",
    "itc07_theme": "ITC-07 NEUTRAL 유지. 사이버보안=회복탄력 포켓 확증. 'AI가 인컴번트 SW·광고 재편' 테마(ITC-07+COM-03) 근거 축적 — 차기 A타입 승인 판정 대기.",
    "itc04_watch": "ITC-04 WARM 유지. SiC/GaN 파워반도체(WOLF·NVTS) 조정 국면(공급과잉·가격침식). WOLF 매출 재가속+GM 인플렉션 시 차기 A타입에서 코호트 재점검.",
-   "cycle_complete": "UPDATE-6(MODE B 딥다이브 통합) 완료 — 신규노드 25 + 승격 다수, DEEP_DIVED 54→86. 다음은 정식 A타입 월간 톱다운(전면 재스캔) 또는 추가 딥다이브 통합.",
+   "cycle_complete": "UPDATE-7(MODE B 딥다이브 통합) 완료 — 신설 10 + 승격 15 + 재통관 2, DEEP_DIVED 86→111. 다음은 정식 A타입 월간 톱다운(전면 재스캔)을 강력 권고(후보 원장 잔고 0 + HEAT 승격 대기 3건 누적).",
    "deferred_to_next_A_scan": [
-    "heat_score 재산정·UTL-02 로테이션 재판정(IND-01 강등 조건 확인).",
+    "heat_score 재산정 · 8슬롯 로테이션 재판정(IND-01 강등 조건 확인).",
+    "★IND-05 balance BALANCED→SHORTAGE(포켓) 전환 및 HEAT 승격 판정 — UPDATE-7 8종 딥다이브 근거.",
+    "★ITC-03 카드 본문 WFE 수치 정정($135B/+9% → $143.9B/+23.1%) + balance 재점검 + HEAT 승격 판정.",
+    "UTL-02 HEAT 승격 판정(승격 시 TLN REVISIT 자동 OPEN 전환).",
+    "ENE-04 balance 재점검 — 2028~30 글로벌 LNG 공급파 netback 스트레스(WMB 팩).",
+    "ITC-06 — 메모리 원가 전가가 마진에서 수요로 넘어가는지(AAPL GM 궤적) 재점검.",
     "MAT-01(CLF 턴어라운드) NEUTRAL→WARM 승격 검토(Q3'26 EBITDA ≥$500M+FCF 지속).",
-    "테마 승인 판정: 'AI가 인컴번트 SW·광고 모델 재편'(ITC-07+COM-03) — B4로 근거 축적.",
-    "ITC-04 SiC/GaN 파워반도체 코호트 재점검(WOLF 매출 재가속+GM 인플렉션).",
-    "ITC-06 balance 재점검(AI 네트워킹·광 수요 강도 vs BALANCED).",
-    "PURR 디지털자산 트레저리 전용 분류 도입 여부."
+    "테마 승인 판정: 'AI가 인컴번트 SW·광고 모델 재편'(ITC-07+COM-03) — NOW 회계FCF↔경제FCF 간극이 근거 추가.",
+    "ITC-04 SiC/GaN 파워반도체 코호트 재점검 / ITC-06 balance 재점검 / PURR 분류.",
+    "후보 선별 엔진 개선(축③ 가중·버킷B·하위공정) — verdict_log 코호트 교훈 반영.",
+    "전 종목 스탠스 가격 전면 리프레시(§4A)."
    ],
    "candidate_ledger_note": "후보 원장은 PACK 배열이 단일 진실원(single source of truth). carry 문자열은 포인터만 유지 — 신규 후보 생성은 A타입 톱다운 스캔에서만. v2.2: 후보 원장에 NEW/REVISIT 2트랙 스키마 적용(거버넌스 v1.3). NEW 5종 OPEN + REVISIT 1종 PENDING_TRIGGER.",
    "revisit_track": {
@@ -15943,6 +18004,235 @@
     "STEP 3 tripwire 필터: STEP1·2에서 걸린 노드에 한해 실적 하드넘버 확인 → TRIPWIRE 판정. 우선 확인 대상: CLF(Q3'26 EBITDA ≥$500M+FCF, MAT-01 티어 연동)·WOLF(매출 재가속+GM 인플렉션)·ZS(net-new ARR 14% yellow)·NTSK(NRR 113% yellow)·COHR(FCF -$869M 정상화)·POWL(book-to-bill ex-mega ≥1.2x).",
     "STEP 4 정원 컷: 강도순 상위 5종만 OPEN. 나머지는 미등재(다음 사이클 재평가).",
     "STEP 5 QA: type/trigger/status 필드 완비·REVISIT OPEN ≤5·가격/리스트공백 사유 0건 검증."
+   ],
+   "ind05_heat_queue": "★신규(UPDATE-7). IND-05 딥다이브 8종에서 D1·D2·S3 증거가 동시 확보: 잔고 일제 사상권(PWR RPO $33.55B·EME +43.9%·MTZ $21.39B·MYRG $3.16B), 병목이 인력임을 BLS 하드넘버로 확인(전기공 72,700·배관공 42,000 연간 공석), 마진 실현(EME 전기 13.9%·MYRG C&I 3.2%→8.5%). 총건설 SAAR는 −3.2%인데 전력·DC 포켓만 조여지는 분열 구조 → balance BALANCED→SHORTAGE(포켓) 전환 검토가 차기 A타입 판정 대상. cap 8/8 포화로 HEAT 후보 큐 3순위 등재.",
+   "coverage_gap": "★미해소 이월. HEAT 8종 중 ITC-05(메모리)·IND-01(조선)이 여전히 DEEP_DIVED 0. 이번 28팩에도 해당 산업 팩 없음. 차기 딥다이브 1순위이며, 스탠스 보드 ③블록(커버리지 구멍)에 계속 노출된다.",
+   "stance_customs_debt": "레거시 15종이 여전히 atlas_stance 미보유(FSLR·CRWD·NFLX·COST·S·SAIL·OII·TDW·ARLP·PANW·FTNT·ZS·NTSK·HSHP·NNN). §7B는 팩 통관 시 생성이므로 소급 통관하려면 해당 원본 팩 재제출이 필요 — 임의 생성 금지. 111종 중 96종 통관 완료(86.5%).",
+   "tln_label_debt": "TLN atlas_stance의 label(ATTRACTIVE)이 ref_price $307.67의 기계적 zone(WATCH, hold_watch 305~350) 및 팩 zone 원문('조건부 관심 / 관망 우위')과 어긋남. §7B 제3조 동결로 이번 세션에서 수정하지 않음. 새 날짜의 TLN 팩이 들어오면 재통관에서 자동 해소된다.",
+   "price_refresh_scope": "이번 세션 관측가 갱신 대상은 팩이 들어온 27종뿐. 나머지 84종은 딥다이브 시점 스냅샷을 as_of·source 병기 상태로 유지(zone UNKNOWN 강등 미적용). 판단 근거: §4A의 'zone=UNKNOWN 강등'은 낡은 값을 최신인 척 두는 것을 막기 위한 조항이고, 현 상태는 as_of가 병기돼 그 위험이 없으며, B타입에서 전 종목 시세 재관측은 전면스캔 금지와 같은 층위의 범위 초과다. 차기 A타입에서 전면 리프레시 권고.",
+   "candidate_engine_lesson": "★verdict_log 신규: UPDATE-5 후보 코호트 5종의 사업 논제 적중률 5/5, 가격 매력 적중률 0/5. '산업을 데운 트리거의 최대 순노출 기업'은 시장이 가장 먼저 찾아낸 기업이기도 하다는 계통 오차. 차기 A타입 후보 선별에서 (a) 축③ 가중 실질화, (b) 버킷 B(바닥 반전) 비중 확대, (c) 대장주 대신 인접 하위공정 선호를 반영할 것.",
+   "cat_attribution_tripwire": "CAT 2Q26 P&E $8.238B ≈ CI $8.346B — 발전 레그가 건설을 넘기면 대표산업 IND-04→IND-03 재지정 검토."
+  },
+  "stance_customs_v1_5": {
+   "note": "§7B 제5조 — contract_source=ATLAS_DERIVED 항목 전량 공시(요약·샘플링 금지). 27건 전부 ATLAS_DERIVED이며 DDOS_NATIVE 0건. 통관에서 수행한 연산은 단위 정규화(ASML expected_irr 6.83 → 0.0683)뿐이며 그 외 산술 0건.",
+   "tag_convention": "사다리 tier 태그는 '싼 쪽이 더 매력적'이라는 단조성을 지키도록 부여하며, 각 칸의 src에 팩 원래 키 이름을 그대로 남겨 역추적 가능하게 한다. label은 팩의 zone 원문을 정규화한 값이며(§5A 원문 우선), stance_state.zone은 관측가와 사다리의 기계적 대조 결과다. 둘이 갈리는 경우는 아래 note에 개별 표기.",
+   "items": [
+    {
+     "ticker": "ACM",
+     "label": "AGGRESSIVE",
+     "label_basis": "UD_RATIO",
+     "zone": "AGGRESSIVE",
+     "gap_to_attractive_pct": -13.5,
+     "derived_note": "zone 'BUY ZONE / 단계적 비중 확대'. U/D 3.19·기대IRR 29.3%(12M)·EV $89.47. 밴드 5칸 그대로 전사."
+    },
+    {
+     "ticker": "EME",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "zone": "WATCH",
+     "gap_to_attractive_pct": 8.8,
+     "derived_note": "zone 'HOLD / WAIT FOR BETTER ENTRY'. IRR 6.56%·EV $676.53·U/D 2.55. 허들은 팩의 '10–15% single-stock' 하단 전사."
+    },
+    {
+     "ticker": "FLR",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "zone": "WATCH",
+     "gap_to_attractive_pct": 0.5,
+     "derived_note": "zone 'WATCH / 관망'. IRR 11.5%·EV $52.71·U/D 1.0. ★사다리 공백 45~46(팩 원문 그대로). U/D>2 트리거 $47.87."
+    },
+    {
+     "ticker": "J",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "zone": "WATCH",
+     "gap_to_attractive_pct": 8.6,
+     "derived_note": "zone '조건부 관심 / 관망-매수 경계'. 가중미래가치 IRR 12.38%·시나리오단순가중 10.7%·U/D 2.61. 12% 허들 공정가 $153.55."
+    },
+    {
+     "ticker": "KBR",
+     "label": "ATTRACTIVE",
+     "label_basis": "IRR",
+     "zone": "ATTRACTIVE",
+     "gap_to_attractive_pct": -15.5,
+     "derived_note": "zone '매수 우위'. 연환산 IRR 35.6%(base 36.3%)·U/D 2.32(base)/7.04(bull)·EV $59.03. ★사다리 공백 65~70(팩 원문 그대로). 2x U/D 트리거 $39.02."
+    },
+    {
+     "ticker": "MTZ",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "zone": "WATCH",
+     "gap_to_attractive_pct": 4.8,
+     "derived_note": "zone '조건부 관심'. IRR 14.07%·U/D 2.8·EV $328.1·base FV $346.0. ★팩은 230 초과 구간 밴드를 명시하지 않아, zone 원문('조건부 관심'=현재가 위치)을 (230,∞) 칸으로 전사. 허들은 '12-15%' 하단."
+    },
+    {
+     "ticker": "MYRG",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "zone": "WATCH",
+     "gap_to_attractive_pct": 7.1,
+     "derived_note": "zone 'WATCH'. IRR 8.93% vs 허들 12%·U/D 2.02·EV(2028) $359.75·허들 PV $275.84."
+    },
+    {
+     "ticker": "PWR",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "zone": "AVOID",
+     "gap_to_attractive_pct": 15.9,
+     "derived_note": "zone 'AVOID / 기존 보유 시 축소 검토'. IRR 8.24%·U/D 0.523·EV $514.65. ★사다리 공백 450~460, WATCH 칸 없음(팩이 정의하지 않음). U/D2 트리거 $447.47. 허들은 '10–15%' 하단."
+    },
+    {
+     "ticker": "TSM",
+     "label": "WATCH",
+     "label_basis": "EV",
+     "zone": "WATCH",
+     "gap_to_attractive_pct": 14.8,
+     "derived_note": "★통화 NTD(2330.TW 기준) — 밴드·주가 모두 NT$. zone '조건부 관심 / 관망에 가까운 관심'. 확률가중 FV NT$2,585·U/D 1.53. 팩의 expected_irr은 수치가 아니라 서술('허들 부근~낮은 두 자릿수')이라 IRR을 basis로 쓰지 않고 EV 사용, 허들 null."
+    },
+    {
+     "ticker": "ASML",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "zone": "AVOID",
+     "gap_to_attractive_pct": 22.3,
+     "derived_note": "★통화 EUR. zone '회피 / 관망'. IRR 6.83%(단위 정규화 6.83→0.0683)·U/D 0.7·base DCF €1,337.15(민감도 €1,229~1,472). ★팩이 명시한 밴드는 attractive_entry 1개뿐 — AGGRESSIVE·WATCH 칸을 만들지 않고 공백으로 둠(제1조)."
+    },
+    {
+     "ticker": "AMAT",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "zone": "WATCH",
+     "gap_to_attractive_pct": 5.7,
+     "derived_note": "zone 'WATCH / NEUTRAL'. IRR 7.0%·EV $425.2(갭 −6.49%). 팩에 선택허들 수치 명시 없어 hurdle null."
+    },
+    {
+     "ticker": "LRCX",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "zone": "WATCH",
+     "gap_to_attractive_pct": 12.5,
+     "derived_note": "zone '관망 / 조건부 매수'. IRR 3.844%·EV $324.44·12% 허들 진입가 $266.08. ★재통관(§7A 4단계): 직전 팩 260825($310.17, 사다리 235/245-265/265-300/300-340/340+, label_basis NONE) → 새 팩 260905로 밴드·근거 전면 교체, label_basis NONE→IRR."
+    },
+    {
+     "ticker": "OKLO",
+     "label": "WATCH",
+     "label_basis": "EV",
+     "zone": "WATCH",
+     "gap_to_attractive_pct": 12.5,
+     "derived_note": "zone 'WATCH_HOLD_EXECUTION_PRICED'. 중심 공정가 $32.79(현재가 하회). 팩이 'expected_irr은 단일 rate로 무의미'라고 명시 → basis EV, hurdle null(프로젝트 10%·pre-COD 12%는 할인율이지 선택허들이 아님)."
+    },
+    {
+     "ticker": "BWXT",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "zone": "WATCH",
+     "gap_to_attractive_pct": 5.4,
+     "derived_note": "zone 'WATCH / 조건부 관심'. price IRR 11.00%(총수익 11.68%)·EV $148.78(배당포함 $151.53)·U/D 3.89. 다중귀속: UTL-02(대표)+IND-02(해군 원자력)."
+    },
+    {
+     "ticker": "NEE",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "zone": "WATCH",
+     "gap_to_attractive_pct": 2.3,
+     "derived_note": "zone '관망 + 매력 가격 밴드'. IRR ~9.5%·12M U/D 1.54·SOTP base $82.8. ★사다리 공백 <75 및 90~95(팩이 정의하지 않음). U/D>2 트리거 ~$80.23·12% IRR 트리거 ~$74.61."
+    },
+    {
+     "ticker": "XE",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "zone": "AVOID",
+     "gap_to_attractive_pct": 25.7,
+     "derived_note": "zone 'WATCH / wait for price or de-risking evidence'. 5년 IRR 6.95%·EV $13.68·Bull Execution U/D 0.54. ★label(WATCH, 원문 우선)과 기계적 zone(AVOID)이 경계에서 갈림 — 현재가 $17.22가 밴드 상단 $17.00을 1.3% 초과. §5A '원문 우선' 적용."
+    },
+    {
+     "ticker": "WMB",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "zone": "WATCH",
+     "gap_to_attractive_pct": 17.5,
+     "derived_note": "zone 'WATCH / HOLD'. ★재통관(§7A 4단계): 직전 팩 260825($71.63, label_basis NONE)에서 밴드는 동일하나 정량근거가 새로 확보 — 확률가중 IRR 6.744%·DCF $63.02·10.5% 할인 PV $65.64 → label_basis NONE→IRR. 팩에 선택허들 명시 없어 hurdle 유지 null."
+    },
+    {
+     "ticker": "STEM",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "zone": "WATCH",
+     "gap_to_attractive_pct": 27.1,
+     "derived_note": "zone 'WATCH / SPECULATIVE ONLY'. IRR 13.29% @$5.72·2029 기대 주당 $8.58·실패 시나리오 $0. ★최저 밴드가 'speculative accumulate'라 AGGRESSIVE 칸을 만들지 않음(팩이 적극구간을 정의하지 않았고 포지션 사이징에 중대 실패확률 가정을 요구). 허들은 '10-15%' 하단."
+    },
+    {
+     "ticker": "SES",
+     "label": "WATCH",
+     "label_basis": "EV",
+     "zone": "WATCH",
+     "gap_to_attractive_pct": 30.6,
+     "derived_note": "zone(market.stance) 'HOLD / WAIT FOR PROOF'. 확률가중 주당 $0.426·base $0.30·요구수익률 20%(팩 required_return_pct 전사). 다중귀속: MAT-06(대표)+IND-02(드론)+UTL-03(ESS)."
+    },
+    {
+     "ticker": "NOW",
+     "label": "ATTRACTIVE",
+     "label_basis": "IRR",
+     "zone": "ATTRACTIVE",
+     "gap_to_attractive_pct": -9.0,
+     "derived_note": "zone '조건부 관심 / 분할매수 우위'(conviction medium). 기대IRR 18M 13.7%·24M 10.1%·EV $165.55. 팩에 선택허들 수치 없어 hurdle null."
+    },
+    {
+     "ticker": "PLTR",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "zone": "AVOID",
+     "gap_to_attractive_pct": 55.2,
+     "derived_note": "zone 'AVOID / WATCH FOR PRICE'. IRR 3.11% vs 요구수익률 12%·EV $119.88·base $105.88·Bull Execution $159.73."
+    },
+    {
+     "ticker": "SNOW",
+     "label": "WATCH",
+     "label_basis": "EV",
+     "zone": "ATTRACTIVE",
+     "gap_to_attractive_pct": -10.0,
+     "derived_note": "zone 'WATCH / HOLD'. 확률가중 가치 $352.4. ★관측가는 정규장 종가 $305.84를 사용(팩이 시간외 $375.51을 'overnight indication, not regular close'로 명시). 이 때문에 기계적 zone(ATTRACTIVE)과 label(WATCH)이 갈림 — 팩 스탠스는 시간외 가격 기준이므로 원문 우선(§5A). 다음 갱신에서 정규장 확인 필요."
+    },
+    {
+     "ticker": "UBER",
+     "label": "ATTRACTIVE",
+     "label_basis": "EV",
+     "zone": "UNKNOWN",
+     "gap_to_attractive_pct": 6.6,
+     "derived_note": "zone(thesis.stance) 'ACCUMULATE_ON_WEAKNESS'. 확률가중 주당 $136.63·spot P/FCF ~15.9x. ★사다리 공백 72~82 및 105~120 — 현재가 $76.78이 그 공백에 들어가 기계적 zone은 UNKNOWN(보간 금지, §7B 제1·2조). 팩 서술은 '$70대에서 risk/reward 우호적'이나 밴드로 명시되지 않아 칸을 만들지 않음. gap은 attractive 상단 $72 기준으로 산출."
+    },
+    {
+     "ticker": "AAPL",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "zone": "AVOID",
+     "gap_to_attractive_pct": 20.6,
+     "derived_note": "zone '관망 / 신규 진입 회피'. IRR 3.09%·EV $261.875·base 공정가 밴드 $250~275(중심 $260). 허들 진입가 10% $263.3·12% $249.4·15% $230.4. 허들은 'selection_hurdle 10~15%' 하단 전사."
+    },
+    {
+     "ticker": "CAT",
+     "label": "AVOID",
+     "label_basis": "IRR",
+     "zone": "AVOID",
+     "gap_to_attractive_pct": 31.2,
+     "derived_note": "zone '회피 / 신규 매수 보류'. IRR 3%·U/D 0.22·EV $612.34·core $590.28. ★현재가 $800.25가 밴드 경계 $800을 0.03% 초과 — 기계적 zone=AVOID, 원문 zone도 회피로 일치. 다중귀속: IND-04(대표)+IND-03(발전 패키지)+MAT-02(광산 장비)."
+    },
+    {
+     "ticker": "ECP",
+     "label": "WATCH",
+     "label_basis": "IRR",
+     "zone": "WATCH",
+     "gap_to_attractive_pct": 9.5,
+     "derived_note": "★통화 ILS(텔아비브). zone 'WATCH / 조건부 관심'. IRR 12.158% vs 기본허들 12.5%·U/D 2.89·EV 86.12·base FV 91.52. ★사다리 공백 95~105(팩 원문 그대로). 트리거: ≤60에서 IRR >15%, ≤55에서 ~19%. ★KPI 2건이 RED 임계 — tripwire_status=RED → display_suppressed=true."
+    },
+    {
+     "ticker": "SVRA",
+     "label": "ATTRACTIVE",
+     "label_basis": "IRR",
+     "zone": "ATTRACTIVE",
+     "gap_to_attractive_pct": -13.7,
+     "derived_note": "zone '조건부 관심'. 연환산 기대IRR 18.90% > 허들 15%이나 U/D 1.34로 Buy-zone(U/D>2) 미달. U/D2 트리거 $4.21·U/D1 트리거 $6.23."
+    }
    ]
   }
  },
@@ -15978,6 +18268,48 @@
   {
    "as_of": "2026-08 (update 2026-08-26)",
    "note": "UPDATE-5: 3연속 이월된 56종 톱다운 전면스캔 실행. 티어 변경 0. 추적과제: (1) UTL-02 HEAT 미승격(heat_score 5<최약 인컴번트 7)이 옳았는지 — 차기 IND-01 강등 조건부 승격 체인 사후검증, (2) ITC-05 peak_watch 강화(역신호 2개) 시점이 실제 상투 대비 이른지 — 계약가 MoM 전환으로 검증, (3) IND-01 신규 peak_watch(선가 평탄화)가 조선 상투 신호로 유효한지 vs LNG FID 웨이브가 재가속시키는지, (4) ITC-07 SaaS 아포칼립스를 NEUTRAL 유지(구조파괴지만 SW지출 +15% 성장)한 판단 — 좌석기반 코호트 추가 하락 시 COLD 재검토 여부, (5) 구리 deficit/surplus 컨센 분열에서 MAT-02 HEAT를 전략광물 레그로 지탱한 판단 검증."
+  },
+  {
+   "as_of": "2026-09-05",
+   "id": "TSM",
+   "call": "버킷C 확장지속 — ITC-02 HEAT 순노출(CoWoS·2nm 완판)",
+   "outcome": "딥다이브 결과 '조건부 관심 / 관망'. 사업 축은 전량 확증(2Q26 GM 67.7%·≤7nm 77%·7월 매출 +44.7%)이나 확률가중 FV NT$2,585 대비 현재가 상승여력 7.3%.",
+   "lesson": "등재 시 달았던 '컨센 HIGH·모멘텀 가속 → 진입 눌림 대기' 캐비앳이 그대로 실현. 축③ 캐비앳은 장식이 아니라 결과 예측력이 있었다."
+  },
+  {
+   "as_of": "2026-09-05",
+   "id": "ASML",
+   "call": "버킷C — WFE +23.1% 리비전의 병목 장비 순노출",
+   "outcome": "딥다이브 결과 '회피 / 관망'. WFE 상향은 사실이었고 capa 2027 +30%·2027 오더 전량 수령까지 확인됐으나 기대IRR 6.83% vs 허들 12%·U/D 0.7.",
+   "lesson": "병목의 소유자일수록 시장이 먼저 안다. '독점+상향 리비전'은 이미 가격의 전제이지 알파의 원천이 아니었다."
+  },
+  {
+   "as_of": "2026-09-05",
+   "id": "OKLO",
+   "call": "버킷A 신규수요 — DC 전력수요發 SMR, 인허가·상업화 시점이 논제 핵심",
+   "outcome": "딥다이브 결과 'WATCH / 실행 선반영'. 등재 시 지목한 논제축(인허가)은 실제로 진척(PDC 승인·PDSA·Groves 임계)했으나 중심 공정가 $32.79 < 현재가 $39.39.",
+   "lesson": "버킷A에서 '남들이 아직 안 보는'을 확인하는 절차가 약했다. 규제 마일스톤이 뉴스로 소비되는 종목은 저인지 전제가 성립하지 않는다."
+  },
+  {
+   "as_of": "2026-09-05",
+   "id": "BWXT",
+   "call": "버킷C — 원자로 부품·해군 원자력, UTL-02+IND-02 이중 노출",
+   "outcome": "딥다이브 결과 'WATCH / 조건부 관심'. 잔고 2년 73% 증가로 사업 논제는 확증. price IRR 11.0%로 12% 허들에 근소 미달, 매력 진입 $135~145(현재 $152.85).",
+   "lesson": "이중 노출(HEAT 2개 산업)이 저평가를 보장하지 않는다. 다만 5종 중 허들에 가장 근접 — 이중 노출은 '가격'이 아니라 '수요 지속성'에 기여했다."
+  },
+  {
+   "as_of": "2026-09-05",
+   "id": "PWR",
+   "call": "버킷C — DC-EPC·전력인프라 착공의 최대 순노출",
+   "outcome": "딥다이브 결과 'AVOID / 축소 검토'. RPO 2년 2배($16.76B→$33.55B)로 수요 논제는 완승했으나 2030 기대IRR 8.2%·U/D 0.52로 5종 중 최악의 비대칭.",
+   "lesson": "'산업을 데운 트리거에 가장 크게 노출된 기업'(§3B 선정 규칙)은 곧 시장이 가장 먼저 찾아낸 기업이기도 하다. 순노출 최대치와 기대수익 최대치는 자주 반대편에 있다."
+  },
+  {
+   "as_of": "2026-09-05",
+   "id": "UPDATE-5 후보 코호트(NEW 5종 일괄)",
+   "call": "HEAT/WARM 산업의 트리거 순노출 5종을 버킷 A·C로 등재",
+   "outcome": "5종 전부 딥다이브 완료. 결과 스탠스는 조건부 관심 2·WATCH 2·AVOID 1로 매수 구간 0종. 사업 논제 적중률은 5/5, 가격 매력 적중률은 0/5.",
+   "lesson": "★엔진의 계통 오차: 이 시스템은 '어느 산업이 데워지는가'를 잘 맞히고 '그 산업의 순노출 대장주가 쌀 것인가'를 못 맞힌다. 둘은 애초에 다른 질문이며 티어=조사 우선순위라는 정의와도 정합한다. 다만 후보 선별에서 축③(컨센서스·모멘텀) 가중을 실질적으로 높이거나, 버킷 B(바닥 반전)와 인접 하위공정(§3B의 '알파는 하위에서') 비중을 늘리지 않으면 같은 결과가 반복된다. 차기 A타입 후보 선별의 1순위 개선 과제."
   }
  ],
  "pending_cross_edges": [
