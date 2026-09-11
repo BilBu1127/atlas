@@ -13,6 +13,11 @@ html,body{height:100%;background:var(--bg);color:var(--bone);font-family:"Preten
 header{grid-column:1/3;display:flex;align-items:center;gap:14px;padding:0 16px;border-bottom:1px solid var(--line);background:var(--bg2)}
 header h1{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:14px;font-weight:600;letter-spacing:.04em;color:var(--bone)}
 header h1 span{color:var(--mute);font-weight:400;margin-left:8px;font-size:12px}
+header .tabs{display:flex;gap:2px;margin-left:6px}
+header .tabs a{color:var(--mute);text-decoration:none;font-size:12px;padding:5px 9px;border-radius:6px;border:1px solid transparent}
+header .tabs a:hover{color:var(--bone);border-color:var(--line)}
+header .tabs a.cur{color:var(--bone);border-color:var(--theme);background:rgba(201,184,138,.08)}
+header .tabs a:focus-visible{outline:2px solid var(--theme);outline-offset:1px}
 header .tools{display:flex;align-items:center;gap:8px;margin-left:auto;flex-wrap:wrap}
 input[type=search]{background:#0F1215;border:1px solid var(--line);color:var(--bone);padding:6px 10px;border-radius:6px;font:inherit;width:220px;outline:none}
 input[type=search]:focus{border-color:var(--theme);box-shadow:0 0 0 2px rgba(201,184,138,.18)}
@@ -83,6 +88,9 @@ footer .lg i{display:inline-block;width:9px;height:9px;border-radius:50%}
 <div id="app">
 <header>
   <h1>ATLAS FLOW<span id="ver">밸류체인 흐름도</span></h1>
+  <nav class="tabs" aria-label="뷰 이동">
+    <a href="./ATLAS_CONSOLE.html">콘솔</a><a href="./ATLAS_GRAPH.html">관계망</a><a class="cur" href="./ATLAS_FLOW.html" aria-current="page">흐름</a><a href="./ATLAS_MAP.html">히트맵</a><a href="./ATLAS_GUIDE.html">가이드</a>
+  </nav>
   <div class="tools">
     <input id="q" type="search" placeholder="산업·기업·테마 검색" aria-label="검색">
     <button class="chip t-HEAT on" data-tier="HEAT">HEAT</button>
