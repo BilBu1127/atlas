@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ATLAS FLOW — 밸류체인 흐름도</title>
+<style>
+:root{--bg:#14171A;--bg2:#1B1F23;--line:#2A2F35;--bone:#EBEAE4;--mute:#8A9099;--dim:#5C636B;
+--heat:#E0552F;--warm:#D89A3A;--neu:#7A8894;--cold:#4A8DB8;--fro:#566169;--theme:#C9B88A;--focus:#F2E9CF}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:var(--bg);color:var(--bone);font-family:"Pretendard","IBM Plex Sans KR","Apple SD Gothic Neo",system-ui,sans-serif;font-size:13px;overflow:hidden}
+#app{display:grid;grid-template-rows:52px 1fr 34px;grid-template-columns:1fr 360px;height:100vh}
+header{grid-column:1/3;display:flex;align-items:center;gap:14px;padding:0 16px;border-bottom:1px solid var(--line);background:var(--bg2)}
+header h1{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:14px;font-weight:600;letter-spacing:.04em;color:var(--bone)}
+header h1 span{color:var(--mute);font-weight:400;margin-left:8px;font-size:12px}
+header .tools{display:flex;align-items:center;gap:8px;margin-left:auto;flex-wrap:wrap}
+input[type=search]{background:#0F1215;border:1px solid var(--line);color:var(--bone);padding:6px 10px;border-radius:6px;font:inherit;width:220px;outline:none}
+input[type=search]:focus{border-color:var(--theme);box-shadow:0 0 0 2px rgba(201,184,138,.18)}
+.chip{border:1px solid var(--line);background:transparent;color:var(--mute);padding:5px 9px;border-radius:999px;font:inherit;font-size:12px;cursor:pointer;transition:all .15s}
+.chip:hover{border-color:var(--mute);color:var(--bone)}
+.chip.on{color:var(--bone);border-color:var(--bone)}
+.chip.t-HEAT.on{border-color:var(--heat);color:var(--heat)}.chip.t-WARM.on{border-color:var(--warm);color:var(--warm)}
+.chip.t-NEUTRAL.on{border-color:var(--neu);color:var(--neu)}.chip.t-COLD.on{border-color:var(--cold);color:var(--cold)}
+.chip:focus-visible,button:focus-visible{outline:2px solid var(--theme);outline-offset:2px}
+#stage{position:relative;overflow:hidden;background:var(--bg)}
+svg{width:100%;height:100%;display:block;cursor:grab}
+svg.dragging{cursor:grabbing}
+.lane-label{pointer-events:none;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;fill:var(--dim);letter-spacing:.08em}
+.lane-line{pointer-events:none;stroke:var(--line);stroke-width:1;stroke-dasharray:2 6}
+.edge{fill:none;stroke:var(--dim);stroke-opacity:.28;stroke-width:1.1;transition:stroke-opacity .25s,stroke-width .25s}
+.edge.dash{stroke-dasharray:3 5;stroke-opacity:.14}
+.edge.lit1{stroke-opacity:.95;stroke-width:2}
+.edge.lit2{stroke-opacity:.55;stroke-width:1.4}
+.edge.off{stroke-opacity:.05}
+.edge.k-SUPPLIES_TO.lit1,.edge.k-SUPPLIES_TO.lit2{stroke:var(--focus)}
+.edge.k-THEME_DRIVES{stroke:var(--theme)}
+.edge.k-DEMAND_COMOVES.lit1,.edge.k-DEMAND_COMOVES.lit2{stroke:#9FB4C7}
+.edge.k-CAPACITY_COMPETES.lit1,.edge.k-CAPACITY_COMPETES.lit2{stroke:#D4B36A}
+.edge.k-SUBSTITUTES.lit1,.edge.k-SUBSTITUTES.lit2{stroke:#B48ED8}
+.edge.k-INVERSE.lit1,.edge.k-INVERSE.lit2{stroke:var(--heat)}
+.edge.k-OPERATES_IN{stroke:var(--dim);stroke-opacity:.35}
+.node{cursor:pointer}
+.node circle.core{transition:r .2s,fill-opacity .25s,stroke-opacity .25s}
+.node circle.halo{fill:none;stroke-width:1;stroke-opacity:.25;transition:stroke-opacity .25s,r .25s}
+.node .lbl{font-size:11.5px;fill:var(--bone);paint-order:stroke;stroke:var(--bg);stroke-width:3px;stroke-linejoin:round}
+.node .sub{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:9.5px;fill:var(--mute);paint-order:stroke;stroke:var(--bg);stroke-width:3px}
+.node.off circle.core{fill-opacity:.12;stroke-opacity:.15}
+.node.off .lbl{fill:var(--dim)}.node.off .sub{fill:var(--dim)}
+.node.lit2 circle.core{fill-opacity:.55}
+.node.sel circle.halo{stroke-opacity:1;stroke-width:1.6}
+.node.hit circle.halo{stroke-opacity:.9;stroke:var(--theme)}
+.node.theme polygon{transition:fill-opacity .25s}
+.node.theme.off polygon{fill-opacity:.12}
+.node.co .lbl{font-size:10.5px}
+.particle{fill:var(--focus);pointer-events:none}
+#insp{border-left:1px solid var(--line);background:var(--bg2);overflow:auto;padding:16px 18px 32px}
+#insp h2{font-size:15px;font-weight:600;margin-bottom:2px}
+#insp .meta{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;color:var(--mute);margin-bottom:12px}
+#insp .tier{display:inline-block;padding:2px 8px;border-radius:999px;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10.5px;letter-spacing:.06em;margin-right:6px;border:1px solid}
+#insp h3{font-size:11.5px;color:var(--mute);margin:16px 0 6px;font-weight:500}
+#insp p{line-height:1.55;color:#CFCFC8;font-size:12.5px}
+#insp .row{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px solid var(--line);font-size:12px}
+#insp .row b{font-weight:500;color:var(--bone)}
+#insp .row span{color:var(--mute);text-align:right;flex:1}
+#insp .lk{color:var(--bone);cursor:pointer;text-decoration:underline dotted var(--dim);text-underline-offset:3px}
+#insp .lk:hover{color:var(--theme)}
+#insp .co{display:flex;align-items:center;gap:8px;padding:4px 0;font-size:12px}
+#insp .co .dot{width:8px;height:8px;border-radius:50%;background:var(--dim);flex:none}
+#insp .co .dot.dd{background:var(--bone)}
+#insp .co .cp{color:var(--mute);font-size:11px;margin-left:auto}
+#insp .empty{color:var(--mute);line-height:1.6;font-size:12.5px;margin-top:8px}
+#insp .empty b{color:var(--bone);font-weight:500}
+footer{grid-column:1/3;display:flex;align-items:center;gap:18px;padding:0 16px;border-top:1px solid var(--line);color:var(--mute);font-size:11.5px;font-family:"IBM Plex Mono",ui-monospace,monospace}
+footer .lg{display:inline-flex;align-items:center;gap:5px}
+footer .lg i{display:inline-block;width:9px;height:9px;border-radius:50%}
+#load{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;color:var(--mute);background:var(--bg);z-index:5}
+#load input{color:var(--bone)}
+@media (max-width:900px){#app{grid-template-columns:1fr}#insp{display:none}header .tools input{width:140px}}
+@media (prefers-reduced-motion:reduce){.edge,.node circle{transition:none}}
+</style>
+</head>
+<body>
+<div id="app">
+<header>
+  <h1>ATLAS FLOW<span id="ver">밸류체인 흐름도</span></h1>
+  <div class="tools">
+    <input id="q" type="search" placeholder="산업·기업·테마 검색" aria-label="검색">
+    <button class="chip t-HEAT on" data-tier="HEAT">HEAT</button>
+    <button class="chip t-WARM on" data-tier="WARM">WARM</button>
+    <button class="chip t-NEUTRAL on" data-tier="NEUTRAL">NEUTRAL</button>
+    <button class="chip t-COLD on" data-tier="COLD">COLD</button>
+    <span style="width:1px;height:18px;background:var(--line)"></span>
+    <button class="chip on" id="eAll" title="공급 흐름 외 관계도 항상 표시">모든 관계</button>
+    <button class="chip" id="cross">가로층 접기</button>
+    <button class="chip" id="play">전파 재생</button>
+    <button class="chip" id="reset">초기화</button>
+  </div>
+</header>
+<div id="stage">
+  <div id="load"><div>data/ATLAS_PACK.json 불러오는 중…</div></div>
+  <svg id="svg" role="img" aria-label="밸류체인 흐름도"></svg>
+</div>
+<aside id="insp">
+  <div class="empty">노드를 선택하면 카드가 여기에 열립니다.<br><br>
+  <b>배치</b>는 밸류체인 순서로 고정돼 있습니다 — 왼쪽이 원자재·에너지, 오른쪽이 최종 수요. 위에는 수요를 내리는 테마, 아래는 모든 층과 닿는 금융·부동산.<br><br>
+  <b>관계</b>는 선택한 노드를 기준으로 한 홉·두 홉만 밝아지고 나머지는 물러납니다. 흐르는 점은 공급 방향입니다.</div>
+</aside>
+<footer>
+  <span id="hint" style="color:var(--dim);max-width:46vw;overflow:hidden;white-space:nowrap;text-overflow:ellipsis">클릭 = 관계 조명 · 더블클릭 = 기업 펼침 · 드래그 = 층 안에서 이동 · 휠 = 확대</span>
+  <span class="lg"><i style="background:var(--heat)"></i>HEAT</span>
+  <span class="lg"><i style="background:var(--warm)"></i>WARM</span>
+  <span class="lg"><i style="background:var(--neu)"></i>NEUTRAL</span>
+  <span class="lg"><i style="background:var(--cold)"></i>COLD</span>
+  <span class="lg"><i style="background:var(--theme);border-radius:1px;transform:rotate(45deg)"></i>테마</span>
+  <span style="margin-left:auto">티어 = 조사 우선순위, 매매 신호 아님</span>
+  <span id="asof"></span>
+</footer>
+</div>
+<script>
+const LAYERS=[
+ {id:0,name:"상류 · 원자재·에너지",ids:["ENE-01","ENE-05","MAT-02","MAT-01","MAT-03","MAT-06","MAT-04"]},
+ {id:1,name:"중류 · 장비·부품·시공",ids:["ITC-03","ITC-04","IND-03","IND-04","IND-05","IND-01","IND-02","MAT-05","ENE-03"]},
+ {id:2,name:"인프라 · 유틸·물류",ids:["ENE-02","ENE-04","UTL-01","UTL-02","UTL-03","UTL-04","IND-06","IND-07","IND-08","IND-09","COM-01","RLE-02"]},
+ {id:3,name:"플랫폼 · 제품",ids:["ITC-02","ITC-05","ITC-01","ITC-06","ITC-07","ITC-08","COM-03","COM-02","COM-04","HLT-04","HLT-02","HLT-01"]},
+ {id:4,name:"최종 수요",ids:["DIS-01","DIS-02","DIS-03","DIS-04","DIS-05","STP-01","STP-02","STP-03","STP-04","HLT-03","HLT-05"]},
+];
+const CROSS=["FIN-01","FIN-02","FIN-03","RLE-01","RLE-03"];
+const TC={HEAT:"#E0552F",WARM:"#D89A3A",NEUTRAL:"#7A8894",COLD:"#4A8DB8",FROZEN:"#566169"};
+const RED=matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+let D=null, N=[], E=[], byId={}, sel=null, expanded=new Set(), showAll=true, crossHidden=false, tiers=new Set(Object.keys(TC));
+let W=0,H=0, view={x:0,y:0,k:1}, dragN=null, panning=null, raf=null, playing=false;
+const svg=document.getElementById("svg");
+const NS="http://www.w3.org/2000/svg";
+const el=(t,a={})=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);return e};
+
+async function boot(){
+  try{const r=await fetch("data/ATLAS_PACK.json",{cache:"no-store"});if(!r.ok)throw 0;D=await r.json();init();}
+  catch(e){const b=document.getElementById("load");b.innerHTML='<div>같은 폴더의 data/ATLAS_PACK.json을 읽지 못했습니다. 파일을 직접 선택하세요.</div><input type="file" accept=".json">';
+    b.querySelector("input").onchange=ev=>{const f=ev.target.files[0];const fr=new FileReader();fr.onload=()=>{D=JSON.parse(fr.result);init()};fr.readAsText(f)}}
+}
+function init(){
+  document.getElementById("load").remove();
+  document.getElementById("ver").textContent=(D.meta.version||"").replace("ATLAS_PACK_","")+" · 밸류체인 흐름도";
+  document.getElementById("asof").textContent=D.meta.as_of||"";
+  build(); layout(); render(); tick();
+}
+function build(){
+  N=[];E=[];byId={};
+  const ind={};D.industries.forEach(i=>ind[i.id]=i);
+  const lane={};LAYERS.forEach(L=>L.ids.forEach(id=>lane[id]=L.id));CROSS.forEach(id=>lane[id]="X");
+  D.industries.forEach(i=>{const n={id:i.id,kind:"ind",name:i.name,tier:i.tier,lane:lane[i.id]??2,ref:i,r:i.tier==="HEAT"?13:i.tier==="WARM"?11:9,x:0,y:0,vx:0,vy:0};N.push(n);byId[n.id]=n});
+  (D.themes||[]).forEach(t=>{const n={id:t.id,kind:"theme",name:t.name,lane:"T",ref:t,r:9,x:0,y:0,vx:0,vy:0};N.push(n);byId[n.id]=n});
+  D.edges.forEach(e=>{if(byId[e.from]&&byId[e.to])E.push({a:byId[e.from],b:byId[e.to],type:e.type,strength:e.strength,mech:e.mechanism||""})});
+  (D.themes||[]).forEach(t=>(t.linked_industries||[]).forEach(id=>{if(byId[id]&&!E.some(e=>e.a.id===t.id&&e.b.id===id))E.push({a:byId[t.id],b:byId[id],type:"THEME_DRIVES",strength:"M",mech:""})}));
+}
+function laneX(l){const pad=110,span=(W-pad*2)/(LAYERS.length-1);return l==="T"||l==="X"?null:pad+l*span}
+function layout(){
+  W=svg.clientWidth||1200;H=svg.clientHeight||700;
+  const top=156,bot=H-96;
+  const th=N.filter(n=>n.kind==="theme");th.forEach((n,i)=>{n.x=90+(W-180)*(i+.5)/th.length;n.y=40;n.fy=40;n.fx=n.x;n.stag=i%2});
+  N.filter(n=>n.lane==="X").forEach((n,i,a)=>{n.x=110+(W-220)*(i+.5)/a.length;n.y=H-48;n.fy=H-48;n.fx=n.x});
+  const ind=N.filter(n=>n.kind==="ind"&&n.lane!=="X");
+  ind.forEach(n=>{n.x=laneX(n.lane);n.y=(top+bot)/2});
+  for(let it=0;it<4;it++){LAYERS.forEach(L=>{const ns=ind.filter(n=>n.lane===L.id);ns.forEach(n=>{const ys=E.filter(e=>e.a===n||e.b===n).map(e=>e.a===n?e.b:e.a).filter(m=>m.kind==="ind"&&m.lane!=="X"&&m.lane!==n.lane).map(m=>m.y);n.bc=ys.length?ys.reduce((a,b)=>a+b,0)/ys.length:n.y});
+    ns.sort((a,b)=>a.bc-b.bc);const gap=(bot-top)/ns.length;ns.forEach((n,i)=>{n.y=top+gap*(i+.5)})})}
+  ind.forEach(n=>{n.fx=n.x;n.fy=n.y});
+}
+function step(warm){
+  const cos=N.filter(n=>n.kind==="co"&&!n.hidden);
+  for(const n of cos){n.vx*=.6;n.vy*=.6}
+  for(let i=0;i<cos.length;i++)for(let j=i+1;j<cos.length;j++){const a=cos[i],b=cos[j];let dx=b.x-a.x,dy=b.y-a.y,d2=dx*dx+dy*dy||1;const d=Math.sqrt(d2),min=a.r+b.r+16;if(d<min){const f=(min-d)/d*.5;a.vx-=dx*f;a.vy-=dy*f;b.vx+=dx*f;b.vy+=dy*f}}
+  for(const n of cos){n.x+=n.vx;n.y+=n.vy;const p=n.parent;const d=Math.hypot(n.x-p.x,n.y-p.y);const R=64+cos.filter(c=>c.parent===p).length*1.2;if(d>R){n.x=p.x+(n.x-p.x)*R/d;n.y=p.y+(n.y-p.y)*R/d}if(d<34){n.x=p.x+(n.x-p.x)*34/(d||1);n.y=p.y+(n.y-p.y)*34/(d||1)}}
+  for(const n of N){if(n.fx!=null)n.x=n.fx;if(n.fy!=null)n.y=n.fy}
+}
+let gEdge,gNode,gLane,gPart;
+function render(){
+  svg.innerHTML="";
+  const root=el("g",{id:"root"});svg.appendChild(root);
+  gLane=el("g");gEdge=el("g");gPart=el("g");gNode=el("g");root.append(gLane,gEdge,gPart,gNode);
+  LAYERS.forEach(L=>{const x=laneX(L.id);gLane.appendChild(el("line",{class:"lane-line",x1:x,y1:136,x2:x,y2:H-70}));const t=el("text",{class:"lane-label",x:x,y:128,"text-anchor":"middle"});t.textContent=L.name;gLane.appendChild(t)});
+  const tl=el("text",{class:"lane-label",x:16,y:H-46});tl.textContent="금융 · 부동산 (가로층)";gLane.appendChild(tl);
+  E.forEach(e=>{e.el=el("path",{class:"edge k-"+e.type+(e.type==="SUPPLIES_TO"||e.type==="THEME_DRIVES"||e.type==="OPERATES_IN"?"":" dash")});e.el.addEventListener("mouseenter",()=>tip(e));gEdge.appendChild(e.el)});
+  N.forEach(n=>{const g=el("g",{class:"node "+n.kind+(n.kind==="theme"?" theme":"")});n.el=g;
+    if(n.kind==="theme"){g.appendChild(el("polygon",{points:"0,-11 11,0 0,11 -11,0",fill:"#C9B88A","fill-opacity":.85}))}
+    else{g.appendChild(el("circle",{class:"halo",r:n.r+5,stroke:n.kind==="co"?"#EBEAE4":TC[n.tier]}));const c=el("circle",{class:"core",r:n.r,fill:n.kind==="co"?"#3A4149":TC[n.tier],"fill-opacity":n.kind==="co"?(n.dd?.95:.55):.85,stroke:n.kind==="co"?(n.dd?"#EBEAE4":"#5C636B"):TC[n.tier],"stroke-width":n.kind==="co"?1.2:1,"stroke-opacity":.9});g.appendChild(c)}
+    const co=n.kind==="co",side=co?(n.x<n.parent.x?-1:1):0;const t=el("text",{class:"lbl",x:co?side*(n.r+5):0,y:co?4:(n.kind==="theme"?(n.stag?-16:28):n.r+14),"text-anchor":co?(side<0?"end":"start"):"middle"});t.textContent=n.name;g.appendChild(t);
+    if(n.kind==="ind"){const s=el("text",{class:"sub",y:n.r+25,"text-anchor":"middle"});s.textContent=n.id+"  "+(n.ref.balance||"");g.appendChild(s)}
+    g.addEventListener("click",ev=>{ev.stopPropagation();select(n)});g.addEventListener("dblclick",ev=>{ev.stopPropagation();if(n.kind==="ind")toggleCo(n)});
+    g.addEventListener("mousedown",ev=>{dragN=n;ev.stopPropagation();svg.classList.add("dragging")});
+    gNode.appendChild(g)});
+  svg.addEventListener("mousedown",ev=>{panning={x:ev.clientX,y:ev.clientY,vx:view.x,vy:view.y};svg.classList.add("dragging")});
+  window.addEventListener("mousemove",ev=>{if(dragN){const p=pt(ev);if(dragN.kind==="ind"&&dragN.lane!=="X"){dragN.fy=Math.max(156,Math.min(H-96,p.y))}if(dragN.kind==="co"){dragN.fx=p.x;dragN.fy=p.y}}else if(panning){view.x=panning.vx+ev.clientX-panning.x;view.y=panning.vy+ev.clientY-panning.y}});
+  window.addEventListener("mouseup",()=>{dragN=null;panning=null;svg.classList.remove("dragging")});
+  svg.addEventListener("wheel",ev=>{ev.preventDefault();const k=Math.max(.5,Math.min(2.6,view.k*(ev.deltaY<0?1.1:.9)));const r=svg.getBoundingClientRect(),mx=ev.clientX-r.left,my=ev.clientY-r.top;view.x=mx-(mx-view.x)*k/view.k;view.y=my-(my-view.y)*k/view.k;view.k=k},{passive:false});
+  svg.addEventListener("click",()=>select(null));
+  applyFilters();
+}
+function pt(ev){const r=svg.getBoundingClientRect();return{x:(ev.clientX-r.left-view.x)/view.k,y:(ev.clientY-r.top-view.y)/view.k}}
+function path(e){const a=e.a,b=e.b;if(e.type==="OPERATES_IN"||a.kind==="co"||b.kind==="co")return`M${a.x},${a.y}L${b.x},${b.y}`;const dx=b.x-a.x;if(Math.abs(dx)<40)return`M${a.x},${a.y}C${a.x+40},${a.y} ${b.x+40},${b.y} ${b.x},${b.y}`;const c=dx*.5;return`M${a.x},${a.y}C${a.x+c},${a.y} ${b.x-c},${b.y} ${b.x},${b.y}`}
+let t0=performance.now();
+function tick(){
+  step(false);
+  document.getElementById("root").setAttribute("transform",`translate(${view.x},${view.y}) scale(${view.k})`);
+  E.forEach(e=>{if(e.a.hidden||e.b.hidden){e.el.style.display="none";return}e.el.style.display="";e.el.setAttribute("d",path(e))});
+  N.forEach(n=>{n.el.style.display=n.hidden?"none":"";n.el.setAttribute("transform",`translate(${n.x},${n.y})`)});
+  particles();
+  raf=requestAnimationFrame(tick);
+}
+function particles(){
+  if(RED){return}
+  const t=(performance.now()-t0)/1000;
+  const lit=E.filter(e=>!e.a.hidden&&!e.b.hidden&&e.type==="SUPPLIES_TO"&&(sel?e.el.classList.contains("lit1"):true));
+  while(gPart.childNodes.length<lit.length*2)gPart.appendChild(el("circle",{class:"particle",r:1.6}));
+  while(gPart.childNodes.length>lit.length*2)gPart.lastChild.remove();
+  lit.forEach((e,i)=>{const L=e.el.getTotalLength?e.el.getTotalLength():0;for(let j=0;j<2;j++){const c=gPart.childNodes[i*2+j];if(!L){c.style.display="none";continue}c.style.display="";const u=((t*.13+i*.37+j*.5)%1);const p=e.el.getPointAtLength(u*L);c.setAttribute("cx",p.x);c.setAttribute("cy",p.y);c.setAttribute("opacity",sel?.9:.35)}});
+}
+function neighbors(n){const one=new Set(),two=new Set();E.forEach(e=>{if(e.a===n)one.add(e.b);if(e.b===n)one.add(e.a)});one.forEach(m=>E.forEach(e=>{if(e.a===m&&e.b!==n&&!one.has(e.b))two.add(e.b);if(e.b===m&&e.a!==n&&!one.has(e.a))two.add(e.a)}));return{one,two}}
+function select(n){
+  sel=n;N.forEach(m=>m.el.classList.remove("sel","off","lit2","hit"));E.forEach(e=>e.el.classList.remove("lit1","lit2","off"));
+  if(!n){applyFilters();inspectEmpty();return}
+  const{one,two}=neighbors(n);
+  N.forEach(m=>{if(m===n)m.el.classList.add("sel");else if(one.has(m)){}else if(two.has(m))m.el.classList.add("lit2");else m.el.classList.add("off")});
+  E.forEach(e=>{if(e.a===n||e.b===n)e.el.classList.add("lit1");else if((one.has(e.a)&&two.has(e.b))||(one.has(e.b)&&two.has(e.a))||(one.has(e.a)&&one.has(e.b)))e.el.classList.add("lit2");else e.el.classList.add("off")});
+  inspect(n);
+}
+function toggleCo(n){
+  if(expanded.has(n.id)){expanded.delete(n.id);N=N.filter(m=>!(m.kind==="co"&&m.parent===n));E=E.filter(e=>!(e.type==="OPERATES_IN"&&(e.a===n||e.b===n)));render();if(sel)select(sel);return}
+  expanded.add(n.id);
+  const cos=(n.ref.companies||[]).filter(c=>typeof c==="object");
+  const dd=new Set((D.company_nodes||[]).filter(c=>c.verification==="DEEP_DIVED").map(c=>c.ticker));
+  const half=Math.ceil(cos.length/2);
+  cos.forEach((c,i)=>{const side=i<half?-1:1,k=i<half?i:i-half,cnt=i<half?half:cos.length-half;const x=n.x+side*(62+(k%2)*26),y=n.y+(k-(cnt-1)/2)*18;
+    const m={id:n.id+"::"+c.ticker,kind:"co",name:c.ticker,cp:c.chain_position||"",role:c.role,dd:dd.has(c.ticker),parent:n,lane:n.lane,r:c.role==="REGIME_LEADER"?5.5:4,x,y,fx:x,fy:y,vx:0,vy:0,ref:c};N.push(m);byId[m.id]=m;E.push({a:n,b:m,type:"OPERATES_IN",strength:"L",mech:c.note||""})});
+  render();select(n);
+}
+function applyFilters(){
+  const q=document.getElementById("q").value.trim().toLowerCase();
+  N.forEach(n=>{let h=false;if(n.kind==="ind"&&!tiers.has(n.tier))h=true;if(crossHidden&&n.lane==="X")h=true;if(n.kind==="co"&&n.parent.hidden)h=true;n.hidden=h;
+    n.el.classList.toggle("hit",!!q&&(n.name.toLowerCase().includes(q)||n.id.toLowerCase().includes(q)))});
+  E.forEach(e=>{const dash=!(e.type==="SUPPLIES_TO"||e.type==="THEME_DRIVES"||e.type==="OPERATES_IN");e.el.style.visibility=(dash&&!showAll&&!sel)?"hidden":"visible"});
+}
+function tip(e){document.getElementById("hint").textContent=`${e.a.name} → ${e.b.name} · ${e.type} (${e.strength||"-"})${e.mech?" · "+e.mech:""}`}
+function esc(s){return String(s??"").replace(/[<>&]/g,c=>({"<":"&lt;",">":"&gt;","&":"&amp;"}[c]))}
+function txt(v){if(v==null)return"";if(typeof v==="string")return v;if(Array.isArray(v))return v.map(txt).join(" · ");return Object.values(v).map(txt).join(" ")}
+function inspectEmpty(){document.getElementById("insp").innerHTML='<div class="empty">노드를 선택하면 카드가 여기에 열립니다.<br><br><b>배치</b>는 밸류체인 순서로 고정돼 있습니다 — 왼쪽이 원자재·에너지, 오른쪽이 최종 수요. 위에는 수요를 내리는 테마, 아래는 모든 층과 닿는 금융·부동산.<br><br><b>관계</b>는 선택한 노드를 기준으로 한 홉·두 홉만 밝아지고 나머지는 물러납니다. 흐르는 점은 공급 방향입니다.</div>'}
+function inspect(n){
+  const I=document.getElementById("insp");let h="";
+  if(n.kind==="ind"){const i=n.ref;const col=TC[i.tier];
+    h+=`<h2>${esc(i.name)}</h2><div class="meta">${i.id}</div><span class="tier" style="color:${col};border-color:${col}">${i.tier}</span><span class="tier" style="color:var(--mute);border-color:var(--line)">${esc(i.balance)}${i.cycle_stage?" · "+esc(i.cycle_stage):""}</span>`;
+    if(i.balance_direction)h+=`<p style="margin-top:10px">${esc(i.balance_direction)}</p>`;
+    h+=`<h3>왜 이 티어인가</h3><p>${esc((i.tier_rationale||"").slice(0,700))}</p>`;
+    h+=`<h3>수요</h3><p>${esc(txt(i.demand).slice(0,600))}</p><h3>공급</h3><p>${esc(txt(i.supply).slice(0,600))}</p>`;
+    const li=(i.leading_indicators||[]).slice(-4).reverse();if(li.length){h+=`<h3>최근 선행지표</h3>`;li.forEach(x=>h+=`<div class="row"><b>${esc(x.name)}</b><span>${esc(String(x.last_reading||"").slice(0,160))}<br><small>${esc(x.as_of||"")}</small></span></div>`)}
+    h+=`<h3>관계</h3>`;E.filter(e=>(e.a===n||e.b===n)&&e.type!=="OPERATES_IN").forEach(e=>{const o=e.a===n?e.b:e.a;const dir=e.a===n?"→":"←";h+=`<div class="row"><b><span class="lk" data-id="${o.id}">${esc(o.name)}</span> <small style="color:var(--mute)">${dir} ${e.type}</small></b><span>${esc((e.mech||"").slice(0,120))}</span></div>`});
+    const cos=(i.companies||[]).filter(c=>typeof c==="object");const dd=new Set((D.company_nodes||[]).filter(c=>c.verification==="DEEP_DIVED").map(c=>c.ticker));
+    if(cos.length){h+=`<h3>기업 (${cos.length}) — 더블클릭으로 펼침</h3>`;[...cos].sort((a,b)=>(a.chain_position||"").localeCompare(b.chain_position||"")).forEach(c=>h+=`<div class="co"><i class="dot ${dd.has(c.ticker)?"dd":""}"></i><b>${esc(c.ticker)}</b> ${esc(c.name||"")}<span class="cp">${esc(c.chain_position||"")}${c.role?" · "+esc(c.role):""}</span></div>`)}
+  }else if(n.kind==="theme"){const t=n.ref;h+=`<h2>${esc(t.name)}</h2><div class="meta">${t.id} · 테마</div><p>${esc(txt(t.thesis||t.description||"").slice(0,700))}</p><h3>구동 산업</h3>`;E.filter(e=>e.a===n).forEach(e=>h+=`<div class="row"><b><span class="lk" data-id="${e.b.id}">${esc(e.b.name)}</span></b><span>${esc(e.b.tier)}</span></div>`)}
+  else{const c=n.ref;const cn=(D.company_nodes||[]).find(x=>x.ticker===c.ticker);const r=cn&&cn.deep_dive_ref;h+=`<h2>${esc(c.ticker)} <small style="color:var(--mute);font-weight:400">${esc(c.name||"")}</small></h2><div class="meta">${esc(n.parent.name)} · ${esc(c.chain_position||"")}${c.role?" · "+esc(c.role):""}</div>`;
+    if(c.note)h+=`<p>${esc(c.note)}</p>`;if(r){h+=`<h3>딥다이브 (${esc(r.as_of||"")})</h3><p>${esc(r.stance_zone||"")}</p><p style="margin-top:8px">${esc((r.thesis_oneline||"").slice(0,600))}</p>`;if(cn.stance_state){const s=cn.stance_state;h+=`<div class="row"><b>관측</b><span>${s.price&&s.price.value!=null?s.price.value+" ("+esc(s.price.as_of||"미기재")+")":"—"} · zone ${esc(s.zone)}</span></div>`}}else h+=`<p class="empty">딥다이브 미실시(SHALLOW)</p>`;
+    h+=`<p style="margin-top:12px;color:var(--mute);font-size:11.5px">표시는 딥다이브 산출의 인용이며 매매 의견이 아닙니다.</p>`}
+  I.innerHTML=h;I.scrollTop=0;I.querySelectorAll(".lk").forEach(a=>a.onclick=()=>{const m=byId[a.dataset.id];if(m){select(m);view.x=W/2-m.x*view.k;view.y=H/2-m.y*view.k}});
+}
+function replay(){
+  if(playing)return;const paths=(D.monthly_diff&&D.monthly_diff.propagation_paths)||[];if(!paths.length)return;playing=true;
+  const btn=document.getElementById("play");let pi=0;
+  const runOne=()=>{if(pi>=paths.length){playing=false;btn.textContent="전파 재생";select(null);return}
+    const ids=[...paths[pi].matchAll(/\b(TH-[A-Z]+|[A-Z]{3}-\d{2})\b/g)].map(m=>m[1]).filter((v,i,a)=>a.indexOf(v)===i&&byId[v]);
+    btn.textContent=`전파 ${pi+1}/${paths.length}`;let k=0;
+    const stepIn=()=>{if(k>=ids.length){pi++;setTimeout(runOne,1400);return}const n=byId[ids[k]];select(n);document.getElementById("hint").textContent=paths[pi].slice(0,180);k++;setTimeout(stepIn,900)};
+    stepIn()};
+  runOne();
+}
+document.getElementById("q").addEventListener("input",applyFilters);
+document.querySelectorAll(".chip[data-tier]").forEach(b=>b.onclick=()=>{b.classList.toggle("on");const t=b.dataset.tier;b.classList.contains("on")?tiers.add(t):tiers.delete(t);applyFilters()});
+document.getElementById("eAll").onclick=function(){showAll=!showAll;this.classList.toggle("on",showAll);applyFilters()};
+document.getElementById("cross").onclick=function(){crossHidden=!crossHidden;this.classList.toggle("on",crossHidden);applyFilters()};
+document.getElementById("play").onclick=replay;
+document.getElementById("reset").onclick=()=>{expanded.clear();N.forEach(n=>{n.fx=n.fy=null});view={x:0,y:0,k:1};document.getElementById("q").value="";build();layout();render();select(null)};
+window.addEventListener("resize",()=>{N.forEach(n=>{if(n.kind!=="co"){n.fx=n.fy=null}});layout();render();if(sel)select(byId[sel.id])});
+boot();
+</script>
+</body>
+</html>
