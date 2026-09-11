@@ -1,9 +1,9 @@
 {
  "meta": {
-  "version": "ATLAS_PACK_2026-09_UPDATE7_v2.4",
-  "as_of": "2026-09 (UPDATE-7 딥다이브통합 완료 배치5/5, 2026-09-05)",
-  "build_progress": "BUILD 1~7 완료 후 일곱 번째 갱신(UPDATE-7, MODE B 딥다이브 통합형). 딥다이브 팩 28종 통관 — §7A 승격 15(EME·FLR·J·KBR·MTZ·PWR·TSM·ASML·AMAT·OKLO·BWXT·NEE·NOW·PLTR·SNOW) + 신설 10(ACM·MYRG·XE·STEM·SES·UBER·AAPL·CAT·ECP·SVRA) + 재통관 2(LRCX·WMB) + 동결 재확인 1(TLN). DEEP_DIVED 86→111, 노드 326→336. §7B 통관 27건 전량 ATLAS_DERIVED(diff에 전량 공시). 톱다운: 티어 변경 0 — IND-05(E&C 8종 잔고 사상권+인력 병목 확인)·ITC-03(WFE $143.9B/+23.1% 상향)·UTL-02(4개 레그 전부 딥다이브 도달)에서 상향 근거가 티어 기준에 도달했으나 HEAT cap 8/8 포화 + B타입 전면스캔 부재로 전부 차기 A타입 이관. §3A 인바운드 2홉 전파 8체인 실행, 임계 통과 0. peak_watch: ITC-05 강화(공급 응답 실물 집행 + AAPL 마진에서 가격 전가 하류 확인), MAT-02 구리 레그 근거 추가(공급갭 전망 30%→25%), IND-01 이월. 후보 원장 대정산: NEW OPEN 5종 전부 RESOLVED, 잔여 0 → 차기 A타입 전면스캔 우선순위 상승. 커버리지 구멍 ITC-05·IND-01은 미해소 이월.",
-  "prev_version": "ATLAS_PACK_2026-08_UPDATE6_v2.3",
+  "version": "ATLAS_PACK_2026-09_UPDATE8_v2.5",
+  "as_of": "2026-09-11 (UPDATE-8 MODE A 전면 톱다운 완료)",
+  "build_progress": "BUILD 1~7 완료 후 여덟 번째 갱신(UPDATE-8, MODE A 전면 톱다운, 3세션). 56종 스캔 → 심층 14종 → 티어 변경 4(IND-09·IND-07·MAT-05 NEUTRAL→WARM, FIN-03 NEUTRAL→COLD) · balance 2(IND-05·ENE-04 →SHORTAGE) · HEAT 로테이션 0(인컴번트 전부 유지 근거 2개+, 승격 자격 5건 보류·큐: UTL-02>IND-05>ITC-03>ENE-03>ENE-04) · 전파 10체인 임계통과 0 · 본문 정정 13(ITC-03 WFE known_debt 해소) · 엣지 TH-AI→IND-05 H 승인 · 테마 '인컴번트 재편' 기각+재제안 · peak_watch ITC-05 강화·MAT-02 구리 강화(9/10 관세 보류)·HLT-02 신규·IND-01 해제 · 후보 NEW 3·REVISIT 3 · 스탠스 18/96 관측·78 UNKNOWN. 매크로: 美-이란 전쟁 격화·Fed 인상 50/50.",
+  "prev_version": "ATLAS_PACK_2026-09_UPDATE7_v2.4",
   "taxonomy_locked": true,
   "counts": {
    "sectors": 11,
@@ -14,7 +14,14 @@
    "company_nodes": 336,
    "deep_dived": 111,
    "shallow": 225,
-   "stance_customs_done": 96
+   "stance_customs_done": 96,
+   "heat": 8,
+   "warm": 24,
+   "neutral": 16,
+   "cold": 8,
+   "frozen": 0,
+   "stance_refreshed": 17,
+   "stance_unknown": 79
   },
   "merge_log": [
    "에너지: 유전서비스(OFS) → 상류(E&P)에 통합",
@@ -64,6 +71,21 @@
     "as_of": "2026-09-05",
     "event": "UPDATE-7 딥다이브 28종 통합",
     "detail": "promote 15 + create 10 + recustoms 2 + frozen 1. nodes 326→336, deep_dived 86→111. 티어 변경 0. 카드 additive 선행지표 40+개, companies 편입 17건. 후보 NEW OPEN 5종 소진→ONTO·CAMT 2종 신규(하위공정)."
+   },
+   {
+    "as_of": "2026-09-11",
+    "event": "UPDATE-8 A-1 체크포인트",
+    "detail": "56종 스캔, 선행지표 additive 73건, market_read 관측 갱신 15건, 심층확인 14종 지정. 티어 변경 0."
+   },
+   {
+    "as_of": "2026-09-11",
+    "event": "UPDATE-8 A-2 체크포인트",
+    "detail": "티어 4건(N→W 3·N→C 1), balance 2건, 본문 정정 13건, 엣지 승인 1, 테마 기각 1, peak_watch 3(IND-01 해제·HLT-02 신규), 후보 NEW 3·REVISIT 3, 전파 10체인 임계통과 0"
+   },
+   {
+    "as_of": "2026-09-11",
+    "event": "UPDATE-8 완료(A-3)",
+    "detail": "스탠스 리프레시 17종 관측/79 UNKNOWN. 전역 정산: HEAT 8/56, provisional 0, pending edges 0. v2.5 확정."
    }
   ],
   "notes": "산업 그룹 56개로 확정(초안 70 → 병합). 확정 후 임의 변경 금지, 추가만 사유 기록과 함께 허용(소스 01 §1). 반도체 4분할·지루한 산업 카드는 원칙대로 유지. | UPDATE-6 MODE B(딥다이브 통합) 배치 1/6: AI-DC 전력·컴퓨트층 — APLD·CORZ·WULF 신설(RLE-02, DEEP_DIVED), TLN 승격(UTL-02), WMB 리프레시(무변경). 티어 변경 0. 카드 additive 역반영만. | UPDATE-6 B2: AI-DC 네트워킹·광학 — ANET·COHR 승격, AAOI·CRDO·GLW·POET 신설(전부 ITC-06 DEEP_DIVED). GLW=광통신 무게중심 이동으로 ITC-06 primary(유리레그 이월). 티어 변경 0·additive 역반영만. | UPDATE-6 B3: 전력기기+중후장대 — HUBB 승격, POWL·CLF·ARLP 신설. CLF 삼중귀속(MAT-01 primary+DIS-01+IND-03). FPS(Forgent) 팩 불일치로 통합 보류. 티어 변경 0·additive만. | UPDATE-6 B4: 사이버·SW — PANW·FTNT·ZS·NTSK·FFIV·FICO 신설(전부 primary ITC-07). NTSK(Netskope) 추가 반영. FICO=ITC-07+ITC-08 conn·FFIV=ITC-07+ITC-06 conn. FPS 프로젝트 배제(사용자 지시). 티어 변경 0·additive만. | UPDATE-6 B5: 방산·우주·전력반도체 — HEI 승격(IND-02), SATL(IND-02)·VELO(IND-04+IND-02)·WOLF·NVTS(ITC-04) 신설, NVEC 리프레시 무변경. NVTS 추가. WOLF fresh-start 주의. 티어 변경 0·additive만. | UPDATE-6 B6(최종): 헬스+아웃라이어 — ALNY·SHOP 승격, FIVE·HSHP·PURR·NNN·ILMN 신설, TEM 리프레시 무변경. PURR=FIN-02 잠정귀속(택소노미 미대응). SHOP/NNN/ILMN 추가. B1-B6 딥다이브통합 사이클 완료. 티어 변경 0·additive만. | UPDATE-6 최종보정: 딥다이브 후보 원장 구조화 이전 — carry 문자열에 갇혀 있던 UPDATE-5 승인 후보를 monthly_diff 배열(deep_dive_candidates 5·screening_recommendations 3·candidates_withheld 3)로 이전. 각 후보에 falsifier·horizon·verdict_log 3규율 부착. 신규 후보 생성 0. | UPDATE-6 v2.2: 거버넌스 v1.3(REVISIT 트랙) 승인 반영 — deep_dive_candidates에 type/trigger/status 스키마 적용. NEW 5종(OPEN) + REVISIT TLN 1종(PENDING_TRIGGER, UTL-02 승격 연동). 실제 REVISIT 판정은 차기 A타입. 티어·노드·엣지 무변경.",
@@ -117,7 +139,8 @@
    {
     "as_of": "2026-09-05",
     "id": "ITC-03",
-    "issue": "카드 demand 본문의 SEMI WFE 수치가 2026 $135B(+9%)로 남아 있으나 새 원본은 $143.9B(+23.1%). 02 §4 직전 본문 불가침으로 UPDATE-7에서 정정하지 않고 선행지표로 additive 반영. A타입에서 본문 정정."
+    "issue": "카드 demand 본문의 SEMI WFE 수치가 2026 $135B(+9%)로 남아 있으나 새 원본은 $143.9B(+23.1%). 02 §4 직전 본문 불가침으로 UPDATE-7에서 정정하지 않고 선행지표로 additive 반영. A타입에서 본문 정정.",
+    "status": "RESOLVED(UPDATE-8 A-2: 본문 WFE 수치 정정)"
    },
    {
     "as_of": "2026-09-05",
@@ -148,6 +171,16 @@
     "as_of": "2026-09-05",
     "id": "view/candidates",
     "issue": "콘솔 ATLAS_DERIVE가 deep_dive_candidates.status를 읽지 않고 배열 전체를 렌더. 임시 대응은 PACK 측 배열 분리. 차기 뷰 기능 변경 시 status 필터(OPEN·PENDING_TRIGGER만 표시) 추가 권고."
+   },
+   {
+    "as_of": "2026-09-11",
+    "id": "stance_refresh",
+    "issue": "UPDATE-8 스탠스 리프레시 18/96. 78종 zone=UNKNOWN(마지막 관측 보존). 수동 웹 관측 한계 — 가격 리프레시 팩 첨부 방식 제안."
+   },
+   {
+    "as_of": "2026-09-11",
+    "id": "STP-02",
+    "issue": "UPDATE-8 A-1 전용 스캔 미실시(UPDATE-4 freshness 유지). 차기 A타입 재확인."
    }
   ]
  },
@@ -291,7 +324,7 @@
     "utilization_inventory": "OECD 재고 평균 부근, 여유 생산능력은 OPEC+에 집중."
    },
    "balance": "BALANCED",
-   "balance_direction": "지정학 프리미엄으로 일시 조여짐(구조적 아님)",
+   "balance_direction": "지정학 프리미엄 장기화(7개월+, 9월 해상봉쇄·'2029까지' 경고) — '일시' 표현 철회하되 구조적 균형 붕괴는 아님: OPEC+ 여유능력 존재, JPM 수요파괴 관측, 휴전 시 되돌림 위험",
    "cycle_stage": "EXPANSION",
    "leading_indicators": [
     {
@@ -313,6 +346,18 @@
      "name": "OPEC+ 생산정책",
      "last_reading": "감산 규율 유지",
      "as_of": "2026-08"
+    },
+    {
+     "name": "브렌트·WTI(전쟁 프리미엄)",
+     "last_reading": "브렌트 $101~105(9/10), 1개월 전 $87 → +20%; WTI $96~102; OPEC 바스켓 9월 평균 $101.5(8월 $86.4). 美 주간 생산 13,947kb/d",
+     "as_of": "2026-09-11",
+     "source": "UPDATE-8 A-1 스캔"
+    },
+    {
+     "name": "美-이란 전쟁 상태",
+     "last_reading": "美 해상봉쇄, 이란 '더 강한 충돌 준비', 美 관료 '2029-01 임기까지 지속 가능' 경고. JPM 7월 전망(Q3 $86·연말 $78)은 수요파괴 가정 — 현실은 상회",
+     "as_of": "2026-09-11",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -379,12 +424,17 @@
     }
    ],
    "tier": "NEUTRAL",
-   "tier_rationale": "유가 강세는 이란발 지정학 프리미엄이 주도 — 구조적 수요-공급 균형이 깨진 것이 아니라 반전 위험이 큰 일시 현상. §3 상향 트리거(지속적 수요원·구조적 공급차질) 2개 미충족. 지정학 완화 시 되돌림 감시.",
+   "tier_rationale": "유가 강세는 이란발 지정학 프리미엄이 주도 — 구조적 수요-공급 균형이 깨진 것이 아니라 반전 위험이 큰 일시 현상. §3 상향 트리거(지속적 수요원·구조적 공급차질) 2개 미충족. 지정학 완화 시 되돌림 감시. [UPDATE-8] NEUTRAL 유지. S1(공급 차질)은 실물이나 D4는 상충(JPM: 예상 초과 수요 손실·中 수요파괴 사례) → 증거 1개. 유가 $100은 정유(ENE-03)·탱커(IND-07)에 전이되며 상류 자체 물량은 타이트하지 않음(美 생산 13.9Mb/d 증가). INVERSE 엣지(IND-08·DIS-03·MAT-03) PRESSURE 감시 강화.",
    "tier_history": [
     {
      "as_of": "2026-08",
      "tier": "NEUTRAL",
      "reason": "BUILD 1 최초 부여"
+    },
+    {
+     "as_of": "2026-09-11",
+     "tier": "NEUTRAL",
+     "reason": "UPDATE-8 A-2: '일시' 철회·구조적 아님 유지, 증거 1개"
     }
    ],
    "market_read": {
@@ -392,7 +442,8 @@
     "momentum": "가속",
     "note": "유가 강세는 지정학 프리미엄 — 순수 수요 모멘텀 아님"
    },
-   "tier_provisional": false
+   "tier_provisional": false,
+   "tier_rationale_prev": "유가 강세는 이란발 지정학 프리미엄이 주도 — 구조적 수요-공급 균형이 깨진 것이 아니라 반전 위험이 큰 일시 현상. §3 상향 트리거(지속적 수요원·구조적 공급차질) 2개 미충족. 지정학 완화 시 되돌림 감시."
   },
   {
    "id": "ENE-02",
@@ -553,6 +604,18 @@
      "name": "에틸렌·PE 스프레드(석화)",
      "last_reading": "약세(과잉)",
      "as_of": "2026-08"
+    },
+    {
+     "name": "美 디젤 크랙(ULSD-WTI)",
+     "last_reading": "9/1 $106/bbl 사상 최고(8월 첫 $100 돌파); 3-2-1 크랙 $62(9/9); 걸프 ULSD 재고 4주 연속 감소; 美 디젤·가스오일 수출 8월 54.2Mbbl 사상 최고",
+     "as_of": "2026-09-09",
+     "source": "UPDATE-8 A-1 스캔"
+    },
+    {
+     "name": "공급 차질 원천",
+     "last_reading": "이란 전쟁(호르무즈)+러 정제소 피격·디젤 수출 중단; 국제 거래 디젤 손실 최대 ~1.4Mb/d(해상 8~9Mb/d 대비)",
+     "as_of": "2026-08-25",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -607,20 +670,29 @@
     }
    ],
    "tier": "WARM",
-   "tier_rationale": "정유 마진은 구조적 능력 축소(S2)+전쟁 차질(S1)+수요 흡수(D4)로 명백히 타이트 — HEAT급 신호. 다만 마진의 상당 부분이 지정학 프리미엄이라 되돌림 위험이 있고, 같은 노드의 석유화학은 구조적 과잉이라 상쇄. 종합 WARM(정유만 별도 노드로 분리 시 HEAT 후보).",
+   "tier_rationale": "정유 마진은 구조적 능력 축소(S2)+전쟁 차질(S1)+수요 흡수(D4)로 명백히 타이트 — HEAT급 신호. 다만 마진의 상당 부분이 지정학 프리미엄이라 되돌림 위험이 있고, 같은 노드의 석유화학은 구조적 과잉이라 상쇄. 종합 WARM(정유만 별도 노드로 분리 시 HEAT 후보). [UPDATE-8] WARM 유지, HEAT 후보 큐 4순위. 정유 레그 S1(러 디젤 수출 중단·정제소 피격)+S2(美 능력 축소)+D4(디젤 크랙 $106 사상최고 흡수) 3개로 HEAT 자격이나 cap 포화 + 축③ 만개(VLO 'highest conviction long' 유형 컬럼) + 석유화학 과잉 상쇄. ★지침 제안: 정유/석유화학 노드 분리 — 같은 카드 안에서 SHORTAGE와 GLUT가 공존해 티어가 구조적으로 왜곡됨(03 §1 지침 변경 금지에 따라 제안만).",
    "tier_history": [
     {
      "as_of": "2026-08",
      "tier": "WARM",
      "reason": "BUILD 1 최초 부여"
+    },
+    {
+     "as_of": "2026-09-11",
+     "tier": "WARM",
+     "reason": "UPDATE-8 A-2: HEAT 자격·cap 보류(큐 4순위), 노드 분리 제안"
     }
    ],
    "market_read": {
     "consensus": "HIGH",
     "momentum": "만개",
-    "note": "정유주 급등·크랙 스프레드 record — 시장 충분 인지, 되돌림 위험"
+    "note": "정유주 급등·크랙 스프레드 record — 시장 충분 인지, 되돌림 위험",
+    "prev_momentum": "만개",
+    "a1_note": "정유 레그 크랙 신고가 — 축③ 상투 경보 병행",
+    "as_of": "2026-09-11"
    },
-   "tier_provisional": false
+   "tier_provisional": false,
+   "tier_rationale_prev": "정유 마진은 구조적 능력 축소(S2)+전쟁 차질(S1)+수요 흡수(D4)로 명백히 타이트 — HEAT급 신호. 다만 마진의 상당 부분이 지정학 프리미엄이라 되돌림 위험이 있고, 같은 노드의 석유화학은 구조적 과잉이라 상쇄. 종합 WARM(정유만 별도 노드로 분리 시 HEAT 후보)."
   },
   {
    "id": "ENE-04",
@@ -640,8 +712,8 @@
     "barriers": "자본·인허가·장기계약(높음).",
     "utilization_inventory": "터미널 가동률 최대 부근."
    },
-   "balance": "BALANCED",
-   "balance_direction": "수출 수요로 2027 향해 조여짐",
+   "balance": "SHORTAGE",
+   "balance_direction": "전쟁발 카타르·호르무즈 차질(글로벌 LNG ~20%)로 2026~27 조여짐이 앞당겨짐 — EU 저장 5년 최저 하회·美 수출 +23% / 2028~30 글로벌 공급파(~345bcm/yr)가 예정된 역풍",
    "cycle_stage": "EXPANSION",
    "leading_indicators": [
     {
@@ -663,6 +735,24 @@
      "name": "Henry Hub",
      "last_reading": "~$3.3/MMBtu(국내 완만)",
      "as_of": "2026-08"
+    },
+    {
+     "name": "美 LNG 수출(EIA/AGA)",
+     "last_reading": "1H26 17.4 Bcf/d(+23% YoY), YTD 8월 +2.5 Bcf/d(+16.4%); 아시아向 2배+; Golden Pass T1 4/22 첫 카고, T2 6월·T3 12월",
+     "as_of": "2026-09-03",
+     "source": "UPDATE-8 A-1 스캔"
+    },
+    {
+     "name": "글로벌 공급 차질·EU 저장",
+     "last_reading": "호르무즈 영향 ~10 Bcf/d(글로벌 20%, 카타르); EU 저장 65.4%(8/30, 5년 최저 하회); HH-TTF 스프레드 ~$12.6(5월)",
+     "as_of": "2026-09-03",
+     "source": "UPDATE-8 A-1 스캔"
+    },
+    {
+     "name": "걸프 EPC 인력 부족",
+     "last_reading": "2026 걸프 연안 349,000명 부족 — LNG·블루암모니아·DC가 같은 배관공·전기공 경쟁",
+     "as_of": "2026-01",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -710,12 +800,17 @@
     }
    ],
    "tier": "WARM",
-   "tier_rationale": "LNG 수출 능력 램프업(신규 3기)+데이터센터 가스라는 구조적 신규 수요(D1)+near-max 가동(S3). 다만 균형이 본격 조여지는 시점은 2027로 전망돼 확증은 관찰 단계 — WARM.",
+   "tier_rationale": "UPDATE-8: balance BALANCED→SHORTAGE 전환, 티어 WARM 유지(HEAT 후보 큐 5순위). 직전 판정 '2027 향해 조여짐, 관찰 단계'는 전쟁이 시점을 앞당겼다. 증거: S1(공급 차질 실물 — 호르무즈 영향 ~10 Bcf/d, 글로벌 20%) + D2(선행지표 전환 — 美 수출 1H26 17.4 Bcf/d +23%, 아시아向 2배, EU 저장 65.4%로 5년 최저 하회) + S3(터미널 near-max, Golden Pass T2·T3 램프). HEAT 미승격 사유: cap 포화 + 2028~30 공급파(정점 2028 ~95bcm/yr)가 균형 붕괴의 지속성을 제한 — '깨지는 중'이나 시한부. 반증: 휴전으로 카타르 정상화 시 스프레드 급축.",
    "tier_history": [
     {
      "as_of": "2026-08",
      "tier": "WARM",
      "reason": "BUILD 1 최초 부여"
+    },
+    {
+     "as_of": "2026-09-11",
+     "tier": "WARM",
+     "reason": "UPDATE-8 A-2: balance→SHORTAGE(전쟁 앞당김). cap·2028 공급파로 WARM"
     }
    ],
    "market_read": {
@@ -723,7 +818,8 @@
     "momentum": "가속",
     "note": "LNG 테마 알려졌으나 컨센서스 극단 아님"
    },
-   "tier_provisional": false
+   "tier_provisional": false,
+   "tier_rationale_prev": "LNG 수출 능력 램프업(신규 3기)+데이터센터 가스라는 구조적 신규 수요(D1)+near-max 가동(S3). 다만 균형이 본격 조여지는 시점은 2027로 전망돼 확증은 관찰 단계 — WARM."
   },
   {
    "id": "ENE-05",
@@ -761,6 +857,12 @@
      "name": "Henry Hub 가스가격",
      "last_reading": "대체 연료 가격(상대)",
      "as_of": "2026-08"
+    },
+    {
+     "name": "DOE 202(c) 비상명령 누적",
+     "last_reading": "Eddystone 760MW 11/20까지(6번째, 8/21), Orlando Stanton U1 11/30까지(9/1 신규), 15개 석탄발전소 은퇴 연기. PJM 부하 +25GW(DC 15GW) vs 화석 은퇴 17GW. 반대증거: 명령 발전소 실제 발전량 미미(EIA), D.C.순회법원 소송",
+     "as_of": "2026-09-09",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -870,6 +972,18 @@
      "name": "북미 철강 사이클 인플렉션(CLF)",
      "last_reading": "CLF 조정EBITDA -174M(1Q25)→+286M(2Q26)·FCF 2Q26 +$73M 첫 흑전. 턴어라운드 초기(확증 2신호 미달)",
      "as_of": "2026-08"
+    },
+    {
+     "name": "CLF 2Q26 실적·Q3 가이(10-Q·콜)",
+     "last_reading": "2Q26 ASP $1,124/t(+$76 QoQ), 조정EBITDA $286M, FCF 흑전, 자동차 출하 2년래 최고. ★Q3 가이 조정EBITDA $575M(3년래 최고), ASP +$55/t 추가, Q4 추가 인상. 물량 −6% YoY",
+     "as_of": "2026-07-24",
+     "source": "UPDATE-8 A-1 스캔"
+    },
+    {
+     "name": "美 철강 수입·232 관세",
+     "last_reading": "수입 2008년 GFC 이후 최저(232 50%). CLF·NUE 동조 인상. 알루미늄→철강 대체(자동차·가전)",
+     "as_of": "2026-07",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -915,20 +1029,29 @@
     }
    ],
    "tier": "NEUTRAL",
-   "tier_rationale": "글로벌은 구조적 과잉(COLD적)이나 미국은 관세 보호+인프라로 가격·가동률 회복(PPI +13%)이라는 상반 신호가 공존. 순효과 중립. 감시: 중국 감산 실제 이행(P1)과 미국 인프라 발주가 상향 트리거.",
+   "tier_rationale": "글로벌은 구조적 과잉(COLD적)이나 미국은 관세 보호+인프라로 가격·가동률 회복(PPI +13%)이라는 상반 신호가 공존. 순효과 중립. 감시: 중국 감산 실제 이행(P1)과 미국 인프라 발주가 상향 트리거. [UPDATE-8] NEUTRAL 유지(조건부). carry 승격 조건 'Q3 EBITDA ≥$500M'은 CLF 가이던스($575M)로만 충족 — 규율상 실적 하드넘버(10월 말) 확인 전 승격 불가. 실현된 하드넘버: 2Q ASP $1,124(+$76)·FCF 흑전·수입 2008년래 최저(P1)는 상향 방향. 반대: 물량 −6%·OECD 과잉 700Mt. 10월 실적 ≥$500M+FCF 확인 시 차기 WARM.",
    "tier_history": [
     {
      "as_of": "2026-08",
      "tier": "NEUTRAL",
      "reason": "BUILD 1 최초 부여"
+    },
+    {
+     "as_of": "2026-09-11",
+     "tier": "NEUTRAL",
+     "reason": "UPDATE-8 A-2: 승격 조건 가이던스만 충족 — 10월 실적 조건부"
     }
    ],
    "market_read": {
     "consensus": "MID",
-    "momentum": "중립",
-    "note": "미국 관세 포켓만 부분 반영"
+    "momentum": "가속",
+    "note": "미국 관세 포켓만 부분 반영",
+    "prev_momentum": "중립",
+    "a1_note": "관세 포켓 가속 — 글로벌 과잉과 분리",
+    "as_of": "2026-09-11"
    },
-   "tier_provisional": false
+   "tier_provisional": false,
+   "tier_rationale_prev": "글로벌은 구조적 과잉(COLD적)이나 미국은 관세 보호+인프라로 가격·가동률 회복(PPI +13%)이라는 상반 신호가 공존. 순효과 중립. 감시: 중국 감산 실제 이행(P1)과 미국 인프라 발주가 상향 트리거."
   },
   {
    "id": "MAT-02",
@@ -996,6 +1119,18 @@
      "name": "★구리 공급갭 전망 축소(CAT 팩)",
      "last_reading": "2035 공급갭 2025 outlook 30% → 2026 outlook 25%로 하향. 2040까지 구리 수요 +30%·광업 소요자본 $500B는 유지 — 구리 레그 peak_watch 근거 보강",
      "as_of": "2026-08"
+    },
+    {
+     "name": "구리 스퀴즈·완화(LME/SHFE)",
+     "last_reading": "8월 사상최고 $6.83/lb(LME 현물 ~$14,500/t), LME 재고 5월 400kt→205kt(42일 연속↓), 백워데이션 $434(2021 이후 최대) → 8/19 재고 +50% 유입, 스프레드 $176. 9/11 $6.46/lb(−2.0% MoM, +41% YoY), LME 재고 237.7kt(9/8). 성격: 美 관세 선제수입(7월 200kt+)+中 SHFE −82% = 지역분할. ★최종수요 고가 냉각, 양산 프리미엄 $103→$90",
+     "as_of": "2026-09-11",
+     "source": "UPDATE-8 A-1 스캔"
+    },
+    {
+     "name": "희토류 中 통제 강화",
+     "last_reading": "MOFCOM 6/22 美 10개 기업(MP·USA Rare Earth) 이중용도 수출 전면금지(허가제→금지). G7 2030 단일국 60% 미만 합의. 2025-10 광범위 통제 2026-11-27까지 유예. 中 채굴 61%·정련 91%",
+     "as_of": "2026-09-06",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -1074,20 +1209,28 @@
     }
    ],
    "tier": "HEAT",
-   "tier_rationale": "구리 구조적 부족(AI·전력화 수요 D1 + 15~29년 공급 리드타임 S2 + 광산 차질 S1)에 금·은 사상 최고와 중국 전략광물 수출통제(P1)까지 다축 동시 트리거. §3 증거 2개를 크게 상회하는 블록 내 최강 HEAT.",
+   "tier_rationale": "구리 구조적 부족(AI·전력화 수요 D1 + 15~29년 공급 리드타임 S2 + 광산 차질 S1)에 금·은 사상 최고와 중국 전략광물 수출통제(P1)까지 다축 동시 트리거. §3 증거 2개를 크게 상회하는 블록 내 최강 HEAT. [UPDATE-8] HEAT 유지. 구리 레그: 8월 사상최고 후 −2% MoM, 백워데이션 축소, '최종수요 고가 냉각'·양산 프리미엄 하락 — peak_watch 근거 3개(공급갭 전망 30→25%·재고 재유입·수요 냉각). 전략광물 앵커: 中 6/22 美 10사 수출 전면금지(P1 강화), 11/27 유예 만료 캘린더. 분열 유지.",
    "tier_history": [
     {
      "as_of": "2026-08",
      "tier": "HEAT",
      "reason": "BUILD 1 최초 부여"
+    },
+    {
+     "as_of": "2026-09-11",
+     "tier": "HEAT",
+     "reason": "UPDATE-8 A-2: 유지, 구리 peak_watch 강화·전략광물 앵커 강화"
     }
    ],
    "market_read": {
     "consensus": "HIGH",
     "momentum": "가속",
-    "note": "구리 컨센서스 사상 최고·귀금속 record — 인지 높음, 진입 눌림 대기"
+    "note": "구리 컨센서스 사상 최고·귀금속 record — 인지 높음, 진입 눌림 대기",
+    "a1_note": "구리 레그 롤오버 조기신호(수요 냉각) vs 전략광물 앵커 강화 — 분열 유지",
+    "as_of": "2026-09-11"
    },
-   "tier_provisional": false
+   "tier_provisional": false,
+   "tier_rationale_prev": "구리 구조적 부족(AI·전력화 수요 D1 + 15~29년 공급 리드타임 S2 + 광산 차질 S1)에 금·은 사상 최고와 중국 전략광물 수출통제(P1)까지 다축 동시 트리거. §3 증거 2개를 크게 상회하는 블록 내 최강 HEAT."
   },
   {
    "id": "MAT-03",
@@ -1130,6 +1273,12 @@
      "name": "가동률",
      "last_reading": "낮음(과잉)",
      "as_of": "2026-08"
+    },
+    {
+     "name": "유럽·글로벌 능력 청산 누적",
+     "last_reading": "Cefic 2022~25 영구 폐쇄 3,700만t(유럽 capa 9%), 스팀크래커 9기(16%). Dow Böhlen 51만t 2027Q4 등. 글로벌 에틸렌 폐쇄·유휴 2028까지 ~2,100만t(10%). 유럽 산업수요 pre-COVID −25%. 中 신증설 지속",
+     "as_of": "2026-07-13",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -1248,6 +1397,18 @@
      "name": "에너지 비용",
      "last_reading": "소성 원가 변수",
      "as_of": "2026-08"
+    },
+    {
+     "name": "골재 실적(MLM 2Q26)",
+     "last_reading": "출하 61.6Mt(+17%, 유기 +2.3%), 기록 매출·EBITDA, 2026 유기 ASP +4~6% 가이, 매출 가이 $7.2~7.4B 상향. 'DC·에너지·인프라 수요 광범위화'",
+     "as_of": "2026-07-30",
+     "source": "UPDATE-8 A-1 스캔"
+    },
+    {
+     "name": "Dodge 착공(4월 YTD)",
+     "last_reading": "총착공 +5%, 비주거 +19%, 오피스·DC +61%, 주거 −4%(단독 −11%)",
+     "as_of": "2026-06",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -1320,7 +1481,7 @@
     "utilization_inventory": "안정적."
    },
    "balance": "BALANCED",
-   "balance_direction": "완만 균형",
+   "balance_direction": "북미 컨테이너보드 조여짐 — 2025 폐쇄 ~10% capa + 2026 3차 인상(3월 $70·6월 $50~70 실현, 9/1 $80~140 반영 대기) / 수요는 flat",
    "cycle_stage": "EXPANSION",
    "leading_indicators": [
     {
@@ -1337,6 +1498,12 @@
      "name": "이커머스 물량",
      "last_reading": "골판지 수요 지지",
      "as_of": "2026-08"
+    },
+    {
+     "name": "북미 컨테이너보드 가격 인상 웨이브",
+     "last_reading": "2026 3차: 3월 $70 → 6월 $50~70 → 9/1 PCA $140(전례없음)·SW $100·IP $80·Cascades $110. 배경 2025 폐쇄 ~10% capa+재활용섬유·운임·전기 원가. 8월 가격 보합(9월 반영 대기). 반대: AICC '원가 정당화 안 됨', IP 연간 수요 flat, SBS 과잉",
+     "as_of": "2026-08-25",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -1388,21 +1555,30 @@
      "role": null
     }
    ],
-   "tier": "NEUTRAL",
-   "tier_rationale": "필수소비 연동의 방어적 안정 산업으로 급성 트리거 부재. as-of 정밀도 보통. 원가(수지·펄프) 하락 시 마진 개선이 완만한 상향 요인.",
+   "tier": "WARM",
+   "tier_rationale": "UPDATE-8 승격 NEUTRAL→WARM. §3 증거: S1(공급 퇴출 실물 — 2025 북미 폐쇄 ~10% capa) + D4(가격 인상 흡수 — 2026 1차 3월 $70·2차 6월 $50~70가 실현, 연초 대비 순 +$50/t 이상 정착) + 3차(9/1 PCA $140 전례없음·SW $100·IP $80) 공표. '조짐 있으나 확증 부족'(WARM 정의)에 정확히 부합 — 확증은 9월 PPW 실현율. 반증: AICC 주장대로 3차가 미실현·되돌림, IP 수요 전망 flat 지속 시 NEUTRAL 복귀. 원가(재활용섬유·전기·운임) 상승분 전가가 마진 변수.",
    "tier_history": [
     {
      "as_of": "2026-08",
      "tier": "NEUTRAL",
      "reason": "BUILD 1 최초 부여"
+    },
+    {
+     "as_of": "2026-09-11",
+     "tier": "WARM",
+     "reason": "UPDATE-8 A-2: S1(폐쇄 10%)+D4(인상 2회 실현), 3차 실현율이 확증 조건"
     }
    ],
    "market_read": {
     "consensus": "LOW",
-    "momentum": "중립",
-    "note": ""
+    "momentum": "초기",
+    "note": "",
+    "prev_momentum": "중립",
+    "a1_note": "3차 인상 실현 여부가 D4 판정",
+    "as_of": "2026-09-11"
    },
-   "tier_provisional": false
+   "tier_provisional": false,
+   "tier_rationale_prev": "필수소비 연동의 방어적 안정 산업으로 급성 트리거 부재. as-of 정밀도 보통. 원가(수지·펄프) 하락 시 마진 개선이 완만한 상향 요인."
   },
   {
    "id": "MAT-06",
@@ -1450,6 +1626,18 @@
      "name": "배터리 소재 상업화 문턱(SES)",
      "last_reading": "드론셀은 샘플·인증·라인감사 단계로 확정 물량 백로그 미공시, 소재는 2차 테스트 ~6곳 — 수요 서사와 계약 증거 사이 간극이 여전",
      "as_of": "2026-08"
+    },
+    {
+     "name": "탄산리튬 가격(Benchmark/中)",
+     "last_reading": "CIF아시아 $19,750/t(9/2, −0.8% WoW), 수산화 $18,750, 스포듀민 $2,254. 中 EXW ¥150~160k → 9/9 ¥145,750(−1.15%, 재고 잉여). 1월 고점 $24~26k. Fastmarkets 2026 $23.8/kg·2027 $31.4/kg 상향(ESS 수요 +45%)",
+     "as_of": "2026-09-09",
+     "source": "UPDATE-8 A-1 스캔"
+    },
+    {
+     "name": "공급 차질 vs 수요",
+     "last_reading": "CATL Jianxiawo 환경평가 취소(재개 불투명), Zimbabwe 정광 수출 제한, CATL NCM 셀 감산 보도; BYD 2월 −40% YoY",
+     "as_of": "2026-09-02",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -1567,6 +1755,18 @@
      "name": "LNG선 신조가",
      "last_reading": "174,000㎥ 약 $248.5M",
      "as_of": "2026-05"
+    },
+    {
+     "name": "클락슨 신조선가지수(8월말)",
+     "last_reading": "186.34(+0.85 MoM; 6월 185.15→7월 185.49→8월 186.34 3개월 연속↑, 5년 전 대비 +28%). VLCC $131.0M 사상최고(기존 2024-04 $130.5M 경신), LNG선 $248.5M(YoY −$6.5M), 대형컨선 $254M(하락) — 선종 분열",
+     "as_of": "2026-09-04",
+     "source": "UPDATE-8 A-1 스캔"
+    },
+    {
+     "name": "발주·잔고(8월)",
+     "last_reading": "세계 420만CGT(−24% YoY, −29% MoM); 韓 31만CGT(7%) vs 中 359만CGT(85%). 1~8월 누적 5,972만CGT(+60.6% YoY), 韓 16%·中 76%, 韓 누적 +55%. 잔고 韓 3,796만CGT(18%)·中 1억4,539만CGT(67%), 韓 3년치",
+     "as_of": "2026-09-04",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -1608,20 +1808,30 @@
     }
    ],
    "tier": "HEAT",
-   "tier_rationale": "§3 트리거 다수 충족: S2(장기 불황 후 야드 퇴출로 증설 절벽)+S3(수주잔고 17년래 최고·슬롯 매진)+D1(LNG 무역 확장이라는 신규 수요원). 수급 균형이 공급부족으로 실제 조여짐. 단 신조선가지수가 사상 최고(189) 근접 → 가격 상단 여지는 제한적이라는 반론 병기.",
+   "tier_rationale": "§3 트리거 다수 충족: S2(장기 불황 후 야드 퇴출로 증설 절벽)+S3(수주잔고 17년래 최고·슬롯 매진)+D1(LNG 무역 확장이라는 신규 수요원). 수급 균형이 공급부족으로 실제 조여짐. 단 신조선가지수가 사상 최고(189) 근접 → 가격 상단 여지는 제한적이라는 반론 병기. [UPDATE-8] 강등 tripwire('신조선가 하락 전환') 미점등 — 오히려 3개월 연속 재상승·VLCC 사상최고(IND-07 탱커 강세 교차). 직전 '평탄화·로테이션-아웃 최유력' 판정 철회, peak_watch 해제. 선종 분열(VLCC↑ / LNG선·대형컨선↓)은 감시. HEAT 유지.",
    "tier_history": [
     {
      "as_of": "2026-08",
      "tier": "HEAT",
      "reason": "BUILD 2 최초 부여"
+    },
+    {
+     "as_of": "2026-09-11",
+     "tier": "HEAT",
+     "reason": "UPDATE-8 A-2: 강등 조건 미충족(신조선가 재상승), peak_watch 해제"
     }
    ],
    "market_read": {
     "consensus": "MID",
     "momentum": "가속",
-    "note": "한국 조선주 re-rating 진행 중이나 서구 투자자 인지는 아직 '무역전쟁 트레이드'로 과소평가(선대 교체 20년 사이클 저평가)"
+    "note": "한국 조선주 re-rating 진행 중이나 서구 투자자 인지는 아직 '무역전쟁 트레이드'로 과소평가(선대 교체 20년 사이클 저평가)",
+    "prev_momentum": "가속",
+    "a1_note": "선가 재상승 — 평탄화 판정 철회",
+    "as_of": "2026-09-11",
+    "a2_note": "UPDATE-8: '신조선가 평탄화(185.01→185.15)' 판정 철회 — 6→7→8월 185.15→185.49→186.34 3개월 연속 재상승, VLCC $131.0M 사상최고. 韓 점유 잠식은 선별수주(척당 42% 우위·누적 +55%)로 물량 문제 아님"
    },
-   "tier_provisional": false
+   "tier_provisional": false,
+   "tier_rationale_prev": "§3 트리거 다수 충족: S2(장기 불황 후 야드 퇴출로 증설 절벽)+S3(수주잔고 17년래 최고·슬롯 매진)+D1(LNG 무역 확장이라는 신규 수요원). 수급 균형이 공급부족으로 실제 조여짐. 단 신조선가지수가 사상 최고(189) 근접 → 가격 상단 여지는 제한적이라는 반론 병기."
   },
   {
    "id": "IND-02",
@@ -1674,6 +1884,18 @@
      "name": "방산·우주 애프터마켓/EO 수주(HEI·SATL)",
      "last_reading": "HEI FSG 유기 +19%·영업이익률 26.2%; SATL 방산 persistent EO $18M+·주권 NewSat $12M",
      "as_of": "2026-08"
+    },
+    {
+     "name": "프라임 잔고·가이던스(2Q26)",
+     "last_reading": "LMT 잔고 $230.4B(+38.3% YoY), RTX $289B(+22%; 상업 $170B·방산 $119B), NOC 기록 $95.6B. LMT·RTX 2026 가이 상향(7/23). 다년 프레임워크(Patriot·THAAD·PrSM 생산 3~4배, Tomahawk·AMRAAM) 잔고 미반영",
+     "as_of": "2026-08-05",
+     "source": "UPDATE-8 A-1 스캔"
+    },
+    {
+     "name": "FY27 예산 경로",
+     "last_reading": "요청 $1.5T(기본 $1.15T+화해 $350B). 하원 NDAA $1.15T 통과; 화해 $350B는 표결 불확실('Reconciliation 3.0' 하원안 방산 $60B만). 美-이란 전쟁 격화(9월)로 재고 소진 가속",
+     "as_of": "2026-09-11",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -1854,6 +2076,18 @@
      "name": "가스터빈 확보(NEE)",
      "last_reading": "초기 가스터빈 4GW 확보 — 발전설비 슬롯 자체가 희소재",
      "as_of": "2026-08"
+    },
+    {
+     "name": "GEV 2Q26 잔고·리드타임",
+     "last_reading": "Power 주문 $16.7B(+134% 유기), 가스터빈 잔고+슬롯 116GW(확정 53GW·슬롯예약 63GW; 3개월 전 100GW), 연말 125GW 목표. Electrification RPO $44.6B(+64% YoY). 리드타임: 대형 변압기 128주, 변전소 변압기 160주+, HV 변압기 ABB·Siemens·Hitachi 48~60개월·GEV 60개월+",
+     "as_of": "2026-09-05",
+     "source": "UPDATE-8 A-1 스캔"
+    },
+    {
+     "name": "Siemens Energy 그리드(FY3Q26)",
+     "last_reading": "그리드 잔고 €51B 기록, 변압기 주문 +28%, book-to-bill 1.48; 변압기·GIS 신규 capa +50%는 2030까지 없음. 가스터빈 확정 잔고 69GW. 산업 2Q26 가스터빈 38GW 기록 분기",
+     "as_of": "2026-08-09",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -2005,6 +2239,12 @@
      "name": "딜러 소매(CAT, 비감사·방향성)",
      "last_reading": "북미 건설기계 +27%·세계 건설 +22%·광산HC/Q&A +15%·철도 +272%",
      "as_of": "2026-08"
+    },
+    {
+     "name": "ISM 제조업 8월",
+     "last_reading": "54.6(7월 55.6, 컨센 55.2 하회), 8개월 연속 확장. 신규주문 53.7(−3.0), 잔고 51.8(−3.2), 생산 58.3, 공급자납기 59.3(둔화 지속=병목), 가격 71.1, 고용 51.2, 고객재고 42.8 'too low'",
+     "as_of": "2026-09-01",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -2108,8 +2348,8 @@
     "barriers": "중간~높음 — 실적·인증·인력, 전력시공은 인력 확보가 해자.",
     "utilization_inventory": "전력·데이터센터 시공 백로그 높음."
    },
-   "balance": "BALANCED",
-   "balance_direction": "전력·데이터센터向 조여짐",
+   "balance": "SHORTAGE",
+   "balance_direction": "분열 — 전력·데이터센터·LNG·산업 EPC 조여짐(숙련 인력 병목이 binding; 상장 E&C 경제성을 지배) / 일반 상업·주거 건설 풀림(총건설 SAAR −3.2%)",
    "cycle_stage": "EXPANSION",
    "leading_indicators": [
     {
@@ -2146,6 +2386,12 @@
      "name": "E&C 마진 실현",
      "last_reading": "EME 전기 13.9%·기계 12.5%·MYRG C&I 8.5%(2024 3.2%)·PWR Electric 11.5% — 수요가 마진으로 전환 확인",
      "as_of": "2026-08"
+    },
+    {
+     "name": "걸프 EPC 인력 부족(교차)",
+     "last_reading": "2026 걸프 연안 349,000명 부족 — LNG·블루암모니아·하이퍼스케일 DC가 동일 배관공·전기공·용접공 경쟁 (BLS 전기공 72,700 공석과 정합)",
+     "as_of": "2026-01",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -2216,12 +2462,17 @@
     }
    ],
    "tier": "WARM",
-   "tier_rationale": "§3: D1(데이터센터·리쇼어링 신규 수요)+D3(하이퍼스케일러·산업 capex 상향). 전력시공은 HEAT급이나 일반 EPC 혼조로 산업 전체는 WARM. 전력·데이터센터 노출 종목이 트리거 순노출.",
+   "tier_rationale": "UPDATE-8: balance BALANCED→SHORTAGE(포켓 지배)로 전환, 티어는 WARM 유지(HEAT cap 8/8 포화 — HEAT 후보 큐 2순위). BALANCE_CHANGE 증거: S3(잔고·리드타임 — 딥다이브 8종 일제 사상권: PWR RPO $33.55B·EME +43.9%·MTZ $21.39B·MYRG $3.16B·KBR $17.8B·ACM B/B 1.6x) + S2 유사(공급 절벽이 자본이 아닌 인력 — BLS 전기공 연 72,700·배관공 42,000 공석, 걸프 EPC 349,000명 부족) + D1(DC라는 신규 수요원, J ANR 11% AI DC 직결) + D3(하이퍼스케일러 capex $775~815B, GEV Power 주문 +134%). 마진 실현(EME 전기 13.9%·MYRG C&I 3.2→8.5%)이 부족의 가격 증거. §3 기준 HEAT 자격을 갖췄으나 강등 근거를 갖춘 HEAT 인컴번트가 없어 승격 보류. 반증: DC 착공 둔화·금리 인상으로 대형 프로젝트 지연 시 SHORTAGE 철회.",
    "tier_history": [
     {
      "as_of": "2026-08",
      "tier": "WARM",
      "reason": "BUILD 2 최초 부여"
+    },
+    {
+     "as_of": "2026-09-11",
+     "tier": "WARM",
+     "reason": "UPDATE-8 A-2: balance→SHORTAGE(포켓). HEAT 자격 충족·cap 포화로 보류(큐 2순위)"
     }
    ],
    "market_read": {
@@ -2229,7 +2480,8 @@
     "momentum": "가속",
     "note": "Quanta·EMCOR 등 전력시공은 재평가 진행, 대형 EPC는 컨센서스 온건 — 종목 선별이 관건"
    },
-   "tier_provisional": false
+   "tier_provisional": false,
+   "tier_rationale_prev": "§3: D1(데이터센터·리쇼어링 신규 수요)+D3(하이퍼스케일러·산업 capex 상향). 전력시공은 HEAT급이나 일반 EPC 혼조로 산업 전체는 WARM. 전력·데이터센터 노출 종목이 트리거 순노출."
   },
   {
    "id": "IND-06",
@@ -2267,6 +2519,18 @@
      "name": "트럭 화물 사이클",
      "last_reading": "침체 후 완만 회복",
      "as_of": "2026-06"
+    },
+    {
+     "name": "UP-NS 합병 절차",
+     "last_reading": "STB 8/18 절차 재개(응답신청 11/18 마감), 결정 시점 미공표. 반대: BNSF·CPKC·화주·3개 노조·7개 주 AG. 응용: 트럭 210만 로드 전환·인터모달 30.3만 컨테이너 이전 주장",
+     "as_of": "2026-09-10",
+     "source": "UPDATE-8 A-1 스캔"
+    },
+    {
+     "name": "디젤 원가(ENE-03 INVERSE)",
+     "last_reading": "美 디젤 크랙 $106 사상최고(9/1) → 트럭 운임 전가 여부 감시. J.B. Hunt '트럭 시장 구조적 전환'",
+     "as_of": "2026-09-01",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -2361,8 +2625,8 @@
     "utilization_inventory": "컨테이너 공급 과잉 압력, 홍해 정상화 시 선복 방출로 운임 하방."
    },
    "balance": "BALANCED",
-   "balance_direction": "컨테이너 풀림(과잉) vs 탱커·가스 조여짐(분열)",
-   "cycle_stage": "PEAK",
+   "balance_direction": "분열 심화 — 탱커·가스·LNG선 조여짐(호르무즈 사실상 폐쇄 7개월+·STS 환적 57%·20년령 선가 +78~90%) vs 컨테이너 구조 과잉(2023~27 선복 +36%)",
+   "cycle_stage": "PEAK(컨테이너) / EXPANSION(탱커·가스)",
    "leading_indicators": [
     {
      "name": "SCFI(컨테이너)",
@@ -2388,6 +2652,18 @@
      "name": "케이프 운임 사이클(HSHP)",
      "last_reading": "BCI 5TC $36.3k/day(Q2 green>32)·gross TCE $51.2k/day(Jul)·가동률 99.7%. 현재 운임 강세이나 IND-01 신조 잔고發 향후 선복 공급과잉이 2홉 약세 감시",
      "as_of": "2026-08"
+    },
+    {
+     "name": "탱커 운임·비용(호르무즈)",
+     "last_reading": "VLCC AG-China $469k/day(6/25 첫 재진입 fixture), 1H26 美걸프-극동 VLCC +166% YoY(~$120k/day), VLCC 호르무즈 왕복 비용 ~$20M(≈$10/bbl, TotalEnergies), 제품선은 최대 $50/bbl. 7월 걸프 원유 수출 57% STS 환적(전년 12%). 20년령 VLCC 가치 +78~90% YoY, 폐선 급감",
+     "as_of": "2026-09-09",
+     "source": "UPDATE-8 A-1 스캔"
+    },
+    {
+     "name": "컨테이너 운임",
+     "last_reading": "SCFI 3,206(7/31, 3주 하락 후 반등), Drewry WCI $4,526/FEU(+4%, 8월), 연료할증. '소프트 메인라인 vs 타이트 중동' 분열",
+     "as_of": "2026-08-28",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -2447,21 +2723,30 @@
      "role": null
     }
    ],
-   "tier": "NEUTRAL",
-   "tier_rationale": "산업 전체로는 균형 — 컨테이너 구조 과잉(홍해 정상화 시 하방)과 탱커·가스 강세가 상쇄. 지정학 프리미엄은 ENE-01과 같은 '일시 조임'이라 구조적 균형 붕괴 아님. 탱커·가스 서브가 강하나 산업 카드는 NEUTRAL, 컨테이너는 COLD-lean으로 표기.",
+   "tier": "WARM",
+   "tier_rationale": "UPDATE-8 승격 NEUTRAL→WARM. 직전 판정은 '지정학 프리미엄은 ENE-01과 같은 일시 조임'이었으나, 美-이란 전쟁이 2월 개전 후 7개월 지속·9월 해상봉쇄로 격화·美 관료 '2029까지' 경고로 '일시' 전제가 성립하지 않는다. 탱커 레그 §3 증거: S1(공급 차질 실물 — 호르무즈 통항 위험으로 톤마일 흡수, 7월 걸프 원유 수출 57% STS, VLCC 왕복 $20M) + D4(운임 흡수 — VLCC $469k/day, 1H26 美걸프-극동 +166%, 20년령 VLCC 가치 +78~90%·폐선 급감) + IND-01 교차(VLCC 신조가 $131M 사상최고). 컨테이너 과잉이 산업 전체 HEAT를 막음 → WARM. 반증: 휴전·호르무즈 정상화 시 탱커 운임 급락(되돌림 위험 상존).",
    "tier_history": [
     {
      "as_of": "2026-08",
      "tier": "NEUTRAL",
      "reason": "BUILD 2 최초 부여"
+    },
+    {
+     "as_of": "2026-09-11",
+     "tier": "WARM",
+     "reason": "UPDATE-8 A-2: 탱커 레그 S1+D4, 전쟁 장기화로 '일시' 전제 철회"
     }
    ],
    "market_read": {
     "consensus": "MID",
-    "momentum": "롤오버",
-    "note": "컨테이너 운임은 홍해 정상화 기대로 롤오버 위험, 탱커·가스는 별개 강세. 산업 통합 티어는 절제"
+    "momentum": "가속",
+    "note": "컨테이너 운임은 홍해 정상화 기대로 롤오버 위험, 탱커·가스는 별개 강세. 산업 통합 티어는 절제",
+    "prev_momentum": "롤오버",
+    "a1_note": "탱커·가스 레그 가속, 컨테이너 과잉 — 분열 심화",
+    "as_of": "2026-09-11"
    },
-   "tier_provisional": false
+   "tier_provisional": false,
+   "tier_rationale_prev": "산업 전체로는 균형 — 컨테이너 구조 과잉(홍해 정상화 시 하방)과 탱커·가스 강세가 상쇄. 지정학 프리미엄은 ENE-01과 같은 '일시 조임'이라 구조적 균형 붕괴 아님. 탱커·가스 서브가 강하나 산업 카드는 NEUTRAL, 컨테이너는 COLD-lean으로 표기."
   },
   {
    "id": "IND-08",
@@ -2499,6 +2784,12 @@
      "name": "기재 인도 지연",
      "last_reading": "보잉·에어버스 병목(공급 제약)",
      "as_of": "2026-06"
+    },
+    {
+     "name": "연료비·운임(2Q26)",
+     "last_reading": "DAL 연료비 $4.4B(+77%, $3.93/gal), 운임 +11~12%, 조정세전 $1.4B. UAL 연간 추가 연료비 $6B. 용량 성장 −3.5%p. 7월 제트유 현물 <$2.80/gal → 9월 유가 $100 재급등·제트 크랙 재확대",
+     "as_of": "2026-09-09",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -2586,8 +2877,8 @@
     "utilization_inventory": "재고 회전이 핵심 지표, 산업 회복 시 물량 증가."
    },
    "balance": "BALANCED",
-   "balance_direction": "산업 반등에 완만 조여짐",
-   "cycle_stage": "RECOVERY",
+   "balance_direction": "산업 반등에 조여짐(가속) — 일매출 14개월 연속 두자릿수, 고객재고 too low",
+   "cycle_stage": "EXPANSION",
    "leading_indicators": [
     {
      "name": "ISM 제조업 PMI",
@@ -2603,6 +2894,18 @@
      "name": "MRO 대형사 매출 모멘텀",
      "last_reading": "완만 개선",
      "as_of": "2026-06"
+    },
+    {
+     "name": "FAST 일매출(8월)",
+     "last_reading": "+16.6% YoY(7월 +15.5%), 14개월 연속 두자릿수, 2022-07 이후 최강. 美 +15.5%·캐나다/멕시코 +20.7%·ROW +28.4%; 생산용 직접자재 +19.1%, MRO 소폭 둔화, 비주거 건설 감속",
+     "as_of": "2026-09-04",
+     "source": "UPDATE-8 A-1 스캔"
+    },
+    {
+     "name": "GWW 2Q26",
+     "last_reading": "매출 $5.02B(+10.3%), 영업마진 16.1%(14.9%→), 순이익 +18.3%, 연간 가이 상향. Endless Assortment 유기 +20.6%",
+     "as_of": "2026-08-05",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -2648,21 +2951,31 @@
      "role": null
     }
    ],
-   "tier": "NEUTRAL",
-   "tier_rationale": "§3 상향 트리거 미충족(회복 초입·확증 부족). 산업 사이클 반등의 완만한 파생 수혜지만 균형 미붕괴. 제조 반등이 지속되면 WARM 승격 후보(감시).",
+   "tier": "WARM",
+   "tier_rationale": "UPDATE-8 승격 NEUTRAL→WARM. §3 증거: D2(선행지표 방향전환 — FAST 일매출 +16.6% YoY, 14개월 연속 두자릿수, 2022-07 이후 최강, 전 지역·생산용 직접자재 가속) + S4(재고 사이클 바닥 — ISM 고객재고 42.8 'too low', 보충 여지) + D3 보조(GWW 연간 가이 상향·영업마진 16.1%). ISM 8월 신규주문 감속(56.7→53.7)과 상충하나 유통사 실물 판매가 서베이를 선행. 공급은 탄력적(재고 기반)이라 HEAT 아님. 유지 근거는 실물 판매 가속 지속 여부.",
    "tier_history": [
     {
      "as_of": "2026-08",
      "tier": "NEUTRAL",
      "reason": "BUILD 2 최초 부여"
+    },
+    {
+     "as_of": "2026-09-11",
+     "tier": "WARM",
+     "reason": "UPDATE-8 A-2: D2+S4 충족 — FAST 14개월 두자릿수·ISM 고객재고 too low"
     }
    ],
    "market_read": {
     "consensus": "MID",
-    "momentum": "초기",
-    "note": "산업 반등의 후행 수혜. 전기·데이터센터 유통(WESCO 등)이 상대 우위"
+    "momentum": "가속",
+    "note": "산업 반등의 후행 수혜. 전기·데이터센터 유통(WESCO 등)이 상대 우위",
+    "prev_consensus": "MID",
+    "prev_momentum": "초기",
+    "a1_note": "14개월 두자릿수 — 실물 판매 가속",
+    "as_of": "2026-09-11"
    },
-   "tier_provisional": false
+   "tier_provisional": false,
+   "tier_rationale_prev": "§3 상향 트리거 미충족(회복 초입·확증 부족). 산업 사이클 반등의 완만한 파생 수혜지만 균형 미붕괴. 제조 반등이 지속되면 WARM 승격 후보(감시)."
   },
   {
    "id": "UTL-01",
@@ -2720,6 +3033,12 @@
      "name": "신규 공급 파이프(NEE/NEER)",
      "last_reading": "백로그 24GW(3Q24)→35.1GW(2Q26), 가스허브 최대 10GW(초기자금 $3.3B, 2028년말 최초 가동~2032 완공), Duane Arnold 재가동 2029 Q1 이전",
      "as_of": "2026-08"
+    },
+    {
+     "name": "PJM 용량시장(2027/28 BRA·IMM)",
+     "last_reading": "$329.17/MW-day 캡 2연속, 신뢰도 요건 6,516.6MW(UCAP) 미달 — 18년 역사상 첫 미달. DC 부하가 비용의 40%($6.5B/$16.4B), 3회 경매 누적 $21.3B(45%). 정치 역풍: VA SB253 대형부하 요금, NJ PJM 탈퇴 검토, 캡 연장 요구",
+     "as_of": "2026-07-28",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -2886,6 +3205,18 @@
      "name": "DC 전력 수요 배경(OKLO 팩)",
      "last_reading": "미 데이터센터 전력비중 2030 중심 11.8%(9.5~15.3%)·PJM 10년 하계피크 CAGR 3.6%·순전력량 5.3%",
      "as_of": "2026-09"
+    },
+    {
+     "name": "우라늄·SWU 가격",
+     "last_reading": "장기가 $96/lb(2026-09, 18년래 최고; 2025 내내 ~$85), 현물 $89.5(8/21), 1/28 피크 $100.25. SWU 현물 ~$200(pre-2022 대비 3배), 서방 농축 capa +4%. 2035까지 유틸 수요 52% 미커버. Urenco USA 2.1M SWU 착공(2036까지)",
+     "as_of": "2026-09-08",
+     "source": "UPDATE-8 A-1 스캔"
+    },
+    {
+     "name": "하이퍼스케일러 원자력 PPA",
+     "last_reading": "VST-Meta 2.6GW(우프레이트 433MW 포함, 2050년대까지), VST-AWS 1.2GW Comanche Peak(2027Q4 가동), CEG-Meta 1.1GW. CEG 주가 10월 고점 대비 −25%(2026 EPS 가이 미스) — 프리미엄 침식",
+     "as_of": "2026-04",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -2970,7 +3301,7 @@
     }
    ],
    "tier": "WARM",
-   "tier_rationale": "구조적 수요-공급 격차 확대 신호 강화: CCJ·LEU 딥다이브가 2030년 이후 미국 유틸 계약공백 급확대(2030 12Mlb→2035 36Mlb), 현물/장기가 $86/$95.5, WNA 원전용량 2040년 배증(398→746GWe), 러시아 농축 의존 탈피(HALEU 실증)를 정량 확인. §3 상향 트리거 2개(D1 지속적 신규 수요원 · S1 구조적 공급차질) 충족 수준. 다만 HEAT 한도(8/56 포화) 규율에 따라 이번 갱신은 WARM 유지 — 1순위 HEAT 후보로 등록, 다음 정식 월간 전면스캔에서 롤오버 감시 중인 ITC-05(메모리)와의 로테이션으로 승격 여부 판정. 실행 리스크(우라늄 외부구매 누수·원심분리기 반복제조 미검증)는 상쇄 요인. [UPDATE-3] VST 딥다이브가 데이터센터 전력수요·PJM 용량가 급등·원전 희소성을 재확인 — UTL-02 HEAT 후보 근거 추가 보강(CCJ·LEU에 이어 3번째 상류/발전 딥다이브 corroboration). 티어는 규율에 따라 WARM 유지, 로테이션 판정은 다음 정식 전면스캔의 재채점으로 이관(ITC-05는 최유력 강등 후보이나 전면 재채점 대상).",
+   "tier_rationale": "구조적 수요-공급 격차 확대 신호 강화: CCJ·LEU 딥다이브가 2030년 이후 미국 유틸 계약공백 급확대(2030 12Mlb→2035 36Mlb), 현물/장기가 $86/$95.5, WNA 원전용량 2040년 배증(398→746GWe), 러시아 농축 의존 탈피(HALEU 실증)를 정량 확인. §3 상향 트리거 2개(D1 지속적 신규 수요원 · S1 구조적 공급차질) 충족 수준. 다만 HEAT 한도(8/56 포화) 규율에 따라 이번 갱신은 WARM 유지 — 1순위 HEAT 후보로 등록, 다음 정식 월간 전면스캔에서 롤오버 감시 중인 ITC-05(메모리)와의 로테이션으로 승격 여부 판정. 실행 리스크(우라늄 외부구매 누수·원심분리기 반복제조 미검증)는 상쇄 요인. [UPDATE-3] VST 딥다이브가 데이터센터 전력수요·PJM 용량가 급등·원전 희소성을 재확인 — UTL-02 HEAT 후보 근거 추가 보강(CCJ·LEU에 이어 3번째 상류/발전 딥다이브 corroboration). 티어는 규율에 따라 WARM 유지, 로테이션 판정은 다음 정식 전면스캔의 재채점으로 이관(ITC-05는 최유력 강등 후보이나 전면 재채점 대상). [UPDATE-8] 5번째 corroboration: 우라늄 장기가 $96/lb(18년래 최고), SWU 현물 ~$200(3배)·서방 농축 capa +4%(S2 확정), 2035까지 유틸 수요 52% 미커버, VST-Meta 2.6GW·AWS 1.2GW PPA(D1). 발전·연료·부품·신설 4개 레그 딥다이브 완료. §3 HEAT 자격 충족. 그러나 A-1 전면스캔에서 HEAT 8종 전부 유지 근거 2개+·강등 tripwire 0 점등(IND-01 신조선가 재상승) → 03 §2(b) 정성 타이브레이크로도 내릴 인컴번트를 특정할 수 없어 WARM 유지. HEAT 후보 큐 1순위 불변. 승격 체인: HEAT 인컴번트 중 역신호 2개 발생 시 즉시 로테이션.",
    "tier_history": [
     {
      "as_of": "2026-08",
@@ -2991,6 +3322,11 @@
      "as_of": "2026-08-24",
      "tier": "WARM",
      "reason": "UPDATE-3: VST 딥다이브 corroboration으로 HEAT 후보 강화, HEAT 한도·B타입 규율로 WARM 유지"
+    },
+    {
+     "as_of": "2026-09-11",
+     "tier": "WARM",
+     "reason": "UPDATE-8 A-2: HEAT 자격 충족, 인컴번트 강등 근거 부재로 보류(큐 1순위)"
     }
    ],
    "market_read": {
@@ -2998,7 +3334,8 @@
     "momentum": "만개",
     "note": "AI-원자력 넥서스 내러티브 만개, CEG·VST·OKLO 큰 재평가. 구조는 진짜지만 컨센서스 HIGH → 눌림 대기. SMR 개발사는 상투 경보"
    },
-   "tier_provisional": false
+   "tier_provisional": false,
+   "tier_rationale_prev": "구조적 수요-공급 격차 확대 신호 강화: CCJ·LEU 딥다이브가 2030년 이후 미국 유틸 계약공백 급확대(2030 12Mlb→2035 36Mlb), 현물/장기가 $86/$95.5, WNA 원전용량 2040년 배증(398→746GWe), 러시아 농축 의존 탈피(HALEU 실증)를 정량 확인. §3 상향 트리거 2개(D1 지속적 신규 수요원 · S1 구조적 공급차질) 충족 수준. 다만 HEAT 한도(8/56 포화) 규율에 따라 이번 갱신은 WARM 유지 — 1순위 HEAT 후보로 등록, 다음 정식 월간 전면스캔에서 롤오버 감시 중인 ITC-05(메모리)와의 로테이션으로 승격 여부 판정. 실행 리스크(우라늄 외부구매 누수·원심분리기 반복제조 미검증)는 상쇄 요인. [UPDATE-3] VST 딥다이브가 데이터센터 전력수요·PJM 용량가 급등·원전 희소성을 재확인 — UTL-02 HEAT 후보 근거 추가 보강(CCJ·LEU에 이어 3번째 상류/발전 딥다이브 corroboration). 티어는 규율에 따라 WARM 유지, 로테이션 판정은 다음 정식 전면스캔의 재채점으로 이관(ITC-05는 최유력 강등 후보이나 전면 재채점 대상)."
   },
   {
    "id": "UTL-03",
@@ -3056,6 +3393,12 @@
      "name": "개발 백로그(NEE/NEER)",
      "last_reading": "2Q26 백로그 35.1GW·신규 3.6GW(배터리 2.0GW)·2026~32 개발기대 76.6~107.6GW",
      "as_of": "2026-08"
+    },
+    {
+     "name": "OBBBA 안전항 마감 경과",
+     "last_reading": "태양광·풍력 착공 마감 2026-07-04 경과(2027-12-31 가동 조건), 저장(BESS) 2033까지 풀 크레딧·2034 75%·2035 50%. FEOC 비율 태양광 2026 50%→2030 85%, 배터리 60%→85%. Deloitte '시장 수요가 정책 이동에도 재생 지지'",
+     "as_of": "2026-08-21",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -3174,6 +3517,12 @@
      "name": "상수도 자본투자",
      "last_reading": "노후 인프라 교체 지속",
      "as_of": "2026-06"
+    },
+    {
+     "name": "수도 PFAS capex",
+     "last_reading": "H2O America 2026~30 capex $2.7B(+31%, PFAS ~$400M), 요금기준 2030 $5.1B, EPS 성장 6~8%. CWT PFAS 추가 ~$235M 미반영, 2026 $50~70M",
+     "as_of": "2026-02-26",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -3271,6 +3620,12 @@
      "name": "커스텀 ASIC 수주(AVGO/MRVL 코멘트)",
      "last_reading": "TSMC capa 제약을 공급 한계로 명시",
      "as_of": "2026-03"
+    },
+    {
+     "name": "NVDA FY27Q2·하이퍼스케일러 capex",
+     "last_reading": "매출 $81.6B, DC +92%, Q3 가이 ~$91B(사전 컨센 $78.8B), 中 매출 가정 0. 2026 하이퍼스케일러 capex $775~815B(+64%), 산업 총 capex $1T+ 전망. AVGO FY27 AI 매출 가이 $115B(기존 $100B+), 커스텀 실리콘 점유 27.8% 전망. 스팟 GPU 인스턴스 가격 8월 +7.9% QoQ",
+     "as_of": "2026-09-08",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -3406,6 +3761,18 @@
      "name": "TSMC capex·점유",
      "last_reading": "2026 capex $60~64B(선단공정 70~80%·첨단패키징 등 10~20%)·Foundry 2.0 점유 40%·상위10 고객 78%",
      "as_of": "2026-09"
+    },
+    {
+     "name": "TSMC 8월 매출(6-K 9/10)",
+     "last_reading": "NT$514.8B 사상최고(+53.3% YoY, +10.1% MoM, 4개월 연속 증가), 1~8월 NT$3.39조(+39.3%). 3Q 가이 $44.6~45.8B의 69% 두 달에 달성. 경영진 '패키징 capa so tight, 수급 갭 very big'. 8월 capex 예산 $29.44B 추가 승인",
+     "as_of": "2026-09-10",
+     "source": "UPDATE-8 A-1 스캔"
+    },
+    {
+     "name": "CoWoS 할당",
+     "last_reading": "2026 수요 ~100만 웨이퍼(2024 37만·2025 67만), 월 75~80k→연말 120~130k WPM 램프에도 완판. NVDA ~60%, 상위3 85%+. 2nm 2028까지 예약",
+     "as_of": "2026-06",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -3478,7 +3845,7 @@
    "build_status": "BUILT",
    "build_block": 3,
    "demand": {
-    "drivers": "선단 로직(2nm)·메모리(HBM)·첨단 패키징 증설이 WFE 수요를 견인. [실제] SEMI: 2026 WFE $135B(+9%), 일부 하우스는 $148~170B 전망. ASML은 2026 매출 가이던스 $49.2~51.5B로 상향, 오더가 컨센의 2배(4Q25 €13.2B)로 유입, 백로그 2028년까지. Lam: NAND 전환 투자 ~$40B가 2027년 전으로 당겨짐. 후공정 테스트 +12%.",
+    "drivers": "선단 로직(2nm)·메모리(HBM)·첨단 패키징 증설이 WFE 수요를 견인. [실제·UPDATE-8 정정] SEMI: 2026 WFE $143.9B(+23.1%) → 2027 $175.3B(+21.8%) → 2028 $200B(+14.1%) (직전 카드의 '$135B(+9%)'는 구 전망 — AMAT·LRCX 팩 동일 출처로 정정). ASML은 2026 매출 가이던스 $49.2~51.5B로 상향, 오더가 컨센의 2배(4Q25 €13.2B)로 유입, 백로그 2028년까지. Lam: NAND 전환 투자 ~$40B가 2027년 전으로 당겨짐. 후공정 테스트 +12%.",
     "secular_vs_cyclical": "AI capex·노드 전환·정부 보조금(리쇼어링)의 다년 구조적 상승. 다만 소비·차량·산업용 성숙 수요는 약세.",
     "momentum": "가속(수주 기준) — 단 '26.8월 AI capex 지속성 의문으로 주가 조정, 컨센서스가 흔들리기 시작(축③ 신호)."
    },
@@ -3489,7 +3856,7 @@
     "utilization_inventory": "고객(파운드리·메모리) 가동률 높아 서비스 매출 동반 확대."
    },
    "balance": "BALANCED",
-   "balance_direction": "조여짐(EUV·첨단패키징 장비 한정)",
+   "balance_direction": "조여짐 강화(EUV·첨단패키징·검사) — WFE +23% 리비전에 ASML capa 2027 +30%로 공급이 뒤따르는 '리드타임 연장' 국면, 급성 부족 아님",
    "cycle_stage": "EXPANSION",
    "leading_indicators": [
     {
@@ -3599,12 +3966,17 @@
     }
    ],
    "tier": "WARM",
-   "tier_rationale": "D3(고객 capex 상향)+S3(백로그·리드타임 연장)로 상승 증거는 있으나, 장비 시장 성장률(+9%)이 급성 '부족'은 아니고 공급이 대체로 따라오는 구조. 축③ '26.8월 컨센서스 의문(조정) 관측 → HEAT로 올리기엔 절제. WARM 유지, 알파는 HBM/CoWoS 직결 후공정·검사 하위에서.",
+   "tier_rationale": "UPDATE-8: WARM 유지, HEAT 후보 큐 3순위(2→3, IND-05 balance 전환으로 역전). D3(WFE 2026 $143.9B +23.1%·2027 +21.8%로 대폭 상향)+S3(ASML 2027 EUV 오더 사실상 전량 수령·리드타임 연장·LRCX FY26 시스템 +29.5%) 증거 강화. 그러나 balance는 BALANCED 유지 — ASML low-NA EUV capa 2026 65대→2027 +30%·DUV +30%·2028 추가 +30% 검토로 공급이 수요를 따라오는 구조이며, 축③은 ASML·AMAT·LRCX 딥다이브가 전부 '회피/관망'(가격이 리비전을 완전 인식). HEAT('균형이 깨졌거나 깨지는 중')보다 WARM('트리거 조짐, 확증 부족')이 정확. 알파는 첨단패키징·검사 하위(ONTO·CAMT 후보)에서.",
    "tier_history": [
     {
      "as_of": "2026-08",
      "tier": "WARM",
      "reason": "BUILD 3 최초 부여"
+    },
+    {
+     "as_of": "2026-09-11",
+     "tier": "WARM",
+     "reason": "UPDATE-8 A-2: WFE 본문 정정, balance BALANCED 유지(공급 추종), 큐 3순위"
     }
    ],
    "market_read": {
@@ -3612,7 +3984,8 @@
     "momentum": "롤오버 조짐(주가)",
     "note": "AMAT 등 YTD 급등 후 8월 조정 — 펀더(오더)는 가속인데 주가/컨센이 먼저 의심. 광범위 WFE보단 패키징·테스트 하위가 후보."
    },
-   "tier_provisional": false
+   "tier_provisional": false,
+   "tier_rationale_prev": "D3(고객 capex 상향)+S3(백로그·리드타임 연장)로 상승 증거는 있으나, 장비 시장 성장률(+9%)이 급성 '부족'은 아니고 공급이 대체로 따라오는 구조. 축③ '26.8월 컨센서스 의문(조정) 관측 → HEAT로 올리기엔 절제. WARM 유지, 알파는 HBM/CoWoS 직결 후공정·검사 하위에서."
   },
   {
    "id": "ITC-04",
@@ -3633,7 +4006,7 @@
     "utilization_inventory": "선단 소재 가동률 상승, 레거시 재고는 세트 부진 영향."
    },
    "balance": "BALANCED",
-   "balance_direction": "완만히 조여짐(첨단 패키징·특수소재)",
+   "balance_direction": "첨단패키징 소재(ABF 기판·필름) 조여짐 강화 — Ajinomoto 풀가동·현물 +30%·수급갭 2027말, 신규 라인 18~24개월 / SiC·GaN(WOLF) 과잉 지속 — 국소 부족의 범위가 넓어짐",
    "cycle_stage": "EXPANSION",
    "leading_indicators": [
     {
@@ -3655,6 +4028,18 @@
      "name": "SiC/GaN 파워반도체 코호트(WOLF·NVTS)",
      "last_reading": "AI DC 전력·auto/HV 수요 레그이나 현재 마진압박: WOLF GM -25%(fresh-start)·매출 $149.6M; NVTS GM 39.5%·H1 OCF -$48.3M. 수요-공급 반전 아닌 초기·조정 국면",
      "as_of": "2026-08"
+    },
+    {
+     "name": "ABF 기판 병목",
+     "last_reading": "Ajinomoto 필름 capa 2Q26 풀가동(월 200만㎡), 현물 +30%·계약 +5~10%(2H26), 수급 갭 2027말까지. 台 Unimicron·Kinsus·Nan Ya 풀가동, 신규 라인 18~24개월. GPU당 대형 ABF 1~2장",
+     "as_of": "2026-09-11",
+     "source": "UPDATE-8 A-1 스캔"
+    },
+    {
+     "name": "SiC/GaN(WOLF)",
+     "last_reading": "EV 수요 부진 지속(금리·인센티브 소멸·中 경쟁), AI DC向 매출 +50% QoQ로 부분 상쇄. WOLF-NVTS 특허소송(7월). 코호트 인플렉션 미확인",
+     "as_of": "2026-09-03",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -3717,12 +4102,17 @@
     }
    ],
    "tier": "WARM",
-   "tier_rationale": "P2(기술 세대 전환으로 소재 강도·부가가치 상승)+D3(파운드리·메모리 capex 상향)의 파생 수혜. 다만 소재 공급은 대체로 따라오고 급성 부족은 국소적 → HEAT 아님. WARM.",
+   "tier_rationale": "P2(기술 세대 전환으로 소재 강도·부가가치 상승)+D3(파운드리·메모리 capex 상향)의 파생 수혜. 다만 소재 공급은 대체로 따라오고 급성 부족은 국소적 → HEAT 아님. WARM. [UPDATE-8] WARM 유지. ABF 레그는 S2(신규 라인 18~24개월)+S3(풀가동·갭 2027말)+D4(현물 +30% 흡수)로 HEAT급이나 near-monopoly 단일 소재의 국소 부족이며 SiC/GaN 과잉이 상쇄 → 산업 balance BALANCED 유지. carry 'WOLF 재가속 시 코호트 재점검' 조건 미충족(EV 부진 지속). ABF 순노출(이비덴·신코·Unimicron)은 스크리닝 유니버스.",
    "tier_history": [
     {
      "as_of": "2026-08",
      "tier": "WARM",
      "reason": "BUILD 3 최초 부여"
+    },
+    {
+     "as_of": "2026-09-11",
+     "tier": "WARM",
+     "reason": "UPDATE-8 A-2: ABF 레그 강화 반영, balance 유지"
     }
    ],
    "market_read": {
@@ -3730,7 +4120,8 @@
     "momentum": "가속",
     "note": "팹리스·장비 대비 덜 붐빔. '강도 성장'은 시장이 덜 서사화 → 후보 가치(버킷 A)."
    },
-   "tier_provisional": false
+   "tier_provisional": false,
+   "tier_rationale_prev": "P2(기술 세대 전환으로 소재 강도·부가가치 상승)+D3(파운드리·메모리 capex 상향)의 파생 수혜. 다만 소재 공급은 대체로 따라오고 급성 부족은 국소적 → HEAT 아님. WARM."
   },
   {
    "id": "ITC-05",
@@ -3768,6 +4159,18 @@
      "name": "공급자 전망",
      "last_reading": "SK하이닉스 '2027이 최악'·부족 2030까지; 신규 fab 5년+",
      "as_of": "2026-07"
+    },
+    {
+     "name": "DRAM 계약가 궤적(TrendForce 9/2)",
+     "last_reading": "1Q26 +90~95% → 2Q +58~63% → 3Q 서버 +13~18%(LTA가 상단 제한), NAND 3Q +10~15%. ★9/2: PC DRAM 3Q 인상폭 상향 수정, 현물 거래 '부진(subdued)', HBM 협상 교착(스펙 유동)이나 가격 상방 유지. IDC 2026 공급 성장 DRAM +16%·NAND +17%",
+     "as_of": "2026-09-02",
+     "source": "UPDATE-8 A-1 스캔"
+    },
+    {
+     "name": "하류 전가 흔적",
+     "last_reading": "AAPL 정규화 GM 49.3→48.1→가이 46.5%(메모리 원가); PS5 4월 전 모델 +$100(관세·메모리) — 가격 전가가 세트 마진·소비자가로 도달",
+     "as_of": "2026-08-28",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -3810,20 +4213,28 @@
     }
    ],
    "tier": "HEAT",
-   "tier_rationale": "§3 최다 충족: D1(AI 서버 신규 수요)+S1(HBM 전환으로 범용 공급 축소)+S3(2026 완판·리드타임 연장)+D2(가격 선행지표 급반전). '15년래 최악 부족'. 이 블록·전체 지도에서 가장 교과서적인 균형붕괴. 즉시 스크리닝 권고. HEAT. [UPDATE 2026-08] 계약가 QoQ 상승률 둔화(Q3 13~18%)는 기저효과이나 변화율 감속 신호 — 구조적 부족(HBM zero-slack·2027 최악)은 불변이라 HEAT 유지하되 선행지표 롤오버로 peak_watch 등재.",
+   "tier_rationale": "§3 최다 충족: D1(AI 서버 신규 수요)+S1(HBM 전환으로 범용 공급 축소)+S3(2026 완판·리드타임 연장)+D2(가격 선행지표 급반전). '15년래 최악 부족'. 이 블록·전체 지도에서 가장 교과서적인 균형붕괴. 즉시 스크리닝 권고. HEAT. [UPDATE 2026-08] 계약가 QoQ 상승률 둔화(Q3 13~18%)는 기저효과이나 변화율 감속 신호 — 구조적 부족(HBM zero-slack·2027 최악)은 불변이라 HEAT 유지하되 선행지표 롤오버로 peak_watch 등재. [UPDATE-8] HEAT 유지, peak_watch 강화. 3Q 계약가 +13~18%·PC DRAM 상향(tripwire 미점등)이나 현물 '부진'(현물이 계약 1~2분기 선행)·AAPL GM 전가·공급 응답(HBM4 양산·첨단패키징 +50%) — 롤오버 조기신호 3개. 사용자 승인으로 피크검증 딥다이브(MU) 등재.",
    "tier_history": [
     {
      "as_of": "2026-08",
      "tier": "HEAT",
      "reason": "BUILD 3 최초 부여"
+    },
+    {
+     "as_of": "2026-09-11",
+     "tier": "HEAT",
+     "reason": "UPDATE-8 A-2: 유지, peak_watch 강화(현물 부진)"
     }
    ],
    "market_read": {
     "consensus": "HIGH",
     "momentum": "만개",
-    "note": "구조는 HEAT 유지(HBM zero-slack·2027 최악 부족·삼성 record profit). 그러나 계약가 QoQ 상승률 둔화(58~63%→13~18%)로 축② 변화율 롤오버 시작 — peak_watch 등재. 소비 수요 약화가 블렌디드 평균을 끌어내림."
+    "note": "구조는 HEAT 유지(HBM zero-slack·2027 최악 부족·삼성 record profit). 그러나 계약가 QoQ 상승률 둔화(58~63%→13~18%)로 축② 변화율 롤오버 시작 — peak_watch 등재. 소비 수요 약화가 블렌디드 평균을 끌어내림.",
+    "a1_note": "현물 부진 vs 계약 상향 분열 — 롤오버 조기 감시",
+    "as_of": "2026-09-11"
    },
-   "tier_provisional": false
+   "tier_provisional": false,
+   "tier_rationale_prev": "§3 최다 충족: D1(AI 서버 신규 수요)+S1(HBM 전환으로 범용 공급 축소)+S3(2026 완판·리드타임 연장)+D2(가격 선행지표 급반전). '15년래 최악 부족'. 이 블록·전체 지도에서 가장 교과서적인 균형붕괴. 즉시 스크리닝 권고. HEAT. [UPDATE 2026-08] 계약가 QoQ 상승률 둔화(Q3 13~18%)는 기저효과이나 변화율 감속 신호 — 구조적 부족(HBM zero-slack·2027 최악)은 불변이라 HEAT 유지하되 선행지표 롤오버로 peak_watch 등재."
   },
   {
    "id": "ITC-06",
@@ -3886,6 +4297,12 @@
      "name": "완제품 수요(AAPL)",
      "last_reading": "FY26 Q3 총매출 +16%·아이폰 +22%·Mac +29%·서비스 +12%(GM 75.6%) — 'AI 조여짐·소비 풀림' MIXED 판정 중 소비 레그가 예상보다 견조",
      "as_of": "2026-08"
+    },
+    {
+     "name": "AI 광 트랜시버 수급",
+     "last_reading": "800G 2026 3,350만 대(GS +58% 상향), 800G+ 출하 2025 2,400만→2026 6,300만(2.6배). AAOI '2027 중반까지 수요>capa'(연말 93만/월 목표), COHR 오더북 2028까지, LITE +90% YoY. ★TrendForce: 부품 부족(DSP·EML·첨단패키징)이 capa 확장 1차 병목. AAOI YTD +203%·LITE +139%(축③ 만개)",
+     "as_of": "2026-09-08",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -4257,6 +4674,12 @@
      "name": "GENIUS 시행규칙 진척(OCC/FDIC/Treasury NPR)",
      "last_reading": "2026 상반기 NPR 발표·의견수렴",
      "as_of": "2026-08"
+    },
+    {
+     "name": "스테이블코인·GENIUS 규칙",
+     "last_reading": "시총 $322.6B(5월), Visa 자체 조정 온체인 결제 ~$9~11T 연환산(Visa $16T·MA $10T). OCC NPRM(3/11): PPSI 주 송금라이선스 없이 활동 가능. Visa 정산 런레이트 $4.5B(1월). MiCA Tether 상장폐지",
+     "as_of": "2026-07",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -4387,6 +4810,18 @@
      "name": "장거리 광/백본 capex",
      "last_reading": "AI 데이터 이동으로 증가(추정)",
      "as_of": "2026-06"
+    },
+    {
+     "name": "백본·다크파이버 수요(Lumen 9/10)",
+     "last_reading": "전략매출 +14%(총매출 50%+), 온디맨드 파장 매출 +11%·판매 +35%, PCF에 연 capex $3B 중 $1B, 2030 디지털 매출 $800~900M 목표. 네오클라우드 '즉시 가용' 수요",
+     "as_of": "2026-09-10",
+     "source": "UPDATE-8 A-1 스캔"
+    },
+    {
+     "name": "통신 capex 총량",
+     "last_reading": "글로벌 2026 capex 감소 전망(RAN→광·전송·DC 이동), capex/매출 26.9%(2022)→22.9%(2024). AT&T $23~24B/yr(Lumen 소비자광 $5.75B 인수)",
+     "as_of": "2026-09-04",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -4484,6 +4919,12 @@
      "name": "광고 지출(TV vs 디지털)",
      "last_reading": "디지털로 이전 지속",
      "as_of": "2026-06"
+    },
+    {
+     "name": "스트리밍 vs 선형 교차",
+     "last_reading": "업프론트 광고 스트리밍 $17.2B > 선형 $16.6B(사상 첫 추월), 시청시간 49% vs 40%. 5대 스튜디오 DTC 전부 흑자(2Q26), WBD DTC 이익 +75%. 선형: PSKY 광고 −14%·가맹 −6%. PSKY-WBD $111B 합병은 주 AG 소송 3월 재판 대기(NFLX 파기수수료 $2.8B 수령)",
+     "as_of": "2026-08-31",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -4594,6 +5035,12 @@
      "name": "플랫폼 현금창출(UBER)",
      "last_reading": "2026 Q2 총예약 $58.022B·조정EBITDA $2.819B(예약 대비 4.9%)·FCF $2.792B, 2025 연 FCF $9.763B·1H26 자사주 $3.5B",
      "as_of": "2026-09"
+    },
+    {
+     "name": "빅테크 광고 2Q26",
+     "last_reading": "GOOGL 광고 $81.6B(+14%; 검색 +17% $63.3B, YouTube +13%), META $59.4B(+27%; 노출 +14%·단가 +12%, DAP 3.60B +3%), AMZN 광고 > 전사 성장(+20%). eMarketer: META 2026 GOOGL 디지털광고 추월 전망. META 비용 +55%. GOOGL 2026 capex 상단 $205B",
+     "as_of": "2026-09-01",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -4660,7 +5107,9 @@
    "market_read": {
     "consensus": "HIGH",
     "momentum": "가속",
-    "note": "메타·구글 컨센 만개. 덜 붐비는 수익화 초기(레딧 등)가 후보 소지이나 개별 검증은 스크리닝 몫."
+    "note": "메타·구글 컨센 만개. 덜 붐비는 수익화 초기(레딧 등)가 후보 소지이나 개별 검증은 스크리닝 몫.",
+    "a1_note": "AI = 인컴번트 강화(단가·효율) — 테마 가설 방향 수정 근거",
+    "as_of": "2026-09-11"
    },
    "tier_provisional": false
   },
@@ -4700,6 +5149,12 @@
      "name": "구독 서비스 성장",
      "last_reading": "게임패스·PS플러스 확대",
      "as_of": "2026-02"
+    },
+    {
+     "name": "GTA VI·하드웨어 가격",
+     "last_reading": "GTA VI 2026-11-19 확정, $79.99/$99.99, 선주문 6/25 개시. Newzoo 2026 시장 $213.9B. PS5 4월 전 모델 +$100(관세·메모리), PS5 Pro $900 — 신규 구매자 억제, 동 시기 타 타이틀 잠식 예상",
+     "as_of": "2026-08-28",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -4797,6 +5252,18 @@
      "name": "IRA 약가협상(IPAY2027, GLP-1 포함)·MFN 정책",
      "last_reading": "2차 15개 MFP 2027-01 발효, GLP-1 편입",
      "as_of": "2025-11"
+    },
+    {
+     "name": "MFN·232 관세 확정",
+     "last_reading": "232 관세 100%(특허약·API) 2026-07-31 발효(대형), MFN 계약사 면제 → 17사 중 16사 계약(Regeneron만 미체결). 8/31 9개사 추가(전 신약 MFN·메디케이드). 제네릭 관세 0%→2029 200% 단계. MFN 10년 절감 $529~733B(신약)",
+     "as_of": "2026-09-03",
+     "source": "UPDATE-8 A-1 스캔"
+    },
+    {
+     "name": "GLP-1 접근 확대",
+     "last_reading": "메디케어 비만 GLP-1 $50/월 7월 시행, 2개월 50만 명·$216M 절감. TrumpRx 현금가 $350(vial), 경구 GLP-1 시작용량 $150",
+     "as_of": "2026-08-31",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -4942,6 +5409,18 @@
      "name": "aPAP 시장 규모(SVRA)",
      "last_reading": "독립 유병률 6.87/백만(문헌 7~27)·회사 추정 미국 aPAP 5,542명·line of sight 1,000명·타깃 1,700 계정/4,500 호흡기 HCP",
      "as_of": "2026-09"
+    },
+    {
+     "name": "M&A·자본시장(1H26)",
+     "last_reading": "M&A $106B(6월, 코로나 전 이후 최고 페이스), 1H 인수 45건+, Vertex-Crinetics $10B(프리미엄 102%). XBI 1H +30%·12M +84%, 7월 5년래 최고. IPO 창 열림(Kailera $625M 기록)",
+     "as_of": "2026-08-02",
+     "source": "UPDATE-8 A-1 스캔"
+    },
+    {
+     "name": "공급 응답: 中 라이선싱",
+     "last_reading": "中 자산 2026 라이선싱 가치 2/3+ 전망(Nature Biotech), AZ-CSPC $18.5B·BMS-Hengrui $15.2B, '중국 할인' 30~50%에서 축소 중. 그레이터차이나 2025 딜 $137.7B(10배)",
+     "as_of": "2026-08-02",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -5032,20 +5511,29 @@
     }
    ],
    "tier": "HEAT",
-   "tier_rationale": "빅파마 특허절벽이 만든 후기자산 인수 수요 급증(D3: 고객 capex/인수식욕 상향)과 2022~23 가뭄으로 인한 양질 자산 공급 공백(S2)이 결합 — 수요↑·공급경직의 교과서적 조합. 여기에 IPO 창 개방·M&A 기록(자본 유입)이 겹쳐 증거 2개 이상 충족. 사용자 공리('메마른 수요가 폭증하는 순간')에 정확히 부합해 HEAT. 단 XBI가 이미 +64%로 모멘텀은 초기가 아닌 가속 단계.",
+   "tier_rationale": "빅파마 특허절벽이 만든 후기자산 인수 수요 급증(D3: 고객 capex/인수식욕 상향)과 2022~23 가뭄으로 인한 양질 자산 공급 공백(S2)이 결합 — 수요↑·공급경직의 교과서적 조합. 여기에 IPO 창 개방·M&A 기록(자본 유입)이 겹쳐 증거 2개 이상 충족. 사용자 공리('메마른 수요가 폭증하는 순간')에 정확히 부합해 HEAT. 단 XBI가 이미 +64%로 모멘텀은 초기가 아닌 가속 단계. [UPDATE-8] HEAT 유지, peak_watch 신규 등재. D1·D4 지속(M&A $106B·프리미엄 102%)이나 (a) 축③ 만개(XBI 12M +84%·IPO 창) (b) 공급 응답(中 자산이 라이선싱 가치 2/3+, '중국 할인' 축소)으로 '양질 후기자산 부족' 전제 약화. 강등 근거는 1개(공급 응답)뿐.",
    "tier_history": [
     {
      "as_of": "2026-08",
      "tier": "HEAT",
      "reason": "BUILD 4 최초 부여"
+    },
+    {
+     "as_of": "2026-09-11",
+     "tier": "HEAT",
+     "reason": "UPDATE-8 A-2: 유지, peak_watch 등재(③만개+공급응답)"
     }
    ],
    "market_read": {
     "consensus": "MID",
-    "momentum": "가속",
-    "note": "회복 18개월차 — 실탄 $1.3T 미집행이 지속성 근거, 다만 초입은 지남"
+    "momentum": "만개",
+    "note": "회복 18개월차 — 실탄 $1.3T 미집행이 지속성 근거, 다만 초입은 지남",
+    "prev_momentum": "가속",
+    "a1_note": "peak_watch 등재 검토",
+    "as_of": "2026-09-11"
    },
-   "tier_provisional": false
+   "tier_provisional": false,
+   "tier_rationale_prev": "빅파마 특허절벽이 만든 후기자산 인수 수요 급증(D3: 고객 capex/인수식욕 상향)과 2022~23 가뭄으로 인한 양질 자산 공급 공백(S2)이 결합 — 수요↑·공급경직의 교과서적 조합. 여기에 IPO 창 개방·M&A 기록(자본 유입)이 겹쳐 증거 2개 이상 충족. 사용자 공리('메마른 수요가 폭증하는 순간')에 정확히 부합해 HEAT. 단 XBI가 이미 +64%로 모멘텀은 초기가 아닌 가속 단계."
   },
   {
    "id": "HLT-03",
@@ -5083,6 +5571,12 @@
      "name": "GLP-1의 기기 세그먼트 잠식 정도",
      "last_reading": "논쟁적(수면무호흡·비만수술 역풍 vs 심혈관 확장)",
      "as_of": "2026-08"
+    },
+    {
+     "name": "ISRG 2Q26 시술",
+     "last_reading": "美 da Vinci 시술 성장 감속, 비만수술 고한자릿수 감소(GLP-1), ACA 보조금 만료 영향, 유럽·中 자본예산 압박, 주가 −12%(2년래 저점). Ion +36%(누적 40만). MDT Hugo 美 실사용",
+     "as_of": "2026-08-26",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -5153,8 +5647,10 @@
    ],
    "market_read": {
     "consensus": "MID",
-    "momentum": "중립",
-    "note": "안정 성장주 인식, 급격한 자금 로테이션 신호 없음"
+    "momentum": "롤오버",
+    "note": "안정 성장주 인식, 급격한 자금 로테이션 신호 없음",
+    "prev_momentum": "중립",
+    "as_of": "2026-09-11"
    },
    "tier_provisional": false
   },
@@ -5343,6 +5839,12 @@
      "name": "고용주 GLP-1 커버리지 채택률",
      "last_reading": "~55% 채택(비용부담에 15%는 철회)",
      "as_of": "2026-05"
+    },
+    {
+     "name": "MA 요율·보험 마진",
+     "last_reading": "CMS 2027 MA 요율 최종 +2.48%(초안 0.09%, 4/7). UNH 2Q26 매출 $112.0B, MCR 86.7%(4Q25 88.9%), 2026 조정EPS 가이 $19.50~20.00 상향, MA 가입자 최대 −120만 축소 계획",
+     "as_of": "2026-07-16",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -5466,6 +5968,18 @@
      "name": "오피스 CMBS 연체율(지역은행 CRE 대리지표)",
      "last_reading": "12.34% (사상 최고)",
      "as_of": "2026-01"
+    },
+    {
+     "name": "Fed·금리 커브",
+     "last_reading": "7/29 3.50~3.75% 동결(9-3, Hammack·Kashkari·Logan 인상 선호), 9/15~16 인상 50/50, 커브 12개월 +67bp(2~3회) → 2027-07 4.29%. SOFR 3.65%. 8월 CPI 결정 변수",
+     "as_of": "2026-09-09",
+     "source": "UPDATE-8 A-1 스캔"
+    },
+    {
+     "name": "은행 NIM·신용",
+     "last_reading": "지역은행 NIM 중앙값 3.23%(1Q24)→3.78%(4Q25)→3.74%(1Q26) 회복 정점, 대출 수요 양호·조달비용↑. 레버리지론 부도 1.36%(장기평균 내), BDC PIK ~10%(2022 6%)",
+     "as_of": "2026-07-14",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -5567,7 +6081,7 @@
     "utilization_inventory": "사모 드라이파우더 풍부, 거래대금·발행이 회복."
    },
    "balance": "BALANCED",
-   "balance_direction": "활동 회복으로 수요 쪽 완만 조여짐",
+   "balance_direction": "분열 — 거래소·증권·IB 활동 조여짐(변동성·M&A·IPO 재개) vs 富채널 사모신용 환매 역류(비상장 BDC 1Q 사상 첫 순유출, 환매요청 자산의 13~14%, 5% 캡 비례배분) — 3Q 초기 완화 조짐",
    "cycle_stage": "RECOVERY",
    "leading_indicators": [
     {
@@ -5589,6 +6103,12 @@
      "name": "거래대금·변동성(VIX)",
      "last_reading": "에너지 쇼크로 변동성 상방",
      "as_of": "2026-08"
+    },
+    {
+     "name": "비상장 BDC 환매(Stanger/With Intelligence)",
+     "last_reading": "1Q26 사상 첫 순유출(환매 $6.9B > 조달 $4.9B), 상위10 BDC 환매요청 1Q 13%·2Q 14%(자산 대비). Blue Owl OTIC 38.1%·OCIC 18.8%, Apollo ADS 16.8%, Ares 14.4% → 5% 캡·비례배분(7/2). 3Q 초기 3개 펀드 4.6%(완화 조짐, 표본 소). 직접대출 스프레드 <100bp(2017~18 300bp+), Blue Owl 부도 2.8% 5년래 최고. BDC 채권 회복 vs 주식 NAV 회의",
+     "as_of": "2026-08-27",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -5686,7 +6206,7 @@
     }
    ],
    "tier": "WARM",
-   "tier_rationale": "자본시장 재개방(D3: 활동·수수료 회복)과 사모신용·대체투자 신규수요(D1)로 상향 조짐이 2개 이상. 그러나 '공급이 즉시 따라오는'(자본 탄력적·물리적 병목 없음) 산업이라 OS §3 원칙대로 티어를 절제 → HEAT 아닌 WARM. 컨센서스도 이미 낮지 않음. [UPDATE 2026-08] APO 딥다이브: FRE 마진 58.5%·FGAUM $858B·오리지네이션 LTM $317B로 사모신용·대체투자 구조 성장 재확인 — WARM 유지(공급 탄력적·컨센 이미 상승). 리스크: 인수 의존도 상승·2H26 사이버 조사.",
+   "tier_rationale": "자본시장 재개방(D3: 활동·수수료 회복)과 사모신용·대체투자 신규수요(D1)로 상향 조짐이 2개 이상. 그러나 '공급이 즉시 따라오는'(자본 탄력적·물리적 병목 없음) 산업이라 OS §3 원칙대로 티어를 절제 → HEAT 아닌 WARM. 컨센서스도 이미 낮지 않음. [UPDATE 2026-08] APO 딥다이브: FRE 마진 58.5%·FGAUM $858B·오리지네이션 LTM $317B로 사모신용·대체투자 구조 성장 재확인 — WARM 유지(공급 탄력적·컨센 이미 상승). 리스크: 인수 의존도 상승·2H26 사이버 조사. [UPDATE-8] WARM 유지, 단 balance_direction을 '분열'로 재서술: 직전 '사모신용·대체투자 리테일화 = 없던 수요'(D1)가 富채널에서 역류 중(BDC 환매 > 조달, Blue Owl OTIC 38% 요청, 직접대출 스프레드 <100bp). 기관 수요는 지속·3Q 초기 4.6%로 완화 조짐이라 강등 근거 2개 미달. 반증: 3Q 환매요청 재확대 또는 NAV 마크다운 확산 시 NEUTRAL.",
    "tier_history": [
     {
      "as_of": "2026-08",
@@ -5697,14 +6217,22 @@
      "as_of": "2026-08 (update 2026-08-23)",
      "tier": "WARM",
      "reason": "유지. APO 딥다이브로 구조 성장 확인하되 공급 탄력성·컨센 상승으로 절제. WARM 유지"
+    },
+    {
+     "as_of": "2026-09-11",
+     "tier": "WARM",
+     "reason": "UPDATE-8 A-2: balance_direction 분열 재서술(사모신용 환매), 티어 유지"
     }
    ],
    "market_read": {
     "consensus": "MID",
     "momentum": "가속",
-    "note": "사모신용·오리지네이션 구조 성장 실질(APO FRE 58.5%). 그러나 자본 탄력적·컨센 이미 상승 — WARM 절제 유지. 사이버/규제가 단기 변수."
+    "note": "사모신용·오리지네이션 구조 성장 실질(APO FRE 58.5%). 그러나 자본 탄력적·컨센 이미 상승 — WARM 절제 유지. 사이버/규제가 단기 변수.",
+    "a1_note": "富채널 대체투자 역류 vs 거래소·증권 우호 — 분열",
+    "as_of": "2026-09-11"
    },
-   "tier_provisional": false
+   "tier_provisional": false,
+   "tier_rationale_prev": "자본시장 재개방(D3: 활동·수수료 회복)과 사모신용·대체투자 신규수요(D1)로 상향 조짐이 2개 이상. 그러나 '공급이 즉시 따라오는'(자본 탄력적·물리적 병목 없음) 산업이라 OS §3 원칙대로 티어를 절제 → HEAT 아닌 WARM. 컨센서스도 이미 낮지 않음. [UPDATE 2026-08] APO 딥다이브: FRE 마진 58.5%·FGAUM $858B·오리지네이션 LTM $317B로 사모신용·대체투자 구조 성장 재확인 — WARM 유지(공급 탄력적·컨센 이미 상승). 리스크: 인수 의존도 상승·2H26 사이버 조사."
   },
   {
    "id": "FIN-03",
@@ -5725,8 +6253,8 @@
     "utilization_inventory": "합산비율 ~94%(2025)→96~97% 예상(2026), 수익성 정상화 하락."
    },
    "balance": "GLUT",
-   "balance_direction": "자본 과잉으로 재물 요율 풀림(소프트닝)",
-   "cycle_stage": "PEAK",
+   "balance_direction": "GLUT 심화 — 재보험 자본 $790B 사상최고, 캣 ROL −16%(1990년대 말 이후 최대), 1/1 추가 소프트닝 예상 / 美 캐주얼티·사이버는 하드 유지",
+   "cycle_stage": "DOWNTURN",
    "leading_indicators": [
     {
      "name": "재물 cat 재보험 ROL",
@@ -5747,6 +6275,12 @@
      "name": "cat본드 발행",
      "last_reading": "상반기 사상 2위권",
      "as_of": "2026-08"
+    },
+    {
+     "name": "재보험 소프트닝(9/8 몬테카를로)",
+     "last_reading": "재보험 자본 $790B 사상최고. 글로벌 재물 캣 ROL 지수 −16%(1990년대 말 이후 최대 연간 하락; 1월 −12%→중반 −16%), 6/1 플로리다 −15~25%. 1H26 캣 손실 $46B(10년 평균 $64B −28%), 5분기 연속 $10B+ 단일사고 없음. 대형 재보험사 1/1 추가 소프트닝 예상, 美 캐주얼티·사이버는 예외. 중동 정치폭력·war-on-land 수요 증가(국지 경화)",
+     "as_of": "2026-09-08",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -5819,21 +6353,30 @@
      "role": null
     }
    ],
-   "tier": "NEUTRAL",
-   "tier_rationale": "재물 언더라이팅 사이클이 정점을 통과해 소프트닝(요율↓, 자본 과잉 GLUT)이나, casualty 하드마켓과 고금리發 투자수익이 상쇄해 수익성은 견조. 균형이 '깨지는' 상방 트리거는 부재하고 오히려 요율은 하향 — COLD로 보기엔 플로트·투자수익이 방어. → NEUTRAL(소프트닝 방향). 대형 재해가 반전 트리거.",
+   "tier": "COLD",
+   "tier_rationale": "UPDATE-8 강등 NEUTRAL→COLD. 역방향 §3 증거: S-역(공급 과잉 확정 — 재보험 자본 $790B 사상최고, ILS 대체자본 유입) + D4-역(가격 흡수 실패 — 글로벌 재물 캣 ROL −16%, 6/1 플로리다 −15~25%, 2년 연속 하락, 1/1 추가 하락 예상) + 저손실 환경(1H26 캣 $46B, 10년 평균 −28%, 5분기 연속 $10B+ 사고 없음)이 소프트닝을 강화. 직전 판정의 방어 논리(플로트 투자수익·캐주얼티 하드)는 유효하나 산업 사이클 위치는 명백히 DOWNTURN — COLD 정의('공급과잉 진행 중, 바닥권 감시')에 부합. 1차 보험 combined 94→96~97%로 수익성은 흑자 유지 → FROZEN 아님.",
    "tier_history": [
     {
      "as_of": "2026-08",
      "tier": "NEUTRAL",
      "reason": "BUILD 5 최초 부여"
+    },
+    {
+     "as_of": "2026-09-11",
+     "tier": "COLD",
+     "reason": "UPDATE-8 A-2: 자본 사상최고+ROL −16% 역신호 2개, 사이클 DOWNTURN"
     }
    ],
    "market_read": {
     "consensus": "MID",
     "momentum": "롤오버",
-    "note": "재물 요율 사이클 정점 통과 — 투자수익이 완충. 요율 롤오버는 감시 포인트."
+    "note": "재물 요율 사이클 정점 통과 — 투자수익이 완충. 요율 롤오버는 감시 포인트.",
+    "prev_momentum": "롤오버",
+    "as_of": "2026-09-11"
    },
-   "tier_provisional": false
+   "tier_provisional": false,
+   "tier_rationale_prev": "재물 언더라이팅 사이클이 정점을 통과해 소프트닝(요율↓, 자본 과잉 GLUT)이나, casualty 하드마켓과 고금리發 투자수익이 상쇄해 수익성은 견조. 균형이 '깨지는' 상방 트리거는 부재하고 오히려 요율은 하향 — COLD로 보기엔 플로트·투자수익이 방어. → NEUTRAL(소프트닝 방향). 대형 재해가 반전 트리거.",
+   "cold_reversal_signal": "① 단일/연속 캣 손실이 예상 평균 대비 $115~125B 초과(Gallagher Re 기준 요율 반전 임계) ② 캣 ROL 지수 상승 전환 또는 재보험 자본 감소 전환 ③ 美 캐주얼티 하드마켓이 재물로 확산(사회적 인플레). 셋 중 하나가 켜지면 버킷 B 소환."
   },
   {
    "id": "RLE-01",
@@ -5876,6 +6419,12 @@
      "name": "멀티패밀리 공실",
      "last_reading": "~4.6% (연말 ~5.1% 전망)",
      "as_of": "2026"
+    },
+    {
+     "name": "CMBS 연체·캡레이트",
+     "last_reading": "CMBS 연체 7.35~7.55%(만기경과 포함 9.5%), 오피스 11.5~11.7%, 다가구 6.95~7.15%(2021~22 브릿지 빈티지; 에이전시 <1%). 2026 만기 $100B+ 중 절반 이상 미상환 예상(Morningstar). 2Q26 캡레이트 다가구 5.2%·오피스 7.9%(A급 6.0%, −87bp YoY), 전 유형 공실 하락, 오피스 순흡수 +0.3MSF(2025)",
+     "as_of": "2026-09-03",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -6018,6 +6567,12 @@
      "name": "전환-광업체 AI-DC 계약 critical-IT MW (APLD·CORZ·WULF)",
      "last_reading": "APLD 계약~1,410MW(라이브175)·CORZ 리스1,119MW(billable437)·WULF 계약839MW(라이브102) — 장기 take-or-pay, 전력이 물리적 상한",
      "as_of": "2026-08"
+    },
+    {
+     "name": "DC 리츠 2Q26 예약·공실",
+     "last_reading": "EQIX 총예약 $424M(사상 2위), 사상 최대 가이던스 상향, EBITDA 마진 53%, '가격 매우 견고'. DLR 백로그 $1.9B 기록(1Q 200MW 단일 AI 추론 리스). CBRE: 사상 최대 건설에도 공실 사상 최저, 1H26 순흡수 +12%. 15년 리스·24~36개월 선임대 표준화. EQIX capex $5~7B/yr(2029까지), 10년물 5%↑ 시 배수 압축 리스크",
+     "as_of": "2026-09-03",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -6150,6 +6705,12 @@
      "name": "빌더 인센티브 비율·가격인하",
      "last_reading": "62% 제공 / 평균 -6%",
      "as_of": "2026-06"
+    },
+    {
+     "name": "착공·재고·인센티브",
+     "last_reading": "7월 착공 1.239M(−12.4% MoM, −13.5% YoY), 단독 808k(−15.7%). 신축 재고 9.3개월, 신축 중간가 $404,400(2021-10 이후 최저). NAHB 8월 35% 가격인하(평균 −6%)·63% 인센티브, HMI 16개월 <40. LEN ASP $371k(인센티브 12.9%), DHI FY26 가이 $32.5~33B 하향. 모기지 6.7%(인상 시 7% 돌파)",
+     "as_of": "2026-08-26",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -6259,6 +6820,12 @@
      "name": "GLP-1 사용자 식품/알코올 지출",
      "last_reading": "단짠·주류 카테고리 두 자릿수 감소",
      "as_of": "2026-08"
+    },
+    {
+     "name": "빅푸드 2Q26·가격 인하",
+     "last_reading": "KHC·MDLZ·PEP 북미 감소 또는 저성장 vs 신흥시장 +4.4~8.5%. 美 PB 단위 점유 사상 최고, GLP-1 확산. PEP 핵심 브랜드 최대 −15% 인하(Elliott 합의, SKU −20%). GIS FY26 유기 −1.5~2%, YTD −28%. SF시 초가공식품 소송",
+     "as_of": "2026-08-14",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -6473,7 +7040,7 @@
     "utilization_inventory": "파우치 수요 초과 지속, 재고 타이트한 국면 존재."
    },
    "balance": "BALANCED",
-   "balance_direction": "파우치 부문 조여짐 / 궐련 부문 풀림(이분화)",
+   "balance_direction": "이분화 유지 — 파우치 카테고리 성장(美 오프테이크 +10%·국제 +32%)이나 ZYN 美 가치점유 57.1%(2022 75.7%→2025 61.5%) 하락·저가 변형(ULTRA) 출시 = 경쟁 진입으로 파우치 레그 '조여짐' 강도 약화 / 궐련 풀림",
    "cycle_stage": "EXPANSION",
    "leading_indicators": [
     {
@@ -6495,6 +7062,12 @@
      "name": "담배사 가격/mix",
      "last_reading": "가격 인상 흡수(수요 파괴 제한적)",
      "as_of": "2026-08"
+    },
+    {
+     "name": "ZYN·PM 2Q26",
+     "last_reading": "매출 $11.2B(+7.6% 유기), 조정EPS +15.2%, 출하 +2.5%(무연 +7.5%). ZYN 2.9B 파우치(+2% YoY, +25% QoQ), 美 소비자 오프테이크 +10%(Nielsen), 국제(ex-Nordics) 1H +32%, 60개 시장. ★ZYN 美 가치점유 57.1%(2022 75.7%→2025 61.5%) 하락, ZYN ULTRA 저가 변형 출시. 궐련 볼륨 예상 초과. EU TPD3 향 금지(집행 2029~30)",
+     "as_of": "2026-07-22",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -6534,6 +7107,11 @@
      "as_of": "2026-08",
      "tier": "WARM",
      "reason": "BUILD 6 최초 부여(절대근거)."
+    },
+    {
+     "as_of": "2026-09-11",
+     "tier": "WARM",
+     "reason": "UPDATE-8 A-2: 파우치 레그 경쟁 심화 반영, 티어 유지"
     }
    ],
    "market_read": {
@@ -6584,6 +7162,12 @@
      "name": "리테일미디어 광고 매출",
      "last_reading": "고성장(마진 레버)",
      "as_of": "2026-08"
+    },
+    {
+     "name": "가격전쟁·점유(Numerator 2Q)",
+     "last_reading": "PB 15품목 바스켓 Kroger $30 < Walmart $30.95 < Aldi $33.15 < Albertsons $35.58. Walmart 식음료 점유 20.3%(CPG +0.2p, 트래픽 +2.4%), Kroger-Giant Eagle 승인 시 8.7%로 Costco(8.3%) 추월",
+     "as_of": "2026-07-22",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -6705,6 +7289,12 @@
      "name": "BYD 평균 할인",
      "last_reading": "10% (2026-03, 사상 최대)",
      "as_of": "2026-08"
+    },
+    {
+     "name": "8월 판매·믹스(NADA/JD Power)",
+     "last_reading": "SAAR 16.8M(+1.5% YoY, 컨센 16.1M 상회), YTD 16.1M. 하이브리드 15.7~18.2%(+3~5p, 재고 부족), BEV 7.2%(−4.6p, 세액공제 종료). 인센티브 $3,384(+5.9%, MSRP 6.6%), EV $9,228. 월납입 사상최고 $812. 6월 수입차·부품 25% 관세. GM·Ford·Tesla 점유 잠식",
+     "as_of": "2026-09-09",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -6836,6 +7426,12 @@
      "name": "글로벌 럭셔리 고객 풀",
      "last_reading": "400M(2022)→340M(2025)",
      "as_of": "2026-08"
+    },
+    {
+     "name": "럭셔리 2Q26·中",
+     "last_reading": "LVMH 성장 복귀(회복은 주얼리·유럽관광·중동에 국한), Richemont 매출 +20% cc(주얼리 +24%). 中 상위 25개 브랜드 7월 −10%+이나 HNW 중심 반등, Burberry 中 +9%. Bain 2026 '좁은 회복'. Saks Global 파산(1월)",
+     "as_of": "2026-08-25",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -6963,6 +7559,12 @@
      "name": "ADR 성장",
      "last_reading": "+3.1% 전망",
      "as_of": "2026-08"
+    },
+    {
+     "name": "美 호텔 RevPAR(CBRE/STR)",
+     "last_reading": "2Q26 RevPAR +5.7%(1Q +3.8%), 수요 +1.7% vs 공급 +0.4%(2026 공급 +0.7% 역사적 저위), ADR +4.4%. STR 2026 RevPAR +4.4%로 상향(월드컵 프리미엄), 2027 +2.1% 둔화 전망. 럭셔리 두자릿수. MAR(+3.4%)·HLT(+3.9%)·H(+5.9%) 가이 상향. ★중동 RevPAR MAR −43%·HLT −30%, 멕시코 올인클루시브 약세",
+     "as_of": "2026-08-13",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -7049,8 +7651,10 @@
    ],
    "market_read": {
     "consensus": "MID",
-    "momentum": "가속",
-    "note": "회복 인지 확산 — 부호 +이나 이벤트 견인분은 하반기 롤오버 위험(peak_watch)."
+    "momentum": "만개",
+    "note": "회복 인지 확산 — 부호 +이나 이벤트 견인분은 하반기 롤오버 위험(peak_watch).",
+    "prev_momentum": "가속",
+    "as_of": "2026-09-11"
    },
    "tier_provisional": false
   },
@@ -7100,6 +7704,12 @@
      "name": "이스라엘 다포맷 소매 실사(ECP)",
      "last_reading": "식품 동일점포 H1 2026 −2.6%·2Q26 −7.2%, 그룹 EBITDA(ex-IFRS16) 마진 5.1%, 순금융부채 929M→1,162M ILS — 소매 턴어라운드의 실패 경로 표본",
      "as_of": "2026-08"
+    },
+    {
+     "name": "이커머스·소매 2Q26",
+     "last_reading": "이커머스 $340.2B(+12.2% YoY, QoQ +3.8%), 소매 비중 17.1%(2Q25 16.3%). TGT 동일점포 +3.8%(가이 상향), WMT 美 +2.6%(컨센 3.5% 미달, 주가 −9%), BBY +4.1%, GPS −1%, DKS +4.9%. ★관세 환급 일회성: WMT $2.9B·TGT $994M·HD $730M. 휘발유 $4.09(8/28)",
+     "as_of": "2026-09-01",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -7188,8 +7798,10 @@
    ],
    "market_read": {
     "consensus": "MID",
-    "momentum": "가속",
-    "note": "Amazon 등 대형은 컨센 높음(만개 근접) — 순수 성장 노출은 +, 대형주 추격은 눌림 대기."
+    "momentum": "중립",
+    "note": "Amazon 등 대형은 컨센 높음(만개 근접) — 순수 성장 노출은 +, 대형주 추격은 눌림 대기.",
+    "prev_momentum": "가속",
+    "as_of": "2026-09-11"
    },
    "tier_provisional": false
   },
@@ -7234,6 +7846,12 @@
      "name": "기존주택 매매/모기지 금리",
      "last_reading": "부진/고금리 지속",
      "as_of": "2026-08"
+    },
+    {
+     "name": "주택개조 2Q26",
+     "last_reading": "HD 동일점포 +1.7%(美 +1.3%; 2022 3Q 이후 최고), 매출 $47.9B(+5.7%, GMS +$2.8B), 온라인 16.5%(+10.8%), 가이 재확인(comps flat~+2%). LOW +0.2%(가이 하단으로 하향). 관세 환급 HD $730M",
+     "as_of": "2026-08-18",
+     "source": "UPDATE-8 A-1 스캔"
     }
    ],
    "triggers_watchlist": [
@@ -7748,9 +8366,11 @@
    "from": "TH-AI",
    "to": "IND-05",
    "direction": "+",
-   "strength": "M",
-   "mechanism": "데이터센터 건설이 E&C 수요를 창출",
-   "lag": "분기"
+   "strength": "H",
+   "mechanism": "데이터센터 건설이 E&C 성장엔진 — 딥다이브 8종에서 DC·전력 EPC가 잔고 증가의 주축(J ANR 11% AI DC 직결, PWR·EME·MTZ 잔고 사상권)",
+   "lag": "분기",
+   "strength_prev": "M",
+   "approved": "2026-09-11"
   },
   {
    "type": "THEME_DRIVES",
@@ -8567,15 +9187,21 @@
    },
    "stance_state": {
     "price": {
-     "value": 76.66,
-     "as_of": "2026-08-21",
-     "source": "deep_dive_pack_snapshot"
+     "value": 70.74,
+     "as_of": "2026-09-10",
+     "source": "NYSE close (ad-hoc-news/Morningstar) — 구리 관세 지연설로 −7.2%",
+     "prev": {
+      "value": 76.66,
+      "as_of": "2026-08-21"
+     }
     },
     "zone": "AVOID",
-    "gap_to_attractive_pct": 36.9,
+    "gap_to_attractive_pct": 26.3,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "REFRESHED_UPDATE8(NEW)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -8638,15 +9264,21 @@
    },
    "stance_state": {
     "price": {
-     "value": 216.86,
-     "as_of": "2026-08-24",
-     "source": "deep_dive_pack_snapshot"
+     "value": 194.42,
+     "as_of": "2026-09-10",
+     "source": "NYSE close (finviz) — 구리 관세 보류 −7.1%",
+     "prev": {
+      "value": 216.86,
+      "as_of": "2026-08-24"
+     }
     },
     "zone": "AVOID",
-    "gap_to_attractive_pct": 35.5,
+    "gap_to_attractive_pct": 21.5,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "REFRESHED_UPDATE8(NEW)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -8733,15 +9365,21 @@
    },
    "stance_state": {
     "price": {
-     "value": null,
-     "as_of": "2026-08-21",
-     "source": "deep_dive_pack_snapshot"
+     "value": 65.08,
+     "as_of": "2026-09-10",
+     "source": "NYSE intraday 09-10 (247wallst) −7%, 종가 미확인 근접치",
+     "prev": {
+      "value": null,
+      "as_of": "2026-08-21"
+     }
     },
     "zone": "UNKNOWN",
-    "gap_to_attractive_pct": null,
+    "gap_to_attractive_pct": 5.0,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "REFRESHED_UPDATE8(NEW)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -8814,11 +9452,13 @@
      "as_of": "2026-08-24",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "AVOID",
-    "gap_to_attractive_pct": 28.2,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -8941,7 +9581,9 @@
     "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -9051,11 +9693,13 @@
      "as_of": "2026-08-24",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "ATTRACTIVE",
-    "gap_to_attractive_pct": -4.0,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -9133,7 +9777,9 @@
     "gap_to_attractive_pct": 17.5,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "REFRESHED_UPDATE8(WINDOW)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -9208,11 +9854,13 @@
      "as_of": "2026-08-21",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 19.4,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -9342,11 +9990,13 @@
      "as_of": "2026-08-24",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "AVOID",
-    "gap_to_attractive_pct": 13.9,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -9440,11 +10090,13 @@
      "as_of": "2026-08-24",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "AVOID",
-    "gap_to_attractive_pct": 17.6,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -9517,15 +10169,21 @@
    },
    "stance_state": {
     "price": {
-     "value": 942.1,
-     "as_of": "2026-08-24",
-     "source": "deep_dive_pack_snapshot"
+     "value": 923.39,
+     "as_of": "2026-09-10",
+     "source": "NYSE close (ad-hoc-news/Google Finance)",
+     "prev": {
+      "value": 942.1,
+      "as_of": "2026-08-24"
+     }
     },
-    "zone": "AVOID",
-    "gap_to_attractive_pct": 24.0,
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 21.5,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "REFRESHED_UPDATE8(NEW)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -9595,15 +10253,21 @@
    },
    "stance_state": {
     "price": {
-     "value": 419.2,
-     "as_of": "2026-08-21",
-     "source": "deep_dive_pack_snapshot"
+     "value": 409.15,
+     "as_of": "2026-09-10",
+     "source": "NYSE close (stockanalysis/CNN)",
+     "prev": {
+      "value": 419.2,
+      "as_of": "2026-08-21"
+     }
     },
     "zone": "AVOID",
-    "gap_to_attractive_pct": 8.9,
+    "gap_to_attractive_pct": 6.3,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "REFRESHED_UPDATE8(NEW)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -9666,15 +10330,21 @@
    },
    "stance_state": {
     "price": {
-     "value": 254.94,
-     "as_of": "2026-08-24",
-     "source": "deep_dive_pack_snapshot"
+     "value": 280.53,
+     "as_of": "2026-09-08",
+     "source": "investing.com close",
+     "prev": {
+      "value": 254.94,
+      "as_of": "2026-08-24"
+     }
     },
     "zone": "AVOID",
-    "gap_to_attractive_pct": 15.9,
+    "gap_to_attractive_pct": 27.5,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "REFRESHED_UPDATE8(NEW)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -9742,11 +10412,13 @@
      "as_of": "2026-08-26",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "AVOID",
-    "gap_to_attractive_pct": 9.9,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -9822,11 +10494,13 @@
      "as_of": "2026-08-21",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "AVOID",
-    "gap_to_attractive_pct": 12.1,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -9908,11 +10582,13 @@
      "as_of": "2026-08-28",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "AVOID",
-    "gap_to_attractive_pct": 15.9,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -9987,11 +10663,13 @@
      "as_of": "2026-08-28",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 8.8,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "YELLOW",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -10054,11 +10732,13 @@
      "as_of": "2026-08-28",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 4.8,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -10134,11 +10814,13 @@
      "as_of": "2026-08-28",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 0.5,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -10213,11 +10895,13 @@
      "as_of": "2026-08-28",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 8.6,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -10293,11 +10977,13 @@
      "as_of": "2026-08-28",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "ATTRACTIVE",
-    "gap_to_attractive_pct": -15.5,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "YELLOW",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -10506,11 +11192,13 @@
      "as_of": "2026-08-24",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 13.9,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -10578,11 +11266,13 @@
      "as_of": "2026-08-21",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
+    "zone": "UNKNOWN",
     "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -10662,11 +11352,13 @@
      "as_of": "2026-08-25",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 0.9,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -10739,11 +11431,13 @@
      "as_of": "2026-08-21",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 20.6,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -10813,11 +11507,13 @@
      "as_of": "2026-08-28",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 5.4,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -10864,7 +11560,9 @@
     "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -10944,7 +11642,9 @@
     "gap_to_attractive_pct": 12.5,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "REFRESHED_UPDATE8(WINDOW)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -11036,11 +11736,13 @@
      "as_of": "2026-08-28",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 2.3,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -11253,7 +11955,9 @@
     "gap_to_attractive_pct": 14.8,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "REFRESHED_UPDATE8(WINDOW)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -11329,11 +12033,13 @@
      "as_of": "2026-08-24",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 6.4,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -11404,7 +12110,9 @@
     "gap_to_attractive_pct": 22.3,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "REFRESHED_UPDATE8(WINDOW)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -11478,7 +12186,9 @@
     "gap_to_attractive_pct": 5.7,
     "freshness": "FRESH",
     "tripwire_status": "YELLOW",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "REFRESHED_UPDATE8(WINDOW)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -11560,7 +12270,9 @@
     "gap_to_attractive_pct": 12.5,
     "freshness": "FRESH",
     "tripwire_status": "YELLOW",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "REFRESHED_UPDATE8(WINDOW)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -11696,11 +12408,13 @@
      "as_of": "2026-08-21",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "AVOID",
-    "gap_to_attractive_pct": 34.0,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -11784,11 +12498,13 @@
      "as_of": "2026-08-25",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 12.3,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -11861,11 +12577,13 @@
      "as_of": "2026-08-25",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 10.8,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -11969,11 +12687,13 @@
      "as_of": "2026-08-28",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "AVOID",
-    "gap_to_attractive_pct": 55.2,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -12073,7 +12793,9 @@
     "gap_to_attractive_pct": -10.0,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "REFRESHED_UPDATE8(WINDOW)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -12146,7 +12868,9 @@
     "gap_to_attractive_pct": -9.0,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "REFRESHED_UPDATE8(WINDOW)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -12361,11 +13085,13 @@
      "as_of": "2026-08-21",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "AGGRESSIVE",
-    "gap_to_attractive_pct": -19.7,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -12573,11 +13299,13 @@
      "as_of": "2026-08-24",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 9.8,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -12641,7 +13369,9 @@
     "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -12995,11 +13725,13 @@
      "as_of": "2026-08-21",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "ATTRACTIVE",
-    "gap_to_attractive_pct": -5.2,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -13090,11 +13822,13 @@
      "as_of": "2026-08-21",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 6.1,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -13365,11 +14099,13 @@
      "as_of": "2026-08-24",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 7.7,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -13432,15 +14168,21 @@
    },
    "stance_state": {
     "price": {
-     "value": null,
-     "as_of": "2026-08-21",
-     "source": "deep_dive_pack_snapshot"
+     "value": 189.5,
+     "as_of": "2026-09-08",
+     "source": "NYSE close (Yahoo/CNBC)",
+     "prev": {
+      "value": null,
+      "as_of": "2026-08-21"
+     }
     },
-    "zone": "UNKNOWN",
-    "gap_to_attractive_pct": null,
+    "zone": "WATCH",
+    "gap_to_attractive_pct": 2.4,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "REFRESHED_UPDATE8(NEW)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -13518,7 +14260,9 @@
     "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -14082,10 +14826,12 @@
      "source": "deep_dive_pack_snapshot"
     },
     "zone": "UNKNOWN",
-    "gap_to_attractive_pct": 15.8,
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -14228,7 +14974,9 @@
     "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -14273,7 +15021,9 @@
     "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -14346,11 +15096,13 @@
      "as_of": "2026-08-21",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "AVOID",
-    "gap_to_attractive_pct": 30.1,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -14412,10 +15164,12 @@
      "source": "deep_dive_pack_snapshot"
     },
     "zone": "UNKNOWN",
-    "gap_to_attractive_pct": 7.7,
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -14462,7 +15216,9 @@
     "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -14529,11 +15285,13 @@
      "as_of": "2026-08-21",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 2.0,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -14600,11 +15358,13 @@
      "as_of": "2026-08-21",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "ATTRACTIVE",
-    "gap_to_attractive_pct": -8.1,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -14671,11 +15431,13 @@
      "as_of": "2026-08-21",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "AVOID",
-    "gap_to_attractive_pct": 33.3,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -14748,11 +15510,13 @@
      "as_of": "2026-08-21",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 12.1,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -14868,11 +15632,13 @@
      "as_of": "2026-08-21",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "AVOID",
-    "gap_to_attractive_pct": 20.1,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -14940,11 +15706,13 @@
      "as_of": "2026-08-21",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 16.6,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -15017,11 +15785,13 @@
      "as_of": "2026-08-21",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 11.8,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -15095,11 +15865,13 @@
      "as_of": "2026-08-21",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 16.5,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -15172,11 +15944,13 @@
      "as_of": "2026-08-21",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 3.6,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -15223,7 +15997,9 @@
     "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -15291,11 +16067,13 @@
      "as_of": "2026-08-24",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "AVOID",
-    "gap_to_attractive_pct": 36.0,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -15368,11 +16146,13 @@
      "as_of": "2026-08-24",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "AVOID",
-    "gap_to_attractive_pct": 40.8,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -15450,7 +16230,9 @@
     "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -15559,11 +16341,13 @@
      "as_of": "2026-08-24",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "AVOID",
-    "gap_to_attractive_pct": 35.2,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -15647,11 +16431,13 @@
      "as_of": "2026-08-25",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 8.5,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -15724,11 +16510,13 @@
      "as_of": "2026-08-25",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 17.8,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -15775,7 +16563,9 @@
     "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -15848,11 +16638,13 @@
      "as_of": "2026-08-26",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 13.8,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -15920,11 +16712,13 @@
      "as_of": "2026-08-25",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "AVOID",
-    "gap_to_attractive_pct": 29.4,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -15997,11 +16791,13 @@
      "as_of": "2026-08-25",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "AVOID",
-    "gap_to_attractive_pct": 22.6,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -16067,11 +16863,13 @@
      "as_of": "2026-08-25",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "AVOID",
-    "gap_to_attractive_pct": 20.2,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -16138,11 +16936,13 @@
      "as_of": "2026-08-25",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 14.5,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -16200,11 +17000,13 @@
      "as_of": "2026-08-26",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 21.5,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -16385,11 +17187,13 @@
      "as_of": "2026-08-26",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "AVOID",
-    "gap_to_attractive_pct": 4.9,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -16457,11 +17261,13 @@
      "as_of": "2026-08-28",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 7.3,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -16523,11 +17329,13 @@
      "as_of": "2026-08-28",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "AVOID",
-    "gap_to_attractive_pct": 84.6,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -16594,11 +17402,13 @@
      "as_of": "2026-08-28",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "AVOID",
-    "gap_to_attractive_pct": 64.1,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -16665,11 +17475,13 @@
      "as_of": "2026-08-24",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "AVOID",
-    "gap_to_attractive_pct": 42.7,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -16737,11 +17549,13 @@
      "as_of": "2026-08-24",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 13.4,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -16808,11 +17622,13 @@
      "as_of": "2026-08-25",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "AVOID",
-    "gap_to_attractive_pct": 17.6,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -16880,7 +17696,9 @@
     "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -16948,7 +17766,9 @@
     "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -17024,11 +17844,13 @@
      "as_of": "2026-08-28",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "AGGRESSIVE",
-    "gap_to_attractive_pct": -13.5,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -17104,11 +17926,13 @@
      "as_of": "2026-08-28",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 7.1,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -17176,11 +18000,13 @@
      "as_of": "2026-08-28",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "AVOID",
-    "gap_to_attractive_pct": 25.7,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -17258,11 +18084,13 @@
      "as_of": "2026-08-31",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 27.1,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -17342,11 +18170,13 @@
      "as_of": "2026-08-28",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 30.6,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -17415,7 +18245,9 @@
     "gap_to_attractive_pct": 6.6,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "REFRESHED_UPDATE8(WINDOW)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -17491,11 +18323,13 @@
      "as_of": "2026-08-28",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "AVOID",
-    "gap_to_attractive_pct": 20.6,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -17567,11 +18401,13 @@
      "as_of": "2026-08-28",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "AVOID",
-    "gap_to_attractive_pct": 31.2,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -17649,11 +18485,13 @@
      "as_of": "2026-08-28",
      "source": "deep_dive_pack_snapshot"
     },
-    "zone": "WATCH",
-    "gap_to_attractive_pct": 9.5,
+    "zone": "UNKNOWN",
+    "gap_to_attractive_pct": null,
     "freshness": "FRESH",
     "tripwire_status": "RED",
-    "display_suppressed": true
+    "display_suppressed": true,
+    "refresh_status": "NOT_REFRESHED_UPDATE8 — 관측 미갱신, §4A에 따라 zone=UNKNOWN (마지막 관측값·as_of는 보존)",
+    "stance_refreshed_at": "2026-09-11"
    }
   },
   {
@@ -17726,53 +18564,34 @@
     "gap_to_attractive_pct": -13.7,
     "freshness": "FRESH",
     "tripwire_status": "UNKNOWN",
-    "display_suppressed": false
+    "display_suppressed": false,
+    "refresh_status": "REFRESHED_UPDATE8(WINDOW)",
+    "stance_refreshed_at": "2026-09-11"
    }
   }
  ],
  "monthly_diff": {
-  "build": "UPDATE-7 (MODE B — 딥다이브 통합) 배치 1~5 완료",
-  "note": "딥다이브 팩 28종 통관. §7A 승격 15 · 신설 10 · 재통관 2(LRCX·WMB) · 동결 재확인 1(TLN, 동일 날짜 팩). DEEP_DIVED 86→111, 노드 326→336. 티어 변경 0. §7B 통관 27건 전량 ATLAS_DERIVED로 아래 전량 공시. 후보 원장 대정산: NEW OPEN 5종(TSM·ASML·OKLO·BWXT·PWR) 전부 RESOLVED — 잔여 NEW OPEN 0. 전면 톱다운 미실행(B타입 정상). IND-05 HEAT 승격 근거가 티어 기준에 도달했으나 cap 포화 + B타입이라 차기 A타입 이관.",
+  "build": "UPDATE-8 (MODE A — 전면 톱다운, 3세션 A-1/A-2/A-3) 완료",
+  "note": "56종 전면 스캔(선행지표 additive 73건) → 심층확인 14종 → 티어 4건(NEUTRAL→WARM IND-09·IND-07·MAT-05, NEUTRAL→COLD FIN-03) · balance 2건(IND-05·ENE-04 →SHORTAGE) · HEAT 로테이션 0(인컴번트 8종 전부 유지 근거 2개+, 승격 자격 5건 보류·큐 재정렬) · §3A 전파 10체인 임계통과 0 · 카드 본문 정정 13건(old 보존) · 엣지 승인 1 · 테마 기각 1 · peak_watch 3(IND-01 해제·HLT-02 신규) · 후보 NEW 3(MU·329180.KS 피크검증·PKG)·REVISIT 3(HSHP·LNG·VG) · 스탠스 리프레시 18종 관측/78종 UNKNOWN(§4A).",
   "flags": [
-   "티어 변경 0 — 상향 근거가 축적된 IND-05·ITC-03·UTL-02는 HEAT cap 8/8 포화 및 B타입 전면스캔 부재로 전부 보류(차기 A타입 이관).",
-   "★가격·zone 어휘가 티어 판단 근거에 사용된 건 0건. 스탠스 리프레시(§4A)는 티어·전파·후보 정산이 전부 끝난 뒤 마지막 단계로 실행.",
-   "★ITC-03 카드 본문의 WFE 수치(2026 $135B/+9%)가 새 원본(SEMI 2026 $143.9B/+23.1%)과 어긋남 — 02 §4 직전 카드 본문 불가침에 따라 본문은 건드리지 않고 선행지표로 additive 반영 + known_debt 등재. 본문 정정은 A타입 몫.",
-   "★SNOW 관측가는 정규장 종가 $305.84 사용(팩이 시간외 $375.51을 'not regular close'로 명시). 이 때문에 기계적 zone(ATTRACTIVE)과 label(WATCH)이 갈림 — 차기 갱신에서 정규장 확인 필요.",
-   "★UBER는 팩 밴드에 72~82 공백이 있어 현재가 $76.78이 어느 칸에도 속하지 않음 → zone=UNKNOWN(보간 금지, §7B 제1·2조). gap은 attractive 상단 $72 기준 산출.",
-   "★ECP는 KPI 2건(식품 동일점포 −7.2%, 순금융부채 1,162M ILS)이 RED 임계 → tripwire_status=RED → display_suppressed=true(스탠스 보드에서 zone 강조 해제).",
-   "★기존 84개 DEEP_DIVED 노드의 관측 주가는 이번 세션에서 갱신하지 않음 — B타입 범위 밖이라는 명시적 판정(§1-3). 전부 as_of·source가 병기된 딥다이브 시점 스냅샷이며 freshness가 노후화를 표시한다. '낡은 가격을 최신인 척' 두는 상태는 아니라고 판정.",
-   "★직전 팩 결함 정산: stance_state.price.as_of 공란 8종 발견. 값이 있는 3종(LNG, IRM, NBIS)은 zone을 UNKNOWN으로 내림(§4A). 값 삭제 0건, as_of 임의 생성 0건. known_debt 등재.",
-   "★후보 배열 정리: RESOLVED 5종을 `deep_dive_candidates`에서 `deep_dive_candidates_resolved`로 이동. 콘솔이 status를 필터하지 않아 소진된 후보가 화면에 남는 결함을 PACK 측에서 해소(뷰 무변경). 삭제 0건.",
-   "★후보 원장 정정: '신규 후보 생성은 A타입에서만'(직전 carry 메모)을 01 §3B 원문('매 빌드·갱신의 정식 산출물')에 대조해 폐기. ONTO·CAMT NEW 등재, PRIM·DY 스크리닝 유니버스 지정, 메모리·조선 커버리지 구멍은 peak_watch 조항 충돌로 결정 요청."
+   "★로테이션 0: 승격 자격 충족 5건(UTL-02·IND-05·ITC-03·ENE-03·ENE-04)이 있으나 HEAT 8종 중 역신호 2개를 가진 인컴번트 없음 → 03 §2(b) 정성 타이브레이크 결론 '근거 없이 내리지 않는다'. rationale에 'HEAT 자격 충족·cap 보류' 명시로 뷰에서 pocket-HEAT 식별 가능.",
+   "★매크로 레짐: 美-이란 전쟁 격화(해상봉쇄·'2029까지' 경고, 브렌트 $101~105·디젤 크랙 $106) + Fed 인상 50/50 — ENE-01·ENE-03·ENE-04·IND-07·IND-02·IND-08·DIS-03·FIN-01·RLE 카드에 동시 작용. '일시 조임' 표현은 ENE-01·IND-07에서 철회.",
+   "★9/10 관측(스탠스 리프레시 중 확인, 티어 판정 이후): 백악관 정제 구리 관세 결정 보류 보도로 구리주 −7~8%(FCX $70.74·SCCO $194.42·TECK ~$65). 관세 선제수입 기반 지역 희소성 프리미엄 소멸 경로 — MAT-02 구리 peak_watch 역신호 5번째로 기록. 티어 판정에는 사용하지 않음(순서 규율).",
+   "★스탠스 리프레시 커버리지: 96종 중 18종만 관측 갱신(신규 7·세션 창 내 11). 나머지 78종은 §4A 규율대로 zone=UNKNOWN(마지막 관측값·as_of 보존). 웹서치 기반 수동 관측의 한계 — 차기부터 '가격 리프레시 팩'(티커·종가·as_of·source 표) 첨부 방식 제안.",
+   "가격·zone 어휘가 티어·balance·후보 판단 근거에 사용된 건 0건. 스탠스 리프레시는 A-3(티어 확정 후)에서만 실행.",
+   "IND-05 BALANCE_CHANGE로 DEEP_DIVED 8종 REVISIT trigger가 기계적으로 점등했으나 정원 컷(순환논리)으로 미등재 — 기록 유지."
   ],
-  "upgrades": [],
-  "downgrades": [],
-  "node_promotions": [
-   "EME",
-   "FLR",
-   "J",
-   "KBR",
-   "MTZ",
-   "PWR",
-   "TSM",
-   "ASML",
-   "AMAT",
-   "OKLO",
-   "BWXT",
-   "NEE",
-   "NOW",
-   "PLTR",
-   "SNOW"
+  "upgrades": [
+   "IND-09 NEUTRAL→WARM",
+   "IND-07 NEUTRAL→WARM",
+   "MAT-05 NEUTRAL→WARM"
   ],
-  "node_corrections": [
-   "BWXT industries UTL-02 → UTL-02+IND-02 (해군 원자력=방산 이중 노출, 대표는 UTL-02 유지)",
-   "PWR industries IND-05+IND-03 유지(변경 없음) — 딥다이브가 IND-03(전력기기) 인접성을 확증"
+  "downgrades": [
+   "FIN-03 NEUTRAL→COLD"
   ],
-  "node_refreshes": [
-   "LRCX 재통관(§7A 4단계): 팩 260825→260905. 밴드 전면 교체(235/245-265/265-300/300-340/340+ → 250/250-270/270-330/330-380/380+), ref $310.17→$303.72, label_basis NONE→IRR(3.844%). label WATCH 불변.",
-   "WMB 재통관(§7A 4단계): 팩 260825→260902. 밴드는 동일하나 정량근거 신규 확보(확률가중 IRR 6.744%·DCF $63.02) → label_basis NONE→IRR. ref $71.63→$75.23. label WATCH 불변.",
-   "TLN 동결 재확인: 제출 팩(260827)이 이미 통관된 팩과 동일 날짜·동일 내용 → §7B 제3조(통관 시 1회 생성 후 동결)에 따라 atlas_stance 재생성하지 않음. 노드 무변경. ※기존 label(ATTRACTIVE)과 ref_price $307.67의 기계적 zone(WATCH, hold_watch 305~350)이 갈리는 상태가 유지됨 — 동결 조항상 이번 세션에서 고치지 않고 known_debt로 이월."
-  ],
+  "node_promotions": [],
+  "node_corrections": [],
+  "node_refreshes": [],
   "classification_decisions": [
    "UBER = COM-03(대표, 마켓플레이스 플랫폼) + DIS-03(배달·외식) + IND-06(화물·라스트마일). 대표는 총예약 무게중심(Mobility+Delivery) 기준.",
    "CAT = IND-04(대표, 건설·광산 기계) + IND-03(발전 패키지) + MAT-02(광산 장비). 2Q26 매출은 P&E $8.238B ≈ CI $8.346B로 근접 — 발전 레그가 CI를 넘기면 차기 갱신에서 대표 재지정 검토(트립와이어 등재).",
@@ -17783,43 +18602,142 @@
    "XE = UTL-02, MYRG = IND-05, ACM = IND-05(카드에는 이미 등재돼 있었으나 company_node가 없던 상태 — 노드 신설로 정합), SVRA = HLT-02."
   ],
   "card_reflections_additive": [
-   "IND-05: 선행지표 4개 추가(딥다이브 8종 잔고 하드넘버 / 전기공·배관공 공석 / 미 총건설 SAAR −3.2% / 마진 실현). 수요·공급 본문 무변경.",
-   "ITC-03: 선행지표 5개 추가(SEMI WFE 2026 $143.9B +23.1%→2028 $200B / ASML capa 계획 / 장비사 실적 인플렉션 / 첨단패키징·PDC >50% / 중국 노출). 본문 무변경(known_debt 참조).",
-   "ITC-02: 선행지표 3개 추가(TSMC 선단 믹스·수익성 / 월매출 / capex·점유).",
-   "UTL-02: 선행지표 5개 추가(SMR 규제 진척 / 고객 계약 강도 / 연료 병목 TRISO-X·HALEU / BWXT 잔고 / DC 전력 수요 배경).",
-   "UTL-01: 선행지표 3개 추가(대형부하 21GW/12GW · 규제자본 +9.3% · 신규 공급 파이프).",
-   "IND-03: 선행지표 3개 추가(★NEE 변압기 2030·개폐기 2029 선확보 / CAT 발전 소매 +72% / 가스터빈 4GW 확보).",
-   "ENE-02: 선행지표 4개 추가(RPO $30.7B / 프로젝트 파이프 / LNG 수출 경로 / ★2028~30 공급파 역풍).",
-   "UTL-03: 선행지표 3개 추가(미 스토리지 설치 / 제어 SW 화폐화 / NEER 개발 백로그).",
-   "ITC-07: 선행지표 3개 추가(수요 이원화 하드넘버 / ★회계FCF↔경제FCF 간극 / 시트 과금 이동).",
-   "ITC-06: 선행지표 2개 추가(★메모리 원가 전가 / 완제품 수요).",
-   "IND-04: 선행지표 2개 추가(CAT 잔고 $51B→$72.1B / 딜러 소매).",
-   "MAT-02: 선행지표 1개 추가(★구리 공급갭 전망 30%→25% 하향).",
-   "MAT-06 / HLT-02 / COM-03 / DIS-04: 각 1~2개 추가.",
-   "카드 companies에 신규 편입 17건(중복 귀속 포함). 기존 기업의 note만 딥다이브 결과로 보강 — chain_position·role은 무변경."
+   "A-1 선행지표 additive 73건(56종), market_read 관측 갱신 15건(prev_ 보존)"
   ],
   "propagation_paths": [
-   "ITC-03(반도체장비, WFE 2026 $143.9B/+23.1%·2027 $175.3B — 직전 카드 $135B/+9% 대비 상향) →SUPPLIES_TO(H)→ ITC-02(파운드리, AMPLIFY: TSMC 2026 capex $60~64B가 그 상향의 수요측 원본) →DEMAND_COMOVES(M)→ ITC-05(메모리) [2홉 종료] · 임계 통과 0, 양 노드 HEAT 유지",
-   "ITC-03 →SUPPLIES_TO(H)→ ITC-05(메모리, MIXED: ASML 시스템 매출 로직:메모리 51:49·SK하이닉스 HBM4 양산·321단 NAND 램프·AMAT 첨단패키징 +50%는 수요 강도인 동시에 공급 응답의 실물 증거) · 티어 유지, peak_watch 근거 강화",
-   "ITC-05(HEAT) →SUPPLIES_TO(H)→ ITC-06(IT하드웨어, PRESSURE: AAPL 정규화 GM 49.3→48.1→가이 46.5%, 주된 요인 메모리 원가 — 부족의 청구서가 하류 세트 마진에 도달) →DEMAND_COMOVES(M)→ IND-03 [2홉 종료] · ITC-06 WARM 유지(원가 압박은 마진 이슈이지 수급 균형 전환 아님), 임계 통과 0",
-   "IND-03(전력기기, AMPLIFY: NEE가 개폐기 2029·변압기 2030까지 선확보 — 발주자가 4년치를 잠근다는 리드타임 병목의 직접 증거 + CAT 발전 소매 +72% YoY) →SUPPLIES_TO(H)→ UTL-01(전력유틸, AMPLIFY: FPL 규제자본 +9.3%·대형부하 심층협의 12GW) →SUPPLIES_TO(H)→ RLE-02(DC리츠) [2홉 종료] · 3노드 전부 기존 티어 유지, 임계 통과 0",
-   "TH-AI(테마) →THEME_DRIVES(M)→ IND-05(E&C, AMPLIFY: 딥다이브 8종의 잔고가 일제히 사상권 + 전기공 연 72,700명 공석으로 병목이 인력임을 확인) →SUPPLIES_TO(M)→ UTL-02(원자력 EPC 수요) [2홉 종료] · IND-05는 상향 증거가 티어 기준에 도달했으나 HEAT cap 8/8 포화 + B타입 전면스캔 부재로 승격 보류 → 차기 A타입 이관(부채 등재)",
-   "MAT-02(광업·전략광물, 구리 레그 PRESSURE: CAT 팩의 2035 구리 공급갭 전망이 2025 outlook 30% → 2026 outlook 25%로 하향) · 전략광물(희토류·텅스텐) 앵커가 HEAT를 지지하므로 산업 티어 HEAT 유지, 구리 레그 peak_watch 근거만 보강",
-   "ENE-02(미드스트림) →SUPPLIES_TO(M)→ ENE-04(LNG·가스인프라, 잠재 PRESSURE: 2025~30 FID 후 글로벌 LNG 증설 ~345bcm/yr·정점 2028 ~95bcm/yr → 2028~30 netback 스트레스 창) · 2026~27은 오히려 타이트하다는 팩 판정이라 임계 미달 — 감시 강화만 표기, ENE-04 WARM 유지",
-   "UTL-03(신재생, MIXED: 미 스토리지 2025말 43.6GW→1H26 +8.3GW로 설치기반은 급증하나 STEM 총ARR $61.1M→$62.4M로 SW 화폐화는 저한자릿수) · NEUTRAL 유지, '태양광·ESS 조여짐 vs 해상풍력 풀림' 분열 판정 불변"
+   "IND-05(balance→SHORTAGE, 인력 병목) →SUPPLIES_TO(M)→ ENE-04(AMPLIFY: 걸프 EPC 349,000명 부족이 LNG 터미널·블루암모니아 증설 일정을 지연 → ENE-04 SHORTAGE 지속성 강화) →SUPPLIES_TO(H, IND-01 역방향 소환)→ IND-01(AMPLIFY: LNG선 발주 지속) [2홉 종료] · 임계 통과 0(IND-01 이미 HEAT)",
+   "IND-05(SHORTAGE) →SUPPLIES_TO(M)→ UTL-02(MIXED: 원전·SMR 건설 EPC 비용·일정 압박 = 원가↑ / 수요 확증은 별개) →SUPPLIES_TO(M)→ UTL-01 [2홉] · 감시 강화만",
+   "IND-05(SHORTAGE) →SUPPLIES_TO(H)→ DIS-04(PRESSURE: 풀필먼트·매장 건설 비용↑, 물량 영향 미미) · 임계 미달, L급 언급",
+   "TH-AI →THEME_DRIVES(M→H 승인)→ IND-05 →(위 체인) · 테마 엣지 강화가 IND-05 HEAT 자격의 구조적 근거",
+   "ENE-04(balance→SHORTAGE) ←SUPPLIES_TO(H)← IND-01(AMPLIFY: LNG선 수요 유지; 단 LNG선 신조가 YoY −$6.5M으로 가격은 미반영 — MIXED) / ←SUPPLIES_TO(M)← ENE-02(AMPLIFY: Transco·Golden Pass 피드가스 물량) / ←SUBSTITUTES(M)← ENE-05(AMPLIFY: 가스가 상승 시 석탄 대체 — ENE-05 cold_reversal_signal 감시 강화, COLD 유지) · 임계 통과 0",
+   "IND-07(NEUTRAL→WARM, 탱커) ←SUPPLIES_TO(H)← IND-01(AMPLIFY: 탱커 운임 → VLCC 신조가 $131M 사상최고, 교차 확증) / →DEMAND_COMOVES(M)→ MAT-01(중립: 후판 수요는 조선 잔고 경유, 별도 신호 없음) · 임계 통과 0",
+   "IND-09(NEUTRAL→WARM) ←DEMAND_COMOVES(M)← IND-04(MIXED: FAST 실물 가속 vs ISM 신규주문 감속 — IND-04 WARM 유지, 유통 데이터가 서베이 선행 여부 감시) / →DEMAND_COMOVES(M)→ MAT-02(MIXED: 산업 구리 수요 지지 vs 고가 냉각) · 임계 통과 0",
+   "MAT-05(NEUTRAL→WARM) ←SUPPLIES_TO(H)← MAT-03(AMPLIFY: 수지 과잉=포장재 원가 우호; 유가 $100은 역방향 — MIXED) / ←SUPPLIES_TO(M)← MAT-01(PRESSURE: 관세 철강가 → 금속캔 원가↑) · 임계 통과 0",
+   "FIN-03(NEUTRAL→COLD) →SUPPLIES_TO(L)→ RLE-01(언급만: 재물 보험료 하락은 RLE-01 운영비 +) / ←DEMAND_COMOVES(M)← FIN-01(중립) · 임계 통과 0",
+   "ENE-01(방향 재서술, 티어 유지) →INVERSE(H)→ IND-08(PRESSURE: 9월 유가 재급등으로 3Q 연료 가정 붕괴 — NEUTRAL 유지, 10월 실적 판정) / →INVERSE(M)→ DIS-03(PRESSURE: 중동 RevPAR −30~43%·항공운임) / →INVERSE(M)→ MAT-03(PRESSURE: 나프타 원가 — 유럽·아시아 크래커 폐쇄 가속 = COLD 바닥 형성 역설적 촉진) / →SUPPLIES_TO(H)→ ENE-03(AMPLIFY: 크랙 사상최고) · 임계 통과 0(ENE-03 큐 4순위)"
   ],
   "watch_intensified": [
-   "ITC-05(메모리) — 장비·패키징 공급 응답이 실물로 집행 중임이 3개 팩(ASML·AMAT·LRCX)에서 교차 확인. 동시에 AAPL 마진에서 가격 전가의 하류 흔적 확인 → peak_watch 강화",
-   "ENE-04(LNG) — 2028~30 공급파 netback 스트레스 창(WMB 팩). 현재 임계 미달이나 차기 A타입에서 balance 재점검 대상",
-   "MAT-02 구리 레그 — 공급갭 전망 하향(30%→25%)으로 직전 peak_watch 사유(컨센 분열·가격 −4.5%)에 근거 1개 추가",
-   "ITC-07 — 상위 플랫폼 3종은 소비량·플랫폼 과금으로 이미 이동해 '시트 과금 붕괴' 교란 플래그의 반대편 증거. 다만 NOW의 회계FCF↔경제FCF 간극(SBC 16%)은 주당 가치 측면의 새 감시축"
+   "ENE-05 석탄 — 가스가 상승·DOE 명령 누적으로 cold_reversal_signal 감시 강화(SUBSTITUTES 경유). COLD 유지",
+   "IND-08 항공 — 9월 유가 $100 재급등이 3Q 연료 가정(<$2.80/gal) 붕괴 위험. 10월 실적이 판정점",
+   "DIS-03 여행 — ③ 만개 + 2027 RevPAR 둔화 전망(+2.1%) + 중동 −30~43%. peak_watch 등재는 미달(선행지표 롤오버 미확인)",
+   "IND-04 기계 — ISM 신규주문·잔고 감속 vs IND-09 실물 가속의 괴리. 9월 ISM이 판정",
+   "FIN-01 은행 — Fed 인상 전환 시 balance_direction('NIM 압박 풀림') 반전. 9/16 FOMC",
+   "ITC-06 하드웨어 — 광 트랜시버 레그 HEAT급(부품 병목) vs 소비 레그 메모리 원가 — balance MIXED 유지, 광 레그 순노출 스크리닝 유니버스",
+   "STP-01 식품 — 가격 인하 전환 후 볼륨 회복 여부가 cold_reversal_signal",
+   "MAT-01 철강 — 10월 말 CLF Q3 실적(≥$500M+FCF)이 WARM 승격 판정점"
   ],
   "screening_recommendations": [
-   "IND-05(E&C) — 8종 딥다이브 전량이 '수요 확증·가격 선반영'. 다음 스크리닝은 대장주가 아니라 하위공정에서: MTZ 팩 peer 표에 등장한 PRIM(Primoris, 유틸+에너지, fwd P/E 20.5x·ROIC 6.7% — peer 최저 배수)·DY(Dycom, 광섬유·DC 케이블링)를 유니버스 출발점으로 지정. ★후보로 바로 올리지 않는 이유: 두 종목 모두 카드 ⑦·company_nodes에 없고 근거가 peer 표 1행뿐 — §3B(후보는 카드 ⑦에서)와 정합하게 스크리닝→노드 편입→후보 순서를 밟는다.",
-   "ITC-03 — 알파는 광범위 WFE가 아니라 첨단패키징·검사·테스트 하위(ONTO·CAMT·ADTTF)라는 직전 판정을 AMAT 팩(첨단패키징·PDC 각 >50%)이 재확인. 스크리닝 유니버스 유지.",
-   "UTL-02 — 발전측(CEG·VST·TLN)·연료측(CCJ·LEU)·부품측(BWXT)·신설측(OKLO·XE) 4개 레그 모두 딥다이브 도달. 스크리닝은 이제 '아직 안 본 곳'이 아니라 '가격 대기'가 논점 — 신규 스크리닝 권고 없음."
+   "IND-09 산업유통(승격) — FAST·GWW·FERG·WCC·AIT 유니버스. 후보 미등재 사유: 축③ MID·대장주(UPDATE-7 교훈). 스크리닝에서 전기·DC 소모품 비중 높은 순노출(WCC) 우선",
+   "IND-07 탱커 레그(승격) — 카드 ⑦ FRO·STNG(제품선) + 순노출 확장(INSW·DHT·TNK) 스크리닝. 축③ HIGH(운임 사상급) → '진입 눌림 대기' 캐비앗",
+   "ITC-04 ABF 레그 — 이비덴·신코·Unimicron·Nan Ya PCB 유니버스 신설(카드 ⑦ 미등재 → 스크리닝→노드 편입 순서)",
+   "IND-05 하위공정 — PRIM·DY 유니버스 유지(UPDATE-7). balance SHORTAGE 전환으로 우선순위 상승"
   ],
   "deep_dive_candidates": [
+   {
+    "ticker": "MU",
+    "name": "Micron",
+    "type": "NEW",
+    "industry": "ITC-05",
+    "bucket": "C — 피크 검증(사용자 승인 경로)",
+    "trigger": null,
+    "tier_context": "HEAT(peak_watch 강화)",
+    "node_status": "SHALLOW",
+    "rationale": "ITC-05는 HEAT인데 DEEP_DIVED 0. §3B '피크아웃 감시 산업은 후보에서 뺀다'와 충돌하나, 사용자가 '피크 검증 목적' 등재를 명시 승인(UPDATE-8 착수 전). 검증 논점: 현물 '부진' vs 계약 상향의 분열이 종목 손익에서 어느 쪽으로 해소되는가 — HBM 비중·LTA 커버리지·재고일수가 하드넘버. REGIME_LEADER·美 상장으로 데이터 접근성 최선.",
+    "falsifier": "딥다이브 결과 3Q 실현 ASP가 TrendForce 계약가 가이(+13~18%) 미달이거나 재고일수 급증이면 '피크 지속' 논제 기각 → peak_watch 강등 근거",
+    "horizon": "1~2분기(3Q 실적·4Q 계약 협상)",
+    "verdict_log": "미실시",
+    "status": "OPEN",
+    "origin": "UPDATE-8 A-2 — 사용자 승인 '피크 검증' 경로(§3B 인간 경로 조항). 가격 근거 아님"
+   },
+   {
+    "ticker": "329180.KS",
+    "name": "HD현대중공업",
+    "type": "NEW",
+    "industry": "IND-01",
+    "bucket": "C — 피크 검증(사용자 승인 경로)",
+    "trigger": null,
+    "tier_context": "HEAT(peak_watch 해제)",
+    "node_status": "SHALLOW",
+    "rationale": "IND-01은 HEAT인데 DEEP_DIVED 0. 사용자 승인 '피크 검증' 경로. 검증 논점: 신조선가 재상승(186.34·VLCC $131M)이 한국 조선사 수주 마진에 실제 반영되는가 vs 中 85% 점유 잠식이 선별수주 마진을 압박하는가 — 척당 수주가·잔고 마진·인도 지연이 하드넘버. REGIME_LEADER.",
+    "falsifier": "딥다이브 결과 신규 수주 마진이 잔고 평균을 하회하거나 3년치 잔고에도 슬롯 가격 인상이 안 되면 '선별수주=가격결정력' 논제 기각",
+    "horizon": "2~3분기(하반기 LNG선·VLCC 발주 시즌)",
+    "verdict_log": "미실시",
+    "status": "OPEN",
+    "origin": "UPDATE-8 A-2 — 사용자 승인 '피크 검증' 경로. 가격 근거 아님"
+   },
+   {
+    "ticker": "PKG",
+    "name": "Packaging Corp of America",
+    "type": "NEW",
+    "industry": "MAT-05",
+    "bucket": "C — 확장 초입(③ LOW)",
+    "trigger": null,
+    "tier_context": "WARM(UPDATE-8 승격)",
+    "node_status": "SHALLOW",
+    "rationale": "3차 인상($140/t 전례없음)의 발안자 = 트리거 최대 순노출. 축③ LOW(방어적 산업, 컨센 관심 밖)·하위공정 아님이나 UPDATE-7 교훈(저컨센 우선)에 부합. 검증 논점: 9월 인상 실현율·재고 90,000t 소진 후 가동률·원가(OCC·전기) 전가.",
+    "falsifier": "9~10월 PPW 컨테이너보드 가격이 3차 인상의 절반 미만 반영, 또는 IP·SW가 인상 철회 시 D4 기각 → MAT-05 NEUTRAL 복귀",
+    "horizon": "1~2분기(9월 실현·3Q 실적)",
+    "verdict_log": "미실시",
+    "status": "OPEN",
+    "origin": "UPDATE-8 A-2 §3B — MAT-05 승격 트리거(S1+D4) 최대 순노출, 축③ LOW"
+   },
+   {
+    "ticker": "HSHP",
+    "name": "Himalaya Shipping",
+    "type": "REVISIT",
+    "industry": "IND-07",
+    "bucket": null,
+    "trigger": {
+     "kind": "TIER_CHANGE",
+     "evidence": "IND-07 NEUTRAL→WARM(UPDATE-8 A-2)"
+    },
+    "tier_context": "WARM(승격)",
+    "node_status": "DEEP_DIVED(2026-08-29)",
+    "rationale": "§3B STEP1 산업 필터 자동 판정. 단 HSHP는 드라이벌크(Newcastlemax)이고 승격 원인은 탱커·가스 레그 — 재소환이 헛수고일 가능성이 높으며 그 자체가 verdict_log 학습 대상. 델타 체크(BDI·용선 커버리지)로 충분.",
+    "falsifier": "BDI·케이프 용선료가 탱커 강세와 무관하게 횡보하면 '산업 승격이 노드 논제를 바꾸지 않았다'로 기록",
+    "horizon": "1분기(델타 체크)",
+    "verdict_log": "미실시",
+    "status": "OPEN",
+    "origin": "UPDATE-8 A-2 §3B STEP1 자동"
+   },
+   {
+    "ticker": "LNG",
+    "name": "Cheniere",
+    "type": "REVISIT",
+    "industry": "ENE-04",
+    "bucket": null,
+    "trigger": {
+     "kind": "BALANCE_CHANGE",
+     "evidence": "ENE-04 BALANCED→SHORTAGE(UPDATE-8 A-2)"
+    },
+    "tier_context": "WARM(balance 전환)",
+    "node_status": "DEEP_DIVED(2026-08-25)",
+    "rationale": "§3B STEP1 자동. 8/25 딥다이브는 '2027 향해 조여짐' 전제 — 전쟁이 시점을 앞당긴 만큼 스프레드·계약 믹스·Corpus Christi 3 램프 가정 재점검. 스탠스 as_of 공란(known_debt) 해소 기회.",
+    "falsifier": "딥다이브 논제가 이미 카타르 차질을 반영해 변화 없음이면 '헛수고'로 기록",
+    "horizon": "1분기",
+    "verdict_log": "미실시",
+    "status": "OPEN",
+    "origin": "UPDATE-8 A-2 §3B STEP1 자동"
+   },
+   {
+    "ticker": "VG",
+    "name": "Venture Global",
+    "type": "REVISIT",
+    "industry": "ENE-04",
+    "bucket": null,
+    "trigger": {
+     "kind": "BALANCE_CHANGE",
+     "evidence": "ENE-04 BALANCED→SHORTAGE(UPDATE-8 A-2)"
+    },
+    "tier_context": "WARM(balance 전환)",
+    "node_status": "DEEP_DIVED(2026-08-24)",
+    "rationale": "§3B STEP1 자동. Plaquemines 현물 노출이 큰 만큼 SHORTAGE 전환의 최대 수혜/최대 되돌림 노드 — 현물 vs 장기계약 믹스 재점검.",
+    "falsifier": "현물 카고 비중이 이미 계약으로 잠겨 스프레드 민감도가 낮으면 '헛수고'",
+    "horizon": "1분기",
+    "verdict_log": "미실시",
+    "status": "OPEN",
+    "origin": "UPDATE-8 A-2 §3B STEP1 자동"
+   },
    {
     "ticker": "ONTO",
     "name": "Onto Innovation",
@@ -17875,45 +18793,42 @@
    }
   ],
   "candidates_consumed": [
-   "TSM(버킷C) → RESOLVED — 조건부 관심/관망",
-   "ASML(버킷C) → RESOLVED — 회피/관망",
-   "OKLO(버킷A) → RESOLVED — WATCH/실행 선반영",
-   "BWXT(버킷C) → RESOLVED — WATCH/조건부 관심",
-   "PWR(버킷C) → RESOLVED — AVOID/축소 검토",
-   "★NEW OPEN: 소진 5 → 신규 2(ONTO·CAMT). 신규 2종은 이번 세션 팩(AMAT·LRCX·ASML)이 상류에서 확증한 하위공정 트리거에 근거하며, '리스트를 채우기 위한 등재'(§3B 금지)가 아니라 UPDATE-5 코호트 교훈(축③ 낮음·하위공정 선호)을 적용한 첫 선별이다."
+   "소진 0(ONTO·CAMT OPEN 유지, 딥다이브 미실행)"
   ],
   "candidates_withheld": [
-   "IND-05 하위공정(PRIM·DY) — 종목은 식별했으나 카드·노드에 없어 후보 대신 스크리닝 유니버스로 지정(위 screening_recommendations).",
-   "★결정 요청: ITC-05(메모리)·IND-01(조선) 커버리지 구멍 — HEAT인데 DEEP_DIVED 0. 카드 ⑦에 MU·000660.KS(REGIME_LEADER), 329180.KS(REGIME_LEADER)가 있어 후보 자격은 충분하나, §3B '피크아웃 감시 산업은 후보에서 뺀다' 조항과 정면 충돌(두 산업 모두 peak_watch). 규율대로 미등재. 단 §3B의 '인간 경로' 조항에 따라 사용자가 '피크 검증 목적' 딥다이브를 지시하면 origin에 그렇게 적고 등재 가능 — 거버넌스 판정 필요.",
-   "REVISIT 신규 등재 0 — 이번 갱신에서 tier·balance 변경이 0이라 TIER_CHANGE/BALANCE_CHANGE 미발생, THESIS_STALE은 111종 전부 2026-08~09로 경과 0, 이번에 통관한 27종은 방금 딥다이브라 재소환 대상 아님. 관측 없는 추정 등재는 규율 위반이므로 미등재."
+   "IND-09 FAST — 축③ MID·대장주(UPDATE-7 교훈), 스크리닝 권고로",
+   "IND-07 FRO·STNG — 축③ HIGH(운임 사상급), 스크리닝 권고 + '진입 눌림 대기' 캐비앗",
+   "FIN-03 — COLD 진입 직후, cold_reversal_signal 미점등 → 버킷 B 아님",
+   "IND-05 DEEP_DIVED 8종 REVISIT — 정원 컷(순환)",
+   "ITC-04 ABF(이비덴·신코·Unimicron)·ITC-06 광(AAOI·COHR 이미 DEEP_DIVED) — 카드 ⑦ 미등재분은 스크리닝→노드 편입 순서"
   ],
   "peak_watch": [
    {
     "id": "ITC-05",
     "name": "메모리(DRAM/NAND)",
     "tier": "HEAT",
-    "reason": "직전 사유(계약가 QoQ 증가율 단계 둔화 +90→+30→+13~18%) 유지 + UPDATE-7 신규: 공급 응답이 실물로 집행 중 — ASML 시스템 매출 로직:메모리 51:49(메모리 비중 상승)·SK하이닉스 HBM4 양산 개시 및 321단 NAND 램프·Micron 싱가포르 HBM 패키징 CY2027 기여·AMAT 첨단패키징 CY26 +50%. balance는 여전히 SHORTAGE이나 '공급이 응답하지 않는다'는 전제가 약해짐. 추가로 AAPL 정규화 GM 49.3→46.5%(가이)로 가격 전가가 하류 수요파괴 압력으로 전환되는 경로도 관측 개시.",
-    "tripwire": "계약가 MoM/QoQ 마이너스 전환 또는 HBM4 신규 capa 조기 소진 (신규 추가: 세트 업체 GM 압박이 주문 하향으로 전환되는지)",
-    "carry_forward": true
-   },
-   {
-    "id": "IND-01",
-    "name": "조선",
-    "tier": "HEAT",
-    "reason": "신조선가지수 평탄화(185.01→185.15)+한국 발주점유율 잠식(중국 72%). 잔고 17년최고·LNG FID 웨이브가 지지 → 반전 아닌 모멘텀 평탄화. heat_score 7(최약 인컴번트) — 차기 로테이션-아웃 최유력. ★UPDATE-7 신규 증거 0(조선 딥다이브 팩 미제출) — 커버리지 구멍 그대로.",
-    "tripwire": "신조선가지수 하락 전환 또는 한국 LNG 100척 발주 미실현",
+    "reason": "UPDATE-8 강화: 계약가 증가율 단계 둔화(1Q +90~95%→2Q +58~63%→3Q +13~18%) 지속 + ★현물 '부진'(TrendForce 9/2; 이 시장에서 현물이 계약을 1~2분기 선행) + 하류 전가(AAPL GM 49.3→46.5% 가이, PS5 +$100) + 공급 응답 실물(HBM4 양산·AMAT 첨단패키징 +50%·IDC 2026 DRAM 공급 +16%). 반대: 3Q PC DRAM 인상폭 상향, HBM 가격 상방 유지. tripwire 미점등.",
+    "tripwire": "계약가 MoM/QoQ 마이너스 전환, 또는 현물 하락이 2개 분기 연속 계약가 상향 수정을 막을 때, 또는 세트 업체 주문 하향(AAPL·PC OEM)",
     "carry_forward": true
    },
    {
     "id": "MAT-02",
     "name": "광업·전략광물(구리 레그)",
     "tier": "HEAT",
-    "reason": "구리 레그 deficit/surplus 컨센 분열·가격 6월대비 −4.5%에 더해, CAT 팩에서 2035 구리 공급갭 전망이 2025 outlook 30% → 2026 outlook 25%로 하향된 것을 확인(역신호 2개로 강화). 전략광물 레그(희토류·텅스텐 P1)가 HEAT 앵커라 산업 티어는 HEAT 유지, 구리 레그만 감시.",
-    "tripwire": "LME 재고 추세 반전+현물 프리미엄 소멸 동시 (신규 추가: 2027 outlook에서 공급갭 추가 하향)",
+    "reason": "UPDATE-8: 8월 사상최고($6.83/lb) 후 −2% MoM, LME 재고 205kt→238kt 재유입, 백워데이션 $434→$176, '최종수요 고가 냉각'·양산 프리미엄 $103→$90, CAT 2035 공급갭 전망 30→25%. 역신호 4개. 전략광물 앵커(中 6/22 수출금지·11/27 유예 만료)가 산업 HEAT 지지 → 구리 레그만 감시.",
+    "tripwire": "LME 재고 추세 반전(3개월 순증)+현물 프리미엄 소멸 동시, 또는 2027 outlook 공급갭 추가 하향",
+    "carry_forward": true
+   },
+   {
+    "id": "HLT-02",
+    "name": "바이오텍",
+    "tier": "HEAT",
+    "reason": "UPDATE-8 신규: 축③ 만개(XBI 1H +30%·12M +84%, 7월 5년래 최고, IPO 창 열림 Kailera $625M) + 공급 응답(中 자산이 2026 라이선싱 가치 2/3+, AZ-CSPC $18.5B·BMS-Hengrui $15.2B, '중국 할인' 30~50%→축소) → '양질 후기자산 부족' 전제 약화. 수요(특허절벽 M&A $106B·프리미엄 102%)는 지속.",
+    "tripwire": "M&A 프리미엄 중앙값 하락 전환 또는 XBI −20% 조정과 라이선싱 upfront 감소 동시, 또는 IPO 창 폐쇄(분기 IPO 0건)",
     "carry_forward": true
    }
   ],
-  "coverage_honesty": "MODE B 배치 1~5(28팩). 전면 톱다운 미실행(정상). 티어·balance 변경 0. 하드넘버는 28개 원본 팩 전량 대조(§1-4) — 카드·deep_dive_ref·선행지표에 들어간 수치는 모두 팩 원문에서 전사. §3A 전파는 인바운드(통합 노드가 속한 산업)에서 출발해 2홉까지 실행, 임계 통과 0. 아웃바운드 전면 2홉 워크는 미실행(A타입 몫, 부채 등재). 후보 원장은 NEW OPEN 5종 전부 소진, 신규 등재 0. 스탠스 리프레시는 티어·전파·후보 정산 완료 후 마지막 단계로 실행했고, 이번 세션에 팩이 들어온 27종만 관측가를 갱신했다(기존 84종 미갱신 — 명시적 판정).",
+  "coverage_honesty": "MODE A 3세션 완료. A-1: 56/56 스캔(STP-02 전용 검색 미실시, HLT-04·05 유통레그 간접). A-2: 심층 14종·전파 인/아웃바운드 2홉 10체인·carry 13항목 정산. A-3: 스탠스 18/96 관측, 78 UNKNOWN(명시). 하드넘버 1차 출처 우선(SEC·클락슨·TrendForce·SEMI·STR·NADA·ISM·CMS·EIA·GEV/SE IR), 2차 병기. 원본 로그 ATLAS_UPDATE8_A1_scan_log.md. §3A 아웃바운드 전파는 변경 노드 기준 실행, 미변경 노드 전면 워크는 미실행(정상). 지침 변경 0(제안 2건: ENE-03 노드 분리·테마 재제안).",
   "next_session_carry": {
    "full_scan_pending": "★차기 A타입 최우선. UPDATE-7에서 상향 근거가 티어 기준에 도달했으나 cap 포화로 보류된 산업이 3개 누적(IND-05·ITC-03·UTL-02) + NEW 후보 원장이 대장주 5종 소진 후 하위공정 2종으로 교체(잔고 얇음) → §3B 규율상 '후보가 마르면 스캔 주기를 당긴다'에 해당. heat_score 재산정 및 8슬롯 로테이션 재판정 필요.",
    "propagation_debt": "RESOLVED(UPDATE-5): §3A 아웃바운드 2홉 워크 실행, 임계통과 노드 0(감시강화만).",
@@ -17931,21 +18846,20 @@
    "mat01_watch": "CLF 딥다이브로 MAT-01 사이클 인플렉션 초기신호. Q3'26 EBITDA ≥$500M+FCF 지속 확증 시 차기 A타입에서 NEUTRAL→WARM 검토.",
    "itc07_theme": "ITC-07 NEUTRAL 유지. 사이버보안=회복탄력 포켓 확증. 'AI가 인컴번트 SW·광고 재편' 테마(ITC-07+COM-03) 근거 축적 — 차기 A타입 승인 판정 대기.",
    "itc04_watch": "ITC-04 WARM 유지. SiC/GaN 파워반도체(WOLF·NVTS) 조정 국면(공급과잉·가격침식). WOLF 매출 재가속+GM 인플렉션 시 차기 A타입에서 코호트 재점검.",
-   "cycle_complete": "UPDATE-7(MODE B 딥다이브 통합) 완료 — 신설 10 + 승격 15 + 재통관 2, DEEP_DIVED 86→111. 다음은 정식 A타입 월간 톱다운(전면 재스캔)을 강력 권고(후보 원장 잔고 0 + HEAT 승격 대기 3건 누적).",
+   "cycle_complete": "UPDATE-8(MODE A 전면) 완료 2026-09-11. 다음: 10월 말 실적 시즌 후 A타입(MAT-01 CLF·MAT-05 실현율·IND-08 3Q·ITC-05 4Q 협상) 또는 딥다이브 팩 도착 시 B타입.",
    "deferred_to_next_A_scan": [
-    "heat_score 재산정 · 8슬롯 로테이션 재판정(IND-01 강등 조건 확인).",
-    "★IND-05 balance BALANCED→SHORTAGE(포켓) 전환 및 HEAT 승격 판정 — UPDATE-7 8종 딥다이브 근거.",
-    "★ITC-03 카드 본문 WFE 수치 정정($135B/+9% → $143.9B/+23.1%) + balance 재점검 + HEAT 승격 판정.",
-    "UTL-02 HEAT 승격 판정(승격 시 TLN REVISIT 자동 OPEN 전환).",
-    "ENE-04 balance 재점검 — 2028~30 글로벌 LNG 공급파 netback 스트레스(WMB 팩).",
-    "ITC-06 — 메모리 원가 전가가 마진에서 수요로 넘어가는지(AAPL GM 궤적) 재점검.",
-    "MAT-01(CLF 턴어라운드) NEUTRAL→WARM 승격 검토(Q3'26 EBITDA ≥$500M+FCF 지속).",
-    "테마 승인 판정: 'AI가 인컴번트 SW·광고 모델 재편'(ITC-07+COM-03) — NOW 회계FCF↔경제FCF 간극이 근거 추가.",
-    "ITC-04 SiC/GaN 파워반도체 코호트 재점검 / ITC-06 balance 재점검 / PURR 분류.",
-    "후보 선별 엔진 개선(축③ 가중·버킷B·하위공정) — verdict_log 코호트 교훈 반영.",
-    "전 종목 스탠스 가격 전면 리프레시(§4A)."
+    "MAT-01 CLF Q3 실적(10월 말) ≥$500M+FCF → NEUTRAL→WARM 판정",
+    "MAT-05 9~10월 PPW 컨테이너보드 3차 인상 실현율 → WARM 확증/NEUTRAL 복귀",
+    "IND-05·UTL-02·ITC-03·ENE-03·ENE-04 HEAT 승격 재판정 — HEAT 인컴번트 역신호 2개 발생 시 로테이션",
+    "FIN-01 balance_direction — 9/16 FOMC 결과(인상 시 'NIM 압박 풀림' 반전)",
+    "ITC-05 peak_watch — 4Q 계약가 협상·현물 궤적, MU 딥다이브 결과 반영",
+    "ENE-03 정유/석유화학 노드 분리 지침 제안 판정",
+    "테마 재제안 'AI 워크로드 집중 — 인컴번트 강화·롱테일 잠식' 승인 판정",
+    "ITC-04 ABF·ITC-06 광 트랜시버 순노출 유니버스 → 카드 ⑦ 편입",
+    "DIS-03 2027 RevPAR 둔화 실현 여부(peak_watch 등재 판정)",
+    "STP-02 전용 스캔(UPDATE-8 미실시)"
    ],
-   "candidate_ledger_note": "후보 원장은 PACK 배열이 단일 진실원. ★정정(UPDATE-7): 직전 carry의 '신규 후보 생성은 A타입에서만'은 거버넌스가 아닌 운영 메모였으며 폐기한다 — 01 §3B는 후보 선별을 '매 빌드·갱신의 정식 산출물'로 정의하므로 B타입도 딥다이브가 확증한 트리거에 근거하면 등재한다. 금지되는 것은 리스트를 채우기 위한 등재·가격 근거 등재뿐. 배열 운영: OPEN·PENDING_TRIGGER만 `deep_dive_candidates`에, RESOLVED·EXPIRED는 `deep_dive_candidates_resolved`로(콘솔이 status 미필터). 현재: NEW OPEN 2(ONTO·CAMT)·REVISIT PENDING 1(TLN).",
+   "candidate_ledger_note": "후보 원장은 PACK 배열이 단일 진실원. OPEN·PENDING_TRIGGER만 `deep_dive_candidates`, RESOLVED·EXPIRED는 `deep_dive_candidates_resolved`. 현재 NEW OPEN 5(ONTO·CAMT·MU·329180.KS·PKG)·REVISIT OPEN 3(HSHP·LNG·VG)·PENDING 1(TLN). MU·329180.KS는 사용자 승인 피크검증 경로(origin 명기).",
    "revisit_track": {
     "status": "거버넌스 v1.3 반영 완료(2026-08-30, 01 md5 97493dfe...). PACK v2.2 스키마 정합 확인 — QA Gate v1.3 5조항 전항목 PASS. 실제 REVISIT 판정은 차기 A타입부터.",
     "why_empty_now": "UPDATE-6은 티어·balance 변경 0건이라 TIER_CHANGE/BALANCE_CHANGE 미발생. TRIPWIRE는 CLF Q3'26 등 미발표 실적이라 관측 불가. THESIS_STALE은 86종 전부 as_of 2026-08로 4분기 경과 0. → 관측 없는 추정 등재는 규율 위반이므로 미등재(TLN 조건부 1건만).",
@@ -17961,11 +18875,30 @@
    ],
    "ind05_heat_queue": "★신규(UPDATE-7). IND-05 딥다이브 8종에서 D1·D2·S3 증거가 동시 확보: 잔고 일제 사상권(PWR RPO $33.55B·EME +43.9%·MTZ $21.39B·MYRG $3.16B), 병목이 인력임을 BLS 하드넘버로 확인(전기공 72,700·배관공 42,000 연간 공석), 마진 실현(EME 전기 13.9%·MYRG C&I 3.2%→8.5%). 총건설 SAAR는 −3.2%인데 전력·DC 포켓만 조여지는 분열 구조 → balance BALANCED→SHORTAGE(포켓) 전환 검토가 차기 A타입 판정 대상. cap 8/8 포화로 HEAT 후보 큐 3순위 등재.",
    "coverage_gap": "★미해소 이월. HEAT 8종 중 ITC-05(메모리)·IND-01(조선)이 여전히 DEEP_DIVED 0. 이번 28팩에도 해당 산업 팩 없음. 차기 딥다이브 1순위이며, 스탠스 보드 ③블록(커버리지 구멍)에 계속 노출된다. ★peak_watch 조항(§3B)과 커버리지 블록(§6A ③)의 충돌을 후보 원장 candidates_withheld[1]에 결정 요청으로 등재.",
-   "stance_customs_debt": "레거시 15종이 여전히 atlas_stance 미보유(FSLR·CRWD·NFLX·COST·S·SAIL·OII·TDW·ARLP·PANW·FTNT·ZS·NTSK·HSHP·NNN). §7B는 팩 통관 시 생성이므로 소급 통관하려면 해당 원본 팩 재제출이 필요 — 임의 생성 금지. 111종 중 96종 통관 완료(86.5%).",
-   "tln_label_debt": "TLN atlas_stance의 label(ATTRACTIVE)이 ref_price $307.67의 기계적 zone(WATCH, hold_watch 305~350) 및 팩 zone 원문('조건부 관심 / 관망 우위')과 어긋남. §7B 제3조 동결로 이번 세션에서 수정하지 않음. 새 날짜의 TLN 팩이 들어오면 재통관에서 자동 해소된다.",
-   "price_refresh_scope": "이번 세션 관측가 갱신 대상은 팩이 들어온 27종뿐. 나머지 84종은 딥다이브 시점 스냅샷을 as_of·source 병기 상태로 유지(zone UNKNOWN 강등 미적용). 판단 근거: §4A의 'zone=UNKNOWN 강등'은 낡은 값을 최신인 척 두는 것을 막기 위한 조항이고, 현 상태는 as_of가 병기돼 그 위험이 없으며, B타입에서 전 종목 시세 재관측은 전면스캔 금지와 같은 층위의 범위 초과다. 차기 A타입에서 전면 리프레시 권고.",
+   "stance_customs_debt": "PENDING: 레거시 15종 atlas_stance 미보유(원본 팩 재제출 필요)",
+   "tln_label_debt": "PENDING: 새 날짜 TLN 팩 필요",
+   "price_refresh_scope": "PARTIAL(UPDATE-8): 18/96 관측. 웹서치 수동 관측은 세션당 ~10종이 한계. ★제안: 사용자가 '가격 리프레시 팩'(CSV: ticker,close,as_of,source)을 첨부하면 §4A S2를 일괄 처리 — 지침 변경 아님(source 필드 규율 충족).",
    "candidate_engine_lesson": "★verdict_log 신규: UPDATE-5 후보 코호트 5종의 사업 논제 적중률 5/5, 가격 매력 적중률 0/5. '산업을 데운 트리거의 최대 순노출 기업'은 시장이 가장 먼저 찾아낸 기업이기도 하다는 계통 오차. 차기 A타입 후보 선별에서 (a) 축③ 가중 실질화, (b) 버킷 B(바닥 반전) 비중 확대, (c) 대장주 대신 인접 하위공정 선호를 반영할 것. → UPDATE-7에서 ONTO·CAMT 등재로 (a)(c)를 즉시 적용. 이 2종의 사후 결과가 교훈의 유효성을 검증한다(verdict_log 대상).",
-   "cat_attribution_tripwire": "CAT 2Q26 P&E $8.238B ≈ CI $8.346B — 발전 레그가 건설을 넘기면 대표산업 IND-04→IND-03 재지정 검토."
+   "cat_attribution_tripwire": "CAT 2Q26 P&E $8.238B ≈ CI $8.346B — 발전 레그가 건설을 넘기면 대표산업 IND-04→IND-03 재지정 검토.",
+   "full_scan_pending__status": "RESOLVED(UPDATE-8 A-1/A-2): 56종 전면 스캔·로테이션 판정 실행. 결과 — 슬롯 0 개방(HEAT 8종 유지 근거 2개+), 승격 대기 3건 보류, 티어 변경 4건(NEUTRAL→WARM 3·NEUTRAL→COLD 1), balance 2건",
+   "ind05_heat_queue__status": "PARTIAL(UPDATE-8): balance→SHORTAGE(포켓) 전환 실행. HEAT 승격은 cap 포화로 보류 — 큐 2순위로 상향(ITC-03과 역전)",
+   "itc03_heat_queue__status": "RESOLVED(UPDATE-8): 본문 WFE 수치 정정 완료(known_debt 해소). balance BALANCED 유지(공급 추종). 큐 3순위",
+   "utl02_rotation__status": "PARTIAL(UPDATE-8): HEAT 자격 5번째 corroboration. 인컴번트 강등 근거 부재로 보류, 큐 1순위. IND-01 조건부 승격 체인은 IND-01 재상승으로 무효 — 체인 재설계: 'HEAT 인컴번트 중 역신호 2개 발생 시 즉시 로테이션'",
+   "peak_watch_carry__status": "RESOLVED(UPDATE-8): ITC-05 강화·MAT-02 근거 추가·IND-01 해제(반증)·HLT-02 신규",
+   "coverage_gap__status": "PARTIAL(UPDATE-8): 사용자 승인으로 MU(ITC-05)·329180.KS(IND-01) 피크검증 후보 등재. 딥다이브 실행은 하류",
+   "unapproved_flags__status": "RESOLVED(UPDATE-8): (1) 테마 '인컴번트 재편' 기각+재제안(관측이 반대 방향) (2) 엣지 TH-AI→IND-05 M→H 승인",
+   "itc06_note__status": "RESOLVED(UPDATE-8): balance 재점검 — MIXED 유지(광 레그 HEAT급·부품 병목 vs 소비 메모리 원가). 광 트랜시버 순노출 스크리닝 유니버스",
+   "itc07_theme__status": "RESOLVED(UPDATE-8): 테마 판정 완료(기각+재제안). ITC-07 NEUTRAL 유지",
+   "itc04_watch__status": "RESOLVED(UPDATE-8): WOLF 재가속 미확인 → 코호트 재점검 안 함. ABF 레그 강화 반영",
+   "mat01_watch__status": "PARTIAL(UPDATE-8): 가이던스만 충족 — 10월 실적 조건부. 차기 판정",
+   "ene04_universe__status": "RESOLVED(UPDATE-8): ENE-04 balance SHORTAGE 전환, LNG·VG REVISIT 등재. IND-01·IND-05 인접 경유 엣지 전파 실행",
+   "revisit_execution_order_next_A__status": "RESOLVED(UPDATE-8): STEP1~4 실행 — TIER_CHANGE HSHP, BALANCE_CHANGE LNG·VG OPEN(3종), IND-05 8종 정원 컷(순환), THESIS_STALE 0, TRIPWIRE: CLF(10월 실적 전)·WOLF(미충족)·ZS·NTSK·COHR·POWL은 STEP1·2 미해당이라 미조사(규율)",
+   "candidate_engine_lesson__status": "APPLIED(UPDATE-8): 신규 3종 중 PKG는 축③ LOW·트리거 발안자, MU·329180.KS는 사용자 승인 피크검증(예외 경로 명기). 대장주 자동 등재 안 함(IND-09 FAST 미등재)",
+   "price_refresh_scope__status": "PENDING → A-3",
+   "stance_customs_debt__status": "PENDING(원본 팩 재제출 필요, A-3 무관)",
+   "tln_label_debt__status": "PENDING(새 팩 필요)",
+   "mat02_copper_watch": "★신규(A-3 관측): 9/10 백악관 정제 구리 관세 보류 보도 → 구리주 −7~8%, 관세 선제수입 프리미엄 소멸 경로. 차기 A타입에서 구리 레그 peak_watch tripwire('LME 재고 3개월 순증+프리미엄 소멸') 점등 여부 1순위 확인. 전략광물 앵커(11/27 유예 만료)와 분리 판정.",
+   "heat_rotation_rule": "UPDATE-8 확정: 승격 대기 큐는 'HEAT 인컴번트 중 역신호 §3 2개 발생 시 즉시 로테이션'. 현재 peak_watch 3종(ITC-05·MAT-02·HLT-02)이 그 후보. IND-01 조건부 체인 폐기."
   },
   "stance_customs_v1_5": {
    "note": "§7B 제5조 — contract_source=ATLAS_DERIVED 항목 전량 공시(요약·샘플링 금지). 27건 전부 ATLAS_DERIVED이며 DDOS_NATIVE 0건. 통관에서 수행한 연산은 단위 정규화(ASML expected_irr 6.83 → 0.0683)뿐이며 그 외 산술 0건.",
@@ -18275,7 +19208,581 @@
     "origin": "UPDATE-5 §5 순노출 (승인 후보 이전)",
     "resolved_as_of": "2026-09-05"
    }
-  ]
+  ],
+  "a1_scan": {
+   "build": "UPDATE-8 A-1 (MODE A 전면 톱다운, 세션 1/3) — 56종 경량 스캔 + 변화감지",
+   "as_of": "2026-09-11",
+   "scope_note": "STEP 1 완료. 티어·balance·cycle 변경 0(A-2에서 판정). 카드 본문(demand/supply) 무변경. 선행지표 additive만 적재. market_read는 momentum/consensus 관측 갱신(prev_ 보존).",
+   "macro": [
+    "美-이란 전쟁 격화(해상봉쇄, '2029년까지' 경고): 브렌트 $101~105(+20%/월), 디젤 크랙 $106 사상최고, OPEC 바스켓 9월 $101.5",
+    "Fed 9/15~16 인상 50/50(7월 3명 소수의견), 커브 12M +67bp → 2027-07 4.29%",
+    "구리 8월 사상최고 후 −2% MoM, 금 $4,421, VIX 15.7"
+   ],
+   "deep_check_targets": {
+    "ENE-01": "브렌트 $87→$101~105(9/10) +20%/월, 美-이란 전쟁 격화·해상봉쇄 — 카드가 '지정학 프리미엄=구조적 아님'으로 잡아둔 전제의 지속성 검증 필요",
+    "ENE-03": "美 디젤 크랙 9/1 $106/bbl 사상 최고, 3-2-1 크랙 $62, 러 디젤 수출 중단(세계 10%) — S1+D4 승격 근거 성립, 단 ③HIGH/만개",
+    "ENE-04": "호르무즈 차질이 글로벌 LNG 공급 ~10Bcf/d(20%) 영향, 美 수출 1H26 17.4Bcf/d(+23%), EU 저장 65.4%(5년 최저 하회) — balance BALANCED→SHORTAGE(2026~27) 검토",
+    "MAT-01": "CLF Q3 조정EBITDA 가이 $575M(승격 조건 ≥$500M 충족 — 단 가이던스), ASP $1,124(+$76 QoQ)·Q3 +$55 추가, 美 수입 2008년래 최저. 물량 −6%·글로벌 과잉 700Mt 불변 → 10월 실적 조건부",
+    "MAT-05": "북미 컨테이너보드 2026 3차 인상(3월 $70→6월 $50~70→9/1 PCA $140 전례없음·SW $100·IP $80), 2025 폐쇄 ~10% capa — S1+D4 승격 근거 후보. 수요 flat, AICC 반발 → 9월 인상 실현율(PPW)이 판정 열쇠",
+    "IND-05": "UPDATE-7 8종 딥다이브 fresh + Dodge 비주거 +19%·DC +61%, 걸프 EPC 인력 349,000명 부족 — balance BALANCED→SHORTAGE(포켓)·HEAT 승격 판정(A-2)",
+    "IND-07": "탱커 레그: 호르무즈 사실상 폐쇄 반복, VLCC AG-China $469k/day(6월), 1H26 美걸프-극동 +166%, 왕복 비용 ~$20M(≈$10/bbl), 7월 걸프 수출 57% STS, 20년령 VLCC 가치 +78~90% — S1+D4. 9월 격화로 강도↑ → NEUTRAL→WARM 검토",
+    "IND-09": "★FAST 8월 일매출 +16.6% YoY(7월 +15.5%), 14개월 연속 두자릿수, 2022-07 이후 최강, 전 지역 가속, 생산용 직접자재 +19.1%; GWW 2Q +10.3%·영업마진 16.1%·가이 상향 — D2+S4(고객재고 too low) 승격 근거 2개 → NEUTRAL→WARM 검토",
+    "UTL-02": "우라늄 장기가 $96/lb(18년래 최고; 2025 ~$85), SWU 현물 ~$200(3배), 서방 농축 capa +4%, 2035까지 유틸 수요 52% 미커버; VST-Meta 2.6GW·AWS 1.2GW PPA — S2+D1+S3 → HEAT 승격 판정(A-2, 슬롯 문제)",
+    "ITC-03": "UPDATE-7 3종 팩(09-05) fresh — A-2에서 WFE 본문 정정($135B/+9%→$143.9B/+23.1%)·balance·HEAT 판정",
+    "ITC-04": "ABF 기판: Ajinomoto 필름 capa 풀가동(월 200만㎡)·현물 +30%·계약 +5~10%(2H26), 수급갭 2027말까지, 台 기판사 풀가동·신규 라인 18~24개월 — S2·S3 강화 vs SiC/GaN 과잉(WOLF EV 부진) 지속. ABF 레그가 균형 좌우하는지 판정",
+    "ITC-07": "UPDATE-7 NOW·PLTR·SNOW 팩(09-03) fresh — A-2에서 테마 '인컴번트 SW·광고 재편' 승인 판정(COM-03 증거는 '강화' 방향)",
+    "FIN-02": "★사모신용 환매: 비상장 BDC 1Q26 사상 첫 순유출(환매 $6.9B > 조달 $4.9B), 상위10 환매요청 1Q 13%·2Q 14%, Blue Owl OTIC 38.1%·OCIC 18.8%·Apollo 16.8%→5% 캡 비례배분, 3Q 초기 4.6% 완화 조짐, 직접대출 스프레드 <100bp — 대체투자 레그 D2 역방향 → balance_direction 분열 재서술",
+    "FIN-03": "재보험 자본 $790B 사상최고, 글로벌 캣 ROL −16%(1990년대 말 이후 최대), 1H26 캣 손실 $46B(10년 평균 −28%), 5분기 연속 $10B+ 사고 없음, 몬테카를로 1/1 추가 소프트닝 — 역신호 2개 성립 → COLD 강등 판정(A-2). 1차 보험 combined 94→96~97% 흑자 유지"
+   },
+   "keep_with_reason": {
+    "ENE-02": "UPDATE-7 WMB 팩(09-02) fresh. LNG 수출 +23%(1H26)가 Transco 물량 지지 — 변화 신호 없음",
+    "ENE-05": "DOE 202(c) 명령 누적(Eddystone 6번째 연장 11/20, Orlando Stanton 9/1 신규), 15개 석탄발전소 은퇴 연기 — 퇴출 지연이지 구조 전환 아님. 명령받은 발전소 실제 발전량 미미·소송 중",
+    "MAT-02": "구리 8월 사상최고($6.83/lb)→9/11 $6.46(−2% MoM, +41% YoY), LME 재고 205kt→238kt 재워런팅, 백워데이션 $434→$176 축소, '최종수요 고가 냉각' — peak_watch tripwire 미점등. 희토류: 中 6/22 美 10사 이중용도 금지 = 전략광물 앵커 강화",
+    "MAT-03": "유럽 능력 청산 가속(Cefic 2022~25 3,700만t 9%, 크래커 9기 16%; 글로벌 에틸렌 2028까지 ~2,100만t 10% 폐쇄) — 바닥 형성 증거 강화되나 수요 회복 신호 0, 유가 $100은 유럽·아시아 나프타 크래커 추가 압박",
+    "MAT-04": "MLM 2Q 기록(출하 +17%, 유기 +2.3%, ASP 가이 +4~6%), Dodge 비주거 착공 +19%·DC +61% vs 주거 −4% — 분열 그대로, 총량 저한자릿수",
+    "MAT-06": "탄산리튬 CIF아시아 $19,750(9/2), 中 현물 ¥145,750(9/9, 재고 예상외 잉여로 −1.15%), 1월 고점 $24~26k 대비 −20%. CATL Jianxiawo 재개 불투명·Zimbabwe 제한 vs 中 재고·EV 약세 — '적자전환 논쟁' 미결 그대로",
+    "IND-01": "★신조선가지수 6월 185.15→7월 185.49→8월 186.34(3개월 연속 재상승), VLCC $131.0M 사상최고 — peak_watch tripwire('신조선가 하락 전환') 미점등, 역방향. 韓 8월 점유 7%는 선별수주(척당 42% 우위)·1~8월 누적 +55%. 강등 근거 2개 확보 실패 → HEAT 유지, 슬롯 미개방",
+    "IND-02": "LMT 잔고 $230.4B(+38%)·RTX $289B(+22%)·NOC 기록 $95.6B, 다년 프레임워크(Patriot·THAAD 3~4배) 잔고 미반영, 9월 전쟁 격화로 재고 소진 가속. 화해 $350B 불확실은 상단 리스크",
+    "IND-03": "GEV 가스터빈 잔고+슬롯 100→116GW(확정 53·슬롯 63), Power 주문 +134%, Electrification RPO +64%; 대형변압기 128주·HV 48~60개월; Siemens 그리드 잔고 €51B 기록, 신규 capa 2030까지 없음 — S3·D3 실물",
+    "IND-04": "ISM 8월 54.6(7월 55.6 4년래 최고에서 −1.0), 8개월 연속 확장, 신규주문 56.7→53.7·잔고 55→51.8 감속, 공급자납기 59.3 병목, 고객재고 42.8 too low — 조여짐 유지이지 가속 아님",
+    "IND-06": "UP-NS $85B 합병 STB 8/18 재개, 응답신청 11/18, 결정 시점 미공표(BNSF·CPKC·노조·7개 주 반대). 디젤 크랙 $106 사상최고 = 트럭 원가 급등(INVERSE 감시)",
+    "IND-08": "2Q26 DAL 연료비 $4.4B 사상최고(+77%)에도 운임 +11~12%·세전이익 $1.4B, 4대사 73% 점유. 9월 유가 $100 재급등으로 3Q 연료 가정(<$2.80/gal) 무너질 가능성 — D4 강하나 공급 감축은 마진 방어",
+    "UTL-01": "PJM 2027/28 BRA $329.17/MW-day 캡 2연속, 신뢰도 요건 6,517MW 미달(18년 역사상 첫), DC 부하 비용 40%(IMM). 규제 유틸 수익은 ROE 상한 → 티어 상단 제약. 정치적 비용전가 규제(VA SB253·NJ 탈퇴 검토) 신규 감시",
+    "UTL-03": "OBBBA 안전항 2026-07-04 경과: 태양광·풍력 착공 마감(2027-12-31 가동 조건), BESS 2033까지 풀 크레딧, FEOC 소재 비율 태양광 2026 50%→2030 85% — 분열(ESS 조여짐/풍력 풀림) 구조적 고정",
+    "UTL-04": "boring 딥 재스캔: 수도 PFAS capex 상향(H2O America 5년 $2.7B +31%, PFAS ~$400M), 요금기준 6~8%; 폐기물 물량 정체·가격 완만 — 변화 신호 0",
+    "ITC-01": "NVDA FY27Q2 $81.6B·DC +92%·Q3 가이 $91B(+15.5% vs 컨센), 하이퍼스케일러 2026 capex $775~815B, AVGO FY27 AI $115B — D3 재확증이나 병목은 상류",
+    "ITC-02": "TSMC 8월 매출 NT$514.8B 사상최고(+53.3% YoY, +10.1% MoM, 4개월 연속↑), 1~8월 +39.3%, '패키징 수급 갭 very big', capex $29.44B 추가 승인, CoWoS 2026 ~100만 웨이퍼 완판 — 최강 인컴번트, 강등 후보 아님",
+    "ITC-05": "계약가 1Q +90~95%→2Q +58~63%→3Q 가이 +13~18%(서버, LTA 상단 제한) 단계 둔화 지속; 9/2 PC DRAM 3Q 인상폭 상향 수정, 현물 '부진', HBM 협상 교착(가격 상방) — tripwire(마이너스 전환) 미점등. 현물 부진은 롤오버 조기신호(현물이 계약 1~2분기 선행)",
+    "ITC-06": "AI 광·네트워킹: 800G 2026 3,350만(+58% 상향), 800G+ 2.6배, AAOI '2027 중반까지 수요>capa', 부품(DSP·EML) 병목 — 포켓 HEAT급 vs 소비 레그 메모리 원가 마진 악화(AAPL GM). MIXED 심화, balance 재점검(A-2)",
+    "ITC-08": "스테이블코인 시총 $322.6B(5월), 조정 온체인 결제 ~$9~11T 연환산, OCC GENIUS NPRM(3월) — SUBSTITUTES 위협이자 네트워크 정산 옵션(양면). 카드 볼륨 안정",
+    "COM-01": "boring 딥 재스캔: 글로벌 통신 capex 2026 감소(RAN→광·전송 이동), Lumen 전략매출 +14%·온디맨드 파장 판매 +35%·PCF capex $1B/yr — 백본 포켓 강화, 본체 풀림 = 분열 유지",
+    "COM-02": "boring 딥 재스캔: 5대 스튜디오 DTC 전부 흑자, 스트리밍 업프론트 광고 선형 최초 추월($17.2B vs $16.6B), 시청시간 49% vs 40%; 선형 PSKY 광고 −14%·가맹 −6%; PSKY-WBD $111B 합병 反독점 재판(3월) — 안정화이지 부족 아님",
+    "COM-03": "2Q26 광고 GOOGL $81.6B(+14%, 검색 +17%)·META $59.4B(+27%: 노출 +14%·단가 +12%)·AMZN 광고>전사, AI Overviews 쿼리 증분 — D4·D2 가속이나 공급 탄력(노출 +14%). 테마 방향: AI가 인컴번트 파괴 아니라 강화",
+    "COM-04": "boring 딥 재스캔: GTA VI 2026-11-19 확정($79.99), Newzoo 2026 $213.9B; PS5 전 모델 +$100(관세·메모리), PS5 Pro $900 — 이벤트성 스파이크 경로 그대로, 하드웨어 인상은 수요 억제",
+    "HLT-01": "232 관세 100%(특허약·API) 7/31 발효·MFN 계약사 면제 → 17사 중 16사 계약(Regeneron만 미체결), 8/31 9사 추가; GLP-1 메디케어 $50 7월 시행 2개월 50만 명 — 분기 판정(볼륨↑/약가↓) 유지, 불확실성 해소",
+    "HLT-02": "M&A $106B(6월, 코로나 전 이후 최고), Vertex-Crinetics $10B(프리미엄 102%), XBI 12M +84%·7월 5년래 최고, IPO 창 열림; 中 자산이 라이선싱 가치 2/3+(AZ-CSPC $18.5B) — D1·D4 지속. peak_watch 신규 등재 후보(축③ 만개+공급 응답), 강등 아님",
+    "HLT-03": "ISRG 2Q26 美 시술 감속·비만수술 고한자릿수 감소(GLP-1)·ACA 보조금 만료·유럽/中 자본예산 압박, 주가 2년래 저점; Ion +36% — SUBSTITUTES 엣지 실물 작동, 강등 근거 1개",
+    "HLT-04": "CDMO GLP-1 무균충전 capa 제약 지속, 관세·온쇼어링 공급망 재편 — S3·S4 판정 불변. 전용 검색 미실시(신호 강도 낮음, 차기 재확인)",
+    "HLT-05": "UNH 2Q26 MCR 86.7%(4Q25 88.9%→), EPS 가이 상향, MA 2027 요율 최종 +2.48%(초안 0.09%) — 보험 마진 회복은 조임 완화, 요율 리스크 해소. 유통 레그 미확인",
+    "FIN-01": "Fed 9/15~16 인상 50/50(7월 3명 인상 소수의견, 커브 12M +67bp); 지역은행 NIM 회복 정점(3.78→3.74%); 사모신용 BDC PIK ~10%, 레버리지론 부도 1.36% — 인상 국면이면 'NIM 풀림' 방향 반전 가능, 미실현",
+    "RLE-01": "CMBS 연체 7.4~7.6%(만기경과 포함 9.5%), 오피스 11.5%, 2026 만기 $100B+ 절반 미상환 예상 vs 2Q 캡레이트 소폭 압축(다가구 5.2%, 오피스 −87bp YoY)·오피스 흡수 흑전 — 바닥권 강화되나 금리 인상이 반전 지연",
+    "RLE-02": "EQIX 2Q26 총예약 $424M(사상 2위)·사상 최대 가이던스 상향·EBITDA 53%·'가격 매우 견고', DLR 백로그 $1.9B 기록, CBRE 사상 최대 건설에도 공실 사상 최저·1H 순흡수 +12%, 15년 리스·24~36개월 선임대 표준 — 강등 후보 아님",
+    "RLE-03": "7월 착공 1.239M(−13.5% YoY), 단독 −15.7%, 신축 재고 9.3개월·중간가 $404,400(2021-10 이후 최저), NAHB 35% 가격인하(−6%)·63% 인센티브·HMI 16개월 <40, LEN 인센티브 12.9%, DHI 가이 하향 — GLUT 심화, 금리 인상이 회복 차단",
+    "STP-01": "KHC·MDLZ·PEP 북미 감소/저성장 vs 신흥시장 +4.4~8.5%, 美 PB 단위 점유 사상최고, PEP 핵심 브랜드 최대 −15% 인하(Elliott, SKU −20%), GIS YTD −28% — 가격 인하 전환(D4 역방향 확정). FROZEN은 아님(현금창출 유지)",
+    "STP-02": "전용 검색 미실시 — UPDATE-4 freshness 유지, 차기 재확인 표기(coverage_honesty)",
+    "STP-03": "PM 2Q26 매출 +7.6% 유기·EPS +15.2%, ZYN 2.9B 파우치(+2% YoY), 美 오프테이크 +10%, 국제 +32%; ★ZYN 美 가치점유 57.1%(2022 75.7%→2025 61.5%) 하락·ZYN ULTRA 저가 변형 = 경쟁 진입(공급 탄력) → 파우치 레그 조여짐 약화, 이분화 유지",
+    "STP-04": "PB 바스켓 가격전쟁(Kroger $30 < Walmart $30.95 < Aldi $33.15), Walmart CPG 점유 회복(+0.2p, 트래픽 +2.4%), Kroger-Giant Eagle 승인 시 8.7% — 경쟁 심화 마진 압력 그대로",
+    "DIS-01": "8월 SAAR 16.8M(+1.5%, 컨센 16.1M 상회), 하이브리드 15.7~18.2%(+3~5p)·BEV 7.2%(−4.6p), 인센티브 $3,384(+5.9%)·EV $9,228, 월납 사상최고 $812, 6월 25% 관세 — 총량 안정이나 EV 과잉·인센티브 확대 지속",
+    "DIS-02": "LVMH 성장 복귀('좁은' 회복: 주얼리·유럽관광·중동), Richemont +20% cc(주얼리 +24%), 中 상위25 7월 −10%+이나 HNW 반등·Burberry 中 +9%, Saks Global 파산 — D2 확인이나 Aspirational 부재. 유가·금리 하방",
+    "DIS-03": "美 호텔 RevPAR 2Q26 +5.7%(1Q +3.8%), 수요 +1.7% vs 공급 +0.4%, ADR +4.4%, STR 2026 +4.4% 상향(월드컵), 2027 +2.1% 둔화; MAR·HLT·H 가이 상향; 중동 RevPAR MAR −43%·HLT −30% — S2+D4 실물이나 이벤트 의존, HEAT 미달",
+    "DIS-04": "2Q26 이커머스 $340.2B(+12.2%), 비중 17.1%(+0.8p); TGT +3.8%·WMT 美 +2.6%(미달)·BBY +4.1%; ★관세 환급 일회성(WMT $2.9B·TGT $994M) 마진 부풀림, 휘발유 $4.09, 금리 인상 — 점유 확대 지속이나 2H 소비 하방",
+    "DIS-05": "HD 2Q26 동일점포 +1.7%(2022 3Q 이후 최고, GMS 인수 +$2.8B) 가이 재확인, LOW +0.2%(하단 하향), 주택 동결(착공 −13.5%·모기지 6.7%) — 빅티켓 위축 지속, 변화 0"
+   },
+   "heat_slot_finding": "HEAT 8종 전부 유지 근거 2개+. IND-01 강등 tripwire 미점등(신조선가 3개월 연속 재상승). 슬롯 0 개방 → 승격 대기 3건(IND-05·ITC-03·UTL-02)+신규 후보(IND-09·IND-07·MAT-05·ENE-03)는 A-2에서 cap 15% 정성 타이브레이크로 판정.",
+   "coverage_honesty": "56/56 스캔. 전용 검색 미실시: STP-02(UPDATE-4 freshness 유지), HLT-04·HLT-05 유통레그(간접 확인). boring 5종(COM-01·02·04·IND-09·UTL-04) 딥 재스캔 완료 — IND-09만 변화 감지. 하드넘버는 1차 출처(SEC·클락슨·TrendForce·STR·NADA·ISM·CMS 등) 우선, 2차 출처는 병기."
+  },
+  "a2_judgment": {
+   "build": "UPDATE-8 A-2 (세션 2/3) — 심층확인·전파·티어·carry·후보",
+   "as_of": "2026-09-11",
+   "tier_changes": {
+    "upgrades": [
+     "IND-09 NEUTRAL→WARM",
+     "IND-07 NEUTRAL→WARM",
+     "MAT-05 NEUTRAL→WARM"
+    ],
+    "downgrades": [
+     "FIN-03 NEUTRAL→COLD"
+    ]
+   },
+   "balance_changes": [
+    "IND-05 BALANCED→SHORTAGE(포켓 지배)",
+    "ENE-04 BALANCED→SHORTAGE"
+   ],
+   "heat_rotation": "슬롯 0 개방. HEAT 8종 전부 유지 근거 2개+, 강등 tripwire 0 점등. 승격 자격 충족 5건(UTL-02·IND-05·ITC-03·ENE-03·ENE-04) 전부 보류. HEAT 후보 큐 재정렬: 1 UTL-02 · 2 IND-05 · 3 ITC-03 · 4 ENE-03 · 5 ENE-04. 03 §2(b) 정성 타이브레이크 적용 결과: 인컴번트 중 '조사 우선순위'가 도전자보다 낮다고 판정할 만한 근거 없음(HLT-02·MAT-02·ITC-05는 peak_watch로 감시하되 역신호 2개 미달).",
+   "held_promotions_rationale": "HEAT='균형이 깨졌거나 깨지는 중'인 산업이 8개를 넘는 것은 지도의 신호이지 결함이 아니다. cap 15%는 '조사 우선순위 상위 8'을 강제하는 장치이며, 이번엔 8개 인컴번트가 전부 그 우선순위를 유지할 근거를 갖고 있다. 보류된 5건은 tier_rationale에 'HEAT 자격 충족·cap 보류'를 명시해 뷰에서 pocket-HEAT로 읽히게 한다.",
+   "card_corrections": [
+    {
+     "id": "IND-09",
+     "field": "balance_direction",
+     "old": "산업 반등에 완만 조여짐",
+     "new": "산업 반등에 조여짐(가속) — 일매출 14개월 연속 두자릿수, 고객재고 too low",
+     "why": "UPDATE-8: FAST 8월 +16.6%·ISM 고객재고 42.8",
+     "as_of": "2026-09-11"
+    },
+    {
+     "id": "IND-07",
+     "field": "balance_direction",
+     "old": "컨테이너 풀림(과잉) vs 탱커·가스 조여짐(분열)",
+     "new": "분열 심화 — 탱커·가스·LNG선 조여짐(호르무즈 사실상 폐쇄 7개월+·STS 환적 57%·20년령 선가 +78~90%) vs 컨테이너 구조 과잉(2023~27 선복 +36%)",
+     "why": "UPDATE-8: 전쟁 장기화로 '일시 조임' 전제 철회",
+     "as_of": "2026-09-11"
+    },
+    {
+     "id": "MAT-05",
+     "field": "balance_direction",
+     "old": "완만 균형",
+     "new": "북미 컨테이너보드 조여짐 — 2025 폐쇄 ~10% capa + 2026 3차 인상(3월 $70·6월 $50~70 실현, 9/1 $80~140 반영 대기) / 수요는 flat",
+     "why": "UPDATE-8: 공급 축소+가격 인상 2회 실현",
+     "as_of": "2026-09-11"
+    },
+    {
+     "id": "FIN-03",
+     "field": "balance_direction",
+     "old": "자본 과잉으로 재물 요율 풀림(소프트닝)",
+     "new": "GLUT 심화 — 재보험 자본 $790B 사상최고, 캣 ROL −16%(1990년대 말 이후 최대), 1/1 추가 소프트닝 예상 / 美 캐주얼티·사이버는 하드 유지",
+     "why": "UPDATE-8: 소프트닝 2년차 확정",
+     "as_of": "2026-09-11"
+    },
+    {
+     "id": "IND-05",
+     "field": "balance_direction",
+     "old": "전력·데이터센터向 조여짐",
+     "new": "분열 — 전력·데이터센터·LNG·산업 EPC 조여짐(숙련 인력 병목이 binding; 상장 E&C 경제성을 지배) / 일반 상업·주거 건설 풀림(총건설 SAAR −3.2%)",
+     "why": "UPDATE-8 BALANCE_CHANGE: BALANCED→SHORTAGE(포켓 지배)",
+     "as_of": "2026-09-11"
+    },
+    {
+     "id": "ENE-04",
+     "field": "balance_direction",
+     "old": "수출 수요로 2027 향해 조여짐",
+     "new": "전쟁발 카타르·호르무즈 차질(글로벌 LNG ~20%)로 2026~27 조여짐이 앞당겨짐 — EU 저장 5년 최저 하회·美 수출 +23% / 2028~30 글로벌 공급파(~345bcm/yr)가 예정된 역풍",
+     "why": "UPDATE-8 BALANCE_CHANGE: BALANCED→SHORTAGE",
+     "as_of": "2026-09-11"
+    },
+    {
+     "id": "ITC-03",
+     "field": "demand.drivers",
+     "old": "선단 로직(2nm)·메모리(HBM)·첨단 패키징 증설이 WFE 수요를 견인. [실제] SEMI: 2026 WFE $135B(+9%), 일부 하우스는 $148~170B 전망. ASML은 2026 매출 가이던스 $49.2~51.5B로 상향, 오더가 컨센의 2배(4Q25 €13.2B)로 유입, 백로그 2028년까지. Lam: NAND 전환 투자 ~$40B가 2027년 전으로 당겨짐. 후공정 테스트 +12%.",
+     "new": "선단 로직(2nm)·메모리(HBM)·첨단 패키징 증설이 WFE 수요를 견인. [실제·UPDATE-8 정정] SEMI: 2026 WFE $143.9B(+23.1%) → 2027 $175.3B(+21.8%) → 2028 $200B(+14.1%) (직전 카드의 '$135B(+9%)'는 구 전망 — AMAT·LRCX 팩 동일 출처로 정정). ASML은 2026 매출 가이던스 $49.2~51.5B로 상향, 오더가 컨센의 2배(4Q25 €13.2B)로 유입, 백로그 2028년까지. Lam: NAND 전환 투자 ~$40B가 2027년 전으로 당겨짐. 후공정 테스트 +12%.",
+     "why": "UPDATE-8: UPDATE-7 known_debt(ITC-03 WFE 수치) 해소",
+     "as_of": "2026-09-11"
+    },
+    {
+     "id": "ITC-03",
+     "field": "balance_direction",
+     "old": "조여짐(EUV·첨단패키징 장비 한정)",
+     "new": "조여짐 강화(EUV·첨단패키징·검사) — WFE +23% 리비전에 ASML capa 2027 +30%로 공급이 뒤따르는 '리드타임 연장' 국면, 급성 부족 아님",
+     "why": "UPDATE-8: WFE 상향 반영",
+     "as_of": "2026-09-11"
+    },
+    {
+     "id": "IND-01",
+     "field": "market_read",
+     "old": {
+      "consensus": "MID",
+      "momentum": "가속",
+      "note": "한국 조선주 re-rating 진행 중이나 서구 투자자 인지는 아직 '무역전쟁 트레이드'로 과소평가(선대 교체 20년 사이클 저평가)",
+      "prev_momentum": "가속",
+      "a1_note": "선가 재상승 — 평탄화 판정 철회",
+      "as_of": "2026-09-11"
+     },
+     "new": {
+      "consensus": "MID",
+      "momentum": "가속",
+      "note": "한국 조선주 re-rating 진행 중이나 서구 투자자 인지는 아직 '무역전쟁 트레이드'로 과소평가(선대 교체 20년 사이클 저평가)",
+      "prev_momentum": "가속",
+      "a1_note": "선가 재상승 — 평탄화 판정 철회",
+      "as_of": "2026-09-11",
+      "a2_note": "UPDATE-8: '신조선가 평탄화(185.01→185.15)' 판정 철회 — 6→7→8월 185.15→185.49→186.34 3개월 연속 재상승, VLCC $131.0M 사상최고. 韓 점유 잠식은 선별수주(척당 42% 우위·누적 +55%)로 물량 문제 아님"
+     },
+     "why": "UPDATE-8: 평탄화 판정 철회",
+     "as_of": "2026-09-11"
+    },
+    {
+     "id": "FIN-02",
+     "field": "balance_direction",
+     "old": "활동 회복으로 수요 쪽 완만 조여짐",
+     "new": "분열 — 거래소·증권·IB 활동 조여짐(변동성·M&A·IPO 재개) vs 富채널 사모신용 환매 역류(비상장 BDC 1Q 사상 첫 순유출, 환매요청 자산의 13~14%, 5% 캡 비례배분) — 3Q 초기 완화 조짐",
+     "why": "UPDATE-8: 대체투자 레그 D2 역방향 반영",
+     "as_of": "2026-09-11"
+    },
+    {
+     "id": "STP-03",
+     "field": "balance_direction",
+     "old": "파우치 부문 조여짐 / 궐련 부문 풀림(이분화)",
+     "new": "이분화 유지 — 파우치 카테고리 성장(美 오프테이크 +10%·국제 +32%)이나 ZYN 美 가치점유 57.1%(2022 75.7%→2025 61.5%) 하락·저가 변형(ULTRA) 출시 = 경쟁 진입으로 파우치 레그 '조여짐' 강도 약화 / 궐련 풀림",
+     "why": "UPDATE-8: 파우치 경쟁 심화 반영",
+     "as_of": "2026-09-11"
+    },
+    {
+     "id": "ITC-04",
+     "field": "balance_direction",
+     "old": "완만히 조여짐(첨단 패키징·특수소재)",
+     "new": "첨단패키징 소재(ABF 기판·필름) 조여짐 강화 — Ajinomoto 풀가동·현물 +30%·수급갭 2027말, 신규 라인 18~24개월 / SiC·GaN(WOLF) 과잉 지속 — 국소 부족의 범위가 넓어짐",
+     "why": "UPDATE-8: ABF 병목 하드넘버",
+     "as_of": "2026-09-11"
+    },
+    {
+     "id": "ENE-01",
+     "field": "balance_direction",
+     "old": "지정학 프리미엄으로 일시 조여짐(구조적 아님)",
+     "new": "지정학 프리미엄 장기화(7개월+, 9월 해상봉쇄·'2029까지' 경고) — '일시' 표현 철회하되 구조적 균형 붕괴는 아님: OPEC+ 여유능력 존재, JPM 수요파괴 관측, 휴전 시 되돌림 위험",
+     "why": "UPDATE-8: 전쟁 장기화 반영",
+     "as_of": "2026-09-11"
+    }
+   ],
+   "edge_updates": [
+    "TH-AI→IND-05 THEME_DRIVES M→H 승인(UPDATE-8): 딥다이브 8종이 DC 건설을 E&C 성장엔진으로 확증"
+   ],
+   "theme_verdict": {
+    "candidate": "'AI가 인컴번트 SW·광고 모델 재편'(ITC-07+COM-03)",
+    "verdict": "기각(문구 방향 오류) + 재제안",
+    "reason": "관측이 가설과 반대: COM-03 2Q26 META 광고 단가 +12%·노출 +14%, GOOGL 검색 +17%(AI Overviews가 쿼리 증분), ITC-07 상위 플랫폼(PLTR 美상업 +149%·SNOW +37%·NOW cRPO +21%) 가속 — AI는 인컴번트를 '재편(파괴)'하는 게 아니라 규모·데이터를 가진 인컴번트를 강화하고 롱테일(시트형 SaaS·소형 광고망: GOOGL 네트워크 축소)을 잠식한다.",
+    "reproposal": "'AI 워크로드 집중 — 규모 인컴번트 강화·롱테일 잠식'(ITC-07+COM-03+ITC-01). 근거 축적 후 차기 A타입 재판정. 이번엔 테마 노드 생성하지 않음(조용히 생성 금지 규율)."
+   },
+   "peak_watch_removed": [
+    "IND-01 조선 — peak_watch 해제: '신조선가 평탄화' 전제가 관측으로 반증됨(3개월 연속 재상승 186.34·VLCC 사상최고). 강등 조건 미충족. 선종 분열(LNG선·대형컨선 하락)은 카드 감시 항목으로 잔류."
+   ],
+   "revisit_cut_note": "IND-05 BALANCE_CHANGE로 DEEP_DIVED 8종(PWR·EME·MTZ·FLR·J·KBR·ACM·MYRG)에 trigger가 기계적으로 점등하나 정원(≤5) 컷 — 강도순 TIER_CHANGE(HSHP) > BALANCE_CHANGE(LNG·VG) 뒤이며, 8종은 balance 전환의 '원인 팩'(2026-08/09)이라 재소환이 순환논리. 미등재(차기 사이클 재평가). TLN PENDING_TRIGGER 유지(UTL-02 미승격).",
+   "candidates_added": [
+    "MU",
+    "329180.KS",
+    "PKG",
+    "HSHP",
+    "LNG",
+    "VG"
+   ],
+   "coverage_honesty": "심층확인 14종 전부 §3 체크리스트 대조. 전파 인바운드+아웃바운드 2홉 10체인, 임계 통과 0. 하드넘버는 A-1 로그(1차 출처)에서만. 가격·zone은 티어 근거 0회 사용(축③ 관측으로만)."
+  },
+  "balance_changes": [
+   "IND-05 BALANCED→SHORTAGE(포켓 지배)",
+   "ENE-04 BALANCED→SHORTAGE"
+  ],
+  "heat_queue": [
+   "1 UTL-02 원자력(SHORTAGE·우라늄 $96·SWU 3배·4개 레그 딥다이브)",
+   "2 IND-05 E&C(balance SHORTAGE 전환·인력 병목)",
+   "3 ITC-03 반도체장비(WFE +23%이나 공급 추종)",
+   "4 ENE-03 정유(크랙 $106·③만개·석화 상쇄)",
+   "5 ENE-04 LNG(SHORTAGE·2028 공급파 시한)"
+  ],
+  "card_corrections": [
+   {
+    "id": "IND-09",
+    "field": "balance_direction",
+    "old": "산업 반등에 완만 조여짐",
+    "new": "산업 반등에 조여짐(가속) — 일매출 14개월 연속 두자릿수, 고객재고 too low",
+    "why": "UPDATE-8: FAST 8월 +16.6%·ISM 고객재고 42.8",
+    "as_of": "2026-09-11"
+   },
+   {
+    "id": "IND-07",
+    "field": "balance_direction",
+    "old": "컨테이너 풀림(과잉) vs 탱커·가스 조여짐(분열)",
+    "new": "분열 심화 — 탱커·가스·LNG선 조여짐(호르무즈 사실상 폐쇄 7개월+·STS 환적 57%·20년령 선가 +78~90%) vs 컨테이너 구조 과잉(2023~27 선복 +36%)",
+    "why": "UPDATE-8: 전쟁 장기화로 '일시 조임' 전제 철회",
+    "as_of": "2026-09-11"
+   },
+   {
+    "id": "MAT-05",
+    "field": "balance_direction",
+    "old": "완만 균형",
+    "new": "북미 컨테이너보드 조여짐 — 2025 폐쇄 ~10% capa + 2026 3차 인상(3월 $70·6월 $50~70 실현, 9/1 $80~140 반영 대기) / 수요는 flat",
+    "why": "UPDATE-8: 공급 축소+가격 인상 2회 실현",
+    "as_of": "2026-09-11"
+   },
+   {
+    "id": "FIN-03",
+    "field": "balance_direction",
+    "old": "자본 과잉으로 재물 요율 풀림(소프트닝)",
+    "new": "GLUT 심화 — 재보험 자본 $790B 사상최고, 캣 ROL −16%(1990년대 말 이후 최대), 1/1 추가 소프트닝 예상 / 美 캐주얼티·사이버는 하드 유지",
+    "why": "UPDATE-8: 소프트닝 2년차 확정",
+    "as_of": "2026-09-11"
+   },
+   {
+    "id": "IND-05",
+    "field": "balance_direction",
+    "old": "전력·데이터센터向 조여짐",
+    "new": "분열 — 전력·데이터센터·LNG·산업 EPC 조여짐(숙련 인력 병목이 binding; 상장 E&C 경제성을 지배) / 일반 상업·주거 건설 풀림(총건설 SAAR −3.2%)",
+    "why": "UPDATE-8 BALANCE_CHANGE: BALANCED→SHORTAGE(포켓 지배)",
+    "as_of": "2026-09-11"
+   },
+   {
+    "id": "ENE-04",
+    "field": "balance_direction",
+    "old": "수출 수요로 2027 향해 조여짐",
+    "new": "전쟁발 카타르·호르무즈 차질(글로벌 LNG ~20%)로 2026~27 조여짐이 앞당겨짐 — EU 저장 5년 최저 하회·美 수출 +23% / 2028~30 글로벌 공급파(~345bcm/yr)가 예정된 역풍",
+    "why": "UPDATE-8 BALANCE_CHANGE: BALANCED→SHORTAGE",
+    "as_of": "2026-09-11"
+   },
+   {
+    "id": "ITC-03",
+    "field": "demand.drivers",
+    "old": "선단 로직(2nm)·메모리(HBM)·첨단 패키징 증설이 WFE 수요를 견인. [실제] SEMI: 2026 WFE $135B(+9%), 일부 하우스는 $148~170B 전망. ASML은 2026 매출 가이던스 $49.2~51.5B로 상향, 오더가 컨센의 2배(4Q25 €13.2B)로 유입, 백로그 2028년까지. Lam: NAND 전환 투자 ~$40B가 2027년 전으로 당겨짐. 후공정 테스트 +12%.",
+    "new": "선단 로직(2nm)·메모리(HBM)·첨단 패키징 증설이 WFE 수요를 견인. [실제·UPDATE-8 정정] SEMI: 2026 WFE $143.9B(+23.1%) → 2027 $175.3B(+21.8%) → 2028 $200B(+14.1%) (직전 카드의 '$135B(+9%)'는 구 전망 — AMAT·LRCX 팩 동일 출처로 정정). ASML은 2026 매출 가이던스 $49.2~51.5B로 상향, 오더가 컨센의 2배(4Q25 €13.2B)로 유입, 백로그 2028년까지. Lam: NAND 전환 투자 ~$40B가 2027년 전으로 당겨짐. 후공정 테스트 +12%.",
+    "why": "UPDATE-8: UPDATE-7 known_debt(ITC-03 WFE 수치) 해소",
+    "as_of": "2026-09-11"
+   },
+   {
+    "id": "ITC-03",
+    "field": "balance_direction",
+    "old": "조여짐(EUV·첨단패키징 장비 한정)",
+    "new": "조여짐 강화(EUV·첨단패키징·검사) — WFE +23% 리비전에 ASML capa 2027 +30%로 공급이 뒤따르는 '리드타임 연장' 국면, 급성 부족 아님",
+    "why": "UPDATE-8: WFE 상향 반영",
+    "as_of": "2026-09-11"
+   },
+   {
+    "id": "IND-01",
+    "field": "market_read",
+    "old": {
+     "consensus": "MID",
+     "momentum": "가속",
+     "note": "한국 조선주 re-rating 진행 중이나 서구 투자자 인지는 아직 '무역전쟁 트레이드'로 과소평가(선대 교체 20년 사이클 저평가)",
+     "prev_momentum": "가속",
+     "a1_note": "선가 재상승 — 평탄화 판정 철회",
+     "as_of": "2026-09-11"
+    },
+    "new": {
+     "consensus": "MID",
+     "momentum": "가속",
+     "note": "한국 조선주 re-rating 진행 중이나 서구 투자자 인지는 아직 '무역전쟁 트레이드'로 과소평가(선대 교체 20년 사이클 저평가)",
+     "prev_momentum": "가속",
+     "a1_note": "선가 재상승 — 평탄화 판정 철회",
+     "as_of": "2026-09-11",
+     "a2_note": "UPDATE-8: '신조선가 평탄화(185.01→185.15)' 판정 철회 — 6→7→8월 185.15→185.49→186.34 3개월 연속 재상승, VLCC $131.0M 사상최고. 韓 점유 잠식은 선별수주(척당 42% 우위·누적 +55%)로 물량 문제 아님"
+    },
+    "why": "UPDATE-8: 평탄화 판정 철회",
+    "as_of": "2026-09-11"
+   },
+   {
+    "id": "FIN-02",
+    "field": "balance_direction",
+    "old": "활동 회복으로 수요 쪽 완만 조여짐",
+    "new": "분열 — 거래소·증권·IB 활동 조여짐(변동성·M&A·IPO 재개) vs 富채널 사모신용 환매 역류(비상장 BDC 1Q 사상 첫 순유출, 환매요청 자산의 13~14%, 5% 캡 비례배분) — 3Q 초기 완화 조짐",
+    "why": "UPDATE-8: 대체투자 레그 D2 역방향 반영",
+    "as_of": "2026-09-11"
+   },
+   {
+    "id": "STP-03",
+    "field": "balance_direction",
+    "old": "파우치 부문 조여짐 / 궐련 부문 풀림(이분화)",
+    "new": "이분화 유지 — 파우치 카테고리 성장(美 오프테이크 +10%·국제 +32%)이나 ZYN 美 가치점유 57.1%(2022 75.7%→2025 61.5%) 하락·저가 변형(ULTRA) 출시 = 경쟁 진입으로 파우치 레그 '조여짐' 강도 약화 / 궐련 풀림",
+    "why": "UPDATE-8: 파우치 경쟁 심화 반영",
+    "as_of": "2026-09-11"
+   },
+   {
+    "id": "ITC-04",
+    "field": "balance_direction",
+    "old": "완만히 조여짐(첨단 패키징·특수소재)",
+    "new": "첨단패키징 소재(ABF 기판·필름) 조여짐 강화 — Ajinomoto 풀가동·현물 +30%·수급갭 2027말, 신규 라인 18~24개월 / SiC·GaN(WOLF) 과잉 지속 — 국소 부족의 범위가 넓어짐",
+    "why": "UPDATE-8: ABF 병목 하드넘버",
+    "as_of": "2026-09-11"
+   },
+   {
+    "id": "ENE-01",
+    "field": "balance_direction",
+    "old": "지정학 프리미엄으로 일시 조여짐(구조적 아님)",
+    "new": "지정학 프리미엄 장기화(7개월+, 9월 해상봉쇄·'2029까지' 경고) — '일시' 표현 철회하되 구조적 균형 붕괴는 아님: OPEC+ 여유능력 존재, JPM 수요파괴 관측, 휴전 시 되돌림 위험",
+    "why": "UPDATE-8: 전쟁 장기화 반영",
+    "as_of": "2026-09-11"
+   }
+  ],
+  "stance_refresh": {
+   "as_of": "2026-09-11",
+   "refreshed": [
+    {
+     "ticker": "FCX",
+     "how": "NEW",
+     "price": 70.74,
+     "as_of": "2026-09-10",
+     "zone": "AVOID"
+    },
+    {
+     "ticker": "SCCO",
+     "how": "NEW",
+     "price": 194.42,
+     "as_of": "2026-09-10",
+     "zone": "AVOID"
+    },
+    {
+     "ticker": "TECK",
+     "how": "NEW",
+     "price": 65.08,
+     "as_of": "2026-09-10",
+     "zone": "UNKNOWN"
+    },
+    {
+     "ticker": "WMB",
+     "how": "WINDOW",
+     "price": 75.23,
+     "as_of": "2026-09-01",
+     "zone": "WATCH"
+    },
+    {
+     "ticker": "GEV",
+     "how": "NEW",
+     "price": 923.39,
+     "as_of": "2026-09-10",
+     "zone": "WATCH"
+    },
+    {
+     "ticker": "ETN",
+     "how": "NEW",
+     "price": 409.15,
+     "as_of": "2026-09-10",
+     "zone": "AVOID"
+    },
+    {
+     "ticker": "VRT",
+     "how": "NEW",
+     "price": 280.53,
+     "as_of": "2026-09-08",
+     "zone": "AVOID"
+    },
+    {
+     "ticker": "OKLO",
+     "how": "WINDOW",
+     "price": 39.39,
+     "as_of": "2026-09-02",
+     "zone": "WATCH"
+    },
+    {
+     "ticker": "TSM",
+     "how": "WINDOW",
+     "price": 2410.0,
+     "as_of": "2026-09-04",
+     "zone": "WATCH"
+    },
+    {
+     "ticker": "ASML",
+     "how": "WINDOW",
+     "price": 1467.4,
+     "as_of": "2026-09-04",
+     "zone": "AVOID"
+    },
+    {
+     "ticker": "AMAT",
+     "how": "WINDOW",
+     "price": 454.71,
+     "as_of": "2026-09-04",
+     "zone": "WATCH"
+    },
+    {
+     "ticker": "LRCX",
+     "how": "WINDOW",
+     "price": 303.72,
+     "as_of": "2026-09-04",
+     "zone": "WATCH"
+    },
+    {
+     "ticker": "SNOW",
+     "how": "WINDOW",
+     "price": 305.84,
+     "as_of": "2026-09-02",
+     "zone": "ATTRACTIVE"
+    },
+    {
+     "ticker": "NOW",
+     "how": "WINDOW",
+     "price": 136.5,
+     "as_of": "2026-09-02",
+     "zone": "ATTRACTIVE"
+    },
+    {
+     "ticker": "DLR",
+     "how": "NEW",
+     "price": 189.5,
+     "as_of": "2026-09-08",
+     "zone": "WATCH"
+    },
+    {
+     "ticker": "UBER",
+     "how": "WINDOW",
+     "price": 76.78,
+     "as_of": "2026-09-02",
+     "zone": "UNKNOWN"
+    },
+    {
+     "ticker": "SVRA",
+     "how": "WINDOW",
+     "price": 5.35,
+     "as_of": "2026-09-01",
+     "zone": "ATTRACTIVE"
+    }
+   ],
+   "unknown_count": 79,
+   "unknown": [
+    "VLO",
+    "LNG",
+    "ET",
+    "ALB",
+    "RTX",
+    "HEI",
+    "HUBB",
+    "ROK",
+    "PWR",
+    "EME",
+    "MTZ",
+    "FLR",
+    "J",
+    "KBR",
+    "CEG",
+    "VST",
+    "TLN",
+    "CCJ",
+    "BWXT",
+    "LEU",
+    "NEE",
+    "AMKR",
+    "DELL",
+    "ANET",
+    "COHR",
+    "PLTR",
+    "RDDT",
+    "ALNY",
+    "VKTX",
+    "APO",
+    "BLK",
+    "EQIX",
+    "IRM",
+    "SHOP",
+    "CRCL",
+    "RKLB",
+    "ABCL",
+    "AMPX",
+    "DNA",
+    "GCTS",
+    "IONS",
+    "LITE",
+    "NVEC",
+    "HOOD",
+    "RIOT",
+    "TEM",
+    "UUUU",
+    "YSS",
+    "ALM",
+    "BE",
+    "FORM",
+    "NBIS",
+    "VG",
+    "APLD",
+    "CORZ",
+    "WULF",
+    "AAOI",
+    "CRDO",
+    "GLW",
+    "POET",
+    "POWL",
+    "CLF",
+    "FFIV",
+    "FICO",
+    "WOLF",
+    "NVTS",
+    "SATL",
+    "VELO",
+    "FIVE",
+    "PURR",
+    "ILMN",
+    "ACM",
+    "MYRG",
+    "XE",
+    "STEM",
+    "SES",
+    "AAPL",
+    "CAT",
+    "ECP"
+   ],
+   "policy": "신규 관측(웹서치 1차 출처 종가) 7종 + 딥다이브 팩 스냅샷 as_of≥2026-09-01(세션 창 10일 내) 11종을 관측 갱신으로 인정. 그 외 §4A '확인 못 한 노드는 zone=UNKNOWN' 적용. atlas_stance(label·ladder) 재생성 0건."
+  }
  },
  "verdict_log": [
   {
