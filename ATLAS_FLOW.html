@@ -123,8 +123,7 @@ footer .lg i{display:inline-block;width:9px;height:9px;border-radius:50%}
     <button class="chip t-COLD on" data-tier="COLD">COLD</button>
     <span class="sep"></span>
     <button class="chip" id="flowOnly" title="공급 흐름만 표시">흐름만</button>
-    <button class="chip" id="cross">가로층 접기</button>
-    <button class="chip" id="play">전파 재생</button>
+        <button class="chip" id="play">전파 재생</button>
     <button class="chip" id="reset">초기화</button>
   </div>
 </header>
@@ -154,21 +153,24 @@ footer .lg i{display:inline-block;width:9px;height:9px;border-radius:50%}
 </footer>
 </div>
 <script>
-// ───────── 층 정의 (수정은 여기서) ─────────
-const LAYERS=[
- {id:0,name:"상류",sub:"원자재 · 에너지",ids:["ENE-01","ENE-05","MAT-02","MAT-01","MAT-03","MAT-06","MAT-04"]},
- {id:1,name:"중류",sub:"장비 · 부품 · 시공",ids:["ITC-03","ITC-04","IND-03","IND-04","IND-05","IND-01","IND-02","MAT-05","ENE-03"]},
- {id:2,name:"인프라",sub:"유틸 · 물류 · 데이터센터",ids:["ENE-02","ENE-04","UTL-01","UTL-02","UTL-03","UTL-04","IND-06","IND-07","IND-08","IND-09","COM-01","RLE-02"]},
- {id:3,name:"플랫폼",sub:"반도체 · 소프트웨어 · 미디어 · 제약",ids:["ITC-02","ITC-05","ITC-01","ITC-06","ITC-07","ITC-08","COM-03","COM-02","COM-04","HLT-04","HLT-02","HLT-01"]},
- {id:4,name:"최종 수요",sub:"소비 · 헬스 서비스",ids:["DIS-01","DIS-02","DIS-03","DIS-04","DIS-05","STP-01","STP-02","STP-03","STP-04","HLT-03","HLT-05"]},
+// ───────── 체인(행) × 단계(열) 정의 — 수정은 여기서 ─────────
+const STAGES=["상류","중류","하류","최종 수요"];
+const CHAINS=[
+ {id:"POWER",name:"전력·데이터센터",cells:[["IND-03","UTL-02","UTL-03","ENE-05"],["UTL-01","IND-05","UTL-04"],["RLE-02","COM-01"],[]]},
+ {id:"SEMI", name:"반도체·디지털",  cells:[["ITC-04","ITC-03"],["ITC-02","ITC-05","ITC-01"],["ITC-06"],["ITC-07","COM-03"]]},
+ {id:"ENERGY",name:"에너지·운송",   cells:[["ENE-01"],["ENE-02","ENE-04","ENE-03"],["IND-07","IND-08","IND-06"],["DIS-03"]]},
+ {id:"MAT",  name:"원자재·산업재",  cells:[["MAT-02","MAT-01","MAT-03","MAT-06"],["IND-04","MAT-04","MAT-05"],["IND-01","IND-02","IND-09"],["DIS-01","RLE-03"]]},
+ {id:"CONS", name:"소비재·유통",    cells:[["STP-01","STP-02","STP-03"],["STP-04","DIS-04"],["DIS-02","DIS-05"],["COM-02","COM-04"]]},
+ {id:"HLT",  name:"헬스케어",       cells:[["HLT-04"],["HLT-02","HLT-01"],["HLT-03"],["HLT-05"]]},
+ {id:"FIN",  name:"금융·부동산",    cells:[["FIN-01"],["FIN-02","FIN-03"],["ITC-08"],["RLE-01"]]},
 ];
-const CROSS=["FIN-01","FIN-02","FIN-03","RLE-01","RLE-03"];
+let crossHidden=false;
 const TC={HEAT:"#E0552F",WARM:"#D89A3A",NEUTRAL:"#7A8894",COLD:"#4A8DB8",FROZEN:"#566169"};
 const BAL={SHORTAGE:"▲",BALANCED:"●",GLUT:"▼"};
 const RED=matchMedia("(prefers-reduced-motion: reduce)").matches;
-const COLW=400, PADX=170, ROWH=66, TOP=176, THEME_Y=48, CROSS_PAD=110;
+const COLW=400, LEFT=210, RIGHT=100, ROWH=54, ROWPAD=16, TOP=150, THEME_Y=48, CELLGAP=95;
 
-let D=null,N=[],E=[],byId={},sel=null,hov=null,expanded=new Set(),flowOnly=false,crossHidden=false,tiers=new Set(Object.keys(TC));
+let D=null,N=[],E=[],byId={},sel=null,hov=null,expanded=new Set(),flowOnly=false,tiers=new Set(Object.keys(TC));
 let VW=0,VH=0,WW=0,WH=0,view={x:0,y:0,k:1},dragN=null,panning=null,playing=false,tween=null;
 const svg=document.getElementById("svg"),root=document.getElementById("root"),tip=document.getElementById("tip"),stage=document.getElementById("stage");
 const NS="http://www.w3.org/2000/svg",el=(t,a={})=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);return e};
@@ -188,37 +190,36 @@ function init(){
 }
 function build(){
   N=[];E=[];byId={};
-  const lane={};LAYERS.forEach(L=>L.ids.forEach(id=>lane[id]=L.id));CROSS.forEach(id=>lane[id]="X");
-  D.industries.forEach(i=>{const n={id:i.id,kind:"ind",name:i.name,tier:i.tier,lane:lane[i.id]??2,ref:i,r:i.tier==="HEAT"?14:i.tier==="WARM"?11.5:9.5,x:0,y:0};N.push(n);byId[n.id]=n});
+  const pos={};CHAINS.forEach((C,ri)=>C.cells.forEach((cell,ci)=>cell.forEach((id,k)=>pos[id]={row:ri,col:ci,k})));
+  D.industries.forEach(i=>{const p=pos[i.id]||{row:CHAINS.length-1,col:3,k:9};const n={id:i.id,kind:"ind",name:i.name,tier:i.tier,row:p.row,col:p.col,k:p.k,lane:p.row,ref:i,r:i.tier==="HEAT"?14:i.tier==="WARM"?11.5:9.5,x:0,y:0};N.push(n);byId[n.id]=n});
   (D.themes||[]).forEach(t=>{const n={id:t.id,kind:"theme",name:t.name,lane:"T",ref:t,r:10,x:0,y:0};N.push(n);byId[n.id]=n});
   D.edges.forEach(e=>{if(byId[e.from]&&byId[e.to])E.push({a:byId[e.from],b:byId[e.to],type:e.type,strength:e.strength,mech:e.mechanism||""})});
   (D.themes||[]).forEach(t=>(t.linked_industries||[]).forEach(id=>{if(byId[id]&&!E.some(e=>e.a.id===t.id&&e.b.id===id))E.push({a:byId[t.id],b:byId[id],type:"THEME_DRIVES",strength:"M",mech:""})}));
-  E.forEach(e=>{const la=e.a.lane,lb=e.b.lane;e.far=(typeof la==="number"&&typeof lb==="number"&&Math.abs(la-lb)>=2)});
+  E.forEach(e=>{e.far=(e.a.kind==="ind"&&e.b.kind==="ind"&&Math.abs(e.a.row-e.b.row)>=2)});
 }
-const laneX=l=>PADX+l*COLW;
+const colX=c=>LEFT+COLW*(c+.5);
+let ROWS=[];
 function layout(){
-  WW=PADX*2+COLW*(LAYERS.length-1);
-  const maxRows=Math.max(...LAYERS.map(L=>L.ids.length));
-  WH=TOP+ROWH*maxRows+CROSS_PAD;
-  const th=N.filter(n=>n.kind==="theme");th.forEach((n,i)=>{n.x=PADX-60+(WW-PADX*2+120)*(i+.5)/th.length;n.y=THEME_Y;n.stag=i%2});
-  N.filter(n=>n.lane==="X").forEach((n,i,a)=>{n.x=PADX+(WW-PADX*2)*(i+.5)/a.length;n.y=WH-52});
-  const ind=N.filter(n=>n.kind==="ind"&&n.lane!=="X");
-  ind.forEach(n=>{n.x=laneX(n.lane);n.y=TOP+ROWH*maxRows/2});
-  for(let it=0;it<5;it++)LAYERS.forEach(L=>{const ns=ind.filter(n=>n.lane===L.id);
-    ns.forEach(n=>{const ys=E.filter(e=>e.a===n||e.b===n).map(e=>e.a===n?e.b:e.a).filter(m=>m.kind==="ind"&&typeof m.lane==="number"&&m.lane!==n.lane).map(m=>m.y);n.bc=ys.length?ys.reduce((a,b)=>a+b,0)/ys.length:n.y});
-    ns.sort((a,b)=>a.bc-b.bc);const h=ROWH*maxRows,gap=h/ns.length;ns.forEach((n,i)=>{n.y=TOP+gap*(i+.5)})});
+  WW=LEFT+COLW*STAGES.length+RIGHT;
+  let y=TOP;ROWS=[];
+  CHAINS.forEach((C,ri)=>{const n=Math.max(1,...C.cells.map(c=>c.length>2?Math.ceil(c.length/2):c.length));const h=ROWH*n+ROWPAD*2;ROWS.push({y0:y,y1:y+h,cy:y+h/2,n});y+=h});
+  WH=y+40;
+  const th=N.filter(n=>n.kind==="theme");th.forEach((n,i)=>{n.x=LEFT+COLW*STAGES.length*(i+.5)/th.length;n.y=THEME_Y;n.stag=i%2});
+  N.filter(n=>n.kind==="ind").forEach(n=>{const R=ROWS[n.row],cnt=CHAINS[n.row].cells[n.col].length||1;if(cnt>2){const rows=Math.ceil(cnt/2),r=Math.floor(n.k/2),c=n.k%2;n.x=colX(n.col)+(c?CELLGAP:-CELLGAP);n.y=R.cy+(r-(rows-1)/2)*ROWH}else{n.x=colX(n.col);n.y=R.cy+(n.k-(cnt-1)/2)*ROWH}});
 }
 let gLane,gEdge,gPart,gNode,mini;
 function render(){
   root.innerHTML="";gLane=el("g");gEdge=el("g");gPart=el("g");gNode=el("g");root.append(gLane,gEdge,gPart,gNode);
-  const maxRows=Math.max(...LAYERS.map(L=>L.ids.length));
-  LAYERS.forEach(L=>{const x=laneX(L.id);
-    if(L.id%2)gLane.appendChild(el("rect",{class:"lane-band",x:x-COLW/2,y:TOP-40,width:COLW,height:ROWH*maxRows+56,rx:14}));
-    const t=el("text",{class:"lane-label",x,y:TOP-52,"text-anchor":"middle"});t.textContent=L.name;gLane.appendChild(t);
-    const s=el("text",{class:"lane-sub",x,y:TOP-36,"text-anchor":"middle"});s.textContent=L.sub;gLane.appendChild(s);
-    if(L.id<LAYERS.length-1){const a=el("text",{class:"lane-sub",x:x+COLW/2,y:TOP-44,"text-anchor":"middle"});a.textContent="→";a.style.fontSize="16px";gLane.appendChild(a)}});
-  const tl=el("text",{class:"lane-label",x:PADX-140,y:WH-48});tl.textContent="금융·부동산";gLane.appendChild(tl);
-  const ts=el("text",{class:"lane-sub",x:PADX-140,y:WH-34});ts.textContent="가로층 · 모든 층과 연결";gLane.appendChild(ts);
+  STAGES.forEach((st,ci)=>{const x=colX(ci);
+    const t=el("text",{class:"lane-label",x,y:TOP-34,"text-anchor":"middle"});t.textContent=st;gLane.appendChild(t);
+    if(ci<STAGES.length-1){const a=el("text",{class:"lane-sub",x:x+COLW/2,y:TOP-30,"text-anchor":"middle"});a.textContent="→";a.style.fontSize="18px";gLane.appendChild(a)}});
+  CHAINS.forEach((C,ri)=>{const R=ROWS[ri];
+    if(ri%2===0)gLane.appendChild(el("rect",{class:"lane-band",x:LEFT-8,y:R.y0+4,width:COLW*STAGES.length+16,height:R.y1-R.y0-8,rx:16}));
+    gLane.appendChild(el("line",{x1:LEFT,y1:R.cy,x2:LEFT+COLW*STAGES.length,y2:R.cy,stroke:"#2A2F35","stroke-dasharray":"2 8","stroke-width":1,"pointer-events":"none"}));
+    const g=el("g",{class:"rowlbl"});g.style.cursor="pointer";
+    const t=el("text",{class:"lane-label",x:LEFT-24,y:R.cy+4,"text-anchor":"end"});t.textContent=C.name;t.style.fontSize="13px";t.style.fill="#B9B6AC";t.style.pointerEvents="auto";g.appendChild(t);
+    const s2=el("text",{class:"lane-sub",x:LEFT-24,y:R.cy+20,"text-anchor":"end"});s2.textContent="체인 전체 보기";s2.style.pointerEvents="auto";g.appendChild(s2);
+    g.addEventListener("click",ev=>{ev.stopPropagation();selectChain(ri)});gLane.appendChild(g)});
   E.forEach(e=>{const dash=!(e.type==="SUPPLIES_TO"||e.type==="THEME_DRIVES"||e.type==="OPERATES_IN");
     e.el=el("path",{class:"edge k-"+e.type+(dash?" dash":"")+(e.far?" far":"")});
     e.el.addEventListener("mouseenter",ev=>showTip(ev,`<b>${esc(e.a.name)}</b> → <b>${esc(e.b.name)}</b><div class="m">${e.type} · ${e.strength||"-"}</div>${e.mech?"<div style='margin-top:4px'>"+esc(e.mech)+"</div>":""}`));
@@ -227,7 +228,7 @@ function render(){
     if(n.kind==="theme"){g.appendChild(el("polygon",{points:"0,-12 12,0 0,12 -12,0",fill:"#C9B88A","fill-opacity":.85}))}
     else{g.appendChild(el("circle",{class:"glow",r:n.r+2,stroke:TC[n.tier]||"#EBEAE4"}));g.appendChild(el("circle",{class:"halo",r:n.r+6,stroke:n.kind==="co"?"#EBEAE4":TC[n.tier]}));
       g.appendChild(el("circle",{class:"core",r:n.r,fill:n.kind==="co"?"#3A4149":TC[n.tier],"fill-opacity":n.kind==="co"?(n.dd?.95:.55):.88,stroke:n.kind==="co"?(n.dd?"#EBEAE4":"#5C636B"):TC[n.tier],"stroke-width":n.kind==="co"?1.2:1,"stroke-opacity":.9}))}
-    const co=n.kind==="co",side=co?(n.x<n.parent.x?-1:1):0;
+    const co=n.kind==="co",side=1;
     const t=el("text",{class:"lbl",x:co?side*(n.r+5):0,y:co?4:(n.kind==="theme"?(n.stag?-18:30):n.r+15),"text-anchor":co?(side<0?"end":"start"):"middle"});t.textContent=n.name;g.appendChild(t);
     if(n.kind==="ind"){const s=el("text",{class:"sub",y:n.r+27,"text-anchor":"middle"});s.textContent=n.id;g.appendChild(s);
       const b=el("text",{class:"bal",x:n.r+8,y:4,"text-anchor":"start"});b.textContent=BAL[n.ref.balance]||"";g.appendChild(b)}
@@ -246,7 +247,7 @@ function nodeTip(n){
 function showTip(ev,html){tip.innerHTML=html;tip.style.opacity=1;moveTip(ev)}
 function moveTip(ev){const r=stage.getBoundingClientRect();let x=ev.clientX-r.left+14,y=ev.clientY-r.top+14;if(x+330>r.width)x=ev.clientX-r.left-330;if(y+110>r.height)y=ev.clientY-r.top-100;tip.style.left=x+"px";tip.style.top=y+"px"}
 function hideTip(){tip.style.opacity=0}
-const path=e=>{const a=e.a,b=e.b;if(e.type==="OPERATES_IN")return`M${a.x},${a.y}L${b.x},${b.y}`;const dx=b.x-a.x;if(Math.abs(dx)<60){const s=a.x<WW/2?1:-1;return`M${a.x},${a.y}C${a.x+s*70},${a.y} ${b.x+s*70},${b.y} ${b.x},${b.y}`}const c=Math.min(Math.abs(dx)*.5,260)*Math.sign(dx);return`M${a.x},${a.y}C${a.x+c},${a.y} ${b.x-c},${b.y} ${b.x},${b.y}`};
+const path=e=>{const a=e.a,b=e.b;if(e.type==="OPERATES_IN")return`M${a.x},${a.y}L${b.x},${b.y}`;const dx=b.x-a.x,dy=b.y-a.y;if(Math.abs(dx)<40){const s=a.col>=2?1:-1;return`M${a.x},${a.y}C${a.x+s*(40+Math.abs(dy)*.25)},${a.y} ${b.x+s*(40+Math.abs(dy)*.25)},${b.y} ${b.x},${b.y}`}const c=Math.min(Math.abs(dx)*.55,240)*Math.sign(dx);return`M${a.x},${a.y}C${a.x+c},${a.y} ${b.x-c},${b.y} ${b.x},${b.y}`};
 let t0=performance.now();
 function tick(){
   if(tween){const p=Math.min(1,(performance.now()-tween.t)/tween.d),s=p<.5?2*p*p:-1+(4-2*p)*p;view.x=tween.x0+(tween.x1-tween.x0)*s;view.y=tween.y0+(tween.y1-tween.y0)*s;view.k=tween.k0+(tween.k1-tween.k0)*s;if(p>=1)tween=null}
@@ -270,21 +271,37 @@ function light(n,cls){
   N.forEach(m=>{if(m===n)m.el.classList.add(cls);else if(one.has(m)){}else if(two.has(m))m.el.classList.add("lit2");else m.el.classList.add("off")});
   E.forEach(e=>{if(e.a===n||e.b===n)e.el.classList.add("lit1");else if((one.has(e.a)&&two.has(e.b))||(one.has(e.b)&&two.has(e.a))||(one.has(e.a)&&one.has(e.b)))e.el.classList.add("lit2");else e.el.classList.add("off")});
 }
-function hover(n){hov=n;if(sel)return;light(n,"hov");applyFilters()}
-function select(n,center){sel=n;light(n,"sel");applyFilters();if(!n){inspectEmpty();return}inspect(n);if(center)centerOn(n)}
-function centerOn(n){const k=Math.max(view.k,.9);tween={t:performance.now(),d:RED?0:420,x0:view.x,y0:view.y,k0:view.k,x1:VW/2-n.x*k,y1:VH/2-n.y*k,k1:k}}
+let selChain=null;
+function selectChain(ri){sel=null;selChain=ri;const set=new Set(N.filter(n=>n.kind==="ind"&&n.row===ri));
+  N.forEach(m=>m.el.classList.remove("sel","off","lit2","hov"));E.forEach(e=>e.el.classList.remove("lit1","lit2","off"));
+  N.forEach(m=>{if(set.has(m))m.el.classList.add("sel");else if(E.some(e=>(set.has(e.a)&&e.b===m)||(set.has(e.b)&&e.a===m)))m.el.classList.add("lit2");else m.el.classList.add("off")});
+  E.forEach(e=>{if(set.has(e.a)&&set.has(e.b))e.el.classList.add("lit1");else if(set.has(e.a)||set.has(e.b))e.el.classList.add("lit2");else e.el.classList.add("off")});
+  applyFilters();const C=CHAINS[ri];const I=document.getElementById("insp");
+  let h=`<h2>${esc(C.name)} 체인</h2><div class="meta">상류 → 중류 → 하류 → 최종 수요</div>`;
+  STAGES.forEach((st,ci)=>{h+=`<h3>${st}</h3>`;C.cells[ci].forEach(id=>{const n=byId[id];if(!n)return;const col=TC[n.tier];h+=`<div class="row"><b><span class="lk" data-id="${id}">${esc(n.name)}</span></b><span style="color:${col}">${n.tier} <span style="color:var(--mute)">${BAL[n.ref.balance]||""}</span></span></div>`})});
+  const out=E.filter(e=>e.type!=="OPERATES_IN"&&e.a.kind==="ind"&&e.b.kind==="ind"&&(set.has(e.a)!==set.has(e.b)));
+  h+=`<h3>다른 체인과의 연결 (${out.length})</h3>`;out.slice(0,40).forEach(e=>{const inn=set.has(e.a)?e.a:e.b,o=set.has(e.a)?e.b:e.a,dir=set.has(e.a)?"→":"←";h+=`<div class="row"><b>${esc(inn.name)} <small style="color:var(--mute)">${dir} ${e.type}</small></b><span><span class="lk" data-id="${o.id}">${esc(o.name)}</span> <small>· ${esc(CHAINS[o.row].name)}</small></span></div>`});
+  const ths=E.filter(e=>e.type==="THEME_DRIVES"&&set.has(e.b)).map(e=>e.a);const uniq=[...new Set(ths)];
+  h+=`<h3>타고 있는 테마 (${uniq.length})</h3>`;uniq.forEach(t=>h+=`<div class="row"><b><span class="lk" data-id="${t.id}">${esc(t.name)}</span></b><span>${ths.filter(x=>x===t).length}개 산업</span></div>`);
+  I.innerHTML=h;I.scrollTop=0;I.querySelectorAll(".lk").forEach(a=>a.onclick=()=>{const m=byId[a.dataset.id];if(m)select(m,true)});
+  const R=ROWS[ri];const k=Math.max(Math.min(view.k,(VW-40)/WW),.55);const c=cl((VW-WW*k)/2,VH/2-R.cy*k,k);tween={t:performance.now(),d:RED?0:420,x0:view.x,y0:view.y,k0:view.k,x1:c.x,y1:c.y,k1:k};
+}
+function hover(n){hov=n;if(sel||selChain!=null)return;light(n,"hov");applyFilters()}
+function select(n,center){selChain=null;sel=n;light(n,"sel");applyFilters();if(!n){inspectEmpty();return}inspect(n);if(center)centerOn(n)}
+function cl(x,y,k){const w=WW*k,h=WH*k;return{x:w<VW?(VW-w)/2:Math.max(VW-w-40,Math.min(40,x)),y:h<VH?(VH-h)/2:Math.max(VH-h-40,Math.min(40,y))}}
+function centerOn(n){const k=Math.max(view.k,.9);const c=cl(VW/2-n.x*k,VH/2-n.y*k,k);tween={t:performance.now(),d:RED?0:420,x0:view.x,y0:view.y,k0:view.k,x1:c.x,y1:c.y,k1:k}}
 function toggleCo(n){
   if(expanded.has(n.id)){expanded.delete(n.id);N=N.filter(m=>!(m.kind==="co"&&m.parent===n));E=E.filter(e=>!(e.type==="OPERATES_IN"&&(e.a===n||e.b===n)));render();if(sel)light(sel,"sel");return}
   expanded.add(n.id);const cos=(n.ref.companies||[]).filter(c=>typeof c==="object");
   const dd=new Set((D.company_nodes||[]).filter(c=>c.verification==="DEEP_DIVED").map(c=>c.ticker));
-  const half=Math.ceil(cos.length/2);
-  cos.forEach((c,i)=>{const side=i<half?-1:1,k=i<half?i:i-half,cnt=i<half?half:cos.length-half;const x=n.x+side*(70+(k%2)*30),y=n.y+(k-(cnt-1)/2)*19;
+  const perCol=Math.ceil(cos.length/2);
+  cos.forEach((c,i)=>{const cc=Math.floor(i/perCol),k=i%perCol;const x=n.x+56+cc*62,y=n.y-12+k*17;
     const m={id:n.id+"::"+c.ticker,kind:"co",name:c.ticker,cp:c.chain_position||"",role:c.role,dd:dd.has(c.ticker),parent:n,lane:n.lane,r:c.role==="REGIME_LEADER"?5.5:4,x,y,ref:c};N.push(m);byId[m.id]=m;E.push({a:n,b:m,type:"OPERATES_IN",strength:"L",mech:c.note||""})});
   render();select(n,false);
 }
 function applyFilters(){
   const q=document.getElementById("q").value.trim().toLowerCase();
-  N.forEach(n=>{let h=false;if(n.kind==="ind"&&!tiers.has(n.tier))h=true;if(crossHidden&&n.lane==="X")h=true;if(n.kind==="co"&&n.parent.hidden)h=true;n.hidden=h;
+  N.forEach(n=>{let h=false;if(n.kind==="ind"&&!tiers.has(n.tier))h=true;if(n.kind==="co"&&n.parent.hidden)h=true;n.hidden=h;
     n.el.classList.toggle("hit",!!q&&(n.name.toLowerCase().includes(q)||n.id.toLowerCase().includes(q)))});
   E.forEach(e=>{const dash=!(e.type==="SUPPLIES_TO"||e.type==="THEME_DRIVES"||e.type==="OPERATES_IN");e.el.style.visibility=(dash&&flowOnly&&!sel&&!hov)?"hidden":"visible"});
 }
@@ -299,7 +316,7 @@ svg.addEventListener("wheel",ev=>{ev.preventDefault();tween=null;const r=svg.get
 svg.addEventListener("pointerdown",ev=>{if(ev.button!==0)return;tween=null;panning={x:ev.clientX,y:ev.clientY,vx:view.x,vy:view.y};svg.classList.add("dragging")});
 window.addEventListener("pointermove",ev=>{
   if(dragN){const d=Math.hypot(ev.clientX-dragN.sx,ev.clientY-dragN.sy);if(d>3)dragN.moved=true;if(!dragN.moved)return;const n=dragN.n,r=svg.getBoundingClientRect(),p={x:(ev.clientX-r.left-view.x)/view.k,y:(ev.clientY-r.top-view.y)/view.k};
-    if(n.kind==="ind"&&n.lane!=="X")n.y=Math.max(TOP-10,Math.min(WH-CROSS_PAD,p.y));else if(n.kind==="co"){n.x=p.x;n.y=p.y}}
+    if(n.kind==="ind"){const R=ROWS[n.row];n.y=Math.max(R.y0+18,Math.min(R.y1-18,p.y))}else if(n.kind==="co"){n.x=p.x;n.y=p.y}}
   else if(panning){view.x=panning.vx+ev.clientX-panning.x;view.y=panning.vy+ev.clientY-panning.y;clamp()}});
 window.addEventListener("pointerup",()=>{setTimeout(()=>{dragN=null},0);panning=null;svg.classList.remove("dragging")});
 svg.addEventListener("click",ev=>{if(!ev.target.closest(".node"))select(null)});
@@ -316,7 +333,7 @@ function buildMini(){mini=document.getElementById("minisvg");mini.innerHTML="";m
 function updateMini(){if(!mini||!mini.vp)return;mini.vp.setAttribute("x",-view.x/view.k);mini.vp.setAttribute("y",-view.y/view.k);mini.vp.setAttribute("width",VW/view.k);mini.vp.setAttribute("height",VH/view.k);
   mini.querySelectorAll("circle").forEach(c=>{const n=byId[c.dataset.id];if(n){c.setAttribute("cy",n.y);c.setAttribute("opacity",n.hidden?.15:1)}})}
 function inspectEmpty(){document.getElementById("insp").innerHTML=`<div class="empty">노드를 선택하면 카드가 여기에 열립니다.<br><br>
-<b>배치</b>는 밸류체인 순서로 고정돼 있습니다 — 왼쪽이 원자재·에너지, 오른쪽이 최종 수요. 위에는 수요를 내리는 테마, 아래는 모든 층과 닿는 금융·부동산. 갱신해도 자리가 바뀌지 않으니 눈에 익혀 두세요.<br><br>
+<b>배치</b> — 행 하나가 산업 밸류체인 하나입니다. 왼쪽에서 오른쪽으로 상류 → 중류 → 하류 → 최종 수요가 흐르고, 같은 단계는 셀 안에 나란히 놓입니다. 위에는 수요를 내리는 테마. 왼쪽 행 이름을 누르면 그 체인 전체와 다른 체인으로 뻗는 연결이 한 번에 켜집니다.<br><br>
 <b>관계</b>는 마우스를 올리면 잠깐, 클릭하면 고정으로 밝아집니다 — 한 홉 실선, 두 홉 흐림, 나머지는 물러남. 흐르는 점과 화살표는 공급 방향입니다.<br><br>
 <b>이동</b> 휠 = 확대 · <kbd>Shift</kbd>+휠 = 좌우 · 드래그 = 이동 · <kbd>0</kbd> 전체 · <kbd>1</kbd> 실제 크기 · <kbd>/</kbd> 검색 · <kbd>Esc</kbd> 해제. 오른쪽 아래 미니맵을 클릭하면 그 자리로 갑니다.<br><br>
 <span style="color:var(--dim)">표시는 딥다이브 산출의 인용이며 매매 의견이 아닙니다.</span></div>`}
@@ -353,7 +370,6 @@ function replay(){
 document.getElementById("q").addEventListener("input",applyFilters);
 document.querySelectorAll(".chip[data-tier]").forEach(b=>b.onclick=()=>{b.classList.toggle("on");const t=b.dataset.tier;b.classList.contains("on")?tiers.add(t):tiers.delete(t);applyFilters()});
 document.getElementById("flowOnly").onclick=function(){flowOnly=!flowOnly;this.classList.toggle("on",flowOnly);applyFilters()};
-document.getElementById("cross").onclick=function(){crossHidden=!crossHidden;this.classList.toggle("on",crossHidden);applyFilters()};
 document.getElementById("play").onclick=replay;
 document.getElementById("reset").onclick=()=>{expanded.clear();document.getElementById("q").value="";build();layout();render();select(null);fitView(true)};
 window.addEventListener("resize",()=>{measure();clamp()});
