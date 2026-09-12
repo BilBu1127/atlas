@@ -9,8 +9,8 @@
 --heat:#E0552F;--warm:#D89A3A;--neu:#7A8894;--cold:#4A8DB8;--fro:#566169;--theme:#C9B88A;--focus:#F2E9CF;--mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace}
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%;background:var(--bg);color:var(--bone);font-family:"Pretendard","IBM Plex Sans KR","Apple SD Gothic Neo",system-ui,sans-serif;font-size:13px;overflow:hidden}
-#app{display:grid;grid-template-rows:52px 1fr 34px;grid-template-columns:1fr 360px;height:100vh}
-header{grid-column:1/3;display:flex;align-items:center;gap:12px;padding:0 16px;border-bottom:1px solid var(--line);background:var(--bg2)}
+#app{display:grid;grid-template-rows:52px 1fr 34px;grid-template-columns:minmax(0,1fr);height:100vh;width:100vw}
+header{display:flex;align-items:center;gap:12px;min-width:0;overflow:visible;padding:0 16px;border-bottom:1px solid var(--line);background:var(--bg2);position:relative;z-index:6}
 header h1{font-family:var(--mono);font-size:14px;font-weight:600;letter-spacing:.04em;white-space:nowrap}
 header h1 span{color:var(--mute);font-weight:400;margin-left:8px;font-size:12px}
 header .tabs{display:flex;gap:2px;margin-left:6px}
@@ -18,9 +18,15 @@ header .tabs a{color:var(--mute);text-decoration:none;font-size:12px;padding:5px
 header .tabs a:hover{color:var(--bone);border-color:var(--line)}
 header .tabs a.cur{color:var(--bone);border-color:var(--theme);background:rgba(201,184,138,.08)}
 header .tools{display:flex;align-items:center;gap:6px;margin-left:auto;flex-wrap:nowrap;min-width:0}
-input[type=search]{background:#0F1215;border:1px solid var(--line);color:var(--bone);padding:6px 10px;border-radius:6px;font:inherit;width:170px;min-width:90px;flex:0 1 170px;outline:none}
+.srch{position:relative}
+input[type=search]{background:#0F1215;border:1px solid var(--line);color:var(--bone);padding:6px 10px;border-radius:6px;font:inherit;width:190px;outline:none}
 input[type=search]:focus{border-color:var(--theme);box-shadow:0 0 0 2px rgba(201,184,138,.18)}
-.chip{border:1px solid var(--line);background:transparent;color:var(--mute);padding:5px 8px;border-radius:999px;font:inherit;font-size:12px;cursor:pointer;transition:all .15s;white-space:nowrap}
+#sres{position:absolute;top:36px;left:0;width:340px;max-height:360px;overflow:auto;background:#0F1215;border:1px solid var(--line);border-radius:8px;display:none;z-index:9;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+#sres div{padding:7px 10px;cursor:pointer;display:flex;gap:8px;align-items:center;font-size:12.5px}
+#sres div:hover,#sres div.act{background:#1B2026}
+#sres i{width:8px;height:8px;border-radius:50%;flex:none}
+#sres small{color:var(--mute);margin-left:auto;font-family:var(--mono);font-size:10.5px}
+.chip{border:1px solid var(--line);background:transparent;color:var(--mute);padding:4px 8px;border-radius:999px;font:inherit;font-size:11.5px;cursor:pointer;transition:all .15s;white-space:nowrap}
 .chip:hover{border-color:var(--mute);color:var(--bone)}
 .chip.on{color:var(--bone);border-color:var(--bone)}
 .chip.t-HEAT.on{border-color:var(--heat);color:var(--heat)}.chip.t-WARM.on{border-color:var(--warm);color:var(--warm)}
@@ -31,81 +37,122 @@ input[type=search]:focus{border-color:var(--theme);box-shadow:0 0 0 2px rgba(201
 svg#svg{width:100%;height:100%;display:block;cursor:grab;touch-action:none}
 svg#svg.dragging{cursor:grabbing}
 .lane-band{fill:#FFFFFF;fill-opacity:.018;pointer-events:none}
-.lane-label{font-family:var(--mono);font-size:12px;fill:var(--mute);letter-spacing:.08em;pointer-events:none}
-.lane-sub{font-family:var(--mono);font-size:10px;fill:var(--dim);letter-spacing:.04em;pointer-events:none}
-.edge{fill:none;stroke:var(--dim);stroke-opacity:.30;stroke-width:1.1;transition:stroke-opacity .2s,stroke-width .2s}
-.edge.far{stroke-opacity:.12}
-.edge.dash{stroke-dasharray:3 5;stroke-opacity:.13}
-.edge.k-THEME_DRIVES{stroke:var(--theme);stroke-opacity:.16}
+.edge{fill:none;stroke:var(--dim);stroke-opacity:.34;stroke-width:1.2;transition:stroke-opacity .18s,stroke-width .18s}
+.edge.x{stroke-opacity:.07}
+#root.showx .edge.x{stroke-opacity:.22}
+.edge.dash{stroke-dasharray:3 5}
+.edge.k-THEME_DRIVES{stroke:var(--theme);stroke-opacity:.18}
 .edge.k-OPERATES_IN{stroke:var(--dim);stroke-opacity:.5}
-.edge.lit1{stroke-opacity:.96;stroke-width:2.1}
-.edge.lit2{stroke-opacity:.55;stroke-width:1.4}
-.edge.off{stroke-opacity:.04}
-.edge.k-SUPPLIES_TO.lit1,.edge.k-SUPPLIES_TO.lit2{stroke:var(--focus)}
-.edge.k-THEME_DRIVES.lit1,.edge.k-THEME_DRIVES.lit2{stroke:var(--theme)}
-.edge.k-DEMAND_COMOVES.lit1,.edge.k-DEMAND_COMOVES.lit2{stroke:#9FB4C7}
-.edge.k-CAPACITY_COMPETES.lit1,.edge.k-CAPACITY_COMPETES.lit2{stroke:#D4B36A}
-.edge.k-SUBSTITUTES.lit1,.edge.k-SUBSTITUTES.lit2{stroke:#B48ED8}
-.edge.k-INVERSE.lit1,.edge.k-INVERSE.lit2{stroke:var(--heat)}
-.edge.k-SUPPLIES_TO.lit1{marker-end:url(#arrow)}
+.edge.lit1{stroke-opacity:.96!important;stroke-width:2.2}
+.edge.lit2{stroke-opacity:.5!important;stroke-width:1.4}
+.edge.off{stroke-opacity:.035!important}
+.edge.hl{stroke-opacity:.9!important;stroke-width:2}
+.edge.k-SUPPLIES_TO.lit1,.edge.k-SUPPLIES_TO.lit2,.edge.k-SUPPLIES_TO.hl{stroke:var(--focus)}
+.edge.k-THEME_DRIVES.lit1,.edge.k-THEME_DRIVES.lit2,.edge.k-THEME_DRIVES.hl{stroke:var(--theme)}
+.edge.k-DEMAND_COMOVES.lit1,.edge.k-DEMAND_COMOVES.lit2,.edge.k-DEMAND_COMOVES.hl{stroke:#9FB4C7}
+.edge.k-CAPACITY_COMPETES.lit1,.edge.k-CAPACITY_COMPETES.lit2,.edge.k-CAPACITY_COMPETES.hl{stroke:#D4B36A}
+.edge.k-SUBSTITUTES.lit1,.edge.k-SUBSTITUTES.lit2,.edge.k-SUBSTITUTES.hl{stroke:#B48ED8}
+.edge.k-INVERSE.lit1,.edge.k-INVERSE.lit2,.edge.k-INVERSE.hl{stroke:var(--heat)}
+.edge.k-SUPPLIES_TO.lit1,.edge.k-SUPPLIES_TO.hl{marker-end:url(#arrow)}
 .node{cursor:pointer}
-.node circle.core{transition:fill-opacity .2s,stroke-opacity .2s}
-.node circle.halo{fill:none;stroke-width:1;stroke-opacity:.22;transition:stroke-opacity .2s}
+.node circle.core{transition:fill-opacity .18s,stroke-opacity .18s}
+.node circle.halo{fill:none;stroke-width:1;stroke-opacity:.22;transition:stroke-opacity .18s}
 .node circle.glow{fill:none;stroke-width:6;stroke-opacity:0;filter:url(#blur)}
 .node.tier-HEAT circle.glow{stroke-opacity:.35}
 .node .lbl{font-size:12px;fill:var(--bone);paint-order:stroke;stroke:var(--bg);stroke-width:3.5px;stroke-linejoin:round;font-weight:500}
 .node .sub{font-family:var(--mono);font-size:9.5px;fill:var(--mute);paint-order:stroke;stroke:var(--bg);stroke-width:3px}
 .node .bal{font-size:9px;fill:var(--mute)}
+.node .chg{fill:var(--theme)}
+.node .badge rect{fill:#0F1215;stroke:var(--line)}
+.node .badge text{font-family:var(--mono);font-size:9px;fill:var(--mute)}
+.node .badge:hover rect{stroke:var(--bone)}.node .badge:hover text{fill:var(--bone)}
+.node.exp .badge rect{stroke:var(--theme)}.node.exp .badge text{fill:var(--theme)}
 .node.off circle.core{fill-opacity:.10;stroke-opacity:.12}.node.off circle.glow{stroke-opacity:0}
-.node.off .lbl{fill:var(--dim)}.node.off .sub,.node.off .bal{fill:#3E444B}
+.node.off .lbl{fill:var(--dim)}.node.off .sub,.node.off .bal{fill:#3E444B}.node.off .badge{opacity:.3}
+.node.tdim{opacity:.18}
 .node.lit2 circle.core{fill-opacity:.6}
 .node.sel circle.halo{stroke-opacity:1;stroke-width:1.8;animation:pulse 1.6s ease-in-out infinite}
-.node.hov circle.halo{stroke-opacity:.8}
+.node.hov circle.halo{stroke-opacity:.85}
 .node.hit circle.halo{stroke-opacity:.95;stroke:var(--theme);stroke-width:1.6}
-.node.theme polygon{transition:fill-opacity .2s}
+.node.theme polygon{transition:fill-opacity .18s}
 .node.theme.off polygon{fill-opacity:.10}
 .node.theme .lbl{font-size:11.5px;fill:#D9CBA4}
 .node.co .lbl{font-size:10.5px;font-weight:400}
+.node.mini .lbl,.node.mini .sub,.node.mini .bal,.node.mini .badge,.node.mini .chg{display:none}
 @keyframes pulse{0%,100%{r:var(--rr)}50%{r:calc(var(--rr) + 4px)}}
 .particle{fill:var(--focus);pointer-events:none}
 #root.z-mid .node .sub,#root.z-mid .node .bal{display:none}
-#root.z-far .node .sub,#root.z-far .node .bal,#root.z-far .node.co .lbl{display:none}
+#root.z-far .node .sub,#root.z-far .node .bal,#root.z-far .node.co .lbl,#root.z-far .node .badge{display:none}
 #root.z-far .node.tier-NEUTRAL .lbl,#root.z-far .node.tier-COLD .lbl{display:none}
-#insp{border-left:1px solid var(--line);background:var(--bg2);overflow:auto;padding:16px 18px 32px}
+/* 고정 헤더 */
+#hx{position:absolute;left:0;right:0;top:0;height:30px;pointer-events:none;z-index:2}
+#hx div{position:absolute;top:6px;transform:translateX(-50%);font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;color:var(--mute);background:rgba(20,23,26,.85);padding:2px 10px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+#hx div.arr{border:0;background:none;color:var(--dim);font-size:15px;top:5px}
+#hy{position:absolute;left:0;top:0;bottom:0;width:0;z-index:2}
+#hy div{position:absolute;left:10px;transform:translateY(-50%);font-size:12.5px;color:#B9B6AC;background:rgba(20,23,26,.9);padding:5px 10px;border-radius:8px;border:1px solid var(--line);cursor:pointer;white-space:nowrap;user-select:none;transition:border-color .15s,color .15s}
+#hy div:hover{border-color:var(--bone);color:var(--bone)}
+#hy div.on{border-color:var(--theme);color:var(--theme);background:rgba(201,184,138,.1)}
+#hy div small{display:block;font-family:var(--mono);font-size:9.5px;color:var(--dim);letter-spacing:.06em}
+#hy div.mini{font-size:11px;padding:3px 8px;color:var(--mute);border-color:transparent;background:rgba(20,23,26,.75)}
+#hy div.mini small{display:none}
+/* 인스펙터 서랍 */
+#insp{position:absolute;top:0;right:0;bottom:0;width:390px;background:rgba(27,31,35,.97);border-left:1px solid var(--line);overflow:auto;padding:16px 18px 32px;transform:translateX(100%);transition:transform .22s ease;z-index:5;backdrop-filter:blur(6px)}
+#insp.open{transform:none}
+#insp .top{display:flex;align-items:flex-start;gap:8px}
+#insp .x{margin-left:auto;background:none;border:1px solid var(--line);color:var(--mute);width:26px;height:26px;border-radius:6px;cursor:pointer;font-size:14px;flex:none}
+#insp .x:hover{color:var(--bone);border-color:var(--bone)}
 #insp h2{font-size:15px;font-weight:600;margin-bottom:2px}
-#insp .meta{font-family:var(--mono);font-size:11px;color:var(--mute);margin-bottom:12px}
+#insp .meta{font-family:var(--mono);font-size:11px;color:var(--mute);margin-bottom:10px}
 #insp .tier{display:inline-block;padding:2px 8px;border-radius:999px;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;margin-right:6px;border:1px solid}
-#insp h3{font-size:11.5px;color:var(--mute);margin:16px 0 6px;font-weight:500}
-#insp p{line-height:1.55;color:#CFCFC8;font-size:12.5px}
+#insp .btns{display:flex;gap:6px;margin:10px 0 4px}
+#insp .btns button{background:none;border:1px solid var(--line);color:var(--mute);padding:4px 9px;border-radius:6px;font:inherit;font-size:11.5px;cursor:pointer}
+#insp .btns button:hover{color:var(--bone);border-color:var(--bone)}
+#insp .chg{margin:12px 0 4px;padding:10px 12px;border:1px solid rgba(201,184,138,.35);border-left:3px solid var(--theme);border-radius:6px;background:rgba(201,184,138,.06);font-size:12.5px;line-height:1.5}
+#insp .chg b{color:var(--theme);font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;display:block;margin-bottom:3px}
+#insp details{border-top:1px solid var(--line);padding:6px 0}
+#insp summary{cursor:pointer;font-size:11.5px;color:var(--mute);padding:4px 0;list-style:none;display:flex;align-items:center;gap:6px}
+#insp summary::before{content:"▸";font-size:10px;color:var(--dim)}#insp details[open] summary::before{content:"▾"}
+#insp p{line-height:1.55;color:#CFCFC8;font-size:12.5px;margin:4px 0 8px}
 #insp .row{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px solid var(--line);font-size:12px}
 #insp .row b{font-weight:500;color:var(--bone)}
 #insp .row span{color:var(--mute);text-align:right;flex:1}
 #insp .lk{color:var(--bone);cursor:pointer;text-decoration:underline dotted var(--dim);text-underline-offset:3px}
 #insp .lk:hover{color:var(--theme)}
-#insp .co{display:flex;align-items:center;gap:8px;padding:4px 0;font-size:12px}
+#insp .co{display:flex;align-items:center;gap:8px;padding:4px 0;font-size:12px;cursor:pointer}
+#insp .co:hover b{color:var(--theme)}
 #insp .co .dot{width:8px;height:8px;border-radius:50%;background:var(--dim);flex:none}
 #insp .co .dot.dd{background:var(--bone)}
 #insp .co .cp{color:var(--mute);font-size:11px;margin-left:auto;text-align:right}
-#insp .empty{color:var(--mute);line-height:1.65;font-size:12.5px;margin-top:8px}
-#insp .empty b{color:var(--bone);font-weight:500}
 #insp kbd{font-family:var(--mono);font-size:10.5px;border:1px solid var(--line);border-radius:4px;padding:1px 5px;color:var(--bone)}
-footer{grid-column:1/3;display:flex;align-items:center;gap:16px;padding:0 16px;border-top:1px solid var(--line);color:var(--mute);font-size:11.5px;font-family:var(--mono)}
+footer{display:flex;align-items:center;gap:16px;min-width:0;overflow:hidden;padding:0 16px;border-top:1px solid var(--line);color:var(--mute);font-size:11.5px;font-family:var(--mono)}
 footer .lg{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
 footer .lg i{display:inline-block;width:9px;height:9px;border-radius:50%}
-#hint{color:var(--dim);flex:1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
-#load{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;color:var(--mute);background:var(--bg);z-index:5}
+#hint{color:var(--dim);flex:1 1 0;min-width:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+#load{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;color:var(--mute);background:var(--bg);z-index:8}
 #tip{position:absolute;pointer-events:none;background:#0F1215;border:1px solid var(--line);color:var(--bone);padding:7px 10px;border-radius:6px;font-size:11.5px;max-width:320px;line-height:1.45;opacity:0;transition:opacity .12s;z-index:4;box-shadow:0 6px 20px rgba(0,0,0,.45)}
 #tip b{font-weight:600}#tip .m{color:var(--mute);font-family:var(--mono);font-size:10.5px}
-#mini{position:absolute;right:14px;bottom:14px;width:220px;height:118px;background:rgba(15,18,21,.92);border:1px solid var(--line);border-radius:8px;overflow:hidden;cursor:pointer;z-index:3}
+#mini{position:absolute;right:14px;bottom:14px;width:220px;height:118px;background:rgba(15,18,21,.92);border:1px solid var(--line);border-radius:8px;overflow:hidden;cursor:pointer;z-index:3;transition:right .22s}
+#stage.iopen #mini{right:404px}
 #mini svg{width:100%;height:100%;display:block}
 #mini .vp{fill:rgba(201,184,138,.12);stroke:var(--theme);stroke-width:1.5;vector-effect:non-scaling-stroke}
 #zoomctl{position:absolute;left:14px;bottom:14px;display:flex;gap:4px;z-index:3}
-#zoomctl button{background:rgba(15,18,21,.92);border:1px solid var(--line);color:var(--mute);width:30px;height:30px;border-radius:6px;font-family:var(--mono);font-size:13px;cursor:pointer}
-#zoomctl button:hover{color:var(--bone);border-color:var(--mute)}
+#zoomctl button,#help{background:rgba(15,18,21,.92);border:1px solid var(--line);color:var(--mute);width:30px;height:30px;border-radius:6px;font-family:var(--mono);font-size:13px;cursor:pointer}
+#zoomctl button:hover,#help:hover{color:var(--bone);border-color:var(--mute)}
 #zoomctl .wide{width:auto;padding:0 10px;font-size:11.5px}
-@media (max-width:1300px){header .tabs a{padding:5px 6px}header .tools input{width:120px}}
-@media (max-width:900px){#app{grid-template-columns:1fr}#insp{display:none}header .tools input{width:130px}#mini{display:none}}
-@media (prefers-reduced-motion:reduce){.node.sel circle.halo{animation:none}.edge,.node circle{transition:none}}
+#replay{position:absolute;left:50%;top:14px;transform:translateX(-50%);display:none;align-items:center;gap:8px;background:rgba(15,18,21,.95);border:1px solid var(--theme);border-radius:10px;padding:8px 12px;z-index:4;max-width:min(760px,80%)}
+#replay.on{display:flex}
+#replay button{background:none;border:1px solid var(--line);color:var(--bone);width:28px;height:28px;border-radius:6px;cursor:pointer;font-size:12px;flex:none}
+#replay button:hover{border-color:var(--bone)}
+#replay .cap{font-size:12px;line-height:1.45;color:#CFCFC8;min-width:0}
+#replay .cap b{color:var(--theme);font-family:var(--mono);font-size:10.5px;display:block;margin-bottom:2px}
+#helpov{position:absolute;inset:0;background:rgba(20,23,26,.88);display:none;align-items:center;justify-content:center;z-index:7}
+#helpov.on{display:flex}
+#helpov .box{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:22px 26px;width:min(620px,92%);line-height:1.7;font-size:13px}
+#helpov h3{font-size:14px;margin-bottom:8px}#helpov table{width:100%;border-collapse:collapse;margin:8px 0}#helpov td{padding:4px 6px;border-bottom:1px solid var(--line);vertical-align:top}#helpov td:first-child{font-family:var(--mono);color:var(--theme);white-space:nowrap;width:150px}
+@media (max-width:1500px){header h1 span{display:none}}
+@media (max-width:1300px){header .tabs a{padding:5px 6px}header .tools input{width:140px}}
+@media (max-width:900px){#insp{width:100%}#mini{display:none}header .tools input{width:120px}#hy div{font-size:11px;padding:3px 7px}}
+@media (prefers-reduced-motion:reduce){.node.sel circle.halo{animation:none}.edge,.node circle,#insp{transition:none}}
 </style>
 </head>
 <body>
@@ -116,15 +163,15 @@ footer .lg i{display:inline-block;width:9px;height:9px;border-radius:50%}
     <a href="./ATLAS_CONSOLE.html">콘솔</a><a href="./ATLAS_GRAPH.html">관계망</a><a class="cur" href="./ATLAS_FLOW.html" aria-current="page">흐름</a><a href="./ATLAS_MAP.html">히트맵</a><a href="./ATLAS_GUIDE.html">가이드</a>
   </nav>
   <div class="tools">
-    <input id="q" type="search" placeholder="산업·기업·테마 검색  /" aria-label="검색">
+    <div class="srch"><input id="q" type="search" placeholder="산업·티커·테마 검색  /" aria-label="검색" autocomplete="off"><div id="sres" role="listbox"></div></div>
     <button class="chip t-HEAT on" data-tier="HEAT">HEAT</button>
     <button class="chip t-WARM on" data-tier="WARM">WARM</button>
     <button class="chip t-NEUTRAL on" data-tier="NEUTRAL">NEUTRAL</button>
     <button class="chip t-COLD on" data-tier="COLD">COLD</button>
     <span class="sep"></span>
-    <button class="chip" id="flowOnly" title="공급 흐름만 표시">흐름만</button>
-        <button class="chip" id="play">전파 재생</button>
-    <button class="chip" id="reset">초기화</button>
+    <button class="chip" id="xtoggle" title="체인을 가로지르는 관계를 항상 표시">교차 연결</button>
+    <button class="chip" id="play">전파 재생</button>
+    <button class="chip" id="reset" title="초기화">↺</button>
   </div>
 </header>
 <div id="stage">
@@ -136,19 +183,37 @@ footer .lg i{display:inline-block;width:9px;height:9px;border-radius:50%}
     </defs>
     <g id="root"></g>
   </svg>
+  <div id="hx"></div><div id="hy"></div>
   <div id="tip"></div>
-  <div id="zoomctl"><button id="zin" title="확대 (+)">+</button><button id="zout" title="축소 (−)">−</button><button id="fit" class="wide" title="전체 보기 (0)">전체</button><button id="one" class="wide" title="실제 크기 (1)">1:1</button></div>
+  <div id="replay"><button id="rprev" title="이전">‹</button><button id="rpp" title="재생/일시정지">❚❚</button><button id="rnext" title="다음">›</button><div class="cap"><b id="rstep"></b><span id="rtext"></span></div><button id="rstop" title="닫기">×</button></div>
+  <div id="zoomctl"><button id="zin" title="확대 (+)">+</button><button id="zout" title="축소 (−)">−</button><button id="fit" class="wide" title="전체 보기 (0)">전체</button><button id="one" class="wide" title="실제 크기 (1)">1:1</button><button id="help" title="도움말 (?)">?</button></div>
   <div id="mini" title="클릭해서 이동"><svg id="minisvg"></svg></div>
+  <aside id="insp" aria-live="polite"></aside>
+  <div id="helpov"><div class="box"><h3>ATLAS FLOW 사용법</h3>
+    행 하나가 산업 밸류체인 하나입니다. 왼쪽에서 오른쪽으로 상류 → 중류 → 하류 → 최종 수요가 흐르고, 같은 단계는 셀 안에 나란히 놓입니다. 위의 다이아몬드는 수요를 내리는 테마입니다.
+    <table>
+    <tr><td>마우스 올림</td><td>그 노드의 관계선만 밝아집니다 (나머지는 그대로)</td></tr>
+    <tr><td>클릭</td><td>관계 고정 조명 + 오른쪽 카드. 한 홉 실선, 두 홉 흐림, 나머지 물러남</td></tr>
+    <tr><td>체인 이름 클릭</td><td>그 행만 펼치고 나머지 행은 접힙니다. 다시 누르면 복귀</td></tr>
+    <tr><td>+N 배지</td><td>기업 펼침 (딥다이브 완료 종목은 진하게)</td></tr>
+    <tr><td>휠 / Shift+휠</td><td>확대·축소 / 좌우 이동. 드래그 = 이동. 트랙패드 두 손가락 가능</td></tr>
+    <tr><td>0 · 1 · + · −</td><td>전체 보기 · 실제 크기 · 확대 · 축소</td></tr>
+    <tr><td>/ · Esc</td><td>검색 · 선택 해제/닫기</td></tr>
+    <tr><td>교차 연결</td><td>체인을 가로지르는 관계선을 항상 표시 (기본은 선택할 때만)</td></tr>
+    <tr><td>전파 재생</td><td>이번 갱신의 전파 체인을 한 단계씩 (재생·이전·다음)</td></tr>
+    </table>
+    노드 왼쪽 위 금색 점 = 이번 갱신에서 티어가 바뀐 산업(채움) 또는 판정 근거가 갱신된 산업(테두리). 표시는 딥다이브 산출의 인용이며 매매 의견이 아닙니다.
+    <div style="margin-top:12px;text-align:right"><button class="chip" id="helpclose">닫기</button></div>
+  </div></div>
 </div>
-<aside id="insp"></aside>
 <footer>
-  <span id="hint">클릭 = 관계 조명 · 더블클릭 = 기업 펼침 · 휠 = 확대 · Shift+휠 = 좌우 이동 · 드래그 = 이동 · Esc = 해제</span>
+  <span id="hint">호버 = 관계 미리보기 · 클릭 = 고정 · 체인 이름 = 포커스 · +N = 기업 · 휠 = 확대 · Shift+휠 = 좌우 · ? = 도움말</span>
   <span class="lg"><i style="background:var(--heat)"></i>HEAT</span>
   <span class="lg"><i style="background:var(--warm)"></i>WARM</span>
   <span class="lg"><i style="background:var(--neu)"></i>NEUTRAL</span>
   <span class="lg"><i style="background:var(--cold)"></i>COLD</span>
   <span class="lg"><i style="background:var(--theme);border-radius:1px;transform:rotate(45deg)"></i>테마</span>
-  <span class="lg" style="color:var(--dim)">▲부족 ●균형 ▼과잉</span>
+  <span class="lg" style="color:var(--dim)">▲부족 ●균형 ▼과잉 · ● 이번 갱신 티어 변경 · ○ 판정 갱신</span>
   <span id="asof" style="white-space:nowrap"></span>
 </footer>
 </div>
@@ -164,15 +229,14 @@ const CHAINS=[
  {id:"HLT",  name:"헬스케어",       cells:[["HLT-04"],["HLT-02","HLT-01"],["HLT-03"],["HLT-05"]]},
  {id:"FIN",  name:"금융·부동산",    cells:[["FIN-01"],["FIN-02","FIN-03"],["ITC-08"],["RLE-01"]]},
 ];
-let crossHidden=false;
 const TC={HEAT:"#E0552F",WARM:"#D89A3A",NEUTRAL:"#7A8894",COLD:"#4A8DB8",FROZEN:"#566169"};
 const BAL={SHORTAGE:"▲",BALANCED:"●",GLUT:"▼"};
 const RED=matchMedia("(prefers-reduced-motion: reduce)").matches;
-const COLW=400, LEFT=210, RIGHT=100, ROWH=54, ROWPAD=16, TOP=150, THEME_Y=48, CELLGAP=95;
+const COLW=400, LEFT=230, RIGHT=90, ROWH=54, ROWPAD=16, MINIH=44, TOP=160, THEME_Y=66, CELLGAP=95, COH=17;
 
-let D=null,N=[],E=[],byId={},sel=null,hov=null,expanded=new Set(),flowOnly=false,tiers=new Set(Object.keys(TC));
-let VW=0,VH=0,WW=0,WH=0,view={x:0,y:0,k:1},dragN=null,panning=null,playing=false,tween=null;
-const svg=document.getElementById("svg"),root=document.getElementById("root"),tip=document.getElementById("tip"),stage=document.getElementById("stage");
+let D=null,N=[],E=[],byId={},sel=null,hov=null,expanded=new Set(),showX=false,tiers=new Set(Object.keys(TC)),focusRow=null,todayKey="";
+let VW=0,VH=0,WW=0,WH=0,view={x:0,y:0,k:1},dragN=null,panning=null,tween=null,ptrs=new Map(),pinch=null;
+const svg=document.getElementById("svg"),root=document.getElementById("root"),tip=document.getElementById("tip"),stage=document.getElementById("stage"),insp=document.getElementById("insp");
 const NS="http://www.w3.org/2000/svg",el=(t,a={})=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);return e};
 const esc=s=>String(s??"").replace(/[<>&]/g,c=>({"<":"&lt;",">":"&gt;","&":"&amp;"}[c]));
 const txt=v=>v==null?"":typeof v==="string"?v:Array.isArray(v)?v.map(txt).join(" · "):Object.values(v).map(txt).join(" ");
@@ -186,61 +250,78 @@ function init(){
   document.getElementById("load").remove();
   document.getElementById("ver").textContent=(D.meta.version||"").replace("ATLAS_PACK_","")+" · 밸류체인 흐름도";
   document.getElementById("asof").textContent=D.meta.as_of||"";
-  build();layout();render();fitView(false);inspectEmpty();tick();
+  todayKey=String(D.meta.as_of||"").slice(0,10);
+  build();layout();render();fitView(false);tick();
+  const h=decodeURIComponent(location.hash.slice(1));if(h&&byId[h])setTimeout(()=>select(byId[h],true),200);
 }
+// ───────── 데이터 ─────────
 function build(){
   N=[];E=[];byId={};
   const pos={};CHAINS.forEach((C,ri)=>C.cells.forEach((cell,ci)=>cell.forEach((id,k)=>pos[id]={row:ri,col:ci,k})));
-  D.industries.forEach(i=>{const p=pos[i.id]||{row:CHAINS.length-1,col:3,k:9};const n={id:i.id,kind:"ind",name:i.name,tier:i.tier,row:p.row,col:p.col,k:p.k,lane:p.row,ref:i,r:i.tier==="HEAT"?14:i.tier==="WARM"?11.5:9.5,x:0,y:0};N.push(n);byId[n.id]=n});
-  (D.themes||[]).forEach(t=>{const n={id:t.id,kind:"theme",name:t.name,lane:"T",ref:t,r:10,x:0,y:0};N.push(n);byId[n.id]=n});
+  const dd=new Set((D.company_nodes||[]).filter(c=>c.verification==="DEEP_DIVED").map(c=>c.ticker));
+  D.industries.forEach(i=>{const p=pos[i.id]||{row:CHAINS.length-1,col:3,k:9};const hist=i.tier_history||[];const last=hist[hist.length-1],prev=hist[hist.length-2];
+    const changed=!!(last&&String(last.as_of||"").slice(0,10)===todayKey);
+    const n={id:i.id,kind:"ind",name:i.name,tier:i.tier,row:p.row,col:p.col,k:p.k,ref:i,r:i.tier==="HEAT"?14:i.tier==="WARM"?11.5:9.5,x:0,y:0,
+      changed,chg:changed?{from:prev&&prev.tier,to:last.tier,reason:last.reason||""}:null,cos:(i.companies||[]).filter(c=>typeof c==="object").map(c=>({...c,dd:dd.has(c.ticker)}))};
+    N.push(n);byId[n.id]=n});
+  (D.themes||[]).forEach(t=>{const n={id:t.id,kind:"theme",name:t.name,ref:t,r:10,x:0,y:0};N.push(n);byId[n.id]=n});
   D.edges.forEach(e=>{if(byId[e.from]&&byId[e.to])E.push({a:byId[e.from],b:byId[e.to],type:e.type,strength:e.strength,mech:e.mechanism||""})});
   (D.themes||[]).forEach(t=>(t.linked_industries||[]).forEach(id=>{if(byId[id]&&!E.some(e=>e.a.id===t.id&&e.b.id===id))E.push({a:byId[t.id],b:byId[id],type:"THEME_DRIVES",strength:"M",mech:""})}));
-  E.forEach(e=>{e.far=(e.a.kind==="ind"&&e.b.kind==="ind"&&Math.abs(e.a.row-e.b.row)>=2)});
+  E.forEach(e=>{e.x=(e.a.kind==="ind"&&e.b.kind==="ind"&&e.a.row!==e.b.row)});
+  expanded.forEach(id=>{if(byId[id])addCos(byId[id])});
 }
+function addCos(n){n.cos.forEach((c,i)=>{const m={id:n.id+"::"+c.ticker,kind:"co",name:c.ticker,cp:c.chain_position||"",role:c.role,dd:c.dd,parent:n,row:n.row,r:c.role==="REGIME_LEADER"?5.5:4,x:0,y:0,ref:c};N.push(m);byId[m.id]=m;E.push({a:n,b:m,type:"OPERATES_IN",strength:"L",mech:c.note||""})})}
 const colX=c=>LEFT+COLW*(c+.5);
 let ROWS=[];
+function cellRows(cell){return cell.length>2?Math.ceil(cell.length/2):cell.length}
 function layout(){
-  WW=LEFT+COLW*STAGES.length+RIGHT;
-  let y=TOP;ROWS=[];
-  CHAINS.forEach((C,ri)=>{const n=Math.max(1,...C.cells.map(c=>c.length>2?Math.ceil(c.length/2):c.length));const h=ROWH*n+ROWPAD*2;ROWS.push({y0:y,y1:y+h,cy:y+h/2,n});y+=h});
-  WH=y+40;
+  WW=LEFT+COLW*STAGES.length+RIGHT;let y=TOP;ROWS=[];
+  CHAINS.forEach((C,ri)=>{const mini=focusRow!=null&&focusRow!==ri;let h;
+    if(mini)h=MINIH;else{const n=Math.max(1,...C.cells.map(cellRows));let extra=0;C.cells.forEach((cell,ci)=>{const ex=cell.filter(id=>expanded.has(id));if(ex.length){const lines=Math.max(...ex.map(id=>Math.ceil(byId[id].cos.length/3)));extra=Math.max(extra,lines*COH+10)}});h=ROWH*n+ROWPAD*2+extra+(focusRow===ri?30:0)}
+    ROWS.push({y0:y,y1:y+h,cy:y+h/2,mini});y+=h});
+  WH=y+30;
   const th=N.filter(n=>n.kind==="theme");th.forEach((n,i)=>{n.x=LEFT+COLW*STAGES.length*(i+.5)/th.length;n.y=THEME_Y;n.stag=i%2});
-  N.filter(n=>n.kind==="ind").forEach(n=>{const R=ROWS[n.row],cnt=CHAINS[n.row].cells[n.col].length||1;if(cnt>2){const rows=Math.ceil(cnt/2),r=Math.floor(n.k/2),c=n.k%2;n.x=colX(n.col)+(c?CELLGAP:-CELLGAP);n.y=R.cy+(r-(rows-1)/2)*ROWH}else{n.x=colX(n.col);n.y=R.cy+(n.k-(cnt-1)/2)*ROWH}});
+  N.filter(n=>n.kind==="ind").forEach(n=>{const R=ROWS[n.row],cell=CHAINS[n.row].cells[n.col],cnt=cell.length||1;
+    if(R.mini){n.x=colX(n.col)+(n.k-(cnt-1)/2)*34;n.y=R.cy;return}
+    const exLines=Math.max(0,...cell.filter(id=>expanded.has(id)).map(id=>Math.ceil(byId[id].cos.length/3)));const shift=exLines?-(exLines*COH+10)/2:0;
+    if(cnt>2){const rows=Math.ceil(cnt/2),r=Math.floor(n.k/2),c=n.k%2;n.x=colX(n.col)+(c?CELLGAP:-CELLGAP);n.y=R.cy+shift+(r-(rows-1)/2)*ROWH}else{n.x=colX(n.col);n.y=R.cy+shift+(n.k-(cnt-1)/2)*ROWH}});
+  N.filter(n=>n.kind==="co").forEach(m=>{const p=m.parent,cell=CHAINS[p.row].cells[p.col];const bottom=Math.max(...cell.map(id=>byId[id].y))+34;const i=p.cos.findIndex(c=>c.ticker===m.name);
+    const exIds=cell.filter(id=>expanded.has(id)),slot=exIds.indexOf(p.id),w=COLW/Math.max(1,exIds.length);const x0=colX(p.col)-COLW/2+slot*w+18;m.x=x0+(i%3)*(w/3);m.y=bottom+Math.floor(i/3)*COH});
 }
+// ───────── 렌더 ─────────
 let gLane,gEdge,gPart,gNode,mini;
 function render(){
   root.innerHTML="";gLane=el("g");gEdge=el("g");gPart=el("g");gNode=el("g");root.append(gLane,gEdge,gPart,gNode);
-  STAGES.forEach((st,ci)=>{const x=colX(ci);
-    const t=el("text",{class:"lane-label",x,y:TOP-34,"text-anchor":"middle"});t.textContent=st;gLane.appendChild(t);
-    if(ci<STAGES.length-1){const a=el("text",{class:"lane-sub",x:x+COLW/2,y:TOP-30,"text-anchor":"middle"});a.textContent="→";a.style.fontSize="18px";gLane.appendChild(a)}});
   CHAINS.forEach((C,ri)=>{const R=ROWS[ri];
-    if(ri%2===0)gLane.appendChild(el("rect",{class:"lane-band",x:LEFT-8,y:R.y0+4,width:COLW*STAGES.length+16,height:R.y1-R.y0-8,rx:16}));
-    gLane.appendChild(el("line",{x1:LEFT,y1:R.cy,x2:LEFT+COLW*STAGES.length,y2:R.cy,stroke:"#2A2F35","stroke-dasharray":"2 8","stroke-width":1,"pointer-events":"none"}));
-    const g=el("g",{class:"rowlbl"});g.style.cursor="pointer";
-    const t=el("text",{class:"lane-label",x:LEFT-24,y:R.cy+4,"text-anchor":"end"});t.textContent=C.name;t.style.fontSize="13px";t.style.fill="#B9B6AC";t.style.pointerEvents="auto";g.appendChild(t);
-    const s2=el("text",{class:"lane-sub",x:LEFT-24,y:R.cy+20,"text-anchor":"end"});s2.textContent="체인 전체 보기";s2.style.pointerEvents="auto";g.appendChild(s2);
-    g.addEventListener("click",ev=>{ev.stopPropagation();selectChain(ri)});gLane.appendChild(g)});
+    if(ri%2===0||focusRow===ri)gLane.appendChild(el("rect",{class:"lane-band",x:LEFT-8,y:R.y0+3,width:COLW*STAGES.length+16,height:R.y1-R.y0-6,rx:16,style:focusRow===ri?"fill-opacity:.05":""}));
+    if(!R.mini)gLane.appendChild(el("line",{x1:LEFT,y1:R.cy,x2:LEFT+COLW*STAGES.length,y2:R.cy,stroke:"#2A2F35","stroke-dasharray":"2 8","stroke-width":1,"pointer-events":"none"}))});
   E.forEach(e=>{const dash=!(e.type==="SUPPLIES_TO"||e.type==="THEME_DRIVES"||e.type==="OPERATES_IN");
-    e.el=el("path",{class:"edge k-"+e.type+(dash?" dash":"")+(e.far?" far":"")});
-    e.el.addEventListener("mouseenter",ev=>showTip(ev,`<b>${esc(e.a.name)}</b> → <b>${esc(e.b.name)}</b><div class="m">${e.type} · ${e.strength||"-"}</div>${e.mech?"<div style='margin-top:4px'>"+esc(e.mech)+"</div>":""}`));
-    e.el.addEventListener("mousemove",moveTip);e.el.addEventListener("mouseleave",hideTip);gEdge.appendChild(e.el)});
-  N.forEach(n=>{const g=el("g",{class:"node "+n.kind+(n.kind==="theme"?" theme":"")+(n.tier?" tier-"+n.tier:"")});n.el=g;g.style.setProperty("--rr",(n.r+6)+"px");
+    e.el=el("path",{class:"edge k-"+e.type+(dash?" dash":"")+(e.x?" x":"")});
+    e.el.addEventListener("mouseenter",ev=>{e.el.classList.add("hl");showTip(ev,`<b>${esc(e.a.name)}</b> → <b>${esc(e.b.name)}</b><div class="m">${e.type} · ${e.strength||"-"}</div>${e.mech?"<div style='margin-top:4px'>"+esc(e.mech)+"</div>":""}`)});
+    e.el.addEventListener("mousemove",moveTip);e.el.addEventListener("mouseleave",()=>{e.el.classList.remove("hl");hideTip()});gEdge.appendChild(e.el)});
+  N.forEach(n=>{const g=el("g",{class:"node "+n.kind+(n.kind==="theme"?" theme":"")+(n.tier?" tier-"+n.tier:"")+(n.kind==="ind"&&ROWS[n.row].mini?" mini":"")+(expanded.has(n.id)?" exp":"")});n.el=g;g.style.setProperty("--rr",(n.r+6)+"px");
     if(n.kind==="theme"){g.appendChild(el("polygon",{points:"0,-12 12,0 0,12 -12,0",fill:"#C9B88A","fill-opacity":.85}))}
     else{g.appendChild(el("circle",{class:"glow",r:n.r+2,stroke:TC[n.tier]||"#EBEAE4"}));g.appendChild(el("circle",{class:"halo",r:n.r+6,stroke:n.kind==="co"?"#EBEAE4":TC[n.tier]}));
       g.appendChild(el("circle",{class:"core",r:n.r,fill:n.kind==="co"?"#3A4149":TC[n.tier],"fill-opacity":n.kind==="co"?(n.dd?.95:.55):.88,stroke:n.kind==="co"?(n.dd?"#EBEAE4":"#5C636B"):TC[n.tier],"stroke-width":n.kind==="co"?1.2:1,"stroke-opacity":.9}))}
-    const co=n.kind==="co",side=1;
-    const t=el("text",{class:"lbl",x:co?side*(n.r+5):0,y:co?4:(n.kind==="theme"?(n.stag?-18:30):n.r+15),"text-anchor":co?(side<0?"end":"start"):"middle"});t.textContent=n.name;g.appendChild(t);
+    const co=n.kind==="co";
+    const t=el("text",{class:"lbl",x:co?n.r+4:0,y:co?4:(n.kind==="theme"?(n.stag?-18:30):n.r+15),"text-anchor":co?"start":"middle"});t.textContent=n.name;g.appendChild(t);
     if(n.kind==="ind"){const s=el("text",{class:"sub",y:n.r+27,"text-anchor":"middle"});s.textContent=n.id;g.appendChild(s);
-      const b=el("text",{class:"bal",x:n.r+8,y:4,"text-anchor":"start"});b.textContent=BAL[n.ref.balance]||"";g.appendChild(b)}
-    g.addEventListener("click",ev=>{ev.stopPropagation();if(dragN&&dragN.moved)return;select(n,true)});
-    g.addEventListener("dblclick",ev=>{ev.stopPropagation();if(n.kind==="ind")toggleCo(n)});
+      const b=el("text",{class:"bal",x:n.r+8,y:4,"text-anchor":"start"});b.textContent=BAL[n.ref.balance]||"";g.appendChild(b);
+      if(n.changed){const tc=n.chg.from&&n.chg.from!==n.chg.to;g.appendChild(el("circle",{class:"chg",cx:-n.r-3,cy:-n.r-3,r:3.2,fill:tc?"#C9B88A":"none",stroke:"#C9B88A","stroke-width":1.2}))}
+      if(n.cos.length){const bg=el("g",{class:"badge"});bg.setAttribute("transform",`translate(${n.r+4},${-n.r-12})`);bg.appendChild(el("rect",{x:0,y:0,width:26,height:13,rx:6.5}));const bt=el("text",{x:13,y:9.5,"text-anchor":"middle"});bt.textContent=(expanded.has(n.id)?"−":"+")+n.cos.length;bg.appendChild(bt);
+        bg.addEventListener("click",ev=>{ev.stopPropagation();toggleCo(n)});bg.addEventListener("mouseenter",ev=>{ev.stopPropagation();showTip(ev,`<b>기업 ${n.cos.length}</b><div class="m">${expanded.has(n.id)?"접기":"펼치기"} · 딥다이브 ${n.cos.filter(c=>c.dd).length}</div>`)});g.appendChild(bg)}}
+    g.addEventListener("click",ev=>{ev.stopPropagation();if(dragN&&dragN.moved)return;select(n,false)});
     g.addEventListener("mouseenter",ev=>{hover(n);showTip(ev,nodeTip(n))});g.addEventListener("mousemove",moveTip);g.addEventListener("mouseleave",()=>{hover(null);hideTip()});
-    g.addEventListener("pointerdown",ev=>{if(ev.button!==0)return;dragN={n,sx:ev.clientX,sy:ev.clientY,moved:false};ev.stopPropagation();svg.classList.add("dragging")});
+    g.addEventListener("pointerdown",ev=>{if(ev.button!==0||ev.target.closest(".badge"))return;dragN={n,sx:ev.clientX,sy:ev.clientY,moved:false};ev.stopPropagation();svg.classList.add("dragging")});
     gNode.appendChild(g)});
-  buildMini();applyFilters();
+  buildHeads();buildMini();applyFilters();if(sel)light(sel,"sel");
+}
+function buildHeads(){
+  const hx=document.getElementById("hx");hx.innerHTML="";STAGES.forEach((s,ci)=>{const d=document.createElement("div");d.textContent=s;d.dataset.x=colX(ci);hx.appendChild(d);if(ci<STAGES.length-1){const a=document.createElement("div");a.className="arr";a.textContent="→";a.dataset.x=colX(ci)+COLW/2;hx.appendChild(a)}});
+  const hy=document.getElementById("hy");hy.innerHTML="";CHAINS.forEach((C,ri)=>{const d=document.createElement("div");d.innerHTML=`${esc(C.name)}<small>${focusRow===ri?"포커스 해제":"체인 포커스"}</small>`;d.dataset.y=ROWS[ri].cy;d.classList.toggle("on",focusRow===ri);d.classList.toggle("mini",!!ROWS[ri].mini);d.onclick=()=>focusChain(ri);hy.appendChild(d)});
 }
 function nodeTip(n){
-  if(n.kind==="ind"){const i=n.ref;return`<b>${esc(i.name)}</b> <span class="m">${i.id}</span><div class="m">${i.tier} · ${esc(i.balance||"")}${i.cycle_stage?" · "+esc(i.cycle_stage):""}</div>${i.balance_direction?"<div style='margin-top:4px'>"+esc(String(i.balance_direction).slice(0,140))+"</div>":""}`}
+  if(n.kind==="ind"){const i=n.ref;return`<b>${esc(i.name)}</b> <span class="m">${i.id}</span><div class="m">${i.tier} · ${esc(i.balance||"")}${i.cycle_stage?" · "+esc(i.cycle_stage):""}${n.changed?" · <span style='color:#C9B88A'>이번 갱신 변경</span>":""}</div>${i.balance_direction?"<div style='margin-top:4px'>"+esc(String(i.balance_direction).slice(0,140))+"</div>":""}`}
   if(n.kind==="theme")return`<b>${esc(n.name)}</b><div class="m">테마 · 연결 ${E.filter(e=>e.a===n).length}</div>`;
   const c=n.ref;return`<b>${esc(c.ticker)}</b> ${esc(c.name||"")}<div class="m">${esc(c.chain_position||"")}${c.role?" · "+c.role:""}${n.dd?" · DEEP_DIVED":""}</div>`;
 }
@@ -248,130 +329,146 @@ function showTip(ev,html){tip.innerHTML=html;tip.style.opacity=1;moveTip(ev)}
 function moveTip(ev){const r=stage.getBoundingClientRect();let x=ev.clientX-r.left+14,y=ev.clientY-r.top+14;if(x+330>r.width)x=ev.clientX-r.left-330;if(y+110>r.height)y=ev.clientY-r.top-100;tip.style.left=x+"px";tip.style.top=y+"px"}
 function hideTip(){tip.style.opacity=0}
 const path=e=>{const a=e.a,b=e.b;if(e.type==="OPERATES_IN")return`M${a.x},${a.y}L${b.x},${b.y}`;const dx=b.x-a.x,dy=b.y-a.y;if(Math.abs(dx)<40){const s=a.col>=2?1:-1;return`M${a.x},${a.y}C${a.x+s*(40+Math.abs(dy)*.25)},${a.y} ${b.x+s*(40+Math.abs(dy)*.25)},${b.y} ${b.x},${b.y}`}const c=Math.min(Math.abs(dx)*.55,240)*Math.sign(dx);return`M${a.x},${a.y}C${a.x+c},${a.y} ${b.x-c},${b.y} ${b.x},${b.y}`};
+// ───────── 프레임 ─────────
 let t0=performance.now();
 function tick(){
   if(tween){const p=Math.min(1,(performance.now()-tween.t)/tween.d),s=p<.5?2*p*p:-1+(4-2*p)*p;view.x=tween.x0+(tween.x1-tween.x0)*s;view.y=tween.y0+(tween.y1-tween.y0)*s;view.k=tween.k0+(tween.k1-tween.k0)*s;if(p>=1)tween=null}
   root.setAttribute("transform",`translate(${view.x},${view.y}) scale(${view.k})`);
   root.classList.toggle("z-mid",view.k<.72&&view.k>=.5);root.classList.toggle("z-far",view.k<.5);
-  E.forEach(e=>{const h=e.a.hidden||e.b.hidden;e.el.style.display=h?"none":"";if(!h)e.el.setAttribute("d",path(e))});
-  N.forEach(n=>{n.el.style.display=n.hidden?"none":"";n.el.setAttribute("transform",`translate(${n.x},${n.y})`)});
+  E.forEach(e=>{e.el.setAttribute("d",path(e))});
+  N.forEach(n=>{n.el.setAttribute("transform",`translate(${n.x},${n.y})`)});
+  document.querySelectorAll("#hx div").forEach(d=>{d.style.left=(view.x+d.dataset.x*view.k)+"px"});
+  document.querySelectorAll("#hy div").forEach(d=>{d.style.top=(view.y+d.dataset.y*view.k)+"px"});
   particles();updateMini();requestAnimationFrame(tick);
 }
 function particles(){
   if(RED)return;const t=(performance.now()-t0)/1000;
-  const lit=E.filter(e=>!e.a.hidden&&!e.b.hidden&&e.type==="SUPPLIES_TO"&&((sel||hov)?e.el.classList.contains("lit1"):!e.far));
+  const lit=E.filter(e=>e.type==="SUPPLIES_TO"&&(sel?e.el.classList.contains("lit1"):hov?e.el.classList.contains("hl"):!e.x));
   while(gPart.childNodes.length<lit.length*2)gPart.appendChild(el("circle",{class:"particle",r:1.7}));
   while(gPart.childNodes.length>lit.length*2)gPart.lastChild.remove();
-  lit.forEach((e,i)=>{const L=e.el.getTotalLength();for(let j=0;j<2;j++){const c=gPart.childNodes[i*2+j];const u=((t*.11+i*.37+j*.5)%1);const p=e.el.getPointAtLength(u*L);c.setAttribute("cx",p.x);c.setAttribute("cy",p.y);c.setAttribute("opacity",(sel||hov)?.95:.28)}});
+  lit.forEach((e,i)=>{const L=e.el.getTotalLength();for(let j=0;j<2;j++){const c=gPart.childNodes[i*2+j];const u=((t*.11+i*.37+j*.5)%1);const p=e.el.getPointAtLength(u*L);c.setAttribute("cx",p.x);c.setAttribute("cy",p.y);c.setAttribute("opacity",(sel||hov)?.95:.3)}});
 }
+// ───────── 조명 ─────────
 function neighbors(n){const one=new Set(),two=new Set();E.forEach(e=>{if(e.a===n)one.add(e.b);if(e.b===n)one.add(e.a)});one.forEach(m=>E.forEach(e=>{if(e.a===m&&e.b!==n&&!one.has(e.b))two.add(e.b);if(e.b===m&&e.a!==n&&!one.has(e.a))two.add(e.a)}));return{one,two}}
-function light(n,cls){
-  N.forEach(m=>m.el.classList.remove("sel","off","lit2","hov"));E.forEach(e=>e.el.classList.remove("lit1","lit2","off"));
-  if(!n)return;const{one,two}=neighbors(n);
+function clearLight(){N.forEach(m=>m.el.classList.remove("sel","off","lit2","hov"));E.forEach(e=>e.el.classList.remove("lit1","lit2","off","hl"))}
+function light(n,cls){clearLight();if(!n)return;const{one,two}=neighbors(n);
   N.forEach(m=>{if(m===n)m.el.classList.add(cls);else if(one.has(m)){}else if(two.has(m))m.el.classList.add("lit2");else m.el.classList.add("off")});
-  E.forEach(e=>{if(e.a===n||e.b===n)e.el.classList.add("lit1");else if((one.has(e.a)&&two.has(e.b))||(one.has(e.b)&&two.has(e.a))||(one.has(e.a)&&one.has(e.b)))e.el.classList.add("lit2");else e.el.classList.add("off")});
-}
-let selChain=null;
-function selectChain(ri){sel=null;selChain=ri;const set=new Set(N.filter(n=>n.kind==="ind"&&n.row===ri));
-  N.forEach(m=>m.el.classList.remove("sel","off","lit2","hov"));E.forEach(e=>e.el.classList.remove("lit1","lit2","off"));
-  N.forEach(m=>{if(set.has(m))m.el.classList.add("sel");else if(E.some(e=>(set.has(e.a)&&e.b===m)||(set.has(e.b)&&e.a===m)))m.el.classList.add("lit2");else m.el.classList.add("off")});
-  E.forEach(e=>{if(set.has(e.a)&&set.has(e.b))e.el.classList.add("lit1");else if(set.has(e.a)||set.has(e.b))e.el.classList.add("lit2");else e.el.classList.add("off")});
-  applyFilters();const C=CHAINS[ri];const I=document.getElementById("insp");
-  let h=`<h2>${esc(C.name)} 체인</h2><div class="meta">상류 → 중류 → 하류 → 최종 수요</div>`;
-  STAGES.forEach((st,ci)=>{h+=`<h3>${st}</h3>`;C.cells[ci].forEach(id=>{const n=byId[id];if(!n)return;const col=TC[n.tier];h+=`<div class="row"><b><span class="lk" data-id="${id}">${esc(n.name)}</span></b><span style="color:${col}">${n.tier} <span style="color:var(--mute)">${BAL[n.ref.balance]||""}</span></span></div>`})});
-  const out=E.filter(e=>e.type!=="OPERATES_IN"&&e.a.kind==="ind"&&e.b.kind==="ind"&&(set.has(e.a)!==set.has(e.b)));
-  h+=`<h3>다른 체인과의 연결 (${out.length})</h3>`;out.slice(0,40).forEach(e=>{const inn=set.has(e.a)?e.a:e.b,o=set.has(e.a)?e.b:e.a,dir=set.has(e.a)?"→":"←";h+=`<div class="row"><b>${esc(inn.name)} <small style="color:var(--mute)">${dir} ${e.type}</small></b><span><span class="lk" data-id="${o.id}">${esc(o.name)}</span> <small>· ${esc(CHAINS[o.row].name)}</small></span></div>`});
-  const ths=E.filter(e=>e.type==="THEME_DRIVES"&&set.has(e.b)).map(e=>e.a);const uniq=[...new Set(ths)];
-  h+=`<h3>타고 있는 테마 (${uniq.length})</h3>`;uniq.forEach(t=>h+=`<div class="row"><b><span class="lk" data-id="${t.id}">${esc(t.name)}</span></b><span>${ths.filter(x=>x===t).length}개 산업</span></div>`);
-  I.innerHTML=h;I.scrollTop=0;I.querySelectorAll(".lk").forEach(a=>a.onclick=()=>{const m=byId[a.dataset.id];if(m)select(m,true)});
-  const R=ROWS[ri];const k=Math.max(Math.min(view.k,(VW-40)/WW),.55);const c=cl((VW-WW*k)/2,VH/2-R.cy*k,k);tween={t:performance.now(),d:RED?0:420,x0:view.x,y0:view.y,k0:view.k,x1:c.x,y1:c.y,k1:k};
-}
-function hover(n){hov=n;if(sel||selChain!=null)return;light(n,"hov");applyFilters()}
-function select(n,center){selChain=null;sel=n;light(n,"sel");applyFilters();if(!n){inspectEmpty();return}inspect(n);if(center)centerOn(n)}
-function cl(x,y,k){const w=WW*k,h=WH*k;return{x:w<VW?(VW-w)/2:Math.max(VW-w-40,Math.min(40,x)),y:h<VH?(VH-h)/2:Math.max(VH-h-40,Math.min(40,y))}}
-function centerOn(n){const k=Math.max(view.k,.9);const c=cl(VW/2-n.x*k,VH/2-n.y*k,k);tween={t:performance.now(),d:RED?0:420,x0:view.x,y0:view.y,k0:view.k,x1:c.x,y1:c.y,k1:k}}
-function toggleCo(n){
-  if(expanded.has(n.id)){expanded.delete(n.id);N=N.filter(m=>!(m.kind==="co"&&m.parent===n));E=E.filter(e=>!(e.type==="OPERATES_IN"&&(e.a===n||e.b===n)));render();if(sel)light(sel,"sel");return}
-  expanded.add(n.id);const cos=(n.ref.companies||[]).filter(c=>typeof c==="object");
-  const dd=new Set((D.company_nodes||[]).filter(c=>c.verification==="DEEP_DIVED").map(c=>c.ticker));
-  const perCol=Math.ceil(cos.length/2);
-  cos.forEach((c,i)=>{const cc=Math.floor(i/perCol),k=i%perCol;const x=n.x+56+cc*62,y=n.y-12+k*17;
-    const m={id:n.id+"::"+c.ticker,kind:"co",name:c.ticker,cp:c.chain_position||"",role:c.role,dd:dd.has(c.ticker),parent:n,lane:n.lane,r:c.role==="REGIME_LEADER"?5.5:4,x,y,ref:c};N.push(m);byId[m.id]=m;E.push({a:n,b:m,type:"OPERATES_IN",strength:"L",mech:c.note||""})});
-  render();select(n,false);
-}
-function applyFilters(){
-  const q=document.getElementById("q").value.trim().toLowerCase();
-  N.forEach(n=>{let h=false;if(n.kind==="ind"&&!tiers.has(n.tier))h=true;if(n.kind==="co"&&n.parent.hidden)h=true;n.hidden=h;
-    n.el.classList.toggle("hit",!!q&&(n.name.toLowerCase().includes(q)||n.id.toLowerCase().includes(q)))});
-  E.forEach(e=>{const dash=!(e.type==="SUPPLIES_TO"||e.type==="THEME_DRIVES"||e.type==="OPERATES_IN");e.el.style.visibility=(dash&&flowOnly&&!sel&&!hov)?"hidden":"visible"});
-}
+  E.forEach(e=>{if(e.a===n||e.b===n)e.el.classList.add("lit1");else if((one.has(e.a)&&two.has(e.b))||(one.has(e.b)&&two.has(e.a))||(one.has(e.a)&&one.has(e.b)))e.el.classList.add("lit2");else e.el.classList.add("off")})}
+function hover(n){hov=n;if(sel){return}E.forEach(e=>e.el.classList.remove("hl"));N.forEach(m=>m.el.classList.remove("hov"));if(!n)return;n.el.classList.add("hov");E.forEach(e=>{if(e.a===n||e.b===n)e.el.classList.add("hl")})}
+function inView(n){const sx=view.x+n.x*view.k,sy=view.y+n.y*view.k;const m=60,right=VW-(insp.classList.contains("open")?390:0);return sx>m&&sx<right-m&&sy>m&&sy<VH-m}
+function select(n,force){sel=n;light(n,"sel");if(!n){closeInsp();history.replaceState(null,"","#");return}inspect(n);openInsp();history.replaceState(null,"","#"+encodeURIComponent(n.id));if(force||!inView(n))centerOn(n)}
+function cl(x,y,k){const w=WW*k,h=WH*k;const right=insp.classList.contains("open")?390:0;const vw=VW-right;return{x:w<vw?(vw-w)/2:Math.max(vw-w-40,Math.min(40,x)),y:h<VH?(VH-h)/2:Math.max(VH-h-40,Math.min(40,y))}}
+function centerOn(n){const k=Math.max(view.k,.85);const right=insp.classList.contains("open")?390:0;const c=cl((VW-right)/2-n.x*k,VH/2-n.y*k,k);tween={t:performance.now(),d:RED?0:420,x0:view.x,y0:view.y,k0:view.k,x1:c.x,y1:c.y,k1:k}}
+function openInsp(){insp.classList.add("open");stage.classList.add("iopen")}
+function closeInsp(){insp.classList.remove("open");stage.classList.remove("iopen")}
+function toggleCo(n){if(expanded.has(n.id))expanded.delete(n.id);else expanded.add(n.id);rebuild();if(sel)inspect(sel)}
+function rebuild(){const keep=sel&&sel.id;build();layout();render();if(keep&&byId[keep]){sel=byId[keep];light(sel,"sel")}}
+function focusChain(ri){focusRow=(focusRow===ri)?null:ri;rebuild();
+  if(focusRow!=null){const set=new Set(N.filter(n=>n.kind==="ind"&&n.row===ri));sel=null;clearLight();
+    N.forEach(m=>{if(set.has(m))m.el.classList.add("sel");else if(E.some(e=>(set.has(e.a)&&e.b===m)||(set.has(e.b)&&e.a===m)))m.el.classList.add("lit2");else m.el.classList.add("off")});
+    E.forEach(e=>{if(set.has(e.a)&&set.has(e.b))e.el.classList.add("lit1");else if(set.has(e.a)||set.has(e.b))e.el.classList.add("lit2");else e.el.classList.add("off")});
+    inspectChain(ri,set);openInsp();const R=ROWS[ri];const right=390;const k=Math.max(Math.min(view.k,(VW-right-40)/WW),.6);const c=cl((VW-right-WW*k)/2,VH/2-R.cy*k,k);tween={t:performance.now(),d:RED?0:420,x0:view.x,y0:view.y,k0:view.k,x1:c.x,y1:c.y,k1:k}}
+  else{clearLight();closeInsp();fitView(true)}}
+function applyFilters(){N.forEach(n=>{n.el.classList.toggle("tdim",n.kind==="ind"&&!tiers.has(n.tier))});root.classList.toggle("showx",showX)}
+// ───────── 검색 ─────────
+const sres=document.getElementById("sres");let sidx=0,sitems=[];
+function search(q){q=q.trim().toLowerCase();sres.innerHTML="";sitems=[];if(!q){sres.style.display="none";return}
+  N.filter(n=>n.kind!=="co").forEach(n=>{if(n.name.toLowerCase().includes(q)||n.id.toLowerCase().includes(q))sitems.push({t:n.kind==="theme"?"테마":"산업",n,label:n.name,sub:n.id,col:n.kind==="theme"?"#C9B88A":TC[n.tier]})});
+  N.filter(n=>n.kind==="ind").forEach(n=>n.cos.forEach(c=>{if(c.ticker.toLowerCase().includes(q)||(c.name||"").toLowerCase().includes(q))sitems.push({t:"기업",n,co:c,label:c.ticker+" "+(c.name||""),sub:n.name,col:c.dd?"#EBEAE4":"#5C636B"})}));
+  sitems=sitems.slice(0,14);sidx=0;
+  if(!sitems.length){sres.innerHTML='<div style="color:var(--mute)">결과 없음</div>';sres.style.display="block";return}
+  sitems.forEach((it,i)=>{const d=document.createElement("div");d.innerHTML=`<i style="background:${it.col}"></i>${esc(it.label)}<small>${esc(it.t)} · ${esc(it.sub)}</small>`;d.className=i===0?"act":"";d.onmousedown=ev=>{ev.preventDefault();goItem(it)};sres.appendChild(d)});sres.style.display="block"}
+function goItem(it){sres.style.display="none";document.getElementById("q").blur();if(it.co){if(!expanded.has(it.n.id)){expanded.add(it.n.id);rebuild()}const m=byId[it.n.id+"::"+it.co.ticker];select(m||it.n,true)}else select(it.n,true)}
+document.getElementById("q").addEventListener("input",ev=>search(ev.target.value));
+document.getElementById("q").addEventListener("keydown",ev=>{if(ev.key==="ArrowDown"){sidx=Math.min(sitems.length-1,sidx+1)}else if(ev.key==="ArrowUp"){sidx=Math.max(0,sidx-1)}else if(ev.key==="Enter"){if(sitems[sidx])goItem(sitems[sidx]);return}else if(ev.key==="Escape"){sres.style.display="none";ev.target.blur();return}else return;ev.preventDefault();[...sres.children].forEach((d,i)=>d.classList.toggle("act",i===sidx))});
+document.getElementById("q").addEventListener("blur",()=>setTimeout(()=>sres.style.display="none",150));
+document.getElementById("q").addEventListener("focus",ev=>{if(ev.target.value)search(ev.target.value)});
+// ───────── 뷰포트 ─────────
 function measure(){VW=svg.clientWidth||1200;VH=svg.clientHeight||700}
-function clamp(){view.k=Math.max(.3,Math.min(2.8,view.k));const w=WW*view.k,h=WH*view.k;
-  view.x=w<VW?(VW-w)/2:Math.max(VW-w-40,Math.min(40,view.x));view.y=h<VH?(VH-h)/2:Math.max(VH-h-40,Math.min(40,view.y))}
-function fitView(anim){measure();const k=Math.min((VW-40)/WW,(VH-40)/WH);const x=(VW-WW*k)/2,y=(VH-WH*k)/2;if(anim&&!RED)tween={t:performance.now(),d:380,x0:view.x,y0:view.y,k0:view.k,x1:x,y1:y,k1:k};else view={x,y,k}}
+function clamp(){view.k=Math.max(.3,Math.min(2.8,view.k));const c=cl(view.x,view.y,view.k);view.x=c.x;view.y=c.y}
+function fitView(anim){measure();const right=insp.classList.contains("open")?390:0;const k=Math.min((VW-right-40)/WW,(VH-40)/WH);const x=(VW-right-WW*k)/2,y=(VH-WH*k)/2;if(anim&&!RED)tween={t:performance.now(),d:380,x0:view.x,y0:view.y,k0:view.k,x1:x,y1:y,k1:k};else view={x,y,k}}
 function zoomAt(f,cx,cy){tween=null;const k=Math.max(.3,Math.min(2.8,view.k*f));view.x=cx-(cx-view.x)*k/view.k;view.y=cy-(cy-view.y)*k/view.k;view.k=k;clamp()}
 svg.addEventListener("wheel",ev=>{ev.preventDefault();tween=null;const r=svg.getBoundingClientRect();
+  if(ev.ctrlKey){zoomAt(ev.deltaY<0?1.06:.94,ev.clientX-r.left,ev.clientY-r.top);return}
   if(ev.shiftKey||Math.abs(ev.deltaX)>Math.abs(ev.deltaY)){view.x-=(ev.deltaX||ev.deltaY);clamp();return}
   zoomAt(ev.deltaY<0?1.12:.89,ev.clientX-r.left,ev.clientY-r.top)},{passive:false});
-svg.addEventListener("pointerdown",ev=>{if(ev.button!==0)return;tween=null;panning={x:ev.clientX,y:ev.clientY,vx:view.x,vy:view.y};svg.classList.add("dragging")});
+svg.addEventListener("pointerdown",ev=>{ptrs.set(ev.pointerId,{x:ev.clientX,y:ev.clientY});if(ptrs.size===2){const a=[...ptrs.values()];pinch={d:Math.hypot(a[0].x-a[1].x,a[0].y-a[1].y),k:view.k,cx:(a[0].x+a[1].x)/2,cy:(a[0].y+a[1].y)/2,vx:view.x,vy:view.y};panning=null;return}
+  if(ev.button!==0)return;tween=null;panning={x:ev.clientX,y:ev.clientY,vx:view.x,vy:view.y};svg.classList.add("dragging")});
 window.addEventListener("pointermove",ev=>{
+  if(ptrs.has(ev.pointerId))ptrs.set(ev.pointerId,{x:ev.clientX,y:ev.clientY});
+  if(pinch&&ptrs.size===2){const a=[...ptrs.values()];const d=Math.hypot(a[0].x-a[1].x,a[0].y-a[1].y);const r=svg.getBoundingClientRect();const k=Math.max(.3,Math.min(2.8,pinch.k*d/pinch.d));const cx=pinch.cx-r.left,cy=pinch.cy-r.top;view.x=cx-(cx-pinch.vx)*k/pinch.k;view.y=cy-(cy-pinch.vy)*k/pinch.k;view.k=k;clamp();return}
   if(dragN){const d=Math.hypot(ev.clientX-dragN.sx,ev.clientY-dragN.sy);if(d>3)dragN.moved=true;if(!dragN.moved)return;const n=dragN.n,r=svg.getBoundingClientRect(),p={x:(ev.clientX-r.left-view.x)/view.k,y:(ev.clientY-r.top-view.y)/view.k};
     if(n.kind==="ind"){const R=ROWS[n.row];n.y=Math.max(R.y0+18,Math.min(R.y1-18,p.y))}else if(n.kind==="co"){n.x=p.x;n.y=p.y}}
   else if(panning){view.x=panning.vx+ev.clientX-panning.x;view.y=panning.vy+ev.clientY-panning.y;clamp()}});
-window.addEventListener("pointerup",()=>{setTimeout(()=>{dragN=null},0);panning=null;svg.classList.remove("dragging")});
-svg.addEventListener("click",ev=>{if(!ev.target.closest(".node"))select(null)});
+window.addEventListener("pointerup",ev=>{ptrs.delete(ev.pointerId);if(ptrs.size<2)pinch=null;setTimeout(()=>{dragN=null},0);panning=null;svg.classList.remove("dragging")});
+window.addEventListener("pointercancel",ev=>{ptrs.delete(ev.pointerId);pinch=null;panning=null;dragN=null});
+svg.addEventListener("click",ev=>{if(!ev.target.closest(".node")&&!(panning&&panning.moved)){if(focusRow==null)select(null);else{closeInsp()}}});
 document.getElementById("zin").onclick=()=>zoomAt(1.25,VW/2,VH/2);document.getElementById("zout").onclick=()=>zoomAt(.8,VW/2,VH/2);
-document.getElementById("fit").onclick=()=>fitView(true);document.getElementById("one").onclick=()=>{tween={t:performance.now(),d:RED?0:380,x0:view.x,y0:view.y,k0:view.k,x1:40,y1:Math.min(20,(VH-WH)/2),k1:1}};
-window.addEventListener("keydown",ev=>{if(ev.target.tagName==="INPUT"){if(ev.key==="Escape")ev.target.blur();return}
-  if(ev.key==="/"){ev.preventDefault();document.getElementById("q").focus()}else if(ev.key==="Escape")select(null);
-  else if(ev.key==="+"||ev.key==="=")zoomAt(1.25,VW/2,VH/2);else if(ev.key==="-")zoomAt(.8,VW/2,VH/2);else if(ev.key==="0")fitView(true);else if(ev.key==="1")document.getElementById("one").click();
+document.getElementById("fit").onclick=()=>fitView(true);document.getElementById("one").onclick=()=>{const c=cl(40,Math.min(20,(VH-WH)/2),1);tween={t:performance.now(),d:RED?0:380,x0:view.x,y0:view.y,k0:view.k,x1:c.x,y1:c.y,k1:1}};
+const helpov=document.getElementById("helpov");document.getElementById("help").onclick=()=>helpov.classList.toggle("on");document.getElementById("helpclose").onclick=()=>helpov.classList.remove("on");helpov.addEventListener("click",ev=>{if(ev.target===helpov)helpov.classList.remove("on")});
+window.addEventListener("keydown",ev=>{if(ev.target.tagName==="INPUT")return;
+  if(ev.key==="/"){ev.preventDefault();document.getElementById("q").focus()}else if(ev.key==="Escape"){if(helpov.classList.contains("on"))helpov.classList.remove("on");else if(replayOn)stopReplay();else if(sel)select(null);else if(focusRow!=null)focusChain(focusRow);else closeInsp()}
+  else if(ev.key==="?")helpov.classList.toggle("on");else if(ev.key==="+"||ev.key==="=")zoomAt(1.25,VW/2,VH/2);else if(ev.key==="-")zoomAt(.8,VW/2,VH/2);else if(ev.key==="0")fitView(true);else if(ev.key==="1")document.getElementById("one").click();
   else if(ev.key==="ArrowLeft"){view.x+=80;clamp()}else if(ev.key==="ArrowRight"){view.x-=80;clamp()}else if(ev.key==="ArrowUp"){view.y+=80;clamp()}else if(ev.key==="ArrowDown"){view.y-=80;clamp()}});
+// ───────── 미니맵 ─────────
 function buildMini(){mini=document.getElementById("minisvg");mini.innerHTML="";mini.setAttribute("viewBox",`0 0 ${WW} ${WH}`);
   N.filter(n=>n.kind!=="co").forEach(n=>{const c=el("circle",{cx:n.x,cy:n.y,r:n.kind==="theme"?9:(n.tier==="HEAT"?16:12),fill:n.kind==="theme"?"#C9B88A":TC[n.tier],"fill-opacity":.8});c.dataset.id=n.id;mini.appendChild(c)});
   mini.vp=el("rect",{class:"vp"});mini.appendChild(mini.vp);
-  document.getElementById("mini").onclick=ev=>{const r=mini.getBoundingClientRect();const wx=(ev.clientX-r.left)/r.width*WW,wy=(ev.clientY-r.top)/r.height*WH;tween={t:performance.now(),d:RED?0:320,x0:view.x,y0:view.y,k0:view.k,x1:VW/2-wx*view.k,y1:VH/2-wy*view.k,k1:view.k}}}
-function updateMini(){if(!mini||!mini.vp)return;mini.vp.setAttribute("x",-view.x/view.k);mini.vp.setAttribute("y",-view.y/view.k);mini.vp.setAttribute("width",VW/view.k);mini.vp.setAttribute("height",VH/view.k);
-  mini.querySelectorAll("circle").forEach(c=>{const n=byId[c.dataset.id];if(n){c.setAttribute("cy",n.y);c.setAttribute("opacity",n.hidden?.15:1)}})}
-function inspectEmpty(){document.getElementById("insp").innerHTML=`<div class="empty">노드를 선택하면 카드가 여기에 열립니다.<br><br>
-<b>배치</b> — 행 하나가 산업 밸류체인 하나입니다. 왼쪽에서 오른쪽으로 상류 → 중류 → 하류 → 최종 수요가 흐르고, 같은 단계는 셀 안에 나란히 놓입니다. 위에는 수요를 내리는 테마. 왼쪽 행 이름을 누르면 그 체인 전체와 다른 체인으로 뻗는 연결이 한 번에 켜집니다.<br><br>
-<b>관계</b>는 마우스를 올리면 잠깐, 클릭하면 고정으로 밝아집니다 — 한 홉 실선, 두 홉 흐림, 나머지는 물러남. 흐르는 점과 화살표는 공급 방향입니다.<br><br>
-<b>이동</b> 휠 = 확대 · <kbd>Shift</kbd>+휠 = 좌우 · 드래그 = 이동 · <kbd>0</kbd> 전체 · <kbd>1</kbd> 실제 크기 · <kbd>/</kbd> 검색 · <kbd>Esc</kbd> 해제. 오른쪽 아래 미니맵을 클릭하면 그 자리로 갑니다.<br><br>
-<span style="color:var(--dim)">표시는 딥다이브 산출의 인용이며 매매 의견이 아닙니다.</span></div>`}
+  document.getElementById("mini").onclick=ev=>{const r=mini.getBoundingClientRect();const wx=(ev.clientX-r.left)/r.width*WW,wy=(ev.clientY-r.top)/r.height*WH;const right=insp.classList.contains("open")?390:0;const c=cl((VW-right)/2-wx*view.k,VH/2-wy*view.k,view.k);tween={t:performance.now(),d:RED?0:320,x0:view.x,y0:view.y,k0:view.k,x1:c.x,y1:c.y,k1:view.k}}}
+function updateMini(){if(!mini||!mini.vp)return;const right=insp.classList.contains("open")?390:0;mini.vp.setAttribute("x",-view.x/view.k);mini.vp.setAttribute("y",-view.y/view.k);mini.vp.setAttribute("width",(VW-right)/view.k);mini.vp.setAttribute("height",VH/view.k);
+  mini.querySelectorAll("circle").forEach(c=>{const n=byId[c.dataset.id];if(n){c.setAttribute("cx",n.x);c.setAttribute("cy",n.y)}})}
+// ───────── 인스펙터 ─────────
+function head(title,meta){return`<div class="top"><div><h2>${title}</h2><div class="meta">${meta}</div></div><button class="x" title="닫기 (Esc)" onclick="select(null)">×</button></div>`}
 function inspect(n){
-  const I=document.getElementById("insp");let h="";
+  let h="";
   if(n.kind==="ind"){const i=n.ref;const col=TC[i.tier];
-    h+=`<h2>${esc(i.name)}</h2><div class="meta">${i.id}</div><span class="tier" style="color:${col};border-color:${col}">${i.tier}</span><span class="tier" style="color:var(--mute);border-color:var(--line)">${BAL[i.balance]||""} ${esc(i.balance)}${i.cycle_stage?" · "+esc(i.cycle_stage):""}</span>`;
+    h+=head(esc(i.name),i.id+" · "+esc(CHAINS[n.row].name)+" · "+STAGES[n.col]);
+    h+=`<span class="tier" style="color:${col};border-color:${col}">${i.tier}</span><span class="tier" style="color:var(--mute);border-color:var(--line)">${BAL[i.balance]||""} ${esc(i.balance)}${i.cycle_stage?" · "+esc(i.cycle_stage):""}</span>`;
+    h+=`<div class="btns"><button onclick="centerOn(byId['${n.id}'])">여기로 확대</button><button onclick="toggleCo(byId['${n.id}'])">${expanded.has(n.id)?"기업 접기":"기업 펼치기 ("+n.cos.length+")"}</button><button onclick="focusChain(${n.row})">체인 포커스</button></div>`;
+    if(n.chg)h+=`<div class="chg"><b>이번 갱신 · ${esc(todayKey)}</b>${n.chg.from&&n.chg.from!==n.chg.to?esc(n.chg.from)+" → "+esc(n.chg.to)+" · ":""}${esc(String(n.chg.reason).slice(0,220))}</div>`;
     if(i.balance_direction)h+=`<p style="margin-top:10px">${esc(i.balance_direction)}</p>`;
-    h+=`<h3>왜 이 티어인가</h3><p>${esc((i.tier_rationale||"").slice(0,800))}</p>`;
-    h+=`<h3>수요</h3><p>${esc(txt(i.demand).slice(0,600))}</p><h3>공급</h3><p>${esc(txt(i.supply).slice(0,600))}</p>`;
-    const li=(i.leading_indicators||[]).slice(-4).reverse();if(li.length){h+=`<h3>최근 선행지표</h3>`;li.forEach(x=>h+=`<div class="row"><b>${esc(x.name)}</b><span>${esc(String(x.last_reading||"").slice(0,180))}<br><small>${esc(x.as_of||"")}</small></span></div>`)}
-    const rel=E.filter(e=>(e.a===n||e.b===n)&&e.type!=="OPERATES_IN");
-    h+=`<h3>관계 (${rel.length})</h3>`;
-    rel.sort((a,b)=>(a.type==="SUPPLIES_TO"?0:1)-(b.type==="SUPPLIES_TO"?0:1)).forEach(e=>{const o=e.a===n?e.b:e.a;const dir=e.a===n?"→":"←";h+=`<div class="row"><b><span class="lk" data-id="${o.id}">${esc(o.name)}</span> <small style="color:var(--mute)">${dir} ${e.type}${e.strength?" "+e.strength:""}</small></b><span>${esc((e.mech||"").slice(0,120))}</span></div>`});
-    const cos=(i.companies||[]).filter(c=>typeof c==="object");const dd=new Set((D.company_nodes||[]).filter(c=>c.verification==="DEEP_DIVED").map(c=>c.ticker));
-    if(cos.length){h+=`<h3>기업 ${cos.length} — 노드 더블클릭으로 펼침</h3>`;[...cos].sort((a,b)=>(a.chain_position||"").localeCompare(b.chain_position||"")).forEach(c=>h+=`<div class="co"><i class="dot ${dd.has(c.ticker)?"dd":""}"></i><b>${esc(c.ticker)}</b> ${esc(c.name||"")}<span class="cp">${esc(c.chain_position||"")}${c.role?" · "+esc(c.role):""}</span></div>`)}
-  }else if(n.kind==="theme"){const t=n.ref;h+=`<h2>${esc(t.name)}</h2><div class="meta">${t.id} · 테마</div><p>${esc(txt(t.thesis||t.description||"").slice(0,700))}</p><h3>구동 산업</h3>`;E.filter(e=>e.a===n).forEach(e=>h+=`<div class="row"><b><span class="lk" data-id="${e.b.id}">${esc(e.b.name)}</span></b><span>${esc(e.b.tier)}</span></div>`)}
+    h+=`<details open><summary>왜 이 티어인가</summary><p>${esc((i.tier_rationale||"").slice(0,900))}</p></details>`;
+    h+=`<details><summary>수요</summary><p>${esc(txt(i.demand).slice(0,700))}</p></details><details><summary>공급</summary><p>${esc(txt(i.supply).slice(0,700))}</p></details>`;
+    const li=(i.leading_indicators||[]).slice(-4).reverse();if(li.length){h+=`<details open><summary>최근 선행지표 (${li.length})</summary>`;li.forEach(x=>h+=`<div class="row"><b>${esc(x.name)}</b><span>${esc(String(x.last_reading||"").slice(0,180))}<br><small>${esc(x.as_of||"")}</small></span></div>`);h+=`</details>`}
+    const rel=E.filter(e=>(e.a===n||e.b===n)&&e.type!=="OPERATES_IN").sort((a,b)=>(a.type==="SUPPLIES_TO"?0:1)-(b.type==="SUPPLIES_TO"?0:1));
+    h+=`<details open><summary>관계 (${rel.length})</summary>`;rel.forEach(e=>{const o=e.a===n?e.b:e.a;const dir=e.a===n?"→":"←";h+=`<div class="row"><b><span class="lk" data-id="${o.id}">${esc(o.name)}</span> <small style="color:var(--mute)">${dir} ${e.type}${e.strength?" "+e.strength:""}</small></b><span>${esc((e.mech||"").slice(0,120))}</span></div>`});h+=`</details>`;
+    if(n.cos.length){h+=`<details open><summary>기업 (${n.cos.length}) — 클릭하면 지도에서 선택</summary>`;[...n.cos].sort((a,b)=>(a.chain_position||"").localeCompare(b.chain_position||"")).forEach(c=>h+=`<div class="co" data-co="${esc(c.ticker)}"><i class="dot ${c.dd?"dd":""}"></i><b>${esc(c.ticker)}</b> ${esc(c.name||"")}<span class="cp">${esc(c.chain_position||"")}${c.role?" · "+esc(c.role):""}</span></div>`);h+=`</details>`}
+  }else if(n.kind==="theme"){const t=n.ref;h+=head(esc(t.name),t.id+" · 테마");h+=`<p>${esc(txt(t.thesis||t.description||"").slice(0,700))}</p><details open><summary>구동 산업</summary>`;E.filter(e=>e.a===n).forEach(e=>h+=`<div class="row"><b><span class="lk" data-id="${e.b.id}">${esc(e.b.name)}</span></b><span style="color:${TC[e.b.tier]}">${esc(e.b.tier)}</span></div>`);h+=`</details>`}
   else{const c=n.ref;const cn=(D.company_nodes||[]).find(x=>x.ticker===c.ticker);const r=cn&&cn.deep_dive_ref;
-    h+=`<h2>${esc(c.ticker)} <small style="color:var(--mute);font-weight:400">${esc(c.name||"")}</small></h2><div class="meta">${esc(n.parent.name)} · ${esc(c.chain_position||"")}${c.role?" · "+esc(c.role):""}</div>`;
+    h+=head(esc(c.ticker)+` <small style="color:var(--mute);font-weight:400">${esc(c.name||"")}</small>`,esc(n.parent.name)+" · "+esc(c.chain_position||"")+(c.role?" · "+esc(c.role):""));
+    h+=`<div class="btns"><button onclick="select(byId['${n.parent.id}'],false)">산업으로</button><button onclick="centerOn(byId['${n.id}'])">여기로 확대</button></div>`;
     if(c.note)h+=`<p>${esc(c.note)}</p>`;
-    if(r){h+=`<h3>딥다이브 (${esc(r.as_of||"")})</h3><p>${esc(r.stance_zone||"")}</p><p style="margin-top:8px">${esc((r.thesis_oneline||"").slice(0,600))}</p>`;if(cn.stance_state){const s=cn.stance_state;h+=`<div class="row"><b>관측</b><span>${s.price&&s.price.value!=null?s.price.value+" ("+esc(s.price.as_of||"미기재")+")":"—"} · zone ${esc(s.zone)}</span></div>`}}
-    else h+=`<p class="empty">딥다이브 미실시(SHALLOW)</p>`;
+    if(r){h+=`<details open><summary>딥다이브 (${esc(r.as_of||"")})</summary><p>${esc(r.stance_zone||"")}</p><p>${esc((r.thesis_oneline||"").slice(0,600))}</p>`;if(cn.stance_state){const s=cn.stance_state;h+=`<div class="row"><b>관측</b><span>${s.price&&s.price.value!=null?s.price.value+" ("+esc(s.price.as_of||"미기재")+")":"—"} · zone ${esc(s.zone)}</span></div>`}h+=`</details>`}
+    else h+=`<p style="color:var(--mute)">딥다이브 미실시(SHALLOW)</p>`;
     h+=`<p style="margin-top:12px;color:var(--mute);font-size:11.5px">표시는 딥다이브 산출의 인용이며 매매 의견이 아닙니다.</p>`}
-  I.innerHTML=h;I.scrollTop=0;I.querySelectorAll(".lk").forEach(a=>a.onclick=()=>{const m=byId[a.dataset.id];if(m)select(m,true)});
+  insp.innerHTML=h;insp.scrollTop=0;
+  insp.querySelectorAll(".lk").forEach(a=>a.onclick=()=>{const m=byId[a.dataset.id];if(m)select(m,false)});
+  insp.querySelectorAll(".co[data-co]").forEach(d=>d.onclick=()=>{if(!expanded.has(n.id)){expanded.add(n.id);rebuild()}const m=byId[n.id+"::"+d.dataset.co];if(m)select(m,true)});
 }
-function replay(){
-  if(playing)return;const paths=(D.monthly_diff&&D.monthly_diff.propagation_paths)||[];if(!paths.length)return;playing=true;const btn=document.getElementById("play");let pi=0;
-  const runOne=()=>{if(pi>=paths.length){playing=false;btn.textContent="전파 재생";select(null);return}
-    const ids=[...paths[pi].matchAll(/\b(TH-[A-Z]+|[A-Z]{3}-\d{2})\b/g)].map(m=>m[1]).filter((v,i,a)=>a.indexOf(v)===i&&byId[v]);
-    btn.textContent=`전파 ${pi+1}/${paths.length}`;let k=0;
-    const stepIn=()=>{if(k>=ids.length){pi++;setTimeout(runOne,1500);return}select(byId[ids[k]],true);document.getElementById("hint").textContent=paths[pi].slice(0,200);k++;setTimeout(stepIn,1000)};stepIn()};
-  runOne();
-}
-document.getElementById("q").addEventListener("input",applyFilters);
+function inspectChain(ri,set){const C=CHAINS[ri];let h=head(esc(C.name)+" 체인","상류 → 중류 → 하류 → 최종 수요")+`<div class="btns"><button onclick="focusChain(${ri})">포커스 해제</button></div>`;
+  const chg=[...set].filter(n=>n.changed);if(chg.length)h+=`<div class="chg"><b>이번 갱신 변경 ${chg.length}</b>${chg.map(n=>esc(n.name)+(n.chg.from&&n.chg.from!==n.chg.to?" "+esc(n.chg.from)+"→"+esc(n.chg.to):"")).join(" · ")}</div>`;
+  STAGES.forEach((st,ci)=>{h+=`<details open><summary>${st} (${C.cells[ci].length})</summary>`;C.cells[ci].forEach(id=>{const n=byId[id];if(!n)return;h+=`<div class="row"><b><span class="lk" data-id="${id}">${esc(n.name)}</span></b><span style="color:${TC[n.tier]}">${n.tier} <span style="color:var(--mute)">${BAL[n.ref.balance]||""}</span></span></div>`});h+=`</details>`});
+  const out=E.filter(e=>e.type!=="OPERATES_IN"&&e.a.kind==="ind"&&e.b.kind==="ind"&&(set.has(e.a)!==set.has(e.b)));
+  h+=`<details open><summary>다른 체인과의 연결 (${out.length})</summary>`;out.forEach(e=>{const inn=set.has(e.a)?e.a:e.b,o=set.has(e.a)?e.b:e.a,dir=set.has(e.a)?"→":"←";h+=`<div class="row"><b>${esc(inn.name)} <small style="color:var(--mute)">${dir} ${e.type}</small></b><span><span class="lk" data-id="${o.id}">${esc(o.name)}</span> <small>· ${esc(CHAINS[o.row].name)}</small></span></div>`});h+=`</details>`;
+  const ths=E.filter(e=>e.type==="THEME_DRIVES"&&set.has(e.b)).map(e=>e.a);const uniq=[...new Set(ths)];
+  h+=`<details open><summary>타고 있는 테마 (${uniq.length})</summary>`;uniq.forEach(t=>h+=`<div class="row"><b><span class="lk" data-id="${t.id}">${esc(t.name)}</span></b><span>${ths.filter(x=>x===t).length}개 산업</span></div>`);h+=`</details>`;
+  insp.innerHTML=h;insp.scrollTop=0;insp.querySelectorAll(".lk").forEach(a=>a.onclick=()=>{const m=byId[a.dataset.id];if(m)select(m,false)})}
+// ───────── 전파 재생 ─────────
+let replayOn=false,rPaths=[],rPi=0,rK=0,rTimer=null,rPaused=false;
+const rbox=document.getElementById("replay");
+function stepIds(p){return[...p.matchAll(/\b(TH-[A-Z]+|[A-Z]{3}-\d{2})\b/g)].map(m=>m[1]).filter((v,i,a)=>a.indexOf(v)===i&&byId[v])}
+function startReplay(){rPaths=(D.monthly_diff&&D.monthly_diff.propagation_paths)||[];if(!rPaths.length)return;replayOn=true;rPi=0;rK=0;rPaused=false;rbox.classList.add("on");document.getElementById("rpp").textContent="❚❚";showStep();}
+function showStep(){const ids=stepIds(rPaths[rPi]);if(!ids.length){nextStep();return}const n=byId[ids[Math.min(rK,ids.length-1)]];select(n,true);document.getElementById("rstep").textContent=`전파 ${rPi+1}/${rPaths.length} · 단계 ${rK+1}/${ids.length}`;document.getElementById("rtext").textContent=rPaths[rPi];clearTimeout(rTimer);if(!rPaused)rTimer=setTimeout(nextStep,1800)}
+function nextStep(){const ids=stepIds(rPaths[rPi]);if(rK<ids.length-1)rK++;else{rPi=(rPi+1)%rPaths.length;rK=0}showStep()}
+function prevStep(){if(rK>0)rK--;else{rPi=(rPi-1+rPaths.length)%rPaths.length;rK=Math.max(0,stepIds(rPaths[rPi]).length-1)}showStep()}
+function stopReplay(){replayOn=false;clearTimeout(rTimer);rbox.classList.remove("on");select(null)}
+document.getElementById("play").onclick=()=>replayOn?stopReplay():startReplay();
+document.getElementById("rnext").onclick=nextStep;document.getElementById("rprev").onclick=prevStep;document.getElementById("rstop").onclick=stopReplay;
+document.getElementById("rpp").onclick=function(){rPaused=!rPaused;this.textContent=rPaused?"▶":"❚❚";if(!rPaused)showStep();else clearTimeout(rTimer)};
+// ───────── 컨트롤 ─────────
 document.querySelectorAll(".chip[data-tier]").forEach(b=>b.onclick=()=>{b.classList.toggle("on");const t=b.dataset.tier;b.classList.contains("on")?tiers.add(t):tiers.delete(t);applyFilters()});
-document.getElementById("flowOnly").onclick=function(){flowOnly=!flowOnly;this.classList.toggle("on",flowOnly);applyFilters()};
-document.getElementById("play").onclick=replay;
-document.getElementById("reset").onclick=()=>{expanded.clear();document.getElementById("q").value="";build();layout();render();select(null);fitView(true)};
+document.getElementById("xtoggle").onclick=function(){showX=!showX;this.classList.toggle("on",showX);applyFilters()};
+document.getElementById("reset").onclick=()=>{expanded.clear();focusRow=null;sel=null;document.getElementById("q").value="";build();layout();render();closeInsp();clearLight();history.replaceState(null,"","#");fitView(true)};
 window.addEventListener("resize",()=>{measure();clamp()});
 boot();
 </script>
