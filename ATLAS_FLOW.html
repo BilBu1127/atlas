@@ -155,6 +155,7 @@ footer .lg i{display:inline-block;width:9px;height:9px;border-radius:50%}
 @media (prefers-reduced-motion:reduce){.node.sel circle.halo{animation:none}.edge,.node circle,#insp{transition:none}}
 </style>
 <script src="./ATLAS_PRICE.js"></script>
+<script src="./ATLAS_UX.js"></script>
 <style id="atlas-integration-responsive">@media(max-width:900px){
 #app{grid-template-rows:auto minmax(0,1fr) auto;height:100dvh}header{flex-wrap:wrap;gap:6px;padding:8px 12px}header h1{white-space:normal;overflow-wrap:anywhere;max-width:100%}
 header .tabs{margin-left:0;max-width:100%;overflow-x:auto}header .tools{margin-left:0;flex-wrap:wrap;width:100%;gap:5px}.srch{flex:1 1 100%;min-width:0}header .tools input{width:100%}
@@ -242,24 +243,25 @@ const RED=matchMedia("(prefers-reduced-motion: reduce)").matches;
 const COLW=400, LEFT=230, RIGHT=90, ROWH=54, ROWPAD=16, MINIH=44, TOP=160, THEME_Y=66, CELLGAP=95, COH=17;
 
 let D=null,N=[],E=[],byId={},sel=null,hov=null,expanded=new Set(),showX=false,tiers=new Set(Object.keys(TC)),focusRow=null,todayKey="";
+let flowNav=null,suppressClickUntil=0;
 let VW=0,VH=0,WW=0,WH=0,view={x:0,y:0,k:1},dragN=null,panning=null,tween=null,ptrs=new Map(),pinch=null;
 const svg=document.getElementById("svg"),root=document.getElementById("root"),tip=document.getElementById("tip"),stage=document.getElementById("stage"),insp=document.getElementById("insp");
+const flowPanel=ATLAS_UX.panel(insp,{fallback:()=>document.getElementById("q")});insp.setAttribute("aria-label","선택 노드 상세");
 const NS="http://www.w3.org/2000/svg",el=(t,a={})=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);return e};
-const esc=s=>String(s??"").replace(/[<>&]/g,c=>({"<":"&lt;",">":"&gt;","&":"&amp;"}[c]));
+const esc=ATLAS_UX.escaped;
 const txt=v=>v==null?"":typeof v==="string"?v:Array.isArray(v)?v.map(txt).join(" · "):Object.values(v).map(txt).join(" ");
 
 async function boot(){
-  try{const r=await fetch("data/ATLAS_PACK.json",{cache:"no-store"});if(!r.ok)throw 0;D=await r.json();init()}
-  catch(e){const b=document.getElementById("load");b.innerHTML='<div>같은 폴더의 data/ATLAS_PACK.json을 읽지 못했습니다. 파일을 직접 선택하세요.</div><input type="file" accept=".json">';
-    b.querySelector("input").onchange=ev=>{const fr=new FileReader();fr.onload=()=>{D=JSON.parse(fr.result);init()};fr.readAsText(ev.target.files[0])}}
+  try{const r=await fetch("data/ATLAS_PACK.json",{cache:"no-store"});if(!r.ok)throw 0;D=await r.json();ATLAS_PRICE.bindPack(D);init()}
+  catch(e){const host=document.getElementById("load");host.textContent="";ATLAS_UX.loadState(host,true)}
 }
 function init(){
   document.getElementById("load").remove();
-  document.getElementById("ver").textContent=(D.meta.version||"").replace("ATLAS_PACK_","")+" · 밸류체인 흐름도";
+  document.getElementById("ver").textContent="연구 "+D.meta.as_of+" · UI "+(D.meta.ui_revision?.id||"기존 판본")+" · 밸류체인 흐름도";
   document.getElementById("asof").textContent=D.meta.as_of||"";
   todayKey=String(D.meta.as_of||"").slice(0,10);
   build();layout();render();fitView(false);tick();
-  const h=decodeURIComponent(location.hash.slice(1));if(h&&byId[h])setTimeout(()=>select(byId[h],true),200);
+  installFlowNavigation();
 }
 // ───────── 데이터 ─────────
 function build(){
@@ -319,7 +321,7 @@ function render(){
       if(n.changed){const tc=n.chg.from&&n.chg.from!==n.chg.to;g.appendChild(el("circle",{class:"chg",cx:-n.r-3,cy:-n.r-3,r:3.2,fill:tc?"#C9B88A":"none",stroke:"#C9B88A","stroke-width":1.2}))}
       if(n.cos.length){const bg=el("g",{class:"badge"});bg.setAttribute("transform",`translate(${n.r+4},${-n.r-12})`);bg.appendChild(el("rect",{x:0,y:0,width:26,height:13,rx:6.5}));const bt=el("text",{x:13,y:9.5,"text-anchor":"middle"});bt.textContent=(expanded.has(n.id)?"−":"+")+n.cos.length;bg.appendChild(bt);
         bg.addEventListener("click",ev=>{ev.stopPropagation();toggleCo(n)});bg.addEventListener("mouseenter",ev=>{ev.stopPropagation();showTip(ev,`<b>기업 ${n.cos.length}</b><div class="m">${expanded.has(n.id)?"접기":"펼치기"} · 딥다이브 ${n.cos.filter(c=>c.dd).length}</div>`)});g.appendChild(bg)}}
-    g.addEventListener("click",ev=>{ev.stopPropagation();if(dragN&&dragN.moved)return;select(n,false)});
+    g.addEventListener("click",ev=>{ev.stopPropagation();if(performance.now()<suppressClickUntil||(dragN&&dragN.moved))return;select(n,false)});
     g.addEventListener("mouseenter",ev=>{hover(n);showTip(ev,nodeTip(n))});g.addEventListener("mousemove",moveTip);g.addEventListener("mouseleave",()=>{hover(null);hideTip()});
     g.addEventListener("pointerdown",ev=>{if(ev.button!==0||ev.target.closest(".badge"))return;dragN={n,sx:ev.clientX,sy:ev.clientY,moved:false};ev.stopPropagation();svg.classList.add("dragging")});
     gNode.appendChild(g)});
@@ -341,7 +343,7 @@ const path=e=>{const a=e.a,b=e.b;if(e.type==="OPERATES_IN")return`M${a.x},${a.y}
 // ───────── 프레임 ─────────
 let t0=performance.now();
 function tick(){
-  if(tween){const p=Math.min(1,(performance.now()-tween.t)/tween.d),s=p<.5?2*p*p:-1+(4-2*p)*p;view.x=tween.x0+(tween.x1-tween.x0)*s;view.y=tween.y0+(tween.y1-tween.y0)*s;view.k=tween.k0+(tween.k1-tween.k0)*s;if(p>=1)tween=null}
+  if(tween){const p=Math.min(1,(performance.now()-tween.t)/tween.d),s=p<.5?2*p*p:-1+(4-2*p)*p;view.x=tween.x0+(tween.x1-tween.x0)*s;view.y=tween.y0+(tween.y1-tween.y0)*s;view.k=tween.k0+(tween.k1-tween.k0)*s;if(p>=1){tween=null;flowNav?.save()}}
   root.setAttribute("transform",`translate(${view.x},${view.y}) scale(${view.k})`);
   root.classList.toggle("z-mid",view.k<.72&&view.k>=.5);root.classList.toggle("z-far",view.k<.5);
   E.forEach(e=>{e.el.setAttribute("d",path(e))});
@@ -364,12 +366,15 @@ function light(n,cls){clearLight();if(!n)return;const{one,two}=neighbors(n);
   N.forEach(m=>{if(m===n)m.el.classList.add(cls);else if(one.has(m)){}else if(two.has(m))m.el.classList.add("lit2");else m.el.classList.add("off")});
   E.forEach(e=>{if(e.propagation_status==="HOLD"){e.el.classList.add("off");return}if(e.a===n||e.b===n)e.el.classList.add("lit1");else if((one.has(e.a)&&two.has(e.b))||(one.has(e.b)&&two.has(e.a))||(one.has(e.a)&&one.has(e.b)))e.el.classList.add("lit2");else e.el.classList.add("off")})}
 function hover(n){hov=n;if(sel){return}E.forEach(e=>e.el.classList.remove("hl"));N.forEach(m=>m.el.classList.remove("hov"));if(!n)return;n.el.classList.add("hov");E.forEach(e=>{if(e.propagation_status!=="HOLD"&&(e.a===n||e.b===n))e.el.classList.add("hl")})}
-function inView(n){const sx=view.x+n.x*view.k,sy=view.y+n.y*view.k;const m=60,right=VW-(insp.classList.contains("open")?390:0);return sx>m&&sx<right-m&&sy>m&&sy<VH-m}
-function select(n,force){sel=n;light(n,"sel");if(!n){closeInsp();history.replaceState(null,"","#");return}inspect(n);openInsp();history.replaceState(null,"","#"+encodeURIComponent(n.id));if(force||!inView(n))centerOn(n)}
-function cl(x,y,k){const w=WW*k,h=WH*k;const right=insp.classList.contains("open")?390:0;const vw=VW-right;return{x:w<vw?(vw-w)/2:Math.max(vw-w-40,Math.min(40,x)),y:h<VH?(VH-h)/2:Math.max(VH-h-40,Math.min(40,y))}}
-function centerOn(n){const k=Math.max(view.k,.85);const right=insp.classList.contains("open")?390:0;const c=cl((VW-right)/2-n.x*k,VH/2-n.y*k,k);tween={t:performance.now(),d:RED?0:420,x0:view.x,y0:view.y,k0:view.k,x1:c.x,y1:c.y,k1:k}}
-function openInsp(){insp.classList.add("open");stage.classList.add("iopen")}
-function closeInsp(){insp.classList.remove("open");stage.classList.remove("iopen")}
+function inView(n){const sx=view.x+n.x*view.k,sy=view.y+n.y*view.k;const m=60,right=VW-(insp.classList.contains("open")&&VW>700?390:0);return sx>m&&sx<right-m&&sy>m&&sy<VH-m}
+function select(n,force){
+  const apply=()=>{sel=n;light(n,"sel");if(!n){closeInsp();return}inspect(n);openInsp();if(force||!inView(n))centerOn(n)};
+  if(flowNav)flowNav.navigate(n?.id||null,apply,n?'#'+encodeURIComponent(n.id):location.pathname);else apply();
+}
+function cl(x,y,k){const w=WW*k,h=WH*k;const right=insp.classList.contains("open")&&VW>700?390:0;const vw=VW-right;return{x:w<vw?(vw-w)/2:Math.max(vw-w-40,Math.min(40,x)),y:h<VH?(VH-h)/2:Math.max(VH-h-40,Math.min(40,y))}}
+function centerOn(n){const k=Math.max(view.k,.85);const right=insp.classList.contains("open")&&VW>700?390:0;const c=cl((VW-right)/2-n.x*k,VH/2-n.y*k,k);tween={t:performance.now(),d:RED?0:420,x0:view.x,y0:view.y,k0:view.k,x1:c.x,y1:c.y,k1:k}}
+function openInsp(){insp.classList.add("open");stage.classList.add("iopen");flowNav?.backButton(insp.querySelector(".top"));flowPanel.open();ATLAS_UX.enhance(insp)}
+function closeInsp(){insp.classList.remove("open");stage.classList.remove("iopen");flowPanel.close()}
 function toggleCo(n){if(expanded.has(n.id))expanded.delete(n.id);else expanded.add(n.id);rebuild();if(sel)inspect(sel)}
 function rebuild(){const keep=sel&&sel.id;build();layout();render();if(keep&&byId[keep]){sel=byId[keep];light(sel,"sel")}}
 function focusChain(ri){focusRow=(focusRow===ri)?null:ri;rebuild();
@@ -386,45 +391,80 @@ function search(q){sidx=0;q=q.trim().toLowerCase();sres.innerHTML="";sitems=[];i
   N.filter(n=>n.kind==="ind").forEach(n=>n.cos.forEach(c=>{if(c.ticker.toLowerCase().includes(q)||(c.name||"").toLowerCase().includes(q))sitems.push({t:"기업",n,co:c,label:c.ticker+" "+(c.name||""),sub:n.name,col:c.dd?"#EBEAE4":"#5C636B"})}));
   sitems=sitems.slice(0,14);sidx=0;
   if(!sitems.length){sres.innerHTML='<div style="color:var(--mute)">결과 없음</div>';sres.style.display="block";return}
-  sitems.forEach((it,i)=>{const d=document.createElement("div");d.innerHTML=`<i style="background:${it.col}"></i>${esc(it.label)}<small>${esc(it.t)} · ${esc(it.sub)}</small>`;d.className=i===0?"act":"";d.onmousedown=ev=>{ev.preventDefault();goItem(it)};sres.appendChild(d)});sres.style.display="block"}
-function goItem(it){sres.style.display="none";document.getElementById("q").blur();if(it.co){if(!expanded.has(it.n.id)){expanded.add(it.n.id);rebuild()}const m=byId[it.n.id+"::"+it.co.ticker];select(m||it.n,true)}else select(it.n,true)}
+  sitems.forEach((it,i)=>{const d=document.createElement("div");d.innerHTML=`<i style="background:${it.col}"></i>${esc(it.label)}<small>${esc(it.t)} · ${esc(it.sub)}</small>`;d.className=i===0?"act":"";d.onclick=()=>goItem(it);sres.appendChild(d)});sres.style.display="block"}
+function goItem(it){
+  sres.style.display='none';document.getElementById('q').blur();
+  const id=it.co?it.n.id+'::'+it.co.ticker:it.n.id;
+  const apply=()=>{sres.style.display='none';document.getElementById('q').blur();if(it.co){if(!expanded.has(it.n.id)){expanded.add(it.n.id);rebuild()}select(byId[id]||it.n,true)}else select(it.n,true)};
+  if(flowNav)flowNav.navigate(id,apply,'#'+encodeURIComponent(id));else apply();
+}
 document.getElementById("q").addEventListener("input",ev=>search(ev.target.value));
-document.getElementById("q").addEventListener("keydown",ev=>{if(ev.key==="ArrowDown"){sidx=Math.min(sitems.length-1,sidx+1)}else if(ev.key==="ArrowUp"){sidx=Math.max(0,sidx-1)}else if(ev.key==="Enter"){if(sitems[sidx])goItem(sitems[sidx]);return}else if(ev.key==="Escape"){sres.style.display="none";ev.target.blur();return}else return;ev.preventDefault();[...sres.children].forEach((d,i)=>d.classList.toggle("act",i===sidx))});
-document.getElementById("q").addEventListener("blur",()=>setTimeout(()=>sres.style.display="none",150));
+document.getElementById("q").addEventListener("keydown",ev=>{if(ev.key==="ArrowDown"){sidx=Math.min(sitems.length-1,sidx+1)}else if(ev.key==="ArrowUp"){sidx=Math.max(0,sidx-1)}else if(ev.key==="Enter"){ev.preventDefault();ev.stopPropagation();if(sitems[sidx])goItem(sitems[sidx]);return}else if(ev.key==="Escape"){sres.style.display="none";ev.target.blur();return}else return;ev.preventDefault();[...sres.children].forEach((d,i)=>d.classList.toggle("act",i===sidx))});
+function closeSearchOutside(){const a=document.activeElement;if(a!==document.getElementById("q")&&!sres.contains(a))sres.style.display="none"}
+document.getElementById("q").addEventListener("blur",()=>setTimeout(closeSearchOutside,150));
+sres.addEventListener("focusout",()=>setTimeout(closeSearchOutside,0));
+sres.addEventListener("keydown",ev=>{if(ev.key==="Escape"){ev.preventDefault();ev.stopPropagation();document.getElementById("q").focus();sres.style.display="none"}});
 document.getElementById("q").addEventListener("focus",ev=>{if(ev.target.value)search(ev.target.value)});
 // ───────── 뷰포트 ─────────
 function measure(){VW=svg.clientWidth||1200;VH=svg.clientHeight||700}
-function clamp(){view.k=Math.max(.3,Math.min(2.8,view.k));const c=cl(view.x,view.y,view.k);view.x=c.x;view.y=c.y}
-function fitView(anim){measure();const right=insp.classList.contains("open")?390:0;const k=Math.min((VW-right-40)/WW,(VH-40)/WH);const x=(VW-right-WW*k)/2,y=(VH-WH*k)/2;if(anim&&!RED)tween={t:performance.now(),d:380,x0:view.x,y0:view.y,k0:view.k,x1:x,y1:y,k1:k};else view={x,y,k}}
-function zoomAt(f,cx,cy){tween=null;const k=Math.max(.3,Math.min(2.8,view.k*f));view.x=cx-(cx-view.x)*k/view.k;view.y=cy-(cy-view.y)*k/view.k;view.k=k;clamp()}
+function clamp(){view.k=Math.max(.08,Math.min(2.8,view.k));const c=cl(view.x,view.y,view.k);view.x=c.x;view.y=c.y}
+function fitView(anim){measure();const right=insp.classList.contains("open")&&VW>700?390:0;const k=Math.min((VW-right-40)/WW,(VH-40)/WH);const x=(VW-right-WW*k)/2,y=(VH-WH*k)/2;if(anim&&!RED)tween={t:performance.now(),d:380,x0:view.x,y0:view.y,k0:view.k,x1:x,y1:y,k1:k};else view={x,y,k}}
+function zoomAt(f,cx,cy){tween=null;const k=Math.max(.08,Math.min(2.8,view.k*f));view.x=cx-(cx-view.x)*k/view.k;view.y=cy-(cy-view.y)*k/view.k;view.k=k;clamp()}
 svg.addEventListener("wheel",ev=>{ev.preventDefault();tween=null;const r=svg.getBoundingClientRect();
   if(ev.ctrlKey){zoomAt(ev.deltaY<0?1.06:.94,ev.clientX-r.left,ev.clientY-r.top);return}
   if(ev.shiftKey||Math.abs(ev.deltaX)>Math.abs(ev.deltaY)){view.x-=(ev.deltaX||ev.deltaY);clamp();return}
   zoomAt(ev.deltaY<0?1.12:.89,ev.clientX-r.left,ev.clientY-r.top)},{passive:false});
-svg.addEventListener("pointerdown",ev=>{ptrs.set(ev.pointerId,{x:ev.clientX,y:ev.clientY});if(ptrs.size===2){const a=[...ptrs.values()];pinch={d:Math.hypot(a[0].x-a[1].x,a[0].y-a[1].y),k:view.k,cx:(a[0].x+a[1].x)/2,cy:(a[0].y+a[1].y)/2,vx:view.x,vy:view.y};panning=null;return}
-  if(ev.button!==0)return;tween=null;panning={x:ev.clientX,y:ev.clientY,vx:view.x,vy:view.y};svg.classList.add("dragging")});
+svg.addEventListener("pointerdown",ev=>{
+  if(ev.button!==0&&ev.pointerType!=="touch")return;
+  ev.target.setPointerCapture?.(ev.pointerId);ptrs.set(ev.pointerId,{x:ev.clientX,y:ev.clientY});tween=null;
+  if(ptrs.size===2){const a=[...ptrs.values()];pinch={d:Math.hypot(a[0].x-a[1].x,a[0].y-a[1].y),k:view.k,cx:(a[0].x+a[1].x)/2,cy:(a[0].y+a[1].y)/2,vx:view.x,vy:view.y};panning=null;dragN=null;return}
+  panning={x:ev.clientX,y:ev.clientY,vx:view.x,vy:view.y,moved:false};svg.classList.add("dragging");
+},true);
 window.addEventListener("pointermove",ev=>{
-  if(ptrs.has(ev.pointerId))ptrs.set(ev.pointerId,{x:ev.clientX,y:ev.clientY});
-  if(pinch&&ptrs.size===2){const a=[...ptrs.values()];const d=Math.hypot(a[0].x-a[1].x,a[0].y-a[1].y);const r=svg.getBoundingClientRect();const k=Math.max(.3,Math.min(2.8,pinch.k*d/pinch.d));const cx=pinch.cx-r.left,cy=pinch.cy-r.top;view.x=cx-(cx-pinch.vx)*k/pinch.k;view.y=cy-(cy-pinch.vy)*k/pinch.k;view.k=k;clamp();return}
-  if(dragN){const d=Math.hypot(ev.clientX-dragN.sx,ev.clientY-dragN.sy);if(d>3)dragN.moved=true;if(!dragN.moved)return;const n=dragN.n,r=svg.getBoundingClientRect(),p={x:(ev.clientX-r.left-view.x)/view.k,y:(ev.clientY-r.top-view.y)/view.k};
-    if(n.kind==="ind"){const R=ROWS[n.row];n.y=Math.max(R.y0+18,Math.min(R.y1-18,p.y))}else if(n.kind==="co"){n.x=p.x;n.y=p.y}}
-  else if(panning){view.x=panning.vx+ev.clientX-panning.x;view.y=panning.vy+ev.clientY-panning.y;clamp()}});
-window.addEventListener("pointerup",ev=>{ptrs.delete(ev.pointerId);if(ptrs.size<2)pinch=null;setTimeout(()=>{dragN=null},0);panning=null;svg.classList.remove("dragging")});
-window.addEventListener("pointercancel",ev=>{ptrs.delete(ev.pointerId);pinch=null;panning=null;dragN=null});
-svg.addEventListener("click",ev=>{if(!ev.target.closest(".node")&&!(panning&&panning.moved)){if(focusRow==null)select(null);else{closeInsp()}}});
+  if(!ptrs.has(ev.pointerId))return;ptrs.set(ev.pointerId,{x:ev.clientX,y:ev.clientY});
+  if(pinch&&ptrs.size===2){
+    const a=[...ptrs.values()],d=Math.hypot(a[0].x-a[1].x,a[0].y-a[1].y),r=svg.getBoundingClientRect();
+    const k=Math.max(.08,Math.min(2.8,pinch.k*d/Math.max(1,pinch.d))),cx=(a[0].x+a[1].x)/2-r.left,cy=(a[0].y+a[1].y)/2-r.top;
+    view.x=cx-(pinch.cx-r.left-pinch.vx)*k/pinch.k;view.y=cy-(pinch.cy-r.top-pinch.vy)*k/pinch.k;view.k=k;clamp();suppressClickUntil=performance.now()+350;return;
+  }
+  if(dragN){
+    if(Math.hypot(ev.clientX-dragN.sx,ev.clientY-dragN.sy)>4)dragN.moved=true;if(!dragN.moved)return;
+    const n=dragN.n,r=svg.getBoundingClientRect(),p={x:(ev.clientX-r.left-view.x)/view.k,y:(ev.clientY-r.top-view.y)/view.k};
+    if(n.kind==="ind"){const R=ROWS[n.row];n.y=Math.max(R.y0+18,Math.min(R.y1-18,p.y))}else if(n.kind==="co"){n.x=p.x;n.y=p.y}
+  }else if(panning){
+    if(Math.hypot(ev.clientX-panning.x,ev.clientY-panning.y)>4)panning.moved=true;
+    if(panning.moved){view.x=panning.vx+ev.clientX-panning.x;view.y=panning.vy+ev.clientY-panning.y;clamp()}
+  }
+});
+function endFlowPointer(ev){
+  if(!ptrs.has(ev.pointerId))return;
+  if(pinch||panning?.moved||dragN?.moved||ev.type==="pointercancel")suppressClickUntil=performance.now()+350;
+  ptrs.delete(ev.pointerId);pinch=null;dragN=null;panning=null;
+  if(ptrs.size===1){const p=[...ptrs.values()][0];panning={x:p.x,y:p.y,vx:view.x,vy:view.y,moved:false}}
+  if(!ptrs.size)svg.classList.remove("dragging");
+}
+window.addEventListener("pointerup",endFlowPointer);window.addEventListener("pointercancel",endFlowPointer);
+svg.addEventListener("click",ev=>{if(performance.now()<suppressClickUntil)return;if(!ev.target.closest(".node")){if(focusRow==null)select(null);else closeInsp()}});
 document.getElementById("zin").onclick=()=>zoomAt(1.25,VW/2,VH/2);document.getElementById("zout").onclick=()=>zoomAt(.8,VW/2,VH/2);
 document.getElementById("fit").onclick=()=>fitView(true);document.getElementById("one").onclick=()=>{const c=cl(40,Math.min(20,(VH-WH)/2),1);tween={t:performance.now(),d:RED?0:380,x0:view.x,y0:view.y,k0:view.k,x1:c.x,y1:c.y,k1:1}};
-const helpov=document.getElementById("helpov");document.getElementById("help").onclick=()=>helpov.classList.toggle("on");document.getElementById("helpclose").onclick=()=>helpov.classList.remove("on");helpov.addEventListener("click",ev=>{if(ev.target===helpov)helpov.classList.remove("on")});
-window.addEventListener("keydown",ev=>{if(ev.target.tagName==="INPUT")return;
-  if(ev.key==="/"){ev.preventDefault();document.getElementById("q").focus()}else if(ev.key==="Escape"){if(helpov.classList.contains("on"))helpov.classList.remove("on");else if(replayOn)stopReplay();else if(sel)select(null);else if(focusRow!=null)focusChain(focusRow);else closeInsp()}
-  else if(ev.key==="?")helpov.classList.toggle("on");else if(ev.key==="+"||ev.key==="=")zoomAt(1.25,VW/2,VH/2);else if(ev.key==="-")zoomAt(.8,VW/2,VH/2);else if(ev.key==="0")fitView(true);else if(ev.key==="1")document.getElementById("one").click();
+const helpov=document.getElementById('helpov');
+// Move the modal outside the app so the background can become inert as a unit.
+helpov.style.position='fixed';document.body.appendChild(helpov);
+const helpPanel=ATLAS_UX.panel(helpov,{modal:true,background:document.getElementById('app'),fallback:()=>document.getElementById('help')});helpov.setAttribute('aria-label','ATLAS FLOW 사용법');
+function closeHelp(){helpov.classList.remove('on');helpPanel.close()}
+function toggleHelp(){if(helpov.classList.contains('on'))closeHelp();else{helpov.classList.add('on');helpPanel.open()}}
+document.getElementById('help').onclick=toggleHelp;document.getElementById('helpclose').onclick=closeHelp;helpov.addEventListener('click',e=>{if(e.target===helpov)closeHelp()});
+
+window.addEventListener("keydown",ev=>{if(ev.target.tagName==="INPUT"||ev.target.tagName==="TEXTAREA")return;if(ev.target.closest("#insp")&&ev.key.startsWith("Arrow"))return;
+  if(ev.key==="/"){ev.preventDefault();document.getElementById("q").focus()}else if(ev.key==="Escape"){if(helpov.classList.contains("on"))closeHelp();else if(replayOn)stopReplay();else if(sel)select(null);else if(focusRow!=null)focusChain(focusRow);else closeInsp()}
+  else if(ev.key==="?")toggleHelp();else if(ev.key==="+"||ev.key==="=")zoomAt(1.25,VW/2,VH/2);else if(ev.key==="-")zoomAt(.8,VW/2,VH/2);else if(ev.key==="0")fitView(true);else if(ev.key==="1")document.getElementById("one").click();
   else if(ev.key==="ArrowLeft"){view.x+=80;clamp()}else if(ev.key==="ArrowRight"){view.x-=80;clamp()}else if(ev.key==="ArrowUp"){view.y+=80;clamp()}else if(ev.key==="ArrowDown"){view.y-=80;clamp()}});
 // ───────── 미니맵 ─────────
 function buildMini(){mini=document.getElementById("minisvg");mini.innerHTML="";mini.setAttribute("viewBox",`0 0 ${WW} ${WH}`);
   N.filter(n=>n.kind!=="co").forEach(n=>{const c=el("circle",{cx:n.x,cy:n.y,r:n.kind==="theme"?9:(n.tier==="HEAT"?16:12),fill:n.kind==="theme"?"#C9B88A":TC[n.tier],"fill-opacity":.8});c.dataset.id=n.id;mini.appendChild(c)});
   mini.vp=el("rect",{class:"vp"});mini.appendChild(mini.vp);
-  document.getElementById("mini").onclick=ev=>{const r=mini.getBoundingClientRect();const wx=(ev.clientX-r.left)/r.width*WW,wy=(ev.clientY-r.top)/r.height*WH;const right=insp.classList.contains("open")?390:0;const c=cl((VW-right)/2-wx*view.k,VH/2-wy*view.k,view.k);tween={t:performance.now(),d:RED?0:320,x0:view.x,y0:view.y,k0:view.k,x1:c.x,y1:c.y,k1:view.k}}}
-function updateMini(){if(!mini||!mini.vp)return;const right=insp.classList.contains("open")?390:0;mini.vp.setAttribute("x",-view.x/view.k);mini.vp.setAttribute("y",-view.y/view.k);mini.vp.setAttribute("width",(VW-right)/view.k);mini.vp.setAttribute("height",VH/view.k);
+  document.getElementById("mini").onclick=ev=>{const r=mini.getBoundingClientRect();const wx=(ev.clientX-r.left)/r.width*WW,wy=(ev.clientY-r.top)/r.height*WH;const right=insp.classList.contains("open")&&VW>700?390:0;const c=cl((VW-right)/2-wx*view.k,VH/2-wy*view.k,view.k);tween={t:performance.now(),d:RED?0:320,x0:view.x,y0:view.y,k0:view.k,x1:c.x,y1:c.y,k1:view.k}}}
+function updateMini(){if(!mini||!mini.vp)return;const right=insp.classList.contains("open")&&VW>700?390:0;mini.vp.setAttribute("x",-view.x/view.k);mini.vp.setAttribute("y",-view.y/view.k);mini.vp.setAttribute("width",(VW-right)/view.k);mini.vp.setAttribute("height",VH/view.k);
   mini.querySelectorAll("circle").forEach(c=>{const n=byId[c.dataset.id];if(n){c.setAttribute("cx",n.x);c.setAttribute("cy",n.y)}})}
 // ───────── 인스펙터 ─────────
 function head(title,meta){return`<div class="top"><div><h2>${title}</h2><div class="meta">${meta}</div></div><button class="x" title="닫기 (Esc)" onclick="select(null)">×</button></div>`}
@@ -432,7 +472,7 @@ function inspect(n){
   let h="";
   if(n.kind==="ind"){const i=n.ref;const col=TC[i.tier];
     h+=head(esc(i.name),i.id+" · "+esc(CHAINS[n.row].name)+" · "+STAGES[n.col]);
-    h+=`<span class="tier" style="color:${col};border-color:${col}">${i.tier}</span><span class="tier" style="color:var(--mute);border-color:var(--line)">${BAL[i.balance]||""} ${esc(i.balance)}${i.cycle_stage?" · "+esc(i.cycle_stage):""}</span>`;
+    h+=`<span class="tier" style="color:${col};border-color:${col}">${i.tier}</span><span class="tier" style="color:var(--mute);border-color:var(--line)">${BAL[i.balance]||""} ${esc(i.balance)}${i.cycle_stage?" · "+esc(i.cycle_stage):""}</span>`+ATLAS_PRICE.coreBadgeHTML(i.id);
     h+=`<div class="btns"><button onclick="centerOn(byId['${n.id}'])">여기로 확대</button><button onclick="toggleCo(byId['${n.id}'])">${expanded.has(n.id)?"기업 접기":"기업 펼치기 ("+n.cos.length+")"}</button><button onclick="focusChain(${n.row})">체인 포커스</button></div>`;
     if(n.chg)h+=`<div class="chg"><b>이번 갱신 · ${esc(todayKey)}</b>${n.chg.from&&n.chg.from!==n.chg.to?esc(n.chg.from)+" → "+esc(n.chg.to)+" · ":""}${esc(String(n.chg.reason).slice(0,220))}</div>`;
     h+=ATLAS_PRICE.reviewHTML(i);
@@ -479,7 +519,35 @@ document.getElementById("rpp").onclick=function(){rPaused=!rPaused;this.textCont
 // ───────── 컨트롤 ─────────
 document.querySelectorAll(".chip[data-tier]").forEach(b=>b.onclick=()=>{b.classList.toggle("on");const t=b.dataset.tier;b.classList.contains("on")?tiers.add(t):tiers.delete(t);applyFilters()});
 document.getElementById("xtoggle").onclick=function(){showX=!showX;this.classList.toggle("on",showX);applyFilters()};
-document.getElementById("reset").onclick=()=>{expanded.clear();focusRow=null;sel=null;document.getElementById("q").value="";build();layout();render();closeInsp();clearLight();history.replaceState(null,"","#");fitView(true)};
+function resetFlow(){
+  flowNav.navigate('__reset',()=>{
+    expanded.clear();focusRow=null;sel=null;showX=false;tiers.clear();Object.keys(TC).forEach(t=>tiers.add(t));
+    document.querySelectorAll('.chip[data-tier]').forEach(b=>b.classList.toggle('on',tiers.has(b.dataset.tier)));
+    document.getElementById('xtoggle').classList.remove('on');document.getElementById('q').value='';sres.style.display='none';
+    build();layout();render();closeInsp();clearLight();fitView(false);
+  },location.pathname);
+}
+document.getElementById('reset').onclick=resetFlow;
+function installFlowNavigation(){
+  flowNav=ATLAS_UX.mount({
+    key:m=>m.selected||null,
+    capture:()=>({selected:sel?.id||null,expanded:[...expanded],focusRow,tiers:[...tiers],showX,query:document.getElementById('q').value,view:{...view},positions:N.map(n=>({id:n.id,x:n.x,y:n.y})),inspectorOpen:insp.classList.contains('open')}),
+    restore:m=>{
+      tween=null;expanded.clear();(m.expanded||[]).forEach(id=>expanded.add(id));focusRow=m.focusRow??null;tiers.clear();(m.tiers||[]).forEach(t=>tiers.add(t));showX=!!m.showX;
+      build();layout();render();
+      document.querySelectorAll('.chip[data-tier]').forEach(b=>b.classList.toggle('on',tiers.has(b.dataset.tier)));
+      document.getElementById('xtoggle').classList.toggle('on',showX);document.getElementById('q').value=m.query||'';sres.style.display='none';
+      if(m.selected&&byId[m.selected])select(byId[m.selected],false);else{sel=null;clearLight();closeInsp()}
+      if(m.focusRow!=null&&!m.selected&&m.inspectorOpen){const set=new Set(N.filter(n=>n.kind==='ind'&&n.row===m.focusRow));inspectChain(m.focusRow,set);openInsp()}
+      (m.positions||[]).forEach(p=>{if(byId[p.id])Object.assign(byId[p.id],{x:p.x,y:p.y})});view={...m.view};tween=null;
+    },
+    fromURL:id=>{
+      if(id.includes('::')){const parent=id.split('::')[0];if(byId[parent]){expanded.add(parent);rebuild()}}
+      if(byId[id])select(byId[id],true);if(tween){view={x:tween.x1,y:tween.y1,k:tween.k1};tween=null;}
+    }
+  });flowNav.start();
+}
+
 window.addEventListener("resize",()=>{measure();clamp()});
 boot();
 </script>

@@ -188,6 +188,7 @@ button{font-family:inherit;cursor:pointer}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
 </style>
 <script src="./ATLAS_PRICE.js"></script>
+<script src="./ATLAS_UX.js"></script>
 <style id="atlas-integration-responsive">@media(max-width:1500px){.masthead{flex-wrap:wrap}.masthead .xnav{flex-shrink:0;white-space:nowrap}.masthead .xnav a{white-space:nowrap}.masthead .wordmark{flex-shrink:0}}
 @media(max-width:900px){
 html,body{height:auto;overflow-x:hidden;overflow-y:auto}.shell{height:auto;min-height:100dvh;grid-template-columns:minmax(0,1fr);grid-template-rows:auto 42dvh auto minmax(350px,1fr)}
@@ -226,6 +227,7 @@ html,body{height:auto;overflow-x:hidden;overflow-y:auto}.shell{height:auto;min-h
  </div>
 
  <div class="dock">
+  <form id="graphFind" onsubmit="event.preventDefault();this.dataset.pendingQuery=document.getElementById('graphQuery').value;document.getElementById('graphFindStatus').textContent='지도를 준비한 뒤 선택합니다.'" style="display:flex;gap:5px;align-items:center;flex-wrap:wrap"><label for="graphQuery" style="font-size:11px">산업·기업 찾기</label><input id="graphQuery" list="graphChoices" placeholder="산업명 또는 티커" style="width:145px;max-width:100%;background:var(--panel);color:var(--ink);border:1px solid var(--line2);padding:6px" autocomplete="off"><datalist id="graphChoices"></datalist><button type="submit" class="chip">열기</button><span id="graphFindStatus" role="status" style="font-size:11px"></span></form>
   <span class="lbl">티어</span>
   <div class="grp" id="tierChips"></div>
   <span class="sep"></span>
@@ -239,7 +241,8 @@ html,body{height:auto;overflow-x:hidden;overflow-y:auto}.shell{height:auto;min-h
  </div>
 
  <aside class="inspector">
-  <div class="insp-head">
+  <div class="insp-head" tabindex="-1" aria-label="선택 상세">
+   <div id="graphPanelNav"><button type="button" class="atlas-close" id="graphClose" aria-label="선택 상세 닫기">× 닫기</button></div>
    <div class="insp-eyebrow" id="ieyebrow">탐색기</div>
    <div class="insp-title" id="ititle">관계망을 클릭해 파고드세요</div>
    <div class="insp-sub" id="isub"></div>
@@ -529,7 +532,8 @@ function edgeBaseColor(e){
   return 'rgba(120,132,144,.26)';
 }
 
-let selId=null, hoverId=null;
+let selId=null, hoverId=null,graphNav=null,focusNodeId=null,graphOpener=null,graphOpenerY=0;
+const graphIntro=document.getElementById("ibody").innerHTML;
 let edgeEls=[], nodeEls={}, labelEls={};
 
 function renderStatic(){
@@ -578,10 +582,12 @@ function renderStatic(){
     // deep-dived company mark
     if(n.kind==='company'&&n.verification==='DEEP_DIVED'){ const dot=document.createElementNS(NS,'circle');
       dot.setAttribute('r',1.8); dot.setAttribute('fill','#46B3AC'); dot.setAttribute('stroke','#14171A'); dot.setAttribute('stroke-width',.6); g.appendChild(dot);}
-    g.addEventListener('mousedown',ev=>startDrag(ev,n));
+    g.dataset.nodeId=n.id;g.setAttribute('role','button');g.setAttribute('aria-label',(n.kind==='industry'?'산업 ':n.kind==='company'?'기업 ':'테마 ')+(n.ticker||'')+' '+n.label);g.setAttribute('tabindex','-1');
+    g.addEventListener('pointerdown',ev=>startDrag(ev,n));
+    g.addEventListener('keydown',ev=>graphNodeKey(ev,n));
     g.addEventListener('mouseenter',()=>setHover(n.id));
     g.addEventListener('mouseleave',()=>setHover(null));
-    g.addEventListener('click',ev=>{ if(!draggedMoved){ selectNode(n.id);} });
+    g.addEventListener('click',ev=>{ ev.stopPropagation();if(performance.now()>=graphSuppressUntil&&!draggedMoved){ selectNode(n.id);} });
     gNodes.appendChild(g); nodeEls[n.id]={g,shape};
     // label
     const t=document.createElementNS(NS,'text');
@@ -594,7 +600,7 @@ function renderStatic(){
     t.setAttribute('paint-order','stroke'); t.setAttribute('stroke','#14171A'); t.setAttribute('stroke-width',2.4);
     gLabels.appendChild(t); labelEls[n.id]=t;
   });
-  updateVisibility();
+  updateVisibility();syncPositions();
 }
 
 function shortLabel(n){
@@ -651,6 +657,7 @@ function updateVisibility(){
       lop = (n.kind==='company')? (view.k>1.15?.9:0) : (n.kind==='industry'&&(n.tier==='NEUTRAL'||n.tier==='COLD'||n.tier==='FROZEN')? (view.k>0.9?.85:0.0):1);
     }
     nodeEls[id].g.style.opacity=op;
+    nodeEls[id].g.setAttribute('tabindex',nodeVisible(n)&&(id===(focusNodeId||selId)||(!focusNodeId&&!selId&&n===NODES.find(nodeVisible)))?'0':'-1');
     labelEls[id].style.opacity=lop;
     if(id===selId){ nodeEls[id].shape.setAttribute('filter','url(#glowStrong)'); }
     else if(n.kind==='industry'&&n.tier==='HEAT'){ nodeEls[id].shape.setAttribute('filter','url(#glow)'); }
@@ -679,10 +686,29 @@ function setHover(id){ hoverId=id; updateVisibility(); }
 
 /* ---------- selection & drill-down ---------- */
 function selectNode(id){
-  selId=id; const n=NBYID[id];
-  if(n.kind==='industry') expandIndustry(n);
-  updateVisibility(); renderInspector(n); centerOn(n);
+  if(!NBYID[id])return;
+  const apply=()=>{
+    graphOpener=document.activeElement;graphOpenerY=scrollY;selId=id;focusNodeId=id;const n=NBYID[id];
+    if(n.kind==='industry')expandIndustry(n);
+    updateVisibility();renderInspector(n);centerOn(n);$('ibody').scrollTop=0;
+    graphNav?.backButton($('graphPanelNav'));ATLAS_UX.enhance(document.querySelector('.inspector'));
+    $('graphClose').focus({preventScroll:true});
+    if(innerWidth<=900&&!graphNav?.restoring)document.querySelector('.inspector').scrollIntoView({block:'start',behavior:ATLAS_UX.reduce()?'instant':'smooth'});
+  };
+  if(graphNav)graphNav.navigate(id,apply,'#'+encodeURIComponent(id));else apply();
 }
+function clearGraphSelection(){
+  const apply=()=>{selId=null;hoverId=null;updateVisibility();$('ieyebrow').textContent='탐색기';$('ititle').textContent='관계망을 클릭해 파고드세요';$('isub').textContent='';$('ibody').innerHTML=graphIntro;
+    (graphOpener?.isConnected&&graphOpener!==document.body?graphOpener:$('graphQuery')).focus({preventScroll:true});if(!graphNav?.restoring)scrollTo({top:graphOpenerY,behavior:'instant'})};
+  if(graphNav)graphNav.navigate(null,apply,location.pathname);else apply();
+}
+function graphNodeKey(ev,n){
+  if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();ev.stopPropagation();selectNode(n.id);return}
+  if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(ev.key))return;
+  ev.preventDefault();ev.stopPropagation();const vis=NODES.filter(nodeVisible),index=vis.indexOf(n),delta=['ArrowLeft','ArrowUp'].includes(ev.key)?-1:1,next=vis[(index+delta+vis.length)%vis.length];
+  focusNodeId=next.id;updateVisibility();nodeEls[next.id].g.focus({preventScroll:true});centerOn(next);
+}
+
 function ensureCompany(ticker,indid,card){
   const cid='C::'+ticker, canonical=(window.PACK.company_nodes||[]).find(n=>n.ticker===ticker);
   const ind=NBYID[indid];if(!ind)return null;
@@ -722,7 +748,7 @@ function renderIndustry(n){
   const review=ATLAS_PRICE.reviewHTML(window.PACK.industries.find(i=>i.id===n.id))+(window.PACK.edges||[]).filter(e=>e.from===n.id||e.to===n.id).map(ATLAS_PRICE.edgeHTML).join('');
   $('ieyebrow').innerHTML=`<span>산업 · ${esc(n.sector)}</span>`;
   $('ititle').textContent=n.label;
-  $('isub').innerHTML=`${n.id} · ${tierPill(n.tier)}`;
+  $('isub').innerHTML=`${n.id} · ${tierPill(n.tier)} ${ATLAS_PRICE.coreBadgeHTML(n.id)}`;
   const mr=n.market_read||{};
   const roles={ANCHOR:[],REGIME_LEADER:[],HIGH_BETA:[],null:[]};
   (n.companies||[]).forEach(c=>{ (roles[c.role]||roles['null']).push(c); });
@@ -816,8 +842,8 @@ function renderCompany(n){
   if(n.verification==='DEEP_DIVED'&&n.deep_dive_ref){ const r=n.deep_dive_ref;
     html+=`<div class="sec"><div class="sec-h" style="color:var(--theme)">보존된 DD 기준 필드 <span style="color:var(--ink-faint)">${esc(r.as_of||'')}</span></div>
       ${r.stance_zone?`<div class="kv"><b>DD 원문 스탠스:</b> <span class="metric">${ATLAS_PRICE.describe((window.PACK.company_nodes||[]).find(c=>c.ticker===n.ticker)||{}).suppressed?'표시 억제 · DD 원문 스탠스 접음':esc(r.stance_zone)}</span></div>`:''}
+      ${r.thesis_oneline?`<div class="txt" style="margin-top:6px"><b style="color:var(--ink)">보존된 DD 논제 · ${esc(r.as_of||'')}:</b> ${esc(r.thesis_oneline)}</div>`:''}
       ${ATLAS_PRICE.html((window.PACK.company_nodes||[]).find(c=>c.ticker===n.ticker))}
-      ${r.thesis_oneline?`<div class="txt" style="margin-top:6px"><b style="color:var(--ink)">Thesis:</b> ${esc(r.thesis_oneline)}</div>`:''}
       ${r.moat_verdict?`<div class="txt"><b style="color:var(--ink)">해자:</b> ${esc(r.moat_verdict)}</div>`:''}
       ${r.mgmt_verdict?`<div class="txt"><b style="color:var(--ink)">경영진:</b> ${esc(r.mgmt_verdict)}</div>`:''}
       ${(r.kpi_tripwires&&r.kpi_tripwires.length)?`<div class="txt" style="margin-top:6px"><b style="color:var(--ink)">보존된 원문 KPI·임계값 (당시 현값 포함):</b></div>`+r.kpi_tripwires.map(t=>`<div class="txt">· ${esc(t)}</div>`).join(''):''}
@@ -832,8 +858,8 @@ function renderCompany(n){
   $('ibody').innerHTML=html;
 }
 function focusCompany(tk,indid){
-  const n=ensureCompany(tk,indid,(NBYID[indid]&&NBYID[indid].companies||[]).find(c=>c.ticker===tk));
-  if(n){showState.company=true;renderStatic();selectNode(n.id);}
+  const apply=()=>{const n=ensureCompany(tk,indid,(NBYID[indid]?.companies||[]).find(c=>c.ticker===tk));if(n){showState.company=true;renderStatic();selectNode(n.id)}};
+  if(graphNav)graphNav.navigate('C::'+tk,apply,'#'+encodeURIComponent('C::'+tk));else apply();
 }
 function balKo(b){return {SHORTAGE:'공급부족',BALANCED:'균형',GLUT:'공급과잉'}[b]||b||'—';}
 function cycKo(c){return {RECOVERY:'회복초입',EXPANSION:'확장',PEAK:'피크권',DOWNTURN:'하강',TROUGH:'바닥권'}[c]||c||'—';}
@@ -850,20 +876,44 @@ function showEdgeTip(ev,e){
 }
 function hideTip(){tip.style.opacity=0;}
 
-/* ---------- drag / pan / zoom ---------- */
-let dragging=null, draggedMoved=false, dragOff={x:0,y:0};
-let panning=false, panStart={x:0,y:0,vx:0,vy:0};
-function svgPt(ev){ const r=svg.getBoundingClientRect();
-  return {x:(ev.clientX-r.left-view.x)/view.k, y:(ev.clientY-r.top-view.y)/view.k};}
-function startDrag(ev,n){ ev.stopPropagation(); dragging=n; draggedMoved=false;
-  const p=svgPt(ev); dragOff={x:n.x-p.x,y:n.y-p.y}; alpha=Math.max(alpha,0.4);}
-svg.addEventListener('mousedown',ev=>{ if(dragging)return; panning=true; svg.classList.add('grabbing');
-  panStart={x:ev.clientX,y:ev.clientY,vx:view.x,vy:view.y}; });
-window.addEventListener('mousemove',ev=>{
-  if(dragging){ const p=svgPt(ev); dragging.x=p.x+dragOff.x; dragging.y=p.y+dragOff.y; dragging.vx=0;dragging.vy=0; draggedMoved=true; }
-  else if(panning){ view.x=panStart.vx+(ev.clientX-panStart.x); view.y=panStart.vy+(ev.clientY-panStart.y); applyView(); }
+/* ---------- mouse/touch pointer pan, node drag and pinch ---------- */
+let dragging=null,draggedMoved=false,dragOff={x:0,y:0},graphSuppressUntil=0;
+let panning=null,graphPinch=null,graphPointers=new Map();
+function svgPt(ev){const r=svg.getBoundingClientRect();return{x:(ev.clientX-r.left-view.x)/view.k,y:(ev.clientY-r.top-view.y)/view.k}}
+function startDrag(ev,n){
+  if(ev.button!==0&&ev.pointerType!=='touch')return;
+  if(graphPointers.size>1)return;
+  ev.stopPropagation();dragging=n;draggedMoved=false;
+  const p=svgPt(ev);dragOff={x:n.x-p.x,y:n.y-p.y};alpha=Math.max(alpha,.4);
+}
+svg.addEventListener('pointerdown',ev=>{
+  if(ev.button!==0&&ev.pointerType!=='touch')return;
+  ev.target.setPointerCapture?.(ev.pointerId);graphPointers.set(ev.pointerId,{x:ev.clientX,y:ev.clientY});
+  if(graphPointers.size===2){const a=[...graphPointers.values()];graphPinch={d:Math.hypot(a[0].x-a[1].x,a[0].y-a[1].y),k:view.k,cx:(a[0].x+a[1].x)/2,cy:(a[0].y+a[1].y)/2,vx:view.x,vy:view.y};dragging=null;panning=null;return}
+  draggedMoved=false;panning={x:ev.clientX,y:ev.clientY,vx:view.x,vy:view.y,moved:false};svg.classList.add('grabbing');
+},true);
+window.addEventListener('pointermove',ev=>{
+  if(!graphPointers.has(ev.pointerId))return;graphPointers.set(ev.pointerId,{x:ev.clientX,y:ev.clientY});
+  if(graphPinch&&graphPointers.size===2){
+    const a=[...graphPointers.values()],r=svg.getBoundingClientRect(),d=Math.hypot(a[0].x-a[1].x,a[0].y-a[1].y),k=Math.min(4,Math.max(.12,graphPinch.k*d/Math.max(1,graphPinch.d))),cx=(a[0].x+a[1].x)/2-r.left,cy=(a[0].y+a[1].y)/2-r.top;
+    view.x=cx-(graphPinch.cx-r.left-graphPinch.vx)*k/graphPinch.k;view.y=cy-(graphPinch.cy-r.top-graphPinch.vy)*k/graphPinch.k;view.k=k;applyView();updateVisibility();graphSuppressUntil=performance.now()+350;return;
+  }
+  if(dragging){
+    if(panning&&Math.hypot(ev.clientX-panning.x,ev.clientY-panning.y)>4)draggedMoved=true;
+    if(draggedMoved){const p=svgPt(ev);dragging.x=p.x+dragOff.x;dragging.y=p.y+dragOff.y;dragging.vx=0;dragging.vy=0;syncPositions()}
+  }else if(panning){
+    if(Math.hypot(ev.clientX-panning.x,ev.clientY-panning.y)>4)panning.moved=true;
+    if(panning.moved){view.x=panning.vx+ev.clientX-panning.x;view.y=panning.vy+ev.clientY-panning.y;applyView()}
+  }
 });
-window.addEventListener('mouseup',()=>{ dragging=null; panning=false; svg.classList.remove('grabbing'); });
+function endGraphPointer(ev){
+  if(!graphPointers.has(ev.pointerId))return;
+  if(graphPinch||draggedMoved||panning?.moved||ev.type==='pointercancel')graphSuppressUntil=performance.now()+350;
+  graphPointers.delete(ev.pointerId);graphPinch=null;dragging=null;panning=null;
+  if(graphPointers.size===1){const p=[...graphPointers.values()][0];panning={x:p.x,y:p.y,vx:view.x,vy:view.y,moved:false}}
+  if(!graphPointers.size)svg.classList.remove('grabbing');
+}
+window.addEventListener('pointerup',endGraphPointer);window.addEventListener('pointercancel',endGraphPointer);
 svg.addEventListener('wheel',ev=>{ ev.preventDefault(); const r=svg.getBoundingClientRect();
   const mx=ev.clientX-r.left, my=ev.clientY-r.top;
   const f=ev.deltaY<0?1.12:0.89; const nk=Math.min(4,Math.max(0.28,view.k*f));
@@ -896,18 +946,55 @@ $('toggleTheme').onclick=function(){ showState.theme=!showState.theme; this.clas
   alpha=Math.max(alpha,0.3); updateVisibility();};
 $('toggleHop2').onclick=function(){ showState.hop2=!showState.hop2;
   this.classList.toggle('off',!showState.hop2); updateVisibility(); };
-$('resetBtn').onclick=()=>{ selId=null;hoverId=null;
-  NODES=NODES.filter(n=>!(n.kind==='company'&&n.id.split('::').length>2)); NBYID={};NODES.forEach(n=>NBYID[n.id]=n);
-  EDGES=EDGES.filter(e=>NBYID[e.from]&&NBYID[e.to]);
-  location.reload();
-};
+$('resetBtn').onclick=()=>graphNav.navigate('__reset',()=>{
+  clearGraphSelection();Object.assign(showState,{company:false,theme:true,hop2:true,tiers:{HEAT:1,WARM:1,NEUTRAL:1,COLD:0,FROZEN:0}});
+  NODES.forEach(n=>{if(n.kind==='company')n.active=false});syncGraphControls();updateVisibility();fitView();$('graphQuery').value='';
+},location.pathname);
+$('graphClose').onclick=clearGraphSelection;
+window.addEventListener('keydown',e=>{if(e.target.matches('input,textarea'))return;if(e.key==='Escape')clearGraphSelection()});
+function syncGraphControls(){
+  [...$('tierChips').children].forEach((b,i)=>b.classList.toggle('off',!showState.tiers[['HEAT','WARM','NEUTRAL','COLD','FROZEN'][i]]));
+  $('toggleCo').classList.toggle('off',!showState.company);$('toggleTheme').classList.toggle('off',!showState.theme);$('toggleHop2').classList.toggle('off',!showState.hop2);$('coldWatch').classList.toggle('on',!!(showState.tiers.COLD||showState.tiers.FROZEN));
+}
+function ensureGraphURL(id){
+  const apply=()=>{
+    if(id?.startsWith('C::')){const t=id.slice(3),c=window.PACK.company_nodes.find(n=>n.ticker===t);if(c){const n=ensureCompany(t,c.industries[0],c);if(n){n.active=true;showState.company=true;renderStatic()}}}
+    if(NBYID[id]){const n=NBYID[id],tier=n.kind==='industry'?n.tier:NBYID[n.industry]?.tier;if(tier)showState.tiers[tier]=1;selectNode(id);syncGraphControls()}
+  };
+  if(graphNav)graphNav.navigate(id||null,apply,id?'#'+encodeURIComponent(id):location.pathname);else apply();
+}
+function installGraphNavigation(){
+  const queuedQuery=$('graphFind').dataset.pendingQuery;
+  const choices=[...window.PACK.industries.map(i=>({value:i.id+' '+i.name,id:i.id})),...window.PACK.company_nodes.map(n=>({value:n.ticker+' '+n.name,id:'C::'+n.ticker})),...window.PACK.themes.map(t=>({value:t.id+' '+t.name,id:t.id}))];
+  choices.forEach(c=>{const o=document.createElement('option');o.value=c.value;$('graphChoices').append(o)});
+  $('graphFind').onsubmit=e=>{
+    e.preventDefault();const q=$('graphQuery').value.trim().toLowerCase();if(!q)return;
+    let matches=choices.filter(c=>c.value.toLowerCase()===q||c.value.split(' ')[0].toLowerCase()===q);
+    if(!matches.length)matches=choices.filter(c=>c.value.toLowerCase().includes(q));
+    if(matches.length!==1){$('graphFindStatus').textContent=matches.length?'여러 결과가 있습니다. 목록에서 대상을 선택하세요.':'결과 없음';return}
+    $('graphFindStatus').textContent='';ensureGraphURL(matches[0].id);syncGraphControls();
+  };
+  graphNav=ATLAS_UX.mount({
+    key:m=>m.selected||null,
+    capture:()=>({selected:selId,show:JSON.parse(JSON.stringify(showState)),view:{...view},nodes:NODES.map(n=>({id:n.id,x:n.x,y:n.y,active:n.active})),query:$('graphQuery').value,focus:focusNodeId,openerY:graphOpenerY,inspectorScroll:document.querySelector('.inspector').scrollTop}),
+    restore:m=>{
+      (m.nodes||[]).forEach(p=>{if(!NBYID[p.id]&&p.id.startsWith('C::')){const c=window.PACK.company_nodes.find(c=>c.ticker===p.id.slice(3));if(c)ensureCompany(c.ticker,c.industries[0],c)}});
+      Object.assign(showState,m.show);renderStatic();if(m.selected&&NBYID[m.selected])selectNode(m.selected);else clearGraphSelection();
+      Object.assign(showState,m.show);(m.nodes||[]).forEach(p=>{if(NBYID[p.id])Object.assign(NBYID[p.id],{x:p.x,y:p.y,vx:0,vy:0,active:p.active})});
+      view={...m.view};focusNodeId=m.focus;graphOpenerY=m.openerY||0;applyView();syncPositions();syncGraphControls();updateVisibility();$('graphQuery').value=m.query||'';document.querySelector('.inspector').scrollTop=m.inspectorScroll||0;
+      running=false;
+    },
+    fromURL:id=>ensureGraphURL(id)
+  });graphNav.backButton($('graphPanelNav'));graphNav.start();$('graphFindStatus').textContent='';
+  if(queuedQuery!==undefined){delete $('graphFind').dataset.pendingQuery;$('graphQuery').value=queuedQuery;$('graphFind').requestSubmit()}
+}
 
 /* ---------- main loop ---------- */
 function loop(){ if(running){ for(let i=0;i<2;i++) tick(); syncPositions(); } requestAnimationFrame(loop);}
 
 /* ---------- boot ---------- */
 function boot(){
-  $('mmeta').textContent=`${GRAPH.meta.as_of} · 산업 ${GRAPH.meta.n_industries} · 엣지 ${GRAPH.meta.n_edges} · ${GRAPH.meta.os_version}`;
+  $('mmeta').textContent=`연구 ${GRAPH.meta.as_of} · UI ${window.PACK.meta.ui_revision?.id||'기존 판본'} · 산업 ${GRAPH.meta.n_industries} · 엣지 ${GRAPH.meta.n_edges} · ${GRAPH.meta.os_version}`;
   initModel(); buildLayers(); buildTierChips(); renderStatic();
   if(!showState.company) $('toggleCo').classList.add('off');
   // contrarian watch toggle: flips COLD+FROZEN together
@@ -923,8 +1010,10 @@ function boot(){
     });
     alpha=Math.max(alpha,0.3); updateVisibility(); }; }
   // settle then fit
-  let s=0; const warm=()=>{ for(let i=0;i<6;i++)tick(); s++; if(s<40){syncPositions();requestAnimationFrame(warm);} else {syncPositions();fitView();loop();} };
-  warm();
+  const ready=()=>{syncPositions();fitView();running=!ATLAS_UX.reduce();installGraphNavigation();loop()};
+  if(ATLAS_UX.reduce()){for(let i=0;i<240;i++)tick();ready()}
+  else{let s=0;const warm=()=>{for(let i=0;i<6;i++)tick();s++;if(s<40){syncPositions();requestAnimationFrame(warm)}else ready()};warm()}
+  matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',e=>{running=!e.matches});
 }
 window.addEventListener('resize',()=>{ /* keep */ });
 boot();
@@ -932,11 +1021,13 @@ boot();
 </script>
 <script>
 (function(){
-  function fail(msg){ document.body.innerHTML='<div style="padding:60px 34px;font-family:var(--mono);color:#9BA3AB;line-height:1.7;max-width:640px;margin:0 auto">'+
-    '<div style="color:#A6331A;letter-spacing:.1em;margin-bottom:12px">ATLAS · 데이터 로드 실패</div>'+msg+'</div>'; }
+  ATLAS_UX.loadState(document.querySelector('.insp-body'));
+  function fail(){ATLAS_UX.loadState(document.querySelector('.insp-body'),true)}
   fetch('./data/ATLAS_PACK.json').then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
     .then(function(pack){
+      document.querySelector('.atlas-load-state')?.remove();
       window.PACK = pack;
+      ATLAS_PRICE.bindPack(pack);
       window.GRAPH = ATLAS_DERIVE.deriveGraph(pack);
       (0,eval)(document.getElementById('appcode').textContent);
     })

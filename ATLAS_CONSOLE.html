@@ -276,6 +276,7 @@ details.co.dd[open] .ddcaret{transform:rotate(90deg)}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style><script src="./ATLAS_PRICE.js"></script>
+<script src="./ATLAS_UX.js"></script>
 <style id="atlas-integration-responsive">@media(max-width:820px){
 .bar{flex-wrap:wrap;gap:8px;padding:10px 14px}.bar .chips{margin-left:0;width:100%;gap:5px}.chip{white-space:normal;overflow-wrap:anywhere;max-width:100%}
 .strip{flex-wrap:wrap;padding:8px 14px}.xnav{margin-left:0;flex-wrap:wrap}.xnav a{padding:5px 7px}
@@ -496,7 +497,7 @@ const TIER_COLOR={HEAT:'var(--heat)',WARM:'var(--warm)',NEUTRAL:'var(--neutral)'
 const ROLE_KO={ANCHOR:'대장',REGIME_LEADER:'국면 주도주',HIGH_BETA:'고베타 유망주',_:'커버리지'};
 const EDGE_KO={SUPPLIES_TO:'공급',CUSTOMER_OF:'고객',SUBSTITUTES:'대체',CAPACITY_COMPETES:'capa경쟁',
  DEMAND_COMOVES:'수요동행',INVERSE:'역상관',THEME_DRIVES:'수요구동'};
-const esc=s=>(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const esc=ATLAS_UX.escaped;
 const balKo=b=>({SHORTAGE:'공급부족',BALANCED:'균형',GLUT:'공급과잉'}[b]||b||'—');
 const cycKo=c=>({RECOVERY:'회복초입',EXPANSION:'확장',PEAK:'피크권',DOWNTURN:'하강',TROUGH:'바닥권'}[c]||c||'—');
 
@@ -519,7 +520,7 @@ const nav=$('nav');
 DATA.sectors.forEach(s=>{
   const b=document.createElement('button'); b.className='nav'; b.dataset.sec=s.name;
   b.innerHTML=`<span class="code">${s.code}</span><span class="nm">${s.name}</span><span class="cnt">${bySector[s.name].length}</span>`;
-  b.onclick=()=>{$('sec-'+s.code).scrollIntoView({behavior:'smooth',block:'start'});};
+  b.onclick=()=>{$('sec-'+s.code).scrollIntoView({behavior:ATLAS_UX.reduce()?'instant':'smooth',block:'start'});};
   nav.appendChild(b);
 });
 
@@ -558,7 +559,7 @@ DATA.sectors.forEach(s=>{
     const d=document.createElement('div'); d.className='obj'; d.tabIndex=0;
     d.dataset.tier=o.tier; d.dataset.id=o.id;
     d.innerHTML=(hasDD?`<span class="ddflag" title="딥다이브 검증 노드 보유">✓</span>`:'')+
-                `<div class="oid">${o.id}</div><div class="onm">${esc(o.name)}</div>`+
+                `<div class="oid">${o.id}</div><div class="onm">${esc(o.name)}</div>`+ATLAS_PRICE.coreBadgeHTML(o.id)+
                 (glyphs?`<div class="orole">${glyphs}</div>`:'');
     d.onclick=()=>openDrawer(o.id);
     d.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openDrawer(o.id);}};
@@ -593,20 +594,26 @@ DATA.themes.forEach(t=>{
   }).join('');
   const pwHtml=pw.map(p=>`<div class="pk"><div class="pn">${esc(p.name)} · ${p.tier}</div>`+
       `<div class="pr">${esc(p.reason)}</div><div class="pt">tripwire: ${esc(p.tripwire)}</div></div>`).join('');
-  $('diffwrap').innerHTML=ATLAS_PRICE.businessCoverageHTML(window.PACK.monthly_diff)+`<div class="diffgrid">`+
+  $('diffwrap').innerHTML=ATLAS_PRICE.businessCoverageHTML(window.PACK.monthly_diff,window.PACK.meta)+`<details class="atlas-audit-details"><summary>후보 원장·피크아웃 감시 상세</summary><div class="diffgrid">`+
     `<div class="dcard"><h4><span class="dot" style="background:var(--teal)"></span>딥다이브 후보 · NEW / REVISIT · 원장 상태</h4>${candHtml}</div>`+
-    `<div class="dcard"><h4><span class="dot" style="background:var(--warm)"></span>피크아웃 감시 · 후보 아님</h4>${pwHtml||'<div class="pr" style="color:var(--faint)">해당 없음</div>'}</div></div>`;
+    `<div class="dcard"><h4><span class="dot" style="background:var(--warm)"></span>피크아웃 감시 · 후보 아님</h4>${pwHtml||'<div class="pr" style="color:var(--faint)">해당 없음</div>'}</div></div></details>`;
 })();
 
 /* ===== drill-down drawer ===== */
 const drawer=$('drawer'), scrim=$('scrim');
-function openDrawer(id){
+let consoleNav=null,drawerSelection=null,drawerReturnTarget=null;
+const drawerPanel=ATLAS_UX.panel(drawer,{modal:true,background:document.querySelector('.app'),fallback:()=>drawerReturnTarget||document.querySelector('.obj')});
+drawer.setAttribute('aria-label','산업·회사 상세');
+function openDrawer(id){if(!IND_BY_ID[id])return;const apply=()=>renderDrawer(id);if(consoleNav)consoleNav.navigate(id,apply,'#'+id);else apply()}
+function renderDrawer(id){
+  drawerSelection=id;
+  drawerReturnTarget=document.querySelector('.obj[data-id="'+id+'"]');
   const o=IND_BY_ID[id]; if(!o) return;
   document.querySelectorAll('.obj').forEach(e=>e.classList.toggle('sel',e.dataset.id===id));
   const mr=o.market_read||{};
   $('drawerHead').innerHTML=`<button class="dclose" onclick="closeDrawer()" aria-label="닫기">✕</button>`+
     `<div class="deyebrow"><span class="did">${o.id}</span><span>${esc(o.sector)}</span>`+
-    `<span class="dtier" style="background:${TIER_COLOR[o.tier]};color:#0b1015">${o.tier} · ${TIER_KO[o.tier]}</span></div>`+
+    `<span class="dtier" style="background:${TIER_COLOR[o.tier]};color:#0b1015">${o.tier} · ${TIER_KO[o.tier]}</span> ${ATLAS_PRICE.coreBadgeHTML(o.id)}</div>`+
     `<div class="dttl">${esc(o.name)}</div><div class="ddef">${esc(o.definition)}</div>`;
 
   const roles={REGIME_LEADER:[],HIGH_BETA:[],ANCHOR:[],_:[]};
@@ -624,8 +631,8 @@ function openDrawer(id){
             (r.stance_zone?`<div class="ddvs">${ATLAS_PRICE.describe((window.PACK.company_nodes||[]).find(n=>n.ticker===c.ticker)||{}).suppressed?'표시 억제 · DD 원문 스탠스 접음':'DD 원문 스탠스 · '+esc(r.stance_zone)}</div>`:'')+
             `</summary><div class="ddbody">`+review+
             (r.as_of?`<div class="ddref-as">보존된 DD 기준 필드 · 원기준일 ${esc(r.as_of)}</div>`:'')+
-            ATLAS_PRICE.companyReviewHTML((window.PACK.company_nodes||[]).find(n=>n.ticker===c.ticker))+ATLAS_PRICE.html((window.PACK.company_nodes||[]).find(n=>n.ticker===c.ticker))+ATLAS_PRICE.reviewHTML((window.PACK.company_nodes||[]).find(n=>n.ticker===c.ticker))+
-            (r.thesis_oneline?`<div class="ddrow"><b>Thesis</b> ${esc(r.thesis_oneline)}</div>`:'')+
+            (r.thesis_oneline?`<div class="ddrow"><b>보존된 DD 논제 · ${esc(r.as_of||'')}</b> ${esc(r.thesis_oneline)}</div>`:'')+
+            ATLAS_PRICE.companyReviewHTML((window.PACK.company_nodes||[]).find(n=>n.ticker===c.ticker))+ATLAS_PRICE.reviewHTML((window.PACK.company_nodes||[]).find(n=>n.ticker===c.ticker))+ATLAS_PRICE.html((window.PACK.company_nodes||[]).find(n=>n.ticker===c.ticker))+
             (r.moat_verdict?`<div class="ddrow"><b>해자</b> ${esc(r.moat_verdict)}</div>`:'')+
             (r.mgmt_verdict?`<div class="ddrow"><b>경영진</b> ${esc(r.mgmt_verdict)}</div>`:'')+
             kpi+`</div></details>`;
@@ -679,20 +686,22 @@ function openDrawer(id){
         `<div class="etop"><span class="eo">${esc(e.other)}</span>`+
         `<span class="et">${EDGE_KO[e.type]||e.type}</span>`+
         `<span class="es">${e.strength}</span>${tgt?'<span class="ego">→ 열기</span>':''}</div>`+
-        (e.mechanism?`<div class="em">${esc(e.mechanism)}</div>`:'')+ATLAS_PRICE.edgeHTML(e)+`</div>`;};
+        (e.mechanism?`<div class="em">${esc(e.mechanism)}</div>`:'')+ATLAS_PRICE.edgeHTML({...e,from:e.dir==='→'?o.id:e.other_id,to:e.dir==='→'?e.other_id:o.id})+`</div>`;};
     h+=`<div class="sec2"><div class="h">엣지 · 전파 통로 <span style="color:var(--faint)">${o.edges.length}</span></div>`;
     if(out.length) h+=`<div class="egroup"><div class="egcap"><span class="ar">→</span>이 산업이 영향을 준다<span class="cnt">${out.length}</span></div>${out.map(row).join('')}</div>`;
     if(inc.length) h+=`<div class="egroup"><div class="egcap"><span class="ar">←</span>이 산업이 영향을 받는다<span class="cnt">${inc.length}</span></div>${inc.map(row).join('')}</div>`;
     h+=`</div>`;
   }
   if(o.tier==='HEAT')
-    h+=`<div class="action"><div class="btn" onclick="copyScreen('${esc(o.name)}')">⎘ 스크리닝 명령 복사</div></div>`;
+    h+=ATLAS_PRICE.revalidationHeld(o.id)?'<div class="action">HEAT 이월 · 현재 재검증 HOLD. 이번 교정을 새 스크리닝 권고로 세지 않습니다.</div>':`<div class="action"><div class="btn" onclick="copyScreen('${esc(o.name)}')">⎘ 스크리닝 명령 복사</div></div>`;
   h+=`<div class="ddisc">role 계층은 <b style="color:var(--dim)">이 산업을 데운 트리거 기준</b>의 조사 후보 분류입니다. SHALLOW는 미실시, ✓ 검증은 저장된 DD 시점의 검증입니다. 현재 전체 재검증을 뜻하지 않습니다. 매수 신호가 아닙니다.</div>`;
   $('drawerBody').innerHTML=h;
   $('drawerBody').scrollTop=0;
-  drawer.classList.add('show'); scrim.classList.add('show'); drawer.setAttribute('aria-hidden','false');
+  drawer.classList.add('show'); scrim.classList.add('show');
+  consoleNav?.backButton($('drawerHead'));drawerPanel.open();ATLAS_UX.enhance(drawer);
 }
-function openTheme(t){
+function openTheme(t){const apply=()=>renderThemeDrawer(t);if(consoleNav)consoleNav.navigate(t.id,apply,'#'+t.id);else apply()}
+function renderThemeDrawer(t){drawerSelection=t.id;
   $('drawerHead').innerHTML=`<button class="dclose" onclick="closeDrawer()">✕</button>`+
     `<div class="deyebrow"><span class="did">THEME</span><span>수요 원천</span></div>`+
     `<div class="dttl">${esc(t.name)}</div>`;
@@ -702,9 +711,10 @@ function openTheme(t){
     driven.map(d=>`<div class="erow" onclick="openDrawer('${d.id}')"><span class="et" style="color:${TIER_COLOR[d.tier]}">${d.tier}</span><div class="eo"><b>${esc(d.name)}</b></div></div>`).join('')+`</div>`;
   h+=`<div class="ddisc">테마는 산업 카드를 대체하지 않고 수요 드라이버로서 THEME_DRIVES 엣지로 연결됩니다.</div>`;
   $('drawerBody').innerHTML=h; $('drawerBody').scrollTop=0;
-  drawer.classList.add('show'); scrim.classList.add('show');
+  drawer.classList.add('show'); scrim.classList.add('show');consoleNav?.backButton($('drawerHead'));drawerPanel.open();ATLAS_UX.enhance(drawer);
 }
-function closeDrawer(){ drawer.classList.remove('show'); scrim.classList.remove('show'); drawer.setAttribute('aria-hidden','true');
+function closeDrawer(){const apply=closeDrawerRaw;if(consoleNav)consoleNav.navigate('view:'+consoleView(),apply,location.pathname);else apply()}
+function closeDrawerRaw(){drawerSelection=null; drawer.classList.remove('show'); scrim.classList.remove('show');drawerPanel.close();
   document.querySelectorAll('.obj.sel').forEach(e=>e.classList.remove('sel')); }
 function copyScreen(name){ const cmd='스크리닝 시작 — '+name;
   navigator.clipboard?.writeText(cmd).then(()=>toast('복사됨: '+cmd),()=>toast(cmd)); }
@@ -805,19 +815,33 @@ function renderStanceBoard(){
     ${rows.map(r=>`<details class="sbnote" data-ticker="${esc(r.tk)}"><summary>${esc(r.tk)} · ${esc(r.display.price)} · ${esc(r.display.status)}</summary>${ATLAS_PRICE.html(r.node)}</details>`).join('')}
   </details></section>`;
 }
-$('vswitch').addEventListener('click',e=>{
-  const b=e.target.closest('button[data-v]'); if(!b) return;
-  const v=b.dataset.v;
-  document.querySelectorAll('#vswitch button').forEach(x=>x.classList.toggle('cur',x===b));
+function consoleView(){return document.querySelector('#vswitch .cur')?.dataset.v||'browse'}
+function setConsoleView(v){
+  document.querySelectorAll('#vswitch button').forEach(x=>x.classList.toggle('cur',x.dataset.v===v));
   const browse=v==='browse';
-  $('canvas').hidden=!browse;
-  $('diffwrap').hidden=!browse;
+  $('canvas').hidden=!browse;$('diffwrap').hidden=!browse;
   document.querySelectorAll('.canvas .block').forEach(x=>x.hidden=!browse);
   document.querySelector('.rail').style.visibility=browse?'':'hidden';
-  $('stanceBoard').hidden=browse;
-  if(!browse) renderStanceBoard();
-  window.scrollTo({top:0});
+  $('stanceBoard').hidden=browse;if(!browse)renderStanceBoard();
+  scrollTo({top:0,behavior:'instant'});
+}
+$('vswitch').addEventListener('click',e=>{
+  const b=e.target.closest('button[data-v]');if(!b)return;
+  consoleNav.navigate('view:'+b.dataset.v,()=>{closeDrawerRaw();setConsoleView(b.dataset.v)},'#view='+b.dataset.v);
 });
+consoleNav=ATLAS_UX.mount({
+  key:m=>m.selected||'view:'+m.view,
+  capture:()=>({selected:drawerSelection,view:consoleView(),filters:[...active]}),
+  restore:m=>{
+    active.clear();(m.filters||[]).forEach(t=>active.add(t));
+    document.querySelectorAll('#filters .flt').forEach(b=>b.classList.toggle('off',!active.has(b.dataset.k)));applyFilter();setConsoleView(m.view||'browse');
+    if(m.selected&&IND_BY_ID[m.selected])renderDrawer(m.selected);
+    else if(m.selected&&DATA.themes.some(t=>t.id===m.selected))renderThemeDrawer(DATA.themes.find(t=>t.id===m.selected));
+    else closeDrawerRaw();
+  },
+  fromURL:h=>{if(IND_BY_ID[h])renderDrawer(h);else if(h.startsWith('view='))setConsoleView(h.slice(5))}
+});
+consoleNav.start();
 
 /* scroll-spy */
 const obs=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting){
@@ -829,14 +853,13 @@ document.querySelectorAll('.sector').forEach(s=>obs.observe(s));
 </script>
 <script>
 (function(){
-  function fail(msg){
-    document.querySelector('.app').innerHTML='<div style="padding:60px 30px;font-family:var(--mono);color:var(--dim);line-height:1.7">'+
-      '<div style="color:var(--teal);letter-spacing:.1em;margin-bottom:12px">ATLAS · 데이터 로드 실패</div>'+
-      msg+'</div>';
-  }
+  ATLAS_UX.loadState(document.getElementById('canvasWrap'));
+  function fail(){ATLAS_UX.loadState(document.getElementById('canvasWrap'),true)}
   fetch('./data/ATLAS_PACK.json').then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
     .then(function(pack){
+      document.querySelector('.atlas-load-state')?.remove();
       window.PACK = pack;
+      ATLAS_PRICE.bindPack(pack);
       window.DATA = ATLAS_DERIVE.deriveConsole(pack, ATLAS_DERIVE.deriveGraph(pack));
       (0,eval)(document.getElementById('appcode').textContent);
     })
