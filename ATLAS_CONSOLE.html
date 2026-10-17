@@ -275,7 +275,14 @@ details.co.dd[open] .ddcaret{transform:rotate(90deg)}
   .filters{flex-direction:row;flex-wrap:wrap}.drawer{width:100vw}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head>
+</style><script src="./ATLAS_PRICE.js"></script>
+<style id="atlas-integration-responsive">@media(max-width:820px){
+.bar{flex-wrap:wrap;gap:8px;padding:10px 14px}.bar .chips{margin-left:0;width:100%;gap:5px}.chip{white-space:normal;overflow-wrap:anywhere;max-width:100%}
+.strip{flex-wrap:wrap;padding:8px 14px}.xnav{margin-left:0;flex-wrap:wrap}.xnav a{padding:5px 7px}
+.sbar{flex-wrap:wrap}#s-ver{overflow-wrap:anywhere;max-width:100%}.sbh{flex-wrap:wrap}.sbh .sub{margin-left:0}.sbsec{max-width:100%;overflow-x:auto}table.sb{min-width:520px}
+.sbnote,.txt,.krow,.em{overflow-wrap:anywhere}.app,.bar,.main,.rail,.canvas,.sbwrap{min-width:0;max-width:100%}.ct2{min-width:0}
+}</style>
+</head>
 <body>
 <div class="app">
   <div class="bar">
@@ -365,7 +372,7 @@ details.co.dd[open] .ddcaret{transform:rotate(90deg)}
         const v=VER[c.ticker]||['SHALLOW',null];
         return {ticker:c.ticker, name:c.name, chain:c.chain_position||'',
           role:(c.role!==undefined?c.role:null), role_reason:c.role_reason||'', note:c.note||'',
-          verification:v[0], deep_dive_ref:v[1]};
+          verification:v[0], deep_dive_ref:v[1], review_data:c};
       });
       const li=ind.leading_indicators||[];
       nodes.push({
@@ -374,16 +381,16 @@ details.co.dd[open] .ddcaret{transform:rotate(90deg)}
         cycle:ind.cycle_stage||'', demand:ind.demand||{}, supply:ind.supply||{},
         leading:li.map(x=>({name:x.name, reading:x.last_reading, as_of:x.as_of})),
         triggers:ind.triggers_watchlist||[], tier_rationale:ind.tier_rationale||'',
-        market_read:ind.market_read||{}, companies:comps});
+        market_read:ind.market_read||{}, evidence_holds:ind.evidence_holds||[], companies:comps});
       node_ids.add(ind.id);
     }
     // company_role map (ticker -> {...}); last write wins, same as python dict
-    const cand_ids=new Set((d.monthly_diff&&d.monthly_diff.deep_dive_candidates||[]).map(c=>c.id));
+    const cand_ids=new Set((d.monthly_diff&&d.monthly_diff.deep_dive_candidates||[]).filter(c=>c.status==='OPEN'||c.status==='PENDING_TRIGGER').map(c=>c.ticker||c.id));
     const company_role=new Map();
     for(const ind of d.industries){
       for(const c of (ind.companies||[])){
         const _dd=(VER[c.ticker]&&VER[c.ticker][0]==='DEEP_DIVED');
-        if(c.role||_dd){ company_role.set(c.ticker,{role:c.role||null,reason:c.role_reason||'',indid:ind.id,name:c.name,tier:ind.tier}); }
+        if(c.role||_dd){ const canonical=(d.company_nodes||[]).find(n=>n.ticker===c.ticker); if(!company_role.has(c.ticker)||(canonical&&canonical.industries&&canonical.industries[0]===ind.id)) company_role.set(c.ticker,{role:c.role||null,reason:c.role_reason||'',indid:ind.id,name:c.name,tier:ind.tier}); }
       }
     }
     const comp_edges=[];
@@ -395,12 +402,14 @@ details.co.dd[open] .ddcaret{transform:rotate(90deg)}
         role:v.role, role_reason:v.reason, industry:v.indid, tier:v.tier, is_candidate:cand_ids.has(tk),
         verification:vr[0], deep_dive_ref:vr[1]});
       node_ids.add(cid);
-      comp_edges.push({type:'OPERATES_IN',from:cid,to:v.indid,direction:'+',strength:'H',
-        mechanism:'이 기업의 주 사업이 해당 산업에 속함',lag:'즉시',role:v.role});
+      const canonical=(d.company_nodes||[]).find(n=>n.ticker===tk);
+      const memberships=canonical&&canonical.industries?canonical.industries:[v.indid];
+      for(const industry of memberships)if(node_ids.has(industry))comp_edges.push({type:'OPERATES_IN',from:cid,to:industry,direction:'+',strength:'H',
+        mechanism:'저장된 기업 원장의 산업 연결; 카드 대조 예외는 별도 보존',lag:'즉시',role:v.role});
     }
     // industry/theme edges where both ends exist
     const edges=[];
-    const EK=['type','from','to','direction','strength','mechanism','lag'];
+    const EK=['type','from','to','direction','strength','mechanism','lag','propagation_status','review_note'];
     for(const e of d.edges){
       if(node_ids.has(e.from)&&node_ids.has(e.to)){
         const o={}; for(const k of EK) o[k]=(e[k]!==undefined?e[k]:null); edges.push(o);
@@ -431,22 +440,28 @@ details.co.dd[open] .ddcaret{transform:rotate(90deg)}
         if(e.type==='OPERATES_IN') continue;
         const other = e.from===n.id ? e.to : e.from;
         nb.push({type:e.type, dir: e.from===n.id?'→':'←', other:(id2label[other]!==undefined?id2label[other]:other),
-          other_id:other, strength:e.strength||'', mechanism:e.mechanism||''});
+          other_id:other, strength:e.strength||'', mechanism:e.mechanism||'', propagation_status:e.propagation_status,review_note:e.review_note});
       }
       inds.push({id:n.id, sector:n.sector, name:n.label, definition:n.definition||'',
         tier:n.tier, status:'BUILT', balance:n.balance||'', balance_dir:n.balance_dir||'', cycle:n.cycle||'',
         demand:n.demand||{}, supply:n.supply||{}, leading:n.leading||[], triggers:n.triggers||[],
-        rationale:n.tier_rationale||'', market_read:n.market_read||{},
+        rationale:n.tier_rationale||'', market_read:n.market_read||{},evidence_holds:n.evidence_holds||[],
         companies:(n.companies||[]).map(c=>({ticker:c.ticker,name:c.name,chain:c.chain||'',
           role:(c.role!==undefined?c.role:null),role_reason:c.role_reason||'',
-          verification:c.verification||'SHALLOW',deep_dive_ref:c.deep_dive_ref||null})),
+          verification:c.verification||'SHALLOW',deep_dive_ref:c.deep_dive_ref||null,review_data:c.review_data})),
         edges:nb});
     }
     const themes=d.themes.map(t=>({name:t.name, thesis:t.demand_thesis||'',
       n:(t.linked_industries||[]).length, linked:t.linked_industries||[]}));
     const diff=d.monthly_diff||{};
-    const cands=(diff.deep_dive_candidates||[]).map(c=>({id:c.id,name:c.name,bucket:c.bucket,tier:c.tier,
-      role:(c.role!==undefined?c.role:undefined),why:c.why,falsifier:c.falsifier,horizon:c.horizon}));
+    const cands=(diff.deep_dive_candidates||[]).filter(c=>c.status==='OPEN'||c.status==='PENDING_TRIGGER').map(c=>{
+      const ticker=c.ticker||c.id,node=(d.company_nodes||[]).find(n=>n.ticker===ticker),industry=d.industries.find(i=>i.id===(c.industry||c.industry_id));
+      return {id:industry?industry.id:(node&&node.industries&&node.industries[0])||'',ticker,name:c.name||ticker,type:c.type||'NEW',status:c.status,
+        bucket:c.bucket,tier:c.tier||(industry&&industry.tier)||'NEUTRAL',tier_context:c.tier_context||'',
+        role:(c.role!==undefined?c.role:null),why:c.rationale||c.why||'',falsifier:c.falsifier||'미기재 · 검토 보류',horizon:c.horizon||'미기재 · 검토 보류',
+        trigger:c.trigger||null,identity_hold:!!(node&&node.identity_review),
+        industry_DD_count:industry?(d.company_nodes||[]).filter(n=>n.verification==='DEEP_DIVED'&&(n.industries||[]).includes(industry.id)).length:null};
+    });
     const peak=(diff.peak_watch||[]).map(p=>({id:p.id,name:p.name,tier:p.tier,reason:p.reason,tripwire:p.tripwire}));
     const tiers=[{k:'HEAT',label:'HEAT',desc:'수급 균형 붕괴 · 즉시 스크리닝'},
       {k:'WARM',label:'WARM',desc:'트리거 조짐 · 월간 관찰'},
@@ -570,16 +585,16 @@ DATA.themes.forEach(t=>{
     const tl=(c.tier||'').toLowerCase();
     const rl=c.role==='REGIME_LEADER'?'lead':c.role==='HIGH_BETA'?'beta':'';
     const rlab=c.role?`<span class="rl ${rl}">${ROLE_KO[c.role]}</span>`:'';
-    return `<div class="cand" onclick="openDrawer('${c.id}')"><div class="ch"><span class="bk">버킷 ${c.bucket}</span>`+
-      `<span class="cn">${esc(c.name)}</span><span class="ct t-${tl}">${c.tier}</span>${rlab}</div>`+
-      `<div class="why">${esc(c.why)}</div>`+
-      `<div class="kv"><span class="k">반증</span> ${esc(c.falsifier)}</div>`+
+    return `<div class="cand" data-ticker="${esc(c.ticker)}" data-type="${esc(c.type)}" data-status="${esc(c.status)}" onclick="openDrawer('${c.id}')"><div class="ch"><span class="bk">${esc(c.type==='REVISIT'?'REVISIT':'NEW · 버킷 '+(c.bucket||'미기재'))}</span>`+
+      `<span class="cn">${esc(c.name)}</span><span class="ct t-${tl}">${esc(c.tier)}</span>${rlab}</div>`+
+      `<div class="why">원장 논점(역사 기록) · ${esc(c.why)}</div>`+
+      `<div class="candidate-current-status">${esc(c.status)}${c.identity_hold?' · 신원 확인 HOLD':''} · 현재 산업 DD ${c.industry_DD_count??'미기재'} (과거 “0” 표기는 당시 이력)</div><div class="kv"><span class="k">반증</span> ${esc(c.falsifier)}</div>`+
       `<div class="kv"><span class="k">지평</span> ${esc(c.horizon)}</div></div>`;
   }).join('');
   const pwHtml=pw.map(p=>`<div class="pk"><div class="pn">${esc(p.name)} · ${p.tier}</div>`+
       `<div class="pr">${esc(p.reason)}</div><div class="pt">tripwire: ${esc(p.tripwire)}</div></div>`).join('');
-  $('diffwrap').innerHTML=`<div class="diffgrid">`+
-    `<div class="dcard"><h4><span class="dot" style="background:var(--teal)"></span>딥다이브 후보 · 3축 · SHALLOW만</h4>${candHtml}</div>`+
+  $('diffwrap').innerHTML=ATLAS_PRICE.businessCoverageHTML(window.PACK.monthly_diff)+`<div class="diffgrid">`+
+    `<div class="dcard"><h4><span class="dot" style="background:var(--teal)"></span>딥다이브 후보 · NEW / REVISIT · 원장 상태</h4>${candHtml}</div>`+
     `<div class="dcard"><h4><span class="dot" style="background:var(--warm)"></span>피크아웃 감시 · 후보 아님</h4>${pwHtml||'<div class="pr" style="color:var(--faint)">해당 없음</div>'}</div></div>`;
 })();
 
@@ -600,22 +615,27 @@ function openDrawer(id){
     arr.sort((a,b)=>(b.verification==='DEEP_DIVED')-(a.verification==='DEEP_DIVED'));
     return `<div class="roleg"><div class="rolecap ${cls}"><span class="mk ${mk}"></span>${ROLE_KO[key]||key} <span style="color:var(--faint)">· ${arr.length}</span></div>`+
       arr.map(c=>{const dd=c.verification==='DEEP_DIVED';const r=dd?c.deep_dive_ref:null;
-        const sub=(c.role_reason?`<div class="rz">${esc(c.role_reason)}</div>`:(c.chain?`<div class="rz">${esc(c.chain)}</div>`:''));
+        const review=ATLAS_PRICE.reviewHTML(c.review_data||c);
+        const sub=review+(c.role_reason?`<div class="rz">${esc(c.role_reason)}</div>`:(c.chain?`<div class="rz">${esc(c.chain)}</div>`:''));
         if(dd&&r){
-          const kpi=(r.kpi_tripwires&&r.kpi_tripwires.length)?`<div class="ddk"><b>KPI tripwires</b>${r.kpi_tripwires.map(t=>`<div class="ddki">· ${esc(t)}</div>`).join('')}</div>`:'';
+          const kpi=(r.kpi_tripwires&&r.kpi_tripwires.length)?`<div class="ddk"><b>보존된 원문 KPI·임계값 (당시 현값 포함)</b>${r.kpi_tripwires.map(t=>`<div class="ddki">· ${esc(t)}</div>`).join('')}</div>`:'';
           return `<details class="co dd"><summary>`+
             `<div class="ct2"><span class="tk">${esc(c.ticker)}</span><span class="nm">${esc(c.name)}</span><span class="ddbadge">✓ 검증</span><span class="ddcaret">▸</span></div>`+
-            (r.stance_zone?`<div class="ddvs">${esc(r.stance_zone)}</div>`:'')+
-            `</summary><div class="ddbody">`+
-            (r.as_of?`<div class="ddref-as">딥다이브 검증 · ${esc(r.as_of)}</div>`:'')+
+            (r.stance_zone?`<div class="ddvs">${ATLAS_PRICE.describe((window.PACK.company_nodes||[]).find(n=>n.ticker===c.ticker)||{}).suppressed?'표시 억제 · DD 원문 스탠스 접음':'DD 원문 스탠스 · '+esc(r.stance_zone)}</div>`:'')+
+            `</summary><div class="ddbody">`+review+
+            (r.as_of?`<div class="ddref-as">보존된 DD 기준 필드 · 원기준일 ${esc(r.as_of)}</div>`:'')+
+            ATLAS_PRICE.companyReviewHTML((window.PACK.company_nodes||[]).find(n=>n.ticker===c.ticker))+ATLAS_PRICE.html((window.PACK.company_nodes||[]).find(n=>n.ticker===c.ticker))+ATLAS_PRICE.reviewHTML((window.PACK.company_nodes||[]).find(n=>n.ticker===c.ticker))+
             (r.thesis_oneline?`<div class="ddrow"><b>Thesis</b> ${esc(r.thesis_oneline)}</div>`:'')+
             (r.moat_verdict?`<div class="ddrow"><b>해자</b> ${esc(r.moat_verdict)}</div>`:'')+
             (r.mgmt_verdict?`<div class="ddrow"><b>경영진</b> ${esc(r.mgmt_verdict)}</div>`:'')+
             kpi+`</div></details>`;
         }
+        const business=ATLAS_PRICE.companyReviewHTML((window.PACK.company_nodes||[]).find(n=>n.ticker===c.ticker));
+        if(business)return `<details class="co"><summary><div class="ct2"><span class="tk">${esc(c.ticker)}</span><span class="nm">${esc(c.name)}</span></div></summary>`+sub+business+`</details>`;
         return `<div class="co"><div class="ct2"><span class="tk">${esc(c.ticker)}</span><span class="nm">${esc(c.name)}</span></div>`+sub+`</div>`;}).join('')+`</div>`;};
 
-  let h='';
+  const rawIndustry=window.PACK.industries.find(i=>i.id===id);
+  let h=ATLAS_PRICE.reviewHTML(rawIndustry);
   h+=`<div class="sec2"><div class="h">수급 · 사이클</div>`+
      `<div class="krow"><b>${balKo(o.balance)}</b> ${esc(o.balance_dir||'')} · 사이클 <b>${cycKo(o.cycle)}</b></div>`+
      `<div class="krow" style="margin-top:4px">시장인지 <span class="m">${esc(mr.consensus||'—')}</span> · 모멘텀 <span class="m">${esc(mr.momentum||'—')}</span></div>`+
@@ -645,6 +665,11 @@ function openDrawer(id){
     h+=`<div class="sec2"><div class="h">밸류체인 편입 기업 <span style="color:var(--faint);text-transform:none">역할 태그 외 커버리지${ddN?` · ✓ 검증 ${ddN}`:''}</span></div>`+
        roleBlock('_','cover','cover')+`</div>`;
   }
+  const nodeOnly=(window.PACK.company_nodes||[]).filter(n=>(n.industries||[]).includes(id)&&!(rawIndustry.companies||[]).some(c=>c.ticker===n.ticker));
+  if(nodeOnly.length){
+    roles._=nodeOnly.map(n=>({...n,role:null,chain:'노드 원장 연결 · 카드 명단 누락 이력',membership_status:'NODE_ONLY_CARD_OMISSION'}));
+    h+=`<div class="sec2"><div class="h">노드 원장 연결 · 카드 명단 누락 이력</div>`+roleBlock('_','cover','cover')+`</div>`;
+  }
   if(o.edges&&o.edges.length){
     const EC={SUPPLIES_TO:'#46B3AC',DEMAND_COMOVES:'#7FB37A',SUBSTITUTES:'#E2A63F',
       INVERSE:'#EE6A43',CAPACITY_COMPETES:'#8A9BD0',THEME_DRIVES:'#C9B88A',CUSTOMER_OF:'#5FA6B8'};
@@ -654,7 +679,7 @@ function openDrawer(id){
         `<div class="etop"><span class="eo">${esc(e.other)}</span>`+
         `<span class="et">${EDGE_KO[e.type]||e.type}</span>`+
         `<span class="es">${e.strength}</span>${tgt?'<span class="ego">→ 열기</span>':''}</div>`+
-        (e.mechanism?`<div class="em">${esc(e.mechanism)}</div>`:'')+`</div>`;};
+        (e.mechanism?`<div class="em">${esc(e.mechanism)}</div>`:'')+ATLAS_PRICE.edgeHTML(e)+`</div>`;};
     h+=`<div class="sec2"><div class="h">엣지 · 전파 통로 <span style="color:var(--faint)">${o.edges.length}</span></div>`;
     if(out.length) h+=`<div class="egroup"><div class="egcap"><span class="ar">→</span>이 산업이 영향을 준다<span class="cnt">${out.length}</span></div>${out.map(row).join('')}</div>`;
     if(inc.length) h+=`<div class="egroup"><div class="egcap"><span class="ar">←</span>이 산업이 영향을 받는다<span class="cnt">${inc.length}</span></div>${inc.map(row).join('')}</div>`;
@@ -662,7 +687,7 @@ function openDrawer(id){
   }
   if(o.tier==='HEAT')
     h+=`<div class="action"><div class="btn" onclick="copyScreen('${esc(o.name)}')">⎘ 스크리닝 명령 복사</div></div>`;
-  h+=`<div class="ddisc">role 계층은 <b style="color:var(--dim)">이 산업을 데운 트리거 기준</b>의 조사 후보 분류입니다. verification=SHALLOW — 해자·재무·경영진의 진위는 딥다이브에서 가립니다. 매수 신호가 아닙니다.</div>`;
+  h+=`<div class="ddisc">role 계층은 <b style="color:var(--dim)">이 산업을 데운 트리거 기준</b>의 조사 후보 분류입니다. SHALLOW는 미실시, ✓ 검증은 저장된 DD 시점의 검증입니다. 현재 전체 재검증을 뜻하지 않습니다. 매수 신호가 아닙니다.</div>`;
   $('drawerBody').innerHTML=h;
   $('drawerBody').scrollTop=0;
   drawer.classList.add('show'); scrim.classList.add('show'); drawer.setAttribute('aria-hidden','false');
@@ -704,9 +729,9 @@ function stanceRows(){
   (pack.company_nodes||[]).forEach(n=>{
     const st=n.stance_state; if(!st) return;
     const ind=(n.industries||[])[0]; const o=IND_BY_ID[ind]||{};
-    out.push({tk:n.ticker,nm:n.name,zone:st.zone,gap:st.gap_to_attractive_pct,
-      price:(st.price||{}).value,asof:(st.price||{}).as_of,
-      supp:st.display_suppressed,fresh:st.freshness,
+    out.push({tk:n.ticker,nm:n.name,zone:ATLAS_PRICE.describe(n).zone,gap:ATLAS_PRICE.describe(n).sourceLabelUnknown?null:st.gap_to_attractive_pct,
+      node:n,display:ATLAS_PRICE.describe(n),price:(st.price||{}).value,asof:(st.price||{}).as_of,
+      supp:!ATLAS_PRICE.describe(n).highlightAllowed,fresh:st.freshness,
       ind:ind,indn:o.name||ind,tier:o.tier||'—',
       label:((n.deep_dive_ref||{}).atlas_stance||{}).label||'UNKNOWN'});
   });
@@ -716,8 +741,8 @@ function sbRow(r,showGap){
   const zc=ZCLS[r.zone]&&!r.supp?' '+ZCLS[r.zone]:'';
   return `<tr>
     <td><span class="tk">${esc(r.tk)}</span></td>
-    <td class="r"><span class="px">${r.price!=null?'$'+r.price:'—'}</span></td>
-    <td><span class="zn${zc}">${ZKO[r.zone]||r.zone}</span></td>
+    <td class="r"><span class="px">${esc(r.display.price)}<br><small>${esc(r.display.asof)}</small></span></td>
+    <td><span class="zn${zc}">${esc(r.display.status)}</span><br><small>DD ${esc(r.display.ddAsOf)} · ${esc(r.display.freshness)} · KPI ${esc(r.display.tripwire)}</small></td>
     <td><span class="tb" style="color:${TIER_COLOR[r.tier]||'var(--faint)'}">${TIER_KO[r.tier]||r.tier}</span>
         <span class="indn">${esc(r.indn)}</span></td>
     ${showGap?`<td class="r"><span class="gapv">+${r.gap}%</span></td>`:''}
@@ -741,8 +766,8 @@ function renderStanceBoard(){
 
   const TH=(g)=>`<tr><th>종목</th><th class="r">주가</th><th>위치</th><th>산업</th>${g?'<th class="r">매력 구간까지</th>':''}</tr>`;
   el.innerHTML=`
-  <div class="sbnote">딥다이브가 정한 진입 밴드와 그 시점 주가를 대조한 결과다. 딥다이브 판단의 <b>인용</b>이지 아틀라스의 매매 의견이 아니다.<br>
-    밴드 진입은 딥다이브 후보 등재 사유가 되지 않는다. 주가는 딥다이브 시점 스냅샷이며 실시간이 아니다.</div>
+  <div class="sbnote">딥다이브가 정한 진입 밴드와 별도 관측일의 가격을 대조해 저장한 위치다. 딥다이브 판단의 <b>인용</b>이지 아틀라스의 매매 의견이 아니다.<br>
+    밴드 진입은 딥다이브 후보 등재 사유가 되지 않는다. 주가는 표시된 관측일의 스냅샷이며 실시간이 아니다. DD 검증일과 관측일은 다를 수 있다. 각 가격의 날짜·출처·비교 근거와 UNKNOWN·억제 사유는 아래 상태 상세에서 확인한다.</div>
 
   <section class="sbsec">
     <div class="sbh"><h3>밴드에 들어온 종목</h3><span class="n">${entered.length}</span>
@@ -773,9 +798,12 @@ function renderStanceBoard(){
     <div>${rest('WATCH').map(t=>`<span class="pill">${t}</span>`).join('')}</div>
     <div style="font-size:11.5px;color:var(--faint);margin:14px 0 6px">회피 ${rest('AVOID').length}</div>
     <div>${rest('AVOID').map(t=>`<span class="pill">${t}</span>`).join('')}</div>
-    <div style="font-size:11.5px;color:var(--faint);margin:14px 0 6px">판단 불가 ${rest('UNKNOWN').length} — 딥다이브 팩에 가격 밴드가 없어 위치를 계산할 수 없다</div>
+    <div style="font-size:11.5px;color:var(--faint);margin:14px 0 6px">판단 불가 ${rest('UNKNOWN').length} — 가격 미갱신·밴드 공백·비교 근거 등 개별 사유는 상태 상세 참조</div>
     <div>${rest('UNKNOWN').map(t=>`<span class="pill">${t}</span>`).join('')}</div>
-  </section>`;
+  </section>
+  <section class="sbsec"><details id="stanceDetails"><summary>저장된 관측 · 상태 상세 (${rows.length})</summary>
+    ${rows.map(r=>`<details class="sbnote" data-ticker="${esc(r.tk)}"><summary>${esc(r.tk)} · ${esc(r.display.price)} · ${esc(r.display.status)}</summary>${ATLAS_PRICE.html(r.node)}</details>`).join('')}
+  </details></section>`;
 }
 $('vswitch').addEventListener('click',e=>{
   const b=e.target.closest('button[data-v]'); if(!b) return;
