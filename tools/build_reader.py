@@ -32,6 +32,390 @@ UPDATE_CHECKS = ('entry_and_mode_scope', 'sources_counterevidence_and_periods',
                  'schema_identity_membership_and_sources', 'reader_dates_and_scope',
                  'privacy_and_remaining_holds')
 
+# Reviewed private interpretation of the retained access ledger. Hashes
+# bind a version, not the truth of an actor's declarations or its web activity.
+ACCESS_HISTORY_SHA256 = '636a39aba4a105498d919bd8d56cf41c441febe2708bc7b4b4e775de4e01aec0'
+ACCESS_LEDGER_SHA256 = '9ffa6d6e3fa36faeb72ae5b47b3cbe6e5104b89664d7a3509ac486813f9e9f62'
+ACCESS_DENIALS = {'EXPLICIT_DENIAL', 'AUTH_REQUIRED', 'TOOL_REFUSAL', 'REQUEST_PROHIBITED'}
+ACCESS_NORMAL = {'RESOLVED_TRANSPORT', 'BODY_SCOPE_LIMITATION'}
+ACCESS_CHECK = 'pre_request_access_history_and_actor_limits'
+
+def private_path(path):
+    path=Path(path).resolve()
+    require(path != ROOT and ROOT not in path.parents, 'ACCESS_ARTIFACT_MUST_STAY_PRIVATE')
+    return path
+
+def access_file(ref, parent, snapshots):
+    require(isinstance(ref,dict) and HEX.fullmatch(str(ref.get('sha256',''))), 'ACCESS_FILE_REFERENCE_REQUIRED')
+    p=Path(ref.get('file',''));p=private_path(p if p.is_absolute() else parent/p)
+    raw=p.read_bytes();require(hashlib.sha256(raw).hexdigest()==ref['sha256'], 'ACCESS_FILE_HASH_MISMATCH')
+    snapshots[p]=raw
+    return p,raw
+
+def access_time(value):
+    require(isinstance(value,str) and datetime.datetime.fromisoformat(value.replace('Z','+00:00')).tzinfo is not None,
+            'ACCESS_EXPLICIT_TIMEZONE_REQUIRED')
+    return parse_time(value)
+
+def load_access_history(path, snapshots):
+    path=private_path(path);raw=path.read_bytes();snapshots[path]=raw
+    require(hashlib.sha256(raw).hexdigest()==ACCESS_HISTORY_SHA256, 'ACCESS_HISTORY_VERSION_MISMATCH')
+    history=load(path)
+    _,baseline=access_file(history['baseline_registry'],path.parent,snapshots)
+    require(hashlib.sha256(baseline).hexdigest()==ACCESS_LEDGER_SHA256, 'ACCESS_LEDGER_VERSION_MISMATCH')
+    ledger=json.loads(baseline)
+    entries=history.get('entries',[])
+    require(history.get('exact_url_count')==len(entries)==len({e['url'] for e in entries}) and
+            ledger.get('exact_url_count')==len(ledger['entries']) and
+            {e['url'] for e in entries}=={e['url'] for e in ledger['entries']}, 'ACCESS_LEDGER_INCOMPLETE')
+    for file,ref in history['proofs'].items():access_file({'file':file,**ref},path.parent,snapshots)
+    return history
+
+def access_identity(request):
+    return {k:request[k] for k in ('operation','url','query','link_ref','link_id','source_ref','lineno','pattern','pageno','domains','recency') if k in request}
+
+def capture_item_matches(op, item, request):
+    if op!=request['operation']:return False
+    if op=='search':return item.get('q')==request['query'] and all(item.get(k)==request.get(k) for k in ('domains','recency'))
+    if op=='click':return item.get('ref_id')==request['link_ref'] and item.get('id')==request['link_id']
+    if op in {'open','find','screenshot'} and item.get('ref_id')==request.get('source_ref',request['url']):
+        keys={'open':('lineno',),'find':('pattern',),'screenshot':('pageno',)}[op]
+        return all(item.get(k)==request.get(k) for k in keys)
+    return False
+
+def capture_items(raw):
+    document=json.loads(raw)
+    require(isinstance(document,dict), 'ACCESS_CAPTURE_TOOL_ARGUMENTS_REQUIRED')
+    arguments=document.get('request',document.get('arguments',{}))
+    require(isinstance(arguments,dict) and arguments and
+            set(arguments)<={'search_query','open','click','find','screenshot','response_length'}, 'ACCESS_UNSUPPORTED_TOOL_ARGUMENTS')
+    items=[]
+    for op,values in arguments.items():
+        if op=='response_length':continue
+        require(isinstance(values,list) and values, 'ACCESS_CAPTURE_TOOL_ARGUMENTS_REQUIRED')
+        op='search' if op=='search_query' else op
+        allowed={'search':{'q','domains','recency'},'open':{'ref_id','lineno'},'click':{'ref_id','id'},
+                 'find':{'ref_id','pattern'},'screenshot':{'ref_id','pageno'}}[op]
+        for item in values:
+            require(isinstance(item,dict) and set(item)<=allowed, 'ACCESS_UNSUPPORTED_TOOL_REQUEST_ARGUMENT')
+            items.append((op,item))
+    require(items,'ACCESS_CAPTURE_TOOL_ARGUMENTS_REQUIRED')
+    return items
+
+def capture_request_matches(raw, request):
+    return any(capture_item_matches(op,item,request) for op,item in capture_items(raw))
+
+def capture_result(raw, url):
+    document=json.loads(raw)
+    text=document if isinstance(document,str) else document.get('response',document.get('result',''))
+    if url:
+        sections=[s for s in text.split('--------------------------------------------------------------------------------')
+                  if ('"ref_id":"'+url+'"') in s or ('"ref_id": "'+url+'"') in s]
+        if len(sections)==1:
+            text=sections[0]
+            require(text.count('Source: open(')<=1, 'ACCESS_CAPTURE_RESPONSE_SECTIONS_AMBIGUOUS')
+        elif 'Source: open' in text:return None
+    # Error wrappers only: a successful business report mentioning 403 is not
+    # an access refusal. Never classify another URL's batch section.
+    wrapper=re.match(r'^(?:Internal Error|Error|Access denied|Permission denied|Request prohibited|Authentication required|Sign in required|Login required|요청\s*금지)(?:\s*\(\))?\s*(?:\n|:|$)',text.lstrip(),re.I)
+    error_line=re.search(r'^L0:\s*(?:Failed to fetch|URL .*(?:not accessible|not safe)|Request prohibited|요청 금지)',text[:1800],re.I|re.M)
+    if not (wrapper or error_line):return None
+    if re.search(r'HTTP(?: Error)?\s*403|\(?403\)?\s*Forbidden',text[:1800],re.I):return 'EXPLICIT_DENIAL'
+    if re.search(r'access denied|permission denied|접근\s*거부',text[:1800],re.I):return 'EXPLICIT_DENIAL'
+    if re.search(r'HTTP(?: Error)?\s*401|\(?401\)?\s*Unauthorized|authentication required|login required|sign in required',text[:1800],re.I):return 'AUTH_REQUIRED'
+    if re.search(r'request prohibited|요청\s*금지',text[:1800],re.I):return 'REQUEST_PROHIBITED'
+    if re.search(r'not safe to open',text[:1800],re.I):return 'TOOL_REFUSAL'
+    if re.search(r'HTTP(?: Error)?\s*404|\(?404\)?\s*Not Found',text[:1800],re.I):return 'NOT_FOUND'
+    if 'not accessible via this tool' in text[:1800]:return 'TOOL_UNAVAILABLE_UNSPECIFIED'
+    return 'TRANSPORT_FAILURE_UNSPECIFIED'
+
+def add_run_failures(history, records, parent, snapshots, before):
+    history=copy.deepcopy(history)
+    by_url={e['url']:e for e in history['entries']}
+    for record in records:
+        url=record['url'];require(urlsplit(url).scheme in {'https','http'},'ACCESS_FAILURE_URL_REQUIRED')
+        require(access_time(record['observed_at_utc'])<=before, 'ACCESS_FAILURE_FROM_FUTURE')
+        _,raw=access_file(record['capture'],parent,snapshots)
+        actual=capture_result(raw,url)
+        require(actual and actual==record.get('result_class'), 'ACCESS_FAILURE_CLASS_NOT_SUPPORTED_BY_CAPTURE')
+        entry=by_url.get(url)
+        if entry is None:
+            entry={'url':url,'subject_ids':[record['subject_id']],'related_history_urls':[],'observations':[]}
+            history['entries'].append(entry);by_url[url]=entry
+        entry['observations'].append({'failure_class':actual,'original_reason':'See exact hash-bound current capture',
+                                      'source':record['capture'],'observed_at_utc':record['observed_at_utc']})
+    return history
+
+def access_decision(request, history, parent, snapshots, at):
+    """Offline source-selection decision. This does not intercept actor tools."""
+    require(request.get('operation') in {'search','open','click','find','screenshot'}, 'ACCESS_OPERATION_REQUIRED')
+    require(all(isinstance(request.get(k),str) and request[k].strip() for k in
+                ('request_id','subject_id','resource_id','purpose')), 'ACCESS_REQUEST_IDENTITY_REQUIRED')
+    require(request.get('purpose') in {'ordinary','retry','independent_original','failure_fallback'}, 'ACCESS_PURPOSE_REQUIRED')
+    require(request.get('bypass_intent') is False and isinstance(request.get('related_history_urls'),list), 'ACCESS_RELATION_DECLARATION_REQUIRED')
+    url=request.get('url');by_url={e['url']:e for e in history['entries']}
+    if request['operation']=='search':
+        require(isinstance(request.get('query'),str) and request['query'].strip() and not url, 'ACCESS_SEARCH_QUERY_REQUIRED')
+    else:
+        require(isinstance(url,str) and urlsplit(url).scheme in {'https','http'} and urlsplit(url).hostname and
+                not urlsplit(url).username, 'ACCESS_EXACT_URL_REQUIRED')
+        require(request.get('source_ref',url)==url, 'ACCESS_OPAQUE_SOURCE_REF_NOT_ELIGIBLE_USE_EXACT_TARGET')
+    if request['operation']=='click':
+        require(isinstance(request.get('link_ref'),str) and type(request.get('link_id')) is int, 'ACCESS_CLICK_REFERENCE_REQUIRED')
+    if request['operation']=='find':require(isinstance(request.get('pattern'),str) and request['pattern'], 'ACCESS_FIND_PATTERN_REQUIRED')
+    if request['operation']=='screenshot':require(type(request.get('pageno')) is int and request['pageno']>=0, 'ACCESS_SCREENSHOT_PAGE_REQUIRED')
+    require(set(request['related_history_urls'])<=set(by_url), 'ACCESS_UNKNOWN_RELATED_HISTORY')
+    exact=by_url.get(url)
+    def classes(e):return {o['failure_class'] for o in e['observations']}
+    explicit=[e for e in history['entries'] if classes(e)&ACCESS_DENIALS and
+              (e['url'] in request['related_history_urls'] or request['subject_id'] in e['subject_ids'] or
+               (url and urlsplit(e['url']).hostname==urlsplit(url).hostname))]
+    required_related=set(exact.get('related_history_urls',[])) if exact else set()
+    related=[by_url[u] for u in request['related_history_urls']]
+    result={'request_id':request['request_id'],'identity':access_identity(request),
+            'history_classes':sorted(classes(exact)) if exact else [],
+            'related_restrictions':sorted({e['url'] for e in explicit}|required_related),
+            'max_requests':0,'decision':'HOLD','reason':''}
+    def hold(reason):return {**result,'reason':reason}
+    if exact and classes(exact)&ACCESS_DENIALS:return hold('EXPLICIT_RESTRICTION_NO_RETRY_OR_ALTERNATE_DELIVERY')
+    if any(request['resource_id']==e['url'] for e in explicit):return hold('SAME_DENIED_RESOURCE_ID_DESPITE_DIFFERENT_URL')
+    if required_related-set(request['related_history_urls']):return hold('PRIOR_DENIED_RESOURCE_RELATION_NOT_REVIEWED')
+    if request['purpose']=='failure_fallback' and (explicit or any(classes(e)&ACCESS_DENIALS for e in related)):
+        return hold('DENIED_RESOURCE_HOST_PATH_FALLBACK')
+    if request['operation']=='search':
+        # A discovery query does not fetch the denied document. Do not turn an
+        # exact-resource refusal into an issuer-wide prohibition on searching.
+        return {**result,'decision':'ALLOW_SCOPED','max_requests':1,'reason':'DISCOVERY_QUERY_ONLY_NO_DOCUMENT_ACCESS_CLEARANCE'}
+    # Link metadata must be read before clicking, including the actual resolved
+    # URL. A ref from another parallel response cannot stand in for it.
+    discovery=request.get('discovery')
+    if request['operation']=='click' or request['purpose']=='independent_original' or (explicit and not exact):
+        if not isinstance(discovery,dict):return hold('SAVED_DISTINCT_SOURCE_PROVENANCE_REQUIRED')
+        p,raw=access_file(discovery.get('artifact'),parent,snapshots)
+        text=raw.decode('utf-8')
+        if not (discovery.get('target_url')==url and url in text and
+                isinstance(discovery.get('title'),str) and discovery['title'] in text and
+                isinstance(discovery.get('publisher'),str) and discovery['publisher'] in text and
+                discovery.get('document_id')==request['resource_id'] and
+                access_time(discovery.get('recorded_at_utc'))<=at):
+            return hold('LINK_OR_DOCUMENT_IDENTITY_MISMATCH')
+        if request['operation']=='click':
+            metadata=json.loads(raw)
+            mapping={'link_ref':request['link_ref'],'link_id':request['link_id'],'target_url':url,
+                     'title':discovery['title'],'publisher':discovery['publisher']}
+            if not (discovery.get('link_ref')==request['link_ref'] and discovery.get('link_id')==request['link_id'] and
+                    isinstance(metadata,dict) and mapping in metadata.get('verified_links',[])):
+                return hold('CLICK_REF_LINK_MISMATCH')
+    if explicit:
+        if not (request['purpose']=='independent_original' and discovery and
+                discovery.get('distinct_from_denied_resource') is True and
+                discovery.get('not_alternate_delivery') is True and
+                {e['url'] for e in explicit}<=set(request['related_history_urls'])):
+            return hold('DENIED_RESOURCE_RELATION_OR_DISTINCT_ORIGINAL_UNPROVEN')
+    non_denial=exact and (classes(exact)-ACCESS_NORMAL)
+    if non_denial:
+        authority=request.get('retry_authority')
+        if not authority:return hold('NON_DENIAL_HISTORY_REQUIRES_SCOPED_RETRY_BASIS')
+        _,raw=access_file(authority,parent,snapshots);basis=json.loads(raw)
+        if not (basis.get('authority_kind') in {'original_rule','user_instruction'} and basis.get('original_text') and
+                basis.get('url')==url and basis.get('max_requests')==1 and basis.get('scope')=='exact_url' and
+                basis.get('denials_override') is False and
+                access_time(basis.get('valid_from_utc'))<=at<=access_time(basis.get('valid_until_utc')) and
+                classes(exact)<=set(basis.get('failure_classes',[]))):return hold('RETRY_BASIS_SCOPE_BUDGET_OR_TIME_MISMATCH')
+        if request['purpose']!='retry':return hold('RETRY_PURPOSE_REQUIRED')
+    return {**result,'decision':'ALLOW_SCOPED','max_requests':1,
+            'reason':'BOUNDED_NON_DENIAL_RETRY' if non_denial else 'DISTINCT_OR_ORDINARY_PUBLIC_SOURCE'}
+
+def make_research_handoff(plan_path, history_path, context_path, snapshots, prepared_at=None):
+    history=load_access_history(history_path,snapshots)
+    plan_path=private_path(plan_path);context_path=private_path(context_path)
+    for p in (plan_path,context_path):snapshots[p]=p.read_bytes()
+    plan=load(plan_path);context_sha=hashlib.sha256(snapshots[context_path]).hexdigest()
+    require(plan.get('schema_version')==1 and plan.get('run_context_sha256')==context_sha and
+            isinstance(plan.get('researcher_id'),str) and plan['researcher_id'].strip(), 'ACCESS_RESEARCHER_CONTEXT_REQUIRED')
+    now=prepared_at or datetime.datetime.now(datetime.timezone.utc).isoformat()
+    require(access_time(plan.get('planned_at_utc'))<=access_time(now)<=datetime.datetime.now(datetime.timezone.utc), 'ACCESS_PLAN_FROM_FUTURE')
+    history=add_run_failures(history,plan.get('prior_failures',[]),plan_path.parent,snapshots,access_time(now))
+    requests=plan.get('requests');require(isinstance(requests,list) and requests and
+            len({r['request_id'] for r in requests})==len(requests), 'ACCESS_REQUESTS_REQUIRED_OR_DUPLICATE')
+    decisions=[access_decision(r,history,plan_path.parent,snapshots,access_time(now)) for r in requests]
+    return {'schema_version':1,'run_context_sha256':context_sha,'researcher_id':plan['researcher_id'],
+            'history_sha256':ACCESS_HISTORY_SHA256,'baseline_registry_sha256':ACCESS_LEDGER_SHA256,'exact_url_count':history['exact_url_count'],
+            'plan':{'file':str(plan_path),'sha256':hashlib.sha256(snapshots[plan_path]).hexdigest()},
+            'prepared_at_utc':now,'requests':requests,'decisions':decisions,'prior_failures':plan.get('prior_failures',[]),
+            'actor_limits':'No web interception. Actor must acknowledge before requests, honor decisions, record every attempt, and stop/replan after failure. Hashes do not authenticate actor or chronology.'}
+
+def validate_access_audit(audit_path, history_path, context_path, snapshots):
+    require(audit_path and history_path and context_path, 'PRE_REQUEST_ACCESS_HANDOFF_AUDIT_REQUIRED')
+    audit_path=private_path(audit_path);snapshots[audit_path]=audit_path.read_bytes();audit=load(audit_path)
+    context_sha=hashlib.sha256(Path(context_path).read_bytes()).hexdigest()
+    require(audit.get('schema_version')==1 and audit.get('run_context_sha256')==context_sha and
+            audit.get('complete_request_inventory') is True and audit.get('unlisted_requests')==0 and
+            audit.get('actor_limits_acknowledged') is True, 'ACCESS_INVENTORY_OR_ACTOR_LIMITS_MISSING')
+    sessions=audit.get('sessions');require(isinstance(sessions,list), 'ACCESS_SESSIONS_REQUIRED')
+    used=set();retried_urls=set();failures=[];request_ids=set();researchers=set();batches={}
+    baseline=load_access_history(history_path,snapshots)
+    if not sessions:
+        # A connector-only run must not invent web plans just to satisfy this
+        # web-format checker. Real connector activity still needs actor review.
+        ack=audit.get('policy_ack',{})
+        require(audit.get('web_request_inventory_count')==0 and
+                audit.get('supported_capture_scope')=='NO_SUPPORTED_WEB_REQUESTS' and
+                ack.get('history_sha256')==ACCESS_HISTORY_SHA256 and
+                isinstance(ack.get('researcher_id'),str) and ack['researcher_id'].strip() and
+                ack.get('acknowledged_before_connector_requests') is True and
+                access_time(ack.get('acknowledged_at_utc'))<=datetime.datetime.now(datetime.timezone.utc),
+                'ACCESS_EMPTY_WEB_SCOPE_ACK_REQUIRED')
+        _,actor_raw=access_file(audit.get('connector_actor_evidence'),audit_path.parent,snapshots)
+        return {'access_history_sha256':ACCESS_HISTORY_SHA256,
+                'access_audit_sha256':hashlib.sha256(snapshots[audit_path]).hexdigest(),
+                'access_researchers_sha256':sha([ack['researcher_id']]),
+                'access_connector_evidence_sha256':hashlib.sha256(actor_raw).hexdigest()}
+    require('web_request_inventory_count' not in audit or
+            audit['web_request_inventory_count']==sum(len(s.get('outcomes',[])) for s in sessions),
+            'ACCESS_WEB_INVENTORY_COUNT_MISMATCH')
+    for session in sessions:
+        p,raw=access_file(session['handoff'],audit_path.parent,snapshots);handoff=json.loads(raw)
+        plan_path,_=access_file(handoff['plan'],p.parent,snapshots)
+        recomputed=make_research_handoff(plan_path,history_path,context_path,snapshots,handoff['prepared_at_utc'])
+        require(handoff==recomputed, 'ACCESS_HANDOFF_PLAN_OR_POLICY_MISMATCH')
+        ack=session.get('ack',{});researchers.add(handoff['researcher_id'])
+        require(ack.get('researcher_id')==handoff['researcher_id'] and ack.get('handoff_sha256')==hashlib.sha256(raw).hexdigest() and
+                ack.get('history_sha256')==ACCESS_HISTORY_SHA256 and
+                access_time(handoff['prepared_at_utc'])<=access_time(ack.get('acknowledged_at_utc'))<=datetime.datetime.now(datetime.timezone.utc), 'ACCESS_PRE_REQUEST_ACK_REQUIRED')
+        decisions={d['request_id']:d for d in handoff['decisions']};requests={r['request_id']:r for r in handoff['requests']}
+        outcomes=session.get('outcomes',[])
+        require(len(outcomes)==len(decisions) and len({o['request_id'] for o in outcomes})==len(decisions) and
+                {o['request_id'] for o in outcomes}==set(decisions), 'ACCESS_OUTCOME_INVENTORY_MISMATCH')
+        last=access_time(ack['acknowledged_at_utc'])
+        for outcome in outcomes:
+            key=outcome['request_id'];require(key not in request_ids,'ACCESS_DUPLICATE_REQUEST_ID');request_ids.add(key)
+            request=requests[key];decision=decisions[key]
+            require(type(outcome.get('attempted')) is bool, 'ACCESS_ATTEMPT_STATUS_REQUIRED')
+            if not outcome['attempted']:continue
+            stamp=access_time(outcome.get('attempted_at_utc'))
+            require(last<=stamp<=datetime.datetime.now(datetime.timezone.utc), 'ACCESS_REQUEST_PRECEDES_ACK_OR_ORDER_INVALID');last=stamp
+            require(decision['decision']=='ALLOW_SCOPED', 'ACCESS_ATTEMPTED_HELD_REQUEST')
+            require(outcome.get('request_identity')==access_identity(request), 'ACCESS_ACTUAL_REQUEST_IDENTITY_MISMATCH')
+            _,proof=access_file(outcome.get('capture'),audit_path.parent,snapshots)
+            require(capture_request_matches(proof,request), 'ACCESS_CAPTURE_TOOL_ARGUMENTS_MISMATCH')
+            invocation=outcome.get('invocation_id')
+            require(isinstance(invocation,str) and invocation.strip(), 'ACCESS_TOOL_INVOCATION_ID_REQUIRED')
+            batch=batches.setdefault(invocation,{'raw':proof,'requests':[],'attempts':[],'stamp':stamp})
+            require(batch['raw']==proof and batch['stamp']==stamp, 'ACCESS_TOOL_INVOCATION_CAPTURE_OR_TIME_MISMATCH')
+            batch['requests'].append(request)
+            token=request.get('url') or request['query']
+            require(token in proof.decode('utf-8'), 'ACCESS_CAPTURE_IDENTITY_NOT_FOUND')
+            result=outcome.get('result_class')
+            require(result in {'SUCCESS','EXPLICIT_DENIAL','AUTH_REQUIRED','TOOL_REFUSAL','REQUEST_PROHIBITED','NOT_FOUND',
+                    'TOOL_UNAVAILABLE_UNSPECIFIED','TRANSPORT_FAILURE_UNSPECIFIED','SEARCH_NO_RESULT','CONTENT_INCOMPLETE'}, 'ACCESS_RESULT_CLASS_REQUIRED')
+            detected=capture_result(proof,request.get('url'))
+            require(detected is None or detected==result, 'ACCESS_RESULT_CLASS_CONTRADICTS_CAPTURE')
+            batch['attempts'].append((stamp,detected,request,outcome,plan_path.parent))
+    for batch in batches.values():
+        items=capture_items(batch['raw'])
+        require(all(sum(capture_item_matches(op,item,r) for r in batch['requests'])==1 for op,item in items) and
+                all(sum(capture_item_matches(op,item,r) for op,item in items)==1 for r in batch['requests']),
+                'ACCESS_CAPTURE_BATCH_INVENTORY_MISMATCH')
+    # Sessions may interleave. Evaluate real invocation time, not list order.
+    # Items in one batch were requested together; apply its failures afterward.
+    ordered=sorted(batches.items(),key=lambda x:(x[1]['stamp'],not any(a[1] for a in x[1]['attempts']),x[0]))
+    for _,batch in ordered:
+        live_history=add_run_failures(baseline,failures,audit_path.parent,snapshots,batch['stamp'])
+        for stamp,detected,request,outcome,parent in batch['attempts']:
+            identity=request.get('url') or ('search:'+request['query']);token=sha(access_identity(request))
+            require(identity not in retried_urls if request['purpose']=='retry' else token not in used, 'ACCESS_REQUEST_BUDGET_EXCEEDED')
+            used.add(token)
+            if request['purpose']=='retry':retried_urls.add(identity)
+            live_decision=access_decision(request,live_history,parent,snapshots,stamp)
+            require(live_decision['decision']=='ALLOW_SCOPED', 'ACCESS_FAILURE_REPLAN_REQUIRED')
+        for stamp,detected,request,outcome,parent in batch['attempts']:
+            if detected and request.get('url'):
+                failures.append({'url':request['url'],'subject_id':request['subject_id'],'result_class':detected,
+                                 'capture':outcome['capture'],'observed_at_utc':outcome['attempted_at_utc']})
+    return {'access_history_sha256':ACCESS_HISTORY_SHA256,'access_audit_sha256':hashlib.sha256(snapshots[audit_path]).hexdigest(),
+            'access_researchers_sha256':sha(sorted(researchers))}
+
+MODE_B_CHECK = 'mode_b_independent_discovery_exact_bytes_and_holds'
+
+def validate_mode_b_evidence(path, context_path, snapshots):
+    """Check a private receipt contract, not perform discovery or source review."""
+    require(path and context_path, 'MODE_B_EVIDENCE_REQUIRED')
+    path=private_path(path);snapshots[path]=path.read_bytes();e=load(path)
+    require(e.get('schema_version')==1 and e.get('run_context_sha256')==hashlib.sha256(Path(context_path).read_bytes()).hexdigest(), 'MODE_B_CONTEXT_MISMATCH')
+    require(access_time(e['observed_from_utc'])<=access_time(e['observed_to_utc'])<=datetime.datetime.now(datetime.timezone.utc) and
+            e.get('receipt_time_is_business_cutoff') is False, 'MODE_B_OBSERVATION_TIME_REQUIRED')
+    discovery=e.get('discovery',{})
+    require(discovery.get('independent_of_known_ids') is True and discovery.get('global_completeness') is False,
+            'MODE_B_INDEPENDENT_BOUNDED_DISCOVERY_REQUIRED')
+    required_holds={'BOUNDED_DISCOVERY_SCOPE'};discovered=set();seen_folders=set()
+    listings=discovery.get('folder_listings',[]);require(listings,'MODE_B_FOLDER_LISTING_REQUIRED')
+    for listing in listings:
+        _,raw=access_file(listing['capture'],path.parent,snapshots);capture=json.loads(raw)
+        args=capture.get('arguments',{});result=capture.get('result',{})
+        require(set(args)=={'url','top_k'} and type(args['top_k']) is int and 0<args['top_k']<=1000 and
+                not result.get('isError'), 'MODE_B_SUPPORTED_FOLDER_LIST_REQUIRED')
+        require(args['url'] not in seen_folders,'MODE_B_DUPLICATE_FOLDER');seen_folders.add(args['url'])
+        rows=result.get('structuredContent',{}).get('files')
+        require(isinstance(rows,list) and len({r['id'] for r in rows})==len(rows), 'MODE_B_FOLDER_ROWS_REQUIRED')
+        if len(rows)>=args['top_k']:required_holds.add('LIST_LIMIT_OR_COMPLETENESS_UNCERTAIN')
+        require(type(listing.get('include_for_DD')) is bool,'MODE_B_FOLDER_SCOPE_REQUIRED')
+        if listing['include_for_DD']:
+            discovered|={r['id'] for r in rows if r.get('mime_type')=='application/json'}
+        else:
+            require(listing.get('exclusion_reason'),'MODE_B_EXCLUSION_REASON_REQUIRED')
+            required_holds.add('EXCLUDED_SCOPE')
+    if discovery.get('excluded_scopes'):required_holds.add('EXCLUDED_SCOPE')
+    if discovery.get('folder_pages_complete') is not True:required_holds.add('LIST_LIMIT_OR_COMPLETENESS_UNCERTAIN')
+    if e.get('capture_uncertainties'):required_holds.add('CAPTURE_UNCERTAINTY')
+    exclusions=discovery.get('excluded_json',[])
+    require(all(x.get('id') in discovered and x.get('reason') for x in exclusions) and
+            len({x['id'] for x in exclusions})==len(exclusions), 'MODE_B_JSON_EXCLUSION_INVALID')
+    if exclusions:required_holds.add('EXCLUDED_SCOPE')
+    discovered-={x['id'] for x in exclusions}
+    _,raw=access_file(e['baseline'],path.parent,snapshots);baseline=json.loads(raw)['files']
+    require(len({x['drive_id'] for x in baseline})==len(baseline), 'MODE_B_BASELINE_DUPLICATE_ID')
+    require(all(isinstance(x['drive_id'],str) and x['drive_id'] and HEX.fullmatch(str(x.get('sha256',''))) and
+                type(x.get('bytes')) is int and x['bytes']>=0 for x in baseline), 'MODE_B_BASELINE_BYTES_REQUIRED')
+    prior={x['drive_id']:x for x in baseline};records=e.get('files',[])
+    require(len({x['id'] for x in records})==len(records) and {x['id'] for x in records}==discovered,
+            'MODE_B_DISCOVERED_MEMBERSHIP_MISMATCH')
+    compare={'new_ids':sorted(discovered-set(prior)),'not_discovered_ids':sorted(set(prior)-discovered),
+             'common_ids':sorted(discovered&set(prior))}
+    require(e.get('id_comparison')==compare, 'MODE_B_ID_COMPARISON_MISMATCH')
+    if compare['not_discovered_ids']:required_holds.add('BASELINE_NOT_DISCOVERED')
+    for record in records:
+        old=prior.get(record['id']);current=record.get('current')
+        if current is None:
+            expected='UNAVAILABLE';required_holds.add('CONTENT_UNAVAILABLE')
+        else:
+            _,raw=access_file(current,path.parent,snapshots)
+            require(type(current.get('bytes')) is int and len(raw)==current['bytes'], 'MODE_B_RAW_BYTES_MISMATCH')
+            expected='NEW' if old is None else ('SAME_BYTES' if old['sha256']==current['sha256'] and old['bytes']==len(raw) else 'CHANGED')
+        require(record.get('classification')==expected,'MODE_B_CONTENT_CLASSIFICATION_MISMATCH')
+        if expected=='SAME_BYTES':
+            require(record.get('new_original_read') is False and record.get('new_business_evidence') is False,
+                    'MODE_B_IDENTICAL_BYTES_ARE_NOT_NEW_RESEARCH')
+        elif expected in {'NEW','CHANGED'} and record.get('content_review')!='REVIEWED':required_holds.add('CONTENT_REVIEW_PENDING')
+        library=record.get('library_original_version',{});drive=record.get('drive_revision',{})
+        require(library.get('namespace')=='LIBRARY_ORIGINAL_VERSION' and drive.get('namespace')=='DRIVE_REVISION' and
+                library.get('derived_from_drive_revision') is False and drive.get('revision_bound_bytes_proved') is False,
+                'MODE_B_VERSION_NAMESPACES_REQUIRED')
+        require(library.get('status') in {'UNKNOWN','HISTORICAL_ONLY','VERIFIED_ORIGINAL'}, 'MODE_B_LIBRARY_VERSION_STATUS_REQUIRED')
+        if library.get('status')=='VERIFIED_ORIGINAL':
+            require(type(library.get('value')) in {str,int} and str(library['value']).strip(), 'MODE_B_LIBRARY_VERSION_VALUE_REQUIRED')
+            access_file(library['source_evidence'],path.parent,snapshots)
+        else:required_holds.add('LIBRARY_ORIGINAL_VERSION_UNVERIFIED')
+        require(not library.get('value') or library['value'] not in {drive.get('before'),drive.get('after')}, 'MODE_B_DRIVE_REVISION_IS_NOT_LIBRARY_VERSION')
+        required_holds.add('DRIVE_REVISION_NOT_ATOMIC')
+        if not drive.get('before') or drive.get('before')!=drive.get('after'):required_holds.add('DRIVE_REVISION_UNKNOWN_OR_CHANGED')
+    require(isinstance(e.get('holds'),list) and required_holds<=set(e['holds']), 'MODE_B_REQUIRED_HOLDS_MISSING')
+    # Connector invocation evidence stays private and needs real independent
+    # inspection; this does not add a Drive client or intercept its tool calls.
+    _,actor_raw=access_file(e['actor_request_evidence'],path.parent,snapshots)
+    return {'mode_b_evidence_sha256':hashlib.sha256(snapshots[path]).hexdigest(),
+            'mode_b_actor_evidence_sha256':hashlib.sha256(actor_raw).hexdigest()}
+
 def canonical(v):
     return json.dumps(v, ensure_ascii=False, sort_keys=True, separators=(',', ':'), allow_nan=False).encode()
 
@@ -564,7 +948,7 @@ def atomic_activate(path,payload):
     finally:
         if os.path.exists(name):os.unlink(name)
 
-def update_target(old, incoming, normalized, reader, mode, diff, history, run_context_sha256=None, change_evidence_sha256=None):
+def update_target(old, incoming, normalized, reader, mode, diff, history, run_context_sha256=None, change_evidence_sha256=None, access_binding=None):
     """Bind an actual external UPDATE review; never perform its economic judgment."""
     same=sha(old)==sha(normalized)
     previous=next((x['binding'] for x in reversed(history)
@@ -581,6 +965,7 @@ def update_target(old, incoming, normalized, reader, mode, diff, history, run_co
             'rules_sha256':{name:hashlib.sha256((ROOT/name).read_bytes()).hexdigest() for name in RULES}}
     if run_context_sha256:target['run_context_sha256']=run_context_sha256
     if change_evidence_sha256:target['change_evidence_sha256']=change_evidence_sha256
+    if access_binding:target.update(access_binding)
     if same and previous and set(target)==set(previous) and all(target[k]==previous[k] for k in target if k!='previous_pack_content_sha256'):return None
     return target
 
@@ -595,7 +980,8 @@ def check_update_review(target, path):
     require(r.get('decision')=='ACCEPT_WITH_SCOPED_HOLDS' and bool(r.get('reason')), 'UPDATE review decision/reason missing')
     require(r.get('current_operations_verified') is False and r.get('automatic_weekly_integration_complete') is False, 'UPDATE review cannot claim full operations/automation')
     checks=r.get('checkpoints',{})
-    require(isinstance(checks,dict) and set(checks)==set(UPDATE_CHECKS), 'UPDATE original-rule checkpoints missing')
+    required_checks=set(UPDATE_CHECKS)|({ACCESS_CHECK} if 'access_audit_sha256' in target else set())|({MODE_B_CHECK} if 'mode_b_evidence_sha256' in target else set())
+    require(isinstance(checks,dict) and set(checks)==required_checks, 'UPDATE original-rule checkpoints missing')
     for key,c in checks.items():
         require(isinstance(c,dict) and c.get('status') in ('REVIEWED','SCOPED_HOLD','NOT_APPLICABLE') and bool(c.get('reason')), 'UPDATE checkpoint explanation missing: '+key)
     evidence=Path(r.get('evidence_file',''))
@@ -617,6 +1003,11 @@ def main():
     ap.add_argument('--update-review',type=Path,help='actual independent whole-UPDATE review; never issued here')
     ap.add_argument('--run-context',type=Path,help='immutable private initial run snapshot; never embedded in public PACK')
     ap.add_argument('--change-evidence',type=Path,help='immutable private post-research domain evidence; exact hash bound to UPDATE review')
+    ap.add_argument('--access-history',type=Path,help='private pinned access policy with original proofs')
+    ap.add_argument('--request-plan',type=Path,help='private exact targets and per-researcher request plan; no network execution')
+    ap.add_argument('--prepare-research-handoff',type=Path,help='create private pre-request decisions; never approval or tool interception')
+    ap.add_argument('--access-audit',type=Path,help='acknowledged pre-request handoffs plus complete actual/skipped request inventory')
+    ap.add_argument('--mode-b-evidence',type=Path,help='private independent folder discovery, exact-byte comparison and version/HOLD receipts')
     args=ap.parse_args()
     with active_lock(ROOT/'data/ATLAS_PACK.json'):
         build(args)
@@ -625,10 +1016,11 @@ def build(args):
     active=ROOT/'data/ATLAS_PACK.json';active_bytes=active.read_bytes()
     protected={active.resolve(),args.pack.resolve(),(ROOT/'data/ATLAS_READER.json').resolve()}
     snapshots={}
-    for source in (args.pack,args.reader,args.reviews,args.update_review,args.diff,args.run_context,args.change_evidence):
+    for source in (args.pack,args.reader,args.reviews,args.update_review,args.diff,args.run_context,args.change_evidence,
+                   args.access_history,args.request_plan,args.access_audit,args.mode_b_evidence):
         if source:protected.add(source.resolve())
         if source:snapshots[source.resolve()]=source.read_bytes()
-    for output in (args.review_plan,args.prepare_reader):
+    for output in (args.review_plan,args.prepare_reader,args.prepare_research_handoff):
         if output:require(output.resolve() not in protected,'draft/plan cannot overwrite inputs/active pair')
     old,oldreader,bindings=anchor(active)
     proposed=core(load(args.pack));incoming=copy.deepcopy(proposed);input_hash=sha(incoming)
@@ -636,6 +1028,22 @@ def build(args):
     evidence=load(args.change_evidence) if args.change_evidence else None
     context_sha=hashlib.sha256(snapshots[args.run_context.resolve()]).hexdigest() if args.run_context else None
     evidence_sha=hashlib.sha256(snapshots[args.change_evidence.resolve()]).hexdigest() if args.change_evidence else None
+    if args.prepare_research_handoff:
+        require(args.access_history and args.request_plan and args.run_context and not any((args.reader,args.reviews,
+                args.update_review,args.review_plan,args.prepare_reader,args.diff,args.access_audit,args.mode_b_evidence)), 'ACCESS_HANDOFF_ARGUMENTS_REQUIRED')
+        require(input_hash==sha(old), 'ACCESS_HANDOFF_REQUIRES_CURRENT_BASE_NOT_RESEARCH_PROPOSAL')
+        validate_run_context(context,old,old,active_bytes,args.mode)
+        handoff=make_research_handoff(args.request_plan,args.access_history,args.run_context,snapshots)
+        output=private_path(args.prepare_research_handoff)
+        require(all(p.read_bytes()==v for p,v in snapshots.items()),'ACCESS_INPUT_CHANGED_DURING_HANDOFF')
+        with output.open('xb') as f:f.write(canonical(handoff)+b'\n')
+        print('private pre-request handoff only; actor acknowledgment required; no requests executed');return
+    require(args.request_plan is None, 'ACCESS_REQUEST_PLAN_ONLY_WITH_HANDOFF')
+    needs_access=(input_hash!=sha(old) or context is not None or args.review_plan is not None or args.update_review is not None)
+    access_binding=validate_access_audit(args.access_audit,args.access_history,args.run_context,snapshots) if needs_access else None
+    needs_mode_b=needs_access and (args.mode=='B' or (context or {}).get('kind')=='weekly')
+    mode_b_binding=validate_mode_b_evidence(args.mode_b_evidence,args.run_context,snapshots) if needs_mode_b or args.mode_b_evidence else None
+    if mode_b_binding:access_binding={**(access_binding or {}),**mode_b_binding}
     if context:require(args.diff is not None and args.diff.is_file(),'RUN_CONTEXT_DIFF_REQUIRED')
     replay=sha(old)==input_hash and any(x['binding'].get('run_context_sha256')==context_sha and context_sha is not None and
         x['binding']['normalized_pack_content_sha256']==sha(old) for x in load(active).get(PAIR,{}).get('update_reviews',[]))
@@ -652,14 +1060,15 @@ def build(args):
     normalize_prices(incoming,old);validate_inputs(incoming,reader)
     validate_domain_delta(old,incoming,context,evidence)
     target=update_target(old,proposed,incoming,reader,args.mode,args.diff,
-                         load(active).get(PAIR,{}).get('update_reviews',[]),context_sha,evidence_sha)
+                         load(active).get(PAIR,{}).get('update_reviews',[]),context_sha,evidence_sha,access_binding)
     receipts=load(args.reviews) if args.reviews else []
     new,pending,used=review_changes(bindings,record_bindings(incoming,reader),receipts,args.reviews or active)
     plan={'hash_scheme':SCHEME,'input_pack_content_sha256':input_hash,'normalized_pack_content_sha256':sha(incoming),
           'pending_reviews':pending,'update_review_required':target is not None,'update_binding':target,
-          'required_update_checkpoints':list(UPDATE_CHECKS) if target else [],
+          'required_update_checkpoints':list(UPDATE_CHECKS)+([ACCESS_CHECK] if access_binding else [])+([MODE_B_CHECK] if mode_b_binding else []) if target else [],
           'approval_issued':False,'current_operations_verified':False,'automatic_weekly_integration_complete':False}
     if args.review_plan:
+        require(all(p.read_bytes()==v for p,v in snapshots.items()),'reviewed input changed during plan')
         with args.review_plan.open('xb') as f:f.write(canonical(plan)+b'\n')
         print('review plan only; active pair unchanged; pending:',len(pending));return
     require(not pending,'Summary re-review required: '+', '.join(x['record_id'] for x in pending))

@@ -114,14 +114,21 @@ atlas_site/
 [대화]
  □ 최신 data/ATLAS_PACK.json 첨부  (SOP는 knowledge 상주 → 자동 적용, 재첨부 불필요)
  □ "아틀라스 업데이트" 입력 (+ 완료된 딥다이브 팩 첨부)
+ □ 외부 요청 전 docs/weekly-operating-contract.md의 검토된 private 접근 정책·요청대상 handoff를 각 조사자에게 전달
+ □ 기존 builder --prepare-research-handoff로 결정 생성 → 조사자가 정확 SHA·시각으로 ack → ALLOW_SCOPED만 요청
+ □ 명시 거부/auth/요청금지는 우회/새 host·path로 재선정하지 않음; 실패 종류·별도 정상 원문·허용 retry범위 구분
+ □ 새 실패 뒤 연관 요청은 중단·재계획; 모든 시도/미시도·capture를 private --access-audit로 결속
  □ 새 ATLAS_PACK.json 과 ATLAS_DIFF_YYMMDD.md 수령
 [로컬 검토·활성화 — 최종 교체 전 필수]
  □ 새 PACK과 원 UPDATE diff를 활성 경로 밖에 준비 (활성 PACK 선덮어쓰기 금지)
  □ python tools/build_reader.py --pack <제안> --prepare-reader <새초안reader>
+    (이번 UPDATE/context 사용 시 --run-context·--access-history·--access-audit와 MODE/diff도 전달; 주간/MODE B는 --mode-b-evidence 추가)
  □ 초안의 내용·원문·날짜·반대근거를 실제 제안과 대조 (초안 생성은 승인이 아님)
  □ python tools/build_reader.py --mode A --pack <제안> --reader <제안reader> --diff <원diff> --review-plan <새계획>
+    (--run-context·--access-history·--access-audit 필수; 주간/MODE B는 --mode-b-evidence 추가; 누락/금지시도/판본불일치 시 계획 발급 중단)
  □ 실제 독립 검토자가 원 UPDATE 전체와 변경 reader record를 각각 검토하고 근거·판본에 묶인 기록 발급
  □ python tools/build_reader.py --mode A --pack <같은제안> --reader <같은reader> --diff <같은diff> --reviews <record검토> --update-review <UPDATE독립검토>
+    (동일 context·access-history·access-audit·해당 mode-b-evidence와 추가 checkpoint의 실제 독립 검토 필요)
  □ MODE B 통합은 같은 명령의 --mode B 사용; 원 통관·전파·DD 밴드 소유권 규율은 그대로
  □ 실패 시 기존 활성 pair 유지; 같은 입력 반복은 중복 승인/이력 없이 재개
 [깃허브 — 별도 승인과 게시 차단 해소 후]
@@ -144,8 +151,11 @@ atlas_site/
 실제 범위·근거·남은 질문을 남긴다. 미조사를 무변화로 바꾸지 않는다. 원 00의 변화 감지 후
 심층 확인 원칙, 01의 실제 독립 신호·반대근거·최대2홉 규칙을 유지한다.
 
-MODE B는 실제로 발견한 새 DD 판본만 통관한다. 검색/목록/재사용/신규 원문 독해를 구분하고
-발견 실패를 새 DD 0건 확정으로 바꾸지 않는다. 티어·후보·전파를 확정한 뒤 03 §4A를 수행한다.
+MODE B는 기존 ID 목록에 의존하지 않는 지원 폴더 목록에서 실제로 발견한 입력을 기존 ID 집합과
+대조하고, 새/변경 입력의 정확 bytes·hash와 원문을 확인한 뒤 통관한다. 동일 bytes 재수신은 신규
+원문 독해나 새 사업근거가 아니다. Drive revision과 Library 원본 version은 별도이며 전자를 후자로
+대입하지 않는다. 목록 상한·제외 범위·capture 불확실성과 원문 미확인은 HOLD로 남긴다. 자세한
+private `--mode-b-evidence` 계약은 연결 문서를 따른다. 티어·후보·전파를 확정한 뒤 03 §4A를 수행한다.
 부분 리허설에서 가격 단계를 수행하지 않았다면 원 관측 시점을 보존하고 NOT_RUN/SCOPED_HOLD로
 밝히며 현재 시세 갱신·주간 완료로 표시하지 않는다. 실제 갱신에서 확인 실패한 현재 입력은
 원 규칙대로 UNKNOWN 처리하고 마지막 정상 관측은 과거 기록으로 분리한다.
@@ -253,3 +263,9 @@ MODE B는 실제로 발견한 새 DD 판본만 통관한다. 검색/목록/재�
 사용한다. 기존 builder는 신규 domain위반과 판본을 검사하고 같은 active경로 writer를
 잠근다. 로컬 잠금은 여러 환경의 원격 CAS 보장을 대신하지 않는다. 예약 실행·게시·
 Library전송 완료를 뜻하지 않으며, 미완/HOLD와 날짜있는 원본 이력은 보존한다.
+
+로컬 접근 이력·MODE B 계약은 기존 builder의 조사 handoff→계획→검수 관문을 연결한다.
+검토된 private 정책의 정확 판본·원문 사유/대상/시점/허용 retry범위를 요청 전에 결속하고,
+MODE B의 발견 집합·실제 bytes·판본 구분·남은 HOLD를 검토에 묶는다. 코드가 외부 도구 호출
+자체를 가로채지 못하므로 actor의 사전 준수·완전한 요청 증거와 독립 검토가 필요하다.
+로컬 검증을 실제 예약의 소비·자동운영 PASS로 보고하지 않는다.
