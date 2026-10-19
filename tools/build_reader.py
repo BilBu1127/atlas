@@ -253,7 +253,7 @@ def validate_access_audit(audit_path, history_path, context_path, snapshots):
             audit.get('complete_request_inventory') is True and audit.get('unlisted_requests')==0 and
             audit.get('actor_limits_acknowledged') is True, 'ACCESS_INVENTORY_OR_ACTOR_LIMITS_MISSING')
     sessions=audit.get('sessions');require(isinstance(sessions,list), 'ACCESS_SESSIONS_REQUIRED')
-    used=set();retried_urls=set();failures=[];request_ids=set();researchers=set();batches={}
+    used=set();retried_urls=set();failures=[];request_ids=set();researchers=set();batches={};known_failures={}
     baseline=load_access_history(history_path,snapshots)
     if not sessions:
         # A connector-only run must not invent web plans just to satisfy this
@@ -279,6 +279,10 @@ def validate_access_audit(audit_path, history_path, context_path, snapshots):
         plan_path,_=access_file(handoff['plan'],p.parent,snapshots)
         recomputed=make_research_handoff(plan_path,history_path,context_path,snapshots,handoff['prepared_at_utc'])
         require(handoff==recomputed, 'ACCESS_HANDOFF_PLAN_OR_POLICY_MISMATCH')
+        for record in handoff.get('prior_failures',[]):
+            proof_path,_=access_file(record['capture'],plan_path.parent,snapshots)
+            known={**record,'capture':{**record['capture'],'file':str(proof_path)}}
+            known_failures[(record['url'],record['result_class'],record['capture']['sha256'],record['observed_at_utc'])]=known
         ack=session.get('ack',{});researchers.add(handoff['researcher_id'])
         require(ack.get('researcher_id')==handoff['researcher_id'] and ack.get('handoff_sha256')==hashlib.sha256(raw).hexdigest() and
                 ack.get('history_sha256')==ACCESS_HISTORY_SHA256 and
@@ -305,7 +309,7 @@ def validate_access_audit(audit_path, history_path, context_path, snapshots):
             require(batch['raw']==proof and batch['stamp']==stamp, 'ACCESS_TOOL_INVOCATION_CAPTURE_OR_TIME_MISMATCH')
             batch['requests'].append(request)
             token=request.get('url') or request['query']
-            require(token in proof.decode('utf-8'), 'ACCESS_CAPTURE_IDENTITY_NOT_FOUND')
+            require(any(value in proof.decode('utf-8') for value in (token, json.dumps(token, ensure_ascii=False)[1:-1], json.dumps(token, ensure_ascii=True)[1:-1])), 'ACCESS_CAPTURE_IDENTITY_NOT_FOUND')
             result=outcome.get('result_class')
             require(result in {'SUCCESS','EXPLICIT_DENIAL','AUTH_REQUIRED','TOOL_REFUSAL','REQUEST_PROHIBITED','NOT_FOUND',
                     'TOOL_UNAVAILABLE_UNSPECIFIED','TRANSPORT_FAILURE_UNSPECIFIED','SEARCH_NO_RESULT','CONTENT_INCOMPLETE'}, 'ACCESS_RESULT_CLASS_REQUIRED')
@@ -321,7 +325,10 @@ def validate_access_audit(audit_path, history_path, context_path, snapshots):
     # Items in one batch were requested together; apply its failures afterward.
     ordered=sorted(batches.items(),key=lambda x:(x[1]['stamp'],not any(a[1] for a in x[1]['attempts']),x[0]))
     for _,batch in ordered:
-        live_history=add_run_failures(baseline,failures,audit_path.parent,snapshots,batch['stamp'])
+        # Reuse verified handoff history when it was already known at this
+        # invocation; a later handoff must not retroactively restrict an earlier one.
+        known=[r for r in known_failures.values() if access_time(r['observed_at_utc'])<=batch['stamp']]
+        live_history=add_run_failures(baseline,known+failures,audit_path.parent,snapshots,batch['stamp'])
         for stamp,detected,request,outcome,parent in batch['attempts']:
             identity=request.get('url') or ('search:'+request['query']);token=sha(access_identity(request))
             require(identity not in retried_urls if request['purpose']=='retry' else token not in used, 'ACCESS_REQUEST_BUDGET_EXCEEDED')

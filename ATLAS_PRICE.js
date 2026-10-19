@@ -124,15 +124,17 @@
   }
   function coreIndustryHTML(n){
     const c=core();if(!c||!n?.id)return '';
-    const d=c.industry_dispositions.find(x=>x.industry===n.id),g=c.closed_judgments.find(x=>x.industry===n.id);
+    const d=c.industry_dispositions.find(x=>x.industry===n.id),g=(c.closed_judgments||[]).find(x=>x.industry===n.id);
     const paths=corePaths().filter(p=>p.path.includes(n.id));
     if(!d&&!paths.length)return '';
     let h='<section class="atlas-core-industry" data-industry="'+esc(n.id)+'" style="font-size:11.5px;line-height:1.7;overflow-wrap:anywhere;margin:12px 0">';
     if(d){
-      h+='<b>현재 제한 재판단 · '+esc((c.correction_read_at_utc||c.integration_recorded_at_utc||c.read_recorded_on||'기록일 미기재').slice(0,10))+'</b><div>'+coreBadgeHTML(n.id)+'</div><p>'+esc(g?.judgment||d.decision)+'</p>'+
-        '<div>사업 자료 마감 '+esc(c.research_cutoff_utc)+' · 원문 재열람/교정 '+esc(c.correction_read_at_utc)+'</div>'+
-        '<div>수급·방향 · '+esc(d.axes_ko.balance_direction)+'</div><div>사이클·변화율 · '+esc(d.axes_ko.cycle_rate)+'</div><div>시장인지 보조축 · '+esc(d.axes_ko.market_read)+'</div>'+
-        '<p>다음 확인 · '+esc(d.next_questions.join(' / '))+'</p>';
+      h+='<b>현재 제한 재판단 · '+esc((c.correction_read_at_utc||c.integration_recorded_at_utc||c.read_recorded_on||'기록일 미기재').slice(0,10))+'</b><div>'+coreBadgeHTML(n.id)+'</div><p>'+esc(g?.judgment||d.decision||d.reason||d.status)+'</p>'+
+        '<div>사업 자료 마감 '+esc(c.research_cutoff_utc)+(c.correction_read_at_utc?' · 원문 재열람/교정 '+esc(c.correction_read_at_utc):'')+'</div>';
+      if(d.axes_ko)h+='<div>수급·방향 · '+esc(d.axes_ko.balance_direction)+'</div><div>사이클·변화율 · '+esc(d.axes_ko.cycle_rate)+'</div><div>시장인지 보조축 · '+esc(d.axes_ko.market_read)+'</div>';
+      else h+=(d.status?'<div>현재 확인 범위 · '+esc(d.status)+'</div>':'')+(d.counterevidence?'<div>반대근거 · '+esc(d.counterevidence)+'</div>':'');
+      const next=Array.isArray(d.next_questions)?d.next_questions.join(' / '):d.next_check;
+      if(next)h+='<p>다음 확인 · '+esc(next)+'</p>';
       if(g){h+='<details><summary>연결 기업·후보와 근거 정산</summary>'+g.company_reviews.map(r=>'<p><b>'+esc(r.tickers.join(' · '))+'</b> '+esc(r.decision_ko)+'</p>').join('')+'<p>'+esc(g.candidate_result)+'</p>'+
         (g.incident_inbound_review||[]).map(r=>'<p>인바운드 재검토 소환 · '+esc(r.nodes?.join(' · ')||r.node)+' · '+esc(r.reason_ko)+'</p>').join('')+
         '<div>인바운드 소환은 반대 방향의 인과 전파를 확정한 것이 아닙니다.</div>'+sourceLinks(g.sources)+'</details>';}
@@ -142,8 +144,8 @@
   }
   function coreCompanyHTML(n){
     const c=core();if(!c||!n?.ticker)return '';
-    const groups=c.closed_judgments.filter(g=>g.company_reviews.some(r=>r.tickers.includes(n.ticker)));
-    const cr=c.candidate_reviews.find(r=>r.ticker===n.ticker),candidate=boundPack.monthly_diff.deep_dive_candidates.find(r=>r.ticker===n.ticker);
+    const groups=(c.closed_judgments||[]).filter(g=>g.company_reviews.some(r=>r.tickers.includes(n.ticker)));
+    const cr=c.candidate_reviews?.find(r=>r.ticker===n.ticker),candidate=boundPack.monthly_diff.deep_dive_candidates.find(r=>r.ticker===n.ticker);
     const recall=n.ticker==='UBER'&&c.conditional_UBER_evaluation?.applied;
     if(!groups.length&&!cr&&!recall)return '';
     let h='<section class="atlas-core-company" data-ticker="'+esc(n.ticker)+'" style="font-size:11.5px;line-height:1.7;overflow-wrap:anywhere;margin:12px 0"><b>회사에 전달한 제한 재판단 · '+esc((c.correction_read_at_utc||c.integration_recorded_at_utc||c.read_recorded_on||'기록일 미기재').slice(0,10))+'</b><div>기존 자료 마감 '+esc(c.research_cutoff_utc)+' · 전면 DD·사업 전체 최신 검증이 아닙니다.</div>';
