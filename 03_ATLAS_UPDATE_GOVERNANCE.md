@@ -184,8 +184,24 @@ index.html
 ```
 
 갱신 반영:
-1. `data/ATLAS_PACK.json` 덮어쓰기 (뷰 반영은 이것만으로 끝)
+1. 새 PACK·원 diff를 활성 경로 밖에 준비 → SOP §3의 기존 `tools/build_reader.py` 검토 계획 호출
+   → 실제 전체 UPDATE 독립 검토와 reader별 검토 → 판본/근거 대조 후 최종 `data/ATLAS_PACK.json` 한 파일 활성화.
+   제안 파일로 활성 PACK을 먼저 덮어쓰지 않는다. 실패·같은 입력 반복·교체 전후 중단 재개는 기존 검증 경로를 쓴다.
 2. `data/deepdive/`에 이번 딥다이브 팩 업로드
 3. diff 리포트는 뷰가 fetch하지 않는 순수 기록물 — repo 필수 아님(로컬/`data/` 보관)
-4. 커밋 → Pages 재빌드 1~2분 → 브라우저 하드 리프레시(Ctrl/Cmd+Shift+R)
+4. 게시 차단이 해소되고 원격 쓰기가 승인된 뒤에만, main 재대조/동시 변경 조정 → guarded 반영
+   → Pages terminal success와 실제 제공 파일/화면 검증. 커밋 수락이나 build 시작을 성공으로 대신하지 않는다.
 5. **신규 폴더 만들지 않는다.** 기존 두 경로(`data/`, `data/deepdive/`)에만 얹는다.
+
+로컬 Knowledge mirror는 원 지침 6종과 bytes·MD5·SHA256을 대조한다. 원격 Knowledge/예약/게시의
+실제 변경·실행은 각각 별도 증거가 있어야 완료다. 이 로컬 통합은 원 00/01/02 판단 기준,
+MODE A/B 순서, §1~5의 하드넘버·기간·부채·가격 방화벽 규율을 완화하지 않는다.
+
+
+### 로컬 회차 계약 보완 (2026-10-18 P01–P06)
+
+기존 UPDATE/MODE A/B·수급/사이클 판단·DD밴드 방화벽을 유지한다. 새/변경 주간제안은
+`docs/weekly-operating-contract.md`의 고정 run-context·역할별 current refs·실제 검토 경로를
+사용한다. 기존 builder는 신규 domain위반과 판본을 검사하고 같은 active경로 writer를
+잠근다. 로컬 잠금은 여러 환경의 원격 CAS 보장을 대신하지 않는다. 예약 실행·게시·
+Library전송 완료를 뜻하지 않으며, 미완/HOLD와 날짜있는 원본 이력은 보존한다.

@@ -105,10 +105,13 @@ python3 -m http.server 8000
 
 1. 최신 `ATLAS_PACK.json`을 첨부하고 `아틀라스 업데이트` 트리거
 2. 변화 신호가 있는 산업만 심층 확인 → 새 `ATLAS_PACK.json` + diff 리포트 생성
-3. 저장소의 **`data/ATLAS_PACK.json` 하나만** 새 파일로 교체
-4. GitHub Pages가 자동 반영 → 콘솔·관계망이 새 데이터로 갱신
+3. 활성 경로 밖에서 제안 PACK/reader·원 diff 준비 → SOP §3의 기존 빌더 검토 계획 → 실제 UPDATE/reader 독립 검토 → 검증된 PACK 한 파일 활성화
+4. 별도 승인·게시 차단 해소 후 main 동시 변경을 재대조해 최종 파일 반영 → Pages terminal success·실제 제공 파일/화면 확인
 
 지도의 원본은 항상 `data/ATLAS_PACK.json`. 갱신은 직전 PACK 기반의 diff로만 이루어진다.
+
+로컬 지침/Knowledge mirror 연결은 [주간 운영 계약](docs/weekly-operating-contract.md)에 기록한다.
+원격 예약·Knowledge·배포를 수정하거나 실제 주간 조사 전체를 완료했다는 뜻은 아니다.
 
 ### 탐색과 읽기 위치
 
@@ -133,3 +136,12 @@ UNKNOWN·비교/표시 억제·중요 HOLD는 요약에도 남는다. UI 판본�
 ---
 
 *Global Sector Atlas OS v1.3 · 온톨로지 레이어 · SOP v1.4 (2026-09-02 문서 정합화)*
+
+
+### 로컬 회차 계약 보완 (2026-10-18 P01–P06)
+
+기존 UPDATE/MODE A/B·수급/사이클 판단·DD밴드 방화벽을 유지한다. 새/변경 주간제안은
+`docs/weekly-operating-contract.md`의 고정 run-context·역할별 current refs·실제 검토 경로를
+사용한다. 기존 builder는 신규 domain위반과 판본을 검사하고 같은 active경로 writer를
+잠근다. 로컬 잠금은 여러 환경의 원격 CAS 보장을 대신하지 않는다. 예약 실행·게시·
+Library전송 완료를 뜻하지 않으며, 미완/HOLD와 날짜있는 원본 이력은 보존한다.

@@ -115,8 +115,17 @@ atlas_site/
  □ 최신 data/ATLAS_PACK.json 첨부  (SOP는 knowledge 상주 → 자동 적용, 재첨부 불필요)
  □ "아틀라스 업데이트" 입력 (+ 완료된 딥다이브 팩 첨부)
  □ 새 ATLAS_PACK.json 과 ATLAS_DIFF_YYMMDD.md 수령
-[깃허브]
- □ data/ATLAS_PACK.json  ← 새 파일로 덮어쓰기
+[로컬 검토·활성화 — 최종 교체 전 필수]
+ □ 새 PACK과 원 UPDATE diff를 활성 경로 밖에 준비 (활성 PACK 선덮어쓰기 금지)
+ □ python tools/build_reader.py --pack <제안> --prepare-reader <새초안reader>
+ □ 초안의 내용·원문·날짜·반대근거를 실제 제안과 대조 (초안 생성은 승인이 아님)
+ □ python tools/build_reader.py --mode A --pack <제안> --reader <제안reader> --diff <원diff> --review-plan <새계획>
+ □ 실제 독립 검토자가 원 UPDATE 전체와 변경 reader record를 각각 검토하고 근거·판본에 묶인 기록 발급
+ □ python tools/build_reader.py --mode A --pack <같은제안> --reader <같은reader> --diff <같은diff> --reviews <record검토> --update-review <UPDATE독립검토>
+ □ MODE B 통합은 같은 명령의 --mode B 사용; 원 통관·전파·DD 밴드 소유권 규율은 그대로
+ □ 실패 시 기존 활성 pair 유지; 같은 입력 반복은 중복 승인/이력 없이 재개
+[깃허브 — 별도 승인과 게시 차단 해소 후]
+ □ data/ATLAS_PACK.json  ← 위 검증을 마친 최종 pair 파일만 반영
  □ (딥다이브 있었으면) data/deepdive/ 에 원본 팩 추가
  □ 커밋: "UPDATE-N YYMMDD: <핵심 변경>"  (예: ITC-08 NEUTRAL→WARM, 딥다이브 5종)
  □ (선택) ATLAS_DIFF 를 로컬/원하는 곳에 보관 (변경 이력)
@@ -124,6 +133,28 @@ atlas_site/
  □ GitHub Pages 1~2분 후 재배포 → 콘솔·관계망·히트맵 모두 최신인지 확인
  □ 프로젝트 지식의 PACK 도 최신본으로 교체 (다음 대화의 diff 기준)
 ```
+
+### 3-A. 주간 실행과 Knowledge 연결 (2026-10-18 로컬 통합)
+
+수동 `아틀라스 업데이트`의 판단 순서와 기존 주간 예약의 요구를 같은 절차로 연결한다.
+새 범용 조사 실행기·예약·경제 판단 엔진을 추가하지 않는다. 현재 원격 예약은 수정하지 않았다.
+실제 main을 매회 재발견하고 직전 성공 cutoff·별도 추가창·이번 읽기 시각을 구분한다.
+현재 PACK에서 산업/회사 전체를 열거하며 숫자를 고정하지 않는다. 경량 스캔과 원문 재검토를
+구분하고, 각 대상에 changed/checked-no-material-change/stale/unavailable/follow-up과
+실제 범위·근거·남은 질문을 남긴다. 미조사를 무변화로 바꾸지 않는다. 원 00의 변화 감지 후
+심층 확인 원칙, 01의 실제 독립 신호·반대근거·최대2홉 규칙을 유지한다.
+
+MODE B는 실제로 발견한 새 DD 판본만 통관한다. 검색/목록/재사용/신규 원문 독해를 구분하고
+발견 실패를 새 DD 0건 확정으로 바꾸지 않는다. 티어·후보·전파를 확정한 뒤 03 §4A를 수행한다.
+부분 리허설에서 가격 단계를 수행하지 않았다면 원 관측 시점을 보존하고 NOT_RUN/SCOPED_HOLD로
+밝히며 현재 시세 갱신·주간 완료로 표시하지 않는다. 실제 갱신에서 확인 실패한 현재 입력은
+원 규칙대로 UNKNOWN 처리하고 마지막 정상 관측은 과거 기록으로 분리한다.
+
+지침을 바꾼 세션은 6종의 레포 후보와 **로컬 Knowledge mirror**의 bytes·MD5·SHA256을
+전량 대조한다. 원격 Knowledge의 실제 교체·검증 전에는 원격 동기화 완료라고 말하지 않는다.
+해시/필수 checkpoint는 판본 검사이며 신원·출처 진실성·경제 판단을 인증하지 않는다.
+실제 독립 검토의 범위를 남기고 합성 TEST_ONLY 기록을 실제 연구에 재사용하지 않는다.
+자세한 입력·검토·활성·게시 단계는 `docs/weekly-operating-contract.md`를 따른다.
 
 ---
 
@@ -211,3 +242,14 @@ atlas_site/
   않던 구멍을 막았다. 종료 체크리스트에는 있었으나 절차 설명에 없어, 세션이 §4를 먼저
   읽으면 순서가 꼬일 수 있었다. A타입의 "51종" 하드코딩도 제거(실물 56종) —
   개수는 PACK 실물로 확인하도록 규율화.
+
+- **2026-10-18 (로컬 주간 연결)** — 원 UPDATE/MODE A/B 판단·방화벽은 보존. 검토 전 PACK 선덮어쓰기 대신 기존 빌더의 계획→실제 독립 검토→단일 활성화를 연결하고 지침6종 로컬 Knowledge mirror를 대조했다. 원격 Knowledge·예약·게시에는 미적용이며 부분 원문 리허설을 전량 주간 성공으로 표시하지 않는다.
+
+
+### 로컬 회차 계약 보완 (2026-10-18 P01–P06)
+
+기존 UPDATE/MODE A/B·수급/사이클 판단·DD밴드 방화벽을 유지한다. 새/변경 주간제안은
+`docs/weekly-operating-contract.md`의 고정 run-context·역할별 current refs·실제 검토 경로를
+사용한다. 기존 builder는 신규 domain위반과 판본을 검사하고 같은 active경로 writer를
+잠근다. 로컬 잠금은 여러 환경의 원격 CAS 보장을 대신하지 않는다. 예약 실행·게시·
+Library전송 완료를 뜻하지 않으며, 미완/HOLD와 날짜있는 원본 이력은 보존한다.

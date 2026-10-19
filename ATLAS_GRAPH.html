@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ATLAS · 온톨로지 탐색기</title>
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <style>
@@ -189,6 +189,8 @@ button{font-family:inherit;cursor:pointer}
 </style>
 <script src="./ATLAS_PRICE.js"></script>
 <script src="./ATLAS_UX.js"></script>
+<script src="./ATLAS_READER_ADAPTER.js"></script>
+<script src="./ATLAS_READING.js"></script>
 <style id="atlas-integration-responsive">@media(max-width:1500px){.masthead{flex-wrap:wrap}.masthead .xnav{flex-shrink:0;white-space:nowrap}.masthead .xnav a{white-space:nowrap}.masthead .wordmark{flex-shrink:0}}
 @media(max-width:900px){
 html,body{height:auto;overflow-x:hidden;overflow-y:auto}.shell{height:auto;min-height:100dvh;grid-template-columns:minmax(0,1fr);grid-template-rows:auto 42dvh auto minmax(350px,1fr)}
@@ -255,7 +257,7 @@ html,body{height:auto;overflow-x:hidden;overflow-y:auto}.shell{height:auto;min-h
      <path d="M27 20v7M24.5 32l-9 5.5M29.5 32l9 5.5" opacity=".6"/>
     </svg>
     <h3>ATLAS 온톨로지 탐색기</h3>
-    <p>지금 데워지는 산업(과열·온기)과 테마만 먼저 보입니다. <b style="color:var(--ink-dim)">산업을 클릭하면</b> 수요·공급·트리거 카드가 열리고, 그 산업을 데운 트리거에 노출된 기업들이 <b style="color:var(--heat)">국면 주도주</b> · <b style="color:var(--warm)">고베타 유망주</b> · <b style="color:var(--company)">대장</b> 세 계층으로 펼쳐집니다. 엣지를 따라 이웃 노드로 꼬리를 물고 내려가세요.<br><br>바닥에서 반전하는 역발상 사냥은 하단 <b style="color:var(--cold)">역발상 감시</b>로 COLD를 펼치면 됩니다.</p>
+    <p>지금 데워지는 산업(우선 조사·조짐 관찰)과 테마만 먼저 보입니다. <b style="color:var(--ink-dim)">산업을 클릭하면</b> 수요·공급·트리거 카드가 열리고, 그 산업을 데운 트리거에 노출된 기업들이 <b style="color:var(--heat)">국면 주도주</b> · <b style="color:var(--warm)">고베타 유망주</b> · <b style="color:var(--company)">대장</b> 세 계층으로 펼쳐집니다. 엣지를 따라 이웃 노드로 꼬리를 물고 내려가세요.<br><br>바닥에서 반전하는 역발상 사냥은 하단 <b style="color:var(--cold)">역발상 감시</b>로 COLD를 펼치면 됩니다.</p>
    </div>
   </div>
  </aside>
@@ -410,7 +412,7 @@ const svg=document.getElementById('net');
 const tip=document.getElementById('tip');
 
 const TIER_COLOR={HEAT:'#E0552F',WARM:'#D89A3A',NEUTRAL:'#7A8894',COLD:'#4A8DB8',FROZEN:'#4F5860'};
-const TIER_KO={HEAT:'과열',WARM:'온기',NEUTRAL:'중립',COLD:'냉각',FROZEN:'동결'};
+const TIER_KO={HEAT:'우선 조사',WARM:'온기',NEUTRAL:'중립',COLD:'냉각',FROZEN:'동결'};
 const THEME_COLOR='#C9B88A', COMPANY_COLOR='#B8C0C8';
 const ROLE_KO={ANCHOR:'대장',REGIME_LEADER:'국면 주도주',HIGH_BETA:'고베타 유망주'};
 const EDGE_KO={SUPPLIES_TO:'공급',CUSTOMER_OF:'고객',SUBSTITUTES:'대체',CAPACITY_COMPETES:'capa경쟁',
@@ -685,20 +687,23 @@ function hlEdgeColor(e){
 function setHover(id){ hoverId=id; updateVisibility(); }
 
 /* ---------- selection & drill-down ---------- */
-function selectNode(id){
+let readingIndustry=null;
+function selectNode(id,entryIndustry){
   if(!NBYID[id])return;
+  const destinationContext=NBYID[id].kind==='company'?(entryIndustry||(id===selId?readingIndustry:null)||NBYID[id].industry):null;
   const apply=()=>{
     graphOpener=document.activeElement;graphOpenerY=scrollY;selId=id;focusNodeId=id;const n=NBYID[id];
+    readingIndustry=destinationContext;
     if(n.kind==='industry')expandIndustry(n);
-    updateVisibility();renderInspector(n);centerOn(n);$('ibody').scrollTop=0;
+    updateVisibility();renderInspector(n);centerOn(n);$('ibody').scrollTop=0;ATLAS_READING.graphSheet(true);
     graphNav?.backButton($('graphPanelNav'));ATLAS_UX.enhance(document.querySelector('.inspector'));
     $('graphClose').focus({preventScroll:true});
     if(innerWidth<=900&&!graphNav?.restoring)document.querySelector('.inspector').scrollIntoView({block:'start',behavior:ATLAS_UX.reduce()?'instant':'smooth'});
   };
-  if(graphNav)graphNav.navigate(id,apply,'#'+encodeURIComponent(id));else apply();
+  if(graphNav)graphNav.navigate(id+(destinationContext?'@'+destinationContext:''),apply,'#'+encodeURIComponent(id));else apply();
 }
 function clearGraphSelection(){
-  const apply=()=>{selId=null;hoverId=null;updateVisibility();$('ieyebrow').textContent='탐색기';$('ititle').textContent='관계망을 클릭해 파고드세요';$('isub').textContent='';$('ibody').innerHTML=graphIntro;
+  const apply=()=>{selId=null;hoverId=null;readingIndustry=null;ATLAS_READING.graphSheet(false);updateVisibility();$('ieyebrow').textContent='탐색기';$('ititle').textContent='관계망을 클릭해 파고드세요';$('isub').textContent='';$('ibody').innerHTML=graphIntro;
     (graphOpener?.isConnected&&graphOpener!==document.body?graphOpener:$('graphQuery')).focus({preventScroll:true});if(!graphNav?.restoring)scrollTo({top:graphOpenerY,behavior:'instant'})};
   if(graphNav)graphNav.navigate(null,apply,location.pathname);else apply();
 }
@@ -759,7 +764,7 @@ function renderIndustry(n){
        ${c.role_reason?`<div class="comp-rz">${esc(c.role_reason)}</div>`:(c.chain?`<div class="comp-rz">${esc(c.chain)}</div>`:'')}</div>`).join('')+`</div>`;};
   const others=roles['null'];
   const edgesOut=EDGES.filter(e=>(e.from===n.id||e.to===n.id)&&e.type!=='OPERATES_IN');
-  let html='';
+  let html=ATLAS_READING.industryHTML(window.PACK.industries.find(i=>i.id===n.id))+'<details class="atlas-preserved"><summary>수급·사이클·전체 근거 기록</summary><div class="atlas-preserved-body">';
   // balance / cycle
   html+=`<div class="sec"><div class="sec-h">수급 · 사이클</div>
     <div class="kv"><b>${balKo(n.balance)}</b> ${esc(n.balance_dir||'')} · 사이클 <b>${cycKo(n.cycle)}</b></div>
@@ -783,6 +788,7 @@ function renderIndustry(n){
   // triggers
   if(n.triggers&&n.triggers.length){ html+=`<div class="sec"><div class="sec-h">잠재 트리거</div>`+
     n.triggers.map(t=>`<div class="txt">· ${esc(t)}</div>`).join('')+`</div>`;}
+  html+='</div></details>';
   // role-tiered companies
   const anyRole=roles.ANCHOR.length||roles.REGIME_LEADER.length||roles.HIGH_BETA.length;
   if(anyRole){ html+=`<div class="sec"><div class="sec-h">주목 기업 · role 계층 <span style="color:var(--ink-faint);text-transform:none;letter-spacing:0">이 트리거 기준</span></div>`+
@@ -791,9 +797,9 @@ function renderIndustry(n){
     roleBlock('ANCHOR','anchor','role-glyph-anchor')+`</div>`;}
   if(others&&others.length){ const oth=others.slice().sort((a,b)=>(b.verification==='DEEP_DIVED')-(a.verification==='DEEP_DIVED'));
     const ddN=oth.filter(c=>c.verification==='DEEP_DIVED').length;
-    html+=`<div class="sec"><div class="sec-h">밸류체인 · 기타 ${ddN?`<span style="color:var(--teal);text-transform:none;letter-spacing:0">✓ 검증 ${ddN}</span>`:''}</div><div class="ind-list">`+
+    html+=`<div class="sec"><div class="sec-h">밸류체인 · 기타 ${ddN?`<span style="color:var(--teal);text-transform:none;letter-spacing:0">DD 기록 ${ddN}</span>`:''}</div><div class="ind-list">`+
     oth.map(c=>{const dd=c.verification==='DEEP_DIVED';
-      return `<div class="li${dd?' dd':''}" onclick="focusCompany('${esc(c.ticker)}','${n.id}')"><span class="tk">${esc(c.ticker)}</span><span>${esc(c.name)} <span style="color:var(--ink-faint)">${esc(c.chain||'')}</span></span>${dd?'<span class="ddbadge">✓ 검증</span>':''}</div>`;}).join('')+`</div></div>`;}
+      return `<div class="li${dd?' dd':''}" onclick="focusCompany('${esc(c.ticker)}','${n.id}')"><span class="tk">${esc(c.ticker)}</span><span>${esc(c.name)} <span style="color:var(--ink-faint)">${esc(c.chain||'')}</span></span>${dd?'<span class="ddbadge">DD 기록</span>':''}</div>`;}).join('')+`</div></div>`;}
   // edges
   if(edgesOut.length){
     const EC={SUPPLIES_TO:'#6FA8CE',DEMAND_COMOVES:'#8FB08A',SUBSTITUTES:'#D89A3A',
@@ -827,14 +833,15 @@ function renderTheme(n){
   $('ibody').innerHTML=html;
 }
 function renderCompany(n){
-  const ind=NBYID[n.industry]||{};
+  const context=(canonicalMembership(n.ticker).includes(readingIndustry)?readingIndustry:null)||n.industry;
+  const ind=NBYID[context]||{};
   $('ieyebrow').innerHTML=`<span>기업 · ${n.role?ROLE_KO[n.role]:'밸류체인'}</span>`;
   $('ititle').textContent=n.label;
   $('isub').innerHTML=`<span class="metric">${esc(n.ticker)}</span> · ${esc(ind.label||n.industry)} ${ind.tier?tierPill(ind.tier):''}`;
   const canonical=(window.PACK.company_nodes||[]).find(c=>c.ticker===n.ticker);
-  const storedCard=(window.PACK.industries.find(i=>i.id===n.industry)||{}).companies||[];
+  const storedCard=(window.PACK.industries.find(i=>i.id===context)||{}).companies||[];
   const card=storedCard.find(c=>c.ticker===n.ticker);
-  let html=ATLAS_PRICE.companyReviewHTML(canonical)+ATLAS_PRICE.reviewHTML(canonical)+ATLAS_PRICE.reviewHTML(card||{membership_status:'NODE_ONLY_CARD_OMISSION'});
+  let html=ATLAS_READING.companyHTML(canonical,window.PACK.industries.find(i=>i.id===context),card)+'<details class="atlas-preserved"><summary>회사 근거·관찰 KPI·원 DD·가격 기록</summary><div class="atlas-preserved-body">'+ATLAS_PRICE.companyReviewHTML(canonical)+ATLAS_PRICE.reviewHTML(canonical)+ATLAS_PRICE.reviewHTML(card||{membership_status:'NODE_ONLY_CARD_OMISSION'});
   if(n.role){ const cls=n.role==='REGIME_LEADER'?'leader':n.role==='HIGH_BETA'?'beta':'anchor';
     const glyph=n.role==='REGIME_LEADER'?'role-glyph-leader':n.role==='HIGH_BETA'?'role-glyph-beta':'role-glyph-anchor';
     html+=`<div class="sec"><div class="role-cap ${cls}" style="font-size:12px"><span class="mk ${glyph}"></span>${ROLE_KO[n.role]}</div>
@@ -850,16 +857,16 @@ function renderCompany(n){
     </div>`;}
   if(n.is_candidate){ html+=`<div class="sec"><div class="sec-h">딥다이브 후보</div>
     <div class="txt">이 종목은 이번 정산에서 딥다이브 후보로 선별됐습니다. 상세 논거·반증조건·시간지평은 PACK의 <span class="metric">deep_dive_candidates</span>를 참조하세요.</div></div>`;}
-  html+=`<div class="sec"><div class="sec-h">소속 산업</div>
-    <div class="li" onclick="selectNode('${n.industry}')"><span class="tk" style="color:${TIER_COLOR[ind.tier]||'#888'}">${ind.tier||''}</span><span>${esc(ind.label||n.industry)} — 산업 카드로 →</span></div></div>`;
+  html+='</div></details><section class="atlas-memberships"><h3>연결된 산업</h3>'+canonicalMembership(n.ticker).map(id=>{const i=NBYID[id]||{};return `<div class="li" onclick="selectNode('${id}')"><span class="tk" style="color:${TIER_COLOR[i.tier]||'#aaa'}">${esc(i.tier||'')}</span><span>${esc(i.label||id)}${id===context?' · 이 화면의 진입 맥락':''} →</span></div>`}).join('')+'<small>산업 연결은 해당 회사의 실적 수혜 확증과 다릅니다.</small></section>';
   html+=n.verification==='DEEP_DIVED'
-    ?`<div class="disc">이 노드는 딥다이브로 <b style="color:var(--theme)">검증 완료</b>된 진한 노드입니다. 표시된 스탠스는 딥다이브 산출의 인용이며, 분기 업데이트에서 갱신됩니다. 여전히 매수 신호가 아닙니다.</div>`
+    ?`<div class="disc">보존된 DD 기록이 있는 진한 노드입니다. 원 기준일의 판단을 인용하며, 회사 전체의 현재 검증 완료를 뜻하지 않습니다. 가격 관측일과 사업 확인일은 별개입니다.</div>`
     :`<div class="disc">verification=<b style="color:var(--ink-dim)">SHALLOW</b>. 아틀라스는 "이 트리거에 노출된, 아직 안 판 기업"까지 좁혀줄 뿐, 해자·재무·경영진 검증은 딥다이브의 몫입니다. 고베타일수록 변동성·함정 위험도 큽니다.</div>`;
   $('ibody').innerHTML=html;
 }
+function canonicalMembership(tk){return (window.PACK.company_nodes.find(c=>c.ticker===tk)?.industries||[])}
 function focusCompany(tk,indid){
-  const apply=()=>{const n=ensureCompany(tk,indid,(NBYID[indid]?.companies||[]).find(c=>c.ticker===tk));if(n){showState.company=true;renderStatic();selectNode(n.id)}};
-  if(graphNav)graphNav.navigate('C::'+tk,apply,'#'+encodeURIComponent('C::'+tk));else apply();
+  const apply=()=>{const n=ensureCompany(tk,indid,(NBYID[indid]?.companies||[]).find(c=>c.ticker===tk));if(n){showState.company=true;renderStatic();selectNode(n.id,indid)}};
+  if(graphNav)graphNav.navigate('C::'+tk+'@'+indid,apply,'#'+encodeURIComponent('C::'+tk));else apply();
 }
 function balKo(b){return {SHORTAGE:'공급부족',BALANCED:'균형',GLUT:'공급과잉'}[b]||b||'—';}
 function cycKo(c){return {RECOVERY:'회복초입',EXPANSION:'확장',PEAK:'피크권',DOWNTURN:'하강',TROUGH:'바닥권'}[c]||c||'—';}
@@ -957,11 +964,18 @@ function syncGraphControls(){
   $('toggleCo').classList.toggle('off',!showState.company);$('toggleTheme').classList.toggle('off',!showState.theme);$('toggleHop2').classList.toggle('off',!showState.hop2);$('coldWatch').classList.toggle('on',!!(showState.tiers.COLD||showState.tiers.FROZEN));
 }
 function ensureGraphURL(id){
+  const context=id?.startsWith('C::')?((id===selId?readingIndustry:null)||window.PACK.company_nodes.find(n=>n.ticker===id.slice(3))?.industries[0]||null):null;
   const apply=()=>{
-    if(id?.startsWith('C::')){const t=id.slice(3),c=window.PACK.company_nodes.find(n=>n.ticker===t);if(c){const n=ensureCompany(t,c.industries[0],c);if(n){n.active=true;showState.company=true;renderStatic()}}}
-    if(NBYID[id]){const n=NBYID[id],tier=n.kind==='industry'?n.tier:NBYID[n.industry]?.tier;if(tier)showState.tiers[tier]=1;selectNode(id);syncGraphControls()}
+    if(id?.startsWith('C::')){const t=id.slice(3),c=window.PACK.company_nodes.find(n=>n.ticker===t);if(c){
+      const beforeNodes=NODES.length,beforeEdges=EDGES.length,beforeVerification=NBYID[id]?.verification;
+      const n=ensureCompany(t,c.industries[0],c);if(n){n.active=true;showState.company=true;
+        // ensureCompany only adds nodes/edges or updates verification/active.
+        // Unchanged SVG markup stays in place; inspector data is always read anew.
+        if(NODES.length!==beforeNodes||EDGES.length!==beforeEdges||n.verification!==beforeVerification)renderStatic();
+      }}}
+    if(NBYID[id]){const n=NBYID[id],tier=n.kind==='industry'?n.tier:NBYID[n.industry]?.tier;if(tier)showState.tiers[tier]=1;selectNode(id,context);syncGraphControls()}
   };
-  if(graphNav)graphNav.navigate(id||null,apply,id?'#'+encodeURIComponent(id):location.pathname);else apply();
+  if(graphNav)graphNav.navigate(id?(id+(context?'@'+context:'')):null,apply,id?'#'+encodeURIComponent(id):location.pathname);else apply();
 }
 function installGraphNavigation(){
   const queuedQuery=$('graphFind').dataset.pendingQuery;
@@ -975,11 +989,11 @@ function installGraphNavigation(){
     $('graphFindStatus').textContent='';ensureGraphURL(matches[0].id);syncGraphControls();
   };
   graphNav=ATLAS_UX.mount({
-    key:m=>m.selected||null,
-    capture:()=>({selected:selId,show:JSON.parse(JSON.stringify(showState)),view:{...view},nodes:NODES.map(n=>({id:n.id,x:n.x,y:n.y,active:n.active})),query:$('graphQuery').value,focus:focusNodeId,openerY:graphOpenerY,inspectorScroll:document.querySelector('.inspector').scrollTop}),
+    key:m=>m.selected?(m.selected+(m.readingIndustry?'@'+m.readingIndustry:'')):null,
+    capture:()=>({selected:selId,readingIndustry,show:JSON.parse(JSON.stringify(showState)),view:{...view},nodes:NODES.map(n=>({id:n.id,x:n.x,y:n.y,active:n.active})),query:$('graphQuery').value,focus:focusNodeId,openerY:graphOpenerY,inspectorScroll:document.querySelector('.inspector').scrollTop}),
     restore:m=>{
       (m.nodes||[]).forEach(p=>{if(!NBYID[p.id]&&p.id.startsWith('C::')){const c=window.PACK.company_nodes.find(c=>c.ticker===p.id.slice(3));if(c)ensureCompany(c.ticker,c.industries[0],c)}});
-      Object.assign(showState,m.show);renderStatic();if(m.selected&&NBYID[m.selected])selectNode(m.selected);else clearGraphSelection();
+      Object.assign(showState,m.show);renderStatic();if(m.selected&&NBYID[m.selected])selectNode(m.selected,m.readingIndustry);else clearGraphSelection();
       Object.assign(showState,m.show);(m.nodes||[]).forEach(p=>{if(NBYID[p.id])Object.assign(NBYID[p.id],{x:p.x,y:p.y,vx:0,vy:0,active:p.active})});
       view={...m.view};focusNodeId=m.focus;graphOpenerY=m.openerY||0;applyView();syncPositions();syncGraphControls();updateVisibility();$('graphQuery').value=m.query||'';document.querySelector('.inspector').scrollTop=m.inspectorScroll||0;
       running=false;
@@ -990,7 +1004,7 @@ function installGraphNavigation(){
 }
 
 /* ---------- main loop ---------- */
-function loop(){ if(running){ for(let i=0;i<2;i++) tick(); syncPositions(); } requestAnimationFrame(loop);}
+function loop(){ if(running&&!selId&&!matchMedia('(prefers-reduced-motion: reduce)').matches){ for(let i=0;i<2;i++) tick(); } syncPositions(); requestAnimationFrame(loop);}
 
 /* ---------- boot ---------- */
 function boot(){
@@ -1024,7 +1038,9 @@ boot();
   ATLAS_UX.loadState(document.querySelector('.insp-body'));
   function fail(){ATLAS_UX.loadState(document.querySelector('.insp-body'),true)}
   fetch('./data/ATLAS_PACK.json').then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
-    .then(function(pack){
+    .then(async function(pack){
+      await ATLAS_READER.ensureLegacy(pack);
+      if(!ATLAS_READING.bindPack(pack))throw new Error('PACK·읽기 자료 쌍 검증 실패');
       document.querySelector('.atlas-load-state')?.remove();
       window.PACK = pack;
       ATLAS_PRICE.bindPack(pack);

@@ -201,7 +201,9 @@ footer b{color:var(--ink)}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none !important;scroll-behavior:auto}}
 </style><script src="./ATLAS_PRICE.js"></script>
-<script src="./ATLAS_UX.js"></script><style id="atlas-integration-responsive">@media(max-width:720px){
+<script src="./ATLAS_UX.js"></script>
+<script src="./ATLAS_READER_ADAPTER.js"></script>
+<script src="./ATLAS_READING.js"></script><style id="atlas-integration-responsive">@media(max-width:720px){
 .cards,.cand-wrap,.cold-wrap,.pw-wrap,.theme-wrap,.ol-wrap{grid-template-columns:minmax(0,1fr)}.card,.grid2,.grid2>section,.card-h,.card-h h3{min-width:0;max-width:100%}
 .card,.li,.li-n,.li-v,.rat,.defn,.emech,.cold-card{overflow-wrap:anywhere}.li-n,.li-v{min-width:0}.card-h{flex-wrap:wrap}
 }</style>
@@ -407,7 +409,7 @@ footer b{color:var(--ink)}
     const edges=(o.edges||[]).map(e=>`<li><span class="etype">${esc(e.type)}</span> ${e.dir==='→'?'→':'←'} ${esc(e.other)} <span class="estr">[${esc(e.strength)}]</span><span class="emech">${esc(e.mechanism)}${e.propagation_status==='HOLD'?' · 전파 해석 보류: '+esc(e.review_note):''}</span></li>`).join('');
     return `<article class="card tier-${o.tier}" id="${o.id}">
       <header class="card-h"><div class="card-id">${o.id}</div><h3>${esc(o.name)}</h3><span class="tier-badge t-${o.tier}">${o.tier}</span>${ATLAS_PRICE.coreBadgeHTML(o.id)}</header>
-      <p class="defn">${esc(o.definition)}</p>${ATLAS_PRICE.coreIndustryHTML(o)}${(o.evidence_holds||[]).map(r=>`<p class="atlas-review-note">검토 HOLD · ${esc(r.reason)}</p>`).join('')}
+      <p class="defn">${esc(o.definition)}</p>${ATLAS_READING.industryHTML(o)}${ATLAS_READING.fold('이번 산업 판단의 근거 기록',ATLAS_PRICE.coreIndustryHTML(o))}${(o.evidence_holds||[]).map(r=>`<p class="atlas-review-note">검토 HOLD · ${esc(r.reason)}</p>`).join('')}
       <div class="grid2">
         <section><h4>수요</h4><p>${esc(d.drivers||'')}</p>
           <p class="muted"><b>구조 vs 경기:</b> ${esc(d.secular_vs_cyclical||'—')} · <b>모멘텀:</b> ${esc(d.momentum||'—')}</p></section>
@@ -526,7 +528,9 @@ footer b{color:var(--ink)}
   let RAWTHEMES=[];
   function fail(){ document.getElementById('asof').textContent='데이터를 불러오지 못했습니다';const host=document.getElementById('app');host.textContent='';ATLAS_UX.loadState(host,true); }
   fetch('./data/ATLAS_PACK.json').then(r=>{ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
-    .then(pack=>{
+    .then(async pack=>{
+      await ATLAS_READER.ensureLegacy(pack);
+      if(!ATLAS_READING.bindPack(pack))throw new Error('PACK·읽기 자료 쌍 검증 실패');
       ATLAS_PRICE.bindPack(pack);
       RAWTHEMES=pack.themes||[];
       const g=ATLAS_DERIVE.deriveGraph(pack);

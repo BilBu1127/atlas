@@ -6,28 +6,43 @@
   const currency=v=>typeof v==='string'&&/^[A-Za-z]{3}$/.test(v.trim())?v.trim().toUpperCase():'';
   const finite=v=>typeof v==='number'&&Number.isFinite(v);
   const money=(value,code)=>finite(value)?(code?code+' '+value:value+' (통화 미기재)'):'—';
+  function quoteValid(p){
+    if(!p||!finite(p.value)||p.value<=0||!/^\d{4}-\d{2}-\d{2}(?:T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2}))?$/.test(p.as_of||'')||!Number.isFinite(Date.parse(p.as_of)))return false;
+    const day=p.as_of.slice(0,10);if(new Date(day+'T00:00:00Z').toISOString().slice(0,10)!==day)return false;
+    if(!/^[A-Z]{3}$/.test(p.currency||'')||!new RegExp('^'+p.currency+'_per_[A-Za-z_]+$').test(p.unit||''))return false;
+    if(!/^[A-Za-z0-9._-]+:[A-Za-z0-9._^-]+$/.test(p.listing||''))return false;
+    if(['raw_value','raw_currency','normalization_factor'].some(k=>Object.prototype.hasOwnProperty.call(p,k))){
+      if(!finite(p.raw_value)||p.raw_value<=0||!finite(p.normalization_factor)||p.normalization_factor<=0||Math.abs(p.value-p.raw_value*p.normalization_factor)>Math.max(1e-10,Math.abs(p.value)*1e-10))return false;
+      if(p.raw_currency!==p.currency&&!(p.raw_currency==='ILA'&&p.currency==='ILS'&&p.normalization_factor===0.01&&p.raw_unit==='ILA_per_share'&&p.unit==='ILS_per_share'))return false;
+    }
+    try{const u=new URL(p.source);return ['http:','https:'].includes(u.protocol)&&!!u.hostname&&!u.username&&!u.password}catch(e){return false}
+  }
   function describe(n){
     const s=n.stance_state||{}, p=s.price||{}, r=n.deep_dive_ref||{}, a=r.atlas_stance||{};
     const snapshot=p.source==='deep_dive_pack_snapshot';
+    const invalidQuote=!quoteValid(p);
+    const comparisonInvalid=n.price_comparison_review?.comparison_eligible===false;
     // A DD snapshot can inherit its explicit contract currency. A later quote cannot.
     const quoteCurrency=currency(p.currency)||(snapshot?currency(a.currency):'');
     const bandCurrency=currency(a.currency);
-    const price=money(p.value,quoteCurrency);
-    const suppressed=!!s.display_suppressed||s.freshness==='STALE'||s.tripwire_status==='RED';
+    const price=invalidQuote?'—':money(p.value,quoteCurrency);
+    const suppressed=invalidQuote||!!s.display_suppressed||s.freshness==='STALE'||s.tripwire_status==='RED';
     const mismatch=!!(quoteCurrency&&bandCurrency&&quoteCurrency!==bandCurrency);
     const sourceLabelUnknown=a.label==='UNKNOWN';
-    const zone=sourceLabelUnknown?'UNKNOWN':(s.zone||'UNKNOWN');
+    const zone=invalidQuote||comparisonInvalid||sourceLabelUnknown?'UNKNOWN':(s.zone||'UNKNOWN');
     const comparisonReview=n.price_comparison_review||{};
-    const comparison=s.comparison_basis&&typeof s.comparison_basis==='object'?s.comparison_basis:null;
+    const comparison=!invalidQuote&&s.comparison_basis&&typeof s.comparison_basis==='object'?s.comparison_basis:null;
     return {price,quoteCurrency,bandCurrency,mismatch,suppressed,zone,comparison,
-      sourceLabelUnknown,highlightAllowed:!suppressed&&!mismatch&&!sourceLabelUnknown&&zone!=='UNKNOWN',
+      sourceLabelUnknown,invalidQuote,gap:invalidQuote||comparisonInvalid||sourceLabelUnknown?null:s.gap_to_attractive_pct,
+      historicalObservations:Array.isArray(s.price_observation_history)?s.price_observation_history:[],
+      highlightAllowed:!suppressed&&!mismatch&&!sourceLabelUnknown&&!comparisonInvalid&&zone!=='UNKNOWN',
       kind:snapshot?'DD 원본 가격 스냅샷':'관측 가격 스냅샷',
       asof:p.as_of||'미기재',source:p.source||'미기재',ddAsOf:r.as_of||'미기재',
       freshness:s.freshness||'미기재',tripwire:s.tripwire_status||'UNKNOWN',
       refresh:s.refresh_status||'',note:typeof p.note==='string'?p.note:'',
       basis:typeof a.derived_note==='string'?a.derived_note:'',
       unit:p.unit||'미기재',rawValue:p.raw_value,rawCurrency:p.raw_currency||'',rawUnit:p.raw_unit||'미기재',normalizationFactor:p.normalization_factor,
-      suppressionReason:typeof s.suppression_reason==='string'?s.suppression_reason:'',priorTripwire:s.prior_tripwire_status||'미기재',
+      suppressionReason:invalidQuote?'현재 호가의 값·관측일·출처·통화·단위가 유효하지 않아 UNKNOWN입니다.':typeof s.suppression_reason==='string'?s.suppression_reason:'',priorTripwire:s.prior_tripwire_status||'미기재',
       ladder:Array.isArray(a.ladder)?a.ladder:null,contractPriceAsOf:a.price_asof||'미기재',
       blockingReasons:Array.isArray(comparisonReview.blocking_reasons)?comparisonReview.blocking_reasons:[],
       status:suppressed?'표시 억제 · 저장 위치 '+zone:(ZONE[zone]||zone)+' · '+zone};
@@ -43,6 +58,12 @@
       (c.fx_source?line('FX 출처',c.fx_source):'')+(c.ads_ratio_source?line('ADS 비율 출처',c.ads_ratio_source):'')+
       ('asynchronous_conversion' in c?line('비동시 환산',String(c.asynchronous_conversion)):'')+
       ('not_observed_TWSE_price' in c?line('TWSE 실관측 가격 아님',String(c.not_observed_TWSE_price)):''):'';
+    const prior=d.historicalObservations.filter(h=>quoteValid(h.price)).map(h=>{
+      const rejected=h.kind==='RECEIVED_OLDER_SOURCE_SNAPSHOT_NOT_ADOPTED';
+      return line(rejected?'수신한 이전 시점 호가 · 현재 채택 안 함':'과거 정상 관측 · 현재 판단 아님',money(h.price.value,h.price.currency)+' · '+h.price.as_of+
+        (rejected?'':' · 당시 '+(h.zone||'UNKNOWN')+' · 당시 gap '+(h.gap_to_attractive_pct??'미확립')))+
+        (rejected&&h.reason?line('현재 미채택 사유',h.reason):'')+line('과거 관측 출처',h.price.source);
+    }).join('');
     const historical=d.basis?line('과거 DD 계약 설명',d.basis)+line('계약 설명의 시점','계약 반영 당시 기록입니다 (반영일은 별도 미기재). DD 검증일 '+d.ddAsOf+' / 계약 가격 기준일 '+d.contractPriceAsOf+'. 계약의 current price 등 표현은 새 관측 가격에 대한 설명이 아닙니다.') :'';
     // Numeric/action bands stay folded under suppression; factual quarantine caveats
     // without bands (e.g. IBM) remain visible in neutral prose.
@@ -50,8 +71,8 @@
     const bandStructure=d.ladder?(!d.ladder.length?'등록 밴드 없음 (ladder 0개)':d.ladder.some(b=>b.tier==='UNKNOWN')?'등록 밴드 '+d.ladder.length+'개 · 원문 tier=UNKNOWN '+d.ladder.filter(b=>b.tier==='UNKNOWN').length+'개; 의미상 UNKNOWN을 매수/매도로 변환하지 않습니다.':'등록 밴드 '+d.ladder.length+'개 · 원문 공백/미포함 영역은 계약 설명 참조; 보간하지 않습니다.'):'밴드 구조 미기재';
     return '<div class="atlas-price-diagnostics" data-zone="'+esc(d.zone)+'" data-suppressed="'+d.suppressed+'" style="font-size:11.5px;line-height:1.65;overflow-wrap:anywhere">'+
       line(d.kind,d.price+' · 관측일 '+d.asof)+line('관측 가격 단위',d.unit)+line('가격 출처',d.source)+
-      (d.rawValue!=null?line('원시 호가',String(d.rawCurrency||'통화 미기재')+' '+d.rawValue+' · 원시 단위 '+d.rawUnit+' · 제공된 정규화 계수 '+(d.normalizationFactor??'미기재')):'')+
-      comparison+line('저장 상태',d.status)+line('DD 검증일',d.ddAsOf+' · freshness '+d.freshness)+
+      (d.rawValue!=null?line(d.invalidQuote?'실패 입력의 원시값 · 현재 호가 아님':'원시 호가',String(d.rawCurrency||'통화 미기재')+' '+d.rawValue+' · 원시 단위 '+d.rawUnit+' · 제공된 정규화 계수 '+(d.normalizationFactor??'미기재')):'')+
+      comparison+(prior?'<details class="atlas-price-history"><summary>과거 정상 호가·미채택 수신 기록 (현재 값 아님)</summary>'+prior+'</details>':'')+line('저장 상태',d.status)+line('DD 검증일',d.ddAsOf+' · freshness '+d.freshness)+
       line('현재 tripwire_status',d.tripwire)+line('과거 prior_tripwire_status',d.priorTripwire)+
       (d.suppressionReason?line('제공된 억제 사유',d.suppressionReason):'')+
       (d.refresh?line('관측 갱신 상태',d.refresh):'')+
@@ -76,7 +97,13 @@
   }
   let boundPack=null;
   function bindPack(pack){boundPack=pack;}
-  const core=()=>boundPack?.monthly_diff?.core_rejudgment_20261017;
+  const core=()=>boundPack?root.ATLAS_READER.selectUpdateRefs(boundPack).judgment.record:null;
+  const corePaths=()=>{
+    const c=core();if(!c)return [];
+    if(Array.isArray(c.propagation_paths))return c.propagation_paths;
+    return root.ATLAS_READER.selectUpdateRefs(boundPack).judgment.record_key==='core_rejudgment_20261017'?
+      boundPack?.monthly_diff?.remaining68_propagation_review_20261017?.paths||[]:[];
+  };
   const revalidationHeld=id=>!!core()?.industry_dispositions?.find(x=>x.industry===id)?.decision?.includes('REVALIDATION_HOLD');
   function coreBadgeHTML(id){
     const d=core()?.industry_dispositions?.find(x=>x.industry===id);
@@ -98,11 +125,11 @@
   function coreIndustryHTML(n){
     const c=core();if(!c||!n?.id)return '';
     const d=c.industry_dispositions.find(x=>x.industry===n.id),g=c.closed_judgments.find(x=>x.industry===n.id);
-    const paths=(boundPack.monthly_diff.remaining68_propagation_review_20261017.paths||[]).filter(p=>p.path.includes(n.id));
+    const paths=corePaths().filter(p=>p.path.includes(n.id));
     if(!d&&!paths.length)return '';
     let h='<section class="atlas-core-industry" data-industry="'+esc(n.id)+'" style="font-size:11.5px;line-height:1.7;overflow-wrap:anywhere;margin:12px 0">';
     if(d){
-      h+='<b>현재 제한 재판단 · 2026-10-17</b><div>'+coreBadgeHTML(n.id)+'</div><p>'+esc(g?.judgment||d.decision)+'</p>'+
+      h+='<b>현재 제한 재판단 · '+esc((c.correction_read_at_utc||c.integration_recorded_at_utc||c.read_recorded_on||'기록일 미기재').slice(0,10))+'</b><div>'+coreBadgeHTML(n.id)+'</div><p>'+esc(g?.judgment||d.decision)+'</p>'+
         '<div>사업 자료 마감 '+esc(c.research_cutoff_utc)+' · 원문 재열람/교정 '+esc(c.correction_read_at_utc)+'</div>'+
         '<div>수급·방향 · '+esc(d.axes_ko.balance_direction)+'</div><div>사이클·변화율 · '+esc(d.axes_ko.cycle_rate)+'</div><div>시장인지 보조축 · '+esc(d.axes_ko.market_read)+'</div>'+
         '<p>다음 확인 · '+esc(d.next_questions.join(' / '))+'</p>';
@@ -119,7 +146,7 @@
     const cr=c.candidate_reviews.find(r=>r.ticker===n.ticker),candidate=boundPack.monthly_diff.deep_dive_candidates.find(r=>r.ticker===n.ticker);
     const recall=n.ticker==='UBER'&&c.conditional_UBER_evaluation?.applied;
     if(!groups.length&&!cr&&!recall)return '';
-    let h='<section class="atlas-core-company" data-ticker="'+esc(n.ticker)+'" style="font-size:11.5px;line-height:1.7;overflow-wrap:anywhere;margin:12px 0"><b>회사에 전달한 제한 재판단 · 2026-10-17</b><div>기존 자료 마감 '+esc(c.research_cutoff_utc)+' · 전면 DD·사업 전체 최신 검증이 아닙니다.</div>';
+    let h='<section class="atlas-core-company" data-ticker="'+esc(n.ticker)+'" style="font-size:11.5px;line-height:1.7;overflow-wrap:anywhere;margin:12px 0"><b>회사에 전달한 제한 재판단 · '+esc((c.correction_read_at_utc||c.integration_recorded_at_utc||c.read_recorded_on||'기록일 미기재').slice(0,10))+'</b><div>기존 자료 마감 '+esc(c.research_cutoff_utc)+' · 전면 DD·사업 전체 최신 검증이 아닙니다.</div>';
     for(const g of groups)for(const r of g.company_reviews)if(r.tickers.includes(n.ticker))h+='<p>'+esc(r.decision_ko)+'</p>';
     if(candidate&&(cr||recall))h+='<div class="atlas-core-candidate"><b>현재 후보 원장 · '+esc(candidate.type+' / '+candidate.status)+'</b><p>'+researchText(candidate.rationale)+'</p><div>보존된 반증 기준 · '+esc(candidate.falsifier)+'</div><div>다음 검토 · '+esc(candidate.horizon)+'</div><div>원 DD·밴드·KPI와 가격 관측은 보존합니다.</div></div>';
     const ids=[...groups.flatMap(g=>g.sources),...(cr?.sources||[]),...(recall?['GOV','UBER','AAR','JBHT']:[])];
@@ -138,7 +165,7 @@
   function edgeHTML(e){
     if(!e)return '';
     const from=e.from||e.a?.id,to=e.to||e.b?.id;
-    const rows=core()?(boundPack.monthly_diff.remaining68_propagation_review_20261017.paths||[]).filter(p=>p.path.some((id,i)=>id===from&&p.path[i+1]===to)):[];
+    const rows=corePaths().filter(p=>p.path.some((id,i)=>id===from&&p.path[i+1]===to));
     return (e.propagation_status==='HOLD'?'<div class="atlas-edge-hold" style="font-size:11.5px;overflow-wrap:anywhere">전파 해석 보류 · '+esc(e.review_note||'')+'</div>':'')+
       (rows.length?'<details class="atlas-edge-current" onclick="event.stopPropagation()" style="font-size:11.5px;line-height:1.7;overflow-wrap:anywhere"><summary>이 회차의 관계 판단 · '+rows.length+'경로</summary>'+rows.map(corePathHTML).join('')+'</details>':'');
   }
@@ -150,7 +177,7 @@
     const action=r.action==='HISTORY_AND_NEXT_CHECK_ONLY'?'이력·다음 확인 기록 (변화 없음 판정 아님)':'현재 서술의 제한된 사실 갱신';
     return '<section class="atlas-company-review" style="font-size:11.5px;line-height:1.65;overflow-wrap:anywhere;margin:10px 0"><b>주간 회사별 제한 확인 · '+esc(r.weekly_review_as_of)+'</b><div>'+esc(action)+'</div><div>자료 마감 '+esc(r.cutoff_utc)+' · '+esc(r.scope)+'</div>'+
       vals.filter(v=>v!=null).map(v=>'<p>'+esc(fact(v))+'</p>').join('')+
-      list(r.tripwire_observations).map(o=>'<div><b>개별 KPI 관찰</b> '+esc(o.original_kpi||o.original_tripwire_verbatim||'')+' — '+esc(o.assessment||o.status||o.scan_observation_status||'측정 미확립')+'</div>').join('')+
+      list(r.tripwire_observations).map(o=>'<div><b>개별 KPI 관찰</b> '+esc(o.original_kpi||o.original_tripwire_verbatim||o.original_tripwire||'')+' — '+esc(o.assessment||o.status||o.scan_observation_status||o.post_dd_observation||'측정 미확립')+'</div>').join('')+
       list(r.limits).map(v=>'<div>한계 · '+esc(v)+'</div>').join('')+
       '<div>전면 DD·모든 KPI 재검증이 아닙니다. 아래 보존 필드의 “현” 수치와 일정은 당시 기록이며, 위 주간 관찰의 시점·분모와 구분합니다.</div></section>';
   }
@@ -200,9 +227,42 @@
       '</p><div>개별 기업 신호가 산업 트리거2개 충족을 뜻하지 않습니다. 산업상태 전이 HOLD.</div>'+r.companies.map(c=>'<p><b>'+esc(c.ticker+' · '+c.disposition)+'</b> '+esc(c.scope)+'<br>HOLD · '+esc(c.holds.join('; '))+'<br>'+(c.public_source_urls||[]).map(u=>safeLink(u)).join('<br>')+'</p>').join('')+'</details>';
   }
   function businessCoverageHTML(md,meta){
+    if(!md||!Object.prototype.hasOwnProperty.call(md,'current_update_refs'))return legacyBusinessCoverageHTML(md,meta);
+    let selected;
+    try{selected=root.ATLAS_READER.selectUpdateRefs({monthly_diff:md})}
+    catch(e){return '<section class="atlas-weekly-source-coverage">현재 회차 참조 확인 필요 · HOLD</section>'}
+    const business=selected.business,r=business.record;
+    const row=(label,value)=>'<div>'+esc(label)+' · '+esc(value)+'</div>';
+    let h='<section class="atlas-weekly-source-coverage" style="font-size:12px;line-height:1.7;overflow-wrap:anywhere;padding:10px 0"><b>회사·산업 근거 검토</b>'+
+      row('사업 기록 상태',business.status);
+    if(r){
+      const companies=Array.isArray(r.company_coverage)?r.company_coverage:[],industries=Array.isArray(r.industry_coverage)?r.industry_coverage:[];
+      const counts={};companies.forEach(x=>{counts[x.status]=(counts[x.status]||0)+1});
+      h+=row('연구 통합 기록일',r.read_recorded_on||'미기재')+row('사업 근거 마감',r.research_cutoff_utc||r.publication_cutoff_utc||'미기재')+
+        row('회사·산업 검토 원장',companies.length+'개 / '+industries.length+'개')+
+        row('근거·서술 보완',counts.changed||0)+row('제한 범위 내 중요 변화 미확인',counts['checked-no-material-change']||0)+
+        row('stale / unavailable / follow-up',[counts.stale||0,counts.unavailable||0,counts['follow-up']||0].join(' / '));
+      if(r.price_refresh?.summary){const p=r.price_refresh.summary;h+=row('이 기록에 보존된 가격 비교',String(p.comparable??'미기재')+' / UNKNOWN '+String(p.UNKNOWN??'미기재'))}
+    }else h+=row('사업 판단','이번 역할은 실행하지 않았거나 HOLD입니다. 이전 자료의 날짜를 확인합니다.');
+    for(const [role,label] of [['judgment','수급·관계 판단'],['primary_extension','1차 본문 보완'],['gap_completion','잔여 문서 확인'],['coverage','입력·coverage 정산']]){
+      const ref=selected[role],record=ref.record;
+      h+=row(label,ref.status+' · '+(record?(record.read_recorded_on||record.recorded_at_utc||record.correction_read_at_utc||record.integration_recorded_at_utc||'기록일 미기재'):'실행 기록 없음'));
+    }
+    return h+row('검증 범위','수신일·검토일은 새 사건일이나 사업 최신성의 대체가 아닙니다. 원 DD·관측 가격 시점과 기존 HOLD를 유지하며 전면 현재운영·주간 운영 완료를 뜻하지 않습니다.')+'</section>';
+  }
+  function legacyBusinessCoverageHTML(md,meta){
     const r=md&&md.remaining68_business_integration_20261017;if(!r)return '';
     const c=md.core_rejudgment_20261017;
-    return (c?'<section class="atlas-core-coverage" style="font-size:12px;line-height:1.7;padding:10px 0"><b>수급·관계·후보 제한 재판단 · 2026-10-17</b><div>MAT-02 HEAT 이월 · 현재 재검증 HOLD. 구리 연간 전망·잠정 실제·지역 현물을 분리합니다.</div><div>IND-06 WARM 유지 · 전체 철도 회복을 석탄 호재로 전달하지 않습니다. ITC-05는 AI/서버와 소비 역신호를 분리합니다.</div><div>55경로별 실제 중단 이유·다음 확인과 기존 9개 후보의 개별 반증 평가를 기록했습니다.'+(c.conditional_UBER_evaluation?.applied?' UBER는 10/16 산업 전이의 누락 재소환 1건이며 Freight 중요도 검토에 한정합니다.':'')+'</div><div>이번 교정의 새 산업상태 전이는 0건이며 전체 355개 현재 운영 검증은 미완입니다. 가격 관측 시점은 갱신하지 않았습니다.</div></section>':'')+
+    const w=md.weekly_full_scope_20261018,counts=w?.company_status_counts,prices=w?.price_refresh?.summary;
+    const extension=md.weekly_primary_extension_20261018?.summary;
+    const latest=w?'<section class="atlas-weekly-source-coverage" style="font-size:12px;line-height:1.7;overflow-wrap:anywhere;padding:10px 0"><b>이번 회사·산업 근거 검토 · '+esc(w.read_recorded_on)+'</b>'+
+      '<div>회사 355개·산업 56개의 실제 검색을 수행하고 명시된 출처 범위에서 본문·반증·등록 관계 132개를 대조했습니다.</div>'+
+      '<div>회사별 상태: 근거·서술 보완 '+esc(counts?.changed)+' / 제한 범위 내 중요 변화 미확인 '+esc(counts?.['checked-no-material-change'])+' / 후속 확인 '+esc(counts?.['follow-up'])+' / 접근·자료 미확립 '+esc(counts?.unavailable)+'</div>'+
+      (extension?'<div>174개 후속 심화: 명시한 1차 핵심 본문을 최소 하나 읽은 회사 '+esc(extension.companies_with_at_least_one_completed_stated_primary_core)+'개 · 선택 관련 본문·표 범위 완료 '+esc(extension.companies_all_selected_relevant_body_and_tables_completed)+'개 / 잔여 '+esc(extension.companies_selected_scope_incomplete)+'개. 원문 미독해·접근 제한·미발표·현재 KPI 미관측을 개별 기록에서 구분합니다. changed에도 경제적 후속 확인이 남습니다.</div>':'')+
+      '<div>자료 발행·경제 기간은 개별 원문을 따릅니다. 검토일은 새 사건일이 아니며 전체 현재 운영·새 DD 검증 완료를 뜻하지 않습니다. 기존 미완 15개와 개별 HOLD를 유지합니다.</div>'+
+      (prices?'<div>앞선 회차의 사업 판단 뒤 가격 출처 128개 조회 · 채택한 날짜별 관측 '+esc(prices.source_status_counts.RECEIVED_DATED_QUOTE_ACCEPTED)+'개 · 비교 가능 '+esc(prices.comparable)+' / UNKNOWN '+esc(prices.UNKNOWN)+'. 이번 본문 심화에서 새 호가는 요청하지 않았습니다. 미수신·이전 거래일 출처의 비교 보류와 과거 정상 관측을 보존했습니다.</div>':'')+
+      '<div>MODE B 비교·재무 HTML 3개는 모두 읽었습니다. 자유형·밴드 없는 DD도 원 규칙상 허용되며, 기존 개별 DD의 교체 대상·원저자 계약 매핑 미확정으로 통관을 보류합니다. 원 DD 날짜·평가 밴드·계약과 산업 상태를 보존했습니다. 아래 10/17 기록은 이전 회차의 범위입니다.</div></section>':'';
+    return latest+(c?'<section class="atlas-core-coverage" style="font-size:12px;line-height:1.7;padding:10px 0"><b>수급·관계·후보 제한 재판단 · 2026-10-17</b><div>MAT-02 HEAT 이월 · 현재 재검증 HOLD. 구리 연간 전망·잠정 실제·지역 현물을 분리합니다.</div><div>IND-06 WARM 유지 · 전체 철도 회복을 석탄 호재로 전달하지 않습니다. ITC-05는 AI/서버와 소비 역신호를 분리합니다.</div><div>55경로별 실제 중단 이유·다음 확인과 기존 9개 후보의 개별 반증 평가를 기록했습니다.'+(c.conditional_UBER_evaluation?.applied?' UBER는 10/16 산업 전이의 누락 재소환 1건이며 Freight 중요도 검토에 한정합니다.':'')+'</div><div>이번 교정의 새 산업상태 전이는 0건이며 전체 355개 현재 운영 검증은 미완입니다. 가격 관측 시점은 갱신하지 않았습니다.</div></section>':'')+
       '<section class="atlas-business-coverage" style="font-size:12px;line-height:1.65;overflow-wrap:anywhere;padding:10px 0"><b>회사 근거 통합 · 2026-10-17</b>'+
       '<div>355 = 기존 보완235 + 재사용52 + 추가68 · 전체 현재운영 검증 완료를 뜻하지 않습니다.</div>'+
       '<div>추가68: changed53 / stale11 / unavailable1 / follow-up3 · 미완15와 회사별 HOLD 유지</div>'+
