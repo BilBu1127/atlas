@@ -401,6 +401,7 @@ function goItem(it){
   const apply=()=>{sres.style.display='none';document.getElementById('q').blur();if(it.co){if(!expanded.has(it.n.id)){expanded.add(it.n.id);rebuild()}select(byId[id]||it.n,true)}else select(it.n,true)};
   if(flowNav)flowNav.navigate(id,apply,'#'+encodeURIComponent(id));else apply();
 }
+document.addEventListener('click',event=>{const link=event.target.closest('a[data-atlas-company]');if(!link)return;const parent=byId[link.dataset.atlasIndustry],co=parent?.cos?.find(c=>c.ticker===link.dataset.atlasCompany);if(co){event.preventDefault();goItem({n:parent,co})}});
 document.getElementById("q").addEventListener("input",ev=>search(ev.target.value));
 document.getElementById("q").addEventListener("keydown",ev=>{if(ev.key==="ArrowDown"){sidx=Math.min(sitems.length-1,sidx+1)}else if(ev.key==="ArrowUp"){sidx=Math.max(0,sidx-1)}else if(ev.key==="Enter"){ev.preventDefault();ev.stopPropagation();if(sitems[sidx])goItem(sitems[sidx]);return}else if(ev.key==="Escape"){sres.style.display="none";ev.target.blur();return}else return;ev.preventDefault();[...sres.children].forEach((d,i)=>d.classList.toggle("act",i===sidx))});
 function closeSearchOutside(){const a=document.activeElement;if(a!==document.getElementById("q")&&!sres.contains(a))sres.style.display="none"}

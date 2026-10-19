@@ -83,11 +83,13 @@
       (d.note?line('가격·비교 근거',d.note):'')+contract+
       line('신선도 의미','FRESH/AGING/STALE는 저장 DD 경과기간이며 회사·KPI 전체 최신 검증 상태가 아닙니다. tripwire UNKNOWN은 확인 완료가 아닙니다.')+line('시점 안내','관측일과 DD 검증일은 별개이며 실시간 가격이 아닙니다.')+'</div>';
   }
+  function displayUnit(unit){const m=/^([A-Z]{3})_per_(listed_security|share)$/.exec(unit||'');if(!m)return unit;const names={USD:'미달러',EUR:'유로',JPY:'엔',KRW:'원',GBP:'파운드',CAD:'캐나다달러',TWD:'대만달러',ILS:'이스라엘셰켈'};return (m[2]==='listed_security'?'상장 증권 1단위당 ':'1주당 ')+(names[m[1]]||m[1]);}
+  function displayReason(code){return ({SOURCE_CONTRACT_LABEL_UNKNOWN_MIXED_WATCH_AVOID_AT_T0:'원 DD의 혼합·미정 라벨을 UNKNOWN으로 보존',ORIGINAL_SOURCE_CONTRACT_LABEL_UNKNOWN:'원 DD 라벨이 미확정이므로 가격 구간을 임의 확정하지 않음',NO_ORIGINAL_PRICE_LADDER:'원 DD에 비교할 가격 밴드가 없음',SOURCE_VALUATION_QUARANTINED_NO_ADMITTED_LADDER:'원 평가의 비교 밴드가 검증 보류 상태',BAND_CURRENCY_COMPARISON_REQUIRES_HOLD:'밴드와 관측 가격의 통화·단위 대조 보류',FRESH_USD_ADS_QUOTE_RECEIVED_BUT_SAME_DATE_TWD_FX_BRIDGE_NOT_VERIFIED:'미국 ADS 호가는 있으나 같은 날짜의 대만달러 환산 근거 미확인',CURRENT_PRICE_OUTSIDE_OR_UNADMITTED_SOURCE_BANDS:'현재 관측 가격의 원 밴드 적용 근거 미확립',FTNT_ORIGINAL_SCALAR_CONFLICT_QUARANTINE:'원 평가 수치 간 충돌로 비교 보류',NOT_REQUESTED_PRIOR_ACCESS_FAILURE_HOLD:'이전 접근 실패 범위의 미확인 상태 보존',CURRENT_MATCH_ONLY_UNSUPPORTED_NARRATIVE_EXTENSION:'현재 일치만으로 과거 논제를 확장하지 않음'})[code]||'비교 근거 확인 필요 · 원 검증 기록 참조';}
   function html(n){
     if(!n||!n.stance_state)return '';
-    const d=describe(n),reason=d.blockingReasons.join('; ');
+    const d=describe(n),reason=[...new Set(d.blockingReasons.map(displayReason))].join(' · ');
     return '<section class="atlas-price-info atlas-compact-price" data-zone="'+esc(d.zone)+'" data-suppressed="'+d.suppressed+'">'+
-      '<b>'+esc(d.kind)+' · '+esc(d.price)+' · '+esc(d.unit)+'</b><div>관측 '+esc(d.asof)+' · 실시간 가격 아님</div>'+
+      '<b>'+esc(d.kind)+' · '+esc(d.price)+' · '+esc(displayUnit(d.unit))+'</b><div>관측 '+esc(d.asof)+' · 실시간 가격 아님</div>'+
       '<div>'+esc(d.status)+' · 원 DD '+esc(d.ddAsOf)+'</div>'+
       (d.zone==='UNKNOWN'?'<div>비교 HOLD · '+esc(reason||'원 DD 라벨/비교 근거 미확립')+'</div>':'')+
       (d.mismatch?'<div>통화·상장 단위 비교 HOLD · '+esc(d.quoteCurrency)+' / '+esc(d.bandCurrency)+'</div>':'')+

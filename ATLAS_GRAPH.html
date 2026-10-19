@@ -978,6 +978,7 @@ function ensureGraphURL(id){
   if(graphNav)graphNav.navigate(id?(id+(context?'@'+context:'')):null,apply,id?'#'+encodeURIComponent(id):location.pathname);else apply();
 }
 function installGraphNavigation(){
+  document.addEventListener('click',event=>{const link=event.target.closest('a[data-atlas-company]');if(!link)return;const ticker=link.dataset.atlasCompany,industry=link.dataset.atlasIndustry;const n=window.PACK.company_nodes.find(n=>n.ticker===ticker&&(n.industries||[]).includes(industry));if(n){event.preventDefault();focusCompany(ticker,industry)}});
   const queuedQuery=$('graphFind').dataset.pendingQuery;
   const choices=[...window.PACK.industries.map(i=>({value:i.id+' '+i.name,id:i.id})),...window.PACK.company_nodes.map(n=>({value:n.ticker+' '+n.name,id:'C::'+n.ticker})),...window.PACK.themes.map(t=>({value:t.id+' '+t.name,id:t.id}))];
   choices.forEach(c=>{const o=document.createElement('option');o.value=c.value;$('graphChoices').append(o)});
