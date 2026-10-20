@@ -62,6 +62,7 @@
         if(current!==generation)return;
         if(state?.reading){
           const ds=document.querySelectorAll('details');state.reading.details.forEach((open,i)=>{if(ds[i])ds[i].open=open});
+          window.ATLAS_READING?.hydrateIndustryRecords(document);
           state.reading.scrolls.forEach(s=>{const e=document.getElementById(s.id);if(e)e.scrollTop=s.y});
           scrollTo({top:state.reading.y,behavior:'instant'});
         }

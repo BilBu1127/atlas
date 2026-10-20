@@ -692,7 +692,7 @@ function selectNode(id,entryIndustry){
   if(!NBYID[id])return;
   const destinationContext=NBYID[id].kind==='company'?(entryIndustry||(id===selId?readingIndustry:null)||NBYID[id].industry):null;
   const apply=()=>{
-    graphOpener=document.activeElement;graphOpenerY=scrollY;selId=id;focusNodeId=id;const n=NBYID[id];
+    hideTip();graphOpener=document.activeElement;graphOpenerY=scrollY;selId=id;focusNodeId=id;const n=NBYID[id];
     readingIndustry=destinationContext;
     if(n.kind==='industry')expandIndustry(n);
     updateVisibility();renderInspector(n);centerOn(n);$('ibody').scrollTop=0;ATLAS_READING.graphSheet(true);
@@ -750,76 +750,10 @@ function renderInspector(n){
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 
 function renderIndustry(n){
-  const review=ATLAS_PRICE.reviewHTML(window.PACK.industries.find(i=>i.id===n.id))+(window.PACK.edges||[]).filter(e=>e.from===n.id||e.to===n.id).map(ATLAS_PRICE.edgeHTML).join('');
-  $('ieyebrow').innerHTML=`<span>산업 · ${esc(n.sector)}</span>`;
+  $('ieyebrow').textContent='산업 · '+n.sector;
   $('ititle').textContent=n.label;
-  $('isub').innerHTML=`${n.id} · ${tierPill(n.tier)} ${ATLAS_PRICE.coreBadgeHTML(n.id)}`;
-  const mr=n.market_read||{};
-  const roles={ANCHOR:[],REGIME_LEADER:[],HIGH_BETA:[],null:[]};
-  (n.companies||[]).forEach(c=>{ (roles[c.role]||roles['null']).push(c); });
-  const roleBlock=(key,cls,glyph)=>{ const arr=roles[key]; if(!arr||!arr.length)return'';
-    return `<div class="role-grp"><div class="role-cap ${cls}"><span class="mk ${glyph}"></span>${ROLE_KO[key]} <span style="color:var(--ink-faint);font-weight:400">· ${arr.length}</span></div>`+
-    arr.map(c=>`<div class="comp ${c.note&&/주목|후보/.test(c.note)?'cand':''}" onclick="focusCompany('${esc(c.ticker)}','${n.id}')">
-       <div class="comp-top"><span class="comp-tk">${esc(c.ticker)}</span><span class="comp-nm">${esc(c.name)}</span>${c.note&&/주목/.test(c.note)?'<span class="comp-flag">주목</span>':''}</div>
-       ${c.role_reason?`<div class="comp-rz">${esc(c.role_reason)}</div>`:(c.chain?`<div class="comp-rz">${esc(c.chain)}</div>`:'')}</div>`).join('')+`</div>`;};
-  const others=roles['null'];
-  const edgesOut=EDGES.filter(e=>(e.from===n.id||e.to===n.id)&&e.type!=='OPERATES_IN');
-  let html=ATLAS_READING.industryHTML(window.PACK.industries.find(i=>i.id===n.id))+'<details class="atlas-preserved"><summary>수급·사이클·전체 근거 기록</summary><div class="atlas-preserved-body">';
-  // balance / cycle
-  html+=`<div class="sec"><div class="sec-h">수급 · 사이클</div>
-    <div class="kv"><b>${balKo(n.balance)}</b> ${esc(n.balance_dir||'')} · 사이클 <b>${cycKo(n.cycle)}</b></div>
-    <div class="kv" style="margin-top:5px">시장인지 <span class="metric">${esc(mr.consensus||'—')}</span> · 모멘텀 <span class="metric">${esc(mr.momentum||'—')}</span></div>
-    ${mr.note?`<div class="txt" style="margin-top:6px">${esc(mr.note)}</div>`:''}</div>`;
-  // demand/supply
-  if(n.demand){ html+=`<div class="sec"><div class="sec-h">수요 구조</div>
-    <div class="txt">${esc(n.demand.drivers||'')}</div>
-    ${n.demand.secular_vs_cyclical?`<div class="txt">${esc(n.demand.secular_vs_cyclical)}</div>`:''}
-    ${n.demand.momentum?`<div class="txt"><b style="color:var(--ink)">모멘텀:</b> ${esc(n.demand.momentum)}</div>`:''}</div>`;}
-  if(n.supply){ html+=`<div class="sec"><div class="sec-h">공급 구조</div>
-    <div class="txt">${esc(n.supply.structure||'')}</div>
-    ${n.supply.lead_time?`<div class="txt"><b style="color:var(--ink)">리드타임:</b> ${esc(n.supply.lead_time)}</div>`:''}
-    ${n.supply.barriers?`<div class="txt"><b style="color:var(--ink)">진입장벽:</b> ${esc(n.supply.barriers)}</div>`:''}</div>`;}
-  html+=review;
-  // tier rationale
-  if(n.tier_rationale){ html+=`<div class="sec"><div class="sec-h">티어 근거</div><div class="txt">${esc(n.tier_rationale)}</div></div>`;}
-  // leading indicators
-  if(n.leading&&n.leading.length){ html+=`<div class="sec"><div class="sec-h">선행지표</div>`+
-    n.leading.map(l=>`<div class="kv"><b>${esc(l.name)}</b> — <span class="metric">${esc(l.reading||'—')}</span> ${l.as_of?`<span style="color:var(--ink-faint)">(${esc(l.as_of)})</span>`:''}</div>`).join('')+`</div>`;}
-  // triggers
-  if(n.triggers&&n.triggers.length){ html+=`<div class="sec"><div class="sec-h">잠재 트리거</div>`+
-    n.triggers.map(t=>`<div class="txt">· ${esc(t)}</div>`).join('')+`</div>`;}
-  html+='</div></details>';
-  // role-tiered companies
-  const anyRole=roles.ANCHOR.length||roles.REGIME_LEADER.length||roles.HIGH_BETA.length;
-  if(anyRole){ html+=`<div class="sec"><div class="sec-h">주목 기업 · role 계층 <span style="color:var(--ink-faint);text-transform:none;letter-spacing:0">이 트리거 기준</span></div>`+
-    roleBlock('REGIME_LEADER','leader','role-glyph-leader')+
-    roleBlock('HIGH_BETA','beta','role-glyph-beta')+
-    roleBlock('ANCHOR','anchor','role-glyph-anchor')+`</div>`;}
-  if(others&&others.length){ const oth=others.slice().sort((a,b)=>(b.verification==='DEEP_DIVED')-(a.verification==='DEEP_DIVED'));
-    const ddN=oth.filter(c=>c.verification==='DEEP_DIVED').length;
-    html+=`<div class="sec"><div class="sec-h">밸류체인 · 기타 ${ddN?`<span style="color:var(--teal);text-transform:none;letter-spacing:0">DD 기록 ${ddN}</span>`:''}</div><div class="ind-list">`+
-    oth.map(c=>{const dd=c.verification==='DEEP_DIVED';
-      return `<div class="li${dd?' dd':''}" onclick="focusCompany('${esc(c.ticker)}','${n.id}')"><span class="tk">${esc(c.ticker)}</span><span>${esc(c.name)} <span style="color:var(--ink-faint)">${esc(c.chain||'')}</span></span>${dd?'<span class="ddbadge">DD 기록</span>':''}</div>`;}).join('')+`</div></div>`;}
-  // edges
-  if(edgesOut.length){
-    const EC={SUPPLIES_TO:'#6FA8CE',DEMAND_COMOVES:'#8FB08A',SUBSTITUTES:'#D89A3A',
-      INVERSE:'#E0552F',CAPACITY_COMPETES:'#9B8FB0',THEME_DRIVES:'#C9B88A',CUSTOMER_OF:'#6FA8CE'};
-    const out=edgesOut.filter(e=>e.from===n.id), inc=edgesOut.filter(e=>e.to===n.id);
-    const row=e=>{ const other=e.from===n.id?e.to:e.from; const on=NBYID[other]||{label:other};
-      const col=EC[e.type]||'#8A929A';
-      return `<div class="edge-row" style="--ec:${col}" onclick="selectNode('${other}')">`+
-        `<div class="edge-top"><span class="edge-to">${esc(on.label||other)}</span>`+
-        `<span class="edge-type">${EDGE_KO[e.type]||e.type}</span>`+
-        `<span class="edge-str">${e.strength}${dirGlyph(e.direction)?'·'+dirGlyph(e.direction):''}</span>`+
-        `<span class="edge-go">→ 열기</span></div>`+
-        (e.mechanism?`<div class="edge-mech">${esc(e.mechanism)}</div>`:'')+`</div>`;};
-    html+=`<div class="sec"><div class="sec-h">엣지 · 전파 통로 <span style="color:var(--ink-faint)">${edgesOut.length}</span></div>`;
-    if(out.length) html+=`<div class="egroup"><div class="egcap"><span class="ar">→</span>이 산업이 영향을 준다<span class="cnt">${out.length}</span></div>${out.map(row).join('')}</div>`;
-    if(inc.length) html+=`<div class="egroup"><div class="egcap"><span class="ar">←</span>이 산업이 영향을 받는다<span class="cnt">${inc.length}</span></div>${inc.map(row).join('')}</div>`;
-    html+=`</div>`;
-  }
-  html+=`<div class="disc">역할(role) 계층은 <b style="color:var(--ink-dim)">이 산업을 데운 트리거 기준</b>의 조사 후보 분류입니다. verification=SHALLOW(미검증) — 해자·재무·경영진의 진위는 딥다이브에서 가립니다. 매수 신호가 아닙니다.</div>`;
-  $('ibody').innerHTML=html;
+  $('isub').textContent=n.id+' · 보존된 산업 판단';
+  $('ibody').innerHTML=ATLAS_READING.industryHTML(window.PACK.industries.find(i=>i.id===n.id));
 }
 function renderTheme(n){
   $('ieyebrow').innerHTML='<span>테마 · 수요 원천</span>';
@@ -829,7 +763,7 @@ function renderTheme(n){
   let html=`<div class="sec"><div class="sec-h">수요 논지</div><div class="txt">${esc(n.thesis)}</div></div>`;
   if(driven.length){ html+=`<div class="sec"><div class="sec-h">구동하는 산업 <span style="color:var(--ink-faint)">${driven.length}</span></div><div class="ind-list">`+
     driven.map(d=>`<div class="li" onclick="selectNode('${d.id}')"><span class="tk" style="color:${TIER_COLOR[d.tier]}">${d.tier}</span><span>${esc(d.label)}</span></div>`).join('')+`</div></div>`;}
-  html+=`<div class="disc">테마는 산업 카드를 대체하지 않고 <b style="color:var(--ink-dim)">수요 드라이버</b>로서 THEME_DRIVES 엣지로 연결됩니다. 테마의 수요 변화는 엣지를 타고 산업으로 전파됩니다(최대 2홉).</div>`;
+  html+=`<div class="disc">테마는 산업 카드를 대체하지 않고 <b style="color:var(--ink-dim)">수요 드라이버</b>로서 THEME_DRIVES 엣지로 연결됩니다. 등록 연결은 수요 가설입니다. 실제 주문·가동·현금의 전달과 보류 범위를 별도로 확인합니다.</div>`;
   $('ibody').innerHTML=html;
 }
 function renderCompany(n){
@@ -839,6 +773,7 @@ function renderCompany(n){
   $('ititle').textContent=n.label;
   $('isub').innerHTML=`<span class="metric">${esc(n.ticker)}</span> · ${esc(ind.label||n.industry)} ${ind.tier?tierPill(ind.tier):''}`;
   const canonical=(window.PACK.company_nodes||[]).find(c=>c.ticker===n.ticker);
+  if(!canonical){const i=window.PACK.industries.find(i=>i.id===context);const card=i?.companies?.find(c=>c.ticker===n.ticker)||n;$('ibody').innerHTML=ATLAS_READING.industryCardGapHTML(card,i||{name:'산업'});return;}
   const storedCard=(window.PACK.industries.find(i=>i.id===context)||{}).companies||[];
   const card=storedCard.find(c=>c.ticker===n.ticker);
   let html=ATLAS_READING.companyHTML(canonical,window.PACK.industries.find(i=>i.id===context),card)+'<details class="atlas-preserved"><summary>회사 근거·관찰 KPI·원 DD·가격 기록</summary><div class="atlas-preserved-body">'+ATLAS_PRICE.companyReviewHTML(canonical)+ATLAS_PRICE.reviewHTML(canonical)+ATLAS_PRICE.reviewHTML(card||{membership_status:'NODE_ONLY_CARD_OMISSION'});
@@ -874,12 +809,10 @@ function dirGlyph(d){return d==='+'?'+':d==='-'?'−':d==='both'?'±':'';}
 
 /* ---------- edge tooltip ---------- */
 function showEdgeTip(ev,e){
-  const a=NBYID[e.from],b=NBYID[e.to];
-  tip.innerHTML=`${ATLAS_PRICE.edgeHTML(e)}<div class="tt-type">${EDGE_KO[e.type]||e.type} · ${e.strength} · ${dirGlyph(e.direction)} · ${esc(e.lag||'')}</div>
-    <b>${esc(a.label)}</b> → <b>${esc(b.label)}</b><br>${esc(e.mechanism||'')}`;
-  tip.style.opacity=1;
-  tip.style.left=Math.min(ev.clientX+14,innerWidth-300)+'px';
-  tip.style.top=(ev.clientY+14)+'px';
+  const a=NBYID[e.from],b=NBYID[e.to];const registered=(window.PACK.edges||[]).some(r=>r.from===e.from&&r.to===e.to&&r.type===e.type);
+  const scope=e.type==='OPERATES_IN'?'회사 원장·카드의 소속 연결':registered?(e.propagation_status==='HOLD'?'등록 관계 · 경제적 전달의 현재 확인 보류':'등록 관계 · 회사 수혜 확증 아님'):'테마 목록에서 만든 연결 · 등록 엣지와 구분';
+  tip.innerHTML=`<div class="tt-type">${esc(ATLAS_READING.relationLabel(e.type))} · ${esc(scope)}</div><b>${esc(a?.label||e.from)}</b> → <b>${esc(b?.label||e.to)}</b><br>${esc(e.mechanism||'산업 설명에서 근거와 반대 조건을 확인합니다.')}`;
+  tip.style.opacity=1;tip.style.left=Math.min(ev.clientX+14,innerWidth-300)+'px';tip.style.top=(ev.clientY+14)+'px';
 }
 function hideTip(){tip.style.opacity=0;}
 
@@ -978,7 +911,8 @@ function ensureGraphURL(id){
   if(graphNav)graphNav.navigate(id?(id+(context?'@'+context:'')):null,apply,id?'#'+encodeURIComponent(id):location.pathname);else apply();
 }
 function installGraphNavigation(){
-  document.addEventListener('click',event=>{const link=event.target.closest('a[data-atlas-company]');if(!link)return;const ticker=link.dataset.atlasCompany,industry=link.dataset.atlasIndustry;const n=window.PACK.company_nodes.find(n=>n.ticker===ticker&&(n.industries||[]).includes(industry));if(n){event.preventDefault();focusCompany(ticker,industry)}});
+  document.addEventListener('click',event=>{if(event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;const link=event.target.closest('a[data-atlas-node]');if(!link)return;const id=link.dataset.atlasNode;if(NBYID[id]&&NBYID[id].kind!=='company'){event.preventDefault();ensureGraphURL(id)}});
+  document.addEventListener('click',event=>{if(event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;const link=event.target.closest('a[data-atlas-company]');if(!link)return;const ticker=link.dataset.atlasCompany,industry=link.dataset.atlasIndustry;const n=window.PACK.company_nodes.find(n=>n.ticker===ticker&&(n.industries||[]).includes(industry));if(n){event.preventDefault();focusCompany(ticker,industry)}});
   const queuedQuery=$('graphFind').dataset.pendingQuery;
   const choices=[...window.PACK.industries.map(i=>({value:i.id+' '+i.name,id:i.id})),...window.PACK.company_nodes.map(n=>({value:n.ticker+' '+n.name,id:'C::'+n.ticker})),...window.PACK.themes.map(t=>({value:t.id+' '+t.name,id:t.id}))];
   choices.forEach(c=>{const o=document.createElement('option');o.value=c.value;$('graphChoices').append(o)});

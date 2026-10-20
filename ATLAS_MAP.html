@@ -402,40 +402,7 @@ footer b{color:var(--ink)}
   }
 
   function card(o){
-    const d=o.demand||{},s=o.supply||{},mr=o.market_read||{};
-    const li=(o.leading||[]).map(l=>`<div class="li"><span class="li-n">${esc(l.name)}</span><span class="li-v">${esc(l.reading||'—')}<span class="li-d">${esc(l.as_of||'')}</span></span></div>`).join('');
-    const trig=(o.triggers||[]).map(esc).join('  ·  ');
-    const chips=(o.companies||[]).map(chip).join('');
-    const edges=(o.edges||[]).map(e=>`<li><span class="etype">${esc(e.type)}</span> ${e.dir==='→'?'→':'←'} ${esc(e.other)} <span class="estr">[${esc(e.strength)}]</span><span class="emech">${esc(e.mechanism)}${e.propagation_status==='HOLD'?' · 전파 해석 보류: '+esc(e.review_note):''}</span></li>`).join('');
-    return `<article class="card tier-${o.tier}" id="${o.id}">
-      <header class="card-h"><div class="card-id">${o.id}</div><h3>${esc(o.name)}</h3><span class="tier-badge t-${o.tier}">${o.tier}</span>${ATLAS_PRICE.coreBadgeHTML(o.id)}</header>
-      <p class="defn">${esc(o.definition)}</p>${ATLAS_READING.industryHTML(o)}${ATLAS_READING.fold('이번 산업 판단의 근거 기록',ATLAS_PRICE.coreIndustryHTML(o))}${(o.evidence_holds||[]).map(r=>`<p class="atlas-review-note">검토 HOLD · ${esc(r.reason)}</p>`).join('')}
-      <div class="grid2">
-        <section><h4>수요</h4><p>${esc(d.drivers||'')}</p>
-          <p class="muted"><b>구조 vs 경기:</b> ${esc(d.secular_vs_cyclical||'—')} · <b>모멘텀:</b> ${esc(d.momentum||'—')}</p></section>
-        <section><h4>공급</h4><p>${esc(s.structure||'')}</p>
-          <p class="muted"><b>리드타임:</b> ${esc(s.lead_time||'—')}${s.utilization_inventory?` · <b>가동·재고:</b> ${esc(s.utilization_inventory)}`:''}${s.barriers?` · <b>진입장벽:</b> ${esc(s.barriers)}`:''}</p></section>
-      </div>
-      <div class="meters"><span class="meter"><em>수급</em> ${balKo(o.balance)}${o.balance_dir?' · '+esc(o.balance_dir):''}</span>
-        <span class="meter"><em>사이클</em> ${cycKo(o.cycle)}</span>
-        <span class="meter"><em>인지</em> ${esc(mr.consensus||'—')} / ${esc(mr.momentum||'—')}</span></div>
-      ${li?`<div class="li-wrap"><h4>선행지표</h4>${li}</div>`:''}
-      ${trig?`<div class="trig"><h4>잠재 트리거</h4><p>${trig}</p></div>`:''}
-      ${o.rationale?`<div class="rat"><h4>티어 근거</h4><p>${esc(o.rationale)}</p></div>`:''}
-      ${chips?`<div class="chips">${chips}</div>`:''}
-      ${edges?`<details class="edges"><summary>온톨로지 엣지 · ${(o.edges||[]).length}</summary><ul>${edges}</ul></details>`:''}
-    </article>`;
-  }
-
-  function coldItem(o){
-    const chips=(o.companies||[]).map(chip).join('');
-    return `<article class="cold-item" id="${o.id}"><header><span class="card-id">${o.id}</span><h4>${esc(o.name)}</h4>
-      <span class="meter sm">${esc(o.cycle||'')} · ${esc((o.market_read||{}).momentum||'')}</span></header>
-      <p class="rat">${esc(o.rationale)}</p>${chips?`<div class="chips sm">${chips}</div>`:''}</article>`;
-  }
-
-  function neutralOl(o){
-    return `<a class="ol t-NEUTRAL" href="#${o.id}"><span class="ol-id">${o.id}</span><span class="ol-n">${esc(o.name)}</span><span class="ol-m">${esc(o.balance)} · ${esc(o.cycle)}</span></a>`;
+    return `<article class="card tier-${o.tier}" id="${esc(o.id)}"><header class="card-h"><div class="card-id">${esc(o.id)}</div><h3>${esc(o.name)}</h3></header>${ATLAS_READING.industryHTML(MAP_PACK.industries.find(i=>i.id===o.id))}</article>`;
   }
 
   function diffSection(md,meta){
@@ -485,7 +452,7 @@ footer b{color:var(--ink)}
       <p class="lead">산업을 가로지르는 수요 원천. 테마는 카드를 대체하지 않고 THEME_DRIVES 엣지로 산업에 연결돼 트리거를 전파한다.</p>
       <div class="theme-wrap">`+themes.map(t=>{
         const links=(t.linked_industries||[]).map(id=>`<a href="#${id}">${esc(IDNAME[id]||id)}</a>`).join(' ');
-        return `<article class="theme"><h4>${esc(t.name)}<span class="tid">${esc(t.id||'')}</span></h4><p>${esc(t.demand_thesis||'')}</p><div class="tlinks">${links}</div></article>`;
+        return `<article class="theme" id="${esc(t.id)}"><h4>${esc(t.name)}<span class="tid">${esc(t.id||'')}</span></h4><p>${esc(t.demand_thesis||'')}</p><div class="tlinks">${links}</div></article>`;
       }).join('')+`</div></section>`;
   }
 
@@ -503,9 +470,7 @@ footer b{color:var(--ink)}
       grid(inds)+
       `<div class="legend"><span><i class="sw t-HEAT"></i>HEAT · 균형 붕괴, 즉시 스크리닝</span><span><i class="sw t-WARM"></i>WARM · 조짐, 월간 관찰</span><span><i class="sw t-NEUTRAL"></i>NEUTRAL · 균형</span><span><i class="sw t-COLD"></i>COLD · 역발상 감시</span><span><i class="sw t-FROZEN"></i>FROZEN · 구조 쇠퇴</span></div></section>`;
 
-    h+=diffSection(md,meta);
-    h+=candSection((md&&md.deep_dive_candidates)||[]);
-    h+=peakSection((md&&md.peak_watch)||[], (md&&md.candidates_withheld)||[]);
+    h+=ATLAS_READING.fold('업데이트·후보·고점 관찰의 보존 기록',diffSection(md,meta)+candSection((md&&md.deep_dive_candidates)||[])+peakSection((md&&md.peak_watch)||[], (md&&md.candidates_withheld)||[]));
 
     const heatC=by('HEAT');
     h+=`<section class="block" id="heat"><div class="eyebrow">Tier · HEAT — 균형이 깨졌거나 깨지는 중</div><div class="blocktitle">HEAT 산업 카드 · ${heatC.length}</div><div class="cards">`+heatC.map(card).join('')+`</div></section>`;
@@ -514,10 +479,10 @@ footer b{color:var(--ink)}
     const coldC=by('COLD').concat(by('FROZEN'));
     if(coldC.length) h+=`<section class="block" id="cold"><div class="eyebrow">Tier · COLD — 역발상 감시 목록</div><div class="blocktitle">COLD 산업 · ${coldC.length} <span style="font-size:13px;color:var(--soft);font-weight:400">다음 HEAT는 대부분 오늘의 COLD에서 나온다</span></div>
       <p class="lead">공급과잉·수요침체가 진행 중이나 무시 대상이 아니다. 각 카드에 <b>바닥 반전을 알릴 신호</b>를 명시한다. 신호가 실제 켜진 곳만 딥다이브 버킷 B로 승격된다 — COLD라는 사실만으로는 후보가 아니다.</p>
-      <div class="cold-wrap">`+coldC.map(coldItem).join('')+`</div></section>`;
+      <div class="cards">`+coldC.map(card).join('')+`</div></section>`;
     const neuC=by('NEUTRAL');
-    if(neuC.length) h+=`<section class="block" id="neutral"><div class="eyebrow">Tier · NEUTRAL</div><div class="blocktitle">균형 산업 요약 · ${neuC.length}</div>
-      <p class="lead">균형 상태로 분기 1회 확인이면 충분한 산업. 카드 전문은 PACK에 보존된다.</p><div class="ol-wrap">`+neuC.map(neutralOl).join('')+`</div></section>`;
+    if(neuC.length) h+=`<section class="block" id="neutral"><div class="eyebrow">Tier · NEUTRAL</div><div class="blocktitle">균형 관찰 산업 · ${neuC.length}</div>
+      <p class="lead">수급 균형을 관찰하는 산업입니다. 같은 기간의 수요·공급과 반대 근거를 함께 확인합니다.</p><div class="cards">`+neuC.map(card).join('')+`</div></section>`;
     h+=themeSection((typeof RAWTHEMES!=='undefined'&&RAWTHEMES)||[]);
 
     document.getElementById('app').innerHTML=h;
@@ -525,6 +490,7 @@ footer b{color:var(--ink)}
     if(location.hash){ let id='';try{id=decodeURIComponent(location.hash.slice(1))}catch(e){}const el=document.getElementById(id);if(el)el.scrollIntoView(); }
   }
 
+  let MAP_PACK=null,mapNav=null,mapSelected=null;
   let RAWTHEMES=[];
   function fail(){ document.getElementById('asof').textContent='데이터를 불러오지 못했습니다';const host=document.getElementById('app');host.textContent='';ATLAS_UX.loadState(host,true); }
   fetch('./data/ATLAS_PACK.json').then(r=>{ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
@@ -532,10 +498,16 @@ footer b{color:var(--ink)}
       await ATLAS_READER.ensureLegacy(pack);
       if(!ATLAS_READING.bindPack(pack))throw new Error('PACK·읽기 자료 쌍 검증 실패');
       ATLAS_PRICE.bindPack(pack);
+      MAP_PACK=pack;
       RAWTHEMES=pack.themes||[];
       const g=ATLAS_DERIVE.deriveGraph(pack);
       const con=ATLAS_DERIVE.deriveConsole(pack,g);
       render(con, pack.monthly_diff||{}, pack.meta||{});
+      const known=new Set([...pack.industries,...pack.themes].map(n=>n.id));
+      const visit=id=>{const target=document.getElementById(id);if(!target)return;mapSelected=id;for(let parent=target.parentElement;parent;parent=parent.parentElement)if(parent.tagName==='DETAILS')parent.open=true;ATLAS_READING.hydrateIndustryRecords(document);target.scrollIntoView({block:'start',behavior:'instant'})};
+      mapNav=ATLAS_UX.mount({key:m=>m.selected,capture:()=>({selected:mapSelected}),restore:m=>{mapSelected=m.selected||null},fromURL:id=>{if(document.getElementById(id))visit(id)}});
+      document.addEventListener('click',event=>{if(event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;const link=event.target.closest('a');if(!link)return;let id=link.dataset.atlasNode||'';if(!id&&link.getAttribute('href')?.startsWith('#')){try{id=decodeURIComponent(link.hash.slice(1))}catch(e){return}}if(document.getElementById(id)&&(!link.dataset.atlasNode||known.has(id))){event.preventDefault();mapNav.navigate(id,()=>visit(id),'#'+encodeURIComponent(id))}});
+      mapNav.backButton(document.querySelector('.jump .wrap'));mapNav.start();
     })
     .catch(e=>fail(`data/ATLAS_PACK.json 을 읽지 못했습니다 (${e.message}).<br><br>· GitHub Pages(https)에서는 정상 작동합니다.<br>· 로컬에서 열 때는 file:// 이 아니라 로컬 서버가 필요합니다.<br>&nbsp;&nbsp;예: 폴더에서 <b style="color:var(--ink)">python3 -m http.server</b> 실행 후 localhost 접속.`));
 })();

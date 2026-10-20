@@ -311,7 +311,7 @@ function render(){
     if(!R.mini)gLane.appendChild(el("line",{x1:LEFT,y1:R.cy,x2:LEFT+COLW*STAGES.length,y2:R.cy,stroke:"#2A2F35","stroke-dasharray":"2 8","stroke-width":1,"pointer-events":"none"}))});
   E.forEach(e=>{const dash=!(e.type==="SUPPLIES_TO"||e.type==="THEME_DRIVES"||e.type==="OPERATES_IN");
     e.el=el("path",{class:"edge k-"+e.type+(dash?" dash":"")+(e.x?" x":"")});
-    e.el.addEventListener("mouseenter",ev=>{e.el.classList.add("hl");showTip(ev,`<b>${esc(e.a.name)}</b> → <b>${esc(e.b.name)}</b><div class="m">${e.type} · ${e.strength||"-"}</div>${e.mech?"<div style='margin-top:4px'>"+esc(e.mech)+"</div>":""}`)});
+    e.el.addEventListener("mouseenter",ev=>{e.el.classList.add("hl");showTip(ev,`<b>${esc(e.a.name)}</b> → <b>${esc(e.b.name)}</b><div class="m">${esc(ATLAS_READING.relationLabel(e.type))} · 등록 강도 ${esc(({H:"높음",M:"중간",L:"낮음"})[e.strength]||"미기재")}</div>${e.propagation_status==="HOLD"?"<div style='margin-top:4px'>경제적 전달의 현재 확인 보류 · 원 기록은 연결 산업 설명에서 확인</div>":"<div style='margin-top:4px'>등록 관계는 자동 수혜 확증이 아닙니다.</div>"}`)});
     e.el.addEventListener("mousemove",moveTip);e.el.addEventListener("mouseleave",()=>{e.el.classList.remove("hl");hideTip()});gEdge.appendChild(e.el)});
   N.forEach(n=>{const g=el("g",{class:"node "+n.kind+(n.kind==="theme"?" theme":"")+(n.tier?" tier-"+n.tier:"")+(n.kind==="ind"&&ROWS[n.row].mini?" mini":"")+(expanded.has(n.id)?" exp":"")});n.el=g;g.style.setProperty("--rr",(n.r+6)+"px");
     if(n.kind==="theme"){g.appendChild(el("polygon",{points:"0,-12 12,0 0,12 -12,0",fill:"#C9B88A","fill-opacity":.85}))}
@@ -335,7 +335,7 @@ function buildHeads(){
   const hy=document.getElementById("hy");hy.innerHTML="";CHAINS.forEach((C,ri)=>{const d=document.createElement("div");d.innerHTML=`${esc(C.name)}<small>${focusRow===ri?"포커스 해제":"체인 포커스"}</small>`;d.dataset.y=ROWS[ri].cy;d.classList.toggle("on",focusRow===ri);d.classList.toggle("mini",!!ROWS[ri].mini);d.onclick=()=>focusChain(ri);hy.appendChild(d)});
 }
 function nodeTip(n){
-  if(n.kind==="ind"){const i=n.ref;return`<b>${esc(i.name)}</b> <span class="m">${i.id}</span><div class="m">${i.tier} · ${esc(i.balance||"")}${i.cycle_stage?" · "+esc(i.cycle_stage):""}${n.changed?" · <span style='color:#C9B88A'>이번 갱신 변경</span>":""}</div>${i.balance_direction?"<div style='margin-top:4px'>"+esc(String(i.balance_direction).slice(0,140))+"</div>":""}`}
+  if(n.kind==="ind"){const i=n.ref,e=D._reader_pair?.reader?.editorial?.[i.id];return `<b>${esc(i.name)}</b> <span class="m">${esc(i.id)}</span><div style="margin-top:4px">${esc(e?.headline||i.definition||"")}</div><div class="m">보존된 판단 · 원문 기간과 반대 근거는 산업 설명에서 확인</div>`}
   if(n.kind==="theme")return`<b>${esc(n.name)}</b><div class="m">테마 · 연결 ${E.filter(e=>e.a===n).length}</div>`;
   const c=n.ref;return`<b>${esc(c.ticker)}</b> ${esc(c.name||"")}<div class="m">${esc(c.chain_position||"")}${c.role?" · "+roleKo(c.role):""}${n.dd?" · DEEP_DIVED":""}</div>`;
 }
@@ -364,18 +364,27 @@ function particles(){
 }
 // ───────── 조명 ─────────
 function neighbors(n){const one=new Set(),two=new Set();E.forEach(e=>{if(e.propagation_status==="HOLD")return;if(e.a===n)one.add(e.b);if(e.b===n)one.add(e.a)});one.forEach(m=>E.forEach(e=>{if(e.propagation_status==="HOLD")return;if(e.a===m&&e.b!==n&&!one.has(e.b))two.add(e.b);if(e.b===m&&e.a!==n&&!one.has(e.a))two.add(e.a)}));return{one,two}}
-function clearLight(){N.forEach(m=>m.el.classList.remove("sel","off","lit2","hov"));E.forEach(e=>e.el.classList.remove("lit1","lit2","off","hl"))}
+function clearLight(){N.forEach(m=>m.el.classList.remove("sel","off","lit2","hov","atlas-registered-context"));E.forEach(e=>e.el.classList.remove("lit1","lit2","off","hl","atlas-held-context","atlas-derived-context"));document.getElementById("atlas-context-key")?.remove()}
 function light(n,cls){clearLight();if(!n)return;const{one,two}=neighbors(n);
   N.forEach(m=>{if(m===n)m.el.classList.add(cls);else if(one.has(m)){}else if(two.has(m))m.el.classList.add("lit2");else m.el.classList.add("off")});
-  E.forEach(e=>{if(e.propagation_status==="HOLD"){e.el.classList.add("off");return}if(e.a===n||e.b===n)e.el.classList.add("lit1");else if((one.has(e.a)&&two.has(e.b))||(one.has(e.b)&&two.has(e.a))||(one.has(e.a)&&one.has(e.b)))e.el.classList.add("lit2");else e.el.classList.add("off")})}
+  E.forEach(e=>{if(e.propagation_status==="HOLD"){e.el.classList.add("off");return}if(e.a===n||e.b===n)e.el.classList.add("lit1");else if((one.has(e.a)&&two.has(e.b))||(one.has(e.b)&&two.has(e.a))||(one.has(e.a)&&one.has(e.b)))e.el.classList.add("lit2");else e.el.classList.add("off")});
+  if(n.kind==="ind"){
+    const incident=E.filter(e=>(e.a===n||e.b===n)&&e.type!=="OPERATES_IN");
+    const registered=incident.filter(e=>D.edges.some(r=>r.from===e.a.id&&r.to===e.b.id&&r.type===e.type));
+    const held=registered.filter(e=>e.propagation_status==="HOLD"),derived=incident.filter(e=>!registered.includes(e));
+    held.forEach(e=>{e.el.classList.remove("off","lit1","lit2");e.el.classList.add("atlas-held-context");const o=e.a===n?e.b:e.a;o.el.classList.remove("off","lit2");o.el.classList.add("atlas-registered-context")});
+    derived.forEach(e=>{e.el.classList.remove("lit1","lit2");e.el.classList.add("off","atlas-derived-context")});
+    if(held.length){const key=document.createElement("div");key.id="atlas-context-key";key.className="atlas-context-key";key.textContent="점선 "+held.length+"개: 등록 관계 · 경제적 전달 미확인"+(derived.length?". 테마 목록 연결 "+derived.length+"개는 별도입니다.":".");stage.appendChild(key)}
+  }
+}
 function hover(n){hov=n;if(sel){return}E.forEach(e=>e.el.classList.remove("hl"));N.forEach(m=>m.el.classList.remove("hov"));if(!n)return;n.el.classList.add("hov");E.forEach(e=>{if(e.propagation_status!=="HOLD"&&(e.a===n||e.b===n))e.el.classList.add("hl")})}
 function inView(n){const sx=view.x+n.x*view.k,sy=view.y+n.y*view.k;const m=60,right=VW-(insp.classList.contains("open")&&VW>900?insp.getBoundingClientRect().width:0);return sx>m&&sx<right-m&&sy>m&&sy<VH-m}
 function select(n,force){
-  const apply=()=>{sel=n;light(n,"sel");if(!n){closeInsp();return}inspect(n);openInsp();if(force||!inView(n))centerOn(n)};
+  const apply=()=>{hideTip();sel=n;light(n,"sel");if(!n){closeInsp();return}inspect(n);openInsp();if(force||!inView(n))centerOn(n)};
   if(flowNav)flowNav.navigate(n?.id||null,apply,n?'#'+encodeURIComponent(n.id):location.pathname);else apply();
 }
 function cl(x,y,k){const w=WW*k,h=WH*k;const right=insp.classList.contains("open")&&VW>900?insp.getBoundingClientRect().width:0;const vw=VW-right;return{x:w<vw?(vw-w)/2:Math.max(vw-w-40,Math.min(40,x)),y:h<VH?(VH-h)/2:Math.max(VH-h-40,Math.min(40,y))}}
-function centerOn(n){const k=Math.max(view.k,.85);const right=insp.classList.contains("open")&&VW>900?insp.getBoundingClientRect().width:0;const c=cl((VW-right)/2-n.x*k,VH/2-n.y*k,k);tween={t:performance.now(),d:RED?0:420,x0:view.x,y0:view.y,k0:view.k,x1:c.x,y1:c.y,k1:k}}
+function centerOn(n){const reading=n.kind==="ind"&&VW>900;const k=Math.max(view.k,reading?1.05:.85);const right=insp.classList.contains("open")&&VW>900?insp.getBoundingClientRect().width:0;const c=cl((VW-right)/2-n.x*k,VH/2-n.y*k,k);if(reading)c.y=Math.min(280,VH*.34)-n.y*k;tween={t:performance.now(),d:RED?0:420,x0:view.x,y0:view.y,k0:view.k,x1:c.x,y1:c.y,k1:k}}
 function openInsp(){insp.classList.add("open");document.body.classList.add("atlas-flow-reading");stage.classList.add("iopen");flowNav?.backButton(insp.querySelector(".top"));flowPanel.open();ATLAS_READING.flowSheet(true);ATLAS_UX.enhance(insp)}
 function closeInsp(){insp.classList.remove("open");document.body.classList.remove("atlas-flow-reading");stage.classList.remove("iopen");ATLAS_READING.flowSheet(false);flowPanel.close()}
 function toggleCo(n){if(expanded.has(n.id))expanded.delete(n.id);else expanded.add(n.id);rebuild();if(sel)inspect(sel)}
@@ -401,9 +410,10 @@ function goItem(it){
   const apply=()=>{sres.style.display='none';document.getElementById('q').blur();if(it.co){if(!expanded.has(it.n.id)){expanded.add(it.n.id);rebuild()}select(byId[id]||it.n,true)}else select(it.n,true)};
   if(flowNav)flowNav.navigate(id,apply,'#'+encodeURIComponent(id));else apply();
 }
-document.addEventListener('click',event=>{const link=event.target.closest('a[data-atlas-company]');if(!link)return;const parent=byId[link.dataset.atlasIndustry],co=parent?.cos?.find(c=>c.ticker===link.dataset.atlasCompany);if(co){event.preventDefault();goItem({n:parent,co})}});
+document.addEventListener('click',event=>{if(event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;const link=event.target.closest('a[data-atlas-company]');if(!link)return;const parent=byId[link.dataset.atlasIndustry],co=parent?.cos?.find(c=>c.ticker===link.dataset.atlasCompany);if(co){event.preventDefault();goItem({n:parent,co})}});
 document.getElementById("q").addEventListener("input",ev=>search(ev.target.value));
 document.getElementById("q").addEventListener("keydown",ev=>{if(ev.key==="ArrowDown"){sidx=Math.min(sitems.length-1,sidx+1)}else if(ev.key==="ArrowUp"){sidx=Math.max(0,sidx-1)}else if(ev.key==="Enter"){ev.preventDefault();ev.stopPropagation();if(sitems[sidx])goItem(sitems[sidx]);return}else if(ev.key==="Escape"){sres.style.display="none";ev.target.blur();return}else return;ev.preventDefault();[...sres.children].forEach((d,i)=>d.classList.toggle("act",i===sidx))});
+document.addEventListener('click',event=>{if(event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;const link=event.target.closest('a[data-atlas-node]');if(!link)return;const node=byId[link.dataset.atlasNode];if(node&&node.kind!=="co"){event.preventDefault();select(node,true)}});
 function closeSearchOutside(){const a=document.activeElement;if(a!==document.getElementById("q")&&!sres.contains(a))sres.style.display="none"}
 document.getElementById("q").addEventListener("blur",()=>setTimeout(closeSearchOutside,150));
 sres.addEventListener("focusout",()=>setTimeout(closeSearchOutside,0));
@@ -459,7 +469,7 @@ function closeHelp(){helpov.classList.remove('on');helpPanel.close()}
 function toggleHelp(){if(helpov.classList.contains('on'))closeHelp();else{helpov.classList.add('on');helpPanel.open()}}
 document.getElementById('help').onclick=toggleHelp;document.getElementById('helpclose').onclick=closeHelp;helpov.addEventListener('click',e=>{if(e.target===helpov)closeHelp()});
 
-window.addEventListener("keydown",ev=>{if(ev.target.tagName==="INPUT"||ev.target.tagName==="TEXTAREA")return;if(ev.target.closest("#insp")&&ev.key.startsWith("Arrow"))return;
+window.addEventListener("keydown",ev=>{if((insp.getAttribute("aria-modal")==="true"||helpov.classList.contains("on"))&&ev.key!=="Escape")return;if(ev.target.tagName==="INPUT"||ev.target.tagName==="TEXTAREA")return;if(ev.target.closest("#insp")&&ev.key.startsWith("Arrow"))return;
   if(ev.key==="/"){ev.preventDefault();document.getElementById("q").focus()}else if(ev.key==="Escape"){if(helpov.classList.contains("on"))closeHelp();else if(replayOn)stopReplay();else if(sel)select(null);else if(focusRow!=null)focusChain(focusRow);else closeInsp()}
   else if(ev.key==="?")toggleHelp();else if(ev.key==="+"||ev.key==="=")zoomAt(1.25,VW/2,VH/2);else if(ev.key==="-")zoomAt(.8,VW/2,VH/2);else if(ev.key==="0")fitView(true);else if(ev.key==="1")document.getElementById("one").click();
   else if(ev.key==="ArrowLeft"){view.x+=80;clamp()}else if(ev.key==="ArrowRight"){view.x-=80;clamp()}else if(ev.key==="ArrowUp"){view.y+=80;clamp()}else if(ev.key==="ArrowDown"){view.y-=80;clamp()}});
@@ -474,23 +484,13 @@ function updateMini(){if(!mini||!mini.vp)return;const right=insp.classList.conta
 function head(title,meta){return`<div class="top"><div><h2>${title}</h2><div class="meta">${meta}</div></div><button class="x" title="닫기 (Esc)" onclick="select(null)">×</button></div>`}
 function inspect(n){
   let h="";
-  if(n.kind==="ind"){const i=n.ref;const col=TC[i.tier];
-    h+=head(esc(i.name),i.id+" · "+esc(CHAINS[n.row].name)+" · "+STAGES[n.col]);
-    h+=`<span class="tier" style="color:${col};border-color:${col}">${i.tier}</span><span class="tier" style="color:var(--mute);border-color:var(--line)">${BAL[i.balance]||""} ${esc(i.balance)}${i.cycle_stage?" · "+esc(i.cycle_stage):""}</span>`+ATLAS_PRICE.coreBadgeHTML(i.id);
-    h+=`<div class="btns"><button onclick="centerOn(byId['${n.id}'])">여기로 확대</button><button onclick="toggleCo(byId['${n.id}'])">${expanded.has(n.id)?"기업 접기":"기업 펼치기 ("+n.cos.length+")"}</button><button onclick="focusChain(${n.row})">체인 포커스</button></div>`;
-    h+=ATLAS_READING.industryHTML(i)+'<details class="atlas-preserved"><summary>수급·사이클·전체 근거 기록</summary><div class="atlas-preserved-body">';
-    if(n.chg)h+=`<div class="chg"><b>보존된 갱신 기록 · ${esc(todayKey)}</b>${n.chg.from&&n.chg.from!==n.chg.to?esc(n.chg.from)+" → "+esc(n.chg.to)+" · ":""}${esc(String(n.chg.reason))}</div>`;
-    h+=ATLAS_PRICE.reviewHTML(i);
-    if(i.balance_direction)h+=`<p style="margin-top:10px">${esc(i.balance_direction)}</p>`;
-    h+=`<details open><summary>왜 이 티어인가</summary><p>${esc(i.tier_rationale||"")}</p></details>`;
-    h+=`<details><summary>수요</summary><p>${esc(txt(i.demand))}</p></details><details><summary>공급</summary><p>${esc(txt(i.supply))}</p></details>`;
-    const li=(i.leading_indicators||[]).slice(-4).reverse();if(li.length){h+=`<details open><summary>최근 선행지표 (${li.length})</summary>`;li.forEach(x=>h+=`<div class="row"><b>${esc(x.name)}</b><span>${esc(String(x.last_reading||"").slice(0,180))}<br><small>${esc(x.as_of||"")}</small></span></div>`);h+=`</details>`}
-    h+='</div></details>';
-    const rel=E.filter(e=>(e.a===n||e.b===n)&&e.type!=="OPERATES_IN").sort((a,b)=>(a.type==="SUPPLIES_TO"?0:1)-(b.type==="SUPPLIES_TO"?0:1));
-    h+=`<details open><summary>관계 (${rel.length})</summary>`;rel.forEach(e=>{const o=e.a===n?e.b:e.a;const dir=e.a===n?"→":"←";h+=`<div class="row"><b><span class="lk" data-id="${o.id}">${esc(o.name)}</span> <small style="color:var(--mute)">${dir} ${e.type}${e.strength?" "+e.strength:""}</small></b><span>${esc((e.mech||"").slice(0,120))}${ATLAS_PRICE.edgeHTML(e)}</span></div>`});h+=`</details>`;
-    if(n.cos.length){h+=`<details open><summary>기업 (${n.cos.length}) — 클릭하면 지도에서 선택</summary>`;[...n.cos].sort((a,b)=>(a.chain_position||"").localeCompare(b.chain_position||"")).forEach(c=>h+=`<div class="co" data-co="${esc(c.ticker)}"><i class="dot ${c.dd?"dd":""}"></i><b>${esc(c.ticker)}</b> ${esc(c.name||"")}<span class="cp">${esc(c.chain_position||"")}${c.role?" · "+esc(roleKo(c.role)):""}</span></div>`);h+=`</details>`}
-  }else if(n.kind==="theme"){const t=n.ref;h+=head(esc(t.name),t.id+" · 테마");h+=`<p>${esc(txt(t.thesis||t.description||"").slice(0,700))}</p><details open><summary>구동 산업</summary>`;E.filter(e=>e.a===n).forEach(e=>h+=`<div class="row"><b><span class="lk" data-id="${e.b.id}">${esc(e.b.name)}</span></b><span style="color:${TC[e.b.tier]}">${esc(e.b.tier)}</span></div>`);h+=`</details>`}
+  if(n.kind==="ind"){const i=n.ref;
+    h+=head(esc(i.name),i.id+" · "+esc(CHAINS[n.row].name)+" · "+esc(STAGES[n.col]));
+    h+=`<div class="btns"><button onclick="centerOn(byId['${n.id}'])">지도에서 보기</button><button onclick="toggleCo(byId['${n.id}'])">${expanded.has(n.id)?"기업 접기":"기업 위치 보기"}</button><button onclick="focusChain(${n.row})">체인 보기</button></div>`;
+    h+=ATLAS_READING.industryHTML(i);
+  }else if(n.kind==="theme"){const t=n.ref;h+=head(esc(t.name),t.id+" · 테마");h+=`<p>${esc(txt(t.thesis||t.description||t.demand_thesis||"").slice(0,700))}</p><details open><summary>구동 산업</summary>`;E.filter(e=>e.a===n).forEach(e=>h+=`<div class="row"><b><span class="lk" data-id="${e.b.id}">${esc(e.b.name)}</span></b><span style="color:${TC[e.b.tier]}">${esc(e.b.tier)}</span></div>`);h+=`</details>`}
   else{const c=n.ref;const cn=(D.company_nodes||[]).find(x=>x.ticker===c.ticker);const r=cn&&cn.deep_dive_ref;
+    if(!cn){insp.innerHTML=head(esc(c.ticker),esc(n.parent.name)+" · 산업 카드 등록")+ATLAS_READING.industryCardGapHTML(c,n.parent.ref);insp.scrollTop=0;return;}
     h+=head(esc(c.ticker)+` <small style="color:var(--mute);font-weight:400">${esc(c.name||"")}</small>`,esc(n.parent.name)+" · "+esc(c.chain_position||"")+(c.role?" · "+esc(roleKo(c.role)):""));
     h+=`<div class="btns"><button onclick="select(byId['${n.parent.id}'],false)">산업으로</button><button onclick="centerOn(byId['${n.id}'])">여기로 확대</button></div>`;
     h+=ATLAS_READING.companyHTML(cn,n.parent.ref,c)+'<details class="atlas-preserved"><summary>회사 근거·관찰 KPI·원 DD·가격 기록</summary><div class="atlas-preserved-body">'+ATLAS_PRICE.companyReviewHTML(cn)+ATLAS_PRICE.reviewHTML(cn)+ATLAS_PRICE.reviewHTML(c);
@@ -508,7 +508,7 @@ function inspectChain(ri,set){const C=CHAINS[ri];let h=head(esc(C.name)+" 체인
   const chg=[...set].filter(n=>n.changed);if(chg.length)h+=`<div class="chg"><b>이번 갱신 변경 ${chg.length}</b>${chg.map(n=>esc(n.name)+(n.chg.from&&n.chg.from!==n.chg.to?" "+esc(n.chg.from)+"→"+esc(n.chg.to):"")).join(" · ")}</div>`;
   STAGES.forEach((st,ci)=>{h+=`<details open><summary>${st} (${C.cells[ci].length})</summary>`;C.cells[ci].forEach(id=>{const n=byId[id];if(!n)return;h+=`<div class="row"><b><span class="lk" data-id="${id}">${esc(n.name)}</span></b><span style="color:${TC[n.tier]}">${n.tier} <span style="color:var(--mute)">${BAL[n.ref.balance]||""}</span></span></div>`});h+=`</details>`});
   const out=E.filter(e=>e.type!=="OPERATES_IN"&&e.a.kind==="ind"&&e.b.kind==="ind"&&(set.has(e.a)!==set.has(e.b)));
-  h+=`<details open><summary>다른 체인과의 연결 (${out.length})</summary>`;out.forEach(e=>{const inn=set.has(e.a)?e.a:e.b,o=set.has(e.a)?e.b:e.a,dir=set.has(e.a)?"→":"←";h+=`<div class="row"><b>${esc(inn.name)} <small style="color:var(--mute)">${dir} ${e.type}</small></b><span><span class="lk" data-id="${o.id}">${esc(o.name)}</span> <small>· ${esc(CHAINS[o.row].name)}</small></span></div>`});h+=`</details>`;
+  h+=`<details open><summary>다른 체인과의 연결 (${out.length})</summary>`;out.forEach(e=>{const inn=set.has(e.a)?e.a:e.b,o=set.has(e.a)?e.b:e.a,dir=set.has(e.a)?"→":"←";h+=`<div class="row"><b>${esc(inn.name)} <small style="color:var(--mute)">${dir} ${esc(ATLAS_READING.relationLabel(e.type))}</small></b><span><span class="lk" data-id="${o.id}">${esc(o.name)}</span> <small>· ${esc(CHAINS[o.row].name)}</small></span></div>`});h+=`</details>`;
   const ths=E.filter(e=>e.type==="THEME_DRIVES"&&set.has(e.b)).map(e=>e.a);const uniq=[...new Set(ths)];
   h+=`<details open><summary>타고 있는 테마 (${uniq.length})</summary>`;uniq.forEach(t=>h+=`<div class="row"><b><span class="lk" data-id="${t.id}">${esc(t.name)}</span></b><span>${ths.filter(x=>x===t).length}개 산업</span></div>`);h+=`</details>`;
   insp.innerHTML=h;insp.scrollTop=0;insp.querySelectorAll(".lk").forEach(a=>a.onclick=()=>{const m=byId[a.dataset.id];if(m)select(m,false)})}
