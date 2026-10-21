@@ -31,7 +31,7 @@
   const escaped=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   function reading(){
     return {y:scrollY,details:[...document.querySelectorAll('details')].map(d=>d.open),
-      scrolls:['drawerBody','insp','ibody','stanceBoard'].map(id=>{const e=document.getElementById(id);return e?{id,y:e.scrollTop}:null}).filter(Boolean)};
+      scrolls:['drawerBody','insp','flowPanelBody','ibody','mapPanelBody','stanceBoard','stage'].map(id=>{const e=document.getElementById(id);return e?{id,y:e.scrollTop,x:e.scrollLeft}:null}).filter(Boolean)};
   }
   function mount(opts){
     const page=location.pathname;let restoring=false,applying=false,performing=false,seq=0,generation=0;
@@ -63,7 +63,7 @@
         if(state?.reading){
           const ds=document.querySelectorAll('details');state.reading.details.forEach((open,i)=>{if(ds[i])ds[i].open=open});
           window.ATLAS_READING?.hydrateIndustryRecords(document);
-          state.reading.scrolls.forEach(s=>{const e=document.getElementById(s.id);if(e)e.scrollTop=s.y});
+          state.reading.scrolls.forEach(s=>{const e=document.getElementById(s.id);if(e){e.scrollTop=s.y;if(s.x!=null)e.scrollLeft=s.x}});
           scrollTo({top:state.reading.y,behavior:'instant'});
         }
         restoring=false;api.save();

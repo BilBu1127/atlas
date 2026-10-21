@@ -203,15 +203,12 @@ footer b{color:var(--ink)}
 </style><script src="./ATLAS_PRICE.js"></script>
 <script src="./ATLAS_UX.js"></script>
 <script src="./ATLAS_READER_ADAPTER.js"></script>
-<script src="./ATLAS_READING.js"></script><style id="atlas-integration-responsive">@media(max-width:720px){
-.cards,.cand-wrap,.cold-wrap,.pw-wrap,.theme-wrap,.ol-wrap{grid-template-columns:minmax(0,1fr)}.card,.grid2,.grid2>section,.card-h,.card-h h3{min-width:0;max-width:100%}
-.card,.li,.li-n,.li-v,.rat,.defn,.emech,.cold-card{overflow-wrap:anywhere}.li-n,.li-v{min-width:0}.card-h{flex-wrap:wrap}
-}</style>
-</head>
+<script src="./ATLAS_READING.js"></script><script src="./ATLAS_PANEL.js"></script>
 <style id="atlas-integration-responsive">@media(max-width:720px){
 .cards,.cand-wrap,.cold-wrap,.pw-wrap,.theme-wrap,.ol-wrap{grid-template-columns:minmax(0,1fr)}.card,.grid2,.grid2>section,.card-h,.card-h h3{min-width:0;max-width:100%}
 .card,.li,.li-n,.li-v,.rat,.defn,.emech,.cold-card{overflow-wrap:anywhere}.li-n,.li-v{min-width:0}.card-h{flex-wrap:wrap}
 }</style>
+<link rel="stylesheet" href="./ATLAS_PANEL.css">
 </head>
 <body>
 <div class='wrap'>
@@ -402,7 +399,7 @@ footer b{color:var(--ink)}
   }
 
   function card(o){
-    return `<article class="card tier-${o.tier}" id="${esc(o.id)}"><header class="card-h"><div class="card-id">${esc(o.id)}</div><h3>${esc(o.name)}</h3></header>${ATLAS_READING.industryHTML(MAP_PACK.industries.find(i=>i.id===o.id))}</article>`;
+    const e=MAP_PACK._reader_pair.reader.editorial[o.id];return `<button class="atlas-map-item tier-${o.tier}" id="${esc(o.id)}" data-map-open="${esc(o.id)}" type="button"><small>${esc(o.id)} · ${esc(o.tier)}</small><b>${esc(o.name)} →</b><span>${esc(e?.headline||'보존 근거와 확인 조건 읽기')}</span></button>`;
   }
 
   function diffSection(md,meta){
@@ -466,7 +463,7 @@ footer b{color:var(--ink)}
     const by=t=>inds.filter(o=>o.tier===t);
     let h='';
     h+=`<section class="block" id="dash"><div class="eyebrow">Thermal Dashboard</div><div class="blocktitle">지금 어디가 데워지고 있나</div>
-      <p class="lead">${total}개 산업을 온도로 배열했다. 색은 유일하게 기능적인 장식 — 뜨거움(HEAT)에서 차가움(COLD)까지 수급 균형의 온도만 나타낸다. 셀을 누르면 해당 카드로 이동한다.</p>`+
+      <p class="lead">${total}개 산업을 온도로 배열했다. 색은 유일하게 기능적인 장식 — 뜨거움(HEAT)에서 차가움(COLD)까지 수급 균형의 온도만 나타낸다. 셀을 누르면 같은 화면에서 근거와 확인 조건을 읽을 수 있다.</p>`+
       grid(inds)+
       `<div class="legend"><span><i class="sw t-HEAT"></i>HEAT · 균형 붕괴, 즉시 스크리닝</span><span><i class="sw t-WARM"></i>WARM · 조짐, 월간 관찰</span><span><i class="sw t-NEUTRAL"></i>NEUTRAL · 균형</span><span><i class="sw t-COLD"></i>COLD · 역발상 감시</span><span><i class="sw t-FROZEN"></i>FROZEN · 구조 쇠퇴</span></div></section>`;
 
@@ -504,9 +501,22 @@ footer b{color:var(--ink)}
       const con=ATLAS_DERIVE.deriveConsole(pack,g);
       render(con, pack.monthly_diff||{}, pack.meta||{});
       const known=new Set([...pack.industries,...pack.themes].map(n=>n.id));
-      const visit=id=>{const target=document.getElementById(id);if(!target)return;mapSelected=id;for(let parent=target.parentElement;parent;parent=parent.parentElement)if(parent.tagName==='DETAILS')parent.open=true;ATLAS_READING.hydrateIndustryRecords(document);target.scrollIntoView({block:'start',behavior:'instant'})};
-      mapNav=ATLAS_UX.mount({key:m=>m.selected,capture:()=>({selected:mapSelected}),restore:m=>{mapSelected=m.selected||null},fromURL:id=>{if(document.getElementById(id))visit(id)}});
-      document.addEventListener('click',event=>{if(event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;const link=event.target.closest('a');if(!link)return;let id=link.dataset.atlasNode||'';if(!id&&link.getAttribute('href')?.startsWith('#')){try{id=decodeURIComponent(link.hash.slice(1))}catch(e){return}}if(document.getElementById(id)&&(!link.dataset.atlasNode||known.has(id))){event.preventDefault();mapNav.navigate(id,()=>visit(id),'#'+encodeURIComponent(id))}});
+      const mapPanel=document.createElement('aside');mapPanel.id='mapPanel';mapPanel.className='atlas-map-panel atlas-panel';mapPanel.innerHTML='<div class="atlas-panel-head" id="mapPanelHead"></div><div id="mapPanelBody" class="atlas-panel-body"></div>';document.body.appendChild(mapPanel);ATLAS_PANEL.setOpen(mapPanel,false);
+      function mapCompany(id){const [industry,ticker]=id.split('::');return ticker&&pack.company_nodes.some(n=>n.ticker===ticker&&n.industries.includes(industry))?{industry,ticker}:null}
+      function closeMapRaw(){mapSelected=null;ATLAS_PANEL.setOpen(mapPanel,false);document.querySelectorAll('.atlas-map-selected').forEach(e=>e.classList.remove('atlas-map-selected'))}
+      function closeMap(){mapNav.navigate(null,closeMapRaw,location.pathname)}
+      function visit(id){
+       const company=mapCompany(id);const industry=pack.industries.find(i=>i.id===id);const theme=pack.themes.find(t=>t.id===id);
+       if(industry||company||theme){mapSelected=id;const ind=company?pack.industries.find(i=>i.id===company.industry):industry;const n=company?pack.company_nodes.find(n=>n.ticker===company.ticker):industry||theme;
+        document.getElementById('mapPanelHead').innerHTML='<button type="button" class="atlas-panel-close">×</button><div data-panel-meta>'+esc(ind?ind.id+' · '+(company?'기업':'산업'):id+' · 테마')+'</div><h2 data-panel-title>'+esc(company?n.ticker+' · '+n.name:n.name)+'</h2>';
+        document.getElementById('mapPanelBody').innerHTML=company?ATLAS_PANEL.companyHTML(pack,company.ticker,company.industry):industry?ATLAS_READING.industryHTML(industry):'<section class="atlas-reading"><h3 class="atlas-reading-lead">'+esc(theme.name)+'</h3><p>'+esc(theme.demand_thesis||theme.thesis||theme.description||'')+'</p>'+((theme.linked_industries||[]).map(id=>'<p><a data-atlas-node="'+esc(id)+'" href="#'+esc(id)+'">'+esc(pack.industries.find(i=>i.id===id)?.name||id)+' →</a></p>').join(''))+'</section>';
+        document.getElementById('mapPanelBody').scrollTop=0;document.querySelectorAll('.atlas-map-selected').forEach(e=>e.classList.remove('atlas-map-selected'));document.getElementById(ind?.id||id)?.classList.add('atlas-map-selected');
+        mapNav?.backButton(document.getElementById('mapPanelHead'));ATLAS_PANEL.attach({panel:mapPanel,head:document.getElementById('mapPanelHead'),body:document.getElementById('mapPanelBody'),view:'MAP',key:id,context:ind?.id||id,pack,onPick:id=>mapNav.navigate(id,()=>visit(id),'#'+encodeURIComponent(id)),onClose:closeMap});mapPanel.querySelector('.atlas-panel-close').onclick=closeMap;ATLAS_UX.enhance(mapPanel);return;
+       }
+       closeMapRaw();const target=document.getElementById(id);if(!target)return;mapSelected=id;for(let parent=target.parentElement;parent;parent=parent.parentElement)if(parent.tagName==='DETAILS')parent.open=true;target.scrollIntoView({block:'start',behavior:'instant'});
+      }
+      mapNav=ATLAS_UX.mount({key:m=>m.selected,capture:()=>({selected:mapSelected}),restore:m=>{if(m.selected)visit(m.selected);else closeMapRaw()},fromURL:id=>{if(document.getElementById(id)||mapCompany(id))visit(id)}});
+      document.addEventListener('click',event=>{if(event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;const button=event.target.closest('[data-map-open]');if(button){event.preventDefault();const id=button.dataset.mapOpen;mapNav.navigate(id,()=>visit(id),'#'+encodeURIComponent(id));return}const link=event.target.closest('a');if(!link)return;if(link.dataset.atlasCompany){const id=link.dataset.atlasIndustry+'::'+link.dataset.atlasCompany;if(mapCompany(id)){event.preventDefault();mapNav.navigate(id,()=>visit(id),'#'+encodeURIComponent(id))}return}let id=link.dataset.atlasNode||'';if(!id&&link.getAttribute('href')?.startsWith('#')){try{id=decodeURIComponent(link.hash.slice(1))}catch(e){return}}if(document.getElementById(id)&&(!link.dataset.atlasNode||known.has(id))){event.preventDefault();mapNav.navigate(id,()=>visit(id),'#'+encodeURIComponent(id))}});
       mapNav.backButton(document.querySelector('.jump .wrap'));mapNav.start();
     })
     .catch(e=>fail(`data/ATLAS_PACK.json 을 읽지 못했습니다 (${e.message}).<br><br>· GitHub Pages(https)에서는 정상 작동합니다.<br>· 로컬에서 열 때는 file:// 이 아니라 로컬 서버가 필요합니다.<br>&nbsp;&nbsp;예: 폴더에서 <b style="color:var(--ink)">python3 -m http.server</b> 실행 후 localhost 접속.`));

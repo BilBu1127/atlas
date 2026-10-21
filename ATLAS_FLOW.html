@@ -157,13 +157,14 @@ footer .lg i{display:inline-block;width:9px;height:9px;border-radius:50%}
 <script src="./ATLAS_PRICE.js"></script>
 <script src="./ATLAS_UX.js"></script>
 <script src="./ATLAS_READER_ADAPTER.js"></script>
-<script src="./ATLAS_READING.js"></script>
+<script src="./ATLAS_READING.js"></script><script src="./ATLAS_PANEL.js"></script>
 <style id="atlas-integration-responsive">@media(max-width:900px){
 #app{grid-template-rows:auto minmax(0,1fr) auto;height:100dvh}header{flex-wrap:wrap;gap:6px;padding:8px 12px}header h1{white-space:normal;overflow-wrap:anywhere;max-width:100%}
 header .tabs{margin-left:0;max-width:100%;overflow-x:auto}header .tools{margin-left:0;flex-wrap:wrap;width:100%;gap:5px}.srch{flex:1 1 100%;min-width:0}header .tools input{width:100%}
 #sres{width:min(340px,calc(100vw - 24px));max-height:45dvh}#sres div{overflow-wrap:anywhere;min-width:0}#sres small{white-space:normal}footer{flex-wrap:wrap;gap:5px 10px;padding:6px 12px;overflow:visible}#asof{max-width:100%;overflow-wrap:anywhere}
 #insp{max-width:100%;overflow-wrap:anywhere}#insp h2{overflow-wrap:anywhere}
 }</style>
+<link rel="stylesheet" href="./ATLAS_PANEL.css">
 </head>
 <body>
 <div id="app">
@@ -385,9 +386,15 @@ function select(n,force){
 }
 function cl(x,y,k){const w=WW*k,h=WH*k;const right=insp.classList.contains("open")&&VW>900?insp.getBoundingClientRect().width:0;const vw=VW-right;return{x:w<vw?(vw-w)/2:Math.max(vw-w-40,Math.min(40,x)),y:h<VH?(VH-h)/2:Math.max(VH-h-40,Math.min(40,y))}}
 function centerOn(n){const reading=n.kind==="ind"&&VW>900;const k=Math.max(view.k,reading?1.05:.85);const right=insp.classList.contains("open")&&VW>900?insp.getBoundingClientRect().width:0;const c=cl((VW-right)/2-n.x*k,VH/2-n.y*k,k);if(reading)c.y=Math.min(280,VH*.34)-n.y*k;tween={t:performance.now(),d:RED?0:420,x0:view.x,y0:view.y,k0:view.k,x1:c.x,y1:c.y,k1:k}}
-function openInsp(){insp.classList.add("open");document.body.classList.add("atlas-flow-reading");stage.classList.add("iopen");flowNav?.backButton(insp.querySelector(".top"));flowPanel.open();ATLAS_READING.flowSheet(true);ATLAS_UX.enhance(insp)}
+function syncFlowPanel(){
+ const head=insp.querySelector('.top');if(!head)return;
+ let body=insp.querySelector('#flowPanelBody');if(!body){body=document.createElement('div');body.id='flowPanelBody';for(const child of [...insp.children])if(child!==head)body.appendChild(child);insp.appendChild(body)}
+ const buttons=body.querySelector(':scope>.btns');if(buttons){const d=document.createElement('details');d.className='atlas-panel-actions';const sum=document.createElement('summary');sum.textContent='지도 조작';d.append(sum,buttons);body.appendChild(d)}
+ ATLAS_PANEL.attach({panel:insp,head,body,view:'FLOW',key:sel?.id||null,context:sel?.parent?.id||sel?.id,pack:D,onPick:id=>{if(byId[id])select(byId[id],false)},onClose:()=>select(null)});
+}
+function openInsp(){insp.classList.add("open");document.body.classList.add("atlas-flow-reading");stage.classList.add("iopen");flowNav?.backButton(insp.querySelector(".top"));flowPanel.open();syncFlowPanel();ATLAS_READING.flowSheet(true);ATLAS_UX.enhance(insp)}
 function closeInsp(){insp.classList.remove("open");document.body.classList.remove("atlas-flow-reading");stage.classList.remove("iopen");ATLAS_READING.flowSheet(false);flowPanel.close()}
-function toggleCo(n){if(expanded.has(n.id))expanded.delete(n.id);else expanded.add(n.id);rebuild();if(sel)inspect(sel)}
+function toggleCo(n){if(expanded.has(n.id))expanded.delete(n.id);else expanded.add(n.id);rebuild();if(sel){inspect(sel);syncFlowPanel()}}
 function rebuild(){const keep=sel&&sel.id;build();layout();render();if(keep&&byId[keep]){sel=byId[keep];light(sel,"sel")}}
 function focusChain(ri){focusRow=(focusRow===ri)?null:ri;rebuild();
   if(focusRow!=null){const set=new Set(N.filter(n=>n.kind==="ind"&&n.row===ri));sel=null;clearLight();

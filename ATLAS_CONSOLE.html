@@ -277,13 +277,14 @@ details.co.dd[open] .ddcaret{transform:rotate(90deg)}
 </style><script src="./ATLAS_PRICE.js"></script>
 <script src="./ATLAS_UX.js"></script>
 <script src="./ATLAS_READER_ADAPTER.js"></script>
-<script src="./ATLAS_READING.js"></script>
+<script src="./ATLAS_READING.js"></script><script src="./ATLAS_PANEL.js"></script>
 <style id="atlas-integration-responsive">@media(max-width:820px){
 .bar{flex-wrap:wrap;gap:8px;padding:10px 14px}.bar .chips{margin-left:0;width:100%;gap:5px}.chip{white-space:normal;overflow-wrap:anywhere;max-width:100%}
 .strip{flex-wrap:wrap;padding:8px 14px}.xnav{margin-left:0;flex-wrap:wrap}.xnav a{padding:5px 7px}
 .sbar{flex-wrap:wrap}#s-ver{overflow-wrap:anywhere;max-width:100%}.sbh{flex-wrap:wrap}.sbh .sub{margin-left:0}.sbsec{max-width:100%;overflow-x:auto}table.sb{min-width:520px}
 .sbnote,.txt,.krow,.em{overflow-wrap:anywhere}.app,.bar,.main,.rail,.canvas,.sbwrap{min-width:0;max-width:100%}.ct2{min-width:0}
 }</style>
+<link rel="stylesheet" href="./ATLAS_PANEL.css">
 </head>
 <body>
 <div class="app">
@@ -453,7 +454,7 @@ details.co.dd[open] .ddcaret{transform:rotate(90deg)}
           verification:c.verification||'SHALLOW',deep_dive_ref:c.deep_dive_ref||null,review_data:c.review_data})),
         edges:nb});
     }
-    const themes=d.themes.map(t=>({name:t.name, thesis:t.demand_thesis||'',
+    const themes=d.themes.map(t=>({id:t.id,name:t.name, thesis:t.demand_thesis||'',
       n:(t.linked_industries||[]).length, linked:t.linked_industries||[]}));
     const diff=d.monthly_diff||{};
     const cands=(diff.deep_dive_candidates||[]).filter(c=>c.status==='OPEN'||c.status==='PENDING_TRIGGER').map(c=>{
@@ -603,17 +604,21 @@ DATA.themes.forEach(t=>{
 /* ===== drill-down drawer ===== */
 const drawer=$('drawer'), scrim=$('scrim');
 let consoleNav=null,drawerSelection=null,drawerReturnTarget=null;
-const drawerPanel=ATLAS_UX.panel(drawer,{modal:true,background:document.querySelector('.app'),fallback:()=>drawerReturnTarget||document.querySelector('.obj')});
+const drawerPanel=ATLAS_UX.panel(drawer,{modal:false,background:document.querySelector('.app'),fallback:()=>drawerReturnTarget||document.querySelector('.obj')});
 drawer.setAttribute('aria-label','산업·회사 상세');
-function openDrawer(id){if(!IND_BY_ID[id])return;const apply=()=>renderDrawer(id);if(consoleNav)consoleNav.navigate(id,apply,'#'+id);else apply()}
+function consoleCompany(id){const [industry,ticker]=id.split('::');return ticker&&(window.PACK.company_nodes||[]).some(n=>n.ticker===ticker&&n.industries.includes(industry))?{industry,ticker}:null}
+function syncConsolePanel(){ATLAS_PANEL.attach({panel:drawer,head:$('drawerHead'),body:$('drawerBody'),view:'CONSOLE',key:drawerSelection,context:drawerSelection?.split('::')[0],pack:window.PACK,onPick:openDrawer,onClose:closeDrawer})}
+function renderCompanyDrawer(id){const c=consoleCompany(id);if(!c)return;const n=window.PACK.company_nodes.find(n=>n.ticker===c.ticker);const i=window.PACK.industries.find(i=>i.id===c.industry);drawerSelection=id;$('drawerHead').innerHTML=`<button class="dclose" onclick="closeDrawer()">×</button><div class="deyebrow">${esc(i.name)} · 기업</div><div class="dttl">${esc(n.ticker+' · '+n.name)}</div>`;$('drawerBody').innerHTML=ATLAS_PANEL.companyHTML(window.PACK,c.ticker,c.industry);$('drawerBody').scrollTop=0;drawer.classList.add('show');consoleNav?.backButton($('drawerHead'));drawerPanel.open();syncConsolePanel()}
+function openDrawer(id){if(!IND_BY_ID[id]&&!consoleCompany(id))return;const apply=()=>renderDrawer(id);if(consoleNav)consoleNav.navigate(id,apply,'#'+id);else apply()}
 function renderDrawer(id){
+  if(consoleCompany(id)){renderCompanyDrawer(id);return}
   drawerSelection=id;drawerReturnTarget=document.querySelector('.obj[data-id="'+id+'"]');
   const o=IND_BY_ID[id];if(!o)return;
   document.querySelectorAll('.obj').forEach(e=>e.classList.toggle('sel',e.dataset.id===id));
   $('drawerHead').innerHTML=`<button class="dclose" onclick="closeDrawer()" aria-label="닫기">✕</button><div class="deyebrow"><span class="did">${esc(id)}</span><span>${esc(o.sector)}</span></div><div class="dttl">${esc(o.name)}</div>`;
   $('drawerBody').innerHTML=ATLAS_READING.industryHTML(window.PACK.industries.find(i=>i.id===id));
   $('drawerBody').scrollTop=0;drawer.classList.add('show');scrim.classList.add('show');
-  consoleNav?.backButton($('drawerHead'));drawerPanel.open();ATLAS_UX.enhance(drawer);
+  consoleNav?.backButton($('drawerHead'));drawerPanel.open();syncConsolePanel();ATLAS_UX.enhance(drawer);
 }
 function openTheme(t){const apply=()=>renderThemeDrawer(t);if(consoleNav)consoleNav.navigate(t.id,apply,'#'+t.id);else apply()}
 function renderThemeDrawer(t){drawerSelection=t.id;
@@ -626,10 +631,10 @@ function renderThemeDrawer(t){drawerSelection=t.id;
     driven.map(d=>`<div class="erow" onclick="openDrawer('${d.id}')"><span class="et" style="color:${TIER_COLOR[d.tier]}">${d.tier}</span><div class="eo"><b>${esc(d.name)}</b></div></div>`).join('')+`</div>`;
   h+=`<div class="ddisc">테마는 산업 카드를 대체하지 않고 수요 드라이버로서 THEME_DRIVES 엣지로 연결됩니다.</div>`;
   $('drawerBody').innerHTML=h; $('drawerBody').scrollTop=0;
-  drawer.classList.add('show'); scrim.classList.add('show');consoleNav?.backButton($('drawerHead'));drawerPanel.open();ATLAS_UX.enhance(drawer);
+  drawer.classList.add('show'); scrim.classList.add('show');consoleNav?.backButton($('drawerHead'));drawerPanel.open();syncConsolePanel();ATLAS_UX.enhance(drawer);
 }
 function closeDrawer(){const apply=closeDrawerRaw;if(consoleNav)consoleNav.navigate('view:'+consoleView(),apply,location.pathname);else apply()}
-function closeDrawerRaw(){drawerSelection=null; drawer.classList.remove('show'); scrim.classList.remove('show');drawerPanel.close();
+function closeDrawerRaw(){ATLAS_PANEL.setOpen(drawer,false);drawerSelection=null; drawer.classList.remove('show'); scrim.classList.remove('show');drawerPanel.close();
   document.querySelectorAll('.obj.sel').forEach(e=>e.classList.remove('sel')); }
 function copyScreen(name){ const cmd='스크리닝 시작 — '+name;
   navigator.clipboard?.writeText(cmd).then(()=>toast('복사됨: '+cmd),()=>toast(cmd)); }
@@ -753,12 +758,13 @@ consoleNav=ATLAS_UX.mount({
   restore:m=>{
     active.clear();(m.filters||[]).forEach(t=>active.add(t));
     document.querySelectorAll('#filters .flt').forEach(b=>b.classList.toggle('off',!active.has(b.dataset.k)));applyFilter();setConsoleView(m.view||'browse');
-    if(m.selected&&IND_BY_ID[m.selected])renderDrawer(m.selected);
+    if(m.selected&&(IND_BY_ID[m.selected]||consoleCompany(m.selected)))renderDrawer(m.selected);
     else if(m.selected&&DATA.themes.some(t=>t.id===m.selected))renderThemeDrawer(DATA.themes.find(t=>t.id===m.selected));
     else closeDrawerRaw();
   },
-  fromURL:h=>{if(IND_BY_ID[h])renderDrawer(h);else if(DATA.themes.some(t=>t.id===h))renderThemeDrawer(DATA.themes.find(t=>t.id===h));else if(h.startsWith('view='))setConsoleView(h.slice(5))}
+  fromURL:h=>{if(IND_BY_ID[h]||consoleCompany(h))renderDrawer(h);else if(DATA.themes.some(t=>t.id===h))renderThemeDrawer(DATA.themes.find(t=>t.id===h));else if(h.startsWith('view='))setConsoleView(h.slice(5))}
 });
+document.addEventListener('click',event=>{if(event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;const a=event.target.closest('a[data-atlas-company]');if(!a)return;const id=a.dataset.atlasIndustry+'::'+a.dataset.atlasCompany;if(consoleCompany(id)){event.preventDefault();openDrawer(id)}});
 consoleNav.start();
 
 /* scroll-spy */
